@@ -38,6 +38,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -96,6 +97,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -154,6 +156,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -212,6 +215,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -279,6 +283,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -346,6 +351,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -413,6 +419,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -479,6 +486,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -545,6 +553,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -611,6 +620,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -689,6 +699,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -767,6 +778,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -845,6 +857,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -927,6 +940,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -1009,6 +1023,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -1091,6 +1106,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -1173,6 +1189,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -1255,6 +1272,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -1337,6 +1355,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -1419,6 +1438,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -1501,6 +1521,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -1583,6 +1604,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -1649,6 +1671,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -1715,6 +1738,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -1781,6 +1805,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -1839,6 +1864,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -1897,6 +1923,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -1955,6 +1982,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -2037,6 +2065,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -2119,6 +2148,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -2201,6 +2231,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -2283,6 +2314,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -2365,6 +2397,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -2447,6 +2480,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -2513,6 +2547,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -2579,6 +2614,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -2645,6 +2681,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -2711,6 +2748,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -2777,6 +2815,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -2865,6 +2904,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -2966,6 +3006,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -3054,6 +3095,7 @@
             <iHillsDefense>15</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks>
@@ -3126,6 +3168,7 @@
             <iHillsDefense>25</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks>
@@ -3198,6 +3241,7 @@
             <iHillsDefense>35</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks>
@@ -3270,6 +3314,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks>
@@ -3352,6 +3397,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks>
@@ -3444,6 +3490,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks>
@@ -3526,6 +3573,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -3588,6 +3636,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -3650,6 +3699,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -3717,6 +3767,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -3796,6 +3847,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -3875,6 +3927,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -3954,6 +4007,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -4029,6 +4083,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -4095,6 +4150,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -4161,6 +4217,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -4227,6 +4284,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>100</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -4297,6 +4355,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -4368,6 +4427,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -4439,6 +4499,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -4506,6 +4567,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -4572,6 +4634,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -4663,6 +4726,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -4758,6 +4822,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>100</iExperiencePercent>
             <TerrainAttacks/>
@@ -4840,6 +4905,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>50</iExperiencePercent>
             <TerrainAttacks/>
@@ -4922,6 +4988,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -4989,6 +5056,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -5065,6 +5133,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -5136,6 +5205,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -5228,6 +5298,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -5320,6 +5391,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>50</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -5415,6 +5487,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>50</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -5510,6 +5583,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>50</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -5593,6 +5667,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>50</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -5676,6 +5751,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>10</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -5738,6 +5814,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>10</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -5801,6 +5878,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -5854,6 +5932,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -5907,6 +5986,7 @@
             <iHillsDefense>-25</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks>
@@ -5991,6 +6071,7 @@
             <iHillsDefense>-25</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks>
@@ -6075,6 +6156,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>25</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -6158,6 +6240,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>10</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -6233,6 +6316,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -6308,6 +6392,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -6374,6 +6459,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -6440,6 +6526,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -6506,6 +6593,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>15</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -6576,6 +6664,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>25</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -6642,6 +6731,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>35</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -6708,6 +6798,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -6774,6 +6865,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -6840,6 +6932,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -6907,6 +7000,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>10</iExperiencePercent>
             <TerrainAttacks/>
@@ -6973,6 +7067,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -7041,6 +7136,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
@@ -7109,6 +7205,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks>
@@ -7191,6 +7288,7 @@
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <iPillageChange>0</iPillageChange>
+            <iAnimalGoldChange>0</iAnimalGoldChange>
             <iUpgradeDiscount>0</iUpgradeDiscount>
             <iExperiencePercent>0</iExperiencePercent>
             <TerrainAttacks/>
