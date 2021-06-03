@@ -1097,6 +1097,10 @@ bool CvPlot::isWithinTeamCityRadius(TeamTypes eTeam, PlayerTypes eIgnorePlayer) 
 
 bool CvPlot::isLake() const
 {
+	//WTP, ray, Lakes - START
+	// all of this is now unnecessary, since we have the Terrain Lake
+	// we keep the function anyways if maybe needed in future
+	/*
 	//WTP, ray, Large Rivers - Start
 	if (getTerrainType() == TERRAIN_LARGE_RIVERS)
 	{
@@ -1113,7 +1117,10 @@ bool CvPlot::isLake() const
 		return pArea->isLake();
 	}
 
-	return false;
+	return false;*/
+
+	return (getTerrainType() == TERRAIN_LAKE);
+	//WTP, ray, Lakes - END
 }
 
 bool CvPlot::isRiverMask() const
@@ -5214,7 +5221,9 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 					//WTP, ray, Large Rivers - START
 					//we do not want to change Large Rivers to Coast, only Ocean
 					// setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
-					if (getTerrainType() != TERRAIN_LARGE_RIVERS)
+					//WTP, ray, Lakes
+					//we do not want to change Lakes to Coast either
+					if (getTerrainType() != TERRAIN_LARGE_RIVERS && getTerrainType() != TERRAIN_LAKE)
 					{
 						setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
 					}
@@ -5250,7 +5259,7 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 								//WTP, ray, Large Rivers - START
 								//we do not want to change Large Rivers to Coast, only Ocean
 								// pLoopPlot->setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
-								if (pLoopPlot->getTerrainType() != TERRAIN_LARGE_RIVERS)
+								if (pLoopPlot->getTerrainType() != TERRAIN_LARGE_RIVERS && getTerrainType() != TERRAIN_LAKE)
 								{
 									pLoopPlot->setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
 								}
@@ -6127,10 +6136,15 @@ int CvPlot::calculateNatureYield(YieldTypes eYield, TeamTypes eTeam, bool bIgnor
 		iYield += GC.getYieldInfo(eYield).getHillsChange();
 	}
 
+	//WTP, ray, Lakes - START
+	//not needed anymore, because directly considered in XML of Terrain
+	/*
 	if (isLake())
 	{
 		iYield += GC.getYieldInfo(eYield).getLakeChange();
 	}
+	*/
+	//WTP, ray, Lakes - END
 
 	BonusTypes eBonus = getBonusType();
 	FeatureTypes eFeature = bIgnoreFeature ? NO_FEATURE : getFeatureType();

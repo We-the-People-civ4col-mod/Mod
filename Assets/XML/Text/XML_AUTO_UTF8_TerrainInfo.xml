@@ -350,4 +350,17 @@
         <English>[TAB]Large Rivers like the Mississippi, Missouri or Amazonas have been decisive for the expansion and trade of the colonies. They served as natural trade routes between colonial coastal cities and deeper colonial heartlands. Thus many early settlements were founded along those.</English>
         <German>[TAB]Große Ströme waren entscheidend für Handel und Expansion der Kolonien. Diese dienten als natürliche Handelsstraßen zwischen den Küstenstädten und den kolonialen Inland. Daher wurden viele frühe Siedlungen entlang dieser großen Ströme gegründet.</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LAKE</Tag>
+        <English>Fresh Water Lake</English>
+        <French>Lac d'eau douce</French>
+        <German>Süßwassersee</German>
+        <Italian>Lago d'acqua dolce</Italian>
+        <Spanish>Lago de agua dulce</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LAKE_PEDIA</Tag>
+        <English>[TAB]TODO.</English>
+        <German>[TAB]TODO.</German>
+    </TEXT>
 </Civ4GameText>

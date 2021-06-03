@@ -104,7 +104,7 @@ public:
 
 inline int  CvArea :: getID()                                   const { return m_iID; }
 inline int  CvArea :: getNumTiles()                             const { return m_iNumTiles; }
-inline bool CvArea :: isLake()                                  const { return ( isWater() && (getNumTiles()  <=  GC.getLAKE_MAX_AREA_SIZE() ) ); }
+inline bool CvArea :: isLake()                                  const { return ( isWater() && (getNumTiles()  <=  GC.getLAKE_MAX_AREA_SIZE() ) ); } // should this be changed now because of Terrain Lake?
 inline int  CvArea :: getNumOwnedTiles()                        const { return m_iNumOwnedTiles; }
 inline int  CvArea :: getNumUnownedTiles()                      const { return ( getNumTiles() - getNumOwnedTiles() ); }
 inline int  CvArea :: getNumRiverEdges()                        const { return m_iNumRiverEdges; }

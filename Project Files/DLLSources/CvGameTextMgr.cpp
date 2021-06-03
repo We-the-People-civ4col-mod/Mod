@@ -2705,11 +2705,16 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			}
 		}
 
+		//WTP, ray, Lakes - START
+		//not needed anymore, because we have Terrain Lake
+		/*
 		if (pPlot->isLake())
 		{
 			szString.append(NEWLINE);
 			szString.append(gDLL->getText("TXT_KEY_PLOT_FRESH_WATER_LAKE"));
 		}
+		*/
+		//WTP, ray, Lakes - END
 
 		if (pPlot->isImpassable())
 		{
@@ -2846,11 +2851,16 @@ void CvGameTextMgr::setCityPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			}
 		}
 	}
+	//WTP, ray, Lakes - START
+	//not needed anymore, because we have Terrain Lake
+	/*
 	if (pPlot->isLake())
 	{
 		szString.append(NEWLINE);
 		szString.append(gDLL->getText("TXT_KEY_PLOT_FRESH_WATER_LAKE"));
 	}
+	*/
+	//WTP, ray, Lakes - END
 	eBonus = pPlot->getBonusType();
 	if (eBonus != NO_BONUS)
 	{
@@ -6435,6 +6445,13 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 			{
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_BUILD_ONLY_LARGE_RIVERS"));
+			}
+
+			//WTP, ray, Lakes
+			if (info.getTerrainMakesValid(TERRAIN_LAKE))
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_BUILD_ONLY_LAKE"));
 			}
 
 			// old code in else
