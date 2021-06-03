@@ -1459,7 +1459,7 @@ void CvUnit::updateCombat(bool bQuick)
 				int iGold = GC.getGameINLINE().getSorenRandNum(iGoldRewardRandomBase, "Animal Kill Reward");
 				//WTP, ray, Animal Promotions increase gold from Animals - START
 				//we now also apply the gold change from Promotions stored in the Unit
-				iGold += iGold * getAnimalGoldChange(); 				
+				iGold += (iGold * getAnimalGoldChange()) / 100;			
 				//WTP, ray, Animal Promotions increase gold from Animals - END
 				GET_PLAYER(getOwnerINLINE()).changeGold(iGold);
 				szBuffer = gDLL->getText("TXT_KEY_ANIMAL_REWARD", pDefender->getUnitInfo().getDescription(), iGold);
