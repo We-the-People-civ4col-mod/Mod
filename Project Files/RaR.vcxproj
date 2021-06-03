@@ -71,6 +71,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DLLSources\BetterBTSAI.cpp" />
     <ClCompile Include="DLLSources\CvDealSavegame.cpp" />
     <ClCompile Include="DLLSources\CvDiploParametersSavegames.cpp" />
     <ClCompile Include="DLLSources\CvGameAISavegame.cpp" />
@@ -226,6 +227,7 @@
     <ClInclude Include="DLLSources\CvEnumsFunctions.h" />
     <ClInclude Include="DLLSources\CvSavegameEnumMap.h" />
     <ClInclude Include="DLLSources\CvSavegameEnumMapHelper.h" />
+    <ClInclude Include="DLLSources\BetterBTSAI.h" />
     <ClInclude Include="DLLSources\CyData.h" />
     <ClInclude Include="DLLSources\CyUserSettings.h" />
     <ClInclude Include="DLLSources\EnumMapSpecializationBool.h" />

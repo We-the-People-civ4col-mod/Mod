@@ -36,6 +36,7 @@
 #include "CvDLLPythonIFaceBase.h"
 
 #include "CvSavegame.h"
+#include "BetterBTSAI.h"
 
 
 // Public Functions...
@@ -16691,7 +16692,10 @@ CvUnit* CvPlayer::buyEuropeUnit(UnitTypes eUnit, int iPriceModifier)
 		changeGold(-iPrice);
 		GET_TEAM(getTeam()).changeUnitsPurchasedHistory(pUnit->getUnitClassType(), 1);
 		gDLL->getEventReporterIFace()->unitBoughtFromEurope(getID(), pUnit->getID());
+		if (gPlayerLogLevel >= 1) logBBAI("Turn:%d CvPlayer::buyEuropeUnit Player %d (%S) buys unit:%S gold:%d", GC.getGameINLINE().getGameTurn(), 
+			getID(), getCivilizationDescription(0), pUnit->getNameOrProfessionKey(), iPrice);
 	}
+
 
 	return pUnit;
 }

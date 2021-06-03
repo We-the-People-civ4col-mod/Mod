@@ -30,6 +30,7 @@
 #include "CvDLLEventReporterIFaceBase.h"
 
 #include "CvSavegame.h"
+#include "BetterBTSAI.h"
 
 // Public Functions...
 
@@ -2604,6 +2605,9 @@ void CvCity::hurry(HurryTypes eHurry)
 
 	// Python Event
 	gDLL->getEventReporterIFace()->cityHurry(this, eHurry);
+
+	if (gCityLogLevel >= 1) logBBAI("CvCity::hurry Player (%S) hurries in City (%S) for Gold:%d", 
+		GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), getNameKey(), iHurryGold);
 }
 
 
