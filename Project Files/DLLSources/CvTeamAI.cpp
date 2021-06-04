@@ -16,6 +16,8 @@
 #include "CvDLLPythonIFaceBase.h"
 
 #include "CvSavegame.h"
+#include "BetterBTSAI.h"
+#include "CvGameTextMgr.h" // GAMETEXT singleton access
 
 // statics
 
@@ -1980,6 +1982,12 @@ void CvTeamAI::AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar
 		{
 			m_em_eWarPlan.set(eIndex, eNewValue);
 
+			if (gTeamLogLevel >= 1)
+			{
+				CvWStringBuffer buf;
+				GAMETEXT.getWarplanString(buf, eNewValue);
+				logBBAI("    Team %d (%S) abandoning WARPLANS against team %d (%S) due to human / vassal timeout", getID(), GET_PLAYER(getLeaderID()).getCivilizationDescription(0), eIndex, GET_PLAYER(GET_TEAM(eIndex).getLeaderID()).getCivilizationDescription(0));
+			}
 			AI_setWarPlanStateCounter(eIndex, 0);
 
 			AI_updateAreaStragies();

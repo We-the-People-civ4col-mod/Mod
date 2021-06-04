@@ -6346,40 +6346,57 @@ void CvCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bo
 	switch (eOrder)
 	{
 	case ORDER_TRAIN:
-		if (canTrain((UnitTypes)iData1) || bForce)
+	{
+		UnitTypes const eUnit = (UnitTypes)iData1; // advc
+		if (canTrain(eUnit) || bForce)
 		{
-			if (iData2 == -1)
+			if (iData2 == NO_UNITAI)
 			{
-				iData2 = GC.getUnitInfo((UnitTypes)iData1).getDefaultUnitAIType();
+				iData2 = GC.getUnitInfo(eUnit).getDefaultUnitAIType();
 			}
 
-			GET_PLAYER(getOwnerINLINE()).changeUnitClassMaking(((UnitClassTypes)(GC.getUnitInfo((UnitTypes) iData1).getUnitClassType())), 1);
-
-			area()->changeNumTrainAIUnits(getOwnerINLINE(), ((UnitAITypes)iData2), 1);
-			GET_PLAYER(getOwnerINLINE()).AI_changeNumTrainAIUnits(((UnitAITypes)iData2), 1);
+			UnitAITypes const eUnitAI = (UnitAITypes)iData2; // advc
+			GET_PLAYER(getOwner()).changeUnitClassMaking((UnitClassTypes)GC.getUnitInfo(eUnit).getUnitClassType(), 1);
+			area()->changeNumTrainAIUnits(getOwner(), eUnitAI, 1);
+			GET_PLAYER(getOwner()).AI_changeNumTrainAIUnits(eUnitAI, 1);
 
 			bValid = true;
 			gDLL->getEventReporterIFace()->cityBuildingUnit(this, (UnitTypes)iData1);
+
+			if (gCityLogLevel >= 1)
+			{
+				CvWString szString;
+				getUnitAIString(szString, eUnitAI);
+				logBBAI("City %S pushes production of unit %S with UNITAI %S", getName().GetCString(), GC.getUnitInfo(eUnit).getDescription(), szString.GetCString());
+			}
 		}
 		break;
-
+	}
 	case ORDER_CONSTRUCT:
-		if (canConstruct((BuildingTypes)iData1) || bForce)
+	{
+		BuildingTypes const eBuilding = (BuildingTypes)iData1; // advc
+		if (canConstruct(eBuilding) || bForce)
 		{
-			GET_PLAYER(getOwnerINLINE()).changeBuildingClassMaking(((BuildingClassTypes)(GC.getBuildingInfo((BuildingTypes) iData1).getBuildingClassType())), 1);
+			GET_PLAYER(getOwnerINLINE()).changeBuildingClassMaking(((BuildingClassTypes)(GC.getBuildingInfo((BuildingTypes)iData1).getBuildingClassType())), 1);
 
 			bValid = true;
+
 			gDLL->getEventReporterIFace()->cityBuildingBuilding(this, (BuildingTypes)iData1);
+			if (gCityLogLevel >= 1) logBBAI("City %S pushes production of building %S", getName().GetCString(), GC.getBuildingInfo(eBuilding).getDescription());
 		}
 		break;
-
+	}
 	case ORDER_CONVINCE:
-		if (canConvince((FatherPointTypes)iData1) || bForce)
+	{
+		FatherPointTypes const eFatherPoint = (FatherPointTypes)iData1; // advc
+		if (canConvince(eFatherPoint) || bForce)
 		{
 			bValid = true;
+			if (gCityLogLevel >= 1) logBBAI("City %S pushes convincing of type %S", getName().GetCString(), GC.getFatherPointInfo(eFatherPoint).getDescription());
 		}
 		break;
 
+	}
 	default:
 		FAssertMsg(false, "iOrder did not match a valid option");
 		break;
