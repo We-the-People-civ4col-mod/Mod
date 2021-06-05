@@ -33601,7 +33601,7 @@
             <UniqueNames/>
             <Special>NONE</Special>
             <Capture>UNITCLASS_BIG_COASTAL_SHIP</Capture>
-            <Combat>NONE</Combat>
+            <Combat>UNITCOMBAT_NAVAL_TRADE</Combat>
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_COAST</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
