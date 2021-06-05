@@ -111,6 +111,7 @@
 	<ElementType name="iAnimalPatrolWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iAnimalAttackWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="bGraphicalOnly" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNotEarnedByXP" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bHideFromPedia" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoBadGoodies" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bOnlyDefensive" content="textOnly" dt:type="boolean"/>
@@ -753,6 +754,7 @@
 		<element type="bShiftDown"/>
 		<element type="bCtrlDown"/>
 		<element type="bGraphicalOnly"/>
+		<element type="bNotEarnedByXP" minOccurs="0"/>
 		<element type="bHideFromPedia" minOccurs="0"/>
 		<element type="iHotKeyPriority"/>
 		<element type="Button"/>

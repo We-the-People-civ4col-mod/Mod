@@ -4549,6 +4549,14 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 		szBuffer.append(pcNewline);
 		szBuffer.append(kPromotion.getHelp());
 	}
+
+	//WTP, ray, Promotions not earned by XP - START
+	if (kPromotion.isNotEarnedByXP())
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_CAN_NOT_BE_EARNED_BY_XP"));
+	}
+	//WTP, ray, Promotions not earned by XP - END
 }
 
 //	Function:			parseCivicInfo()
