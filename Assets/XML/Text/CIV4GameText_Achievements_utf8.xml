@@ -7,11 +7,11 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
         <Tag>TXT_KEY_INTERFACE_ACHIEVE_ADVISOR</Tag>
-	  <English>[COLOR_HIGHLIGHT_TEXT]Chronicle[COLOR_REVERT] [COLOR_GREEN]&lt; %s1_ModKey &gt;[COLOR_REVERT]</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]Chronique[COLOR_REVERT] [COLOR_GREEN]&lt; %s1_ModKey &gt;[COLOR_REVERT]</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Chronik[COLOR_REVERT] [COLOR_GREEN]&lt; %s1_ModKey &gt;[COLOR_REVERT]</German>
-        <Italian>[COLOR_HIGHLIGHT_TEXT]Cronaca[COLOR_REVERT] [COLOR_GREEN]&lt; %s1_ModKey &gt;[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_HIGHLIGHT_TEXT]Crónica[COLOR_REVERT] [COLOR_GREEN]&lt; %s1_ModKey &gt;[COLOR_REVERT]</Spanish>
+	  <English>[COLOR_HIGHLIGHT_TEXT]Chronicle[COLOR_REVERT] [COLOR:140:255:40:255]&lt; %s1_ModKey &gt;[COLOR_REVERT]</English>
+        <French>[COLOR_HIGHLIGHT_TEXT]Chronique[COLOR_REVERT] [COLOR:140:255:40:255]&lt; %s1_ModKey &gt;[COLOR_REVERT]</French>
+        <German>[COLOR_HIGHLIGHT_TEXT]Chronik[COLOR_REVERT] [COLOR:140:255:40:255]&lt; %s1_ModKey &gt;[COLOR_REVERT]</German>
+        <Italian>[COLOR_HIGHLIGHT_TEXT]Cronaca[COLOR_REVERT] [COLOR:140:255:40:255]&lt; %s1_ModKey &gt;[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_HIGHLIGHT_TEXT]Crónica[COLOR_REVERT] [COLOR:140:255:40:255]&lt; %s1_ModKey &gt;[COLOR_REVERT]</Spanish>
     </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ADVISOR_TITLE</Tag>
