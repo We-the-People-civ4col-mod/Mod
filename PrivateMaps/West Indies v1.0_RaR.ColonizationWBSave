@@ -1,6 +1,6 @@
 Version=11
 BeginGame
-	Description=
+	Description=TXT_KEY_WORLDBUILDER_WEST_INDIES_DESC
 	ModPath=
 	WBNorthAmericanNative=0
 	WBSouthAmericanNative=1
