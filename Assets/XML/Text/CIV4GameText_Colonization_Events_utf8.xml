@@ -2589,12 +2589,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
-        <English>Deliver this quantity of goods to Europe [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
+        <English>Trade this quantity of goods with Europe [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
         <German>Liefere die folgende Warenmenge nach Europa [COLOR_FONT_GOLD]bevor es eine andere Nation tut:[COLOR_REVERT] [NEWLINE]%D1_amount %F2_yield</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>
-        <English>Deliver the following quantity of goods to the colonies [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
+        <English>Trade the following quantity of goods to the colonies [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
         <German>Liefere die folgende Warenmenge in die Kolonien [COLOR_FONT_GOLD]bevor es eine andere Nation tut:[COLOR_REVERT] [NEWLINE]%D1_amount %F2_yield</German>
     </TEXT>
     <TEXT>
