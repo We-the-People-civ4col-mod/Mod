@@ -8869,6 +8869,10 @@ bool CvUnitAI::AI_spreadReligion()
 		{
 			if (kLoopPlayer.canHaveMission(getOwnerINLINE()) && getMissionarySuccessPercent() > 50)
 			{
+				// Do not consider cities belonging to players that we have a war plan against
+				if (GET_TEAM(getTeam()).AI_getWarPlan(kLoopPlayer.getTeam()) != NO_WARPLAN)
+					continue;
+
 				if (kLoopPlayer.AI_getAttitude(getOwnerINLINE()) >= ATTITUDE_ANNOYED)
 				{
 					int iLoop;
@@ -8965,6 +8969,10 @@ bool CvUnitAI::AI_spreadTradePosts()
 		{
 			if (kLoopPlayer.canHaveTradePost(getOwnerINLINE()) && getNativeTradePostSuccessPercent() > 50)
 			{
+				// Do not consider cities belonging to players that we have a war plan against
+				if (GET_TEAM(getTeam()).AI_getWarPlan(kLoopPlayer.getTeam()) != NO_WARPLAN)
+					continue;
+
 				if (kLoopPlayer.AI_getAttitude(getOwnerINLINE()) >= ATTITUDE_ANNOYED)
 				{
 					int iLoop;
@@ -9070,6 +9078,10 @@ bool CvUnitAI::AI_learn(int iRange)
 					{
 						if (GET_PLAYER(pPlotCity->getOwnerINLINE()).isNative() && pPlotCity->isScoutVisited(getTeam()))
 						{
+							// Do not consider cities belonging to players that we have a war plan against
+							if (GET_TEAM(getTeam()).AI_getWarPlan(GET_PLAYER(pPlotCity->getOwnerINLINE()).getTeam()) != NO_WARPLAN)
+								continue;
+							
 							if (!isEnemy(pPlotCity->getTeam()))
 							{
 								if (!pLoopPlot->isVisibleEnemyUnit(this))
