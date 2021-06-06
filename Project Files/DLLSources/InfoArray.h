@@ -151,6 +151,7 @@ public:
 	void read(CvXMLLoadUtility* pXML, const char* szType, const char *sTagName);
 	void assign(const BoolArray* pBArray);
 	void assign(const std::vector<int>& vec);
+	void assign(const std::vector<bool>& vec);
 	void convertClass(const InfoArrayBase* pArray, const CvCivilizationInfo* pCivInfo = NULL);
 private:
 	void readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vector<short>& aArray, std::vector<short>& aIndex, int iLevel, const char *sTagName, const char* szType);
@@ -347,6 +348,7 @@ public:
 	// interaction with EnumMap
 	template<typename T>
 	void assignFrom(const EnumMap<T0, T>& em);
+	void assignFrom(const EnumMap<T0, bool>& em);
 
 	template<typename T>
 	void addTo(EnumMap<T0, T> & em, int iChange = 1) const;
@@ -371,6 +373,21 @@ void InfoArray<T0, T1, T2, T3>::assignFrom(const EnumMap<T0, T> & em)
 	// buffer everything in a vector to avoid the need for templates in InfoArray.cpp
 	std::vector<int> vec;
 	em.copyToVector(vec);
+	assign(vec);
+}
+
+template<typename T0, typename T1, typename T2, typename T3>
+void InfoArray<T0, T1, T2, T3>::assignFrom(const EnumMap<T0, bool> & em)
+{
+	const bool bTypeCheck = boost::is_same<T1, JIT_NoneTypes>::value && boost::is_same<T2, JIT_NoneTypes>::value && boost::is_same<T3, JIT_NoneTypes>::value;
+	BOOST_STATIC_ASSERT(bTypeCheck);
+	// buffer everything in a vector to avoid the need for templates in InfoArray.cpp
+	std::vector<bool> vec;
+	vec.reserve(em.LENGTH);
+	for (int i = 0; i < em.LENGTH; ++i)
+	{
+		vec.push_back(em.get((T0)i));
+	}
 	assign(vec);
 }
 
