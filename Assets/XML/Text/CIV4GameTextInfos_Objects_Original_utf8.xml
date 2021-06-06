@@ -6,30 +6,6 @@
 <!-- Game Text Objects -->
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
-        <Tag>TXT_KEY_TERRAIN_PLAINS</Tag>
-        <English>Plains</English>
-        <French>
-            <Text>Plaines</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Prärie</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Pianura:Pianure</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Llanura:Llanuras</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_TERRAIN_ICE</Tag>
         <English>Polar Ice</English>
         <French>Banquise</French>
