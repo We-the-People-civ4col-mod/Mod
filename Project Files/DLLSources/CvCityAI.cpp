@@ -1388,11 +1388,14 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			if (kBuildingInfo.getYieldModifier(eLoopYield) > 0)
 			{
 				int iRaw = getRawYieldProduced(eLoopYield);
-				if ((eLoopYield == YIELD_BELLS) && kOwner.AI_isStrategy(STRATEGY_FAST_BELLS) && (kOwner.AI_findBestCity() == this))
+				// Commented out the below since bells are too valuable in general to depend on such strict conditions
+				//if ((eLoopYield == YIELD_BELLS) && kOwner.AI_isStrategy(STRATEGY_FAST_BELLS) && (kOwner.AI_findBestCity() == this))
+				if (eLoopYield == YIELD_BELLS)
 				{
-					iRaw += std::max(iRaw, std::min(8, getPopulation()));
+					// Slight hack to value the SPECIALBUILDING_PRINT class more highly
+					iRaw *= getPopulation();
 				}
-				iAdded += ((2 * getRawYieldProduced(eLoopYield)) * kBuildingInfo.getYieldModifier(eLoopYield)) / 100;
+				iAdded += ((2 * iRaw * kBuildingInfo.getYieldModifier(eLoopYield)) / 100);
 			}
 			
 			if (iAdded != 0)
