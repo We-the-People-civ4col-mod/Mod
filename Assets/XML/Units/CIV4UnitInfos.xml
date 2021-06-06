@@ -33601,7 +33601,7 @@
             <UniqueNames/>
             <Special>NONE</Special>
             <Capture>UNITCLASS_BIG_COASTAL_SHIP</Capture>
-            <Combat>NONE</Combat>
+            <Combat>UNITCOMBAT_NAVAL_TRADE</Combat>
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_COAST</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
@@ -33883,6 +33883,10 @@
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -34062,6 +34066,10 @@
             <TerrainImpassables>
                 <TerrainImpassable>
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
@@ -34245,6 +34253,10 @@
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -34424,6 +34436,10 @@
             <TerrainImpassables>
                 <TerrainImpassable>
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
@@ -34607,6 +34623,10 @@
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -34786,6 +34806,10 @@
             <TerrainImpassables>
                 <TerrainImpassable>
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
@@ -34978,6 +35002,10 @@
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -35157,6 +35185,10 @@
             <TerrainImpassables>
                 <TerrainImpassable>
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
@@ -35578,6 +35610,10 @@
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -35744,6 +35780,10 @@
             <TerrainImpassables>
                 <TerrainImpassable>
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
@@ -36071,6 +36111,10 @@
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -36243,6 +36287,10 @@
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -36406,6 +36454,10 @@
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -36565,6 +36617,10 @@
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -36714,6 +36770,10 @@
             <TerrainImpassables>
                 <TerrainImpassable>
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
@@ -43917,6 +43977,10 @@
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <TerrainNatives>
@@ -44058,6 +44122,10 @@
             <TerrainImpassables>
                 <TerrainImpassable>
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
@@ -44203,6 +44271,10 @@
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <TerrainNatives>
@@ -44344,6 +44416,10 @@
             <TerrainImpassables>
                 <TerrainImpassable>
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>

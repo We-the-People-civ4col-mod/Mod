@@ -1199,7 +1199,9 @@ void CvMapGenerator::setPlotTypes(const int* paiPlotTypes)
 				//WTP, ray, Large Rivers - START
 				//we do not want to change Large Rivers to Coast, only Ocean
 				// pLoopPlot->setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), false, false);
-				if (pLoopPlot->getTerrainType() != TERRAIN_LARGE_RIVERS)
+				//WTP, ray, Lakes
+				//we also do not want to change Lake to Coast, only Ocean
+				if (pLoopPlot->getTerrainType() != TERRAIN_LARGE_RIVERS && pLoopPlot->getTerrainType() != TERRAIN_LAKE)
 				{
 					pLoopPlot->setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), false, false);
 				}

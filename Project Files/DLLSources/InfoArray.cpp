@@ -461,6 +461,45 @@ void InfoArrayMod::assign(const std::vector<int>& vec)
 	}
 }
 
+void InfoArrayMod::assign(const std::vector<bool>& vec)
+{
+	assert(m_iNumDimentions == 1);
+	SAFE_DELETE_ARRAY(m_pArray);
+	m_iLength = 0;
+	const unsigned int iVecSize = vec.size();
+	for (unsigned int i = 0; i < iVecSize; ++i)
+	{
+		if (vec[i])
+		{
+			++m_iLength;
+		}
+	}
+
+
+	if (m_iLength == 0)
+	{
+		return;
+	}
+
+	m_pArray = new short[m_iLength];
+
+	int iCounter = 0;
+
+	for (unsigned int i = 0; i < iVecSize; ++i)
+	{
+		if (vec[i])
+		{
+			m_pArray[iCounter] = i;
+			++iCounter;
+			if (iCounter == m_iLength)
+			{
+				// done converting. The rest of the values are all 0
+				return;
+			}
+		}
+	}
+}
+
 void InfoArrayMod::convertClass(const InfoArrayBase* pInfoArray, const CvCivilizationInfo* pCivInfo)
 {
 	FAssertMsg(pInfoArray->getType(0) == JIT_ARRAY_BUILDING_CLASS || pInfoArray->getType(0) == JIT_ARRAY_UNIT_CLASS, "InfoArray tries to resolve class in an array without classes");

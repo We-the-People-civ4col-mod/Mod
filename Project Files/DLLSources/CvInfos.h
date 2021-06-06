@@ -221,6 +221,7 @@ public:
 	virtual ~CvPromotionInfo();
 	PromotionTypes getIndex() const { return m_eIndex; }
 	bool hideFromPedia() const;
+	bool isNotEarnedByXP() const; //WTP, ray, Promotions not earned by XP
 	int getPrereqPromotion() const;
 	void setPrereqPromotion(int i);
 	int getPrereqOrPromotion1() const;
@@ -310,6 +311,7 @@ protected:
 	int m_iUpgradeDiscount;
 	int m_iExperiencePercent;
 	bool m_bHideFromPedia;
+	bool m_bNotEarnedByXP; //WTP, ray, Promotions not earned by XP
 	bool m_bLeader;
 	bool m_bBlitz;
 	bool m_bAmphib;

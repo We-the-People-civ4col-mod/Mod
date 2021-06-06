@@ -7719,9 +7719,14 @@ void CvPlayer::verifyAlive()
 					bKill = true;
 				}
 
+				//WTP, ray, make AI elimination threshold XML configurable and also adjust to Gamespeed
+				int iMinTurnForAIRespawningOff = GC.getDefineINT("KI_RESPAWN_OFF_MIN_TURN");
+				int gameSpeedMod =  GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+				iMinTurnForAIRespawningOff = iMinTurnForAIRespawningOff * gameSpeedMod /100;
+
 				// TAC - RESPAWN Option - Ray - Start
 				// WTP, ray, fix for Colonial AI not being possible to eliminate a Colonial AI - Check for "No more Settler" removed because causing Problems with Settler is Europe
-				if (!isNative() && !isHuman() && GC.getGameINLINE().getGameTurn() > 100 && GC.getDefineINT("KI_RESPAWN_OFF") == 1 && (getNumUnits() < 5 || AI_getNumAIUnits(UNITAI_TRANSPORT_SEA) == 0))
+				if (!isNative() && !isHuman() && GC.getDefineINT("KI_RESPAWN_OFF") == 1 && GC.getGameINLINE().getGameTurn() > iMinTurnForAIRespawningOff && (getNumUnits() < 5 || AI_getNumAIUnits(UNITAI_TRANSPORT_SEA) == 0))
 				{
 					bKill = true;
 					bRespawnDeactivated = true;
@@ -21309,7 +21314,7 @@ void CvPlayer::createEnemyPirates()
 	{
 		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 
-		if (pLoopPlot->getTeam() == NO_TEAM && pLoopPlot->isWater() && pLoopPlot->getTerrainType() != TERRAIN_LARGE_RIVERS && pLoopPlot->area()->hasEurope() && pLoopPlot->getNumUnits() == 0)
+		if (pLoopPlot->getTeam() == NO_TEAM && pLoopPlot->isWater() && pLoopPlot->getTerrainType() != TERRAIN_LARGE_RIVERS && pLoopPlot->getTerrainType() != TERRAIN_LAKE && pLoopPlot->area()->hasEurope() && pLoopPlot->getNumUnits() == 0)
 		{
 			int iValue = (plotDistance(cityToAttack->getX_INLINE(), cityToAttack->getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE()) * 2);
 			if (pLoopPlot->area() != cityToAttack->area())

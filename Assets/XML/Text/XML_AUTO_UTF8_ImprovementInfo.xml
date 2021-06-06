@@ -1069,6 +1069,11 @@
         <German>[ICON_BULLET]Kann nur auf [LINK=TERRAIN_LARGE_RIVERS]Großen Flüssen[\LINK] gebaut werden.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_LAKE</Tag>
+        <English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LAKE]fresh water Lake[\LINK]</English>
+        <German>[ICON_BULLET]Kann nur auf [LINK=TERRAIN_LAKE]Süßwassersee[\LINK] gebaut werden.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_FOR_SPAWNING_UNITS</Tag>
         <English>[ICON_BULLET]Can spawn friendly units when explored.</English>
         <German>[ICON_BULLET]Kann freundliche Einheiten hervorbringen, wenn es erkundet wird.</German>

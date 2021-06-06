@@ -1544,7 +1544,8 @@ int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void
 
 		//WTP, ray, Large Rivers
 		// if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTeam() == eTeam)
-		if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTerrainType() == TERRAIN_LARGE_RIVERS || pNewPlot->getTeam() == eTeam)
+		//WTP, ray, Lakes
+		if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTerrainType() == TERRAIN_LARGE_RIVERS || pNewPlot->getTerrainType() == TERRAIN_LAKE || pNewPlot->getTeam() == eTeam)
 		{
 			return true;
 		}
@@ -1902,6 +1903,7 @@ void postLoadGameFixes()
 
 	// deal with plots
 	CvMap& kMap = GC.getMapINLINE();
+	kMap.updateWaterPlotTerrainTypes(); // autodetect lakes
 	const int iNumPlots = kMap.numPlotsINLINE();
 	
 	// reset visibility count as it is garbage right now

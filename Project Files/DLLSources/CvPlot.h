@@ -314,6 +314,7 @@ public:
 	DllExport bool isPeak() const;
 	void setPlotType(PlotTypes eNewValue, bool bRecalculate = true, bool bRebuildGraphics = true);
 
+	void setCoastline(bool bRecalculate = true, bool bRebuildGraphics = true); // autodetect lakes
 	DllExport TerrainTypes getTerrainType() const;
 	void setTerrainType(TerrainTypes eNewValue, bool bRecalculate = true, bool bRebuildGraphics = true);
 

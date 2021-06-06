@@ -248,6 +248,10 @@
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
                     <TerrainType>TERRAIN_OCEAN</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -305,6 +309,10 @@
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -357,6 +365,10 @@
                 </TerrainBoolean>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
@@ -1115,6 +1127,10 @@
                 </TerrainBoolean>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
@@ -2614,6 +2630,10 @@
                 </TerrainBoolean>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>

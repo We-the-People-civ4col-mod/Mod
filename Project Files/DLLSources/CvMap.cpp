@@ -34,6 +34,137 @@
 
 #include "CvSavegame.h"
 
+// WTP - Plotregion - Nightinggale - start
+
+// a plot region is a collection of connected plots, which all have something in common
+// what they have in common is that they all have what is specified by the EnumMap given to the constructor
+// written with terrains in mind, it can also handle features, improvements or what else CvPlot::getVariable can support
+//
+// PlotRegionMap is a collection of plot regions
+// It will scan the entire map and create all the regions it can
+// note that due to region merging, some might end up empty
+
+PlotRegion::PlotRegion()
+	: m_bEurope(false)
+{}
+
+bool PlotRegion::isEurope() const
+{
+	return m_bEurope;
+}
+
+int PlotRegion::getNumPlots() const
+{
+	return (int)m_aiPlots.size();
+}
+
+CvPlot* PlotRegion::getPlot(int i) const
+{
+	FAssert(i >= 0 && i < getNumPlots());
+	return GC.getMapINLINE().plotByIndex(m_aiPlots[i]);
+}
+
+void PlotRegion::add(int iPlot, std::vector<PlotRegion*>& plotRegions)
+{
+	if (plotRegions[iPlot] != NULL)
+	{
+		if (plotRegions[iPlot] != this)
+		{
+			plotRegions[iPlot]->merge(*this, plotRegions);
+		}
+	}
+	else
+	{
+		plotRegions[iPlot] = this;
+		m_aiPlots.push_back(iPlot);
+	}
+}
+
+void PlotRegion::merge(PlotRegion& rhs, std::vector<PlotRegion*>& plotRegions)
+{
+	for (unsigned int i = 0; i < rhs.m_aiPlots.size(); ++i)
+	{
+		int iPlot = rhs.m_aiPlots[i];
+		m_aiPlots.push_back(iPlot);
+		plotRegions[iPlot] = this;
+	}
+	rhs.m_aiPlots.clear();
+	if (rhs.m_bEurope)
+	{
+		m_bEurope = true;
+	}
+}
+
+template<typename T>
+PlotRegionMap::PlotRegionMap(const EnumMap<T, bool>& em)
+{
+	CvMap& kMap = GC.getMapINLINE();
+	const int iNumPlots = kMap.numPlots();
+
+	std::vector<PlotRegion*> plotRegions;
+	plotRegions.assign(iNumPlots, NULL);
+
+	// reserve memory for the highest amount of plot regions possible (in theory)
+	// most likely overkill, but by having the memory reserved, we can be sure no new allocations will take place
+	// whenever a new allocation takes place, all pointers to the vector elements will become invalid
+	m_aRegions.reserve((iNumPlots/4)+1);
+
+
+	for (int i = 0; i < iNumPlots; ++i)
+	{
+		CvPlot* pPlot = kMap.plotByIndex(i);
+		const T eVar = pPlot->getVariable((T)0);
+
+		if (eVar != (T)(-1) && em.get(eVar))
+		{
+			// rather than looping, specify the 4 directions of already looped plots
+			// the rest of the directions aren't interesting as they haven't been looped through yet
+			handlePlot(pPlot, -1, -1, plotRegions);
+			handlePlot(pPlot, 0, -1, plotRegions);
+			handlePlot(pPlot, 1, -1, plotRegions);
+			handlePlot(pPlot, -1, 0, plotRegions);
+
+			if (plotRegions[i] == NULL)
+			{
+				// create a new region
+				m_aRegions.push_back(PlotRegion());
+				//plotRegions[i] = &m_aRegions[m_aRegions.size() - 1];
+				m_aRegions[m_aRegions.size() - 1].add(i, plotRegions);
+			}
+			if (pPlot->isEurope())
+			{
+				plotRegions[i]->m_bEurope = true;
+			}
+		}
+	}
+}
+
+int PlotRegionMap::getNumRegions() const
+{
+	return (int)m_aRegions.size();
+}
+const PlotRegion& PlotRegionMap::getRegion(int iIndex) const
+{
+	FAssert(iIndex >= 0 && iIndex < getNumRegions());
+	return m_aRegions[iIndex];
+}
+
+void PlotRegionMap::handlePlot(CvPlot* pPlot, int iX, int iY, std::vector<PlotRegion*>& plotRegions)
+{
+	CvPlot* pOtherPlot = GC.getMapINLINE().plotINLINE(pPlot->getX_INLINE() + iX, pPlot->getY_INLINE() + iY);
+	if (pOtherPlot != NULL)
+	{
+		int iIndex = pOtherPlot->getIndex();
+		PlotRegion* pRegion = plotRegions[iIndex];
+		if (pRegion != NULL)
+		{
+			pRegion->add(pPlot->getIndex(), plotRegions);
+		}
+	}
+};
+// WTP - Plotregion - Nightinggale - end
+
+
 // Public Functions...
 
 CvMap::CvMap()
@@ -1111,6 +1242,36 @@ void CvMap::calculateCanalAndChokePoints()
 	}
 }
 // Super Forts end
+
+// autodetect lakes - start
+void CvMap::updateWaterPlotTerrainTypes()
+{
+	EnumMap<TerrainTypes, bool> em;
+	em.set(TERRAIN_COAST, true);
+	em.set(TERRAIN_OCEAN, true);
+	em.set(TERRAIN_LAKE, true);
+
+	PlotRegionMap regions(em);
+
+	const int iNumRegions = regions.getNumRegions();
+	for (int iRegion = 0; iRegion < iNumRegions; ++iRegion)
+	{
+		const PlotRegion& kRegion = regions.getRegion(iRegion);
+		const int iNumPlots = kRegion.getNumPlots();
+		for (int iPlot = 0; iPlot < iNumPlots; ++iPlot)
+		{
+			if (kRegion.isEurope())
+			{
+				kRegion.getPlot(iPlot)->setCoastline();
+			}
+			else
+			{
+				kRegion.getPlot(iPlot)->setTerrainType(TERRAIN_LAKE);
+			}
+		}
+	}
+}
+// autodetect lakes - end
 
 //
 // read object from a stream

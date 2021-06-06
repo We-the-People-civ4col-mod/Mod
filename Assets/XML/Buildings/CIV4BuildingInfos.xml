@@ -3132,6 +3132,7 @@
             <RequiredAdjacentTerrains>
                 <eRequiredTerrain>TERRAIN_COAST</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_LARGE_RIVERS</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_LAKE</eRequiredTerrain>
             </RequiredAdjacentTerrains>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>
@@ -3205,7 +3206,7 @@
             <iBombardDefense>0</iBombardDefense>
             <iAsset>50</iAsset>
             <iPower>0</iPower>
-            <iYieldStorage>0</iYieldStorage>
+            <iYieldStorage>50</iYieldStorage>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>100.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -3236,6 +3237,7 @@
             <RequiredAdjacentTerrains>
                 <eRequiredTerrain>TERRAIN_COAST</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_LARGE_RIVERS</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_LAKE</eRequiredTerrain>
             </RequiredAdjacentTerrains>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>
@@ -3313,7 +3315,7 @@
             <iBombardDefense>0</iBombardDefense>
             <iAsset>100</iAsset>
             <iPower>100</iPower>
-            <iYieldStorage>0</iYieldStorage>
+            <iYieldStorage>100</iYieldStorage>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>100.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -3433,7 +3435,7 @@
             <iBombardDefense>0</iBombardDefense>
             <iAsset>150</iAsset>
             <iPower>150</iPower>
-            <iYieldStorage>0</iYieldStorage>
+            <iYieldStorage>150</iYieldStorage>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>100.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -3553,7 +3555,7 @@
             <iBombardDefense>0</iBombardDefense>
             <iAsset>150</iAsset>
             <iPower>150</iPower>
-            <iYieldStorage>0</iYieldStorage>
+            <iYieldStorage>200</iYieldStorage>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>100.0</fVisibilityPriority>
             <LandPlotYieldChanges/>

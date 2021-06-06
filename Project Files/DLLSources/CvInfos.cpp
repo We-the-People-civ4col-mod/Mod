@@ -916,6 +916,7 @@ m_iAnimalGoldChange(0), //WTP, ray, Animal Promotions increase gold from Animals
 m_iUpgradeDiscount(0),
 m_iExperiencePercent(0),
 m_bHideFromPedia(false),
+m_bNotEarnedByXP(false), //WTP, ray, Promotions not earned by XP
 m_bLeader(false),
 m_bBlitz(false),
 m_bAmphib(false),
@@ -961,6 +962,14 @@ bool CvPromotionInfo::hideFromPedia() const
 {
 	return m_bHideFromPedia || isGraphicalOnly();
 }
+
+//WTP, ray, Promotions not earned by XP - START
+bool CvPromotionInfo::isNotEarnedByXP() const
+{
+	return m_bNotEarnedByXP;
+}
+//WTP, ray, Promotions not earned by XP - END
+
 int CvPromotionInfo::getPrereqPromotion() const
 {
 	return m_iPrereqPromotion;
@@ -1070,7 +1079,8 @@ int CvPromotionInfo::getAnimalGoldChange() const
 {
 	return m_iAnimalGoldChange;
 }
-//WTP, ray, Animal Promotions increase gold from Animals -EMD
+//WTP, ray, Animal Promotions increase gold from Animals -END
+
 int CvPromotionInfo::getUpgradeDiscount() const
 {
 	return m_iUpgradeDiscount;
@@ -1290,7 +1300,7 @@ void CvPromotionInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iDomesticBonusPercent);	
 	stream->Write(m_iCommandType);
 	stream->Write(m_iPillageChange);
-	stream->Write(m_iAnimalGoldChange); //WTP, ray, Animal Promotions increase gold from Animals 
+	stream->Write(m_iAnimalGoldChange); //WTP, ray, Animal Promotions increase gold from Animals  
 	stream->Write(m_iUpgradeDiscount);
 	stream->Write(m_iExperiencePercent);
 	stream->Write(m_bLeader);
@@ -1328,6 +1338,7 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "Sound");
 	setSound(szTextVal);
 	pXML->GetChildXmlValByName(&m_bHideFromPedia, "bHideFromPedia");
+	pXML->GetChildXmlValByName(&m_bNotEarnedByXP, "bNotEarnedByXP"); //WTP, ray, Promotions not earned by XP
 	pXML->GetChildXmlValByName(&m_bLeader, "bLeader");
 	pXML->GetChildXmlValByName(&m_bBlitz, "bBlitz");
 	pXML->GetChildXmlValByName(&m_bAmphib, "bAmphib");
