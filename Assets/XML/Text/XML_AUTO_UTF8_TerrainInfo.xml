@@ -221,10 +221,10 @@
         <Spanish>[TAB]Peak may refer to:A mountain peak, In topography, a summit is a point on a surface that is higher in elevation than all points immediately adjacent to it. Mathematically, a summit is a local maximum in elevation. The topographic terms "acme", "apex", "peak", and "zenith" are synonyms.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_TERRAIN_PLAINS</Tag>
+        <Tag>TXT_KEY_TERRAIN_PRAIRIE</Tag>
         <English>Prairie</English>
         <French>
-            <Text>Plaines</Text>
+            <Text>Prairie</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </French>
@@ -233,24 +233,12 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
-        <Italian>
-            <Text>Pianura:Pianure</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Llanura:Llanuras</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_TERRAIN_PLAINS_PEDIA</Tag>
+        <Tag>TXT_KEY_TERRAIN_PRAIRIE_PEDIA</Tag>
         <English>[TAB]Prairies are ecosystems considered part of the temperate grasslands, savannas, and shrublands biome by ecologists, based on similar temperate climates, moderate rainfall, and a composition of grasses, herbs, and shrubs, rather than trees, as the dominant vegetation type. Temperate grassland regions include the Pampas of Argentina, Brazil and Uruguay as well as the steppes of Eurasia. Lands referred to as "prairie" tend to be in North America. The term encompasses the area referred to as the Interior Lowlands of the United States, Canada and Mexico, which includes all of the Great Plains as well as the wetter, somewhat hillier land to the east. In the U.S., the area is constituted by most or all of the states of North Dakota, South Dakota, Nebraska, Kansas, and Oklahoma, and sizable parts of the states of Montana, Wyoming, Colorado, New Mexico, Texas, Missouri, Iowa, Illinois, Indiana, Wisconsin, and western and southern Minnesota. The Central Valley of California is also a prairie. The Canadian Prairies extend across vast areas of Manitoba, Saskatchewan and Alberta.</English>
         <French>[TAB]La Prairie (anglais : Tallgrass Prairie) occupe les Grandes Plaines entre les Appalaches et les Montagnes Rocheuses. Cette écorégion à prairie de zone tempérée est constituée d'une flore herbeuse de graminées, de composées et de légumineuses. Son nom lui vient des explorateurs français et n'a pas été anglicisé. Elle est l'équivalent de la steppe en Eurasie et de la pampa en Amérique du Sud. Aux États-Unis et au Canada, on fait parfois la distinction entre la végétation de taille basse des Hautes Plaines à l'ouest du 104e méridien terrestre et la végétation de taille moyenne et haute de l'est (depuis le sud du Manitoba jusqu'au centre du Texas). Lorsque cette distinction est faite, il est habituel de limiter le mot "prairie" aux zones de végétation moyenne à haute. La plus grande partie de ce territoire a été convertie en zone cultivée au cours des deux cents dernières années.</French>
         <German>[TAB]Als Prairie bezeichnet man ein Gebiet, dass von Gräsern und Sträuchen dominiert ist, aber durch relativ hohe Temperaturen und vergleichsweise niedrige Niederschläge keinen starken Pflanzenbewuchs, wie beispielsweise die Savanne aufweist.</German>
-        <Italian>[TAB]Prairies are ecosystems considered part of the temperate grasslands, savannas, and shrublands biome by ecologists, based on similar temperate climates, moderate rainfall, and a composition of grasses, herbs, and shrubs, rather than trees, as the dominant vegetation type. Temperate grassland regions include the Pampas of Argentina, Brazil and Uruguay as well as the steppes of Eurasia. Lands typically referred to as "prairie" tend to be in North America. The term encompasses the area referred to as the Interior Lowlands of the United States, Canada and Mexico, which includes all of the Great Plains as well as the wetter, somewhat hillier land to the east. In the U.S., the area is constituted by most or all of the states of North Dakota, South Dakota, Nebraska, Kansas, and Oklahoma, and sizable parts of the states of Montana, Wyoming, Colorado, New Mexico, Texas, Missouri, Iowa, Illinois, Indiana, Wisconsin, and western and southern Minnesota. The Central Valley of California is also a prairie. The Canadian Prairies occupy vast areas of Manitoba, Saskatchewan, and Alberta.</Italian>
-        <Spanish>[TAB]Prairies are ecosystems considered part of the temperate grasslands, savannas, and shrublands biome by ecologists, based on similar temperate climates, moderate rainfall, and a composition of grasses, herbs, and shrubs, rather than trees, as the dominant vegetation type. Temperate grassland regions include the Pampas of Argentina, Brazil and Uruguay as well as the steppes of Eurasia. Lands typically referred to as "prairie" tend to be in North America. The term encompasses the area referred to as the Interior Lowlands of the United States, Canada and Mexico, which includes all of the Great Plains as well as the wetter, somewhat hillier land to the east. In the U.S., the area is constituted by most or all of the states of North Dakota, South Dakota, Nebraska, Kansas, and Oklahoma, and sizable parts of the states of Montana, Wyoming, Colorado, New Mexico, Texas, Missouri, Iowa, Illinois, Indiana, Wisconsin, and western and southern Minnesota. The Central Valley of California is also a prairie. The Canadian Prairies occupy vast areas of Manitoba, Saskatchewan, and Alberta.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_SAVANNAH</Tag>
@@ -275,6 +263,38 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_PLAINS</Tag>
+        <English>Plains</English>
+        <French>
+            <Text>Plaines</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>
+            <Text>Ebene</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Pianura:Pianure</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Llanura:Llanuras</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_PLAINS_PEDIA</Tag>
+        <English>[TAB]Plains is the plural of plain, a geographical feature. It is a big flat area of a land.</English>
+        <French>[TAB]Une plaine est une forme particulière de relief, c'est un espace géographique caractérisé par une surface topographique plane, avec des pentes relativement faibles.</French>
+        <German>[TAB]Der Begriff 'Ebene' bezieht sich auf ein grösseres, flaches Gebiet Land.</German>
+        <Italian>[TAB]Plains is the plural of plain, a geographical feature. It is a big flat area of a land.</Italian>
+        <Spanish>[TAB]Plains is the plural of plain, a geographical feature. It is a big flat area of a land.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_SAVANNAH_PEDIA</Tag>
