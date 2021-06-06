@@ -1406,7 +1406,12 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			
 			if (kBuildingInfo.getSeaPlotYieldChange(i) != 0)
 			{
-				int iYieldChange = kBuildingInfo.getSeaPlotYieldChange(i);
+				// Determine the net change that would be added by the building
+				// We have to avoid double-counting yield changes that do not stack\accumulate
+				const int iYieldChange = kBuildingInfo.getSeaPlotYieldChange(i) - getSeaPlotYield((YieldTypes)i);
+				
+				if (iYieldChange != 0)
+				{ 
 				int iTempValue = 0;
 				
 				int iFood = 0;
@@ -1451,10 +1456,17 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 				iValue += iTempValue;
 				bIsMilitary = true;
 			}
+			}
 
 			// R&R, ray, Landplot Yields - START
 			if (kBuildingInfo.getLandPlotYieldChange(i) != 0)
 			{
+				// Determine the net change that would be added by the building
+				// We have to avoid double-counting yield changes that do not stack\accumulate
+				const int iYieldChange = kBuildingInfo.getLandPlotYieldChange(i) - getLandPlotYield((YieldTypes)i);
+
+				if (iYieldChange != 0)
+				{
 				int iYieldChange = kBuildingInfo.getLandPlotYieldChange(i);
 				int iTempValue = 0;
 				
@@ -1498,8 +1510,11 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			// R&R, ray, Landplot Yields - END
 		}
 	}
+	}
 	
-	if ((bIsMajorCity) || (iFocusFlags & BUILDINGFOCUS_MILITARY))	// TAC - AI Buildings - koma13
+	// Just because we're a major cities does not mean that we should value the unlocking of units which
+	// we are unlikely to ever build anyway
+	if (/*(bIsMajorCity) || */(iFocusFlags & BUILDINGFOCUS_MILITARY))	// TAC - AI Buildings - koma13
 	{
 		int iUnitsTrainedCount = 0;
 		
@@ -1511,6 +1526,8 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			}
 		}
 		
+		// TODO: Differentiate between domain, transport units getCargoSpace() > 0 and actual military units
+
 		if (iUnitsTrainedCount > 0)
 		{
 			int iBuildingCount = kOwner.getBuildingClassCountPlusMaking(eBuildingClass);
@@ -2015,8 +2032,6 @@ void CvCityAI::AI_setEmphasize(EmphasizeTypes eIndex, bool bNewValue)
 				m_em_iEmphasizeYieldCount.add((YieldTypes)iI,((AI_isEmphasize(eIndex)) ? iYieldChange : -iYieldChange));
 			}
 		}
-
-		GET_PLAYER(getOwnerINLINE()).AI_manageEconomy();
 
 		AI_assignWorkingPlots();
 
@@ -3639,6 +3654,11 @@ CvUnit* CvCityAI::AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 
 	return pDisplacedUnit;
 }
+
+//iValueA1 - Value of passed unit with original profession.
+//iValueA2 - Value of passed unit with loop profession.
+//iValueB1  - Value of loop unit with original profession.
+//iValueB2 - Value of loop unit with loop profession.
 
 CvUnit* CvCityAI::AI_juggleColonist(CvUnit* pUnit)
 {
