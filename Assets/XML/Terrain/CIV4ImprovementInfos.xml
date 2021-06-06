@@ -176,6 +176,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -392,6 +396,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -468,6 +476,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -550,6 +562,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -626,6 +642,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -738,6 +758,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -922,6 +946,10 @@
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
                     <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bMakesValid>0</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
@@ -1746,6 +1774,10 @@
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
             </TerrainMakesValids>
             <FeatureMakesValids/>
             <BonusTypeStructs>
@@ -1864,6 +1896,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -2048,6 +2084,10 @@
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
                     <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bMakesValid>0</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
@@ -2980,6 +3020,10 @@
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
             </TerrainMakesValids>
             <FeatureMakesValids/>
             <BonusTypeStructs>
@@ -3069,6 +3113,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -3143,6 +3191,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -3223,6 +3275,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -3291,6 +3347,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>

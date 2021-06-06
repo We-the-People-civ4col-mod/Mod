@@ -147,6 +147,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -539,6 +543,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -1042,6 +1050,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -1440,6 +1452,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -2027,6 +2043,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -2895,6 +2915,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -3379,6 +3403,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -3793,6 +3821,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -4213,6 +4245,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -4611,6 +4647,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -5015,6 +5055,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -5413,6 +5457,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -5817,6 +5865,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -6218,6 +6270,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -6616,6 +6672,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -7028,6 +7088,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -7434,6 +7498,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -7846,6 +7914,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -8255,6 +8327,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -8656,6 +8732,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -9046,6 +9126,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -9450,6 +9534,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -9840,6 +9928,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -10236,6 +10328,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -10629,6 +10725,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -11014,6 +11114,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -11391,6 +11495,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -11811,6 +11919,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -12228,6 +12340,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -12638,6 +12754,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -13054,6 +13174,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -13463,6 +13587,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -13869,6 +13997,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -14285,6 +14417,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -14698,6 +14834,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -15108,6 +15248,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -15528,6 +15672,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -15942,6 +16090,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -16362,6 +16514,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -16779,6 +16935,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -17188,6 +17348,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -17594,6 +17758,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -18014,6 +18182,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -18428,6 +18600,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -18856,6 +19032,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -19273,6 +19453,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -20458,6 +20642,10 @@
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
                     <iTerrainAttack>20</iTerrainAttack>
                 </TerrainAttack>
+                <TerrainAttack>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <iTerrainAttack>20</iTerrainAttack>
+                </TerrainAttack>
             </TerrainAttacks>
             <TerrainDefenses/>
             <FeatureAttacks/>
@@ -20798,6 +20986,10 @@
                 </TerrainAttack>
                 <TerrainAttack>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <iTerrainAttack>20</iTerrainAttack>
+                </TerrainAttack>
+                <TerrainAttack>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <iTerrainAttack>20</iTerrainAttack>
                 </TerrainAttack>
             </TerrainAttacks>
@@ -22161,6 +22353,10 @@
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
                     <iTerrainAttack>10</iTerrainAttack>
                 </TerrainAttack>
+                <TerrainAttack>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <iTerrainAttack>10</iTerrainAttack>
+                </TerrainAttack>
             </TerrainAttacks>
             <TerrainDefenses/>
             <FeatureAttacks>
@@ -22400,6 +22596,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -22780,6 +22980,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -23175,6 +23379,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -23556,6 +23764,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -25773,6 +25985,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -26152,6 +26368,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -26511,6 +26731,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -26907,6 +27131,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -27327,6 +27555,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -27744,6 +27976,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -28158,6 +28394,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -29346,6 +29586,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -29780,6 +30024,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -30167,6 +30415,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -30551,6 +30803,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -31360,6 +31616,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -31755,6 +32015,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -32097,6 +32361,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -45530,7 +45798,7 @@
             <FeatureImpassables/>
             <TerrainNatives>
                 <TerrainNative>
-                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bTerrainNative>1</bTerrainNative>
                 </TerrainNative>
             </TerrainNatives>

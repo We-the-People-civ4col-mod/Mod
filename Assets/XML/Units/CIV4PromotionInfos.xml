@@ -121,6 +121,7 @@
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
             <bGraphicalOnly>0</bGraphicalOnly>
+            <bNotEarnedByXP>0</bNotEarnedByXP>
             <iHotKeyPriority>0</iHotKeyPriority>
             <Button>,Art/colonization_promotions_atlas.dds,2,9</Button>
         </PromotionInfo>
@@ -6002,6 +6003,10 @@
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
                     <iTerrainAttack>15</iTerrainAttack>
                 </TerrainAttack>
+                <TerrainAttack>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <iTerrainAttack>15</iTerrainAttack>
+                </TerrainAttack>
             </TerrainAttacks>
             <TerrainDefenses/>
             <FeatureAttacks/>
@@ -6085,6 +6090,10 @@
                 </TerrainAttack>
                 <TerrainAttack>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <iTerrainAttack>30</iTerrainAttack>
+                </TerrainAttack>
+                <TerrainAttack>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <iTerrainAttack>30</iTerrainAttack>
                 </TerrainAttack>
             </TerrainAttacks>

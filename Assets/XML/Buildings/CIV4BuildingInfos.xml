@@ -4913,8 +4913,7 @@
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
             <AIRequiredCatchmentAreaTerrains>
-                <eRequiredTerrain>TERRAIN_GRASS</eRequiredTerrain>
-                <eRequiredTerrain>TERRAIN_PLAINS</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_PLAINS_FERTILE</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>

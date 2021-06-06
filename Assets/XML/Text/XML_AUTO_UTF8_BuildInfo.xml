@@ -185,6 +185,14 @@
         <English>????</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_PLAINS_FERTILE</Tag>
+        <English>TXT_KEY_BUILD_REFORESTATION_GRASS</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_PLAINS_FERTILE_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILD_REFORESTATION_SAVANNAH</Tag>
         <English>TXT_KEY_BUILD_REFORESTATION_MARSH</English>
     </TEXT>

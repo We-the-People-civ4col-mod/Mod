@@ -88,6 +88,10 @@
 					<iAllow>-50</iAllow>
 				</AllowBuild>
 				<AllowBuild>
+					<eBuild>BUILD_REFORESTATION_PLAINS_FERTILE</eBuild>
+					<iAllow>-50</iAllow>
+				</AllowBuild>
+				<AllowBuild>
 					<eBuild>BUILD_REFORESTATION_MARSH</eBuild>
 					<iAllow>-50</iAllow>
 				</AllowBuild>
