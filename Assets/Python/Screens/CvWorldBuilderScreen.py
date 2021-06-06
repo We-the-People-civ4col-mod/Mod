@@ -186,6 +186,10 @@ class CvWorldBuilderScreen:
 		CyEngine().clearAreaBorderPlots(AreaBorderLayers.AREA_BORDER_LAYER_HIGHLIGHT_PLOT)
 		CvScreensInterface.hideWorldBuilderDiplomacyScreen()
 
+		# autodetect lakes - start
+		gc.getMap().updateWaterPlotTerrainTypes()
+		# autodetect lakes - end
+
 	def handleInput (self, inputClass):
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED) and inputClass.isShiftKeyDown() and inputClass.isCtrlKeyDown():
 			return 1

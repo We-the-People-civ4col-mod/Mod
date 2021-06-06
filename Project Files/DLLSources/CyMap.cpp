@@ -328,6 +328,16 @@ void CyMap::calculateCanalAndChokePoints()
 }
 // Super Forts end
 
+// autodetect lakes - start
+void CyMap::updateWaterPlotTerrainTypes()
+{
+	if (m_pMap)
+	{
+		m_pMap->updateWaterPlotTerrainTypes();
+	}
+}
+// autodetect lakes - end
+
 int CyMap::getCityCatchmentRadius() const
 {
 	if (m_pMap)

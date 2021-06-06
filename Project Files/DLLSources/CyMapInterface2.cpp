@@ -50,6 +50,8 @@ void CyMapPythonInterface2(python::class_<CyMap>& x)
 		.def("updateMinimapColor", &CyMap::updateMinimapColor, "void ()")
 		.def("updateMinOriginalStartDist", &CyMap::updateMinOriginalStartDist, "void (CyArea* pArea)")		
 		.def("calculateCanalAndChokePoints", &CyMap::calculateCanalAndChokePoints, "void ()")// Super Forts  *canal* *choke*
+
+		.def("updateWaterPlotTerrainTypes", &CyMap::updateWaterPlotTerrainTypes, "void ()") // autodetect lakes
 		
 		.def("getCityCatchmentRadius", &CyMap::getCityCatchmentRadius, "int ()")
 		.def("setCityCatchmentRadiusMapMaker", &CyMap::setCityCatchmentRadiusMapMaker, "void (int)")

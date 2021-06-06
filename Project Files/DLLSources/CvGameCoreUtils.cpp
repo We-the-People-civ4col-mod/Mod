@@ -1903,6 +1903,7 @@ void postLoadGameFixes()
 
 	// deal with plots
 	CvMap& kMap = GC.getMapINLINE();
+	kMap.updateWaterPlotTerrainTypes(); // autodetect lakes
 	const int iNumPlots = kMap.numPlotsINLINE();
 	
 	// reset visibility count as it is garbage right now

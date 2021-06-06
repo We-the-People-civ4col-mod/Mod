@@ -5454,6 +5454,24 @@ TerrainTypes CvPlot::getVariable(TerrainTypes) const
 	return (TerrainTypes)m_eTerrainType;
 }
 
+// autodetect lakes - start
+void CvPlot::setCoastline(bool bRecalculate, bool bRebuildGraphics)
+{
+	CvMap& kMap = GC.getMapINLINE();
+	const int iPlotX = getX_INLINE();
+	const int iPlotY = getY_INLINE();
+	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, 1)
+	{
+		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
+		if (pLoopPlot != NULL && !pLoopPlot->isWater())
+		{
+			setTerrainType(TERRAIN_COAST, bRecalculate, bRebuildGraphics);
+			return;
+		}
+	}
+	setTerrainType(TERRAIN_OCEAN, bRecalculate, bRebuildGraphics);
+}
+// autodetect lakes - end
 
 void CvPlot::setTerrainType(TerrainTypes eNewValue, bool bRecalculate, bool bRebuildGraphics)
 {

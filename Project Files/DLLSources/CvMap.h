@@ -41,6 +41,41 @@ inline int coordRange(int iCoord, int iRange, bool bWrap)
 }
 
 
+// WTP - Plotregion - Nightinggale - start
+class PlotRegion
+{
+	//template<typename T>
+	friend class PlotRegionMap;
+public:
+	PlotRegion();
+
+	bool isEurope() const;
+	int getNumPlots() const;
+	CvPlot* getPlot(int i) const;
+
+protected:
+	void add(int iPlot, std::vector<PlotRegion*>& plotRegions);
+	void merge(PlotRegion& rhs, std::vector<PlotRegion*>& plotRegions);
+	bool m_bEurope;
+	std::vector<int> m_aiPlots;
+};
+
+
+class PlotRegionMap : private boost::noncopyable
+{
+public:
+	template<typename T>
+	PlotRegionMap(const EnumMap<T, bool>& em);
+
+	int getNumRegions() const;
+	const PlotRegion& getRegion(int iIndex) const;
+
+protected:
+	void handlePlot(CvPlot* pPlot, int iX, int iY, std::vector<PlotRegion*>& plotRegions);
+	std::vector<PlotRegion> m_aRegions;
+};
+// WTP - Plotregion - Nightinggale - end
+
 //
 // holds initialization info
 //
@@ -255,6 +290,8 @@ public:
 	int calculatePathDistance(CvPlot *pSource, CvPlot *pDest, CvPlot *pInvalidPlot = NULL);	// Exposed to Python
 	void calculateCanalAndChokePoints();	// Exposed to Python
 	// Super Forts end
+
+	void updateWaterPlotTerrainTypes(); // autodetect lakes
 
 	// Serialization:
 	virtual void read(FDataStreamBase* pStream);
