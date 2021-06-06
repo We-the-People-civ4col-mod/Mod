@@ -4613,6 +4613,40 @@ void CvUnitAI::AI_transportSeaMove()
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	bool bEmpty = !getGroup()->hasCargo();
 
+	// If we don't have any cities and
+	// there are no settler in the new world, something may be very wrong. 
+	// Check if we have a settler waiting in Europe that we can use to
+	// restart our fledgling empire
+	if (kOwner.getNumCities() == 0)
+	{
+		// Note: Does not include units waiting in Europe,
+		// 
+		const int iTotalSettlerCount = kOwner.AI_totalUnitAIs(UNITAI_SETTLER);
+		if (iTotalSettlerCount > 0)
+		{
+			int iEuropeSettlerCount = 0;
+
+			for (int i = 0; i < kOwner.getNumEuropeUnits(); ++i)
+			{
+				const CvUnit* pUnit = kOwner.getEuropeUnit(i);
+					
+				if (pUnit->AI_getUnitAIType() == UNITAI_SETTLER)
+				{
+					++iEuropeSettlerCount;
+				}
+			}
+			
+			if (iTotalSettlerCount == iEuropeSettlerCount)
+			{
+				// All our settlers are in Europe, 
+				// Dump all cargo (units) and head straight to Europe
+				AI_sailToEurope(true);
+				return;
+			}
+		}
+
+	}
+
 	// TAC - AI Improved Naval AI - koma13 - START
 	if (AI_retreatFromDanger())
 	{
@@ -6453,6 +6487,7 @@ bool CvUnitAI::AI_europe()
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	
 	AI_sellYieldUnits(EUROPE);
+	AI_unloadUnits(EUROPE);
 
 	// TAC - AI King no Europe trading bugfix - koma13 - START
 	//kOwner.AI_doEurope();
@@ -6513,6 +6548,29 @@ bool CvUnitAI::AI_europe()
 
 	//Pick up units from Europe (FIFO)
 	std::deque<CvUnit*> aUnits;
+	for (int i = 0; i < kOwner.getNumEuropeUnits(); ++i)
+	{
+		aUnits.push_back(kOwner.getEuropeUnit(i));
+	}
+
+	// Pick up settlers first
+	// TODO: Refactor this into a list of priorities
+	while (!aUnits.empty() && !isFull())
+	{
+		CvUnit* pUnit = aUnits.front();
+		aUnits.pop_front();
+		if (pUnit->canLoadUnit(this, plot(), false) && pUnit->AI_getUnitAIType() == UNITAI_SETTLER)
+		{
+			kOwner.loadUnitFromEurope(pUnit, this);
+			if (getGroup()->getAutomateType() == AUTOMATE_FULL)
+			{
+				FAssert(pUnit->getGroup() != NULL);
+				pUnit->getGroup()->setAutomateType(AUTOMATE_FULL);
+			}
+		}
+	}
+
+	//Pick up units from Europe (FIFO)
 	for (int i = 0; i < kOwner.getNumEuropeUnits(); ++i)
 	{
 		aUnits.push_back(kOwner.getEuropeUnit(i));
