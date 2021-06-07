@@ -6979,6 +6979,15 @@
                     </BuildingYields>
                 </BuildingYieldChange>
                 <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_STATUE_GOVERNOR</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_CROSSES</YieldType>
+                            <iYieldChange>5</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
                     <BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
