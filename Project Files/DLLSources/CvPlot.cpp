@@ -2346,6 +2346,17 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 		{
 			return false;
 		}
+		// features can't be placed on peaks
+		if (isPeak())
+		{
+			return false;
+		}
+
+		// make sure the terrain in question can have the wanted feature
+		if (!GC.getFeatureInfo(eResultFeature).isTerrain(getTerrainType()))
+		{
+			return false;
+		}
 
 		bValid = true;
 	}
