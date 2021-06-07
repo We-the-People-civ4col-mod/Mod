@@ -490,16 +490,49 @@
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
-		<BonusArtInfo>
-			<Type>ART_DEF_BONUS_KAKTEEN_MIT_GRASS</Type>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Terrain/Resources/Cactus/cactus.nif</NIF>
-			<KFM/>
-			<Button>,Art/colonization_atlas_professions_bonus.dds,5,14</Button>
-			<FontButtonIndex>49</FontButtonIndex>
-			<bShadowCastor>1</bShadowCastor>
-			<bRefractionCastor>0</bRefractionCastor>
-		</BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_KAKTEEN_MIT_GRASS</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Cactus/cactus.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_professions_bonus.dds,5,14</Button>
+            <FontButtonIndex>49</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_APPLES</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/apple/banana.nif</NIF>
+            <KFM/>
+            <Button>,Art/atlasmapbonus.dds,3,4</Button>
+            <FontButtonIndex>49</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_LEMONS</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/lemon/lemqes.nif</NIF>
+            <KFM/>
+            <Button>,Art/atlasmapbonus.dds,1,8</Button>
+            <FontButtonIndex>49</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_RICE</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/rice/rice.nif</NIF>
+            <KFM/>
+            <Button>,Art/atlasmapbonus.dds,1,3</Button>
+            <FontButtonIndex>49</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
     </BonusArtInfos>
 </Civ4ArtDefines>
