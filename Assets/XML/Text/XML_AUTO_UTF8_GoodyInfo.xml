@@ -306,11 +306,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_SCOUT</Tag>
-        <English>Your unit is now a [COLOR_UNIT_TEXT]Seasoned Scout[COLOR_REVERT]</English>
-        <French>Votre unité est à présent un [COLOR_UNIT_TEXT]Eclaireur aguerri[COLOR_REVERT]</French>
-        <German>Eure Einheit ist jetzt ein [COLOR_UNIT_TEXT]Routinierter Späher[COLOR_REVERT]</German>
-        <Italian>La tua unità è ora uno [COLOR_UNIT_TEXT]scout esperto[COLOR_REVERT]</Italian>
-        <Spanish>Vuestra unidad ahora es un [COLOR_UNIT_TEXT]Batidor curtido[COLOR_REVERT]</Spanish>
+        <English>Your unit is now a [COLOR_UNIT_TEXT]Seasoned Scout[COLOR_REVERT].</English>
+        <French>Votre unité est à présent un [COLOR_UNIT_TEXT]Eclaireur aguerri[COLOR_REVERT].</French>
+        <German>Eure Einheit ist jetzt ein [COLOR_UNIT_TEXT]Routinierter Späher[COLOR_REVERT].</German>
+        <Italian>La tua unità è ora uno [COLOR_UNIT_TEXT]scout esperto[COLOR_REVERT].</Italian>
+        <Spanish>Vuestra unidad ahora es un [COLOR_UNIT_TEXT]Batidor curtido[COLOR_REVERT].</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SHIPWRECKED</Tag>
@@ -356,17 +356,17 @@
         <French>Vous avez offensé les indigènes qui vous déclarent la guerre en représailles !</French>
         <German>Ihr habt die Ureinwohner beleidigt. Sie erklären Euch aus Rache den Krieg!</German>
         <Italian>Hai offeso i nativi, che ti dichiarano guerra!</Italian>
-        <Spanish>Habéis ofendido a los Nativos, que os declaran la guerra como represalia.</Spanish>
+        <Spanish>¡Habéis ofendido a los Nativos, que os declaran la guerra como represalia!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RANGER</Tag>
-        <English>You have discovered a wounded [COLOR_UNIT_TEXT]ranger[COLOR_REVERT] who offers his services to us for our help.</English>
+        <English>You have discovered a wounded [COLOR_UNIT_TEXT]ranger[COLOR_REVERT] who offers his services to us for our help!</English>
         <German>Ihr habt einen verwundeten [COLOR_UNIT_TEXT]Ranger[COLOR_REVERT] entdeckt, der uns für unsere Hilfe seine Dienste anbietet!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_TRADER</Tag>
         <English>You have discovered a [COLOR_UNIT_TEXT]Native trader[COLOR_REVERT] who had lost his orientation and now wants to offer his services to you!</English>
-        <German>Ihr habt einen [COLOR_UNIT_TEXT]Ureinwohnerhändler[COLOR_REVERT] entdeckt, der die Orientierung verloren hatte und Euch nun seine Dienste anbietet.</German>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]Ureinwohnerhändler[COLOR_REVERT] entdeckt, der die Orientierung verloren hatte und Euch nun seine Dienste anbietet!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CRAZY_SECT_OF_MISSIONARIES</Tag>

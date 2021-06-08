@@ -6,204 +6,771 @@
 <!-- Game Text - New -->
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_HEMI_DESC</Tag>
+        <English>Leave your mark on everything west of the Atlantic in this Western Hemisphere scenario!</English>
+        <French>Laissez votre empreinte sur tout ce qui se trouve à l'ouest de l'Atlantique dans le scénario "Amériques" !</French>
+        <German>Mittelgroße Karte der Neuen Welt (Karte aus dem Originalspiel, von TAC nicht verändert)</German>
+        <Italian>Lascia il segno su tutto quello che si trova a ovest dell'Atlantico, in questo scenario sull'emisfero occidentale!</Italian>
+        <Spanish>Dejad huella en todo el Atlántico oeste gracias a este escenario del hemisferio occidental.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_HEMI_HUGE_DESC</Tag>
+        <English>Colonize the whole of the New World in this huge Western Hemisphere scenario.</English>
+        <French>Colonisez la totalité du Nouveau Monde dans le gigantesque scénario "Amériques".</French>
+        <German>Sehr große Karte der Neuen Welt (Karte aus dem Originalspiel, von TAC nicht verändert)</German>
+        <Italian>Colonizza il Nuovo Mondo in questo enorme scenario sull'emisfero occidentale.</Italian>
+        <Spanish>Colonizad todo el Nuevo Mundo en este enorme escenario del hemisferio occidental.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_SOUTH_AMERICA_DESC</Tag>
+        <English>Conquer the jungles of the Amazon, the peaks of the Andes, and the plains of Patagonia in this South America scenario.</English>
+        <French>Partez à la conquête de la jungle amazonienne, des pics andins et des plaines de Patagonie dans le scénario "Amérique du Sud".</French>
+        <German>Mittelgroße Karte von Süd-Amerika (Karte aus dem Originalspiel, von TAC nicht verändert): Erkundet den Amazonasdschungel und die Gipfel der Anden und segelt um den Südzipfel der Neuen Welt!</German>
+        <Italian>Conquista le giungle dell'Amazzonia, i picchi delle Ande e le pianure della Patagonia, in questo scenario sudamericano.</Italian>
+        <Spanish>Conquistad las selvas del Amazonas, los picos de los Andes y las llanuras de la Patagonia en este escenario de Suramérica.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_NORTHWEST_DESC</Tag>
+        <English>Ply the icy waters of North America and Canada in this Northwest Passage scenario.</English>
+        <French>Voguez sur les eaux glacées d'Amérique du Nord dans le scénario "Passage du Nord-Ouest".</French>
+        <German>Große Karte des kalten Nordens der Neuen Welt (Karte aus dem Originalspiel, von TAC nicht verändert): Durchkreuzt die eisigen Gewässer und erforscht die Großen Seen im Landesinneren!</German>
+        <Italian>Solca le gelide acque del Nord America e del Canada in questo scenario sul passaggio a nord-ovest.</Italian>
+        <Spanish>Surcad las aguas heladas de Estados Unidos y Canadá en este escenario del Paso del Noroeste.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MAP_SCRIPT_CARIBBEAN_DESCR</Tag>
+        <English>Take in the island air and take over the islands themselves in this semi-randomized Caribbean map.</English>
+        <French>Allez prendre l'air dans les îles et prenez les îles elles-mêmes dans cette carte semi-aléatoire des Caraïbes.</French>
+        <German>Zufallsgenerierte Inselwelt, die der Karibik ähnelt</German>
+        <Italian>Fai una vacanza al mare e conquista un intero arcipelago, in questa mappa caraibica semi-casuale.</Italian>
+        <Spanish>Dejaos seducir por el ambiente de las islas y apoderaos de ellas en este mapa semialeatorio del Caribe.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_TAC_AMERICA_DESC</Tag>
+        <English>TAC-version of Western Hemisphere (Huge): realistic and coherent temperate zones, authentic rivers, authentic mountains, authentic islands, several river bugs fixed, fair balanced transfer plots and starting positions</English>
+        <French>Version TAC de l'hémisphère Ouest (Immense):zones tempérées réalistes et cohérentes, fleuves, montagnes, îles authentiques à la réalité avec quelques ajustements dans l'intérêt du jeu.</French>
+        <German>TAC-Variante der Amerika-Karte Western Hemisphere (Huge): authentische und zusammenhängende Klimazonen, authentische Flüsse, authentische Höhenzüge, korrekt platzierte Inseln, fair verteilte Überfahrtsfelder nach Europa; Fixing von Flüssen, die stromaufwärts flossen oder im Binnenland versickerten; Fixing von bewaldeten Meeresfeldern</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_TAC_NORTHWEST_DESC</Tag>
+        <English>TAC-version of Northwest Passage: realistic and coherent temperate zones, authentic rivers, authentic mountains, fixing of several river bugs, new Pacific transfer plots, only five Atlantic transfer plots and starting positions for different temperate zones and different game experiences</English>
+        <French>Version TAC du passage par le Nord Ouest (Immense):zones tempérées réalistes et cohérentes, fleuves, montagnes, îles authentiques à la réalité avec seulement 5 cases d'accès à l'Europe par l'Atlantique servant chacune de position de départ pour diversifier les expériences de jeu.</French>
+        <German>TAC-Variante der Karte Northwest Passage: nur Indianervölker aus Nord-Amerika, authentische und zusammenhängende Klimazonen, authentische Flüsse, authentische Höhenzüge, erstmals Pazifik-Überfahrtsfelder, nur noch fünf, fair verteilte Überfahrtsfelder im Atlantik, die als Startpositionen in verschiedene Klimazonen führen, die unterschiedliche Herausforderungen bieten; Fixing von Flüssen, die stromaufwärts flossen oder im Binnenland versickerten</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_TAC_SOUTH_AMERICA_DESC</Tag>
+        <English>TAC-version of South America: transfer plots optimized, fixing of several river bugs, more rivers, more plots with jungle and peaks, Patagonia with fewer desert plots and more lumber</English>
+        <French>Version TAC de l'Amérique du Sud avec quelques ajustements au niveau des fleuves, de la jungle et du désert en Patagonie.</French>
+        <German>TAC-Variante der Karte South America: nur Indianervölker aus Süd-Amerika, mehr Dschungel, mehr Berge, mehr Flüsse, ausgeglichener balancierte Atlantik-Überfahrtsfelder, erstmals Pazifik-Überfahrtsfelder, Südzipfel mit weniger Wüste und erstmals mit Holzquellen; Fixing von Flüssen, die stromaufwärts flossen oder im Binnenland versickerten</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_TAC_CENTRAL_AMERICA_DESC</Tag>
+        <English>TAC-map of Central America: from the Caribbean Sea to Mexico, from the Mississippi River to Amazon</English>
+        <French>Version TAC de l'Amérique Centrale : de la mer des Caraïbes au Mexique, du Mississippi à l'Amazone.</French>
+        <German>TAC-Karte von Mittel-Amerika: von den Karibischen Inseln bis Mexiko, vom Mississippi-Delta bis hin zum Amazonasdschungel</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_TAC_EAST_COAST_DESC</Tag>
+        <English>Huge TAC-map of the East Coast of North America. Defined as a small map, therefore only four North American native tribes have settlements. Newfoundland south to Florida, the Great Lakes east to the Atlantic.</English>
+        <French>Version TAC de la côte Est Nord-Américaine. Défini volontairement comme une petite carte pour n'abriter que 4 tribus Nord-Américaines. De Terre-Neuve à la Floride, des Grands Lacs à l'Atlantique.</French>
+        <German>Riesige TAC-Karte der Ostküste Nord-Amerikas. Technisch als "kleine" Karte ausgewiesen, damit sie nur von den vier Indianerstämmen des Nordens besiedelt ist. Von Neufundland bis Florida, von den Großen Seen bis zur Atlantikküste.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERAYCA</Tag>
+        <English>Religion and Revolution (Gigantic): Optimized for playing Religion and Revolution. Not geographically or historically correct. Extremely big.</English>
+        <French>Religion and Revolution (Gigantesque): Optimisée pour jouer à Religion and Revolution. Ni géographiquement, ni historiquement correcte. Extrêmement grande.</French>
+        <German>Religion und Revolution (Gigantisch): Optimiert für das Spielen von Religion und Revolution. Nicht geografisch oder historisch korrekt. Extrem groß.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_THE_NEW_WORLD</Tag>
+        <English>Religion and Revolution (Gigantic): Geographically correct map of the New World. Extremely big.</English>
+        <French>Religion and Revolution (Gigantesque): Carte géographiquement correcte des Amériques. Extrêmement grande.</French>
+        <German>Religion und Revolution (Gigantisch): Geographisch korrekte Karte der Neuen Welt. Extrem groß.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_COLONIAL_AMERICA</Tag>
         <English>Huge map of North America with random locations of Natives, resources and starting locations for Europeans.</English>
-        <French>Huge map of North America with random locations of Natives, resources and starting locations for Europeans.</French>
-        <German>Grosse Karte von Nord-Amerika. Die Startpositionen der Europäer und Ureinwohner sowie der Ressourcen sind zufällig gewählt.</German>
-        <Italian>Huge map of North America with random locations of Natives, resources and starting locations for Europeans.</Italian>
-        <Spanish>Huge map of North America with random locations of Natives, resources and starting locations for Europeans.</Spanish>
+        <French>Énorme carte de l'Amérique du Nord avec des emplacements aléatoires des autochtones, des ressources et des lieux de départ pour les Européens.</French>
+        <German>Grosse Karte von Nord-Amerika mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC</Tag>
         <English>Faithful gigantic map of the Americas (136x256 plots) with historical locations of Natives and resources.</English>
         <French>Représentation fidèle gigantesque des Amériques (136x256 cases), avec distribution historique des indigènes et des ressources.</French>
-        <German>Genaue gigantische Karte von Amerika (136x256 Plots) mit historischen Standorte der Eingeborenen und Ressourcen.</German>
-        <Italian>Faithful gigantic map of the Americas (136x256 plots) with historical locations of Natives and resources.</Italian>
-        <Spanish>Faithful gigantic map of the Americas (136x256 plots) with historical locations of Natives and resources.</Spanish>
+        <German>Genaue gigantische Karte von Amerika (136x256 Felder) mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC_RANDOM</Tag>
         <English>Faithful gigantic map of the Americas (136x256 plots) with random locations of Natives, resources and starting locations for Europeans.</English>
         <French>Représentation fidèle gigantesque des Amériques (136x256 cases), avec distribution aléatoire des indigènes, des ressources et des points de départs pour les européens.</French>
-        <German>Genaue riesigen Karte von Amerika (136x256 Plots) mit zufälligen Orten der Eingeborenen, Ressourcen und Startplätze für die Europäer.</German>
-        <Italian>Faithful gigantic map of the Americas (136x256 plots) with random locations for Natives, resources and starting locations</Italian>
-        <Spanish>Faithful gigantic map of the Americas (136x256 plots) with random locations for Natives, resources and starting locations</Spanish>
+        <German>Genaue gigantische Karte von Amerika (136x256 Felder) mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE</Tag>
-        <English>Faithful huge map of the Americas (68x128 plots) with historical locations of Natives and ressources.</English>
+        <English>Faithful huge map of the Americas (68x128 plots) with historical locations of Natives and resources.</English>
         <French>Représentation fidèle immense des Amériques (68x128 cases), avec distribution historique des indigènes et des ressources.</French>
-        <German>Genaue riesigen Karte von Amerika (68x128 Plots) mit historischen Standorte der Eingeborenen und Ressourcen.</German>
-        <Italian>Faithful huge map of the Americas (68x128 plots) with historical locations of Natives and ressources.</Italian>
-        <Spanish>Faithful huge map of the Americas (68x128 plots) with historical locations of Natives and ressources.</Spanish>
+        <German>Genaue riesige Karte von Amerika (68x128 Felder) mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE_RANDOM</Tag>
-        <English>Faithful huge map of the Americas (68x128 plots) with random locations of Natives, ressources and starting locations for Europeans.</English>
+        <English>Faithful huge map of the Americas (68x128 plots) with random locations of Natives, resources and starting locations for Europeans.</English>
         <French>Représentation fidèle immense des Amériques (68x128 cases), avec distribution aléatoire des indigènes, des ressources et des points de départs pour les européens.</French>
-        <German>Genaue riesigen Karte von Amerika (68x128 Plots) mit zufälligen Orten der Eingeborenen, Ressourcen und Startplätze für die Europäer.</German>
-        <Italian>Faithful huge map of the Americas (68x128 plots) with random locations for Natives, ressources and starting locations</Italian>
-        <Spanish>Faithful huge map of the Americas (68x128 plots) with random locations for Natives, ressources and starting locations</Spanish>
+        <German>Genaue riesige Karte von Amerika (68x128 Felder) mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_TOTAL_CITY_HEALTH</Tag>
-        <English>Health of the City: %d1 %F2_Icon</English>
-        <French>Santé de la ville : %d1 %F2_Icon</French>
-        <German>Gesundheit der Stadt: %d1 %F2_Icon</German>
-        <Italian>Health of the City: %d1 %F2_Icon</Italian>
-        <Spanish>Health of the City: %d1 %F2_Icon</Spanish>
+        <Tag>TXT_KEY_MAP_SCRIPT_ANEWWORLD_DESCR</Tag>
+        <English>A New World waits to be discovered. This map script generates a continent spanning from the North Pole to the South Pole.</English>
+        <French>Un Nouveau Monde attend d'être découvert. Ce script de carte génère un continent qui s'étend du Pôle Nord au Pôle Sud.</French>
+        <German>Zufallsgenerierte Welt mit einem großen Kontinent, der vom Nord- bis zum Südpol reicht</German>
+        <Italian>Un Nuovo Mondo attende di essere scoperto. Lo script di questa mappa crea un continente che si estende dal Polo Nord al Polo Sud.</Italian>
+        <Spanish>Un Nuevo Mundo aguarda a ser descubierto. Esta secuencia de comandos del mapa genera un continente que se extiende desde el Polo Norte al Polo Sur.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_MISC_HELP_YIELD_HEALTH</Tag>
-        <English>[ICON_BULLET]%D1%%%F2 from City Health</English>
-        <French>[ICON_BULLET]%D1%%%F2 par la santé de la ville</French>
-        <German>[ICON_BULLET]%D1%%%F2 durch Gesundheit der Stadt</German>
-        <Italian>[ICON_BULLET]%D1%%%F2 from City Health</Italian>
-        <Spanish>[ICON_BULLET]%D1%%%F2 from City Health</Spanish>
+        <Tag>TXT_KEY_MAP_FAIRE_WEATHER_DISTANCE</Tag>
+        <English>Distance to Europe : </English>
+        <French>Distance jusqu'à l'Europe : </French>
+        <German>Distanz Küste zu Europa : </German>
+        <Italian>Distance to Europe : </Italian>
+        <Spanish>Distance to Europe : </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_YIELD_HEALTH_POP_CHANGE</Tag>
-        <English>Population Change %s1 = %d2%F3</English>
-        <French>Changement de la %s1 sur la population = %d2%F3</French>
-        <German>Bevölkerung %s1 = %d2%F3</German>
-        <Italian>Population %s1 = %d2%F3</Italian>
-        <Spanish>Population %s1 = %d2%F3</Spanish>
+        <Tag>TXT_KEY_MAP_FAIRE_WEATHER_NORTHERN_BORDER</Tag>
+        <English>Northern border : </English>
+        <French>Frontière Nord : </French>
+        <German>Nördliche Grenze : </German>
+        <Italian>Northern border : </Italian>
+        <Spanish>Northern border : </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_YIELD_HEALTH_TOTAL_CHANGE</Tag>
-        <English>Total Change %s1 = %d2%F3</English>
-        <French>Changement de la %s1 total = %d2%F3</French>
-        <German>Gesamtänderung %s1 = %d2%F3</German>
-        <Italian>Total Change %s1 = %d2%F3</Italian>
-        <Spanish>Total Change %s1 = %d2%F3</Spanish>
+        <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SOUTHERN_BORDER</Tag>
+        <English>Southern border : </English>
+        <French>Frontière Sud : </French>
+        <German>Südliche Grenze : </German>
+        <Italian>Southern border : </Italian>
+        <Spanish>Southern border : </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_CITY_HEALTH_TOTAL</Tag>
-        <English>City %s1 = %d2%F3</English>
-        <French>%s1 de la Ville = %d2%F3</French>
-        <German>Stadt %s1 = %d2%F3</German>
-        <Italian>City %s1 = %d2%F3</Italian>
-        <Spanish>City %s1 = %d2%F3</Spanish>
+        <Tag>TXT_KEY_MAP_FAIRE_WEATHER_LAND_ALLOCATION</Tag>
+        <English>Land allocation : </English>
+        <French>Disposition des terres : </French>
+        <German>Landverteilung : </German>
+        <Italian>Land allocation : </Italian>
+        <Spanish>Land allocation : </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PEDIA_BONUS_YIELD</Tag>
-        <English>%s1: %D2%F3 (with Resource [LINK=%s5]%s4[\LINK])</English>
-        <French>%s1 :  %D2%F3 (avec Resource [LINK=%s5]%s4[\LINK])</French>
-        <German>%s1: %D2%F3 (mit Bonus Ressource [LINK=%s5]%s4[\LINK])</German>
-        <Italian>%s1: %D2%F3 (con Resource [LINK=%s5]%s4[\LINK])</Italian>
-        <Spanish>%s1: %D2 %F3 (con Resource [LINK=%s5]%s4[\LINK])</Spanish>
+        <Tag>TXT_KEY_MAP_FAIRE_WEATHER_3_FIELDS</Tag>
+        <English>3 plots : </English>
+        <French>3 cases : </French>
+        <German>3 Felder : </German>
+        <Italian>3 fields : </Italian>
+        <Spanish>3 fields : </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_EVENT_HEALTH_CITY</Tag>
-        <English>[ICON_BULLET]%D1 [ICON_HEALTHY] in %s2_city</English>
-        <French>[ICON_BULLET]%D1 [ICON_HEALTHY] à %s2_city</French>
-        <German>[ICON_BULLET]%D1 [ICON_HEALTHY] in %s2_city</German>
-        <Italian>[ICON_BULLET]%D1 [ICON_HEALTHY] a %s2_city</Italian>
-        <Spanish>[ICON_BULLET]%D1 [ICON_HEALTHY] en %s2_city</Spanish>
+        <Tag>TXT_KEY_MAP_FAIRE_WEATHER_4_FIELDS</Tag>
+        <English>4 plots (default) : </English>
+        <French>4 cases (par défaut) : </French>
+        <German>4 Felder (Standard) : </German>
+        <Italian>4 fields (default) : </Italian>
+        <Spanish>4 fields (default) : </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_EVENT_HEALTH</Tag>
-        <English>[ICON_BULLET]%D1 [ICON_HEALTH] in all settlements</English>
-        <French>[ICON_BULLET]%D1 [ICON_HEALTH] dans toutes les colonies</French>
-        <German>[ICON_BULLET]%D1 [ICON_HEALTH] in allen Siedlungen</German>
-        <Italian>[ICON_BULLET]%D1 [ICON_HEALTH] in tutti gli insediamenti</Italian>
-        <Spanish>[ICON_BULLET]%D1 [ICON_HEALTH] en todos los asentamientos</Spanish>
+        <Tag>TXT_KEY_MAP_FAIRE_WEATHER_6_FIELDS</Tag>
+        <English>6 plots : </English>
+        <French>6 cases : </French>
+        <German>6 Felder : </German>
+        <Italian>6 fields : </Italian>
+        <Spanish>6 fields : </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_LBD_VETERAN_BY_MILITARY_SERVICE</Tag>
-        <English>[COLOR_POSITIVE_TEXT]A settler has gained enough experience through combat to become %s1_expert[COLOR_REVERT].</English>
-        <French>[COLOR_POSITIVE_TEXT]Un colon libre a gagné suffisamment d'expérience pour devenir %s1_expert[COLOR_REVERT]</French>
-        <German>[COLOR_POSITIVE_TEXT]Ein Freier Kolonist hat im Kampf genug Erfahrung gesammelt um als %s1_expert zu gelten.[COLOR_REVERT]</German>
-        <Italian>[COLOR_POSITIVE_TEXT]A settler has gained enough experience through combat to become %s1_expert[COLOR_REVERT].</Italian>
-        <Spanish>[COLOR_POSITIVE_TEXT]A settler has gained enough experience through combat to become %s1_expert[COLOR_REVERT].</Spanish>
+        <Tag>TXT_KEY_MAP_FAIRE_WEATHER_8_FIELDS</Tag>
+        <English>8 plots : </English>
+        <French>8 cases : </French>
+        <German>8 Felder : </German>
+        <Italian>8 fields : </Italian>
+        <Spanish>8 fields : </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_LBD_FREE_BY_MILITARY_SERVICE</Tag>
-        <English>[COLOR_POSITIVE_TEXT]An unfree colonist has become free for his bravery in battle.[COLOR_REVERT]</English>
-        <French>[COLOR_POSITIVE_TEXT]Un combattant a gagné le droit de devenir un colon libre par sa bravoure dans la bataille.[COLOR_REVERT]</French>
-        <German>[COLOR_POSITIVE_TEXT]Ein Unfreier hat sich durch Mut und Einsatz im Kampf seine Freiheit verdient.[COLOR_REVERT]</German>
-        <Italian>[COLOR_POSITIVE_TEXT]An unfree colonist has become free for his bravery in battle.[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_POSITIVE_TEXT]An unfree colonist has become free for his bravery in battle.[COLOR_REVERT]</Spanish>
+        <Tag>TXT_KEY_MAP_FAIRE_WEATHER_MANY_ISLES_0</Tag>
+        <English>Few isles (default)</English>
+        <French>Quelques grandes îles (par défaut)</French>
+        <German>Wenige Inseln (Standard)</German>
+        <Italian>Few isles (default)</Italian>
+        <Spanish>Few isles (default)</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_MISC_GREAT_ADMIRAL</Tag>
-        <English>Great Admiral: %d1_Curr/%d2_Need Experience</English>
-        <French>Amiral illustre : %d1_Curr/%d2_Need expérience</French>
-        <German>Großer Admiral: %d1_Curr/%d2_Need Erfahrung</German>
-        <Italian>Grande Admirale: %d1_Curr/%d2_Need esperienza</Italian>
-        <Spanish>Gran admiral: %d1_Curr/%d2_Need de experiencia</Spanish>
-    </TEXT>
-    <!--super forts-->
-    <TEXT>
-        <Tag>TXT_KEY_PLOT_FORTIFY_TO_UPGRADE</Tag>
-        <English>[SPACE](Must garrison to become %s1_ImpName)</English>
-        <French>[SPACE](Doit fortifier pour devenir 1 %s1_ImpName)</French>
-        <German>[SPACE](Muss befestigt sein, um zur Modernisierung %s1_ImpName zu werden)</German>
-        <Italian>[SPACE](Deve fortificare per diventare %s1_ImpName)</Italian>
-        <Spanish>[SPACE](Debe fortalecer para convertirse en [NUM1:un:una:unos:unas] %s1:1_ImpName)</Spanish>
+        <Tag>TXT_KEY_MAP_FAIRE_WEATHER_MANY_ISLES_1</Tag>
+        <English>Many isles</English>
+        <French>De nombreuses îles</French>
+        <German>Viele Inseln</German>
+        <Italian>Many isles</Italian>
+        <Spanish>Many isles</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_IMPROVEMENT_PLOT_CULTURE</Tag>
-        <English>[ICON_BULLET]%D1_Change[ICON_CULTURE] for owner in plot</English>
-        <French>[ICON_BULLET]%D1_Change[ICON_CULTURE] pour le propriétaire dans la parcelle</French>
-        <German>[ICON_BULLET]%D1_Change[ICON_CULTURE] für Besitzer des Felds</German>
-        <Italian>[ICON_BULLET]%D1_Change[ICON_CULTURE] per il proprietario di complotto</Italian>
-        <Spanish>[ICON_BULLET]%D1_Change[ICON_CULTURE] para el propietario de la parcela</Spanish>
+        <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_NORTHERN_BORDER_0</Tag>
+        <English>Latitude 90 degrees north (default)</English>
+        <French>Latitude 90 degrés Nord (par défault)</French>
+        <German>90°N (nördliche Breite, Standard)</German>
+        <Italian>Latitude 90 degrees north (default)</Italian>
+        <Spanish>Latitude 90 degrees north (default)</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_IMPROVEMENT_CULTURE_RANGE</Tag>
-        <English>[ICON_BULLET]Influences plots within a distance of %d1_Num</English>
-        <French>[ICON_BULLET]Influences des parcelles dans un rayon de %d1_Num</French>
-        <German>[ICON_BULLET]Beeinflusst Felder im Radius von %d1_Num</German>
-        <Italian>[ICON_BULLET]Trame influenze entro una distanza di %d1_Num</Italian>
-        <Spanish>[ICON_BULLET]Influye en las parcelas dentro de una distancia de %d1_Num</Spanish>
+        <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_NORTHERN_BORDER_1</Tag>
+        <English>Latitude 90 degrees south</English>
+        <French>Latitude 90 degrés Sud</French>
+        <German>90°S (südliche Breite)</German>
+        <Italian>Latitude 90 degrees south</Italian>
+        <Spanish>Latitude 90 degrees south</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_IMPROVEMENT_BOMBARD</Tag>
-        <English>[ICON_BULLET]Can be bombarded</English>
-        <French>[ICON_BULLET]Peut-etre bombardes</French>
-        <German>[ICON_BULLET]Kann bombardiert werden</German>
-        <Italian>[ICON_BULLET]Puo essere bombardati</Italian>
-        <Spanish>[ICON_BULLET]Puede ser bombardeado</Spanish>
+        <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_SOUTHERN_BORDER_0</Tag>
+        <English>Latitude 90 degrees north</English>
+        <French>Latitude 90 degrés Nord</French>
+        <German>90°N (nördliche Breite)</German>
+        <Italian>Latitude 90 degrees north</Italian>
+        <Spanish>Latitude 90 degrees north</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_IMPROVEMENT_FORTIFY_TO_UPGRADE</Tag>
-        <English>[ICON_BULLET]A unit must guard it to upgrade</English>
-        <French>[ICON_BULLET]Une unite doit renforcer pour mettre a niveau</French>
-        <German>[ICON_BULLET]Eine Einheit muss befestigt sein zum Wachstum</German>
-        <Italian>[ICON_BULLET]Una unita deve fortificare l'aggiornamento</Italian>
-        <Spanish>[ICON_BULLET]Una unidad debe fortalecer para mejorar</Spanish>
+        <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_SOUTHERN_BORDER_1</Tag>
+        <English>Latitude 90 degrees south (default)</English>
+        <French>Latitude 90 degrés Sud (par défaut)</French>
+        <German>90°S (südliche Breite, Standard)</German>
+        <Italian>Latitude 90 degrees south (default)</Italian>
+        <Spanish>Latitude 90 degrees south (default)</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_IMPROVEMENT_VISIBILITY_RANGE</Tag>
-        <English>[ICON_BULLET]%D1_Change Visibility Range</English>
-        <French>[ICON_BULLET]Champ de vision %D1_Change</French>
-        <German>[ICON_BULLET]%D1_Sichtweitenänderung</German>
-        <Italian>[ICON_BULLET]%D1_Change raggio di visibilità</Italian>
-        <Spanish>[ICON_BULLET]%D1_Change al alcance de la visibilidad</Spanish>
+        <Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_EQUATOR</Tag>
+        <English>0° equator</English>
+        <French>0° équateur</French>
+        <German>0° Äquator</German>
+        <Italian>0° equator</Italian>
+        <Spanish>0° equator</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_IMPROVEMENT_SEE_FROM</Tag>
-        <English>[ICON_BULLET]%D1_Change Visibility Height</English>
-        <French>[ICON_BULLET]%D1_Change Hauteur Visibilite</French>
-        <German>[ICON_BULLET]%D1_Change Visibility Height</German>
-        <Italian>[ICON_BULLET]%D1_Change visibilita Altezza</Italian>
-        <Spanish>[ICON_BULLET]%D1_Change visibilidad Altura</Spanish>
+        <Tag>TXT_KEY_WB_AS_MAX_UNITS_PER_CITY</Tag>
+        <English>[COLOR_WARNING_TEXT]Maximum %d1 [NUM1:unit:units] per settlement[COLOR_REVERT]</English>
+        <French>[COLOR_WARNING_TEXT]%d1 [NUM1:unité:unités] maximum par colonie[COLOR_REVERT]</French>
+        <German>[COLOR_WARNING_TEXT]Maximal %d1 [NUM1:Einheit:Einheiten] pro Siedlung[COLOR_REVERT]</German>
+        <Italian>[COLOR_WARNING_TEXT]Massimo %d1 unità per insediamento[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_WARNING_TEXT]%d1 [NUM1:unidad:unidades] como máximo por asentamiento[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_IMPROVEMENT_UNIQUE_RANGE</Tag>
-        <English>[ICON_BULLET]Cannot build another within a distance of %d1_Num</English>
-        <French>[ICON_BULLET]Impossible de construire un autre a une distance de %d1_Num</French>
-        <German>[ICON_BULLET]Mindestabstand zu anderen Geländeverbesserungen des selben Typs von %d1_Num</German>
-        <Italian>[ICON_BULLET]Non e possibile costruire un altro ad una distanza di %d1_Num</Italian>
-        <Spanish>[ICON_BULLET]No se puede construir otro a una distancia de %d1_Num</Spanish>
+        <Tag>TXT_KEY_WB_CITY_DATA</Tag>
+        <English>Settlement Data</English>
+        <French>Données de la colonie</French>
+        <German>Siedlungsdaten</German>
+        <Italian>Dati dell'insediamento</Italian>
+        <Spanish>Datos del asentamiento</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_MISC_CITY_REVOLTED_JOINED</Tag>
-        <English>[ICON_BULLET]A %s1_ImpName has revolted and joined %s2_CivDesc</English>
-        <French>[ICON_BULLET]A %s1_ImpName has revolted and joined %s2_CivDesc</French>
-        <German>[ICON_BULLET]A %s1_ImpName hat rebelliert und trat %s2_CivDesc bei</German>
-        <Italian>[ICON_BULLET]A %s1_ImpName has revolted and joined %s2_CivDesc</Italian>
-        <Spanish>[[ICON_BULLET]A %s1_ImpName has revolted and joined %s2_CivDesc</Spanish>
+        <Tag>TXT_KEY_WB_EDIT_CITY</Tag>
+        <English>Edit Settlement Mode</English>
+        <French>Modifier le mode de colonisation</French>
+        <German>Siedlungsmodus bearbeiten</German>
+        <Italian>Modifica modalità insediamento</Italian>
+        <Spanish>Modo Editar asentamiento</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_HEADER_CITY_EDIT</Tag>
+        <English>Settlement Editor : </English>
+        <French>Editeur de colonies : </French>
+        <German>Siedlungseditor : </German>
+        <Italian>Editor insediamento : </Italian>
+        <Spanish>Editor de asentamientos : </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_AS_CITIES</Tag>
+        <English>Settlements</English>
+        <French>Colonies</French>
+        <German>Siedlungen</German>
+        <Italian>Insediamenti</Italian>
+        <Spanish>Asentamientos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_CITY_EDIT_POP</Tag>
+        <English>Enter Population Adjustment : </English>
+        <French>Ajustement de la population : </French>
+        <German>Bevölkerungsanpassung eingeben : </German>
+        <Italian>Regola la popolazione : </Italian>
+        <Spanish>Introducir ajustes a la población : </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_EXIT</Tag>
+        <English>Exit World Builder</English>
+        <French>Quitter l'éditeur de mondes</French>
+        <German>Weltenbauer beenden</German>
+        <Italian>Esci dall'editor</Italian>
+        <Spanish>Salir del Creador de mundos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_LANDMARK_PLOTS</Tag>
+        <English>Enter landmark mode</English>
+        <French>Mode monument</French>
+        <German>Wahrzeichenmodus starten</German>
+        <Italian>Modalità punto di riferimento</Italian>
+        <Spanish>Activar modo "Lugar de referencia"</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_ERASE_PLOTS</Tag>
+        <English>Enter erase mode</English>
+        <French>Mode effacement</French>
+        <German>Löschmodus starten</German>
+        <Italian>Modalità elimina</Italian>
+        <Spanish>Activar modo "Borrar"</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_PLOT_TYPE_MOUNTAIN</Tag>
+        <English>Change plot to a mountain</English>
+        <French>Changer case en montagne</French>
+        <German>Geländefeld zu Gebirge ändern</German>
+        <Italian>Cambia la casella in una montagna</Italian>
+        <Spanish>Cambiar casilla a montaña</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_PLOT_TYPE_HILL</Tag>
+        <English>Change plot to a hill</English>
+        <French>Changer case en colline</French>
+        <German>Geländefeld zu Hügel ändern</German>
+        <Italian>Cambia la casella in una collina</Italian>
+        <Spanish>Cambiar casilla a colina</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_PLOT_TYPE_PLAINS</Tag>
+        <English>Change plot to a plain</English>
+        <French>Changer case en plaine</French>
+        <German>Geländefeld zu Ebene ändern</German>
+        <Italian>Cambia la casella in una pianura</Italian>
+        <Spanish>Cambiar casilla a llanura</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_PLOT_TYPE_OCEAN</Tag>
+        <English>Change plot to an ocean</English>
+        <French>Changer case en océan</French>
+        <German>Geländefeld zu Ozean ändern</German>
+        <Italian>Cambia la casella in un oceano</Italian>
+        <Spanish>Cambiar casilla a océano</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_RIVER_PLACEMENT</Tag>
+        <English>Enter river placement mode</English>
+        <French>Mode placement de rivière</French>
+        <German>Flussplatzierungsmodus starten</German>
+        <Italian>Modalità disposizione dei fiumi</Italian>
+        <Spanish>Activar modo "Colocar río"</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_SCRIPT</Tag>
+        <English>Enter your script name</English>
+        <French>Saisissez le nom de votre script</French>
+        <German>Skriptnamen eingeben</German>
+        <Italian>Inserisci il nome del tuo script</Italian>
+        <Spanish>Escribe el nombre de la secuencia de comandos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WBREAD_FAILURE</Tag>
+        <English>Failed to read Worldbuilder file "%s1_WBName" ...</English>
+        <French>Echec de lecture du fichier "%s1_WBName" de l'éditeur de mondes</French>
+        <German>Weltenbauer-Datei "%s1_WBName" konnte nicht gelesen werden...</German>
+        <Italian>Impossibile leggere il file dell'editor "%1_WBName"</Italian>
+        <Spanish>No se ha podido leer el archivo "%s1_WBName" del Creador de mundos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_EDIT_UNIT</Tag>
+        <English>Edit Unit Mode</English>
+        <French>Mode édition des unités</French>
+        <German>Einheitenmodus bearbeiten</German>
+        <Italian>Modifica modalità unità</Italian>
+        <Spanish>Modo Editar unidad</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_NORMAL_PLAYER</Tag>
+        <English>Player Mode</English>
+        <French>Mode joueur</French>
+        <German>Spielermodus</German>
+        <Italian>Modalità giocatore</Italian>
+        <Spanish>Modo Jugador</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_NORMAL_MAP</Tag>
+        <English>Map Mode</English>
+        <French>Mode carte</French>
+        <German>Kartenmodus</German>
+        <Italian>Modalità mappa</Italian>
+        <Spanish>Modo Mapa</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_DIPLOMACY</Tag>
+        <English>Diplomacy Mode</English>
+        <French>Mode diplomatie</French>
+        <German>Diplomatiemodus</German>
+        <Italian>Modalità diplomatica</Italian>
+        <Spanish>Modo Diplomacia</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_REVEAL_TILE</Tag>
+        <English>Reveal Tile Mode</English>
+        <French>Mode dévoiler terrain</French>
+        <German>Geländefelder-einblenden-Modus</German>
+        <Italian>Modalità scopri caselle</Italian>
+        <Spanish>Modo Mostrar casilla</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_REVEAL_ALL</Tag>
+        <English>Reveal All Tiles</English>
+        <French>Dévoiler toutes les cases</French>
+        <German>Alle Geländefelder einblenden</German>
+        <Italian>Rivela tutte le caselle</Italian>
+        <Spanish>Mostrar todas las casillas</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_UNREVEAL_ALL</Tag>
+        <English>Unreveal All Tiles</English>
+        <French>Masquer toutes les cases</French>
+        <German>Alle Geländefelder ausblenden</German>
+        <Italian>Copri tutte le caselle</Italian>
+        <Spanish>Ocultar todas las casillas</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_IMPROVEMENTS</Tag>
+        <English>Improvements</English>
+        <French>Aménagements</French>
+        <German>Modernisierungen</German>
+        <Italian>Miglioramenti</Italian>
+        <Spanish>Mejoras</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_BONUSES</Tag>
+        <English>Bonuses</English>
+        <French>Bonus</French>
+        <German>Boni</German>
+        <Italian>Bonus</Italian>
+        <Spanish>Bonificaciones</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_TERRAINS</Tag>
+        <English>Terrains</English>
+        <French>Terrains</French>
+        <German>Gelände</German>
+        <Italian>Terreni</Italian>
+        <Spanish>Terrenos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_CHOOSE_UNIT</Tag>
+        <English>Choose Unit</English>
+        <French>Choisir unité</French>
+        <German>Einheit wählen</German>
+        <Italian>Scegli unità</Italian>
+        <Spanish>Elegir unidad</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_UNITS</Tag>
+        <English>Units</English>
+        <French>Unités</French>
+        <German>Einheiten</German>
+        <Italian>Unità</Italian>
+        <Spanish>Unidades</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_BUILDINGS</Tag>
+        <English>Buildings</English>
+        <French>Bâtiments</French>
+        <German>Gebäude</German>
+        <Italian>Edifici</Italian>
+        <Spanish>Edificios</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_ADD_MOUNTAIN</Tag>
+        <English>Add Mountain</English>
+        <French>Ajouter montagne</French>
+        <German>Berg hinzufügen</German>
+        <Italian>Aggiungi montagna</Italian>
+        <Spanish>Agregar montaña</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_ADD_HILL</Tag>
+        <English>Add Hill</English>
+        <French>Ajouter colline</French>
+        <German>Hügel hinzufügen</German>
+        <Italian>Aggiungi collina</Italian>
+        <Spanish>Agregar colina</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_ADD_GRASS</Tag>
+        <English>Add Grass</English>
+        <French>Ajouter prairie</French>
+        <German>Gras hinzufügen</German>
+        <Italian>Aggiungi prato</Italian>
+        <Spanish>Agregar pradera</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_ADD_OCEAN</Tag>
+        <English>Add Ocean</English>
+        <French>Ajouter océan</French>
+        <German>Ozean hinzufügen</German>
+        <Italian>Aggiungi oceano </Italian>
+        <Spanish>Agregar océano</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_EXPERIENCE</Tag>
+        <English>Experience : </English>
+        <French>Expérience : </French>
+        <German>Erfahrung : </German>
+        <Italian>Esperienza : </Italian>
+        <Spanish>Experiencia : </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_LEVEL</Tag>
+        <English>Level : </English>
+        <French>Niveau : </French>
+        <German>Stufe : </German>
+        <Italian>Livello : </Italian>
+        <Spanish>Nivel : </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_ADD_SCRIPT</Tag>
+        <English>Add Script</English>
+        <French>Ajouter script</French>
+        <German>Skript hinzufügen</German>
+        <Italian>Aggiungi script</Italian>
+        <Spanish>Agregar secuencia de comandos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_POPULATION</Tag>
+        <English>Population : </English>
+        <French>Population : </French>
+        <German>Bevölkerung : </German>
+        <Italian>Popolazione : </Italian>
+        <Spanish>Población : </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_CULTURE</Tag>
+        <English>Culture : </English>
+        <French>Culture : </French>
+        <German>Kultur : </German>
+        <Italian>Cultura : </Italian>
+        <Spanish>Cultura : </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_GOLD</Tag>
+        <English>Gold : </English>
+        <French>Or : </French>
+        <German>Gold : </German>
+        <Italian>Oro : </Italian>
+        <Spanish>Oro : </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_ADD_SCRIPT_TO_PLOT</Tag>
+        <English>Add script to plot</English>
+        <French>Ajouter script à la case</French>
+        <German>Skript zum Geländefeld hinzufügen</German>
+        <Italian>Aggiungi script alla casella</Italian>
+        <Spanish>Agregar secuencia de comandos a la casilla</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_CHANGE_START_YEAR</Tag>
+        <English>Change start year</English>
+        <French>Change année de départ</French>
+        <German>Startjahr ändern</German>
+        <Italian>Cambia l'anno iniziale</Italian>
+        <Spanish>Cambiar año de comienzo</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_1_BY_1</Tag>
+        <English>1x1</English>
+        <French>1x1</French>
+        <German>1x1</German>
+        <Italian>1x1</Italian>
+        <Spanish>1x1</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_3_BY_3</Tag>
+        <English>3x3</English>
+        <French>3x3</French>
+        <German>3x3</German>
+        <Italian>3x3</Italian>
+        <Spanish>3x3</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_5_BY_5</Tag>
+        <English>5x5</English>
+        <French>5x5</French>
+        <German>5x5</German>
+        <Italian>5x5</Italian>
+        <Spanish>5x5</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_PLAYER_MODE</Tag>
+        <English>Player Mode</English>
+        <French>Mode Joueur</French>
+        <German>Spielermodus</German>
+        <Italian>Modalità giocatore</Italian>
+        <Spanish>Modo Jugador</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_MAP_MODE</Tag>
+        <English>Map Mode</English>
+        <French>Mode Carte</French>
+        <German>Kartenmodus</German>
+        <Italian>Modalità mappa</Italian>
+        <Spanish>Modo Mapa</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_WORLD_BUILDER_EDIT_CONTROL</Tag>
+        <English>World Builder Edit Control</English>
+        <French>Commande Editeur de monde </French>
+        <German>Weltenbauer-Bearbeitungssteuerung</German>
+        <Italian>Comandi dell'editor</Italian>
+        <Spanish>Control de edición del Creador de mundos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_PROMOTIONS</Tag>
+        <English>Promotions</English>
+        <French>Promotions</French>
+        <German>Beförderungen</German>
+        <Italian>Promozioni</Italian>
+        <Spanish>Ascensos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_SIZE_TAG</Tag>
+        <English>Map Size : %s1_size</English>
+        <French>Taille carte : %s1_size</French>
+        <German>Kartengröße : %s1_size</German>
+        <Italian>Dimensioni mappa : %s1_size</Italian>
+        <Spanish>Tamaño : %s1_size</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_REGENERATE_MAP</Tag>
+        <English>Regenerate Map Using Current Map Script</English>
+        <French>Régénérer la carte à l'aide du script de la carte actuelle</French>
+        <German>Karte auf Basis des aktuellen Kartenskripts neu generieren</German>
+        <Italian>Rigenera la mappa utilizzando l'attuale script</Italian>
+        <Spanish>Regenerar mapa empleando la actual secuencia de comandos de mapa</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_TERRITORY</Tag>
+        <English>Territory</English>
+        <French>Territoire</French>
+        <German>Territorium</German>
+        <Italian>Territorio</Italian>
+        <Spanish>Territorio</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_AS_POINTS</Tag>
+        <English>[ICON_GOLD]%d1_Num</English>
+        <French>[ICON_GOLD]%d1_Num</French>
+        <German>[ICON_GOLD]%d1_Num</German>
+        <Italian>[ICON_GOLD]%d1_Num</Italian>
+        <Spanish>[ICON_GOLD]%d1_Num</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_AS_UNITS</Tag>
+        <English>Units</English>
+        <French>Unités</French>
+        <German>Einheiten</German>
+        <Italian>Unità</Italian>
+        <Spanish>Unidades</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_AS_IMPROVEMENTS</Tag>
+        <English>Improvements</English>
+        <French>Aménagements</French>
+        <German>Modernisierungen</German>
+        <Italian>Miglioramenti</Italian>
+        <Spanish>Mejoras</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_AS_VISIBILITY</Tag>
+        <English>Visibility</English>
+        <French>Affichage</French>
+        <German>Sicht</German>
+        <Italian>Visibilità</Italian>
+        <Spanish>Visibilidad</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_AS_COST_THIS_LOCATION</Tag>
+        <English>Cost Here : %d1_Amount[ICON_GOLD]</English>
+        <French>Coût ici : %d1_Amount[ICON_GOLD]</French>
+        <German>Kosten hier : %d1_Amount[ICON_GOLD]</German>
+        <Italian>Costo qui : %d1_Amount[ICON_GOLD]</Italian>
+        <Spanish>Coste aquí : %d1_Amount[ICON_GOLD]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_AS_POPULATION</Tag>
+        <English>Population Point</English>
+        <French>Point de population</French>
+        <German>Bevölkerungspunkt</German>
+        <Italian>Punto della popolazione</Italian>
+        <Spanish>Punto de población</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_AI_ATTITUDE</Tag>
+        <English>AI Attitude Weight</English>
+        <French>Poids attitude IA</French>
+        <German>Gewichtung KI-Haltung</German>
+        <Italian>Peso dell'atteggiamento dell'IA</Italian>
+        <Spanish>Peso de la actitud de la IA</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_CHANGE_ALL_PLOTS</Tag>
+        <English>Change all plots</English>
+        <French>Changer cases</French>
+        <German>Alle Geländefelder ändern</German>
+        <Italian>Cambia tutti i terreni</Italian>
+        <Spanish>Cambiar todas</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_CITY_EDIT_CULTURE</Tag>
+        <English>[SPACE]Adjust Culture : (%d1)</English>
+        <French>[SPACE]Ajuster culture : (%d1)</French>
+        <German>[SPACE]Kultur anpassen : (%d1)</German>
+        <Italian>[SPACE]Regola la cultura : (%d1)</Italian>
+        <Spanish>[SPACE]Ajustar cultura : (%d1)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_CITY_NOTHING</Tag>
+        <English>Nothing</English>
+        <French>Rien</French>
+        <German>Ohne</German>
+        <Italian>Nessuna</Italian>
+        <Spanish>Ninguna</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_CITY_ALL</Tag>
+        <English>All</English>
+        <French>Tout</French>
+        <German>Alle</German>
+        <Italian>Tutte</Italian>
+        <Spanish>Todas</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_CITY_ADD_REMOVE</Tag>
+        <English>Select to Add or Remove : </English>
+        <French>Sélection à ajouter ou supprimer : </French>
+        <German>Zum Hinzufügen oder Entfernen auswählen : </German>
+        <Italian>Seleziona Aggiungi o Rimuovi : </Italian>
+        <Spanish>Seleccionar para añadir o eliminar : </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_CITY_ADD</Tag>
+        <English>Add</English>
+        <French>Ajouter</French>
+        <German>Hinzufügen</German>
+        <Italian>Aggiungi</Italian>
+        <Spanish>Añadir</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_CITY_REMOVE</Tag>
+        <English>Remove</English>
+        <French>Supprimer</French>
+        <German>Entfernen</German>
+        <Italian>Rimuovi</Italian>
+        <Spanish>Eliminar</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WB_CITY_NOCHANGE</Tag>
+        <English>No Change</English>
+        <French>Aucun changement</French>
+        <German>Keine Änderung</German>
+        <Italian>Nessun cambiamento</Italian>
+        <Spanish>Sin cambios</Spanish>
     </TEXT>
 </Civ4GameText>
