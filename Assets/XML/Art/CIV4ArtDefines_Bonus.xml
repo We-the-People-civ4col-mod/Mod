@@ -524,6 +524,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_TOMATO</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Tomato/lemqes.nif</NIF>
+            <KFM/>
+            <Button>,Art/atlasmapbonus.dds,2,8</Button>
+            <FontButtonIndex>49</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_RICE</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
