@@ -4065,6 +4065,13 @@ bool CvUnit::canTradeYield(const CvPlot* pPlot) const
 		return false;
 	}
 
+	//WTP, forbid Gather Boats to Trade with Natives - START
+	if (getUnitInfo().isGatherBoat())
+	{
+		return false;
+	}
+	//WTP, forbid Gather Boats to Trade with Natives - START
+
 	if (!canMove())
 	{
 		return false;
