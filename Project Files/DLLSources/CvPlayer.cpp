@@ -18984,7 +18984,9 @@ void CvPlayer::doAchievements(bool afterMove)
 							pPlot = GC.getMapINLINE().plotByIndexINLINE(iJ);
 							if (pPlot->isRevealed(getTeam(), false))
 							{
-								if (pPlot->isEurope() && pPlot->getX_INLINE() > ((GC.getMapINLINE().getGridWidthINLINE() / 3) * 2))
+								// WTP, ray, fixing issue for Europe East / West Achievement
+								// used 0 because EUROPE_EAST somehow did not work - related to Enum probably
+								if (pPlot->isEurope() && pPlot->getEurope() == 0)
 								{
 									bGained = true;
 									iJ = GC.getMapINLINE().numPlotsINLINE();
@@ -18999,7 +19001,9 @@ void CvPlayer::doAchievements(bool afterMove)
 							pPlot = GC.getMapINLINE().plotByIndexINLINE(iJ);
 							if (pPlot->isRevealed(getTeam(), false))
 							{
-								if (pPlot->isEurope() && pPlot->getX_INLINE() < (GC.getMapINLINE().getGridWidthINLINE() / 3))
+								// WTP, ray, fixing issue for Europe East / West Achievement
+								// used 1 because EUROPE_WEST somehow did not work - related to Enum probably
+								if (pPlot->isEurope() && pPlot->getEurope() == 1)
 								{
 									bGained = true;
 									iJ = GC.getMapINLINE().numPlotsINLINE();
