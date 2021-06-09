@@ -11041,7 +11041,7 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 	
 	// WTP, ray, teacher addon for LbD - START
 	// The Expert we might convert to later and also valid teachers
-	int expert = GC.getProfessionInfo(convUnit->getProfession()).LbD_getExpert();
+	int expert = GC.getProfessionInfo(currentProfession).LbD_getExpert();
 	UnitTypes expertUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(expert);
 	bool bValidTeacherFound = false;
 
@@ -11068,11 +11068,22 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 
 	if (currentProfession != lastProfession)
 	{
+		//WTP, fix for LbD and Multiple Professions per Building / same Expert for Multiple Professions
 		convUnit->setLastLbDProfession(currentProfession);
 		if(isHuman())
 		{	
-			//workedRounds = 1;
-			convUnit->setLbDrounds(1);
+			bool bSameExpert = (expert == GC.getProfessionInfo(lastProfession).LbD_getExpert());
+			//the Profession changes to another one with different Expert - thus we reset
+			if(!bSameExpert)
+			{
+				//workedRounds = 1;
+				convUnit->setLbDrounds(1);
+			}
+			//the Expert is the same - thus we normally increase
+			else
+			{
+				convUnit->setLbDrounds(workedRounds + 1);
+			}
 		}
 		// here little cheat for AI to cope with feature
 		// profession change does not reset worked rounds
