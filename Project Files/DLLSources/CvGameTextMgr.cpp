@@ -498,6 +498,25 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		szString.append(szTempBuffer);
 	}
 
+	//WTP, ray add LbD Tunrs Worked and LbD Last Profession to Unit Help - START
+	if (pUnit->getLbDrounds() != 0 && pUnit->getLastLbDProfession() != NO_PROFESSION)
+	{
+		const ProfessionTypes lastProfession = pUnit->getLastLbDProfession();
+		bool bCanBecomeExpert = pUnit->getUnitInfo().LbD_canBecomeExpert();
+		int iLbDRoundsWorked = pUnit->getLbDrounds();
+
+		// Display for become Expert - with turns worked and Expert Unit in Text
+		if(bCanBecomeExpert && lastProfession != NO_PROFESSION && GC.getProfessionInfo(lastProfession).LbD_isUsed() && iLbDRoundsWorked >0)
+		{
+			int expert = GC.getProfessionInfo(lastProfession).LbD_getExpert();
+			UnitTypes expertUnitType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCivilizationType()).getCivilizationUnits(expert);
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP", iLbDRoundsWorked, GC.getUnitInfo(expertUnitType).getDescription()));
+			szString.append(SEPARATOR);
+		}
+	}
+	//WTP, ray add LbD Tunrs Worked and LbD Last Profession to Unit Help - END
+
 	for (iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
 	{
 		if (!GC.getPromotionInfo((PromotionTypes)iI).isGraphicalOnly() && pUnit->isHasPromotion((PromotionTypes)iI))

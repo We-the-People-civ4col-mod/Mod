@@ -48,6 +48,11 @@
         <German>Arbeitet darauf hin [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden seit : %d1_turns Runden</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP</Tag>
+        <English>Worked to become [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Turns</English>
+        <German>Arbeitet um [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Runden</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP</Tag>
         <English>Production modifier of %d1_NewVal%% :</English>
         <German>Produktionsmodifikator von %d1_NewVal%% :</German>
