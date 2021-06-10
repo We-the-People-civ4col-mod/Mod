@@ -919,6 +919,17 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
+                    <BonusType>BONUS_BEE_HIVE</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FOOD</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
                     <BonusType>BONUS_PEANUT</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -2135,6 +2146,17 @@
                 </BonusTypeStruct>
                 <BonusTypeStruct>
                     <BonusType>BONUS_TOMATO</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FOOD</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_BEE_HIVE</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>

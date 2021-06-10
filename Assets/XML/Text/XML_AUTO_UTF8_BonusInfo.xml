@@ -1420,4 +1420,34 @@
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]tilleus[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Limonenbäume[COLOR_REVERT]</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_BEE_HIVE</Tag>
+        <English>Bee Hive</English>
+        <French>
+            <Text>Ruche d'abeille</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Bienen-Bienenstock</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Alveare dell'ape</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Colmena de la abeja</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_BEE_HIVE_PEDIA</Tag>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bee Hive[COLOR_REVERT] </English>
+        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]Ruches d'abeille[COLOR_REVERT]</French>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bienenstöcke[COLOR_REVERT]</German>
+    </TEXT>
 </Civ4GameText>

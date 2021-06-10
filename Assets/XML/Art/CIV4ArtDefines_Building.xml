@@ -1435,6 +1435,18 @@
             <Button>,Art/atlasmapbonus.dds,2,8</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_BONUS_BEE_HIVE</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/BeeHive/Banana.nif</NIF>
+            <KFM/>
+            <Button>,Art/atlasmapbonus.dds,6,8</Button>
+        </BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_PEANUT</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
