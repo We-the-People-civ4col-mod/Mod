@@ -535,6 +535,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_PEANUT</Type>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Peanut/arachide.nif</NIF>
+            <KFM>Art/Terrain/Resources/Peanut/arachide.kfm</KFM>
+            <Button>,Art/atlasmapbonus.dds,5,8</Button>
+            <FontButtonIndex>49</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_BERRIES</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>

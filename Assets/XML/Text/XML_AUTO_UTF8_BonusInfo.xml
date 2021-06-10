@@ -1347,6 +1347,26 @@
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tomaten[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_PEANUT</Tag>
+        <English>Peanuts</English>
+        <French>
+            <Text>Arachides</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Erdnüsse</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_PEANUT_PEDIA</Tag>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Peanuts[COLOR_REVERT] </English>
+        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]Arachides[COLOR_REVERT]</French>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Erdüsse[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_BERRIES</Tag>
         <English>Tundra Berries</English>
         <German>

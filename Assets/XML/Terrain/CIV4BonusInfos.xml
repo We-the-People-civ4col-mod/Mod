@@ -3314,6 +3314,69 @@
             </FeatureTerrainBooleans>
         </BonusInfo>
         <BonusInfo>
+            <Type>BONUS_PEANUT</Type>
+            <Description>TXT_KEY_BONUS_PEANUT</Description>
+            <Civilopedia>TXT_KEY_BONUS_PEANUT_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_PEANUT</ArtDefineTag>
+            <BuildingType>BUILDING_BONUS_PEANUT</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>5</iPlacementOrder>
+            <iConstAppearance>10</iConstAppearance>
+            <iMinAreaSize>2</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>10</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>16</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>1</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>0</bArea>
+            <bPeaks>0</bPeaks>
+            <bHills>0</bHills>
+            <bFlatlands>1</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+            </FeatureTerrainBooleans>
+            <bUseLSystem>0</bUseLSystem>
+        </BonusInfo>
+        <BonusInfo>
             <Type>BONUS_BERRIES</Type>
             <Description>TXT_KEY_BONUS_BERRIES</Description>
             <Civilopedia>TXT_KEY_BONUS_BERRIES_PEDIA</Civilopedia>
