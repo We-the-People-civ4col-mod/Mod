@@ -1575,7 +1575,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_ARMORY_HEAD</Tag>
-        <English>Self-sufficient/English>
+        <English>World class work</English>
         <French>Votre première armurerie</French>
         <German>Wehrhaft</German>
     </TEXT>
@@ -1739,7 +1739,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_HESSIAN_HEAD</Tag>
-        <English>Three Hessian Mercenaries</English>
+        <English>Three Hessian mercenaries</English>
         <French>Three Hessian Mercenaries</French>
         <German>Drei hessische Söldner-Regimenter</German>
     </TEXT>
@@ -1879,7 +1879,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FUR_TRADERS_HEAD</Tag>
-        <English>Money nobility</English>
+        <English>New World wealth</English>
         <French>Trois fourreurs</French>
         <German>Geldadel</German>
     </TEXT>
@@ -1903,7 +1903,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WHALE_OIL_COOKERS_TEXT</Tag>
-        <English>"[COLOR_SELECTED_TEXT]If I may say so, Governor, by all that's right and proper, that's what I call a splendid wench![COLOR_REVERT]"[NEWLINE][NEWLINE]You straighten up and turn around. A carpenter stands wide-eyed behind you with a stunned grin.[NEWLINE][NEWLINE]You follow his gaze to the cook's wife...[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I just wonder,[COLOR_REVERT]" he continues, "[COLOR_SELECTED_TEXT]why these whale butchers attract the tastiest maidens. Those guys all stink to high heaven.[COLOR_REVERT]"[NEWLINE][NEWLINE]Now it is your turn to smile. The good carpenter doesn't understand that the fair lady's form, as stimulating it is unnatural, depends on the corset made from her husband's whalebone.[NEWLINE][NEWLINE]</English>
+        <English>"[COLOR_SELECTED_TEXT]If I may say so, Governor, by all that's right and proper, that's what I call a splendid wench![COLOR_REVERT]"[NEWLINE][NEWLINE]You straighten up and turn around. A carpenter stands wide-eyed behind you with a stunned grin.[NEWLINE][NEWLINE]You follow his gaze to the cook's wife...[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I just wonder,[COLOR_REVERT]" he continues, "[COLOR_SELECTED_TEXT]why these whale butchers attract the tastiest maidens. Those guys all stink to high heaven.[COLOR_REVERT]"[NEWLINE][NEWLINE]Now it is your turn to smile. The good carpenter doesn't understand that the fair lady's form, as stimulating as it is unnatural, depends on the corset made from her husband's whalebone.[NEWLINE][NEWLINE]</English>
         <French>Vous disposez maintenant de plusieurs affineurs d'huile de baleine. Un métier où il ne faut pas avoir peur de voir du sang ![NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Wenn Herr Gouverneur gestatten, also bei allem, was recht ist, das nenne ich ein prachtvolles Weibsbild![COLOR_REVERT]"[NEWLINE][NEWLINE]Ihr fahrt zusammen und dreht Euch um. Ein Zimmerer steht breitbeinig hinter Euch und grinst unzweideutig.[NEWLINE][NEWLINE]Euer Blick folgte wohl etwas zu lange der Frau des Trankochers ...[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich frage mich nur[COLOR_REVERT]", fährt er fort, "[COLOR_SELECTED_TEXT]warum diese Walfleischer immer die knackigsten Maiden erringen. Die Kerle stinken doch zum Himmel.[COLOR_REVERT]"[NEWLINE][NEWLINE]Nun ist es an Euch zu lächeln. Dass die ebenso anregenden wie unnatürlichen Formen der holden Frau lediglich dem Fischbein ihres Gatten geschuldet sind, scheint dem braven Zimmermann nicht zu dämmern.[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -1951,7 +1951,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FOUR_PIONEERS_HEAD</Tag>
-        <English>Men who do it by themselves</English>
+        <English>Self-sufficient</English>
         <French>Quatre pionniers endurcis</French>
         <German>Selbst ist der Mann</German>
     </TEXT>
@@ -2005,7 +2005,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_STATESMEN_HEAD</Tag>
-        <English>Pledged to loyalty</English>
+        <English>Loyalty is a two way street</English>
         <French>Dix hommes d'état vétérans</French>
         <German>Zur Treue verpflichtet</German>
     </TEXT>
@@ -2095,7 +2095,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_DOCTORS_HEAD</Tag>
-        <English>Medical Care</English>
+        <English>Medical care</English>
         <French>Soins médicaux</French>
         <German>Medizinische Versorgung</German>
     </TEXT>
@@ -2239,7 +2239,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_THEATRE_HEAD</Tag>
-        <English>The high society</English>
+        <English>High society</English>
         <French>Votre premier théâtre</French>
         <German>Die feine Gesellschaft</German>
     </TEXT>
@@ -2383,7 +2383,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_FURNITURY_HEAD</Tag>
-        <English>Timber or precious wood?</English>
+        <English>Lumber or precious wood?</English>
         <French>Votre première ébenisterie</French>
         <German>Bauholz oder Edelholz?</German>
     </TEXT>
