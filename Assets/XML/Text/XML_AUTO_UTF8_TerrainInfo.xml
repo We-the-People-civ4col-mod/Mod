@@ -97,6 +97,20 @@
         <Spanish>[TAB]Grasslands are areas where the vegetation is dominated by grasses (Poaceae) and other herbaceous (non-woody) plants (forbs). However, sedge (Cyperaceae) and rush (Juncaceae) families can also be found. Grasslands occur naturally on all continents except Antarctica. In temperate latitudes, such as northwest Europe and the Great Plains and California in North America, native grasslands are dominated by perennial bunch grass species, whereas in warmer climates annual species form a greater component of the vegetation.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TERRAIN_WETLAND</Tag>
+        <English>Wetland</English>
+        <German>
+            <Text>Moor</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_WETLAND_PEDIA</Tag>
+        <English>[TAB]Wetland</English>
+        <German>[TAB]Moor</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TERRAIN_HILL</Tag>
         <English>Hill</English>
         <French>

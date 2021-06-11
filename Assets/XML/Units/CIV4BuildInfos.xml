@@ -989,6 +989,50 @@
             <Button>Art\Interface\Game Hud\Actions\dry_swamp.dds</Button>
         </BuildInfo>
         <BuildInfo>
+            <Type>BUILD_DRAIN_WETLAND</Type>
+            <Description>TXT_KEY_BUILD_DRAIN_WETLAND</Description>
+            <Help>TXT_KEY_BUILD_DRAIN_WETLAND_HELP</Help>
+            <iTime>2000</iTime>
+            <iCost>200</iCost>
+            <bKill>0</bKill>
+            <ImprovementType>NONE</ImprovementType>
+            <PrereqTerrainType>TERRAIN_WETLAND</PrereqTerrainType>
+            <ResultTerrainType>TERRAIN_GRASS</ResultTerrainType>
+            <ResultFeatureType>NONE</ResultFeatureType>
+            <RouteType>NONE</RouteType>
+            <EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
+            <FeatureStructs>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+            </FeatureStructs>
+            <HotKey/>
+            <bAltDown>0</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>0</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <Button>Art\Interface\Game Hud\Actions\dry_swamp.dds</Button>
+        </BuildInfo>
+        <BuildInfo>
             <Type>BUILD_REFORESTATION_GRASS</Type>
             <Description>TXT_KEY_BUILD_REFORESTATION_GRASS</Description>
             <Help>TXT_KEY_BUILD_REFORESTATION_GRASS_HELP</Help>
@@ -997,6 +1041,27 @@
             <bKill>0</bKill>
             <ImprovementType>NONE</ImprovementType>
             <PrereqTerrainType>TERRAIN_GRASS</PrereqTerrainType>
+            <ResultTerrainType>NONE</ResultTerrainType>
+            <ResultFeatureType>FEATURE_FOREST</ResultFeatureType>
+            <RouteType>NONE</RouteType>
+            <EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
+            <FeatureStructs/>
+            <HotKey/>
+            <bAltDown>0</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>0</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <Button>Art\Interface\Game Hud\Actions\plant_forrest.dds</Button>
+        </BuildInfo>
+        <BuildInfo>
+            <Type>BUILD_REFORESTATION_WETLAND</Type>
+            <Description>TXT_KEY_BUILD_REFORESTATION_GRASS</Description>
+            <Help>TXT_KEY_BUILD_REFORESTATION_GRASS_HELP</Help>
+            <iTime>1000</iTime>
+            <iCost>100</iCost>
+            <bKill>0</bKill>
+            <ImprovementType>NONE</ImprovementType>
+            <PrereqTerrainType>TERRAIN_WETLAND</PrereqTerrainType>
             <ResultTerrainType>NONE</ResultTerrainType>
             <ResultFeatureType>FEATURE_FOREST</ResultFeatureType>
             <RouteType>NONE</RouteType>

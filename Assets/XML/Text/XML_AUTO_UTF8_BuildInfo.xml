@@ -43,6 +43,16 @@
         <English>????</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BUILD_DRAIN_WETLAND</Tag>
+        <English>Drain wetland</English>
+        <French>Drainer les marais</French>
+        <German>Moor trockenlegen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_DRAIN_WETLAND_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILD_FARM</Tag>
         <English>Build a [LINK=IMPROVEMENT_FARM]farm[\LINK]</English>
         <French>Construire une [LINK=IMPROVEMENT_FARM]ferme[\LINK]</French>

@@ -3323,10 +3323,18 @@
                     <TerrainType>TERRAIN_MARSH</TerrainType>
                     <iTerrainAttack>20</iTerrainAttack>
                 </TerrainAttack>
+                <TerrainAttack>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <iTerrainAttack>20</iTerrainAttack>
+                </TerrainAttack>
             </TerrainAttacks>
             <TerrainDefenses>
                 <TerrainDefense>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <iTerrainDefense>20</iTerrainDefense>
+                </TerrainDefense>
+                <TerrainDefense>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <iTerrainDefense>20</iTerrainDefense>
                 </TerrainDefense>
             </TerrainDefenses>
@@ -3406,10 +3414,18 @@
                     <TerrainType>TERRAIN_MARSH</TerrainType>
                     <iTerrainAttack>25</iTerrainAttack>
                 </TerrainAttack>
+                <TerrainAttack>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <iTerrainAttack>25</iTerrainAttack>
+                </TerrainAttack>
             </TerrainAttacks>
             <TerrainDefenses>
                 <TerrainDefense>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <iTerrainDefense>25</iTerrainDefense>
+                </TerrainDefense>
+                <TerrainDefense>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <iTerrainDefense>25</iTerrainDefense>
                 </TerrainDefense>
             </TerrainDefenses>

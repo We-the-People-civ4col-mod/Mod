@@ -168,6 +168,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -388,6 +392,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -468,6 +476,10 @@
             <TerrainMakesValids>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -554,6 +566,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -634,6 +650,10 @@
             <TerrainMakesValids>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -750,6 +770,10 @@
             <TerrainMakesValids>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -1036,6 +1060,10 @@
             <TerrainMakesValids>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -1866,6 +1894,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -1987,6 +2019,10 @@
             <TerrainMakesValids>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -2273,6 +2309,10 @@
             <TerrainMakesValids>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -3211,6 +3251,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -3303,6 +3347,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -3381,6 +3429,10 @@
             <TerrainMakesValids>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -3465,6 +3517,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -3537,6 +3593,10 @@
             <TerrainMakesValids>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>

@@ -84,6 +84,10 @@
 					<iAllow>-50</iAllow>
 				</AllowBuild>
 				<AllowBuild>
+					<eBuild>BUILD_REFORESTATION_WETLAND</eBuild>
+					<iAllow>-50</iAllow>
+				</AllowBuild>
+				<AllowBuild>
 					<eBuild>BUILD_REFORESTATION_PLAINS</eBuild>
 					<iAllow>-50</iAllow>
 				</AllowBuild>
@@ -93,6 +97,10 @@
 				</AllowBuild>
 				<AllowBuild>
 					<eBuild>BUILD_REFORESTATION_MARSH</eBuild>
+					<iAllow>-50</iAllow>
+				</AllowBuild>
+				<AllowBuild>
+					<eBuild>BUILD_REFORESTATION_WETLAND</eBuild>
 					<iAllow>-50</iAllow>
 				</AllowBuild>
 				<AllowBuild>
