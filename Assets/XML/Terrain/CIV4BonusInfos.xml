@@ -208,10 +208,6 @@
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
