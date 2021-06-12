@@ -115694,7 +115694,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=73,y=226
-	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=2
 EndPlot
