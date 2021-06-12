@@ -3131,6 +3131,7 @@
             <BuildingClassNeededs/>
             <RequiredAdjacentTerrains>
                 <eRequiredTerrain>TERRAIN_COAST</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_SHALLOW_COAST</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_LARGE_RIVERS</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_LAKE</eRequiredTerrain>
             </RequiredAdjacentTerrains>
@@ -3236,6 +3237,7 @@
             </BuildingClassNeededs>
             <RequiredAdjacentTerrains>
                 <eRequiredTerrain>TERRAIN_COAST</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_SHALLOW_COAST</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_LARGE_RIVERS</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_LAKE</eRequiredTerrain>
             </RequiredAdjacentTerrains>

@@ -35592,6 +35592,10 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -35786,6 +35790,10 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -35969,6 +35977,10 @@
                 </TerrainImpassable>
                 <TerrainImpassable>
                     <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
@@ -36394,6 +36406,10 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -36564,6 +36580,10 @@
                 </TerrainImpassable>
                 <TerrainImpassable>
                     <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
@@ -36895,6 +36915,10 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -37071,6 +37095,10 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -37238,6 +37266,10 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -37401,6 +37433,10 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -37554,6 +37590,10 @@
                 </TerrainImpassable>
                 <TerrainImpassable>
                     <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
@@ -44761,6 +44801,10 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <TerrainNatives>
@@ -44906,6 +44950,10 @@
                 </TerrainImpassable>
                 <TerrainImpassable>
                     <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
@@ -45055,6 +45103,10 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
             <TerrainNatives>
@@ -45200,6 +45252,10 @@
                 </TerrainImpassable>
                 <TerrainImpassable>
                     <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>

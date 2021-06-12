@@ -33,6 +33,20 @@
         <Spanish>[TAB]The coastline is where the land meets the sea or ocean. A precise line that can be called a coastline cannot be determined due to the dynamic nature of tides. The term "coastal zone" can be used instead, which is a spatial zone where interaction of the sea and land processes occurs. Both the terms coast and coastal are often used to describe a geographic location or region; for example, New Zealand's West Coast, or the East and West Coasts of the United States.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TERRAIN_SHALLOW_COAST</Tag>
+        <English>Shallow Coast</English>
+        <German>
+            <Text>Flache Küste</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_SHALLOW_COAST_PEDIA</Tag>
+        <English>[TAB]Shallow Coast</English>
+        <German>[TAB]Flache Küste.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TERRAIN_DESERT</Tag>
         <English>Desert</English>
         <French>
