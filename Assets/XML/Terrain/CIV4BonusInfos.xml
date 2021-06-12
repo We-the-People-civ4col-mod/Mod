@@ -211,6 +211,10 @@
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1731,6 +1735,10 @@
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -3245,7 +3253,16 @@
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
-            <FeatureBooleans/>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_DESERT</TerrainType>

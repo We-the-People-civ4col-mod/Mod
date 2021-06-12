@@ -135,6 +135,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -539,6 +543,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -1054,6 +1062,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -1464,6 +1476,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -2063,6 +2079,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -2943,6 +2963,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -3439,6 +3463,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -3865,6 +3893,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -4297,6 +4329,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -4707,6 +4743,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -5123,6 +5163,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -5533,6 +5577,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -5949,6 +5997,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -6362,6 +6414,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -6772,6 +6828,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -7196,6 +7256,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -7614,6 +7678,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -8038,6 +8106,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -8459,6 +8531,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -8872,6 +8948,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -9274,6 +9354,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -9690,6 +9774,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -10092,6 +10180,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -10500,6 +10592,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -10905,6 +11001,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -11302,6 +11402,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -11691,6 +11795,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -12123,6 +12231,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -12552,6 +12664,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -12974,6 +13090,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -13402,6 +13522,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -13823,6 +13947,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -14241,6 +14369,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -14669,6 +14801,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -15094,6 +15230,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -15516,6 +15656,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -15948,6 +16092,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -16374,6 +16522,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -16806,6 +16958,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -17235,6 +17391,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -17656,6 +17816,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -18074,6 +18238,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -18506,6 +18674,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -18932,6 +19104,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -19372,6 +19548,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -19801,6 +19981,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -22955,6 +23139,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -23344,6 +23532,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -23751,6 +23943,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -24144,6 +24340,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -26373,6 +26573,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -26764,6 +26968,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -27135,6 +27343,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -27543,6 +27755,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -27975,6 +28191,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -28404,6 +28624,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -28830,6 +29054,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -30030,6 +30258,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -30476,6 +30708,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -30875,6 +31111,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -31271,6 +31511,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -32092,6 +32336,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -32499,6 +32747,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -32853,6 +33105,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_BARREL_CACTUS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>

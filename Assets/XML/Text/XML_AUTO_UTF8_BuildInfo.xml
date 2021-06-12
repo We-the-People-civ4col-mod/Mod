@@ -253,6 +253,15 @@
         <English>????</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BUILD_REMOVE_BARREL_CACTUS</Tag>
+        <English>Chop down the [LINK=FEATURE_JUNGLE]barrel cactus field[\LINK]</English>
+        <German>[LINK=FEATURE_JUNGLE]Kugelkaktusfeld[\LINK] entfernen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REMOVE_JUNGLE_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILD_ROAD</Tag>
         <English>Build a road</English>
         <French>Construire une route</French>

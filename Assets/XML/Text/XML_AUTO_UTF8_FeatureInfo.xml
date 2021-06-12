@@ -167,6 +167,21 @@
         <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sumpf[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_FEATURE_BARREL_CACTUS</Tag>
+        <English>Barrel Cactus Field</English>
+        <German>
+            <Text>Kugelkaktusfeld</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_BARREL_CACTUS_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Barrel Cactus Field[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kugelkaktusfeld[COLOR_REVERT]</German>
+    </TEXT>
+	
+    <TEXT>
         <Tag>TXT_KEY_FEATURE_STORM</Tag>
         <English>Storm</English>
         <French>

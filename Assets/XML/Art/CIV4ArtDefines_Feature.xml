@@ -215,8 +215,26 @@
                         <Connections/>
                     </FeatureArtPiece>
                 </FeatureArtPieces>
-                <iModelCopies>1</iModelCopies>
+                <iModelCopies>16</iModelCopies>
                 <VarietyButton>,Art/Interface/Buttons/SwampButton.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
+        <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_BARREL_CACTUS</Type>
+            <bAnimated>1</bAnimated>
+            <TileArtType>TILE_ART_TYPE_TREES</TileArtType>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <Button>,Art/Interface/Buttons/barrel_cactus.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/barrel_cactus/barrel_cactus.nif</ModelFile>
+                        <Connections/>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>13</iModelCopies>
+                <VarietyButton>,Art/Interface/Buttons/barrel_cactus.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>

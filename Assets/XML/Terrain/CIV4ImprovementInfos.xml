@@ -255,6 +255,10 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -454,6 +458,10 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -546,6 +554,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -644,6 +656,10 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -736,6 +752,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -1277,6 +1297,10 @@
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -1402,6 +1426,10 @@
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
@@ -2531,6 +2559,10 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -2645,6 +2677,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -2776,6 +2812,10 @@
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
