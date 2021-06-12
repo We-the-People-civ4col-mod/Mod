@@ -1644,6 +1644,17 @@ class CvWorldBuilderScreen:
 	def setEditButtonClicked(self, argsList):
 		iIndex = int(argsList)
 		if (self.m_bUnitEditCtrl):
+			# isGraphicalOnly index bugfix - Nightinggale - start
+			# exe bug workaround
+			# the exe calls with iIndex as button index rather than PromotionTypes
+			# since isGraphicalOnly will not get buttons, passing those will create an offset
+			# the correct PromotionTypes value is iIndex +1 for each isGraphicalOnly promotion prior to the promotion in question
+			for i in (range(gc.getNumPromotionInfos())):
+				if (gc.getPromotionInfo(i).isGraphicalOnly()):
+					iIndex += 1
+				elif iIndex == i:
+					break
+			# isGraphicalOnly index bugfix - Nightinggale - start
 			bOn = not self.m_pActivePlot.getUnit(self.m_iCurrentUnit).isHasRealPromotion(iIndex)
 			self.m_pActivePlot.getUnit(self.m_iCurrentUnit).setHasRealPromotion(iIndex, bOn)
 		elif (self.m_bCityEditCtrl):
