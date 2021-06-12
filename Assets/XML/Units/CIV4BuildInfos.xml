@@ -980,6 +980,17 @@
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
             </FeatureStructs>
             <HotKey/>
             <bAltDown>0</bAltDown>
@@ -1016,6 +1027,17 @@
                 <FeatureStruct>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <iTime>600</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_LUMBER</YieldType>
