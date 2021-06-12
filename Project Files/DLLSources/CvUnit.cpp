@@ -12274,19 +12274,29 @@ bool CvUnit::canAcquirePromotion(PromotionTypes ePromotion) const
 		return false;
 	}
 
-	if (GC.getPromotionInfo(ePromotion).getPrereqPromotion() != NO_PROMOTION)
+	//WTP, ray, Promotions not earned by XP
+	// this section is actually written by Nightinggale, but kept ray in the previous line as it makes searching easier
+	const CvPromotionInfo& kPromotion = GC.getPromotionInfo(ePromotion);
+
+	if (kPromotion.isNotEarnedByXP())
 	{
-		if (!isHasPromotion((PromotionTypes)(GC.getPromotionInfo(ePromotion).getPrereqPromotion())))
+		return false;
+	}
+	//WTP, ray, Promotions not earned by XP
+
+	if (kPromotion.getPrereqPromotion() != NO_PROMOTION)
+	{
+		if (!isHasPromotion((PromotionTypes)(kPromotion.getPrereqPromotion())))
 		{
 			return false;
 		}
 	}
 
-	if (GC.getPromotionInfo(ePromotion).getPrereqOrPromotion1() != NO_PROMOTION)
+	if (kPromotion.getPrereqOrPromotion1() != NO_PROMOTION)
 	{
-		if (!isHasPromotion((PromotionTypes)(GC.getPromotionInfo(ePromotion).getPrereqOrPromotion1())))
+		if (!isHasPromotion((PromotionTypes)(kPromotion.getPrereqOrPromotion1())))
 		{
-			if ((GC.getPromotionInfo(ePromotion).getPrereqOrPromotion2() == NO_PROMOTION) || !isHasPromotion((PromotionTypes)(GC.getPromotionInfo(ePromotion).getPrereqOrPromotion2())))
+			if ((kPromotion.getPrereqOrPromotion2() == NO_PROMOTION) || !isHasPromotion((PromotionTypes)(kPromotion.getPrereqOrPromotion2())))
 			{
 				return false;
 			}
