@@ -272,7 +272,7 @@
             <iNativeSellPrice>10</iNativeSellPrice>
             <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
             <iNativeHappy>0</iNativeHappy>
-            <iHillsChange>-4</iHillsChange>
+            <iHillsChange>-5</iHillsChange>
             <iPeakChange>0</iPeakChange>
             <iLakeChange>0</iLakeChange>
             <iCityChange>0</iCityChange>
@@ -313,7 +313,7 @@
             <iNativeSellPrice>30</iNativeSellPrice>
             <iNativeConsumptionPercent>-1</iNativeConsumptionPercent>
             <iNativeHappy>5</iNativeHappy>
-            <iHillsChange>-4</iHillsChange>
+            <iHillsChange>-5</iHillsChange>
             <iPeakChange>0</iPeakChange>
             <iLakeChange>0</iLakeChange>
             <iCityChange>0</iCityChange>
@@ -848,7 +848,7 @@
             <iNativeSellPrice>3</iNativeSellPrice>
             <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
             <iNativeHappy>0</iNativeHappy>
-            <iHillsChange>-4</iHillsChange>
+            <iHillsChange>-5</iHillsChange>
             <iPeakChange>0</iPeakChange>
             <iLakeChange>0</iLakeChange>
             <iCityChange>1</iCityChange>

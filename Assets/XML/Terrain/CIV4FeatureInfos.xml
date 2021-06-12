@@ -639,11 +639,11 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_CATTLE</YieldType>
-                    <iValue>-3</iValue>
+                    <iValue>-4</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HORSES</YieldType>
-                    <iValue>-3</iValue>
+                    <iValue>-4</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
             <RiverYieldIncreases>
