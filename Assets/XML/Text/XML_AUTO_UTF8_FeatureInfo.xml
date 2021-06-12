@@ -153,6 +153,20 @@
         <Spanish>[TAB]A forest, also referred to as a wood or the woods and less often as a "wold" (or "weald"), "holt", or "frith" (or "firth"), is an area with a high density of trees. There are many definitions for forest, based on the various criteria. These plant communities cover approximately 9.4% of the Earth's surface (or 30% of total land area), though they once covered much more (about 50% of total land area), in many different regions and function as habitats for organisms, hydrologic flow modulators, and soil conservers, constituting one of the most important aspects of the Earth's biosphere. Although a forest is classified primarily by trees a forest ecosystem is defined intrinsically with additional species such as fungi.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_FEATURE_SWAMP</Tag>
+        <English>Swamp</English>
+        <German>
+            <Text>Sumpf</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_SWAMP_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Swamp[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sumpf[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_FEATURE_STORM</Tag>
         <English>Storm</English>
         <French>

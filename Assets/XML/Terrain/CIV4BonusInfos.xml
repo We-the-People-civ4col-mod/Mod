@@ -1177,6 +1177,10 @@
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -3730,6 +3734,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SWAMP</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
