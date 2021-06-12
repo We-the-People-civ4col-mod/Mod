@@ -6532,7 +6532,11 @@ int CvPlot::calculatePotentialYield(YieldTypes eYield, PlayerTypes ePlayer, Impr
 		{
 			if (iYield > 0 && pWorkingCity->getYieldStored(eYield) > 0)
 			{
-				iYield = std::min(iYield, pWorkingCity->getYieldStored(eYield) * iYield / 100);
+				// WTP, Ray, fixing issue with Livestock Breeding having forgotten gamespeed
+				int iYieldDivisor = GC.getGameINLINE().getCargoYieldCapacity();
+				iYieldDivisor = iYieldDivisor * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 100;
+
+				iYield = std::min(iYield, pWorkingCity->getYieldStored(eYield) * iYield / iYieldDivisor);
 				if (iYield < 1)
 				{
 					iYield = 1;
