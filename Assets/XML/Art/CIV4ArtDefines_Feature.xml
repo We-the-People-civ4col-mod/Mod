@@ -215,7 +215,7 @@
                         <Connections/>
                     </FeatureArtPiece>
                 </FeatureArtPieces>
-                <iModelCopies>16</iModelCopies>
+                <iModelCopies>1</iModelCopies>
                 <VarietyButton>,Art/Interface/Buttons/SwampButton.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
