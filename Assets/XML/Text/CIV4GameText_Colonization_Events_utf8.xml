@@ -1287,9 +1287,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_REQUISITION_LUMBER</Tag>
-        <English>The Royal Navy has requisitioned 200 tons of lumber for the construction of new ships, to be delivered as soon as possible at the %s2_city docks.</English>
-        <French>La Marine Royale a réquisitionné 200 tonnes de bois pour la construction de ses nouveaux navires. Les biens sont à collecter le plus tôt possible aux docks de %s2_city.</French>
-        <German>Die Royal Navy hat 200 Tonnen Holz für den Bau neuer Schiffe angefordert. Das Holz soll so bald wie möglich ine einer Siedlung mit Dock oder Zollhaus bereitgestellt werden. </German>
+        <English>The Royal Navy has requisitioned [COLOR_HIGHLIGHT_TEXT]two full cargo loads of lumber[COLOR_REVERT] for the construction of new ships, to be delivered as soon as possible at the %s2_city docks.</English>
+        <French>La Marine Royale a réquisitionné [COLOR_HIGHLIGHT_TEXT]deux charges de fret de bois[COLOR_REVERT] pour la construction de ses nouveaux navires. Les biens sont à collecter le plus tôt possible aux docks de %s2_city.</French>
+        <German>Die Royal Navy hat [COLOR_HIGHLIGHT_TEXT]zwei Schiffsladungen Holz[COLOR_REVERT] für den Bau neuer Schiffe angefordert. Das Holz soll so bald wie möglich ine einer Siedlung mit Dock oder Zollhaus bereitgestellt werden. </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_REQUISITION_HELP</Tag>
@@ -1299,9 +1299,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DELIVER_LUMBER</Tag>
-        <English>Representatives of the Royal Navy have arrived at %s2_city to take delivery of 200 tons of lumber, per our previous arrangement.</English>
-        <French>Les représentants de la Marine Royale sont arrivés à %s2_city pour prendre livraison des 200 tonnes de bois, comme convenu lors de notre dernier arrangement.</French>
-        <German>Representanten der Royal Navy sind in %s2_city angekommen um die versprochene Lieferung der 200 Tonnen Holz entgegen zu nehmen.</German>
+        <English>Representatives of the Royal Navy have arrived at %s2_city to take delivery of [COLOR_HIGHLIGHT_TEXT]two full cargo loads of lumber[COLOR_REVERT], per our previous arrangement.</English>
+        <French>Les représentants de la Marine Royale sont arrivés à %s2_city pour prendre livraison des [COLOR_HIGHLIGHT_TEXT]deux charges de fret de bois[COLOR_REVERT], comme convenu lors de notre dernier arrangement.</French>
+        <German>Representanten der Royal Navy sind in %s2_city angekommen um die versprochene Lieferung der [COLOR_HIGHLIGHT_TEXT]zwei Schiffsladungen Holz[COLOR_REVERT] entgegen zu nehmen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_REQUISITION_COATS</Tag>
