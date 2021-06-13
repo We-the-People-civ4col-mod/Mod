@@ -313,19 +313,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_FROM_CITY_YIELD</Tag>
-        <English>[ICON_BULLET]%d1%F2[TAB][TAB]from Settlement</English>
-        <French>[ICON_BULLET]%d1%F2[TAB][TAB]grâce à la colonie</French>
-        <German>[ICON_BULLET]%d1%F2[TAB][TAB]durch Siedlung</German>
-        <Italian>[ICON_BULLET]%d1%F2[TAB][TAB]dall'insediamento</Italian>
-        <Spanish>[ICON_BULLET]%d1%F2[TAB][TAB]del asentamiento</Spanish>
+        <English>[ICON_BULLET]%d1%F2[TAB]from Settlement</English>
+        <French>[ICON_BULLET]%d1%F2[TAB]grâce à la colonie</French>
+        <German>[ICON_BULLET]%d1%F2[TAB]durch Siedlung</German>
+        <Italian>[ICON_BULLET]%d1%F2[TAB]dall'insediamento</Italian>
+        <Spanish>[ICON_BULLET]%d1%F2[TAB]del asentamiento</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CONSUMED_FOOD</Tag>
-        <English>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB][TAB]consumed</English>
-        <French>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB][TAB]consommée</French>
-        <German>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB][TAB]verbraucht</German>
-        <Italian>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB][TAB]consumato</Italian>
-        <Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB][TAB]consumidos</Spanish>
+        <English>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB]consumed</English>
+        <French>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB]consommée</French>
+        <German>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB]verbraucht</German>
+        <Italian>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB]consumato</Italian>
+        <Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]%d1[COLOR_REVERT][ICON_EATENFOOD][TAB]consumidos</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_PROD_FINAL_YIELD</Tag>
@@ -537,27 +537,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUY_AND_SELL_YIELD</Tag>
-        <English>Europe[TAB][TAB]Sell: %d1_Price[ICON_GOLD] / Buy: %d2_Price[ICON_GOLD]</English>
-        <French>Europe[TAB][TAB]Vendre : %d1_Price[ICON_GOLD] / Acheter : %d2_Price[ICON_GOLD]</French>
-        <German>Europa[TAB][TAB]Verkauf: %d1_Price[ICON_GOLD] / Einkauf: %d2_Price[ICON_GOLD]</German>
+        <English>Europe     [TAB]Sell : %d1_Price[ICON_GOLD] / Buy : %d2_Price[ICON_GOLD]</English>
+        <French>Europe     [TAB]Vendre : %d1_Price[ICON_GOLD] / Acheter : %d2_Price[ICON_GOLD]</French>
+        <German>Europa     [TAB]Verkauf: %d1_Price[ICON_GOLD] / Einkauf:  %d2_Price[ICON_GOLD]</German>
         <Italian>Europe[TAB][TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
-        <Spanish>Europe[TAB][TAB]Vender: %d1_Price[ICON_GOLD]/ Comprar: %d2_Price[ICON_GOLD]</Spanish>
+        <Spanish>Europe     [TAB]Vender: %d1_Price[ICON_GOLD] / Comprar: %d2_Price[ICON_GOLD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUY_AND_SELL_YIELD_AFRICA</Tag>
-        <English>Africa[TAB][TAB]Sell: %d1_Price[ICON_GOLD] / Buy: %d2_Price[ICON_GOLD]</English>
-        <French>Africa[TAB][TAB]Vendre : %d1_Price[ICON_GOLD] / Acheter : %d2_Price[ICON_GOLD]</French>
-        <German>Afrika[TAB][TAB]Verkauf: %d1_Price[ICON_GOLD] / Einkauf: %d2_Price[ICON_GOLD]</German>
-        <Italian>Africa[TAB][TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
-        <Spanish>Africa[TAB][TAB]Vender: %d1_Price[ICON_GOLD]/ Comprar: %d2_Price[ICON_GOLD]</Spanish>
+        <English>Africa      [TAB]Sell : %d1_Price[ICON_GOLD] / Buy : %d2_Price[ICON_GOLD]</English>
+        <French>Afrique    [TAB]Vendre : %d1_Price[ICON_GOLD] / Acheter : %d2_Price[ICON_GOLD]</French>
+        <German>Afrika      [TAB]Verkauf: %d1_Price[ICON_GOLD] / Einkauf: %d2_Price[ICON_GOLD]</German>
+        <Italian>Africa      [TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
+        <Spanish>África      [TAB]Vender: %d1_Price[ICON_GOLD] / Comprar: %d2_Price[ICON_GOLD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUY_AND_SELL_YIELD_PORT_ROYAL</Tag>
-        <English>Port Royal[TAB]Sell: %d1_Price[ICON_GOLD] / Buy: %d2_Price[ICON_GOLD]</English>
+        <English>Port Royal[TAB]Sell : %d1_Price[ICON_GOLD] / Buy : %d2_Price[ICON_GOLD]</English>
         <French>Port Royal[TAB]Vendre : %d1_Price[ICON_GOLD] / Acheter : %d2_Price[ICON_GOLD]</French>
         <German>Port Royal[TAB]Verkauf: %d1_Price[ICON_GOLD] / Einkauf: %d2_Price[ICON_GOLD]</German>
         <Italian>Port Royal[TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
-        <Spanish>Port Royal[TAB]Vender: %d1_Price[ICON_GOLD]/ Comprar: %d2_Price[ICON_GOLD]</Spanish>
+        <Spanish>Port Royal[TAB]Vender: %d1_Price[ICON_GOLD] / Comprar: %d2_Price[ICON_GOLD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_TAX_RATE</Tag>
@@ -1441,27 +1441,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_FATHER</Tag>
-        <English>[ICON_BULLET]%D1%%%F2[TAB][TAB]from [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</English>
-        <French>[ICON_BULLET]%D1%%%F2[TAB][TAB]en raison de l'élément : [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</French>
-        <German>[ICON_BULLET]%D1%%%F2[TAB][TAB]durch [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</German>
-        <Italian>[ICON_BULLET]%D1%%%F2[TAB][TAB]da [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</Italian>
-        <Spanish>[ICON_BULLET]%D1%%%F2[TAB][TAB]por [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</Spanish>
+        <English>[ICON_BULLET]%D1%%[TAB]from [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</English>
+        <French>[ICON_BULLET]%D1%%[TAB]en raison de l'élément : [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</French>
+        <German>[ICON_BULLET]%D1%%[TAB]durch [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</German>
+        <Italian>[ICON_BULLET]%D1%%%F2[TAB]da [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</Italian>
+        <Spanish>[ICON_BULLET]%D1%%%F2[TAB]por [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_REBEL</Tag>
-        <English>[ICON_BULLET]%D1%%%F2[TAB][TAB]from Rebel Sentiment</English>
-        <French>[ICON_BULLET]%D1%%%F2[TAB][TAB]en raison du Sentiment de révolte</French>
-        <German>[ICON_BULLET]%D1%%%F2[TAB][TAB]durch rebellische Stimmung</German>
-        <Italian>[ICON_BULLET]%D1%%%F2[TAB][TAB]dal sentimento di ribellione</Italian>
-        <Spanish>[ICON_BULLET]%D1%%%F2[TAB][TAB]por sentimiento de rebelión</Spanish>
+        <English>[ICON_BULLET]%D1%%[TAB]from Rebel Sentiment</English>
+        <French>[ICON_BULLET]%D1%%[TAB]en raison du Sentiment de révolte</French>
+        <German>[ICON_BULLET]%D1%%[TAB]durch rebellische Stimmung</German>
+        <Italian>[ICON_BULLET]%D1%%%F2[TAB]dal sentimento di ribellione</Italian>
+        <Spanish>[ICON_BULLET]%D1%%%F2[TAB]por sentimiento de rebelión</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_BASE_CITIZEN_YIELD</Tag>
-        <English>[ICON_BULLET]%d1%F2[TAB][TAB][COLOR_HIGHLIGHT_TEXT]%s3_unit[COLOR_REVERT]</English>
-        <French>[ICON_BULLET]%d1%F2[TAB][TAB]grâce à l'unité %s3_unit</French>
-        <German>[ICON_BULLET]%d1%F2[TAB][TAB]durch [COLOR_HIGHLIGHT_TEXT]%s3_unit[COLOR_REVERT]</German>
-        <Italian>[ICON_BULLET]%d1%F2[TAB][TAB]dall'unità %s3_unit</Italian>
-        <Spanish>[ICON_BULLET]%d1%F2[TAB][TAB]por %s3_unit</Spanish>
+        <English>[ICON_BULLET]%d1%F2[TAB][COLOR_HIGHLIGHT_TEXT]%s3_unit[COLOR_REVERT]</English>
+        <French>[ICON_BULLET]%d1%F2[TAB]grâce à l'unité %s3_unit</French>
+        <German>[ICON_BULLET]%d1%F2[TAB][COLOR_HIGHLIGHT_TEXT]%s3_unit[COLOR_REVERT]</German>
+        <Italian>[ICON_BULLET]%d1%F2[TAB]dall'unità %s3_unit</Italian>
+        <Spanish>[ICON_BULLET]%d1%F2[TAB]por %s3_unit</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_TOTAL_YIELD_PRODUCED</Tag>
@@ -1561,7 +1561,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAN_FOUND</Tag>
-        <English>[ICON_BULLET]Can Found New Colonies</English>
+        <English>[ICON_BULLET]Can found new colonies</English>
         <French>[ICON_BULLET]Peut fonder de nouvelles colonies</French>
         <German>[ICON_BULLET]Kann neue Kolonien gründen</German>
         <Italian>[ICON_BULLET]Può fondare nuove colonie</Italian>
@@ -1617,7 +1617,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DELETE_TRADE_ROUTE</Tag>
-        <English>Delete This Trade Route</English>
+        <English>Delete this Trade Route</English>
         <French>Supprimer cette route commerciale</French>
         <German>Diesen Handelsweg löschen</German>
         <Italian>Elimina questa rotta commerciale</Italian>
@@ -2027,9 +2027,9 @@
         <Tag>TXT_KEY_CHOOSE_SPECIALTY</Tag>
         <English>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Choose a specialty for the graduating %s1_profession :</English>
         <French>Choisissez une spécialité pour l'unité : %s1_profession formée dans la ville : %s2_city</French>
-        <German>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Wählen Sie eine Spezialfähigkeit für die ausgebildete %s1_profession-Einheit :</German>
+        <German>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT][NEWLINE][NEWLINE]Ein %s1_profession hat seine Lehrzeit beendet. Welche Spezialfähigkeit soll er erlernt haben :</German>
         <Italian>Scegli una specializzazione per l'unità %s1_profession che si diploma a %s2_city</Italian>
-        <Spanish>Elegir una especialidad para [NUM1:el.la:los:las] %s1_profession a graduar en %s2_city.</Spanish>
+        <Spanish>Elegir una especialidad para [NUM1:el:la:los:las] %s1_profession a graduar en %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODS_RAIDED</Tag>
@@ -2058,34 +2058,34 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_SOLD</Tag>
         <English>[PARAGRAPH:1]%d1%F2 sold @ %d3[ICON_GOLD]    [TAB]%d4[ICON_GOLD]</English>
-        <French>%d1%F2 vendu à %d3[ICON_GOLD] pour %d4[ICON_GOLD]</French>
-        <German>[PARAGRAPH:1]%d1%F2 zu je %d3[ICON_GOLD] für insgesamt %d4[ICON_GOLD] verkauft</German>
+        <French>[PARAGRAPH:1]%d1%F2 vendu à %d3[ICON_GOLD]   [TAB]%d4[ICON_GOLD]</French>
+        <German>[PARAGRAPH:1]%d1%F2 zu je %d3[ICON_GOLD] für[TAB]%d4[ICON_GOLD] verkauft</German>
         <Italian>Vendita di %d1%F2 @ %d3[ICON_GOLD] per %d4[ICON_GOLD]</Italian>
         <Spanish>Venta de %d1 %F2 a %d3[ICON_GOLD] por un total de %d4[ICON_GOLD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_TAX</Tag>
         <English>[TAB]%d1%% Tax[TAB][TAB][TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</English>
-        <French>[TAB]Impôt de %d1%% : %d2[ICON_GOLD]</French>
-        <German>[TAB]%d1%% Steuer[TAB][TAB][TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</German>
-        <Italian>[TAB]%d1%% tasse : %d2[ICON_GOLD]</Italian>
-        <Spanish>[TAB]Impuestos de un %d1%% : %d2[ICON_GOLD]</Spanish>
+        <French>[TAB]Impôt de %d1%%[TAB][TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</French>
+        <German>[TAB]%d1%% Steuer[TAB][TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</German>
+        <Italian>[TAB]%d1%% tasse[TAB][TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</Italian>
+        <Spanish>[TAB]Impuestos de un %d1%%[TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BRIBE</Tag>
         <English>[TAB]%d1%% Bribe[TAB][TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</English>
-        <French>[TAB]%d1%% Pot-de-vin : %d2[ICON_GOLD]</French>
+        <French>[TAB]%d1%% Pot-de-vin[TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</French>
         <German>[TAB]%d1%% Bestechung[TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</German>
-        <Italian>[TAB]%d1%% Corruzione : %d2[ICON_GOLD]</Italian>
-        <Spanish>[TAB]%d1%% Soborno : %d2[ICON_GOLD]</Spanish>
+        <Italian>[TAB]%d1%% Corruzione[TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</Italian>
+        <Spanish>[TAB]%d1%% Soborno[TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_NET_PROFIT</Tag>
         <English>[TAB]Profit[TAB][TAB][TAB][TAB][COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT][ICON_GOLD]</English>
-        <French>[TAB]Profit : %d1[ICON_GOLD]</French>
+        <French>[TAB]Profit[TAB][TAB][TAB][TAB][COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT][ICON_GOLD]</French>
         <German>[TAB]Gewinn[TAB][TAB][TAB][TAB][COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT][ICON_GOLD]</German>
-        <Italian>[TAB]Profitto : %d1[ICON_GOLD]</Italian>
-        <Spanish>[TAB]Beneficio : %d1[ICON_GOLD]</Spanish>
+        <Italian>[TAB]Profitto[TAB][TAB][TAB][COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT][ICON_GOLD]</Italian>
+        <Spanish>[TAB]Beneficio[TAB][TAB][TAB][COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT][ICON_GOLD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_BOUGHT</Tag>
@@ -2097,19 +2097,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TREASURE_DELIVERED</Tag>
-        <English>[PARAGRAPH:1]Treasure value :[TAB][TAB]%d1[ICON_GOLD]</English>
-        <French>[PARAGRAPH:1]Valeur du trésor : %d1[ICON_GOLD]</French>
-        <German>[PARAGRAPH:1]Wert des Schatzes :[TAB][TAB]%d1[ICON_GOLD]</German>
-        <Italian>[PARAGRAPH:1]Valore del tesoro : %d1[ICON_GOLD]</Italian>
-        <Spanish>[PARAGRAPH:1]Valor del tesoro : %d1[ICON_GOLD]</Spanish>
+        <English>[PARAGRAPH:1]Treasure value[TAB][TAB]%d1[ICON_GOLD]</English>
+        <French>[PARAGRAPH:1]Valeur du trésor[TAB][TAB]%d1[ICON_GOLD]</French>
+        <German>[PARAGRAPH:1]Wert des Schatzes[TAB][TAB]%d1[ICON_GOLD]</German>
+        <Italian>[PARAGRAPH:1]Valore del tesoro[TAB][TAB]%d1[ICON_GOLD]</Italian>
+        <Spanish>[PARAGRAPH:1]Valor del tesoro[TAB][TAB]%d1[ICON_GOLD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COMMISSION</Tag>
-        <English>[TAB]%d1%% Commission : %d2[ICON_GOLD]</English>
-        <French>[TAB]Commission de %d1%% : %d2[ICON_GOLD]</French>
-        <German>[TAB]%d1%% Provision : %d2[ICON_GOLD]</German>
-        <Italian>[TAB]%d1%% commissione : %d2[ICON_GOLD]</Italian>
-        <Spanish>[TAB]Comisión de un %d1%% : %d2[ICON_GOLD]</Spanish>
+        <English>[TAB]%d1%% Commission[TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</English>
+        <French>[TAB]Commission de %d1%%[TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</French>
+        <German>[TAB]%d1%% Provision[TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</German>
+        <Italian>[TAB]%d1%% commissione[TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</Italian>
+        <Spanish>[TAB]Comisión de un %d1%%[TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ADVISOR_NO_PROFESSION</Tag>
@@ -2226,10 +2226,10 @@
     <TEXT>
         <Tag>TXT_KEY_POPUP_REQUIRES</Tag>
         <English>[NEWLINE] [COLOR_WARNING_TEXT](requires %s1_list_of_comma_separated_amounts_of_yields)[COLOR_REVERT]</English>
-        <French>[SPACE](nécessite %s1_list_of_comma_separated_amounts_of_yields)</French>
-        <German>[SPACE](erfordert %s1_list_of_comma_separated_amounts_of_yields)</German>
-        <Italian>[SPACE](richiede %s1_list_of_comma_separated_amounts_of_yields)</Italian>
-        <Spanish>[SPACE](requiere %s1_list_of_comma_separated_amounts_of_yields)</Spanish>
+        <French>[NEWLINE] [COLOR_WARNING_TEXT](nécessite %s1_list_of_comma_separated_amounts_of_yields)[COLOR_REVERT]</French>
+        <German>[NEWLINE] [COLOR_WARNING_TEXT](erfordert %s1_list_of_comma_separated_amounts_of_yields)[COLOR_REVERT]</German>
+        <Italian>[NEWLINE] [COLOR_WARNING_TEXT](richiede %s1_list_of_comma_separated_amounts_of_yields)[COLOR_REVERT]</Italian>
+        <Spanish>[NEWLINE] [COLOR_WARNING_TEXT](requiere %s1_list_of_comma_separated_amounts_of_yields)[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CHOOSE_COMLPETED_BUILD</Tag>
@@ -2465,9 +2465,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_UNPRODUCED_CITY_YIELD_SPECIFIC</Tag>
-        <English>[ICON_BULLET]%D1%F2[TAB][TAB]from lack of %s3_symbol_list</English>
+        <English>[ICON_BULLET]%D1%F2[TAB]from lack of %s3_symbol_list</English>
         <French>[ICON_BULLET]%D1%F2 par manque de %s3_symbol_list</French>
-        <German>[ICON_BULLET]%D1%F2[TAB][TAB]aufgrund von Mangel an %s3_symbol_list</German>
+        <German>[ICON_BULLET]%D1%F2[TAB]aufgrund von Mangel an %s3_symbol_list</German>
         <Italian>[ICON_BULLET]%D1%F2 per mancanza di %s3_symbol_list</Italian>
         <Spanish>[ICON_BULLET]%D1%F2 por falta de %s3_symbol_list</Spanish>
     </TEXT>
@@ -2972,10 +2972,10 @@
     <TEXT>
         <Tag>TXT_KEY_CHANGE_NAME</Tag>
         <English>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT][NEWLINE]to Change the Name of the Colony</English>
-        <French>Cliquez pour changer le nom</French>
+        <French>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Cliquez &gt;[COLOR_REVERT][NEWLINE]pour changer le nom</French>
         <German>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT][NEWLINE]um den Namen der Kolonie zu ändern</German>
-        <Italian>Clicca qui per cambiare il nome</Italian>
-        <Spanish>Haz clic para cambiar el nombre</Spanish>
+        <Italian>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Clicca &gt;[COLOR_REVERT][NEWLINE]qui per cambiare il nome</Italian>
+        <Spanish>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Haz clic &gt;[COLOR_REVERT][NEWLINE]para cambiar el nombre de la colonia</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NAME_CITY</Tag>
