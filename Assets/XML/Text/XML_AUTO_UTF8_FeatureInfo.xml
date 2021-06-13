@@ -180,7 +180,6 @@
         <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Barrel Cactus Field[COLOR_REVERT] </English>
         <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kugelkaktusfeld[COLOR_REVERT]</German>
     </TEXT>
-	
     <TEXT>
         <Tag>TXT_KEY_FEATURE_STORM</Tag>
         <English>Storm</English>
@@ -212,6 +211,34 @@
         <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Stürme[COLOR_REVERT] benötigen viele Bewegungspunkte um hindurch zu segeln und beschädigen auch die Schiffe darin. Daher sollten Stürme wenn möglich vermieden werden. Sie kommen nur auf dem offenen [LINK=TERRAIN_COEAN]Ozean[\LINK] vor. Daher sind [LINK=TERRAIN_COAST]Küsten[\LINK] für die Schiffe viel sicherer.[NEWLINE]Stürme zerstören Schiffe nicht vollständig, können diese aber schwer anschlagen. Für weitere Informationen siehe [LINK=CONCEPT_WINDS_AND_STORMS]Wind und Stürme[\LINK][NEWLINE][NEWLINE][BOLD]Hintegrund[\BOLD][PARAGRAPH:1]Ein Sturm ist ein gestörter Zustand der Atmosphäre, der heftige Wetterbedingungen verursacht. Dazu können sehr starke Winde, Regen, Schnee, Hagel, Donner und Blitze gehören.</German>
         <Italian>[TAB]A storm is any disturbed state of an astronomical body's atmosphere especially affecting its surface, and strongly implying severe weather. It may be marked by strong wind, hail, thunder and/or lightning (a thunderstorm), heavy precipitation (snowstorm, rainstorm), heavy freezing rain (ice storm), strong winds (tropical cyclone, windstorm), or wind transporting some substance through the atmosphere as in a dust storm, blizzard, sandstorm, etc. Storms generally lead to negative impacts to lives and property such as storm surge, heavy rain or snow (causing flooding or road impassibility), lightning, wildfires, and vertical wind shear; however, systems with significant rainfall can alleviate drought in places they move through. Heavy snowfall can allow special recreational activities to take place which would not be possible otherwise, such as skiing and snowmobiling.</Italian>
         <Spanish>[TAB]A storm is any disturbed state of an astronomical body's atmosphere especially affecting its surface, and strongly implying severe weather. It may be marked by strong wind, hail, thunder and/or lightning (a thunderstorm), heavy precipitation (snowstorm, rainstorm), heavy freezing rain (ice storm), strong winds (tropical cyclone, windstorm), or wind transporting some substance through the atmosphere as in a dust storm, blizzard, sandstorm, etc. Storms generally lead to negative impacts to lives and property such as storm surge, heavy rain or snow (causing flooding or road impassibility), lightning, wildfires, and vertical wind shear; however, systems with significant rainfall can alleviate drought in places they move through. Heavy snowfall can allow special recreational activities to take place which would not be possible otherwise, such as skiing and snowmobiling.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_SANDSTORM</Tag>
+        <English>Sandstorm</English>
+        <German>
+            <Text>Sandsturm</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_SANDSTORM_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sandstorms[COLOR_REVERT]</English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sandstürme[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_FOG</Tag>
+        <English>Fog</English>
+        <German>
+            <Text>Nebel</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_FOG_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fog[COLOR_REVERT]</English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Nebel[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_TORNADO</Tag>

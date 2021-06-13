@@ -328,6 +328,42 @@
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_FOG</Type>
+            <bAnimated>1</bAnimated>
+            <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+            <fScale>0.1</fScale>
+            <fInterfaceScale>0.1</fInterfaceScale>
+            <Button>,Art/Interface/Buttons/Fog_Button.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/terrain/features/fog/sandstorm.nif</ModelFile>
+                        <Connections/>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>1</iModelCopies>
+                <VarietyButton>,Art/Interface/Buttons/Fog_Button.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
+        <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_SANDSTORM</Type>
+            <bAnimated>1</bAnimated>
+            <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+            <fScale>0.1</fScale>
+            <fInterfaceScale>0.1</fInterfaceScale>
+            <Button>,Art/Interface/Buttons/Sandstorm_Button.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/terrain/features/sandstorm/sandstorm.nif</ModelFile>
+                        <Connections/>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>1</iModelCopies>
+                <VarietyButton>,Art/Interface/Buttons/Sandstorm_Button.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
+        <FeatureArtInfo>
             <Type>ART_DEF_FEATURE_RIVER_FORD</Type>
             <bAnimated>0</bAnimated>
             <TileArtType>TILE_ART_TYPE_HALF_TILING</TileArtType>
