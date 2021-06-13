@@ -682,10 +682,10 @@
     <TEXT>
         <Tag>TXT_KEY_CHIEF_GOODY_MAP</Tag>
         <English>Settle down and rest. Smoke a pipe and let us tell you stories about our homeland to refresh your spirit.</English>
-        <French>Venez partager le calumet de la paix et nous vous parlerons de terres lointaines.</French>
+        <French>Installez-vous et reposez-vous. Fumez une pipe et laissez-nous vous raconter des histoires sur notre pays pour vous rafraîchir l'esprit.</French>
         <German>Lasst Euch nieder und rastet. Raucht eine Pfeife und lasst Euch von uns Geschichten über unsere Heimat erzählen, um Euren Geist zu erfrischen.</German>
-        <Italian>Fumiamo il calumet della pace e ti racconterò di terre lontane.</Italian>
-        <Spanish>Por favor, compartamos la pipa de la paz y os hablaremos de tierras lejanas.</Spanish>
+        <Italian>Sistematevi e riposatevi. Fumatevi una pipa e lasciatevi raccontare delle storie sulla nostra patria per rinfrescare il vostro spirito.</Italian>
+        <Spanish>Acomódate y descansa. Fume una pipa y deje que le contemos historias sobre nuestra patria para refrescar su espíritu.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHIEF_GOODY_EXPERIENCE</Tag>
@@ -909,7 +909,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_NATIVE_BORDERS</Tag>
-        <English>[ICON_BULLET]Colony borders dominate native borders</English>
+        <English>[ICON_BULLET]Colony borders dominate Native borders</English>
         <French>[ICON_BULLET]Les frontières du territoire prévalent sur les frontières indigènes.</French>
         <German>[ICON_BULLET]Koloniegrenzen beherrschen die Ureinwohnergrenzen</German>
         <Italian>[ICON_BULLET]I confini coloniali dominano i confini dei nativi</Italian>
@@ -1137,7 +1137,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_NO_GOODY</Tag>
-        <English>[ICON_BULLET]Cannot receive [COLOR_HIGHLIGHT_TEXT]%s2_goody[COLOR_REVERT] from Ancient Ruins</English>
+        <English>[ICON_BULLET]Cannot receive [COLOR_HIGHLIGHT_TEXT]%s2_goody[COLOR_REVERT] from ancient ruins</English>
         <French>[ICON_BULLET]Impossible de trouver un bonus : %s2_goody en explorant des ruines.</French>
         <German>[ICON_BULLET]Nicht möglich, [COLOR_HIGHLIGHT_TEXT]%s2_goody[COLOR_REVERT] durch Antike Ruinen zu erhalten</German>
         <Italian>[ICON_BULLET]Non può ricevere [COLOR_HIGHLIGHT_TEXT]%s2_goody[COLOR_REVERT] dalle antiche rovine</Italian>
@@ -1801,7 +1801,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_TREASURE_MODIFIER</Tag>
-        <English>[ICON_BULLET]Yields %D1%% Treasure when villages are captured</English>
+        <English>[ICON_BULLET]Yields %D1%% treasure when Native settlements are captured</English>
         <French>[ICON_BULLET]Confère %D1%% trésor(s) quand des villages sont capturés</French>
         <German>[ICON_BULLET]Bringt %D1%% an Schätzen bei Eroberung von Siedlungen der Ureinwohner</German>
         <Italian>[ICON_BULLET]Rende %D1%% tesoro quando vengono conquistati i villaggi</Italian>
@@ -1809,7 +1809,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CHIEF_GOLD_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% [ICON_GOLD] at first European contact with Native villages</English>
+        <English>[ICON_BULLET]%D1%% [ICON_GOLD] at first European contact with Native settlements</English>
         <French>[ICON_BULLET]%D1%% [ICON_GOLD] lors du premier contact européen avec les villages indigènes</French>
         <German>[ICON_BULLET]%D1%% [ICON_GOLD] bei Erstkontakt zu Siedlungen der Ureinwohner</German>
         <Italian>[ICON_BULLET]%D1%% [ICON_GOLD] al primo contatto europeo con i villaggi nativi</Italian>
@@ -1825,7 +1825,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CAPITAL</Tag>
-        <English>[ICON_BULLET]Makes this settlement the [COLOR_CYAN]Capital[COLOR_REVERT]</English>
+        <English>[ICON_BULLET]Makes this settlement the [COLOR_CYAN]capital[COLOR_REVERT]</English>
         <French>[ICON_BULLET]Faire de cette colonie notre capitale</French>
         <German>[ICON_BULLET]Erhebt diese Siedlung zur [COLOR_CYAN]Hauptstadt[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]Rende capitale questo insediamento</Italian>
@@ -2505,7 +2505,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOTO_EUROPE_POPUP_NO</Tag>
-        <English>No, thanks</English>
+        <English>No, thanks.</English>
         <French>Non, merci.</French>
         <German>Nein, danke.</German>
         <Italian>No, grazie.</Italian>
@@ -2513,7 +2513,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOTO_EUROPE_POPUP_NEVER_AGAIN</Tag>
-        <English>No, and please don't ask again</English>
+        <English>No, and please don't ask again.</English>
         <French>Non, et ne me posez plus la question, merci.</French>
         <German>Nein, und fragt bitte nicht noch einmal.</German>
         <Italian>No. Non chiedermelo più.</Italian>
