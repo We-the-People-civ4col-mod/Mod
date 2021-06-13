@@ -11073,7 +11073,7 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 		convUnit->setLastLbDProfession(currentProfession);
 		if(isHuman())
 		{	
-			bool bSameExpert = (expert == GC.getProfessionInfo(lastProfession).LbD_getExpert());
+			bool bSameExpert = lastProfession != NO_PROFESSION && (expert == GC.getProfessionInfo(lastProfession).LbD_getExpert());
 			//the Profession changes to another one with different Expert - thus we reset
 			if(!bSameExpert)
 			{
