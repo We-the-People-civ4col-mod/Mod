@@ -571,8 +571,7 @@
             <Type>ART_DEF_BONUS_SHRIMP</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
-            <!--<NIF>Art/Terrain/Resources/Shrimp/shrimp.nif</NIF>-->
-            <NIF>Art/Terrain/Resources/Fish/Fish.nif</NIF>
+            <NIF>Art/Terrain/Resources/Shrimp/shrimp.nif</NIF>
             <KFM/>
             <Button>,Art/atlasmapbonus.dds,4,8</Button>
             <FontButtonIndex>49</FontButtonIndex>
