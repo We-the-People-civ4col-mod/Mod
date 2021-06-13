@@ -469,5 +469,37 @@
                 <VarietyButton>,Art/Interface/Buttons/baseterrain_terrainfeatures_atlas_custom.dds,8,4</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
+        <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_REEF</Type>
+            <bAnimated>0</bAnimated>
+            <TileArtType>TILE_ART_TYPE_HALF_TILING</TileArtType>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <Button>,Art/Interface/Buttons/Reef_Button.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Reef\fungus01_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features\Reef\fungus02_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features\Reef\fungus03_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features\Reef\fungus04_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features\Reef\fungus05_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features\Reef\fungus06_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features\Reef\fungus07_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features\Reef\fungus08_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features\Reef\fungus09_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features\Reef\fungus10_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features\Reef\fungus11_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features\Reef\fungus12_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features\Reef\fungus13_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features\Reef\fungus14_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features\Reef\fungus15_01.nif</ModelFile>
+                        <Connections/>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>64</iModelCopies>
+                <VarietyButton>,Art/Interface/Buttons/Reef_Button.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
     </FeatureArtInfos>
 </Civ4ArtDefines>

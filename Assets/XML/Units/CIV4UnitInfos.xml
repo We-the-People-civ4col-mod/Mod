@@ -35853,7 +35853,12 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <EvasionBuildings>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
@@ -36051,7 +36056,12 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <EvasionBuildings>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
@@ -36240,7 +36250,12 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <EvasionBuildings>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
@@ -37344,7 +37359,12 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <EvasionBuildings/>
             <iCombat>45</iCombat>
             <iXPValueAttack>6</iXPValueAttack>
@@ -37515,7 +37535,12 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <EvasionBuildings/>
             <iCombat>55</iCombat>
             <iXPValueAttack>7</iXPValueAttack>
@@ -37682,7 +37707,12 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <EvasionBuildings/>
             <iCombat>65</iCombat>
             <iXPValueAttack>8</iXPValueAttack>
@@ -45046,7 +45076,12 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <TerrainNatives>
                 <TerrainNative>
                     <TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -45197,7 +45232,12 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <TerrainNatives>
                 <TerrainNative>
                     <TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -45348,7 +45388,12 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <TerrainNatives>
                 <TerrainNative>
                     <TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -45499,7 +45544,12 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <TerrainNatives>
                 <TerrainNative>
                     <TerrainType>TERRAIN_OCEAN</TerrainType>
