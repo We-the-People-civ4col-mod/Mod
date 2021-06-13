@@ -147,7 +147,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_SUNK_GOOD</Tag>
-        <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has targetted an enemy ship with its cannons, sinking it!</English>
+        <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has targeted an enemy ship with its cannons, sinking it!</English>
         <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur un navire ennemi et l'a coulé !</French>
         <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf ein feindliches Schiff abgefeuert und es versenkt!</German>
         <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni ad una nave nemica e affondato it!</Italian>
@@ -765,7 +765,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_ALARM</Tag>
-        <English>%D1: "Your way of life is threatening to ours."</English>
+        <English>%D1: "Your way of life threatens ours."</English>
         <French>%D1 : "Votre mode de vie est une menace pour le nôtre."</French>
         <German>%D1: "Eure Lebensweise ist eine Gefahr für uns."</German>
         <Italian>%D1: "Il tuo stile di vita è una minaccia per il nostro".</Italian>
@@ -1279,9 +1279,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_HEALTH</Tag>
-        <English>[ICON_BULLET]%D1%%%F2[TAB][TAB]from City Health</English>
-        <French>[ICON_BULLET]%D1%%%F2[TAB][TAB]par la santé de la ville</French>
-        <German>[ICON_BULLET]%D1%%%F2[TAB][TAB]durch Gesundheit der Stadt</German>
+        <English>[ICON_BULLET]%D1%%[TAB]from City Health</English>
+        <French>[ICON_BULLET]%D1%%[TAB]par la santé de la ville</French>
+        <German>[ICON_BULLET]%D1%%[TAB]durch Gesundheit der Stadt</German>
         <Italian>[ICON_BULLET]%D1%%%F2 attraverso la salute della città</Italian>
         <Spanish>[ICON_BULLET]%D1%%%F2 por la salud de la ciudad</Spanish>
     </TEXT>
