@@ -897,8 +897,8 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_LevelExperienceModifier, m_iLevelExperienceModifier, defaultLevelExperienceModifier);
 	writer.Write(PlayerSave_CapitalCityID, m_iCapitalCityID, defaultCapitalCityID);
 	writer.Write(PlayerSave_CitiesLost, m_iCitiesLost, defaultCitiesLost);
-	writer.Write(PlayerSave_Assets, m_iAssets, defaultAssets);
-	writer.Write(PlayerSave_Power, m_iPower, defaultPower);
+	//writer.Write(PlayerSave_Assets, m_iAssets, defaultAssets); // recalculated on load
+	//writer.Write(PlayerSave_Power, m_iPower, defaultPower); // recalculated on load
 	writer.Write(PlayerSave_PopulationScore, m_iPopulationScore, defaultPopulationScore);
 	writer.Write(PlayerSave_LandScore, m_iLandScore, defaultLandScore);
 	writer.Write(PlayerSave_FatherScore, m_iFatherScore, defaultFatherScore);

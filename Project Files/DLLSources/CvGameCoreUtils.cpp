@@ -1914,10 +1914,18 @@ void postLoadGameFixes()
 		kMap.plotByIndexINLINE(iI)->m_em_iVisibilityCount.reset();
 	}
 
-	// set proper cache for all plots (doable now that the entire savegame have been loaded
+	// set proper cache for all plots (doable now that the entire savegame have been loaded)
 	for (int iI = 0; iI < iNumPlots; ++iI)
 	{
 		kMap.plotByIndexINLINE(iI)->postLoadFixes();
+	}
+
+	// deal with players
+
+	// calculate power and assets
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
+	{
+		GET_PLAYER(ePlayer).checkPower(true);
 	}
 }
 /// post load function - end - Nightinggale

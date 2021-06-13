@@ -2044,6 +2044,8 @@ void CvPlayer::doTurn()
 {
 	PROFILE_FUNC();
 
+	EXTRA_POWER_CHECK
+
 	CvCity* pLoopCity;
 	int iLoop;
 
@@ -2054,17 +2056,31 @@ void CvPlayer::doTurn()
 
 	doEra();
 
+	EXTRA_POWER_CHECK
+
 	doUpdateCacheOnTurn();
+
+	EXTRA_POWER_CHECK
 
 	GC.getGameINLINE().verifyDeals();
 
+	EXTRA_POWER_CHECK
+
 	AI_doTurnPre();
+
+	EXTRA_POWER_CHECK
 
 	AI_assignWorkingPlots();
 
+	EXTRA_POWER_CHECK
+
 	doGold();
 
+	EXTRA_POWER_CHECK
+
 	doBells();
+
+	EXTRA_POWER_CHECK
 
 	// doCrosses(); CBM 0.7.020 - moved to player's nature check below
 
@@ -2072,10 +2088,13 @@ void CvPlayer::doTurn()
 	doAchievements(false);
 	// PatchMod: Achievements END
 
+	EXTRA_POWER_CHECK
+
 	// TAC - LbD - Ray - START
 	doLbD();
 	// TAC - LbD - Ray - END
 	
+	EXTRA_POWER_CHECK
 
 	// R&R, ray, changes to Wild Animals
 	if (!GC.getGameINLINE().isBarbarianPlayer(getID()) && !GC.getGameINLINE().isChurchPlayer(getID()) && !isNative() && !isEurope() && isAlive())
@@ -2132,9 +2151,13 @@ void CvPlayer::doTurn()
 		// TAC - AI Economy - Ray - END
 	}
 
+	EXTRA_POWER_CHECK
+
 	// R&R, ray, Bargaining - START
 	decreaseTimeNoTrade();
 	// R&R, ray, Bargaining - END
+
+	EXTRA_POWER_CHECK
 
 	// R&R Abandon City, ray START
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
@@ -2173,13 +2196,19 @@ void CvPlayer::doTurn()
 	}
 	// R&R, Little Extra Native Income, ray END
 
+	EXTRA_POWER_CHECK
+
 	verifyCivics();
 
 	doPrices();
 	doAfricaPrices(); // R&R, ray, Africa
 	doPortRoyalPrices(); // R&R, ray, Port Royal
 
+	EXTRA_POWER_CHECK
+
 	doEvents();
+
+	EXTRA_POWER_CHECK
 
 	interceptEuropeUnits();
 
@@ -2204,6 +2233,7 @@ void CvPlayer::doTurn()
 
 	gDLL->getEventReporterIFace()->endPlayerTurn( GC.getGameINLINE().getGameTurn(),  getID());
 
+	// keep the vanilla checkPower outside of EXTRA_POWER_CHECK. This way we will be informed if power is broken even without spending time on extra checks.
 	FAssert(checkPower(false));
 	FAssert(checkPopulation());
 }
@@ -18697,7 +18727,14 @@ bool CvPlayer::checkPower(bool bReset)
 	{
 		int iUnitPower = pUnit->getPower();
 		iPower += iUnitPower;
-		CvArea* pArea = pUnit->area();
+		// large rivers power fix - Nightinggale - start
+		// use the area the unit is placed on
+		// using CvUnit::area() might return the area from the plot next to the unit
+		// this happens with land units on large rivers and ships on land (cities)
+		//CvArea* pArea = pUnit->area();
+		CvPlot* pPlot = pUnit->plot();
+		CvArea* pArea = pPlot ? pPlot->area() : NULL;
+		// large rivers power fix - Nightinggale - end
 		if (pArea != NULL)
 		{
 			mapAreaPower[pArea->getID()] += iUnitPower;
