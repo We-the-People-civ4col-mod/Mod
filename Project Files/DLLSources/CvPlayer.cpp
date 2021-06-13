@@ -4265,7 +4265,8 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 							if (pHomeCity != NULL)
 							{
 							// bugfix end
-								pHomeCity->changeYieldStored(yieldToTrade, -iAmountToTrade);
+								// bugfix: ensure that the natives will not remove more yields than they have stored
+								pHomeCity->changeYieldStored(yieldToTrade, -std::min(iAmountToTrade, pHomeCity->getYieldStored(yieldToTrade)));
 							} // bugfix
 
 							//add message
