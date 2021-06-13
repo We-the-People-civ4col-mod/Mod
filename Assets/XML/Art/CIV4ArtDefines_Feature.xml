@@ -331,8 +331,8 @@
             <Type>ART_DEF_FEATURE_FOG</Type>
             <bAnimated>1</bAnimated>
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
-            <fScale>0.1</fScale>
-            <fInterfaceScale>0.1</fInterfaceScale>
+            <fScale>0.2</fScale>
+            <fInterfaceScale>0.2</fInterfaceScale>
             <Button>,Art/Interface/Buttons/Fog_Button.dds</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
@@ -349,8 +349,8 @@
             <Type>ART_DEF_FEATURE_SANDSTORM</Type>
             <bAnimated>1</bAnimated>
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
-            <fScale>0.1</fScale>
-            <fInterfaceScale>0.1</fInterfaceScale>
+            <fScale>0.2</fScale>
+            <fInterfaceScale>0.2</fInterfaceScale>
             <Button>,Art/Interface/Buttons/Sandstorm_Button.dds</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
