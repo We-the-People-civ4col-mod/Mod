@@ -2840,6 +2840,9 @@ bool CvGame::canDoControl(ControlTypes eControl)
 		}
 		break;
 
+	case CONTROL_ACHIEVE_SCREEN:
+		return false; // handled by CvEventManager.py
+
 	default:
 		FAssertMsg(false, "eControl did not match any valid options");
 		break;
