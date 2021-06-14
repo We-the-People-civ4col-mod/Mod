@@ -508,7 +508,7 @@
             <NIF>Art/Terrain/Resources/apple/banana.nif</NIF>
             <KFM/>
             <Button>,Art/atlasmapbonus.dds,3,4</Button>
-            <FontButtonIndex>49</FontButtonIndex>
+            <FontButtonIndex>50</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -519,7 +519,7 @@
             <NIF>Art/Terrain/Resources/lemon/lemqes.nif</NIF>
             <KFM/>
             <Button>,Art/atlasmapbonus.dds,1,8</Button>
-            <FontButtonIndex>49</FontButtonIndex>
+            <FontButtonIndex>51</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -530,7 +530,7 @@
             <NIF>Art/Terrain/Resources/Tomato/lemqes.nif</NIF>
             <KFM/>
             <Button>,Art/atlasmapbonus.dds,2,8</Button>
-            <FontButtonIndex>49</FontButtonIndex>
+            <FontButtonIndex>52</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -541,7 +541,7 @@
             <NIF>Art/Terrain/Resources/BeeHive/Banana.nif</NIF>
             <KFM/>
             <Button>,Art/atlasmapbonus.dds,6,8</Button>
-            <FontButtonIndex>49</FontButtonIndex>
+            <FontButtonIndex>53</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -552,7 +552,7 @@
             <NIF>Art/Terrain/Resources/Peanut/arachide.nif</NIF>
             <KFM>Art/Terrain/Resources/Peanut/arachide.kfm</KFM>
             <Button>,Art/atlasmapbonus.dds,5,8</Button>
-            <FontButtonIndex>49</FontButtonIndex>
+            <FontButtonIndex>54</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -563,7 +563,7 @@
             <NIF>Art/Terrain/Resources/Berries/lemqes.nif</NIF>
             <KFM/>
             <Button>,Art/atlasmapbonus.dds,3,8</Button>
-            <FontButtonIndex>49</FontButtonIndex>
+            <FontButtonIndex>55</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
