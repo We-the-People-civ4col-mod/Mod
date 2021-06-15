@@ -289,6 +289,14 @@
         <Spanish>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid)</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GAMEOPTION_REMOVE_WORLD_BUILDER</Tag>
+        <English>Remove World Builder</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMEOPTION_REMOVE_WORLD_BUILDER_HELP</Tag>
+        <English>Removes the ability to enter world builder.[NEWLINE]World builder is a known way to cheat and people might not want this option, be it for some sort of competitive gaming or just removal of the temptation.</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE</Tag>
         <English>Only 1 Colonist learning per Native Village</English>
         <German>Nur 1 Schüler gleichzeitig pro Ureinwohnerdorf</German>
