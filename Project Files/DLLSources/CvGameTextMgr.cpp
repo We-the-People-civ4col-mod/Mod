@@ -514,8 +514,28 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 			szString.append(gDLL->getText("TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP", iLbDRoundsWorked, GC.getUnitInfo(expertUnitType).getDescription()));
 			szString.append(SEPARATOR);
 		}
+
 	}
 	//WTP, ray add LbD Tunrs Worked and LbD Last Profession to Unit Help - END
+
+	// WTP, ray, saving 1 more Profession for Fisher Issue - START
+	if (pUnit->getLbDroundsBefore() != 0 && pUnit->getLastLbDProfessionBefore() != NO_PROFESSION)
+	{
+		const ProfessionTypes lastProfessionBefore = pUnit->getLastLbDProfessionBefore();
+		bool bCanBecomeExpert = pUnit->getUnitInfo().LbD_canBecomeExpert();
+		int iLbDRoundsWorkedBefore = pUnit->getLbDroundsBefore();
+		// Display Profession before Last for become Expert - with turns worked and Expert Unit in Text
+		if(bCanBecomeExpert && lastProfessionBefore != NO_PROFESSION && GC.getProfessionInfo(lastProfessionBefore).LbD_isUsed() && iLbDRoundsWorkedBefore >0)
+		{
+			int expertBefore = GC.getProfessionInfo(lastProfessionBefore).LbD_getExpert();
+			UnitTypes expertUnitTypeBefore = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCivilizationType()).getCivilizationUnits(expertBefore);
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP", iLbDRoundsWorkedBefore, GC.getUnitInfo(expertUnitTypeBefore).getDescription()));
+			szString.append(SEPARATOR);
+		}
+	
+	}
+	// WTP, ray, saving 1 more Profession for Fisher Issue - END
 
 	for (iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
 	{
@@ -8370,6 +8390,21 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 		szString.append(gDLL->getText("TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED", iLbDRoundsWorked, GC.getUnitInfo(expertUnitType).getDescription()));
 		szString.append(SEPARATOR);
 	}
+
+	// WTP, ray, saving 1 more Profession for Fisher Issue - START
+	const ProfessionTypes lastProfessionBefore = kUnit.getLastLbDProfessionBefore();
+	int iLbDRoundsWorkedBefore= kUnit.getLbDroundsBefore();
+
+	// Display for become Expert - with turns worked and Expert Unit in Text
+	if(bCanBecomeExpert && lastProfessionBefore != NO_PROFESSION && GC.getProfessionInfo(lastProfessionBefore).LbD_isUsed() && iLbDRoundsWorkedBefore >0)
+	{
+		int expertBefore = GC.getProfessionInfo(lastProfessionBefore).LbD_getExpert();
+		UnitTypes expertUnitTypeBefore = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCivilizationType()).getCivilizationUnits(expertBefore);
+		szString.append(NEWLINE);
+		szString.append(gDLL->getText("TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED", iLbDRoundsWorkedBefore, GC.getUnitInfo(expertUnitTypeBefore).getDescription()));
+		szString.append(SEPARATOR);
+	}
+
 
 	// Display for become Free - with Expert Unit in Text
 	if(bCanGetFree && lastProfession != NO_PROFESSION && GC.getProfessionInfo(lastProfession).LbD_isUsed() && iLbDRoundsWorked >0)

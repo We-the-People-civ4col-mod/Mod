@@ -289,6 +289,11 @@ public:
 	int getLastLbDProfession();
 	// TAC - LbD - Ray - END
 
+	// WTP, ray, saving 1 more Profession for Fisher Issue - START
+	int getLbDroundsBefore();
+	int getLastLbDProfessionBefore();
+	// WTP, ray, saving 1 more Profession for Fisher Issue - END
+
 	const CvArtInfoUnit* getArtInfo(int i) const;
 	std::string getButton() const;
 	std::string getFullLengthIcon() const;

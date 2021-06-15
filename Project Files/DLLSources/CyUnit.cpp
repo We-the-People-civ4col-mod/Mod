@@ -1110,8 +1110,21 @@ int CyUnit::getLastLbDProfession()
 {
 	return m_pUnit ? m_pUnit->getLastLbDProfession() : false;
 }
-
 // TAC - LbD - Ray - END
+
+
+// WTP, ray, saving 1 more Profession for Fisher Issue - START
+int CyUnit::getLbDroundsBefore()
+{
+	return m_pUnit ? m_pUnit->getLastLbDProfessionBefore() : 0;
+}
+
+
+int CyUnit::getLastLbDProfessionBefore()
+{
+	return m_pUnit ? m_pUnit->getLastLbDProfessionBefore() : false;
+}
+// WTP, ray, saving 1 more Profession for Fisher Issue - END
 
 // Python Helper Functions
 void CyUnit::centerCamera()

@@ -115,5 +115,10 @@ void CyUnitPythonInterface1(python::class_<CyUnit>& x)
 		.def("getLbDrounds", &CyUnit::getLbDrounds, "int ()")
 		.def("getLastLbDProfession", &CyUnit::getLastLbDProfession, "int ()")
 		// TAC - LbD - Ray - END
+
+		// WTP, ray, saving 1 more Profession for Fisher Issue - START
+		.def("getLbDroundsBefore", &CyUnit::getLbDroundsBefore, "int ()")
+		.def("getLastLbDProfessionBefore", &CyUnit::getLastLbDProfessionBefore, "int ()")
+		// WTP, ray, saving 1 more Profession for Fisher Issue -END
 		;
 }

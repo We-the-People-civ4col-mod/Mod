@@ -9430,6 +9430,29 @@ void CvUnit::setLastLbDProfession(ProfessionTypes eProfession)
 }
 // TAC - LbD - Ray - END
 
+// WTP, ray, saving 1 more Profession for Fisher Issue - START
+int CvUnit::getLbDroundsBefore() const
+{
+	return m_iLbDroundsBefore;
+}
+
+void CvUnit::setLbDroundsBefore(int newRounds)
+{
+	m_iLbDroundsBefore = newRounds;
+}
+
+ProfessionTypes CvUnit::getLastLbDProfessionBefore() const
+{
+	return m_eLastProfessionBefore;
+}
+
+void CvUnit::setLastLbDProfessionBefore(ProfessionTypes eProfession)
+{
+	m_eLastProfessionBefore = eProfession;
+}
+// WTP, ray, saving 1 more Profession for Fisher Issue - END
+
+
 
 int CvUnit::getIndex() const
 {
