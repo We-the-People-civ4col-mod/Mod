@@ -545,6 +545,14 @@ public:
 	void setLastLbDProfession(ProfessionTypes eProfession);
 	// TAC - LbD - Ray - END
 
+
+	// WTP, ray, saving 1 more Profession for Fisher Issue - START
+	int getLbDroundsBefore() const;
+	void setLbDroundsBefore(int newRounds);
+	ProfessionTypes getLastLbDProfessionBefore() const;
+	void setLastLbDProfessionBefore(ProfessionTypes eProfession);
+	// WTP, ray, saving 1 more Profession for Fisher Issue - END
+
 	bool canLeaveCity() const;
 	bool setProfession(ProfessionTypes eProfession, bool bForce = false, bool bRemoveYieldsFromCity = true);
 	bool canHaveProfession(ProfessionTypes eProfession, bool bBumpOther,  const CvPlot* pPlot = NULL, bool bForceCheck = false) const;
@@ -858,6 +866,11 @@ protected:
 	int m_iLbDrounds;
 	ProfessionTypes m_eLastProfession;
 	// TAC - LbD - Ray - END
+
+	// WTP, ray, saving 1 more Profession for Fisher Issue - START
+	int m_iLbDroundsBefore;
+	ProfessionTypes m_eLastProfessionBefore;
+	// WTP, ray, saving 1 more Profession for Fisher Issue - END
 
 	//ray18
 	int m_iMoneyToBuyLand;
