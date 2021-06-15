@@ -11074,16 +11074,15 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 	// there is a Profession change
 	if (currentProfession != lastProfession)
 	{
-
-		// old logic before Fisher Fix - Standard Case
-		// except storing Last Profession and the round already worked init
-		if (currentProfession != lastProfessionBefore)
+		if(isHuman())
 		{
-			//WTP, fix for LbD and Multiple Professions per Building / same Expert for Multiple Professions
-			convUnit->setLastLbDProfession(currentProfession);
+			// old logic before Fisher Fix - Standard Case
+			// except storing Last Profession and the round already worked init
+			if (currentProfession != lastProfessionBefore)
+			{
+				//WTP, fix for LbD and Multiple Professions per Building / same Expert for Multiple Professions
+				convUnit->setLastLbDProfession(currentProfession);
 			
-			if(isHuman())
-			{	
 				bool bSameExpert = (expert == GC.getProfessionInfo(lastProfession).LbD_getExpert());
 				//the Profession changes to another one with different Expert - thus we reset
 				if(!bSameExpert)
@@ -11103,23 +11102,33 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 					//convUnit->setLbDroundsBefore(workedRounds + 1);
 				}
 			}
-		}
-
-		// WTP, ray, saving 1 more Profession for Fisher Issue - START
-		// otherwise current Profession is the Profession before: in this case we need to restore old data and switch
-		else
-		{
-			// now we switch
-			// check just for safety - should never happen
-			if(lastProfessionBefore != NO_PROFESSION && lastProfession != NO_PROFESSION)
+		
+			// WTP, ray, saving 1 more Profession for Fisher Issue - START
+			// otherwise current Profession is the Profession before: in this case we need to restore old data and switch
+			else
 			{
-				convUnit->setLbDrounds(workedRoundsBefore +1);
-				convUnit->setLbDroundsBefore(workedRounds);
-				convUnit->setLastLbDProfession(lastProfessionBefore);
-				convUnit->setLastLbDProfessionBefore(lastProfession);
+				// now we switch
+				// check just for safety - should never happen
+				if(lastProfessionBefore != NO_PROFESSION && lastProfession != NO_PROFESSION)
+				{
+					convUnit->setLbDrounds(workedRoundsBefore +1);
+					convUnit->setLbDroundsBefore(workedRounds);
+					convUnit->setLastLbDProfession(lastProfessionBefore);
+					convUnit->setLastLbDProfessionBefore(lastProfession);
+				}
 			}
+			// WTP, ray, saving 1 more Profession for Fisher Issue - END
 		}
-		// WTP, ray, saving 1 more Profession for Fisher Issue - END
+		
+		// here little cheat for AI to cope with feature
+		// profession change does not reset worked rounds
+		else 
+		{
+			//set the Profession of course
+			convUnit->setLastLbDProfession(currentProfession);
+			//we always simply add worked Turns
+			convUnit->setLbDrounds(workedRounds + 1);
+		}
 	}
 
 	// it is the same Profession
