@@ -1,0 +1,57 @@
+# define line endings
+
+# user readable files
+*.txt lf
+*.ini lf
+*.bak lf
+*.xml lf
+
+# source code
+*.cpp lf
+*.c   lf
+*.hpp lf
+*.h   lf
+*.py  lf
+
+# project files and other compilation related files
+*Makefile lf
+*.project lf
+*.vcxproj lf
+*.sln     lf
+*.filters lf
+*.pl      lf
+*.pm      lf
+*.bat     lf
+
+# Custom file formats
+*.ColonizationWBSave lf
+
+# binary files
+*.ico binary
+*.dll binary
+*.exe binary
+
+# audio
+*.wav binary
+*.mp3 binary
+
+# graphics
+*.ani binary
+*.tga binary
+*.dds binary
+*.nif binary
+*.fkm binary
+*.kf  binary
+
+# git specific files
+.gitattributes lf  
+.gitignore     lf
+
+
+
+# export ignores
+# The following files will not make it into git exports (as in a zip of the git repository)
+
+.gitattributes export-ignore  
+.gitignore     export-ignore
+.ini.bak       export-ignore

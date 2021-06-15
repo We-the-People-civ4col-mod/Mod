@@ -442,6 +442,8 @@ BuildRelease:
 	@$(GIT) archive --format=zip --prefix=Assets/ --add-file=Assets/CvGameCoreDLL.dll --prefix= -9 --output "Project Files"/WeThePeople-temp.zip head
 	@cd "Project Files"
 	@echo $(RELEASE_VERSION)| $(PERL) bin\git_version.pl
+	@ECHO Generating checksums
+	@$(PERL) bin/checksums-zip.pl > checksums.txt
 
 ###
 ### test targets

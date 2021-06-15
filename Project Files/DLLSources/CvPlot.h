@@ -241,6 +241,11 @@ public:
 	//WTP, Nightinggale - Terrain locator - start
 	template <typename T>
 	bool hasNearbyPlotWith(const InfoArray<T>& kInfo, int iRange = 1, bool bEmptyReturnVal = true) const;
+
+	// function to avoid using an InfoArray, though it only works when searching for a single value
+	// use InfoArray if searching for multiple as it will be faster
+	template <typename T>
+	bool hasNearbyPlotWith(T eVal, int iRange = 1) const;
 	//WTP, Nightinggale - Terrain locator - start
 
 	DllExport int getFeatureVariety() const;
@@ -309,6 +314,7 @@ public:
 	DllExport bool isPeak() const;
 	void setPlotType(PlotTypes eNewValue, bool bRecalculate = true, bool bRebuildGraphics = true);
 
+	void setCoastline(bool bRecalculate = true, bool bRebuildGraphics = true); // autodetect lakes
 	DllExport TerrainTypes getTerrainType() const;
 	void setTerrainType(TerrainTypes eNewValue, bool bRecalculate = true, bool bRebuildGraphics = true);
 

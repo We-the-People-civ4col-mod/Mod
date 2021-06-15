@@ -7285,7 +7285,7 @@
             <Type>PROMOTION_EVENT_CARGOSPACE</Type>
             <Description>TXT_KEY_PROMOTION_EVENT_CARGOSPACE</Description>
             <Sound>AS2D_IF_LEVELUP</Sound>
-            <PromotionPrereq>PROMOTION_EVENT_CARGOSPACE</PromotionPrereq>
+            <PromotionPrereq>NONE</PromotionPrereq>
             <PromotionPrereqOr1>NONE</PromotionPrereqOr1>
             <PromotionPrereqOr2>NONE</PromotionPrereqOr2>
             <bLeader>0</bLeader>
@@ -7345,9 +7345,9 @@
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
             <bGraphicalOnly>0</bGraphicalOnly>
-            <bHideFromPedia>1</bHideFromPedia>
+            <bNotEarnedByXP>1</bNotEarnedByXP>
             <iHotKeyPriority>0</iHotKeyPriority>
-            <Button>,Art/colonization_promotions_atlas.dds,2,16</Button>
+            <Button>,Art/colonization_promotions_atlas.dds,4,15</Button>
         </PromotionInfo>
     </PromotionInfos>
 </Civ4PromotionInfos>

@@ -2346,6 +2346,17 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 		{
 			return false;
 		}
+		// features can't be placed on peaks
+		if (isPeak())
+		{
+			return false;
+		}
+
+		// make sure the terrain in question can have the wanted feature
+		if (!GC.getFeatureInfo(eResultFeature).isTerrain(getTerrainType()))
+		{
+			return false;
+		}
 
 		bValid = true;
 	}
@@ -4443,7 +4454,7 @@ bool CvPlot::hasNearbyPlotWith(const InfoArray<T>& kInfo, int iRange, bool bEmpt
 	CvMap& kMap = GC.getMapINLINE();
 	const int iPlotX = getX_INLINE();
 	const int iPlotY = getY_INLINE();
-	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, 1)
+	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, iRange)
 	{
 		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
 		if (pLoopPlot != NULL)
@@ -4462,6 +4473,27 @@ bool CvPlot::hasNearbyPlotWith(const InfoArray<T>& kInfo, int iRange, bool bEmpt
 				{
 					return true;
 				}
+			}
+		}
+	}
+	return false;
+}
+
+template <typename T>
+bool CvPlot::hasNearbyPlotWith(T eVal, int iRange) const
+{
+	CvMap& kMap = GC.getMapINLINE();
+	const int iPlotX = getX_INLINE();
+	const int iPlotY = getY_INLINE();
+	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, iRange)
+	{
+		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
+		if (pLoopPlot != NULL)
+		{
+			const T eLoopVal = pLoopPlot->getVariable((T)0);
+			if (eVal == eLoopVal)
+			{
+				return true;
 			}
 		}
 	}
@@ -5454,6 +5486,24 @@ TerrainTypes CvPlot::getVariable(TerrainTypes) const
 	return (TerrainTypes)m_eTerrainType;
 }
 
+// autodetect lakes - start
+void CvPlot::setCoastline(bool bRecalculate, bool bRebuildGraphics)
+{
+	CvMap& kMap = GC.getMapINLINE();
+	const int iPlotX = getX_INLINE();
+	const int iPlotY = getY_INLINE();
+	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, 1)
+	{
+		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
+		if (pLoopPlot != NULL && !pLoopPlot->isWater())
+		{
+			setTerrainType(TERRAIN_COAST, bRecalculate, bRebuildGraphics);
+			return;
+		}
+	}
+	setTerrainType(TERRAIN_OCEAN, bRecalculate, bRebuildGraphics);
+}
+// autodetect lakes - end
 
 void CvPlot::setTerrainType(TerrainTypes eNewValue, bool bRecalculate, bool bRebuildGraphics)
 {
@@ -9840,6 +9890,12 @@ void CvPlot::__template_declaration_func()
 	InfoArray<TerrainTypes> f;
 	hasNearbyPlotWith(f);
 
+	hasNearbyPlotWith(NO_BONUS);
+	hasNearbyPlotWith(NO_FEATURE);
+	hasNearbyPlotWith(NO_IMPROVEMENT);
+	hasNearbyPlotWith(NO_PLOT);
+	hasNearbyPlotWith(NO_ROUTE);
+	hasNearbyPlotWith(NO_TERRAIN);
 }
 
 // setting up cache after loading a game

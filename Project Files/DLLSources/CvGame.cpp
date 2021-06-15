@@ -2828,7 +2828,10 @@ bool CvGame::canDoControl(ControlTypes eControl)
 	case CONTROL_WORLD_BUILDER:
 		if (!(isGameMultiPlayer()) && GC.getInitCore().getAdminPassword().empty() && !gDLL->getInterfaceIFace()->isInAdvancedStart() && !gDLL->getInterfaceIFace()->isCombatFocus())
 		{
-			return true;
+			if (!isOption(GAMEOPTION_REMOVE_WORLD_BUILDER) || gDLL->getChtLvl() > 0) // added game option to remove the WB as requested on the forum - Nightinggale
+			{
+				return true;
+			}
 		}
 		break;
 
@@ -2839,6 +2842,9 @@ bool CvGame::canDoControl(ControlTypes eControl)
 			return true;
 		}
 		break;
+
+	case CONTROL_ACHIEVE_SCREEN:
+		return false; // handled by CvEventManager.py
 
 	default:
 		FAssertMsg(false, "eControl did not match any valid options");

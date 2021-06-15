@@ -88,15 +88,15 @@
 		<Tag>TXT_KEY_CREDITS_END</Tag>
 		<English>And we don't want to forget to thank Firaxis and 2Kgames for their masterpiece Civ4/BtS. We use a lot of material from these games.[NEWLINE]
 The copyright of these materials belongs to the respective owners. In most cases we got permission to use their materials but in some cases we didn't. We ask these authors to contact us as  to whether we can use their material. The copyright of the changes the TAC team has done to these materials belongs to TAC. The copyright of changes the RaR team has done to these materials belongs to RaR.[NEWLINE]
-The copyright of "Sid Meier's Civilisation IV: Colonization" belongs to Take Two Interactive. Sid Meier 's Civilization IV: Colonization, Civ, Civilization, 2K Games, the 2K-Logo, Firaxis Games, the Firaxis game logo and Take-Two Interactive Software are registered trademarks of Take-Two Interactive Software, Inc. Developed by Firaxis Games.[NEWLINE]
+The copyright of "Sid Meier's Civilisation IV: Colonization" belongs to Take Two Interactive. Sid Meier's Civilization IV: Colonization, Civ, Civilization, 2K Games, the 2K-Logo, Firaxis Games, the Firaxis game logo and Take-Two Interactive Software are registered trademarks of Take-Two Interactive Software, Inc. Developed by Firaxis Games.[NEWLINE]
 Some textures on our 3D-models have been created with images from CGTextures.com. These images may not be redistributed by default. Please visit www.cgtextures.com for more information.[NEWLINE]
 RaR is a non-commercial mod project. If you use or distribute RaR please pay attention to the copyright. We allow usage and distribution as long as RaR remains non-commercial.[NEWLINE]
-As a matter of course it is permitted to use RaR in an own mod project as long as the copyrights are not harmed, and it is a non-commercial project too. If you use RaR in an own mod project you have to make clear that you have done changes to the original TAC and to RaR. If you wish to use artwork, we could give you more informations about the creators so that you could mention them in the credits of your own modification.[NEWLINE]
+As a matter of course it is permitted to use RaR in an own mod project as long as the copyrights are not harmed, and it remains a non-commercial project. If you use RaR in an own mod project you have to make clear that you have done changes to the original TAC and to RaR. If you wish to use artwork, we could give you more information about the creators so that you can mention them in the credits of your own modification.[NEWLINE]
 You can contact TAC via civforum http://www.civforum.de/showthread.php?t=56991 or via email to writing.bull@gmx.de.[NEWLINE]
 You can contact RaR at CivFanatics: http://forums.civfanatics.com/forumdisplay.php?f=455[NEWLINE][NEWLINE]</English>
 		<French>Et nous n'oublions pas de remercier Firaxis et 2Kgames pour leur chef d'oeuvre Civ4/BtS. De nombreux éléments ont été repris de ces jeux.[NEWLINE]
 Les droits de reproduction de ces éléments appartiennent à leurs propriétaires respectifs. Dans la plupart des cas nous avons eu l'autorisation de les utiliser, sauf exception. Nous remercions les propriétaires de nous contacter pour nous donner ou non cette autorisation. Les droits liés à l'utilisation de TAC appartiennent à l'équipe de TAC. Les droits liés à l'utilisation de RAR appartiennent à l'équipe de RAR.[NEWLINE]
-Les droits de reproduction de "Sid Meier's Civilisation IV: Colonization" appartiennent à Take Two Interactive. Sid Meier 's Civilization IV: Colonization, Civ, Civilization, 2K Games, the 2K-Logo, Firaxis Games, the Firaxis game logo and Take-Two Interactive Software sont des marques déposées de Take-Two Interactive Software, Inc. Developé par Firaxis Games.[NEWLINE]
+Les droits de reproduction de "Sid Meier's Civilisation IV: Colonization" appartiennent à Take Two Interactive. Sid Meier's Civilization IV: Colonization, Civ, Civilization, 2K Games, the 2K-Logo, Firaxis Games, the Firaxis game logo and Take-Two Interactive Software sont des marques déposées de Take-Two Interactive Software, Inc. Developé par Firaxis Games.[NEWLINE]
 Quelques textures de nos modèles 3D ont été créées avec des images de CGTextures.com. Ces images ne sont pas redistribuées par défaut. Merci de visiter www.cgtextures.com pour plus d'information.[NEWLINE]
 RaR est un projet à but non commercial. Si vous utilisez ou distribuez RaR, merci de faire attention à ces droits de reproduction. Nous autorisons l'utilisation et la distribution qu'à la condition que RaR reste à usage non-commercial.[NEWLINE]
 Il est par ailleurs permis d'utiliser RAR pour d'autres projets de mods à la condition que les droits de reproduction soient respectés, et s'il s'agit également de projets non-commerciaux. Si vous utilisez RaR pour un projet personnel, vous devez spécifier qu'il s'agit d'une version modifiée des projets TAC et RaR. Si vous souhaitez utiliser des graphismes, nous pouvons vous donner plus d'informations sur leurs créateurs de façon à les mentionner dans vos crédits.[NEWLINE]
@@ -198,15 +198,15 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_5</Tag>
-		<English>The Indian Corn, or Maiz, proves the most useful Grain in the World; and had it not been for the Fruitfulness of this Species, it would have proved very difficult to have settled some of the Plantations in America.[NEWLINE]--- John Lawson, British explorer (1674 - 1711)</English>
+		<English>The Indian Corn, or Maize, proves the most useful Grain in the World; and had it not been for the Fruitfulness of this Species, it would have proved very difficult to have settled some of the Plantations in America.[NEWLINE]--- John Lawson, British explorer (1674 - 1711)</English>
 		<French>The Indian Corn, or Maiz, proves the most useful Grain in the World; and had it not been for the Fruitfulness of this Species, it would have proved very difficult to have settled some of the Plantations in America.[NEWLINE]--- John Lawson, British explorer (1674 - 1711)</French>
 		<German>The Indian Corn, or Maiz, proves the most useful Grain in the World; and had it not been for the Fruitfulness of this Species, it would have proved very difficult to have settled some of the Plantations in America.[NEWLINE]--- John Lawson, British explorer (1674 - 1711)</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_6</Tag>
-		<English>There are not enough Indians in the world to defeat the Seventh Cavalry.[NEWLINE]--- George Armstrong Custer, Seventh Cavalry Commander, prior to being routed by the Sioux at the Battle of Little Bighorn (June 25-26, 1876)</English>
-		<French>There are not enough Indians in the world to defeat the Seventh Cavalry.[NEWLINE]--- George Armstrong Custer, Seventh Cavalry Commander, prior to being routed by the Sioux at the Battle of Little Bighorn (June 25-26, 1876)</French>
-		<German>There are not enough Indians in the world to defeat the Seventh Cavalry.[NEWLINE]--- George Armstrong Custer, Seventh Cavalry Commander, prior to being routed by the Sioux at the Battle of Little Bighorn (June 25-26, 1876)</German>
+		<English>There are not enough Indians in the world to defeat the Seventh Cavalry.[NEWLINE]--- George Armstrong Custer, Seventh Cavalry Commander, prior to being massacred by the Sioux at the Battle of Little Bighorn (June 25-26, 1876)</English>
+		<French>There are not enough Indians in the world to defeat the Seventh Cavalry.[NEWLINE]--- George Armstrong Custer, Seventh Cavalry Commander, prior to being massacred by the Sioux at the Battle of Little Bighorn (June 25-26, 1876)</French>
+		<German>There are not enough Indians in the world to defeat the Seventh Cavalry.[NEWLINE]--- George Armstrong Custer, Seventh Cavalry Commander, prior to being massacred by the Sioux at the Battle of Little Bighorn (June 25-26, 1876)</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_7</Tag>
@@ -441,48 +441,36 @@ Viel Spass![NEWLINE]
 		<English>Hatuey, thinking a little, asked the religious man if Spaniards went to heaven. The religious man answered yes... The chief then said without further thought that he did not want to go there but to hell so as not to be where they were and where he would not see such cruel people. This is the name and honor that God and our faith have earned February 2, 1512[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552), on the execution of the Arawak cacique Hatuey</English>
 		<French>Hatuey, thinking a little, asked the religious man if Spaniards went to heaven. The religious man answered yes... The chief then said without further thought that he did not want to go there but to hell so as not to be where they were and where he would not see such cruel people. This is the name and honor that God and our faith have earned February 2, 1512[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552), on the execution of the Arawak cacique Hatuey</French>
 		<German>Hatuey, thinking a little, asked the religious man if Spaniards went to heaven. The religious man answered yes... The chief then said without further thought that he did not want to go there but to hell so as not to be where they were and where he would not see such cruel people. This is the name and honor that God and our faith have earned February 2, 1512[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552), on the execution of the Arawak cacique Hatuey</German>
-		<Italian>Hatuey, thinking a little, asked the religious man if Spaniards went to heaven. The religious man answered yes... The chief then said without further thought that he did not want to go there but to hell so as not to be where they were and where he would not see such cruel people. This is the name and honor that God and our faith have earned February 2, 1512[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552), on the execution of the Arawak cacique Hatuey</Italian>
-		<Spanish>Hatuey, thinking a little, asked the religious man if Spaniards went to heaven. The religious man answered yes... The chief then said without further thought that he did not want to go there but to hell so as not to be where they were and where he would not see such cruel people. This is the name and honor that God and our faith have earned February 2, 1512[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552), on the execution of the Arawak cacique Hatuey</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_46</Tag>
 		<English>And never have the Indians in all the Indies committed any act against the Spanish Christians, until those Christians have first and many times committed countless cruel aggressions against them or against neighboring nations.[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552)</English>
 		<French>And never have the Indians in all the Indies committed any act against the Spanish Christians, until those Christians have first and many times committed countless cruel aggressions against them or against neighboring nations.[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552)</French>
 		<German>And never have the Indians in all the Indies committed any act against the Spanish Christians, until those Christians have first and many times committed countless cruel aggressions against them or against neighboring nations.[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552)</German>
-		<Italian>And never have the Indians in all the Indies committed any act against the Spanish Christians, until those Christians have first and many times committed countless cruel aggressions against them or against neighboring nations.[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552)</Italian>
-		<Spanish>And never have the Indians in all the Indies committed any act against the Spanish Christians, until those Christians have first and many times committed countless cruel aggressions against them or against neighboring nations.[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_47</Tag>
 		<English>Their reason for killing and destroying such an infinite number of souls is that the Christians have an ultimate aim, which is to acquire gold, and to swell themselves with riches in a very brief time and thus rise to a high estate disproportionate to their merits.[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552)</English>
 		<French>Their reason for killing and destroying such an infinite number of souls is that the Christians have an ultimate aim, which is to acquire gold, and to swell themselves with riches in a very brief time and thus rise to a high estate disproportionate to their merits.[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552)</French>
 		<German>Their reason for killing and destroying such an infinite number of souls is that the Christians have an ultimate aim, which is to acquire gold, and to swell themselves with riches in a very brief time and thus rise to a high estate disproportionate to their merits.[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552)</German>
-		<Italian>Their reason for killing and destroying such an infinite number of souls is that the Christians have an ultimate aim, which is to acquire gold, and to swell themselves with riches in a very brief time and thus rise to a high estate disproportionate to their merits.[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552)</Italian>
-		<Spanish>Their reason for killing and destroying such an infinite number of souls is that the Christians have an ultimate aim, which is to acquire gold, and to swell themselves with riches in a very brief time and thus rise to a high estate disproportionate to their merits.[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_48</Tag>
 		<English>We can estimate very surely and truthfully that in the forty years that have passed, with the infernal actions of the Christians, there have been unjustly slain more than twelve million men, women, and children. In truth, I believe without trying to deceive myself that the number of the slain is more like fifteen million.[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552)</English>
 		<French>We can estimate very surely and truthfully that in the forty years that have passed, with the infernal actions of the Christians, there have been unjustly slain more than twelve million men, women, and children. In truth, I believe without trying to deceive myself that the number of the slain is more like fifteen million.[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552)</French>
 		<German>We can estimate very surely and truthfully that in the forty years that have passed, with the infernal actions of the Christians, there have been unjustly slain more than twelve million men, women, and children. In truth, I believe without trying to deceive myself that the number of the slain is more like fifteen million.[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552)</German>
-		<Italian>We can estimate very surely and truthfully that in the forty years that have passed, with the infernal actions of the Christians, there have been unjustly slain more than twelve million men, women, and children. In truth, I believe without trying to deceive myself that the number of the slain is more like fifteen million.[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552)</Italian>
-		<Spanish>We can estimate very surely and truthfully that in the forty years that have passed, with the infernal actions of the Christians, there have been unjustly slain more than twelve million men, women, and children. In truth, I believe without trying to deceive myself that the number of the slain is more like fifteen million.[NEWLINE]--- Bartholome de las Casas, "Account of the Devastation of the Indies" (1552)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_49</Tag>
 		<English>Compare then the blessings enjoyed by Spaniards of prudence, genius, magnanimity, temperance, humanity, and religion with those of the little men [the Indians] in whom you will scarcely find even vestiges of humanity. . . . How can we doubt that these people - so uncivilized, so barbaric, contaminated with so many impieties and obscenities - have been justly conquered?[NEWLINE]--- Juan Gines de Sepulveda, to Bartholome de las Casas, at the Valladolid debate (1550-1551)</English>
 		<French>Compare then the blessings enjoyed by Spaniards of prudence, genius, magnanimity, temperance, humanity, and religion with those of the little men [the Indians] in whom you will scarcely find even vestiges of humanity. . . . How can we doubt that these people - so uncivilized, so barbaric, contaminated with so many impieties and obscenities - have been justly conquered?[NEWLINE]--- Juan Gines de Sepulveda, to Bartholome de las Casas, at the Valladolid debate (1550-1551)</French>
 		<German>Compare then the blessings enjoyed by Spaniards of prudence, genius, magnanimity, temperance, humanity, and religion with those of the little men [the Indians] in whom you will scarcely find even vestiges of humanity. . . . How can we doubt that these people - so uncivilized, so barbaric, contaminated with so many impieties and obscenities - have been justly conquered?[NEWLINE]--- Juan Gines de Sepulveda, to Bartholome de las Casas, at the Valladolid debate (1550-1551)</German>
-		<Italian>Compare then the blessings enjoyed by Spaniards of prudence, genius, magnanimity, temperance, humanity, and religion with those of the little men [the Indians] in whom you will scarcely find even vestiges of humanity. . . . How can we doubt that these people - so uncivilized, so barbaric, contaminated with so many impieties and obscenities - have been justly conquered?[NEWLINE]--- Juan Gines de Sepulveda, to Bartholome de las Casas, at the Valladolid debate (1550-1551)</Italian>
-		<Spanish>Compare then the blessings enjoyed by Spaniards of prudence, genius, magnanimity, temperance, humanity, and religion with those of the little men [the Indians] in whom you will scarcely find even vestiges of humanity. . . . How can we doubt that these people - so uncivilized, so barbaric, contaminated with so many impieties and obscenities - have been justly conquered?[NEWLINE]--- Juan Gines de Sepulveda, to Bartholome de las Casas, at the Valladolid debate (1550-1551)</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUOTE_50</Tag>
 		<English>The Russians went to the settlement and carried out a terrible blood bath. Only a few [people] were able to flee to Angyahtalek in baidarkas; 300 Koniags were shot by the Russians. This happened in April. When our people revisited the place in the summer the stench of the corpses lying on the shore polluted the air so badly that none could stay there, and since then the island has been uninhabited. After this every chief had to surrender his children as hostages; I was saved only by my father's begging and many sea otter pelts.[NEWLINE]--- Arsenti Aminak, Alutiiq native, on the 1784 massacre of thousands of Alutiiq by Russian fur traders at Ala'uq</English>
 		<French>The Russians went to the settlement and carried out a terrible blood bath. Only a few [people] were able to flee to Angyahtalek in baidarkas; 300 Koniags were shot by the Russians. This happened in April. When our people revisited the place in the summer the stench of the corpses lying on the shore polluted the air so badly that none could stay there, and since then the island has been uninhabited. After this every chief had to surrender his children as hostages; I was saved only by my father's begging and many sea otter pelts.[NEWLINE]--- Arsenti Aminak, Alutiiq native, on the 1784 massacre of thousands of Alutiiq by Russian fur traders at Ala'uq</French>
 		<German>The Russians went to the settlement and carried out a terrible blood bath. Only a few [people] were able to flee to Angyahtalek in baidarkas; 300 Koniags were shot by the Russians. This happened in April. When our people revisited the place in the summer the stench of the corpses lying on the shore polluted the air so badly that none could stay there, and since then the island has been uninhabited. After this every chief had to surrender his children as hostages; I was saved only by my father's begging and many sea otter pelts.[NEWLINE]--- Arsenti Aminak, Alutiiq native, on the 1784 massacre of thousands of Alutiiq by Russian fur traders at Ala'uq</German>
-		<Italian>The Russians went to the settlement and carried out a terrible blood bath. Only a few [people] were able to flee to Angyahtalek in baidarkas; 300 Koniags were shot by the Russians. This happened in April. When our people revisited the place in the summer the stench of the corpses lying on the shore polluted the air so badly that none could stay there, and since then the island has been uninhabited. After this every chief had to surrender his children as hostages; I was saved only by my father's begging and many sea otter pelts.[NEWLINE]--- Arsenti Aminak, Alutiiq native, on the 1784 massacre of thousands of Alutiiq by Russian fur traders at Ala'uq</Italian>
-		<Spanish>The Russians went to the settlement and carried out a terrible blood bath. Only a few [people] were able to flee to Angyahtalek in baidarkas; 300 Koniags were shot by the Russians. This happened in April. When our people revisited the place in the summer the stench of the corpses lying on the shore polluted the air so badly that none could stay there, and since then the island has been uninhabited. After this every chief had to surrender his children as hostages; I was saved only by my father's begging and many sea otter pelts.[NEWLINE]--- Arsenti Aminak, Alutiiq native, on the 1784 massacre of thousands of Alutiiq by Russian fur traders at Ala'uq</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_1</Tag>
@@ -526,7 +514,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_6</Tag>
-		<English>Nay, so great was our famine, that a Salvage we slew, and buried, the poorer sort tooke him up againe and eat him, and so did divers one another boyled and stewed with roots and herbs: And one amongst the rest did kill his wife, powdered her, and had eaten part of her before it was knowne.[NEWLINE]--- A Trve declaration of the estate of the Colonie in Virginia, 1610</English>
+		<English>Nay, so great was our famine, that a Savage we slew, and buried, the poorer sort tooke him up againe and eat him, and so did divers one another boyled and stewed with roots and herbs: And one amongst the rest did kill his wife, powdered her, and had eaten part of her before it was knowne.[NEWLINE]--- A True Declaration of the Estate of the Colonie in Virginia, 1610</English>
 		<French>Si vous désirez modifier ce que vos colons produisent dans une case, effectuez un [double-clic] sur l'un d'entre eux et une liste des professions disponibles apparaîtra.</French>
 		<German>Unerträglicher Hunger trieb uns dazu, einen Indianer aus seinem Grabe zu schaufeln, in dem er drei Tage gelegen hatte, und ihn ganz zu verschlingen.[NEWLINE]--- Chronik der Bürgerversammlung von Virginia über die Gründerzeit von Jamestown</German>
 		<Italian>Se vuoi cambiare quello che sta producendo uno dei tuoi coloni in una casella, [clicca due volte] sul cittadino e apparirà una lista delle nuove professioni.</Italian>
@@ -558,7 +546,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_10</Tag>
-		<English>I challenge the warmest advocate for reconciliation, to shew, a single advantage that this continent can reap, by being connected with Great Britain.[NEWLINE]--- Thomas Paine, Common Sense</English>
+		<English>I challenge the warmest advocate for reconciliation to shew a single advantage that this continent can reap by being connected with Great Britain.[NEWLINE]--- Thomas Paine, Common Sense</English>
 		<French>Le canon est l'arme de siège ultime. Si vous avez l'intention de vous emparer d'une colonie ennemie, posséder un canon simplifiera grandement votre belliqueuse entreprise.</French>
 		<German>Ich fordere den wärmsten Verfechter einer Versöhnung mit England heraus, auch nur einen einzigen Vorteil zu nennen, den dieser Kontinent dadurch genießen könnte.[NEWLINE]--- Thomas Paine, in einer Streitschrift zur Unabhängigkeit Nordamerikas, 1776</German>
 		<Italian>I cannoni sono l'arma da assedio definitiva. Se decidi di conquistare un insediamento nemico avere un cannone renderà l'impresa molto più facile.</Italian>
@@ -566,7 +554,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_11</Tag>
-		<English>There is something very absurd, in supposing a continent to be perpetually governed by an island. In no instance hath nature made the satellite larger than its primary planet, and as England and America, with respect to each other, reverses the common order of nature, it is evident they belong to different systems: England to Europe, America to itself.[NEWLINE]--- Thomas Paine, Common Sense</English>
+		<English>There is something very absurd in supposing a continent to be perpetually governed by an island. In no instance hath nature made the satellite larger than its primary planet, and as England and America, with respect to each other, reverses the common order of nature, it is evident they belong to different systems: England to Europe, America to itself.[NEWLINE]--- Thomas Paine, Common Sense</English>
 		<French>Pour mettre en place une économie forte, vous devez attribuer des professions à vos unités. Ceci n'est possible qu'à partir de l'écran de colonie.</French>
 		<German>Alles, was richtig und vernünftig ist, plädiert für eine Trennung von England.[NEWLINE]--- Thomas Paine, in einer Streitschrift zur Unabhängigkeit Nordamerikas, 1776</German>
 		<Italian>Per costruire un'economia devi assegnare delle professioni alle tue unità, cosa che puoi fare solo nella schermata dell'insediamento.</Italian>
@@ -614,7 +602,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_17</Tag>
-		<English>The white men speak bad of the Indian, and took at him spitefully. But the Indian does not tell lies; Indians do not steal.[NEWLINE]--- Black Hawk's Surrender Speech, 1832</English>
+		<English>The white men speak bad of the Indian, and look at him spitefully. But the Indian does not tell lies; Indians do not steal.[NEWLINE]--- Black Hawk's Surrender Speech, 1832</English>
 		<French>Vous pouvez gagner des points militaires (et augmenter ainsi vos chances de récupérer un Père fondateur militaire) en remportant des combats, en vous emparant de colonies ennemies, ainsi qu'en construisant des barricades, des forts et des forteresses.</French>
 		<German>Die weißen Männer schauen verächtlich auf uns Indianer herab. Aber der Indianer lügt nicht. Indianer stehlen nicht. Indianer betrügen nicht.[NEWLINE]--- Häuptling Black Hawk, in seiner Kapitulationsrede 1832</German>
 		<Italian>Puoi guadagnare punti esercito (aumentando le probabilità di ottenere un Padre Fondatore militare) vincendo battaglie, conquistando insediamenti nemici e costruendo palizzate, forti e fortezze.</Italian>
@@ -622,7 +610,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_18</Tag>
-		<English>The white men do not scalp the head; but they do worse-they poison the heart, it is not pure with them.[NEWLINE]--- Black Hawk's Surrender Speech, 1832</English>
+		<English>The white men do not scalp the head; but they do worse - they poison the heart, it is not pure with them.[NEWLINE]--- Black Hawk's Surrender Speech, 1832</English>
 		<French>Vous gagnez des points de commerce (et augmentez ainsi vos chances d'obtenir un Père fondateur marchand) en vendant des marchandises aux indigènes ou en Europe. </French>
 		<German>Die weißen Männer skalpieren keine Köpfe; aber sie tun Schlimmeres.[NEWLINE]--- Häuptling Black Hawk, in seiner Kapitulationsrede 1832</German>
 		<Italian>Guadagni punti commercio (incrementando la possibilità che un Padre Fondatore commerciante si schieri al tuo fianco) vendendo beni all'Europa o ai nativi. </Italian>
@@ -630,7 +618,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_19</Tag>
-		<English>An Indian who is as bad as the white men, could not live in our nation; he would be put to death, and eat up by the wolves.[NEWLINE]--- Black Hawk's Surrender Speech, 1832</English>
+		<English>An Indian who is as bad as the white men could not live in our nation; he would be put to death and eaten up by the wolves.[NEWLINE]--- Black Hawk's Surrender Speech, 1832</English>
 		<French>Vous gagnez des points de foi (et augmentez ainsi vos chances de convaincre une Père fondateur religieux de vous rejoindre) en générant des croix et en établissant des missions dans les colonies indigènes.</French>
 		<German>Ein Indianer, der so schlecht ist wie die weißen Männer, könnte in unserem Volk nicht leben. Er würde getötet und den Wölfen zum Fraß vorgeworfen.[NEWLINE]--- Häuptling Black Hawk, in seiner Kapitulationsrede 1832</German>
 		<Italian>Puoi ottenere punti religione (e aumentare le probabilità di convincere un Padre Fondatore religioso a unirsi a te) generando croci e fondando missioni negli insediamenti nativi.</Italian>
@@ -702,7 +690,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_34</Tag>
-		<English>The Colonization Colonizopedia is rife with gameplay and historical information and should be your first stop should you have any questions. You can visit it by pressing [F12], clicking the "Colonizopedia" icon, or by selecting it on the Main Menu.</English>
+		<English>The "We The People" Colopedia is rich with gameplay and historical information. It should be your first stop for any questions. You can visit it by pressing [F12], clicking the "Colopedia" icon, or by selecting it on the Main Menu.</English>
 		<French>La Colonizopédia de Colonization est truffée d'informations historiques et de conseils de jeu. N'hésitez pas à la consulter dès que vous vous posez des questions. Pour ce faire, appuyez sur [F12], cliquez sur l'icône Colonizopédia ou sélectionnez-la dans le menu principal.</French>
 		<German>Die Colopädie steckt voller geschichtlicher und spielrelevanter Informationen. Wenn du eine Frage hast, solltest du also zuerst dort nachsehen. Du kannst die Colopädie per [F12], per Mausklick auf das "Colopädie"-Symbol oder durch Auswählen im Hauptmenü aufrufen.</German>
 		<Italian>La Colonizopedia di Colonization è ricca di informazioni storiche e di gioco e dovrebbe essere il primo posto in cui cercare delle risposte alle tue domande. Puoi visualizzarla premendo [F12], cliccando sull'icona "Colonizopedia", oppure selezionandola nel menu principale.</Italian>
@@ -734,7 +722,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_38</Tag>
-		<English>If you try to build a colony too close to a native settlement, the local chief may require you to purchase the land you are claiming. You can refuse to pay, of course, but this will certainly worsen relations between you and the natives.</English>
+		<English>If you try to build a colony too close to a Native settlement, the local chief may require you to purchase the land you are claiming. You can refuse to pay, of course, but this will certainly worsen relations between you and the Natives.</English>
 		<French>Si vous tentez de fonder une ville trop près d'une colonie indigène, il se peut que le chef local vous demande d'acheter les terres que vous tentez de récupérer. Vous pouvez refuser de payer, bien entendu, mais cela entachera vos relations avec les indigènes concernés.</French>
 		<German>Wenn Sie versuchen, eine Kolonie zu nahe an einer Ureinwohner-Siedlung zu errichten, bietet Ihnen der einheimische Häuptling vielleicht das Land, das Sie beanspruchen, zum Kauf an. Wenn Sie sich weigern zu zahlen, so hat das eindeutig negative Auswirkungen auf Ihre Beziehung zu den Ureinwohnern.</German>
 		<Italian>Se provi a costruire una colonia troppo vicino a un insediamento di nativi, il capo potrebbe chiederti di acquistare la terra che rivendichi. Puoi naturalmente rifiutarti di pagare, ma ciò peggiorerà le relazioni con i nativi.</Italian>
@@ -742,7 +730,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_39</Tag>
-		<English>Without a Warehouse, your settlement can only store 100 of any given type of good except Food. A Warehouse increases capacity to 200. A Warehouse Expansion ups your settlement's storage to 300. </English>
+		<English>Without a warehouse, your settlement can only store 100 of any given type of good except food. A warehouse increases capacity to 200. A warehouse expansion ups your settlement's storage to 300. </English>
 		<French>Sans entrepôt, une colonie ne peut stocker que 100 unités d'une marchandise, excepté pour la nourriture. Un entrepôt fait passer cette limite à 200 et une extension d'entrepôt à 300.</French>
 		<German>Ohne Lagerhaus kann Ihre Siedlung nur 100 Einheiten eines bestimmten Guts, mit Ausnahme von Nahrung, lagern. Ein Lagerhaus erhöht die Lagerkapazität Ihrer Siedlung auf 200, eine Lagerhauserweiterung auf 300.</German>
 		<Italian>Senza un magazzino, il tuo insediamento può mettere da parte solo 100 unità di qualsiasi bene, a parte il cibo. Un magazzino aumenta la capacità a 200. L'espansione del magazzino porta la capacità del tuo insediamento a 300. </Italian>
@@ -750,7 +738,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_40</Tag>
-		<English>When you recruit units from Europe who require goods to take up their profession, like the Veteran Soldier or Seasoned Scout, they come fully equipped with all the horses and weapons they require.</English>
+		<English>In Europe when you recruit units with a profession that needs goods, like the veteran soldier or seasoned scout, they come fully equipped with all the horses and weapons they require.</English>
 		<French>Lorsque vous recrutez en Europe des unités dont la profession nécessitent certaines marchandises (comme c'est le cas pour le soldat vétéran ou l'éclaireur aguerri), ils se joindront à vous avec tous les chevaux et/ou les armes requises.</French>
 		<German>Wenn Sie in Europa Einheiten rekrutieren, die Güter benötigen, um ihrem Beruf nachzugehen (etwa einen Offizier oder einen Routinierten Späher), werden diese Einheiten voll ausgerüstet - mit den notwendigen Pferden und Schusswaffen - geliefert.</German>
 		<Italian>Quando recluti in Europa unità che solitamente hanno bisogno di beni per intraprendere la professione, come per soldati veterani o scout esperti, arriveranno completamente equipaggiati con le armi e i cavalli di cui hanno bisogno.</Italian>
@@ -758,7 +746,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_41</Tag>
-		<English>When building your first settlement, it's always a good idea to build as close to your pathway to Europe as possible. That means your ships will spend less time in transit between colony and mother country, lessening the chance of being attacked by enemy ships.</English>
+		<English>When building your first settlement, it's always a good idea to keep as close to Europe as possible. Your ships will spend less time in transit between colony and mother country, lessening the chance of being attacked by enemy ships.</English>
 		<French>Lorsque vous fondez votre première colonie, il est toujours judicieux de le faire le plus près possible de votre voie d'accès à l'Europe. Ainsi, vos navires passeront moins de temps en mer entre votre colonie et votre patrie, réduisant le risque qu'ils soient assaillis par un navire ennemi.</French>
 		<German>Wenn Sie Ihre erste Siedlung errichten, ist es immer sinnvoll, das so nahe wie möglich an Ihrer Route nach Europa zu tun. Schiffe benötigen dann für die Reise zwischen Kolonie und Mutterland weniger lange und die Wahrscheinlichkeit sinkt, dass sie von gegnerischen Schiffen angegriffen werden.</German>
 		<Italian>Quando costruisci il tuo primo insediamento è sempre una buona idea costruirlo il più vicino possibile alla tua rotta per l'Europa. In questo modo le tue navi spenderanno meno tempo in viaggio tra la colonia e la madrepatria, riducendo le probabilità di venire attaccate dalle navi nemiche.</Italian>
@@ -766,7 +754,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_43</Tag>
-		<English>Galleons are the finest transport ships available and the only ships capable of transporting Treasure units to Europe.</English>
+		<English>Galleons are the finest transport ships available and the only ships capable of transporting treasure units to Europe.</English>
 		<French>Les galions sont les navires de transport disponibles les plus performants. Ils sont notamment les seuls à pouvoir transporter les trésors en Europe.</French>
 		<German>Galeonen sind die besten verfügbaren Transportschiffe und die einzigen, die Schatzeinheiten nach Europa bringen können.</German>
 		<Italian>I galeoni sono le migliori navi da trasporto disponibili e sono le uniche in grado di trasportare i tesori in Europa.</Italian>
@@ -774,7 +762,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_45</Tag>
-		<English>To load goods onto a transport, you must move the transport unit into the same tile as the goods and press the "Load Goods" icon. You can also do it from the "Transport" section of the Settlement screen.</English>
+		<English>To load goods onto a transport, you must move the transport unit into the same tile as the goods and press the "Load Goods" icon. You can also do it from the "Transport" section of the Settlement Screen.</English>
 		<French>Pour charger des marchandises dans une unité de transport, vous devez déplacer cette dernière sur la même case que les marchandises puis cliquer sur l'icône Charger des marchandises. Vous pouvez également le faire depuis l'espace Transport de l'écran de colonie.</French>
 		<German>Um Güter auf ein Transportmittel zu laden, müssen Sie die Transporteinheit auf dasselbe Geländefeld wie die Güter bewegen und auf "Beladen" klicken. Dies ist ebenfalls im Menü "Transport" im Siedlungsbildschirm möglich.</German>
 		<Italian>Per caricare dei beni su un trasporto devi prima spostare l'unità da trasporto nella stessa casella in cui si trovano i beni, per poi cliccare sull'icona "Carica beni". Puoi anche farlo dalla sezione "Trasporti" nella schermata dell'insediamento.</Italian>
@@ -790,7 +778,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_48</Tag>
-		<English>You cannot build a settlement directly next to another European settlement. You can, however, build directly next to a native settlement. You will have to pay for any of their land you claim, or risk incurring their wrath.</English>
+		<English>You cannot build a settlement directly next to another European settlement. You can, however, build directly next to a Native settlement. You will have to pay for any of their land you claim, or risk incurring their wrath.</English>
 		<French>Il est impossible d'accoler une nouvelle colonie à une autre colonie européenne. Vous pouvez, en revanche, l'accoler à une colonie indigène. Vous devrez alors leur acheter toute case de terre que vous désirez saisir, ou risquer de subir leur courroux.</French>
 		<German>Sie können nicht direkt neben einer anderen europäischen Siedlung eine Siedlung errichten. Direkt neben einer Ureinwohner-Siedlung ist dies zwar möglich, Sie müssen jedoch entweder für das Land, das Sie beanspruchen, bezahlen oder das Risiko eingehen, sich den Zorn der Ureinwohner zuzuziehen.</German>
 		<Italian>Non puoi costruire un insediamento adiacente a un altro insediamento europeo. Però puoi costruirlo direttamente adiacente a un insediamento nativo. Dovrai pagare per la terra che occupi, oppure rischiare di scatenare le loro ire.</Italian>
@@ -822,7 +810,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_4</Tag>
-		<English>Press [CTRL + S] to Save the Game and [CTRL + L] to Load a saved game.</English>
+		<English>Press [CTRL + S] to save the game and [CTRL + L] to load a saved game.</English>
 		<French>Appuyez sur [CTRL + S] pour sauvegarder la partie, sur [CTRL + L] pour charger une sauvegarde.</French>
 		<German>Drücken Sie [STRG + S], um das Spiel zu speichern. Mit [STRG + L] können Sie ein gespeichertes Spiel laden.</German>
 		<Italian>Premi [CTRL + S] per salvare la partita e [CTRL + L] per caricare una partita salvata.</Italian>
@@ -886,7 +874,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_12</Tag>
-		<English>Press [F12] to access the Civilopedia.</English>
+		<English>Press [F12] to access the Colopedia.</English>
 		<French>Appuyez sur [F12] pour ouvrir la Civilopédia.</French>
 		<German>Drücken Sie [F12], wenn Sie die Zivilopädie öffnen möchten.</German>
 		<Italian>Premi [F12] per accedere alla Civilopedia.</Italian>
@@ -1022,7 +1010,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_29</Tag>
-		<English>Press [ALT + Q] to retire from the game. In multiplayer this automatically gives control of your Colonies to an AI.</English>
+		<English>Press [ALT + Q] to retire from the game. In multiplayer this automatically gives control of your colonies to an AI.</English>
 		<French>Appuyez sur [ALT] + [Q] pour abandonner le jeu. En mode multijoueur, cette action confère automatiquement le contrôle de vos colonies à une IA.</French>
 		<German>Drücken Sie [ALT + Q], um das Spiel zu verlassen. Im Multiplayer-Modus übernimmt nun die KI die Kontrolle über Ihre Kolonien.</German>
 		<Italian>Premi [ALT + Q] per ritirarti dalla partita. Nel multigiocatore, il controllo della tua colonia viene automaticamente assegnato alla IA.</Italian>

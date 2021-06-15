@@ -118,6 +118,19 @@
 
 // modded
 #define PYCPPModule "CvCPPInterface"
+
+// CvPlayer::checkPower is too slow to call frequently.
+// However when it fails, it doesn't tell where it fails.
+// For this reason, compiling with extra power checks is a needed optional feature.
+// It will test frequently and a failure will indicate a bug since last check,
+//   giving modders a chance to figure out where it went wrong.
+// It's off unless CUSTOM_CFLAGS contains -DWITH_EXTRA_POWER_CHECKS (Makefile.settings)
+//   Nightinggale
+#ifdef WITH_EXTRA_POWER_CHECKS
+#define EXTRA_POWER_CHECK FAssert(checkPower(false));
+#else
+#define EXTRA_POWER_CHECK
+#endif
 //
 
 #endif	// CVDEFINES_H

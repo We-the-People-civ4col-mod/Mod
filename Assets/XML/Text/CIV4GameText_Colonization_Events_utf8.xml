@@ -2032,7 +2032,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GOVERNOR_LOVER</Tag>
-        <English>Milord, cleaners found letters in the Governor's room. They prove back in the Old World he had a secret lover among his Royal Majesty's servants. She was thrown out of the palace and is now living in poverty.</English>
+        <English>Milord, cleaners found letters in the Governor's room. They prove back in the Old World he had a secret lover among his Royal Majesty's servants. Thrown out of the palace, she now lives in poverty.</English>
         <French>Mylord, letters were found in the room of the Governor by the cleaning personell. They prove that he had a secret lover from the palace servants of his Royal Majesty in the Old World. She was thrown out of the palace and is now living in poverty.</French>
         <German>Mylord, es wurden vom Reinigungspersonal Briefe im Raum des Gouverneurs gefunden, die beweisen dass er eine geheime Geliebte unter den Palastbediensteten seiner Majestät in der alten Welt hatte. Sie wurde aus dem Palast geworfen und lebt nun in den Armenvierteln.</German>
     </TEXT>
@@ -2589,12 +2589,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
-        <English>Deliver this quantity of goods to Europe [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
+        <English>Trade this quantity of goods with Europe [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
         <German>Liefere die folgende Warenmenge nach Europa [COLOR_FONT_GOLD]bevor es eine andere Nation tut:[COLOR_REVERT] [NEWLINE]%D1_amount %F2_yield</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>
-        <English>Deliver the following quantity of goods to the colonies [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
+        <English>Trade the following quantity of goods to the colonies [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
         <German>Liefere die folgende Warenmenge in die Kolonien [COLOR_FONT_GOLD]bevor es eine andere Nation tut:[COLOR_REVERT] [NEWLINE]%D1_amount %F2_yield</German>
     </TEXT>
     <TEXT>

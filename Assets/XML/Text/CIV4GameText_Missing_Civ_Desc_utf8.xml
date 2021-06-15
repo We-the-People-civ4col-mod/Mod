@@ -80,7 +80,7 @@
 			<Plural>1</Plural>
 		</Italian>
 		<Spanish>
-			<Text>Pueblo Iroqu&#233;s</Text>
+			<Text>Pueblo Iroqués</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Spanish>
@@ -225,7 +225,7 @@
 		<Tag>TXT_KEY_CIV_CARIBS_DESC</Tag>
 		<English>Carib</English>
 		<French>
-			<Text>Cara&#239;bes</Text>
+			<Text>Caraïbes</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -445,7 +445,7 @@
 		<Tag>TXT_KEY_CIV_GUAYMI_DESC</Tag>
 		<English>Guaymi</English>
 		<French>
-			<Text>Guaym&#237;s</Text>
+			<Text>Guaymí</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>

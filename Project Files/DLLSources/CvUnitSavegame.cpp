@@ -32,6 +32,7 @@ const int defaultUnitTravelTimer = 0;
 const int defaultBadCityDefenderCount = 0;
 const int defaultPostCombatPlotIndex = -1;
 const int defaultLbDrounds = 0;
+const int defaultLbDroundsBefore = 0;
 const int defaultAmountForNativeTrade = 0;
 const int defaultMoneyToBuyLand = 0;
 
@@ -46,6 +47,7 @@ const bool defaultBarbarian = false;
 
 const ProfessionTypes defaultProfession = NO_PROFESSION;
 const ProfessionTypes defaultLastProfession = NO_PROFESSION;
+const ProfessionTypes defaultLastProfessionBefore = NO_PROFESSION;
 const PlayerTypes defaultPlayerToBuyLand = NO_PLAYER;
 const YieldTypes defaultYieldForNativeTrade = NO_YIELD;
 const UnitTravelStates defaultUnitTravelState = NO_UNIT_TRAVEL_STATE;
@@ -55,7 +57,7 @@ const UnitTypes defaultLeaderUnitType =  NO_UNIT;
 
 
 
-// 
+// add to the end for backward savegame compatibility
 enum SavegameVariableTypes
 {
 	UnitSave_END,
@@ -119,6 +121,9 @@ enum SavegameVariableTypes
 	UnitSave_HasRealPromotion,
 	UnitSave_FreePromotionCount,
 
+	UnitSave_LbDroundsBefore,
+	UnitSave_LastProfessionBefore,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -156,6 +161,7 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 	case UnitSave_BadCityDefenderCount: return "UnitSave_BadCityDefenderCount";
 	case UnitSave_PostCombatPlotIndex: return "UnitSave_PostCombatPlotIndex";
 	case UnitSave_LbDrounds: return "UnitSave_LbDrounds";
+	case UnitSave_LbDroundsBefore: return "UnitSave_LbDroundsBefore";
 	case UnitSave_AmountForNativeTrade: return "UnitSave_AmountForNativeTrade";
 	case UnitSave_MoneyToBuyLand: return "UnitSave_MoneyToBuyLand";
 
@@ -170,6 +176,7 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 
 	case UnitSave_Profession: return "UnitSave_Profession";
 	case UnitSave_LastProfession: return "UnitSave_LastProfession";
+	case UnitSave_LastProfessionBefore: return "UnitSave_LastProfessionBefore";
 	case UnitSave_PlayerToBuyLand: return "UnitSave_PlayerToBuyLand";
 	case UnitSave_YieldForNativeTrade: return "UnitSave_YieldForNativeTrade";
 	case UnitSave_UnitTravelState: return "UnitSave_UnitTravelState";
@@ -227,6 +234,7 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_iBadCityDefenderCount = defaultBadCityDefenderCount;
 	m_iPostCombatPlotIndex = defaultPostCombatPlotIndex;
 	m_iLbDrounds = defaultLbDrounds;
+	m_iLbDroundsBefore = defaultLbDroundsBefore;
 	m_iAmountForNativeTrade = defaultAmountForNativeTrade;
 	m_iMoneyToBuyLand = defaultMoneyToBuyLand;
 
@@ -241,6 +249,7 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 
 	m_eProfession = defaultProfession;
 	m_eLastProfession = defaultLastProfession;
+	m_eLastProfessionBefore = defaultLastProfessionBefore;
 	m_ePlayerToBuyLand = defaultPlayerToBuyLand;
 	m_eYieldForNativeTrade = defaultYieldForNativeTrade;
 	m_eUnitTravelState = defaultUnitTravelState;
@@ -318,6 +327,7 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_BadCityDefenderCount: reader.Discard<int>(); break;
 		case UnitSave_PostCombatPlotIndex: reader.Read(m_iPostCombatPlotIndex); break;
 		case UnitSave_LbDrounds: reader.Read(m_iLbDrounds); break;
+		case UnitSave_LbDroundsBefore: reader.Read(m_iLbDroundsBefore); break;
 		case UnitSave_AmountForNativeTrade: reader.Read(m_iAmountForNativeTrade); break;
 		case UnitSave_MoneyToBuyLand: reader.Read(m_iMoneyToBuyLand); break;
 
@@ -332,6 +342,7 @@ void CvUnit::read(CvSavegameReader reader)
 
 		case UnitSave_Profession: reader.Read(m_eProfession); break;
 		case UnitSave_LastProfession: reader.Read(m_eLastProfession); break;
+		case UnitSave_LastProfessionBefore: reader.Read(m_eLastProfessionBefore); break;
 		case UnitSave_PlayerToBuyLand: reader.Read(m_ePlayerToBuyLand); break;
 		case UnitSave_YieldForNativeTrade: reader.Read(m_eYieldForNativeTrade); break;
 		case UnitSave_UnitTravelState: reader.Read(m_eUnitTravelState); break;
@@ -413,6 +424,7 @@ void CvUnit::write(CvSavegameWriter writer)
 	writer.Write(UnitSave_PostCombatPlotIndex, m_iPostCombatPlotIndex, defaultPostCombatPlotIndex);
 
 	writer.Write(UnitSave_LbDrounds, m_iLbDrounds, defaultLbDrounds);
+	writer.Write(UnitSave_LbDroundsBefore, m_iLbDroundsBefore, defaultLbDroundsBefore);
 	writer.Write(UnitSave_AmountForNativeTrade, m_iAmountForNativeTrade, defaultAmountForNativeTrade);
 	writer.Write(UnitSave_MoneyToBuyLand, m_iMoneyToBuyLand, defaultMoneyToBuyLand);
 
@@ -427,6 +439,7 @@ void CvUnit::write(CvSavegameWriter writer)
 
 	writer.Write(UnitSave_Profession, m_eProfession, defaultProfession);
 	writer.Write(UnitSave_LastProfession, m_eLastProfession, defaultLastProfession);
+	writer.Write(UnitSave_LastProfessionBefore, m_eLastProfessionBefore, defaultLastProfessionBefore);
 	writer.Write(UnitSave_PlayerToBuyLand, m_ePlayerToBuyLand, defaultPlayerToBuyLand);
 	writer.Write(UnitSave_YieldForNativeTrade, m_eYieldForNativeTrade, defaultYieldForNativeTrade);
 	writer.Write(UnitSave_UnitTravelState, m_eUnitTravelState, defaultUnitTravelState);

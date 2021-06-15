@@ -9,55 +9,48 @@
         <Tag>TXT_KEY_UNIT_ANIMAL_STRATEGY</Tag>
         <English>????</English>
     </TEXT>
-    <TEXT>
+	<TEXT>
         <Tag>TXT_KEY_CITY_OCCUPATION_ENDED</Tag>
-        <English>The unrest in %s1_city has ended now. All business is back to normal.</English>
-        <French>The unrest in %s1_city has ended now. All business it back to normal.</French>
-        <German>Die Unruhen in %s1_city sind vorrüber. Das Tagesgeschäft in der Stadt nimmt wieder seinen normalen Lauf.</German>
-        <Italian>The unrest in %s1_city has ended now. All business it back to normal.</Italian>
-        <Spanish>The unrest in %s1_city has ended now. All business it back to normal.</Spanish>
+        <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]The unrest has ended now. All business it back to normal.</English>
+        <German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Die Unruhen sind vorrüber. Das Leben in der Stadt nimmt wieder seinen normalen Lauf.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_SHIP_ESCAPED_CITY</Tag>
-        <English>The ship called %s1_UnitName could escape %s2_CityName when it was captured by the enemy.</English>
-        <French>The ship %s1_UnitName could escape %s2_CityName when it was captured by the enemy.</French>
-        <German>Das Schiff %s1_UnitName konnte vor der Einnahme von %s2_CityName durch den Feind noch fliehen.</German>
-        <Italian>The ship %s1_UnitName could escape %s2_CityName when it was captured by the enemy.</Italian>
-        <Spanish>The ship %s1_UnitName could escape %s2_CityName when it was captured by the enemy.</Spanish>
+        <English>Milord, the ship called [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] could escape the seizure of [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] by the enemy.</English>
+        <German>Milord, Euer Schiff [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] konnte vor der Einnahme von [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] durch den Feind noch Segel setzen und auf hohe See entkommen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ENEMY_SHIP_ESCAPED_CITY</Tag>
-        <English>The ship %s1_UnitName of the enemy could escape %s2_CityName when it was captured by your troops.</English>
-        <French>The ship %s1_UnitName of the enemy could escape %s2_CityName when it was captured by your troops.</French>
-        <German>Das feindliche Schiff %s1_UnitName konnte vor der Einnahme von %s2_CityName durch eure Truppen noch fliehen.</German>
-        <Italian>The ship %s1_UnitName of the enemy could escape %s2_CityName when it was captured by your troops.</Italian>
-        <Spanish>The ship %s1_UnitName of the enemy could escape %s2_CityName when it was captured by your troops.</Spanish>
+        <English>Milord, the enemy ship [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] could escape when your troops captured [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</English>
+        <German>Milord, das feindliche Schiff [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] konnte vor der Einnahme von [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] den Hafen verlassen und so der Beschlagnahme durch Eure Truppen entgehen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_TIME_NO_TRADE</Tag>
-        <English>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Turns)[COLOR_REVERT]</English>
-        <French>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Turns)[COLOR_REVERT]</French>
+        <English>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns turns)[COLOR_REVERT]</English>
+        <French>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns tours)[COLOR_REVERT]</French>
         <German>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Runden)[COLOR_REVERT]</German>
-        <Italian>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Turns)[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Turns)[COLOR_REVERT]</Spanish>
+        <Italian>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Turni)[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns turnos)[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER</Tag>
-        <English>Reinforcement troops have arrived from our King after another king declared war on us.</English>
-        <French>Reinforcement troops of our king have arrived because we were declared War on by the order of another king.</French>
-        <German>Unterstützungstruppen unseres Königs sind eingetroffen, da man us auf Befehl eines anderen Königs den Krieg erklärt hat.</German>
-        <Italian>Reinforcement troops of our king have arrived because we were declared War on by the order of another king.</Italian>
-        <Spanish>Reinforcement troops of our king have arrived because we were declared War on by the order of another king.</Spanish>
+        <English>Milord, the reinforcement troops sent by His Majesty have arrived because we were declared War on by the order of another king.</English>
+        <German>Milord, die Verstärkungstruppen unseres Königs sind eingetroffen, da man uns auf Befehl eines anderen Königs den Krieg erklärt hat.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_FREE_TURNS_WORKED</Tag>
-        <English>Working to gain freedom since: %d1_turns Turns</English>
-        <German>Arbeitet für seine Freiheit seit: %d1_turns Runden</German>
+        <English>Working to gain freedom since : %d1_turns turns</English>
+        <German>Arbeitet für seine Freiheit seit : %d1_turns Runden</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED</Tag>
-        <English>Working to become [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] since: %d1_turns Turns</English>
-        <German>Arbeitet darauf hin [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden seit: %d1_turns Runden</German>
+        <English>Working to become [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] since : %d1_turns turns</English>
+        <German>Arbeitet darauf hin [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden seit : %d1_turns Runden</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP</Tag>
+        <English>Worked to become [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Turns</English>
+        <German>Arbeitet um [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Runden</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP</Tag>
@@ -66,32 +59,32 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP</Tag>
-        <English>Production modifier of %d1_NewVal%%:</English>
-        <German>Produktionsmodifikator von %d1_NewVal%%:</German>
+        <English>Production modifier of %d1_NewVal%% :</English>
+        <German>Produktionsmodifikator von %d1_NewVal%% :</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRODUCTION_PLUS_MODIFIER_CITIZENHELP</Tag>
-        <English>Production modifier of %d1_NewVal:</English>
-        <German>Produktionsmodifikator von %d1_NewVal:</German>
+        <English>Production modifier of %d1_NewVal :</English>
+        <German>Produktionsmodifikator von %d1_NewVal :</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVES_NOT_WILLING_ALREADY_COLONIST_LEARNING</Tag>
-        <English>Sire, another European is already living and learning in %s1_city. The Natives do not want to take a second one. [NEWLINE] We should come back once that first European finishes his time in the village.</English>
-        <German>Sire, es lebt und lernt bereits ein anderer Europäer in %s1_city. Die Ureinwohner möchten keinen weiteren aufnehmen. [NEWLINE] Wir sollten zurückkehren, wenn der andere Europäer seine Zeit im Dorf beendet hat.</German>
+        <English>Milord, another European is already living and learning in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. The Natives do not want to take a second one.[NEWLINE]We should come back when that other European has finished his time in the village.</English>
+        <German>Milord, es lebt und lernt bereits ein anderer Europäer in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Die Ureinwohner möchten vorerst keinen weiteren aufnehmen.[NEWLINE]Wir sollten zurückkehren, wenn der andere Europäer seine Zeit im Dorf beendet hat.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NO_MORE_SETTLER</Tag>
-        <English>Since %s1_player has no more settlements and also no more settlers, his Majesty has decided to equip some colonists in Europe as settler. Of course this comes with a tax increase.</English>
-        <German>Da %s1_player keine weiteren Siedlungen und auch keine Siedler mehr hat, hat Ihre Majestät entschieden in Europe einige Kolonisten als Siedler auszurüsten. Dies beinhaltet natürlich eine Steuererhöung.</German>
+        <English>Since [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] has no more settlements and also no more settlers, His Majesty has decided to equip some colonists in Europe as settlers. Of course, this comes with a tax increase.</English>
+        <German>Da [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] keine weiteren Siedlungen und auch keine Siedler mehr hat, hat Seine Majestät entschieden, in Europe einige Kolonisten als Siedler auszurüsten. Das ist natürlich mit einer Steuererhöung verbunden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_FAIL</Tag>
-        <English>The Natives in %s1_CityName have however not killed your Missionary for insulting their gods. But they have heavily beaten him and left him completely broken and disillusioned.</English>
-        <German>Die Ureinwohner in %s1_CityName haben euren Missionar jedoch nicht aufgrund der Beleidigung ihrer Götter getötet. Sie haben ihn aber schwer verprügelt und dadurch komplett gebrochen und desillusioiert.</German>
+        <English>Milord, your Missionary failed to establish a mission in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. The Natives have however not killed him for insulting their gods, but they have heavily beaten him and left him completely broken and disillusioned.</English>
+        <German>Milord, Euer Missionar ist dabei gescheitert, die Ureinwohner in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] zu missionieren. Trotz der Beleidigung ihrer Götter haben die Ureinwohner Euren Missionar nicht getötet, sondern sie haben ihn nur schwer verprügelt, so daß er nun komplett gebrochen und desillusioniert ist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_MISSION_REPLACED</Tag>
-        <English>The Natives in %s1_CityName have beaten and chased away your Missionary, since a Missionary from another Nation took his place and accused him of hereticism and other devlish deeds.</English>
-        <German>Die Ureinwohner von %s1_CityName haben euren Missionar mit Prügeln aus dem Dorf verjagt, da ein Missionar einer anderen Nation seinen Platz eingenommen hat und ihn der Teufelei beschuldigte.</German>
+        <English>Milord, the Natives in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] have beaten and chased away your Missionary, since a Missionary from another Nation took his place and accused him of hereticism and other devlish deeds.</English>
+        <German>Milord, die Ureinwohner von [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] haben Euren Missionar mit Prügeln aus dem Dorf verjagt, nachdem ein Missionar einer anderen Nation seinen Platz eingenommen hat und ihn der Teufelsanbetung beschuldigte.</German>
     </TEXT>
 </Civ4GameText>

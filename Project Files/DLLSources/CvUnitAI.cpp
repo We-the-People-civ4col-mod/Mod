@@ -272,26 +272,30 @@ bool CvUnitAI::AI_update()
 				{
 					AI_imperialCannonMove();
 				}
-				//WTP, Protected Hostile Goodies - START
-				if (GC.getGameINLINE().getBarbarianPlayer() == getOwnerINLINE())
+
+				if (canMove()) // don't try to attack if the unit already used all movement points - Nightinggale
 				{
-					if(plot()->isGoodyForSpawningHostileCriminals() || plot()->isGoodyForSpawningHostileNatives())
+					//WTP, Protected Hostile Goodies - START
+					if (GC.getGameINLINE().getBarbarianPlayer() == getOwnerINLINE())
 					{
-						if(plot()->getNumDefenders(getOwnerINLINE()) <= 2)
+						if (plot()->isGoodyForSpawningHostileCriminals() || plot()->isGoodyForSpawningHostileNatives())
 						{
-							getGroup()->pushMission(MISSION_FORTIFY);
-							return true;
+							if (plot()->getNumDefenders(getOwnerINLINE()) <= 2)
+							{
+								getGroup()->pushMission(MISSION_FORTIFY);
+								return true;
+							}
 						}
+						AI_attackCityMove();
 					}
-					AI_attackCityMove();
-				}
-				//WTP, Protected Hostile Goodies - END
-				else
-				{
-					// TAC - AI Attack City - koma13 - START
-					//AI_offensiveMove();
-					AI_attackCityMove();
-					// TAC - AI Attack City - koma13 - END
+					//WTP, Protected Hostile Goodies - END
+					else
+					{
+						// TAC - AI Attack City - koma13 - START
+						//AI_offensiveMove();
+						AI_attackCityMove();
+						// TAC - AI Attack City - koma13 - END
+					}
 				}
 				break;
 				
@@ -13806,6 +13810,7 @@ bool CvUnitAI::AI_anyAttack(int iRange, int iOddsThreshold, int iMinStack, bool 
 {
 	PROFILE_FUNC();
 
+	FAssert(canMove());
 	FAssert(canMove());
 
 	int iSearchRange = bFollow ? 1 : AI_searchRange(iRange);

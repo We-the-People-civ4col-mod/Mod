@@ -13352,6 +13352,13 @@ bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML()); // Move back up to Parent
 		return false;
 	}
+
+	if (strcmp(szLanguage, "English") == 0)
+	{
+		// bLanguageFound is used for non-western languages
+		// do not trigger while reading the English fallback string
+		bLanguageFound = false;
+	}
 	
 	if (readString(pXML, wszTextVal, "Text", bUTF8, szFileName, bLanguageFound, getType()))
 	{
@@ -13466,106 +13473,134 @@ bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const
 			if (!bLanguageFound && getCodePage() != 1252)
 			{
 				// Convert to ASCII if possible as 0x7F and below is the same for all code pages
-				if (iBuffer == 0xB4)
+				switch (iBuffer)
 				{
-					iChar = 0x60;
-				}
-				// uppercase
-				else if (iBuffer >= 0xC0 && iBuffer <= 0xC6)
-				{
-					iChar = 'A';
-				}
-				else if (iBuffer == 0xC7)
-				{
-					iChar = 'C';
-				}
-				else if (iBuffer >= 0xC8 && iBuffer <= 0xCB)
-				{
-					iChar = 'E';
-				}
-				else if (iBuffer >= 0xCC && iBuffer <= 0xCF)
-				{
-					iChar = 'I';
-				}
-				else if (iBuffer == 0xD0)
-				{
-					iChar = 'D';
-				}
-				else if (iBuffer == 0xD1)
-				{
-					iChar = 'N';
-				}
-				else if (iBuffer >= 0xD2 && iBuffer <= 0xD8 && iBuffer != 0xD7)
-				{
-					iChar = 'O';
-				}
-				else if (iBuffer >= 0xD9 && iBuffer <= 0xDC)
-				{
-					iChar = 'U';
-				}
-				else if (iBuffer == 0xDD)
-				{
-					iChar = 'Y';
-				}
-				else if (iBuffer == 0xDE)
-				{
+				case 0xB4:
+					wszTextVal.append(L"'");
+					continue;
+				case 0xC0:
+				case 0xC1:
+				case 0xC2:
+				case 0xC3:
+				case 0xC4:
+				case 0xC5:
+				case 0xC6:
+					wszTextVal.append(L"A");
+					continue;
+				case 0xC7:
+					wszTextVal.append(L"C");
+					continue;
+				case 0xC8:
+				case 0xC9:
+				case 0xCA:
+				case 0xCB:
+					wszTextVal.append(L"E");
+					continue;
+				case 0xCC:
+				case 0xCD:
+				case 0xCE:
+				case 0xCF:
+					wszTextVal.append(L"I");
+					continue;
+
+				case 0xD0:
+					wszTextVal.append(L"D");
+					continue;
+				case 0xD1:
+					wszTextVal.append(L"N");
+					continue;
+				case 0xD2:
+				case 0xD3:
+				case 0xD4:
+				case 0xD5:
+				case 0xD6:
+					wszTextVal.append(L"O");
+					continue;
+				case 0xD7:
+					wszTextVal.append(L"x");
+					continue;
+				case 0xD8:
+					wszTextVal.append(L"O");
+					continue;
+				case 0xD9:
+				case 0xDA:
+				case 0xDB:
+				case 0xDC:
+					wszTextVal.append(L"U");
+					continue;
+				case 0xDD:
+					wszTextVal.append(L"Y");
+					continue;
+				case 0xDE:
 					wszTextVal.append(L"Th");
 					continue;
-				}
-				else if (iBuffer == 0xDF)
-				{
-					wszTextVal.append(L"Ss");
-					continue;
-				}
-				// lowercase
-				else if (iBuffer >= 0xE0 && iBuffer <= 0xE6)
-				{
-					iChar = 'a';
-				}
-				else if (iBuffer == 0xE7)
-				{
-					iChar = 'c';
-				}
-				else if (iBuffer >= 0xE8 && iBuffer <= 0xEB)
-				{
-					iChar = 'e';
-				}
-				else if (iBuffer >= 0xEC && iBuffer <= 0xEF)
-				{
-					iChar = 'i';
-				}
-				else if (iBuffer == 0xF0)
-				{
-					iChar = 'd';
-				}
-				else if (iBuffer == 0xF1)
-				{
-					iChar = 'n';
-				}
-				else if ((iBuffer >= 0xF2 && iBuffer <= 0xF6) || iBuffer == 0xF8)
-				{
-					iChar = 'o';
-				}
-				else if (iBuffer >= 0xF9 && iBuffer <= 0xFC)
-				{
-					iChar = 'u';
-				}
-				else if (iBuffer == 0xFD)
-				{
-					iChar = 'y';
-				}
-				else if (iBuffer == 0xFE)
-				{
-					wszTextVal.append(L"th");
-					continue;
-				}
-				else if (iBuffer == 0xFF)
-				{
+				case 0xDF:
 					wszTextVal.append(L"ss");
 					continue;
+
+				case 0xE0:
+				case 0xE1:
+				case 0xE2:
+				case 0xE3:
+				case 0xE4:
+				case 0xE5:
+				case 0xE6:
+					wszTextVal.append(L"a");
+					continue;
+				case 0xE7:
+					wszTextVal.append(L"c");
+					continue;
+				case 0xE8:
+				case 0xE9:
+				case 0xEA:
+				case 0xEB:
+					wszTextVal.append(L"e");
+					continue;
+				case 0xEC:
+				case 0xED:
+				case 0xEE:
+				case 0xEF:
+					wszTextVal.append(L"i");
+					continue;
+
+				case 0xF0:
+					wszTextVal.append(L"d");
+					continue;
+				case 0xF1:
+					wszTextVal.append(L"n");
+					continue;
+				case 0xF2:
+				case 0xF3:
+				case 0xF4:
+				case 0xF5:
+				case 0xF6:
+					wszTextVal.append(L"o");
+					continue;
+				case 0xF7:
+					wszTextVal.append(L"-");
+					continue;
+				case 0xF8:
+					wszTextVal.append(L"o");
+					continue;
+				case 0xF9:
+				case 0xFA:
+				case 0xFB:
+				case 0xFC:
+					wszTextVal.append(L"u");
+					continue;
+				case 0xFD:
+					wszTextVal.append(L"y");
+					continue;
+				case 0xFE:
+					wszTextVal.append(L"th");
+					continue;
+				case 0xFF:
+					wszTextVal.append(L"y");
+					continue;
+
 				}
 			}
-			else
+
 			{
 				CvString szBuffer;
 				szBuffer.Convert(wszTextVal);

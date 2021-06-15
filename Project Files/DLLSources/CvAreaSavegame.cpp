@@ -160,7 +160,7 @@ void CvArea::write(CvSavegameWriter writer)
 	writer.Write(Save_UnitsPerPlayer       , m_em_iUnitsPerPlayer        );
 	writer.Write(Save_CitiesPerPlayer      , m_em_iCitiesPerPlayer       );
 	writer.Write(Save_PopulationPerPlayer  , m_em_iPopulationPerPlayer   );
-	writer.Write(Save_Power                , m_em_iPower                 );
+	//writer.Write(Save_Power                , m_em_iPower                 ); // recalculated on load
 	writer.Write(Save_BestFoundValue       , m_em_iBestFoundValue        );
 	writer.Write(Save_NumRevealedTiles     , m_em_iNumRevealedTiles      );
 	writer.Write(Save_AreaAIType           , m_em_eAreaAIType            );
