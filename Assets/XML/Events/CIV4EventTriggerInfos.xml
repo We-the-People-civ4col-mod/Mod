@@ -11589,7 +11589,7 @@
             <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>0</bGlobal>
-            <bPickPlayer>0</bPickPlayer>
+            <bPickPlayer>1</bPickPlayer>
             <bOtherPlayerWar>0</bOtherPlayerWar>
             <bOtherPlayerAI>0</bOtherPlayerAI>
             <bOtherPlayerNative>0</bOtherPlayerNative>
