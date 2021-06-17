@@ -7386,29 +7386,58 @@ bool CvPlayerAI::AI_doDiploDemandTribute(PlayerTypes ePlayer)
 	return true;
 }
 
-/** NBMOD TAX **/
-
-/***************************************************************************/
-/**                                                                       **/
-/** int CvPlayerAI::NBMOD_GetGoldAsk(int iWantedGold)                     **/
-/**                                                                       **/
-/** Diese Methode �berwacht die Gold-H�chstgrenze.                        **/
-/**                                                                       **/
-/** Parameter:                                                            **/
-/**  - ePlayer     = der Spieler                                          **/
-/**                                                                       **/
-/***************************************************************************/
-
+//WTP, ray, factor Population into this
+//WTP, ray, method completely rewritten
 int CvPlayerAI::NBMOD_GetGoldAsk(PlayerTypes ePlayer) const
 {
-	int iGold = GET_PLAYER(ePlayer).getGold(); // aktuellen Goldstand ermitteln
-	int iMaxGold = iGold * GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).NBMOD_GetMaxGoldAskPercent() / 100;;
-	int iMinGold = iGold * GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).NBMOD_GetMinGoldAskPercent() / 100;;
-	int iWantedGold = 0;
+	// get current gold of player, needed for safety check
+	int iMaxGoldPlayerHas = GET_PLAYER(ePlayer).getGold();
 
-	iMaxGold = iMaxGold - iMinGold;
+	// first get the population and Attitude
+	int iPopulation = GET_PLAYER(ePlayer).getTotalPopulation();
+	int kingAttitude = AI_getAttitude(ePlayer);
 
-	iWantedGold = iMinGold + iMaxGold * GC.getGameINLINE().getSorenRandNum(100, "Ask for pinky gold percent") / 100;
+	// now we factor in GameSpeed, HandyCap and XML balancing values
+	int iGameSpeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent(); // must later be divieded by 100
+	int iHandiCapMod = GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).NBMOD_GetMaxGoldAskPercent();
+	int iMinKissPinkyPopulationGold = iPopulation * GC.getDefineINT("MIN_KISS_PINKY_GOLD_PER_POPULATION");
+	int iMaxKissPinkyPopulationGold = iPopulation * GC.getDefineINT("MAX_KISS_PINKY_GOLD_PER_POPULATION");
+	int iKissPinkyAttitudeBonus = kingAttitude * GC.getDefineINT("KISS_PINKY_ATTITUDE_MODIFIER"); // can be positive or negative
+
+	// we need to ensure the absolute Min Pop Equivalent for really high Populations
+	// otherwise the player will never ever save enough gold and never trigger reqeuests for iMin
+	int iPinkyPopGoldEqivalent = GC.getDefineINT("PINKY_GOLD_POP_EQUIVALENT_FOR_LARGE_CIVS");
+	int iReasonableGoldForLargePopulations = iPinkyPopGoldEqivalent * GC.getDefineINT("MAX_KISS_PINKY_GOLD_PER_POPULATION");
+
+	// Gamespeed, Handicap, Attitude
+	iMinKissPinkyPopulationGold = iMinKissPinkyPopulationGold * iGameSpeedMod / 100 * iHandiCapMod / 100 * (100 - iKissPinkyAttitudeBonus) / 100;
+	iMaxKissPinkyPopulationGold = iMaxKissPinkyPopulationGold * iGameSpeedMod / 100 * iHandiCapMod / 100 * (100 - iKissPinkyAttitudeBonus) / 100;
+	iReasonableGoldForLargePopulations = iReasonableGoldForLargePopulations * iGameSpeedMod / 100 * iHandiCapMod / 100 * (100 - iKissPinkyAttitudeBonus) / 100;
+
+	// otherwise we will never save enough gold for High Populations and always return 0 thus never trigger Pinky Gold
+	// we need to set the min value to reasonable values then
+	if (iPopulation > iPinkyPopGoldEqivalent)
+	{
+		if (iMinKissPinkyPopulationGold > iReasonableGoldForLargePopulations)
+		{
+			iMinKissPinkyPopulationGold = iReasonableGoldForLargePopulations;
+		}
+	}
+
+	int iWantedGold = iMaxKissPinkyPopulationGold * GC.getGameINLINE().getSorenRandNum(100, "Ask for pinky gold percent") / 100;
+
+	// so if the King would want more than what we have, we would need to fall back to "max gold we have"
+	if (iWantedGold > iMaxGoldPlayerHas)
+	{
+		iWantedGold = iMaxGoldPlayerHas * GC.getGameINLINE().getSorenRandNum(100, "Ask for pinky gold percent") / 100;
+	}
+
+	// but if the King now wants less than he actually should we return 0
+	// this causes the Kiss Pinky to be delayed until we have proper Gold
+	if (iWantedGold < iMinKissPinkyPopulationGold)
+	{
+		iWantedGold = 0;
+	}
 
 	return iWantedGold;
 }
