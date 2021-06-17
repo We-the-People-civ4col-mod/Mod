@@ -4230,8 +4230,13 @@ int CvCity::getBaseYieldRateModifier(YieldTypes eIndex, int iExtra) const
 
 	iModifier += GET_PLAYER(getOwnerINLINE()).getTaxYieldRateModifier(eIndex);
 
-	iModifier += getRebelPercent() * GC.getMAX_REBEL_YIELD_MODIFIER() / 100;
-	
+	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing
+	// Updated to exclude happiness internally to match GUI - Nightinggale
+	if (eIndex != YIELD_HAPPINESS && eIndex != YIELD_UNHAPPINESS)
+	{
+		iModifier += getRebelPercent() * GC.getMAX_REBEL_YIELD_MODIFIER() / 100;
+	}
+
 	// R&R, ray, Health
 	iModifier += getCityHealth(); // negative CityHealth is possible
 
