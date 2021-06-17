@@ -1195,4 +1195,20 @@
 		<DefineName>UNITCLASS_PROTECTOR_HOSTILE_VILLAGE</DefineName>
 		<DefineTextVal>UNITCLASS_HOSTILE_NATIVE</DefineTextVal>
 	</Define>
+	<Define>
+		<DefineName>MIN_KISS_PINKY_GOLD_PER_POPULATION</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MAX_KISS_PINKY_GOLD_PER_POPULATION</DefineName>
+		<iDefineIntVal>100</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>KISS_PINKY_ATTITUDE_MODIFIER</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>PINKY_GOLD_POP_EQUIVALENT_FOR_LARGE_CIVS</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
 </Civ4Defines>
