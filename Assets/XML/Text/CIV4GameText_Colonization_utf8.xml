@@ -1441,9 +1441,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_FATHER</Tag>
-        <English>[ICON_BULLET]%D1%%[TAB]from [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</English>
-        <French>[ICON_BULLET]%D1%%[TAB]en raison de l'élément : [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</French>
-        <German>[ICON_BULLET]%D1%%[TAB]durch [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</German>
+        <English>[ICON_BULLET]%D1%%%F2[TAB]from [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</English>
+        <French>[ICON_BULLET]%D1%%%F2[TAB]en raison de l'élément : [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</French>
+        <German>[ICON_BULLET]%D1%%%F2[TAB]durch [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</German>
         <Italian>[ICON_BULLET]%D1%%%F2[TAB]da [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</Italian>
         <Spanish>[ICON_BULLET]%D1%%%F2[TAB]por [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</Spanish>
     </TEXT>
