@@ -1209,6 +1209,6 @@
 	</Define>
 	<Define>
 		<DefineName>PINKY_GOLD_POP_EQUIVALENT_FOR_LARGE_CIVS</DefineName>
-		<iDefineIntVal>10</iDefineIntVal>
+		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
 </Civ4Defines>
