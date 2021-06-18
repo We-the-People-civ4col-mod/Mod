@@ -2099,43 +2099,32 @@ void CvPlayer::doTurn()
 	// R&R, ray, changes to Wild Animals
 	if (!GC.getGameINLINE().isBarbarianPlayer(getID()) && !GC.getGameINLINE().isChurchPlayer(getID()) && !isNative() && !isEurope() && isAlive())
 	{
+
 		doCrosses(); // CBM 0.7.020 inserted from above
 
+		//WTP, ray, fixing precalcuated Diplo Event Issue - START
+		//WTP, ray, we move this from here to Player AI
+		/*
 		checkForNativeMercs(); //TAC Native Mercs
-
 		checkForNativeSlaves(); // R&R, ray, Native Slave, START
-
 		checkForAfricanSlaves(); // R&R, ray, African Slaves, START
-
 		checkForPrisonsCrowded(); // R&R, ray, Prisons Crowded - START
-
 		checkForRevolutionaryNoble(); // R&R, ray, Revolutionary Noble - START
-
 		checkForBishop(); // R&R, ray, Bishop - START
-
 		checkForChurchContact(); // R&R, ray, the Church - START
-
 		checkForChurchWar(); // R&R, ray, Church War
-
 		checkForSmugglers(); // R&R, ray, Smuggling - START
-
 		checkForRangers(); // R&R, ray, Rangers - START
-
 		checkForConquistadors(); // R&R, ray, Conquistadors - START
-
 		checkForPirates(); // R&R, ray, Pirates - START
-
 		checkForEuropeanPeace(); // R&R, ray, European Peace, START
-
 		checkForEuropeanWars(); //TAC European Wars
-
 		checkForStealingImmigrant(); // R&R, Stealing Immigrant
-
 		checkForContinentalGuard(); // R&R, ray, Continental Guard - START
-
 		checkForMortar(); // R&R, ray, Mortar - START
-
 		checkForMilitiaOrUnrest(); // R&R, ray, Militia or Unrest - START
+		*/
+		//WTP, ray, fixing precalcuated Diplo Event Issue - END
 
 		// TAC - AI Economy - Ray - START
 		if (!isHuman())
