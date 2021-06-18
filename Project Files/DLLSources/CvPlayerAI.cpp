@@ -6648,6 +6648,33 @@ void CvPlayerAI::AI_doDiplo()
 			CvPlayer& kPlayer = GET_PLAYER(ePlayer);
 			if (kPlayer.isAlive() && ePlayer != getID())
 			{
+
+				//WTP, ray, fixing precalcuated Diplo Event Issue - START
+				// the King triggers it only for its own "Colonies"
+				if (kPlayer.getParent() == getID())
+				{
+					//these methods catch all other errors themselves
+					kPlayer.checkForNativeMercs(); //TAC Native Mercs
+					kPlayer.checkForNativeSlaves(); // R&R, ray, Native Slave, START
+					kPlayer.checkForAfricanSlaves(); // R&R, ray, African Slaves, START
+					kPlayer.checkForPrisonsCrowded(); // R&R, ray, Prisons Crowded - START
+					kPlayer.checkForRevolutionaryNoble(); // R&R, ray, Revolutionary Noble - START
+					kPlayer.checkForBishop(); // R&R, ray, Bishop - START
+					kPlayer.checkForChurchContact(); // R&R, ray, the Church - START
+					kPlayer.checkForChurchWar(); // R&R, ray, Church War
+					kPlayer.checkForSmugglers(); // R&R, ray, Smuggling - START
+					kPlayer.checkForRangers(); // R&R, ray, Rangers - START
+					kPlayer.checkForConquistadors(); // R&R, ray, Conquistadors - START
+					kPlayer.checkForPirates(); // R&R, ray, Pirates - START
+					kPlayer.checkForEuropeanPeace(); // R&R, ray, European Peace, START
+					kPlayer.checkForEuropeanWars(); //TAC European Wars
+					kPlayer.checkForStealingImmigrant(); // R&R, Stealing Immigrant
+					kPlayer.checkForContinentalGuard(); // R&R, ray, Continental Guard - START
+					kPlayer.checkForMortar(); // R&R, ray, Mortar - START
+					kPlayer.checkForMilitiaOrUnrest(); // R&R, ray, Militia or Unrest - START
+				}
+				//WTP, ray, fixing precalcuated Diplo Event Issue - END
+
 				if (kPlayer.isHuman() == (iPass == 1))
 				{
 					if (AI_doDiploCancelDeals((PlayerTypes) iI))
