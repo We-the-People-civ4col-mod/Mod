@@ -6,220 +6,36 @@
 <!-- Game Text - New -->
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
-        <Tag>TXT_KEY_CIV_DUTCH_ADJECTIVE</Tag>
-        <English>Dutch:Dutch</English>
+        <Tag>TXT_KEY_CIV_CHURCH_SHORT_DESC</Tag>
+        <English>Church</English>
         <French>
-            <Text>néerlandais:néerlandaise:néerlandais:néerlandaises</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>niederländisch:niederländischen:niederländische:niederländischer</German>
-        <Italian>
-            <Text>Olandese:Olandesi</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>holandés:holandés:holandeses:holandeses</Text>
-            <Gender>Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_DUTCH_EUROPE_ADJECTIVE</Tag>
-        <English>Royal Dutch:Royal Dutch</English>
-        <French>
-            <Text>néerlandais:néerlandaise:néerlandais:néerlandaises</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>königlich-niederländisch:königlich-niederländischen:königlich-niederländische:königlich-niederländischer</German>
-        <Italian>
-            <Text>Olandese:Olandesi</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>holandés:holandesa:holandeses:holandesas</Text>
-            <Gender>Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_ENGLAND_ADJECTIVE</Tag>
-        <English>
-            <Text>English:English</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </English>
-        <French>
-            <Text>anglais:anglaise:anglais:anglaises</Text>
+            <Text>Eglise</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </French>
-        <German>
-            <Text>englisch:englischen:englische:englischer</Text>
-            <Gender>Neuter:Neuter:Neuter:Male</Gender>
-            <Plural>0:0:1:1</Plural>
-        </German>
+        <German>Kirche</German>
         <Italian>
-            <Text>Inglese:Inglese:Inglesi:Inglesi</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>inglés:inglés:ingleses:inglesas</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_ENGLAND_EUROPE_ADJECTIVE</Tag>
-        <English>Royal English:Royal English</English>
-        <French>
-            <Text>anglais:anglaise:anglais:anglaises</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>königlich-englisch:königlich-englischen:königlich-englische:königlich-englischer</German>
-        <Italian>
-            <Text>Inglese:Inglesi</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>inglés:inglés:ingleses:ingleses</Text>
-            <Gender>Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_FRANCE_ADJECTIVE</Tag>
-        <English>
-            <Text>French:French</Text>
+            <Text>Church</Text>
             <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </English>
-        <French>
-            <Text>français:française:français:françaises</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>
-            <Text>französisch:französischen:französische:französischer</Text>
-            <Gender>Neuter:Neuter:Neuter:Male</Gender>
-            <Plural>0:0:1:1</Plural>
-        </German>
-        <Italian>
-            <Text>Francese:Francese:Francesi:Francesi</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>francés:francés:franceses:francesas</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_FRANCE_EUROPE_ADJECTIVE</Tag>
-        <English>Royal French:Royal French</English>
-        <French>
-            <Text>français:française:français:françaises</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>königlich-französisch:königlich-französischen:königlich-französische:königlich-französischer</German>
-        <Italian>
-            <Text>Francese:Francesi</Text>
-            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>francés:francés:franceses:francesas</Text>
-            <Gender>Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_PORTUGAL_ADJECTIVE</Tag>
-        <English>Portuguese</English>
-        <French>
-            <Text>portugais:portugaise:portugais:portugaises</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>
-            <Text>portugiesisch:portugiesischen:portugiesische:portugiesischer</Text>
-            <Gender>Neuter:Neuter:Neuter:Neuter</Gender>
-            <Plural>0:0:1:1</Plural>
-        </German>
-        <Italian>Portoghese</Italian>
-        <Spanish>Portugues</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_ADJECTIVE</Tag>
-        <English>Royal Portuguese:Royal Portuguese</English>
-        <French>
-            <Text>portugais:portugaise:portugais:portugaises</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>
-            <Text>königlich-portugiesisch:königlich-portugiesischen:königlich-portugiesische:königlich-portugiesischer</Text>
-            <Gender>Neuter:Neuter:Neuter:Neuter</Gender>
-            <Plural>0:0:1:1</Plural>
-        </German>
-        <Italian>Portoghese</Italian>
-        <Spanish>Portugues</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_SPAIN_ADJECTIVE</Tag>
-        <English>
-            <Text>Spanish:Spanish</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </English>
-        <French>
-            <Text>espagnol:espagnole:espagnols:espagnoles</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>
-            <Text>spanisch:spanischen:spanische:spanischer</Text>
-            <Gender>Neuter:Neuter:Neuter:Neuter</Gender>
-            <Plural>0:0:1:1</Plural>
-        </German>
-        <Italian>
-            <Text>Spagnola:Spagnola:Spagnoli:Spagnole</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>español:español:españoles:españolas</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_SPAIN_EUROPE_ADJECTIVE</Tag>
-        <English>Royal Spanish:Royal Spanish</English>
-        <French>
-            <Text>espagnol:espagnole:espagnols:espagnoles</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>königlich-spanisch:königlich-spanischen:königlich-spanische:königlich-spanischer</German>
-        <Italian>
-            <Text>Spagnola:Spagnole</Text>
+            <Text>Church</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>español:español:españoles:españolas</Text>
-            <Gender>Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
         </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_CHURCH_ADJECTIVE</Tag>
+        <English>Church</English>
+        <French>
+            <Text>ecclésiastique:ecclésiastique:ecclésiastiques:ecclésiastiques</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>kirchlicher:kirchliche:kirchliche:kirchliche</German>
+        <Italian>Church</Italian>
+        <Spanish>Church</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_ARAWAK_ADJECTIVE</Tag>
@@ -2163,12 +1979,186 @@
         <Spanish>Colonias danesas</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_CIV_DENMARK_SHORT_DESC</Tag>
+        <English>New Denmark</English>
+        <French>Nouveau Danemark</French>
+        <German>Neu-Dänemark</German>
+        <Italian>New Denmark</Italian>
+        <Spanish>New Denmark</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DENMARK_ADJECTIVE</Tag>
+        <English>Danish</English>
+        <French>
+            <Text>danois:danoise:danois:danoises</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>dänisch</German>
+        <Italian>Danish</Italian>
+        <Spanish>Danish</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DENMARK_EUROPE_ADJECTIVE</Tag>
+        <English>Royal Danish:Royal Danish</English>
+        <French>
+            <Text>danois:danoise:danois:danoises</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>königlich-dänisch:königlich-dänischen:königlich-dänische:königlich-dänischer</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CIV_DENMARK_EUROPE_DESC</Tag>
         <English>Kingdom of Denmark</English>
         <French>Empire danois</French>
         <German>Königreich von Dänemark</German>
         <Italian>Regno di Danimarca</Italian>
         <Spanish>Reino de Dinamarca</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DENMARK_EUROPE_SHORT_DESC</Tag>
+        <English>Denmark</English>
+        <French>Danemark</French>
+        <German>Dänemark</German>
+        <Italian>Denmark</Italian>
+        <Spanish>Denmark</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DUTCH_ADJECTIVE</Tag>
+        <English>Dutch:Dutch</English>
+        <French>
+            <Text>néerlandais:néerlandaise:néerlandais:néerlandaises</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>niederländisch:niederländischen:niederländische:niederländischer</German>
+        <Italian>
+            <Text>Olandese:Olandesi</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>holandés:holandés:holandeses:holandeses</Text>
+            <Gender>Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DUTCH_EUROPE_ADJECTIVE</Tag>
+        <English>Royal Dutch:Royal Dutch</English>
+        <French>
+            <Text>néerlandais:néerlandaise:néerlandais:néerlandaises</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>königlich-niederländisch:königlich-niederländischen:königlich-niederländische:königlich-niederländischer</German>
+        <Italian>
+            <Text>Olandese:Olandesi</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>holandés:holandesa:holandeses:holandesas</Text>
+            <Gender>Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_ENGLAND_ADJECTIVE</Tag>
+        <English>
+            <Text>English:English</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>anglais:anglaise:anglais:anglaises</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>
+            <Text>englisch:englischen:englische:englischer</Text>
+            <Gender>Neuter:Neuter:Neuter:Male</Gender>
+            <Plural>0:0:1:1</Plural>
+        </German>
+        <Italian>
+            <Text>Inglese:Inglese:Inglesi:Inglesi</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>inglés:inglés:ingleses:inglesas</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_ENGLAND_EUROPE_ADJECTIVE</Tag>
+        <English>Royal English:Royal English</English>
+        <French>
+            <Text>anglais:anglaise:anglais:anglaises</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>königlich-englisch:königlich-englischen:königlich-englische:königlich-englischer</German>
+        <Italian>
+            <Text>Inglese:Inglesi</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>inglés:inglés:ingleses:ingleses</Text>
+            <Gender>Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_FRANCE_ADJECTIVE</Tag>
+        <English>
+            <Text>French:French</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>français:française:français:françaises</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>
+            <Text>französisch:französischen:französische:französischer</Text>
+            <Gender>Neuter:Neuter:Neuter:Male</Gender>
+            <Plural>0:0:1:1</Plural>
+        </German>
+        <Italian>
+            <Text>Francese:Francese:Francesi:Francesi</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>francés:francés:franceses:francesas</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_FRANCE_EUROPE_ADJECTIVE</Tag>
+        <English>Royal French:Royal French</English>
+        <French>
+            <Text>français:française:français:françaises</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>königlich-französisch:königlich-französischen:königlich-französische:königlich-französischer</German>
+        <Italian>
+            <Text>Francese:Francesi</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>francés:francés:franceses:francesas</Text>
+            <Gender>Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_PORTUGAL_DESC</Tag>
@@ -2185,6 +2175,38 @@
         <German>Neu-Portugal</German>
         <Italian>Nuovo Portogallo</Italian>
         <Spanish>Nuevo Portugal</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_PORTUGAL_ADJECTIVE</Tag>
+        <English>Portuguese</English>
+        <French>
+            <Text>portugais:portugaise:portugais:portugaises</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>
+            <Text>portugiesisch:portugiesischen:portugiesische:portugiesischer</Text>
+            <Gender>Neuter:Neuter:Neuter:Neuter</Gender>
+            <Plural>0:0:1:1</Plural>
+        </German>
+        <Italian>Portoghese</Italian>
+        <Spanish>Portugues</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_ADJECTIVE</Tag>
+        <English>Royal Portuguese:Royal Portuguese</English>
+        <French>
+            <Text>portugais:portugaise:portugais:portugaises</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>
+            <Text>königlich-portugiesisch:königlich-portugiesischen:königlich-portugiesische:königlich-portugiesischer</Text>
+            <Gender>Neuter:Neuter:Neuter:Neuter</Gender>
+            <Plural>0:0:1:1</Plural>
+        </German>
+        <Italian>Portoghese</Italian>
+        <Spanish>Portugues</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_DESC</Tag>
@@ -2211,12 +2233,50 @@
         <Spanish>Colonias suecas</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_CIV_SWEDEN_SHORT_DESC</Tag>
+        <English>New Sweden</English>
+        <French>Nouvelle Suède</French>
+        <German>Neu-Schweden</German>
+        <Italian>New Sweden</Italian>
+        <Spanish>New Sweden</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_SWEDEN_ADJECTIVE</Tag>
+        <English>Swedish</English>
+        <French>
+            <Text>suédois:suédoise:suédois:suédoises</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>schwedisch</German>
+        <Italian>Swedish</Italian>
+        <Spanish>Swedish</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_SWEDEN_EUROPE_ADJECTIVE</Tag>
+        <English>Royal Swedish:Royal Swedish</English>
+        <French>
+            <Text>suédois:suédoise:suédois:suédoises</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>königlich-schwedisch:königlich-schwedischen:königlich-schwedische:königlich-schwedischer</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CIV_SWEDEN_EUROPE_DESC</Tag>
         <English>Kingdom of Sweden</English>
         <French>Empire suédois</French>
         <German>Königreich von Schweden</German>
         <Italian>Regno di Svezia</Italian>
         <Spanish>Reino de Suecia</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_SWEDEN_EUROPE_SHORT_DESC</Tag>
+        <English>Sweden</English>
+        <French>Suède</French>
+        <German>Schweden</German>
+        <Italian>Sweden</Italian>
+        <Spanish>Sweden</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_RUSSIA_DESC</Tag>
@@ -2227,11 +2287,97 @@
         <Spanish>Colonias rusas</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_CIV_RUSSIA_SHORT_DESC</Tag>
+        <English>New Russia</English>
+        <French>Nouvelle Russie</French>
+        <German>Neu-Russland</German>
+        <Italian>New Russia</Italian>
+        <Spanish>New Russia</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_RUSSIA_ADJECTIVE</Tag>
+        <English>Russian</English>
+        <French>
+            <Text>russe:russe:russes:russes</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>russisch</German>
+        <Italian>Russian</Italian>
+        <Spanish>Russian</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_RUSSIA_EUROPE_ADJECTIVE</Tag>
+        <English>Royal Russian:Royal Russian</English>
+        <French>
+            <Text>russe:russe:russes:russes</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>königlich-russisch:königlich-russischen:königlich-russische:königlich-russischer</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CIV_RUSSIA_EUROPE_DESC</Tag>
         <English>Russian Empire</English>
         <French>Empire russe</French>
         <German>Russisches Reich</German>
         <Italian>Impero russo</Italian>
         <Spanish>Imperio ruso</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_RUSSIA_EUROPE_SHORT_DESC</Tag>
+        <English>Russia</English>
+        <French>Russie</French>
+        <German>Russland</German>
+        <Italian>Russia</Italian>
+        <Spanish>Russia</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_SPAIN_ADJECTIVE</Tag>
+        <English>
+            <Text>Spanish:Spanish</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>espagnol:espagnole:espagnols:espagnoles</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>
+            <Text>spanisch:spanischen:spanische:spanischer</Text>
+            <Gender>Neuter:Neuter:Neuter:Neuter</Gender>
+            <Plural>0:0:1:1</Plural>
+        </German>
+        <Italian>
+            <Text>Spagnola:Spagnola:Spagnoli:Spagnole</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>español:español:españoles:españolas</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_SPAIN_EUROPE_ADJECTIVE</Tag>
+        <English>Royal Spanish:Royal Spanish</English>
+        <French>
+            <Text>espagnol:espagnole:espagnols:espagnoles</Text>
+            <Gender>Male:Female:Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </French>
+        <German>königlich-spanisch:königlich-spanischen:königlich-spanische:königlich-spanischer</German>
+        <Italian>
+            <Text>Spagnola:Spagnole</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>español:español:españoles:españolas</Text>
+            <Gender>Male:Female</Gender>
+            <Plural>0:0:1:1</Plural>
+        </Spanish>
     </TEXT>
 </Civ4GameText>

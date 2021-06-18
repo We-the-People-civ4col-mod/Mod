@@ -348,44 +348,6 @@
         <German>Ich halte das Schicksal von [CT_EMPIRE] in meinen Händen. Gebt mir, was ich verlange.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_CIV_DENMARK_SHORT_DESC</Tag>
-        <English>New Denmark</English>
-        <French>Nouveau Danemark</French>
-        <German>Neu-Dänemark</German>
-        <Italian>New Denmark</Italian>
-        <Spanish>New Denmark</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_DENMARK_ADJECTIVE</Tag>
-        <English>Danish</English>
-        <French>
-            <Text>danois:danoise:danois:danoises</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>dänisch</German>
-        <Italian>Danish</Italian>
-        <Spanish>Danish</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_DENMARK_EUROPE_SHORT_DESC</Tag>
-        <English>Denmark</English>
-        <French>Danemark</French>
-        <German>Dänemark</German>
-        <Italian>Denmark</Italian>
-        <Spanish>Denmark</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_DENMARK_EUROPE_ADJECTIVE</Tag>
-        <English>Royal Danish:Royal Danish</English>
-        <French>
-            <Text>danois:danoise:danois:danoises</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>königlich-dänisch:königlich-dänischen:königlich-dänische:königlich-dänischer</German>
-    </TEXT>
-    <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MUNK_1</Tag>
         <English>It is an honour to meet the great [CT_NAME], governor of [CT_EMPIRE]. I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], and I present you the friendship of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] people. I hope we can establish a lasting friendship on this day.</English>
         <French>C'est un honneur de rencontrer le grand [CT_NAME], gouverneur de l'[CT_EMPIRE]. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], et je vous présente l'amitié du peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Que pouvons-nous faire pour vous, aujourd'hui ?</French>
@@ -494,44 +456,6 @@
         <Spanish>Odio meterme con los pacíficos, pero lo haré de todas formas. Dadnos lo que queremos o sufrid las consecuencias.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_CIV_SWEDEN_SHORT_DESC</Tag>
-        <English>New Sweden</English>
-        <French>Nouvelle Suède</French>
-        <German>Neu-Schweden</German>
-        <Italian>New Sweden</Italian>
-        <Spanish>New Sweden</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_SWEDEN_ADJECTIVE</Tag>
-        <English>Swedish</English>
-        <French>
-            <Text>suédois:suédoise:suédois:suédoises</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>schwedisch</German>
-        <Italian>Swedish</Italian>
-        <Spanish>Swedish</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_SWEDEN_EUROPE_SHORT_DESC</Tag>
-        <English>Sweden</English>
-        <French>Suède</French>
-        <German>Schweden</German>
-        <Italian>Sweden</Italian>
-        <Spanish>Sweden</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_SWEDEN_EUROPE_ADJECTIVE</Tag>
-        <English>Royal Swedish:Royal Swedish</English>
-        <French>
-            <Text>suédois:suédoise:suédois:suédoises</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>königlich-schwedisch:königlich-schwedischen:königlich-schwedische:königlich-schwedischer</German>
-    </TEXT>
-    <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_PRINTZ_1</Tag>
         <English>Welcome [CT_NAME], to the [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. My name is [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. It is good to see a familiar face in these strange lands. I hope a bond of mutual trust can grow between us and our subjects.</English>
         <French>Bienvenue [CT_NAME] dans nos [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Mon nom est [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Cela fait plaisir de voir un européen dans ses terres si étranges. J'espère que nous bâtirons une relation de confiance entre nos sujets.</French>
@@ -638,44 +562,6 @@
         <German>Ich verabscheue es, auf den Friedfertigen herumzuhacken, aber ich werde es trotzdem tun. Gebt uns, was wir wollen, oder tragt die Konsequenzen.</German>
         <Italian>Odio approfittare degli umili, ma lo farò ugualmente. Dacci ciò che vogliamo o preparati ad affrontare le conseguenze.</Italian>
         <Spanish>Odio meterme con los pacíficos, pero lo haré de todas formas. Dadnos lo que queremos o sufrid las consecuencias.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_RUSSIA_SHORT_DESC</Tag>
-        <English>New Russia</English>
-        <French>Nouvelle Russie</French>
-        <German>Neu-Russland</German>
-        <Italian>New Russia</Italian>
-        <Spanish>New Russia</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_RUSSIA_ADJECTIVE</Tag>
-        <English>Russian</English>
-        <French>
-            <Text>russe:russe:russes:russes</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>russisch</German>
-        <Italian>Russian</Italian>
-        <Spanish>Russian</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_RUSSIA_EUROPE_SHORT_DESC</Tag>
-        <English>Russia</English>
-        <French>Russie</French>
-        <German>Russland</German>
-        <Italian>Russia</Italian>
-        <Spanish>Russia</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_RUSSIA_EUROPE_ADJECTIVE</Tag>
-        <English>Royal Russian:Royal Russian</English>
-        <French>
-            <Text>russe:russe:russes:russes</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>königlich-russisch:königlich-russischen:königlich-russische:königlich-russischer</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_ERMAK_1</Tag>
@@ -1988,37 +1874,5 @@
         <English>I could wipe the seed of the [CT_EMPIRE] from this land at will. Give me what I demand and I may allow you to live a while longer.</English>
         <French>Je pourrais effacer la graine du [CT_EMPIRE] de cette terre à volonté. Donnez-moi ce que je demande et je pourrais vous permettre de vivre un peu plus longtemps.</French>
         <German>Ich könnte die Saat der [CT_EMPIRE] nach Belieben aus diesem Land auslöschen. Gebt mir, was ich verlange, und ich erlaube Euch vielleicht, noch eine Weile zu leben.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_CHURCH_SHORT_DESC</Tag>
-        <English>Church</English>
-        <French>
-            <Text>Eglise</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>Kirche</German>
-        <Italian>
-            <Text>Church</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Church</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_CHURCH_ADJECTIVE</Tag>
-        <English>Church</English>
-        <French>
-            <Text>ecclésiastique:ecclésiastique:ecclésiastiques:ecclésiastiques</Text>
-            <Gender>Male:Female:Male:Female</Gender>
-            <Plural>0:0:1:1</Plural>
-        </French>
-        <German>kirchlicher:kirchliche:kirchliche:kirchliche</German>
-        <Italian>Church</Italian>
-        <Spanish>Church</Spanish>
     </TEXT>
 </Civ4GameText>
