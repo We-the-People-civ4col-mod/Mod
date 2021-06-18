@@ -21756,10 +21756,26 @@
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
             </FeatureAttacks>
             <FeatureDefenses>
                 <FeatureDefense>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iFeatureDefense>20</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
@@ -21922,6 +21938,14 @@
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
@@ -22073,6 +22097,14 @@
             <FeatureDefenses>
                 <FeatureDefense>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
@@ -22367,6 +22399,14 @@
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
@@ -22531,6 +22571,14 @@
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
             </FeatureAttacks>
             <FeatureDefenses>
                 <FeatureDefense>
@@ -22547,6 +22595,14 @@
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iFeatureDefense>20</iFeatureDefense>
                 </FeatureDefense>
             </FeatureDefenses>
@@ -22914,6 +22970,14 @@
             <FeatureAttacks>
                 <FeatureAttack>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iFeatureAttack>-10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <iFeatureAttack>-10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iFeatureAttack>-10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>

@@ -134,6 +134,24 @@
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_MANGROVE</Type>
+            <bAnimated>0</bAnimated>
+            <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
+            <Button>Art/Interface/Buttons/mangroves.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/mangrove/mangrove.nif</ModelFile>
+                        <Connections/>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Interface/Buttons/mangroves.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
+        <FeatureArtInfo>
             <Type>ART_DEF_FEATURE_FOREST</Type>
             <bAnimated>0</bAnimated>
             <TileArtType>TILE_ART_TYPE_TREES</TileArtType>

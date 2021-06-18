@@ -6276,6 +6276,7 @@
             </AIRequiredCatchmentAreaTerrains>
             <AIRequiredCatchmentAreaFeatures>
                 <eRequiredFeature>FEATURE_JUNGLE</eRequiredFeature>
+                <eRequiredFeature>FEATURE_MANGROVE</eRequiredFeature>
                 <eRequiredFeature>FEATURE_FOREST_TUNDRA</eRequiredFeature>
             </AIRequiredCatchmentAreaFeatures>
             <AIUnitClassWeights>

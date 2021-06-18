@@ -458,6 +458,10 @@
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -570,6 +574,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -700,6 +708,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1432,6 +1444,10 @@
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1607,6 +1623,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -1851,6 +1871,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -2154,6 +2178,10 @@
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2206,10 +2234,6 @@
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -2222,6 +2246,10 @@
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureTerrainBooleans>
         </BonusInfo>
         <BonusInfo>
@@ -2408,6 +2436,10 @@
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2496,6 +2528,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2629,6 +2665,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -2756,6 +2796,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2946,6 +2990,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -3380,6 +3428,10 @@
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -3751,6 +3803,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>

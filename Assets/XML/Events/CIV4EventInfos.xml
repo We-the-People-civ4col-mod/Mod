@@ -24776,7 +24776,7 @@
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
-	    <EventInfo>
+        <EventInfo>
             <Type>EVENT_TRADEFORT_1</Type>
             <Description>TXT_KEY_EVENT_TRADEFORT_1</Description>
             <LocalInfoText/>

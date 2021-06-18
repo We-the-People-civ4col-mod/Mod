@@ -1427,6 +1427,7 @@
             <ePlotType>NONE</ePlotType>
             <FeaturesRequired>
                 <FeatureType>FEATURE_JUNGLE</FeatureType>
+                <FeatureType>FEATURE_MANGROVE</FeatureType>
             </FeaturesRequired>
             <TerrainsRequired/>
             <ImprovementsRequired/>
@@ -6147,6 +6148,7 @@
             <ePlotType>PLOT_LAND</ePlotType>
             <FeaturesRequired>
                 <FeatureType>FEATURE_JUNGLE</FeatureType>
+                <FeatureType>FEATURE_MANGROVE</FeatureType>
             </FeaturesRequired>
             <TerrainsRequired/>
             <ImprovementsRequired>

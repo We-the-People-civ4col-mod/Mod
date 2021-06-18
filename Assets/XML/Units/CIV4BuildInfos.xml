@@ -116,6 +116,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <iTime>800</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
@@ -183,6 +194,17 @@
             <FeatureStructs>
                 <FeatureStruct>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iTime>800</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <iTime>800</iTime>
                     <Yields>
                         <Yield>
@@ -323,6 +345,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <iTime>800</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
@@ -401,6 +434,17 @@
             <FeatureStructs>
                 <FeatureStruct>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iTime>800</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <iTime>800</iTime>
                     <Yields>
                         <Yield>
@@ -499,6 +543,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <iTime>800</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
@@ -577,6 +632,17 @@
             <FeatureStructs>
                 <FeatureStruct>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iTime>800</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <iTime>800</iTime>
                     <Yields>
                         <Yield>
@@ -675,6 +741,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <iTime>800</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
@@ -753,6 +830,17 @@
             <FeatureStructs>
                 <FeatureStruct>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iTime>800</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <iTime>800</iTime>
                     <Yields>
                         <Yield>
@@ -862,6 +950,17 @@
             <FeatureStructs>
                 <FeatureStruct>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iTime>800</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <iTime>800</iTime>
                     <Yields>
                         <Yield>
@@ -1015,6 +1114,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <iTime>800</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
@@ -1093,6 +1203,17 @@
             <FeatureStructs>
                 <FeatureStruct>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iTime>800</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <iTime>800</iTime>
                     <Yields>
                         <Yield>
@@ -1202,6 +1323,17 @@
             <FeatureStructs>
                 <FeatureStruct>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iTime>800</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <iTime>800</iTime>
                     <Yields>
                         <Yield>
@@ -1423,7 +1555,7 @@
             <ImprovementType>NONE</ImprovementType>
             <PrereqTerrainType>TERRAIN_MARSH</PrereqTerrainType>
             <ResultTerrainType>NONE</ResultTerrainType>
-            <ResultFeatureType>FEATURE_JUNGLE</ResultFeatureType>
+            <ResultFeatureType>FEATURE_MANGROVE</ResultFeatureType>
             <RouteType>NONE</RouteType>
             <EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
             <FeatureStructs/>

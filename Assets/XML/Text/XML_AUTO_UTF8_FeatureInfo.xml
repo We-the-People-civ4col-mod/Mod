@@ -125,6 +125,20 @@
         <Spanish>[TAB]Jungle or Tropical forest refers to the dense, more or less impenetrable tropical rainforest biome with an abundance of animal and plant life. The term jungle is technically a synonym to Tropical Rainforest. The word jungle originates from the Sanskrit word jangala  which referred to uncultivated land. Although the Sanskrit word refers to "dry land", it has been suggested that an Anglo-Indian interpretation led to its connotation as a dense "tangled thicket". while others have argued that a cognate word in Urdu did refer to forests. The term is prevalent in many languages of South Asia, and Iranian plateau, particularly in Bangla, Hindi, Marathi, Urdu, Punjabi and Persian.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_FEATURE_MANGROVE</Tag>
+        <English>Mangroves</English>
+        <German>
+            <Text>Mangroven</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_MANGROVE_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mangroves[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mangroven[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_FEATURE_LIGHT_FOREST</Tag>
         <English>Light Forest</English>
         <French>
