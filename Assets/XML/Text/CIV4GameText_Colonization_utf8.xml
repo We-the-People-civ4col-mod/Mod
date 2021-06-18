@@ -151,11 +151,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_WHAT_TO_BUILD</Tag>
-        <English>[COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT][NEWLINE][NEWLINE]What would you like to build in this settlement?</English>
-        <French>[COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT][NEWLINE][NEWLINE]Que voulez-vous construire dans cette colonie ?</French>
-        <German>[COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT][NEWLINE][NEWLINE]Was wollt Ihr in dieser Siedlung errichten?</German>
-        <Italian>[COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT][NEWLINE][NEWLINE]Cosa ti piacerebbe costruire in questo insediamento?</Italian>
-        <Spanish>[COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT][NEWLINE][NEWLINE]¿Qué os gustaría construir en este asentamiento?</Spanish>
+        <English>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT][NEWLINE][NEWLINE]What would you like to build in this settlement?</English>
+        <French>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT][NEWLINE][NEWLINE]Que voulez-vous construire dans cette colonie ?</French>
+        <German>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT][NEWLINE][NEWLINE]Was wollt Ihr in dieser Siedlung errichten?</German>
+        <Italian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT][NEWLINE][NEWLINE]Cosa ti piacerebbe costruire in questo insediamento?</Italian>
+        <Spanish>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT][NEWLINE][NEWLINE]¿Qué os gustaría construir en este asentamiento?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_EXAMINE_CITY</Tag>
@@ -782,7 +782,7 @@
     <TEXT>
         <Tag>TXT_KEY_SCORE_BREAKDOWN_LAND</Tag>
         <English>%d1 from Land (%d2_land/%d3_land_max)</English>
-        <French>%d1 en raison du territoire (%d3_land/%d6_land_max)</French>
+        <French>%d1 en raison du territoire (%d2_land/%d3_land_max)</French>
         <German>%d1 durch Land (%d2_land/%d3_land_max)</German>
         <Italian>%d1 dal territorio (%d2_land/%d3_land_max)</Italian>
         <Spanish>%d1 por territorio (%d2_land/%d3_land_max)</Spanish>
@@ -1449,9 +1449,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_REBEL</Tag>
-        <English>[ICON_BULLET]%D1%%[TAB]from Rebel Sentiment</English>
-        <French>[ICON_BULLET]%D1%%[TAB]en raison du Sentiment de révolte</French>
-        <German>[ICON_BULLET]%D1%%[TAB]durch rebellische Stimmung</German>
+        <English>[ICON_BULLET]%D1%%%F2[TAB]from Rebel Sentiment</English>
+        <French>[ICON_BULLET]%D1%%%F2[TAB]en raison du Sentiment de révolte</French>
+        <German>[ICON_BULLET]%D1%%%F2[TAB]durch rebellische Stimmung</German>
         <Italian>[ICON_BULLET]%D1%%%F2[TAB]dal sentimento di ribellione</Italian>
         <Spanish>[ICON_BULLET]%D1%%%F2[TAB]por sentimiento de rebelión</Spanish>
     </TEXT>

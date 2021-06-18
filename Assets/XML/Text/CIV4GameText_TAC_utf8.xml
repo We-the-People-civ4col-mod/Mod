@@ -1453,7 +1453,7 @@
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_INCCREASED_MAX_TAX</Tag>
         <English>Angered by our disobedience, His Majesty has increased our maximum tax rate by %d1_increase.[NEWLINE]However, our relationship with [COLOR_HIGHLIGHT_TEXT]%s2_nation[COLOR_REVERT] has improved.</English>
-        <French>Irrité par notre désobéissance, le roi a augmenté notre taux maximal d'imposition de d1_increase%.[NEWLINE]Notre relation avec s2_nation% mais s'est améliorée.</French>
+        <French>Irrité par notre désobéissance, le roi a augmenté notre taux maximal d'imposition de %d1_increase.[NEWLINE]Notre relation avec %s2_nation mais s'est améliorée.</French>
         <German>Verärgert über unseren Ungehorsam hat Seine Majestät unseren maximalen Steuersatz um %d1_increase erhöht.[NEWLINE]Unsere Beziehung zu [COLOR_HIGHLIGHT_TEXT]%s2_nation[COLOR_REVERT] hat sich jedoch verbessert.</German>
     </TEXT>
     <TEXT>
