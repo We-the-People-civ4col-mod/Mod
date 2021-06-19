@@ -10810,7 +10810,11 @@ int CvCity::getImportsLimit(YieldTypes eYield) const
 // Returns the max number of yield units that the city is willing to accept
 int CvCity::getMaxImportAmount(YieldTypes eYield) const
 {
-	FAssert(isImport(eYield));
+	// automated transports will ignore import settings if loaded with something no city imports.
+	// the alternative is to get the transport unit stuck, possibly forever.
+	// for this reason, the assert message can trigger for rare, but intended behavior.
+	//    Nightinggale
+	//FAssert(isImport(eYield));
 
 	const int iImportLimit = m_em_iTradeMaxThreshold.get(eYield);
 
