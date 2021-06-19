@@ -238,6 +238,24 @@
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_BOG</Type>
+            <bAnimated>1</bAnimated>
+            <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <Button>Art/Interface/Buttons/PeatBog.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/bog_grass/Bog.nif</ModelFile>
+                        <Connections/>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Interface/Buttons/PeatBog.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
+        <FeatureArtInfo>
             <Type>ART_DEF_FEATURE_BARREL_CACTUS</Type>
             <bAnimated>1</bAnimated>
             <TileArtType>TILE_ART_TYPE_TREES</TileArtType>

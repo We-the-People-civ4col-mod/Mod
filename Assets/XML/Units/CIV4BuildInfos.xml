@@ -170,6 +170,17 @@
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
             </FeatureStructs>
             <HotKey>KB_I</HotKey>
             <bAltDown>0</bAltDown>
@@ -250,6 +261,17 @@
                 <FeatureStruct>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_LUMBER</YieldType>
@@ -400,6 +422,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
@@ -490,6 +523,17 @@
                 <FeatureStruct>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_LUMBER</YieldType>
@@ -598,6 +642,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
@@ -688,6 +743,17 @@
                 <FeatureStruct>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_LUMBER</YieldType>
@@ -796,6 +862,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
@@ -886,6 +963,17 @@
                 <FeatureStruct>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_LUMBER</YieldType>
@@ -1169,6 +1257,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
@@ -1259,6 +1358,17 @@
                 <FeatureStruct>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_LUMBER</YieldType>
@@ -1377,6 +1487,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
@@ -1434,6 +1555,17 @@
                 <FeatureStruct>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_LUMBER</YieldType>

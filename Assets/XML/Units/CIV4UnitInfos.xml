@@ -21764,6 +21764,10 @@
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
             </FeatureAttacks>
             <FeatureDefenses>
                 <FeatureDefense>
@@ -21776,6 +21780,10 @@
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_BOG</FeatureType>
                     <iFeatureDefense>20</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
@@ -21946,6 +21954,10 @@
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
@@ -22105,6 +22117,10 @@
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_BOG</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
@@ -22407,6 +22423,10 @@
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
@@ -22579,6 +22599,10 @@
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
             </FeatureAttacks>
             <FeatureDefenses>
                 <FeatureDefense>
@@ -22603,6 +22627,10 @@
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_BOG</FeatureType>
                     <iFeatureDefense>20</iFeatureDefense>
                 </FeatureDefense>
             </FeatureDefenses>
@@ -22978,6 +23006,10 @@
                 </FeatureAttack>
                 <FeatureAttack>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <iFeatureAttack>-10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_BOG</FeatureType>
                     <iFeatureAttack>-10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>

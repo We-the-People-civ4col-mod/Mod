@@ -259,6 +259,10 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -466,6 +470,10 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -566,6 +574,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_BOG</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -672,6 +684,10 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -772,6 +788,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_BOG</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -1322,6 +1342,10 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
@@ -1449,6 +1473,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_BOG</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -2587,6 +2615,10 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
@@ -2709,6 +2741,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_BOG</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -2847,6 +2883,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_BOG</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
