@@ -519,5 +519,23 @@
                 <VarietyButton>,Art/Interface/Buttons/Reef_Button.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
+        <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_KELP</Type>
+            <bAnimated>0</bAnimated>
+            <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+            <fScale>0.5</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <Button>,Art/Interface/Buttons/kelpforest.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/Kelp/wheat.nif</ModelFile>
+                        <Connections/>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>1</iModelCopies>
+                <VarietyButton>,Art/Interface/Buttons/kelpforest.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
     </FeatureArtInfos>
 </Civ4ArtDefines>

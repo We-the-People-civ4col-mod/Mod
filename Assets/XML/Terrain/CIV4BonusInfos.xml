@@ -281,6 +281,14 @@
                     <FeatureType>FEATURE_ICE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_KELP</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans/>
             <bFishingboatWorkable>1</bFishingboatWorkable>
@@ -343,6 +351,14 @@
                     <FeatureType>FEATURE_ICE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_KELP</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans/>
             <bFishingboatWorkable>1</bFishingboatWorkable>
@@ -404,6 +420,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_ICE</FeatureType>
                     <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_KELP</FeatureType>
+                    <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans/>
@@ -3146,6 +3170,14 @@
                     <FeatureType>FEATURE_ICE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_KELP</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans/>
             <bFishingboatWorkable>1</bFishingboatWorkable>
@@ -3746,6 +3778,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_ICE</FeatureType>
                     <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_KELP</FeatureType>
+                    <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans/>

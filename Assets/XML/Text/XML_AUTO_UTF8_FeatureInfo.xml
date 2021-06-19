@@ -264,9 +264,23 @@
         </German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_FEATURE_FOG_PEDIA</Tag>
+        <Tag>TXT_KEY_FEATURE_REEF_PEDIA</Tag>
         <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Coral Reefs[COLOR_REVERT]</English>
         <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Korallenriffe[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_KELP</Tag>
+        <English>Kelp</English>
+        <German>
+            <Text>Seetang</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_KELP_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kelp[COLOR_REVERT]</English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seetang[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_TORNADO</Tag>
