@@ -1039,6 +1039,18 @@
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_BONUS_LLAMA</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>10.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/llama/llama_adult_f.nif</NIF>
+            <KFM/>
+            <Button>,Art/atlasmapbonus.dds,4,7</Button>
+        </BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_SILVER</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>

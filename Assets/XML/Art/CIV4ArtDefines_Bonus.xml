@@ -150,6 +150,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_LLAMA</Type>
+            <fScale>10.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/llama/llama_adult_f.nif</NIF>
+            <KFM/>
+            <Button>,Art/atlasmapbonus.dds,4,7</Button>
+            <FontButtonIndex>56</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_FISH</Type>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
