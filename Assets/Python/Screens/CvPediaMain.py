@@ -920,6 +920,10 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 					list.append("Nightinggale")
 					list.append("Devolution")
 					list.append("raystuttgart")
+					list.append("Schmiddie")
+					list.append("Mr.ZorG")
+					list.append("TXT_KEY_CREDITS_FURSTBISCHOF")
+					list.append("Kendon")
 					
 					szTextData += localText.getText("TXT_KEY_CREDITS_WTP", ())
 					szTextData += localText.getText("[NEWLINE]", ())

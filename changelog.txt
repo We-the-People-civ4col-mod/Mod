@@ -1,5 +1,78 @@
 We the People Changelog
 
+Version 3.0
+
+Major milestone in AI. It now knows how to develop an economy to allow proper colony development as the game progresses. Text has once again been given a major overhaul, making the game generally look more impressive. Backward compatibile with savegames from 2.9.
+
+Improvements/rebalance:
+- Learning by doing works faster if there is an expert (teacher) present in the colony
+- Learning by doing now remembers the past two professions, allowing to switch to another profession for a turn or two without clearing progress
+- Pioneers can now remove roads
+- Guarded goodies rebalanced
+- Promotions now allow for a bonus modifier for getting gold from defeating animals
+- New terrain type: lakes
+- Docks now add a bit of warehouse storage space
+- Statue of governor now also adds cross production
+- Gather boats can no longer trade with natives
+- New game option to remove world builder
+- The king's requests for gold now depends on multiple factors like population and isn't just a percentage of your stored gold
+
+Fixes:
+- Dragging a unit to a plot in the colony screen will no longer fail if it hits the "plot info corner"
+- #449 AI units no longer gets stuck while crossing large rivers
+- Land units crossing rivers will no longer board transports if there just happens to be one on the plot
+- Sail to Europe button is now only displayed if the unit can reach Europe (read: not landlocked)
+- Raiding natives can no longer cause negative cargo to be stored
+- #472 Natives can no longer sell more cargo than they have causing negative cargo stored in the settlement
+- Random events can no longer cause negative food stored in colonies (happened only on game speeds slower than normal)
+- Price of settler now considers modifers from game speed, difficulty(AI only) and Founding Fathers
+- #465 Barbarian player can no longer conquer colonies and then crash the game as it lacks settings to run colonies
+- #466 Destroying a colony now removes all traderoutes to that colony even if feeder service is active
+- Units can't leave colonies during unrests (prevents the units from disappearing for a turn)
+- Ships in a colony/settlement will no longer defend if attacked by land units
+- Ships no longer stop for hostile units if said units are on land
+- Fixed plots not updating visibility correctly (for the last time this time... hopefully. Entire code is rewritten)
+- Fixed 3 events, which had incorrect xml data, causing them to misbehave (likely fail to trigger when they should)
+- European only random events can no longer trigger for natives
+- Animals are no longer able to pillage roads or improvements
+- The two cargo slows added by EVENT_CARGOSPACE will no longer vanish after saving and loading (won't restore if the slots already vanished in a game)
+- #469 tribal villages no longer try to trigger a non-existing effect
+- Animal spawning starting time now takes game speed into account
+- Big coastal ships can now gain promotions
+- Pioneers can no longer plant forests on peaks
+- Promotion buttons now provides the promotion you would expect when editing a unit in world builder
+- Livestock breeding speed now takes game speed into account
+- Fixed issue with events triggering incorrectly because events used map width instead of looking for Europe access plots
+- AI will no longer attack with units after they moved and spent all their movement points
+- Cached power value for each player is now calculated correctly and is recalculated on load (might affect OOS)
+- #399 pressing F10 will no longer trigger an assert due to action not being handled by the DLL (it's handled by python)
+- The button to rest until healed is no longer available if healing is negative (like inside a storm)
+- Rebel production modifier no longer applies to happiness (that's how it was coded in the GUI, but not game logic)
+- EVENTTRIGGER_TRADEFORT3 no longer causes a python error
+- The king's diplo events now takes place before the player can trade in Europe (to avoid the player from gaining/losing money before the window pops up)
+
+AI
+- New rules for picking which buildings to build makes the AI develop colonies way more than it used to
+
+Performance:
+- New building rules replaces old code, which was way slower
+- #439 Updating map view while moving weather much faster (typically 90% CPU reduction)
+- Natives no longer spends time checking if European only random events will trigger for them
+- Lakes are now identified by terrain rather than more complex (slower) code, which takes number of plots into account
+
+Release:
+- All files are now placed in Assets, not split between Assets and assets (affects Linux, but not windows)
+- MD5 and sha1 checksums provided for release builds
+
+Modding Features:
+- InfoArray will now cause compile error if used with incorrect types (like reading a unit from a building array)
+- CvPlot can now determine if a certain terrain/feature/plottype/... is within X plots from it (searching for either single value or InfoArray values)
+- Some invalid xml assert messages now show up as error messages even if asserts are disabled
+- Added more error messages for incorrectly configured xml files (mainly for events/event triggers)
+- World Builder will automatically convert between coast, ocean and lakes when closing
+- Converts non-ascii to ascii when on non-western European languages (prevents errors/crash)
+
+
 Version 2.9
 
 Features:
