@@ -775,11 +775,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HELP_CARGO_SPACE</Tag>
-        <English>Cargo space : %d1_Curr/%d2_Max</English>
-        <French>Capacité d'emport : %d1_Curr/%d2_Max</French>
-        <German>Frachtraum : %d1_Curr/%d2_Max</German>
-        <Italian>Spazio di carico : %d1_Curr/%d2_Max</Italian>
-        <Spanish>Bodega : %d1_Curr/%d2_Max</Spanish>
+        <English>Cargo space : %d1_Curr / %d2_Max</English>
+        <French>Capacité d'emport : %d1_Curr / %d2_Max</French>
+        <German>Frachtraum : %d1_Curr / %d2_Max</German>
+        <Italian>Spazio di carico : %d1_Curr / %d2_Max</Italian>
+        <Spanish>Bodega : %d1_Curr / %d2_Max</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HELP_LEVEL</Tag>
@@ -3543,19 +3543,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_BUILDINGS</Tag>
-        <English>[ICON_BULLET]%D1%%%F2[TAB][TAB]from Buildings</English>
-        <French>[ICON_BULLET]%D1%%%F2[TAB][TAB](bâtiments)</French>
-        <German>[ICON_BULLET]%D1%%%F2[TAB][TAB]durch Gebäude</German>
-        <Italian>[ICON_BULLET]%D1%%%F2[TAB][TAB]dagli edifici</Italian>
-        <Spanish>[ICON_BULLET]%D1%%%F2[TAB][TAB]por edificios</Spanish>
+        <English>[ICON_BULLET]%D1%%%F2[TAB]from Buildings</English>
+        <French>[ICON_BULLET]%D1%%%F2[TAB](bâtiments)</French>
+        <German>[ICON_BULLET]%D1%%%F2[TAB]durch Gebäude</German>
+        <Italian>[ICON_BULLET]%D1%%%F2[TAB]dagli edifici</Italian>
+        <Spanish>[ICON_BULLET]%D1%%%F2[TAB]por edificios</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_CIVICS</Tag>
-        <English>[ICON_BULLET]%D1%%%F2[TAB][TAB]from Civics</English>
-        <French>[ICON_BULLET]%D1%%%F2[TAB][TAB](doctrine)</French>
-        <German>[ICON_BULLET]%D1%%%F2[TAB][TAB]durch Staatsformen</German>
-        <Italian>[ICON_BULLET]%D1%%%F2[TAB][TAB]dalle forme di governo</Italian>
-        <Spanish>[ICON_BULLET]%D1%%%F2[TAB][TAB]por principios</Spanish>
+        <English>[ICON_BULLET]%D1%%%F2[TAB]from Civics</English>
+        <French>[ICON_BULLET]%D1%%%F2[TAB](doctrine)</French>
+        <German>[ICON_BULLET]%D1%%%F2[TAB]durch Staatsformen</German>
+        <Italian>[ICON_BULLET]%D1%%%F2[TAB]dalle forme di governo</Italian>
+        <Spanish>[ICON_BULLET]%D1%%%F2[TAB]por principios</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_CAPITAL</Tag>
@@ -3615,11 +3615,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_BUILDING_YIELD</Tag>
-        <English>[ICON_BULLET]%d1%F2[TAB][TAB]from buildings</English>
-        <French>[ICON_BULLET]%d1%F2[TAB][TAB]en raison des bâtiments</French>
-        <German>[ICON_BULLET]%d1%F2[TAB][TAB]durch Gebäude</German>
-        <Italian>[ICON_BULLET]%d1%F2[TAB][TAB]dagli edifici</Italian>
-        <Spanish>[ICON_BULLET]%d1%F2[TAB][TAB]por edificios</Spanish>
+        <English>[ICON_BULLET]%d1%F2[TAB]from buildings</English>
+        <French>[ICON_BULLET]%d1%F2[TAB]en raison des bâtiments</French>
+        <German>[ICON_BULLET]%d1%F2[TAB]durch Gebäude</German>
+        <Italian>[ICON_BULLET]%d1%F2[TAB]dagli edifici</Italian>
+        <Spanish>[ICON_BULLET]%d1%F2[TAB]por edificios</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_HOT_SEAT</Tag>
@@ -10467,7 +10467,7 @@
         <Tag>TXT_KEY_MISC_YOU_KILLED_ENEMY_UNIT</Tag>
         <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]Your [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] has successfully fought off an enemy [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT] [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT]. Bravely fought!</English>
         <French>En se défendant, votre %s1_UnitName a éliminé [NUM2:un:une:des:des] %s2_EnUName (%s3_owner_adjective) !</French>
-        <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Eure Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] hat sich erfolgreich gegen eine feindliche Einheit [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] (%s3_owner_adjective) gewehrt. Wacker gekämpft!</German>
+        <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Eure Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] hat sich erfolgreich gegen feindliche %s3_owner_adjective [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] gewehrt. Wacker gekämpft!</German>
         <Italian>Difendendo, la tua unità %s1_UnitName ha ucciso l'unità nemica %s2_EnUName (%s3_owner_adjective)!</Italian>
         <Spanish>Mientras se [NUM1:defendía:defendía:defendían:defendían], [NUM1:vuestro:vuestra:vuestros:vuestras] %s1_UnitName [NUM1:ha:ha:han:han] acabado con [NUM2:un:una:unos:unas] %s2_EnUName (%s3_owner_adjective).</Spanish>
     </TEXT>
