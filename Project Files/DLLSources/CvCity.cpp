@@ -3343,7 +3343,10 @@ void CvCity::changePopulation(int iChange)
 
 long CvCity::getRealPopulation() const
 {
-	return (getPopulation() * 100L);
+	//WTP, ray, make real Population balanceable in XML
+	long iRealPopulationMultiplier = (long) GC.getDefineINT("REAL_POPULATION_MULTIPLIER");
+
+	return (getPopulation() * iRealPopulationMultiplier);
 }
 
 int CvCity::getHighestPopulation() const

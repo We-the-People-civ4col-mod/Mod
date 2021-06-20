@@ -1211,4 +1211,8 @@
 		<DefineName>PINKY_GOLD_POP_EQUIVALENT_FOR_LARGE_CIVS</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>REAL_POPULATION_MULTIPLIER</DefineName>
+		<iDefineIntVal>1000</iDefineIntVal>
+	</Define>
 </Civ4Defines>

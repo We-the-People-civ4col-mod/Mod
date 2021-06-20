@@ -63,7 +63,7 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 		break;
 
 	case WIDGET_UNIT_NAME:
-		szBuffer.append(gDLL->getText("TXT_KEY_CHANGE_NAME"));
+		szBuffer.append(gDLL->getText("TXT_KEY_CHANGE_NAME_UNIT"));
 		break;
 
 	case WIDGET_CREATE_GROUP:
@@ -1399,7 +1399,7 @@ void CvDLLWidgetData::parseCityNameHelp(CvWidgetDataStruct &widgetDataStruct, Cv
 		szBuffer.append(gDLL->getText("TXT_KEY_CITY_FOUNDED", szTempBuffer.GetCString()));
 
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_CHANGE_NAME"));
+		szBuffer.append(gDLL->getText("TXT_KEY_CHANGE_NAME_CITY"));
 	}
 }
 
