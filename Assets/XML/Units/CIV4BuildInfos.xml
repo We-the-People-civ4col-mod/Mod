@@ -160,6 +160,12 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <iTime>100</iTime>
+                    <Yields/>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
@@ -256,6 +262,12 @@
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <iTime>100</iTime>
+                    <Yields/>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
@@ -411,6 +423,12 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <iTime>100</iTime>
+                    <Yields/>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
@@ -518,6 +536,12 @@
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <iTime>100</iTime>
+                    <Yields/>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
@@ -741,6 +765,12 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <iTime>100</iTime>
+                    <Yields/>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
@@ -851,6 +881,12 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <iTime>100</iTime>
+                    <Yields/>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
@@ -958,6 +994,12 @@
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <iTime>100</iTime>
+                    <Yields/>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>

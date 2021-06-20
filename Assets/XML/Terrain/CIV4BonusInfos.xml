@@ -65,6 +65,10 @@
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -142,6 +146,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -641,6 +649,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -783,6 +795,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -888,6 +904,10 @@
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -965,6 +985,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -1047,7 +1071,7 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -1214,6 +1238,10 @@
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans/>
         </BonusInfo>
@@ -1269,10 +1297,6 @@
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_BOG</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
             </TerrainBooleans>
             <FeatureBooleans/>
             <FeatureTerrainBooleans/>
@@ -1453,6 +1477,10 @@
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1509,6 +1537,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -1571,6 +1603,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1640,6 +1676,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -1703,6 +1743,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1834,6 +1878,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -1890,6 +1938,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2080,6 +2132,10 @@
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2132,6 +2188,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2201,6 +2261,10 @@
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2254,6 +2318,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2448,6 +2516,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -2512,6 +2584,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -2688,6 +2764,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -2830,6 +2910,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -2969,6 +3053,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -3171,6 +3259,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -3492,6 +3584,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -3552,6 +3648,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -3801,6 +3901,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
