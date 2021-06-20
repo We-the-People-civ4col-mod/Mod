@@ -2971,7 +2971,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHANGE_NAME_CITY</Tag>
-        <English>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT][NEWLINE]to Change the Name of the Colony</English>
+        <English>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT][NEWLINE]to change the name of the colony</English>
         <French>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Cliquez &gt;[COLOR_REVERT][NEWLINE]pour changer le nom</French>
         <German>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT][NEWLINE]um den Namen der Kolonie zu ändern</German>
         <Italian>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Clicca &gt;[COLOR_REVERT][NEWLINE]qui per cambiare il nome</Italian>
@@ -2979,11 +2979,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHANGE_NAME_UNIT</Tag>
-        <English>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT][NEWLINE]to Change the Name of the Unit</English>
-        <French>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Cliquez &gt;[COLOR_REVERT][NEWLINE]pour changer le nom</French>
-        <German>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT][NEWLINE]um den Namen der Einheit zu ändern</German>
-        <Italian>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Clicca &gt;[COLOR_REVERT][NEWLINE]qui per cambiare il nome</Italian>
-        <Spanish>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Haz clic &gt;[COLOR_REVERT][NEWLINE]para cambiar el nombre de la colonia</Spanish>
+        <English>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT] to change the name of the unit</English>
+        <French>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Cliquez &gt;[COLOR_REVERT] pour changer le nom</French>
+        <German>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um den Namen der Einheit zu ändern</German>
+        <Italian>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Clicca &gt;[COLOR_REVERT] qui per cambiare il nome</Italian>
+        <Spanish>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Haz clic &gt;[COLOR_REVERT] para cambiar el nombre</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NAME_CITY</Tag>
