@@ -195,57 +195,209 @@ public:
 	}
 };
 
-template<int DIMENTION, typename T> class InfoArrayToken {};
 template <typename type> struct JIT_TYPE {};
 
-
-
-
+enum JIT_NoneTypes {};
 #define INFO_ARRAY_CONST(type, JITtype )                                           \
 template <> struct JIT_TYPE<type>                                                  \
 {                                                                                  \
 	static const JITarrayTypes TYPE = JITtype;                                     \
 };
 
-#define INFO_ARRAY_GET_SHARED(type, getName, JITtype, returnType)                  \
-INFO_ARRAY_CONST(type, JITtype)                                                    \
-template<int DIMENTION> class InfoArrayToken<DIMENTION, type>                      \
- : virtual protected InfoArrayMod                                                  \
-{                                                                                  \
-BOOST_STATIC_ASSERT(DIMENTION >= 0 && DIMENTION < 4);                              \
-protected:                                                                         \
-	InfoArrayToken() {}                                                            \
-public:                                                                            \
-	returnType getName(int iIndex) const                                           \
-	{                                                                              \
-		return static_cast< returnType > (getInternal(iIndex, DIMENTION));         \
-	}                                                                              \
-	returnType getWithTemplate(int iIndex, returnType eVar) const                  \
-	{                                                                              \
-		return static_cast< returnType > (getInternal(iIndex, DIMENTION));         \
-	}                                                                              \
-	int getIndexOf(returnType eValue) const                                        \
-	{                                                                              \
-		return _getIndexOf(eValue, DIMENTION);                                     \
-	}                                                                              \
-};
-
-#define INFO_ARRAY_GET(type, getName, JITtype)                                     \
-	INFO_ARRAY_GET_SHARED(type, getName, JITtype, type)
-
-#define INFO_ARRAY_GET_INT(type, getName, JITtype)                                 \
-enum type {};                                                                      \
-INFO_ARRAY_GET_SHARED(type, getName, JITtype, int)
+//
+// Here comes a complex setup, which is based on a fairly simple idea.
+// InfoArray inherits InfoArrayX (X being 1-4) and InfoArrayXOnly.
+// This mean an InfoArray with two non-default parameters will have InfoArray1, InfoArray2 and InfoArray2Only.
+// The extra class names allows partial specialization even in cases where the C++ standard doesn't support partial specialization.
+// All classes allows specialization meaning we can add code for say interaction between UnitClassTypes and UnitTypes.
+// Defining all 12 classes is however a bit lengthy (4 InfoArrayX, 4 InfoArrayXOnly, 4 InfoArraySelector)
+//
 
 
+template<typename T0>
+class InfoArray1 {};
+template<typename T0, typename T1>
+class InfoArray2 {};
+template<typename T0, typename T1, typename T2>
+class InfoArray3 {};
+template<typename T0, typename T1, typename T2, typename T3>
+class InfoArray4 {};
 
-enum JIT_NoneTypes {};
-INFO_ARRAY_CONST(JIT_NoneTypes, JIT_ARRAY_NO_TYPE)
-template<int DIMENTION> class InfoArrayToken<DIMENTION, JIT_NoneTypes>
+// the only classes. Each instance of InfoArray will have precisely one of those
+template<typename T0>
+class InfoArray1Only : public InfoArray1<T0>
 {
 protected:
-	InfoArrayToken() {};
+	InfoArray1Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
+		: InfoArray1<T0>(eType0, eType1, eType2, eType3) {}
 };
+template<typename T0, typename T1>
+class InfoArray2Only : public InfoArray2<T0, T1>
+{
+protected:
+	InfoArray2Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
+		: InfoArray2<T0, T1>(eType0, eType1, eType2, eType3) {}
+};
+template<typename T0, typename T1, typename T2>
+class InfoArray3Only : public InfoArray3<T0, T1, T2>
+{
+protected:
+	InfoArray3Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
+		: InfoArray3<T0, T1, T2>(eType0, eType1, eType2, eType3) {}
+};
+template<typename T0, typename T1, typename T2, typename T3>
+class InfoArray4Only : public InfoArray4<T0, T1, T2, T3>
+{
+protected:
+	InfoArray4Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
+		: InfoArray4<T0, T1, T2, T3>(eType0, eType1, eType2, eType3) {}
+};
+
+// selector classes. InfoArray will inherit one, which in turn will inherit one only class
+template<typename T0, typename T1, typename T2, typename T3, int unused>
+class InfoArraySelector;
+
+template<typename T0>
+class InfoArraySelector<T0, JIT_NoneTypes, JIT_NoneTypes, JIT_NoneTypes, 0> : public InfoArray1Only<T0>
+{
+protected:
+	InfoArraySelector(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
+		: InfoArray1Only<T0>(eType0, eType1, eType2, eType3) {}
+};
+template<typename T0, typename T1>
+class InfoArraySelector<T0,T1, JIT_NoneTypes, JIT_NoneTypes, 0> : public InfoArray2Only<T0, T1>
+{
+protected:
+	InfoArraySelector(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
+		: InfoArray2Only<T0, T1>(eType0, eType1, eType2, eType3) {}
+};
+template<typename T0, typename T1, typename T2>
+class InfoArraySelector<T0, T1, T2, JIT_NoneTypes, 0> : public InfoArray3Only<T0, T1, T2>
+{
+protected:
+	InfoArraySelector(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
+		: InfoArray3Only<T0, T1, T2>(eType0, eType1, eType2, eType3) {}
+};
+template<typename T0, typename T1, typename T2, typename T3>
+class InfoArraySelector<T0, T1, T2, T3, 0> : public InfoArray4Only<T0, T1, T2, T3>
+{
+protected:
+	InfoArraySelector(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
+		: InfoArray4Only<T0, T1, T2, T3>(eType0, eType1, eType2, eType3) {}
+};
+
+// the "real" classes. All declared in defines as they become type strict (returns T0 type etc)
+
+#define INFO_ARRAY_GET_1(type, getName, JITtype, returnType)                                                                                                  \
+template<> class InfoArray1<type>                                                                                                                             \
+	: protected InfoArrayMod                                                                                                                                  \
+		, public boost::noncopyable                                                                                                                           \
+{                                                                                                                                                             \
+protected:                                                                                                                                                    \
+	InfoArray1(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3) : InfoArrayMod(eType0, eType1, eType2, eType3) {}      \
+public:                                                                                                                                                       \
+	int getLength() const {return InfoArrayBase::getLength();}                                                                                                \
+	returnType getName(int iIndex) const                                                                                                                      \
+	{                                                                                                                                                         \
+		return static_cast< returnType > (getInternal(iIndex, 0));                                                                                            \
+	}                                                                                                                                                         \
+	returnType getWithTemplate(int iIndex, returnType eVar) const                                                                                             \
+	{                                                                                                                                                         \
+		return static_cast< returnType > (getInternal(iIndex, 0));                                                                                            \
+	}                                                                                                                                                         \
+	int getIndexOf(returnType eValue) const                                                                                                                   \
+	{                                                                                                                                                         \
+		return _getIndexOf(eValue, 0);                                                                                                                        \
+	}                                                                                                                                                         \
+};
+
+#define INFO_ARRAY_GET_2(type, getName, JITtype, returnType)                                                                                                  \
+template<typename T0> class InfoArray2<T0, type> : public InfoArray1<T0>                                                                                      \
+{                                                                                                                                                             \
+protected:                                                                                                                                                    \
+	InfoArray2(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)                                                        \
+	: InfoArray1<T0>(eType0, eType1, eType2, eType3) {}                                                                                                       \
+public:                                                                                                                                                       \
+	returnType getName(int iIndex) const                                                                                                                      \
+	{                                                                                                                                                         \
+		return static_cast< returnType > (getInternal(iIndex, 1));                                                                                            \
+	}                                                                                                                                                         \
+	returnType getWithTemplate(int iIndex, returnType eVar) const                                                                                             \
+	{                                                                                                                                                         \
+		return static_cast< returnType > (getInternal(iIndex, 1));                                                                                            \
+	}                                                                                                                                                         \
+	int getIndexOf(returnType eValue) const                                                                                                                   \
+	{                                                                                                                                                         \
+		return _getIndexOf(eValue, 1);                                                                                                                        \
+	}                                                                                                                                                         \
+};
+
+#define INFO_ARRAY_GET_3(type, getName, JITtype, returnType)                                                                                                  \
+template<typename T0, typename T1> class InfoArray3<T0, T1, type> : public InfoArray2<T0, T1>                                                                 \
+{                                                                                                                                                             \
+protected:                                                                                                                                                    \
+	InfoArray3(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)                                                        \
+	: InfoArray2<T0, T1>(eType0, eType1, eType2, eType3) {}                                                                                                   \
+public:                                                                                                                                                       \
+	returnType getName(int iIndex) const                                                                                                                      \
+	{                                                                                                                                                         \
+		return static_cast< returnType > (getInternal(iIndex, 2));                                                                                            \
+	}                                                                                                                                                         \
+	returnType getWithTemplate(int iIndex, returnType eVar) const                                                                                             \
+	{                                                                                                                                                         \
+		return static_cast< returnType > (getInternal(iIndex, 2));                                                                                            \
+	}                                                                                                                                                         \
+	int getIndexOf(returnType eValue) const                                                                                                                   \
+	{                                                                                                                                                         \
+		return _getIndexOf(eValue, 2);                                                                                                                        \
+	}                                                                                                                                                         \
+};
+
+#define INFO_ARRAY_GET_4(type, getName, JITtype, returnType)                  \
+template<typename T0, typename T1, typename T2> class InfoArray4<T0, T1, T2, type> : public InfoArray3<T0, T1, T2>                                            \
+{                                                                                                                                                             \
+protected:                                                                                                                                                    \
+	InfoArray4(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)                                                        \
+      : InfoArray3<T0, T1, T2>(eType0, eType1, eType2, eType3) {}                                                                                             \
+public:                                                                                                                                                       \
+	returnType getName(int iIndex) const                                                                                                                      \
+	{                                                                                                                                                         \
+		return static_cast< returnType > (getInternal(iIndex, 3));                                                                                            \
+	}                                                                                                                                                         \
+	returnType getWithTemplate(int iIndex, returnType eVar) const                                                                                             \
+	{                                                                                                                                                         \
+		return static_cast< returnType > (getInternal(iIndex, 3));                                                                                            \
+	}                                                                                                                                                         \
+	int getIndexOf(returnType eValue) const                                                                                                                   \
+	{                                                                                                                                                         \
+		return _getIndexOf(eValue, 3);                                                                                                                        \
+	}                                                                                                                                                         \
+};
+
+
+
+
+
+#define INFO_ARRAY_GET_ALL(type, getName, JITtype, type2)                                                                                                     \
+	INFO_ARRAY_CONST(type, JITtype)                                                                                                                           \
+    INFO_ARRAY_GET_1(type, getName, JITtype, type2)                                                                                                           \
+	INFO_ARRAY_GET_2(type, getName, JITtype, type2)                                                                                                           \
+	INFO_ARRAY_GET_3(type, getName, JITtype, type2)                                                                                                           \
+	INFO_ARRAY_GET_4(type, getName, JITtype, type2)
+
+#define INFO_ARRAY_GET(type, getName, JITtype)                                                                                                                \
+	INFO_ARRAY_GET_ALL(type, getName, JITtype, type)
+
+
+#define INFO_ARRAY_GET_INT(type, getName, JITtype)                                                                                                            \
+	enum type {};                                                                                                                                             \
+	INFO_ARRAY_GET_ALL(type, getName, JITtype, int)
+
+
+
+
+INFO_ARRAY_CONST(JIT_NoneTypes, JIT_ARRAY_NO_TYPE)
+
 
 INFO_ARRAY_GET(AchieveTypes                 , getAchieve            , JIT_ARRAY_ACHIEVE            )
 INFO_ARRAY_GET(ArtStyleTypes                , getArtStyle           , JIT_ARRAY_ART_STYLE          )
@@ -314,19 +466,9 @@ INFO_ARRAY_GET_INT(UIntTypes                , getInt                , JIT_ARRAY_
 INFO_ARRAY_GET_INT(FloatTypes               , getFloat              , JIT_ARRAY_FLOAT              )
 
 
-//
-// Uses multiple inheritage with a single parent
-// Uses virtual parents to get this to work properly
-// Details: https://www.geeksforgeeks.org/multiple-inheritance-in-c/
-//
 
 template<typename T0, typename T1 = JIT_NoneTypes, typename T2 = JIT_NoneTypes, typename T3 = JIT_NoneTypes>
-class InfoArray : virtual protected InfoArrayMod
-	, public InfoArrayToken<0, T0>
-	, public InfoArrayToken<1, T1>
-	, public InfoArrayToken<2, T2>
-	, public InfoArrayToken<3, T3>
-	, public boost::noncopyable
+class InfoArray : public InfoArraySelector<T0, T1, T2, T3, 0>
 {
 	// classes, which somehow bypasses the compile time type check
 	// TODO remove as many as possible
@@ -336,14 +478,8 @@ class InfoArray : virtual protected InfoArrayMod
 	friend class CvPlayerCivEffect;
 	friend class CvInfoBase;
 public:
-	InfoArray() : InfoArrayMod(JIT_TYPE<T0>::TYPE, JIT_TYPE<T1>::TYPE, JIT_TYPE<T2>::TYPE, JIT_TYPE<T3>::TYPE)
-		, InfoArrayToken<0, T0>()
-		, InfoArrayToken<1, T1>()
-		, InfoArrayToken<2, T2>()
-		, InfoArrayToken<3, T3>()
+	InfoArray() : InfoArraySelector<T0, T1, T2, T3, 0>(JIT_TYPE<T0>::TYPE, JIT_TYPE<T1>::TYPE, JIT_TYPE<T2>::TYPE, JIT_TYPE<T3>::TYPE)
 	{};
-
-	int getLength() const;
 
 	// interaction with EnumMap
 	template<typename T>
@@ -356,13 +492,6 @@ public:
 	template<typename T>
 	void copyTo(EnumMap<T0, T> & em) const;
 };
-
-
-template<typename T0, typename T1, typename T2, typename T3>
-int InfoArray<T0, T1, T2, T3>::getLength() const
-{
-	return InfoArrayBase::getLength();
-}
 
 template<typename T0, typename T1, typename T2, typename T3>
 template<typename T>

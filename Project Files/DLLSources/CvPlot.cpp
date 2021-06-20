@@ -4443,7 +4443,7 @@ CvArea* CvPlot::getAdjacentSeaArea() const
 
 //WTP, Nightinggale - Terrain locator - start
 template <typename T>
-bool CvPlot::hasNearbyPlotWith(const InfoArray<T>& kInfo, int iRange, bool bEmptyReturnVal) const
+bool CvPlot::hasNearbyPlotWith(const InfoArray1<T>& kInfo, int iRange, bool bEmptyReturnVal) const
 {
 	const int iLength = kInfo.getLength();
 	if (iLength == 0)
