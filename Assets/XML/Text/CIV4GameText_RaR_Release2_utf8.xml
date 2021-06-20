@@ -7,33 +7,33 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_HEMI_DESC</Tag>
-        <English>Leave your mark on everything west of the Atlantic in this Western Hemisphere scenario!</English>
-        <French>Laissez votre empreinte sur tout ce qui se trouve à l'ouest de l'Atlantique dans le scénario "Amériques" !</French>
-        <German>Mittelgroße Karte der Neuen Welt (Karte aus dem Originalspiel, von TAC nicht verändert)</German>
+        <English>Map of Western Hemisphere : leave your mark on everything west of the Atlantic in this scenario!</English>
+        <French>Carte de l'hémisphère Ouest : laissez votre empreinte sur tout ce qui se trouve à l'ouest de l'Atlantique dans le scénario "Amériques" !</French>
+        <German>Karte der Westlichen Hemisphäre (unveränderte Karte aus dem Originalspiel) : hinterlassen Sie in diesem Szenario Ihre Spuren in allem, was westlich des Atlantiks liegt!</German>
         <Italian>Lascia il segno su tutto quello che si trova a ovest dell'Atlantico, in questo scenario sull'emisfero occidentale!</Italian>
         <Spanish>Dejad huella en todo el Atlántico oeste gracias a este escenario del hemisferio occidental.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_HEMI_HUGE_DESC</Tag>
-        <English>Colonize the whole of the New World in this huge Western Hemisphere scenario.</English>
-        <French>Colonisez la totalité du Nouveau Monde dans le gigantesque scénario "Amériques".</French>
-        <German>Sehr große Karte der Neuen Welt (Karte aus dem Originalspiel, von TAC nicht verändert)</German>
+        <English>Map of Western Hemisphere : colonize the whole of the New World in this scenario</English>
+        <French>Carte de l'hémisphère Ouest : colonisez la totalité du Nouveau Monde dans le scénario "Amériques"</French>
+        <German>Karte der Westlichen Hemisphäre (unveränderte Karte aus dem Originalspiel) : kolonisieren Sie die gesamte Neue Welt in diesem Szenario</German>
         <Italian>Colonizza il Nuovo Mondo in questo enorme scenario sull'emisfero occidentale.</Italian>
         <Spanish>Colonizad todo el Nuevo Mundo en este enorme escenario del hemisferio occidental.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_SOUTH_AMERICA_DESC</Tag>
-        <English>Conquer the jungles of the Amazon, the peaks of the Andes, and the plains of Patagonia in this South America scenario.</English>
-        <French>Partez à la conquête de la jungle amazonienne, des pics andins et des plaines de Patagonie dans le scénario "Amérique du Sud".</French>
-        <German>Mittelgroße Karte von Süd-Amerika (Karte aus dem Originalspiel, von TAC nicht verändert): Erkundet den Amazonasdschungel und die Gipfel der Anden und segelt um den Südzipfel der Neuen Welt!</German>
+        <English>Map of South America : conquer the jungles of the Amazon, the peaks of the Andes, and the plains of Patagonia in this scenario</English>
+        <French>Carte de l'Amérique du Sud : partez à la conquête de la jungle amazonienne, des pics andins et des plaines de Patagonie dans le scénario "Amérique du Sud".</French>
+        <German>Karte von Süd-Amerika (unveränderte Karte aus dem Originalspiel) : erkundet den Amazonasdschungel und die Gipfel der Anden und segelt um den Südzipfel der Neuen Welt!</German>
         <Italian>Conquista le giungle dell'Amazzonia, i picchi delle Ande e le pianure della Patagonia, in questo scenario sudamericano.</Italian>
         <Spanish>Conquistad las selvas del Amazonas, los picos de los Andes y las llanuras de la Patagonia en este escenario de Suramérica.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_NORTHWEST_DESC</Tag>
-        <English>Ply the icy waters of North America and Canada in this Northwest Passage scenario.</English>
-        <French>Voguez sur les eaux glacées d'Amérique du Nord dans le scénario "Passage du Nord-Ouest".</French>
-        <German>Große Karte des kalten Nordens der Neuen Welt (Karte aus dem Originalspiel, von TAC nicht verändert): Durchkreuzt die eisigen Gewässer und erforscht die Großen Seen im Landesinneren!</German>
+        <English>Map of Northwest Passage : Ply the icy waters of North America and Canada in this scenario.</English>
+        <French>Carte de le passage par le Nord Ouest : Voguez sur les eaux glacées d'Amérique du Nord dans le scénario "Passage du Nord-Ouest".</French>
+        <German>Karte der Nordwest-Passage (unveränderte Karte aus dem Originalspiel) : Durchkreuzt die eisigen Gewässer und erforscht die Großen Seen im Landesinneren!</German>
         <Italian>Solca le gelide acque del Nord America e del Canada in questo scenario sul passaggio a nord-ovest.</Italian>
         <Spanish>Surcad las aguas heladas de Estados Unidos y Canadá en este escenario del Paso del Noroeste.</Spanish>
     </TEXT>
@@ -41,81 +41,81 @@
         <Tag>TXT_KEY_MAP_SCRIPT_CARIBBEAN_DESCR</Tag>
         <English>Take in the island air and take over the islands themselves in this semi-randomized Caribbean map.</English>
         <French>Allez prendre l'air dans les îles et prenez les îles elles-mêmes dans cette carte semi-aléatoire des Caraïbes.</French>
-        <German>Zufallsgenerierte Inselwelt, die der Karibik ähnelt</German>
+        <German>Zufallsgenerierte Inselwelt, die der Karibik ähnelt.</German>
         <Italian>Fai una vacanza al mare e conquista un intero arcipelago, in questa mappa caraibica semi-casuale.</Italian>
         <Spanish>Dejaos seducir por el ambiente de las islas y apoderaos de ellas en este mapa semialeatorio del Caribe.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TAC_AMERICA_DESC</Tag>
-        <English>TAC-version of Western Hemisphere (Huge): realistic and coherent temperate zones, authentic rivers, authentic mountains, authentic islands, several river bugs fixed, fair balanced transfer plots and starting positions</English>
-        <French>Version TAC de l'hémisphère Ouest (Immense):zones tempérées réalistes et cohérentes, fleuves, montagnes, îles authentiques à la réalité avec quelques ajustements dans l'intérêt du jeu.</French>
-        <German>TAC-Variante der Amerika-Karte Western Hemisphere (Huge): authentische und zusammenhängende Klimazonen, authentische Flüsse, authentische Höhenzüge, korrekt platzierte Inseln, fair verteilte Überfahrtsfelder nach Europa; Fixing von Flüssen, die stromaufwärts flossen oder im Binnenland versickerten; Fixing von bewaldeten Meeresfeldern</German>
+        <English>Map of Western Hemisphere : realistic and coherent temperate zones, authentic rivers, authentic mountains, authentic islands, fair balanced transfer plots and starting positions</English>
+        <French>Carte de l'hémisphère Ouest : zones tempérées réalistes et cohérentes, fleuves, montagnes, îles authentiques à la réalité avec quelques ajustements dans l'intérêt du jeu.</French>
+        <German>Karte der Westlichen Hemisphäre : authentische und zusammenhängende Klimazonen, authentische Flüsse, authentische Höhenzüge, korrekt platzierte Inseln, fair verteilte Überfahrtsfelder nach Europa</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TAC_NORTHWEST_DESC</Tag>
-        <English>TAC-version of Northwest Passage: realistic and coherent temperate zones, authentic rivers, authentic mountains, fixing of several river bugs, new Pacific transfer plots, only five Atlantic transfer plots and starting positions for different temperate zones and different game experiences</English>
-        <French>Version TAC du passage par le Nord Ouest (Immense):zones tempérées réalistes et cohérentes, fleuves, montagnes, îles authentiques à la réalité avec seulement 5 cases d'accès à l'Europe par l'Atlantique servant chacune de position de départ pour diversifier les expériences de jeu.</French>
-        <German>TAC-Variante der Karte Northwest Passage: nur Indianervölker aus Nord-Amerika, authentische und zusammenhängende Klimazonen, authentische Flüsse, authentische Höhenzüge, erstmals Pazifik-Überfahrtsfelder, nur noch fünf, fair verteilte Überfahrtsfelder im Atlantik, die als Startpositionen in verschiedene Klimazonen führen, die unterschiedliche Herausforderungen bieten; Fixing von Flüssen, die stromaufwärts flossen oder im Binnenland versickerten</German>
+        <English>Map of Northwest Passage : only Native tribes from North America, realistic and coherent temperate zones, authentic rivers, authentic mountains, new Pacific transfer plots, only five Atlantic transfer plots and starting positions for different temperate zones and different game experiences</English>
+        <French>Carte de le passage par le Nord Ouest : uniquement les tribus amérindiennes d'Amérique du Nord, zones tempérées réalistes et cohérentes, fleuves, montagnes, îles authentiques à la réalité avec seulement 5 cases d'accès à l'Europe par l'Atlantique servant chacune de position de départ pour diversifier les expériences de jeu</French>
+        <German>Karte der Nordwest-Passage : nur Indianervölker aus Nord-Amerika, authentische und zusammenhängende Klimazonen, authentische Flüsse, authentische Höhenzüge, erstmals Pazifik-Überfahrtsfelder, nur noch fünf, fair verteilte Überfahrtsfelder im Atlantik, die als Startpositionen in verschiedene Klimazonen führen, die unterschiedliche Herausforderungen bieten</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TAC_SOUTH_AMERICA_DESC</Tag>
-        <English>TAC-version of South America: transfer plots optimized, fixing of several river bugs, more rivers, more plots with jungle and peaks, Patagonia with fewer desert plots and more lumber</English>
-        <French>Version TAC de l'Amérique du Sud avec quelques ajustements au niveau des fleuves, de la jungle et du désert en Patagonie.</French>
-        <German>TAC-Variante der Karte South America: nur Indianervölker aus Süd-Amerika, mehr Dschungel, mehr Berge, mehr Flüsse, ausgeglichener balancierte Atlantik-Überfahrtsfelder, erstmals Pazifik-Überfahrtsfelder, Südzipfel mit weniger Wüste und erstmals mit Holzquellen; Fixing von Flüssen, die stromaufwärts flossen oder im Binnenland versickerten</German>
+        <English>Map of South America : only Native tribes from South America, transfer plots optimized, more rivers, more plots with jungle and peaks, Patagonia with fewer desert plots and more lumber</English>
+        <French>Carte de l'Amérique du Sud : uniquement des tribus indigènes d'Amérique du Sud, transfert de parcelles optimisé, plus de rivières, plus de parcelles avec de la jungle et des sommets, Patagonie avec moins de parcelles désertiques et plus de bois</French>
+        <German>Karte von Süd-Amerika : nur Indianervölker aus Süd-Amerika, mehr Dschungel, mehr Berge, mehr Flüsse, ausgeglichener balancierte Atlantik-Überfahrtsfelder, erstmals Pazifik-Überfahrtsfelder, Südzipfel mit weniger Wüste und erstmals mit Holzquellen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TAC_CENTRAL_AMERICA_DESC</Tag>
-        <English>TAC-map of Central America: from the Caribbean Sea to Mexico, from the Mississippi River to Amazon</English>
-        <French>Version TAC de l'Amérique Centrale : de la mer des Caraïbes au Mexique, du Mississippi à l'Amazone.</French>
-        <German>TAC-Karte von Mittel-Amerika: von den Karibischen Inseln bis Mexiko, vom Mississippi-Delta bis hin zum Amazonasdschungel</German>
+        <English>Map of Central America : from the Caribbean Sea to Mexico, from the Mississippi River to Amazon</English>
+        <French>Carte de l'Amérique Centrale : de la mer des Caraïbes au Mexique, du Mississippi à l'Amazone.</French>
+        <German>Karte von Mittel-Amerika : von den Karibischen Inseln bis Mexiko, vom Mississippi-Delta bis hin zu den Dschungeln des Amazonas</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TAC_EAST_COAST_DESC</Tag>
-        <English>Huge TAC-map of the East Coast of North America. Defined as a small map, therefore only four North American native tribes have settlements. Newfoundland south to Florida, the Great Lakes east to the Atlantic.</English>
-        <French>Version TAC de la côte Est Nord-Américaine. Défini volontairement comme une petite carte pour n'abriter que 4 tribus Nord-Américaines. De Terre-Neuve à la Floride, des Grands Lacs à l'Atlantique.</French>
-        <German>Riesige TAC-Karte der Ostküste Nord-Amerikas. Technisch als "kleine" Karte ausgewiesen, damit sie nur von den vier Indianerstämmen des Nordens besiedelt ist. Von Neufundland bis Florida, von den Großen Seen bis zur Atlantikküste.</German>
+        <English>Map of the East Coast of North America : Newfoundland south to Florida, the Great Lakes east to the Atlantic. Defined as a small map, therefore only four North American native tribes have settlements.</English>
+        <French>Carte de côte Est Nord-Américaine : de Terre-Neuve à la Floride, des Grands Lacs à l'Atlantique. Défini volontairement comme une petite carte pour n'abriter que 4 tribus Nord-Américaines.</French>
+        <German>Karte der Ostküste Nord-Amerikas : von Neufundland bis Florida, von den Großen Seen bis zur Atlantikküste. Technisch als "kleine" Karte ausgewiesen, damit sie nur von den vier Indianerstämmen des Nordens besiedelt ist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERAYCA</Tag>
-        <English>Religion and Revolution (Gigantic): Optimized for playing Religion and Revolution. Not geographically or historically correct. Extremely big.</English>
-        <French>Religion and Revolution (Gigantesque): Optimisée pour jouer à Religion and Revolution. Ni géographiquement, ni historiquement correcte. Extrêmement grande.</French>
-        <German>Religion und Revolution (Gigantisch): Optimiert für das Spielen von Religion und Revolution. Nicht geografisch oder historisch korrekt. Extrem groß.</German>
+        <English>Optimized for playing the mod. Not geographically or historically correct.</English>
+        <French>Optimisé pour le jeu du mod. Ni géographiquement, ni historiquement correcte.</French>
+        <German>Optimiert für das Spielen des Mods. Nicht geografisch oder historisch korrekt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_THE_NEW_WORLD</Tag>
-        <English>Religion and Revolution (Gigantic): Geographically correct map of the New World. Extremely big.</English>
-        <French>Religion and Revolution (Gigantesque): Carte géographiquement correcte des Amériques. Extrêmement grande.</French>
-        <German>Religion und Revolution (Gigantisch): Geographisch korrekte Karte der Neuen Welt. Extrem groß.</German>
+        <English>Geographically correct map of the New World.</English>
+        <French>Carte géographiquement correcte des Amériques.</French>
+        <German>Geographisch korrekte Karte der Neuen Welt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_COLONIAL_AMERICA</Tag>
-        <English>Huge map of North America with random locations of Natives, resources and starting locations for Europeans.</English>
-        <French>Énorme carte de l'Amérique du Nord avec des emplacements aléatoires des autochtones, des ressources et des lieux de départ pour les Européens.</French>
-        <German>Grosse Karte von Nord-Amerika mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer.</German>
+        <English>Map of North America : random locations of Natives, resources and starting locations for Europeans</English>
+        <French>Carte de l'Amérique du Nord : emplacements aléatoires des autochtones, ressources et lieux de départ pour les Européens</French>
+        <German>Karte von Nord-Amerika : zufällige Ressourcen und Siedlungsgebiete der Eingeborenen sowie Startplätze für die Europäer</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC</Tag>
-        <English>Faithful gigantic map of the Americas (136x256 plots) with historical locations of Natives and resources.</English>
-        <French>Représentation fidèle gigantesque des Amériques (136x256 cases), avec distribution historique des indigènes et des ressources.</French>
-        <German>Genaue gigantische Karte von Amerika (136x256 Felder) mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen.</German>
+        <English>(136x256 plots) Map of the Americas : faithful map with historical locations of Natives and resources</English>
+        <French>(136x256 cases) Carte des Amériques : représentation fidèle, avec distribution historique des indigènes et des ressources</French>
+        <German>(136x256 Felder) Karte von Amerika : genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC_RANDOM</Tag>
-        <English>Faithful gigantic map of the Americas (136x256 plots) with random locations of Natives, resources and starting locations for Europeans.</English>
-        <French>Représentation fidèle gigantesque des Amériques (136x256 cases), avec distribution aléatoire des indigènes, des ressources et des points de départs pour les européens.</French>
-        <German>Genaue gigantische Karte von Amerika (136x256 Felder) mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer.</German>
+        <English>(136x256 plots) Map of the Americas : faithful map with random locations of Natives, resources and starting locations for Europeans</English>
+        <French>(136x256 cases) Carte des Amériques : représentation fidèle, avec distribution aléatoire des indigènes, des ressources et des points de départs pour les européens</French>
+        <German>(136x256 Felder) Karte von Amerika : genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE</Tag>
-        <English>Faithful huge map of the Americas (68x128 plots) with historical locations of Natives and resources.</English>
-        <French>Représentation fidèle immense des Amériques (68x128 cases), avec distribution historique des indigènes et des ressources.</French>
-        <German>Genaue riesige Karte von Amerika (68x128 Felder) mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen.</German>
+        <English>(68x128 plots) Map of the Americas : faithful map with historical locations of Natives and resources</English>
+        <French>(68x128 cases) Carte des Amériques : représentation fidèle des Amériques, avec distribution historique des indigènes et des ressources</French>
+        <German>(68x128 Felder) Karte von Amerika : genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE_RANDOM</Tag>
-        <English>Faithful huge map of the Americas (68x128 plots) with random locations of Natives, resources and starting locations for Europeans.</English>
-        <French>Représentation fidèle immense des Amériques (68x128 cases), avec distribution aléatoire des indigènes, des ressources et des points de départs pour les européens.</French>
-        <German>Genaue riesige Karte von Amerika (68x128 Felder) mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer.</German>
+        <English>(68x128 plots) Map of the Americas : faithful map with random locations of Natives, resources and starting locations for Europeans</English>
+        <French>(68x128 cases) Carte des Amériques : représentation fidèle des Amériques, avec distribution aléatoire des indigènes, des ressources et des points de départs pour les européens</French>
+        <German>(68x128 Felder) Karte von Amerika : genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_SCRIPT_ANEWWORLD_DESCR</Tag>
@@ -415,7 +415,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_REVEAL_ALL</Tag>
-        <English>Reveal All Tiles</English>
+        <English>Reveal all tiles</English>
         <French>Dévoiler toutes les cases</French>
         <German>Alle Geländefelder einblenden</German>
         <Italian>Rivela tutte le caselle</Italian>
@@ -423,7 +423,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_UNREVEAL_ALL</Tag>
-        <English>Unreveal All Tiles</English>
+        <English>Unreveal all tiles</English>
         <French>Masquer toutes les cases</French>
         <German>Alle Geländefelder ausblenden</German>
         <Italian>Copri tutte le caselle</Italian>
@@ -479,7 +479,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_ADD_MOUNTAIN</Tag>
-        <English>Add Mountain</English>
+        <English>Add mountain</English>
         <French>Ajouter montagne</French>
         <German>Berg hinzufügen</German>
         <Italian>Aggiungi montagna</Italian>
@@ -487,7 +487,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_ADD_HILL</Tag>
-        <English>Add Hill</English>
+        <English>Add hills</English>
         <French>Ajouter colline</French>
         <German>Hügel hinzufügen</German>
         <Italian>Aggiungi collina</Italian>
@@ -495,7 +495,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_ADD_GRASS</Tag>
-        <English>Add Grass</English>
+        <English>Add grass</English>
         <French>Ajouter prairie</French>
         <German>Gras hinzufügen</German>
         <Italian>Aggiungi prato</Italian>
@@ -503,7 +503,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_ADD_OCEAN</Tag>
-        <English>Add Ocean</English>
+        <English>Add ocean</English>
         <French>Ajouter océan</French>
         <German>Ozean hinzufügen</German>
         <Italian>Aggiungi oceano </Italian>
@@ -527,7 +527,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_ADD_SCRIPT</Tag>
-        <English>Add Script</English>
+        <English>Add script</English>
         <French>Ajouter script</French>
         <German>Skript hinzufügen</German>
         <Italian>Aggiungi script</Italian>
@@ -631,7 +631,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_SIZE_TAG</Tag>
-        <English>Map Size : %s1_size</English>
+        <English>Map size : %s1_size</English>
         <French>Taille carte : %s1_size</French>
         <German>Kartengröße : %s1_size</German>
         <Italian>Dimensioni mappa : %s1_size</Italian>
@@ -687,7 +687,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_AS_COST_THIS_LOCATION</Tag>
-        <English>Cost Here : %d1_Amount[ICON_GOLD]</English>
+        <English>Cost here : %d1_Amount[ICON_GOLD]</English>
         <French>Coût ici : %d1_Amount[ICON_GOLD]</French>
         <German>Kosten hier : %d1_Amount[ICON_GOLD]</German>
         <Italian>Costo qui : %d1_Amount[ICON_GOLD]</Italian>
