@@ -539,8 +539,8 @@
         <Tag>TXT_KEY_BUY_AND_SELL_YIELD</Tag>
         <English>Europe     [TAB]Sell : %d1_Price[ICON_GOLD] / Buy : %d2_Price[ICON_GOLD]</English>
         <French>Europe     [TAB]Vendre : %d1_Price[ICON_GOLD] / Acheter : %d2_Price[ICON_GOLD]</French>
-        <German>Europa     [TAB]Verkauf: %d1_Price[ICON_GOLD] / Einkauf:  %d2_Price[ICON_GOLD]</German>
-        <Italian>Europe[TAB][TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
+        <German>Europa     [TAB]Verkauf: %d1_Price[ICON_GOLD] / Einkauf: %d2_Price[ICON_GOLD]</German>
+        <Italian>Europe     [TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
         <Spanish>Europe     [TAB]Vender: %d1_Price[ICON_GOLD] / Comprar: %d2_Price[ICON_GOLD]</Spanish>
     </TEXT>
     <TEXT>
