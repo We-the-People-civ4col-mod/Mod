@@ -199,7 +199,7 @@
         <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur les troupes ennemies et les a détruites !</French>
         <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf feindliche Truppen abgefeuert und diese vernichtet!</German>
         <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni contro le truppe nemiche e distrutti!</Italian>
-        <Spanish>La ciudadela de% s1_city ha disparado sus cañones contra las tropas enemigas y los destruyó!</Spanish>
+        <Spanish>La ciudadela de %s1_city ha disparado sus cañones contra las tropas enemigas y los destruyó!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_DESTROYED_BAD</Tag>
@@ -1105,7 +1105,7 @@
         <Tag>TXT_KEY_FORT_IMPROVEMENT_KILLED_ANIMAL</Tag>
         <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]The troops in a fort killed a dangerous animal that got inside! The remains are worth %d1[ICON_GOLD]!</English>
         <French>Les troupes en garde dans un fort ont tué un animal errant ! Ses restes ont été vendus pour %d1[ICON_GOLD]!</French>
-        <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Besatzung eines Forts hat ein herumwanderndes Tier getötet, dessen Körperteile %d2[ICON_GOLD] wert sind!</German>
+        <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Besatzung eines Forts hat ein herumwanderndes Tier getötet, dessen Körperteile %d1[ICON_GOLD] wert sind!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONASTERY_IMPROVEMENT_APEASED_RAIDING_NATIVE</Tag>
@@ -1279,9 +1279,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_HEALTH</Tag>
-        <English>[ICON_BULLET]%D1%%[TAB]from City Health</English>
-        <French>[ICON_BULLET]%D1%%[TAB]par la santé de la ville</French>
-        <German>[ICON_BULLET]%D1%%[TAB]durch Gesundheit der Stadt</German>
+        <English>[ICON_BULLET]%D1%%%F2[TAB]from City Health</English>
+        <French>[ICON_BULLET]%D1%%%F2[TAB]par la santé de la ville</French>
+        <German>[ICON_BULLET]%D1%%%F2[TAB]durch Gesundheit der Stadt</German>
         <Italian>[ICON_BULLET]%D1%%%F2 attraverso la salute della città</Italian>
         <Spanish>[ICON_BULLET]%D1%%%F2 por la salud de la ciudad</Spanish>
     </TEXT>

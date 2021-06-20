@@ -767,7 +767,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TURNS</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]%d1_Num turns[COLOR_REVERT]</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turn:turns][COLOR_REVERT]</English>
         <French>[COLOR_HIGHLIGHT_TEXT]%d1_Num tours[COLOR_REVERT]</French>
         <German>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:Runde:Runden][COLOR_REVERT]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turni][COLOR_REVERT]</Italian>
@@ -2298,7 +2298,7 @@
         <English>Does this mean WAR?!? (vs. [COLOR_HIGHLIGHT_TEXT]%s1_Team[COLOR_REVERT])</English>
         <French>Cela signifie la GUERRE ?! (contre : [COLOR_HIGHLIGHT_TEXT]%s1_Team[COLOR_REVERT])</French>
         <German>Soll das Krieg bedeuten? (gegen [COLOR_HIGHLIGHT_TEXT]%s1_Team[COLOR_REVERT])</German>
-        <Italian>Ciò vuol dire GUERRA? (contro [COLOR_HIGHLIGHT_TEXT]% s1_Team [COLOR_REVERT])</Italian>
+        <Italian>Ciò vuol dire GUERRA? (contro [COLOR_HIGHLIGHT_TEXT]%s1_Team [COLOR_REVERT])</Italian>
         <Spanish>¿Esto es la GUERRA? (contra [COLOR_HIGHLIGHT_TEXT]%s1_Team[COLOR_REVERT])</Spanish>
     </TEXT>
     <TEXT>
@@ -8628,7 +8628,6 @@
         <German>Ihr habt Frieden mit Team [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT] geschlossen!</German>
         <Italian>Hai fatto pace con [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT]!</Italian>
         <Spanish>Habéis firmado la paz con [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT]</Spanish>
-        <Spanish>Para omitir las películas de maravillas, religiones y victoria</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FLAT_MOVEMENT</Tag>

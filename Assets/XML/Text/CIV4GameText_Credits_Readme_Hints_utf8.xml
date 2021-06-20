@@ -104,6 +104,10 @@ Vous pouvez contacter TAC via le site "civforum" : http://www.civforum.de/showth
 Vous pouvez contacter RaR via le site "CivFanatics" : http://forums.civfanatics.com/forumdisplay.php?f=455[NEWLINE][NEWLINE]</French>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CREDITS_FURSTBISCHOF</Tag>
+		<English>Fürstbischof</English>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CREDITS_FORMER_MEMBER</Tag>
 		<English>(former member)</English>
 		<French>(ex-membre)</French>

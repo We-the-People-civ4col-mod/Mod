@@ -4233,8 +4233,13 @@ int CvCity::getBaseYieldRateModifier(YieldTypes eIndex, int iExtra) const
 
 	iModifier += GET_PLAYER(getOwnerINLINE()).getTaxYieldRateModifier(eIndex);
 
-	iModifier += getRebelPercent() * GC.getMAX_REBEL_YIELD_MODIFIER() / 100;
-	
+	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing
+	// Updated to exclude happiness internally to match GUI - Nightinggale
+	if (eIndex != YIELD_HAPPINESS && eIndex != YIELD_UNHAPPINESS)
+	{
+		iModifier += getRebelPercent() * GC.getMAX_REBEL_YIELD_MODIFIER() / 100;
+	}
+
 	// R&R, ray, Health
 	iModifier += getCityHealth(); // negative CityHealth is possible
 
@@ -10808,7 +10813,11 @@ int CvCity::getImportsLimit(YieldTypes eYield) const
 // Returns the max number of yield units that the city is willing to accept
 int CvCity::getMaxImportAmount(YieldTypes eYield) const
 {
-	FAssert(isImport(eYield));
+	// automated transports will ignore import settings if loaded with something no city imports.
+	// the alternative is to get the transport unit stuck, possibly forever.
+	// for this reason, the assert message can trigger for rare, but intended behavior.
+	//    Nightinggale
+	//FAssert(isImport(eYield));
 
 	const int iImportLimit = m_em_iTradeMaxThreshold.get(eYield);
 

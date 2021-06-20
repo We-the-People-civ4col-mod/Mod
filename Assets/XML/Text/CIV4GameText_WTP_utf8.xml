@@ -11,7 +11,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_CITY_OCCUPATION_ENDED</Tag>
-        <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]The unrest has ended now. All business it back to normal.</English>
+        <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]The unrest has ended now. All business is back to normal.</English>
         <German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Die Unruhen sind vorrüber. Das Leben in der Stadt nimmt wieder seinen normalen Lauf.</German>
     </TEXT>
     <TEXT>
@@ -34,22 +34,22 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER</Tag>
-        <English>Milord, the reinforcement troops sent by His Majesty have arrived because we were declared War on by the order of another king.</English>
+        <English>Milord, reinforcement troops sent by His Majesty have arrived following the declaration of war against us by another king.</English>
         <German>Milord, die Verstärkungstruppen unseres Königs sind eingetroffen, da man uns auf Befehl eines anderen Königs den Krieg erklärt hat.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_FREE_TURNS_WORKED</Tag>
-        <English>Working to gain freedom since : %d1_turns turns</English>
+        <English>Working to gain freedom for : %d1_turns turns</English>
         <German>Arbeitet für seine Freiheit seit : %d1_turns Runden</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED</Tag>
-        <English>Working to become [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] since : %d1_turns turns</English>
+        <English>Working to become an [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] for : %d1_turns turns</English>
         <German>Arbeitet darauf hin [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden seit : %d1_turns Runden</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP</Tag>
-        <English>Worked to become [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Turns</English>
+        <English>Worked to become an [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Turns</English>
         <German>Arbeitet um [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Runden</German>
     </TEXT>
     <TEXT>
@@ -69,22 +69,22 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVES_NOT_WILLING_ALREADY_COLONIST_LEARNING</Tag>
-        <English>Milord, another European is already living and learning in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. The Natives do not want to take a second one.[NEWLINE]We should come back when that other European has finished his time in the village.</English>
+        <English>Milord, a foreign colonist is already living and learning in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. The Natives do not want to take a second one.[NEWLINE]We should come back when that other European has completed his training in the village.</English>
         <German>Milord, es lebt und lernt bereits ein anderer Europäer in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Die Ureinwohner möchten vorerst keinen weiteren aufnehmen.[NEWLINE]Wir sollten zurückkehren, wenn der andere Europäer seine Zeit im Dorf beendet hat.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NO_MORE_SETTLER</Tag>
-        <English>Since [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] has no more settlements and also no more settlers, His Majesty has decided to equip some colonists in Europe as settlers. Of course, this comes with a tax increase.</English>
+        <English>Since [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] has no more settlements and no more settlers, His Majesty has decided to equip some colonists in Europe as settlers. Of course, this comes with a tax increase.</English>
         <German>Da [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] keine weiteren Siedlungen und auch keine Siedler mehr hat, hat Seine Majestät entschieden, in Europe einige Kolonisten als Siedler auszurüsten. Das ist natürlich mit einer Steuererhöung verbunden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_FAIL</Tag>
-        <English>Milord, your Missionary failed to establish a mission in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. The Natives have however not killed him for insulting their gods, but they have heavily beaten him and left him completely broken and disillusioned.</English>
+        <English>Milord, your missionary failed to establish a mission in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Though the Natives might have killed him for insulting their gods, instead they beat him badly leaving him completely broken and disillusioned.</English>
         <German>Milord, Euer Missionar ist dabei gescheitert, die Ureinwohner in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] zu missionieren. Trotz der Beleidigung ihrer Götter haben die Ureinwohner Euren Missionar nicht getötet, sondern sie haben ihn nur schwer verprügelt, so daß er nun komplett gebrochen und desillusioniert ist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_MISSION_REPLACED</Tag>
-        <English>Milord, the Natives in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] have beaten and chased away your Missionary, since a Missionary from another Nation took his place and accused him of hereticism and other devlish deeds.</English>
+        <English>Milord, the Natives in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] have beaten and chased away your missionary. A missionary from another nation managed to replace him, after accusing him of heresy and other devilish deeds.</English>
         <German>Milord, die Ureinwohner von [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] haben Euren Missionar mit Prügeln aus dem Dorf verjagt, nachdem ein Missionar einer anderen Nation seinen Platz eingenommen hat und ihn der Teufelsanbetung beschuldigte.</German>
     </TEXT>
 </Civ4GameText>

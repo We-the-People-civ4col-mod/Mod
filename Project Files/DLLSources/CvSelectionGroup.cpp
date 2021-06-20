@@ -682,7 +682,9 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 			break;
 
 		case MISSION_HEAL:
-			if (pLoopUnit->canHeal(pPlot))
+			if (pLoopUnit->canHeal(pPlot)
+				// fix: can't heal unless heal rate at the plot is positive (read: not in storms) - Nightinggale
+				&& pLoopUnit->healTurns(pLoopUnit->plot()) != MAX_INT)
 			{
 				return true;
 			}

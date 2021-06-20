@@ -61,12 +61,12 @@ Current active WTP team members
 	Nightinggale
 	Schmiddie
 	Mr.ZorG
+	Fürstbischof
+	Kendon
 
 Particularly active WTP supporters:
 
 	Raubwürger
-	Fürstbischof
-	Kendon
 
 Former (now inactive) RaR members:
 
