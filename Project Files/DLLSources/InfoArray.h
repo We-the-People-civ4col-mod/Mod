@@ -119,8 +119,13 @@ protected:
 	int _getIndexOf(int iValue, int iDim) const;
 
 	short m_iLength;
-	char m_iNumDimentions;
-	short* m_pArray;
+	char m_iNumDimentions : 7;
+	bool m_bStatic : 1;
+	union
+	{
+		short m_aiStaticArray[2];
+		short* m_pArray;
+	};
 	union
 	{
 		struct

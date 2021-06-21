@@ -25,6 +25,7 @@ InfoArray::InfoArray()
 InfoArrayBase::InfoArrayBase(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
 	: m_iLength(0)
 	, m_iNumDimentions(0)
+	, m_bStatic(false)
 	, m_pArray(NULL)
 	, m_aiTypes(0)
 {
@@ -58,7 +59,10 @@ InfoArrayBase::InfoArrayBase(JITarrayTypes eType0, JITarrayTypes eType1, JITarra
 
 InfoArrayBase::~InfoArrayBase()
 {
-	SAFE_DELETE_ARRAY(m_pArray);
+	if (!m_bStatic)
+	{
+		SAFE_DELETE_ARRAY(m_pArray);
+	}
 }
 
 ///
@@ -75,11 +79,19 @@ int InfoArrayBase::getInternal(int iIndex, int iDimention) const
 
 	FAssert(iIndex >= 0);
 	FAssert(iDimention >= 0 && iDimention < m_iNumDimentions);
-	FAssert(m_pArray != NULL);
 
-	unsigned int iArrayIndex = (iIndex * m_iNumDimentions) + iDimention;
+	if (m_bStatic)
+	{
+		return m_aiStaticArray[iIndex + iDimention];
+	}
+	else
+	{
+		FAssert(m_pArray != NULL);
 
-	return m_pArray[iArrayIndex];
+		unsigned int iArrayIndex = (iIndex * m_iNumDimentions) + iDimention;
+
+		return m_pArray[iArrayIndex];
+	}
 }
 
 int InfoArrayBase::_getIndexOf(int iValue, int iDim) const
@@ -221,17 +233,31 @@ InfoArrayBase& InfoArrayBase::operator=(const InfoArrayBase &rhs)
 
 		this->m_iLength = rhs.m_iLength;
 
-		SAFE_DELETE_ARRAY(this->m_pArray);
+		if (this->m_bStatic)
+		{
+			// clear static array
+			this->m_pArray = NULL;
+		}
+		else
+		{
+			SAFE_DELETE_ARRAY(this->m_pArray);
+		}
+
+		this->m_bStatic = rhs.m_bStatic;
 
 		int iLoopLength = m_iLength * m_iNumDimentions;
 
 		if (iLoopLength > 0)
 		{
-			this->m_pArray = new short [iLoopLength];
-
-			for (int i=0; i < iLoopLength; i++)
+			if (rhs.m_bStatic)
 			{
-				this->m_pArray[iLoopLength] = rhs.m_pArray[iLoopLength];
+				// copying the pointer will copy the entire static array due to the union
+				this->m_pArray = rhs.m_pArray;
+			}
+			else
+			{
+				this->m_pArray = new short[iLoopLength];
+				memcpy(this->m_pArray, rhs.m_pArray, iLoopLength * sizeof(short));
 			}
 		}
 	}
@@ -349,7 +375,16 @@ void InfoArrayMod::readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vecto
 
 void InfoArrayMod::read(CvXMLLoadUtility* pXML, const char* szType, const char *sTagName)
 {
-	SAFE_DELETE_ARRAY(m_pArray);
+	if (m_bStatic)
+	{
+		// clear static array
+		m_pArray = NULL;
+	}
+	else
+	{
+		SAFE_DELETE_ARRAY(m_pArray);
+	}
+	m_bStatic = false;
 	m_iLength = 0;
 
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),sTagName))
@@ -372,10 +407,18 @@ void InfoArrayMod::read(CvXMLLoadUtility* pXML, const char* szType, const char *
 
 			if (m_iLength > 0)
 			{
-				m_pArray = new short[iArrayLength];
-				for (int i = 0; i < iArrayLength; i++)
+				m_bStatic = iArrayLength <= 2;
+				if (m_bStatic)
 				{
-					m_pArray[i] = aArray[i];
+					for (int i = 0; i < iArrayLength; ++i)
+					{
+						m_aiStaticArray[i] = aArray[i];
+					}
+				}
+				else
+				{
+					m_pArray = new short[iArrayLength];
+					memcpy(m_pArray, &aArray[0], iArrayLength * sizeof(short));
 				}
 			}
 
@@ -388,7 +431,16 @@ void InfoArrayMod::read(CvXMLLoadUtility* pXML, const char* szType, const char *
 void InfoArrayMod::assign(const BoolArray* pBArray)
 {
 	FAssert(m_iNumDimentions == 1);
-	SAFE_DELETE_ARRAY(m_pArray);
+	if (m_bStatic)
+	{
+		// clear static array
+		m_pArray = NULL;
+	}
+	else
+	{
+		SAFE_DELETE_ARRAY(m_pArray);
+	}
+	m_bStatic = false;
 	m_iLength = 0;
 	for (int i = 0; i < pBArray->length(); i++)
 	{
@@ -421,7 +473,16 @@ void InfoArrayMod::assign(const BoolArray* pBArray)
 void InfoArrayMod::assign(const std::vector<int>& vec)
 {
 	assert(m_iNumDimentions == 1 || m_iNumDimentions == 2);
-	SAFE_DELETE_ARRAY(m_pArray);
+	if (m_bStatic)
+	{
+		// clear static array
+		m_pArray = NULL;
+	}
+	else
+	{
+		SAFE_DELETE_ARRAY(m_pArray);
+	}
+	m_bStatic = false;
 	m_iLength = 0;
 	const unsigned int iVecSize = vec.size();
 	for (unsigned int i = 0; i < iVecSize; ++i)
@@ -464,7 +525,16 @@ void InfoArrayMod::assign(const std::vector<int>& vec)
 void InfoArrayMod::assign(const std::vector<bool>& vec)
 {
 	assert(m_iNumDimentions == 1);
-	SAFE_DELETE_ARRAY(m_pArray);
+	if (m_bStatic)
+	{
+		// clear static array
+		m_pArray = NULL;
+	}
+	else
+	{
+		SAFE_DELETE_ARRAY(m_pArray);
+	}
+	m_bStatic = false;
 	m_iLength = 0;
 	const unsigned int iVecSize = vec.size();
 	for (unsigned int i = 0; i < iVecSize; ++i)
@@ -509,7 +579,16 @@ void InfoArrayMod::convertClass(const InfoArrayBase* pInfoArray, const CvCiviliz
 	FAssertMsg((eType == JIT_ARRAY_BUILDING && pInfoArray->getType(0) == JIT_ARRAY_BUILDING_CLASS) || (eType == JIT_ARRAY_UNIT && pInfoArray->getType(0) == JIT_ARRAY_UNIT_CLASS), "InfoArray types mismatch");
 	FAssertMsg(getType(1) == pInfoArray->getType(1) && getType(2) == pInfoArray->getType(2) && getType(3) == pInfoArray->getType(3), "InfoArray types mismatch");
 
-	SAFE_DELETE_ARRAY(m_pArray);
+	if (m_bStatic)
+	{
+		// clear static array
+		m_pArray = NULL;
+	}
+	else
+	{
+		SAFE_DELETE_ARRAY(m_pArray);
+	}
+	m_bStatic = false;
 	std::vector<short> aArray;
 
 	if (eType == JIT_ARRAY_BUILDING)
