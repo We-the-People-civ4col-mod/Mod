@@ -274,7 +274,7 @@ bool PUF_isCombatTeam(const CvUnit* pUnit, int iData1, int iData2);
 bool PUF_isOtherTeam( const CvUnit* pUnit, int iData1, int iData2 = -1);
 bool PUF_isEnemy( const CvUnit* pUnit, int iData1, int iData2 = -1);
 bool PUF_isVisible( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_isVisibleDebug( const CvUnit* pUnit, int iData1, int iData2 = -1);
+DllExport bool PUF_isVisibleDebug(const CvUnit* pUnit, int iData1, int iData2 = -1);
 bool PUF_canSiege( const CvUnit* pUnit, int iData1, int iData2 = -1);
 bool PUF_isPotentialEnemy( const CvUnit* pUnit, int iData1, int iData2 = -1);
 bool PUF_canDeclareWar( const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
