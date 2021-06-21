@@ -9119,9 +9119,12 @@ m_iTurnDamage(0),
 m_bGeneratedEveryRound(false),
 // R&R, Robert Surcouf, Damage on Storm plots, End
 m_bNoCoast(false),
+m_bOnlyCoastalLand(false), //WTP, Feature settings enhancements
 m_bNoRiver(false),
 m_bNoAdjacent(false),
 m_bRequiresFlatlands(false),
+m_bRequiresHills(false), //WTP, Feature settings enhancements
+m_bRequiresPeaks(false), //WTP, Feature settings enhancements
 m_bRequiresRiver(false),
 m_bImpassable(false),
 m_bNoCity(false),
@@ -9191,6 +9194,13 @@ bool CvFeatureInfo::isNoCoast() const
 {
 	return m_bNoCoast;
 }
+
+//WTP, Feature settings enhancements
+bool CvFeatureInfo::isOnlyCoastalLand() const
+{
+	return m_bOnlyCoastalLand;
+}
+
 bool CvFeatureInfo::isNoRiver() const
 {
 	return m_bNoRiver;
@@ -9203,6 +9213,17 @@ bool CvFeatureInfo::isRequiresFlatlands() const
 {
 	return m_bRequiresFlatlands;
 }
+
+//WTP, Feature settings enhancements
+bool CvFeatureInfo::isRequiresHills() const
+{
+	return m_bRequiresHills;
+}
+bool CvFeatureInfo::isRequiresPeaks() const
+{
+	return m_bRequiresPeaks;
+}
+
 bool CvFeatureInfo::isRequiresRiver() const
 {
 	return m_bRequiresRiver;
@@ -9316,9 +9337,12 @@ bool CvFeatureInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iDisappearanceProbability, "iDisappearance");
 	pXML->GetChildXmlValByName(&m_iGrowthProbability, "iGrowth");
 	pXML->GetChildXmlValByName(&m_bNoCoast, "bNoCoast");
+	pXML->GetChildXmlValByName(&m_bOnlyCoastalLand, "bOnlyCoastalLand"); //WTP, Feature settings enhancements
 	pXML->GetChildXmlValByName(&m_bNoRiver, "bNoRiver");
 	pXML->GetChildXmlValByName(&m_bNoAdjacent, "bNoAdjacent");
 	pXML->GetChildXmlValByName(&m_bRequiresFlatlands, "bRequiresFlatlands");
+	pXML->GetChildXmlValByName(&m_bRequiresHills, "bRequiresHills"); //WTP, Feature settings enhancements
+	pXML->GetChildXmlValByName(&m_bRequiresPeaks, "bRequiresPeaks"); //WTP, Feature settings enhancements
 	pXML->GetChildXmlValByName(&m_bRequiresRiver, "bRequiresRiver");
 	pXML->GetChildXmlValByName(&m_bImpassable, "bImpassable");
 	pXML->GetChildXmlValByName(&m_bNoCity, "bNoCity");

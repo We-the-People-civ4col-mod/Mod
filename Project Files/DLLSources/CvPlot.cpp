@@ -4026,7 +4026,8 @@ bool CvPlot::canHaveFeature(FeatureTypes eFeature) const
 		return false;
 	}
 
-	if (isPeak())
+	//WTP, Feature settings enhancements - see below
+	if (isPeak() && !GC.getFeatureInfo(eFeature).isRequiresPeaks())
 	{
 		return false;
 	}
@@ -4046,6 +4047,12 @@ bool CvPlot::canHaveFeature(FeatureTypes eFeature) const
 		return false;
 	}
 
+	//WTP, Feature settings enhancements
+	if (GC.getFeatureInfo(eFeature).isOnlyCoastalLand() && !isCoastalLand())
+	{
+		return false;
+	}
+
 	if (GC.getFeatureInfo(eFeature).isNoRiver() && isRiver())
 	{
 		return false;
@@ -4055,6 +4062,17 @@ bool CvPlot::canHaveFeature(FeatureTypes eFeature) const
 	{
 		return false;
 	}
+
+	//WTP, Feature settings enhancements
+	if (GC.getFeatureInfo(eFeature).isRequiresHills() && !isHills())
+	{
+		return false;
+	}
+	if (GC.getFeatureInfo(eFeature).isRequiresPeaks() && !isPeak())
+	{
+		return false;
+	}
+
 
 	if (GC.getFeatureInfo(eFeature).isNoAdjacent())
 	{

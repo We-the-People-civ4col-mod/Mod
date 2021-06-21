@@ -2561,9 +2561,12 @@ public:
 	bool isGeneratedEveryRound() const;
 	// R&R, Robert Surcouf, Damage on Storm plots, End
 	bool isNoCoast() const;
+	bool isOnlyCoastalLand() const; //WTP, Feature settings enhancements
 	bool isNoRiver() const;
 	bool isNoAdjacent() const;
 	bool isRequiresFlatlands() const;
+	bool isRequiresHills() const; //WTP, Feature settings enhancements
+	bool isRequiresPeaks() const; //WTP, Feature settings enhancements
 	bool isRequiresRiver() const;
 	bool isImpassable() const;
 	bool isNoCity() const;
@@ -2600,9 +2603,12 @@ protected:
 	bool m_bGeneratedEveryRound;
 	// R&R, Robert Surcouf, Damage on Storm plots, End
 	bool m_bNoCoast;
+	bool m_bOnlyCoastalLand; //WTP, Feature settings enhancements
 	bool m_bNoRiver;
 	bool m_bNoAdjacent;
 	bool m_bRequiresFlatlands;
+	bool m_bRequiresHills; //WTP, Feature settings enhancements
+	bool m_bRequiresPeaks; //WTP, Feature settings enhancements
 	bool m_bRequiresRiver;
 	bool m_bImpassable;
 	bool m_bNoCity;

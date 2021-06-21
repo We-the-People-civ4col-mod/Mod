@@ -287,9 +287,12 @@ void CyInfoPythonInterface2()
 		.def("getDefenseModifier", &CvFeatureInfo::getDefenseModifier, "int ()")
 		.def("getAdvancedStartRemoveCost", &CvFeatureInfo::getAdvancedStartRemoveCost, "int ()")
 		.def("isNoCoast", &CvFeatureInfo::isNoCoast, "bool ()")
+		.def("isOnlyCoastalLand", &CvFeatureInfo::isOnlyCoastalLand, "bool ()") //WTP, Feature settings enhancements
 		.def("isNoRiver", &CvFeatureInfo::isNoRiver, "bool ()")
 		.def("isNoAdjacent", &CvFeatureInfo::isNoAdjacent, "bool ()")
 		.def("isRequiresFlatlands", &CvFeatureInfo::isRequiresFlatlands, "bool ()")
+		.def("isRequiresHills", &CvFeatureInfo::isRequiresHills, "bool ()") //WTP, Feature settings enhancements
+		.def("isRequiresPeaks", &CvFeatureInfo::isRequiresPeaks, "bool ()") //WTP, Feature settings enhancements
 		.def("isRequiresRiver", &CvFeatureInfo::isRequiresRiver, "bool ()")
 		.def("isImpassable", &CvFeatureInfo::isImpassable, "bool ()")
 		.def("isNoCity", &CvFeatureInfo::isNoCity, "bool ()")

@@ -22,9 +22,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>1</bImpassable>
             <bNoCity>0</bNoCity>
@@ -269,9 +272,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>16</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>0</bNoCity>
@@ -517,9 +523,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>16</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
-            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresFlatlands>1</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>0</bNoCity>
@@ -749,9 +758,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>8</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>0</bNoCity>
@@ -957,9 +969,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>8</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>0</bNoCity>
@@ -1189,9 +1204,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>8</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>0</bNoCity>
@@ -1385,9 +1403,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>8</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>1</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>1</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>0</bNoCity>
@@ -1561,9 +1582,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>8</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>1</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>1</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>0</bNoCity>
@@ -1668,9 +1692,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>8</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>1</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>1</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>1</bNoCity>
@@ -1763,9 +1790,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>8</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>1</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>1</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>1</bNoCity>
@@ -1850,9 +1880,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>8</iGrowth>
             <bNoCoast>1</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>1</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>1</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>1</bNoCity>
@@ -1932,9 +1965,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>1</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>1</bImpassable>
             <bNoCity>1</bNoCity>
@@ -2001,9 +2037,12 @@
             <bGeneratedEveryRound>1</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
-            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresFlatlands>1</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>1</bImpassable>
             <bNoCity>1</bNoCity>
@@ -2078,9 +2117,12 @@
             <bGeneratedEveryRound>1</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>0</bNoCity>
@@ -2176,9 +2218,12 @@
             <bGeneratedEveryRound>1</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>0</bNoCity>
@@ -2274,9 +2319,12 @@
             <bGeneratedEveryRound>1</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
-            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresFlatlands>1</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>0</bNoCity>
@@ -2377,9 +2425,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>0</bNoCity>
@@ -2479,9 +2530,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>0</bNoCity>
@@ -2586,9 +2640,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>0</bNoCity>
@@ -2697,9 +2754,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>0</bNoCity>
@@ -2803,9 +2863,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>1</bNoCity>
@@ -2814,7 +2877,7 @@
             <OnUnitChangeTo/>
             <TerrainBooleans>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
@@ -2901,9 +2964,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>1</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>1</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>1</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>1</bNoCity>
@@ -2999,9 +3065,12 @@
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>0</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
             <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
             <bNoCity>1</bNoCity>

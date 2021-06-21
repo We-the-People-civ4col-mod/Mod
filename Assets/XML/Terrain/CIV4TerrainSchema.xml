@@ -165,9 +165,12 @@
 	<ElementType name="bGeneratedEveryRound" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iGrowth" content="textOnly" dt:type="int"/>
 	<ElementType name="bNoCoast" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bOnlyCoastalLand" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoRiver" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoAdjacent" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRequiresFlatlands" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRequiresHills" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRequiresPeaks" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRequiresRiver" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoCity" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoImprovement" content="textOnly" dt:type="boolean"/>
@@ -200,9 +203,12 @@
 		<element type="bGeneratedEveryRound"/>
 		<element type="iGrowth"/>
 		<element type="bNoCoast"/>
+		<element type="bOnlyCoastalLand"/>
 		<element type="bNoRiver"/>
 		<element type="bNoAdjacent"/>
 		<element type="bRequiresFlatlands"/>
+		<element type="bRequiresHills"/>
+		<element type="bRequiresPeaks"/>
 		<element type="bRequiresRiver"/>
 		<element type="bImpassable"/>
 		<element type="bNoCity"/>
