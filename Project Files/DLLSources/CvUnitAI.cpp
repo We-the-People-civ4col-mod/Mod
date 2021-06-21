@@ -1558,7 +1558,7 @@ void CvUnitAI::AI_settlerMove()
 		return;
 	}
 
-	if (AI_retreatToCity(false, true))
+	if (AI_retreatToCity(false, MAX_INT, true))
 	{
 		return;
 	}
@@ -5777,11 +5777,6 @@ void CvUnitAI::AI_combatSeaMove()
 
 void CvUnitAI::AI_pirateMove()
 {
-	if (AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
-	{
-		return;
-	}
-
 	if (AI_anyAttack(2, 49))
 	{
 		return;
@@ -5830,6 +5825,21 @@ void CvUnitAI::AI_pirateMove()
 		{
 			return;
 		}
+	}
+
+	if (AI_exploreCoast(2))
+	{
+		return;
+	}
+
+	if (AI_exploreOcean(1))
+	{
+		return;
+	}
+
+	if (AI_exploreDeep())
+	{
+		return;
 	}
 
 	if (AI_moveTowardsOcean(1))
