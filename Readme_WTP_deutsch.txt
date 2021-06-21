@@ -62,9 +62,6 @@ Aktuelle aktive WTP Teammitglieder
 	Mr.Zorg
 	Fürstbischof
 	Kendon
-
-Besonders aktive WTP Unterstützer:
-
 	Raubwürger
 
 Ehemalige (jetzt inaktive) RaR Mitglieder:

@@ -1,5 +1,11 @@
 We the People Changelog
 
+Version 3.0.1
+
+Fixes:
+- Livestock (including horses) will no longer apply modifer for game speed twice (growth was way too slow in Marathon speed)
+- Ships, which can't load civilian units will no longer get nothing from exploring ship wrecks
+
 Version 3.0
 
 Major milestone in AI. It now knows how to develop an economy to allow proper colony development as the game progresses. Text has once again been given a major overhaul, making the game generally look more impressive. Backward compatibile with savegames from 2.9.

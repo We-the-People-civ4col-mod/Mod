@@ -108,6 +108,10 @@ Vous pouvez contacter RaR via le site "CivFanatics" : http://forums.civfanatics.
 		<English>Fürstbischof</English>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_CREDITS_RAUWURGER</Tag>
+		<English>Raubwürger</English>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_CREDITS_FORMER_MEMBER</Tag>
 		<English>(former member)</English>
 		<French>(ex-membre)</French>
