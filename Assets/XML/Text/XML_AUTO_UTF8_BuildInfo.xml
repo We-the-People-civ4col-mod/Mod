@@ -253,9 +253,18 @@
         <English>????</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BUILD_REMOVE_LUSHGRASS</Tag>
+        <English>Cut down the [LINK=FEATURE_LUSHGRASS]grass[\LINK]</English>
+        <German>[LINK=FEATURE_LUSHGRASS]Gras[\LINK] entfernen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REMOVE_LUSHGRASS_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILD_REMOVE_BARREL_CACTUS</Tag>
-        <English>Chop down the [LINK=FEATURE_JUNGLE]barrel cactus field[\LINK]</English>
-        <German>[LINK=FEATURE_JUNGLE]Kugelkaktusfeld[\LINK] entfernen</German>
+        <English>Chop down the [LINK=FEATURE_BARREL_CACTUS]barrel cactus field[\LINK]</English>
+        <German>[LINK=FEATURE_BARREL_CACTUS]Kugelkaktusfeld[\LINK] entfernen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REMOVE_JUNGLE_HELP</Tag>
