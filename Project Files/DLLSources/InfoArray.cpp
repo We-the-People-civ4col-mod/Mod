@@ -106,6 +106,80 @@ int InfoArrayBase::_getIndexOf(int iValue, int iDim) const
 	return -1;
 }
 
+void InfoArrayBase::_setLength(int iLength)
+{
+	if (m_bStatic)
+	{
+		// clear static array
+		m_pArray = NULL;
+	}
+	else
+	{
+		SAFE_DELETE_ARRAY(m_pArray);
+	}
+
+	int iNewShortLength = iLength * m_iNumDimentions;
+	m_bStatic = iNewShortLength <= 2;
+	m_iLength = iLength;
+
+	if (m_bStatic)
+	{
+		m_aiStaticArray[0] = -1;
+		m_aiStaticArray[1] = -1;
+	}
+	else
+	{
+		m_pArray = new short[iNewShortLength];
+		memset(m_pArray, 0xFF, iNewShortLength * sizeof(short));
+	}
+
+}
+
+bool InfoArrayBase::_setValue(int iValue0)
+{
+	for (int i = 0; i < m_iLength; ++i)
+	{
+		if (getInternal(i) == -1)
+		{
+			if (m_bStatic)
+			{
+				m_aiStaticArray[i] = iValue0;
+			}
+			else
+			{
+				m_pArray[i] = iValue0;
+			}
+			return (i+1) == m_iLength; // filled the last element?
+		}
+	}
+	FAssertMsg(false, "InfoArray calls set value on full array");
+	return false;
+}
+
+bool InfoArrayBase::_setValue(int iValue0, int iValue1)
+{
+	for (int i = 0; i < m_iLength; ++i)
+	{
+		if (getInternal(i) == -1)
+		{
+			if (m_bStatic)
+			{
+				FAssert(i == 0);
+				m_aiStaticArray[0] = iValue0;
+				m_aiStaticArray[1] = iValue1;
+			}
+			else
+			{
+				m_pArray[i*2] = iValue0;
+				m_pArray[i * 2 + 1] = iValue1;
+			}
+			return (i + 1) == m_iLength; // filled the last element?
+		}
+	}
+	FAssertMsg(false, "InfoArray calls set value on full array");
+	return false;
+}
+
 int InfoArrayBase::getIndex(int iIndex) const
 {
 	FAssert(m_iNumDimentions <= 2);

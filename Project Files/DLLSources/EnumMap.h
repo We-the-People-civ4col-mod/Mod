@@ -82,6 +82,9 @@ public:
 	// get the sum of all elements
 	int getTotal() const;
 
+	int GetNumPositiveElements() const;
+	int GetNumNonZeroElements() const;
+
 	// Check if there is non-default contents.
 	// isAllocated() test for a null pointer while hasContent() will loop the array to test each index for default value.
 	// Useful to avoid looping all 0 arrays and when creating savegames.
@@ -150,6 +153,16 @@ public:
 	template<class T2, int DEFAULT2>
 	bool operator != (const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs) const;
 	
+	// something, which should really be elsewhere
+	template<typename T>
+	bool isPositive(T eVal) const
+	{
+		return eVal > 0;
+	}
+	bool isPositive(bool bVal) const
+	{
+		return bVal;
+	}
 
 private:
 
@@ -716,6 +729,56 @@ inline int EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getTotal() 
 		for (IndexType eIndex = First(); eIndex < iLength; ++eIndex)
 		{
 			iReturnVal += get(eIndex);
+		}
+		return iReturnVal;
+	}
+}
+
+template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
+inline int EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::GetNumPositiveElements() const
+{
+	// bINLINE is set at compile time and if true, isAllocated will always be true
+	// used here to tell the compiler that the true statement (not allocated) can be declared unreachable at compile time
+	if (!bINLINE && !isAllocated())
+	{
+		// no need to loop through unallocated memory
+		return DEFAULT > 0 ? getLength() : 0;
+	}
+	else
+	{
+		int iReturnVal = 0;
+		const int iLength = getLength();
+		for (IndexType eIndex = First(); eIndex < iLength; ++eIndex)
+		{
+			if (isPositive(get(eIndex)))
+			{
+				++iReturnVal;
+			}
+		}
+		return iReturnVal;
+	}
+}
+
+template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
+inline int EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::GetNumNonZeroElements() const
+{
+	// bINLINE is set at compile time and if true, isAllocated will always be true
+	// used here to tell the compiler that the true statement (not allocated) can be declared unreachable at compile time
+	if (!bINLINE && !isAllocated())
+	{
+		// no need to loop through unallocated memory
+		return DEFAULT != 0 ? getLength() : 0;
+	}
+	else
+	{
+		int iReturnVal = 0;
+		const int iLength = getLength();
+		for (IndexType eIndex = First(); eIndex < iLength; ++eIndex)
+		{
+			if (get(eIndex) != 0)
+			{
+				++iReturnVal;
+			}
 		}
 		return iReturnVal;
 	}

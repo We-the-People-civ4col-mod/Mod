@@ -118,6 +118,10 @@ protected:
 	int getInternal(int iIndex, int iTokenIndex = 0) const;
 	int _getIndexOf(int iValue, int iDim) const;
 
+	void _setLength(int iLength);
+	bool _setValue(int iValue0);
+	bool _setValue(int iValue0, int iValue1);
+
 	short m_iLength;
 	char m_iNumDimentions : 7;
 	bool m_bStatic : 1;
@@ -235,6 +239,13 @@ class InfoArray1Only : public InfoArray1<T0>
 protected:
 	InfoArray1Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
 		: InfoArray1<T0>(eType0, eType1, eType2, eType3) {}
+public:
+	template<typename T>
+	void assignFrom(const EnumMap<T0, T>& em);
+	template<typename T>
+	void addTo(EnumMap<T0, T> & em, int iChange = 1) const;
+	template<typename T>
+	void copyTo(EnumMap<T0, T> & em) const;
 };
 template<typename T0, typename T1>
 class InfoArray2Only : public InfoArray2<T0, T1>
@@ -242,6 +253,14 @@ class InfoArray2Only : public InfoArray2<T0, T1>
 protected:
 	InfoArray2Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
 		: InfoArray2<T0, T1>(eType0, eType1, eType2, eType3) {}
+public:
+	template<typename T>
+	void assignFrom(const EnumMap<T0, T>& em);
+	template<typename T>
+	void addTo(EnumMap<T0, T> & em, int iChange = 1) const;
+	template<typename T>
+	void copyTo(EnumMap<T0, T> & em) const;
+	void copyTo(EnumMap<T0, bool> & em) const;
 };
 template<typename T0, typename T1, typename T2>
 class InfoArray3Only : public InfoArray3<T0, T1, T2>
@@ -257,6 +276,104 @@ protected:
 	InfoArray4Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
 		: InfoArray4<T0, T1, T2, T3>(eType0, eType1, eType2, eType3) {}
 };
+
+template<typename T0>
+template<typename T>
+void InfoArray1Only<T0>::assignFrom(const EnumMap<T0, T> & em)
+{
+	const int iLength = em.GetNumPositiveElements();
+	_setLength(iLength);
+	for (T0 eIndex = (T0)0; eIndex < em.getLength(); ++eIndex)
+	{
+		int iVal = em.get(eIndex);
+		if (em.isPositive(iVal))
+		{
+			bool bDone = _setValue(eIndex);
+#ifndef FASSERT_ENABLE
+			if (bDone) return;
+#endif
+		}
+	}
+}
+
+
+template<typename T0, typename T1>
+template<typename T>
+void InfoArray2Only<T0, T1>::assignFrom(const EnumMap<T0, T> & em)
+{
+	const bool bTypeCheck = !boost::is_same<T, bool>::value;
+	BOOST_STATIC_ASSERT(bTypeCheck);
+	const int iLength = em.GetNumNonZeroElements();
+	_setLength(iLength);
+	for (T0 eIndex = (T0)0; eIndex < em.getLength(); ++eIndex)
+	{
+		int iVal = em.get(eIndex);
+		if (iVal != 0)
+		{
+			bool bDone = _setValue(eIndex, iVal);
+#ifndef FASSERT_ENABLE
+			if (bDone) return;
+#endif
+		}
+	}
+}
+
+template<typename T0>
+template<typename T>
+void InfoArray1Only<T0>::addTo(EnumMap<T0, T> & em, int iChange) const
+{
+	const bool bTypeCheck = !boost::is_same<T, bool>::value;
+	BOOST_STATIC_ASSERT(bTypeCheck);
+	for (int i = 0; i < getLength(); ++i)
+	{
+		em.add((T0)getInternal(i), iChange);
+	}
+}
+
+template<typename T0, typename T1>
+template<typename T>
+void InfoArray2Only<T0, T1>::addTo(EnumMap<T0, T> & em, int iChange) const
+{
+	const bool bTypeCheck = !boost::is_same<T, bool>::value;
+	BOOST_STATIC_ASSERT(bTypeCheck);
+	for (int i = 0; i < getLength(); ++i)
+	{
+		em.add((T0)getInternal(i), getInternal(i, 1) * iChange);
+	}
+}
+
+template<typename T0>
+template<typename T>
+void InfoArray1Only<T0>::copyTo(EnumMap<T0, T> & em) const
+{
+	em.reset();
+	for (int i = 0; i < getLength(); ++i)
+	{
+		em.set((T0)getInternal(i), 1);
+	}
+}
+
+template<typename T0, typename T1>
+template<typename T>
+void InfoArray2Only<T0, T1>::copyTo(EnumMap<T0, T> & em) const
+{
+	em.reset();
+	for (int i = 0; i < getLength(); ++i)
+	{
+		em.set((T0)getInternal(i), getInternal(i, 1));
+	}
+}
+
+template<typename T0, typename T1>
+void InfoArray2Only<T0, T1>::copyTo(EnumMap<T0, bool> & em) const
+{
+	em.reset();
+	for (int i = 0; i < getLength(); ++i)
+	{
+		em.set((T0)getInternal(i), getInternal(i, 1) > 0);
+	}
+}
+
 
 // selector classes. InfoArray will inherit one, which in turn will inherit one only class
 template<typename T0, typename T1, typename T2, typename T3, int unused>
@@ -486,67 +603,20 @@ public:
 	InfoArray() : InfoArraySelector<T0, T1, T2, T3, 0>(JIT_TYPE<T0>::TYPE, JIT_TYPE<T1>::TYPE, JIT_TYPE<T2>::TYPE, JIT_TYPE<T3>::TYPE)
 	{};
 
-	// interaction with EnumMap
-	template<typename T>
+	// the actual functions are in child classes. They are added here to get an overview
+	// note that some might not work in all cases and some might have different arguments depending on template
+#if 0
+	int getLength() const;
+
+	T getType(int iIndex) const; // like getBonus, getImprovement etc
+	T getWithTemplate(int iIndex, T eVar) const; // get, which works with an argument. Useful for calling from a template function using a templat eVar type
+
+	// EnumMap interaction
 	void assignFrom(const EnumMap<T0, T>& em);
-	void assignFrom(const EnumMap<T0, bool>& em);
-
-	template<typename T>
 	void addTo(EnumMap<T0, T> & em, int iChange = 1) const;
-
-	template<typename T>
 	void copyTo(EnumMap<T0, T> & em) const;
+#endif
 };
 
-template<typename T0, typename T1, typename T2, typename T3>
-template<typename T>
-void InfoArray<T0, T1, T2, T3>::assignFrom(const EnumMap<T0, T> & em)
-{
-	const bool bTypeCheck = boost::is_same<T2, JIT_NoneTypes>::value && boost::is_same<T3, JIT_NoneTypes>::value;
-	BOOST_STATIC_ASSERT(bTypeCheck);
-	// buffer everything in a vector to avoid the need for templates in InfoArray.cpp
-	std::vector<int> vec;
-	em.copyToVector(vec);
-	assign(vec);
-}
-
-template<typename T0, typename T1, typename T2, typename T3>
-void InfoArray<T0, T1, T2, T3>::assignFrom(const EnumMap<T0, bool> & em)
-{
-	const bool bTypeCheck = boost::is_same<T1, JIT_NoneTypes>::value && boost::is_same<T2, JIT_NoneTypes>::value && boost::is_same<T3, JIT_NoneTypes>::value;
-	BOOST_STATIC_ASSERT(bTypeCheck);
-	// buffer everything in a vector to avoid the need for templates in InfoArray.cpp
-	std::vector<bool> vec;
-	vec.reserve(em.LENGTH);
-	for (int i = 0; i < em.LENGTH; ++i)
-	{
-		vec.push_back(em.get((T0)i));
-	}
-	assign(vec);
-}
-
-template<typename T0, typename T1, typename T2, typename T3>
-template<typename T>
-void InfoArray<T0, T1, T2, T3>::addTo(EnumMap<T0, T> & em, int iChange) const
-{
-	const bool bTypeCheck = boost::is_same<T2, JIT_NoneTypes>::value && boost::is_same<T3, JIT_NoneTypes>::value;
-	BOOST_STATIC_ASSERT(bTypeCheck);
-
-	FAssert(iChange == 1 || iChange == -1);
-	for (int i = 0; i < this->m_iLength; ++i)
-	{
-		int iValue = m_iNumDimentions == 2 ? getInternal(i, 1) : 1;
-		iValue *= iChange;
-		em.add((T0)getInternal(i, 0), iValue);
-	}
-}
-
-template<typename T0, typename T1, typename T2, typename T3>
-template<typename T>
-void InfoArray<T0, T1, T2, T3>::copyTo(EnumMap<T0, T> & em) const
-{
-	em.setAll(0);
-	addTo(em);
-}
 
 #endif
