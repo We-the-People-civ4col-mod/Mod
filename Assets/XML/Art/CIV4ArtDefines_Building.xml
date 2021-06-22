@@ -1123,6 +1123,18 @@
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_BONUS_BOG_ORE</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Bog_Ore/gems.nif</NIF>
+            <KFM>Art/Terrain/Resources/Bog_Ore/gems.kfm</KFM>
+            <Button>Art/interface/buttons/Bog_Ore.dds</Button>
+        </BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_MINERALS</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>

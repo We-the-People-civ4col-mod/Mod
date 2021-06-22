@@ -705,6 +705,55 @@
             </FeatureTerrainBooleans>
         </BonusInfo>
         <BonusInfo>
+            <Type>BONUS_BOG_ORE</Type>
+            <Description>TXT_KEY_BONUS_BOG_ORE</Description>
+            <Civilopedia>TXT_KEY_BONUS_BOG_ORE_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_BOG_ORE</ArtDefineTag>
+            <BuildingType>BUILDING_BONUS_BOG_ORE</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>1</iPlacementOrder>
+            <iConstAppearance>10</iConstAppearance>
+            <iMinAreaSize>2</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>10</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>8</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>1</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>0</bArea>
+            <bPeaks>0</bPeaks>
+            <bHills>0</bHills>
+            <bFlatlands>1</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <TerrainBooleans/>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+            </FeatureTerrainBooleans>
+        </BonusInfo>
+        <BonusInfo>
             <Type>BONUS_STONE</Type>
             <Description>TXT_KEY_BONUS_STONE</Description>
             <Civilopedia>TXT_KEY_BONUS_STONE_PEDIA</Civilopedia>

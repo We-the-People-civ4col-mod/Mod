@@ -73,6 +73,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_BOG_ORE</Type>
+            <fScale>0.8</fScale>
+            <fInterfaceScale>1.1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Bog_Ore/gems.nif</NIF>
+            <KFM>Art/Terrain/Resources/Bog_Ore/gems.kfm</KFM>
+            <Button>Art/interface/buttons/Bog_Ore.dds</Button>
+            <FontButtonIndex>59</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_PEARLS_2</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>1.25</fInterfaceScale>

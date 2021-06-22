@@ -695,6 +695,20 @@
         <Spanish>[TAB]Cuando las primeras civilizaciones comenzaron a usar metales para fabricar herramientas y armas, el más utilizado era el bronce. Este metal contaba con la ventaja de su gran disponibilidad y de su facilidad a la hora de trabajar con él. Por desgracia, era demasiado blando para poder tener un filo eficaz. A mediados del siglo XIV a. C., el hierro sustituyó al bronce en Europa central como metal preferido, y comenzó la Edad del Hierro. Desde entonces, el hierro ha sido una mercancía valiosa. Los depósitos de mineral de hierro se encuentran en las montañas, y se extraen y procesan para utilizar el hierro en estado puro y en la producción de acero.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_BOG_ORE</Tag>
+        <English>Bog Ore Deposit</English>
+        <German>
+            <Text>Eisenerz</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_BOG_ORE_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bog ore deposit[COLOR_REVERT]</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moorerz[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_MELON</Tag>
         <English>Melons</English>
         <French>
