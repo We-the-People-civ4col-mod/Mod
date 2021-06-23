@@ -69,6 +69,14 @@
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -152,6 +160,14 @@
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -218,6 +234,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -518,6 +542,14 @@
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -664,6 +696,14 @@
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -744,6 +784,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_BOG</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -863,6 +911,14 @@
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -969,6 +1025,14 @@
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1054,6 +1118,14 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -1143,6 +1215,14 @@
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1216,6 +1296,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_BOG</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -1314,6 +1402,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans/>
@@ -1422,6 +1518,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -1558,6 +1662,14 @@
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1622,6 +1734,14 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -1702,6 +1822,14 @@
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1775,6 +1903,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_BOG</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -1850,6 +1986,14 @@
                     <FeatureType>FEATURE_SWAMP</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1906,6 +2050,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -1982,6 +2134,14 @@
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2041,6 +2201,14 @@
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2097,6 +2265,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -2162,6 +2338,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -2233,6 +2417,14 @@
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2298,6 +2490,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -2370,6 +2570,14 @@
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2437,6 +2645,14 @@
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2500,6 +2716,14 @@
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2561,6 +2785,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -2636,6 +2868,14 @@
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2707,6 +2947,14 @@
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2773,6 +3021,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -2895,6 +3151,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -3046,6 +3310,14 @@
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -3195,6 +3467,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -3405,6 +3685,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -3720,6 +4008,14 @@
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -3785,6 +4081,14 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -3853,6 +4157,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -3928,6 +4240,14 @@
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -3998,6 +4318,14 @@
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -4059,6 +4387,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -4122,6 +4458,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -4274,6 +4618,14 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>

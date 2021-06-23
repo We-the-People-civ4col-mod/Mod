@@ -247,6 +247,14 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -466,6 +474,14 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -578,6 +594,14 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -696,6 +720,14 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -808,6 +840,14 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -945,7 +985,16 @@
                     <bMakesValid>0</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
-            <FeatureMakesValids/>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
                     <BonusType>BONUS_CORN</BonusType>
@@ -1235,7 +1284,16 @@
                     <bMakesValid>0</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
-            <FeatureMakesValids/>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
                     <BonusType>BONUS_COTTON</BonusType>
@@ -1384,6 +1442,14 @@
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SWAMP</FeatureType>
@@ -1537,6 +1603,14 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -2128,7 +2202,16 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
-            <FeatureMakesValids/>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
                     <BonusType>BONUS_CATTLE</BonusType>
@@ -2264,7 +2347,16 @@
                     <bMakesValid>0</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
-            <FeatureMakesValids/>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
                     <BonusType>BONUS_CORN</BonusType>
@@ -2554,7 +2646,16 @@
                     <bMakesValid>0</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
-            <FeatureMakesValids/>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
                     <BonusType>BONUS_COTTON</BonusType>
@@ -2716,6 +2817,14 @@
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -2852,6 +2961,14 @@
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
@@ -2993,6 +3110,14 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -3579,7 +3704,16 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
-            <FeatureMakesValids/>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
                     <BonusType>BONUS_CATTLE</BonusType>
@@ -3691,7 +3825,16 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
-            <FeatureMakesValids/>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
             <BonusTypeStructs/>
             <ImprovementPillage/>
             <ImprovementUpgrade>IMPROVEMENT_LARGE_FORT</ImprovementUpgrade>
@@ -3776,7 +3919,16 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
-            <FeatureMakesValids/>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
             <BonusTypeStructs/>
             <ImprovementPillage/>
             <ImprovementUpgrade/>
@@ -3861,7 +4013,16 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
-            <FeatureMakesValids/>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
             <BonusTypeStructs/>
             <ImprovementPillage/>
             <ImprovementUpgrade>IMPROVEMENT_LARGE_MONASTERY</ImprovementUpgrade>
@@ -3940,7 +4101,16 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
-            <FeatureMakesValids/>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
             <BonusTypeStructs/>
             <ImprovementPillage/>
             <ImprovementUpgrade/>
