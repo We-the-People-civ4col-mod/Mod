@@ -8104,6 +8104,13 @@ bool CvUnitAI::AI_unloadWhereNeeded(int iMaxPath)
 					int iValue = 100000;
 					int iNumAIUnits = pArea->getNumAIUnits(getOwnerINLINE(), AI_getUnitAIType()) - ((pArea == area()) ? iCount : 0);
 					FAssert(iNumAIUnits >= 0);
+
+					// dirty dirty workaround to avoid a crash
+					// TODO make a proper fix
+					if (iNumAIUnits < 0)
+					{
+						iNumAIUnits = 0;
+					}
 					
 					iValue *= 1 + pArea->getNumCities();
 					iValue /= 1 + iNumAIUnits;
