@@ -840,6 +840,9 @@
     <ClInclude Include="DLLSources\CvString.h">
       <Filter>Misc\Header</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\CvEnumsFunctions.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">

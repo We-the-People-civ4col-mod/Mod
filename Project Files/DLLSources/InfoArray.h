@@ -59,7 +59,11 @@
 #define getWithType(a, b, c) getWithType(b, c)
 #endif
 
+class CvXMLLoadUtility;
 class CvCivilizationInfo;
+class BoolArray;
+
+template<class T> class JustInTimeArray;
 
 template<class IndexType, class T>
 class EnumMap;
@@ -100,11 +104,7 @@ public:
 		return (JITarrayTypes)((m_aiTypes >> (8 * i)) & 0xFF);
 	}
 
-	int getWithType(JITarrayTypes eType, int iIndex, int iTokenIndex) const
-	{
-		FAssert(GetBaseType(eType) == getType(iTokenIndex) || (eType >= NUM_JITarrayTypes && getType(iTokenIndex) >= NUM_JITarrayTypes));
-		return getInternal(iIndex, iTokenIndex);
-	}
+	int getWithType(JITarrayTypes eType, int iIndex, int iTokenIndex) const;
 
 	// adds UnitClass->Unit and BuildingClass->Building conversion. Otherwise the same as without the civinfo argument 
 	int getWithTypeWithConversion(JITarrayTypes eType, int iIndex, int iTokenIndex, const CvCivilizationInfo *pCivInfo) const;

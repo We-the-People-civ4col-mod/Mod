@@ -276,6 +276,9 @@ namespace boost
 #include "NetworkDataPacking.h"
 #include "CvDLLUtilityIFaceBase.h"
 
+#include "CvGlobalConstants.h"
+#include "CvEnumsFunctions.h"
+
 #include "JustInTimeArray.h"
 #include "BoolArray.h"
 #include "PlayerArray.h"
@@ -283,7 +286,8 @@ namespace boost
 #include "InfoArray.h"
 #include "InfoCacheArray.h"
 
-#include "CvGlobalConstants.h"
+
+
 
 #include "EnumMap.h"
 #include "EnumMap2D.h"

@@ -2,6 +2,8 @@
 #define ENUM_MAP_H
 #pragma once
 
+#include "CvGlobalConstants.h"
+
 
 //
 // EnumMap is a special case of map where there is a <key,value> pair for each key in an enum.

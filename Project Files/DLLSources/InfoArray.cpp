@@ -295,6 +295,12 @@ int InfoArrayBase::getWithTypeWithConversion(JITarrayTypes eType, int iIndex, in
 	return -1;
 }
 
+int InfoArrayBase::getWithType(JITarrayTypes eType, int iIndex, int iTokenIndex) const
+{
+	FAssert(GetBaseType(eType) == getType(iTokenIndex) || (eType >= NUM_JITarrayTypes && getType(iTokenIndex) >= NUM_JITarrayTypes));
+	return getInternal(iIndex, iTokenIndex);
+}
+
 ///
 /// operator overload
 ///
