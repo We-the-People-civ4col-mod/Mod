@@ -1388,6 +1388,7 @@ template <> struct EnumMapGetDefault<VAR> \
 // If the length isn't known at compile time, MAX_SHORT is assumed.
 // Setting the byte size means say PlayerTypes will use 1 byte instead of 4. Works because MAX_PLAYERS <= 128
 
+/*
 //                 type                , length                   , JIT_ARRAY type            , length at compile time (MAX_SHORT if unknown)
 SET_ARRAY_XML_ENUM(ArtStyleTypes       , NUM_ARTSTYLE_TYPES       , JIT_ARRAY_ART_STYLE       , COMPILE_TIME_NUM_ARTSTYLE_TYPES       );
 SET_ARRAY_XML_ENUM(BonusTypes          , NUM_BONUS_TYPES          , JIT_ARRAY_BONUS           , COMPILE_TIME_NUM_BONUS_TYPES          );
@@ -1432,7 +1433,7 @@ SET_ARRAY_XML_ENUM(RouteTypes          , NUM_ROUTE_TYPES          , JIT_ARRAY_RO
 SET_ARRAY_XML_ENUM(SeaLevelTypes       , NUM_SEALEVEL_TYPES       , JIT_ARRAY_SEA_LEVEL       , COMPILE_TIME_NUM_SEALEVEL_TYPES       );
 SET_ARRAY_XML_ENUM(StrategyTypes       , NUM_STRATEGY_TYPES       , JIT_ARRAY_STRATEGY        , COMPILE_TIME_NUM_STRATEGY_TYPES       );
 SET_ARRAY_XML_ENUM(TerrainTypes        , NUM_TERRAIN_TYPES        , JIT_ARRAY_TERRAIN         , COMPILE_TIME_NUM_TERRAIN_TYPES        );
-SET_ARRAY_XML_ENUM(TraitTypes          , NUM_TRAIT_TYPES          , JIT_ARRAY_TRAIT           , COMPILE_TIME_NUM_TRAIT_TYPES          );
+//SET_ARRAY_XML_ENUM(TraitTypes          , NUM_TRAIT_TYPES          , JIT_ARRAY_TRAIT           , COMPILE_TIME_NUM_TRAIT_TYPES          );
 SET_ARRAY_XML_ENUM(UnitTypes           , NUM_UNIT_TYPES           , JIT_ARRAY_UNIT            , COMPILE_TIME_NUM_UNIT_TYPES           );
 SET_ARRAY_XML_ENUM(UnitAITypes         , NUM_UNITAI_TYPES         , JIT_ARRAY_UNIT_AI         , COMPILE_TIME_NUM_UNITAI_TYPES         );
 SET_ARRAY_XML_ENUM(UnitClassTypes      , NUM_UNITCLASS_TYPES      , JIT_ARRAY_UNIT_CLASS      , COMPILE_TIME_NUM_UNITCLASS_TYPES      );
@@ -1441,7 +1442,7 @@ SET_ARRAY_XML_ENUM(SpecialUnitTypes    , NUM_SPECIALUNIT_TYPES    , JIT_ARRAY_UN
 SET_ARRAY_XML_ENUM(VictoryTypes        , NUM_VICTORY_TYPES        , JIT_ARRAY_VICTORY         , COMPILE_TIME_NUM_VICTORY_TYPES        );
 SET_ARRAY_XML_ENUM(WorldSizeTypes      , NUM_WORLDSIZE_TYPES      , JIT_ARRAY_WORLD_SIZE      , COMPILE_TIME_NUM_WORLDSIZE_TYPES      );
 SET_ARRAY_XML_ENUM(YieldTypes          , NUM_YIELD_TYPES          , JIT_ARRAY_YIELD           , COMPILE_TIME_NUM_YIELD_TYPES          );
-
+*/
 
 SET_ARRAY_XML_ENUM(AreaAITypes         , NUM_AREAAI_TYPES         , NO_JIT_ARRAY_TYPE         , COMPILE_TIME_NUM_AREAAI_TYPES         );
 SET_ARRAY_XML_ENUM(CivCategoryTypes    , NUM_CIV_CATEGORY_TYPES   , JIT_ARRAY_CIV_CATEGORY    , COMPILE_TIME_NUM_CIV_CATEGORY_TYPES   );

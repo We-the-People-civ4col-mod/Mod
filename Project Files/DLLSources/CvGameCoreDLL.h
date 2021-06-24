@@ -257,6 +257,22 @@ class PyObject;
 namespace boost
 {
 	class noncopyable {};
+
+	namespace detail
+	{
+		template< typename T1 >
+		struct is_same_part_1
+		{
+			template<typename T2>  struct part_2 { enum { value = false }; };
+			template<>             struct part_2<T1> { enum { value = true }; };
+		};
+	}
+
+	template< typename T1, typename T2 >
+	struct is_same
+	{
+		enum { value = detail::is_same_part_1<T1>::template part_2<T2>::value };
+	};
 }
 
 #endif // IntelliSense workaround

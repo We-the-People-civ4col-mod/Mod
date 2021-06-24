@@ -6,7 +6,7 @@ CvPlayerCivEffect::CvPlayerCivEffect()
 	: m_iAllowFoundCity(0)
 	, m_ba_CacheAllowBuild                     (JIT_ARRAY_BUILD, true)
 	, m_ja_iCacheFreePromotionsForProfessions  (JIT_ARRAY_PROFESSION      , JIT_ARRAY_PROMOTION)
-	, m_ja_iCacheFreePromotionsForUnitClasses  (JIT_ARRAY_UNIT_CLASS      , JIT_ARRAY_PROMOTION)
+	, m_ja_iCacheFreePromotionsForUnitClasses  (JIT_ARRAY_UNITCLASS       , JIT_ARRAY_PROMOTION)
 {
 }
 

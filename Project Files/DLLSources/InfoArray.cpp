@@ -269,7 +269,7 @@ bool InfoArrayBase::areIndexesValid(int iMax, int iDimention, int iMin) const
 
 int InfoArrayBase::getWithTypeWithConversion(JITarrayTypes eType, int iIndex, int iTokenIndex, const CvCivilizationInfo *pCivInfo) const
 {
-	if (eType == JIT_ARRAY_BUILDING && getType(iTokenIndex) == JIT_ARRAY_BUILDING_CLASS)
+	if (eType == JIT_ARRAY_BUILDING && getType(iTokenIndex) == JIT_ARRAY_BUILDINGCLASS)
 	{
 		FAssertMsg(pCivInfo != NULL, "InfoArray::getWithType called without pCivInfo argument when in index conversion mode");
 		int iValue = getInternal(iIndex, iTokenIndex);
@@ -278,7 +278,7 @@ int InfoArrayBase::getWithTypeWithConversion(JITarrayTypes eType, int iIndex, in
 			return pCivInfo->getCivilizationBuildings(iValue);
 		}
 	}
-	else if (eType == JIT_ARRAY_UNIT && getType(iTokenIndex) == JIT_ARRAY_UNIT_CLASS)
+	else if (eType == JIT_ARRAY_UNIT && getType(iTokenIndex) == JIT_ARRAY_UNITCLASS)
 	{
 		FAssertMsg(pCivInfo != NULL, "InfoArray::getWithType called without pCivInfo argument when in index conversion mode");
 		int iValue = getInternal(iIndex, iTokenIndex);
@@ -652,11 +652,11 @@ void InfoArrayMod::assign(const std::vector<bool>& vec)
 
 void InfoArrayMod::convertClass(const InfoArrayBase* pInfoArray, const CvCivilizationInfo* pCivInfo)
 {
-	FAssertMsg(pInfoArray->getType(0) == JIT_ARRAY_BUILDING_CLASS || pInfoArray->getType(0) == JIT_ARRAY_UNIT_CLASS, "InfoArray tries to resolve class in an array without classes");
+	FAssertMsg(pInfoArray->getType(0) == JIT_ARRAY_BUILDINGCLASS || pInfoArray->getType(0) == JIT_ARRAY_UNITCLASS, "InfoArray tries to resolve class in an array without classes");
 
 	JITarrayTypes eType = getType(0);
 
-	FAssertMsg((eType == JIT_ARRAY_BUILDING && pInfoArray->getType(0) == JIT_ARRAY_BUILDING_CLASS) || (eType == JIT_ARRAY_UNIT && pInfoArray->getType(0) == JIT_ARRAY_UNIT_CLASS), "InfoArray types mismatch");
+	FAssertMsg((eType == JIT_ARRAY_BUILDING && pInfoArray->getType(0) == JIT_ARRAY_BUILDINGCLASS) || (eType == JIT_ARRAY_UNIT && pInfoArray->getType(0) == JIT_ARRAY_UNITCLASS), "InfoArray types mismatch");
 	FAssertMsg(getType(1) == pInfoArray->getType(1) && getType(2) == pInfoArray->getType(2) && getType(3) == pInfoArray->getType(3), "InfoArray types mismatch");
 
 	if (m_bStatic)
