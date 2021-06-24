@@ -8287,7 +8287,17 @@ void CvGameTextMgr::setScoreHelp(CvWStringBuffer &szString, PlayerTypes ePlayer)
 
 void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCity, const CvUnit& kUnit)
 {
-	szString.append(kUnit.getName());
+	// WTP, ray, showing Profession Name in Citizen Help instead of Unit Name - START
+	if(kUnit.getProfession() != NO_PROFESSION) 
+	{
+		szString.append(gDLL->getText("TXT_KEY_CITIZEN_HELP_PROFESSION_NAME_DISPLAY", GC.getProfessionInfo(kUnit.getProfession()).getTextKeyWide()));
+	}
+
+	else
+	{
+		szString.append(gDLL->getText("TXT_KEY_CITIZEN_HELP_UNIT_NAME_DISPLAY", kUnit.getNameKey()));
+	}
+	// WTP, ray, showing Profession Name in Citizen Help instead of Unit Name - START
 
 	PlayerTypes ePlayer = kCity.getOwnerINLINE();
 	if (ePlayer == NO_PLAYER)
