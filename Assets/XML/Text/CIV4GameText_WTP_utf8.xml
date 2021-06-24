@@ -87,4 +87,14 @@
         <English>Milord, the Natives in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] have beaten and chased away your missionary. A missionary from another nation managed to replace him, after accusing him of heresy and other devilish deeds.</English>
         <German>Milord, die Ureinwohner von [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] haben Euren Missionar mit Prügeln aus dem Dorf verjagt, nachdem ein Missionar einer anderen Nation seinen Platz eingenommen hat und ihn der Teufelsanbetung beschuldigte.</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITIZEN_HELP_PROFESSION_NAME_DISPLAY</Tag>
+        <English>[COLOR_UNIT_TEXT]%s1_Profession_Name[COLOR_REVERT]</English>
+        <German>[COLOR_UNIT_TEXT]%s1_Profession_Name[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITIZEN_HELP_UNIT_NAME_DISPLAY</Tag>
+        <English>[COLOR_UNIT_TEXT]%s1_Unit_Name[COLOR_REVERT]</English>
+        <German>[COLOR_UNIT_TEXT]%s1_Unit_Name[COLOR_REVERT]</German>
+    </TEXT>
 </Civ4GameText>
