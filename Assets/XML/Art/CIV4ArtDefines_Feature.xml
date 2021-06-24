@@ -256,6 +256,26 @@
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_SHRUB</Type>
+            <bAnimated>0</bAnimated>
+            <TileArtType>TILE_ART_TYPE_TREES</TileArtType>
+            <fScale>1.4</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <Button>Art/Interface/Buttons/shrub.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/shrub/strauch_03.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/shrub/strauch_04.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/shrub/strauch_05.nif</ModelFile>
+                        <Connections></Connections>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>7</iModelCopies>
+                <VarietyButton>Art/Interface/Buttons/shrub.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
+        <FeatureArtInfo>
             <Type>ART_DEF_FEATURE_SWAMP</Type>
             <bAnimated>1</bAnimated>
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>

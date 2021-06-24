@@ -381,6 +381,20 @@
         <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Weidelhügel[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_FEATURE_SHRUB</Tag>
+        <English>Shrubs</English>
+        <German>
+            <Text>Sträuche</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_SHRUB_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Shrubs[COLOR_REVERT]</English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sträuche[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_FEATURE_TORNADO</Tag>
         <English>Tornado</English>
         <French>Tornade</French>
