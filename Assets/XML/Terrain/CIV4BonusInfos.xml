@@ -85,6 +85,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -184,6 +188,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -269,6 +277,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -654,6 +666,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -814,6 +830,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -1027,6 +1047,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1145,6 +1169,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1242,6 +1270,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -1343,6 +1375,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1435,6 +1471,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -1545,6 +1585,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -1708,6 +1752,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -1878,6 +1926,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1954,6 +2006,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -2046,6 +2102,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2130,6 +2190,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -2218,6 +2282,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2293,6 +2361,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -2382,6 +2454,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2461,6 +2537,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2524,6 +2604,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -2597,6 +2681,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -2681,6 +2769,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2757,6 +2849,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -2842,6 +2938,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2921,6 +3021,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2992,6 +3096,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -3060,6 +3168,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -3148,6 +3260,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -3231,6 +3347,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -3304,6 +3424,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -3438,6 +3562,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -3602,6 +3730,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -3762,6 +3894,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -4026,6 +4162,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -4354,6 +4494,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -4431,6 +4575,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -4518,6 +4666,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -4610,6 +4762,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -4692,6 +4848,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -4770,6 +4930,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -4839,6 +5003,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -5020,6 +5188,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>

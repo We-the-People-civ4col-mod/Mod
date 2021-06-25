@@ -153,6 +153,20 @@
         <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Teergrube[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_FEATURE_SALT_PAN</Tag>
+        <English>Salt Desert</English>
+        <German>
+            <Text>Salzwüste</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_TAR_PIT_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Salt Desert[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Salzwüste[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_FEATURE_CLAY_PIT</Tag>
         <English>Clay Pit</English>
         <German>

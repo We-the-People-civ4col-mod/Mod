@@ -255,6 +255,10 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -486,6 +490,10 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -610,6 +618,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -740,6 +752,10 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -864,6 +880,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -1012,6 +1032,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -1313,6 +1337,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -1473,6 +1501,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -1639,6 +1671,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -2239,6 +2275,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -2382,6 +2422,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -2683,6 +2727,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -2857,6 +2905,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -3004,6 +3056,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -3158,6 +3214,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -3753,6 +3813,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -3874,6 +3938,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs/>
             <ImprovementPillage/>
@@ -3966,6 +4034,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -4062,6 +4134,10 @@
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs/>
             <ImprovementPillage/>
@@ -4148,6 +4224,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
