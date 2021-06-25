@@ -1617,7 +1617,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 
 			// WTP, ray, also check for available AI experts for Building Construction - START
 			// first we get the Array containing UnitClasses and Weight
-			const InfoArray<UnitClassTypes, IntTypes>& AI_ExpertWeightInfoArray = kBuildingInfo.AI_getUnitClassWeight();
+			const InfoArray<UnitClassTypes, int>& AI_ExpertWeightInfoArray = kBuildingInfo.AI_getUnitClassWeight();
 			// now we loop
 			for (int iI = 0; iI < AI_ExpertWeightInfoArray.getLength(); ++iI)
 			{

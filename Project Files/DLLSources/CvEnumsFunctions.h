@@ -5,9 +5,21 @@
 
 // EnumsFunctions.h
 
+#include "CvGameCoreDLL.h"
 #include "CvEnums.h"
 #include "EnumMap.h"
 #include "InfoArray.h"
+
+template <typename T>
+struct VARINFO {}; // intentionally left blank. Use specialized structs only
+
+
+#define ENUM_STRUCT_DECLARATION(ENUM_NAME, JIT_TYPE) \
+template <> struct VARINFO<ENUM_NAME> \
+{ \
+	static const JITarrayTypes JIT = JIT_TYPE; \
+};
+
 
 // overloaded ++ for enum types
 
@@ -95,16 +107,24 @@ return (EnumName)((int)A - (int)B);                                        \
 	VARIABLE_COMPARISON_CHECK(EnumName)               \
 	SET_ENUM_OPERATORS(EnumName)
 
+#define SET_ENUM_VARIABLE_EXPANDED(type, get, jit, max, maxCompile) \
+	SET_ENUM_OPERATORS(type) \
+	ENUM_STRUCT_DECLARATION(type, jit) \
+	SET_ARRAY_XML_ENUM(type, max, jit, maxCompile) \
+	INFO_ARRAY_GET(type, get, jit)
+
+#define SET_ENUM_VARIABLE_AND_FORBID_EXPANDED(type, get, jit, max, maxCompile) \
+	SET_ENUM_OPERATORS_AND_FORBID(type) \
+	ENUM_STRUCT_DECLARATION(type, jit) \
+	SET_ARRAY_XML_ENUM(type, max, jit, maxCompile) \
+	INFO_ARRAY_GET(type, get, jit)
+
+
 #define SET_ENUM_VARIABLE(lower, upper) \
-	SET_ENUM_OPERATORS(##lower##Types) \
-	SET_ARRAY_XML_ENUM(##lower##Types, NUM_##upper##_TYPES, JIT_ARRAY_##upper, COMPILE_TIME_NUM_##upper##_TYPES) \
-	INFO_ARRAY_GET(##lower##Types, get##lower, JIT_ARRAY_##upper)
+	SET_ENUM_VARIABLE_EXPANDED(##lower##Types, get##lower, JIT_ARRAY_##upper, NUM_##upper##_TYPES, COMPILE_TIME_NUM_##upper##_TYPES)
 
 #define SET_ENUM_VARIABLE_AND_FORBID(lower, upper) \
-	SET_ENUM_OPERATORS_AND_FORBID(##lower##Types) \
-	SET_ARRAY_XML_ENUM(##lower##Types, NUM_##upper##_TYPES, JIT_ARRAY_##upper, COMPILE_TIME_NUM_##upper##_TYPES) \
-	INFO_ARRAY_GET(##lower##Types, get##lower, JIT_ARRAY_##upper)
-
+	SET_ENUM_VARIABLE_AND_FORBID_EXPANDED(##lower##Types, get##lower, JIT_ARRAY_##upper, NUM_##upper##_TYPES, COMPILE_TIME_NUM_##upper##_TYPES)
 
 // disable the check for a specific enum type in a single file
 #define DEFINE_ENUM_INT_COMPARISON(EnumName)       \
@@ -138,6 +158,7 @@ SET_ENUM_VARIABLE(Build, BUILD)
 SET_ENUM_VARIABLE(Building, BUILDING)
 SET_ENUM_VARIABLE(BuildingClass, BUILDINGCLASS)
 SET_ENUM_VARIABLE(SpecialBuilding, SPECIALBUILDING)
+SET_ENUM_VARIABLE(CivCategory, CIV_CATEGORY)
 SET_ENUM_VARIABLE(CivEffect, CIV_EFFECT)
 SET_ENUM_VARIABLE(Civic, CIVIC)
 SET_ENUM_VARIABLE(CivicOption, CIVICOPTION)
@@ -167,13 +188,16 @@ SET_ENUM_VARIABLE(Improvement, IMPROVEMENT)
 SET_ENUM_VARIABLE(Invisible, INVISIBLE)
 SET_ENUM_VARIABLE(LeaderHead, LEADER)
 SET_ENUM_VARIABLE(Memory, MEMORY)
+SET_ENUM_VARIABLE(Player, PLAYER)
 SET_ENUM_VARIABLE(PlayerColor, PLAYERCOLOR)
 SET_ENUM_VARIABLE(PlayerOption, PLAYEROPTION)
+SET_ENUM_VARIABLE_EXPANDED(PlotTypes, getPlotType, JIT_ARRAY_PLOT_TYPE, NUM_PLOT_TYPES, NUM_PLOT_TYPES)
 SET_ENUM_VARIABLE(Profession, PROFESSION)
 SET_ENUM_VARIABLE(Promotion, PROMOTION)
 SET_ENUM_VARIABLE(Route, ROUTE)
 SET_ENUM_VARIABLE(SeaLevel, SEALEVEL)
 SET_ENUM_VARIABLE(Strategy, STRATEGY)
+SET_ENUM_VARIABLE(Team, TEAM)
 SET_ENUM_VARIABLE(Terrain, TERRAIN)
 SET_ENUM_VARIABLE_AND_FORBID(Trait, TRAIT)
 SET_ENUM_VARIABLE(Unit, UNIT)
@@ -286,11 +310,9 @@ SET_ENUM_OPERATORS_AND_FORBID(NetContactTypes);
 SET_ENUM_OPERATORS_AND_FORBID(OrderTypes);
 SET_ENUM_OPERATORS_AND_FORBID(PanelStyles);
 SET_ENUM_OPERATORS_AND_FORBID(PlayerActionTypes);
-SET_ENUM_OPERATORS(PlayerTypes);
 SET_ENUM_OPERATORS_AND_FORBID(PlotIndicatorVisibilityFlags);
 SET_ENUM_OPERATORS_AND_FORBID(PlotLandscapeLayers);
 SET_ENUM_OPERATORS_AND_FORBID(PlotStyles);
-SET_ENUM_OPERATORS(PlotTypes);
 SET_ENUM_OPERATORS_AND_FORBID(PopupControlLayout);
 SET_ENUM_OPERATORS_AND_FORBID(PopupEventTypes);
 SET_ENUM_OPERATORS_AND_FORBID(PopupStates);
@@ -305,7 +327,6 @@ SET_ENUM_OPERATORS_AND_FORBID(SlotStatus);
 SET_ENUM_OPERATORS_AND_FORBID(TabGroupTypes);
 SET_ENUM_OPERATORS_AND_FORBID(TableStyles);
 SET_ENUM_OPERATORS_AND_FORBID(TaskTypes);
-SET_ENUM_OPERATORS(TeamTypes);
 SET_ENUM_OPERATORS_AND_FORBID(TerrainGroupTypes);
 SET_ENUM_OPERATORS_AND_FORBID(TileArtTypes);
 SET_ENUM_OPERATORS_AND_FORBID(ToolTipAlignTypes);
@@ -326,5 +347,17 @@ SET_ENUM_OPERATORS_AND_FORBID(WidgetTypes);
 SET_ENUM_OPERATORS_AND_FORBID(WrapDirection);
 SET_ENUM_OPERATORS_AND_FORBID(WorldBuilderPopupTypes);
 SET_ENUM_OPERATORS_AND_FORBID(ZoomLevelTypes);
+
+
+
+#define DECLARE_CUSTOM_INT(type, getType) \
+	ENUM_STRUCT_DECLARATION(type, JIT_ARRAY_INT) \
+	INFO_ARRAY_GET_INT(type, getType, JIT_ARRAY_INT)
+
+DECLARE_CUSTOM_INT(int, getInt);
+DECLARE_CUSTOM_INT(short, getInt);
+
+ENUM_STRUCT_DECLARATION(JIT_NoneTypes, JIT_ARRAY_NO_TYPE);
+
 
 #endif	// CVENUMS_h

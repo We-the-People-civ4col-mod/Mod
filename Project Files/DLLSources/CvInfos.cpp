@@ -3271,7 +3271,7 @@ int CvUnitInfo::getYieldModifier(int i) const
 	return m_aiYieldModifier ? m_aiYieldModifier[i] : -1;
 }
 // R&R, Androrc, Domestic Market -- modified by Nightinggale - start
-const InfoArray<YieldTypes, IntTypes>& CvUnitInfo::getYieldDemands() const
+const InfoArray<YieldTypes, int>& CvUnitInfo::getYieldDemands() const
 {
 	return m_info_YieldDemands;
 }
@@ -5112,7 +5112,7 @@ const InfoArray<PlotTypes>& CvBuildingInfo::AI_getRequiredCatchmentAreaPlotTypes
 {
 	return m_info_AIRequiredCatchmentAreaPlotTypes;
 }
-const InfoArray<UnitClassTypes, IntTypes>& CvBuildingInfo::AI_getUnitClassWeight() const
+const InfoArray<UnitClassTypes, int>& CvBuildingInfo::AI_getUnitClassWeight() const
 {
 	return m_info_AIUnitClassWeight;
 }
@@ -5134,7 +5134,7 @@ bool CvBuildingInfo::isCenterInCity() const
 	return m_bCenterInCity;
 }
 // R&R, Androrc, Domestic Market -- modified by Nightinggale - start
-const InfoArray<YieldTypes, IntTypes>& CvBuildingInfo::getYieldDemands() const
+const InfoArray<YieldTypes, int>& CvBuildingInfo::getYieldDemands() const
 {
 	return m_info_YieldDemands;
 }

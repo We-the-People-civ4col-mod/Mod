@@ -204,14 +204,9 @@ public:
 	}
 };
 
-template <typename type> struct JIT_TYPE {};
 
 enum JIT_NoneTypes {};
-#define INFO_ARRAY_CONST(type, JITtype )                                           \
-template <> struct JIT_TYPE<type>                                                  \
-{                                                                                  \
-	static const JITarrayTypes TYPE = JITtype;                                     \
-};
+
 
 //
 // Here comes a complex setup, which is based on a fairly simple idea.
@@ -501,7 +496,6 @@ public:                                                                         
 
 
 #define INFO_ARRAY_GET_ALL(type, getName, JITtype, type2)                                                                                                     \
-	INFO_ARRAY_CONST(type, JITtype)                                                                                                                           \
     INFO_ARRAY_GET_1(type, getName, JITtype, type2)                                                                                                           \
 	INFO_ARRAY_GET_2(type, getName, JITtype, type2)                                                                                                           \
 	INFO_ARRAY_GET_3(type, getName, JITtype, type2)                                                                                                           \
@@ -512,30 +506,9 @@ public:                                                                         
 
 
 #define INFO_ARRAY_GET_INT(type, getName, JITtype)                                                                                                            \
-	enum type {};                                                                                                                                             \
-	INFO_ARRAY_GET_ALL(type, getName, JITtype, int)
-
-
-
-
-INFO_ARRAY_CONST(JIT_NoneTypes, JIT_ARRAY_NO_TYPE)
-
-
-
-
-// enums not linked to xml
-INFO_ARRAY_GET(CivCategoryTypes             , getCivCategory        , JIT_ARRAY_CIV_CATEGORY       )
-INFO_ARRAY_GET(PlayerTypes                  , getPlayer             , JIT_ARRAY_PLAYER             )
-INFO_ARRAY_GET(PlotTypes                    , getPlotType           , JIT_ARRAY_PLOT_TYPE          )
-INFO_ARRAY_GET(TeamTypes                    , getTeam               , JIT_ARRAY_TEAM               )
-
-// int/float etc
-INFO_ARRAY_GET_INT(ModifierTypes            , getModifier           , JIT_ARRAY_MODIFIER           )
-INFO_ARRAY_GET_INT(ModifierFloatTypes       , getModifierFloat      , JIT_ARRAY_MODIFIER_FLOAT     )
-INFO_ARRAY_GET_INT(AllowTypes               , getAllow              , JIT_ARRAY_ALLOW              )
-INFO_ARRAY_GET_INT(IntTypes                 , getInt                , JIT_ARRAY_INT                )
-INFO_ARRAY_GET_INT(UIntTypes                , getInt                , JIT_ARRAY_UNSIGNED_INT       )
-INFO_ARRAY_GET_INT(FloatTypes               , getFloat              , JIT_ARRAY_FLOAT              )
+	INFO_ARRAY_GET_2(type, getName, JITtype, type)                                                                                                            \
+	INFO_ARRAY_GET_3(type, getName, JITtype, type)                                                                                                            \
+	INFO_ARRAY_GET_4(type, getName, JITtype, type)
 
 
 
@@ -550,7 +523,7 @@ class InfoArray : public InfoArraySelector<T0, T1, T2, T3, 0>
 	friend class CvPlayerCivEffect;
 	friend class CvInfoBase;
 public:
-	InfoArray() : InfoArraySelector<T0, T1, T2, T3, 0>(JIT_TYPE<T0>::TYPE, JIT_TYPE<T1>::TYPE, JIT_TYPE<T2>::TYPE, JIT_TYPE<T3>::TYPE)
+	InfoArray() : InfoArraySelector<T0, T1, T2, T3, 0>(VARINFO<T0>::JIT, VARINFO<T1>::JIT, VARINFO<T2>::JIT, VARINFO<T3>::JIT)
 	{};
 
 	// the actual functions are in child classes. They are added here to get an overview
