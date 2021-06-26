@@ -67,6 +67,8 @@ template<class T> class JustInTimeArray;
 
 template<class IndexType, class T>
 class EnumMap;
+template<class IndexType, class IndexType2, class T>
+class EnumMap2D;
 
 class InfoArrayBase
 {
@@ -247,6 +249,8 @@ public:
 	template<typename T>
 	void copyTo(EnumMap<T0, T> & em) const;
 	void copyTo(EnumMap<T0, bool> & em) const;
+	template<typename Ta, typename Tb, typename Tc>
+	void addTo(EnumMap2D<Ta, Tb, Tc> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
 };
 template<typename T0, typename T1, typename T2>
 class InfoArray3Only : public InfoArray3<T0, T1, T2>
@@ -254,6 +258,9 @@ class InfoArray3Only : public InfoArray3<T0, T1, T2>
 protected:
 	InfoArray3Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
 		: InfoArray3<T0, T1, T2>(eType0, eType1, eType2, eType3) {}
+public:
+	template<typename Ta, typename Tb, typename Tc>
+	void addTo(EnumMap2D<Ta, Tb, Tc> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
 };
 template<typename T0, typename T1, typename T2, typename T3>
 class InfoArray4Only : public InfoArray4<T0, T1, T2, T3>
@@ -367,6 +374,47 @@ void InfoArray2Only<T0, T1>::copyTo(EnumMap<T0, bool> & em) const
 		em.set((T0)getInternal(i), getInternal(i, 1) > 0);
 	}
 }
+
+template<typename T0, typename T1>
+template<typename Ta, typename Tb, typename Tc>
+void InfoArray2Only<T0, T1>::addTo(EnumMap2D<Ta, Tb, Tc> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+{
+	const bool bTypeCheck = !boost::is_same<Tb, bool>::value;
+	BOOST_STATIC_ASSERT(bTypeCheck);
+	for (int i = 0; i < getLength(); ++i)
+	{
+		const Ta eIndex0 = pCivInfo->getCivSpecificForClass<Ta, T0>(get0(i));
+		if (eIndex0 != (Ta)-1)
+		{
+			const Tb eIndex1 = pCivInfo->getCivSpecificForClass<Tb, T1>(get1(i));
+			if (eIndex1 != (Tb)-1)
+			{
+				em.add(eIndex0, eIndex1, iChange);
+			}
+		}
+	}
+}
+
+template<typename T0, typename T1, typename T2>
+template<typename Ta, typename Tb, typename Tc>
+void InfoArray3Only<T0, T1, T2>::addTo(EnumMap2D<Ta, Tb, Tc> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+{
+	const bool bTypeCheck = !boost::is_same<Tb, bool>::value;
+	BOOST_STATIC_ASSERT(bTypeCheck);
+	for (int i = 0; i < getLength(); ++i)
+	{
+		const Ta eIndex0 = pCivInfo->getCivSpecificForClass<Ta, T0>(get0(i));
+		if (eIndex0 != (Ta)-1)
+		{
+			const Tb eIndex1 = pCivInfo->getCivSpecificForClass<Tb, T1>(get1(i));
+			if (eIndex1 != (Tb)-1)
+			{
+				em.add(eIndex0, eIndex1, get2(i) * iChange);
+			}
+		}
+	}
+}
+
 
 // the "real" classes. All declared in defines as they become type strict (returns T0 type etc)
 
@@ -501,6 +549,8 @@ public:
 	void assignFrom(const EnumMap<T0, T>& em);
 	void addTo(EnumMap<Ta, Tb> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
 	void copyTo(EnumMap<T0, T> & em) const;
+
+	void addTo(EnumMap2D<Ta, Tb, Tc> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
 
 	// addTo uses pCivInfo if InfoArray is UnitClassTypes and EnumMap is UnitTypes. Same with buildings
 	// in all other cases pCivInfo isn't used and compilation fails unless T0 == Ta
