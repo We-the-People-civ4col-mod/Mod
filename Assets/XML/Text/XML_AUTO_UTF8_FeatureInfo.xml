@@ -209,6 +209,20 @@
         <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lehmgrube[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN</Tag>
+        <English>Impassable Mountain</English>
+        <German>
+            <Text>Unpassierbarer Berg</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Impassable Mountain[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Unpassierbarer Berg[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_FEATURE_LIGHT_FOREST</Tag>
         <English>Light Forest</English>
         <French>
