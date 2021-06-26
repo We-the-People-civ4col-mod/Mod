@@ -230,8 +230,10 @@ protected:
 public:
 	template<typename T>
 	void assignFrom(const EnumMap<T0, T>& em);
+	template<typename T>
+	void addTo(EnumMap<T0, T> & em, int iChange = 1) const;
 	template<typename Ta, typename Tb>
-	void addTo(EnumMap<Ta, Tb> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
+	void addTo(EnumMap<Ta, Tb> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
 	template<typename T>
 	void copyTo(EnumMap<T0, T> & em) const;
 };
@@ -244,13 +246,17 @@ protected:
 public:
 	template<typename T>
 	void assignFrom(const EnumMap<T0, T>& em);
+	template<typename T>
+	void addTo(EnumMap<T0, T> & em, int iChange = 1) const;
 	template<typename Ta, typename Tb>
-	void addTo(EnumMap<Ta, Tb> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
+	void addTo(EnumMap<Ta, Tb> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
 	template<typename T>
 	void copyTo(EnumMap<T0, T> & em) const;
 	void copyTo(EnumMap<T0, bool> & em) const;
+	template<typename T>
+	void addTo(EnumMap2D<T0, T1, T> & em, int iChange = 1) const;
 	template<typename Ta, typename Tb, typename Tc>
-	void addTo(EnumMap2D<Ta, Tb, Tc> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
+	void addTo(EnumMap2D<Ta, Tb, Tc> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
 };
 template<typename T0, typename T1, typename T2>
 class InfoArray3Only : public InfoArray3<T0, T1, T2>
@@ -259,8 +265,10 @@ protected:
 	InfoArray3Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
 		: InfoArray3<T0, T1, T2>(eType0, eType1, eType2, eType3) {}
 public:
+	template<typename T>
+	void addTo(EnumMap2D<T0, T1, T> & em, int iChange = 1) const;
 	template<typename Ta, typename Tb, typename Tc>
-	void addTo(EnumMap2D<Ta, Tb, Tc> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
+	void addTo(EnumMap2D<Ta, Tb, Tc> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
 };
 template<typename T0, typename T1, typename T2, typename T3>
 class InfoArray4Only : public InfoArray4<T0, T1, T2, T3>
@@ -312,6 +320,13 @@ void InfoArray2Only<T0, T1>::assignFrom(const EnumMap<T0, T> & em)
 }
 
 template<typename T0>
+template<typename T>
+void InfoArray1Only<T0>::addTo(EnumMap<T0, T> & em, int iChange) const
+{
+	addTo(em, iChange, NULL);
+}
+
+template<typename T0>
 template<typename Ta, typename Tb>
 void InfoArray1Only<T0>::addTo(EnumMap<Ta, Tb> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
 {
@@ -325,6 +340,13 @@ void InfoArray1Only<T0>::addTo(EnumMap<Ta, Tb> & em, int iChange, const CvCivili
 			em.add(eIndex, iChange);
 		}
 	}
+}
+
+template<typename T0, typename T1>
+template<typename T>
+void InfoArray2Only<T0, T1>::addTo(EnumMap<T0, T> & em, int iChange) const
+{
+	addTo(em, iChange, NULL);
 }
 
 template<typename T0, typename T1>
@@ -376,6 +398,13 @@ void InfoArray2Only<T0, T1>::copyTo(EnumMap<T0, bool> & em) const
 }
 
 template<typename T0, typename T1>
+template<typename T>
+void InfoArray2Only<T0, T1>::addTo(EnumMap2D<T0, T1, T> & em, int iChange) const
+{
+	addTo(em, iChange, NULL);
+}
+
+template<typename T0, typename T1>
 template<typename Ta, typename Tb, typename Tc>
 void InfoArray2Only<T0, T1>::addTo(EnumMap2D<Ta, Tb, Tc> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
 {
@@ -393,6 +422,13 @@ void InfoArray2Only<T0, T1>::addTo(EnumMap2D<Ta, Tb, Tc> & em, int iChange, cons
 			}
 		}
 	}
+}
+
+template<typename T0, typename T1, typename T2>
+template<typename T>
+void InfoArray3Only<T0, T1, T2>::addTo(EnumMap2D<T0, T1, T> & em, int iChange) const
+{
+	addTo(em, iChange, NULL);
 }
 
 template<typename T0, typename T1, typename T2>
