@@ -3984,11 +3984,11 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>3</iValue>
+                    <iValue>4</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_BARLEY</YieldType>
-                    <iValue>3</iValue>
+                    <iValue>4</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HORSES</YieldType>
