@@ -6,7 +6,7 @@ CyInfoArray::CyInfoArray()
 {
 }
 
-CyInfoArray::CyInfoArray(const InfoArrayMod& parent)
+CyInfoArray::CyInfoArray(const InfoArrayBase& parent)
 	: m_Array(parent.getType(0), parent.getType(1), parent.getType(2), parent.getType(3))
 {
 	m_Array = parent;

@@ -9,7 +9,7 @@ class CyInfoArray
 {
 public:
 	CyInfoArray();
-	CyInfoArray(const InfoArrayMod& parent);
+	CyInfoArray(const InfoArrayBase& parent);
 	CyInfoArray(const BoolArray& BArray);
 
 	int get(int iIndex) const;
@@ -25,7 +25,7 @@ protected:
 	// Use an instance rather than a pointer
 	// This makes it a lot easier to avoid memory leaks at the cost of copying an entire array a few times
 	// It's a read only array anyway. Doesn't matter if python only accesses a copy or read the original directly
-	InfoArrayMod m_Array;
+	InfoArrayBase m_Array;
 };
 
 #endif	// CyMapGenerator_h

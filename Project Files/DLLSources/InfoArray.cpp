@@ -350,7 +350,7 @@ InfoArrayBase& InfoArrayBase::operator=(const InfoArrayBase &rhs)
 /// Only available to InfoArrayMod and they will completely overwrite the existing content
 ///
 
-void InfoArrayMod::readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vector<short>& aArray, std::vector<short>& aIndex, int iLevel, const char *sTagName, const char* szType)
+void InfoArrayBase::readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vector<short>& aArray, std::vector<short>& aIndex, int iLevel, const char *sTagName, const char* szType)
 {
 	int iIndexStart = iIndex;
 	do
@@ -453,7 +453,7 @@ void InfoArrayMod::readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vecto
 	} while (gDLL->getXMLIFace()->NextSibling(pXML->GetXML()) && (m_iNumDimentions > 1 || iLevel < 1));
 }
 
-void InfoArrayMod::read(CvXMLLoadUtility* pXML, const char* szType, const char *sTagName)
+void InfoArrayBase::read(CvXMLLoadUtility* pXML, const char* szType, const char *sTagName)
 {
 	if (m_bStatic)
 	{
@@ -508,7 +508,7 @@ void InfoArrayMod::read(CvXMLLoadUtility* pXML, const char* szType, const char *
 	}
 }
 
-void InfoArrayMod::assign(const BoolArray* pBArray)
+void InfoArrayBase::assign(const BoolArray* pBArray)
 {
 	FAssert(m_iNumDimentions == 1);
 	if (m_bStatic)
@@ -550,7 +550,7 @@ void InfoArrayMod::assign(const BoolArray* pBArray)
 	}
 }
 
-void InfoArrayMod::assign(const std::vector<int>& vec)
+void InfoArrayBase::assign(const std::vector<int>& vec)
 {
 	assert(m_iNumDimentions == 1 || m_iNumDimentions == 2);
 	if (m_bStatic)
@@ -602,7 +602,7 @@ void InfoArrayMod::assign(const std::vector<int>& vec)
 	}
 }
 
-void InfoArrayMod::assign(const std::vector<bool>& vec)
+void InfoArrayBase::assign(const std::vector<bool>& vec)
 {
 	assert(m_iNumDimentions == 1);
 	if (m_bStatic)
@@ -650,7 +650,7 @@ void InfoArrayMod::assign(const std::vector<bool>& vec)
 	}
 }
 
-void InfoArrayMod::convertClass(const InfoArrayBase* pInfoArray, const CvCivilizationInfo* pCivInfo)
+void InfoArrayBase::convertClass(const InfoArrayBase* pInfoArray, const CvCivilizationInfo* pCivInfo)
 {
 	FAssertMsg(pInfoArray->getType(0) == JIT_ARRAY_BUILDINGCLASS || pInfoArray->getType(0) == JIT_ARRAY_UNITCLASS, "InfoArray tries to resolve class in an array without classes");
 

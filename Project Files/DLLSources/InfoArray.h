@@ -141,17 +141,8 @@ protected:
 		};
 		unsigned int m_aiTypes;
 	};
-};
 
-///
-/// write functions
-/// These functions will completely overwrite the existing content
-///
-class InfoArrayMod : public InfoArrayBase
-{
 public:
-	InfoArrayMod() {};
-	InfoArrayMod(JITarrayTypes eType0, JITarrayTypes eType1 = JIT_ARRAY_NO_TYPE, JITarrayTypes eType2 = JIT_ARRAY_NO_TYPE, JITarrayTypes eType3 = JIT_ARRAY_NO_TYPE) : InfoArrayBase(eType0, eType1, eType2, eType3){};
 	// bReadFloat will multiply the read value by 100 and store the int value of that
 	// It doesn't provide extra functionality other than allowing floats to be written in XML for human readability
 
@@ -369,49 +360,20 @@ void InfoArray2Only<T0, T1>::copyTo(EnumMap<T0, bool> & em) const
 	}
 }
 
-
-// selector classes. InfoArray will inherit one, which in turn will inherit one only class
-template<typename T0, typename T1, typename T2, typename T3, int unused>
-class InfoArraySelector;
-
-template<typename T0>
-class InfoArraySelector<T0, JIT_NoneTypes, JIT_NoneTypes, JIT_NoneTypes, 0> : public InfoArray1Only<T0>
-{
-protected:
-	InfoArraySelector(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
-		: InfoArray1Only<T0>(eType0, eType1, eType2, eType3) {}
-};
-template<typename T0, typename T1>
-class InfoArraySelector<T0,T1, JIT_NoneTypes, JIT_NoneTypes, 0> : public InfoArray2Only<T0, T1>
-{
-protected:
-	InfoArraySelector(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
-		: InfoArray2Only<T0, T1>(eType0, eType1, eType2, eType3) {}
-};
-template<typename T0, typename T1, typename T2>
-class InfoArraySelector<T0, T1, T2, JIT_NoneTypes, 0> : public InfoArray3Only<T0, T1, T2>
-{
-protected:
-	InfoArraySelector(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
-		: InfoArray3Only<T0, T1, T2>(eType0, eType1, eType2, eType3) {}
-};
-template<typename T0, typename T1, typename T2, typename T3>
-class InfoArraySelector<T0, T1, T2, T3, 0> : public InfoArray4Only<T0, T1, T2, T3>
-{
-protected:
-	InfoArraySelector(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
-		: InfoArray4Only<T0, T1, T2, T3>(eType0, eType1, eType2, eType3) {}
-};
-
 // the "real" classes. All declared in defines as they become type strict (returns T0 type etc)
 
 #define INFO_ARRAY_GET_1(type, getName, JITtype, returnType)                                                                                                  \
 template<> class InfoArray1<type>                                                                                                                             \
-	: protected InfoArrayMod                                                                                                                                  \
+	: protected InfoArrayBase                                                                                                                                 \
 		, public boost::noncopyable                                                                                                                           \
 {                                                                                                                                                             \
+friend class CvCity;                                                                                                                                          \
+friend class CvGlobals;                                                                                                                                       \
+friend class CivEffectInfo;                                                                                                                                   \
+friend class CvPlayerCivEffect;                                                                                                                               \
+friend class CvInfoBase;                                                                                                                                      \
 protected:                                                                                                                                                    \
-	InfoArray1(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3) : InfoArrayMod(eType0, eType1, eType2, eType3) {}      \
+	InfoArray1(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3) : InfoArrayBase(eType0, eType1, eType2, eType3) {}     \
 public:                                                                                                                                                       \
 	int getLength() const {return InfoArrayBase::getLength();}                                                                                                \
 	returnType getName(int iIndex) const                                                                                                                      \
@@ -513,17 +475,10 @@ public:                                                                         
 
 
 template<typename T0, typename T1 = JIT_NoneTypes, typename T2 = JIT_NoneTypes, typename T3 = JIT_NoneTypes>
-class InfoArray : public InfoArraySelector<T0, T1, T2, T3, 0>
+class InfoArray : public InfoArray4Only<T0, T1, T2, T3>
 {
-	// classes, which somehow bypasses the compile time type check
-	// TODO remove as many as possible
-	friend class CvCity;
-	friend class CvGlobals;
-	friend class CivEffectInfo;
-	friend class CvPlayerCivEffect;
-	friend class CvInfoBase;
 public:
-	InfoArray() : InfoArraySelector<T0, T1, T2, T3, 0>(VARINFO<T0>::JIT, VARINFO<T1>::JIT, VARINFO<T2>::JIT, VARINFO<T3>::JIT)
+	InfoArray() : InfoArray4Only<T0, T1, T2, T3>(VARINFO<T0>::JIT, VARINFO<T1>::JIT, VARINFO<T2>::JIT, VARINFO<T3>::JIT)
 	{};
 
 	// the actual functions are in child classes. They are added here to get an overview
@@ -539,6 +494,31 @@ public:
 	void addTo(EnumMap<T0, T> & em, int iChange = 1) const;
 	void copyTo(EnumMap<T0, T> & em) const;
 #endif
+};
+
+template<typename T0, typename T1, typename T2>
+class InfoArray< T0, T1, T2, JIT_NoneTypes> : public InfoArray3Only<T0, T1, T2>
+{
+public:
+	InfoArray() : InfoArray3Only<T0, T1, T2>(VARINFO<T0>::JIT, VARINFO<T1>::JIT, VARINFO<T2>::JIT, JIT_ARRAY_NO_TYPE)
+	{};
+};
+
+template<typename T0, typename T1>
+class InfoArray< T0, T1, JIT_NoneTypes, JIT_NoneTypes> : public InfoArray2Only<T0, T1>
+{
+public:
+	InfoArray() : InfoArray2Only<T0, T1>(VARINFO<T0>::JIT, VARINFO<T1>::JIT, JIT_ARRAY_NO_TYPE, JIT_ARRAY_NO_TYPE)
+	{};
+};
+
+
+template<typename T0>
+class InfoArray< T0, JIT_NoneTypes, JIT_NoneTypes, JIT_NoneTypes> : public InfoArray1Only<T0>
+{
+public:
+	InfoArray() : InfoArray1Only<T0>(VARINFO<T0>::JIT, JIT_ARRAY_NO_TYPE, JIT_ARRAY_NO_TYPE, JIT_ARRAY_NO_TYPE)
+	{};
 };
 
 
