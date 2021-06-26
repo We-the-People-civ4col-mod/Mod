@@ -701,5 +701,23 @@
                 <VarietyButton>Art/Interface/Buttons/saltpan.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
+        <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_SALT_DRAINAGE</Type>
+            <bAnimated>0</bAnimated>
+            <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+            <fScale>1.3</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <Button>Art/Interface/Buttons/saltdrainage.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/terrain/features/Salt_Drainage/Oil.nif</ModelFile>
+                        <Connections/>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Interface/Buttons/saltdrainage.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
     </FeatureArtInfos>
 </Civ4ArtDefines>

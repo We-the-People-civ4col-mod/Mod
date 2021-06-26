@@ -259,6 +259,10 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -494,6 +498,10 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -622,6 +630,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -756,6 +768,10 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -884,6 +900,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -1036,6 +1056,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -1341,6 +1365,10 @@
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -1505,6 +1533,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -1677,6 +1709,10 @@
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -1785,7 +1821,16 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
-            <FeatureMakesValids/>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
                     <BonusType>BONUS_IRON</BonusType>
@@ -2279,6 +2324,10 @@
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -2426,6 +2475,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -2731,6 +2784,10 @@
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -2909,6 +2966,10 @@
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -3060,6 +3121,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -3218,6 +3283,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -3817,6 +3886,10 @@
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -3942,6 +4015,10 @@
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs/>
             <ImprovementPillage/>
@@ -4038,6 +4115,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -4138,6 +4219,10 @@
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs/>
             <ImprovementPillage/>
@@ -4228,6 +4313,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
