@@ -93,6 +93,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -200,6 +204,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -294,6 +302,10 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -686,6 +698,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -855,6 +871,10 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -1075,6 +1095,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1201,6 +1225,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1307,6 +1335,10 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -1415,6 +1447,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1516,6 +1552,10 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -1635,6 +1675,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -1708,6 +1752,10 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SHRUB</FeatureType>
                     <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -1804,6 +1852,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -1982,6 +2034,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2067,6 +2123,10 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -2166,6 +2226,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2259,6 +2323,10 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -2354,6 +2422,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2437,6 +2509,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -2534,6 +2610,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2621,6 +2701,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2702,6 +2786,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2781,6 +2869,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -2873,6 +2965,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -2957,6 +3053,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -3050,6 +3150,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -3137,6 +3241,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -3216,6 +3324,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -3292,6 +3404,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -3388,6 +3504,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -3479,6 +3599,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -3560,6 +3684,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -3703,6 +3831,10 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -3874,6 +4006,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -4043,6 +4179,10 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -4315,6 +4455,10 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
@@ -4650,6 +4794,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -4735,6 +4883,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -4830,6 +4982,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -4930,6 +5086,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -5020,6 +5180,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -5106,6 +5270,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -5183,6 +5351,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -5373,6 +5545,10 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>

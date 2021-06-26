@@ -298,6 +298,10 @@
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs/>
             <ImprovementPillage/>
@@ -537,6 +541,10 @@
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs/>
             <ImprovementPillage/>
@@ -670,6 +678,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -807,6 +819,10 @@
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs/>
             <ImprovementPillage/>
@@ -942,6 +958,10 @@
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs/>
             <ImprovementPillage/>
@@ -1061,6 +1081,10 @@
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
@@ -1551,6 +1575,10 @@
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -1711,6 +1739,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -2481,6 +2513,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -2970,6 +3006,10 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
@@ -3125,6 +3165,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
@@ -3287,6 +3331,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
             </FeatureMakesValids>
