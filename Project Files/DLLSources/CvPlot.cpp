@@ -5515,7 +5515,11 @@ void CvPlot::setCoastline(bool bRecalculate, bool bRebuildGraphics)
 		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
 		if (pLoopPlot != NULL && !pLoopPlot->isWater())
 		{
-			setTerrainType(TERRAIN_COAST, bRecalculate, bRebuildGraphics);
+			//WTP, ray preventing Shallow Coast explicity set on Maps to be transformed into Coast
+			if(getTerrainType() != TERRAIN_SHALLOW_COAST)
+			{
+				setTerrainType(TERRAIN_COAST, bRecalculate, bRebuildGraphics);
+			}
 			return;
 		}
 	}

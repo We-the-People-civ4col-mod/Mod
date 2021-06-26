@@ -1249,6 +1249,7 @@ void CvMap::updateWaterPlotTerrainTypes()
 	EnumMap<TerrainTypes, bool> em;
 	em.set(TERRAIN_COAST, true);
 	em.set(TERRAIN_OCEAN, true);
+	em.set(TERRAIN_SHALLOW_COAST, true); //WTP, ray considering shallow Coasts as well for being transformed to lakes
 	em.set(TERRAIN_LAKE, true);
 
 	PlotRegionMap regions(em);
