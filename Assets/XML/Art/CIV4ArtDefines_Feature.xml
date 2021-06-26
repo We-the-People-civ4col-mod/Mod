@@ -723,7 +723,7 @@
             <Type>ART_DEF_FEATURE_FLOOD_PLAINS</Type>
             <bAnimated>0</bAnimated>
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
-            <fScale>1.3</fScale>
+            <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <Button>Art/Interface/Buttons/flood_plains.dds</Button>
             <FeatureVariety>
