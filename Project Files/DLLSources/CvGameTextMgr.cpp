@@ -2700,6 +2700,13 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 		{
 			if (pPlot->isPeak())
 			{
+				// WTP, Peaks can now also have features
+				if (pPlot->getFeatureType() != NO_FEATURE)
+				{
+					szTempBuffer.Format(L"%s/", GC.getFeatureInfo(pPlot->getFeatureType()).getDescription());
+					szString.append(szTempBuffer);
+				}
+
 				szString.append(gDLL->getText("TXT_KEY_PLOT_PEAK"));
 			}
 			else
