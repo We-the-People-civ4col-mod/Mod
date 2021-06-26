@@ -1647,6 +1647,8 @@ public:
 	int getFreeYields(int i) const;
 	int getTeachUnitClassWeight(int i) const;
 
+	template<typename Ta, typename Tb> Ta getCivSpecificForClass(Tb eVar) const;
+
 	DllExport bool isLeaders(int i) const;
 	bool isCivilizationFreeBuildingClass(int i) const;
 	bool isValidProfession(int i) const;
@@ -1812,6 +1814,32 @@ protected:
 	bool m_bRevolution;
 	CvString m_szMovie;
 };
+
+template<typename Ta, typename Tb>
+inline Ta CvCivilizationInfo::getCivSpecificForClass(Tb eVar) const
+{
+	// WARNING
+	// do not access member data from this call
+	// InfoArray calls this while this is NULL
+	// As such treat it as static even though it isn't due to the specialized functions
+	const bool bTypeCheck = boost::is_same<Ta, Tb>::value;
+	BOOST_STATIC_ASSERT(bTypeCheck);
+	return (Ta)eVar;
+}
+
+template<>
+inline BuildingTypes CvCivilizationInfo::getCivSpecificForClass(BuildingClassTypes eVar) const
+{
+	FAssertMsg(this != NULL, "InfoArray: BuildingClass->Unit conversion done on a NULL civ pointer");
+	return (BuildingTypes)getCivilizationBuildings(eVar);
+}
+
+template<>
+inline UnitTypes CvCivilizationInfo::getCivSpecificForClass(UnitClassTypes eVar) const
+{
+	FAssertMsg(this != NULL, "InfoArray: UnitClass->Unit conversion done on a NULL civ pointer");
+	return (UnitTypes)getCivilizationUnits(eVar);
+}
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //

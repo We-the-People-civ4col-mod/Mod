@@ -228,8 +228,8 @@ protected:
 public:
 	template<typename T>
 	void assignFrom(const EnumMap<T0, T>& em);
-	template<typename T>
-	void addTo(EnumMap<T0, T> & em, int iChange = 1) const;
+	template<typename Ta, typename Tb>
+	void addTo(EnumMap<Ta, Tb> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
 	template<typename T>
 	void copyTo(EnumMap<T0, T> & em) const;
 };
@@ -242,8 +242,8 @@ protected:
 public:
 	template<typename T>
 	void assignFrom(const EnumMap<T0, T>& em);
-	template<typename T>
-	void addTo(EnumMap<T0, T> & em, int iChange = 1) const;
+	template<typename Ta, typename Tb>
+	void addTo(EnumMap<Ta, Tb> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
 	template<typename T>
 	void copyTo(EnumMap<T0, T> & em) const;
 	void copyTo(EnumMap<T0, bool> & em) const;
@@ -305,26 +305,34 @@ void InfoArray2Only<T0, T1>::assignFrom(const EnumMap<T0, T> & em)
 }
 
 template<typename T0>
-template<typename T>
-void InfoArray1Only<T0>::addTo(EnumMap<T0, T> & em, int iChange) const
+template<typename Ta, typename Tb>
+void InfoArray1Only<T0>::addTo(EnumMap<Ta, Tb> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
 {
-	const bool bTypeCheck = !boost::is_same<T, bool>::value;
+	const bool bTypeCheck = !boost::is_same<Tb, bool>::value;
 	BOOST_STATIC_ASSERT(bTypeCheck);
 	for (int i = 0; i < getLength(); ++i)
 	{
-		em.add((T0)getInternal(i), iChange);
+		const Ta eIndex = pCivInfo->getCivSpecificForClass<Ta, T0>(get0(i));
+		if (eIndex != (Ta)-1)
+		{
+			em.add(eIndex, iChange);
+		}
 	}
 }
 
 template<typename T0, typename T1>
-template<typename T>
-void InfoArray2Only<T0, T1>::addTo(EnumMap<T0, T> & em, int iChange) const
+template<typename Ta, typename Tb>
+void InfoArray2Only<T0, T1>::addTo(EnumMap<Ta, Tb> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
 {
-	const bool bTypeCheck = !boost::is_same<T, bool>::value;
+	const bool bTypeCheck = !boost::is_same<Tb, bool>::value;
 	BOOST_STATIC_ASSERT(bTypeCheck);
 	for (int i = 0; i < getLength(); ++i)
 	{
-		em.add((T0)getInternal(i), getInternal(i, 1) * iChange);
+		const Ta eIndex = pCivInfo->getCivSpecificForClass<Ta, T0>(get0(i));
+		if (eIndex != (Ta)-1)
+		{
+			em.add(eIndex, get1(i) * iChange);
+		}
 	}
 }
 
@@ -491,8 +499,11 @@ public:
 
 	// EnumMap interaction
 	void assignFrom(const EnumMap<T0, T>& em);
-	void addTo(EnumMap<T0, T> & em, int iChange = 1) const;
+	void addTo(EnumMap<Ta, Tb> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
 	void copyTo(EnumMap<T0, T> & em) const;
+
+	// addTo uses pCivInfo if InfoArray is UnitClassTypes and EnumMap is UnitTypes. Same with buildings
+	// in all other cases pCivInfo isn't used and compilation fails unless T0 == Ta
 #endif
 };
 
