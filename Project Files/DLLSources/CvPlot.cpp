@@ -4469,7 +4469,7 @@ bool CvPlot::hasNearbyPlotWith(const InfoArray1<T>& kInfo, int iRange, bool bEmp
 			}
 			for (int i = 0; i < iLength; ++i)
 			{
-				if (eVal == kInfo.getWithTemplate(i, eVal))
+				if (eVal == kInfo.get0(i))
 				{
 					return true;
 				}

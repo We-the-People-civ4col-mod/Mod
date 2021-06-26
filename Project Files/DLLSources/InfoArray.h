@@ -380,7 +380,7 @@ public:                                                                         
 	{                                                                                                                                                         \
 		return static_cast< returnType > (getInternal(iIndex, 0));                                                                                            \
 	}                                                                                                                                                         \
-	returnType getWithTemplate(int iIndex, returnType eVar) const                                                                                             \
+	returnType get0(int iIndex) const                                                                                                                         \
 	{                                                                                                                                                         \
 		return static_cast< returnType > (getInternal(iIndex, 0));                                                                                            \
 	}                                                                                                                                                         \
@@ -401,7 +401,7 @@ public:                                                                         
 	{                                                                                                                                                         \
 		return static_cast< returnType > (getInternal(iIndex, 1));                                                                                            \
 	}                                                                                                                                                         \
-	returnType getWithTemplate(int iIndex, returnType eVar) const                                                                                             \
+	returnType get1(int iIndex) const                                                                                                                         \
 	{                                                                                                                                                         \
 		return static_cast< returnType > (getInternal(iIndex, 1));                                                                                            \
 	}                                                                                                                                                         \
@@ -422,7 +422,7 @@ public:                                                                         
 	{                                                                                                                                                         \
 		return static_cast< returnType > (getInternal(iIndex, 2));                                                                                            \
 	}                                                                                                                                                         \
-	returnType getWithTemplate(int iIndex, returnType eVar) const                                                                                             \
+	returnType get2(int iIndex) const                                                                                                                         \
 	{                                                                                                                                                         \
 		return static_cast< returnType > (getInternal(iIndex, 2));                                                                                            \
 	}                                                                                                                                                         \
@@ -432,7 +432,7 @@ public:                                                                         
 	}                                                                                                                                                         \
 };
 
-#define INFO_ARRAY_GET_4(type, getName, JITtype, returnType)                  \
+#define INFO_ARRAY_GET_4(type, getName, JITtype, returnType)                                                                                                  \
 template<typename T0, typename T1, typename T2> class InfoArray4<T0, T1, T2, type> : public InfoArray3<T0, T1, T2>                                            \
 {                                                                                                                                                             \
 protected:                                                                                                                                                    \
@@ -443,7 +443,7 @@ public:                                                                         
 	{                                                                                                                                                         \
 		return static_cast< returnType > (getInternal(iIndex, 3));                                                                                            \
 	}                                                                                                                                                         \
-	returnType getWithTemplate(int iIndex, returnType eVar) const                                                                                             \
+	returnType get3(int iIndex) const                                                                                                                         \
 	{                                                                                                                                                         \
 		return static_cast< returnType > (getInternal(iIndex, 3));                                                                                            \
 	}                                                                                                                                                         \

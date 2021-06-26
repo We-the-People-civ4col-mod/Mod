@@ -14668,7 +14668,7 @@ void CvEventTriggerInfo::verifyTriggerSettings(const InfoArray<T>& kArray) const
 {
 	for (int i = 0; i < kArray.getLength(); ++i)
 	{
-		const T eVar = kArray.getWithTemplate(i, (T)0);
+		const T eVar = kArray.get0(i);
 
 		const char* szError = NULL;
 
