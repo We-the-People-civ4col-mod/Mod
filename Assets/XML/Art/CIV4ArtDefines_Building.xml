@@ -1507,6 +1507,18 @@
             <Button>,Art/atlasmapbonus.dds,1,3</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_BONUS_MUSHROOMS</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>0.6</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Mushrooms/mushrooms.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/Mushrooms.dds</Button>
+        </BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_RED_PEPPER</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>

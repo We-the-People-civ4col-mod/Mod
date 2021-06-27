@@ -933,88 +933,11 @@
             <Description>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN</Description>
             <Civilopedia>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_FEATURE_IMPASSABLE_MOUNTAIN</ArtDefineTag>
-            <YieldChanges>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_COTTON</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_INDIGO</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_TOBACCO</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_HEMP</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_SUGAR</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_BARLEY</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_GRAPES</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_RED_PEPPER</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_COCA_LEAVES</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_ORE</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_SILVER</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_GOLD</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_GEMS</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_STONE</YieldType>
-                    <iValue>-3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_SHEEP</YieldType>
-                    <iValue>-4</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_CATTLE</YieldType>
-                    <iValue>-4</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_HORSES</YieldType>
-                    <iValue>-4</iValue>
-                </YieldIntegerPair>
-            </YieldChanges>
+            <YieldChanges/>
             <RiverYieldIncreases/>
-            <iMovement>3</iMovement>
+            <iMovement>0</iMovement>
             <iSeeThrough>1</iSeeThrough>
-            <iDefense>25</iDefense>
+            <iDefense>0</iDefense>
             <iAppearance>100</iAppearance>
             <iDisappearance>0</iDisappearance>
             <iTurnDamage>0</iTurnDamage>

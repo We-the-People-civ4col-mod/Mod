@@ -611,5 +611,16 @@
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_MUSHROOMS</Type>
+            <fScale>0.6</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Mushrooms/mushrooms.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/Mushrooms.dds</Button>
+            <FontButtonIndex>60</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
     </BonusArtInfos>
 </Civ4ArtDefines>
