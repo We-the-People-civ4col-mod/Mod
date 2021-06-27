@@ -375,6 +375,20 @@
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Meerschweinchen[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_RABBIT</Tag>
+        <English>Rabbit</English>
+        <German>
+            <Text>Kaninchen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_RABBIT_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rabbit[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kaninchen[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_FISH</Tag>
         <English>Fish</English>
         <French>

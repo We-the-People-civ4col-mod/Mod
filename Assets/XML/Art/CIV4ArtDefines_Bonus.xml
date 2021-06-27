@@ -179,7 +179,18 @@
             <KFM/>
             <Button>Art\interface\buttons\guinea_pig.dds</Button>
             <FontButtonIndex>58</FontButtonIndex>
-            <bShadowCastor>1</bShadowCastor>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_RABBIT</Type>
+            <fScale>3.0</fScale>
+            <fInterfaceScale>5.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Rabbits/Rabbits.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/Rabbits.dds</Button>
+            <FontButtonIndex>1</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
