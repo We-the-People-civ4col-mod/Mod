@@ -36,7 +36,7 @@
         <Tag>TXT_KEY_EMPHASIZE_BLADES</Tag>
         <English>Emphasize Blades</English>
         <French>Privilégier les blades</French>
-        <German>Schwerpunkt Klingen</German>
+        <German>Schwerpunkt Klingenwaffen</German>
         <Italian>Emphasize Blades</Italian>
         <Spanish>Emphasize Blades</Spanish>
     </TEXT>
@@ -91,7 +91,7 @@
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_COCOA</Tag>
         <English>Emphasize Cocoa</English>
-        <French>Privilégier le Cacao torréfié</French>
+        <French>Privilégier le cacao torréfié</French>
         <German>Schwerpunkt Kakao</German>
         <Italian>Emphasize Cocoa</Italian>
         <Spanish>Emphasize Cocoa</Spanish>
@@ -116,7 +116,7 @@
         <Tag>TXT_KEY_EMPHASIZE_COFFEE_BERRIES</Tag>
         <English>Emphasize Coffee Berries</English>
         <French>Privilégier le Café</French>
-        <German>Schwerpunkt Kaffeefrüchte</German>
+        <German>Schwerpunkt Kaffeebeeren</German>
         <Italian>Accentuare Caffè</Italian>
         <Spanish>Favorecer Café</Spanish>
     </TEXT>
@@ -347,7 +347,7 @@
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_COCOA</Tag>
         <English>Deemphasize Cocoa</English>
-        <French>Minimiser le Cacao torréfié</French>
+        <French>Minimiser le cacao torréfié</French>
         <German>Schwerpunkt Kakao aufheben</German>
         <Italian>Deemphasize Cocoa</Italian>
         <Spanish>Deemphasize Cocoa</Spanish>
@@ -372,7 +372,7 @@
         <Tag>TXT_KEY_EMPHASIZE_NO_COFFEE_BERRIES</Tag>
         <English>Deemphasize Coffee Berries</English>
         <French>Minimiser le Café</French>
-        <German>Schwerpunkt Kaffeefrüchte aufheben</German>
+        <German>Schwerpunkt Kaffeebeeren aufheben</German>
         <Italian>De-accentuare Caffè</Italian>
         <Spanish>Desfavorecer Café</Spanish>
     </TEXT>
