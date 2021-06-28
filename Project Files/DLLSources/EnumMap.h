@@ -1384,26 +1384,6 @@ template <> struct EnumMapGetDefault<VAR> \
 	}; \
 };
 
-// Byte size is set in enums
-// If the length isn't known at compile time, MAX_SHORT is assumed.
-// Setting the byte size means say PlayerTypes will use 1 byte instead of 4. Works because MAX_PLAYERS <= 128
-
-SET_ARRAY_XML_ENUM(AreaAITypes         , NUM_AREAAI_TYPES         , NO_JIT_ARRAY_TYPE         , COMPILE_TIME_NUM_AREAAI_TYPES         );
-SET_ARRAY_XML_ENUM(WarPlanTypes        , NUM_WARPLAN_TYPES        , NO_JIT_ARRAY_TYPE         , COMPILE_TIME_NUM_WARPLAN_TYPES        );
-
-
-#define SET_ARRAY_XML_ENUM_LENGTH_ONLY( VAR, FIRST, NUM_TYPES, JIT_TYPE, COMPILE_LENGTH ) \
-__forceinline VAR ArrayStart(VAR var) { return FIRST; } \
-__forceinline VAR ArrayLength(VAR var) { return NUM_TYPES; } \
-__forceinline JITarrayTypes ArrayType(VAR var) { return JIT_TYPE; } \
-template <> struct EnumMapGetDefault<VAR> \
-{ \
-	enum { \
-		LENGTH = COMPILE_LENGTH, \
-	}; \
-};
-
-SET_ARRAY_XML_ENUM_LENGTH_ONLY(CityPlotTypes      , FIRST_CITY_PLOT          , NUM_CITY_PLOTS           , NO_JIT_ARRAY_TYPE, NUM_CITY_PLOTS_2_PLOTS);
 
 //
 // List of various types of EnumMaps

@@ -16,6 +16,7 @@ my @comparison_operators = ("==", "!=", "> ", "< ", ">=", "<=");
 
 
 $var{Achieve}          = {not_strict => 1};
+$var{AreaAI}           = {not_strict => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{ArtStyle}         = {not_strict => 1};
 $var{Bonus}            = {not_strict => 1};
 $var{Build}            = {not_strict => 1};
@@ -27,6 +28,7 @@ $var{CivEffect}        = {not_strict => 1, JIT => "JIT_ARRAY_CIV_EFFECT", NUM =>
 $var{Civic}            = {not_strict => 1};
 $var{CivicOption}      = {not_strict => 1};
 $var{Civilization}     = {not_strict => 1};
+$var{CityPlot}         = {not_strict => 1, JIT => "NO_JIT_ARRAY_TYPE", NUM => "NUM_CITY_PLOTS", COMPILE => "NUM_CITY_PLOTS_2_PLOTS"};
 $var{Climate}          = {not_strict => 1};
 $var{Contact}          = {not_strict => 1};
 $var{Culture}          = {not_strict => 1, type => "CultureLevelTypes", NUM => "NUM_CULTURELEVEL_TYPES", COMPILE => "COMPILE_TIME_NUM_CULTURELEVEL_TYPES"};
@@ -69,6 +71,7 @@ $var{UnitClass}        = {not_strict => 1};
 $var{UnitCombat}       = {not_strict => 1};
 $var{SpecialUnit}      = {not_strict => 1, JIT => "JIT_ARRAY_UNIT_SPECIAL"};
 $var{Victory}          = {not_strict => 1};
+$var{WarPlan}          = {not_strict => 1, JIT => "NO_JIT_ARRAY_TYPE"};
 $var{WorldSize}        = {not_strict => 1, JIT => "JIT_ARRAY_WORLD_SIZE"};
 $var{Yield}            = {not_strict => 1};
 
@@ -208,6 +211,8 @@ sub handleStruct
 sub handleInfoArray
 {
 	my $name = shift;
+	
+	return if $var{$name}{JIT} eq "NO_JIT_ARRAY_TYPE";
 	
 	handleInfoArraySingle($name, 1);
 	handleInfoArraySingle($name, 2);
