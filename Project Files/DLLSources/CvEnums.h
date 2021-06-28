@@ -657,9 +657,11 @@ enum PlotTypes
 	PLOT_LAND,
 	PLOT_OCEAN,
 
-#ifdef _USRDLL
-	NUM_PLOT_TYPES
-#endif
+	NUM_PLOT_TYPES,
+
+	COMPILE_TIME_NUM_PLOT_TYPES = NUM_PLOT_TYPES,
+
+	FIRST_PLOT = 0,
 };
 
 enum CivCategoryTypes

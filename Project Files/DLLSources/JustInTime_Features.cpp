@@ -163,7 +163,7 @@ static const char* getArrayType(PlotTypes eType)
 	case PLOT_LAND:  return "PLOT_LAND";
 	case PLOT_OCEAN: return "PLOT_OCEAN";
 	}
-	BOOST_STATIC_ASSERT(NUM_PLOT_TYPES == 4);
+	BOOST_STATIC_ASSERT(NUM_PLOT_TYPES == static_cast<PlotTypes>(4));
 	FAssert(false);
 	return "";
 }
@@ -179,7 +179,7 @@ static const char* getArrayType(CivCategoryTypes eType)
 	case CIV_CATEGORY_CHURCH:    return "CIV_CATEGORY_CHURCH";
 	case CIV_CATEGORY_NOT_SET:   return "CIV_CATEGORY_NOT_SET";
 	}
-	BOOST_STATIC_ASSERT(NUM_CIV_CATEGORY_TYPES == 6);
+	BOOST_STATIC_ASSERT(NUM_CIV_CATEGORY_TYPES == static_cast<CivCategoryTypes>(6));
 	FAssert(false);
 	return "";
 }

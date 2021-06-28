@@ -9831,7 +9831,7 @@ bool CvTerrainInfo::canHavePlotType(PlotTypes ePlotType) const
 	case PLOT_OCEAN:
 		return isWater();
 	}
-	BOOST_STATIC_ASSERT(NUM_PLOT_TYPES == 4);
+	BOOST_STATIC_ASSERT(NUM_PLOT_TYPES == static_cast<PlotTypes>(4));
 	return false;
 }
 

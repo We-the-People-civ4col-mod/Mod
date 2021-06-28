@@ -278,5 +278,5 @@ void CvPlayerCivEffect::updateHasCivEffectCache() const
 	case CIV_CATEGORY_NOT_SET:
 		break;
 	}
-	BOOST_STATIC_ASSERT(NUM_CIV_CATEGORY_TYPES == 6);
+	BOOST_STATIC_ASSERT(NUM_CIV_CATEGORY_TYPES == static_cast<CivCategoryTypes>(6));
 }
