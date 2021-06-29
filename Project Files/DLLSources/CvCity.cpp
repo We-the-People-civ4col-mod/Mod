@@ -6644,11 +6644,17 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 	}
 }
 
-bool CvCity::checkRequiredYields(OrderTypes eOrder, int iData1) const
+// Returns true if all yields are present to complete the current build, false otherwise. If eYieldException is not equal to NO_YIELD then
+// the specified yield will not be included in the check. Intended to check if yields other than hammers are sufficient.
+bool CvCity::checkRequiredYields(OrderTypes eOrder, int iData1, YieldTypes eYieldException) const
 {
 	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 	{
 		YieldTypes eYield = (YieldTypes) iYield;
+
+		if (eYieldException == eYield)
+			continue;
+
 		if (GC.getYieldInfo(eYield).isCargo())
 		{	
 			int iAmount = 0;
@@ -7547,7 +7553,7 @@ void CvCity::doProduction(bool bAllowNoProduction)
 
 	if (!isHuman() || isProductionAutomated())
 	{
-		if (!isProduction() || isProductionConvince() || AI_isChooseProductionDirty())
+		if (!isProduction() || isProductionConvince() || AI_isChooseProductionDirty() || getProduction() > getProductionNeeded(YIELD_HAMMERS))
 		{
 			AI_chooseProduction();
 		}

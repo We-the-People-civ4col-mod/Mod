@@ -443,7 +443,7 @@ public:
 	DllExport void pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bool bPop, bool bAppend, bool bForce = false);
 	DllExport void popOrder(int iNum, bool bFinish = false, bool bChoose = false);
 	bool processRequiredYields(int iNum);
-	bool checkRequiredYields(OrderTypes eOrder, int iData1) const;
+	bool checkRequiredYields(OrderTypes eOrder, int iData1, YieldTypes eYieldException = NO_YIELD) const;
 	void checkCompletedBuilds(YieldTypes eYield, int iChange);
 	void getOrdersWaitingForYield(std::vector< std::pair<OrderTypes, int> >& aOrders, YieldTypes eYield, bool bYieldsComplete, int iChange) const;
 	void startHeadOrder();
