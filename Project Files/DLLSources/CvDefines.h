@@ -8,13 +8,13 @@
 // The following #defines should not be moddable...
 
 // Vanilla flags begin
-#define MOVE_IGNORE_DANGER										(0x00000001) 
+#define MOVE_IGNORE_DANGER										(0x00000001)
 #define MOVE_SAFE_TERRITORY										(0x00000002)
 #define MOVE_NO_ENEMY_TERRITORY									(0x00000004)
 #define MOVE_DECLARE_WAR										(0x00000008)
 #define MOVE_DIRECT_ATTACK										(0x00000010)
 #define MOVE_THROUGH_ENEMY										(0x00000020)
-#define MOVE_BUST_FOG											(0x00000040) 
+#define MOVE_BUST_FOG											(0x00000040)
 // Vanilla flags end
 // TAC - AI Assault Sea - koma13, jdog5000(BBAI) - START
 // These two flags signal to weight the cost of moving through or adjacent to enemy territory higher
@@ -37,13 +37,13 @@
 #define MOVE_DIRECT_RAID									(0x00010000) // WTP : Changed value due to clashing with a K-Mod flag
 // R&R, ray, Natives raiding party - END
 
-#define RANDPLOT_LAND													(0x00000001)
-#define RANDPLOT_UNOWNED											(0x00000002)
+#define RANDPLOT_LAND										(0x00000001)
+#define RANDPLOT_UNOWNED									(0x00000002)
 #define RANDPLOT_ADJACENT_UNOWNED							(0x00000004)
 #define RANDPLOT_ADJACENT_LAND								(0x00000008)
-#define RANDPLOT_PASSIBLE											(0x00000010)
-#define RANDPLOT_NOT_VISIBLE_TO_CIV						(0x00000020)
-#define RANDPLOT_NOT_CITY											(0x00000040)
+#define RANDPLOT_PASSIBLE									(0x00000010)
+#define RANDPLOT_NOT_VISIBLE_TO_CIV							(0x00000020)
+#define RANDPLOT_NOT_CITY									(0x00000040)
 
 #ifdef _USRDLL
 #define MAX_PLAYERS												(49) // R&R, ray - Europeans, Natives, Kings, Animals and Church

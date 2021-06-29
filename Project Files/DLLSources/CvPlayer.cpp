@@ -1308,6 +1308,7 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 	pCityPlot->setRevealed(GET_PLAYER(eOldOwner).getTeam(), true, false, NO_TEAM);
 
 	gDLL->getEventReporterIFace()->cityAcquired(eOldOwner, getID(), pNewCity, bConquest, bTrade);
+	if (gPlayerLogLevel >= 1) logBBAI(" Player %d (%S) acquires city %S bConq %d bTrade %d", getID(), getCivilizationDescription(0), pNewCity->getName(0).GetCString(), bConquest, bTrade); // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
 
 	SAFE_DELETE_ARRAY(pabHasRealBuilding);
 	SAFE_DELETE_ARRAY(paiBuildingOriginalOwner);
@@ -3067,12 +3068,15 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 
 	case DIPLOEVENT_DEMAND_WAR:
 		FAssertMsg(GET_PLAYER(ePlayer).getTeam() != getTeam(), "shouldn't call this function on our own team");
-
+		if (gTeamLogLevel >= 2) // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
+			logBBAI(" Team %d (%S) declares war on team %d due to DIPLOEVENT", getTeam(), getCivilizationDescription(0), ePlayer);
 		GET_TEAM(getTeam()).declareWar(GET_PLAYER(ePlayer).getTeam(), false, WARPLAN_LIMITED);
 		break;
 
 	case DIPLOEVENT_JOIN_WAR:
 		AI_changeMemoryCount(ePlayer, MEMORY_ACCEPTED_JOIN_WAR, 1);
+		if (gTeamLogLevel >= 2) // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
+			logBBAI(" Team %d (%S) declares war on team %d due to DIPLOEVENT", getTeam(), getCivilizationDescription(0), ePlayer);
 		GET_TEAM(GET_PLAYER(ePlayer).getTeam()).declareWar(((TeamTypes)iData1), false, WARPLAN_DOGPILE);
 
 		for (iI = 0; iI < MAX_PLAYERS; iI++)
@@ -6001,6 +6005,7 @@ void CvPlayer::found(int iX, int iY)
 	}
 
 	gDLL->getEventReporterIFace()->cityBuilt(pCity);
+	if (gPlayerLogLevel >= 1) logBBAI(" Player %d (%S) founds new city %S at %d, %d", getID(), getCivilizationDescription(0), pCity->getName(0).GetCString(), iX, iY); // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
 }
 
 
@@ -8114,6 +8119,8 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 
 		if (isTurnActive())
 		{
+			onTurnLogging(); // bbai logging
+
 			if (GC.getLogging())
 			{
 				if (gDLL->getChtLvl() > 0)
@@ -16686,7 +16693,7 @@ CvUnit* CvPlayer::buyEuropeUnit(UnitTypes eUnit, int iPriceModifier)
 		changeGold(-iPrice);
 		GET_TEAM(getTeam()).changeUnitsPurchasedHistory(pUnit->getUnitClassType(), 1);
 		gDLL->getEventReporterIFace()->unitBoughtFromEurope(getID(), pUnit->getID());
-		if (gPlayerLogLevel >= 1) logBBAI("Turn:%d CvPlayer::buyEuropeUnit Player %d (%S) buys unit:%S gold:%d", GC.getGameINLINE().getGameTurn(), 
+		if (gPlayerLogLevel >= 1) logBBAI(" Player %d (%S) buys Unit:%S Gold:%d", 
 			getID(), getCivilizationDescription(0), pUnit->getNameOrProfessionKey(), iPrice);
 	}
 
@@ -22419,4 +22426,27 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	CvSavegameWriter writer(writerbase);
 	write(writer);
 	writerbase.WriteFile();
+}
+
+/*	K-Mod. The body of this function use to be part of setTurnActive.
+	I've moved it here just to improve the readability of that function.
+	(Based on BETTER_BTS_AI_MOD, 10/26/09, jdog5000 - AI logging.) */
+void CvPlayer::onTurnLogging() const
+{
+	if (gPlayerLogLevel > 0)
+	{
+		logBBAI("Player %d (%S) setTurnActive for turn %d (%d)", getID(), getCivilizationDescription(0), GC.getGame().getGameTurn(), std::abs(GC.getGame().getGameTurnYear()));
+		logBBAI(" Player % d(% S) has % d cities, % d pop, % d power, % d assets", getID(), getCivilizationDescription(0), getNumCities(), getTotalPopulation(), getPower(), getAssets());
+
+		if (GC.getGame().getGameTurn() > 0 &&
+			(GC.getGame().getGameTurn() % 25) == 0)
+		{
+			CvWStringBuffer szBuffer;
+			GAMETEXT.setScoreHelp(szBuffer, getID());
+			logBBAI(" %S", szBuffer);
+
+			int iGameTurn = GC.getGame().getGameTurn();
+			logBBAI(" Total Score: %d, Population Score: %d (%d total pop), Land Score: %d", calculateScore(), getPopScore(), getTotalPopulation(), getLandScore());
+		}
+	}
 }

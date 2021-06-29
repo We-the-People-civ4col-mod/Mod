@@ -7899,187 +7899,197 @@ bool CvPlayerAI::AI_doDiploDeclareWar(PlayerTypes ePlayer)
 //Convert units from city population to map units (such as pioneers)
 void CvPlayerAI::AI_doProfessions()
 {
-
 	std::map<int, bool> cityDanger;
 
+	int iLoop;
+	
+	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
-		int iLoop;
-		CvCity* pLoopCity;
-		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-		{
-			cityDanger[pLoopCity->getID()] = AI_getPlotDanger(pLoopCity->plot(), 5, true);
-		}
+		cityDanger[pLoopCity->getID()] = AI_getPlotDanger(pLoopCity->plot(), 5, true);
 	}
 
 	for (int iI = 0; iI < NUM_UNITAI_TYPES; ++iI)
 	{
-		UnitAITypes eUnitAI = (UnitAITypes)iI;
+		const UnitAITypes eUnitAI = (UnitAITypes)iI;
 
-		int iPriority = 0;
+		if (!((AI_unitAIValueMultipler(eUnitAI) > 0) && eUnitAI != UNITAI_DEFENSIVE))
+			continue;
 
-		if ((AI_unitAIValueMultipler(eUnitAI) > 0) && eUnitAI != UNITAI_DEFENSIVE)
+		const ProfessionTypes eProfession = AI_idealProfessionForUnitAIType(eUnitAI);
+
+		if ((eProfession != NO_PROFESSION) && (eUnitAI == UNITAI_SETTLER || (eProfession != GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession())))
 		{
-			ProfessionTypes eProfession = AI_idealProfessionForUnitAIType(eUnitAI);
+			const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
 
-			if ((eProfession != NO_PROFESSION) && (eUnitAI == UNITAI_SETTLER || (eProfession != GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession())))
+			bool bDone = false;
+
+			for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 			{
-				CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-
-				bool bDone = false;
-
-				int iLoop;
-				CvCity* pLoopCity;
-
-				for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+				if (pLoopCity->getPopulation() > ((pLoopCity->getHighestPopulation() * 2) / 3))
 				{
-					if (pLoopCity->getPopulation() > ((pLoopCity->getHighestPopulation() * 2) / 3))
+					if (!cityDanger[pLoopCity->getID()] || AI_unitAIIsCombat(eUnitAI))
 					{
-						if (!cityDanger[pLoopCity->getID()] || AI_unitAIIsCombat(eUnitAI))
+						for (int i = 0; i < pLoopCity->getPopulation(); ++i)
+						{
+							CvUnit* pUnit = pLoopCity->getPopulationUnitByIndex(i);
+							if (pUnit != NULL)
+							{
+								// R&R, ray, code changes for Ideal Profession - START
+								// ProfessionTypes eIdealProfession = AI_idealProfessionForUnit(pUnit->getUnitType());
+								UnitClassTypes eUnitClassType = (UnitClassTypes)pUnit->getUnitClassType();
+								
+								// we need 3 possible ideal professions
+								ProfessionTypes eIdealProfession = NO_PROFESSION;
+								ProfessionTypes eSecondIdealProfession = NO_PROFESSION;
+								ProfessionTypes eThirdIdealProfession = NO_PROFESSION;
+
+								for (int iI = 0; iI < GC.getNumProfessionInfos(); ++iI)
+								{
+
+									ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
+									CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
+
+									if (kProfession.isCitizen())
+									{
+										if(eIdealProfession == NO_PROFESSION)
+										{
+											if ((UnitClassTypes)kProfession.LbD_getExpert() == eUnitClassType)
+											{
+												eIdealProfession = eLoopProfession;
+											}
+										}
+										else if(eSecondIdealProfession == NO_PROFESSION)
+										{
+											if ((UnitClassTypes)kProfession.LbD_getExpert() == eUnitClassType)
+											{
+												eSecondIdealProfession = eLoopProfession;
+											}
+										}
+										else
+										{
+											if ((UnitClassTypes)kProfession.LbD_getExpert() == eUnitClassType)
+											{
+												eThirdIdealProfession = eLoopProfession;
+												break;
+											}
+										}
+									}
+								}
+									
+								if (eIdealProfession == NO_PROFESSION || pUnit->getProfession() != eIdealProfession)
+								{
+									if (eSecondIdealProfession == NO_PROFESSION || pUnit->getProfession() != eSecondIdealProfession)
+									{
+										if (eThirdIdealProfession == NO_PROFESSION || pUnit->getProfession() != eThirdIdealProfession)
+										{
+											if (eUnitAI == UNITAI_SETTLER)
+											{
+												// TODO: Replace this with AdvCiv's AI() accessor
+												static_cast<CvCityAI*>(pLoopCity)->AI_doSettlerProfessionCheat();
+											}
+
+											if (pUnit->canHaveProfession(eProfession, false) && (AI_professionSuitability(pUnit, eProfession, pLoopCity->plot()) > 100))
+											{
+												pLoopCity->removePopulationUnit(pUnit, false, eProfession);
+												pUnit->AI_setUnitAIType(eUnitAI);
+												bDone = true;
+			
+												if (gPlayerLogLevel >= 1)
+												{
+													CvWString szTempString;
+													getUnitAIString(szTempString, eUnitAI);
+
+													logBBAI(" Player(%S) City(%S) emits civilian Unit(bdone) (%S) with UnitAI (%S)",
+														getCivilizationDescription(), pLoopCity->getNameKey(), pUnit->getNameOrProfessionKey(), szTempString.GetCString());
+												}
+												break;
+											}
+										}
+									}
+									// R&R, ray, code changes for Ideal Profession - END
+								}
+								// R&R, ray, code changes for Ideal Profession - END
+							}
+						}
+					}
+				}
+			}
+
+			if (!bDone)
+			{
+				for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+				{
+					int iBestValue = 0;
+					CvUnit* pBestUnit = NULL;
+
+					if (!cityDanger[pLoopCity->getID()] || AI_unitAIIsCombat(eUnitAI))
+					{
+						if (pLoopCity->getPopulation() > ((pLoopCity->getHighestPopulation() * 2) / 3))
 						{
 							for (int i = 0; i < pLoopCity->getPopulation(); ++i)
 							{
 								CvUnit* pUnit = pLoopCity->getPopulationUnitByIndex(i);
 								if (pUnit != NULL)
 								{
-									// R&R, ray, code changes for Ideal Profession - START
-									// ProfessionTypes eIdealProfession = AI_idealProfessionForUnit(pUnit->getUnitType());
-									UnitClassTypes eUnitClassType = (UnitClassTypes)pUnit->getUnitClassType();
-								
-									// we need 3 possible ideal professions
-									ProfessionTypes eIdealProfession = NO_PROFESSION;
-									ProfessionTypes eSecondIdealProfession = NO_PROFESSION;
-									ProfessionTypes eThirdIdealProfession = NO_PROFESSION;
-
-									for (int iI = 0; iI < GC.getNumProfessionInfos(); ++iI)
+									if (pUnit->canHaveProfession(eProfession, false))
 									{
+										int iValue = AI_professionSuitability(pUnit, eProfession, pLoopCity->plot());
 
-										ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
-										CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
-
-										if (kProfession.isCitizen())
+										if (pUnit->getProfession() == NO_PROFESSION)
 										{
-											if(eIdealProfession == NO_PROFESSION)
+											int iValue = AI_professionSuitability(pUnit, eProfession, pLoopCity->plot());
+
+										}
+										else if (pUnit->getProfession() == pUnit->AI_getIdealProfession())
+										{
+											iValue /= 4;
+										}
+
+										if (eUnitAI == UNITAI_SETTLER)
+										{
+											// TODO: Replace this with AdvCiv's AI() accessor
+											static_cast<CvCityAI*>(pLoopCity)->AI_doSettlerProfessionCheat();
+
+											if (pUnit->AI_getIdealProfession() != NO_PROFESSION)
 											{
-												if ((UnitClassTypes)kProfession.LbD_getExpert() == eUnitClassType)
+												if ((pUnit->getProfession() != pUnit->AI_getIdealProfession()) && (GC.getProfessionInfo(pUnit->AI_getIdealProfession()).isWorkPlot()))
 												{
-													eIdealProfession = eLoopProfession;
-												}
-											}
-											else if(eSecondIdealProfession == NO_PROFESSION)
-											{
-												if ((UnitClassTypes)kProfession.LbD_getExpert() == eUnitClassType)
-												{
-													eSecondIdealProfession = eLoopProfession;
+													iValue *= 150;
+													iValue /= 100;
 												}
 											}
 											else
 											{
-												if ((UnitClassTypes)kProfession.LbD_getExpert() == eUnitClassType)
-												{
-													eThirdIdealProfession = eLoopProfession;
-													break;
-												}
+												iValue *= 120;
+												iValue /= 100;
 											}
 										}
-									}
-									
-									if (eIdealProfession == NO_PROFESSION || pUnit->getProfession() != eIdealProfession)
-									{
-										if (eSecondIdealProfession == NO_PROFESSION || pUnit->getProfession() != eSecondIdealProfession)
-										{
-											if (eThirdIdealProfession == NO_PROFESSION || pUnit->getProfession() != eThirdIdealProfession)
-											{
-												if (eUnitAI == UNITAI_SETTLER)
-												{
-													// TODO: Replace this with AdvCiv's AI() accessor
-													static_cast<CvCityAI*>(pLoopCity)->AI_doSettlerProfessionCheat();
-												}
 
-												if (pUnit->canHaveProfession(eProfession, false) && (AI_professionSuitability(pUnit, eProfession, pLoopCity->plot()) > 100))
-												{
-													pLoopCity->removePopulationUnit(pUnit, false, eProfession);
-													pUnit->AI_setUnitAIType(eUnitAI);
-													bDone = true;
-													break;
-												}
-											}
+										iValue *= 100;
+										iValue += GC.getGameINLINE().getSorenRandNum(100, "AI pick unit");
+
+										if (iValue > iBestValue)
+										{
+											iBestValue = iValue;
+											pBestUnit = pUnit;
 										}
 									}
-									// R&R, ray, code changes for Ideal Profession - END
 								}
 							}
 						}
 					}
-				}
-
-				if (!bDone)
-				{
-					for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+					if (pBestUnit != NULL)
 					{
-						int iBestValue = 0;
-						CvUnit* pBestUnit = NULL;
+						pLoopCity->removePopulationUnit(pBestUnit, false, eProfession);
+						pBestUnit->AI_setUnitAIType(eUnitAI);
 
-						if (!cityDanger[pLoopCity->getID()] || AI_unitAIIsCombat(eUnitAI))
+						if (gPlayerLogLevel >= 1) 
 						{
-							if (pLoopCity->getPopulation() > ((pLoopCity->getHighestPopulation() * 2) / 3))
-							{
-								for (int i = 0; i < pLoopCity->getPopulation(); ++i)
-								{
-									CvUnit* pUnit = pLoopCity->getPopulationUnitByIndex(i);
-									if (pUnit != NULL)
-									{
-										if (pUnit->canHaveProfession(eProfession, false))
-										{
-											int iValue = AI_professionSuitability(pUnit, eProfession, pLoopCity->plot());
-
-											if (pUnit->getProfession() == NO_PROFESSION)
-											{
-
-											}
-											else if (pUnit->getProfession() == pUnit->AI_getIdealProfession())
-											{
-												iValue /= 4;
-											}
-
-											if (eUnitAI == UNITAI_SETTLER)
-											{
-												// TODO: Replace this with AdvCiv's AI() accessor
-												static_cast<CvCityAI*>(pLoopCity)->AI_doSettlerProfessionCheat();
-
-												if (pUnit->AI_getIdealProfession() != NO_PROFESSION)
-												{
-													if ((pUnit->getProfession() != pUnit->AI_getIdealProfession()) && (GC.getProfessionInfo(pUnit->AI_getIdealProfession()).isWorkPlot()))
-													{
-														iValue *= 150;
-														iValue /= 100;
-													}
-												}
-												else
-												{
-													iValue *= 120;
-													iValue /= 100;
-												}
-											}
-
-											iValue *= 100;
-											iValue += GC.getGameINLINE().getSorenRandNum(100, "AI pick unit");
-
-											if (iValue > iBestValue)
-											{
-												iBestValue = iValue;
-												pBestUnit = pUnit;
-											}
-										}
-									}
-								}
-							}
-						}
-						if (pBestUnit != NULL)
-						{
-							pLoopCity->removePopulationUnit(pBestUnit, false, eProfession);
-							pBestUnit->AI_setUnitAIType(eUnitAI);
-							if (gPlayerLogLevel >= 1) logBBAI("CvPlayerAI::AI_doProfessions Player (%S)'s City (%S) emits civilian Unit (%S)",
-								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getNameOrProfessionKey());
+							CvWString szTempString;
+							getUnitAIString(szTempString, eUnitAI);
+								
+							logBBAI(" Player(%S) City (%S) emits civilian Unit (!bdone) (%S) with UnitAI (%S)",
+								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getNameOrProfessionKey(), szTempString.GetCString());
 
 						}
 					}
@@ -8089,22 +8099,19 @@ void CvPlayerAI::AI_doProfessions()
 	}
 
 	//Military
-	int iLoop;
-	CvCity* pLoopCity;
-
-	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 		if (pLoopCity->AI_isDanger())
 		{
-			ProfessionTypes eProfession = AI_idealProfessionForUnitAIType(UNITAI_DEFENSIVE, pLoopCity);
+			const ProfessionTypes eProfession = AI_idealProfessionForUnitAIType(UNITAI_DEFENSIVE, pLoopCity);
 
 			if ((eProfession != NO_PROFESSION) && (eProfession != GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()))
 			{
 				CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
 				bool bDone = false;
 
-				int iNeededDefenders = pLoopCity->AI_neededDefenders();
-				int iHaveDefenders = pLoopCity->AI_numDefenders(true, false);
+				const int iNeededDefenders = pLoopCity->AI_neededDefenders();
+				const int iHaveDefenders = pLoopCity->AI_numDefenders(true, false);
 
 				if (iHaveDefenders < iNeededDefenders)
 				{
@@ -8147,7 +8154,7 @@ void CvPlayerAI::AI_doProfessions()
 						{
 							pLoopCity->removePopulationUnit(pBestUnit, false, eProfession);
 							pBestUnit->AI_setUnitAIType(UNITAI_DEFENSIVE);
-							if (gPlayerLogLevel >= 1) logBBAI("CvPlayerAI::AI_doProfessions Player (%S)'s City (%S) emits military Unit (%S)",
+							if (gPlayerLogLevel >= 1) logBBAI(" Player (%S)'s City (%S) emits military Unit (%S)",
 								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getNameOrProfessionKey());
 						}
 						else

@@ -1986,7 +1986,7 @@ void CvTeamAI::AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar
 			{
 				CvWStringBuffer buf;
 				GAMETEXT.getWarplanString(buf, eNewValue);
-				logBBAI("    Team %d (%S) abandoning WARPLANS against team %d (%S) due to human / vassal timeout", getID(), GET_PLAYER(getLeaderID()).getCivilizationDescription(0), eIndex, GET_PLAYER(GET_TEAM(eIndex).getLeaderID()).getCivilizationDescription(0));
+				logBBAI("Team %d (%S) CvTeamAI::AI_setWarPlan (%S) against team %d (%S)", getID(), GET_PLAYER(getLeaderID()).getCivilizationDescription(0), buf.getCString(), eIndex, GET_PLAYER(GET_TEAM(eIndex).getLeaderID()).getCivilizationDescription(0));
 			}
 			AI_setWarPlanStateCounter(eIndex, 0);
 
