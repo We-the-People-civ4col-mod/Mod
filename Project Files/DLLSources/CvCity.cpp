@@ -2606,8 +2606,18 @@ void CvCity::hurry(HurryTypes eHurry)
 	// Python Event
 	gDLL->getEventReporterIFace()->cityHurry(this, eHurry);
 
-	if (gCityLogLevel >= 1) logBBAI("CvCity::hurry Player (%S) hurries in City (%S) for Gold:%d", 
-		GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), getNameKey(), iHurryGold);
+	if (gCityLogLevel >= 2) // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
+	{
+		CvWStringBuffer szBuffer; CvWString szString;
+		if (isProductionUnit())
+			szString = GC.getUnitInfo(getProductionUnit()).getDescription();
+		else if (isProductionBuilding())
+			szString = GC.getBuildingInfo(getProductionBuilding()).getDescription();
+		else if (isProductionConvince())
+			szString = GC.getFatherPointInfo(getProductionFatherPoint()).getDescription();
+		logBBAI(" Player %S City %S hurrying production of %S at cost of %d gold", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), 
+			getName().GetCString(), szString.GetCString(), iHurryGold);
+	}
 }
 
 
@@ -6367,7 +6377,8 @@ void CvCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bo
 			{
 				CvWString szString;
 				getUnitAIString(szString, eUnitAI);
-				logBBAI("City %S pushes production of unit %S with UNITAI %S", getName().GetCString(), GC.getUnitInfo(eUnit).getDescription(), szString.GetCString());
+				logBBAI(" Player %S City %S pushes production of unit %S with UNITAI %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), 
+					getName().GetCString(), GC.getUnitInfo(eUnit).getDescription(), szString.GetCString());
 			}
 		}
 		break;
@@ -6382,7 +6393,8 @@ void CvCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bo
 			bValid = true;
 
 			gDLL->getEventReporterIFace()->cityBuildingBuilding(this, (BuildingTypes)iData1);
-			if (gCityLogLevel >= 1) logBBAI("City %S pushes production of building %S", getName().GetCString(), GC.getBuildingInfo(eBuilding).getDescription());
+			if (gCityLogLevel >= 1) logBBAI(" Player %S City %S pushes production of building %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), 
+				getName().GetCString(), GC.getBuildingInfo(eBuilding).getDescription());
 		}
 		break;
 	}
@@ -6392,7 +6404,8 @@ void CvCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bo
 		if (canConvince(eFatherPoint) || bForce)
 		{
 			bValid = true;
-			if (gCityLogLevel >= 1) logBBAI("City %S pushes convincing of type %S", getName().GetCString(), GC.getFatherPointInfo(eFatherPoint).getDescription());
+			if (gCityLogLevel >= 1) logBBAI(" Player % S City % S pushes convincing of type % S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), 
+				getName().GetCString(), GC.getFatherPointInfo(eFatherPoint).getDescription());
 		}
 		break;
 
