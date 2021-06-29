@@ -405,7 +405,14 @@ void CvCityAI::AI_chooseProduction()
 			// if less than 3 turns left, keep building current item
 			if (getProductionTurnsLeft() <= 3)
 			{
-				return;
+				// veto keep building if we've already stored enough hammers to complete
+				// the build. At this point we're just waiting for other yields (e.g. tools)
+				// to complete the build, so the AI should switch to another build to avoid banking 
+				// too many hammers
+				if (getProduction() < getProductionNeeded(YIELD_HAMMERS))
+				{
+					return;
+				}
 			}
 		}
 		clearOrderQueue();
@@ -845,16 +852,16 @@ bool CvCityAI::AI_hasCoastalRoute() const
 
 BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns, int iMinThreshold, bool bAsync) const
 {
-	bool bAreaAlone = GET_PLAYER(getOwnerINLINE()).AI_isAreaAlone(area());
+	const bool bAreaAlone = GET_PLAYER(getOwnerINLINE()).AI_isAreaAlone(area());
 
-	int iProductionRank = findYieldRateRank(YIELD_HAMMERS);
+	const int iProductionRank = findYieldRateRank(YIELD_HAMMERS);
 
 	int iBestValue = 0;
 	BuildingTypes eBestBuilding = NO_BUILDING;
 
 	for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
 	{
-		BuildingTypes eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iI)));
+		const BuildingTypes eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iI)));
 
 		if ((eLoopBuilding != NO_BUILDING) && (!isHasConceptualBuilding(eLoopBuilding)))
 		{
@@ -864,7 +871,13 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 
 				if (iValue > 0)
 				{
-					int iTurnsLeft = getProductionTurnsLeft(eLoopBuilding, 0);
+					const int iTurnsLeft = getProductionTurnsLeft(eLoopBuilding, 0);
+
+					// Avoid picking the same building that we recently stopped building due to missing
+					// non-hammer yields!
+					if (getBuildingProduction(eLoopBuilding) >= getYieldProductionNeeded(eLoopBuilding, YIELD_HAMMERS) &&
+					 	!checkRequiredYields(ORDER_CONSTRUCT, eLoopBuilding, YIELD_HAMMERS))
+						continue;
 
 					if (bAsync)
 					{
@@ -877,8 +890,9 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 						iValue /= 100;
 					}
 
-					iValue += getBuildingProduction(eLoopBuilding);
-					
+					const int iBuildingProduction = getBuildingProduction(eLoopBuilding);
+
+					iValue += iBuildingProduction;
 					
 					bool bValid = ((iMaxTurns <= 0) ? true : false);
 					if (!bValid)
