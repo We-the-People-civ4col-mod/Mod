@@ -6615,7 +6615,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		if ((gDLL->getChtLvl() > 0) && gDLL->ctrlKey() && (pCity != NULL))
 		{
 			int iBuildingValue = pCity->AI_buildingValue(eBuilding);
-			szBuffer.append(CvWString::format(L"\nAI Building Value = %d", iBuildingValue));
+			szBuffer.append(CvWString::format(L"\nAI Building = %d, Value = %d", eBuilding, iBuildingValue));
 		}
 	}
 
