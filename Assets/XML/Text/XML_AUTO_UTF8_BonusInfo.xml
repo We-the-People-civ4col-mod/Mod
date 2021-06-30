@@ -347,6 +347,34 @@
         <Spanish>[TAB]Estos mamíferos rumiantes están ampliamente extendidos, con representantes en todos los continentes excepto Australia y África. Se distinguen de otros rumiantes en que tienen astas en vez de cuernos. Entre las variedades de ciervo están el venado, el gamo, el alce y el reno. A los ciervos jóvenes se les suele llamar cervatillos o cervatos.[PARAGRAPH:1]Se cree que las especies del Nuevo Mundo evolucionaron hace unos cinco millones de años en los bosques de Norteamérica y Siberia.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_CARIBOU</Tag>
+        <English>Caribou</English>
+        <German>
+            <Text>Caribou</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_CARIBOU_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Caribou[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Caribou[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_MOOSE</Tag>
+        <English>Moose</English>
+        <German>
+            <Text>Elch</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_MOOSE_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moose[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Elch[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_LLAMA</Tag>
         <English>Llamas</English>
         <German>

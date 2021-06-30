@@ -205,6 +205,28 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_CARIBOU</Type>
+            <fScale>14</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/caribou/caribou.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/caribou.dds</Button>
+            <FontButtonIndex>5</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_MOOSE</Type>
+            <fScale>14</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/moose/moose.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/moose.dds</Button>
+            <FontButtonIndex>5</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_FISH</Type>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
