@@ -469,15 +469,26 @@
             <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
-            <Type>ART_DEF_BONUS_WALRUSS</Type>
+            <Type>ART_DEF_BONUS_FUR_SEAL</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Walrus/Crab.nif</NIF>
-            <KFM>Art/Terrain/Resources/Walrus/Crab.kfm</KFM>
-            <Button>,Art/colonization_atlas_professions_bonus.dds,7,13</Button>
-            <FontButtonIndex>34</FontButtonIndex>
+            <NIF>Art/Terrain/Resources/Fur_Seal/Crab.nif</NIF>
+            <KFM>Art/Terrain/Resources/Fur_Seal/Crab.kfm</KFM>
+            <Button>Art/Interface/Buttons/seabear.dds</Button>
+            <FontButtonIndex>28</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>1</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_WALRUSS</Type>
+            <fScale>36</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/walrus/walrus.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/walrus.dds</Button>
+            <FontButtonIndex>34</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_SEA_OTTERS</Type>

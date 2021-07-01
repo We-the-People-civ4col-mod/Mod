@@ -1379,6 +1379,20 @@
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Truthähne[COLOR_REVERT] gedeihen in [LINK=FEATURE_FOREST]Wäldern[\LINK] oder [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] des [LINK=TERRAIN_GRASS]Graslandes[\LINK]. Sie können aber auch auf [LINK=TERRAIN_GRASS]Grasland[\LINK] ohne Wälder vorkommen.[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1]Der domestizierte Truthahn, ist ein sehr großer Vogel. Die moderne domestizierte Form des Truthahns stammt von einer von sechs Subspezies des wilden Truthahns ab, dem Meleagris gallopavo gallopavo, welcher in der Gegend des heutigen Mexiko gefunden wurde. Die erste Domestizierung fand voraussichtlich durch die frühen Mesoamerikaner statt. Diese nutzen das Fleisch und die Eier als Hauptquelle für Proteine und die Federn sehr gerne für dekorative Zwecke. Die Azteken verbanden den Truthahn mit ihrem Gauner-Gott Tezcatlipoca. Vermutlich aufgrund seines teilweise seltsam wirkenden Verhalten.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_FUR_SEAL</Tag>
+        <English>Fur Seal</English>
+        <German>
+            <Text>Seebär</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_FUR_SEAL_PEDIA</Tag>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fur Seal[COLOR_REVERT]</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seebär[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_WALRUSS</Tag>
         <English>Walruses</English>
         <French>

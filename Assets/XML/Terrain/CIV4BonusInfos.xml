@@ -444,7 +444,7 @@
                 </YieldIntegerPair>
             </YieldChanges>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>7</iPlacementOrder>
             <iConstAppearance>30</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -524,7 +524,7 @@
                 </YieldIntegerPair>
             </YieldChanges>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>7</iPlacementOrder>
             <iConstAppearance>30</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -604,7 +604,7 @@
                 </YieldIntegerPair>
             </YieldChanges>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>7</iPlacementOrder>
             <iConstAppearance>30</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -684,7 +684,7 @@
                 </YieldIntegerPair>
             </YieldChanges>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>7</iPlacementOrder>
             <iConstAppearance>30</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -2206,7 +2206,7 @@
                 </YieldIntegerPair>
             </YieldChanges>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>3</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -2316,7 +2316,7 @@
                 </YieldIntegerPair>
             </YieldChanges>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>3</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -5588,15 +5588,15 @@
             <FeatureTerrainBooleans/>
         </BonusInfo>
         <BonusInfo>
-            <Type>BONUS_WALRUSS</Type>
-            <Description>TXT_KEY_BONUS_WALRUSS</Description>
-            <Civilopedia>TXT_KEY_BONUS_WALRUSS_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_WALRUSS</ArtDefineTag>
-            <BuildingType>BUILDING_BONUS_WALRUSS</BuildingType>
+            <Type>BONUS_FUR_SEAL</Type>
+            <Description>TXT_KEY_BONUS_FUR_SEAL</Description>
+            <Civilopedia>TXT_KEY_BONUS_FUR_SEAL_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_FUR_SEAL</ArtDefineTag>
+            <BuildingType>BUILDING_BONUS_FUR_SEAL</BuildingType>
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FUR</YieldType>
-                    <iValue>4</iValue>
+                    <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
             <iAIObjective>0</iAIObjective>
@@ -5629,6 +5629,59 @@
                 </TerrainBoolean>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ICE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans/>
+        </BonusInfo>
+        <BonusInfo>
+            <Type>BONUS_WALRUSS</Type>
+            <Description>TXT_KEY_BONUS_WALRUSS</Description>
+            <Civilopedia>TXT_KEY_BONUS_WALRUSS_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_WALRUSS</ArtDefineTag>
+            <BuildingType>BUILDING_BONUS_WALRUSS</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iValue>5</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>6</iPlacementOrder>
+            <iConstAppearance>10</iConstAppearance>
+            <iMinAreaSize>2</iMinAreaSize>
+            <iMinLatitude>70</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>10</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>20</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>1</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>0</bArea>
+            <bPeaks>0</bPeaks>
+            <bHills>0</bHills>
+            <bFlatlands>0</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SNOW</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
@@ -6523,7 +6576,7 @@
                 </YieldIntegerPair>
             </YieldChanges>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>51</iPlacementOrder>
+            <iPlacementOrder>6</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
