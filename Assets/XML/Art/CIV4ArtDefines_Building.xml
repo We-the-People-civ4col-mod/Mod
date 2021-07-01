@@ -1044,20 +1044,20 @@
             <bAnimated>0</bAnimated>
             <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>1.4</fScale>
-            <fInterfaceScale>0.6</fInterfaceScale>
+            <fScale>14</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/caribou/caribou.nif</NIF>
             <KFM/>
             <Button>Art/Interface/Buttons/caribou.dds</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
-            <Type>ART_DEF_BUILDING_BONUS_CARIBOU</Type>
+            <Type>ART_DEF_BUILDING_BONUS_MOOSE</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
             <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>1.4</fScale>
-            <fInterfaceScale>0.6</fInterfaceScale>
+            <fScale>14</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/moose/moose.nif</NIF>
             <KFM/>
             <Button>Art/Interface/Buttons/moose.dds</Button>
@@ -1104,7 +1104,7 @@
             <bAnimated>0</bAnimated>
             <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>15.0</fScale>
+            <fScale>3.0</fScale>
             <fInterfaceScale>5.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Rabbits/Rabbits.nif</NIF>
             <KFM>Art/Terrain/Resources/Rabbits/Rabbits.kfm</KFM>
@@ -1392,11 +1392,23 @@
             <bAnimated>0</bAnimated>
             <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>1.4</fScale>
-            <fInterfaceScale>0.6</fInterfaceScale>
+            <fScale>36</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/walrus/walrus.nif</NIF>
             <KFM/>
             <Button>Art/Interface/Buttons/walrus.dds</Button>
+        </BuildingArtInfo>
+        <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_BONUS_PENGUIN</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>36</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/penguin/galapagospenguin.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/penguin.dds</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_HEMP</Type>

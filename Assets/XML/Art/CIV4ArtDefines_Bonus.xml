@@ -491,6 +491,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_PENGUIN</Type>
+            <fScale>36</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/penguin/galapagospenguin.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/penguin.dds</Button>
+            <FontButtonIndex>30</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_SEA_OTTERS</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>

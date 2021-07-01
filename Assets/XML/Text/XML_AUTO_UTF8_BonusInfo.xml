@@ -1423,6 +1423,20 @@
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Walrösser[COLOR_REVERT] leben in seichten Gewässern, wie [LINK=TERRAIN_COAST]Küsten[\LINK] und gelegentlich auch [COLOR_HIGHLIGHT_TEXT]Frischwasserseen[COLOR_REVERT].[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1][COLOR_UNIT_TEXT]Walrösser[COLOR_REVERT] und [COLOR_UNIT_TEXT]Seelöwen[COLOR_REVERT] wurden schon sehr bald nach der Entdeckung der Neuen Welt exzessiv gejagt. Die teuren und extrem hochwertigen Felle und die sehr teuren Walross-Stosszähne, das Walross-Elfenbein, machten deren Jagd extrem lukrativ. Aber auch das Fleisch und die großen Fettmengen waren als Nahrung sehr geschätzt. An vielen Küsten der Neuen Welt wurden sie für Jahrhunderte ausgerottet und kehren erst in den letzten Jahrzehnten an manchen Stellen wieder zurück.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_PENGUIN</Tag>
+        <English>Penguin</English>
+        <German>
+            <Text>Pinguin</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_PENGUIN_PEDIA</Tag>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Penguin[COLOR_REVERT]</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pinguin[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_WHALE</Tag>
         <English>Sperm Whales</English>
         <French>
