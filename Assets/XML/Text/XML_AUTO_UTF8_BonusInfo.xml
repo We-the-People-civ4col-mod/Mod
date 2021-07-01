@@ -384,6 +384,62 @@
         </German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_BOOBY</Tag>
+        <English>Boobies</English>
+        <German>
+            <Text>Tölpel</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_BOOBY_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Boobies[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tölpel[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_GULL</Tag>
+        <English>Gulls</English>
+        <German>
+            <Text>Möwen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_GULL_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Gulls[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Möwen[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_DUCK</Tag>
+        <English>Ducks</English>
+        <German>
+            <Text>Enten</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_DUCK_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ducks[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Enten[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_LOON</Tag>
+        <English>Loons</English>
+        <German>
+            <Text>Seetaucher</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_LOON_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Loons[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seetaucher[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_LLAMA_PEDIA</Tag>
         <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Llamas[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Llamas[COLOR_REVERT] </German>

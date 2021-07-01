@@ -238,6 +238,50 @@
             <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_BOOBY</Type>
+            <fScale>1</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <NIF>Art\terrain\resources\booby\booby.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/booby.dds</Button>
+            <FontButtonIndex>16</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+       <BonusArtInfo>
+            <Type>ART_DEF_BONUS_GULL</Type>
+            <fScale>21</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/gull/gull.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/gull.dds</Button>
+            <FontButtonIndex>16</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>1</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_DUCK</Type>
+            <fScale>21</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/duck/duck.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/duck.dds</Button>
+            <FontButtonIndex>16</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>1</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_LOON</Type>
+            <fScale>21</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/loon/loon.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/loon.dds</Button>
+            <FontButtonIndex>16</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>1</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_OASIS</Type>
             <fScale>1.5</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
