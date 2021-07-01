@@ -431,7 +431,7 @@
             <bUseLSystem>1</bUseLSystem>
             <bFishingboatWorkable>1</bFishingboatWorkable>
         </BonusInfo>
-<!--        <BonusInfo>
+        <BonusInfo>
             <Type>BONUS_BOOBY</Type>
             <Description>TXT_KEY_BONUS_BOOBY</Description>
             <Civilopedia>TXT_KEY_BONUS_BOOBY_PEDIA</Civilopedia>
@@ -510,7 +510,7 @@
             </FeatureTerrainBooleans>
             <bUseLSystem>1</bUseLSystem>
             <bFishingboatWorkable>1</bFishingboatWorkable>
-        </BonusInfo>-->
+        </BonusInfo>
         <BonusInfo>
             <Type>BONUS_GULL</Type>
             <Description>TXT_KEY_BONUS_GULL</Description>
