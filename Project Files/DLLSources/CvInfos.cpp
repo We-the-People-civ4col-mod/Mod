@@ -8724,6 +8724,8 @@ m_bHills(false),
 m_bOcean(false), //TAC Whaling, ray
 m_bFlatlands(false),
 m_bNoRiverSide(false),
+m_bRiverSideOnly(false), // Ray, adding 2 more XML tags to control bonus placement
+m_bCoastalLandOnly(false), // Ray, adding 2 more XML tags to control bonus placement
 m_bUseLSystem(false),
 m_bWhalingboatWorkable(false), //TAC Whaling, ray
 m_bFishingboatWorkable(false), // R&R, ray, High Sea Fishing
@@ -8849,6 +8851,18 @@ bool CvBonusInfo::isNoRiverSide() const
 {
 	return m_bNoRiverSide;
 }
+
+// Ray, adding 2 more XML tags to control bonus placement - START
+bool CvBonusInfo::isRiverSideOnly() const
+{
+	return m_bRiverSideOnly;
+}
+bool CvBonusInfo::isCoastalLandOnly() const
+{
+	return m_bCoastalLandOnly;
+}
+// Ray, adding 2 more XML tags to control bonus placement - END
+
 //TAC Whaling, ray
 bool CvBonusInfo::isWhalingboatWorkable() const
 {
@@ -8987,6 +9001,8 @@ void CvBonusInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bOcean); //TAC Whaling, ray
 	stream->Read(&m_bFlatlands);
 	stream->Read(&m_bNoRiverSide);
+	stream->Read(&m_bRiverSideOnly); // Ray, adding 2 more XML tags to control bonus placement
+	stream->Read(&m_bCoastalLandOnly); // Ray, adding 2 more XML tags to control bonus placement
 	stream->Read(&m_bWhalingboatWorkable); //TAC Whaling, ray
 	stream->Read(&m_bFishingboatWorkable); //TAC Whaling, ray
 	stream->Read(&m_bUseLSystem);
@@ -9037,6 +9053,8 @@ void CvBonusInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bOcean); //TAC Whaling, ray
 	stream->Write(m_bFlatlands);
 	stream->Write(m_bNoRiverSide);
+	stream->Write(m_bRiverSideOnly); // Ray, adding 2 more XML tags to control bonus placement
+	stream->Write(m_bCoastalLandOnly); // Ray, adding 2 more XML tags to control bonus placement
 	stream->Write(m_bWhalingboatWorkable); //TAC Whaling, ray
 	stream->Write(m_bFishingboatWorkable); // R&R, ray, High Sea Fishing
 	stream->Write(m_bUseLSystem);
@@ -9088,6 +9106,8 @@ bool CvBonusInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bOcean, "bOcean"); //TAC Whaling, ray
 	pXML->GetChildXmlValByName(&m_bFlatlands, "bFlatlands");
 	pXML->GetChildXmlValByName(&m_bNoRiverSide, "bNoRiverSide");
+	pXML->GetChildXmlValByName(&m_bRiverSideOnly, "bRiverSideOnly"); // Ray, adding 2 more XML tags to control bonus placement
+	pXML->GetChildXmlValByName(&m_bCoastalLandOnly, "bCoastalLandOnly"); // Ray, adding 2 more XML tags to control bonus placement
 	pXML->GetChildXmlValByName(&m_bWhalingboatWorkable, "bWhalingboatWorkable"); //TAC Whaling, ray
 	pXML->GetChildXmlValByName(&m_bFishingboatWorkable, "bFishingboatWorkable"); // R&R, ray, High Sea Fishing
 	pXML->GetChildXmlValByName(&m_bUseLSystem, "bUseLSystem");

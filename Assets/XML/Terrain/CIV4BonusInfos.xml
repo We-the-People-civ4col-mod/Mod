@@ -42,6 +42,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -157,6 +159,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -272,6 +276,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>1</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
@@ -362,6 +368,8 @@
             <bHills>0</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_COAST</TerrainType>
@@ -466,6 +474,8 @@
             <bHills>0</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_COAST</TerrainType>
@@ -546,6 +556,8 @@
             <bHills>0</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_COAST</TerrainType>
@@ -626,6 +638,8 @@
             <bHills>0</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
@@ -706,6 +720,8 @@
             <bHills>0</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
@@ -786,6 +802,8 @@
             <bHills>0</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_COAST</TerrainType>
@@ -885,6 +903,8 @@
             <bHills>0</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_COAST</TerrainType>
@@ -984,6 +1004,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans/>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -1109,6 +1131,8 @@
             <bHills>1</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -1291,6 +1315,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans/>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -1340,6 +1366,8 @@
             <bHills>0</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -1518,6 +1546,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -1633,6 +1663,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -1748,6 +1780,8 @@
             <bHills>1</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -1863,6 +1897,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans/>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -1988,6 +2024,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans/>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -2057,6 +2095,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans/>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -2130,6 +2170,8 @@
             <bHills>1</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
@@ -2228,6 +2270,8 @@
             <bHills>1</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
@@ -2338,6 +2382,8 @@
             <bHills>1</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -2452,6 +2498,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -2542,6 +2590,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans/>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -2643,6 +2693,8 @@
             <bHills>0</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_COAST</TerrainType>
@@ -2725,6 +2777,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
@@ -2819,6 +2873,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
@@ -2913,6 +2969,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
@@ -3023,6 +3081,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -3121,6 +3181,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -3227,6 +3289,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans/>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -3321,6 +3385,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
@@ -3420,6 +3486,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
@@ -3526,6 +3594,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans/>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -3615,6 +3685,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans/>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -3700,6 +3772,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
@@ -3790,6 +3864,8 @@
             <bHills>1</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -3885,6 +3961,8 @@
             <bHills>1</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
@@ -3984,6 +4062,8 @@
             <bHills>1</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
@@ -4079,6 +4159,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
@@ -4169,6 +4251,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
@@ -4259,6 +4343,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
@@ -4341,6 +4427,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -4448,6 +4536,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
@@ -4547,6 +4637,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
@@ -4637,6 +4729,8 @@
             <bHills>1</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -4815,6 +4909,8 @@
             <bHills>1</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -4993,6 +5089,8 @@
             <bHills>1</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -5171,6 +5269,8 @@
             <bHills>0</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_COAST</TerrainType>
@@ -5273,6 +5373,8 @@
             <bHills>1</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -5452,6 +5554,8 @@
             <bOcean>1</bOcean>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -5503,6 +5607,8 @@
             <bOcean>1</bOcean>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -5569,6 +5675,8 @@
             <bHills>0</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_COAST</TerrainType>
@@ -5622,6 +5730,8 @@
             <bHills>0</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_COAST</TerrainType>
@@ -5675,6 +5785,8 @@
             <bHills>0</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>1</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
@@ -5728,6 +5840,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
@@ -5815,6 +5929,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
@@ -5914,6 +6030,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
@@ -6016,6 +6134,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -6130,6 +6250,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
@@ -6216,6 +6338,8 @@
             <bHills>0</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
@@ -6315,6 +6439,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
@@ -6397,6 +6523,8 @@
             <bHills>0</bHills>
             <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_COAST</TerrainType>
@@ -6500,6 +6628,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
@@ -6598,6 +6728,8 @@
             <bHills>1</bHills>
             <bFlatlands>1</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_MARSH</TerrainType>

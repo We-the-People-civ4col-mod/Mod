@@ -1805,6 +1805,24 @@ bool CvPlot::canHaveBonus(BonusTypes eBonus, bool bIgnoreLatitude) const
 		}
 	}
 
+	// Ray, adding 2 more XML tags to control bonus placement - START
+	if (GC.getBonusInfo(eBonus).isRiverSideOnly())
+	{
+		if (!isRiverSide())
+		{
+			return false;
+		}
+	}
+
+	if (GC.getBonusInfo(eBonus).isCoastalLandOnly())
+	{
+		if (!isCoastalLand())
+		{
+			return false;
+		}
+	}
+	// Ray, adding 2 more XML tags to control bonus placement - END
+
 	if (GC.getBonusInfo(eBonus).getMinAreaSize() != -1)
 	{
 		if (area()->getNumTiles() < GC.getBonusInfo(eBonus).getMinAreaSize())

@@ -2473,6 +2473,8 @@ public:
 	bool isFishingboatWorkable() const; // R&R, ray, High Sea Fishing
 	bool isFlatlands() const;
 	bool isNoRiverSide() const;
+	bool isRiverSideOnly() const; // Ray, adding 2 more XML tags to control bonus placement
+	bool isCoastalLandOnly() const; // Ray, adding 2 more XML tags to control bonus placement
 	DllExport bool useLSystem() const;
 	const char* getArtDefineTag() const;
 	void setArtDefineTag(const char* szVal);
@@ -2522,6 +2524,8 @@ protected:
 	bool m_bOcean; //TAC Whaling, ray
 	bool m_bFlatlands;
 	bool m_bNoRiverSide;
+	bool m_bRiverSideOnly; // Ray, adding 2 more XML tags to control bonus placement
+	bool m_bCoastalLandOnly; // Ray, adding 2 more XML tags to control bonus placement
 	bool m_bUseLSystem;
 	bool m_bWhalingboatWorkable; //TAC Whaling, ray
 	bool m_bFishingboatWorkable; // R&R, ray, High Sea Fishing

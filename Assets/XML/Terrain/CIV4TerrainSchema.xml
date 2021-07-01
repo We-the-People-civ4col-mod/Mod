@@ -256,6 +256,8 @@
 	<ElementType name="bOcean" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bFlatlands" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoRiverSide" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRiverSideOnly" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bCoastalLandOnly" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bFeature" content="textOnly" dt:type="boolean"/>
 	<ElementType name="FeatureBoolean" content="eltOnly">
 		<element type="FeatureType"/>
@@ -302,6 +304,8 @@
 		<element type="bOcean" minOccurs="0"/>
 		<element type="bFlatlands"/>
 		<element type="bNoRiverSide"/>
+		<element type="bRiverSideOnly"/>
+		<element type="bCoastalLandOnly"/>
 		<element type="TerrainBooleans"/>
 		<element type="FeatureBooleans"/>
 		<element type="FeatureTerrainBooleans"/>
