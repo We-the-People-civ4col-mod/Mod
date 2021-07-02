@@ -403,6 +403,39 @@
             <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_HIGH_SEA_FISH2</Type>
+            <fScale>50.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/mackerel/mackerel.nif</NIF>
+            <KFM/>
+            <Button>Art\interface\buttons\mackerel.dds</Button>
+            <FontButtonIndex>15</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>1</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_HIGH_SEA_FISH3</Type>
+            <fScale>10.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/marlin/marlin.nif</NIF>
+            <KFM/>
+            <Button>Art\interface\buttons\marlin.dds</Button>
+            <FontButtonIndex>15</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>1</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_HIGH_SEA_FISH4</Type>
+            <fScale>50.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/tuna/tuna.nif</NIF>
+            <KFM/>
+            <Button>Art\interface\buttons\tuna.dds</Button>
+            <FontButtonIndex>15</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>1</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_HORSES</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>1.1</fInterfaceScale>

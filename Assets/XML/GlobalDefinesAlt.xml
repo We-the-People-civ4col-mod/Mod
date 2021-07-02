@@ -398,6 +398,18 @@
 		<DefineTextVal>BONUS_HIGH_SEA_FISH</DefineTextVal>
 	</Define>
 	<Define>
+		<DefineName>BONUS_HIGH_SEA_FISH2</DefineName>
+		<DefineTextVal>BONUS_HIGH_SEA_FISH2</DefineTextVal>
+	</Define>
+	<Define>
+		<DefineName>BONUS_HIGH_SEA_FISH3</DefineName>
+		<DefineTextVal>BONUS_HIGH_SEA_FISH3</DefineTextVal>
+	</Define>
+	<Define>
+		<DefineName>BONUS_HIGH_SEA_FISH4</DefineName>
+		<DefineTextVal>BONUS_HIGH_SEA_FISH4</DefineTextVal>
+	</Define>
+	<Define>
 		<DefineName>AI_CHANCE_FOR_RAZING_CITY</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>
 	</Define>

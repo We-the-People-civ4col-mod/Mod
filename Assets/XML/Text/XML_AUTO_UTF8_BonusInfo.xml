@@ -724,6 +724,50 @@
         <French>[TAB]Le cabillaud est un nom vernaculaire désignant en français des poissons de plusieurs espèces de l'ordre des Gadiformes. Ces poissons vivent dans les eaux froides. Auparavant populaire et méprisé, ce grand poisson est présent aujourd'hui sur la carte de bien des restaurants pour sa saveur et les multiples préparations dont il fait l'objet. En effet, sa chair est particulièrement appréciée car, dépourvue de fines arêtes, elle se détache facilement de l'épine dorsale et des robustes côtes. La pêche en surnombre est à l'origine de sa rapide raréfaction, à l'exception des stocks de cabillauds de la mer de Barents dont la quantité augmente depuis le milieu des années 2000.</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1]Vorkommen von [COLOR_HIGHLIGHT_TEXT]Kabeljau[COLOR_REVERT] sind gelegentlich im tiefen [LINK=TERRAIN_OCEAN]Ozean[\LINK] zu finden.[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1]Kabeljau ist ein gebräuchlicher name für mehrere Fischarten. Die zwei wichtigsten Spezies sind der Atlantik Kabeljau, der in den kalten und tieferen Regionen des Nordatlantiks vorkommt und der Pazifik Kabeljau, der im nördlichen Pazifik zu finden ist. Kabeljau ist euafgrund seines milden Geschmacks und seimen festen, weissen Fleisch sehr beliebt.</German>
     </TEXT>
+	
+	
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH2</Tag>
+        <English>Mackerels</English>
+        <German>
+            <Text>Makrelen</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH2_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mackerels[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Makrelen[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH3</Tag>
+        <English>Blue Marlin</English>
+        <German>
+            <Text>Blauer Marlin</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH3_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blue Marlin[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blauer Marlin[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH4</Tag>
+        <English>Tuna</English>
+        <German>
+            <Text>Thunfisch</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH4_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tuna[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Thunfisch[COLOR_REVERT]</German>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HORSES</Tag>
         <English>Horses</English>

@@ -12593,11 +12593,11 @@ bool CvUnitAI::AI_exploreRessource()
 					// R&R, ray, High Sea Fishing - START
 					else if (isFishingBoat())
 					{
-						if (pLoopPlot->waterArea()->getNumBonuses((BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH")) == 0)
+						if ((pLoopPlot->waterArea()->getNumBonuses((BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH")) + pLoopPlot->waterArea()->getNumBonuses((BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH2")) + pLoopPlot->waterArea()->getNumBonuses((BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH3")) + pLoopPlot->waterArea()->getNumBonuses((BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH4"))) == 0)
 						{
 							iPlotValue = 100;
 						}
-						else if (eBonus == (BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH"))
+						else if (eBonus == (BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH") || eBonus == (BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH2") || eBonus == (BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH3") || eBonus == (BonusTypes)GC.getDefineINT("BONUS_HIGH_SEA_FISH4"))
 						{
 							iPlotValue += 300;
 						}
