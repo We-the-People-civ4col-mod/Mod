@@ -473,6 +473,20 @@
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Papageien[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_TOUCAN</Tag>
+        <English>Toucans</English>
+        <German>
+            <Text>Toucane</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_TOUCAN_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Toucans[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Toucane[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_RABBIT</Tag>
         <English>Rabbit</English>
         <German>
