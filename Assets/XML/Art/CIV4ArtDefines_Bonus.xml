@@ -211,7 +211,7 @@
             <NIF>Art/Terrain/Resources/capybara/capybara.nif</NIF>
             <KFM></KFM>
             <Button>Art/Interface/Buttons/capybara.dds</Button>
-            <FontButtonIndex>57</FontButtonIndex>
+            <FontButtonIndex>62</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -222,7 +222,7 @@
             <NIF>Art/Terrain/Resources/tapir/mttapir.nif</NIF>
             <KFM></KFM>
             <Button>Art/Interface/Buttons/tapir.dds</Button>
-            <FontButtonIndex>57</FontButtonIndex>
+            <FontButtonIndex>61</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
