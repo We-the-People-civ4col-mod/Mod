@@ -1994,7 +1994,7 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FUR</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
             <iAIObjective>0</iAIObjective>
@@ -2022,7 +2022,16 @@
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans/>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SNOW</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST</FeatureType>
@@ -2065,7 +2074,7 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FUR</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
             <iAIObjective>0</iAIObjective>
@@ -2093,7 +2102,16 @@
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans/>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SNOW</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST</FeatureType>
