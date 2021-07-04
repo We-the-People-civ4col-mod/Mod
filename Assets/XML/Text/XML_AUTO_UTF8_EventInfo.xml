@@ -22,7 +22,7 @@
         <Tag>TXT_KEY_EVENT_ADMIRAL_1_3</Tag>
         <English>Absolutely correct. We will give him a ship. Sea air is the best way to deal with a binge and he can prove his good seamanship. We have a sloop in port. He will take command of this sloop. Issue the sailing order!</English>
         <French>Absolutely correct. We will give him a ship. Sea air is the best way to deal with a binge and he can prove his good seamanship. We have a sloop in port. He will take command of this sloop. Issue the sailing order!</French>
-        <German>Ihr habt vollkommen recht, so geht es nicht weiter. Wir werden ihm ein Schiff geben. Seeluft ist das beste Mittel gegen Säuferei. Da kann er mal zeigen, dass er noch nicht all seine Seemannschaft versoffen hat. Es liegt doch eine Sloop im Hafen. Die kann er nehmen. Fertigt nur gleich die Segelorder aus!</German>
+        <German>Ihr habt vollkommen recht, so geht es nicht weiter. Wir werden ihm ein Schiff geben. Seeluft ist das beste Mittel gegen Sauferei. Da kann er mal zeigen, dass er noch nicht all seine Seemannschaft versoffen hat. Es liegt doch eine Sloop im Hafen. Die kann er nehmen. Fertigt nur gleich die Segelorder aus!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_ADVENTURER_1</Tag>
@@ -50,7 +50,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_ANTI_PIRATE_3</Tag>
-        <English>We owe our Majesty a debt of gratitude for his support so far. And if he thinks we should learn to stand on our own feet, he will notice soon that we plan to do exactly that ...</English>
+        <English>We owe His Majesty a debt of gratitude for his support so far. And if he thinks we should learn to stand on our own feet, he will notice soon that we plan to do exactly that ...</English>
         <French>Nous devons à notre Majesté une sacrée dette pour son soutien jusqu'à maintenant. Et s'ils pensent que nous devons à prendre à nous défendre par nous-mêmes, il saura très vite que c'est exactement ce que nous comptons faire ...</French>
         <German>Wir schulden Seiner Majestät Dank für seine bisherige Unterstützung. Und wenn er der Meinung ist, wir sollten lernen, auf eigenen Füßen zu stehen, dann wird er bald merken, dass wir genau dies vorhaben ...</German>
     </TEXT>
@@ -282,7 +282,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CARPENTER_FAMILY_3</Tag>
-        <English>As I recall his cousin is on the run because he is a poacher. Does he want to come? But I cannot pay for his passage..</English>
+        <English>As I recall his cousin is on the run because he is a poacher. Does he want to come? But I cannot pay for his passage.</English>
         <French>Je crois que son cousin est un braconnier en fuite. Peut-être souhaite-t-il venir ? Mais je ne peux pas payer pour son passage.</French>
         <German>Wurde sein Vetter nicht vom Landbüttel daheim als Wilderer gesucht? Nun, er kann hier gerne ein neues Leben anfangen. Für die Überfahrt hat er aber selber aufzukommen.</German>
     </TEXT>
@@ -332,7 +332,7 @@
         <Tag>TXT_KEY_EVENT_CHIEFS_DAUGHTER_2</Tag>
         <English>That is not possible. The scout has a duty to fulfill.</English>
         <French>C'est malheureusement impossible, l'éclaireur doit poursuivre sa mission.</French>
-        <German>Das ist leider nicht möglich. Der Scout hat einen Auftrag zu erledigen.</German>
+        <German>Das ist leider nicht möglich. Der Kundschafter hat einen Auftrag zu erledigen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COCA_PROBLEM_1</Tag>
@@ -350,7 +350,7 @@
         <Tag>TXT_KEY_EVENT_COCA_TRADE_1</Tag>
         <English>That is an interesting proposal. Tell the slave trader that we accept the deal.</English>
         <French>C'est une proposition intéressante. Dîtes au marchand d'esclaves que nous acceptons sa proposition.</French>
-        <German>Das ist ein interessanter Vorschlag. Richtet dem Sklavenhänlder aus, dass wir den Handel annehmen.</German>
+        <German>Das ist ein interessanter Vorschlag. Richtet dem Sklavenhändler aus, dass wir den Handel annehmen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COCA_TRADE_2</Tag>
@@ -362,7 +362,7 @@
         <Tag>TXT_KEY_EVENT_COMMANDEERED_1</Tag>
         <English>We are duty bound to answer. The ship is theirs.</English>
         <French>C'est notre devoir que de les aider. Le navire leur appartient.</French>
-        <German>Unsere Pflicht gebiete uns zu unterstützen. Sie sollen das Schiff haben.</German>
+        <German>Unsere Pflicht gebietet uns zu unterstützen. Sie sollen das Schiff haben.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COMMANDEERED_2</Tag>
@@ -374,13 +374,13 @@
         <Tag>TXT_KEY_EVENT_COMMANDEERED_RETURN</Tag>
         <English>The Royal Navy has returned our frigate, somewhat the worse for wear, though with a generous share of booty in her hold!</English>
         <French>La Marine Royale nous a rendu notre frégate, il est vrai un endommagé, mais avec un joli butin dans sa soute !</French>
-        <German>Die Royal Navy hat unser Schiff zürückgegeben. Es ist zwar etwas mitgenommen, aber als Ausgleich erhalten wir einen grosszügigen Anteil an der Beute in Frachtraum.</German>
+        <German>Die Royal Navy hat uns unsere Fregatte wieder zurückgegeben. Sie ist zwar etwas mitgenommen, aber im Frachtraum findet sich als Ausgleich ein großzügiger Anteil an der Beute.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CONFLICT_HIRE_ELITE</Tag>
         <English>Maybe we can hire some elite troops.</English>
         <French>Peut-être devrions-nous engager quelques troupes d'élite.</French>
-        <German>Vielleicht gelingt es uns einige Elitetruppen zu rekrutieren.</German>
+        <German>Vielleicht gelingt es uns, einige Elitetruppen zu rekrutieren.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CONFLICT_HIRE_GENERAL</Tag>
@@ -398,7 +398,7 @@
         <Tag>TXT_KEY_EVENT_CONFLICT_IGNORE</Tag>
         <English>We currently cannot afford to invest into more military.</English>
         <French>Nous ne pouvons pas nous permettre d'investir dans notre armée en ce moment.</French>
-        <German>Wir können es uns momentan nicht leisten für mehr Truppen Geld auszugeben.</German>
+        <German>Wir können es uns momentan nicht leisten, für mehr Truppen Geld auszugeben.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CONIFEROUS_FIRE_1</Tag>
@@ -490,7 +490,7 @@
         <Tag>TXT_KEY_EVENT_DELIVER_LUMBER</Tag>
         <English>Instantly and without delay! May these sturdy planks serve His Majesty's fleet well.</English>
         <French>Instantanément et sans délai ! Que ces planches servent au mieux la flotte de Sa Majesté.</French>
-        <German>Selbstverständlich! Mögen diese feinen Planken der Flotte seiner Majestät gut dienen.</German>
+        <German>Selbstverständlich! Mögen diese feinen Planken der Flotte Seiner Majestät gut dienen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DELIVER_REFUSE</Tag>
@@ -502,7 +502,7 @@
         <Tag>TXT_KEY_EVENT_DESERTED_WOLF_WHELP_1</Tag>
         <English>Such a proud wolf is a pet worthy of the governor.</English>
         <French>Un tel loup, animal si majestueux, mérite d'avoir un gouverneur comme Maître.</French>
-        <German>Solch ein stolzes Tier hat einen Gouvernuer als Herren verdient.</German>
+        <German>Solch ein stolzes Tier hat einen Gouverneur als Herren verdient.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DESERTED_WOLF_WHELP_2</Tag>
@@ -520,7 +520,7 @@
         <Tag>TXT_KEY_EVENT_DESPERATE_CONQUISTADORES_2</Tag>
         <English>Those man were simply desperate. They will be put into our service. Such an incident will not happen again.</English>
         <French>Ces hommes étaient désespérés. Nous allons les mettre à notre service et un tel incident n'arrivera plus.</French>
-        <German>Die Männer waren schlicht verzweifelt. Wir werden sie in uneren Dienst stellen und Sorge tragen, dass so etwas nicht wieder vor kommt.</German>
+        <German>Die Männer waren schlicht verzweifelt. Wir werden sie in uneren Dienst stellen und Sorge tragen, dass so etwas nicht wieder vorkommt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DIPLOMATIC_CONNECTIONS_1</Tag>
@@ -746,7 +746,7 @@
         <Tag>TXT_KEY_EVENT_FIRST_UNIVERSITY_3</Tag>
         <English>What we need most is a medical doctor.</English>
         <French>Ce dont nous avons le plus besoin est un médecin. Nos soins doivent se développer.</French>
-        <German>Was wir am meisten benötigen ist ein Mediziner.</German>
+        <German>Was wir am dringendsten benötigen, ist ein Mediziner.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_WHEELWRIGHT_1</Tag>
@@ -828,7 +828,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_DOCKS_DONE_2</Tag>
-        <English>We would need a military ship to protect our trade routes.</English>
+        <English>We would need a warship to protect our trade routes.</English>
         <French>Nous avons besoin d'un navire militaire pour protéger nos routes commerciales.</French>
         <German>Ein Kriegsschiff könnte unsere Handelswege beschützen.</German>
     </TEXT>
@@ -836,7 +836,7 @@
         <Tag>TXT_KEY_EVENT_FIVE_DOCKS_DONE_3</Tag>
         <English>Another trading ship is needed to keep up with our increasing production.</English>
         <French>Un nouveau bateau de commerce est nécessaire pour soutenir la production croissante.</French>
-        <German>Wir brauchen ein weiters Handelsschiff um mit unserer steigenden Produktion mitzuhalten.</German>
+        <German>Wir brauchen ein weiters Handelsschiff, um mit unserer steigenden Produktion mitzuhalten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_MARKETS</Tag>
@@ -848,13 +848,13 @@
         <Tag>TXT_KEY_EVENT_FIVE_MARKETS_DONE_1</Tag>
         <English>They could build a larger market in one of our cities. Thus they will profit as well.</English>
         <French>Ils peuvent construire un marché encore plus grand dans l'une de nos villes. Les profits générés augmenteront ainsi.</French>
-        <German>Sie sollen in einer unserer Städte den vorhandenen Markt ausbauen. So profitieren sie selbst auch davon.</German>
+        <German>Sie sollen in einer unserer Städte den vorhandenen Marktplatz ausbauen. So profitieren sie selbst auch davon.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_MARKETS_DONE_2</Tag>
         <English>We now have markets but we need roads to connect them. They shall hire some pioneers.</English>
         <French>Nous avons certes des marchés mais nous avons besoin de routes pour les connecter. Ils peuvent nous embaucher des pionniers.</French>
-        <German>Wir haben zwar nun die Märkte, aber diese müssen durch Strassen verbunden werden. Sie sollen einige Pioniere anheuern.</German>
+        <German>Wir haben zwar nun die Marktplätze, aber diese müssen durch Straßen verbunden werden. Sie sollen einige Pioniere anheuern.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_MARKETS_DONE_3</Tag>
@@ -932,13 +932,13 @@
         <Tag>TXT_KEY_EVENT_GOVERNOR_2</Tag>
         <English>Pah, the courtier would be confounded. Majesty, we will manage our colonies ourselves and better than a courtier from Europe. We will use the money for the development of the colony instead of preparing the chamber for your spy.</English>
         <French>Pah, the courtier would be confounded. Majesty, we will manage our colonies ourselves and better than a courtier from Europe. We will use the money for the development of the colony instead of preparing the chamber for your spy.</French>
-        <German>Noch ein Höfling, der uns hier sagt was wir zu tun uns zu lassen haben? Pah! Der soll bleiben wo der Pfeffer wächst, Eure Majestät. Ihr werdet sehen, wir werden die Kolonien für Euch auf Vordermann bringen!</German>
+        <German>Noch ein Höfling, der uns hier sagt, was wir zu tun und zu lassen haben? Pah! Der soll bleiben wo der Pfeffer wächst, Eure Majestät. Ihr werdet sehen, wir werden die Kolonien für Euch auf Vordermann bringen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOVERNOR_LOVER_1</Tag>
         <English>Search for this poor woman and bring her to the colonies. We can at least give her proper work and a steady income without angering the court too much. But do it quietly.</English>
         <French>Search for this poor woman and bring her to the colonies. We can at least give her proper work with a steady income without angering the court too much. But do it without making much noise.</French>
-        <German>Sucht nach der armen Frau und bringt sie in die Kolonien. Wir können ihr zumindest eine anständige Arbeitstelle mit stetigem Einkommen beschaffen ohne den Hof zu sehr zu verärgern. Lasst dies jedoch leise geschehen.</German>
+        <German>Sucht nach der armen Frau und bringt sie in die Kolonien. Wir können ihr zumindest eine anständige Arbeitstelle mit stetigem Einkommen beschaffen, ohne den Hof zu sehr zu verärgern. Lasst dies jedoch leise geschehen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOVERNOR_LOVER_2</Tag>
@@ -954,13 +954,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GREAT_ARSENAL_DONE_1</Tag>
-        <English>Competent gunsmiths from Saint Petersburg could come to America and work for you.</English>
+        <English>Two masterful gunsmiths from St. Petersburg can come to the New World, the negotiator offers you. Splendid!</English>
         <French>Deux armuriers compétents de Saint-Petersbourg peuvent venir aux Amériques et travailler pour vous.</French>
         <German>Zwei meisterliche Büchsenmacher aus Sankt Petersburg können in die Neue Welt kommen, bietet Euch der Unterhändler an. Famos!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GREAT_ARSENAL_DONE_2</Tag>
-        <English>Soon the Russian sovereign is to marry the daughter of the Prussian king. Now he wishes to get rid of certain young varlets while assuring their discretion.</English>
+        <English>Soon the Russian prince is to marry the daughter of the Prussian king. Now he wishes to get rid of certain young valets while assuring their discretion.</English>
         <French>Bientôt le souverain russe va se marier à la fille du roi de Prusse. Il souhaite maintenant se débarrase de certains valets en toute discretion.</French>
         <German>Der russische Fürst heiratet in Bälde die Tochter des preußischen Königs. Vorab würde er gerne diskret einige junge Kammerdiener loswerden, deren Zutraulichkeiten jetzt nicht mehr erwünscht sind. Nun denn!</German>
     </TEXT>
@@ -1098,13 +1098,13 @@
         <Tag>TXT_KEY_EVENT_HUDSON_1</Tag>
         <English>Unnecessary and preposterous! My good sir, we are more than capable of handling the fur trade ourselves.</English>
         <French>Inutile et absurde ! Votre Majesté, nous sommes tout à fait en mesure de gérer notre commerce de fourrures par nous-mêmes.</French>
-        <German>Absurd! Wir sind mehr als fähig den Pelzhandel im Sinne Ihrer Majestät zu führen.</German>
+        <German>Absurd! Wir sind mehr als fähig, den Pelzhandel im Sinne Seiner Majestät zu führen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HUDSON_2</Tag>
         <English>As you wish. Of course, I assume a portion of the first year's dividend will be reserved for me.</English>
         <French>Si tel est votre volonté. Bien entendu, j'imagine qu'une partie du dividende de première année me sera réservé.</French>
-        <German>Wie Ihre Majestät wünscht. Wir nehmen aber an, dass ein gerechter Anteil der Gewinne an uns übertragen wird.</German>
+        <German>Wie Eure Majestät wünschen. Wir nehmen aber an, dass ein gerechter Anteil der Gewinne an uns übertragen wird.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HYMNS_AND_SCULPTURES_1</Tag>
@@ -1118,7 +1118,7 @@
         <Tag>TXT_KEY_EVENT_IMPATIENT_ANGRY</Tag>
         <English>They'll be ready when they're ready. Or perhaps His Highness would like personally to lend a hand to the work effort?</English>
         <French>La cargaison sera prête quand elle sera prête. Ou peut-être que Son Altesse est prête à donner un petit coup de main ?</French>
-        <German>Wir geben unser Bestes, doch es geht nicht schneller. Anstatt uns zu belästigen könnten die Abgesandten seiner Majestät ja selbst Hand anlegen.</German>
+        <German>Wir geben unser Bestes, doch es geht nicht schneller. Anstatt uns zu belästigen, könnten die Abgesandten Seiner Majestät ja selbst Hand anlegen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_IMPATIENT_FINE</Tag>
@@ -1166,13 +1166,13 @@
         <Tag>TXT_KEY_EVENT_KINGFURIOUS_1</Tag>
         <English>By all means, Sir; we did not wish to anger the Crown.</English>
         <French>Nous ne souhaitons pas déplaire au Roi, quoi qu'il arrive.</French>
-        <German>Um Himmels Willen, wir würden niemals absichtlich Ihre Majestät verärgern!</German>
+        <German>Um Himmels Willen, wir würden niemals absichtlich Eure Majestät verärgern!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_KINGFURIOUS_2</Tag>
         <English>Do your worst! These scheming ministers will never be satisfied till they wring every last drop of wealth from our honest citizens.</English>
         <French>Faites donc au pire ! Ces ministres intrigants ne seront jamais satisfaits tant qu'ils n'auront pas sucer la dernière goutte de sang de nos honnêtes citoyens.</French>
-        <German>Wir erwarten euer Schlimmstes! Die gierigen Abgesandten Ihrer Majestät werden eh nie zufrieden sein, bevor sie unsere armen Bürger gänzlich geplündert haben.</German>
+        <German>Wir erwarten euer Schlimmstes! Die gierigen Abgesandten Seiner Majestät werden eh nie zufrieden sein, bevor sie unsere armen Bürger gänzlich geplündert haben.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LOST_TRIBE_1</Tag>
@@ -1226,7 +1226,7 @@
         <Tag>TXT_KEY_EVENT_MAN_FROM_THE_WILDERNESS_3</Tag>
         <English>Try to convince them to join our forces as rangers.</English>
         <French>Essayez de les convaincre de rejoindre nos forces en tant que gardes-forestiers.</French>
-        <German>Versucht sie zu überzeugen unseren Truppen als Rangers zu dienen.</German>
+        <German>Versucht sie zu überzeugen, unseren Truppen als Rangers zu dienen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MINING_ACCIDENT_1</Tag>
@@ -1298,7 +1298,7 @@
         <Tag>TXT_KEY_EVENT_MONASTERY_HIDING_SLAVES_3</Tag>
         <English>We will buy the freedom of those poor souls and give them the chance to live as free men.</English>
         <French>Nous achèterons la liberté de ses pauvres hommes et nous leur laissons une chance de vivre parmi nous.</French>
-        <German>Wird werden die Sklaven freikaufen und ihnen eine Chance geben wieder als freie Menschen zu leben.</German>
+        <German>Wird werden die Sklaven freikaufen und ihnen eine Chance geben, wieder als freie Menschen zu leben.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MONASTERY_TRADING_FOOD_1</Tag>
@@ -1310,7 +1310,7 @@
         <Tag>TXT_KEY_EVENT_MONASTERY_TRADING_FOOD_2</Tag>
         <English>Give them half of the food we've stored in the next city.</English>
         <French>Faîtes leur don de la moitié de la nourriture stockée dans la ville la plus proche.</French>
-        <German>Schenkt ihnen die Hälfte der Nahrungsvorräte der am Nächsten gelegenen Stadt.</German>
+        <German>Schenkt ihnen die Hälfte der Nahrungsvorräte der nächstgelegenen Stadt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MONASTERY_TRADING_FOOD_3</Tag>
@@ -1426,7 +1426,7 @@
         <Tag>TXT_KEY_EVENT_PIRATES_1</Tag>
         <English>Empty talk. These loyal souls would never tamper with my, well, er, I mean his majesty's property, of course. Away! Do not insult my ear with such tall tales.</English>
         <French>Bavardages inutiles. Ces âmes loyales ne toucheraient jamais à ma, enfin, euh, je veux dire, bien sûr, à la propriété de sa majesté. Va-t'en ! N'insulte pas mon oreille avec de telles histoires.</French>
-        <German>Leeres Geschwätz. Diese treuen Seelen würden sich nie an meinem, also, ähäm, ich meine natürlich seiner Majestät Eigentum vergreifen. Hinfort! Beleidigt mein Ohr nicht mit solchen Lügenmärchen.</German>
+        <German>Leeres Geschwätz. Diese treuen Seelen würden sich nie an meinem, also, ähäm, ich meine natürlich Seiner Majestät Eigentum vergreifen. Hinfort! Beleidigt mein Ohr nicht mit solchen Lügenmärchen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PIRATES_2</Tag>
@@ -1456,7 +1456,7 @@
         <Tag>TXT_KEY_EVENT_POLITICAL_REFUGEE_1</Tag>
         <English>For the sake of variety we need a well-educated man in our colonies. We will not remain a colony of workers and farmers. Issue the bill of exchange!</English>
         <French>For the sake of variety we need a well educated man in our colonies. We will not remain a colony of workers and farmers. Issue the bill of exchange!</French>
-        <German>Wir könnten zur Abwechslung mal einen Gelehrten brauchen. Wir wollen ja nicht eine Kolonie von Arbeitern und Bauern bleiben. Schreibt ihm den Wechsel aus!</German>
+        <German>Wir könnten zur Abwechslung mal einen Gelehrten brauchen. Wir wollen ja nicht eine Kolonie von Arbeitern und Bauern bleiben. Stellt ihm den Wechsel aus!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_POLITICAL_REFUGEE_2</Tag>
@@ -1486,7 +1486,7 @@
         <Tag>TXT_KEY_EVENT_PRIVATEER_2</Tag>
         <English>We can't do anything. These letters of marque have been issued by our own admiralty and the King. The private investors will not willy-nilly waive their right to capture foreign merchant vessels.</English>
         <French>We can't do anything. These letters of marque have been issued by our own admiralty and the king. And the private investors will not willy-nilly waive their rights to capture foreign merchant vessels.</French>
-        <German>Ja nun, dagegen können wir nichts machen. Die Kaperbriefe werden von der Admiralität auf Geheiß seiner Majestät ausgegeben. Und die privaten Eigner werden nicht gern auf ihre Profite verzichten wollen.</German>
+        <German>Ja nun, dagegen können wir nichts machen. Die Kaperbriefe werden von der Admiralität auf Geheiß Seiner Majestät ausgegeben. Und die privaten Eigner werden nicht gern auf ihre Profite verzichten wollen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRIVATEER_3</Tag>
@@ -1558,13 +1558,13 @@
         <Tag>TXT_KEY_EVENT_REFUSE_BUTCHER</Tag>
         <English>We will hand this man over to the authorities in Europe.</English>
         <French>Nous allons extrader cette homme pour le rendre aux autorités qui le demandent en Europe.</French>
-        <German>Wir werden diesen Mann der Authorität in Europa überstellen.</German>
+        <German>Wir werden diesen Mann den Behörden in Europa überstellen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_REQUISITION_COATS_QUEST</Tag>
         <English>Your wish is our command, Your Majesty. May every iceberg be claimed in Your honour!</English>
         <French>Votre souhait est de vous servir, Votre Majesté. Que chaque iceberg soit revendiqué en votre honneur !</French>
-        <German>Euer Wunsch ist unser Befehl, Eure Majestät. Möge jeder Eisberg im Namen seiner Majestät bezwungen werden!</German>
+        <German>Euer Wunsch ist unser Befehl, Eure Majestät. Möge jeder Eisberg im Namen Seiner Majestät bezwungen werden!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_REQUISITION_DECLINE</Tag>
@@ -1666,9 +1666,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SECONDCOLONY_1</Tag>
-        <English>We would like to respectfully thank His Majesty and we appreciate His support. May we most humbly state that we are in dire need of resources to build up our colonies?</English>
+        <English>We would like to respectfully thank Your Majesty and we appreciate Your support. May we most humbly state that we are in dire need of resources to build up our colonies?</English>
         <French>Nous tenons à remercier respectueusement Sa Majesté et nous apprécions son soutien. Pouvons-nous faire état que nos colonies manquent cruellement de ressources pour leur construction ?</French>
-        <German>Wir danken Euer Hoheit und nehmen die wohlfeile Hilfe gerne an. Wenn wir demütigst einen Wunsch äußern dürften - Rohstoffe für den Aufbau unserer Kolonie kämen uns sehr gelegen.</German>
+        <German>Wir danken Eurer Majestät und nehmen die wohlfeile Hilfe gerne an. Wenn wir demütigst einen Wunsch äußern dürften: Rohstoffe für den Aufbau unserer Kolonie kämen uns sehr gelegen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SECONDCOLONY_2</Tag>
@@ -1832,7 +1832,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_1</Tag>
-        <English>Get me the leader of this crowd and hoist some more of our king's flags. A fair word between two gentleman and a glass of wine should sort things out. I'll make him an offer he can't refuse..</English>
+        <English>Get me the leader of this crowd and hoist some more of our king's flags. A fair word between two gentleman and a glass of wine should sort things out. I'll make him an offer he can't refuse.</English>
         <French>Amenez moi le meneur de cette foule et hisser davantage de drapeau de notre roi. Un simple dialogue entre deux gentilshommes autour d'un verre de vin devrait clarifier les choses. Je vais lui faire une offre qu'il ne pourra refuser...</French>
         <German>Holt mir den führenden Kopf hierher und hängt noch zwei königliche Banner aus dem Fenster. Ein guter Schluck Wein und ein offenes Gespräch haben schon so manche Bluttat verhindert. Ich werde ihm ein Angebot machen, dass er nicht ablehnen kann.</German>
     </TEXT>
@@ -1862,7 +1862,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_3a</Tag>
-        <English>A hell of a plan, these devils! All right, save what you can. That´s all we can do for now ... but this kind of "party" gives me another idea..</English>
+        <English>A hell of a plan, these devils! All right, save what you can. That´s all we can do for now ... but this kind of "party" gives me another idea...</English>
         <French>Quel plan démoniaque, ces chiens ! Très bien, sauvez ce que vous pouvez, c'est la seule chose que nous pouvons faire maintenant... mais cette drôle de « fête » m'a donné une idée...</French>
         <German>Ein teuflischer Plan, diese Hunde, rettet, was zu retten ist ... allein, der Wortlaut dieses Anschlages kommt mir wirklich bekannt vor.</German>
     </TEXT>
@@ -2164,7 +2164,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WHALE_OIL_COOKER_2</Tag>
-        <English>Oh my god, what a stupid idea! The pirates cruising along our coasts are waiting for such fat prey! We don't have enough military vessels to protect our whaling ships and without protection this is a suicidal endeavour. We cannot employ him.</English>
+        <English>With so many pirates cruising in this area at the moment? We don't have the means to have all our whalers guarded by warships. And without protection, it's a pointless endeavour. We cannot employ him at the moment.</English>
         <French>Oh my god, what a stupid idea! The pirates cruising along our coasts are already waiting for such fat prey! We have not enough military vessels to protect our whaling ships and without procetion this is a rather senseless endeavor. We cannot employ him.</French>
         <German>Bei den vielen Piraten, die hier in dieser Gegend zur Zeit kreuzen? Wir haben nicht die Mittel, um alle unsere Walfänger von Kriegschiffen bewachen zu lassen. Und ohne Schutz ist das ein sinnloses Unterfangen. Wir können ihn derzeit nicht gebrauchen.</German>
     </TEXT>
