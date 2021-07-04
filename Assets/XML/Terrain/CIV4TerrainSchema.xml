@@ -258,6 +258,8 @@
 	<ElementType name="bNoRiverSide" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRiverSideOnly" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bCoastalLandOnly" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bOnlySouthernHemisphere" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bOnlyNorthernHemisphere" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bFeature" content="textOnly" dt:type="boolean"/>
 	<ElementType name="FeatureBoolean" content="eltOnly">
 		<element type="FeatureType"/>
@@ -306,6 +308,8 @@
 		<element type="bNoRiverSide"/>
 		<element type="bRiverSideOnly"/>
 		<element type="bCoastalLandOnly"/>
+		<element type="bOnlySouthernHemisphere" minOccurs="0"/>
+		<element type="bOnlyNorthernHemisphere" minOccurs="0"/>
 		<element type="TerrainBooleans"/>
 		<element type="FeatureBooleans"/>
 		<element type="FeatureTerrainBooleans"/>

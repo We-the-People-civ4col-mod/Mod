@@ -1823,6 +1823,25 @@ bool CvPlot::canHaveBonus(BonusTypes eBonus, bool bIgnoreLatitude) const
 	}
 	// Ray, adding 2 more XML tags to control bonus placement - END
 
+
+	//ray, Norther and Southern Hemisphere, using hint of f1rpo - START
+	if (GC.getBonusInfo(eBonus).isOnlySouthernHemisphere())
+	{
+		if (!isSouthernHemisphere())
+		{
+			return false;
+		}
+	}
+
+	if (GC.getBonusInfo(eBonus).isOnlyNorthernHemisphere())
+	{
+		if (!isNorthernHemisphere())
+		{
+			return false;
+		}
+	}
+	//ray, Norther and Southern Hemisphere, using hint of f1rpo - END 
+
 	if (GC.getBonusInfo(eBonus).getMinAreaSize() != -1)
 	{
 		if (area()->getNumTiles() < GC.getBonusInfo(eBonus).getMinAreaSize())
@@ -4222,8 +4241,16 @@ int CvPlot::getIndex() const
 	return ((getY_INLINE() * GC.getMapINLINE().getGridWidthINLINE()) + getX_INLINE());
 }
 
-
+//ray, Norther and Southern Hemisphere, using hint of f1rpo 
+// rewriten, now calls "getSignedLattitude" with abs - see below
 int CvPlot::getLatitude() const
+{
+   return abs(getSignedLatitude());
+}
+
+//ray, Norther and Southern Hemisphere, using hint of f1rpo
+// old getLatitude without abs - thus now "getSignedLattitude"
+int CvPlot::getSignedLatitude() const
 {
 	int iLatitude;
 
@@ -4238,7 +4265,19 @@ int CvPlot::getLatitude() const
 
 	iLatitude = ((iLatitude * (GC.getMapINLINE().getTopLatitude() - GC.getMapINLINE().getBottomLatitude())) / 100);
 
-	return abs(iLatitude + GC.getMapINLINE().getBottomLatitude());
+	return iLatitude + GC.getMapINLINE().getBottomLatitude();
+}
+
+//ray, Norther and Southern Hemisphere, using hint of f1rpo
+bool CvPlot::isSouthernHemisphere() const
+{
+   return !isNorthernHemisphere(); // as Nightinggale suggested
+}
+
+//ray, Norther and Southern Hemisphere, using hint of f1rpo
+bool CvPlot::isNorthernHemisphere() const
+{
+   return (getSignedLatitude() > 0);
 }
 
 

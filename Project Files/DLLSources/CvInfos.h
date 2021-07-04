@@ -2475,6 +2475,8 @@ public:
 	bool isNoRiverSide() const;
 	bool isRiverSideOnly() const; // Ray, adding 2 more XML tags to control bonus placement
 	bool isCoastalLandOnly() const; // Ray, adding 2 more XML tags to control bonus placement
+	bool isOnlySouthernHemisphere() const;
+	bool isOnlyNorthernHemisphere() const;
 	DllExport bool useLSystem() const;
 	const char* getArtDefineTag() const;
 	void setArtDefineTag(const char* szVal);
@@ -2526,6 +2528,8 @@ protected:
 	bool m_bNoRiverSide;
 	bool m_bRiverSideOnly; // Ray, adding 2 more XML tags to control bonus placement
 	bool m_bCoastalLandOnly; // Ray, adding 2 more XML tags to control bonus placement
+	bool m_bOnlySouthernHemisphere; //ray, Norther and Southern Hemisphere, using hint of f1rpo
+	bool m_bOnlyNorthernHemisphere; //ray, Norther and Southern Hemisphere, using hint of f1rpo
 	bool m_bUseLSystem;
 	bool m_bWhalingboatWorkable; //TAC Whaling, ray
 	bool m_bFishingboatWorkable; // R&R, ray, High Sea Fishing

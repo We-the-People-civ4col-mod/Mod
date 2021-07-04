@@ -223,6 +223,9 @@ public:
 	bool at(int iX, int iY) const;
 	int getIndex() const;
 	int getLatitude() const;
+	int getSignedLatitude() const; //ray, Norther and Southern Hemisphere, using hint of f1rpo 
+	bool isSouthernHemisphere() const; //ray, Norther and Southern Hemisphere, using hint of f1rpo 
+	bool isNorthernHemisphere() const; //ray, Norther and Southern Hemisphere, using hint of f1rpo 
 	int getFOWIndex() const;
 	CvArea* area() const;
 	CvArea* waterArea() const;

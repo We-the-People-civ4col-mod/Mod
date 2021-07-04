@@ -2030,6 +2030,7 @@
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>0</bCoastalLandOnly>
+            <bOnlyNorthernHemisphere>1</bOnlyNorthernHemisphere>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
@@ -2110,6 +2111,7 @@
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>0</bCoastalLandOnly>
+            <bOnlyNorthernHemisphere>1</bOnlyNorthernHemisphere>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
@@ -2194,6 +2196,7 @@
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>0</bCoastalLandOnly>
+            <bOnlySouthernHemisphere>1</bOnlySouthernHemisphere>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
@@ -2294,6 +2297,7 @@
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>0</bCoastalLandOnly>
+            <bOnlySouthernHemisphere>1</bOnlySouthernHemisphere>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
@@ -2717,6 +2721,7 @@
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>0</bCoastalLandOnly>
+            <bOnlyNorthernHemisphere>1</bOnlyNorthernHemisphere>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
@@ -4486,6 +4491,7 @@
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>0</bCoastalLandOnly>
+            <bOnlySouthernHemisphere>1</bOnlySouthernHemisphere>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
@@ -4578,6 +4584,7 @@
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>0</bCoastalLandOnly>
+            <bOnlySouthernHemisphere>1</bOnlySouthernHemisphere>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
@@ -4670,6 +4677,7 @@
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>0</bCoastalLandOnly>
+            <bOnlySouthernHemisphere>1</bOnlySouthernHemisphere>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
@@ -4762,6 +4770,7 @@
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>0</bCoastalLandOnly>
+            <bOnlySouthernHemisphere>1</bOnlySouthernHemisphere>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
@@ -6475,7 +6484,7 @@
                 </YieldIntegerPair>
             </YieldChanges>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>6</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>70</iMinLatitude>
@@ -6499,6 +6508,7 @@
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>1</bCoastalLandOnly>
+            <bOnlyNorthernHemisphere>1</bOnlyNorthernHemisphere>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
@@ -6530,7 +6540,7 @@
                 </YieldIntegerPair>
             </YieldChanges>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>6</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>70</iMinLatitude>
@@ -6554,6 +6564,7 @@
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>1</bCoastalLandOnly>
+            <bOnlySouthernHemisphere>1</bOnlySouthernHemisphere>
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
