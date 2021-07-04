@@ -44,7 +44,7 @@
         <Tag>TXT_KEY_GAMEOPTION_ALWAYS_PEACE_HELP</Tag>
         <English>Players cannot declare war on each other.</English>
         <French>Les joueurs ne peuvent pas se déclarer la guerre.</French>
-        <German>Spieler können sich gegenseitig nicht den Krieg erklären.</German>
+        <German>Spieler können sich nicht gegenseitig den Krieg erklären.</German>
         <Italian>I giocatori non possono dichiararsi guerra tra loro.</Italian>
         <Spanish>Los jugadores no se pueden declarar la guerra.</Spanish>
     </TEXT>
@@ -140,7 +140,7 @@
         <Tag>TXT_KEY_GAMEOPTION_NO_CITY_RAZING_HELP</Tag>
         <English>European Settlements cannot be razed by other Europeans after capture.</English>
         <French>Impossible pour les Européens de raser les autres colonies européennes après leur capture.</French>
-        <German>Europäische Siedlungen können nach der Einnahme durch andere Europäer nicht vernichtet werden.</German>
+        <German>Europäische Siedlungen können nach der Einnahme durch andere Europäer nicht mehr zerstört werden.</German>
         <Italian>Gli insediamenti europei non possono essere razziati da altri europei dopo la conquista.</Italian>
         <Spanish>Los asentamientos europeos no pueden ser arrasados después de que otros europeos los capturen.</Spanish>
     </TEXT>
@@ -284,7 +284,7 @@
         <Tag>TXT_KEY_GAMEOPTION_REDUCED_CITY_DISTANCE_HELP</Tag>
         <English>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid).</English>
         <French>Réduire la distance minimale aux autres colonies de 1 si le joueur possède déjà la parcelle fondatrice et toutes les parcelles voisines (grille 3x3).</French>
-        <German>Verringern Sie den Mindestabstand zu anderen Kolonien um 1, wenn der Spieler bereits die Gründungsparzelle und alle angrenzenden Parzellen besitzt (3x3-Raster).</German>
+        <German>Verringert den Mindestabstand zu anderen Kolonien um 1, wenn der Spieler bereits die Gründungsparzelle und alle angrenzenden Parzellen besitzt (3x3-Raster).</German>
         <Italian>Ridurre la distanza minima dalle altre colonie di 1 se il giocatore possiede già il lotto fondatore e tutti i lotti vicini (griglia 3x3).</Italian>
         <Spanish>Reducir la distancia mínima a otras colonias en 1 si el jugador ya posee la parcela fundadora y todas las parcelas contiguas (cuadrícula 3x3).</Spanish>
     </TEXT>
