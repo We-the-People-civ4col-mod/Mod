@@ -12,7 +12,7 @@
         <Tag>TXT_KEY_MEMORY_ACCEPTED_STOP_TRADING</Tag>
         <English>"You agreed to stop trading with our worst enemy."</English>
         <French>"Vous avez accepté de cesser tout commerce avec notre pire ennemi."</French>
-        <German>"Ihr habt zugestimmt, Eure Handelsbeziehungen mit einem unserer Erzfeinde einzustellen."</German>
+        <German>"Ihr habt zugestimmt, Eure Handelsbeziehungen mit unserem Erzfeind einzustellen."</German>
         <Italian>"Avete accettato di interrompere il commercio con il nostro peggior nemico."</Italian>
         <Spanish>"Accedisteis a dejar de comerciar con nuestro peor enemigo."</Spanish>
     </TEXT>
@@ -60,8 +60,8 @@
         <Tag>TXT_KEY_MEMORY_DENIED_STOP_TRADING</Tag>
         <English>"You refused to stop trading with our worst enemy."</English>
         <French>"Vous avez refusé de cesser tout commerce avec notre pire ennemi."</French>
-        <German>"Ihr habt Euch geweigert, Eure Handelsbeziehungen mit einem unserer Erzfeinde einzustellen!"</German>
-        <Italian>"Vi siete rifiutati di interrompere il commercio con il nostro peggior nemico." </Italian>
+        <German>"Ihr habt Euch geweigert, Eure Handelsbeziehungen mit unserem Erzfeind einzustellen!"</German>
+        <Italian>"Vi siete rifiutati di interrompere il commercio con il nostro peggior nemico."</Italian>
         <Spanish>"Os negasteis a dejar de comerciar con nuestro peor enemigo."</Spanish>
     </TEXT>
     <TEXT>
@@ -106,8 +106,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_LIBERATED_CITIES</Tag>
-        <English>"You liberated our settlements"</English>
-        <French>"Vous avez libéré nos colonies".</French>
+        <English>"You liberated our settlements!"</English>
+        <French>"Vous avez libéré nos colonies !"</French>
         <German>"Ihr habt unsere Siedlungen befreit!"</German>
         <Italian>"Hai liberato i nostri insediamenti"</Italian>
         <Spanish>"Habéis liberado nuestros asentamientos"</Spanish>
@@ -132,7 +132,7 @@
         <Tag>TXT_KEY_MEMORY_MISSIONARY_FAIL</Tag>
         <English>"Your missionaries have insulted our Spirits!"</English>
         <French>"Vos missionnaires ont insulté nos Esprits !"</French>
-        <German>"Eure Missionare haben unsere Seelen beleidigt"</German>
+        <German>"Eure Missionare haben unsere Geister beleidigt!"</German>
         <Italian>"I tuoi missionari hanno insultato i nostri Spiriti!"</Italian>
         <Spanish>"¡Tus misioneros han insultado a nuestros antepasados!"</Spanish>
     </TEXT>
@@ -140,7 +140,7 @@
         <Tag>TXT_KEY_MEMORY_RAZED_CITY</Tag>
         <English>"You razed one of our settlements!"</English>
         <French>"Vous avez rasé une de nos colonies!"</French>
-        <German>"Ihr habt eine unserer Siedlungen vernichtet!"</German>
+        <German>"Ihr habt eine unserer Siedlungen zerstört!"</German>
         <Italian>"Hai razziato uno dei nostri insediamenti!"</Italian>
         <Spanish>"¡Habéis arrasado uno de nuestros asentamientos!"</Spanish>
     </TEXT>
