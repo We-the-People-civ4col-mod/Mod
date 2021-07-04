@@ -1156,7 +1156,7 @@
         <Tag>TXT_KEY_PROMOTION_RELIEF_BATTALION</Tag>
         <English>Relief Battalion</English>
         <French>Relief Battalion</French>
-        <German>Reservebataillon</German>
+        <German>Reserve-Bataillon</German>
         <Italian>Relief Battalion</Italian>
         <Spanish>Relief Battalion</Spanish>
     </TEXT>
@@ -1456,7 +1456,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Sturm Angriff I</German>
+        <German>Sturmangriff I</German>
         <Italian>
             <Text>Storm Attack I</Text>
             <Gender>Male</Gender>
@@ -1476,7 +1476,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Sturm Angriff II</German>
+        <German>Sturmangriff II</German>
         <Italian>
             <Text>Storm Attack II</Text>
             <Gender>Female</Gender>
@@ -1496,7 +1496,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Sturm Angriff III</German>
+        <German>Sturmangriff III</German>
         <Italian>
             <Text>Storm Attack III</Text>
             <Gender>Male</Gender>
