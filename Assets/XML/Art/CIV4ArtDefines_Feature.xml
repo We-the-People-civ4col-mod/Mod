@@ -225,7 +225,7 @@
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
             <fScale>0.5</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <Button>Art/Interface/Buttons/sword_grass.dds</Button>
+            <Button>Art/Interface/Buttons/Lush_Grass.dds</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
@@ -234,7 +234,7 @@
                     </FeatureArtPiece>
                 </FeatureArtPieces>
                 <iModelCopies>1</iModelCopies>
-                <VarietyButton>Art/Interface/Buttons/sword_grass.dds</VarietyButton>
+                <VarietyButton>Art/Interface/Buttons/Lush_Grass.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
