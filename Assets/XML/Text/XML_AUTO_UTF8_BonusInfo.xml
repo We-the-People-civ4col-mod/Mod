@@ -593,6 +593,34 @@
         <Spanish>[TAB]A lo largo de la historia, las pieles de los animales han sido artículos valiosos para el comercio y las ventas. Muchos tipos de animales, incluyendo visones, conejos y castores, han sido capturados por tramperos con el propósito de obtener sus pieles y usarlas en la confección de ropa y otros artículos. La exploración y colonización del Nuevo Mundo supuso el auge de la industria peletera, que ponía a la disposición del público una amplia gama de pieles. Al final del siglo XIX, se crearon granjas específicas de cría de animales para la industria de la piel. Los años 70 vieron el nacimiento de grupos ecologistas y de defensores de los derechos de los animales que han ejercido presión para cambiar la opinión pública en lo referente a la obtención y venta de pieles. A pesar de estos grupos de protesta, la industria peletera sigue dando beneficios hoy en día, aunque no esté tan extendida.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_POLAR_FOX</Tag>
+        <English>Polar foxes</English>
+        <German>
+            <Text>Polarfüchse</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_POLAR_FOX_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polar foxes[COLOR_REVERT]</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polarfüchse[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_RED_FOX</Tag>
+        <English>Red foxes</English>
+        <German>
+            <Text>Rotfüchse</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_RED_FOX_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Red foxes[COLOR_REVERT]</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rotfüchse[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_GEMS</Tag>
         <English>Gemstone Deposits</English>
         <French>

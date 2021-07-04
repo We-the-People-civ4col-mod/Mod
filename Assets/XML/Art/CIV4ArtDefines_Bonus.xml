@@ -29,6 +29,28 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_POLAR_FOX</Type>
+            <fScale>25.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/arcticfox/arcticfox.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/arcticfox2.dds</Button>
+            <FontButtonIndex>21</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_RED_FOX</Type>
+            <fScale>25.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/redfox/redfox.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/redfox.dds</Button>
+            <FontButtonIndex>21</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_COTTON</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
