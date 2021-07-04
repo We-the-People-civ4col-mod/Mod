@@ -1048,7 +1048,7 @@
             <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/caribou/caribou.nif</NIF>
             <KFM/>
-            <Button>Art/Interface/Buttons/caribou.dds</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_MOOSE</Type>
@@ -1060,7 +1060,7 @@
             <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/moose/moose.nif</NIF>
             <KFM/>
-            <Button>Art/Interface/Buttons/moose.dds</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_LLAMA</Type>
@@ -1072,7 +1072,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/llama/llama_adult_f.nif</NIF>
             <KFM/>
-            <Button>,Art/atlasmapbonus.dds,4,7</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_GUINEA_PIG</Type>
@@ -1084,7 +1084,7 @@
             <fInterfaceScale>5.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/guinea_pig/guineapig.nif</NIF>
             <KFM/>
-            <Button>Art\interface\buttons\guinea_pig.dds</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_PARROTS</Type>
@@ -1096,7 +1096,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Parrots/bird2.nif</NIF>
             <KFM/>
-            <Button>Art/Interface/Buttons/Parrots.dds</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_TOUCAN</Type>
@@ -1108,7 +1108,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/toucan/toucan.nif</NIF>
             <KFM/>
-            <Button>Art/Interface/Buttons/toucan.dds</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_CAPYBARA</Type>
@@ -1120,7 +1120,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/capybara/capybara.nif</NIF>
             <KFM/>
-            <Button>Art/Interface/Buttons/capybara.dds</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_TAPIR</Type>
@@ -1132,7 +1132,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/tapir/mttapir.nif</NIF>
             <KFM/>
-            <Button>Art/Interface/Buttons/tapir.dds</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_RABBIT</Type>
@@ -1143,8 +1143,8 @@
             <fScale>3.0</fScale>
             <fInterfaceScale>5.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Rabbits/Rabbits.nif</NIF>
-            <KFM>Art/Terrain/Resources/Rabbits/Rabbits.kfm</KFM>
-            <Button>Art/Interface/Buttons/Rabbits.dds</Button>
+            <KFM/>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_SILVER</Type>
@@ -1228,7 +1228,7 @@
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Bog_Ore/gems.nif</NIF>
             <KFM>Art/Terrain/Resources/Bog_Ore/gems.kfm</KFM>
-            <Button>Art/interface/buttons/Bog_Ore.dds</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_MINERALS</Type>
@@ -1432,7 +1432,7 @@
             <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/walrus/walrus.nif</NIF>
             <KFM/>
-            <Button>Art/Interface/Buttons/walrus.dds</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_PENGUIN</Type>
@@ -1444,7 +1444,7 @@
             <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/penguin/galapagospenguin.nif</NIF>
             <KFM/>
-            <Button>Art/Interface/Buttons/penguin.dds</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_HEMP</Type>
@@ -1516,7 +1516,7 @@
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Grape/wine.nif</NIF>
             <KFM/>
-            <Button>,Art/colonization_atlas_resources.dds,3,3</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_SALT</Type>
@@ -1543,6 +1543,30 @@
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_BONUS_VULTURE</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/vulture/vulture.nif</NIF>
+            <KFM/>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
+        </BuildingArtInfo>
+        <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_BONUS_IGUANA</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/iguana/iguana.nif</NIF>
+            <KFM/>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
+        </BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_APPLES</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
@@ -1552,7 +1576,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/apple/banana.nif</NIF>
             <KFM/>
-            <Button>,Art/atlasmapbonus.dds,3,4</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_LEMONS</Type>
@@ -1564,7 +1588,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/lemon/lemqes.nif</NIF>
             <KFM/>
-            <Button>,Art/atlasmapbonus.dds,1,8</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_TOMATO</Type>
@@ -1576,7 +1600,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Tomato/lemqes.nif</NIF>
             <KFM/>
-            <Button>,Art/atlasmapbonus.dds,2,8</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_BEE_HIVE</Type>
@@ -1588,7 +1612,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/BeeHive/Banana.nif</NIF>
             <KFM/>
-            <Button>,Art/atlasmapbonus.dds,6,8</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_PEANUT</Type>
@@ -1600,7 +1624,7 @@
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Peanut/arachide.nif</NIF>
             <KFM>Art/Terrain/Resources/Peanut/arachide.kfm</KFM>
-            <Button>,Art/atlasmapbonus.dds,5,8</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_BERRIES</Type>
@@ -1612,7 +1636,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Berries/lemqes.nif</NIF>
             <KFM/>
-            <Button>,Art/atlasmapbonus.dds,3,8</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_RICE</Type>
@@ -1624,7 +1648,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/rice/rice.nif</NIF>
             <KFM/>
-            <Button>,Art/atlasmapbonus.dds,1,3</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_MUSHROOMS</Type>
@@ -1636,7 +1660,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Mushrooms/mushrooms.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/Mushrooms.dds</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_RED_PEPPER</Type>

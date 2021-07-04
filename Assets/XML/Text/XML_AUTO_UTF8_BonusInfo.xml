@@ -1217,6 +1217,34 @@
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kakteen[COLOR_REVERT] können überall in der [LINK=TERRAIN_DESERT]Wüste[\LINK] vorkommen.[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1]Der Kaktus ist ein ausdauernder, stacheliger Strauch. Das natürliche Vorkommen ist auf den amerikanischen Kontinent beschränkt. Dort erstreckt sich ihr Verbreitungsgebiet vom südlichen Kanada bis nach Patagonien in Argentinien und Chile. Die größte Dichte an Kakteenvorkommen findet man in den Gebieten um den nördlichen (Mexiko) und südlichen Wendekreis (Argentinien/Bolivien).</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_VULTURE</Tag>
+        <English>Vultures</English>
+        <German>
+            <Text>Geier</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_VULTURE_PEDIA</Tag>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vultures[COLOR_REVERT]</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Geier[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_IGUANA</Tag>
+        <English>Iguana</English>
+        <German>
+            <Text>Iguana</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_IGUANA_PEDIA</Tag>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Iguana[COLOR_REVERT]</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Iguana[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_SEALS</Tag>
         <English>Seals</English>
         <French>

@@ -700,13 +700,35 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
-            <Type>ART_DEF_BONUS_KAKTEEN_MIT_GRASS</Type>
+            <Type>ART_DEF_BONUS_CACTUS</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Cactus/cactus.nif</NIF>
             <KFM/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,5,14</Button>
             <FontButtonIndex>49</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_VULTURE</Type>
+            <fScale>20.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/vulture/vulture.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/vulture.dds</Button>
+            <FontButtonIndex>16</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_IGUANA</Type>
+            <fScale>20.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/iguana/iguana.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/iguana.dds</Button>
+            <FontButtonIndex>16</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
