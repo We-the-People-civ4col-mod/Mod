@@ -671,27 +671,7 @@ class CvMainInterface:
 		SpaceAvailable = (xResolution / 2)
 		self.ADVISOR_BUTTON_SPACING = SpaceAvailable / 15
 		self.ADVISOR_BUTTON_SIZE = SMALL_BUTTON_SIZE * 2
-		iBtnX = xResolution / 4 - self.ADVISOR_BUTTON_SPACING
-		
-		# Achievements START
-		screen.setImageButton("AchieveAdvisorButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_ACHIEVE_BUTTON").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, ACHIEVE_ADVISOR_SCREEN_MI, -1 )
-		screen.setImageShape("AchieveAdvisorButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
-		screen.setHitMargins("AchieveAdvisorButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
-		self.appendtoHideState(screen, "AchieveAdvisorButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
-		iBtnX += self.ADVISOR_BUTTON_SPACING
-		# Achievements END
-		
-		screen.setImageButton("DiplomacyButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_GENERAL_DIPLOMACY").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_DIPLOMACY).getActionInfoIndex(), -1 )
-		screen.setImageShape("DiplomacyButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
-		screen.setHitMargins("DiplomacyButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
-		self.appendtoHideState(screen, "DiplomacyButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
-		iBtnX += self.ADVISOR_BUTTON_SPACING
-		
-		screen.setImageButton("TurnLogButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_GENERAL_TURNLOG_ICON").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_TURN_LOG).getActionInfoIndex(), -1 )
-		screen.setImageShape("TurnLogButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
-		screen.setHitMargins("TurnLogButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
-		self.appendtoHideState(screen, "TurnLogButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
-		iBtnX += self.ADVISOR_BUTTON_SPACING
+		iBtnX = xResolution / 6 - self.ADVISOR_BUTTON_SPACING
 		
 		screen.setImageButton("MainMenuButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_GENERAL_MENU_ICON").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_MENU_ICON, -1, -1 )
 		screen.setImageShape("MainMenuButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
@@ -704,12 +684,38 @@ class CvMainInterface:
 		screen.setHitMargins("InterfaceHelpButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
 		self.appendtoHideState(screen, "InterfaceHelpButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
 		iBtnX += self.ADVISOR_BUTTON_SPACING * 2
-
-		screen.setImageButton("DomesticAdvisorButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_DOMESTIC_ADVISOR").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_DOMESTIC_SCREEN).getActionInfoIndex(), -1 )
-		screen.setImageShape("DomesticAdvisorButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
-		screen.setHitMargins("DomesticAdvisorButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
-		self.appendtoHideState(screen, "DomesticAdvisorButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
+		
+		# Achievements START
+		screen.setImageButton("AchieveAdvisorButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_ACHIEVE_BUTTON").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, ACHIEVE_ADVISOR_SCREEN_MI, -1 )
+		screen.setImageShape("AchieveAdvisorButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
+		screen.setHitMargins("AchieveAdvisorButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
+		self.appendtoHideState(screen, "AchieveAdvisorButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
 		iBtnX += self.ADVISOR_BUTTON_SPACING
+		# Achievements END
+		
+		screen.setImageButton("TurnLogButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_GENERAL_TURNLOG_ICON").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_TURN_LOG).getActionInfoIndex(), -1 )
+		screen.setImageShape("TurnLogButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
+		screen.setHitMargins("TurnLogButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
+		self.appendtoHideState(screen, "TurnLogButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
+		iBtnX += self.ADVISOR_BUTTON_SPACING
+		
+		screen.setImageButton("CongressAdvisorButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_CONTINENTAL_CONGRESS").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_CONGRESS_SCREEN).getActionInfoIndex(), -1 )
+		screen.setImageShape("CongressAdvisorButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
+		screen.setHitMargins("CongressAdvisorButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
+		self.appendtoHideState(screen, "CongressAdvisorButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
+		iBtnX += self.ADVISOR_BUTTON_SPACING
+		
+		screen.setImageButton("InfoAdvisorButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_INFO").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_INFO).getActionInfoIndex(), -1 )
+		screen.setImageShape("InfoAdvisorButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
+		screen.setHitMargins("InfoAdvisorButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
+		self.appendtoHideState(screen, "InfoAdvisorButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
+		iBtnX += self.ADVISOR_BUTTON_SPACING
+		
+		screen.setImageButton( "SettingsAdvisorButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_VICTORY_ADVISOR").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_VICTORY_SCREEN).getActionInfoIndex(), -1 )
+		screen.setImageShape("SettingsAdvisorButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
+		screen.setHitMargins("SettingsAdvisorButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
+		self.appendtoHideState(screen, "SettingsAdvisorButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
+		iBtnX += self.ADVISOR_BUTTON_SPACING * 2
 
 		screen.setImageButton("EuropeScreenButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_EUROPE_SCREEN).getActionInfoIndex(), -1 )
 		screen.setImageShape("EuropeScreenButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
@@ -733,6 +739,18 @@ class CvMainInterface:
 		iBtnX += self.ADVISOR_BUTTON_SPACING
 		#RaR, ray, Port Royal END
 		
+		screen.setImageButton("DiplomacyButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_GENERAL_DIPLOMACY").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_DIPLOMACY).getActionInfoIndex(), -1 )
+		screen.setImageShape("DiplomacyButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
+		screen.setHitMargins("DiplomacyButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
+		self.appendtoHideState(screen, "DiplomacyButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
+		iBtnX += self.ADVISOR_BUTTON_SPACING * 2
+
+		screen.setImageButton("DomesticAdvisorButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_DOMESTIC_ADVISOR").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_DOMESTIC_SCREEN).getActionInfoIndex(), -1 )
+		screen.setImageShape("DomesticAdvisorButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
+		screen.setHitMargins("DomesticAdvisorButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
+		self.appendtoHideState(screen, "DomesticAdvisorButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
+		iBtnX += self.ADVISOR_BUTTON_SPACING
+		
 		screen.setImageButton("RevolutionAdvisorButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_REVOLUTION_ADVISOR").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_REVOLUTION_SCREEN).getActionInfoIndex(), -1 )
 		screen.setImageShape("RevolutionAdvisorButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 		screen.setHitMargins("RevolutionAdvisorButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
@@ -749,30 +767,12 @@ class CvMainInterface:
 		screen.setImageShape("MilitaryAdvisorButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 		screen.setHitMargins("MilitaryAdvisorButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
 		self.appendtoHideState(screen, "MilitaryAdvisorButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
-		iBtnX += self.ADVISOR_BUTTON_SPACING
+		iBtnX += self.ADVISOR_BUTTON_SPACING * 2
 
 		screen.setImageButton( "FatherAdvisorButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_FOUNDING_FATHER").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_FATHER_SCREEN).getActionInfoIndex(), -1 )
 		screen.setImageShape("FatherAdvisorButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 		screen.setHitMargins("FatherAdvisorButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
 		self.appendtoHideState(screen, "FatherAdvisorButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
-		iBtnX += self.ADVISOR_BUTTON_SPACING
-
-		screen.setImageButton("CongressAdvisorButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_CONTINENTAL_CONGRESS").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_CONGRESS_SCREEN).getActionInfoIndex(), -1 )
-		screen.setImageShape("CongressAdvisorButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
-		screen.setHitMargins("CongressAdvisorButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
-		self.appendtoHideState(screen, "CongressAdvisorButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
-		iBtnX += self.ADVISOR_BUTTON_SPACING
-
-		screen.setImageButton( "SettingsAdvisorButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_VICTORY_ADVISOR").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_VICTORY_SCREEN).getActionInfoIndex(), -1 )
-		screen.setImageShape("SettingsAdvisorButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
-		screen.setHitMargins("SettingsAdvisorButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
-		self.appendtoHideState(screen, "SettingsAdvisorButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
-		iBtnX += self.ADVISOR_BUTTON_SPACING
-
-		screen.setImageButton("InfoAdvisorButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_INFO").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_INFO).getActionInfoIndex(), -1 )
-		screen.setImageShape("InfoAdvisorButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
-		screen.setHitMargins("InfoAdvisorButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
-		self.appendtoHideState(screen, "InfoAdvisorButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
 		iBtnX += self.ADVISOR_BUTTON_SPACING
 
 	# MINIMAP RING
