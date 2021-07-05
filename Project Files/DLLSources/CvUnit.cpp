@@ -1328,8 +1328,9 @@ void CvUnit::updateCombat(bool bQuick)
 			bool displayCapturedShipMessage = false;
 			int capturingShipChance = GC.getBASE_CHANCE_CAPTURING_SHIPS();
 			int randomShipCaptureValue = GC.getGameINLINE().getSorenRandNum(1000, "Capture Ships");
-					
-			if (m_pUnitInfo->isCapturesShips() && !(pDefender->getUnitInfo()).isAnimal())
+			
+			// ray, fix for bNoCapture being ingored 
+			if (m_pUnitInfo->isCapturesShips() && !pDefender->getUnitInfo().isAnimal() && !pDefender->getUnitInfo().isNoCapture())
 			{
 				if (capturingShipChance > randomShipCaptureValue)
 				{
@@ -1444,11 +1445,16 @@ void CvUnit::updateCombat(bool bQuick)
 			//WTP, ray, Large Rivers - START
 			// allowing Cargo Ships on Large Rivers to be caugth as well
 			// if (((pDefender->cargoSpace() > 0 && (pDefender->getDomainType() == DOMAIN_LAND)) || pDefender->getUnitInfo().isTreasure() || (pDefender->isUnarmed() && pDefender->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pDefender->getProfession()).getCombatChange() > 0)) && !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE())) 
-			if ((pDefender->cargoSpace() > 0 && (pDefender->getDomainType() == DOMAIN_LAND || (pDefender->getDomainType() == DOMAIN_SEA && pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)) || pDefender->getUnitInfo().isTreasure() || (pDefender->isUnarmed() && pDefender->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pDefender->getProfession()).getCombatChange() > 0)) && !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE())) 
+			// ray, fix for bNoCapture being ingored 
+			// we do not capture Units anymore that are flagged as bNoCapture
+			if (!pDefender->getUnitInfo().isNoCapture())
 			{
-				CvUnit* pkCapturedUnitAfterFight = GET_PLAYER(getOwnerINLINE()).initUnit(pDefender->getUnitType(), pDefender->getProfession(), pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, pDefender->getYieldStored());
-				pkCapturedUnitAfterFight->setDamage(GC.getMAX_HIT_POINTS() / 2);	
-				szBuffer = gDLL->getText("TXT_KEY_UNIT_CAPTURED_AFTER_FIGHT", pDefender->getUnitInfo().getDescription());				
+				if ((pDefender->cargoSpace() > 0 && (pDefender->getDomainType() == DOMAIN_LAND || (pDefender->getDomainType() == DOMAIN_SEA && pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)) || pDefender->getUnitInfo().isTreasure() || (pDefender->isUnarmed() && pDefender->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pDefender->getProfession()).getCombatChange() > 0)) && !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE())) 
+				{
+					CvUnit* pkCapturedUnitAfterFight = GET_PLAYER(getOwnerINLINE()).initUnit(pDefender->getUnitType(), pDefender->getProfession(), pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, pDefender->getYieldStored());
+					pkCapturedUnitAfterFight->setDamage(GC.getMAX_HIT_POINTS() / 2);	
+					szBuffer = gDLL->getText("TXT_KEY_UNIT_CAPTURED_AFTER_FIGHT", pDefender->getUnitInfo().getDescription());				
+				}
 			}
 			//Ende ray14
 
