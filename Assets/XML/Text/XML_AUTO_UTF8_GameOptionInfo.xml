@@ -297,6 +297,16 @@
         <English>Removes the ability to enter world builder.[NEWLINE]World builder is a known way to cheat and people might not want this option, be it for some sort of competitive gaming or just removal of the temptation.</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GAMEOPTION_DEACTIVATE_HEMISPHERE_RESTRICTIONS</Tag>
+        <English>No Hemisphere Restrictions for Ressources</English>
+        <German>Keine Einschränkung der Hemispheren für Ressourcen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMEOPTION_DEACTIVATE_HEMISPHERE_RESTRICTIONS_HELP</Tag>
+        <English>Normally some Bonus Ressources (like e.g. Walruss, Penguin, Capybara, ...) are restricted to either northern or southern hemisphere for immsersion. If you activate this setting that restriction is removed.</English>
+        <German>Standardmäßig sind viele Bonus-Ressourcen (wie z.B. Walross, Pinguin, Cabyara, ...) aus Gründen der Realitätstreue entweder auf die nördliche oder südliche Hemisphere beschränkt. Mit Aktivierung dieser Option wird diese Einschränkung aufgehoben.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE</Tag>
         <English>Only 1 Colonist learning per Native Village</English>
         <German>Nur 1 Schüler gleichzeitig pro Ureinwohnerdorf</German>

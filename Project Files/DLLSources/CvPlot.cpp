@@ -1823,24 +1823,28 @@ bool CvPlot::canHaveBonus(BonusTypes eBonus, bool bIgnoreLatitude) const
 	}
 	// Ray, adding 2 more XML tags to control bonus placement - END
 
-
-	//ray, Norther and Southern Hemisphere, using hint of f1rpo - START
-	if (GC.getBonusInfo(eBonus).isOnlySouthernHemisphere())
+	// ray, deactivate Hemisphere Restrictions
+	// if this Game Option is activated the checks inside are not executed - thus Hemisphere Restrictions for Ressources is lifted
+	if(!GC.getGameINLINE().isOption(GAMEOPTION_DEACTIVATE_HEMISPHERE_RESTRICTIONS))
 	{
-		if (!isSouthernHemisphere())
+		//ray, Norther and Southern Hemisphere, using hint of f1rpo - START
+		if (GC.getBonusInfo(eBonus).isOnlySouthernHemisphere())
 		{
-			return false;
+			if (!isSouthernHemisphere())
+			{
+				return false;
+			}
 		}
-	}
 
-	if (GC.getBonusInfo(eBonus).isOnlyNorthernHemisphere())
-	{
-		if (!isNorthernHemisphere())
+		if (GC.getBonusInfo(eBonus).isOnlyNorthernHemisphere())
 		{
-			return false;
+			if (!isNorthernHemisphere())
+			{
+				return false;
+			}
 		}
+		//ray, Norther and Southern Hemisphere, using hint of f1rpo - END
 	}
-	//ray, Norther and Southern Hemisphere, using hint of f1rpo - END 
 
 	if (GC.getBonusInfo(eBonus).getMinAreaSize() != -1)
 	{
