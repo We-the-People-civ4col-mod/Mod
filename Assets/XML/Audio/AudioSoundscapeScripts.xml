@@ -71,6 +71,30 @@
 			<ScriptType>3D</ScriptType>
 			<ScriptID>AS3D_SS_BIRD</ScriptID>
 		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_BIRD</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_BIRD</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_BIRD</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_BIRD</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_FUCHS</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_WOLF</ScriptID>
+		</SoundscapeElement>
 	</ScriptSoundscape>
 	<ScriptSoundscape>
 		<ScriptID>ASSS_TUNDRA_SELECT_AMB</ScriptID>
@@ -83,6 +107,22 @@
 		<SoundscapeElement>
 			<ScriptType>3D</ScriptType>
 			<ScriptID>AS3D_SS_WIND_GUST</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_KUCKUCK</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_TAUBE</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_EULE-RAUHFUSSEULE</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_EULE-GRAUEULE</ScriptID>
 		</SoundscapeElement>
 	</ScriptSoundscape>
 	<ScriptSoundscape>
@@ -140,6 +180,30 @@
 			<ScriptType>3D</ScriptType>
 			<ScriptID>AS3D_SS_JUNGLE_BIRD</ScriptID>
 		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_JUNGLE_BIRD</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_JUNGLE_BIRD</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_JUNGLE_BIRD</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_JUNGLE_BIRD</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_AFFEA</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_AFFEB</ScriptID>
+		</SoundscapeElement>
 	</ScriptSoundscape>
 	<ScriptSoundscape>
 		<ScriptID>ASSS_OCEAN_SELECT_AMB</ScriptID>
@@ -152,6 +216,34 @@
 		<SoundscapeElement>
 			<ScriptType>3D</ScriptType>
 			<ScriptID>AS3D_SS_OCEAN-WAVES</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_OCEAN-WAVES</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_MOEWE-MEER1</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_OCEAN-WAVES</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_MOEWE-MEER1</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_KORMORANMEER</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_OCEAN-WAVES</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_MOEWE-MEER2</ScriptID>
 		</SoundscapeElement>
 	</ScriptSoundscape>
 	<ScriptSoundscape>
@@ -175,6 +267,18 @@
 			<ScriptType>2D</ScriptType>
 			<ScriptID>AS2D_SS_COASTLOOP</ScriptID>
 		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_MOEWE-KUESTE</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_MOEWE-KUESTE</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_KORMORANKUESTE</ScriptID>
+		</SoundscapeElement>
 	</ScriptSoundscape>
 	<ScriptSoundscape>
 		<ScriptID>ASSS_DESERT_SELECT_AMB</ScriptID>
@@ -192,6 +296,18 @@
 			<ScriptType>3D</ScriptType>
 			<ScriptID>AS3D_SS_DESERT_HAWK</ScriptID>
 		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_EULE-PRAERIEEULE</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_ADLER</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_EULE-GRAUEULE</ScriptID>
+		</SoundscapeElement>
 	</ScriptSoundscape>
 	<ScriptSoundscape>
 		<ScriptID>ASSS_PLAINS_SELECT_AMB</ScriptID>
@@ -201,6 +317,30 @@
 			<ScriptType>2D</ScriptType>
 			<ScriptID>AS2D_SS_PLAINSLOOP</ScriptID>
 		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_DESERT_HAWK</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_EULE-PRAERIEEULE</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_KUCKUCK</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_TAUBE</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_ADLER</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_EULE-RAUHFUSSEULE</ScriptID>
+		</SoundscapeElement>
 	</ScriptSoundscape>
 	<ScriptSoundscape>
 		<ScriptID>ASSS_GRASSLAND_SELECT_AMB</ScriptID>
@@ -209,6 +349,14 @@
 		<SoundscapeElement>
 			<ScriptType>2D</ScriptType>
 			<ScriptID>AS2D_SS_GRASSLANDLOOP</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_FROESCHE</ScriptID>
+		</SoundscapeElement>
+		<SoundscapeElement>
+			<ScriptType>3D</ScriptType>
+			<ScriptID>AS3D_SS_TMMS_FROESCHE</ScriptID>
 		</SoundscapeElement>
 	</ScriptSoundscape>
 </ScriptSoundscapes>

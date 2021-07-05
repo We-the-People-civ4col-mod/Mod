@@ -671,7 +671,7 @@
                     <FootstepAudioScript>AS3D_UN_TREBUCHET_STOP</FootstepAudioScript>
                 </FootstepSound>
             </FootstepSounds>
-            <WorldSoundscapeAudioScript>ASSS_GRASSLAND_SELECT_AMB</WorldSoundscapeAudioScript>
+            <WorldSoundscapeAudioScript>ASSS_PLAINS_SELECT_AMB</WorldSoundscapeAudioScript>
             <bGraphicalOnly>0</bGraphicalOnly>
         </TerrainInfo>
         <TerrainInfo>
@@ -835,7 +835,7 @@
                     <FootstepAudioScript>AS3D_UN_TREBUCHET_STOP</FootstepAudioScript>
                 </FootstepSound>
             </FootstepSounds>
-            <WorldSoundscapeAudioScript>ASSS_GRASSLAND_SELECT_AMB</WorldSoundscapeAudioScript>
+            <WorldSoundscapeAudioScript>ASSS_PLAINS_SELECT_AMB</WorldSoundscapeAudioScript>
             <bGraphicalOnly>0</bGraphicalOnly>
         </TerrainInfo>
         <TerrainInfo>
