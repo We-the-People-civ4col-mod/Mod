@@ -3043,8 +3043,8 @@
             <iMovement>3</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>15</iDefense>
-            <iAppearance>1000</iAppearance>
-            <iDisappearance>10000</iDisappearance>
+            <iAppearance>500</iAppearance>
+            <iDisappearance>2000</iDisappearance>
             <iTurnDamage>0</iTurnDamage>
             <bGeneratedEveryRound>1</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
@@ -3144,8 +3144,8 @@
             <iMovement>1</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>-15</iDefense>
-            <iAppearance>1000</iAppearance>
-            <iDisappearance>10000</iDisappearance>
+            <iAppearance>500</iAppearance>
+            <iDisappearance>2000</iDisappearance>
             <iTurnDamage>0</iTurnDamage>
             <bGeneratedEveryRound>1</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
@@ -3245,8 +3245,8 @@
             <iMovement>4</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>15</iDefense>
-            <iAppearance>500</iAppearance>
-            <iDisappearance>10000</iDisappearance>
+            <iAppearance>250</iAppearance>
+            <iDisappearance>1000</iDisappearance>
             <iTurnDamage>25</iTurnDamage>
             <bGeneratedEveryRound>1</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
@@ -3789,10 +3789,10 @@
             <iMovement>4</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>15</iDefense>
-            <iAppearance>0</iAppearance>
-            <iDisappearance>0</iDisappearance>
+            <iAppearance>250</iAppearance>
+            <iDisappearance>1000</iDisappearance>
             <iTurnDamage>0</iTurnDamage>
-            <bGeneratedEveryRound>0</bGeneratedEveryRound>
+            <bGeneratedEveryRound>1</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>0</bNoCoast>
             <bOnlyCoastalLand>0</bOnlyCoastalLand>
@@ -3890,10 +3890,10 @@
             <iMovement>4</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>15</iDefense>
-            <iAppearance>0</iAppearance>
-            <iDisappearance>0</iDisappearance>
+            <iAppearance>250</iAppearance>
+            <iDisappearance>1000</iDisappearance>
             <iTurnDamage>25</iTurnDamage>
-            <bGeneratedEveryRound>0</bGeneratedEveryRound>
+            <bGeneratedEveryRound>1</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>1</bNoCoast>
             <bOnlyCoastalLand>0</bOnlyCoastalLand>

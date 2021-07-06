@@ -4062,7 +4062,8 @@ bool CvPlot::canHaveFeature(FeatureTypes eFeature) const
 		return true;
 	}
 
-	if (getFeatureType() != NO_FEATURE)
+	//ray, ensure that Storms do not destroy other Features - improvement
+	if (getFeatureType() != NO_FEATURE && !GC.getFeatureInfo(getFeatureType()).isGeneratedEveryRound())
 	{
 		return false;
 	}
@@ -8417,8 +8418,8 @@ void CvPlot::doFeature()
 							iProbability = 0;
 							
 							// R&R, Robert Surcouf, Damage on Storm plots, Start
-							//ray, ensure that Storms do not destroy other Features
-							if (GC.getFeatureInfo((FeatureTypes)iI).isGeneratedEveryRound() && getFeatureType() == NO_FEATURE)
+							//ray, ensure that Storms do not destroy other Features - so either there is no Feature or it is also a Storm or Wind Feature
+							if (GC.getFeatureInfo((FeatureTypes)iI).isGeneratedEveryRound() && (getFeatureType() == NO_FEATURE) || (getFeatureType() != NO_FEATURE &&  GC.getFeatureInfo(getFeatureType()).isGeneratedEveryRound()))
 							{
 								iProbability += GC.getFeatureInfo((FeatureTypes)iI).getAppearanceProbability();
 							
