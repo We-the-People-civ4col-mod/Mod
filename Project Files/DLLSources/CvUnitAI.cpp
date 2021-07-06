@@ -1719,20 +1719,6 @@ void CvUnitAI::AI_missionaryMove()
 		return;
 	}
 
-	// Erik: Disabled for now, missionaries
-	// will not found or join cities at the start
-	// of the game
-	/*
-	// If we have no cities, become a colonist
-	// so that we can found or join one
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	if (kOwner.getNumCities() == 0)
-	{
-		AI_setUnitAIType(UNITAI_COLONIST);
-		AI_colonistMove();
-	}
-	*/
-
 	CvCity* pCity = (plot()->getOwnerINLINE() == getOwnerINLINE()) ? plot()->getPlotCity() : NULL;
 	bool bDanger = GET_PLAYER(getOwnerINLINE()).AI_getUnitDanger(this, 2, false, false);
 	if (bDanger)
@@ -1843,20 +1829,6 @@ void CvUnitAI::AI_nativeTraderMove()
 	{
 		return;
 	}
-
-	// Erik: Disabled for now, missionaries
-	// will not found or join cities at the start
-	// of the game
-	/*
-	// If we have no cities, become a colonist
-	// so that we can found or join one
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	if (kOwner.getNumCities() == 0)
-	{
-		AI_setUnitAIType(UNITAI_COLONIST);
-		AI_colonistMove();
-	}
-	*/
 
 	CvCity* pCity = (plot()->getOwnerINLINE() == getOwnerINLINE()) ? plot()->getPlotCity() : NULL;
 	bool bDanger = GET_PLAYER(getOwnerINLINE()).AI_getUnitDanger(this, 2, false, false);
@@ -2627,6 +2599,14 @@ void CvUnitAI::AI_offensiveMove()
 		}
 	}
 
+	CvCity* pCity = plot()->getPlotCity();
+
+	if (pCity != NULL && AI_allowedToJoin(pCity))
+	{
+		pCity->addPopulationUnit(this, NO_PROFESSION);
+		return;
+	}
+
 	if (bDanger)
 	{
 		if (AI_bombardCity())
@@ -2664,19 +2644,19 @@ void CvUnitAI::AI_attackCityMove()
 {	
 	PROFILE_FUNC();
 
-	// Erik: Disabled for now, combat units
-	// will not found or join cities at the start
-	// of the game
-	/*
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	// If we have no cities, become a colonist
-	// so that we can found or join one
-	if (kOwner.getNumCities() == 0)
+	if (GC.getGame().getRemainingForcedPeaceTurns() > 0)
 	{
-		AI_setUnitAIType(UNITAI_COLONIST);
-		AI_colonistMove();
+		CvCity* const pCity = plot()->getPlotCity();
+
+		if (pCity != NULL)
+		{ 
+			if (AI_allowedToJoin(pCity))
+	{
+				pCity->addPopulationUnit(this, NO_PROFESSION);
+				return;
+			}
+		}
 	}
-	*/
 
 	if (isCargo())
 	{
@@ -3313,6 +3293,13 @@ void CvUnitAI::AI_counterMove()
 		}
 	}
 
+	CvCity* pCity = plot()->getPlotCity();
+
+	if (pCity != NULL && AI_allowedToJoin(pCity))
+	{
+		pCity->addPopulationUnit(this, NO_PROFESSION);
+		return;
+	}
 
 	if (AI_retreatToCity())
 	{
@@ -19060,7 +19047,7 @@ bool CvUnitAI::AI_allowedToJoin(const CvCity* pCity) const
 		return false;
 	}
 
-	if (canAttack() && pCity->AI_neededDefenders() <= pCity->AI_numDefenders(false, true))
+	if (GC.getGame().getRemainingForcedPeaceTurns() == 0 && canAttack() && pCity->AI_neededDefenders() <= pCity->AI_numDefenders(false, true))
 	{
 		return false;
 	}
@@ -19071,6 +19058,21 @@ bool CvUnitAI::AI_allowedToJoin(const CvCity* pCity) const
 	{
 		return false;
 	}
+
+	if (GC.getGame().getRemainingForcedPeaceTurns() == 0)
+	// TAC - AI Attack City - koma13 - START
+	{
+		if (AI_getUnitAIType() == UNITAI_OFFENSIVE)
+		{
+			return false;
+		}
+		//if (getExperiencePercent() > 0)
+		//{
+		//	return false;
+		//}
+	}
+	// TAC - AI Attack City - koma13 - END
+
 
 	return true;
 }

@@ -7224,6 +7224,7 @@ bool CvUnit::canJoinCity(const CvPlot* pPlot, bool bTestVisible, bool bIgnoreFoo
 			}
 		}
 	}
+#if 0
 	// TAC - AI Attack City - koma13 - START
 	if (!isHuman())
 	{
@@ -7237,7 +7238,7 @@ bool CvUnit::canJoinCity(const CvPlot* pPlot, bool bTestVisible, bool bIgnoreFoo
 		//}
 	}
 	// TAC - AI Attack City - koma13 - END
-
+#endif
 	return true;
 }
 
