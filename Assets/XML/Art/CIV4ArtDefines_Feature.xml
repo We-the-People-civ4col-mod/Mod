@@ -405,13 +405,13 @@
             <Type>ART_DEF_FEATURE_STORM</Type>
             <bAnimated>1</bAnimated>
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
-            <fScale>0.8</fScale>
-            <fInterfaceScale>1.0</fInterfaceScale>
+            <fScale>0.2</fScale>
+            <fInterfaceScale>0.2</fInterfaceScale>
             <Button>,Art/Interface/Buttons/baseterrain_terrainfeatures_atlas_custom.dds,6,4</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
-                        <ModelFile>Art/terrain/features/storm/storm.nif</ModelFile>
+                        <ModelFile>Art/terrain/features/Storm_New/storm.nif</ModelFile>
                         <Connections/>
                     </FeatureArtPiece>
                 </FeatureArtPieces>
