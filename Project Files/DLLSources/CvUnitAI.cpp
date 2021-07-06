@@ -1782,6 +1782,19 @@ void CvUnitAI::AI_missionaryMove()
 		}
 	}
 	
+	pCity = plot()->getPlotCity();
+	if (pCity != NULL)
+	{
+		if (!pCity->isScoutVisited(getTeam()))
+		{
+			if (canSpeakWithChief(plot()))
+			{
+				speakWithChief();
+				FAssert(pCity->isScoutVisited(getTeam()));
+			}
+		}
+	}
+
 	if (AI_spreadReligion())
 	{
 		return;
@@ -1883,6 +1896,19 @@ void CvUnitAI::AI_nativeTraderMove()
 		}
 	}
 	
+	pCity = plot()->getPlotCity();
+	if (pCity != NULL)
+	{
+		if (!pCity->isScoutVisited(getTeam()))
+		{
+			if (canSpeakWithChief(plot()))
+			{
+				speakWithChief();
+				FAssert(pCity->isScoutVisited(getTeam()));
+			}
+		}
+	}
+
 	if (AI_spreadTradePosts())
 	{
 		return;
@@ -3286,6 +3312,7 @@ void CvUnitAI::AI_counterMove()
 			return;
 		}
 	}
+
 
 	if (AI_retreatToCity())
 	{
@@ -9120,6 +9147,15 @@ bool CvUnitAI::AI_learn(int iRange)
 	CvCity* pCity = plot()->getPlotCity();
 	if (pCity != NULL)
 	{
+		if (!pCity->isScoutVisited(getTeam()))
+		{
+			if (canSpeakWithChief(plot()))
+			{
+				speakWithChief();
+				FAssert(pCity->isScoutVisited(getTeam()));
+			}
+		}
+
 		if (canLearn())
 		{
 			learn();

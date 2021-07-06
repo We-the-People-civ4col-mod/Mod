@@ -336,9 +336,9 @@ public:
 
 	int AI_desiredCityCount();
 	
-	int AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUnitAI);
+	int AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUnitAI) const;
 	int AI_professionGoldValue(ProfessionTypes eProfession);
-	ProfessionTypes AI_idealProfessionForUnit(UnitTypes eUnitType);
+	ProfessionTypes AI_idealProfessionForUnit(UnitTypes eUnitType) const;
 	ProfessionTypes AI_idealProfessionForUnitAIType(UnitAITypes eUnitAI, CvCity* pCity = NULL);
 	
 	int AI_professionBasicValue(ProfessionTypes eProfession, UnitTypes eUnit, CvCity* pCity);

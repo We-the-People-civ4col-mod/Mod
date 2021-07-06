@@ -2530,6 +2530,10 @@ int CvPlayerAI::AI_getPlotDanger(CvPlot* pPlot, int iRange, bool bTestMoves, boo
 						pLoopUnit = ::getUnit(pUnitNode->m_data);
 						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 
+						// Ignore animals
+						if (pLoopUnit->getUnitInfo().isAnimal())
+							continue;
+
 						if (pLoopUnit->isEnemy(getTeam()))
 						{
 							if (bOffensive || pLoopUnit->canAttack())
@@ -2634,6 +2638,10 @@ int CvPlayerAI::AI_getUnitDanger(CvUnit* pUnit, int iRange, bool bTestMoves, boo
 						{
 							if (pLoopUnit->canAttack())
 							{
+								// Ignore animals
+								if (pLoopUnit->getUnitInfo().isAnimal())
+									continue;
+
 								if (!(pLoopUnit->isInvisible(getTeam(), false)))
 								{
 									if (pLoopUnit->canMoveOrAttackInto(pPlot))
@@ -8034,8 +8042,13 @@ void CvPlayerAI::AI_doProfessions()
 												iValue /= 100;
 											}
 										}
+										else if (eUnitAI == UNITAI_SCOUT && pLoopCity->plot()->area()->getNumAIUnits(pLoopCity->getOwner(), UNITAI_SCOUT) == 0)
+										{
+											iValue *= 250;
+											iValue /= 100;
+										}
 
-										iValue *= 100;
+										iValue *= 50;
 										iValue += GC.getGameINLINE().getSorenRandNum(100, "AI pick unit");
 
 										if (iValue > iBestValue)
@@ -8136,6 +8149,9 @@ void CvPlayerAI::AI_doProfessions()
 			}
 		}
 	}
+
+
+
 }
 
 void CvPlayerAI::AI_doEurope()
@@ -10490,7 +10506,7 @@ int CvPlayerAI::AI_professionUpgradeValue(ProfessionTypes eProfession, UnitTypes
 	return iBestValue;
 }
 
-int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUnitAI)
+int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUnitAI) const
 {
 	CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
 	if (kProfession.isCitizen())
@@ -10647,7 +10663,7 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 // R&R, ray, code changes for Ideal Profession - START
 // Heavily modified
 // simply returns the first Expert to Profession that matches UnitType
-ProfessionTypes CvPlayerAI::AI_idealProfessionForUnit(UnitTypes eUnitType)
+ProfessionTypes CvPlayerAI::AI_idealProfessionForUnit(UnitTypes eUnitType) const
 {
 	int eUnitClassType = GC.getUnitInfo(eUnitType).getUnitClassType();
 	ProfessionTypes eIdealProfession = NO_PROFESSION;
@@ -11221,6 +11237,8 @@ int CvPlayerAI::AI_professionSuitability(UnitTypes eUnit, ProfessionTypes eProfe
 	int iProModifiers = 0;
 	int iConModifiers = 0;
 
+	const ProfessionTypes eIdealProfession = AI_idealProfessionForUnit(eUnit);
+
 	if (kProfession.isWater() && kUnit.isWaterYieldChanges() || !kProfession.isWater() && kUnit.isLandYieldChanges())
 	{
 
@@ -11324,7 +11342,15 @@ int CvPlayerAI::AI_professionSuitability(UnitTypes eUnit, ProfessionTypes eProfe
 		}
 		else
 		{
-			iConModifiers += 5;
+			// If this is an expert unit, discourage it slightly
+			if (eIdealProfession != NO_PROFESSION)
+			{
+				iConModifiers += 20;
+			}
+			else
+			{
+				iConModifiers += 10;
+			}
 		}
 	}
 
