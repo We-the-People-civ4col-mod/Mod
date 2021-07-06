@@ -611,7 +611,8 @@ void CvMapGenerator::addFeatures()
 		{
 			pPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 			FAssert(pPlot != NULL);
-			if (pPlot->isWater())
+			//ray, ensure that Storms do not destroy other Features
+			if (pPlot->isWater() && pPlot->getFeatureType() != NO_FEATURE)
 			{
 				for (iJ = 0; iJ < GC.getNumFeatureInfos(); iJ++)
 				{

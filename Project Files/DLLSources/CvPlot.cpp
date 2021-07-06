@@ -8417,7 +8417,8 @@ void CvPlot::doFeature()
 							iProbability = 0;
 							
 							// R&R, Robert Surcouf, Damage on Storm plots, Start
-							if (GC.getFeatureInfo((FeatureTypes)iI).isGeneratedEveryRound())
+							//ray, ensure that Storms do not destroy other Features
+							if (GC.getFeatureInfo((FeatureTypes)iI).isGeneratedEveryRound() && getFeatureType() == NO_FEATURE)
 							{
 								iProbability += GC.getFeatureInfo((FeatureTypes)iI).getAppearanceProbability();
 							
