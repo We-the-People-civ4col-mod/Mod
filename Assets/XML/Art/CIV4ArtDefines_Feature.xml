@@ -369,13 +369,13 @@
             <Type>ART_DEF_FEATURE_VD</Type>
             <bAnimated>1</bAnimated>
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
-            <fScale>0.8</fScale>
-            <fInterfaceScale>1.0</fInterfaceScale>
+            <fScale>0.2</fScale>
+            <fInterfaceScale>0.2</fInterfaceScale>
             <Button>,Art/Interface/Buttons/Unfavourable_Wind.dds</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
-                        <ModelFile>Art/terrain/features/headwind/Headwind.nif</ModelFile>
+                        <ModelFile>Art/terrain/features/Unfavourable_Wind/storm.nif</ModelFile>
                         <Connections/>
                     </FeatureArtPiece>
                 </FeatureArtPieces>
@@ -387,13 +387,13 @@
             <Type>ART_DEF_FEATURE_VF</Type>
             <bAnimated>1</bAnimated>
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
-            <fScale>0.8</fScale>
-            <fInterfaceScale>1.0</fInterfaceScale>
+            <fScale>0.2</fScale>
+            <fInterfaceScale>0.2</fInterfaceScale>
             <Button>,Art/Interface/Buttons/baseterrain_terrainfeatures_atlas_custom.dds,5,4</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
-                        <ModelFile>Art/terrain/features/tailwind/tailwind.nif</ModelFile>
+                        <ModelFile>Art/terrain/features/Favourable_Wind/storm.nif</ModelFile>
                         <Connections/>
                     </FeatureArtPiece>
                 </FeatureArtPieces>
