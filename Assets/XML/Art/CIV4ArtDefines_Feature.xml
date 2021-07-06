@@ -371,7 +371,7 @@
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
             <fScale>0.8</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <Button>,Art/Interface/Buttons/baseterrain_terrainfeatures_atlas_custom.dds,2,4</Button>
+            <Button>,Art/Interface/Buttons/Unfavourable_Wind.dds</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
@@ -380,7 +380,7 @@
                     </FeatureArtPiece>
                 </FeatureArtPieces>
                 <iModelCopies>32</iModelCopies>
-                <VarietyButton>,Art/Interface/Buttons/baseterrain_terrainfeatures_atlas_custom.dds,2,4</VarietyButton>
+                <VarietyButton>,Art/Interface/Buttons/Unfavourable_Wind.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
