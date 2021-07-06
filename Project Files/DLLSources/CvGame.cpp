@@ -7373,3 +7373,11 @@ void CvGame::writeDesyncLog()
 	CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_DESYNC_LOG_COMPLETE);
 	gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
 }
+
+int CvGame::getRemainingForcedPeaceTurns() const
+{
+	const int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+	const int forcedPeaceTurns = GC.getDefineINT("COLONIAL_FORCED_PEACE_TURNS") * gamespeedMod / 100;
+	const int diff = forcedPeaceTurns - GC.getGameINLINE().getElapsedGameTurns();
+	return std::max(0, diff);
+}

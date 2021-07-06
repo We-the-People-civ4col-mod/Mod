@@ -1761,10 +1761,9 @@ int CvCityAI::AI_neededDefenders() const
 
 	// R&R, ray, AI improvements
 	// Colonial AI should use its colonist for enconomy during first period
-	int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
-	int forcedPeaceTurns= GC.getDefineINT("COLONIAL_FORCED_PEACE_TURNS");
-	forcedPeaceTurns = forcedPeaceTurns * gamespeedMod /100;
-	if (GC.getGameINLINE().getElapsedGameTurns() < forcedPeaceTurns )	{
+	
+	if (GC.getGame().getRemainingForcedPeaceTurns() > 0)
+	{
 		return 0;
 	}
 
