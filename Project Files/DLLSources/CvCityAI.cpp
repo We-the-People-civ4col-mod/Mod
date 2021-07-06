@@ -4900,7 +4900,10 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 			iValue = static_cast<int>(iAmount * YIELD_TOOLS_BASE_VALUE + populationMultiplier);
 
 			if (AI_isPort() || AI_isMajorCity())
-				iValue *= 1.5;
+			{ 
+				iValue *= 150;
+				iValue /= 100;
+			}
 		}
 		break;
 		case YIELD_BLADES:
@@ -4917,7 +4920,10 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 			iValue = static_cast<int>(iAmount * YIELD_HAMMERS_BASE_VALUE + populationMultiplier);
 
 			if (AI_isPort() || AI_isMajorCity())
-				iValue *= 1.5;
+			{
+				iValue *= 150;
+				iValue /= 100;
+			}
 		}
 		break;
 		case YIELD_BELLS:
