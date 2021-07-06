@@ -557,10 +557,7 @@ bool CvTeam::canDeclareWar(TeamTypes eTeam) const
 
 	if (hasColonialPlayer() && GET_TEAM(eTeam).hasColonialPlayer())
 	{
-		int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
-		int forcedPeaceTurns= GC.getDefineINT("COLONIAL_FORCED_PEACE_TURNS");
-		forcedPeaceTurns = forcedPeaceTurns * gamespeedMod /100;
-		if (GC.getGameINLINE().getElapsedGameTurns() < forcedPeaceTurns )
+		if (GC.getGame().getRemainingForcedPeaceTurns() > 0)
 		{
 			return false;
 		}
