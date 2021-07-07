@@ -70,7 +70,7 @@ void TestEnumMap()
 	}
 
 	{
-		EnumMapDefault<RouteTypes, int, 10> test;
+		EnumMap<RouteTypes, int, 10> test;
 		RouteTypes var = static_cast<RouteTypes>(1);
 
 		FAssert(test.getTotal() == NUM_ROUTE_TYPES*10);
@@ -81,7 +81,7 @@ void TestEnumMap()
 	}
 
 	{
-		EnumMapDefault<UnitTypes, int, 10> test;
+		EnumMap<UnitTypes, int, 10> test;
 		UnitTypes var = static_cast<UnitTypes>(1);
 		
 		FAssert(test.getTotal() == NUM_UNIT_TYPES * 10);

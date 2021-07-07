@@ -453,8 +453,8 @@ protected:
 	EnumMap<UnitClassTypes, int> m_em_iUnitClassCreatedCount;
 	EnumMap<BuildingClassTypes, int> m_em_iBuildingClassCreatedCount;
 
-	EnumMapDefault<FatherTypes, TeamTypes, NO_TEAM> m_em_eFatherTeam;
-	EnumMapDefault<FatherTypes, int, -1> m_em_iFatherGameTurn;
+	EnumMap<FatherTypes, TeamTypes> m_em_eFatherTeam;
+	EnumMap<FatherTypes, int, -1> m_em_iFatherGameTurn;
 
 	EnumMap<SpecialUnitTypes, bool> m_em_bSpecialUnitValid;
 	EnumMap<SpecialBuildingTypes, bool> m_em_bSpecialBuildingValid;

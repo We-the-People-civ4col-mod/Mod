@@ -94,6 +94,7 @@ foreach my $name (sort(keys %var))
 	my $type = $var{$name}{type};
 	$var{$name}{get} = "get" . $name unless exists $var{$name}{get};
 	$var{$name}{JIT} = "JIT_ARRAY_" . $NAME unless exists $var{$name}{JIT};
+	$var{$name}{DEFAULT} = "-1" unless exists $var{$name}{DEFAULT};
 	$var{$name}{NUM} = "NUM_" . $NAME . "_TYPES" unless exists $var{$name}{NUM};
 	$var{$name}{COMPILE} = "COMPILE_TIME_NUM_" . $NAME . "_TYPES" unless exists $var{$name}{COMPILE};
 	$var{$name}{START} = "static_cast<$type>(0)" unless exists $var{$name}{START};
@@ -206,7 +207,7 @@ sub handleStruct
 	$output .= "template <> struct VARINFO<$type>\n";
 	$output .= "{\n";
 	$output .= "\tstatic const JITarrayTypes JIT = " . $var{$name}{JIT} . ";\n";
-	$output .= "\tstatic const int TYPE = (int)" . $var{$name}{COMPILE} . " < 128 ? 1 : 2;\n";
+	$output .= "\tstatic const int DEFAULT = " . $var{$name}{DEFAULT} . ";\n";
 	#$output .= "\tstatic const int TYPE = (int)" . $var{$name}{COMPILE} . " < 128 ? VARIABLE_TYPE_CHAR : VARIABLE_TYPE_SHORT;\n";
 	#$output .= "\tstatic const int TYPE = SIZE;\n";
 	#$output .= "\tstatic const int MAX_STATIC = TYPE == VARIABLE_TYPE_CHAR ? 4 : 2;\n";

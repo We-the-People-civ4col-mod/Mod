@@ -1391,26 +1391,12 @@ template <> struct EnumMapGetDefault<VAR> \
 // Adding other classes, which always sets the default makes it easier to add EnumMaps as arguments to functions etc.
 //
 
-// The different classes:
-// EnumMap:
-///  the default, which takes a length (xml file) and type to store. Use this one as much as possible.
-// EnumMapDefault:
-///  same as EnumMap, but you can set what the default value should be (read: the value assigned by constructor/reset)
-///  Note: indexes at default value aren't saved, hence saving an EnumMap with lots of default values will take less file space
-// EnumMapInt:
-///  Allows the index to be set by int instead of the enum type
-///  Do not use if it can be avoided. The tradeoff of easier coding is that the compiler can no longer catch bugs.
-///  The index arguments are consistently set to require the correct enum types specifically to catch bugs where arguments are switched etc.
-///  Using EnumMapInt can easily end up with the compiler accepting swapped arguments etc.
-///  For this reason, only use this if you know you have to typecast anyway for each call, like when using CityPlotTypes for length.
 
-template<class IndexType, class T, int DEFAULT>
-class EnumMapDefault : public EnumMapBase <IndexType, T, DEFAULT> {};
+template<class IndexType, class T, int DEFAULT = VARINFO<T>::DEFAULT>
+class EnumMap : public EnumMapBase <IndexType, T, DEFAULT> {};
 
-template<class IndexType, class T>
-class EnumMap : public EnumMapBase <IndexType, T, EnumMapGetDefault<T>::DEFAULT_VALUE> {};
-
-template<class IndexType, class T, int DEFAULT = 0>
-class EnumMapInt : public EnumMapBase <int, T, DEFAULT, IndexType, IndexType> {};
+// specialized classes where the default setup isn't good enough. This can be using ints as index type, but in theory it could be any of the defaults being altered.
+template<class T, int DEFAULT>
+class EnumMap<CityPlotTypes, T, DEFAULT> : public EnumMapBase <int, T, DEFAULT, CityPlotTypes, CityPlotTypes> {};
 
 #endif

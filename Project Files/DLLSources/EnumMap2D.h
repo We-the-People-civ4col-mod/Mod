@@ -29,7 +29,7 @@ public:
 private:
 	void allocate();
 
-	EnumMapDefault<InnerArrayType, T, DEFAULT> * m_pOuterArray;
+	EnumMap<InnerArrayType, T, DEFAULT> * m_pOuterArray;
 
 	enum
 	{
@@ -144,7 +144,7 @@ template<class OuterArrayType, class InnerArrayType, class T, int DEFAULT>
 inline void EnumMap2DDefault<OuterArrayType, InnerArrayType, T, DEFAULT>::allocate()
 {
 	FAssert(m_pOuterArray == NULL);
-	m_pOuterArray = new EnumMapDefault<InnerArrayType, T, DEFAULT>[Length()];
+	m_pOuterArray = new EnumMap<InnerArrayType, T, DEFAULT>[Length()];
 }
 
 template<class OuterArrayType, class InnerArrayType, class T, int DEFAULT>
@@ -232,7 +232,7 @@ inline void EnumMap2DDefault<OuterArrayType, InnerArrayType, T, DEFAULT>::Read(C
 				else
 				{
 					// entry removed. Read data and discard.
-					EnumMapDefault<InnerArrayType, T, DEFAULT> temp;
+					EnumMap<InnerArrayType, T, DEFAULT> temp;
 					temp.Read(reader);
 				}
 			}
@@ -249,7 +249,7 @@ inline void EnumMap2DDefault<OuterArrayType, InnerArrayType, T, DEFAULT>::Read(C
 			else
 			{
 				// entry removed. Read data and discard.
-				EnumMapDefault<InnerArrayType, T, DEFAULT> temp;
+				EnumMap<InnerArrayType, T, DEFAULT> temp;
 				temp.Read(reader);
 			}
 		}

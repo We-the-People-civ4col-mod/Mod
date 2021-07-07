@@ -187,7 +187,7 @@ protected:
 	EnumMap<TeamTypes, int> m_em_iEnemyPeacetimeGrantValue;
 	EnumMap<TeamTypes, int> m_em_iDamages;
 
-	EnumMapDefault<TeamTypes, WarPlanTypes, NO_WARPLAN> m_em_eWarPlan;
+	EnumMap<TeamTypes, WarPlanTypes> m_em_eWarPlan;
 	int AI_maxWarRand() const;
 	int AI_maxWarNearbyPowerRatio() const;
 	int AI_maxWarDistantPowerRatio() const;

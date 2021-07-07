@@ -787,7 +787,7 @@ protected:
 	CvString m_szScriptData;
 	EnumMap<BuildingTypes,int> m_em_iBuildingProduction;
 	EnumMap<BuildingTypes,int> m_em_iBuildingProductionTime;
-	EnumMapDefault<BuildingTypes,PlayerTypes,NO_PLAYER> m_em_eBuildingOriginalOwner;
+	EnumMap<BuildingTypes,PlayerTypes> m_em_eBuildingOriginalOwner;
 	EnumMap<BuildingTypes,int> m_em_iBuildingOriginalTime;
 	EnumMap<UnitTypes,int> m_em_iUnitProduction;
 	EnumMap<UnitTypes,int> m_em_iUnitProductionTime;
@@ -796,7 +796,7 @@ protected:
 	EnumMap<PromotionTypes,int> m_em_iFreePromotionCount;
 	EnumMap<BuildingTypes,bool> m_em_bHasRealBuilding;
 	EnumMap<BuildingTypes,bool> m_em_bHasFreeBuilding;
-	EnumMapInt<CityPlotTypes, int, -1> m_em_iWorkingPlot;
+	EnumMap<CityPlotTypes, int, -1> m_em_iWorkingPlot;
 	IDInfo* m_paTradeCities;
 	mutable CLinkList<OrderData> m_orderQueue;
 	std::vector< std::pair < float, float> > m_kWallOverridePoints;
@@ -807,9 +807,9 @@ protected:
 	// CACHE: cache frequently used values
 	mutable int	m_iPopulationRank;
 	mutable bool m_bPopulationRankValid;
-	mutable EnumMapDefault<YieldTypes,int,-1> m_em_iBaseYieldRank;
+	mutable EnumMap<YieldTypes,int,-1> m_em_iBaseYieldRank;
 	mutable EnumMap<YieldTypes,bool> m_em_bBaseYieldRankValid;
-	mutable EnumMapDefault<YieldTypes,int,-1> m_em_iYieldRank;
+	mutable EnumMap<YieldTypes,int,-1> m_em_iYieldRank;
 	mutable EnumMap<YieldTypes,bool> m_em_bYieldRankValid;
 
 	void doGrowth();
