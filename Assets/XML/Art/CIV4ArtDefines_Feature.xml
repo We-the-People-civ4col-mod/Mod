@@ -456,6 +456,24 @@
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_BLIZZARD</Type>
+            <bAnimated>1</bAnimated>
+            <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+            <fScale>0.2</fScale>
+            <fInterfaceScale>0.2</fInterfaceScale>
+            <Button>,Art/Interface/Buttons/Blizzard.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/terrain/features/Blizzard/storm.nif</ModelFile>
+                        <Connections/>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>1</iModelCopies>
+                <VarietyButton>,Art/Interface/Buttons/Blizzard.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
+        <FeatureArtInfo>
             <Type>ART_DEF_FEATURE_RIVER_FORD</Type>
             <bAnimated>0</bAnimated>
             <TileArtType>TILE_ART_TYPE_HALF_TILING</TileArtType>
