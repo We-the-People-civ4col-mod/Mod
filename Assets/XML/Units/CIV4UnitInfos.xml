@@ -1165,7 +1165,7 @@
             <DomainMods/>
             <YieldModifiers/>
             <YieldChanges>
-               <YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_FOOD</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
@@ -1715,7 +1715,7 @@
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
-               <YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_FOOD</YieldType>
                     <iChange>2</iChange>
                 </YieldChange>
@@ -2259,7 +2259,7 @@
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
-               <YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_FOOD</YieldType>
                     <iChange>2</iChange>
                 </YieldChange>
