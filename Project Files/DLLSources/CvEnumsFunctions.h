@@ -5,19 +5,56 @@
 
 // EnumsFunctions.h
 
-#include "CvGameCoreDLL.h"
 #include "CvEnums.h"
+
+template <typename T>
+struct VARINFO
+{
+	static const JITarrayTypes JIT = NO_JIT_ARRAY_TYPE;
+	static const int TYPE = VARIABLE_TYPE_GENERIC;
+	static const int LENGTH = MAX_SHORT;
+	static const int SIZE = sizeof(T);
+	template <int T> struct STATIC {
+		static const int VAL = T * sizeof(T) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;
+	};
+};
+
 #include "EnumMap.h"
 #include "InfoArray.h"
 
-template <typename T>
-struct VARINFO {}; // intentionally left blank. Use specialized structs only
+template <>
+struct VARINFO<bool>
+{
+	static const JITarrayTypes JIT = NO_JIT_ARRAY_TYPE;
+	static const int TYPE = VARIABLE_TYPE_BOOL;
+	static const int LENGTH = MAX_SHORT;
+	template <int T> struct STATIC {
+		static const int VAL = T <= 64 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;
+	};
+	static int getNumBlocks(int iLength)
+	{
+		return (iLength + 31) / 32;
+	}
+	static int getBlock(int iLength)
+	{
+		return iLength / 32;
+	}
+	static int getBitInBlock(int iLength)
+	{
+		return iLength & 0x1F;
+	}
+};
 
 
 #define ENUM_STRUCT_DECLARATION(ENUM_NAME, JIT_TYPE) \
 template <> struct VARINFO<ENUM_NAME> \
 { \
 	static const JITarrayTypes JIT = JIT_TYPE; \
+	static const int TYPE = VARIABLE_TYPE_GENERIC; \
+	static const int LENGTH = MAX_SHORT; \
+	template <int T> struct STATIC { \
+		static const int VAL = T * sizeof(ENUM_NAME) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC; \
+	}; \
 };
 
 

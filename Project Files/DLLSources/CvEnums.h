@@ -2755,5 +2755,16 @@ enum JITarrayTypes
 
 BOOST_STATIC_ASSERT(MAX_JIT_ARRAY_VALUE <= 0xFF);
 
+// define ints to variable types. Used for templates
+enum VariableTypes
+{
+	VARIABLE_TYPE_GENERIC,
+	VARIABLE_TYPE_CHAR,
+	VARIABLE_TYPE_SHORT,
+	VARIABLE_TYPE_BOOL,
+	VARIABLE_TYPE_STATIC,
+	VARIABLE_TYPE_DYNAMIC,
+};
+
 
 #endif	// CVENUMS_h

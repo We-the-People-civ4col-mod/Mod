@@ -91,12 +91,13 @@ foreach my $name (sort(keys %var))
 	my $NAME = uc $name;
 	
 	$var{$name}{type} = $name . "Types" unless exists $var{$name}{type};
+	my $type = $var{$name}{type};
 	$var{$name}{get} = "get" . $name unless exists $var{$name}{get};
 	$var{$name}{JIT} = "JIT_ARRAY_" . $NAME unless exists $var{$name}{JIT};
 	$var{$name}{NUM} = "NUM_" . $NAME . "_TYPES" unless exists $var{$name}{NUM};
 	$var{$name}{COMPILE} = "COMPILE_TIME_NUM_" . $NAME . "_TYPES" unless exists $var{$name}{COMPILE};
-
-	my $type = $var{$name}{type};
+	$var{$name}{START} = "static_cast<$type>(0)" unless exists $var{$name}{START};
+	$var{$name}{END} = $var{$name}{NUM} unless exists $var{$name}{END};
 
 	handleOperators($type);
 	handleComparison($name);
@@ -205,6 +206,17 @@ sub handleStruct
 	$output .= "template <> struct VARINFO<$type>\n";
 	$output .= "{\n";
 	$output .= "\tstatic const JITarrayTypes JIT = " . $var{$name}{JIT} . ";\n";
+	$output .= "\tstatic const int TYPE = (int)" . $var{$name}{COMPILE} . " < 128 ? 1 : 2;\n";
+	#$output .= "\tstatic const int TYPE = (int)" . $var{$name}{COMPILE} . " < 128 ? VARIABLE_TYPE_CHAR : VARIABLE_TYPE_SHORT;\n";
+	#$output .= "\tstatic const int TYPE = SIZE;\n";
+	#$output .= "\tstatic const int MAX_STATIC = TYPE == VARIABLE_TYPE_CHAR ? 4 : 2;\n";
+	$output .= "\tstatic const int LENGTH = " . $var{$name}{COMPILE} . ";\n";
+	#$output .= "\tstatic $type start() { return " . $var{$name}{START} . ";}\n";
+	#$output .= "\tstatic $type end() { return " . $var{$name}{END} . ";}\n";
+	#$output .= "\tstatic bool isInRange($type eIndex) { return eIndex >= start() && eIndex < end();}\n";
+	#$output .= "\ttemplate <int T> struct STATIC {\n";
+	#$output .= "\t\tstatic const int VAL = T * (TYPE == VARIABLE_TYPE_CHAR ? 1 : 2) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;\n";
+	#$output .= "\t};\n";
 	$output .= "};\n";
 }
 
