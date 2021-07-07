@@ -1165,6 +1165,106 @@
             <DomainMods/>
             <YieldModifiers/>
             <YieldChanges>
+               <YieldChange>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BARLEY</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_LUMBER</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_RAW_SALT</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SILVER</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GOLD</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GEMS</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SHEEP</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CATTLE</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SUGAR</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GRAPES</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HEMP</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_TOBACCO</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COTTON</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_INDIGO</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_WOOL_CLOTH</YieldType>
                     <iChange>-1</iChange>
@@ -1615,8 +1715,12 @@
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
-                <YieldChange>
+               <YieldChange>
                     <YieldType>YIELD_FOOD</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BARLEY</YieldType>
                     <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
@@ -1628,16 +1732,48 @@
                     <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_RAW_SALT</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_SILVER</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_GOLD</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_GEMS</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SHEEP</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CATTLE</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_COCA_LEAVES</YieldType>
@@ -1649,42 +1785,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_COFFEE_BERRIES</YieldType>
-                    <iChange>2</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_RED_PEPPER</YieldType>
-                    <iChange>2</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_COTTON</YieldType>
-                    <iChange>2</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_INDIGO</YieldType>
-                    <iChange>2</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_FUR</YieldType>
-                    <iChange>2</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
-                    <iChange>2</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_BARLEY</YieldType>
-                    <iChange>2</iChange>
+                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_SUGAR</YieldType>
-                    <iChange>2</iChange>
+                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_GRAPES</YieldType>
-                    <iChange>2</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_TOBACCO</YieldType>
                     <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
@@ -1692,88 +1800,20 @@
                     <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_RAW_SALT</YieldType>
+                    <YieldType>YIELD_TOBACCO</YieldType>
                     <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_SHEEP</YieldType>
-                    <iChange>2</iChange>
+                    <YieldType>YIELD_COTTON</YieldType>
+                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_CATTLE</YieldType>
-                    <iChange>2</iChange>
+                    <YieldType>YIELD_INDIGO</YieldType>
+                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_HORSES</YieldType>
-                    <iChange>2</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_WOOL_CLOTH</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_CLOTH</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_COLOURED_CLOTH</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_COFFEE</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_COCOA</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_SALT</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_SPICES</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_BEER</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_WINE</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_FURNITURE</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_LEATHER</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_COATS</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_PREMIUM_COATS</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_RUM</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_CIGARS</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_ROPE</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_SAILCLOTH</YieldType>
-                    <iChange>-1</iChange>
+                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_TOOLS</YieldType>
@@ -1804,15 +1844,7 @@
                     <iChange>-1</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_EDUCATION</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
                     <YieldType>YIELD_HEALTH</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_WHALE_OIL</YieldType>
                     <iChange>-1</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -2227,8 +2259,12 @@
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
-                <YieldChange>
+               <YieldChange>
                     <YieldType>YIELD_FOOD</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BARLEY</YieldType>
                     <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
@@ -2240,16 +2276,48 @@
                     <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_RAW_SALT</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_SILVER</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>0</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_GOLD</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>0</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_GEMS</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SHEEP</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CATTLE</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iChange>0</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_COCA_LEAVES</YieldType>
@@ -2264,7 +2332,19 @@
                     <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <YieldType>YIELD_SUGAR</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GRAPES</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HEMP</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_TOBACCO</YieldType>
                     <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
@@ -2276,40 +2356,28 @@
                     <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_BARLEY</YieldType>
+                    <YieldType>YIELD_RED_PEPPER</YieldType>
                     <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_SUGAR</YieldType>
-                    <iChange>2</iChange>
+                    <YieldType>YIELD_TOOLS</YieldType>
+                    <iChange>-1</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_GRAPES</YieldType>
-                    <iChange>2</iChange>
+                    <YieldType>YIELD_BLADES</YieldType>
+                    <iChange>-1</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_TOBACCO</YieldType>
-                    <iChange>2</iChange>
+                    <YieldType>YIELD_MUSKETS</YieldType>
+                    <iChange>-1</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_HEMP</YieldType>
-                    <iChange>2</iChange>
+                    <YieldType>YIELD_CANNONS</YieldType>
+                    <iChange>-1</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_RAW_SALT</YieldType>
-                    <iChange>2</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_SHEEP</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_CATTLE</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_HORSES</YieldType>
-                    <iChange>1</iChange>
+                    <YieldType>YIELD_HAMMERS</YieldType>
+                    <iChange>-1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_BELLS</YieldType>
@@ -2317,10 +2385,6 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_CROSSES</YieldType>
-                    <iChange>-1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_EDUCATION</YieldType>
                     <iChange>-1</iChange>
                 </YieldChange>
                 <YieldChange>
@@ -2582,7 +2646,11 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BARLEY</YieldType>
+                    <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_LUMBER</YieldType>
@@ -2593,20 +2661,76 @@
                     <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_RAW_SALT</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SILVER</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GOLD</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GEMS</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SHEEP</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CATTLE</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_COCA_LEAVES</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_COCOA_FRUITS</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_COFFEE_BERRIES</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <YieldType>YIELD_SUGAR</YieldType>
                     <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GRAPES</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HEMP</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_TOBACCO</YieldType>
+                    <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_COTTON</YieldType>
@@ -2617,47 +2741,7 @@
                     <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_FUR</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_BARLEY</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_SUGAR</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_GRAPES</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_TOBACCO</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_HEMP</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_RAW_SALT</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_SHEEP</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_CATTLE</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_HORSES</YieldType>
+                    <YieldType>YIELD_RED_PEPPER</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
@@ -2730,11 +2814,11 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_TOOLS</YieldType>
-                    <iChange>-2</iChange>
+                    <iChange>-3</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_BLADES</YieldType>
-                    <iChange>-2</iChange>
+                    <iChange>-3</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_MUSKETS</YieldType>
@@ -2762,7 +2846,7 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_HEALTH</YieldType>
-                    <iChange>-2</iChange>
+                    <iChange>-3</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -3085,28 +3169,88 @@
                     <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_LUMBER</YieldType>
+                    <YieldType>YIELD_BARLEY</YieldType>
                     <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_LUMBER</YieldType>
+                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_STONE</YieldType>
                     <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_RAW_SALT</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SILVER</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GOLD</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GEMS</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SHEEP</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CATTLE</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iChange>0</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iChange>0</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_COCA_LEAVES</YieldType>
-                    <iChange>2</iChange>
+                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_COCOA_FRUITS</YieldType>
-                    <iChange>2</iChange>
+                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_COFFEE_BERRIES</YieldType>
                     <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <YieldType>YIELD_SUGAR</YieldType>
                     <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GRAPES</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HEMP</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_TOBACCO</YieldType>
+                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_COTTON</YieldType>
@@ -3117,56 +3261,8 @@
                     <iChange>2</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_FUR</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_BARLEY</YieldType>
+                    <YieldType>YIELD_RED_PEPPER</YieldType>
                     <iChange>2</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_SUGAR</YieldType>
-                    <iChange>2</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_GRAPES</YieldType>
-                    <iChange>2</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_TOBACCO</YieldType>
-                    <iChange>2</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_HEMP</YieldType>
-                    <iChange>2</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_ORE</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_STONE</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_RAW_SALT</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_SHEEP</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_CATTLE</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_HORSES</YieldType>
-                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_WOOL_CLOTH</YieldType>
@@ -3238,11 +3334,11 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_TOOLS</YieldType>
-                    <iChange>-2</iChange>
+                    <iChange>-3</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_BLADES</YieldType>
-                    <iChange>-2</iChange>
+                    <iChange>-3</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_MUSKETS</YieldType>
