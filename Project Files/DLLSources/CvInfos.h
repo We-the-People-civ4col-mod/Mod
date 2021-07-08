@@ -2577,6 +2577,18 @@ public:
 	bool isRequiresPeaks() const; //WTP, Feature settings enhancements
 	bool isRequiresRiver() const;
 	bool isImpassable() const;
+
+	// ray, Streams Feature - START
+	bool isNorthMovementBonus() const;
+	bool isSouthMovementBonus() const;
+	bool isEastMovementBonus() const;
+	bool isWestMovementBonus() const;
+	bool isNorthEastMovementBonus() const;
+	bool isNorthWestMovementBonus() const;
+	bool isSouthEastMovementBonus() const;
+	bool isSouthWestMovementBonus() const;
+	// ray, Streams Feature - END
+
 	bool isNoCity() const;
 	bool isNoImprovement() const;
 	bool isVisibleAlways() const;
@@ -2619,6 +2631,18 @@ protected:
 	bool m_bRequiresPeaks; //WTP, Feature settings enhancements
 	bool m_bRequiresRiver;
 	bool m_bImpassable;
+
+	// ray, Streams Feature - START
+	bool m_bNorthMovementBonus;
+	bool m_bSouthMovementBonus;
+	bool m_bEastMovementBonus;
+	bool m_bWestMovementBonus;
+	bool m_bNorthEastMovementBonus;
+	bool m_bNorthWestMovementBonus;
+	bool m_bSouthEastMovementBonus;
+	bool m_bSouthWestMovementBonus;
+	// ray, Streams Feature - END
+
 	bool m_bNoCity;
 	bool m_bNoImprovement;
 	bool m_bVisibleAlways;

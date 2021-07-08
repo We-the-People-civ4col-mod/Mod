@@ -3315,6 +3315,68 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 		}
 	}
 
+	// ray, Streams Feature
+	// we now check if this is a "Stream Feature" with the same movement Bonus
+	// we only check for Water Plots with Features of course - this plot and also from plot
+	if (isWater() && getFeatureType() != NO_FEATURE && pFromPlot->getFeatureType() != NO_FEATURE)
+	{
+		bool hasSameStreamFeature = false;
+		CvFeatureInfo& eThisFeature = GC.getFeatureInfo(getFeatureType());
+		CvFeatureInfo& eFromFeature = GC.getFeatureInfo(pFromPlot->getFeatureType());
+
+		while (!hasSameStreamFeature)
+		{
+			if (eThisFeature.isNorthMovementBonus() && eFromFeature.isNorthMovementBonus())
+			{
+				hasSameStreamFeature = true;
+				break;
+			}
+			else if (eThisFeature.isSouthMovementBonus() && eFromFeature.isSouthMovementBonus())
+			{
+				hasSameStreamFeature = true;
+				break;
+			}
+			else if (eThisFeature.isEastMovementBonus() && eFromFeature.isEastMovementBonus())
+			{
+				hasSameStreamFeature = true;
+				break;
+			}
+			else if (eThisFeature.isWestMovementBonus() && eFromFeature.isWestMovementBonus())
+			{
+				hasSameStreamFeature = true;
+				break;
+			}
+			else if (eThisFeature.isNorthEastMovementBonus() && eFromFeature.isNorthEastMovementBonus())
+			{
+				hasSameStreamFeature = true;
+				break;
+			}
+			else if (eThisFeature.isNorthWestMovementBonus() && eFromFeature.isNorthWestMovementBonus())
+			{
+				hasSameStreamFeature = true;
+				break;
+			}
+			else if (eThisFeature.isSouthEastMovementBonus() && eFromFeature.isSouthEastMovementBonus())
+			{
+				hasSameStreamFeature = true;
+				break;
+			}
+			else if (eThisFeature.isSouthWestMovementBonus() && eFromFeature.isSouthWestMovementBonus())
+			{
+				hasSameStreamFeature = true;
+				break;
+			}	  
+			// nothing found, we stop
+			break;
+		}
+		
+		// if we have found a Stream of the same Type, we reduce Moevement by half
+		if (hasSameStreamFeature)
+		{
+			iRegularCost /= 2;
+		}
+	}
+
 	if (pFromPlot->isValidRoute(pUnit) && isValidRoute(pUnit))
 	{
 		iRouteCost = std::max((GC.getRouteInfo(pFromPlot->getRouteType()).getMovementCost()),
@@ -3322,6 +3384,7 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 		iRouteFlatCost = std::max((GC.getRouteInfo(pFromPlot->getRouteType()).getFlatMovementCost() * pUnit->baseMoves()),
 			                   (GC.getRouteInfo(getRouteType()).getFlatMovementCost() * pUnit->baseMoves()));
 	}
+
 	else
 	{
 		iRouteCost = MAX_INT;

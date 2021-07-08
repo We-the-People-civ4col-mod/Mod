@@ -4393,6 +4393,14 @@
             <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
+            <bNorthMovementBonus>1</bNorthMovementBonus>
+            <bSouthMovementBonus>0</bSouthMovementBonus>
+            <bEastMovementBonus>0</bEastMovementBonus>
+            <bWestMovementBonus>0</bWestMovementBonus>
+            <bNorthEastMovementBonus>1</bNorthEastMovementBonus>
+            <bNorthWestMovementBonus>1</bNorthWestMovementBonus>
+            <bSouthEastMovementBonus>0</bSouthEastMovementBonus>
+            <bSouthWestMovementBonus>0</bSouthWestMovementBonus>
             <bNoCity>0</bNoCity>
             <bNoImprovement>0</bNoImprovement>
             <bVisibleAlways>0</bVisibleAlways>
@@ -4494,6 +4502,14 @@
             <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
+            <bNorthMovementBonus>0</bNorthMovementBonus>
+            <bSouthMovementBonus>0</bSouthMovementBonus>
+            <bEastMovementBonus>1</bEastMovementBonus>
+            <bWestMovementBonus>0</bWestMovementBonus>
+            <bNorthEastMovementBonus>1</bNorthEastMovementBonus>
+            <bNorthWestMovementBonus>0</bNorthWestMovementBonus>
+            <bSouthEastMovementBonus>1</bSouthEastMovementBonus>
+            <bSouthWestMovementBonus>0</bSouthWestMovementBonus>
             <bNoCity>0</bNoCity>
             <bNoImprovement>0</bNoImprovement>
             <bVisibleAlways>0</bVisibleAlways>
@@ -4595,6 +4611,14 @@
             <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
+            <bNorthMovementBonus>0</bNorthMovementBonus>
+            <bSouthMovementBonus>1</bSouthMovementBonus>
+            <bEastMovementBonus>0</bEastMovementBonus>
+            <bWestMovementBonus>0</bWestMovementBonus>
+            <bNorthEastMovementBonus>0</bNorthEastMovementBonus>
+            <bNorthWestMovementBonus>0</bNorthWestMovementBonus>
+            <bSouthEastMovementBonus>1</bSouthEastMovementBonus>
+            <bSouthWestMovementBonus>1</bSouthWestMovementBonus>
             <bNoCity>0</bNoCity>
             <bNoImprovement>0</bNoImprovement>
             <bVisibleAlways>0</bVisibleAlways>
@@ -4696,6 +4720,14 @@
             <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
+            <bNorthMovementBonus>0</bNorthMovementBonus>
+            <bSouthMovementBonus>0</bSouthMovementBonus>
+            <bEastMovementBonus>0</bEastMovementBonus>
+            <bWestMovementBonus>1</bWestMovementBonus>
+            <bNorthEastMovementBonus>0</bNorthEastMovementBonus>
+            <bNorthWestMovementBonus>1</bNorthWestMovementBonus>
+            <bSouthEastMovementBonus>0</bSouthEastMovementBonus>
+            <bSouthWestMovementBonus>1</bSouthWestMovementBonus>
             <bNoCity>0</bNoCity>
             <bNoImprovement>0</bNoImprovement>
             <bVisibleAlways>0</bVisibleAlways>
@@ -4797,6 +4829,14 @@
             <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
+            <bNorthMovementBonus>1</bNorthMovementBonus>
+            <bSouthMovementBonus>0</bSouthMovementBonus>
+            <bEastMovementBonus>0</bEastMovementBonus>
+            <bWestMovementBonus>1</bWestMovementBonus>
+            <bNorthEastMovementBonus>0</bNorthEastMovementBonus>
+            <bNorthWestMovementBonus>1</bNorthWestMovementBonus>
+            <bSouthEastMovementBonus>0</bSouthEastMovementBonus>
+            <bSouthWestMovementBonus>0</bSouthWestMovementBonus>
             <bNoCity>0</bNoCity>
             <bNoImprovement>0</bNoImprovement>
             <bVisibleAlways>0</bVisibleAlways>
@@ -4898,6 +4938,14 @@
             <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
+            <bNorthMovementBonus>1</bNorthMovementBonus>
+            <bSouthMovementBonus>0</bSouthMovementBonus>
+            <bEastMovementBonus>1</bEastMovementBonus>
+            <bWestMovementBonus>0</bWestMovementBonus>
+            <bNorthEastMovementBonus>1</bNorthEastMovementBonus>
+            <bNorthWestMovementBonus>0</bNorthWestMovementBonus>
+            <bSouthEastMovementBonus>0</bSouthEastMovementBonus>
+            <bSouthWestMovementBonus>0</bSouthWestMovementBonus>
             <bNoCity>0</bNoCity>
             <bNoImprovement>0</bNoImprovement>
             <bVisibleAlways>0</bVisibleAlways>
@@ -4999,6 +5047,14 @@
             <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
+            <bNorthMovementBonus>0</bNorthMovementBonus>
+            <bSouthMovementBonus>1</bSouthMovementBonus>
+            <bEastMovementBonus>0</bEastMovementBonus>
+            <bWestMovementBonus>1</bWestMovementBonus>
+            <bNorthEastMovementBonus>0</bNorthEastMovementBonus>
+            <bNorthWestMovementBonus>0</bNorthWestMovementBonus>
+            <bSouthEastMovementBonus>0</bSouthEastMovementBonus>
+            <bSouthWestMovementBonus>1</bSouthWestMovementBonus>
             <bNoCity>0</bNoCity>
             <bNoImprovement>0</bNoImprovement>
             <bVisibleAlways>0</bVisibleAlways>
@@ -5100,6 +5156,14 @@
             <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
             <bImpassable>0</bImpassable>
+            <bNorthMovementBonus>0</bNorthMovementBonus>
+            <bSouthMovementBonus>1</bSouthMovementBonus>
+            <bEastMovementBonus>1</bEastMovementBonus>
+            <bWestMovementBonus>0</bWestMovementBonus>
+            <bNorthEastMovementBonus>0</bNorthEastMovementBonus>
+            <bNorthWestMovementBonus>0</bNorthWestMovementBonus>
+            <bSouthEastMovementBonus>1</bSouthEastMovementBonus>
+            <bSouthWestMovementBonus>0</bSouthWestMovementBonus>
             <bNoCity>0</bNoCity>
             <bNoImprovement>0</bNoImprovement>
             <bVisibleAlways>0</bVisibleAlways>

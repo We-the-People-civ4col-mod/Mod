@@ -9167,6 +9167,17 @@ m_bRequiresHills(false), //WTP, Feature settings enhancements
 m_bRequiresPeaks(false), //WTP, Feature settings enhancements
 m_bRequiresRiver(false),
 m_bImpassable(false),
+// ray, Streams Feature - START
+m_bNorthMovementBonus(false), 
+m_bSouthMovementBonus(false), 
+m_bEastMovementBonus(false), 
+m_bWestMovementBonus(false), 
+m_bNorthEastMovementBonus(false), 
+m_bNorthWestMovementBonus(false), 
+m_bSouthEastMovementBonus(false), 
+m_bSouthWestMovementBonus(false), 
+// ray, Streams Feature - END
+
 m_bNoCity(false),
 m_bNoImprovement(false),
 m_bVisibleAlways(false),
@@ -9252,6 +9263,40 @@ bool CvFeatureInfo::isNoAdjacent() const
 bool CvFeatureInfo::isRequiresFlatlands() const
 {
 	return m_bRequiresFlatlands;
+}
+
+// ray, Streams Feature
+bool CvFeatureInfo::isNorthMovementBonus() const
+{
+	return m_bNorthMovementBonus;
+}
+bool CvFeatureInfo::isSouthMovementBonus() const
+{
+	return m_bSouthMovementBonus;
+}
+bool CvFeatureInfo::isEastMovementBonus() const
+{
+	return m_bEastMovementBonus;
+}
+bool CvFeatureInfo::isWestMovementBonus() const
+{
+	return m_bWestMovementBonus;
+}
+bool CvFeatureInfo::isNorthEastMovementBonus() const
+{
+	return m_bNorthEastMovementBonus;
+}
+bool CvFeatureInfo::isNorthWestMovementBonus() const
+{
+	return m_bNorthWestMovementBonus;
+}
+bool CvFeatureInfo::isSouthEastMovementBonus() const
+{
+	return m_bSouthEastMovementBonus;
+}
+bool CvFeatureInfo::isSouthWestMovementBonus() const
+{
+	return m_bSouthWestMovementBonus;
 }
 
 //WTP, Feature settings enhancements
@@ -9385,6 +9430,16 @@ bool CvFeatureInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bRequiresPeaks, "bRequiresPeaks"); //WTP, Feature settings enhancements
 	pXML->GetChildXmlValByName(&m_bRequiresRiver, "bRequiresRiver");
 	pXML->GetChildXmlValByName(&m_bImpassable, "bImpassable");
+	// ray, Streams Feature - START
+	pXML->GetChildXmlValByName(&m_bNorthMovementBonus, "bNorthMovementBonus");
+	pXML->GetChildXmlValByName(&m_bSouthMovementBonus, "bSouthMovementBonus");
+	pXML->GetChildXmlValByName(&m_bEastMovementBonus, "bEastMovementBonus");
+	pXML->GetChildXmlValByName(&m_bWestMovementBonus, "bWestMovementBonus");
+	pXML->GetChildXmlValByName(&m_bNorthEastMovementBonus, "bNorthEastMovementBonus");
+	pXML->GetChildXmlValByName(&m_bNorthWestMovementBonus, "bNorthWestMovementBonus");
+	pXML->GetChildXmlValByName(&m_bSouthEastMovementBonus, "bSouthEastMovementBonus");
+	pXML->GetChildXmlValByName(&m_bSouthWestMovementBonus, "bSouthWestMovementBonus");
+	// ray, Streams Feature - END
 	pXML->GetChildXmlValByName(&m_bNoCity, "bNoCity");
 	pXML->GetChildXmlValByName(&m_bNoImprovement, "bNoImprovement");
 	pXML->GetChildXmlValByName(&m_bVisibleAlways, "bVisibleAlways");

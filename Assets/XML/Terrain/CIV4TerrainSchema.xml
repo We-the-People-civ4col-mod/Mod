@@ -172,6 +172,14 @@
 	<ElementType name="bRequiresHills" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRequiresPeaks" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRequiresRiver" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNorthMovementBonus" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bSouthMovementBonus" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bEastMovementBonus" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bWestMovementBonus" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNorthEastMovementBonus" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNorthWestMovementBonus" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bSouthEastMovementBonus" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bSouthWestMovementBonus" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoCity" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoImprovement" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bVisibleAlways" content="textOnly" dt:type="boolean"/>
@@ -211,6 +219,14 @@
 		<element type="bRequiresPeaks"/>
 		<element type="bRequiresRiver"/>
 		<element type="bImpassable"/>
+		<element type="bNorthMovementBonus" minOccurs="0"/>
+		<element type="bSouthMovementBonus" minOccurs="0"/>
+		<element type="bEastMovementBonus" minOccurs="0"/>
+		<element type="bWestMovementBonus" minOccurs="0"/>
+		<element type="bNorthEastMovementBonus" minOccurs="0"/>
+		<element type="bNorthWestMovementBonus" minOccurs="0"/>
+		<element type="bSouthEastMovementBonus" minOccurs="0"/>
+		<element type="bSouthWestMovementBonus" minOccurs="0"/>
 		<element type="bNoCity"/>
 		<element type="bNoImprovement"/>
 		<element type="bVisibleAlways"/>
