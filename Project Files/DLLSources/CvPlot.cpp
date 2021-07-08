@@ -3324,46 +3324,93 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 		CvFeatureInfo& eThisFeature = GC.getFeatureInfo(getFeatureType());
 		CvFeatureInfo& eFromFeature = GC.getFeatureInfo(pFromPlot->getFeatureType());
 
+		//to check if Movementis against Stream
+		bool bMovementAgainstStream = false;
+
+		// get Movement direction
+		int xThisPlot = getX_INLINE();
+		int yThisPlot = getY_INLINE();
+		int xFromPlot = pFromPlot->getX_INLINE();
+		int yFromPlot = pFromPlot->getY_INLINE();
+
+		bool bMovementNorth = yThisPlot > yFromPlot;
+		bool bMovementSouth = yThisPlot < yFromPlot;
+		bool bMovementEast = xThisPlot > xFromPlot;
+		bool bMovementWest = xThisPlot < xFromPlot;
+
 		while (!hasSameStreamFeature)
 		{
 			if (eThisFeature.isNorthMovementBonus() && eFromFeature.isNorthMovementBonus())
 			{
 				hasSameStreamFeature = true;
+				if (bMovementSouth)
+				{
+					bMovementAgainstStream = true;
+				}
+
 				break;
 			}
 			else if (eThisFeature.isSouthMovementBonus() && eFromFeature.isSouthMovementBonus())
 			{
 				hasSameStreamFeature = true;
+				if (bMovementNorth)
+				{
+					bMovementAgainstStream = true;
+				}
 				break;
 			}
 			else if (eThisFeature.isEastMovementBonus() && eFromFeature.isEastMovementBonus())
 			{
 				hasSameStreamFeature = true;
+				if (bMovementWest)
+				{
+					bMovementAgainstStream = true;
+				}
 				break;
 			}
 			else if (eThisFeature.isWestMovementBonus() && eFromFeature.isWestMovementBonus())
 			{
 				hasSameStreamFeature = true;
+				if (bMovementEast)
+				{
+					bMovementAgainstStream = true;
+				}
 				break;
 			}
 			else if (eThisFeature.isNorthEastMovementBonus() && eFromFeature.isNorthEastMovementBonus())
 			{
 				hasSameStreamFeature = true;
+				if (bMovementSouth || bMovementWest)
+				{
+					bMovementAgainstStream = true;
+				}
 				break;
 			}
 			else if (eThisFeature.isNorthWestMovementBonus() && eFromFeature.isNorthWestMovementBonus())
 			{
 				hasSameStreamFeature = true;
+				if (bMovementSouth || bMovementEast)
+				{
+					bMovementAgainstStream = true;
+				}
 				break;
 			}
 			else if (eThisFeature.isSouthEastMovementBonus() && eFromFeature.isSouthEastMovementBonus())
 			{
 				hasSameStreamFeature = true;
+				if (bMovementNorth || bMovementWest)
+				{
+					bMovementAgainstStream = true;
+				}
 				break;
 			}
 			else if (eThisFeature.isSouthWestMovementBonus() && eFromFeature.isSouthWestMovementBonus())
 			{
 				hasSameStreamFeature = true;
+				if (bMovementNorth || bMovementEast)
+				{
+					bMovementAgainstStream = true;
+				}
 				break;
 			}	  
 			// nothing found, we stop
@@ -3373,7 +3420,17 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 		// if we have found a Stream of the same Type, we reduce Moevement by half
 		if (hasSameStreamFeature)
 		{
-			iRegularCost /= 2;
+			// Movement against Stream
+			if (bMovementAgainstStream)
+			{
+				iRegularCost *= 2;
+			}
+
+			// Movement with Stream
+			else
+			{
+				iRegularCost /= 2;
+			}
 		}
 	}
 
