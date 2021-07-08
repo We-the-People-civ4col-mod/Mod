@@ -151,7 +151,7 @@ public:
 	bool AI_hasSeaTransport(const CvUnit* pCargo) const;
 
 	int AI_neededExplorers(CvArea* pArea);
-	int AI_neededWorkers(CvArea* pArea);
+	int AI_neededWorkers(CvArea* pArea) const;
 	//int AI_neededMissionary(CvArea* pArea);
 	
 	int AI_adjacentPotentialAttackers(CvPlot* pPlot, bool bTestCanMove = false);

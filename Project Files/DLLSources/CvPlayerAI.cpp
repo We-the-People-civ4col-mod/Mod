@@ -5291,8 +5291,8 @@ int CvPlayerAI::AI_neededExplorers(CvArea* pArea)
 
 }
 
-
-int CvPlayerAI::AI_neededWorkers(CvArea* pArea)
+//Returns an estimate of needed pioneers. If pArea is NULL then all areas will be considered (i.e. the total need of all our cities)
+int CvPlayerAI::AI_neededWorkers(CvArea* pArea) const
 {
 	CvCity* pLoopCity;
 	int iCount;
@@ -5308,7 +5308,16 @@ int CvPlayerAI::AI_neededWorkers(CvArea* pArea)
 		}
 	}
 
-	if (iCount == 0)
+	// Subtract pioneers waiting on the docks
+	for (uint i = 0; i < m_aEuropeUnits.size(); ++i)
+	{
+		if (m_aEuropeUnits[i]->AI_getUnitAIType() == UNITAI_WORKER)
+		{
+			--iCount;
+		}
+	}
+
+	if (iCount <= 0)
 	{
 		return 0;
 	}
