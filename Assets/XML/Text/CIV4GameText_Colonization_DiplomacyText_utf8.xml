@@ -5011,7 +5011,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CHIEF_LEARN_UNIT_DESCRIPTION</Tag>
-        <English>Stranger, you could learn from us and become a [COLOR_UNIT_TEXT]%s1_teach_unit[COLOR_REVERT].</English>
+        <English>Stranger, you could learn from us and become an [COLOR_UNIT_TEXT]%s1_teach_unit[COLOR_REVERT].</English>
         <French>Étranger, tu pourrais apprendre de nous et devenir une [COLOR_UNIT_TEXT]%s1_teach_unit[COLOR_REVERT].</French>
         <German>Fremder, du könntest von uns lernen und ein [COLOR_UNIT_TEXT]%s1_teach_unit[COLOR_REVERT] werden.</German>
         <Italian>Straniero, potresti imparare da noi e diventare un [COLOR_UNIT_TEXT]%s1_teach_unit[COLOR_REVERT].</Italian>
