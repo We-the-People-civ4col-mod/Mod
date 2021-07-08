@@ -190,7 +190,7 @@ protected:
 
 	bool AI_collectGoods();
 
-	bool AI_deliverUnits();
+	bool AI_deliverUnits(UnitAITypes eUnitAI = NO_UNITAI);
 	
 	CvPlot* AI_bestDestinationPlot(bool bIgnoreDanger = false);	// TAC - AI Improved Naval AI - koma13
 
