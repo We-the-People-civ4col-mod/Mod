@@ -7088,6 +7088,12 @@ void CvGameTextMgr::setFeatureHelp(CvWStringBuffer &szBuffer, FeatureTypes eFeat
 		szBuffer.append(gDLL->getText("TXT_KEY_TERRAIN_IMPASSABLE"));
 	}
 
+	if (feature.isNorthMovementBonus() || feature.isSouthMovementBonus() || feature.isEastMovementBonus()  || feature.isWestMovementBonus() || feature.isNorthEastMovementBonus() || feature.isNorthWestMovementBonus() || feature.isSouthEastMovementBonus() || feature.isSouthWestMovementBonus())
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_FEATURE_STREAM_EFFECT"));
+	}
+
 	if (feature.isNoCity())
 	{
 		szBuffer.append(NEWLINE);

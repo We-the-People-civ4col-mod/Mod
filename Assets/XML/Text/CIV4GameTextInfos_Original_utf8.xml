@@ -382,6 +382,11 @@
         <Spanish>[ICON_BULLET]Terreno infranqueable</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_FEATURE_STREAM_EFFECT</Tag>
+        <English>[ICON_BULLET]Doubles Movement with Stream[NEWLINE][ICON_BULLET]Halves Movement against Stream</English>
+        <German>[ICON_BULLET]Verdoppelt Bewegung mit Strom[NEWLINE][ICON_BULLET]Halbiert Bewegung gegen Strom</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TERRAIN_COASTAL_CITIES</Tag>
         <English>unless they are coastal</English>
         <French>sauf sur une côte</French>
