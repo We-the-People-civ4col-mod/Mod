@@ -22037,6 +22037,10 @@
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>
+                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
@@ -22052,6 +22056,10 @@
             <FeatureDefenses>
                 <FeatureDefense>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
                     <iFeatureDefense>20</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
@@ -22226,6 +22234,10 @@
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
+                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
@@ -22389,6 +22401,10 @@
             <FeatureDefenses>
                 <FeatureDefense>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
@@ -22695,6 +22711,10 @@
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
+                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
@@ -22872,6 +22892,10 @@
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>
+                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
@@ -22899,6 +22923,10 @@
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
                     <iFeatureDefense>20</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
@@ -23278,6 +23306,10 @@
             <FeatureAttacks>
                 <FeatureAttack>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iFeatureAttack>-10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
                     <iFeatureAttack>-10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>

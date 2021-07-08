@@ -1428,6 +1428,7 @@
             <FeaturesRequired>
                 <FeatureType>FEATURE_JUNGLE</FeatureType>
                 <FeatureType>FEATURE_MANGROVE</FeatureType>
+                <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
             </FeaturesRequired>
             <TerrainsRequired/>
             <ImprovementsRequired/>

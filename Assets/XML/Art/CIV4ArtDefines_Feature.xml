@@ -294,6 +294,109 @@
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_TROPICAL_GROVES</Type>
+            <bAnimated>1</bAnimated>
+            <TileArtType>TILE_ART_TYPE_TREES</TileArtType>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <Button>Art/Interface/Buttons/button_tropical_grove.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_03.nif</ModelFile>
+                        <Connections>NW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_03.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_04.nif</ModelFile>
+                        <Connections>NE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_03.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_04.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_05.nif</ModelFile>
+                        <Connections>NW NE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_04.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_05.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_06.nif</ModelFile>
+                        <Connections>SE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_05.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_06.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_07.nif</ModelFile>
+                        <Connections>NW SE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_06.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_07.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_08.nif</ModelFile>
+                        <Connections>NE SE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_07.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_08.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_09.nif</ModelFile>
+                        <Connections>NW NE SE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_08.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_09.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_10.nif</ModelFile>
+                        <Connections>SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_09.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_10.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_11.nif</ModelFile>
+                        <Connections>NW SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_10.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_11.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_12.nif</ModelFile>
+                        <Connections>NE SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_11.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_12.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_13.nif</ModelFile>
+                        <Connections>NW NE SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_12.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_13.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_14.nif</ModelFile>
+                        <Connections>SE SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_13.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_14.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_15.nif</ModelFile>
+                        <Connections>NW SE SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_14.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_15.nif</ModelFile>
+                        <Connections>NE SE SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_15.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/tropical_grove/sumpf_3_02.nif</ModelFile>
+                        <Connections>NW NE SE SW</Connections>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>3</iModelCopies>
+                <VarietyButton>Art/Interface/Buttons/button_tropical_grove.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
+        <FeatureArtInfo>
             <Type>ART_DEF_FEATURE_BOG</Type>
             <bAnimated>1</bAnimated>
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
