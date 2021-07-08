@@ -4550,16 +4550,22 @@ bool CvUnitAI::AI_sailToPreferredPort(bool bMove)
 
 		// In general we should prefer Europe, but we will consider going to Africa if:
 		// 1) We cannot fill our transport ship with more than half the capacity of colonists for the return journey, rounded down
-		const bool bAfricaRatio = (kOwner.getNumEuropeUnits() / static_cast<double>(cargoSpace()) <= 0.5);
+		//const bool bAfricaRatio = (kOwner.getNumEuropeUnits() / static_cast<double>(cargoSpace()) <= 0.5);
 
 		// 2) Our goods must have a higher value in Africa than in Europe
-		const bool bAfricaBetterValue = getCargoValue(AFRICA) > getCargoValue(EUROPE);
+		const int iAfricaBetterValue = getCargoValue(AFRICA) - getCargoValue(EUROPE);
 		
 		// 3) The price of a slave must be less than a free colonist
 		const int iPriceDifference = AI_getCostDifferenceFreeVsSlave();
 
 		// We should expand on this in a future iteration but this will suffice for now
-		if (bAfricaRatio && bAfricaBetterValue && iPriceDifference > 0)
+		//if (bAfricaRatio && bAfricaBetterValue && iPriceDifference > 0)
+		if (iAfricaBetterValue > 0 && iPriceDifference > 0)
+		{
+			return AI_sailToAfrica(bMove);
+		}
+		// Pick Africa if much better value
+		else if (iAfricaBetterValue >= 100 * cargoSpace())
 		{
 			return AI_sailToAfrica(bMove);
 		}
@@ -4707,12 +4713,19 @@ void CvUnitAI::AI_transportSeaMove()
 	UnitAIStates eStartingState = AI_getUnitAIState();
 	if (AI_getUnitAIState() == UNITAI_STATE_SAIL)
 	{
-		if (bPickupUnitsFromEurope || hasCargo())	// TAC - AI Improved Naval AI - koma13
+		if (AI_deliverUnits(UNITAI_SETTLER))
 		{
-			if (AI_sailToPreferredPort(false))
-			{
-				return;
-			}
+			return;
+		}
+
+		if (AI_deliverUnits(UNITAI_COLONIST))
+		{
+			return;
+		}
+
+		if (AI_deliverUnits())
+		{
+			return;
 		}
 
 		if (AI_continueMission(-1, MISSIONAI_SAIL_TO_EUROPE, MOVE_BUST_FOG))
@@ -4724,6 +4737,15 @@ void CvUnitAI::AI_transportSeaMove()
 		{
 			return;
 		}
+
+		if (bPickupUnitsFromEurope || hasCargo())	// TAC - AI Improved Naval AI - koma13
+		{
+			if (AI_sailToPreferredPort(false))
+			{
+				return;
+			}
+		}
+
 
 		if (kOwner.AI_totalUnitAIs(UNITAI_TREASURE) > 0)
 		{
@@ -4778,13 +4800,12 @@ void CvUnitAI::AI_transportSeaMove()
 				return;
 			}
 		}
+
 		AI_setUnitAIState(UNITAI_STATE_DEFAULT);
 	}
 
 	if (AI_deliverUnits())
-	{
 		return;
-	}
 
 	if (AI_getUnitAIState() == UNITAI_STATE_PICKUP)
 	{
@@ -7045,7 +7066,8 @@ bool CvUnitAI::AI_collectGoods()
 	return bLoaded;
 }
 
-bool CvUnitAI::AI_deliverUnits()
+// Returns true if a cargo unit has pushed a mission for us, false otherwise. If eUnitAI is valid, then only units with this UnitAI will be allowed to push a mission.
+bool CvUnitAI::AI_deliverUnits(UnitAITypes eUnitAI)
 {
 	
 	CvUnit* pColonistUnit = NULL;
@@ -7055,25 +7077,28 @@ bool CvUnitAI::AI_deliverUnits()
 	CvPlot* pBestMissionPlot = NULL;
 	
 	CvPlot* pBestPlot = NULL;	// TAC - AI Improved Naval AI - koma13
+	MissionAITypes eMissionAI = NO_MISSIONAI;
 	
+	
+	CLLNode<IDInfo>* pUnitNode;
+	CvUnit* pLoopUnit;
+	CvPlot* pPlot;
+	int iCount;
+
+	iCount = 0;
+
+	pPlot = plot();
+
+	pUnitNode = pPlot->headUnitNode();
+
+	while (pUnitNode != NULL)
 	{
-		CLLNode<IDInfo>* pUnitNode;
-		CvUnit* pLoopUnit;
-		CvPlot* pPlot;
-		int iCount;
+		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-		iCount = 0;
-
-		pPlot = plot();
-
-		pUnitNode = pPlot->headUnitNode();
-
-		while (pUnitNode != NULL)
+		if (pLoopUnit->getTransportUnit() == this)
 		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = pPlot->nextUnitNode(pUnitNode);
-
-			if (pLoopUnit->getTransportUnit() == this)
+			if (eUnitAI == NO_UNITAI || eUnitAI == pLoopUnit->AI_getUnitAIType())
 			{
 				CvPlot* pDestination = NULL;
 				CvPlot* pMissionPlot = NULL;
@@ -7085,18 +7110,19 @@ bool CvUnitAI::AI_deliverUnits()
 					if ((pDestination != NULL) && (pDestination != plot())) //Don't humor foolishness x[.
 					{
 						int iPathTurns;
-						
+
 						if (generatePath(pDestination, 0, true, &iPathTurns))
 						{
 							int iValue = 100000;
 							iValue /= 100 + getPathCost();
-							
+
 							if (iValue > iBestValue)
 							{
 								iBestValue = iValue;
-								pBestDestination = canMoveInto(*pDestination) ? pDestination : getGroup()->getPathSecondLastPlot();	
-								
+								pBestDestination = canMoveInto(*pDestination) ? pDestination : getGroup()->getPathSecondLastPlot();
+
 								pBestPlot = (getGroup()->getPathEndTurnPlot() == pDestination) ? pBestDestination : getGroup()->getPathEndTurnPlot();	// TAC - AI Improved Naval AI - koma13
+								eMissionAI = pLoopUnit->getGroup()->AI_getMissionAIType();
 							}
 						}
 					}
@@ -7104,6 +7130,7 @@ bool CvUnitAI::AI_deliverUnits()
 			}
 		}
 	}
+	
 	
 	/*
 	if (iBestValue > 0)
@@ -7139,7 +7166,7 @@ bool CvUnitAI::AI_deliverUnits()
 		}
 		else
 		{
-			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), 0, false, false, NO_MISSIONAI, pBestDestination);
+			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), 0, false, false, eMissionAI, pBestDestination);
 			return true;
 		}
 	}
