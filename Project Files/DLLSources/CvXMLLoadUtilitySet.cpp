@@ -901,6 +901,10 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		SetGlobalDefine("BONUS_WHALE", szVal);
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("BONUS_WHALE", idx);
+
+		SetGlobalDefine("BONUS_WHALE2", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("BONUS_WHALE2", idx);
 		//End TAC Whaling, ray
 
 		// R&R, ray, High Sea Fishing - START

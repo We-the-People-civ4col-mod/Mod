@@ -386,6 +386,10 @@
 		<DefineTextVal>BONUS_WHALE</DefineTextVal>
 	</Define>
 	<Define>
+		<DefineName>BONUS_WHALE2</DefineName>
+		<DefineTextVal>BONUS_HUMPBACK_WHALE</DefineTextVal>
+	</Define>
+	<Define>
 		<DefineName>UNITCLASS_FISHING_BOAT</DefineName>
 		<DefineTextVal>UNITCLASS_FISHING_BOAT</DefineTextVal>
 	</Define>

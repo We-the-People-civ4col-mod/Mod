@@ -447,6 +447,17 @@
             <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_HUMPBACK_WHALE</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/humpback_whale/Whale.nif</NIF>
+            <KFM>Art/Terrain/Resources/Whale/Whale.kfm</KFM>
+            <Button>,Art/Interface/Buttons/humpback_whale.dds</Button>
+            <FontButtonIndex>31</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>1</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_HIGH_SEA_FISH</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>1.1</fInterfaceScale>

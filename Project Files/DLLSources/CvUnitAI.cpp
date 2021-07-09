@@ -12581,11 +12581,11 @@ bool CvUnitAI::AI_exploreRessource()
 					BonusTypes eBonus = pLoopPlot->getBonusType();
 					if (isWhalingBoat())
 					{
-						if (pLoopPlot->waterArea()->getNumBonuses((BonusTypes)GC.getDefineINT("BONUS_WHALE")) == 0)
+						if ((pLoopPlot->waterArea()->getNumBonuses((BonusTypes)GC.getDefineINT("BONUS_WHALE")) + pLoopPlot->waterArea()->getNumBonuses((BonusTypes)GC.getDefineINT("BONUS_WHALE2"))) == 0)
 						{
 							iPlotValue = 100;
 						}
-						else if (eBonus == (BonusTypes)GC.getDefineINT("BONUS_WHALE"))
+						else if (eBonus == (BonusTypes)GC.getDefineINT("BONUS_WHALE") || eBonus == (BonusTypes)GC.getDefineINT("BONUS_WHALE2"))
 						{
 							iPlotValue += 300;
 						}

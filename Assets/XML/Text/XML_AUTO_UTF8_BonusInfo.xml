@@ -1609,6 +1609,20 @@
         <Spanish>[TAB]La caza de ballenas para conseguir aceite y otros derivados ya se practicaba como una industria organizada en el año 875 d. C. En el siglo XVI había crecido hasta convertirse en la principal industria en las regiones costeras de España y Francia. Esta industria se expandió por el mundo, y se hizo cada vez más lucrativa en términos de comercio y recursos. En algunas partes de los océanos, a lo largo de las rutas migratorias de estos animales, la población de ballenas era particularmente densa, lo que atrajo grandes concentraciones de barcos balleneros. Esto condujo a un crecimiento sostenido de la industria hasta bien entrado el siglo XX. La reducción del número de ejemplares de algunas especies de ballena, hasta casi su extinción, condujo a la prohibición de su pesca en el año 1969, y al cese de su actividad industrial a nivel mundial a finales de los 80.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_HUMPBACK_WHALE</Tag>
+        <English>Humpback Whales</English>
+        <German>
+            <Text>Buckelwale</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_HUMPBACK_WHALE_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Humpback whales[COLOR_REVERT]</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Buckelwale[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_APPLES</Tag>
         <English>Apple Trees</English>
         <French>
