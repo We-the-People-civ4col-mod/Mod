@@ -2800,19 +2800,22 @@ class CvMainInterface:
 					iTotalHap = iHappiness - iUnhappiness
 					szBufferTotal = u"<font=4>" + u" <color="u"0,255,0" + u">"+str(iTotalHap) + u"</color>" + u"</font>"
 					szBufferTotal += u"<font=4>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar()) + u"</font>"
+					szBufferTotal += u"<font=4>" + u"=" + u"</font>"
 					screen.setLabel("TotalHappinessText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 69 / 99-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_HAPPINESS_POSITIVE, -1 )
 				elif iUnhappiness > iHappiness: # Red and we use Icon Unhappiness
 					iTotalUnhap = iUnhappiness - iHappiness
 					szBufferTotal = u"<font=4>" + u" <color="u"255,0,0" + u">"+str(iTotalUnhap) + u"</color>" + u"</font>"
 					szBufferTotal += u"<font=4>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_UNHAPPINESS).getChar()) + u"</font>"
+					szBufferTotal += u"<font=4>" + u"=" + u"</font>"
 					screen.setLabel("TotalHappinessText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 69 / 99-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_HAPPINESS_NEGATIVE, -1 )
 				else: # Yellow and we use Icon Happiness
 					iTotalZeroHap = 0
 					szBufferTotal = u"<font=4>" + u" <color="u"255,255,0" + u">" + str(iTotalZeroHap) + u"</color>" + u"</font>"
 					szBufferTotal += u"<font=4>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar()) + u"</font>"
+					szBufferTotal += u"<font=4>" + u"=" + u"</font>"
 					screen.setLabel("TotalHappinessText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 69 / 99-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_HAPPINESS_ZERO, -1 )
 				
-				szBufferHappiness = u"<font=4>" + u"=" + u"</font>"
+				szBufferHappiness = u"<font=4>" + u" " + u"</font>"
 				szBufferHappiness += u"<font=4>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar()) + u"</font>"
 				szBufferHappiness += u"<font=3>" + u"vs" + u"</font>"
 				screen.setLabel("HappinessText", "Background", szBufferHappiness, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 73 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_HAPPINESS, -1 )
