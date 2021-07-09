@@ -3343,7 +3343,7 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 			if (eThisFeature.isNorthMovementBonus() && eFromFeature.isNorthMovementBonus())
 			{
 				hasSameStreamFeature = true;
-				if (bMovementSouth)
+				if (!bMovementNorth)
 				{
 					bMovementAgainstStream = true;
 				}
@@ -3353,7 +3353,7 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 			else if (eThisFeature.isSouthMovementBonus() && eFromFeature.isSouthMovementBonus())
 			{
 				hasSameStreamFeature = true;
-				if (bMovementNorth)
+				if (!bMovementSouth)
 				{
 					bMovementAgainstStream = true;
 				}
@@ -3362,7 +3362,7 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 			else if (eThisFeature.isEastMovementBonus() && eFromFeature.isEastMovementBonus())
 			{
 				hasSameStreamFeature = true;
-				if (bMovementWest)
+				if (!bMovementEast)
 				{
 					bMovementAgainstStream = true;
 				}
@@ -3371,7 +3371,7 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 			else if (eThisFeature.isWestMovementBonus() && eFromFeature.isWestMovementBonus())
 			{
 				hasSameStreamFeature = true;
-				if (bMovementEast)
+				if (!bMovementWest)
 				{
 					bMovementAgainstStream = true;
 				}
