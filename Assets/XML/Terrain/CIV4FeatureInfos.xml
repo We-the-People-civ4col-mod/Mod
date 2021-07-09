@@ -263,7 +263,7 @@
                     <iValue>1</iValue>
                 </YieldIntegerPair>
             </RiverYieldIncreases>
-            <iMovement>2</iMovement>
+            <iMovement>3</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>50</iDefense>
             <iAppearance>3000</iAppearance>
@@ -516,7 +516,7 @@
             </RiverYieldIncreases>
             <iMovement>2</iMovement>
             <iSeeThrough>1</iSeeThrough>
-            <iDefense>50</iDefense>
+            <iDefense>10</iDefense>
             <iAppearance>2000</iAppearance>
             <iDisappearance>0</iDisappearance>
             <iTurnDamage>0</iTurnDamage>
@@ -931,7 +931,7 @@
                 </YieldIntegerPair>
             </YieldChanges>
             <RiverYieldIncreases/>
-            <iMovement>4</iMovement>
+            <iMovement>3</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>50</iDefense>
             <iAppearance>100</iAppearance>
@@ -1876,6 +1876,245 @@
             <iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
+            <Type>FEATURE_DENSE_FOREST</Type>
+            <Description>TXT_KEY_FEATURE_DENSE_FOREST</Description>
+            <Civilopedia>TXT_KEY_FEATURE_DENSE_FOREST_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_FEATURE_DENSE_FOREST</ArtDefineTag>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_BARLEY</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GRAPES</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_LUMBER</YieldType>
+                    <iValue>5</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COTTON</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_INDIGO</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_TOBACCO</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_SUGAR</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iValue>-2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_SILVER</YieldType>
+                    <iValue>-1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GOLD</YieldType>
+                    <iValue>-1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GEMS</YieldType>
+                    <iValue>-1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iValue>-1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_SHEEP</YieldType>
+                    <iValue>-4</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_CATTLE</YieldType>
+                    <iValue>-4</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iValue>-4</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <RiverYieldIncreases>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_BARLEY</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GRAPES</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COTTON</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_INDIGO</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_TOBACCO</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_LUMBER</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_SILVER</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GOLD</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GEMS</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </RiverYieldIncreases>
+            <iMovement>3</iMovement>
+            <iSeeThrough>1</iSeeThrough>
+            <iDefense>50</iDefense>
+            <iAppearance>5000</iAppearance>
+            <iDisappearance>0</iDisappearance>
+            <iTurnDamage>0</iTurnDamage>
+            <bGeneratedEveryRound>0</bGeneratedEveryRound>
+            <iGrowth>8</iGrowth>
+            <bNoCoast>1</bNoCoast>
+            <bOnlyCoastalLand>0</bOnlyCoastalLand>
+            <bNoRiver>0</bNoRiver>
+            <bNoAdjacent>0</bNoAdjacent>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresHills>0</bRequiresHills>
+            <bRequiresPeaks>0</bRequiresPeaks>
+            <bRequiresRiver>0</bRequiresRiver>
+            <bImpassable>0</bImpassable>
+            <bNoCity>0</bNoCity>
+            <bNoImprovement>0</bNoImprovement>
+            <bVisibleAlways>0</bVisibleAlways>
+            <OnUnitChangeTo/>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
+            <FootstepSounds>
+                <FootstepSound>
+                    <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
+                    <FootstepAudioScript>AS3D_UN_FOOT_UNIT_FOREST</FootstepAudioScript>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN_LOW</FootstepAudioType>
+                    <FootstepAudioScript>AS3D_UN_FOOT_UNIT_LOW_FOREST</FootstepAudioScript>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>FOOTSTEP_AUDIO_HORSE</FootstepAudioType>
+                    <FootstepAudioScript>AS3D_UN_HORSE_RUN_FOREST</FootstepAudioScript>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>LOOPSTEP_WHEELS</FootstepAudioType>
+                    <FootstepAudioScript/>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>ENDSTEP_WHEELS</FootstepAudioType>
+                    <FootstepAudioScript/>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>LOOPSTEP_WHEELS_2</FootstepAudioType>
+                    <FootstepAudioScript/>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>ENDSTEP_WHEELS_2</FootstepAudioType>
+                    <FootstepAudioScript/>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>LOOPSTEP_ARTILLERY</FootstepAudioType>
+                    <FootstepAudioScript>AS3D_UN_ARTILL_RUN_LOOP_FOREST</FootstepAudioScript>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>ENDSTEP_ARTILLERY</FootstepAudioType>
+                    <FootstepAudioScript>AS3D_UN_ARTILL_RUN_END_FOREST</FootstepAudioScript>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>LOOPSTEP_WHEELS_3</FootstepAudioType>
+                    <FootstepAudioScript>AS3D_UN_TREBUCHET_RUN_LEAVES</FootstepAudioScript>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>ENDSTEP_WHEELS_3</FootstepAudioType>
+                    <FootstepAudioScript>AS3D_UN_TREBUCHET_STOP_LEAVES</FootstepAudioScript>
+                </FootstepSound>
+            </FootstepSounds>
+            <WorldSoundscapeAudioScript>ASSS_FOREST_SELECT_AMB</WorldSoundscapeAudioScript>
+            <EffectType>EFFECT_BIRDSCATTER</EffectType>
+            <iEffectProbability>15</iEffectProbability>
+            <iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
+        </FeatureInfo>
+        <FeatureInfo>
             <Type>FEATURE_FOREST_TUNDRA</Type>
             <Description>TXT_KEY_FEATURE_FOREST_TUNDRA</Description>
             <Civilopedia>TXT_KEY_FEATURE_FOREST_TUNDRA_PEDIA</Civilopedia>
@@ -2223,7 +2462,7 @@
                     <iValue>1</iValue>
                 </YieldIntegerPair>
             </RiverYieldIncreases>
-            <iMovement>2</iMovement>
+            <iMovement>1</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>25</iDefense>
             <iAppearance>1000</iAppearance>
@@ -3074,7 +3313,7 @@
                 </YieldIntegerPair>
             </YieldChanges>
             <RiverYieldIncreases/>
-            <iMovement>3</iMovement>
+            <iMovement>2</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>25</iDefense>
             <iAppearance>200</iAppearance>
@@ -4057,7 +4296,7 @@
             <ArtDefineTag>ART_DEF_FEATURE_FOG</ArtDefineTag>
             <YieldChanges/>
             <RiverYieldIncreases/>
-            <iMovement>4</iMovement>
+            <iMovement>3</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>15</iDefense>
             <iAppearance>250</iAppearance>
@@ -4170,7 +4409,7 @@
             <ArtDefineTag>ART_DEF_FEATURE_SANDSTORM</ArtDefineTag>
             <YieldChanges/>
             <RiverYieldIncreases/>
-            <iMovement>4</iMovement>
+            <iMovement>3</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>15</iDefense>
             <iAppearance>250</iAppearance>
@@ -4271,7 +4510,7 @@
             <ArtDefineTag>ART_DEF_FEATURE_BLIZZARD</ArtDefineTag>
             <YieldChanges/>
             <RiverYieldIncreases/>
-            <iMovement>4</iMovement>
+            <iMovement>3</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>15</iDefense>
             <iAppearance>250</iAppearance>

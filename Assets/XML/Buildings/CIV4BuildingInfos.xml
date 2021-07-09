@@ -4287,6 +4287,7 @@
             </BuildingClassNeededs>
             <AIRequiredCatchmentAreaFeatures>
                 <eRequiredFeature>FEATURE_FOREST</eRequiredFeature>
+                <eRequiredFeature>FEATURE_DENSE_FOREST</eRequiredFeature>
                 <eRequiredFeature>FEATURE_FOREST_TUNDRA</eRequiredFeature>
                 <eRequiredFeature>FEATURE_LIGHT_FOREST</eRequiredFeature>
             </AIRequiredCatchmentAreaFeatures>

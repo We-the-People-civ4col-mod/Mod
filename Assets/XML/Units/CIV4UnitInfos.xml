@@ -22029,12 +22029,16 @@
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>
+                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+                    <iFeatureAttack>20</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
-                    <iFeatureAttack>10</iFeatureAttack>
+                    <iFeatureAttack>20</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>
                     <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
@@ -22056,7 +22060,7 @@
             <FeatureDefenses>
                 <FeatureDefense>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
-                    <iFeatureDefense>20</iFeatureDefense>
+                    <iFeatureDefense>40</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
@@ -22077,6 +22081,10 @@
                 <FeatureDefense>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+                    <iFeatureDefense>40</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
@@ -22254,6 +22262,10 @@
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
+                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
@@ -22421,6 +22433,10 @@
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
@@ -22731,6 +22747,10 @@
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
+                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
@@ -22884,12 +22904,16 @@
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>
+                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+                    <iFeatureAttack>20</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
-                    <iFeatureAttack>10</iFeatureAttack>
+                    <iFeatureAttack>20</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>
                     <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
@@ -22918,12 +22942,16 @@
                     <iFeatureDefense>20</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
+                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+                    <iFeatureDefense>40</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <iFeatureDefense>20</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
-                    <iFeatureDefense>20</iFeatureDefense>
+                    <iFeatureDefense>40</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
@@ -23326,6 +23354,10 @@
                 </FeatureAttack>
                 <FeatureAttack>
                     <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iFeatureAttack>-10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
                     <iFeatureAttack>-10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>
