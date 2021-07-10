@@ -106,9 +106,9 @@
             <Type>ART_DEF_TERRAIN_PLAINS</Type>
             <Path>Art/Terrain/Textures/PlainsBlend.dds</Path>
             <Grid>Art/Terrain/Textures/PlainsGrids.dds</Grid>
-            <Detail>Art/Terrain/Textures/PrairieDETAIL.dds</Detail>
+            <Detail>Art/Terrain/Textures/plainsdetail.dds</Detail>
             <Button>,Art/Interface/Buttons/baseterrain_terrainfeatures_atlas_custom.dds,7,2</Button>
-            <LayerOrder>12</LayerOrder>
+            <LayerOrder>5</LayerOrder>
             <TerrainGroup>TERRAIN_GROUP_LAND</TerrainGroup>
             <TextureBlend01>8,0</TextureBlend01>
             <TextureBlend02>1,0</TextureBlend02>
