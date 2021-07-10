@@ -2817,7 +2817,7 @@ class CvMainInterface:
 				
 				szBufferHappiness = u"<font=4>" + u" " + u"</font>"
 				szBufferHappiness += u"<font=4>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar()) + u"</font>"
-				szBufferHappiness += u"<font=3>" + u"vs" + u"</font>"
+				szBufferHappiness += u"<font=4>" + u"vs" + u"</font>"
 				screen.setLabel("HappinessText", "Background", szBufferHappiness, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 73 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_HAPPINESS, -1 )
 				
 				szBufferUnHappiness = u"<font=4>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_UNHAPPINESS).getChar()) + u" </font>"
