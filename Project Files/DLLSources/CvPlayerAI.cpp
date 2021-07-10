@@ -13066,7 +13066,7 @@ void CvPlayerAI::AI_doStrategy()
 			{
 				if ((iRebelPercent > iRebelsNeeded) &&  (AI_getStrategyDuration(STRATEGY_REVOLUTION_PREPARING) > GC.getGameINLINE().AI_adjustedTurn(20)))
 				{
-					if (getEuropeMilitary() < NBMOD_GetColonialMilitaryValue())
+					if (getEuropeMilitary() < (NBMOD_GetColonialMilitaryValue() * AI_getColonialMilitaryModifier()) / 100)
 					{
 						AI_setStrategy(STRATEGY_REVOLUTION_DECLARING);
 						//AI_clearStrategy(STRATEGY_GET_A_SHIP);	// TAC - AI Purchasing military units - koma13
@@ -13080,11 +13080,11 @@ void CvPlayerAI::AI_doStrategy()
 				{
 					int iValue = iRebelPercent + 100 * AI_getStrategyDuration(STRATEGY_REVOLUTION_DECLARING) / GC.getGameINLINE().AI_adjustedTurn(50);
 
-					if (iValue > 125)
+					if (iValue > 100)
 					{
 						// We have to take into account the determined trait, promotions, bonus vs. the king, ability to
 						// keep producing troops / weapons etc. The AI can probably declare with a significantly smaller army than the king and still win.
-						if (getEuropeMilitary() < NBMOD_GetColonialMilitaryValue())
+						if (getEuropeMilitary() < (NBMOD_GetColonialMilitaryValue() * AI_getColonialMilitaryModifier()) / 100)
 						{
 							// Erik: This is wrong, if we have any plans, just cancel them and declare instead.
 							// it's too late to try to conquer someone. If we're are war with indians we can
@@ -16282,4 +16282,17 @@ bool CvPlayerAI::AI_canHurryDockUnit() const
 	}
 	
 	return true;
+}
+
+// Returns the effective combat multiplier(*100) that only applies vs. the king.
+// Adjusts the estimated combat strength by  take into account traits (e.g. determined) and the AI bonus vs. its king
+// Note that 100 is the baseline so this function returns the additional modifier to be added. A return value of 150 indicates that our strength should be inflated by 50%
+int CvPlayerAI::AI_getColonialMilitaryModifier() const
+{
+	FAssert(!isHuman());
+
+	// Note: NBMOD_GetColonialMilitaryValue already takes the rebel modifier into account
+	int iModifier = getRebelCombatPercent();
+	iModifier += GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIKingCombatModifier();
+	return iModifier;
 }
