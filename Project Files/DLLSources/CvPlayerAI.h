@@ -462,7 +462,7 @@ public:
 
 	int AI_getYieldBestExportPrice(YieldTypes eYield) const;
 	void AI_hurryBestDockUnits(int iHurryCount);
-
+	int AI_getColonialMilitaryModifier() const;
 
 protected:
 
