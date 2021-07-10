@@ -2824,25 +2824,52 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 		}
 	}
 	// R&R, Robert Surcouf, Damage on Storm plots, Start
-	if (pPlot->getFeatureType() != NO_FEATURE)
+	if (pPlot->getFeatureType() != NO_FEATURE || pPlot->isPeak() || pPlot->isHills())
 	{
-		if (GC.getFeatureInfo(pPlot->getFeatureType()).getMovementCost() != 1)
+		// ray, making sure that Hills and Peaks reflect their Movement Costs
+		int iTotalMovementCostToDisplay = 0;
+		int iTotalTurnDamageToDisplay = 0;
+
+		// either we have Feature Movement Cost or we have Terrain Cost
+		if (pPlot->getFeatureType() != NO_FEATURE)
+		{
+			iTotalMovementCostToDisplay += GC.getFeatureInfo(pPlot->getFeatureType()).getMovementCost();
+			iTotalTurnDamageToDisplay += GC.getFeatureInfo(pPlot->getFeatureType()).getTurnDamage();
+		}
+		else if (pPlot->getTerrainType() != NO_TERRAIN)
+		{
+			iTotalMovementCostToDisplay += GC.getTerrainInfo(pPlot->getTerrainType()).getMovementCost();
+		}
+
+		// we now check for the base Movement of the Hills
+		if (pPlot->isHills())
+		{
+
+			iTotalMovementCostToDisplay += GC.getHILLS_EXTRA_MOVEMENT();
+		}
+		// otherwise maybe there is a Mountain
+		else if (pPlot->isPeak())
+		{
+			iTotalMovementCostToDisplay += GC.getPEAK_EXTRA_MOVEMENT();
+		}
+
+		if (iTotalMovementCostToDisplay != 1)
 		{	
 			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_FEATURE_MOVEMENT_COST", GC.getFeatureInfo(pPlot->getFeatureType()).getMovementCost()));
+			szString.append(gDLL->getText("TXT_KEY_FEATURE_MOVEMENT_COST", iTotalMovementCostToDisplay));
 		}
 	
-		int iDamage = GC.getFeatureInfo(pPlot->getFeatureType()).getTurnDamage();
 
-		if (iDamage > 0)
+		if (iTotalTurnDamageToDisplay > 0)
 		{
 			szString.append(CvWString::format(SETCOLR, TEXT_COLOR("COLOR_NEGATIVE_TEXT")));
 			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_PLOT_DAMAGE", iDamage));
+			szString.append(gDLL->getText("TXT_KEY_PLOT_DAMAGE", iTotalTurnDamageToDisplay));
 			szString.append(CvWString::format( ENDCOLR));
 		}
 	}
 	// R&R, Robert Surcouf, Damage on Storm plots, End
+
 }
 
 // city plot mouse over help - inaiwae - START
@@ -7075,6 +7102,7 @@ void CvGameTextMgr::setFeatureHelp(CvWStringBuffer &szBuffer, FeatureTypes eFeat
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_TERRAIN_MOVEMENT_COST", feature.getMovementCost()));
 	}
+	
 
 	if (feature.getDefenseModifier() != 0)
 	{
