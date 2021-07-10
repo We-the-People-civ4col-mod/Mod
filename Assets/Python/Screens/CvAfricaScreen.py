@@ -1383,7 +1383,7 @@ class CvAfricaScreen:
 
 			if self.iThisWinter:
 				unitsVolume = 1.0
-				screen.setSoundId(self.playSound("AS2D_SS_TUNDRALOOP"))
+				screen.setSoundId(self.playSound("AS2D_SS_DESERTLOOP"))
 			else:
 				unitsVolume = 0.75
 				screen.setSoundId(self.playSound("AS2D_SS_AFRICALOOP"))
