@@ -1231,4 +1231,12 @@
 		<DefineName>REAL_POPULATION_MULTIPLIER</DefineName>
 		<iDefineIntVal>1000</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>HILLS_EXTRA_MOVEMENT</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>PEAK_EXTRA_MOVEMENT</DefineName>
+		<iDefineIntVal>4</iDefineIntVal>
+	</Define>
 </Civ4Defines>
