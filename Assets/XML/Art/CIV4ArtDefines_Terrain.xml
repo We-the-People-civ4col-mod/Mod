@@ -368,9 +368,9 @@
         </TerrainArtInfo>
         <TerrainArtInfo>
             <Type>ART_DEF_TERRAIN_MARSH</Type>
-            <Path>Art/Terrain/Textures/SwampBLEND.dds</Path>
-            <Grid>Art/Terrain/Textures/SwampGRIDS.dds</Grid>
-            <Detail>Art/Terrain/Textures/SwampDETAIL.dds</Detail>
+            <Path>Art/Terrain/Textures/MarshBLEND.dds</Path>
+            <Grid>Art/Terrain/Textures/MarshGRIDS.dds</Grid>
+            <Detail>Art/Terrain/Textures/MarshDETAIL.dds</Detail>
             <Button>,Art/Interface/Buttons/BaseTerrain_TerrainFeatures_Atlas.dds,6,3</Button>
             <LayerOrder>9</LayerOrder>
             <TerrainGroup>TERRAIN_GROUP_LAND</TerrainGroup>
