@@ -121,6 +121,8 @@ void CvPlayerAI::AI_doTurnPre()
 	FAssertMsg(getLeaderType() != NO_LEADER, "getLeaderType() is not expected to be equal with NO_LEADER");
 	FAssertMsg(getCivilizationType() != NO_CIVILIZATION, "getCivilizationType() is not expected to be equal with NO_CIVILIZATION");
 
+	int m_estimatedUnemploymentCount = AI_estimateUnemploymentCount();
+
 	AI_invalidateCloseBordersAttitudeCache();
 
 	AI_doCounter();
@@ -16295,4 +16297,26 @@ int CvPlayerAI::AI_getColonialMilitaryModifier() const
 	int iModifier = getRebelCombatPercent();
 	iModifier += GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIKingCombatModifier();
 	return iModifier;
+}
+
+// Estimates the unemployment rate in our empire
+int CvPlayerAI::AI_estimateUnemploymentCount() const
+{
+	int cnt = 0;
+	int iLoop;
+	
+	for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
+	{
+		// Only count colonists that are
+		// 1) On the map (so not inside a city or on the docs) 
+		// 2) Not being transported
+		// 3) Not executing a mission(acitvity)
+		if (pLoopUnit->AI_getUnitAIType() == UNITAI_COLONIST && pLoopUnit->isOnMap() && !pLoopUnit->isCargo() &&
+			pLoopUnit->getGroup()->getActivityType() != ACTIVITY_MISSION)
+		{
+			cnt++;
+		}
+	}
+	
+	return cnt;	
 }

@@ -463,6 +463,10 @@ public:
 	int AI_getYieldBestExportPrice(YieldTypes eYield) const;
 	void AI_hurryBestDockUnits(int iHurryCount);
 	int AI_getColonialMilitaryModifier() const;
+	bool AI_shouldHurryUnit() const;
+
+	// TODO: Make protective and replace with a getter
+	int m_estimatedUnemploymentCount;
 
 protected:
 
@@ -575,9 +579,9 @@ protected:
 	int m_iWaveIndex;
 	// TAC - AI Revolution - koma13 - END
 	
-	bool AI_shouldHurryUnit() const;
 	int AI_getBestDockUnit() const;
 	bool AI_canHurryDockUnit() const;
+	int AI_estimateUnemploymentCount() const;
 
 	friend class CvGameTextMgr;
 };
