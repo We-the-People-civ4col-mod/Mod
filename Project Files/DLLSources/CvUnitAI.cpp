@@ -6588,13 +6588,15 @@ bool CvUnitAI::AI_europe()
 	}
 	// TAC - AI purchases military units - koma13 - END
 
-	const int iPotentialColonistsToHurry = std::max(0, cargoSpace() - getCargo() - kOwner.getNumEuropeUnits());
-	
-	if (iPotentialColonistsToHurry > 0)
+	if (kOwner.AI_shouldHurryUnit() && kOwner.m_estimatedUnemploymentCount < kOwner.getNumCities() * 2)
 	{ 
-		kOwner.AI_hurryBestDockUnits(std::min(GC.getDefineINT("DOCKS_NEXT_UNITS"), iPotentialColonistsToHurry));
+		const int iPotentialColonistsToHurry = std::max(0, cargoSpace() - getCargo() - kOwner.getNumEuropeUnits());
+		
+		if (iPotentialColonistsToHurry > 0)
+		{ 
+			kOwner.AI_hurryBestDockUnits(std::min(GC.getDefineINT("DOCKS_NEXT_UNITS"), iPotentialColonistsToHurry));
+		}
 	}
-
 	// Erik: Pick up the most valuable units first (e.g. statesmen)
 	// and leave the less valuable units (e.g. servants) for last
 	kOwner.sortEuropeUnits();
