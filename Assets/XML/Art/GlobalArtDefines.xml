@@ -259,6 +259,6 @@
     </Define>
     <Define>
         <DefineName>MAX_EVENT_TEXT</DefineName>
-        <iDefineIntVal>6</iDefineIntVal>
+        <iDefineIntVal>10</iDefineIntVal>
     </Define>
 </Civ4Defines>
