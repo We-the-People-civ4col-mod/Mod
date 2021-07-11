@@ -348,6 +348,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_WATERHOLE</Type>
+            <fScale>1.5</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/waterhole/Oase.nif</NIF>
+            <KFM>Art/Terrain/Resources/waterhole/Oase.kfm</KFM>
+            <Button>Art/Interface/Buttons/waterhole.dds</Button>
+            <FontButtonIndex>42</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_MINERALS</Type>
             <fScale>30.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>

@@ -1027,6 +1027,20 @@
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Oasen[COLOR_REVERT] entstehen gelegentlich in [LINK=TERRAIN_DESERT]Wüsten[\LINK].[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1]Die Neue Welt erschien den europäischen Einwanderern häufig wie ein Garten Eden, mit sattem Grün, üppigen Wäldern, exotischen Früchten, ausgedehnten Fischgründen und Urwäldern voller Wild. Doch es gab auch viele unwirtliche Regionen, insbesondere in wasserarmen, abgeschiedenen Gegenden im Landesinneren. Doch umsichtige Bauern können selbst an den unwirtlichsten Stellen Ackerbau betreiben - vorausgesetzt, sie finden eine Wasserstelle.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_WATERHOLE</Tag>
+        <English>Watering hole</English>
+        <German>
+            <Text>Tiertränkstelle:Tiertränkstellen</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_WATERHOLE_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Watering hole[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tiertränkstellen[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_PEARLS</Tag>
         <English>Shellfish</English>
         <French>
