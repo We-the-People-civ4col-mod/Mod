@@ -19,6 +19,8 @@
 #include "CvDLLFAStarIFaceBase.h"
 
 #include "CvSavegame.h"
+#include <algorithm>
+#include "BetterBTSAI.h"
 
 #define MULTICORE
 
@@ -123,6 +125,7 @@ void CvCityAI::AI_doTurn()
 	}
 	// R&R, ray, Natives Trading - END
 
+#if 0
 	if (isHuman())
 	{
 	    if (isProductionAutomated())
@@ -133,7 +136,7 @@ void CvCityAI::AI_doTurn()
 	}
 	
 	AI_doHurry();
-
+#endif
 	AI_doEmphasize();
 }
 
@@ -402,19 +405,25 @@ void CvCityAI::AI_chooseProduction()
 	{
 		if (getProduction() > 0)
 		{
-			// if less than 3 turns left, keep building current item
-			if (getProductionTurnsLeft() <= 3)
+			if (getProduction() >= getProductionNeeded(YIELD_HAMMERS))
 			{
 				// veto keep building if we've already stored enough hammers to complete
 				// the build. At this point we're just waiting for other yields (e.g. tools)
 				// to complete the build, so the AI should switch to another build to avoid banking 
 				// too many hammers
-				if (getProduction() < getProductionNeeded(YIELD_HAMMERS))
-				{
-					return;
-				}
+				clearOrderQueue();
+			}
+			// if less than 3 turns left, keep building current item
+			else if (getProductionTurnsLeft() <= 3)
+			{
+				return;
+			}
+			else
+			{
+				clearOrderQueue();
 			}
 		}
+		// If we're producing FF points we should consider swithcing production
 		clearOrderQueue();
 	}
 	
@@ -700,6 +709,12 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync) const
 				{
 					iOriginalValue = GET_PLAYER(getOwnerINLINE()).AI_unitValue(eLoopUnit, eUnitAI, area());
 
+					// Avoid picking the same unit that we recently stopped building due to missing
+					// non-hammer yields
+					if (getUnitProduction(eLoopUnit) >= getYieldProductionNeeded(eLoopUnit, YIELD_HAMMERS) &&
+						!checkRequiredYields(ORDER_TRAIN, eLoopUnit, YIELD_HAMMERS))
+						continue;
+
 					if (iOriginalValue > iBestOriginalValue)
 					{
 						iBestOriginalValue = iOriginalValue;
@@ -719,11 +734,16 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync) const
 		if (eLoopUnit != NO_UNIT)
 		{
 			if (!isHuman() || (GC.getUnitInfo(eLoopUnit).getDefaultUnitAIType() == eUnitAI))
-			{
-				
+			{				
 				if (canTrain(eLoopUnit))
 				{
 					iValue = GET_PLAYER(getOwnerINLINE()).AI_unitValue(eLoopUnit, eUnitAI, area());
+
+					// Avoid picking the same unit that we recently stopped building due to missing
+					// non-hammer yields
+					if (getUnitProduction(eLoopUnit) >= getYieldProductionNeeded(eLoopUnit, YIELD_HAMMERS) &&
+						!checkRequiredYields(ORDER_TRAIN, eLoopUnit, YIELD_HAMMERS))
+						continue;
 
 					if (iValue > ((iBestOriginalValue * 2) / 3))
 					{
@@ -871,8 +891,7 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 
 				if (iValue > 0)
 				{
-					const int iTurnsLeft = getProductionTurnsLeft(eLoopBuilding, 0);
-
+					
 					// Avoid picking the same building that we recently stopped building due to missing
 					// non-hammer yields!
 					if (getBuildingProduction(eLoopBuilding) >= getYieldProductionNeeded(eLoopBuilding, YIELD_HAMMERS) &&
@@ -881,30 +900,33 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 
 					if (bAsync)
 					{
-						iValue *= (GC.getASyncRand().get(25, "AI Best Building ASYNC") + 100);
+						iValue *= (GC.getASyncRand().get(10, "AI Best Building ASYNC") + 100);
 						iValue /= 100;
 					}
 					else
 					{
-						iValue *= (GC.getGameINLINE().getSorenRandNum(25, "AI Best Building") + 100);
+						iValue *= (GC.getGameINLINE().getSorenRandNum(10, "AI Best Building") + 100);
 						iValue /= 100;
 					}
 
-					const int iBuildingProduction = getBuildingProduction(eLoopBuilding);
+					const int iBuildingProduction = getBuildingProduction(eLoopBuilding);				
+					const int iTurnsLeft = getProductionTurnsLeft(eLoopBuilding, 0);
 
-					iValue += iBuildingProduction;
-					
+					iValue += (iBuildingProduction +  std::max(1, 10 - iTurnsLeft));
+
+
 					bool bValid = ((iMaxTurns <= 0) ? true : false);
 					if (!bValid)
 					{
+					
 						bValid = (iTurnsLeft <= GC.getGameINLINE().AI_turnsPercent(iMaxTurns, GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getConstructPercent()));
 					}
 
 					if (bValid)
 					{
-						iValue = iValue / 2 + iValue / (1 + iTurnsLeft);
+						//iValue = iValue / 2 + iValue / (1 + iTurnsLeft);
 
-						iValue = std::max(1, iValue);
+						//iValue = std::max(1, iValue);
 
 						if (iValue > iBestValue)
 						{
@@ -2245,14 +2267,14 @@ void CvCityAI::AI_doHurry(bool bForce)
 	PROFILE_FUNC();
 	FAssert(!isHuman() || isProductionAutomated());
 	
-	
 	if (getProduction() == 0)
 	{
 		return;
 	}
 
+	// TODO: Cache this
 	HurryTypes eGoldHurry = NO_HURRY;
-	for (int i = 0; i < GC.getNumHurryInfos(); ++i)
+	for (int i = FIRST_HURRY; i < GC.getNumHurryInfos(); ++i)
 	{
 		if (GC.getHurryInfo((HurryTypes)i).getGoldPerProduction() > 0)
 		{
@@ -2260,114 +2282,112 @@ void CvCityAI::AI_doHurry(bool bForce)
 			break;
 		}
 	}
-	
-	int iHurryValue = 0;
-	
-	
-	if (getProduction() >= getProductionNeeded(YIELD_HAMMERS))
+
+	const BuildingTypes eCurrentBuilding = getProductionBuilding();
+
+	typedef std::pair<int, BuildingTypes> BuildingHurryCost;
+	std::vector<BuildingHurryCost> buildingHurryCostList;
+
+	for (BuildingTypes iI = FIRST_BUILDING; iI < GC.getNumBuildingClassInfos(); iI++)
 	{
-		iHurryValue += 100;	
-	}
-	
-	bool bCritical = false;
-	
-	if (getProductionUnit() != NO_UNIT)
-	{
-		// Transport units are important so give them high priority
-		if (getProductionUnitAI() == UNITAI_WAGON)
+		const BuildingTypes eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iI)));
+
+		if (eLoopBuilding == NO_BUILDING || isHasBuilding(eLoopBuilding))
+			continue;
+
+		// Only consider buildings that are "hammer complete"	
+		if (getBuildingProduction(eLoopBuilding) >= getYieldProductionNeeded(eLoopBuilding, YIELD_HAMMERS) &&
+			!checkRequiredYields(ORDER_CONSTRUCT, eLoopBuilding, YIELD_HAMMERS))
 		{
-			if (area()->getNumAIUnits(getOwnerINLINE(), UNITAI_WAGON) == 0)
-			{
-				iHurryValue += 100;
-			}
+			// Need to push the order to make the hurry computation correct since only the current build is considered
+			pushOrderInternal(ORDER_CONSTRUCT, eLoopBuilding);
+			const int iHurryCost = hurryGold(eGoldHurry);
+			buildingHurryCostList.push_back(std::make_pair(iHurryCost, eLoopBuilding));
+			popOrderInternal();
 		}
-		if (getProductionUnitAI() == UNITAI_TRANSPORT_COAST)
+	}
+
+	if (!buildingHurryCostList.empty())
+	{
+		const BuildingHurryCost bhc = *std::min_element(buildingHurryCostList.begin(), buildingHurryCostList.end());
+		const BuildingTypes eHurryBuilding = bhc.second;
+
+		if (!canHurry(eGoldHurry, true))
 		{
-			CvArea* const pWaterArea = waterArea();
-			
-			if (pWaterArea != NULL)
-			{ 
-				if (GET_PLAYER(getOwnerINLINE()).AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_TRANSPORT_COAST) == 0)
+			// If we can't hurry anything, restore the old build if appropriate
+			if (eCurrentBuilding != NO_BUILDING)
+			{
+				pushOrder(ORDER_CONSTRUCT, eCurrentBuilding, -1, false, false, false);
+				
+				if (gCityLogLevel >= 2)
 				{
-					iHurryValue += 100;
+					logBBAI(" Player %S City %S restoring (no hurry) production of %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+						getName().GetCString(), GC.getBuildingInfo(eCurrentBuilding).getDescription());
 				}
 			}
 		}
-
-		// TAC - AI purchases military units - koma13 - START
-		iHurryValue += 100;
-
-		if (AI_isDanger())
+		else
 		{
-			if (getProductionUnitAI() == UNITAI_DEFENSIVE)
+			// TODO: Log that we can't hurry
+			pushOrder(ORDER_CONSTRUCT, eHurryBuilding, -1, false, false, false);
+			hurry(eGoldHurry);
+			m_bHasHurried = true;
+			// Return here so we don't attempt to rush more than a single build per turn
+			return;
+		}
+	}
+
+	const UnitTypes eCurrentUnit = getProductionUnit();
+
+	typedef std::pair<int, UnitTypes> UnitHurryCost;
+	std::vector<UnitHurryCost> unitHurryCostList;
+
+	for (UnitTypes iI = FIRST_UNIT; iI < GC.getNumUnitClassInfos(); iI++)
+	{
+		const UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
+
+		if (eLoopUnit == NO_UNIT)
+			continue;
+
+		// Only consider buildings that are "hammer complete"	
+		if (getUnitProduction(eLoopUnit) >= getYieldProductionNeeded(eLoopUnit, YIELD_HAMMERS) &&
+			!checkRequiredYields(ORDER_TRAIN, eLoopUnit, YIELD_HAMMERS))
+		{
+			// Need to push the order to make the hurry computation correct since only the current build is considered
+			pushOrderInternal(ORDER_TRAIN, eLoopUnit);
+			const int iHurryCost = hurryGold(eGoldHurry);
+			unitHurryCostList.push_back(std::make_pair(iHurryCost, eLoopUnit));
+			popOrderInternal();
+		}
+	}
+
+	if (!unitHurryCostList.empty())
+	{
+		const UnitHurryCost uhc = *std::min_element(unitHurryCostList.begin(), unitHurryCostList.end());
+		const UnitTypes eHurryUnit = uhc.second;
+
+		if (!canHurry(eGoldHurry, true))
+		{
+			// If we can't hurry anything, restore the old build if appropriate
+			if (eCurrentUnit != NO_UNIT)
 			{
-				bCritical = true;
+				pushOrder(ORDER_TRAIN, eCurrentUnit, NO_UNITAI, false, false, false);
+
+				if (gCityLogLevel >= 2)
+				{
+					logBBAI(" Player %S City %S restoring (no hurry) production of %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+						getName().GetCString(), GC.getUnitInfo(eCurrentUnit).getDescription());
+				}
 			}
 		}
-		// TAC - AI purchases military units - koma13 - END
-	}
-	else if (getProductionBuilding() != NO_BUILDING)
-	{
-		iHurryValue += AI_buildingValue(getProductionBuilding());
-		if (getDefenseModifier() == 0)
+		else
 		{
-			iHurryValue += GC.getBuildingInfo(getProductionBuilding()).getDefenseModifier() * 2;
-			if (AI_isDanger())
-			{
-				bCritical = true;
-			}
-		}
-	}
-	
-	int iThreshold = 50;
-	if (getPopulation() > 3)
-	{
-		iThreshold -= 3 * (getPopulation() - 2);
-		iThreshold = std::max(20, iThreshold);
-	}
-	
-	bool bAffordable = GET_PLAYER(getOwnerINLINE()).AI_getHurrySpending() < GET_PLAYER(getOwnerINLINE()).AI_getTotalIncome() / 2;
-	if (getHurryYieldDeficit(eGoldHurry, YIELD_LUMBER) == 0)
-	{
-		iHurryValue += 25;
-		if (bAffordable)
-		{
-			iHurryValue += 25;
-		}
-	}
-	
-	// TAC - AI Buildings - koma13 - START
-	//if (!bCritical && (iHurryValue < iThreshold))
-	if (!bCritical && (iHurryValue < iThreshold) && (GET_PLAYER(getOwnerINLINE()).getGold() <= 25000))
-	// TAC - AI Buildings - koma13 - END
-	{
-		if (getPopulation() < 4)
-		{
-			return;
-		}
-		
-		if (GC.getGameINLINE().getSorenRandNum(100, "AI Hurry") > 25)
-		{
-			return;
-		}
-		
-		if (bAffordable)
-		{
+			pushOrder(ORDER_TRAIN, eHurryUnit, NO_UNITAI, false, false, false);
+			hurry(eGoldHurry);
+			m_bHasHurried = true;
 			return;
 		}
 	}
-	
-
-	for (int i = 0; i < GC.getNumHurryInfos(); ++i)
-	{
-		if (canHurry((HurryTypes)i))
-		{
-			hurry((HurryTypes)i);
-			return;
-		}
-	}
-	
-	return;
 }
 
 void CvCityAI::AI_doNativeTrade()

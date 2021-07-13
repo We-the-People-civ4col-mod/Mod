@@ -16700,7 +16700,7 @@ CvUnit* CvPlayer::buyEuropeUnit(UnitTypes eUnit, int iPriceModifier)
 		GET_TEAM(getTeam()).changeUnitsPurchasedHistory(pUnit->getUnitClassType(), 1);
 		gDLL->getEventReporterIFace()->unitBoughtFromEurope(getID(), pUnit->getID());
 		if (gPlayerLogLevel >= 1) logBBAI(" Player %d (%S) buys Unit:%S Gold:%d", 
-			getID(), getCivilizationDescription(0), pUnit->getNameOrProfessionKey(), iPrice);
+			getID(), getCivilizationDescription(0), pUnit->getNameAndProfession().GetCString(), iPrice);
 	}
 
 

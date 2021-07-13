@@ -179,6 +179,8 @@ public:
 
 	void AI_doSettlerProfessionCheat();
 
+	void AI_doHurry(bool bForce = false);
+
 protected:
 
 	void AI_resetSavedData();
@@ -224,7 +226,6 @@ protected:
 	int m_iWorkersNeeded;
 	int m_iWorkersHave;
 
-	void AI_doHurry(bool bForce = false);
 	void AI_doEmphasize();
 	void AI_doNativeTrade();
 	int AI_calculateCulturePressure() const;

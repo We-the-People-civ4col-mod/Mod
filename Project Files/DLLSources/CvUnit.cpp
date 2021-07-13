@@ -30,6 +30,8 @@
 #include "CvTradeRoute.h"
 
 #include "CvSavegame.h"
+#include "BetterBTSAI.h"
+
 // Public Functions...
 
 CvUnitTemporaryStrengthModifier::CvUnitTemporaryStrengthModifier(CvUnit* pUnit, ProfessionTypes eProfession) :
@@ -5288,6 +5290,15 @@ void CvUnit::doLearn()
 	pLearnUnit->convert(this, true);
 
 	gDLL->getEventReporterIFace()->unitLearned(pLearnUnit->getOwnerINLINE(), pLearnUnit->getID());
+
+	if (gUnitLogLevel >= 1)
+	{
+		CvWString szTempString;
+		getUnitAIString(szTempString, AI_getUnitAIType());
+
+		logBBAI(" Player %S Unit %S has finished learning with UnitAI (%S)", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+			getNameAndProfession().GetCString(), szTempString.GetCString());
+	}
 }
 
 UnitTypes CvUnit::getLearnUnitType(const CvPlot* pPlot) const
