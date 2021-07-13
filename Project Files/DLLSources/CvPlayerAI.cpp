@@ -8019,7 +8019,7 @@ void CvPlayerAI::AI_doProfessions()
 													getUnitAIString(szTempString, eUnitAI);
 
 													logBBAI(" Player(%S) City(%S) emits civilian Unit(bdone) (%S) with UnitAI (%S)",
-														getCivilizationDescription(), pLoopCity->getNameKey(), pUnit->getNameOrProfessionKey(), szTempString.GetCString());
+														getCivilizationDescription(), pLoopCity->getNameKey(), pUnit->getNameAndProfession().GetCString(), szTempString.GetCString());
 												}
 												break;
 											}
@@ -8113,7 +8113,7 @@ void CvPlayerAI::AI_doProfessions()
 							getUnitAIString(szTempString, eUnitAI);
 								
 							logBBAI(" Player(%S) City (%S) emits civilian Unit (!bdone) (%S) with UnitAI (%S)",
-								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getNameOrProfessionKey(), szTempString.GetCString());
+								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getNameAndProfession().GetCString(), szTempString.GetCString());
 
 						}
 					}
@@ -8179,7 +8179,7 @@ void CvPlayerAI::AI_doProfessions()
 							pLoopCity->removePopulationUnit(pBestUnit, false, eProfession);
 							pBestUnit->AI_setUnitAIType(UNITAI_DEFENSIVE);
 							if (gPlayerLogLevel >= 1) logBBAI(" Player (%S)'s City (%S) emits military Unit (%S)",
-								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getNameOrProfessionKey());
+								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getNameAndProfession().GetCString());
 						}
 						else
 						{

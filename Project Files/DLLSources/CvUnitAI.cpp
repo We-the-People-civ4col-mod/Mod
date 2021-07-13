@@ -23,6 +23,7 @@
 #include "CvDLLFAStarIFaceBase.h"
 
 #include "CvSavegame.h"
+#include "BetterBTSAI.h"
 
 #define FOUND_RANGE				(7)
 
@@ -8365,6 +8366,15 @@ bool CvUnitAI::AI_betterJob()
 		pCity->removePopulationUnit(this, false, eOriginalProfession);
 		AI_setUnitAIType(eOriginalAI);
 		AI_setMovePriority(iOriginalMovePriority);
+
+		if (gUnitLogLevel >= 1)
+		{ 
+			CvWString szTempString;
+			getUnitAIString(szTempString, AI_getUnitAIType());
+
+			logBBAI(" Player %S Unit %S better job %S with UnitAI (%S)", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+				getName().GetCString(), getNameAndProfession().GetCString(), szTempString.GetCString());
+		}
 	}
 	
 	if (pBestUnit != NULL)

@@ -513,6 +513,14 @@ void CvCity::doTurn()
 	doGrowth();
 	doCulture();
 	doPlotCulture(false, getOwnerINLINE(), getCultureRate());
+	
+	if (!isHuman())
+	{
+		// Hurry needs to happen just before the production processing to avoid
+		// the hurried yields from being used for other purposes
+		static_cast<CvCityAI*>(this)->AI_doHurry();
+	}
+	
 	doProduction(bAllowNoProduction);
 	
 	if (!isNative())
@@ -2523,6 +2531,7 @@ bool CvCity::canHurry(HurryTypes eHurry, bool bTestVisible) const
 		{
 			return false;
 		}
+#if 0
 		// TAC - AI Military Buildup - koma13 - START
 		CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
 		if (!kPlayer.isHuman())
@@ -2547,8 +2556,8 @@ bool CvCity::canHurry(HurryTypes eHurry, bool bTestVisible) const
 			}
 		}
 		// TAC - AI Military Buildup - koma13 - END
+#endif
 	}
-
 	return true;
 }
 
@@ -5250,6 +5259,56 @@ void CvCity::updateCacheStorageLossTradingValues(BuildingTypes eBuilding, bool b
 	}
 }
 
+void CvCity::pushOrderInternal(OrderTypes eOrder, int eBuildingOrUnit)
+{
+	OrderData order;
+	order.eOrderType = eOrder;
+	
+	if (eOrder == ORDER_CONSTRUCT)
+	{
+		order.iData1 = static_cast<BuildingTypes>(eBuildingOrUnit);
+		order.iData2 = -1; // Unused
+	
+		if (gCityLogLevel >= 2) 
+		{ 
+			logBBAI(" Player %S City %S considers hurrying of building %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+				getName().GetCString(), GC.getBuildingInfo(static_cast<BuildingTypes>(eBuildingOrUnit)).getDescription());
+		}
+	}
+	else if (eOrder == ORDER_TRAIN)
+	{
+		order.iData1 = static_cast<UnitTypes>(eBuildingOrUnit);
+		order.iData2 = NO_UNITAI;
+
+		if (gCityLogLevel >= 2)
+		{		
+			logBBAI(" Player %S City %S considers hurrying of unit %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+				getName().GetCString(), GC.getUnitInfo(static_cast<UnitTypes>(eBuildingOrUnit)).getDescription());
+		}
+	}
+	else
+	{
+		FAssertMsg(false, "Unsupported OrderType");
+	}
+	order.bSave = false;
+
+	m_orderQueue.insertAtBeginning(order);
+
+	startHeadOrder();
+
+}
+
+void CvCity::popOrderInternal()
+{
+	CLLNode<OrderData>* pOrderNode = headOrderQueueNode();
+
+	if (pOrderNode == NULL)
+		return;
+
+	m_orderQueue.deleteNode(pOrderNode);
+	pOrderNode = NULL;
+}
+
 bool CvCity::isEverOwned(PlayerTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
@@ -6544,6 +6603,12 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 			}
 
 			gDLL->getEventReporterIFace()->unitBuilt(this, pUnit);
+
+			if (gCityLogLevel >= 1) { // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
+				CvWString szString; getUnitAIString(szString, pUnit->AI_getUnitAIType());
+				logBBAI("    City %S finishes production of unit %S with UNITAI %S", getName().GetCString(), pUnit->getName(0).GetCString(), szString.GetCString());
+			}
+
 		}
 		break;
 
@@ -6571,6 +6636,9 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 			}
 
 			gDLL->getEventReporterIFace()->buildingBuilt(this, eConstructBuilding);
+
+			if (gCityLogLevel >= 1) // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
+				logBBAI("    City %S finishes production of building %S", getName().GetCString(), GC.getBuildingInfo(eConstructBuilding).getDescription());
 		}
 		break;
 
@@ -7587,9 +7655,17 @@ void CvCity::doProduction(bool bAllowNoProduction)
 
 	if (!isHuman() || isProductionAutomated())
 	{
-		if (!isProduction() || isProductionConvince() || AI_isChooseProductionDirty() || getProduction() > getProductionNeeded(YIELD_HAMMERS))
+		if (!isProduction() || isProductionConvince() || AI_isChooseProductionDirty() || 
+			getProduction() > getProductionNeeded(YIELD_HAMMERS))
 		{
-			AI_chooseProduction();
+			// If we've just rushed a building, let it complete before choosing a new build
+			//const CLLNode<OrderData>* pOrderNode = headOrderQueueNode();
+
+			//if (pOrderNode == NULL || pOrderNode != NULL && !checkRequiredYields(pOrderNode->m_data.eOrderType, pOrderNode->m_data.iData1, YIELD_HAMMERS))
+			if (!m_bHasHurried)
+			{ 
+				AI_chooseProduction();
+			}
 		}
 	}
 
@@ -7623,6 +7699,8 @@ void CvCity::doProduction(bool bAllowNoProduction)
 			if (getProduction() >= getProductionNeeded(YIELD_HAMMERS))
 			{
 				popOrder(0, true, true);
+				if (m_bHasHurried)
+					m_bHasHurried = false;
 			}
 		}
 	}
