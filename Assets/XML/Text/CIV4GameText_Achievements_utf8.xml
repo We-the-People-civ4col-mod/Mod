@@ -13,14 +13,14 @@
         <Italian>[COLOR_HIGHLIGHT_TEXT]Cronaca[COLOR_REVERT] [COLOR:140:255:40:255]&lt; %s1_ModKey &gt;[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]Crónica[COLOR_REVERT] [COLOR:140:255:40:255]&lt; %s1_ModKey &gt;[COLOR_REVERT]</Spanish>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_ACHIEVE_ADVISOR_TITLE</Tag>
-		<English>Chronicle</English>
-		<French>Chronique</French>
-		<German>Ereignischronik</German>
-		<Italian>Cronaca</Italian>
-		<Spanish>Crónica</Spanish>
-	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_ADVISOR_TITLE</Tag>
+        <English>Chronicle</English>
+        <French>Chronique</French>
+        <German>Ereignischronik</German>
+        <Italian>Cronaca</Italian>
+        <Spanish>Crónica</Spanish>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVES</Tag>
         <English>%s1 - %d2 [NUM2:Achievement:Achievements]</English>
