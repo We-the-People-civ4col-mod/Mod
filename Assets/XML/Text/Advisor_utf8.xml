@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <Civ4GameText xmlns="http://www.firaxis.com">
-	<TEXT>
-		<Tag>TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT</Tag>
-		<English>Jump to settlement</English>
-		<German>Siedlung anzeigen</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT_CITY</Tag>
-		<English>Jump to %s1_city</English>
-		<German>%s1_city anzeigen</German>
-	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT</Tag>
+        <English>Jump to settlement</English>
+        <German>Siedlung anzeigen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT_CITY</Tag>
+        <English>Jump to [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</English>
+        <German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] anzeigen</German>
+    </TEXT>
 </Civ4GameText>
