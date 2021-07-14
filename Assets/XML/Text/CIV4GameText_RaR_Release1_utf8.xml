@@ -412,14 +412,6 @@
         <Spanish>[ICON_BULLET]%D1%% efecto de la Revolución de Cambio on Rebelde [ICON_STRENGTH]</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_TRAIT_TREASURE_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% more [ICON_GOLD] when villages are captured</English>
-        <French>[ICON_BULLET]Confère %D1%% [ICON_GOLD] quand des villages sont capturés</French>
-        <German>[ICON_BULLET]%D1%% mehr [ICON_GOLD] bei Eroberung von Siedlungen der Ureinwohner</German>
-        <Italian>[ICON_BULLET]Rende %D1%% [ICON_GOLD] quando vengono conquistati i villaggi</Italian>
-        <Spanish>[ICON_BULLET]Rinde %D1%% [ICON_GOLD] cuando se capturan aldeas</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_BOUGHT_SMUGGLERS</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]smugglers[COLOR_REVERT] we have hired await your orders in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
         <French>Les contrebandiers que nous avons recrutés attendent vos ordres à %s1_city, Sir.</French>
@@ -431,16 +423,16 @@
         <French>[ICON_BULLET]Peut voir les gardes-forestiers.</French>
         <German>[ICON_BULLET]Kann Ranger sehen.</German>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_COASTAL_TRANSPORT_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Coastal ships[COLOR_REVERT] are built to move goods and people. They are small but fast, faster and more spacious than wagon trains. Because of their shallow draft they are unable to use ocean fields, so they can't sail to Europe. The small coastal ship has two slots for goods and people. The bigger one has three slots. Both can only defend themselves poorly.</English>
-		<German>[COLOR_HIGHLIGHT_TEXT]Küstensegler[COLOR_REVERT] sind eigens für den küstennahen Transport von Waren und Menschen gedacht. Sie sind zwar klein, dafür aber sehr wendig und außerdem deutlich geräumiger und schneller als ein Planwagen. Sie können nur in [COLOR_HIGHLIGHT_TEXT]Küstennähe[COLOR_REVERT] eingesetzt werden. Den Ozean kann man mit ihnen nicht befahren, so dass sie nicht nach Europa segeln können. Der Kleine Küstensegler hat zwei Frachtplätze, der große Küstensegler drei. Beide können sich nur schlecht verteidigen.</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_COASTAL_SHIPS_PEDIA</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Coastal Shipping[COLOR_REVERT] uses small yet capacious sailing vessels to move goods and people. These commercial boats begin to operate soon after colonies are established in the New World. Small ships designed for shallow water can't sail to Europe or Africa.</English>
-		<German>[COLOR_UNIT_TEXT]Küstenschifffahrt[COLOR_REVERT] wird, wie der Name schon sagt, nur nahe der Küste betrieben. Kleine und handliche - dafür aber recht geräumige - Segler eignen sich bestens dazu, bereits sehr früh nach der Landung in der Neuen Welt Schiffe gebaut zu werden, damit Waren schnell zwischen den Kolonien hin- und hertransportiert werden können, bis ein Straßennetz errichtet werden kann. Aufgrund ihrer geringen Größe können die Küstensegler nicht auf den Ozean hinaus fahren und auch nicht nach Europa oder Afrika segeln.</German>
-	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COASTAL_TRANSPORT_STRATEGY</Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]Coastal ships[COLOR_REVERT] are built to move goods and people. They are small but fast, faster and more spacious than wagon trains. Because of their shallow draft they are unable to use ocean fields, so they can't sail to Europe. The small coastal ship has two slots for goods and people. The bigger one has three slots. Both can only defend themselves poorly.</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Küstensegler[COLOR_REVERT] sind eigens für den küstennahen Transport von Waren und Menschen gedacht. Sie sind zwar klein, dafür aber sehr wendig und außerdem deutlich geräumiger und schneller als ein Planwagen. Sie können nur in [COLOR_HIGHLIGHT_TEXT]Küstennähe[COLOR_REVERT] eingesetzt werden. Den Ozean kann man mit ihnen nicht befahren, so dass sie nicht nach Europa segeln können. Der Kleine Küstensegler hat zwei Frachtplätze, der große Küstensegler drei. Beide können sich nur schlecht verteidigen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COASTAL_SHIPS_PEDIA</Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]Coastal Shipping[COLOR_REVERT] uses small yet capacious sailing vessels to move goods and people. These commercial boats begin to operate soon after colonies are established in the New World. Small ships designed for shallow water can't sail to Europe or Africa.</English>
+        <German>[COLOR_UNIT_TEXT]Küstenschifffahrt[COLOR_REVERT] wird, wie der Name schon sagt, nur nahe der Küste betrieben. Kleine und handliche - dafür aber recht geräumige - Segler eignen sich bestens dazu, bereits sehr früh nach der Landung in der Neuen Welt Schiffe gebaut zu werden, damit Waren schnell zwischen den Kolonien hin- und hertransportiert werden können, bis ein Straßennetz errichtet werden kann. Aufgrund ihrer geringen Größe können die Küstensegler nicht auf den Ozean hinaus fahren und auch nicht nach Europa oder Afrika segeln.</German>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELDS_CONSUMED_WITH_CHAR</Tag>
         <English>Consumes : %s1_symbol_list</English>
@@ -653,7 +645,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_FROM_HANDICAP</Tag>
-        <English>%D1: (Difficulty Level)</English>
+        <English>%D1: (difficulty level)</English>
         <French>%D1: (niveau de difficulté)</French>
         <German>%D1: (Schwierigkeitsgrad)</German>
         <Italian>%D1 per il livello di difficoltà</Italian>
@@ -661,7 +653,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_BASE_ATTITUDE</Tag>
-        <English>%D1: (Base Attitude)</English>
+        <English>%D1: (base attitude)</English>
         <French>%D1: (Attitude de base)</French>
         <German>%D1: (Grundhaltung)</German>
         <Italian>%D1: (atteggiamento iniziali)</Italian>
@@ -669,7 +661,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_TOTAL_ATTITUDE</Tag>
-        <English>%D1: (Total Attitude)</English>
+        <English>%D1: (total attitude)</English>
         <French>%D1: (Attitude totale)</French>
         <German>%D1: (Gesamthaltung)</German>
         <Italian>%D1: (Total Attitude)</Italian>
@@ -709,7 +701,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_DEFENSIVE_PACT</Tag>
-        <English>%D1: "Our Defensive Pact proves that we are close friends."</English>
+        <English>%D1: "Our defensive pact proves that we are close friends."</English>
         <French>%D1 : "Notre pacte de défense prouve la solidité de notre amitié."</French>
         <German>%D1: "Unser Verteidigungsbündnis unterstreicht unsere freundschaftliche Verbundenheit."</German>
         <Italian>%D1: "La nostra alleanza difensiva dimostra che siamo buoni amici."</Italian>
@@ -717,7 +709,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_RIVAL_DEFENSIVE_PACT</Tag>
-        <English>%D1: "We are upset that you have signed Defensive Pacts with our rivals."</English>
+        <English>%D1: "We are upset that you have signed defensive pacts with our rivals."</English>
         <French>%D1 : "Nous sommes contrariés d'apprendre que vous avez signé un pacte de défense avec nos ennemis."</French>
         <German>%D1: "Wir schätzen es gar nicht, dass Ihr Verteidigungsbündnisse mit unseren Gegnern schließt!"</German>
         <Italian>%D1: "Siamo sconvolti dal fatto che tu abbia firmato alleanze difensive con i nostri rivali."</Italian>
@@ -768,7 +760,7 @@
         <English>%D1: "Your way of life threatens ours."</English>
         <French>%D1 : "Votre mode de vie est une menace pour le nôtre."</French>
         <German>%D1: "Eure Lebensweise ist eine Gefahr für uns."</German>
-        <Italian>%D1: "Il tuo stile di vita è una minaccia per il nostro".</Italian>
+        <Italian>%D1: "Il tuo stile di vita è una minaccia per il nostro."</Italian>
         <Spanish>%D1: "Vuestro modo de vida amenaza el nuestro."</Spanish>
     </TEXT>
     <TEXT>
@@ -791,7 +783,7 @@
         <French>%D1 : "Les événements passés prouvent qu'on ne peut vous faire confiance."</French>
         <German>%D1: "Die vergangenen Ereignisse haben Eure schlechten Absichten bewiesen. "</German>
         <Italian>%D1: "Gli eventi passati ci hanno dimostrato la tua natura malvagia."</Italian>
-        <Spanish>%D1: "Los acontecimientos pasados nos han demostrado vuestra maldad. "</Spanish>
+        <Spanish>%D1: "Los acontecimientos pasados nos han demostrado vuestra maldad."</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_LOST_WAR_ATTITUDE</Tag>
@@ -801,13 +793,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_TEAMSIZE_ATTITUDE</Tag>
-        <English>%D1: "You have too many allies." </English>
+        <English>%D1: "You have too many allies."</English>
         <French>%D1: "Vous avez trop d'alliés."</French>
         <German>%D1: "Ihr habt zu viele Verbündete."</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_SAME_TEAM</Tag>
-        <English>%D1: "We're allies." </English>
+        <English>%D1: "We're allies."</English>
         <French>%D1: "Nous sommes alliés."</French>
         <German>%D1: "Wir sind Verbündete."</German>
     </TEXT>
@@ -832,7 +824,7 @@
         <English>%D1: "The potential for rebellion is growing in the colonies!"</English>
         <French>%D1 : "Vous commencez à devenir un poids pour mon armée."</French>
         <German>%D1: "In den Kolonien wächst das Potential zur Rebellion!"</German>
-        <Italian>%D1: "Stai diventando un salasso, per il mio esercito".</Italian>
+        <Italian>%D1: "Stai diventando un salasso, per il mio esercito."</Italian>
         <Spanish>%D1: "Sois una sanguijuela de efectivos militares."</Spanish>
     </TEXT>
     <TEXT>
@@ -972,8 +964,8 @@
         <English>[ICON_BULLET]Wild Animal</English>
         <French>[ICON_BULLET]Animal sauvage</French>
         <German>[ICON_BULLET]Wildes Tier</German>
-        <Italian>[ICON_BULLET]Wild Animal</Italian>
-        <Spanish>[ICON_BULLET]Wild Animal</Spanish>
+        <Italian>[ICON_BULLET]Animale selvatico</Italian>
+        <Spanish>[ICON_BULLET]Animal salvaje</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ANIMAL_CANNOT_ENTER_PLAYER_TERRITORY</Tag>
@@ -1033,19 +1025,21 @@
         <Tag>TXT_KEY_UNIT_BLACKBEAR_PEDIA</Tag>
         <English>[TAB]The American black bear (Ursus americanus) is medium-sized by world standards, but nonetheless the continent's smallest. It is the most common bear species. Black bears are omnivores, with their diets varying greatly depending on season and location. They typically live in forested areas, but do leave forests in search of food. They can be attracted to human communities because of the availability of food. The American black bear is listed by the IUCN as Least Concern, due to the species' widespread distribution with a population estimated to be twice that of all other bear species combined. American black bears often mark trees using their teeth and claws as a form of communication with other bears, a behaviour common to many species of bears.</English>
         <French>[TAB]L'ours noir (Ursus americanus) est l'ours le plus commun en Amérique du Nord. Il se rencontre dans une aire géographique qui s'étend du nord du Canada et de l'Alaska au nord du Mexique, et des côtes atlantiques aux côtes pacifiques de l'Amérique du Nord. Il est présent dans un bon nombre d'États américains et dans toutes les provinces canadiennes. Il préfère les forêts et les montagnes où il trouve sa nourriture et peut se cacher. La population d'ours noirs était sans doute de deux millions d'individus autrefois. Aujourd'hui, l'espèce est protégée et on estime qu'il existe entre 500 000 et 750 000 ours noirs sur ce continent.</French>
-        <German>[TAB]Der Amerikanische Schwarzbär (Ursus americanus), auch Baribal genannt, ist eine in Nordamerika lebende Raubtierart aus der Familie der Bären (Ursidae). In seiner Heimat wird er meistens als black bear bezeichnet oder als Baribal. Im Vergleich zum eher gefürchteten Grizzlybär gilt der Schwarzbär als weniger gefährlich. Amerikanische Schwarzbären haben den typischen Körperbau der Bären. Der Rumpf ist massiv, die Gliedmaßen kräftig. Die Pfoten haben je fünf starke Krallen, welche die Bären zum Reißen, Graben und Klettern einsetzen. Der Schwanz ist wie bei allen Bären nur ein kurzer Stummel. Der große Kopf ist durch die eher lange, unbehaarte Schnauze, die kleinen Augen und die runden, aufgerichteten Ohren charakterisiert. Trotz ihres Namens sind nicht alle Amerikanischen Schwarzbären schwarz gefärbt. Es gibt auch silbergraue und rötlichbraune Varianten, und manche Baribals haben eine mit Grizzlies nahezu identische Fellfarbe. Die Färbung des Fells hängt mit dem Lebensraum zusammen: während Tiere, die in dichten Wäldern mit kühlerem Klima (im Norden und Osten des Verbreitungsgebietes) leben, eher schwarz sind, haben die Schwarzbären im südlichen und westlichen Teil des Verbreitungsgebietes, die in offenem, trockenerem Terrain wohnen, eine eher bräunliche Färbung. Das Verbreitungsgebiet der Amerikanischen Schwarzbären umfasst große Teile Nordamerikas. Sie leben in nahezu ganz Alaska und Kanada mit Ausnahme des äußersten Nordens, im Kerngebiet der Vereinigten Staaten (den 48 zusammenhängenden Staaten) sind sie ebenfalls weit verbreitet und fehlten ursprünglich nur im südwestlichen, trockenen Landesteil. In Mexiko kommen sie vor allem im Bereich der Gebirgszüge Sierra Madre Oriental und Sierra Madre Occidental vor. Amerikanische Schwarzbären wurden und werden vom Menschen aus verschiedensten Gründen gejagt. Dazu zählen die potenzielle Gefährdung des Menschen, die Angst vor gerissenen Weidetieren und zerstörten Agrarflächen und Bienenstöcken, der Bedarf an Fell und Fleisch sowie die Sportjagd. Untersuchungen haben gezeigt, dass der Schaden bei Weidetieren vernachlässigbar ist, dass sie aber wohl auf landwirtschaftlich genutzten Feldern Schäden anrichten können. Die Sportjagd ist weit verbreitet, nach einer Schätzung aus dem Jahr 1995 werden jedes Jahr rund 40.000 Tiere erlegt. Die Verwendung des Bärenfells und des Fleisches ist heute weitgehend zurückgegangen; bei den Indianern war dies der wichtigste Grund für die Bejagung. Die Bärenfellmützen, die zur Paradeuniform verschiedener britischer Regimenter gehören, werden aber bis heute aus dem Fell kanadischer Schwarzbären hergestellt. </German>
+        <German>[TAB]Der Amerikanische Schwarzbär (Ursus americanus), auch Baribal genannt, ist eine in Nord-Amerika lebende Raubtierart aus der Familie der Bären (Ursidae). In seiner Heimat wird er meistens als black bear bezeichnet oder als Baribal. Im Vergleich zum eher gefürchteten Grizzlybär gilt der Schwarzbär als weniger gefährlich. Amerikanische Schwarzbären haben den typischen Körperbau der Bären. Der Rumpf ist massiv, die Gliedmaßen kräftig. Die Pfoten haben je fünf starke Krallen, welche die Bären zum Reißen, Graben und Klettern einsetzen. Der Schwanz ist wie bei allen Bären nur ein kurzer Stummel. Der große Kopf ist durch die eher lange, unbehaarte Schnauze, die kleinen Augen und die runden, aufgerichteten Ohren charakterisiert. Trotz ihres Namens sind nicht alle Amerikanischen Schwarzbären schwarz gefärbt. Es gibt auch silbergraue und rötlichbraune Varianten, und manche Baribals haben eine mit Grizzlies nahezu identische Fellfarbe. Die Färbung des Fells hängt mit dem Lebensraum zusammen: während Tiere, die in dichten Wäldern mit kühlerem Klima (im Norden und Osten des Verbreitungsgebietes) leben, eher schwarz sind, haben die Schwarzbären im südlichen und westlichen Teil des Verbreitungsgebietes, die in offenem, trockenerem Terrain wohnen, eine eher bräunliche Färbung. Das Verbreitungsgebiet der Amerikanischen Schwarzbären umfasst große Teile Nord-Amerikas. Sie leben in nahezu ganz Alaska und Kanada mit Ausnahme des äußersten Nordens, im Kerngebiet der Vereinigten Staaten (den 48 zusammenhängenden Staaten) sind sie ebenfalls weit verbreitet und fehlten ursprünglich nur im südwestlichen, trockenen Landesteil. In Mexiko kommen sie vor allem im Bereich der Gebirgszüge Sierra Madre Oriental und Sierra Madre Occidental vor. Amerikanische Schwarzbären wurden und werden vom Menschen aus verschiedensten Gründen gejagt. Dazu zählen die potenzielle Gefährdung des Menschen, die Angst vor gerissenen Weidetieren und zerstörten Agrarflächen und Bienenstöcken, der Bedarf an Fell und Fleisch sowie die Sportjagd. Untersuchungen haben gezeigt, dass der Schaden bei Weidetieren vernachlässigbar ist, dass sie aber wohl auf landwirtschaftlich genutzten Feldern Schäden anrichten können. Die Sportjagd ist weit verbreitet, nach einer Schätzung aus dem Jahr 1995 werden jedes Jahr rund 40.000 Tiere erlegt. Die Verwendung des Bärenfells und des Fleisches ist heute weitgehend zurückgegangen; bei den Indianern war dies der wichtigste Grund für die Bejagung. Die Bärenfellmützen, die zur Paradeuniform verschiedener britischer Regimenter gehören, werden aber bis heute aus dem Fell kanadischer Schwarzbären hergestellt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_NATIONAL_WONDER</Tag>
         <English>[ICON_BULLET][COLOR_CYAN]National Wonder[COLOR_REVERT]</English>
         <French>[ICON_BULLET][COLOR_CYAN]Merveille nationale[COLOR_REVERT]</French>
         <German>[ICON_BULLET][COLOR_CYAN]Nationales Wunder[COLOR_REVERT]</German>
+        <Italian>[ICON_BULLET][COLOR_CYAN]Miracolo nazionale[COLOR_REVERT]</Italian>
+        <Spanish>[ICON_BULLET][COLOR_CYAN]Milagro nacional[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FORT_FEATURES</Tag>
-        <English>[ICON_BULLET]Protects an area against raiding Natives, wild animals and other enemies.</English>
-        <French>[ICON_BULLET]Protège une zone des raids indigènes, des animaux sauvages et d'autres ennemies.</French>
-        <German>[ICON_BULLET]Schützt ein Gebiet vor Überfallen der Ureinwohner, Wilden Tiere und anderen Gegnern.</German>
+        <English>[ICON_BULLET]Protects an area against raiding Natives, wild animals and other enemies</English>
+        <French>[ICON_BULLET]Protège une zone des raids indigènes, des animaux sauvages et d'autres ennemies</French>
+        <German>[ICON_BULLET]Schützt ein Gebiet vor Überfallen der Ureinwohner, Wilden Tiere und anderen Gegnern</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_MONASTERY_FEATURES</Tag>
@@ -1134,7 +1128,7 @@
     <TEXT>
         <Tag>TXT_KEY_GOLD_BY_ENTERTAINMENT</Tag>
         <English>%s2_city : The %s1_building has generated %d3[ICON_GOLD]</English>
-        <French>Votre %s1_building à %s2_city a généré %d3[ICON_GOLD] de profit</French>
+        <French>%s2_city : Votre %s1_building a généré %d3[ICON_GOLD] de profit</French>
         <German>%s2_city : Das Gebäude %s1_building hat %d3[ICON_GOLD] Gewinn erwirtschaftet</German>
     </TEXT>
     <TEXT>
@@ -1151,14 +1145,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_MARKET_BUILDING</Tag>
-        <English>[ICON_BULLET]Generates [ICON_GOLD] by selling goods on the domestic market.</English>
-        <French>[ICON_BULLET]Génère [ICON_GOLD] en vendant des biens sur le marché intérieur.</French>
+        <English>[ICON_BULLET]Generates [ICON_GOLD] by selling goods on the domestic market</English>
+        <French>[ICON_BULLET]Génère [ICON_GOLD] en vendant des biens sur le marché intérieur</French>
         <German>[ICON_BULLET]Erwirtschaftet [ICON_GOLD] durch Verkauf von Waren an die Einwohner der Stadt</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_MARKET_BUILDING_INCREASED</Tag>
-        <English>[ICON_BULLET]Increases demand for goods on the domestic market.</English>
-        <French>[ICON_BULLET]Augmente la demande de bien sur le marché intérieur.</French>
+        <English>[ICON_BULLET]Increases demand for goods on the domestic market</English>
+        <French>[ICON_BULLET]Augmente la demande de bien sur le marché intérieur</French>
         <German>[ICON_BULLET]Erhöht die Nachfrage nach Waren in der Stadt</German>
     </TEXT>
     <TEXT>
@@ -1271,7 +1265,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TOTAL_CITY_HEALTH</Tag>
-        <English>Health of the City : %d1%F2_Icon</English>
+        <English>Health of the city : %d1%F2_Icon</English>
         <French>Santé de la ville : %d1%F2_Icon</French>
         <German>Gesundheit der Stadt : %d1%F2_Icon</German>
         <Italian>Salute della città : %d1 %F2_Icon</Italian>
@@ -1287,7 +1281,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HEALTH_POP_CHANGE</Tag>
-        <English>Population Change %s1 = %d2%F3</English>
+        <English>Population change %s1 = %d2%F3</English>
         <French>Changement de la %s1 sur la population = %d2%F3</French>
         <German>Bevölkerung %s1 = %d2%F3</German>
         <Italian>Popolazione %s1 = %d2%F3</Italian>
@@ -1295,7 +1289,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HEALTH_TOTAL_CHANGE</Tag>
-        <English>Total Change %s1 = %d2%F3</English>
+        <English>Total change %s1 = %d2%F3</English>
         <French>Changement de la %s1 total = %d2%F3</French>
         <German>Gesamtänderung %s1 = %d2%F3</German>
         <Italian>Variazione totale %s1 = %d2%F3</Italian>
@@ -1311,7 +1305,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_BONUS_YIELD</Tag>
-        <English>%s1: %D2%F3 (with Resource [LINK=%s5]%s4[\LINK])</English>
+        <English>%s1: %D2%F3 (with resource [LINK=%s5]%s4[\LINK])</English>
         <French>%s1 : %D2%F3 (avec Resource [LINK=%s5]%s4[\LINK])</French>
         <German>%s1: %D2%F3 (mit Bonusressource [LINK=%s5]%s4[\LINK])</German>
         <Italian>%s1: %D2%F3 (con Resource [LINK=%s5]%s4[\LINK])</Italian>
