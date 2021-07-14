@@ -1557,6 +1557,13 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 		}
 		else
 		{
+			//ray,  reduce founding chances at Hostile Goodies - START
+			if (pLoopPlot->isGoodyForSpawningHostileCriminals() || pLoopPlot->isGoodyForSpawningHostileNatives() ||  pLoopPlot->isGoodyForSpawningHostileAnimals())
+			{
+				iValue /= 2; // should normally make this an upleasant place
+			}
+			//ray,  reduce founding chances at Hostile Goodies - END
+
 			if (pLoopPlot->isCityRadius())
 			{
 				iTakenTiles++;
@@ -1576,12 +1583,8 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 
 				for (int iYieldType = 0; iYieldType < NUM_YIELD_TYPES; ++iYieldType)
 				{
-
-
 					YieldTypes eYield = (YieldTypes)iYieldType;
 					int iYield = pLoopPlot->calculateBestNatureYield(eYield, getTeam());
-
-
 
 					if (iI == CITY_HOME_PLOT)
 					{
@@ -1756,6 +1759,14 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 					{
 						if (plotDistance(iX, iY, pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE()) <= iRange)
 						{
+
+							//ray,  reduce founding chances at Hostile Goodies - START
+							if (pLoopPlot->isGoodyForSpawningHostileCriminals() || pLoopPlot->isGoodyForSpawningHostileNatives() || pLoopPlot->isGoodyForSpawningHostileAnimals())
+							{
+								iGreaterBadTile += 12; // should normally ensure it does not found there the first City
+							}
+							//ray,  reduce founding chances at Hostile Goodies - END
+
 						    int iTempValue = 0;
 							iTempValue += (pLoopPlot->calculatePotentialYield(YIELD_FOOD, NULL, false) * 15);
 							iTempValue += (pLoopPlot->calculatePotentialYield(YIELD_FUR, NULL, false) * 4); // R&R, ray, adjustment because of MYCP
