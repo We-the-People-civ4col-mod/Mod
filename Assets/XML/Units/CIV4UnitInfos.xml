@@ -35441,6 +35441,10 @@
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
             </FeatureImpassables>
             <EvasionBuildings>
                 <EvasionBuilding>
@@ -35629,6 +35633,10 @@
             <FeatureImpassables>
                 <FeatureImpassable>
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
             </FeatureImpassables>
@@ -35821,6 +35829,10 @@
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
             </FeatureImpassables>
             <EvasionBuildings>
                 <EvasionBuilding>
@@ -36011,6 +36023,10 @@
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
             </FeatureImpassables>
             <EvasionBuildings>
                 <EvasionBuilding>
@@ -36199,6 +36215,10 @@
             <FeatureImpassables>
                 <FeatureImpassable>
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
             </FeatureImpassables>
@@ -36397,6 +36417,10 @@
                 </FeatureImpassable>
                 <FeatureImpassable>
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
             </FeatureImpassables>
@@ -36606,6 +36630,10 @@
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
             </FeatureImpassables>
             <EvasionBuildings>
                 <EvasionBuilding>
@@ -36802,6 +36830,10 @@
                 </FeatureImpassable>
                 <FeatureImpassable>
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
             </FeatureImpassables>
@@ -37232,6 +37264,10 @@
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
             </FeatureImpassables>
             <EvasionBuildings/>
             <iCombat>33</iCombat>
@@ -37407,6 +37443,10 @@
             <FeatureImpassables>
                 <FeatureImpassable>
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
             </FeatureImpassables>
@@ -37743,6 +37783,10 @@
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
             </FeatureImpassables>
             <EvasionBuildings/>
             <iCombat>35</iCombat>
@@ -37932,6 +37976,10 @@
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
             </FeatureImpassables>
             <EvasionBuildings/>
             <iCombat>45</iCombat>
@@ -38112,6 +38160,10 @@
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
             </FeatureImpassables>
             <EvasionBuildings/>
             <iCombat>55</iCombat>
@@ -38288,6 +38340,10 @@
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
             </FeatureImpassables>
             <EvasionBuildings/>
             <iCombat>65</iCombat>
@@ -38446,6 +38502,10 @@
             <FeatureImpassables>
                 <FeatureImpassable>
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
             </FeatureImpassables>
@@ -45666,6 +45726,10 @@
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
             </FeatureImpassables>
             <TerrainNatives>
                 <TerrainNative>
@@ -45824,6 +45888,10 @@
                 </FeatureImpassable>
                 <FeatureImpassable>
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
             </FeatureImpassables>
@@ -45986,6 +46054,10 @@
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
             </FeatureImpassables>
             <TerrainNatives>
                 <TerrainNative>
@@ -46144,6 +46216,10 @@
                 </FeatureImpassable>
                 <FeatureImpassable>
                     <FeatureType>FEATURE_STONE_REEF</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
             </FeatureImpassables>

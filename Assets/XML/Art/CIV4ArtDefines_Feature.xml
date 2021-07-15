@@ -934,6 +934,25 @@
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_PEARL_REEF</Type>
+            <bAnimated>0</bAnimated>
+            <TileArtType>TILE_ART_TYPE_HALF_TILING</TileArtType>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <Button>Art/Interface/Buttons/Coral_Rock.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/Coral_Rock/Coral1.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/Coral_Rock/Coral2.nif</ModelFile>
+                        <Connections></Connections>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Interface/Buttons/Coral_Rock.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
+        <FeatureArtInfo>
             <Type>ART_DEF_FEATURE_CLAY_PIT</Type>
             <bAnimated>0</bAnimated>
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
