@@ -351,11 +351,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_MOVEMENT_COST</Tag>
-        <English>[ICON_BULLET]Movement cost: %d1[ICON_MOVES]</English>
+        <English>[ICON_BULLET]Movement cost : %d1[ICON_MOVES]</English>
         <French>[ICON_BULLET]Coût du mouvement : %d1[ICON_MOVES]</French>
-        <German>[ICON_BULLET]Fortbewegungskosten: %d1[ICON_MOVES]</German>
-        <Italian>[ICON_BULLET]Costo movimento: %d1[ICON_MOVES]</Italian>
-        <Spanish>[ICON_BULLET]Coste del movimiento: %d1 [ICON_MOVES]</Spanish>
+        <German>[ICON_BULLET]Fortbewegungskosten : %d1[ICON_MOVES]</German>
+        <Italian>[ICON_BULLET]Costo movimento : %d1[ICON_MOVES]</Italian>
+        <Spanish>[ICON_BULLET]Coste del movimiento : %d1 [ICON_MOVES]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_BUILD_MODIFIER</Tag>
@@ -592,18 +592,18 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_DOMESTIC_BONUS</Tag>
         <English>[ICON_BULLET]%D1_Change%% strength inside cultural borders</English>
-        <French>[ICON_BULLET]%D1_Change%% Strength inside Cultural Borders</French>
+        <French>[ICON_BULLET]%D1_Change%% de force à l'intérieur des frontières culturelles</French>
         <German>[ICON_BULLET]%D1_Change%% Stärke innerhalb der eigenen Grenzen</German>
-        <Italian>[ICON_BULLET]%D1_Change%% Strength inside Cultural Borders</Italian>
-        <Spanish>[ICON_BULLET]%D1_Change%% Strength inside Cultural Borders</Spanish>
+        <Italian>[ICON_BULLET]%D1_Change%% di forza all'interno dei confini culturali</Italian>
+        <Spanish>[ICON_BULLET]%D1_Change%% de fuerza dentro de las fronteras culturales</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_DOMESTIC_BONUS_TEXT</Tag>
         <English>[ICON_BULLET]%D1_Bonus%% strength inside cultural borders</English>
-        <French>[ICON_BULLET]%D1_Bonus%% Strength inside Cultural Borders</French>
+        <French>[ICON_BULLET]%D1_Bonus%% de force à l'intérieur des frontières culturelles</French>
         <German>[ICON_BULLET]%D1_Bonus%% Verteidigungsbonus innerhalb der eigenen Grenzen</German>
-        <Italian>[ICON_BULLET]%D1_Bonus%% Strength inside Cultural Borders</Italian>
-        <Spanish>[ICON_BULLET]%D1_Bonus%% Strength inside Cultural Borders</Spanish>
+        <Italian>[ICON_BULLET]%D1_Bonus%% di forza all'interno dei confini culturali</Italian>
+        <Spanish>[ICON_BULLET]%D1_Bonus%% de fuerza dentro de las fronteras culturales</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_DEFENSE</Tag>
@@ -631,7 +631,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARRIES</Tag>
-        <English>[SPACE](Carries %s1_Name)</English>
+        <English>[SPACE](carries %s1_Name)</English>
         <French>[SPACE](transporte : %s1_Name)</French>
         <German>[SPACE](Befördert %s1_Name)</German>
         <Italian>[SPACE](trasporta %s1_Name)</Italian>
@@ -710,6 +710,14 @@
         <Spanish>[ICON_BULLET]No recibe bonificaciones defensivas</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_WITHDRAWL_PROBABILITY_SHORT</Tag>
+        <English>[ICON_BULLET]Withdrawal chance : %d1_Amount%%</English>
+        <French>[ICON_BULLET]Chances de rompre le combat : %d1_Amount%%</French>
+        <German>[ICON_BULLET]Rückzugschance : %d1_Amount%%</German>
+        <Italian>[ICON_BULLET]Probabilità di ritirata : %d1_Amount%%</Italian>
+        <Spanish>[ICON_BULLET]Probabilidad de retirarse : %d1_Amount%%</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_WITHDRAWL_PROBABILITY</Tag>
         <English>[ICON_BULLET]Can withdraw from combat (%d1_Amount%% chance)</English>
         <French>[ICON_BULLET]Peut rompre le combat (%d1_Amount%% de chance)</French>
@@ -768,7 +776,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_TURNS</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turn:turns][COLOR_REVERT]</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]%d1_Num tours[COLOR_REVERT]</French>
+        <French>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:tour:tours][COLOR_REVERT]</French>
         <German>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:Runde:Runden][COLOR_REVERT]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turni][COLOR_REVERT]</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turnos][COLOR_REVERT]</Spanish>
@@ -786,7 +794,7 @@
         <English>, XP: (%d1_Curr/%d2_Needed)</English>
         <French>, EXP : (%d1_Curr/%d2_Needed)</French>
         <German>, EP: (%d1_Curr/%d2_Needed)</German>
-        <Italian>, XP: (%d1_Curr/%d2_Needed)</Italian>
+        <Italian>, PE: (%d1_Curr/%d2_Needed)</Italian>
         <Spanish>, PX: (%d1_Curr/%d2_Needed)</Spanish>
     </TEXT>
     <TEXT>
@@ -807,10 +815,10 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FREE_XP_UNITS</Tag>
-        <English>[ICON_BULLET]New units receive %D1_Change experience points</English>
+        <English>[ICON_BULLET]New units receive %D1_Change [NUM1:experience point:experience points]</English>
         <French>[ICON_BULLET]Les nouvelles unités bénéficient de %D1_Change EXP</French>
-        <German>[ICON_BULLET]Neue Einheiten erhalten %D1_Change Erfahrungspunkte</German>
-        <Italian>[ICON_BULLET]Le nuove unità ricevono %D1_Change punti esperienza</Italian>
+        <German>[ICON_BULLET]Neue Einheiten erhalten %D1_Change [NUM1:Erfahrungspunkt:Erfahrungspunkte]</German>
+        <Italian>[ICON_BULLET]Le nuove unità ricevono %D1_Change [NUM1:punto esperienza:punti esperienza]</Italian>
         <Spanish>[ICON_BULLET]Las nuevas unidades reciben %D1_Change [NUM1:punto de experiencia:puntos de experiencia]</Spanish>
     </TEXT>
     <TEXT>
@@ -839,7 +847,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WATER_PLOTS</Tag>
-        <English>Water Tiles</English>
+        <English>Water tiles</English>
         <French>Cases d'eau[SPACE]</French>
         <German>Wasser-Geländefelder</German>
         <Italian>Caselle d'acqua</Italian>
@@ -847,7 +855,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LAND_PLOTS</Tag>
-        <English>Land Tiles</English>
+        <English>Land tiles</English>
         <French>Land Tiles[SPACE]</French>
         <German>Land-Geländefelder</German>
         <Italian>Land Tiles</Italian>
@@ -855,9 +863,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FREE_XP</Tag>
-        <English>[ICON_BULLET]New %s1_UnitName receive %D2_Change experience points</English>
+        <English>[ICON_BULLET]New %s1_UnitName receive %D2_Change [NUM1:experience point:experience points]</English>
         <French>[ICON_BULLET]Ces nouvelles unités (%s1_UnitName) bénéficient de %D2_Change EXP</French>
-        <German>[ICON_BULLET]Neue %s1_UnitName erhalten %D2_Change Erfahrungspunkte</German>
+        <German>[ICON_BULLET]Neue %s1_UnitName erhalten %D2_Change [NUM1:Erfahrungspunkt:Erfahrungspunkte]</German>
         <Italian>[ICON_BULLET]Le nuove %s1:2_UnitName ricevono %D2_Change [NUM1:punto esperienza:punti esperienza]</Italian>
         <Spanish>[ICON_BULLET]Cada %s1_UnitName [NUM1:nuevo:nueva:nuevos:nuevas] recibe %D2_Change [NUM1:punto de experiencia:puntos de experiencia]</Spanish>
     </TEXT>
@@ -951,11 +959,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_NUM_TURNS</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]%d1_Num turns[COLOR_REVERT]</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]%d1_Num tours[COLOR_REVERT]</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]%d1_Num Runden[COLOR_REVERT]</German>
+        <English>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turn:turns][COLOR_REVERT]</English>
+        <French>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:tour:tours][COLOR_REVERT]</French>
+        <German>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:Runde:Runden][COLOR_REVERT]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turni][COLOR_REVERT]</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turnos][COLOR_REVERT]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BOMBARD_DEFENSE_MOD</Tag>
+        <English>[ICON_BULLET]%D1_Mod%% damage to defenses from bombardment (except vs. gunpowder-based units)</English>
+        <French>[ICON_BULLET]%D1_Mod%% Dégâts infligés aux défenses après un bombardement (sauf contre les unités à poudre)</French>
+        <German>[ICON_BULLET]%D1_Mod%% Bombardierungsschaden gegen Defensivanlagen (außer gegen Schießpulver-Einheiten)</German>
+        <Italian>[ICON_BULLET]%D1_Mod%% di danni alle difese a causa del bombardamento (tranne contro unità che utilizzano la povere da sparo)</Italian>
+        <Spanish>[ICON_BULLET]%D1_Mod%% de daño a las defensas por cañoneo (excepto contra unidades con armas de pólvora)</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_DOUBLE_SPEED</Tag>
@@ -969,7 +985,7 @@
         <Tag>TXT_KEY_TRAIT_PRODUCTION_MODIFIER</Tag>
         <English>[ICON_BULLET]%d1%% faster production of[SPACE]</English>
         <French>[ICON_BULLET]Production %d1%% plus rapide de :[SPACE]</French>
-        <German>[ICON_BULLET]%d1%% mehr erzeugte Hämmer beim Baus von[SPACE]</German>
+        <German>[ICON_BULLET]%d1%% mehr erzeugte Hämmer beim Bau von[SPACE]</German>
         <Italian>[ICON_BULLET]Produzione più veloce del %d1%% per[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Acelera un %d1%% la producción de[SPACE]</Spanish>
     </TEXT>
@@ -979,7 +995,7 @@
         <French>[ICON_BULLET]+1%F1_yield sur les cases avec : %d2%F3_yield</French>
         <German>[ICON_BULLET]+1%F1_yield auf Geländefeldern mit %d2%F3_yield</German>
         <Italian>[ICON_BULLET]+1%F1_yield su caselle con %d2%F3_yield</Italian>
-        <Spanish>[ICON_BULLET]+1 %F1_yield en las casillas con %d2 %F3_yield</Spanish>
+        <Spanish>[ICON_BULLET]+1%F1_yield en las casillas con %d2%F3_yield</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_FREE_PROMOTIONS</Tag>
@@ -1042,7 +1058,7 @@
         <English>Top</English>
         <French>Rubrique</French>
         <German>Nach oben</German>
-        <Italian>Torna a civilopedia</Italian>
+        <Italian>Torna a colonizopedia</Italian>
         <Spanish>Inicio</Spanish>
     </TEXT>
     <TEXT>
@@ -1111,7 +1127,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_HILLS_YIELD</Tag>
-        <English>%s1 : %D2%F3 (on Hills)</English>
+        <English>Improvement %s1 : %D2%F3 (on hills)</English>
         <French>%s1 : %D2%F3 (sur les collines)</French>
         <German>Modernisierung %s1 : %D2%F3 (auf Hügeln)</German>
         <Italian>%s1 : %D2%F3 (sulle colline)</Italian>
@@ -1119,15 +1135,15 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_RIVER_YIELD</Tag>
-        <English>%s1 : %D2%F3 (next to river)</English>
+        <English>Improvement %s1 : %D2%F3 (next to river)</English>
         <French>%s1 : %D2%F3 (près des fleuves)</French>
-        <German>Modernisierung %s1 : %D2%F3 (an einem Fluss)</German>
+        <German>Modernisierung %s1 : %D2%F3 (an einem Fluß)</German>
         <Italian>%s1 : %D2%F3 (vicino a un fiume)</Italian>
         <Spanish>%s1 : %D2%F3 (junto a un río)</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CIVIC_YIELD</Tag>
-        <English>%s1 : %D2%F3 (with [LINK=literal]%s4[\LINK])</English>
+        <English>Improvement %s1 : %D2%F3 (with bonus resource [LINK=literal]%s4[\LINK])</English>
         <French>%s1 : %D2%F3 (avec [LINK=literal]%s4[\LINK])</French>
         <German>Modernisierung %s1 : %D2%F3 (mit Bonusgut [LINK=literal]%s4[\LINK])</German>
         <Italian>%s1 : %D2%F3 (con [LINK=literal]%s4[\LINK])</Italian>
@@ -1135,7 +1151,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_ROUTE_YIELD</Tag>
-        <English>%s1 : %D2%F3 (with %s4)</English>
+        <English>Improvement %s1 : %D2%F3 (with bonus resource %s4)</English>
         <French>%s1 : %D2%F3 (avec %s4)</French>
         <German>Modernisierung %s1 : %D2%F3 (mit Bonusgut %s4)</German>
         <Italian>%s1 : %D2%F3 (con %s4)</Italian>
@@ -1143,7 +1159,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_ALL_UNITS</Tag>
-        <English>All Units</English>
+        <English>All units</English>
         <French>Toutes les unités</French>
         <German>Alle Einheiten</German>
         <Italian>Tutte le unità</Italian>
@@ -1167,19 +1183,43 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_VALUE_TEXT</Tag>
-        <English>Value</English>
-        <French>Valeur</French>
-        <German>Wert</German>
-        <Italian>Valore</Italian>
-        <Spanish>Valor</Spanish>
+        <English>[COLOR_FONT_CREAM]Value[COLOR_REVERT]</English>
+        <French>[COLOR_FONT_CREAM]Valeur[COLOR_REVERT]</French>
+        <German>[COLOR_FONT_CREAM]Wert[COLOR_REVERT]</German>
+        <Italian>[COLOR_FONT_CREAM]Valore[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_FONT_CREAM]Valor[COLOR_REVERT]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_INFO_RIVAL_BEST</Tag>
+        <English>[COLOR_FONT_CREAM]Best Europeans[COLOR_REVERT]</English>
+        <French>[COLOR_FONT_CREAM]Meilleur rival[COLOR_REVERT]</French>
+        <German>[COLOR_FONT_CREAM]Beste Rivalen[COLOR_REVERT]</German>
+        <Italian>[COLOR_FONT_CREAM]Migliore rivale[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_FONT_CREAM]Mejor rival[COLOR_REVERT]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DEMOGRAPHICS_SCREEN_RIVAL_AVERAGE</Tag>
+        <English>[COLOR_FONT_CREAM]Europeans on average[COLOR_REVERT]</English>
+        <French>[COLOR_FONT_CREAM]Moyenne rivaux[COLOR_REVERT]</French>
+        <German>[COLOR_FONT_CREAM]Durchschnitt[COLOR_REVERT]</German>
+        <Italian>[COLOR_FONT_CREAM]Media dei rivali[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_FONT_CREAM]Promedio del rival[COLOR_REVERT]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_INFO_RIVAL_WORST</Tag>
+        <English>[COLOR_FONT_CREAM]Worst Europeans[COLOR_REVERT]</English>
+        <French>[COLOR_FONT_CREAM]Pire rival[COLOR_REVERT]</French>
+        <German>[COLOR_FONT_CREAM]Schlechteste Rivalen[COLOR_REVERT]</German>
+        <Italian>[COLOR_FONT_CREAM]Peggiore rivale[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_FONT_CREAM]Peor rival[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_RANK_TEXT</Tag>
-        <English>Rank</English>
-        <French>Niveau</French>
-        <German>Rang</German>
-        <Italian>Grado</Italian>
-        <Spanish>Rango</Spanish>
+        <English>[COLOR_FONT_CREAM]Rank[COLOR_REVERT]</English>
+        <French>[COLOR_FONT_CREAM]Niveau[COLOR_REVERT]</French>
+        <German>[COLOR_FONT_CREAM]Rang[COLOR_REVERT]</German>
+        <Italian>[COLOR_FONT_CREAM]Grado[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_FONT_CREAM]Rango[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_ECONOMY_TEXT</Tag>
@@ -1188,6 +1228,46 @@
         <German>Goldreserven</German>
         <Italian>PIL (oro)</Italian>
         <Spanish>PNB (oro)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DEMO_SCREEN_ECONOMY_MEASURE</Tag>
+        <English>[ICON_GOLD]</English>
+        <French>[ICON_GOLD]</French>
+        <German>[ICON_GOLD]</German>
+        <Italian>[ICON_GOLD]</Italian>
+        <Spanish>[ICON_GOLD]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DEMO_SCREEN_INDUSTRY_TEXT</Tag>
+        <English>Hammer production</English>
+        <French>Production (Marteaux)</French>
+        <German>Produktion in Hämmern</German>
+        <Italian>Beni (Prod.)</Italian>
+        <Spanish>Producción</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DEMO_SCREEN_INDUSTRY_MEASURE</Tag>
+        <English> tons</English>
+        <French> tonnes</French>
+        <German> Tonnen</German>
+        <Italian> tonnellate</Italian>
+        <Spanish> toneladas</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DEMO_SCREEN_AGRICULTURE_TEXT</Tag>
+        <English>Crop yield (food)</English>
+        <French>Récolte (Nourriture)</French>
+        <German>Nahrungsüberschuss</German>
+        <Italian>Prod. raccol. (cibo)</Italian>
+        <Spanish>Alimentos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DEMO_SCREEN_AGRICULTURE_MEASURE</Tag>
+        <English>[ICON_FOOD]</English>
+        <French>[ICON_FOOD]</French>
+        <German>[ICON_FOOD]</German>
+        <Italian>[ICON_FOOD]</Italian>
+        <Spanish>[ICON_FOOD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_MILITARY_TEXT</Tag>
@@ -1204,6 +1284,14 @@
         <German>Landgebiet</German>
         <Italian>Superficie</Italian>
         <Spanish>Área terrestre</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DEMO_SCREEN_LAND_AREA_MEASURE</Tag>
+        <English> square km</English>
+        <French> Km²</French>
+        <German> Quadratkilometer</German>
+        <Italian> Km quadrati</Italian>
+        <Spanish> Km cuad.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_POPULATION_TEXT</Tag>
@@ -1231,43 +1319,11 @@
     </TEXT>
     <TEXT>
         <Tag>UNUSED_TXT_KEY_DEMO_SCREEN_CONDENSED_IMPEXP_TEXT</Tag>
-        <English>Exports (Condensed)</English>
+        <English>Exports (condensed)</English>
         <French>Exportations (Condensée)</French>
-        <German>Exporte (Kondensiert)</German>
+        <German>Exporte (kondensiert)</German>
         <Italian>Esportazioni (Condensato)</Italian>
         <Spanish>Exportaciones (Condensada)</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_DEMO_SCREEN_ECONOMY_MEASURE</Tag>
-        <English> Million Gold</English>
-        <French> Millions d'or</French>
-        <German> Mio. Gold</German>
-        <Italian> Milioni d'oro</Italian>
-        <Spanish> Mill. de oro</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_DEMO_SCREEN_INDUSTRY_MEASURE</Tag>
-        <English> Tons</English>
-        <French> tonnes</French>
-        <German> Tonnen</German>
-        <Italian> tonnellate</Italian>
-        <Spanish> toneladas</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_DEMO_SCREEN_AGRICULTURE_MEASURE</Tag>
-        <English> Million Bushels</English>
-        <French> Millions de boisseaux</French>
-        <German> Mio. Scheffel</German>
-        <Italian> Milioni di stai</Italian>
-        <Spanish> Mill. de fanegas</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_DEMO_SCREEN_LAND_AREA_MEASURE</Tag>
-        <English> Square Km</English>
-        <French> Km²</French>
-        <German> Quadratkilometer</German>
-        <Italian> Km quadrati</Italian>
-        <Spanish> Km cuad.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCREEN_CANCEL</Tag>
@@ -1359,17 +1415,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_SCREEN_TARGET_SCORE</Tag>
-        <English>Target score: %d1</English>
+        <English>Target score : %d1</English>
         <French>Score à atteindre : %d1</French>
-        <German>Zielpunktzahl: %d1</German>
-        <Italian>Punteggio da raggiungere: %d1</Italian>
-        <Spanish>Puntuación objetivo: %d1</Spanish>
+        <German>Zielpunktzahl : %d1</German>
+        <Italian>Punteggio da raggiungere : %d1</Italian>
+        <Spanish>Puntuación objetivo : %d1</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_SCREEN_HIGHEST_SCORE</Tag>
         <English>Highest score at %s1</English>
         <French>Meilleur score : %s1</French>
-        <German>Höchste Punktzahl: %s1</German>
+        <German>Höchste Punktzahl : %s1</German>
         <Italian>Maggior punteggio nel %s1</Italian>
         <Spanish>Mayor puntuación en %s1</Spanish>
     </TEXT>
@@ -2113,7 +2169,7 @@
         <Tag>TXT_KEY_OPTIONS_MASTERVOLUME</Tag>
         <English>Master Volume</English>
         <French>Volume général</French>
-        <German>Gesamt</German>
+        <German>Gesamt-Lautstärke</German>
         <Italian>Volume principale</Italian>
         <Spanish>General</Spanish>
     </TEXT>
@@ -2263,19 +2319,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_YES</Tag>
-        <English>Yes</English>
-        <French>Oui</French>
+        <English>Yes, this is my decision.</English>
+        <French>Oui, que ce soit ma décision.</French>
         <German>Ja, dies sei meine Entscheidung.</German>
-        <Italian>Sì</Italian>
-        <Spanish>Sí</Spanish>
+        <Italian>Sì, che questa sia la mia decisione.</Italian>
+        <Spanish>Sí, que sea mi decisión.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_NO</Tag>
-        <English>No</English>
-        <French>Non</French>
+        <English>No, of course not.</English>
+        <French>Non, bien sûr que non.</French>
         <German>Nein, natürlich nicht.</German>
-        <Italian>No</Italian>
-        <Spanish>No</Spanish>
+        <Italian>No, certo che no.</Italian>
+        <Spanish>No, por supuesto que no.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_ENTER_LANDS_WAR</Tag>
@@ -2359,7 +2415,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLOT_BONUS</Tag>
-        <English>Defense Bonus : %D1_Mod%%</English>
+        <English>Defense bonus : %D1_Mod%%</English>
         <French>Bonus de défense : %D1_Mod%%</French>
         <German>Defensivbonus : %D1_Mod%%</German>
         <Italian>Bonus difensivo : %D1_Mod%%</Italian>
@@ -2407,7 +2463,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_WATER_WORK</Tag>
-        <English>[ICON_BULLET]Can Work Water Tiles</English>
+        <English>[ICON_BULLET]Can work water tiles</English>
         <French>[ICON_BULLET]Peut travailler les cases d'eau</French>
         <German>[ICON_BULLET]Kann Wasser-Geländefelder bewirtschaften</German>
         <Italian>[ICON_BULLET]Permette di usare le caselle d'acqua</Italian>
@@ -2415,7 +2471,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ON_HILLS</Tag>
-        <English>[SPACE]on Hills</English>
+        <English>[SPACE]on hills</English>
         <French>[SPACE]dans les collines</French>
         <German>[SPACE]auf Hügeln</German>
         <Italian>[SPACE]sulle colline</Italian>
@@ -2423,7 +2479,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ALONG_RIVER</Tag>
-        <English>[SPACE]along River</English>
+        <English>[SPACE]along river</English>
         <French>[SPACE]près d'une rivière</French>
         <German>[SPACE]entlang eines Flusses</German>
         <Italian>[SPACE]lungo il fiume</Italian>
@@ -2436,14 +2492,6 @@
         <German>Gold (%d1_Num)</German>
         <Italian>Oro (%d1_Num)</Italian>
         <Spanish>Oro (%d1_Num)</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MISC_WORLD_MAP</Tag>
-        <English>World Map</English>
-        <French>Carte du monde</French>
-        <German>Weltkarte</German>
-        <Italian>Mappa</Italian>
-        <Spanish>Mapamundi</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_OPEN_BORDERS</Tag>
@@ -2471,10 +2519,10 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_PEACE_TREATY</Tag>
-        <English>Peace Treaty (%d1_Num Turns)</English>
-        <French>Traité de paix (%d1_Num tours)</French>
-        <German>Friedensvertrag (%d1_Num Runden)</German>
-        <Italian>Trattato di pace (%d1_Num Turni)</Italian>
+        <English>Peace Treaty (%d1_Num [NUM1:turn:turns])</English>
+        <French>Traité de paix (%d1_Num [NUM1:tour:tours])</French>
+        <German>Friedensvertrag (%d1_Num [NUM1:Runde:Runden])</German>
+        <Italian>Trattato di pace (%d1_Num [NUM1:turno:turni])</Italian>
         <Spanish>Tratado de paz (%d1_Num [NUM1:turno:turnos])</Spanish>
     </TEXT>
     <TEXT>
@@ -2503,11 +2551,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_MAX_POP_HURRY</Tag>
-        <English>[SPACE][COLOR_WARNING_TEXT](Max avail: %d1_Num)[COLOR_REVERT]</English>
+        <English>[SPACE][COLOR_WARNING_TEXT](Max avail : %d1_Num)[COLOR_REVERT]</English>
         <French>[SPACE][COLOR_WARNING_TEXT](maximum : %d1_Num)[COLOR_REVERT]</French>
-        <German>[SPACE][COLOR_WARNING_TEXT](Max.: %d1_Num)[COLOR_REVERT]</German>
-        <Italian>[SPACE][COLOR_WARNING_TEXT](Max: %d1_Num)[COLOR_REVERT]</Italian>
-        <Spanish>[SPACE][COLOR_WARNING_TEXT](Máx.: %d1_Num)[COLOR_REVERT]</Spanish>
+        <German>[SPACE][COLOR_WARNING_TEXT](Max. : %d1_Num)[COLOR_REVERT]</German>
+        <Italian>[SPACE][COLOR_WARNING_TEXT](Max : %d1_Num)[COLOR_REVERT]</Italian>
+        <Spanish>[SPACE][COLOR_WARNING_TEXT](Máx. : %d1_Num)[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_TURN_OR_TURNS</Tag>
@@ -2527,7 +2575,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_SHIFT_SEND_CHAT</Tag>
-        <English>([COLOR:140:255:40:255]&lt; SHIFT &gt;[COLOR_REVERT] to Send Chat Message)</English>
+        <English>([COLOR:140:255:40:255]&lt; SHIFT &gt;[COLOR_REVERT] to Send chat message)</English>
         <French>([COLOR:140:255:40:255]&lt; MAJ &gt;[COLOR_REVERT] pour envoyer un message)</French>
         <German>([COLOR:140:255:40:255]&lt; UMSCHALTEN &gt;[COLOR_REVERT] zum Senden einer Chat-Nachricht)</German>
         <Italian>([COLOR:140:255:40:255]&lt; MAIUSC &gt;[COLOR_REVERT] per spedire i messaggi di chat)</Italian>
@@ -2591,11 +2639,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CULTURE</Tag>
-        <English>Culture: %d1_Curr/%d2_Need %F3</English>
+        <English>Culture : %d1_Curr/%d2_Need %F3</English>
         <French>Culture : %d1_Curr/%d2_Need %F3</French>
-        <German>Kultur: %d1_Curr/%d2_Need %F3</German>
-        <Italian>Cultura: %d1_Curr/%d2_Need %F3</Italian>
-        <Spanish>Cultura: %d1_Curr/%d2_Need %F3</Spanish>
+        <German>Kultur : %d1_Curr/%d2_Need %F3</German>
+        <Italian>Cultura : %d1_Curr/%d2_Need %F3</Italian>
+        <Spanish>Cultura : %d1_Curr/%d2_Need %F3</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_PEDIA_BACK</Tag>
@@ -2623,7 +2671,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HISTORICAL_INFO</Tag>
-        <English>Get Historical Information for %s1_Name</English>
+        <English>Get historical information for %s1_Name</English>
         <French>Obtenir informations historiques sur %s1_Name</French>
         <German>Historische Informationen über %s1:2_Name abfragen</German>
         <Italian>Scopri le informazioni storiche di %s1_Name</Italian>
@@ -2639,19 +2687,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_SAY_TO_TEAM</Tag>
-        <English>Say to team:[SPACE]</English>
+        <English>Say to team :[SPACE]</English>
         <French>Dire à l'équipe :[SPACE]</French>
-        <German>Team ansprechen:[SPACE]</German>
-        <Italian>Parla alla squadra:[SPACE]</Italian>
-        <Spanish>Decirle al equipo:[SPACE]</Spanish>
+        <German>Team ansprechen :[SPACE]</German>
+        <Italian>Parla alla squadra :[SPACE]</Italian>
+        <Spanish>Decirle al equipo :[SPACE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_SAY_TO_ALL</Tag>
-        <English>Say to all:[SPACE]</English>
+        <English>Say to all :[SPACE]</English>
         <French>Dire à tous :[SPACE]</French>
-        <German>Alle ansprechen:[SPACE]</German>
-        <Italian>Parla a tutti:[SPACE]</Italian>
-        <Spanish>Decirles a todos:[SPACE]</Spanish>
+        <German>Alle ansprechen :[SPACE]</German>
+        <Italian>Parla a tutti :[SPACE]</Italian>
+        <Spanish>Decirles a todos :[SPACE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_SAY_TO_PLAYER</Tag>
@@ -2665,7 +2713,7 @@
         <Tag>TXT_KEY_MISC_TRYING_TO_CONTACT</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] is trying to contact You!</English>
         <French>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] essaie de vous contacter !</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] versucht Euch zu kontaktieren!</German>
+        <German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] versucht Sie zu kontaktieren!</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] sta cercando di contattarti!</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] quiere contactar contigo</Spanish>
     </TEXT>
@@ -2708,22 +2756,6 @@
         <German>[SPACE][KI]</German>
         <Italian>[SPACE][IA]</Italian>
         <Spanish>[SPACE][IA]</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MISC_GP_BORN</Tag>
-        <English>The intrepid [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] is regarded by the warriors stationed in [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] as a model of bravery. Up and down the country, his reputation as a truly great warrior and general precedes him.</English>
-        <French>Naissance de %s1_GPName à [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] !</French>
-        <German>Der unerschrockene [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] gilt den in [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] stationierten Kämpfern als ein Vorbild an Tapferkeit und Manneszucht. Landauf und landab eilt ihm der Ruf voraus, ein wahrhaft großer Krieger und General zu sein.</German>
-        <Italian>%s1_GPName è nato a [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!</Italian>
-        <Spanish>%s1_GPName ha nacido en [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MISC_GP_BORN_SOMEWHERE</Tag>
-        <English>In a distant region, [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] is making a name for himself as a great general. Take care, Milord!</English>
-        <French>Naissance de %s1_GPName dans un pays lointain !</French>
-        <German>In einer fernen Gegend macht [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] als ein Großer General von sich reden. Gebt acht, Milord!</German>
-        <Italian>%s1_GPName è [NUM1:nato:nata] in una terra lontana!</Italian>
-        <Spanish>%s1_GPName ha nacido en una tierra muy lejana.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_BORDERS_EXPANDED</Tag>
@@ -2953,7 +2985,7 @@
         <Tag>TXT_KEY_MISC_IMP_DESTROYED</Tag>
         <English>A %s1_ImpName has been destroyed by a marauding [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT] %s2_UnitName!</English>
         <French>Destruction de [NUM1:un:une:des:des] %s1_ImpName - %s2_UnitName ([COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT]) !</French>
-        <German>Eine Modernisierung %s1_ImpName wurde vernichtet - %s2_UnitName ([COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT])!</German>
+        <German>Eine Modernisierung %s1_ImpName wurde zerstört - %s2_UnitName ([COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT])!</German>
         <Italian>[NUM1:Un:Una] %s1_ImpName è [NUM1:stato sabotato:stata sabotata] - %s2_UnitName ([COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT])!</Italian>
         <Spanish>[NUM1:Un:Una:Unos:Unas] %s1_ImpName [NUM1:ha sido destruido:ha sido destruida:han sido destruidos:han sido destruidas] - %s2_UnitName ([COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT]).</Spanish>
     </TEXT>
@@ -3033,7 +3065,7 @@
         <Tag>TXT_KEY_MAIN_MENU_PLAY_NOW</Tag>
         <English>Play Now!</English>
         <French>Jouer</French>
-        <German>Zufallskarte Schnellstart</German>
+        <German>Schnellstart auf Zufallskarte</German>
         <Italian>Gioca ora!</Italian>
         <Spanish>Jugar ya</Spanish>
     </TEXT>
@@ -3041,7 +3073,7 @@
         <Tag>TXT_KEY_MAIN_MENU_LOAD_GAME</Tag>
         <English>Load Game</English>
         <French>Charger une partie</French>
-        <German>Laden</German>
+        <German>Spiel laden</German>
         <Italian>Carica partita</Italian>
         <Spanish>Cargar partida</Spanish>
     </TEXT>
@@ -3354,7 +3386,7 @@
         <English>Email address</English>
         <French>Adresse email[SPACE] </French>
         <German>E-Mail-Adresse</German>
-        <Italian>Indirizzo E-Mail</Italian>
+        <Italian>Indirizzo e-mail</Italian>
         <Spanish>Dirección de e-mail</Spanish>
     </TEXT>
     <TEXT>
@@ -3566,6 +3598,14 @@
         <Spanish>[ICON_BULLET]%D1%%%F2[TAB][TAB]por capital</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_MISC_HELP_BUILDING_YIELD</Tag>
+        <English>[ICON_BULLET]%d1%F2[TAB]from buildings</English>
+        <French>[ICON_BULLET]%d1%F2[TAB]en raison des bâtiments</French>
+        <German>[ICON_BULLET]%d1%F2[TAB]durch Gebäude</German>
+        <Italian>[ICON_BULLET]%d1%F2[TAB]dagli edifici</Italian>
+        <Spanish>[ICON_BULLET]%d1%F2[TAB]por edificios</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_MISC_HELP_PROD_OVERFLOW</Tag>
         <English>Overflow from previous build : %d1%F2_Icon</English>
         <French>Excédent de la production précédente : %d1%F2_Icon</French>
@@ -3612,14 +3652,6 @@
         <German>([COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] für Verhandlungstisch)</German>
         <Italian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] per la tabella commerciale)</Italian>
         <Spanish>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] para ir a la tabla de intercambios)</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MISC_HELP_BUILDING_YIELD</Tag>
-        <English>[ICON_BULLET]%d1%F2[TAB]from buildings</English>
-        <French>[ICON_BULLET]%d1%F2[TAB]en raison des bâtiments</French>
-        <German>[ICON_BULLET]%d1%F2[TAB]durch Gebäude</German>
-        <Italian>[ICON_BULLET]%d1%F2[TAB]dagli edifici</Italian>
-        <Spanish>[ICON_BULLET]%d1%F2[TAB]por edificios</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_HOT_SEAT</Tag>
@@ -3767,43 +3799,43 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_BAR_GROWTH</Tag>
-        <English>Growth : %d1/%d2[ICON_FOOD]</English>
-        <French>Croissance : %d1/%d2[ICON_FOOD]</French>
-        <German>Wachstum : %d1/%d2[ICON_FOOD]</German>
-        <Italian>Crescita : %d1/%d2[ICON_FOOD]</Italian>
-        <Spanish>Crecimiento : %d1/%d2[ICON_FOOD]</Spanish>
+        <English>Growth : %d1 / %d2[ICON_FOOD]</English>
+        <French>Croissance : %d1 / %d2[ICON_FOOD]</French>
+        <German>Wachstum : %d1 / %d2[ICON_FOOD]</German>
+        <Italian>Crescita : %d1 / %d2[ICON_FOOD]</Italian>
+        <Spanish>Crecimiento : %d1 / %d2[ICON_FOOD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_BAR_FOOD_GROWTH</Tag>
-        <English>Growth : %d1/%d2[ICON_FOOD] (%d3 [NUM3:turn:turns])</English>
-        <French>Croissance : %d1/%d2[ICON_FOOD] (%d3 [NUM3:tour:tours])</French>
-        <German>Wachstum : %d1/%d2[ICON_FOOD] (%d3 [NUM3:Runde:Runden])</German>
-        <Italian>Crescita : %d1/%d2[ICON_FOOD] (%d3 [NUM3:turno:turni])</Italian>
-        <Spanish>Crecimiento : %d1/%d2[ICON_FOOD] (%d3 [NUM3:turno:turnos])</Spanish>
+        <English>Growth : %d1 / %d2[ICON_FOOD] (%d3 [NUM3:turn:turns])</English>
+        <French>Croissance : %d1 / %d2[ICON_FOOD] (%d3 [NUM3:tour:tours])</French>
+        <German>Wachstum : %d1 / %d2[ICON_FOOD] (%d3 [NUM3:Runde:Runden])</German>
+        <Italian>Crescita : %d1 / %d2[ICON_FOOD] (%d3 [NUM3:turno:turni])</Italian>
+        <Spanish>Crecimiento : %d1 / %d2[ICON_FOOD] (%d3 [NUM3:turno:turnos])</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_BAR_PRODUCTION</Tag>
-        <English>%s1 : %d2/%d3 %F4_Icon</English>
-        <French>%s1 : %d2/%d3 %F4_Icon</French>
-        <German>%s1 : %d2/%d3 %F4_Icon</German>
-        <Italian>%s1 : %d2/%d3 %F4_Icon</Italian>
-        <Spanish>%s1 : %d2/%d3 %F4_Icon</Spanish>
+        <English>%s1 : %d2 / %d3 %F4_Icon</English>
+        <French>%s1 : %d2 / %d3 %F4_Icon</French>
+        <German>%s1 : %d2 / %d3 %F4_Icon</German>
+        <Italian>%s1 : %d2 / %d3 %F4_Icon</Italian>
+        <Spanish>%s1 : %d2 / %d3 %F4_Icon</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_BAR_HAMMER_PRODUCTION</Tag>
-        <English>%s1 : %d2/%d3%F5_Icon (%d4 [NUM4:turn:turns])</English>
-        <French>%s1 : %d2/%d3%F5_Icon (%d4 [NUM4:tour:tours])</French>
-        <German>%s1 : %d2/%d3%F5_Icon (%d4 [NUM4:Runde:Runden])</German>
-        <Italian>%s1 : %d2/%d3%F5_Icon (%d4 [NUM4:turno:turni])</Italian>
-        <Spanish>%s1 : %d2/%d3%F5_Icon (%d4 [NUM4:turno:turnos])</Spanish>
+        <English>%s1 : %d2 / %d3%F5_Icon (%d4 [NUM4:turn:turns])</English>
+        <French>%s1 : %d2 / %d3%F5_Icon (%d4 [NUM4:tour:tours])</French>
+        <German>%s1 : %d2 / %d3%F5_Icon (%d4 [NUM4:Runde:Runden])</German>
+        <Italian>%s1 : %d2 / %d3%F5_Icon (%d4 [NUM4:turno:turni])</Italian>
+        <Spanish>%s1 : %d2 / %d3%F5_Icon (%d4 [NUM4:turno:turnos])</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_BAR_CULTURE</Tag>
-        <English>Culture : %d1/%d2[ICON_CULTURE] (%s3)</English>
-        <French>Culture : %d1/%d2[ICON_CULTURE] (%s3)</French>
-        <German>Kultur : %d1/%d2[ICON_CULTURE] (%s3)</German>
-        <Italian>Cultura : %d1/%d2[ICON_CULTURE] (%s3)</Italian>
-        <Spanish>Cultura : %d1/%d2[ICON_CULTURE] (%s3)</Spanish>
+        <English>Culture : %d1 / %d2[ICON_CULTURE] (%s3)</English>
+        <French>Culture : %d1 / %d2[ICON_CULTURE] (%s3)</French>
+        <German>Kultur : %d1 / %d2[ICON_CULTURE] (%s3)</German>
+        <Italian>Cultura : %d1 / %d2[ICON_CULTURE] (%s3)</Italian>
+        <Spanish>Cultura : %d1 / %d2[ICON_CULTURE] (%s3)</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_BAR_SELECT</Tag>
@@ -3815,11 +3847,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_FOOD_THRESHOLD</Tag>
-        <English>Food : %d1_Num/%d2_Threshold[ICON_FOOD]</English>
-        <French>Nourriture : %d1_Num/%d2_Threshold[ICON_FOOD]</French>
-        <German>Nahrung : %d1_Num/%d2_Threshold[ICON_FOOD]</German>
-        <Italian>Cibo : %d1_Num/%d2_Threshold[ICON_FOOD]</Italian>
-        <Spanish>Alimentos : %d1_Num/%d2_Threshold[ICON_FOOD]</Spanish>
+        <English>Food : %d1_Num / %d2_Threshold[ICON_FOOD]</English>
+        <French>Nourriture : %d1_Num / %d2_Threshold[ICON_FOOD]</French>
+        <German>Nahrung : %d1_Num / %d2_Threshold[ICON_FOOD]</German>
+        <Italian>Cibo : %d1_Num / %d2_Threshold[ICON_FOOD]</Italian>
+        <Spanish>Alimentos : %d1_Num / %d2_Threshold[ICON_FOOD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_TURNS_LEFT</Tag>
@@ -3911,7 +3943,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FLYOUT_MENU_SELECT_ALL</Tag>
-        <English>Select All</English>
+        <English>Select all</English>
         <French>Sélectionner tous</French>
         <German>Alle auswählen</German>
         <Italian>Seleziona tutto</Italian>
@@ -3919,7 +3951,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FLYOUT_MENU_WAKE_ALL</Tag>
-        <English>Wake All</English>
+        <English>Wake all</English>
         <French>Réveiller tous</French>
         <German>Alle wecken</German>
         <Italian>Sveglia tutte le unità</Italian>
@@ -3927,7 +3959,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FLYOUT_MENU_FORTIFY_ALL</Tag>
-        <English>Fortify All</English>
+        <English>Fortify all</English>
         <French>Retrancher tous</French>
         <German>Alle verschanzen</German>
         <Italian>Fortifica tutte le unità</Italian>
@@ -3935,7 +3967,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FLYOUT_MENU_SLEEP_ALL</Tag>
-        <English>Sleep All</English>
+        <English>Sleep all</English>
         <French>Endormir tous</French>
         <German>Alle ausruhen</German>
         <Italian>Fai dormire tutte le unità</Italian>
@@ -3945,7 +3977,7 @@
         <Tag>TXT_KEY_UNIQUE_UNIT</Tag>
         <English>[ICON_BULLET]Unique unit for %s1_civ</English>
         <French>[ICON_BULLET]Unité unique pour : %s1_civ</French>
-        <German>[ICON_BULLET]Spezialle Einheit für %s1_civ</German>
+        <German>[ICON_BULLET]Spezielle Einheit für %s1_civ</German>
         <Italian>[ICON_BULLET]Unità unica per la civiltà %s1_civ</Italian>
         <Spanish>[ICON_BULLET]Unidad exclusiva de %s1_civ</Spanish>
     </TEXT>
@@ -4042,7 +4074,7 @@
         <English>Fine, do so at the next opportunity.</English>
         <French>Très bien, attelons-nous à cette tâche à la prochaine occasion.</French>
         <German>Also schön, dann sollten wir das bei nächster Gelegenheit tun.</German>
-        <Italian>Bene, fallo alla prossima opportunità</Italian>
+        <Italian>Bene, fallo alla prossima opportunità.</Italian>
         <Spanish>Bien, hacedlo en cuanto se presente la oportunidad.</Spanish>
     </TEXT>
     <TEXT>
@@ -4137,7 +4169,7 @@
         <Tag>TXT_KEY_EMAIL_SENT</Tag>
         <English>Email to %s1 successfully sent.</English>
         <French>E-mail envoyé à %s1 avec succès.</French>
-        <German>E-Mail erfolgreich an %s1 gesendet</German>
+        <German>E-Mail erfolgreich an %s1 gesendet.</German>
         <Italian>E-mail a %s1 inviata con successo.</Italian>
         <Spanish>Se ha enviado sin problemas el e-mail a %s1.</Spanish>
     </TEXT>
@@ -4231,7 +4263,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RIVALS_MET</Tag>
-        <English>Rivals Met</English>
+        <English>Rivals met</English>
         <French>Rivaux rencontrés</French>
         <German>Feindbegegnungen</German>
         <Italian>Rivali incontrati</Italian>
@@ -4311,7 +4343,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GLOBELAYER_UNITS_ALLMILITARY</Tag>
-        <English>All Military</English>
+        <English>All military units except neutrals</English>
         <French>Toutes unités militaires</French>
         <German>Alle Einheiten außer neutralen</German>
         <Italian>Tutti gli eserciti</Italian>
@@ -4319,7 +4351,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GLOBELAYER_UNITS_TEAMMILITARY</Tag>
-        <English>Team Military</English>
+        <English>Military units of our team</English>
         <French>Unités militaires de l'équipe</French>
         <German>Militäreinheiten des eigenen Teams</German>
         <Italian>Eserciti della squadra</Italian>
@@ -4327,7 +4359,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GLOBELAYER_UNITS_ENEMYMILITARY</Tag>
-        <English>Enemy Military</English>
+        <English>Enemy military units</English>
         <French>Unités militaires ennemies</French>
         <German>Feindliche Militäreinheiten</German>
         <Italian>Eserciti nemici</Italian>
@@ -4585,7 +4617,7 @@
         <Tag>TXT_KEY_MAIN_MENU_RANDOM_DESC</Tag>
         <English>Your leader will be chosen at random.</English>
         <French>Votre dirigeant sera choisi aléatoirement.</French>
-        <German>Das Staatsoberhaupt wird zufällig ausgewählt</German>
+        <German>Das Staatsoberhaupt wird zufällig ausgewählt.</German>
         <Italian>Il tuo leader verrà scelto casualmente.</Italian>
         <Spanish>Tu líder se elegirá al azar.</Spanish>
     </TEXT>
@@ -5281,7 +5313,7 @@
         <Tag>TXT_KEY_INIT_SAVE_TRANSFER_ERROR_DESC</Tag>
         <English>Failed to initialize tranfer of the game data file.</English>
         <French>Echec de l'initialisation du transfert du fichier de données du jeu.</French>
-        <German>Die Spieldatendatei konnte nicht übertragen werden.</German>
+        <German>Die Spieldaten-Datei konnte nicht übertragen werden.</German>
         <Italian>Impossibile inizializzare il trasferimento dei file dati di gioco.</Italian>
         <Spanish>No se ha podido iniciar la transferencia del archivo de datos de la partida.</Spanish>
     </TEXT>
@@ -5297,7 +5329,7 @@
         <Tag>TXT_KEY_INIT_MAP_TRANSFER_ERROR_DESC</Tag>
         <English>Failed to initialize transfer of the map.</English>
         <French>Echec de l'initialisation du transfert de la carte.</French>
-        <German>Die Kartendatei konnte nicht übertragen werden.</German>
+        <German>Die Karten-Datei konnte nicht übertragen werden.</German>
         <Italian>Impossibile inizializzare il trasferimento della mappa.</Italian>
         <Spanish>No se ha podido iniciar la transferencia del mapa.</Spanish>
     </TEXT>
@@ -5721,7 +5753,7 @@
         <Tag>TXT_KEY_MAIN_MENU_OPEN_REPLAY_FAILED</Tag>
         <English>Failed to open the replay file.</English>
         <French>Echec d'ouverture du fichier de film.</French>
-        <German>Öffnen der Wiederholungsdatei gescheitert.</German>
+        <German>Öffnen der Wiederholungs-Datei gescheitert.</German>
         <Italian>Errore nell'apertura del file di replay.</Italian>
         <Spanish>No se ha podido abrir el archivo de repetición.</Spanish>
     </TEXT>
@@ -5929,7 +5961,7 @@
         <Tag>TXT_KEY_MAIN_MENU_MAP_SCRIPT_NOT_FOUND_DESC</Tag>
         <English>Unable to find the chosen Map Script file.</English>
         <French>Le fichier de script de la carte choisie est introuvable.</French>
-        <German>Die gewählte Kartenskriptdatei konnte nicht gefunden werden.</German>
+        <German>Die gewählte Kartenskript-Datei konnte nicht gefunden werden.</German>
         <Italian>Impossibile trovare il file di script della mappa prescelto.</Italian>
         <Spanish>No se ha podido encontrar el archivo escogido de secuencia de comandos del mapa.</Spanish>
     </TEXT>
@@ -6198,14 +6230,6 @@
         <Spanish>Idioma</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_DEMOGRAPHICS_SCREEN_RIVAL_AVERAGE</Tag>
-        <English>Rival Average</English>
-        <French>Moyenne rivaux</French>
-        <German>Weltdurchschn.</German>
-        <Italian>Media dei rivali</Italian>
-        <Spanish>Promedio del rival</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_CONN_UPDATE_LEFT</Tag>
         <English>%s1_Name has left the game.</English>
         <French>%s1_Name a quitté la partie.</French>
@@ -6255,11 +6279,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONN_UPDATE_UNEXPECTED</Tag>
-        <English>Unexpected vote result.</English>
+        <English>Unexpected vote result</English>
         <French>Résultat de vote inattendu</French>
-        <German>Unerwartetes Abstimmungsergebnis.</German>
-        <Italian>Risultato della votazione inaspettato.</Italian>
-        <Spanish>Resultado inesperado de la votación.</Spanish>
+        <German>Unerwartetes Abstimmungsergebnis</German>
+        <Italian>Risultato della votazione inaspettato</Italian>
+        <Spanish>Resultado inesperado de la votación</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DROP_VOTE_CONTINUE_DESC</Tag>
@@ -6719,7 +6743,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MINIMIZED_CHOOSE_PRODUCTION_BUILDING</Tag>
-        <English>%s2_City : You have constructed a [COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT]</English>
+        <English>%s2_City : You have constructed a [COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT] ...</English>
         <French>Vous avez construit un bâtiment ([COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT]) à %s2_City...</French>
         <German>%s2_City : Ihr habt ein Gebäude ([COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT]) errichtet ...</German>
         <Italian>Hai costruito l'edificio ([COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT]) a %s2_City...</Italian>
@@ -6919,7 +6943,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RENAME_UNIT</Tag>
-        <English>Rename Unit :</English>
+        <English>Rename unit :</English>
         <French>Renommer unité</French>
         <German>Einheit umbenennen :</German>
         <Italian>Rinomina unità :</Italian>
@@ -7545,33 +7569,33 @@
         <Tag>TXT_KEY_INVALID_CAPTURE_TITLE</Tag>
         <English>Invalid Device</English>
         <French>Appareil non valide</French>
-        <German>Invalid Device</German>
-        <Italian>Invalid Device</Italian>
-        <Spanish>Invalid Device</Spanish>
+        <German>Unzulässiges Gerät</German>
+        <Italian>Dispositivo non valido</Italian>
+        <Spanish>Dispositivo no válido</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INVALID_CAPTURE_DESC</Tag>
         <English>You have selected an unusable voice capture device. Voice capture disabled.</English>
         <French>Aucune entrée audio utilisable connectée. Capture de voix désactivée.</French>
-        <German>You have selected an unusable voice capture device. Voice capture disabled.</German>
-        <Italian>You have selected an unusable voice capture device. Voice capture disabled.</Italian>
-        <Spanish>You have selected an unusable voice capture device. Voice capture disabled.</Spanish>
+        <German>Sie haben ein unbrauchbares Sprachaufzeichnungsgerät ausgewählt. Sprachaufzeichnung deaktiviert.</German>
+        <Italian>Hai selezionato un dispositivo di cattura vocale inutilizzabile. Cattura vocale disabilitata.</Italian>
+        <Spanish>Ha seleccionado un dispositivo de captura de voz inutilizado. Captura de voz desactivada.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INVALID_PLAYBACK_TITLE</Tag>
         <English>Invalid Device</English>
         <French>Appareil non valide</French>
-        <German>Invalid Device</German>
-        <Italian>Invalid Device</Italian>
-        <Spanish>Invalid Device</Spanish>
+        <German>Unzulässiges Gerät</German>
+        <Italian>Dispositivo non valido</Italian>
+        <Spanish>Dispositivo no válido</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INVALID_PLAYBACK_DESC</Tag>
         <English>You have selected an unusable voice playback device. Voice playback disabled.</English>
         <French>Aucune sortie audio utilisable connectée. Retour de voix désactivée.</French>
-        <German>You have selected an unusable voice playback device. Voice playback disabled.</German>
-        <Italian>You have selected an unusable voice playback device. Voice playback disabled.</Italian>
-        <Spanish>You have selected an unusable voice playback device. Voice playback disabled.</Spanish>
+        <German>Sie haben ein unbrauchbares Sprachwiedergabegerät ausgewählt. Sprachwiedergabe deaktiviert.</German>
+        <Italian>Hai selezionato un dispositivo di riproduzione vocale inutilizzabile. Riproduzione vocale disabilitata.</Italian>
+        <Spanish>Ha seleccionado un dispositivo de reproducción de voz inutilizado. Reproducción de voz desactivada.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTION_SOUND_MONO</Tag>
@@ -7591,7 +7615,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GLOBELAYER_STRATEGY_DELETE_LINES</Tag>
-        <English>Delete All Lines</English>
+        <English>Delete all lines</English>
         <French>Effacer toutes lignes</French>
         <German>Alle Linien löschen</German>
         <Italian>Elimina tutte le linee</Italian>
@@ -7711,7 +7735,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUDDY_LIST_STATUS_NA</Tag>
-        <English>Not Available</English>
+        <English>Not available</English>
         <French>Non disponible</French>
         <German>Nicht verfügbar</German>
         <Italian>Non disponibile</Italian>
@@ -7759,7 +7783,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHANGE_PRODUCTION</Tag>
-        <English>Change Production</English>
+        <English>Change production</English>
         <French>Changer production</French>
         <German>Produktion ändern</German>
         <Italian>Cambia produzione</Italian>
@@ -7767,7 +7791,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HURRY_PRODUCTION</Tag>
-        <English>Hurry Production</English>
+        <English>Hurry production</English>
         <French>Hâter production</French>
         <German>Produktion beschleunigen</German>
         <Italian>Produzione accelerata</Italian>
@@ -7775,11 +7799,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HURRY_PRODUCTION_GOLD</Tag>
-        <English>, %d1 Gold</English>
-        <French>, %d1 or</French>
-        <German>, %d1 Gold</German>
-        <Italian>, %d1 Oro</Italian>
-        <Spanish>, %d1 oro</Spanish>
+        <English>, %d1[ICON_GOLD]</English>
+        <French>, %d1[ICON_GOLD]</French>
+        <German>, %d1[ICON_GOLD]</German>
+        <Italian>, %d1[ICON_GOLD]</Italian>
+        <Spanish>, %d1[ICON_GOLD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HURRY_PRODUCTION_POP</Tag>
@@ -7791,7 +7815,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_STACK</Tag>
-        <English>Unit Stack (%d1) :</English>
+        <English>Unit stack (%d1) :</English>
         <French>Unités empilés (%d1) :</French>
         <German>Einheitenstapel (%d1) :</German>
         <Italian>Gruppo unità (%d1) :</Italian>
@@ -7799,7 +7823,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAN_MOVE_IMPASSABLE</Tag>
-        <English>[ICON_BULLET]Can Move through Impassable Terrain</English>
+        <English>[ICON_BULLET]Can move through impassable terrain</English>
         <French>[ICON_BULLET]Peut se déplacer sur des terrains infranchissables.</French>
         <German>[ICON_BULLET]Kann sich durch unpassierbares Gelände bewegen</German>
         <Italian>[ICON_BULLET]Può attraversare il terreno invalicabile</Italian>
@@ -7827,7 +7851,7 @@
         <French>Erreur lors de l'ouverture du fichier %s1</French>
         <German>Fehler beim Öffnen der Datei %s1</German>
         <Italian>Errore nell'apertura del file %s1</Italian>
-        <Spanish>Error al abrir el archivo %s1.</Spanish>
+        <Spanish>Error al abrir el archivo %s1</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LOADSAVE_FILE_CANT_CREATE</Tag>
@@ -7835,7 +7859,7 @@
         <French>Erreur lors de la création du fichier %s1</French>
         <German>Fehler beim Erstellen der Datei %s1</German>
         <Italian>Errore nella creazione del file %s1</Italian>
-        <Spanish>Error al crear el archivo %s1.</Spanish>
+        <Spanish>Error al crear el archivo %s1</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LOADSAVE_FILE_PROTECTED</Tag>
@@ -7859,7 +7883,7 @@
         <French>Impossible de décompresser les données du jeu</French>
         <German>Die Spieldaten konnten nicht dekomprimiert werden</German>
         <Italian>Impossibile decomprimere i dati di gioco</Italian>
-        <Spanish>No se han podido descomprimir los datos del juego.</Spanish>
+        <Spanish>No se han podido descomprimir los datos del juego</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMPRESS_FAILED</Tag>
@@ -7867,7 +7891,7 @@
         <French>Impossible de compresser les données du jeu</French>
         <German>Die Spieldaten konnten nicht komprimiert werden</German>
         <Italian>Impossibile comprimere i dati di gioco</Italian>
-        <Spanish>No se han podido comprimir los datos del juego.</Spanish>
+        <Spanish>No se han podido comprimir los datos del juego</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LOAD_ERROR</Tag>
@@ -7875,7 +7899,7 @@
         <French>Erreur lors du chargement</French>
         <German>Ladefehler</German>
         <Italian>Errore di caricamento</Italian>
-        <Spanish>Error de carga.</Spanish>
+        <Spanish>Error de carga</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SAVE_ERROR</Tag>
@@ -7883,7 +7907,7 @@
         <French>Erreur lors de la sauvegarde</French>
         <German>Speicherfehler</German>
         <Italian>Errore di salvataggio</Italian>
-        <Spanish>Error de guardado.</Spanish>
+        <Spanish>Error de guardado</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_BUDDY_LIST_STAGING_LOC</Tag>
@@ -7926,36 +7950,20 @@
         <Spanish>Nivel del mar :</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_INFO_RIVAL_BEST</Tag>
-        <English>Rival Best</English>
-        <French>Meilleur rival</French>
-        <German>Besten herausfordern</German>
-        <Italian>Migliore rivale</Italian>
-        <Spanish>Mejor rival</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_INFO_RIVAL_WORST</Tag>
-        <English>Rival Worst</English>
-        <French>Pire rival</French>
-        <German>Schlechtesten herausfordern</German>
-        <Italian>Peggiore rivale</Italian>
-        <Spanish>Peor rival</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_INFO_NUM_TURNS</Tag>
-        <English>%d1_Num turns</English>
-        <French>%d1_Num tours</French>
-        <German>%d1_Num Runden</German>
-        <Italian>%d1_Num turni</Italian>
+        <English>%d1_Num [NUM1:turn:turns]</English>
+        <French>%d1_Num [NUM1:tour:tours]</French>
+        <German>%d1_Num [NUM1:Runde:Runden]</German>
+        <Italian>%d1_Num [NUM1:turno:turni]</Italian>
         <Spanish>%d1_Num [NUM1:turno:turnos]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_CITY_DEFENSE</Tag>
         <English>%F1 Defense : %D2%%</English>
-        <French>%F1 Défense: %D2%%</French>
+        <French>%F1 Défense : %D2%%</French>
         <German>%F1-Verteidigung : %D2%%</German>
-        <Italian>%F1 Difesa: %D2%%</Italian>
-        <Spanish>%F1 Defensa: %D2%%</Spanish>
+        <Italian>%F1 Difesa : %D2%%</Italian>
+        <Spanish>%F1 Defensa : %D2%%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_PLAYERS_SIGN_DEFENSIVE_PACT</Tag>
@@ -8091,7 +8099,7 @@
         <French>Adresse du serveur SMTP ou nom de domaine</French>
         <German>Name der SMTP-Serveradresse oder Domäne</German>
         <Italian>Indirizzo del server SMTP o nome del dominio</Italian>
-        <Spanish>Nombre de dominio o dirección del servidor SMTP.</Spanish>
+        <Spanish>Nombre de dominio o dirección del servidor SMTP</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_SMTP_LOGIN</Tag>
@@ -8107,7 +8115,7 @@
         <French>Connexion serveur SMTP</French>
         <German>SMTP-Server-Login</German>
         <Italian>Login del server SMTP</Italian>
-        <Spanish>Inicio de sesión del servidor SMTP.</Spanish>
+        <Spanish>Inicio de sesión del servidor SMTP</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_SMTP_PASSWORD</Tag>
@@ -8123,7 +8131,7 @@
         <French>Mot de passe serveur SMTP</French>
         <German>SMTP-Server-Passwort</German>
         <Italian>Password del server SMTP</Italian>
-        <Spanish>Contraseña del servidor SMTP.</Spanish>
+        <Spanish>Contraseña del servidor SMTP</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_DIRECTIP</Tag>
@@ -8152,10 +8160,10 @@
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_PATCH_REQUIRED_DESC</Tag>
         <English>You must install the latest update to continue</English>
-        <French>Pour continuer, vous devez installer la dernière mise à jour.</French>
+        <French>Pour continuer, vous devez installer la dernière mise à jour</French>
         <German>Sie müssen das neueste Update installieren, um fortzufahren</German>
         <Italian>Devi installare l'ultimo aggiornamento per continuare</Italian>
-        <Spanish>Debes instalar la actualización más reciente para continuar.</Spanish>
+        <Spanish>Debes instalar la actualización más reciente para continuar</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_PATCH_REQUIRED_TITLE</Tag>
@@ -8171,7 +8179,7 @@
         <French>Erreur lors du téléchargement du patch</French>
         <German>Fehler beim Patch-Download</German>
         <Italian>Errore nello scaricamento dell'aggiornamento</Italian>
-        <Spanish>Error al descargar el parche.</Spanish>
+        <Spanish>Error al descargar el parche</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_PATCH_DOWNLOAD_ERROR_TITLE</Tag>
@@ -8184,10 +8192,10 @@
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_PATCH_COMPLETE_DESC</Tag>
         <English>Press ok to shut down and install the patch</English>
-        <French>Cliquez sur OK pour lancer l'installation du patch.</French>
+        <French>Cliquez sur OK pour lancer l'installation du patch</French>
         <German>Wählen Sie 'OK', um das Programm zu schließen und den Patch zu installieren</German>
         <Italian>Premi OK per chiudere e installare l'aggiornamento</Italian>
-        <Spanish>Pulsa "Aceptar" para salir e instalar el parche.</Spanish>
+        <Spanish>Pulsa "Aceptar" para salir e instalar el parche</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_PATCH_COMPLETE_TITLE</Tag>
@@ -8195,7 +8203,7 @@
         <French>Téléchargement terminé !</French>
         <German>Download abgeschlossen!</German>
         <Italian>Scaricamento completato!</Italian>
-        <Spanish>Descarga completa</Spanish>
+        <Spanish>¡Descarga completa!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_PATCH_CHECK_ERROR_DESC</Tag>
@@ -8203,7 +8211,7 @@
         <French>Erreur lors de la recherche de mises à jour</French>
         <German>Fehler bei der Suche nach Updates</German>
         <Italian>Errore nella ricerca degli aggiornamenti</Italian>
-        <Spanish>Error al buscar actualizaciones.</Spanish>
+        <Spanish>Error al buscar actualizaciones</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_PATCH_CHECK_ERROR_TITLE</Tag>
@@ -8240,10 +8248,10 @@
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_NAME_GAME_DESC</Tag>
         <English>Please enter a name for your game</English>
-        <French>Veuillez saisir un nom pour votre partie.</French>
+        <French>Veuillez saisir un nom pour votre partie</French>
         <German>Bitte geben Sie einen Namen für Ihr Spiel ein</German>
         <Italian>Inserisci un nome per la partita</Italian>
-        <Spanish>Introduce un nombre para la partida.</Spanish>
+        <Spanish>Introduce un nombre para la partida</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_NAME_GAME_TITLE</Tag>
@@ -8256,10 +8264,10 @@
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_PWD_GAME_DESC</Tag>
         <English>Please enter a password for your game</English>
-        <French>Veuillez saisir un mot de passe pour votre partie.</French>
+        <French>Veuillez saisir un mot de passe pour votre partie</French>
         <German>Bitte geben Sie ein Passwort für Ihr Spiel ein</German>
         <Italian>Inserisci una password per la partita</Italian>
-        <Spanish>Introduce una contraseña para la partida.</Spanish>
+        <Spanish>Introduce una contraseña para la partida</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_PWD_GAME_TITLE</Tag>
@@ -8312,10 +8320,10 @@
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_TURNTIMER_ERROR_DESC</Tag>
         <English>Turn Timer value must be an integer</English>
-        <French>La valeur du chrono doit être un nombre entier.</French>
+        <French>La valeur du chrono doit être un nombre entier</French>
         <German>Der Runden-Timer-Wert muss ein Integer-Wert sein</German>
         <Italian>Il valore del timer dei turni deve essere un numero intero</Italian>
-        <Spanish>El valor del contador del turno debe ser entero.</Spanish>
+        <Spanish>El valor del contador del turno debe ser entero</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_TURNTIMER_ERROR_TITLE</Tag>
@@ -8336,7 +8344,7 @@
     <TEXT>
         <Tag>TXT_KEY_PATCHCOMPLETE_MEMORY_DESC</Tag>
         <English>A memory error was encountered while downloading the patch.</English>
-        <French>Erreur mémoire lors du téléchargement du patch</French>
+        <French>Erreur mémoire lors du téléchargement du patch.</French>
         <German>Beim Patch-Download ist ein Speicherfehler aufgetreten.</German>
         <Italian>Si è verificato un errore di memoria durante lo scaricamento dell'aggiornamento.</Italian>
         <Spanish>Se ha producido un error de memoria al descargar el parche.</Spanish>
@@ -8631,7 +8639,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FLAT_MOVEMENT</Tag>
-        <English>[ICON_BULLET]Flat Movement Costs</English>
+        <English>[ICON_BULLET]Flat movement costs</English>
         <French>[ICON_BULLET]Coût de déplacement</French>
         <German>[ICON_BULLET]Fortbewegungskosten - flach</German>
         <Italian>[ICON_BULLET]Costi di movimento in pianura</Italian>
@@ -9138,8 +9146,8 @@
         <English>[ICON_BULLET]Food stores in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] : %d1%%[ICON_FOOD]</English>
         <French>[ICON_BULLET]Nourriture stockée à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] : %d1%%[ICON_FOOD]</French>
         <German>[ICON_BULLET]Nahrungsvorräte in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] : %d1%%[ICON_FOOD]</German>
-        <Italian>[ICON_BULLET]Riserve di cibo a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]: %d1%%[ICON_FOOD]</Italian>
-        <Spanish>[ICON_BULLET]Alimentos almacenados en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]: %d1%%[ICON_FOOD]</Spanish>
+        <Italian>[ICON_BULLET]Riserve di cibo a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] : %d1%%[ICON_FOOD]</Italian>
+        <Spanish>[ICON_BULLET]Alimentos almacenados en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] : %d1%%[ICON_FOOD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FEATURE_GROWTH</Tag>
@@ -9194,8 +9202,8 @@
         <English>[ICON_BULLET]The [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] receives %d1 XP</English>
         <French>[ICON_BULLET][NUM2:Le:La:L'] [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] reçoit %d1 EXP</French>
         <German>[ICON_BULLET]Die Einheit [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] erhält %d1 EP</German>
-        <Italian>[ICON_BULLET]L'unità [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] riceve %d1 XP</Italian>
-        <Spanish>[ICON_BULLET][NUM2:El:La:Los:Las] [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] [NUM2:recibe:recibe:reciben:reciben] %d1 PE</Spanish>
+        <Italian>[ICON_BULLET]L'unità [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] riceve %d1 PE</Italian>
+        <Spanish>[ICON_BULLET][NUM2:El:La:Los:Las] [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] [NUM2:recibe:recibe:reciben:reciben] %d1 PX</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_UNIT_DISBAND</Tag>
@@ -9271,7 +9279,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_RIVER_PLOTS</Tag>
-        <English>River Tiles</English>
+        <English>River tiles</English>
         <French>Cases rivières</French>
         <German>Fluss-Geländefelder</German>
         <Italian>Caselle di fiume</Italian>
@@ -9295,7 +9303,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GLOBELAYER_UNITS_ENEMY_TERRITORY_MILITARY</Tag>
-        <English>Enemies in Territory</English>
+        <English>Enemy military units in owned territory</English>
         <French>Ennemis sur le territoire</French>
         <German>Feindliche Militäreinheiten im eigenen Territorium</German>
         <Italian>Nemici nel territorio</Italian>
@@ -9367,11 +9375,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_YIELD_CHANGE_BUILDING</Tag>
-        <English>[ICON_BULLET]%s1_building: %s2</English>
+        <English>[ICON_BULLET]%s1_building : %s2</English>
         <French>[ICON_BULLET]%s1_building : %s2</French>
-        <German>[ICON_BULLET]%s1_building: %s2</German>
-        <Italian>[ICON_BULLET]%s1_building: %s2</Italian>
-        <Spanish>[ICON_BULLET]%s1_building: %s2</Spanish>
+        <German>[ICON_BULLET]%s1_building : %s2</German>
+        <Italian>[ICON_BULLET]%s1_building : %s2</Italian>
+        <Spanish>[ICON_BULLET]%s1_building : %s2</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_ADDITIONAL_CHANCE</Tag>
@@ -9435,7 +9443,7 @@
         <French>[ICON_BULLET]%D1_Change Capacité d'emport</French>
         <German>[ICON_BULLET]%D1_Change Frachtraum</German>
         <Italian>[ICON_BULLET]%D1_Change spazio di carico</Italian>
-        <Spanish>[ICON_BULLET]Bodega: %D1_Change</Spanish>
+        <Spanish>[ICON_BULLET]Bodega : %D1_Change</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_UNIT_CLASS_PROMOTION</Tag>
@@ -9479,7 +9487,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ADVANCED_START_PEACE_REMAINING</Tag>
-        <English>%d1 [NUM1:turn:turns] of Universal Peace Remaining</English>
+        <English>%d1 [NUM1:turn:turns] of universal peace remaining</English>
         <French>%d1 [NUM1:tour restant:tours restants] de Paix Universelle</French>
         <German>%d1 [NUM1:Runde:Runden] Universellen Friedens verbleiben</German>
         <Italian>%d1 [NUM1:turno:turni] di pace universale rimanenti</Italian>
@@ -9488,14 +9496,14 @@
     <TEXT>
         <Tag>TXT_KEY_LIBERATE_CITY</Tag>
         <English>[COLOR_GREEN]Liberate[COLOR_REVERT]</English>
-        <French>Libérer</French>
+        <French>[COLOR_GREEN]Libérer[COLOR_REVERT]</French>
         <German>[COLOR_GREEN]Befreien[COLOR_REVERT]</German>
-        <Italian>Libera</Italian>
-        <Spanish>Liberar</Spanish>
+        <Italian>[COLOR_GREEN]Libera[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_GREEN]Liberar[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_LIBERATE</Tag>
-        <English>Liberate [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] (Gift to [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</English>
+        <English>Liberate [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] (gift to [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</English>
         <French>Libérer [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] (Cadeau au joueur [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</French>
         <German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] befreien (Geschenk an [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</German>
         <Italian>Libera [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] (regalo a [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</Italian>
@@ -9631,7 +9639,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIQUE_BUILDINGS</Tag>
-        <English>Unique Buildings</English>
+        <English>Unique buildings</English>
         <French>Bâtiments uniques</French>
         <German>Einzigartige Gebäude</German>
         <Italian>Edifici unici</Italian>
@@ -9653,7 +9661,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_CAN_NOT_BE_EARNED_BY_XP</Tag>
         <English>[COLOR_NEGATIVE_TEXT]Can not be earned by XP.[COLOR_REVERT]</English>
-        <German>[COLOR_NEGATIVE_TEXT]Kann nicht durch XP erworben werden.[COLOR_REVERT]</German>
+        <German>[COLOR_NEGATIVE_TEXT]Kann nicht durch EP erworben werden.[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_UPGRADE_DISCOUNT_FREE_TEXT</Tag>
@@ -9696,6 +9704,22 @@
         <Spanish>Cancelar los tratos actuales...</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_MISC_GP_BORN</Tag>
+        <English>The intrepid [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] is regarded by the warriors stationed in [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] as a model of bravery. Up and down the country, his reputation as a truly great warrior and general precedes him.</English>
+        <French>Naissance de %s1_GPName à [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] !</French>
+        <German>Der unerschrockene [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] gilt den in [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] stationierten Kämpfern als ein Vorbild an Tapferkeit und Manneszucht. Landauf und landab eilt ihm der Ruf voraus, ein wahrhaft großer Krieger und General zu sein.</German>
+        <Italian>%s1_GPName è nato a [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!</Italian>
+        <Spanish>%s1_GPName ha nacido en [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_GP_BORN_SOMEWHERE</Tag>
+        <English>In a distant region, [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] is making a name for himself as a great general. Take care, Milord!</English>
+        <French>Naissance de %s1_GPName dans un pays lointain !</French>
+        <German>In einer fernen Gegend macht [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] als ein Großer General von sich reden. Gebt acht, Milord!</German>
+        <Italian>%s1_GPName è [NUM1:nato:nata] in una terra lontana!</Italian>
+        <Spanish>%s1_GPName ha nacido en una tierra muy lejana.</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_MISC_GP_BORN_FIELD</Tag>
         <English>In the recent battle [COLOR_SELECTED_TEXT]%s1_GreatPersonName[COLOR_REVERT] fell upon his enemies like a wolf among the lambs. He is now known everywhere as a great general.</English>
         <French>%s1_GreatPersonName s'est révélé sur le champ de bataille</French>
@@ -9705,11 +9729,59 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_GREAT_GENERAL_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% Great General Emergence</English>
+        <English>[ICON_BULLET]%D1%% Great General emergence</English>
         <French>[ICON_BULLET]Emergence d'un Général illustre %D1%%</French>
         <German>[ICON_BULLET]%D1%% Produktion Großer Generäle</German>
         <Italian>[ICON_BULLET]%D1%% comparsa di un Grande Generale</Italian>
         <Spanish>[ICON_BULLET]%D1%% de aparición de Gran general</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_DOMESTIC_GREAT_GENERAL_MODIFIER</Tag>
+        <English>[ICON_BULLET]%D1%% Great General emergence inside cultural borders</English>
+        <French>[ICON_BULLET]Emergence d'un grand Général à l'intérieur des frontières culturelles %D1%%</French>
+        <German>[ICON_BULLET]%D1%% Produktion Großer Generäle innerhalb der kulturellen Grenzen</German>
+        <Italian>[ICON_BULLET]%D1%% comparsa di un Grande Generale all'interno dei confini culturali</Italian>
+        <Spanish>[ICON_BULLET]%D1%% de aparición de un Gran general dentro de las fronteras culturales</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DOMESTIC_GREAT_GENERAL_MODIFIER</Tag>
+        <English>[ICON_BULLET]%D1_Mod%% Great General emergence inside cultural borders</English>
+        <French>[ICON_BULLET]Emergence d'un grand Général à l'intérieur des frontières culturelles %D1_Mod%%</French>
+        <German>[ICON_BULLET]%D1_Mod%% Produktion Großer Generäle innerhalb der kulturellen Grenzen</German>
+        <Italian>[ICON_BULLET]%D1_Mod%% comparsa di un Grande Generale all'interno dei confini culturali</Italian>
+        <Spanish>[ICON_BULLET]%D1_Mod%% a la aparición de un Gran general dentro de las fronteras culturales</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LEADER_EXPERIENCE</Tag>
+        <English>[ICON_BULLET]Can provide up to %d1 XP to each unit in the same tile</English>
+        <French>[ICON_BULLET]Permet à chaque unité dans la même case d'obtenir jusqu'à %d1 EXP</French>
+        <German>[ICON_BULLET]Kann bis zu %d1 EP auf jede Einheit auf demselben Geländefeld übertragen</German>
+        <Italian>[ICON_BULLET]Può dare %d1 di esperienza alle unità presenti nella stessa casella</Italian>
+        <Spanish>[ICON_BULLET]Puede dar hasta %d1 PX a cada unidad que esté en la misma casilla.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_GREAT_GENERAL</Tag>
+        <English>Great General : %d1_Curr/%d2_Need experience</English>
+        <French>Général illustre : %d1_Curr/%d2_Need expérience</French>
+        <German>Großer General : %d1_Curr/%d2_Need Erfahrung</German>
+        <Italian>Grande Generale : %d1_Curr/%d2_Need esperienza</Italian>
+        <Spanish>Gran general : %d1_Curr/%d2_Need de experiencia</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_GREAT_ADMIRAL</Tag>
+        <English>Great Admiral : %d1_Curr/%d2_Need experience</English>
+        <French>Amiral illustre : %d1_Curr/%d2_Need expérience</French>
+        <German>Großer Admiral : %d1_Curr/%d2_Need Erfahrung</German>
+        <Italian>Grande Admirale : %d1_Curr/%d2_Need esperienza</Italian>
+        <Spanish>Gran admiral : %d1_Curr/%d2_Need de experiencia</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_GENERAL_KILLED</Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] has died in combat!</English>
+        <French>[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] est mort au combat !</French>
+        <German>[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] ist im Kampf gefallen!</German>
+        <Italian>[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] è morto in battaglia!</Italian>
+        <Spanish>¡[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] ha muerto en combate!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DROP_VOTE_HEADER_CORRECTED</Tag>
@@ -9744,36 +9816,12 @@
         <Spanish>Ctrl+</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_LEADER_EXPERIENCE</Tag>
-        <English>[ICON_BULLET]Can Provide up to %d1 XP to Each Unit in the Same Tile</English>
-        <French>[ICON_BULLET]Permet à chaque unité dans la même case d'obtenir jusqu'à %d1 EXP</French>
-        <German>[ICON_BULLET]Kann bis zu %d1 EP auf jede Einheit auf demselben Geländefeld übertragen</German>
-        <Italian>[ICON_BULLET]Può dare %d1 di esperienza alle unità presenti nella stessa casella</Italian>
-        <Spanish>[ICON_BULLET]Puede dar hasta %d1 PX a cada unidad que esté en la misma casilla.</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_ODDS_RETREAT</Tag>
         <English>Retreat odds : %s1%%</English>
         <French>Chances de retraite : %s1 %%</French>
         <German>Rückzugschance : %s1%%</German>
         <Italian>Probabilità di ritirata : %s1%%</Italian>
         <Spanish>Probabilidades de retirada : %s1%%</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_DOMESTIC_GREAT_GENERAL_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% Great General Emergence inside Cultural Borders</English>
-        <French>[ICON_BULLET]Emergence d'un grand Général à l'intérieur des frontières culturelles %D1%%</French>
-        <German>[ICON_BULLET]%D1%% Produktion Großer Generäle innerhalb der kulturellen Grenzen</German>
-        <Italian>[ICON_BULLET]%D1%% comparsa di un Grande Generale all'interno dei confini culturali</Italian>
-        <Spanish>[ICON_BULLET]%D1%% de aparición de un Gran general dentro de las fronteras culturales</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_DOMESTIC_GREAT_GENERAL_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1_Mod%% Great General Emergence inside Cultural Borders</English>
-        <French>[ICON_BULLET]Emergence d'un grand Général à l'intérieur des frontières culturelles %D1_Mod%%</French>
-        <German>[ICON_BULLET]%D1_Mod%% Produktion Großer Generäle innerhalb der kulturellen Grenzen</German>
-        <Italian>[ICON_BULLET]%D1_Mod%% comparsa di un Grande Generale all'interno dei confini culturali</Italian>
-        <Spanish>[ICON_BULLET]%D1_Mod%% a la aparición de un Gran general dentro de las fronteras culturales</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_LOADSAVE_CREATE</Tag>
@@ -9785,7 +9833,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_LOADSAVE_NEW_FOLDER</Tag>
-        <English>New Folder</English>
+        <English>New folder</English>
         <French>Nouveau répertoire</French>
         <German>Neuer Ordner</German>
         <Italian>Nuova cartella</Italian>
@@ -9801,7 +9849,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_WORLD_WRAP</Tag>
-        <English>World Wrap</English>
+        <English>World wrap</English>
         <French>Globe terrestre</French>
         <German>Weltkugeldrehung</German>
         <Italian>Estensione del pianeta</Italian>
@@ -9830,30 +9878,6 @@
         <German>Ringförmig</German>
         <Italian>Toroidale</Italian>
         <Spanish>Toroidal</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MISC_GREAT_GENERAL</Tag>
-        <English>Great General : %d1_Curr/%d2_Need experience</English>
-        <French>Général illustre : %d1_Curr/%d2_Need expérience</French>
-        <German>Großer General : %d1_Curr/%d2_Need Erfahrung</German>
-        <Italian>Grande Generale : %d1_Curr/%d2_Need esperienza</Italian>
-        <Spanish>Gran general : %d1_Curr/%d2_Need de experiencia</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MISC_GREAT_ADMIRAL</Tag>
-        <English>Great Admiral : %d1_Curr/%d2_Need experience</English>
-        <French>Amiral illustre : %d1_Curr/%d2_Need expérience</French>
-        <German>Großer Admiral : %d1_Curr/%d2_Need Erfahrung</German>
-        <Italian>Grande Admirale : %d1_Curr/%d2_Need esperienza</Italian>
-        <Spanish>Gran admiral : %d1_Curr/%d2_Need de experiencia</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MISC_GENERAL_KILLED</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] has died in combat!</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] est mort au combat !</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] ist im Kampf gefallen!</German>
-        <Italian>[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] è morto in battaglia!</Italian>
-        <Spanish>¡[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] ha muerto en combate!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_UNLOAD_MOD</Tag>
@@ -9921,7 +9945,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WINDOW_RESTORE_UP</Tag>
-        <English>Restore Up</English>
+        <English>Restore up</English>
         <French>Rétablir haut</French>
         <German>Vergrößern</German>
         <Italian>Ripristino in alto</Italian>
@@ -9929,7 +9953,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WINDOW_RESTORE_DOWN</Tag>
-        <English>Restore Down</English>
+        <English>Restore down</English>
         <French>Rétablir bas</French>
         <German>Verkleinern</German>
         <Italian>Ripristino in basso</Italian>
@@ -9976,20 +10000,12 @@
         <Spanish>Tipo de civ. :</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_BOMBARD_DEFENSE_MOD</Tag>
-        <English>[ICON_BULLET]%D1_Mod%% damage to defenses from bombardment (except vs. gunpowder-based units)</English>
-        <French>[ICON_BULLET]%D1_Mod%% Dégâts infligés aux défenses après un bombardement (sauf contre les unités à poudre)</French>
-        <German>[ICON_BULLET]%D1_Mod%% Bombardierungsschaden gegen Defensivanlagen (außer gegen Schießpulver-Einheiten)</German>
-        <Italian>[ICON_BULLET]%D1_Mod%% di danni alle difese a causa del bombardamento (tranne contro unità che utilizzano la povere da sparo)</Italian>
-        <Spanish>[ICON_BULLET]%D1_Mod%% de daño a las defensas por cañoneo (excepto contra unidades con armas de pólvora)</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_MOD_REQUIRED</Tag>
-        <English>The save file you have selected requires the following mod to be loaded:[NEWLINE][BOLD]%s1[\BOLD][NEWLINE][NEWLINE]The application must restart, okay?</English>
+        <English>The save file you have selected requires the following mod to be loaded :[NEWLINE][BOLD]%s1[\BOLD][NEWLINE][NEWLINE]The application must restart, okay?</English>
         <French>La sauvegarde sélectionnée nécessite le chargement du mod suivant : [NEWLINE][BOLD]%s1[\BOLD][NEWLINE][NEWLINE]L'application doit être relancée. Confirmer ?</French>
-        <German>Für den von Ihnen gewählten Spielstand muss das folgende Mod geladen werden: [NEWLINE][BOLD]%s1[\BOLD][NEWLINE][NEWLINE]Die Anwendung wird neu gestartet, okay?</German>
-        <Italian>Il salvataggio selezionato richiede il caricamento del seguente mod: [NEWLINE][BOLD]%s1[\BOLD][NEWLINE][NEWLINE]Il gioco deve essere riavviato, continuare?</Italian>
-        <Spanish>La partida guardada que has seleccionado requiere que se cargue el siguiente mod: [NEWLINE][BOLD]%s1[\BOLD][NEWLINE][NEWLINE]La aplicación debe reiniciarse. ¿Aceptar?</Spanish>
+        <German>Für den von Ihnen gewählten Spielstand muss das folgende Mod geladen werden : [NEWLINE][BOLD]%s1[\BOLD][NEWLINE][NEWLINE]Die Anwendung wird neu gestartet, okay?</German>
+        <Italian>Il salvataggio selezionato richiede il caricamento del seguente mod : [NEWLINE][BOLD]%s1[\BOLD][NEWLINE][NEWLINE]Il gioco deve essere riavviato, continuare?</Italian>
+        <Spanish>La partida guardada que has seleccionado requiere que se cargue el siguiente mod : [NEWLINE][BOLD]%s1[\BOLD][NEWLINE][NEWLINE]La aplicación debe reiniciarse. ¿Aceptar?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_MUSICVOLUME</Tag>
@@ -10038,22 +10054,6 @@
         <German>Soll dieser Befehl wirklich ausgeführt werden : %s1_ActionName?</German>
         <Italian>Sei sicuro di voler eseguire l'azione %s1_ActionName?</Italian>
         <Spanish>¿Seguro que queréis %s1_ActionName?</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_DEMO_SCREEN_INDUSTRY_TEXT</Tag>
-        <English>Hammer production</English>
-        <French>Production (Marteaux)</French>
-        <German>Produktion in Hämmern</German>
-        <Italian>Beni (Prod.)</Italian>
-        <Spanish>Producción</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_DEMO_SCREEN_AGRICULTURE_TEXT</Tag>
-        <English>Crop Yield (Food)</English>
-        <French>Récolte (Nourriture)</French>
-        <German>Nahrungsüberschuss</German>
-        <Italian>Prod. raccol. (cibo)</Italian>
-        <Spanish>Alimentos</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_DECLARED_WAR_ON</Tag>
@@ -10128,14 +10128,6 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_WITHDRAWL_PROBABILITY_SHORT</Tag>
-        <English>[ICON_BULLET]Withdrawal Chance : %d1_Amount%%</English>
-        <French>[ICON_BULLET]Chances de rompre le combat : %d1_Amount%%</French>
-        <German>[ICON_BULLET]Rückzugschance : %d1_Amount%%</German>
-        <Italian>[ICON_BULLET]Probabilità di ritirata : %d1_Amount%%</Italian>
-        <Spanish>[ICON_BULLET]Probabilidad de retirarse : %d1_Amount%%</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PILLAGE_YIELDS</Tag>
         <English>[ICON_BULLET]Pillage yields %d1_Num[ICON_GOLD] on average</English>
         <French>[ICON_BULLET]Le pillage rapporte en moyenne %d1_Num[ICON_GOLD].</French>
@@ -10187,7 +10179,7 @@
         <Tag>TXT_KEY_COMBAT_MESSAGE_DEFEATED</Tag>
         <English>---------------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]%s1_CivName's[COLOR_REVERT] %s2_UnitName has defeated [COLOR_HIGHLIGHT_TEXT]%s3_CivName[COLOR_REVERT]'s %s4_UnitName!</English>
         <French>Les [COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] (%s2_UnitName) ont vaincu l'unité des [COLOR_HIGHLIGHT_TEXT]%s3_CivName[COLOR_REVERT] (%s4_UnitName) !</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]%s1_CivNames[COLOR_REVERT] Einheit %s2_UnitName hat [COLOR_HIGHLIGHT_TEXT]%s3_CivNames[COLOR_REVERT] Einheit %s4_UnitName besiegt!</German>
+        <German>---------------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]%s1_CivNames[COLOR_REVERT] Einheit %s2_UnitName hat [COLOR_HIGHLIGHT_TEXT]%s3_CivNames[COLOR_REVERT] Einheit %s4_UnitName besiegt!</German>
         <Italian>L'unità %s2_UnitName dell'[COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] ha sconfitto l'unità %s4_UnitName dell'[COLOR_HIGHLIGHT_TEXT]%s3_CivName[COLOR_REVERT]!</Italian>
         <Spanish>[NUM2:Un:Una:Unos:Unas] %s2_UnitName del [COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] [NUM2:ha:ha:han:han] derrotado a [NUM3:un:una:unos:unas] %s3_UnitName del [COLOR_HIGHLIGHT_TEXT]%s4_CivName[COLOR_REVERT].</Spanish>
     </TEXT>
@@ -10377,7 +10369,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_CITY_MOD</Tag>
-        <English>[ICON_BULLET]%D1_Bonus%% from settlement (Unit Ability)</English>
+        <English>[ICON_BULLET]%D1_Bonus%% from settlement (unit ability)</English>
         <French>[ICON_BULLET]%D1_Bonus%% grâce à la colonie (Caractéristique de l'unité)</French>
         <German>[ICON_BULLET]%D1_Bonus%% durch Siedlung (Einheitenfähigkeit)</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% dall'insediamento (abilità dell'unità)</Italian>
@@ -10417,7 +10409,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_HILLS_MOD</Tag>
-        <English>[ICON_BULLET]%D1_Bonus%% from hills (Unit Ability)</English>
+        <English>[ICON_BULLET]%D1_Bonus%% from hills (unit ability)</English>
         <French>[ICON_BULLET]%D1_Bonus%% dans les collines (compétence unité)</French>
         <German>[ICON_BULLET]%D1_Bonus%% durch Hügel (Einheitenfähigkeit)</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% dalle colline (abilità dell'unità)</Italian>
@@ -10425,7 +10417,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_DOMESTIC_BONUS</Tag>
-        <English>[ICON_BULLET]%D1_Bonus%% inside cultural borders (Unit Ability)</English>
+        <English>[ICON_BULLET]%D1_Bonus%% inside cultural borders (unit ability)</English>
         <French>[ICON_BULLET]%D1_Bonus%% inside Cultural Borders (compétence unité)</French>
         <German>[ICON_BULLET]%D1_Bonus%% innerhalb der eigenen Grenzen</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% inside Cultural Borders (abilità dell'unità)</Italian>
@@ -10433,7 +10425,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_PLOT_UNIT_MOD</Tag>
-        <English>[ICON_BULLET]%D1_Bonus%% from %s2_TerrOrFeat (Unit Ability)</English>
+        <English>[ICON_BULLET]%D1_Bonus%% from %s2_TerrOrFeat (unit ability)</English>
         <French>[ICON_BULLET]%D1_Bonus%% sur les cases de %s2_TerrOrFeat (compétence unité)</French>
         <German>[ICON_BULLET]%D1_Bonus%% durch %s2_TerrOrFeat (Einheitenfähigkeit)</German>
         <Italian>[ICON_BULLET]%D1_Bonus%% per %s2_TerrOrFeat (abilità dell'unità)</Italian>
