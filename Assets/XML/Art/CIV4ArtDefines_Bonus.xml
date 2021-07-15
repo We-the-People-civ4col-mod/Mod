@@ -464,7 +464,7 @@
             <NIF>Art/Terrain/Resources/humpback_whale/Whale.nif</NIF>
             <KFM>Art/Terrain/Resources/Whale/Whale.kfm</KFM>
             <Button>Art/Interface/Buttons/humpback_whale.dds</Button>
-            <FontButtonIndex>31</FontButtonIndex>
+            <FontButtonIndex>64</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
@@ -663,6 +663,17 @@
             <KFM>Art/Terrain/Resources/cow/cow.kfm</KFM>
             <Button>,Art/colonization_atlas_professions_bonus.dds,7,12</Button>
             <FontButtonIndex>12</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_PIG</Type>
+            <fScale>2.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Pig/Pig_FX.nif</NIF>
+            <KFM>Art/Terrain/Resources/Pig/Pig.kfm</KFM>
+            <Button>Art/interface/buttons/Pig.dds</Button>
+            <FontButtonIndex>63</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>

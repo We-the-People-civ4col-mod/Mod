@@ -516,7 +516,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RABBIT</Tag>
-        <English>Rabbit</English>
+        <English>Rabbits</English>
         <German>
             <Text>Kaninchen</Text>
             <Gender>Male</Gender>
@@ -527,6 +527,20 @@
         <Tag>TXT_KEY_BONUS_RABBIT_PEDIA</Tag>
         <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rabbit[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kaninchen[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_PIG</Tag>
+        <English>Pigs</English>
+        <German>
+            <Text>Schweine</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_RABBIT_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Schweine[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_FISH</Tag>
