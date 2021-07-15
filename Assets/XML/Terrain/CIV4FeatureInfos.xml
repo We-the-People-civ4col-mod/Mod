@@ -4075,10 +4075,10 @@
             <RiverYieldIncreases/>
             <iMovement>3</iMovement>
             <iSeeThrough>0</iSeeThrough>
-            <iDefense>-30</iDefense>
+            <iDefense>-15</iDefense>
             <iAppearance>0</iAppearance>
             <iDisappearance>0</iDisappearance>
-            <iTurnDamage>20</iTurnDamage>
+            <iTurnDamage>0</iTurnDamage>
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
             <iGrowth>0</iGrowth>
             <bNoCoast>0</bNoCoast>
