@@ -46,6 +46,34 @@
         <Spanish>Las [COLOR_UNIT_TEXT]Caravanas de carromatos[COLOR_REVERT] son unas herramientas para el comercio terrestre que no tienen precio. Las [COLOR_UNIT_TEXT]Caravanas de carromatos[COLOR_REVERT] pueden transportar mercancías de un asentamiento a otro por tierra, lo cual comporta que no pueden llegar a los que se encuentren en la costa. Son la clave para la expansión hacia el interior del continente.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_NATIVE_GENERAL</Tag>
+        <English>
+            <Text>Great Warrior:Great Warriors</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Grand Guerrier:Grands Guerriers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Großer Krieger:Große Krieger</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Grande guerriero:Grandi guerrieri</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Gran Guerrero:Grandes Guerreros</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_NATIVE_GENERAL_PEDIA</Tag>
         <English>The many conflicts that arose in the colonies of the New World forged numerous Great Generals. José de San Martín's march over the Andes, George Washington's stealthy crossing of the Delaware River, Frontenac's complete reversal of the fortunes of New France during King William's War, such feats defined the countries which these men formed. Without their Great Generals, Chile, Argentina, Canada and the United States would likely still be the property of their mother countries.</English>
         <French>Les nombreux conflits qui se dérouleront dans les colonies du Nouveau Monde forgeront beaucoup de grands généraux. José de San Martín en franchissant les Andes, George Washington en traversant furtivement le fleuve Delaware ou Frontenac en renversant la situation en Nouvelle-France durant la guerre avec le roi Guillaume, accompliront des exploits qui définiront les pays que ces hommes formeront. Sans leurs grands généraux, le Chili, l'Argentine, le Canada et les Etats-unis seraient probablement encore la propriété de leur mère patrie.</French>

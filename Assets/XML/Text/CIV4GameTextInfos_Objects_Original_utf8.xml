@@ -6,30 +6,6 @@
 <!-- Game Text Objects -->
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
-        <Tag>TXT_KEY_UNIT_NATIVE_GENERAL</Tag>
-        <English>Great Warrior</English>
-        <French>
-            <Text>Great Warrior</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Großer Krieger</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Great Warrior</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Great Warrior</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_TERRAIN_ICE</Tag>
         <English>Polar Ice</English>
         <French>Banquise</French>

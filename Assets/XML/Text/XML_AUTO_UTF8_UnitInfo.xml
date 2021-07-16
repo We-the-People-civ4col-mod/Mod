@@ -2340,11 +2340,15 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GREAT_CHIEF</Tag>
-        <English>Great Warrior</English>
-        <French>
-            <Text>Général illustre</Text>
+        <English>
+            <Text>Great Warrior:Great Warriors</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Grand Guerrier:Grands Guerriers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
         </French>
         <German>
             <Text>Großer Krieger:Große Krieger</Text>
@@ -2352,12 +2356,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Grande Generale:Grandi Generali</Text>
+            <Text>Grande guerriero:Grandi guerrieri</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Gran general:Grandes generales</Text>
+            <Text>Gran Guerrero:Grandes Guerreros</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
