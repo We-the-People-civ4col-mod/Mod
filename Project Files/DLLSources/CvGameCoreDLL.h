@@ -294,6 +294,7 @@ namespace boost
 
 #include "CvGlobalConstants.h"
 #include "CvEnumsFunctions.h"
+#include "EnumMapSpecialization.h"
 
 #include "JustInTimeArray.h"
 #include "BoolArray.h"

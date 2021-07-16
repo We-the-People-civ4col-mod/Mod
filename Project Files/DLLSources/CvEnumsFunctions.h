@@ -11,7 +11,7 @@ template <typename T>
 struct VARINFO
 {
 	static const JITarrayTypes JIT = NO_JIT_ARRAY_TYPE;
-	static const int TYPE = VARIABLE_TYPE_GENERIC;
+	static const VariableTypes TYPE = VARIABLE_TYPE_GENERIC;
 	static const int LENGTH = MAX_SHORT;
 	static const int DEFAULT = 0;
 	static const int SIZE = sizeof(T);
@@ -27,7 +27,7 @@ template <>
 struct VARINFO<bool>
 {
 	static const JITarrayTypes JIT = NO_JIT_ARRAY_TYPE;
-	static const int TYPE = VARIABLE_TYPE_BOOL;
+	static const VariableTypes TYPE = VARIABLE_TYPE_BOOL;
 	static const int LENGTH = MAX_SHORT;
 	static const int DEFAULT = 0;
 	template <int T> struct STATIC {
@@ -52,7 +52,7 @@ struct VARINFO<bool>
 template <> struct VARINFO<ENUM_NAME> \
 { \
 	static const JITarrayTypes JIT = JIT_TYPE; \
-	static const int TYPE = VARIABLE_TYPE_GENERIC; \
+	static const VariableTypes TYPE = VARIABLE_TYPE_GENERIC; \
 	static const int LENGTH = MAX_SHORT; \
 	static const int DEFAULT = 0; \
 	template <int T> struct STATIC { \
@@ -311,13 +311,6 @@ SET_ENUM_OPERATORS_AND_FORBID(WorldBuilderPopupTypes);
 SET_ENUM_OPERATORS_AND_FORBID(ZoomLevelTypes);
 
 
-
-#define DECLARE_CUSTOM_INT(type, getType) \
-	ENUM_STRUCT_DECLARATION(type, JIT_ARRAY_INT) \
-	INFO_ARRAY_GET_INT(type, getType, JIT_ARRAY_INT)
-
-DECLARE_CUSTOM_INT(int, getInt);
-DECLARE_CUSTOM_INT(short, getInt);
 
 ENUM_STRUCT_DECLARATION(JIT_NoneTypes, JIT_ARRAY_NO_TYPE);
 

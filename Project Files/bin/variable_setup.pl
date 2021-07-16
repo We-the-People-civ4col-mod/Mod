@@ -76,7 +76,7 @@ $var{WorldSize}        = {not_strict => 1, JIT => "JIT_ARRAY_WORLD_SIZE"};
 $var{Yield}            = {not_strict => 1};
 
 
-
+$var{int}              = {var => 1, get => "getInt"};
 
 
 
@@ -89,6 +89,8 @@ foreach my $name (sort(keys %var))
 {
 	$var{$name}{name} = $name;
 	my $NAME = uc $name;
+	
+	setupVar($name) if exists $var{$name}{var};
 	
 	$var{$name}{type} = $name . "Types" unless exists $var{$name}{type};
 	my $type = $var{$name}{type};
@@ -123,10 +125,19 @@ open (my $output_file, "> " . $file) or die "Can't open file " . $file . "\n" . 
 print $output_file $output;
 close $output_file;
 
+sub setupVar
+{
+	my $name = shift;
+	
+	$var{$name}{type} = $name;
+	$var{$name}{DEFAULT} = "0" unless exists $var{$name}{DEFAULT};
+}
 
 sub handleOperators
 {
 	my $type = shift;
+	
+	return if exists $var{$type}{var};
 	
 	operatorAdd($type, "+");
 	operatorAdd($type, "-");
@@ -176,6 +187,8 @@ sub handleComparison
 	my $strict = 1;
 	$strict = 0 if exists $var{$name}{not_strict};
 	
+	return if exists $var{$name}{var};
+	
 	for my $operator (@comparison_operators)
 	{
 		singleComparison($type, "T", $operator, $strict);
@@ -208,17 +221,42 @@ sub handleStruct
 	$output .= "{\n";
 	$output .= "\tstatic const JITarrayTypes JIT = " . $var{$name}{JIT} . ";\n";
 	$output .= "\tstatic const int DEFAULT = " . $var{$name}{DEFAULT} . ";\n";
-	#$output .= "\tstatic const int TYPE = (int)" . $var{$name}{COMPILE} . " < 128 ? VARIABLE_TYPE_CHAR : VARIABLE_TYPE_SHORT;\n";
-	#$output .= "\tstatic const int TYPE = SIZE;\n";
-	#$output .= "\tstatic const int MAX_STATIC = TYPE == VARIABLE_TYPE_CHAR ? 4 : 2;\n";
-	$output .= "\tstatic const int LENGTH = " . $var{$name}{COMPILE} . ";\n";
-	#$output .= "\tstatic $type start() { return " . $var{$name}{START} . ";}\n";
-	#$output .= "\tstatic $type end() { return " . $var{$name}{END} . ";}\n";
-	#$output .= "\tstatic bool isInRange($type eIndex) { return eIndex >= start() && eIndex < end();}\n";
-	#$output .= "\ttemplate <int T> struct STATIC {\n";
-	#$output .= "\t\tstatic const int VAL = T * (TYPE == VARIABLE_TYPE_CHAR ? 1 : 2) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;\n";
-	#$output .= "\t};\n";
+	
+	if (exists $var{$type}{var})
+	{
+		structVar($name);
+	}
+	else
+	{
+		structEnum($name);
+	}
 	$output .= "};\n";
+}
+
+sub structEnum
+{
+	my $name = shift;
+	my $type = $var{$name}{type};
+	
+	$output .= "\tstatic const VariableTypes TYPE = (int)" . $var{$name}{COMPILE} . " < 128 ? VARIABLE_TYPE_CHAR : VARIABLE_TYPE_SHORT;\n";
+	$output .= "\tstatic const int LENGTH = 50;\n"; #" . $var{$name}{COMPILE} . ";\n";
+	$output .= "\tstatic $type start() { return " . $var{$name}{START} . ";}\n";
+	$output .= "\tstatic $type end() { return " . $var{$name}{END} . ";}\n";
+	$output .= "\tstatic bool isInRange($type eIndex) { return eIndex >= start() && eIndex < end();}\n";
+	$output .= "\ttemplate <int T> struct STATIC {\n";
+	$output .= "\t\tstatic const int VAL = T * ((int)TYPE == (int)VARIABLE_TYPE_CHAR ? 1 : 2) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;\n";
+	$output .= "\t};\n";
+}
+
+sub structVar
+{
+	my $name = shift;
+	my $type = $var{$name}{type};
+	
+	$output .= "\tstatic const VariableTypes TYPE = VARIABLE_TYPE_GENERIC;\n";
+	$output .= "\ttemplate <int T> struct STATIC {\n";
+	$output .= "\t\tstatic const int VAL = (T * sizeof($type)) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;\n";
+	$output .= "\t};\n";
 }
 
 sub handleInfoArray
@@ -273,6 +311,9 @@ sub handleInfoArray
 sub handleEnumMap
 {
 	my $name = shift;
+	
+	return if exists $var{$name}{var};
+	
 	$output .= "SET_ARRAY_XML_ENUM(";
 	$output .= $var{$name}{type};
 	$output .= ", ";

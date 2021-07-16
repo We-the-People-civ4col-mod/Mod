@@ -1385,18 +1385,18 @@ template <> struct EnumMapGetDefault<VAR> \
 };
 
 
-//
-// List of various types of EnumMaps
-// In most cases it's not nice code to include all parameters from EnumMapBase.
-// Adding other classes, which always sets the default makes it easier to add EnumMaps as arguments to functions etc.
-//
+template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC = VARINFO<IndexType>::STATIC<VARINFO<LengthType>::LENGTH>::VAL, int TYPE = VARINFO<IndexType>::TYPE>
+class EnumMapSelector
+	: public EnumMapBase<IndexType, T, DEFAULT, LengthType, LengthType>
+{
+protected:
+	// protected constructor does the same as abstract class in C#
+	// it means the class can be inherited and used as function arguments, but it can't be allocated directly.
+	EnumMapSelector() {}
+};
 
 
 template<class IndexType, class T, int DEFAULT = VARINFO<T>::DEFAULT>
-class EnumMap : public EnumMapBase <IndexType, T, DEFAULT> {};
-
-// specialized classes where the default setup isn't good enough. This can be using ints as index type, but in theory it could be any of the defaults being altered.
-template<class T, int DEFAULT>
-class EnumMap<CityPlotTypes, T, DEFAULT> : public EnumMapBase <int, T, DEFAULT, CityPlotTypes, CityPlotTypes> {};
+class EnumMap : public EnumMapSelector <IndexType, T, DEFAULT, IndexType> {};
 
 #endif
