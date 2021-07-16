@@ -5070,26 +5070,6 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PEDIA_CATEGORY_CIV</Tag>
-        <English>Colonies / Natives</English>
-        <French>
-            <Text>Nations</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>Politische Fraktionen</German>
-        <Italian>
-            <Text>Colonie/Nativi</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Colonias/nativos</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_CITY_NAME_PIABUYU</Tag>
         <English>Piabuyu</English>
         <French>
@@ -6465,26 +6445,6 @@
         </Italian>
         <Spanish>
             <Text>Kniste Stota</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PEDIA_CATEGORY_CIVIC</Tag>
-        <English>Constitution</English>
-        <French>
-            <Text>Constitution</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Verfassungsgrundsätze</German>
-        <Italian>
-            <Text>Costituzione</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Constitución</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
