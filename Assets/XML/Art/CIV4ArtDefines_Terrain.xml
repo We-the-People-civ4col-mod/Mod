@@ -225,7 +225,7 @@
         <TerrainArtInfo>
             <Type>ART_DEF_TERRAIN_SHALLOW_COAST</Type>
             <Path>Art/Terrain/Textures/ShallowCoastBlend.dds</Path>
-            <Grid>Art/Terrain/Textures/CoastGRIDS.dds</Grid>
+            <Grid>Art/Terrain/Textures/ShallowCoastGRIDS.dds</Grid>
             <Detail>Art/Terrain/Textures/Shallow_Coast_Detail.dds</Detail>
             <Button>,Art/Interface/Buttons/ShallowCoast.dds</Button>
             <LayerOrder>52</LayerOrder>
