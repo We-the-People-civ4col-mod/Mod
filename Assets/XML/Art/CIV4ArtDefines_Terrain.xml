@@ -250,7 +250,7 @@
             <Type>ART_DEF_TERRAIN_LARGE_RIVERS</Type>
             <Path>Art/Terrain/Textures/LargeRiverBLEND.dds</Path>
             <Grid>Art/Terrain/Textures/CoastGRIDS.dds</Grid>
-            <Detail>Art/Terrain/Textures/CoastDetail.dds</Detail>
+            <Detail>Art/Terrain/Textures/LargeRiverDETAIL.dds</Detail>
             <Button>,Art/Interface/Buttons/baseterrain_terrainfeatures_atlas_custom.dds,7,4</Button>
             <LayerOrder>46</LayerOrder>
             <TerrainGroup>TERRAIN_GROUP_COAST</TerrainGroup>
