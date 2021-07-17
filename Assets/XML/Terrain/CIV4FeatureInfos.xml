@@ -1233,6 +1233,10 @@
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
                     <TerrainType>TERRAIN_SNOW</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -1823,6 +1827,10 @@
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
             </TerrainBooleans>
             <FootstepSounds>
                 <FootstepSound>
@@ -2253,6 +2261,10 @@
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
             </TerrainBooleans>
             <FootstepSounds>
                 <FootstepSound>
@@ -2510,6 +2522,10 @@
                 </TerrainBoolean>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>

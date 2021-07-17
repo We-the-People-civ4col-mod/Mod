@@ -6272,6 +6272,7 @@
             </BuildingClassNeededs>
             <AIRequiredCatchmentAreaTerrains>
                 <eRequiredTerrain>TERRAIN_TUNDRA</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_SOUTHERN_TUNDRA</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_SAVANNAH</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_MARSH</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>

@@ -192,6 +192,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -484,6 +488,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -628,6 +636,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -778,6 +790,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -922,6 +938,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -1788,6 +1808,10 @@
             <TerrainMakesValids>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
@@ -3593,6 +3617,10 @@
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
             </TerrainMakesValids>
             <FeatureMakesValids>
                 <FeatureMakesValid>
@@ -4500,6 +4528,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_SNOW</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -4599,6 +4631,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -4704,6 +4740,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_SNOW</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -4797,6 +4837,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>

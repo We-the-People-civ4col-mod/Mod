@@ -1235,6 +1235,10 @@
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
@@ -1308,6 +1312,10 @@
                 </TerrainBoolean>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
@@ -1420,6 +1428,10 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -1554,6 +1566,10 @@
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
                     <TerrainType>TERRAIN_SNOW</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -1659,6 +1675,10 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -2237,6 +2257,10 @@
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
@@ -2310,6 +2334,10 @@
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
                     <TerrainType>TERRAIN_SNOW</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -2343,6 +2371,10 @@
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -2395,6 +2427,10 @@
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
                     <TerrainType>TERRAIN_SNOW</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -2428,6 +2464,10 @@
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -2984,6 +3024,10 @@
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
@@ -3034,6 +3078,10 @@
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
@@ -3098,6 +3146,10 @@
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -3201,6 +3253,10 @@
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -4229,6 +4285,10 @@
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -5688,6 +5748,10 @@
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
                     <TerrainType>TERRAIN_SNOW</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -5793,6 +5857,10 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -5876,6 +5944,10 @@
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
                     <TerrainType>TERRAIN_SNOW</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -5981,6 +6053,10 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -6064,6 +6140,10 @@
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
                     <TerrainType>TERRAIN_SNOW</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -6169,6 +6249,10 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -6356,6 +6440,10 @@
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
                     <TerrainType>TERRAIN_SNOW</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -6461,6 +6549,10 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -7029,6 +7121,10 @@
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
                     <TerrainType>TERRAIN_SNOW</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -7082,6 +7178,10 @@
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
@@ -7928,6 +8028,10 @@
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -7970,6 +8074,10 @@
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>

@@ -175,6 +175,30 @@
             <TextureBlend15>15,0 16,0 18,0 19,0 20,0 21,0 22,0 23,0 24,0 25,0 26,0 27,0 28,0 29,0 30,0 31,0 32,0</TextureBlend15>
         </TerrainArtInfo>
         <TerrainArtInfo>
+            <Type>ART_DEF_TERRAIN_SOUTHERN_TUNDRA</Type>
+            <Path>Art/Terrain/Textures/TundraBlend.dds</Path>
+            <Grid>Art/Terrain/Textures/TundraGrids.dds</Grid>
+            <Detail>Art/Terrain/Textures/SouthernTundraDETAIL.dds</Detail>
+            <Button>Art/Interface/Buttons/Taiga.dds</Button>
+            <LayerOrder>2</LayerOrder>
+            <TerrainGroup>TERRAIN_GROUP_LAND</TerrainGroup>
+            <TextureBlend01>8,0</TextureBlend01>
+            <TextureBlend02>1,0</TextureBlend02>
+            <TextureBlend04>6,0</TextureBlend04>
+            <TextureBlend08>5,0</TextureBlend08>
+            <TextureBlend03>2,0</TextureBlend03>
+            <TextureBlend06>10,0</TextureBlend06>
+            <TextureBlend12>12,0</TextureBlend12>
+            <TextureBlend09>9,0</TextureBlend09>
+            <TextureBlend07>3,0</TextureBlend07>
+            <TextureBlend14>14,0</TextureBlend14>
+            <TextureBlend13>11,0</TextureBlend13>
+            <TextureBlend11>4,0</TextureBlend11>
+            <TextureBlend10>7,0</TextureBlend10>
+            <TextureBlend05>13,0</TextureBlend05>
+            <TextureBlend15>15,0 16,0 18,0 19,0 20,0 21,0 22,0 23,0 24,0 25,0 26,0 27,0 28,0 29,0 30,0 31,0 32,0</TextureBlend15>
+        </TerrainArtInfo>
+        <TerrainArtInfo>
             <Type>ART_DEF_TERRAIN_SNOW</Type>
             <Path>Art/Terrain/Textures/FrostBlend.dds</Path>
             <Grid>Art/Terrain/Textures/FrostGrids.dds</Grid>
