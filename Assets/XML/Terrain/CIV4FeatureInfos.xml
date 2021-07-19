@@ -36,6 +36,10 @@
             <OnUnitChangeTo/>
             <TerrainBooleans>
                 <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
                     <TerrainType>TERRAIN_COAST</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -4002,6 +4006,14 @@
             <OnUnitChangeTo/>
             <TerrainBooleans>
                 <TerrainBoolean>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
                     <TerrainType>TERRAIN_COAST</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -4111,6 +4123,14 @@
             <bVisibleAlways>0</bVisibleAlways>
             <OnUnitChangeTo/>
             <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_COAST</TerrainType>
                     <bTerrain>1</bTerrain>
@@ -4336,6 +4356,10 @@
             <OnUnitChangeTo/>
             <TerrainBooleans>
                 <TerrainBoolean>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
                     <TerrainType>TERRAIN_COAST</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -4446,6 +4470,10 @@
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
@@ -5023,7 +5051,7 @@
             <OnUnitChangeTo/>
             <TerrainBooleans>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_COAST</TerrainType>
+                    <TerrainType>TERRAIN_OCEAN</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
@@ -5132,7 +5160,7 @@
             <OnUnitChangeTo/>
             <TerrainBooleans>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_COAST</TerrainType>
+                    <TerrainType>TERRAIN_OCEAN</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
@@ -5241,7 +5269,7 @@
             <OnUnitChangeTo/>
             <TerrainBooleans>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_COAST</TerrainType>
+                    <TerrainType>TERRAIN_OCEAN</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
@@ -5350,7 +5378,7 @@
             <OnUnitChangeTo/>
             <TerrainBooleans>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_COAST</TerrainType>
+                    <TerrainType>TERRAIN_OCEAN</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
@@ -5459,7 +5487,7 @@
             <OnUnitChangeTo/>
             <TerrainBooleans>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_COAST</TerrainType>
+                    <TerrainType>TERRAIN_OCEAN</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
@@ -5568,7 +5596,7 @@
             <OnUnitChangeTo/>
             <TerrainBooleans>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_COAST</TerrainType>
+                    <TerrainType>TERRAIN_OCEAN</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
@@ -5677,7 +5705,7 @@
             <OnUnitChangeTo/>
             <TerrainBooleans>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_COAST</TerrainType>
+                    <TerrainType>TERRAIN_OCEAN</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
@@ -5786,7 +5814,7 @@
             <OnUnitChangeTo/>
             <TerrainBooleans>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_COAST</TerrainType>
+                    <TerrainType>TERRAIN_OCEAN</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>

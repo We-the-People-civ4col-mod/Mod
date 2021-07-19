@@ -21345,7 +21345,7 @@ void CvPlayer::createEnemyPirates()
 	{
 		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 
-		if (pLoopPlot->getTeam() == NO_TEAM && pLoopPlot->isWater() && pLoopPlot->getTerrainType() != TERRAIN_LARGE_RIVERS && pLoopPlot->getTerrainType() != TERRAIN_LAKE && pLoopPlot->area()->hasEurope() && pLoopPlot->getNumUnits() == 0)
+		if (pLoopPlot->getTeam() == NO_TEAM && pLoopPlot->isWater() && pLoopPlot->getTerrainType() != TERRAIN_LARGE_RIVERS && pLoopPlot->getTerrainType() != TERRAIN_LAKE && pLoopPlot->getTerrainType() != TERRAIN_ICE_LAKE && pLoopPlot->area()->hasEurope() && pLoopPlot->getNumUnits() == 0)
 		{
 			int iValue = (plotDistance(cityToAttack->getX_INLINE(), cityToAttack->getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE()) * 2);
 			if (pLoopPlot->area() != cityToAttack->area())

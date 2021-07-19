@@ -1251,6 +1251,7 @@ void CvMap::updateWaterPlotTerrainTypes()
 	em.set(TERRAIN_OCEAN, true);
 	em.set(TERRAIN_SHALLOW_COAST, true); //WTP, ray considering shallow Coasts as well for being transformed to lakes
 	em.set(TERRAIN_LAKE, true);
+	em.set(TERRAIN_ICE_LAKE, true);
 
 	PlotRegionMap regions(em);
 
@@ -1265,9 +1266,18 @@ void CvMap::updateWaterPlotTerrainTypes()
 			{
 				kRegion.getPlot(iPlot)->setCoastline();
 			}
+			// ray, Ice Lakes
 			else
 			{
-				kRegion.getPlot(iPlot)->setTerrainType(TERRAIN_LAKE);
+				bool bIsBetterIceLake = kRegion.getPlot(iPlot)->getLatitude() > 75;
+				if (bIsBetterIceLake)
+				{
+					kRegion.getPlot(iPlot)->setTerrainType(TERRAIN_ICE_LAKE);
+				}
+				else
+				{
+					kRegion.getPlot(iPlot)->setTerrainType(TERRAIN_LAKE);
+				}
 			}
 		}
 	}

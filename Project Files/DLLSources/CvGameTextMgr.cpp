@@ -410,7 +410,11 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 	if (pUnit->maxMoves() > 0)
 	{
 		szString.append(L", ");
-		int iCurrMoves = ((pUnit->movesLeft() / GC.getMOVE_DENOMINATOR()) + (((pUnit->movesLeft() % GC.getMOVE_DENOMINATOR()) > 0) ? 1 : 0));
+		// ray, new Movement Calculation - START
+		// needs to change or otherwise UI always shows just 0
+		// int iCurrMoves = ((pUnit->movesLeft() / GC.getMOVE_DENOMINATOR()) + (((pUnit->movesLeft() % GC.getMOVE_DENOMINATOR()) > 0) ? 1 : 0));
+		int iCurrMoves = pUnit->movesLeft() / GC.getMOVE_DENOMINATOR();
+		// ray, new Movement Calculation - END
 		if ((pUnit->baseMoves() == iCurrMoves) || (pUnit->getTeam() != GC.getGameINLINE().getActiveTeam()))
 		{
 			szTempBuffer.Format(L"%d%c", pUnit->baseMoves(), gDLL->getSymbolID(MOVES_CHAR));
@@ -6529,7 +6533,7 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 			}
 
 			//WTP, ray, Lakes
-			if (info.getTerrainMakesValid(TERRAIN_LAKE))
+			if (info.getTerrainMakesValid(TERRAIN_LAKE) || info.getTerrainMakesValid(TERRAIN_ICE_LAKE))
 			{
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_BUILD_ONLY_LAKE"));

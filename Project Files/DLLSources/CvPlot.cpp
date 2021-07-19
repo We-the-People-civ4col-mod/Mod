@@ -1119,7 +1119,7 @@ bool CvPlot::isLake() const
 
 	return false;*/
 
-	return (getTerrainType() == TERRAIN_LAKE);
+	return (getTerrainType() == TERRAIN_LAKE || getTerrainType() == TERRAIN_ICE_LAKE);
 	//WTP, ray, Lakes - END
 }
 
@@ -3304,7 +3304,10 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 
 	bool bHasTerrainCost = (iRegularCost > 0);
 
-	iRegularCost = std::min(iRegularCost, pUnit->baseMoves()) * GC.getMOVE_DENOMINATOR();
+	// ray, new Movement Calculation - START
+	// this needs to be prevented because the Unit will otherwise not get full Terrain Cost
+	// iRegularCost = std::min(iRegularCost, pUnit->baseMoves()) * GC.getMOVE_DENOMINATOR();
+	iRegularCost = iRegularCost * GC.getMOVE_DENOMINATOR();
 
 	if (bHasTerrainCost)
 	{
@@ -5455,7 +5458,7 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 					// setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
 					//WTP, ray, Lakes
 					//we do not want to change Lakes to Coast either
-					if (getTerrainType() != TERRAIN_LARGE_RIVERS && getTerrainType() != TERRAIN_LAKE && getTerrainType() != TERRAIN_SHALLOW_COAST)
+					if (getTerrainType() != TERRAIN_LARGE_RIVERS && getTerrainType() != TERRAIN_LAKE && getTerrainType() != TERRAIN_ICE_LAKE && getTerrainType() != TERRAIN_SHALLOW_COAST)
 					{
 						setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
 					}
@@ -5491,7 +5494,7 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 								//WTP, ray, Large Rivers - START
 								//we do not want to change Large Rivers to Coast, only Ocean
 								// pLoopPlot->setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
-								if (pLoopPlot->getTerrainType() != TERRAIN_LARGE_RIVERS && getTerrainType() != TERRAIN_LAKE && getTerrainType() != TERRAIN_SHALLOW_COAST)
+								if (pLoopPlot->getTerrainType() != TERRAIN_LARGE_RIVERS && getTerrainType() != TERRAIN_LAKE && getTerrainType() != TERRAIN_ICE_LAKE && getTerrainType() != TERRAIN_SHALLOW_COAST)
 								{
 									pLoopPlot->setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
 								}

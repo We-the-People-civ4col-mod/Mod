@@ -495,6 +495,14 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -537,6 +545,10 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -679,6 +691,10 @@
                     <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -713,6 +729,10 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
@@ -765,6 +785,10 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -803,6 +827,10 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -859,6 +887,10 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -893,6 +925,10 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
@@ -953,6 +989,10 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -995,6 +1035,10 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -1058,6 +1102,10 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -1100,6 +1148,10 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -3323,6 +3375,10 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -3349,6 +3405,10 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
@@ -6323,6 +6383,10 @@
                     <TerrainType>TERRAIN_LAKE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -6365,6 +6429,10 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
@@ -7013,6 +7081,10 @@
                     <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -7066,6 +7138,10 @@
                 </TerrainBoolean>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
@@ -8132,6 +8208,10 @@
                     <TerrainType>TERRAIN_OCEAN</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -8174,6 +8254,10 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>

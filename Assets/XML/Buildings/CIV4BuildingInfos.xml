@@ -3134,6 +3134,7 @@
                 <eRequiredTerrain>TERRAIN_SHALLOW_COAST</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_LARGE_RIVERS</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_LAKE</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_ICE_LAKE</eRequiredTerrain>
             </RequiredAdjacentTerrains>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>
@@ -3240,6 +3241,7 @@
                 <eRequiredTerrain>TERRAIN_SHALLOW_COAST</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_LARGE_RIVERS</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_LAKE</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_ICE_LAKE</eRequiredTerrain>
             </RequiredAdjacentTerrains>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>

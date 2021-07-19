@@ -428,7 +428,7 @@
         <German>[TAB]Große Ströme waren entscheidend für Handel und Expansion der Kolonien. Diese dienten als natürliche Handelsstraßen zwischen den Küstenstädten und den kolonialen Inland. Daher wurden viele frühe Siedlungen entlang dieser großen Ströme gegründet.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_LAKE</Tag>
+        <Tag>TXT_KEY_TERRAIN_LAKE</Tag>
         <English>Fresh Water Lake</English>
         <French>Lac d'eau douce</French>
         <German>Süßwassersee</German>
@@ -436,8 +436,18 @@
         <Spanish>Lago de agua dulce</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_LAKE_PEDIA</Tag>
+        <Tag>TXT_KEY_TERRAIN_LAKE_PEDIA</Tag>
         <English>[TAB]Lakes are typically found in mountain ranges, or where their beds were hollowed out by glaciers at the end of the last ice age. They’re fresh water, larger than ponds, and often are part of a river system.[NEWLINE]Waterways often radiate out from mountains or run parallel along glacial gouges. Canada famously has a deranged drainage pattern because the basins are still too young.[NEWLINE]Fishing is often good and travel across lakes is calm compared to fighting river currents, though great lakes can be as stormy as the ocean.[NEWLINE]Because lakes hold enough water to moderate the local climate, they have always been a desirable place to live.[NEWLINE]</English>
         <German>[TAB]Größere Süßwasserseen werden üblicherweise in der Nähe von Gebirgen gefunden. Manche finden sich auch in Gegenden, in denen Gletscher in der letzten Eiszeit größere Untiefen hinterließen. Größere Süßwasserseen werden meist von Flüßen gespeist. Daher trocknen sie nicht aus und können deutlich größer als Teiche werden, die auch alleine durch Regen entstehen können.[NEWLINE]Meist bieten Süßwasserseen hervorragende Fischfanggründe und auch ihr Wassergang is verglichen zu stark fließenden Flüssen sehr ruhig. Jedoch kann es auf sehr großen Süßwasserseen bei Stürmen auch sehr windig werden.[NEWLINE]Da größere Süßwasserseen genug Wasser zur Wärmespeicherung haben, bleibt das Klima in ihrer Nähe meist ausgeglichen. Daher sind und waren sie von jeher beliebte Siedlungsgebiete.[NEWLINE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_ICE_LAKE</Tag>
+        <English>Ice Lake</English>
+        <German>Eissee</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_ICE_LAKE_PEDIA</Tag>
+        <English>[TAB]Ice lakes are typically found in mountain ranges, or where their beds were hollowed out by glaciers at the end of the last ice age. They’re fresh water, larger than ponds, and often are part of a river system.[NEWLINE]Waterways often radiate out from mountains or run parallel along glacial gouges. Canada famously has a deranged drainage pattern because the basins are still too young.[NEWLINE]Fishing is often good and travel across lakes is calm compared to fighting river currents, though great lakes can be as stormy as the ocean.[NEWLINE]Because lakes hold enough water to moderate the local climate, they have always been a desirable place to live.[NEWLINE]</English>
+        <German>[TAB]Größere Eisseen werden üblicherweise in der Nähe von Gebirgen gefunden. Manche finden sich auch in Gegenden, in denen Gletscher in der letzten Eiszeit größere Untiefen hinterließen. Größere Süßwasserseen werden meist von Flüßen gespeist. Daher trocknen sie nicht aus und können deutlich größer als Teiche werden, die auch alleine durch Regen entstehen können.[NEWLINE]Meist bieten Süßwasserseen hervorragende Fischfanggründe und auch ihr Wassergang is verglichen zu stark fließenden Flüssen sehr ruhig. Jedoch kann es auf sehr großen Süßwasserseen bei Stürmen auch sehr windig werden.[NEWLINE]Da größere Süßwasserseen genug Wasser zur Wärmespeicherung haben, bleibt das Klima in ihrer Nähe meist ausgeglichen. Daher sind und waren sie von jeher beliebte Siedlungsgebiete.[NEWLINE]</German>
     </TEXT>
 </Civ4GameText>
