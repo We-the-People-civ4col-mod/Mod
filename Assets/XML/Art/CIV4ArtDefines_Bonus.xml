@@ -337,6 +337,17 @@
             <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_GOOSE</Type>
+            <fScale>30</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Canada_Goose/goose.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/Canada_Goose.dds</Button>
+            <FontButtonIndex>16</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>1</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_OASIS</Type>
             <fScale>1.5</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
