@@ -6775,7 +6775,9 @@ bool CvCity::checkRequiredYields(OrderTypes eOrder, int iData1, YieldTypes eYiel
 				break;
 			}
 
-			if (iAmount > getYieldStored(eYield) + getYieldRushed(eYield))
+			const int iYieldStored = getYieldStored(eYield);
+			const int iYieldRushed = getYieldRushed(eYield);
+			if (iAmount > iYieldStored + iYieldRushed)
 			{
 				return false;
 			}

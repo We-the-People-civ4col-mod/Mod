@@ -2267,11 +2267,6 @@ void CvCityAI::AI_doHurry(bool bForce)
 	PROFILE_FUNC();
 	FAssert(!isHuman() || isProductionAutomated());
 	
-	if (getProduction() == 0)
-	{
-		return;
-	}
-
 	// TODO: Cache this
 	HurryTypes eGoldHurry = NO_HURRY;
 	for (int i = FIRST_HURRY; i < GC.getNumHurryInfos(); ++i)
@@ -2292,7 +2287,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 	{
 		const BuildingTypes eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iI)));
 
-		if (eLoopBuilding == NO_BUILDING || isHasBuilding(eLoopBuilding))
+		if (!canConstruct(eLoopBuilding))
 			continue;
 
 		// Only consider buildings that are "hammer complete"	
@@ -2311,8 +2306,11 @@ void CvCityAI::AI_doHurry(bool bForce)
 	{
 		const BuildingHurryCost bhc = *std::min_element(buildingHurryCostList.begin(), buildingHurryCostList.end());
 		const BuildingTypes eHurryBuilding = bhc.second;
+		
+		// Need to push the order for the hurry functions to process the correct build
+		pushOrder(ORDER_CONSTRUCT, eHurryBuilding, -1, false, false, false);
 
-		if (!canHurry(eGoldHurry, true))
+		if (!canHurry(eGoldHurry))
 		{
 			// If we can't hurry anything, restore the old build if appropriate
 			if (eCurrentBuilding != NO_BUILDING)
@@ -2329,7 +2327,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 		else
 		{
 			// TODO: Log that we can't hurry
-			pushOrder(ORDER_CONSTRUCT, eHurryBuilding, -1, false, false, false);
+			//pushOrder(ORDER_CONSTRUCT, eHurryBuilding, -1, false, false, false);
 			hurry(eGoldHurry);
 			m_bHasHurried = true;
 			// Return here so we don't attempt to rush more than a single build per turn
@@ -2346,7 +2344,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 	{
 		const UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
 
-		if (eLoopUnit == NO_UNIT)
+		if (!canTrain(eLoopUnit))
 			continue;
 
 		// Only consider buildings that are "hammer complete"	
@@ -2366,6 +2364,8 @@ void CvCityAI::AI_doHurry(bool bForce)
 		const UnitHurryCost uhc = *std::min_element(unitHurryCostList.begin(), unitHurryCostList.end());
 		const UnitTypes eHurryUnit = uhc.second;
 
+		pushOrder(ORDER_TRAIN, eHurryUnit, NO_UNITAI, false, false, false);
+
 		if (!canHurry(eGoldHurry, true))
 		{
 			// If we can't hurry anything, restore the old build if appropriate
@@ -2382,7 +2382,6 @@ void CvCityAI::AI_doHurry(bool bForce)
 		}
 		else
 		{
-			pushOrder(ORDER_TRAIN, eHurryUnit, NO_UNITAI, false, false, false);
 			hurry(eGoldHurry);
 			m_bHasHurried = true;
 			return;
