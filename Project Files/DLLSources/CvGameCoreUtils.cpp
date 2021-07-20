@@ -2466,3 +2466,29 @@ bool CvDLLUtilityIFaceBase::isOOSVisible() const
 	gDLL->getPythonIFace()->callFunction(PYCPPModule, "isOOSVisible", NULL, &lResult);
 	return lResult != 0;
 }
+
+CvWString getStrategyString(StrategyTypes eStrategy)
+{
+	CvWString szString;
+
+	switch (eStrategy)
+	{
+	case NO_STRATEGY: szString = L"NO_STRATEGY"; break;
+	case STRATEGY_SMALL_WAVES: szString = L"STRATEGY_SMALL_WAVES"; break;
+	case STRATEGY_BUILDUP: szString = L"STRATEGY_BUILDUP"; break;
+	case STRATEGY_CONCENTRATED_ATTACK: szString = L"STRATEGY_CONCENTRATED_ATTACK"; break;
+	case STRATEGY_DISTRIBUTED_ATTACK: szString = L"STRATEGY_DISTRIBUTED_ATTACK"; break;
+	case STRATEGY_DIE_FIGHTING: szString = L"STRATEGY_DIE_FIGHTING"; break;
+	case STRATEGY_FAST_BELLS: szString = L"STRATEGY_FAST_BELLS"; break;
+	case STRATEGY_CASH_FOCUS: szString = L"STRATEGY_CASH_FOCUS"; break;
+	case STRATEGY_SELL_TO_NATIVES: szString = L"STRATEGY_SELL_TO_NATIVES"; break;
+	case STRATEGY_DENSE_CITY_SPACING: szString = L"STRATEGY_DENSE_CITY_SPACING"; break;
+	case STRATEGY_MILITARY_BUILDUP: szString = L"STRATEGY_MILITARY_BUILDUP"; break;
+	case STRATEGY_REVOLUTION_PREPARING: szString = L"STRATEGY_REVOLUTION_PREPARING"; break;
+	case STRATEGY_REVOLUTION_DECLARING: szString = L"STRATEGY_REVOLUTION_DECLARING"; break;
+	case STRATEGY_REVOLUTION: szString = L"STRATEGY_REVOLUTION"; break;
+	default: szString = CvWString::format(L"UNKOWN_UNITAI_STATE(%d)", eStrategy); break;
+	}
+
+	return szString;
+}
