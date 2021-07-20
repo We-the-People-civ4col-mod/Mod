@@ -47,6 +47,20 @@
         <German>[TAB]Flache Küste.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TERRAIN_ROCK_STEPPES</Tag>
+        <English>Rock Steppes</English>
+        <German>
+            <Text>Felsensteppe</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_ROCK_STEPPES_PEDIA</Tag>
+        <English>[TAB]Rock Steppes</English>
+        <German>[TAB]Felsensteppe</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TERRAIN_DESERT</Tag>
         <English>Desert</English>
         <French>

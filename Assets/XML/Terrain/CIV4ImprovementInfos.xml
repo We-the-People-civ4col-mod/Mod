@@ -188,6 +188,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -484,6 +488,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -632,6 +640,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -786,6 +798,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -934,6 +950,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -1122,6 +1142,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bMakesValid>0</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
                     <bMakesValid>0</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
@@ -1488,6 +1512,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bMakesValid>0</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
                     <bMakesValid>0</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
@@ -2102,6 +2130,10 @@
             <TerrainMakesValids>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
@@ -2762,6 +2794,10 @@
                     <TerrainType>TERRAIN_DESERT</TerrainType>
                     <bMakesValid>0</bMakesValid>
                 </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
+                    <bMakesValid>0</bMakesValid>
+                </TerrainMakesValid>
             </TerrainMakesValids>
             <FeatureMakesValids>
                 <FeatureMakesValid>
@@ -3126,6 +3162,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bMakesValid>0</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
                     <bMakesValid>0</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
@@ -4524,6 +4564,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -4627,6 +4671,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -4736,6 +4784,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -4833,6 +4885,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
