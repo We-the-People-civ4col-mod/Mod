@@ -2422,10 +2422,36 @@ void postLoadGameFixes()
 
 	// deal with players
 
-	// calculate power and assets
 	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
 	{
-		GET_PLAYER(ePlayer).checkPower(true);
+		CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+
+		// calculate power and assets
+		kPlayer.checkPower(true);
+	
+		// prepare list of city professions (aka citizens)
+		if (kPlayer.getCivilizationType() != NO_CIVILIZATION)
+		{
+			kPlayer.m_validCityJobProfessions.clear();
+			// Notes from Nightinggale
+			// The xml data (all files) is ready at the end of CvXMLLoadUtility::readXMLfiles when bFirst is False
+			// CvXMLLoadUtility::readXMLfiles is in CvXMLLoadUtilitySet.cpp
+			// 
+			// The CivEffect branch affects this in two ways:
+			// 1: it adds CvPlayer::canUseProfession (which might change during the game due to CivEffects)
+			// 2: it adds a class where the intended purpose is precisely what kValidCityJobs does (but it stores ProfessionTypes, not int) 
+			//    Combine those two and CvPlayer can generate/cache kValidCityJobs whenever CivEffects change (rare event)
+			//
+			// Proposal: split kValidCityJobs into two and use bIndoorOnly to pick which one to use.
+			//    Looks like a simple way to reduce the number of professions to look at and overhead is minimal if cached in CvPlayer.
+			for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+			{
+				if (GC.getCivilizationInfo(kPlayer.getCivilizationType()).isValidProfession(eProfession) && GC.getProfessionInfo(eProfession).isCitizen())
+				{
+					kPlayer.m_validCityJobProfessions.push_back(eProfession);
+				}
+			}
+		}
 	}
 }
 /// post load function - end - Nightinggale
