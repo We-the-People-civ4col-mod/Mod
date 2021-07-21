@@ -3430,35 +3430,7 @@ private:
 
 CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 {
-	
-	std::vector<ProfessionTypes>& kValidCityJobs = GET_PLAYER(getOwnerINLINE()).m_validCityJobProfessions;
-
-	// TODO: Do this only once
-	// TODO: Determine the proper iniitialization order, when is getCivilizationInfo valid ?
-	// TODO: This data is per civ type, so we really don't need this per player!	
-
-	// Notes from Nightinggale
-	// The xml data (all files) is ready at the end of CvXMLLoadUtility::readXMLfiles when bFirst is False
-	// CvXMLLoadUtility::readXMLfiles is in CvXMLLoadUtilitySet.cpp
-	// 
-	// The CivEffect branch affects this in two ways:
-	// 1: it adds CvPlayer::canUseProfession (which might change during the game due to CivEffects)
-	// 2: it adds a class where the intended purpose is precisely what kValidCityJobs does (but it stores ProfessionTypes, not int) 
-	//    Combine those two and CvPlayer can generate/cache kValidCityJobs whenever CivEffects change (rare event)
-	//
-	// Proposal: split kValidCityJobs into two and use bIndoorOnly to pick which one to use.
-	//    Looks like a simple way to reduce the number of professions to look at and overhead is minimal if cached in CvPlayer.
-	if (kValidCityJobs.empty())
-	{
-		for (int i = 0; i < GC.getNumProfessionInfos(); ++i)
-		{
-			const ProfessionTypes eLoopProfession = (ProfessionTypes)i;
-			if (GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession) && GC.getProfessionInfo(eLoopProfession).isCitizen())
-			{
-				kValidCityJobs.push_back(eLoopProfession);
-			}
-		}
-	}
+	const std::vector<ProfessionTypes>& kValidCityJobs = GET_PLAYER(getOwnerINLINE()).m_validCityJobProfessions;
 
 	FindBestJob fbj(GET_PLAYER(getOwnerINLINE()).m_validCityJobProfessions, *this, kUnit, bIndoorOnly);
 
