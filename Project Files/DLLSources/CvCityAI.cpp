@@ -2292,6 +2292,9 @@ void CvCityAI::AI_doHurry(bool bForce)
 	PROFILE_FUNC();
 	FAssert(!isHuman() || isProductionAutomated());
 	
+	// Previously hurried builds must have been processed before considering another hurry
+	FAssert(!m_bHasHurried);
+
 	// TODO: Cache this
 	HurryTypes eGoldHurry = NO_HURRY;
 	for (int i = FIRST_HURRY; i < GC.getNumHurryInfos(); ++i)

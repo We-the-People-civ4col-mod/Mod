@@ -43,6 +43,8 @@ CvCity::CvCity()
 
 	m_ePreferredYieldAtCityPlot = NO_YIELD;
 
+	m_bHasHurried = false;
+
 	reset(0, NO_PLAYER, 0, 0, true);
 }
 
@@ -506,7 +508,7 @@ void CvCity::doTurn()
 
 	AI_doTurn();
 
-	bool bAllowNoProduction = !doCheckProduction();
+	const bool bAllowNoProduction = !doCheckProduction();
 
 	doSpecialists();
 	doYields();
@@ -514,7 +516,7 @@ void CvCity::doTurn()
 	doCulture();
 	doPlotCulture(false, getOwnerINLINE(), getCultureRate());
 	
-	if (!isHuman())
+	if (!m_bHasHurried && !isHuman() && !isNative())
 	{
 		// Hurry needs to happen just before the production processing to avoid
 		// the hurried yields from being used for other purposes
@@ -6582,6 +6584,9 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 
 		if (bFinish)
 		{
+			if (m_bHasHurried)
+				m_bHasHurried = false;
+
 			iProductionNeeded = getYieldProductionNeeded(eTrainUnit, YIELD_HAMMERS);
 
 			iOverflow = std::max(0, getUnitProduction(eTrainUnit) - iProductionNeeded);
@@ -6619,6 +6624,9 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 
 		if (bFinish)
 		{
+			if (m_bHasHurried)
+				m_bHasHurried = false;
+
 			iProductionNeeded = getYieldProductionNeeded(eConstructBuilding, YIELD_HAMMERS);
 			int iOverflow = std::max(0, getBuildingProduction(eConstructBuilding) - iProductionNeeded);
 			changeOverflowProduction(iOverflow, getProductionModifier(eConstructBuilding));
@@ -7660,10 +7668,6 @@ void CvCity::doProduction(bool bAllowNoProduction)
 		if (!isProduction() || isProductionConvince() || AI_isChooseProductionDirty() || 
 			getProduction() > getProductionNeeded(YIELD_HAMMERS))
 		{
-			// If we've just rushed a building, let it complete before choosing a new build
-			//const CLLNode<OrderData>* pOrderNode = headOrderQueueNode();
-
-			//if (pOrderNode == NULL || pOrderNode != NULL && !checkRequiredYields(pOrderNode->m_data.eOrderType, pOrderNode->m_data.iData1, YIELD_HAMMERS))
 			if (!m_bHasHurried)
 			{ 
 				AI_chooseProduction();
@@ -7683,9 +7687,9 @@ void CvCity::doProduction(bool bAllowNoProduction)
 
 	if (isProduction())
 	{
-		int iProduction = getStoredProductionDifference();
+		const int iProduction = getStoredProductionDifference();
 
-		FatherPointTypes eFatherPointType = getProductionFatherPoint();
+		const FatherPointTypes eFatherPointType = getProductionFatherPoint();
 		if (eFatherPointType != NO_FATHER_POINT_TYPE)
 		{
 			//Lumber mill is building points
@@ -7701,8 +7705,6 @@ void CvCity::doProduction(bool bAllowNoProduction)
 			if (getProduction() >= getProductionNeeded(YIELD_HAMMERS))
 			{
 				popOrder(0, true, true);
-				if (m_bHasHurried)
-					m_bHasHurried = false;
 			}
 		}
 	}
