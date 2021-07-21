@@ -8211,7 +8211,8 @@ void CvPlayerAI::AI_doEurope()
 	{
 		//Always refresh at start of new turn (maybe do this smarter but it's okay for now)
 		AI_updateNextBuyUnit();
-		AI_updateNextBuyProfession();
+		// Don't by profession units for now until we find a better way to decide who we can productively employ
+		//AI_updateNextBuyProfession();
 	}
 
 	// TAC - AI More Immigrants - koma13 - START
@@ -8223,12 +8224,12 @@ void CvPlayerAI::AI_doEurope()
 
 	eBuyUnit = AI_nextBuyUnit(&eBuyUnitAI, &iBuyUnitValue);
 
-	UnitTypes eBuyProfessionUnit;
-	ProfessionTypes eBuyProfession;
-	UnitAITypes eBuyProfessionAI;
-	int iBuyProfessionValue;
+	UnitTypes eBuyProfessionUnit = NO_UNIT;
+	ProfessionTypes eBuyProfession = NO_PROFESSION;
+	UnitAITypes eBuyProfessionAI = NO_UNITAI;
+	int iBuyProfessionValue = -1;
 
-	eBuyProfessionUnit = AI_nextBuyProfessionUnit(&eBuyProfession, &eBuyProfessionAI, &iBuyProfessionValue);
+	//eBuyProfessionUnit = AI_nextBuyProfessionUnit(&eBuyProfession, &eBuyProfessionAI, &iBuyProfessionValue);
 
 	int iUnitPrice = 0;
 
