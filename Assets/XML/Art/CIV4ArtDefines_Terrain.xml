@@ -322,7 +322,7 @@
             <Type>ART_DEF_TERRAIN_LAKE</Type>
             <Path>Art/Terrain/Textures/LakeBLEND.dds</Path>
             <Grid>Art/Terrain/Textures/CoastGRIDS.dds</Grid>
-            <Detail>Art/Terrain/Textures/CoastDetail.dds</Detail>
+            <Detail>Art/Terrain/Textures/Lake_Detail.dds</Detail>
             <Button>Art/Interface/Buttons/Lake3.dds</Button>
             <LayerOrder>48</LayerOrder>
             <TerrainGroup>TERRAIN_GROUP_COAST</TerrainGroup>
