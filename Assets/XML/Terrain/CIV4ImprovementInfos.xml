@@ -1140,14 +1140,6 @@
                     <TerrainType>TERRAIN_MARSH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
-                <TerrainMakesValid>
-                    <TerrainType>TERRAIN_DESERT</TerrainType>
-                    <bMakesValid>0</bMakesValid>
-                </TerrainMakesValid>
-                <TerrainMakesValid>
-                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
-                    <bMakesValid>0</bMakesValid>
-                </TerrainMakesValid>
             </TerrainMakesValids>
             <FeatureMakesValids>
                 <FeatureMakesValid>
@@ -2789,14 +2781,6 @@
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
                     <bMakesValid>1</bMakesValid>
-                </TerrainMakesValid>
-                <TerrainMakesValid>
-                    <TerrainType>TERRAIN_DESERT</TerrainType>
-                    <bMakesValid>0</bMakesValid>
-                </TerrainMakesValid>
-                <TerrainMakesValid>
-                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
-                    <bMakesValid>0</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
             <FeatureMakesValids>
