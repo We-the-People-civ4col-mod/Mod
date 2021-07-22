@@ -196,7 +196,7 @@
         </French>
         <German>
             <Text>Ungünstige Winde</Text>
-            <Gender>Female</Gender>
+            <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
@@ -226,7 +226,7 @@
         </French>
         <German>
             <Text>Günstige Brise</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
@@ -251,8 +251,8 @@
         <English>Volcano</English>
         <French>Volcan</French>
         <German>Vulkan</German>
-        <Italian>Volcano</Italian>
-        <Spanish>Volcano</Spanish>
+        <Italian>Vulcano</Italian>
+        <Spanish>Volcán</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_VOLCANO_PEDIA</Tag>
