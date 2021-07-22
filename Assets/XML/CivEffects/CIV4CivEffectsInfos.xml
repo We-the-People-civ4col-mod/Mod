@@ -27,7 +27,6 @@
 			</AllowConqueringCities>
 			<iAllowFoundCity>1</iAllowFoundCity>
 		</TagGroupAllow>
-		
 		<TagGroupCity>
 			<iCanUseDomesticMarket>1</iCanUseDomesticMarket>
 		</TagGroupCity>
@@ -109,6 +108,10 @@
 				</AllowBuild>
 				<AllowBuild>
 					<eBuild>BUILD_REFORESTATION_TUNDRA</eBuild>
+					<iAllow>-50</iAllow>
+				</AllowBuild>
+				<AllowBuild>
+					<eBuild>BUILD_DESERT_IRRIGATION</eBuild>
 					<iAllow>-50</iAllow>
 				</AllowBuild>
 			</AllowBuilds>

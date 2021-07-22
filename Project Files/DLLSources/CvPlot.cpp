@@ -2361,6 +2361,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 		{
 			return false;
 		}
+
 		// only inside own borders
 		if (GET_PLAYER(ePlayer).getTeam() != getTeam())
 		{
@@ -2394,7 +2395,8 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 		}
 
 		// make sure the terrain in question can have the wanted feature
-		if (!GC.getFeatureInfo(eResultFeature).isTerrain(getTerrainType()))
+		// ray, RaR, we additionally check for "needs River" here
+		if (!GC.getFeatureInfo(eResultFeature).isTerrain(getTerrainType()) || (GC.getFeatureInfo(eResultFeature).isRequiresRiver() && !isRiver()))
 		{
 			return false;
 		}

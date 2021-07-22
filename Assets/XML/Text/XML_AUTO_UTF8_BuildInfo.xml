@@ -221,6 +221,16 @@
         <English>????</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BUILD_DESERT_IRRIGATION</Tag>
+        <English>Irrigate Desert</English>
+        <German>Wüste bewässern</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_DESERT_IRRIGATION_HELP</Tag>
+        <English>Needs River to create Flood Plains.</English>
+        <German>Benötigt einen Fluss um fruchtbares Schwemmland zu erzeugen.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILD_REMOVE_FOREST</Tag>
         <English>Burn down the [LINK=FEATURE_FOREST]forest[\LINK]</English>
         <French>Défricher la [LINK=FEATURE_FOREST]forêt[\LINK]</French>
