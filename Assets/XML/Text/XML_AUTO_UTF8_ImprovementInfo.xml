@@ -256,7 +256,7 @@
         <Italian>
             <Text>Large Farm</Text>
             <Gender>Female</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </Italian>
         <Spanish>
             <Text>Large Farm</Text>
@@ -286,7 +286,7 @@
         <Italian>
             <Text>Fort</Text>
             <Gender>Female</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </Italian>
         <Spanish>
             <Text>Fuerte</Text>
@@ -316,7 +316,7 @@
         <Italian>
             <Text>Large Fort</Text>
             <Gender>Female</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </Italian>
         <Spanish>
             <Text>Large Fort</Text>
@@ -382,12 +382,12 @@
         <Italian>
             <Text>Ship Wreckage</Text>
             <Gender>Female</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </Italian>
         <Spanish>
             <Text>Ship Wreckage</Text>
             <Gender>Female</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -412,12 +412,12 @@
         <Italian>
             <Text>Ship Wreck</Text>
             <Gender>Neutral</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Ship Wrecke</Text>
+            <Text>Ship Wreck</Text>
             <Gender>Neutral</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
