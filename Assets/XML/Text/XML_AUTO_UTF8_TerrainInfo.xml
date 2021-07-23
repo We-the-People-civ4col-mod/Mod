@@ -139,6 +139,20 @@
         <German>[TAB]Moor</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TERRAIN_SHRUBLAND</Tag>
+        <English>Shrubland</English>
+        <German>
+            <Text>Buschland</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_SHRUBLAND_PEDIA</Tag>
+        <English>[TAB]Shrubland</English>
+        <German>[TAB]Buschland</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TERRAIN_HILL</Tag>
         <English>Hill</English>
         <French>
@@ -399,7 +413,7 @@
         <Spanish>[TAB]In physical geography, tundra is a biome where the tree growth is hindered by low temperatures and short growing seasons. The term tundra comes through Russian from the Kildin Sami word tundâr "uplands," "treeless mountain tract." There are three types of tundra: Arctic tundra, alpine tundra, and Antarctic tundra. In tundra, the vegetation is composed of dwarf shrubs, sedges and grasses, mosses, and lichens. Scattered trees grow in some tundra. The ecotone (or ecological boundary region) between the tundra and the forest is known as the tree line or timberline.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_TERRAIN_SOUTHERN_TUNDRA</Tag>
+        <Tag>TXT_KEY_TERRAIN_TAIGA</Tag>
         <English>Taiga</English>
         <French>
             <Text>Taiga</Text>
@@ -423,7 +437,7 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_TERRAIN_SOUTHERN_TUNDRA_PEDIA</Tag>
+        <Tag>TXT_KEY_TERRAIN_TAIGA_PEDIA</Tag>
         <English>[TAB]Taiga</English>
         <German>[TAB]Taiga</German>
     </TEXT>

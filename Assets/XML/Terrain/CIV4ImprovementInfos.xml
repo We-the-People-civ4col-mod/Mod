@@ -180,6 +180,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -196,7 +200,7 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
-                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -480,6 +484,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -496,7 +504,7 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
-                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -635,6 +643,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -651,7 +663,7 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
-                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -790,6 +802,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -806,7 +822,7 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
-                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -945,6 +961,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -961,7 +981,7 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
-                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -1130,6 +1150,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -1495,6 +1519,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>0</bMakesValid>
                 </TerrainMakesValid>
@@ -1831,7 +1859,7 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
-                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
@@ -2619,6 +2647,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -2772,6 +2804,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -3134,6 +3170,10 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -3642,7 +3682,7 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
-                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
@@ -4412,6 +4452,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -4536,6 +4580,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -4556,7 +4604,7 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
-                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -4646,6 +4694,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -4666,7 +4718,7 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
-                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -4756,6 +4808,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -4776,7 +4832,7 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
-                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -4860,6 +4916,10 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
@@ -4880,7 +4940,7 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
-                    <TerrainType>TERRAIN_SOUTHERN_TUNDRA</TerrainType>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>

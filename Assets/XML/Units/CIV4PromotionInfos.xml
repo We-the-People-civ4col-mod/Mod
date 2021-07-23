@@ -6172,6 +6172,10 @@
                     <iTerrainAttack>15</iTerrainAttack>
                 </TerrainAttack>
                 <TerrainAttack>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <iTerrainAttack>15</iTerrainAttack>
+                </TerrainAttack>
+                <TerrainAttack>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <iTerrainAttack>15</iTerrainAttack>
                 </TerrainAttack>
@@ -6258,6 +6262,10 @@
                 </TerrainAttack>
                 <TerrainAttack>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <iTerrainAttack>30</iTerrainAttack>
+                </TerrainAttack>
+                <TerrainAttack>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
                     <iTerrainAttack>30</iTerrainAttack>
                 </TerrainAttack>
                 <TerrainAttack>

@@ -203,6 +203,14 @@
         <English>????</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_SHRUBLAND</Tag>
+        <English>TXT_KEY_BUILD_REFORESTATION_GRASS</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_SHRUBLAND_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILD_REFORESTATION_SAVANNAH</Tag>
         <English>TXT_KEY_BUILD_REFORESTATION_MARSH</English>
     </TEXT>
@@ -218,6 +226,16 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REFORESTATION_TUNDRA_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_TAIGA</Tag>
+        <English>Plant taiga</English>
+        <French>Planter une taïga</French>
+        <German>Taiga aufforsten</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_TAIGA_HELP</Tag>
         <English>????</English>
     </TEXT>
     <TEXT>

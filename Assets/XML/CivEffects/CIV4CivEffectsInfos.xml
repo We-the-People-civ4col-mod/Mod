@@ -91,6 +91,10 @@
 					<iAllow>-50</iAllow>
 				</AllowBuild>
 				<AllowBuild>
+					<eBuild>BUILD_REFORESTATION_SHRUBLAND</eBuild>
+					<iAllow>-50</iAllow>
+				</AllowBuild>
+				<AllowBuild>
 					<eBuild>BUILD_REFORESTATION_PLAINS_FERTILE</eBuild>
 					<iAllow>-50</iAllow>
 				</AllowBuild>
@@ -108,6 +112,10 @@
 				</AllowBuild>
 				<AllowBuild>
 					<eBuild>BUILD_REFORESTATION_TUNDRA</eBuild>
+					<iAllow>-50</iAllow>
+				</AllowBuild>
+				<AllowBuild>
+					<eBuild>BUILD_REFORESTATION_TAIGA</eBuild>
 					<iAllow>-50</iAllow>
 				</AllowBuild>
 				<AllowBuild>

@@ -179,6 +179,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -595,6 +603,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -1122,6 +1138,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -1644,6 +1668,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -2187,6 +2219,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -3131,6 +3171,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -3651,6 +3699,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -4089,6 +4145,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -4533,6 +4597,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -4955,6 +5027,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -5383,6 +5463,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -5805,6 +5893,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -6233,6 +6329,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -6658,6 +6762,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -7080,6 +7192,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -7516,6 +7636,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -7946,6 +8074,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -8382,6 +8518,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -8815,6 +8959,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -9240,6 +9392,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -9654,6 +9814,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -10082,6 +10250,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -10496,6 +10672,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -10916,6 +11100,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -11333,6 +11525,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -11742,6 +11942,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -12143,6 +12351,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -12587,6 +12803,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -13028,6 +13252,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -13462,6 +13694,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -13902,6 +14142,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -14335,6 +14583,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -14765,6 +15021,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -15205,6 +15469,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -15642,6 +15914,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -16076,6 +16356,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -16520,6 +16808,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -16961,6 +17257,13 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -17399,6 +17702,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -17843,6 +18154,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -18276,6 +18595,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -18706,6 +19033,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -19150,6 +19485,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -19588,6 +19931,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -20040,6 +20391,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -20481,6 +20840,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -21659,6 +22026,10 @@
                     <iTerrainAttack>20</iTerrainAttack>
                 </TerrainAttack>
                 <TerrainAttack>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <iTerrainAttack>20</iTerrainAttack>
+                </TerrainAttack>
+                <TerrainAttack>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <iTerrainAttack>20</iTerrainAttack>
                 </TerrainAttack>
@@ -22002,6 +22373,10 @@
                 </TerrainAttack>
                 <TerrainAttack>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <iTerrainAttack>20</iTerrainAttack>
+                </TerrainAttack>
+                <TerrainAttack>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
                     <iTerrainAttack>20</iTerrainAttack>
                 </TerrainAttack>
                 <TerrainAttack>
@@ -23510,6 +23885,10 @@
                     <iTerrainAttack>10</iTerrainAttack>
                 </TerrainAttack>
                 <TerrainAttack>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <iTerrainAttack>10</iTerrainAttack>
+                </TerrainAttack>
+                <TerrainAttack>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <iTerrainAttack>10</iTerrainAttack>
                 </TerrainAttack>
@@ -23804,6 +24183,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -24208,6 +24595,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -24627,6 +25022,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -25032,6 +25435,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -27273,6 +27684,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -27676,6 +28095,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -28059,6 +28486,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -28479,6 +28914,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -28923,6 +29366,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -29364,6 +29815,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -29802,6 +30261,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -31014,6 +31481,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -31472,6 +31947,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -31883,6 +32366,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -32291,6 +32782,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -33124,6 +33623,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -33543,6 +34050,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -33909,6 +34424,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>

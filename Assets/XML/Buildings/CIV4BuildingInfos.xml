@@ -1314,6 +1314,7 @@
             </BuildingClassNeededs>
             <AIRequiredCatchmentAreaTerrains>
                 <eRequiredTerrain>TERRAIN_PLAINS</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_SHRUBLAND</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_DESERT</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
             <AIRequiredCatchmentAreaPlotTypes>
@@ -6274,7 +6275,7 @@
             </BuildingClassNeededs>
             <AIRequiredCatchmentAreaTerrains>
                 <eRequiredTerrain>TERRAIN_TUNDRA</eRequiredTerrain>
-                <eRequiredTerrain>TERRAIN_SOUTHERN_TUNDRA</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_TAIGA</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_SAVANNAH</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_MARSH</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
