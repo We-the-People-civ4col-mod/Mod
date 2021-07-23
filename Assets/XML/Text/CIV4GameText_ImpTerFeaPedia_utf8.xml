@@ -4,12 +4,6 @@
 <!-- Game Text - ImprovementPedia -->
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
-        <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT_PEDIA</Tag>
-        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][NEWLINE][NEWLINE][BOLD]Background[\BOLD][PARAGRAPH:1]A hut is a small crude shelter.</English>
-        <French>[TAB]Une hutte fait référence à un petit abri d'habitation précaire.</French>
-        <German>[TAB]Eine 'Hütte' kann ein kleiner behälfsmässiger Unterschlupf oder dessen Ruine sein.</German>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FISHING_BOATS_PEDIA</Tag>
         <English>[TAB]A fishing vessel is any boat or ship used to catch fish, at sea or on a lake or river. Many different vessels are used in commercial, artisanal and recreational fishing.</English>
         <French>[TAB]Un bateau de pêche est un navire pratiquant la pêche. En général, le nom d'un type de bateaux est relation avec la pêche qu'il pratique, type de poissons ou technique utilisée.</French>
@@ -19,7 +13,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_WINERY_PEDIA</Tag>
         <English>A winery is a building or property that produces wine, or a business involved in the production of wine such as a wine company. Some corporations own several wineries. Besides winemaking equipment, large wineries might have warehouses, bottling lines, laboratories, and extensive tank farms. The oldest winery in the world found so far is 6,000 years old, in the Areni region of Armenia, which is still a wine making region today.</English>
         <French>[TAB]Les vignes sont des lianes de la famille des Vitaceae. Ce sont des plantes du genre Vitis largement cultivées pour leur fruit en grappes, le raisin, dont on tire un jus, le moût, qui devient du vin après fermentation. Ce sont des arbrisseaux grimpants qui s'attachent aux supports par des vrilles. Les tiges ligneuses, appelées sarments, taillées en culture, peuvent atteindre dans la nature de très grandes longueurs en grimpant dans les arbres. Les feuilles à nervure palmée comportent cinq lobes principaux plus ou moins découpés, et sont en forme de cour à la base. Elles connaissent une importante polymorphie selon les cépages et espèces.</French>
-        <German>[TAB]Ein Weinberg oder ein Weinanbaugebiet ist ein Areal das dem Weinanbau gewidmet ist. Meist wurden dazu sonnige Hanglagen genutzt. Die ältesten Weinanbaugebiete, die man je fand lagen in Armenien und sind fast 6000 Jahre alt.</German>
+        <German>[TAB]Ein Weinberg oder ein Weinanbaugebiet ist ein Areal, das dem Weinanbau gewidmet ist. Meist wurden dazu sonnige Hanglagen genutzt. Die ältesten Weinanbaugebiete, die man je fand, lagen in Armenien und sind fast 6000 Jahre alt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_SWAMP_PEDIA</Tag>
