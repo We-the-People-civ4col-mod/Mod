@@ -35,11 +35,11 @@
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER</Tag>
         <English>Milord, reinforcement troops sent by His Majesty have arrived following the declaration of war against us by another king.</English>
-        <German>Milord, die Verstärkungstruppen unseres Königs sind eingetroffen, da man uns auf Befehl eines anderen Königs den Krieg erklärt hat.</German>
+        <German>Milord, die von Seiner Majestät entsandten Verstärkungstruppen sind eingetroffen, da man uns auf Befehl eines anderen Königs den Krieg erklärt hat.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_FREE_TURNS_WORKED</Tag>
-        <English>Working to gain freedom for : %d1_turns [NUM1:turn:turns]</English>
+        <English>Working to gain freedom for %d1_turns [NUM1:turn:turns]</English>
         <German>Arbeitet für seine Freiheit seit %d1_turns [NUM1:Runde:Runden]</German>
     </TEXT>
     <TEXT>
@@ -64,8 +64,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVES_NOT_WILLING_ALREADY_COLONIST_LEARNING</Tag>
-        <English>Milord, a foreign colonist is already living and learning in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. The Natives do not want to take a second one.[NEWLINE]We should come back when that other European has completed his training in the village.</English>
-        <German>Milord, es lebt und lernt bereits ein anderer Europäer in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Die Ureinwohner möchten vorerst keinen weiteren aufnehmen.[NEWLINE]Wir sollten zurückkehren, wenn der andere Europäer seine Zeit im Dorf beendet hat.</German>
+        <English>Milord, a foreign colonist is already living and learning in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. The Natives do not want to take a second one.[NEWLINE]We should come back when that other European has completed his training in the settlement.</English>
+        <German>Milord, es lebt und lernt bereits ein anderer Europäer in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Die Ureinwohner möchten vorerst keinen weiteren aufnehmen.[NEWLINE]Wir sollten zurückkehren, wenn der andere Europäer seine Zeit in der Siedlung beendet hat.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NO_MORE_SETTLER</Tag>
