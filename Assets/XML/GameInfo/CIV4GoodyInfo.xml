@@ -376,7 +376,7 @@
             <bWar>0</bWar>
             <UnitClass>UNITCLASS_NATIVE_SLAVE</UnitClass>
             <TeachUnitClass>NONE</TeachUnitClass>
-            <iCityGoodyWeight>0</iCityGoodyWeight>
+            <iCityGoodyWeight>1000</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
             <iMinTurnValid>0</iMinTurnValid>
@@ -407,7 +407,7 @@
             <bWar>0</bWar>
             <UnitClass>UNITCLASS_NATIVE_MERC</UnitClass>
             <TeachUnitClass>NONE</TeachUnitClass>
-            <iCityGoodyWeight>0</iCityGoodyWeight>
+            <iCityGoodyWeight>1000</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
             <iMinTurnValid>0</iMinTurnValid>
@@ -1690,11 +1690,11 @@
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
-            <Type>GOODY_ORCA_SCHOOOL</Type>
-            <Description>TXT_KEY_GOODY_ORCA_SCHOOOL</Description>
+            <Type>GOODY_ORCA_SCHOOL</Type>
+            <Description>TXT_KEY_GOODY_ORCA_SCHOOL</Description>
             <Sound>AS2D_GOODY_XP</Sound>
-            <AnnounceText>TXT_KEY_GOODY_ORCA_SCHOOOL</AnnounceText>
-            <ChiefText>TXT_KEY_GOODY_ORCA_SCHOOOL</ChiefText>
+            <AnnounceText>TXT_KEY_GOODY_ORCA_SCHOOL</AnnounceText>
+            <ChiefText>TXT_KEY_GOODY_ORCA_SCHOOL</ChiefText>
             <iGold>0</iGold>
             <iGoldRand1>101</iGoldRand1>
             <iGoldRand2>101</iGoldRand2>

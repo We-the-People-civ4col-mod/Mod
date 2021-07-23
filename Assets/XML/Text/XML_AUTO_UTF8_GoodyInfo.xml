@@ -239,6 +239,16 @@
         <German>Ihr habt einen [COLOR_UNIT_TEXT]Versklavten Ureinwohner[COLOR_REVERT] entdeckt, der von seinem Stamm geflohen ist.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_CHIEF_NATIVE_SLAVE</Tag>
+        <English>You have proven to be fierce warriors. Allow us to give you this worthless prisoner from our raids against our enemies as present of friendship.</English>
+        <German>Ihr habt euch als starke Kämpfer erwiesen. Erlaubt uns euch diesen unwürdigen Gefangenen von einem unserer Beutetzüge als Geschenk zu übergeben.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CHIEF_NATIVE_MERC</Tag>
+        <English>One of our young warriors seeks glory in battle. He asks to be allowed to fight shoulder by shoulder against your enemies.</English>
+        <German>Einer unsere jungen Krieger sucht den Ruhm des Kampfes. Er fragt, ob er mit euch Schulter an Schulter gegen eure Feinde kämpfen kann.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_RUMORS_EL_DORADO</Tag>
         <English>Rumours about El Dorado</English>
         <French>Rumeurs à propos de l'El Dorado</French>
@@ -509,7 +519,7 @@
         <German>Milord, es scheint, dass dieses Schiff von unglaublichen Kräften auseinander gerissen wurde. Die alten Seebären in unserer Besatzung sind sich einig, daß dies nur ein außerordentlich [COLOR_WARNING_TEXT]großer Krake[COLOR_REVERT] gewesen sein kann.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_GOODY_ORCA_SCHOOOL</Tag>
+        <Tag>TXT_KEY_ORCA_SCHOOL</Tag>
         <English>Milord, the debris from of a sunken ship has interested some [COLOR_WARNING_TEXT]orcas[COLOR_REVERT]. Several of them are swimming around our ship but they haven't attacked yet.</English>
         <German>Milord, die treibenden Wrackteile eines gesunkenen Schiffes haben einige [COLOR_WARNING_TEXT]Orcas[COLOR_REVERT] angelockt. Mehrere von ihnen umkreisen unser Schiff, allerdings ohne uns anzugreifen.</German>
     </TEXT>
