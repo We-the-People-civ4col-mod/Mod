@@ -519,7 +519,7 @@
         <German>Milord, es scheint, dass dieses Schiff von unglaublichen Kräften auseinander gerissen wurde. Die alten Seebären in unserer Besatzung sind sich einig, daß dies nur ein außerordentlich [COLOR_WARNING_TEXT]großer Krake[COLOR_REVERT] gewesen sein kann.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_ORCA_SCHOOL</Tag>
+        <Tag>TXT_KEY_GOODY_ORCA_SCHOOL</Tag>
         <English>Milord, the debris from of a sunken ship has interested some [COLOR_WARNING_TEXT]orcas[COLOR_REVERT]. Several of them are swimming around our ship but they haven't attacked yet.</English>
         <German>Milord, die treibenden Wrackteile eines gesunkenen Schiffes haben einige [COLOR_WARNING_TEXT]Orcas[COLOR_REVERT] angelockt. Mehrere von ihnen umkreisen unser Schiff, allerdings ohne uns anzugreifen.</German>
     </TEXT>
