@@ -9,9 +9,9 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Bananen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Bananenstauden</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </German>
         <Italian>
             <Text>Banana:Banane</Text>
@@ -46,13 +46,13 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Barley</Text>
+            <Text>Orzo</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Barley</Text>
-            <Gender>Male</Gender>
+            <Text>Cebada</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
@@ -60,29 +60,29 @@
         <Tag>TXT_KEY_BONUS_BARLEY_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT] grows on flat [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain that is either open or overgrown by [LINK=FEATURE_LIGHT_FOREST]light forest[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT] is one of the oldest types of corn humanity knows. It is not as good for flour as wheat, for example, but is very well suited for making [COLOR_HIGHLIGHT_TEXT]beer[COLOR_REVERT].</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]L'orge commune (Hordeum vulgare) est une céréale à paille, plante herbacée annuelle de la famille des poacées. Elle est la plus ancienne céréale cultivée.[réf. nécessaire] Bien adaptée au climat méditerranéen du fait de sa rusticité, elle constituait ainsi la principale céréale cultivée dans l'Antiquité grecque et était consommée sous forme de galette ou de bouillie (maza). L'orge pousse aussi bien sous les tropiques qu'à 4 500 m d'altitude au Tibet.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Gerste[COLOR_REVERT] wächst in hügeligem [LINK=TERRAIN_GRASS]Grasland[\LINK]. Gelegentlich können besonders gute Anbaugebiete für Roten Pfeffer auch von [LINK=FEATURE_FOREST]Wald[\LINK] oder [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] überwachsen sein.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Gerste[COLOR_REVERT] ist eine der ältesten Getreidesorten, die die Menschheit kennt. Bezüglich des Stärkegehalts und der Mehlerzeugung ist sie nicht so ergiebig, wie andere Getreidesorten, so zum Beispiel Weizen, aber sie eignet sich hervorragend zur Herstellung von Bier.</German>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Gerste[COLOR_REVERT] wächst in hügeligem [LINK=TERRAIN_GRASS]Grasland[\LINK]. Gelegentlich können besonders gute Anbaugebiete für Gerste auch von [LINK=FEATURE_FOREST]Wald[\LINK] oder [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] überwachsen sein.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Gerste[COLOR_REVERT] ist eine der ältesten Getreidesorten, die die Menschheit kennt. Bezüglich des Stärkegehalts und der Mehlerzeugung ist sie nicht so ergiebig, wie andere Getreidesorten, so zum Beispiel Weizen, aber sie eignet sich hervorragend zur Herstellung von Bier.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BISON</Tag>
         <English>Bison</English>
         <French>
             <Text>Bison:Bisons</Text>
-            <Gender>male</Gender>
+            <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
             <Text>Büffel:Büffel</Text>
-            <Gender>male</Gender>
+            <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
             <Text>Buffalo:Buffalos</Text>
-            <Gender>male</Gender>
+            <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
             <Text>Buffalo:Buffalos</Text>
-            <Gender>male</Gender>
+            <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
@@ -98,7 +98,7 @@
         <French>Pin blanc</French>
         <German>
             <Text>Borealwald</Text>
-            <Gender>Neuter</Gender>
+            <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>Boreal Forest</Italian>
@@ -119,8 +119,8 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Cattle</Italian>
-        <Spanish>Cattle</Spanish>
+        <Italian>Bovini</Italian>
+        <Spanish>Bovinos</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CATTLE_PEDIA</Tag>
@@ -185,7 +185,7 @@
             <Plural>1</Plural>
         </French>
         <German>
-            <Text>Kokosnuss</Text>
+            <Text>Kokospalmen</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
@@ -204,16 +204,16 @@
         <Tag>TXT_KEY_BONUS_COCONUT_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Coconut trees[COLOR_REVERT] grow in [LINK=FEATURE_JUNGLE]jungles[\LINK] on [LINK=TERRAIN_SAVANNAH]savannah[\LINK] terrain. This bonus only applies if the jungle is left standing, so don't cut it down![PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]The coconut palm probably originated on the western coast of South America. The coconut palm, Cocos nucifera, is a member of the family Arecaceae. It is the only accepted species in the genus Cocos.[PARAGRAPH:1]The term "coconut" can refer to the entire coconut palm, the seed, or the fruit, which is not a botanical nut. The spelling "cocoanut" is an old-fashioned form of the word. The term is derived from 16th century Portuguese and Spanish cocos, meaning "grinning face", from the three small holes on the coconut shell that resemble human facial features.[PARAGRAPH:1]Found across much of the tropic and subtropic area, the coconut is known for its great versatility as seen in the many domestic, commercial, and industrial uses of its different parts. Coconuts are part of the daily diet of many people. Its endosperm is known as the edible "flesh" of the coconut; when dried it is called copra. The oil and milk derived from it are commonly used in cooking and frying; coconut oil is also widely used in soaps and cosmetics. The clear liquid coconut water within is a refreshing drink and can be processed to create alcohol. Husks and leaves can be used to make a variety of products for furnishing and decorating. It also has cultural and religious significance in many societies.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Le Cocotier (Cocos nucifera) est une espèce de palmiers de la tribu des Cocoeae, décrite par Carl Linné. Le cocotier n'est donc pas un arbre mais une plante monocotylédone. Il s'agit de la seule espèce du genre Cocos. Son fruit est la noix de coco. Ce palmier est présent dans toute la zone intertropicale humide. Surtout cultivé le long des côtes, il n'y reste pas confiné. En Inde, il est planté jusqu'à mille mètres d'altitude. La longévité de la plante dépasse un siècle. Sa durée de vie économique est estimée entre 50 ans et 80 ans, mais certains cocotiers bien plus âgés sont encore couverts de fruits.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kokosnussbäume[COLOR_REVERT] wachsen in [LINK=FEATURE_JUNGLE]Dschungel[\LINK] auf [LINK=TERRAIN_SAVANNAH]Savanne[\LINK]. Diese Bonusressource ist nur auf Dschungel gültig, daher sollte dieser dort nicht gerodet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ursprung der Kokosnusspalme is wahrscheinlich die westliche Küste von Süd-Amerika. Die Kokosnusspalme, Cocos nucifera, gehört zur Familie der Arecaceae. Der Ausdruck Kokosnuss can sich auf die gesamte Kokosnusspalme, den Samen oder die Frucht, die aus botanischer Sicht eine Nuss ist, beziehen. Das Wort "cocos" leitet sich aus dem spanischen oder portugiesischen Begriff des 16. Jahrhunderts ab, welcher "grinsendes Gesicht" bedeutet, da die drei Löcher in der Schale einen menschlichen Gesicht ähneln. Fast über das gesamte tropische oder subtropische Gebiet verteilt, ist die Kokosnuss für ihre Vielseitigkeit bekannt, da Teile in vielseitigen Bereichen verwendet werden können. Sie sind Teil der täglichen Nahrung einer großen Anzahl von Menschen. Das getrocknete Fleisch der Kokosnuss wird auch "Copra" genannt. Das Kokosnussöl und die Kokosnussmilch werden oft zum Kochen verwendet. Des weiteren wird Kokosnussöl in Seifen oder Kosmetikprodukten verwendet. Kokosnussmilch dient als erfrischendes Getränk und kann auch zu Alkohol weiterverarbeitet werden. Auch die Schale oder die Palmblätter können vielseitig verwendet werden. In vielen Gesellschaften hat die Kokosnuss daher sogar religiöse und kulturelle Bedeutung gewonnen.</German>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kokospalmen[COLOR_REVERT] wachsen in [LINK=FEATURE_JUNGLE]Dschungel[\LINK] auf [LINK=TERRAIN_SAVANNAH]Savanne[\LINK]. Diese Bonusressource ist nur auf Dschungel gültig, daher sollte dieser dort nicht gerodet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ursprung der Kokosnusspalme is wahrscheinlich die westliche Küste von Süd-Amerika. Die Kokosnusspalme, Cocos nucifera, gehört zur Familie der Arecaceae. Der Ausdruck Kokosnuss kann sich auf die gesamte Kokosnusspalme, den Samen oder die Frucht, die aus botanischer Sicht eine Nuss ist, beziehen. Das Wort "cocos" leitet sich aus dem spanischen oder portugiesischen Begriff des 16. Jahrhunderts ab, welcher "grinsendes Gesicht" bedeutet, da die drei Löcher in der Schale einen menschlichen Gesicht ähneln. Fast über das gesamte tropische oder subtropische Gebiet verteilt, ist die Kokosnuss für ihre Vielseitigkeit bekannt, da Teile in vielseitigen Bereichen verwendet werden können. Sie sind Teil der täglichen Nahrung einer großen Anzahl von Menschen. Das getrocknete Fleisch der Kokosnuss wird auch "Copra" genannt. Das Kokosnussöl und die Kokosnussmilch werden oft zum Kochen verwendet. Des weiteren wird Kokosnussöl in Seifen oder Kosmetikprodukten verwendet. Kokosnussmilch dient als erfrischendes Getränk und kann auch zu Alkohol weiterverarbeitet werden. Auch die Schale oder die Palmblätter können vielseitig verwendet werden. In vielen Gesellschaften hat die Kokosnuss daher sogar religiöse und kulturelle Bedeutung gewonnen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_COFFEE</Tag>
         <English>Coffee bushes</English>
         <French>Café</French>
         <German>
-            <Text>Kaffee</Text>
+            <Text>Kaffeesträucher</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </German>
         <Italian>Coffee</Italian>
         <Spanish>Coffee</Spanish>
@@ -266,7 +266,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Baumwolle</German>
+        <German>
+            <Text>Baumwollpflanzen</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
         <Italian>
             <Text>Cotone</Text>
             <Gender>Male</Gender>
@@ -296,8 +300,8 @@
         </French>
         <German>
             <Text>Krabben</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </German>
         <Italian>
             <Text>Crostaceo:Crostacei</Text>
@@ -329,7 +333,7 @@
         <German>
             <Text>Hirsche</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </German>
         <Italian>
             <Text>Cervo:Cervi</Text>
@@ -361,7 +365,7 @@
         <German>
             <Text>Fische</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </German>
         <Italian>
             <Text>Pesce:Pesci</Text>
@@ -393,7 +397,7 @@
         <German>
             <Text>Biber</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </German>
         <Italian>
             <Text>Pellicce</Text>
@@ -423,9 +427,9 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Edelsteine</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Text>Edelsteinvorkommen</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
         </German>
         <Italian>
             <Text>Pietre preziose</Text>
@@ -452,8 +456,8 @@
         <French>Acajou</French>
         <German>
             <Text>Urwaldriesen</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
         </German>
         <Italian>Giant Trees</Italian>
         <Spanish>Giant Trees</Spanish>
@@ -473,7 +477,7 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Gold</Text>
+            <Text>Goldvorkommen</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
@@ -492,7 +496,7 @@
         <Tag>TXT_KEY_BONUS_GOLD_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Gold deposits[COLOR_REVERT] are very rare and can occur on [COLOR_HIGHLIGHT_TEXT]hills[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]mountain[COLOR_REVERT] plots.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Gold has always been one of the most highly valued metals in the world. It is used in the manufacture of everything from jewelry to electronics, and has been established as the basis for monetary systems world wide. What makes gold valuable is its scarcity. Although gold is found in many different areas, the most valuable deposits are large veins of gold ore running through mountains. When a large deposit is found, mining the deposit boosts the economy in settlements and cities near the mine. Many boom towns grew and prospered over a relatively short time during the California and Yukon gold rushes in America during the 1800s.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]L'or a toujours été l'un des métaux les plus recherchés au monde. Il est utilisé dans la fabrication de nombreux produits, allant des bijoux aux appareils électroniques. Il sert aussi de référence pour des systèmes monétaires internationaux. Ce qui donne sa valeur à l'or est sa rareté. Bien que l'on en trouve dans de nombreux endroits, les gisements les plus importants sont des veines de minerai d'or situées sous des massifs montagneux. Lorsqu'un gisement important est découvert, son exploitation stimule considérablement l'économie des villes environnantes. Ainsi, au XIXe siècle, la ruée vers l'or en Californie conduisit en peu de temps à la fondation de nombreuses villes prospères.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT] ist sehr selten. Gelegentlich entdeckt man aber Vorkommen auf [COLOR_HIGHLIGHT_TEXT]Hügeln[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]Bergen[COLOR_REVERT] vor.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Gold zählt seit jeher zu den begehrtesten und wertvollsten Metallen der Welt. Seine Verwendungszwecke reichen von der Schmuckfertigung bis hin zur Elektronik, und sogar das weltweite Währungssystem basiert auf diesem Edelmetall. Die Ursache für den hohen Wert von Gold ist seine Seltenheit. Zwar gibt es in vielen Regionen der Welt Goldvorkommen, allerdings finden sich die wertvollen, großen Goldadern nur tief im Inneren der Berge. Das Auffinden eines großen Vorkommens bedeutet für die Siedlungen und Städte in der Nähe der Mine einen bedeutenden wirtschaftlichen Aufschwung. Ein historisches Beispiel für dieses Phänomen sind die vielen Ortschaften, die während des kalifornischen Goldrauschs entstanden und eine kurze Blütezeit erlebten.</German>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Goldvorkommen[COLOR_REVERT] sind sehr selten. Gelegentlich entdeckt man aber Vorkommen auf [COLOR_HIGHLIGHT_TEXT]Hügeln[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]Bergen[COLOR_REVERT] vor.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Gold zählt seit jeher zu den begehrtesten und wertvollsten Metallen der Welt. Seine Verwendungszwecke reichen von der Schmuckfertigung bis hin zur Elektronik, und sogar das weltweite Währungssystem basiert auf diesem Edelmetall. Die Ursache für den hohen Wert von Gold ist seine Seltenheit. Zwar gibt es in vielen Regionen der Welt Goldvorkommen, allerdings finden sich die wertvollen, großen Goldadern nur tief im Inneren der Berge. Das Auffinden eines großen Vorkommens bedeutet für die Siedlungen und Städte in der Nähe der Mine einen bedeutenden wirtschaftlichen Aufschwung. Ein historisches Beispiel für dieses Phänomen sind die vielen Ortschaften, die während des kalifornischen Goldrauschs entstanden und eine kurze Blütezeit erlebten.</German>
         <Italian>[BOLD]Strategia :[\BOLD][PARAGRAPH:1]L'oro è da sempre uno dei metalli più preziosi del pianeta ed è stato utilizzato per realizzare qualsiasi oggetto, dai gioielli ai componenti elettronici, ponendo le basi per un sistema economico mondiale. L'oro è molto prezioso a causa della sua rarità. Sebbene sia possibile trovare oro in differenti zone del mondo, i giacimenti più ricchi sono all'interno delle montagne. Quando viene scoperto un grande giacimento, l'estrazione dell'oro migliora sensibilmente l'economia degli insediamenti e delle città circostanti. Nel 1800, molte città della California sono prosperate in breve tempo durante la corsa all'oro.</Italian>
         <Spanish>[BOLD]Estrategia :[\BOLD][PARAGRAPH:1]El oro siempre ha sido uno de los metales más valorados del mundo. Se usa en la fabricación de todo tipo de artículos, desde joyas a electrónica, y constituye la base del sistema monetario mundial. El factor que otorga al oro su valor es su rareza. Aunque se puede encontrar oro en muchas regiones distintas, los yacimientos más valiosos son grandes vetas de mineral de oro situadas en el interior de montañas. Cuando se encuentra un gran yacimiento, la explotación de la veta potencia enormemente la economía en las poblaciones y ciudades que están cerca de la mina. Un ejemplo histórico de este fenómeno son las numerosas ciudades que crecieron y prosperaron en poco tiempo durante la fiebre del oro de California en el siglo XIX.</Spanish>
     </TEXT>
@@ -505,7 +509,7 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Weintrauben</Text>
+            <Text>Weinreben</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
@@ -537,17 +541,17 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Hanf</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Hanfpflanzen</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Hemp</Text>
-            <Gender>Male</Gender>
+            <Text>Canapa</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Hemp</Text>
+            <Text>Cáñamo</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -555,8 +559,8 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_HEMP_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hemp plants[COLOR_REVERT] grow on flat [LINK=TERRAIN_GRASS]grass[\LINK] terrain that is either open or overgrown by [LINK=FEATURE_FOREST]forest[\LINK] or [LINK=FEATURE_LIGHT_FOREST]light forest[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Since the Middle Ages, hemp was one of the most important natural fibres for cloth, ropes and other woven or braided items. Colonization brought hemp to the New World where large plantations evolved. George Washington, for example, had large hemp plantations.</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Le chanvre, chanvre textile, chanvre industriel ou chanvre agricole est une variété de plante cultivée de la famille des Cannabaceae. C'est une plante annuelle, sélectionnée pour la taille de sa tige et sa faible teneur en THC ou autres cannabinoïdes à partir de l'espèce que les botanistes nomment le Chanvre cultivé (Cannabis sativa L.). Il est parfois appelé localement « chènevis »1, comme le nom de la graine de chanvre. Bien que désignant la même espèce botanique, le terme chanvre est désormais utilisé de préférence pour désigner la plante industrielle et sa fibre végétale, tandis que Cannabis est le nom scientifique utilisé aussi pour désigner la forme récréative ou médicale.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hanf[COLOR_REVERT] wächst im flachem [LINK=TERRAIN_GRASS]Grasland[\LINK]. Gelegentlich können besonders gute Anbaugebiete für Tabak auch von [LINK=FEATURE_FOREST]Wald[\LINK] oder [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] überwachsen sein.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Hanf war bereits im Mittelalter einer der wichtigsten Rohstoffe um stabile Stoffe, Seile oder andere Güter herzustellen. Während der Kolonisierung der Neuen Welt fand auch Hanf seinen Weg in die Plantagen der Kolonien. George Washington besass beispielsweise selbst Hanf-Plantagen.</German>
+        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Le chanvre, chanvre textile, chanvre industriel ou chanvre agricole est une variété de plante cultivée de la famille des Cannabaceae. C'est une plante annuelle, sélectionnée pour la taille de sa tige et sa faible teneur en THC ou autres cannabinoïdes à partir de l'espèce que les botanistes nomment le Chanvre cultivé (Cannabis sativa L.). Il est parfois appelé localement « chènevis », comme le nom de la graine de chanvre. Bien que désignant la même espèce botanique, le terme chanvre est désormais utilisé de préférence pour désigner la plante industrielle et sa fibre végétale, tandis que Cannabis est le nom scientifique utilisé aussi pour désigner la forme récréative ou médicale.</French>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hanf[COLOR_REVERT] wächst im flachem [LINK=TERRAIN_GRASS]Grasland[\LINK]. Gelegentlich können besonders gute Anbaugebiete für Hanf auch von [LINK=FEATURE_FOREST]Wald[\LINK] oder [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] überwachsen sein.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Hanf war bereits im Mittelalter einer der wichtigsten Rohstoffe, um stabile Stoffe, Seile oder andere Güter herzustellen. Während der Kolonisierung der Neuen Welt fand auch Hanf seinen Weg in die Plantagen der Kolonien. George Washington besass beispielsweise selbst Hanf-Plantagen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH</Tag>
@@ -598,8 +602,8 @@
         </French>
         <German>
             <Text>Pferde</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
         </German>
         <Italian>
             <Text>Cavalli</Text>
@@ -629,9 +633,9 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Indigo</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Indigopflanzen</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </German>
         <Italian>
             <Text>Indicado</Text>
@@ -661,8 +665,8 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Eisenerz</Text>
-            <Gender>Male</Gender>
+            <Text>Eisenerzvorkommen</Text>
+            <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
@@ -694,7 +698,7 @@
         </French>
         <German>
             <Text>Melonen</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
         <Italian>
@@ -720,7 +724,7 @@
         <French>Ressources minérales</French>
         <German>
             <Text>Erzgestein:Erzgestein</Text>
-            <Gender>Male</Gender>
+            <Gender>Neuter</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>Mineral Resources</Italian>
@@ -745,7 +749,7 @@
         <German>
             <Text>Wasserstelle:Wasserstellen</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
         </German>
         <Italian>
             <Text>Oasi:Oasi</Text>
@@ -930,7 +934,7 @@
         </French>
         <German>
             <Text>Salzvorkommen</Text>
-            <Gender>Male</Gender>
+            <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
@@ -1051,8 +1055,8 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Sheep</Italian>
-        <Spanish>Sheep</Spanish>
+        <Italian>Pecore</Italian>
+        <Spanish>Ovejas</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SHEEP_PEDIA</Tag>
@@ -1070,7 +1074,7 @@
         </French>
         <German>
             <Text>Silbererz</Text>
-            <Gender>Male</Gender>
+            <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
@@ -1134,7 +1138,7 @@
         </French>
         <German>
             <Text>Zuckerrohr</Text>
-            <Gender>Male</Gender>
+            <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
@@ -1178,7 +1182,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Tabak</German>
+        <German>
+            <Text>Tabakpflanzen</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
         <Italian>
             <Text>Tabacco</Text>
             <Gender>Male</Gender>
