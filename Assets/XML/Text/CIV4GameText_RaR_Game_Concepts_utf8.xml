@@ -8,18 +8,16 @@
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_TOTAL_PRODUCTION</Tag>
         <English>Total Production</English>
-        <French>Total Production</French>
-        <German>Gesamtproduktion</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CONCEPT_TOTAL_PRODUCTION</Tag>
-        <English>Total Production</English>
         <French>
             <Text>Production totale</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Gesamtproduktion</German>
+        <German>
+            <Text>Gesamtproduktion</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
         <Italian>
             <Text>Produzione totale</Text>
             <Gender>Female</Gender>
