@@ -11,7 +11,7 @@
         <French>
             <Text>Militariste:Militariste</Text>
             <Gender>Male:Female</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
         </French>
         <German>Militaristisch</German>
         <Italian>
@@ -22,7 +22,7 @@
         <Spanish>
             <Text>Militarista:Militarista</Text>
             <Gender>Male:Female</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
