@@ -39429,7 +39429,12 @@
                 </UnitAI>
             </UnitAIs>
             <NotUnitAIs/>
-            <Builds/>
+            <Builds>
+                <Build>
+                    <BuildType>BUILD_FISHING_NETS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+            </Builds>
             <PrereqBuilding>BUILDINGCLASS_DOCK</PrereqBuilding>
             <PrereqOrBuildings/>
             <ProductionTraits/>
@@ -39463,8 +39468,8 @@
             <iMoves>4</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
-            <iWorkRate>0</iWorkRate>
-            <iWorkRateModifier>0</iWorkRateModifier>
+            <iWorkRate>100</iWorkRate>
+            <iWorkRateModifier>100</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>

@@ -1941,6 +1941,28 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 		}
 	}
 
+	// ray, making sure that water Improvements match
+	// e.g. no Fishing on Fur Animals - later also no Fishing on Feather Birds
+	if (eImprovement != NO_IMPROVEMENT && getBonusType() != NO_BONUS && GC.getImprovementInfo(eImprovement).isWater())
+	{
+		bool improvementDoesMatchBonus = false;
+		CvBonusInfo& kBonus = GC.getBonusInfo(getBonusType());
+		CvImprovementInfo& kImprovement = GC.getImprovementInfo(eImprovement);
+
+		for (int xx = 0; xx < NUM_YIELD_TYPES && !improvementDoesMatchBonus; ++xx)
+		{
+			if(kBonus.getYieldChange(xx) > 0 && kImprovement.getYieldIncrease(xx) > 0)
+			{
+				improvementDoesMatchBonus = true;
+			}
+		}
+
+		if (improvementDoesMatchBonus == false)
+		{
+			return false;
+		}
+	}
+
 	// R&R, ray, Livestock Breeding, for AI
 	CvCity* pWorkingCity = getWorkingCity();
 	if (pWorkingCity != NULL && eTeam != NO_TEAM && !GET_TEAM(eTeam).isHuman()  && getBonusType() == NO_BONUS) 

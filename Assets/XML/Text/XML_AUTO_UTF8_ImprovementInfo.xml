@@ -1064,14 +1064,30 @@
         <German>[ICON_BULLET]Erlaubt es allen Landeinheiten einen [LINK=TERRAIN_LARGE_RIVERS]Großen Fluss[\LINK] zu überqueren.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS</Tag>
+        <English>Fishing nets</English>
+        <German>
+            <Text>Fishfangnetze</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS_PEDIA</Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]Fishing nets[COLOR_REVERT]</English>
+        <German>
+            <Text>[COLOR_HIGHLIGHT_TEXT]Fishfangnetze[COLOR_REVERT]</Text>
+        </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_LARGE_RIVERS</Tag>
         <English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK]</English>
         <German>[ICON_BULLET]Kann nur auf [LINK=TERRAIN_LARGE_RIVERS]Großen Flüssen[\LINK] gebaut werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_LAKE</Tag>
-        <English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LAKE]fresh water Lake[\LINK]</English>
-        <German>[ICON_BULLET]Kann nur auf [LINK=TERRAIN_LAKE]Süßwassersee[\LINK] gebaut werden.</German>
+        <English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LAKE]fresh water lake[\LINK], [LINK=TERRAIN_ICE_LAKE]ice lakes[\LINK], [LINK=TERRAIN_ICE_LAKE]coasts[\LINK] or [LINK=TERRAIN_ICE_LAKE]shallow coasts[\LINK]</English>
+        <German>[ICON_BULLET]Kann nur auf [LINK=TERRAIN_LAKE]Süßwassersee[\LINK], [LINK=TERRAIN_ICE_LAKE]Eisseen[\LINK], [LINK=TERRAIN_ICE_LAKE]Küsten[\LINK] oderr [LINK=TERRAIN_ICE_LAKE]flachen Küsten[\LINK] gebaut werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_FOR_SPAWNING_UNITS</Tag>
