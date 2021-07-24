@@ -356,19 +356,19 @@
         </InterfaceArtInfo>
         <InterfaceArtInfo>
             <Type>WORLDBUILDER_PLOT_TYPE_MOUNTAIN</Type>
-            <Path>Art/Interface/Buttons/WorldBuilder/Plot_Type_Mountain.dds</Path>
+            <Path>Art/Interface/Buttons/Peak.dds</Path>
         </InterfaceArtInfo>
         <InterfaceArtInfo>
             <Type>WORLDBUILDER_PLOT_TYPE_HILL</Type>
-            <Path>Art/Interface/Buttons/WorldBuilder/Plot_Type_Hill.dds</Path>
+            <Path>Art/Interface/Buttons/Hills.dds</Path>
         </InterfaceArtInfo>
         <InterfaceArtInfo>
             <Type>WORLDBUILDER_PLOT_TYPE_PLAINS</Type>
-            <Path>Art/Interface/Buttons/WorldBuilder/Plot_Type_Plains.dds</Path>
+            <Path>Art/Interface/Buttons/Grassland.dds</Path>
         </InterfaceArtInfo>
         <InterfaceArtInfo>
             <Type>WORLDBUILDER_PLOT_TYPE_OCEAN</Type>
-            <Path>Art/Interface/Buttons/WorldBuilder/Plot_Type_Ocean.dds</Path>
+            <Path>Art/Interface/Buttons/Ocean.dds</Path>
         </InterfaceArtInfo>
         <InterfaceArtInfo>
             <Type>WORLDBUILDER_RIVER_PLACEMENT</Type>
