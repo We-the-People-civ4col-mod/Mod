@@ -372,7 +372,7 @@
         </InterfaceArtInfo>
         <InterfaceArtInfo>
             <Type>WORLDBUILDER_RIVER_PLACEMENT</Type>
-            <Path>Art/Interface/Buttons/WorldBuilder/River_Placement.dds</Path>
+            <Path>Art/Interface/Buttons/River_Placement.dds</Path>
         </InterfaceArtInfo>
         <InterfaceArtInfo>
             <Type>WORLDBUILDER_LOAD</Type>
