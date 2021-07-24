@@ -322,6 +322,15 @@
             <Button>,Art/colonization_atlas_buildings.dds,5,15</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_HUNTERS_STAGE</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>1.4</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Structures/Improvements/Hunters_Stage/dock1.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_buildings.dds,3,16</Button>
+        </ImprovementArtInfo>
+        <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_BARBARIAN_CAMP</Type>
             <bExtraAnimations>0</bExtraAnimations>
             <fScale>1.5</fScale>

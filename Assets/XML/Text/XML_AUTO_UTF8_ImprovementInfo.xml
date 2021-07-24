@@ -1075,9 +1075,21 @@
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS_PEDIA</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Fishing nets[COLOR_REVERT]</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Fishfangnetze[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE</Tag>
+        <English>Hunters stage</English>
         <German>
-            <Text>[COLOR_HIGHLIGHT_TEXT]Fishfangnetze[COLOR_REVERT]</Text>
+            <Text>Jagdpier</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
         </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE_PEDIA</Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]Hunters stage[COLOR_REVERT]</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Jagdpier[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_LARGE_RIVERS</Tag>

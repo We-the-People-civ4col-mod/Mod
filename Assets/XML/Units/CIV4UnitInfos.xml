@@ -39434,6 +39434,10 @@
                     <BuildType>BUILD_FISHING_NETS</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_HUNTERS_STAGE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>BUILDINGCLASS_DOCK</PrereqBuilding>
             <PrereqOrBuildings/>

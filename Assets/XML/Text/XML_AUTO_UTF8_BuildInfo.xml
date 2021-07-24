@@ -353,6 +353,16 @@
         <German>Erhöht Erträge aus Fischfang</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BUILD_HUNTERS_STAGE</Tag>
+        <English>Build [LINK=IMPROVEMENT_HUNTERS_STAGE]hunters stage[\LINK]</English>
+        <German>[LINK=IMPROVEMENT_HUNTERS_STAGE]Jagdpier[\LINK] bauen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_HUNTERS_STAGE_HELP</Tag>
+        <English>Increases hunting yields on water</English>
+        <German>Erhöht Erträge der Jagd auf dem Wasser</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_REMOVE_ROAD</Tag>
         <English>Destroy road</English>
         <French>Destruire la route</French>

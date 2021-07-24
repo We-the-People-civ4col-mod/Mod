@@ -5059,7 +5059,74 @@
             <iUpgradeTime>0</iUpgradeTime>
             <iDefenseModifier>0</iDefenseModifier>
             <iPillageGold>100</iPillageGold>
-            <bOutsideBorders>1</bOutsideBorders>
+            <bOutsideBorders>0</bOutsideBorders>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_COAST</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
+            <FeatureMakesValids/>
+            <BonusTypeStructs/>
+            <ImprovementPillage/>
+            <ImprovementUpgrade/>
+            <RouteYieldChanges/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
+        <ImprovementInfo>
+            <Type>IMPROVEMENT_HUNTERS_STAGE</Type>
+            <Description>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_HUNTERS_STAGE</ArtDefineTag>
+            <PrereqNatureYields/>
+            <YieldIncreases>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </YieldIncreases>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bMonastery>0</bMonastery>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>1</bWater>
+            <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>30</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>0</iTilesPerGoody>
+            <iGoodyRange>0</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>0</iUpgradeTime>
+            <iDefenseModifier>0</iDefenseModifier>
+            <iPillageGold>100</iPillageGold>
+            <bOutsideBorders>0</bOutsideBorders>
             <TerrainMakesValids>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_LAKE</TerrainType>
