@@ -194,6 +194,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -619,6 +623,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -1153,6 +1161,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -1684,6 +1696,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -2235,6 +2251,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -3186,6 +3206,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -3714,6 +3738,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -4161,6 +4189,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -4612,6 +4644,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -5043,6 +5079,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -5478,6 +5518,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -5909,6 +5953,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -6344,6 +6392,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -6777,6 +6829,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -7208,6 +7264,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -7651,6 +7711,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -8090,6 +8154,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -8533,6 +8601,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -8974,6 +9046,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -9407,6 +9483,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -9830,6 +9910,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -10265,6 +10349,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -10688,6 +10776,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -11115,6 +11207,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -11540,6 +11636,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -11957,6 +12057,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -12367,6 +12471,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -12818,6 +12926,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -13267,6 +13379,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -13710,6 +13826,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -14157,6 +14277,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -14598,6 +14722,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -15037,6 +15165,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -15484,6 +15616,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -15929,6 +16065,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -16372,6 +16512,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -16823,6 +16967,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -17263,12 +17411,17 @@
                 <Build>
                     <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
                     <bBuild>1</bBuild>
-                </Build>                <Build>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -17720,6 +17873,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -18169,6 +18326,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -18610,6 +18771,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -19049,6 +19214,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -19500,6 +19669,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -19947,6 +20120,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -20406,6 +20583,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -20856,6 +21037,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -24201,6 +24386,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -24611,6 +24800,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -25037,6 +25230,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -25451,6 +25648,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -27699,6 +27900,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -28110,6 +28315,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -28502,6 +28711,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -28930,6 +29143,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -29381,6 +29598,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -29830,6 +30051,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -30277,6 +30502,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -31496,6 +31725,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -31962,6 +32195,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -32381,6 +32618,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -32798,6 +33039,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -33638,6 +33883,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -34065,6 +34314,10 @@
                     <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -34440,6 +34693,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
