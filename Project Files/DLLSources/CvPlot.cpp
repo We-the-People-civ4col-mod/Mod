@@ -6646,7 +6646,11 @@ int CvPlot::calculatePotentialYield(YieldTypes eYield, PlayerTypes ePlayer, Impr
 				{
 					if (!bDisplay || pWorkingCity->isRevealed(eTeam, false))
 					{
-						iYield += pWorkingCity->getLandPlotYield(eYield);
+						// ray, small improvement to LandPlotYieldChanges, SeaPlotYieldChanges, RiverPlotYieldChanges of Buildings
+						if (iYield > 0)
+						{
+							iYield += pWorkingCity->getLandPlotYield(eYield);
+						}
 					}
 				}
 			}
@@ -6664,7 +6668,11 @@ int CvPlot::calculatePotentialYield(YieldTypes eYield, PlayerTypes ePlayer, Impr
 				{
 					if (!bDisplay || pWorkingCity->isRevealed(eTeam, false))
 					{
-						iYield += pWorkingCity->getSeaPlotYield(eYield);
+						// ray, small improvement to LandPlotYieldChanges, SeaPlotYieldChanges, RiverPlotYieldChanges of Buildings
+						if (iYield > 0)
+						{
+							iYield += pWorkingCity->getSeaPlotYield(eYield);
+						}
 					}
 				}
 			}
@@ -6679,7 +6687,11 @@ int CvPlot::calculatePotentialYield(YieldTypes eYield, PlayerTypes ePlayer, Impr
 				{
 					if (!bDisplay || pWorkingCity->isRevealed(eTeam, false))
 					{
-						iYield += pWorkingCity->getRiverPlotYield(eYield);
+						// ray, small improvement to LandPlotYieldChanges, SeaPlotYieldChanges, RiverPlotYieldChanges of Buildings
+						if (iYield > 0)
+						{
+							iYield += pWorkingCity->getRiverPlotYield(eYield);
+						}
 					}
 				}
 			}
@@ -9011,7 +9023,11 @@ int CvPlot::calculateMaxYield(YieldTypes eYield) const
 			CvBuildingInfo& building = GC.getBuildingInfo((BuildingTypes)iBuilding);
 			iBuildingYield = building.getLandPlotYieldChange(eYield);
 		}
-		iMaxYield += iBuildingYield;
+		// ray, small improvement to LandPlotYieldChanges, SeaPlotYieldChanges, RiverPlotYieldChanges of Buildings
+		if(iMaxYield > 0)
+		{
+			iMaxYield += iBuildingYield;
+		}
 	}
 	// R&R, ray, Landplot Yields - END
 
@@ -9023,7 +9039,11 @@ int CvPlot::calculateMaxYield(YieldTypes eYield) const
 			CvBuildingInfo& building = GC.getBuildingInfo((BuildingTypes)iBuilding);
 			iBuildingYield = building.getSeaPlotYieldChange(eYield);
 		}
-		iMaxYield += iBuildingYield;
+		// ray, small improvement to LandPlotYieldChanges, SeaPlotYieldChanges, RiverPlotYieldChanges of Buildings
+		if(iMaxYield > 0)
+		{
+			iMaxYield += iBuildingYield;
+		}
 	}
 
 	if (isRiver())
@@ -9034,7 +9054,11 @@ int CvPlot::calculateMaxYield(YieldTypes eYield) const
 			CvBuildingInfo& building = GC.getBuildingInfo((BuildingTypes)iBuilding);
 			iBuildingYield = std::max(building.getRiverPlotYieldChange(eYield), iBuildingYield);
 		}
-		iMaxYield += iBuildingYield;
+		// ray, small improvement to LandPlotYieldChanges, SeaPlotYieldChanges, RiverPlotYieldChanges of Buildings
+		if(iMaxYield > 0)
+		{
+			iMaxYield += iBuildingYield;
+		}
 	}
 
 	int iExtraYieldThreshold = 0;
