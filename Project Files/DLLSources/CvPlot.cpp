@@ -6669,7 +6669,7 @@ int CvPlot::calculatePotentialYield(YieldTypes eYield, PlayerTypes ePlayer, Impr
 					if (!bDisplay || pWorkingCity->isRevealed(eTeam, false))
 					{
 						// ray, small improvement to LandPlotYieldChanges, SeaPlotYieldChanges, RiverPlotYieldChanges of Buildings
-						if (iYield > 0)
+						if (iYield > 0 || eYield == YIELD_FOOD)
 						{
 							iYield += pWorkingCity->getSeaPlotYield(eYield);
 						}
@@ -9040,7 +9040,7 @@ int CvPlot::calculateMaxYield(YieldTypes eYield) const
 			iBuildingYield = building.getSeaPlotYieldChange(eYield);
 		}
 		// ray, small improvement to LandPlotYieldChanges, SeaPlotYieldChanges, RiverPlotYieldChanges of Buildings
-		if(iMaxYield > 0)
+		if(iMaxYield > 0 || eYield == YIELD_FOOD)
 		{
 			iMaxYield += iBuildingYield;
 		}
