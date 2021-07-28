@@ -13168,8 +13168,8 @@ void CvPlayerAI::AI_doStrategy()
 							// Erik: This is wrong, if we have any plans, just cancel them and declare instead.
 							// it's too late to try to conquer someone. If we're are war with indians we can
 							// just choose a civic that gives instant peace.				
-							bool bAtWar = (GET_TEAM(getTeam()).getAnyWarPlanCount() > 0);
-							if (!bAtWar)
+							//bool bAtWar = (GET_TEAM(getTeam()).getAnyWarPlanCount() > 0);
+							//if (!bAtWar)
 							{
 								if (kTeam.canDoRevolution())
 								{

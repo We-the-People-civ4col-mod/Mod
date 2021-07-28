@@ -8291,6 +8291,12 @@ bool CvUnitAI::AI_betterJob()
 	{
 		bJoined=true;
 		pCity->addPopulationUnit(this, NO_PROFESSION);
+
+		if (gUnitLogLevel >= 1)
+		{
+			logBBAI(" Player %S Unit %S better job joining city %S with profession %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+				getName().GetCString(), pCity->getName().GetCString(), getNameAndProfession().GetCString());
+		}
 	}
 
 	CvPlot * pPlot = plot();
@@ -8372,7 +8378,7 @@ bool CvUnitAI::AI_betterJob()
 			CvWString szTempString;
 			getUnitAIString(szTempString, AI_getUnitAIType());
 
-			logBBAI(" Player %S Unit %S better job %S with UnitAI (%S)", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+			logBBAI(" Player %S Unit %S better job leaving city with Profession %S and UnitAI (%S)", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
 				getName().GetCString(), getNameAndProfession().GetCString(), szTempString.GetCString());
 		}
 	}
@@ -8500,6 +8506,17 @@ bool CvUnitAI::AI_changeUnitAIType(int iMinMultiplier)
 	{
 		setProfession(eBestProfession);
 		AI_setUnitAIType(eBestUnitAI);
+
+		if (gUnitLogLevel >= 1)
+		{
+			CvWString szTempString;
+			getUnitAIString(szTempString, AI_getUnitAIType());
+
+			logBBAI(" Player %S Unit %S changes to Profession %S and UnitAI (%S)", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+				getName().GetCString(), getNameAndProfession().GetCString(), szTempString.GetCString());
+		}
+
+
 		return true;
 	}
 	return false;
