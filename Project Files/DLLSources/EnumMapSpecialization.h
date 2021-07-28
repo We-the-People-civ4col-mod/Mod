@@ -6,7 +6,7 @@
 
 // special cases for EnumMap. Needs to be included after this file
 template<class T, int DEFAULT>
-class EnumMap<CityPlotTypes, T, DEFAULT> : public EnumMapSelector <int, T, DEFAULT, CityPlotTypes> {};
+class EnumMap<CityPlotTypes, T, DEFAULT> : public EnumMapBase <int, T, DEFAULT, CityPlotTypes> {};
 
 
 #endif

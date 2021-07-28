@@ -57,11 +57,11 @@ enum
 };
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET = IndexType, class LengthType = IndexType >
-class EnumMapBase
+class EnumMapBaseOld
 {
 public:
-	EnumMapBase();
-	~EnumMapBase();
+	EnumMapBaseOld();
+	~EnumMapBaseOld();
 
 	// const values (per class)
 	T getDefault() const;
@@ -142,18 +142,18 @@ public:
 	static const bool bINLINE = bINLINE_NATIVE || bINLINE_1_BYTE || bINLINE_2_BYTES || bINLINE_BOOL;
 
 	// operator overload
-	EnumMapBase& operator=(const EnumMapBase &rhs);
+	EnumMapBaseOld& operator=(const EnumMapBaseOld &rhs);
 	
 	template<class T2, int DEFAULT2>
-	EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& operator  = (const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs);
+	EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>& operator  = (const EnumMapBaseOld<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs);
 	template<class T2, int DEFAULT2>
-	EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& operator += (const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs);
+	EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>& operator += (const EnumMapBaseOld<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs);
 	template<class T2, int DEFAULT2>
-	EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& operator -= (const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs);
+	EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>& operator -= (const EnumMapBaseOld<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs);
 	template<class T2, int DEFAULT2>
-	bool operator == (const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs) const;
+	bool operator == (const EnumMapBaseOld<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs) const;
 	template<class T2, int DEFAULT2>
-	bool operator != (const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs) const;
+	bool operator != (const EnumMapBaseOld<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs) const;
 	
 	// something, which should really be elsewhere
 	template<typename T>
@@ -602,7 +602,7 @@ private:
 
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::EnumMapBase()
+inline EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::EnumMapBaseOld()
 	: m_pArrayFull(NULL)
 {
 	// bools can only default to 0 or 1
@@ -619,45 +619,45 @@ inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::EnumMapBase()
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::~EnumMapBase()
+inline EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::~EnumMapBaseOld()
 {
 	reset();
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-__forceinline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getDefault() const
+__forceinline T EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getDefault() const
 {
 	return (T)DEFAULT;
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-__forceinline IndexType EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::First() const
+__forceinline IndexType EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::First() const
 {
 	return ArrayStart((T_SUBSET)0);
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-__forceinline IndexType EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getLength() const
+__forceinline IndexType EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getLength() const
 {
 	return ArrayLength((T_SUBSET)0);
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-__forceinline IndexType EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::numElements() const
+__forceinline IndexType EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::numElements() const
 {
 	// apparently subtracting two IndexTypes results in int, not IndexType
 	return (IndexType)(getLength() - First());
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-__forceinline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::get(IndexType eIndex) const
+__forceinline T EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::get(IndexType eIndex) const
 {
 	FAssert(eIndex >= First() && eIndex < getLength());
 	return _get<bINLINE, SIZE>(eIndex - First());
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::set(IndexType eIndex, T eValue)
+inline void EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::set(IndexType eIndex, T eValue)
 {
 	FAssert(eIndex >= First() && eIndex < getLength());
 	if (!bINLINE && m_pArrayFull == NULL)
@@ -672,7 +672,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::set(IndexT
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::add(IndexType eIndex, T eValue)
+inline void EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::add(IndexType eIndex, T eValue)
 {
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	FAssert(eIndex >= First() && eIndex < getLength());
@@ -683,7 +683,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::add(IndexT
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::safeSet(IndexType eIndex, T eValue)
+inline void EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::safeSet(IndexType eIndex, T eValue)
 {
 	if (eIndex >= First() && eIndex < getLength())
 	{
@@ -692,7 +692,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::safeSet(In
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::safeAdd(IndexType eIndex, T eValue)
+inline void EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::safeAdd(IndexType eIndex, T eValue)
 {
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (eIndex >= First() && eIndex < getLength())
@@ -702,7 +702,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::safeAdd(In
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::addAll(T eValue)
+inline void EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::addAll(T eValue)
 {
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (eValue != 0)
@@ -715,7 +715,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::addAll(T e
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline int EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getTotal() const
+inline int EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getTotal() const
 {
 	// bINLINE is set at compile time and if true, isAllocated will always be true
 	// used here to tell the compiler that the true statement (not allocated) can be declared unreachable at compile time
@@ -737,7 +737,7 @@ inline int EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getTotal() 
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline int EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::GetNumPositiveElements() const
+inline int EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::GetNumPositiveElements() const
 {
 	// bINLINE is set at compile time and if true, isAllocated will always be true
 	// used here to tell the compiler that the true statement (not allocated) can be declared unreachable at compile time
@@ -762,7 +762,7 @@ inline int EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::GetNumPosit
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline int EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::GetNumNonZeroElements() const
+inline int EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::GetNumNonZeroElements() const
 {
 	// bINLINE is set at compile time and if true, isAllocated will always be true
 	// used here to tell the compiler that the true statement (not allocated) can be declared unreachable at compile time
@@ -787,13 +787,13 @@ inline int EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::GetNumNonZe
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::isAllocated() const
+inline bool EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::isAllocated() const
 {
 	return bINLINE || m_pArrayFull != NULL;
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::hasContent() const
+inline bool EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::hasContent() const
 {
 	if (bINLINE_BOOL)
 	{
@@ -835,14 +835,14 @@ inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::hasContent
 		// Release the data to save memory. It won't change how the outside world view the EnumMap.
 		if (!bINLINE)
 		{
-			(const_cast <EnumMapBase*> (this))->reset();
+			(const_cast <EnumMapBaseOld*> (this))->reset();
 		}
 	}
 	return false;
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getMin() const
+inline T EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getMin() const
 {
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (bINLINE_NATIVE) {
@@ -862,7 +862,7 @@ inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getMin() cons
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getMax() const
+inline T EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getMax() const
 {
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if(bINLINE_NATIVE)
@@ -883,7 +883,7 @@ inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getMax() cons
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::keepMin(IndexType eIndex, T eValue)
+inline void EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::keepMin(IndexType eIndex, T eValue)
 {
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	FAssert(eIndex >= First() && eIndex < getLength());
@@ -894,7 +894,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::keepMin(In
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::keepMax(IndexType eIndex, T eValue)
+inline void EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::keepMax(IndexType eIndex, T eValue)
 {
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	FAssert(eIndex >= First() && eIndex < getLength());
@@ -905,7 +905,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::keepMax(In
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::reset()
+inline void EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::reset()
 {
 	if (bINLINE)
 	{
@@ -920,7 +920,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::reset()
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::setAll(T eValue)
+inline void EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::setAll(T eValue)
 {
 	if (!bINLINE && m_pArrayChar == NULL)
 	{
@@ -937,7 +937,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::setAll(T e
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::copyToVector(std::vector<T>& thisVector) const
+inline void EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::copyToVector(std::vector<T>& thisVector) const
 {
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	thisVector.reserve(getLength());
@@ -953,7 +953,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::copyToVect
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::copyFromVector(const std::vector<T>& thisVector)
+inline void EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::copyFromVector(const std::vector<T>& thisVector)
 {
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	FAssert((unsigned int)getLength() == thisVector.size());
@@ -969,14 +969,14 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::copyFromVe
 //
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-__forceinline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::Read(CvSavegameReader& reader)
+__forceinline void EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::Read(CvSavegameReader& reader)
 {
 	_Read<SIZE>(reader);
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
 template<int SIZE2>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_Read(CvSavegameReader& reader)
+inline void EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_Read(CvSavegameReader& reader)
 {
 	BOOST_STATIC_ASSERT(SIZE == SIZE2);
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
@@ -1094,14 +1094,14 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_Read(CvSa
 
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-__forceinline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::Write(CvSavegameWriter& writer) const
+__forceinline void EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::Write(CvSavegameWriter& writer) const
 {
 	_Write<SIZE>(writer);
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
 template<int SIZE2>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_Write(CvSavegameWriter& writer) const
+inline void EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_Write(CvSavegameWriter& writer) const
 {
 	BOOST_STATIC_ASSERT(SIZE == SIZE2);
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
@@ -1211,7 +1211,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_Write(CvS
 //
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator=(const EnumMapBase &rhs)
+inline EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator=(const EnumMapBaseOld &rhs)
 {
 	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
@@ -1229,7 +1229,7 @@ inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<Ind
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType> template<class T2, int DEFAULT2>
-inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator=(const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs)
+inline EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator=(const EnumMapBaseOld<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs)
 {
 	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
@@ -1249,7 +1249,7 @@ inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<Ind
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType> template<class T2, int DEFAULT2>
-inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator+=(const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs)
+inline EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator+=(const EnumMapBaseOld<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs)
 {
 	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
@@ -1269,7 +1269,7 @@ inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<Ind
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType> template<class T2, int DEFAULT2>
-inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator-=(const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs)
+inline EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator-=(const EnumMapBaseOld<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs)
 {
 	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
@@ -1289,7 +1289,7 @@ inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<Ind
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType> template<class T2, int DEFAULT2>
-inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator==(const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs) const
+inline bool EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator==(const EnumMapBaseOld<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs) const
 {
 	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
@@ -1314,7 +1314,7 @@ inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator==
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType> template<class T2, int DEFAULT2>
-inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator!=(const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs) const
+inline bool EnumMapBaseOld<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator!=(const EnumMapBaseOld<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs) const
 {
 	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
@@ -1384,19 +1384,26 @@ template <> struct EnumMapGetDefault<VAR> \
 	}; \
 };
 
+template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, class STORAGE>
+class EnumMapShared
+{
+	BOOST_STATIC_ASSERT(0);
+};
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC = VARINFO<IndexType>::STATIC<VARINFO<LengthType>::LENGTH>::VAL, int TYPE = VARINFO<IndexType>::TYPE>
-class EnumMapSelector
-	: public EnumMapBase<IndexType, T, DEFAULT, LengthType, LengthType>
+
+template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC = VARINFO<IndexType>::STATIC<VARINFO<LengthType>::LENGTH>::VAL, int TYPE = VARINFO<T>::TYPE>
+class EnumMapBase
+	: public EnumMapBaseOld<IndexType, T, DEFAULT, LengthType, LengthType>
 {
 protected:
 	// protected constructor does the same as abstract class in C#
 	// it means the class can be inherited and used as function arguments, but it can't be allocated directly.
-	EnumMapSelector() {}
+	EnumMapBase() 
+	: EnumMapBaseOld<IndexType, T, DEFAULT, LengthType, LengthType>() {}
 };
 
 
 template<class IndexType, class T, int DEFAULT = VARINFO<T>::DEFAULT>
-class EnumMap : public EnumMapSelector <IndexType, T, DEFAULT, IndexType> {};
+class EnumMap : public EnumMapBase <IndexType, T, DEFAULT, IndexType> {};
 
 #endif
