@@ -25,6 +25,7 @@
 #include "CvTradeRoute.h"
 #include "CvSavegame.h"
 #include "KmodPathFinder.h"
+#include "BetterBTSAI.h"
 
 KmodPathFinder CvSelectionGroup::path_finder; // K-Mod
 
@@ -2782,7 +2783,14 @@ void CvSelectionGroup::groupMove(CvPlot* pPlot, bool bCombat, CvUnit* pCombatUni
 			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = nextUnitNode(pUnitNode);
 
-			pLoopUnit->ExecuteMove(((float)(GC.getMissionInfo(MISSION_MOVE_TO).getTime() * gDLL->getMillisecsPerTurn())) / 1000.0f, false);
+			try 
+			{ 
+				pLoopUnit->ExecuteMove(((float)(GC.getMissionInfo(MISSION_MOVE_TO).getTime() * gDLL->getMillisecsPerTurn())) / 1000.0f, false);
+			}
+			catch (...)
+			{
+				logBBAI(" pLoopUnit->ExecuteMove exception!");
+			}
 		}
 	}
 }
