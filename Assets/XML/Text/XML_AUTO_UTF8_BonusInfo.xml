@@ -1745,7 +1745,7 @@
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Erdüsse[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BONUS_BERRIES</Tag>
+        <Tag>TXT_KEY_BONUS_TUNDRA_BERRIES</Tag>
         <English>Tundra Berries</English>
         <German>
             <Text>Tundrabeeren</Text>
@@ -1754,7 +1754,7 @@
         </German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BONUS_BERRIES_PEDIA</Tag>
+        <Tag>TXT_KEY_BONUS_TUNDRA_BERRIES_PEDIA</Tag>
         <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tundra Berries[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tundrabeeren[COLOR_REVERT]</German>
     </TEXT>

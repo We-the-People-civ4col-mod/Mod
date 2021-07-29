@@ -11907,7 +11907,7 @@
             <iTeamsPrereq>0</iTeamsPrereq>
             <iLevelPrereq>0</iLevelPrereq>
             <iMinLatitude>0</iMinLatitude>
-            <iMaxLatitude>45</iMaxLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
             <iExperience>0</iExperience>
             <iFoodKept>0</iFoodKept>
             <iHealRateChange>0</iHealRateChange>
@@ -13413,14 +13413,14 @@
             <iAICitySize>1</iAICitySize>
         </BuildingInfo>
         <BuildingInfo>
-            <Type>BUILDING_BONUS_BERRIES</Type>
+            <Type>BUILDING_BONUS_TUNDRA_BERRIES</Type>
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS_BERRIES</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS_BERRIES_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS_BERRIES_STRATEGY</Strategy>
-            <ArtDefineTag>ART_DEF_BUILDING_BONUS_BERRIES</ArtDefineTag>
+            <Description>TXT_KEY_BUILDING_BONUS_TUNDRA_BERRIES</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_TUNDRA_BERRIES_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_TUNDRA_BERRIES_STRATEGY</Strategy>
+            <ArtDefineTag>ART_DEF_BUILDING_BONUS_TUNDRA_BERRIES</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
             <FreeStartEra>NONE</FreeStartEra>

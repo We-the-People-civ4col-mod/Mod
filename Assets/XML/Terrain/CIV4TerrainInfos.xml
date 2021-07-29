@@ -2148,7 +2148,7 @@
             <Yields>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>4</iValue>
+                    <iValue>3</iValue>
                 </YieldIntegerPair>
             </Yields>
             <RiverYieldIncreases/>
@@ -2251,7 +2251,7 @@
             <Yields>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>4</iValue>
+                    <iValue>3</iValue>
                 </YieldIntegerPair>
             </Yields>
             <RiverYieldIncreases/>
@@ -2354,7 +2354,7 @@
             <Yields>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>4</iValue>
+                    <iValue>3</iValue>
                 </YieldIntegerPair>
             </Yields>
             <RiverYieldIncreases/>
@@ -2455,6 +2455,10 @@
             <Civilopedia>TXT_KEY_TERRAIN_OCEAN_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_TERRAIN_OCEAN</ArtDefineTag>
             <Yields>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iValue>0</iValue>
+                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_WHALE_BLUBBER</YieldType>
                     <iValue>0</iValue>
