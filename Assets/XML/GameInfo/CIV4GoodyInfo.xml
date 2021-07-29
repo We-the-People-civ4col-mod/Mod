@@ -206,20 +206,20 @@
             <iMapRange>0</iMapRange>
             <iMapProb>0</iMapProb>
             <iExperience>0</iExperience>
-            <iHealing>-100</iHealing>
+            <iHealing>-50</iHealing>
             <iDamagePrereq>0</iDamagePrereq>
             <bBad>1</bBad>
             <bWar>0</bWar>
-            <UnitClass>NONE</UnitClass>
+            <UnitClass>UNITCLASS_HOSTILE_NATIVE</UnitClass>
             <TeachUnitClass>NONE</TeachUnitClass>
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
             <iMinTurnValid>0</iMinTurnValid>
-            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <iRandNumHostilesSpawned>1</iRandNumHostilesSpawned>
             <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
             <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
-            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileNatives>1</bSpawnHostileNatives>
             <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
@@ -268,17 +268,17 @@
             <iMapRange>0</iMapRange>
             <iMapProb>0</iMapProb>
             <iExperience>0</iExperience>
-            <iHealing>0</iHealing>
+            <iHealing>-50</iHealing>
             <iDamagePrereq>0</iDamagePrereq>
             <bBad>1</bBad>
-            <bWar>1</bWar>
-            <UnitClass>NONE</UnitClass>
+            <bWar>0</bWar>
+            <UnitClass>UNITCLASS_HOSTILE_NATIVE</UnitClass>
             <TeachUnitClass>NONE</TeachUnitClass>
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
             <iMinTurnValid>0</iMinTurnValid>
-            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <iRandNumHostilesSpawned>2</iRandNumHostilesSpawned>
             <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
             <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
             <bSpawnHostileNatives>0</bSpawnHostileNatives>
@@ -992,7 +992,7 @@
             <iExperience>10</iExperience>
             <iHealing>0</iHealing>
             <iDamagePrereq>0</iDamagePrereq>
-            <bBad>0</bBad>
+            <bBad>1</bBad>
             <bWar>0</bWar>
             <UnitClass>UNITCLASS_HOSTILE_NATIVE</UnitClass>
             <TeachUnitClass>NONE</TeachUnitClass>
