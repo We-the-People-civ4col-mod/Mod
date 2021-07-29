@@ -188,7 +188,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/llama/llama_adult_f.nif</NIF>
             <KFM/>
-            <Button>,Art/atlasmapbonus.dds,4,7</Button>
+            <Button>Art/Interface/Buttons/LLama_Button.dds</Button>
             <FontButtonIndex>56</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -804,7 +804,7 @@
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/apple/banana.nif</NIF>
             <KFM/>
-            <Button>,Art/atlasmapbonus.dds,3,4</Button>
+            <Button>Art/Interface/Buttons/Apples_Button.dds</Button>
             <FontButtonIndex>50</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -815,7 +815,7 @@
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/lemon/lemqes.nif</NIF>
             <KFM/>
-            <Button>,Art/atlasmapbonus.dds,1,8</Button>
+            <Button>Art/Interface/Buttons/Lemmons_Button.dds</Button>
             <FontButtonIndex>51</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -826,7 +826,7 @@
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Tomato/lemqes.nif</NIF>
             <KFM/>
-            <Button>,Art/atlasmapbonus.dds,2,8</Button>
+            <Button>Art/Interface/Buttons/Tomatos_Button.dds</Button>
             <FontButtonIndex>52</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -837,7 +837,7 @@
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/BeeHive/Banana.nif</NIF>
             <KFM/>
-            <Button>,Art/atlasmapbonus.dds,6,8</Button>
+            <Button>Art/Interface/Buttons/Bee_Hive_Button.dds</Button>
             <FontButtonIndex>53</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -848,18 +848,18 @@
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Peanut/arachide.nif</NIF>
             <KFM>Art/Terrain/Resources/Peanut/arachide.kfm</KFM>
-            <Button>,Art/atlasmapbonus.dds,5,8</Button>
+            <Button>Art/Interface/Buttons/Peanuts_Button.dds</Button>
             <FontButtonIndex>54</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
-            <Type>ART_DEF_BONUS_BERRIES</Type>
+            <Type>ART_DEF_BONUS_TUNDRA_BERRIES</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Berries/lemqes.nif</NIF>
             <KFM/>
-            <Button>,Art/atlasmapbonus.dds,3,8</Button>
+            <Button>Art/Interface/Buttons/Tundra_Berries_Button.dds</Button>
             <FontButtonIndex>55</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -870,7 +870,7 @@
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Shrimp/shrimp.nif</NIF>
             <KFM/>
-            <Button>,Art/atlasmapbonus.dds,4,8</Button>
+            <Button>Art/Interface/Buttons/Shrimp_Button.dds</Button>
             <FontButtonIndex>10</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -881,7 +881,7 @@
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/rice/rice.nif</NIF>
             <KFM/>
-            <Button>,Art/atlasmapbonus.dds,1,3</Button>
+            <Button>Art/Interface/Buttons/Rice_Button.dds</Button>
             <FontButtonIndex>17</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
