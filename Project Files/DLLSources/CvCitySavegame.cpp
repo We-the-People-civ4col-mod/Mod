@@ -48,6 +48,7 @@
 	const bool defaultProductionAutomated = false;
 	const bool defaultWallOverride = false;
 	const bool defaultPopulationRankValid = false;
+	const bool defaultHasHurried = false;
 
 	const PlayerTypes defaultOwner = NO_PLAYER;
 	const PlayerTypes defaultPreviousOwner = NO_PLAYER;
@@ -106,6 +107,7 @@ enum SavegameVariableTypes
 	CitySave_ProductionAutomated,
 	CitySave_WallOverride,
 	CitySave_PopulationRankValid,
+	CitySave_HasHurried,
 
 	CitySave_Owner,
 	CitySave_PreviousOwner,
@@ -351,6 +353,7 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bC
 	m_bProductionAutomated = defaultProductionAutomated;
 	m_bWallOverride = defaultWallOverride;
 	m_bPopulationRankValid = defaultPopulationRankValid;
+	m_bHasHurried = defaultHasHurried;
 
 	m_eOwner = eOwner;
 	m_ePreviousOwner = defaultPreviousOwner;
@@ -486,6 +489,7 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_ProductionAutomated: reader.Read(m_bProductionAutomated); break;
 		case CitySave_WallOverride: reader.Read(m_bWallOverride); break;
 		case CitySave_PopulationRankValid: reader.Read(m_bPopulationRankValid); break;
+		case CitySave_HasHurried: reader.Read(m_bHasHurried); break;
 
 		case CitySave_Owner: reader.Read(m_eOwner); break;
 		case CitySave_PreviousOwner: reader.Read(m_ePreviousOwner); break;
@@ -633,6 +637,7 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_ProductionAutomated, m_bProductionAutomated, defaultProductionAutomated);
 	writer.Write(CitySave_WallOverride, m_bWallOverride, defaultWallOverride);
 	writer.Write(CitySave_PopulationRankValid, m_bPopulationRankValid, defaultPopulationRankValid);
+	writer.Write(CitySave_HasHurried, m_bHasHurried, defaultHasHurried);
 
 	writer.Write(CitySave_Owner, m_eOwner, defaultOwner);
 	writer.Write(CitySave_PreviousOwner, m_ePreviousOwner, defaultPreviousOwner); 

@@ -856,7 +856,7 @@ protected:
 	mutable EnumMap<YieldTypes,int,-1> m_em_iYieldRank;
 	mutable EnumMap<YieldTypes,bool> m_em_bYieldRankValid;
 
-	bool m_bHasHurried;
+	bool m_bHasHurried; // Needed to remember (cache) if a hurry was conducted and we should complete the current build
 	void doGrowth();
 	void doYields();
 	void addTempHurryYieldsForProduction();
