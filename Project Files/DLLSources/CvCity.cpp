@@ -43,8 +43,6 @@ CvCity::CvCity()
 
 	m_ePreferredYieldAtCityPlot = NO_YIELD;
 
-	m_bHasHurried = false;
-
 	reset(0, NO_PLAYER, 0, 0, true);
 }
 
