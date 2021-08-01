@@ -1888,6 +1888,7 @@
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
+            <iDomesticMarketModifier>250</iDomesticMarketModifier>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
             <DomainFreeExperiences/>
@@ -1978,6 +1979,7 @@
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
+            <iEntertainmentGoldModifier>100</iEntertainmentGoldModifier>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
             <DomainFreeExperiences/>
@@ -2068,6 +2070,7 @@
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
+            <iEntertainmentGoldModifier>150</iEntertainmentGoldModifier>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
             <DomainFreeExperiences/>
@@ -2162,6 +2165,7 @@
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
+            <iEntertainmentGoldModifier>150</iEntertainmentGoldModifier>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
             <DomainFreeExperiences/>
@@ -2256,6 +2260,7 @@
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
+            <iEntertainmentGoldModifier>250</iEntertainmentGoldModifier>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
             <DomainFreeExperiences/>
