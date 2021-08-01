@@ -1157,9 +1157,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_MARKET_BUILDING_INCREASED</Tag>
-        <English>[ICON_BULLET]Increases demand for goods on the domestic market.</English>
-        <French>[ICON_BULLET]Augmente la demande de bien sur le marché intérieur.</French>
-        <German>[ICON_BULLET]Erhöht die Nachfrage nach Waren in der Stadt</German>
+        <English>[ICON_BULLET]Increases demand on domestic market by: %d1_increase%%</English>
+        <French>[ICON_BULLET]Augmente la demande sur le marché intérieur a: %d1_increase%%</French>
+        <German>[ICON_BULLET]Erhöht die Marktnachfrage der Stadt um: %d1_increase%%</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_EXTRA_TRADE_MODIFIER</Tag>
