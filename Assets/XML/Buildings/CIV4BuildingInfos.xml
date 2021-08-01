@@ -2166,7 +2166,7 @@
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
-            <iEntertainmentGoldModifier>150</iEntertainmentGoldModifier>
+            <iEntertainmentGoldModifier>200</iEntertainmentGoldModifier>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
             <DomainFreeExperiences/>

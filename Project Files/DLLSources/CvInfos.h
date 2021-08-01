@@ -1300,6 +1300,7 @@ public:
 	bool isNeverCapture() const;
 	bool isCenterInCity() const;
 	int getDomesticMarketModifier() const { return m_iDomesticMarketModifier; }
+	int getEntertainmentGoldModifier() const { return m_iEntertainmentGoldModifier; } // ray, Balancing of Entertainment Buildings in XML
 	// R&R, Androrc, Domestic Market -- modified by Nightinggale - start
 	const InfoArray<YieldTypes, IntTypes>& getYieldDemands() const;
 	// R&R, Androrc, Domestic Market -- modified by Nightinggale - end
@@ -1401,6 +1402,7 @@ protected:
 	bool m_bNeverCapture;
 	bool m_bCenterInCity;
 	int m_iDomesticMarketModifier;
+	int m_iEntertainmentGoldModifier; // ray, Balancing of Entertainment Buildings in XML
 	// R&R, Androrc, Domestic Market -- modified by Nightinggale - start
 	InfoArray<YieldTypes, IntTypes> m_info_YieldDemands;
 	// R&R, Androrc, Domestic Market -- modified by Nightinggale - end

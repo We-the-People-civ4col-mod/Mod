@@ -4911,6 +4911,7 @@ m_bNationalWonder(false), // R&R, ray, National Wonders
 m_bNeverCapture(false),
 m_bCenterInCity(false),
 m_iDomesticMarketModifier(0),
+m_iEntertainmentGoldModifier(0), // ray, Balancing of Entertainment Buildings in XML
 m_aiProductionTraits(NULL),
 m_aiLandPlotYieldChange(NULL), // R&R, ray, Landplot Yields
 m_aiSeaPlotYieldChange(NULL),
@@ -5503,6 +5504,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "FreePromotion");
 	m_iFreePromotion = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(&m_iDomesticMarketModifier, "iDomesticMarketModifier");
+	pXML->GetChildXmlValByName(&m_iEntertainmentGoldModifier, "iEntertainmentGoldModifier"); // ray, Balancing of Entertainment Buildings in XML
 	readXML(m_info_YieldDemands, "YieldDemands");
 	pXML->GetChildXmlValByName(&m_bWorksWater, "bWorksWater");
 	pXML->GetChildXmlValByName(&m_bWater, "bWater");

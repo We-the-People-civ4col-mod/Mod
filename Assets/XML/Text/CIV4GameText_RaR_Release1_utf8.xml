@@ -1145,9 +1145,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ENTERTAINMENT_BUILDING_INCREASED</Tag>
-        <English>[ICON_BULLET]Increases generation of [ICON_GOLD] from %F1_yield</English>
-        <French>[ICON_BULLET]Génère davantage de [ICON_GOLD] à partir de %F1_yield</French>
-        <German>[ICON_BULLET]Erhöht die Rate von [ICON_GOLD] durch %F1_yield</German>
+        <English>[ICON_BULLET]Increases generation of [ICON_GOLD] from %F1_yield by: %d2_increase%%</English>
+        <French>[ICON_BULLET]Génère davantage de [ICON_GOLD] à partir de %F1_yield à: %d2_increase%%</French>
+        <German>[ICON_BULLET]Erhöht die Rate von [ICON_GOLD] durch %F1_yield um: %d2_increase%%</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_MARKET_BUILDING</Tag>

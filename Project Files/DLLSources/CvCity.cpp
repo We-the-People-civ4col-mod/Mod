@@ -12180,14 +12180,14 @@ void CvCity::doEntertainmentBuildings()
 			{
 				if (isHasBuilding(eBuilding))
 				{
-					factorFromBuildingLevel = kBuilding.getSpecialBuildingPriority();
+					factorFromBuildingLevel = kBuilding.getEntertainmentGoldModifier();
 					highestLevelEntertainmentBuilding = eBuilding;
 				}
 			}
 		}
 	}
 
-	int iGoldthroughCulture = iCulturePerTurn +  ((iCulturePerTurn * factorFromBuildingLevel) / 2); // 50 percent extra for each level
+	int iGoldthroughCulture = iCulturePerTurn * factorFromBuildingLevel; // now as defined in XML
 	iGoldthroughCulture = iGoldthroughCulture * (100 + getCityHappiness() - getCityUnHappiness()) / 100; // WTP, ray, Happiness - START
 
 	if (highestLevelEntertainmentBuilding != NO_BUILDING && iGoldthroughCulture > 0)

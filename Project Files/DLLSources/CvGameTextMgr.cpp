@@ -5853,14 +5853,16 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_NATIONAL_WONDER"));
 	}
 
-	if (kBuilding.getSpecialBuildingType() ==(SpecialBuildingTypes) GC.getDefineINT("SPECIALBUILDING_TAVERN"))
+	if (kBuilding.getSpecialBuildingType() == (SpecialBuildingTypes) GC.getDefineINT("SPECIALBUILDING_TAVERN"))
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_ENTERTAINMENT_BUILDING", GC.getYieldInfo(YIELD_CULTURE).getChar()));
-		if (kBuilding.getSpecialBuildingPriority() > 0)
+		// values are assumed to be higher than 100
+		int iEntertainmentGoldIncrease = kBuilding.getEntertainmentGoldModifier() - 100; // // ray, Balancing of Entertainment Buildings in XML
+		if (iEntertainmentGoldIncrease > 0)
 		{
 			szBuffer.append(NEWLINE);
-			szBuffer.append(gDLL->getText("TXT_KEY_ENTERTAINMENT_BUILDING_INCREASED", GC.getYieldInfo(YIELD_CULTURE).getChar()));
+			szBuffer.append(gDLL->getText("TXT_KEY_ENTERTAINMENT_BUILDING_INCREASED", GC.getYieldInfo(YIELD_CULTURE).getChar(), iEntertainmentGoldIncrease));
 		}
 	}
 
