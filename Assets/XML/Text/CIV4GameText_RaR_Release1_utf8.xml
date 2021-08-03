@@ -1404,4 +1404,24 @@
         <French>[ICON_BULLET]A %s1_ImpName s'est révolté et a rejoint %s2_CivDesc</French>
         <German>[ICON_BULLET][COLOR_SELECTED_TEXT]%s1_ImpName[COLOR_REVERT] hat rebelliert und trat [COLOR_HIGHLIGHT_TEXT]%s2_CivDesc[COLOR_REVERT] bei</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_FLATLAND</Tag>
+        <English>[BOLD]Flatland:[\BOLD]</English>
+        <German>[BOLD]Flachland:[\BOLD]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_HILLS</Tag>
+        <English>[NEWLINE][BOLD]Hills:[\BOLD]</English>
+        <German>[NEWLINE][BOLD]Hügel:[\BOLD]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_PEAKS</Tag>
+        <English>[NEWLINE][BOLD]Peaks:[\BOLD]</English>
+        <German>[NEWLINE][BOLD]Berge:[\BOLD]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_WATER</Tag>
+        <English>[BOLD]Water:[\BOLD]</English>
+        <German>[BOLD]Wasser:[\BOLD]</German>
+    </TEXT>
 </Civ4GameText>
