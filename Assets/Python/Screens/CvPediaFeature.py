@@ -94,9 +94,31 @@ class CvPediaFeature:
 		screen.addListBoxGFC(panelName, "", self.X_STATS_PANE, self.Y_STATS_PANE, self.W_STATS_PANE, self.H_STATS_PANE, TableStyles.TABLE_STYLE_EMPTY)
 		screen.enableSelect(panelName, False)
 
+		szYieldIncreaseText = localText.getText("TXT_KEY_PEDIA_YIELD_INCREASES", ())
+		szYieldDecreaseText = localText.getText("TXT_KEY_PEDIA_YIELD_DECREASES", ())
+		
+		# first we list Yield Increases
+		screen.appendListBoxString(panelName, szYieldIncreaseText, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 		for k in range(YieldTypes.NUM_YIELD_TYPES):
 			iYieldChange = gc.getFeatureInfo(self.iFeature).getYieldChange(k)
-			if (iYieldChange != 0):
+			if (iYieldChange > 0):
+				if (iYieldChange > 0):
+					sign = "+"
+				else:
+					sign = ""
+				## R&R, Robert Surcouf,  Pedia - Start
+				#szYield = (u"%s: %s%i " % (gc.getYieldInfo(k).getDescription().upper(), sign, iYieldChange))
+				szYield = (u"%s: %s%i " % (gc.getYieldInfo(k).getDescription(), sign, iYieldChange))
+				
+				#screen.appendListBoxString(panelName, u"<font=4>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+				screen.appendListBoxString(panelName, u"<font=3>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+				## R&R, Robert Surcouf,  Pedia - End
+				
+		# then we list Yield Decreases
+		screen.appendListBoxString(panelName, szYieldDecreaseText, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		for k in range(YieldTypes.NUM_YIELD_TYPES):
+			iYieldChange = gc.getFeatureInfo(self.iFeature).getYieldChange(k)
+			if (iYieldChange < 0):
 				if (iYieldChange > 0):
 					sign = "+"
 				else:

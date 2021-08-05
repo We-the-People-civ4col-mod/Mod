@@ -1424,4 +1424,14 @@
         <English>[BOLD]Water:[\BOLD]</English>
         <German>[BOLD]Wasser:[\BOLD]</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_YIELD_INCREASES</Tag>
+        <English>[BOLD]Yield Increases:[\BOLD]</English>
+        <German>[BOLD]Höherer Ertrag:[\BOLD]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_YIELD_DECREASES</Tag>
+        <English>[NEWLINE][BOLD]Yield Decreases:[\BOLD]</English>
+        <German>[NEWLINE][BOLD]Geringerer Ertrag:[\BOLD]</German>
+    </TEXT>
 </Civ4GameText>
