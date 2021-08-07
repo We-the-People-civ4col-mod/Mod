@@ -2561,6 +2561,8 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 	{
 		CvUnit* pSelectedUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
 
+		// Suppress asert 
+		/*
 		if (pSelectedUnit != NULL)
 		{
 			int iPathTurns;
@@ -2570,6 +2572,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 				szString.append(CvWString::format(L"\nPathturns = %d, cost = %d", iPathTurns, iPathCost));
 			}
 		}
+		*/
 
 		//Distances to various things.
 		if (pPlot->isOwned())
