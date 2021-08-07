@@ -855,6 +855,9 @@
     <ClInclude Include="DLLSources\CvSavegameEnumMapHelper.h">
       <Filter>CV\Savegames</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\EnumMapSpecializationInt.h">
+      <Filter>Data\Header\EnumMap Internals</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">

@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CvEnumsFunctions.h"
+#include "EnumMapSpecializationInt.h"
 
 // special cases for EnumMap. Needs to be included after this file
 template<class T, int DEFAULT>

@@ -342,25 +342,25 @@ void CvPlot::read(CvSavegameReader reader)
 			}
 		} break;
 
-		case Save_aiYield: m_em_iYield.Read(reader); break;
+		case Save_aiYield                  : reader.Read(m_em_iYield)                         ; break;
 
 		// PlayerArrays
-		case Save_Culture                  : m_em_iCulture                       .Read(reader); break;
-		case Save_CultureRangeForts        : m_em_iCultureRangeForts             .Read(reader); break;
-		case Save_DangerMap                : m_em_iDangerMap                     .Read(reader); break;
-		case Save_FoundValue               : m_em_iFoundValue                    .Read(reader); break;
-		case Save_PlayerCityRadiusCount    : m_em_iPlayerCityRadiusCount         .Read(reader); break;
-		case Save_VisibilityCount          : m_em_iVisibilityCount               .Read(reader); break;
-		case Save_RevealedOwner            : m_em_eRevealedOwner                 .Read(reader); break;
+		case Save_Culture                  : reader.Read(m_em_iCulture)                       ; break;
+		case Save_CultureRangeForts        : reader.Read(m_em_iCultureRangeForts)             ; break;
+		case Save_DangerMap                : reader.Read(m_em_iDangerMap)                     ; break;
+		case Save_FoundValue               : reader.Read(m_em_iFoundValue)                    ; break;
+		case Save_PlayerCityRadiusCount    : reader.Read(m_em_iPlayerCityRadiusCount)         ; break;
+		case Save_VisibilityCount          : reader.Read(m_em_iVisibilityCount)               ; break;
+		case Save_RevealedOwner            : reader.Read(m_em_eRevealedOwner)                 ; break;
 
 		case Save_CultureRangeCities       : m_em2_iCultureRangeCities           .Read(reader); break;
 		case Save_InvisibleVisibilityCount : m_em2_iInvisibleVisibilityCount     .Read(reader); break;
 
-		case Save_ScriptData               : reader.Read(m_szScriptData); break;
+		case Save_ScriptData               : reader.Read(m_szScriptData)                      ; break;
 
-		case Save_BuildProgress            : m_em_iBuildProgress                 .Read(reader); break;
+		case Save_BuildProgress            : reader.Read(m_em_iBuildProgress)                 ; break;
 			
-		case Save_Units                    : reader.Read(m_units); break;
+		case Save_Units                    : reader.Read(m_units)                             ; break;
 
 		default:
 			FAssertMsg(false, "Unhandled savegame enum");

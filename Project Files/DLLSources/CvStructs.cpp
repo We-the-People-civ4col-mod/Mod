@@ -219,7 +219,7 @@ void PlotExtraYield::read(CvSavegameReader& reader)
 
 	// use savegame code in EnumMap to allow for xml changes in yield xml
 	EnumMap<YieldTypes, int> tempArray;
-	tempArray.Read(reader);
+	reader.Read(tempArray);
 	tempArray.copyToVector(m_aeExtraYield);
 }
 
@@ -231,7 +231,7 @@ void PlotExtraYield::write(CvSavegameWriter& writer) const
 	// use savegame code in EnumMap to allow for xml changes in yield xml
 	EnumMap<YieldTypes, int> tempArray;
 	tempArray.copyFromVector(m_aeExtraYield);
-	tempArray.Write(writer);
+	writer.Write(tempArray);
 }
 
 void BuildingYieldChange::read(FDataStreamBase* pStream)

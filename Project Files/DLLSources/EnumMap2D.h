@@ -227,13 +227,13 @@ inline void EnumMap2DDefault<OuterArrayType, InnerArrayType, T, DEFAULT>::Read(C
 
 				if (iIndex >= First() && iIndex < Length())
 				{
-					m_pOuterArray[iIndex].Read(reader);
+					reader.Read(m_pOuterArray[iIndex]);
 				}
 				else
 				{
 					// entry removed. Read data and discard.
 					EnumMap<InnerArrayType, T, DEFAULT> temp;
-					temp.Read(reader);
+					reader.Read(temp);
 				}
 			}
 		}
@@ -244,13 +244,13 @@ inline void EnumMap2DDefault<OuterArrayType, InnerArrayType, T, DEFAULT>::Read(C
 
 			if (iIndex >= First() && iIndex < Length())
 			{
-				m_pOuterArray[iFirst].Read(reader);
+				reader.Read(m_pOuterArray[iFirst]);
 			}
 			else
 			{
 				// entry removed. Read data and discard.
 				EnumMap<InnerArrayType, T, DEFAULT> temp;
-				temp.Read(reader);
+				reader.Read(temp);
 			}
 		}
 

@@ -232,6 +232,7 @@
     <ClInclude Include="DLLSources\CvSavegameEnumMapHelper.h" />
     <ClInclude Include="DLLSources\CyData.h" />
     <ClInclude Include="DLLSources\CyUserSettings.h" />
+    <ClInclude Include="DLLSources\EnumMapSpecializationInt.h" />
     <ClInclude Include="DLLSources\EnumMapSpecialization.h" />
     <ClInclude Include="DLLSources\NetworkDataPacking.h" />
     <ClInclude Include="DLLSources\Profile.h" />

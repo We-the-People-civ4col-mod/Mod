@@ -1384,13 +1384,6 @@ template <> struct EnumMapGetDefault<VAR> \
 	}; \
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, class STORAGE>
-class EnumMapShared
-{
-	BOOST_STATIC_ASSERT(0);
-};
-
-
 template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC = VARINFO<IndexType>::STATIC<VARINFO<LengthType>::LENGTH>::VAL, int TYPE = VARINFO<T>::TYPE>
 class EnumMapBase
 	: public EnumMapBaseOld<IndexType, T, DEFAULT, LengthType, LengthType>
