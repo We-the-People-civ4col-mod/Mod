@@ -242,6 +242,7 @@ sub structEnum
 	$output .= "\tstatic const int LENGTH = 50;\n"; #" . $var{$name}{COMPILE} . ";\n";
 	$output .= "\tstatic $type start() { return " . $var{$name}{START} . ";}\n";
 	$output .= "\tstatic $type end() { return " . $var{$name}{END} . ";}\n";
+	$output .= "\tstatic $type length() { return end() - start();}\n";
 	$output .= "\tstatic bool isInRange($type eIndex) { return eIndex >= start() && eIndex < end();}\n";
 	$output .= "\ttemplate <int T> struct STATIC {\n";
 	$output .= "\t\tstatic const int VAL = T * ((int)TYPE == (int)VARIABLE_TYPE_CHAR ? 1 : 2) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;\n";

@@ -15,6 +15,12 @@ struct CvPopupButtonPython;
 #include "CvPopupInfo.h"
 #include "CvReplayMessage.h"
 
+// savegame debugging option
+// note: might not result in usable savegames in case of failure
+//#define WITH_DEBUG_WRITE_SAVEGAME
+
+int getByteSizeForXML(JITarrayTypes eType);
+
 #define CHUNK_SIZE (MAX_UNSIGNED_SHORT)
 #define COMPRESS_THRESHOLD (MAX_UNSIGNED_CHAR)
 
@@ -250,6 +256,14 @@ public:
 #endif
 
 private:
+	template<class Ta>
+	struct ReadEnumMap
+	{
+		template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+		static void Read(CvSavegameReader& reader, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em);
+
+	};
+
 
 	template<typename T>
 	void ReadEnum(T& variable);
@@ -481,6 +495,12 @@ public:
 	int GetXmlSize(JITarrayTypes eType);
 
 private:
+	template<class Ta>
+	struct WriteEnumMap
+	{
+		template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+		static void Write(CvSavegameWriter& kWriter, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em);
+	};
 
 	template<typename T>
 	void WriteEnum(T variable);
@@ -494,6 +514,18 @@ private:
 
 	CvSavegameWriterBase& m_writerbase;
 	std::vector<byte>& m_vector;
+
+#ifdef WITH_DEBUG_WRITE_SAVEGAME
+public:
+	void DEBUG_startA();
+	void DEBUG_startB();
+	void DEBUG_end();
+	bool DEBUG_compare() const;
+protected:
+	int m_iDebugWriteMode;
+	std::vector<byte> m_vectorA;
+	std::vector<byte> m_vectorB;
+#endif
 };
 
 //
@@ -530,7 +562,7 @@ inline T CvSavegameReader::ReadBitfield(T variable)
 template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
 inline void CvSavegameReader::Read(EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
 {
-	em.Read(*this);
+	ReadEnumMap<T>::Read(*this, em);
 }
 
 template<class T1, class T2, class T3, int T4>
@@ -818,7 +850,7 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, JustInTimeArray
 template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
 inline void CvSavegameWriter::Write(EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
 {
-	em.Write(*this);
+	WriteEnumMap<T>::Write(*this, em);
 }
 
 template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
@@ -938,5 +970,7 @@ private:
 	std::vector<byte> m_vector;
 	std::vector<byte> m_table;
 };
+
+#include "CvSavegameEnumMap.h"
 
 #endif
