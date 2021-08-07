@@ -10913,7 +10913,7 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 
 		case UNITAI_TRANSPORT_COAST:
 			{
-				const int iNeeded = countNumCoastalCities();
+				const int iNeeded = countNumCoastalCities() / 2;
 
 				if (iCount < iNeeded)
 				{
@@ -11107,11 +11107,16 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 
 		case UNITAI_ASSAULT_SEA:
 			{
-				if (AI_prepareAssaultSea())	// TAC - AI Assault Sea - koma13
+				// See comment for the escort AI. We allow a single assault ship since they are sometimes useful
+				// for reinforcement missions (ferrying defenders etc.)
+				if (iCurrentCount == 0)
 				{
-					int iLowerPop = 5;
-					int iPop = 15 + 50 * iCount;
-					iValue = (160 * std::max(0, iPopulation - (iLowerPop + iPop * iCount))) / iPop;
+					if (AI_prepareAssaultSea())	// TAC - AI Assault Sea - koma13
+					{
+						int iLowerPop = 5;
+						int iPop = 15 + 50 * iCount;
+						iValue = (160 * std::max(0, iPopulation - (iLowerPop + iPop * iCount))) / iPop;
+					}
 				}
 			}
 		case UNITAI_COMBAT_SEA:
@@ -11128,17 +11133,16 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 
 		case UNITAI_PIRATE_SEA:
 			{
+				// Get combat ships before considering a privateer
+				if (iCurrentCount < 2 && AI_totalUnitAIs(UNITAI_COMBAT_SEA) > 0)
 				// TAC - AI purchases military units - koma13 - START
-				int iCurrentCount = AI_totalUnitAIs(eUnitAI);
-				//if (iCount < 2)
-				if (iCurrentCount < 2)
 				{
 					/*
 					int iLowerPop = 5;
 					int iPop = 16 + 6 * iCount;
 					iValue = (140 * std::max(0, iPopulation - (iLowerPop + iPop * iCount))) / iPop;
 					*/
-					int iLowerPop = 5;
+					int iLowerPop = 10;
 					int iPop = 16 + 6 * iCurrentCount;
 					iValue = (140 * std::max(0, iPopulation - (iLowerPop + iPop * iCurrentCount))) / iPop;
 					
@@ -11154,6 +11158,9 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 
 		// TAC - AI Escort Sea - koma13 - START
 		case UNITAI_ESCORT_SEA:
+			// Disabled for now, the colonial AI is currently not able to undertake intercontinental invasions
+			// and hence there is no need for escort ships
+			/*
 			{
 				if (iCount < AI_totalUnitAIs(UNITAI_ASSAULT_SEA))
 				{
@@ -11162,6 +11169,7 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 					iValue = (160 * std::max(0, iPopulation - (iLowerPop + iPop * iCount))) / iPop;
 				}
 			}
+			*/
 			break;
 		// TAC - AI Escort Sea - koma13 - END
 
