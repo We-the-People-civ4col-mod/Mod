@@ -1533,13 +1533,16 @@ void CvUnitAI::AI_settlerMove()
 	
 	if (bDanger)
 	{
+		// Don't be so eager to join 
+		/*
 		if (canJoinCity(plot()))
 		{
 			joinCity();
 			return;
 		}
+		*/
 		
-		if (AI_retreatToCity())
+		if (AI_retreatToCity(false, MAX_INT, true))
 		{
 			return;
 		}
@@ -1553,13 +1556,10 @@ void CvUnitAI::AI_settlerMove()
 		}
 	}
 		
-	if (canJoinCity(plot()))
-	{
-		joinCity();
-		return;
-	}
-
-	if (AI_retreatToCity(false, MAX_INT, true))
+	// Settlers should always be on their way towards a spot to settle
+	// So if we get here, this is evidence that we may need to be picked
+	// up by a ship
+	if (AI_requestPickup())
 	{
 		return;
 	}
@@ -1568,12 +1568,18 @@ void CvUnitAI::AI_settlerMove()
 	{
 		return;
 	}
+	
+	if (canJoinCity(plot()))
+	{
+		joinCity();
+		return;
+	}
 
 	if (AI_safety())
 	{
 		return;
 	}
-
+	
 	getGroup()->pushMission(MISSION_SKIP);
 	return;
 }
