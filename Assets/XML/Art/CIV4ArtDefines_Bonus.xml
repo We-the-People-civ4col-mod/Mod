@@ -557,6 +557,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_PINE_APPLE</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Pine_Apple/banana.nif</NIF>
+            <KFM>Art/Terrain/Resources/Pine_Apple/banana.kfm</KFM>
+            <Button>Art/interface/buttons/Pine_Apple_Button.dds</Button>
+            <FontButtonIndex>67</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_TURKEYS</Type>
             <fScale>1.5</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
@@ -920,6 +931,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_BEANS</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Beans/cnq.nif</NIF>
+            <KFM>Art/Terrain/Resources/Beans/cnq.kfm</KFM>
+            <Button>Art/interface/buttons/Beans_Button.dds</Button>
+            <FontButtonIndex>72</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_MUSHROOMS</Type>
             <fScale>0.6</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
@@ -964,17 +986,6 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
-            <Type>ART_DEF_BONUS_PINE_APPLE</Type>
-            <fScale>1.0</fScale>
-            <fInterfaceScale>0.7</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Pine_Apple/banana.nif</NIF>
-            <KFM>Art/Terrain/Resources/Pine_Apple/banana.kfm</KFM>
-            <Button>Art/interface/buttons/Pine_Apple_Button.dds</Button>
-            <FontButtonIndex>67</FontButtonIndex>
-            <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
-        </BonusArtInfo>
-        <BonusArtInfo>
             <Type>ART_DEF_BONUS_PAPAYA</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>0.7</fInterfaceScale>
@@ -993,17 +1004,6 @@
             <KFM/>
             <Button>Art/interface/buttons/Cherries_Button.dds</Button>
             <FontButtonIndex>69</FontButtonIndex>
-            <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
-        </BonusArtInfo>
-        <BonusArtInfo>
-            <Type>ART_DEF_BONUS_BEANS</Type>
-            <fScale>1.0</fScale>
-            <fInterfaceScale>0.7</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Beans/cnq.nif</NIF>
-            <KFM>Art/Terrain/Resources/Beans/cnq.kfm</KFM>
-            <Button>Art/interface/buttons/Beans_Button.dds</Button>
-            <FontButtonIndex>72</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>

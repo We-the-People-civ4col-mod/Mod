@@ -384,6 +384,11 @@
         </German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_LLAMA_PEDIA</Tag>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Llamas[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Llamas[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_BOOBY</Tag>
         <English>Boobies</English>
         <German>
@@ -452,11 +457,6 @@
         <Tag>TXT_KEY_BONUS_GOOSE_PEDIA</Tag>
         <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Canada Goose[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kanadagans[COLOR_REVERT] </German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BONUS_LLAMA_PEDIA</Tag>
-        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Llamas[COLOR_REVERT] </English>
-        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Llamas[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GUINEA_PIG</Tag>
@@ -1727,6 +1727,20 @@
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kirschbäume[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_PINE_APPLE</Tag>
+        <English>Pine Apple Tree</English>
+        <German>
+            <Text>Ananasbaum</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_PINE_APPLE_PEDIA</Tag>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pine Apple Tree[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ananasbaum[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_LEMONS</Tag>
         <English>Lemon Trees</English>
         <French>
@@ -1839,6 +1853,20 @@
         <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT] </English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]tilleus[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Reis[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_BEANS</Tag>
+        <English>Beans</English>
+        <German>
+            <Text>Bohnen</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_BEANS_PEDIA</Tag>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Beans[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bohnen[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MUSHROOMS</Tag>
