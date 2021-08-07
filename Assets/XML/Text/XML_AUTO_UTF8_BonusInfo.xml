@@ -1665,6 +1665,34 @@
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Buckelwale[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_SWEET_POTATO</Tag>
+        <English>Sweet Potatoes</English>
+        <German>
+            <Text>Süßkratoffeln</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_SWEET_POTATO_PEDIA</Tag>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sweet Potatoes[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Süßkratoffeln[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_SQUASH</Tag>
+        <English>Squash</English>
+        <German>
+            <Text>Zuchini</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_SQUASH_PEDIA</Tag>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Squash[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Zuchini[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_APPLES</Tag>
         <English>Apple Trees</English>
         <French>
@@ -1683,6 +1711,20 @@
         <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Apple Trees[COLOR_REVERT] </English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]pommiers[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Apfelbäume[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_CHERRIES</Tag>
+        <English>Cherry Trees</English>
+        <German>
+            <Text>Kirschbäume</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_CHERRIES_PEDIA</Tag>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cherry Trees[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kirschbäume[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_LEMONS</Tag>

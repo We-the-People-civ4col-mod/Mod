@@ -1211,6 +1211,17 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
+                    <BonusType>BONUS_SWEET_POTATO</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FOOD</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
                     <BonusType>BONUS_BARLEY</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -1234,6 +1245,17 @@
                 </BonusTypeStruct>
                 <BonusTypeStruct>
                     <BonusType>BONUS_PUMPKIN</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FOOD</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_SQUASH</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
@@ -1344,6 +1366,17 @@
                 </BonusTypeStruct>
                 <BonusTypeStruct>
                     <BonusType>BONUS_APPLES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FOOD</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_CHERRIES</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
@@ -2865,6 +2898,17 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
+                    <BonusType>BONUS_SWEET_POTATO</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FOOD</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
                     <BonusType>BONUS_BARLEY</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -2888,6 +2932,17 @@
                 </BonusTypeStruct>
                 <BonusTypeStruct>
                     <BonusType>BONUS_PUMPKIN</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FOOD</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_SQUASH</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
@@ -2998,6 +3053,17 @@
                 </BonusTypeStruct>
                 <BonusTypeStruct>
                     <BonusType>BONUS_APPLES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FOOD</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_CHERRIES</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>

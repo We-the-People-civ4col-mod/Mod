@@ -35,7 +35,7 @@
             <NIF>Art/Terrain/Resources/arcticfox/arcticfox.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/arcticfox2.dds</Button>
-            <FontButtonIndex>21</FontButtonIndex>
+            <FontButtonIndex>78</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -46,7 +46,7 @@
             <NIF>Art/Terrain/Resources/redfox/redfox.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/redfox.dds</Button>
-            <FontButtonIndex>21</FontButtonIndex>
+            <FontButtonIndex>79</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -209,7 +209,7 @@
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Parrots/bird2.nif</NIF>
-            <KFM></KFM>
+            <KFM/>
             <Button>Art/Interface/Buttons/Parrots.dds</Button>
             <FontButtonIndex>57</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
@@ -220,7 +220,7 @@
             <fScale>40.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/toucan/toucan.nif</NIF>
-            <KFM></KFM>
+            <KFM/>
             <Button>Art/Interface/Buttons/toucan.dds</Button>
             <FontButtonIndex>57</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
@@ -231,7 +231,7 @@
             <fScale>40.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/capybara/capybara.nif</NIF>
-            <KFM></KFM>
+            <KFM/>
             <Button>Art/Interface/Buttons/capybara.dds</Button>
             <FontButtonIndex>62</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
@@ -242,7 +242,7 @@
             <fScale>40.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/tapir/mttapir.nif</NIF>
-            <KFM></KFM>
+            <KFM/>
             <Button>Art/Interface/Buttons/tapir.dds</Button>
             <FontButtonIndex>61</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
@@ -277,7 +277,7 @@
             <NIF>Art/Terrain/Resources/moose/moose.nif</NIF>
             <KFM/>
             <Button>Art/Interface/Buttons/moose.dds</Button>
-            <FontButtonIndex>5</FontButtonIndex>
+            <FontButtonIndex>80</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -425,6 +425,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_SWEET_POTATO</Type>
+            <fScale>0.8</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Sweet_Potato/Wheat.nif</NIF>
+            <KFM>Art/Terrain/Resources/Sweet_Potato/Wheat.kfm</KFM>
+            <Button>Art/interface/buttons/Sweet_Potato_Button.dds</Button>
+            <FontButtonIndex>70</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_COCOA</Type>
             <fScale>1</fScale>
             <fInterfaceScale>1.1</fInterfaceScale>
@@ -475,7 +486,7 @@
             <NIF>Art/Terrain/Resources/humpback_whale/Whale.nif</NIF>
             <KFM>Art/Terrain/Resources/Whale/Whale.kfm</KFM>
             <Button>Art/Interface/Buttons/humpback_whale.dds</Button>
-            <FontButtonIndex>64</FontButtonIndex>
+            <FontButtonIndex>63</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
@@ -564,6 +575,17 @@
             <KFM>Art/Terrain/Resources/Pumpkin/Wheat.kfm</KFM>
             <Button>,Art/colonization_atlas_professions_bonus.dds,2,12</Button>
             <FontButtonIndex>45</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_SQUASH</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Squash/Lemqes.nif</NIF>
+            <KFM>Art/Terrain/Resources/Squash/Lemqes.kfm</KFM>
+            <Button>Art/interface/buttons/Sqash_Button.dds</Button>
+            <FontButtonIndex>71</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -684,7 +706,7 @@
             <NIF>Art/Terrain/Resources/Pig/Pig_FX.nif</NIF>
             <KFM>Art/Terrain/Resources/Pig/Pig.kfm</KFM>
             <Button>Art/interface/buttons/Pig.dds</Button>
-            <FontButtonIndex>63</FontButtonIndex>
+            <FontButtonIndex>64</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -803,9 +825,20 @@
             <fScale>1.0</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/apple/banana.nif</NIF>
-            <KFM/>
+            <KFM>Art/Terrain/Resources/apple/banana.kfm</KFM>
             <Button>Art/Interface/Buttons/Apples_Button.dds</Button>
             <FontButtonIndex>50</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_CHERRIES</Type>
+            <fScale>1.6</fScale>
+            <fInterfaceScale>1.3</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Cherries/Cherry_Trees.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/Cherries_Button.dds</Button>
+            <FontButtonIndex>69</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -836,7 +869,7 @@
             <fScale>1.0</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/BeeHive/Banana.nif</NIF>
-            <KFM/>
+            <KFM>Art/Terrain/Resources/BeeHive/Banana.kfm</KFM>
             <Button>Art/Interface/Buttons/Bee_Hive_Button.dds</Button>
             <FontButtonIndex>53</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
@@ -858,7 +891,7 @@
             <fScale>1.0</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Berries/lemqes.nif</NIF>
-            <KFM/>
+            <KFM>Art/Terrain/Resources/Berries/lemqes.kfm</KFM>
             <Button>Art/Interface/Buttons/Tundra_Berries_Button.dds</Button>
             <FontButtonIndex>55</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
@@ -894,6 +927,127 @@
             <KFM/>
             <Button>Art/interface/buttons/Mushrooms.dds</Button>
             <FontButtonIndex>60</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_AVOCADO</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Avocado/Avocado.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/Avocado_Button.dds</Button>
+            <FontButtonIndex>73</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_PASSION_FRUIT</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Passion_Fruit/Passion_Fruit.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/Passion_Fruit_Button.dds</Button>
+            <FontButtonIndex>65</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_GUAVA</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Guava/Guava.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/Guava_Button.dds</Button>
+            <FontButtonIndex>66</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_PINE_APPLE</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Pine_Apple/banana.nif</NIF>
+            <KFM>Art/Terrain/Resources/Pine_Apple/banana.kfm</KFM>
+            <Button>Art/interface/buttons/Pine_Apple_Button.dds</Button>
+            <FontButtonIndex>67</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_PAPAYA</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Papaya/papaya.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/Papaya_Button.dds</Button>
+            <FontButtonIndex>68</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_CHERRIES</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Cherries/Cherry_Trees.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/Cherries_Button.dds</Button>
+            <FontButtonIndex>69</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_BEANS</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Beans/cnq.nif</NIF>
+            <KFM>Art/Terrain/Resources/Beans/cnq.kfm</KFM>
+            <Button>Art/interface/buttons/Beans_Button.dds</Button>
+            <FontButtonIndex>72</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_PRICKLY_PEAR</Type>
+            <fScale>1.1</fScale>
+            <fInterfaceScale>1.1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/pricklypear/baradye.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/Prickly_Pear_Button.dds</Button>
+            <FontButtonIndex>74</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_HUCKLE_BERRIES</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Huckle_Berries/dye.nif</NIF>
+            <KFM>Art/Terrain/Resources/Huckle_Berries/dye.kfm</KFM>
+            <Button>Art/interface/buttons/Huckle_Berry_Button.dds</Button>
+            <FontButtonIndex>75</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_BLUE_BERRIES</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Blue_Berries/dye.nif</NIF>
+            <KFM>Art/Terrain/Resources/Blue_Berries/dye.kfm</KFM>
+            <Button>Art/interface/buttons/Blue_Berry_Button.dds</Button>
+            <FontButtonIndex>76</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_CRAN_BERRIES</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Cran_Berries/wheat.nif</NIF>
+            <KFM>Art/Terrain/Resources/Cran_Berries/wheat.kfm</KFM>
+            <Button>Art/interface/buttons/Cran_Berry_Button.dds</Button>
+            <FontButtonIndex>77</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
