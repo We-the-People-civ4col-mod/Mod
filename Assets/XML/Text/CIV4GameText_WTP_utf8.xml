@@ -39,13 +39,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_FREE_TURNS_WORKED</Tag>
-        <English>Working to gain freedom for %d1_turns [NUM1:turn:turns]</English>
-        <German>Arbeitet für seine Freiheit seit %d1_turns [NUM1:Runde:Runden]</German>
+        <English>Working for %d1_turns [NUM1:turn:turns] to gain freedom</English>
+        <German>Arbeitet seit %d1_turns [NUM1:Runde:Runden] für seine Freiheit</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED</Tag>
-        <English>Working to become an [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] for : %d1_turns [NUM1:turn:turns]</English>
-        <German>Arbeitet darauf hin [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden seit %d1_turns [NUM1:Runde:Runden]</German>
+        <English>Working for %d1_turns [NUM1:turn:turns] to become an [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]</English>
+        <German>Arbeitet seit %d1_turns [NUM1:Runde:Runden] darauf hin, [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP</Tag>
