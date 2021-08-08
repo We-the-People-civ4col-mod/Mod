@@ -1392,9 +1392,9 @@
         </BonusInfo>
         <BonusInfo>
             <Type>BONUS_CACTUS</Type>
-            <Description>TXT_KEY_BONUS_CACTUS</Description>
-            <Civilopedia>TXT_KEY_BONUS_CACTUS_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_CACTUS</ArtDefineTag>
+            <Description>TXT_KEY_BONUS_PRICKLY_PEAR</Description>
+            <Civilopedia>TXT_KEY_BONUS_PRICKLY_PEAR_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_PRICKLY_PEAR</ArtDefineTag>
             <BuildingType>BUILDING_BONUS_CACTUS</BuildingType>
             <YieldChanges>
                 <YieldIntegerPair>

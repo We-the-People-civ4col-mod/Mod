@@ -13023,7 +13023,7 @@
             <Description>TXT_KEY_BUILDING_BONUS_CACTUS</Description>
             <Civilopedia>TXT_KEY_BUILDING_BONUS_CACTUS_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_BUILDING_BONUS_CACTUS_STRATEGY</Strategy>
-            <ArtDefineTag>ART_DEF_BUILDING_BONUS_CACTUS</ArtDefineTag>
+            <ArtDefineTag>ART_DEF_BUILDING_BONUS_PRICKLY_PEAR</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
             <FreeStartEra>NONE</FreeStartEra>

@@ -1014,7 +1014,7 @@
             <NIF>Art/Terrain/Resources/pricklypear/baradye.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/Prickly_Pear_Button.dds</Button>
-            <FontButtonIndex>74</FontButtonIndex>
+            <FontButtonIndex>49</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
