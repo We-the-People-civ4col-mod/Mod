@@ -1116,7 +1116,9 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			{
 				YieldTypes eLoopYield = (YieldTypes)i;
 
-				if ((eLoopYield != YIELD_FOOD) && (eLoopYield != YIELD_LUMBER) && (eLoopYield != YIELD_STONE) && GC.getYieldInfo(eLoopYield).isCargo())
+				// ray, making special storage capacity rules for Yields XML configurable
+				if (!GC.getYieldInfo(eLoopYield).isIgnoredForStorageCapacity() && GC.getYieldInfo(eLoopYield).isCargo())
+				// if ((eLoopYield != YIELD_FOOD) && (eLoopYield != YIELD_LUMBER) && (eLoopYield != YIELD_STONE) && GC.getYieldInfo(eLoopYield).isCargo())
 				{
 					int iExcess = getYieldStored(eLoopYield) - iCityCapacity;
 					if (iExcess > 0)

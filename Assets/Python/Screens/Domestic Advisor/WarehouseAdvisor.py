@@ -36,13 +36,13 @@ class WarehouseAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 			iProducedYield = pCity.calculateNetYield(iYield)
 			aiProducedYields[iYield] += iProducedYield
 
-			if iYield == YieldTypes.YIELD_FOOD or iYield == YieldTypes.YIELD_LUMBER or iYield == YieldTypes.YIELD_STONE or not gc.getYieldInfo(iYield).isCargo(): # R&R, ray, small fix for Display
+			if gc.getYieldInfo(iYield).isIgnoredForStorageCapacity() or not gc.getYieldInfo(iYield).isCargo(): # R&R, ray, small fix for Display
 				continue
 			iNetYield += pCity.getYieldStored(iYield)
 
 		iProdusedYield = 0
 		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
-			if iYield != YieldTypes.YIELD_FOOD and iYield != YieldTypes.YIELD_LUMBER and iYield != YieldTypes.YIELD_STONE and gc.getYieldInfo(iYield).isCargo(): # R&R, ray, small fix for Display
+			if gc.getYieldInfo(iYield).isCargo() and not gc.getYieldInfo(iYield).isIgnoredForStorageCapacity(): # R&R, ray, small fix for Display
 				iProdusedYield += aiProducedYields[iYield]
 
 		szText = u"<font=2><color=" ## R&R, Robert Surcouf,  Domestic Advisor Screen

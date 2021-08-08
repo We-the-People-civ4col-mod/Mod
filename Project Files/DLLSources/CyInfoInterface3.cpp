@@ -50,6 +50,7 @@ void CyInfoPythonInterface3()
 		.def("getPowerValue", &CvYieldInfo::getPowerValue, "int ()")
 		.def("getAssetValue", &CvYieldInfo::getAssetValue, "int ()")
 		.def("isCargo", &CvYieldInfo::isCargo, "bool ()")
+		.def("isIgnoredForStorageCapacity", &CvYieldInfo::isIgnoredForStorageCapacity, "bool ()") // ray, making special storage capacity rules for Yields XML configurable
 		;
 	python::class_<CvTerrainInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvTerrainInfo")
 		.def("getMovementCost", &CvTerrainInfo::getMovementCost, "int ()")

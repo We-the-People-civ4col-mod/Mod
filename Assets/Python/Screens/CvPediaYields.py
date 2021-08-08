@@ -89,6 +89,12 @@ class CvPediaYields:
 
 		screen.addListBoxGFC(panelName, "", self.X_STATS_PANE, self.Y_STATS_PANE, self.W_STATS_PANE, self.H_STATS_PANE, TableStyles.TABLE_STYLE_EMPTY)
 		screen.enableSelect(panelName, False)
+		
+		# ray, making special storage capacity rules for Yields XML configurable
+		if(yieldInfo.isIgnoredForStorageCapacity()):
+		#if(yieldInfo.isCargo()):
+			szTextIsIgnoredInStorageCapacity = localText.getText("TXT_KEY_YIELD_IS_IGNORED_IN_STORAGE_CAPACITY", ())
+			screen.appendListBoxString(panelName, szTextIsIgnoredInStorageCapacity, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 
 		for i in range(gc.getNumBuildingInfos()):
 			buildingInfo = gc.getBuildingInfo(i)

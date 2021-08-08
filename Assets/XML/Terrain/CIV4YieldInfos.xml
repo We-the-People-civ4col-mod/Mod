@@ -11,6 +11,7 @@
             <Description>TXT_KEY_YIELD_FOOD</Description>
             <Civilopedia>TXT_KEY_YIELD_FOOD_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIgnoredIForStorageCapacity>1</bIgnoredIForStorageCapacity>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -51,6 +52,7 @@
             <Description>TXT_KEY_YIELD_LUMBER</Description>
             <Civilopedia>TXT_KEY_YIELD_LUMBER_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIgnoredIForStorageCapacity>1</bIgnoredIForStorageCapacity>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -91,6 +93,7 @@
             <Description>TXT_KEY_YIELD_STONE</Description>
             <Civilopedia>TXT_KEY_YIELD_STONE_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
+            <bIgnoredIForStorageCapacity>1</bIgnoredIForStorageCapacity>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>

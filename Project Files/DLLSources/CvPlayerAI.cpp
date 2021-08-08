@@ -1608,7 +1608,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 					int bestOutput = 0;
 					for (int i = 0; i < NUM_YIELD_TYPES; i++)
 					{
-						//ignore food and lumber and stone
+						//ignore food because checked and lumber and stone because City Center Plot
 						if ((i != YIELD_FOOD) && (i != YIELD_LUMBER) && (i != YIELD_STONE))
 						{
 							int natureYield = pPlot->calculateNatureYield((YieldTypes) i, getTeam(), false);

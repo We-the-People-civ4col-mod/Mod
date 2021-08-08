@@ -966,7 +966,9 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 				for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 				{
 					YieldTypes eYield = (YieldTypes) iYield;
-					if (GC.getYieldInfo((YieldTypes) iYield).isCargo() && (eYield != YIELD_FOOD) && (eYield != YIELD_LUMBER) && (eYield != YIELD_STONE))
+					// ray, making special storage capacity rules for Yields XML configurable
+					if (GC.getYieldInfo((YieldTypes)iYield).isCargo() && !GC.getYieldInfo((YieldTypes)iYield).isIgnoredForStorageCapacity())
+					// if (GC.getYieldInfo((YieldTypes) iYield).isCargo() && (eYield != YIELD_FOOD) && (eYield != YIELD_LUMBER) && (eYield != YIELD_STONE))
 					{
 						bool bNeverSell = (pPopupReturn->getCheckboxBitfield(iYield) & 0x01);
 						int iLevel = pPopupReturn->getSpinnerWidgetValue(iYield);
@@ -3252,7 +3254,9 @@ bool CvDLLButtonPopup::launchCustomHousePopup(CvPopup* pPopup, CvPopupInfo &info
 		// R&R, ray, finishing Custom House Screen
 		if (kYield.isCargo())
 		{
-			if (eYield == YIELD_FOOD || eYield == YIELD_LUMBER || eYield == YIELD_STONE)
+			// ray, making special storage capacity rules for Yields XML configurable
+			// if (eYield == YIELD_FOOD || eYield == YIELD_LUMBER || eYield == YIELD_STONE)
+			if (GC.getYieldInfo(eYield).isIgnoredForStorageCapacity())
 			{
 				// Write never sell
 				gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);

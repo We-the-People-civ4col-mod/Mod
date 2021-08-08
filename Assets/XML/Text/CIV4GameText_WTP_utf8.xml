@@ -97,4 +97,9 @@
         <English>[COLOR_UNIT_TEXT]%s1_Unit_Name[COLOR_REVERT]</English>
         <German>[COLOR_UNIT_TEXT]%s1_Unit_Name[COLOR_REVERT]</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_IS_IGNORED_IN_STORAGE_CAPACITY</Tag>
+        <English>[ICON_BULLET]Not counted for [COLOR_UNIT_TEXT]Total Storage used in City[COLOR_REVERT]</English>
+        <German>[ICON_BULLET]Zählt nicht zum [COLOR_UNIT_TEXT]verbrauchten Lagerraum der Stadt[COLOR_REVERT]</German>
+    </TEXT>
 </Civ4GameText>

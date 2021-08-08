@@ -4040,10 +4040,13 @@ int CvUnit::getMaxLoadYieldAmount(YieldTypes eYield) const
 			if (GC.getNEW_CAPACITY() && !isHuman() && (pCity->getTotalYieldStored() > pCity->getMaxYieldCapacity() / 2))
 			//if (GC.getNEW_CAPACITY() && !isHuman())
 			{
+				// ray, making special storage capacity rules for Yields XML configurable
 				int iCargoYields = 0;
-				for (YieldTypes eLoopYield = YIELD_HEMP; eLoopYield < NUM_YIELD_TYPES; ++eLoopYield)// without YIELD_FOOD, YIELD_LUMBER, YIELD_STONE
+				// for (YieldTypes eLoopYield = YIELD_HEMP; eLoopYield < NUM_YIELD_TYPES; ++eLoopYield)// without YIELD_FOOD, YIELD_LUMBER, YIELD_STONE
+				for (YieldTypes eLoopYield = YIELD_FOOD; eLoopYield < NUM_YIELD_TYPES; ++eLoopYield)
 				{
-					if ((pCity->getYieldStored(eLoopYield) > 0) && (GC.getYieldInfo(eLoopYield).isCargo()))
+					// ray, making special storage capacity rules for Yields XML configurable
+					if ((pCity->getYieldStored(eLoopYield) > 0) && (GC.getYieldInfo(eLoopYield).isCargo()) && !(GC.getYieldInfo(eLoopYield).isIgnoredForStorageCapacity()))
 						{iCargoYields++;}
 				}
 				

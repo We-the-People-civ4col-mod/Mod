@@ -2726,6 +2726,7 @@ public:
 	int getAssetValue() const;
 
 	bool isCargo() const;
+	bool isIgnoredForStorageCapacity() const; // ray, making special storage capacity rules for Yields XML configurable
 
 	bool isExportYield() const {return m_bIsExportYield;} // auto traderoute - Nightinggale
 
@@ -2784,6 +2785,7 @@ protected:
 	int m_iAssetValue;
 
 	bool m_bCargo;
+	bool m_bIgnoredIForStorageCapacity; // ray, making special storage capacity rules for Yields XML configurable
 	bool m_bIsExportYield; // auto traderoute - Nightinggale
 
 	// R&R, Androrc, Livestock Breeding

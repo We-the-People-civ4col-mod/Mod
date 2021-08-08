@@ -152,7 +152,9 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 					m_em_iCustomHouseSellThreshold.set(eYield, getYieldStored(eYield)* iGameSpeedModifier / 2);
 				}
 
-				if (eYield == YIELD_FOOD || eYield == YIELD_LUMBER || eYield == YIELD_STONE)
+				// ray, making special storage capacity rules for Yields XML configurable
+				// if (eYield == YIELD_FOOD || eYield == YIELD_LUMBER || eYield == YIELD_STONE)
+				if(GC.getYieldInfo(eYield).isIgnoredForStorageCapacity())
 				{
 					m_em_bCustomHouseNeverSell.set(eYield, true);
 				}
@@ -4670,7 +4672,9 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 	if (iChange != 0)
 	{
 //VET NewCapacity - begin 3/9
-		if ((eYield != YIELD_FOOD) && (eYield != YIELD_LUMBER) && (eYield != YIELD_STONE) && GC.getYieldInfo(eYield).isCargo())
+		// ray, making special storage capacity rules for Yields XML configurable
+		if(!GC.getYieldInfo(eYield).isIgnoredForStorageCapacity() && GC.getYieldInfo(eYield).isCargo())
+		//if ((eYield != YIELD_FOOD) && (eYield != YIELD_LUMBER) && (eYield != YIELD_STONE) && GC.getYieldInfo(eYield).isCargo())
 			{changeTotalYieldStored(iChange);}
 //VET NewCapacity - end 3/9
 		m_em_iYieldStored.set(eYield, iValue);
@@ -7014,7 +7018,9 @@ void CvCity::doYields()
 			bool bIgnoresBoycott = getIgnoresBoycott();
 			bool bHasUnlockedTradeSettings = getHasUnlockedStorageLossTradeSettings();
 
-			if (GC.getYieldInfo(eYield).isCargo() && eYield != YIELD_LUMBER && eYield != YIELD_STONE) // we do not sell YIELD_LUMBER and Stone to Overflow or Custom House
+			// ray, making special storage capacity rules for Yields XML configurable
+			if (GC.getYieldInfo(eYield).isCargo() && !GC.getYieldInfo(eYield).isIgnoredForStorageCapacity()) 
+			//if (GC.getYieldInfo(eYield).isCargo() && eYield != YIELD_LUMBER && eYield != YIELD_STONE) // we do not sell YIELD_LUMBER and Stone to Overflow or Custom House
 			{
 				//VET NewCapacity - begin 6/9 -- ray fix
 				int iExcess = 0;

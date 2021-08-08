@@ -69,6 +69,7 @@
 	</ElementType>
 	<ElementType name="Description" content="textOnly"/>
 	<ElementType name="bCargo" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bIgnoredIForStorageCapacity" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bIsExportYield" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bLivestock" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iBuyPriceLow" content="textOnly" dt:type="int"/>
@@ -110,6 +111,7 @@
 		<element type="Description"/>
 		<element type="Civilopedia"/>
 		<element type="bCargo"/>
+		<element type="bIgnoredIForStorageCapacity" minOccurs="0"/>
 		<element type="bIsExportYield" minOccurs="0"/>
 		<element type="bLivestock" minOccurs="0"/>
 		<element type="iBuyPriceLow"/>

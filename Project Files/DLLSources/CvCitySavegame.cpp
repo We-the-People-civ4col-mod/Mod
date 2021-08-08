@@ -505,9 +505,11 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_RiverPlotYield: reader.Read(m_em_iRiverPlotYield); break;
 		case CitySave_YieldRateModifier: reader.Read(m_em_iYieldRateModifier); break;
 		case CitySave_YieldStored: reader.Read(m_em_iYieldStored);
-			for(int i=3;i<NUM_YIELD_TYPES;i++)//without YIELD_FOOD, YIELD_LUMBER, YIELD_STONE
+			// ray, making special storage capacity rules for Yields XML configurable
+			// for(int i=3;i<NUM_YIELD_TYPES;i++)//without YIELD_FOOD, YIELD_LUMBER, YIELD_STONE
+			for(int i=0;i<NUM_YIELD_TYPES;i++)
 			{
-				if (GC.getYieldInfo((YieldTypes)i).isCargo())
+				if (GC.getYieldInfo((YieldTypes)i).isCargo() && !GC.getYieldInfo((YieldTypes)i).isIgnoredForStorageCapacity())
 					{m_iTotalYieldStored += m_em_iYieldStored.get((YieldTypes)i);}
 			} break;
 		case CitySave_YieldRushed: reader.Read(m_em_iYieldRushed); break;
