@@ -1999,7 +1999,7 @@
         <Tag>TXT_KEY_EVENT_TRIGGER_HORSE_DEAL</Tag>
         <English>A newly arrived immigrant bought land several miles away from [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. He dreams of becoming a rancher and breeding horses. However he does not have money left to buy the necessary livestock.</English>
         <French>Un immigrant nouvellement arrivé a acheté des terres aux alentours de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Il rêve de devenir un propriétaire de ranch et d'élever des chevaux. Cependant il ne lui reste plus beaucoup d'argent pour acheter les animaux nécessaires.</French>
-        <German>Ein kürzlich eingetroffener Einwanderer hat sich etwas Land einige Meilen von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] entfernt gekauft. Er träumt davon, ein Rancher zu werden und Pferde zu züchten. Er hat jedoch kaum noch Geld übrig, um sich die Pferde zu kaufen.</German>
+        <German>Ein kürzlich eingetroffener Einwanderer hat sich etwas Land einige Meilen von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] entfernt gekauft. Er träumt davon, ein Züchter zu werden und Pferde zu züchten. Er hat jedoch kaum noch Geld übrig, um sich die Pferde zu kaufen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FAMOUS_ACTORS</Tag>
