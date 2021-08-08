@@ -228,23 +228,23 @@
         <Tag>TXT_KEY_CIVILIZATION_CHURCH</Tag>
         <English>The Church</English>
         <French>
-            <Text>l'Eglise</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Text>L'Église</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
         </French>
         <German>
             <Text>Die Kirche</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>The Church</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Text>La Chiesa</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>The Church</Text>
-            <Gender>Male</Gender>
+            <Text>La Iglesia</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
