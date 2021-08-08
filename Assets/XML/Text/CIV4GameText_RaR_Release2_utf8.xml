@@ -97,25 +97,25 @@
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC</Tag>
         <English>(136x256 plots) Map of the Americas : faithful map with historical locations of Natives and resources</English>
         <French>(136x256 cases) Carte des Amériques : représentation fidèle, avec distribution historique des indigènes et des ressources</French>
-        <German>(136x256 Felder) Karte von Amerika : genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen</German>
+        <German>(136x256 Geländefelder) Karte von Amerika : genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC_RANDOM</Tag>
         <English>(136x256 plots) Map of the Americas : faithful map with random locations of Natives, resources and starting locations for Europeans</English>
         <French>(136x256 cases) Carte des Amériques : représentation fidèle, avec distribution aléatoire des indigènes, des ressources et des points de départs pour les européens</French>
-        <German>(136x256 Felder) Karte von Amerika : genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
+        <German>(136x256 Geländefelder) Karte von Amerika : genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE</Tag>
         <English>(68x128 plots) Map of the Americas : faithful map with historical locations of Natives and resources</English>
         <French>(68x128 cases) Carte des Amériques : représentation fidèle des Amériques, avec distribution historique des indigènes et des ressources</French>
-        <German>(68x128 Felder) Karte von Amerika : genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen</German>
+        <German>(68x128 Geländefelder) Karte von Amerika : genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE_RANDOM</Tag>
         <English>(68x128 plots) Map of the Americas : faithful map with random locations of Natives, resources and starting locations for Europeans</English>
         <French>(68x128 cases) Carte des Amériques : représentation fidèle des Amériques, avec distribution aléatoire des indigènes, des ressources et des points de départs pour les européens</French>
-        <German>(68x128 Felder) Karte von Amerika : genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
+        <German>(68x128 Geländefelder) Karte von Amerika : genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_SCRIPT_ANEWWORLD_DESCR</Tag>
@@ -161,7 +161,7 @@
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_3_FIELDS</Tag>
         <English>3 plots : </English>
         <French>3 cases : </French>
-        <German>3 Felder : </German>
+        <German>3 Geländefelder : </German>
         <Italian>3 fields : </Italian>
         <Spanish>3 fields : </Spanish>
     </TEXT>
@@ -169,7 +169,7 @@
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_4_FIELDS</Tag>
         <English>4 plots (default) : </English>
         <French>4 cases (par défaut) : </French>
-        <German>4 Felder (Standard) : </German>
+        <German>4 Geländefelder (Standard) : </German>
         <Italian>4 fields (default) : </Italian>
         <Spanish>4 fields (default) : </Spanish>
     </TEXT>
@@ -177,7 +177,7 @@
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_6_FIELDS</Tag>
         <English>6 plots : </English>
         <French>6 cases : </French>
-        <German>6 Felder : </German>
+        <German>6 Geländefelder : </German>
         <Italian>6 fields : </Italian>
         <Spanish>6 fields : </Spanish>
     </TEXT>
@@ -185,7 +185,7 @@
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_8_FIELDS</Tag>
         <English>8 plots : </English>
         <French>8 cases : </French>
-        <German>8 Felder : </German>
+        <German>8 Geländefelder : </German>
         <Italian>8 fields : </Italian>
         <Spanish>8 fields : </Spanish>
     </TEXT>
