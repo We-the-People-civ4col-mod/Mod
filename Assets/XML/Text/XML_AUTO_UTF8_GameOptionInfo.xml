@@ -68,7 +68,7 @@
         <Tag>TXT_KEY_GAMEOPTION_LEAD_ANY_CIV</Tag>
         <English>Unrestricted Leaders</English>
         <French>Pas de restriction de dirigeants</French>
-        <German>Beliebige Staatsoberhäupter</German>
+        <German>Freie Wahl des Anführers</German>
         <Italian>Leader senza limitazioni</Italian>
         <Spanish>Líderes sin restricciones</Spanish>
     </TEXT>
@@ -76,7 +76,7 @@
         <Tag>TXT_KEY_GAMEOPTION_LEAD_ANY_CIV_HELP</Tag>
         <English>Players may lead any Nation with any Leader.</English>
         <French>Les joueurs peuvent mener n'importe quelle nation avec n'importe quel chef.</French>
-        <German>Die Spieler können eine beliebige Nation als beliebiges Staatsoberhaupt anführen.</German>
+        <German>Die Spieler können eine jede Nation mit jedem Anführer anführen.</German>
         <Italian>I giocatori possono condurre una nazione qualsiasi con un qualsiasi leader.</Italian>
         <Spanish>Los jugadores pueden dirigir cualquier nación con cualquier líder.</Spanish>
     </TEXT>
