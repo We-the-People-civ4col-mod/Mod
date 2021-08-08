@@ -9514,7 +9514,7 @@ m_iWaterTextureIndex(-1),
 m_iPowerValue(0),
 m_iAssetValue(0),
 m_bCargo(false),
-m_bIgnoredIForStorageCapacity(false), // ray, making special storage capacity rules for Yields XML configurable
+m_bIgnoredForStorageCapacity(false), // ray, making special storage capacity rules for Yields XML configurable
 m_bIsExportYield(false), // auto traderoute - Nightinggale
 // R&R, Androrc,  Livestock Breeding
 m_bLivestock(false)
@@ -9716,7 +9716,7 @@ bool CvYieldInfo::isCargo() const
 // ray, making special storage capacity rules for Yields XML configurable - START
 bool CvYieldInfo::isIgnoredForStorageCapacity() const
 {
-	return m_bIgnoredIForStorageCapacity;
+	return m_bIgnoredForStorageCapacity;
 }
 // ray, making special storage capacity rules for Yields XML configurable - END
 // R&R, Androrc, Livestock Breeding
@@ -9779,7 +9779,7 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iPowerValue, "iPower");
 	pXML->GetChildXmlValByName(&m_iAssetValue, "iAsset");
 	pXML->GetChildXmlValByName(&m_bCargo, "bCargo");
-	pXML->GetChildXmlValByName(&m_bIgnoredIForStorageCapacity, "bIgnoredIForStorageCapacity"); // ray, making special storage capacity rules for Yields XML configurable
+	pXML->GetChildXmlValByName(&m_bIgnoredForStorageCapacity, "bIgnoredForStorageCapacity"); // ray, making special storage capacity rules for Yields XML configurable
 
 	pXML->GetChildXmlValByName(&m_bIsExportYield, "bIsExportYield"); // auto traderoute - Nightinggale
 	// R&R, Androrc, Livestock Breeding

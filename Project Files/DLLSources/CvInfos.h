@@ -2785,7 +2785,7 @@ protected:
 	int m_iAssetValue;
 
 	bool m_bCargo;
-	bool m_bIgnoredIForStorageCapacity; // ray, making special storage capacity rules for Yields XML configurable
+	bool m_bIgnoredForStorageCapacity; // ray, making special storage capacity rules for Yields XML configurable
 	bool m_bIsExportYield; // auto traderoute - Nightinggale
 
 	// R&R, Androrc, Livestock Breeding
