@@ -634,6 +634,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_AVOCADO</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Avocado/Avocado.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/Avocado_Button.dds</Button>
+            <FontButtonIndex>73</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_MELON</Type>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
@@ -982,17 +993,6 @@
             <KFM/>
             <Button>Art/interface/buttons/Mushrooms.dds</Button>
             <FontButtonIndex>60</FontButtonIndex>
-            <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
-        </BonusArtInfo>
-        <BonusArtInfo>
-            <Type>ART_DEF_BONUS_AVOCADO</Type>
-            <fScale>1.0</fScale>
-            <fInterfaceScale>0.7</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Avocado/Avocado.nif</NIF>
-            <KFM/>
-            <Button>Art/interface/buttons/Avocado_Button.dds</Button>
-            <FontButtonIndex>73</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
