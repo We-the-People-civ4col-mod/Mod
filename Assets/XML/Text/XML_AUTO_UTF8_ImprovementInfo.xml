@@ -903,7 +903,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_TRAPPER_HUT</Tag>
-        <English>Trapperhut</English>
+        <English>Trapper Hut</English>
         <French>
             <Text>Hutte du trappeur</Text>
             <Gender>Female</Gender>
@@ -929,7 +929,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_TRAPPER_HUT_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Trapper huts[COLOR_REVERT] can be built in [LINK=FEATURE_FOREST]forests[\LINK], [LINK=FEATURE_LIGHT_FOREST]light forests[\LINK] and [LINK=FEATURE_FOREST_TUNDRA]taiga[\LINK], on [LINK=TERRAIN_TUNDRA]tundra[\LINK] and [LINK=TERRAIN_SNOW]permafrost[\LINK] terrain, as well as tiles with the [LINK=BONUS_BISON]bison[\LINK] bonus. They boost the production of [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_PREMIUM_FUR]premium fur[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Hunting wild animals like deer and beaver is a lonely job far from civilization and cities. During the trapping season hunters and trappers live in their trappers' huts, leaving only to sell their furs.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Chasser et trapper les animaux sauvages comme les cerfs ou les visons a été pendant longtemp un travail solitaire loin de la civilization et des grandes villes. Pendant les mois de chasse, les chasseurs et trappeurs vivaient dans des huttes qu'ils ne quittaient que pour vendre leurs fourrures.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Jagdhütten[COLOR_REVERT] können in [LINK=FEATURE_FOREST]Wäldern[\LINK], im [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] und der [LINK=FEATURE_FOREST_TUNDRA]Taiga[\LINK], sogar auf [LINK=TERRAIN_TUNDRA]Tundra[\LINK] und [LINK=TERRAIN_SNOW]Permafrost[\LINK] sowie auf Feldern mit der Bonusressource [LINK=BONUS_BISON]Büffel[\LINK] angelegt werden. Sie steigern die Ausbeute an [LINK=YIELD_FUR]Pelzen[\LINK] und [LINK=YIELD_PREMIUM_FUR]Hochwertigen Pelzen[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Die Jagd auf Rehe, Biber und andere Tiere fand meist weit abseits der Städte statt. Während der Jagdsaison lebten die Jäger und Trapper oft monatelang in einsamen Jagdhütten und verliessen diese nur zum Verkauf ihrer Waren in den Städten.</German>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Jagdhütten[COLOR_REVERT] können in [LINK=FEATURE_FOREST]Wäldern[\LINK], im [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] und der [LINK=FEATURE_FOREST_TUNDRA]Taiga[\LINK], sogar auf [LINK=TERRAIN_TUNDRA]Tundra[\LINK] und [LINK=TERRAIN_SNOW]Permafrost[\LINK] sowie auf Geländefeldern mit der Bonusressource [LINK=BONUS_BISON]Büffel[\LINK] angelegt werden. Sie steigern die Ausbeute an [LINK=YIELD_FUR]Pelzen[\LINK] und [LINK=YIELD_PREMIUM_FUR]Hochwertigen Pelzen[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Die Jagd auf Rehe, Biber und andere Tiere fand meist weit abseits der Städte statt. Während der Jagdsaison lebten die Jäger und Trapper oft monatelang in einsamen Jagdhütten und verliessen diese nur zum Verkauf ihrer Waren in den Städten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_TRAPPER_CAMP</Tag>
