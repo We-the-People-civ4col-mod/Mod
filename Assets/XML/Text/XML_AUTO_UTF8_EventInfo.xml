@@ -290,19 +290,19 @@
         <Tag>TXT_KEY_EVENT_CATTLETHIEF_1</Tag>
         <English>Let them go in peace with enough animals to feed their tribe, provided they let their chief know of our goodwill.</English>
         <French>Laissez les partir avec suffisamment d'animaux pour nourrir leur tribu, pour autant que leur chef soit prévenu de notre bienveillance.</French>
-        <German>Gebt Ihnen genug Vieh um ihr Dorf zu erhalten und lasst sie in Frieden ziehen. Dies sei ein Zeichen unseres guten Willens.</German>
+        <German>Gebt ihnen genug Vieh, damit sie ihr Dorf ernähren können, und laßt sie dann in Frieden ziehen. Sie sollen ihren Häuptling wissen lassen, daß dies ein Zeichen unseres guten Willens ist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CATTLETHIEF_2</Tag>
         <English>Drive a hard bargain to let them take the cattle in exchange for land and gold.</English>
         <French>Conduisez des négociations pour qu'ils donnent des terres et de l'or en échange du bétail.</French>
-        <German>Gebt ihnen das Vieh, doch lasst sie einen hohen Preis if Form von Gold und Land zahlen.</German>
+        <German>Gebt ihnen das Vieh, doch laßt sie einen hohen Preis in Form von Gold und Land zahlen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CATTLETHIEF_3</Tag>
         <English>Put them in irons and set them to work the fields! We can spare no charity for these thieving savages.</English>
         <French>Mettez les au fer et faites les travailler dans les champs ! Nous ne pouvons pas nous permettre de faire charité envers des voleurs sauvages.</French>
-        <German>Legt den Dieben Eisen an uns lasst sie für diesen Frevel auf den Feldern Arbeiten!</German>
+        <German>Legt den Dieben Eisen an und laßt sie für diesen Frevel auf den Feldern arbeiten!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CATTLE_AND_SHEEP_1</Tag>
@@ -344,7 +344,7 @@
         <Tag>TXT_KEY_EVENT_COCA_PROBLEM_2</Tag>
         <English>Leave us alone with such stupidities. One day you might even tell us that alcohol is dangerous as well.</English>
         <French>Ce ne sont que des rumeurs. Quoi d'autres après ça ? Que l'alcool serait également dangereux pour la santé ? Cessons avec ces balivernes.</French>
-        <German>Lasst uns mit solch einem Unsinn in Ruhe. Eines Tages werde ihr uns noch erzählen, dass Alkohol ebenfalls gefährlich sei.</German>
+        <German>Laßt uns mit solch einem Unsinn in Ruhe. Eines Tages werdet ihr uns noch erzählen, daß selbst Alkohol gefährlich sei.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COCA_TRADE_1</Tag>
@@ -362,13 +362,13 @@
         <Tag>TXT_KEY_EVENT_COMMANDEERED_1</Tag>
         <English>We are duty bound to answer. The ship is theirs.</English>
         <French>C'est notre devoir que de les aider. Le navire leur appartient.</French>
-        <German>Unsere Pflicht gebietet uns zu unterstützen. Sie sollen das Schiff haben.</German>
+        <German>Unsere Pflicht gegenüber der Krone gebietet es uns, wie gewünscht ein Schiff zur Verfügung zu stellen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COMMANDEERED_2</Tag>
         <English>Let them build their own ships! We cannot foresake the defense of our shores.</English>
         <French>Qu'ils construisent leurs propres bateaux ! Nous ne pouvons pas mettre en danger nos côtes.</French>
-        <German>Sie sollen gefälligst ihre eigenen Schiffe nutze. Unsere Küsten dürfen nicht ungeschützt bleiben.</German>
+        <German>Die Royal Navy ist groß genug, um selbst ein Schiff abzustellen. Unsere Küsten dürfen nicht ungeschützt bleiben!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COMMANDEERED_RETURN</Tag>
