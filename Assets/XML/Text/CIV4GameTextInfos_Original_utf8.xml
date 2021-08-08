@@ -94,14 +94,6 @@
         <Spanish>%s1 (el jugador %d2) se está uniendo a la partida. Un momento...</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>SYSTEM_END_TURN</Tag>
-        <English>Press [COLOR:140:255:40:255]&lt; ENTER &gt;[COLOR_REVERT] to end turn.</English>
-        <French>Appuyez sur [COLOR:140:255:40:255]&lt; ENTRER &gt;[COLOR_REVERT] pour finir votre tour...</French>
-        <German>Runde beenden mit [COLOR:140:255:40:255]&lt; EINGABETASTE &gt;[COLOR_REVERT] ...</German>
-        <Italian>Premi [COLOR:140:255:40:255]&lt; INVIO &gt;[COLOR_REVERT] per terminare il turno...</Italian>
-        <Spanish>Pulsar [COLOR:140:255:40:255]&lt; INTRO &gt;[COLOR_REVERT] para terminar el turno...</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>SYSTEM_WAITING_FOR_YOU</Tag>
         <English>Waiting for YOU to finish turn.</English>
         <French>En attente de VOTRE fin de tour...</French>
@@ -191,7 +183,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_AUTOMATE_BUILD</Tag>
-        <English>Build Improvements (Automated)</English>
+        <English>Build improvements (automated)</English>
         <French>Construire aménagements (auto)</French>
         <German>Modernisierungen bauen (automatisch)</German>
         <Italian>Costruire i miglioramenti (automaticamente)</Italian>
@@ -199,7 +191,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_AUTOMATE_EXPLORE</Tag>
-        <English>Explore (Automated)</English>
+        <English>Explore (automated)</English>
         <French>Explorer (auto)</French>
         <German>Erkunden (automatisch)</German>
         <Italian>Esplora (automaticamente)</Italian>
@@ -247,7 +239,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_DEFENSE_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% Tile Defense</English>
+        <English>[ICON_BULLET]%D1%% tile defense</English>
         <French>[ICON_BULLET]Défense de la case %D1%%</French>
         <German>[ICON_BULLET]%D1%% Geländefeld-Verteidigung</German>
         <Italian>[ICON_BULLET]%D1%% difensiva della casella</Italian>
@@ -463,7 +455,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_MOVE_TEXT</Tag>
-        <English>[ICON_BULLET]%D1_Change Movement Range</English>
+        <English>[ICON_BULLET]%D1_Change movement range</English>
         <French>[ICON_BULLET]Rayon d'action %D1_Change</French>
         <German>[ICON_BULLET]%D1_Change Fortbewegungsradius</German>
         <Italian>[ICON_BULLET]%D1_Change raggio di movimento</Italian>
@@ -1471,27 +1463,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WIDGET_CREATE_GROUP</Tag>
-        <English>Creates a Group</English>
-        <French>Créer un groupe</French>
-        <German>Bildet eine Gruppe</German>
-        <Italian>Crea un gruppo</Italian>
-        <Spanish>Crea un grupo</Spanish>
+        <English>[COLOR_HIGHLIGHT_TEXT]Creates a Group[COLOR_REVERT]</English>
+        <French>[COLOR_HIGHLIGHT_TEXT]Créer un groupe[COLOR_REVERT]</French>
+        <German>[COLOR_HIGHLIGHT_TEXT]Bildet eine Gruppe[COLOR_REVERT]</German>
+        <Italian>[COLOR_HIGHLIGHT_TEXT]Crea un gruppo[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_HIGHLIGHT_TEXT]Crea un grupo[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WIDGET_DELETE_GROUP</Tag>
-        <English>Separates the Group</English>
-        <French>Diviser le groupe</French>
-        <German>Löst eine Gruppe auf</German>
-        <Italian>Separa il gruppo</Italian>
-        <Spanish>Separa el grupo</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_WIDGET_END_TURN</Tag>
-        <English>End Turn [COLOR:140:255:40:255]&lt; SHIFT-ENTER &gt;[COLOR_REVERT]</English>
-        <French>Fin du tour [COLOR:140:255:40:255]&lt; MAJ-ENTREE &gt;[COLOR_REVERT]</French>
-        <German>Runde beenden [COLOR:140:255:40:255]&lt; UMSCHALTEN-EINGABETASTE &gt;[COLOR_REVERT]</German>
-        <Italian>Fine turno [COLOR:140:255:40:255]&lt; MAIUSC-INVIO &gt;[COLOR_REVERT]</Italian>
-        <Spanish>Terminar turno [COLOR:140:255:40:255]&lt; MAYÚS-INTRO &gt;[COLOR_REVERT]</Spanish>
+        <English>[COLOR_HIGHLIGHT_TEXT]Separates the Group[COLOR_REVERT]</English>
+        <French>[COLOR_HIGHLIGHT_TEXT]Diviser le groupe[COLOR_REVERT]</French>
+        <German>[COLOR_HIGHLIGHT_TEXT]Löst eine Gruppe auf[COLOR_REVERT]</German>
+        <Italian>[COLOR_HIGHLIGHT_TEXT]Separa il gruppo[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_HIGHLIGHT_TEXT]Separa el grupo[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FINANCIAL_ADVISOR_TREASURY</Tag>
@@ -1881,7 +1865,7 @@
         <Tag>TXT_KEY_PITBOSS_LEADER</Tag>
         <English>Leader</English>
         <French>Chef</French>
-        <German>Staatsoberhaupt</German>
+        <German>Anführer</German>
         <Italian>Leader</Italian>
         <Spanish>Líder</Spanish>
     </TEXT>
@@ -3118,6 +3102,14 @@
         <Spanish>Colopedia</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_WIDGET_HELP</Tag>
+        <English>Colopedia</English>
+        <French>Colopédie</French>
+        <German>Colopädie</German>
+        <Italian>Colopedia</Italian>
+        <Spanish>Colopedia</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_OPTIONS</Tag>
         <English>Options</English>
         <French>Options</French>
@@ -3873,7 +3865,7 @@
         <Tag>TXT_KEY_MENU_LEADER_NAME</Tag>
         <English>Leader Name :</English>
         <French>Nom du dirigeant :</French>
-        <German>Staatsoberhaupt :</German>
+        <German>Name des Anführers :</German>
         <Italian>Nome leader :</Italian>
         <Spanish>Nombre del líder :</Spanish>
     </TEXT>
@@ -4617,7 +4609,7 @@
         <Tag>TXT_KEY_MAIN_MENU_RANDOM_DESC</Tag>
         <English>Your leader will be chosen at random.</English>
         <French>Votre dirigeant sera choisi aléatoirement.</French>
-        <German>Das Staatsoberhaupt wird zufällig ausgewählt.</German>
+        <German>Der Anführer wird zufällig ausgewählt.</German>
         <Italian>Il tuo leader verrà scelto casualmente.</Italian>
         <Spanish>Tu líder se elegirá al azar.</Spanish>
     </TEXT>
@@ -4697,7 +4689,7 @@
         <Tag>TXT_KEY_MENU_LEADER_TYPE</Tag>
         <English>Leader Type :</English>
         <French>Type de dirigeant :</French>
-        <German>Staatsoberhaupt :</German>
+        <German>Typ des Anführers :</German>
         <Italian>Tipo di leader :</Italian>
         <Spanish>Tipo de líder :</Spanish>
     </TEXT>
@@ -6929,7 +6921,7 @@
         <Tag>TXT_KEY_CIV_SELECT_RANDOM_LEADER</Tag>
         <English>The Leader will be chosen randomly.</English>
         <French>Le dirigeant sera choisi aléatoirement.</French>
-        <German>Das Staatsoberhaupt wird zufällig ausgewählt.</German>
+        <German>Der Anführer wird zufällig ausgewählt.</German>
         <Italian>Il leader verrà scelto casualmente.</Italian>
         <Spanish>El líder se elegirá al azar.</Spanish>
     </TEXT>
@@ -8937,7 +8929,7 @@
         <Tag>TXT_KEY_LEADERS</Tag>
         <English>Leaders</English>
         <French>Dirigeants</French>
-        <German>Staatsoberhäupter</German>
+        <German>Anführer</German>
         <Italian>Leader</Italian>
         <Spanish>Líderes</Spanish>
     </TEXT>
@@ -9289,7 +9281,7 @@
         <Tag>TXT_KEY_DOUBLE_SPEED_TRAIT</Tag>
         <English>[ICON_BULLET]Double production speed for %s1_trait leaders</English>
         <French>[ICON_BULLET]Vitesse de production doublée pour les dirigeants avec le trait %s1_trait</French>
-        <German>[ICON_BULLET]Doppelte Produktionsgeschwindigkeit für %s1:2_trait Staatsoberhaupt</German>
+        <German>[ICON_BULLET]Doppelte Produktionsgeschwindigkeit für %s1:2_trait Anführer</German>
         <Italian>[ICON_BULLET]Doppia velocità produttiva con un leader %s1_trait</Italian>
         <Spanish>[ICON_BULLET]Doble velocidad de producción con líder %s1:1_trait</Spanish>
     </TEXT>
@@ -9297,7 +9289,7 @@
         <Tag>TXT_KEY_PRODUCTION_MODIFIER_TRAIT</Tag>
         <English>[ICON_BULLET]%D1_change%% production speed for %s2_trait leaders</English>
         <French>[ICON_BULLET]Vitesse de production de %D1_change%% pour les dirigeants avec le trait %s2_trait</French>
-        <German>[ICON_BULLET]%D1_change%% Produktionsgeschwindigkeit für %s2:2_trait Staatsoberhaupt</German>
+        <German>[ICON_BULLET]%D1_change%% Produktionsgeschwindigkeit für %s2:2_trait Anführer</German>
         <Italian>[ICON_BULLET]%D1_change%% di velocità produttiva con un leader %s2_trait</Italian>
         <Spanish>[ICON_BULLET]%D1_change%% de velocidad de producción con líder %s2:1_trait</Spanish>
     </TEXT>
