@@ -387,7 +387,7 @@
         <Tag>TXT_KEY_UNIT_NO_REVEAL_MAP</Tag>
         <English>[ICON_BULLET]Cannot explore unrevealed tiles.</English>
         <French>[ICON_BULLET]Ne peut pas se déplacer dans les territoires inexplorés.</French>
-        <German>[ICON_BULLET]Kann keine unentdeckten Felder aufdecken.</German>
+        <German>[ICON_BULLET]Kann keine unentdeckten Geländefelder aufdecken.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_NO_REVEAL_GOODY</Tag>
@@ -987,8 +987,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ANIMAL_REWARD</Tag>
-        <English>[COLOR_POSITIVE_TEXT]Successful hunting! [COLOR_REVERT]Once cleaned and dressed the %s1_animal you killed is worth %d2[ICON_GOLD]!</English>
-        <French>Les restes de l'animal tué (%s1_animal) vous rapportent %d2[ICON_GOLD] !</French>
+        <English>[COLOR_POSITIVE_TEXT]Successful hunting! [COLOR_REVERT]Once cleaned and dressed the [COLOR_UNIT_TEXT]%s1_animal[COLOR_REVERT] you killed is worth %d2[ICON_GOLD]!</English>
+        <French>Les restes de l'animal tué ([COLOR_UNIT_TEXT]%s1_animal[COLOR_REVERT]) vous rapportent %d2[ICON_GOLD] !</French>
         <German>[COLOR_POSITIVE_TEXT]Erfolgreiche Jagd! [COLOR_REVERT]Die Körperteile [NUM1:des:der] getöteten [COLOR_UNIT_TEXT]%s1_animal[COLOR_REVERT] sind %d2[ICON_GOLD] wert!</German>
     </TEXT>
     <TEXT>
@@ -1348,7 +1348,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_CULTURE_RANGE</Tag>
         <English>[ICON_BULLET]Influences plots within a distance of %d1_Num</English>
         <French>[ICON_BULLET]Influences des parcelles dans un rayon de %d1_Num</French>
-        <German>[ICON_BULLET]Beeinflusst Felder im Radius von %d1_Num</German>
+        <German>[ICON_BULLET]Beeinflusst Geländefelder im Radius von %d1_Num</German>
         <Italian>[ICON_BULLET]Trame influenze entro una distanza di %d1_Num</Italian>
         <Spanish>[ICON_BULLET]Influye en las parcelas dentro de una distancia de %d1_Num</Spanish>
     </TEXT>
