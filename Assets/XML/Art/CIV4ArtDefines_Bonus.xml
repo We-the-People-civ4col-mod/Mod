@@ -568,6 +568,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_PAPAYA</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Papaya/papaya.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/Papaya_Button.dds</Button>
+            <FontButtonIndex>68</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_TURKEYS</Type>
             <fScale>1.5</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
@@ -982,17 +993,6 @@
             <KFM/>
             <Button>Art/interface/buttons/Guava_Button.dds</Button>
             <FontButtonIndex>66</FontButtonIndex>
-            <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
-        </BonusArtInfo>
-        <BonusArtInfo>
-            <Type>ART_DEF_BONUS_PAPAYA</Type>
-            <fScale>1.0</fScale>
-            <fInterfaceScale>0.7</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Papaya/papaya.nif</NIF>
-            <KFM/>
-            <Button>Art/interface/buttons/Papaya_Button.dds</Button>
-            <FontButtonIndex>68</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
