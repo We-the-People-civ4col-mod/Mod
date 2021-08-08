@@ -1476,7 +1476,7 @@
         </English>
         <French>
             <Text>Artillerie lourde:Artilleries lourdes</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
@@ -1485,13 +1485,13 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Heavy Artillery:Heavy Artilleries</Text>
-            <Gender>Male</Gender>
+            <Text>Artiglieria pesante:Artiglierie pesanti</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Heavy Artillery:Heavy Artilleries</Text>
-            <Gender>Male</Gender>
+            <Text>Artillería pesada:Artillerías pesadas</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
@@ -1780,7 +1780,7 @@
         </English>
         <French>
             <Text>Artillerie légère:Artilleries légères</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
@@ -1789,13 +1789,13 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Light Artillery:Light Artilleries</Text>
-            <Gender>Male</Gender>
+            <Text>Artiglieria leggera:Artiglierie leggere</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Light Artillery:Light Artilleries</Text>
-            <Gender>Male</Gender>
+            <Text>Artillería ligeras:Artillería ligeras</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
@@ -2300,17 +2300,17 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Erfahrener Rancher:Erfahrene Rancher</Text>
+            <Text>Erfahrener Züchter:Erfahrene Züchter</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Mastro allevatore:Mastri allevatori</Text>
+            <Text>Allevatore esperto:Allevatori esperti</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Maestro ranchero:Maestros rancheros</Text>
+            <Text>Ranchero experto:Rancheros expertos</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
