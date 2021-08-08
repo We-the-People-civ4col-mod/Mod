@@ -1741,6 +1741,34 @@
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ananasbaum[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_PASSION_FRUIT</Tag>
+        <English>Passion Fruit Tree</English>
+        <German>
+            <Text>Passionsfruchtbaum</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_PASSION_FRUIT_PEDIA</Tag>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Passion Fruit Tree[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Passionsfruchtbaum[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_GUAVA</Tag>
+        <English>Guava Tree</English>
+        <German>
+            <Text>Guavabaum</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_GUAVA_PEDIA</Tag>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Guava Trees[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Guavabaum[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BONUS_PAPAYA</Tag>
         <English>Papaya Tree</English>
         <German>

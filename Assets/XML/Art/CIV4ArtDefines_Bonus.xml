@@ -150,6 +150,28 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_PASSION_FRUIT</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Passion_Fruit/Passion_Fruit.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/Passion_Fruit_Button.dds</Button>
+            <FontButtonIndex>65</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_GUAVA</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Guava/Guava.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/Guava_Button.dds</Button>
+            <FontButtonIndex>66</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_CORN</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
@@ -971,28 +993,6 @@
             <KFM/>
             <Button>Art/interface/buttons/Avocado_Button.dds</Button>
             <FontButtonIndex>73</FontButtonIndex>
-            <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
-        </BonusArtInfo>
-        <BonusArtInfo>
-            <Type>ART_DEF_BONUS_PASSION_FRUIT</Type>
-            <fScale>1.0</fScale>
-            <fInterfaceScale>0.7</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Passion_Fruit/Passion_Fruit.nif</NIF>
-            <KFM/>
-            <Button>Art/interface/buttons/Passion_Fruit_Button.dds</Button>
-            <FontButtonIndex>65</FontButtonIndex>
-            <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
-        </BonusArtInfo>
-        <BonusArtInfo>
-            <Type>ART_DEF_BONUS_GUAVA</Type>
-            <fScale>1.0</fScale>
-            <fInterfaceScale>0.7</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Guava/Guava.nif</NIF>
-            <KFM/>
-            <Button>Art/interface/buttons/Guava_Button.dds</Button>
-            <FontButtonIndex>66</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
