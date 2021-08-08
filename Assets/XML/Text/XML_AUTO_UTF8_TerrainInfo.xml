@@ -280,9 +280,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_SNOW_PEDIA</Tag>
-        <English>Ice is water frozen into the solid state. Usually ice is the phase known as ice Ih, which is the most abundant of the varying solid phases on the Earth's surface. It can appear transparent or opaque bluish-white colour, depending on the presence of impurities or air inclusions. The addition of other materials such as soil may further alter the appearance.</English>
+        <English>Permafrost is the part of the ground that is permanently frozen, at least for two years, and is therefore impermeable. Its formation, persistence or disappearance, and its thickness are very closely linked to climate change. This is why permafrost is studied as an indicator of global warming by a worldwide network of researchers using soundings, temperature measurements and satellite monitoring.</English>
         <French>Le permafrost, ou pergélisol, désigne la partie d'un sol gelé en permanence, au moins pendant deux ans, et de ce fait imperméable. Ses formations, persistance ou disparition, et son épaisseur sont très étroitement liées aux changements climatiques. C'est pourquoi le permafrost est étudié en tant qu'indicateur du réchauffement climatique par un réseau mondial de chercheurs s'appuyant sur des sondages, des mesures de température et un suivi satellitaire.</French>
-        <German>Als Eis bezeichnet man gefrorenes und somit festes Wasser. Ein beachtlicher Teil der Trinkwasservorräte der Erde liegt in Eisform vor.</German>
+        <German>Permafrost – auch Dauerfrostboden oder Permafrostboden – ist Boden, Sediment oder Gestein, welches in unterschiedlicher Mächtigkeit und Tiefe unter der Erdoberfläche mindestens zwei Jahre ununterbrochen Temperaturen unter dem Gefrierpunkt aufweist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_TUNDRA</Tag>
