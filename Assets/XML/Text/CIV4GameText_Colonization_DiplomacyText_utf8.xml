@@ -441,7 +441,7 @@
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_13</Tag>
         <English>Hello, [CT_NAME], leader of mighty [CT_CIV_SHORT].</English>
         <French>Bonjour, [CT_NAME] des puissants [CT_CIV_SHORT].</French>
-        <German>Ich grüße Euch, [CT_NAME], Staatsoberhaupt des mächtigen Volkes von [CT_CIV_SHORT].</German>
+        <German>Ich grüße Euch, [CT_NAME], Anführer des mächtigen Volkes von [CT_CIV_SHORT].</German>
         <Italian>Salve, [CT_NAME], leader del potente Impero [CT_CIV_SHORT:4].</Italian>
         <Spanish>Hola, [CT_NAME], líder de la poderosa tierra de [CT_CIV_SHORT].</Spanish>
     </TEXT>
@@ -5027,7 +5027,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_LIVE_AMONG_NATIVES_1</Tag>
-        <English>Like children you appear to us, unknowing and innocent. Be our guest in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] for a while and we will teach you to become a [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT].</English>
+        <English>Like children you appear to us, unknowing and innocent. Be our guest in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] for a while and we will teach you to become an [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT].</English>
         <French>Vous nous apparaissez comme des enfants, ignorants et innocents. Soyez notre invité pour un moment dans la [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] et nous vous apprendrons à devenir une [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT].</French>
         <German>Wie Kinder erscheint Ihr uns, unwissend und unschuldig. Seid eine Weile unser Gast in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] und wir unterrichten Euch, damit Ihr ein [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT] werdet.</German>
         <Italian>Come bambini ci apparite, ignoranti e innocenti. Sii nostro ospite per un po' in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] e ti insegneremo a diventare una [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT].</Italian>
