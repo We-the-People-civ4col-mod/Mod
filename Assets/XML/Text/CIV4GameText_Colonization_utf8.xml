@@ -9,7 +9,7 @@
         <Tag>TXT_KEY_CIV_SELECT_RANDOM_CIV</Tag>
         <English>The Nation and Leader will be chosen randomly.</English>
         <French>La nation et son chef seront choisis aléatoirement.</French>
-        <German>Nation und Staatsoberhaupt werden zufällig ausgewählt.</German>
+        <German>Nation und Anführer werden zufällig ausgewählt.</German>
         <Italian>Leader e nazione verranno scelti casualmente.</Italian>
         <Spanish>La nación y el líder se elegirán al azar.</Spanish>
     </TEXT>
@@ -2872,14 +2872,6 @@
         <German>Kartenmarkierungen</German>
         <Italian>Linee e segnali</Italian>
         <Spanish>Líneas y señales</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MAIN_MENU</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Open Main Menu[COLOR_REVERT] [COLOR:140:255:40:255]&lt; Esc &gt;[COLOR_REVERT]</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]Ouvrir le menu principal[COLOR_REVERT] [COLOR:140:255:40:255]&lt; Echap &gt;[COLOR_REVERT]</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Hauptmenü öffnen[COLOR_REVERT] [COLOR:140:255:40:255]&lt; Esc &gt;[COLOR_REVERT]</German>
-        <Italian>[COLOR_HIGHLIGHT_TEXT]Apri menu principale[COLOR_REVERT] [COLOR:140:255:40:255]&lt; Esc &gt;[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_HIGHLIGHT_TEXT]Abrir menú principal[COLOR_REVERT] [COLOR:140:255:40:255]&lt; Esc &gt;[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_IN_QUEUE</Tag>
