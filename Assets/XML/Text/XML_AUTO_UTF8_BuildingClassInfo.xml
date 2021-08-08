@@ -2,7 +2,7 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_ARMORY</Tag>
-        <English>Armory</English>
+        <English>Armoury</English>
         <French>
             <Text>Armurerie:Armureries</Text>
             <Gender>Female</Gender>
@@ -536,11 +536,15 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Fort</German>
+        <German>
+            <Text>Fort:Forts</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0:1</Plural>
+        </German>
         <Italian>
-            <Text>Forte</Text>
+            <Text>Forte:Forti</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
         </Italian>
         <Spanish>
             <Text>Fuerte:Fuertes</Text>
