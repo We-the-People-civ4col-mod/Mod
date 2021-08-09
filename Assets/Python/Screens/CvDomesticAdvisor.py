@@ -499,18 +499,22 @@ class CvDomesticAdvisor:
 				for iYield in range(YieldTypes.NUM_YIELD_TYPES):
 					iNetYield = pLoopCity.getYieldStored(iYield)
 					szText = unicode(iNetYield)
+					# ray, making special storage capacity rules for Yields XML configurable
+					bIgnoredForStorageCapacity = gc.getYieldInfo(iYield).isIgnoredForStorageCapacity()
 					if iNetYield == 0:
 						szText = ""
 					## R&R, Robert Surcouf,  Domestic Advisor Screen - Start
 					if (iYield < self.MAX_YIELDS_IN_A_PAGE ):
-						if (pLoopCity.calculateNetYield(iYield) * 5 + pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity() or iYield == YieldTypes.YIELD_FOOD or iYield == YieldTypes.YIELD_LUMBER or iYield == YieldTypes.YIELD_STONE):  # R&R, ray, small fix for Display
+						#if (pLoopCity.calculateNetYield(iYield) * 5 + pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity() or iYield == YieldTypes.YIELD_FOOD or iYield == YieldTypes.YIELD_LUMBER or iYield == YieldTypes.YIELD_STONE):  # R&R, ray, small fix for Display
+						if ((pLoopCity.calculateNetYield(iYield) * 5 + pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity()) or bIgnoredForStorageCapacity):
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][0] + "ListBackground", iYield + 3, i, u"<font=1><color=0,255,255>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 						elif (pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity()):			
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][0] + "ListBackground", iYield + 3, i, u"<font=1><color=255,255,0>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 						else:
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][0] + "ListBackground", iYield + 3, i, u"<font=1><color=255,0,0>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 					else:
-						if (pLoopCity.calculateNetYield(iYield) * 5 + pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity() or iYield == YieldTypes.YIELD_FOOD or iYield == YieldTypes.YIELD_LUMBER or iYield == YieldTypes.YIELD_STONE):  # R&R, ray, small fix for Display
+						#if (pLoopCity.calculateNetYield(iYield) * 5 + pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity() or iYield == YieldTypes.YIELD_FOOD or iYield == YieldTypes.YIELD_LUMBER or iYield == YieldTypes.YIELD_STONE):  # R&R, ray, small fix for Display
+						if ((pLoopCity.calculateNetYield(iYield) * 5 + pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity()) or bIgnoredForStorageCapacity):
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][1] + "ListBackground", iYield - self.MAX_YIELDS_IN_A_PAGE + 3, i, u"<font=1><color=0,255,255>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 						elif (pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity()):			
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][1] + "ListBackground", iYield - self.MAX_YIELDS_IN_A_PAGE + 3, i, u"<font=1><color=255,255,0>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
