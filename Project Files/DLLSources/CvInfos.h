@@ -1261,6 +1261,7 @@ public:
 	DllExport int getFreeStartEra() const;
 	int getMaxStartEra() const;
 	int getFreePromotion() const;
+	int getRouteTypeCreated() const; //ray, removing hardcoded Roads for Buildings
 	int getAIWeight() const;
 	int getHurryCostModifier() const;
 	int getAdvancedStartCost() const;
@@ -1364,6 +1365,7 @@ protected:
 	int m_iFreeStartEra;
 	int m_iMaxStartEra;
 	int m_iFreePromotion;
+	int m_iRouteTypeCreated; //ray, removing hardcoded Roads for Buildings
 	int m_iAIWeight;
 	int m_iHurryCostModifier;
 	int m_iAdvancedStartCost;

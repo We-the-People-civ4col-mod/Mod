@@ -2610,30 +2610,17 @@ void CvCity::hurry(HurryTypes eHurry)
 void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 {
 	FAssertMsg(iChange == 1 || iChange == -1, "The value of iChange has to be either 1 or -1.")
-
-	//RWL Railroads and Trainstations
-	if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == 26) // easiest way to identify Trainstation
+	//ray, removing hardcoded Roads for Buildings - START
+	int iRoutTypeCreated = GC.getBuildingInfo(eBuilding).getRouteTypeCreated();
+	if (iRoutTypeCreated > 0) // 
 	{
-		//WTP fixing small bugs in City Founding an Roads
 		CvPlot* pPlot = plot();
-		if (pPlot->getRouteType() < 2)
+		if (pPlot->getRouteType() < iRoutTypeCreated)
 		{
-			pPlot->setRouteType((RouteTypes)2);
+			pPlot->setRouteType((RouteTypes)iRoutTypeCreated);
 		}
 	}
-	//RWL END Railroads and Trainstations
-
-	// R&R, ray, Plastered Road
-	if (GC.getBuildingInfo(eBuilding).getAICitySize() == 4) // easiest way to identify Townhall
-	{
-		//WTP fixing small bugs in City Founding an Roads
-		CvPlot* pPlot = plot();
-		if (pPlot->getRouteType() < 1)
-		{
-			pPlot->setRouteType((RouteTypes)1);
-		}
-	}
-	// R&R, ray, Plastered Road -END
+	//ray, removing hardcoded Roads for Buildings - END
 
 	if (GC.getBuildingInfo(eBuilding).getFreePromotion() != NO_PROMOTION)
 	{

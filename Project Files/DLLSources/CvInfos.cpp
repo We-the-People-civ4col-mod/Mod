@@ -4873,6 +4873,7 @@ m_iVictoryPrereq(NO_VICTORY),
 m_iFreeStartEra(NO_ERA),
 m_iMaxStartEra(NO_ERA),
 m_iFreePromotion(NO_PROMOTION),
+m_iRouteTypeCreated(NO_ROUTE), //ray, removing hardcoded Roads for Buildings
 m_iAIWeight(0),
 m_iHurryCostModifier(0),
 m_iAdvancedStartCost(0),
@@ -4968,6 +4969,12 @@ int CvBuildingInfo::getFreePromotion() const
 {
 	return m_iFreePromotion;
 }
+//ray, removing hardcoded Roads for Buildings - START
+int CvBuildingInfo::getRouteTypeCreated() const
+{
+	return m_iRouteTypeCreated;
+}
+//ray, removing hardcoded Roads for Buildings - END
 int CvBuildingInfo::getAIWeight() const
 {
 	return m_iAIWeight;
@@ -5314,6 +5321,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iFreeStartEra);
 	stream->Read(&m_iMaxStartEra);
 	stream->Read(&m_iFreePromotion);
+	stream->Read(&m_iRouteTypeCreated); //ray, removing hardcoded Roads for Buildings
 	stream->Read(&m_iAIWeight);
 	stream->Read(&m_iHurryCostModifier);
 	stream->Read(&m_iAdvancedStartCost);
@@ -5408,6 +5416,7 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iFreeStartEra);
 	stream->Write(m_iMaxStartEra);
 	stream->Write(m_iFreePromotion);
+	stream->Write(m_iRouteTypeCreated); //ray, removing hardcoded Roads for Buildings
 	stream->Write(m_iAIWeight);
 	stream->Write(m_iHurryCostModifier);
 	stream->Write(m_iAdvancedStartCost);
@@ -5503,6 +5512,10 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiProductionTraits, "ProductionTraits", GC.getNumTraitInfos(), 0);
 	pXML->GetChildXmlValByName(szTextVal, "FreePromotion");
 	m_iFreePromotion = pXML->FindInInfoClass(szTextVal);
+	//ray, removing hardcoded Roads for Buildings - START
+	pXML->GetChildXmlValByName(szTextVal, "RouteTypeCreated");
+	m_iRouteTypeCreated = pXML->FindInInfoClass(szTextVal);
+	//ray, removing hardcoded Roads for Buildings - END
 	pXML->GetChildXmlValByName(&m_iDomesticMarketModifier, "iDomesticMarketModifier");
 	pXML->GetChildXmlValByName(&m_iEntertainmentGoldModifier, "iEntertainmentGoldModifier"); // ray, Balancing of Entertainment Buildings in XML
 	readXML(m_info_YieldDemands, "YieldDemands");

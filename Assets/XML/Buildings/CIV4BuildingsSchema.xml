@@ -80,6 +80,7 @@
 	<ElementType name="iSpecialBuildingPriority" content="textOnly" dt:type="int"/>
 	<ElementType name="fVisibilityPriority" content="textOnly"/>
 	<ElementType name="FreePromotion" content="textOnly"/>
+	<ElementType name="RouteTypeCreated" content="textOnly"/>
 	<ElementType name="iYield" content="textOnly" dt:type="int"/>
 	<ElementType name="YieldType" content="textOnly"/>
 	<ElementType name="iModifier" content="textOnly" dt:type="int"/>
@@ -244,6 +245,7 @@
 		<element type="MaxStartEra"/>
 		<element type="ProductionTraits"/>
 		<element type="FreePromotion"/>
+		<element type="RouteTypeCreated" minOccurs="0"/>
 		<element type="bGraphicalOnly"/>
 		<element type="bWorksWater"/>
 		<element type="bWater"/>
