@@ -244,7 +244,7 @@
             <NIF>Art/Terrain/Resources/toucan/toucan.nif</NIF>
             <KFM/>
             <Button>Art/Interface/Buttons/toucan.dds</Button>
-            <FontButtonIndex>57</FontButtonIndex>
+            <FontButtonIndex>74</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -321,7 +321,7 @@
             <NIF>Art\terrain\resources\booby\booby.nif</NIF>
             <KFM/>
             <Button>Art/Interface/Buttons/booby.dds</Button>
-            <FontButtonIndex>16</FontButtonIndex>
+            <FontButtonIndex>81</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -332,7 +332,7 @@
             <NIF>Art/Terrain/Resources/gull/gull.nif</NIF>
             <KFM/>
             <Button>Art/Interface/Buttons/gull.dds</Button>
-            <FontButtonIndex>16</FontButtonIndex>
+            <FontButtonIndex>84</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
@@ -343,7 +343,7 @@
             <NIF>Art/Terrain/Resources/duck/duck.nif</NIF>
             <KFM/>
             <Button>Art/Interface/Buttons/duck.dds</Button>
-            <FontButtonIndex>16</FontButtonIndex>
+            <FontButtonIndex>82</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
@@ -354,7 +354,7 @@
             <NIF>Art/Terrain/Resources/loon/loon.nif</NIF>
             <KFM/>
             <Button>Art/Interface/Buttons/loon.dds</Button>
-            <FontButtonIndex>16</FontButtonIndex>
+            <FontButtonIndex>86</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
@@ -365,7 +365,7 @@
             <NIF>Art/Terrain/Resources/Canada_Goose/goose.nif</NIF>
             <KFM/>
             <Button>Art/Interface/Buttons/Canada_Goose.dds</Button>
-            <FontButtonIndex>16</FontButtonIndex>
+            <FontButtonIndex>83</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
@@ -860,7 +860,7 @@
             <NIF>Art/Terrain/Resources/vulture/vulture.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/vulture.dds</Button>
-            <FontButtonIndex>16</FontButtonIndex>
+            <FontButtonIndex>87</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -871,7 +871,7 @@
             <NIF>Art/Terrain/Resources/iguana/iguana.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/iguana.dds</Button>
-            <FontButtonIndex>16</FontButtonIndex>
+            <FontButtonIndex>85</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -888,7 +888,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_CHERRIES</Type>
-            <fScale>1.6</fScale>
+            <fScale>4.0</fScale>
             <fInterfaceScale>1.3</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Cherries/Cherry_Trees.nif</NIF>
             <KFM/>
