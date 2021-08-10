@@ -953,6 +953,39 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_HUCKLE_BERRIES</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Huckle_Berries/dye.nif</NIF>
+            <KFM>Art/Terrain/Resources/Huckle_Berries/dye.kfm</KFM>
+            <Button>Art/interface/buttons/Huckle_Berry_Button.dds</Button>
+            <FontButtonIndex>75</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_BLUE_BERRIES</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Blue_Berries/dye.nif</NIF>
+            <KFM>Art/Terrain/Resources/Blue_Berries/dye.kfm</KFM>
+            <Button>Art/interface/buttons/Blue_Berry_Button.dds</Button>
+            <FontButtonIndex>76</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_CRAN_BERRIES</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Cran_Berries/wheat.nif</NIF>
+            <KFM>Art/Terrain/Resources/Cran_Berries/wheat.kfm</KFM>
+            <Button>Art/interface/buttons/Cran_Berry_Button.dds</Button>
+            <FontButtonIndex>77</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_SHRIMP</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
@@ -1015,39 +1048,6 @@
             <KFM/>
             <Button>Art/interface/buttons/Prickly_Pear_Button.dds</Button>
             <FontButtonIndex>49</FontButtonIndex>
-            <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
-        </BonusArtInfo>
-        <BonusArtInfo>
-            <Type>ART_DEF_BONUS_HUCKLE_BERRIES</Type>
-            <fScale>1.0</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Huckle_Berries/dye.nif</NIF>
-            <KFM>Art/Terrain/Resources/Huckle_Berries/dye.kfm</KFM>
-            <Button>Art/interface/buttons/Huckle_Berry_Button.dds</Button>
-            <FontButtonIndex>75</FontButtonIndex>
-            <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
-        </BonusArtInfo>
-        <BonusArtInfo>
-            <Type>ART_DEF_BONUS_BLUE_BERRIES</Type>
-            <fScale>1.0</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Blue_Berries/dye.nif</NIF>
-            <KFM>Art/Terrain/Resources/Blue_Berries/dye.kfm</KFM>
-            <Button>Art/interface/buttons/Blue_Berry_Button.dds</Button>
-            <FontButtonIndex>76</FontButtonIndex>
-            <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
-        </BonusArtInfo>
-        <BonusArtInfo>
-            <Type>ART_DEF_BONUS_CRAN_BERRIES</Type>
-            <fScale>1.0</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Cran_Berries/wheat.nif</NIF>
-            <KFM>Art/Terrain/Resources/Cran_Berries/wheat.kfm</KFM>
-            <Button>Art/interface/buttons/Cran_Berry_Button.dds</Button>
-            <FontButtonIndex>77</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
