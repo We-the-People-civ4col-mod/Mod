@@ -766,6 +766,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_CHICKEN</Type>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Chickens/Chickens.nif</NIF>
+            <KFM>Art/Terrain/Resources/sheep_CIV4/sheep.kfm</KFM>
+            <Button>Art/interface/buttons/Chicken_Button.dds</Button>
+            <FontButtonIndex>16</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_SHEEP</Type>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
