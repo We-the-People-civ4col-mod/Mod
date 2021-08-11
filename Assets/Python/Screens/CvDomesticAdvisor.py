@@ -1081,7 +1081,7 @@ class CvDomesticAdvisor:
 			iMax = gc.getUserSettings().getDebugMaxGameFont() - 8483 + 1
 			if iMax <= 0:
 				# UserSettings didn't request a specific max. Use the lenght assumed by the game
-				iMax = FontSymbols.MAX_NUM_SYMBOLS + CyGame().getSymbolID(FontSymbols.HAPPY_CHAR) - 8483 + 10
+				iMax = self.maxNumGameFontID() - 8483 + 5
 			for iLine in range(iMax):
 				iID = iLine + 8483
 				screen.appendTableRow(szStateName)
@@ -1176,6 +1176,36 @@ class CvDomesticAdvisor:
 
 		
 		return None
+	
+	def maxNumGameFontID(self):
+		iMax = FontSymbols.MAX_NUM_SYMBOLS + CyGame().getSymbolID(FontSymbols.HAPPY_CHAR) + 5
+		
+		for iYieldIndex in range(gc.getNumYieldInfos()):
+			infoPointer = gc.getYieldInfo(iYieldIndex)
+			if infoPointer.getChar() > iMax:
+				iMax = infoPointer.getChar()
+		
+		for iBuildingIndex in range(gc.getNumSpecialBuildingInfos()):
+			infoPointer = gc.getSpecialBuildingInfo(iBuildingIndex)
+			if infoPointer.getChar() > iMax:
+				iMax = infoPointer.getChar()
+		
+		for iBonusIndex in range(gc.getNumBonusInfos()):
+			infoPointer = gc.getBonusInfo(iBonusIndex)
+			if infoPointer.getChar() > iMax:
+				iMax = infoPointer.getChar()
+			
+		for iFatherIndex in range(gc.getNumFatherPointInfos()):
+			infoPointer = gc.getFatherPointInfo(iFatherIndex)
+			if infoPointer.getChar() > iMax:
+				iMax = infoPointer.getChar()
+
+		for iCiv in range(gc.getNumCivilizationInfos()):
+			infoPointer = gc.getCivilizationInfo(iCiv)
+			if infoPointer.getMissionaryChar() > iMax:
+				iMax = infoPointer.getMissionaryChar()
+		return iMax
+		
 	
 	def createTable(self, szName):
 		self.getScreen().addTableControlGFC( szName, 7, (self.nScreenWidth - self.nTableWidth) / 2, 60, self.nTableWidth, self.nTableHeight, True, False, self.iCityButtonSize, self.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )

@@ -225,9 +225,15 @@ void CvGlobals::setupGameFontChars()
 		++iCurSymbolID;
 	} while (iCurSymbolID % iPadAmount != 0);
 
+	--iCurSymbolID; // fixes off by one issue. Is this the right solution? 
+
+	int bonusBaseID = iCurSymbolID;
+
 	for (BonusTypes eBonus = FIRST_BONUS; eBonus < NUM_BONUS_TYPES; ++eBonus)
 	{
-		getInfo(eBonus).setChar(iCurSymbolID);
+		// Bonus icon order is defined in bonus art. The "read" index is calculated like this in BTS.
+		int bonusID = bonusBaseID + getInfo(eBonus).getArtInfo()->getFontButtonIndex();
+		getInfo(eBonus).setChar(bonusID);
 		++iCurSymbolID;
 	}
 
