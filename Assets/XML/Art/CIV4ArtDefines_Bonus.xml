@@ -23,7 +23,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Fur/Fur.nif</NIF>
             <KFM>Art/Terrain/Resources/Fur/Fur.kfm</KFM>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Atlas.dds,1,13</Button>
+            <Button>Art/interface/buttons/Beaver_Button.dds</Button>
             <FontButtonIndex>21</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -199,7 +199,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Deer/Deer.nif</NIF>
             <KFM>Art/Terrain/Resources/Deer/Deer.kfm</KFM>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Atlas.dds,1,15</Button>
+            <Button>Art/Interface/Buttons/Stag_Button.dds</Button>
             <FontButtonIndex>14</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -300,6 +300,39 @@
             <KFM/>
             <Button>Art/Interface/Buttons/moose.dds</Button>
             <FontButtonIndex>80</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_BIG_HORN</Type>
+            <fScale>14</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/big_horn_sheep/mouflon.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/big_horn_sheep.dds</Button>
+            <FontButtonIndex>88</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_IBEX</Type>
+            <fScale>14</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <NIF>Art\terrain\resources\ibex\ibex.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/ibex.dds</Button>
+            <FontButtonIndex>89</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_MUSK_OX</Type>
+            <fScale>14</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/muskox/muskox.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/muskox.dds</Button>
+            <FontButtonIndex>90</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -430,7 +463,7 @@
             <fInterfaceScale>0.7</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Bison/cow_fx2.nif</NIF>
             <KFM>Art/Terrain/Resources/Bison/Cow.kfm</KFM>
-            <Button>,Art/colonization_atlas_professions_bonus.dds,1,10</Button>
+            <Button>Art/interface/buttons/Bison_Button.dds</Button>
             <FontButtonIndex>39</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -562,7 +595,7 @@
             <fInterfaceScale>1.1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Horse/Horse.nif</NIF>
             <KFM>Art/Terrain/Resources/Horse/Horse.kfm</KFM>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,13</Button>
+            <Button>Art/interface/buttons/Horse_Button.dds</Button>
             <FontButtonIndex>3</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -705,7 +738,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Sea_Otter/Fur.nif</NIF>
             <KFM>Art/Terrain/Resources/Sea_Otter/Fur.kfm</KFM>
-            <Button>,Art/colonization_atlas_professions_bonus.dds,4,13</Button>
+            <Button>Art/Interface/Buttons/Sea_Otter_Button.dds</Button>
             <FontButtonIndex>32</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>1</bRefractionCastor>
@@ -749,7 +782,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/cow/cow_fx.nif</NIF>
             <KFM>Art/Terrain/Resources/cow/cow.kfm</KFM>
-            <Button>,Art/colonization_atlas_professions_bonus.dds,7,12</Button>
+            <Button>Art/interface/buttons/Cow_Button.dds</Button>
             <FontButtonIndex>12</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -760,7 +793,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Pig/Pig_FX.nif</NIF>
             <KFM>Art/Terrain/Resources/Pig/Pig.kfm</KFM>
-            <Button>Art/interface/buttons/Pig.dds</Button>
+            <Button>Art/interface/buttons/Pig_Button.dds</Button>
             <FontButtonIndex>64</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -782,7 +815,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/sheep/sheep_fx.nif</NIF>
             <KFM>Art/Terrain/Resources/sheep/sheep.kfm</KFM>
-            <Button>,Art/colonization_atlas_professions_bonus.dds,2,13</Button>
+            <Button>Art/interface/buttons/Sheep_Button.dds</Button>
             <FontButtonIndex>18</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
