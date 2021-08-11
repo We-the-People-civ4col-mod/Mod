@@ -420,7 +420,7 @@
             <NIF>Art/Terrain/Resources/waterhole/Oase.nif</NIF>
             <KFM>Art/Terrain/Resources/waterhole/Oase.kfm</KFM>
             <Button>Art/Interface/Buttons/waterhole.dds</Button>
-            <FontButtonIndex>42</FontButtonIndex>
+            <FontButtonIndex>92</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
@@ -882,7 +882,7 @@
             <NIF>Art/Terrain/Resources/giant_tree/giant_tree.nif</NIF>
             <KFM/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,3,14</Button>
-            <FontButtonIndex>25</FontButtonIndex>
+            <FontButtonIndex>91</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
