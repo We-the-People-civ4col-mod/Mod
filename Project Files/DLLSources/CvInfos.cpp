@@ -15752,6 +15752,16 @@ std::string CvMainMenuInfo::getScene() const
 }
 std::string CvMainMenuInfo::getSoundtrack() const
 {
+	/// GameFont XML control - start - Nightinggale
+	static bool bGameFontSet = false;
+	if (!bGameFontSet)
+	{
+		// setup GameFont, but only the first time the main menu is reached
+		bGameFontSet = true;
+		GC.setupGameFontChars();
+	}
+	/// GameFont XML control - end - Nightinggale
+
 	return m_szSoundtrack;
 }
 std::string CvMainMenuInfo::getLoading() const

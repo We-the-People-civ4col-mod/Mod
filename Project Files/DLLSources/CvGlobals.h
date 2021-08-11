@@ -856,6 +856,10 @@ public:
 
 	void postXMLLoad(bool bFirst);
 
+	/// GameFont XML control - start - Nightinggale
+	void setupGameFontChars();
+	/// GameFont XML control - end - Nightinggale
+
 	DllExport float getCAMERA_MIN_YAW();
 	DllExport float getCAMERA_MAX_YAW();
 	DllExport float getCAMERA_FAR_CLIP_Z_HEIGHT();

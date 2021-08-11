@@ -202,3 +202,34 @@ void CvGlobals::postXMLLoad(bool bFirst)
 	}
 #endif
 }
+
+
+/// GameFont XML control - start - Nightinggale
+void CvGlobals::setupGameFontChars()
+{
+	// call setChar after the exe is done setting GameFont chars
+	// while the exe generally does a good job at assigning GameFont IDs, it has limitations and it can fail
+
+	// padding the exe applies between lines in the GameFont file
+	const int iPadAmount = 16;
+
+	// get the ID of the first entry after symbols
+	// ask the exe for the location of symbols as the exe might change this according to future xml changes
+	int iCurSymbolID = GC.getGameINLINE().getSymbolID(HAPPY_CHAR) // first symbol
+		+ MAX_NUM_SYMBOLS                                         // symbols offset
+		+ 5;                                                      // the 5 attitude chars aren't part of the enum
+
+	// TODO: figure out if BTS style padding is needed
+	do
+	{
+		++iCurSymbolID;
+	} while (iCurSymbolID % iPadAmount != 0);
+
+	for (BonusTypes eBonus = FIRST_BONUS; eBonus < NUM_BONUS_TYPES; ++eBonus)
+	{
+		getInfo(eBonus).setChar(iCurSymbolID);
+		++iCurSymbolID;
+	}
+
+}
+/// GameFont XML control - end - Nightinggale
