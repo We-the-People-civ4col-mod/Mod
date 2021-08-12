@@ -13,9 +13,10 @@ class EnumMapVariable
 template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE>
 class EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, STORAGE>
 {
+public:
 	void reset()
 	{
-		setALLDefault<0>();
+		setALLDefault();
 	}
 	void allocate()
 	{
@@ -26,7 +27,6 @@ class EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, S
 	}
 
 protected:
-	template<int iType>
 	void setALLDefault()
 	{
 		for (LengthType i = (LengthType)0; i < VARINFO<LengthType>::length(); ++i)
@@ -36,7 +36,9 @@ protected:
 	}
 
 	EnumMapVariable()
-	{}
+	{
+		setALLDefault();
+	}
 
 
 	STORAGE m_pArray[VARINFO<LengthType>::LENGTH];

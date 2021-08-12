@@ -239,7 +239,7 @@ sub structEnum
 	my $type = $var{$name}{type};
 	
 	$output .= "\tstatic const VariableTypes TYPE = (int)" . $var{$name}{COMPILE} . " < 128 ? VARIABLE_TYPE_CHAR : VARIABLE_TYPE_SHORT;\n";
-	$output .= "\tstatic const int LENGTH = 50;\n"; #" . $var{$name}{COMPILE} . ";\n";
+	$output .= "\tstatic const $type LENGTH = " . $var{$name}{COMPILE} . ";\n";
 	$output .= "\tstatic $type start() { return " . $var{$name}{START} . ";}\n";
 	$output .= "\tstatic $type end() { return " . $var{$name}{END} . ";}\n";
 	$output .= "\tstatic $type length() { return end() - start();}\n";
