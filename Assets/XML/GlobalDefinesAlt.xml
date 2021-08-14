@@ -727,7 +727,7 @@
 	</Define>
 	<Define>
 		<DefineName>MIN_ROUND_AFRICAN_SLAVES</DefineName>
-		<iDefineIntVal>40</iDefineIntVal>
+		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>AFRICAN_SLAVES_CHANCE</DefineName>
@@ -771,7 +771,7 @@
 	</Define>
 	<Define>
 		<DefineName>TIMER_PRISONS_CROWDED</DefineName>
-		<iDefineIntVal>20</iDefineIntVal>
+		<iDefineIntVal>30</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>TIMER_REVOLUTIONARY_NOBLE</DefineName>
@@ -799,7 +799,7 @@
 	</Define>
 	<Define>
 		<DefineName>TIMER_AFRICAN_SLAVE</DefineName>
-		<iDefineIntVal>20</iDefineIntVal>
+		<iDefineIntVal>30</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>PRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS</DefineName>
