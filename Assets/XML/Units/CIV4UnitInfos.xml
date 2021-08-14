@@ -22769,6 +22769,10 @@
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
@@ -22836,6 +22840,10 @@
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
                     <iFeatureDefense>20</iFeatureDefense>
                 </FeatureDefense>
             </FeatureDefenses>
@@ -23017,6 +23025,10 @@
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
             </FeatureDefenses>
             <UnitClassAttackMods/>
             <UnitClassDefenseMods/>
@@ -23189,6 +23201,10 @@
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
             </FeatureDefenses>
@@ -23502,6 +23518,10 @@
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
             </FeatureDefenses>
             <UnitClassAttackMods/>
             <UnitClassDefenseMods/>
@@ -23644,6 +23664,10 @@
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
                     <FeatureType>FEATURE_FOREST</FeatureType>
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
@@ -23679,6 +23703,10 @@
             <FeatureDefenses>
                 <FeatureDefense>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
                     <iFeatureDefense>20</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
@@ -24114,6 +24142,10 @@
                 </FeatureAttack>
                 <FeatureAttack>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <iFeatureAttack>-10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
                     <iFeatureAttack>-10</iFeatureAttack>
                 </FeatureAttack>
             </FeatureAttacks>
