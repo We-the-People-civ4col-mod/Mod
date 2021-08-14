@@ -236,6 +236,39 @@
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
             </FeatureStructs>
             <HotKey>KB_I</HotKey>
             <bAltDown>0</bAltDown>
@@ -279,7 +312,8 @@
                         </Yield>
                     </Yields>
                     <bRemove>1</bRemove>
-                </FeatureStruct>                <FeatureStruct>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <iTime>800</iTime>
                     <Yields>
@@ -413,7 +447,7 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
@@ -424,10 +458,21 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_MOSS</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
@@ -653,7 +698,7 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
@@ -664,10 +709,21 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_MOSS</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
@@ -851,7 +907,7 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
@@ -862,10 +918,21 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_MOSS</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
@@ -1016,7 +1083,7 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
@@ -1027,10 +1094,21 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_MOSS</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
@@ -1214,7 +1292,7 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
@@ -1225,10 +1303,21 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_MOSS</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
@@ -1412,7 +1501,7 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
@@ -1423,10 +1512,21 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_MOSS</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
@@ -1610,7 +1710,7 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
@@ -1621,10 +1721,21 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_MOSS</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
@@ -1794,6 +1905,17 @@
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
             </FeatureStructs>
             <HotKey>KB_C</HotKey>
             <bAltDown>1</bAltDown>
@@ -1895,7 +2017,7 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
@@ -1906,10 +2028,21 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_MOSS</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
@@ -2060,7 +2193,7 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
@@ -2071,10 +2204,21 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_MOSS</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
@@ -2225,7 +2369,7 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
@@ -2236,10 +2380,21 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_MOSS</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
@@ -2453,7 +2608,7 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
@@ -2464,10 +2619,21 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_MOSS</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
@@ -2607,7 +2773,7 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
@@ -2618,10 +2784,21 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_MOSS</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
@@ -2728,7 +2905,7 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
@@ -2739,10 +2916,21 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_MOSS</FeatureType>
-                    <iTime>600</iTime>
+                    <iTime>400</iTime>
                     <Yields>
                         <Yield>
                             <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
