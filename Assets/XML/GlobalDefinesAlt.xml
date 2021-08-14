@@ -743,7 +743,7 @@
 	</Define>
 	<Define>
 		<DefineName>MIN_ROUND_AFRICAN_SLAVES</DefineName>
-		<iDefineIntVal>20</iDefineIntVal>
+		<iDefineIntVal>40</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>AFRICAN_SLAVES_CHANCE</DefineName>
