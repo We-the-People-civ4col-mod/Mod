@@ -325,14 +325,42 @@
         <English>Cactus Trees</English>
         <German>
             <Text>Kaktusbäume</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_CACTUS_TREES_PEDIA</Tag>
         <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cactus Trees[COLOR_REVERT] </English>
         <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kaktusbäume[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_LICHEN</Tag>
+        <English>Lichen</English>
+        <German>
+            <Text>Flechten</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_LICHEN_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lichen[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Flechten[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_MOSS</Tag>
+        <English>Moss</English>
+        <German>
+            <Text>Moos</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_MOSS_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moss[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moos[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_STORM</Tag>

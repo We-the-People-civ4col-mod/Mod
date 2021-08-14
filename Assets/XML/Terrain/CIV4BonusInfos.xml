@@ -1208,10 +1208,6 @@
                     <TerrainType>TERRAIN_DESERT</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -1264,10 +1260,6 @@
                     <TerrainType>TERRAIN_DESERT</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
         </BonusInfo>
         <BonusInfo>
@@ -1308,10 +1300,6 @@
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_DESERT</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
                     <bTerrain>1</bTerrain>
@@ -1376,10 +1364,6 @@
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_DESERT</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
@@ -2864,6 +2848,14 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_TAR_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -2957,6 +2949,14 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -3149,6 +3149,14 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -5048,6 +5056,14 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_TAR_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -5308,6 +5324,14 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -5918,6 +5942,14 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -6028,6 +6060,14 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -6164,6 +6204,14 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -6240,6 +6288,14 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -6396,6 +6452,14 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_TAR_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -6486,6 +6550,14 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -6582,6 +6654,14 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_TAR_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -6675,6 +6755,14 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_TAR_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -6765,6 +6853,14 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -9273,6 +9369,14 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_TAR_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -9485,6 +9589,14 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_TAR_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -9694,6 +9806,14 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -10018,6 +10138,14 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>

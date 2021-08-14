@@ -319,6 +319,14 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -586,6 +594,14 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -746,6 +762,14 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -912,6 +936,14 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -1072,6 +1104,14 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -1903,6 +1943,14 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
@@ -2063,6 +2111,14 @@
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
                     <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_TAR_PIT</FeatureType>
@@ -3713,6 +3769,14 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -3883,6 +3947,14 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -4074,6 +4146,14 @@
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
                     <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_TAR_PIT</FeatureType>

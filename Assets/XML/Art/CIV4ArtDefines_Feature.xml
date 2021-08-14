@@ -281,7 +281,7 @@
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <Button>,Art/Interface/Buttons/SwampButton.dds</Button>
+            <Button>Art/Interface/Buttons/SwampButton.dds</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
@@ -290,7 +290,7 @@
                     </FeatureArtPiece>
                 </FeatureArtPieces>
                 <iModelCopies>1</iModelCopies>
-                <VarietyButton>,Art/Interface/Buttons/SwampButton.dds</VarietyButton>
+                <VarietyButton>Art/Interface/Buttons/SwampButton.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
@@ -616,6 +616,98 @@
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_LICHEN</Type>
+            <bAnimated>1</bAnimated>
+            <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <Button>Art/Interface/Buttons/Lichen_Button.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/Lichen/bog.nif</ModelFile>
+                        <Connections/>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Interface/Buttons/Lichen_Button.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
+        <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_MOSS</Type>
+            <bAnimated>1</bAnimated>
+            <TileArtType>TILE_ART_TYPE_TREES</TileArtType>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <Button>Art/Interface/Buttons/Moss_Button.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Moss\fungus01_01.nif</ModelFile>
+                        <Connections>NW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Moss\fungus02_01.nif</ModelFile>
+                        <Connections>NE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Moss\fungus03_01.nif</ModelFile>
+                        <Connections>NW NE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Moss\fungus04_01.nif</ModelFile>
+                        <Connections>SE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Moss\fungus05_01.nif</ModelFile>
+                        <Connections>NW SE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Moss\fungus06_01.nif</ModelFile>
+                        <Connections>NE SE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Moss\fungus07_01.nif</ModelFile>
+                        <Connections>NW NE SE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Moss\fungus08_01.nif</ModelFile>
+                        <Connections>SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Moss\fungus09_01.nif</ModelFile>
+                        <Connections>NW SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Moss\fungus10_01.nif</ModelFile>
+                        <Connections>NE SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Moss\fungus11_01.nif</ModelFile>
+                        <Connections>NW NE SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Moss\fungus12_01.nif</ModelFile>
+                        <Connections>SE SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Moss\fungus13_01.nif</ModelFile>
+                        <Connections>NW SE SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Moss\fungus14_01.nif</ModelFile>
+                        <Connections>NE SE SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features\Moss\fungus15_01.nif</ModelFile>
+                        <Connections>NW NE SE SW</Connections>
+                   </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>4</iModelCopies>
+                <VarietyButton>Art/Interface/Buttons/Moss_Button.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
+        <FeatureArtInfo>
             <Type>ART_DEF_FEATURE_VOLCANO</Type>
             <bAnimated>1</bAnimated>
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
@@ -657,7 +749,7 @@
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
             <fScale>0.2</fScale>
             <fInterfaceScale>0.2</fInterfaceScale>
-            <Button>,Art/Interface/Buttons/Unfavourable_Wind.dds</Button>
+            <Button>Art/Interface/Buttons/Unfavourable_Wind.dds</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
@@ -666,7 +758,7 @@
                     </FeatureArtPiece>
                 </FeatureArtPieces>
                 <iModelCopies>32</iModelCopies>
-                <VarietyButton>,Art/Interface/Buttons/Unfavourable_Wind.dds</VarietyButton>
+                <VarietyButton>Art/Interface/Buttons/Unfavourable_Wind.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
@@ -693,7 +785,7 @@
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
             <fScale>0.2</fScale>
             <fInterfaceScale>0.2</fInterfaceScale>
-            <Button>,Art/Interface/Buttons/Storm.dds</Button>
+            <Button>Art/Interface/Buttons/Storm.dds</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
@@ -702,7 +794,7 @@
                     </FeatureArtPiece>
                 </FeatureArtPieces>
                 <iModelCopies>32</iModelCopies>
-                <VarietyButton>,Art/Interface/Buttons/Storm.dds</VarietyButton>
+                <VarietyButton>Art/Interface/Buttons/Storm.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
@@ -711,7 +803,7 @@
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
             <fScale>0.2</fScale>
             <fInterfaceScale>0.2</fInterfaceScale>
-            <Button>,Art/Interface/Buttons/Fog_Button.dds</Button>
+            <Button>Art/Interface/Buttons/Fog_Button.dds</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
@@ -720,7 +812,7 @@
                     </FeatureArtPiece>
                 </FeatureArtPieces>
                 <iModelCopies>1</iModelCopies>
-                <VarietyButton>,Art/Interface/Buttons/Fog_Button.dds</VarietyButton>
+                <VarietyButton>Art/Interface/Buttons/Fog_Button.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
@@ -729,7 +821,7 @@
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
             <fScale>0.2</fScale>
             <fInterfaceScale>0.2</fInterfaceScale>
-            <Button>,Art/Interface/Buttons/Sandstorm_Button.dds</Button>
+            <Button>Art/Interface/Buttons/Sandstorm_Button.dds</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
@@ -738,7 +830,7 @@
                     </FeatureArtPiece>
                 </FeatureArtPieces>
                 <iModelCopies>1</iModelCopies>
-                <VarietyButton>,Art/Interface/Buttons/Sandstorm_Button.dds</VarietyButton>
+                <VarietyButton>Art/Interface/Buttons/Sandstorm_Button.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
@@ -747,7 +839,7 @@
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
             <fScale>0.2</fScale>
             <fInterfaceScale>0.2</fInterfaceScale>
-            <Button>,Art/Interface/Buttons/Blizzard.dds</Button>
+            <Button>Art/Interface/Buttons/Blizzard.dds</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
@@ -756,7 +848,7 @@
                     </FeatureArtPiece>
                 </FeatureArtPieces>
                 <iModelCopies>1</iModelCopies>
-                <VarietyButton>,Art/Interface/Buttons/Blizzard.dds</VarietyButton>
+                <VarietyButton>Art/Interface/Buttons/Blizzard.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
@@ -871,7 +963,7 @@
             <TileArtType>TILE_ART_TYPE_HALF_TILING</TileArtType>
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <Button>,Art/Interface/Buttons/Reef_Button.dds</Button>
+            <Button>Art/Interface/Buttons/Reef_Button.dds</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
@@ -894,7 +986,7 @@
                     </FeatureArtPiece>
                 </FeatureArtPieces>
                 <iModelCopies>64</iModelCopies>
-                <VarietyButton>,Art/Interface/Buttons/Reef_Button.dds</VarietyButton>
+                <VarietyButton>Art/Interface/Buttons/Reef_Button.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
@@ -903,7 +995,7 @@
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
             <fScale>0.5</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <Button>,Art/Interface/Buttons/kelpforest.dds</Button>
+            <Button>Art/Interface/Buttons/kelpforest.dds</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
@@ -912,7 +1004,7 @@
                     </FeatureArtPiece>
                 </FeatureArtPieces>
                 <iModelCopies>1</iModelCopies>
-                <VarietyButton>,Art/Interface/Buttons/kelpforest.dds</VarietyButton>
+                <VarietyButton>Art/Interface/Buttons/kelpforest.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
@@ -921,7 +1013,7 @@
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
             <fScale>0.5</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <Button>,Art/Interface/Buttons/seagrass.dds</Button>
+            <Button>Art/Interface/Buttons/seagrass.dds</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
@@ -930,7 +1022,7 @@
                     </FeatureArtPiece>
                 </FeatureArtPieces>
                 <iModelCopies>1</iModelCopies>
-                <VarietyButton>,Art/Interface/Buttons/seagrass.dds</VarietyButton>
+                <VarietyButton>Art/Interface/Buttons/seagrass.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
