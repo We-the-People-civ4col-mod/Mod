@@ -3916,7 +3916,7 @@
                     <iValue>1</iValue>
                 </YieldIntegerPair>
             </RiverYieldIncreases>
-            <iMovement>2</iMovement>
+            <iMovement>3</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>25</iDefense>
             <iAppearance>200</iAppearance>
