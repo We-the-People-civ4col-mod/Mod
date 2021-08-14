@@ -1219,6 +1219,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -1328,6 +1332,10 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1447,6 +1455,10 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SHRUB</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -1541,6 +1553,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -4515,6 +4531,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -8764,6 +8784,10 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>

@@ -290,12 +290,12 @@
         <English>????</English>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILD_REMOVE_BARREL_CACTUS</Tag>
-        <English>Chop down the [LINK=FEATURE_BARREL_CACTUS]barrel cactus field[\LINK]</English>
-        <German>[LINK=FEATURE_BARREL_CACTUS]Kugelkaktusfeld[\LINK] entfernen</German>
+        <Tag>TXT_KEY_BUILD_REMOVE_CACTUS</Tag>
+        <English>Chop down the [LINK=FEATURE_BARREL_CACTUS]cactus field[\LINK]</English>
+        <German>[LINK=FEATURE_BARREL_CACTUS]Kaktusfeld[\LINK] entfernen</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILD_REMOVE_JUNGLE_HELP</Tag>
+        <Tag>TXT_KEY_BUILD_REMOVE_CACTUS_HELP</Tag>
         <English>????</English>
     </TEXT>
     <TEXT>

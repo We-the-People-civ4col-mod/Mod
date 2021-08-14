@@ -585,7 +585,7 @@
             <TileArtType>TILE_ART_TYPE_TREES</TileArtType>
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <Button>,Art/Interface/Buttons/barrel_cactus.dds</Button>
+            <Button>Art/Interface/Buttons/barrel_cactus.dds</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>
@@ -594,7 +594,25 @@
                     </FeatureArtPiece>
                 </FeatureArtPieces>
                 <iModelCopies>13</iModelCopies>
-                <VarietyButton>,Art/Interface/Buttons/barrel_cactus.dds</VarietyButton>
+                <VarietyButton>Art/Interface/Buttons/barrel_cactus.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
+        <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_CACTUS_TREES</Type>
+            <bAnimated>1</bAnimated>
+            <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <Button>Art/Interface/Buttons/Cactus_Button.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/Cactus/cactus.nif</ModelFile>
+                        <Connections/>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Interface/Buttons/Cactus_Button.dds</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>

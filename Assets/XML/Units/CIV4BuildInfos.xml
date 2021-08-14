@@ -400,6 +400,17 @@
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
             </FeatureStructs>
             <HotKey>KB_P</HotKey>
             <bAltDown>0</bAltDown>
@@ -607,6 +618,17 @@
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
             </FeatureStructs>
             <HotKey>KB_M</HotKey>
             <bAltDown>0</bAltDown>
@@ -772,6 +794,17 @@
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
             </FeatureStructs>
             <HotKey>KB_Q</HotKey>
             <bAltDown>1</bAltDown>
@@ -895,6 +928,17 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
                         <Yield>
@@ -1069,6 +1113,17 @@
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
             </FeatureStructs>
             <HotKey>KB_V</HotKey>
             <bAltDown>1</bAltDown>
@@ -1234,6 +1289,17 @@
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
             </FeatureStructs>
             <HotKey>KB_V</HotKey>
             <bAltDown>1</bAltDown>
@@ -1390,6 +1456,17 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
                         <Yield>
@@ -1627,9 +1704,9 @@
             <Button>Art\Interface\Game Hud\Actions\dry_swamp.dds</Button>
         </BuildInfo>
         <BuildInfo>
-            <Type>BUILD_REMOVE_BARREL_CACTUS</Type>
-            <Description>TXT_KEY_BUILD_REMOVE_BARREL_CACTUS</Description>
-            <Help>TXT_KEY_BUILD_REMOVE_BARREL_CACTUS_HELP</Help>
+            <Type>BUILD_REMOVE_CACTUS</Type>
+            <Description>TXT_KEY_BUILD_REMOVE_CACTUS</Description>
+            <Help>TXT_KEY_BUILD_REMOVE_CACTUS_HELP</Help>
             <iTime>0</iTime>
             <iCost>0</iCost>
             <bKill>0</bKill>
@@ -1642,6 +1719,17 @@
             <FeatureStructs>
                 <FeatureStruct>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
                     <iTime>400</iTime>
                     <Yields>
                         <Yield>
@@ -1783,6 +1871,17 @@
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
             </FeatureStructs>
             <HotKey/>
             <bAltDown>0</bAltDown>
@@ -1906,6 +2005,17 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
                         <Yield>
@@ -2110,6 +2220,17 @@
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
             </FeatureStructs>
             <HotKey>KB_R</HotKey>
             <bAltDown>0</bAltDown>
@@ -2231,6 +2352,17 @@
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
             </FeatureStructs>
             <HotKey/>
             <bAltDown>0</bAltDown>
@@ -2310,6 +2442,17 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
                         <Yield>
