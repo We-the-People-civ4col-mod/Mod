@@ -251,6 +251,48 @@
         <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Unpassierbarer Berg[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_DESERT</Tag>
+        <English>Rock Formation (Desert)</English>
+        <German>
+            <Text>Felsenformation (Wüste)</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_DESERT_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rock Formation (Desert)[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Felsenformation (Wüste)[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_TEMPERATE</Tag>
+        <English>Rock Formation (Temperate)</English>
+        <German>
+            <Text>Felsenformation (Gemäßigt)</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_TEMPERATE_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rock Formation (Temperate)[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Felsenformation (Gemäßigt)[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_POLAR</Tag>
+        <English>Rock Formation (Polar)</English>
+        <German>
+            <Text>Felsenformation (Polar)</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_POLAR_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rock Formation (Polar)[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Felsenformation (Polar)[COLOR_REVERT] </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_FEATURE_LIGHT_FOREST</Tag>
         <English>Light Forest</English>
         <French>

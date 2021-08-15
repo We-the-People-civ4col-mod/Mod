@@ -143,6 +143,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -571,6 +575,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -1110,6 +1118,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -1644,6 +1656,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -2199,6 +2215,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -3155,6 +3175,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -3687,6 +3711,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -4137,6 +4165,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -4593,6 +4625,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -5027,6 +5063,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -5467,6 +5507,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -5901,6 +5945,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -6341,6 +6389,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -6778,6 +6830,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -7212,6 +7268,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -7660,6 +7720,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -8102,6 +8166,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -8550,6 +8618,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -8995,6 +9067,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -9432,6 +9508,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -9858,6 +9938,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -10298,6 +10382,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -10724,6 +10812,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -11156,6 +11248,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -11585,6 +11681,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -12006,6 +12106,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -12419,6 +12523,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -12875,6 +12983,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -13328,6 +13440,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -13774,6 +13890,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -14226,6 +14346,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -14671,6 +14795,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -15113,6 +15241,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -15565,6 +15697,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -16014,6 +16150,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -16460,6 +16600,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -16916,6 +17060,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -17366,6 +17514,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -17822,6 +17974,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -18275,6 +18431,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -18720,6 +18880,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -19162,6 +19326,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -19618,6 +19786,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -20068,6 +20240,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -20532,6 +20708,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -20985,6 +21165,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -24367,6 +24551,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -24780,6 +24968,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -25211,6 +25403,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -25628,6 +25824,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -27881,6 +28081,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -28296,6 +28500,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -28691,6 +28899,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -29123,6 +29335,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -29579,6 +29795,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -30032,6 +30252,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -30482,6 +30706,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -31706,6 +31934,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -32176,6 +32408,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -32599,6 +32835,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -33019,6 +33259,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -33864,6 +34108,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -34295,6 +34543,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_DRAIN_MARSH</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -34673,6 +34925,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>

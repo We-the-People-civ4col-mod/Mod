@@ -96,6 +96,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -218,6 +230,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -346,6 +370,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -471,6 +507,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -587,6 +635,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -696,6 +756,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -816,6 +888,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -922,6 +1006,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1034,6 +1130,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -1143,6 +1251,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -1240,6 +1360,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1351,6 +1483,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -1459,6 +1603,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -1557,6 +1713,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1661,6 +1829,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -1758,6 +1938,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1862,6 +2054,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -1955,6 +2159,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2054,6 +2270,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -2150,6 +2378,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -2242,6 +2482,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -2331,6 +2583,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2431,6 +2695,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2542,6 +2818,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -2648,6 +2936,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2764,6 +3064,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -2869,6 +3181,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2980,6 +3304,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -3073,6 +3409,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -3181,6 +3529,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -3746,6 +4106,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -4317,6 +4689,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -4411,6 +4795,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -4574,6 +4970,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -4683,6 +5091,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -4805,6 +5225,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -4897,6 +5329,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -5089,6 +5533,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -5367,6 +5823,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -5519,6 +5987,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -5628,6 +6108,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -5745,6 +6237,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -5866,6 +6370,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -5991,6 +6507,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -6120,6 +6648,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -6367,6 +6907,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -6511,6 +7063,18 @@
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -6614,6 +7178,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -6721,6 +7297,18 @@
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -6824,6 +7412,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -6931,6 +7531,18 @@
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
@@ -7018,6 +7630,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -7115,6 +7739,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -7231,6 +7867,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -7341,6 +7989,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -7473,6 +8133,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -7765,6 +8437,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -7890,6 +8574,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -7994,6 +8690,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -8197,6 +8905,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -8302,6 +9022,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -8425,6 +9157,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -8533,6 +9277,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -8625,6 +9381,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -8741,6 +9509,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -8843,6 +9623,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -8955,6 +9747,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -9059,6 +9863,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -9156,6 +9972,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -9265,6 +10093,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -9445,6 +10285,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -9672,6 +10524,18 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SALT_PAN</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
@@ -9893,6 +10757,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -10229,6 +11105,18 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>

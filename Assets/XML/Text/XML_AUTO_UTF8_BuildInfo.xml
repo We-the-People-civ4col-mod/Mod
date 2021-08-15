@@ -299,6 +299,15 @@
         <English>????</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BUILD_REMOVE_ROCK_FORMATION</Tag>
+        <English>Destroy the [LINK=FEATURE_BARREL_CACTUS]rock formation[\LINK]</English>
+        <German>[LINK=FEATURE_BARREL_CACTUS]Felsformation[\LINK] zerstören</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REMOVE_ROCK_FORMATION_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILD_ROAD</Tag>
         <English>Build a road</English>
         <French>Construire une route</French>

@@ -1971,6 +1971,28 @@
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <iTime>400</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_FOOD</YieldType>
+                            <iYield>10</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
             </FeatureStructs>
             <HotKey>KB_C</HotKey>
             <bAltDown>1</bAltDown>
@@ -2015,35 +2037,57 @@
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
+            </FeatureStructs>
+            <HotKey>KB_C</HotKey>
+            <bAltDown>1</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>0</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <Button>Art\Interface\Game Hud\Actions\chop_high_res.dds</Button>
+        </BuildInfo>
+        <BuildInfo>
+            <Type>BUILD_REMOVE_ROCK_FORMATION</Type>
+            <Description>TXT_KEY_BUILD_REMOVE_ROCK_FORMATION</Description>
+            <Help>TXT_KEY_BUILD_REMOVE_ROCK_FORMATION_HELP</Help>
+            <iTime>0</iTime>
+            <iCost>0</iCost>
+            <bKill>0</bKill>
+            <ImprovementType>NONE</ImprovementType>
+            <PrereqTerrainType>NONE</PrereqTerrainType>
+            <ResultTerrainType>NONE</ResultTerrainType>
+            <ResultFeatureType>NONE</ResultFeatureType>
+            <RouteType>NONE</RouteType>
+            <EntityEvent>ENTITY_EVENT_MINE</EntityEvent>
+            <FeatureStructs>
                 <FeatureStruct>
-                    <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <iTime>400</iTime>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <iTime>600</iTime>
                     <Yields>
                         <Yield>
-                            <YieldType>YIELD_FOOD</YieldType>
-                            <iYield>10</iYield>
+                            <YieldType>YIELD_STONE</YieldType>
+                            <iYield>40</iYield>
                         </Yield>
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
-                    <FeatureType>FEATURE_MOSS</FeatureType>
-                    <iTime>400</iTime>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <iTime>600</iTime>
                     <Yields>
                         <Yield>
-                            <YieldType>YIELD_FOOD</YieldType>
-                            <iYield>10</iYield>
+                            <YieldType>YIELD_STONE</YieldType>
+                            <iYield>40</iYield>
                         </Yield>
                     </Yields>
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
-                    <FeatureType>FEATURE_THICKET</FeatureType>
-                    <iTime>400</iTime>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <iTime>600</iTime>
                     <Yields>
                         <Yield>
-                            <YieldType>YIELD_LUMBER</YieldType>
-                            <iYield>10</iYield>
+                            <YieldType>YIELD_STONE</YieldType>
+                            <iYield>40</iYield>
                         </Yield>
                     </Yields>
                     <bRemove>1</bRemove>
@@ -2054,7 +2098,7 @@
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
             <iHotKeyPriority>0</iHotKeyPriority>
-            <Button>Art\Interface\Game Hud\Actions\chop_high_res.dds</Button>
+            <Button>Art\Interface\Game Hud\Actions\Remove_Rocks_high_res.dds</Button>
         </BuildInfo>
         <BuildInfo>
             <Type>BUILD_FORT</Type>
