@@ -4297,6 +4297,7 @@
             <AIRequiredCatchmentAreaFeatures>
                 <eRequiredFeature>FEATURE_FOREST</eRequiredFeature>
                 <eRequiredFeature>FEATURE_DENSE_FOREST</eRequiredFeature>
+                <eRequiredFeature>FEATURE_ANCIENT_FOREST</eRequiredFeature>
                 <eRequiredFeature>FEATURE_FOREST_TUNDRA</eRequiredFeature>
                 <eRequiredFeature>FEATURE_LIGHT_FOREST</eRequiredFeature>
             </AIRequiredCatchmentAreaFeatures>
@@ -6290,6 +6291,7 @@
                 <eRequiredFeature>FEATURE_TROPICAL_GROVES</eRequiredFeature>
                 <eRequiredFeature>FEATURE_MANGROVE</eRequiredFeature>
                 <eRequiredFeature>FEATURE_FOREST_TUNDRA</eRequiredFeature>
+                <eRequiredFeature>FEATURE_ANCIENT_FOREST</eRequiredFeature>
             </AIRequiredCatchmentAreaFeatures>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>

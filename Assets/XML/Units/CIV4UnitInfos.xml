@@ -23021,6 +23021,10 @@
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iFeatureAttack>20</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
                     <iFeatureAttack>20</iFeatureAttack>
                 </FeatureAttack>
@@ -23073,6 +23077,10 @@
                 <FeatureDefense>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iFeatureDefense>40</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
@@ -23258,6 +23266,10 @@
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
@@ -23433,6 +23445,10 @@
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
@@ -23751,6 +23767,10 @@
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
@@ -23916,6 +23936,10 @@
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iFeatureAttack>20</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
                     <iFeatureAttack>20</iFeatureAttack>
                 </FeatureAttack>
@@ -23956,6 +23980,10 @@
                 <FeatureDefense>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
                     <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iFeatureDefense>40</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
@@ -24400,6 +24428,10 @@
                 </FeatureAttack>
                 <FeatureAttack>
                     <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <iFeatureAttack>-10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
                     <iFeatureAttack>-10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>

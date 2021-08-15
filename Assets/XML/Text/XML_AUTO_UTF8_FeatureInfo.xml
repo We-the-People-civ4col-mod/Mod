@@ -48,27 +48,26 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_FOREST_TUNDRA</Tag>
-        <English>Taiga</English>
-        <French>
-            <Text>Taïga</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
+        <English>Northern Forest</English>
         <German>
-            <Text>Taiga</Text>
+            <Text>Nordwald</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
-        <Italian>
-            <Text>Taiga</Text>
-            <Gender>Female</Gender>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_ANCIENT_FOREST</Tag>
+        <English>Ancient Northern Forest</English>
+        <German>
+            <Text>Alter Nordwald</Text>
+            <Gender>Male</Gender>
             <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Taiga</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_ANCIENT_FOREST_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ancient Northern Forest[COLOR_REVERT]</English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Alter Nordwald[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_FOREST_TUNDRA_PEDIA</Tag>

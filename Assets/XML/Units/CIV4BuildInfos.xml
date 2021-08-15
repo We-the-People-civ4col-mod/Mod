@@ -171,6 +171,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iTime>1000</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>40</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <iTime>400</iTime>
                     <Yields>
@@ -353,6 +364,17 @@
                         <Yield>
                             <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iTime>1000</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>40</iYield>
                         </Yield>
                     </Yields>
                     <bRemove>1</bRemove>
@@ -609,6 +631,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iTime>1000</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>40</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <iTime>400</iTime>
                     <Yields>
@@ -813,6 +846,17 @@
                         <Yield>
                             <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iTime>1000</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>40</iYield>
                         </Yield>
                     </Yields>
                     <bRemove>1</bRemove>
@@ -1027,6 +1071,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iTime>1000</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>40</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <iTime>400</iTime>
                     <Yields>
@@ -1198,6 +1253,17 @@
                         <Yield>
                             <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iTime>1000</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>40</iYield>
                         </Yield>
                     </Yields>
                     <bRemove>1</bRemove>
@@ -1412,6 +1478,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iTime>1000</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>40</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <iTime>400</iTime>
                     <Yields>
@@ -1616,6 +1693,17 @@
                         <Yield>
                             <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iTime>1000</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>40</iYield>
                         </Yield>
                     </Yields>
                     <bRemove>1</bRemove>
@@ -1868,6 +1956,17 @@
                         <Yield>
                             <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iTime>1000</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>40</iYield>
                         </Yield>
                     </Yields>
                     <bRemove>1</bRemove>
@@ -2181,6 +2280,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iTime>1000</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>40</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
                     <iTime>400</iTime>
                     <Yields>
@@ -2352,6 +2462,17 @@
                         <Yield>
                             <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iTime>1000</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>40</iYield>
                         </Yield>
                     </Yields>
                     <bRemove>1</bRemove>
@@ -2591,6 +2712,17 @@
                         <Yield>
                             <YieldType>YIELD_LUMBER</YieldType>
                             <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <iTime>1000</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>40</iYield>
                         </Yield>
                     </Yields>
                     <bRemove>1</bRemove>
@@ -3166,7 +3298,7 @@
             <ImprovementType>NONE</ImprovementType>
             <PrereqTerrainType>TERRAIN_TAIGA</PrereqTerrainType>
             <ResultTerrainType>NONE</ResultTerrainType>
-            <ResultFeatureType>FEATURE_FOREST_TUNDRA</ResultFeatureType>
+            <ResultFeatureType>FEATURE_ANCIENT_FOREST</ResultFeatureType>
             <RouteType>NONE</RouteType>
             <EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
             <FeatureStructs/>
