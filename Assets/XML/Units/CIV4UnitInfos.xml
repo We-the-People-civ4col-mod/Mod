@@ -21267,8 +21267,34 @@
             <iDomesticBonus>0</iDomesticBonus>
             <TerrainAttacks/>
             <TerrainDefenses/>
-            <FeatureAttacks/>
-            <FeatureDefenses/>
+            <FeatureAttacks>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+            </FeatureAttacks>
+            <FeatureDefenses>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+            </FeatureDefenses>
             <UnitClassAttackMods/>
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
@@ -21545,8 +21571,34 @@
             <iDomesticBonus>0</iDomesticBonus>
             <TerrainAttacks/>
             <TerrainDefenses/>
-            <FeatureAttacks/>
-            <FeatureDefenses/>
+            <FeatureAttacks>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+            </FeatureAttacks>
+            <FeatureDefenses>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+            </FeatureDefenses>
             <UnitClassAttackMods/>
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
@@ -24092,8 +24144,34 @@
             <iDomesticBonus>0</iDomesticBonus>
             <TerrainAttacks/>
             <TerrainDefenses/>
-            <FeatureAttacks/>
-            <FeatureDefenses/>
+            <FeatureAttacks>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+            </FeatureAttacks>
+            <FeatureDefenses>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+            </FeatureDefenses>
             <UnitClassAttackMods>
                 <UnitClassAttackMod>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
@@ -35475,7 +35553,20 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
             <iXPValueAttack>0</iXPValueAttack>
@@ -35626,7 +35717,20 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
             <iXPValueAttack>0</iXPValueAttack>
@@ -35777,7 +35881,20 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
             <iXPValueAttack>0</iXPValueAttack>
@@ -35924,7 +36041,20 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
             <iXPValueAttack>0</iXPValueAttack>
@@ -36075,7 +36205,20 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
             <iXPValueAttack>0</iXPValueAttack>
@@ -36226,7 +36369,20 @@
                     <bTerrainImpassable>1</bTerrainImpassable>
                 </TerrainImpassable>
             </TerrainImpassables>
-            <FeatureImpassables/>
+            <FeatureImpassables>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+                <FeatureImpassable>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeatureImpassable>1</bFeatureImpassable>
+                </FeatureImpassable>
+            </FeatureImpassables>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
             <iXPValueAttack>0</iXPValueAttack>

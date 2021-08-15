@@ -1340,7 +1340,7 @@
             <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
-            <bRequiresFlatlands>1</bRequiresFlatlands>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
             <bRequiresHills>0</bRequiresHills>
             <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
@@ -1446,7 +1446,7 @@
             <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
-            <bRequiresFlatlands>1</bRequiresFlatlands>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
             <bRequiresHills>0</bRequiresHills>
             <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
@@ -1552,7 +1552,7 @@
             <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
-            <bRequiresFlatlands>1</bRequiresFlatlands>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
             <bRequiresHills>0</bRequiresHills>
             <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
