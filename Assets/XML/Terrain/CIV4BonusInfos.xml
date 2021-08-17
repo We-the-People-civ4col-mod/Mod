@@ -6840,6 +6840,30 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_SHRUB</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
