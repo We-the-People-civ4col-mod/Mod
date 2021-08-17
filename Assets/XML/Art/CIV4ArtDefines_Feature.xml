@@ -170,6 +170,14 @@
                 <iModelCopies>48</iModelCopies>
                 <VarietyButton>,Art/Interface/Buttons/BaseTerrain_TerrainFeatures_Atlas.dds,3,3</VarietyButton>
             </FeatureVariety>
+        </FeatureArtInfo>
+        <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_FOREST_EVERGREEN</Type>
+            <bAnimated>0</bAnimated>
+            <TileArtType>TILE_ART_TYPE_TREES</TileArtType>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <Button>,Art/Interface/Buttons/BaseTerrain_TerrainFeatures_Atlas.dds,7,3</Button>
             <FeatureVariety>
                 <FeatureArtPieces>
                     <FeatureArtPiece>

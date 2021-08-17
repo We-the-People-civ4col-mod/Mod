@@ -3714,7 +3714,8 @@ def addFeatures():
     mmap = gc.getMap()
     featureIce = gc.getInfoTypeForString("FEATURE_ICE")
     featureJungle = gc.getInfoTypeForString("FEATURE_JUNGLE")
-    featureForest = gc.getInfoTypeForString("FEATURE_FOREST") 
+    featureForest = gc.getInfoTypeForString("FEATURE_FOREST")
+    featureForestEvergreen = gc.getInfoTypeForString("FEATURE_FOREST_EVERGREEN")
     featureForestTundra = gc.getInfoTypeForString("FEATURE_FOREST_TUNDRA")
     featureLightForest = gc.getInfoTypeForString("FEATURE_LIGHT_FOREST")
     featureVulcano = gc.getInfoTypeForString("FEATURE_VOLCANO")
@@ -3752,9 +3753,9 @@ def addFeatures():
                 if sm.rainFallMap[i] > sm.plainsThreshold*1.5:#jungle
                     if sm.averageTempMap[i] > mc.JungleTemp:
                         if sm.terrainMap[i] == mc.PLAINS:
-                            plot.setFeatureType(featureForest,FORESTLEAFY)
+                            plot.setFeatureType(featureForest,0)
                         ## R&R, ray, corrected maps to generate Savannah plains
-						## agnat86, generates also unvegetated Savannah
+                        ## agnat86, generates also unvegetated Savannah
                         elif PRand.random() <= mc.chanceForTreelessSavannah:
                             plot.setFeatureType(FeatureTypes.NO_FEATURE,0)
                             if sm.terrainMap[i] == mc.GRASS:
@@ -3766,19 +3767,19 @@ def addFeatures():
                         elif sm.terrainMap[i] == mc.MARSH:
                             plot.setFeatureType(featureJungle,0)
                         else:
-                           plot.setFeatureType(featureForest,FORESTLEAFY)
+                           plot.setFeatureType(featureForest,0)
                     elif sm.averageTempMap[i] > mc.ForestTemp:
-                        plot.setFeatureType(featureForest,FORESTLEAFY)
+                        plot.setFeatureType(featureForest,0)
                     elif sm.averageTempMap[i] > mc.TundraTemp:
-                        plot.setFeatureType(featureForest,FORESTEVERGREEN)
+                        plot.setFeatureType(featureForestEvergreen,0)
                     elif sm.averageTempMap[i] > mc.SnowTemp:
                         plot.setFeatureType(featureForestTundra,0)
                 elif sm.rainFallMap[i] > sm.desertThreshold:#forest
                     if sm.rainFallMap[i] > PRand.random() * sm.plainsThreshold * 1.5:
                         if sm.averageTempMap[i] > mc.ForestTemp:
-                           plot.setFeatureType(featureForest,FORESTLEAFY)
+                           plot.setFeatureType(featureForest,0)
                         elif sm.averageTempMap[i] > mc.TundraTemp:
-                            plot.setFeatureType(featureForest,FORESTEVERGREEN)
+                            plot.setFeatureType(featureForestEvergreen,0)
                         elif sm.averageTempMap[i] > mc.SnowTemp * 0.8:
                             plot.setFeatureType(featureForestTundra,0)
 

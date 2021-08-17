@@ -23013,6 +23013,10 @@
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
                     <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
                     <iFeatureAttack>20</iFeatureAttack>
                 </FeatureAttack>
@@ -23068,6 +23072,10 @@
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
                     <iFeatureDefense>20</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
@@ -23258,6 +23266,10 @@
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
                     <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
@@ -23437,6 +23449,10 @@
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
@@ -23759,6 +23775,10 @@
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
                     <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
                     <iFeatureDefense>10</iFeatureDefense>
                 </FeatureDefense>
@@ -23928,6 +23948,10 @@
                     <iFeatureAttack>10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <iFeatureAttack>10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
                     <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
                     <iFeatureAttack>20</iFeatureAttack>
                 </FeatureAttack>
@@ -23971,6 +23995,10 @@
                 </FeatureDefense>
                 <FeatureDefense>
                     <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iFeatureDefense>20</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
                     <iFeatureDefense>20</iFeatureDefense>
                 </FeatureDefense>
                 <FeatureDefense>
@@ -24420,6 +24448,10 @@
                 </FeatureAttack>
                 <FeatureAttack>
                     <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iFeatureAttack>-10</iFeatureAttack>
+                </FeatureAttack>
+                <FeatureAttack>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
                     <iFeatureAttack>-10</iFeatureAttack>
                 </FeatureAttack>
                 <FeatureAttack>

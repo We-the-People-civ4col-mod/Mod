@@ -5009,7 +5009,7 @@ EndPlot
 BeginPlot
 	x=4,y=88
 	BonusType=BONUS_TIMBER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=30,
@@ -5775,7 +5775,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=5,y=87
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=30,
@@ -5805,7 +5805,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=5,y=89
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=30,
@@ -5895,14 +5895,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=5,y=104
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=16,
 EndPlot
 BeginPlot
 	x=5,y=105
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=16,
@@ -5925,7 +5925,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=5,y=109
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -6570,7 +6570,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=6,y=85
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=28,30,
@@ -6604,14 +6604,14 @@ EndPlot
 BeginPlot
 	x=6,y=90
 	BonusType=BONUS_TIMBER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=16,30,
 EndPlot
 BeginPlot
 	x=6,y=91
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=16,30,
@@ -6648,7 +6648,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=6,y=96
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=16,
@@ -6674,7 +6674,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=6,y=100
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=16,
@@ -7413,7 +7413,7 @@ EndPlot
 BeginPlot
 	x=7,y=93
 	BonusType=BONUS_DEER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=16,
@@ -7426,7 +7426,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=7,y=95
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=16,
@@ -7452,7 +7452,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=7,y=99
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=16,
@@ -7512,21 +7512,21 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=7,y=106
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=16,
 EndPlot
 BeginPlot
 	x=7,y=107
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=16,
 EndPlot
 BeginPlot
 	x=7,y=108
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -8271,7 +8271,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=16,
@@ -8319,13 +8319,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=8,y=101
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
 BeginPlot
 	x=8,y=102
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=16,
@@ -8340,7 +8340,7 @@ EndPlot
 BeginPlot
 	x=8,y=104
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=16,
@@ -8353,7 +8353,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=8,y=106
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=16,
@@ -9082,7 +9082,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=16,
@@ -9094,7 +9094,7 @@ BeginPlot
 	RiverWEDirection=3
 	isWOfRiver
 	BonusType=BONUS_TIMBER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=16,
@@ -9102,7 +9102,7 @@ EndPlot
 BeginPlot
 	x=9,y=97
 	BonusType=BONUS_DEER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=16,
@@ -9134,7 +9134,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=9,y=102
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=16,
@@ -10693,7 +10693,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=11,y=93
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 	TeamReveal=16,
@@ -10764,7 +10764,7 @@ BeginPlot
 	x=11,y=105
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -11506,14 +11506,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=93
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=16,
 EndPlot
 BeginPlot
 	x=12,y=94
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -11534,7 +11534,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=98
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -11569,7 +11569,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=104
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=12,
@@ -12340,7 +12340,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=98
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -12382,7 +12382,7 @@ BeginPlot
 	x=13,y=104
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=12,
@@ -12391,7 +12391,7 @@ BeginPlot
 	x=13,y=105
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=12,
@@ -13127,7 +13127,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=16,
@@ -13174,7 +13174,7 @@ EndPlot
 BeginPlot
 	x=14,y=99
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -13200,7 +13200,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=103
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=12,
@@ -13210,7 +13210,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	BonusType=BONUS_BOREAL_FOREST
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=12,
@@ -14025,7 +14025,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=15,y=96
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=16,
@@ -14033,7 +14033,7 @@ EndPlot
 BeginPlot
 	x=15,y=97
 	ImprovementType=IMPROVEMENT_GOODY_HUT
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=16,
@@ -14055,7 +14055,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -14100,7 +14100,7 @@ BeginPlot
 	x=15,y=104
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=12,
@@ -14873,14 +14873,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=94
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=16,
 EndPlot
 BeginPlot
 	x=16,y=95
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=16,
@@ -14893,14 +14893,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=97
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=12,16,
 EndPlot
 BeginPlot
 	x=16,y=98
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=12,16,
@@ -14914,7 +14914,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=100
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -14923,7 +14923,7 @@ BeginPlot
 	x=16,y=101
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,
@@ -14943,14 +14943,14 @@ EndPlot
 BeginPlot
 	x=16,y=104
 	BonusType=BONUS_FUR
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=12,
 EndPlot
 BeginPlot
 	x=16,y=105
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -15787,7 +15787,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=96
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,16,
@@ -15802,14 +15802,14 @@ EndPlot
 BeginPlot
 	x=17,y=98
 	BonusType=BONUS_DEER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=12,16,
 EndPlot
 BeginPlot
 	x=17,y=99
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -15818,7 +15818,7 @@ BeginPlot
 	x=17,y=100
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,
@@ -15827,21 +15827,21 @@ BeginPlot
 	x=17,y=101
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
 EndPlot
 BeginPlot
 	x=17,y=102
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=12,
 EndPlot
 BeginPlot
 	x=17,y=103
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -15852,7 +15852,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -15861,7 +15861,7 @@ BeginPlot
 	x=17,y=105
 	RiverNSDirection=0
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -16671,7 +16671,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=96
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,16,
@@ -16685,7 +16685,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=98
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,16,
@@ -16718,7 +16718,7 @@ BeginPlot
 	x=18,y=100
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -16726,7 +16726,7 @@ EndPlot
 BeginPlot
 	x=18,y=101
 	ImprovementType=IMPROVEMENT_GOODY_HUT
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,
@@ -16738,7 +16738,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=103
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -16750,7 +16750,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=105
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -17515,7 +17515,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=97
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,16,
@@ -17530,7 +17530,7 @@ BeginPlot
 	x=19,y=99
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,
@@ -17539,14 +17539,14 @@ BeginPlot
 	x=19,y=100
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,
 EndPlot
 BeginPlot
 	x=19,y=101
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=12,
@@ -17554,7 +17554,7 @@ EndPlot
 BeginPlot
 	x=19,y=102
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -18362,7 +18362,7 @@ EndPlot
 BeginPlot
 	x=20,y=96
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=16,
@@ -18375,7 +18375,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=98
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,
@@ -18384,14 +18384,14 @@ BeginPlot
 	x=20,y=99
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
 EndPlot
 BeginPlot
 	x=20,y=100
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,
@@ -19218,7 +19218,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=98
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,
@@ -19233,14 +19233,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=100
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=12,
 EndPlot
 BeginPlot
 	x=21,y=101
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -20021,7 +20021,7 @@ EndPlot
 BeginPlot
 	x=22,y=96
 	ImprovementType=IMPROVEMENT_GOODY_HUT
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=12,
@@ -20035,7 +20035,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=98
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,
@@ -20078,7 +20078,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=101
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -20924,14 +20924,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=97
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,
 EndPlot
 BeginPlot
 	x=23,y=98
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,
@@ -20944,7 +20944,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=100
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -20953,7 +20953,7 @@ BeginPlot
 	x=23,y=101
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -21755,7 +21755,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=93
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,32,
@@ -21790,7 +21790,7 @@ EndPlot
 BeginPlot
 	x=24,y=98
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,
@@ -21798,14 +21798,14 @@ EndPlot
 BeginPlot
 	x=24,y=99
 	BonusType=BONUS_FUR
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=12,
 EndPlot
 BeginPlot
 	x=24,y=100
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -21814,7 +21814,7 @@ BeginPlot
 	x=24,y=101
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -22591,7 +22591,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=12,
@@ -22608,7 +22608,7 @@ BeginPlot
 	x=25,y=97
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=12,
@@ -22617,7 +22617,7 @@ BeginPlot
 	x=25,y=98
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=12,
@@ -22626,13 +22626,13 @@ BeginPlot
 	x=25,y=99
 	RiverNSDirection=0
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=25,y=100
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -23393,20 +23393,20 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=96
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=97
 	BonusType=BONUS_DEER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=26,y=98
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -24204,7 +24204,7 @@ EndPlot
 BeginPlot
 	x=27,y=93
 	ImprovementType=IMPROVEMENT_GOODY_HUT
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=32,
@@ -24220,13 +24220,13 @@ BeginPlot
 	x=27,y=95
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=27,y=96
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -25022,7 +25022,7 @@ EndPlot
 BeginPlot
 	x=28,y=94
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -25832,7 +25832,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=91
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=8,
@@ -25847,13 +25847,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=93
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
 BeginPlot
 	x=29,y=94
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -25870,7 +25870,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=97
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -26686,7 +26686,7 @@ BeginPlot
 	x=30,y=92
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=8,
@@ -26694,14 +26694,14 @@ EndPlot
 BeginPlot
 	x=30,y=93
 	BonusType=BONUS_TIMBER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,
 EndPlot
 BeginPlot
 	x=30,y=94
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -27507,7 +27507,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=88
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=8,
@@ -27522,7 +27522,7 @@ EndPlot
 BeginPlot
 	x=31,y=90
 	BonusType=BONUS_DEER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,
@@ -27542,7 +27542,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=93
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=8,
@@ -27551,7 +27551,7 @@ BeginPlot
 	x=31,y=94
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,
@@ -28422,7 +28422,7 @@ BeginPlot
 	x=32,y=93
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=8,
@@ -28431,7 +28431,7 @@ BeginPlot
 	x=32,y=94
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,
@@ -28439,7 +28439,7 @@ EndPlot
 BeginPlot
 	x=32,y=95
 	BonusType=BONUS_BOREAL_FOREST
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=8,
@@ -29304,7 +29304,7 @@ EndPlot
 BeginPlot
 	x=33,y=90
 	BonusType=BONUS_FUR
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=8,
@@ -30166,7 +30166,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=87
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=8,19,
@@ -30181,7 +30181,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=89
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=8,19,
@@ -30200,7 +30200,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=92
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=8,
@@ -30208,7 +30208,7 @@ EndPlot
 BeginPlot
 	x=34,y=93
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,
@@ -30472,7 +30472,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=8
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=34,
@@ -30486,14 +30486,14 @@ EndPlot
 BeginPlot
 	x=35,y=10
 	BonusType=BONUS_TIMBER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=34,
 EndPlot
 BeginPlot
 	x=35,y=11
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=24,
@@ -30506,7 +30506,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=13
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=24,
@@ -31020,7 +31020,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=86
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=8,19,22,
@@ -31048,7 +31048,7 @@ EndPlot
 BeginPlot
 	x=35,y=90
 	BonusType=BONUS_TIMBER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,19,
@@ -31056,14 +31056,14 @@ EndPlot
 BeginPlot
 	x=35,y=91
 	ImprovementType=IMPROVEMENT_GOODY_HUT6
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,
 EndPlot
 BeginPlot
 	x=35,y=92
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,
@@ -31306,14 +31306,14 @@ EndPlot
 BeginPlot
 	x=36,y=4
 	BonusType=BONUS_TIMBER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=34,
 EndPlot
 BeginPlot
 	x=36,y=5
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=34,
@@ -31342,14 +31342,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=8
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=34,
 EndPlot
 BeginPlot
 	x=36,y=9
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=34,
@@ -31362,7 +31362,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=11
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=24,
@@ -32046,7 +32046,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=90
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=8,19,
@@ -32054,7 +32054,7 @@ EndPlot
 BeginPlot
 	x=36,y=91
 	BonusType=BONUS_DEER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -32283,7 +32283,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=3
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -32350,7 +32350,7 @@ EndPlot
 BeginPlot
 	x=37,y=14
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=24,
@@ -32917,7 +32917,7 @@ EndPlot
 BeginPlot
 	x=37,y=88
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=8,19,
@@ -32941,7 +32941,7 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	BonusType=BONUS_SILVER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 EndPlot
@@ -33175,7 +33175,7 @@ EndPlot
 BeginPlot
 	x=38,y=5
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=34,
@@ -33795,7 +33795,7 @@ EndPlot
 BeginPlot
 	x=38,y=85
 	BonusType=BONUS_DEER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=19,22,
@@ -33828,7 +33828,7 @@ EndPlot
 BeginPlot
 	x=38,y=90
 	BonusType=BONUS_FUR
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,19,
@@ -33839,7 +33839,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=8,
@@ -34061,7 +34061,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=1
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -34641,7 +34641,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=84
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=19,22,
@@ -34657,7 +34657,7 @@ EndPlot
 BeginPlot
 	x=39,y=86
 	BonusType=BONUS_TIMBER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=19,22,
@@ -34671,7 +34671,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=88
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=8,19,
@@ -34680,7 +34680,7 @@ BeginPlot
 	x=39,y=89
 	isNOfRiver
 	RiverWEDirection=3
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,19,
@@ -34697,7 +34697,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	ImprovementType=IMPROVEMENT_GOODY_HUT
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=8,
@@ -35659,7 +35659,7 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	BonusType=BONUS_FUR
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=0,8,19,
@@ -36476,7 +36476,7 @@ BeginPlot
 	x=41,y=86
 	RiverNSDirection=0
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=0,19,
@@ -36501,7 +36501,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=90
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=8,
@@ -37364,7 +37364,7 @@ EndPlot
 BeginPlot
 	x=42,y=89
 	BonusType=BONUS_IRON
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=0,8,19,
@@ -37372,14 +37372,14 @@ EndPlot
 BeginPlot
 	x=42,y=90
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=8,19,
 EndPlot
 BeginPlot
 	x=42,y=91
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,
@@ -38198,7 +38198,7 @@ EndPlot
 BeginPlot
 	x=43,y=86
 	ImprovementType=IMPROVEMENT_GOODY_HUT
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=19,
@@ -38224,7 +38224,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=90
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=0,8,19,
@@ -38243,7 +38243,7 @@ BeginPlot
 	x=43,y=92
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=8,
@@ -39107,14 +39107,14 @@ EndPlot
 BeginPlot
 	x=44,y=91
 	BonusType=BONUS_DEER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=8,
 EndPlot
 BeginPlot
 	x=44,y=92
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=8,
@@ -39976,7 +39976,7 @@ EndPlot
 BeginPlot
 	x=45,y=87
 	BonusType=BONUS_TIMBER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=19,
@@ -40003,7 +40003,7 @@ EndPlot
 BeginPlot
 	x=45,y=91
 	BonusType=BONUS_FUR
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=8,
@@ -40841,14 +40841,14 @@ EndPlot
 BeginPlot
 	x=46,y=87
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=8,19,
 EndPlot
 BeginPlot
 	x=46,y=88
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=8,19,
@@ -40874,7 +40874,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=92
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=8,
@@ -41681,7 +41681,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=88
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=8,
@@ -41689,7 +41689,7 @@ EndPlot
 BeginPlot
 	x=47,y=89
 	BonusType=BONUS_DEER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=8,
@@ -41710,7 +41710,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=92
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=8,
@@ -42576,7 +42576,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=92
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=8,
@@ -42584,7 +42584,7 @@ EndPlot
 BeginPlot
 	x=48,y=93
 	BonusType=BONUS_DEER
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -43418,7 +43418,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=93
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -44261,7 +44261,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=88
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,
@@ -44293,7 +44293,7 @@ BeginPlot
 	x=50,y=93
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -44301,7 +44301,7 @@ BeginPlot
 	x=50,y=94
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -45122,7 +45122,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=91
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=8,
@@ -45134,13 +45134,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=93
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=51,y=94
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -45995,14 +45995,14 @@ EndPlot
 BeginPlot
 	x=52,y=92
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=8,
 EndPlot
 BeginPlot
 	x=52,y=93
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=8,
@@ -46017,7 +46017,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=95
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=8,
@@ -46815,7 +46815,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=92
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=8,
@@ -46823,7 +46823,7 @@ EndPlot
 BeginPlot
 	x=53,y=93
 	ImprovementType=IMPROVEMENT_GOODY_HUT
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=8,
@@ -47668,7 +47668,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=89
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -48498,7 +48498,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=90
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -50072,7 +50072,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=88
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
+	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot

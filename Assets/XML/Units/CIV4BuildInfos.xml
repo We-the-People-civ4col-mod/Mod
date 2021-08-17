@@ -149,6 +149,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
                     <iTime>1000</iTime>
                     <Yields>
@@ -337,6 +348,17 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
                         <Yield>
@@ -609,6 +631,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
                     <iTime>1000</iTime>
                     <Yields>
@@ -819,6 +852,17 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
                         <Yield>
@@ -1049,6 +1093,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
                     <iTime>1000</iTime>
                     <Yields>
@@ -1226,6 +1281,17 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
                         <Yield>
@@ -1456,6 +1522,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
                     <iTime>1000</iTime>
                     <Yields>
@@ -1666,6 +1743,17 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
                         <Yield>
@@ -1929,6 +2017,17 @@
             <FeatureStructs>
                 <FeatureStruct>
                     <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
                         <Yield>
@@ -2258,6 +2357,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
                     <iTime>1000</iTime>
                     <Yields>
@@ -2435,6 +2545,17 @@
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
                     <iTime>600</iTime>
                     <Yields>
                         <Yield>
@@ -2695,6 +2816,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
                     <iTime>1000</iTime>
                     <Yields>
@@ -2882,6 +3014,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
                     <iTime>1000</iTime>
                     <Yields>
@@ -3014,6 +3157,17 @@
                     <bRemove>1</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <iTime>600</iTime>
+                    <Yields>
+                        <Yield>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iYield>20</iYield>
+                        </Yield>
+                    </Yields>
+                    <bRemove>1</bRemove>
+                </FeatureStruct>
+                <FeatureStruct>
                     <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
                     <iTime>1000</iTime>
                     <Yields>
@@ -3130,7 +3284,7 @@
             <ImprovementType>NONE</ImprovementType>
             <PrereqTerrainType>TERRAIN_GRASS</PrereqTerrainType>
             <ResultTerrainType>NONE</ResultTerrainType>
-            <ResultFeatureType>FEATURE_FOREST</ResultFeatureType>
+            <ResultFeatureType>FEATURE_FOREST_EVERGREEN</ResultFeatureType>
             <RouteType>NONE</RouteType>
             <EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
             <FeatureStructs/>
