@@ -5011,7 +5011,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CHIEF_LEARN_UNIT_DESCRIPTION</Tag>
-        <English>Stranger, you could learn from us and become an [COLOR_UNIT_TEXT]%s1_teach_unit[COLOR_REVERT].</English>
+        <English>Stranger, you could learn from us and become a first-rate [COLOR_UNIT_TEXT]%s1_teach_unit[COLOR_REVERT].</English>
         <French>Étranger, tu pourrais apprendre de nous et devenir une [COLOR_UNIT_TEXT]%s1_teach_unit[COLOR_REVERT].</French>
         <German>Fremder, du könntest von uns lernen und ein [COLOR_UNIT_TEXT]%s1_teach_unit[COLOR_REVERT] werden.</German>
         <Italian>Straniero, potresti imparare da noi e diventare un [COLOR_UNIT_TEXT]%s1_teach_unit[COLOR_REVERT].</Italian>
@@ -5027,7 +5027,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_LIVE_AMONG_NATIVES_1</Tag>
-        <English>Like children you appear to us, unknowing and innocent. Be our guest in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] for a while and we will teach you to become an [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT].</English>
+        <English>You do well, but not as well as you could. Spend some time in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. We've lived here forever. Study our ways to become the best [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT].</English>
         <French>Vous nous apparaissez comme des enfants, ignorants et innocents. Soyez notre invité pour un moment dans la [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] et nous vous apprendrons à devenir une [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT].</French>
         <German>Wie Kinder erscheint Ihr uns, unwissend und unschuldig. Seid eine Weile unser Gast in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] und wir unterrichten Euch, damit Ihr ein [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT] werdet.</German>
         <Italian>Come bambini ci apparite, ignoranti e innocenti. Sii nostro ospite per un po' in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] e ti insegneremo a diventare una [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT].</Italian>
@@ -5453,7 +5453,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_1</Tag>
-        <English>I thank you for your hospitality. Even though you are heathen there's something human about you.</English>
+        <English>Our missionaries are celibate but that's an unlucky mistake. They're poor readers. Jesus actually tells his disciples to celebrate.</English>
         <French>Je vous remercie pour votre hospitalité. Même si vous êtes païens, vous avez peut-être quelque chose d'humain en vous.</French>
         <German>Ich danke Euch für Eure Gastfreundschaft. Auch wenn Ihr Heiden seid, habt Ihr womöglich etwas Menschliches an Euch.</German>
         <Italian>Vi ringrazio per la vostra ospitalità. Anche se siete pagani, potete avere qualcosa di umano in voi.</Italian>
@@ -5461,7 +5461,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_2</Tag>
-        <English>Thank you! The chief's charming daughter made me very happy.</English>
+        <English>Thank you! The chief's charming daughter made me very happy. Until her mother found us.</English>
         <French>Merci ! Aussi pour le fait que la fille du chef m'a rendu heureux avec son charme.</French>
         <German>Habt Dank! Auch dafür, dass mich die Häuptlingstochter mit ihrem Liebreiz beglückte.</German>
         <Italian>Grazie! Anche per il fatto che la figlia del capo mi ha reso felice con il suo fascino.</Italian>
@@ -5469,7 +5469,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_3</Tag>
-        <English>Farewell, friends! I will never lose sight of your destiny. At least not until I'm over the next hilltop.</English>
+        <English>I want to learn your language so I can stay here forever. The way you live is wonderful. The further I travel, the less I ever want to go back.</English>
         <French>Adieu, mes amis ! Je ne perdrai jamais de vue votre destin. Du moins pas avant d'avoir franchi la prochaine colline.</French>
         <German>Lebt wohl, Freunde! Ich werde Euer Schicksal nie aus den Augen verlieren. Zumindestens nicht bis zur nächsten Hügelkuppe.</German>
         <Italian>Addio, amici! Non perderò mai di vista il vostro destino. Almeno non finché non sarò oltre la prossima collina.</Italian>
@@ -5477,7 +5477,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_4</Tag>
-        <English>Thank you for your welcome! Unfortunately I must move on now.</English>
+        <English>If we're really successful then we all get to go back to Europe. Well, for you "back" might be the wrong word.</English>
         <French>Merci de votre accueil ! Mais maintenant, malheureusement, je dois passer à autre chose.</French>
         <German>Danke für Euer Willkommen! Doch muss ich jetzt leider weiterziehen.</German>
         <Italian>Grazie per il vostro benvenuto! Ma ora, purtroppo, devo andare avanti.</Italian>
@@ -5485,7 +5485,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_5</Tag>
-        <English>Farewell! I will keep you in my prayers.</English>
+        <English>I'm sorry to say we're here to kill you, enslave you, assimilate you or isolate you. The difference is that the settlers aren't going to be sorry.</English>
         <French>Adieu ! Je vous garde dans mes prières.</French>
         <German>Lebt wohl! Ich werde Euch in meine Gebete einschließen.</German>
         <Italian>Addio! Vi terrò nelle mie preghiere.</Italian>
@@ -5493,7 +5493,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_6</Tag>
-        <English>Farewell, heathen! I will tell the Great Wise Father in the East about you.</English>
+        <English>Your children are so wild and free, doing whatever they want, never being punished. Our missionaries hate that.</English>
         <French>Adieu, païen ! Je parlerai de vous au Grand Sage Père de l'Orient.</French>
         <German>Lebt wohl, Ihr Wilden! Ich werde dem Großen Weißen Vater im Osten von Euch berichten.</German>
         <Italian>Addio, pagano! Parlerò di voi al Grande Padre Saggio dell'Est.</Italian>
@@ -5509,7 +5509,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_8</Tag>
-        <English>Farewell! And thank you for letting me fill my water bottle.</English>
+        <English>I'm looking for the Fountain of Youth. I want robust good health, but mainly I need to forget all the hard things I've learned in life.</English>
         <French>Adieu ! Et merci de m'avoir laissé remplir ma bouteille d'eau.</French>
         <German>Lebt wohl! Und habt Dank, dass ich meine Wasserflasche füllen durfte.</German>
         <Italian>Addio! E grazie per avermi permesso di riempire la mia bottiglia d'acqua.</Italian>
@@ -5517,7 +5517,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_9</Tag>
-        <English>I'm recovering now, thanks to your shaman who had the skill to sear my wound with a hot coal.</English>
+        <English>In Europe we were told this is Terra Nullius – empty land. How can you even be here? Maybe you’re not real.</English>
         <French>Je me remets maintenant, grâce à votre chaman qui a eu le talent de brûler ma blessure avec un charbon chaud.</French>
         <German>Dann kann ich weiterziehen! Dank Eures Schamanen, der mir mit seiner heiligen Holzkohle dieses gewaltige Furunkel aus dem Arsch gebrannt hat.</German>
         <Italian>Ora mi sto riprendendo, grazie al vostro sciamano che ha avuto l'abilità di bruciare la mia ferita con un carbone caldo.</Italian>
@@ -5533,7 +5533,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_11</Tag>
-        <English>Farewell! Thank you for the pureed mealworms. They were ... (ahem) ... an unusual experience.</English>
+        <English>You've been good to me so I'll tell you something. Be careful in the towns. Those walls and guns that threaten enemies can also be used to control everyone inside.</English>
         <French>Au revoir ! Et merci pour la purée de vers de farine. Ils étaient... (ahem)... une expérience inhabituelle.</French>
         <German>Lebt wohl! Und habt Dank für die pürierten Mehlwürmer. Sie waren ... (ähem) ... eine ungewöhnliche Erfahrung.</German>
         <Italian>Addio! E grazie per il purè di vermi della farina. Erano... (ahem)... un'esperienza insolita.</Italian>
@@ -5549,7 +5549,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_13</Tag>
-        <English>Farewell! I took some of the deep-fried otter tails as a snack for the road.</English>
+        <English>Your world is so much more colourful than ours. We know about indigo but there's a rumour you can make crimson dye from insects. Is such a thing possible?</English>
         <French>Adieu ! D'ailleurs, j'ai encore quelques queues de loutre frites comme en-cas.</French>
         <German>Lebt wohl! Ich habe mir übrigens noch ein paar der frittierten Otterschwänze als Wegzehrung eingesteckt.</German>
         <Italian>Addio! A proposito, ho ancora qualche coda di lontra fritta come spuntino.</Italian>
@@ -5557,7 +5557,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_14</Tag>
-        <English>Farewell! The roasted chinchillas were a delicacy.</English>
+        <English>In Europe beads and bells are cheap trinkets. Here your beaded art and jingle dancers amaze me. Can I bring you more?</English>
         <French>Adieu ! Les chinchillas rôtis étaient un délice.</French>
         <German>Lebt wohl! Die gerösteten Chinchillas waren eine Delikatesse.</German>
         <Italian>Addio! I cincillà arrostiti erano una prelibatezza.</Italian>
@@ -5565,7 +5565,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_15</Tag>
-        <English>I'm afraid I have to move on. Please excuse me for not trying your steamed leeches. In Europe we're used to eels.</English>
+        <English>Please excuse me for not trying your steamed leeches. In Europe we eat only eels.</English>
         <French>J'ai bien peur de devoir passer à autre chose. Veuillez m'excuser de ne pas avoir essayé vos sangsues à la vapeur.</French>
         <German>Ich muss jetzt leider weiterziehen. Und entschuldigt bitte, dass ich die gedünsteten Egel nicht probieren wollte.</German>
         <Italian>Temo di dover andare avanti. Vi prego di scusarmi per non aver provato le vostre sanguisughe al vapore.</Italian>
@@ -5581,7 +5581,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_17</Tag>
-        <English>Thank you for your hospitality, you men! And you women too. The new friendship between our peoples will surely bear fruit. In nine months at the latest.</English>
+        <English>Thank you, you women, for your hospitality! Just so you know, if there's a child, I'm not responsible. I was born to wander.</English>
         <French>Merci pour votre hospitalité, vous les hommes ! Et vous les femmes aussi. La nouvelle amitié entre nos peuples portera sûrement ses fruits. Dans neuf mois au plus tard.</French>
         <German>Habt Dank für Eure Gastfreundschaft, Ihr Männer! Und Ihr Frauen auch. Die neue Freundschaft zwischen unseren Völkern wird sicher Früchte tragen. Spätestens in neun Monaten.</German>
         <Italian>Grazie per la vostra ospitalità, uomini! E anche voi donne. La nuova amicizia tra i nostri popoli darà sicuramente i suoi frutti. Al più tardi tra nove mesi.</Italian>
@@ -5605,7 +5605,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_20</Tag>
-        <English>Thank you for your generous welcome! And for the many gifts - the eagle feather headdress, the beaded moccasins and the two slaves.</English>
+        <English>This country is going be my home now. Can anywhere really be home? In Scotland and Ireland our landlords believe there's more profit without the people.</English>
         <French>Merci pour votre généreux accueil ! Et pour les nombreux cadeaux - la coiffe en plumes d'aigle, les mocassins perlés et les deux esclaves.</French>
         <German>Habt Dank für Euer großzügiges Willkommen! Und für die vielen Geschenke - den Kopfputz aus Adlerfedern, die perlenbestickten Mokassins und die beiden Sklaven.</German>
         <Italian>Grazie per il vostro generoso benvenuto! E per i molti regali - il copricapo di piume d'aquila, i mocassini di perline e i due schiavi.</Italian>
