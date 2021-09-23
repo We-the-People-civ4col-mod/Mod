@@ -11527,20 +11527,20 @@ void CvCity::doLbD()
 			}
 
 			// try to become free if poosible
-			if(pLoopUnit->getUnitInfo().LbD_canGetFree() && !lbd_expert_successful)
+			if(!lbd_expert_successful && pLoopUnit->getUnitInfo().LbD_canGetFree())
 			{
 				lbd_free_successful = LbD_try_get_free(pLoopUnit, base_chance_free, chance_increase_free, pre_rounds_free, mod_free_criminal, mod_free_servant, learn_level);
 			}
 
 			// try to escape if free unsuccesful and escape possible
-			if(pLoopUnit->getUnitInfo().LbD_canEscape() && !lbd_free_successful && !lbd_expert_successful)
+			if(!lbd_free_successful && !lbd_expert_successful && pLoopUnit->getUnitInfo().LbD_canEscape())
 			{
 				lbd_escape_successful = LbD_try_escape(pLoopUnit, base_chance_escape, mod_escape_criminal, mod_escape_servant);
 			}
 
 			// WTP, ray, LbD Slaves Revolt and Free - START
 			// try to revolt if escape revolt possible and free unsuccessful and escape unsuccessufl
-			if(pLoopUnit->getUnitInfo().LbD_canRevolt() && !lbd_escape_successful && !lbd_free_successful && !lbd_expert_successful)
+			if(!lbd_escape_successful && !lbd_free_successful && !lbd_expert_successful && pLoopUnit->getUnitInfo().LbD_canRevolt())
 			{
 				lbd_revolt_successful = LbD_try_revolt(pLoopUnit, base_chance_revolt, mod_revolt_criminal, mod_revolt_slave);
 			}
