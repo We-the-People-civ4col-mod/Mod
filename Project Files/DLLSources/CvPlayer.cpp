@@ -4975,10 +4975,6 @@ void CvPlayer::disband(CvCity* pCity, bool bAbandon)
 		setFoundedFirstCity(false);
 	}
 
-
-	pCity->kill();
-
-
 	// Early exit in case the city was razed
 	if (!bAbandon)
 	{
@@ -4987,14 +4983,15 @@ void CvPlayer::disband(CvCity* pCity, bool bAbandon)
 	}
 
 	CvPlot* const pCityPlot = pCity->plot();
+	const PlayerTypes eCityOwner = pCity->getOwnerINLINE();
 	
+	pCity->kill();
+
 	// No ruins for a city that was voluntarily abandoned
 	pCityPlot->setImprovementType(NO_IMPROVEMENT);
 
 	// Loop through all the plots of the city and subtract the free culture that the city itself added.
 	// Culture added by buildings will be kept
-
-	const PlayerTypes eCityOwner = pCity->getOwnerINLINE();
 
 	// TODO: What about civs that get free culture producing buildings?
 	if (pCityPlot->getCulture(eCityOwner) >= GC.getDefineINT("FREE_CITY_CULTURE"))
@@ -5016,7 +5013,6 @@ void CvPlayer::disband(CvCity* pCity, bool bAbandon)
 			}
 		}
 	}
-
 
 	if (pCityPlot->getOwner() == NO_PLAYER)
 	{
