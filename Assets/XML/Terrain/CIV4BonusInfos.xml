@@ -88,7 +88,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -225,7 +225,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -362,7 +362,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -499,7 +499,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -627,7 +627,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -751,7 +751,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -880,7 +880,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1001,7 +1001,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1122,7 +1122,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1243,7 +1243,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1355,7 +1355,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1475,7 +1475,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1595,7 +1595,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1708,7 +1708,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1825,7 +1825,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -1937,7 +1937,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2050,7 +2050,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2158,7 +2158,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2266,7 +2266,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2374,7 +2374,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2478,7 +2478,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2582,7 +2582,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2694,7 +2694,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2814,7 +2814,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -2935,7 +2935,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -3060,7 +3060,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -3188,7 +3188,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -3316,7 +3316,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -3432,7 +3432,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -3560,7 +3560,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -4141,7 +4141,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -4721,7 +4721,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -4830,7 +4830,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -5002,7 +5002,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -5134,7 +5134,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -5273,7 +5273,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -5380,7 +5380,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -5588,7 +5588,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -5883,7 +5883,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -6051,7 +6051,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -6175,7 +6175,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -6304,7 +6304,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -6437,7 +6437,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -6574,7 +6574,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -6715,7 +6715,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -7003,7 +7003,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -7168,7 +7168,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -7293,7 +7293,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -7418,7 +7418,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -7543,7 +7543,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -7668,7 +7668,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -7769,7 +7769,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -7878,7 +7878,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -8007,7 +8007,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -8136,7 +8136,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -8284,7 +8284,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -8593,7 +8593,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -8738,7 +8738,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -8865,7 +8865,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -9081,7 +9081,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -9205,7 +9205,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -9341,7 +9341,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -9465,7 +9465,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -9572,7 +9572,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -9701,7 +9701,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -9822,7 +9822,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -9943,7 +9943,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -10059,7 +10059,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -10175,7 +10175,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -10300,7 +10300,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -10500,7 +10500,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -10744,7 +10744,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -10988,7 +10988,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -11344,7 +11344,7 @@
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>

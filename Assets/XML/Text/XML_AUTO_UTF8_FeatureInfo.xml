@@ -224,18 +224,18 @@
         <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fruchtbares Schwemmland[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_FEATURE_CLAY_PIT</Tag>
-        <English>Clay Pit</English>
+        <Tag>TXT_KEY_FEATURE_CRATER</Tag>
+        <English>Meteor Crater</English>
         <German>
-            <Text>Lehmgrube</Text>
+            <Text>Meteoritenkrater</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_FEATURE_CLAY_PIT_PEDIA</Tag>
-        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Clay Pit[COLOR_REVERT] </English>
-        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lehmgrube[COLOR_REVERT] </German>
+        <Tag>TXT_KEY_FEATURE_CRATER_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Meteor Crater[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Meteoritenkrater[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN</Tag>

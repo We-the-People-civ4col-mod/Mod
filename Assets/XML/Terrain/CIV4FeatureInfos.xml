@@ -1018,10 +1018,10 @@
             <iAdvancedStartRemoveCost>40</iAdvancedStartRemoveCost>
         </FeatureInfo>
         <FeatureInfo>
-            <Type>FEATURE_CLAY_PIT</Type>
-            <Description>TXT_KEY_FEATURE_CLAY_PIT</Description>
-            <Civilopedia>TXT_KEY_FEATURE_CLAY_PIT_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_FEATURE_CLAY_PIT</ArtDefineTag>
+            <Type>FEATURE_CRATER</Type>
+            <Description>TXT_KEY_FEATURE_CRATER</Description>
+            <Civilopedia>TXT_KEY_FEATURE_CRATER_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_FEATURE_CRATER</ArtDefineTag>
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_COTTON</YieldType>

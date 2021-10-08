@@ -267,7 +267,7 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -554,7 +554,7 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -737,7 +737,7 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -920,7 +920,7 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -1103,7 +1103,7 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -1291,7 +1291,7 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -1797,7 +1797,7 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -1983,7 +1983,7 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -2209,7 +2209,7 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -2994,7 +2994,7 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -3169,7 +3169,7 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -3675,7 +3675,7 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -3889,7 +3889,7 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -4082,7 +4082,7 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -4280,7 +4280,7 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -5047,7 +5047,7 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -5210,7 +5210,7 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -5324,7 +5324,7 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -5438,7 +5438,7 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -5546,7 +5546,7 @@
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
-                    <FeatureType>FEATURE_CLAY_PIT</FeatureType>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
