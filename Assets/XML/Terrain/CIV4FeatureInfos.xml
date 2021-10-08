@@ -1069,7 +1069,7 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_ORE</YieldType>
-                    <iValue>-2</iValue>
+                    <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SILVER</YieldType>
@@ -1081,11 +1081,11 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_GEMS</YieldType>
-                    <iValue>-1</iValue>
+                    <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_STONE</YieldType>
-                    <iValue>-1</iValue>
+                    <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SHEEP</YieldType>
