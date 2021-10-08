@@ -1052,6 +1052,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_CASSAVA</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Cassava/wheat.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/Cassava_Button.dds</Button>
+            <FontButtonIndex>93</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_BEANS</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>0.7</fInterfaceScale>
