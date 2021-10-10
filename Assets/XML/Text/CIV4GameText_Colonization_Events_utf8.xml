@@ -585,6 +585,30 @@
         <German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in %s3_player</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENT_PRICE_INCREASE_AFRICA</Tag>
+        <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in Africa</English>
+        <French>[ICON_BULLET]Le prix augmente de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez Africa</French>
+        <German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Africa</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PRICE_DECREASE_AFRICA</Tag>
+        <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in Africa</English>
+        <French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez Africa</French>
+        <German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Africa</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PRICE_INCREASE_PORT_ROYAL</Tag>
+        <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in Port Royal</English>
+        <French>[ICON_BULLET]Le prix augmente de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez Port Royal</French>
+        <German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Port Royal</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PRICE_DECREASE_PORT_ROYAL</Tag>
+        <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in Port Royal</English>
+        <French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez Port Royal</French>
+        <German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Port Royal</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENT_FATHER_POINTS</Tag>
         <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_fathertype %s3_fathertype</English>
         <French>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_fathertype %s3_fathertype</French>
@@ -2594,8 +2618,28 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>
-        <English>Trade the following quantity of goods to the colonies [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
-        <German>Liefere die folgende Warenmenge in die Kolonien [COLOR_FONT_GOLD]bevor es eine andere Nation tut:[COLOR_REVERT] [NEWLINE]%D1_amount %F2_yield</German>
+        <English>Trade the following quantity of goods from Europe to the colonies [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
+        <German>Liefere die folgende Warenmenge aus Europa in die Kolonien [COLOR_FONT_GOLD]bevor es eine andere Nation tut:[COLOR_REVERT] [NEWLINE]%D1_amount %F2_yield</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
+        <English>Trade this quantity of goods with Africa [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
+        <German>Liefere die folgende Warenmenge nach Afrika [COLOR_FONT_GOLD]bevor es eine andere Nation tut:[COLOR_REVERT] [NEWLINE]%D1_amount %F2_yield</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>
+        <English>Trade the following quantity of goods from Africa to the colonies [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
+        <German>Liefere die folgende Warenmenge aus Afrika in die Kolonien [COLOR_FONT_GOLD]bevor es eine andere Nation tut:[COLOR_REVERT] [NEWLINE]%D1_amount %F2_yield</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PORT_ROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
+        <English>Trade this quantity of goods with Port Royal [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
+        <German>Liefere die folgende Warenmenge nach Port Royal [COLOR_FONT_GOLD]bevor es eine andere Nation tut:[COLOR_REVERT] [NEWLINE]%D1_amount %F2_yield</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PORT_ROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>
+        <English>Trade the following quantity of goods from Port Royal to the colonies [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
+        <German>Liefere die folgende Warenmenge aus Port Royal in die Kolonien [COLOR_FONT_GOLD]bevor es eine andere Nation tut:[COLOR_REVERT] [NEWLINE]%D1_amount %F2_yield</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_PRICE_AND_ATTITUDE_HELP</Tag>

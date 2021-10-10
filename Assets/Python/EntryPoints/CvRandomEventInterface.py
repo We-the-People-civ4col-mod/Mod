@@ -3258,7 +3258,7 @@ def applyQuestDoneEuropeTradePriceAndAttitude(argsList):
 	iPrice = king.getYieldBuyPrice(iYield)
 	king.setYieldBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
 
-####### Here Start all the QUEST TRIGGERS Functions #######
+####### Here start all the EUROPE QUEST TRIGGERS Functions #######
 # These are the specific checks for the specific Event Triggers
 
 def canTriggerEuropeTradeQuest_SUGAR_START(argsList):
@@ -4639,3 +4639,637 @@ def canTriggerEuropeTradeQuest_LUXURY_GOODS_DONE(argsList):
 	
 	return bTrigger
 
+######## AFRICA TRADE Events ###########
+
+## Explanations ##
+# use this as info for XML Event setup
+# The Generic Parameters are all configured in the Events the Event Triggers offer
+
+#Start Quest Event: The Trigger for it needs to be setup as "City Trigger"
+# Generic Parameter 1: Amount to start the Quest
+# Generic Parameter 2: Yield ID used for the Quest
+# Generic Parameter 3: Amount to successfully finish the Quest
+
+#Done Quest Event: The Trigger for it needs to be setup as "City Trigger"
+# Generic Parameter 1: Amount to successfully finish the Quest
+# Generic Parameter 2: Yield ID used for the Quest
+# Generic Parameter 3: King Relations Change
+# Generic Parameter 4: Yield Price Change
+
+# This is generic function called by the specific functions of the Trigger! - Not directly by the Trigger XML.
+# It uses the argsList of the Events forwarded by the Trigger as function Parameter
+def CanDoAfricaTrade(argsList, iYieldID, iQuantity):
+
+	ePlayer = argsList[1]
+	
+	# safety checks to make sure it is a colonial player
+	player = gc.getPlayer(ePlayer)
+	if not player.isPlayable():
+		return false
+	
+	# this here should not be needed because isPlayable but since we have Asserts ... 
+	if player.isNative():
+		return false
+	
+	king = gc.getPlayer(player.getParent())
+	if not king.isEurope():
+		return false
+	
+	# This would break immersion and make event unlogical
+	if player.isInRevolution():
+		return false
+	
+	# because we might want to do something with the City
+	iCityId = argsList[2]
+	city = player.getCity(iCityId)
+	if city.isNone():
+		return false
+	
+	# here we select the Amount of the Yield from function argument iQuantity
+	quantity = iQuantity
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	
+	# here we check Handicap Setting for AI only to avoid confusing number in texts when Difficulty changes
+	Handicap = gc.getHandicapInfo(CyGame().getHandicapType())
+	#for AI
+	if not player.isHuman():
+		quantity = quantity * Handicap.getAITrainPercent()/100
+	
+	# now we check if enough of the Yield has been traded with Africa using function argument iYieldID
+	if player.getYieldTradedTotalINTAfrica(iYieldID) < quantity:
+		return false
+	return true
+
+# This is the Function for the Event Target Yield and Target Amount
+# This Function is only used for the "Quest Start"
+def getHelpQuestStartAfricaTradeYieldAndAmount(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	
+	# getting Player and King
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	
+	# we get the Yield as Parameter from Event 
+	yields = {
+		0 : "YIELD_FOOD",
+		1 : "YIELD_LUMBER",
+		2 : "YIELD_STONE",
+		3 : "YIELD_HEMP",
+		4 : "YIELD_ORE",
+		5 : "YIELD_SHEEP",
+		6 : "YIELD_CATTLE",
+		7 : "YIELD_HORSES",
+		8 : "YIELD_COCA_LEAVES",
+		9 : "YIELD_COCOA_FRUITS",
+		10 : "YIELD_COFFEE_BERRIES",
+		11 : "YIELD_TOBACCO",
+		12 : "YIELD_WOOL",
+		13 : "YIELD_COTTON",
+		14 : "YIELD_INDIGO",
+		15 : "YIELD_HIDES",
+		16 : "YIELD_FUR",
+		17 : "YIELD_PREMIUM_FUR",
+		18 : "YIELD_RAW_SALT",
+		19 : "YIELD_RED_PEPPER",
+		20 : "YIELD_BARLEY",
+		21 : "YIELD_SUGAR",
+		22 : "YIELD_GRAPES",
+		23 : "YIELD_WHALE_BLUBBER",
+		24 : "YIELD_VALUABLE_WOOD",
+		25 : "YIELD_TRADE_GOODS",
+		26 : "YIELD_ROPE",
+		27 : "YIELD_SAILCLOTH",
+		28 : "YIELD_TOOLS",
+		29 : "YIELD_BLADES",
+		30 : "YIELD_MUSKETS",
+		31 : "YIELD_CANNONS",
+		32 : "YIELD_SILVER",
+		33 : "YIELD_GOLD",
+		34 : "YIELD_GEMS",
+		35 : "YIELD_COCOA",
+		36 : "YIELD_COFFEE",
+		37 : "YIELD_CIGARS",
+		38 : "YIELD_WOOL_CLOTH",
+		39 : "YIELD_CLOTH",
+		40 : "YIELD_COLOURED_CLOTH",
+		41 : "YIELD_LEATHER",
+		42 : "YIELD_COATS",
+		43 : "YIELD_PREMIUM_COATS",
+		44 : "YIELD_SALT",
+		45 : "YIELD_SPICES",
+		46 : "YIELD_BEER",
+		47 : "YIELD_RUM",
+		48 : "YIELD_WINE",
+		49 : "YIELD_WHALE_OIL",
+		50 : "YIELD_FURNITURE",
+		51 : "YIELD_LUXURY_GOODS"
+		}
+	# First we get the Yield for this Event
+	iChoose = yields[event.getGenericParameter(2)]
+	iYield = gc.getInfoTypeForString(iChoose)
+	
+	# Second we get the Target Quantity to deliver and of course also consider gamespeed
+	quantity = event.getGenericParameter(3)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	
+	# here we check Handicap Setting for AI only to avoid confusing number in texts
+	Handicap = gc.getHandicapInfo(CyGame().getHandicapType())
+	#for AI
+	if not player.isHuman():
+		quantity = quantity * Handicap.getAITrainPercent()/100
+
+	# Now we construct the Help Text
+	szHelp = ""
+	if quantity > 0 :
+		if event.getGenericParameter(2) != 25 and event.getGenericParameter(2) != 51:
+			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP", (quantity, gc.getYieldInfo(iYield).getChar()))
+		elif event.getGenericParameter(2) == 25 or event.getGenericParameter(2) == 51:
+			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY", (quantity, gc.getYieldInfo(iYield).getChar()))
+	return szHelp
+
+# This is the Function for the Event Help Text for Price and Attitude
+# This Function is only used for the "Quest Done"
+def getHelpQuestDoneAfricaTradePriceAndAttitude(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	
+	# getting Player and King
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	
+	# we get the Yield as Parameter from Event 
+	yields = {
+		0 : "YIELD_FOOD",
+		1 : "YIELD_LUMBER",
+		2 : "YIELD_STONE",
+		3 : "YIELD_HEMP",
+		4 : "YIELD_ORE",
+		5 : "YIELD_SHEEP",
+		6 : "YIELD_CATTLE",
+		7 : "YIELD_HORSES",
+		8 : "YIELD_COCA_LEAVES",
+		9 : "YIELD_COCOA_FRUITS",
+		10 : "YIELD_COFFEE_BERRIES",
+		11 : "YIELD_TOBACCO",
+		12 : "YIELD_WOOL",
+		13 : "YIELD_COTTON",
+		14 : "YIELD_INDIGO",
+		15 : "YIELD_HIDES",
+		16 : "YIELD_FUR",
+		17 : "YIELD_PREMIUM_FUR",
+		18 : "YIELD_RAW_SALT",
+		19 : "YIELD_RED_PEPPER",
+		20 : "YIELD_BARLEY",
+		21 : "YIELD_SUGAR",
+		22 : "YIELD_GRAPES",
+		23 : "YIELD_WHALE_BLUBBER",
+		24 : "YIELD_VALUABLE_WOOD",
+		25 : "YIELD_TRADE_GOODS",
+		26 : "YIELD_ROPE",
+		27 : "YIELD_SAILCLOTH",
+		28 : "YIELD_TOOLS",
+		29 : "YIELD_BLADES",
+		30 : "YIELD_MUSKETS",
+		31 : "YIELD_CANNONS",
+		32 : "YIELD_SILVER",
+		33 : "YIELD_GOLD",
+		34 : "YIELD_GEMS",
+		35 : "YIELD_COCOA",
+		36 : "YIELD_COFFEE",
+		37 : "YIELD_CIGARS",
+		38 : "YIELD_WOOL_CLOTH",
+		39 : "YIELD_CLOTH",
+		40 : "YIELD_COLOURED_CLOTH",
+		41 : "YIELD_LEATHER",
+		42 : "YIELD_COATS",
+		43 : "YIELD_PREMIUM_COATS",
+		44 : "YIELD_SALT",
+		45 : "YIELD_SPICES",
+		46 : "YIELD_BEER",
+		47 : "YIELD_RUM",
+		48 : "YIELD_WINE",
+		49 : "YIELD_WHALE_OIL",
+		50 : "YIELD_FURNITURE",
+		51 : "YIELD_LUXURY_GOODS"
+		}
+	iChoose = yields[event.getGenericParameter(2)]
+	iYield = gc.getInfoTypeForString(iChoose)
+
+	#szHelp = localText.getText("TXT_KEY_EVENT_EUROPE_TRADE_PRICE_AND_ATTITUDE_HELP", ())
+	szHelp = ""
+	if event.getGenericParameter(4) > 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PRICE_INCREASE_AFRICA", (event.getGenericParameter(4), gc.getYieldInfo(iYield).getChar(), king.getCivilizationShortDescriptionKey()))
+	if event.getGenericParameter(4) < 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PRICE_DECREASE_AFRICA", (event.getGenericParameter(4), gc.getYieldInfo(iYield).getChar(), king.getCivilizationShortDescriptionKey()))
+	if event.getGenericParameter(3) > 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_INCREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
+	if event.getGenericParameter(3) < 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_DECREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
+	return szHelp
+
+# This is the Function for the Event Help to apply Price and Attitude changes
+# This Function is only used for the "Quest DONE"
+def applyQuestDoneAfricaTradePriceAndAttitude(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	
+	# getting King and Player
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	
+	# changing the Attitude
+	player.AI_changeAttitudeExtra(eking, event.getGenericParameter(3))
+	king.AI_changeAttitudeExtra(kTriggeredData.ePlayer, event.getGenericParameter(3))
+	
+	# getting the Yield for the Price Change
+	yields = {
+		0 : "YIELD_FOOD",
+		1 : "YIELD_LUMBER",
+		2 : "YIELD_STONE",
+		3 : "YIELD_HEMP",
+		4 : "YIELD_ORE",
+		5 : "YIELD_SHEEP",
+		6 : "YIELD_CATTLE",
+		7 : "YIELD_HORSES",
+		8 : "YIELD_COCA_LEAVES",
+		9 : "YIELD_COCOA_FRUITS",
+		10 : "YIELD_COFFEE_BERRIES",
+		11 : "YIELD_TOBACCO",
+		12 : "YIELD_WOOL",
+		13 : "YIELD_COTTON",
+		14 : "YIELD_INDIGO",
+		15 : "YIELD_HIDES",
+		16 : "YIELD_FUR",
+		17 : "YIELD_PREMIUM_FUR",
+		18 : "YIELD_RAW_SALT",
+		19 : "YIELD_RED_PEPPER",
+		20 : "YIELD_BARLEY",
+		21 : "YIELD_SUGAR",
+		22 : "YIELD_GRAPES",
+		23 : "YIELD_WHALE_BLUBBER",
+		24 : "YIELD_VALUABLE_WOOD",
+		25 : "YIELD_TRADE_GOODS",
+		26 : "YIELD_ROPE",
+		27 : "YIELD_SAILCLOTH",
+		28 : "YIELD_TOOLS",
+		29 : "YIELD_BLADES",
+		30 : "YIELD_MUSKETS",
+		31 : "YIELD_CANNONS",
+		32 : "YIELD_SILVER",
+		33 : "YIELD_GOLD",
+		34 : "YIELD_GEMS",
+		35 : "YIELD_COCOA",
+		36 : "YIELD_COFFEE",
+		37 : "YIELD_CIGARS",
+		38 : "YIELD_WOOL_CLOTH",
+		39 : "YIELD_CLOTH",
+		40 : "YIELD_COLOURED_CLOTH",
+		41 : "YIELD_LEATHER",
+		42 : "YIELD_COATS",
+		43 : "YIELD_PREMIUM_COATS",
+		44 : "YIELD_SALT",
+		45 : "YIELD_SPICES",
+		46 : "YIELD_BEER",
+		47 : "YIELD_RUM",
+		48 : "YIELD_WINE",
+		49 : "YIELD_WHALE_OIL",
+		50 : "YIELD_FURNITURE",
+		51 : "YIELD_LUXURY_GOODS"
+		}
+	
+	# changing the Price
+	iChoose = yields[event.getGenericParameter(2)]
+	iYield = gc.getInfoTypeForString(iChoose)
+	# careful, uses Africa methods here
+	iPrice = king.getYieldAfricaBuyPrice(iYield)
+	king.setYieldAfricaBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
+
+####### Here start all the AFICA QUEST TRIGGERS Functions #######
+# These are the specific checks for the specific Event Triggers
+
+
+######## PORT ROYAL TRADE Events ###########
+
+## Explanations ##
+# use this as info for XML Event setup
+# The Generic Parameters are all configured in the Events the Event Triggers offer
+
+#Start Quest Event: The Trigger for it needs to be setup as "City Trigger"
+# Generic Parameter 1: Amount to start the Quest
+# Generic Parameter 2: Yield ID used for the Quest
+# Generic Parameter 3: Amount to successfully finish the Quest
+
+#Done Quest Event: The Trigger for it needs to be setup as "City Trigger"
+# Generic Parameter 1: Amount to successfully finish the Quest
+# Generic Parameter 2: Yield ID used for the Quest
+# Generic Parameter 3: King Relations Change
+# Generic Parameter 4: Yield Price Change
+
+# This is generic function called by the specific functions of the Trigger! - Not directly by the Trigger XML.
+# It uses the argsList of the Events forwarded by the Trigger as function Parameter
+def CanDoPortRoyalTrade(argsList, iYieldID, iQuantity):
+
+	ePlayer = argsList[1]
+	
+	# safety checks to make sure it is a colonial player
+	player = gc.getPlayer(ePlayer)
+	if not player.isPlayable():
+		return false
+	
+	# this here should not be needed because isPlayable but since we have Asserts ... 
+	if player.isNative():
+		return false
+	
+	king = gc.getPlayer(player.getParent())
+	if not king.isEurope():
+		return false
+	
+	# For Port Royal this is not needed, because Trade is also possible during Revolution
+	#if player.isInRevolution():
+	#	return false
+	
+	# because we might want to do something with the City
+	iCityId = argsList[2]
+	city = player.getCity(iCityId)
+	if city.isNone():
+		return false
+	
+	# here we select the Amount of the Yield from function argument iQuantity
+	quantity = iQuantity
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	
+	# here we check Handicap Setting for AI only to avoid confusing number in texts when Difficulty changes
+	Handicap = gc.getHandicapInfo(CyGame().getHandicapType())
+	#for AI
+	if not player.isHuman():
+		quantity = quantity * Handicap.getAITrainPercent()/100
+	
+	# now we check if enough of the Yield has been traded with Port Royal using function argument iYieldID
+	if player.getYieldTradedTotalINTPortRoyal(iYieldID) < quantity:
+		return false
+	return true
+
+# This is the Function for the Event Target Yield and Target Amount
+# This Function is only used for the "Quest Start"
+def getHelpQuestStartPortRoyalTradeYieldAndAmount(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	
+	# getting Player and King
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	
+	# we get the Yield as Parameter from Event 
+	yields = {
+		0 : "YIELD_FOOD",
+		1 : "YIELD_LUMBER",
+		2 : "YIELD_STONE",
+		3 : "YIELD_HEMP",
+		4 : "YIELD_ORE",
+		5 : "YIELD_SHEEP",
+		6 : "YIELD_CATTLE",
+		7 : "YIELD_HORSES",
+		8 : "YIELD_COCA_LEAVES",
+		9 : "YIELD_COCOA_FRUITS",
+		10 : "YIELD_COFFEE_BERRIES",
+		11 : "YIELD_TOBACCO",
+		12 : "YIELD_WOOL",
+		13 : "YIELD_COTTON",
+		14 : "YIELD_INDIGO",
+		15 : "YIELD_HIDES",
+		16 : "YIELD_FUR",
+		17 : "YIELD_PREMIUM_FUR",
+		18 : "YIELD_RAW_SALT",
+		19 : "YIELD_RED_PEPPER",
+		20 : "YIELD_BARLEY",
+		21 : "YIELD_SUGAR",
+		22 : "YIELD_GRAPES",
+		23 : "YIELD_WHALE_BLUBBER",
+		24 : "YIELD_VALUABLE_WOOD",
+		25 : "YIELD_TRADE_GOODS",
+		26 : "YIELD_ROPE",
+		27 : "YIELD_SAILCLOTH",
+		28 : "YIELD_TOOLS",
+		29 : "YIELD_BLADES",
+		30 : "YIELD_MUSKETS",
+		31 : "YIELD_CANNONS",
+		32 : "YIELD_SILVER",
+		33 : "YIELD_GOLD",
+		34 : "YIELD_GEMS",
+		35 : "YIELD_COCOA",
+		36 : "YIELD_COFFEE",
+		37 : "YIELD_CIGARS",
+		38 : "YIELD_WOOL_CLOTH",
+		39 : "YIELD_CLOTH",
+		40 : "YIELD_COLOURED_CLOTH",
+		41 : "YIELD_LEATHER",
+		42 : "YIELD_COATS",
+		43 : "YIELD_PREMIUM_COATS",
+		44 : "YIELD_SALT",
+		45 : "YIELD_SPICES",
+		46 : "YIELD_BEER",
+		47 : "YIELD_RUM",
+		48 : "YIELD_WINE",
+		49 : "YIELD_WHALE_OIL",
+		50 : "YIELD_FURNITURE",
+		51 : "YIELD_LUXURY_GOODS"
+		}
+	# First we get the Yield for this Event
+	iChoose = yields[event.getGenericParameter(2)]
+	iYield = gc.getInfoTypeForString(iChoose)
+	
+	# Second we get the Target Quantity to deliver and of course also consider gamespeed
+	quantity = event.getGenericParameter(3)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	
+	# here we check Handicap Setting for AI only to avoid confusing number in texts
+	Handicap = gc.getHandicapInfo(CyGame().getHandicapType())
+	#for AI
+	if not player.isHuman():
+		quantity = quantity * Handicap.getAITrainPercent()/100
+
+	# Now we construct the Help Text
+	szHelp = ""
+	if quantity > 0 :
+		if event.getGenericParameter(2) != 25 and event.getGenericParameter(2) != 51:
+			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PORT_ROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP", (quantity, gc.getYieldInfo(iYield).getChar()))
+		elif event.getGenericParameter(2) == 25 or event.getGenericParameter(2) == 51:
+			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PORT_ROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY", (quantity, gc.getYieldInfo(iYield).getChar()))
+	return szHelp
+
+# This is the Function for the Event Help Text for Price and Attitude
+# This Function is only used for the "Quest Done"
+def getHelpQuestDonePortRoyalTradePriceAndAttitude(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	
+	# getting Player and King
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	
+	# we get the Yield as Parameter from Event 
+	yields = {
+		0 : "YIELD_FOOD",
+		1 : "YIELD_LUMBER",
+		2 : "YIELD_STONE",
+		3 : "YIELD_HEMP",
+		4 : "YIELD_ORE",
+		5 : "YIELD_SHEEP",
+		6 : "YIELD_CATTLE",
+		7 : "YIELD_HORSES",
+		8 : "YIELD_COCA_LEAVES",
+		9 : "YIELD_COCOA_FRUITS",
+		10 : "YIELD_COFFEE_BERRIES",
+		11 : "YIELD_TOBACCO",
+		12 : "YIELD_WOOL",
+		13 : "YIELD_COTTON",
+		14 : "YIELD_INDIGO",
+		15 : "YIELD_HIDES",
+		16 : "YIELD_FUR",
+		17 : "YIELD_PREMIUM_FUR",
+		18 : "YIELD_RAW_SALT",
+		19 : "YIELD_RED_PEPPER",
+		20 : "YIELD_BARLEY",
+		21 : "YIELD_SUGAR",
+		22 : "YIELD_GRAPES",
+		23 : "YIELD_WHALE_BLUBBER",
+		24 : "YIELD_VALUABLE_WOOD",
+		25 : "YIELD_TRADE_GOODS",
+		26 : "YIELD_ROPE",
+		27 : "YIELD_SAILCLOTH",
+		28 : "YIELD_TOOLS",
+		29 : "YIELD_BLADES",
+		30 : "YIELD_MUSKETS",
+		31 : "YIELD_CANNONS",
+		32 : "YIELD_SILVER",
+		33 : "YIELD_GOLD",
+		34 : "YIELD_GEMS",
+		35 : "YIELD_COCOA",
+		36 : "YIELD_COFFEE",
+		37 : "YIELD_CIGARS",
+		38 : "YIELD_WOOL_CLOTH",
+		39 : "YIELD_CLOTH",
+		40 : "YIELD_COLOURED_CLOTH",
+		41 : "YIELD_LEATHER",
+		42 : "YIELD_COATS",
+		43 : "YIELD_PREMIUM_COATS",
+		44 : "YIELD_SALT",
+		45 : "YIELD_SPICES",
+		46 : "YIELD_BEER",
+		47 : "YIELD_RUM",
+		48 : "YIELD_WINE",
+		49 : "YIELD_WHALE_OIL",
+		50 : "YIELD_FURNITURE",
+		51 : "YIELD_LUXURY_GOODS"
+		}
+	iChoose = yields[event.getGenericParameter(2)]
+	iYield = gc.getInfoTypeForString(iChoose)
+
+	#szHelp = localText.getText("TXT_KEY_EVENT_EUROPE_TRADE_PRICE_AND_ATTITUDE_HELP", ())
+	szHelp = ""
+	if event.getGenericParameter(4) > 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PRICE_INCREASE_PORT_ROYAL", (event.getGenericParameter(4), gc.getYieldInfo(iYield).getChar(), king.getCivilizationShortDescriptionKey()))
+	if event.getGenericParameter(4) < 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PRICE_DECREASE_PORT_ROYAL", (event.getGenericParameter(4), gc.getYieldInfo(iYield).getChar(), king.getCivilizationShortDescriptionKey()))
+	if event.getGenericParameter(3) > 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_INCREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
+	if event.getGenericParameter(3) < 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_DECREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
+	return szHelp
+
+# This is the Function for the Event Help to apply Price and Attitude changes
+# This Function is only used for the "Quest DONE"
+def applyQuestDonePortRoyalTradePriceAndAttitude(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	
+	# getting King and Player
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	
+	# changing the Attitude
+	player.AI_changeAttitudeExtra(eking, event.getGenericParameter(3))
+	king.AI_changeAttitudeExtra(kTriggeredData.ePlayer, event.getGenericParameter(3))
+	
+	# getting the Yield for the Price Change
+	yields = {
+		0 : "YIELD_FOOD",
+		1 : "YIELD_LUMBER",
+		2 : "YIELD_STONE",
+		3 : "YIELD_HEMP",
+		4 : "YIELD_ORE",
+		5 : "YIELD_SHEEP",
+		6 : "YIELD_CATTLE",
+		7 : "YIELD_HORSES",
+		8 : "YIELD_COCA_LEAVES",
+		9 : "YIELD_COCOA_FRUITS",
+		10 : "YIELD_COFFEE_BERRIES",
+		11 : "YIELD_TOBACCO",
+		12 : "YIELD_WOOL",
+		13 : "YIELD_COTTON",
+		14 : "YIELD_INDIGO",
+		15 : "YIELD_HIDES",
+		16 : "YIELD_FUR",
+		17 : "YIELD_PREMIUM_FUR",
+		18 : "YIELD_RAW_SALT",
+		19 : "YIELD_RED_PEPPER",
+		20 : "YIELD_BARLEY",
+		21 : "YIELD_SUGAR",
+		22 : "YIELD_GRAPES",
+		23 : "YIELD_WHALE_BLUBBER",
+		24 : "YIELD_VALUABLE_WOOD",
+		25 : "YIELD_TRADE_GOODS",
+		26 : "YIELD_ROPE",
+		27 : "YIELD_SAILCLOTH",
+		28 : "YIELD_TOOLS",
+		29 : "YIELD_BLADES",
+		30 : "YIELD_MUSKETS",
+		31 : "YIELD_CANNONS",
+		32 : "YIELD_SILVER",
+		33 : "YIELD_GOLD",
+		34 : "YIELD_GEMS",
+		35 : "YIELD_COCOA",
+		36 : "YIELD_COFFEE",
+		37 : "YIELD_CIGARS",
+		38 : "YIELD_WOOL_CLOTH",
+		39 : "YIELD_CLOTH",
+		40 : "YIELD_COLOURED_CLOTH",
+		41 : "YIELD_LEATHER",
+		42 : "YIELD_COATS",
+		43 : "YIELD_PREMIUM_COATS",
+		44 : "YIELD_SALT",
+		45 : "YIELD_SPICES",
+		46 : "YIELD_BEER",
+		47 : "YIELD_RUM",
+		48 : "YIELD_WINE",
+		49 : "YIELD_WHALE_OIL",
+		50 : "YIELD_FURNITURE",
+		51 : "YIELD_LUXURY_GOODS"
+		}
+	
+	# changing the Price
+	iChoose = yields[event.getGenericParameter(2)]
+	iYield = gc.getInfoTypeForString(iChoose)
+	# careful, uses Port Royal methods here
+	iPrice = king.getYieldPortRoyalBuyPrice(iYield)
+	king.setYieldPortRoyalBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
+
+####### Here start all the PORT ROYAL QUEST TRIGGERS Functions #######
+# These are the specific checks for the specific Event Triggers
