@@ -722,16 +722,34 @@ public:
 	void buyUnitsFromKing();
 	int getYieldTradedTotal(YieldTypes eYield) const;
 	void setYieldTradedTotal(YieldTypes eYield, int iValue);
+	// WTP, ray, Yields Traded Total for Africa and Port Royal - START
+	int getYieldTradedTotalAfrica(YieldTypes eYield) const;
+	void setYieldTradedTotalAfrica(YieldTypes eYield, int iValue);
+	int getYieldTradedTotalPortRoyal(YieldTypes eYield) const;
+	void setYieldTradedTotalPortRoyal(YieldTypes eYield, int iValue);
+	// WTP, ray, Yields Traded Total for Africa and Port Royal - END
 	// R&R, vetiarvind, Price dependent tax rate change - Start
 	int CvPlayer::getYieldScoreTotal(YieldTypes eYield) const;
 	void CvPlayer::setYieldScoreTotal(YieldTypes eYield, int iValue);
 	void CvPlayer::changeYieldTradedTotal(YieldTypes eYield, int iChange, int iUnitPrice = -1);
+	void CvPlayer::changeYieldTradedTotalAfrica(YieldTypes eYield, int iChange, int iUnitPrice = -1); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+	void CvPlayer::changeYieldTradedTotalPortRoyal(YieldTypes eYield, int iChange, int iUnitPrice = -1); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 	//void changeYieldTradedTotal(YieldTypes eYield, int iChange);
 	// R&R, vetiarvind, Price dependent tax rate change - End
 	
 	int getYieldBoughtTotal(YieldTypes eYield) const;
 	void setYieldBoughtTotal(YieldTypes eYield, int iValue);
 	void changeYieldBoughtTotal(YieldTypes eYield, int iChange);
+
+	// WTP, ray, Yields Traded Total for Africa and Port Royal - START
+	int getYieldBoughtTotalAfrica(YieldTypes eYield) const;
+	void setYieldBoughtTotalAfrica(YieldTypes eYield, int iValue);
+	void changeYieldBoughtTotalAfrica(YieldTypes eYield, int iChange);
+	int getYieldBoughtTotalPortRoyal(YieldTypes eYield) const;
+	void setYieldBoughtTotalPortRoyal(YieldTypes eYield, int iValue);
+	void changeYieldBoughtTotalPortRoyal(YieldTypes eYield, int iChange);
+	// WTP, ray, Yields Traded Total for Africa and Port Royal - END
+
 	YieldTypes getHighestTradedYield() const;
 	int getHighestStoredYieldCityId(YieldTypes eYield) const;
 
@@ -1011,7 +1029,11 @@ protected:
 	EnumMap<YieldTypes, int> m_em_iYieldAfricaBuyPrice; // R&R, ray, Africa
 	EnumMap<YieldTypes, int> m_em_iYieldPortRoyalBuyPrice; // R&R, ray, Port Royal
 	EnumMap<YieldTypes, int> m_em_iYieldTradedTotal;
+	EnumMap<YieldTypes, int> m_em_iYieldTradedTotalAfrica; // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+	EnumMap<YieldTypes, int> m_em_iYieldTradedTotalPortRoyal; // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 	EnumMap<YieldTypes, int> m_em_iYieldBoughtTotal;
+	EnumMap<YieldTypes, int> m_em_iYieldBoughtTotalAfrica; // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+	EnumMap<YieldTypes, int> m_em_iYieldBoughtTotalPortRoyal; // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 	EnumMap<YieldTypes, int> m_em_iTaxYieldModifierCount;
 	EnumMap<YieldTypes, int> m_em_iYieldScoreTotal; // R&R, vetiarvind, Price dependent tax rate change
 

@@ -15916,13 +15916,13 @@ CvUnit* CvPlayer::buyYieldUnitFromAfrica(YieldTypes eYield, int iAmount, CvUnit*
 		changeGold(-iPrice);
 		// R&R, vetiarvind, Price dependent tax rate change - Start
 		int iBuyValue = kPlayerEurope.getYieldAfricaSellPrice(eYield) >> 1; //buying should only contribute 50% of sell to tax incr. score
-		changeYieldTradedTotal(eYield, iAmount, iBuyValue);
-		kPlayerEurope.changeYieldTradedTotal(eYield, iAmount, iBuyValue);
+		changeYieldTradedTotalAfrica(eYield, iAmount, iBuyValue); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+		kPlayerEurope.changeYieldTradedTotalAfrica(eYield, iAmount, iBuyValue); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 		//changeYieldTradedTotal(eYield, iAmount);
 		//kPlayerEurope.changeYieldTradedTotal(eYield, iAmount);
 		// R&R, vetiarvind, Price dependent tax rate change - End		
-		GC.getGameINLINE().changeYieldBoughtTotal(kPlayerEurope.getID(), eYield, iAmount);
-
+		GC.getGameINLINE().changeYieldBoughtTotalAfrica(kPlayerEurope.getID(), eYield, iAmount); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+		 
 		CvWStringBuffer szMessage;
 		GAMETEXT.setEuropeYieldBoughtHelp(szMessage, *this, eYield, iAmount);
 		m_aszTradeMessages.push_back(szMessage.getCString());
@@ -16007,13 +16007,13 @@ void CvPlayer::sellYieldUnitToAfrica(CvUnit* pUnit, int iAmount, int iCommission
 				// R&R, ray, Smuggling - END
 				changeGold(iProfit * getExtraTradeMultiplier(kPlayerEurope.getID()) / 100);
 				// R&R, vetiarvind, Price dependent tax rate change - Start				
-				changeYieldTradedTotal(eYield, iAmount, iSellPrice);
-				kPlayerEurope.changeYieldTradedTotal(eYield, iAmount, iSellPrice);
+				changeYieldTradedTotalAfrica(eYield, iAmount, iSellPrice); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+				kPlayerEurope.changeYieldTradedTotalAfrica(eYield, iAmount, iSellPrice); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 				//changeYieldTradedTotal(eYield, iAmount);
 				//kPlayerEurope.changeYieldTradedTotal(eYield, iAmount);
 				// R&R, vetiarvind, Price dependent tax rate change - End
 				
-				GC.getGameINLINE().changeYieldBoughtTotal(kPlayerEurope.getID(), eYield, -iAmount);
+				GC.getGameINLINE().changeYieldBoughtTotalAfrica(kPlayerEurope.getID(), eYield, -iAmount); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 
 				pUnit->setYieldStored(pUnit->getYieldStored() - iAmount);
 				if (pUnit->getYieldStored() <= 0)
@@ -16378,12 +16378,12 @@ CvUnit* CvPlayer::buyYieldUnitFromPortRoyal(YieldTypes eYield, int iAmount, CvUn
 		changeGold(-iPrice);
 		// R&R, vetiarvind, Price dependent tax rate change - Start
 		int iBuyValue = kPlayerEurope.getYieldPortRoyalSellPrice(eYield) >> 1; //buying should contribute only 50% of sell value to tax score
-		changeYieldTradedTotal(eYield, iAmount, iBuyValue);
-		kPlayerEurope.changeYieldTradedTotal(eYield, iAmount, iBuyValue);
+		changeYieldTradedTotalPortRoyal(eYield, iAmount, iBuyValue); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+		kPlayerEurope.changeYieldTradedTotalPortRoyal(eYield, iAmount, iBuyValue); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 		//changeYieldTradedTotal(eYield, iAmount);
 		//kPlayerEurope.changeYieldTradedTotal(eYield, iAmount);
 		// R&R, vetiarvind, Price dependent tax rate change - End
-		GC.getGameINLINE().changeYieldBoughtTotal(kPlayerEurope.getID(), eYield, iAmount);
+		GC.getGameINLINE().changeYieldBoughtTotalPortRoyal(kPlayerEurope.getID(), eYield, iAmount); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 
 		CvWStringBuffer szMessage;
 		GAMETEXT.setEuropeYieldBoughtHelp(szMessage, *this, eYield, iAmount);
@@ -16471,12 +16471,12 @@ void CvPlayer::sellYieldUnitToPortRoyal(CvUnit* pUnit, int iAmount, int iCommiss
 				changeGold(iProfit * getExtraTradeMultiplier(kPlayerEurope.getID()) / 100);
 				
 				// R&R, vetiarvind, Price dependent tax rate change - Start				
-				changeYieldTradedTotal(eYield, iAmount, iSellPrice);
-				kPlayerEurope.changeYieldTradedTotal(eYield, iAmount, iSellPrice);
+				changeYieldTradedTotalPortRoyal(eYield, iAmount, iSellPrice);
+				kPlayerEurope.changeYieldTradedTotalPortRoyal(eYield, iAmount, iSellPrice);
 				//changeYieldTradedTotal(eYield, iAmount);
 				//kPlayerEurope.changeYieldTradedTotal(eYield, iAmount);
 				// R&R, vetiarvind, Price dependent tax rate change - End
-				GC.getGameINLINE().changeYieldBoughtTotal(kPlayerEurope.getID(), eYield, -iAmount);
+				GC.getGameINLINE().changeYieldBoughtTotalPortRoyal(kPlayerEurope.getID(), eYield, -iAmount);
 
 				pUnit->setYieldStored(pUnit->getYieldStored() - iAmount);
 				if (pUnit->getYieldStored() <= 0)
@@ -16859,6 +16859,47 @@ void CvPlayer::setYieldTradedTotal(YieldTypes eYield, int iValue)
 	}
 }
 
+// WTP, ray, Yields Traded Total for Africa and Port Royal - START
+int CvPlayer::getYieldTradedTotalAfrica(YieldTypes eYield) const
+{
+	FAssert(eYield >= 0);
+	FAssert(eYield < NUM_YIELD_TYPES);
+
+	return m_em_iYieldTradedTotalAfrica.get(eYield);
+}
+
+void CvPlayer::setYieldTradedTotalAfrica(YieldTypes eYield, int iValue)
+{
+	FAssert(eYield >= 0);
+	FAssert(eYield < NUM_YIELD_TYPES);
+
+	if(iValue != getYieldTradedTotalAfrica(eYield))
+	{
+		m_em_iYieldTradedTotalAfrica.set(eYield, iValue);
+	}
+}
+
+int CvPlayer::getYieldTradedTotalPortRoyal(YieldTypes eYield) const
+{
+	FAssert(eYield >= 0);
+	FAssert(eYield < NUM_YIELD_TYPES);
+
+	return m_em_iYieldTradedTotalPortRoyal.get(eYield);
+}
+
+void CvPlayer::setYieldTradedTotalPortRoyal(YieldTypes eYield, int iValue)
+{
+	FAssert(eYield >= 0);
+	FAssert(eYield < NUM_YIELD_TYPES);
+
+	if(iValue != getYieldTradedTotalPortRoyal(eYield))
+	{
+		m_em_iYieldTradedTotalPortRoyal.set(eYield, iValue);
+	}
+}
+// WTP, ray, Yields Traded Total for Africa and Port Royal - END
+
+
 // R&R, vetiarvind, Price dependent tax rate change - Start
 int CvPlayer::getYieldScoreTotal(YieldTypes eYield) const
 {
@@ -16895,6 +16936,44 @@ void CvPlayer::changeYieldTradedTotal(YieldTypes eYield, int iChange, int iUnitP
 	setYieldTradedTotal(eYield, getYieldTradedTotal(eYield) + iChange);
 }
 
+// WTP, ray, Yields Traded Total for Africa and Port Royal - START
+void CvPlayer::changeYieldTradedTotalAfrica(YieldTypes eYield, int iChange, int iUnitPrice)
+{
+	if(iUnitPrice == -1)	//default parameter declared in header
+	{		
+			iUnitPrice = 10;//default score functionality 
+			if (getParent() != NO_PLAYER)
+			{
+				CvPlayer& kEurope = GET_PLAYER(getParent());		
+				if (kEurope.isEurope())
+					iUnitPrice = kEurope.getYieldAfricaBuyPrice(eYield); 
+			}		
+	}
+	
+	double iMultiplier = iUnitPrice*0.1;
+	setYieldScoreTotal(eYield, getYieldScoreTotal(eYield) + (int)(iChange*iMultiplier));
+	setYieldTradedTotalAfrica(eYield, getYieldTradedTotalAfrica(eYield) + iChange);
+}
+
+void CvPlayer::changeYieldTradedTotalPortRoyal(YieldTypes eYield, int iChange, int iUnitPrice)
+{
+	if(iUnitPrice == -1)	//default parameter declared in header
+	{		
+			iUnitPrice = 10;//default score functionality 
+			if (getParent() != NO_PLAYER)
+			{
+				CvPlayer& kEurope = GET_PLAYER(getParent());		
+				if (kEurope.isEurope())
+					iUnitPrice = kEurope.getYieldPortRoyalBuyPrice(eYield); 
+			}		
+	}
+	
+	double iMultiplier = iUnitPrice*0.1;
+	setYieldScoreTotal(eYield, getYieldScoreTotal(eYield) + (int)(iChange*iMultiplier));
+	setYieldTradedTotalPortRoyal(eYield, getYieldTradedTotalPortRoyal(eYield) + iChange);
+}
+// WTP, ray, Yields Traded Total for Africa and Port Royal - END
+
 /*
 void CvPlayer::changeYieldTradedTotal(YieldTypes eYield, int iChange)
 {
@@ -16903,11 +16982,6 @@ void CvPlayer::changeYieldTradedTotal(YieldTypes eYield, int iChange)
 */
 
 // R&R, vetiarvind, Price dependent tax rate change - END
-void CvPlayer::changeYieldBoughtTotal(YieldTypes eYield, int iChange)
-{
-	setYieldBoughtTotal(eYield, getYieldBoughtTotal(eYield) + iChange);
-}
-
 YieldTypes CvPlayer::getHighestTradedYield() const
 {
 	YieldTypes eBestYield = NO_YIELD;
@@ -16947,6 +17021,11 @@ int CvPlayer::getHighestStoredYieldCityId(YieldTypes eYield) const
 	return iBestCityId;
 }
 
+void CvPlayer::changeYieldBoughtTotal(YieldTypes eYield, int iChange)
+{
+	setYieldBoughtTotal(eYield, getYieldBoughtTotal(eYield) + iChange);
+}
+
 int CvPlayer::getYieldBoughtTotal(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
@@ -16958,6 +17037,43 @@ void CvPlayer::setYieldBoughtTotal(YieldTypes eYield, int iValue)
 	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
 	m_em_iYieldBoughtTotal.set(eYield, iValue);
 }
+
+// WTP, ray, Yields Traded Total for Africa and Port Royal - START
+void CvPlayer::changeYieldBoughtTotalAfrica(YieldTypes eYield, int iChange)
+{
+	setYieldBoughtTotalAfrica(eYield, getYieldBoughtTotalAfrica(eYield) + iChange);
+}
+
+int CvPlayer::getYieldBoughtTotalAfrica(YieldTypes eYield) const
+{
+	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
+	return m_em_iYieldBoughtTotalAfrica.get(eYield);
+}
+
+void CvPlayer::setYieldBoughtTotalAfrica(YieldTypes eYield, int iValue)
+{
+	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
+	m_em_iYieldBoughtTotalAfrica.set(eYield, iValue);
+}
+
+void CvPlayer::changeYieldBoughtTotalPortRoyal(YieldTypes eYield, int iChange)
+{
+	setYieldBoughtTotalPortRoyal(eYield, getYieldBoughtTotalPortRoyal(eYield) + iChange);
+}
+
+int CvPlayer::getYieldBoughtTotalPortRoyal(YieldTypes eYield) const
+{
+	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
+	return m_em_iYieldBoughtTotalPortRoyal.get(eYield);
+}
+
+void CvPlayer::setYieldBoughtTotalPortRoyal(YieldTypes eYield, int iValue)
+{
+	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
+	m_em_iYieldBoughtTotalPortRoyal.set(eYield, iValue);
+}
+// WTP, ray, Yields Traded Total for Africa and Port Royal - END
+
 
 int CvPlayer::getCrossesStored() const
 {
@@ -17936,9 +18052,15 @@ void CvPlayer::doAfricaPrices()
 
 			if (kYield.isCargo())
 			{
+				// WTP, ray, Yields Traded Total for Africa and Port Royal - START
+				// R&R, Androrc Price Recovery
+				GC.getGameINLINE().changeYieldBoughtTotalAfrica(getID(), eYield, kYield.getEuropeVolumeAttrition());
+				//Androrc End
+				// WTP, ray, Yields Traded Total for Africa and Port Royal - END
+
 				int iBaseThreshold = kYield.getPriceChangeThreshold() * GC.getHandicapInfo(getHandicapType()).getEuropePriceThresholdMultiplier() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 10000;
 				int iNewPrice = kYield.getAfricaBuyPriceLow() + GC.getGameINLINE().getSorenRandNum(kYield.getAfricaBuyPriceHigh() - kYield.getAfricaBuyPriceLow() + 1, "Price selection");
-				iNewPrice += getYieldBoughtTotal(eYield) / std::max(1, iBaseThreshold); // maybe this should be changed
+				iNewPrice += getYieldBoughtTotalAfrica(eYield) / std::max(1, iBaseThreshold); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 
 				if (GC.getGameINLINE().getSorenRandNum(100, "Price correction") < kYield.getPriceCorrectionPercent() * std::abs(iNewPrice - getYieldAfricaBuyPrice(eYield)))
 				{
@@ -17964,9 +18086,15 @@ void CvPlayer::doPortRoyalPrices()
 
 			if (kYield.isCargo())
 			{
+				// WTP, ray, Yields Traded Total for Africa and Port Royal - START
+				// R&R, Androrc Price Recovery
+				GC.getGameINLINE().changeYieldBoughtTotalPortRoyal(getID(), eYield, kYield.getEuropeVolumeAttrition());
+				//Androrc End
+				// WTP, ray, Yields Traded Total for Africa and Port Royal - END
+
 				int iBaseThreshold = kYield.getPriceChangeThreshold() * GC.getHandicapInfo(getHandicapType()).getEuropePriceThresholdMultiplier() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 10000;
 				int iNewPrice = kYield.getPortRoyalBuyPriceLow() + GC.getGameINLINE().getSorenRandNum(kYield.getPortRoyalBuyPriceHigh() - kYield.getPortRoyalBuyPriceLow() + 1, "Price selection");
-				iNewPrice += getYieldBoughtTotal(eYield) / std::max(1, iBaseThreshold); // maybe this should be changed
+				iNewPrice += getYieldBoughtTotalPortRoyal(eYield) / std::max(1, iBaseThreshold); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 
 				if (GC.getGameINLINE().getSorenRandNum(100, "Price correction") < kYield.getPriceCorrectionPercent() * std::abs(iNewPrice - getYieldPortRoyalBuyPrice(eYield)))
 				{

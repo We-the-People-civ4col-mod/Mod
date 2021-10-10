@@ -190,7 +190,11 @@ enum SavegameVariableTypes
 	PlayerSave_YieldAfricaBuyPrice,
 	PlayerSave_YieldPortRoyalBuyPrice,
 	PlayerSave_YieldTradedTotal,
+	PlayerSave_YieldTradedTotalAfrica, // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+	PlayerSave_YieldTradedTotalPortRoyal, // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 	PlayerSave_YieldBoughtTotal,
+	PlayerSave_YieldBoughtTotalAfrica, // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+	PlayerSave_YieldBoughtTotalPortRoyal, // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 	PlayerSave_TaxYieldModifierCount,
 	PlayerSave_YieldScoreTotal,
 
@@ -366,7 +370,11 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_YieldAfricaBuyPrice: return "PlayerSave_YieldAfricaBuyPrice";
 	case PlayerSave_YieldPortRoyalBuyPrice: return "PlayerSave_YieldPortRoyalBuyPrice";
 	case PlayerSave_YieldTradedTotal: return "PlayerSave_YieldTradedTotal";
+	case PlayerSave_YieldTradedTotalAfrica: return "PlayerSave_YieldTradedTotalAfrica";	// WTP, ray, Yields Traded Total for Africa and Port Royal - START
+	case PlayerSave_YieldTradedTotalPortRoyal: return "PlayerSave_YieldTradedTotalPortRoyal"; // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 	case PlayerSave_YieldBoughtTotal: return "PlayerSave_YieldBoughtTotal";
+	case PlayerSave_YieldBoughtTotalAfrica: return "PlayerSave_YieldBoughtTotalAfrica"; // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+	case PlayerSave_YieldBoughtTotalPortRoyal: return "PlayerSave_YieldBoughtTotalPortRoyal"; // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 	case PlayerSave_TaxYieldModifierCount: return "PlayerSave_TaxYieldModifierCount";
 	case PlayerSave_YieldScoreTotal: return "PlayerSave_YieldScoreTotal";
 
@@ -556,7 +564,11 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_em_iYieldAfricaBuyPrice.reset();
 	m_em_iYieldPortRoyalBuyPrice.reset();
 	m_em_iYieldTradedTotal.reset();
+	m_em_iYieldTradedTotalAfrica.reset(); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+	m_em_iYieldTradedTotalPortRoyal.reset(); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 	m_em_iYieldBoughtTotal.reset();
+	m_em_iYieldBoughtTotalAfrica.reset(); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+	m_em_iYieldBoughtTotalPortRoyal.reset(); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 	m_em_iTaxYieldModifierCount.reset();
 	m_em_iYieldScoreTotal.reset();
 
@@ -752,7 +764,11 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_YieldAfricaBuyPrice: reader.Read(m_em_iYieldAfricaBuyPrice); break;
 		case PlayerSave_YieldPortRoyalBuyPrice: reader.Read(m_em_iYieldPortRoyalBuyPrice); break;
 		case PlayerSave_YieldTradedTotal: reader.Read(m_em_iYieldTradedTotal); break;
+		case PlayerSave_YieldTradedTotalAfrica: reader.Read(m_em_iYieldTradedTotalAfrica); break; // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+		case PlayerSave_YieldTradedTotalPortRoyal: reader.Read(m_em_iYieldTradedTotalPortRoyal); break; // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 		case PlayerSave_YieldBoughtTotal: reader.Read(m_em_iYieldBoughtTotal); break;
+		case PlayerSave_YieldBoughtTotalAfrica: reader.Read(m_em_iYieldBoughtTotalAfrica); break; // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+		case PlayerSave_YieldBoughtTotalPortRoyal: reader.Read(m_em_iYieldBoughtTotalPortRoyal); break; // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 		case PlayerSave_TaxYieldModifierCount: reader.Read(m_em_iTaxYieldModifierCount); break;
 		case PlayerSave_YieldScoreTotal: reader.Read(m_em_iYieldScoreTotal); break;
 
@@ -956,7 +972,11 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_YieldAfricaBuyPrice, m_em_iYieldAfricaBuyPrice);
 	writer.Write(PlayerSave_YieldPortRoyalBuyPrice, m_em_iYieldPortRoyalBuyPrice);
 	writer.Write(PlayerSave_YieldTradedTotal, m_em_iYieldTradedTotal);
+	writer.Write(PlayerSave_YieldTradedTotalAfrica, m_em_iYieldTradedTotalAfrica); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+	writer.Write(PlayerSave_YieldTradedTotalPortRoyal, m_em_iYieldTradedTotalPortRoyal); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 	writer.Write(PlayerSave_YieldBoughtTotal, m_em_iYieldBoughtTotal);
+	writer.Write(PlayerSave_YieldBoughtTotalAfrica, m_em_iYieldBoughtTotalAfrica); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+	writer.Write(PlayerSave_YieldBoughtTotalPortRoyal, m_em_iYieldBoughtTotalPortRoyal); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 	writer.Write(PlayerSave_TaxYieldModifierCount, m_em_iTaxYieldModifierCount);
 	writer.Write(PlayerSave_YieldScoreTotal, m_em_iYieldScoreTotal);
 

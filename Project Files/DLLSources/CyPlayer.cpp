@@ -609,6 +609,27 @@ int CyPlayer::getYieldTradedTotalINT(int /*YieldTypes*/ eIndex)
 	return m_pPlayer ? m_pPlayer->getYieldTradedTotal((YieldTypes)eIndex) : -1;
 }
 // R&R, Robert Surcouf, No More Variables Hidden game option END
+
+// WTP, ray, Yields Traded Total for Africa and Port Royal - START
+int CyPlayer::getYieldTradedTotalAfrica(YieldTypes eIndex)
+{
+	return m_pPlayer ? m_pPlayer->getYieldTradedTotalAfrica(eIndex) : -1;
+}
+int CyPlayer::getYieldTradedTotalINTAfrica(int /*YieldTypes*/ eIndex)
+{
+	return m_pPlayer ? m_pPlayer->getYieldTradedTotalAfrica((YieldTypes)eIndex) : -1;
+}
+
+int CyPlayer::getYieldTradedTotalPortRoyal(YieldTypes eIndex)
+{
+	return m_pPlayer ? m_pPlayer->getYieldTradedTotalPortRoyal(eIndex) : -1;
+}
+int CyPlayer::getYieldTradedTotalINTPortRoyal(int /*YieldTypes*/ eIndex)
+{
+	return m_pPlayer ? m_pPlayer->getYieldTradedTotalPortRoyal((YieldTypes)eIndex) : -1;
+}
+// WTP, ray, Yields Traded Total for Africa and Port Royal - END
+
 // R&R, vetiarvind, Price dependent tax rate change - START
 int CyPlayer::getYieldScoreTotalINT(int /*YieldTypes*/ eIndex)
 {
@@ -1284,6 +1305,18 @@ int CyPlayer::getYieldBoughtTotal(int /*YieldTypes*/ eYield) const
 {
 	return m_pPlayer ? m_pPlayer->getYieldBoughtTotal((YieldTypes) eYield) : 0;
 }
+
+// WTP, ray, Yields Traded Total for Africa and Port Royal - START
+int CyPlayer::getYieldBoughtTotalAfrica(int /*YieldTypes*/ eYield) const
+{
+	return m_pPlayer ? m_pPlayer->getYieldBoughtTotalAfrica((YieldTypes) eYield) : 0;
+}
+int CyPlayer::getYieldBoughtTotalPortRoyal(int /*YieldTypes*/ eYield) const
+{
+	return m_pPlayer ? m_pPlayer->getYieldBoughtTotalPortRoyal((YieldTypes) eYield) : 0;
+}
+// WTP, ray, Yields Traded Total for Africa and Port Royal - END
+
 int CyPlayer::getNumRevolutionEuropeUnits() const
 {
 	return m_pPlayer ? m_pPlayer->getNumRevolutionEuropeUnits() : -1;

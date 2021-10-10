@@ -368,6 +368,8 @@ public:
 	int getFatherCategoryPosition(FatherTypes eFather) const;
 
 	void changeYieldBoughtTotal(PlayerTypes eMainEurope, YieldTypes eYield, int iChange) const;
+	void changeYieldBoughtTotalAfrica(PlayerTypes eMainEurope, YieldTypes eYield, int iChange) const; // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+	void changeYieldBoughtTotalPortRoyal(PlayerTypes eMainEurope, YieldTypes eYield, int iChange) const; // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 
 	// < JAnimals Mod Start >
 	PlayerTypes getBarbarianPlayer();

@@ -7153,6 +7153,60 @@ void CvGame::changeYieldBoughtTotal(PlayerTypes eMainEurope, YieldTypes eYield, 
 	}
 }
 
+// WTP, ray, Yields Traded Total for Africa and Port Royal - START
+void CvGame::changeYieldBoughtTotalAfrica(PlayerTypes eMainEurope, YieldTypes eYield, int iChange) const
+{
+	//change non-mercantile Europes by partial amount
+	for(int iEurope=0;iEurope<MAX_PLAYERS;iEurope++)
+	{
+		CvPlayer& kEuropePlayer = GET_PLAYER((PlayerTypes) iEurope);
+		if(kEuropePlayer.isAlive() && kEuropePlayer.isEurope())
+		{
+			//check if any children are mercantile
+			int iMercantilePercent = (iEurope == eMainEurope) ? 100 : GC.getDefineINT("EUROPE_MARKET_CORRELATION_PERCENT");
+			for(int iPlayer=0;iPlayer<MAX_PLAYERS;iPlayer++)
+			{
+				CvPlayer& kChildPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+				if(kChildPlayer.isAlive() && (kChildPlayer.getParent() == iEurope))
+				{
+					iMercantilePercent *= 100 + kChildPlayer.getMercantileFactor();
+					iMercantilePercent /= 100;
+				}
+			}
+
+			//affect non-mercantile amounts
+			kEuropePlayer.changeYieldBoughtTotalAfrica(eYield, iChange * iMercantilePercent / 100);
+		}
+	}
+}
+
+void CvGame::changeYieldBoughtTotalPortRoyal(PlayerTypes eMainEurope, YieldTypes eYield, int iChange) const
+{
+	//change non-mercantile Europes by partial amount
+	for(int iEurope=0;iEurope<MAX_PLAYERS;iEurope++)
+	{
+		CvPlayer& kEuropePlayer = GET_PLAYER((PlayerTypes) iEurope);
+		if(kEuropePlayer.isAlive() && kEuropePlayer.isEurope())
+		{
+			//check if any children are mercantile
+			int iMercantilePercent = (iEurope == eMainEurope) ? 100 : GC.getDefineINT("EUROPE_MARKET_CORRELATION_PERCENT");
+			for(int iPlayer=0;iPlayer<MAX_PLAYERS;iPlayer++)
+			{
+				CvPlayer& kChildPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+				if(kChildPlayer.isAlive() && (kChildPlayer.getParent() == iEurope))
+				{
+					iMercantilePercent *= 100 + kChildPlayer.getMercantileFactor();
+					iMercantilePercent /= 100;
+				}
+			}
+
+			//affect non-mercantile amounts
+			kEuropePlayer.changeYieldBoughtTotalPortRoyal(eYield, iChange * iMercantilePercent / 100);
+		}
+	}
+}
+// WTP, ray, Yields Traded Total for Africa and Port Royal - END
+
 void CvGame::updateOceanDistances()
 {
 	PROFILE_FUNC();
