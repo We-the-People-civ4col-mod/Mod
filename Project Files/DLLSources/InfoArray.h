@@ -65,8 +65,8 @@ class BoolArray;
 
 template<class T> class JustInTimeArray;
 
-template<class IndexType, class T, int DEFAULT>
-class EnumMap;
+template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+class EnumMapBase;
 template<class IndexType, class IndexType2, class T>
 class EnumMap2D;
 
@@ -228,14 +228,14 @@ protected:
 	InfoArray1Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
 		: InfoArray1<T0>(eType0, eType1, eType2, eType3) {}
 public:
-	template<typename T, int DEFAULT>
-	void assignFrom(const EnumMap<T0, T, DEFAULT>& em);
-	template<typename T, int DEFAULT>
-	void addTo(EnumMap<T0, T, DEFAULT> & em, int iChange = 1) const;
-	template<typename Ta, typename Tb, int DEFAULT>
-	void addTo(EnumMap<Ta, Tb, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
-	template<typename T, int DEFAULT>
-	void copyTo(EnumMap<T0, T, DEFAULT> & em) const;
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+	void assignFrom(const EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE>& em);
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+	void addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange = 1) const;
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+	void addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+	void copyTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em) const;
 };
 template<typename T0, typename T1>
 class InfoArray2Only : public InfoArray2<T0, T1>
@@ -244,16 +244,16 @@ protected:
 	InfoArray2Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
 		: InfoArray2<T0, T1>(eType0, eType1, eType2, eType3) {}
 public:
-	template<typename T, int DEFAULT>
-	void assignFrom(const EnumMap<T0, T, DEFAULT>& em);
-	template<typename T, int DEFAULT>
-	void addTo(EnumMap<T0, T, DEFAULT> & em, int iChange = 1) const;
-	template<typename Ta, typename Tb, int DEFAULT>
-	void addTo(EnumMap<Ta, Tb, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
-	template<typename T, int DEFAULT>
-	void copyTo(EnumMap<T0, T, DEFAULT> & em) const;
-	template<int DEFAULT>
-	void copyTo(EnumMap<T0, bool, DEFAULT> & em) const;
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+	void assignFrom(const EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE>& em);
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+	void addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange = 1) const;
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+	void addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+	void copyTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em) const;
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+	void copyTo(EnumMapBase<T0, bool, DEFAULT, LengthType, STATIC, TYPE> & em) const;
 	template<typename T>
 	void addTo(EnumMap2D<T0, T1, T> & em, int iChange = 1) const;
 	template<typename Ta, typename Tb, typename Tc>
@@ -280,8 +280,8 @@ protected:
 };
 
 template<typename T0>
-template<typename T, int DEFAULT>
-void InfoArray1Only<T0>::assignFrom(const EnumMap<T0, T, DEFAULT> & em)
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+void InfoArray1Only<T0>::assignFrom(const EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em)
 {
 	const int iLength = em.GetNumPositiveElements();
 	_setLength(iLength);
@@ -300,8 +300,8 @@ void InfoArray1Only<T0>::assignFrom(const EnumMap<T0, T, DEFAULT> & em)
 
 
 template<typename T0, typename T1>
-template<typename T, int DEFAULT>
-void InfoArray2Only<T0, T1>::assignFrom(const EnumMap<T0, T, DEFAULT> & em)
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+void InfoArray2Only<T0, T1>::assignFrom(const EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em)
 {
 	const bool bTypeCheck = !boost::is_same<T, bool>::value;
 	BOOST_STATIC_ASSERT(bTypeCheck);
@@ -321,15 +321,15 @@ void InfoArray2Only<T0, T1>::assignFrom(const EnumMap<T0, T, DEFAULT> & em)
 }
 
 template<typename T0>
-template<typename T, int DEFAULT>
-void InfoArray1Only<T0>::addTo(EnumMap<T0, T, DEFAULT> & em, int iChange) const
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+void InfoArray1Only<T0>::addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange) const
 {
 	addTo(em, iChange, NULL);
 }
 
 template<typename T0>
-template<typename Ta, typename Tb, int DEFAULT>
-void InfoArray1Only<T0>::addTo(EnumMap<Ta, Tb, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+void InfoArray1Only<T0>::addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
 {
 	const bool bTypeCheck = !boost::is_same<Tb, bool>::value;
 	BOOST_STATIC_ASSERT(bTypeCheck);
@@ -344,15 +344,15 @@ void InfoArray1Only<T0>::addTo(EnumMap<Ta, Tb, DEFAULT> & em, int iChange, const
 }
 
 template<typename T0, typename T1>
-template<typename T, int DEFAULT>
-void InfoArray2Only<T0, T1>::addTo(EnumMap<T0, T, DEFAULT> & em, int iChange) const
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+void InfoArray2Only<T0, T1>::addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange) const
 {
 	addTo(em, iChange, NULL);
 }
 
 template<typename T0, typename T1>
-template<typename Ta, typename Tb, int DEFAULT>
-void InfoArray2Only<T0, T1>::addTo(EnumMap<Ta, Tb, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+void InfoArray2Only<T0, T1>::addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
 {
 	const bool bTypeCheck = !boost::is_same<Tb, bool>::value;
 	BOOST_STATIC_ASSERT(bTypeCheck);
@@ -367,8 +367,8 @@ void InfoArray2Only<T0, T1>::addTo(EnumMap<Ta, Tb, DEFAULT> & em, int iChange, c
 }
 
 template<typename T0>
-template<typename T, int DEFAULT>
-void InfoArray1Only<T0>::copyTo(EnumMap<T0, T, DEFAULT> & em) const
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+void InfoArray1Only<T0>::copyTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em) const
 {
 	em.reset();
 	for (int i = 0; i < getLength(); ++i)
@@ -378,8 +378,8 @@ void InfoArray1Only<T0>::copyTo(EnumMap<T0, T, DEFAULT> & em) const
 }
 
 template<typename T0, typename T1>
-template<typename T, int DEFAULT>
-void InfoArray2Only<T0, T1>::copyTo(EnumMap<T0, T, DEFAULT> & em) const
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+void InfoArray2Only<T0, T1>::copyTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em) const
 {
 	em.reset();
 	for (int i = 0; i < getLength(); ++i)
@@ -389,8 +389,8 @@ void InfoArray2Only<T0, T1>::copyTo(EnumMap<T0, T, DEFAULT> & em) const
 }
 
 template<typename T0, typename T1>
-template<int DEFAULT>
-void InfoArray2Only<T0, T1>::copyTo(EnumMap<T0, bool, DEFAULT> & em) const
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+void InfoArray2Only<T0, T1>::copyTo(EnumMapBase<T0, bool, DEFAULT, LengthType, STATIC, TYPE> & em) const
 {
 	em.reset();
 	for (int i = 0; i < getLength(); ++i)
@@ -471,9 +471,9 @@ public:
 	T getWithTemplate(int iIndex, T eVar) const; // get, which works with an argument. Useful for calling from a template function using a templat eVar type
 
 	// EnumMap interaction
-	void assignFrom(const EnumMap<T0, T>& em);
-	void addTo(EnumMap<Ta, Tb> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
-	void copyTo(EnumMap<T0, T> & em) const;
+	void assignFrom(const EnumMapBase<T0, T>& em);
+	void addTo(EnumMapBase<Ta, Tb> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
+	void copyTo(EnumMapBase<T0, T> & em) const;
 
 	void addTo(EnumMap2D<Ta, Tb, Tc> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
 
