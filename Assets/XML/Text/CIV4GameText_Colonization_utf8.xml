@@ -1192,6 +1192,11 @@
         <Spanish>[ICON_BULLET]%D1%% Cost of Pioneer Actions</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_FATHER_IMPROVEMENT_GROWTH_TIME_MODIFIER</Tag>
+        <English>[ICON_BULLET]%D1%% time for improvements to upgrade to next level</English>
+        <German>[ICON_BULLET]%D1%% Zeit für Wachstum von Geländeverbesserungen</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_MODIFIER</Tag>
         <English>[ICON_BULLET]%D1%% chance colonists learn a specialization by hard work</English>
         <French>[ICON_BULLET]%D1%% chance Colonists learn Specialisms by hard work</French>

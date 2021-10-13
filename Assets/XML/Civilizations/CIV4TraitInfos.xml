@@ -23,6 +23,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>30</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -37,6 +39,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>10</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -73,6 +76,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -87,6 +92,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>-10</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -128,6 +134,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>2</iNativeAttitudeChange>
@@ -142,6 +150,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -178,6 +187,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>20</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>25</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -192,6 +203,7 @@
             <iCultureLevelModifier>-10</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -228,6 +240,8 @@
             <iMaxTaxRateThresholdDecrease>5</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>-50</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -242,6 +256,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>10</iStorageCapacityModifier>
@@ -278,6 +293,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -292,6 +309,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>10</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -397,6 +415,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -411,6 +431,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -476,6 +497,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -490,6 +513,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -559,6 +583,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -573,6 +599,7 @@
             <iCultureLevelModifier>-20</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -609,6 +636,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -623,6 +652,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>10</iStorageCapacityModifier>
@@ -680,6 +710,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -694,6 +726,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -735,6 +768,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -749,6 +784,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -785,6 +821,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -799,6 +837,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -835,6 +874,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -849,6 +890,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -903,6 +945,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -917,6 +961,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>10</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -958,6 +1003,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -972,6 +1019,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -1008,6 +1056,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -1022,6 +1072,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -1113,6 +1164,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -1127,6 +1180,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -1172,6 +1226,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -1186,6 +1242,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>25</iStorageCapacityModifier>
@@ -1227,6 +1284,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -1241,6 +1300,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>50</iLearningByDoingModifier>
             <iSpecialistPriceModifier>-50</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -1282,6 +1342,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -1296,6 +1358,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>50</iPioneerSpeedModifier>
             <iImprovementPriceModifier>-50</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>10</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -1332,6 +1395,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>100</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -1346,6 +1411,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -1423,6 +1489,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -1437,6 +1505,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -1483,6 +1552,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -1497,6 +1568,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>10</iStorageCapacityModifier>
@@ -1551,6 +1623,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -1565,6 +1639,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -1629,6 +1704,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -1643,6 +1720,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -1679,6 +1757,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>25</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -1693,6 +1773,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -1747,6 +1828,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -1761,6 +1844,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>10</iStorageCapacityModifier>
@@ -1802,6 +1886,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -1816,6 +1902,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -1870,6 +1957,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -1884,6 +1973,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -1920,6 +2010,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -1934,6 +2026,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -1988,6 +2081,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -2002,6 +2097,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -2056,6 +2152,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -2070,6 +2168,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -2133,6 +2232,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -2147,6 +2248,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -2201,6 +2303,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -2215,6 +2319,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -2265,6 +2370,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -2279,6 +2386,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -2329,6 +2437,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -2343,6 +2453,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -2393,6 +2504,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -2407,6 +2520,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -2448,6 +2562,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -2462,6 +2578,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -2498,6 +2615,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>3</iNativeAttitudeChange>
@@ -2512,6 +2631,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -2585,6 +2705,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -2599,6 +2721,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -2668,6 +2791,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -2682,6 +2807,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -2751,6 +2877,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -2765,6 +2893,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -2856,6 +2985,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -2870,6 +3001,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -2939,6 +3071,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -2953,6 +3087,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -2994,6 +3129,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -3008,6 +3145,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -3044,6 +3182,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -3058,6 +3198,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -3103,6 +3244,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -3117,6 +3260,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -3158,6 +3302,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -3172,6 +3318,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -3213,6 +3360,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -3227,6 +3376,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -3287,6 +3437,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -3301,6 +3453,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -3347,6 +3500,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -3361,6 +3516,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -3402,6 +3558,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -3416,6 +3574,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -3507,6 +3666,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -3521,6 +3682,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -3606,6 +3768,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -3620,6 +3784,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -3702,6 +3867,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -3716,6 +3883,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -3780,6 +3948,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -3794,6 +3964,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -3876,6 +4047,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -3890,6 +4063,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -3979,6 +4153,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -3993,6 +4169,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -4062,6 +4239,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -4076,6 +4255,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -4149,6 +4329,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -4163,6 +4345,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -4216,6 +4399,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -4230,6 +4415,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -4299,6 +4485,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -4313,6 +4501,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -4359,6 +4548,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -4373,6 +4564,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -4419,6 +4611,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -4433,6 +4627,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -4479,6 +4674,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -4493,6 +4690,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -4534,6 +4732,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -4548,6 +4748,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -4617,6 +4818,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -4631,6 +4834,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -4688,6 +4892,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -4702,6 +4908,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -4747,6 +4954,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -4761,6 +4970,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -4819,6 +5029,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -4833,6 +5045,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -4869,6 +5082,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -4883,6 +5098,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -4929,6 +5145,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -4943,6 +5161,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -4984,6 +5203,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -4998,6 +5219,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5034,6 +5256,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -5048,6 +5272,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5084,6 +5309,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -5098,6 +5325,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5167,6 +5395,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -5181,6 +5411,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5217,6 +5448,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>20</iChiefGoldModifier>
             <iNativeAttitudeChange>4</iNativeAttitudeChange>
@@ -5231,6 +5464,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5267,6 +5501,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -5281,6 +5517,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5326,6 +5563,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -5340,6 +5579,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5389,6 +5629,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -5403,6 +5645,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5448,6 +5691,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -5462,6 +5707,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5549,6 +5795,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>20</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -5563,6 +5811,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5599,6 +5848,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -5613,6 +5864,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5659,6 +5911,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -5673,6 +5927,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5714,6 +5969,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -5728,6 +5985,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5786,6 +6044,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -5800,6 +6060,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5885,6 +6146,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -5899,6 +6162,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5935,6 +6199,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -5949,6 +6215,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -5994,6 +6261,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -6008,6 +6277,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -6077,6 +6347,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -6091,6 +6363,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -6153,6 +6426,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -6167,6 +6442,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -6254,6 +6530,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -6268,6 +6546,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -6362,6 +6641,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -6376,6 +6657,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>10</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -6417,6 +6699,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -6431,6 +6715,7 @@
             <iCultureLevelModifier>-25</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>-10</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>-10</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -6485,6 +6770,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -6499,6 +6786,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -6544,6 +6832,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -6558,6 +6848,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -6603,6 +6894,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -6617,6 +6910,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -6658,6 +6952,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -6672,6 +6968,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -6721,6 +7018,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -6735,6 +7034,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -6793,6 +7093,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -6807,6 +7109,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -6857,6 +7160,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -6871,6 +7176,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -6926,6 +7232,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -6940,6 +7248,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -7049,6 +7358,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -7063,6 +7374,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -7145,6 +7457,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -7159,6 +7473,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -7217,6 +7532,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -7231,6 +7548,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -7300,6 +7618,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>2</iNativeAttitudeChange>
@@ -7314,6 +7634,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -7350,6 +7671,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -7364,6 +7687,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -7417,6 +7741,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -7431,6 +7757,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -7486,6 +7813,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -7500,6 +7829,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -7573,6 +7903,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -7587,6 +7919,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -7650,6 +7983,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -7664,6 +7999,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -7705,6 +8041,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -7719,6 +8057,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -7769,6 +8108,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -7783,6 +8124,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -7819,6 +8161,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -7833,6 +8177,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -7869,6 +8214,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>2</iNativeAttitudeChange>
@@ -7883,6 +8230,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -7965,6 +8313,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -7979,6 +8329,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -8020,6 +8371,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -8034,6 +8387,7 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -8075,6 +8429,8 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>25</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
@@ -8089,6 +8445,60 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers/>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges/>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers/>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
+            <Type>TRAIT_ROBERT_KING_CARTER_I</Type>
+            <Description>TXT_KEY_TRAIT_ROBERT_KING_CARTER_I</Description>
+            <ShortDescription>TXT_KEY_FATHER_ROBERT_KING_CARTER_I</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>-25</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>

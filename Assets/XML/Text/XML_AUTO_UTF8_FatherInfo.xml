@@ -1364,6 +1364,46 @@
         <Italian>Aggiungi una nota di libertà ai tuoi sermoni, adottando [COLOR_TECH_TEXT]Gregorio de Mattos e Guerra[COLOR_REVERT] come Padre Fondatore. Con Guerra al tuo fianco, tutte le tue [COLOR_BUILDING_TEXT]chiese[COLOR_REVERT] e le tue [COLOR_BUILDING_TEXT]cattedrali[COLOR_REVERT] produrranno [COLOR_HIGHLIGHT_TEXT]campane della libertà[COLOR_REVERT]! </Italian>
         <Spanish>AÃ±adid un halo de libertad a vuestros sermones con [COLOR_TECH_TEXT]Gregório de Mattos e Guerra[COLOR_REVERT] como Padre fundador. Con de Mattos de vuestro lado, todas vuestras [COLOR_BUILDING_TEXT]Iglesias[COLOR_REVERT] y [COLOR_BUILDING_TEXT]Catedrales[COLOR_REVERT] producirán [COLOR_HIGHLIGHT_TEXT]Campanas de la libertad[COLOR_REVERT]. </Spanish>
     </TEXT>
+	
+	
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_ROBERT_KING_CARTER_I</Tag>
+        <English>
+            <Text>Robert "King" Carter I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Robert "King" Carter I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Robert "King" Carter I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Robert "King" Carter I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Robert "King" Carter I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_ROBERT_KING_CARTER_I_PEDIA</Tag>
+        <English>[H1]Robert „King“ Carter I[\H1][NEWLINE][BOLD]Lived: [\BOLD]1663 -1732 [PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Robert "King" Carter"was a merchant and planter in colonial Virginia. Born in Lancaster County, Carter eventually became one the richest men in the Thirteen Colonies. As President of the Virginia Governor's Council, Carter served as the royal governor of Virginia from 1726 to 1727 after the previous governor, Hugh Drysdale, died in office. He acquired the moniker "King" from his wealth, political power, and autocratic business methods.</English>
+        <German>[H1]Robert „King“ Carter I[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1663 -1732 [PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Robert „King“ Carter war ein Kolonist in der damaligen Colony of Virginia, aus der nach der Unabhängigkeitserklärung der Vereinigten Staaten (1776) die US-Bundesstaaten Virginia, West Virginia, North Carolina, Kentucky, Tennessee und Ohio hervorgingen. Carter war der reichste Pflanzer in der britischen Kolonie Virginia. Um 1722 arbeiteten circa 1000 Sklaven auf seinen Tabakplantagen. Seine Familie wurde so mächtig und wichtig, dass man sagte: „Schüttle irgendeinen Baum in Virginia und ein Carter wird herunterfallen“. Aufgrund seines Reichtums wurde er auch unter dem Spitznamen King Carter („König Carter“) bekannt. Drei seiner Nachfahren unterzeichneten die Unabhängigkeitserklärung, und zwei wurden Präsidenten der Vereinigten Staaten. Ein weiterer berühmter Nachfahre ist General R. E. Lee (1807–1870).</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_ROBERT_KING_CARTER_I_STRATEGY</Tag>
+        <English>Add [COLOR_TECH_TEXT]Robert „King“ Carter I[COLOR_REVERT] as a Founding Father to have his influence and wealth will speed up all updrades of your improvements. With him on your side, the planations, farms, mines, quarries and all other landmarks in the colonies will flourish.</English>
+        <German>Gewinne [COLOR_TECH_TEXT]Robert „King“ Carter I[COLOR_REVERT] als Gründervater, damit sein Einfluss und Reichtum das Wachstum deiner Geländeverbesserungen beschleunigt. Mit ihm and deiner Seite, werden die Planatgen, Farmen, Minen, Steinbrüche und alle andere Geländeverbesserungen in den Kolonien gedeihen.</German>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_HENRY_SHRAPNEL</Tag>
         <English>
