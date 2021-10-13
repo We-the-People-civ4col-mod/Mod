@@ -11026,6 +11026,7 @@ CvTraitInfo::CvTraitInfo() :
 	m_iCultureLevelModifier(0),
 	m_iPioneerSpeedModifier(0),
 	m_iImprovementPriceModifier(0),
+	m_iImprovementGrowthTimeModifier(0), // WTP, ray, Improvement Growth Modifier
 	m_iLearningByDoingModifier(0),
 	m_iSpecialistPriceModifier(0),
 	m_iStorageCapacityModifier(0),		// Schmiddie, 7 new variables for traits for Europeans, END
@@ -11195,6 +11196,13 @@ int CvTraitInfo::getImprovementPriceModifier() const
 	return m_iImprovementPriceModifier;
 }
 
+// WTP, ray, Improvement Growth Modifier - START
+int CvTraitInfo::getImprovementGrowthTimeModifier() const
+{
+	return m_iImprovementGrowthTimeModifier ;
+}
+// WTP, ray, Improvement Growth Modifier - END
+
 int CvTraitInfo::getLearningByDoingModifier() const
 {
 	return m_iLearningByDoingModifier;
@@ -11345,6 +11353,7 @@ void CvTraitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iCultureLevelModifier);
 	stream->Read(&m_iPioneerSpeedModifier);
 	stream->Read(&m_iImprovementPriceModifier);
+	stream->Read(&m_iImprovementGrowthTimeModifier);  // WTP, ray, Improvement Growth Modifier
 	stream->Read(&m_iLearningByDoingModifier);
 	stream->Read(&m_iSpecialistPriceModifier);
 	stream->Read(&m_iStorageCapacityModifier);		// Schmiddie, 7 new variables for traits for Europeans, END
@@ -11453,6 +11462,7 @@ void CvTraitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iCultureLevelModifier);
 	stream->Write(m_iPioneerSpeedModifier);
 	stream->Write(m_iImprovementPriceModifier);
+	stream->Write(m_iImprovementGrowthTimeModifier); // WTP, ray, Improvement Growth Modifier
 	stream->Write(m_iLearningByDoingModifier);
 	stream->Write(m_iSpecialistPriceModifier);
 	stream->Write(m_iStorageCapacityModifier);		// Schmiddie, 7 new variables for traits for Europeans, END
@@ -11517,10 +11527,10 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iCultureLevelModifier, "iCultureLevelModifier");
 	pXML->GetChildXmlValByName(&m_iPioneerSpeedModifier, "iPioneerSpeedModifier");
 	pXML->GetChildXmlValByName(&m_iImprovementPriceModifier, "iImprovementPriceModifier");
+	pXML->GetChildXmlValByName(&m_iImprovementGrowthTimeModifier, "iImprovementGrowthTimeModifier"); // WTP, ray, Improvement Growth Modifier
 	pXML->GetChildXmlValByName(&m_iLearningByDoingModifier, "iLearningByDoingModifier");
 	pXML->GetChildXmlValByName(&m_iSpecialistPriceModifier, "iSpecialistPriceModifier");
 	pXML->GetChildXmlValByName(&m_iStorageCapacityModifier, "iStorageCapacityModifier");		// Schmiddie, 7 new variables for traits for Europeans, END
-
 	pXML->SetVariableListTagPair(&m_aiGoodyFactor, "GoodyFactors", GC.getNumGoodyInfos(), 1);
 	pXML->SetVariableListTagPair(&m_aiBuildingProductionModifier, "BuildingProductionModifiers", GC.getNumBuildingClassInfos(), 0);
 	pXML->SetVariableListTagPair(&m_aiBuildingRequiredYieldModifier, "BuildingRequiredYieldModifiers", NUM_YIELD_TYPES, 0);

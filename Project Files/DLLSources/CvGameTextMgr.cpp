@@ -3920,6 +3920,18 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 			szHelpString.append(gDLL->getText("TXT_KEY_FATHER_IMPROVEMENT_PRICE_MODIFIER", kTrait.getImprovementPriceModifier()));
 		}
 
+		// WTP, ray, Improvement Growth Modifier - START
+		if (kTrait.getImprovementGrowthTimeModifier() != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			szHelpString.append(gDLL->getText("TXT_KEY_FATHER_IMPROVEMENT_GROWTH_TIME_MODIFIER", kTrait.getImprovementGrowthTimeModifier()));
+		}
+		// WTP, ray, Improvement Growth Modifier - EMD
+
 		if (kTrait.getLearningByDoingModifier() != 0)
 		{
 			szHelpString.append(NEWLINE);

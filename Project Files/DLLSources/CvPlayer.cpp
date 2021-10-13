@@ -6264,6 +6264,10 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 	m_iMaxTaxRate = m_iMaxTaxRate - maxtaxdecrease;
 	// R&R, ray, max tax decrease trait, END
 
+	// WTP, ray, Improvement Growth Modifier - START
+	changeImprovementUpgradeRateModifier(kTrait.getImprovementGrowthTimeModifier() * iChange);
+	// WTP, ray, Improvement Growth Modifier - END
+
 	int iLoop;
 	std::vector<CvUnit*> apUnits;
 	for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
@@ -6598,7 +6602,6 @@ int CvPlayer::getBuildCost(const CvPlot* pPlot, BuildTypes eBuild) const
 
 	return iCost;
 }
-
 
 RouteTypes CvPlayer::getBestRoute(CvPlot* pPlot) const
 {
@@ -7143,7 +7146,6 @@ int CvPlayer::getFreeExperience() const
 	return m_iFreeExperience;
 }
 
-
 void CvPlayer::changeFreeExperience(int iChange)
 {
 	m_iFreeExperience += iChange;
@@ -7154,30 +7156,25 @@ int CvPlayer::getWorkerSpeedModifier() const
 	return m_iWorkerSpeedModifier;
 }
 
-
 void CvPlayer::changeWorkerSpeedModifier(int iChange)
 {
 	m_iWorkerSpeedModifier += iChange;
 }
-
 
 int CvPlayer::getImprovementUpgradeRateModifier() const
 {
 	return m_iImprovementUpgradeRateModifier;
 }
 
-
 void CvPlayer::changeImprovementUpgradeRateModifier(int iChange)
 {
 	m_iImprovementUpgradeRateModifier += iChange;
 }
 
-
 int CvPlayer::getMilitaryProductionModifier() const
 {
 	return m_iMilitaryProductionModifier;
 }
-
 
 void CvPlayer::changeMilitaryProductionModifier(int iChange)
 {
@@ -7202,7 +7199,6 @@ int CvPlayer::getHighestUnitLevel()	const
 {
 	return m_iHighestUnitLevel;
 }
-
 
 void CvPlayer::setHighestUnitLevel(int iNewValue)
 {

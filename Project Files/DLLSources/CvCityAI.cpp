@@ -5328,6 +5328,7 @@ int CvCityAI::AI_plotValue(const CvPlot* pPlot, bool bAvoidGrowth, bool bRemove,
 	{
 		iValue += 200;
 		int iUpgradeTime = (GC.getGameINLINE().getImprovementUpgradeTime(eCurrentImprovement));
+
 		if (iUpgradeTime > 0) //assert this?
 		{
 			int iUpgradePenalty = (100 * (iUpgradeTime - pPlot->getUpgradeProgress()));
