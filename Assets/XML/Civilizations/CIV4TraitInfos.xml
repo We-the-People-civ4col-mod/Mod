@@ -7725,6 +7725,64 @@
             <GoodyFactors/>
         </TraitInfo>
         <TraitInfo>
+            <Type>TRAIT_JEAN_TALON</Type>
+            <Description>TXT_KEY_TRAIT_JEAN_TALON</Description>
+            <ShortDescription>TXT_KEY_FATHER_JEAN_TALON</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers/>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges/>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_LANDING_STAGE</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+            </BuildingProductionModifiers>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers/>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
             <Type>TRAIT_BENJAMIN_RUSH</Type>
             <Description>TXT_KEY_TRAIT_BENJAMIN_RUSH</Description>
             <ShortDescription>TXT_KEY_FATHER_BENJAMIN_RUSH</ShortDescription>
