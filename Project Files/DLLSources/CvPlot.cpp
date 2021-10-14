@@ -537,10 +537,13 @@ void CvPlot::upgradeImprovement(ImprovementTypes eImprovementUpgrade, int iUpgra
 {
 	changeUpgradeProgress(iUpgradeRate);
 
-	if (getUpgradeProgress() >= GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType()))
+	// WTP, ray, Improvement Growth Modifier - START
+	// if (getUpgradeProgress() >= GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType()))
+	if (getOwnerINLINE() != NO_PLAYER && getUpgradeTimeLeft(getImprovementType(),getOwnerINLINE()) == 0)
 	{
 		setImprovementType(eImprovementUpgrade);
 	}
+	// WTP, ray, Improvement Growth Modifier - END
 
 }
 
@@ -4811,7 +4814,15 @@ int CvPlot::getUpgradeTimeLeft(ImprovementTypes eImprovement, PlayerTypes ePlaye
 	int iUpgradeRate;
 	int iTurnsLeft;
 
-	iUpgradeLeft = (GC.getGameINLINE().getImprovementUpgradeTime(eImprovement) - ((getImprovementType() == eImprovement) ? getUpgradeProgress() : 0));
+	// WTP, ray, Improvement Growth Modifier - START
+	// modify in here by getImprovementUpgradeDurationModifier
+	// erst get ownerInline
+	int iUpgradeDurationModifier = GET_PLAYER(ePlayer).getImprovementUpgradeDurationModifier();
+	int iUpgradeDuration = GC.getGameINLINE().getImprovementUpgradeTime(eImprovement);
+	int iModifiedUpgradeDuration = iUpgradeDuration * (100 + iUpgradeDurationModifier) / 100;
+	iUpgradeLeft = (iModifiedUpgradeDuration - ((getImprovementType() == eImprovement) ? getUpgradeProgress() : 0));
+	//iUpgradeLeft = (GC.getGameINLINE().getImprovementUpgradeTime(eImprovement) - ((getImprovementType() == eImprovement) ? getUpgradeProgress() : 0));
+	// WTP, ray, Improvement Growth Modifier - START
 
 	if (ePlayer == NO_PLAYER)
 	{

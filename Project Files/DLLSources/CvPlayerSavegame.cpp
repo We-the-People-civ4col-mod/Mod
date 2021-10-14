@@ -27,6 +27,7 @@ const int defaultNativeAngerModifier = 0;
 const int defaultFreeExperience = 0;
 const int defaultWorkerSpeedModifier = 0;
 const int defaultImprovementUpgradeRateModifier = 0;
+const int defaultImprovementUpgradeDurationModifier = 0; // WTP, ray, Improvement Growth Modifier - START
 const int defaultMilitaryProductionModifier = 0;
 const int defaultCityDefenseModifier = 0;
 const int defaultHighestUnitLevel = 1;
@@ -123,6 +124,7 @@ enum SavegameVariableTypes
 	PlayerSave_FreeExperience,
 	PlayerSave_WorkerSpeedModifier,
 	PlayerSave_ImprovementUpgradeRateModifier,
+	PlayerSave_ImprovementUpgradeDurationModifier, // WTP, ray, Improvement Growth Modifier - START
 	PlayerSave_MilitaryProductionModifier,
 	PlayerSave_CityDefenseModifier,
 	PlayerSave_HighestUnitLevel,
@@ -303,6 +305,7 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_FreeExperience: return "PlayerSave_FreeExperience";
 	case PlayerSave_WorkerSpeedModifier: return "PlayerSave_WorkerSpeedModifier";
 	case PlayerSave_ImprovementUpgradeRateModifier: return "PlayerSave_ImprovementUpgradeRateModifier";
+	case PlayerSave_ImprovementUpgradeDurationModifier: return "PlayerSave_ImprovementUpgradeDurationModifier"; // WTP, ray, Improvement Growth Modifier - START
 	case PlayerSave_MilitaryProductionModifier: return "PlayerSave_MilitaryProductionModifier";
 	case PlayerSave_CityDefenseModifier: return "PlayerSave_CityDefenseModifier";
 	case PlayerSave_HighestUnitLevel: return "PlayerSave_HighestUnitLevel";
@@ -488,6 +491,7 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_iFreeExperience = defaultFreeExperience;
 	m_iWorkerSpeedModifier = defaultWorkerSpeedModifier;
 	m_iImprovementUpgradeRateModifier = defaultImprovementUpgradeRateModifier;
+	m_iImprovementUpgradeDurationModifier = defaultImprovementUpgradeDurationModifier; // WTP, ray, Improvement Growth Modifier - START
 	m_iMilitaryProductionModifier = defaultMilitaryProductionModifier;
 	m_iCityDefenseModifier = defaultCityDefenseModifier;
 	m_iHighestUnitLevel = defaultHighestUnitLevel;
@@ -694,6 +698,7 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_FreeExperience: reader.Read(m_iFreeExperience); break;
 		case PlayerSave_WorkerSpeedModifier: reader.Read(m_iWorkerSpeedModifier); break;
 		case PlayerSave_ImprovementUpgradeRateModifier: reader.Read(m_iImprovementUpgradeRateModifier); break;
+		case PlayerSave_ImprovementUpgradeDurationModifier: reader.Read(m_iImprovementUpgradeDurationModifier); break; // WTP, ray, Improvement Growth Modifier - START
 		case PlayerSave_MilitaryProductionModifier: reader.Read(m_iMilitaryProductionModifier); break;
 		case PlayerSave_CityDefenseModifier: reader.Read(m_iCityDefenseModifier); break;
 		case PlayerSave_HighestUnitLevel: reader.Read(m_iHighestUnitLevel); break;
@@ -905,6 +910,7 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_FreeExperience, m_iFreeExperience, defaultFreeExperience);
 	writer.Write(PlayerSave_WorkerSpeedModifier, m_iWorkerSpeedModifier, defaultWorkerSpeedModifier);
 	writer.Write(PlayerSave_ImprovementUpgradeRateModifier, m_iImprovementUpgradeRateModifier, defaultImprovementUpgradeRateModifier);
+	writer.Write(PlayerSave_ImprovementUpgradeDurationModifier, m_iImprovementUpgradeDurationModifier, defaultImprovementUpgradeDurationModifier); // WTP, ray, Improvement Growth Modifier - START
 	writer.Write(PlayerSave_MilitaryProductionModifier, m_iMilitaryProductionModifier, defaultMilitaryProductionModifier);
 	writer.Write(PlayerSave_CityDefenseModifier, m_iCityDefenseModifier, defaultCityDefenseModifier);
 	writer.Write(PlayerSave_HighestUnitLevel, m_iHighestUnitLevel, defaultHighestUnitLevel);

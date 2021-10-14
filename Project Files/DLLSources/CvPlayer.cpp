@@ -6265,7 +6265,7 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 	// R&R, ray, max tax decrease trait, END
 
 	// WTP, ray, Improvement Growth Modifier - START
-	changeImprovementUpgradeRateModifier(kTrait.getImprovementGrowthTimeModifier() * iChange);
+	changeImprovementUpgradeDurationModifier(kTrait.getImprovementGrowthTimeModifier() * iChange);
 	// WTP, ray, Improvement Growth Modifier - END
 
 	int iLoop;
@@ -7170,6 +7170,18 @@ void CvPlayer::changeImprovementUpgradeRateModifier(int iChange)
 {
 	m_iImprovementUpgradeRateModifier += iChange;
 }
+
+// WTP, ray, Improvement Growth Modifier - START
+int CvPlayer::getImprovementUpgradeDurationModifier() const
+{
+	return m_iImprovementUpgradeDurationModifier;
+}
+
+void CvPlayer::changeImprovementUpgradeDurationModifier(int iChange)
+{
+	m_iImprovementUpgradeDurationModifier += iChange;
+}
+// WTP, ray, Improvement Growth Modifier - END
 
 int CvPlayer::getMilitaryProductionModifier() const
 {

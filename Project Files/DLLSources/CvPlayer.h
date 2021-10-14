@@ -348,6 +348,8 @@ public:
 	void changeWorkerSpeedModifier(int iChange);
 	int getImprovementUpgradeRateModifier() const;
 	void changeImprovementUpgradeRateModifier(int iChange);
+	int getImprovementUpgradeDurationModifier() const; // WTP, ray, Improvement Growth Modifier - START
+	void changeImprovementUpgradeDurationModifier(int iChange); // WTP, ray, Improvement Growth Modifier - START
 	int getMilitaryProductionModifier() const;
 	void changeMilitaryProductionModifier(int iChange);
 	int getCityDefenseModifier() const;
@@ -943,6 +945,7 @@ protected:
 	int m_iFreeExperience;
 	int m_iWorkerSpeedModifier;
 	int m_iImprovementUpgradeRateModifier;
+	int m_iImprovementUpgradeDurationModifier; // WTP, ray, Improvement Growth Modifier - START
 	int m_iMilitaryProductionModifier;
 	int m_iCityDefenseModifier;
 	int m_iHighestUnitLevel;
