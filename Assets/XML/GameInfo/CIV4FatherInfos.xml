@@ -309,6 +309,36 @@
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,6,5</Button>
         </FatherInfo>
         <FatherInfo>
+            <Type>FATHER_JAMES_COOK</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/James_Cook.dds</Portrait>
+            <Description>TXT_KEY_FATHER_JAMES_COOK</Description>
+            <Civilopedia>TXT_KEY_FATHER_JAMES_COOK_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_JAMES_COOK_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_CORVETTE</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
+                    <iCost>2800</iCost>
+                </FatherPointCost>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>2500</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_JAMES_COOK</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,1,13</Button>
+        </FatherInfo>
+        <FatherInfo>
             <Type>FATHER_ALEXANDER_VON_HUMBOLDT</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Von_Humboldt.dds</Portrait>
             <Description>TXT_KEY_FATHER_ALEXANDER_VON_HUMBOLDT</Description>
@@ -325,11 +355,11 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
-                    <iCost>2800</iCost>
+                    <iCost>3500</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>2500</iCost>
+                    <iCost>3000</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_ALEXANDER_VON_HUMBOLDT</Trait>
@@ -410,11 +440,11 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
-                    <iCost>6000</iCost>
+                    <iCost>5000</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>5000</iCost>
+                    <iCost>4500</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_WILLEM_BARENTS</Trait>
@@ -440,11 +470,11 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
-                    <iCost>6550</iCost>
+                    <iCost>5500</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>5500</iCost>
+                    <iCost>5000</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_JACQUES_CARTIER</Trait>
@@ -474,11 +504,11 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
-                    <iCost>7500</iCost>
+                    <iCost>6000</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>6500</iCost>
+                    <iCost>5500</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait/>
@@ -504,11 +534,11 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
-                    <iCost>8000</iCost>
+                    <iCost>6500</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>7000</iCost>
+                    <iCost>6000</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_FERDINAND_MAGELLAN</Trait>
@@ -529,11 +559,11 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
-                    <iCost>8500</iCost>
+                    <iCost>7000</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>7500</iCost>
+                    <iCost>6500</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_PEDRO_MENENDEZ_DE_AVILES</Trait>
@@ -559,11 +589,11 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
-                    <iCost>9000</iCost>
+                    <iCost>7500</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>8000</iCost>
+                    <iCost>7000</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_BLACKBEARD</Trait>
@@ -571,36 +601,6 @@
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,3,12</Button>
-        </FatherInfo>
-        <FatherInfo>
-            <Type>FATHER_JAMES_COOK</Type>
-            <Portrait>Art/Interface/Screens/Founding_Fathers/James_Cook.dds</Portrait>
-            <Description>TXT_KEY_FATHER_JAMES_COOK</Description>
-            <Civilopedia>TXT_KEY_FATHER_JAMES_COOK_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_FATHER_JAMES_COOK_STRATEGY</Strategy>
-            <FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
-            <RevealImprovements/>
-            <FreeUnits>
-                <FreeUnit>
-                    <UnitClass>UNITCLASS_CORVETTE</UnitClass>
-                    <iFreeUnits>1</iFreeUnits>
-                </FreeUnit>
-            </FreeUnits>
-            <FatherPointCosts>
-                <FatherPointCost>
-                    <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
-                    <iCost>10000</iCost>
-                </FatherPointCost>
-                <FatherPointCost>
-                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>9000</iCost>
-                </FatherPointCost>
-            </FatherPointCosts>
-            <Trait>TRAIT_JAMES_COOK</Trait>
-            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
-            <Sound>AS2D_FUTURE</Sound>
-            <SoundMP>AS2D_MP_FUTURE</SoundMP>
-            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,1,13</Button>
         </FatherInfo>
         <FatherInfo>
             <Type>FATHER_JAN_DE_WITT</Type>
