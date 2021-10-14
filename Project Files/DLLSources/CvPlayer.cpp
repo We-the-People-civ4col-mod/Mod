@@ -5564,9 +5564,30 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 					for (int iGoody = 0; iGoody < GC.getNumGoodyInfos(); ++iGoody)
 					{
 						aGoodyFactors[iGoody] *= kTraitInfo.getGoodyFactor(iGoody);
+
+						// WTP, ray, Unique Goody Chance Modifiers - START
+						// probably no need to have this stored as attribute on Player by "processTrait"
+						// we are already looping Traits and Goodies anyways for above logic and just plugin
+						CvGoodyInfo& kGoodyInfo = GC.getGoodyInfo((GoodyTypes)iGoody);
+						if (kGoodyInfo.isUnique() && !kGoodyInfo.isBad())
+						{
+							// Water Goodies
+							if (kGoodyInfo.isWaterGoody())
+							{
+								aGoodyFactors[iGoody] = aGoodyFactors[iGoody] * (100 +kTraitInfo.getGoodUniqueGoodyChanceModifierWater()) / 100;
+							}
+							// Land Goodies
+							else
+							{
+								aGoodyFactors[iGoody] = aGoodyFactors[iGoody] * (100 +kTraitInfo.getGoodUniqueGoodyChanceModifierLand()) / 100;
+							}
+						}
+						// WTP, ray, Unique Goody Chance Modifiers - END
 					}
 				}
 			}
+
+
 
 			int iBestValue = -1;
 			GoodyTypes eBestGoody = NO_GOODY;

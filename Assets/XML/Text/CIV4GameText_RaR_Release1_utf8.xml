@@ -412,14 +412,6 @@
         <Spanish>[ICON_BULLET]%D1%% efecto de la Revolución de Cambio on Rebelde [ICON_STRENGTH]</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_TRAIT_TREASURE_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% more [ICON_GOLD] when villages are captured</English>
-        <French>[ICON_BULLET]Confère %D1%% [ICON_GOLD] quand des villages sont capturés</French>
-        <German>[ICON_BULLET]%D1%% mehr [ICON_GOLD] bei Eroberung von Siedlungen der Ureinwohner</German>
-        <Italian>[ICON_BULLET]Rende %D1%% [ICON_GOLD] quando vengono conquistati i villaggi</Italian>
-        <Spanish>[ICON_BULLET]Rinde %D1%% [ICON_GOLD] cuando se capturan aldeas</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_BOUGHT_SMUGGLERS</Tag>
         <English>Milord, the [COLOR_UNIT_TEXT]smugglers[COLOR_REVERT] we have hired await your orders in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
         <French>Les contrebandiers que nous avons recrutés attendent vos ordres à %s1_city, Sir.</French>
@@ -431,16 +423,16 @@
         <French>[ICON_BULLET]Peut voir les gardes-forestiers.</French>
         <German>[ICON_BULLET]Kann Ranger sehen.</German>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_COASTAL_TRANSPORT_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Coastal ships[COLOR_REVERT] are built to move goods and people. They are small but fast, faster and more spacious than wagon trains. Because of their shallow draft they are unable to use ocean fields, so they can't sail to Europe. The small coastal ship has two slots for goods and people. The bigger one has three slots. Both can only defend themselves poorly.</English>
-		<German>[COLOR_HIGHLIGHT_TEXT]Küstensegler[COLOR_REVERT] sind eigens für den küstennahen Transport von Waren und Menschen gedacht. Sie sind zwar klein, dafür aber sehr wendig und außerdem deutlich geräumiger und schneller als ein Planwagen. Sie können nur in [COLOR_HIGHLIGHT_TEXT]Küstennähe[COLOR_REVERT] eingesetzt werden. Den Ozean kann man mit ihnen nicht befahren, so dass sie nicht nach Europa segeln können. Der Kleine Küstensegler hat zwei Frachtplätze, der große Küstensegler drei. Beide können sich nur schlecht verteidigen.</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_COASTAL_SHIPS_PEDIA</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Coastal Shipping[COLOR_REVERT] uses small yet capacious sailing vessels to move goods and people. These commercial boats begin to operate soon after colonies are established in the New World. Small ships designed for shallow water can't sail to Europe or Africa.</English>
-		<German>[COLOR_UNIT_TEXT]Küstenschifffahrt[COLOR_REVERT] wird, wie der Name schon sagt, nur nahe der Küste betrieben. Kleine und handliche - dafür aber recht geräumige - Segler eignen sich bestens dazu, bereits sehr früh nach der Landung in der Neuen Welt Schiffe gebaut zu werden, damit Waren schnell zwischen den Kolonien hin- und hertransportiert werden können, bis ein Straßennetz errichtet werden kann. Aufgrund ihrer geringen Größe können die Küstensegler nicht auf den Ozean hinaus fahren und auch nicht nach Europa oder Afrika segeln.</German>
-	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COASTAL_TRANSPORT_STRATEGY</Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]Coastal ships[COLOR_REVERT] are built to move goods and people. They are small but fast, faster and more spacious than wagon trains. Because of their shallow draft they are unable to use ocean fields, so they can't sail to Europe. The small coastal ship has two slots for goods and people. The bigger one has three slots. Both can only defend themselves poorly.</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Küstensegler[COLOR_REVERT] sind eigens für den küstennahen Transport von Waren und Menschen gedacht. Sie sind zwar klein, dafür aber sehr wendig und außerdem deutlich geräumiger und schneller als ein Planwagen. Sie können nur in [COLOR_HIGHLIGHT_TEXT]Küstennähe[COLOR_REVERT] eingesetzt werden. Den Ozean kann man mit ihnen nicht befahren, so dass sie nicht nach Europa segeln können. Der Kleine Küstensegler hat zwei Frachtplätze, der große Küstensegler drei. Beide können sich nur schlecht verteidigen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COASTAL_SHIPS_PEDIA</Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]Coastal Shipping[COLOR_REVERT] uses small yet capacious sailing vessels to move goods and people. These commercial boats begin to operate soon after colonies are established in the New World. Small ships designed for shallow water can't sail to Europe or Africa.</English>
+        <German>[COLOR_UNIT_TEXT]Küstenschifffahrt[COLOR_REVERT] wird, wie der Name schon sagt, nur nahe der Küste betrieben. Kleine und handliche - dafür aber recht geräumige - Segler eignen sich bestens dazu, bereits sehr früh nach der Landung in der Neuen Welt Schiffe gebaut zu werden, damit Waren schnell zwischen den Kolonien hin- und hertransportiert werden können, bis ein Straßennetz errichtet werden kann. Aufgrund ihrer geringen Größe können die Küstensegler nicht auf den Ozean hinaus fahren und auch nicht nach Europa oder Afrika segeln.</German>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELDS_CONSUMED_WITH_CHAR</Tag>
         <English>Consumes : %s1_symbol_list</English>

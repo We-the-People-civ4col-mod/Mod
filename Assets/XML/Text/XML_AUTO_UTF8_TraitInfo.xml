@@ -433,6 +433,14 @@
         <English>TXT_KEY_FATHER_ROBERT_KING_CARTER_I</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TRAIT_LOUIS_JOLLIET</Tag>
+        <English>TXT_KEY_FATHER_LOUIS_JOLLIET</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_JAMES_COOK</Tag>
+        <English>TXT_KEY_FATHER_JAMES_COOK</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TRAIT_HENRY_SHRAPNEL</Tag>
         <English>TXT_KEY_FATHER_HENRY_SHRAPNEL</English>
     </TEXT>

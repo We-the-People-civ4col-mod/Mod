@@ -3278,26 +3278,41 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 			}
 		}
 
-		int iTreasureModifier = 100 + kTrait.getTreasureModifier();
-		if (iTreasureModifier != 100)
+		int iTreasureModifier = kTrait.getTreasureModifier();
+		if (iTreasureModifier != 0)
 		{
-			// R&R, ray, fixed Trait Display)
-			/*if (eCivilization != NO_CIVILIZATION)
-			{
-				iTreasureModifier *= GC.getCivilizationInfo(eCivilization).getTreasure();
-				iTreasureModifier /= 100;
-			}
-
-			if ((iTreasureModifier > 0) && (iTreasureModifier != 100))
-			{*/
 			szHelpString.append(NEWLINE);
 			if (bIndent)
 			{
 				szHelpString.append(L"  ");
 			}
-			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_TREASURE_MODIFIER", iTreasureModifier - 100));
-			//}
+			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_TREASURE_MODIFIER", iTreasureModifier));
 		}
+
+		// WTP, ray, Unique Goody Chance Modifiers - START
+		int iGoodUniqueGoodyChanceModifierLand = kTrait.getGoodUniqueGoodyChanceModifierLand();
+		if (iGoodUniqueGoodyChanceModifierLand != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_GOODY_CHANCE_MODIFIER_LAND", iGoodUniqueGoodyChanceModifierLand));
+		}
+
+		int iGoodUniqueGoodyChanceModifierWater = kTrait.getGoodUniqueGoodyChanceModifierWater();
+		if (iGoodUniqueGoodyChanceModifierWater != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_GOODY_CHANCE_MODIFIER_WATER", iGoodUniqueGoodyChanceModifierWater));
+		}
+		// WTP, ray, Unique Goody Chance Modifiers - END
+
 
 		// WTP, ray, Happiness - START
 		int iUnhappinessFromSlavesModifier = kTrait.getUnhappinessFromSlavesModifier();

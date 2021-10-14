@@ -1806,11 +1806,21 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_TREASURE_MODIFIER</Tag>
-        <English>[ICON_BULLET]Yields %D1%% treasure when Native settlements are captured</English>
-        <French>[ICON_BULLET]Confère %D1%% trésor(s) quand des villages sont capturés</French>
-        <German>[ICON_BULLET]Bringt %D1%% an Schätzen bei Eroberung von Siedlungen der Ureinwohner</German>
-        <Italian>[ICON_BULLET]Rende %D1%% tesoro quando vengono conquistati i villaggi</Italian>
-        <Spanish>[ICON_BULLET]Rinde %D1%% de tesoro cuando se capturan aldeas</Spanish>
+        <English>[ICON_BULLET]%D1%% more [ICON_GOLD] when villages are captured</English>
+        <French>[ICON_BULLET]Confère %D1%% [ICON_GOLD] quand des villages sont capturés</French>
+        <German>[ICON_BULLET]%D1%% mehr [ICON_GOLD] bei Eroberung von Siedlungen der Ureinwohner</German>
+        <Italian>[ICON_BULLET]Rende %D1%% [ICON_GOLD] quando vengono conquistati i villaggi</Italian>
+        <Spanish>[ICON_BULLET]Rinde %D1%% [ICON_GOLD] cuando se capturan aldeas</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_GOODY_CHANCE_MODIFIER_LAND</Tag>
+        <English>[ICON_BULLET]%D1%% chances for unique events (Goody Huts land)</English>
+        <German>[ICON_BULLET]%D1%% Chancen für einzigartige Ereignisse (Goody Huts an Land)</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_GOODY_CHANCE_MODIFIER_WATER</Tag>
+        <English>[ICON_BULLET]%D1%% chances for unique events (Goody Huts water)</English>
+        <German>[ICON_BULLET]%D1%% Chancen für einzigartige Ereignisse (Goody Huts im Wasser)</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CHIEF_GOLD_MODIFIER</Tag>

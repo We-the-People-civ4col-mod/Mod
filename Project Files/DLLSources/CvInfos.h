@@ -3202,6 +3202,8 @@ public:
 	int getMaxTaxRateThresholdDecrease() const; // R&R, ray, new Attribute in Traits
 	int getMercantileFactor() const;
 	int getTreasureModifier() const;
+	int getGoodUniqueGoodyChanceModifierLand() const; // WTP, ray, Unique Goody Chance Modifiers - START
+	int getGoodUniqueGoodyChanceModifierWater() const; // WTP, ray, Unique Goody Chance Modifiers - START
 	int getUnhappinessFromSlavesModifier() const; // WTP, ray, Happiness - START
 	int getChiefGoldModifier() const;
 	int getNativeAttitudeChange() const;
@@ -3263,6 +3265,8 @@ protected:
 	int m_iMaxTaxRateThresholdDecrease; // R&R, ray, new Attribute in Traits
 	int m_iMercantileFactor;
 	int m_iTreasureModifier;
+	int m_iGoodUniqueGoodyChanceModifierLand; // WTP, ray, Unique Goody Chance Modifiers - START
+	int m_iGoodUniqueGoodyChanceModifierWater; // WTP, ray, Unique Goody Chance Modifiers - START
 	int m_iUnhappinessFromSlavesModifier; // WTP, ray, Happiness - START
 	int m_iChiefGoldModifier;
 	int m_iNativeAttitudeChange;

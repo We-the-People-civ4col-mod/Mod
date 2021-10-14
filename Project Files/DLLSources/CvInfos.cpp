@@ -11012,6 +11012,8 @@ CvTraitInfo::CvTraitInfo() :
 	m_iMaxTaxRateThresholdDecrease(0), // R&R, ray, new Attribute in Traits
 	m_iMercantileFactor(0),
 	m_iTreasureModifier(0),
+	m_iGoodUniqueGoodyChanceModifierLand(0), // WTP, ray, Unique Goody Chance Modifiers - START
+	m_iGoodUniqueGoodyChanceModifierWater(0), // WTP, ray, Unique Goody Chance Modifiers - START
 	m_iUnhappinessFromSlavesModifier(0), // WTP, ray, Happiness - START
 	m_iChiefGoldModifier(0),
 	m_iNativeAttitudeChange(0),
@@ -11103,6 +11105,16 @@ int CvTraitInfo::getTreasureModifier() const
 {
 	return m_iTreasureModifier;
 }
+// WTP, ray, Unique Goody Chance Modifiers - START
+int CvTraitInfo::getGoodUniqueGoodyChanceModifierLand() const
+{
+	return m_iGoodUniqueGoodyChanceModifierLand;
+}
+int CvTraitInfo::getGoodUniqueGoodyChanceModifierWater() const
+{
+	return m_iGoodUniqueGoodyChanceModifierWater;
+}
+// WTP, ray, Unique Goody Chance Modifiers - END
 // WTP, ray, Happiness - START
 int CvTraitInfo::getUnhappinessFromSlavesModifier() const
 {
@@ -11339,6 +11351,8 @@ void CvTraitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iMaxTaxRateThresholdDecrease); // R&R, ray, new Attribute in Traits
 	stream->Read(&m_iMercantileFactor);
 	stream->Read(&m_iTreasureModifier);
+	stream->Read(&m_iGoodUniqueGoodyChanceModifierLand); // WTP, ray, Unique Goody Chance Modifiers - START
+	stream->Read(&m_iGoodUniqueGoodyChanceModifierWater); // WTP, ray, Unique Goody Chance Modifiers - START
 	stream->Read(&m_iUnhappinessFromSlavesModifier); // WTP, ray, Happiness - START
 	stream->Read(&m_iChiefGoldModifier);
 	stream->Read(&m_iNativeAttitudeChange);
@@ -11448,6 +11462,8 @@ void CvTraitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iMaxTaxRateThresholdDecrease); // R&R, ray, new Attribute in Traits
 	stream->Write(m_iMercantileFactor);
 	stream->Write(m_iTreasureModifier);
+	stream->Write(m_iGoodUniqueGoodyChanceModifierLand); // WTP, ray, Unique Goody Chance Modifiers - START
+	stream->Write(m_iGoodUniqueGoodyChanceModifierWater); // WTP, ray, Unique Goody Chance Modifiers - START
 	stream->Write(m_iUnhappinessFromSlavesModifier); // WTP, ray, Happiness - START
 	stream->Write(m_iChiefGoldModifier);
 	stream->Write(m_iNativeAttitudeChange);
@@ -11513,6 +11529,8 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iMaxTaxRateThresholdDecrease, "iMaxTaxRateThresholdDecrease"); // R&R, ray, new Attribute in Traits
 	pXML->GetChildXmlValByName(&m_iMercantileFactor, "iMercantileFactor");
 	pXML->GetChildXmlValByName(&m_iTreasureModifier, "iTreasureModifier");
+	pXML->GetChildXmlValByName(&m_iGoodUniqueGoodyChanceModifierLand, "iGoodUniqueGoodyChanceModifierLand"); // WTP, ray, Unique Goody Chance Modifiers - START
+	pXML->GetChildXmlValByName(&m_iGoodUniqueGoodyChanceModifierWater, "iGoodUniqueGoodyChanceModifierWater"); // WTP, ray, Unique Goody Chance Modifiers - START
 	pXML->GetChildXmlValByName(&m_iUnhappinessFromSlavesModifier, "iUnhappinessFromSlavesModifier"); // WTP, ray, Happiness - START
 	pXML->GetChildXmlValByName(&m_iChiefGoldModifier, "iChiefGoldModifier");
 	pXML->GetChildXmlValByName(&m_iNativeAttitudeChange, "iNativeAttitudeChange");

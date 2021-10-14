@@ -1364,8 +1364,6 @@
         <Italian>Aggiungi una nota di libertà ai tuoi sermoni, adottando [COLOR_TECH_TEXT]Gregorio de Mattos e Guerra[COLOR_REVERT] come Padre Fondatore. Con Guerra al tuo fianco, tutte le tue [COLOR_BUILDING_TEXT]chiese[COLOR_REVERT] e le tue [COLOR_BUILDING_TEXT]cattedrali[COLOR_REVERT] produrranno [COLOR_HIGHLIGHT_TEXT]campane della libertà[COLOR_REVERT]! </Italian>
         <Spanish>AÃ±adid un halo de libertad a vuestros sermones con [COLOR_TECH_TEXT]Gregório de Mattos e Guerra[COLOR_REVERT] como Padre fundador. Con de Mattos de vuestro lado, todas vuestras [COLOR_BUILDING_TEXT]Iglesias[COLOR_REVERT] y [COLOR_BUILDING_TEXT]Catedrales[COLOR_REVERT] producirán [COLOR_HIGHLIGHT_TEXT]Campanas de la libertad[COLOR_REVERT]. </Spanish>
     </TEXT>
-	
-	
     <TEXT>
         <Tag>TXT_KEY_FATHER_ROBERT_KING_CARTER_I</Tag>
         <English>
@@ -1403,6 +1401,82 @@
         <Tag>TXT_KEY_FATHER_ROBERT_KING_CARTER_I_STRATEGY</Tag>
         <English>Add [COLOR_TECH_TEXT]Robert „King“ Carter I[COLOR_REVERT] as a Founding Father to have his influence and wealth will speed up all updrades of your improvements. With him on your side, the planations, farms, mines, quarries and all other landmarks in the colonies will flourish.</English>
         <German>Gewinne [COLOR_TECH_TEXT]Robert „King“ Carter I[COLOR_REVERT] als Gründervater, damit sein Einfluss und Reichtum das Wachstum deiner Geländeverbesserungen beschleunigt. Mit ihm and deiner Seite, werden die Planatgen, Farmen, Minen, Steinbrüche und alle andere Geländeverbesserungen in den Kolonien gedeihen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_LOUIS_JOLLIET</Tag>
+        <English>
+            <Text>Louis Jolliet</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Louis Jolliet</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Louis Jolliet</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Louis Jolliet</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Louis Jolliet</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_LOUIS_JOLLIET_PEDIA</Tag>
+        <English>[H1]Louis Jolliet[\H1][NEWLINE][BOLD]Lived: [\BOLD]1645 -1700 [PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Louis Jolliet was a French-Canadian explorer known for his discoveries in North America. In 1673, Jolliet and Jesuit Father Jacques Marquette, a Catholic priest and missionary, were the first non-Natives to explore and map the Upper Mississippi River.</English>
+        <German>[H1]Louis Jolliet[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1645 -1700 [PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Louis Joliet (oder Jolliet) wurde am 21. September 1645 nahe Québec in der französischen Kolonie Neufrankreich, später Kanada, als Sohn des Wagenmachers Jean Joliet geboren. Als Zehnjähriger kam er auf das Jesuitenkolleg in Québec und studierte dort für das Priesteramt. 1667 verzichtete er jedoch auf ein geistliches Amt. Stattdessen begann er, mit seinem Bruder Adrien im unerforschten Hinterland Kanadas mit den Indianern Handel zu treiben. Das nötige Kapital für die Karriere als „Waldläufer“ stellte ihm Bischof Laval von Québec zur Verfügung.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_LOUIS_JOLLIET_STRATEGY</Tag>
+        <English>Add [COLOR_TECH_TEXT]Louis Jolliet[COLOR_REVERT] as a Founding Father to increase chances of triggering unique events on the map when exploring Goody Huts on land. Additionally he will grant your troops better protection against wild animals on land.</English>
+        <German>Gewinne [COLOR_TECH_TEXT]Louis Jolliet[COLOR_REVERT] als Gründervater um die Chances auf einzigartige Ereignisse beim Untersuchen von Goody Huts an Land auszulösen. Zusätzlich verleiht er deinen Tuppen besseren Schutz gegen Wilde Tiere an Land.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JAMES_COOK</Tag>
+        <English>
+            <Text>James Cook</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>James Cook</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>James Cook</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>James Cook</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>James Cook</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JAMES_COOK_PEDIA</Tag>
+        <English>[H1]James Cook[\H1][NEWLINE][BOLD]Lived: [\BOLD]1728 -1779 [PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Captain James Cook was a British explorer, navigator, cartographer, and captain in the British Royal Navy, famous for his three voyages between 1768 and 1779 in the Pacific Ocean and to Australia in particular. He made detailed maps of Newfoundland prior to making three voyages to the Pacific, during which he achieved the first recorded European contact with the eastern coastline of Australia and the Hawaiian Islands, and the first recorded circumnavigation of New Zealand. </English>
+        <German>[H1]James Cook[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1728 -1779 [PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]James Cook war ein britischer Seefahrer, Kartograf und Entdecker. Berühmt wurde er durch drei Fahrten in den Pazifischen Ozean, den er genauer kartografierte als jeder andere vor ihm. Er entdeckte zahlreiche Inseln und wies nach, dass die Terra Australis nicht existierte und die Nordwestpassage mit Schiffen seiner Zeit nicht zu durchfahren war. Von großer Bedeutung für die Seefahrt waren auch seine wirkungsvollen Maßnahmen gegen Skorbut.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JAMES_COOK_STRATEGY</Tag>
+        <English>Add [COLOR_TECH_TEXT]James Cook[COLOR_REVERT] as a Founding Father to increase chances of triggering unique events on the map when exploring Goody Huts on Water. Additionally he will grant your troops better protection against wild animals at sea.</English>
+        <German>Gewinne [COLOR_TECH_TEXT]James Cook[COLOR_REVERT] als Gründervater um die Chances auf einzigartige Ereignisse beim Untersuchen von Goody Huts im Wasser auszulösen. Zusätzlich verleiht er deinen Tuppen besseren Schutz gegen wilde Tiere im Wasser.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_HENRY_SHRAPNEL</Tag>
