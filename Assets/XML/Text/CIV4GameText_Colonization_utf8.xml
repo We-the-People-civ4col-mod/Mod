@@ -1199,10 +1199,22 @@
     <TEXT>
         <Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_MODIFIER</Tag>
         <English>[ICON_BULLET]%D1%% chance colonists learn a specialization by hard work</English>
-        <French>[ICON_BULLET]%D1%% chance Colonists learn Specialisms by hard work</French>
         <German>[ICON_BULLET]%D1%% Chance für Kolonisten durch harte Arbeit zum Spezialisten zu werden</German>
-        <Italian>[ICON_BULLET]%D1%% chance Colonists learn Specialisms by hard work</Italian>
-        <Spanish>[ICON_BULLET]%D1%% chance Colonists learn Specialisms by hard work</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_FREE_MODIFIER</Tag>
+        <English>[ICON_BULLET]%D1%% chance for unfree to become free colonists by hard work</English>
+        <German>[ICON_BULLET]%D1%% Chance für Unfreie durch harte Arbeit zum freien Kolonisten zu werden</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_RUNAWAY_MODIFIER</Tag>
+        <English>[ICON_BULLET]%D1%% chance for unfree to try to run away</English>
+        <German>[ICON_BULLET]%D1%% Chance für Unfreie eine Flucht zu vesuchen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_REVOLT_MODIFIER</Tag>
+        <English>[ICON_BULLET]%D1%% chance for unfree to start a revolt</English>
+        <German>[ICON_BULLET]%D1%% Chance für Unfreie eine Revolte zu starten</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_SPECIALIST_PRICE_MODIFIER</Tag>

@@ -2428,12 +2428,8 @@
             <RevealImprovements/>
             <FreeUnits>
                 <FreeUnit>
-                    <UnitClass>UNITCLASS_STATESMAN</UnitClass>
-                    <iFreeUnits>2</iFreeUnits>
-                </FreeUnit>
-                <FreeUnit>
                     <UnitClass>UNITCLASS_FREED_SLAVE</UnitClass>
-                    <iFreeUnits>2</iFreeUnits>
+                    <iFreeUnits>4</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>

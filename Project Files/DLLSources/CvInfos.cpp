@@ -11032,6 +11032,9 @@ CvTraitInfo::CvTraitInfo() :
 	m_iImprovementPriceModifier(0),
 	m_iImprovementGrowthTimeModifier(0), // WTP, ray, Improvement Growth Modifier
 	m_iLearningByDoingModifier(0),
+	m_iLearningByDoingFreeModifier(0), // WTP, ray, adding modifiers for other LBD features - START
+	m_iLearningByDoingRunawayModifier(0), // WTP, ray, adding modifiers for other LBD features - START
+	m_iLearningByDoingRevoltModifier(0), // WTP, ray, adding modifiers for other LBD features - START
 	m_iSpecialistPriceModifier(0),
 	m_iStorageCapacityModifier(0),		// Schmiddie, 7 new variables for traits for Europeans, END
 	m_aiYieldModifier(NULL),
@@ -11237,6 +11240,23 @@ int CvTraitInfo::getLearningByDoingModifier() const
 	return m_iLearningByDoingModifier;
 }
 
+// WTP, ray, adding modifiers for other LBD features - START
+int CvTraitInfo::getLearningByDoingFreeModifier() const
+{
+	return m_iLearningByDoingFreeModifier;
+}
+
+int CvTraitInfo::getLearningByDoingRunawayModifier() const
+{
+	return m_iLearningByDoingRunawayModifier;
+}
+
+int CvTraitInfo::getLearningByDoingRevoltModifier() const
+{
+	return m_iLearningByDoingRevoltModifier;
+}
+// WTP, ray, adding modifiers for other LBD features - END
+
 int CvTraitInfo::getSpecialistPriceModifier() const
 {
 	return m_iSpecialistPriceModifier;
@@ -11388,6 +11408,9 @@ void CvTraitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iImprovementPriceModifier);
 	stream->Read(&m_iImprovementGrowthTimeModifier);  // WTP, ray, Improvement Growth Modifier
 	stream->Read(&m_iLearningByDoingModifier);
+	stream->Read(&m_iLearningByDoingFreeModifier); // WTP, ray, adding modifiers for other LBD features - START
+	stream->Read(&m_iLearningByDoingRunawayModifier); // WTP, ray, adding modifiers for other LBD features - START
+	stream->Read(&m_iLearningByDoingRevoltModifier); // WTP, ray, adding modifiers for other LBD features - START
 	stream->Read(&m_iSpecialistPriceModifier);
 	stream->Read(&m_iStorageCapacityModifier);		// Schmiddie, 7 new variables for traits for Europeans, END
 	stream->ReadString(m_szShortDescription);
@@ -11501,6 +11524,9 @@ void CvTraitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iImprovementPriceModifier);
 	stream->Write(m_iImprovementGrowthTimeModifier); // WTP, ray, Improvement Growth Modifier
 	stream->Write(m_iLearningByDoingModifier);
+	stream->Write(m_iLearningByDoingFreeModifier); // WTP, ray, adding modifiers for other LBD features - START
+	stream->Write(m_iLearningByDoingRunawayModifier); // WTP, ray, adding modifiers for other LBD features - START
+	stream->Write(m_iLearningByDoingRevoltModifier); // WTP, ray, adding modifiers for other LBD features - STAR
 	stream->Write(m_iSpecialistPriceModifier);
 	stream->Write(m_iStorageCapacityModifier);		// Schmiddie, 7 new variables for traits for Europeans, END
 	stream->WriteString(m_szShortDescription);
@@ -11570,6 +11596,9 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iImprovementPriceModifier, "iImprovementPriceModifier");
 	pXML->GetChildXmlValByName(&m_iImprovementGrowthTimeModifier, "iImprovementGrowthTimeModifier"); // WTP, ray, Improvement Growth Modifier
 	pXML->GetChildXmlValByName(&m_iLearningByDoingModifier, "iLearningByDoingModifier");
+	pXML->GetChildXmlValByName(&m_iLearningByDoingFreeModifier, "iLearningByDoingFreeModifier"); // WTP, ray, adding modifiers for other LBD features - START
+	pXML->GetChildXmlValByName(&m_iLearningByDoingRunawayModifier, "iLearningByDoingRunawayModifier"); // WTP, ray, adding modifiers for other LBD features - START
+	pXML->GetChildXmlValByName(&m_iLearningByDoingRevoltModifier, "iLearningByDoingRevoltModifier"); // WTP, ray, adding modifiers for other LBD features - START
 	pXML->GetChildXmlValByName(&m_iSpecialistPriceModifier, "iSpecialistPriceModifier");
 	pXML->GetChildXmlValByName(&m_iStorageCapacityModifier, "iStorageCapacityModifier");		// Schmiddie, 7 new variables for traits for Europeans, END
 	pXML->SetVariableListTagPair(&m_aiGoodyFactor, "GoodyFactors", GC.getNumGoodyInfos(), 1);

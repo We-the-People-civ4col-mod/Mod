@@ -11162,6 +11162,8 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 		calculatedChance = calculatedChance * ki_modifier / 100;
 	}
 	
+	// WTP, ray, adding modifiers for other LBD features - START
+	int iLearningByDoingModifer = 0;
 	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
 	{
 		TraitTypes eTrait = (TraitTypes) iTrait;
@@ -11169,12 +11171,13 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 		{
 			if (hasTrait(eTrait))
 			{
-				calculatedChance *= GC.getTraitInfo(eTrait).getLearningByDoingModifier() + 100;
-				calculatedChance /= 100;
+				iLearningByDoingModifer = iLearningByDoingModifer + GC.getTraitInfo(eTrait).getLearningByDoingModifier();
 			}
 		}
 	}
-								//agnat86, added LbD modifier for Sophisticated Trait
+	calculatedChance = calculatedChance * (100 + iLearningByDoingModifer) / 100 ;
+	// WTP, ray, adding modifiers for other LBD features - END
+
 	//ray Multiplayer Random Fix
 	//int randomValue = rand() % 1000 + 1;
 	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "LbD Expert City");
@@ -11269,7 +11272,23 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	// WTP, ray, LbD Slaves Revolt and Free - END
 
 	int calculatedChance = (base + (workedRounds - pre_rounds) * increase * l_level * mod);
-	
+
+	// WTP, ray, adding modifiers for other LBD features - START
+	int iLearningByDoingFreeModifier = 0;
+	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+	{
+		TraitTypes eTrait = (TraitTypes) iTrait;
+		if (eTrait != NO_TRAIT)
+		{
+			if (hasTrait(eTrait))
+			{
+				iLearningByDoingFreeModifier = iLearningByDoingFreeModifier + GC.getTraitInfo(eTrait).getLearningByDoingFreeModifier();
+			}
+		}
+	}
+	calculatedChance = calculatedChance * (100 + iLearningByDoingFreeModifier) / 100 ;
+	// WTP, ray, adding modifiers for other LBD features - END
+
 	//ray Multiplayer Random Fix
 	//int randomValue = rand() % 1000 + 1;
 	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "LbD Free City");
@@ -11321,6 +11340,22 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 
 	// TODO: cases criminal or servant
 	int calculatedChance = (base * mod);
+
+	// WTP, ray, adding modifiers for other LBD features - START
+	int iLearningByDoingRunawayModifier = 0;
+	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+	{
+		TraitTypes eTrait = (TraitTypes) iTrait;
+		if (eTrait != NO_TRAIT)
+		{
+			if (hasTrait(eTrait))
+			{
+				iLearningByDoingRunawayModifier = iLearningByDoingRunawayModifier + GC.getTraitInfo(eTrait).getLearningByDoingRunawayModifier();
+			}
+		}
+	}
+	calculatedChance = calculatedChance * (100 + iLearningByDoingRunawayModifier) / 100 ;
+	// WTP, ray, adding modifiers for other LBD features - END
 
 	//ray Multiplayer Random Fix
 	//int randomValue = rand() % 1000 + 1;
@@ -11393,6 +11428,25 @@ bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_sl
 
 	// get chance and random value
 	int calculatedChance = (base * mod);
+
+	// WTP, ray, adding modifiers for other LBD features - START
+	int iLearningByDoingRevoltModifier = 0;
+	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+	{
+		TraitTypes eTrait = (TraitTypes) iTrait;
+		if (eTrait != NO_TRAIT)
+		{
+			if (hasTrait(eTrait))
+			{
+				iLearningByDoingRevoltModifier = iLearningByDoingRevoltModifier + GC.getTraitInfo(eTrait).getLearningByDoingRevoltModifier();
+			}
+		}
+	}
+	calculatedChance = calculatedChance * (100 + iLearningByDoingRevoltModifier) / 100 ;
+	// WTP, ray, adding modifiers for other LBD features - END
+
+
+
 	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "LbD Revolt Slave");
 	
 	// no Success if randomValue larger calculatedChance

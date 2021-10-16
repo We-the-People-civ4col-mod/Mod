@@ -3222,6 +3222,9 @@ public:
 	int getImprovementPriceModifier() const;
 	int getImprovementGrowthTimeModifier() const; // WTP, ray, Improvement Growth Modifier
 	int getLearningByDoingModifier() const;
+	int getLearningByDoingFreeModifier() const; // WTP, ray, adding modifiers for other LBD features - START
+	int getLearningByDoingRunawayModifier() const; // WTP, ray, adding modifiers for other LBD features - START
+	int getLearningByDoingRevoltModifier() const; // WTP, ray, adding modifiers for other LBD features - START
 	int getSpecialistPriceModifier() const;
 	int getStorageCapacityModifier() const;		// Schmiddie, 7 new variables for traits for Europeans, END
 
@@ -3287,6 +3290,9 @@ protected:
 	int m_iImprovementPriceModifier;
 	int m_iImprovementGrowthTimeModifier;  // WTP, ray, Improvement Growth Modifier
 	int m_iLearningByDoingModifier;
+	int m_iLearningByDoingFreeModifier; // WTP, ray, adding modifiers for other LBD features - START
+	int m_iLearningByDoingRunawayModifier; // WTP, ray, adding modifiers for other LBD features - START
+	int m_iLearningByDoingRevoltModifier; // WTP, ray, adding modifiers for other LBD features - START
 	int m_iSpecialistPriceModifier;
 	int m_iStorageCapacityModifier;		// Schmiddie, 7 new variables for traits for Europeans, END
 

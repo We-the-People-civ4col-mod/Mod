@@ -43,6 +43,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -103,6 +106,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>20</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>20</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>-20</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -163,6 +169,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -218,6 +227,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -273,6 +285,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>25</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -328,6 +343,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields>
@@ -474,6 +492,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -567,6 +588,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -664,6 +688,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -724,6 +751,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>20</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -812,6 +842,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -885,6 +918,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -949,6 +985,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>-50</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>-50</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1004,6 +1043,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields>
@@ -1090,6 +1132,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1154,6 +1199,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields>
@@ -1214,6 +1262,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields>
@@ -1329,6 +1380,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1418,6 +1472,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1495,6 +1552,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>50</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>-50</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields>
@@ -1581,6 +1641,9 @@
             <iImprovementPriceModifier>-50</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>-50</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1641,6 +1704,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields>
@@ -1737,6 +1803,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields>
@@ -1802,6 +1871,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>10</iStorageCapacityModifier>
             <CityExtraYields>
@@ -1875,6 +1947,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1958,6 +2033,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2013,6 +2091,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2086,6 +2167,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>10</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2146,6 +2230,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2219,6 +2306,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2274,6 +2364,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2347,6 +2440,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2420,6 +2516,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2502,6 +2601,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2575,6 +2677,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2644,6 +2749,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2713,6 +2821,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2782,6 +2893,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2842,6 +2956,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2897,6 +3014,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2989,6 +3109,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3077,6 +3200,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3165,6 +3291,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3275,6 +3404,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3363,6 +3495,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3390,7 +3525,7 @@
             <Type>TRAIT_FRANCISCO_DE_ORELLANA</Type>
             <Description>TXT_KEY_TRAIT_FRANCISCO_DE_ORELLANA</Description>
             <ShortDescription>TXT_KEY_FATHER_FRANCISCO_DE_ORELLANA</ShortDescription>
-            <iLevelExperienceModifier>-10</iLevelExperienceModifier>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
             <iNativeAngerModifier>0</iNativeAngerModifier>
@@ -3423,6 +3558,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>-50</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>-50</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3478,6 +3616,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3542,6 +3683,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3602,6 +3746,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3662,6 +3809,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3741,6 +3891,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3806,6 +3959,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3866,6 +4022,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3976,6 +4135,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4080,6 +4242,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4181,6 +4346,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4264,6 +4432,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4365,6 +4536,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4473,6 +4647,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4561,6 +4738,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4653,6 +4833,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4725,6 +4908,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4813,6 +4999,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4878,6 +5067,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4943,6 +5135,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5008,6 +5203,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5068,6 +5266,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5156,6 +5357,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5232,6 +5436,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5296,6 +5503,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5377,6 +5587,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5432,6 +5645,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5497,6 +5713,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5557,6 +5776,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5612,6 +5834,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5667,6 +5892,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5755,6 +5983,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5810,6 +6041,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5865,6 +6099,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5929,6 +6166,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5997,6 +6237,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6061,6 +6304,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6167,6 +6413,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6222,6 +6471,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6287,6 +6539,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6347,6 +6602,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6424,6 +6682,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6528,6 +6789,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6583,6 +6847,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6647,6 +6914,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6735,6 +7005,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6816,6 +7089,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6922,6 +7198,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7035,6 +7314,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7104,6 +7386,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7198,6 +7483,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7262,6 +7550,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7326,6 +7617,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7386,6 +7680,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7454,6 +7751,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7531,6 +7831,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7600,6 +7903,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7674,6 +7980,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7802,6 +8111,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7903,6 +8215,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7980,6 +8295,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -8068,6 +8386,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -8123,6 +8444,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -8195,6 +8519,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -8255,6 +8582,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -8329,6 +8659,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -8421,6 +8754,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -8503,6 +8839,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -8563,6 +8902,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields>
@@ -8632,6 +8974,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -8687,6 +9032,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -8742,6 +9090,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -8843,6 +9194,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -8903,6 +9257,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -8963,6 +9320,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>50</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -9018,6 +9378,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>-25</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -9073,6 +9436,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -9146,6 +9512,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -9219,6 +9588,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -9274,6 +9646,9 @@
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>

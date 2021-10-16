@@ -356,6 +356,9 @@
 	<ElementType name="iImprovementPriceModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iImprovementGrowthTimeModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iLearningByDoingModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iLearningByDoingFreeModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iLearningByDoingRunawayModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iLearningByDoingRevoltModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iSpecialistPriceModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iStorageCapacityModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="GoodyType" content="textOnly"/>
@@ -406,6 +409,9 @@
 		<element type="iImprovementPriceModifier"/>
 		<element type="iImprovementGrowthTimeModifier"/>
 		<element type="iLearningByDoingModifier"/>
+		<element type="iLearningByDoingFreeModifier"/>
+		<element type="iLearningByDoingRunawayModifier"/>
+		<element type="iLearningByDoingRevoltModifier"/>
 		<element type="iSpecialistPriceModifier"/>
 		<element type="iStorageCapacityModifier"/>
 		<element type="CityExtraYields"/>

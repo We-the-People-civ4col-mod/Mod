@@ -3996,6 +3996,38 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 			szHelpString.append(gDLL->getText("TXT_KEY_FATHER_LEARNING_BY_DOING_MODIFIER", kTrait.getLearningByDoingModifier()));
 		}
 
+		// WTP, ray, adding modifiers for other LBD features - START
+		if (kTrait.getLearningByDoingFreeModifier() != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			szHelpString.append(gDLL->getText("TXT_KEY_FATHER_LEARNING_BY_DOING_FREE_MODIFIER", kTrait.getLearningByDoingFreeModifier()));
+		}
+
+		if (kTrait.getLearningByDoingRunawayModifier() != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			szHelpString.append(gDLL->getText("TXT_KEY_FATHER_LEARNING_BY_DOING_RUNAWAY_MODIFIER", kTrait.getLearningByDoingRunawayModifier()));
+		}
+
+		if (kTrait.getLearningByDoingRevoltModifier() != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			szHelpString.append(gDLL->getText("TXT_KEY_FATHER_LEARNING_BY_DOING_REVOLT_MODIFIER", kTrait.getLearningByDoingRevoltModifier()));
+		}
+		// WTP, ray, adding modifiers for other LBD features - END
+
 		if (kTrait.getSpecialistPriceModifier() != 0)
 		{
 			szHelpString.append(NEWLINE);
