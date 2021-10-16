@@ -235,6 +235,8 @@
 	<ElementType name="iTaxRateThresholdModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iMaxTaxRateThresholdDecrease" content="textOnly" dt:type="int"/>
 	<ElementType name="iMercantileFactor" content="textOnly" dt:type="int"/>
+	<ElementType name="iAfricaSellProfitModifierInPercent" content="textOnly" dt:type="int"/>
+	<ElementType name="iPortRoyalSellProfitModifierInPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iTreasureModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iGoodUniqueGoodyChanceModifierLand" content="textOnly" dt:type="int"/>
 	<ElementType name="iGoodUniqueGoodyChanceModifierWater" content="textOnly" dt:type="int"/>
@@ -383,6 +385,8 @@
 		<element type="iTaxRateThresholdModifier"/>
 		<element type="iMaxTaxRateThresholdDecrease"/>
 		<element type="iMercantileFactor"/>
+		<element type="iAfricaSellProfitModifierInPercent"/>
+		<element type="iPortRoyalSellProfitModifierInPercent"/>
 		<element type="iTreasureModifier"/>
 		<element type="iGoodUniqueGoodyChanceModifierLand"/>
 		<element type="iGoodUniqueGoodyChanceModifierWater"/>

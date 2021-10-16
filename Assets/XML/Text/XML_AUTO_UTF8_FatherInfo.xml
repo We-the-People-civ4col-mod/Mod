@@ -1479,6 +1479,82 @@
         <German>Gewinne [COLOR_TECH_TEXT]James Cook[COLOR_REVERT] als Gründervater um die Chances auf einzigartige Ereignisse beim Untersuchen von Goody Huts im Wasser auszulösen. Zusätzlich verleiht er deinen Tuppen besseren Schutz gegen wilde Tiere im Wasser.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_FATHER_VASCO_DA_GAMA</Tag>
+        <English>
+            <Text>Vasco da Gama</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Vasco da Gama</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Vasco da Gama</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Vasco da Gama</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Vasco da Gama</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_VASCO_DA_GAMA_PEDIA</Tag>
+        <English>[H1]Vasco da Gama[\H1][NEWLINE][BOLD]Lived: [\BOLD]1469 - 1524[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Vasco da Gama, 1st Count of Vidigueira, was a Portuguese explorer and the first European to reach India by sea.</English>
+        <German>[H1]Vasco da Gama[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1469 - 1524[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Dom Vasco da Gama, Graf von Vidigueira war ein portugiesischer Seefahrer und Entdecker des Seewegs um das Kap der Guten Hoffnung nach Indien sowie der 2. Vizekönig Portugiesisch-Indiens.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_VASCO_DA_GAMA_STRATEGY</Tag>
+        <English>Add [COLOR_TECH_TEXT]Vasco da Gama[COLOR_REVERT] as a Founding Father  to increase your profits when selling goods in Port Royal. Additionally he brings a small fleet of trade ships with him.</English>
+        <German>Gewinne [COLOR_TECH_TEXT]Vasco da Gama[COLOR_REVERT] als Gründervater um deine Gewinne beim Verkauf von Waren in Port Royal zu erhöhen. Zusätzlich bringt er eine kleine Flotte an Handelsschiffen mit sich.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_ADMIRAL_WILLIAM_PENN</Tag>
+        <English>
+            <Text>Admiral William Penn</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Admiral William Penn</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Admiral William Penn</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Admiral William Penn</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Admiral William Penn</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_ADMIRAL_WILLIAM_PENN_PEDIA</Tag>
+        <English>[H1]Admiral William Penn[\H1][NEWLINE][BOLD]Lived: [\BOLD]1621 - 1670[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Sir William Penn (23 April 1621 – 16 September 1670) was an English admiral and politician who sat in the House of Commons from 1660 to 1670. He was the father of William Penn, founder of the Province of Pennsylvania. In 1654, he offered to carry the fleet over to the king, but in October of the same year he had no scruple in accepting the naval command in the expedition to the West Indies sent out by Cromwell. In 1655, he commanded the fleet that launched a bungled attack on La Hispaniola. He was not responsible for the shameful repulse at San Domingo, which was due to a panic among the troops. Afterwards, English forces seized the less desirable island of Jamaica for the Commonwealth régime, and Penn established the Jamaica Station there. On their return, he and his military colleague, Robert Venables, were sent to the Tower. He made humble submission, and when released retired to the estates of confiscated land he had received in Ireland. On 20 December 1658, Penn was knighted by Henry Cromwell at Dublin Castle, but the Protectorate honour passed into oblivion at the Restoration in May 1660astle, but the Protectorate honour passed into oblivion at the Restoration in May 1660.</English>
+        <German>[H1]Admiral William Penn[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1621 - 1670[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Admiral William Penn war der Sohn von Giles Penn und Joan Gilbert. Am 6. Juni 1643 heiratete er Margaret Jasper – sie hatten drei Kinder: Margaret, Richard und William, den späteren Gründer von Pennsylvania. Im Ersten Englisch-Niederländischen Seekrieg 1652–1654 diente er in der Marine des Commonwealth of England und befehligte Geschwader in den Seeschlachten von Kentish Knock, Portland, Gabbard und Scheveningen. 1655 befehligte er die Flotte, die, im Rahmen des Western Designs, die spanische Insel Hispaniola angriff und im Mai 1655 Soldaten in Jamaika landete, die die Insel eroberten. 1658 wurde er zum Knight Bachelor geschlagen, jedoch fand die republikanische Ritterwürde nach der Stuart-Restauration keine Anerkennung mehr. Während der Stuart-Restauration wurde er ausgewählt, König Karl II. nach England zu holen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_ADMIRAL_WILLIAM_PENN_STRATEGY</Tag>
+        <English>Add [COLOR_TECH_TEXT]Admiral William Penn[COLOR_REVERT] as a Founding Father  to increase your profits when selling goods in Port Royal. Additionally he brings a small fleet of war ships with him.</English>
+        <German>Gewinne [COLOR_TECH_TEXT]Admiral William Penn[COLOR_REVERT] als Gründervater um deine Gewinne beim Verkauf von Waren in Port Royal zu erhöhen. Zusätzlich bringt er eine kleine Flotte an Kriegsschiffen mit sich.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_FATHER_HENRY_SHRAPNEL</Tag>
         <English>
             <Text>Henry Shrapnel</Text>

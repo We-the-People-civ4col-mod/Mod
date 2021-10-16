@@ -158,6 +158,8 @@ void CyInfoPythonInterface3()
 		.def("getTaxRateThresholdModifier", &CvTraitInfo::getTaxRateThresholdModifier, "int ()")
 		.def("getMaxTaxRateThresholdDecrease", &CvTraitInfo::getMaxTaxRateThresholdDecrease, "int ()") // R&R, ray, new Attribute in Traits 
 		.def("getMercantileFactor", &CvTraitInfo::getMercantileFactor, "int ()")
+		.def("getAfricaSellProfitModifierInPercent", &CvTraitInfo::getAfricaSellProfitModifierInPercent, "int ()") // WTP, Africa and Port Royal Profit Modifiers - START
+		.def("getPortRoyalSellProfitModifierInPercent", &CvTraitInfo::getPortRoyalSellProfitModifierInPercent, "int ()") // WTP, Africa and Port Royal Profit Modifiers - START
 		.def("getTreasureModifier", &CvTraitInfo::getTreasureModifier, "int ()")
 		.def("getGoodUniqueGoodyChanceModifierLand", &CvTraitInfo::getGoodUniqueGoodyChanceModifierLand, "int ()") // WTP, ray, Unique Goody Chance Modifiers - START
 		.def("getGoodUniqueGoodyChanceModifierWater", &CvTraitInfo::getGoodUniqueGoodyChanceModifierWater, "int ()") // WTP, ray, Unique Goody Chance Modifiers - START

@@ -11011,6 +11011,8 @@ CvTraitInfo::CvTraitInfo() :
 	m_iTaxRateThresholdModifier(0),
 	m_iMaxTaxRateThresholdDecrease(0), // R&R, ray, new Attribute in Traits
 	m_iMercantileFactor(0),
+	m_iAfricaSellProfitModifierInPercent(0), // WTP, Africa and Port Royal Profit Modifiers - START
+	m_iPortRoyalSellProfitModifierInPercent(0), // WTP, Africa and Port Royal Profit Modifiers - START
 	m_iTreasureModifier(0),
 	m_iGoodUniqueGoodyChanceModifierLand(0), // WTP, ray, Unique Goody Chance Modifiers - START
 	m_iGoodUniqueGoodyChanceModifierWater(0), // WTP, ray, Unique Goody Chance Modifiers - START
@@ -11101,10 +11103,25 @@ int CvTraitInfo::getMercantileFactor() const
 {
 	return m_iMercantileFactor;
 }
+
 int CvTraitInfo::getTreasureModifier() const
 {
 	return m_iTreasureModifier;
 }
+
+// WTP, Africa and Port Royal Profit Modifiers - START
+int CvTraitInfo::getAfricaSellProfitModifierInPercent() const
+{
+	return m_iAfricaSellProfitModifierInPercent;
+}
+int CvTraitInfo::getPortRoyalSellProfitModifierInPercent() const
+{
+	return m_iPortRoyalSellProfitModifierInPercent;
+}
+// WTP, Africa and Port Royal Profit Modifiers - END
+
+// WTP, Africa and Port Royal Profit Modifiers - END
+
 // WTP, ray, Unique Goody Chance Modifiers - START
 int CvTraitInfo::getGoodUniqueGoodyChanceModifierLand() const
 {
@@ -11350,6 +11367,8 @@ void CvTraitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iTaxRateThresholdModifier);
 	stream->Read(&m_iMaxTaxRateThresholdDecrease); // R&R, ray, new Attribute in Traits
 	stream->Read(&m_iMercantileFactor);
+	stream->Read(&m_iAfricaSellProfitModifierInPercent); // WTP, Africa and Port Royal Profit Modifiers - START
+	stream->Read(&m_iPortRoyalSellProfitModifierInPercent); // WTP, Africa and Port Royal Profit Modifiers - START
 	stream->Read(&m_iTreasureModifier);
 	stream->Read(&m_iGoodUniqueGoodyChanceModifierLand); // WTP, ray, Unique Goody Chance Modifiers - START
 	stream->Read(&m_iGoodUniqueGoodyChanceModifierWater); // WTP, ray, Unique Goody Chance Modifiers - START
@@ -11461,6 +11480,8 @@ void CvTraitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iTaxRateThresholdModifier);
 	stream->Write(m_iMaxTaxRateThresholdDecrease); // R&R, ray, new Attribute in Traits
 	stream->Write(m_iMercantileFactor);
+	stream->Write(m_iAfricaSellProfitModifierInPercent); // WTP, Africa and Port Royal Profit Modifiers - START
+	stream->Write(m_iPortRoyalSellProfitModifierInPercent); // WTP, Africa and Port Royal Profit Modifiers - START
 	stream->Write(m_iTreasureModifier);
 	stream->Write(m_iGoodUniqueGoodyChanceModifierLand); // WTP, ray, Unique Goody Chance Modifiers - START
 	stream->Write(m_iGoodUniqueGoodyChanceModifierWater); // WTP, ray, Unique Goody Chance Modifiers - START
@@ -11528,6 +11549,8 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iTaxRateThresholdModifier, "iTaxRateThresholdModifier");
 	pXML->GetChildXmlValByName(&m_iMaxTaxRateThresholdDecrease, "iMaxTaxRateThresholdDecrease"); // R&R, ray, new Attribute in Traits
 	pXML->GetChildXmlValByName(&m_iMercantileFactor, "iMercantileFactor");
+	pXML->GetChildXmlValByName(&m_iAfricaSellProfitModifierInPercent, "iAfricaSellProfitModifierInPercent"); // WTP, Africa and Port Royal Profit Modifiers - START
+	pXML->GetChildXmlValByName(&m_iPortRoyalSellProfitModifierInPercent, "iPortRoyalSellProfitModifierInPercent"); // WTP, Africa and Port Royal Profit Modifiers - START
 	pXML->GetChildXmlValByName(&m_iTreasureModifier, "iTreasureModifier");
 	pXML->GetChildXmlValByName(&m_iGoodUniqueGoodyChanceModifierLand, "iGoodUniqueGoodyChanceModifierLand"); // WTP, ray, Unique Goody Chance Modifiers - START
 	pXML->GetChildXmlValByName(&m_iGoodUniqueGoodyChanceModifierWater, "iGoodUniqueGoodyChanceModifierWater"); // WTP, ray, Unique Goody Chance Modifiers - START

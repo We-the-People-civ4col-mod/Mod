@@ -3278,6 +3278,45 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 			}
 		}
 
+		// WTP, Africa and Port Royal Profit Modifiers - START
+
+		// Africa
+		if (kTrait.getAfricaSellProfitModifierInPercent() != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			if (kTrait.getAfricaSellProfitModifierInPercent() > 0)
+			{
+				szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_AFRICA_PROFIT_MODIFER_POSITIVE", kTrait.getAfricaSellProfitModifierInPercent()));
+			}
+			else
+			{
+				szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_AFRICA_PROFIT_MODIFER_NEGATIVE", kTrait.getAfricaSellProfitModifierInPercent()));
+			}
+		}
+
+		// Port Royal
+		if (kTrait.getPortRoyalSellProfitModifierInPercent() != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			if (kTrait.getPortRoyalSellProfitModifierInPercent() > 0)
+			{
+				szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_PORT_ROYAL_PROFIT_MODIFER_POSITIVE", kTrait.getPortRoyalSellProfitModifierInPercent()));
+			}
+			else
+			{
+				szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_PORT_ROYAL_PROFIT_MODIFER_NEGATIVE", kTrait.getPortRoyalSellProfitModifierInPercent()));
+			}
+		}
+		// WTP, Africa and Port Royal Profit Modifiers - END
+
 		int iTreasureModifier = kTrait.getTreasureModifier();
 		if (iTreasureModifier != 0)
 		{

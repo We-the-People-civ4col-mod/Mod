@@ -200,6 +200,8 @@ public:
 	int getTraitCount(TraitTypes eTrait) const;
 	void changeTraitCount(TraitTypes eTrait, int iChange);
 	int getMercantileFactor() const;
+	int getTotalPlayerAfricaSellProfitModifierInPercent() const; // WTP, Africa and Port Royal Profit Modifiers - START
+	int getTotalPlayerPortRoyalSellProfitModifierInPercent() const; // WTP, Africa and Port Royal Profit Modifiers - START
 	DllExport bool isHuman() const;
 	DllExport void updateHuman();
 	bool isNative() const;

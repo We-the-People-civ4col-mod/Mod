@@ -22,22 +22,24 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
-            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
-            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
+            <iGoodUniqueGoodyChanceModifierLand>100</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>100</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>30</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
             <iKingAttitudeChange>0</iKingAttitudeChange>
             <iCityDefense>0</iCityDefense>
-            <iLandPriceDiscount>-50</iLandPriceDiscount>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
             <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
             <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
             <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
             <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
             <iCultureLevelModifier>0</iCultureLevelModifier>
-            <iPioneerSpeedModifier>10</iPioneerSpeedModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
@@ -55,7 +57,12 @@
             <ProfessionMoveChanges/>
             <BuildingProductionModifiers/>
             <BuildingRequiredYieldModifiers/>
-            <UnitStrengthModifiers/>
+            <UnitStrengthModifiers>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_SCOUT</UnitClass>
+                    <iCombatModifier>50</iCombatModifier>
+                </UnitStrengthModifier>
+            </UnitStrengthModifiers>
             <FreeBuildingClasses/>
             <GoodyFactors/>
         </TraitInfo>
@@ -75,6 +82,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -93,8 +102,8 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
-            <iSpecialistPriceModifier>-10</iSpecialistPriceModifier>
+            <iLearningByDoingModifier>20</iLearningByDoingModifier>
+            <iSpecialistPriceModifier>-20</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
             <ExtraYieldThresholds/>
@@ -127,12 +136,14 @@
             <iNativeAngerModifier>-50</iNativeAngerModifier>
             <iLearnTimeModifier>-50</iLearnTimeModifier>
             <iNativeCombatModifier>0</iNativeCombatModifier>
-            <iMissionaryModifier>0</iMissionaryModifier>
-            <iNativeTradeModifier>10</iNativeTradeModifier>
+            <iMissionaryModifier>100</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
             <iRebelCombatModifier>0</iRebelCombatModifier>
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -142,7 +153,7 @@
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
             <iKingAttitudeChange>0</iKingAttitudeChange>
             <iCityDefense>0</iCityDefense>
-            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iLandPriceDiscount>-50</iLandPriceDiscount>
             <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
             <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
             <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
@@ -186,7 +197,9 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
-            <iTreasureModifier>20</iTreasureModifier>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iTreasureModifier>25</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
             <iUnhappinessFromSlavesModifier>25</iUnhappinessFromSlavesModifier>
@@ -200,7 +213,7 @@
             <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
             <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
             <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
-            <iCultureLevelModifier>-10</iCultureLevelModifier>
+            <iCultureLevelModifier>-20</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
@@ -239,6 +252,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>5</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>-50</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>25</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>25</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -259,7 +274,7 @@
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
-            <iStorageCapacityModifier>10</iStorageCapacityModifier>
+            <iStorageCapacityModifier>25</iStorageCapacityModifier>
             <CityExtraYields/>
             <ExtraYieldThresholds/>
             <ProfessionEquipmentModifiers/>
@@ -292,6 +307,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -310,18 +327,40 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>10</iLearningByDoingModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
-            <CityExtraYields/>
+            <CityExtraYields>
+                <CityExtraYield>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iYield>2</iYield>
+                </CityExtraYield>
+            </CityExtraYields>
             <ExtraYieldThresholds/>
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
             <FreePromotionUnitCombats/>
-            <YieldModifiers/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_ROPE</YieldType>
+                    <iYield>20</iYield>
+                </YieldModifier>
+                <YieldModifier>
+                    <YieldType>YIELD_SAILCLOTH</YieldType>
+                    <iYield>20</iYield>
+                </YieldModifier>
+            </YieldModifiers>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
             <UnitMoveChanges>
+                <UnitMoveChange>
+                    <UnitClass>UNIT_SMALL_COASTAL_SHIP</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+                <UnitMoveChange>
+                    <UnitClass>UNIT_BIG_COASTAL_SHIP</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
                 <UnitMoveChange>
                     <UnitClass>UNITCLASS_CARAVEL</UnitClass>
                     <iChange>1</iChange>
@@ -402,7 +441,7 @@
             <Type>TRAIT_ADMIRAL</Type>
             <Description>TXT_KEY_TRAIT_ADMIRAL</Description>
             <ShortDescription>TXT_KEY_TRAIT_ADMIRAL_SHORT</ShortDescription>
-            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iLevelExperienceModifier>-10</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
             <iNativeAngerModifier>0</iNativeAngerModifier>
@@ -414,6 +453,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -440,7 +481,16 @@
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
             <FreePromotionUnitCombats/>
-            <YieldModifiers/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_CANNONS</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+                <YieldModifier>
+                    <YieldType>YIELD_BLADES</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+            </YieldModifiers>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
@@ -496,6 +546,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -522,7 +574,16 @@
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
             <FreePromotionUnitCombats/>
-            <YieldModifiers/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_MUSKETS</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+                <YieldModifier>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+            </YieldModifiers>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
@@ -582,6 +643,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -592,7 +655,7 @@
             <iKingAttitudeChange>0</iKingAttitudeChange>
             <iCityDefense>0</iCityDefense>
             <iLandPriceDiscount>0</iLandPriceDiscount>
-            <iRecruitPriceDiscount>10</iRecruitPriceDiscount>
+            <iRecruitPriceDiscount>20</iRecruitPriceDiscount>
             <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
             <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
             <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
@@ -605,7 +668,12 @@
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
             <ExtraYieldThresholds/>
-            <ProfessionEquipmentModifiers/>
+            <ProfessionEquipmentModifiers>
+                <ProfessionEquipmentModifier>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <iModifier>-50</iModifier>
+                </ProfessionEquipmentModifier>
+            </ProfessionEquipmentModifiers>
             <FreePromotions/>
             <FreePromotionUnitCombats/>
             <YieldModifiers/>
@@ -635,6 +703,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -655,7 +725,7 @@
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
-            <iStorageCapacityModifier>10</iStorageCapacityModifier>
+            <iStorageCapacityModifier>20</iStorageCapacityModifier>
             <CityExtraYields/>
             <ExtraYieldThresholds/>
             <ProfessionEquipmentModifiers>
@@ -677,6 +747,18 @@
                 </ProfessionEquipmentModifier>
                 <ProfessionEquipmentModifier>
                     <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
+                    <iModifier>-20</iModifier>
+                </ProfessionEquipmentModifier>
+                <ProfessionEquipmentModifier>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <iModifier>-20</iModifier>
+                </ProfessionEquipmentModifier>
+                <ProfessionEquipmentModifier>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <iModifier>-20</iModifier>
+                </ProfessionEquipmentModifier>
+                <ProfessionEquipmentModifier>
+                    <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <iModifier>-20</iModifier>
                 </ProfessionEquipmentModifier>
             </ProfessionEquipmentModifiers>
@@ -709,6 +791,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -745,7 +829,20 @@
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
             <ProfessionMoveChanges/>
-            <BuildingProductionModifiers/>
+            <BuildingProductionModifiers>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_PRINTING_PRESS</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_NEWSPAPER</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_PUBLISHING</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+            </BuildingProductionModifiers>
             <BuildingRequiredYieldModifiers/>
             <UnitStrengthModifiers/>
             <FreeBuildingClasses/>
@@ -761,12 +858,14 @@
             <iNativeAngerModifier>0</iNativeAngerModifier>
             <iLearnTimeModifier>0</iLearnTimeModifier>
             <iNativeCombatModifier>0</iNativeCombatModifier>
-            <iMissionaryModifier>200</iMissionaryModifier>
-            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>100</iNativeTradeModifier>
             <iRebelCombatModifier>0</iRebelCombatModifier>
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -779,7 +878,7 @@
             <iLandPriceDiscount>0</iLandPriceDiscount>
             <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
             <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
-            <iImmigrationThresholdModifier>-10</iImmigrationThresholdModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
             <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
@@ -790,7 +889,16 @@
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
             <ExtraYieldThresholds/>
-            <ProfessionEquipmentModifiers/>
+            <ProfessionEquipmentModifiers>
+                <ProfessionEquipmentModifier>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <iModifier>-50</iModifier>
+                </ProfessionEquipmentModifier>
+                <ProfessionEquipmentModifier>
+                    <ProfessionType>PROFESSION_SCOUT</ProfessionType>
+                    <iModifier>-50</iModifier>
+                </ProfessionEquipmentModifier>
+            </ProfessionEquipmentModifiers>
             <FreePromotions/>
             <FreePromotionUnitCombats/>
             <YieldModifiers/>
@@ -808,7 +916,7 @@
             <Type>TRAIT_DETERMINED</Type>
             <Description>TXT_KEY_TRAIT_DETERMINED</Description>
             <ShortDescription>TXT_KEY_TRAIT_DETERMINED_SHORT</ShortDescription>
-            <iLevelExperienceModifier>-10</iLevelExperienceModifier>
+            <iLevelExperienceModifier>-20</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>20</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
             <iNativeAngerModifier>0</iNativeAngerModifier>
@@ -820,6 +928,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -873,6 +983,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -894,7 +1006,20 @@
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
-            <CityExtraYields/>
+            <CityExtraYields>
+                <CityExtraYield>
+                    <YieldType>YIELD_HAMMERS</YieldType>
+                    <iYield>2</iYield>
+                </CityExtraYield>
+                <CityExtraYield>
+                    <YieldType>YIELD_TOOLS</YieldType>
+                    <iYield>2</iYield>
+                </CityExtraYield>
+                <CityExtraYield>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iYield>2</iYield>
+                </CityExtraYield>
+            </CityExtraYields>
             <ExtraYieldThresholds/>
             <ProfessionEquipmentModifiers/>
             <FreePromotions>
@@ -944,6 +1069,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -962,7 +1089,7 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>10</iLearningByDoingModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -973,6 +1100,10 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_HAMMERS</YieldType>
+                    <iYield>30</iYield>
+                </YieldModifier>
+                <YieldModifier>
+                    <YieldType>YIELD_TOOLS</YieldType>
                     <iYield>30</iYield>
                 </YieldModifier>
             </YieldModifiers>
@@ -1002,6 +1133,8 @@
             <iTaxRateThresholdModifier>100</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1009,9 +1142,9 @@
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
-            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iKingAttitudeChange>2</iKingAttitudeChange>
             <iCityDefense>0</iCityDefense>
-            <iLandPriceDiscount>-10</iLandPriceDiscount>
+            <iLandPriceDiscount>-20</iLandPriceDiscount>
             <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
             <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
             <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
@@ -1023,7 +1156,12 @@
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
-            <CityExtraYields/>
+            <CityExtraYields>
+                <CityExtraYield>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYield>2</iYield>
+                </CityExtraYield>
+            </CityExtraYields>
             <ExtraYieldThresholds/>
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
@@ -1055,6 +1193,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1076,7 +1216,12 @@
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
-            <CityExtraYields/>
+            <CityExtraYields>
+                <CityExtraYield>
+                    <YieldType>YIELD_HEALTH</YieldType>
+                    <iYield>2</iYield>
+                </CityExtraYield>
+            </CityExtraYields>
             <ExtraYieldThresholds/>
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
@@ -1163,6 +1308,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1194,7 +1341,28 @@
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
             <ProfessionMoveChanges/>
-            <BuildingProductionModifiers/>
+            <BuildingProductionModifiers>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_VILLAGEHALL</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_TOWNHALL</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_CITYHALL</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_COLONIAL_CONGRESS</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+            </BuildingProductionModifiers>
             <BuildingRequiredYieldModifiers>
                 <BuildingRequiredYieldModifier>
                     <YieldType>YIELD_HAMMERS</YieldType>
@@ -1202,6 +1370,10 @@
                 </BuildingRequiredYieldModifier>
                 <BuildingRequiredYieldModifier>
                     <YieldType>YIELD_TOOLS</YieldType>
+                    <iModifier>-10</iModifier>
+                </BuildingRequiredYieldModifier>
+                <BuildingRequiredYieldModifier>
+                    <YieldType>YIELD_STONE</YieldType>
                     <iModifier>-10</iModifier>
                 </BuildingRequiredYieldModifier>
             </BuildingRequiredYieldModifiers>
@@ -1222,9 +1394,11 @@
             <iMissionaryModifier>0</iMissionaryModifier>
             <iNativeTradeModifier>25</iNativeTradeModifier>
             <iRebelCombatModifier>0</iRebelCombatModifier>
-            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iTaxRateThresholdModifier>25</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1245,7 +1419,7 @@
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
-            <iStorageCapacityModifier>25</iStorageCapacityModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
             <ExtraYieldThresholds/>
             <ProfessionEquipmentModifiers/>
@@ -1254,17 +1428,34 @@
             <YieldModifiers/>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
-            <UnitMoveChanges/>
+            <UnitMoveChanges>
+                <UnitMoveChange>
+                    <UnitClass>UNITCLASS_EXPERT_TRADER</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+                <UnitMoveChange>
+                    <UnitClass>UNITCLASS_TREASURE</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+            </UnitMoveChanges>
             <ProfessionMoveChanges/>
-            <BuildingProductionModifiers/>
+            <BuildingProductionModifiers>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_MARKET</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_TOWN_MARKET</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_CENTRAL_CITY_MARKET</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+            </BuildingProductionModifiers>
             <BuildingRequiredYieldModifiers/>
             <UnitStrengthModifiers/>
-            <FreeBuildingClasses>
-                <FreeBuildingClass>
-                    <BuildingClassType>BUILDINGCLASS_MARKET</BuildingClassType>
-                    <bFreeBuildingClass>1</bFreeBuildingClass>
-                </FreeBuildingClass>
-            </FreeBuildingClasses>
+            <FreeBuildingClasses/>
             <GoodyFactors/>
         </TraitInfo>
         <TraitInfo>
@@ -1280,9 +1471,11 @@
             <iMissionaryModifier>0</iMissionaryModifier>
             <iNativeTradeModifier>0</iNativeTradeModifier>
             <iRebelCombatModifier>0</iRebelCombatModifier>
-            <iTaxRateThresholdModifier>20</iTaxRateThresholdModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1304,7 +1497,12 @@
             <iLearningByDoingModifier>50</iLearningByDoingModifier>
             <iSpecialistPriceModifier>-50</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
-            <CityExtraYields/>
+            <CityExtraYields>
+                <CityExtraYield>
+                    <YieldType>YIELD_CULTURE</YieldType>
+                    <iYield>2</iYield>
+                </CityExtraYield>
+            </CityExtraYields>
             <ExtraYieldThresholds/>
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
@@ -1314,12 +1512,33 @@
                     <YieldType>YIELD_EDUCATION</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
+                <YieldModifier>
+                    <YieldType>YIELD_CULTURE</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
             </YieldModifiers>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
             <ProfessionMoveChanges/>
-            <BuildingProductionModifiers/>
+            <BuildingProductionModifiers>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_TAVERN</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_SALOON</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_THEATRE</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_OPERA</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+            </BuildingProductionModifiers>
             <BuildingRequiredYieldModifiers/>
             <UnitStrengthModifiers/>
             <FreeBuildingClasses/>
@@ -1341,6 +1560,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1358,13 +1579,18 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>50</iPioneerSpeedModifier>
             <iImprovementPriceModifier>-50</iImprovementPriceModifier>
-            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>10</iLearningByDoingModifier>
+            <iImprovementGrowthTimeModifier>-50</iImprovementGrowthTimeModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
             <ExtraYieldThresholds/>
-            <ProfessionEquipmentModifiers/>
+            <ProfessionEquipmentModifiers>
+                <ProfessionEquipmentModifier>
+                    <ProfessionType>PROFESSION_PIONEER</ProfessionType>
+                    <iModifier>-25</iModifier>
+                </ProfessionEquipmentModifier>
+            </ProfessionEquipmentModifiers>
             <FreePromotions/>
             <FreePromotionUnitCombats/>
             <YieldModifiers/>
@@ -1394,6 +1620,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>100</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1488,6 +1716,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1551,6 +1781,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1622,6 +1854,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1703,6 +1937,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1756,6 +1992,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1827,6 +2065,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1885,6 +2125,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1956,6 +2198,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2009,6 +2253,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2080,6 +2326,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2151,6 +2399,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2231,6 +2481,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2302,6 +2554,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2369,6 +2623,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2436,6 +2692,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2503,6 +2761,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2561,6 +2821,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2614,6 +2876,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2704,6 +2968,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2790,6 +3056,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2876,6 +3144,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2984,6 +3254,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3070,6 +3342,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3128,6 +3402,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3181,6 +3457,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3243,6 +3521,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3301,6 +3581,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3359,6 +3641,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3436,6 +3720,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3499,6 +3785,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3557,6 +3845,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3665,6 +3955,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3767,6 +4059,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3866,6 +4160,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3947,6 +4243,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4046,6 +4344,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4152,6 +4452,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4238,6 +4540,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4328,6 +4632,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4398,6 +4704,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4484,6 +4792,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4547,6 +4857,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4610,6 +4922,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4673,6 +4987,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4731,6 +5047,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4817,6 +5135,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4891,6 +5211,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4953,6 +5275,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4979,7 +5303,7 @@
             <ProfessionEquipmentModifiers>
                 <ProfessionEquipmentModifier>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
-                    <iModifier>-50</iModifier>
+                    <iModifier>-25</iModifier>
                 </ProfessionEquipmentModifier>
             </ProfessionEquipmentModifiers>
             <FreePromotions/>
@@ -4988,6 +5312,10 @@
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
             <UnitMoveChanges>
+                <UnitMoveChange>
+                    <UnitClass>UNITCLASS_PIONEER</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
                 <UnitMoveChange>
                     <UnitClass>UNITCLASS_WAGON_TRAIN</UnitClass>
                     <iChange>1</iChange>
@@ -5028,6 +5356,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5081,6 +5411,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5144,6 +5476,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5202,6 +5536,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5255,6 +5591,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5308,6 +5646,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5394,6 +5734,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5447,6 +5789,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5500,6 +5844,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5562,6 +5908,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5628,6 +5976,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5690,6 +6040,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5794,6 +6146,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>20</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5847,6 +6201,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5910,6 +6266,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5968,6 +6326,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6043,6 +6403,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6145,6 +6507,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6198,6 +6562,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6260,6 +6626,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6346,6 +6714,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6425,6 +6795,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6529,6 +6901,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6640,10 +7014,12 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
-            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iUnhappinessFromSlavesModifier>-25</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -6679,7 +7055,16 @@
             <BuildingProductionModifiers/>
             <BuildingRequiredYieldModifiers/>
             <UnitStrengthModifiers/>
-            <FreeBuildingClasses/>
+            <FreeBuildingClasses>
+                <FreeBuildingClass>
+                    <BuildingClassType>BUILDINGCLASS_CORN_CHAMBER</BuildingClassType>
+                    <bFreeBuildingClass>1</bFreeBuildingClass>
+                </FreeBuildingClass>
+                <FreeBuildingClass>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_WELL</BuildingClassType>
+                    <bFreeBuildingClass>1</bFreeBuildingClass>
+                </FreeBuildingClass>
+            </FreeBuildingClasses>
             <GoodyFactors/>
         </TraitInfo>
         <TraitInfo>
@@ -6698,6 +7083,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6714,8 +7101,8 @@
             <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
             <iCultureLevelModifier>-25</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
-            <iImprovementPriceModifier>-10</iImprovementPriceModifier>
-            <iImprovementGrowthTimeModifier>-10</iImprovementGrowthTimeModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
@@ -6747,7 +7134,28 @@
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
             <ProfessionMoveChanges/>
-            <BuildingProductionModifiers/>
+            <BuildingProductionModifiers>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_STOCKADE</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_FORT</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_FORTRESS</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_STRONGHOLD</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_CITADEL</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+            </BuildingProductionModifiers>
             <BuildingRequiredYieldModifiers/>
             <UnitStrengthModifiers/>
             <FreeBuildingClasses/>
@@ -6769,6 +7177,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6831,6 +7241,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6893,6 +7305,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6951,6 +7365,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7017,6 +7433,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7092,6 +7510,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7159,6 +7579,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7231,6 +7653,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7357,6 +7781,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7456,6 +7882,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7531,6 +7959,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7617,6 +8047,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7670,6 +8102,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7740,6 +8174,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7798,6 +8234,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7870,6 +8308,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7960,6 +8400,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8040,6 +8482,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8098,6 +8542,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8165,6 +8611,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8218,6 +8666,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8271,6 +8721,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8370,6 +8822,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8428,6 +8882,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8486,6 +8942,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8539,6 +8997,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8592,6 +9052,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>100</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8663,6 +9125,8 @@
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>100</iGoodUniqueGoodyChanceModifierWater>
@@ -8707,6 +9171,116 @@
                     <bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
                 </FreePromotionUnitCombat>
             </FreePromotionUnitCombats>
+            <YieldModifiers/>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges/>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers/>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
+            <Type>TRAIT_VASCO_DA_GAMA</Type>
+            <Description>TXT_KEY_TRAIT_VASCO_DA_GAMA</Description>
+            <ShortDescription>TXT_KEY_FATHER_VASCO_DA_GAMA</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>25</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers/>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges/>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers/>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
+            <Type>TRAIT_ADMIRAL_WILLIAM_PENN</Type>
+            <Description>TXT_KEY_TRAIT_ADMIRAL_WILLIAM_PENN</Description>
+            <ShortDescription>TXT_KEY_FATHER_ADMIRAL_WILLIAM_PENN</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>25</iPortRoyalSellProfitModifierInPercent>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
             <YieldModifiers/>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>

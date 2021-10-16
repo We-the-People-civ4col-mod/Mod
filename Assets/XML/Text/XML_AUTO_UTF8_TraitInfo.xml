@@ -441,6 +441,14 @@
         <English>TXT_KEY_FATHER_JAMES_COOK</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TRAIT_VASCO_DA_GAMA</Tag>
+        <English>TXT_KEY_FATHER_VASCO_DA_GAMA</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_ADMIRAL_WILLIAM_PENN</Tag>
+        <English>TXT_KEY_FATHER_ADMIRAL_WILLIAM_PENN</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TRAIT_HENRY_SHRAPNEL</Tag>
         <English>TXT_KEY_FATHER_HENRY_SHRAPNEL</English>
     </TEXT>

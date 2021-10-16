@@ -1815,6 +1815,36 @@ int CvPlayer::getMercantileFactor() const
 	return iMercantileFactor - 100;
 }
 
+// WTP, Africa and Port Royal Profit Modifiers - START
+int CvPlayer::getTotalPlayerAfricaSellProfitModifierInPercent() const
+{
+	int iAfricaProfitModifierTotal = 0;
+	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
+	{
+		if (hasTrait(eTrait))
+		{
+			iAfricaProfitModifierTotal += GC.getTraitInfo(eTrait).getAfricaSellProfitModifierInPercent();
+
+		}
+	}
+	return iAfricaProfitModifierTotal;
+}
+
+int CvPlayer::getTotalPlayerPortRoyalSellProfitModifierInPercent() const
+{
+	int iPortRoyalProfitModifierTotal = 0;
+	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
+	{
+		if (hasTrait(eTrait))
+		{
+			iPortRoyalProfitModifierTotal += GC.getTraitInfo(eTrait).getPortRoyalSellProfitModifierInPercent();
+
+		}
+	}
+	return iPortRoyalProfitModifierTotal;
+}
+// WTP, Africa and Port Royal Profit Modifiers - END
+
 bool CvPlayer::isHuman() const
 {
 	return m_bHuman;
@@ -15671,7 +15701,11 @@ int CvPlayer::getYieldAfricaBuyPrice(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_em_iYieldAfricaBuyPrice.get(eYield);
+
+	// WTP, Africa and Port Royal Profit Modifiers - START
+	int iModifierFromTraits = getTotalPlayerAfricaSellProfitModifierInPercent();
+	int iModifiedPrice = m_em_iYieldAfricaBuyPrice.get(eYield) * (100 + iModifierFromTraits) / 100;
+	return iModifiedPrice;
 }
 
 void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
@@ -16133,7 +16167,11 @@ int CvPlayer::getYieldPortRoyalBuyPrice(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_em_iYieldPortRoyalBuyPrice.get(eYield);
+
+	// WTP, Africa and Port Royal Profit Modifiers - START
+	int iModifierFromTraits = getTotalPlayerPortRoyalSellProfitModifierInPercent();
+	int iModifiedPrice = m_em_iYieldPortRoyalBuyPrice.get(eYield) * (100 + iModifierFromTraits) / 100;
+	return iModifiedPrice;
 }
 
 void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
