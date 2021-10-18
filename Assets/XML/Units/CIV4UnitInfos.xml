@@ -2707,6 +2707,8 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iPortRoyalCost>100</iPortRoyalCost>
+            <iPortRoyalCostIncrease>50</iPortRoyalCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -5577,6 +5579,8 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iPortRoyalCost>1500</iPortRoyalCost>
+            <iPortRoyalCostIncrease>100</iPortRoyalCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -6459,6 +6463,8 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iAfricaCost>1500</iAfricaCost>
+            <iAfricaCostIncrease>100</iAfricaCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -6900,6 +6906,8 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iAfricaCost>1500</iAfricaCost>
+            <iAfricaCostIncrease>100</iAfricaCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -7341,6 +7349,8 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iPortRoyalCost>1500</iPortRoyalCost>
+            <iPortRoyalCostIncrease>100</iPortRoyalCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -7790,6 +7800,8 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iPortRoyalCost>1500</iPortRoyalCost>
+            <iPortRoyalCostIncrease>100</iPortRoyalCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -8239,6 +8251,8 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iPortRoyalCost>1500</iPortRoyalCost>
+            <iPortRoyalCostIncrease>100</iPortRoyalCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -8688,6 +8702,8 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iAfricaCost>1500</iAfricaCost>
+            <iAfricaCostIncrease>100</iAfricaCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -9137,6 +9153,8 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iAfricaCost>1500</iAfricaCost>
+            <iAfricaCostIncrease>100</iAfricaCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -36960,6 +36978,8 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>1000</iEuropeCost>
             <iEuropeCostIncrease>250</iEuropeCostIncrease>
+            <iAfricaCost>1200</iAfricaCost>
+            <iAfricaCostIncrease>300</iAfricaCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>20</iMinAreaSize>
@@ -37348,6 +37368,8 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>1800</iEuropeCost>
             <iEuropeCostIncrease>450</iEuropeCostIncrease>
+            <iAfricaCost>2100</iAfricaCost>
+            <iAfricaCostIncrease>500</iAfricaCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>20</iMinAreaSize>
