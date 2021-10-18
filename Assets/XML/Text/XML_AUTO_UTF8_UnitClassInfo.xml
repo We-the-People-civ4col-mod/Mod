@@ -704,8 +704,8 @@
         <English>TXT_KEY_UNIT_BUCCANNEER</English>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_BUCCANNEER</Tag>
-        <English>TXT_KEY_UNITCLASS_SLAVE_HUNTER</English>
+        <Tag>TXT_KEY_UNITCLASS_SLAVE_HUNTER</Tag>
+        <English>TXT_KEY_UNIT_SLAVE_HUNTER</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CONVERTED_NATIVE</Tag>
