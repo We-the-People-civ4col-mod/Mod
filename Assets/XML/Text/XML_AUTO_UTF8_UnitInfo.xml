@@ -1245,6 +1245,52 @@
         <German>[COLOR_UNIT_TEXT]Konquistadoren[COLOR_REVERT] sind sehr erfahren in Nahkampf-Situationen und eignen sich deshalb hervorragend für den Kampf gegen Ureinwohner in schwierigem Gelände.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_BUCCANNER</Tag>
+        <English>
+            <Text>Buccanner:Buccanners</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Bukanier:Bukaniere</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BUCCANNER_PEDIA</Tag>
+        <English>TODO</English>
+        <German>TODO</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BUCCANNER_STRATEGY</Tag>
+        <English>[COLOR_UNIT_TEXT]Buccanners[COLOR_REVERT] are </English>
+        <German>[COLOR_UNIT_TEXT]Bukaniere[COLOR_REVERT] sind </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SLAVE_HUNTER</Tag>
+        <English>
+            <Text>Slave Hunter:Slave Hunters</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Sklavenjäger:Sklavenjäger</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SLAVE_HUNTER_PEDIA</Tag>
+        <English>TODO</English>
+        <German>TODO</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SLAVE_HUNTER_STRATEGY</Tag>
+        <English>[COLOR_UNIT_TEXT]Slave Hunters[COLOR_REVERT] are </English>
+        <German>[COLOR_UNIT_TEXT]Sklavenjäger[COLOR_REVERT] sind </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CONTINENTAL_GUARD</Tag>
         <English>Continental Guard:Continental Guards</English>
         <French>Garde continentale:Gardes continentales</French>

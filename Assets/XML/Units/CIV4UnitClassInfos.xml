@@ -437,6 +437,16 @@
             <DefaultUnit>UNIT_MOUNTED_CONQUISTADOR</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_BUCCANNER</Type>
+            <Description>TXT_KEY_UNITCLASS_BUCCANNER</Description>
+            <DefaultUnit>UNIT_BUCCANNER</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_SLAVE_HUNTER</Type>
+            <Description>TXT_KEY_UNITCLASS_SLAVE_HUNTER</Description>
+            <DefaultUnit>UNIT_SLAVE_HUNTER</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_ROYAL_HALBERDIER</Type>
             <Description>TXT_KEY_UNIT_ROYAL_HALBERDIER</Description>
             <DefaultUnit>UNIT_ROYAL_HALBERDIER</DefaultUnit>

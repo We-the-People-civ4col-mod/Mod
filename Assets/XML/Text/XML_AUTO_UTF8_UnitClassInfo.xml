@@ -700,6 +700,14 @@
         <Spanish>Continental Guard:Continental Guards</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_BUCCANNER</Tag>
+        <English>TXT_KEY_UNIT_BUCCANNER</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_BUCCANNER</Tag>
+        <English>TXT_KEY_UNITCLASS_SLAVE_HUNTER</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CONVERTED_NATIVE</Tag>
         <English>Converted Native:Converted Natives</English>
         <French>
@@ -3538,6 +3546,34 @@
         </Italian>
         <Spanish>
             <Text>Esclavo africano rebelde:Esclavos africanos rebeldes</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_REVOLTING_NATIVE_SLAVE</Tag>
+        <English>
+            <Text>Revolting Native Slave:Revolting Native Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Esclave indigène revolté:Esclaves indigènes revoltés</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Revoltierender Versklavter Ureinwohner:Revoltierende Versklavte Ureinwohner</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Schiavo nativo ribelle:Schiavi nativi ribelli</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Esclavo nativo rebelde:Esclavos nativos rebeldes</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
