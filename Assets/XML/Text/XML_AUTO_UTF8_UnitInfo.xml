@@ -1245,9 +1245,9 @@
         <German>[COLOR_UNIT_TEXT]Konquistadoren[COLOR_REVERT] sind sehr erfahren in Nahkampf-Situationen und eignen sich deshalb hervorragend für den Kampf gegen Ureinwohner in schwierigem Gelände.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_BUCCANNER</Tag>
+        <Tag>TXT_KEY_UNIT_BUCCANNEER</Tag>
         <English>
-            <Text>Buccanner:Buccanners</Text>
+            <Text>Buccanneer:Buccanneers</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -1258,13 +1258,13 @@
         </German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_BUCCANNER_PEDIA</Tag>
+        <Tag>TXT_KEY_UNIT_BUCCANNEER_PEDIA</Tag>
         <English>TODO</English>
         <German>TODO</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_BUCCANNER_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Buccanners[COLOR_REVERT] are </English>
+        <Tag>TXT_KEY_UNIT_BUCCANNEER_STRATEGY</Tag>
+        <English>[COLOR_UNIT_TEXT]Buccanneers[COLOR_REVERT] are </English>
         <German>[COLOR_UNIT_TEXT]Bukaniere[COLOR_REVERT] sind </German>
     </TEXT>
     <TEXT>

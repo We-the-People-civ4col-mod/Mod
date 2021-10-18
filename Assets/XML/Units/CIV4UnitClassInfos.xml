@@ -437,9 +437,9 @@
             <DefaultUnit>UNIT_MOUNTED_CONQUISTADOR</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
-            <Type>UNITCLASS_BUCCANNER</Type>
-            <Description>TXT_KEY_UNITCLASS_BUCCANNER</Description>
-            <DefaultUnit>UNIT_BUCCANNER</DefaultUnit>
+            <Type>UNITCLASS_BUCCANNEER</Type>
+            <Description>TXT_KEY_UNITCLASS_BUCCANNEER</Description>
+            <DefaultUnit>UNIT_BUCCANNEER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_SLAVE_HUNTER</Type>

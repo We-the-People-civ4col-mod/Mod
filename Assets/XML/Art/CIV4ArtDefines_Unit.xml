@@ -9952,7 +9952,7 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
-            <Type>ART_DEF_UNIT_BUCCANNER</Type>
+            <Type>ART_DEF_UNIT_BUCCANNEER</Type>
             <Button>,Art/colonization_atlas_units.dds,7,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Buccaneer.dds</FullLengthIcon>
             <fScale>0.50</fScale>
