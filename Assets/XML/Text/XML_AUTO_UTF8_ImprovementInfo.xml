@@ -1106,6 +1106,20 @@
         <German>[COLOR_HIGHLIGHT_TEXT]Saline[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_LARGE_SALINA</Tag>
+        <English>Salina</English>
+        <German>
+            <Text>Saline</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_LARGE_SALINA_PEDIA</Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]Large Salina[COLOR_REVERT]</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Große Saline[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_LARGE_RIVERS</Tag>
         <English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK]</English>
         <German>[ICON_BULLET]Kann nur auf [LINK=TERRAIN_LARGE_RIVERS]Großen Flüssen[\LINK] gebaut werden.</German>
