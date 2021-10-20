@@ -5672,7 +5672,7 @@
             <iFeatureGrowth>0</iFeatureGrowth>
             <iUpgradeTime>0</iUpgradeTime>
             <iDefenseModifier>0</iDefenseModifier>
-            <iPillageGold>100</iPillageGold>
+            <iPillageGold>10</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>
             <TerrainMakesValids>
                 <TerrainMakesValid>
@@ -5739,7 +5739,7 @@
             <iFeatureGrowth>0</iFeatureGrowth>
             <iUpgradeTime>0</iUpgradeTime>
             <iDefenseModifier>0</iDefenseModifier>
-            <iPillageGold>100</iPillageGold>
+            <iPillageGold>5</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>
             <TerrainMakesValids>
                 <TerrainMakesValid>
@@ -5802,7 +5802,7 @@
             <iFeatureGrowth>0</iFeatureGrowth>
             <iUpgradeTime>50</iUpgradeTime>
             <iDefenseModifier>0</iDefenseModifier>
-            <iPillageGold>100</iPillageGold>
+            <iPillageGold>5</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>
             <TerrainMakesValids/>
             <FeatureMakesValids>
@@ -5869,7 +5869,7 @@
             <iFeatureGrowth>0</iFeatureGrowth>
             <iUpgradeTime>0</iUpgradeTime>
             <iDefenseModifier>0</iDefenseModifier>
-            <iPillageGold>100</iPillageGold>
+            <iPillageGold>10</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>
             <TerrainMakesValids/>
             <FeatureMakesValids>
