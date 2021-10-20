@@ -5800,7 +5800,7 @@
             <iTilesPerGoody>0</iTilesPerGoody>
             <iGoodyRange>0</iGoodyRange>
             <iFeatureGrowth>0</iFeatureGrowth>
-            <iUpgradeTime>0</iUpgradeTime>
+            <iUpgradeTime>50</iUpgradeTime>
             <iDefenseModifier>0</iDefenseModifier>
             <iPillageGold>100</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>
@@ -5829,7 +5829,7 @@
                 </BonusTypeStruct>
             </BonusTypeStructs>
             <ImprovementPillage/>
-            <ImprovementUpgrade/>
+            <ImprovementUpgrade>IMPROVEMENT_LARGE_SALINA</ImprovementUpgrade>
             <RouteYieldChanges/>
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
