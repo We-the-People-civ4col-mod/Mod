@@ -1120,6 +1120,22 @@
         <Spanish>[ICON_BULLET]%D1%% de coste al reclutamiento de unidades en Europa</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_FATHER_RECRUIT_DISCOUNT_AFRICA</Tag>
+        <English>[ICON_BULLET]%D1%% cost of recruiting units in Africa</English>
+        <French>[ICON_BULLET]Coût de recrutement d'unités africains %D1%%</French>
+        <German>[ICON_BULLET]%D1%% Kosten für Rekrutierung von Einheiten in Afrika</German>
+        <Italian>[ICON_BULLET]%D1%% costo di reclutamento unità in Africa</Italian>
+        <Spanish>[ICON_BULLET]%D1%% de coste al reclutamiento de unidades en Africa</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_RECRUIT_DISCOUNT_PORT_ROYAL</Tag>
+        <English>[ICON_BULLET]%D1%% cost of recruiting units in Port Royal</English>
+        <French>[ICON_BULLET]Coût de recrutement d'unités du Port Royal %D1%%</French>
+        <German>[ICON_BULLET]%D1%% Kosten für Rekrutierung von Einheiten in Port Royal</German>
+        <Italian>[ICON_BULLET]%D1%% costo di reclutamento unità in Port Royal</Italian>
+        <Spanish>[ICON_BULLET]%D1%% de coste al reclutamiento de unidades en Port Royal</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_FATHER_EXTRA_MISSIONARY_RATE</Tag>
         <English>[ICON_BULLET]%D1%% Native conversion rate from missions</English>
         <French>[ICON_BULLET]Taux de conversion des indigènes dû aux missions %D1%% </French>

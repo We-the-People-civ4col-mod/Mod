@@ -449,6 +449,14 @@
         <English>TXT_KEY_FATHER_ADMIRAL_WILLIAM_PENN</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TRAIT_OTTO_FRIEDRICH_VON_DER_GROEBEN</Tag>
+        <English>TXT_KEY_FATHER_OTTO_FRIEDRICH_VON_DER_GROEBEN</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_WILLIAM_DAMPIER</Tag>
+        <English>TXT_KEY_FATHER_WILLIAM_DAMPIER</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TRAIT_HENRY_SHRAPNEL</Tag>
         <English>TXT_KEY_FATHER_HENRY_SHRAPNEL</English>
     </TEXT>

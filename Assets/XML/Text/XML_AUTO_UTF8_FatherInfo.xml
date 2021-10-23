@@ -1551,8 +1551,84 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_ADMIRAL_WILLIAM_PENN_STRATEGY</Tag>
-        <English>Add [COLOR_TECH_TEXT]Admiral William Penn[COLOR_REVERT] as a Founding Father  to increase your profits when selling goods in Port Royal. Additionally he brings a small fleet of war ships with him.</English>
+        <English>Add [COLOR_TECH_TEXT]Admiral William Penn[COLOR_REVERT] as a Founding Father to increase your profits when selling goods in Port Royal. Additionally he brings a small fleet of war ships with him.</English>
         <German>Gewinne [COLOR_TECH_TEXT]Admiral William Penn[COLOR_REVERT] als Gründervater um deine Gewinne beim Verkauf von Waren in Port Royal zu erhöhen. Zusätzlich bringt er eine kleine Flotte an Kriegsschiffen mit sich.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_OTTO_FRIEDRICH_VON_DER_GROEBEN</Tag>
+        <English>
+            <Text>Otto Friedrich von der Groeben</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Otto Friedrich von der Groeben</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Otto Friedrich von der Groeben</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Otto Friedrich von der Groeben</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Otto Friedrich von der Groeben</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_OTTO_FRIEDRICH_VON_DER_GROEBEN_PEDIA</Tag>
+        <English>[H1]Otto Friedrich von der Groeben[\H1][NEWLINE][BOLD]Lived: [\BOLD]1657 - 1728[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Otto Friedrich von der Groeben was a Prussian explorer, officer and German Generalleutnant in Polish service. After Philipp Pietersen Blonck, a sailor in Prussian service, had landed at the Cape Three Points (modern Ghana) and signed a treaty of friendship with the local Ahanta chiefs Pregate, Sophonie and Apany in 1680, the Brandenburgisch-Afrikanische Compagnie was founded in 1681 and a new expedition was organised. In 1682 Frederick William, Elector of Brandenburg assigned von der Groeben the command of a colonial expedition of Brandenburg, which was supposed to acquire a colony on the coast of Guinea. The small fleet of the Brandenburg Navy consisted of the Morian (32 guns, 60-man crew) and the Churprinz von Brandenburg (12 guns, 40-man crew) and set sail on 16 May 1682. They arrived near the village of Accada on 27 December 1682, hoisted the flag of Brandenburg on 1 January 1683 near the modern Princes Town and began to build a fortification, which they called Fort Groß Friedrichsburg. On 5 January 1683, the treaty with the Ahanta was renewed. In honour of the foundation of the first colony of Brandenburg, he was awarded the prospective entitlement of the Amtshauptmann of Marienwerder und Riesenburg in succession to that of his father.</English>
+        <German>[H1]Otto Friedrich von der Groeben[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1657 - 1728[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Otto Friedrich von der Groeben war ein Offizier und Forschungsreisender im Dienste Brandenburg-Preußens und anderer europäischer Staaten. Aufgrund seiner Reiseerfahrungen übertrug der Kurfürst dem zum Major der kurbrandenburgischen Armee ernannten Groeben im Frühjahr 1682 die Leitung einer zweiten brandenburgischen Kolonialexpedition an die Küste von Guinea. Diese Expedition hatte zum Ziel, eine ständige brandenburgische Niederlassung und bewaffnete Forts zu ihrem Schutz zu errichten. Dieser Expedition war eine brandenburgische Handelsexpedition vorausgegangen, die im September 1680 unter der Leitung des Kommandanten der Fregatte Moriaen, Philipp Pietersen Blonck, an die Guinea- und Angolaküste abgesandt worden war. Dabei gelang es, am 16. Mai 1681 an der Goldküste etwas westlich des Kaps der drei Spitzen einen Freundschafts- und Handelsvertrag mit den drei Ahanta-Häuptlingen Pregate, Sophonie und Apany zu schließen, in denen es den Brandenburgern gestattet wurde, eine Niederlassung und ein Fort zu errichten. Sofort nach der Rückkehr der Moriaen im August 1681 begann man mit der Ausrüstung einer neuen Expedition und regte dadurch gleichzeitig die Gründung der Brandenburgisch-Afrikanischen Compagnie an.  </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_OTTO_FRIEDRICH_VON_DER_GROEBEN_STRATEGY</Tag>
+        <English>Add [COLOR_TECH_TEXT]Otto Friedrich von der Groeben[COLOR_REVERT] as a Founding Father to recruit slaves and planation workers from Port Royal at better prices.</English>
+        <German>Gewinne [COLOR_TECH_TEXT]Otto Friedrich von der Groeben[COLOR_REVERT] als Gründervater um Sklaven und Plantagenarbeiter aus Port Royal günstiger zu rekrutieren.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_WILLIAM_DAMPIER</Tag>
+        <English>
+            <Text>William Dampier</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>William Dampier</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>William Dampier</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>William Dampier</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>William Dampier</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_WILLIAM_DAMPIER_PEDIA</Tag>
+        <English>[H1]William Dampier[\H1][NEWLINE][BOLD]Lived: [\BOLD]1651 - 1715[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]William Dampier was an English explorer, pirate, privateer, navigator, and naturalist who became the first Englishman to explore parts of what is today Australia, and the first person to circumnavigate the world three times. He has also been described as one of the most important British explorers of the period between Francis Drake (16th century) and James Cook (18th century), he "bridged those two eras" with a mix of piratical derring-do of the former and scientific inquiry of the later. His expeditions were the among first to identify and name a number of plants, animals, foods, and cooking techniques for a European audience; being among the first English writers to use words such as avocado, barbecue, and chopsticks. In 1679, Dampier joined the crew of the buccaneer (pirate) Captain Bartholomew Sharp on the Spanish Main of Central America, twice visiting the Bay of Campeche, or "Campeachy" as it was then known, on the north coast of Mexico. This led to his first circumnavigation, during which he accompanied a raid across the Isthmus of Darién in Panama and took part in the capture of Spanish ships on the Pacific coast of that isthmus. The pirates then raided Spanish settlements in Peru before returning to the Caribbean. Dampier made his way to Virginia, where in 1683 he was engaged by the privateer John Cooke. Cooke entered the Pacific via Cape Horn and spent a year raiding Spanish possessions in Peru, the Galápagos Islands, and Mexico. This expedition collected buccaneers and ships as it went along, at one time having a fleet of ten vessels. Cooke died in Mexico, and a new leader, Edward Davis, was elected captain by the crew, taking the ship Batchelor's Delight, with future Captain George Raynor in the crew. Dampier transferred to the privateer Charles Swan's ship, Cygnet, and on 31 March 1686 they set out across the Pacific to raid the East Indies, calling at Guam and Mindanao in the Philippines. Spanish witnesses saw the predominantly English crew as not only pirates and heretics but also cannibals. Leaving Swan and 36 others behind on Mindanao, the rest of the privateers under new Captain John Read sailed on to Manila, Poulo Condor in modern-day Vietnam, China, the Spice Islands, and New Holland (Australia). Contrary to Dampier's later claim that he had not actively participated in actual piratical attacks during this voyage, he was in fact selected in 1687 to command one of the Spanish ships captured by Cygnet's crew off Manila.</English>
+        <German>[H1]William Dampier[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1651 - 1715[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]William Dampier war ein britischer Freibeuter, dreimaliger Weltumsegler, Entdecker und Geograph. 1672 ging er als junger Mann nach Spanisch-Amerika und nahm 1673 am dritten Seekrieg zwischen England und den Niederlanden teil. 1674 war er kurzzeitig Plantagenverwalter auf Jamaika und danach arbeitete er bis 1678 bei den Campeche-Holzfällern auf der Halbinsel Yucatán. Da seine Erwartungen, schnell viel Geld zu verdienen, enttäuscht wurden, beschloss er, sich einer der zahlreichen Piratenmannschaften anzuschließen. Von 1679 bis 1681 machte er erste Erfahrungen als Kaperfahrer bei den Kapitänen Bartholomew Sharp und John Coxon. Diese Etappe seines Lebens war nicht von Erfolg gekrönt. Der Versuch, Panama-Stadt auf dem Landweg zu erobern, scheiterte, da die Spanier nach dem ähnlichen Überfall von Henry Morgans Truppen ein paar Jahre früher auf solche Manöver vorbereitet waren. Dampier blieb mit Kapitän Sharp auf einem von ihnen gekaperten Schiff und segelte nach Chile, wo er zusammen mit anderen den notorisch glücklosen Kapitän verließ und sich auf den Weg nach Tortuga machte. Von da segelte er 1682 nach Virginia, wo er sich kurz niederließ. Bereits 1683 schloss er sich dort erneut einer Gruppe von Kaperfahrern an, die auf spanische Schiffe Jagd machen sollte. Als Crewmitglied kam er über Kap Hoorn in den Pazifik, wo er als einer der Ersten die Galapagos-Inseln untersuchte. Ziel der Piraten war das Ausplündern spanischer Städte an der Westküste Südamerikas. 1685 wechselte Dampier das Schiff und stieg auf der Bark Cygnet unter Kapitän Charles Swan zum Navigator auf. Eine über 6000 Meilen lange Reise von Mexiko nach Guam und die Philippinen (vom 31. März bis zum 20. Mai 1686) stellte ein richtiges Meisterstück der damaligen Seefahrtkunst dar.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_WILLIAM_DAMPIER_STRATEGY</Tag>
+        <English>Add [COLOR_TECH_TEXT]William Dampier[COLOR_REVERT] as a Founding Father to recruit slaves and planation workers from Africa at better prices.</English>
+        <German>Gewinne [COLOR_TECH_TEXT]William Dampier[COLOR_REVERT] als Gründervater um Sklaven und Plantagenarbeiter aus Afrika günstiger zu rekrutieren.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_HENRY_SHRAPNEL</Tag>
