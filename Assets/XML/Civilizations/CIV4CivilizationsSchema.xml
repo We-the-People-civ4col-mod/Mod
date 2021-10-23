@@ -348,6 +348,8 @@
 	<ElementType name="iCityDefense" content="textOnly" dt:type="int"/>
 	<ElementType name="iLandPriceDiscount" content="textOnly" dt:type="int"/>
 	<ElementType name="iRecruitPriceDiscount" content="textOnly" dt:type="int"/>
+	<ElementType name="iRecruitPriceDiscountAfrica" content="textOnly" dt:type="int"/>
+	<ElementType name="iRecruitPriceDiscountPortRoyal" content="textOnly" dt:type="int"/>
 	<ElementType name="iEuropeTravelTimeModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iImmigrationThresholdModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iPopGrowthThresholdModifier" content="textOnly" dt:type="int"/>
@@ -401,6 +403,8 @@
 		<element type="iCityDefense"/>
 		<element type="iLandPriceDiscount"/>
 		<element type="iRecruitPriceDiscount"/>
+		<element type="iRecruitPriceDiscountAfrica"/>
+		<element type="iRecruitPriceDiscountPortRoyal"/>
 		<element type="iEuropeTravelTimeModifier"/>
 		<element type="iImmigrationThresholdModifier"/>
 		<element type="iPopGrowthThresholdModifier"/>
