@@ -175,6 +175,8 @@ void CyInfoPythonInterface3()
 		.def("getCityDefense", &CvTraitInfo::getCityDefense, "int ()")
 		.def("getLandPriceDiscount", &CvTraitInfo::getLandPriceDiscount, "int ()")
 		.def("getRecruitPriceDiscount", &CvTraitInfo::getRecruitPriceDiscount, "int ()")
+		.def("getRecruitPriceDiscountAfrica", &CvTraitInfo::getRecruitPriceDiscountAfrica, "int ()") // WTP, ray, Recruit Price Discounts Africa and Port Royal
+		.def("getRecruitPriceDiscountPortRoyal", &CvTraitInfo::getRecruitPriceDiscountPortRoyal, "int ()") // WTP, ray, Recruit Price Discounts Africa and Port Royal
 		.def("getEuropeTravelTimeModifier", &CvTraitInfo::getEuropeTravelTimeModifier, "int ()")
 		.def("getImmigrationThresholdModifier", &CvTraitInfo::getImmigrationThresholdModifier, "int ()")
 		.def("getPopGrowthThresholdModifier", &CvTraitInfo::getPopGrowthThresholdModifier, "int ()")		// Schmiddie, 7 new variables for traits for Europeans, START

@@ -3914,6 +3914,30 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 			szHelpString.append(gDLL->getText("TXT_KEY_FATHER_RECRUIT_DISCOUNT", -kTrait.getRecruitPriceDiscount()));
 		}
 
+		// WTP, ray, Recruit Price Discounts Africa and Port Royal - START
+		if (kTrait.getRecruitPriceDiscountAfrica() != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			szHelpString.append(gDLL->getText("TXT_KEY_FATHER_RECRUIT_DISCOUNT_AFRICA", -kTrait.getRecruitPriceDiscountAfrica()));
+		}
+
+		if (kTrait.getRecruitPriceDiscountPortRoyal() != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			szHelpString.append(gDLL->getText("TXT_KEY_FATHER_RECRUIT_DISCOUNT_PORT_ROYAL", -kTrait.getRecruitPriceDiscountPortRoyal()));
+		}
+
+
+		// WTP, ray, Recruit Price Discounts Africa and Port Royal - END
+
 		if (kTrait.getEuropeTravelTimeModifier() != 0)
 		{
 			szHelpString.append(NEWLINE);

@@ -3214,6 +3214,8 @@ public:
 	int getCityDefense() const;
 	int getLandPriceDiscount() const;
 	int getRecruitPriceDiscount() const;
+	int getRecruitPriceDiscountAfrica() const; // WTP, ray, Recruit Price Discounts Africa and Port Royal
+	int getRecruitPriceDiscountPortRoyal() const; // WTP, ray, Recruit Price Discounts Africa and Port Royal
 	int getEuropeTravelTimeModifier() const;
 	int getImmigrationThresholdModifier() const;
 	int getPopGrowthThresholdModifier() const;		// Schmiddie, 7 new variables for traits for Europeans, START
@@ -3282,6 +3284,8 @@ protected:
 	int m_iCityDefense;
 	int m_iLandPriceDiscount;
 	int m_iRecruitPriceDiscount;
+	int m_iRecruitPriceDiscountAfrica; // WTP, ray, Recruit Price Discounts Africa and Port Royal
+	int m_iRecruitPriceDiscountPortRoyal; // WTP, ray, Recruit Price Discounts Africa and Port Royal
 	int m_iEuropeTravelTimeModifier;
 	int m_iImmigrationThresholdModifier;
 	int m_iPopGrowthThresholdModifier;		// Schmiddie, 7 new variables for traits for Europeans, START

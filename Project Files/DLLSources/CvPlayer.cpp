@@ -16696,15 +16696,16 @@ int CvPlayer::getAfricaUnitBuyPrice(UnitTypes eUnit) const
 	iCost *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getTrainPercent();
 	iCost /= 100;
 
-	/*
+	// WTP, ray, Recruit Price Discounts Africa and Port Royal - START
 	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
 	{
 		if (hasTrait((TraitTypes) iTrait))
 		{
-			iCost *= std::max(0, (100 - GC.getTraitInfo((TraitTypes) iTrait).getRecruitPriceDiscount()));
+			iCost *= std::max(0, (100 - GC.getTraitInfo((TraitTypes) iTrait).getRecruitPriceDiscountAfrica()));
 			iCost /= 100;
 		}
-	}*/
+	}
+	// WTP, ray, Recruit Price Discounts Africa and Port Royal - START
 
 	if (!isHuman())
 	{
@@ -16795,15 +16796,16 @@ int CvPlayer::getPortRoyalUnitBuyPrice(UnitTypes eUnit) const
 	iCost *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getTrainPercent();
 	iCost /= 100;
 
-	/*
+	// WTP, ray, Recruit Price Discounts Africa and Port Royal - START
 	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
 	{
 		if (hasTrait((TraitTypes) iTrait))
 		{
-			iCost *= std::max(0, (100 - GC.getTraitInfo((TraitTypes) iTrait).getRecruitPriceDiscount()));
+			iCost *= std::max(0, (100 - GC.getTraitInfo((TraitTypes) iTrait).getRecruitPriceDiscountPortRoyal()));
 			iCost /= 100;
 		}
-	}*/
+	}
+	// WTP, ray, Recruit Price Discounts Africa and Port Royal - END
 
 	if (!isHuman())
 	{

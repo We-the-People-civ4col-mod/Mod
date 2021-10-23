@@ -11024,6 +11024,8 @@ CvTraitInfo::CvTraitInfo() :
 	m_iCityDefense(0),
 	m_iLandPriceDiscount(0),
 	m_iRecruitPriceDiscount(0),
+	m_iRecruitPriceDiscountAfrica(0), // WTP, ray, Recruit Price Discounts Africa and Port Royal
+	m_iRecruitPriceDiscountPortRoyal(0), // WTP, ray, Recruit Price Discounts Africa and Port Royal
 	m_iEuropeTravelTimeModifier(0),
 	m_iImmigrationThresholdModifier(0),
 	m_iPopGrowthThresholdModifier(0),		// Schmiddie, 7 new variables for traits for Europeans, START
@@ -11197,6 +11199,18 @@ int CvTraitInfo::getRecruitPriceDiscount() const
 {
 	return m_iRecruitPriceDiscount;
 }
+
+// WTP, ray, Recruit Price Discounts Africa and Port Royal - START
+int CvTraitInfo::getRecruitPriceDiscountAfrica() const
+{
+	return m_iRecruitPriceDiscountAfrica;
+}
+
+int CvTraitInfo::getRecruitPriceDiscountPortRoyal() const
+{
+	return m_iRecruitPriceDiscountPortRoyal;
+}
+// WTP, ray, Recruit Price Discounts Africa and Port Royal - END
 
 int CvTraitInfo::getEuropeTravelTimeModifier() const
 {
@@ -11399,7 +11413,9 @@ void CvTraitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iKingAttitudeChange); // R&R, ray, new Attribute in Traits
 	stream->Read(&m_iCityDefense);
 	stream->Read(&m_iLandPriceDiscount);
-	stream->Read(&m_iRecruitPriceDiscount);
+	stream->Read(&m_iRecruitPriceDiscount); 
+	stream->Read(&m_iRecruitPriceDiscountAfrica); // WTP, ray, Recruit Price Discounts Africa and Port Royal
+	stream->Read(&m_iRecruitPriceDiscountPortRoyal); // WTP, ray, Recruit Price Discounts Africa and Port Royal
 	stream->Read(&m_iEuropeTravelTimeModifier);
 	stream->Read(&m_iImmigrationThresholdModifier);
 	stream->Read(&m_iPopGrowthThresholdModifier);		// Schmiddie, 7 new variables for traits for Europeans, START
@@ -11516,6 +11532,8 @@ void CvTraitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iCityDefense);
 	stream->Write(m_iLandPriceDiscount);
 	stream->Write(m_iRecruitPriceDiscount);
+	stream->Write(m_iRecruitPriceDiscountAfrica); // WTP, ray, Recruit Price Discounts Africa and Port Royal
+	stream->Write(m_iRecruitPriceDiscountPortRoyal); // WTP, ray, Recruit Price Discounts Africa and Port Royal
 	stream->Write(m_iEuropeTravelTimeModifier);
 	stream->Write(m_iImmigrationThresholdModifier);
 	stream->Write(m_iPopGrowthThresholdModifier);		// Schmiddie, 7 new variables for traits for Europeans, START
@@ -11588,6 +11606,8 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iCityDefense, "iCityDefense");
 	pXML->GetChildXmlValByName(&m_iLandPriceDiscount, "iLandPriceDiscount");
 	pXML->GetChildXmlValByName(&m_iRecruitPriceDiscount, "iRecruitPriceDiscount");
+	pXML->GetChildXmlValByName(&m_iRecruitPriceDiscountAfrica, "iRecruitPriceDiscountAfrica"); // WTP, ray, Recruit Price Discounts Africa and Port Royal
+	pXML->GetChildXmlValByName(&m_iRecruitPriceDiscountPortRoyal, "iRecruitPriceDiscountPortRoyal"); // WTP, ray, Recruit Price Discounts Africa and Port Royal
 	pXML->GetChildXmlValByName(&m_iEuropeTravelTimeModifier, "iEuropeTravelTimeModifier");
 	pXML->GetChildXmlValByName(&m_iImmigrationThresholdModifier, "iImmigrationThresholdModifier");
 	pXML->GetChildXmlValByName(&m_iPopGrowthThresholdModifier, "iPopGrowthThresholdModifier");		// Schmiddie, 7 new variables for traits for Europeans, START
