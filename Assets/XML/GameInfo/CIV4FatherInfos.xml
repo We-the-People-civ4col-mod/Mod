@@ -1154,7 +1154,6 @@
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,7,10</Button>
         </FatherInfo>
-		
         <FatherInfo>
             <Type>FATHER_JAMES_LANCASTER</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/James_Lancaster.dds</Portrait>
