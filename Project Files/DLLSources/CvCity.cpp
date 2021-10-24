@@ -6895,7 +6895,14 @@ void CvCity::doYields()
 	int iTotalYields = getTotalYieldStored();
 //VET NewCapacity - end 4/9
 	int iMaxCapacity = getMaxYieldCapacity();
+
+	// WTP, ray, Happiness - START 
+	int iCityHappinessDomesticMarketGoldModifiers = getCityHappiness() - getCityUnHappiness();
+	// WTP, ray, Happiness - END
 	
+	// WTP, ray, Domestic Market Profit Modifier - START
+	int iDomesticMarketProfitModifierInPercent = GET_PLAYER(getOwnerINLINE()).getTotalPlayerDomesticMarketProfitModifierInPercent();
+	// WTP, ray, Domestic Market Profit Modifier - END
 	
 	// R&R, ray, adjustment Domestic Markets
 	int iTotalProfitFromDomesticMarket = 0;
@@ -6922,9 +6929,12 @@ void CvCity::doYields()
 					int iProfit = iAmount * getYieldBuyPrice(eYield);
 
 					// WTP, ray, Happiness - START 
-					int iCityHappinessDomesticMarketGoldModifiers = getCityHappiness() - getCityUnHappiness();
-					iProfit = (iProfit * (100 + iCityHappinessDomesticMarketGoldModifiers)) / 100;
+					iProfit = iProfit * (100 + iCityHappinessDomesticMarketGoldModifiers) / 100;
 					// WTP, ray, Happiness - END
+
+					// WTP, ray, Domestic Market Profit Modifier - START
+					iProfit = iProfit * (100 + iDomesticMarketProfitModifierInPercent) / 100;
+					// WTP, ray, Domestic Market Profit Modifier - END
 
 					aiYields[eYield] -= iAmount;
 					GET_PLAYER(getOwnerINLINE()).changeGold(iProfit);

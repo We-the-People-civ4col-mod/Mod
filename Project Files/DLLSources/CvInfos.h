@@ -3203,6 +3203,7 @@ public:
 	int getMercantileFactor() const;
 	int getAfricaSellProfitModifierInPercent() const; // WTP, Africa and Port Royal Profit Modifiers - START
 	int getPortRoyalSellProfitModifierInPercent() const; // WTP, Africa and Port Royal Profit Modifiers - START
+	int getDomesticMarketProfitModifierInPercent() const; // WTP, ray, Domestic Market Profit Modifier
 	int getTreasureModifier() const;
 	int getGoodUniqueGoodyChanceModifierLand() const; // WTP, ray, Unique Goody Chance Modifiers - START
 	int getGoodUniqueGoodyChanceModifierWater() const; // WTP, ray, Unique Goody Chance Modifiers - START
@@ -3273,6 +3274,7 @@ protected:
 	int m_iMercantileFactor;
 	int m_iAfricaSellProfitModifierInPercent; // WTP, Africa and Port Royal Profit Modifiers - START
 	int m_iPortRoyalSellProfitModifierInPercent; // WTP, Africa and Port Royal Profit Modifiers - START
+	int m_iDomesticMarketProfitModifierInPercent; // WTP, ray, Domestic Market Profit Modifier
 	int m_iTreasureModifier;
 	int m_iGoodUniqueGoodyChanceModifierLand; // WTP, ray, Unique Goody Chance Modifiers - START
 	int m_iGoodUniqueGoodyChanceModifierWater; // WTP, ray, Unique Goody Chance Modifiers - START

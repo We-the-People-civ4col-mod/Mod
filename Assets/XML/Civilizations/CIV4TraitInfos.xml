@@ -24,6 +24,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>100</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>100</iGoodUniqueGoodyChanceModifierWater>
@@ -89,6 +90,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -154,6 +156,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -214,6 +217,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>25</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -274,6 +278,7 @@
             <iMercantileFactor>-50</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>25</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>25</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -334,6 +339,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -485,6 +491,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -583,6 +590,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -685,6 +693,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -750,6 +759,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -843,6 +853,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -921,6 +932,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -990,6 +1002,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1050,6 +1063,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1141,6 +1155,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1210,6 +1225,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1275,6 +1291,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1395,6 +1412,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1489,6 +1507,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1571,6 +1590,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1662,6 +1682,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1727,6 +1748,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>100</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1828,6 +1850,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1898,6 +1921,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -1976,6 +2000,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2064,6 +2089,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2124,6 +2150,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2202,6 +2229,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2267,6 +2295,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2345,6 +2374,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2405,6 +2435,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2483,6 +2514,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2561,6 +2593,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2648,6 +2681,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2726,6 +2760,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2800,6 +2835,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2874,6 +2910,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -2948,6 +2985,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3013,6 +3051,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3073,6 +3112,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3170,6 +3210,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3263,6 +3304,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3356,6 +3398,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3471,6 +3514,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3564,6 +3608,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3629,6 +3674,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3689,6 +3735,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3758,6 +3805,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3823,6 +3871,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3888,6 +3937,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -3972,6 +4022,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4042,6 +4093,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4107,6 +4159,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4222,6 +4275,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4331,6 +4385,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4437,6 +4492,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4525,6 +4581,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4631,6 +4688,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4744,6 +4802,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4837,6 +4896,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -4934,6 +4994,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5011,6 +5072,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5104,6 +5166,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5174,6 +5237,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5244,6 +5308,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5314,6 +5379,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5379,6 +5445,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5472,6 +5539,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5553,6 +5621,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5622,6 +5691,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5708,6 +5778,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5768,6 +5839,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5838,6 +5910,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5903,6 +5976,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -5963,6 +6037,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6023,6 +6098,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6116,6 +6192,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6176,6 +6253,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6236,6 +6314,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6305,6 +6384,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6378,6 +6458,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6447,6 +6528,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6558,6 +6640,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>20</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6618,6 +6701,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6688,6 +6772,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6753,6 +6838,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6835,6 +6921,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -6944,6 +7031,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7004,6 +7092,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7073,6 +7162,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7166,6 +7256,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7252,6 +7343,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7363,6 +7455,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7481,6 +7574,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7555,6 +7649,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7654,6 +7749,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7723,6 +7819,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7792,6 +7889,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7857,6 +7955,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -7930,6 +8029,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8012,6 +8112,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8086,6 +8187,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8169,6 +8271,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8302,6 +8405,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8408,6 +8512,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8490,6 +8595,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8583,6 +8689,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8643,6 +8750,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8720,6 +8828,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8785,6 +8894,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8864,6 +8974,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -8961,6 +9072,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -9048,6 +9160,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -9113,6 +9226,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -9187,6 +9301,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -9247,6 +9362,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -9307,6 +9423,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -9413,6 +9530,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -9478,6 +9596,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -9543,6 +9662,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -9603,6 +9723,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -9663,6 +9784,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>100</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -9741,6 +9863,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>100</iGoodUniqueGoodyChanceModifierWater>
@@ -9819,6 +9942,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>25</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -9879,6 +10003,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>25</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -9939,6 +10064,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -10004,6 +10130,7 @@
             <iMercantileFactor>0</iMercantileFactor>
             <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
             <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
@@ -10045,7 +10172,85 @@
             <UnitStrengthModifiers>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_SMUGGLING_SHIP</UnitClass>
-                    <iCombatModifier>10</iCombatModifier>
+                    <iCombatModifier>25</iCombatModifier>
+                </UnitStrengthModifier>
+            </UnitStrengthModifiers>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
+            <Type>TRAIT_JAMES_LANCASTER</Type>
+            <Description>TXT_KEY_TRAIT_JAMES_LANCASTER</Description>
+            <ShortDescription>TXT_KEY_FATHER_JAMES_LANCASTER</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>25</iDomesticMarketProfitModifierInPercent>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iRecruitPriceDiscountAfrica>0</iRecruitPriceDiscountAfrica>
+            <iRecruitPriceDiscountPortRoyal>0</iRecruitPriceDiscountPortRoyal>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers/>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges/>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_WAGON_TRAIN</UnitClass>
+                    <iCombatModifier>25</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_TREK</UnitClass>
+                    <iCombatModifier>25</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_CARRIER</UnitClass>
+                    <iCombatModifier>25</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_STAGECOACH</UnitClass>
+                    <iCombatModifier>25</iCombatModifier>
                 </UnitStrengthModifier>
             </UnitStrengthModifiers>
             <FreeBuildingClasses/>

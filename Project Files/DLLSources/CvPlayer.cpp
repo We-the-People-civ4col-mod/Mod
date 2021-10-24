@@ -1845,6 +1845,24 @@ int CvPlayer::getTotalPlayerPortRoyalSellProfitModifierInPercent() const
 }
 // WTP, Africa and Port Royal Profit Modifiers - END
 
+
+// WTP, ray, Domestic Market Profit Modifier - START
+int CvPlayer::getTotalPlayerDomesticMarketProfitModifierInPercent() const
+{
+	int iDomesticMarketProfitModifierInPercentTotal = 0;
+	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
+	{
+		if (hasTrait(eTrait))
+		{
+			iDomesticMarketProfitModifierInPercentTotal += GC.getTraitInfo(eTrait).getDomesticMarketProfitModifierInPercent();
+
+		}
+	}
+	return iDomesticMarketProfitModifierInPercentTotal;
+}
+// WTP, ray, Domestic Market Profit Modifier - END
+
+
 bool CvPlayer::isHuman() const
 {
 	return m_bHuman;

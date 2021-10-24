@@ -160,6 +160,7 @@ void CyInfoPythonInterface3()
 		.def("getMercantileFactor", &CvTraitInfo::getMercantileFactor, "int ()")
 		.def("getAfricaSellProfitModifierInPercent", &CvTraitInfo::getAfricaSellProfitModifierInPercent, "int ()") // WTP, Africa and Port Royal Profit Modifiers - START
 		.def("getPortRoyalSellProfitModifierInPercent", &CvTraitInfo::getPortRoyalSellProfitModifierInPercent, "int ()") // WTP, Africa and Port Royal Profit Modifiers - START
+		.def("getDomesticMarketProfitModifierInPercent", &CvTraitInfo::getDomesticMarketProfitModifierInPercent, "int ()") // WTP, ray, Domestic Market Profit Modifier
 		.def("getTreasureModifier", &CvTraitInfo::getTreasureModifier, "int ()")
 		.def("getGoodUniqueGoodyChanceModifierLand", &CvTraitInfo::getGoodUniqueGoodyChanceModifierLand, "int ()") // WTP, ray, Unique Goody Chance Modifiers - START
 		.def("getGoodUniqueGoodyChanceModifierWater", &CvTraitInfo::getGoodUniqueGoodyChanceModifierWater, "int ()") // WTP, ray, Unique Goody Chance Modifiers - START

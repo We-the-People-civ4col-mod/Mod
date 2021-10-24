@@ -11013,6 +11013,7 @@ CvTraitInfo::CvTraitInfo() :
 	m_iMercantileFactor(0),
 	m_iAfricaSellProfitModifierInPercent(0), // WTP, Africa and Port Royal Profit Modifiers - START
 	m_iPortRoyalSellProfitModifierInPercent(0), // WTP, Africa and Port Royal Profit Modifiers - START
+	m_iDomesticMarketProfitModifierInPercent(0), // WTP, ray, Domestic Market Profit Modifier
 	m_iTreasureModifier(0),
 	m_iGoodUniqueGoodyChanceModifierLand(0), // WTP, ray, Unique Goody Chance Modifiers - START
 	m_iGoodUniqueGoodyChanceModifierWater(0), // WTP, ray, Unique Goody Chance Modifiers - START
@@ -11125,7 +11126,12 @@ int CvTraitInfo::getPortRoyalSellProfitModifierInPercent() const
 }
 // WTP, Africa and Port Royal Profit Modifiers - END
 
-// WTP, Africa and Port Royal Profit Modifiers - END
+// WTP, ray, Domestic Market Profit Modifier - START
+int CvTraitInfo::getDomesticMarketProfitModifierInPercent() const
+{
+	return m_iDomesticMarketProfitModifierInPercent;
+}
+// WTP, ray, Domestic Market Profit Modifier - END
 
 // WTP, ray, Unique Goody Chance Modifiers - START
 int CvTraitInfo::getGoodUniqueGoodyChanceModifierLand() const
@@ -11403,6 +11409,7 @@ void CvTraitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iMercantileFactor);
 	stream->Read(&m_iAfricaSellProfitModifierInPercent); // WTP, Africa and Port Royal Profit Modifiers - START
 	stream->Read(&m_iPortRoyalSellProfitModifierInPercent); // WTP, Africa and Port Royal Profit Modifiers - START
+	stream->Read(&m_iDomesticMarketProfitModifierInPercent); // WTP, ray, Domestic Market Profit Modifier
 	stream->Read(&m_iTreasureModifier);
 	stream->Read(&m_iGoodUniqueGoodyChanceModifierLand); // WTP, ray, Unique Goody Chance Modifiers - START
 	stream->Read(&m_iGoodUniqueGoodyChanceModifierWater); // WTP, ray, Unique Goody Chance Modifiers - START
@@ -11521,6 +11528,7 @@ void CvTraitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iMercantileFactor);
 	stream->Write(m_iAfricaSellProfitModifierInPercent); // WTP, Africa and Port Royal Profit Modifiers - START
 	stream->Write(m_iPortRoyalSellProfitModifierInPercent); // WTP, Africa and Port Royal Profit Modifiers - START
+	stream->Write(m_iDomesticMarketProfitModifierInPercent); // WTP, ray, Domestic Market Profit Modifier
 	stream->Write(m_iTreasureModifier);
 	stream->Write(m_iGoodUniqueGoodyChanceModifierLand); // WTP, ray, Unique Goody Chance Modifiers - START
 	stream->Write(m_iGoodUniqueGoodyChanceModifierWater); // WTP, ray, Unique Goody Chance Modifiers - START
@@ -11595,6 +11603,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iMercantileFactor, "iMercantileFactor");
 	pXML->GetChildXmlValByName(&m_iAfricaSellProfitModifierInPercent, "iAfricaSellProfitModifierInPercent"); // WTP, Africa and Port Royal Profit Modifiers - START
 	pXML->GetChildXmlValByName(&m_iPortRoyalSellProfitModifierInPercent, "iPortRoyalSellProfitModifierInPercent"); // WTP, Africa and Port Royal Profit Modifiers - START
+	pXML->GetChildXmlValByName(&m_iDomesticMarketProfitModifierInPercent, "iDomesticMarketProfitModifierInPercent"); // WTP, ray, Domestic Market Profit Modifier
 	pXML->GetChildXmlValByName(&m_iTreasureModifier, "iTreasureModifier");
 	pXML->GetChildXmlValByName(&m_iGoodUniqueGoodyChanceModifierLand, "iGoodUniqueGoodyChanceModifierLand"); // WTP, ray, Unique Goody Chance Modifiers - START
 	pXML->GetChildXmlValByName(&m_iGoodUniqueGoodyChanceModifierWater, "iGoodUniqueGoodyChanceModifierWater"); // WTP, ray, Unique Goody Chance Modifiers - START

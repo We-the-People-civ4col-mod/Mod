@@ -202,6 +202,7 @@ public:
 	int getMercantileFactor() const;
 	int getTotalPlayerAfricaSellProfitModifierInPercent() const; // WTP, Africa and Port Royal Profit Modifiers - START
 	int getTotalPlayerPortRoyalSellProfitModifierInPercent() const; // WTP, Africa and Port Royal Profit Modifiers - START
+	int getTotalPlayerDomesticMarketProfitModifierInPercent() const; // WTP, ray, Domestic Market Profit Modifier
 	DllExport bool isHuman() const;
 	DllExport void updateHuman();
 	bool isNative() const;

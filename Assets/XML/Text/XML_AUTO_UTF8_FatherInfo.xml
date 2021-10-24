@@ -1631,6 +1631,44 @@
         <German>Gewinne [COLOR_TECH_TEXT]William Dampier[COLOR_REVERT] als Gründervater um Sklaven und Plantagenarbeiter aus Afrika günstiger zu rekrutieren.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_FATHER_JAMES_LANCASTER</Tag>
+        <English>
+            <Text>James Lancaster</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>James Lancaster</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>James Lancaster</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>James Lancaster</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>James Lancaster</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JAMES_LANCASTER_PEDIA</Tag>
+        <English>[H1]James Lancaster[\H1][NEWLINE][BOLD]Lived: [\BOLD]1554 - 1618[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Sir James Lancaster VI was a prominent Elizabethan trader and privateer. In 1600 he was given command of the East India Company's first fleet. His vessel was the Red Dragon. He was also accredited as Queen Elizabeth's special envoy to various Eastern potentates. Going by the Cape of Good Hope Lancaster visited the Nicobars (from 9 April 1602), Aceh and other parts of Sumatra (from 5 June 1602), and Bantam in Java. An alliance was established with Aceh, the first English East India Company factory established at Bantam and a commercial mission dispatched to the Moluccas. Lancaster also seized a large Portuguese galleon and looted it. The return voyage from 20 February to 11 September 1603 was speedy and prosperous, and Lancaster (whose success both in trade and diplomacy had been brilliant) was rewarded with a knighthood from the newly crowned James I in October 1603. Lancaster continued to be one of the chief directors of the East India Company until his death in June 1618. Most of the voyages of the early Stuart period both to India and in search of the Northwest Passage were undertaken under his sponsorship and direction. In July 1616, Lancaster Sound, the entrance to the Northwest Passage, on the north-west side of Baffin Bay, was named by William Baffin after Sir James. </English>
+        <German>[H1]James Lancaster[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1554 - 1618[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Sir James Lancaster war ein englischer Seefahrer, Politiker und Pionier der englischen Bemühungen um das spätere Britisch-Indien. 1600 wurde er mit dem Kommando der ersten Flotte der Englischen Ostindien-Kompanie betraut. Die Flotte begann ihre Mission Ende April 1601. John Davis nahm als Steuermann an der Fahrt teil. Lancaster wurde von Königin Elisabeth I. zum offiziellen Unterhändler mit den ostindischen Herrschern ernannt. Die Flotte erreichte am 1. November das Kap der Guten Hoffnung, im April 1602 die Nikobaren und später Aceh und andere Gebiete Sumatras, Bantam und die Molukken. Im September 1603 kehrte die Flotte heim. Die Reise war sowohl in diplomatischer als auch in wirtschaftlicher Hinsicht äußerst erfolgreich. Lancaster wurde für seine Verdienste auf dieser Mission am 2. Oktober 1603 zum Knight Bachelor ("Sir") geschlagen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JAMES_LANCASTER_STRATEGY</Tag>
+        <English>Add [COLOR_TECH_TEXT]James Lancaster[COLOR_REVERT] as a Founding Father to increase profits on domestic markets.</English>
+        <German>Gewinne [COLOR_TECH_TEXT]James Lancaster[COLOR_REVERT] als Gründervater um Profite auf dem heimischen Markt zu erhöhen.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_FATHER_HENRY_SHRAPNEL</Tag>
         <English>
             <Text>Henry Shrapnel</Text>

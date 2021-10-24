@@ -3317,6 +3317,26 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 		}
 		// WTP, Africa and Port Royal Profit Modifiers - END
 
+
+		// WTP, ray, Domestic Market Profit Modifier - START
+		if (kTrait.getDomesticMarketProfitModifierInPercent() != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			if (kTrait.getDomesticMarketProfitModifierInPercent() > 0)
+			{
+				szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_DOMESTIC_PROFIT_MODIFER_POSITIVE", kTrait.getDomesticMarketProfitModifierInPercent()));
+			}
+			else
+			{
+				szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_DOMESTIC_PROFIT_MODIFER_NEGATIVE", kTrait.getDomesticMarketProfitModifierInPercent()));
+			}
+		}
+	    // WTP, ray, Domestic Market Profit Modifier - END
+
 		int iTreasureModifier = kTrait.getTreasureModifier();
 		if (iTreasureModifier != 0)
 		{
@@ -7625,6 +7645,17 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 	// R&R, ray, adjustment Domestic Markets - START
 	int iYieldDomesticDemand = city.getYieldDemand(eYieldType);
 	int iYieldDomesticPrice = city.getYieldBuyPrice(eYieldType);
+
+	// WTP, ray, correction of Yield Demand Display according to Happiness - START
+	int iCityHappinessDomesticMarketGoldModifiers = city.getCityHappiness() - city.getCityUnHappiness();
+	iYieldDomesticPrice = iYieldDomesticPrice * (100 + iCityHappinessDomesticMarketGoldModifiers) / 100;
+	// WTP, ray, correction of Yield Demand Display according to Happiness - END
+
+	// WTP, ray, Domestic Market Profit Modifier - START
+	int iDomesticMarketProfitModifierInPercent = GET_PLAYER(city.getOwnerINLINE()).getTotalPlayerDomesticMarketProfitModifierInPercent();
+	iYieldDomesticPrice = iYieldDomesticPrice * (100 + iDomesticMarketProfitModifierInPercent) / 100;
+	// WTP, ray, Domestic Market Profit Modifier - END
+
 	if (iYieldDomesticDemand > 0)
 	{
 		szBuffer.append(NEWLINE);
