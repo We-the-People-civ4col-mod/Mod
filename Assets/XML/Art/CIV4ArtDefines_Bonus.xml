@@ -366,8 +366,8 @@
             <KFM/>
             <Button>Art/Interface/Buttons/gull.dds</Button>
             <FontButtonIndex>84</FontButtonIndex>
-            <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>1</bRefractionCastor>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_DUCK</Type>
@@ -377,8 +377,8 @@
             <KFM/>
             <Button>Art/Interface/Buttons/duck.dds</Button>
             <FontButtonIndex>82</FontButtonIndex>
-            <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>1</bRefractionCastor>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_LOON</Type>
@@ -388,19 +388,19 @@
             <KFM/>
             <Button>Art/Interface/Buttons/loon.dds</Button>
             <FontButtonIndex>86</FontButtonIndex>
-            <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>1</bRefractionCastor>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_GOOSE</Type>
-            <fScale>30</fScale>
+            <fScale>2</fScale>
             <fInterfaceScale>1</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Canada_Goose/goose.nif</NIF>
-            <KFM/>
+            <NIF>Art/Terrain/Resources/Canada_Goose/Goose_FX.nif</NIF>
+            <KFM>Art/Terrain/Resources/sheep_CIV4/sheep.kfm</KFM>
             <Button>Art/Interface/Buttons/Canada_Goose.dds</Button>
             <FontButtonIndex>83</FontButtonIndex>
-            <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>1</bRefractionCastor>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_OASIS</Type>
@@ -801,12 +801,12 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_CHICKEN</Type>
             <fScale>1.2</fScale>
-            <fInterfaceScale>10.0</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Chickens/Chickens.nif</NIF>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Chickens/Chickens_FX.nif</NIF>
             <KFM>Art/Terrain/Resources/sheep_CIV4/sheep.kfm</KFM>
             <Button>Art/interface/buttons/Chicken_Button.dds</Button>
             <FontButtonIndex>16</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
