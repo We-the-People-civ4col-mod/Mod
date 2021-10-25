@@ -1270,11 +1270,12 @@ void CvMap::updateWaterPlotTerrainTypes()
 			else
 			{
 				// WTP, ray, we improve the logic by also checking for size
-				// if it becomes to big, we rather not change to Lake or 
+				// if it becomes to big, we rather not change to Lake or Ice Lakes
 				// this prevents really strange stuff e.g. in MapScripts like "Carribean"
 				bool isSmallEnoughForLake = kRegion.getNumPlots() < 50;
 				if (isSmallEnoughForLake)
 				{
+					// Ice Lakes only in Lattitudes (North or South) above 75 degrees - else normal Lakes
 					bool bIsBetterIceLake = kRegion.getPlot(iPlot)->getLatitude() > 75;
 
 					if (bIsBetterIceLake)
