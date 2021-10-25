@@ -1671,7 +1671,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PENGUIN_PEDIA</Tag>
-        <English>Penguins, aquatic flightless birds, live south of the equator, with the sole exception of the Galapagos penquin. In size they range from one to 35 kilograms, in height from 30 cm to one meter.[PARAGRAPH:1]They eat fish and are eaten by orcas.[PARAGRAPH:1]They have no fear of humans so the birds and their eggs can be a food source for desperate adventurers.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Penguin[COLOR_REVERT]</English>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Penguin[COLOR_REVERT]</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pinguin[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1717,7 +1717,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HUMPBACK_WHALE_PEDIA</Tag>
-        <English>Humpback whales, one of the baleen species, travel the world’s oceans finding one another through their distinctive songs. They’re around 15 meters in length with a weight of thirty tonnes.[PARAGRAPH:1]One distinctive hunting technique is [BOLD]bubble net feeding[\BOLD]; a group of whales dive up to 20 meters below the surface and swim in a shrinking circle blowing air from their blowholes creating a vertical cylinder-ring of bubbles that captures the prey above them.[PARAGRAPH:1]Humpbacks are hunted for blubber and meat.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Humpback whales[COLOR_REVERT]</English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Humpback whales[COLOR_REVERT]</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Buckelwale[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1731,7 +1731,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SWEET_POTATO_PEDIA</Tag>
-        <English>Sweet potatoes, members of the morning glory family, grow mainly in the tropics.  They do not tolerate frost.[PARAGRAPH:1]The first Europeans to taste sweet potatoes were members of Christopher Columbus's expedition in 1492.[PARAGRAPH:1]Sweet potato leaves are edible and can be prepared like spinach or turnip greens.[PARAGRAPH:1]While sweet potato provides less edible energy and protein per unit weight than cereals, it has higher nutrient density.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sweet Potatoes[COLOR_REVERT] </English>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sweet Potatoes[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Süßkratoffeln[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1745,7 +1745,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SQUASH_PEDIA</Tag>
-        <English>Squash is a traditional Indigenous food. It was domesticated early, followed by maize and then beans, becoming part of the Three Sisters agricultural system of companion planting.[PARAGRAPH:1]Archaeological investigations show domestication of squash going back over 8,000 years from the very southern parts of Canada down to Argentina and Chile.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Squash[COLOR_REVERT] </English>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Squash[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Zuchini[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1759,7 +1759,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_AVOCADO_PEDIA</Tag>
-        <English>Avocado is a central American tree producing a large berry with a single seed.[PARAGRAPH:1]It may have originated in the Tehuacan Valley in Mexico.[PARAGRAPH:1]It was widely cultivated before the arrival of Europeans, and was taken to Spain in 1601.[PARAGRAPH:1]Raw avocado is 73% water, 15% fat, 9% carbohydrates, and 2% protein, making it a good source of fat at a time when fat was still scarce.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Avocado Tree[COLOR_REVERT] </English>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Avocado Tree[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Avocado Baum[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1773,7 +1773,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PRICKLY_PEAR_PEDIA</Tag>
-        <English>The prickly pear thrives in regions with mild winters having a prolonged dry spell followed by hot summers with occasional rain and low humidity.[PARAGRAPH:1]Rock iguanas and birds like to eat prickly pears.[PARAGRAPH:1]Shallow roots let the plant grow on mountain slopes.[PARAGRAPH:1]In Mexico, prickly pears are often used to make appetizers, soups, salads, entrees, vegetable dishes, breads, desserts, beverages, candy, jelly, and drinks.[PARAGRAPH:1]The insect from which [BOLD]cochineal dye[\BOLD] is made lives on prickly pears.[PARAGRAPH:1]Prickly pears began to be imported into Europe in the 1500s as a garden plant where they could be used for agricultural fencing.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Prickly Pear[COLOR_REVERT] </English>
+        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Prickly Pear[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Feigenkaktus[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>

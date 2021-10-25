@@ -781,7 +781,7 @@
             <bOnlyCoastalLand>0</bOnlyCoastalLand>
             <bNoRiver>0</bNoRiver>
             <bNoAdjacent>0</bNoAdjacent>
-            <bRequiresFlatlands>1</bRequiresFlatlands>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
             <bRequiresHills>0</bRequiresHills>
             <bRequiresPeaks>0</bRequiresPeaks>
             <bRequiresRiver>0</bRequiresRiver>
@@ -5837,10 +5837,6 @@
                 </TerrainBoolean>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>

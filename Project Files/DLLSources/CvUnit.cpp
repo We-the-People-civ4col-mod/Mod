@@ -2919,8 +2919,12 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 			if (getDomainType() == DOMAIN_LAND && pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)
 			{
-				bLandUnitMayPassLargeRiverDueToImprovement = (pPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pPlot->getImprovementType()).getTerrainMakesValid(TERRAIN_LARGE_RIVERS));
-				bLandUnitMayPassLargeRiverDueToTerrainFeature = (pPlot->getFeatureType() != NO_FEATURE && GC.getFeatureInfo(pPlot->getFeatureType()).isTerrain(TERRAIN_LARGE_RIVERS));
+				//WTP, ray, small adaptation to ensure that not all Improvements allow Movement on Large Rivers by adding "Outside Borders check" which is only true for "Ferry Station" aka "Raft Station"
+				//Comment: It would have been better to check fot the new Road Type it adds hidden instead of the Improvement, but I was not sure if that would have worked
+				bLandUnitMayPassLargeRiverDueToImprovement = (pPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pPlot->getImprovementType()).getTerrainMakesValid(TERRAIN_LARGE_RIVERS) && GC.getImprovementInfo(pPlot->getImprovementType()).isOutsideBorders());
+				//WTP, ray, small adaptation to ensure that not all Terrain Features allow Movement on Large Rivers by adding "bNoImprovement check" which is only true for "River Ford" (at least on Terrain Large Rivers
+				//Comment: It would have been better to check fot the new Road Type it adds hidden instead of the Improvement, but I was not sure if that would have worked
+				bLandUnitMayPassLargeRiverDueToTerrainFeature = (pPlot->getFeatureType() != NO_FEATURE && GC.getFeatureInfo(pPlot->getFeatureType()).isTerrain(TERRAIN_LARGE_RIVERS) && GC.getFeatureInfo(pPlot->getFeatureType()).isNoImprovement());
 				bLandUnitMayPassLargeRiverDueToProfession = (getProfession() != NO_PROFESSION && GC.getProfessionInfo(getProfession()).isCanCrossLargeRivers());
 				bLandUnitMayBeLoaded = canLoad(pPlot, false);
 			}
