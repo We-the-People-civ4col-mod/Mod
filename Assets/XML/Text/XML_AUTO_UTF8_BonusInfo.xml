@@ -525,7 +525,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PARROTS_PEDIA</Tag>
-        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Parrots[COLOR_REVERT] </English>
+        <English>There are 398 species of parrots, birds found mostly in tropical and subtropical regions.[PARAGRAPH:1]Many parrots are vividly coloured, and some are multi-coloured.[PARAGRAPH:1]Parrots, along with ravens, crows, jays, and magpies, are among the most intelligent birds, and the ability of some species to imitate human speech enhances their popularity as pets.[PARAGRAPH:1]Parrots invariably require an enormous amount of attention, care, and intellectual stimulation to thrive, akin to that required by a three-year-old child, which many people find themselves unable to provide in the long term.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Parrots[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Papageien[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -539,7 +539,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TOUCAN_PEDIA</Tag>
-        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Toucans[COLOR_REVERT] </English>
+        <English>Toucans are arboreal birds, brightly marked, with large, often-colourful bills.[PARAGRAPH:1]Toucans are native to the tropics from southern Mexico, through Central America, into South America south to northern Argentina.[PARAGRAPH:1]Despite its size, the toucan's bill is very light, being composed of bone struts filled with spongy keratin.[PARAGRAPH:1]The largest toucans are generally purple, with touches of white, yellow, and scarlet, and black.[PARAGRAPH:1]Toucans mainly eat fruit.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Toucans[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Toucane[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -553,7 +553,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CAPYBARA_PEDIA</Tag>
-        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Capybara[COLOR_REVERT] </English>
+        <English>The capybara is the largest living rodent, around a meter in length, with weight averaging 50 kilograms.[PARAGRAPH:1]They usually live in groups of 10–20 individuals.[PARAGRAPH:1]The capybara is not a threatened species and it is hunted for its meat and hide and also for grease from its thick fatty skin.[PARAGRAPH:1]Capybaras are superb swimmers and can hold their breath underwater for up to five minutes at a time.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Capybara[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wasserschwein[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -567,7 +567,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TAPIR_PEDIA</Tag>
-        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tapirs[COLOR_REVERT] </English>
+        <English>The tapir is a large, herbivorous mammal, similar in shape to a pig, with a short, prehensile nose trunk.[PARAGRAPH:1]They're about two meters long, weighing up to 300 kilograms.[PARAGRAPH:1]Adult tapirs are large enough to have few natural predators, and the thick skin on the backs of their necks helps to protect them from threats such as jaguars, crocodiles and anacondas.[PARAGRAPH:1]They're also able to run fairly quickly, considering their size and cumbersome appearance, finding shelter in the thick undergrowth of the forest or in water.[PARAGRAPH:1]Tapirs inhabit jungle and forest regions of South and Central America.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tapirs[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tapire[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -581,7 +581,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RABBIT_PEDIA</Tag>
-        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rabbits[COLOR_REVERT] </English>
+        <English>Rabbits are familiar throughout the world as a wild prey animal. They're also domesticated as livestock or pets.[PARAGRAPH:1]Rabbit fur, prized for its softness, can be found in a broad range of coat colors and patterns.[PARAGRAPH:1]Since speed and agility are a rabbit's main defenses against predators (including the swift fox), rabbits have large hind leg bones and well-developed musculature.[PARAGRAPH:1]Rabbit habitats include meadows, woods, forests, grasslands, deserts and wetlands.[PARAGRAPH:1]More than half the world's rabbit population is in North America.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rabbits[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kaninchen[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -595,7 +595,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PIG_PEDIA</Tag>
-        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] </English>
+        <English>Pigs are native to the Eurasian and African continents, ranging from Europe to the Pacific islands.[PARAGRAPH:1]In the New World the peccary, a medium-sized pig-like mammal, lives wild in Central and South America, Trinidad in the Caribbean, and the southwestern area of North America.[PARAGRAPH:1]The domestic pig is among the world's most populous large mammals.[PARAGRAPH:1]Pigs are omnivores and can consume a wide range of food.[PARAGRAPH:1]Pigs are biologically similar to humans and are thus frequently used for human medical research.[PARAGRAPH:1]Apart from meat, pig skin is turned into leather, and their hairs are used to make brushes.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Schweine[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -609,7 +609,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CHICKEN_PEDIA</Tag>
-        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Poultry[COLOR_REVERT] </English>
+        <English>The chicken is domesticated from red junglefowl originally from Southeastern Asia.[PARAGRAPH:1]There are more chickens in the world than any other bird.[PARAGRAPH:1]Chickens are omnivores. In the wild, they often scratch at the soil to search for seeds, insects and even animals as large as lizards, small snakes or young mice.[PARAGRAPH:1]An unusual variety of chicken that has its origins in South America is the Araucana, bred in southern Chile by the Mapuche people. Araucanas lay blue-green eggs.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Poultry[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Geflügel[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -687,7 +687,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_POLAR_FOX_PEDIA</Tag>
-        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polar foxes[COLOR_REVERT]</English>
+        <English>The Arctic fox, also known as the polar fox, is common throughout the Arctic regions of the Northern Hemisphere.[PARAGRAPH:1]It is well adapted to living in cold environments, and is best known for its thick, warm fur that is also used as camouflage. It has a large and very fluffy tail.[PARAGRAPH:1]The Arctic fox preys on many small creatures such as lemmings, voles, ringed seal pups, fish, waterfowl, and seabirds.[PARAGRAPH:1]Natural predators of the Arctic fox are golden eagles, arctic wolves, polar bears, wolverines, red foxes, gray wolves, and grizzly bears.[PARAGRAPH:1]It mostly inhabits tundra and pack ice, but is also present in Canadian boreal forests (northeastern Alberta, northern Saskatchewan, northern Manitoba, northern Ontario, northern Quebec, Newfoundland and Labrador) and the Kenai Peninsula in Alaska.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polar foxes[COLOR_REVERT]</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polarfüchse[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -701,7 +701,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RED_FOX_PEDIA</Tag>
-        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Red foxes[COLOR_REVERT]</English>
+        <English>The red fox is the largest of the true foxes.[PARAGRAPH:1]Its range has increased alongside human expansion.[PARAGRAPH:1]It colonised North America shortly after the Wisconsin glaciation. The cunning Fox is commonly found in Native American mythology, where it is portrayed as an almost constant companion to Coyote.[PARAGRAPH:1]Foxes primarily feed on small rodents, though they may also target rabbits, squirrels, game birds, reptiles, invertebrates and young ungulates.[PARAGRAPH:1]The red fox is one of the most important furbearing animals harvested for the fur trade.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Red foxes[COLOR_REVERT]</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rotfüchse[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1627,7 +1627,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_FUR_SEAL_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fur Seal[COLOR_REVERT]</English>
+        <English>Fur seals are much more closely related to sea lions than true seals, and share with them external ears, relatively long and muscular foreflippers, and the ability to walk on all fours.[PARAGRAPH:1]They are marked by their dense underfur, which made them a long-time object of commercial hunting.[PARAGRAPH:1]When fur seals were hunted in the late 18th and early 19th centuries, they hauled out on remote islands where no predators were present. Hunters reported being able to club the unwary animals to death one after another, making the hunt profitable, though the price per seal skin was low.[PARAGRAPH:1]Colonies of fur seals can be seen from the coast of Peru north to California.[PARAGRAPH:1]South American adult fur seals feed almost exclusively on anchovies.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fur Seal[COLOR_REVERT]</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seebär[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
