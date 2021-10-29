@@ -22889,12 +22889,8 @@
                         <ArtDefineTag>ART_DEF_UNIT_CONTINENTAL_GUARD_RIFLEMAN</ArtDefineTag>
                     </UnitMeshGroup>
                     <UnitMeshGroup>
-                        <iRequired>1</iRequired>
+                        <iRequired>0</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_CONTINENTAL_GUARD_MOUNTED_RIFLEMAN</ArtDefineTag>
-                    </UnitMeshGroup>
-                    <UnitMeshGroup>
-                        <iRequired>2</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_CONTINENTAL_GUARD_RIFLEMAN</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
