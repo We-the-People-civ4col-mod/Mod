@@ -516,6 +516,11 @@ public:
 	void changeCityHealth(int iValue);
 	// R&R, ray, Health - END
 
+	// WTP, ray, Health Overhaul - START
+	int getCityHealthChangeFromCentralPlot() const;
+	int getCityHealthChangeFromRessourcesInCityRadius() const;
+	// WTP, ray, Health Overhaul - END
+
 	// WTP, ray, Happiness - START
 	int getCityHappiness() const;
 	void setCityHappiness(int iValue);

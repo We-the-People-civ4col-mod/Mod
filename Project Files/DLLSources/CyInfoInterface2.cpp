@@ -268,6 +268,7 @@ void CyInfoPythonInterface2()
 		.def("getArtDefineTag", &CvBonusInfo::getArtDefineTag, "string ()")
 		// Arrays
 		.def("getYieldChange", &CvBonusInfo::getYieldChange, "int (int i)")
+		.def("getHealthEffectFromRessource", &CvBonusInfo::getHealthEffectFromRessource,  "int ()") // WTP, ray, Health from specific Bonus Ressources
 		.def("isTerrain", &CvBonusInfo::isTerrain, "bool (int i)")
 		.def("isFeature", &CvBonusInfo::isFeature, "bool (int i)")
 		.def("isFeatureTerrain", &CvBonusInfo::isFeatureTerrain, "bool (int i)")

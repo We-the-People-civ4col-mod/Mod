@@ -9267,7 +9267,6 @@ int CvCity::getCityHealth() const
 	return m_iCityHealth;
 }
 
-
 int CvCity::getCityHealthChangeFromPopulation() const
 {
 	int iNegHealthFromPopulation = 0;
@@ -9286,37 +9285,84 @@ int CvCity::getCityHealthChangeFromPopulation() const
 	return iNegHealthFromPopulation;
 }
 
-int CvCity::getCityHealthChange() const
+// WTP, ray, Health Overhaul - START
+int CvCity::getCityHealthChangeFromCentralPlot() const
 {
-	int iNegHealthFromPopulation = 0;
-	int iPosHealthFromHealers = 0;
+	int iCityHealthChangeFromCentralPlot = 0;
 
-	// Negative Influence from Population
-	iNegHealthFromPopulation = getCityHealthChangeFromPopulation();
+	// getting the modifiers
+	int iSweetWaterLocationChange = GC.getSWEET_WATER_CITY_LOCATION_HEALTH_BONUS();
+	int iCoastalLocationChange = GC.getCOASTAL_CITY_LOCATION_HEALTH_BONUS();
+	int iHillLocationChange = GC.getHILL_CITY_LOCATION_HEALTH_BONUS();
+	int iBadLocationChange= GC.getBAD_CITY_LOCATION_HEALTH_MALUS();
 
-	// Positive Influence from Healers
-	iPosHealthFromHealers = calculateNetYield(YIELD_HEALTH);
 
-	// balances existing city health back to 0 if no positive or negative health created
-	if (iPosHealthFromHealers == 0 && iNegHealthFromPopulation == 0)
+	// getting City Center Plot
+	CvPlot* pCityCenterPlot = plot();
+
+	// let us be save, maybe Abandon City may mess around
+	if (pCityCenterPlot != NULL)
 	{
-		int iCurrentCityHealth = getCityHealth();
-		if (iCurrentCityHealth > 0)
+		if (pCityCenterPlot->isSweetWater())
 		{
-			return -1;
+			iCityHealthChangeFromCentralPlot += iSweetWaterLocationChange;
 		}
-		else if (iCurrentCityHealth < 0)
+
+		if (pCityCenterPlot->isCoastalLand())
 		{
-			return 1;
+			iCityHealthChangeFromCentralPlot += iCoastalLocationChange;
 		}
-		else
+
+		if (pCityCenterPlot->isHills())
 		{
-			return 0;
+			iCityHealthChangeFromCentralPlot += iHillLocationChange;
+		}
+
+		if (GC.getTerrainInfo(pCityCenterPlot->getTerrainType()).isBadCityLocation())
+		{
+			iCityHealthChangeFromCentralPlot -= iBadLocationChange;
+		}
+
+	}
+
+	return iCityHealthChangeFromCentralPlot;
+}
+
+int CvCity::getCityHealthChangeFromRessourcesInCityRadius() const
+{
+	int iCityHealthChangeFromRessourcesInCityRadius = 0;
+
+	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
+	{
+		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
+		
+		if(pLoopPlot->getBonusType() != NO_BONUS)
+		{
+			// only if worked
+			if (isUnitWorkingPlot(pLoopPlot))
+			{
+				iCityHealthChangeFromRessourcesInCityRadius += GC.getBonusInfo(pLoopPlot->getBonusType()).getHealthEffectFromRessource();
+			}
 		}
 	}
-	
-	return (iPosHealthFromHealers - iNegHealthFromPopulation);
-	
+
+	return iCityHealthChangeFromRessourcesInCityRadius;
+}
+
+// WTP, ray, Health Overhaul - END
+
+int CvCity::getCityHealthChange() const
+{
+	int iNegHealthFromPopulation = getCityHealthChangeFromPopulation();
+	int iPosHealthFromHealers = calculateNetYield(YIELD_HEALTH);
+
+	// WTP, ray, Health Overhaul - START
+	int iHealthFromCityCenterPlot = getCityHealthChangeFromCentralPlot();
+	int iHealthChangeFromRessources = getCityHealthChangeFromRessourcesInCityRadius();
+
+	int iTotalHealthChange = iPosHealthFromHealers - iNegHealthFromPopulation + iHealthFromCityCenterPlot + iHealthChangeFromRessources;
+	return iTotalHealthChange;
+	// WTP, ray, Health Overhaul - END
 }
 
 void CvCity::setCityHealth(int iValue)

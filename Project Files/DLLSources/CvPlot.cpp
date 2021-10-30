@@ -1217,6 +1217,18 @@ bool CvPlot::isRiver() const
 	return (getRiverCrossingCount() > 0);
 }
 
+// WTP, ray, Health Overhaul - START
+bool CvPlot::isSweetWater() const
+{
+	// no Water Plots themselves
+	if (isWater())
+	{
+		return false;
+	}
+
+	return (isRiver() || hasNearbyPlotWith(TERRAIN_LARGE_RIVERS) || hasNearbyPlotWith(TERRAIN_LAKE) || hasNearbyPlotWith(TERRAIN_ICE_LAKE));
+}
+// WTP, ray, Health Overhaul - END
 
 bool CvPlot::isRiverConnection(DirectionTypes eDirection) const
 {

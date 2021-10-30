@@ -110,7 +110,17 @@ class CvPediaBonus:
 				#screen.appendListBoxString(panelName, u"<font=4>" + szYield.upper() + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 				screen.appendListBoxString(panelName, u"<font=3>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 				## R&R, Robert Surcouf,  Pedia - End
-				
+		
+		## WTP, ray, Health from specific Bonus Ressources if worked
+		iHealthChangeinCityRadius = gc.getBonusInfo(self.iBonus).getHealthEffectFromRessource()
+		if (iHealthChangeinCityRadius > 0):
+			szHealthText = localText.getText("TXT_KEY_HEALTH_FROM_RESSOURCE", (iHealthChangeinCityRadius, gc.getYieldInfo(YieldTypes.YIELD_HEALTH).getChar()))
+			screen.appendListBoxString(panelName, u"<font=3>" + szHealthText + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+			
+		elif (iHealthChangeinCityRadius < 0):
+			szHealthText = localText.getText("TXT_KEY_HEALTH_FROM_RESSOURCE_NEGATIVE", (iHealthChangeinCityRadius, gc.getYieldInfo(YieldTypes.YIELD_HEALTH).getChar()))
+			screen.appendListBoxString(panelName, u"<font=3>" + szHealthText + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		
 	def placeHistory(self):
 
 		screen = self.top.getScreen()

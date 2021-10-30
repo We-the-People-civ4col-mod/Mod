@@ -331,9 +331,10 @@ class CvPortRoyalScreen:
 		
 		screen.setImageButtonAt(self.szTradeTable + "Close", self.szTradeTable, "", 0, 0, self.TRADE_W, self.XResolution, WidgetTypes.WIDGET_GENERAL, self.TRADE_LOG, -1)
 		
-		# Purchase - needed to be moved
+		# Purchase - was moved to other place because of "Ships in Port Condition".
 		#if (gc.getPlayer(gc.getGame().getActivePlayer()).canTradeWithPortRoyal()):
-			#screen.setImageButton("PurchaseButton",  "Art/Interface/Screens/Europe/Great_General_Dollar.dds",  self.XResolution - self.RECRUIT_W - self.STANDARD_MARGIN,  self.RECRUIT_Y, self.RECRUIT_W,self.RECRUIT_H,  WidgetTypes.WIDGET_GENERAL, self.BUY_UNIT_BUTTON_ID, -1)
+			# screen.addUnitGraphicGFC("PurchaseButton", gc.getInfoTypeForString("UNIT_GREAT_GENERAL"), -1, self.XResolution - self.RECRUIT_W - self.STANDARD_MARGIN, self.RECRUIT_Y, self.RECRUIT_W, self.RECRUIT_H, WidgetTypes.WIDGET_GENERAL, self.BUY_UNIT_BUTTON_ID, -1, 0, 0, 1.0, false)
+			# screen.setImageButton("PurchaseButton",  "Art/Interface/Screens/Port_Royal/Great_General_Dollar.dds",  self.XResolution - self.RECRUIT_W - self.STANDARD_MARGIN,  self.RECRUIT_Y, self.RECRUIT_W,self.RECRUIT_H,  WidgetTypes.WIDGET_GENERAL, self.BUY_UNIT_BUTTON_ID, -1)
 		
 		# draw the contents
 		self.drawContents()

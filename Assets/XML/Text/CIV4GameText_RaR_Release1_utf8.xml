@@ -1270,6 +1270,16 @@
         <Spanish>Salud de la ciudad : %d1 %F2_Icon</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_HEALTH_FROM_RESSOURCE</Tag>
+        <English>if worked by citizen: +%d1%F2_Icon</English>
+        <German>falls bewirtschaftet: +%d1%F2_Icon</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_HEALTH_FROM_RESSOURCE_NEGATIVE</Tag>
+        <English>for City if worked on: %d1%F2_Icon</English>
+        <German>in Stadt falls bearbeitet: %d1%F2_Icon</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_HEALTH</Tag>
         <English>[ICON_BULLET]%D1%%%F2[TAB]from City Health</English>
         <French>[ICON_BULLET]%D1%%%F2[TAB]par la santé de la ville</French>
@@ -1284,6 +1294,16 @@
         <German>Bevölkerung %s1 = %d2%F3</German>
         <Italian>Popolazione %s1 = %d2%F3</Italian>
         <Spanish>Población %s1 = %d2%F3</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_HEALTH_CITY_PLOT_CHANGE</Tag>
+        <English>%s1 City Location = %d2%F3</English>
+        <German>%s1 durch Standort = %d2%F3</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_HEALTH_RESSOURCE_CHANGE</Tag>
+        <English>%s1 by Resources = %d2%F3</English>
+        <German>%s1 durch Resourcen = %d2%F3</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HEALTH_TOTAL_CHANGE</Tag>

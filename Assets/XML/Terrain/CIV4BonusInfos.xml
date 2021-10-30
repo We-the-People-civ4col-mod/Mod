@@ -19,6 +19,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -156,6 +157,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -293,6 +295,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -427,9 +430,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -566,6 +570,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -682,6 +687,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -798,6 +804,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -935,6 +942,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -1056,6 +1064,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -1174,9 +1183,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -1298,6 +1308,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>6</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -1414,6 +1425,7 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -1522,6 +1534,7 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -1651,9 +1664,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -1767,6 +1781,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -1877,9 +1892,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -1992,6 +2008,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -2110,9 +2127,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -2218,9 +2236,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -2326,9 +2345,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -2434,9 +2454,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -2542,9 +2563,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -2642,9 +2664,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -2750,9 +2773,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -2866,9 +2890,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -2987,9 +3012,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -3108,9 +3134,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -3228,9 +3255,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -3356,9 +3384,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -3484,9 +3513,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -3600,9 +3630,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -3731,6 +3762,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>30</iConstAppearance>
@@ -3849,6 +3881,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -3959,9 +3992,10 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>3</iValue>
+                    <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -4071,6 +4105,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -4184,6 +4219,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>5</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -4313,6 +4349,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>5</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -4399,6 +4436,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>5</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -4493,6 +4531,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>5</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -4595,6 +4634,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>5</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -4689,6 +4729,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>5</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -4783,6 +4824,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>5</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -4892,6 +4934,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>5</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -5001,6 +5044,7 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>5</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -5061,6 +5105,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -5174,6 +5219,7 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -5337,6 +5383,7 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -5452,6 +5499,7 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -5555,6 +5603,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -5799,6 +5848,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -5850,6 +5900,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -6094,6 +6145,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -6222,6 +6274,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>15</iConstAppearance>
@@ -6355,6 +6408,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>2</iPlacementOrder>
             <iConstAppearance>15</iConstAppearance>
@@ -6488,6 +6542,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>2</iPlacementOrder>
             <iConstAppearance>15</iConstAppearance>
@@ -6609,6 +6664,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>2</iPlacementOrder>
             <iConstAppearance>15</iConstAppearance>
@@ -6750,6 +6806,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>2</iPlacementOrder>
             <iConstAppearance>15</iConstAppearance>
@@ -6899,6 +6956,7 @@
                     <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>3</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -7035,6 +7093,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>3</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -7206,6 +7265,7 @@
                     <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>3</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -7331,6 +7391,7 @@
                     <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>3</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -7456,6 +7517,7 @@
                     <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>3</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -7581,6 +7643,7 @@
                     <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>3</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -7706,6 +7769,7 @@
                     <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>3</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -7831,6 +7895,7 @@
                     <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>3</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -7940,6 +8005,7 @@
                     <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>3</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -8053,6 +8119,7 @@
                     <iValue>-4</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>3</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -8178,6 +8245,7 @@
                     <iValue>-5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>3</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -8315,6 +8383,7 @@
                     <iValue>-5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>3</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -8463,6 +8532,7 @@
                     <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -8522,6 +8592,7 @@
                     <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>3</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -8581,6 +8652,7 @@
                     <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>3</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -8641,6 +8713,7 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -8772,6 +8845,7 @@
                     <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -8913,6 +8987,7 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -9044,6 +9119,7 @@
                     <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -9128,6 +9204,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -9252,6 +9329,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -9376,6 +9454,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -9512,6 +9591,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -9632,6 +9712,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -9744,6 +9825,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -9869,6 +9951,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -9994,6 +10077,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -10122,6 +10206,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -10226,6 +10311,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -10343,6 +10429,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -10468,6 +10555,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>6</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -10711,6 +10799,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>6</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -10955,6 +11044,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>6</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -11199,6 +11289,7 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>6</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -11311,6 +11402,7 @@
                     <iValue>1</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>6</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
@@ -11555,6 +11647,7 @@
                     <iValue>20</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>6</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -11608,6 +11701,7 @@
                     <iValue>20</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>6</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -11661,6 +11755,7 @@
                     <iValue>4</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>6</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -11734,6 +11829,7 @@
                     <iValue>4</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>6</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -11807,6 +11903,7 @@
                     <iValue>4</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>6</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
@@ -11880,6 +11977,7 @@
                     <iValue>4</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
             <iPlacementOrder>6</iPlacementOrder>
             <iConstAppearance>30</iConstAppearance>

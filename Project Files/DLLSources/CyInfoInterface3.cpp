@@ -62,6 +62,8 @@ void CyInfoPythonInterface3()
 		.def("isImpassable", &CvTerrainInfo::isImpassable, "bool ()")
 		.def("isFound", &CvTerrainInfo::isFound, "bool ()")
 		.def("isFoundCoast", &CvTerrainInfo::isFoundCoast, "bool ()")
+		.def("isBadCityLocation", &CvTerrainInfo::isBadCityLocation, "bool ()") // WTP, ray, Health Overhaul
+
 		// Arrays
 		.def("getYield", &CvTerrainInfo::getYield, "int (int i)")
 		.def("getRiverYieldIncrease", &CvTerrainInfo::getRiverYieldIncrease, "int (int i)")

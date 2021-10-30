@@ -833,6 +833,13 @@ public:
 	int getLOWEST_CITY_HEALTH();
 	// R&R, ray, Health - END
 
+	// WTP, ray, Health Overhaul - START
+	int getSWEET_WATER_CITY_LOCATION_HEALTH_BONUS();
+	int getCOASTAL_CITY_LOCATION_HEALTH_BONUS();
+	int getHILL_CITY_LOCATION_HEALTH_BONUS();
+	int getBAD_CITY_LOCATION_HEALTH_MALUS();
+	// WTP, ray, Health Overhaul - END
+
 	// WTP, ray, Happiness - START
 	int getMIN_POP_NEG_HAPPINESS();
 	int getPOP_DIVISOR_HAPPINESS();
@@ -1378,6 +1385,13 @@ protected:
 	int m_MAX_CITY_HEALTH;
 	int m_LOWEST_CITY_HEALTH;
 	// R&R, ray, Health - END
+
+	// WTP, ray, Health Overhaul - START
+	int m_SWEET_WATER_CITY_LOCATION_HEALTH_BONUS;
+	int m_COASTAL_CITY_LOCATION_HEALTH_BONUS;
+	int m_HILL_CITY_LOCATION_HEALTH_BONUS;
+	int m_BAD_CITY_LOCATION_HEALTH_MALUS;
+	// WTP, ray, Health Overhaul - END
 
 	YieldTypeArray m_acUnitYieldDemandTypes;
 
@@ -2318,6 +2332,30 @@ inline int CvGlobals::getLOWEST_CITY_HEALTH()
 	return m_LOWEST_CITY_HEALTH;
 }
 // R&R, ray, Health - END
+
+
+// WTP, ray, Health Overhaul - START
+inline int CvGlobals::getSWEET_WATER_CITY_LOCATION_HEALTH_BONUS()
+{
+	return m_SWEET_WATER_CITY_LOCATION_HEALTH_BONUS;
+}
+
+inline int CvGlobals::getCOASTAL_CITY_LOCATION_HEALTH_BONUS()
+{
+	return m_COASTAL_CITY_LOCATION_HEALTH_BONUS;
+}
+
+inline int CvGlobals::getHILL_CITY_LOCATION_HEALTH_BONUS()
+{
+	return m_HILL_CITY_LOCATION_HEALTH_BONUS;
+}
+
+inline int CvGlobals::getBAD_CITY_LOCATION_HEALTH_MALUS()
+{
+	return m_BAD_CITY_LOCATION_HEALTH_MALUS;
+}
+// WTP, ray, Health Overhaul - END
+
 
 // WTP, ray, Happiness - START
 inline int CvGlobals::getMIN_POP_NEG_HAPPINESS()

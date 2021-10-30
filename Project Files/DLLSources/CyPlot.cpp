@@ -66,6 +66,12 @@ bool CyPlot::isRiver()
 {
 	return m_pPlot ? m_pPlot->isRiver() : false;
 }
+// WTP, ray, Health Overhaul - STAR
+bool CyPlot::isSweetWater()
+{
+	return m_pPlot ? m_pPlot->isSweetWater() : false;
+}
+// WTP, ray, Health Overhaul - END
 bool CyPlot::isRiverConnection(int /*DirectionTypes*/ eDirection)
 {
 	return m_pPlot ? m_pPlot->isRiverConnection((DirectionTypes) eDirection) : false;

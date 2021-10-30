@@ -2448,6 +2448,7 @@ public:
 	virtual ~CvBonusInfo();
 	DllExport int getChar() const;
 	DllExport void setChar(int i);
+	int getHealthEffectFromRessource() const; // WTP, ray, Health from specific Bonus Ressources
 	int getAIObjective() const;
 	int getMinAreaSize() const;
 	int getMinLatitude() const;
@@ -2507,6 +2508,7 @@ public:
 	//---------------------------------------PUBLIC MEMBER VARIABLES---------------------------------
 protected:
 	int m_iChar;
+	int m_iHealthEffectFromRessource; // WTP, ray, Health from specific Bonus Ressources
 	int m_iAIObjective;
 	int m_iMinAreaSize;
 	int m_iMinLatitude;
@@ -2821,6 +2823,7 @@ public:
 	bool isImpassable() const;
 	bool isFound() const;
 	bool isFoundCoast() const;
+	bool isBadCityLocation() const; // WTP, ray, Health Overhaul
 
 	DllExport const char* getArtDefineTag() const;
 	void setArtDefineTag(const char* szTag);
@@ -2849,6 +2852,7 @@ protected:
 	bool m_bImpassable;
 	bool m_bFound;
 	bool m_bFoundCoast;
+	bool m_bBadCityLocation; // WTP, ray, Health Overhaul
 	int m_iWorldSoundscapeScriptId;
 	// Arrays
 	int* m_aiYields;

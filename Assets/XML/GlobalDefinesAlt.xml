@@ -1031,7 +1031,7 @@
 	</Define>
 	<Define>
 		<DefineName>MIN_POP_NEG_HEALTH</DefineName>
-		<iDefineIntVal>12</iDefineIntVal>
+		<iDefineIntVal>3</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>POP_DIVISOR_NEG_HEALTH</DefineName>
@@ -1044,6 +1044,22 @@
 	<Define>
 		<DefineName>LOWEST_CITY_HEALTH</DefineName>
 		<iDefineIntVal>-25</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>SWEET_WATER_CITY_LOCATION_HEALTH_BONUS</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>COASTAL_CITY_LOCATION_HEALTH_BONUS</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>HILL_CITY_LOCATION_HEALTH_BONUS</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BAD_CITY_LOCATION_HEALTH_MALUS</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_VETERAN</DefineName>

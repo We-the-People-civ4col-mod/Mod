@@ -8716,6 +8716,7 @@ bool CvImprovementInfo::readPass2(CvXMLLoadUtility* pXML)
 //------------------------------------------------------------------------------------------------------
 CvBonusInfo::CvBonusInfo() :
 m_iChar(0),
+m_iHealthEffectFromRessource(0), // WTP, ray, Health Overhaul
 m_iAIObjective(0),
 m_iMinAreaSize(0),
 m_iMinLatitude(0),
@@ -8776,6 +8777,12 @@ void CvBonusInfo::setChar(int i)
 {
 	m_iChar = i;
 }
+// WTP, ray, Health Overhaul - START
+int CvBonusInfo::getHealthEffectFromRessource() const
+{
+	return m_iHealthEffectFromRessource;
+}
+// WTP, ray, Health Overhaul - END
 int CvBonusInfo::getAIObjective() const
 {
 	return m_iAIObjective;
@@ -8918,7 +8925,7 @@ void CvBonusInfo::setArtDefineTag(const char* szVal)
 {
 	m_szArtDefineTag = szVal;
 }
-//TAC Whaling, ray
+
 int CvBonusInfo::getNumYieldChanges() const
 {
 	int iNumYieldChanges = 0;
@@ -8947,7 +8954,6 @@ std::vector<int> CvBonusInfo::getYieldChangesArray()
 
 	return aiYields;
 }
-//EndTAC Whaling, ray
 
 // Arrays
 int CvBonusInfo::getYieldChange(int i) const
@@ -9007,6 +9013,7 @@ void CvBonusInfo::read(FDataStreamBase* stream)
 	uint uiFlag=0;
 	stream->Read(&uiFlag);		// flag for expansion
 	stream->Read(&m_iChar);
+	stream->Read(&m_iHealthEffectFromRessource);	// WTP, ray, Health Overhaul
 	stream->Read(&m_iAIObjective);
 	stream->Read(&m_iMinAreaSize);
 	stream->Read(&m_iMinLatitude);
@@ -9061,6 +9068,7 @@ void CvBonusInfo::write(FDataStreamBase* stream)
 	uint uiFlag=0;
 	stream->Write(uiFlag);		// flag for expansion
 	stream->Write(m_iChar);
+	stream->Write(m_iHealthEffectFromRessource);	// WTP, ray, Health Overhaul
 	stream->Write(m_iAIObjective);
 	stream->Write(m_iMinAreaSize);
 	stream->Write(m_iMinLatitude);
@@ -9111,6 +9119,7 @@ bool CvBonusInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName( szTextVal, "BuildingType");
 	m_iBuilding = GC.getInfoTypeForString(szTextVal);
 	pXML->SetVariableListTagPair(&m_aiYieldChange, "YieldChanges", NUM_YIELD_TYPES, 0);
+	pXML->GetChildXmlValByName(&m_iHealthEffectFromRessource, "iHealthEffectFromRessource");	// WTP, ray, Health Overhaul
 	pXML->GetChildXmlValByName(&m_iAIObjective, "iAIObjective");
 	pXML->GetChildXmlValByName(&m_iMinAreaSize, "iMinAreaSize");
 	pXML->GetChildXmlValByName(&m_iMinLatitude, "iMinLatitude");
@@ -9826,6 +9835,7 @@ m_bWater(false),
 m_bImpassable(false),
 m_bFound(false),
 m_bFoundCoast(false),
+m_bBadCityLocation(false),// WTP, ray, Health Overhaul
 m_iWorldSoundscapeScriptId(0),
 m_aiYields(NULL),
 m_aiRiverYieldIncrease(NULL),
@@ -9881,6 +9891,14 @@ bool CvTerrainInfo::isFoundCoast() const
 {
 	return m_bFoundCoast;
 }
+
+// WTP, ray, Health Overhaul - START
+bool CvTerrainInfo::isBadCityLocation() const
+{
+	return m_bBadCityLocation;
+}
+// WTP, ray, Health Overhaul - END
+
 const char* CvTerrainInfo::getArtDefineTag() const
 {
 	return m_szArtDefineTag;
@@ -9928,6 +9946,7 @@ bool CvTerrainInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bImpassable, "bImpassable");
 	pXML->GetChildXmlValByName(&m_bFound, "bFound");
 	pXML->GetChildXmlValByName(&m_bFoundCoast, "bFoundCoast");
+	pXML->GetChildXmlValByName(&m_bBadCityLocation, "bBadCityLocation"); // WTP, ray, Health Overhaul
 	pXML->GetChildXmlValByName(&m_iMovementCost, "iMovement");
 	pXML->GetChildXmlValByName(&m_iSeeFromLevel, "iSeeFrom");
 	pXML->GetChildXmlValByName(&m_iSeeThroughLevel, "iSeeThrough");

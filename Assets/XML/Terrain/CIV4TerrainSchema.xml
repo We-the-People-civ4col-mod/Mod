@@ -25,6 +25,7 @@
 	<ElementType name="bImpassable" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bFound" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bFoundCoast" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bBadCityLocation" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iMovement" content="textOnly" dt:type="int"/>
 	<ElementType name="iSeeFrom" content="textOnly" dt:type="int"/>
 	<ElementType name="iSeeThrough" content="textOnly" dt:type="int"/>
@@ -54,6 +55,7 @@
 		<element type="bImpassable"/>
 		<element type="bFound"/>
 		<element type="bFoundCoast"/>
+		<element type="bBadCityLocation"/>
 		<element type="iMovement"/>
 		<element type="iSeeFrom"/>
 		<element type="iSeeThrough"/>
@@ -246,6 +248,7 @@
 	<ElementType name="BonusName" content="textOnly"/>
 	<ElementType name="BuildingType" content="textOnly"/>
 	<ElementType name="TerrainType" content="textOnly"/>
+	<ElementType name="iHealthEffectFromRessource" content="textOnly" dt:type="int"/>
 	<ElementType name="iAIObjective" content="textOnly" dt:type="int"/>
 	<ElementType name="iPlacementOrder" content="textOnly" dt:type="int"/>
 	<ElementType name="iConstAppearance" content="textOnly" dt:type="int"/>
@@ -305,6 +308,7 @@
 		<element type="ArtDefineTag"/>
 		<element type="BuildingType"/>
 		<element type="YieldChanges"/>
+		<element type="iHealthEffectFromRessource"/>
 		<element type="iAIObjective"/>
 		<element type="iPlacementOrder"/>
 		<element type="iConstAppearance"/>

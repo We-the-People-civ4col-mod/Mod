@@ -2772,6 +2772,21 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			szString.append(gDLL->getText("TXT_KEY_PLOT_IMPASSABLE"));
 		}
 
+		// WTP, ray, Health Overhaul - START
+		if (GC.getTerrainInfo(pPlot->getTerrainType()).isBadCityLocation())
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_TERRAIN_BAD_CITY_LOCATION"));
+		}
+
+		if (pPlot->isSweetWater())
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_PLOT_SWEETWATER"));
+		}
+
+		// WTP, ray, Health Overhaul - END
+
 		if (pPlot->getEurope() != NO_EUROPE)
 		{
 			szString.append(NEWLINE);
@@ -2784,6 +2799,23 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			szTempBuffer.Format(L"%c " SETCOLR L"%s" ENDCOLR, GC.getBonusInfo(eBonus).getChar(), TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), GC.getBonusInfo(eBonus).getDescription());
 			szString.append(NEWLINE);
 			szString.append(szTempBuffer);
+
+			// WTP, ray, Health from specific Bonus Ressources - START
+			int iHealthBonus = GC.getBonusInfo(eBonus).getHealthEffectFromRessource();
+			if (iHealthBonus != 0)
+			{
+				szString.append(NEWLINE);
+				if (iHealthBonus > 0)
+				{
+					szString.append(gDLL->getText("TXT_KEY_HEALTH_FROM_RESSOURCE", iHealthBonus, GC.getYieldInfo(YIELD_HEALTH).getChar()));
+				}
+				else
+				{
+					szString.append(gDLL->getText("TXT_KEY_HEALTH_FROM_RESSOURCE_NEGATIVE", iHealthBonus, GC.getYieldInfo(YIELD_HEALTH).getChar()));
+				}
+			}
+			// WTP, ray, Health from specific Bonus Ressources - END
+
 		}
 
 		eImprovement = pPlot->getRevealedImprovementType(GC.getGameINLINE().getActiveTeam(), true);
@@ -2944,6 +2976,23 @@ void CvGameTextMgr::setCityPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 		szTempBuffer.Format(L"%c " SETCOLR L"%s" ENDCOLR, GC.getBonusInfo(eBonus).getChar(), TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), GC.getBonusInfo(eBonus).getDescription());
 		szString.append(NEWLINE);
 		szString.append(szTempBuffer);
+
+		// WTP, ray, Health from specific Bonus Ressources - START
+		int iHealthBonus = GC.getBonusInfo(eBonus).getHealthEffectFromRessource();
+		if (iHealthBonus != 0)
+		{
+			szString.append(NEWLINE);
+			if (iHealthBonus > 0)
+			{
+				szString.append(gDLL->getText("TXT_KEY_HEALTH_FROM_RESSOURCE", iHealthBonus, GC.getYieldInfo(YIELD_HEALTH).getChar()));
+			}
+			else
+			{
+				szString.append(gDLL->getText("TXT_KEY_HEALTH_FROM_RESSOURCE_NEGATIVE", iHealthBonus, GC.getYieldInfo(YIELD_HEALTH).getChar()));
+			}
+		}
+		// WTP, ray, Health from specific Bonus Ressources - END
+
 	}
 	eImprovement = pPlot->getRevealedImprovementType(GC.getGameINLINE().getActiveTeam(), true);
 	if (eImprovement != NO_IMPROVEMENT)
@@ -6572,6 +6621,7 @@ void CvGameTextMgr::setBonusHelp(CvWStringBuffer &szBuffer, BonusTypes eBonus, b
 		szBuffer.append(CvWString::format( SETCOLR L"%s" ENDCOLR , TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), GC.getBonusInfo(eBonus).getDescription()));
 		setYieldChangeHelp(szBuffer, L"", L"", L"", GC.getBonusInfo(eBonus).getYieldChangeArray());
 	}
+
 	ImprovementTypes eImprovement = NO_IMPROVEMENT;
 	for (int iLoopImprovement = 0; iLoopImprovement < GC.getNumImprovementInfos(); iLoopImprovement++)
 	{
@@ -6598,7 +6648,24 @@ void CvGameTextMgr::setBonusHelp(CvWStringBuffer &szBuffer, BonusTypes eBonus, b
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(GC.getBonusInfo(eBonus).getHelp());
+
+		// WTP, ray, Health from specific Bonus Ressources - START
+		int iHealthBonus = GC.getBonusInfo(eBonus).getHealthEffectFromRessource();
+		if (iHealthBonus != 0)
+		{
+			szBuffer.append(NEWLINE);
+			if (iHealthBonus > 0)
+			{
+				szBuffer.append(gDLL->getText("TXT_KEY_HEALTH_FROM_RESSOURCE", iHealthBonus, GC.getYieldInfo(YIELD_HEALTH).getChar()));
+			}
+			else
+			{
+				szBuffer.append(gDLL->getText("TXT_KEY_HEALTH_FROM_RESSOURCE_NEGATIVE", iHealthBonus, GC.getYieldInfo(YIELD_HEALTH).getChar()));
+			}
+		}
+		// WTP, ray, Health from specific Bonus Ressources - END
 	}
+
 }
 
 void CvGameTextMgr::setPromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes ePromotion, bool bCivilopediaText)
@@ -7351,6 +7418,13 @@ void CvGameTextMgr::setTerrainHelp(CvWStringBuffer &szBuffer, TerrainTypes eTerr
 			szBuffer.append(gDLL->getText("TXT_KEY_OR"));
 		}
 	}
+	// WTP, ray, Health Overhaul - START
+	if (terrain.isBadCityLocation())
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_TERRAIN_BAD_CITY_LOCATION"));
+	}
+	// WTP, ray, Health Overhaul - END
 }
 
 void CvGameTextMgr::setYieldsHelp(CvWStringBuffer &szBuffer, YieldTypes eYield, bool bCivilopediaText)
@@ -7967,6 +8041,20 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 	// R&R, ray, Health - START
 	if (eYieldType == YIELD_HEALTH)
 	{
+		// WTP, ray, Health Overhaul - START
+		int iCityHealthChangeFromCentralPlot = city.getCityHealthChangeFromCentralPlot();
+		szBuffer.append(gDLL->getText("TXT_KEY_YIELD_HEALTH_CITY_PLOT_CHANGE", info.getTextKeyWide(), iCityHealthChangeFromCentralPlot, info.getChar()));
+
+		szBuffer.append(SEPARATOR);
+		szBuffer.append(NEWLINE);
+
+		int iCityHealthChangeFromRessourcesInCityRadius = city.getCityHealthChangeFromRessourcesInCityRadius();
+		szBuffer.append(gDLL->getText("TXT_KEY_YIELD_HEALTH_RESSOURCE_CHANGE", info.getTextKeyWide(), iCityHealthChangeFromRessourcesInCityRadius, info.getChar()));
+
+		szBuffer.append(SEPARATOR);
+		szBuffer.append(NEWLINE);
+		// WTP, ray, Health Overhaul - END
+
 		int iCityHealthChangeFromPopulation = -city.getCityHealthChangeFromPopulation();
 		szBuffer.append(gDLL->getText("TXT_KEY_YIELD_HEALTH_POP_CHANGE", info.getTextKeyWide(), iCityHealthChangeFromPopulation, info.getChar()));
 

@@ -91,6 +91,7 @@
             <bImpassable>0</bImpassable>
             <bFound>1</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>0</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>1</iSeeFrom>
             <iSeeThrough>1</iSeeThrough>
@@ -263,6 +264,7 @@
             <bImpassable>0</bImpassable>
             <bFound>1</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>0</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>1</iSeeFrom>
             <iSeeThrough>1</iSeeThrough>
@@ -411,6 +413,7 @@
             <bImpassable>0</bImpassable>
             <bFound>1</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>1</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>1</iSeeFrom>
             <iSeeThrough>1</iSeeThrough>
@@ -563,11 +566,12 @@
             <bImpassable>0</bImpassable>
             <bFound>1</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>1</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>1</iSeeFrom>
             <iSeeThrough>1</iSeeThrough>
             <iBuildModifier>25</iBuildModifier>
-            <iDefense>0</iDefense>
+            <iDefense>10</iDefense>
             <Button>Art/Interface\Buttons\Terrain_Wetland.dds</Button>
             <FootstepSounds>
                 <FootstepSound>
@@ -735,6 +739,7 @@
             <bImpassable>0</bImpassable>
             <bFound>1</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>0</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>1</iSeeFrom>
             <iSeeThrough>1</iSeeThrough>
@@ -883,6 +888,7 @@
             <bImpassable>0</bImpassable>
             <bFound>1</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>1</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>1</iSeeFrom>
             <iSeeThrough>1</iSeeThrough>
@@ -1055,6 +1061,7 @@
             <bImpassable>0</bImpassable>
             <bFound>1</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>0</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>1</iSeeFrom>
             <iSeeThrough>1</iSeeThrough>
@@ -1227,6 +1234,7 @@
             <bImpassable>0</bImpassable>
             <bFound>1</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>0</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>1</iSeeFrom>
             <iSeeThrough>1</iSeeThrough>
@@ -1383,6 +1391,7 @@
             <bImpassable>0</bImpassable>
             <bFound>1</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>1</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>1</iSeeFrom>
             <iSeeThrough>1</iSeeThrough>
@@ -1531,6 +1540,7 @@
             <bImpassable>0</bImpassable>
             <bFound>1</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>0</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>1</iSeeFrom>
             <iSeeThrough>1</iSeeThrough>
@@ -1687,6 +1697,7 @@
             <bImpassable>0</bImpassable>
             <bFound>1</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>0</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>1</iSeeFrom>
             <iSeeThrough>1</iSeeThrough>
@@ -1831,6 +1842,7 @@
             <bImpassable>0</bImpassable>
             <bFound>1</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>1</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>1</iSeeFrom>
             <iSeeThrough>1</iSeeThrough>
@@ -1934,6 +1946,7 @@
             <bImpassable>0</bImpassable>
             <bFound>0</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>0</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>0</iSeeFrom>
             <iSeeThrough>0</iSeeThrough>
@@ -2037,6 +2050,7 @@
             <bImpassable>0</bImpassable>
             <bFound>0</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>0</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>0</iSeeFrom>
             <iSeeThrough>0</iSeeThrough>
@@ -2140,6 +2154,7 @@
             <bImpassable>0</bImpassable>
             <bFound>0</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>0</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>0</iSeeFrom>
             <iSeeThrough>0</iSeeThrough>
@@ -2243,6 +2258,7 @@
             <bImpassable>0</bImpassable>
             <bFound>0</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>0</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>0</iSeeFrom>
             <iSeeThrough>0</iSeeThrough>
@@ -2346,6 +2362,7 @@
             <bImpassable>0</bImpassable>
             <bFound>0</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>0</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>0</iSeeFrom>
             <iSeeThrough>0</iSeeThrough>
@@ -2453,6 +2470,7 @@
             <bImpassable>0</bImpassable>
             <bFound>0</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>0</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>0</iSeeFrom>
             <iSeeThrough>0</iSeeThrough>
@@ -2551,6 +2569,7 @@
             <bImpassable>0</bImpassable>
             <bFound>0</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>0</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>0</iSeeFrom>
             <iSeeThrough>0</iSeeThrough>
@@ -2648,6 +2667,7 @@
             <bImpassable>0</bImpassable>
             <bFound>0</bFound>
             <bFoundCoast>0</bFoundCoast>
+            <bBadCityLocation>0</bBadCityLocation>
             <iMovement>1</iMovement>
             <iSeeFrom>0</iSeeFrom>
             <iSeeThrough>0</iSeeThrough>

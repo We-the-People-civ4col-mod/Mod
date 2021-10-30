@@ -1945,6 +1945,16 @@
         <Spanish>[ICON_BULLET]Aquí no se pueden construir asentamientos[SPACE]</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TERRAIN_BAD_CITY_LOCATION</Tag>
+        <English>[ICON_BULLET]Unhealthy terrain to found settlements[SPACE]</English>
+        <German>[ICON_BULLET]Ungesundes Terrain für Stadgründungen[SPACE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PLOT_SWEETWATER</Tag>
+        <English>[ICON_BULLET]Plot with direct sweet water access[SPACE]</English>
+        <German>[ICON_BULLET]Gebiet mit direktem Süßwasserzugang[SPACE]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_MISC_HELP_PROD_TRAIT</Tag>
         <English>[ICON_BULLET]%D1%%%F4_Icon[TAB][TAB]for %s2_unit_or_building ([COLOR_HIGHLIGHT_TEXT]%s3_trait[COLOR_REVERT])</English>
         <French>[ICON_BULLET]%D1%%%F4_Icon[TAB][TAB]pour : %s2_unit_or_building ([COLOR_HIGHLIGHT_TEXT]%s3_trait[COLOR_REVERT])</French>
