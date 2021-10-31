@@ -1259,13 +1259,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BUCCANNEER_PEDIA</Tag>
-        <English>TODO</English>
-        <German>TODO</German>
+        <English>Buccaneers were a kind of privateers or free sailors peculiar to the Caribbean Sea during the 17th and 18th centuries. First established on northern Hispaniola as early as 1625, their heyday was from the Restoration in 1660 until about 1688, during a time when governments were not strong enough and did not consistently attempt to suppress them. Originally the name applied to the landless hunters of wild boars and cattle in the largely uninhabited areas of Tortuga and Hispaniola. The meat they caught was smoked over a slow fire in little huts the French called boucanes to make viande boucanée – jerked meat or jerky – which they sold to the corsairs who preyed on the (largely Spanish) shipping and settlements of the Caribbean. Eventually the term was applied to the corsairs and (later) privateers themselves, also known as the Brethren of the Coast. Though corsairs, also known as filibusters or freebooters, were largely lawless, privateers were nominally licensed by the authorities – first the French, later the English and Dutch – to prey on the Spanish, until their depredations became so severe they were suppressed.</English>
+        <German>Die Bukaniere waren Siedler, zumeist französischer Herkunft, die am Anfang des 17. Jahrhunderts auf Hispaniola und umgebenden Inseln der Jagd auf verwilderte Rinder und Schweine nachgingen. Nach der fast totalen Ausrottung der ursprünglichen Bevölkerung in kurzer Zeit (bekannt geworden durch Bartolomé de Las Casas) und der Aufgabe dieser Gebiete durch die spanischen Großgrundbesitzer, waren große Herden dieser verwilderten Haustiere entstanden. Als Freibeuter in englischen Diensten attackierten sie den spanischen, französischen und niederländischen Schiffsverkehr zwischen den karibischen Inseln während des späten 17. Jahrhunderts. Ursprünglich waren Bukanierschiffsmannschaften größer, besser geeignet für Angriffe auf Küstenstädte und beschränkten sich darauf, die Karibik unsicher zu machen. Der Ausdruck "Bukanier" verallgemeinerte sich dadurch zu einem Synonym für Freibeuter und schließlich überhaupt für Piraten. Sie selbst bezeichneten sich als Brüder der Küste.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BUCCANNEER_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Buccanneers[COLOR_REVERT] are </English>
-        <German>[COLOR_UNIT_TEXT]Bukaniere[COLOR_REVERT] sind </German>
+        <English>[COLOR_UNIT_TEXT]Buccanneers[COLOR_REVERT] are Units with hidden nationality and thus can attack other Nations even without declaration of war. They are otherwise weak fighters though. They can only be acquired by recruiting them in Port Royal and occasionally by rare events.</English>
+        <German>[COLOR_UNIT_TEXT]Bukaniere[COLOR_REVERT] sind Einheiten mit verborgener Nationalität und können daher andere Nationen auch ohne Kriegserklärung angreifen. Ansonsten sind sie relativ schwache Kämpfer. Sie können lediglich durch Rekrutierung in Port Royal oder durch seltene Ereignisse erworben werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SLAVE_HUNTER</Tag>
@@ -1282,13 +1282,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SLAVE_HUNTER_PEDIA</Tag>
-        <English>TODO</English>
-        <German>TODO</German>
+        <English>The Atlantic slave trade, transatlantic slave trade, or Euro-American slave trade involved the transportation by slave traders of various enslaved African people, mainly to the Americas. The slave trade regularly used the triangular trade route and its Middle Passage, and existed from the 16th to the 19th centuries. The majority of those who were enslaved and transported in the transatlantic slave trade were people from Central and West Africa that had been sold by other West Africans to Western European slave traders, while others had been captured directly by the slave traders in coastal raids. Europeans gathered and imprisoned the enslaved at forts on the African coast and then brought them to the Americas. Except for the Portuguese, European slave traders generally did not participate in the raids because life expectancy for Europeans in sub-Saharan Africa was less than one year during the period of the slave trade (which was prior to the widespread availability of quinine as a treatment for malaria). The South Atlantic and Caribbean economies were particularly dependent on labour for the production of sugarcane and other commodities. This was viewed as crucial by those Western European states which, in the late 17th and 18th centuries, were vying with one another to create overseas empires.</English>
+        <German>Zuweilen gingen die Europäer selbst auf Sklavenjagd. Die meisten Sklaven wurden aber von lokalen Herrschern und Händlern an der afrikanischen Küste verkauft. Da Krieg die wichtigste Quelle für Gefangene war, die sich als Sklaven an die Europäer verkaufen ließen, führte der Sklavenhandel auch zu mehr Konflikten in Afrika. Teilweise wurden Kriege gezielt geschürt, um mehr Sklaven zu bekommen. Nach der Überfahrt mit eigens umgerüsteten Sklavenschiffen kamen jene Sklaven, welche diese "Middle Passage" des oben angesprochenen Dreieckshandels überlebt hatten, in die Plantagen und Bergwerke Amerikas, vor allem Westindiens. Die niederländische Insel Curaçao vor der Küste von Venezuela wurde zum bedeutendsten Sklavenmarkt der Welt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SLAVE_HUNTER_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Slave Hunters[COLOR_REVERT] are </English>
-        <German>[COLOR_UNIT_TEXT]Sklavenjäger[COLOR_REVERT] sind </German>
+        <English>[COLOR_UNIT_TEXT]Slave Hunters[COLOR_REVERT] are skilled in fighting and capturing runaway slaves as well as armed revolting slaves. You can only acquire them by recruitment in Africa or by rare Events.</English>
+        <German>[COLOR_UNIT_TEXT]Sklavenjäger[COLOR_REVERT] sind darauf spezialisiert flüchtende Sklaven wieder einzufangen oder Sklavenrevolten niederzuschlagen. Sie können lediglich in Afrika rekrutiert werden oder durch seltene Ereignisse erhalten werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONTINENTAL_GUARD</Tag>
