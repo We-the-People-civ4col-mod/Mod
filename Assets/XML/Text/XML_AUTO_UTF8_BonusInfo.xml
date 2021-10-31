@@ -1750,9 +1750,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_AVOCADO</Tag>
-        <English>Avocado Tree</English>
+        <English>Avocado Trees</English>
         <German>
-            <Text>Avocado Baum</Text>
+            <Text>Avocado Bäume</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
