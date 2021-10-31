@@ -221,7 +221,7 @@
             <fInterfaceScale>2.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/guinea_pig/guineapig.nif</NIF>
             <KFM/>
-            <Button>Art\interface\buttons\guinea_pig.dds</Button>
+            <Button>Art/interface/buttons/Guinea_Pig.dds</Button>
             <FontButtonIndex>58</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -320,7 +320,7 @@
             <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/terrain/resources/Goat/Goat_FX.nif</NIF>
             <KFM>Art/Terrain/Resources/Horse/Horse.kfm</KFM>
-            <Button>Art/Interface/Buttons/Goat_Button.dds</Button>
+            <Button>Art/Interface/Buttons/Goat.dds</Button>
             <FontButtonIndex>89</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -804,7 +804,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Chickens/Chickens_FX.nif</NIF>
             <KFM>Art/Terrain/Resources/sheep_CIV4/sheep.kfm</KFM>
-            <Button>Art/interface/buttons/Chicken_Button.dds</Button>
+            <Button>Art/interface/buttons/Chicken.dds</Button>
             <FontButtonIndex>16</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
