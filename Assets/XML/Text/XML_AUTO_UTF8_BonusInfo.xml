@@ -389,16 +389,16 @@
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dickhornschaf[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BONUS_IBEX</Tag>
-        <English>Ibex</English>
+        <Tag>TXT_KEY_BONUS_GOAT</Tag>
+        <English>Goat</English>
         <German>
-            <Text>Steinbock</Text>
+            <Text>Ziege</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BONUS_IBEX_PEDIA</Tag>
+        <Tag>TXT_KEY_BONUS_GOAT_PEDIA</Tag>
         <English>The ibex is any of several species of wild goat, distinguished by the male's large recurved horns, which are transversely ridged in front. Ibex are found in Eurasia, North Africa, and East Africa. Ibex are not native to the Americas.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ibex[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Steinbock[COLOR_REVERT] </German>
     </TEXT>

@@ -11212,14 +11212,14 @@
             <iAICitySize>1</iAICitySize>
         </BuildingInfo>
         <BuildingInfo>
-            <Type>BUILDING_BONUS_IBEX</Type>
+            <Type>BUILDING_BONUS_GOAT</Type>
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS_IBEX</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS_IBEX_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS_IBEX_STRATEGY</Strategy>
-            <ArtDefineTag>ART_DEF_BUILDING_BONUS_IBEX</ArtDefineTag>
+            <Description>TXT_KEY_BUILDING_BONUS_GOAT</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_GOAT_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_GOAT_STRATEGY</Strategy>
+            <ArtDefineTag>ART_DEF_BUILDING_BONUS_GOAT</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
             <FreeStartEra>NONE</FreeStartEra>

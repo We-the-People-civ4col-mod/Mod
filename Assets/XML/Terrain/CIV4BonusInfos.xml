@@ -7632,11 +7632,11 @@
             </FeatureTerrainBooleans>
         </BonusInfo>
         <BonusInfo>
-            <Type>BONUS_IBEX</Type>
-            <Description>TXT_KEY_BONUS_IBEX</Description>
-            <Civilopedia>TXT_KEY_BONUS_IBEX_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_IBEX</ArtDefineTag>
-            <BuildingType>BUILDING_BONUS_IBEX</BuildingType>
+            <Type>BONUS_GOAT</Type>
+            <Description>TXT_KEY_BONUS_GOAT</Description>
+            <Civilopedia>TXT_KEY_BONUS_GOAT_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_GOAT</ArtDefineTag>
+            <BuildingType>BUILDING_BONUS_GOAT</BuildingType>
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FUR</YieldType>

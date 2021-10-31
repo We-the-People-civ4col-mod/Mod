@@ -315,12 +315,12 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
-            <Type>ART_DEF_BONUS_IBEX</Type>
-            <fScale>14</fScale>
+            <Type>ART_DEF_BONUS_GOAT</Type>
+            <fScale>1.2</fScale>
             <fInterfaceScale>1</fInterfaceScale>
-            <NIF>Art\terrain\resources\ibex\ibex.nif</NIF>
-            <KFM/>
-            <Button>Art/Interface/Buttons/ibex.dds</Button>
+            <NIF>Art/terrain/resources/Goat/Goat_FX.nif</NIF>
+            <KFM>Art/Terrain/Resources/Horse/Horse.kfm</KFM>
+            <Button>Art/Interface/Buttons/Goat_Button.dds</Button>
             <FontButtonIndex>89</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
@@ -793,7 +793,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Pig/Pig_FX.nif</NIF>
             <KFM>Art/Terrain/Resources/Pig/Pig.kfm</KFM>
-            <Button>Art/interface/buttons/Pig_Button.dds</Button>
+            <Button>Art/interface/buttons/Pig.dds</Button>
             <FontButtonIndex>64</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
