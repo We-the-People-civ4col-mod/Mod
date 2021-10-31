@@ -5098,10 +5098,20 @@ bool CvUnit::canKingTransport() const
 		return false;
 	}
 
+	// this here is basically pointless now, but I still leave it in because it might be faster than below
 	if (!pCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()))
 	{
 		return false;
 	}
+
+	// WTP, ray, fix small issue with King Treasure Transport at Lakes - START
+	// this is just needed for incredibly huge Lakes or Ice Lakes
+	// if there is no TERRAIN_COAST, TERRAIN_SHALLOW_COAST or TERRAIN_LARGE_RIVER there can be no Ocean access
+	if (!plot()->hasNearbyPlotWith(TERRAIN_COAST) && !plot()->hasNearbyPlotWith(TERRAIN_SHALLOW_COAST) && !plot()->hasNearbyPlotWith(TERRAIN_LARGE_RIVERS))
+	{
+		return false;
+	}
+	// WTP, ray, fix small issue with King Treasure Transport at Lakes - END
 
 	if (getYieldStored() == 0)
 	{
