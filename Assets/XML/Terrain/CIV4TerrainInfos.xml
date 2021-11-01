@@ -2146,7 +2146,7 @@
             <Yields>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>3</iValue>
+                    <iValue>2</iValue>
                 </YieldIntegerPair>
             </Yields>
             <RiverYieldIncreases/>
@@ -2250,7 +2250,7 @@
             <Yields>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>3</iValue>
+                    <iValue>2</iValue>
                 </YieldIntegerPair>
             </Yields>
             <RiverYieldIncreases/>
@@ -2354,7 +2354,7 @@
             <Yields>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>3</iValue>
+                    <iValue>2</iValue>
                 </YieldIntegerPair>
             </Yields>
             <RiverYieldIncreases/>
