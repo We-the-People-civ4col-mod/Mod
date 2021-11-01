@@ -551,7 +551,7 @@
             <fInterfaceScale>1.1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/HighSeaFish/Fish.nif</NIF>
             <KFM>Art/Terrain/Resources/HighSeaFish/Fish.kfm</KFM>
-            <Button>,Art/colonization_atlas_professions_bonus.dds,3,11</Button>
+            <Button>Art\interface\buttons\cod.dds</Button>
             <FontButtonIndex>15</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>1</bRefractionCastor>
