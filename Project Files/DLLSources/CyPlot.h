@@ -29,7 +29,7 @@ public:
 	bool isLake();
 	bool isRiverSide();
 	bool isRiver(); 
-	bool isSweetWater();// WTP, ray, Health Overhaul
+	bool isFreshWater();// WTP, ray, Health Overhaul
 	bool isRiverConnection(int /*DirectionTypes*/ eDirection);
 	int getNearestLandArea();
 	int seeFromLevel();

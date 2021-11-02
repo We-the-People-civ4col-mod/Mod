@@ -9303,7 +9303,7 @@ int CvCity::getCityHealthChangeFromCentralPlot() const
 	// let us be save, maybe Abandon City may mess around
 	if (pCityCenterPlot != NULL)
 	{
-		if (pCityCenterPlot->isSweetWater())
+		if (pCityCenterPlot->isFreshWater())
 		{
 			iCityHealthChangeFromCentralPlot += iSweetWaterLocationChange;
 		}

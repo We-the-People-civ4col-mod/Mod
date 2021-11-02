@@ -1950,8 +1950,8 @@
         <German>[ICON_BULLET]Ungesundes Terrain für Stadgründungen[SPACE]</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PLOT_SWEETWATER</Tag>
-        <English>[ICON_BULLET]Plot with direct sweet water access[SPACE]</English>
+        <Tag>TXT_KEY_PLOT_FRESHWATER</Tag>
+        <English>[ICON_BULLET]Plot with direct fresh water access[SPACE]</English>
         <German>[ICON_BULLET]Gebiet mit direktem Süßwasserzugang[SPACE]</German>
     </TEXT>
     <TEXT>

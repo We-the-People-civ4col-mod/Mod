@@ -85,7 +85,7 @@ public:
 	DllExport bool isRiverCrossingFlowClockwise(DirectionTypes eDirection) const;
 	bool isRiverSide() const;
 	bool isRiver() const;
-	bool isSweetWater() const; // WTP, ray, Health Overhaul
+	bool isFreshWater() const; // WTP, ray, Health Overhaul
 	bool isRiverConnection(DirectionTypes eDirection) const;
 
 	CvPlot* getNearestLandPlotInternal(int iDistance) const;

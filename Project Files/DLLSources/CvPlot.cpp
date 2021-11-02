@@ -1218,7 +1218,7 @@ bool CvPlot::isRiver() const
 }
 
 // WTP, ray, Health Overhaul - START
-bool CvPlot::isSweetWater() const
+bool CvPlot::isFreshWater() const
 {
 	// no Water Plots themselves
 	if (isWater())

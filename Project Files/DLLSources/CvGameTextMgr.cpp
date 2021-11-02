@@ -2779,10 +2779,10 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			szString.append(gDLL->getText("TXT_KEY_TERRAIN_BAD_CITY_LOCATION"));
 		}
 
-		if (pPlot->isSweetWater())
+		if (pPlot->isFreshWater())
 		{
 			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_PLOT_SWEETWATER"));
+			szString.append(gDLL->getText("TXT_KEY_PLOT_FRESHWATER"));
 		}
 
 		// WTP, ray, Health Overhaul - END
