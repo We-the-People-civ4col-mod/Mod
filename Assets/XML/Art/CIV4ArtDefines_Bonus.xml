@@ -188,7 +188,7 @@
             <fInterfaceScale>1.1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Crab/Crab.nif</NIF>
             <KFM>Art/Terrain/Resources/Crab/Crab.kfm</KFM>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Atlas.dds,8,12</Button>
+            <Button>Art/Interface/Buttons/Crab.dds</Button>
             <FontButtonIndex>13</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>1</bRefractionCastor>
@@ -452,7 +452,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Pearls/Clam.nif</NIF>
             <KFM>Art/Terrain/Resources/Pearls/Clam.kfm</KFM>
-            <Button>,Art/colonization_atlas_professions_bonus.dds,4,10</Button>
+            <Button>Art/interface/buttons/Clam.dds</Button>
             <FontButtonIndex>43</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>1</bRefractionCastor>
@@ -1035,7 +1035,7 @@
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Shrimp/shrimp.nif</NIF>
             <KFM/>
-            <Button>Art/Interface/Buttons/Shrimp_Button.dds</Button>
+            <Button>Art/Interface/Buttons/Shrimp.dds</Button>
             <FontButtonIndex>10</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
