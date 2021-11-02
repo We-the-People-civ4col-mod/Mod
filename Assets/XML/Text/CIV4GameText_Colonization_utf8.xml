@@ -1952,7 +1952,12 @@
     <TEXT>
         <Tag>TXT_KEY_PLOT_FRESHWATER</Tag>
         <English>[ICON_BULLET]Plot with direct fresh water access[SPACE]</English>
-        <German>[ICON_BULLET]Gebiet mit direktem Süßwasserzugang[SPACE]</German>
+        <German>[ICON_BULLET]Feld mit direktem Süßwasserzugang[SPACE]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_PROVIDES_FRESHWATER</Tag>
+        <English>[ICON_BULLET]Provides fresh water access to adjacent plots[SPACE]</English>
+        <German>[ICON_BULLET]Gibt angrenzenden Feldern Süßwasserzugang[SPACE]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_PROD_TRAIT</Tag>
