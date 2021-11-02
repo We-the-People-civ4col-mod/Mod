@@ -694,7 +694,7 @@
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Sea_Lions/fish.nif</NIF>
             <KFM>Art/Terrain/Resources/Sea_Lions/fish.kfm</KFM>
-            <Button>,Art/colonization_atlas_professions_bonus.dds,3,13</Button>
+            <Button>Art/Interface/Buttons/seadog.dds</Button>
             <FontButtonIndex>33</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>1</bRefractionCastor>
