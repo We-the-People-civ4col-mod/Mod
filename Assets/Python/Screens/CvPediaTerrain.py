@@ -116,10 +116,8 @@ class CvPediaTerrain:
 					## R&R, Robert Surcouf,  Pedia - End
 	#				screen.attachTextGFC(panelName, "", szYield + (u"%c" % gc.getYieldInfo(k).getChar()), FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 			# WTP, ray, displaying Fresh Water Access
-			# I know this is ugly, but it is not worth currently to have an XML attribute since no other cases are likely
-			# Also no idea why I am not able to access Terrain Types ...
-			# if (self.iTerrain == TerrainTypes.TERRAIN_LARGE_RIVERS or self.iTerrain == TerrainTypes.TERRAIN_LAKE or self.iTerrain == TerrainTypes.TERRAIN_ICE_LAKE):
-			if (self.iTerrain == 14 or self.iTerrain == 15 or self.iTerrain == 16):
+			# I know it is ugly to reference TerrainTypes, but it is not worth currently to have an XML attribute since no other cases are likely
+			if (self.iTerrain == TerrainTypes.TERRAIN_LARGE_RIVERS or self.iTerrain == TerrainTypes.TERRAIN_LAKE or self.iTerrain == TerrainTypes.TERRAIN_ICE_LAKE):
 				freshWaterText = localText.getText("TXT_KEY_TERRAIN_PROVIDES_FRESHWATER", ())
 				screen.appendListBoxString(panelName, u"<font=3>" + freshWaterText + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 

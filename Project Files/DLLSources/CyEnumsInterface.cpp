@@ -390,6 +390,10 @@ void CyEnumsPythonInterface()
 		.value("NUM_WORLDSIZE_TYPES", NUM_WORLDSIZE_TYPES)
 		;
 	python::enum_<TerrainTypes>("TerrainTypes")
+		// WTP, ray, making at least fresh water terraubs available to Python
+		.value("TERRAIN_LARGE_RIVERS", TERRAIN_LARGE_RIVERS)
+		.value("TERRAIN_LAKE", TERRAIN_LAKE)
+		.value("TERRAIN_ICE_LAKE", TERRAIN_ICE_LAKE)
 		.value("NO_TERRAIN", NO_TERRAIN)
 		;
 	python::enum_<PlotTypes>("PlotTypes")
