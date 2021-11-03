@@ -399,7 +399,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GOAT_PEDIA</Tag>
-        <English>The ibex is any of several species of wild goat, distinguished by the male's large recurved horns, which are transversely ridged in front. Ibex are found in Eurasia, North Africa, and East Africa. Ibex are not native to the Americas.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ibex[COLOR_REVERT] </English>
+        <English>The goat is one of the oldest domesticated animals.[PARAGRAPH:1]Archaeological evidence shows it domesticated in Iran 10,000 years ago. [PARAGRAPH:1]Goats have been used for milk, meat, fur, and skins across much of the world. [PARAGRAPH:1]Goats are naturally curious. They are also agile and well known for their ability to climb and balance in precarious places. This makes them the only ruminant to regularly climb trees.[PARAGRAPH:1]Using goats to clear land is sometimes known as conservation grazing.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ibex[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Steinbock[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -1121,7 +1121,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_WATERHOLE_PEDIA</Tag>
-        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Watering hole[COLOR_REVERT] </English>
+        <English>A waterhole is a depression in the ground in which water can collect, or a more permanent pool in the bed of an ephemeral river.[PARAGRAPH:2]It's a welcome sight for a traveler lost in the desert, and also a good place for predators to wait for prey.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Watering hole[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tiertränkstellen[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -1353,7 +1353,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_VULTURE_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vultures[COLOR_REVERT]</English>
+        <English>A vulture scavenges on carrion. Several species have a good sense of smell, unusual for raptors, and are able to smell dead animals from great heights, up to a mile away.[PARAGRAPH:1]Vast numbers have been seen upon battlefields.[PARAGRAPH:1]Vultures appear in many Mesoamerican myths, legends, and fables, with many separate civilizations such as the Mayan and Aztec developing a range of stories around vultures.[PARAGRAPH:1]Vultures can safely digest putrid carcasses infected with botulinum toxin, hog cholera bacteria, and anthrax bacteria that would be lethal to other scavengers and remove these bacteria from the environment.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vultures[COLOR_REVERT]</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Geier[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1367,7 +1367,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_IGUANA_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Iguana[COLOR_REVERT]</English>
+        <English>The iguana is a herbivorous lizard native to tropical areas of Mexico, Central America, South America, and the Caribbean.[PARAGRAPH:1]The word "iguana" is derived from the original Taino name for the species, iwana.[PARAGRAPH:1]Iguanas have keen vision and can see shapes, shadows, colors, and movement at long distances.[PARAGRAPH:1]They're about a meter and a half, five feet, in length.[PARAGRAPH:1]Iguanas have historically featured in the culinary traditions of Mexico and Central America.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Iguana[COLOR_REVERT]</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Iguana[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1998,7 +1998,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SHRIMP_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Shrimps[COLOR_REVERT] </English>
+        <English>Shrimp are swimming crustaceans with long narrow muscular abdomens and long antennae.[PARAGRAPH:1]Shrimp are an important food source for larger animals ranging from fish to whales.[PARAGRAPH:1]Shrimp are widespread, and can be found near the seafloor of most coasts and estuaries, as well as in rivers and lakes.[PARAGRAPH:1]In North America, Indigenous peoples of the Americas captured shrimp and other crustaceans in fishing weirs and traps made from branches and Spanish moss, or used nets woven with fibre beaten from plants. At the same time early European settlers, oblivious to the protein-rich coasts all about them, starved from lack of protein.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Shrimps[COLOR_REVERT] </English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]shrimps[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Shrimps[COLOR_REVERT]</German>
     </TEXT>
@@ -2018,7 +2018,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RICE_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT] </English>
+        <English>Rice is the staple food of over half the world's population.[PARAGRAPH:1]The traditional method for cultivating rice is flooding the fields while, or after, setting the young seedlings. This simple method requires sound irrigation planning but reduces the growth of less robust weed and pest plants that have no submerged growth state, and deters vermin.[PARAGRAPH:2]Wild rice, manoomin, is not directly related to domesticated rice.[PARAGRAPH:1]Native Americans and others harvest wild rice by canoeing into a stand of plants, and bending the ripe grain heads with two small wooden poles/sticks called "knockers" or "flails", so as to thresh the seeds into the canoe.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT] </English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]tilleus[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Reis[COLOR_REVERT]</German>
     </TEXT>
@@ -2047,7 +2047,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BEANS_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Beans[COLOR_REVERT] </English>
+        <English>Beans are one of the longest-cultivated plants.[PARAGRAPH:1]In the New World, many tribes grew beans together with maize (corn), and squash.[PARAGRAPH:1]The corn would not be planted in rows as is done by European agriculture, but in a checkerboard/hex fashion across a field, in separate patches of one to six stalks each. Beans would be planted around the base of the developing stalks, and would vine their way up as the stalks grew.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Beans[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bohnen[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -2066,7 +2066,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MUSHROOMS_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mushrooms[COLOR_REVERT] </English>
+        <English>A mushroom is the fleshy, spore-bearing fruiting body of a fungus, typically produced above ground, on soil, or on its food source.[PARAGRAPH:1]Traditional methods for identification have developed into a fine art harking back to medieval times. Separating edible from poisonous species requires meticulous attention to detail; there is no single trait by which all toxic mushrooms can be identified, nor one by which all edible mushrooms can be identified.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mushrooms[COLOR_REVERT] </English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]champignons[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pilze[COLOR_REVERT]</German>
     </TEXT>
@@ -2096,7 +2096,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BEE_HIVE_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bee Hive[COLOR_REVERT] </English>
+        <English>Bees produce honey from floral nectar.[PARAGRAPH:1]In the hive bees store honey in wax structures called honeycombs.[PARAGRAPH:1]Most microorganisms do not grow in honey, so sealed honey does not spoil, even after thousands of years.[PARAGRAPH:1]Possibly the world's oldest fermented beverage, dating from 9,000 years ago, mead is made by adding yeast to honey-water and fermenting it for weeks or months.[PARAGRAPH:1]One hundred grams of honey provides about 1,270 kJ (304 kcal) of energy.[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bee Hive[COLOR_REVERT] </English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]Ruches d'abeille[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bienenstöcke[COLOR_REVERT]</German>
     </TEXT>
