@@ -283,10 +283,10 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_CARIBOU</Type>
-            <fScale>14</fScale>
+            <fScale>1.2</fScale>
             <fInterfaceScale>1</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/caribou/caribou.nif</NIF>
-            <KFM/>
+            <NIF>Art/Terrain/Resources/Caribou/Caribou_FX.nif</NIF>
+            <KFM>Art/Terrain/Resources/Deer/Deer.kfm</KFM>
             <Button>Art/Interface/Buttons/caribou.dds</Button>
             <FontButtonIndex>5</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
@@ -294,10 +294,10 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_MOOSE</Type>
-            <fScale>14</fScale>
+            <fScale>1.2</fScale>
             <fInterfaceScale>1</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/moose/moose.nif</NIF>
-            <KFM/>
+            <NIF>Art/Terrain/Resources/Moose/Moose_FX.nif</NIF>
+            <KFM>Art/Terrain/Resources/Deer/Deer.kfm</KFM>
             <Button>Art/Interface/Buttons/moose.dds</Button>
             <FontButtonIndex>80</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
@@ -305,10 +305,10 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_BIG_HORN</Type>
-            <fScale>14</fScale>
+            <fScale>1.1</fScale>
             <fInterfaceScale>1</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/big_horn_sheep/mouflon.nif</NIF>
-            <KFM/>
+            <NIF>Art/Terrain/Resources/big_horn_sheep/Bighorn_Sheep_FX.nif</NIF>
+            <KFM>Art/Terrain/Resources/Deer/Deer.kfm</KFM>
             <Button>Art/Interface/Buttons/big_horn_sheep.dds</Button>
             <FontButtonIndex>88</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
@@ -316,7 +316,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_GOAT</Type>
-            <fScale>1.2</fScale>
+            <fScale>1.1</fScale>
             <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/terrain/resources/Goat/Goat_FX.nif</NIF>
             <KFM>Art/Terrain/Resources/Horse/Horse.kfm</KFM>
@@ -327,10 +327,10 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_MUSK_OX</Type>
-            <fScale>14</fScale>
-            <fInterfaceScale>1</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/muskox/muskox.nif</NIF>
-            <KFM/>
+            <fScale>1.1</fScale>
+            <fInterfaceScale>0.9</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Muskox/Muskox_FX.nif</NIF>
+            <KFM>Art/Terrain/Resources/Cow/Cow.kfm</KFM>
             <Button>Art/Interface/Buttons/muskox.dds</Button>
             <FontButtonIndex>90</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
