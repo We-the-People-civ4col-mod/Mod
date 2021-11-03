@@ -1807,7 +1807,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CHERRIES_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cherry Trees[COLOR_REVERT] </English>
+        <English>Cherries arrived in North America in 1639 in Brooklyn, New York (then called "New Netherland") when the region was under Dutch sovereignty.[PARAGRAPH:1]A cherry tree will take three to four years once it is planted in the orchard to produce its first crop of fruit, and seven years to attain full maturity. Hand picking is widely used for sweet as well as sour cherries to harvest the fruit to avoid damage to both fruit and trees.[PARAGRAPH:1]Cherry trees require a certain number of chilling hours each year to break dormancy and bloom and produce fruit. Because of this cold-weather requirement, cherries cannot grow in tropical climates.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cherry Trees[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kirschbäume[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1821,7 +1821,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PINE_APPLE_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pine Apple Tree[COLOR_REVERT] </English>
+        <English>The pineapple is indigenous to South America, where it has been cultivated for many centuries.[PARAGRAPH:1]The introduction of the pineapple to Europe in the 17th century made it a significant cultural icon of luxury.[PARAGRAPH:1]It is the third most important tropical fruit in world production.[PARAGRAPH:1]Archaeological evidence of cultivation goes back to 1200 BC in Peru and 200 BC in Mexico where it was cultivated by the Mayas and the Aztecs.[PARAGRAPH:1]Columbus brought the plant back to Spain and called it piña de Indes, meaning "pine of the Indians".[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pine Apple Tree[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ananasbaum[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1835,7 +1835,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PASSION_FRUIT_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Passion Fruit Tree[COLOR_REVERT] </English>
+        <English>Passion fruit is a vine native to southern Brazil through Paraguay and northern Argentina.[PARAGRAPH:1]It's cultivated commercially in tropical and subtropical areas for its sweet, seedy fruit.[PARAGRAPH:1]In a 50 gram amount (roughly the size of one fruit), fresh passion fruit contains 18% of the daily value of vitamin C, 21% dietary fiber, B vitamins riboflavin (5.5% DV) and niacin (5% DV), 6% iron and 5% phosphorus.[PARAGRAPH:1]It's popular for desserts and drinks.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Passion Fruit Tree[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Passionsfruchtbaum[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1849,7 +1849,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GUAVA_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Guava Trees[COLOR_REVERT] </English>
+        <English>Guava is a fruit cultivated in many tropical and subtropical regions.[PARAGRAPH:1]Guavas are one of the few tropical fruits that can grow to fruiting size in pots indoors.[PARAGRAPH:1]When grown from seed, guava trees can bear fruit in two years, and can continue to do so for forty years.[PARAGRAPH:1]The popular beverage agua fresca is often made with guava.[PARAGRAPH:1]It also can be eaten raw, like an apple.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Guava Trees[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Guavabaum[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1863,7 +1863,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PAPAYA_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Papaya Tree[COLOR_REVERT] </English>
+        <English>Native to Mexico and northern South America,  papaya has become naturalized throughout the Caribbean Islands, Florida, Texas, California, Hawaii, and other tropical and subtropical regions of the world. It is, however, highly frost-sensitive.[PARAGRAPH:1]The unripe green fruit can be eaten cooked, but not raw due to its poisonous latex content.[PARAGRAPH:1]The ripe fruit of the papaya is usually eaten raw, without skin or seeds.[PARAGRAPH:1]In traditional medicine, papaya leaves have been used as a treatment for malaria.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Papaya Tree[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Papayabaum[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1882,7 +1882,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_LEMONS_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lemon trees[COLOR_REVERT] </English>
+        <English>The lemon is a species of small evergreen tree.[PARAGRAPH:1]Lemon juice is about 5% to 6% citric acid, with a pH of around 2.2, giving it a sour taste.[PARAGRAPH:1]Lemons were introduced to the Americas in 1493 when Christopher Columbus brought lemon seeds to Hispaniola on his voyages.[PARAGRAPH:1]Spanish conquest throughout the New World helped spread lemon seeds. It was mainly used as an ornamental plant and for medicine.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lemon trees[COLOR_REVERT] </English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]tilleus[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Limonenbäume[COLOR_REVERT]</German>
     </TEXT>
@@ -1902,7 +1902,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TOMATO_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tomatos[COLOR_REVERT] </English>
+        <English>Tomatoes originated in western South America and Central America.[PARAGRAPH:1]The Nahuatl word tomatl gave rise to the Spanish word tomate, from which the English word tomato derived.[PARAGRAPH:1]Its domestication and use as a cultivated food may have originated with the Indigenous peoples of Mexico.[PARAGRAPH:1]Aztecs used tomatoes in their cooking at the time of the Spanish conquest of the Aztec Empire. The Spanish then brought the plant to Europe. From Spain the tomato was introduced to other parts of the European-colonized world during the 16th century.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tomatos[COLOR_REVERT] </English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]tomates[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tomaten[COLOR_REVERT]</German>
     </TEXT>
@@ -1922,7 +1922,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PEANUT_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Peanuts[COLOR_REVERT] </English>
+        <English>The peanut  is a legume grown mainly for its edible seeds.[PARAGRAPH:1]It's widely grown in the tropics and subtropics .[PARAGRAPH:1]Peanuts are valuable both as a grain legume and, due to their high oil content, as an oil crop.[PARAGRAPH:1]Cultivation was well-established in the Americas before the Spanish arrived. Conquistadors found the tlālcacahuatl (the plant's Nahuatl name) being offered for sale in the marketplace of Tenochtitlan.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Peanuts[COLOR_REVERT] </English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]Arachides[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Erdüsse[COLOR_REVERT]</German>
     </TEXT>
@@ -1937,7 +1937,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TUNDRA_BERRIES_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tundra Berries[COLOR_REVERT] </English>
+        <English>Lingonberries are native to boreal forest and Arctic tundra throughout the Northern Hemisphere.[PARAGRAPH:1]They spread by underground stems to form dense clonal colonies. They're usually protected from severe cold by snow cover.[PARAGRAPH:1]The lingonberry is extremely hardy, tolerating temperatures as low as −40 °C (−40 °F) or lower, but grows poorly where summers are hot.[PARAGRAPH:1]Alaska natives mix the berries with rose hip pulp and sugar to make jam, cook the berries as a sauce, and store the berries for future use.[PARAGRAPH:1]The Haida people, Hesquiaht First Nation, Wuikinuxv and Tsimshian all use the berries as food.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tundra Berries[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tundrabeeren[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1951,7 +1951,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HUCKLE_BERRIES_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Huckleberries[COLOR_REVERT] </English>
+        <English>From coastal Central California through Oregon to southern Washington and British Columbia, the red huckleberry is found in the maritime-influenced plant community.[PARAGRAPH:1]In the Pacific Northwest and mountains of Montana and Idaho, huckleberries grow in varied habitats, such as mid-alpine regions up to 11,500 feet (3,500 m) above sea level, mountain slopes, forests, or lake basins.[PARAGRAPH:1]The plant grows best in damp, acidic soil having volcanic origin, attaining under optimal conditions heights of 1.5 to 2 m (4.9 to 6.6 ft), usually ripening in mid-to-late summer or later at high elevations.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Huckleberries[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Heidelbeeren[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
