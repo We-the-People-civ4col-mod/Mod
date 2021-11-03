@@ -8,6 +8,1181 @@
 <Civ4BonusInfos xmlns="x-schema:CIV4TerrainSchema.xml">
     <BonusInfos>
         <BonusInfo>
+            <Type>BONUS_TIMBER</Type>
+            <Description>TXT_KEY_BONUS_TIMBER</Description>
+            <Civilopedia>TXT_KEY_BONUS_TIMBER_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_TIMBER</ArtDefineTag>
+            <BuildingType>BUILDING_BONUS_TIMBER</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_LUMBER</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>0</iPlacementOrder>
+            <iConstAppearance>20</iConstAppearance>
+            <iMinAreaSize>2</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>15</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>8</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>1</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>0</bArea>
+            <bPeaks>0</bPeaks>
+            <bHills>1</bHills>
+            <bFlatlands>1</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
+            <TerrainBooleans/>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MEADOW</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SHRUB</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SNOW</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+            </FeatureTerrainBooleans>
+        </BonusInfo>
+        <BonusInfo>
+            <Type>BONUS_BOREAL_FOREST</Type>
+            <Description>TXT_KEY_BONUS_BOREAL_FOREST</Description>
+            <Civilopedia>TXT_KEY_BONUS_BOREAL_FOREST_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_BOREAL_FOREST</ArtDefineTag>
+            <BuildingType>BUILDING_BONUS_BOREAL_FOREST</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>0</iPlacementOrder>
+            <iConstAppearance>20</iConstAppearance>
+            <iMinAreaSize>2</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>15</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>10</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>1</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>0</bArea>
+            <bPeaks>0</bPeaks>
+            <bHills>1</bHills>
+            <bFlatlands>1</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
+            <TerrainBooleans/>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SNOW</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+            </FeatureTerrainBooleans>
+        </BonusInfo>
+        <BonusInfo>
+            <Type>BONUS_GIANT_TREE</Type>
+            <Description>TXT_KEY_BONUS_GIANT_TREE</Description>
+            <Civilopedia>TXT_KEY_BONUS_GIANT_TREE_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_GIANT_TREE</ArtDefineTag>
+            <BuildingType>BUILDING_BONUS_GIANT_TREE</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>0</iPlacementOrder>
+            <iConstAppearance>20</iConstAppearance>
+            <iMinAreaSize>2</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>15</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>10</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>1</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>0</bArea>
+            <bPeaks>0</bPeaks>
+            <bHills>1</bHills>
+            <bFlatlands>1</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
+            <TerrainBooleans/>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+            </FeatureTerrainBooleans>
+        </BonusInfo>
+        <BonusInfo>
+            <Type>BONUS_IRON</Type>
+            <Description>TXT_KEY_BONUS_IRON</Description>
+            <Civilopedia>TXT_KEY_BONUS_IRON_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_IRON</ArtDefineTag>
+            <BuildingType>BUILDING_BONUS_IRON</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>0</iPlacementOrder>
+            <iConstAppearance>20</iConstAppearance>
+            <iMinAreaSize>2</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>15</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>8</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>1</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>0</bArea>
+            <bPeaks>1</bPeaks>
+            <bHills>1</bHills>
+            <bFlatlands>0</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SNOW</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MEADOW</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SHRUB</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SNOW</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+            </FeatureTerrainBooleans>
+        </BonusInfo>
+        <BonusInfo>
+            <Type>BONUS_BOG_ORE</Type>
+            <Description>TXT_KEY_BONUS_BOG_ORE</Description>
+            <Civilopedia>TXT_KEY_BONUS_BOG_ORE_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_BOG_ORE</ArtDefineTag>
+            <BuildingType>BUILDING_BONUS_BOG_ORE</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>0</iPlacementOrder>
+            <iConstAppearance>10</iConstAppearance>
+            <iMinAreaSize>2</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>15</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>8</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>1</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>0</bArea>
+            <bPeaks>0</bPeaks>
+            <bHills>0</bHills>
+            <bFlatlands>1</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
+            <TerrainBooleans/>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+            </FeatureTerrainBooleans>
+        </BonusInfo>
+        <BonusInfo>
+            <Type>BONUS_MINERALS</Type>
+            <Description>TXT_KEY_BONUS_MINERALS</Description>
+            <Civilopedia>TXT_KEY_BONUS_MINERALS_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_MINERALS</ArtDefineTag>
+            <BuildingType>BUILDING_BONUS_MINERALS</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_SILVER</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>0</iPlacementOrder>
+            <iConstAppearance>10</iConstAppearance>
+            <iMinAreaSize>2</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>15</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>10</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>1</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>0</bArea>
+            <bPeaks>0</bPeaks>
+            <bHills>1</bHills>
+            <bFlatlands>0</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SNOW</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MEADOW</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SHRUB</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SNOW</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+            </FeatureTerrainBooleans>
+        </BonusInfo>
+        <BonusInfo>
+            <Type>BONUS_STONE</Type>
+            <Description>TXT_KEY_BONUS_STONE</Description>
+            <Civilopedia>TXT_KEY_BONUS_STONE_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_STONE</ArtDefineTag>
+            <BuildingType>BUILDING_BONUS_STONE</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>0</iPlacementOrder>
+            <iConstAppearance>20</iConstAppearance>
+            <iMinAreaSize>2</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>15</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>8</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>1</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>0</bArea>
+            <bPeaks>1</bPeaks>
+            <bHills>0</bHills>
+            <bFlatlands>0</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SNOW</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MANGROVE</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SWAMP</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_BOG</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MEADOW</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SHRUB</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_LICHEN</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_MOSS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_THICKET</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SNOW</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+            </FeatureTerrainBooleans>
+        </BonusInfo>
+        <BonusInfo>
             <Type>BONUS_CORN</Type>
             <Description>TXT_KEY_BONUS_CORN</Description>
             <Civilopedia>TXT_KEY_BONUS_CORN_PEDIA</Civilopedia>
@@ -21,7 +1196,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -159,7 +1334,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -297,7 +1472,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -435,7 +1610,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -572,7 +1747,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -689,7 +1864,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -806,7 +1981,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -944,7 +2119,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -1066,7 +2241,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -1188,7 +2363,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -1427,7 +2602,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -1536,7 +2711,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -1669,7 +2844,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -1783,7 +2958,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -1896,7 +3071,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -2018,7 +3193,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -2127,7 +3302,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -2236,7 +3411,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -2345,7 +3520,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -2454,7 +3629,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -2555,7 +3730,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -2664,7 +3839,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -2781,7 +3956,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>3</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -2903,7 +4078,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>3</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -3025,7 +4200,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -3146,7 +4321,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -3275,7 +4450,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -3404,7 +4579,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -3521,7 +4696,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -3650,7 +4825,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>30</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -3769,7 +4944,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>20</iMinLatitude>
@@ -3883,7 +5058,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -3993,7 +5168,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -4091,6 +5266,410 @@
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
+            <bFishingboatWorkable>1</bFishingboatWorkable>
+        </BonusInfo>
+        <BonusInfo>
+            <Type>BONUS_WHALE</Type>
+            <Description>TXT_KEY_BONUS_WHALE</Description>
+            <Civilopedia>TXT_KEY_BONUS_WHALE_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_WHALE</ArtDefineTag>
+            <BuildingType>NONE</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_WHALE_BLUBBER</YieldType>
+                    <iValue>20</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>6</iPlacementOrder>
+            <iConstAppearance>20</iConstAppearance>
+            <iMinAreaSize>10</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>25</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>60</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>6</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>1</bArea>
+            <bPeaks>0</bPeaks>
+            <bHills>0</bHills>
+            <bOcean>1</bOcean>
+            <bFlatlands>0</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_OCEAN</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ICE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans/>
+            <bWhalingboatWorkable>1</bWhalingboatWorkable>
+        </BonusInfo>
+        <BonusInfo>
+            <Type>BONUS_HUMPBACK_WHALE</Type>
+            <Description>TXT_KEY_BONUS_HUMPBACK_WHALE</Description>
+            <Civilopedia>TXT_KEY_BONUS_HUMPBACK_WHALE_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_HUMPBACK_WHALE</ArtDefineTag>
+            <BuildingType>NONE</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_WHALE_BLUBBER</YieldType>
+                    <iValue>20</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>6</iPlacementOrder>
+            <iConstAppearance>20</iConstAppearance>
+            <iMinAreaSize>10</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>25</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>60</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>6</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>1</bArea>
+            <bPeaks>0</bPeaks>
+            <bHills>0</bHills>
+            <bOcean>1</bOcean>
+            <bFlatlands>0</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_OCEAN</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ICE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans/>
+            <bWhalingboatWorkable>1</bWhalingboatWorkable>
+        </BonusInfo>
+        <BonusInfo>
+            <Type>BONUS_HIGH_SEA_FISH</Type>
+            <Description>TXT_KEY_BONUS_HIGH_SEA_FISH</Description>
+            <Civilopedia>TXT_KEY_BONUS_HIGH_SEA_FISH_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_HIGH_SEA_FISH</ArtDefineTag>
+            <BuildingType>NONE</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iValue>4</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>6</iPlacementOrder>
+            <iConstAppearance>20</iConstAppearance>
+            <iMinAreaSize>10</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>25</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>60</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>6</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>1</bArea>
+            <bPeaks>0</bPeaks>
+            <bHills>0</bHills>
+            <bOcean>1</bOcean>
+            <bFlatlands>0</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_OCEAN</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ICE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_KELP</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SEAGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_STONE_REEF</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans/>
+            <bFishingboatWorkable>1</bFishingboatWorkable>
+        </BonusInfo>
+        <BonusInfo>
+            <Type>BONUS_HIGH_SEA_FISH2</Type>
+            <Description>TXT_KEY_BONUS_HIGH_SEA_FISH2</Description>
+            <Civilopedia>TXT_KEY_BONUS_HIGH_SEA_FISH2_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_HIGH_SEA_FISH2</ArtDefineTag>
+            <BuildingType>NONE</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iValue>4</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>6</iPlacementOrder>
+            <iConstAppearance>20</iConstAppearance>
+            <iMinAreaSize>10</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>25</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>60</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>6</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>1</bArea>
+            <bPeaks>0</bPeaks>
+            <bHills>0</bHills>
+            <bOcean>1</bOcean>
+            <bFlatlands>0</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_OCEAN</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ICE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_KELP</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SEAGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_STONE_REEF</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans/>
+            <bFishingboatWorkable>1</bFishingboatWorkable>
+        </BonusInfo>
+        <BonusInfo>
+            <Type>BONUS_HIGH_SEA_FISH3</Type>
+            <Description>TXT_KEY_BONUS_HIGH_SEA_FISH3</Description>
+            <Civilopedia>TXT_KEY_BONUS_HIGH_SEA_FISH3_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_HIGH_SEA_FISH3</ArtDefineTag>
+            <BuildingType>NONE</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iValue>4</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>6</iPlacementOrder>
+            <iConstAppearance>20</iConstAppearance>
+            <iMinAreaSize>10</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>25</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>60</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>6</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>1</bArea>
+            <bPeaks>0</bPeaks>
+            <bHills>0</bHills>
+            <bOcean>1</bOcean>
+            <bFlatlands>0</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_OCEAN</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ICE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_KELP</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SEAGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_STONE_REEF</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans/>
+            <bFishingboatWorkable>1</bFishingboatWorkable>
+        </BonusInfo>
+        <BonusInfo>
+            <Type>BONUS_HIGH_SEA_FISH4</Type>
+            <Description>TXT_KEY_BONUS_HIGH_SEA_FISH4</Description>
+            <Civilopedia>TXT_KEY_BONUS_HIGH_SEA_FISH4_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_HIGH_SEA_FISH4</ArtDefineTag>
+            <BuildingType>NONE</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iValue>4</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>6</iPlacementOrder>
+            <iConstAppearance>30</iConstAppearance>
+            <iMinAreaSize>10</iMinAreaSize>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>25</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>60</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>6</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>1</bArea>
+            <bPeaks>0</bPeaks>
+            <bHills>0</bHills>
+            <bOcean>1</bOcean>
+            <bFlatlands>0</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_OCEAN</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ICE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_REEF</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_KELP</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_SEAGRASS</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_STONE_REEF</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans/>
             <bFishingboatWorkable>1</bFishingboatWorkable>
         </BonusInfo>
         <BonusInfo>
@@ -4993,7 +6572,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -5094,932 +6673,6 @@
            <bUseLSystem>0</bUseLSystem>
         </BonusInfo>
         <BonusInfo>
-            <Type>BONUS_TIMBER</Type>
-            <Description>TXT_KEY_BONUS_TIMBER</Description>
-            <Civilopedia>TXT_KEY_BONUS_TIMBER_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_TIMBER</ArtDefineTag>
-            <BuildingType>BUILDING_BONUS_TIMBER</BuildingType>
-            <YieldChanges>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_LUMBER</YieldType>
-                    <iValue>3</iValue>
-                </YieldIntegerPair>
-            </YieldChanges>
-            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
-            <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>1</iPlacementOrder>
-            <iConstAppearance>20</iConstAppearance>
-            <iMinAreaSize>2</iMinAreaSize>
-            <iMinLatitude>0</iMinLatitude>
-            <iMaxLatitude>90</iMaxLatitude>
-            <Rands>
-                <iRandApp1>15</iRandApp1>
-                <iRandApp2>0</iRandApp2>
-                <iRandApp3>0</iRandApp3>
-                <iRandApp4>0</iRandApp4>
-            </Rands>
-            <iPlayer>0</iPlayer>
-            <iTilesPer>8</iTilesPer>
-            <iMinLandPercent>0</iMinLandPercent>
-            <iUnique>1</iUnique>
-            <iGroupRange>0</iGroupRange>
-            <iGroupRand>0</iGroupRand>
-            <bArea>0</bArea>
-            <bPeaks>0</bPeaks>
-            <bHills>1</bHills>
-            <bFlatlands>1</bFlatlands>
-            <bNoRiverSide>0</bNoRiverSide>
-            <bRiverSideOnly>0</bRiverSideOnly>
-            <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans/>
-            <FeatureBooleans>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_JUNGLE</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_MANGROVE</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_MEADOW</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SHRUB</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_CRATER</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-            </FeatureBooleans>
-            <FeatureTerrainBooleans>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_GRASS</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_WETLAND</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_TAIGA</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SNOW</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-            </FeatureTerrainBooleans>
-        </BonusInfo>
-        <BonusInfo>
-            <Type>BONUS_BOREAL_FOREST</Type>
-            <Description>TXT_KEY_BONUS_BOREAL_FOREST</Description>
-            <Civilopedia>TXT_KEY_BONUS_BOREAL_FOREST_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_BOREAL_FOREST</ArtDefineTag>
-            <BuildingType>BUILDING_BONUS_BOREAL_FOREST</BuildingType>
-            <YieldChanges>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
-                    <iValue>3</iValue>
-                </YieldIntegerPair>
-            </YieldChanges>
-            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
-            <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>1</iPlacementOrder>
-            <iConstAppearance>20</iConstAppearance>
-            <iMinAreaSize>2</iMinAreaSize>
-            <iMinLatitude>0</iMinLatitude>
-            <iMaxLatitude>90</iMaxLatitude>
-            <Rands>
-                <iRandApp1>15</iRandApp1>
-                <iRandApp2>0</iRandApp2>
-                <iRandApp3>0</iRandApp3>
-                <iRandApp4>0</iRandApp4>
-            </Rands>
-            <iPlayer>0</iPlayer>
-            <iTilesPer>10</iTilesPer>
-            <iMinLandPercent>0</iMinLandPercent>
-            <iUnique>1</iUnique>
-            <iGroupRange>0</iGroupRange>
-            <iGroupRand>0</iGroupRand>
-            <bArea>0</bArea>
-            <bPeaks>0</bPeaks>
-            <bHills>1</bHills>
-            <bFlatlands>1</bFlatlands>
-            <bNoRiverSide>0</bNoRiverSide>
-            <bRiverSideOnly>0</bRiverSideOnly>
-            <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans/>
-            <FeatureBooleans>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_CRATER</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-            </FeatureBooleans>
-            <FeatureTerrainBooleans>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_TAIGA</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SNOW</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_WETLAND</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-            </FeatureTerrainBooleans>
-        </BonusInfo>
-        <BonusInfo>
-            <Type>BONUS_GIANT_TREE</Type>
-            <Description>TXT_KEY_BONUS_GIANT_TREE</Description>
-            <Civilopedia>TXT_KEY_BONUS_GIANT_TREE_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_GIANT_TREE</ArtDefineTag>
-            <BuildingType>BUILDING_BONUS_GIANT_TREE</BuildingType>
-            <YieldChanges>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
-                    <iValue>3</iValue>
-                </YieldIntegerPair>
-            </YieldChanges>
-            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
-            <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>1</iPlacementOrder>
-            <iConstAppearance>20</iConstAppearance>
-            <iMinAreaSize>2</iMinAreaSize>
-            <iMinLatitude>0</iMinLatitude>
-            <iMaxLatitude>90</iMaxLatitude>
-            <Rands>
-                <iRandApp1>15</iRandApp1>
-                <iRandApp2>0</iRandApp2>
-                <iRandApp3>0</iRandApp3>
-                <iRandApp4>0</iRandApp4>
-            </Rands>
-            <iPlayer>0</iPlayer>
-            <iTilesPer>10</iTilesPer>
-            <iMinLandPercent>0</iMinLandPercent>
-            <iUnique>1</iUnique>
-            <iGroupRange>0</iGroupRange>
-            <iGroupRand>0</iGroupRand>
-            <bArea>0</bArea>
-            <bPeaks>0</bPeaks>
-            <bHills>1</bHills>
-            <bFlatlands>1</bFlatlands>
-            <bNoRiverSide>0</bNoRiverSide>
-            <bRiverSideOnly>0</bRiverSideOnly>
-            <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans/>
-            <FeatureBooleans>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_JUNGLE</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_MANGROVE</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_CRATER</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-            </FeatureBooleans>
-            <FeatureTerrainBooleans>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_GRASS</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-            </FeatureTerrainBooleans>
-        </BonusInfo>
-        <BonusInfo>
-            <Type>BONUS_IRON</Type>
-            <Description>TXT_KEY_BONUS_IRON</Description>
-            <Civilopedia>TXT_KEY_BONUS_IRON_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_IRON</ArtDefineTag>
-            <BuildingType>BUILDING_BONUS_IRON</BuildingType>
-            <YieldChanges>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_ORE</YieldType>
-                    <iValue>2</iValue>
-                </YieldIntegerPair>
-            </YieldChanges>
-            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
-            <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>1</iPlacementOrder>
-            <iConstAppearance>20</iConstAppearance>
-            <iMinAreaSize>2</iMinAreaSize>
-            <iMinLatitude>0</iMinLatitude>
-            <iMaxLatitude>90</iMaxLatitude>
-            <Rands>
-                <iRandApp1>15</iRandApp1>
-                <iRandApp2>0</iRandApp2>
-                <iRandApp3>0</iRandApp3>
-                <iRandApp4>0</iRandApp4>
-            </Rands>
-            <iPlayer>0</iPlayer>
-            <iTilesPer>8</iTilesPer>
-            <iMinLandPercent>0</iMinLandPercent>
-            <iUnique>1</iUnique>
-            <iGroupRange>0</iGroupRange>
-            <iGroupRand>0</iGroupRand>
-            <bArea>0</bArea>
-            <bPeaks>1</bPeaks>
-            <bHills>1</bHills>
-            <bFlatlands>0</bFlatlands>
-            <bNoRiverSide>0</bNoRiverSide>
-            <bRiverSideOnly>0</bRiverSideOnly>
-            <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_GRASS</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_WETLAND</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_DESERT</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_TAIGA</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_SNOW</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-            </TerrainBooleans>
-            <FeatureBooleans>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_JUNGLE</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_MANGROVE</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SWAMP</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_BOG</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_MEADOW</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SHRUB</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_MOSS</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_THICKET</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_CRATER</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-            </FeatureBooleans>
-            <FeatureTerrainBooleans>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_GRASS</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_WETLAND</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_TAIGA</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_DESERT</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SNOW</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-            </FeatureTerrainBooleans>
-        </BonusInfo>
-        <BonusInfo>
-            <Type>BONUS_BOG_ORE</Type>
-            <Description>TXT_KEY_BONUS_BOG_ORE</Description>
-            <Civilopedia>TXT_KEY_BONUS_BOG_ORE_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_BOG_ORE</ArtDefineTag>
-            <BuildingType>BUILDING_BONUS_BOG_ORE</BuildingType>
-            <YieldChanges>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_ORE</YieldType>
-                    <iValue>2</iValue>
-                </YieldIntegerPair>
-            </YieldChanges>
-            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
-            <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>1</iPlacementOrder>
-            <iConstAppearance>10</iConstAppearance>
-            <iMinAreaSize>2</iMinAreaSize>
-            <iMinLatitude>0</iMinLatitude>
-            <iMaxLatitude>90</iMaxLatitude>
-            <Rands>
-                <iRandApp1>15</iRandApp1>
-                <iRandApp2>0</iRandApp2>
-                <iRandApp3>0</iRandApp3>
-                <iRandApp4>0</iRandApp4>
-            </Rands>
-            <iPlayer>0</iPlayer>
-            <iTilesPer>8</iTilesPer>
-            <iMinLandPercent>0</iMinLandPercent>
-            <iUnique>1</iUnique>
-            <iGroupRange>0</iGroupRange>
-            <iGroupRand>0</iGroupRand>
-            <bArea>0</bArea>
-            <bPeaks>0</bPeaks>
-            <bHills>0</bHills>
-            <bFlatlands>1</bFlatlands>
-            <bNoRiverSide>0</bNoRiverSide>
-            <bRiverSideOnly>0</bRiverSideOnly>
-            <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans/>
-            <FeatureBooleans>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_BOG</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-            </FeatureBooleans>
-            <FeatureTerrainBooleans>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_WETLAND</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-            </FeatureTerrainBooleans>
-        </BonusInfo>
-        <BonusInfo>
-            <Type>BONUS_STONE</Type>
-            <Description>TXT_KEY_BONUS_STONE</Description>
-            <Civilopedia>TXT_KEY_BONUS_STONE_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_STONE</ArtDefineTag>
-            <BuildingType>BUILDING_BONUS_STONE</BuildingType>
-            <YieldChanges>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_STONE</YieldType>
-                    <iValue>2</iValue>
-                </YieldIntegerPair>
-            </YieldChanges>
-            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
-            <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>1</iPlacementOrder>
-            <iConstAppearance>20</iConstAppearance>
-            <iMinAreaSize>2</iMinAreaSize>
-            <iMinLatitude>0</iMinLatitude>
-            <iMaxLatitude>90</iMaxLatitude>
-            <Rands>
-                <iRandApp1>15</iRandApp1>
-                <iRandApp2>0</iRandApp2>
-                <iRandApp3>0</iRandApp3>
-                <iRandApp4>0</iRandApp4>
-            </Rands>
-            <iPlayer>0</iPlayer>
-            <iTilesPer>8</iTilesPer>
-            <iMinLandPercent>0</iMinLandPercent>
-            <iUnique>1</iUnique>
-            <iGroupRange>0</iGroupRange>
-            <iGroupRand>0</iGroupRand>
-            <bArea>0</bArea>
-            <bPeaks>1</bPeaks>
-            <bHills>0</bHills>
-            <bFlatlands>0</bFlatlands>
-            <bNoRiverSide>0</bNoRiverSide>
-            <bRiverSideOnly>0</bRiverSideOnly>
-            <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_GRASS</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_WETLAND</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_DESERT</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_TAIGA</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_SNOW</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-            </TerrainBooleans>
-            <FeatureBooleans>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_JUNGLE</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_MANGROVE</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SWAMP</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_BOG</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_MEADOW</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SHRUB</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_MOSS</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_THICKET</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_CRATER</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-            </FeatureBooleans>
-            <FeatureTerrainBooleans>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_GRASS</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_WETLAND</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_TAIGA</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_DESERT</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SNOW</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-            </FeatureTerrainBooleans>
-        </BonusInfo>
-        <BonusInfo>
             <Type>BONUS_HORSES</Type>
             <Description>TXT_KEY_BONUS_HORSES</Description>
             <Civilopedia>TXT_KEY_BONUS_HORSES_PEDIA</Civilopedia>
@@ -6033,7 +6686,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>1</iPlacementOrder>
+            <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>15</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -8291,7 +8944,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>0</iPlacementOrder>
+            <iPlacementOrder>4</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -8405,7 +9058,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>70</iMinLatitude>
@@ -8586,7 +9239,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -8705,6 +9358,91 @@
             </FeatureTerrainBooleans>
         </BonusInfo>
         <BonusInfo>
+            <Type>BONUS_SEA_OTTERS</Type>
+            <Description>TXT_KEY_BONUS_SEA_OTTERS</Description>
+            <Civilopedia>TXT_KEY_BONUS_SEA_OTTERS_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_SEA_OTTERS</ArtDefineTag>
+            <BuildingType>BUILDING_BONUS_SEA_OTTERS</BuildingType>
+            <YieldChanges>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iValue>5</iValue>
+                </YieldIntegerPair>
+            </YieldChanges>
+            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
+            <iAIObjective>0</iAIObjective>
+            <iPlacementOrder>1</iPlacementOrder>
+            <iConstAppearance>10</iConstAppearance>
+            <iMinAreaSize>2</iMinAreaSize>
+            <iMinLatitude>45</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <Rands>
+                <iRandApp1>15</iRandApp1>
+                <iRandApp2>0</iRandApp2>
+                <iRandApp3>0</iRandApp3>
+                <iRandApp4>0</iRandApp4>
+            </Rands>
+            <iPlayer>0</iPlayer>
+            <iTilesPer>8</iTilesPer>
+            <iMinLandPercent>0</iMinLandPercent>
+            <iUnique>1</iUnique>
+            <iGroupRange>0</iGroupRange>
+            <iGroupRand>0</iGroupRand>
+            <bArea>0</bArea>
+            <bPeaks>0</bPeaks>
+            <bHills>0</bHills>
+            <bFlatlands>0</bFlatlands>
+            <bNoRiverSide>0</bNoRiverSide>
+            <bRiverSideOnly>0</bRiverSideOnly>
+            <bCoastalLandOnly>0</bCoastalLandOnly>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
+            <FeatureBooleans>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_ICE</FeatureType>
+                    <bFeature>0</bFeature>
+                </FeatureBoolean>
+                <FeatureBoolean>
+                    <FeatureType>FEATURE_KELP</FeatureType>
+                    <bFeature>1</bFeature>
+                </FeatureBoolean>
+            </FeatureBooleans>
+            <FeatureTerrainBooleans>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_COAST</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_LAKE</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+            </FeatureTerrainBooleans>
+        </BonusInfo>
+        <BonusInfo>
             <Type>BONUS_POLAR_FOX</Type>
             <Description>TXT_KEY_BONUS_POLAR_FOX</Description>
             <Civilopedia>TXT_KEY_BONUS_POLAR_FOX_PEDIA</Civilopedia>
@@ -8718,7 +9456,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -8860,7 +9598,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -8979,91 +9717,6 @@
             </FeatureTerrainBooleans>
         </BonusInfo>
         <BonusInfo>
-            <Type>BONUS_SEA_OTTERS</Type>
-            <Description>TXT_KEY_BONUS_SEA_OTTERS</Description>
-            <Civilopedia>TXT_KEY_BONUS_SEA_OTTERS_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_SEA_OTTERS</ArtDefineTag>
-            <BuildingType>BUILDING_BONUS_SEA_OTTERS</BuildingType>
-            <YieldChanges>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
-                    <iValue>5</iValue>
-                </YieldIntegerPair>
-            </YieldChanges>
-            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
-            <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
-            <iConstAppearance>10</iConstAppearance>
-            <iMinAreaSize>2</iMinAreaSize>
-            <iMinLatitude>45</iMinLatitude>
-            <iMaxLatitude>90</iMaxLatitude>
-            <Rands>
-                <iRandApp1>15</iRandApp1>
-                <iRandApp2>0</iRandApp2>
-                <iRandApp3>0</iRandApp3>
-                <iRandApp4>0</iRandApp4>
-            </Rands>
-            <iPlayer>0</iPlayer>
-            <iTilesPer>8</iTilesPer>
-            <iMinLandPercent>0</iMinLandPercent>
-            <iUnique>1</iUnique>
-            <iGroupRange>0</iGroupRange>
-            <iGroupRand>0</iGroupRand>
-            <bArea>0</bArea>
-            <bPeaks>0</bPeaks>
-            <bHills>0</bHills>
-            <bFlatlands>0</bFlatlands>
-            <bNoRiverSide>0</bNoRiverSide>
-            <bRiverSideOnly>0</bRiverSideOnly>
-            <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_LAKE</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-            </TerrainBooleans>
-            <FeatureBooleans>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ICE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_KELP</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-            </FeatureBooleans>
-            <FeatureTerrainBooleans>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_COAST</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_LAKE</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-            </FeatureTerrainBooleans>
-        </BonusInfo>
-        <BonusInfo>
             <Type>BONUS_COTTON</Type>
             <Description>TXT_KEY_BONUS_COTTON</Description>
             <Civilopedia>TXT_KEY_BONUS_COTTON_PEDIA</Civilopedia>
@@ -9077,7 +9730,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -9202,7 +9855,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -9327,7 +9980,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -9464,7 +10117,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -9585,7 +10238,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>1</iPlacementOrder>
+            <iPlacementOrder>0</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -9714,7 +10367,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -9827,7 +10480,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -9953,7 +10606,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -10079,7 +10732,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>10</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -10208,7 +10861,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -10313,7 +10966,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -10431,7 +11084,7 @@
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>4</iPlacementOrder>
+            <iPlacementOrder>1</iPlacementOrder>
             <iConstAppearance>20</iConstAppearance>
             <iMinAreaSize>2</iMinAreaSize>
             <iMinLatitude>0</iMinLatitude>
@@ -11385,659 +12038,6 @@
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
-        </BonusInfo>
-        <BonusInfo>
-            <Type>BONUS_MINERALS</Type>
-            <Description>TXT_KEY_BONUS_MINERALS</Description>
-            <Civilopedia>TXT_KEY_BONUS_MINERALS_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_MINERALS</ArtDefineTag>
-            <BuildingType>BUILDING_BONUS_MINERALS</BuildingType>
-            <YieldChanges>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_ORE</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_SILVER</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-            </YieldChanges>
-            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
-            <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>6</iPlacementOrder>
-            <iConstAppearance>10</iConstAppearance>
-            <iMinAreaSize>2</iMinAreaSize>
-            <iMinLatitude>0</iMinLatitude>
-            <iMaxLatitude>90</iMaxLatitude>
-            <Rands>
-                <iRandApp1>15</iRandApp1>
-                <iRandApp2>0</iRandApp2>
-                <iRandApp3>0</iRandApp3>
-                <iRandApp4>0</iRandApp4>
-            </Rands>
-            <iPlayer>0</iPlayer>
-            <iTilesPer>10</iTilesPer>
-            <iMinLandPercent>0</iMinLandPercent>
-            <iUnique>1</iUnique>
-            <iGroupRange>0</iGroupRange>
-            <iGroupRand>0</iGroupRand>
-            <bArea>0</bArea>
-            <bPeaks>0</bPeaks>
-            <bHills>1</bHills>
-            <bFlatlands>0</bFlatlands>
-            <bNoRiverSide>0</bNoRiverSide>
-            <bRiverSideOnly>0</bRiverSideOnly>
-            <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_GRASS</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_WETLAND</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_DESERT</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_TAIGA</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_SNOW</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-            </TerrainBooleans>
-            <FeatureBooleans>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_JUNGLE</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_MANGROVE</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SWAMP</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_BOG</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_LUSHGRASS</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_MEADOW</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SHRUB</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_DENSE_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_MOSS</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_THICKET</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_CRATER</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_IMPASSABLE_MOUNTAIN</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_DESERT</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_TEMPERATE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ROCK_FORMATIONS_POLAR</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_FLOOD_PLAINS</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-            </FeatureBooleans>
-            <FeatureTerrainBooleans>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_GRASS</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_WETLAND</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_TAIGA</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_DESERT</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SNOW</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-            </FeatureTerrainBooleans>
-        </BonusInfo>
-        <BonusInfo>
-            <Type>BONUS_WHALE</Type>
-            <Description>TXT_KEY_BONUS_WHALE</Description>
-            <Civilopedia>TXT_KEY_BONUS_WHALE_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_WHALE</ArtDefineTag>
-            <BuildingType>NONE</BuildingType>
-            <YieldChanges>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_WHALE_BLUBBER</YieldType>
-                    <iValue>20</iValue>
-                </YieldIntegerPair>
-            </YieldChanges>
-            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
-            <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>6</iPlacementOrder>
-            <iConstAppearance>20</iConstAppearance>
-            <iMinAreaSize>10</iMinAreaSize>
-            <iMinLatitude>0</iMinLatitude>
-            <iMaxLatitude>90</iMaxLatitude>
-            <Rands>
-                <iRandApp1>25</iRandApp1>
-                <iRandApp2>0</iRandApp2>
-                <iRandApp3>0</iRandApp3>
-                <iRandApp4>0</iRandApp4>
-            </Rands>
-            <iPlayer>0</iPlayer>
-            <iTilesPer>60</iTilesPer>
-            <iMinLandPercent>0</iMinLandPercent>
-            <iUnique>6</iUnique>
-            <iGroupRange>0</iGroupRange>
-            <iGroupRand>0</iGroupRand>
-            <bArea>1</bArea>
-            <bPeaks>0</bPeaks>
-            <bHills>0</bHills>
-            <bOcean>1</bOcean>
-            <bFlatlands>0</bFlatlands>
-            <bNoRiverSide>0</bNoRiverSide>
-            <bRiverSideOnly>0</bRiverSideOnly>
-            <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_OCEAN</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-            </TerrainBooleans>
-            <FeatureBooleans>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ICE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-            </FeatureBooleans>
-            <FeatureTerrainBooleans/>
-            <bWhalingboatWorkable>1</bWhalingboatWorkable>
-        </BonusInfo>
-        <BonusInfo>
-            <Type>BONUS_HUMPBACK_WHALE</Type>
-            <Description>TXT_KEY_BONUS_HUMPBACK_WHALE</Description>
-            <Civilopedia>TXT_KEY_BONUS_HUMPBACK_WHALE_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_HUMPBACK_WHALE</ArtDefineTag>
-            <BuildingType>NONE</BuildingType>
-            <YieldChanges>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_WHALE_BLUBBER</YieldType>
-                    <iValue>20</iValue>
-                </YieldIntegerPair>
-            </YieldChanges>
-            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
-            <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>6</iPlacementOrder>
-            <iConstAppearance>20</iConstAppearance>
-            <iMinAreaSize>10</iMinAreaSize>
-            <iMinLatitude>0</iMinLatitude>
-            <iMaxLatitude>90</iMaxLatitude>
-            <Rands>
-                <iRandApp1>25</iRandApp1>
-                <iRandApp2>0</iRandApp2>
-                <iRandApp3>0</iRandApp3>
-                <iRandApp4>0</iRandApp4>
-            </Rands>
-            <iPlayer>0</iPlayer>
-            <iTilesPer>60</iTilesPer>
-            <iMinLandPercent>0</iMinLandPercent>
-            <iUnique>6</iUnique>
-            <iGroupRange>0</iGroupRange>
-            <iGroupRand>0</iGroupRand>
-            <bArea>1</bArea>
-            <bPeaks>0</bPeaks>
-            <bHills>0</bHills>
-            <bOcean>1</bOcean>
-            <bFlatlands>0</bFlatlands>
-            <bNoRiverSide>0</bNoRiverSide>
-            <bRiverSideOnly>0</bRiverSideOnly>
-            <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_OCEAN</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-            </TerrainBooleans>
-            <FeatureBooleans>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ICE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-            </FeatureBooleans>
-            <FeatureTerrainBooleans/>
-            <bWhalingboatWorkable>1</bWhalingboatWorkable>
-        </BonusInfo>
-        <BonusInfo>
-            <Type>BONUS_HIGH_SEA_FISH</Type>
-            <Description>TXT_KEY_BONUS_HIGH_SEA_FISH</Description>
-            <Civilopedia>TXT_KEY_BONUS_HIGH_SEA_FISH_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_HIGH_SEA_FISH</ArtDefineTag>
-            <BuildingType>NONE</BuildingType>
-            <YieldChanges>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>4</iValue>
-                </YieldIntegerPair>
-            </YieldChanges>
-            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
-            <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>6</iPlacementOrder>
-            <iConstAppearance>20</iConstAppearance>
-            <iMinAreaSize>10</iMinAreaSize>
-            <iMinLatitude>0</iMinLatitude>
-            <iMaxLatitude>90</iMaxLatitude>
-            <Rands>
-                <iRandApp1>25</iRandApp1>
-                <iRandApp2>0</iRandApp2>
-                <iRandApp3>0</iRandApp3>
-                <iRandApp4>0</iRandApp4>
-            </Rands>
-            <iPlayer>0</iPlayer>
-            <iTilesPer>60</iTilesPer>
-            <iMinLandPercent>0</iMinLandPercent>
-            <iUnique>6</iUnique>
-            <iGroupRange>0</iGroupRange>
-            <iGroupRand>0</iGroupRand>
-            <bArea>1</bArea>
-            <bPeaks>0</bPeaks>
-            <bHills>0</bHills>
-            <bOcean>1</bOcean>
-            <bFlatlands>0</bFlatlands>
-            <bNoRiverSide>0</bNoRiverSide>
-            <bRiverSideOnly>0</bRiverSideOnly>
-            <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_OCEAN</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-            </TerrainBooleans>
-            <FeatureBooleans>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ICE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_REEF</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_KELP</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SEAGRASS</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_STONE_REEF</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-            </FeatureBooleans>
-            <FeatureTerrainBooleans/>
-            <bFishingboatWorkable>1</bFishingboatWorkable>
-        </BonusInfo>
-        <BonusInfo>
-            <Type>BONUS_HIGH_SEA_FISH2</Type>
-            <Description>TXT_KEY_BONUS_HIGH_SEA_FISH2</Description>
-            <Civilopedia>TXT_KEY_BONUS_HIGH_SEA_FISH2_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_HIGH_SEA_FISH2</ArtDefineTag>
-            <BuildingType>NONE</BuildingType>
-            <YieldChanges>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>4</iValue>
-                </YieldIntegerPair>
-            </YieldChanges>
-            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
-            <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>6</iPlacementOrder>
-            <iConstAppearance>20</iConstAppearance>
-            <iMinAreaSize>10</iMinAreaSize>
-            <iMinLatitude>0</iMinLatitude>
-            <iMaxLatitude>90</iMaxLatitude>
-            <Rands>
-                <iRandApp1>25</iRandApp1>
-                <iRandApp2>0</iRandApp2>
-                <iRandApp3>0</iRandApp3>
-                <iRandApp4>0</iRandApp4>
-            </Rands>
-            <iPlayer>0</iPlayer>
-            <iTilesPer>60</iTilesPer>
-            <iMinLandPercent>0</iMinLandPercent>
-            <iUnique>6</iUnique>
-            <iGroupRange>0</iGroupRange>
-            <iGroupRand>0</iGroupRand>
-            <bArea>1</bArea>
-            <bPeaks>0</bPeaks>
-            <bHills>0</bHills>
-            <bOcean>1</bOcean>
-            <bFlatlands>0</bFlatlands>
-            <bNoRiverSide>0</bNoRiverSide>
-            <bRiverSideOnly>0</bRiverSideOnly>
-            <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_OCEAN</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-            </TerrainBooleans>
-            <FeatureBooleans>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ICE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_REEF</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_KELP</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SEAGRASS</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_STONE_REEF</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-            </FeatureBooleans>
-            <FeatureTerrainBooleans/>
-            <bFishingboatWorkable>1</bFishingboatWorkable>
-        </BonusInfo>
-        <BonusInfo>
-            <Type>BONUS_HIGH_SEA_FISH3</Type>
-            <Description>TXT_KEY_BONUS_HIGH_SEA_FISH3</Description>
-            <Civilopedia>TXT_KEY_BONUS_HIGH_SEA_FISH3_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_HIGH_SEA_FISH3</ArtDefineTag>
-            <BuildingType>NONE</BuildingType>
-            <YieldChanges>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>4</iValue>
-                </YieldIntegerPair>
-            </YieldChanges>
-            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
-            <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>6</iPlacementOrder>
-            <iConstAppearance>20</iConstAppearance>
-            <iMinAreaSize>10</iMinAreaSize>
-            <iMinLatitude>0</iMinLatitude>
-            <iMaxLatitude>90</iMaxLatitude>
-            <Rands>
-                <iRandApp1>25</iRandApp1>
-                <iRandApp2>0</iRandApp2>
-                <iRandApp3>0</iRandApp3>
-                <iRandApp4>0</iRandApp4>
-            </Rands>
-            <iPlayer>0</iPlayer>
-            <iTilesPer>60</iTilesPer>
-            <iMinLandPercent>0</iMinLandPercent>
-            <iUnique>6</iUnique>
-            <iGroupRange>0</iGroupRange>
-            <iGroupRand>0</iGroupRand>
-            <bArea>1</bArea>
-            <bPeaks>0</bPeaks>
-            <bHills>0</bHills>
-            <bOcean>1</bOcean>
-            <bFlatlands>0</bFlatlands>
-            <bNoRiverSide>0</bNoRiverSide>
-            <bRiverSideOnly>0</bRiverSideOnly>
-            <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_OCEAN</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-            </TerrainBooleans>
-            <FeatureBooleans>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ICE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_REEF</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_KELP</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SEAGRASS</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_STONE_REEF</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-            </FeatureBooleans>
-            <FeatureTerrainBooleans/>
-            <bFishingboatWorkable>1</bFishingboatWorkable>
-        </BonusInfo>
-        <BonusInfo>
-            <Type>BONUS_HIGH_SEA_FISH4</Type>
-            <Description>TXT_KEY_BONUS_HIGH_SEA_FISH4</Description>
-            <Civilopedia>TXT_KEY_BONUS_HIGH_SEA_FISH4_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_HIGH_SEA_FISH4</ArtDefineTag>
-            <BuildingType>NONE</BuildingType>
-            <YieldChanges>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>4</iValue>
-                </YieldIntegerPair>
-            </YieldChanges>
-            <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
-            <iAIObjective>0</iAIObjective>
-            <iPlacementOrder>6</iPlacementOrder>
-            <iConstAppearance>30</iConstAppearance>
-            <iMinAreaSize>10</iMinAreaSize>
-            <iMinLatitude>0</iMinLatitude>
-            <iMaxLatitude>90</iMaxLatitude>
-            <Rands>
-                <iRandApp1>25</iRandApp1>
-                <iRandApp2>0</iRandApp2>
-                <iRandApp3>0</iRandApp3>
-                <iRandApp4>0</iRandApp4>
-            </Rands>
-            <iPlayer>0</iPlayer>
-            <iTilesPer>60</iTilesPer>
-            <iMinLandPercent>0</iMinLandPercent>
-            <iUnique>6</iUnique>
-            <iGroupRange>0</iGroupRange>
-            <iGroupRand>0</iGroupRand>
-            <bArea>1</bArea>
-            <bPeaks>0</bPeaks>
-            <bHills>0</bHills>
-            <bOcean>1</bOcean>
-            <bFlatlands>0</bFlatlands>
-            <bNoRiverSide>0</bNoRiverSide>
-            <bRiverSideOnly>0</bRiverSideOnly>
-            <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_OCEAN</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-            </TerrainBooleans>
-            <FeatureBooleans>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_ICE</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_REEF</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_KELP</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SEAGRASS</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_STONE_REEF</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_PEARL_REEF</FeatureType>
-                    <bFeature>0</bFeature>
-                </FeatureBoolean>
-            </FeatureBooleans>
-            <FeatureTerrainBooleans/>
-            <bFishingboatWorkable>1</bFishingboatWorkable>
         </BonusInfo>
     </BonusInfos>
 </Civ4BonusInfos>
