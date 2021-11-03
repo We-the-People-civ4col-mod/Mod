@@ -316,7 +316,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_GOAT</Type>
-            <fScale>1.1</fScale>
+            <fScale>0.9</fScale>
             <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/terrain/resources/Goat/Goat_FX.nif</NIF>
             <KFM>Art/Terrain/Resources/Horse/Horse.kfm</KFM>
@@ -430,7 +430,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Bodenschatz/Gems.nif</NIF>
             <KFM/>
-            <Button>,Art/Interface/Buttons/baseterrain_terrainfeatures_atlas_custom.dds,2,2</Button>
+            <Button>Art/interface/buttons/Minerals.dds</Button>
             <FontButtonIndex>6</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
