@@ -2354,7 +2354,7 @@
             <Yields>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </Yields>
             <RiverYieldIncreases/>
