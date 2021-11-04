@@ -13262,7 +13262,7 @@
             <Button>,Art/colonization_atlas_units.dds,3,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/CM_free_slave.dds</FullLengthIcon>
             <fScale>0.54</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/settler/free_slave/Expert_Cotton_Planter.nif</NIF>
             <KFM>Art/Units/settler/free_slave/Expert_Cotton_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
