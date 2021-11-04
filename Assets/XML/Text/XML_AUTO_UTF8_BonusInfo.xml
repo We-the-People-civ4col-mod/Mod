@@ -600,17 +600,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CHICKEN</Tag>
-        <English>Poultry</English>
+        <English>Chicken</English>
         <German>
-            <Text>Geflügel</Text>
-            <Gender>Male</Gender>
+            <Text>Hühner</Text>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CHICKEN_PEDIA</Tag>
-        <English>The chicken is domesticated from red junglefowl originally from Southeastern Asia.[PARAGRAPH:1]There are more chickens in the world than any other bird.[PARAGRAPH:1]Chickens are omnivores. In the wild, they often scratch at the soil to search for seeds, insects and even animals as large as lizards, small snakes or young mice.[PARAGRAPH:1]An unusual variety of chicken that has its origins in South America is the Araucana, bred in southern Chile by the Mapuche people. Araucanas lay blue-green eggs.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Poultry[COLOR_REVERT] </English>
-        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Geflügel[COLOR_REVERT] </German>
+        <English>The chicken is domesticated from red junglefowl originally from Southeastern Asia.[PARAGRAPH:1]There are more chickens in the world than any other bird.[PARAGRAPH:1]Chickens are omnivores. In the wild, they often scratch at the soil to search for seeds, insects and even animals as large as lizards, small snakes or young mice.[PARAGRAPH:1]An unusual variety of chicken that has its origins in South America is the Araucana, bred in southern Chile by the Mapuche people. Araucanas lay blue-green eggs.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Chicken[COLOR_REVERT] </English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hühner[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_FISH</Tag>
