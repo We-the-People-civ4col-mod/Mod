@@ -15510,7 +15510,6 @@ bool CvPlayerAI::AI_isPathDanger(const CvSelectionGroup* pGroup, const CvPlot* p
 		
 	int iMovesLeft;
 	int iStart;
-	int iPathLength;
 	
 	if (iRange == -1)
 	{
@@ -15519,7 +15518,15 @@ bool CvPlayerAI::AI_isPathDanger(const CvSelectionGroup* pGroup, const CvPlot* p
 		
 	iMovesLeft = (pGroup->getHeadUnit()->movesLeft() / GC.getMOVE_DENOMINATOR());
 	iStart = (pPlot == pToPlot) ? iMovesLeft : 0;
-	iPathLength = (pPlot == pFromPlot) ? pGroup->getPathLength() - iMovesLeft : pGroup->getPathLength();
+	//iPathLength = (pPlot == pFromPlot) ? pGroup->getPathLength() - iMovesLeft : pGroup->getPathLength();
+	// fix: avoids NULL crash when iMovesLeft is negative - Nightinggale
+	// the issue is that iPathLength could become longer than getPathLength() resulting in NULL plots being used without checking for NULL
+	int iPathLength = pGroup->getPathLength();
+	if (pPlot == pFromPlot && iMovesLeft > 0)
+	{
+		iPathLength -= iMovesLeft;
+	}
+	// NULL crash end
 		
 	// R&R, ray, commented out unnecessary Asserts, probably used for testing feature
 	// FAssert(iPathLength > 0);

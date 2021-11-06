@@ -13,14 +13,14 @@
         <Italian>[COLOR_HIGHLIGHT_TEXT]Cronaca[COLOR_REVERT] [COLOR:140:255:40:255]&lt; %s1_ModKey &gt;[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_HIGHLIGHT_TEXT]Crónica[COLOR_REVERT] [COLOR:140:255:40:255]&lt; %s1_ModKey &gt;[COLOR_REVERT]</Spanish>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_ACHIEVE_ADVISOR_TITLE</Tag>
-		<English>Chronicle</English>
-		<French>Chronique</French>
-		<German>Ereignischronik</German>
-		<Italian>Cronaca</Italian>
-		<Spanish>Crónica</Spanish>
-	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_ADVISOR_TITLE</Tag>
+        <English>Chronicle</English>
+        <French>Chronique</French>
+        <German>Ereignischronik</German>
+        <Italian>Cronaca</Italian>
+        <Spanish>Crónica</Spanish>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVES</Tag>
         <English>%s1 - %d2 [NUM2:Achievement:Achievements]</English>
@@ -1569,7 +1569,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_ARMORY</Tag>
-        <English>Your first armory</English>
+        <English>Your first armoury</English>
         <French>Votre première armurerie</French>
         <German>Eure erste Waffenkammer</German>
     </TEXT>
@@ -1661,7 +1661,7 @@
         <Tag>TXT_KEY_ACHIEVE_RANCHERS</Tag>
         <English>Two Expert Ranchers</English>
         <French>Deux experts éleveurs</French>
-        <German>Zwei erfahrene Rancher</German>
+        <German>Zwei erfahrene Züchter</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_RANCHERS_HEAD</Tag>
@@ -1673,7 +1673,7 @@
         <Tag>TXT_KEY_ACHIEVE_RANCHERS_TEXT</Tag>
         <English>Sardonic boyish laughter makes you turn around. Who are those two brats cackling about?[NEWLINE][NEWLINE]With fingers outstretched, they mimic the man's gait, holding their bellies while shouting crude taunts.[NEWLINE][NEWLINE]Meanwhile, the man being harrassed trudges along on his bowlegs, undaunted, without batting an eyelid.[NEWLINE][NEWLINE]With a few quick steps you cross the street and grab the ears of the cheeky badgers.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Don't you know who this man is, what we owe him?[NEWLINE][NEWLINE]This rancher is the most important horse breeder in our colonies. Without him, our soldiers would have to patrol the countryside on foot![COLOR_REVERT]"[NEWLINE][NEWLINE]The children bow their heads in shame.[NEWLINE][NEWLINE]</English>
         <French>Vous disposez dorénavant de deux experts éleveurs. Utilisez les pour produire de nombreux chevaux ![NEWLINE][NEWLINE]</French>
-        <German>Hämisches Jungenlachen lässt Euch herumfahren. Über wen gackern die beiden Gören da?[NEWLINE][NEWLINE]Mit ausgestreckten Fingern verfolgen sie den Gang des Mannes, halten sich die Bäuche und rufen so manches derbe Spottwort.[NEWLINE][NEWLINE]Der Geschmähte stapft indes auf seinen O-Beinen unverdrossen vorbei und verzieht keine Miene.[NEWLINE][NEWLINE]Mit ein paar geschwinden Schritten seid Ihr auf der anderen Straßenseite und zieht den Frechdachsen die Ohren lang.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wisst ihr denn nicht, wer dieser Mann ist, was wir ihm verdanken?[NEWLINE][NEWLINE]Dieser Rancher ist der wichtigste Pferdezüchter unserer Kolonien. Ohne ihn müssten unsere Soldaten zu Fuß durchs Umland patrouillieren![COLOR_REVERT]"[NEWLINE][NEWLINE]Beschämt neigen die Kinder die Köpfe.[NEWLINE][NEWLINE]</German>
+        <German>Hämisches Jungenlachen lässt Euch herumfahren. Über wen gackern die beiden Gören da?[NEWLINE][NEWLINE]Mit ausgestreckten Fingern verfolgen sie den Gang des Mannes, halten sich die Bäuche und rufen so manches derbe Spottwort.[NEWLINE][NEWLINE]Der Geschmähte stapft indes auf seinen O-Beinen unverdrossen vorbei und verzieht keine Miene.[NEWLINE][NEWLINE]Mit ein paar geschwinden Schritten seid Ihr auf der anderen Straßenseite und zieht den Frechdachsen die Ohren lang.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wisst ihr denn nicht, wer dieser Mann ist, was wir ihm verdanken?[NEWLINE][NEWLINE]Dieser Züchter ist der wichtigste Pferdezüchter unserer Kolonien. Ohne ihn müssten unsere Soldaten zu Fuß durchs Umland patrouillieren![COLOR_REVERT]"[NEWLINE][NEWLINE]Beschämt neigen die Kinder die Köpfe.[NEWLINE][NEWLINE]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_MILITIAS</Tag>
@@ -1745,7 +1745,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_HESSIAN_TEXT</Tag>
-        <English>"[COLOR_SELECTED_TEXT]I don't know, General[COLOR_REVERT]", says the governor. "[COLOR_SELECTED_TEXT]Do we need any more foreign mercenaries here? We have enough trouble feeding and maintaining our own troops.[NEWLINE][NEWLINE]All they think about is their pay. If we can't pay them, they'll scatter to the four winds and possibly start looting. We also have to pay a fee the Landgrave of Hesse-Kassel.[NEWLINE][NEWLINE]These guys really know how to fight. You hear the most fantastic stories. They can fire three shots a minute and they're also quite lethal with the bayonet.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>"[COLOR_SELECTED_TEXT]I don't know, General[COLOR_REVERT]", says the governor. "[COLOR_SELECTED_TEXT]Do we need any more foreign mercenaries here? We have enough trouble feeding and maintaining our own troops.[NEWLINE][NEWLINE]All they think about is their pay. If we can't pay them, they'll scatter to the four winds and possibly start looting. We also have to pay a fee to the Landgrave of Hesse-Kassel.[NEWLINE][NEWLINE]I will admit they really know how to fight. You hear the most fantastic stories. They can fire three shots a minute and they're quite lethal with the bayonet.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <German>"[COLOR_SELECTED_TEXT]Ich weiß nicht, General,[COLOR_REVERT]" meint der Gouverneur, "[COLOR_SELECTED_TEXT]benötigen wir denn noch mehr ausländische Söldner bei uns? Wir können doch schon mehr schlecht als recht unsere eigenen Truppen ernähren und unterhalten.[NEWLINE][NEWLINE]Die denken doch nur an ihren Sold. Wenn wir den nicht aufbringen können, dann zerstreuen sie sich in alle Winde und fangen womöglich an, zu plündern. Und den Landgrafen von Hessen-Kassel müssen wir auch noch bezahlen.[NEWLINE][NEWLINE]Naja, wenigstens kämpfen können diese Kerle. Man hört ja die tollsten Geschichten. Sollen drei Schuss in der Minute abfeuern können und mit dem Bajonett sollen sie auch ganz flink sein.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
     </TEXT>
     <TEXT>
@@ -2229,7 +2229,7 @@
         <Tag>TXT_KEY_ACHIEVE_ONE_HORSE_MARKET_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Have you delivered those fifty horses to the militia yet?[COLOR_REVERT]" asks the rancher.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Yes, but what about the thirty cattle for the slaughterhouse?[COLOR_REVERT]" says the second rancher.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I delivered those right after I dropped off the herd of sheep at the weaving mill.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well then, for today at least everyone is taken care of[COLOR_REVERT]", laughs the second rancher.[NEWLINE][NEWLINE]</English>
         <French>Voilà une belle infrastructure pour l'élevage des moutons, boeufs et chevaux dans vos colonies.[NEWLINE][NEWLINE]</French>
-        <German>"[COLOR_SELECTED_TEXT]Hast Du die fünzig Pferde schon bei der Miliz abgeliefert?[COLOR_REVERT]" fragt der Rancher.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, aber hast Du auch an die dreißig Rinder für die Schlachterei gedacht?[COLOR_REVERT]" gibt der zweite Rancher zurück.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Natürlich, die hab ich gleich abgeliefert, nachdem ich die Herde Schafe bei der Weberei vorbei gebracht habe.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Na, dann sind ja für heute alle versorgt[COLOR_REVERT]", lacht der zweite Rancher vergnügt.[NEWLINE][NEWLINE]</German>
+        <German>"[COLOR_SELECTED_TEXT]Hast Du die fünzig Pferde schon bei der Miliz abgeliefert?[COLOR_REVERT]" fragt der Züchter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, aber hast Du auch an die dreißig Rinder für die Schlachterei gedacht?[COLOR_REVERT]" gibt der zweite Züchter zurück.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Natürlich, die hab ich gleich abgeliefert, nachdem ich die Herde Schafe bei der Weberei vorbei gebracht habe.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Na, dann sind ja für heute alle versorgt[COLOR_REVERT]", lacht der zweite Züchter vergnügt.[NEWLINE][NEWLINE]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_THEATRE</Tag>

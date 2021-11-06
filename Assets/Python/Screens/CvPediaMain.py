@@ -924,6 +924,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 					list.append("Mr.ZorG")
 					list.append("TXT_KEY_CREDITS_FURSTBISCHOF")
 					list.append("Kendon")
+					list.append("TXT_KEY_CREDITS_RAUWURGER")
 					
 					szTextData += localText.getText("TXT_KEY_CREDITS_WTP", ())
 					szTextData += localText.getText("[NEWLINE]", ())

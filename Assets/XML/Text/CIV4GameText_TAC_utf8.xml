@@ -462,12 +462,6 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_TRAIT_MERCANTILE_HELP</Tag>
-        <English>[ICON_BULLET]Market prices are less sensitive and the maximum tax rate is lower</English>
-        <French>[ICON_BULLET]Les prix du marché sont moins fluctuants et le taux d'imposition maximal est plus faible</French>
-        <German>[ICON_BULLET]Marktpreise verändern sich nur halb so schnell und die Steuerobergrenze ist niedriger</German>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_TRAIT_SEAFARERS_SHORT</Tag>
         <English>Sea</English>
         <French>Nav</French>
@@ -928,16 +922,16 @@
         <English>Vulcan</English>
         <French>Volcan</French>
         <German>Vulkan</German>
-        <Italian>Vulcan</Italian>
-        <Spanish>Vulcan</Spanish>
+        <Italian>Vulcano</Italian>
+        <Spanish>Volcán</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_VULKAN_PEDIA</Tag>
         <English>Vulcan</English>
         <French>Volcan</French>
         <German>Vulkan</German>
-        <Italian>Vulcan</Italian>
-        <Spanish>Vulcan</Spanish>
+        <Italian>Vulcano</Italian>
+        <Spanish>Volcán</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_SCRIPT_LANDMASS_TYPE</Tag>
@@ -962,14 +956,6 @@
         <German>Piraten konnten %d1[ICON_GOLD] von Euch erbeuten</German>
         <Italian>I pirati ti hanno estorto %d1[ICON_GOLD]</Italian>
         <Spanish>You lost %d1[ICON_GOLD] to Pirates</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PEDIA_SCREEN_TOP</Tag>
-        <English>Top</English>
-        <French>Rubrique</French>
-        <German>Nach oben</German>
-        <Italian>Torna a Colonizopedia</Italian>
-        <Spanish>Inicio</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YOU_UNITS_EUROPE_INTERCEPTED</Tag>
@@ -1022,42 +1008,74 @@
     <TEXT>
         <Tag>TXT_KEY_TRADE_WORLD_MAP_STRING</Tag>
         <English>New World Map</English>
-        <French>Carte du Nouveau Monde</French>
-        <German>Karte der Neuen Welt</German>
-        <Italian>New World Map</Italian>
-        <Spanish>New World Map</Spanish>
+        <French>
+            <Text>Carte du Nouveau Monde</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Karte der Neuen Welt</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Mappa del Nuovo Mondo</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Mapa del Nuevo Mundo</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_WORLD_MAP</Tag>
-        <English>New World Map</English>
-        <French>Carte du Nouveau Monde</French>
-        <German>Karte der Neuen Welt</German>
-        <Italian>New World Map</Italian>
-        <Spanish>New World Map</Spanish>
+        <English>World Map</English>
+        <French>
+            <Text>Carte du monde</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Weltkarte</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Mappa</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Mapamundi</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_HURRY_SHORTAGE</Tag>
         <English>Buy shortfall : %d1[ICON_GOLD]</English>
         <French>Acheter le restant : %d1[ICON_GOLD]</French>
         <German>Kaufe den Fehlbetrag : %d1[ICON_GOLD]</German>
-        <Italian>Buy shortfall : %d1[ICON_GOLD]</Italian>
-        <Spanish>Buy shortfall : %d1[ICON_GOLD]</Spanish>
+        <Italian>Compra insufficiente : %d1[ICON_GOLD]</Italian>
+        <Spanish>Comprar déficit : %d1[ICON_GOLD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_CONQUEST</Tag>
         <English>Conquest</English>
         <French>Conquête</French>
         <German>Eroberung</German>
-        <Italian>Conquest</Italian>
-        <Spanish>Conquest</Spanish>
+        <Italian>Conquista</Italian>
+        <Spanish>Conquista</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_CONQUEST_PEDIA</Tag>
         <English>Eliminate all rivals</English>
         <French>Eliminer tous vos rivaux</French>
         <German>Vernichte alle Rivalen ...</German>
-        <Italian>Eliminate all rivals</Italian>
-        <Spanish>Eliminate all rivals</Spanish>
+        <Italian>Eliminare tutti i rivali</Italian>
+        <Spanish>Eliminar a todos los rivales</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_TRADE</Tag>
@@ -1072,24 +1090,24 @@
         <English>Start the Industrial Revolution (production rate per turn)</English>
         <French>Commencer la Révolution Industrielle (taux de production par tour)</French>
         <German>Industrielle Revolution (Produktionsrate pro Runde)</German>
-        <Italian>Start the Industrial Revolution (production rate per turn)</Italian>
-        <Spanish>Start the Industrial Revolution (production rate per turn)</Spanish>
+        <Italian>Iniziare la rivoluzione industriale (tasso di produzione per turno)</Italian>
+        <Spanish>Iniciar la revolución industrial (tasa de producción por turno)</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_TOTAL_PROD_RATE</Tag>
         <English>Total production rate :</English>
         <French>Production totale :</French>
         <German>Gesamtproduktionsrate :</German>
-        <Italian>Total production rate :</Italian>
-        <Spanish>Total production rate :</Spanish>
+        <Italian>Tasso di produzione totale :</Italian>
+        <Spanish>Tasa de producción total :</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_PRODUCTION_OF</Tag>
         <English>Target amount :</English>
         <French>Seuil à atteindre :</French>
         <German>Zielsumme :</German>
-        <Italian>Target amount :</Italian>
-        <Spanish>Target amount :</Spanish>
+        <Italian>Importo obiettivo :</Italian>
+        <Spanish>Importe objetivo :</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_PLUNDER</Tag>
@@ -1133,14 +1151,14 @@
         <French>[COLOR_CYAN]Menu des conseillers[COLOR_REVERT]</French>
         <German>[COLOR_CYAN]Berater-Menü[COLOR_REVERT]</German>
         <Italian>[COLOR_CYAN]Menu Ausiliario[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_CYAN]Advisor Menu[COLOR_REVERT]</Spanish>
+        <Spanish>[COLOR_CYAN]Menú Asesor[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_SENTRY_WHILE_HEAL</Tag>
         <English>Sentry while healing</English>
         <French>En sentinelle jusqu'à guérison</French>
         <German>Wachen während der Heilung</German>
-        <Italian>Sentry while Healing</Italian>
+        <Italian>Sentinella durante la guarigione</Italian>
         <Spanish>Vigilar al curarse</Spanish>
     </TEXT>
     <TEXT>
@@ -1153,10 +1171,10 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_SENTRY_NAVAL_UNITS</Tag>
-        <English>Guardship (Naval Units)</English>
+        <English>Guardship (naval units)</English>
         <French>En sentinelle (unités navales)</French>
         <German>Wache (Seeeinheit)</German>
-        <Italian>Sentry (Naval Units)</Italian>
+        <Italian>Sentinella (unità navali)</Italian>
         <Spanish>Vigilar (unidades navales)</Spanish>
     </TEXT>
     <TEXT>
@@ -1169,10 +1187,10 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_SENTRY_LAND_UNITS</Tag>
-        <English>Sentry (Land Units)</English>
+        <English>Sentry (land units)</English>
         <French>En sentinelle (unités terrestes)</French>
         <German>Wache (Landeinheit)</German>
-        <Italian>Sentry (Land Units)</Italian>
+        <Italian>Sentinella (unità di terra)</Italian>
         <Spanish>Vigilar (unidades terrestres)</Spanish>
     </TEXT>
     <TEXT>
@@ -1188,7 +1206,7 @@
         <English>Move and sentry</English>
         <French>Déplacer et mettre en sentinelle</French>
         <German>Wachen während der Bewegung</German>
-        <Italian>Move and Sentry</Italian>
+        <Italian>Muoversi e sentinella</Italian>
         <Spanish>Moverse y Vigilar</Spanish>
     </TEXT>
     <TEXT>
@@ -1204,7 +1222,7 @@
         <English>Go to and sentry mode</English>
         <French>Mode "aller à et mettre en sentinelle"</French>
         <German>Wachen während Gehe zu</German>
-        <Italian>Go To and Sentry Mode</Italian>
+        <Italian>Vai a e modalità sentinella</Italian>
         <Spanish>Modo Ir a y Vigilar</Spanish>
     </TEXT>
     <TEXT>
@@ -1220,7 +1238,7 @@
         <English>Select all units (same profession)</English>
         <French>Selectionner toutes les unités (même type)</French>
         <German>Wähle alle Einheiten desselben Typs</German>
-        <Italian>Select All Units (Same Profession)</Italian>
+        <Italian>Seleziona tutte le unità (della stessa professione)</Italian>
         <Spanish>Seleccionar todas las unidades (de la misma profesion)</Spanish>
     </TEXT>
     <TEXT>
@@ -1265,49 +1283,49 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_EXPERT</Tag>
-        <English>A Free Colonist who has worked long in his profession has now gained enough knowledge to be considered [COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT].</English>
+        <English>A free colonist who has worked long in his profession has now gained enough knowledge to be considered [COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT].</English>
         <French>[COLOR_POSITIVE_TEXT]Un colon a été promu %s1_expert.[COLOR_REVERT]</French>
         <German>Ein Freier Kolonist, der lange in seinem Beruf gearbeitet hat, hat nun genug Wissen erlangt, um als [COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT] zu gelten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_EXPERT_IN_CITY</Tag>
-        <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]A Free Colonist who has worked long in his profession has now gained enough knowledge to be considered [COLOR_UNIT_TEXT]%s2_expert[COLOR_REVERT].</English>
+        <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]A free colonist who has worked long in his profession has now gained enough knowledge to be considered [COLOR_UNIT_TEXT]%s2_expert[COLOR_REVERT].</English>
         <French>[COLOR_POSITIVE_TEXT]Un colon a été promu expert %s2_expert.[COLOR_REVERT]</French>
         <German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Ein Freier Kolonist, der lange in seinem Beruf gearbeitet hat, hat nun genug Wissen erlangt, um als [COLOR_UNIT_TEXT]%s2_expert[COLOR_REVERT] zu gelten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_FREE</Tag>
-        <English>An Unfree Colonist has earned his [COLOR_POSITIVE_TEXT]freedom[COLOR_REVERT] through hard work.</English>
+        <English>An unfree colonist has earned his [COLOR_POSITIVE_TEXT]freedom[COLOR_REVERT] through hard work.</English>
         <French>[COLOR_POSITIVE_TEXT]Un colon a gagné sa liberté.[COLOR_REVERT]</French>
         <German>Ein Unfreier hat sich durch harte Arbeit seine [COLOR_POSITIVE_TEXT]Freiheit[COLOR_REVERT] verdient.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_FREE_IN_CITY</Tag>
-        <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]An Unfree Colonist has earned his freedom through hard work.</English>
+        <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]An unfree colonist has earned his freedom through hard work.</English>
         <French>[COLOR_POSITIVE_TEXT]Un colon a gagné sa liberté.[COLOR_REVERT]</French>
         <German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Ein Unfreier hat sich durch harte Arbeit seine Freiheit verdient.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_ESCAPE</Tag>
-        <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]An Unfree Colonist has disappeared. It is suspected that he has fled into the wilderness.</English>
+        <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]An unfree colonist has disappeared. It is suspected that he has fled into the wilderness.</English>
         <French>[COLOR_WARNING_TEXT]Un captif s'est enfui de %s1_city.[COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Ein Unfreier ist verschwunden. Man vermutet, dass er in die Wildnis geflohen ist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_REVOLT</Tag>
-        <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]An Unfree Colonist has revolted. He is believed to have fled into the wilderness.</English>
+        <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]An unfree colonist has revolted. He is believed to have fled into the wilderness.</English>
         <French>[COLOR_WARNING_TEXT]Un captif s'est revolté et enfui de %s1_city.[COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Ein Unfreier hat revoltiert. Man vermutet, dass er in die Wildnis geflohen ist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_VETERAN_BY_MILITARY_SERVICE</Tag>
-        <English>[COLOR_POSITIVE_TEXT]A Free Colonist has gained enough experience through combat to become a [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT]</English>
+        <English>[COLOR_POSITIVE_TEXT]A free colonist has gained enough experience through combat to become a [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT]</English>
         <French>[COLOR_POSITIVE_TEXT]Un colon libre a gagné suffisamment d'expérience pour devenir %s1_expert[COLOR_REVERT]</French>
         <German>[COLOR_POSITIVE_TEXT]Ein Freier Kolonist hat im Kampf genug Erfahrung gesammelt, um jetzt als [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT][COLOR_POSITIVE_TEXT] zu gelten.[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_FREE_BY_MILITARY_SERVICE</Tag>
-        <English>[COLOR_POSITIVE_TEXT]An Unfree Colonist has become free for his bravery in battle.[COLOR_REVERT]</English>
+        <English>[COLOR_POSITIVE_TEXT]An unfree colonist has become free for his bravery in battle.[COLOR_REVERT]</English>
         <French>[COLOR_POSITIVE_TEXT]Un combattant a gagné le droit de devenir un colon libre par sa bravoure dans la bataille.[COLOR_REVERT]</French>
         <German>[COLOR_POSITIVE_TEXT]Ein Unfreier hat sich durch Mut und Einsatz im Kampf seine Freiheit verdient.[COLOR_REVERT]</German>
     </TEXT>
@@ -1316,39 +1334,34 @@
         <English>[ICON_BULLET]Offers %d1_Num [NUM1:job:jobs]</English>
         <French>[ICON_BULLET]Peut accueillir %d1_Num [NUM1:employé:employés]</French>
         <German>[ICON_BULLET]Bietet %d1_Num [NUM1:Arbeitsplatz:Arbeitsplätze]</German>
-        <Italian>[ICON_BULLET]Offers %d1_Num [NUM1:job:jobs]</Italian>
-        <Spanish>[ICON_BULLET]Offers %d1_Num [NUM1:job:jobs]</Spanish>
+        <Italian>[ICON_BULLET]Offerte %d1_Num [NUM1:luogo di lavoro:luoghi di lavoro]</Italian>
+        <Spanish>[ICON_BULLET]Ofrece %d1_Num [NUM1:lugar de trabajo:lugares de trabajo]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MAX_WORKERS2</Tag>
         <English>%d1_Num [NUM1:job:jobs]</English>
         <French>%d1_Num [NUM1:emploi:emplois]</French>
         <German>%d1_Num [NUM1:Arbeitsplatz:Arbeitsplätze]</German>
-        <Italian>%d1_Num [NUM1:job:jobs]</Italian>
-        <Spanish>%d1_Num [NUM1:job:jobs]</Spanish>
+        <Italian>%d1_Num [NUM1:luogo di lavoro:luoghi di lavoro]</Italian>
+        <Spanish>%d1_Num [NUM1:lugar de trabajo:lugares de trabajo]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMPETITIOR_INDEPENDENCE_WAR</Tag>
         <English>The community of the world's peoples is holding its breath: The [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] colonies have risen up against their king. They no longer want to bow to the heel of a tyrant.</English>
         <French>Les colonies [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ont déclaré la guerre contre leur propre roi !! Ils se battront pour leurs droits jusqu'à ce qu'ils gagnent leur liberté.</French>
         <German>Die Gemeinschaft der Völker dieser Welt hält den Atem an: Die [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonien haben sich gegen ihren König erhoben. Sie wollen sich nicht länger der Knute eines Tyrannen beugen.</German>
-        <Spanish>The %s1_civ_adjective colonies have declared war on their king. They will fight for their rights and their freedom.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCHOOL_BUILDING_NEEDED</Tag>
         <English>[ICON_BULLET]Can be trained in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</English>
         <French>[ICON_BULLET]Peut être formé dans les [COLOR_BUILDING_TEXT][LINK=literal]%s1:2_building[\LINK][COLOR_REVERT]</French>
         <German>[ICON_BULLET]Ausbildung möglich in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</German>
-        <Italian>[ICON_BULLET]Can be trained in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</Italian>
-        <Spanish>[ICON_BULLET]Can be trained in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_AIONLY</Tag>
-        <English>[ICON_BULLET][COLOR_WARNING_TEXT]AI Unit only[COLOR_REVERT]</English>
-        <French>[ICON_BULLET][COLOR_WARNING_TEXT]Unité IA uniquement[COLOR_REVERT]</French>
+        <English>[ICON_BULLET][COLOR_WARNING_TEXT]Only available to AI colonial powers[COLOR_REVERT]</English>
+        <French>[ICON_BULLET][COLOR_WARNING_TEXT]Uniquement disponible pour les puissances coloniales contrôlées par IA[COLOR_REVERT]</French>
         <German>[ICON_BULLET][COLOR_WARNING_TEXT]Steht nur vom Computer gesteuerten Kolonialmächten zur Verfügung[COLOR_REVERT]</German>
-        <Italian>[ICON_BULLET][COLOR_WARNING_TEXT]AI Unit only[COLOR_REVERT]</Italian>
-        <Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]AI Unit only[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LBD</Tag>
@@ -1376,19 +1389,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROF_LBD1</Tag>
-        <English>[ICON_BULLET]A Free Colonist can become an expert in this profession after some time</English>
+        <English>[ICON_BULLET]A free colonist can become an expert in this profession after some time</English>
         <French>[ICON_BULLET]Un colon libre exerçant cette profession peut devenir un expert au bout d'un certain temps</French>
         <German>[ICON_BULLET]Ein Freier Kolonist kann nach einiger Zeit zum Experten in diesem Beruf werden</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROF_LBD2</Tag>
-        <English>[ICON_BULLET]A Free Colonist can become an expert in the profession after a long time</English>
+        <English>[ICON_BULLET]A free colonist can become an expert in the profession after a long time</English>
         <French>[ICON_BULLET]Un colon libre exerçant cette profession peut devenir un expert au bout d'un certain temps</French>
         <German>[ICON_BULLET]Ein Freier Kolonist kann nach langer Zeit zum Experten in diesem Beruf werden</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROF_LBD3</Tag>
-        <English>[ICON_BULLET]A Free Colonist can become an expert in the profession after a very long time</English>
+        <English>[ICON_BULLET]A free colonist can become an expert in the profession after a very long time</English>
         <French>[ICON_BULLET]Un colon libre exerçant cette profession peut devenir un expert au bout d'une très longue période</French>
         <German>[ICON_BULLET]Ein Freier Kolonist kann nach sehr langer Zeit zum Experten in diesem Beruf werden</German>
     </TEXT>
@@ -1448,12 +1461,12 @@
         <Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS</Tag>
         <English>Milord, the reinforcement troops sent by His Majesty have arrived. We have heard rumours that your enemy's king has also sent reinforcements as well.</English>
         <French>Les renforts de notre roi sont arrivés. Les renforts du otre roi sont arrivés aussi.</French>
-        <German>Milord, die Unterstützungstruppen Seiner Majestät sind eingetroffen. Wir haben Gerüchte gehört, dass der König Eures Gegners auch Unterstützungstruppen entsandt hat.</German>
+        <German>Milord, die von Seiner Majestät entsandten Unterstützungstruppen sind eingetroffen. Wir haben Gerüchte gehört, dass der Gegner Seiner Majestät auch Unterstützungstruppen in die Neue Welt entsandt hat.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_INCCREASED_MAX_TAX</Tag>
         <English>Angered by our disobedience, His Majesty has increased our maximum tax rate by %d1_increase.[NEWLINE]However, our relationship with [COLOR_HIGHLIGHT_TEXT]%s2_nation[COLOR_REVERT] has improved.</English>
-        <French>Irrité par notre désobéissance, le roi a augmenté notre taux maximal d'imposition de %d1_increase.[NEWLINE]Notre relation avec %s2_nation mais s'est améliorée.</French>
+        <French>Irrité par notre désobéissance, le roi a augmenté notre taux maximal d'imposition de %d1_increase.[NEWLINE]Notre relation avec [COLOR_HIGHLIGHT_TEXT]%s2_nation[COLOR_REVERT] mais s'est améliorée.</French>
         <German>Verärgert über unseren Ungehorsam hat Seine Majestät unseren maximalen Steuersatz um %d1_increase erhöht.[NEWLINE]Unsere Beziehung zu [COLOR_HIGHLIGHT_TEXT]%s2_nation[COLOR_REVERT] hat sich jedoch verbessert.</German>
     </TEXT>
     <TEXT>
@@ -1581,8 +1594,8 @@
         <English>AoD Cheat Menu!</English>
         <French>Menu de triche d'AoD!</French>
         <German>Eine düstere Gestalt tritt heran ...</German>
-        <Italian>AoD Cheat Menu!</Italian>
-        <Spanish>AoD Cheat Menu!</Spanish>
+        <Italian>Menu imbroglio</Italian>
+        <Spanish>Menú de trucos</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHEATMENU_TEXT</Tag>
@@ -1617,7 +1630,7 @@
     <TEXT>
         <Tag>TXT_KEY_MONEYTREE</Tag>
         <English>Amount of [ICON_GOLD] to add:</English>
-        <French>Montant d'or à ajouter :</French>
+        <French>Montant de [ICON_GOLD] à ajouter :</French>
         <German>Seele(n) verkaufen für [ICON_GOLD]:</German>
     </TEXT>
     <TEXT>
@@ -1642,7 +1655,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TIMETEXT_TURN_NO_LIMIT</Tag>
-        <English>[COLOR_FONT_CREAM]Turn :[COLOR_REVERT] %d1 / No Limit[NEWLINE][NEWLINE]</English>
+        <English>[COLOR_FONT_CREAM]Turn :[COLOR_REVERT] %d1 / No limit[NEWLINE][NEWLINE]</English>
         <French>[COLOR_FONT_CREAM]Tour :[COLOR_REVERT] %d1 / Aucune limite[NEWLINE][NEWLINE]</French>
         <German>[COLOR_FONT_CREAM]Runde :[COLOR_REVERT] %d1 / Kein Rundenlimit[NEWLINE][NEWLINE]</German>
         <Italian>[COLOR_FONT_CREAM]Turno :[COLOR_REVERT] %d1 / Nessun limite[NEWLINE][NEWLINE]</Italian>
@@ -1669,8 +1682,8 @@
         <English>[COLOR_FONT_CREAM]Rebel percent :[COLOR_REVERT][NEWLINE]</English>
         <French>[COLOR_FONT_CREAM]Sentiment de révolte :[COLOR_REVERT][NEWLINE]</French>
         <German>[COLOR_FONT_CREAM]Rebellische Stimmung :[COLOR_REVERT][NEWLINE]</German>
-        <Italian>[COLOR_FONT_CREAM]Rebel percent :[COLOR_REVERT][NEWLINE]</Italian>
-        <Spanish>[COLOR_FONT_CREAM]Rebel percent :[COLOR_REVERT][NEWLINE]</Spanish>
+        <Italian>[COLOR_FONT_CREAM]Spirito ribelle :[COLOR_REVERT][NEWLINE]</Italian>
+        <Spanish>[COLOR_FONT_CREAM]Estado de ánimo rebelde :[COLOR_REVERT][NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TIMETEXT_REBELS</Tag>
@@ -1721,20 +1734,10 @@
         <Spanish>[NEWLINE][NEWLINE][COLOR_FONT_CREAM]Hora :[COLOR_REVERT] %s1</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_MISC_CTRL_SHIFT</Tag>
-        <English>Shift units by one row</English>
-        <French>Décaler les unités d'une rangée</French>
-        <German>Einheiten um eine Reihe verschieben</German>
-        <Italian>Shift units by one row</Italian>
-        <Spanish>Shift units by one row</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_COMMAND_GOTO_MENU_TITLE</Tag>
         <English>Select destination</English>
         <French>Assigner la destination</French>
         <German>Zielsiedlung wählen</German>
-        <Italian>Select destination</Italian>
-        <Spanish>Select destination</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_GOTO_MENU_SELECTION</Tag>
@@ -1749,32 +1752,24 @@
         <English>Select destination in the [COLOR_HIGHLIGHT_TEXT]New World[COLOR_REVERT]</English>
         <French>Cap sur le [COLOR_HIGHLIGHT_TEXT]Nouveau Monde[COLOR_REVERT]</French>
         <German>Reiseziel in der [COLOR_HIGHLIGHT_TEXT]Neuen Welt[COLOR_REVERT] auswählen</German>
-        <Italian>Sail to the New World</Italian>
-        <Spanish>Sail to the New World</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_PREVIEW_MODE</Tag>
         <English>Switch preview mode</English>
         <French>Afficher la vue externe du port d'arrivée</French>
         <German>Stadtvorschau an/aus</German>
-        <Italian>Switch preview mode</Italian>
-        <Spanish>Switch preview mode</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SAIL_EAST</Tag>
         <English>[COLOR_REVERT]Crossing the Atlantic</English>
         <French>Atlantique</French>
         <German>[COLOR_REVERT]Überquert den Atlantik</German>
-        <Italian>East</Italian>
-        <Spanish>East</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SAIL_WEST</Tag>
         <English>[COLOR_REVERT]Rounding Cape Horn to the Pacific</English>
         <French>Pacifique</French>
         <German>[COLOR_REVERT]Umrundet Kap Hoorn in Richtung Pazifik</German>
-        <Italian>West</Italian>
-        <Spanish>West</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_ROUTE</Tag>
@@ -1802,43 +1797,39 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_BOUND</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT][NEWLINE]Due in %d2 [NUM2:turn:turns][NEWLINE]Cargo : %d3/%d4</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT][NEWLINE]A échéance dans %d2 tours[NEWLINE]Cargaison : %d3/%d4</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT][NEWLINE]Ankunft in %d2 [NUM2:Runde:Runden][NEWLINE]Ladung : %d3/%d4</German>
+        <English>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT][NEWLINE]Due in %d2 [NUM2:turn:turns][NEWLINE]Cargo : %d3 / %d4</English>
+        <French>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT][NEWLINE]A échéance dans %d2 tours[NEWLINE]Cargaison : %d3 / %d4</French>
+        <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT][NEWLINE]Ankunft in %d2 [NUM2:Runde:Runden][NEWLINE]Ladung : %d3 / %d4</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SAIL_EAST_MESSAGE</Tag>
         <English>New World - [COLOR_HIGHLIGHT_TEXT]crossing the Atlantic[COLOR_REVERT]</English>
         <French>Nouveau monde - [COLOR_HIGHLIGHT_TEXT]Atlantique[COLOR_REVERT]</French>
         <German>Neue Welt - [COLOR_HIGHLIGHT_TEXT]überquert den Atlantik[COLOR_REVERT]</German>
-        <Italian>New World - [COLOR_HIGHLIGHT_TEXT]east[COLOR_REVERT]</Italian>
-        <Spanish>New World - [COLOR_HIGHLIGHT_TEXT]east[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SAIL_WEST_MESSAGE</Tag>
         <English>New World - [COLOR_HIGHLIGHT_TEXT]rounding Cape Horn[COLOR_REVERT]</English>
         <French>Nouveau monde - [COLOR_HIGHLIGHT_TEXT]Pacifique[COLOR_REVERT]</French>
         <German>Neue Welt - [COLOR_HIGHLIGHT_TEXT]umrundet Kap Hoorn[COLOR_REVERT]</German>
-        <Italian>New World - [COLOR_HIGHLIGHT_TEXT]west[COLOR_REVERT]</Italian>
-        <Spanish>New World - [COLOR_HIGHLIGHT_TEXT]west[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SAIL_EAST</Tag>
-        <English>Sail to the New World - East</English>
+        <English>Sail to the New World - East Coast</English>
         <French>Partir pour le Nouveau Monde par l'Atlantique</French>
         <German>Segelt in die Neue Welt - Ostküste!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SAIL_WEST</Tag>
-        <English>Sail to the New World - West</English>
+        <English>Sail to the New World - West Coast</English>
         <French>Partir pour le Nouveau Monde par le Pacifique</French>
         <German>Segelt in die Neue Welt - Westküste!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_WAREHOUSE_INFO</Tag>
         <English>[COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] (capacity of warehouse : %d2)</English>
-        <French>%s1 - entrepôt d'une capacité maximale de %d2:</French>
-        <German>[COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] (Kapazität des Warenhauses : %d2):</German>
+        <French>[COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] ( entrepôt d'une capacité maximale de %d2):</French>
+        <German>[COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] (Kapazität des Lagerhauses : %d2)</German>
         <Italian>%s1 - warehouse (max %d2):</Italian>
         <Spanish>%s1 - warehouse (max %d2):</Spanish>
     </TEXT>
@@ -1847,16 +1838,12 @@
         <English>Show trade log</English>
         <French>Afficher le registre</French>
         <German>Handelsbuch aufklappen</German>
-        <Italian>Show trade log</Italian>
-        <Spanish>Show trade log</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_HIDE_TRADE_LOG</Tag>
         <English>Hide trade log</English>
         <French>Cacher le registre</French>
         <German>Handelsbuch verbergen</German>
-        <Italian>Hide trade log</Italian>
-        <Spanish>Hide trade log</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_TRADE_LOG_1</Tag>
@@ -1900,7 +1887,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_TRADE_LOG_4</Tag>
-        <English>Taxes</English>
+        <English>Tax</English>
         <French>Taxes</French>
         <German>Steuern</German>
         <Italian>Tax</Italian>
@@ -1911,24 +1898,18 @@
         <English>Sell this ship?</English>
         <French>Vendre votre bateau ?</French>
         <German>Schiff verkaufen?</German>
-        <Italian>Sell your ship?</Italian>
-        <Spanish>Sell your ship?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SELL_MESSAGE</Tag>
         <English>That floating coffin named [COLOR_UNIT_TEXT]%s1[COLOR_REVERT]? Well, I'll give you %d2[ICON_GOLD].</English>
         <French>Ce raffiot que vous appelez [COLOR_UNIT_TEXT]%s1[COLOR_REVERT] ? Et bien ... je vous en donne %d2[ICON_GOLD].</French>
         <German>Diesen morschen Kahn namens [COLOR_UNIT_TEXT]%s1[COLOR_REVERT]? Nun, %d2[ICON_GOLD] seien Euch gewährt.</German>
-        <Italian>That floating coffin you call a [COLOR_UNIT_TEXT]%s1[COLOR_REVERT]? Well, I'll give you %d2[ICON_GOLD].</Italian>
-        <Spanish>That floating coffin you call a [COLOR_UNIT_TEXT]%s1[COLOR_REVERT]? Well, I'll give you %d2[ICON_GOLD].</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SELL_SHORT</Tag>
         <English>Sell your [COLOR_UNIT_TEXT]%s1[COLOR_REVERT] for [COLOR_YELLOW]%d2[COLOR_REVERT][ICON_GOLD]?</English>
         <French>Vendre votre [COLOR_UNIT_TEXT]%s1[COLOR_REVERT] pour [COLOR_YELLOW]%d2[COLOR_REVERT][ICON_GOLD] ?</French>
         <German>[COLOR_UNIT_TEXT]%s1[COLOR_REVERT] für [COLOR_YELLOW]%d2[COLOR_REVERT][ICON_GOLD] verkaufen?</German>
-        <Italian>Sell your [COLOR_UNIT_TEXT]%s1[COLOR_REVERT] for [COLOR_YELLOW]%d2[COLOR_REVERT][ICON_GOLD]?</Italian>
-        <Spanish>Sell your [COLOR_UNIT_TEXT]%s1[COLOR_REVERT] for [COLOR_YELLOW]%d2[COLOR_REVERT][ICON_GOLD]?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_DIALOG_ACCEPT</Tag>
@@ -1943,14 +1924,14 @@
         <English>Lift that boycott?</English>
         <French>Lever ce boycott ?</French>
         <German>Boykott aufheben?</German>
-        <Italian>Lift that boycott?</Italian>
-        <Spanish>Lift that boycott?</Spanish>
+        <Italian>Togliere il boicottaggio?</Italian>
+        <Spanish>¿Levantar el boicot?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_BOYCOTT_MESSAGE</Tag>
         <English>Pay Us %d1[ICON_GOLD] and you can trade with [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] again.</English>
         <French>Offrez nous %d1[ICON_GOLD] et vous pourrez commercer avec [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] de nouveau.</French>
-        <German>Zahlt Uns %d1[ICON_GOLD] und Ihr dürft wieder [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] verkaufen.</German>
+        <German>Zahlt Uns %d1[ICON_GOLD] und Ihr dürft wieder [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] hier in der Heimat verkaufen.</German>
         <Italian>Pay us %d1[ICON_GOLD] and you can trade with [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] again.</Italian>
         <Spanish>Pay us %d1[ICON_GOLD] and you can trade with [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] again.</Spanish>
     </TEXT>
@@ -2021,8 +2002,8 @@
         <English>Denmark</English>
         <French>Danemark</French>
         <German>Dänemark</German>
-        <Italian>Denmark</Italian>
-        <Spanish>Denmark</Spanish>
+        <Italian>Danimarca</Italian>
+        <Spanish>Dinamarca</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_DUTCH_ADJECTIVE</Tag>
@@ -2249,8 +2230,8 @@
             <Plural>0:0:1:1</Plural>
         </French>
         <German>schwedisch</German>
-        <Italian>Swedish</Italian>
-        <Spanish>Swedish</Spanish>
+        <Italian>svedese</Italian>
+        <Spanish>sueco</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SWEDEN_EUROPE_ADJECTIVE</Tag>
@@ -2275,8 +2256,8 @@
         <English>Sweden</English>
         <French>Suède</French>
         <German>Schweden</German>
-        <Italian>Sweden</Italian>
-        <Spanish>Sweden</Spanish>
+        <Italian>Svezia</Italian>
+        <Spanish>Suecia</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_RUSSIA_DESC</Tag>
@@ -2303,8 +2284,8 @@
             <Plural>0:0:1:1</Plural>
         </French>
         <German>russisch</German>
-        <Italian>Russian</Italian>
-        <Spanish>Russian</Spanish>
+        <Italian>russo</Italian>
+        <Spanish>ruso</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_RUSSIA_EUROPE_ADJECTIVE</Tag>
@@ -2330,7 +2311,7 @@
         <French>Russie</French>
         <German>Russland</German>
         <Italian>Russia</Italian>
-        <Spanish>Russia</Spanish>
+        <Spanish>Rusia</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SPAIN_ADJECTIVE</Tag>

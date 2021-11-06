@@ -220,6 +220,7 @@ sub getEnumFiles
 	push(@list, "Units/CIV4MissionInfos.xml");
 	push(@list, "Units/CIV4ProfessionInfos.xml");
 	push(@list, "Units/CIV4PromotionInfos.xml");
+	push(@list, "Units/CIV4SpecialUnitInfos.xml");
 	push(@list, "Units/CIV4UnitClassInfos.xml");
 	push(@list, "Units/CIV4UnitInfos.xml");
 	

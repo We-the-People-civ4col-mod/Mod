@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <Civ4GameText xmlns="http://www.firaxis.com">
-	<TEXT>
-		<Tag>TXT_KEY_ERROR_XML_TITLE</Tag>
-		<English>XML LOAD ERROR</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_ERROR_XML_WRONG_TYPE_STRING</Tag>
-		<English>%s1
+    <TEXT>
+        <Tag>TXT_KEY_ERROR_XML_TITLE</Tag>
+        <English>XML LOAD ERROR</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ERROR_XML_WRONG_TYPE_STRING</Tag>
+        <English>%s1
 Tag: %s2
 Read: %s3
 Expected string of type %s4</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_TITLE</Tag>
-		<English>EVENT TRIGGER MISCONFIGURED</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR</Tag>
-		<English>An EventTrigger has a plot requirement, which can't trigger.
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_TITLE</Tag>
+        <English>EVENT TRIGGER MISCONFIGURED</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_ERROR</Tag>
+        <English>An EventTrigger has a plot requirement, which can't trigger.
 %s1
 %s2
 %s3</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_GRAPHICAL_ONLY</Tag>
-		<English>Can't require graphical only entries</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE</Tag>
-		<English>Can't be used with required PlotType</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_TERRAIN</Tag>
-		<English>Can't be used with any of the required terrains</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_FEATURE</Tag>
-		<English>Can't be used with any of the required features</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_IMPROVEMENT</Tag>
-		<English>Can't be used with any of the required improvements</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_ROUTE</Tag>
-		<English>Can't be used with any of the required routes</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_TERRAIN_PLOT_TYPE</Tag>
-		<English>None of the terrains required by the feature allows the PlotType required</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_FEATURE_TERRAIN</Tag>
-		<English>None of the features required by the improvement can be placed on any of the required terrains</English>
-	</TEXT>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_GRAPHICAL_ONLY</Tag>
+        <English>Can't require graphical only entries</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE</Tag>
+        <English>Can't be used with required PlotType</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_TERRAIN</Tag>
+        <English>Can't be used with any of the required terrains</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_FEATURE</Tag>
+        <English>Can't be used with any of the required features</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_IMPROVEMENT</Tag>
+        <English>Can't be used with any of the required improvements</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_ROUTE</Tag>
+        <English>Can't be used with any of the required routes</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_TERRAIN_PLOT_TYPE</Tag>
+        <English>None of the terrains required by the feature allows the PlotType required</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_FEATURE_TERRAIN</Tag>
+        <English>None of the features required by the improvement can be placed on any of the required terrains</English>
+    </TEXT>
 </Civ4GameText>

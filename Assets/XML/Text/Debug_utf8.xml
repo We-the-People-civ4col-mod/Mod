@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <Civ4GameText xmlns="http://www.firaxis.com">
-	<TEXT>
-		<Tag>TXT_KEY_DEBUG_DESYNC_LOG_BUTTON</Tag>
-		<English>Generate OOS debug log</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DEBUG_DESYNC_LOG_COMPLETE</Tag>
-		<English>Done generating files:In mod dir:[NEWLINE]    Desync log for player %d1.txt[NEWLINE]    Desync save for player %d2.ColonizationSave[NEWLINE]In documents\my games\colonization\logs:[NEWLINE]    Random Player %d3.log[NEWLINE][NEWLINE]Please collect those files from all players, put them in a single zip file and submit them as an OOS bug report. Add the autosave from the previous turn if possible.</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE</Tag>
-		<English>Negative cargo stored error</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_DESC</Tag>
-		<English>Colony is storing negative amount of cargo.[NEWLINE]Please make a bug report and provide a savegame from just before this happened.[NEWLINE]Be aware that the autosave from this turn might be from after this happened if it happened just as the turn started.</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE</Tag>
-		<English>%s1
+    <TEXT>
+        <Tag>TXT_KEY_DEBUG_DESYNC_LOG_BUTTON</Tag>
+        <English>Generate OOS debug log</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DEBUG_DESYNC_LOG_COMPLETE</Tag>
+        <English>Done generating files:In mod dir:[NEWLINE]    Desync log for player %d1.txt[NEWLINE]    Desync save for player %d2.ColonizationSave[NEWLINE]In documents\my games\colonization\logs:[NEWLINE]    Random Player %d3.log[NEWLINE][NEWLINE]Please collect those files from all players, put them in a single zip file and submit them as an OOS bug report. Add the autosave from the previous turn if possible.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE</Tag>
+        <English>Negative cargo stored error</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_DESC</Tag>
+        <English>Colony is storing negative amount of cargo.[NEWLINE]Please make a bug report and provide a savegame from just before this happened.[NEWLINE]Be aware that the autosave from this turn might be from after this happened if it happened just as the turn started.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE</Tag>
+        <English>%s1
 Tag: %s2
 Read: %d3
 Excepted non-negative number</English>
-	</TEXT>
+    </TEXT>
 </Civ4GameText>

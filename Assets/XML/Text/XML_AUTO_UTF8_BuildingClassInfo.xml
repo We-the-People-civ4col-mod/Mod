@@ -2,7 +2,7 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_ARMORY</Tag>
-        <English>Armory</English>
+        <English>Armoury</English>
         <French>
             <Text>Armurerie:Armureries</Text>
             <Gender>Female</Gender>
@@ -109,24 +109,32 @@
         <English>Brewer's House</English>
         <French>Maison du brasseur</French>
         <German>Brauhaus</German>
+        <Italian>Brewers House</Italian>
+        <Spanish>Brewers House</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_BREWERY</Tag>
         <English>Brewery</English>
         <French>Brasserie</French>
         <German>Brauerei</German>
+        <Italian>Brewery</Italian>
+        <Spanish>Brewery</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_BUTCHERS_HOUSE</Tag>
         <English>Butcher's House</English>
         <French>Maison du Boucher</French>
         <German>Metzgerhaus</German>
+        <Italian>Butchers House</Italian>
+        <Spanish>Butchers House</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_BUTCHERY</Tag>
         <English>Butchery</English>
         <French>Boucherie</French>
         <German>Metzgerei</German>
+        <Italian>Butchery</Italian>
+        <Spanish>Butchery</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_CARPENTER_SHOP</Tag>
@@ -185,6 +193,16 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>
+            <Text>National Colonial Market</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>National Colonial Market</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_CHAPEL</Tag>
@@ -259,6 +277,8 @@
             <Plural>0:1</Plural>
         </French>
         <German>Zitadelle</German>
+        <Italian>Citadel</Italian>
+        <Spanish>Citadel</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_CITYHALL</Tag>
@@ -269,12 +289,16 @@
             <Plural>0:1</Plural>
         </French>
         <German>Rathaus</German>
+        <Italian>City Hall</Italian>
+        <Spanish>City Hall</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_CITY_HOSPITAL</Tag>
         <English>City Hospital</English>
         <French>Hôpital</French>
         <German>Bezirkskrankenhaus</German>
+        <Italian>City Hospital</Italian>
+        <Spanish>City Hospital</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_COLLEGE</Tag>
@@ -305,10 +329,20 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Kolonialkongress</Text>
+            <Text>Kontinentalkongress</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>
+            <Text>Colonial Congress</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Colonial Congress</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_CORN_CHAMBER</Tag>
@@ -323,6 +357,16 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>
+            <Text>Corn Chamber</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Corn Chamber</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_CUSTOM_HOUSE</Tag>
@@ -333,6 +377,16 @@
             <Plural>0:1</Plural>
         </French>
         <German>Zollhaus</German>
+        <Italian>
+            <Text>Custom House</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Custom House</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_CUSTOM_OFFICE</Tag>
@@ -347,6 +401,16 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>
+            <Text>Central Customs Authority</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Central Customs Authority</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_DISTILLERS_HOUSE</Tag>
@@ -433,12 +497,16 @@
         <English>Dyer's House</English>
         <French>Maison du teinturier</French>
         <German>Färberhaus</German>
+        <Italian>Dyers House</Italian>
+        <Spanish>Dyers House</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_DYERY</Tag>
         <English>Dyery</English>
         <French>Teinturerie</French>
         <German>Färberei</German>
+        <Italian>Dyery</Italian>
+        <Spanish>Dyery</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_FORT</Tag>
@@ -468,11 +536,15 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Fort</German>
+        <German>
+            <Text>Fort:Forts</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0:1</Plural>
+        </German>
         <Italian>
-            <Text>Forte</Text>
+            <Text>Forte:Forti</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
         </Italian>
         <Spanish>
             <Text>Fuerte:Fuertes</Text>
@@ -567,6 +639,16 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>
+            <Text>Granary</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Granary</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_GREAT_ARSENAL</Tag>
@@ -593,6 +675,16 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>
+            <Text>Great Bastion</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Great Bastion</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_GREAT_CATHEDRAL</Tag>
@@ -619,6 +711,8 @@
             <Plural>0:1</Plural>
         </French>
         <German>Große Eisenwarenfabrik</German>
+        <Italian>Great Tool Factory</Italian>
+        <Spanish>Great Tool Factory</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_GREAT_UNIVERSITY</Tag>
@@ -649,6 +743,8 @@
             <Plural>0:1</Plural>
         </French>
         <German>Holzmanufaktur</German>
+        <Italian>Great Wheelwrights Workshop</Italian>
+        <Spanish>Great Wheelwrights Workshop</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_HORSE_MARKET</Tag>
@@ -663,6 +759,16 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>
+            <Text>Grand Horse and Cattle Market</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Grand Horse and Cattle Market</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_IRONWORKS</Tag>
@@ -693,18 +799,24 @@
             <Plural>0:1</Plural>
         </French>
         <German>Bootssteg</German>
+        <Italian>Landing Stage</Italian>
+        <Spanish>Landing Stage</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_LARGE_DYERY</Tag>
         <English>Large Dyery</English>
         <French>Teinturerie industrielle</French>
         <German>Große Färberei</German>
+        <Italian>Large Dyery</Italian>
+        <Spanish>Large Dyery</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_FACTORY</Tag>
         <English>Leather Factory</English>
         <French>Tannerie industrielle</French>
         <German>Lederfabrik</German>
+        <Italian>Leather Factory</Italian>
+        <Spanish>Leather Factory</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_LUMBER_MILL</Tag>
@@ -759,12 +871,24 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>
+            <Text>Village Market:Village Markets</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Mercado del pueblo:Mercados del pueblo</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_MEDICAL_OFFICE</Tag>
         <English>Medical Office</English>
         <French>Cabinet médical</French>
         <German>Arztpraxis</German>
+        <Italian>Medical Office</Italian>
+        <Spanish>Medical Office</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_MINSTER</Tag>
@@ -779,6 +903,16 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>
+            <Text>Cathedral of the Archbishop</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Cathedral of the Archbishop</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_NEWSPAPER</Tag>
@@ -813,6 +947,16 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>
+            <Text>Grand Opera</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Grand Opera</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_PALACE</Tag>
@@ -859,6 +1003,16 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>
+            <Text>Colonial Publisher</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Colonial Publisher</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_RANCH</Tag>
@@ -913,6 +1067,16 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>
+            <Text>Saloon</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Saloon</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_SCHOOLHOUSE</Tag>
@@ -959,12 +1123,16 @@
         <English>Slaughterhouse</English>
         <French>Abattoir</French>
         <German>Schlachthaus</German>
+        <Italian>Slaughterhouse</Italian>
+        <Spanish>Slaughterhouse</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_SPICE_TRADERS_HALL</Tag>
         <English>Spice Trader's Hall</English>
         <French>Halle aux Épices</French>
         <German>Gewürzhandelshalle</German>
+        <Italian>Spice Traders Hall</Italian>
+        <Spanish>Spice Traders Hall</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_SPICE_TRADERS_HOUSE</Tag>
@@ -979,6 +1147,8 @@
         <English>Spice Trading Post</English>
         <French>Epicerie</French>
         <German>Gewürzhandelsposten</German>
+        <Italian>Spice Trading Post</Italian>
+        <Spanish>Spice Trading Post</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_STABLE</Tag>
@@ -1009,6 +1179,8 @@
             <Plural>0:1</Plural>
         </French>
         <German>Statue des Gouverneurs</German>
+        <Italian>Statue of Governor</Italian>
+        <Spanish>Statue of Governor</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_STOCKADE</Tag>
@@ -1047,18 +1219,24 @@
         <English>Tanner's House</English>
         <French>Maison du Tanneur</French>
         <German>Gerberhaus</German>
+        <Italian>Tanners House</Italian>
+        <Spanish>Tanners House</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_TANNERY</Tag>
         <English>Tannery</English>
         <French>Tannerie</French>
         <German>Gerberei</German>
+        <Italian>Tannery</Italian>
+        <Spanish>Tannery</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_TAVERN</Tag>
         <English>Tavern</English>
         <French>Taverne</French>
         <German>Taverne</German>
+        <Italian>Tavern</Italian>
+        <Spanish>Tavern</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_TEXTILE_MILL</Tag>
@@ -1093,6 +1271,16 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>
+            <Text>Theatre</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Theatre</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_TOBACCONIST_HOUSE</Tag>
@@ -1143,6 +1331,8 @@
             <Plural>0:1</Plural>
         </French>
         <German>Eisenwarenfabrik</German>
+        <Italian>Tool Factory</Italian>
+        <Spanish>Tool Factory</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_TOWNHALL</Tag>
@@ -1169,6 +1359,8 @@
         <English>Town Hospital</English>
         <French>Clinique</French>
         <German>Stadtkrankenhaus</German>
+        <Italian>Town Hospital</Italian>
+        <Spanish>Town Hospital</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_TOWN_MARKET</Tag>
@@ -1183,12 +1375,24 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Italian>
+            <Text>Town Market:Town Markets</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Town Market:Town Markets</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_TRAIN_STATION</Tag>
         <English>Waystation</English>
         <French>Relais de poste</French>
         <German>Postreiter- und Pferdewechselstation</German>
+        <Italian>Waystation</Italian>
+        <Spanish>Waystation</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_UNIVERSITY</Tag>
@@ -1219,18 +1423,24 @@
             <Plural>0:1</Plural>
         </French>
         <German>Gemeindehaus</German>
+        <Italian>Village Hall</Italian>
+        <Spanish>Village Hall</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_VILLAGE_WELL</Tag>
         <English>Village Well</English>
         <French>Lavoir</French>
         <German>Dorfbrunnen</German>
+        <Italian>Village Well</Italian>
+        <Spanish>Village Well</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_VINTAGERS_HOUSE</Tag>
         <English>Vintager's House</English>
         <French>Maison du vigneron</French>
         <German>Winzerhaus</German>
+        <Italian>Vintager's House</Italian>
+        <Spanish>Vintager's House</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_WAREHOUSE</Tag>
@@ -1281,6 +1491,16 @@
             <Plural>0:1</Plural>
         </French>
         <German>Große Lagerhauserweiterung</German>
+        <Italian>
+            <Text>Warehouse Expansion</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Warehouse Expansion</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_WATERMILL</Tag>
@@ -1299,6 +1519,16 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Italian>
+            <Text>Watermill:Watermills</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Watermill:Watermills</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_WEAVERS_HOUSE</Tag>
@@ -1349,6 +1579,8 @@
             <Plural>0:1</Plural>
         </French>
         <German>Tranfabrik</German>
+        <Italian>Train Oil Rendering Plant</Italian>
+        <Spanish>Train Oil Rendering Plant</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_WHALE_OIL_HOUSE</Tag>
@@ -1359,6 +1591,8 @@
             <Plural>0:1</Plural>
         </French>
         <German>Trankocherei</German>
+        <Italian>Train Oil Manufactory</Italian>
+        <Spanish>Train Oil Manufactory</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_WHEELWRIGHTS_WORKSHOP</Tag>
@@ -1369,6 +1603,8 @@
             <Plural>0:1</Plural>
         </French>
         <German>Wagnerei</German>
+        <Italian>Wheelwrights Workshop</Italian>
+        <Spanish>Wheelwrights Workshop</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_WINDMILL</Tag>
@@ -1387,17 +1623,31 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Italian>
+            <Text>Windmill:Windmills</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Windmill:Windmills</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_WINERY</Tag>
         <English>Winery</English>
         <French>Chai à vin</French>
         <German>Winzerei</German>
+        <Italian>Winery</Italian>
+        <Spanish>Winery</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_WINE_FACTORY</Tag>
         <English>Wine Factory</English>
         <French>Domaine viticole</French>
         <German>Weinfabrik</German>
+        <Italian>Wine Factory</Italian>
+        <Spanish>Wine Factory</Spanish>
     </TEXT>
 </Civ4GameText>

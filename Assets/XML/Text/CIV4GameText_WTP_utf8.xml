@@ -26,31 +26,31 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_TIME_NO_TRADE</Tag>
-        <English>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns turns)[COLOR_REVERT]</English>
-        <French>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns tours)[COLOR_REVERT]</French>
-        <German>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Runden)[COLOR_REVERT]</German>
-        <Italian>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Turni)[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns turnos)[COLOR_REVERT]</Spanish>
+        <English>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns [NUM1:turn:turns])[COLOR_REVERT]</English>
+        <French>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns [NUM1:tour:tours])[COLOR_REVERT]</French>
+        <German>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns [NUM1:Runde:Runden])[COLOR_REVERT]</German>
+        <Italian>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns [NUM1:turno:turni])[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns [NUM1:turno:turnos])[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER</Tag>
         <English>Milord, reinforcement troops sent by His Majesty have arrived following the declaration of war against us by another king.</English>
-        <German>Milord, die Verstärkungstruppen unseres Königs sind eingetroffen, da man uns auf Befehl eines anderen Königs den Krieg erklärt hat.</German>
+        <German>Milord, die von Seiner Majestät entsandten Verstärkungstruppen sind eingetroffen, da man uns auf Befehl eines anderen Königs den Krieg erklärt hat.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_FREE_TURNS_WORKED</Tag>
-        <English>Working to gain freedom for : %d1_turns turns</English>
-        <German>Arbeitet für seine Freiheit seit : %d1_turns Runden</German>
+        <English>Working for %d1_turns [NUM1:turn:turns] to gain freedom</English>
+        <German>Arbeitet seit %d1_turns [NUM1:Runde:Runden] für seine Freiheit</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED</Tag>
-        <English>Working to become an [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] for : %d1_turns turns</English>
-        <German>Arbeitet darauf hin [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden seit : %d1_turns Runden</German>
+        <English>Working for %d1_turns [NUM1:turn:turns] to become an [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]</English>
+        <German>Arbeitet seit %d1_turns [NUM1:Runde:Runden] darauf hin, [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP</Tag>
-        <English>Worked to become an [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Turns</English>
-        <German>Arbeitet um [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Runden</German>
+        <English>Worked to become an [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] [NUM1:turn:turns]</English>
+        <German>Arbeitet um [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] [NUM1:Runde:Runden]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP</Tag>
@@ -69,13 +69,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVES_NOT_WILLING_ALREADY_COLONIST_LEARNING</Tag>
-        <English>Milord, a foreign colonist is already living and learning in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. The Natives do not want to take a second one.[NEWLINE]We should come back when that other European has completed his training in the village.</English>
-        <German>Milord, es lebt und lernt bereits ein anderer Europäer in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Die Ureinwohner möchten vorerst keinen weiteren aufnehmen.[NEWLINE]Wir sollten zurückkehren, wenn der andere Europäer seine Zeit im Dorf beendet hat.</German>
+        <English>Milord, a foreign colonist is already living and learning in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. The Natives do not want to take a second one.[NEWLINE]We should come back when that other European has completed his training in the settlement.</English>
+        <German>Milord, es lebt und lernt bereits ein anderer Europäer in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Die Ureinwohner möchten vorerst keinen weiteren aufnehmen.[NEWLINE]Wir sollten zurückkehren, wenn der andere Europäer seine Zeit in der Siedlung beendet hat.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NO_MORE_SETTLER</Tag>
         <English>Since [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] has no more settlements and no more settlers, His Majesty has decided to equip some colonists in Europe as settlers. Of course, this comes with a tax increase.</English>
-        <German>Da [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] keine weiteren Siedlungen und auch keine Siedler mehr hat, hat Seine Majestät entschieden, in Europe einige Kolonisten als Siedler auszurüsten. Das ist natürlich mit einer Steuererhöung verbunden.</German>
+        <German>Da [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] keine weiteren Siedlungen und auch keine Siedler mehr hat, hat Seine Majestät entschieden, in Europe einige Kolonisten als Siedler auszurüsten. Das ist natürlich mit einer Steuererhöhung verbunden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_FAIL</Tag>

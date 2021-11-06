@@ -6,12 +6,6 @@
 <!-- Game Text - New -->
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_CATTEL</Tag>
-        <English>Deemphasize Cattle</English>
-        <French>Minimiser le Bétail</French>
-        <German>Schwerpunkt Rinder aufheben</German>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_CANNONSMITH</Tag>
         <English>
             <Text>Master Cannonsmith:Master Cannonsmiths</Text>
@@ -24,7 +18,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meister Kanonenschmied:Meister Kanonenschmiede</Text>
+            <Text>Geschützmeister:Geschützmeister</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -55,7 +49,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOLD_MINER_STRATEGY</Tag>
-        <English>To make the most of a bountiful gold vein, bring in an [COLOR_UNIT_TEXT]Expert Prospector[COLOR_REVERT]. Expert Prospectors produce double the amount of [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT] from a gold-producing tile!</English>
+        <English>To make the most of a bountiful gold vein, bring in an [COLOR_UNIT_TEXT]expert prospector[COLOR_REVERT]. Expert Prospectors produce double the amount of [COLOR_HIGHLIGHT_TEXT]gold[COLOR_REVERT] from a gold-producing tile!</English>
         <French>Pour exploiter au mieux une importante veine d'or, engagez un [COLOR_UNIT_TEXT]expert prospecteur[COLOR_REVERT]. Les experts prospecteurs sont capables d'extraire deux fois plus d'[COLOR_HIGHLIGHT_TEXT]Or[COLOR_REVERT] que la normale !</French>
         <German>Um eine Goldader optimal zu nutzen, sollten Sie einen [COLOR_UNIT_TEXT]Erfahrenen Schürfer[COLOR_REVERT] daran arbeiten lassen. Erfahrene Goldminenarbeiter können doppelt so viel [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT] von einem Gold produzierenden Geländefeld fördern!</German>
         <Italian>Per sfruttare al massimo una ricca vena d'oro, chiama un [COLOR_UNIT_TEXT]minatore d'oro esperto[COLOR_REVERT]. I minatori d'oro esperti sono in grado di raddoppiare la quantità di [COLOR_HIGHLIGHT_TEXT]Oro[COLOR_REVERT] ottenuta dalla casella!</Italian>
@@ -63,21 +57,18 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GEMSTONES_MINER_STRATEGY</Tag>
-        <English>To make the most of a bountiful gold vein, bring in an [COLOR_UNIT_TEXT]Expert Prospector[COLOR_REVERT]. Expert Prospectors produce double the amount of [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT] from a gold-producing tile!</English>
-        <French>Pour exploiter au mieux une importante veine d'or, engagez un [COLOR_UNIT_TEXT]expert prospecteur[COLOR_REVERT]. Les experts prospecteurs sont capables d'extraire deux fois plus d'[COLOR_HIGHLIGHT_TEXT]Or[COLOR_REVERT] que la normale !</French>
-        <German>Um ein Edelsteinvorkommen optimal zu nutzen, sollten Sie einen [COLOR_UNIT_TEXT]Erfahrenen Schürfer[COLOR_REVERT] daran arbeiten lassen. Erfahrene Schürfer können doppelt so viel [COLOR_HIGHLIGHT_TEXT]Edelstein[COLOR_REVERT] von einem Geländefeld fördern!</German>
-        <Italian>Per sfruttare al massimo una ricca vena d'oro, chiama un [COLOR_UNIT_TEXT]minatore d'oro esperto[COLOR_REVERT]. I minatori d'oro esperti sono in grado di raddoppiare la quantità di [COLOR_HIGHLIGHT_TEXT]Oro[COLOR_REVERT] ottenuta dalla casella!</Italian>
-        <Spanish>Para sacar el mejor partido de una vena de oro, llamad a un [COLOR_UNIT_TEXT]Minero de oro experto[COLOR_REVERT]. Los Mineros de oro expertos son capaces de extraer el doble de [COLOR_HIGHLIGHT_TEXT]Oro[COLOR_REVERT] de una casilla en la que haya este metal.</Spanish>
+        <English>To make the most of a bountiful gemstone deposit, bring in an [COLOR_UNIT_TEXT]expert prospector[COLOR_REVERT]. Expert prospectors produce double the amount of [COLOR_HIGHLIGHT_TEXT]gems[COLOR_REVERT] from a gold-producing tile!</English>
+        <German>Um ein Edelsteinvorkommen optimal zu nutzen, sollten Sie einen [COLOR_UNIT_TEXT]Erfahrenen Schürfer[COLOR_REVERT] daran arbeiten lassen. Erfahrene Schürfer können doppelt so viel [COLOR_HIGHLIGHT_TEXT]Edelsteine[COLOR_REVERT] von einem Geländefeld fördern!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GATHER_BOAT_FISHING</Tag>
-        <English>[ICON_BULLET]Can gather Fish from sea resources</English>
+        <English>[ICON_BULLET]Can gather fish from sea resources</English>
         <French>[ICON_BULLET]Peut pêcher du poisson à partir de la mer</French>
         <German>[ICON_BULLET]Kann Fisch auf Bonusressourcen gewinnen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_FISHING_UNLOAD</Tag>
-        <English>Automate Fishing</English>
+        <English>Automate fishing</English>
         <French>Automatisation de la pêche</French>
         <German>Fischfang automatisieren</German>
     </TEXT>
@@ -140,12 +131,5 @@
         <German>(%s1_symbol_list pro Runde)</German>
         <Italian>(%s1_symbol_list per turno)</Italian>
         <Spanish>(%s1_symbol_list por turno)</Spanish>
-    </TEXT>
-    <!-- RaR, ray, Coca and Blades -->
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_BLADE</Tag>
-        <English>Emphasize Blades</English>
-        <French>Privilégier les sabres</French>
-        <German>Schwerpunkt Klingenwaffen</German>
     </TEXT>
 </Civ4GameText>

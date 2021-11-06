@@ -6,6 +6,186 @@
 <!-- Game Text - New -->
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
+        <Tag>TXT_KEY_TRAIT_MILITARISTIC</Tag>
+        <English>Militaristic</English>
+        <French>
+            <Text>Militariste:Militariste</Text>
+            <Gender>Male:Female</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>Militaristisch</German>
+        <Italian>
+            <Text>Militarista</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Militarista:Militarista</Text>
+            <Gender>Male:Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_ENGLAND_SHORT_DESC</Tag>
+        <English>New England</English>
+        <French>
+            <Text>Nouvelle Angleterre</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Neu-England</German>
+        <Italian>
+            <Text>Nuova Inghilterra</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Nueva Inglaterra</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_ENGLAND_EUROPE_SHORT_DESC</Tag>
+        <English>England</English>
+        <French>
+            <Text>Angleterre</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>England</German>
+        <Italian>
+            <Text>Inghilterra</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Inglaterra</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_FRANCE_SHORT_DESC</Tag>
+        <English>Nouvelle France</English>
+        <French>
+            <Text>Nouvelle France</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Neu-Frankreich</German>
+        <Italian>
+            <Text>Nuova Francia</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Nueva Francia</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_FRANCE_EUROPE_SHORT_DESC</Tag>
+        <English>France</English>
+        <French>
+            <Text>France</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Frankreich</German>
+        <Italian>
+            <Text>Francia</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Dominio Francés</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_SPAIN_SHORT_DESC</Tag>
+        <English>Nueva España</English>
+        <French>
+            <Text>Nouvelle Espagne</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Neu-Spanien</German>
+        <Italian>
+            <Text>Nuova Spagna</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Nueva España</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_SPAIN_EUROPE_SHORT_DESC</Tag>
+        <English>Spain</English>
+        <French>
+            <Text>Espagne</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Spanien</German>
+        <Italian>
+            <Text>Spagna</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>España</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DUTCH_SHORT_DESC</Tag>
+        <English>Nieuw Nederland</English>
+        <French>
+            <Text>Nouvelle Néerlande</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>Neu-Niederlande</German>
+        <Italian>
+            <Text>Nuova Olanda</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Nieuw Nederland</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DUTCH_EUROPE_SHORT_DESC</Tag>
+        <English>The Netherlands</English>
+        <French>
+            <Text>Pays-Bas</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Niederlande</German>
+        <Italian>
+            <Text>Olanda</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Holanda</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_IDLE_CITIZEN</Tag>
         <English>
             <Text>Idle Citizen:Idle Citizens</Text>
@@ -31,54 +211,6 @@
             <Text>Ciudadano ocioso:Ciudadanos ociosos</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PROFESSION_PREACHER</Tag>
-        <English>
-            <Text>Preacher:Preachers</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </English>
-        <French>
-            <Text>Prédicateur:Prédicateurs</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Prediger:Prediger</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Predicatore:Predicatori</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Predicador:Predicadores</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_DUTCH_SHORT_DESC</Tag>
-        <English>New Netherlands</English>
-        <French>
-            <Text>Nouvelle Néerlande</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>Nieuw Nederland</German>
-        <Italian>
-            <Text>Nuova Olanda</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Nieuw Nederland</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -217,222 +349,6 @@
         </Italian>
         <Spanish>
             <Text>La Tierra Apache</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY</Tag>
-        <English>Jesuit Missionary:Jesuit Missionaries</English>
-        <French>
-            <Text>Missionnaire jésuite:Missionnaires jésuites</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Jesuitenmissionar:Jesuitenmissionare</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Missionario gesuita:Missionari gesuiti</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Misionero jesuita:Misioneros jesuit</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_AI_LIGHT_ARTILLERY</Tag>
-        <English>Light Artillery</English>
-        <French>Artillerie légère</French>
-        <German>
-            <Text>Leichte Artillerie:Leichte Artillerien</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>Light Artillery</Italian>
-        <Spanish>Light Artillery</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_AI_WAGON_TRAIN</Tag>
-        <English>Wagon Train:Wagon Trains</English>
-        <French>
-            <Text>Chariot:Chariots</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Wagenkarren:Wagenkarren</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Colonna di carovane:Colonne di carovane</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Caravana de carromatos:Caravanas de carromatos</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_ROBERT_LA_SALLE</Tag>
-        <English>
-            <Text>René-Robert Cavelier de La Salle</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>René-Robert Cavelier de La Salle</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>René-Robert Cavelier de La Salle</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>René-Robert Cavelier de La Salle</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>René-Robert Cavelier de La Salle</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_JOSE_DE_SAN_MARTIN</Tag>
-        <English>
-            <Text>Jose de San Martin</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>José de San Martin</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>José de San Martin</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Jose de San Martin</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>José de San Martin</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_LIBERTARIAN</Tag>
-        <English>Libertarian</English>
-        <French>
-            <Text>Libertaire:Libertaire</Text>
-            <Gender>Male:Female</Gender>
-            <Plural>0:0</Plural>
-        </French>
-        <German>Rebellischer Vordenker</German>
-        <Italian>
-            <Text>Liberale</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Libertario:Libertaria</Text>
-            <Gender>Male:Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_ENGLAND_EUROPE_SHORT_DESC</Tag>
-        <English>England</English>
-        <French>
-            <Text>Angleterre</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>England</German>
-        <Italian>
-            <Text>Inghilterra</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Inglaterra</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_FRANCE_EUROPE_SHORT_DESC</Tag>
-        <English>France</English>
-        <French>
-            <Text>France</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Frankreich</German>
-        <Italian>
-            <Text>Francia</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Dominio Francés</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_SPAIN_EUROPE_SHORT_DESC</Tag>
-        <English>Spain</English>
-        <French>
-            <Text>Espagne</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Spanien</German>
-        <Italian>
-            <Text>Spagna</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>España</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_DUTCH_EUROPE_SHORT_DESC</Tag>
-        <English>The Netherlands</English>
-        <French>
-            <Text>Pays-Bas</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Niederlande</German>
-        <Italian>
-            <Text>Olanda</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Holanda</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -1075,7 +991,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_NAME_QUEBEC</Tag>
-        <English>Quebec</English>
+        <English>Québec</English>
         <French>
             <Text>Québec</Text>
             <Gender>Female</Gender>
@@ -1083,32 +999,32 @@
         </French>
         <German>Québec</German>
         <Italian>
-            <Text>Quebec city</Text>
+            <Text>Québec</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Quebec</Text>
+            <Text>Québec</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_NAME_MONTREAL</Tag>
-        <English>Montreal</English>
+        <English>Montréal</English>
         <French>
             <Text>Montréal</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Montreal</German>
+        <German>Montréal</German>
         <Italian>
-            <Text>Montreal</Text>
+            <Text>Montréal</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Montreal</Text>
+            <Text>Montréal</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -2141,7 +2057,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
-        <German>St. Augustine</German>
+        <German>St. Augustin</German>
         <Italian>
             <Text>St. Augustine</Text>
             <Gender>Female</Gender>
@@ -2275,7 +2191,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_NAME_ASCUNCION</Tag>
-        <English>Asuncion</English>
+        <English>Asunción</English>
         <French>
             <Text>Asunción</Text>
             <Gender>Female</Gender>
@@ -2283,7 +2199,7 @@
         </French>
         <German>Asunción</German>
         <Italian>
-            <Text>Asuncion</Text>
+            <Text>Asunción</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
@@ -2375,9 +2291,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_NAME_BOGOTA</Tag>
-        <English>Bogota</English>
+        <English>Bogotá</English>
         <French>
-            <Text>Bogota</Text>
+            <Text>Bogotá</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
@@ -2635,7 +2551,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_NAME_CONCEPCION</Tag>
-        <English>Concepcion</English>
+        <English>Concepción</English>
         <French>
             <Text>Concepción</Text>
             <Gender>Female</Gender>
@@ -2643,7 +2559,7 @@
         </French>
         <German>Concepción</German>
         <Italian>
-            <Text>Concepcion</Text>
+            <Text>Concepción</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
@@ -2675,7 +2591,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_NAME_NEW_AMSTERDAM</Tag>
-        <English>New Amsterdam</English>
+        <English>Nieuw Amsterdam</English>
         <French>
             <Text>La Nouvelle-Amsterdam</Text>
             <Gender>Female</Gender>
@@ -2683,7 +2599,7 @@
         </French>
         <German>Neu-Amsterdam</German>
         <Italian>
-            <Text>New Amsterdam</Text>
+            <Text>Nieuw Amsterdam</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
@@ -2735,15 +2651,15 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_NAME_NEW_HOLLAND</Tag>
-        <English>New Holland</English>
+        <English>Nieuw Holland</English>
         <French>
             <Text>Nouvelle-Hollande</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
-        <German>New Holland</German>
+        <German>Neu-Holland</German>
         <Italian>
-            <Text>New Holland</Text>
+            <Text>Nieuw Holland</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
@@ -2775,7 +2691,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_NAME_CURACAO</Tag>
-        <English>Curacao</English>
+        <English>Curaçao</English>
         <French>
             <Text>Curaçao</Text>
             <Gender>Female</Gender>
@@ -2783,7 +2699,7 @@
         </French>
         <German>Curaçao</German>
         <Italian>
-            <Text>Curacao</Text>
+            <Text>Curaçao</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
@@ -4634,66 +4550,6 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_CIV_ENGLAND_SHORT_DESC</Tag>
-        <English>New England</English>
-        <French>
-            <Text>Nouvelle Angleterre</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>English Colonies</German>
-        <Italian>
-            <Text>Nuova Inghilterra</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Nueva Inglaterra</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_FRANCE_SHORT_DESC</Tag>
-        <English>New France</English>
-        <French>
-            <Text>Nouvelle France</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>La Nouvelle-France</German>
-        <Italian>
-            <Text>Nuova Francia</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Nueva Francia</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CIV_SPAIN_SHORT_DESC</Tag>
-        <English>New Spain</English>
-        <French>
-            <Text>Nouvelle Espagne</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>V. de Nueva España</German>
-        <Italian>
-            <Text>Nuova Spagna</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Nueva España</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT</Tag>
         <English>Ancient Ruins</English>
         <French>
@@ -4711,26 +4567,6 @@
             <Text>Ruinas antiguas</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_MILITARISTIC</Tag>
-        <English>Militaristic</English>
-        <French>
-            <Text>Militariste:Militariste</Text>
-            <Gender>Male:Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Militaristisch</German>
-        <Italian>
-            <Text>Militarista</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Militarista:Militarista</Text>
-            <Gender>Male:Female</Gender>
-            <Plural>0</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -4955,7 +4791,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_GALVEZ</Tag>
-        <English>Bernardo de Galvez</English>
+        <English>Bernardo de Gálvez</English>
         <French>
             <Text>Bernardo de Gálvez</Text>
             <Gender>Male</Gender>
@@ -4963,7 +4799,7 @@
         </French>
         <German>Bernardo de Gálvez</German>
         <Italian>
-            <Text>Bernardo de Galvez</Text>
+            <Text>Bernardo de Gálvez</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
@@ -4995,7 +4831,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_CARRERA</Tag>
-        <English>Jose Miguel Carrera</English>
+        <English>José Miguel Carrera</English>
         <French>
             <Text>José Miguel Carrera</Text>
             <Gender>Male</Gender>
@@ -5003,7 +4839,7 @@
         </French>
         <German>José Miguel Carrera</German>
         <Italian>
-            <Text>Jose Miguel Carrera</Text>
+            <Text>José Miguel Carrera</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
@@ -5095,15 +4931,15 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_MENDOZA</Tag>
-        <English>Cristobal Mendoza</English>
+        <English>Cristóbal Mendoza</English>
         <French>
             <Text>Cristóbal Mendoza</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Cristobal Mendoza</German>
+        <German>Cristóbal Mendoza</German>
         <Italian>
-            <Text>Cristobal Mendoza</Text>
+            <Text>Cristóbal Mendoza</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
@@ -5135,7 +4971,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GREAT_PERSON_SANTA_ANNA</Tag>
-        <English>Antonio Lopez de Santa Anna</English>
+        <English>Antonio López de Santa Anna</English>
         <French>
             <Text>Antonio López de Santa Anna</Text>
             <Gender>Male</Gender>
@@ -5143,7 +4979,7 @@
         </French>
         <German>Antonio López de Santa Anna</German>
         <Italian>
-            <Text>Antonio Lopez de Santa Anna</Text>
+            <Text>Antonio López de Santa Anna</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
@@ -5231,26 +5067,6 @@
             <Text>Benedict Arnold</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PEDIA_CATEGORY_CIV</Tag>
-        <English>Colonies / Natives</English>
-        <French>
-            <Text>Nations</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>Politische Fraktionen</German>
-        <Italian>
-            <Text>Colonie/Nativi</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Colonias/nativos</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -5777,13 +5593,13 @@
         <Tag>TXT_KEY_CITY_NAME_TIIS_TSEBA</Tag>
         <English>Tiis Tseba</English>
         <French>
-            <Text>Tiiis Tseba</Text>
+            <Text>Tiis Tseba</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Tiiis Tseba</German>
+        <German>Tiis Tseba</German>
         <Italian>
-            <Text>Tiiis Tseba</Text>
+            <Text>Tiis Tseba</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
@@ -6629,46 +6445,6 @@
         </Italian>
         <Spanish>
             <Text>Kniste Stota</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_ROYAL_HALBERDIER</Tag>
-        <English>Royal Halberdier:Royal Halberdiers</English>
-        <French>
-            <Text>Brigadier royal:Brigadiers royaux</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Königlicher Hellebardenträger: Königliche Hellebardenträger</German>
-        <Italian>
-            <Text>Royal Halberdier:Royal Halberdiers</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Royal Halberdier:Royal Halberdiers</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PEDIA_CATEGORY_CIVIC</Tag>
-        <English>Constitution</English>
-        <French>
-            <Text>Constitution</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Verfassungselemente</German>
-        <Italian>
-            <Text>Costituzione</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Constitución</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>

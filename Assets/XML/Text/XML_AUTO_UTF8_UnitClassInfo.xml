@@ -66,13 +66,13 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Barley</Text>
+            <Text>Orzo</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Barley</Text>
-            <Gender>Male</Gender>
+            <Text>Cebada</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
@@ -237,13 +237,13 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Blades</Text>
-            <Gender>Male</Gender>
+            <Text>Spade</Text>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Blades</Text>
-            <Gender>Male</Gender>
+            <Text>Cuchillas</Text>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
     </TEXT>
@@ -340,8 +340,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Cannons</Italian>
-        <Spanish>Cannons</Spanish>
+        <Italian>Cannoni</Italian>
+        <Spanish>Cañones</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CARAVEL</Tag>
@@ -440,8 +440,8 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Cattle</Italian>
-        <Spanish>Cattle</Spanish>
+        <Italian>Bovini</Italian>
+        <Spanish>Bovinos</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHRISTIAN_MISSIONARY</Tag>
@@ -479,7 +479,11 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Stoff</German>
+        <German>
+            <Text>Stoff:Stoffe</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
         <Italian>
             <Text>Tessuto</Text>
             <Gender>Male</Gender>
@@ -499,7 +503,7 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Pelze</German>
+        <German>Pelzwaren</German>
         <Italian>
             <Text>Mantelli</Text>
             <Gender>Male</Gender>
@@ -549,12 +553,12 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Coca Leaves</Text>
+            <Text>Foglie di coca</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Coca Leaves</Text>
+            <Text>Hojas de coca</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
@@ -588,8 +592,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Cocoafruits</Italian>
-        <Spanish>Cocoafruits</Spanish>
+        <Italian>Frutta di cacao</Italian>
+        <Spanish>Fruta del cacao</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COCOA_PLANTER</Tag>
@@ -632,8 +636,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Coffee Berries</Italian>
-        <Spanish>Coffee Berries</Spanish>
+        <Italian>Bacche di caffè</Italian>
+        <Spanish>Bayas de café</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COFFEE_PLANTER</Tag>
@@ -677,12 +681,12 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Coloured Cloth</Text>
+            <Text>Tessuti tinti</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Coloured Cloth</Text>
+            <Text>Tejidos teñidos</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -878,10 +882,26 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_DOCTOR</Tag>
         <English>Renowned Medic</English>
-        <French>Médecin réputé</French>
-        <German>Ausgebildeter Arzt</German>
-        <Italian>Renowned Medic</Italian>
-        <Spanish>Renowned Medic</Spanish>
+        <French>
+            <Text>Médecin formé:Médecins formés</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Ausgebildeter Arzt:Ausgebildete Ärzte</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Medico formato:Medici formati</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Médico formado:Médicos formados</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_DYER</Tag>
@@ -1124,8 +1144,8 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Furniture</Italian>
-        <Spanish>Furniture</Spanish>
+        <Italian>Mobili</Italian>
+        <Spanish>Muebles</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FURNITURE_MAKER</Tag>
@@ -1209,7 +1229,7 @@
         <French>
             <Text>Pierres précieuses</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Edelsteine</Text>
@@ -1279,9 +1299,9 @@
         <Tag>TXT_KEY_UNITCLASS_GRAPES</Tag>
         <English>Grapes</English>
         <French>
-            <Text>Raisin</Text>
+            <Text>Raisins</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Weintrauben</Text>
@@ -1289,14 +1309,14 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Uva</Text>
+            <Text>Uve</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Uva</Text>
+            <Text>Uvas</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -1353,16 +1373,20 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GREAT_ADMIRAL</Tag>
-        <English>Great Admiral</English>
+        <English>
+            <Text>Great Admiral:Great Admirals</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
         <French>
             <Text>Amiral illustre</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Großer Admiral</Text>
+            <Text>Großer Admiral:Große Admiräle</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0:1</Plural>
         </German>
         <Italian>
             <Text>Grande Admirale:Grandi Admirali</Text>
@@ -1377,16 +1401,20 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GREAT_GENERAL</Tag>
-        <English>Great General</English>
+        <English>
+            <Text>Great General:Great Generals</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
         <French>
             <Text>Général illustre</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Großer General</Text>
+            <Text>Großer General:Große Generäle</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0:1</Plural>
         </German>
         <Italian>
             <Text>Grande Generale:Grandi Generali</Text>
@@ -1456,7 +1484,7 @@
         </English>
         <French>
             <Text>Artillerie lourde:Artilleries lourdes</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
@@ -1465,13 +1493,13 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Heavy Artillery:Heavy Artilleries</Text>
-            <Gender>Male</Gender>
+            <Text>Artiglieria pesante:Artiglierie pesanti</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Heavy Artillery:Heavy Artilleries</Text>
-            <Gender>Male</Gender>
+            <Text>Artillería pesada:Artillerías pesadas</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
@@ -1489,12 +1517,12 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Hemp</Text>
-            <Gender>Male</Gender>
+            <Text>Canapa</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Hemp</Text>
+            <Text>Cáñamo</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -1537,7 +1565,7 @@
         <French>
             <Text>Peaux de vache</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Rinderhäute</Text>
@@ -1545,14 +1573,14 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Cattle Hides</Text>
+            <Text>Pelli di mucca</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Cattle Hides</Text>
+            <Text>Pieles de vaca</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -1563,7 +1591,11 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Pferde</German>
+        <German>
+            <Text>Pferd:Pferde</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0:1</Plural>
+        </German>
         <Italian>
             <Text>Cavalli</Text>
             <Gender>Male</Gender>
@@ -1729,7 +1761,7 @@
         <French>
             <Text>Cuir</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Lederwaren</Text>
@@ -1737,14 +1769,14 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Leather Goods</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Pelletteria</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Leather Goods</Text>
+            <Text>Artículos de cuero</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -1756,7 +1788,7 @@
         </English>
         <French>
             <Text>Artillerie légère:Artilleries légères</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
@@ -1765,13 +1797,13 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Light Artillery:Light Artilleries</Text>
-            <Gender>Male</Gender>
+            <Text>Artiglieria leggera:Artiglierie leggere</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Light Artillery:Light Artilleries</Text>
-            <Gender>Male</Gender>
+            <Text>Artillería ligeras:Artillería ligeras</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
@@ -1821,15 +1853,31 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LUXURY_GOODS</Tag>
-        <English>Luxury Goods</English>
-        <French>Biens de luxe</French>
+        <English>
+            <Text>Luxury Goods</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <French>
+            <Text>Biens de luxe</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </French>
         <German>
             <Text>Luxusgüter</Text>
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Luxury Goods</Italian>
-        <Spanish>Luxury Goods</Spanish>
+        <Italian>
+            <Text>Produits de luxe</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Productos de lujo</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LYNX</Tag>
@@ -1937,13 +1985,21 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MUSKETS</Tag>
-        <English>Guns</English>
+        <English>
+            <Text>Guns</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
         <French>
             <Text>Arme à feu:Armes à feu</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Schusswaffen</German>
+        <German>
+            <Text>Schusswaffen</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
         <Italian>
             <Text>Armi</Text>
             <Gender>Female</Gender>
@@ -2153,16 +2209,16 @@
         </French>
         <German>
             <Text>Teure Pelzkleidung</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Premium Coats</Text>
+            <Text>Abbigliamento di pelliccia costoso</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Premium Coats</Text>
+            <Text>Ropa de pieles cara</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
@@ -2173,7 +2229,7 @@
         <French>
             <Text>Fourrure de qualité</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Hochwertige Pelze</Text>
@@ -2181,14 +2237,14 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Premium Fur</Text>
+            <Text>Pellicce di alta qualità</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Premium Fur</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Pieles de alta calidad</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -2252,17 +2308,17 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Erfahrener Rancher:Erfahrene Rancher</Text>
+            <Text>Erfahrener Züchter:Erfahrene Züchter</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Mastro allevatore:Mastri allevatori</Text>
+            <Text>Allevatore esperto:Allevatori esperti</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Maestro ranchero:Maestros rancheros</Text>
+            <Text>Ranchero experto:Rancheros expertos</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -2285,13 +2341,13 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Stone Salt</Text>
-            <Gender>Male</Gender>
+            <Text>Salgemma</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Stone Salt</Text>
-            <Gender>Male</Gender>
+            <Text>Sal gema</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
@@ -2309,12 +2365,12 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Redpepper</Text>
+            <Text>Pepe rosso</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Redpepper</Text>
+            <Text>Pimiento rojo</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -2353,7 +2409,7 @@
         <French>
             <Text>Cordage</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Seile</Text>
@@ -2361,14 +2417,14 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Rope</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Corde</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Rope</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Cuerdas</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -2515,7 +2571,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Rum</German>
+        <German>
+            <Text>Rum</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
         <Italian>
             <Text>Rum</Text>
             <Gender>Male</Gender>
@@ -2529,7 +2589,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SAILCLOTH</Tag>
-        <English>Sailcloth</English>
+        <English>
+          <Text>Sailcloth</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
         <French>
             <Text>Voile</Text>
             <Gender>Male</Gender>
@@ -2541,13 +2605,13 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Sailcloth</Text>
-            <Gender>Male</Gender>
+            <Text>Tela da vele</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Sailcloth</Text>
-            <Gender>Male</Gender>
+            <Text>Lona</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
@@ -2589,12 +2653,12 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Salt</Text>
+            <Text>Sale</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Salt</Text>
+            <Text>Sal</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -2640,8 +2704,8 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Sheep</Italian>
-        <Spanish>Sheep</Spanish>
+        <Italian>Pecore</Italian>
+        <Spanish>Ovejas</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SHIP_OF_THE_LINE</Tag>
@@ -2658,12 +2722,12 @@
         </German>
         <Italian>
             <Text>Vascello:Vascelli</Text>
-            <Gender>Female</Gender>
+            <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
             <Text>Navío de línea:Navíos de línea</Text>
-            <Gender>Female</Gender>
+            <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
@@ -2701,7 +2765,7 @@
         </French>
         <German>
             <Text>Schaluppe:Schaluppen</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
@@ -2768,11 +2832,15 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SPICES</Tag>
-        <English>Spices</English>
+        <English>
+            <Text>Spices</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
         <French>
             <Text>Epices</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Gewürze</Text>
@@ -2780,14 +2848,14 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Spices</Text>
+            <Text>Spezie</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Spices</Text>
+            <Text>Especias</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -2860,22 +2928,30 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_STONE</Tag>
-        <English>Stone</English>
+        <English>
+            <Text>Stone:Stones</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
         <French>
-            <Text>Pierre</Text>
+            <Text>Pierre:Pierres</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
         </French>
-        <German>Stein</German>
+        <German>
+            <Text>Stein:Steine</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
         <Italian>
-            <Text>Pietra</Text>
+            <Text>Pietra:Pietre</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Piedra</Text>
+            <Text>Piedra:Piedras</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -2910,7 +2986,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Zucker</German>
+        <German>
+            <Text>Zucker</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
         <Italian>
             <Text>Zucchero</Text>
             <Gender>Male</Gender>
@@ -2972,13 +3052,21 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_TOBACCO</Tag>
-        <English>Tobacco</English>
+        <English>
+            <Text>Tobacco</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
         <French>
             <Text>Tabac</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Tabak</German>
+        <German>
+            <Text>Tabak</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
         <Italian>
             <Text>Tabacco</Text>
             <Gender>Male</Gender>
@@ -3040,13 +3128,21 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_TOOLS</Tag>
-        <English>Tools</English>
+        <English>
+            <Text>Tools</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
         <French>
             <Text>Outil:Outils</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Eisenwaren</German>
+        <German>
+            <Text>Eisenwaren</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
         <Italian>
             <Text>Attrezzi</Text>
             <Gender>Male</Gender>
@@ -3060,13 +3156,21 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_TRADE_GOODS</Tag>
-        <English>Trade Goods</English>
+        <English>
+            <Text>Trade Goods</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
         <French>
             <Text>Marchandise:Marchandises</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Handelsgüter</German>
+        <German>
+            <Text>Handelsgüter</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
         <Italian>
             <Text>Beni commerciali</Text>
             <Gender>Male</Gender>
@@ -3143,8 +3247,8 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
-        <Italian>Valuable Wood</Italian>
-        <Spanish>Valuable Wood</Spanish>
+        <Italian>Legno pregiato</Italian>
+        <Spanish>Madera fina</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_VETERAN</Tag>
@@ -3155,7 +3259,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Erfahrener Infanterie:Erfahrene Infanteristen</Text>
+            <Text>Erfahrener Infanterist:Erfahrene Infanteristen</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -3179,7 +3283,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Erfahrener Kavallerie:Erfahrene Kavalleristen</Text>
+            <Text>Erfahrener Kavallerist:Erfahrene Kavalleristen</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -3308,13 +3412,13 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Whale Fat</Text>
+            <Text>Grasso di balena</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Whale Fat</Text>
-            <Gender>Male</Gender>
+            <Text>Grasa de ballena</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
@@ -3326,7 +3430,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Tran</German>
+        <German>
+            <Text>Tran</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
         <Italian>
             <Text>Olio di balena</Text>
             <Gender>Male</Gender>
@@ -3460,12 +3568,12 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Wool</Text>
+            <Text>Lana di pecora</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Wool</Text>
+            <Text>Lana de oveja</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -3476,22 +3584,22 @@
         <French>
             <Text>Draps de laine</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Wollstoffe</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Wool Cloth</Text>
+            <Text>Vestiti di lana</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Wool Cloth</Text>
+            <Text>Ropa de lana</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>

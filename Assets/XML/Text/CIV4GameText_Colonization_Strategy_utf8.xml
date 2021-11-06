@@ -14,12 +14,72 @@
         <Spanish>Para sacar el mejor partido de una vena de plata, llamad a un [COLOR_UNIT_TEXT]Minero de plata experto[COLOR_REVERT]. Los Mineros de plata expertos son capaces de extraer el doble de [COLOR_HIGHLIGHT_TEXT]Plata[COLOR_REVERT] de una casilla en la que haya este metal.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_AI_WAGON_TRAIN</Tag>
+        <English>Wagon Train:Wagon Trains</English>
+        <French>
+            <Text>Chariot:Chariots</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Wagenkarren:Wagenkarren</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Colonna di carovane:Colonne di carovane</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Caravana de carromatos:Caravanas de carromatos</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_AI_WAGON_TRAIN_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Wagon trains[COLOR_REVERT] are invaluable tools for land-based commerce. [COLOR_UNIT_TEXT]Wagon trains[COLOR_REVERT] can move goods across land, meaning that they can reach settlements away from the coast. They are the key to expansion into the continental interior.</English>
         <French>Les [COLOR_UNIT_TEXT]chariots[COLOR_REVERT] sont de précieux outils pour le commerce routier. Les [COLOR_UNIT_TEXT]chariots[COLOR_REVERT] peuvent transporter des marchandises de colonie en colonie à travers tout le territoire, ce qui signifie qu'ils peuvent atteindre des colonies qui ne se trouvent pas sur la côte. Ils jouent donc un rôle majeur dans l'expansion des terres continentales.</French>
-        <German>Die preiswerten [COLOR_UNIT_TEXT]Wagenkarren[COLOR_REVERT] ersetzen bei den konkurrierenden Kolonialmächten die [COLOR_UNIT_TEXT]Planwagen[COLOR_REVERT].[NEWLINE][NEWLINE]Wagen können Güter quer durch das Land von einer Siedlung zu einer anderen befördern und damit Ortschaften an das Handelsnetz anschließen, die nicht an der Küste liegen. Planwagen und Wagenkarren können in 2 Transportplätzen jeweils bis zu 100 Güter transportieren. [COLOR_UNIT_TEXT]Trecks[COLOR_REVERT] sind genauso teuer wie Planwagen, können aber sogar bis zu 5 Transportplätze nutzen. Allerdings haben sie im Gegensatz zu den Planwagen nicht zwei, sondern nur einen einzigen Bewegungspunkt. Sie können erst dann gebaut werden, wenn eine Stadt über ein [COLOR_BUILDING_TEXT]Sägewerk[COLOR_REVERT] verfügt.[NEWLINE][NEWLINE]Tipp: Trecks sind insbesondere für Massentransporte zwischen zwei nahegelegenen Städten in der mittleren und späten Spielphase geeignet.[NEWLINE][NEWLINE]Tipp: Bei gedrückter Shift-Taste können die Wagen auch mit Teilmengen beladen werden.[NEWLINE][NEWLINE]Hinweise: Wagen können nicht auf Schiffe geladen werden. Greift man einen Planwagen, Wagenkarren oder einen Treck an, erobert man ihn mitsamt aller Waren.</German>
+        <German>Die preiswerten [COLOR_UNIT_TEXT]Wagenkarren[COLOR_REVERT] ersetzen bei den konkurrierenden Kolonialmächten die [COLOR_UNIT_TEXT]Planwagen[COLOR_REVERT].[PARAGRAPH:2]Wagen können Güter quer durch das Land von einer Siedlung zu einer anderen befördern und damit Ortschaften an das Handelsnetz anschließen, die nicht an der Küste liegen. Planwagen und Wagenkarren können in 2 Transportplätzen jeweils bis zu 100 Güter transportieren. [COLOR_UNIT_TEXT]Trecks[COLOR_REVERT] sind genauso teuer wie Planwagen, können aber sogar bis zu 5 Transportplätze nutzen. Allerdings haben sie im Gegensatz zu den Planwagen nicht zwei, sondern nur einen einzigen Bewegungspunkt. Sie können erst dann gebaut werden, wenn eine Stadt über ein [COLOR_BUILDING_TEXT]Sägewerk[COLOR_REVERT] verfügt.[PARAGRAPH:2]Tipp: Trecks sind insbesondere für Massentransporte zwischen zwei nahegelegenen Städten in der mittleren und späten Spielphase geeignet.[PARAGRAPH:2]Tipp: Bei gedrückter Shift-Taste können die Wagen auch mit Teilmengen beladen werden.[PARAGRAPH:2]Hinweise: Wagen können nicht auf Schiffe geladen werden. Greift man einen Planwagen, Wagenkarren oder einen Treck an, erobert man ihn mitsamt aller Waren.</German>
         <Italian>Le [COLOR_UNIT_TEXT]colonne di carovane[COLOR_REVERT] sono preziosi strumenti per il commercio terrestre. Le [COLOR_UNIT_TEXT]colonne di carovane[COLOR_REVERT] possono trasportare i beni tra gli insediamenti via terra, il che significa che possono raggiungere gli insediamenti che non si trovano sulla costa. Sono la chiave per l'espansione verso l'interno del continente.</Italian>
         <Spanish>Las [COLOR_UNIT_TEXT]Caravanas de carromatos[COLOR_REVERT] son unas herramientas para el comercio terrestre que no tienen precio. Las [COLOR_UNIT_TEXT]Caravanas de carromatos[COLOR_REVERT] pueden transportar mercancías de un asentamiento a otro por tierra, lo cual comporta que no pueden llegar a los que se encuentren en la costa. Son la clave para la expansión hacia el interior del continente.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_NATIVE_GENERAL</Tag>
+        <English>
+            <Text>Great Warrior:Great Warriors</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Grand Guerrier:Grands Guerriers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Großer Krieger:Große Krieger</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Grande guerriero:Grandi guerrieri</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Gran Guerrero:Grandes Guerreros</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_NATIVE_GENERAL_PEDIA</Tag>
+        <English>The many conflicts that arose in the colonies of the New World forged numerous Great Generals. José de San Martín's march over the Andes, George Washington's stealthy crossing of the Delaware River, Frontenac's complete reversal of the fortunes of New France during King William's War, such feats defined the countries which these men formed. Without their Great Generals, Chile, Argentina, Canada and the United States would likely still be the property of their mother countries.</English>
+        <French>Les nombreux conflits qui se dérouleront dans les colonies du Nouveau Monde forgeront beaucoup de grands généraux. José de San Martín en franchissant les Andes, George Washington en traversant furtivement le fleuve Delaware ou Frontenac en renversant la situation en Nouvelle-France durant la guerre avec le roi Guillaume, accompliront des exploits qui définiront les pays que ces hommes formeront. Sans leurs grands généraux, le Chili, l'Argentine, le Canada et les Etats-unis seraient probablement encore la propriété de leur mère patrie.</French>
+        <German>Die Entdeckung der Neuen Welt durch die Europäer wurde in der Alten Welt gefeiert, doch in der Neuen Welt betrauert. Die Eroberer massakrierten oder versklavten ganze Völker. Auch wenn der verzweifelte Kampf der Ureinwohnernationen letztlich vergeblich blieb, brachte er doch einige Große Krieger hervor: heldenhafte Männer, an deren Tatkraft und Mut sich viele aufrichteten.</German>
+        <Italian>I molti conflitti nati nelle colonie del Nuovo Mondo crearono tantissimi Grandi Generali. La marcia di José de San Martín attraverso le Ande, la traversata furtiva del fiume Delaware di George Washington, il ribaltamento delle sorti della Nuova Francia grazie a Frontenac durante la guerra di Re Guglielmo... Queste imprese definirono i paesi creati da questi uomini. Senza i loro Grandi Generali Cile, Argentina, Canada e Stati Uniti sarebbero probabilmente ancora proprietà ognuno della rispettiva madrepatria.</Italian>
+        <Spanish>Los diversos conflictos que afloraron en el Nuevo Mundo dieron lugar a numerosos grandes generales. La marcha de José de San Martín a través de los Andes, el sigiloso cruce de George Washington por el río Delaware, el cambio de tornas radical de Nueva Francia durante la Guerra del Rey Guillermo gracias a Frontenac... gestas así ayudaron a definir los países a los que estos hombres pertenecieron. Sin sus grandes generales, Chile, Argentina, Canadá y los Estados Unidos aún no serían más que dominios de sus países colonizadores.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_NATIVE_GENERAL_STRATEGY</Tag>
@@ -30,49 +90,51 @@
         <Spanish>Un [COLOR_UNIT_TEXT]Great Warrior[COLOR_REVERT] puede unirse a otra unidad que haya en el campo, con lo que aportará una bonificación única a las unidades de la misma casilla y garantizará a su unidad acceder a ascensos especiales.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_FATHER_ROBERT_LA_SALLE_STRATEGY</Tag>
-        <English>You can trounce any settlement that stands in your path with [COLOR_TECH_TEXT]Robert Cavelier de La Salle[COLOR_REVERT] on your side. This Founding Father provides a combat bonus to all your units whenever they attack settlements.</English>
-        <French>Avec [COLOR_TECH_TEXT]Robert Cavelier de La Salle[COLOR_REVERT] dans vos rangs, aucune colonie ennemie ne pourra plus vous résister. Ce Père fondateur octroie un bonus de combat à toutes vos unités lorsqu'elles prennent une colonie d'assaut.</French>
-        <German>Dieser Gründervater gewährt allen Siedlungen einen Verteidigungsbonus: Jede erhält sofort und kostenlos Friesische Reiter.</German>
-        <Italian>Potrai conquistare ogni insediamento sulla tua strada, con [COLOR_TECH_TEXT]Robert Cavelier de La Salle[COLOR_REVERT] al tuo fianco. Questo Padre Fondatore dà un bonus di combattimento a tutte le tue unità, quando attaccano degli insediamenti.</Italian>
-        <Spanish>Podéis arrollar todos los asentamientos que se crucen en vuestro camino con [COLOR_TECH_TEXT]Robert Cavelier de La Salle[COLOR_REVERT] de vuestro lado. Este Padre fundador proporciona una bonificación al combate a todas vuestras unidades cuando atacan asentamientos.</Spanish>
+        <Tag>TXT_KEY_UNIT_AI_LIGHT_ARTILLERY</Tag>
+        <English>
+            <Text>Light Artillery:Light Artilleries</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Artillerie légère:Artilleries légères</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Leichte Artillerie:Leichte Artillerie</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Light Artillery:Light Artilleries</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Light Artillery:Light Artilleries</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_FATHER_HERNAN_CORTES_STRATEGY</Tag>
-        <English>Defend your new homeland with the aid of [COLOR_TECH_TEXT]Hernán Cortés[COLOR_REVERT]. If you adopt Cortés as a Founding Father, all of your cities will immediately receive a [COLOR_BUILDING_TEXT]stockade[COLOR_REVERT]!</English>
-        <French>Défendez votre nouvelle patrie avec l'aide d'[COLOR_TECH_TEXT]Hernán Cortés[COLOR_REVERT]. Si vous faites de Cortés l'un de vos Pères fondateurs, toutes vos villes se verront immédiatement dotées d'une [COLOR_BUILDING_TEXT]palissade[COLOR_REVERT] !</French>
-        <German>Verteidigen Sie Ihre neue Heimat mit Unterstützung von [COLOR_TECH_TEXT]Hernán Cortés[COLOR_REVERT]. Wenn Sie Cortés als Gründervater wählen, erhalten all Ihre Städte auf der Stelle eine [COLOR_BUILDING_TEXT]Palisade[COLOR_REVERT]!</German>
-        <Italian>Difendi la tua nuova patria con l'aiuto di [COLOR_TECH_TEXT]Hernán Cortés[COLOR_REVERT]. Se accetti Cortés come Padre Fondatore, tutti i tuoi insediamenti otterranno immediatamente una [COLOR_BUILDING_TEXT]palizzata[COLOR_REVERT]!</Italian>
-        <Spanish>Defended vuestra nueva patria con la ayuda de [COLOR_TECH_TEXT]Hernán Cortés[COLOR_REVERT]. Si lo adoptáis como Padre fundador, todas vuestras ciudades recibirán de inmediato una [COLOR_BUILDING_TEXT]Empalizada[COLOR_REVERT].</Spanish>
+        <Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY_PEDIA</Tag>
+        <English>Cannons of fairly light construction were used especially during the 17th century for the defense of light boats and ships. Those cannons were also heavily used by the British and the Colonists during the American Revolutionary War.</English>
+        <French>Des canons construits à partir de matériaux relativement légers ont été particulièrement utilisés au XVIIe siècle pour la défense des navires. Ces canons ont particulièrement été utilisés par les Britaniques et les colons pendant la guerre d'indépendance Américaine.</French>
+        <German>Leichte Geschütze können bei der Verteidigung von Siedlungen auf Häuserdächern oder Wällen stationiert werden und mit ihren kleinkalibrigen Geschossen den Angreifern gefährlich werden.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_NATIVE_STABLE_STRATEGY</Tag>
-        <English>The [COLOR_BUILDING_TEXT]horse pasture[COLOR_REVERT] is the Native equivalent of the [LINK=BUILDING_STABLE]stable[\LINK] and allows them to increase their production of [LINK=YIELD_HORSES]horses[\LINK], [LINK=YIELD_CATTLE]cattle[\LINK] or [LINK=YIELD_SHEEP]sheep[\LINK] in their settlements. It can only be built by [LINK=CONCEPT_NATIVES]Indigenous civilizations[\LINK]. [LINK=CONCEPT_RIVAL_EUROPEANS]Europeans[\LINK] will have to settle for the stable.[PARAGRAPH:1]For more information, see [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]Breeding Horses, Cattle and Sheep[\LINK].</English>
-        <French>Chez les indigènes, le [COLOR_BUILDING_TEXT]pâturage[COLOR_REVERT] est l'équivalent de l'[COLOR_BUILDING_TEXT]étable[COLOR_REVERT] du vieux continent et leur permet de produire des [COLOR_HIGHLIGHT_TEXT]chevaux[COLOR_REVERT] dans leur colonie. Un pâturage ne peut être créé que par une civilisation indigène. Les joueurs devront apprendre à se contenter d'une [COLOR_BUILDING_TEXT]écurie[COLOR_REVERT].</French>
-        <German>Die [COLOR_BUILDING_TEXT]Pferdeweide[COLOR_REVERT] ist die Ureinwohner-Variante der [COLOR_BUILDING_TEXT]Stallungen[COLOR_REVERT] und ermöglicht die Produktion von [COLOR_HIGHLIGHT_TEXT]Pferden[COLOR_REVERT] in einer Siedlung. Sie kann nur von Ureinwohner-Zivilisationen errichtet werden. Spieler müssen sich mit den [COLOR_BUILDING_TEXT]Stallungen[COLOR_REVERT] begnügen.</German>
-        <Italian>Il [COLOR_BUILDING_TEXT]pascolo per cavalli[COLOR_REVERT] è l'equivalente nativo della [COLOR_BUILDING_TEXT]stalla[COLOR_REVERT] e permette ai nativi di produrre [COLOR_HIGHLIGHT_TEXT]cavalli[COLOR_REVERT] nei loro insediamenti. Può essere costruito solo dalle civiltà native. I giocatori dovranno accontentarsi della [COLOR_BUILDING_TEXT]stalla[COLOR_REVERT].</Italian>
-        <Spanish>El [COLOR_BUILDING_TEXT]Pastizal para caballos[COLOR_REVERT] es el equivalente del [COLOR_BUILDING_TEXT]Establo[COLOR_REVERT] para los Nativos y les permite producir [COLOR_HIGHLIGHT_TEXT]Caballos[COLOR_REVERT] en sus asentamientos. Solo pueden construirlo las civilizaciones nativas. Los jugadores deberán asentarse para tener el [COLOR_BUILDING_TEXT]Establo[COLOR_REVERT].</Spanish>
+        <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_PEDIA</Tag>
+        <English>Among the earliest inventions that made use of gunpowder, Cannons were among the most important until the 19th century. By the late 1500s, cannon had become light but powerful weapons that could be easily moved and adjusted to aim at whatever target the battle might present. Such cannons proved extremely useful against native foes, who had never experienced the devastating effects of such weapons and had no tactics to counter them.</English>
+        <French>Les Canons figurent parmi les armes à poudre les plus utilisées jusqu'au 19ème siècle. A la fin du 16ème siècle, le canon s'est allégé, mais est aussi devenu une arme puissante que l'on peut déplacer facilement pour cibler n'importe quel objectif. Les canons s'avèrent extrêmement utiles contre les ennemis indigènes, qui n'ont jamais connu les effets dévastateurs de ce genre d'armes et n'ont aucune tactique pour les parer.</French>
+        <German>Die Kanone war eine der ersten Erfindungen, in denen Schießpulver zum Einsatz kam. Bis ins 19. Jahrhundert hinein zählten sie zu den wichtigsten Waffen. Gegen Ende des 16. Jahrhunderts war die Kanone zu einer leichten und mächtigen Waffe geworden, die schnell die Position wechseln konnten, um jedes Ziel ins Visier zu nehmen, das sich während der Schlacht bot. Solche Kanonen erwiesen sich als besonders effektiv gegen eingeborene Gegner, die noch nie mit den verheerenden Auswirkungen dieser Waffen in Berührung gekommen waren und keine taktische Kontermöglichkeit hatten.</German>
+        <Italian>I cannoni furono tra le prime invenzioni a utilizzare la polvere da sparo e rimasero tra le più importanti fino al XIX secolo. Nel tardo XVI secolo, i cannoni erano più leggeri ma potenti che potevano essere facilmente spostate e regolate per prendere di mira i bersagli offerti durante la battaglia. Tali cannoni si dimostrarono estremamente utili contro gli avversari nativi, che non avevano mai provato i devastanti effetti di questo tipo di armi e non avevano tattiche per contrastarle.</Italian>
+        <Spanish>Entre los primeros inventos que hicieron uso de la pólvora, los Cañones siguieron siendo los más importantes hasta el s. XIX. A finales del s. XVI, los Cañones se habían convertido en armas ligeras pero potentes que podían moverse fácilmente para apuntar a cualquier objetivo en la batalla. Estos Cañones demostraron ser extremadamente útiles contra los indígenas enemigos, que nunca habían experimentado los efectos devastadores de tales armas y carecían de tácticas para contrarrestarlas.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROYAL_HALBERDIER_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]The Royal Halberdiers[COLOR_REVERT], specialists of the profession [LINK=PROFESSION_ROYAL_HALBERDIER]Royal Halberdiers[\LINK], are the weakest members of the elite ground forces of the Royal Expeditionary Force. However, the Royal Halberdiers get a bonus of 25% when attacking cavalry units (dragoons and heavy cavalry). The Royal Halberdiers are the Royal counterpart of the colonial "Town Guard" and get the free promotions "Veteran I" and "Veteran II" so that they are very effective as strong defensive units. Attack them with infantry units but not with cavalry units.</English>
         <French>Les [COLOR_UNIT_TEXT]brigadiers royaux[COLOR_REVERT], spécialistes de la profession [LINK=PROFESSION_ROYAL_HALBERDIER]brigadier royal[\LINK], sont les unités les plus faibles du corps expéditionnaire royal. Cependant, ils bénéficient d'un bonus de 25% contre les unités montés (dragons et cavaleries). Les bridgadiers royaux sont l'équivalent royal du brigadier vétéran et bénéficient des promotions "Vétéran I" et "Vétéran II", ce qui leur accorder une certaine puissance défensive. Elles sont plus facilement vaincues avec des unités d'infanterie qu'avec des unités montés.</French>
         <German>Die Landtruppen des Königs verfügen mit den [COLOR_UNIT_TEXT]Königlichen Hellebardenträgern[COLOR_REVERT] (entspricht der Stadtwache) über einen ähnlichen Militärberuf wie die Kolonienationen. Allerdings sind die Einheiten, die diese Berufe ausüben, stärker: Die [COLOR_UNIT_TEXT]Königlichen Hellebardenträger[COLOR_REVERT] verfügt automatisch über die Beförderungen Veteran I, Veteran II und Stadtwache (und damit insgesamt einem Bonus von 20% auf die Kampfstärke und einen Kampfbonus von 25% gegen Berittene). Aufgrund ihrer Stärke gegen berittene Einheiten bekämpft man sie am besten mit Infanterie wie der Kolonialmiliz und der Linieninfanterie.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_STABLE_STRATEGY</Tag>
-        <English>[COLOR_BUILDING_TEXT]Stables[COLOR_REVERT] increase the production of [LINK=YIELD_HORSES]horses[\LINK], [LINK=YIELD_CATTLE]cattle[\LINK] and [LINK=YIELD_SHEEP]sheep[\LINK] in a settlement. Stables protect livestock from harsh weather and cold winters. Colts, fillies, calves and lambs are born into a secure environment. You can increase their production even further by upgrading to a [LINK=BUILDING_LARGE_STABLE]large stable[\LINK] or the [COLOR_CYAN]national wonder[COLOR_REVERT]: the [LINK=BUILDING_HORSE_MARKET]Grand Horse and Cattle Market[\LINK], which can be built only once.[PARAGRAPH:1]For more information, see [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]Breeding Horses, Cattle and Sheep[\LINK].</English>
-        <French>L'[COLOR_BUILDING_TEXT]étable[COLOR_REVERT] permet d'augmenter la production de [COLOR_HIGHLIGHT_TEXT]chevaux[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]moutons[COLOR_REVERT] et [COLOR_HIGHLIGHT_TEXT]bétails[COLOR_REVERT]. Ce rendement peut être augmenté en l'améliorant en [COLOR_BUILDING_TEXT]ranch[COLOR_REVERT] ou en y faisant travailler un [COLOR_UNIT_TEXT]Maître éleveur[COLOR_REVERT]. Pour construire une [COLOR_BUILDING_TEXT]étable[COLOR_REVERT], vous devez disposer de 50 chevaux.</French>
-        <German>In den [COLOR_BUILDING_TEXT]Stallungen[COLOR_REVERT] und der [COLOR_BUILDING_TEXT]Ranch[COLOR_REVERT] können Bürger im Beruf des Ranchers aus [COLOR_HIGHLIGHT_TEXT]Nahrung[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]Pferde[COLOR_REVERT] züchten. In den Stallungen erzeugt ein Freier Kolonist pro Runde aus zwei Nahrungseinheiten zwei Pferde. Baut man die Stallungen zu einer Ranch aus, erzeugt er aus vier Nahrungseinheiten vier Pferde. Zur Errichtung der Stallungen und der Ranch wird eine gewisse Zahl von Pferden benötigt, das simuliert, dass man zur Gründung einer Pferdezucht eine kleine Herde braucht.[NEWLINE][NEWLINE]Tipp: [COLOR_UNIT_TEXT]Erfahrene Rancher[COLOR_REVERT] verbrauchen zwar doppelt soviel Nahrung als Futter, erzeugen daraus aber auch doppelt soviele Pferde.</German>
-        <Italian>Le [COLOR_BUILDING_TEXT]stalle[COLOR_REVERT] permettono di produrre [COLOR_HIGHLIGHT_TEXT]cavalli[COLOR_REVERT]. Costruendo una [COLOR_BUILDING_TEXT]stalla[COLOR_REVERT] nella tua colonia puoi convertire il cibo in intere mandrie di [COLOR_HIGHLIGHT_TEXT]cavalli[COLOR_REVERT], due a turno al costo di due unità di [COLOR_HIGHLIGHT_TEXT]cibo[COLOR_REVERT], se ci lavora un [COLOR_UNIT_TEXT]libero colono[COLOR_REVERT]. Puoi aumentare ulteriormente la produzione passando a una [COLOR_BUILDING_TEXT]fattoria[COLOR_REVERT], oppure mandandoci a lavorare un [COLOR_UNIT_TEXT]mastro allevatore[COLOR_REVERT]. Devi avere a disposizione 50 cavalli, per costruire una [COLOR_BUILDING_TEXT]stalla[COLOR_REVERT].</Italian>
-        <Spanish>Los [COLOR_BUILDING_TEXT]Establos[COLOR_REVERT] permiten producir [COLOR_HIGHLIGHT_TEXT]Caballos[COLOR_REVERT]. Si construís un [COLOR_BUILDING_TEXT]Establo[COLOR_REVERT] en la colonia, podréis convertir los Alimentos en manadas de [COLOR_HIGHLIGHT_TEXT]Caballos[COLOR_REVERT]: dos por turno a un coste de dos [COLOR_HIGHLIGHT_TEXT]Alimentos[COLOR_REVERT] si hay ahí trabajando un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT]. Esto se puede aumentar si se moderniza a un [COLOR_BUILDING_TEXT]Rancho[COLOR_REVERT] o se asigna a un [COLOR_UNIT_TEXT]Maestro ranchero[COLOR_REVERT] a trabajar ahí. Debéis disponer de 50 Caballos para poder construir un [COLOR_BUILDING_TEXT]Establo[COLOR_REVERT].</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_RANCH_STRATEGY</Tag>
-        <English>The [COLOR_BUILDING_TEXT]ranch[COLOR_REVERT] is the ultimate source of [COLOR_HIGHLIGHT_TEXT]horses[COLOR_REVERT] for your burgeoning colony. A [COLOR_UNIT_TEXT]free colonist[COLOR_REVERT] working in a Ranch will breed four [COLOR_HIGHLIGHT_TEXT]horses[COLOR_REVERT] per turn at a cost of four food. This number can be increased by assigning a [COLOR_UNIT_TEXT]master rancher[COLOR_REVERT] to the job. Before you can build your ranch, though, you must have a [COLOR_BUILDING_TEXT]stable[COLOR_REVERT]. 100 horses need to be on hand to build a ranch.</English>
-        <French>Le [COLOR_BUILDING_TEXT]Ranch[COLOR_REVERT] permet d'augmenter encore la production de [COLOR_HIGHLIGHT_TEXT]chevaux[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]moutons[COLOR_REVERT] et [COLOR_HIGHLIGHT_TEXT]bétails[COLOR_REVERT]. Ce rendement peut être augmenté en y faisant travailler un [COLOR_UNIT_TEXT]Maître éleveur[COLOR_REVERT]. Pour construire une [COLOR_BUILDING_TEXT]ranch[COLOR_REVERT], vous devez disposer de 100 chevaux. En construisant la merveille nationale [COLOR_BUILDING_TEXT]Grande Halle aux bestiaux[COLOR_REVERT], vous pourrez encore augmenter le rendement dans l'une de vos colonies.</French>
-        <German>In den [COLOR_BUILDING_TEXT]Stallungen[COLOR_REVERT] und der [COLOR_BUILDING_TEXT]Ranch[COLOR_REVERT] können Bürger im Beruf des Ranchers aus [COLOR_HIGHLIGHT_TEXT]Nahrung[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]Pferde[COLOR_REVERT] züchten. In den Stallungen erzeugt ein Freier Kolonist pro Runde aus zwei Nahrungseinheiten zwei Pferde. Baut man die Stallungen zu einer Ranch aus, erzeugt er aus vier Nahrungseinheiten vier Pferde. Zur Errichtung der Stallungen und der Ranch wird eine gewisse Zahl von Pferden benötigt, das simuliert, dass man zur Gründung einer Pferdezucht eine kleine Herde braucht.[NEWLINE][NEWLINE]Tipp: [COLOR_UNIT_TEXT]Erfahrene Rancher[COLOR_REVERT] verbrauchen zwar doppelt soviel Nahrung als Futter, erzeugen daraus aber auch doppelt soviele Pferde.</German>
-        <Italian>La [COLOR_BUILDING_TEXT]fattoria[COLOR_REVERT] rappresenta la fonte definitiva di [COLOR_HIGHLIGHT_TEXT]cavalli[COLOR_REVERT] per una colonia in crescita. Un [COLOR_UNIT_TEXT]libero colono[COLOR_REVERT] che lavora in una [COLOR_BUILDING_TEXT]fattoria[COLOR_REVERT] produce quattro [COLOR_HIGHLIGHT_TEXT]cavalli[COLOR_REVERT] per turno, al costo di quattro unità di cibo. Puoi aumentare ulteriormente questo numero mandandoci a lavorare un [COLOR_UNIT_TEXT]mastro allevatore[COLOR_REVERT]. Prima di poter costruire una [COLOR_BUILDING_TEXT]fattoria[COLOR_REVERT], però, devi avere una [COLOR_BUILDING_TEXT]stalla[COLOR_REVERT]. Devi avere a disposizione 100 cavalli, per costruire una [COLOR_BUILDING_TEXT]fattoria[COLOR_REVERT].</Italian>
-        <Spanish>El [COLOR_BUILDING_TEXT]Rancho[COLOR_REVERT] es la principal fuente de [COLOR_HIGHLIGHT_TEXT]Caballos[COLOR_REVERT] para vuestra floreciente colonia. Un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] que trabaje para un [COLOR_BUILDING_TEXT]Rancho[COLOR_REVERT] producirá cuatro [COLOR_HIGHLIGHT_TEXT]Caballos[COLOR_REVERT] por turno a un coste de cuatro Alimentos. Este número puede incrementarse asignando el trabajo a un [COLOR_UNIT_TEXT]Maestro ranchero[COLOR_REVERT]. Antes de que construyáis el [COLOR_BUILDING_TEXT]Rancho[COLOR_REVERT], sin embargo, debéis tener un [COLOR_BUILDING_TEXT]Establo[COLOR_REVERT]. Debéis disponer de 100 caballos para poder construir un [COLOR_BUILDING_TEXT]Rancho[COLOR_REVERT].</Spanish>
     </TEXT>
 </Civ4GameText>

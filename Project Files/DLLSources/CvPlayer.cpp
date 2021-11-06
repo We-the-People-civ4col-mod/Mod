@@ -5734,7 +5734,12 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 							}
 							// case Water Goody
 							// to ensure that Water Unit Goodies do not only trigger Units - unless Cargo is full
-							if (isWaterGoody && (!bCanTriggerUnitGoodies || pUnit == NULL || (pUnit->cargoSpace() - pUnit->getCargo() <= 0)))
+							if (isWaterGoody && (
+								!bCanTriggerUnitGoodies
+								|| pUnit == NULL
+								|| (pUnit->getUnitInfo().getSpecialCargo() != NO_SPECIALUNIT && pUnit->getUnitInfo().getSpecialCargo() != SPECIALUNIT_COLONIST_UNIT)
+								|| (pUnit->cargoSpace() - pUnit->getCargo() <= 0)
+								))
 							{
 								bValid = true;
 							}

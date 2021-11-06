@@ -87,12 +87,12 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Wild Animals</Text>
+            <Text>Animali selvatici</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Wild Animals</Text>
+            <Text>Animales salvajes</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
@@ -173,22 +173,22 @@
         <Tag>TXT_KEY_TRADE_WORLD_MAP_STRING</Tag>
         <English>World Map</English>
         <French>
-            <Text>Carte du monde</Text>
+            <Text>Carte du Nouveau Monde</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Weltkarte</Text>
-            <Gender>Male</Gender>
+            <Text>Karte der Neuen Welt</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Mappa</Text>
+            <Text>Mappa del Nuovo Mondo</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Mapamundi</Text>
+            <Text>Mapa del Nuevo Mundo</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -266,26 +266,26 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PEDIA_CATEGORY_UNIT</Tag>
-        <English>Units</English>
+        <Tag>TXT_KEY_PEDIA_CATEGORY_BONUS</Tag>
+        <English>Resources</English>
         <French>
-            <Text>Unités</Text>
+            <Text>Ressources</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </French>
         <German>
-            <Text>Einheiten</Text>
+            <Text>Bonusressourcen</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Unità</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Risorse</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Unidades</Text>
-            <Gender>Female</Gender>
+            <Text>Recursos</Text>
+            <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
     </TEXT>
@@ -314,99 +314,43 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PEDIA_CATEGORY_BONUS</Tag>
-        <English>Resources</English>
+        <Tag>TXT_KEY_PEDIA_CATEGORY_CIV</Tag>
+        <English>Colonies / Natives</English>
         <French>
-            <Text>Ressources</Text>
+            <Text>Nations</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </French>
-        <German>
-            <Text>Bonusressourcen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
+        <German>Politische Fraktionen</German>
         <Italian>
-            <Text>Risorse</Text>
-            <Gender>Female</Gender>
+            <Text>Colonie/Nativi</Text>
+            <Gender>Male</Gender>
             <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Recursos</Text>
+            <Text>Colonias/nativos</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PEDIA_CATEGORY_IMPROVEMENT</Tag>
-        <English>Improvements</English>
+        <Tag>TXT_KEY_PEDIA_CATEGORY_CIVIC</Tag>
+        <English>Constitution</English>
         <French>
-            <Text>Aménagements</Text>
+            <Text>Constitution</Text>
             <Gender>Female</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </French>
-        <German>
-            <Text>Bauten im Gelände</Text>
+        <German>Verfassungsgrundsätze</German>
+        <Italian>
+            <Text>Costituzione</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Miglioramenti</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Mejoras</Text>
+            <Text>Constitución</Text>
             <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PEDIA_CATEGORY_PROMOTION</Tag>
-        <English>Promotions</English>
-        <French>
-            <Text>Promotions</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Beförderungen</Text>
-            <Gender>Male</Gender>
             <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Promozioni</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Ascensos</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PEDIA_CATEGORY_LEADER</Tag>
-        <English>Leaders</English>
-        <French>
-            <Text>Dirigeants</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Oberhäupter</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Leader</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Líderes</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -434,28 +378,12 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PEDIA_CATEGORY_TERRAIN</Tag>
-        <English>Base Terrain</English>
-        <French>
-            <Text>Terrains de base</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Geländetypen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Terreno base</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Terreno base</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
+        <Tag>TXT_KEY_PEDIA_CATEGORY_FATHERS</Tag>
+        <English>Founding Fathers</English>
+        <French>Pères fondateurs</French>
+        <German>Gründerväter</German>
+        <Italian>Padri Fondatori</Italian>
+        <Spanish>Padres fundadores</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_CATEGORY_FEATURE</Tag>
@@ -504,6 +432,142 @@
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_CATEGORY_IMPROVEMENT</Tag>
+        <English>Improvements</English>
+        <French>
+            <Text>Aménagements</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>
+            <Text>Bauten im Gelände</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Miglioramenti</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Mejoras</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_CATEGORY_LEADER</Tag>
+        <English>Leaders</English>
+        <French>
+            <Text>Dirigeants</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>
+            <Text>Oberhäupter</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Leader</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Líderes</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_CATEGORY_PROFESSION</Tag>
+        <English>Professions</English>
+        <French>Professions</French>
+        <German>Berufe</German>
+        <Italian>Professioni</Italian>
+        <Spanish>Profesiones</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_CATEGORY_PROMOTION</Tag>
+        <English>Promotions</English>
+        <French>
+            <Text>Promotions</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>
+            <Text>Beförderungen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Promozioni</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Ascensos</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_CATEGORY_TERRAIN</Tag>
+        <English>Base Terrain</English>
+        <French>
+            <Text>Terrains de base</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Geländetypen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Terreno base</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Terreno base</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_CATEGORY_UNIT</Tag>
+        <English>Units</English>
+        <French>
+            <Text>Unités</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>
+            <Text>Einheiten</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Unità</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Unidades</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_CATEGORY_YIELDS</Tag>
+        <English>Goods and Materials</English>
+        <French>Marchandises et matériaux</French>
+        <German>Rohstoffe und Waren</German>
+        <Italian>Beni e materiali</Italian>
+        <Spanish>Mercancías y materias primas</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SYSTEM_ALL</Tag>
@@ -648,30 +712,6 @@
         <German>Chota</German>
         <Italian>Chota</Italian>
         <Spanish>Chota</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_NATIVE_GENERAL</Tag>
-        <English>Great Warrior</English>
-        <French>
-            <Text>Great Warrior</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Großer Krieger</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Italian>
-            <Text>Great Warrior</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Great Warrior</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_NAME_RICHMOND</Tag>

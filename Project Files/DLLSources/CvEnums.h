@@ -1107,14 +1107,6 @@ enum DenialTypes
 #endif
 };
 
-enum SpecialUnitTypes
-{
-	NO_SPECIALUNIT = -1,
-#ifdef CHECK_GLOBAL_CONSTANTS
-	NUM_SPECIALUNIT_TYPES,
-#endif
-	COMPILE_TIME_NUM_SPECIALUNIT_TYPES = MAX_SHORT,
-};
 
 /*
 enum UnitAITypes
@@ -1448,6 +1440,7 @@ enum ControlTypes
 #ifndef HARDCODE_XML_VALUES
 extern HurryTypes HURRY_GOLD;
 extern HurryTypes HURRY_IMMIGRANT;
+extern SpecialUnitTypes SPECIALUNIT_COLONIST_UNIT;
 #endif
 
 enum WarPlanTypes

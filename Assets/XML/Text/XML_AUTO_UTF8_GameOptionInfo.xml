@@ -26,10 +26,10 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_AGGRESSIVE_AI_HELP</Tag>
-        <English>AI leaders favor war over diplomacy</English>
+        <English>AI leaders favour war over diplomacy.</English>
         <French>Les dirigeants gérés par l'IA préfèrent la guerre à la diplomatie.</French>
-        <German>Computergegner bevorzugen den Krieg gegenüber der Diplomatie</German>
-        <Italian>L'IA dei leader preferisce la guerra alla diplomazia</Italian>
+        <German>Computergegner bevorzugen den Krieg gegenüber der Diplomatie.</German>
+        <Italian>L'IA dei leader preferisce la guerra alla diplomazia.</Italian>
         <Spanish>Los líderes de la IA prefieren la guerra a la diplomacia.</Spanish>
     </TEXT>
     <TEXT>
@@ -42,10 +42,10 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ALWAYS_PEACE_HELP</Tag>
-        <English>Players cannot declare war on each other</English>
+        <English>Players cannot declare war on each other.</English>
         <French>Les joueurs ne peuvent pas se déclarer la guerre.</French>
-        <German>Spieler können sich gegenseitig nicht den Krieg erklären</German>
-        <Italian>I giocatori non possono dichiararsi guerra tra loro</Italian>
+        <German>Spieler können sich nicht gegenseitig den Krieg erklären.</German>
+        <Italian>I giocatori non possono dichiararsi guerra tra loro.</Italian>
         <Spanish>Los jugadores no se pueden declarar la guerra.</Spanish>
     </TEXT>
     <TEXT>
@@ -58,17 +58,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ALWAYS_WAR_HELP</Tag>
-        <English>All AI players are at war with the human player for the length of the game</English>
+        <English>All AI players are at war with the human player for the length of the game.</English>
         <French>Toutes les factions gérées par l'IA sont en guerre avec le joueur pendant toute la durée du jeu.</French>
-        <German>Alle KI-Spieler befinden sich für die gesamte Spieldauer mit den menschlichen Spielern im Krieg</German>
-        <Italian>Tutti i giocatori gestiti dall'IA sono in guerra con le colonie dei giocatori per tutta la partita</Italian>
+        <German>Alle KI-Spieler befinden sich für die gesamte Spieldauer mit den menschlichen Spielern im Krieg.</German>
+        <Italian>Tutti i giocatori gestiti dall'IA sono in guerra con le colonie dei giocatori per tutta la partita.</Italian>
         <Spanish>Todos los jugadores de la IA están en guerra con los humanos hasta que acabe la partida.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_LEAD_ANY_CIV</Tag>
         <English>Unrestricted Leaders</English>
         <French>Pas de restriction de dirigeants</French>
-        <German>Beliebige Staatsoberhäupter</German>
+        <German>Freie Wahl des Anführers</German>
         <Italian>Leader senza limitazioni</Italian>
         <Spanish>Líderes sin restricciones</Spanish>
     </TEXT>
@@ -76,7 +76,7 @@
         <Tag>TXT_KEY_GAMEOPTION_LEAD_ANY_CIV_HELP</Tag>
         <English>Players may lead any Nation with any Leader.</English>
         <French>Les joueurs peuvent mener n'importe quelle nation avec n'importe quel chef.</French>
-        <German>Die Spieler können eine beliebige Nation als beliebiges Staatsoberhaupt anführen</German>
+        <German>Die Spieler können eine jede Nation mit jedem Anführer anführen.</German>
         <Italian>I giocatori possono condurre una nazione qualsiasi con un qualsiasi leader.</Italian>
         <Spanish>Los jugadores pueden dirigir cualquier nación con cualquier líder.</Spanish>
     </TEXT>
@@ -106,7 +106,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NEW_RANDOM_SEED_HELP</Tag>
-        <English>A new random seed is generated every time the game is reloaded - which, for example, will lead to different combat results</English>
+        <English>A new random seed is generated every time the game is reloaded - which, for example, will lead to different combat results.</English>
         <French>Un nouveau classement aléatoire est généré chaque fois que le jeu est rechargé, ce qui peut entraîner différents résultats de combat, par exemple.</French>
         <German>Jedes Mal, wenn das Spiel neu geladen wird, wird ein neuer Zufallswert generiert, was zum Beispiel zu unterschiedlichen Kampfausgängen führen kann.</German>
         <Italian>Ogni volta che ricaricherai il gioco verrà generata una nuova estrazione casuale, portando, per esempio, a diversi risultati di combattimento.</Italian>
@@ -122,10 +122,10 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_CHANGING_WAR_PEACE_HELP</Tag>
-        <English>All players are locked into either war or peace for the length of the game</English>
+        <English>All players are locked into either war or peace for the length of the game.</English>
         <French>Tous les joueurs sont bloqués en état de guerre ou de paix pendant toute la durée du jeu.</French>
-        <German>Alle Spieler befinden sich für die gesamte Spieldauer entweder im Krieg oder im Frieden</German>
-        <Italian>Tutti i giocatori sono bloccati in guerra o in pace per tutta la partita</Italian>
+        <German>Alle Spieler befinden sich für die gesamte Spieldauer entweder im Krieg oder im Frieden.</German>
+        <Italian>Tutti i giocatori sono bloccati in guerra o in pace per tutta la partita.</Italian>
         <Spanish>Todos los jugadores quedarán bloqueados en guerra o en paz hasta que acabe la partida.</Spanish>
     </TEXT>
     <TEXT>
@@ -138,10 +138,10 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_CITY_RAZING_HELP</Tag>
-        <English>European Settlements cannot be razed by other Europeans after capture</English>
+        <English>European Settlements cannot be razed by other Europeans after capture.</English>
         <French>Impossible pour les Européens de raser les autres colonies européennes après leur capture.</French>
-        <German>Europäische Siedlungen können nach der Einnahme durch andere Europäer nicht vernichtet werden</German>
-        <Italian>Gli insediamenti europei non possono essere razziati da altri europei dopo la conquista</Italian>
+        <German>Europäische Siedlungen können nach der Einnahme durch andere Europäer nicht mehr zerstört werden.</German>
+        <Italian>Gli insediamenti europei non possono essere razziati da altri europei dopo la conquista.</Italian>
         <Spanish>Los asentamientos europeos no pueden ser arrasados después de que otros europeos los capturen.</Spanish>
     </TEXT>
     <TEXT>
@@ -154,11 +154,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_EVENTS_HELP</Tag>
-        <English>Random Events do not occur</English>
-        <French>Les événements aléatoires ne se produisent pas</French>
-        <German>Es finden keine Zufallsereignisse ausgelöst</German>
+        <English>Random Events do not occur.</English>
+        <French>Les événements aléatoires ne se produisent pas.</French>
+        <German>Es finden keine Zufallsereignisse ausgelöst.</German>
         <Italian>Non si verificano eventi casuali</Italian>
-        <Spanish>No ocurren sucesos al azar</Spanish>
+        <Spanish>No ocurren sucesos al azar.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_GOODY_HUTS</Tag>
@@ -170,9 +170,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_GOODY_HUTS_HELP</Tag>
-        <English>Random map generator does not place any ancient ruins ("goody huts") on the map</English>
+        <English>Random map generator does not place any ancient ruins ("goody huts") on the map.</English>
         <French>Le générateur de carte aléatoire ne place pas de villages tribaux ("huttes à cadeaux") sur la carte.</French>
-        <German>Der Zufallskartengenerator platziert keine Ruinen und Grabstätten auf der Karte</German>
+        <German>Der Zufallskartengenerator platziert keine Ruinen und Grabstätten auf der Karte.</German>
         <Italian>Il generatore di mappe casuali non collocherà alcun villaggio tribale (le capanne "utili") sulla mappa.</Italian>
         <Spanish>El generador aleatorio de mapas no pone en ellos aldeas tribales (con sus típicas "golosinas").</Spanish>
     </TEXT>
@@ -181,48 +181,48 @@
         <English>No variables hidden</English>
         <French>Aucune variable cachée</French>
         <German>Keine versteckten Variablen mehr</German>
-        <Italian>No more variables hidden</Italian>
-        <Spanish>No more variables hidden</Spanish>
+        <Italian>Niente più variabili nascoste</Italian>
+        <Spanish>No hay más variables ocultas</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_MORE_VARIABLES_HIDDEN_HELP</Tag>
         <English>The game displays extra information on attitudes, taxes, Natives etc...</English>
         <French>Des informations supplémentaires sur les attitudes, les taxes, et les indiens apparaissent a l'écran</French>
-        <German>Im spiel werden zusätzliche Informationen angzeigt. Zur Attitude, zu den Steuern, zu den Ureinwohnern ...</German>
-        <Italian>The game displays extra infos on attitudes, taxes, Natives etc...</Italian>
-        <Spanish>The game displays extra infos on attitudes, taxes, Natives etc...</Spanish>
+        <German>Im Spiel werden zusätzliche Informationen angzeigt. Zur Attitude, zu den Steuern, zu den Ureinwohnern, etc...</German>
+        <Italian>Ulteriori informazioni vengono visualizzate nel gioco. Sull'atteggiamento, sulle tasse, sugli aborigeni, ecc...</Italian>
+        <Spanish>En el juego se muestra información adicional. Sobre la actitud, sobre los impuestos, sobre los aborígenes, etc...</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_WILD_LAND_ANIMALS</Tag>
         <English>No Wild Land Animals</English>
         <French>Pas d'animaux sauvages terrestres</French>
         <German>Keine Wilden Tiere an Land</German>
-        <Italian>No Wild Land Animals</Italian>
-        <Spanish>No Wild Land Animals</Spanish>
+        <Italian>Nessun animale selvatico della terra</Italian>
+        <Spanish>No hay animales terrestres salvajes</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_WILD_LAND_ANIMALS_HELP</Tag>
-        <English>Wild Land Animals will not be spawned</English>
-        <French>Aucun animal sauvage n'apparaît sur les terres</French>
-        <German>Es werden keine Wilden Tiere an Land erzeugt</German>
-        <Italian>Wild Land Animals will not be spawned</Italian>
-        <Spanish>Wild Land Animals will not be spawned</Spanish>
+        <English>Wild Land Animals will not be spawned.</English>
+        <French>Aucun animal sauvage n'apparaît sur les terres.</French>
+        <German>Es werden keine Wilden Tiere an Land erzeugt.</German>
+        <Italian>Non si producono animali selvatici sulla terraferma.</Italian>
+        <Spanish>No se producen animales salvajes en tierra.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_WILD_SEA_ANIMALS</Tag>
         <English>No Wild Sea Animals</English>
         <French>Pas d'animaux sauvages marins</French>
         <German>Keine Wilden Tiere im Wasser</German>
-        <Italian>No Wild Sea Animals</Italian>
-        <Spanish>No Wild Sea Animals</Spanish>
+        <Italian>Nessun animale marino selvaggio</Italian>
+        <Spanish>No hay animales marinos salvajes</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_WILD_SEA_ANIMALS_HELP</Tag>
-        <English>Wild Sea Animals will not be spawned</English>
-        <French>Aucun animal sauvage n'apparaît dans les mers</French>
-        <German>Es werden keine Wilden Tiere im Wasser erzeugt</German>
-        <Italian>Wild Sea Animals will not be spawned</Italian>
-        <Spanish>Wild Sea Animals will not be spawned</Spanish>
+        <English>Wild Sea Animals will not be spawned.</English>
+        <French>Aucun animal sauvage n'apparaît dans les mers.</French>
+        <German>Es werden keine Wilden Tiere im Wasser erzeugt.</German>
+        <Italian>Non si creano animali selvatici nell'acqua.</Italian>
+        <Spanish>No se crean animales salvajes en el agua.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ONE_CITY_CHALLENGE</Tag>
@@ -234,10 +234,10 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ONE_CITY_CHALLENGE_HELP</Tag>
-        <English>The human player can never control more than one settlement</English>
+        <English>The human player can never control more than one settlement.</English>
         <French>Le joueur humain ne peut jamais contrôler plus d'une colonie.</French>
-        <German>Der menschliche Spieler kann maximal eine Siedlung kontrollieren</German>
-        <Italian>Il giocatore non può mai controllare più di un insediamento</Italian>
+        <German>Der menschliche Spieler kann maximal eine Siedlung kontrollieren.</German>
+        <Italian>Il giocatore non può mai controllare più di un insediamento.</Italian>
         <Spanish>El jugador humano nunca podrá controlar más de un asentamiento.</Spanish>
     </TEXT>
     <TEXT>
@@ -250,10 +250,10 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_PERMANENT_ALLIANCES_HELP</Tag>
-        <English>Two colonies can form a Permanent Alliance which lasts the rest of the game</English>
+        <English>Two colonies can form a Permanent Alliance which lasts the rest of the game.</English>
         <French>Deux colonies peuvent former une Alliance permanente qui durera jusqu'à la fin du jeu.</French>
-        <German>Zwei Kolonien können eine Allianz schließen, die die restliche Spielzeit überdauert</German>
-        <Italian>Due colonie possono formare una alleanza permanente che duri fino alla fine della partita</Italian>
+        <German>Zwei Kolonien können eine Allianz schließen, die die restliche Spielzeit überdauert.</German>
+        <Italian>Due colonie possono formare una alleanza permanente che duri fino alla fine della partita.</Italian>
         <Spanish>Dos colonias pueden formar una alianza permanente que dure hasta que acabe la partida.</Spanish>
     </TEXT>
     <TEXT>
@@ -261,40 +261,48 @@
         <English>Random settlement areas of Natives</English>
         <French>Positionnement aléatoires des indigènes</French>
         <German>Beliebige Siedlungsgebiete der Ureinwohner</German>
-        <Italian>Random settlement areas of Natives</Italian>
-        <Spanish>Random settlement areas of Natives</Spanish>
+        <Italian>Aree di insediamento casuali di nativi</Italian>
+        <Spanish>Zonas de asentamiento aleatorio de nativos</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_RANDOM_SETTLEMENT_AREAS_HELP</Tag>
-        <English>Random settlement areas for Natives instead of using Geographic Correct Placement</English>
+        <English>Random settlement areas for Natives instead of using geographically correct placement</English>
         <French>Les indigènes sont placés de manière aléatoire, sans tenir compte de la lattitude.</French>
-        <German>Ureinwohnervölker werden auf der Nord-Süd-Achse zufällig und nicht historisch korrekt platziert</German>
-        <Italian>Random settlement areas for Natives instead of using Geographic Correct Placement</Italian>
-        <Spanish>Random settlement areas for Natives instead of using Geographic Correct Placement</Spanish>
+        <German>Siedlungen der Ureinwohner werden auf der Nord-Süd-Achse zufällig und nicht historisch korrekt platziert.</German>
+        <Italian>Gli insediamenti nativi sono collocati sull'asse nord-sud in modo casuale e non storicamente accurato.</Italian>
+        <Spanish>Los asentamientos nativos se sitúan en el eje norte-sur de forma aleatoria y no son históricamente precisos.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REDUCED_CITY_DISTANCE</Tag>
         <English>Reduced Colony Distance</English>
-        <French>Reduced Colony Distance</French>
+        <French>Réduction de la distance entre les colonies</French>
         <German>Reduzierte Distanz zwischen Kolonien</German>
-        <Italian>Reduced Colony Distance</Italian>
-        <Spanish>Reduced Colony Distance</Spanish>
+        <Italian>Distanza ridotta tra le colonie</Italian>
+        <Spanish>Reducción de la distancia entre colonias</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REDUCED_CITY_DISTANCE_HELP</Tag>
-        <English>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid)</English>
-        <French>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid)</French>
-        <German>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid)</German>
-        <Italian>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid)</Italian>
-        <Spanish>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid)</Spanish>
+        <English>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid).</English>
+        <French>Réduire la distance minimale aux autres colonies de 1 si le joueur possède déjà la parcelle fondatrice et toutes les parcelles voisines (grille 3x3).</French>
+        <German>Verringert den Mindestabstand zu anderen Kolonien um 1, wenn der Spieler bereits die Gründungsparzelle und alle angrenzenden Parzellen besitzt (3x3-Raster).</German>
+        <Italian>Ridurre la distanza minima dalle altre colonie di 1 se il giocatore possiede già il lotto fondatore e tutti i lotti vicini (griglia 3x3).</Italian>
+        <Spanish>Reducir la distancia mínima a otras colonias en 1 si el jugador ya posee la parcela fundadora y todas las parcelas contiguas (cuadrícula 3x3).</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REMOVE_WORLD_BUILDER</Tag>
         <English>Remove World Builder</English>
+        <French>Supprimer World Builder</French>
+        <German>Ohne World Builder spielen</German>
+        <Italian>Rimuovere il World Builder</Italian>
+        <Spanish>Eliminar el World Builder</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REMOVE_WORLD_BUILDER_HELP</Tag>
-        <English>Removes the ability to enter world builder.[NEWLINE]World builder is a known way to cheat and people might not want this option, be it for some sort of competitive gaming or just removal of the temptation.</English>
+        <English>Removes the ability to enter World Builder.[NEWLINE]World Builder is a known way to cheat and people might not want this option, be it for some sort of competitive gaming or just removal of the temptation.</English>
+        <French>Suppression de la possibilité d'entrer dans World Builder.[NEWLINE]World Builder est un moyen connu de tricher et les gens pourraient ne pas vouloir de cette option, que ce soit pour une sorte de jeu compétitif ou simplement pour supprimer la tentation.</French>
+        <German>Entfernt die Möglichkeit, den World Builder zu benutzen.[NEWLINE]Der World Builder ist ein bekannter Weg, um zu betrügen, und einige Spieler wollen diese Option vielleicht nicht, sei es für eine Art von kompetitivem Spiel oder einfach nur, um der Versuchung zu entgehen.</German>
+        <Italian>Rimuove la possibilità di entrare nel World Builder.[NEWLINE]Il World Builder è un modo noto per barare e la gente potrebbe non volere questa opzione, sia per una sorta di gioco competitivo o semplicemente per rimuovere la tentazione.</Italian>
+        <Spanish>Elimina la posibilidad de entrar en el World Builder.[NEWLINE]El World Builder es una forma conocida de hacer trampas y la gente podría no querer esta opción, ya sea para algún tipo de juego competitivo o simplemente para eliminar la tentación.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_DEACTIVATE_HEMISPHERE_RESTRICTIONS</Tag>
@@ -308,29 +316,35 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE</Tag>
-        <English>Only 1 Colonist learning per Native Village</English>
-        <German>Nur 1 Schüler gleichzeitig pro Ureinwohnerdorf</German>
+        <English>Only 1 Colonist learning per Native settlement</English>
+        <French>Un seul élève à la fois par établissement autochtone</French>
+        <German>Nur 1 Schüler gleichzeitig je Siedlung der Ureinwohner</German>
+        <Italian>Solo 1 studente alla volta per insediamento nativo</Italian>
+        <Spanish>Sólo 1 estudiante a la vez por asentamiento nativo</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE_HELP</Tag>
-        <English>Only 1 Colonist is allowed to live and learn in a Native Village at any one time. After he's qualified, the next Colonist can be trained.</English>
-        <German>Nur 1 Kolonist darf zur selben Zeit in einem Unreinwohnerdorft leben und lernen. Der nächste muss warten bis dieser fertig trainiert wurde.</German>
+        <English>Only 1 Colonist is allowed to live and learn in a Native settlement at any one time. After he's qualified, the next Colonist can be trained.</English>
+        <French>Un seul colon peut vivre dans une colonie indigène à la fois et apprendre d'eux. Le prochain doit attendre que celui-ci ait terminé ses études.</French>
+        <German>Nur 1 Kolonist darf zur selben Zeit in einer Siedlung der Ureinwohner leben und von ihnen lernen. Der nächste muss warten, bis dieser seine Ausbildung beendet hat.</German>
+        <Italian>Solo 1 colono può vivere in un insediamento nativo alla volta e imparare da loro. Il prossimo deve aspettare che questo abbia finito la sua educazione.</Italian>
+        <Spanish>Sólo un colono puede vivir en un asentamiento nativo a la vez y aprender de ellos. El siguiente tiene que esperar hasta que éste haya terminado su educación.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REDUCED_REF</Tag>
         <English>Reduced Royal Expeditionary Force</English>
-        <French>Force expéditionnaire du Roi réduite</French>
-        <German>Kleinere Königsarmee</German>
-        <Italian>Reduced Royal Expeditionary Force</Italian>
-        <Spanish>Reduced Royal Expeditionary Force</Spanish>
+        <French>Corps Expéditionnaire Royal réduite</French>
+        <German>Kleineres Königliches Expeditionskorps</German>
+        <Italian>Piccola forza di spedizione reale</Italian>
+        <Spanish>Reducción de la Real Fuerza Expedicionaria</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REDUCED_REF_HELP</Tag>
-        <English>Reduced REF for King of Player</English>
-        <French>La Force expéditionnaire du Roi a été réduite</French>
-        <German>Halbiert beim Spieler die Expeditionsstreitmacht des Königs</German>
-        <Italian>Reduced REF for King of Player</Italian>
-        <Spanish>Reduced REF for King of Player</Spanish>
+        <English>The Royal Expeditionary Corps is halved for the player.</English>
+        <French>Le Corps Expéditionnaire Royal est réduit de moitié pour le joueur.</French>
+        <German>Das Königliche Expeditionskorps wird für den Spieler halbiert.</German>
+        <Italian>La forza di spedizione reale è dimezzato per il giocatore.</Italian>
+        <Spanish>El Real Fuerza Expedicionario se reduce a la mitad para el jugador.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_USE_OLD_FOUNDING_FATHER_SYSTEM</Tag>

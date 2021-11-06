@@ -457,8 +457,8 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_PRINTZ_1</Tag>
-        <English>Welcome [CT_NAME], to the [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. My name is [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. It is good to see a familiar face in these strange lands. I hope a bond of mutual trust can grow between us and our subjects.</English>
-        <French>Bienvenue [CT_NAME] dans nos [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Mon nom est [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Cela fait plaisir de voir un européen dans ses terres si étranges. J'espère que nous bâtirons une relation de confiance entre nos sujets.</French>
+        <English>Welcome, [CT_NAME], to the [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. My name is [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. It is good to see a familiar face in these strange lands. I hope a bond of mutual trust can grow between us and our subjects.</English>
+        <French>Bienvenue, [CT_NAME] dans nos [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Mon nom est [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Cela fait plaisir de voir un européen dans ses terres si étranges. J'espère que nous bâtirons une relation de confiance entre nos sujets.</French>
         <German>Willkommen, [CT_NAME], in [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Mein Name ist [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Es ist gut, ein vertrautes Gesicht in diesen fremden Ländern zu sehen. Ich hoffe, dass ein Band des gegenseitigen Vertrauens zwischen uns und unseren Untertanen wachsen kann.</German>
     </TEXT>
     <TEXT>

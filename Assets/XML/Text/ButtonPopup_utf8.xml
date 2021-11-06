@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <Civ4GameText xmlns="http://www.firaxis.com">
-	<TEXT>
-		<Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_TITLE</Tag>
-		<English>Crops can be grown on the land near the settlement. The governor asks if you have any requests.</English>
-		<French>On peut cultiver sur les terres près de la colonie. Le gouverneur demande si vous avez des demandes.</French>
-		<German>Es können Feldfrüchte auf dem Land nahe der Siedlung angebaut werden. Der Gouverneur fragt, ob Sie besondere Wünsche haben.</German>
-		<Italian>Le colture possono essere coltivate sul terreno vicino all'insediamento. Il governatore chiede se hai qualche richiesta.</Italian>
-		<Spanish>Se puede cultivar en las tierras cercanas al asentamiento. El gobernador pregunta si tiene alguna petición.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_AUTO</Tag>
-		<English>The governor knows best how to use his land.</English>
-		<French>Le gouverneur sait mieux que quiconque comment utiliser ses terres.</French>
-		<German>Der Gouverneur weiß am besten, wie sein Land zu nutzen ist.</German>
-		<Italian>Il governatore sa come utilizzare al meglio la sua terra.</Italian>
-		<Spanish>El gobernador es el que mejor sabe cómo utilizar su tierra.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_HELP</Tag>
-		<English>Each turn the governor will consider what would be best to produce. He can easily change production to get the best out of the situation whenever things change.[PARAGRAPH:2]Note: Your requests are guidelines only. If in future the requested crops are unavailable, the governor will switch production to make the best out of the situation. If your request becomes available again later, the governor remembers and will resume production.</English>
-		<French>À chaque tour, le gouverneur réfléchira à ce qui serait le mieux à produire. Il peut facilement modifier la production pour tirer le meilleur parti de la situation lorsque les choses changent.[PARAGRAPH:2]Remarque : vos demandes ne sont que des indications. Si, à l'avenir, les cultures demandées ne sont plus disponibles, le gouverneur modifiera la production pour tirer le meilleur parti de la situation. Si votre demande redevient disponible plus tard, le gouverneur s'en souvient et reprendra la production.</French>
-		<German>Jede Runde wird der Gouverneur überlegen, was am besten angebaut werden soll. Sollten die Umstände es erfordern, etwas zu ändern, kann er frei über die Produktion entscheiden, um das Beste aus der Situation zu machen.[PARAGRAPH:2]Beachten Sie, daß Ihre Wünsche nur Richtlinien sind. Sollte es in Zukunft nicht möglich sein, die gewünschten Feldfrüchte anzubauen, wird der Governeur die Produktion umstellen. Wenn Ihre Wünsche wieder erfüllbar sind, wird sich der Gouverneur an sie erinnern und die gewünschten Feldfrüchte anbauen lassen.</German>
-		<Italian>Ad ogni turno il governatore considererà cosa sarebbe meglio produrre. Egli può facilmente cambiare la produzione per ottenere il meglio dalla situazione ogni volta che le cose cambiano.[PARAGRAPH:2]Nota: Le tue richieste sono solo linee guida. Se in futuro le colture richieste non saranno disponibili, il governatore cambierà la produzione per trarre il meglio dalla situazione. Se la tua richiesta tornerà disponibile più tardi, il governatore se ne ricorderà e riprenderà la produzione.</Italian>
-		<Spanish>En cada turno, el gobernador considerará qué sería lo mejor para producir. Puede cambiar fácilmente la producción para sacar lo mejor de la situación siempre que las cosas cambien.[PARAGRAPH:2]Nota: Sus peticiones son sólo orientativas. Si en el futuro los cultivos solicitados no están disponibles, el gobernador cambiará la producción para sacar lo mejor de la situación. Si su solicitud vuelve a estar disponible más adelante, el gobernador lo recordará y reanudará la producción.</Spanish>
-	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_TITLE</Tag>
+        <English>Crops can be grown on the land near the settlement. The governor asks if you have any requests.</English>
+        <French>On peut cultiver sur les terres près de la colonie. Le gouverneur demande si vous avez des demandes.</French>
+        <German>Es können Feldfrüchte auf dem Land nahe der Siedlung angebaut werden. Der Gouverneur fragt, ob Sie besondere Wünsche haben.</German>
+        <Italian>Le colture possono essere coltivate sul terreno vicino all'insediamento. Il governatore chiede se hai qualche richiesta.</Italian>
+        <Spanish>Se puede cultivar en las tierras cercanas al asentamiento. El gobernador pregunta si tiene alguna petición.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_AUTO</Tag>
+        <English>The governor knows best how to use his land.</English>
+        <French>Le gouverneur sait mieux que quiconque comment utiliser ses terres.</French>
+        <German>Der Gouverneur weiß am besten, wie sein Land zu nutzen ist.</German>
+        <Italian>Il governatore sa come utilizzare al meglio la sua terra.</Italian>
+        <Spanish>El gobernador es el que mejor sabe cómo utilizar su tierra.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_HELP</Tag>
+        <English>Each turn the governor will consider what would be best to produce. He can easily change production to get the best out of the situation whenever things change.[PARAGRAPH:2]Note: Your requests are guidelines only. If in future the requested crops are unavailable, the governor will switch production to make the best out of the situation. If your request becomes available again later, the governor remembers and will resume production.</English>
+        <French>À chaque tour, le gouverneur réfléchira à ce qui serait le mieux à produire. Il peut facilement modifier la production pour tirer le meilleur parti de la situation lorsque les choses changent.[PARAGRAPH:2]Remarque : vos demandes ne sont que des indications. Si, à l'avenir, les cultures demandées ne sont plus disponibles, le gouverneur modifiera la production pour tirer le meilleur parti de la situation. Si votre demande redevient disponible plus tard, le gouverneur s'en souvient et reprendra la production.</French>
+        <German>Jede Runde wird der Gouverneur überlegen, was am besten angebaut werden soll. Sollten die Umstände es erfordern, etwas zu ändern, kann er frei über die Produktion entscheiden, um das Beste aus der Situation zu machen.[PARAGRAPH:2]Beachten Sie, daß Ihre Wünsche nur Richtlinien sind. Sollte es in Zukunft nicht möglich sein, die gewünschten Feldfrüchte anzubauen, wird der Governeur die Produktion umstellen. Wenn Ihre Wünsche wieder erfüllbar sind, wird sich der Gouverneur an sie erinnern und die gewünschten Feldfrüchte anbauen lassen.</German>
+        <Italian>Ad ogni turno il governatore considererà cosa sarebbe meglio produrre. Egli può facilmente cambiare la produzione per ottenere il meglio dalla situazione ogni volta che le cose cambiano.[PARAGRAPH:2]Nota: Le tue richieste sono solo linee guida. Se in futuro le colture richieste non saranno disponibili, il governatore cambierà la produzione per trarre il meglio dalla situazione. Se la tua richiesta tornerà disponibile più tardi, il governatore se ne ricorderà e riprenderà la produzione.</Italian>
+        <Spanish>En cada turno, el gobernador considerará qué sería lo mejor para producir. Puede cambiar fácilmente la producción para sacar lo mejor de la situación siempre que las cosas cambien.[PARAGRAPH:2]Nota: Sus peticiones son sólo orientativas. Si en el futuro los cultivos solicitados no están disponibles, el gobernador cambiará la producción para sacar lo mejor de la situación. Si su solicitud vuelve a estar disponible más adelante, el gobernador lo recordará y reanudará la producción.</Spanish>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_TITLE</Tag>
         <English>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][PARAGRAPH:2]Select imports, exports, minimum and maximum goods stored (Read Colopedia's concept page [COLOR_HIGHLIGHT_TEXT]Transport Automation[COLOR_REVERT] to learn how to use this.) :[NEWLINE]</English>

@@ -68,13 +68,13 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Barley</Text>
+            <Text>Orzo</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Barley</Text>
-            <Gender>Male</Gender>
+            <Text>Cebada</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
@@ -153,12 +153,12 @@
         </German>
         <Italian>
             <Text>Birra</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Cerbeza</Text>
-            <Gender>Male</Gender>
+            <Text>Cerveza</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
@@ -304,13 +304,13 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Blades</Text>
-            <Gender>Male</Gender>
+            <Text>Spade</Text>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Blades</Text>
-            <Gender>Male</Gender>
+            <Text>Cuchillas</Text>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </Spanish>
     </TEXT>
@@ -451,8 +451,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Cannons</Italian>
-        <Spanish>Cannons</Spanish>
+        <Italian>Cannoni</Italian>
+        <Spanish>Cañones</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CANNONS_PEDIA</Tag>
@@ -602,13 +602,13 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>Caracca:Caracche</Italian>
-        <Spanish>Carrack:Carracks</Spanish>
+        <Spanish>Carraca:Carracas</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARRACK_PEDIA</Tag>
-        <English>Carracks were used by the Spanish and the Portugese prior to the 17th century as an ocean-going vessel, developed from the caravel.[NEWLINE]They had six sails on three masts and were fairly maneuverable.[NEWLINE]For hundreds of years this ship was the basis of almost all new ship designs.[NEWLINE]Even the frigate and Ship Of The Line bear homage to this humble yet seaworthy vessel.[NEWLINE]Compared to caravels, these ships were far more solid though slightly less maneuverable and they had bigger holds for long trips.</English>
+        <English>Carracks were used by the Spanish and the Portugese prior to the 17th century as an ocean-going vessel, developed from the caravel.[NEWLINE]They had six sails on three masts and were fairly maneuverable.[NEWLINE]For hundreds of years this ship was the basis of almost all new ship designs.[NEWLINE]Even the frigate and ship of the line bear homage to this humble yet seaworthy vessel.[NEWLINE]Compared to caravels, these ships were far more solid though slightly less maneuverable and they had bigger holds for long trips.</English>
         <French>La caraque était un bateau principalement utilisé par les espagnols et les portugais jusqu'au 17ème. Navire de haute mer, la caraque est une version améliorée de la caravelle. Elle était typiquement équipée de 6 voiles accrochées à 3 mois et était plutôt manoeuvrable. Navire particulièrement innovant, la caraque influence les navires qui lui succédeont pendant plusieurs siècle. Comparée à la caravelle, la caraque était bien plus solide, mais également moins maniable. Elle pouvait néanmoins charger beaucoup plus de cargaison pour les grands voyages.</French>
-        <German>Die Karacke (abgeleitet von fläm. "kraeck") war ein Segelschiffstyp des ausgehenden Mittelalters und der beginnenden Neuzeit. Der Schiffstyp tauchte erstmals in der ersten Hälfte des 14. Jahrhunderts in Genua als "carraca" auf und war bis zum Anfang des 17. Jahrhunderts weit verbreitet. Er wurde sowohl als Handels- als auch als Kriegsschiff genutzt. Die Portugiesen und Spanier entwickelten die Nao als Sonderform der Karacke.</German>
+        <German>Die Karacke (abgeleitet von fläm. "kraeck") war ein Segelschiffstyp des ausgehenden Mittelalters und der beginnenden Neuzeit. Der Schiffstyp tauchte erstmals in der ersten Hälfte des 14. Jahrhunderts in Genua als "carraca" auf und war bis zum Anfang des 17. Jahrhunderts weit verbreitet. Er wurde sowohl als Handels- als auch als Kriegsschiff genutzt. Die Portugiesen und Spanier entwickelten die Nau als Sonderform der Karacke.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARRACK_STRATEGY</Tag>
@@ -659,8 +659,8 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Cattle</Italian>
-        <Spanish>Cattle</Spanish>
+        <Italian>Bovini</Italian>
+        <Spanish>Bovinos</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CATTLE_PEDIA</Tag>
@@ -752,7 +752,7 @@
         <Tag>TXT_KEY_UNIT_RUSSIAN_MISSIONARY</Tag>
         <English>Orthodox Missionary:Orthodox Missionaries</English>
         <French>
-            <Text>Missionnaire orthodox:Missionnaires jésuites orthodox</Text>
+            <Text>Missionnaire orthodox:Missionnaires orthodox</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -944,12 +944,12 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Coca Leaves</Text>
+            <Text>Foglie di coca</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Coca Leaves</Text>
+            <Text>Hojas de coca</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
@@ -1003,8 +1003,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Cocoafruits</Italian>
-        <Spanish>Cocoafruits</Spanish>
+        <Italian>Frutta di cacao</Italian>
+        <Spanish>Fruta del cacao</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCOA_FRUITS_PEDIA</Tag>
@@ -1079,8 +1079,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Coffee Berries</Italian>
-        <Spanish>Coffee Berries</Spanish>
+        <Italian>Bacche di caffè</Italian>
+        <Spanish>Bayas de café</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COFFEE_BERRIES_PEDIA</Tag>
@@ -1182,12 +1182,12 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Coloured Cloth</Text>
+            <Text>Tessuti tinti</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Coloured Cloth</Text>
+            <Text>Tejidos teñidos</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -1579,14 +1579,26 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_DOCTOR</Tag>
         <English>Renowned Medic</English>
-        <French>Médecin réputé</French>
+        <French>
+            <Text>Médecin formé:Médecins formés</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Ausgebildeter Arzt:Ausgebildete Ärzte</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
-        <Italian>Renowned Medic</Italian>
-        <Spanish>Renowned Medic</Spanish>
+        <Italian>
+            <Text>Medico formato:Medici formati</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Médico formado:Médicos formados</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_DOCTOR_PEDIA</Tag>
@@ -1858,8 +1870,8 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_FISHING_BOAT_STRATEGY</Tag>
         <English>A [COLOR_UNIT_TEXT]fishing boat[COLOR_REVERT] on a water tile with the [LINK=BONUS_HIGH_SEA_FISH]cod[\LINK], [LINK=BONUS_PEARLS]shellfish[\LINK], [LINK=BONUS_FISH]fish[\LINK] or [LINK=BONUS_CRAB]crabs[\LINK] resource can be given the order to start [LINK=CONCEPT_WHALING]fishing[\LINK] and gather [LINK=YIELD_FOOD]food[\LINK] from that resource.[NEWLINE]Fishing boats are the only units for which this mission is available.[NEWLINE]Every game turn [COLOR_HIGHLIGHT_TEXT]food[COLOR_REVERT] is harvested and stored in the cargo hold.[NEWLINE]Each bonus resource can be harvested by only a single fishing boat at a time, and Bonus resources which fall inside a settlement's City Radius, or inside another nation's borders, cannot be harvested.[NEWLINE][COLOR_HIGHLIGHT_TEXT]Fishing boats[COLOR_REVERT] are very weak, and do not stand a chance against other ships and even can even be sunk by aquatic [LINK=CONCEPT_ANIMALS]wild animals[\LINK].[NEWLINE]They can be built in colonies with a [LINK=BUILDING_DRYDOCK]dock[\LINK] or one of its upgrades.[NEWLINE]They are cheap, but they require [LINK=YIELD_ROPE]ropes[\LINK], [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] and [LINK=YIELD_TOOLS]tools[\LINK].[PARAGRAPH:2]For a comparison of all ships that are available, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
-        <French>Un [COLOR_UNIT_TEXT]bateau de pêche[COLOR_REVERT] sur une case d'océan disposant de [COLOR_HIGHLIGHT_TEXT]cabillaud[COLOR_REVERT] ou d'autres ressources comme du [COLOR_HIGHLIGHT_TEXT]poisson[COLOR_REVERT] ou du [COLOR_HIGHLIGHT_TEXT]crabe[COLOR_REVERT] peuvent alors [COLOR_HIGHLIGHT_TEXT]pêcher[COLOR_REVERT]. Les bateaux de pêche sont les seuls unités qui peuvent exercer cette mission. A chaque tour, du [COLOR_HIGHLIGHT_TEXT]poisson[COLOR_REVERT] est prélevé et ajouté à la cargaison. Un seul bateau peut pêcher sur une case à la fois.</French>
-        <German>Ein [COLOR_UNIT_TEXT]Fischerboot[COLOR_REVERT] kann auf Ozean-Feldern mit der Resource [COLOR_HIGHLIGHT_TEXT]Kabeljau[COLOR_REVERT] oder anderen Resourcen, wie [COLOR_HIGHLIGHT_TEXT]Fisch[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Krabben[COLOR_REVERT] mit dem [COLOR_HIGHLIGHT_TEXT]Fischfang[COLOR_REVERT] beginnen. Fischerboote sind die einzige Einheit, der dies möglich ist. Jede Runde wird [COLOR_HIGHLIGHT_TEXT]Fisch[COLOR_REVERT] gefangen und im Frachtraum gelagert. Auf einer Resource kann immer nur ein Fischerboot gleichzeitig mit dem Fang beschäftigt sein.</German>
+        <French>[TAB]Un [COLOR_UNIT_TEXT]bateau de pêche[COLOR_REVERT] sur une case d'océan disposant de [COLOR_HIGHLIGHT_TEXT]cabillaud[COLOR_REVERT] ou d'autres ressources comme du [COLOR_HIGHLIGHT_TEXT]poisson[COLOR_REVERT] ou du [COLOR_HIGHLIGHT_TEXT]crabe[COLOR_REVERT] peuvent alors [COLOR_HIGHLIGHT_TEXT]pêcher[COLOR_REVERT]. Les bateaux de pêche sont les seuls unités qui peuvent exercer cette mission. A chaque tour, du [COLOR_HIGHLIGHT_TEXT]poisson[COLOR_REVERT] est prélevé et ajouté à la cargaison. Un seul bateau peut pêcher sur une case à la fois.</French>
+        <German>[TAB]Ein [COLOR_UNIT_TEXT]Fischerboot[COLOR_REVERT] kann auf Ozean-Geländefeldern mit der Resource [COLOR_HIGHLIGHT_TEXT]Kabeljau[COLOR_REVERT] oder anderen Resourcen, wie [COLOR_HIGHLIGHT_TEXT]Fisch[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Krabben[COLOR_REVERT] mit dem [COLOR_HIGHLIGHT_TEXT]Fischfang[COLOR_REVERT] beginnen. Fischerboote sind die einzige Einheit, der dies möglich ist. Jede Runde wird [COLOR_HIGHLIGHT_TEXT]Fisch[COLOR_REVERT] gefangen und im Frachtraum gelagert. Auf einer Resource kann immer nur ein Fischerboot gleichzeitig mit dem Fang beschäftigt sein.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FLUYT</Tag>
@@ -1997,8 +2009,8 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Furniture</Italian>
-        <Spanish>Furniture</Spanish>
+        <Italian>Mobili</Italian>
+        <Spanish>Muebles</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FURNITURE_PEDIA</Tag>
@@ -2240,9 +2252,9 @@
         <Tag>TXT_KEY_UNIT_GRAPES</Tag>
         <English>Grapes</English>
         <French>
-            <Text>Raisin</Text>
+            <Text>Raisins</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Weintrauben</Text>
@@ -2250,14 +2262,14 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Uva</Text>
+            <Text>Uve</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Uva</Text>
+            <Text>Uvas</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -2350,7 +2362,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GREAT_ADMIRAL</Tag>
-        <English>Great Admiral</English>
+        <English>
+            <Text>Great Admiral:Great Admirals</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
         <French>
             <Text>Amiral illustre</Text>
             <Gender>Male</Gender>
@@ -2386,11 +2402,15 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GREAT_CHIEF</Tag>
-        <English>Great Warrior</English>
-        <French>
-            <Text>Général illustre</Text>
+        <English>
+            <Text>Great Warrior:Great Warriors</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Grand Guerrier:Grands Guerriers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
         </French>
         <German>
             <Text>Großer Krieger:Große Krieger</Text>
@@ -2398,12 +2418,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Grande Generale:Grandi Generali</Text>
+            <Text>Grande guerriero:Grandi guerrieri</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Gran general:Grandes generales</Text>
+            <Text>Gran Guerrero:Grandes Guerreros</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -2426,7 +2446,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GREAT_GENERAL</Tag>
-        <English>Great General</English>
+        <English>
+            <Text>Great General:Great Generals</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
         <French>
             <Text>Général illustre</Text>
             <Gender>Male</Gender>
@@ -2452,7 +2476,7 @@
         <Tag>TXT_KEY_UNIT_GREAT_GENERAL_PEDIA</Tag>
         <English>The many conflicts that arose in the colonies of the New World forged numerous great generals.[NEWLINE]José de San Martín's march over the Andes, George Washington's stealthy crossing of the Delaware River, Frontenac's complete reversal of the fortunes of New France during King William's War: such feats defined the countries which these men formed.[NEWLINE]Without their great generals, Chile, Argentina and the United States would likely still be the property of their mother countries.</English>
         <French>Les nombreux conflits qui se dérouleront dans les colonies du Nouveau Monde forgeront beaucoup de grands généraux. José de San Martín en franchissant les Andes, George Washington en traversant furtivement le fleuve Delaware ou Frontenac en renversant la situation en Nouvelle-France durant la guerre avec le roi Guillaume, accompliront des exploits qui définiront les pays que ces hommes formeront. Sans leurs grands généraux, le Chili, l'Argentine, le Canada et les Etats-unis seraient probablement encore la propriété de leur mère patrie.</French>
-        <German>Aus den vielen Konflikten, die in den Kolonien der Neuen Welt ausbrachen, gingen unzählige Große Generäle hervor. José de San Martíns Marsch über die Anden, George Washingtons heimliche Überquerung des Delaware River, Frontenacs Umkehrung des neufranzösischen Kriegsglücks in der Schlacht gegen die Männer von König Wilhelm III. - solche Taten formten die Länder, denen diese Männer dienten. Ohne ihre Großen Generäle wären Chile, Argentinien, Kanada und die Vereinigten Staaten wohl immer noch nicht unabhängig von ihren Heimatländern.</German>
+        <German>Aus den vielen Konflikten, die in den Kolonien der Neuen Welt ausbrachen, gingen unzählige Große Generäle hervor. José de San Martíns Marsch über die Anden, George Washingtons heimliche Überquerung des Delaware River, Frontenacs Umkehrung des französischen Kriegsglücks in der Schlacht gegen die Truppen von König Wilhelm III. - solche Taten formten die Länder, denen diese Männer dienten. Ohne ihre Großen Generäle wären Chile, Argentinien, Kanada und die Vereinigten Staaten wohl immer noch nicht unabhängig von ihren Heimatländern.</German>
         <Italian>I molti conflitti nati nelle colonie del Nuovo Mondo crearono tantissimi Grandi Generali. La marcia di José de San Martín attraverso le Ande, la traversata furtiva del fiume Delaware di George Washington, il ribaltamento delle sorti della Nuova Francia grazie a Frontenac durante la guerra di Re Guglielmo... Queste imprese definirono i paesi creati da questi uomini. Senza i loro Grandi Generali Cile, Argentina, Canada e Stati Uniti sarebbero probabilmente ancora proprietà ognuno della rispettiva madrepatria.</Italian>
         <Spanish>Los diversos conflictos que afloraron en el Nuevo Mundo dieron lugar a numerosos grandes generales. La marcha de José de San Martín a través de los Andes, el sigiloso cruce de George Washington por el río Delaware, el cambio de tornas radical de Nueva Francia durante la Guerra del Rey Guillermo gracias a Frontenac... gestas así ayudaron a definir los países a los que estos hombres pertenecieron. Sin sus grandes generales, Chile, Argentina, Canadá y los Estados Unidos aún no serían más que dominios de sus países colonizadores.</Spanish>
     </TEXT>
@@ -2547,7 +2571,7 @@
         </English>
         <French>
             <Text>Artillerie lourde:Artilleries lourdes</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
@@ -2556,13 +2580,13 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Heavy Artillery:Heavy Artilleries</Text>
-            <Gender>Male</Gender>
+            <Text>Artiglieria pesante:Artiglierie pesanti</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Heavy Artillery:Heavy Artilleries</Text>
-            <Gender>Male</Gender>
+            <Text>Artillería pesada:Artillerías pesadas</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
@@ -2596,12 +2620,12 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Hemp</Text>
-            <Gender>Male</Gender>
+            <Text>Canapa</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Hemp</Text>
+            <Text>Cáñamo</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -2609,8 +2633,8 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_HEMP_PEDIA</Tag>
         <English>Since the Middle Ages, hemp has been one of the most important natural fibres for cloth, ropes and other woven or braided goods.[NEWLINE]During colonization it was brought to the New World where large plantations evolved.[NEWLINE]George Washington grew hemp.[NEWLINE]Textile hemp is a cultivated variety of the Cannabaceae family.[NEWLINE]It is an annual plant, selected for the size of its stem and its low content of THC or other cannabinoids from the species that botanists call cultivated hemp (Cannabis sativa L.).[NEWLINE]Although referring to the same botanical species, the term 'hemp' is now used preferred for the industrial plant and its fibre, while 'cannabis' is the scientific name for the recreational or medical form.</English>
-        <French>Le chanvre, chanvre textile, chanvre industriel ou chanvre agricole est une variété de plante cultivée de la famille des Cannabaceae. C'est une plante annuelle, sélectionnée pour la taille de sa tige et sa faible teneur en THC ou autres cannabinoïdes à partir de l'espèce que les botanistes nomment le Chanvre cultivé (Cannabis sativa L.). Il est parfois appelé localement « chènevis », comme le nom de la graine de chanvre. Bien que désignant la même espèce botanique, le terme chanvre est désormais utilisé de préférence pour désigner la plante industrielle et sa fibre végétale, tandis que Cannabis est le nom scientifique utilisé aussi pour désigner la forme récréative ou médicale.</French>
-        <German>Hanf war bereits im Mittelalter einer der wichtigsten Rohstoffe um stabile Stoffe, Seile oder andere Güter herzustellen. Während der Kolonisierung der Neuen Welt fand auch Hanf seinen Weg in die Plantagen der Kolonien. George Washington besass beispielsweise selbst Hanf-Plantagen.</German>
+        <French>[TAB]Le chanvre, chanvre textile, chanvre industriel ou chanvre agricole est une variété de plante cultivée de la famille des Cannabaceae. C'est une plante annuelle, sélectionnée pour la taille de sa tige et sa faible teneur en THC ou autres cannabinoïdes à partir de l'espèce que les botanistes nomment le Chanvre cultivé (Cannabis sativa L.). Il est parfois appelé localement « chènevis », comme le nom de la graine de chanvre. Bien que désignant la même espèce botanique, le terme chanvre est désormais utilisé de préférence pour désigner la plante industrielle et sa fibre végétale, tandis que Cannabis est le nom scientifique utilisé aussi pour désigner la forme récréative ou médicale.</French>
+        <German>[TAB]Hanf war bereits im Mittelalter einer der wichtigsten Rohstoffe, um stabile Stoffe, Seile oder andere Güter herzustellen.[NEWLINE]Während der Kolonisierung der Neuen Welt fand auch Hanf seinen Weg in die Plantagen der Kolonien.[NEWLINE]George Washington besass beispielsweise selbst Hanf-Plantagen.[NEWLINE]Textilhanf ist eine kultivierte Sorte aus der Familie der Cannabaceae.[NEWLINE]Es handelt sich um eine einjährige Pflanze, die aufgrund der Größe ihres Stängels und ihres geringen Gehalts an THC oder anderen Cannabinoiden aus der Art ausgewählt wird, die Botaniker als Kulturhanf (Cannabis sativa L.) bezeichnen.[NEWLINE]Obwohl sie sich auf dieselbe botanische Art bezieht, wird der Begriff "Hanf" jetzt bevorzugt für die Industriepflanze und ihre Faser verwendet, während "Cannabis" der wissenschaftliche Name für die Einstiegsdroge und deren medizinische Form ist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HEMP_STRATEGY</Tag>
@@ -2645,8 +2669,8 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_HEMP_PLANTER_PEDIA</Tag>
         <English>The Spaniards first brought hemp to the New World in 1545.[NEWLINE]By the time the English settled Virginia in 1607, hemp was being grown by the local Powhatan Indians.[NEWLINE]In 1619 the first Virginia House of Burgesses passed an act requiring all planters in Virginia to sow "both English and Indian" hemp on their plantations.[NEWLINE]Hemp was grown to complement the staple crop of a plantation, adding vital nutrients back to the soil.</English>
-        <French>Le chanvre, chanvre textile, chanvre industriel ou chanvre agricole est une variété de plante cultivée de la famille des Cannabaceae. C'est une plante annuelle, sélectionnée pour la taille de sa tige et sa faible teneur en THC ou autres cannabinoïdes à partir de l'espèce que les botanistes nomment le Chanvre cultivé (Cannabis sativa L.). Il est parfois appelé localement « chènevis »1, comme le nom de la graine de chanvre. Bien que désignant la même espèce botanique, le terme chanvre est désormais utilisé de préférence pour désigner la plante industrielle et sa fibre végétale, tandis que Cannabis est le nom scientifique utilisé aussi pour désigner la forme récréative ou médicale.</French>
-        <German>Hanf war bereits im Mittelalter einer der wichtigsten Rohstoffe um stabile Stoffe, Seile oder andere Güter herzustellen. Während der Kolonisierung der Neuen Welt fand auch Hanf seinen Weg in die Plantagen der Kolonien. George Washington besass beispielsweise selbst Hanf-Plantagen.</German>
+        <French>Les Espagnols ont introduit le chanvre dans le Nouveau Monde en 1545.[NEWLINE]Lorsque les Anglais se sont installés en Virginie en 1607, le chanvre était cultivé par les Indiens Powhatan locaux.[NEWLINE]En 1619, la première Chambre des Burgess de Virginie a adopté une loi obligeant tous les planteurs de Virginie à semer du chanvre "tant anglais qu'indien" sur leurs plantations.[NEWLINE]Le chanvre était cultivé pour compléter la culture de base d'une plantation, en apportant des nutriments vitaux au sol.</French>
+        <German>Die Spanier brachten Hanf erstmals 1545 in die Neue Welt.[NEWLINE]Als die Engländer 1607 Virginia besiedelten, wurde Hanf bereits von den dort ansässigen Powhatan-Indianern angebaut.[NEWLINE]1619 verabschiedete das erste Virginia House of Burgesses ein Gesetz, das alle Pflanzer in Virginia dazu verpflichtete, auf ihren Plantagen "sowohl englischen als auch indianischen" Hanf zu säen.[NEWLINE]Hanf wurde als Ergänzung zu den Grundnahrungsmitteln einer Plantage angebaut und fügte dem Boden wichtige Nährstoffe zu.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HEMP_PLANTER_STRATEGY</Tag>
@@ -2680,7 +2704,7 @@
         <French>
             <Text>Peaux de vache</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Rinderhäute</Text>
@@ -2688,14 +2712,14 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Cattle Hides</Text>
+            <Text>Pelli di mucca</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Cattle Hides</Text>
+            <Text>Pieles de vaca</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -2718,7 +2742,11 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Pferde</German>
+        <German>
+            <Text>Pferd:Pferde</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0:1</Plural>
+        </German>
         <Italian>
             <Text>Cavalli</Text>
             <Gender>Male</Gender>
@@ -2807,9 +2835,8 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_HUNTER_PEDIA</Tag>
         <English>Hunting is, together with gathering, the oldest profession humanity knows.[NEWLINE]Animals provided food and fur for clothing.[NEWLINE]In the New World the first colonists found a wide variety of animals and started hunting them right away.[NEWLINE]They became so greedy that they hunted many animals like buffalo almost to extinction, causing enduring conflicts with Natives.</English>
-        <French>La chasse est, avec la cueillette, la plus ancienne profession connue de l'humanité.[NEWLINE]Les corps des animaux étaient utilisés pour une multitude de choses, les plus importantes étant la nourriture et l'habillement.[NEWLINE]Dans le nouveau monde, les premiers colons ont trouvé une large variété d'animaux qu'ils ont immédiatement commencé à chasser.[NEWLINE]Leur avidité conduisit plusieurs espèces d'animaux à leur quasi-extinction, parmi lesquels le bison. De nombreux conflits avec les indigènes ont été causés par cette chasse intensive.</French>
-        <German>Der Beruf des Jägers ist zusammen mit dem Beruf des Sammlers der älteste Beruf, den die Menschheit kennt.[NEWLINE]Teile der erbeuteten Tiere wurde für unterschiedlichste Aspekte genutzt, am wichtigsten jedoch sicherlich Nahrung und Herstellung von Kleidung.[NEWLINE]Als die ersten Kolonisten in der Neuen Welt eintrafen, fanden sie eine florierende Tierwelt vor und begannnen natürlich auch sofort damit, diese zu jagen.[NEWLINE]Dabei wurden sie allerdings sehr schnell so gierig, dass viele Tiere, wie z.B. die Bisons fast bis zur Ausrottung gejagt wurden, wodurch wiederum auch viele Konflikte mit den Ureinwohnern entstanden.</German>
-
+        <French>[TAB]La chasse est, avec la cueillette, la plus ancienne profession connue de l'humanité.[NEWLINE]Les corps des animaux étaient utilisés pour une multitude de choses, les plus importantes étant la nourriture et l'habillement.[NEWLINE]Dans le nouveau monde, les premiers colons ont trouvé une large variété d'animaux qu'ils ont immédiatement commencé à chasser.[NEWLINE]Leur avidité conduisit plusieurs espèces d'animaux à leur quasi-extinction, parmi lesquels le bison. De nombreux conflits avec les indigènes ont été causés par cette chasse intensive.</French>
+        <German>[TAB]Der Beruf des Jägers ist zusammen mit dem Beruf des Sammlers der älteste Beruf, den die Menschheit kennt.[NEWLINE]Teile der erbeuteten Tiere wurde für unterschiedlichste Aspekte genutzt, am wichtigsten jedoch sicherlich Nahrung und Herstellung von Kleidung.[NEWLINE]Als die ersten Kolonisten in der Neuen Welt eintrafen, fanden sie eine florierende Tierwelt vor und begannnen natürlich auch sofort damit, diese zu jagen.[NEWLINE]Dabei wurden sie allerdings sehr schnell so gierig, dass viele Tiere, wie z.B. die Bisons fast bis zur Ausrottung gejagt wurden, wodurch wiederum auch viele Konflikte mit den Ureinwohnern entstanden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HUNTER_STRATEGY</Tag>
@@ -2928,6 +2955,26 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_JAGUAR</Tag>
         <English>Jaguar</English>
+        <French>
+            <Text>Jaguar</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Jaguar</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Jaguar</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Jaguar</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_JAGUAR_PEDIA</Tag>
@@ -2975,11 +3022,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER</Tag>
-        <English>Leather</English>
+        <English>Leather Goods</English>
         <French>
             <Text>Cuir</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Lederwaren</Text>
@@ -2987,21 +3034,21 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Leather Goods</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Pelletteria</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Leather Goods</Text>
+            <Text>Artículos de cuero</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_PEDIA</Tag>
         <English>Leather is a durable and flexible material created by tanning of rawhide.[NEWLINE]It can manufactured either by cottage industry or heavy industry.[NEWLINE]Tanning transforms the protein of the rawhide into a stable material which will not putrefy and is suitable for a wide variety of uses.[NEWLINE]The principal difference between rawhides and tanned hides is that rawhides dry into a hard inflexible material that will rot in the rain, unlike tanned leather which dries out to a tough yet flexible form.</English>
-        <French>Le cuir est de la peau animale tannée (généralement de la peau de grands mammifères tels le boeuf et le porc), c'est-à-dire une substance morte, imputrescible, souple et insoluble dans l'eau. Le cuir est le fruit de la transformation des peaux opérée par les tanneries et les mégisseries.</French>
-        <German>Leder war in der menschlichen Geschichte eines der wichtigsten Materialien. Meist aus Rinderhäuten hergestellt diente Leder verschiedensten Zwecken, meist jedoch der Herstellung von Kleidung. Ledergerber war zwar einer der am wenigsten angesehenen Berufe oder Stände, aber essentiell für jede damalige Gesellschaft. Auch in der Neuen Welt spielte die Herstellung von Leder eine bedeutende Rolle.</German>
+        <French>[TAB]Le cuir est de la peau animale tannée (généralement de la peau de grands mammifères tels le boeuf et le porc), c'est-à-dire une substance morte, imputrescible, souple et insoluble dans l'eau. Le cuir est le fruit de la transformation des peaux opérée par les tanneries et les mégisseries.</French>
+        <German>[TAB]Leder war in der menschlichen Geschichte eines der wichtigsten Materialien. Meist aus Rinderhäuten hergestellt, diente Leder verschiedensten Zwecken, üblicherweise jedoch der Herstellung von Kleidung. Ledergerber war zwar einer der am wenigsten angesehenen Berufe oder Stände, aber essentiell für jede damalige Gesellschaft. Auch in der Neuen Welt spielte die Herstellung von Leder eine bedeutende Rolle.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_STRATEGY</Tag>
@@ -3018,7 +3065,7 @@
         </English>
         <French>
             <Text>Artillerie légère:Artilleries légères</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
@@ -3027,13 +3074,13 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Light Artillery:Light Artilleries</Text>
-            <Gender>Male</Gender>
+            <Text>Artiglieria leggera:Artiglierie leggere</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Light Artillery:Light Artilleries</Text>
-            <Gender>Male</Gender>
+            <Text>Artillería ligeras:Artillería ligeras</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
@@ -3121,15 +3168,31 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LUXURY_GOODS</Tag>
-        <English>Luxury Goods</English>
-        <French>Biens de luxe</French>
+        <English>
+            <Text>Luxury Goods</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <French>
+            <Text>Biens de luxe</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </French>
         <German>
             <Text>Luxusgüter</Text>
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Luxury Goods</Italian>
-        <Spanish>Luxury Goods</Spanish>
+        <Italian>
+            <Text>Produits de luxe</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Productos de lujo</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LUXURY_GOODS_PEDIA</Tag>
@@ -3170,8 +3233,8 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_LYNX_PEDIA</Tag>
         <English>A lynx (plural lynx) is any of the four species within the Lynx genus of medium-sized wildcats.[NEWLINE]The name 'lynx' originated in Middle English via Latin from Greek, derived from the Indo-European root "leuk-", meaning "light, brightness", in reference to the luminescence of its reflective eyes.[NEWLINE]Lynx have short tails and the characteristic tufts of black hair on the tips of their ears.[NEWLINE]They have a ruff under the neck, which has black bars, is not very visible, and resembles a bow tie.[NEWLINE]They have large, padded paws for walking on snow, and long whiskers on the face.[NEWLINE]Their body colour varies from medium brown, to goldish, to beige-white, and is occasionally marked with dark brown spots, especially on the limbs.[NEWLINE]All species of lynx have white fur on their chests, bellies and on the insides of their legs, which are extensions of the chest and belly fur.[NEWLINE]The lynx's colouring, fur height and paw size varies with climate.[NEWLINE]In the Southwestern United States, the fur and colour are short-haired, dark and the paws are smaller and less padded.[NEWLINE]In colder northern climates the fur gets thicker for warmth, the colour gets lighter for camouflage and its paws enlarge and become more padded for snowy environments.[NEWLINE]The paws may be larger than a human hand or foot.[NEWLINE]The smallest species are the bobcat and the Canada lynx, while the largest is the Eurasian lynx, with considerable variations within species.</English>
-        <French>Parmi les félins, les lynx sont aisément reconnaissables à leur face ornée de favoris et d'oreilles triangulaires surmontées d'une touffe de poil, et leur corps doté d'une courte queue et de longues pattes. Parmi les caractéristiques moins visibles, les lynx ne possèdent que 28 dents, au lieu des 30 dents habituelles chez les félins. Prédateurs de l'hémisphère nord, les lynx ont pour habitat préféré la forêt boréale. Considérés comme très largement répandus, exception faite du Lynx pardelle gravement menacé, ils font partie des rares félins dont on estime les populations stables. Alors qu'ils tenaient une place importante dans la mythologie amérindienne, les lynx étaient fort méconnus en Europe et y ont souffert d'une réputation de bête féroce.</French>
-        <German>Die Luchse (Lynx) sind eine Gattung in der Familie der Katzen. Es werden vier Arten zu dieser Gattung gezählt, die alle auf der Nordhalbkugel vorkommen. Der Kanadische Luchs lebt in Kanada, in Alaska, Nord-Oregon, Nord-Idaho und im Gebiet der Rocky Mountains (Wyoming, Nord-Colorado). Er fehlt in Alaska lediglich im Yukon-Kuskokwim-Delta und im Süden der Alaska-Halbinsel sowie der nördlichen Küste des nordamerikanischen Festlands. Luchse sind mittelgroße, hochbeinige Katzen. Ihre Krallen können sie einziehen. Der kurze Schwanz hat ein schwarzes Ende. Luchse weisen einen Backenbart auf. Auf den Spitzen der Ohren sind schwarze Haarpinsel vorhanden, die Rückseite der Ohren ist schwarz mit einem weißen oder grauweißen Fleck der mehr oder weniger stark ausgedehnt ist. Die Fellfärbung ist variabel und reicht von sandfarben über rotbraun und braun bis grau. Oft ist das Fell auch gefleckt. Luchse besitzen 28 bis 30 Zähne. Luchse sind einzelgängerisch, dämmerungsaktiv und territorial. Sie sind spezialisierte Jäger. In älterer Literatur findet man die drei erstgenannten Arten manchmal zu einer einzigen Art zusammengefasst, dem "Nordluchs". Der Karakal wird manchmal als "Wüstenluchs" bezeichnet, gehört aber zu einer anderen Katzengattung. Es ist bislang nicht abschließend geklärt, ob Luchse ihren Ursprung in Nordamerika oder in Eurasien und Afrika hatten. Jagende Kanadische Luchse legen zwischen 0,775 und 1,46 Kilometer pro Stunde zurück. Die typische Streckenlänge beträgt pro Tag etwa acht bis neun Kilometer. Sie wenden eine Reihe sehr unterschiedlicher Jagdmethoden an. Auf Neufundland ist der Kanadische Luchs überwiegend ein überraschungs- oder Lauerjäger. Bei 60 Prozent der getöteten Beutetiere hatte er der Beute zuvor aufgelauert. Im Yukon ist sowohl diese Lauerjagd als auch ein aktives Suchen nach Beute gleichermaßen zu beobachten.</German>
+        <French>[TAB]Parmi les félins, les lynx sont aisément reconnaissables à leur face ornée de favoris et d'oreilles triangulaires surmontées d'une touffe de poil, et leur corps doté d'une courte queue et de longues pattes. Parmi les caractéristiques moins visibles, les lynx ne possèdent que 28 dents, au lieu des 30 dents habituelles chez les félins. Prédateurs de l'hémisphère nord, les lynx ont pour habitat préféré la forêt boréale. Considérés comme très largement répandus, exception faite du Lynx pardelle gravement menacé, ils font partie des rares félins dont on estime les populations stables. Alors qu'ils tenaient une place importante dans la mythologie amérindienne, les lynx étaient fort méconnus en Europe et y ont souffert d'une réputation de bête féroce.</French>
+        <German>Luchse (Lynx) sind eine Gattung innerhalb der Familie der Katzen. Es werden vier Arten zu dieser Gattung gezählt, die alle auf der Nordhalbkugel vorkommen. Der Kanadische Luchs lebt in Kanada, in Alaska, Nord-Oregon, Nord-Idaho und im Gebiet der Rocky Mountains (Wyoming, Nord-Colorado). Er fehlt in Alaska lediglich im Yukon-Kuskokwim-Delta und im Süden der Alaska-Halbinsel sowie der nördlichen Küste des nordamerikanischen Festlands. Luchse sind mittelgroße, hochbeinige Katzen. Ihre Krallen können sie einziehen. Der kurze Schwanz hat ein schwarzes Ende. Luchse weisen einen Backenbart auf. Auf den Spitzen der Ohren sind schwarze Haarpinsel vorhanden, die Rückseite der Ohren ist schwarz mit einem weißen oder grauweißen Fleck der mehr oder weniger stark ausgedehnt ist. Die Fellfärbung ist variabel und reicht von sandfarben über rotbraun und braun bis grau. Oft ist das Fell auch gefleckt. Luchse besitzen 28 bis 30 Zähne. Luchse sind einzelgängerisch, dämmerungsaktiv und territorial. Sie sind spezialisierte Jäger. In älterer Literatur findet man die drei erstgenannten Arten manchmal zu einer einzigen Art zusammengefasst, dem "Nordluchs". Der Karakal wird manchmal als "Wüstenluchs" bezeichnet, gehört aber zu einer anderen Katzengattung. Es ist bislang nicht abschließend geklärt, ob Luchse ihren Ursprung in Nordamerika oder in Eurasien und Afrika hatten. Jagende Kanadische Luchse legen zwischen 0,775 und 1,46 Kilometer pro Stunde zurück. Die typische Streckenlänge beträgt pro Tag etwa acht bis neun Kilometer. Sie wenden eine Reihe sehr unterschiedlicher Jagdmethoden an. Auf Neufundland ist der Kanadische Luchs überwiegend ein überraschungs- oder Lauerjäger. Bei 60 Prozent der getöteten Beutetiere hatte er der Beute zuvor aufgelauert. Im Yukon ist sowohl diese Lauerjagd als auch ein aktives Suchen nach Beute gleichermaßen zu beobachten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LYNX_STRATEGY</Tag>
@@ -3244,10 +3307,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_MERCHANTMAN_PEDIA</Tag>
         <English>These towering cargo ships were some of the largest wood vessels ever launched.[NEWLINE]The merchantman, employed primarily in the 17th and 18th centuries, carried contingents of men and substantial stores of cargo.[NEWLINE]The merchantman class included a wide variety of ships, adapted by several nations.[NEWLINE]The Dutch were especially fond of merchantmen, and the East Indiaman vessel was actually a redesign of this class of ship.</English>
-        <French>Ces immenses navires de transport font partie des plus gros bateaux en bois à avoir jamais navigué. Le Navire marchand, employé principalement aux 17ème et 18ème siècles, est capable de transporter des contingents entiers de soldats ainsi que de grosses cargaisons. Dans la catégorie des Navires marchands figurent une grande variété de bateaux car de nombreuses nations ont créé leurs propres variantes. Les Néerlandais appréciaient particulièrement les Navires marchands et l'Indiaman était en fait une nouvelle version de cette catégorie de vaisseaux.</French>
-        <German>Diese überragenden Frachtschiffe gehörten zu den größten Holzschiffen, die jemals zu Wasser gelassen wurden. Westindienfahrer, die vor allem im 17. und 18. Jahrhundert eingesetzt wurden, waren in der Lage, ganze Kontingente von Soldaten sowie beachtliche Frachtmengen zu fassen. Die Westindienfahrer-Klasse beinhaltete eine ebenso große Vielzahl an Schiffen, wie es Länder gab, die ihre eigenen Varianten herstellten. Die Holländer waren besonders stolz auf ihre Westindienfahrer, und die Schiffe der Ostindienfahrer waren tatsächlich nur eine neue Version dieser Schiffsklasse.</German>
-        <Italian>Queste enormi navi da carico sono tra i più grandi vascelli di legno che abbiano mai solcato i mari. Le navi mercantili, impiegate principalmente nel XVII e nel XVIII secolo, erano in grado di trasportare interi contingenti di uomini e notevoli quantità di beni. Questa classe di nave comprendeva una grande varietà di vascelli, dato che le diverse nazioni creavano ognuna la propria variante. Le navi mercantili erano particolarmente apprezzate dagli olandesi e l'East Indiaman non era altro che una variante del progetto di questa classe di nave.</Italian>
-        <Spanish>Estos imponentes barcos de carga se contaron entre los veleros de madera más grandes que surcaron el mar. El Navío mercante, utilizado principalmente durante los ss. XVII y XVIII, era capaz de llevar a contingentes enteros de hombres y grandes cargamentos. Bajo esta clase genérica se englobaban diversos tipos de barcos, ya que muchas naciones crearon sus propias variantes. Los holandeses eran especialmente aficionados a los Navíos mercantes, y la Goleta de las Indias Orientales era realmente un diseño realizado a partir de esta clase de barco.</Spanish>
+        <French>Ces immenses navires de transport font partie des plus gros bateaux en bois à avoir jamais navigué.[NEWLINE]Le Navire marchand, employé principalement aux 17ème et 18ème siècles, est capable de transporter des contingents entiers de soldats ainsi que de grosses cargaisons.[NEWLINE]Dans la catégorie des Navires marchands figurent une grande variété de bateaux car de nombreuses nations ont créé leurs propres variantes.[NEWLINE]Les Néerlandais appréciaient particulièrement les Navires marchands et l'Indiaman était en fait une nouvelle version de cette catégorie de vaisseaux.</French>
+        <German>Diese hochaufragenden Handelsschiffe gehörten zu den größten Holzschiffen, die jemals zu Wasser gelassen wurden.[NEWLINE]Westindienfahrer, die vor allem im 17. und 18. Jahrhundert eingesetzt wurden, waren in der Lage, ganze Kontingente von Soldaten sowie beachtliche Frachtmengen zu transportieren.[NEWLINE]Die Westindienfahrer-Klasse beinhaltete eine ebenso große Vielzahl an Schiffen, wie es Länder gab, die ihre eigenen Varianten herstellten.[NEWLINE]Die Holländer waren besonders stolz auf ihre Westindienfahrer, und die Schiffe der Ostindienfahrer waren tatsächlich nur eine neue Version dieser Schiffsklasse.</German>
+        <Italian>Queste enormi navi da carico sono tra i più grandi vascelli di legno che abbiano mai solcato i mari.[NEWLINE]Le navi mercantili, impiegate principalmente nel XVII e nel XVIII secolo, erano in grado di trasportare interi contingenti di uomini e notevoli quantità di beni[NEWLINE]Questa classe di nave comprendeva una grande varietà di vascelli, dato che le diverse nazioni creavano ognuna la propria variante.[NEWLINE]Le navi mercantili erano particolarmente apprezzate dagli olandesi e l'East Indiaman non era altro che una variante del progetto di questa classe di nave.</Italian>
+        <Spanish>Estos imponentes barcos de carga se contaron entre los veleros de madera más grandes que surcaron el mar.[NEWLINE]El Navío mercante, utilizado principalmente durante los ss. XVII y XVIII, era capaz de llevar a contingentes enteros de hombres y grandes cargamentos.[NEWLINE]Bajo esta clase genérica se englobaban diversos tipos de barcos, ya que muchas naciones crearon sus propias variantes.[NEWLINE]Los holandeses eran especialmente aficionados a los Navíos mercantes, y la Goleta de las Indias Orientales era realmente un diseño realizado a partir de esta clase de barco.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MERCHANTMAN_STRATEGY</Tag>
@@ -3289,7 +3352,7 @@
         <Tag>TXT_KEY_UNIT_MILITIA_PEDIA</Tag>
         <English>As early as the time of the Massachusetts Bay Colony in 1645, some men were selected from the contingent of the various local militias for rapid deployment.[NEWLINE]The militia of the Massachusetts province had already been used in combat in many conflicts, such as King Philip's War, the French and Indian War, and finally the Battles of Lexington and Concord.[NEWLINE]Every generation of settlers in New England was familiar with fighting, every town had a militia, and every able-bodied man between 16 and 60 was required to serve in the militia.[NEWLINE]However, there were many exemptions, for example for certain occupational groups.[NEWLINE]Service in the militia was regulated in Militia Acts and, after the outbreak of the War of Independence, in Militia Bills.[NEWLINE]Many of these men were farmers so they were designated as Minutemen.[NEWLINE]Many were related to each other, so it was common to fight alongside one's cousins and brothers-in-law.</English>
         <French>Dans les colonies de la Nouvelle-Angleterre, le concept de milice apparaît assez tôt et assure la survie de la jeune colonie lors de conflits contre les Amérindiens. La première milice s'établit en Virginie, en 1632, et repose sur un recrutement local et de courtes périodes de service actif lors d'urgences. Tout homme capable de porter une arme doit l'apporter à l'église et s'exercer après le service religieux. Dès 1645, au sein de la colonie de la baie du Massachusetts, quelques hommes furent sélectionnés parmi les troupes locales pour être prêts à un déploiement rapide. Les minutemen dont le nom deviendra célèbre un siècle plus tard étaient généralement choisis parmi les colons d'une même ville, ainsi il n'était pas rare pour eux de combattre aux côtés de cousins ou de beaux-frères.</French>
-        <German>Schon zu Zeiten der Massachusetts Bay Colony 1645 wurden einige Männer aus dem Aufgebot der verschiedenen örtlichen Milizen für schnellen Einsatz ausgewählt.[NEWLINE]Die Miliz der Provinz Massachusetts war bereits in vielen Konflikten im Kampf eingesetzt worden, so in König Philipps Krieg, im Franzosen- und Indianerkrieg und schließlich in der Schlacht von Lexington und Concord.[NEWLINE]Jede Generation der Siedler in Neuengland war mit dem Kämpfen vertraut, jeder Ort besaß eine Miliz, und jeder wehrfähige Mann zwischen 16 und 60 war verpflichtet, seinen Dienst in der Miliz zu leisten[NEWLINE]Allerdings gab es hier viele Ausnahmeregelungen, zum Beispiel für bestimmte Berufsgruppen.[NEWLINE]Der Dienst in der Miliz wurde in sogenannten Militia Acts und nach dem Ausbruch des Unabhängigkeitskrieges in Militia Bills geregelt.[NEWLINE]Viele dieser Männer waren Landwirte.[NEWLINE]Viele waren untereinander verwandt, und so war es üblich, neben seinen Cousins und Schwägern zu kämpfen.</German>
+        <German>Schon zu Zeiten der Massachusetts Bay Colony 1645 wurden einige Männer aus dem Aufgebot der verschiedenen örtlichen Milizen für schnellen Einsatz ausgewählt.[NEWLINE]Die Miliz der Provinz Massachusetts war bereits in vielen Konflikten im Kampf eingesetzt worden, so in König Philipps Krieg, im Franzosen- und Indianerkrieg und schließlich in der Schlacht von Lexington und Concord.[NEWLINE]Jede Generation der Siedler in Neu-England war mit dem Kämpfen vertraut, jeder Ort besaß eine Miliz, und jeder wehrfähige Mann zwischen 16 und 60 war verpflichtet, seinen Dienst in der Miliz zu leisten[NEWLINE]Allerdings gab es hier viele Ausnahmeregelungen, zum Beispiel für bestimmte Berufsgruppen.[NEWLINE]Der Dienst in der Miliz wurde in sogenannten Militia Acts und nach dem Ausbruch des Unabhängigkeitskrieges in Militia Bills geregelt.[NEWLINE]Viele dieser Männer waren Landwirte.[NEWLINE]Viele waren untereinander verwandt, und so war es üblich, neben seinen Cousins und Schwägern zu kämpfen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MILITIA_STRATEGY</Tag>
@@ -3413,13 +3476,21 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MUSKETS</Tag>
-        <English>Guns</English>
+        <English>
+            <Text>Guns</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
         <French>
             <Text>Arme à feu:Armes à feu</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Schusswaffen</German>
+        <German>
+            <Text>Schusswaffen</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
         <Italian>
             <Text>Armi</Text>
             <Gender>Female</Gender>
@@ -3861,16 +3932,16 @@
         </French>
         <German>
             <Text>Teure Pelzkleidung</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Premium Coats</Text>
+            <Text>Abbigliamento di pelliccia costoso</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Premium Coats</Text>
+            <Text>Ropa de pieles cara</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </Spanish>
@@ -3893,7 +3964,7 @@
         <French>
             <Text>Fourrure de qualité</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Hochwertige Pelze</Text>
@@ -3901,14 +3972,14 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Premium Fur</Text>
+            <Text>Pellicce di alta qualità</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Premium Fur</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Pieles de alta calidad</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -3977,12 +4048,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Devout Priest:Devout Priests</Text>
+            <Text>Orthodox Priest:Orthodox Priests</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Devout Priest:Devout Priests</Text>
+            <Text>Orthodox Priest:Orthodox Priests</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -4095,17 +4166,17 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Erfahrener Rancher:Erfahrene Rancher</Text>
+            <Text>Erfahrener Züchter:Erfahrene Züchter</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Mastro allevatore:Mastri allevatori</Text>
+            <Text>Allevatore esperto:Allevatori esperti</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Maestro ranchero:Maestros rancheros</Text>
+            <Text>Ranchero experto:Rancheros expertos</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -4114,7 +4185,7 @@
         <Tag>TXT_KEY_UNIT_RANCHER_PEDIA</Tag>
         <English>A skilled rancher is a master of all matters equine.[NEWLINE]From breaking wild mustangs to shoeing the youngest colts, the skilled rancher is both caretaker and matchmaker, doctor and disciplinarian.[NEWLINE]Perhaps it is because they work with living, breathing, high-spirited animals, ranchers have that cowboy spirit of rugged self-reliance.[NEWLINE]Without a rancher to provide horses, a colony cannot achieve its fullest potential.</English>
         <French>Les Propriétaires de ranch expérimentés sont les spécialistes de la race chevaline. Qu'il s'agisse de dompter des mustangs sauvages ou de ferrer les jeunes poulains, le Propriétaire de ranch expérimenté est à la fois éleveur et apparieur, docteur et dompteur. Peut-être est-ce le fait qu'ils travaillent avec des animaux vivants et fougueux qui donne au propriétaires de ranch cet esprit d'indépendance farouche, propre aux "cowboys". Mais sans Propriétaire de ranch pour lui fournir des chevaux, aucune colonie ne peut espérer atteindre son potentiel optimal.</French>
-        <German>Ein erfahrener Rancher muss in allen Belangen bewandert sein, die Pferde betreffen. Vom Zähmen wilder Mustangs bis zum Beschlagen der jüngsten Fohlen - ein Rancher ist stets Pfleger, Paarvermittler, Arzt und strenger Lehrmeister in einer Person. Vielleicht ist es der Umstand, dass sie mit lebenden, atmenden, ausgelassenen Tieren arbeiten, dem Rancher ihre Cowboy-Mentalität voller rauen Selbstvertrauens verdanken. Doch ohne einen Rancher, der eine stete Versorgung mit Pferden sichert, kann eine Kolonie unmöglich ihr volles Potential ausschöpfen.</German>
+        <German>Ein erfahrener Züchter muss in allen Belangen bewandert sein, die Pferde betreffen. Vom Zähmen wilder Mustangs bis zum Beschlagen der jüngsten Fohlen - ein Züchter ist stets Pfleger, Paarvermittler, Arzt und strenger Lehrmeister in einer Person. Vielleicht ist es der Umstand, dass sie mit lebenden, atmenden, ausgelassenen Tieren arbeiten, dem Züchter ihre Cowboy-Mentalität voller rauen Selbstvertrauens verdanken. Doch ohne einen Züchter, der eine stete Versorgung mit Pferden sichert, kann eine Kolonie unmöglich ihr volles Potential ausschöpfen.</German>
         <Italian>Un abile allevatore conosce tutto quello che concerne i cavalli. Dal domare i selvaggi mustang al ferrare i giovani puledri, l'allevatore è sia custode che sensale, dottore e domatore. Forse è il fatto di lavorare con creature viventi e briose che dà agli allevatori quello spirito di rude fiducia in se stessi tipico dei "cowboy". Ma senza un allevatore per produrre cavalli, una colonia non ha possibilità di raggiungere il proprio massimo potenziale.</Italian>
         <Spanish>Un Ranchero habilidoso es un maestro en todo lo relativo a los caballos. Desde domar a sementales salvajes hasta herrar a los potrillos más jóvenes, el hábil Ranchero hace de todo: de cuidador y criador, de veterinario y domador. Los Rancheros tienen esa mirada de "vaquero" duro y seguro de sí mismo quizá debido al hecho de que trabajan con seres vivos, que respiran y tienen un carácter fuerte. Pero, sin un Ranchero que le proporcionase Caballos, una colonia posiblemente no podría alcanzar todo su potencial.</Spanish>
     </TEXT>
@@ -4122,7 +4193,7 @@
         <Tag>TXT_KEY_UNIT_RANCHER_STRATEGY</Tag>
         <English>If you want to breed livestock really fast, employ an [COLOR_UNIT_TEXT]expert rancher[COLOR_REVERT].[NEWLINE]Expert ranchers double the number of new [LINK=YIELD_HORSES]horses[\LINK], [LINK=YIELD_CATTLE]cattle[\LINK] or [LINK=YIELD_SHEEP]sheep[\LINK] bred on the plot on which they work when they are assigned to the [LINK=PROFESSION_RANCHER]rancher[\LINK], [LINK=PROFESSION_COWBOY]cowboy[\LINK] or [LINK=PROFESSION_SHEPHERD]shepherd[\LINK] profession.[NEWLINE]A free colonist produces two horses per round from two food units.[NEWLINE]An expert rancher produces four horses from four food units.[NEWLINE]Horses are needed to build a ranch, which simulates the fact that breeding stock is needed to start a herd.[PARAGRAPH:1]Expert ranchers can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
         <French>Si vous avez besoin de davantage de chevaux, de moutons ou de bétail, engagez un [COLOR_UNIT_TEXT]Maître éleveur[COLOR_REVERT]. Les Maîtres éleveur doublent le nombre de [COLOR_HIGHLIGHT_TEXT]chevaux[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]moutons[COLOR_REVERT] et [COLOR_HIGHLIGHT_TEXT]bétail[COLOR_REVERT] disponibles dans la colonie lorsqu'ils sont assignés à la profession d'éleveur.</French>
-        <German>[COLOR_UNIT_TEXT]Erfahrener Rancher[COLOR_REVERT] verbrauchen zwar doppelt soviel Nahrung als Futter, erzeugen daraus aber auch doppelt soviele [LINK=YIELD_HORSES]Pferde[\LINK], [LINK=YIELD_CATTLE]Rinder[\LINK] oder [LINK=YIELD_SHEEP]Schafe[\LINK].[PARAGRAPH:2]In den [COLOR_BUILDING_TEXT]Stallungen[COLOR_REVERT] und der [COLOR_BUILDING_TEXT]Ranch[COLOR_REVERT] können Bürger im Beruf des Ranchers aus [COLOR_HIGHLIGHT_TEXT]Nahrung Pferde[COLOR_REVERT] züchten.[NEWLINE]In den Stallungen erzeugt ein Freier Kolonist pro Runde aus zwei Nahrungseinheiten zwei Pferde. Baut man die Stallungen zu einer Ranch aus, erzeugt er aus vier Nahrungseinheiten vier Pferde.[NEWLINE]Zur Errichtung der Stallungen und der Ranch wird eine gewisse Zahl von Pferden benötigt, das simuliert, dass man zur Gründung einer Pferdezucht eine kleine Herde braucht.[PARAGRAPH:1]Erfahrener Rancher können in [LINK=CONCEPT_EUROPE]Europa[\LINK] rekrutiert werden, und sie können auch in einer Kolonie mit einem [LINK=BUILDING_COLLEGE]College[\LINK] oder einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
+        <German>[COLOR_UNIT_TEXT]Erfahrener Züchter[COLOR_REVERT] verbrauchen zwar doppelt soviel Nahrung als Futter, erzeugen daraus aber auch doppelt soviele [LINK=YIELD_HORSES]Pferde[\LINK], [LINK=YIELD_CATTLE]Rinder[\LINK] oder [LINK=YIELD_SHEEP]Schafe[\LINK].[PARAGRAPH:2]In den [COLOR_BUILDING_TEXT]Stallungen[COLOR_REVERT] und der [COLOR_BUILDING_TEXT]Ranch[COLOR_REVERT] können Bürger im Beruf des Züchters aus [COLOR_HIGHLIGHT_TEXT]Nahrung Pferde[COLOR_REVERT] züchten.[NEWLINE]In den Stallungen erzeugt ein Freier Kolonist pro Runde aus zwei Nahrungseinheiten zwei Pferde. Baut man die Stallungen zu einer Ranch aus, erzeugt er aus vier Nahrungseinheiten vier Pferde.[NEWLINE]Zur Errichtung der Stallungen und der Ranch wird eine gewisse Zahl von Pferden benötigt, das simuliert, dass man zur Gründung einer Pferdezucht eine kleine Herde braucht.[PARAGRAPH:1]Erfahrener Züchter können in [LINK=CONCEPT_EUROPE]Europa[\LINK] rekrutiert werden, und sie können auch in einer Kolonie mit einem [LINK=BUILDING_COLLEGE]College[\LINK] oder einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
         <Italian>Se ti servono più cavalli assumi un [COLOR_UNIT_TEXT]mastro allevatore[COLOR_REVERT]. I mastri allevatori raddoppiano il numero di [COLOR_HIGHLIGHT_TEXT]cavalli[COLOR_REVERT] nati nell'insediamento in cui lavorano, quando vengono assegnati alla professione di allevatori.</Italian>
         <Spanish>Si necesitáis más monturas, contratad a un [COLOR_UNIT_TEXT]Maestro ranchero[COLOR_REVERT]. Los Maestros rancheros doblan la cantidad de nuevos [COLOR_HIGHLIGHT_TEXT]Caballos[COLOR_REVERT] que nacen en el asentamiento en el que trabajan cuando se los asigna a la profesión de Ranchero.</Spanish>
     </TEXT>
@@ -4180,13 +4251,13 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Stone Salt</Text>
-            <Gender>Male</Gender>
+            <Text>Salgemma</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Stone Salt</Text>
-            <Gender>Male</Gender>
+            <Text>Sal gema</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
@@ -4216,12 +4287,12 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Redpepper</Text>
+            <Text>Pepe rosso</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Redpepper</Text>
+            <Text>Pimiento rojo</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -4278,11 +4349,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROPE</Tag>
-        <English>Rope</English>
+        <English>Ropes</English>
         <French>
             <Text>Cordage</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Seile</Text>
@@ -4290,14 +4361,14 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Rope</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Corde</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Rope</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Cuerdas</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -4465,6 +4536,40 @@
         <German>Die berittenen Landtruppen des Königs verfügen mit den [COLOR_UNIT_TEXT]Königlichen Dragonern[COLOR_REVERT] (entspricht den kolonialen Dragonern) und der [COLOR_UNIT_TEXT]Königlichen Kavallerie[COLOR_REVERT] (entspricht der kolonialen Kavallerie) über gleich starke Militärberufe wie die Kolonialnationen. Allerdings sind die Einheiten, die diese Berufe ausüben, stärker: Die [COLOR_UNIT_TEXT]Königlichen Dragoner[COLOR_REVERT] verfügen automatisch über die Beförderungen [LINK=PROMOTION_VETERAN1]Veteran I[\LINK], [LINK=PROMOTION_VETERAN2]Veteran II[\LINK] und [LINK=PROMOTION_EXPLORER1]Kundschafter I[\LINK] (und damit insgesamt einem Bonus von 20% auf die Kampfstärke und geringere Bewegungskosten von -1). Die [COLOR_UNIT_TEXT]Königliche Kavallerie[COLOR_REVERT] verfügt automatisch über die Beförderungen [LINK=PROMOTION_VETERAN1]Veteran I[\LINK], [LINK=PROMOTION_VETERAN2]Veteran II[\LINK] und [LINK=PROMOTION_FEINT]Finte[\LINK] (und damit insgesamt einem Bonus von 20% auf die Kampfstärke und je einen Bonus von 10% gegen Nahkampfeinheiten und einen Bonus von 20% gegen Schießpulvereinheiten).</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_ROYAL_HALBERDIER</Tag>
+        <English>
+            <Text>Royal Halberdier:Royal Halberdiers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Brigadier royal:Brigadiers royaux</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Königlicher Hellebardenträger:Königliche Hellebardenträger</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Royal Halberdier:Royal Halberdiers</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Royal Halberdier:Royal Halberdiers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ROYAL_HALBERDIER_STRATEGY</Tag>
+        <English>The [COLOR_UNIT_TEXT]Royal Halberdiers[COLOR_REVERT], specialists of the profession [LINK=PROFESSION_ROYAL_HALBERDIER]Royal Halberdiers[\LINK], are the weakest part of the elite ground forces of the Royal Expeditionary Force.[NEWLINE]However, the Royal Halberdiers get a bonus of 25% when attacking mounted units (dragoons and heavy cavalry).[NEWLINE]The Royal Halberdiers are the royal counterpart of the colonial [LINK=PROFESSION_TOWN_GUARD]Town guard[\LINK] and get the free promotions [LINK=PROMOTION_VETERAN1]Veteran I[\LINK] and [LINK=PROMOTION_VETERAN2]Veteran II[\LINK] so that they are strong defensive units.[NEWLINE]You should attack them with infantry units, not with cavalry.</English>
+        <French>Les [COLOR_UNIT_TEXT]brigadiers royaux[COLOR_REVERT], spécialistes de la profession [LINK=PROFESSION_ROYAL_HALBERDIER]brigadier royal[\LINK], sont les unités les plus faibles du corps expéditionnaire royal.[NEWLINE]Cependant, ils bénéficient d'un bonus de 25% contre les unités montés (dragons et cavaleries).[NEWLINE]Les bridgadiers royaux sont l'équivalent royal du brigadier vétéran et bénéficient des promotions [LINK=PROMOTION_VETERAN1]Vétéran I[\LINK] et [LINK=PROMOTION_VETERAN2]Vétéran II[\LINK], ce qui leur accorder une certaine puissance défensive.[NEWLINE]Elles sont plus facilement vaincues avec des unités d'infanterie qu'avec des unités montés.</French>
+        <German>Das Expeditionskorps des Königs verfügt mit den [LINK=PROFESSION_ROYAL_HALBERDIER]Königlichen Hellebardenträgern[\LINK] (entspricht der [LINK=PROFESSION_TOWN_GUARD]Stadtwache[\LINK]) über einen ähnlichen Militärberuf wie die Kolonialnationen.[NEWLINE]Allerdings sind die Einheiten, die diese Berufe ausüben, stärker: Der [COLOR_UNIT_TEXT]Königliche Hellebardenträger[COLOR_REVERT] verfügt automatisch über die Beförderungen [LINK=PROMOTION_VETERAN1]Veteran I[\LINK] und [LINK=PROMOTION_VETERAN2]Veteran II[\LINK] (und damit insgesamt einem Bonus von 20% auf die Kampfstärke und einen Kampfbonus von 25% gegen Berittene).[NEWLINE]Aufgrund ihrer Stärke gegen berittene Einheiten bekämpft man sie am besten mit Infanterie, wie der Kolonialmiliz und der Linieninfanterie.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_ROYAL_LIGHT_INFANTRY</Tag>
         <English>
             <Text>Royal Light Infantryman:Royal Light Infantrymen</Text>
@@ -4495,10 +4600,10 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROYAL_LIGHT_INFANTRY_PEDIA</Tag>
         <English>Europe's early firearms - the arquebus and the musket - were notoriously inaccurate.[NEWLINE]Even with the development of professional armies in the 17th century, when soldiers trained with their own weaponry, actually hitting a target with such a firearm remained a big challenge: units relied on mass volume of fire rather than on marksmanship to do their damage.[NEWLINE]For this reason, among 17th century armed forces it was not a regiment's ability to fire accurately that gave them their reputation - it was their ability to be fired upon and continue fighting.[NEWLINE]Royal Light Infantry and Royal Line Infantry are just such units - hardened, disciplined and deadly.</English>
-        <French>Les premières armes à feu d'Europe (l'arquebuse et le mousquet) étaient réputées pour leur manque de précision. Le développement d'armées professionnelles au 17ème siècle eut beau autoriser les soldats à s'entraîner régulièrement avec leurs propres armes, toucher une cible précise avec une arme si particulière relevait du défi : pour infliger des dégâts, on comptait plus sur la quantité de balles tirées que sur l'adresse du tireur. Au sein des forces armées de l'époque, la précision de tir d'un régiment ne faisait pas sa réputation : on attendait avant tout des soldats qu'ils sachent subir les tirs ennemis tout en continuant à se battre, et c'est exactement ce que sont les soldats de métier : endurcis, disciplinés et mortels.</French>
-        <German>Die frühen europäischen Feuerwaffen - Arkebuse und Muskete - waren berüchtigt für ihre Ungenauigkeit. Selbst nach der Aufstellung von Berufsarmeen im 17. Jahrhundert, als die Soldaten regelmäßig mit ihren eigenen Schusswaffen trainieren durften, blieb es eine große Herausforderung, mit einer solchen Feuerwaffe tatsächlich ein bestimmtes Ziel zu treffen: Die Einheiten richteten eher durch massive Feuerkraft als durch Treffsicherheit Schaden an. Daher erwarben sich Regimenter im 17. Jahrhundert ihren guten Ruf nicht durch genaues Zielen, sondern durch die Fähigkeit, auch unter Beschuss immer weiter zu feuern. Solche Einheiten sind die Königlichen Soldaten: abgehärtet, diszipliniert und tödlich.</German>
-        <Italian>Le prime armi da fuoco europee, l'archibugio e il moschetto, erano notoriamente poco precise. Anche con lo sviluppo degli eserciti professionali, nel XVII secolo, quando ai soldati veniva permesso di addestrarsi regolarmente con le proprie armi, colpire un bersaglio preciso con tali armi da fuoco era una grossa sfida: per poter causare danni le unità facevano affidamento sul volume di fuoco più che sulla precisione. Per questa ragione, la reputazione di un reggimento nel XVII secolo non nasceva tanto dall'abilità di sparare con precisione, quanto da quella di subire il fuoco nemico e di continuare a combattere. I regolari erano proprio questo tipo di unità: temprate, disciplinate e letali.</Italian>
-        <Spanish>Las primeras armas de fuego europeas _el arcabuz y el mosquete_ eran notoriamente poco precisas. Aún llegado el desarrollo de los ejércitos profesionales, en el s. XVII, en el que a los soldados se les permitía entrenar a menudo con su propio armamento, conseguir dar a un blanco concreto con un arma así seguía siendo un gran reto: las unidades confiaban más en el disparo en masa que en la puntería para hacer daño. Por este motivo, entre las fuerzas armadas del s. XVII no había ni un regimiento que tuviera reputación por su capacidad para disparar con precisión: era su capacidad para aguantar los disparos y seguir luchando lo que importaba. Los regulares son unidades así: curtidas, disciplinadas y letales.</Spanish>
+        <French>Les premières armes à feu d'Europe (l'arquebuse et le mousquet) étaient réputées pour leur manque de précision. Le développement d'armées professionnelles au 17ème siècle eut beau autoriser les soldats à s'entraîner régulièrement avec leurs propres armes, toucher une cible précise avec une arme si particulière relevait du défi : pour infliger des dégâts, on comptait plus sur la quantité de balles tirées que sur l'adresse du tireur.[NEWLINE]Au sein des forces armées de l'époque, la précision de tir d'un régiment ne faisait pas sa réputation : on attendait avant tout des soldats qu'ils sachent subir les tirs ennemis tout en continuant à se battre, et c'est exactement ce que sont les soldats de métier : endurcis, disciplinés et mortels.</French>
+        <German>Die frühen europäischen Feuerwaffen - Arkebusen und Musketen - waren berüchtigt für ihre Ungenauigkeit. Selbst nach der Aufstellung von Berufsarmeen im 17. Jahrhundert, als die Soldaten regelmäßig mit ihren eigenen Schusswaffen trainieren durften, blieb es eine große Herausforderung, mit einer solchen Feuerwaffe tatsächlich ein bestimmtes Ziel zu treffen: Die Einheiten richteten eher durch massive Feuerkraft als durch Treffsicherheit Schaden an.[NEWLINE]Daher erwarben sich Regimenter im 17. Jahrhundert ihren guten Ruf nicht durch genaues Zielen, sondern durch die Fähigkeit, auch unter Beschuss immer weiter zu feuern.[NEWLINE]Solche Einheiten sind die Königlichen Soldaten: abgehärtet, diszipliniert und tödlich.</German>
+        <Italian>Le prime armi da fuoco europee, l'archibugio e il moschetto, erano notoriamente poco precise. Anche con lo sviluppo degli eserciti professionali, nel XVII secolo, quando ai soldati veniva permesso di addestrarsi regolarmente con le proprie armi, colpire un bersaglio preciso con tali armi da fuoco era una grossa sfida: per poter causare danni le unità facevano affidamento sul volume di fuoco più che sulla precisione.[NEWLINE]Per questa ragione, la reputazione di un reggimento nel XVII secolo non nasceva tanto dall'abilità di sparare con precisione, quanto da quella di subire il fuoco nemico e di continuare a combattere.[NEWLINE]I regolari erano proprio questo tipo di unità: temprate, disciplinate e letali.</Italian>
+        <Spanish>[TAB]Las primeras armas de fuego europeas _el arcabuz y el mosquete_ eran notoriamente poco precisas. Aún llegado el desarrollo de los ejércitos profesionales, en el s. XVII, en el que a los soldados se les permitía entrenar a menudo con su propio armamento, conseguir dar a un blanco concreto con un arma así seguía siendo un gran reto: las unidades confiaban más en el disparo en masa que en la puntería para hacer daño.[NEWLINE]Por este motivo, entre las fuerzas armadas del s. XVII no había ni un regimiento que tuviera reputación por su capacidad para disparar con precisión: era su capacidad para aguantar los disparos y seguir luchando lo que importaba.[NEWLINE]Los regulares son unidades así: curtidas, disciplinadas y letales.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROYAL_LIGHT_INFANTRY_STRATEGY</Tag>
@@ -4552,7 +4657,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Rum</German>
+        <German>
+            <Text>Rum</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
         <Italian>
             <Text>Rum</Text>
             <Gender>Male</Gender>
@@ -4590,13 +4699,13 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Sailcloth</Text>
-            <Gender>Male</Gender>
+            <Text>Tela da vele</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Sailcloth</Text>
-            <Gender>Male</Gender>
+            <Text>Lona</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
@@ -4666,12 +4775,12 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Salt</Text>
+            <Text>Sale</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Salt</Text>
+            <Text>Sal</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -4779,8 +4888,8 @@
             <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Sheep</Italian>
-        <Spanish>Sheep</Spanish>
+        <Italian>Pecore</Italian>
+        <Spanish>Ovejas</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SHEEP_PEDIA</Tag>
@@ -4976,11 +5085,15 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SPICES</Tag>
-        <English>Spices</English>
+        <English>
+            <Text>Spices</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
         <French>
             <Text>Epices</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Gewürze</Text>
@@ -4988,14 +5101,14 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Spices</Text>
+            <Text>Spezie</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Spices</Text>
+            <Text>Especias</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -5118,22 +5231,30 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_STONE</Tag>
-        <English>Stone</English>
+        <English>
+            <Text>Stone:Stones</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
         <French>
-            <Text>Pierre</Text>
+            <Text>Pierre:Pierres</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
         </French>
-        <German>Stein</German>
+        <German>
+            <Text>Stein:Steine</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
         <Italian>
-            <Text>Pietra</Text>
+            <Text>Pietra:Pietre</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Piedra</Text>
+            <Text>Piedra:Piedras</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -5192,7 +5313,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Zucker</German>
+        <German>
+            <Text>Zucker</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
         <Italian>
             <Text>Zucchero</Text>
             <Gender>Male</Gender>
@@ -5279,8 +5404,8 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_TANNER_PEDIA</Tag>
         <English>Tanning is the process of treating skins of animals to produce leather. Skins arrived at the tannery dried stiff.[NEWLINE]Tanners would soak the skins to soften them, then pound and scour them to remove any flesh and fat.[NEWLINE]To get fur fibers out of the skin the tanner would soak the skin in either urine, lime or allow it to putrefy. With the hair removed the tanner would coat the skins in dung until they became supple but not too soft.[NEWLINE]Tanners understandably were located on the outskirts of town due to the unpleasant smells that tanneries produced.</English>
-        <French>Le cuir est de la peau animale tannée (généralement de la peau de grands mammifères tels le boeuf et le porc), c'est-à-dire une substance morte, imputrescible, souple et insoluble dans l'eau. Le cuir est le fruit de la transformation des peaux opérée par les tanneries et les mégisseries.</French>
-        <German>Leder war in der menschlichen Geschichte eines der wichtigsten Materialien. Meist aus Rinderhäuten hergestellt diente Leder verschiedensten Zwecken, meist jedoch der Herstellung von Kleidung. Ledergerber war zwar einer der am wenigsten angesehenen Berufe oder Stände, aber essentiell für jede damalige Gesellschaft. Auch in der Neuen Welt spielte die Herstellung von Leder eine bedeutende Rolle.</German>
+        <French>[TAB]Le cuir est de la peau animale tannée (généralement de la peau de grands mammifères tels le boeuf et le porc), c'est-à-dire une substance morte, imputrescible, souple et insoluble dans l'eau. Le cuir est le fruit de la transformation des peaux opérée par les tanneries et les mégisseries.</French>
+        <German>[TAB]Leder war in der menschlichen Geschichte eines der wichtigsten Materialien. Meist aus Rinderhäuten hergestellt, diente Leder verschiedensten Zwecken, üblicherweise jedoch der Herstellung von Kleidung. Ledergerber war zwar einer der am wenigsten angesehenen Berufe oder Stände, aber essentiell für jede damalige Gesellschaft. Auch in der Neuen Welt spielte die Herstellung von Leder eine bedeutende Rolle.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TANNER_STRATEGY</Tag>
@@ -5290,13 +5415,21 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TOBACCO</Tag>
-        <English>Tobacco</English>
+        <English>
+            <Text>Tobacco</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
         <French>
             <Text>Tabac</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Tabak</German>
+        <German>
+            <Text>Tabak</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
         <Italian>
             <Text>Tabacco</Text>
             <Gender>Male</Gender>
@@ -5398,13 +5531,21 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TOOLS</Tag>
-        <English>Tools</English>
+        <English>
+            <Text>Tools</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
         <French>
             <Text>Outil:Outils</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Eisenwaren</German>
+        <German>
+            <Text>Eisenwaren</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
         <Italian>
             <Text>Attrezzi</Text>
             <Gender>Male</Gender>
@@ -5426,13 +5567,21 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TRADE_GOODS</Tag>
-        <English>Trade Goods</English>
+        <English>
+            <Text>Trade Goods</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
         <French>
             <Text>Marchandise:Marchandises</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Handelsgüter</German>
+        <German>
+            <Text>Handelsgüter</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
         <Italian>
             <Text>Beni commerciali</Text>
             <Gender>Male</Gender>
@@ -5474,7 +5623,7 @@
         <Tag>TXT_KEY_UNIT_TRAIN_STRATEGY</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Carriages[COLOR_REVERT] are the ultimate land transport unit.[NEWLINE]They have six cargo slots which can carry both units and goods, and they are the only land transport units capable of carrying [LINK=CONCEPT_CHANGES_TO_TREASURES]treasures[\LINK].[NEWLINE]However, they can only travel over [COLOR_HIGHLIGHT_TEXT]plastered country roads[COLOR_REVERT], and they need a [LINK=BUILDING_TRAIN_STATION]waystation[\LINK] to be present in a colony to be built.[NEWLINE]This makes carriages very useful to move units and goods between your own settlements, but for fast unit transport through [COLOR_HIGHLIGHT_TEXT]wilder[COLOR_REVERT] places, you'll need stagecoaches or Conestogas.</English>
         <French>Les convoyeurs nécessitent des routes pavées et coûtent assez cher. Ils sont cependant particulièrement plus rapides que les autres véhicules et peuvent charger davantage de marchandises. Ils se révèlent ainsi particuliè utiles sur les grandes cartes.</French>
-        <German>Fuhrwerke sind zwar schwieriger und teurer zu bauen als Wagenzüge oder Trecks und benötigen dazu auch noch eine befestigte Landstraße, um darauf zu fahren, aber sie sind viel schneller und können viel mehr transportieren.</German>
+        <German>Fuhrwerke sind zwar schwieriger und teurer zu bauen als Wagenzüge oder Trecks und benötigen dazu auch noch eine befestigte Landstraße, um darauf zu fahren, aber sie sind viel schneller und können deutlich mehr transportieren.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TRAPPER</Tag>
@@ -5530,9 +5679,9 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Tesoro</Text>
+            <Text>Tesoro:Tesori</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
         </Italian>
         <Spanish>
             <Text>Tesoro:Tesoros</Text>
@@ -5595,8 +5744,8 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
-        <Italian>Valuable Wood</Italian>
-        <Spanish>Valuable Wood</Spanish>
+        <Italian>Legno pregiato</Italian>
+        <Spanish>Madera fina</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VALUABLE_WOOD_PEDIA</Tag>
@@ -5861,6 +6010,11 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
+        <Spanish>
+            <Text>West Indiaman:West Indiamen</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_WEST_INDIAMAN_PEDIA</Tag>
@@ -5888,13 +6042,13 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Whale Fat</Text>
+            <Text>Grasso di balena</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Whale Fat</Text>
-            <Gender>Male</Gender>
+            <Text>Grasa de ballena</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
@@ -5914,7 +6068,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Tran</German>
+        <German>
+            <Text>Tran</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
         <Italian>
             <Text>Olio di balena</Text>
             <Gender>Male</Gender>
@@ -5976,16 +6134,16 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_WHALING_BOAT</Tag>
-        <English>Whaling Boat:Whaling Boats</English>
+        <English>Whaling Ship:Whaling Ships</English>
         <French>
             <Text>Baleinier</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </French>
         <German>
-            <Text>Walfänger</Text>
+            <Text>Walfänger:Walfänger</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
         </German>
         <Italian>
             <Text>Baleniera:Baleniere</Text>
@@ -6139,12 +6297,12 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Wool</Text>
+            <Text>Lana di pecora</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Wool</Text>
+            <Text>Lana de oveja</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -6167,22 +6325,22 @@
         <French>
             <Text>Draps de laine</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </French>
         <German>
             <Text>Wollstoffe</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Wool Cloth</Text>
+            <Text>Vestiti di lana</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Wool Cloth</Text>
+            <Text>Ropa de lana</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -6196,40 +6354,6 @@
         <English>[COLOR_UNIT_TEXT]Master weavers[COLOR_REVERT] produce double the amount of [COLOR_HIGHLIGHT_TEXT]wool cloth[COLOR_REVERT].</English>
         <French>Les [COLOR_UNIT_TEXT]maîtres tisserands[COLOR_REVERT] producisent deux fois plus de [COLOR_HIGHLIGHT_TEXT]draps de laine[COLOR_REVERT].</French>
         <German>[COLOR_UNIT_TEXT]Meister-Weber[COLOR_REVERT] verarbeiten doppelt soviel Wolle in [COLOR_HIGHLIGHT_TEXT]Wollstoffen[COLOR_REVERT], wie andere Kolonisten.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_ROYAL_HALBERDIER</Tag>
-        <English>
-            <Text>Royal Halberdier:Royal Halberdiers</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </English>
-        <French>
-            <Text>Brigadier royal:Brigadiers royaux</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Königlicher Hellebardenträger:Königliche Hellebardenträger</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Royal Halberdier:Royal Halberdiers</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Royal Halberdier:Royal Halberdiers</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_ROYAL_HALBERDIER_STRATEGY</Tag>
-        <English>The [COLOR_UNIT_TEXT]Royal Halberdiers[COLOR_REVERT], specialists of the profession [LINK=PROFESSION_ROYAL_HALBERDIER]Royal Halberdiers[\LINK], are the weakest part of the elite ground forces of the Royal Expeditionary Force.[NEWLINE]However, the Royal Halberdiers get a bonus of 25% when attacking mounted units (dragoons and heavy cavalry).[NEWLINE]The Royal Halberdiers are the royal counterpart of the colonial [LINK=PROFESSION_TOWN_GUARD]Town guard[\LINK] and get the free promotions [LINK=PROMOTION_VETERAN1]Veteran I[\LINK] and [LINK=PROMOTION_VETERAN2]Veteran II[\LINK] so that they are strong defensive units.[NEWLINE]You should attack them with infantry units, not with cavalry.</English>
-        <French>Les [COLOR_UNIT_TEXT]brigadiers royaux[COLOR_REVERT], spécialistes de la profession [LINK=PROFESSION_ROYAL_HALBERDIER]brigadier royal[\LINK], sont les unités les plus faibles du corps expéditionnaire royal.[NEWLINE]Cependant, ils bénéficient d'un bonus de 25% contre les unités montés (dragons et cavaleries).[NEWLINE]Les bridgadiers royaux sont l'équivalent royal du brigadier vétéran et bénéficient des promotions [LINK=PROMOTION_VETERAN1]Vétéran I[\LINK] et [LINK=PROMOTION_VETERAN2]Vétéran II[\LINK], ce qui leur accorder une certaine puissance défensive.[NEWLINE]Elles sont plus facilement vaincues avec des unités d'infanterie qu'avec des unités montés.</French>
-        <German>Das Expeditionskorps des Königs verfügen mit den [LINK=PROFESSION_ROYAL_HALBERDIER]Königlichen Hellebardenträgern[\LINK] (entspricht der [LINK=PROFESSION_TOWN_GUARD]Stadtwache[\LINK]) über einen ähnlichen Militärberuf wie die Kolonialnationen.[NEWLINE]Allerdings sind die Einheiten, die diese Berufe ausüben, stärker: Der [COLOR_UNIT_TEXT]Königliche Hellebardenträger[COLOR_REVERT] verfügt automatisch über die Beförderungen [LINK=PROMOTION_VETERAN1]Veteran I[\LINK] und [LINK=PROMOTION_VETERAN2]Veteran II[\LINK] (und damit insgesamt einem Bonus von 20% auf die Kampfstärke und einen Kampfbonus von 25% gegen Berittene).[NEWLINE]Aufgrund ihrer Stärke gegen berittene Einheiten bekämpft man sie am besten mit Infanterie, wie der Kolonialmiliz und der Linieninfanterie.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FREED_SLAVE</Tag>
