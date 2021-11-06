@@ -1423,13 +1423,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_HILLS</Tag>
-        <English>[NEWLINE][BOLD]Hills:[\BOLD]</English>
-        <German>[NEWLINE][BOLD]Hügel:[\BOLD]</German>
+        <English>[BOLD]Hills:[\BOLD]</English>
+        <German>[BOLD]Hügel:[\BOLD]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_PEAKS</Tag>
-        <English>[NEWLINE][BOLD]Peaks:[\BOLD]</English>
-        <German>[NEWLINE][BOLD]Berge:[\BOLD]</German>
+        <English>[BOLD]Peaks:[\BOLD]</English>
+        <German>[BOLD]Berge:[\BOLD]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_WATER</Tag>
