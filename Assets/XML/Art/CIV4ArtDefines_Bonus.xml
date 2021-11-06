@@ -712,10 +712,10 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_WALRUSS</Type>
-            <fScale>36</fScale>
+            <fScale>1</fScale>
             <fInterfaceScale>1</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/walrus/walrus.nif</NIF>
-            <KFM/>
+            <NIF>Art/Terrain/Resources/Sea_Walrus/Sea_Lions_fx.nif</NIF>
+            <KFM>Art/Terrain/Resources/Sea_Walrus/Sea_Lions.kfm</KFM>
             <Button>Art/Interface/Buttons/walrus.dds</Button>
             <FontButtonIndex>34</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
