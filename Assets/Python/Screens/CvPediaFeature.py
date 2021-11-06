@@ -38,8 +38,16 @@ class CvPediaFeature:
 		
 		self.X_STATS_PANE = self.X_ICON + self.W_ICON + (w * 2 / 100)
 		self.Y_STATS_PANE = self.Y_ICON
-		self.W_STATS_PANE = (w * 55 / 100)
+		self.W_STATS_PANE = (w * 25 / 100)
 		self.H_STATS_PANE = (h * 35 / 100)
+		
+		# WTP, ray, playing with these values
+		# Also displaying the valid Terrain
+		
+		self.X_STATS_PANE_2 = self.X_STATS_PANE * 2
+		self.Y_STATS_PANE_2 = self.Y_ICON
+		self.W_STATS_PANE_2 = (w * 25 / 100)
+		self.H_STATS_PANE_2 = (h * 35 / 100)
 
 		self.H_ICON_PANE = (h * 45 / 100)
 		
@@ -130,6 +138,22 @@ class CvPediaFeature:
 				#screen.appendListBoxString(panelName, u"<font=4>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 				screen.appendListBoxString(panelName, u"<font=3>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 				## R&R, Robert Surcouf,  Pedia - End
+				
+		## WTP, ray, we have pedia list the valid Terrains of Features automatically - no need for pointless Strategy texts anymore.
+		panelName = self.top.getNextWidgetName()
+		screen.addListBoxGFC(panelName, "", self.X_STATS_PANE_2, self.Y_STATS_PANE_2, self.W_STATS_PANE_2, self.H_STATS_PANE_2, TableStyles.TABLE_STYLE_EMPTY)
+		screen.enableSelect(panelName, False)
+		
+		szIcon = localText.getText("[ICON_BULLET] ", ())
+		
+		# First the List of Terrains
+		szValidTerrainText = localText.getText("TXT_KEY_PEDIA_VALID_TERRAINS_2", ())
+		screen.appendListBoxString(panelName, szValidTerrainText, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		for x in range(TerrainTypes.NUM_TERRAIN_TYPES):
+			if (gc.getFeatureInfo(self.iFeature).isTerrain(x)):
+				TerrainDescription = gc.getTerrainInfo(x).getDescription()
+				screen.appendListBoxString(panelName, u"<font=3>" + szIcon + TerrainDescription + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		
 
 	def placeSpecial(self):
 
@@ -153,7 +177,7 @@ class CvPediaFeature:
 		screen = self.top.getScreen()
 
 		panelName = self.top.getNextWidgetName()
-		screen.addPanel( panelName, localText.getText("History", ()), "", true, true, self.X_HISTORY_PANE, self.Y_HISTORY_PANE, self.W_HISTORY_PANE, self.H_HISTORY_PANE, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addPanel( panelName, localText.getText("TXT_KEY_CIVILOPEDIA_HISTORY", ()), "", true, true, self.X_HISTORY_PANE, self.Y_HISTORY_PANE, self.W_HISTORY_PANE, self.H_HISTORY_PANE, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 		listName = self.top.getNextWidgetName()
 		screen.attachListBoxGFC( panelName, listName, "", TableStyles.TABLE_STYLE_EMPTY )

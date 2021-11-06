@@ -41,7 +41,7 @@ class CvPediaTerrain:
 		## R&R, Robert Surcouf,  Pedia - Start
 		#self.W_STATS_PANE = (w * 35 / 100)
 		#self.H_STATS_PANE = (h * 35 / 100)
-		self.W_STATS_PANE = (w * 50 / 100)
+		self.W_STATS_PANE = (w * 25 / 100)
 		self.H_STATS_PANE = (h * 35 / 100)
 		## R&R, Robert Surcouf,  Pedia - End
 

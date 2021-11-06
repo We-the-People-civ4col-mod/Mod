@@ -45,9 +45,11 @@ class CvPediaBonus:
 		self.W_BONUS_ANIMATION = (w * 40 / 100)
 		self.H_BONUS_ANIMATION = self.H_ICON_PANE
 
+		# WTP, ray, lowering for scroll bar to look better
 		self.X_STATS_PANE = self.X_ICON + self.W_ICON + (w * 2 / 100)
 		self.Y_STATS_PANE = self.Y_ICON
-		self.W_STATS_PANE = (w * 55 / 100)
+		#self.W_STATS_PANE = (w * 55 / 100)
+		self.W_STATS_PANE = (w * 25 / 100)
 		self.H_STATS_PANE = (h * 30 / 100)
 
 		self.X_HISTORY_PANE = x
@@ -120,6 +122,29 @@ class CvPediaBonus:
 		elif (iHealthChangeinCityRadius < 0):
 			szHealthText = localText.getText("TXT_KEY_HEALTH_FROM_RESSOURCE_NEGATIVE", (iHealthChangeinCityRadius, gc.getYieldInfo(YieldTypes.YIELD_HEALTH).getChar()))
 			screen.appendListBoxString(panelName, u"<font=3>" + szHealthText + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		
+		## WTP, ray, we have pedia list the valid Terrains and Features automatically - no need for pointless Strategy texts anymore.
+		
+		szIcon = localText.getText("[ICON_BULLET] ", ())
+		
+		# First the List of Terrains
+		szValidTerrainText = localText.getText("TXT_KEY_PEDIA_VALID_TERRAINS", ())
+		screen.appendListBoxString(panelName, szValidTerrainText, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		for x in range(TerrainTypes.NUM_TERRAIN_TYPES):
+			if (gc.getBonusInfo(self.iBonus).isTerrain(x)):
+				TerrainDescription = gc.getTerrainInfo(x).getDescription()
+				screen.appendListBoxString(panelName, u"<font=3>" + szIcon + TerrainDescription + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		
+		# Then the List of Features
+		szValidFeatureText = localText.getText("TXT_KEY_PEDIA_VALID_FEATURES", ())
+		screen.appendListBoxString(panelName, szValidFeatureText, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		# stupid NUM_FEATURE_TYPES is not known in DLL ... so let us hardcode it for now to 50
+		# for x in range(FeatureTypes.NUM_FEATURE_TYPES):
+		for y in range(50):
+			if (gc.getBonusInfo(self.iBonus).isFeature(y)):
+				FeatureDescription = gc.getFeatureInfo(y).getDescription()
+				screen.appendListBoxString(panelName, u"<font=3>"  + szIcon +  FeatureDescription + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		
 		
 	def placeHistory(self):
 

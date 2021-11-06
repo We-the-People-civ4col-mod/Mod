@@ -1437,6 +1437,21 @@
         <German>[BOLD]Wasser:[\BOLD]</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_PEDIA_VALID_TERRAINS</Tag>
+        <English>[NEWLINE][BOLD]Valid Terrains:[\BOLD]</English>
+        <German>[NEWLINE][BOLD]Gültige Gelände:[\BOLD]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_VALID_TERRAINS_2</Tag>
+        <English>[BOLD]Valid Terrains:[\BOLD]</English>
+        <German>[BOLD]Gültige Gelände:[\BOLD]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_VALID_FEATURES</Tag>
+        <English>[NEWLINE][BOLD]Valid Features:[\BOLD]</English>
+        <German>[NEWLINE][BOLD]Gültige Features:[\BOLD]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PEDIA_YIELD_INCREASES</Tag>
         <English>[BOLD]Yield Increases:[\BOLD]</English>
         <German>[BOLD]Höherer Ertrag:[\BOLD]</German>

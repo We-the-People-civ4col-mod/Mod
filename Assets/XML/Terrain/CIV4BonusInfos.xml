@@ -4753,7 +4753,7 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_LICHEN</FeatureType>
-                    <bFeature>1</bFeature>
+                    <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_MOSS</FeatureType>
