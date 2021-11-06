@@ -1092,9 +1092,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_SPECIAL_ABILITIES</Tag>
-        <English>Special Abilities</English>
-        <French>Compétences spéciales</French>
-        <German>Spezialfähigkeiten</German>
+        <English>Special Characteristics</English>
+        <French>Characteristics spéciales</French>
+        <German>Spezielle Eigenschaften</German>
         <Italian>Abilità speciali</Italian>
         <Spanish>Capacidades especiales</Spanish>
     </TEXT>
@@ -7116,11 +7116,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILOPEDIA_HISTORY</Tag>
-        <English>History</English>
-        <French>Histoire</French>
-        <German>Geschichte</German>
-        <Italian>Storia</Italian>
-        <Spanish>Historia</Spanish>
+        <English>Trivia</English>
+        <French>Anecdotes</French>
+        <German>Wissenswertes</German>
+        <Italian>Trivia</Italian>
+        <Spanish>Trivia</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OPTIONS_SCREEN_OTHER</Tag>
