@@ -26,7 +26,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BANANA_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Banana trees[COLOR_REVERT] grow in [LINK=FEATURE_JUNGLE]jungles[\LINK] on [LINK=TERRAIN_SAVANNAH]savannah[\LINK] or [LINK=TERRAIN_MARSH]marsh[\LINK] terrain. This bonus only applies if the jungle is left standing, so don't cut it down![PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The banana is mentioned for the first time in history in Buddhist texts in 600 BC. Alexander the Great discovered the taste of the banana in the valleys of India in 327 BC. The existence of organized plantations that harvested bananas can be found in China in the year 200 AD. Arab merchants, after Islamic conquerors brought the banana to Palestine in 650 AD, eventually spread the banana over much of Africa. In 1502 Portuguese colonists started the first banana plantations in the Caribbean and in Central America.</English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Banana trees[COLOR_REVERT] grow in [LINK=FEATURE_JUNGLE]jungles[\LINK] on [LINK=TERRAIN_SAVANNAH]savannah[\LINK] or [LINK=TERRAIN_MARSH]marsh[\LINK] terrain. This bonus only applies if the jungle is left standing, so don't cut it down![PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The banana is mentioned for the first time in history in Buddhist texts in 600 BC. Alexander the Great discovered the taste of the banana in the valleys of India in 327 BC. The existence of organized plantations that harvested bananas can be found in China in the year 200 AD. Arab merchants, after Islamic conquerors brought the banana to Palestine in 650 AD, eventually spread the banana over much of Africa. In 1502 Portuguese colonists started the first banana plantations in the Caribbean and in Central America.</English>
         <French>[TAB]La banane est mentionnée pour la première fois dans l'histoire en 600 av. J.-C., dans des textes bouddhistes. Alexandre le Grand découvre ce fruit dans les vallées d'Inde, en 327 av. J.-C. Les plus anciennes plantations organisées de bananes datent de l'an 200, et se trouvaient en Chine. Après l'importation de la banane en Palestine par des conquérants islamiques, des marchands arabes la répandirent dans presque toute l'Afrique. En 1502, des colons portugais créèrent les premières plantations de bananes des Caraïbes et d'Amérique centrale.</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bananen[COLOR_REVERT] wachsen in [LINK=FEATURE_JUNGLE]Dschungeln[\LINK] auf [LINK=TERRAIN_SAVANNAH]Savannen[\LINK] oder [LINK=TERRAIN_MARSH]Sumpfland[\LINK]. Diese Bonusressource ist nur auf Dschungel gültig, daher sollte dieser dort nicht gerodet werden![PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1]Die Banane wird in buddhistischen Texten um 600 vor Christus erstmals geschichtlich erwähnt. Alexander der Große entdeckte die Banane 327 vor Christus in den Tälern Indiens. Erste Bananenplantagen entstanden um das Jahr 200 in China. Arabische Händler machten die Banane schließlich in ganz Afrika bekannt, nachdem islamische Eroberer diese um 650 nach Palästina gebracht hatten. 1502 gründeten portugiesische Kolonisten die ersten Bananenplantagen in der Karibik und in Mittelamerika.</German>
         <Italian>[TAB]La banana viene menzionata per la prima volta nella storia in alcuni testi buddisti del 600 a. C. Alessandro Magno scoprì il gusto di questo frutto nelle valli dell'India nel 327 a. C. Le prime testimonianze di piantagioni dedicate alla coltivazione di banane risalgono al 200 d. C. in Cina. I mercanti arabi, dopo che i conquistatori islamici portarono la banana in Palestina nel 650 d. C., la diffusero infine in buona parte dell'Africa. Nel 1502, i coloni portoghesi avviarono le prime piantagioni di banane nei Caraibi e nell'America Centrale.</Italian>
@@ -58,7 +58,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BARLEY_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT] grows on flat [LINK=TERRAIN_PLAINS_FERTILE]plains[\LINK] terrain that is either open or overgrown by [LINK=FEATURE_LIGHT_FOREST]light forest[\LINK].[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT] is one of the oldest types of corn humanity knows. It is not as good for flour as wheat, for example, but is very well suited for making [COLOR_HIGHLIGHT_TEXT]beer[COLOR_REVERT].</English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT] grows on flat [LINK=TERRAIN_PLAINS_FERTILE]plains[\LINK] terrain that is either open or overgrown by [LINK=FEATURE_LIGHT_FOREST]light forest[\LINK].[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT] is one of the oldest types of corn humanity knows. It is not as good for flour as wheat, for example, but is very well suited for making [COLOR_HIGHLIGHT_TEXT]beer[COLOR_REVERT].</English>
         <French>[TAB]L'orge commune (Hordeum vulgare) est une céréale à paille, plante herbacée annuelle de la famille des poacées. Elle est la plus ancienne céréale cultivée.[réf. nécessaire] Bien adaptée au climat méditerranéen du fait de sa rusticité, elle constituait ainsi la principale céréale cultivée dans l'Antiquité grecque et était consommée sous forme de galette ou de bouillie (maza). L'orge pousse aussi bien sous les tropiques qu'à 4 500 m d'altitude au Tibet.</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Gerste[COLOR_REVERT] wächst in hügeligen [LINK=TERRAIN_PLAINS_FERTILE]Ebenen[\LINK]. Gelegentlich können besonders gute Anbaugebiete für Roten Pfeffer auch von [LINK=FEATURE_FOREST]Wald[\LINK] oder [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] überwachsen sein.[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Gerste[COLOR_REVERT] ist eine der ältesten Getreidesorten, die die Menschheit kennt. Bezüglich des Stärkegehalts und der Mehlerzeugung ist sie nicht so ergiebig, wie andere Getreidesorten, so zum Beispiel Weizen, aber sie eignet sich hervorragend zur Herstellung von Bier.</German>
     </TEXT>
@@ -88,7 +88,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BISON_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bison[COLOR_REVERT] can live in unvegetated flatlands or [LINK=TERRAIN_PLAINS]prairie[\LINK], [LINK=TERRAIN_PLAINS_FERTILE]plains[\LINK], [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_SAVANNAH]savannah[\LINK] terrain.[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]During the Ice Age bison came from Asia across the frozen Bering Sea to America and spread over the whole continent. Native Americans hunted the bison. It provided food, leather, bones and fur: raw material for much of what Native civilizations produced.[PARAGRAPH:1]When Europeans came to North America they began buffalo hunting on a large scale, nearly exterminating them. Yellowstone National Park was created in large part to bring back the bison.</English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bison[COLOR_REVERT] can live in unvegetated flatlands or [LINK=TERRAIN_PLAINS]prairie[\LINK], [LINK=TERRAIN_PLAINS_FERTILE]plains[\LINK], [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_SAVANNAH]savannah[\LINK] terrain.[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]During the Ice Age bison came from Asia across the frozen Bering Sea to America and spread over the whole continent. Native Americans hunted the bison. It provided food, leather, bones and fur: raw material for much of what Native civilizations produced.[PARAGRAPH:1]When Europeans came to North America they began buffalo hunting on a large scale, nearly exterminating them. Yellowstone National Park was created in large part to bring back the bison.</English>
         <French>[TAB]Le bison a été un animal caractéristique de l'Amérique du Nord et un symbole pour de nombreuses cultures amérindiennes. Les Amérindiens des grandes plaines de l'Amérique du Nord avaient une économie largement basée sur le bison. Les bisons d'Amérique du Nord étaient encore 50 à 70 millions avant l'arrivée des Européens en Amérique, vivant et migrant sur les plaines herbeuses d'Amérique du Nord, du Mexique au Canada. Ils ont frisé l'extinction avec la conquête de l'Ouest, l'introduction des chevaux et la construction du chemin de fer (vers 1870-1880), où le massacre des bisons fut une entreprise économique à très grande échelle, mais aussi une stratégie pour affecter les Amérindiens. Buffalo Bill (William Frederick Cody) fut un des plus grands chasseurs de bisons.</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Büffel[COLOR_REVERT] können in unbewaldeten Gebieten der [LINK=TERRAIN_PLAINS]Ebenen[\LINK], [LINK=TERRAIN_PLAINS]Prairie[\LINK], des [LINK=TERRAIN_GRASS]Graslandes[\LINK] oder der [LINK=TERRAIN_SAVANNAH]Savanne[\LINK] vorkommen.[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1]Während der Eiszeit wanderten Bisons von Asien über die zugefrorene Beringstraße nach Amerika ein und breiteten sich über den ganzen Kontinent aus. Als vor etwa zehntausend Jahren Vorfahren der Indianer aus Alaska nachrückten und den Doppelkontinent besiedelten, stießen sie auf gewaltige Bisonherden. Der Bison diente ihnen als Nahrung, sein Fell, seine Sehnen und seine Knochen zur Herstellung von Kleidung, Decken, Sätteln, Zaumzeug, Schilden, Seilen, Leim, Kissenfüllungen, Geschirr, Rasseln, Schmuck, Werkzeugen und Tipis - und der Büffelmist als Brennmaterial.[PARAGRAPH:1]Als die Europäer nach Nordamerika kamen, begannen sie in großem Stil mit der Büffeljagd und rotteten die Tiere fast aus. Der Yellowstone-Nationalpark wurde zu einem großen Teil gegründet, um den Bison wieder anzusiedeln.</German>
     </TEXT>
@@ -168,7 +168,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_COCOA_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cocoa trees[COLOR_REVERT] grow in [LINK=FEATURE_JUNGLE]jungles[\LINK] on [LINK=TERRAIN_SAVANNAH]savannah[\LINK] or [LINK=TERRAIN_MARSH]marsh[\LINK] terrain.[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Cocoa is the dried and fully fermented fatty seed of the cacao tree, from which cocoa solids and cocoa butter are extracted. They are the basis of chocolate, as well as many Mesoamerican foods such as mole sauce and tejate.[PARAGRAPH:1]The cacao tree is native to the Americas. It may have originated in the foothills of the Andes in the Amazon and Orinoco basins of South America, current day Venezuela, where examples of wild cacao still can be found. It was first grown by the Olmecs by 1500 BC in Central America. Cocoa was an important trading commodity in pre-Columbian Mesoamerica.[PARAGRAPH:1]Among the Aztecs, the cacao plant was considered sacred, it was revered as a gift from the god Quetzalcoatl. The cocoa beans were used as an offering, as a means of payment and to prepare a potion.[PARAGRAPH:1]A Spanish soldier with Hernán Cortés in Mexico noticed that when Moctezuma II, Emperor of the Aztecs, dined, he took no other beverage than chocolate, served in a golden goblet. Flavoured with vanilla or other spices, his chocolate was whipped into a froth that dissolved in the mouth. It is reported that no fewer than 50 portions each day may have been consumed by Moctezuma II, and 2000 more by the nobles of his court.[PARAGRAPH:1]The drink consisted of water, cocoa, corn, vanilla, cayenne pepper and a little salt and tasted much more bitter than it does today.[PARAGRAPH:1]When the Spanish conquistadors conquered Mexico and subjugated the Aztecs, they found 25,000 hundredweight of cocoa in Montezuma's treasuries, which his officials had collected as a tax. An astronomically high sum - for comparison: a slave at that time cost just one hundred cocoa beans. At the European royal courts, cocoa was served as an exotic delicacy.[PARAGRAPH:1]The colonial masters soon had the "brown gold" grown and harvested by slaves in extensive plantations in the New World.</English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cocoa trees[COLOR_REVERT] grow in [LINK=FEATURE_JUNGLE]jungles[\LINK] on [LINK=TERRAIN_SAVANNAH]savannah[\LINK] or [LINK=TERRAIN_MARSH]marsh[\LINK] terrain.[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Cocoa is the dried and fully fermented fatty seed of the cacao tree, from which cocoa solids and cocoa butter are extracted. They are the basis of chocolate, as well as many Mesoamerican foods such as mole sauce and tejate.[PARAGRAPH:1]The cacao tree is native to the Americas. It may have originated in the foothills of the Andes in the Amazon and Orinoco basins of South America, current day Venezuela, where examples of wild cacao still can be found. It was first grown by the Olmecs by 1500 BC in Central America. Cocoa was an important trading commodity in pre-Columbian Mesoamerica.[PARAGRAPH:1]Among the Aztecs, the cacao plant was considered sacred, it was revered as a gift from the god Quetzalcoatl. The cocoa beans were used as an offering, as a means of payment and to prepare a potion.[PARAGRAPH:1]A Spanish soldier with Hernán Cortés in Mexico noticed that when Moctezuma II, Emperor of the Aztecs, dined, he took no other beverage than chocolate, served in a golden goblet. Flavoured with vanilla or other spices, his chocolate was whipped into a froth that dissolved in the mouth. It is reported that no fewer than 50 portions each day may have been consumed by Moctezuma II, and 2000 more by the nobles of his court.[PARAGRAPH:1]The drink consisted of water, cocoa, corn, vanilla, cayenne pepper and a little salt and tasted much more bitter than it does today.[PARAGRAPH:1]When the Spanish conquistadors conquered Mexico and subjugated the Aztecs, they found 25,000 hundredweight of cocoa in Montezuma's treasuries, which his officials had collected as a tax. An astronomically high sum - for comparison: a slave at that time cost just one hundred cocoa beans. At the European royal courts, cocoa was served as an exotic delicacy.[PARAGRAPH:1]The colonial masters soon had the "brown gold" grown and harvested by slaves in extensive plantations in the New World.</English>
         <French>[BOLD]Stratégie : [\BOLD][NEWLINE]Les [COLOR_HIGHLIGHT_TEXT]cacaoyers[COLOR_REVERT] poussent dans la [LINK=FEATURE_JUNGLE]jungle[\LINK] sur la [LINK=TERRAIN_SAVANNAH]savane[\LINK] ou les [LINK=TERRAIN_MARSH]marais[\LINK].[PARAGRAPH:2] [BOLD]Contexte : [\BOLD][NEWLINE]Le cacao (du nahuatl cacahuatl qui désigne les fèves du cacaoyer) est la graine grasse séchée et entièrement fermentée du cacaoyer, dont sont extraits les solides de cacao et le beurre de cacao. Ils constituent la base du chocolat, ainsi que de nombreux aliments méso-américains tels que la sauce mole et le tejate.[PARAGRAPH:1]Le cacaoyer est originaire des Amériques. Il pourrait être originaire des contreforts des Andes dans les bassins de l'Amazone et de l'Orénoque en Amérique du Sud, l'actuel Venezuela, où l'on trouve encore des exemples de cacao sauvage. Il a été cultivé pour la première fois par les Olmèques vers 1500 avant J.-C. en Amérique centrale. Le cacao était un produit commercial important dans la Méso-Amérique précolombienne.[PARAGRAPH:1]Chez les Aztèques, la plante de cacao était considérée comme sacrée, elle était vénérée comme un cadeau du dieu Quetzalcoatl. Les fèves de cacao étaient utilisées comme offrande, comme moyen de paiement et pour la préparation d'une potion.[PARAGRAPH:1]Un soldat espagnol accompagnant Hernán Cortés au Mexique a remarqué que lorsque Moctezuma II, empereur des Aztèques, dînait, il ne prenait pas d'autre boisson que du chocolat, servi dans une coupe en or. Parfumé à la vanille ou à d'autres épices, son chocolat était fouetté en une mousse qui se dissolvait dans la bouche. On rapporte que pas moins de 50 portions par jour auraient été consommées par Moctezuma II, et 2000 autres par les nobles de sa cour.[PARAGRAPH:1]La boisson était composée d'eau, de cacao, de maïs, de vanille, de poivre de Cayenne et d'un peu de sel et avait un goût beaucoup plus amer qu'aujourd'hui.[PARAGRAPH:1]Lorsque les conquistadors espagnols ont conquis le Mexique et soumis les Aztèques, ils ont trouvé 25 000 quintaux de cacao dans les coffres de Montezuma, que ses fonctionnaires avaient collectés à titre d'impôt. Une somme astronomique - à titre de comparaison : à l'époque, un esclave ne coûtait que cent fèves de cacao. Dans les cours royales européennes, le cacao était servi comme un mets exotique[PARAGRAPH:1]Les maîtres coloniaux ont rapidement fait cultiver et récolter cet "or brun" par des esclaves dans de vastes plantations du Nouveau Monde.</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kakaobäume[COLOR_REVERT] wachsen in [LINK=FEATURE_JUNGLE]Dschungel[\LINK] auf [LINK=TERRAIN_SAVANNAH]Savanne[\LINK] oder [LINK=TERRAIN_MARSH]Sumpfland[\LINK].[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1]Kakao ist der getrocknete und vollständig fermentierte Fettsamen des Kakaobaums, aus dem Kakaofeststoffe und Kakaobutter gewonnen werden. Sie sind die Grundlage für Schokolade sowie für viele mesoamerikanische Lebensmittel wie Maulwurfsauce und Tejate.[PARAGRAPH:1]Der Kakaobaum ist in Amerika heimisch. Wahrscheinlich stammt er aus den Ausläufern der Anden im Amazonas- und Orinoko-Becken Südamerikas, dem heutigen Venezuela, wo man noch heute wilden Kakao finden kann. Er wurde erstmals von den Olmeken um 1500 vor Christus in Mittelamerika angebaut. Kakao war ein wichtiges Handelsgut im präkolumbianischen Mesoamerika.[PARAGRAPH:1]Bei den Azteken galt die Kakaopflanze als heilig, sie wurde als Geschenk des Gottes Quetzalcoatl verehrt. Die Kakaobohnen wurden als Opfergabe verwendet, als Zahlungsmittel und zur Zubereitung eines Trankes.[PARAGRAPH:1]Ein spanischer Soldat, der Hernán Cortés in Mexiko begleitete, bemerkte, dass Moctezuma II, der Kaiser der Azteken, wenn er speiste, kein anderes Getränk als Schokolade zu sich nahm, die in einem goldenen Kelch serviert wurde. Mit Vanille oder anderen Gewürzen aromatisiert, wurde seine Schokolade zu einem Schaum aufgeschlagen, der sich im Mund auflöste. Es wird berichtet, dass nicht weniger als 50 Portionen pro Tag von Moctezuma II. konsumiert worden sein könnten, und 2000 weitere von den Adligen seines Hofes.[PARAGRAPH:1]Das Getränk bestand aus Wasser, Kakao, Mais, Vanille, Cayenne-Pfeffer und etwas Salz und schmeckte weitaus herber als heutzutage.[PARAGRAPH:1]Als die spanischen Konquistadoren Mexiko eroberten und die Azteken unterwarfen, fanden sie in den Schatzkammern Montezumas 25.000 Zentner Kakao, den seine Beamten als Steuer eingezogen hatten. Eine astronomisch hohe Summe - zum Vergleich: ein Sklave kostete zu dieser Zeit gerade einmal einhundert Kakaobohnen. An den europäischen Königshöfen wurde Kakao als exotische Delikatesse serviert.[PARAGRAPH:1]Die Kolonialherren ließen das "Braune Gold" in der Neuen Welt bald in ausgedehnten Plantagen von Sklaven anbauen und ernten.</German>
     </TEXT>
@@ -357,7 +357,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CARIBOU_PEDIA</Tag>
-        <English>The North American range of caribou extends from Alaska through the Yukon, the Northwest Territories and Nunavut into the boreal forest and south through the Canadian Rockies.[PARAGRAPH:1]Porcupine caribou and barren-ground caribou form large herds which undertake lengthy seasonal migrations from birthing grounds to feeding grounds in the tundra and taiga, some of the longest migrations of any mammal.[PARAGRAPH:1]Arctic people depend on caribou for food, clothing, and shelter.[PARAGRAPH:1]Woodland caribou swim high out of the water, unlike any other mammal, because their hollow, air-filled, quill-like hair acts as a supporting life jacket.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Caribou[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The North American range of caribou extends from Alaska through the Yukon, the Northwest Territories and Nunavut into the boreal forest and south through the Canadian Rockies.[PARAGRAPH:1]Porcupine caribou and barren-ground caribou form large herds which undertake lengthy seasonal migrations from birthing grounds to feeding grounds in the tundra and taiga, some of the longest migrations of any mammal.[PARAGRAPH:1]Arctic people depend on caribou for food, clothing, and shelter.[PARAGRAPH:1]Woodland caribou swim high out of the water, unlike any other mammal, because their hollow, air-filled, quill-like hair acts as a supporting life jacket.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Caribou[COLOR_REVERT] are </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Caribou[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -371,7 +371,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MOOSE_PEDIA</Tag>
-        <English>The moose is the largest and heaviest member of the deer family, standing two meters high at the shoulder and weighing up to 700 kilograms.[PARAGRAPH:1]It has distinctive broad palm-shaped antlers.[PARAGRAPH:1]Solitary animals, moose eat aquatic plants. On land they browse.[PARAGRAPH:1]The word "moose" is borrowed from the Algonquian language, first entering English in 1606.[PARAGRAPH:1]Birds, carnivores and rodents eat dropped antlers which are full of protein.[PARAGRAPH:1]In terms of raw numbers, moose attack more people than bears and wolves combined.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moose[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The moose is the largest and heaviest member of the deer family, standing two meters high at the shoulder and weighing up to 700 kilograms.[PARAGRAPH:1]It has distinctive broad palm-shaped antlers.[PARAGRAPH:1]Solitary animals, moose eat aquatic plants. On land they browse.[PARAGRAPH:1]The word "moose" is borrowed from the Algonquian language, first entering English in 1606.[PARAGRAPH:1]Birds, carnivores and rodents eat dropped antlers which are full of protein.[PARAGRAPH:1]In terms of raw numbers, moose attack more people than bears and wolves combined.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moose[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Elch[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -385,7 +385,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BIG_HORN_PEDIA</Tag>
-        <English>Bighorn sheep might weigh over 200 kilograms, of which massive curved horns are 14 kilograms.[PARAGRAPH:1]Bighorns inhabit alpine meadows, grassy mountain slopes, and foothill country near rugged, rocky cliffs and bluffs.[PARAGRAPH:1]They graze on grasses and browse shrubs, particularly in fall and winter, and seek minerals at natural salt licks.[PARAGRAPH:1]Their main predators are black bears, grizzlies, wolves, and especially mountain lions, which have the agility to prey on them in uneven, rocky habitats.[PARAGRAPH:1]Lewis and Clark recorded numerous sightings of bighorns in the journals of their exploration.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Big Horn Sheep[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Bighorn sheep might weigh over 200 kilograms, of which massive curved horns are 14 kilograms.[PARAGRAPH:1]Bighorns inhabit alpine meadows, grassy mountain slopes, and foothill country near rugged, rocky cliffs and bluffs.[PARAGRAPH:1]They graze on grasses and browse shrubs, particularly in fall and winter, and seek minerals at natural salt licks.[PARAGRAPH:1]Their main predators are black bears, grizzlies, wolves, and especially mountain lions, which have the agility to prey on them in uneven, rocky habitats.[PARAGRAPH:1]Lewis and Clark recorded numerous sightings of bighorns in the journals of their exploration.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Big Horn Sheep[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dickhornschaf[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -399,7 +399,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GOAT_PEDIA</Tag>
-        <English>The goat is one of the oldest domesticated animals.[PARAGRAPH:1]Archaeological evidence shows it domesticated in Iran 10,000 years ago. [PARAGRAPH:1]Goats have been used for milk, meat, fur, and skins across much of the world. [PARAGRAPH:1]Goats are naturally curious. They are also agile and well known for their ability to climb and balance in precarious places. This makes them the only ruminant to regularly climb trees.[PARAGRAPH:1]Using goats to clear land is sometimes known as conservation grazing.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ibex[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The goat is one of the oldest domesticated animals.[PARAGRAPH:1]Archaeological evidence shows it domesticated in Iran 10,000 years ago. [PARAGRAPH:1]Goats have been used for milk, meat, fur, and skins across much of the world. [PARAGRAPH:1]Goats are naturally curious. They are also agile and well known for their ability to climb and balance in precarious places. This makes them the only ruminant to regularly climb trees.[PARAGRAPH:1]Using goats to clear land is sometimes known as conservation grazing.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ibex[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Steinbock[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -413,7 +413,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MUSK_OX_PEDIA</Tag>
-        <English>The muskox is native to the Arctic. It's noted for its thick coat and for the strong odor emitted by males during the seasonal rut.[PARAGRAPH:1]Along with the bison and the pronghorn, the muskox was one of a few species of Pleistocene megafauna in North America to survive the Pleistocene/Holocene extinction event and live to the present day.[PARAGRAPH:1]The muskox survived the last glacial period by finding ice-free areas away from prehistoric people.[PARAGRAPH:1]Ancient muskox remains have never been found in eastern Canada, although the ecological conditions in the northern Labrador Peninsula are suitable for them.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Musk Ox[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The muskox is native to the Arctic. It's noted for its thick coat and for the strong odor emitted by males during the seasonal rut.[PARAGRAPH:1]Along with the bison and the pronghorn, the muskox was one of a few species of Pleistocene megafauna in North America to survive the Pleistocene/Holocene extinction event and live to the present day.[PARAGRAPH:1]The muskox survived the last glacial period by finding ice-free areas away from prehistoric people.[PARAGRAPH:1]Ancient muskox remains have never been found in eastern Canada, although the ecological conditions in the northern Labrador Peninsula are suitable for them.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Musk Ox[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moschusochse[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -427,7 +427,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_LLAMA_PEDIA</Tag>
-        <English>The llama is a domesticated South American type of camel, widely used as a meat and pack animal by Andean cultures since the Pre-Columbian era.[PARAGRAPH:1]They're social animals and live with others as a herd.[PARAGRAPH:1]Their wool is very soft.[PARAGRAPH:1]In the Inca Empire, llamas were the only beasts of burden, and many of the people dominated by the Inca had long traditions of llama herding.[PARAGRAPH:1]One of the main uses for llamas at the time of the Spanish conquest was to bring down ore from the mines in the mountains.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Llamas[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The llama is a domesticated South American type of camel, widely used as a meat and pack animal by Andean cultures since the Pre-Columbian era.[PARAGRAPH:1]They're social animals and live with others as a herd.[PARAGRAPH:1]Their wool is very soft.[PARAGRAPH:1]In the Inca Empire, llamas were the only beasts of burden, and many of the people dominated by the Inca had long traditions of llama herding.[PARAGRAPH:1]One of the main uses for llamas at the time of the Spanish conquest was to bring down ore from the mines in the mountains.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Llamas[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Llamas[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -441,7 +441,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BOOBY_PEDIA</Tag>
-        <English>Boobies are seabirds, related to gannets.[PARAGRAPH:1]The English name "booby" comes from the Spanish slang term bobo, meaning "stupid", since these tame birds had a habit of landing on board sailing ships, where they were easily captured and eaten.[PARAGRAPH:1]Boobies hunt fish by diving from a height into the sea and pursuing their prey underwater.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Boobies[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Boobies are seabirds, related to gannets.[PARAGRAPH:1]The English name "booby" comes from the Spanish slang term bobo, meaning "stupid", since these tame birds had a habit of landing on board sailing ships, where they were easily captured and eaten.[PARAGRAPH:1]Boobies hunt fish by diving from a height into the sea and pursuing their prey underwater.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Boobies[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tölpel[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -455,7 +455,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GULL_PEDIA</Tag>
-        <English>Gulls are ground-nesting carnivores which take live food or scavenge opportunistically.[PARAGRAPH:1]Gulls nest in large, densely packed, noisy colonies.[PARAGRAPH:1]Gulls have a worldwide cosmopolitan distribution. They breed on every continent, including the margins of Antarctica, and are found in the high Arctic as well.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Gulls[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Gulls are ground-nesting carnivores which take live food or scavenge opportunistically.[PARAGRAPH:1]Gulls nest in large, densely packed, noisy colonies.[PARAGRAPH:1]Gulls have a worldwide cosmopolitan distribution. They breed on every continent, including the margins of Antarctica, and are found in the high Arctic as well.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Gulls[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Möwen[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -469,7 +469,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_DUCK_PEDIA</Tag>
-        <English>Ducks are mostly aquatic birds, found in both fresh water and sea water.[PARAGRAPH:1]They're generally smaller and shorter-necked than swans and geese, which are also members of the same family.[PARAGRAPH:1]Humans have hunted ducks since prehistoric times. Excavations of middens in California dating to 7800 - 6400 BP have turned up bones of ducks.[PARAGRAPH:1]Ducks are also farmed for their meat, eggs and down.[PARAGRAPH:1]Of all animals, ducks attract the most humour and silliness. Richard Wiseman in a LaughLab experiment at the University of Hertfordshire, UK, concludes that, "If you're going to tell a joke involving an animal, make it a duck."[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ducks[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Ducks are mostly aquatic birds, found in both fresh water and sea water.[PARAGRAPH:1]They're generally smaller and shorter-necked than swans and geese, which are also members of the same family.[PARAGRAPH:1]Humans have hunted ducks since prehistoric times. Excavations of middens in California dating to 7800 - 6400 BP have turned up bones of ducks.[PARAGRAPH:1]Ducks are also farmed for their meat, eggs and down.[PARAGRAPH:1]Of all animals, ducks attract the most humour and silliness. Richard Wiseman in a LaughLab experiment at the University of Hertfordshire, UK, concludes that, "If you're going to tell a joke involving an animal, make it a duck."[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ducks[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Enten[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -483,7 +483,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_LOON_PEDIA</Tag>
-        <English>Loons are aquatic birds found in North America and northern Eurasia.[PARAGRAPH:1]Loons are excellent swimmers.[PARAGRAPH:1]In 2020, a necropsy of a bald eagle found floating on a Maine lake (beside the floating body of a loon chick) found that the eagle had been stabbed through the heart by an adult loon's beak.[PARAGRAPH:1]In Canada the coins include loons and dubloons.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Loons[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Loons are aquatic birds found in North America and northern Eurasia.[PARAGRAPH:1]Loons are excellent swimmers.[PARAGRAPH:1]In 2020, a necropsy of a bald eagle found floating on a Maine lake (beside the floating body of a loon chick) found that the eagle had been stabbed through the heart by an adult loon's beak.[PARAGRAPH:1]In Canada the coins include loons and dubloons.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Loons[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seetaucher[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -497,7 +497,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GOOSE_PEDIA</Tag>
-        <English>The Canada goose is a large aquatic bird.[PARAGRAPH:1]As a black goose it's in a different genera from domestic grey and white geese.[PARAGRAPH:1]Fairly tolerant of cold, as winter comes it migrates south in large V-shaped flocks.[PARAGRAPH:1]It's hunted and is an especially good source of fat. A single cooked goose will provide several bowls of grease.[PARAGRAPH:1]With its wing an adult goose can break a man's arm.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Canada Goose[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The Canada goose is a large aquatic bird.[PARAGRAPH:1]As a black goose it's in a different genera from domestic grey and white geese.[PARAGRAPH:1]Fairly tolerant of cold, as winter comes it migrates south in large V-shaped flocks.[PARAGRAPH:1]It's hunted and is an especially good source of fat. A single cooked goose will provide several bowls of grease.[PARAGRAPH:1]With its wing an adult goose can break a man's arm.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Canada Goose[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kanadagans[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -511,7 +511,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GUINEA_PIG_PEDIA</Tag>
-        <English>Guinea pigs are popular as pets and are tasty when fried or roasted. Like rabbits they are high in protein and low in cholesterol.[PARAGRAPH:1]They reproduce quickly.[PARAGRAPH:1]They’re small enough to be raised in towns.[PARAGRAPH:1]They’ve been used in scientific research since at least the 17th century.[PARAGRAPH:1]Guinea pigs are so entrenched in Peruvian culture that one famous painting of the Last Supper in the main cathedral in Cusco shows Christ and the twelve disciples dining on guinea pig.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Guinea Pig[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Guinea pigs are popular as pets and are tasty when fried or roasted. Like rabbits they are high in protein and low in cholesterol.[PARAGRAPH:1]They reproduce quickly.[PARAGRAPH:1]They’re small enough to be raised in towns.[PARAGRAPH:1]They’ve been used in scientific research since at least the 17th century.[PARAGRAPH:1]Guinea pigs are so entrenched in Peruvian culture that one famous painting of the Last Supper in the main cathedral in Cusco shows Christ and the twelve disciples dining on guinea pig.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Guinea Pig[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Meerschweinchen[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -525,7 +525,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PARROTS_PEDIA</Tag>
-        <English>There are 398 species of parrots, birds found mostly in tropical and subtropical regions.[PARAGRAPH:1]Many parrots are vividly coloured, and some are multi-coloured.[PARAGRAPH:1]Parrots, along with ravens, crows, jays, and magpies, are among the most intelligent birds, and the ability of some species to imitate human speech enhances their popularity as pets.[PARAGRAPH:1]Parrots invariably require an enormous amount of attention, care, and intellectual stimulation to thrive, akin to that required by a three-year-old child, which many people find themselves unable to provide in the long term.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Parrots[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]There are 398 species of parrots, birds found mostly in tropical and subtropical regions.[PARAGRAPH:1]Many parrots are vividly coloured, and some are multi-coloured.[PARAGRAPH:1]Parrots, along with ravens, crows, jays, and magpies, are among the most intelligent birds, and the ability of some species to imitate human speech enhances their popularity as pets.[PARAGRAPH:1]Parrots invariably require an enormous amount of attention, care, and intellectual stimulation to thrive, akin to that required by a three-year-old child, which many people find themselves unable to provide in the long term.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Parrots[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Papageien[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -539,7 +539,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TOUCAN_PEDIA</Tag>
-        <English>Toucans are arboreal birds, brightly marked, with large, often-colourful bills.[PARAGRAPH:1]Toucans are native to the tropics from southern Mexico, through Central America, into South America south to northern Argentina.[PARAGRAPH:1]Despite its size, the toucan's bill is very light, being composed of bone struts filled with spongy keratin.[PARAGRAPH:1]The largest toucans are generally purple, with touches of white, yellow, and scarlet, and black.[PARAGRAPH:1]Toucans mainly eat fruit.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Toucans[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Toucans are arboreal birds, brightly marked, with large, often-colourful bills.[PARAGRAPH:1]Toucans are native to the tropics from southern Mexico, through Central America, into South America south to northern Argentina.[PARAGRAPH:1]Despite its size, the toucan's bill is very light, being composed of bone struts filled with spongy keratin.[PARAGRAPH:1]The largest toucans are generally purple, with touches of white, yellow, and scarlet, and black.[PARAGRAPH:1]Toucans mainly eat fruit.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Toucans[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Toucane[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -553,7 +553,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CAPYBARA_PEDIA</Tag>
-        <English>The capybara is the largest living rodent, around a meter in length, with weight averaging 50 kilograms.[PARAGRAPH:1]They usually live in groups of 10–20 individuals.[PARAGRAPH:1]The capybara is not a threatened species and it is hunted for its meat and hide and also for grease from its thick fatty skin.[PARAGRAPH:1]Capybaras are superb swimmers and can hold their breath underwater for up to five minutes at a time.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Capybara[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The capybara is the largest living rodent, around a meter in length, with weight averaging 50 kilograms.[PARAGRAPH:1]They usually live in groups of 10–20 individuals.[PARAGRAPH:1]The capybara is not a threatened species and it is hunted for its meat and hide and also for grease from its thick fatty skin.[PARAGRAPH:1]Capybaras are superb swimmers and can hold their breath underwater for up to five minutes at a time.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Capybara[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wasserschwein[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -567,7 +567,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TAPIR_PEDIA</Tag>
-        <English>The tapir is a large, herbivorous mammal, similar in shape to a pig, with a short, prehensile nose trunk.[PARAGRAPH:1]They're about two meters long, weighing up to 300 kilograms.[PARAGRAPH:1]Adult tapirs are large enough to have few natural predators, and the thick skin on the backs of their necks helps to protect them from threats such as jaguars, crocodiles and anacondas.[PARAGRAPH:1]They're also able to run fairly quickly, considering their size and cumbersome appearance, finding shelter in the thick undergrowth of the forest or in water.[PARAGRAPH:1]Tapirs inhabit jungle and forest regions of South and Central America.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tapirs[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The tapir is a large, herbivorous mammal, similar in shape to a pig, with a short, prehensile nose trunk.[PARAGRAPH:1]They're about two meters long, weighing up to 300 kilograms.[PARAGRAPH:1]Adult tapirs are large enough to have few natural predators, and the thick skin on the backs of their necks helps to protect them from threats such as jaguars, crocodiles and anacondas.[PARAGRAPH:1]They're also able to run fairly quickly, considering their size and cumbersome appearance, finding shelter in the thick undergrowth of the forest or in water.[PARAGRAPH:1]Tapirs inhabit jungle and forest regions of South and Central America.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tapirs[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tapire[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -581,7 +581,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RABBIT_PEDIA</Tag>
-        <English>Rabbits are familiar throughout the world as a wild prey animal. They're also domesticated as livestock or pets.[PARAGRAPH:1]Rabbit fur, prized for its softness, can be found in a broad range of coat colors and patterns.[PARAGRAPH:1]Since speed and agility are a rabbit's main defenses against predators (including the swift fox), rabbits have large hind leg bones and well-developed musculature.[PARAGRAPH:1]Rabbit habitats include meadows, woods, forests, grasslands, deserts and wetlands.[PARAGRAPH:1]More than half the world's rabbit population is in North America.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rabbits[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Rabbits are familiar throughout the world as a wild prey animal. They're also domesticated as livestock or pets.[PARAGRAPH:1]Rabbit fur, prized for its softness, can be found in a broad range of coat colors and patterns.[PARAGRAPH:1]Since speed and agility are a rabbit's main defenses against predators (including the swift fox), rabbits have large hind leg bones and well-developed musculature.[PARAGRAPH:1]Rabbit habitats include meadows, woods, forests, grasslands, deserts and wetlands.[PARAGRAPH:1]More than half the world's rabbit population is in North America.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rabbits[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kaninchen[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -595,7 +595,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PIG_PEDIA</Tag>
-        <English>Pigs are native to the Eurasian and African continents, ranging from Europe to the Pacific islands.[PARAGRAPH:1]In the New World the peccary, a medium-sized pig-like mammal, lives wild in Central and South America, Trinidad in the Caribbean, and the southwestern area of North America.[PARAGRAPH:1]The domestic pig is among the world's most populous large mammals.[PARAGRAPH:1]Pigs are omnivores and can consume a wide range of food.[PARAGRAPH:1]Pigs are biologically similar to humans and are thus frequently used for human medical research.[PARAGRAPH:1]Apart from meat, pig skin is turned into leather, and their hairs are used to make brushes.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Pigs are native to the Eurasian and African continents, ranging from Europe to the Pacific islands.[PARAGRAPH:1]In the New World the peccary, a medium-sized pig-like mammal, lives wild in Central and South America, Trinidad in the Caribbean, and the southwestern area of North America.[PARAGRAPH:1]The domestic pig is among the world's most populous large mammals.[PARAGRAPH:1]Pigs are omnivores and can consume a wide range of food.[PARAGRAPH:1]Pigs are biologically similar to humans and are thus frequently used for human medical research.[PARAGRAPH:1]Apart from meat, pig skin is turned into leather, and their hairs are used to make brushes.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Schweine[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -609,7 +609,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CHICKEN_PEDIA</Tag>
-        <English>The chicken is domesticated from red junglefowl originally from Southeastern Asia.[PARAGRAPH:1]There are more chickens in the world than any other bird.[PARAGRAPH:1]Chickens are omnivores. In the wild, they often scratch at the soil to search for seeds, insects and even animals as large as lizards, small snakes or young mice.[PARAGRAPH:1]An unusual variety of chicken that has its origins in South America is the Araucana, bred in southern Chile by the Mapuche people. Araucanas lay blue-green eggs.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Chicken[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The chicken is domesticated from red junglefowl originally from Southeastern Asia.[PARAGRAPH:1]There are more chickens in the world than any other bird.[PARAGRAPH:1]Chickens are omnivores. In the wild, they often scratch at the soil to search for seeds, insects and even animals as large as lizards, small snakes or young mice.[PARAGRAPH:1]An unusual variety of chicken that has its origins in South America is the Araucana, bred in southern Chile by the Mapuche people. Araucanas lay blue-green eggs.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Chicken[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hühner[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -687,7 +687,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_POLAR_FOX_PEDIA</Tag>
-        <English>The Arctic fox, also known as the polar fox, is common throughout the Arctic regions of the Northern Hemisphere.[PARAGRAPH:1]It is well adapted to living in cold environments, and is best known for its thick, warm fur that is also used as camouflage. It has a large and very fluffy tail.[PARAGRAPH:1]The Arctic fox preys on many small creatures such as lemmings, voles, ringed seal pups, fish, waterfowl, and seabirds.[PARAGRAPH:1]Natural predators of the Arctic fox are golden eagles, arctic wolves, polar bears, wolverines, red foxes, gray wolves, and grizzly bears.[PARAGRAPH:1]It mostly inhabits tundra and pack ice, but is also present in Canadian boreal forests (northeastern Alberta, northern Saskatchewan, northern Manitoba, northern Ontario, northern Quebec, Newfoundland and Labrador) and the Kenai Peninsula in Alaska.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polar foxes[COLOR_REVERT]</English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The Arctic fox, also known as the polar fox, is common throughout the Arctic regions of the Northern Hemisphere.[PARAGRAPH:1]It is well adapted to living in cold environments, and is best known for its thick, warm fur that is also used as camouflage. It has a large and very fluffy tail.[PARAGRAPH:1]The Arctic fox preys on many small creatures such as lemmings, voles, ringed seal pups, fish, waterfowl, and seabirds.[PARAGRAPH:1]Natural predators of the Arctic fox are golden eagles, arctic wolves, polar bears, wolverines, red foxes, gray wolves, and grizzly bears.[PARAGRAPH:1]It mostly inhabits tundra and pack ice, but is also present in Canadian boreal forests (northeastern Alberta, northern Saskatchewan, northern Manitoba, northern Ontario, northern Quebec, Newfoundland and Labrador) and the Kenai Peninsula in Alaska.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polar foxes[COLOR_REVERT]</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polarfüchse[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -701,7 +701,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RED_FOX_PEDIA</Tag>
-        <English>The red fox is the largest of the true foxes.[PARAGRAPH:1]Its range has increased alongside human expansion.[PARAGRAPH:1]It colonised North America shortly after the Wisconsin glaciation. The cunning Fox is commonly found in Native American mythology, where it is portrayed as an almost constant companion to Coyote.[PARAGRAPH:1]Foxes primarily feed on small rodents, though they may also target rabbits, squirrels, game birds, reptiles, invertebrates and young ungulates.[PARAGRAPH:1]The red fox is one of the most important furbearing animals harvested for the fur trade.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Red foxes[COLOR_REVERT]</English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The red fox is the largest of the true foxes.[PARAGRAPH:1]Its range has increased alongside human expansion.[PARAGRAPH:1]It colonised North America shortly after the Wisconsin glaciation. The cunning Fox is commonly found in Native American mythology, where it is portrayed as an almost constant companion to Coyote.[PARAGRAPH:1]Foxes primarily feed on small rodents, though they may also target rabbits, squirrels, game birds, reptiles, invertebrates and young ungulates.[PARAGRAPH:1]The red fox is one of the most important furbearing animals harvested for the fur trade.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Red foxes[COLOR_REVERT]</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rotfüchse[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1338,7 +1338,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CACTUS_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cactus trees[COLOR_REVERT] can occur on all [LINK=TERRAIN_DESERT]desert[\LINK] plots.[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The cactus is a persistent, prickly shrub. The natural occurrence is limited to the American continent. There its distribution area extends from southern Canada to Patagonia in Argentina and Chile. The highest density of cactus is found near the tropic boundaries, Cancer (Mexico) in the north and Capricorn (Argentina/Bolivia) in the south.</English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cactus trees[COLOR_REVERT] can occur on all [LINK=TERRAIN_DESERT]desert[\LINK] plots.[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The cactus is a persistent, prickly shrub. The natural occurrence is limited to the American continent. There its distribution area extends from southern Canada to Patagonia in Argentina and Chile. The highest density of cactus is found near the tropic boundaries, Cancer (Mexico) in the north and Capricorn (Argentina/Bolivia) in the south.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]cactus[COLOR_REVERT] peuvent apparaître sur toutes les parcelles [LINK=TERRAIN_DESERT]Désert[\LINK][PARAGRAPH:2][BOLD]Contexte :[\BOLD][PARAGRAPH:1]Le cactus est un arbuste persistant et épineux. Sa présence naturelle est limitée au continent américain. Son aire de distribution s'y étend du sud du Canada à la Patagonie en Argentine et au Chili. La plus grande densité d'occurrences de cactus se trouve dans les zones autour du nord (Mexique) et du sud du Tropique du Cancer (Argentine/Bolivie).</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kakteen[COLOR_REVERT] können überall in der [LINK=TERRAIN_DESERT]Wüste[\LINK] vorkommen.[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1]Der Kaktus ist ein ausdauernder, stacheliger Strauch. Das natürliche Vorkommen ist auf den amerikanischen Kontinent beschränkt. Dort erstreckt sich ihr Verbreitungsgebiet vom südlichen Kanada bis nach Patagonien in Argentinien und Chile. Die größte Dichte an Kakteenvorkommen findet man in den Gebieten um den nördlichen (Mexiko) und südlichen Wendekreis (Argentinien/Bolivien).</German>
     </TEXT>
@@ -1353,7 +1353,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_VULTURE_PEDIA</Tag>
-        <English>A vulture scavenges on carrion. Several species have a good sense of smell, unusual for raptors, and are able to smell dead animals from great heights, up to a mile away.[PARAGRAPH:1]Vast numbers have been seen upon battlefields.[PARAGRAPH:1]Vultures appear in many Mesoamerican myths, legends, and fables, with many separate civilizations such as the Mayan and Aztec developing a range of stories around vultures.[PARAGRAPH:1]Vultures can safely digest putrid carcasses infected with botulinum toxin, hog cholera bacteria, and anthrax bacteria that would be lethal to other scavengers and remove these bacteria from the environment.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vultures[COLOR_REVERT]</English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]A vulture scavenges on carrion. Several species have a good sense of smell, unusual for raptors, and are able to smell dead animals from great heights, up to a mile away.[PARAGRAPH:1]Vast numbers have been seen upon battlefields.[PARAGRAPH:1]Vultures appear in many Mesoamerican myths, legends, and fables, with many separate civilizations such as the Mayan and Aztec developing a range of stories around vultures.[PARAGRAPH:1]Vultures can safely digest putrid carcasses infected with botulinum toxin, hog cholera bacteria, and anthrax bacteria that would be lethal to other scavengers and remove these bacteria from the environment.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vultures[COLOR_REVERT]</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Geier[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1367,7 +1367,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_IGUANA_PEDIA</Tag>
-        <English>The iguana is a herbivorous lizard native to tropical areas of Mexico, Central America, South America, and the Caribbean.[PARAGRAPH:1]The word "iguana" is derived from the original Taino name for the species, iwana.[PARAGRAPH:1]Iguanas have keen vision and can see shapes, shadows, colors, and movement at long distances.[PARAGRAPH:1]They're about a meter and a half, five feet, in length.[PARAGRAPH:1]Iguanas have historically featured in the culinary traditions of Mexico and Central America.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Iguana[COLOR_REVERT]</English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The iguana is a herbivorous lizard native to tropical areas of Mexico, Central America, South America, and the Caribbean.[PARAGRAPH:1]The word "iguana" is derived from the original Taino name for the species, iwana.[PARAGRAPH:1]Iguanas have keen vision and can see shapes, shadows, colors, and movement at long distances.[PARAGRAPH:1]They're about a meter and a half, five feet, in length.[PARAGRAPH:1]Iguanas have historically featured in the culinary traditions of Mexico and Central America.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Iguana[COLOR_REVERT]</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Iguana[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1627,7 +1627,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_FUR_SEAL_PEDIA</Tag>
-        <English>Fur seals are much more closely related to sea lions than true seals, and share with them external ears, relatively long and muscular foreflippers, and the ability to walk on all fours.[PARAGRAPH:1]They are marked by their dense underfur, which made them a long-time object of commercial hunting.[PARAGRAPH:1]When fur seals were hunted in the late 18th and early 19th centuries, they hauled out on remote islands where no predators were present. Hunters reported being able to club the unwary animals to death one after another, making the hunt profitable, though the price per seal skin was low.[PARAGRAPH:1]Colonies of fur seals can be seen from the coast of Peru north to California.[PARAGRAPH:1]South American adult fur seals feed almost exclusively on anchovies.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fur Seal[COLOR_REVERT]</English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Fur seals are much more closely related to sea lions than true seals, and share with them external ears, relatively long and muscular foreflippers, and the ability to walk on all fours.[PARAGRAPH:1]They are marked by their dense underfur, which made them a long-time object of commercial hunting.[PARAGRAPH:1]When fur seals were hunted in the late 18th and early 19th centuries, they hauled out on remote islands where no predators were present. Hunters reported being able to club the unwary animals to death one after another, making the hunt profitable, though the price per seal skin was low.[PARAGRAPH:1]Colonies of fur seals can be seen from the coast of Peru north to California.[PARAGRAPH:1]South American adult fur seals feed almost exclusively on anchovies.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fur Seal[COLOR_REVERT]</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seebär[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1656,7 +1656,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_WALRUSS_PEDIA</Tag>
-        <English>*[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Walrus[COLOR_REVERT] live along [LINK=TERRAIN_COAST]coasts[\LINK] and [COLOR_HIGHLIGHT_TEXT]fresh water lakes[COLOR_REVERT].[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Excessive hunting of seals and walrus started very soon after the discovery of the New World. High quality furs and the valuable ivory from walrus tusks made this a very profitable business. Their fat and meat were important Indigenous food sources. On southern coasts of the New World seals and walrus became extinct for centuries, returning to these areas only in the last few decades.</English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Walrus[COLOR_REVERT] live along [LINK=TERRAIN_COAST]coasts[\LINK] and [COLOR_HIGHLIGHT_TEXT]fresh water lakes[COLOR_REVERT].[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Excessive hunting of seals and walrus started very soon after the discovery of the New World. High quality furs and the valuable ivory from walrus tusks made this a very profitable business. Their fat and meat were important Indigenous food sources. On southern coasts of the New World seals and walrus became extinct for centuries, returning to these areas only in the last few decades.</English>
         <French>[TAB]La chasse aux phoques, traditionnelle ou commerciale, est pratiquée dans plusieurs pays, principalement au Canada, au Groenland et en Namibie, dans le but d'en récupérer principalement la fourrure mais aussi la viande, la graisse (ou l'huile) et les os.</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Walrösser[COLOR_REVERT] leben in seichten Gewässern, wie [LINK=TERRAIN_COAST]Küsten[\LINK] und gelegentlich auch [COLOR_HIGHLIGHT_TEXT]Frischwasserseen[COLOR_REVERT].[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1][COLOR_UNIT_TEXT]Walrösser[COLOR_REVERT] und [COLOR_UNIT_TEXT]Seelöwen[COLOR_REVERT] wurden schon sehr bald nach der Entdeckung der Neuen Welt exzessiv gejagt. Die teuren und extrem hochwertigen Felle und die sehr teuren Walross-Stosszähne, das Walross-Elfenbein, machten deren Jagd extrem lukrativ. Aber auch das Fleisch und die großen Fettmengen waren als Nahrung sehr geschätzt. An vielen Küsten der Neuen Welt wurden sie für Jahrhunderte ausgerottet und kehren erst in den letzten Jahrzehnten an manchen Stellen wieder zurück.</German>
     </TEXT>
@@ -1731,7 +1731,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SWEET_POTATO_PEDIA</Tag>
-        <English>Sweet potatoes, members of the morning glory family, grow mainly in the tropics.  They do not tolerate frost.[PARAGRAPH:1]The first Europeans to taste sweet potatoes were members of Christopher Columbus's expedition in 1492.[PARAGRAPH:1]Sweet potato leaves are edible and can be prepared like spinach or turnip greens.[PARAGRAPH:1]While sweet potato provides less edible energy and protein per unit weight than cereals, it has higher nutrient density.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sweet Potatoes[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Sweet potatoes, members of the morning glory family, grow mainly in the tropics.  They do not tolerate frost.[PARAGRAPH:1]The first Europeans to taste sweet potatoes were members of Christopher Columbus's expedition in 1492.[PARAGRAPH:1]Sweet potato leaves are edible and can be prepared like spinach or turnip greens.[PARAGRAPH:1]While sweet potato provides less edible energy and protein per unit weight than cereals, it has higher nutrient density.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sweet Potatoes[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Süßkratoffeln[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1745,7 +1745,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SQUASH_PEDIA</Tag>
-        <English>Squash is a traditional Indigenous food. It was domesticated early, followed by maize and then beans, becoming part of the Three Sisters agricultural system of companion planting.[PARAGRAPH:1]Archaeological investigations show domestication of squash going back over 8,000 years from the very southern parts of Canada down to Argentina and Chile.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Squash[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Squash is a traditional Indigenous food. It was domesticated early, followed by maize and then beans, becoming part of the Three Sisters agricultural system of companion planting.[PARAGRAPH:1]Archaeological investigations show domestication of squash going back over 8,000 years from the very southern parts of Canada down to Argentina and Chile.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Squash[COLOR_REVERT] </English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Zuchini[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1759,22 +1759,22 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_AVOCADO_PEDIA</Tag>
-        <English>Avocado is a central American tree producing a large berry with a single seed.[PARAGRAPH:1]It may have originated in the Tehuacan Valley in Mexico.[PARAGRAPH:1]It was widely cultivated before the arrival of Europeans, and was taken to Spain in 1601.[PARAGRAPH:1]Raw avocado is 73% water, 15% fat, 9% carbohydrates, and 2% protein, making it a good source of fat at a time when fat was still scarce.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Avocado Tree[COLOR_REVERT] </English>
-        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Avocado Baum[COLOR_REVERT]</German>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Avocado Trees[COLOR_REVERT] can be found in warm regions like prairies or shrubland. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Avocado is a central American tree producing a large berry with a single seed.[PARAGRAPH:1]It may have originated in the Tehuacan Valley in Mexico.[PARAGRAPH:1]It was widely cultivated before the arrival of Europeans, and was taken to Spain in 1601.[PARAGRAPH:1]Raw avocado is 73% water, 15% fat, 9% carbohydrates, and 2% protein, making it a good source of fat at a time when fat was still scarce.[PARAGRAPH:1]</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Avocado Bäume[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PRICKLY_PEAR</Tag>
-        <English>Prickly Pear</English>
+        <English>Prickly Pears</English>
         <German>
-            <Text>Feigenkaktus</Text>
+            <Text>Feigenkaktusse</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PRICKLY_PEAR_PEDIA</Tag>
-        <English>The prickly pear thrives in regions with mild winters having a prolonged dry spell followed by hot summers with occasional rain and low humidity.[PARAGRAPH:1]Rock iguanas and birds like to eat prickly pears.[PARAGRAPH:1]Shallow roots let the plant grow on mountain slopes.[PARAGRAPH:1]In Mexico, prickly pears are often used to make appetizers, soups, salads, entrees, vegetable dishes, breads, desserts, beverages, candy, jelly, and drinks.[PARAGRAPH:1]The insect from which [BOLD]cochineal dye[\BOLD] is made lives on prickly pears.[PARAGRAPH:1]Prickly pears began to be imported into Europe in the 1500s as a garden plant where they could be used for agricultural fencing.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Prickly Pear[COLOR_REVERT] </English>
-        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Feigenkaktus[COLOR_REVERT]</German>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Prickly Pears[COLOR_REVERT] can be found in desert regions. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The prickly pear thrives in regions with mild winters having a prolonged dry spell followed by hot summers with occasional rain and low humidity.[PARAGRAPH:1]Rock iguanas and birds like to eat prickly pears.[PARAGRAPH:1]Shallow roots let the plant grow on mountain slopes.[PARAGRAPH:1]In Mexico, prickly pears are often used to make appetizers, soups, salads, entrees, vegetable dishes, breads, desserts, beverages, candy, jelly, and drinks.[PARAGRAPH:1]The insect from which [BOLD]cochineal dye[\BOLD] is made lives on prickly pears.[PARAGRAPH:1]Prickly pears began to be imported into Europe in the 1500s as a garden plant where they could be used for agricultural fencing.</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Feigenkaktusse[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_APPLES</Tag>
@@ -1792,7 +1792,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_APPLES_PEDIA</Tag>
-        <English>Apples originated in Central Asia, where their wild ancestor is still found today. After being grown for thousands of years in Asia and Europe they were brought to North America by European colonists.[PARAGRAPH:1]They were especially popular for making cider.[PARAGRAPH:1]Johnny Appleseed was an American pioneer nurseryman who introduced apple trees to Pennsylvania, Ohio, Indiana, Illinois and Ontario, as well as the northern counties of present-day West Virginia. He became an American legend while still alive due to his leadership in conservation.[PARAGRAPH:1]Apples grow in [BOLD]temperate[\BOLD] climates.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Apple Trees[COLOR_REVERT] </English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Apple Trees[COLOR_REVERT] can be found in temperate regions, like grasslands and plains. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Apples originated in Central Asia, where their wild ancestor is still found today. After being grown for thousands of years in Asia and Europe they were brought to North America by European colonists.[PARAGRAPH:1]They were especially popular for making cider.[PARAGRAPH:1]Johnny Appleseed was an American pioneer nurseryman who introduced apple trees to Pennsylvania, Ohio, Indiana, Illinois and Ontario, as well as the northern counties of present-day West Virginia. He became an American legend while still alive due to his leadership in conservation.[PARAGRAPH:1]Apples grow in [BOLD]temperate[\BOLD] climates.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]pommiers[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Apfelbäume[COLOR_REVERT]</German>
     </TEXT>
@@ -1807,64 +1807,64 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CHERRIES_PEDIA</Tag>
-        <English>Cherries arrived in North America in 1639 in Brooklyn, New York (then called "New Netherland") when the region was under Dutch sovereignty.[PARAGRAPH:1]A cherry tree will take three to four years once it is planted in the orchard to produce its first crop of fruit, and seven years to attain full maturity. Hand picking is widely used for sweet as well as sour cherries to harvest the fruit to avoid damage to both fruit and trees.[PARAGRAPH:1]Cherry trees require a certain number of chilling hours each year to break dormancy and bloom and produce fruit. Because of this cold-weather requirement, cherries cannot grow in tropical climates.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cherry Trees[COLOR_REVERT] </English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cherry Trees[COLOR_REVERT] can be found in temperate regions, like grasslands and plains. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Cherries arrived in North America in 1639 in Brooklyn, New York (then called "New Netherland") when the region was under Dutch sovereignty.[PARAGRAPH:1]A cherry tree will take three to four years once it is planted in the orchard to produce its first crop of fruit, and seven years to attain full maturity. Hand picking is widely used for sweet as well as sour cherries to harvest the fruit to avoid damage to both fruit and trees.[PARAGRAPH:1]Cherry trees require a certain number of chilling hours each year to break dormancy and bloom and produce fruit. Because of this cold-weather requirement, cherries cannot grow in tropical climates.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kirschbäume[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PINE_APPLE</Tag>
-        <English>Pine Apple Tree</English>
+        <English>Pineapple Trees</English>
         <German>
-            <Text>Ananasbaum</Text>
+            <Text>Ananasbäume</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PINE_APPLE_PEDIA</Tag>
-        <English>The pineapple is indigenous to South America, where it has been cultivated for many centuries.[PARAGRAPH:1]The introduction of the pineapple to Europe in the 17th century made it a significant cultural icon of luxury.[PARAGRAPH:1]It is the third most important tropical fruit in world production.[PARAGRAPH:1]Archaeological evidence of cultivation goes back to 1200 BC in Peru and 200 BC in Mexico where it was cultivated by the Mayas and the Aztecs.[PARAGRAPH:1]Columbus brought the plant back to Spain and called it piña de Indes, meaning "pine of the Indians".[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pine Apple Tree[COLOR_REVERT] </English>
-        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ananasbaum[COLOR_REVERT]</German>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pineapple Trees[COLOR_REVERT] can be found in warm and tropical regions, like savannah or marsh. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The pineapple is indigenous to South America, where it has been cultivated for many centuries.[PARAGRAPH:1]The introduction of the pineapple to Europe in the 17th century made it a significant cultural icon of luxury.[PARAGRAPH:1]It is the third most important tropical fruit in world production.[PARAGRAPH:1]Archaeological evidence of cultivation goes back to 1200 BC in Peru and 200 BC in Mexico where it was cultivated by the Mayas and the Aztecs.[PARAGRAPH:1]Columbus brought the plant back to Spain and called it piña de Indes, meaning "pine of the Indians".</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ananasbäume[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PASSION_FRUIT</Tag>
-        <English>Passion Fruit Tree</English>
+        <English>Passionfruit Trees</English>
         <German>
-            <Text>Passionsfruchtbaum</Text>
+            <Text>Passionsfruchtbäume</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PASSION_FRUIT_PEDIA</Tag>
-        <English>Passion fruit is a vine native to southern Brazil through Paraguay and northern Argentina.[PARAGRAPH:1]It's cultivated commercially in tropical and subtropical areas for its sweet, seedy fruit.[PARAGRAPH:1]In a 50 gram amount (roughly the size of one fruit), fresh passion fruit contains 18% of the daily value of vitamin C, 21% dietary fiber, B vitamins riboflavin (5.5% DV) and niacin (5% DV), 6% iron and 5% phosphorus.[PARAGRAPH:1]It's popular for desserts and drinks.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Passion Fruit Tree[COLOR_REVERT] </English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Passionfruit Trees[COLOR_REVERT] can be found in warm and tropical regions, like savannah or marsh. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Passion fruit is a vine native to southern Brazil through Paraguay and northern Argentina.[PARAGRAPH:1]It's cultivated commercially in tropical and subtropical areas for its sweet, seedy fruit.[PARAGRAPH:1]In a 50 gram amount (roughly the size of one fruit), fresh passion fruit contains 18% of the daily value of vitamin C, 21% dietary fiber, B vitamins riboflavin (5.5% DV) and niacin (5% DV), 6% iron and 5% phosphorus.[PARAGRAPH:1]It's popular for desserts and drinks.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Passionsfruchtbaum[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GUAVA</Tag>
-        <English>Guava Tree</English>
+        <English>Guava Trees</English>
         <German>
-            <Text>Guavabaum</Text>
+            <Text>Guavabäume</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GUAVA_PEDIA</Tag>
-        <English>Guava is a fruit cultivated in many tropical and subtropical regions.[PARAGRAPH:1]Guavas are one of the few tropical fruits that can grow to fruiting size in pots indoors.[PARAGRAPH:1]When grown from seed, guava trees can bear fruit in two years, and can continue to do so for forty years.[PARAGRAPH:1]The popular beverage agua fresca is often made with guava.[PARAGRAPH:1]It also can be eaten raw, like an apple.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Guava Trees[COLOR_REVERT] </English>
-        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Guavabaum[COLOR_REVERT]</German>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Guava Trees[COLOR_REVERT] can be found in warm and tropical regions, like savannah or marsh. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Guava is a fruit cultivated in many tropical and subtropical regions.[PARAGRAPH:1]Guavas are one of the few tropical fruits that can grow to fruiting size in pots indoors.[PARAGRAPH:1]When grown from seed, guava trees can bear fruit in two years, and can continue to do so for forty years.[PARAGRAPH:1]The popular beverage agua fresca is often made with guava.[PARAGRAPH:1]It also can be eaten raw, like an apple.</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Guavabäume[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PAPAYA</Tag>
-        <English>Papaya Tree</English>
+        <English>Papaya Trees</English>
         <German>
-            <Text>Papayabaum</Text>
+            <Text>Papayabäume</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PAPAYA_PEDIA</Tag>
-        <English>Native to Mexico and northern South America,  papaya has become naturalized throughout the Caribbean Islands, Florida, Texas, California, Hawaii, and other tropical and subtropical regions of the world. It is, however, highly frost-sensitive.[PARAGRAPH:1]The unripe green fruit can be eaten cooked, but not raw due to its poisonous latex content.[PARAGRAPH:1]The ripe fruit of the papaya is usually eaten raw, without skin or seeds.[PARAGRAPH:1]In traditional medicine, papaya leaves have been used as a treatment for malaria.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Papaya Tree[COLOR_REVERT] </English>
-        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Papayabaum[COLOR_REVERT]</German>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Papaya Trees[COLOR_REVERT] can be found in warm and tropical regions, like savannah or marsh. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Native to Mexico and northern South America, papaya has become naturalized throughout the Caribbean Islands, Florida, Texas, California, Hawaii, and other tropical and subtropical regions of the world. It is, however, highly frost-sensitive.[PARAGRAPH:1]The unripe green fruit can be eaten cooked, but not raw due to its poisonous latex content.[PARAGRAPH:1]The ripe fruit of the papaya is usually eaten raw, without skin or seeds.[PARAGRAPH:1]In traditional medicine, papaya leaves have been used as a treatment for malaria.</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Papayabäume[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_LEMONS</Tag>
@@ -1875,15 +1875,14 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Limonenbaum</Text>
+            <Text>Limonenbäume</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_LEMONS_PEDIA</Tag>
-        <English>The lemon is a species of small evergreen tree.[PARAGRAPH:1]Lemon juice is about 5% to 6% citric acid, with a pH of around 2.2, giving it a sour taste.[PARAGRAPH:1]Lemons were introduced to the Americas in 1493 when Christopher Columbus brought lemon seeds to Hispaniola on his voyages.[PARAGRAPH:1]Spanish conquest throughout the New World helped spread lemon seeds. It was mainly used as an ornamental plant and for medicine.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lemon trees[COLOR_REVERT] </English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]tilleus[COLOR_REVERT]</French>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lemons[COLOR_REVERT] can be found in warm and tropical regions, like savannah or marsh. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The lemon is a species of small evergreen tree.[PARAGRAPH:1]Lemon juice is about 5% to 6% citric acid, with a pH of around 2.2, giving it a sour taste.[PARAGRAPH:1]Lemons were introduced to the Americas in 1493 when Christopher Columbus brought lemon seeds to Hispaniola on his voyages.[PARAGRAPH:1]Spanish conquest throughout the New World helped spread lemon seeds. It was mainly used as an ornamental plant and for medicine.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Limonenbäume[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1902,7 +1901,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TOMATO_PEDIA</Tag>
-        <English>Tomatoes originated in western South America and Central America.[PARAGRAPH:1]The Nahuatl word tomatl gave rise to the Spanish word tomate, from which the English word tomato derived.[PARAGRAPH:1]Its domestication and use as a cultivated food may have originated with the Indigenous peoples of Mexico.[PARAGRAPH:1]Aztecs used tomatoes in their cooking at the time of the Spanish conquest of the Aztec Empire. The Spanish then brought the plant to Europe. From Spain the tomato was introduced to other parts of the European-colonized world during the 16th century.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tomatos[COLOR_REVERT] </English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tomatos[COLOR_REVERT] can be grown in temperate and warm regions, like plains, prairies and graslands. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Tomatoes originated in western South America and Central America.[PARAGRAPH:1]The Nahuatl word tomatl gave rise to the Spanish word tomate, from which the English word tomato derived.[PARAGRAPH:1]Its domestication and use as a cultivated food may have originated with the Indigenous peoples of Mexico.[PARAGRAPH:1]Aztecs used tomatoes in their cooking at the time of the Spanish conquest of the Aztec Empire. The Spanish then brought the plant to Europe. From Spain the tomato was introduced to other parts of the European-colonized world during the 16th century.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]tomates[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tomaten[COLOR_REVERT]</German>
     </TEXT>
@@ -1922,7 +1921,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PEANUT_PEDIA</Tag>
-        <English>The peanut  is a legume grown mainly for its edible seeds.[PARAGRAPH:1]It's widely grown in the tropics and subtropics .[PARAGRAPH:1]Peanuts are valuable both as a grain legume and, due to their high oil content, as an oil crop.[PARAGRAPH:1]Cultivation was well-established in the Americas before the Spanish arrived. Conquistadors found the tlalcacahuatl (the plant's Nahuatl name) being offered for sale in the marketplace of Tenochtitlan.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Peanuts[COLOR_REVERT] </English>
+        <English>[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Peanuts[COLOR_REVERT] can be found in warm plain regions. Although edible they are an excellent cash crop. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]The peanut is a legume grown mainly for its edible seeds.[PARAGRAPH:1]It's widely grown in the tropics and subtropics .[PARAGRAPH:1]Peanuts are valuable both as a grain legume and, due to their high oil content, as an oil crop.[PARAGRAPH:1]Cultivation was well-established in the Americas before the Spanish arrived. Conquistadors found the tlalcacahuatl (the plant's Nahuatl name) being offered for sale in the marketplace of Tenochtitlan.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]Arachides[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Erdüsse[COLOR_REVERT]</German>
     </TEXT>
@@ -1937,7 +1936,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TUNDRA_BERRIES_PEDIA</Tag>
-        <English>Lingonberries are native to boreal forest and Arctic tundra throughout the Northern Hemisphere.[PARAGRAPH:1]They spread by underground stems to form dense clonal colonies. They're usually protected from severe cold by snow cover.[PARAGRAPH:1]The lingonberry is extremely hardy, tolerating temperatures as low as -40 degree C (which is -40 degree F) or lower, but grows poorly where summers are hot.[PARAGRAPH:1]Alaska natives mix the berries with rose hip pulp and sugar to make jam, cook the berries as a sauce, and store the berries for future use.[PARAGRAPH:1]The Haida people, Hesquiaht First Nation, Wuikinuxv and Tsimshian all use the berries as food.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tundra Berries[COLOR_REVERT] </English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tundraberries[COLOR_REVERT] can be found in cold norther regions like tundras and taigas. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Lingonberries are native to boreal forest and Arctic tundra throughout the Northern Hemisphere.[PARAGRAPH:1]They spread by underground stems to form dense clonal colonies. They're usually protected from severe cold by snow cover.[PARAGRAPH:1]The lingonberry is extremely hardy, tolerating temperatures as low as -40 degree C (which is -40 degree F) or lower, but grows poorly where summers are hot.[PARAGRAPH:1]Alaska natives mix the berries with rose hip pulp and sugar to make jam, cook the berries as a sauce, and store the berries for future use.[PARAGRAPH:1]The Haida people, Hesquiaht First Nation, Wuikinuxv and Tsimshian all use the berries as food.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tundrabeeren[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1951,7 +1950,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HUCKLE_BERRIES_PEDIA</Tag>
-        <English>From coastal Central California through Oregon to southern Washington and British Columbia, the red huckleberry is found in the maritime-influenced plant community.[PARAGRAPH:1]In the Pacific Northwest and mountains of Montana and Idaho, huckleberries grow in varied habitats, such as mid-alpine regions up to 11,500 feet (3,500 m) above sea level, mountain slopes, forests, or lake basins.[PARAGRAPH:1]The plant grows best in damp, acidic soil having volcanic origin, attaining under optimal conditions heights of 1.5 to 2 m (4.9 to 6.6 ft), usually ripening in mid-to-late summer or later at high elevations.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Huckleberries[COLOR_REVERT] </English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Huckleberries[COLOR_REVERT] can be found in temperate regions like graslands and stone steppes. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]From coastal Central California through Oregon to southern Washington and British Columbia, the red huckleberry is found in the maritime-influenced plant community.[PARAGRAPH:1]In the Pacific Northwest and mountains of Montana and Idaho, huckleberries grow in varied habitats, such as mid-alpine regions up to 11,500 feet (3,500 m) above sea level, mountain slopes, forests, or lake basins.[PARAGRAPH:1]The plant grows best in damp, acidic soil having volcanic origin, attaining under optimal conditions heights of 1.5 to 2 m (4.9 to 6.6 ft), usually ripening in mid-to-late summer or later at high elevations.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Heidelbeeren[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1965,7 +1964,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BLUE_BERRIES_PEDIA</Tag>
-        <English>Wild blueberries are native to North America. Canada consumed wild blueberries for millennia before North America was colonized by Europeans.[PARAGRAPH:1]Blueberry bushes typically bear fruit in the middle of the growing season: fruiting times are affected by local conditions such as [BOLD]climate, altitude and latitude[\BOLD], so the time of harvest in the northern hemisphere can vary from May to August.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blueberries[COLOR_REVERT] </English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blueberries[COLOR_REVERT] can be found in temperate regions like graslands and stone steppes. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Wild blueberries are native to North America. Canada consumed wild blueberries for millennia before North America was colonized by Europeans.[PARAGRAPH:1]Blueberry bushes typically bear fruit in the middle of the growing season: fruiting times are affected by local conditions such as [BOLD]climate, altitude and latitude[\BOLD], so the time of harvest in the northern hemisphere can vary from May to August.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blaubeeren[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1979,7 +1978,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CRAN_BERRIES_PEDIA</Tag>
-        <English>Cranberries, a group of evergreen dwarf shrubs, can be found in acidic bogs throughout the cooler regions of the Northern Hemisphere.[PARAGRAPH:1]In North America, the Narragansett people of the Algonquian nation in the regions of New England used cranberries in [BOLD]pemmican[\BOLD] for food and also for dye.[PARAGRAPH:1]In 1550 James White Norwood mentions Native Americans using cranberries. In James Rosier's book "The Land of Virginia" Europeans come ashore to be met by the local Indigenous people bearing bark cups full of cranberries.[PARAGRAPH:1]In 1663 the Pilgrim cookbook has a recipe for cranberry sauce.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cranberries[COLOR_REVERT] </English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cranberries[COLOR_REVERT] can  be found in cool regions like tundra or moist wetlands with ponds and moss. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Cranberries, a group of evergreen dwarf shrubs, can be found in acidic bogs throughout the cooler regions of the Northern Hemisphere.[PARAGRAPH:1]In North America, the Narragansett people of the Algonquian nation in the regions of New England used cranberries in [BOLD]pemmican[\BOLD] for food and also for dye.[PARAGRAPH:1]In 1550 James White Norwood mentions Native Americans using cranberries. In James Rosier's book "The Land of Virginia" Europeans come ashore to be met by the local Indigenous people bearing bark cups full of cranberries.[PARAGRAPH:1]In 1663 the Pilgrim cookbook has a recipe for cranberry sauce.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moosbeeren[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1998,8 +1997,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SHRIMP_PEDIA</Tag>
-        <English>Shrimp are swimming crustaceans with long narrow muscular abdomens and long antennae.[PARAGRAPH:1]Shrimp are an important food source for larger animals ranging from fish to whales.[PARAGRAPH:1]Shrimp are widespread, and can be found near the seafloor of most coasts and estuaries, as well as in rivers and lakes.[PARAGRAPH:1]In North America, Indigenous peoples of the Americas captured shrimp and other crustaceans in fishing weirs and traps made from branches and Spanish moss, or used nets woven with fibre beaten from plants. At the same time early European settlers, oblivious to the protein-rich coasts all about them, starved from lack of protein.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Shrimps[COLOR_REVERT] </English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]shrimps[COLOR_REVERT]</French>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Shrimps[COLOR_REVERT] are like fish an excellent source of food that can be found in boath coastal and ocean areas. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Shrimp are swimming crustaceans with long narrow muscular abdomens and long antennae.[PARAGRAPH:1]Shrimp are an important food source for larger animals ranging from fish to whales.[PARAGRAPH:1]Shrimp are widespread, and can be found near the seafloor of most coasts and estuaries, as well as in rivers and lakes.[PARAGRAPH:1]In North America, Indigenous peoples of the Americas captured shrimp and other crustaceans in fishing weirs and traps made from branches and Spanish moss, or used nets woven with fibre beaten from plants. At the same time early European settlers, oblivious to the protein-rich coasts all about them, starved from lack of protein.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Shrimps[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -2018,8 +2016,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RICE_PEDIA</Tag>
-        <English>Rice is the staple food of over half the world's population.[PARAGRAPH:1]The traditional method for cultivating rice is flooding the fields while, or after, setting the young seedlings. This simple method requires sound irrigation planning but reduces the growth of less robust weed and pest plants that have no submerged growth state, and deters vermin.[PARAGRAPH:2]Wild rice, manoomin, is not directly related to domesticated rice.[PARAGRAPH:1]Native Americans and others harvest wild rice by canoeing into a stand of plants, and bending the ripe grain heads with two small wooden poles/sticks called "knockers" or "flails", so as to thresh the seeds into the canoe.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rice[COLOR_REVERT] </English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]tilleus[COLOR_REVERT]</French>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cassava[COLOR_REVERT] can be found in wet tropical regions and is a great source of food. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Rice is the staple food of over half the world's population.[PARAGRAPH:1]The traditional method for cultivating rice is flooding the fields while, or after, setting the young seedlings. This simple method requires sound irrigation planning but reduces the growth of less robust weed and pest plants that have no submerged growth state, and deters vermin.[PARAGRAPH:2]Wild rice, manoomin, is not directly related to domesticated rice.[PARAGRAPH:1]Native Americans and others harvest wild rice by canoeing into a stand of plants, and bending the ripe grain heads with two small wooden poles/sticks called "knockers" or "flails", so as to thresh the seeds into the canoe.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Reis[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -2033,7 +2030,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CASSAVA_PEDIA</Tag>
-        <English>Cassava or yuca is a woody shrub native to South America where it is extensively cultivated as an annual crop in tropical and subtropical regions for its edible starchy tuberous root, a major source of carbohydrates.[PARAGRAPH:1]Cassava is the third-largest source of food carbohydrates in the tropics, after rice and maize.[PARAGRAPH:1]It must be properly prepared before consumption, as improper preparation of cassava can leave enough residual cyanide to cause [BOLD]acute cyanide intoxication.[\BOLD][PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cassava[COLOR_REVERT] </English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cassava[COLOR_REVERT] can be found in dry tropical regions and is a great source of food. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Cassava or yuca is a woody shrub native to South America where it is extensively cultivated as an annual crop in tropical and subtropical regions for its edible starchy tuberous root, a major source of carbohydrates.[PARAGRAPH:1]Cassava is the third-largest source of food carbohydrates in the tropics, after rice and maize.[PARAGRAPH:1]It must be properly prepared before consumption, as improper preparation of cassava can leave enough residual cyanide to cause [BOLD]acute cyanide intoxication.[\BOLD]</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cassava[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -2047,7 +2044,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BEANS_PEDIA</Tag>
-        <English>Beans are one of the longest-cultivated plants.[PARAGRAPH:1]In the New World, many tribes grew beans together with maize (corn), and squash.[PARAGRAPH:1]The corn would not be planted in rows as is done by European agriculture, but in a checkerboard/hex fashion across a field, in separate patches of one to six stalks each. Beans would be planted around the base of the developing stalks, and would vine their way up as the stalks grew.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Beans[COLOR_REVERT] </English>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Beans[COLOR_REVERT] can be found in temperate to warm regions like e.g. graslands or plains. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Beans are one of the longest-cultivated plants.[PARAGRAPH:1]In the New World, many tribes grew beans together with maize (corn), and squash.[PARAGRAPH:1]The corn would not be planted in rows as is done by European agriculture, but in a checkerboard/hex fashion across a field, in separate patches of one to six stalks each. Beans would be planted around the base of the developing stalks, and would vine their way up as the stalks grew.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bohnen[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -2066,8 +2063,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MUSHROOMS_PEDIA</Tag>
-        <English>A mushroom is the fleshy, spore-bearing fruiting body of a fungus, typically produced above ground, on soil, or on its food source.[PARAGRAPH:1]Traditional methods for identification have developed into a fine art harking back to medieval times. Separating edible from poisonous species requires meticulous attention to detail; there is no single trait by which all toxic mushrooms can be identified, nor one by which all edible mushrooms can be identified.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mushrooms[COLOR_REVERT] </English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]champignons[COLOR_REVERT]</French>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mushrooms[COLOR_REVERT] can mostly be found in temperate but moist regions like e.g. wetlands and sometimes also in temperate forrest. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]A mushroom is the fleshy, spore-bearing fruiting body of a fungus, typically produced above ground, on soil, or on its food source.[PARAGRAPH:1]Traditional methods for identification have developed into a fine art harking back to medieval times. Separating edible from poisonous species requires meticulous attention to detail; there is no single trait by which all toxic mushrooms can be identified, nor one by which all edible mushrooms can be identified.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pilze[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -2096,8 +2092,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BEE_HIVE_PEDIA</Tag>
-        <English>Bees produce honey from floral nectar.[PARAGRAPH:1]In the hive bees store honey in wax structures called honeycombs.[PARAGRAPH:1]Most microorganisms do not grow in honey, so sealed honey does not spoil, even after thousands of years.[PARAGRAPH:1]Possibly the world's oldest fermented beverage, dating from 9,000 years ago, mead is made by adding yeast to honey-water and fermenting it for weeks or months.[PARAGRAPH:1]One hundred grams of honey provides about 1,270 kJ (304 kcal) of energy.[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bee Hive[COLOR_REVERT] </English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]Ruches d'abeille[COLOR_REVERT]</French>
+        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bee Hive[COLOR_REVERT] can be found in both temperate forests as well as tropical jungles. They are a source of food and also provide a bit of health to the city if worked. [PARAGRAPH:2][BOLD]Background:[\BOLD][PARAGRAPH:1]Bees produce honey from floral nectar.[PARAGRAPH:1]In the hive bees store honey in wax structures called honeycombs.[PARAGRAPH:1]Most microorganisms do not grow in honey, so sealed honey does not spoil, even after thousands of years.[PARAGRAPH:1]Possibly the world's oldest fermented beverage, dating from 9,000 years ago, mead is made by adding yeast to honey-water and fermenting it for weeks or months.[PARAGRAPH:1]One hundred grams of honey provides about 1,270 kJ (304 kcal) of energy.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bienenstöcke[COLOR_REVERT]</German>
     </TEXT>
 </Civ4GameText>
