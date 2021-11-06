@@ -401,18 +401,22 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 		}
 		break;
 
-	case BUTTONPOPUP_CHOOSE_YIELD_BUILD:
-		if (pPopupReturn->getButtonClicked() >= GC.getNumUnitInfos())
+// Ramstormp, WtP, Add Examine Settlement option to the no longer lacking yields for building production popup - START 
+		iExamineCityID = 0;
+		iExamineCityID = std::max(iExamineCityID, GC.getNumUnitInfos());
+		iExamineCityID = std::max(iExamineCityID, GC.getNumBuildingInfos());
+
+		if (pPopupReturn->getButtonClicked() == iExamineCityID)
 		{
-			BuildingTypes eBuilding = (BuildingTypes) (pPopupReturn->getButtonClicked() - GC.getNumUnitInfos());
-			gDLL->sendDoTask(info.getData1(), TASK_PUSH_CONSTRUCT_BUILDING, eBuilding, -1, false, false, false, false);
+			CvCity* pCity = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCity(info.getData1());
+			if (pCity != NULL)
+			{
+				gDLL->getInterfaceIFace()->selectCity(pCity, true);
+			}
 		}
-		else if (pPopupReturn->getButtonClicked() >= 0)
-		{
-			UnitTypes eUnit = (UnitTypes) pPopupReturn->getButtonClicked();
-			gDLL->sendDoTask(info.getData1(), TASK_PUSH_TRAIN_UNIT, eUnit, NO_UNITAI, false, false, false, false);
-		}
-		break;
+
+		else if (pPopupReturn->getButtonClicked() >= GC.getNumUnitInfos())
+// Ramstormp - END
 
 	case BUTTONPOPUP_CHOOSE_EDUCATION:
 		if (pPopupReturn->getButtonClicked() == GC.getNumUnitInfos())
