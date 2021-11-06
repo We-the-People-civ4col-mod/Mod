@@ -395,6 +395,7 @@ void CyEnumsPythonInterface()
 		.value("TERRAIN_LAKE", TERRAIN_LAKE)
 		.value("TERRAIN_ICE_LAKE", TERRAIN_ICE_LAKE)
 		.value("NO_TERRAIN", NO_TERRAIN)
+		.value("NUM_TERRAIN_TYPES", NUM_TERRAIN_TYPES)
 		;
 	python::enum_<PlotTypes>("PlotTypes")
 		.value("NO_PLOT", NO_PLOT)
