@@ -1026,16 +1026,16 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BOG_ORE</Tag>
-        <English>Bog Ore Deposit</English>
+        <English>Ironstone</English>
         <German>
-            <Text>Eisenerz</Text>
+            <Text>Raseneisenstein</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BOG_ORE_PEDIA</Tag>
-        <English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bog ore deposit[COLOR_REVERT]</English>
+        <English>Ironstone, though widespread is a limited source of iron. It occurs as rock fragments with high metal content in groundwater soils ranging from silt to gravel.[PARAGRAPH:1]In Europe from the 15th century up to the Second World War ironstone was used for iron production in the absence of richer iron ore.[PARAGRAPH:1][BOLD]Strategy:[\BOLD][COLOR_HIGHLIGHT_TEXT]Ironstone[COLOR_REVERT]</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moorerz[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
