@@ -56,7 +56,7 @@
             <Type>ART_DEF_UNIT_COLONIST</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
-            <fScale>0.54</fScale>
+            <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Free_Colonist/Free_Colonist.nif</NIF>
             <KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
@@ -73,7 +73,7 @@
             <Type>ART_DEF_UNIT_CITY_FOUNDER</Type>
             <Button>,Art/colonization_atlas_units.dds,4,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/CM_city_founder.dds</FullLengthIcon>
-            <fScale>0.54</fScale>
+            <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/settler/city_founder/greatmerchantancient.nif</NIF>
             <KFM>Art/Units/settler/city_founder/greatmerchantancient.kfm</KFM>
@@ -90,7 +90,7 @@
             <Type>ART_DEF_UNIT_EXPERIENCED_SETTLER</Type>
             <Button>,Art/colonization_atlas_units.dds,5,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/experienced_settler.dds</FullLengthIcon>
-            <fScale>0.54</fScale>
+            <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/settler/experienced_settler/Free_Colonist.nif</NIF>
             <KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
@@ -124,7 +124,7 @@
             <Type>ART_DEF_UNIT_COLONIST_FEMALE</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>
-            <fScale>0.50</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/settler_woman/Expert_Sugar_Planter.nif</NIF>
             <KFM>Art/Units/Expert_Sugar_Planter/Expert_Sugar_Planter.kfm</KFM>
@@ -226,7 +226,7 @@
             <Type>ART_DEF_UNIT_RED_PEPPER_PLANTER</Type>
             <Button>,Art/colonization_atlas_units.dds,2,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/red_pepper_planter.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Red_Pepper_Planter/Expert_Sugar_Planter.nif</NIF>
             <KFM>Art/Units/Settler/Expert_Red_Pepper_Planter/Expert_Sugar_Planter.kfm</KFM>
@@ -311,7 +311,7 @@
             <Type>ART_DEF_UNIT_WINE_MAKER</Type>
             <Button>,Art/colonization_atlas_units.dds,5,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/wine_maker.dds</FullLengthIcon>
-            <fScale>0.50</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.85</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Vintager/master_distiller.nif</NIF>
             <KFM>Art/Units/Settler/Master_Vintager/master_distiller.kfm</KFM>
@@ -328,7 +328,7 @@
             <Type>ART_DEF_UNIT_BREWER</Type>
             <Button>,Art/colonization_atlas_units.dds,1,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/alemaker.dds</FullLengthIcon>
-            <fScale>0.50</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.85</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Brewer/Master_Distiller.nif</NIF>
             <KFM>Art/Units/Settler/Master_Brewer/Master_Distiller.kfm</KFM>
@@ -362,7 +362,7 @@
             <Type>ART_DEF_UNIT_FARMER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,2,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Farmer.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Expert_Farmer/Expert_Farmer.nif</NIF>
             <KFM>Art/Units/Expert_Farmer/Expert_Farmer.kfm</KFM>
@@ -379,7 +379,7 @@
             <Type>ART_DEF_UNIT_FISHERMAN</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Fisherman.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Expert_Fisherman/Expert_Fisherman.nif</NIF>
             <KFM>Art/Units/Expert_Fisherman/Expert_Fisherman.kfm</KFM>
@@ -396,7 +396,7 @@
             <Type>ART_DEF_UNIT_PEARLS_HUNTER</Type>
             <Button>,Art/colonization_atlas_units.dds,2,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Pearls_Hunter.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Pearls_Hunter/Expert_Cotton_Planter.nif</NIF>
             <KFM>Art/Units/Settler/Expert_Pearls_Hunter/Expert_Cotton_Planter.kfm</KFM>
@@ -413,7 +413,7 @@
             <Type>ART_DEF_UNIT_BLACKSMITH</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,2,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Blacksmith.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Master_Blacksmith/Master_Blacksmith.nif</NIF>
             <KFM>Art/Units/Master_Blacksmith/Master_Blacksmith.kfm</KFM>
@@ -430,7 +430,7 @@
             <Type>ART_DEF_UNIT_GUNSMITH</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/MasterGunsmith.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Master_Gunsmith/Master_Gunsmith.nif</NIF>
             <KFM>Art/Units/Master_Gunsmith/Master_Gunsmith.kfm</KFM>
@@ -447,7 +447,7 @@
             <Type>ART_DEF_UNIT_DISTILLER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Distiller.dds</FullLengthIcon>
-            <fScale>0.40</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Master_Distiller/Master_Distiller.nif</NIF>
             <KFM>Art/Units/Master_Distiller/Master_Distiller.kfm</KFM>
@@ -464,7 +464,7 @@
             <Type>ART_DEF_UNIT_WEAVER</Type>
             <Button>,Art/colonization_atlas_units.dds,5,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/female_weaver.dds</FullLengthIcon>
-            <fScale>0.52</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/units/Settler/Female Weaver/settler_female.nif</NIF>
             <KFM>Art/units/Settler/Female Weaver/settler_female.kfm</KFM>
@@ -483,7 +483,7 @@
             <Type>ART_DEF_UNIT_DYER</Type>
             <Button>,Art/colonization_atlas_units.dds,1,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Dyer.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Settler/Dyer/Master_Weaver.nif</NIF>
             <KFM>Art/Units/Master_Weaver/Master_Weaver.kfm</KFM>
@@ -500,7 +500,7 @@
             <Type>ART_DEF_UNIT_TOBACCONIST</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Tobacconist.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Master_Tobacconist/Master_Tobacconist.nif</NIF>
             <KFM>Art/Units/Master_Tobacconist/Master_Tobacconist.kfm</KFM>
@@ -517,7 +517,7 @@
             <Type>ART_DEF_UNIT_SAILCLOTH_MAKER</Type>
             <Button>,Art/colonization_atlas_units.dds,2,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/sailcloth_maker.dds</FullLengthIcon>
-            <fScale>0.50</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Settler/Sailcloth_Maker/Imperial_Soldier.nif</NIF>
             <KFM>Art/Units/Settler/Sailcloth_Maker/Imperial_Soldier.kfm</KFM>
@@ -551,7 +551,7 @@
             <Type>ART_DEF_UNIT_FUR_TRADER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Fur_Trader.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Master_Fur_Trader/Master_Fur_Trader.nif</NIF>
             <KFM>Art/Units/Master_Fur_Trader/Master_Fur_Trader.kfm</KFM>
@@ -585,7 +585,7 @@
             <Type>ART_DEF_UNIT_CARPENTER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Carpenter.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Carpenter/Master_Carpenter.nif</NIF>
             <KFM>Art/Units/Settler/Master_Carpenter/Master_Carpenter.kfm</KFM>
@@ -602,7 +602,7 @@
             <Type>ART_DEF_UNIT_COTTON_PLANTER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_CottonPlanter.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Expert_Cotton_Planter/Expert_Cotton_Planter.nif</NIF>
             <KFM>Art/Units/Expert_Cotton_Planter/Expert_Cotton_Planter.kfm</KFM>
@@ -619,7 +619,7 @@
             <Type>ART_DEF_UNIT_INDIGO_PLANTER</Type>
             <Button>,Art/colonization_atlas_units.dds,6,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Indigo_Planter.dds</FullLengthIcon>
-            <fScale>0.40</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Indigo_Planter/Expert_Indigo_Planter.nif</NIF>
             <KFM>Art/Units/Expert_Sugar_Planter/Expert_Sugar_Planter.kfm</KFM>
@@ -636,7 +636,7 @@
             <Type>ART_DEF_UNIT_FUR_TRAPPER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Trapper.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Expert_Trapper/Expert_Trapper.nif</NIF>
             <KFM>Art/Units/Expert_Trapper/Expert_Trapper.kfm</KFM>
@@ -653,7 +653,7 @@
             <Type>ART_DEF_UNIT_HUNTER</Type>
             <Button>,Art/colonization_atlas_units.dds,5,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Hunter.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Hunter/Native_Musketman.nif</NIF>
             <KFM>Art/Units/Settler/Expert_Hunter/Native_Musketman.kfm</KFM>
@@ -670,7 +670,7 @@
             <Type>ART_DEF_UNIT_SEALS_HUNTER</Type>
             <Button>,Art/colonization_atlas_units.dds,3,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Seals_Hunter.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Seals_Hunter/Native_Musketman.nif</NIF>
             <KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
@@ -721,7 +721,7 @@
             <Type>ART_DEF_UNIT_RANCHER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Rancher.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Expert_Rancher/Expert_Rancher.nif</NIF>
             <KFM>Art/Units/Expert_Rancher/Expert_Rancher.kfm</KFM>
@@ -755,7 +755,7 @@
             <Type>ART_DEF_UNIT_SUGAR_PLANTER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_SugarPlanter.dds</FullLengthIcon>
-            <fScale>0.45</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Expert_Sugar_Planter/Expert_Sugar_Planter.nif</NIF>
             <KFM>Art/Units/Expert_Sugar_Planter/Expert_Sugar_Planter.kfm</KFM>
@@ -774,8 +774,8 @@
             <Type>ART_DEF_UNIT_TOBACCO_PLANTER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_TobaccoPlanter.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
-            <fInterfaceScale>1.0</fInterfaceScale>
+            <fScale>0.48</fScale>
+            <fInterfaceScale>0.9</fInterfaceScale>
             <NIF>Art/Units/Expert_Tobacco_Planter/Expert_Tobacco_Planter.nif</NIF>
             <KFM>Art/Units/Expert_Tobacco_Planter/Expert_Tobacco_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -808,7 +808,7 @@
             <Type>ART_DEF_UNIT_COCOA_PLANTER</Type>
             <Button>,Art/colonization_atlas_units.dds,3,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Cocoa_Planter.dds</FullLengthIcon>
-            <fScale>0.42</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/units/Settler/Expert_Cocoa_Planter/Expert_Sugar_Planter.nif</NIF>
             <KFM>Art/units/Settler/Expert_Cocoa_Planter/Expert_Sugar_Planter.kfm</KFM>
@@ -827,7 +827,7 @@
             <Type>ART_DEF_UNIT_COCA_COLLECTOR</Type>
             <Button>,Art/colonization_atlas_units.dds,2,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/expert_coca_collector.dds</FullLengthIcon>
-            <fScale>0.42</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/units/Settler/Expert_Coca_Collector/Expert_Sugar_Planter.nif</NIF>
             <KFM>Art/units/Settler/Expert_Cocoa_Planter/Expert_Sugar_Planter.kfm</KFM>
@@ -880,7 +880,7 @@
             <Type>ART_DEF_UNIT_WHALE_OIL_COOKER</Type>
             <Button>,Art/colonization_atlas_units.dds,4,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/WhaleOil_Cook.dds</FullLengthIcon>
-            <fScale>0.40</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/units/Settler/WhaleOil_Cook/Whale_Oil_Cook1.nif</NIF>
             <KFM>Art/units/Settler/WhaleOil_Cook/Whale_Oil_Cook1.kfm</KFM>
@@ -897,7 +897,7 @@
             <Type>ART_DEF_UNIT_STATESMAN</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Elder_Statesman.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Elder_Statesman/Elder_Statesman.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
@@ -914,7 +914,7 @@
             <Type>ART_DEF_UNIT_EMIGRANT</Type>
             <Button>,Art/colonization_atlas_units.dds,3,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/emigrant.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Settler/european_emigrant/Elder_Statesman.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
@@ -931,7 +931,7 @@
             <Type>ART_DEF_UNIT_NOBLE</Type>
             <Button>,Art/colonization_atlas_units.dds,7,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/noble.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Settler/noble/Elder_Statesman.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
@@ -948,7 +948,7 @@
             <Type>ART_DEF_UNIT_GOVERNOR</Type>
             <Button>,Art/colonization_atlas_units.dds,8,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Governor.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Settler/Governor/Elder_Statesman.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
@@ -982,7 +982,7 @@
             <Type>ART_DEF_UNIT_BISHOP</Type>
             <Button>,Art/colonization_atlas_units.dds,7,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/bishop.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Settler/Bishop/christianmissionary.nif</NIF>
             <KFM>Art/Units/Settler/Bishop/christianmissionary.kfm</KFM>
@@ -1016,7 +1016,7 @@
             <Type>ART_DEF_UNIT_MISSIONARY_PROT</Type>
             <Button>,Art/colonization_atlas_units.dds,8,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Protestant.dds</FullLengthIcon>
-            <fScale>0.43</fScale>
+            <fScale>0.44</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Settler/Protestant_Missionary/Jesuit_Missionary.nif</NIF>
             <KFM>Art/Units/Jesuit_Missionary/Jesuit_Missionary.kfm</KFM>
@@ -1067,7 +1067,7 @@
             <Type>ART_DEF_UNIT_FAILED_MISSIONARY</Type>
             <Button>,Art/colonization_atlas_units.dds,6,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Failed_Missionary.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.43</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Settler/Failed_Missionary/Failed_Missionary.nif</NIF>
             <KFM>Art/Units/Jesuit_Missionary/Jesuit_Missionary.kfm</KFM>
@@ -1101,7 +1101,7 @@
             <Type>ART_DEF_UNIT_EXPERT_TRADER</Type>
             <Button>,Art/colonization_atlas_units.dds,5,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/expert_trader.dds</FullLengthIcon>
-            <fScale>0.50</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.85</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Trader/master_distiller.nif</NIF>
             <KFM>Art/Units/Settler/profession_trader/master_distiller.kfm</KFM>
@@ -1135,7 +1135,7 @@
             <Type>ART_DEF_UNIT_PREACHER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/FirebrandPreacher.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Firebrand_Preacher/Firebrand_Preacher.nif</NIF>
             <KFM>Art/Units/Firebrand_Preacher/Firebrand_Preacher.kfm</KFM>
@@ -1152,7 +1152,7 @@
             <Type>ART_DEF_UNIT_CATHOLIC_PRIEST</Type>
             <Button>,Art/colonization_atlas_units.dds,8,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/catholic_priest.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.9</fInterfaceScale>
             <NIF>Art/Units/Settler/catholic_priest/christianmissionary.nif</NIF>
             <KFM>Art/Units/Settler/catholic_priest/christianmissionary.kfm</KFM>
@@ -1169,7 +1169,7 @@
             <Type>ART_DEF_UNIT_RUSSIAN_PRIEST</Type>
             <Button>,Art/colonization_atlas_units.dds,7,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/CM_Russian_bishop.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Settler/Russian_Orthodox_Bishop/christianmissionary.nif</NIF>
             <KFM>Art/Units/Settler/Russian_Orthodox_Bishop/christianmissionary.kfm</KFM>
@@ -3048,7 +3048,7 @@
             <Type>ART_DEF_UNIT_GREAT_NATIVE_GENERAL</Type>
             <Button>,Art/colonization_atlas_natives.dds,6,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Great_General.dds</FullLengthIcon>
-            <fScale>0.45</fScale>
+            <fScale>0.50</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Native_Nations/NativeAmerica_General/warlord_ancient.nif</NIF>
             <KFM>Art/Units/Native_Nations/NativeAmerica_General/warlord_ancient.kfm</KFM>
@@ -9734,7 +9734,7 @@
             <Type>ART_DEF_UNIT_PIONEER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Pioneer_no_tools.dds</FullLengthIcon>
-            <fScale>0.50</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Hardy_pioneer_NT/Hardy_pioneer_NT.nif</NIF>
             <KFM>Art/Units/Hardy_pioneer_NT/Hardy_pioneer_NT.kfm</KFM>
@@ -9751,7 +9751,7 @@
             <Type>ART_DEF_UNIT_PROFESSION_PIONEER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,11</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Pioneer.dds</FullLengthIcon>
-            <fScale>0.50</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Pioneer/Pioneer.nif</NIF>
             <KFM>Art/Units/Pioneer/Pioneer.kfm</KFM>
@@ -9768,7 +9768,7 @@
             <Type>ART_DEF_UNIT_PROFESSION_UNIT_PIONEER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Hardy_Pioneer.dds</FullLengthIcon>
-            <fScale>0.50</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Hardy_Pioneer/Hardy_Pioneer.nif</NIF>
             <KFM>Art/Units/Hardy_Pioneer/Hardy_Pioneer.kfm</KFM>
@@ -9785,7 +9785,7 @@
             <Type>ART_DEF_UNIT_SCOUT</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Scout_Seasoned.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Seasoned_Scout/Seasoned_Scout.nif</NIF>
             <KFM>Art/Units/Seasoned_Scout/Seasoned_Scout.kfm</KFM>
@@ -9802,7 +9802,7 @@
             <Type>ART_DEF_UNIT_CONVERT_SCOUT</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Scout_Seasoned.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/units/Native_Nations/ConvertScout/Native_Scout.nif</NIF>
             <KFM>Art/units/Native_Nations/ConvertScout/Native_Scout.kfm</KFM>
@@ -9819,7 +9819,7 @@
             <Type>ART_DEF_UNIT_PROFESSION_SCOUT</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,12</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Scout.dds</FullLengthIcon>
-            <fScale>0.42</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.9</fInterfaceScale>
             <NIF>Art/Units/Scout/Scout.nif</NIF>
             <KFM>Art/Units/Scout/Scout.kfm</KFM>
@@ -9836,7 +9836,7 @@
             <Type>ART_DEF_UNIT_PROFESSION_UNIT_SCOUT</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,12</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Scout_Seasoned_Mounted.dds</FullLengthIcon>
-            <fScale>0.42</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Seasoned_Scout_Mnt/Seasoned_Scout_Mnt.nif</NIF>
             <KFM>Art/Units/Seasoned_Scout_Mnt/Seasoned_Scout_Mnt.kfm</KFM>
@@ -9853,7 +9853,7 @@
             <Type>ART_DEF_UNIT_HESSIAN</Type>
             <Button>,Art/colonization_atlas_military.dds,1,16</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Hessian.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Hessian/Veteran_Musketman.nif</NIF>
             <KFM>Art/Units/Special_Military/Hessian/Veteran_Musketman.kfm</KFM>
@@ -9870,7 +9870,7 @@
             <Type>ART_DEF_UNIT_NATIVE_MERC</Type>
             <Button>,Art/colonization_atlas_military.dds,4,16</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/NativeScout.dds</FullLengthIcon>
-            <fScale>0.42</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.98</fInterfaceScale>
             <NIF>Art/Units/Special_Military/native_merc/Native_Musketman.nif</NIF>
             <KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
@@ -9887,7 +9887,7 @@
             <Type>ART_DEF_UNIT_RANGER</Type>
             <Button>,Art/colonization_atlas_military.dds,2,16</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Ranger.dds</FullLengthIcon>
-            <fScale>0.42</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.98</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Ranger/Native_Musketman.nif</NIF>
             <KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
@@ -9989,7 +9989,7 @@
             <Type>ART_DEF_UNIT_MILITIA</Type>
             <Button>,Art/colonization_atlas_military.dds,4,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/settler_militia.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Special_Military/settler_militia/Imperial_Musketman.nif</NIF>
             <KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
@@ -10193,7 +10193,7 @@
             <Type>ART_DEF_UNIT_GREAT_ADMIRAL</Type>
             <Button>,Art/colonization_atlas_military.dds,1,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Great_Admiral.dds</FullLengthIcon>
-            <fScale>0.45</fScale>
+            <fScale>0.50</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Great_Admiral/Great_General.nif</NIF>
             <KFM>Art/Units/Special_Military/Great_Admiral/Great_General.kfm</KFM>
@@ -10210,7 +10210,7 @@
             <Type>ART_DEF_UNIT_GREAT_GENERAL</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,12</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Great_General.dds</FullLengthIcon>
-            <fScale>0.45</fScale>
+            <fScale>0.50</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Great_General/Great_General.nif</NIF>
             <KFM>Art/Units/Special_Military/Great_Admiral/Great_General.kfm</KFM>
@@ -10229,7 +10229,7 @@
             <Type>ART_DEF_UNIT_VETERAN_INFANTRY</Type>
             <Button>,Art/colonization_atlas_military.dds,2,9</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/infantry_specialist.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Specialists/Infantry/Imperial_Soldier.nif</NIF>
             <KFM>Art/Units/Special_Military/Specialists/Infantry/Imperial_Soldier.kfm</KFM>
@@ -10246,7 +10246,7 @@
             <Type>ART_DEF_UNIT_VETERAN_LINE_INFANTRY</Type>
             <Button>,Art/colonization_atlas_military.dds,1,9</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/infantry_line_specialist.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Specialists/Infantry_Line/Imperial_Soldier.nif</NIF>
             <KFM>Art/Units/Special_Military/Specialists/Infantry/Imperial_Soldier.kfm</KFM>
@@ -10263,7 +10263,7 @@
             <Type>ART_DEF_UNIT_VETERAN_TOWN_GUARD</Type>
             <Button>,Art/colonization_atlas_military.dds,3,9</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/town_guard_specialist.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Specialists/Town_Guard/Hardy_Pioneer_NT.nif</NIF>
             <KFM>Art/Units/Special_Military/Specialists/Town_Guard/Hardy_Pioneer_NT.kfm</KFM>
@@ -10280,7 +10280,7 @@
             <Type>ART_DEF_UNIT_ROYAL_LIGHT_INFANTRY</Type>
             <Button>,Art/colonization_atlas_military.dds,2,11</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/infantry_line_specialist.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Imperial_Soldier/Imperial_Soldier.nif</NIF>
             <KFM>Art/Units/Imperial_Soldier/Imperial_Soldier.kfm</KFM>
@@ -10297,7 +10297,7 @@
             <Type>ART_DEF_UNIT_ROYAL_LINE_INFANTRY</Type>
             <Button>,Art/colonization_atlas_military.dds,1,11</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/infantry_line_specialist.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Imperial_Soldier/Imperial_Soldier.nif</NIF>
             <KFM>Art/Units/Imperial_Soldier/Imperial_Soldier.kfm</KFM>
@@ -10314,7 +10314,7 @@
             <Type>ART_DEF_UNIT_ROYAL_HALBERDIER</Type>
             <Button>,Art/colonization_atlas_military.dds,3,11</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/infantry_line_specialist.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Specialists/Town_Guard_Royal/Hardy_Pioneer_NT.nif</NIF>
             <KFM>Art/Units/Special_Military/Specialists/Town_Guard/Hardy_Pioneer_NT.kfm</KFM>
@@ -10331,7 +10331,7 @@
             <Type>ART_DEF_UNIT_VETERAN_DRAGOON</Type>
             <Button>,Art/colonization_atlas_military.dds,4,10</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/dragoon_specialist.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Specialists/Dragoon/Native_Musketman.nif</NIF>
             <KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
@@ -10348,7 +10348,7 @@
             <Type>ART_DEF_UNIT_ROYAL_DRAGOON</Type>
             <Button>,Art/colonization_atlas_military.dds,4,12</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/dragoon_specialist.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Specialists/Dragoon_Royal/Native_Musketman.nif</NIF>
             <KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
@@ -10365,7 +10365,7 @@
             <Type>ART_DEF_UNIT_VETERAN_CAVALRY</Type>
             <Button>,Art/colonization_atlas_military.dds,3,10</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/cavalry_specialist.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Specialists/Cavalry/Imperial_Soldier.nif</NIF>
             <KFM>Art/Units/Special_Military/Specialists/Cavalry/Imperial_Soldier.kfm</KFM>
@@ -10382,7 +10382,7 @@
             <Type>ART_DEF_UNIT_ROYAL_CAVALRY</Type>
             <Button>,Art/colonization_atlas_military.dds,3,12</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/cavalry_specialist.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Specialists/Cavalry_Royal/Imperial_Soldier.nif</NIF>
             <KFM>Art/Units/Special_Military/Specialists/Cavalry/Imperial_Soldier.kfm</KFM>
@@ -10401,7 +10401,7 @@
             <Type>ART_DEF_UNIT_TOWN_GUARD_ORDINARY</Type>
             <Button>,Art/colonization_atlas_military.dds,1,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/town_guard_ordinary.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.00</fInterfaceScale>
             <NIF>Art/Units/Special_Military/town_guard/town_guard_ordinary/pikeman.nif</NIF>
             <KFM>Art/Units/Special_Military/town_guard/town_guard_ordinary/pikeman.kfm</KFM>
@@ -10419,7 +10419,7 @@
             <Type>ART_DEF_UNIT_TOWN_GUARD_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,2,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/town_guard_veteran.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.00</fInterfaceScale>
             <NIF>Art/Units/Special_Military/town_guard/town_guard_veteran/pikeman.nif</NIF>
             <KFM>Art/Units/Special_Military/town_guard/town_guard_veteran/pikeman.kfm</KFM>
@@ -10437,7 +10437,7 @@
             <Type>ART_DEF_UNIT_TOWN_GUARD_ROYAL</Type>
             <Button>,Art/colonization_atlas_military.dds,3,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/town_guard_veteran.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.00</fInterfaceScale>
             <NIF>Art/Units/Special_Military/town_guard/town_guard_royal/pikeman.nif</NIF>
             <KFM>Art/Units/Special_Military/town_guard/town_guard_royal/pikeman.kfm</KFM>
@@ -10626,7 +10626,7 @@
             <Type>ART_DEF_UNIT_PROFESSION_VETERAN_COLONIAL_INFANTRY</Type>
             <Button>,Art/colonization_atlas_military.dds,6,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/colonial_veteran_militia.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Veteran_Musketman/Veteran_Musketman.nif</NIF>
             <KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
@@ -10780,7 +10780,7 @@
             <Type>ART_DEF_UNIT_PROFESSION_LINE_INFANTRY</Type>
             <Button>,Art/colonization_atlas_military.dds,5,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/lineinfantry.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Imperial_Musketman/Imperial_Musketman.nif</NIF>
             <KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
@@ -10934,7 +10934,7 @@
             <Type>ART_DEF_UNIT_PROFESSION_VETERAN_LINE_INFANTRY</Type>
             <Button>,Art/colonization_atlas_military.dds,6,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/lineinfantry_vet.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Imperial_Musketman/Imperial_Musketman.nif</NIF>
             <KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
@@ -11088,7 +11088,7 @@
             <Type>ART_DEF_UNIT_PROFESSION_ROYAL_LIGHT_INFANTRY</Type>
             <Button>,Art/colonization_atlas_military.dds,7,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/royal_infantry.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Imperial_Musketman/Imperial_Musketman.nif</NIF>
             <KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
@@ -11242,7 +11242,7 @@
             <Type>ART_DEF_UNIT_PROFESSION_ROYAL_LINE_INFANTRY</Type>
             <Button>,Art/colonization_atlas_military.dds,7,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/royal_infantry.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Imperial_Musketman/Imperial_Musketman.nif</NIF>
             <KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
@@ -12340,7 +12340,7 @@
             <Type>ART_DEF_UNIT_LIGHT_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12365,7 +12365,7 @@
             <Type>ART_DEF_UNIT_ENGLAND_LIGHT_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/England/Artillery/england_light_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12390,7 +12390,7 @@
             <Type>ART_DEF_UNIT_SPAIN_LIGHT_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.kfm</KFM>
@@ -12415,7 +12415,7 @@
             <Type>ART_DEF_UNIT_DUTCH_LIGHT_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Dutch/Artillery/Dutch_light_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12440,7 +12440,7 @@
             <Type>ART_DEF_UNIT_DANISH_LIGHT_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Denmark/Artillery/Denmark_light_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12465,7 +12465,7 @@
             <Type>ART_DEF_UNIT_SWEDISH_LIGHT_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Sweden/Artillery/Sweden_light_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12490,7 +12490,7 @@
             <Type>ART_DEF_UNIT_RUSSIA_LIGHT_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Russia/Artillery/Russia_light_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12515,7 +12515,7 @@
             <Type>ART_DEF_UNIT_FRANCE_LIGHT_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/France/Artillery/France_light_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12540,7 +12540,7 @@
             <Type>ART_DEF_UNIT_PORTUGAL_LIGHT_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Portugal/Artillery/Portugal_light_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12567,7 +12567,7 @@
             <Type>ART_DEF_UNIT_HEAVY_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12592,7 +12592,7 @@
             <Type>ART_DEF_UNIT_ENGLAND_HEAVY_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/England/Artillery/england_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12617,7 +12617,7 @@
             <Type>ART_DEF_UNIT_SPAIN_HEAVY_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Spain/Artillery/Spain_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12642,7 +12642,7 @@
             <Type>ART_DEF_UNIT_DUTCH_HEAVY_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Dutch/Artillery/Dutch_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12667,7 +12667,7 @@
             <Type>ART_DEF_UNIT_DANISH_HEAVY_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Denmark/Artillery/Denmark_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12692,7 +12692,7 @@
             <Type>ART_DEF_UNIT_SWEDISH_HEAVY_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Sweden/Artillery/Sweden_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12717,7 +12717,7 @@
             <Type>ART_DEF_UNIT_RUSSIA_HEAVY_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Russia/Artillery/Russia_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12742,7 +12742,7 @@
             <Type>ART_DEF_UNIT_FRANCE_HEAVY_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/France/Artillery/France_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12767,7 +12767,7 @@
             <Type>ART_DEF_UNIT_PORTUGAL_HEAVY_ARTILLERY_VETERAN</Type>
             <Button>,Art/colonization_atlas_military.dds,6,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Portugal/Artillery/Portugal_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12793,7 +12793,7 @@
             <Type>ART_DEF_UNIT_ROYAL_ARTILLERY</Type>
             <Button>,Art/colonization_atlas_military.dds,4,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
@@ -12818,7 +12818,7 @@
             <Type>ART_DEF_UNIT_ENGLAND_ROYAL_ARTILLERY</Type>
             <Button>,Art/colonization_atlas_military.dds,4,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/England/Artillery/england_royal_artillery/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
@@ -12843,7 +12843,7 @@
             <Type>ART_DEF_UNIT_SPAIN_ROYAL_ARTILLERY</Type>
             <Button>,Art/colonization_atlas_military.dds,4,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Spain/Artillery/Spain_royal_artillery/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
@@ -12868,7 +12868,7 @@
             <Type>ART_DEF_UNIT_DUTCH_ROYAL_ARTILLERY</Type>
             <Button>,Art/colonization_atlas_military.dds,4,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Dutch/Artillery/Dutch_royal_artillery/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
@@ -12893,7 +12893,7 @@
             <Type>ART_DEF_UNIT_DANISH_ROYAL_ARTILLERY</Type>
             <Button>,Art/colonization_atlas_military.dds,4,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Denmark/Artillery/Denmark_royal_artillery/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
@@ -12918,7 +12918,7 @@
             <Type>ART_DEF_UNIT_SWEDISH_ROYAL_ARTILLERY</Type>
             <Button>,Art/colonization_atlas_military.dds,4,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Sweden/Artillery/Sweden_royal_artillery/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
@@ -12943,7 +12943,7 @@
             <Type>ART_DEF_UNIT_RUSSIA_ROYAL_ARTILLERY</Type>
             <Button>,Art/colonization_atlas_military.dds,4,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Russia/Artillery/Russia_royal_artillery/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
@@ -12968,7 +12968,7 @@
             <Type>ART_DEF_UNIT_FRANCE_ROYAL_ARTILLERY</Type>
             <Button>,Art/colonization_atlas_military.dds,4,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/France/Artillery/France_royal_artillery/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
@@ -12993,7 +12993,7 @@
             <Type>ART_DEF_UNIT_PORTUGAL_ROYAL_ARTILLERY</Type>
             <Button>,Art/colonization_atlas_military.dds,4,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Portugal/Artillery/Portugal_royal_artillery/Imperial_Cannon.nif</NIF>
             <KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
@@ -13019,7 +13019,7 @@
             <Type>ART_DEF_UNIT_MORTAR</Type>
             <Button>,Art/colonization_atlas_military.dds,4,7</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Special_Military/mortar/bombardB.nif</NIF>
             <KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
@@ -13044,7 +13044,7 @@
             <Type>ART_DEF_UNIT_DANISH_MORTAR</Type>
             <Button>,Art/colonization_atlas_military.dds,4,7</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Denmark/Artillery/Denmark_Mortar/Cannon_fx.nif</NIF>
             <KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
@@ -13069,7 +13069,7 @@
             <Type>ART_DEF_UNIT_DUTCH_MORTAR</Type>
             <Button>,Art/colonization_atlas_military.dds,4,7</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Dutch/Artillery/Dutch_Mortar/Cannon_fx.nif</NIF>
             <KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
@@ -13094,7 +13094,7 @@
             <Type>ART_DEF_UNIT_ENGLAND_MORTAR</Type>
             <Button>,Art/colonization_atlas_military.dds,4,7</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/England/Artillery/england_mortar/Cannon_fx.nif</NIF>
             <KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
@@ -13119,7 +13119,7 @@
             <Type>ART_DEF_UNIT_FRANCE_MORTAR</Type>
             <Button>,Art/colonization_atlas_military.dds,4,7</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/France/Artillery/France_mortar/Cannon_fx.nif</NIF>
             <KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
@@ -13144,7 +13144,7 @@
             <Type>ART_DEF_UNIT_RUSSIA_MORTAR</Type>
             <Button>,Art/colonization_atlas_military.dds,4,7</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Russia/Artillery/Russia_Mortar/Cannon_fx.nif</NIF>
             <KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
@@ -13169,7 +13169,7 @@
             <Type>ART_DEF_UNIT_PORTUGAL_MORTAR</Type>
             <Button>,Art/colonization_atlas_military.dds,4,7</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Portugal/Artillery/Portugal_Mortar/Cannon_fx.nif</NIF>
             <KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
@@ -13194,7 +13194,7 @@
             <Type>ART_DEF_UNIT_SPAIN_MORTAR</Type>
             <Button>,Art/colonization_atlas_military.dds,4,7</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Spain/Artillery/Spain_Mortar/Cannon_fx.nif</NIF>
             <KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
@@ -13219,7 +13219,7 @@
             <Type>ART_DEF_UNIT_SWEDISH_MORTAR</Type>
             <Button>,Art/colonization_atlas_military.dds,4,7</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-            <fScale>0.53</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Units/Sweden/Artillery/Sweden_Mortar/Cannon_fx.nif</NIF>
             <KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
