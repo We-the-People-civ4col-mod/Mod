@@ -64,7 +64,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_SILVER</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>.8</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Silver/Silver.nif</NIF>
             <KFM>Art/Terrain/Resources/Silver/Silver.kfm</KFM>
             <Button>,Art/Interface/Buttons/Unit_Resource_Atlas.dds,4,14</Button>
@@ -75,7 +75,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_GOLD</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>0.8</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Gold/MarkerGold.nif</NIF>
             <KFM/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,1,11</Button>
@@ -85,8 +85,8 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_GEMS</Type>
-            <fScale>0.8</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Gems/gems.nif</NIF>
             <KFM>Art/Terrain/Resources/Gems/gems.kfm</KFM>
             <Button>,Art/colonization_atlas_professions_bonus.dds,8,10</Button>
@@ -96,8 +96,8 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_BOG_ORE</Type>
-            <fScale>0.8</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Bog_Ore/gems.nif</NIF>
             <KFM>Art/Terrain/Resources/Bog_Ore/gems.kfm</KFM>
             <Button>Art/interface/buttons/Bog_Ore.dds</Button>
@@ -141,7 +141,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_BANANA</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>0.7</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Banana/Banana.nif</NIF>
             <KFM>Art/Terrain/Resources/Banana/Banana.kfm</KFM>
             <Button>,Art/Interface/Buttons/Unit_Resource_Atlas.dds,2,12</Button>
@@ -152,7 +152,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_PASSION_FRUIT</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>0.7</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Passion_Fruit/Passion_Fruit.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/Passion_Fruit_Button.dds</Button>
@@ -163,7 +163,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_GUAVA</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>0.7</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Guava/Guava.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/Guava_Button.dds</Button>
@@ -250,7 +250,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_CAPYBARA</Type>
-            <fScale>40.0</fScale>
+            <fScale>20.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/capybara/capybara.nif</NIF>
             <KFM/>
@@ -305,7 +305,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_BIG_HORN</Type>
-            <fScale>1.1</fScale>
+            <fScale>1.0</fScale>
             <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/big_horn_sheep/Bighorn_Sheep_FX.nif</NIF>
             <KFM>Art/Terrain/Resources/Deer/Deer.kfm</KFM>
@@ -393,7 +393,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_GOOSE</Type>
-            <fScale>2</fScale>
+            <fScale>2.0</fScale>
             <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Canada_Goose/Goose_FX.nif</NIF>
             <KFM>Art/Terrain/Resources/sheep_CIV4/sheep.kfm</KFM>
@@ -459,8 +459,8 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_BISON</Type>
-            <fScale>2.0</fScale>
-            <fInterfaceScale>0.7</fInterfaceScale>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Bison/cow_fx2.nif</NIF>
             <KFM>Art/Terrain/Resources/Bison/Cow.kfm</KFM>
             <Button>Art/interface/buttons/Bison_Button.dds</Button>
@@ -470,7 +470,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_POTATO</Type>
-            <fScale>0.8</fScale>
+            <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Potato/Wheat.nif</NIF>
             <KFM>Art/Terrain/Resources/Potato/Wheat.kfm</KFM>
@@ -493,7 +493,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_COCOA</Type>
             <fScale>1</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Cocoa/cocoa.nif</NIF>
             <KFM>Art/Terrain/Resources/Coffee/Cofwes.kfm</KFM>
             <Button>,Art/colonization_atlas_professions_bonus.dds,6,11</Button>
@@ -504,7 +504,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_COCA</Type>
             <fScale>1</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Coca/wheat.nif</NIF>
             <KFM>Art/Terrain/Resources/Coca/wheat.kfm</KFM>
             <Button>,Art/colonization_atlas_professions_bonus.dds,4,14</Button>
@@ -514,8 +514,8 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_COFFEE</Type>
-            <fScale>0.8</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Coffee/Cofwes.nif</NIF>
             <KFM>Art/Terrain/Resources/Coffee/Cofwes.kfm</KFM>
             <Button>,Art/colonization_atlas_professions_bonus.dds,5,11</Button>
@@ -558,7 +558,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_HIGH_SEA_FISH2</Type>
-            <fScale>1.2</fScale>
+            <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/mackerel/mackerel_FX.nif</NIF>
             <KFM>Art/Terrain/Resources/Fish/Fish.kfm</KFM>
@@ -569,7 +569,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_HIGH_SEA_FISH3</Type>
-            <fScale>1.2</fScale>
+            <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/marlin/marlin_FX.nif</NIF>
             <KFM>Art/Terrain/Resources/Fish/Fish.kfm</KFM>
@@ -580,7 +580,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_HIGH_SEA_FISH4</Type>
-            <fScale>1.2</fScale>
+            <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/tuna/tuna_FX.nif</NIF>
             <KFM>Art/Terrain/Resources/Fish/Fish.kfm</KFM>
@@ -603,7 +603,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_COCONUT</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Coconut/coconut.nif</NIF>
             <KFM/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,8,11</Button>
@@ -614,7 +614,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_PINE_APPLE</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>0.7</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Pine_Apple/banana.nif</NIF>
             <KFM>Art/Terrain/Resources/Pine_Apple/banana.kfm</KFM>
             <Button>Art/interface/buttons/Pine_Apple_Button.dds</Button>
@@ -625,7 +625,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_PAPAYA</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>0.7</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Papaya/papaya.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/Papaya_Button.dds</Button>
@@ -635,7 +635,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_TURKEYS</Type>
-            <fScale>1.5</fScale>
+            <fScale>2.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/turkeys/Turkey_FX.nif</NIF>
             <KFM>Art/Terrain/Resources/sheep_CIV4/sheep.kfm</KFM>
@@ -647,7 +647,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_PUMPKIN</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Pumpkin/wheat.nif</NIF>
             <KFM>Art/Terrain/Resources/Pumpkin/Wheat.kfm</KFM>
             <Button>,Art/colonization_atlas_professions_bonus.dds,2,12</Button>
@@ -669,7 +669,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_AVOCADO</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>0.7</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Avocado/Avocado.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/Avocado_Button.dds</Button>
@@ -679,7 +679,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_MELON</Type>
-            <fScale>1.2</fScale>
+            <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Melon/watermelon.nif</NIF>
             <KFM/>
@@ -702,7 +702,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_FUR_SEAL</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>0.8</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Fur_Seal/Crab.nif</NIF>
             <KFM>Art/Terrain/Resources/Fur_Seal/Crab.kfm</KFM>
             <Button>Art/Interface/Buttons/seabear.dds</Button>
@@ -712,8 +712,8 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_WALRUSS</Type>
-            <fScale>1</fScale>
-            <fInterfaceScale>1</fInterfaceScale>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Sea_Walrus/Sea_Lions_fx.nif</NIF>
             <KFM>Art/Terrain/Resources/Sea_Walrus/Sea_Lions.kfm</KFM>
             <Button>Art/Interface/Buttons/walrus.dds</Button>
@@ -745,8 +745,8 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_HEMP</Type>
-            <fScale>0.8</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
+            <fScale>1.1</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Hemp/Cnq.nif</NIF>
             <KFM>Art/Terrain/Resources/Hemp/Cnq.kfm</KFM>
             <Button>,Art/colonization_atlas_professions_bonus.dds,2,11</Button>
@@ -757,7 +757,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_INDIGO</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Indigo/Indigo.nif</NIF>
             <KFM>Art/Terrain/Resources/Indigo/Indigo.kfm</KFM>
             <Button>,Art/colonization_atlas_professions_bonus.dds,4,11</Button>
@@ -768,7 +768,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_STONE</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>0.5</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Stone/Stone.nif</NIF>
             <KFM/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,5,13</Button>
@@ -778,7 +778,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_CATTLE</Type>
-            <fScale>1.2</fScale>
+            <fScale>1.1</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/cow/cow_fx.nif</NIF>
             <KFM>Art/Terrain/Resources/cow/cow.kfm</KFM>
@@ -789,7 +789,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_PIG</Type>
-            <fScale>2.0</fScale>
+            <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Pig/Pig_FX.nif</NIF>
             <KFM>Art/Terrain/Resources/Pig/Pig.kfm</KFM>
@@ -845,7 +845,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_RED_PEPPER</Type>
             <fScale>0.8</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Paprika/Paprika.nif</NIF>
             <KFM/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,8,12</Button>
@@ -922,7 +922,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_APPLES</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>0.8</fInterfaceScale>
+            <fInterfaceScale>1.1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/apple/banana.nif</NIF>
             <KFM>Art/Terrain/Resources/apple/banana.kfm</KFM>
             <Button>Art/Interface/Buttons/Apples_Button.dds</Button>
@@ -944,7 +944,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_LEMONS</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>0.8</fInterfaceScale>
+            <fInterfaceScale>1.1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/lemon/lemqes.nif</NIF>
             <KFM/>
             <Button>Art/Interface/Buttons/Lemmons_Button.dds</Button>
@@ -966,7 +966,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_BEE_HIVE</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>0.8</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/BeeHive/Banana.nif</NIF>
             <KFM>Art/Terrain/Resources/BeeHive/Banana.kfm</KFM>
             <Button>Art/Interface/Buttons/Bee_Hive_Button.dds</Button>
@@ -977,7 +977,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_PEANUT</Type>
             <fScale>1.2</fScale>
-            <fInterfaceScale>0.6</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Peanut/arachide.nif</NIF>
             <KFM>Art/Terrain/Resources/Peanut/arachide.kfm</KFM>
             <Button>Art/Interface/Buttons/Peanuts_Button.dds</Button>
@@ -999,7 +999,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_HUCKLE_BERRIES</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Huckle_Berries/dye.nif</NIF>
             <KFM>Art/Terrain/Resources/Huckle_Berries/dye.kfm</KFM>
             <Button>Art/interface/buttons/Huckle_Berry_Button.dds</Button>
@@ -1010,7 +1010,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_BLUE_BERRIES</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Blue_Berries/dye.nif</NIF>
             <KFM>Art/Terrain/Resources/Blue_Berries/dye.kfm</KFM>
             <Button>Art/interface/buttons/Blue_Berry_Button.dds</Button>
@@ -1021,7 +1021,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_CRAN_BERRIES</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Cran_Berries/wheat.nif</NIF>
             <KFM>Art/Terrain/Resources/Cran_Berries/wheat.kfm</KFM>
             <Button>Art/interface/buttons/Cran_Berry_Button.dds</Button>
@@ -1065,7 +1065,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_BEANS</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>0.7</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Beans/cnq.nif</NIF>
             <KFM>Art/Terrain/Resources/Beans/cnq.kfm</KFM>
             <Button>Art/interface/buttons/Beans_Button.dds</Button>
@@ -1075,7 +1075,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_MUSHROOMS</Type>
-            <fScale>0.6</fScale>
+            <fScale>0.5</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Mushrooms/mushrooms.nif</NIF>
             <KFM/>
@@ -1087,7 +1087,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_CHERRIES</Type>
             <fScale>1.0</fScale>
-            <fInterfaceScale>0.7</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Cherries/Cherry_Trees.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/Cherries_Button.dds</Button>
@@ -1097,8 +1097,8 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_PRICKLY_PEAR</Type>
-            <fScale>1.1</fScale>
-            <fInterfaceScale>1.1</fInterfaceScale>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/pricklypear/baradye.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/Prickly_Pear_Button.dds</Button>
