@@ -206,10 +206,10 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_LLAMA</Type>
-            <fScale>10.0</fScale>
+            <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/llama/llama_adult_f.nif</NIF>
-            <KFM/>
+            <NIF>Art/Terrain/Resources/llama/llama.nif</NIF>
+            <KFM>Art/Terrain/Resources/Horse/Horse.kfm</KFM>
             <Button>Art/Interface/Buttons/LLama_Button.dds</Button>
             <FontButtonIndex>56</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
