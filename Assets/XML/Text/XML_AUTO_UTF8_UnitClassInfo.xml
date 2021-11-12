@@ -2160,8 +2160,8 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Piratenschiff:Piratenschiffe</Text>
-            <Gender>Neuter</Gender>
+            <Text>Piratenfrigate:Piratenfrigaten</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
@@ -2174,6 +2174,19 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_PIRATE_CUTTER</Tag>
+        <English>
+            <Text>Pirate Cutter:Pirate Cutters</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Piratenkutter:Piratenkutter</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PREACHER</Tag>

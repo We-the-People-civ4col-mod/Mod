@@ -9729,6 +9729,38 @@
             <SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
             <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
         </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_PIRATE_CUTTER</Type>
+            <Button>,Art/colonization_atlas_military.dds,4,15</Button>
+            <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_cutter.dds</FullLengthIcon>
+            <fScale>0.18</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <NIF>Art/units/Ships_Transport/Pirate_Cutter/Naval_Cutter_FX_CivCol.nif</NIF>
+            <KFM>Art/Units/Frigate/Frigate.kfm</KFM>
+            <iDamageStates>4</iDamageStates>
+            <TrailDefinition>
+                <Texture>Art/Shared/water_ship_wake.dds</Texture>
+                <fWidth>1</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>1</fTaper>
+                <fFadeStartTime>.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bSmoothMove>1</bSmoothMove>
+            <fAngleInterpRate>720.0</fAngleInterpRate>
+            <fBankRate>.3</fBankRate>
+            <fExchangeAngle>25.0</fExchangeAngle>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+            <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+        </UnitArtInfo>
         <!-- RaR Special Civil and Military Units -->
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_PIONEER</Type>

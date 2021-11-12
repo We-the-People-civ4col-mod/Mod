@@ -1989,6 +1989,7 @@
                 <UnitClass>UNITCLASS_SMUGGLING_SHIP</UnitClass>
                 <UnitClass>UNITCLASS_PRIVATEER</UnitClass>
                 <UnitClass>UNITCLASS_PIRATE_FRIGATE</UnitClass>
+                <UnitClass>UNITCLASS_PIRATE_CUTTER</UnitClass>
                 <UnitClass>UNITCLASS_CARRACK</UnitClass>
                 <UnitClass>UNITCLASS_CARAVELA_REDONDA</UnitClass>
                 <UnitClass>UNITCLASS_GALLEON</UnitClass>
@@ -2223,6 +2224,7 @@
                 <UnitClass>UNITCLASS_SMUGGLING_SHIP</UnitClass>
                 <UnitClass>UNITCLASS_PRIVATEER</UnitClass>
                 <UnitClass>UNITCLASS_PIRATE_FRIGATE</UnitClass>
+                <UnitClass>UNITCLASS_PIRATE_CUTTER</UnitClass>
                 <UnitClass>UNITCLASS_CARRACK</UnitClass>
                 <UnitClass>UNITCLASS_CARAVELA_REDONDA</UnitClass>
                 <UnitClass>UNITCLASS_GALLEON</UnitClass>
@@ -2308,6 +2310,7 @@
                 <UnitClass>UNITCLASS_SMUGGLING_SHIP</UnitClass>
                 <UnitClass>UNITCLASS_PRIVATEER</UnitClass>
                 <UnitClass>UNITCLASS_PIRATE_FRIGATE</UnitClass>
+                <UnitClass>UNITCLASS_PIRATE_CUTTER</UnitClass>
                 <UnitClass>UNITCLASS_CARRACK</UnitClass>
                 <UnitClass>UNITCLASS_CARAVELA_REDONDA</UnitClass>
                 <UnitClass>UNITCLASS_GALLEON</UnitClass>
@@ -11715,6 +11718,7 @@
                 <UnitClass>UNITCLASS_SMUGGLING_SHIP</UnitClass>
                 <UnitClass>UNITCLASS_PRIVATEER</UnitClass>
                 <UnitClass>UNITCLASS_PIRATE_FRIGATE</UnitClass>
+                <UnitClass>UNITCLASS_PIRATE_CUTTER</UnitClass>
                 <UnitClass>UNITCLASS_CARRACK</UnitClass>
                 <UnitClass>UNITCLASS_CARAVELA_REDONDA</UnitClass>
                 <UnitClass>UNITCLASS_GALLEON</UnitClass>

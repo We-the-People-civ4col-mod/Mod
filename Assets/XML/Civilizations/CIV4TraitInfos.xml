@@ -438,6 +438,10 @@
                     <iChange>1</iChange>
                 </UnitMoveChange>
                 <UnitMoveChange>
+                    <UnitClass>UNITCLASS_PIRATE_CUTTER</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+                <UnitMoveChange>
                     <UnitClass>UNITCLASS_SMUGGLING_SHIP</UnitClass>
                     <iChange>1</iChange>
                 </UnitMoveChange>
@@ -550,6 +554,10 @@
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_PIRATE_FRIGATE</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_PIRATE_CUTTER</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
@@ -6362,6 +6370,10 @@
                     <UnitClass>UNITCLASS_PIRATE_FRIGATE</UnitClass>
                     <iCombatModifier>20</iCombatModifier>
                 </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_PIRATE_CUTTER</UnitClass>
+                    <iCombatModifier>20</iCombatModifier>
+                </UnitStrengthModifier>
             </UnitStrengthModifiers>
             <FreeBuildingClasses/>
             <GoodyFactors/>
@@ -8243,6 +8255,10 @@
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_PIRATE_FRIGATE</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_PIRATE_CUTTER</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>

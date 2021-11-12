@@ -531,7 +531,7 @@
                     <iFreeUnits>2</iFreeUnits>
                 </FreeUnit>
                 <FreeUnit>
-                    <UnitClass>UNITCLASS_PIRATE_FRIGATE</UnitClass>
+                    <UnitClass>UNITCLASS_PIRATE_CUTTER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
