@@ -3331,11 +3331,18 @@ class CvMainInterface:
 		self.SCORE_BACKGROUND_BOTTOM_MARGIN_SMALL = -100
 		self.SCORE_TEXT_BOTTOM_MARGIN_LARGE = 38
 		self.SCORE_TEXT_BOTTOM_MARGIN_SMALL = -80
-
-		iWidth = 0
-		iCount = 0
+# Scrollable Scoreboard 
+		iWidth = 420
+		iCount = 13
 		iBtnHeight = 22
+		yCoord = yResolution - SADDLE_HEIGHT * 13/16 - self.SCORE_TEXT_BOTTOM_MARGIN_SMALL
+
 		pHeadSelectedCity = CyInterface().getHeadSelectedCity()
+		
+		screen.addTableControlGFC("ScoreBackground", 1, xResolution - self.SCORE_BACKGROUND_SIDE_MARGIN/2 - iWidth, yCoord - (iBtnHeight * (iCount - 1)), iWidth, (iBtnHeight * (iCount - 1)), False, False, 0, 0, TableStyles.TABLE_STYLE_EMPTY)
+		screen.enableSelect("ScoreBackground", False)
+		screen.setTableColumnHeader("ScoreBackground", 0, "", 410)
+		#screen.setTableText("ScoreBackground", 0, iRow, "testdata", "", WidgetTypes.WIDGET_CONTACT_CIV, 1, -1, CvUtil.FONT_RIGHT_JUSTIFY)
 
 		if ((CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_MINIMAP_ONLY)):
 			if (CyInterface().isScoresVisible() and not CyInterface().isCityScreenUp() and not CyEngine().isGlobeviewUp() ):
