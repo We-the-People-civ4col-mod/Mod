@@ -532,14 +532,14 @@
             <DefaultUnit>UNIT_PRIVATEER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
-            <Type>UNITCLASS_PIRATE_FRIGATE</Type>
-            <Description>TXT_KEY_UNITCLASS_PIRATE_FRIGATE</Description>
-            <DefaultUnit>UNIT_PIRATE_FRIGATE</DefaultUnit>
-        </UnitClassInfo>
-        <UnitClassInfo>
             <Type>UNITCLASS_PIRATE_CUTTER</Type>
             <Description>TXT_KEY_UNITCLASS_PIRATE_CUTTER</Description>
             <DefaultUnit>UNIT_PIRATE_CUTTER</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_PIRATE_FRIGATE</Type>
+            <Description>TXT_KEY_UNITCLASS_PIRATE_FRIGATE</Description>
+            <DefaultUnit>UNIT_PIRATE_FRIGATE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_SMUGGLING_SHIP</Type>

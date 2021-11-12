@@ -39562,7 +39562,7 @@
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
-            <iCombat>20</iCombat>
+            <iCombat>26</iCombat>
             <iXPValueAttack>5</iXPValueAttack>
             <iXPValueDefense>3</iXPValueDefense>
             <iWithdrawalProb>25</iWithdrawalProb>
