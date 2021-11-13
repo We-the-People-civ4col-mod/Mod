@@ -589,7 +589,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RABBIT_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rabbits[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Rabbits are familiar throughout the world as a wild prey animal. They're also domesticated as livestock or pets. Rabbit fur, prized for its softness, can be found in a broad range of coat colors and patterns. Since speed and agility are a rabbit's main defenses against predators (including the swift fox), rabbits have large hind leg bones and well-developed musculature. Rabbit habitats include meadows, woods, forests, grasslands, deserts and wetlands. More than half the world's rabbit population is in North America.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rabbits[COLOR_REVERT] are hunted for meat and clothing as in the children's rhyme "Baby baby bunting". They can be domesticated for food. Because they're also pets they contribute to happiness. Wild rabbits are widespread, commonly found in forests, grasslands deserts and wetlands.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Rabbits are familiar throughout the world as a wild prey animal. They're also domesticated as livestock or pets. Rabbit fur, prized for its softness, can be found in a broad range of coat colors and patterns. Since speed and agility are a rabbit's main defenses against predators (including the swift fox), rabbits have large hind leg bones and well-developed musculature. Rabbit habitats include meadows, woods, forests, grasslands, deserts and wetlands. More than half the world's rabbit population is in North America.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kaninchen[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -603,7 +603,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PIG_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Pigs are native to the Eurasian and African continents, ranging from Europe to the Pacific islands. In the New World the peccary, a medium-sized pig-like mammal, lives wild in Central and South America, Trinidad in the Caribbean, and the southwestern area of North America. The domestic pig is among the world's most populous large mammals. Pigs are omnivores and can consume a wide range of food. Pigs are biologically similar to humans and are thus frequently used for human medical research. Apart from meat, pig skin is turned into leather, and their hairs are used to make brushes.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] are nature's recyclers, turning kichen waste into meat. They've been domesticated for millenia. They're also a source of hides for leather. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Pigs are native to the Eurasian and African continents, ranging from Europe to the Pacific islands. In the New World the peccary, a medium-sized pig-like mammal, lives wild in Central and South America, Trinidad in the Caribbean, and the southwestern area of North America. The domestic pig is among the world's most populous large mammals. Pigs are omnivores and can consume a wide range of food. Pigs are biologically similar to humans and are thus frequently used for human medical research. Apart from meat, pig skin is turned into leather, and their hairs are used to make brushes.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Schweine[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -617,7 +617,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CHICKEN_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Chicken[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The chicken is domesticated from red junglefowl originally from Southeastern Asia. There are more chickens in the world than any other bird. Chickens are omnivores. In the wild, they often scratch at the soil to search for seeds, insects and even animals as large as lizards, small snakes or young mice. An unusual variety of chicken that has its origins in South America is the Araucana, bred in southern Chile by the Mapuche people. Araucanas lay blue-green eggs.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Chickens[COLOR_REVERT] can be raised for meat on farms or in the city. Their eggs are a universal protein source. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The chicken is domesticated from red junglefowl originally from Southeastern Asia. There are more chickens in the world than any other bird. Chickens are omnivores. In the wild, they often scratch at the soil to search for seeds, insects and even animals as large as lizards, small snakes or young mice. An unusual variety of chicken that has its origins in South America is the Araucana, bred in southern Chile by the Mapuche people. Araucanas lay blue-green eggs.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hühner[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -695,7 +695,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_POLAR_FOX_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polar foxes[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The Arctic fox, also known as the polar fox, is common throughout the Arctic regions of the Northern Hemisphere. It is well adapted to living in cold environments, and is best known for its thick, warm fur that is also used as camouflage. It has a large and very fluffy tail. The Arctic fox preys on many small creatures such as lemmings, voles, ringed seal pups, fish, waterfowl, and seabirds. Natural predators of the Arctic fox are golden eagles, arctic wolves, polar bears, wolverines, red foxes, gray wolves, and grizzly bears. It mostly inhabits tundra and pack ice, but is also present in Canadian boreal forests (northeastern Alberta, northern Saskatchewan, northern Manitoba, northern Ontario, northern Quebec, Newfoundland and Labrador) and the Kenai Peninsula in Alaska.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polar foxes[COLOR_REVERT] are found in taiga and tundra. They're valued for their fur. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The Arctic fox, also known as the polar fox, is common throughout the Arctic regions of the Northern Hemisphere. It is well adapted to living in cold environments, and is best known for its thick, warm fur that is also used as camouflage. It has a large and very fluffy tail. The Arctic fox preys on many small creatures such as lemmings, voles, ringed seal pups, fish, waterfowl, and seabirds. Natural predators of the Arctic fox are golden eagles, arctic wolves, polar bears, wolverines, red foxes, gray wolves, and grizzly bears. It mostly inhabits tundra and pack ice, but is also present in Canadian boreal forests (northeastern Alberta, northern Saskatchewan, northern Manitoba, northern Ontario, northern Quebec, Newfoundland and Labrador) and the Kenai Peninsula in Alaska.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polarfüchse[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -709,7 +709,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RED_FOX_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Red foxes[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The red fox is the largest of the true foxes. Its range has increased alongside human expansion. It colonised North America shortly after the Wisconsin glaciation. The cunning Fox is commonly found in Native American mythology, where it is portrayed as an almost constant companion to Coyote. Foxes primarily feed on small rodents, though they may also target rabbits, squirrels, game birds, reptiles, invertebrates and young ungulates. The red fox is one of the most important furbearing animals harvested for the fur trade.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Red foxes[COLOR_REVERT] are found throughout North America. They're trapped for their fur. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The red fox is the largest of the true foxes. Its range has increased alongside human expansion. It colonised North America shortly after the Wisconsin glaciation. The cunning Fox is commonly found in Native American mythology, where it is portrayed as an almost constant companion to Coyote. Foxes primarily feed on small rodents, though they may also target rabbits, squirrels, game birds, reptiles, invertebrates and young ungulates. The red fox is one of the most important furbearing animals harvested for the fur trade.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rotfüchse[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -888,7 +888,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH2</Tag>
-        <English>Mackerels</English>
+        <English>Mackerel</English>
         <German>
             <Text>Makrelen</Text>
             <Gender>Male</Gender>
@@ -897,7 +897,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH2_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mackerels[COLOR_REVERT] live in the deep [LINK=TERRAIN_OCEAN]ocean[\LINK]. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mackerel[COLOR_REVERT] live in the deep [LINK=TERRAIN_OCEAN]ocean[\LINK]. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Mackerel are widely distributed in both temperate and tropical seas. Flocks of seabirds, whales, dolphins, sharks, and schools of larger fish such as tuna and marlin follow mackerel schools and attack them in sophisticated and cooperative ways. Mackerel flesh is high in omega-3 oils and is intensively harvested by humans. Salting and smoking are the principal preservation methods.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1]Vorkommen von [COLOR_HIGHLIGHT_TEXT]Makrelen[COLOR_REVERT] sind gelegentlich im tiefen [LINK=TERRAIN_OCEAN]Ozean[\LINK] zu finden. [NEWLINE][NEWLINE][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1] TODO</German>
     </TEXT>
     <TEXT>
@@ -911,7 +911,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH3_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blue Marline[COLOR_REVERT] live in the deep [LINK=TERRAIN_OCEAN]ocean[\LINK]. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blue Marline[COLOR_REVERT] live in the deep [LINK=TERRAIN_OCEAN]ocean[\LINK]. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The Atlantic blue marlin can reach 5 meters (16 feet) in length and 800 kg (1,800 lb) in weight. Marlins are among the fastest marine swimmers, reaching 110 km/h (68 mph) in short bursts. They are popular sporting fish in tropical areas. Like tuna they can be caught using hook and line - a large hook and a strong line!</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1]Vorkommen von [COLOR_HIGHLIGHT_TEXT]Blauer Marlin[COLOR_REVERT] sind gelegentlich im tiefen [LINK=TERRAIN_OCEAN]Ozean[\LINK] zu finden. [NEWLINE][NEWLINE][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1] TODO</German>
     </TEXT>
     <TEXT>
@@ -925,7 +925,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH4_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tuna[COLOR_REVERT] live in the deep [LINK=TERRAIN_OCEAN]ocean[\LINK]. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] TODO</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tuna[COLOR_REVERT] live in the deep [LINK=TERRAIN_OCEAN]ocean[\LINK]. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The Atlantic bluefin tuna is a sleek and streamlined fish, adapted for speed. It can be over 4 meters long (15 feet)and weigh almost 700 kg (1,500 lb), but the average fish is closer to 2 meters. Tuna are believed to live up to 50 years. Like marlin, tuna are mainly caught using hook and line.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1]Vorkommen von [COLOR_HIGHLIGHT_TEXT]Thunfisch[COLOR_REVERT] sind gelegentlich im tiefen [LINK=TERRAIN_OCEAN]Ozean[\LINK] zu finden. [NEWLINE][NEWLINE][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1] TODO</German>
     </TEXT>
     <TEXT>
@@ -1035,7 +1035,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BOG_ORE_PEDIA</Tag>
-        <English>Ironstone, though widespread is a limited source of iron. It occurs as rock fragments with high metal content in groundwater soils ranging from silt to gravel.[PARAGRAPH:1]In Europe from the 15th century up to the Second World War ironstone was used for iron production in the absence of richer iron ore.[PARAGRAPH:1][BOLD]Strategy :[\BOLD][COLOR_HIGHLIGHT_TEXT]Ironstone[COLOR_REVERT]</English>
+        <English>[BOLD]Strategy :[\BOLD][COLOR_HIGHLIGHT_TEXT]Ironstone[COLOR_REVERT] is a substitute for ore wherever richer deposits are too distant or otherwise inaccessible.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Ironstone, though widespread is a limited source of iron. It occurs as rock fragments with high metal content in groundwater soils ranging from silt to gravel.[PARAGRAPH:1]In Europe from the 15th century up to the Second World War ironstone was used for iron production in the absence of richer iron ore.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moorerz[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
