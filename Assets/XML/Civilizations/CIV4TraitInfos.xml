@@ -450,6 +450,10 @@
                     <iChange>1</iChange>
                 </UnitMoveChange>
                 <UnitMoveChange>
+                    <UnitClass>UNITCLASS_SCHOONER</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+                <UnitMoveChange>
                     <UnitClass>UNITCLASS_CORVETTE</UnitClass>
                     <iChange>1</iChange>
                 </UnitMoveChange>
@@ -562,6 +566,10 @@
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_SLOOP</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_SCHOONER</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>

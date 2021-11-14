@@ -527,6 +527,11 @@
             <DefaultUnit>UNIT_SLOOP</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_SCHOONER</Type>
+            <Description>TXT_KEY_UNITCLASS_SCHOONER</Description>
+            <DefaultUnit>UNIT_SCHOONER</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_PRIVATEER</Type>
             <Description>TXT_KEY_UNITCLASS_PRIVATEER</Description>
             <DefaultUnit>UNIT_PRIVATEER</DefaultUnit>

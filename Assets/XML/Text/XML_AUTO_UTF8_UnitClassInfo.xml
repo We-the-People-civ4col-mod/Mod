@@ -2793,6 +2793,19 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_SCHOONER</Tag>
+        <English>
+            <Text>Schooner:Schooner</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Schooner:Schooner</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SMALL_COASTAL_SHIP</Tag>
         <English>
             <Text>Small Coastal Ship:Small Coastal Ships</Text>

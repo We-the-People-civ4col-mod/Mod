@@ -5031,6 +5031,29 @@
         <German>Obwohl eine [COLOR_UNIT_TEXT]Schaluppe[COLOR_REVERT] kein besonders starkes Kriegsschiff ist, eignet es sich hervorragend zur Aufklärung und auch dazu angeschlagenen Schiffen den Rest zu geben.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_SCHOONER</Tag>
+        <English>
+            <Text>Schooner:Schooner</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Schooner:Schooner</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SCHOONER_PEDIA</Tag>
+        <English>TODO</English>
+        <German>TODO</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SCHOONER_STRATEGY</Tag>
+        <English>[COLOR_UNIT_TEXT]Schooner[COLOR_REVERT] are fast naval units, just a bit slower than the Sloop but with two cargo slots but not able to enter rivers, like the sloop can. They are particularly suitable for fast travel to far away Native settlements the New World and trade with them or to transport [LINK=CONCEPT_UNITS]military units[\LINK] very swiftly to where they are needed.[NEWLINE][COLOR_HIGHLIGHT_TEXT]Schooners[COLOR_REVERT] have moderate costs in [LINK=CONCEPT_EUROPE]Europe[\LINK] and can be built in colonies with a [LINK=BUILDING_DRYDOCK]drydock[\LINK] or one of its upgrades.[NEWLINE]Like most ships they need [LINK=YIELD_CANNONS]cannons[\LINK], [LINK=YIELD_ROPE]ropes[\LINK], [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] and [LINK=YIELD_TOOLS]tools[\LINK].[PARAGRAPH:2]For a comparison of all ships that are available, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
+        <German>[COLOR_UNIT_TEXT]Schooner[COLOR_REVERT] sind kein besonders starkes Kriegsschiff, dafür aber schnell. Sie eignen sich aber hervorragend um mit weit entfernten Ureinwohnerdörfern handel zu treiben oder um Truppen schnell zu transportieren. Die Schaluppe ist als Aufklärer dennoch schneller.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_SMALL_COASTAL_SHIP</Tag>
         <English>
             <Text>Small Coastal Ship:Small Coastal Ships</Text>

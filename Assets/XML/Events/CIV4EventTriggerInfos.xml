@@ -1995,6 +1995,7 @@
                 <UnitClass>UNITCLASS_GALLEON</UnitClass>
                 <UnitClass>UNITCLASS_WEST_INDIAMAN</UnitClass>
                 <UnitClass>UNITCLASS_SLOOP</UnitClass>
+                <UnitClass>UNITCLASS_SCHOONER</UnitClass>
                 <UnitClass>UNITCLASS_CORVETTE</UnitClass>
                 <UnitClass>UNITCLASS_FRIGATE</UnitClass>
                 <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
@@ -2230,6 +2231,7 @@
                 <UnitClass>UNITCLASS_GALLEON</UnitClass>
                 <UnitClass>UNITCLASS_WEST_INDIAMAN</UnitClass>
                 <UnitClass>UNITCLASS_SLOOP</UnitClass>
+                <UnitClass>UNITCLASS_SCHOONER</UnitClass>
                 <UnitClass>UNITCLASS_CORVETTE</UnitClass>
                 <UnitClass>UNITCLASS_FRIGATE</UnitClass>
                 <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
@@ -2316,6 +2318,7 @@
                 <UnitClass>UNITCLASS_GALLEON</UnitClass>
                 <UnitClass>UNITCLASS_WEST_INDIAMAN</UnitClass>
                 <UnitClass>UNITCLASS_SLOOP</UnitClass>
+                <UnitClass>UNITCLASS_SCHOONER</UnitClass>
                 <UnitClass>UNITCLASS_CORVETTE</UnitClass>
                 <UnitClass>UNITCLASS_FRIGATE</UnitClass>
                 <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
@@ -11724,6 +11727,7 @@
                 <UnitClass>UNITCLASS_GALLEON</UnitClass>
                 <UnitClass>UNITCLASS_WEST_INDIAMAN</UnitClass>
                 <UnitClass>UNITCLASS_SLOOP</UnitClass>
+                <UnitClass>UNITCLASS_SCHOONER</UnitClass>
                 <UnitClass>UNITCLASS_CORVETTE</UnitClass>
                 <UnitClass>UNITCLASS_FRIGATE</UnitClass>
                 <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>

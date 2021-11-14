@@ -209,6 +209,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_SCHOONER</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_DANISH_SCHOONER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_FLUYT</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -506,6 +513,13 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_DUTCH_SLOOP</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_SCHOONER</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_DUTCH_SCHOONER</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -809,6 +823,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_SCHOONER</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_ENGLAND_SCHOONER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_FLUYT</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -1106,6 +1127,13 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_FRANCE_SLOOP</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_SCHOONER</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_FRANCE_SCHOONER</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -1409,6 +1437,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_SCHOONER</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_PORTUGAL_SCHOONER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_FLUYT</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -1706,6 +1741,13 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_RUSSIA_SLOOP</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_SCHOONER</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_RUSSIA_SCHOONER</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -2009,6 +2051,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_SCHOONER</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_SPAIN_SCHOONER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_FLUYT</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -2306,6 +2355,13 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_SWEDISH_SLOOP</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_SCHOONER</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_SWEDISH_SCHOONER</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>

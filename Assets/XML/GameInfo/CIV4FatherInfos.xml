@@ -2581,7 +2581,7 @@
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
                 <FreeUnit>
-                    <UnitClass>UNITCLASS_BRIGANTINE</UnitClass>
+                    <UnitClass>UNITCLASS_SCHOONER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
                 <FreeUnit>
