@@ -360,9 +360,9 @@
         </BonusArtInfo>
        <BonusArtInfo>
             <Type>ART_DEF_BONUS_GULL</Type>
-            <fScale>26</fScale>
-            <fInterfaceScale>1</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/gull/gull.nif</NIF>
+            <fScale>0.4</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/gull/Gull_FX.nif</NIF>
             <KFM/>
             <Button>Art/Interface/Buttons/gull.dds</Button>
             <FontButtonIndex>84</FontButtonIndex>
@@ -899,9 +899,9 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_VULTURE</Type>
-            <fScale>20.0</fScale>
-            <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/vulture/vulture.nif</NIF>
+            <fScale>0.4</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/vulture/Vulture_FX.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/vulture.dds</Button>
             <FontButtonIndex>87</FontButtonIndex>
