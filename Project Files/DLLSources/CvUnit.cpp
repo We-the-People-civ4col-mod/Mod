@@ -1346,6 +1346,11 @@ void CvUnit::updateCombat(bool bQuick)
 			// ray, fix for bNoCapture being ingored 
 			if (m_pUnitInfo->isCapturesShips() && !pDefender->getUnitInfo().isAnimal() && !pDefender->getUnitInfo().isNoCapture())
 			{
+				// WTP, ray, Capture Ship chance increase - START
+				int iCaptureShipsChanceIncrease = m_pUnitInfo->getCaptureShipsChanceIncrease();
+				capturingShipChance = capturingShipChance * (100 + iCaptureShipsChanceIncrease) / 100;
+				// WTP, ray, Capture Ship chance increase - START
+
 				if (capturingShipChance > randomShipCaptureValue)
 				{
 					bool bHasParents = (GET_PLAYER(getOwnerINLINE()).getParent() != NO_PLAYER);

@@ -219,6 +219,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -654,6 +655,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -1194,6 +1196,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -1735,6 +1738,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -2294,6 +2298,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -2715,6 +2720,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -3255,6 +3261,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -3789,6 +3796,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -4246,6 +4254,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -4703,6 +4712,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -5144,6 +5154,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -5587,6 +5598,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -6028,6 +6040,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -6471,6 +6484,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -6914,6 +6928,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -7357,6 +7372,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -7808,6 +7824,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -8259,6 +8276,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -8710,6 +8728,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -9161,6 +9180,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -9602,6 +9622,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -10035,6 +10056,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -10476,6 +10498,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -10909,6 +10932,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -11342,6 +11366,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -11775,6 +11800,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -12200,6 +12226,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -12620,6 +12647,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -13077,6 +13105,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -13534,6 +13563,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -13987,6 +14017,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -14440,6 +14471,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -14889,6 +14921,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -15338,6 +15371,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -15791,6 +15825,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -16244,6 +16279,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -16697,6 +16733,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -17154,6 +17191,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -17611,6 +17649,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -18068,6 +18107,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -18525,6 +18565,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -18974,6 +19015,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -19423,6 +19465,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -19880,6 +19923,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -20337,6 +20381,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -20802,6 +20847,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -21262,6 +21308,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -21566,6 +21613,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -21895,6 +21943,7 @@
             <iMoves>2</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -22096,6 +22145,7 @@
             <iMoves>2</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -22250,6 +22300,7 @@
             <iMoves>2</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -22430,6 +22481,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -22620,6 +22672,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -22780,6 +22833,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -22995,6 +23049,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -23235,6 +23290,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -23421,6 +23477,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -23607,6 +23664,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -23744,6 +23802,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -23930,6 +23989,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -24196,6 +24256,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -24400,6 +24461,7 @@
             <iMoves>2</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -24636,6 +24698,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -24824,6 +24887,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -25191,6 +25255,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -25611,6 +25676,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -26043,6 +26109,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -26467,6 +26534,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -26747,6 +26815,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -26917,6 +26986,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -27087,6 +27157,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -27248,6 +27319,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -27400,6 +27472,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -27690,6 +27763,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -27984,6 +28058,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -28278,6 +28353,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -28721,6 +28797,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>100</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -29140,6 +29217,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -29542,6 +29620,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -29978,6 +30057,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -30435,6 +30515,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -30892,6 +30973,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -31349,6 +31431,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -31645,6 +31728,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -32009,6 +32093,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -32574,6 +32659,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -33048,6 +33134,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>100</iMissionaryRateModifier>
@@ -33475,6 +33562,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>100</iMissionaryRateModifier>
@@ -33902,6 +33990,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>100</iMissionaryRateModifier>
@@ -34176,6 +34265,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -34748,6 +34838,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -35183,6 +35274,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -35568,6 +35660,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -35821,6 +35914,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -36029,6 +36123,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -36193,6 +36288,7 @@
             <iMoves>2</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -36357,6 +36453,7 @@
             <iMoves>2</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -36517,6 +36614,7 @@
             <iMoves>3</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -36681,6 +36779,7 @@
             <iMoves>3</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -36845,6 +36944,7 @@
             <iMoves>3</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -37014,6 +37114,7 @@
             <iMoves>3</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -37197,6 +37298,7 @@
             <iMoves>4</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -37390,6 +37492,7 @@
             <iMoves>5</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -37584,6 +37687,7 @@
             <iMoves>4</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -37780,6 +37884,7 @@
             <iMoves>4</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -37974,6 +38079,7 @@
             <iMoves>5</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -38168,6 +38274,7 @@
             <iMoves>5</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -38362,6 +38469,7 @@
             <iMoves>5</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -38573,6 +38681,7 @@
             <iMoves>5</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -38775,6 +38884,7 @@
             <iMoves>5</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -38981,6 +39091,7 @@
             <iMoves>7</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -39144,6 +39255,7 @@
             <iMoves>6</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -39383,6 +39495,7 @@
             <iMoves>5</iMoves>
             <bCapturesCargo>1</bCapturesCargo>
             <bCapturesShips>1</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -39564,6 +39677,7 @@
             <iMoves>5</iMoves>
             <bCapturesCargo>1</bCapturesCargo>
             <bCapturesShips>1</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -39723,6 +39837,7 @@
             <iMoves>6</iMoves>
             <bCapturesCargo>1</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -39868,6 +39983,7 @@
             <iMoves>6</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -40043,6 +40159,7 @@
             <iMoves>6</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>1</bCapturesShips>
+            <iCaptureShipsChanceIncrease>50</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -40228,6 +40345,7 @@
             <iMoves>6</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>1</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -40412,6 +40530,7 @@
             <iMoves>5</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>1</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -40592,6 +40711,7 @@
             <iMoves>5</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -40764,6 +40884,7 @@
             <iMoves>4</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -40972,6 +41093,7 @@
             <iMoves>4</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>100</iWorkRate>
             <iWorkRateModifier>100</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -41141,6 +41263,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -41270,6 +41393,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -41399,6 +41523,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -41528,6 +41653,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -41657,6 +41783,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -41786,6 +41913,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -41915,6 +42043,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -42044,6 +42173,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -42173,6 +42303,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -42302,6 +42433,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -42431,6 +42563,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -42560,6 +42693,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -42689,6 +42823,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -42818,6 +42953,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -42947,6 +43083,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -43076,6 +43213,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -43205,6 +43343,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -43334,6 +43473,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -43463,6 +43603,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -43592,6 +43733,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -43721,6 +43863,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -43850,6 +43993,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -43979,6 +44123,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -44108,6 +44253,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -44237,6 +44383,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -44366,6 +44513,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -44495,6 +44643,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -44624,6 +44773,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -44753,6 +44903,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -44882,6 +45033,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -45011,6 +45163,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -45140,6 +45293,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -45269,6 +45423,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -45398,6 +45553,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -45527,6 +45683,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -45656,6 +45813,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -45785,6 +45943,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -45914,6 +46073,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -46043,6 +46203,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -46172,6 +46333,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -46301,6 +46463,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -46430,6 +46593,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -46559,6 +46723,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -46688,6 +46853,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -46817,6 +46983,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -46946,6 +47113,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -47075,6 +47243,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -47204,6 +47373,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -47333,6 +47503,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -47462,6 +47633,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -47591,6 +47763,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -47720,6 +47893,7 @@
             <iMoves>0</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -47850,6 +48024,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -47987,6 +48162,7 @@
             <iMoves>3</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -48151,6 +48327,7 @@
             <iMoves>3</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -48315,6 +48492,7 @@
             <iMoves>4</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -48479,6 +48657,7 @@
             <iMoves>4</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -48643,6 +48822,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -48785,6 +48965,7 @@
             <iMoves>2</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -48923,6 +49104,7 @@
             <iMoves>2</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -49061,6 +49243,7 @@
             <iMoves>2</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -49199,6 +49382,7 @@
             <iMoves>2</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -49337,6 +49521,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -49475,6 +49660,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
@@ -49613,6 +49799,7 @@
             <iMoves>1</iMoves>
             <bCapturesCargo>0</bCapturesCargo>
             <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>

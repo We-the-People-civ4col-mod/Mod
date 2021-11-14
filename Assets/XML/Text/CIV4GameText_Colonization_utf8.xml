@@ -2080,6 +2080,16 @@
         <Spanish>[ICON_BULLET]Captura el cargamento de los transportes derrotados.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_CAPTURES_SHIPS</Tag>
+        <English>[ICON_BULLET]Has a chance to capture defeated ships</English>
+        <German>[ICON_BULLET]Kann potentiell besiegte Schiffe kapern</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CAPTURES_SHIPS_CHANCE_INCREASE</Tag>
+        <English>[ICON_BULLET]%d1%% higher chance to capture defeated ships</English>
+        <German>[ICON_BULLET]%d1%% höhere Chance besiegte Schiffe zu kapern</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILD_CANNOT_AFFORD</Tag>
         <English>[COLOR_WARNING_TEXT]Requires %d1%F2_yield[COLOR_REVERT]</English>
         <French>[COLOR_WARNING_TEXT]Requiert %d1%F2_yield[COLOR_REVERT]</French>

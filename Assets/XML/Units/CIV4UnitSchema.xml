@@ -204,6 +204,7 @@
 	<ElementType name="iMoves" content="textOnly" dt:type="int"/>
 	<ElementType name="bCapturesCargo" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bCapturesShips" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iCaptureShipsChanceIncrease" content="textOnly" dt:type="int"/>
 	<ElementType name="iWorkRate" content="textOnly" dt:type="int"/>
 	<ElementType name="iWorkRateModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iMissionaryRateModifier" content="textOnly" dt:type="int"/>
@@ -492,6 +493,7 @@
 		<element type="iMoves"/>
 		<element type="bCapturesCargo"/>
 		<element type="bCapturesShips"/>
+		<element type="iCaptureShipsChanceIncrease"/>
 		<element type="iWorkRate"/>
 		<element type="iWorkRateModifier"/>
 		<element type="iMissionaryRateModifier"/>

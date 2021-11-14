@@ -778,6 +778,7 @@ public:
 	// WTP, ray, LbD Slaves Revolt and Free - END
 
 	bool isCapturesCargo() const;
+	int getCaptureShipsChanceIncrease() const; 
 	// TAC Capturing Ships - ray
 	bool isCapturesShips() const;
 	// TAC Capturing Ships - ray -END
@@ -957,6 +958,7 @@ protected:
 	bool m_bCapturesCargo;
 	// TAC Capturing Ships - ray
 	bool m_bCapturesShips;
+	int m_iCaptureShipsChanceIncrease; // WTP, ray, Capture Ship chance increase - START
 	// TAC Capturing Ships - ray - END
 	bool m_bLandYieldChanges;
 	bool m_bWaterYieldChanges;

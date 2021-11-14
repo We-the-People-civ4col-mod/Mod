@@ -2720,6 +2720,7 @@ m_canRevolt(false),
 m_bCapturesCargo(false),
 // TAC Capturing Ships - ray
 m_bCapturesShips(false),
+m_iCaptureShipsChanceIncrease(0), // WTP, ray, Capture Ship chance increase - START
 // TAC Capturing Ships - ray - END
 m_bLandYieldChanges(false),
 m_bWaterYieldChanges(false),
@@ -3170,6 +3171,13 @@ bool CvUnitInfo::isCapturesShips() const
 }
 // TAC Capturing Ships - ray - END
 
+// TAC Capturing Ships - ray
+int CvUnitInfo::getCaptureShipsChanceIncrease() const
+{
+	return m_iCaptureShipsChanceIncrease;
+}
+// TAC Capturing Ships - ray - END
+
 bool CvUnitInfo::isLandYieldChanges() const
 {
 	return m_bLandYieldChanges;
@@ -3600,6 +3608,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bCapturesCargo);
 	// TAC Capturing Ships - ray
 	stream->Read(&m_bCapturesShips);
+	stream->Read(&m_iCaptureShipsChanceIncrease); // WTP, ray, Capture Ship chance increase - START
 	// TAC Capturing Ships - ray - End
 	stream->Read(&m_bLandYieldChanges);
 	stream->Read(&m_bWaterYieldChanges);
@@ -3821,6 +3830,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bCapturesCargo);
 	// TAC Capturing Ships - ray
 	stream->Write(m_bCapturesShips);
+	stream->Write(m_iCaptureShipsChanceIncrease); // WTP, ray, Capture Ship chance increase - START
 	// TAC Capturing Ships - ray - END
 	stream->Write(m_bLandYieldChanges);
 	stream->Write(m_bWaterYieldChanges);
@@ -3962,6 +3972,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bCapturesCargo,"bCapturesCargo",false);
 	// TAC Capturing Ships - ray
 	pXML->GetChildXmlValByName(&m_bCapturesShips,"bCapturesShips",false);
+	pXML->GetChildXmlValByName(&m_iCaptureShipsChanceIncrease,"iCaptureShipsChanceIncrease",false); // WTP, ray, Capture Ship chance increase - START
 	// TAC Capturing Ships - ray - END
 	pXML->GetChildXmlValByName(&m_bLandYieldChanges,"bLandYieldChanges",true);
 	pXML->GetChildXmlValByName(&m_bWaterYieldChanges,"bWaterYieldChanges",true);
