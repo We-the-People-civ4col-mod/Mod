@@ -40201,11 +40201,15 @@
             <UnitClassAttackMods>
                 <UnitClassAttackMod>
                     <UnitClassType>UNITCLASS_PRIVATEER</UnitClassType>
-                    <iUnitClassMod>10</iUnitClassMod>
+                    <iUnitClassMod>20</iUnitClassMod>
                 </UnitClassAttackMod>
                 <UnitClassAttackMod>
                     <UnitClassType>UNITCLASS_PIRATE_FRIGATE</UnitClassType>
-                    <iUnitClassMod>10</iUnitClassMod>
+                    <iUnitClassMod>20</iUnitClassMod>
+                </UnitClassAttackMod>
+                <UnitClassAttackMod>
+                    <UnitClassType>UNITCLASS_PIRATE_CUTTER</UnitClassType>
+                    <iUnitClassMod>20</iUnitClassMod>
                 </UnitClassAttackMod>
             </UnitClassAttackMods>
             <UnitClassDefenseMods/>
