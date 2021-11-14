@@ -589,7 +589,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RABBIT_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rabbits[COLOR_REVERT] are hunted for meat and clothing as in the children's rhyme "Baby baby bunting". They can be domesticated for food. Because they're also pets they contribute to happiness. Wild rabbits are widespread, commonly found in forests, grasslands deserts and wetlands.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Rabbits are familiar throughout the world as a wild prey animal. They're also domesticated as livestock or pets. Rabbit fur, prized for its softness, can be found in a broad range of coat colors and patterns. Since speed and agility are a rabbit's main defenses against predators (including the swift fox), rabbits have large hind leg bones and well-developed musculature. Rabbit habitats include meadows, woods, forests, grasslands, deserts and wetlands. More than half the world's rabbit population is in North America.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rabbits[COLOR_REVERT] are hunted for meat and clothing as in the children's rhyme "Baby baby bunting". They can be domesticated for food. Because they're also pets they contribute to happiness. Wild rabbits are widespread, commonly found in forests, grasslands, deserts and marshes.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Rabbits are familiar throughout the world as a wild prey animal. They're also domesticated as livestock or pets. Rabbit fur, prized for its softness, can be found in a broad range of coat colours and patterns. Since speed and agility are a rabbit's main defenses against predators (including the swift fox), rabbits have large hind leg bones and well-developed musculature. Rabbit habitats include meadows, woods, forests, grasslands, deserts and wetlands. More than half the world's rabbit population is in North America.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kaninchen[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -1082,7 +1082,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MINERALS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mineral resources[COLOR_REVERT] can occur on all [COLOR_HIGHLIGHT_TEXT]hill[COLOR_REVERT] plots. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]When early civilizations began to use metal to construct tools and weapons, the most commonly used metal was bronze. Bronze had the advantage of being readily available and easy to work with. Unfortunately, it was too soft to hold an effective edge.[PARAGRAPH:1]In the mid-8th century BC in central Europe, iron replaced bronze as the metal of choice, and the Iron Age began. Since then iron has been an invaluable commodity. In the New World, where easily accessible seams of iron were seldom found on hills, many colonies turned instead to the iron-rich mineral deposits of nearby swamps and marshes.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mineral resources[COLOR_REVERT] can occur on all [COLOR_HIGHLIGHT_TEXT]hill[COLOR_REVERT] plots. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]When early civilizations began to use metal to construct tools and weapons, the most commonly used metal was bronze. Bronze had the advantage of being readily available and easy to work with. Unfortunately, it was too soft to hold an effective edge.[PARAGRAPH:1]In the mid-8th century BC in central Europe, iron replaced bronze as the metal of choice, and the Iron Age began. Since then iron has been an invaluable commodity. In the New World, where easily accessible seams of iron were seldom found on hills, many colonies turned instead to the ironstone deposits of nearby swamps and marshes.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Quand les hommes commencèrent à fabriquer des outils et des armes en métal, le bronze s'avéra le métal le plus couramment employé. Il avait l'avantage d'être facile à obtenir et à travailler, mais il était trop tendre pour rester longtemps tranchant. Au milieu du VIIIe siècle av. J.-C., en Europe centrale, le bronze fut progressivement remplacé par le fer, et l'Age de Fer succéda à l'Age de Bronze. Depuis, le fer est une matière première de premier plan. Les gisements de fer découverts dans les montagnes sont exploités, et le minerai est traité pour être utilisé sous sa forme brute ou dans la production de l'acier.</French>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Erzgestein[COLOR_REVERT] kann auf [COLOR_HIGHLIGHT_TEXT]Hügeln[COLOR_REVERT] jedes Terrains vorkommen.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Reiche Eisen- oder Silbervorkommen fanden die Europäer in der Neuen Welt nur an ausgewählten Orten vor. Doch häufig trafen sie in Hügeln und Bergen auf Gesteinsschichten, in denen geringe Erzvorkommen vorhanden waren. Nicht immer war ihre Ausbeutung wirtschaftlich sinnvoll, doch mancherorts bot sie den Schürfern eine Möglichkeit, zumindestens ihren Lebensunterhalt zu verdienen.</German>
         <Italian>[BOLD]Strategia :[\BOLD][PARAGRAPH:1]Quando le prime civiltà cominciarono a usare il metallo per costruire oggetti e armi, il più utilizzato era il bronzo; i vantaggi di questo metallo erano la sua facile reperibilità e la semplice lavorazione. Sfortunatamente, si rivelò troppo morbido per creare lame efficaci. A partire dalla metà del 8° secolo a. C., in Europa il bronzo venne sostituito dal ferro, dando così il via all'Età del Ferro. Da allora, il ferro è diventato una risorsa importante: i depositi di questo metallo e i minerali che lo contengono si trovano nelle montagne, dalle quali vengono estratti e processati per essere usati in forma grezza o nella produzione di acciaio.</Italian>
@@ -1129,7 +1129,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_WATERHOLE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Watering hole[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] A waterhole is a depression in the ground in which water can collect, or a more permanent pool in the bed of an ephemeral river. It's a welcome sight for a traveler lost in the desert, and also a good place for predators to wait for prey.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Waterholes[COLOR_REVERT] are found in [LINK=TERRAIN_DESERT]deserts[\LINK]. Unlike an oasis, a waterhole is too temporary to support plant growth, or any permanent settlement. It can be a good location for hunting.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] A waterhole is a depression in the ground in which water can collect, or a more permanent pool in the bed of an ephemeral river. It's a welcome sight for a traveler lost in the desert, and also a good place for predators to wait for prey.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tiertränkstellen[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -1369,7 +1369,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_VULTURE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vultures[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]A vulture scavenges on carrion. Several species have a good sense of smell, unusual for raptors, and are able to smell dead animals from great heights, up to a mile away. Vast numbers have been seen upon battlefields. Vultures appear in many Mesoamerican myths, legends, and fables, with many separate civilizations such as the Mayan and Aztec developing a range of stories around vultures. Vultures can safely digest putrid carcasses infected with botulinum toxin, hog cholera bacteria, and anthrax bacteria that would be lethal to other scavengers and remove these bacteria from the environment.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vultures[COLOR_REVERT] are scavengers, useless for food or feathers. They're usually found in open country where they benefit from their excellent vision. They're always looking for a chance to steal meat from hunters.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]A vulture scavenges on carrion. Several species have a good sense of smell, unusual for raptors, and are able to smell dead animals from great heights, up to a mile away. Vast numbers have been seen upon battlefields. Vultures appear in many Mesoamerican myths, legends, and fables, with many separate civilizations such as the Mayan and Aztec developing a range of stories around vultures. Vultures can safely digest putrid carcasses infected with botulinum toxin, hog cholera bacteria, and anthrax bacteria that would be lethal to other scavengers and remove these bacteria from the environment.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Geier[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1383,7 +1383,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_IGUANA_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Iguana[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The iguana is a herbivorous lizard native to tropical areas of Mexico, Central America, South America, and the Caribbean. The word "iguana" is derived from the original Taino name for the species, iwana. Iguanas have keen vision and can see shapes, shadows, colors, and movement at long distances. They're about a meter and a half, five feet, in length. Iguanas have historically featured in the culinary traditions of Mexico and Central America.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Iguanas[COLOR_REVERT] live in the tropics, happy in wet or dry terrain. They're a good meat source. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The iguana is a herbivorous lizard native to tropical areas of Mexico, Central America, South America, and the Caribbean. The word "iguana" is derived from the original Taino name for the species, iwana. Iguanas have keen vision and can see shapes, shadows, colors, and movement at long distances. They're about a meter and a half, five feet, in length. Iguanas have historically featured in the culinary traditions of Mexico and Central America.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Iguana[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1652,7 +1652,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_WALRUSS</Tag>
-        <English>Walruses</English>
+        <English>Walrus</English>
         <French>
             <Text>Eléphant de mer</Text>
             <Gender>Male</Gender>
@@ -1691,7 +1691,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PENGUIN_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Penguin[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Penguins, aquatic flightless birds, live south of the equator, with the sole exception of the Galapagos penquin. In size they range from one to 35 kilograms, in height from 30 cm to one meter. They eat fish and are eaten by orcas. They have no fear of humans so the birds and their eggs can be a food source for desperate adventurers.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Penguins[COLOR_REVERT] live along the coasts of South America. They're also found on islands or ice shelves. Penguin eggs can be eaten but there are no permanent human settlements that rely on penguins as food.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Penguins, aquatic flightless birds, live south of the equator, with the sole exception of the Galapagos penquin. In size they range from one to 35 kilograms, in height from 30 cm to one meter. They eat fish and are eaten by orcas. They have no fear of humans so the birds and their eggs can be a food source for desperate adventurers.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pinguin[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1737,7 +1737,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HUMPBACK_WHALE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Humpback whales[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Humpback whales, one of the baleen species, travel the world’s oceans finding one another through their distinctive songs. They’re around 15 meters in length with a weight of thirty tonnes. One distinctive hunting technique is [BOLD]bubble net feeding[\BOLD]; a group of whales dive up to 20 meters below the surface and swim in a shrinking circle blowing air from their blowholes creating a vertical cylinder-ring of bubbles that captures the prey above them. Humpbacks are hunted for blubber and meat.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Humpback whales[COLOR_REVERT] are harpooned for blubber and meat. They're found in all the world's oceans but they prefer to raise their calves in the Arctic, away from predatory orcas that will push down a humpback calf until it drowns. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Humpback whales, one of the baleen species, travel the world’s oceans finding one another through their distinctive songs. They’re around 15 meters in length with a weight of thirty tonnes. One distinctive hunting technique is [BOLD]bubble net feeding[\BOLD]; a group of whales dive up to 20 meters below the surface and swim in a shrinking circle blowing air from their blowholes creating a vertical cylinder-ring of bubbles that captures the prey above them. Humpbacks are hunted for blubber and meat.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Buckelwale[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1751,7 +1751,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SWEET_POTATO_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sweet Potatoes[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Sweet potatoes, members of the morning glory family, grow mainly in the tropics.  They do not tolerate frost. The first Europeans to taste sweet potatoes were members of Christopher Columbus's expedition in 1492. Sweet potato leaves are edible and can be prepared like spinach or turnip greens. While sweet potato provides less edible energy and protein per unit weight than cereals, it has higher nutrient density.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sweet potatoes[COLOR_REVERT] are an excellent food source with even more vitamins than the common potato. They grow in [LINK=FEATURE_JUNGLE]jungles[\LINK].[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Sweet potatoes, members of the morning glory family, grow mainly in the tropics.  They do not tolerate frost. The first Europeans to taste sweet potatoes were members of Christopher Columbus's expedition in 1492. Sweet potato leaves are edible and can be prepared like spinach or turnip greens. While sweet potato provides less edible energy and protein per unit weight than cereals, it has higher nutrient density.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Süßkratoffeln[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1765,7 +1765,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SQUASH_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Squash[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Squash is a traditional Indigenous food. It was domesticated early, followed by maize and then beans, becoming part of the Three Sisters agricultural system of companion planting. Archaeological investigations show domestication of squash going back over 8,000 years from the very southern parts of Canada down to Argentina and Chile.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Squash[COLOR_REVERT] is a satisfying food, good for endurance. It grows in varied terrains but, more than most crops, squash abundance depends on well-fertilized soil. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Squash is a traditional Indigenous food. It was domesticated early, followed by maize and then beans, becoming part of the Three Sisters agricultural system of companion planting. Archaeological investigations show domestication of squash going back over 8,000 years from the very southern parts of Canada down to Argentina and Chile.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Zuchini[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1812,7 +1812,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_APPLES_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Apple Trees[COLOR_REVERT] can be found in temperate regions, like grasslands and plains. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Apples originated in Central Asia, where their wild ancestor is still found today. After being grown for thousands of years in Asia and Europe they were brought to North America by European colonists. They were especially popular for making cider. Johnny Appleseed was an American pioneer nurseryman who introduced apple trees to Pennsylvania, Ohio, Indiana, Illinois and Ontario, as well as the northern counties of present-day West Virginia. He became an American legend while still alive due to his leadership in conservation. Apples grow in [BOLD]temperate[\BOLD] climates.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Apple trees[COLOR_REVERT] can be found in temperate regions, like grasslands and plains. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Apples originated in Central Asia, where their wild ancestor is still found today. After being grown for thousands of years in Asia and Europe they were brought to North America by European colonists. They were especially popular for making cider. Johnny Appleseed was an American pioneer nurseryman who introduced apple trees to Pennsylvania, Ohio, Indiana, Illinois and Ontario, as well as the northern counties of present-day West Virginia. He became an American legend while still alive due to his leadership in conservation. Apples grow in [BOLD]temperate[\BOLD] climates.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]pommiers[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Apfelbäume[COLOR_REVERT]</German>
     </TEXT>
@@ -1827,7 +1827,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CHERRIES_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cherry Trees[COLOR_REVERT] can be found in temperate regions, like grasslands and plains. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Cherries arrived in North America in 1639 in Brooklyn, New York (then called "New Netherland") when the region was under Dutch sovereignty. A cherry tree will take three to four years once it is planted in the orchard to produce its first crop of fruit, and seven years to attain full maturity. Hand picking is widely used for sweet as well as sour cherries to harvest the fruit to avoid damage to both fruit and trees. Cherry trees require a certain number of chilling hours each year to break dormancy and bloom and produce fruit. Because of this cold-weather requirement, cherries cannot grow in tropical climates.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cherry trees[COLOR_REVERT] can be found in temperate regions like grasslands and plains. A mature orchard is an abundant source of food. Like most fruit it also provides some health to the city when worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Cherries arrived in North America in 1639 in Brooklyn, New York (then called "New Netherland") when the region was under Dutch sovereignty. A cherry tree will take three to four years once it is planted in the orchard to produce its first crop of fruit, and seven years to attain full maturity. Hand picking is widely used for sweet as well as sour cherries to harvest the fruit to avoid damage to both fruit and trees. Cherry trees require a certain number of chilling hours each year to break dormancy and bloom and produce fruit. Because of this cold-weather requirement, cherries cannot grow in tropical climates.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kirschbäume[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1841,7 +1841,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PINE_APPLE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pineapple Trees[COLOR_REVERT] can be found in warm and tropical regions, like savannah or marsh. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The pineapple is indigenous to South America, where it has been cultivated for many centuries. The introduction of the pineapple to Europe in the 17th century made it a significant cultural icon of luxury. It is the third most important tropical fruit in world production. Archaeological evidence of cultivation goes back to 1200 BC in Peru and 200 BC in Mexico where it was cultivated by the Mayas and the Aztecs. Columbus brought the plant back to Spain and called it piña de Indes, meaning "pine of the Indians".</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pineapple trees[COLOR_REVERT] grow in warm and tropical regions, like savannah or marsh. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The pineapple is indigenous to South America, where it has been cultivated for many centuries. The introduction of the pineapple to Europe in the 17th century made it a significant cultural icon of luxury. It is the third most important tropical fruit in world production. Archaeological evidence of cultivation goes back to 1200 BC in Peru and 200 BC in Mexico where it was cultivated by the Mayas and the Aztecs. Columbus brought the plant back to Spain and called it piña de Indes, meaning "pine of the Indians".</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ananasbäume[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1855,7 +1855,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PASSION_FRUIT_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Passionfruit Trees[COLOR_REVERT] can be found in warm and tropical regions, like savannah or marsh. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Passion fruit is a vine native to southern Brazil through Paraguay and northern Argentina. It's cultivated commercially in tropical and subtropical areas for its sweet, seedy fruit. In a 50 gram amount (roughly the size of one fruit), fresh passion fruit contains 18% of the daily value of vitamin C, 21% dietary fiber, B vitamins riboflavin (5.5% DV) and niacin (5% DV), 6% iron and 5% phosphorus. It's popular for desserts and drinks.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Passionfruit trees[COLOR_REVERT] are native to warm and tropical regions, like savannah or marsh. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Passion fruit is a vine native to southern Brazil through Paraguay and northern Argentina. It's cultivated commercially in tropical and subtropical areas for its sweet, seedy fruit. In a 50 gram amount (roughly the size of one fruit), fresh passion fruit contains 18% of the daily value of vitamin C, 21% dietary fiber, B vitamins riboflavin (5.5% DV) and niacin (5% DV), 6% iron and 5% phosphorus. It's popular for desserts and drinks.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Passionsfruchtbaum[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1869,7 +1869,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GUAVA_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Guava Trees[COLOR_REVERT] can be found in warm and tropical regions, like savannah or marsh. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Guava is a fruit cultivated in many tropical and subtropical regions. Guavas are one of the few tropical fruits that can grow to fruiting size in pots indoors. When grown from seed, guava trees can bear fruit in two years, and can continue to do so for forty years. The popular beverage agua fresca is often made with guava. It also can be eaten raw, like an apple.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Guava trees[COLOR_REVERT] can be found in warm and tropical regions, like savannah or marsh. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Guava is a fruit cultivated in many tropical and subtropical regions. Guavas are one of the few tropical fruits that can grow to fruiting size in pots indoors. When grown from seed, guava trees can bear fruit in two years, and can continue to do so for forty years. The popular beverage agua fresca is often made with guava. It also can be eaten raw, like an apple.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Guavabäume[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1883,7 +1883,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PAPAYA_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Papaya Trees[COLOR_REVERT] can be found in warm and tropical regions, like savannah or marsh. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Native to Mexico and northern South America, papaya has become naturalized throughout the Caribbean Islands, Florida, Texas, California, Hawaii, and other tropical and subtropical regions of the world. It is, however, highly frost-sensitive. The unripe green fruit can be eaten cooked, but not raw due to its poisonous latex content. The ripe fruit of the papaya is usually eaten raw, without skin or seeds. In traditional medicine, papaya leaves have been used as a treatment for malaria.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Papaya trees[COLOR_REVERT] grow in warm and tropical regions, like savannah or marsh. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Native to Mexico and northern South America, papaya has become naturalized throughout the Caribbean Islands, Florida, Texas, California, Hawaii, and other tropical and subtropical regions of the world. It is, however, highly frost-sensitive. The unripe green fruit can be eaten cooked, but not raw due to its poisonous latex content. The ripe fruit of the papaya is usually eaten raw, without skin or seeds. In traditional medicine, papaya leaves have been used as a treatment for malaria.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Papayabäume[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1902,7 +1902,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_LEMONS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lemons[COLOR_REVERT] can be found in warm and tropical regions, like savannah or marsh. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The lemon is a species of small evergreen tree. Lemon juice is about 5% to 6% citric acid, with a pH of around 2.2, giving it a sour taste. Lemons were introduced to the Americas in 1493 when Christopher Columbus brought lemon seeds to Hispaniola on his voyages. Spanish conquest throughout the New World helped spread lemon seeds. It was mainly used as an ornamental plant and for medicine.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lemons[COLOR_REVERT] flourish in warm and tropical regions, like savannah or marsh. They are a primary source of Vitain C which will provide health to the city when worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The lemon is a species of small evergreen tree. Lemon juice is about 5% to 6% citric acid, with a pH of around 2.2, giving it a sour taste. Mixing the sour lemon with sugar in puddings and baking has been a popular treat for centuries. [PARAGRAPH:1]Lemons were introduced to the Americas in 1493 when Christopher Columbus brought lemon seeds to Hispaniola on his voyages. Spanish conquest throughout the New World helped spread lemon seeds. It was mainly used as an ornamental plant and for medicine.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Limonenbäume[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1921,7 +1921,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TOMATO_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tomatos[COLOR_REVERT] can be grown in temperate and warm regions, like plains, prairies and graslands. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Tomatoes originated in western South America and Central America. The Nahuatl word tomatl gave rise to the Spanish word tomate, from which the English word tomato derived. Its domestication and use as a cultivated food may have originated with the Indigenous peoples of Mexico. Aztecs used tomatoes in their cooking at the time of the Spanish conquest of the Aztec Empire. The Spanish then brought the plant to Europe. From Spain the tomato was introduced to other parts of the European-colonized world during the 16th century.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tomatoes[COLOR_REVERT] can be grown in temperate and warm regions, like plains, prairies and grasslands. Once considered poisonous, they are a versatile food and also provide a bit of health to the city when worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Tomatoes originated in western South America and Central America. The Nahuatl word tomatl gave rise to the Spanish word tomate, from which the English word tomato derived. Its domestication and use as a cultivated food may have originated with the Indigenous peoples of Mexico. Aztecs used tomatoes in their cooking at the time of the Spanish conquest of the Aztec Empire. The Spanish then brought the plant to Europe. From Spain the tomato was introduced to other parts of the European-colonized world during the 16th century.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]tomates[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tomaten[COLOR_REVERT]</German>
     </TEXT>
@@ -1941,13 +1941,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_PEANUT_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Peanuts[COLOR_REVERT] can be found in warm plain regions. Although edible they are an excellent cash crop. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The peanut is a legume grown mainly for its edible seeds. It's widely grown in the tropics and subtropics . Peanuts are valuable both as a grain legume and, due to their high oil content, as an oil crop. Cultivation was well-established in the Americas before the Spanish arrived. Conquistadors found the tlalcacahuatl (the plant's Nahuatl name) being offered for sale in the marketplace of Tenochtitlan.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Peanuts[COLOR_REVERT] can be found in warm plain regions. Although edible they are an excellent cash crop, grown on many plantations. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The peanut is a legume grown mainly for its edible seeds. It's widely grown in the tropics and subtropics. Peanuts are valuable both as a grain legume and, due to their high oil content, as an oil crop. Cultivation was well-established in the Americas before the Spanish arrived. Conquistadors found the tlalcacahuatl (the plant's Nahuatl name) being offered for sale in the marketplace of Tenochtitlan.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]Arachides[COLOR_REVERT]</French>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Erdüsse[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TUNDRA_BERRIES</Tag>
-        <English>Tundra Berries</English>
+        <English>Lingonberries</English>
         <German>
             <Text>Tundrabeeren</Text>
             <Gender>Male</Gender>
@@ -1956,7 +1956,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_TUNDRA_BERRIES_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tundraberries[COLOR_REVERT] can be found in cold norther regions like tundras and taigas. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Lingonberries are native to boreal forest and Arctic tundra throughout the Northern Hemisphere. They spread by underground stems to form dense clonal colonies. They're usually protected from severe cold by snow cover. The lingonberry is extremely hardy, tolerating temperatures as low as -40 degree C (which is -40 degree F) or lower, but grows poorly where summers are hot. Alaska natives mix the berries with rose hip pulp and sugar to make jam, cook the berries as a sauce, and store the berries for future use. The Haida people, Hesquiaht First Nation, Wuikinuxv and Tsimshian all use the berries as food.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lingonberries[COLOR_REVERT] can be found in cold northern regions like tundras and taigas. They're a source of food in a land where food is rare. They also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Lingonberries are native to boreal forest and Arctic tundra throughout the Northern Hemisphere. They spread by underground stems to form dense clonal colonies. They're usually protected from severe cold by snow cover. The lingonberry is extremely hardy, tolerating temperatures as low as -40 degree C (which is -40 degree F) or lower, but grows poorly where summers are hot. Alaska natives mix the berries with rose hip pulp and sugar to make jam, cook the berries as a sauce, and store the berries for future use. The Haida people, Hesquiaht First Nation, Wuikinuxv and Tsimshian all use the berries as food.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tundrabeeren[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1970,7 +1970,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HUCKLE_BERRIES_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Huckleberries[COLOR_REVERT] can be found in temperate regions like graslands and stone steppes. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]From coastal Central California through Oregon to southern Washington and British Columbia, the red huckleberry is found in the maritime-influenced plant community. In the Pacific Northwest and mountains of Montana and Idaho, huckleberries grow in varied habitats, such as mid-alpine regions up to 11,500 feet (3,500 m) above sea level, mountain slopes, forests, or lake basins. The plant grows best in damp, acidic soil having volcanic origin, attaining under optimal conditions heights of 1.5 to 2 m (4.9 to 6.6 ft), usually ripening in mid-to-late summer or later at high elevations.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Huckleberries[COLOR_REVERT] can be found in temperate regions like grasslands and prairie or steppe terrain. They're a source of food. Like most fruit they provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]From coastal Central California through Oregon to southern Washington and British Columbia, the red huckleberry is found in the maritime-influenced plant community. In the Pacific Northwest and mountains of Montana and Idaho, huckleberries grow in varied habitats, such as mid-alpine regions up to 11,500 feet (3,500 m) above sea level, mountain slopes, forests, or lake basins. The plant grows best in damp, acidic soil having volcanic origin, attaining under optimal conditions heights of 1.5 to 2 m (4.9 to 6.6 ft), usually ripening in mid-to-late summer or later at high elevations.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Heidelbeeren[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1984,7 +1984,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BLUE_BERRIES_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blueberries[COLOR_REVERT] can be found in temperate regions like graslands and stone steppes. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Wild blueberries are native to North America. Canada consumed wild blueberries for millennia before North America was colonized by Europeans. Blueberry bushes typically bear fruit in the middle of the growing season: fruiting times are affected by local conditions such as [BOLD]climate, altitude and latitude[\BOLD], so the time of harvest in the northern hemisphere can vary from May to August.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blueberries[COLOR_REVERT] grow on bushes in temperate regions like prairie or steppe grasslands. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Wild blueberries are native to North America. Canada consumed wild blueberries for millennia before North America was colonized by Europeans. Blueberry bushes typically bear fruit in the middle of the growing season: fruiting times are affected by local conditions such as [BOLD]climate, altitude and latitude[\BOLD], so the time of harvest in the northern hemisphere can vary from May to August.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blaubeeren[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1998,7 +1998,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CRAN_BERRIES_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cranberries[COLOR_REVERT] can  be found in cool regions like tundra or moist wetlands with ponds and moss. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Cranberries, a group of evergreen dwarf shrubs, can be found in acidic bogs throughout the cooler regions of the Northern Hemisphere. In North America, the Narragansett people of the Algonquian nation in the regions of New England used cranberries in [BOLD]pemmican[\BOLD] for food and also for dye. In 1550 James White Norwood mentions Native Americans using cranberries. In James Rosier's book "The Land of Virginia" Europeans come ashore to be met by the local Indigenous people bearing bark cups full of cranberries. In 1663 the Pilgrim cookbook has a recipe for cranberry sauce.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cranberries[COLOR_REVERT] grow in cool regions like tundra or moist wetlands with ponds and moss. They are a source of food and also provide health to the city when worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Cranberries, a group of evergreen dwarf shrubs, can be found in acidic bogs throughout the cooler regions of the Northern Hemisphere. In North America, the Narragansett people of the Algonquian nation in the regions of New England used cranberries in [BOLD]pemmican[\BOLD] for food and also for dye. In 1550 James White Norwood mentions Native Americans using cranberries. In James Rosier's book "The Land of Virginia" Europeans come ashore to be met by the local Indigenous people bearing bark cups full of cranberries. In 1663 the Pilgrim cookbook has a recipe for cranberry sauce.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moosbeeren[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -2017,7 +2017,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_SHRIMP_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Shrimps[COLOR_REVERT] are like fish an excellent source of food that can be found in boath coastal and ocean areas. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Shrimp are swimming crustaceans with long narrow muscular abdomens and long antennae. Shrimp are an important food source for larger animals ranging from fish to whales. Shrimp are widespread, and can be found near the seafloor of most coasts and estuaries, as well as in rivers and lakes. In North America, Indigenous peoples of the Americas captured shrimp and other crustaceans in fishing weirs and traps made from branches and Spanish moss, or used nets woven with fibre beaten from plants. At the same time early European settlers, oblivious to the protein-rich coasts all about them, starved from lack of protein.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Shrimps[COLOR_REVERT] are, like fish, an excellent source of food that can be found in both coastal and ocean areas. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Shrimp are swimming crustaceans with long narrow muscular abdomens and long antennae. Shrimp are an important food source for larger animals ranging from fish to whales.[PARAGRAPH:1]Shrimp are widespread, and can be found near the seafloor of most coasts and estuaries, as well as in rivers and lakes.[PARAGRAPH:1]In North America, Indigenous peoples of the Americas captured shrimp and other crustaceans in fishing weirs and traps made from branches and Spanish moss, or used nets woven with fibre beaten from plants. At the same time early European settlers, oblivious to the protein-rich coasts all about them, starved from lack of protein.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Shrimps[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -2036,7 +2036,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_RICE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cassava[COLOR_REVERT] can be found in wet tropical regions and is a great source of food. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Rice is the staple food of over half the world's population. The traditional method for cultivating rice is flooding the fields while, or after, setting the young seedlings. This simple method requires sound irrigation planning but reduces the growth of less robust weed and pest plants that have no submerged growth state, and deters vermin.[PARAGRAPH:2]Wild rice, manoomin, is not directly related to domesticated rice. Native Americans and others harvest wild rice by canoeing into a stand of plants, and bending the ripe grain heads with two small wooden poles/sticks called "knockers" or "flails", so as to thresh the seeds into the canoe.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cassava[COLOR_REVERT] can be found in wet tropical regions and is a great source of food. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Rice is the staple food of over half the world's population. The traditional method for cultivating rice is flooding the fields while, or after, setting the young seedlings. This simple method requires sound irrigation planning but reduces the growth of less robust weed and pest plants that have no submerged growth state, and deters vermin.[PARAGRAPH:1]Wild rice, manoomin, is not directly related to domesticated rice. Native Americans and others harvest wild rice by canoeing into a stand of plants, and bending the ripe grain heads with two small wooden poles/sticks called "knockers" or "flails", so as to thresh the seeds into the canoe.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Reis[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -2083,12 +2083,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MUSHROOMS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mushrooms[COLOR_REVERT] can mostly be found in temperate but moist regions like e.g. wetlands and sometimes also in temperate forrest. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]A mushroom is the fleshy, spore-bearing fruiting body of a fungus, typically produced above ground, on soil, or on its food source. Traditional methods for identification have developed into a fine art harking back to medieval times. Separating edible from poisonous species requires meticulous attention to detail; there is no single trait by which all toxic mushrooms can be identified, nor one by which all edible mushrooms can be identified.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mushrooms[COLOR_REVERT] can mostly be found in temperate but moist regions like wetlands or temperate forests where they spring up after a rain. They are a source of food and also provide some health to the city when worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]A mushroom is the fleshy, spore-bearing fruiting body of a fungus, typically produced above ground, on soil, or on its food source. Traditional methods for identification have developed into a fine art harking back to medieval times. Separating edible from poisonous species requires meticulous attention to detail; there is no single trait by which all toxic mushrooms can be identified, nor one by which all edible mushrooms can be identified.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pilze[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BEE_HIVE</Tag>
-        <English>Bee Hive</English>
+        <English>Beehives</English>
         <French>
             <Text>Ruche d'abeille</Text>
             <Gender>Male</Gender>
@@ -2112,7 +2112,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BEE_HIVE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bee Hive[COLOR_REVERT] can be found in both temperate forests as well as tropical jungles. They are a source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Bees produce honey from floral nectar. In the hive bees store honey in wax structures called honeycombs. Most microorganisms do not grow in honey, so sealed honey does not spoil, even after thousands of years. Possibly the world's oldest fermented beverage, dating from 9,000 years ago, mead is made by adding yeast to honey-water and fermenting it for weeks or months. One hundred grams of honey provides about 1,270 kJ (304 kcal) of energy.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Beehives[COLOR_REVERT] occur in temperate forests as well as in tropical jungles. They are a rich source of food and also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Bees produce honey from floral nectar. In the hive bees store honey in wax structures called honeycombs.[PARAGRAPH:1]Most microorganisms do not grow in honey, so sealed honey does not spoil, even after thousands of years. Possibly the world's oldest fermented beverage, dating from 9,000 years ago, mead is made by adding yeast to honey-water and fermenting it for weeks or months.[PARAGRAPH:1]One hundred grams of honey provides about 1,270 kJ (304 kcal) of energy.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bienenstöcke[COLOR_REVERT]</German>
     </TEXT>
 </Civ4GameText>
