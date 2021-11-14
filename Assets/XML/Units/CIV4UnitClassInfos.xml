@@ -557,6 +557,11 @@
             <DefaultUnit>UNIT_CORVETTE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_NAVAL_BRIG</Type>
+            <Description>TXT_KEY_UNITCLASS_NAVAL_BRIG</Description>
+            <DefaultUnit>UNIT_NAVAL_BRIG</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_FRIGATE</Type>
             <Description>TXT_KEY_UNITCLASS_FRIGATE</Description>
             <DefaultUnit>UNIT_FRIGATE</DefaultUnit>

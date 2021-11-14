@@ -764,6 +764,19 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_NAVAL_BRIG</Tag>
+        <English>
+            <Text>Naval Brig:Naval Brigs</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Flottenbrigg:Flottenbriggs</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COTTON</Tag>
         <English>Cotton</English>
         <French>

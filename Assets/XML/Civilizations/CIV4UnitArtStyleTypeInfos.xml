@@ -167,6 +167,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_NAVAL_BRIG</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_DANISH_NAVAL_BRIG</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_GALLEON</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -471,6 +478,13 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_DUTCH_CORVETTE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_NAVAL_BRIG</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_DUTCH_NAVAL_BRIG</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -781,6 +795,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_NAVAL_BRIG</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_ENGLAND_NAVAL_BRIG</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_GALLEON</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -1085,6 +1106,13 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_FRANCE_CORVETTE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_NAVAL_BRIG</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_FRANCE_NAVAL_BRIG</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -1395,6 +1423,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_NAVAL_BRIG</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_PORTUGAL_NAVAL_BRIG</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_GALLEON</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -1699,6 +1734,20 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_RUSSIA_CORVETTE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_NAVAL_BRIG</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_RUSSIA_NAVAL_BRIG</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_NAVAL_BRIG</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_RUSSIA_NAVAL_BRIG</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -2009,6 +2058,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_NAVAL_BRIG</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_SPAIN_NAVAL_BRIG</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_GALLEON</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -2313,6 +2369,13 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_SWEDISH_CORVETTE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_NAVAL_BRIG</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_SWEDISH_NAVAL_BRIG</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>

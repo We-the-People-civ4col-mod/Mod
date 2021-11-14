@@ -318,7 +318,7 @@
             <RevealImprovements/>
             <FreeUnits>
                 <FreeUnit>
-                    <UnitClass>UNITCLASS_CORVETTE</UnitClass>
+                    <UnitClass>UNITCLASS_NAVAL_BRIG</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>

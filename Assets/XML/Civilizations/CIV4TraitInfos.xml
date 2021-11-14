@@ -458,6 +458,10 @@
                     <iChange>1</iChange>
                 </UnitMoveChange>
                 <UnitMoveChange>
+                    <UnitClass>UNITCLASS_NAVAL_BRIG</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+                <UnitMoveChange>
                     <UnitClass>UNITCLASS_FRIGATE</UnitClass>
                     <iChange>1</iChange>
                 </UnitMoveChange>
@@ -574,6 +578,10 @@
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_CORVETTE</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_NAVAL_BRIG</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
@@ -6446,6 +6454,10 @@
             <UnitStrengthModifiers>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_CORVETTE</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_NAVAL_BRIG</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
