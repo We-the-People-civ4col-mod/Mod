@@ -54,7 +54,7 @@ https://forums.civfanatics.com/forums/civ4col-we-the-people.591/
 
 ------------------
 
-Current active WTP team members
+Current WTP team members
 
 	raystuttgart
 	Devolution
@@ -64,6 +64,7 @@ Current active WTP team members
 	Fürstbischof
 	Kendon
 	Raubwürger
+	Flavius Belisarius
 
 Former (now inactive) RaR members:
 
@@ -84,6 +85,7 @@ The TAC team, of course.
 Otherwise basically every modder who has published so far.
 Please tell us if we use parts of your work and have forgotten your name.
 
+	Mighty Toad
 	Lethiel
 	Zeta Nexus
 	Vaeringjar
