@@ -3773,7 +3773,8 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 
 	// WTP, ray Slave Ship - START
 	// a Slave Ship can only carry Slaves or Goods
-	if (pTransport->getUnitInfo().isSlaveShip())
+	// to avoid AI issues - only for Human player
+	if (pTransport->getUnitInfo().isSlaveShip() && isHuman())
 	{
 		// it is neither Goods nor a Slave
 		if (getSpecialUnitType() == NO_SPECIALUNIT && !getUnitInfo().LbD_canRevolt())
@@ -3782,6 +3783,20 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 		}
 	}
 	// WTP, ray Slave Ship - END
+
+	// WTP, ray Treasure Ship - START
+	// a Treasure Ship can only carry Treasures or Goods
+	// to avoid AI issues - only for Human player
+	if (pTransport->getUnitInfo().isTreasureShip() && isHuman())
+	{
+		// it is neither Goods nor a Slave
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !getUnitInfo().isTreasure())
+		{
+			return false;
+		}
+	}
+	// WTP, ray Treasure Ship - END
+
 
 //	if (!(pTransport->cargoSpaceAvailable(getSpecialUnitType(), getDomainType())))
 //	{

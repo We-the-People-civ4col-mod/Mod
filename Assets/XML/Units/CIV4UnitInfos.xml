@@ -38843,6 +38843,7 @@
             <bMechanized>1</bMechanized>
             <bLineOfSight>0</bLineOfSight>
             <bHiddenNationality>0</bHiddenNationality>
+            <bTreasureShip>1</bTreasureShip>
             <bAlwaysHostile>0</bAlwaysHostile>
             <bTreasure>0</bTreasure>
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>

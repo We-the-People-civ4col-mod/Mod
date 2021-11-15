@@ -762,6 +762,7 @@ public:
 	bool isLineOfSight() const;
 	bool isHiddenNationality() const;
 	bool isSlaveShip() const; // WTP, ray Slave Ship
+	bool isTreasureShip() const;// WTP, ray Treasure Ship
 	bool isAlwaysHostile() const;
 	bool isTreasure() const;
 	// R&R, ray, Changes for Treasures, START
@@ -943,6 +944,7 @@ protected:
 	bool m_bLineOfSight;
 	bool m_bHiddenNationality;
 	bool m_bSlaveShip; // WTP, ray Slave Ship
+	bool m_bTreasureShip; // WTP, ray Treasure Ship
 	bool m_bAlwaysHostile;
 	bool m_bTreasure;
 	// R&R, ray, Changes for Treasures, START

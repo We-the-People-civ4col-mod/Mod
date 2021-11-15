@@ -130,6 +130,7 @@
 	<ElementType name="bLineOfSight" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bHiddenNationality" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bSlaveShip" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bTreasureShip" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bAlwaysHostile" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bTreasure" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNoRevealMap" content="textOnly" dt:type="boolean"/>
@@ -463,6 +464,7 @@
 		<element type="bLineOfSight"/>
 		<element type="bHiddenNationality"/>
 		<element type="bSlaveShip" minOccurs="0"/>
+		<element type="bTreasureShip" minOccurs="0"/>
 		<element type="bAlwaysHostile"/>
 		<element type="bTreasure"/>
 		<element type="bAnimal" minOccurs="0"/>

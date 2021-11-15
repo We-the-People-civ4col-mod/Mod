@@ -5176,6 +5176,13 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 				return false;
 			}
 			// WTP, ray Slave Ship - END
+
+			// WTP, ray Treasure Ship - START
+			else if (pUnit->getUnitInfo().isTreasureShip())
+			{
+				return false;
+			}
+			// WTP, ray Treasure Ship - END
 		}
 	}
 
@@ -5746,6 +5753,7 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 								|| (pUnit->getUnitInfo().getSpecialCargo() != NO_SPECIALUNIT && pUnit->getUnitInfo().getSpecialCargo() != SPECIALUNIT_COLONIST_UNIT)
 								|| (pUnit->cargoSpace() - pUnit->getCargo() <= 0)
 								|| (pUnit->getUnitInfo().isSlaveShip()) // WTP, ray Slave Ship
+								|| (pUnit->getUnitInfo().isTreasureShip()) // WTP, ray Treasure Ship
 								))
 							{
 								bValid = true;

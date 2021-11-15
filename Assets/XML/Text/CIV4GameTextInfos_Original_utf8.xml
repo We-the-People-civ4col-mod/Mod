@@ -9321,8 +9321,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_IS_SLAVE_SHIP</Tag>
-        <English>[ICON_BULLET]Can carry only goods or slaves</English>
-        <German>[ICON_BULLET]Kann nur Güter oder Sklaven laden</German>
+        <English>[ICON_BULLET]Can carry only goods or [COLOR_HIGHLIGHT_TEXT]slaves[COLOR_REVERT]</English>
+        <German>[ICON_BULLET]Kann nur Güter oder [COLOR_HIGHLIGHT_TEXT]Sklaven[COLOR_REVERT] laden</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_IS_TREASURE_SHIP</Tag>
+        <English>[ICON_BULLET]Can carry only goods or [COLOR_HIGHLIGHT_TEXT]treasures[COLOR_REVERT]</English>
+        <German>[ICON_BULLET]Kann nur Güter oder [COLOR_HIGHLIGHT_TEXT]Schätze[COLOR_REVERT] laden</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ALWAYS_HOSTILE</Tag>
