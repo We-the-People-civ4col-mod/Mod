@@ -5083,7 +5083,8 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CARGO_SPACE", kUnitInfo.getCargoSpace()));
 		//TAC Whaling, ray
-		if (kUnitInfo.getSpecialCargo() != NO_SPECIALUNIT && !kUnitInfo.isGatherBoat())
+		// WTP, ray Slave Ship
+		if (kUnitInfo.getSpecialCargo() != NO_SPECIALUNIT && !kUnitInfo.isGatherBoat() && !kUnitInfo.isSlaveShip())
 		{
 			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CARRIES", GC.getSpecialUnitInfo((SpecialUnitTypes) kUnitInfo.getSpecialCargo()).getTextKeyWide()));
 		}
@@ -5212,6 +5213,23 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_HIDDEN_NATIONALITY"));
 	}
+
+	// WTP, ray, display Info if Ship can sail to Port Royal - START
+	if ((kUnitInfo.isHiddenNationality() || kUnitInfo.isSlaveShip()) && kUnitInfo.getDomainType() == DOMAIN_SEA)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CAN_SAIL_TO_PORT_ROYAL"));
+	}
+	// WTP, ray, display Info if Ship can sail to Port Royal - START
+
+	// WTP, ray Slave Ship - START
+	if (kUnitInfo.isSlaveShip())
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_IS_SLAVE_SHIP"));
+	}
+	// WTP, ray Slave Ship - END
+
 	if (kUnitInfo.isAlwaysHostile())
 	{
 		szBuffer.append(NEWLINE);

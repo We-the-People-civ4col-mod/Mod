@@ -2704,6 +2704,7 @@ m_bIgnoreTerrainCost(false),
 m_bMechanized(false),
 m_bLineOfSight(false),
 m_bHiddenNationality(false),
+m_bSlaveShip(false), // WTP, ray Slave Ship
 m_bAlwaysHostile(false),
 m_bTreasure(false),
 // R&R, ray, Changes for Treasures, START
@@ -3119,6 +3120,12 @@ bool CvUnitInfo::isHiddenNationality() const
 {
 	return m_bHiddenNationality;
 }
+// WTP, ray Slave Ship - START
+bool CvUnitInfo::isSlaveShip() const
+{
+	return m_bSlaveShip;
+}
+// WTP, ray Slave Ship - END
 bool CvUnitInfo::isAlwaysHostile() const
 {
 	return m_bAlwaysHostile;
@@ -3589,6 +3596,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bMechanized);
 	stream->Read(&m_bLineOfSight);
 	stream->Read(&m_bHiddenNationality);
+	stream->Read(&m_bSlaveShip); // WTP, ray Slave Ship
 	stream->Read(&m_bAlwaysHostile);
 	stream->Read(&m_bTreasure);
 	// R&R, ray, Changes for Treasures, START
@@ -3811,11 +3819,10 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bMechanized);
 	stream->Write(m_bLineOfSight);
 	stream->Write(m_bHiddenNationality);
+	stream->Write(m_bSlaveShip); // WTP, ray Slave Ship
 	stream->Write(m_bAlwaysHostile);
 	stream->Write(m_bTreasure);
-	// R&R, ray, Changes for Treasures, START
-	stream->Write(m_bNoRevealMap);
-	// R&R, ray, Changes for Treasures, END
+	stream->Write(m_bNoRevealMap); // R&R, ray, Changes for Treasures, START
 
 	// TAC - LbD - Ray - START
 	stream->Write(m_canBecomeExpert);
@@ -3953,6 +3960,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bMechanized,"bMechanized",false);
 	pXML->GetChildXmlValByName(&m_bLineOfSight,"bLineOfSight",false);
 	pXML->GetChildXmlValByName(&m_bHiddenNationality,"bHiddenNationality",false);
+	pXML->GetChildXmlValByName(&m_bSlaveShip,"bSlaveShip",false); // WTP, ray Slave Ship
 	pXML->GetChildXmlValByName(&m_bAlwaysHostile,"bAlwaysHostile",false);
 	pXML->GetChildXmlValByName(&m_bTreasure,"bTreasure",false);
 	// R&R, ray, Changes for Treasures, START

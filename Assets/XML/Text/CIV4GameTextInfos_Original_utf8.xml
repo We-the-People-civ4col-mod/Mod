@@ -9315,6 +9315,16 @@
         <Spanish>[ICON_BULLET]Nacionalidad oculta</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_CAN_SAIL_TO_PORT_ROYAL</Tag>
+        <English>[ICON_BULLET]Can sail to Port Royal</English>
+        <German>[ICON_BULLET]Kann nach Port Royal segeln</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_IS_SLAVE_SHIP</Tag>
+        <English>[ICON_BULLET]Can carry only goods or slaves</English>
+        <German>[ICON_BULLET]Kann nur Güter oder Sklaven laden</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_ALWAYS_HOSTILE</Tag>
         <English>[ICON_BULLET]Can attack without declaring war</English>
         <French>[ICON_BULLET]Peut attaquer sans déclaration de guerre</French>

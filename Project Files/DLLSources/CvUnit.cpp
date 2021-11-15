@@ -3489,7 +3489,9 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 		{
 			CvUnit *pLoopUnit = ::getUnit(pUnitNode->m_data);
 
-			if (!pLoopUnit->getUnitInfo().isHiddenNationality())
+			// WTP, ray Slave Ship 
+			// we allow Slave Ships to sail to Port Royal as well
+			if (!pLoopUnit->getUnitInfo().isHiddenNationality() && !pLoopUnit->getUnitInfo().isSlaveShip())
 			{
 				return false;
 			}
@@ -3768,6 +3770,19 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 	{
 		return false;
 	}
+
+	// WTP, ray Slave Ship - START
+	// a Slave Ship can only carry Slaves or Goods
+	if (pTransport->getUnitInfo().isSlaveShip())
+	{
+		// it is neither Goods nor a Slave
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !getUnitInfo().LbD_canRevolt())
+		{
+			return false;
+		}
+	}
+	// WTP, ray Slave Ship - END
+
 //	if (!(pTransport->cargoSpaceAvailable(getSpecialUnitType(), getDomainType())))
 //	{
 //		return false;
@@ -4492,7 +4507,9 @@ void CvUnit::sailToAfrica(UnitTravelStates eNewState)
 bool CvUnit::canSailToPortRoyal(const CvPlot* pPlot, UnitTravelStates eNewState) const
 {
 	// only Ships with hidden nationality can sail to Port Royal
-	if (!getUnitInfo().isHiddenNationality())
+	// WTP, ray Slave Ship
+	// we allow Slave Ships to sail to Port Royal as well
+	if (!getUnitInfo().isHiddenNationality() && !getUnitInfo().isSlaveShip())
 	{
 		return false;
 	}
@@ -4554,7 +4571,9 @@ bool CvUnit::canSailToPortRoyal(const CvPlot* pPlot, UnitTravelStates eNewState)
 
 		if (pLoopUnit->getTransportUnit() == NULL)
 		{
-			if (!pLoopUnit->getUnitInfo().isHiddenNationality())
+			// WTP, ray Slave Ship
+			// we allow Slave Ships to sail to Port Royal as well
+			if (!pLoopUnit->getUnitInfo().isHiddenNationality() && !getUnitInfo().isSlaveShip())
 			{
 				return false;
 			}
