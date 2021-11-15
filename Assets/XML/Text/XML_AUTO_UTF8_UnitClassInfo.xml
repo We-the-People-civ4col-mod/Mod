@@ -304,6 +304,19 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_SLAVE_BARQIE</Tag>
+        <English>
+            <Text>Slave Barque:Slave Barques</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Sklavenbarke:Sklavenbarken</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BUTCHER</Tag>
         <English>
             <Text>Master Butcher:Master Butchers</Text>

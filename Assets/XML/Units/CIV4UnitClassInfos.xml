@@ -512,6 +512,11 @@
             <DefaultUnit>UNIT_BRIGANTINE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_SLAVE_BARQUE</Type>
+            <Description>TXT_KEY_UNITCLASS_SLAVE_BARQUE</Description>
+            <DefaultUnit>UNIT_SLAVE_BARQUE</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_GALLEON</Type>
             <Description>TXT_KEY_UNITCLASS_GALLEON</Description>
             <DefaultUnit>UNIT_GALLEON</DefaultUnit>

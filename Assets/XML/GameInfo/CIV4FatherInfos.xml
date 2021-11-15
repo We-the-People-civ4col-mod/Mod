@@ -2070,6 +2070,10 @@
                     <UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
                     <iFreeUnits>2</iFreeUnits>
                 </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_SLAVE_BARQUE</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>
                 <FatherPointCost>

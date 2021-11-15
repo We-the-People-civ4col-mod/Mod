@@ -403,6 +403,29 @@
         <German>Eine [COLOR_UNIT_TEXT]Brigantine[COLOR_REVERT] ist ein starkes, gut geschütztes Handelsschiff.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_SLAVE_BARQUE</Tag>
+        <English>
+            <Text>Slave Barque:Slave Barques</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Sklavenbarke:Sklavenbarken</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SLAVE_BARQUE_PEDIA</Tag>
+        <English>In the early 1600s, more than a century after the arrival of Europeans to the Americas, demand for unpaid labor to work plantations made slave-trading a profitable business. The Atlantic slave trade peaked in the last two decades of the 18th century, during and following the Kongo Civil War. To ensure profitability, the owners of the ships divided their hulls into holds with little headroom, so they could transport as many slaves as possible. Unhygienic conditions, dehydration, dysentery and scurvy led to a high mortality rate, on average 15% and up to a third of captives. Often the ships carried hundreds of slaves, who were chained tightly to plank beds. For example, the slave ship Henrietta Marie carried about 200 slaves on the long Middle Passage. They were confined to cargo holds with each slave chained with little room to move. The most significant routes of the slave ships led from the north-western and western coasts of Africa to South America and the south-east coast of what is today the United States, and the Caribbean. As many as 20 million Africans were transported by ship. The transportation of slaves from Africa to America was known as the Middle Passage of the triangular trade.</English>
+        <German>Um hohen Profit aus den Transporten zu schlagen, zogen die Eigentümer der Sklavenschiffe Zwischendecks in den Schiffsrumpf ein, um möglichst viele Sklaven transportieren zu können. Dies führte zu unhygienischen Zuständen und in der Folge zu einer erhöhten Todesrate. Da nur die Widerstandsfähigsten den Transport überlebten, führte dies auch zu einer starken Selektion. Oft transportierten die Schiffe mehrere hundert Sklaven, die auf engen Massen-Pritschen angekettet waren. Beispielsweise konnte das Sklavenschiff „Henrietta Marie“ auf einer Passage bis zu 400 Sklaven befördern, die auf zwei Decks untergebracht waren und die wochenlange Passage angekettet auf je einem halben Quadratmeter verbrachten. Wenn die überladenen Schiffe sanken, rissen sie die Sklaven mit in die Tiefe und in den sicheren Tod.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SLAVE_BARQUE_STRATEGY</Tag>
+        <English>[COLOR_UNIT_TEXT]Slave Barques[COLOR_REVERT] are relatively pricey [COLOR_HIGHLIGHT_TEXT]Merchant Ships[COLOR_REVERT] that can also sail to Port Royal like otherwise only ships with hidden nationality can but they can carry only [COLOR_HIGHLIGHT_TEXT]goods[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]slaves[COLOR_REVERT]. They have five cargo slots and also five speed and are stronger than [LINK=UNIT_BRIGANTINE]Brigantines[\LINK]. [PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Slave Barques[COLOR_REVERT] can be acquired in [LINK=CONCEPT_AFRICA]Africa[\LINK] and be built in colonies with a [LINK=BUILDING_DRYDOCK]Drydock[\LINK] or one of its upgrades. Like most ships, they require [LINK=YIELD_CANNONS]Cannons[\LINK], [LINK=YIELD_ROPE]Ropes[\LINK], [LINK=YIELD_SAILCLOTH]Sailcloth[\LINK] and [LINK=YIELD_TOOLS]Tools[\LINK].[PARAGRAPH:2]For a comparison of all ships that are available, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
+        <German>[COLOR_UNIT_TEXT]Sklavenbarken[COLOR_REVERT] sind relativ teure [COLOR_HIGHLIGHT_TEXT]Handelsschiffe[COLOR_REVERT], die wie sonst nur Schiffe unter versteckter auch nach Port Royal segeln können. Allerdings können sie lediglich [COLOR_HIGHLIGHT_TEXT]Güter[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Sklaven[COLOR_REVERT] laden. Sie haben fünf und auch eine Geschwindigkeit von fünf Feldern pro Zug und sind stärker als eine [LINK=UNIT_BRIGANTINE]Brigantine[\LINK]. [PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sklavenbarken[COLOR_REVERT] können in [LINK=CONCEPT_AFRICA]Afrika[\LINK] erworben oder in den Kolonien mit einem [LINK=BUILDING_DRYDOCK]Trockendock[\LINK] oder dessen Ausbauten gebaut werden. Wie die meisten Schiffe benötigen sie dazu [LINK=YIELD_CANNONS]Kannonen[\LINK], [LINK=YIELD_ROPE]Seile[\LINK], [LINK=YIELD_SAILCLOTH]Segeln[\LINK] und [LINK=YIELD_TOOLS]Werkzeuge[\LINK].</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_BUTCHER</Tag>
         <English>
             <Text>Master Butcher:Master Butchers</Text>
