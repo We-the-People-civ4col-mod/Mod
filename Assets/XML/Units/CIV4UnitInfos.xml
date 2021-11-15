@@ -38543,6 +38543,10 @@
                     <UnitClassType>UNITCLASS_PIRATE_FRIGATE</UnitClassType>
                     <iUnitClassMod>10</iUnitClassMod>
                 </UnitClassDefenseMod>
+                <UnitClassDefenseMod>
+                    <UnitClassType>UNITCLASS_PIRATE_CUTTER</UnitClassType>
+                    <iUnitClassMod>10</iUnitClassMod>
+                </UnitClassDefenseMod>
             </UnitClassDefenseMods>
             <UnitCombatMods/>
             <DomainMods/>
@@ -38749,7 +38753,20 @@
             <FeatureAttacks/>
             <FeatureDefenses/>
             <UnitClassAttackMods/>
-            <UnitClassDefenseMods/>
+            <UnitClassDefenseMods>
+                <UnitClassDefenseMod>
+                    <UnitClassType>UNITCLASS_PRIVATEER</UnitClassType>
+                    <iUnitClassMod>-20</iUnitClassMod>
+                </UnitClassDefenseMod>
+                <UnitClassDefenseMod>
+                    <UnitClassType>UNITCLASS_PIRATE_FRIGATE</UnitClassType>
+                    <iUnitClassMod>-20</iUnitClassMod>
+                </UnitClassDefenseMod>
+                <UnitClassDefenseMod>
+                    <UnitClassType>UNITCLASS_PIRATE_CUTTER</UnitClassType>
+                    <iUnitClassMod>-20</iUnitClassMod>
+                </UnitClassDefenseMod>
+            </UnitClassDefenseMods>
             <UnitCombatMods/>
             <DomainMods/>
             <YieldModifiers/>
