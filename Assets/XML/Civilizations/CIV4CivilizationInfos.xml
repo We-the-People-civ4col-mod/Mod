@@ -367,6 +367,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
                     <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
                 </Unit>
@@ -845,6 +849,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
                     <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
                 </Unit>
@@ -1287,6 +1295,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
                     <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
                 </Unit>
@@ -1678,6 +1690,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
                     <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
                 </Unit>
@@ -2051,6 +2067,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
                     <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
                 </Unit>
@@ -2366,6 +2386,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -2722,6 +2746,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -3248,6 +3276,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
                     <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
                 </Unit>
@@ -3438,6 +3470,10 @@
                     <UnitType>UNIT_MAN_O_WAR</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -3507,15 +3543,15 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -3712,6 +3748,10 @@
                     <UnitType>UNIT_MAN_O_WAR</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -3781,15 +3821,15 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -3983,6 +4023,10 @@
                     <UnitType>UNIT_MAN_O_WAR</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -4052,15 +4096,15 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -4257,6 +4301,10 @@
                     <UnitType>UNIT_MAN_O_WAR</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -4326,15 +4374,15 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -4515,6 +4563,10 @@
                     <UnitType>UNIT_MAN_O_WAR</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -4584,15 +4636,15 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -4774,6 +4826,10 @@
                     <UnitType>UNIT_MAN_O_WAR</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -4843,15 +4899,15 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -5034,6 +5090,10 @@
                     <UnitType>UNIT_MAN_O_WAR</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -5103,15 +5163,15 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -5297,6 +5357,10 @@
                     <UnitType>UNIT_MAN_O_WAR</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -5366,15 +5430,15 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -6164,6 +6228,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -7123,6 +7191,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -8089,6 +8161,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -9061,6 +9137,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -10029,6 +10109,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -10988,6 +11072,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -11944,6 +12032,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -12897,6 +12989,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -13877,6 +13973,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -14846,6 +14946,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -15801,6 +15905,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -16783,6 +16891,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -17740,6 +17852,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -18702,6 +18818,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -19668,6 +19788,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -20628,6 +20752,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -21585,6 +21713,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -22557,6 +22689,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -23494,6 +23630,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -24466,6 +24606,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -25421,6 +25565,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -26369,6 +26517,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -27326,6 +27478,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -28268,6 +28424,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -29230,6 +29390,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -30185,6 +30349,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -31134,6 +31302,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -32088,6 +32260,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -33039,6 +33215,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_HESSIAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -33981,6 +34161,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -35041,6 +35225,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>

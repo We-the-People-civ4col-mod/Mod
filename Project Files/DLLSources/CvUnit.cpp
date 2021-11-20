@@ -3797,6 +3797,19 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 	}
 	// WTP, ray Treasure Ship - END
 
+	// WTP, ray Troop Ship - START
+	// a Troop Ship can only carry Troops or Goods
+	// to avoid AI issues - only for Human player
+	if (pTransport->getUnitInfo().isTroopShip() && isHuman())
+	{
+		// it is neither Goods nor a Slave
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !canAttack())
+		{
+			return false;
+		}
+	}
+	// WTP, ray Treasure Ship - END
+
 
 //	if (!(pTransport->cargoSpaceAvailable(getSpecialUnitType(), getDomainType())))
 //	{

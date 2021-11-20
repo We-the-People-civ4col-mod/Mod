@@ -9330,6 +9330,11 @@
         <German>[ICON_BULLET]Kann nur Güter oder [COLOR_HIGHLIGHT_TEXT]Schätze[COLOR_REVERT] laden</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_IS_TROOP_SHIP</Tag>
+        <English>[ICON_BULLET]Can carry only goods or [COLOR_HIGHLIGHT_TEXT]troops[COLOR_REVERT]</English>
+        <German>[ICON_BULLET]Kann nur Güter oder [COLOR_HIGHLIGHT_TEXT]Truppen[COLOR_REVERT] laden</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_ALWAYS_HOSTILE</Tag>
         <English>[ICON_BULLET]Can attack without declaring war</English>
         <French>[ICON_BULLET]Peut attaquer sans déclaration de guerre</French>

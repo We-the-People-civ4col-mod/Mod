@@ -1994,6 +1994,7 @@
                 <UnitClass>UNITCLASS_CARRACK</UnitClass>
                 <UnitClass>UNITCLASS_CARAVELA_REDONDA</UnitClass>
                 <UnitClass>UNITCLASS_GALLEON</UnitClass>
+                <UnitClass>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClass>
                 <UnitClass>UNITCLASS_WEST_INDIAMAN</UnitClass>
                 <UnitClass>UNITCLASS_SLOOP</UnitClass>
                 <UnitClass>UNITCLASS_SCHOONER</UnitClass>
@@ -2232,6 +2233,7 @@
                 <UnitClass>UNITCLASS_CARRACK</UnitClass>
                 <UnitClass>UNITCLASS_CARAVELA_REDONDA</UnitClass>
                 <UnitClass>UNITCLASS_GALLEON</UnitClass>
+                <UnitClass>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClass>
                 <UnitClass>UNITCLASS_WEST_INDIAMAN</UnitClass>
                 <UnitClass>UNITCLASS_SLOOP</UnitClass>
                 <UnitClass>UNITCLASS_SCHOONER</UnitClass>
@@ -2321,6 +2323,7 @@
                 <UnitClass>UNITCLASS_CARRACK</UnitClass>
                 <UnitClass>UNITCLASS_CARAVELA_REDONDA</UnitClass>
                 <UnitClass>UNITCLASS_GALLEON</UnitClass>
+                <UnitClass>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClass>
                 <UnitClass>UNITCLASS_WEST_INDIAMAN</UnitClass>
                 <UnitClass>UNITCLASS_SLOOP</UnitClass>
                 <UnitClass>UNITCLASS_SCHOONER</UnitClass>
@@ -11734,6 +11737,7 @@
                 <UnitClass>UNITCLASS_CARRACK</UnitClass>
                 <UnitClass>UNITCLASS_CARAVELA_REDONDA</UnitClass>
                 <UnitClass>UNITCLASS_GALLEON</UnitClass>
+                <UnitClass>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClass>
                 <UnitClass>UNITCLASS_WEST_INDIAMAN</UnitClass>
                 <UnitClass>UNITCLASS_SLOOP</UnitClass>
                 <UnitClass>UNITCLASS_SCHOONER</UnitClass>

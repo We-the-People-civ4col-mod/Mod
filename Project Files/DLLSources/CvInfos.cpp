@@ -2706,6 +2706,7 @@ m_bLineOfSight(false),
 m_bHiddenNationality(false),
 m_bSlaveShip(false), // WTP, ray Slave Ship
 m_bTreasureShip(false), // WTP, ray Treasure Ship
+m_bTroopShip(false), // WTP, ray Troop Ship
 m_bAlwaysHostile(false),
 m_bTreasure(false),
 // R&R, ray, Changes for Treasures, START
@@ -3134,6 +3135,13 @@ bool CvUnitInfo::isTreasureShip() const
 	return m_bTreasureShip;
 }
 // WTP, ray Treasure Ship - END
+
+// WTP, ray Troop Ship - START
+bool CvUnitInfo::isTroopShip() const
+{
+	return m_bTroopShip;
+}
+// WTP, ray Troop Ship - END
 
 bool CvUnitInfo::isAlwaysHostile() const
 {
@@ -3607,6 +3615,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bHiddenNationality);
 	stream->Read(&m_bSlaveShip); // WTP, ray Slave Ship
 	stream->Read(&m_bTreasureShip); // WTP, ray Treasure Ship
+	stream->Read(&m_bTroopShip); // WTP, ray Troop Ship
 	stream->Read(&m_bAlwaysHostile);
 	stream->Read(&m_bTreasure);
 	// R&R, ray, Changes for Treasures, START
@@ -3831,6 +3840,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bHiddenNationality);
 	stream->Write(m_bSlaveShip); // WTP, ray Slave Ship
 	stream->Write(m_bTreasureShip); // WTP, ray Treasure Ship
+	stream->Write(m_bTroopShip); // WTP, ray Troop Ship
 	stream->Write(m_bAlwaysHostile);
 	stream->Write(m_bTreasure);
 	stream->Write(m_bNoRevealMap); // R&R, ray, Changes for Treasures, START
@@ -3973,6 +3983,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bHiddenNationality,"bHiddenNationality",false);
 	pXML->GetChildXmlValByName(&m_bSlaveShip,"bSlaveShip",false); // WTP, ray Slave Ship
 	pXML->GetChildXmlValByName(&m_bTreasureShip,"bTreasureShip",false); // WTP, ray Treasure Ship
+	pXML->GetChildXmlValByName(&m_bTroopShip,"bTroopShip",false); // WTP, ray Troop Ship
 	pXML->GetChildXmlValByName(&m_bAlwaysHostile,"bAlwaysHostile",false);
 	pXML->GetChildXmlValByName(&m_bTreasure,"bTreasure",false);
 	// R&R, ray, Changes for Treasures, START

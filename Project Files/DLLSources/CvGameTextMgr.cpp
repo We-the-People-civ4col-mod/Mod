@@ -5085,7 +5085,8 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 		//TAC Whaling, ray
 		// WTP, ray Slave Ship
 		// WTP, ray Treasure Ship
-		if (kUnitInfo.getSpecialCargo() != NO_SPECIALUNIT && !kUnitInfo.isGatherBoat() && !kUnitInfo.isSlaveShip() && !kUnitInfo.isTreasureShip())
+		// WTP, ray Troop Ship
+		if (kUnitInfo.getSpecialCargo() != NO_SPECIALUNIT && !kUnitInfo.isGatherBoat() && !kUnitInfo.isSlaveShip() && !kUnitInfo.isTreasureShip() && !kUnitInfo.isTroopShip())
 		{
 			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CARRIES", GC.getSpecialUnitInfo((SpecialUnitTypes) kUnitInfo.getSpecialCargo()).getTextKeyWide()));
 		}
@@ -5238,6 +5239,14 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_IS_TREASURE_SHIP"));
 	}
 	// WTP, ray Treasure Ship - END
+
+	// WTP, ray Troop Ship - START
+	if (kUnitInfo.isTroopShip())
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_IS_TROOP_SHIP"));
+	}
+	// WTP, ray Troop Ship - END
 
 	if (kUnitInfo.isAlwaysHostile())
 	{

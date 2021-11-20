@@ -2033,7 +2033,7 @@
             <RevealImprovements/>
             <FreeUnits>
                 <FreeUnit>
-                    <UnitClass>UNITCLASS_PIRATE_FRIGATE</UnitClass>
+                    <UnitClass>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
                 <FreeUnit>

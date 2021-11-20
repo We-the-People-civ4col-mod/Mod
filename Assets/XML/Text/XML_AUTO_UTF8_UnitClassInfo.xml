@@ -1250,6 +1250,15 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_ROYAL_TROOP_GALLEON</Tag>
+        <English>Royal Troop Galleon:Royal Troop Galleons</English>
+        <German>
+            <Text>Königliche Truppengaleone:Königliche Truppengaleonen</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GEMS</Tag>
         <English>Gems</English>
         <French>

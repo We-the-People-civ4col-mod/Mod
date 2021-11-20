@@ -522,6 +522,11 @@
             <DefaultUnit>UNIT_GALLEON</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_ROYAL_TROOP_GALLEON</Type>
+            <Description>TXT_KEY_UNITCLASS_ROYAL_TROOP_GALLEON</Description>
+            <DefaultUnit>UNIT_ROYAL_TROOP_GALLEON</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_WEST_INDIAMAN</Type>
             <Description>TXT_KEY_UNITCLASS_WEST_INDIAMAN</Description>
             <DefaultUnit>UNIT_WEST_INDIAMAN</DefaultUnit>
