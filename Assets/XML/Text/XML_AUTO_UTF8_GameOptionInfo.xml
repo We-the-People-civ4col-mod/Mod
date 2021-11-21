@@ -315,6 +315,16 @@
         <German>Standardmäßig sind viele Bonus-Ressourcen (wie z.B. Walross, Pinguin, Cabyara, ...) aus Gründen der Realitätstreue entweder auf die nördliche oder südliche Hemisphere beschränkt. Mit Aktivierung dieser Option wird diese Einschränkung aufgehoben.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GAMEOPTION_GOODIES_ALWAYS_DISPLAY_COLOURED_CIRCLE</Tag>
+        <English>Revealed Goodies always display coloured circles</English>
+        <German>Entdeckte Goodies zeigen immer Farbkreis als Hinweis</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMEOPTION_GOODIES_ALWAYS_DISPLAY_COLOURED_CIRCLE_HELP</Tag>
+        <English>This helps to easily identify Goodies on the map once revealed</English>
+        <German>Hilft bereits entdeckte Goodies auf der Karte einfach zu finden</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE</Tag>
         <English>Only 1 Colonist learning per Native settlement</English>
         <French>Un seul élève à la fois par établissement autochtone</French>

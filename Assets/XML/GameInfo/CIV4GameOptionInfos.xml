@@ -161,6 +161,13 @@
             <bVisible>1</bVisible>
         </GameOptionInfo>
         <GameOptionInfo>
+            <Type>GAMEOPTION_GOODIES_ALWAYS_DISPLAY_COLOURED_CIRCLE</Type>
+            <Description>TXT_KEY_GAMEOPTION_GOODIES_ALWAYS_DISPLAY_COLOURED_CIRCLE</Description>
+            <Help>TXT_KEY_GAMEOPTION_GOODIES_ALWAYS_DISPLAY_COLOURED_CIRCLE_HELP</Help>
+            <bDefault>0</bDefault>
+            <bVisible>1</bVisible>
+        </GameOptionInfo>
+        <GameOptionInfo>
             <Type>GAMEOPTION_REMOVE_WORLD_BUILDER</Type>
             <Description>TXT_KEY_GAMEOPTION_REMOVE_WORLD_BUILDER</Description>
             <Help>TXT_KEY_GAMEOPTION_REMOVE_WORLD_BUILDER_HELP</Help>

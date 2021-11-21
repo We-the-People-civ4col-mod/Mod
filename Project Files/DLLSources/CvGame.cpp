@@ -1499,6 +1499,30 @@ void CvGame::updateColoredPlots()
 		}
 	}
 
+	// WTP, ray, Game Option Goodies always display coloured circle - START
+	if (isOption(GAMEOPTION_GOODIES_ALWAYS_DISPLAY_COLOURED_CIRCLE))
+	{
+		for (int iPlotLoop = 0; iPlotLoop < GC.getMap().numPlots(); iPlotLoop++)
+		{
+			CvPlot* pLoopPlot = GC.getMap().plotByIndex(iPlotLoop);
+			if (pLoopPlot != NULL)
+			{
+				if (pLoopPlot->isGoody() && pLoopPlot->isRevealed(getActiveTeam(), false))
+				{
+					for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+					{
+						CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+						if (kPlayer.isAlive() && getActiveTeam() == kPlayer.getTeam())
+						{
+							gDLL->getEngineIFace()->addColoredPlot(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_GREEN")).getColor(), PLOT_STYLE_CIRCLE, PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS);
+						}
+					}
+				}
+			}
+		}
+	}
+	// WTP, ray, Game Option Goodies always display coloured circle - END
+
 	pHeadSelectedCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
 	pHeadSelectedUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
 
