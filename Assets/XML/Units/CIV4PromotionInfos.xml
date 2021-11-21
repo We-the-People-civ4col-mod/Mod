@@ -5325,6 +5325,10 @@
                     <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
                     <iUnitClassMod>10</iUnitClassMod>
                 </UnitClassAttackMod>
+                <UnitClassAttackMod>
+                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <iUnitClassMod>10</iUnitClassMod>
+                </UnitClassAttackMod>
             </UnitClassAttackMods>
             <UnitClassDefenseMods>
                 <UnitClassDefenseMod>
@@ -5333,6 +5337,10 @@
                 </UnitClassDefenseMod>
                 <UnitClassDefenseMod>
                     <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
+                    <iUnitClassMod>10</iUnitClassMod>
+                </UnitClassDefenseMod>
+                <UnitClassDefenseMod>
+                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
                     <iUnitClassMod>10</iUnitClassMod>
                 </UnitClassDefenseMod>
             </UnitClassDefenseMods>

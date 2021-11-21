@@ -41218,7 +41218,7 @@
         </UnitInfo>
         <UnitInfo>
             <Type>UNIT_MAN_O_WAR</Type>
-            <Class>UNITCLASS_SHIP_OF_THE_LINE</Class>
+            <Class>UNITCLASS_MAN_O_WAR</Class>
             <UniqueNames/>
             <Special>NONE</Special>
             <Capture>NONE</Capture>

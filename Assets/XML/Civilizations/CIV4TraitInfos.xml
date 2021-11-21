@@ -478,6 +478,10 @@
                     <iChange>1</iChange>
                 </UnitMoveChange>
                 <UnitMoveChange>
+                    <UnitClass>UNITCLASS_MAN_O_WAR</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+                <UnitMoveChange>
                     <UnitClass>UNITCLASS_WHALING_BOAT</UnitClass>
                     <iChange>1</iChange>
                 </UnitMoveChange>
@@ -598,6 +602,10 @@
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_MAN_O_WAR</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
             </UnitStrengthModifiers>
@@ -6484,6 +6492,10 @@
                     <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_MAN_O_WAR</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
             </UnitStrengthModifiers>
             <FreeBuildingClasses/>
             <GoodyFactors/>
@@ -9632,6 +9644,10 @@
             <UnitStrengthModifiers>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_MAN_O_WAR</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
             </UnitStrengthModifiers>
