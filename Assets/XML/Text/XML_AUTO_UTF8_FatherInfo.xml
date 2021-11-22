@@ -2545,6 +2545,44 @@
         <German>Wenn [COLOR_TECH_TEXT]Juan Ginés de Sepúlveda[COLOR_REVERT] sich Ihnen als Gründervater anschliesst, steigt eure Produktion von [COLOR_HIGHLIGHT_TEXT]Kakaofrüchten[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]Kakao[COLOR_REVERT] und Ihre Hauptstadt erhält unentgeltlich zwei [COLOR_UNIT_TEXT]Konvertierte Ureinwohner[COLOR_REVERT]!</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_FATHER_THOMAS_CHIPPENDALE</Tag>
+        <English>
+            <Text>Thomas Chippendale</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Thomas Chippendale</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Thomas Chippendale</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Thomas Chippendale</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Thomas Chippendale</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_THOMAS_CHIPPENDALE_PEDIA</Tag>
+        <English>[H1]Thomas Chippendale[\H1][NEWLINE][BOLD]Lived : [\BOLD]1718 - 1779[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]Thomas Chippendale was a cabinet-maker in London, designing furniture in the mid-Georgian, English Rococo, and Neoclassical styles. He published a book on furniture style in 1754. After working as a journeyman cabinet maker in London, during 1754, he became the first cabinet-maker to publish a book of his designs, titled The Gentleman and Cabinet Maker's Director. It is regarded as the first comprehensive trade catalogue of its kind.</English>
+        <German>[H1]Thomas Chippendale[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1718 - 1779[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]Thomas Chippendale war ein Möbelmacher in London. Seine Möbeldstil war hauptsächlich Mittel-Georgian, Englischer Rococo und Neuklassik. Er veröffentlichte auch ein Buch über Möbelstile im Jahr 1754. Nachdem er viele Jahre als wandernder Möbelmacher rund um London arbeitet, wurde er 1754 der erste Möbelmacher der ein illustriertes Buch über Möbel veröffentlichte. Er nannte es "The Gentleman and Cabinet Maker's Director". Dieses gilt bis heute als erster verständlicher Handelskatalog der Geschichte.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_THOMAS_CHIPPENDALE_STRATEGY</Tag>
+        <English>When [COLOR_TECH_TEXT]Thomas Chippendale[COLOR_REVERT] joins your side as a Founding Father, you will receive two free [COLOR_UNIT_TEXT]Furniture Makers[COLOR_REVERT] and one free [COLOR_UNIT_TEXT]Lumberjack[COLOR_REVERT] in your capital! He will also increase production of [COLOR_HIGHLIGHT_TEXT]Furniture[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Valuable Wood[COLOR_REVERT].</English>
+        <German>Wenn [COLOR_TECH_TEXT]Thomas Chippendale[COLOR_REVERT] sich Ihnen als Gründervater anschliesst, steigt eure Produktion von [COLOR_HIGHLIGHT_TEXT]Möbeln[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]Edelholz[COLOR_REVERT] und Ihre Hauptstadt erhält unentgeltlich zwei [COLOR_UNIT_TEXT]Möbemacher[COLOR_REVERT] und einen [COLOR_UNIT_TEXT]Holzfäller[COLOR_REVERT].</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_FATHER_JUAN_PONCE_DE_LEON</Tag>
         <English>
             <Text>Juan Ponce de León</Text>

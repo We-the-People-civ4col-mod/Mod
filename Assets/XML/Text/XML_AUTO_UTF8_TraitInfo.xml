@@ -457,6 +457,10 @@
         <English>TXT_KEY_FATHER_WILLIAM_DAMPIER</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TRAIT_THOMAS_CHIPPENDALE</Tag>
+        <English>TXT_KEY_FATHER_THOMAS_CHIPPENDALE</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TRAIT_JAMES_LANCASTER</Tag>
         <English>TXT_KEY_FATHER_JAMES_LANCASTER</English>
     </TEXT>
