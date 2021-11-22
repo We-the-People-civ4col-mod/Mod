@@ -1259,6 +1259,7 @@ void CvUnit::updateCombat(bool bQuick)
 		NotifyEntity(MISSION_DAMAGE);
 		pDefender->NotifyEntity(MISSION_DAMAGE);
 
+		// case: Attacker died, defender won
 		if (isDead())
 		{
 			// PatchMod: Achievements START
@@ -1308,6 +1309,14 @@ void CvUnit::updateCombat(bool bQuick)
 			szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_KILLED_ENEMY_UNIT", pDefender->getNameOrProfessionKey(), getNameOrProfessionKey(), getVisualCivAdjective(pDefender->getTeam()));
 			gDLL->getInterfaceIFace()->addMessage(pDefender->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, GC.getEraInfo(GC.getGameINLINE().getCurrentEra()).getAudioUnitVictoryScript(), MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
 
+			// WTP, ray, fix for Human Unit not stopping automation after attacked - START
+			// in this case the defender is alive and has won the battle
+			if (pDefender->isHuman() && pDefender->isAutomated())
+			{
+				pDefender->getGroup()->setAutomateType(NO_AUTOMATE);
+			}
+			// WTP, ray, fix for not stopping automation after attacked - END
+
 			// report event to Python, along with some other key state
 			gDLL->getEventReporterIFace()->combatResult(pDefender, this);
 
@@ -1322,6 +1331,8 @@ void CvUnit::updateCombat(bool bQuick)
 			}
 			// TAC - AI purchases military units - koma13 - END
 		}
+
+		// case: Attacker won, defender died
 		else if (pDefender->isDead())
 		{
 			// TAC Capturing Ships - ray
@@ -1594,6 +1605,8 @@ void CvUnit::updateCombat(bool bQuick)
 			// to the square that they came from, before advancing.
 			getGroup()->clearMissionQueue();
 		}
+
+		// case: Attacker won, defender escaped
 		else if (bDefenderEscaped)
 		{
 			// PatchMod: Achievements START
@@ -1618,6 +1631,14 @@ void CvUnit::updateCombat(bool bQuick)
 				szBuffer = gDLL->getText("TXT_KEY_MISC_ENEMY_UNIT_ESCAPED", pDefender->getNameOrProfessionKey(), getNameOrProfessionKey(), pCity->getNameKey());
 				gDLL->getInterfaceIFace()->addMessage(pDefender->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_OUR_WITHDRAWL", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pCity->getX_INLINE(), pCity->getY_INLINE());
 			}
+
+			// WTP, ray, fix for Human Unit not stopping automation after attacked - START
+			// in this case the defender is alive and lost but escaped
+			if (pDefender->isHuman() && pDefender->isAutomated())
+			{
+				pDefender->getGroup()->setAutomateType(NO_AUTOMATE);
+			}
+			// WTP, ray, fix for not stopping automation after attacked - END
 
 			bool bAdvance = canAdvance(pPlot, 0);
 			if (!bAdvance)
@@ -1662,6 +1683,8 @@ void CvUnit::updateCombat(bool bQuick)
 
 			getGroup()->clearMissionQueue();
 		}
+
+		// case: Attacker lost but escaped
 		else if (bAttackerEscaped)
 		{
 			// PatchMod: Achievements START
@@ -1694,6 +1717,14 @@ void CvUnit::updateCombat(bool bQuick)
 			szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_UNIT_ESCAPED", pDefender->getNameOrProfessionKey(), getNameOrProfessionKey());
 			gDLL->getInterfaceIFace()->addMessage(pDefender->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_THEIR_WITHDRAWL", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
 
+			// WTP, ray, fix for Human Unit not stopping automation after attacked - START
+			// in this case the defender is alive and had won the battle
+			if (pDefender->isHuman() && pDefender->isAutomated())
+			{
+				pDefender->getGroup()->setAutomateType(NO_AUTOMATE);
+			}
+			// WTP, ray, fix for not stopping automation after attacked - END
+
 			if (IsSelected())
 			{
 				if (gDLL->getInterfaceIFace()->getLengthSelectionList() > 1)
@@ -1707,12 +1738,22 @@ void CvUnit::updateCombat(bool bQuick)
 			// to the square that they came from, before advancing.
 			getGroup()->clearMissionQueue();
 		}
+
+		// case: draw, but sides withdraw
 		else
 		{
 			szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_UNIT_WITHDRAW", getNameOrProfessionKey(), pDefender->getNameOrProfessionKey());
 			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_OUR_WITHDRAWL", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
 			szBuffer = gDLL->getText("TXT_KEY_MISC_ENEMY_UNIT_WITHDRAW", getNameOrProfessionKey(), pDefender->getNameOrProfessionKey());
 			gDLL->getInterfaceIFace()->addMessage(pDefender->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_THEIR_WITHDRAWL", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
+
+			// WTP, ray, fix for Human Unit not stopping automation after attacked - START
+			// in this case we are sure that defender is alive since both are alive
+			if (pDefender->isHuman() && pDefender->isAutomated())
+			{
+				pDefender->getGroup()->setAutomateType(NO_AUTOMATE);
+			}
+			// WTP, ray, fix for not stopping automation after attacked - END
 
 			changeMoves(std::max(GC.getMOVE_DENOMINATOR(), pPlot->movementCost(this, plot())));
 
