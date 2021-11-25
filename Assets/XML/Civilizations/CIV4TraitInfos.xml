@@ -7556,7 +7556,7 @@
             <TaxYieldModifiers/>
             <BuildingYieldChanges>
                 <BuildingYieldChange>
-                    <BuildingClassType>BUILDING_FURNITURE_MAKERS_HOUSE</BuildingClassType>
+                    <BuildingClassType>BUILDINGCLASS_FURNITURE_MAKERS_HOUSE</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_FURNITURE</YieldType>
