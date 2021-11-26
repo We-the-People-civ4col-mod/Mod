@@ -3699,6 +3699,10 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
@@ -4005,6 +4009,10 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
@@ -4305,6 +4313,10 @@
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -4614,6 +4626,10 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
@@ -4901,6 +4917,10 @@
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -5192,6 +5212,10 @@
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -5487,6 +5511,10 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
@@ -5779,6 +5807,10 @@
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
