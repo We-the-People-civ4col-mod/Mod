@@ -351,11 +351,19 @@
             </Buildings>
             <Units>
                 <Unit>
+                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
                     <UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -837,11 +845,19 @@
             </Buildings>
             <Units>
                 <Unit>
+                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
                     <UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -1291,11 +1307,19 @@
             </Buildings>
             <Units>
                 <Unit>
+                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
                     <UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -1698,11 +1722,19 @@
             </Buildings>
             <Units>
                 <Unit>
+                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
                     <UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -2079,11 +2111,19 @@
             </Buildings>
             <Units>
                 <Unit>
+                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
                     <UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -2413,11 +2453,19 @@
             </Buildings>
             <Units>
                 <Unit>
+                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
                     <UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -2781,11 +2829,19 @@
             </Buildings>
             <Units>
                 <Unit>
+                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
                     <UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -3312,11 +3368,19 @@
             </Buildings>
             <Units>
                 <Unit>
+                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
                     <UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -3538,8 +3602,8 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                    <UnitClassType>UNITCLASS_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
@@ -3844,8 +3908,8 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                    <UnitClassType>UNITCLASS_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
@@ -4147,8 +4211,8 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                    <UnitClassType>UNITCLASS_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
@@ -4453,8 +4517,8 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                    <UnitClassType>UNITCLASS_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
@@ -4743,8 +4807,8 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                    <UnitClassType>UNITCLASS_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
@@ -5034,8 +5098,8 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                    <UnitClassType>UNITCLASS_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
@@ -5326,8 +5390,8 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                    <UnitClassType>UNITCLASS_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
@@ -5621,8 +5685,8 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>UNIT_ROYAL_TROOP_GALLEON</UnitType>
+                    <UnitClassType>UNITCLASS_FRIGATE</UnitClassType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>

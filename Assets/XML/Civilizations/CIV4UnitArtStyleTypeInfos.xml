@@ -202,6 +202,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_ROYAL_FRIGATE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_DANISH_ROYAL_FRIGATE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -527,6 +534,13 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_DUTCH_FRIGATE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_ROYAL_FRIGATE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_DUTCH_ROYAL_FRIGATE</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -858,6 +872,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_ROYAL_FRIGATE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_ENGLAND_ROYAL_FRIGATE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -1186,6 +1207,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_ROYAL_FRIGATE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_FRANCE_ROYAL_FRIGATE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -1511,6 +1539,13 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_PORTUGAL_FRIGATE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_ROYAL_FRIGATE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_PORTUGAL_ROYAL_FRIGATE</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -1849,6 +1884,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_ROYAL_FRIGATE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_RUSSIA_ROYAL_FRIGATE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -2177,6 +2219,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_ROYAL_FRIGATE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_SPAIN_ROYAL_FRIGATE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_SHIP_OF_THE_LINE</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -2502,6 +2551,13 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_SWEDISH_FRIGATE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_ROYAL_FRIGATE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_SWEDISH_ROYAL_FRIGATE</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>

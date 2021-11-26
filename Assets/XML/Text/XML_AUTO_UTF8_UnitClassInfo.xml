@@ -1142,6 +1142,30 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_ROYAL_FRIGATE</Tag>
+        <English>Royal Frigate: Royal Frigates</English>
+        <French>
+            <Text>Frégate Royale:Frégates Royales</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Königliche Fregatte:KöniglicheFregatten</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Fregata Royala:Fregate Royalas</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Fragata Royala:Fragatas Royalas</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FUR</Tag>
         <English>Fur</English>
         <French>

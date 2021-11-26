@@ -2002,6 +2002,30 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_ROYAL_FRIGATE</Tag>
+        <English>Royal Frigate: Royal Frigates</English>
+        <French>
+            <Text>Frégate Royale:Frégates Royales</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Königliche Fregatte:KöniglicheFregatten</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Fregata Royala:Fregate Royalas</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Fragata Royala:Fragatas Royalas</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_FRIGATE_PEDIA</Tag>
         <English>The frigate was a fast and powerful warship that filled several important roles, first of all to raid enemy shipping.[NEWLINE]These three-masted ships were lighter and faster than the European Man-o-War, and usually carried 36 or fewer guns.[NEWLINE]The frigate was powerful enough to overcome most of its prospective opponents and fast enough to escape those it could not outgun.[NEWLINE]Because of their speed and strength, frigates were often employed as escorts for merchant vessels during times of war.[NEWLINE]The frigate remained the most versatile and dominant naval vessel until the development of the ironclad.</English>
         <French>La frégate est un navire de guerre rapide et puissant qui a rempli différents rôles au fil de son évolution. L'une de ses attributions principales consiste à attaquer les bateaux ennemis. Ce trois-mâts, plus léger et plus rapide que les grands vaisseaux de guerre européens, contient au maximum 36 pièces d'artillerie. La frégate est assez puissante pour triompher de la plupart de ses opposants et suffisamment rapide pour échapper à ceux qu'elle ne peut vaincre. Du fait de sa puissance de feu et de sa rapidité, la frégate est souvent utilisée pour escorter des navires marchands en temps de guerre. La frégate est le navire le plus puissant et le plus utilisé jusqu'à l'arrivée des cuirassés.</French>

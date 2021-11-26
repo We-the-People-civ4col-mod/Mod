@@ -577,6 +577,11 @@
             <DefaultUnit>UNIT_FRIGATE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_ROYAL_FRIGATE</Type>
+            <Description>TXT_KEY_UNITCLASS_ROYAL_FRIGATE</Description>
+            <DefaultUnit>UNIT_ROYAL_FRIGATE</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_SHIP_OF_THE_LINE</Type>
             <Description>TXT_KEY_UNITCLASS_SHIP_OF_THE_LINE</Description>
             <DefaultUnit>UNIT_SHIP_OF_THE_LINE</DefaultUnit>

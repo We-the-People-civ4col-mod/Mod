@@ -2033,12 +2033,8 @@
             <RevealImprovements/>
             <FreeUnits>
                 <FreeUnit>
-                    <UnitClass>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClass>
-                    <iFreeUnits>1</iFreeUnits>
-                </FreeUnit>
-                <FreeUnit>
                     <UnitClass>UNITCLASS_FRIGATE</UnitClass>
-                    <iFreeUnits>1</iFreeUnits>
+                    <iFreeUnits>2</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>

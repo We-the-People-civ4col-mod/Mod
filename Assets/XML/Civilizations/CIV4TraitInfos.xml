@@ -474,6 +474,10 @@
                     <iChange>1</iChange>
                 </UnitMoveChange>
                 <UnitMoveChange>
+                    <UnitClass>UNITCLASS_ROYAL_FRIGATE</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+                <UnitMoveChange>
                     <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
                     <iChange>1</iChange>
                 </UnitMoveChange>
@@ -598,6 +602,10 @@
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_FRIGATE</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_FRIGATE</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
@@ -6486,6 +6494,10 @@
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_FRIGATE</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_FRIGATE</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>

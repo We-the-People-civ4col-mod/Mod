@@ -5322,6 +5322,10 @@
                     <iUnitClassMod>10</iUnitClassMod>
                 </UnitClassAttackMod>
                 <UnitClassAttackMod>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
+                    <iUnitClassMod>10</iUnitClassMod>
+                </UnitClassAttackMod>
+                <UnitClassAttackMod>
                     <UnitClassType>UNITCLASS_SHIP_OF_THE_LINE</UnitClassType>
                     <iUnitClassMod>10</iUnitClassMod>
                 </UnitClassAttackMod>
@@ -5333,6 +5337,10 @@
             <UnitClassDefenseMods>
                 <UnitClassDefenseMod>
                     <UnitClassType>UNITCLASS_FRIGATE</UnitClassType>
+                    <iUnitClassMod>10</iUnitClassMod>
+                </UnitClassDefenseMod>
+                <UnitClassDefenseMod>
+                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
                     <iUnitClassMod>10</iUnitClassMod>
                 </UnitClassDefenseMod>
                 <UnitClassDefenseMod>

@@ -2001,6 +2001,7 @@
                 <UnitClass>UNITCLASS_CORVETTE</UnitClass>
                 <UnitClass>UNITCLASS_NAVAL_BRIG</UnitClass>
                 <UnitClass>UNITCLASS_FRIGATE</UnitClass>
+                <UnitClass>UNITCLASS_ROYAL_FRIGATE</UnitClass>
                 <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
                 <UnitClass>UNITCLASS_MAN_O_WAR</UnitClass>
                 <UnitClass>UNITCLASS_WHALING_BOAT</UnitClass>
@@ -2241,6 +2242,7 @@
                 <UnitClass>UNITCLASS_CORVETTE</UnitClass>
                 <UnitClass>UNITCLASS_NAVAL_BRIG</UnitClass>
                 <UnitClass>UNITCLASS_FRIGATE</UnitClass>
+                <UnitClass>UNITCLASS_ROYAL_FRIGATE</UnitClass>
                 <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
                 <UnitClass>UNITCLASS_MAN_O_WAR</UnitClass>
                 <UnitClass>UNITCLASS_WHALING_BOAT</UnitClass>
@@ -2332,6 +2334,7 @@
                 <UnitClass>UNITCLASS_CORVETTE</UnitClass>
                 <UnitClass>UNITCLASS_NAVAL_BRIG</UnitClass>
                 <UnitClass>UNITCLASS_FRIGATE</UnitClass>
+                <UnitClass>UNITCLASS_ROYAL_FRIGATE</UnitClass>
                 <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
                 <UnitClass>UNITCLASS_MAN_O_WAR</UnitClass>
                 <UnitClass>UNITCLASS_WHALING_BOAT</UnitClass>
