@@ -1617,7 +1617,7 @@ class CvMainInterface:
 					elif pHeadSelectedCity.AI_getEmphasizeYieldCount(i) < 0:
 						screen.show("MapYieldDe-Emphasize" + str(i))
 
-				screen.addMultiListControlGFC("MapBuildingSelectionMultiList", u"", 0, DOMESTIC_ADVISOR_HEIGHT + 3, MINIMAP_WIDTH - 3, DOMESTIC_ADVISOR_SPACE - LOWER_SADDLE_HEIGHT - 6, self.BOTTOM_BUTTON_ROWS, BOTTOM_BUTTON_SIZE, BOTTOM_BUTTON_SIZE, TableStyles.TABLE_STYLE_STANDARD )		
+				screen.addMultiListControlGFC("MapBuildingSelectionMultiList", u"", 0, DOMESTIC_ADVISOR_HEIGHT + 3, MINIMAP_WIDTH - 3, DOMESTIC_ADVISOR_SPACE - LOWER_SADDLE_HEIGHT - 6, self.BOTTOM_BUTTON_ROWS, BOTTOM_BUTTON_SIZE, BOTTOM_BUTTON_SIZE, TableStyles.TABLE_STYLE_STANDARD )
 				screen.clearMultiList("MapBuildingSelectionMultiList")
 				
 				iCount = 0
@@ -3339,14 +3339,14 @@ class CvMainInterface:
 		self.SCORE_TEXT_BOTTOM_MARGIN_SMALL = -80
 	# Scrollable Scoreboard
 		#iWidth = 400
-		iWidth = int((30 * xResolution) / 100)
-		iCount = 13
+		iWidth = int((25 * xResolution) / 100)
+		iCount = 8
 		iBtnHeight = 22
-		yCoord = yResolution - SADDLE_HEIGHT * 13/16 - self.SCORE_TEXT_BOTTOM_MARGIN_SMALL
+		yCoord = yResolution - SADDLE_HEIGHT * 14/16 - self.SCORE_TEXT_BOTTOM_MARGIN_SMALL
 
 		pHeadSelectedCity = CyInterface().getHeadSelectedCity()
 		if not pHeadSelectedCity:
-			screen.addTableControlGFC("ScoreBackground", 1, xResolution - self.SCORE_BACKGROUND_SIDE_MARGIN/2 - iWidth, yCoord - (iBtnHeight * (iCount - 1)), iWidth, (iBtnHeight * (iCount - 1)), False, False, 0, 0, TableStyles.TABLE_STYLE_EMPTY)
+			screen.addTableControlGFC("ScoreBackground", 1, xResolution - self.SCORE_BACKGROUND_SIDE_MARGIN/2 - iWidth, yCoord - (iBtnHeight * (iCount - 1)), iWidth, (iBtnHeight * (iCount - 1)), False, False, 0, 0, TableStyles.TABLE_STYLE_STANDARD)
 			screen.enableSelect("ScoreBackground", False)
 			screen.setTableColumnHeader("ScoreBackground", 0, "", iWidth - 10)
 			#screen.setTableText("ScoreBackground", 0, iRow, "testdata", "", WidgetTypes.WIDGET_CONTACT_CIV, 1, -1, CvUtil.FONT_RIGHT_JUSTIFY)
@@ -3456,7 +3456,6 @@ class CvMainInterface:
 									if not pHeadSelectedCity:
 										iRow = screen.appendTableRow("ScoreBackground")
 										screen.setTableText("ScoreBackground", 0, iRow, szBuffer, "", WidgetTypes.WIDGET_CONTACT_CIV, ePlayer, -1, CvUtil.FONT_RIGHT_JUSTIFY)
-				
 										#screen.setText( szName, "Background", szBuffer, CvUtil.FONT_RIGHT_JUSTIFY, xResolution - 12, yCoord - (iCount * iBtnHeight) - 31, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CONTACT_CIV, ePlayer, -1 )
 										#screen.show( szName )
 										
