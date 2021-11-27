@@ -6061,7 +6061,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHURCH_FAVOUR_KING</Tag>
-        <English>Could you please speak for our cause to [COLOR_HIGHLIGHT_TEXT]our King?[COLOR_REVERT]</English>
+        <English>Could you please speak for our cause to [COLOR_HIGHLIGHT_TEXT]our King[COLOR_REVERT] ?</English>
         <French>Pourriez-vous parler au [COLOR_HIGHLIGHT_TEXT]Roi[COLOR_REVERT] en notre faveur ?</French>
         <German>Könntet Ihr bitte bei [COLOR_HIGHLIGHT_TEXT]unserem König[COLOR_REVERT] für unsere Sache sprechen?</German>
         <Italian>Potresti parlare per la nostra causa al [COLOR_HIGHLIGHT_TEXT]nostro Re[COLOR_REVERT]?</Italian>
