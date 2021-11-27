@@ -482,7 +482,7 @@
                     <iChange>1</iChange>
                 </UnitMoveChange>
                 <UnitMoveChange>
-                    <UnitClass>UNITCLASS_MAN_O_WAR</UnitClass>
+                    <UnitClass>UNITCLASS_ROYAL_MAN_O_WAR</UnitClass>
                     <iChange>1</iChange>
                 </UnitMoveChange>
                 <UnitMoveChange>
@@ -613,7 +613,7 @@
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
-                    <UnitClass>UNITCLASS_MAN_O_WAR</UnitClass>
+                    <UnitClass>UNITCLASS_ROYAL_MAN_O_WAR</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
             </UnitStrengthModifiers>
@@ -6505,7 +6505,7 @@
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
-                    <UnitClass>UNITCLASS_MAN_O_WAR</UnitClass>
+                    <UnitClass>UNITCLASS_ROYAL_MAN_O_WAR</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
             </UnitStrengthModifiers>
@@ -9753,7 +9753,7 @@
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
-                    <UnitClass>UNITCLASS_MAN_O_WAR</UnitClass>
+                    <UnitClass>UNITCLASS_ROYAL_MAN_O_WAR</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
             </UnitStrengthModifiers>

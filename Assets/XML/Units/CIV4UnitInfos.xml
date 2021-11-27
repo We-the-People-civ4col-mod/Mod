@@ -40505,6 +40505,7 @@
             <bMechanized>1</bMechanized>
             <bLineOfSight>0</bLineOfSight>
             <bHiddenNationality>0</bHiddenNationality>
+            <bTroopShip>1</bTroopShip>
             <bAlwaysHostile>0</bAlwaysHostile>
             <bTreasure>0</bTreasure>
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -40629,7 +40630,7 @@
             <iBombardRate>0</iBombardRate>
             <SpecialCargo>NONE</SpecialCargo>
             <DomainCargo>DOMAIN_LAND</DomainCargo>
-            <iCargo>0</iCargo>
+            <iCargo>1</iCargo>
             <iRequiredTransportSize>7</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
             <iAsset>4000</iAsset>
@@ -40695,6 +40696,7 @@
             <bMechanized>1</bMechanized>
             <bLineOfSight>0</bLineOfSight>
             <bHiddenNationality>0</bHiddenNationality>
+            <bTroopShip>1</bTroopShip>
             <bAlwaysHostile>0</bAlwaysHostile>
             <bTreasure>0</bTreasure>
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -40815,7 +40817,7 @@
             <iBombardRate>0</iBombardRate>
             <SpecialCargo>NONE</SpecialCargo>
             <DomainCargo>DOMAIN_LAND</DomainCargo>
-            <iCargo>0</iCargo>
+            <iCargo>2</iCargo>
             <iRequiredTransportSize>7</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
             <iAsset>4400</iAsset>
@@ -40881,6 +40883,7 @@
             <bMechanized>1</bMechanized>
             <bLineOfSight>0</bLineOfSight>
             <bHiddenNationality>0</bHiddenNationality>
+            <bTroopShip>1</bTroopShip>
             <bAlwaysHostile>0</bAlwaysHostile>
             <bTreasure>0</bTreasure>
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -41000,7 +41003,7 @@
             <iBombardRate>3</iBombardRate>
             <SpecialCargo>NONE</SpecialCargo>
             <DomainCargo>DOMAIN_LAND</DomainCargo>
-            <iCargo>0</iCargo>
+            <iCargo>2</iCargo>
             <iRequiredTransportSize>7</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
             <iAsset>7000</iAsset>
@@ -41066,6 +41069,7 @@
             <bMechanized>1</bMechanized>
             <bLineOfSight>0</bLineOfSight>
             <bHiddenNationality>0</bHiddenNationality>
+            <bTroopShip>1</bTroopShip>
             <bAlwaysHostile>0</bAlwaysHostile>
             <bTreasure>0</bTreasure>
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -41076,10 +41080,6 @@
             <UnitAIs>
                 <UnitAI>
                     <UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
-                    <bUnitAI>1</bUnitAI>
-                </UnitAI>
-                <UnitAI>
-                    <UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
                     <bUnitAI>1</bUnitAI>
                 </UnitAI>
             </UnitAIs>
@@ -41185,7 +41185,7 @@
             <iBombardRate>4</iBombardRate>
             <SpecialCargo>NONE</SpecialCargo>
             <DomainCargo>DOMAIN_LAND</DomainCargo>
-            <iCargo>0</iCargo>
+            <iCargo>2</iCargo>
             <iRequiredTransportSize>7</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
             <iAsset>7000</iAsset>
@@ -41251,6 +41251,7 @@
             <bMechanized>1</bMechanized>
             <bLineOfSight>0</bLineOfSight>
             <bHiddenNationality>0</bHiddenNationality>
+            <bTroopShip>1</bTroopShip>
             <bAlwaysHostile>0</bAlwaysHostile>
             <bTreasure>0</bTreasure>
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -41370,7 +41371,7 @@
             <iBombardRate>5</iBombardRate>
             <SpecialCargo>NONE</SpecialCargo>
             <DomainCargo>DOMAIN_LAND</DomainCargo>
-            <iCargo>0</iCargo>
+            <iCargo>3</iCargo>
             <iRequiredTransportSize>7</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
             <iAsset>8000</iAsset>
@@ -41402,8 +41403,8 @@
             <iLeaderExperience>0</iLeaderExperience>
         </UnitInfo>
         <UnitInfo>
-            <Type>UNIT_MAN_O_WAR</Type>
-            <Class>UNITCLASS_MAN_O_WAR</Class>
+            <Type>UNIT_ROYAL_MAN_O_WAR</Type>
+            <Class>UNITCLASS_ROYAL_MAN_O_WAR</Class>
             <UniqueNames/>
             <Special>NONE</Special>
             <Capture>NONE</Capture>
@@ -41413,9 +41414,9 @@
             <DefaultProfession>NONE</DefaultProfession>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
-            <Description>TXT_KEY_UNIT_MAN_O_WAR</Description>
-            <Civilopedia>TXT_KEY_UNIT_MAN_O_WAR_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_MAN_O_WAR_STRATEGY</Strategy>
+            <Description>TXT_KEY_UNIT_ROYAL_MAN_O_WAR</Description>
+            <Civilopedia>TXT_KEY_UNIT_ROYAL_MAN_O_WAR_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_ROYAL_MAN_O_WAR_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
@@ -41436,6 +41437,7 @@
             <bMechanized>1</bMechanized>
             <bLineOfSight>0</bLineOfSight>
             <bHiddenNationality>0</bHiddenNationality>
+            <bTroopShip>1</bTroopShip>
             <bAlwaysHostile>0</bAlwaysHostile>
             <bTreasure>0</bTreasure>
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -41568,7 +41570,7 @@
                     <iRangedWaveSize>1</iRangedWaveSize>
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_MAN_O_WAR</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_ROYAL_MAN_O_WAR</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>

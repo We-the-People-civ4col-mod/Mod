@@ -5330,7 +5330,7 @@
                     <iUnitClassMod>10</iUnitClassMod>
                 </UnitClassAttackMod>
                 <UnitClassAttackMod>
-                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
                     <iUnitClassMod>10</iUnitClassMod>
                 </UnitClassAttackMod>
             </UnitClassAttackMods>
@@ -5348,7 +5348,7 @@
                     <iUnitClassMod>10</iUnitClassMod>
                 </UnitClassDefenseMod>
                 <UnitClassDefenseMod>
-                    <UnitClassType>UNITCLASS_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
                     <iUnitClassMod>10</iUnitClassMod>
                 </UnitClassDefenseMod>
             </UnitClassDefenseMods>

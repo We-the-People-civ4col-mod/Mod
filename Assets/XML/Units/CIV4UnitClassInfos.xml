@@ -587,9 +587,9 @@
             <DefaultUnit>UNIT_SHIP_OF_THE_LINE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
-            <Type>UNITCLASS_MAN_O_WAR</Type>
-            <Description>TXT_KEY_UNITCLASS_MAN_O_WAR</Description>
-            <DefaultUnit>UNIT_MAN_O_WAR</DefaultUnit>
+            <Type>UNITCLASS_ROYAL_MAN_O_WAR</Type>
+            <Description>TXT_KEY_UNITCLASS_ROYAL_MAN_O_WAR</Description>
+            <DefaultUnit>UNIT_ROYAL_MAN_O_WAR</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_WHALING_BOAT</Type>

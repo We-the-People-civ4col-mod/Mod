@@ -323,7 +323,7 @@
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_REV_SUPPORT_SEA</DefineName>
-		<DefineTextVal>UNITCLASS_SHIP_OF_THE_LINE</DefineTextVal>
+		<DefineTextVal>UNITCLASS_ROYAL_MAN_O_WAR</DefineTextVal>
 	</Define>
 	<Define>
 		<DefineName>REV_SUPPORT_LAND</DefineName>
@@ -367,7 +367,7 @@
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_KING_REINFORCEMENT_SEA</DefineName>
-		<DefineTextVal>UNITCLASS_ROYAL_TROOP_GALLEON</DefineTextVal>
+		<DefineTextVal>UNITCLASS_ROYAL_MAN_O_WAR</DefineTextVal>
 	</Define>
 	<Define>
 		<DefineName>KING_REINFORCEMENT_SEA</DefineName>

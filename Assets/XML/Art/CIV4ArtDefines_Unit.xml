@@ -5206,7 +5206,7 @@
             <Type>ART_DEF_UNIT_BIG_COASTAL_SHIP</Type>
             <Button>,Art/colonization_atlas_military.dds,6,15</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_caravel.dds</FullLengthIcon>
-            <fScale>0.15</fScale>
+            <fScale>0.17</fScale>
             <fInterfaceScale>0.95</fInterfaceScale>
             <NIF>Art/Units/Ships_Transport/trabakul/Caravel.nif</NIF>
             <KFM>Art/Units/Ships_Transport/trabakul/Caravel.kfm</KFM>
@@ -9571,7 +9571,7 @@
         </UnitArtInfo>
         <!-- RaR Ships Man-O-War -->
         <UnitArtInfo>
-            <Type>ART_DEF_UNIT_MAN_O_WAR</Type>
+            <Type>ART_DEF_UNIT_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
             <fScale>0.18</fScale>
@@ -9603,7 +9603,7 @@
             <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
-            <Type>ART_DEF_UNIT_ENGLAND_MAN_O_WAR</Type>
+            <Type>ART_DEF_UNIT_ENGLAND_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
             <fScale>0.18</fScale>
@@ -9635,7 +9635,7 @@
             <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
-            <Type>ART_DEF_UNIT_SPAIN_MAN_O_WAR</Type>
+            <Type>ART_DEF_UNIT_SPAIN_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
             <fScale>0.18</fScale>
@@ -9667,7 +9667,7 @@
             <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
-            <Type>ART_DEF_UNIT_RUSSIA_MAN_O_WAR</Type>
+            <Type>ART_DEF_UNIT_RUSSIA_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
             <fScale>0.18</fScale>
@@ -9699,7 +9699,7 @@
             <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
-            <Type>ART_DEF_UNIT_FRANCE_MAN_O_WAR</Type>
+            <Type>ART_DEF_UNIT_FRANCE_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
             <fScale>0.18</fScale>
@@ -9731,7 +9731,7 @@
             <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
-            <Type>ART_DEF_UNIT_PORTUGAL_MAN_O_WAR</Type>
+            <Type>ART_DEF_UNIT_PORTUGAL_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
             <fScale>0.18</fScale>
@@ -9763,7 +9763,7 @@
             <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
-            <Type>ART_DEF_UNIT_DUTCH_MAN_O_WAR</Type>
+            <Type>ART_DEF_UNIT_DUTCH_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
             <fScale>0.18</fScale>
@@ -9795,7 +9795,7 @@
             <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
-            <Type>ART_DEF_UNIT_DANISH_MAN_O_WAR</Type>
+            <Type>ART_DEF_UNIT_DANISH_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
             <fScale>0.18</fScale>
@@ -9827,7 +9827,7 @@
             <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
-            <Type>ART_DEF_UNIT_SWEDISH_MAN_O_WAR</Type>
+            <Type>ART_DEF_UNIT_SWEDISH_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
             <fScale>0.18</fScale>
@@ -10153,7 +10153,7 @@
             <Button>,Art/colonization_atlas_military.dds,1,17</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_carrack.dds</FullLengthIcon>
             <fScale>0.18</fScale>
-            <fInterfaceScale>0.4</fInterfaceScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/units/Ships_Transport/Carrack/Galleon.nif</NIF>
             <KFM>Art/units/Ships_Transport/Carrack/Galleon.kfm</KFM>
             <iDamageStates>4</iDamageStates>
@@ -10185,7 +10185,7 @@
             <Button>,Art/colonization_atlas_military.dds,1,17</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_carrack.dds</FullLengthIcon>
             <fScale>0.18</fScale>
-            <fInterfaceScale>0.4</fInterfaceScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/units/spain/ships/Carrack/Galleon.nif</NIF>
             <KFM>Art/units/Ships_Transport/Carrack/Galleon.kfm</KFM>
             <iDamageStates>4</iDamageStates>
@@ -10217,7 +10217,7 @@
             <Button>,Art/colonization_atlas_military.dds,1,17</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_carrack.dds</FullLengthIcon>
             <fScale>0.18</fScale>
-            <fInterfaceScale>0.4</fInterfaceScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/units/france/ships/Carrack/Galleon.nif</NIF>
             <KFM>Art/units/Ships_Transport/Carrack/Galleon.kfm</KFM>
             <iDamageStates>4</iDamageStates>
@@ -10249,7 +10249,7 @@
             <Button>,Art/colonization_atlas_military.dds,1,17</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_carrack.dds</FullLengthIcon>
             <fScale>0.18</fScale>
-            <fInterfaceScale>0.4</fInterfaceScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/Units/Sweden/ships/Carrack/Galleon.nif</NIF>
             <KFM>Art/units/Ships_Transport/Carrack/Galleon.kfm</KFM>
             <iDamageStates>4</iDamageStates>
@@ -10281,7 +10281,7 @@
             <Button>,Art/colonization_atlas_military.dds,1,17</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_carrack.dds</FullLengthIcon>
             <fScale>0.18</fScale>
-            <fInterfaceScale>0.4</fInterfaceScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/units/russia/ships/Carrack/Galleon.nif</NIF>
             <KFM>Art/units/Ships_Transport/Carrack/Galleon.kfm</KFM>
             <iDamageStates>4</iDamageStates>
@@ -10313,7 +10313,7 @@
             <Button>,Art/colonization_atlas_military.dds,1,17</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_carrack.dds</FullLengthIcon>
             <fScale>0.18</fScale>
-            <fInterfaceScale>0.4</fInterfaceScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/units/portugal/ships/Carrack/Galleon.nif</NIF>
             <KFM>Art/units/Ships_Transport/Carrack/Galleon.kfm</KFM>
             <iDamageStates>4</iDamageStates>
@@ -10345,7 +10345,7 @@
             <Button>,Art/colonization_atlas_military.dds,1,17</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_carrack.dds</FullLengthIcon>
             <fScale>0.18</fScale>
-            <fInterfaceScale>0.4</fInterfaceScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/units/england/ships/Carrack/Galleon.nif</NIF>
             <KFM>Art/units/Ships_Transport/Carrack/Galleon.kfm</KFM>
             <iDamageStates>4</iDamageStates>
@@ -10377,7 +10377,7 @@
             <Button>,Art/colonization_atlas_military.dds,1,17</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_carrack.dds</FullLengthIcon>
             <fScale>0.18</fScale>
-            <fInterfaceScale>0.4</fInterfaceScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/units/dutch/ships/Carrack/Galleon.nif</NIF>
             <KFM>Art/units/Ships_Transport/Carrack/Galleon.kfm</KFM>
             <iDamageStates>4</iDamageStates>
@@ -10409,7 +10409,7 @@
             <Button>,Art/colonization_atlas_military.dds,1,17</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_carrack.dds</FullLengthIcon>
             <fScale>0.18</fScale>
-            <fInterfaceScale>0.4</fInterfaceScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/Units/Denmark/ships/Carrack/Galleon.nif</NIF>
             <KFM>Art/units/Ships_Transport/Carrack/Galleon.kfm</KFM>
             <iDamageStates>4</iDamageStates>

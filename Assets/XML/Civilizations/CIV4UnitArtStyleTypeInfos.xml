@@ -216,10 +216,10 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
-                    <UnitType>UNIT_MAN_O_WAR</UnitType>
+                    <UnitType>UNIT_ROYAL_MAN_O_WAR</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
-                        <ArtDefineTag>ART_DEF_UNIT_DANISH_MAN_O_WAR</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_DANISH_ROYAL_MAN_O_WAR</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -551,10 +551,10 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
-                    <UnitType>UNIT_MAN_O_WAR</UnitType>
+                    <UnitType>UNIT_ROYAL_MAN_O_WAR</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
-                        <ArtDefineTag>ART_DEF_UNIT_DUTCH_MAN_O_WAR</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_DUTCH_ROYAL_MAN_O_WAR</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -886,10 +886,10 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
-                    <UnitType>UNIT_MAN_O_WAR</UnitType>
+                    <UnitType>UNIT_ROYAL_MAN_O_WAR</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
-                        <ArtDefineTag>ART_DEF_UNIT_ENGLAND_MAN_O_WAR</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_ENGLAND_ROYAL_MAN_O_WAR</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -1221,10 +1221,10 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
-                    <UnitType>UNIT_MAN_O_WAR</UnitType>
+                    <UnitType>UNIT_ROYAL_MAN_O_WAR</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
-                        <ArtDefineTag>ART_DEF_UNIT_FRANCE_MAN_O_WAR</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_FRANCE_ROYAL_MAN_O_WAR</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -1556,10 +1556,10 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
-                    <UnitType>UNIT_MAN_O_WAR</UnitType>
+                    <UnitType>UNIT_ROYAL_MAN_O_WAR</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
-                        <ArtDefineTag>ART_DEF_UNIT_PORTUGAL_MAN_O_WAR</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_PORTUGAL_ROYAL_MAN_O_WAR</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -1898,10 +1898,10 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
-                    <UnitType>UNIT_MAN_O_WAR</UnitType>
+                    <UnitType>UNIT_ROYAL_MAN_O_WAR</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
-                        <ArtDefineTag>ART_DEF_UNIT_RUSSIA_MAN_O_WAR</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_RUSSIA_ROYAL_MAN_O_WAR</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -2233,10 +2233,10 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
-                    <UnitType>UNIT_MAN_O_WAR</UnitType>
+                    <UnitType>UNIT_ROYAL_MAN_O_WAR</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
-                        <ArtDefineTag>ART_DEF_UNIT_SPAIN_MAN_O_WAR</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_SPAIN_ROYAL_MAN_O_WAR</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -2568,10 +2568,10 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
-                    <UnitType>UNIT_MAN_O_WAR</UnitType>
+                    <UnitType>UNIT_ROYAL_MAN_O_WAR</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
-                        <ArtDefineTag>ART_DEF_UNIT_SWEDISH_MAN_O_WAR</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_SWEDISH_ROYAL_MAN_O_WAR</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
