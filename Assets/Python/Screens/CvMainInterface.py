@@ -3353,17 +3353,22 @@ class CvMainInterface:
 					screen.enableSelect("ScoreBackground", False)
 					screen.setTableColumnHeader("ScoreBackground", 0, "", iWidth - 10)
 			
-				i = gc.getMAX_CIV_TEAMS() - 1
-				while (i > -1):
+				#i = gc.getMAX_CIV_TEAMS() - 1
+				#while (i > -1):
+				i = 0
+				while (i < gc.getMAX_CIV_TEAMS()):
 					eTeam = gc.getGame().getRankTeam(i)
 					if (gc.getTeam(gc.getGame().getActiveTeam()).isHasMet(eTeam) or gc.getTeam(eTeam).isHuman() or gc.getGame().isDebugMode()):
-						j = gc.getMAX_CIV_PLAYERS() - 1
-						while (j > -1):
+						#j = gc.getMAX_CIV_PLAYERS() - 1
+						#while (j > -1):
+						j = 0
+						while (j < gc.getMAX_CIV_PLAYERS()):
 							ePlayer = gc.getGame().getRankPlayer(j)
 							if (gc.getPlayer(ePlayer).isAlive()):
 								# < JAnimals Mod Start 1/1 > AND # R&R, ray, Church
 								if (gc.getGame().isBarbarianPlayer(ePlayer) or gc.getGame().isChurchPlayer(ePlayer)):
-									j = j - 1
+									#j = j - 1
+									j = j + 1
 									continue
 								# < JAnimals Mod End 1/1 >
 								if (gc.getPlayer(ePlayer).getTeam() == eTeam):
@@ -3462,8 +3467,10 @@ class CvMainInterface:
 									CyInterface().checkFlashReset(ePlayer)
 
 									iCount += 1
-							j = j - 1
-					i = i - 1
+							#j = j - 1
+							j = j + 1
+					#i = i - 1
+					i = i + 1
 				
 				if ( CyInterface().getShowInterface() == InterfaceVisibility.INTERFACE_SHOW or CyInterface().isInAdvancedStart() or pHeadSelectedCity != None):
 					yCoord = yResolution - SADDLE_HEIGHT * 38 / 100
