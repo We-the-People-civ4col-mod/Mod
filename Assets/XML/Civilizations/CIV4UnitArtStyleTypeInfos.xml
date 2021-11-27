@@ -216,6 +216,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_ROYAL_SHIP_OF_THE_LINE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_DANISH_ROYAL_SHIP_OF_THE_LINE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_COLONIAL_MAN_O_WAR</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -555,6 +562,13 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_DUTCH_SHIP_OF_THE_LINE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_ROYAL_SHIP_OF_THE_LINE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_DUTCH_ROYAL_SHIP_OF_THE_LINE</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -900,6 +914,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_ROYAL_SHIP_OF_THE_LINE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_ENGLAND_ROYAL_SHIP_OF_THE_LINE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_COLONIAL_MAN_O_WAR</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -1242,6 +1263,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_ROYAL_SHIP_OF_THE_LINE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_FRANCE_ROYAL_SHIP_OF_THE_LINE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_COLONIAL_MAN_O_WAR</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -1581,6 +1609,13 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_PORTUGAL_SHIP_OF_THE_LINE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_ROYAL_SHIP_OF_THE_LINE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_PORTUGAL_ROYAL_SHIP_OF_THE_LINE</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
@@ -1933,6 +1968,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_ROYAL_SHIP_OF_THE_LINE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_RUSSIA_ROYAL_SHIP_OF_THE_LINE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_COLONIAL_MAN_O_WAR</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -2275,6 +2317,13 @@
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>
+                    <UnitType>UNIT_ROYAL_SHIP_OF_THE_LINE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_SPAIN_ROYAL_SHIP_OF_THE_LINE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
                     <UnitType>UNIT_COLONIAL_MAN_O_WAR</UnitType>
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
@@ -2614,6 +2663,13 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_SWEDISH_SHIP_OF_THE_LINE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_ROYAL_SHIP_OF_THE_LINE</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_SWEDISH_ROYAL_SHIP_OF_THE_LINE</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
                 <StyleUnit>

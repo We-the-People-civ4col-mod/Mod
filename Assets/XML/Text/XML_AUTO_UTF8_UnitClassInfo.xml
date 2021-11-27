@@ -2804,6 +2804,30 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_ROYAL_SHIP_OF_THE_LINE</Tag>
+        <English>Royal Ship of the Line:Royal Ships of the Line</English>
+        <French>
+            <Text>Navire de ligne royal:Navires de ligne royal</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Königliches Linienschiff:Königliches Linienschiffe</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Vascello royale:Vascelli royale</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Navío de línea royale:Navíos de línea royale</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_MAN_O_WAR</Tag>
         <English>Royal Man O' War: Royal Men O' War</English>
         <German>

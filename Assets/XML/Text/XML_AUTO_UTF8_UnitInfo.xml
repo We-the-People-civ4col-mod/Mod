@@ -5081,6 +5081,30 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_ROYAL_SHIP_OF_THE_LINE</Tag>
+        <English>Royal Ship of the Line:Royal Ships of the Line</English>
+        <French>
+            <Text>Navire de ligne royal:Navires de ligne royal</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Königliches Linienschiff:Königliches Linienschiffe</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Vascello royale:Vascelli royale</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Navío de línea royale:Navíos de línea royale</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_SHIP_OF_THE_LINE_PEDIA</Tag>
         <English>Ships of the Line were the largest vessels deployed during the height of the European wooden navies, from the seventeenth until the mid-nineteenth century.[NEWLINE]In naval combat, the most powerful ships of each squadron form into lines to unleash volley after volley upon their rivals.[NEWLINE]Each ship could have more cannons than an entire land army.[NEWLINE]Ships of the Line, as these elite vessels were known, usually carried 80 or more guns, but this extra-heavy armament cost the vessel dearly in maneuverability.</English>
         <French>Les galions de guerre sont les plus grands vaisseaux déployés pendant l'apogée des navires en bois européens, du dix-septième au milieu du dix-neuvième siècle. La stratégie la plus couramment employée par les marines nationales consiste à placer les plus puissants de leurs galions en ligne pour leur faire déclencher un tir de barrage contre leurs rivaux. Les galions de guerre transportent habituellement 80 canons ou plus, mais ce lourd armement leur fait énormément perdre en maniabilité.</French>

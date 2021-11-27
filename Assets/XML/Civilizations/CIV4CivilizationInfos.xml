@@ -355,6 +355,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -845,6 +849,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -1303,6 +1311,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -1714,6 +1726,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -2099,6 +2115,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -2434,6 +2454,10 @@
             <Units>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -2806,6 +2830,10 @@
             <Units>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -3344,6 +3372,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -3663,7 +3695,11 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -3973,7 +4009,11 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -4280,7 +4320,11 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -4590,7 +4634,11 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -4884,7 +4932,11 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -5179,7 +5231,11 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -5475,7 +5531,11 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
@@ -5774,7 +5834,11 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                </FreeUnitClass>
+                <FreeUnitClass>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>

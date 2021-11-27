@@ -482,6 +482,10 @@
                     <iChange>1</iChange>
                 </UnitMoveChange>
                 <UnitMoveChange>
+                    <UnitClass>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+                <UnitMoveChange>
                     <UnitClass>UNITCLASS_COLONIAL_MAN_O_WAR</UnitClass>
                     <iChange>1</iChange>
                 </UnitMoveChange>
@@ -614,6 +618,10 @@
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
@@ -6513,6 +6521,10 @@
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_COLONIAL_MAN_O_WAR</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
@@ -9762,6 +9774,10 @@
             <UnitStrengthModifiers>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
