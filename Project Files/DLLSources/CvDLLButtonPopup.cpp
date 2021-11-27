@@ -418,6 +418,19 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 		else if (pPopupReturn->getButtonClicked() >= GC.getNumUnitInfos())
 // Ramstormp - END
 
+	case BUTTONPOPUP_CHOOSE_YIELD_BUILD:
+		if (pPopupReturn->getButtonClicked() >= GC.getNumUnitInfos())
+		{
+			BuildingTypes eBuilding = (BuildingTypes) (pPopupReturn->getButtonClicked() - GC.getNumUnitInfos());
+			gDLL->sendDoTask(info.getData1(), TASK_PUSH_CONSTRUCT_BUILDING, eBuilding, -1, false, false, false, false);
+		}
+		else if (pPopupReturn->getButtonClicked() >= 0)
+		{
+			UnitTypes eUnit = (UnitTypes) pPopupReturn->getButtonClicked();
+			gDLL->sendDoTask(info.getData1(), TASK_PUSH_TRAIN_UNIT, eUnit, NO_UNITAI, false, false, false, false);
+		}
+		break;
+
 	case BUTTONPOPUP_CHOOSE_EDUCATION:
 		if (pPopupReturn->getButtonClicked() == GC.getNumUnitInfos())
 		{
