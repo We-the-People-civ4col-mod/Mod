@@ -3339,7 +3339,7 @@ class CvMainInterface:
 		self.SCORE_TEXT_BOTTOM_MARGIN_SMALL = -80
 	# Scrollable Scoreboard
 		#iWidth = 400
-		iWidth = int((25 * xResolution) / 100)
+		iWidth = int((30 * xResolution) / 100)
 		iCount = 13
 		iBtnHeight = 22
 		yCoord = yResolution - SADDLE_HEIGHT * 13/16 - self.SCORE_TEXT_BOTTOM_MARGIN_SMALL
@@ -3348,7 +3348,7 @@ class CvMainInterface:
 		if not pHeadSelectedCity:
 			screen.addTableControlGFC("ScoreBackground", 1, xResolution - self.SCORE_BACKGROUND_SIDE_MARGIN/2 - iWidth, yCoord - (iBtnHeight * (iCount - 1)), iWidth, (iBtnHeight * (iCount - 1)), False, False, 0, 0, TableStyles.TABLE_STYLE_EMPTY)
 			screen.enableSelect("ScoreBackground", False)
-			screen.setTableColumnHeader("ScoreBackground", 0, "", iWidth)
+			screen.setTableColumnHeader("ScoreBackground", 0, "", iWidth - 10)
 			#screen.setTableText("ScoreBackground", 0, iRow, "testdata", "", WidgetTypes.WIDGET_CONTACT_CIV, 1, -1, CvUtil.FONT_RIGHT_JUSTIFY)
 		
 		if ((CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_MINIMAP_ONLY)):
