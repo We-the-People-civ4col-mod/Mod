@@ -351,7 +351,7 @@
             </Buildings>
             <Units>
                 <Unit>
-                    <UnitClassType>UNITCLASS_COLONIAL_MAN_O_WAR</UnitClassType>
+                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
