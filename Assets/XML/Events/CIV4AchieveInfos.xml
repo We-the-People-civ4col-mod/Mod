@@ -1859,6 +1859,10 @@
         <NumBuildings/>
         <NumUnits>
             <NumUnits>
+                <UnitType>UNIT_COLONIAL_MAN_O_WAR</UnitType>
+                <iNumber>1</iNumber>
+            </NumUnits>
+            <NumUnits>
                 <UnitType>UNIT_ROYAL_MAN_O_WAR</UnitType>
                 <iNumber>1</iNumber>
             </NumUnits>

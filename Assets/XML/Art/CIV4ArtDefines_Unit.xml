@@ -9569,12 +9569,301 @@
             <SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
             <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
         </UnitArtInfo>
-        <!-- RaR Ships Man-O-War -->
+        <!-- WTP Ships Colonial Man-O-War -->
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_COLONIAL_MAN_O_WAR</Type>
+            <Button>,Art/colonization_atlas_military.dds,2,14</Button>
+            <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_colonial_man_o_war.dds</FullLengthIcon>
+            <fScale>0.18</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
+            <NIF>Art/Units/Ships_Transport/Colonial_Man_O_War/Man_O_War.nif</NIF>
+            <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
+            <iDamageStates>4</iDamageStates>
+            <TrailDefinition>
+                <Texture>Art/Shared/water_ship_wake.dds</Texture>
+                <fWidth>1</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>1</fTaper>
+                <fFadeStartTime>.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bSmoothMove>1</bSmoothMove>
+            <fAngleInterpRate>720.0</fAngleInterpRate>
+            <fBankRate>.3</fBankRate>
+            <fExchangeAngle>25.0</fExchangeAngle>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+            <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_SPAIN_COLONIAL_MAN_O_WAR</Type>
+            <Button>,Art/colonization_atlas_military.dds,2,14</Button>
+            <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_colonial_man_o_war.dds</FullLengthIcon>
+            <fScale>0.18</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
+            <NIF>Art/Units/spain/ships/Colonial_Man_O_War/Man_O_War.nif</NIF>
+            <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
+            <iDamageStates>4</iDamageStates>
+            <TrailDefinition>
+                <Texture>Art/Shared/water_ship_wake.dds</Texture>
+                <fWidth>1</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>1</fTaper>
+                <fFadeStartTime>.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bSmoothMove>1</bSmoothMove>
+            <fAngleInterpRate>720.0</fAngleInterpRate>
+            <fBankRate>.3</fBankRate>
+            <fExchangeAngle>25.0</fExchangeAngle>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+            <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_RUSSIA_COLONIAL_MAN_O_WAR</Type>
+            <Button>,Art/colonization_atlas_military.dds,2,14</Button>
+            <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_colonial_man_o_war.dds</FullLengthIcon>
+            <fScale>0.18</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
+            <NIF>Art/Units/russia/ships/Colonial_Man_O_War/Man_O_War.nif</NIF>
+            <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
+            <iDamageStates>4</iDamageStates>
+            <TrailDefinition>
+                <Texture>Art/Shared/water_ship_wake.dds</Texture>
+                <fWidth>1</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>1</fTaper>
+                <fFadeStartTime>.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bSmoothMove>1</bSmoothMove>
+            <fAngleInterpRate>720.0</fAngleInterpRate>
+            <fBankRate>.3</fBankRate>
+            <fExchangeAngle>25.0</fExchangeAngle>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+            <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_FRANCE_COLONIAL_MAN_O_WAR</Type>
+            <Button>,Art/colonization_atlas_military.dds,2,14</Button>
+            <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_colonial_man_o_war.dds</FullLengthIcon>
+            <fScale>0.18</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
+            <NIF>Art/Units/france/ships/Colonial_Man_O_War/Man_O_War.nif</NIF>
+            <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
+            <iDamageStates>4</iDamageStates>
+            <TrailDefinition>
+                <Texture>Art/Shared/water_ship_wake.dds</Texture>
+                <fWidth>1</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>1</fTaper>
+                <fFadeStartTime>.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bSmoothMove>1</bSmoothMove>
+            <fAngleInterpRate>720.0</fAngleInterpRate>
+            <fBankRate>.3</fBankRate>
+            <fExchangeAngle>25.0</fExchangeAngle>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+            <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_PORTUGAL_COLONIAL_MAN_O_WAR</Type>
+            <Button>,Art/colonization_atlas_military.dds,2,14</Button>
+            <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_colonial_man_o_war.dds</FullLengthIcon>
+            <fScale>0.18</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
+            <NIF>Art/Units/portugal/ships/Colonial_Man_O_War/Man_O_War.nif</NIF>
+            <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
+            <iDamageStates>4</iDamageStates>
+            <TrailDefinition>
+                <Texture>Art/Shared/water_ship_wake.dds</Texture>
+                <fWidth>1</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>1</fTaper>
+                <fFadeStartTime>.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bSmoothMove>1</bSmoothMove>
+            <fAngleInterpRate>720.0</fAngleInterpRate>
+            <fBankRate>.3</fBankRate>
+            <fExchangeAngle>25.0</fExchangeAngle>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+            <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_ENGLAND_COLONIAL_MAN_O_WAR</Type>
+            <Button>,Art/colonization_atlas_military.dds,2,14</Button>
+            <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_colonial_man_o_war.dds</FullLengthIcon>
+            <fScale>0.18</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
+            <NIF>Art/Units/england/ships/Colonial_Man_O_War/Man_O_War.nif</NIF>
+            <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
+            <iDamageStates>4</iDamageStates>
+            <TrailDefinition>
+                <Texture>Art/Shared/water_ship_wake.dds</Texture>
+                <fWidth>1</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>1</fTaper>
+                <fFadeStartTime>.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bSmoothMove>1</bSmoothMove>
+            <fAngleInterpRate>720.0</fAngleInterpRate>
+            <fBankRate>.3</fBankRate>
+            <fExchangeAngle>25.0</fExchangeAngle>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+            <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_DUTCH_COLONIAL_MAN_O_WAR</Type>
+            <Button>,Art/colonization_atlas_military.dds,2,14</Button>
+            <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_colonial_man_o_war.dds</FullLengthIcon>
+            <fScale>0.18</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
+            <NIF>Art/Units/dutch/ships/Colonial_Man_O_War/Man_O_War.nif</NIF>
+            <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
+            <iDamageStates>4</iDamageStates>
+            <TrailDefinition>
+                <Texture>Art/Shared/water_ship_wake.dds</Texture>
+                <fWidth>1</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>1</fTaper>
+                <fFadeStartTime>.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bSmoothMove>1</bSmoothMove>
+            <fAngleInterpRate>720.0</fAngleInterpRate>
+            <fBankRate>.3</fBankRate>
+            <fExchangeAngle>25.0</fExchangeAngle>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+            <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_DANISH_COLONIAL_MAN_O_WAR</Type>
+            <Button>,Art/colonization_atlas_military.dds,2,14</Button>
+            <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_colonial_man_o_war.dds</FullLengthIcon>
+            <fScale>0.18</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
+            <NIF>Art/Units/denmark/ships/Colonial_Man_O_War/Man_O_War.nif</NIF>
+            <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
+            <iDamageStates>4</iDamageStates>
+            <TrailDefinition>
+                <Texture>Art/Shared/water_ship_wake.dds</Texture>
+                <fWidth>1</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>1</fTaper>
+                <fFadeStartTime>.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bSmoothMove>1</bSmoothMove>
+            <fAngleInterpRate>720.0</fAngleInterpRate>
+            <fBankRate>.3</fBankRate>
+            <fExchangeAngle>25.0</fExchangeAngle>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+            <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_SWEDISH_COLONIAL_MAN_O_WAR</Type>
+            <Button>,Art/colonization_atlas_military.dds,2,14</Button>
+            <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_colonial_man_o_war.dds</FullLengthIcon>
+            <fScale>0.18</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
+            <NIF>Art/Units/Sweden/ships/Colonial_Man_O_War/Man_O_War.nif</NIF>
+            <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
+            <iDamageStates>4</iDamageStates>
+            <TrailDefinition>
+                <Texture>Art/Shared/water_ship_wake.dds</Texture>
+                <fWidth>1</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>1</fTaper>
+                <fFadeStartTime>.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bSmoothMove>1</bSmoothMove>
+            <fAngleInterpRate>720.0</fAngleInterpRate>
+            <fBankRate>.3</fBankRate>
+            <fExchangeAngle>25.0</fExchangeAngle>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+            <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+        </UnitArtInfo>
+        <!-- RaR Ships Royal Man-O-War -->
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
-            <fScale>0.18</fScale>
+            <fScale>0.20</fScale>
             <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/Units/Man_O_War/Man_O_War.nif</NIF>
             <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
@@ -9606,7 +9895,7 @@
             <Type>ART_DEF_UNIT_ENGLAND_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
-            <fScale>0.18</fScale>
+            <fScale>0.20</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Units/england/ships/Man_O_War/Man_O_War.nif</NIF>
             <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
@@ -9638,7 +9927,7 @@
             <Type>ART_DEF_UNIT_SPAIN_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
-            <fScale>0.18</fScale>
+            <fScale>0.20</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Units/spain/ships/Man_O_War/Man_O_War.nif</NIF>
             <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
@@ -9670,7 +9959,7 @@
             <Type>ART_DEF_UNIT_RUSSIA_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
-            <fScale>0.18</fScale>
+            <fScale>0.20</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Units/russia/ships/Man_O_War/Man_O_War.nif</NIF>
             <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
@@ -9702,7 +9991,7 @@
             <Type>ART_DEF_UNIT_FRANCE_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
-            <fScale>0.18</fScale>
+            <fScale>0.20</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Units/france/ships/Man_O_War/Man_O_War.nif</NIF>
             <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
@@ -9734,7 +10023,7 @@
             <Type>ART_DEF_UNIT_PORTUGAL_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
-            <fScale>0.18</fScale>
+            <fScale>0.20</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Units/portugal/ships/Man_O_War/Man_O_War.nif</NIF>
             <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
@@ -9766,7 +10055,7 @@
             <Type>ART_DEF_UNIT_DUTCH_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
-            <fScale>0.18</fScale>
+            <fScale>0.20</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Units/dutch/ships/Man_O_War/Man_O_War.nif</NIF>
             <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
@@ -9798,7 +10087,7 @@
             <Type>ART_DEF_UNIT_DANISH_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
-            <fScale>0.18</fScale>
+            <fScale>0.20</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Units/Denmark/ships/Man_O_War/Man_O_War.nif</NIF>
             <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
@@ -9830,7 +10119,7 @@
             <Type>ART_DEF_UNIT_SWEDISH_ROYAL_MAN_O_WAR</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,13</Button>
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_man_o_war.dds</FullLengthIcon>
-            <fScale>0.18</fScale>
+            <fScale>0.20</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Units/Sweden/ships/Man_O_War/Man_O_War.nif</NIF>
             <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
@@ -11078,38 +11367,6 @@
             <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
         </UnitArtInfo>
         <!-- WTP Ships of Mighty Toad -->
-        <UnitArtInfo>
-            <Type>ART_DEF_UNIT_COLONIAL_MAN_O_WAR</Type>
-            <Button>,Art/colonization_atlas_military.dds,2,14</Button>
-            <FullLengthIcon>,Art/Interface/Screens/Europe/ships/colonial_man_o_war.dds</FullLengthIcon>
-            <fScale>0.18</fScale>
-            <fInterfaceScale>0.5</fInterfaceScale>
-            <NIF>Art/Units/Ships_Transport/Colonial_Man_O_War/Man_O_War.nif</NIF>
-            <KFM>Art/Units/Man_O_War/Man_O_War.kfm</KFM>
-            <iDamageStates>4</iDamageStates>
-            <TrailDefinition>
-                <Texture>Art/Shared/water_ship_wake.dds</Texture>
-                <fWidth>1</fWidth>
-                <fLength>180.0</fLength>
-                <fTaper>1</fTaper>
-                <fFadeStartTime>.2</fFadeStartTime>
-                <fFadeFalloff>0.35</fFadeFalloff>
-            </TrailDefinition>
-            <fBattleDistance>0.35</fBattleDistance>
-            <fRangedDeathTime>0.31</fRangedDeathTime>
-            <bSmoothMove>1</bSmoothMove>
-            <fAngleInterpRate>720.0</fAngleInterpRate>
-            <fBankRate>.3</fBankRate>
-            <fExchangeAngle>25.0</fExchangeAngle>
-            <bActAsRanged>0</bActAsRanged>
-            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-            <AudioRunSounds>
-                <AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
-                <AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
-            </AudioRunSounds>
-            <SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
-            <ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
-        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_ROYAL_SHIP_OF_THE_LINE</Type>
             <Button>,Art/colonization_atlas_military.dds,3,14</Button>

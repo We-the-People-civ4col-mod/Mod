@@ -2813,6 +2813,15 @@
         </German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_ROYAL_MAN_O_WAR</Tag>
+        <English>Man O' War: Men O' War</English>
+        <German>
+            <Text>Schlachtschiff:Schlachtschiffe</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SILVER</Tag>
         <English>Silver</English>
         <French>
