@@ -30,10 +30,10 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_POLAR_FOX</Type>
-            <fScale>25.0</fScale>
+            <fScale>1.1</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/arcticfox/arcticfox.nif</NIF>
-            <KFM/>
+            <NIF>Art/Terrain/Resources/arcticfox/Arctic_Fox_FX.nif</NIF>
+            <KFM>Art/Terrain/Resources/Sheep_NO_SOUND/Sheep_NO_SOUND.kfm</KFM>
             <Button>Art/interface/buttons/arcticfox2.dds</Button>
             <FontButtonIndex>78</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
@@ -41,10 +41,10 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_RED_FOX</Type>
-            <fScale>25.0</fScale>
+            <fScale>1.3</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/redfox/redfox.nif</NIF>
-            <KFM/>
+            <NIF>Art/Terrain/Resources/redfox/Red_Fox_FX.nif</NIF>
+            <KFM>Art/Terrain/Resources/Sheep_NO_SOUND/Sheep_NO_SOUND.kfm</KFM>
             <Button>Art/interface/buttons/redfox.dds</Button>
             <FontButtonIndex>79</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
@@ -250,10 +250,10 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_CAPYBARA</Type>
-            <fScale>20.0</fScale>
+            <fScale>1.1</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/capybara/capybara.nif</NIF>
-            <KFM/>
+            <NIF>Art/Terrain/Resources/capybara/Capybara_FX.nif</NIF>
+            <KFM>Art/Terrain/Resources/Pig_NO_SOUND/Pig_NO_SOUND.kfm</KFM>
             <Button>Art/Interface/Buttons/capybara.dds</Button>
             <FontButtonIndex>62</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
@@ -261,10 +261,10 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_TAPIR</Type>
-            <fScale>40.0</fScale>
+            <fScale>1.1</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/tapir/mttapir.nif</NIF>
-            <KFM/>
+            <NIF>Art/Terrain/Resources/tapir/Tapir_FX.nif</NIF>
+            <KFM>Art/Terrain/Resources/Pig_NO_SOUND/Pig_NO_SOUND.kfm</KFM>
             <Button>Art/Interface/Buttons/tapir.dds</Button>
             <FontButtonIndex>61</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
@@ -910,10 +910,10 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_IGUANA</Type>
-            <fScale>20.0</fScale>
+            <fScale>1.1</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/iguana/iguana.nif</NIF>
-            <KFM/>
+            <NIF>Art/Terrain/Resources/iguana/Iguana_FX.nif</NIF>
+            <KFM>Art/Terrain/Resources/Pig_NO_SOUND/Pig_NO_SOUND.kfm</KFM>
             <Button>Art/interface/buttons/iguana.dds</Button>
             <FontButtonIndex>85</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
