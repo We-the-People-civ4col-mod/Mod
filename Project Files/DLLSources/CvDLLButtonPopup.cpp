@@ -401,6 +401,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 		}
 		break;
 
+	case BUTTONPOPUP_CHOOSE_YIELD_BUILD:
 // Ramstormp, WtP, Add Examine Settlement option to the no longer lacking yields for building production popup - START 
 		iExamineCityID = 0;
 		iExamineCityID = std::max(iExamineCityID, GC.getNumUnitInfos());
@@ -414,12 +415,9 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 				gDLL->getInterfaceIFace()->selectCity(pCity, true);
 			}
 		}
-
+		
 		else if (pPopupReturn->getButtonClicked() >= GC.getNumUnitInfos())
 // Ramstormp - END
-
-	case BUTTONPOPUP_CHOOSE_YIELD_BUILD:
-		if (pPopupReturn->getButtonClicked() >= GC.getNumUnitInfos())
 		{
 			BuildingTypes eBuilding = (BuildingTypes) (pPopupReturn->getButtonClicked() - GC.getNumUnitInfos());
 			gDLL->sendDoTask(info.getData1(), TASK_PUSH_CONSTRUCT_BUILDING, eBuilding, -1, false, false, false, false);
