@@ -12268,29 +12268,24 @@ void CvCity::createFleeingUnit(UnitTypes eUnit, bool bDefautAI)
 void CvCity::doEntertainmentBuildings()
 {
 	int iCulturePerTurn = getCultureRate();
-	SpecialBuildingTypes eSpecialBuilding = (SpecialBuildingTypes) GC.getDefineINT("SPECIALBUILDING_TAVERN");
-
 	int factorFromBuildingLevel = 0;
 	BuildingTypes highestLevelEntertainmentBuilding = NO_BUILDING;
 
-	if (eSpecialBuilding != NO_SPECIALBUILDING)
+	for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
 	{
-		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
+		BuildingTypes eBuilding = (BuildingTypes) i;
+		CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
+		if (isHasBuilding(eBuilding))
 		{
-			BuildingTypes eBuilding = (BuildingTypes) i;
-			CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
-			if (kBuilding.getSpecialBuildingType() == eSpecialBuilding)
-			{
-				if (isHasBuilding(eBuilding))
-				{
-					factorFromBuildingLevel = kBuilding.getEntertainmentGoldModifier();
-					highestLevelEntertainmentBuilding = eBuilding;
-				}
+			if (kBuilding.getEntertainmentGoldModifier() > factorFromBuildingLevel)
+			{	
+				factorFromBuildingLevel = kBuilding.getEntertainmentGoldModifier();
+				highestLevelEntertainmentBuilding = eBuilding;
 			}
 		}
 	}
 
-	int iGoldthroughCulture = iCulturePerTurn * factorFromBuildingLevel; // now as defined in XML
+	int iGoldthroughCulture = iCulturePerTurn * factorFromBuildingLevel / 100; // now as defined in XML
 	iGoldthroughCulture = iGoldthroughCulture * (100 + getCityHappiness() - getCityUnHappiness()) / 100; // WTP, ray, Happiness - START
 
 	if (highestLevelEntertainmentBuilding != NO_BUILDING && iGoldthroughCulture > 0)
