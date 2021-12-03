@@ -39018,9 +39018,9 @@
             <UniqueNames/>
             <Special>NONE</Special>
             <Capture>NONE</Capture>
-            <Combat>UNITCOMBAT_NAVAL_TRADE</Combat>
+            <Combat>UNITCOMBAT_NAVAL_MILITARY</Combat>
             <Domain>DOMAIN_SEA</Domain>
-            <DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
+            <DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
@@ -39567,7 +39567,7 @@
             <UniqueNames/>
             <Special>NONE</Special>
             <Capture>NONE</Capture>
-            <Combat>UNITCOMBAT_NAVAL_MILITARY</Combat>
+            <Combat>UNITCOMBAT_NAVAL_TRADE</Combat>
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
@@ -39605,11 +39605,11 @@
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
-                    <UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
+                    <UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
                     <bUnitAI>1</bUnitAI>
                 </UnitAI>
                 <UnitAI>
-                    <UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
+                    <UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
                     <bUnitAI>1</bUnitAI>
                 </UnitAI>
             </UnitAIs>
