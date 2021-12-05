@@ -536,15 +536,20 @@ void CvPlot::doImprovement()
 void CvPlot::upgradeImprovement(ImprovementTypes eImprovementUpgrade, int iUpgradeRate)
 {
 	changeUpgradeProgress(iUpgradeRate);
-
 	// WTP, ray, Improvement Growth Modifier - START
-	// if (getUpgradeProgress() >= GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType()))
-	if (getOwnerINLINE() != NO_PLAYER && getUpgradeTimeLeft(getImprovementType(),getOwnerINLINE()) == 0)
+	int iUpgradeDuration = GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType());
+
+	if (getOwnerINLINE() != NO_PLAYER)
+	{
+		int iUpgradeDurationModifier = GET_PLAYER(getOwnerINLINE()).getImprovementUpgradeDurationModifier();
+		iUpgradeDuration = iUpgradeDuration * (100 + iUpgradeDurationModifier) / 100;
+	}
+
+	if (getUpgradeProgress() >= iUpgradeDuration)
 	{
 		setImprovementType(eImprovementUpgrade);
 	}
 	// WTP, ray, Improvement Growth Modifier - END
-
 }
 
 void CvPlot::doImprovementUpgrade()
@@ -4833,13 +4838,18 @@ int CvPlot::getUpgradeTimeLeft(ImprovementTypes eImprovement, PlayerTypes ePlaye
 	int iTurnsLeft;
 
 	// WTP, ray, Improvement Growth Modifier - START
-	// modify in here by getImprovementUpgradeDurationModifier
+	int iNormalImprovementUpgradeTime = GC.getGameINLINE().getImprovementUpgradeTime(eImprovement);
 	int iUpgradeDurationModifier = GET_PLAYER(ePlayer).getImprovementUpgradeDurationModifier();
-	int iUpgradeDuration = GC.getGameINLINE().getImprovementUpgradeTime(eImprovement);
-	int iModifiedUpgradeDuration = iUpgradeDuration * (100 + iUpgradeDurationModifier) / 100;
-	iUpgradeLeft = (iModifiedUpgradeDuration - ((getImprovementType() == eImprovement) ? getUpgradeProgress() : 0));
+	int iModifiedImprovementUpgradeTime = (iNormalImprovementUpgradeTime * (100 + iUpgradeDurationModifier)) / 100;
+	int iUpgradeProgress = 0;
+	if (getImprovementType() == eImprovement)
+	{
+		iUpgradeProgress = getUpgradeProgress();
+	}
+
 	//iUpgradeLeft = (GC.getGameINLINE().getImprovementUpgradeTime(eImprovement) - ((getImprovementType() == eImprovement) ? getUpgradeProgress() : 0));
-	// WTP, ray, Improvement Growth Modifier - START
+	iUpgradeLeft = iModifiedImprovementUpgradeTime - iUpgradeProgress;
+	// WTP, ray, Improvement Growth Modifier - END
 
 	if (ePlayer == NO_PLAYER)
 	{
@@ -4854,15 +4864,10 @@ int CvPlot::getUpgradeTimeLeft(ImprovementTypes eImprovement, PlayerTypes ePlaye
 	}
 
 	iTurnsLeft = (iUpgradeLeft / iUpgradeRate);
-
-	// WTP, ray, why - it makes no sense ?????
-	/*
 	if ((iTurnsLeft * iUpgradeRate) < iUpgradeLeft)
 	{
 		iTurnsLeft++;
 	}
-	*/
-
 	return std::max(1, iTurnsLeft);
 }
 
