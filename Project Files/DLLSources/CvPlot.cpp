@@ -2415,6 +2415,12 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 	FeatureTypes eResultFeature = (FeatureTypes)(GC.getBuildInfo(eBuild).getResultFeature());
 	if (eResultFeature != NO_FEATURE)
 	{
+		//no reforrestation on City Plots
+		if (isCity())
+		{
+			return false;
+		}
+
 		// check if there is not already Feature
 		if (getFeatureType() != NO_FEATURE)
 		{
@@ -4828,7 +4834,6 @@ int CvPlot::getUpgradeTimeLeft(ImprovementTypes eImprovement, PlayerTypes ePlaye
 
 	// WTP, ray, Improvement Growth Modifier - START
 	// modify in here by getImprovementUpgradeDurationModifier
-	// erst get ownerInline
 	int iUpgradeDurationModifier = GET_PLAYER(ePlayer).getImprovementUpgradeDurationModifier();
 	int iUpgradeDuration = GC.getGameINLINE().getImprovementUpgradeTime(eImprovement);
 	int iModifiedUpgradeDuration = iUpgradeDuration * (100 + iUpgradeDurationModifier) / 100;
@@ -4850,10 +4855,13 @@ int CvPlot::getUpgradeTimeLeft(ImprovementTypes eImprovement, PlayerTypes ePlaye
 
 	iTurnsLeft = (iUpgradeLeft / iUpgradeRate);
 
+	// WTP, ray, why - it makes no sense ?????
+	/*
 	if ((iTurnsLeft * iUpgradeRate) < iUpgradeLeft)
 	{
 		iTurnsLeft++;
 	}
+	*/
 
 	return std::max(1, iTurnsLeft);
 }
