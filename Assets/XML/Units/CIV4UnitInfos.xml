@@ -24648,7 +24648,7 @@
             <bOnlyDefensive>0</bOnlyDefensive>
             <bNoCapture>0</bNoCapture>
             <bQuickCombat>0</bQuickCombat>
-            <bRivalTerritory>0</bRivalTerritory>
+            <bRivalTerritory>1</bRivalTerritory>
             <bMilitaryProduction>0</bMilitaryProduction>
             <bFound>0</bFound>
             <bInvisible>0</bInvisible>
