@@ -7499,7 +7499,7 @@
             <iAIValue>1000</iAIValue>
             <iGenericParameter1>PROMOTION_EVENT_CARGOSPACE</iGenericParameter1>
             <iGenericParameter2>2</iGenericParameter2>
-            <iGenericParameter3>80</iGenericParameter3>
+            <iGenericParameter3>60</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -7560,7 +7560,7 @@
             <iAIValue>1000</iAIValue>
             <iGenericParameter1>PROMOTION_EVENT_CARGOSPACE</iGenericParameter1>
             <iGenericParameter2>4</iGenericParameter2>
-            <iGenericParameter3>60</iGenericParameter3>
+            <iGenericParameter3>90</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
