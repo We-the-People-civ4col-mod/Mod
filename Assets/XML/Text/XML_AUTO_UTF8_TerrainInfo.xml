@@ -41,7 +41,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_SHALLOW_COAST_PEDIA</Tag>
-        <English>[TAB]Shallow Coast</English>
+        <English>[TAB]Shallow coast is impassable to large ocean-going ships with deep drafts. Ships that travel along large rivers (sloops, small coastal ships and large coastal ships) can also move across shallow coast tiles.</English>
         <German>[TAB]Flache Küste.</German>
     </TEXT>
     <TEXT>
@@ -55,7 +55,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_ROCK_STEPPES_PEDIA</Tag>
-        <English>[TAB]Rock Steppes</English>
+        <English>[TAB]Rock steppes are barren plains with only a few shrubs or isolated trees. Prsopectors and miners like to explore there because there's no burden of topsoil to clear away.</English>
         <German>[TAB]Felsensteppe</German>
     </TEXT>
     <TEXT>
@@ -84,7 +84,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_DESERT_PEDIA</Tag>
-        <English>A desert is a landscape or region that receives an extremely low amount of precipitation, less than enough to support growth of most plants. Deserts are defined as areas with an average annual precipitation of less than 250 millimetres (10 in) per year, or as areas where more water is lost by evaporation than falls as precipitation. In the Köppen climate classification system, deserts are classed as BWh (hot desert) or BWk (temperate desert). In the Thornthwaite climate classification system, deserts would be classified as arid megathermal climates.</English>
+        <English>A desert is a landscape or region that receives an extremely low amount of precipitation, not enough for most plants to survive. Deserts have an average annual precipitation of less than 250 millimetres (10 inches) per year, or they lose more water by evaporation than they receive as precipitation. In the Köppen climate classification system, deserts are classed as BWh (hot desert) or BWk (temperate desert). In the Thornthwaite climate classification system, deserts are classified as arid megathermal climates.</English>
         <French>Le mot désert désigne aujourd'hui une zone stérile ou peu propice à la vie, en raison du sol impropre, ou de la faiblesse des précipitations (moins de 250 mm par an). Un paysage désertique se reconnaît à son aspect dénudé sur de vastes surfaces, sans présence humaine réellement importante.</French>
         <German>Eine Wüste ist ein Landstrich oder eine Region mit wenig Niederschlägen, wodurch kaum Wachstum von Pflanzen möglich ist.</German>
     </TEXT>
@@ -114,7 +114,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_GRASS_PEDIA</Tag>
-        <English>Grasslands are areas where the vegetation is dominated by grasses (Poaceae) and other herbaceous (non-woody) plants (forbs). However, sedge (Cyperaceae) and rush (Juncaceae) families can also be found. Grasslands occur naturally on all continents except Antarctica. In temperate latitudes, such as northwest Europe and the Great Plains and California in North America, native grasslands are dominated by perennial bunch grass species, whereas in warmer climates annual species form a greater component of the vegetation.</English>
+        <English>Grasslands are areas where the vegetation is dominated by grasses and other herbaceous (non-woody) plants. Sedge and rush families can also be found. Grasslands occur naturally on every continent except Antarctica. In temperate latitudes, such as northwest Europe or the Great Plains in North America, native grasslands are dominated by perennial bunch grass species, whereas in warmer climates annual species make up more of the vegetation.</English>
         <French>Les prairies forment un biome terrestre qui regroupe les étendues herbacées au climat tempéré. Le paysage naturel est celui d'une immense étendue d'herbes dont les arbres sont le plus souvent complètement absents, sauf le long des cours d'eau.</French>
         <German>Als Grasland bezeichnet man Gebiete, in denen niedrige Vegetation vorherrscht, die von Gräsern dominiert wird.</German>
     </TEXT>
@@ -129,7 +129,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_WETLAND_PEDIA</Tag>
-        <English>[TAB]Wetland</English>
+        <English>[TAB]Wetland is like a marsh. Wetlands are more common in temperate climates. Pioneers can drain marshes and wetlands but it's a slow expensive process.</English>
         <German>[TAB]Moor</German>
     </TEXT>
     <TEXT>
@@ -307,6 +307,12 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TERRAIN_SAVANNAH_PEDIA</Tag>
+        <English>Savannah is mixed woodland-grassland where trees are sufficiently widely spaced so that the canopy does not close. The open canopy lets light reach the ground to support grasses and small plants. Savannah needs a tropical or subtropical climate to flourish. The words comes from Taino and the ecosystem appears to be the result of human use of fire.</English>
+        <French></French>
+        <German></German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TERRAIN_PLAINS</Tag>
         <English>Plains</English>
         <French>
@@ -332,7 +338,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_PLAINS_PEDIA</Tag>
-        <English>[TAB]Plains is the plural of plain, a geographical feature. It is a big flat area of a land.</English>
+        <English>[TAB]Plains are temperate steppes, often vast grasslands away to the horizon. It's good land for grazing animals and for farming. Barley grows well there.</English>
         <French>[TAB]Une plaine est une forme particulière de relief, c'est un espace géographique caractérisé par une surface topographique plane, avec des pentes relativement faibles.</French>
         <German>[TAB]Der Begriff 'Ebene' bezieht sich auf ein grösseres, flaches Gebiet Land.</German>
         <Italian>[TAB]Plains is the plural of plain, a geographical feature. It is a big flat area of a land.</Italian>
@@ -358,7 +364,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_SNOW_PEDIA</Tag>
-        <English>Permafrost is the part of the ground that is permanently frozen, at least for two years, and is therefore impermeable. Its formation, persistence or disappearance, and its thickness are very closely linked to climate change. This is why permafrost is studied as an indicator of global warming by a worldwide network of researchers using soundings, temperature measurements and satellite monitoring.</English>
+        <English>Permafrost is permanently frozen, at least for two years, which makes it impermeable. Its formation, persistence or disappearance, and its thickness are very closely linked to climate change. This is why permafrost is studied as an indicator of global warming by a worldwide network of researchers using soundings, temperature measurements and satellite monitoring.</English>
         <French>Le permafrost, ou pergélisol, désigne la partie d'un sol gelé en permanence, au moins pendant deux ans, et de ce fait imperméable. Ses formations, persistance ou disparition, et son épaisseur sont très étroitement liées aux changements climatiques. C'est pourquoi le permafrost est étudié en tant qu'indicateur du réchauffement climatique par un réseau mondial de chercheurs s'appuyant sur des sondages, des mesures de température et un suivi satellitaire.</French>
         <German>Permafrost – auch Dauerfrostboden oder Permafrostboden – ist Boden, Sediment oder Gestein, welches in unterschiedlicher Mächtigkeit und Tiefe unter der Erdoberfläche mindestens zwei Jahre ununterbrochen Temperaturen unter dem Gefrierpunkt aufweist.</German>
     </TEXT>
