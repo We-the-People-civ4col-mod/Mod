@@ -394,7 +394,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_TUNDRA_PEDIA</Tag>
-        <English>In physical geography, tundra is a biome where the tree growth is hindered by low temperatures and short growing seasons. The term tundra comes through Russian from the Kildin Sami word tundâr "uplands," "treeless mountain tract." There are three types of tundra: Arctic tundra, alpine tundra, and Antarctic tundra. In tundra, the vegetation is composed of dwarf shrubs, sedges and grasses, mosses, and lichens. Scattered trees grow in some tundra. The ecotone (or ecological boundary region) between the tundra and the forest is known as the tree line or timberline.</English>
+        <English>In physical geography, tundra is where tree growth is hindered by low temperatures and short growing seasons. The word "tundra" comes through Russian from the Kildin Sami word tundâr "uplands," "treeless mountain tract." There are three types of tundra: Arctic tundra, alpine tundra, and Antarctic tundra. Tundra vegetation is dwarf shrubs, sedges and grasses, mosses, and lichens. Scattered trees grow in some tundra. The ecological boundary region between tundra and forest is known as the tree line.</English>
         <French>La toundra, terme emprunté au russe, lui-même emprunté au same désigne la formation végétale circumpolaire. Elle forme un cercle autour du pôle de plus de huit millions de km², soit 6 % des terres émergées. Du fait de la répartition des terres émergées sur la planète, la toundra n'existe pratiquement que dans l'hémisphère nord.</French>
         <German>Der Begriff 'Tundra' beschreibt eine Region, in der ausgeprägtes Wachstum von Bäumen und Pflanzen durch niedrige Temperaturen und kurze Jahreszeiten mit klimatisch günstigen Bedingungen verhindert wird. Das Wort leitet sich aus dem Russischen ab, wo es soviel wie 'Nordland' bedeutet.</German>
     </TEXT>
@@ -424,7 +424,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_TAIGA_PEDIA</Tag>
-        <English>[TAB]Taiga</English>
+        <English>[TAB]Taiga is characterized by coniferous forests consisting mostly of pines, spruces, and larches. Over the last 12,00 years it's come to cover much of the cold part of the world. It was originally mammoth steppe. Its very large seasonal temperature ranges suit the growth of boreal forest. Forests are largely coniferous.</English>
         <German>[TAB]Taiga</German>
     </TEXT>
     <TEXT>
@@ -461,7 +461,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TERRAIN_ICE_LAKE_PEDIA</Tag>
-        <English>[TAB]Ice lakes are typically found in mountain ranges, or where their beds were hollowed out by glaciers at the end of the last ice age. They’re fresh water, larger than ponds, and often are part of a river system.[NEWLINE]Waterways often radiate out from mountains or run parallel along glacial gouges. Canada famously has a deranged drainage pattern because the basins are still too young.[NEWLINE]Fishing is often good and travel across lakes is calm compared to fighting river currents, though great lakes can be as stormy as the ocean.[NEWLINE]Because lakes hold enough water to moderate the local climate, they have always been a desirable place to live.[NEWLINE]</English>
+        <English>[TAB]Ice lakes are typically found in mountain ranges, or where their beds were hollowed out by glaciers at the end of the last ice age. They’re fresh water, larger than ponds, and often are part of a river system.[NEWLINE]Ice lakes must thaw for at least part of the year or else they'd be glaciers. Often they're adjacent to glaciers.[NEWLINE]Fishing can be good and travel across lakes is calm compared to fighting river currents. They're often the flattest route through the mountains, though falling through the ice is a potentially fatal risk.</English>
         <German>[TAB]Größere Eisseen werden üblicherweise in der Nähe von Gebirgen gefunden. Manche finden sich auch in Gegenden, in denen Gletscher in der letzten Eiszeit größere Untiefen hinterließen. Größere Süßwasserseen werden meist von Flüßen gespeist. Daher trocknen sie nicht aus und können deutlich größer als Teiche werden, die auch alleine durch Regen entstehen können.[NEWLINE]Meist bieten Süßwasserseen hervorragende Fischfanggründe und auch ihr Wassergang is verglichen zu stark fließenden Flüssen sehr ruhig. Jedoch kann es auf sehr großen Süßwasserseen bei Stürmen auch sehr windig werden.[NEWLINE]Da größere Süßwasserseen genug Wasser zur Wärmespeicherung haben, bleibt das Klima in ihrer Nähe meist ausgeglichen. Daher sind und waren sie von jeher beliebte Siedlungsgebiete.[NEWLINE]</German>
     </TEXT>
 </Civ4GameText>
