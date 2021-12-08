@@ -348,7 +348,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_RAFT_STATION_HELP</Tag>
-        <English>Allows to cross [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK]</English>
+        <English>Allows [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK] to be crossed </English>
         <German>Erlaubt die Überquerung eines [LINK=TERRAIN_LARGE_RIVERS]Großen Flusses[\LINK]</German>
     </TEXT>
     <TEXT>
@@ -378,7 +378,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_SALINA_HELP</Tag>
-        <English>Yields raw salt from Coastal Terrain.</English>
+        <English>Yields raw salt from coastal terrain.</English>
         <German>Erbringt Salzerträge auf Küstengebiet</German>
     </TEXT>
     <TEXT>
