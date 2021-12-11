@@ -686,6 +686,9 @@ public:
 	int getWILD_ANIMAL_REWARD_RANDOM_BASE();
 	// Max Cross Limit
 	int getIMMIGRATION_MAX_CROSS_LIMIT();
+	// WTP, ray, new Harbour System - START
+	int getENABLE_NEW_HARBOUR_SYSTEM();
+	int getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS();
 	// NBMOD REF
 	int getNBMOD_REF_ENABLE();
 	int getNBMOD_REF_RANDOM_SHIPS();
@@ -1242,6 +1245,9 @@ protected:
 	int m_WILD_ANIMAL_REWARD_RANDOM_BASE;
 	// Max Cross Limit
 	int m_IMMIGRATION_MAX_CROSS_LIMIT;
+	// WTP, ray, new Harbour System - START
+	int m_ENABLE_NEW_HARBOUR_SYSTEM;
+	int m_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
 	// NBMOD REF
 	int m_NBMOD_REF_ENABLE;
 	int m_NBMOD_REF_RANDOM_SHIPS;
@@ -1818,6 +1824,15 @@ inline int CvGlobals::getWILD_ANIMAL_REWARD_RANDOM_BASE()
 inline int CvGlobals::getIMMIGRATION_MAX_CROSS_LIMIT()
 {
 	return m_IMMIGRATION_MAX_CROSS_LIMIT;
+}
+// WTP, ray, new Harbour System - START
+inline int CvGlobals::getENABLE_NEW_HARBOUR_SYSTEM()
+{
+	return m_ENABLE_NEW_HARBOUR_SYSTEM;
+}
+inline int CvGlobals::getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS()
+{
+	return m_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
 }
 // NBMOD REF
 inline int CvGlobals::getNBMOD_REF_ENABLE()

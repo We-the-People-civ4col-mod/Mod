@@ -668,12 +668,8 @@ public:
 	DllExport CvUnitInfo();
 	virtual ~CvUnitInfo();
 
-	// PatchMod: Berth size START
-protected:
-	int m_iBerthSize;
-public:
-	int getBerthSize() const;
-	// PatchMod: Berth size END
+	int getBerthSize() const; // PatchMod: Berth size START
+	int getHarbourSpaceNeeded() const; //// WTP, ray, new Harbour System - START
 
 /** NBMOD EDU **/
     int NBMOD_GetTeachLevel() const;
@@ -864,6 +860,9 @@ public:
 
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
+
+	int m_iBerthSize; // PatchMod: Berth size START
+	int m_iHarbourSpaceNeeded; // WTP, ray, new Harbour System - START
 
     /** NBMOD EDU **/
     int m_iTeachLevel;
@@ -1287,7 +1286,8 @@ public:
 	int getMilitaryProductionModifier() const;
 	int getAssetValue() const;
 	int getPowerValue() const;
-	int getYieldStorage() const;
+	int getYieldStorage() const; 
+	int getMaxHarbourSpaceProvided() const; // WTP, ray, new Harbour System - START
 	int getSpecialBuildingType() const;
 	inline int getIndexOf_NextBuildingType_In_SpecialBuilding() const		{ return m_iIndexOf_NextBuildingType_In_SpecialBuilding; }
 	int getConquestProbability() const;
@@ -1392,6 +1392,7 @@ protected:
 	int m_iAssetValue;
 	int m_iPowerValue;
 	int m_iYieldStorage;
+	int m_iMaxHarbourSpaceProvided; // WTP, ray, new Harbour System - START
 	int m_iSpecialBuildingType;
 	int m_iIndexOf_NextBuildingType_In_SpecialBuilding;
 	int m_iConquestProbability;

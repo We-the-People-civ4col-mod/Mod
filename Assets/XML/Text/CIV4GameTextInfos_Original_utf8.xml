@@ -627,6 +627,11 @@
         <Spanish>[ICON_BULLET]Bodega : %d1_Num</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_HARBOR_SPACE_NEEDED</Tag>
+        <English>[ICON_BULLET]Needs for docking : %d1_Num%F2_Icon</English>
+        <German>[ICON_BULLET]Braucht zum Andocken : %d1_Num%F2_Icon</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CARRIES</Tag>
         <English>[SPACE](carries %s1_Name)</English>
         <French>[SPACE](transporte : %s1_Name)</French>
@@ -825,6 +830,11 @@
         <German>[ICON_BULLET]Speichert %d1_Mod%%[ICON_FOOD] nach Wachstum</German>
         <Italian>[ICON_BULLET]Immagazzina %d1_Mod%% di [ICON_FOOD] dopo la crescita</Italian>
         <Spanish>[ICON_BULLET]Almacena el %d1_Mod%% de los [ICON_FOOD] tras el crecimiento</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED</Tag>
+        <English>[ICON_BULLET]Offers maximum %d1_HarbourSpace%F2_Icon</English>
+        <German>[ICON_BULLET]Bietet maximal %d1_HarbourSpace%F2_Icon</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_HEAL_MOD</Tag>

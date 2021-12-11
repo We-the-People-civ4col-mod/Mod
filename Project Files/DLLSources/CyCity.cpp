@@ -1194,6 +1194,23 @@ void CyCity::setRebelSentiment(int iValue)
 	}
 }
 
+// WTP, ray, new Harbour System - START
+int CyCity::getCityHarbourSpace() const
+{
+	return m_pCity ? m_pCity->getCityHarbourSpace() : -1;
+}
+
+int CyCity::getCityHarbourSpaceUsed() const
+{
+	return m_pCity ? m_pCity->getCityHarbourSpaceUsed() : -1;
+}
+
+bool CyCity::bShouldShowCityHarbourSystem() const
+{
+	return m_pCity ? m_pCity->bShouldShowCityHarbourSystem() : -1;
+}
+// WTP, ray, new Harbour System - END
+
 // R&R, ray, Health - START
 int CyCity::getCityHealth() const
 {

@@ -628,9 +628,9 @@ class CvTradeRoutesAdvisor:
 			
 		tableCellValue = str(self.getScreen().getTableText(self.TableNames[self.CURRENT_TABLE], 0, iRow))
 		
-		self.player.removeTradeRouteGroup(int(tableCellValue))						
+		self.player.removeTradeRouteGroup(int(tableCellValue))
 		
-		self.routesTable(false)						
+		self.routesTable(false)
 		
 		return
 		

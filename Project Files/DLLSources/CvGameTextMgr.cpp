@@ -658,6 +658,14 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 			//End TAC Whaling, ray
 		}
 
+		// WTP, ray, new Harbour System - START
+		if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && pUnit->getUnitInfo().getHarbourSpaceNeeded() > 0)
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_UNIT_HARBOR_SPACE_NEEDED", pUnit->getUnitInfo().getHarbourSpaceNeeded(), gDLL->getSymbolID(ANCHOR_CHAR)));
+		}
+		// WTP, ray, new Harbour System - END
+
 		if (pUnit->fortifyModifier() != 0)
 		{
 			szString.append(NEWLINE);
@@ -3140,6 +3148,7 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 		szTempBuffer.append(CvWString::format(L"%d%c", netHealth, GC.getYieldInfo(YIELD_HEALTH).getChar()));
 	}
 	// R&R, ray, Health - END
+
 	if (!bFirst)
 	{
 		szString.append(NEWLINE);
@@ -3209,6 +3218,36 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 		szString.append(gDLL->getText("TXT_KEY_TOTAL_CITY_UNHAPPINESS_BILLBOARD", netUnHappiness, GC.getYieldInfo(YIELD_UNHAPPINESS).getChar()));
 	}
 	// WTP, ray, Happiness - END
+
+	// WTP, ray, new Harbour System - START
+	// of course we display only for coastal cities
+	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && pCity->plot()->isCoastalLand() && pCity->isHuman())
+	{
+		int iCityHarborSpaceUsed = pCity->getCityHarbourSpaceUsed();
+		int iCityHarborSpaceMax = pCity->getCityHarbourSpace();
+
+		// less than 50% of City Harbor Space is used
+		if (iCityHarborSpaceUsed < (iCityHarborSpaceMax/2))
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_STILL_FREE", iCityHarborSpaceUsed, iCityHarborSpaceMax, gDLL->getSymbolID(ANCHOR_CHAR)));
+		}
+
+		// more than 50% of City Harbor Space is used - not yet totally full though
+		if (iCityHarborSpaceUsed >= (iCityHarborSpaceMax/2) && iCityHarborSpaceUsed < iCityHarborSpaceMax)
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_ALMOST_FULL", iCityHarborSpaceUsed, iCityHarborSpaceMax, gDLL->getSymbolID(ANCHOR_CHAR)));
+		}
+
+		// City Harbor Space is totally full
+		if (iCityHarborSpaceUsed >= iCityHarborSpaceMax)
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_TOTALLY_FULL", iCityHarborSpaceUsed, iCityHarborSpaceMax, gDLL->getSymbolID(NO_ANCHOR_CHAR)));
+		}
+	}
+	// WTP, ray, new Harbour System - END
 
 	szString.append(NEWLINE);
 
@@ -5091,8 +5130,15 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CARRIES", GC.getSpecialUnitInfo((SpecialUnitTypes) kUnitInfo.getSpecialCargo()).getTextKeyWide()));
 		}
 		//End TAC Whaling, ray
-
 	}
+
+	// WTP, ray, new Harbour System - START
+	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && kUnitInfo.getHarbourSpaceNeeded() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_HARBOR_SPACE_NEEDED", kUnitInfo.getHarbourSpaceNeeded(), gDLL->getSymbolID(ANCHOR_CHAR)));
+	}
+	// WTP, ray, new Harbour System - EMD
 
 	if (kUnitInfo.getRequiredTransportSize() > 1)
 	{
@@ -6147,6 +6193,13 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_YIELD_STORAGE", iYieldStorage));
 	}
+	// WTP, ray, new Harbour System - START
+	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && kBuilding.getMaxHarbourSpaceProvided() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED", kBuilding.getMaxHarbourSpaceProvided(), gDLL->getSymbolID(ANCHOR_CHAR)));
+	}
+	// WTP, ray, new Harbour System - END
 
 	if (kBuilding.getStorageLossSellPercentage() > 0)
 	{
@@ -8455,6 +8508,22 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 		}
 	}
 	// WTP, ray, Happiness - END
+
+	// WTP, ray, new Harbour System - START
+	// for some reason this does not work - it displays "NO_ANCHOR_CHAR" as "?"
+	/*
+	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && pCity->plot()->isCoastalLand() && pCity->isHuman())
+	{
+		int iCityHarborSpaceUsed = pCity->getCityHarbourSpaceUsed();
+		int iCityHarborSpaceMax = pCity->getCityHarbourSpace();
+
+		if (iCityHarborSpaceUsed >= iCityHarborSpaceMax)
+		{
+			szBuffer.append(CvWString::format(L" %c", gDLL->getSymbolID(NO_ANCHOR_CHAR)));
+		}
+	}
+	*/
+	// WTP, ray, new Harbour System - END
 
 	// XXX out this in bottom bar???
 	if (pCity->isOccupation())

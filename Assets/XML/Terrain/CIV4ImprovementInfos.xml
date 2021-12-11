@@ -1760,7 +1760,7 @@
             <iTilesPerGoody>0</iTilesPerGoody>
             <iGoodyRange>0</iGoodyRange>
             <iFeatureGrowth>0</iFeatureGrowth>
-            <iUpgradeTime>50</iUpgradeTime>
+            <iUpgradeTime>10</iUpgradeTime>
             <iDefenseModifier>0</iDefenseModifier>
             <iPillageGold>5</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>

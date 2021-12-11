@@ -210,6 +210,10 @@ HELP_TOTAL_HAPPINESS_NEGATIVE = 4302
 HELP_TOTAL_HAPPINESS_ZERO = 4303
 # CITY HAPPINESS vs UNHAPPINESS - END
 
+# WTP, ray, new Harbour System - START
+NEW_HARBOUR_SYSTEM = 4304
+
+# WTP, ray, new Harbour System - END
 
 BUILDING_MANAGMENT_PANEL_UP = True
 BUILDING_CHANGE_MANAGMENT_PANEL_UP = False
@@ -2598,6 +2602,7 @@ class CvMainInterface:
 		screen.hide("UnhappinessText") # CITY HAPPINESS vs UNHAPPINESS
 		screen.hide("EducationText")
 		screen.hide("CultureText")
+		screen.hide("HarbourText")
 		screen.hide("CityNameText")
 		screen.hide("PopulationText")
 		screen.hide("ProductionInputText")
@@ -2836,6 +2841,31 @@ class CvMainInterface:
 				#screen.setLabel("LibertyText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 30 / 100, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_BELLS, -1 )
 				screen.setLabel("CultureText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 80 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_CULTURE, -1 )
 				
+			# WTP, ray, new Harbour System - START
+				if (pHeadSelectedCity.bShouldShowCityHarbourSystem()):
+				
+					iMaxHarbourSpace = pHeadSelectedCity.getCityHarbourSpace()
+					iUsedHarbourSpace = pHeadSelectedCity.getCityHarbourSpaceUsed()
+					iHalfMaxHarbourSpace = (iMaxHarbourSpace / 2)
+					
+					#green: less than 50 percent of the harbour space is full
+					if (iUsedHarbourSpace <= iHalfMaxHarbourSpace):
+						szBuffer = u"<font=3>" + u" <color="u"0,255,0" + u">"+ str(iUsedHarbourSpace) + u"(" + str(iMaxHarbourSpace) + u")" + u"</color>" + u"</font>"
+						szBuffer += u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.ANCHOR_CHAR)) + "</font>"
+						screen.setLabel("HarbourText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 80 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, NEW_HARBOUR_SYSTEM, -1 )
+					
+					# red: the harbour is completely full
+					elif (iUsedHarbourSpace >= iMaxHarbourSpace):
+						szBuffer = u"<font=3>" + u" <color="u"255,0,0" + u">"+ str(iUsedHarbourSpace) + u"(" + str(iMaxHarbourSpace) + u")" + u"</color>" + u"</font>"
+						szBuffer += u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.NO_ANCHOR_CHAR)) + "</font>"
+						screen.setLabel("HarbourText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 80 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, NEW_HARBOUR_SYSTEM, -1 )
+						
+					# yellow: more than half is full, but not completely
+					else:
+						szBuffer = u"<font=3>" + u" <color="u"255,255,0" + u">" + str(iUsedHarbourSpace) + u"(" + str(iMaxHarbourSpace) + u")" + u"</color>" + u"</font>"
+						szBuffer += u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.ANCHOR_CHAR)) + "</font>"
+						screen.setLabel("HarbourText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 80 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, NEW_HARBOUR_SYSTEM, -1 )
+				
 			# REBEL BAR FILL PERCENTAGE
 				fPercentage = float(pHeadSelectedCity.getRebelPercent() / 100.0)
 				screen.setBarPercentage("RebelBar", InfoBarTypes.INFOBAR_STORED, fPercentage)
@@ -2895,7 +2925,7 @@ class CvMainInterface:
 					szBuffer += u"</font>"
 					
 					#screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 83 / 100, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CITY_NAME, -1, -1 )
-					screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 86 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, VET_NEW_CAPACITY, -1 )
+					screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 87 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, VET_NEW_CAPACITY, -1 )
 					#screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 84 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 					
 				# R&R, Robert Surcouf VET NewCapacity - End
@@ -2928,6 +2958,7 @@ class CvMainInterface:
 				screen.hide("HammerText")
 				screen.hide("EducationText")
 				screen.hide("CultureText")
+				screen.hide("HarbourText")
 				# R&R, Robert Surcouf,START
 				screen.hide("StorageCapacityText")
 				# R&R, Robert Surcouf,END
@@ -3721,6 +3752,10 @@ class CvMainInterface:
 				#return localText.getText("TXT_KEY_YIELD_RATE", (gc.getPlayer(gc.getGame().getActivePlayer()).getYieldRate(YieldTypes.YIELD_CROSSES), gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar()))
 				return localText.getText("TXT_KEY_CONCEPT_NEW_STORAGE", ());
 # R&R, Robert Surcouf VET NewCapacity Help- End
+# WTP, ray, new Harbour System - START
+			elif iData1 == NEW_HARBOUR_SYSTEM:
+				return localText.getText("TXT_KEY_CONCEPT_NEW_HARBOUR_SYSTEM", ());
+# WTP, ray, new Harbour System - END
 # CITY HAPPINESS vs UNHAPPINESS - START
 			elif iData1 == HELP_TOTAL_HAPPINESS_POSITIVE:
 				return localText.getText("TXT_KEY_TOTAL_HAPPINESS_POSITIVE_EFFECTS", ());

@@ -277,6 +277,12 @@ public:
 	int getRebelSentiment() const;
 	void setRebelSentiment(int iValue);
 
+	// WTP, ray, new Harbour System - START
+	int getCityHarbourSpace() const;
+	int getCityHarbourSpaceUsed() const;
+	bool bShouldShowCityHarbourSystem() const;
+	// WTP, ray, new Harbour System - END
+
 	// R&R, ray, Health - START
 	int getCityHealth() const;
 	int getCityHealthChange() const;

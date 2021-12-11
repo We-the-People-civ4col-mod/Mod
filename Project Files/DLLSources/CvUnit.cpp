@@ -1329,7 +1329,7 @@ void CvUnit::updateCombat(bool bQuick)
 			{
 				pDefender->getGroup()->setAutomateType(NO_AUTOMATE);
 			}
-			// WTP, ray, fix for not stopping automation after attacked - END
+			// WTP, ray, fix for Human Unit not stopping automation after attacked - END
 
 			// report event to Python, along with some other key state
 			gDLL->getEventReporterIFace()->combatResult(pDefender, this);
@@ -1657,7 +1657,7 @@ void CvUnit::updateCombat(bool bQuick)
 			{
 				pDefender->getGroup()->setAutomateType(NO_AUTOMATE);
 			}
-			// WTP, ray, fix for not stopping automation after attacked - END
+			// WTP, ray, fix for Human Unit not stopping automation after attacked - END
 
 			bool bAdvance = canAdvance(pPlot, 0);
 			if (!bAdvance)
@@ -1742,7 +1742,7 @@ void CvUnit::updateCombat(bool bQuick)
 			{
 				pDefender->getGroup()->setAutomateType(NO_AUTOMATE);
 			}
-			// WTP, ray, fix for not stopping automation after attacked - END
+			// WTP, ray, fix for Human Unit not stopping automation after attacked - END
 
 			if (IsSelected())
 			{
@@ -1772,7 +1772,7 @@ void CvUnit::updateCombat(bool bQuick)
 			{
 				pDefender->getGroup()->setAutomateType(NO_AUTOMATE);
 			}
-			// WTP, ray, fix for not stopping automation after attacked - END
+			// WTP, ray, fix for Human Unit not stopping automation after attacked - END
 
 			changeMoves(std::max(GC.getMOVE_DENOMINATOR(), pPlot->movementCost(this, plot())));
 
@@ -2992,6 +2992,41 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 			//WTP, ray, Large Rivers - END
 		}
 	}
+
+	// WTP, ray, new Harbour System - START
+	// of course this is only checked if new Harbour System is enabled
+	if (GC.getENABLE_NEW_HARBOUR_SYSTEM())
+	{
+		// Stop Ships from Entering a City in which harbour is full - safety check to prevent it from checking Improvements
+		if (DOMAIN_SEA == getDomainType() && pPlot->isCity() && pPlot->getImprovementType() == NO_IMPROVEMENT)
+		{
+			//We check this only for Humans, AI can ignore it because it is too difficult to teach it
+			//To prevent issues with Trade Route Automation System, we may consider to have "Not Automated here"
+			if (isHuman())
+			{
+				// this is only checked for Colonial Cities, Native Villages can always be entered
+				CvCity* pCity = pPlot->getPlotCity();
+				if (pCity != NULL)
+				{
+					if(!pCity->isNative())
+					{
+						int iHarbourSpaceNeededByUnit = getUnitInfo().getHarbourSpaceNeeded();
+
+						// Caclulating free Harbour Space in City
+						int iHarbourSpaceMaxInCity = pPlot->getPlotCity()->getCityHarbourSpace();
+						int iHarbourSpaceUsedInCity = pPlot->getPlotCity()->getCityHarbourSpaceUsed();
+						int iHarbourSpaceAvailableInCity = iHarbourSpaceMaxInCity - iHarbourSpaceUsedInCity;
+
+						if (iHarbourSpaceNeededByUnit > iHarbourSpaceAvailableInCity)
+						{
+							return false;
+						}
+					}
+				}
+			}
+		}
+	}
+	// WTP, ray, new Harbour System - END
 
 	if (m_pUnitInfo->getMoves() == 0)
 	{

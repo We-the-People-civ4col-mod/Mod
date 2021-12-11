@@ -2656,6 +2656,14 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 	GET_TEAM(getTeam()).changeBuildingClassCount((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), iChange);
 	GET_PLAYER(getOwnerINLINE()).changeBuildingClassCount((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), iChange);
 	setLayoutDirty(true);
+
+	// WTP, ray, new Harbour System - START
+	int iMaxHarbourSpaceProvidedByBuilding = GC.getBuildingInfo(eBuilding).getMaxHarbourSpaceProvided();
+	if (iMaxHarbourSpaceProvidedByBuilding != 0 && iMaxHarbourSpaceProvidedByBuilding > getCityHarbourSpace())
+	{
+		setCityHarbourSpace(iMaxHarbourSpaceProvidedByBuilding);
+	}
+	// WTP, ray, new Harbour System - END
 }
 
 HandicapTypes CvCity::getHandicapType() const
@@ -3464,7 +3472,6 @@ int CvCity::getBuildingDefense() const
 {
 	return m_iBuildingDefense;
 }
-
 
 void CvCity::changeBuildingDefense(int iChange)
 {
@@ -9530,6 +9537,68 @@ void CvCity::doCityUnHappiness()
 	return;
 }
 
+// WTP, ray, new Harbour System - START
+int CvCity::getCityHarbourSpace() const
+{
+	int iValueToReturn = m_iCityHarbourSpace;
+	if (!plot()->isCoastalLand())
+	{
+		return 0;
+	}
+
+	else
+	{
+		int iMinHarbourSpace = GC.getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS();
+		// even without Harbour Coastal Villages should return base Harbour Space
+		if (iValueToReturn < iMinHarbourSpace)
+		{
+			iValueToReturn = iMinHarbourSpace;
+		}
+	}
+
+	return iValueToReturn;
+}
+
+void CvCity::setCityHarbourSpace(int iValue)
+{
+	if (iValue < 0)
+	{
+		return;
+	}
+
+	m_iCityHarbourSpace = iValue;
+}
+
+int CvCity::getCityHarbourSpaceUsed() const
+{
+	int iCityHarbourSpaceUsed = 0;
+	CvPlot* pPlot = plot();
+	for (int i = 0; i < pPlot->getNumUnits(); ++i)
+	{
+		CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);
+		if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_SEA)
+		{
+			iCityHarbourSpaceUsed += pLoopUnit->getUnitInfo().getHarbourSpaceNeeded();
+		}
+	}
+
+	return iCityHarbourSpaceUsed;
+}
+
+// a small helper function
+bool CvCity::bShouldShowCityHarbourSystem() const
+{
+	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && plot()->isCoastalLand() && isHuman())
+	{
+		return true;
+	}
+
+	return false;
+}
+
+// WTP, ray, new Harbour System - END
+
+
 // basic set and get methods
 int CvCity::getCityHappiness() const
 {
@@ -12216,7 +12285,6 @@ bool CvCity::isCustomHouseNeverSell(YieldTypes eYield) const
 // WTP, ray, LbD Slaves Revolt and Free - START - adjusted to also have DefaultAI
 void CvCity::createFleeingUnit(UnitTypes eUnit, bool bDefautAI)
 {
-
 	if (GC.getGameINLINE().getBarbarianPlayer() == NO_PLAYER)
     {
         return;
@@ -12274,9 +12342,9 @@ void CvCity::doEntertainmentBuildings()
 	for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
 	{
 		BuildingTypes eBuilding = (BuildingTypes) i;
-		CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
 		if (isHasBuilding(eBuilding))
 		{
+			CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
 			if (kBuilding.getEntertainmentGoldModifier() > factorFromBuildingLevel)
 			{	
 				factorFromBuildingLevel = kBuilding.getEntertainmentGoldModifier();

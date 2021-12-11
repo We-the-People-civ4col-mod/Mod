@@ -521,6 +521,13 @@ public:
 	int getCityHealthChangeFromRessourcesInCityRadius() const;
 	// WTP, ray, Health Overhaul - END
 
+	// WTP, ray, new Harbour System - START
+	int getCityHarbourSpace() const;
+	void setCityHarbourSpace(int iValue);
+	int getCityHarbourSpaceUsed() const;
+	bool bShouldShowCityHarbourSystem() const;
+	// WTP, ray, new Harbour System - END
+
 	// WTP, ray, Happiness - START
 	int getCityHappiness() const;
 	void setCityHappiness(int iValue);
@@ -742,6 +749,7 @@ protected:
 	int m_iTradePostGold; // WTP, ray, Native Trade Posts - START
 	bool m_bStirredUp; // R&R, ray , Stirring Up Natives
 	int m_iRebelSentiment;
+	int m_iCityHarbourSpace; // WTP, ray, new Harbour System - START
 	int m_iCityHealth; // R&R, ray, Health
 	int m_iCityHappiness; // WTP, ray, Happiness
 	int m_iCityUnHappiness; // WTP, ray, Happiness

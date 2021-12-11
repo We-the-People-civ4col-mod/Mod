@@ -121,6 +121,26 @@
         <German>Unzufriedenheit der Stadt : [COLOR_NEGATIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_CITY_HARBOR_STILL_FREE</Tag>
+        <English>Harbour Space in the City : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+        <German>Ankerplätze in der Stadt : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_HARBOR_ALMOST_FULL</Tag>
+        <English>Harbour Space in the City : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+        <German>Ankerplätze in der Stadt : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_HARBOR_TOTALLY_FULL</Tag>
+        <English>Harbour Space in the City : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+        <German>Ankerplätze in der Stadt : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_BAR_HARBOUR_FULL</Tag>
+        <English>[COLOR_NEGATIVE_TEXT] Harbour full : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+        <German>[COLOR_NEGATIVE_TEXT] Hafen voll : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CITY_UNREST_BECAUSE_UNHAPPINESS</Tag>
         <English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high Unhappiness has caused Unrest.</English>
         <German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Unzufriedenheit in der Stadt hat zu Unruhen geführt.</German>
