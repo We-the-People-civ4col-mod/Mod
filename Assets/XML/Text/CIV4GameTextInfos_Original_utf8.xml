@@ -628,7 +628,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HARBOR_SPACE_NEEDED</Tag>
-        <English>[ICON_BULLET]Needs for docking : %d1_Num%F2_Icon</English>
+        <English>[ICON_BULLET]Harbour Capacity : %d1_Num%F2_Icon</English>
         <German>[ICON_BULLET]Braucht zum Andocken : %d1_Num%F2_Icon</German>
     </TEXT>
     <TEXT>
