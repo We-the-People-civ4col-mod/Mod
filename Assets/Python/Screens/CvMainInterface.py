@@ -2788,16 +2788,31 @@ class CvMainInterface:
 				screen.setLabel("CultureText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 28 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_CULTURE, -1 )
 
 			# CITY HEALTH PRODUCTION
+				#get the coloured string for current City Health
 				iHealth = pHeadSelectedCity.getCityHealth()
-				iHealthChange = pHeadSelectedCity.getCityHealthChange()
-				szBuffer = u"<font=3>" + u"%i%c" % (iHealth, gc.getYieldInfo(YieldTypes.YIELD_HEALTH).getChar()) + u"</font>"
-				szBuffer += u"<font=3>" + u"<color="
-				if iHealthChange > 0: # Green
-					szBuffer += u"0,255,0" + u">("+str(iHealthChange)+u")" + u"</color>" + u"</font>"
-				elif iHealthChange < 0: # Red
-					szBuffer += u"255,0,0" + u">("+str(iHealthChange)+u")" + u"</color>" + u"</font>"
+				szBufferCurrentHealth = u"<font=3>" + u"<color="
+				if iHealth > 0: # Green
+					szBufferCurrentHealth += u"0,255,0" + u">" +str(iHealth) + u"</color>" + u"</font>"
+				elif iHealth < 0: # Red
+					szBufferCurrentHealth += u"255,0,0" + u">" + str(iHealth) + u"</color>" + u"</font>"
 				else: # Yellow
-					szBuffer += u"255,255,0" + u">("+str(iHealthChange)+u")" + u"</color>" + u"</font>"
+					szBufferCurrentHealth += u"255,255,0" + u">" + str(iHealth) + u"</color>" + u"</font>"
+				
+				#get the coloured string for change of City Health
+				iHealthChange = pHeadSelectedCity.getCityHealthChange()
+				szBufferHealthChange = u"<font=3>" + u"<color="
+				if iHealthChange > 0: # Green
+					szBufferHealthChange += u"0,255,0" + u">(+"+str(iHealthChange)+u")" + u"</color>" + u"</font>"
+				elif iHealthChange < 0: # Red
+					szBufferHealthChange += u"255,0,0" + u">("+str(iHealthChange)+u")" + u"</color>" + u"</font>"
+				else: # Yellow
+					szBufferHealthChange += u"255,255,0" + u">("+str(iHealthChange)+u")" + u"</color>" + u"</font>"
+				
+				#get the Health Icon String
+				szBufferHealthIcon = u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_HEALTH).getChar()) + u"</font>"
+					
+				#now add them all together and display on top of the Screen
+				szBuffer = szBufferCurrentHealth + szBufferHealthChange +szBufferHealthIcon
 				screen.setLabel("HealthText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 33 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_HEALTH, -1 )
 
 			# CITY HAPPINESS vs UNHAPPINESS
