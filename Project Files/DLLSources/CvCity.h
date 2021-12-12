@@ -528,6 +528,11 @@ public:
 	bool bShouldShowCityHarbourSystem() const;
 	// WTP, ray, new Harbour System - END
 
+	// WTP, ray, Improvements give Bonus to their City - START
+	int getMonasteryCrossBonusForCity() const;
+	int getFortDefenseBonusForCity() const;
+	// WTP, ray, Improvements give Bonus to their City - END
+
 	// WTP, ray, Happiness - START
 	int getCityHappiness() const;
 	void setCityHappiness(int iValue);

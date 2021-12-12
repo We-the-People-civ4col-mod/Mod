@@ -6943,11 +6943,35 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_FORT_FEATURES"));
+		// WTP, ray, Improvements give Bonus to their City - START
+		int iFortDefenseBonusModifier = GC.getDefineINT("FORT_DEFENSE_MODIFIER_FOR_CITY");
+
+		// we double if it is second level improvement, which we know if it has no more upgrade
+		if (info.getImprovementUpgrade() == NO_IMPROVEMENT)
+		{
+			iFortDefenseBonusModifier= iFortDefenseBonusModifier * 2;
+		}
+
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_FORT_DEFENSE_MODIFIER_IF_WORKED", iFortDefenseBonusModifier, gDLL->getSymbolID(DEFENSE_CHAR)));
+		// WTP, ray, Improvements give Bonus to their City - END
 	}
 	if (info.isMonastery())
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_MONASTERY_FEATURES"));
+		// WTP, ray, Improvements give Bonus to their City - START
+		int iMonsasteryCrossBonusModifier = GC.getDefineINT("MONASTERY_CROSSES_MODIFIER_FOR_CITY");
+
+		// we double if it is second level improvement, which we know if it has no more upgrade
+		if (info.getImprovementUpgrade() == NO_IMPROVEMENT)
+		{
+			iMonsasteryCrossBonusModifier = iMonsasteryCrossBonusModifier * 2;
+		}
+
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_MONASTERY_CROSSS_MODIFIER_IF_WORKED", iMonsasteryCrossBonusModifier, GC.getYieldInfo(YIELD_CROSSES).getChar()));
+		// WTP, ray, Improvements give Bonus to their City - END
 	}
 	// R&R, ray, Monasteries and Forts - END
 	if (info.getFeatureGrowthProbability() > 0)
@@ -8445,6 +8469,19 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 		
 	}
 	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - END
+
+	// WTP, ray, Improvements give Bonus to their City - START
+	if (eYieldType == YIELD_CROSSES)
+	{
+		int MonasteryMod = kCity.getMonasteryCrossBonusForCity();
+		if (0 != MonasteryMod)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_MONASTERY_BONUS", MonasteryMod, info.getChar()));
+			iBaseModifier += MonasteryMod;
+		}		
+	}
+	// WTP, ray, Improvements give Bonus to their City - END
 
 	FAssertMsg(iBaseModifier == kCity.getBaseYieldRateModifier(eYieldType), "Yield Modifier in setProductionHelp does not agree with actual value");
 

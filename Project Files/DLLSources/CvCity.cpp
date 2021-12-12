@@ -3577,7 +3577,10 @@ bool CvCity::isBombardable(const CvUnit* pUnit) const
 
 int CvCity::getTotalDefense() const
 {
-	return (getBuildingDefense() + GET_PLAYER(getOwnerINLINE()).getCityDefenseModifier());
+	// WTP, ray, Improvements give Bonus to their City - START
+	// return (getBuildingDefense() + GET_PLAYER(getOwnerINLINE()).getCityDefenseModifier());
+	return (getBuildingDefense() + GET_PLAYER(getOwnerINLINE()).getCityDefenseModifier() + getFortDefenseBonusForCity());
+	// WTP, ray, Improvements give Bonus to their City - END
 }
 
 
@@ -4245,6 +4248,13 @@ int CvCity::getBaseYieldRateModifier(YieldTypes eIndex, int iExtra) const
 	}
 
 	iModifier += iExtra;
+
+	// WTP, ray, Improvements give Bonus to their City - START
+	if (eIndex == YIELD_CROSSES)
+	{
+		iModifier += getMonasteryCrossBonusForCity();
+	}
+	// WTP, ray, Improvements give Bonus to their City - END
 
 	// note: player->invalidateYieldRankCache() must be called for anything that is checked here
 	// so if any extra checked things are added here, the cache needs to be invalidated
@@ -9355,7 +9365,6 @@ int CvCity::getCityHealthChangeFromRessourcesInCityRadius() const
 
 	return iCityHealthChangeFromRessourcesInCityRadius;
 }
-
 // WTP, ray, Health Overhaul - END
 
 int CvCity::getCityHealthChange() const
@@ -9409,8 +9418,59 @@ void CvCity::doCityHealth()
 // R&R, ray, Health - END
 
 
-// WTP, ray, Happiness - START
+// WTP, ray, Improvements give Bonus to their City - START
+int CvCity::getMonasteryCrossBonusForCity() const
+{
+	int iMonsasteryCrossBonus = 0;
+	int iMonsasteryCrossBonusModifier = GC.getDefineINT("MONASTERY_CROSSES_MODIFIER_FOR_CITY");
+	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
+	{
+		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
+		// if it has a Monastery and a Missionary in it
+		if(pLoopPlot->isMonastery() && (pLoopPlot->getMonasteryMissionary() != NULL))
+		{
+			// we double if it is second level improvement, which we know if it has no more upgrade
+			if (GC.getImprovementInfo(pLoopPlot->getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT)
+			{
+				iMonsasteryCrossBonusModifier = iMonsasteryCrossBonusModifier * 2;
+			}
+			// we give the Bonus only if also worked by a worker inside the City
+			if (isUnitWorkingPlot(pLoopPlot))
+			{
+				iMonsasteryCrossBonus += iMonsasteryCrossBonusModifier;
+			}
+		}
+	}
+	return iMonsasteryCrossBonus;
+}
 
+int CvCity::getFortDefenseBonusForCity() const
+{
+	int iFortDefenseBonus = 0;
+	int iFortDefenseBonusModifier = GC.getDefineINT("FORT_DEFENSE_MODIFIER_FOR_CITY");
+	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
+	{
+		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
+		// if it has a Fort that is protected
+		if(pLoopPlot->isFort() && (pLoopPlot->getFortDefender() != NULL))
+		{
+			// we double if it is second level improvement, which we know if it has no more upgrade
+			if (GC.getImprovementInfo(pLoopPlot->getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT)
+			{
+				iFortDefenseBonusModifier = iFortDefenseBonusModifier * 2;
+			}
+			// we give the Bonus only if also worked by a worker inside the City
+			if (isUnitWorkingPlot(pLoopPlot))
+			{
+				iFortDefenseBonus += iFortDefenseBonusModifier;
+			}
+		}
+	}
+	return iFortDefenseBonus;
+}
+// WTP, ray, Improvements give Bonus to their City - END
+
+// WTP, ray, Happiness - START
 void CvCity::doCityHappiness()
 {	
 	// we do not do this for every tiny village

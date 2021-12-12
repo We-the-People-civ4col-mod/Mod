@@ -11294,7 +11294,6 @@ void CvPlayer::doCrosses()
 	// WTP, ray, Happiness - START
 	int iHappinessRate = getHappinessRate();
 	int iUnHappinessRate = getUnHappinessRate();
-
 	iCrossRate = (iCrossRate * (100 + iHappinessRate - iUnHappinessRate)) / 100; // this is percentage modifcation
 	// WTP, ray, Happiness - EMD
 

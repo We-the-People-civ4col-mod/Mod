@@ -1263,4 +1263,12 @@
 		<DefineName>BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS</DefineName>
 		<iDefineIntVal>4</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>FORT_DEFENSE_MODIFIER_FOR_CITY</DefineName>
+		<iDefineIntVal>20</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MONASTERY_CROSSES_MODIFIER_FOR_CITY</DefineName>
+		<iDefineIntVal>25</iDefineIntVal>
+	</Define>
 </Civ4Defines>

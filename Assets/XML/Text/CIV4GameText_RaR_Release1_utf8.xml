@@ -1048,6 +1048,16 @@
         <German>[ICON_BULLET]Kann in manchen Fällen Ureinwohner überzeugen, zu konvertieren oder Geschenke zu bringen.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_FORT_DEFENSE_MODIFIER_IF_WORKED</Tag>
+        <English>[ICON_BULLET]Adds additional %d1_defensebonus%%%F2_Icon to a city if the fort is defended by soldiers and its plot is worked by a citizen inside the city</English>
+        <German>[ICON_BULLET]Gibt der Stadt zusätzliche %d1_defensebonus%%%F2_Icon wenn das Fort durch Soldaten bewacht ist und dessen Feld durch einen Arbeiter in der Stadt bearbeitet wird</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_MONASTERY_CROSSS_MODIFIER_IF_WORKED</Tag>
+        <English>[ICON_BULLET]Adds additional %d1_crossesbonus%%%F2_Icon if the monastery has missionaries and its plot is worked by a citizen inside the city</English>
+        <German>[ICON_BULLET]Gibt der Stadt einen zusätzliche %d1_crossesbonus%%%F2_Icon, wenn das Kloster durch Mönche besetzt ist und dessen Feld durch einen Arbeiter in der Stadt bearbeitet wird</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_NATIVE_RAID_ATTACKED_FORT</Tag>
         <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]Your Fort was attacked by marauding Natives.</English>
         <French>Votre fort a été attaqué par des indigènes lors d'un raid.</French>
