@@ -21554,6 +21554,12 @@ int CvPlayer::AI_getAttitudeValue(PlayerTypes ePlayer)
 // R&R, ray, Pirates - START
 void CvPlayer::createEnemyPirates()
 {
+	// WTP, ray, for safety 
+	if (GC.getGameINLINE().getBarbarianPlayer() == NO_PLAYER)
+	{
+		return;
+	}
+
 	CvPlayer& barbarianPlayer = GET_PLAYER(GC.getGameINLINE().getBarbarianPlayer());
 
 	// we never want to have too many of these
