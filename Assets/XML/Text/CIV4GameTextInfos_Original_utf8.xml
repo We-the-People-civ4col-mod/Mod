@@ -319,7 +319,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_NOT_ALLOWED_NEXT_TO_ITSELF</Tag>
-        <English>[ICON_BULLET]Can not be build to another improvement of the same type (or its own upgrade)</English>
+        <English>[ICON_BULLET]Can not be build next to another improvement of the same type (or its own upgrade)</English>
         <German>[ICON_BULLET]Kann nicht neben einem andere Improvement der selben Art (oder seiner Ausbaustufe) gebaut werden</German>
     </TEXT>
     <TEXT>
