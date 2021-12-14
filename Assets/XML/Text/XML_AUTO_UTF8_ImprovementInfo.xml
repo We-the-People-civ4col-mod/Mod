@@ -271,6 +271,34 @@
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Große Bauernhöfe[COLOR_REVERT] sind die Erweiterung des [LINK=IMPROVEMENT_FARM]Bauernhofes[\LINK]. Die Produktion von [LINK=YIELD_FOOD]Nahrung[\LINK] und [LINK=YIELD_BARLEY]Gerste[\LINK] ist dort erhöht.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ein Bauernhof ist ein mit verschiedensten Gebäuden bebautes Stück Land, das von Anbauflächen umgeben ist und primär der Produktion von Nahrung dient. Oft in Form von Getreideanbau oder Viehzucht. Der Begriff 'Bauernhof' sagt allerdings noch nichts über die Grösse aus, die von mehreren Morgen bis hin zu mehreren Tausend Hektar variieren kann.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_WIND_MILL</Tag>
+        <English>Windmill</English>
+        <German>
+            <Text>Windmühle</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_WIND_MILL_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Windmills[COLOR_REVERT] on the map give a percentual bonus on the total production of [LINK=YIELD_FOOD]food[\LINK] in their City if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Historians debate whether Middle Eastern windmills triggered the first European windmills. In northwestern Europe the horizontal-axis or vertical windmill (so called due to the plane of the movement of its sails) dates from the last quarter of the 12th century in the triangle of northern France, eastern England and Flanders. The earliest certain reference to a windmill in Europe (assumed to have been of the vertical type) dates from 1185 in Weedley, Yorkshire, although a number of earlier but less certainly dated twelfth century European sources referring to windmills have also been found. These earliest mills were used to grind cereals.</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Windmühlen[COLOR_REVERT] auf der Karte geben einen prozentualen Bonus auf die gesamte Herstellung von [LINK=YIELD_FOOD]Nahrung[\LINK] der Stadt, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Aufgrund des Fehlens von Beweisen, existiert eine Debatte unter Historikern, ob die Windmühlen des Mittleren Ostens die Entwicklung der europäischen Windmühlen ausgelöst haben. Im nordwestlichen Europa datieren horizontale oder vertikale Windmühlen vom Ende des 12. Jahrhunderts. Die ersten Windmühlen dienten ausschliesslich zum Mahlen von Getreide.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_IRON_MILL</Tag>
+        <English>Ironmill</English>
+        <German>
+            <Text>Eisenmühle</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_IRON_MILL_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ironmills[COLOR_REVERT] on the map give a percentual bonus on the total production of [LINK=YIELD_TOOLS]tools[\LINK] in their City if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A watermill or water mill is a mill that uses hydropower. It is a structure that uses a water wheel or water turbine to drive a mechanical process such as milling (grinding), rolling, or hammering. Such processes are needed in the production of many material goods, including flour, lumber, paper, textiles, and many metal products. These watermills may comprise gristmills, sawmills, paper mills, textile mills, hammermills, trip hammering mills, rolling mills, wire drawing mills. </English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Eisenmühlen[COLOR_REVERT] auf der Karte geben einen prozentualen Bonus auf die gesamte Herstellung von [LINK=YIELD_TOOLS]Werkzeuge[\LINK] der Stadt, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Eine Wassermühle ist eine meist historische technische Anlage, die mittels einer Wasserkraftmaschine durch Wasserkraft angetrieben wird und die kinetische Energie des Wassers nutzt. Bei der Anlage kann es sich um eine Mühle im engeren Sinne handeln, in der etwas gemahlen bzw. zerkleinert wird (Mahlmühle), oder um eine Mühle, in der sonstige Maschinen angetrieben werden (z. B. Hammerwerk, Sägemühle, Schleifmühle, Papiermühle, Pumpwerk, Pochmühle). Für die Umsetzung der Wasserenergie in mechanische Arbeit kommen bei historischen Mühlen fast ausschließlich Wasserräder zum Einsatz; diese wurden in neuerer Zeit oft durch Wasserturbinen ersetzt. Das zum Antrieb nötige Wasser (Aufschlagwasser) wird normalerweise einem Fließgewässer entnommen. Je nach örtlichen Gegebenheiten sind zur Erhöhung der Fallhöhe und zur Speicherung von Wasser Teiche, Stauwehre, Kanäle oder andere Wasserbauwerke erforderlich, siehe dazu auch Schlacht (Wasserbauwerk).</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FORT</Tag>
         <English>Fort</English>
         <French>
@@ -610,8 +638,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LUMBERMILL_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sawmills[COLOR_REVERT] are [COLOR_HIGHLIGHT_TEXT]upgrades[COLOR_REVERT] of [LINK=IMPROVEMENT_LUMBERJACK_CAMP]lumberjack camps[\LINK]. They cannot be directly built in [LINK=FEATURE_FOREST]forests[\LINK], [LINK=FEATURE_LIGHT_FOREST]light forests[\LINK], [LINK=FEATURE_FOREST_TUNDRA]taiga[\LINK] and [LINK=FEATURE_JUNGLE]jungle[\LINK] but develop over time through work. The production of [LINK=YIELD_LUMBER]lumber[\LINK] and [LINK=YIELD_VALUABLE_WOOD]valuable wood[\LINK] increases even more than with the lodge or lumberjack camp.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]At first a lodge will be a small, makeshift shelter of boughs, poles, skins, earth or rough boards. Over time it evolves into a lumberjack camp. The sawmill on the other hand is industrial and efficient.[PARAGRAPH:1]Lumberjacks are known for their music and cameraderie at the end of a hard day's work.</English>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Das [COLOR_HIGHLIGHT_TEXT]Sägewerk[COLOR_REVERT] ist die finale  [COLOR_HIGHLIGHT_TEXT]Erweiterung[COLOR_REVERT] eines [LINK=IMPROVEMENT_LUMBERJACK_CAMP]Holzfäller Camps[\LINK]. Sägemühlen können nicht direkt in [LINK=FEATURE_FOREST]Wäldern[\LINK], [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK], [LINK=FEATURE_FOREST_TUNDRA]Taiga[\LINK] und [LINK=FEATURE_JUNGLE]Dschungel[\LINK] errichtet werden, sondern enwickeln sich durch längere forstwirtschaftliche Nutzung. Die Produktion von [LINK=YIELD_LUMBER]Holz[\LINK] und [LINK=YIELD_VALUABLE_WOOD]Edelholz[\LINK] erhöht sich gegenüber einer Holzfällerhütte oder einem Holzfällercamp deutlich.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Zunächst wird eine Holzfällerhütte nur ein kleiner, behelfsmäßiger Unterstand aus Ästen, Stangen, Fellen, Erde oder groben Brettern sein. Im Lauf der Zeit entwickelt es sich zu einem Holzfällerlager. Dagegen ist das Sägewerk sehr viel effizienter und fast schon industriell.[PARAGRAPH:1]Holzfäller sind bekannt für ihre Kameradschaft und Musik am Ende eines harten Arbeitstages.</German>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sawmills[COLOR_REVERT] on the map give a percentual bonus on the total production of [LINK=YIELD_HAMMMERS]hammers[\LINK] in their City if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Lumberjacks are known for their music and cameraderie at the end of a hard day's work.</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sägewerk[COLOR_REVERT] auf der Karte geben einen prozentualen Bonus auf die gesamte [LINK=YIELD_HAMMMERS]Bauproduktion[\LINK] der Stadt, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Holzfäller sind bekannt für ihre Kameradschaft und Musik am Ende eines harten Arbeitstages</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_MINE</Tag>

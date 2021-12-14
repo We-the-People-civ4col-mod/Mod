@@ -2324,6 +2324,9 @@ public:
 	int getFeatureGrowthProbability() const;
 	int getUpgradeTime() const;
 	int getDefenseModifier() const;
+	int getFoodModifierForCity() const; // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	int getHammersModifierForCity() const; // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	int getToolsModifierForCity() const; // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	int getPillageGold() const;
 	int getImprovementPillage() const;
 	void setImprovementPillage(int i);
@@ -2342,6 +2345,7 @@ public:
 	bool isActsAsCity() const;
 	bool isFort() const; // R&R, ray, Monasteries and Forts
 	bool isMonastery() const; // R&R, ray, Monasteries and Forts
+	bool isNotAllowedNextToSameAsItself() const; // WTP, ray, Not allowed next to itself - START
 	bool isHillsMakesValid() const;
 	bool isRiverSideMakesValid() const;
 	bool isRequiresFlatlands() const;
@@ -2396,6 +2400,9 @@ protected:
 	int m_iFeatureGrowthProbability;
 	int m_iUpgradeTime;
 	int m_iDefenseModifier;
+	int m_iFoodModifierForCity;  // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	int m_iHammersModifierForCity;  // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	int m_iToolsModifierForCity;  // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	int m_iPillageGold;
 	int m_iImprovementPillage;
 	int m_iImprovementUpgrade;
@@ -2412,6 +2419,7 @@ protected:
 	bool m_bActsAsCity;
 	bool m_bFort; // R&R, ray, Monasteries and Forts
 	bool m_bMonastery; // R&R, ray, Monasteries and Forts
+	bool m_bNotAllowedNextToSameAsItself; // WTP, ray, Not allowed next to itself - START
 	bool m_bHillsMakesValid;
 	bool m_bRiverSideMakesValid;
 	bool m_bRequiresFlatlands;

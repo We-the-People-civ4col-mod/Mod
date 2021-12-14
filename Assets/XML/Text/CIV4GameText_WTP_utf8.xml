@@ -63,6 +63,21 @@
         <German>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Bonus durch Klöster</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_MISC_HELP_WIND_MILL_BONUS</Tag>
+        <English>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Windmills Bonus</English>
+        <German>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Bonus durch Windmühlen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_HELP_SAW_MILL_BONUS</Tag>
+        <English>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Sawmills Bonus</English>
+        <German>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Bonus durch Sägemühlen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_HELP_IRON_MILL_BONUS</Tag>
+        <English>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Ironmills Bonus</English>
+        <German>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Bonus durch Eisenmühlen</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP</Tag>
         <English>Production modifier of %d1_NewVal%% :</English>
         <German>Produktionsmodifikator von %d1_NewVal%% :</German>

@@ -1126,6 +1126,44 @@ int CyUnit::getLastLbDProfessionBefore()
 }
 // WTP, ray, saving 1 more Profession for Fisher Issue - END
 
+// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
+void CyUnit::spawnOwnPlayerUnitOnPlot(int iIndex) const
+{
+	if (m_pUnit)
+		m_pUnit->spawnOwnPlayerUnitOnPlot(iIndex);
+}
+
+void CyUnit::spawnBarbarianUnitOnPlot(int iIndex) const
+{
+	if (m_pUnit)
+		m_pUnit->spawnBarbarianUnitOnPlot(iIndex);
+}
+
+void CyUnit::spawnOwnPlayerUnitOnAdjacentPlot(int iIndex) const
+{
+	if (m_pUnit)
+		m_pUnit->spawnOwnPlayerUnitOnAdjacentPlot(iIndex);
+}
+
+void CyUnit::spawnBarbarianUnitOnAdjacentPlot(int iIndex) const
+{
+	if (m_pUnit)
+		m_pUnit->spawnBarbarianUnitOnAdjacentPlot(iIndex);
+}
+
+
+bool CyUnit::isPlayerUnitOnAdjacentPlot(int iIndex) const
+{
+	return m_pUnit ? m_pUnit->isPlayerUnitOnAdjacentPlot(iIndex) : false;
+}
+
+bool CyUnit::isBarbarianUnitOnAdjacentPlot(int iIndex) const
+{
+	return m_pUnit ? m_pUnit->isPlayerUnitOnAdjacentPlot(iIndex) : false;
+}
+// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+
+
 // Python Helper Functions
 void CyUnit::centerCamera()
 {

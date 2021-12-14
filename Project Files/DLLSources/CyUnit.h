@@ -289,6 +289,15 @@ public:
 	int getLastLbDProfession();
 	// TAC - LbD - Ray - END
 
+	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
+	void spawnOwnPlayerUnitOnPlot(int iIndex) const;
+	void spawnBarbarianUnitOnPlot(int iIndex) const;
+	void spawnOwnPlayerUnitOnAdjacentPlot(int iIndex) const;
+	void spawnBarbarianUnitOnAdjacentPlot(int iIndex) const;
+	bool isPlayerUnitOnAdjacentPlot(int iIndex) const;
+	bool isBarbarianUnitOnAdjacentPlot(int iIndex) const;
+	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+
 	// WTP, ray, saving 1 more Profession for Fisher Issue - START
 	int getLbDroundsBefore();
 	int getLastLbDProfessionBefore();

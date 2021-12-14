@@ -2763,7 +2763,19 @@ int CvCity::foodDifference() const
 
 int CvCity::growthThreshold() const
 {
-	return (GET_PLAYER(getOwnerINLINE()).getGrowthThreshold(getPopulation()) * (100 - getCityHealth() - getCityHappiness() + getCityUnHappiness()) / 100); // R&R, ray, Health // WTP, ray, Happiness - START
+	// R&R, ray, Health
+	// WTP, ray, Happiness - START
+	int iHealthModifier = getCityHealth();
+	int iCityModifer = getCityHappiness() + getCityUnHappiness();
+	int iTotalModifier = iHealthModifier + iCityModifer;
+
+	// WTP, ray, for safety
+	if (iTotalModifier > 50)
+	{
+		iTotalModifier = 75;
+	}
+
+	return ((GET_PLAYER(getOwnerINLINE()).getGrowthThreshold(getPopulation()) * (100 - iTotalModifier)) / 100);
 }
 
 int CvCity::productionLeft() const
@@ -4255,6 +4267,23 @@ int CvCity::getBaseYieldRateModifier(YieldTypes eIndex, int iExtra) const
 		iModifier += getMonasteryCrossBonusForCity();
 	}
 	// WTP, ray, Improvements give Bonus to their City - END
+
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	if (eIndex == YIELD_FOOD)
+	{
+		iModifier += getImprovementFoodModifierForCity();
+	}
+
+	if (eIndex == YIELD_HAMMERS)
+	{
+		iModifier += getImprovementHammersModifierForCity();
+	}
+
+	if (eIndex == YIELD_TOOLS)
+	{
+		iModifier += getImprovementToolsModifierForCity();
+	}
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - END
 
 	// note: player->invalidateYieldRankCache() must be called for anything that is checked here
 	// so if any extra checked things are added here, the cache needs to be invalidated
@@ -9469,6 +9498,78 @@ int CvCity::getFortDefenseBonusForCity() const
 	return iFortDefenseBonus;
 }
 // WTP, ray, Improvements give Bonus to their City - END
+
+
+// WTP, ray, Improvements give Bonus to their City - PART 2 - START
+int CvCity::getImprovementFoodModifierForCity() const
+{
+	int FoodModifierForCity = 0;
+	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
+	{
+		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
+		ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
+		if(eImprovement != NO_IMPROVEMENT)
+		{
+			CvImprovementInfo& info = GC.getImprovementInfo(eImprovement);
+			if (info.getFoodModifierForCity() > 0)
+			{
+				// we give the Bonus only if also worked by a worker inside the City
+				if (isUnitWorkingPlot(pLoopPlot))
+				{
+					FoodModifierForCity += info.getFoodModifierForCity();
+				}
+			}
+		}
+	}
+	return FoodModifierForCity;
+}
+
+int CvCity::getImprovementHammersModifierForCity() const
+{
+	int HammersModifierForCity = 0;
+	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
+	{
+		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
+		ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
+		if(eImprovement != NO_IMPROVEMENT)
+		{
+			CvImprovementInfo& info = GC.getImprovementInfo(eImprovement);
+			if (info.getHammersModifierForCity() > 0)
+			{
+				// we give the Bonus only if also worked by a worker inside the City
+				if (isUnitWorkingPlot(pLoopPlot))
+				{
+					HammersModifierForCity += info.getHammersModifierForCity();
+				}
+			}
+		}
+	}
+	return HammersModifierForCity;
+}
+
+int CvCity::getImprovementToolsModifierForCity() const
+{
+	int ToolsModifierForCity = 0;
+	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
+	{
+		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
+		ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
+		if(eImprovement != NO_IMPROVEMENT)
+		{
+			CvImprovementInfo& info = GC.getImprovementInfo(eImprovement);
+			if (info.getToolsModifierForCity() > 0)
+			{
+				// we give the Bonus only if also worked by a worker inside the City
+				if (isUnitWorkingPlot(pLoopPlot))
+				{
+					ToolsModifierForCity += info.getToolsModifierForCity();
+				}
+			}
+		}
+	}
+	return ToolsModifierForCity;
+}
+// WTP, ray, Improvements give Bonus to their City - PART 2 - END
 
 // WTP, ray, Happiness - START
 void CvCity::doCityHappiness()

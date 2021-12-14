@@ -111,10 +111,16 @@ void CyUnitPythonInterface1(python::class_<CyUnit>& x)
 		.def("canFight", &CyUnit::canFight, "bool ()")
 		.def("canAttack", &CyUnit::canAttack, "bool ()")
 		.def("canDefend", &CyUnit::canDefend, "bool (CyPlot* pPlot)")
-		// TAC - LbD - Ray - START
-		.def("getLbDrounds", &CyUnit::getLbDrounds, "int ()")
-		.def("getLastLbDProfession", &CyUnit::getLastLbDProfession, "int ()")
-		// TAC - LbD - Ray - END
+		.def("getLbDrounds", &CyUnit::getLbDrounds, "int ()") // TAC - LbD - Ray - START
+		.def("getLastLbDProfession", &CyUnit::getLastLbDProfession, "int ()") // TAC - LbD - Ray - START
+		// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
+		.def("spawnOwnPlayerUnitOnPlot", &CyUnit::spawnOwnPlayerUnitOnPlot, "void (int)")
+		.def("spawnBarbarianUnitOnPlot", &CyUnit::spawnBarbarianUnitOnPlot, "void (int)")
+		.def("spawnOwnPlayerUnitOnAdjacentPlot", &CyUnit::spawnOwnPlayerUnitOnAdjacentPlot, "void (int)")
+		.def("spawnBarbarianUnitOnAdjacentPlot", &CyUnit::spawnBarbarianUnitOnAdjacentPlot, "void (int)")
+		.def("isPlayerUnitOnAdjacentPlot", &CyUnit::isPlayerUnitOnAdjacentPlot, "bool (int)")
+		.def("isBarbarianUnitOnAdjacentPlot", &CyUnit::isBarbarianUnitOnAdjacentPlot, "bool (int)")
+		// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
 
 		// WTP, ray, saving 1 more Profession for Fisher Issue - START
 		.def("getLbDroundsBefore", &CyUnit::getLbDroundsBefore, "int ()")

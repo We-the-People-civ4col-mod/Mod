@@ -781,6 +781,16 @@ public:
 
 	bool isProfessionalMilitary() const;
 
+	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
+	void spawnOwnPlayerUnitOnPlot(int /*UnitTypes*/ iIndex) const;
+	void spawnBarbarianUnitOnPlot(int /*UnitTypes*/ iIndex) const;
+	void spawnOwnPlayerUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const;
+	void spawnBarbarianUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const;
+
+	bool isPlayerUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const;
+	bool isBarbarianUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const;
+	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+
 protected:
 
 	void updateVisibilityCache(int iNewRange);

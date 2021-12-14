@@ -6864,6 +6864,17 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 			szBuffer.append(NEWLINE);
 			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_ONLY_BUILD_FLATLANDS"));
 		}
+
+		// WTP, ray, Not allowed next to itself - START
+		if (info.isNotAllowedNextToSameAsItself())
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_NOT_ALLOWED_NEXT_TO_ITSELF"));
+		}
+
+		// WTP, ray, Not allowed next to itself - END
+
+
 		//WTP, ray, Large Rivers - START
 		if (info.getTerrainMakesValid(TERRAIN_LARGE_RIVERS))
 		{
@@ -6974,6 +6985,31 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 		// WTP, ray, Improvements give Bonus to their City - END
 	}
 	// R&R, ray, Monasteries and Forts - END
+
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	if (info.getFoodModifierForCity() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_FOOD_MODIFIER_IF_WORKED", info.getFoodModifierForCity(), GC.getYieldInfo(YIELD_FOOD).getChar()));
+		// WTP, ray, Improvements give Bonus to their City - END
+	}
+
+	if (info.getHammersModifierForCity() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_HAMMERS_MODIFIER_IF_WORKED", info.getHammersModifierForCity(), GC.getYieldInfo(YIELD_HAMMERS).getChar()));
+		// WTP, ray, Improvements give Bonus to their City - END
+	}
+
+	if (info.getToolsModifierForCity() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_TOOLS_MODIFIER_IF_WORKED", info.getToolsModifierForCity(), GC.getYieldInfo(YIELD_TOOLS).getChar()));
+		// WTP, ray, Improvements give Bonus to their City - END
+	}
+
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - END
+
 	if (info.getFeatureGrowthProbability() > 0)
 	{
 		szBuffer.append(NEWLINE);
@@ -8482,6 +8518,42 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 		}		
 	}
 	// WTP, ray, Improvements give Bonus to their City - END
+
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	if (eYieldType == YIELD_FOOD)
+	{
+		int FoodModOfImprovements = kCity.getImprovementFoodModifierForCity();
+		if (0 != FoodModOfImprovements)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_WIND_MILL_BONUS", FoodModOfImprovements, info.getChar()));
+			iBaseModifier += FoodModOfImprovements;
+		}		
+	}
+
+	if (eYieldType == YIELD_HAMMERS)
+	{
+		int HammersModOfImprovements = kCity.getImprovementHammersModifierForCity();
+		if (0 != HammersModOfImprovements)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_SAW_MILL_BONUS", HammersModOfImprovements, info.getChar()));
+			iBaseModifier += HammersModOfImprovements;
+		}		
+	}
+
+	if (eYieldType == YIELD_TOOLS)
+	{
+		int ToolsModOfImprovements = kCity.getImprovementToolsModifierForCity();
+		if (0 != ToolsModOfImprovements)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_IRON_MILL_BONUS", ToolsModOfImprovements, info.getChar()));
+			iBaseModifier += ToolsModOfImprovements;
+		}		
+	}
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - END
+
 
 	FAssertMsg(iBaseModifier == kCity.getBaseYieldRateModifier(eYieldType), "Yield Modifier in setProductionHelp does not agree with actual value");
 

@@ -329,7 +329,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_PROD_FINAL_YIELD</Tag>
-        <English>-----------------------[NEWLINE]Final [COLOR_HIGHLIGHT_TEXT]Production[COLOR_REVERT] = %d1%F2_Icon</English>
+        <English>-----------------------[NEWLINE]Final [COLOR_HIGHLIGHT_TEXT]Production[COLOR_REVERT] : %d1%F2_Icon</English>
         <French>-----------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]Production[COLOR_REVERT] finale : %d1%F2_Icon</French>
         <German>-----------------------[NEWLINE]Letzte [COLOR_HIGHLIGHT_TEXT]Produktion[COLOR_REVERT]: %d1%F2_Icon</German>
         <Italian>-----------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]Produzione[COLOR_REVERT] finale: %d1%F2_Icon</Italian>

@@ -8163,6 +8163,9 @@ m_iGoodyUniqueRange(0),
 m_iFeatureGrowthProbability(0),
 m_iUpgradeTime(0),
 m_iDefenseModifier(0),
+m_iFoodModifierForCity(0), // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+m_iHammersModifierForCity(0), // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+m_iToolsModifierForCity(0), // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 m_iPillageGold(0),
 m_iImprovementPillage(NO_IMPROVEMENT),
 m_iImprovementUpgrade(NO_IMPROVEMENT),
@@ -8179,6 +8182,7 @@ m_bUpgradeRequiresFortify(false),
 m_bActsAsCity(true),
 m_bFort(true), // R&R, ray, Monasteries and Forts
 m_bMonastery(true), // R&R, ray, Monasteries and Forts
+m_bNotAllowedNextToSameAsItself(false), // WTP, ray, Not allowed next to itself - START
 m_bHillsMakesValid(false),
 m_bRiverSideMakesValid(false),
 m_bRequiresFlatlands(false),
@@ -8252,6 +8256,22 @@ int CvImprovementInfo::getDefenseModifier() const
 {
 	return m_iDefenseModifier;
 }
+
+// WTP, ray, Improvements give Bonus to their City - PART 2 - START
+int CvImprovementInfo::getFoodModifierForCity() const
+{
+	return m_iFoodModifierForCity;
+}
+int CvImprovementInfo::getHammersModifierForCity() const
+{
+	return m_iHammersModifierForCity;
+}
+int CvImprovementInfo::getToolsModifierForCity() const
+{
+	return m_iToolsModifierForCity;
+}
+// WTP, ray, Improvements give Bonus to their City - PART 2 - END
+
 int CvImprovementInfo::getPillageGold() const
 {
 	return m_iPillageGold;
@@ -8331,6 +8351,14 @@ bool CvImprovementInfo::isMonastery() const
 	return m_bMonastery;
 }
 // R&R, ray, Monasteries and Forts- END
+
+// WTP, ray, Not allowed next to itself - START
+bool CvImprovementInfo::isNotAllowedNextToSameAsItself() const
+{
+	return m_bNotAllowedNextToSameAsItself;
+}
+// WTP, ray, Not allowed next to itself - END
+
 bool CvImprovementInfo::isHillsMakesValid() const
 {
 	return m_bHillsMakesValid;
@@ -8513,6 +8541,9 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iFeatureGrowthProbability);
 	stream->Read(&m_iUpgradeTime);
 	stream->Read(&m_iDefenseModifier);
+	stream->Read(&m_iFoodModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	stream->Read(&m_iHammersModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	stream->Read(&m_iToolsModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	stream->Read(&m_iPillageGold);
 	stream->Read(&m_iImprovementPillage);
 	stream->Read(&m_iImprovementUpgrade);
@@ -8528,6 +8559,7 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bActsAsCity);
 	stream->Read(&m_bFort); // R&R, ray, Monasteries and Forts
 	stream->Read(&m_bMonastery); // R&R, ray, Monasteries and Forts
+	stream->Read(&m_bNotAllowedNextToSameAsItself);// WTP, ray, Not allowed next to itself - START
 	stream->Read(&m_bHillsMakesValid);
 	stream->Read(&m_bRiverSideMakesValid);
 	stream->Read(&m_bRequiresFlatlands);
@@ -8593,6 +8625,9 @@ void CvImprovementInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iFeatureGrowthProbability);
 	stream->Write(m_iUpgradeTime);
 	stream->Write(m_iDefenseModifier);
+	stream->Write(m_iFoodModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	stream->Write(m_iHammersModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	stream->Write(m_iToolsModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	stream->Write(m_iPillageGold);
 	stream->Write(m_iImprovementPillage);
 	stream->Write(m_iImprovementUpgrade);
@@ -8608,6 +8643,7 @@ void CvImprovementInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bActsAsCity);
 	stream->Write(m_bFort); // R&R, ray, Monasteries and Forts
 	stream->Write(m_bMonastery); // R&R, ray, Monasteries and Forts
+	stream->Write(m_bNotAllowedNextToSameAsItself);// WTP, ray, Not allowed next to itself - START
 	stream->Write(m_bHillsMakesValid);
 	stream->Write(m_bRiverSideMakesValid);
 	stream->Write(m_bRequiresFlatlands);
@@ -8660,6 +8696,7 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bActsAsCity, "bActsAsCity");
 	pXML->GetChildXmlValByName(&m_bFort, "bFort"); // R&R, ray, Monasteries and Forts
 	pXML->GetChildXmlValByName(&m_bMonastery, "bMonastery"); // R&R, ray, Monasteries and Forts
+	pXML->GetChildXmlValByName(&m_bNotAllowedNextToSameAsItself, "bNotAllowedNextToSameAsItself"); // WTP, ray, Not allowed next to itself - START
 	pXML->GetChildXmlValByName(&m_bHillsMakesValid, "bHillsMakesValid");
 	pXML->GetChildXmlValByName(&m_bRiverSideMakesValid, "bRiverSideMakesValid");
 	pXML->GetChildXmlValByName(&m_bRequiresFlatlands, "bRequiresFlatlands");
@@ -8678,6 +8715,9 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iFeatureGrowthProbability, "iFeatureGrowth");
 	pXML->GetChildXmlValByName(&m_iUpgradeTime, "iUpgradeTime");
 	pXML->GetChildXmlValByName(&m_iDefenseModifier, "iDefenseModifier");
+	pXML->GetChildXmlValByName(&m_iFoodModifierForCity, "iFoodModifierForCity"); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	pXML->GetChildXmlValByName(&m_iHammersModifierForCity, "iHammersModifierForCity"); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	pXML->GetChildXmlValByName(&m_iToolsModifierForCity, "iToolsModifierForCity"); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	pXML->GetChildXmlValByName(&m_iPillageGold, "iPillageGold");
 	pXML->GetChildXmlValByName(&m_bOutsideBorders, "bOutsideBorders");
 	// Super Forts begin *XML*

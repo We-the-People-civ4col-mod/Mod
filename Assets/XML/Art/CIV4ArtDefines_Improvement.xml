@@ -333,7 +333,7 @@
         <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_SALINA</Type>
             <bExtraAnimations>0</bExtraAnimations>
-            <fScale>1.0</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Structures/Improvements/saline/salinas4.nif</NIF>
             <KFM/>
@@ -342,7 +342,7 @@
         <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_LARGE_SALINA</Type>
             <bExtraAnimations>0</bExtraAnimations>
-            <fScale>1.0</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Structures/Improvements/Large_Saline/salinas4.nif</NIF>
             <KFM/>
@@ -374,6 +374,24 @@
             <NIF>Art/structures/improvements/NativeHostileVillage/tribalvillage.nif</NIF>
             <KFM>Art/structures/improvements/NativeHostileVillage/tribalvillage.kfm</KFM>
             <Button>,Art/colonization_atlas_buildings.dds,1,18</Button>
+        </ImprovementArtInfo>
+        <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_WIND_MILL</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Structures/Improvements/WindmillREN/windmill.nif</NIF>
+            <KFM>Art/Structures/Improvements/WindmillREN/windmill.kfm</KFM>
+            <Button>,Art/colonization_atlas_buildings.dds,8,16</Button>
+        </ImprovementArtInfo>
+        <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_IRON_MILL</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Structures/Improvements/Iron_Mill/watermillJAP.nif</NIF>
+            <KFM>Art/Structures/Improvements/Iron_Mill/watermillJAP.kfm</KFM>
+            <Button>,Art/colonization_atlas_buildings.dds,8,14</Button>
         </ImprovementArtInfo>
     </ImprovementArtInfos>
 </Civ4ArtDefines>

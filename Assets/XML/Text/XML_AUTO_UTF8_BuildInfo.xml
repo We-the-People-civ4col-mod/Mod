@@ -65,6 +65,33 @@
         <English>????</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BUILD_WINDMILL</Tag>
+        <English>Build a [LINK=IMPROVEMENT_WIND_MILL]windmill[\LINK]</English>
+        <German>[LINK=IMPROVEMENT_WIND_MILL]Windmühle[\LINK] bauen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_WINDMILL_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_IRONMILL</Tag>
+        <English>Build an [LINK=IMPROVEMENT_IRON_MILL]ironmill[\LINK]</English>
+        <German>[LINK=IMPROVEMENT_IRON_MILL]Eisenmühle[\LINK] bauen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_IRONMILL_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_SAWMILL</Tag>
+        <English>Build a [LINK=IMPROVEMENT_IRON_MILL]sawmill[\LINK]</English>
+        <German>[LINK=IMPROVEMENT_IRON_MILL]Sägewerk[\LINK] bauen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_SAWMILL_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILD_FORT</Tag>
         <English>Build a [LINK=IMPROVEMENT_FORT]fort[\LINK]</English>
         <French>Construire un [LINK=IMPROVEMENT_FORT]fort[\LINK]</French>

@@ -533,6 +533,12 @@ public:
 	int getFortDefenseBonusForCity() const;
 	// WTP, ray, Improvements give Bonus to their City - END
 
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	int getImprovementFoodModifierForCity() const;
+	int getImprovementHammersModifierForCity() const;
+	int getImprovementToolsModifierForCity() const;
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - END
+
 	// WTP, ray, Happiness - START
 	int getCityHappiness() const;
 	void setCityHappiness(int iValue);

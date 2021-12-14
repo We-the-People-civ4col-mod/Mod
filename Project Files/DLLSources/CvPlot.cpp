@@ -2031,6 +2031,31 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 		return false;
 	}
 
+	// WTP, ray, Not allowed next to itself - START
+	if (GC.getImprovementInfo(eImprovement).isNotAllowedNextToSameAsItself())
+	{
+		for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+		{
+			CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+			if (pAdjacentPlot != NULL)
+			{
+				// we catch ourselves
+				if (pAdjacentPlot->getImprovementType() == eImprovement)
+				{
+					return false;
+				}
+				// now let us also consider our growing improvements
+				ImprovementTypes eOurGrowingImprovement = (ImprovementTypes) GC.getImprovementInfo(eImprovement).getImprovementUpgrade();
+				if (eOurGrowingImprovement != NO_IMPROVEMENT && eOurGrowingImprovement == eImprovement)
+				{
+					return false;
+				}
+			}
+		}
+	}
+	// WTP, ray, Not allowed next to itself - END
+
+
 	if (GC.getImprovementInfo(eImprovement).isHillsMakesValid() && (isHills() || isPeak()))
 	{
 		bValid = true;
