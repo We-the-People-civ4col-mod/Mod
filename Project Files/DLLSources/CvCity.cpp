@@ -2766,7 +2766,7 @@ int CvCity::growthThreshold() const
 	// R&R, ray, Health
 	// WTP, ray, Happiness - START
 	int iHealthModifier = getCityHealth();
-	int iCityModifer = getCityHappiness() + getCityUnHappiness();
+	int iCityModifer = getCityHappiness() - getCityUnHappiness();
 	int iTotalModifier = iHealthModifier + iCityModifer;
 
 	// WTP, ray, for safety
