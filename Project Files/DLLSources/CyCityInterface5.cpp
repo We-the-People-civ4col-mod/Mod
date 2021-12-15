@@ -40,7 +40,7 @@ void CyCityPythonInterface5(python::class_<CyCity>& x)
 		// WTP, ray, new Harbour System - START
 		.def("getCityHarbourSpace", &CyCity::getCityHarbourSpace, "int ()")
 		.def("getCityHarbourSpaceUsed", &CyCity::getCityHarbourSpaceUsed, "int ()")
-		.def("bShouldShowCityHarbourSystem", &CyCity::getCityHarbourSpaceUsed, "bool ()")
+		.def("bShouldShowCityHarbourSystem", &CyCity::bShouldShowCityHarbourSystem, "bool ()")
 		// WTP, ray, new Harbour System - END
 
 		// R&R, ray, Health - START
