@@ -55,17 +55,17 @@ class CvPediaImprovement:
 		self.X_IMPROVEMENTS_PANE = x
 		self.Y_IMPROVEMENTS_PANE = y + self.H_ICON_PANE + (h * 1 / 100)#290#y + (h * 40 / 100)
 		self.W_IMPROVEMENTS_PANE = w
-		self.H_IMPROVEMENTS_PANE = 144#100#(h * 35 / 100)
+		self.H_IMPROVEMENTS_PANE = 144 - 20#100#(h * 35 / 100)
 
 		self.X_EFFECTS = x
 		self.Y_EFFECTS = y + self.H_ICON_PANE + (h * 23 / 100)#390#y + (h * 80 / 100)
 		self.W_EFFECTS = w
-		self.H_EFFECTS = 144#100#(h * 20 / 100)
+		self.H_EFFECTS = 144 - 20 #100#(h * 20 / 100)
 
 		self.X_HISTORY_PANE = x
 		self.Y_HISTORY_PANE = y + self.H_ICON_PANE + (h * 46 / 100)#490
 		self.W_HISTORY_PANE = w
-		self.H_HISTORY_PANE = 144#180
+		self.H_HISTORY_PANE = 144 - 20 #180
 
 		self.top.deleteAllWidgets()
 
@@ -149,7 +149,7 @@ class CvPediaImprovement:
 				if (iYieldChange != 0):
 					szYield += localText.getText("TXT_KEY_PEDIA_ROUTE_YIELD", (gc.getYieldInfo(k).getTextKey(), iYieldChange, gc.getYieldInfo(k).getChar(), gc.getRouteInfo(iRoute).getTextKey())) + u"\n"
 		listName = self.top.getNextWidgetName()
-		screen.addMultilineText(listName, szYield, self.X_IMPROVEMENTS_PANE+5, self.Y_IMPROVEMENTS_PANE+30, self.W_IMPROVEMENTS_PANE-10, self.H_IMPROVEMENTS_PANE-35, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+		screen.addMultilineText(listName, szYield, self.X_IMPROVEMENTS_PANE + 15, self.Y_IMPROVEMENTS_PANE + 30, self.W_IMPROVEMENTS_PANE - 30, self.H_IMPROVEMENTS_PANE - 35, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 	def placeSpecial(self):
 
@@ -161,7 +161,7 @@ class CvPediaImprovement:
 		listName = self.top.getNextWidgetName()
 
 		szSpecialText = CyGameTextMgr().getImprovementHelp(self.iImprovement, True)
-		screen.addMultilineText(listName, szSpecialText, self.X_EFFECTS+5, self.Y_EFFECTS+5, self.W_EFFECTS-10, self.H_EFFECTS-10, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+		screen.addMultilineText(listName, szSpecialText, self.X_EFFECTS + 15, self.Y_EFFECTS + 30, self.W_EFFECTS - 30, self.H_EFFECTS - 35, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 	def placeLinks(self, bRedraw):
 		screen = self.top.getScreen()
@@ -199,8 +199,7 @@ class CvPediaImprovement:
 #		screen.attachLabel(panelName, "", "  ")
 		
 		textName = self.top.getNextWidgetName()
-		screen.addMultilineText( textName, gc.getImprovementInfo(self.iImprovement).getCivilopedia(), self.X_HISTORY_PANE + 15, self.Y_HISTORY_PANE + 40,
-		    self.W_HISTORY_PANE - (15 * 2), self.H_HISTORY_PANE - (15 * 2) - 25, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+		screen.addMultilineText(textName, gc.getImprovementInfo(self.iImprovement).getCivilopedia(), self.X_HISTORY_PANE + 15, self.Y_HISTORY_PANE + 30, self.W_HISTORY_PANE - 30, self.H_HISTORY_PANE - 35, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 	# Will handle the input for this screen...
 	def handleInput (self, inputClass):
