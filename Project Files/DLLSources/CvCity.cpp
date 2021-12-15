@@ -9450,6 +9450,12 @@ void CvCity::doCityHealth()
 // WTP, ray, Improvements give Bonus to their City - START
 int CvCity::getMonasteryCrossBonusForCity() const
 {
+	//not necessary for Natives, saves performance
+	if (isNative())
+	{
+		return 0;
+	}
+
 	int iMonsasteryCrossBonus = 0;
 	int iMonsasteryCrossBonusModifier = GC.getDefineINT("MONASTERY_CROSSES_MODIFIER_FOR_CITY");
 	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
@@ -9475,6 +9481,12 @@ int CvCity::getMonasteryCrossBonusForCity() const
 
 int CvCity::getFortDefenseBonusForCity() const
 {
+	//not necessary for Natives, saves performance
+	if (isNative())
+	{
+		return 0;
+	}
+
 	int iFortDefenseBonus = 0;
 	int iFortDefenseBonusModifier = GC.getDefineINT("FORT_DEFENSE_MODIFIER_FOR_CITY");
 	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
@@ -9503,6 +9515,12 @@ int CvCity::getFortDefenseBonusForCity() const
 // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 int CvCity::getImprovementFoodModifierForCity() const
 {
+	//not necessary for Natives, saves performance
+	if (isNative())
+	{
+		return 0;
+	}
+
 	int FoodModifierForCity = 0;
 	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
 	{
@@ -9526,6 +9544,12 @@ int CvCity::getImprovementFoodModifierForCity() const
 
 int CvCity::getImprovementHammersModifierForCity() const
 {
+	//not necessary for Natives, saves performance
+	if (isNative())
+	{
+		return 0;
+	}
+
 	int HammersModifierForCity = 0;
 	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
 	{
@@ -9549,6 +9573,12 @@ int CvCity::getImprovementHammersModifierForCity() const
 
 int CvCity::getImprovementToolsModifierForCity() const
 {
+	//not necessary for Natives, saves performance
+	if (isNative())
+	{
+		return 0;
+	}
+
 	int ToolsModifierForCity = 0;
 	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
 	{
