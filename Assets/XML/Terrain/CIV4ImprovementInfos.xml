@@ -6014,5 +6014,52 @@
             <RouteYieldChanges/>
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
+        <ImprovementInfo>
+            <Type>IMPROVEMENT_CANAL</Type>
+            <Description>TXT_KEY_IMPROVEMENT_CANAL</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_CANAL_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_CANAL</ArtDefineTag>
+            <PrereqNatureYields/>
+            <YieldIncreases>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </YieldIncreases>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bCanal>1</bCanal>
+            <bNotAllowedNextToSameAsItself>1</bNotAllowedNextToSameAsItself>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>1</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>0</bWater>
+            <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>36</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>0</iTilesPerGoody>
+            <iGoodyRange>0</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>0</iUpgradeTime>
+            <iDefenseModifier>0</iDefenseModifier>
+            <iPillageGold>20</iPillageGold>
+            <bOutsideBorders>1</bOutsideBorders>
+            <TerrainMakesValids/>
+            <FeatureMakesValids/>
+            <BonusTypeStructs/>
+            <ImprovementPillage/>
+            <ImprovementUpgrade/>
+            <RouteYieldChanges/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
     </ImprovementInfos>
 </Civ4ImprovementInfos>

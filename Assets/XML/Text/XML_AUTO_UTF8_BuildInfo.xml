@@ -84,11 +84,24 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_SAWMILL</Tag>
-        <English>Build a [LINK=IMPROVEMENT_IRON_MILL]sawmill[\LINK]</English>
-        <German>[LINK=IMPROVEMENT_IRON_MILL]Sägewerk[\LINK] bauen</German>
+        <English>Build a [LINK=IMPROVEMENT_LUMBERMILL]sawmill[\LINK]</English>
+        <German>[LINK=IMPROVEMENT_LUMBERMILL]Sägewerk[\LINK] bauen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_SAWMILL_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_WINDMILL_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_CANAL</Tag>
+        <English>Build an [LINK=IMPROVEMENT_CANAL]canal[\LINK]</English>
+        <German>[LINK=IMPROVEMENT_CANAL]Kanal[\LINK] bauen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_CANAL_HELP</Tag>
         <English>????</English>
     </TEXT>
     <TEXT>

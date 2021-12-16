@@ -2345,6 +2345,7 @@ public:
 	bool isActsAsCity() const;
 	bool isFort() const; // R&R, ray, Monasteries and Forts
 	bool isMonastery() const; // R&R, ray, Monasteries and Forts
+	bool isCanal() const; // WTP, ray, Canal
 	bool isNotAllowedNextToSameAsItself() const; // WTP, ray, Not allowed next to itself - START
 	bool isHillsMakesValid() const;
 	bool isRiverSideMakesValid() const;
@@ -2419,6 +2420,7 @@ protected:
 	bool m_bActsAsCity;
 	bool m_bFort; // R&R, ray, Monasteries and Forts
 	bool m_bMonastery; // R&R, ray, Monasteries and Forts
+	bool m_bCanal; // WTP, ray, Canal - START
 	bool m_bNotAllowedNextToSameAsItself; // WTP, ray, Not allowed next to itself - START
 	bool m_bHillsMakesValid;
 	bool m_bRiverSideMakesValid;

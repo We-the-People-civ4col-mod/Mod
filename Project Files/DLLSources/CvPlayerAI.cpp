@@ -14862,7 +14862,9 @@ int CvPlayerAI::AI_getPlotCanalValue(CvPlot* pPlot) const
 					if (pPlot->getImprovementType() != NO_IMPROVEMENT)
 					{
 						CvImprovementInfo &kImprovementInfo = GC.getImprovementInfo(pPlot->getImprovementType());
-						if (!kImprovementInfo.isActsAsCity())
+						// WTP, ray, Canal - START
+						// also needed to put new Canal Improvement in here
+						if (!kImprovementInfo.isActsAsCity() && !kImprovementInfo.isCanal())
 						{
 							return 0;
 						}

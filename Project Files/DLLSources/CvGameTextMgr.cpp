@@ -6858,11 +6858,20 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 			}
 			//WTP, ray, Large Rivers - END
 		}
+
 		if (info.isRequiresFlatlands())
 		{
 			szBuffer.append(NEWLINE);
 			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_ONLY_BUILD_FLATLANDS"));
 		}
+
+		// WTP, ray, Canal - START
+		if (info.isCanal())
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_IS_CANAL"));
+		}
+		// WTP, ray, Canal - END
 
 		// WTP, ray, Not allowed next to itself - START
 		if (info.isNotAllowedNextToSameAsItself())
@@ -6870,9 +6879,7 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 			szBuffer.append(NEWLINE);
 			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_NOT_ALLOWED_NEXT_TO_ITSELF"));
 		}
-
 		// WTP, ray, Not allowed next to itself - END
-
 
 		//WTP, ray, Large Rivers - START
 		if (info.getTerrainMakesValid(TERRAIN_LARGE_RIVERS))
