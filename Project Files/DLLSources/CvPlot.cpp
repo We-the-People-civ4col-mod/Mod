@@ -4406,8 +4406,8 @@ bool CvPlot::isValidDomainForAction(UnitTypes eUnit) const
 	case DOMAIN_SEA:
 
 		// WTP, ray, Canal - START
-		// in Canals, which are actually on land plots, we do not want to have any Ships bigger than Coastal Ships
-		if (!isWater() && !kUnitInfo.getTerrainImpassable(TERRAIN_OCEAN) && getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(getImprovementType()).isCanal())
+		// in Canals, which are actually on land plots, we do not want to have any Ships bigger than Coastal Ships or Fishing Boats
+		if (!isWater() && !kUnitInfo.getTerrainImpassable(TERRAIN_OCEAN) && !(kUnitInfo.isGatherBoat() && kUnitInfo.getHarbourSpaceNeeded() == 1) && getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(getImprovementType()).isCanal())
 		{
 			return false;
 		}

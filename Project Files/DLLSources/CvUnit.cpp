@@ -2924,8 +2924,8 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	}
 
 	// WTP, ray, Canal - START
-	// in Canals, which are actually on land plots, we do not want to have any Ships bigger than Coastal Ships
-	if (getUnitInfo().getDomainType() == DOMAIN_SEA && !pPlot->isWater() && !getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN) && pPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pPlot->getImprovementType()).isCanal())
+	// in Canals, which are actually on land plots, we do not want to have any Ships bigger than Coastal Ships or GatherBoats
+	if (getUnitInfo().getDomainType() == DOMAIN_SEA && !pPlot->isWater() && !getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN) && !(getUnitInfo().isGatherBoat() && getUnitInfo().getHarbourSpaceNeeded() == 1) && pPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pPlot->getImprovementType()).isCanal())
 	{
 		return false;
 	}

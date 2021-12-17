@@ -1118,8 +1118,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_IS_CANAL</Tag>
-        <English>[ICON_BULLET]Can only be built adjacent to [COLOR_UNIT_TEXT]water plots[COLOR_REVERT] like coasts, shallow coast, large rivers, lakes or ice lakes [NEWLINE][ICON_BULLET]Allows [COLOR_UNIT_TEXT]coastal ships[COLOR_REVERT] to cross [COLOR_HIGHLIGHT_TEXT]land[COLOR_REVERT]</English>
-        <German>[ICON_BULLET]Kann nur angrenzend an [COLOR_UNIT_TEXT]Wassergeländefelder[COLOR_REVERT], wie z.B. Küsten, flache Küsten, große Flüsse, Seen oder Eisseen gebaut werden [NEWLINE][ICON_BULLET]Erlaubt [COLOR_UNIT_TEXT]Küstenschiffen [COLOR_REVERT] die Durchfahrt über [COLOR_HIGHLIGHT_TEXT]Land[COLOR_REVERT]</German>
+        <English>[ICON_BULLET]Can only be built adjacent to [COLOR_UNIT_TEXT]water plots[COLOR_REVERT] like coasts, shallow coast, large rivers, lakes or ice lakes [NEWLINE][ICON_BULLET]Allows [COLOR_UNIT_TEXT]coastal ships[COLOR_REVERT] and [COLOR_UNIT_TEXT]fishing boats[COLOR_REVERT] to cross [COLOR_HIGHLIGHT_TEXT]land[COLOR_REVERT]</English>
+        <German>[ICON_BULLET]Kann nur angrenzend an [COLOR_UNIT_TEXT]Wassergeländefelder[COLOR_REVERT], wie z.B. Küsten, flache Küsten, große Flüsse, Seen oder Eisseen gebaut werden [NEWLINE][ICON_BULLET]Erlaubt [COLOR_UNIT_TEXT]Küstenschiffen [COLOR_REVERT] und [COLOR_UNIT_TEXT]Fischerbooten[COLOR_REVERT] die Durchfahrt über [COLOR_HIGHLIGHT_TEXT]Land[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS</Tag>
