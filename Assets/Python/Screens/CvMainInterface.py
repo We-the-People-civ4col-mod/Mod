@@ -2802,7 +2802,9 @@ class CvMainInterface:
 				iHealthChange = pHeadSelectedCity.getCityHealthChange()
 				szBufferHealthChange = u"<font=3>" + u"<color="
 				if iHealthChange > 0: # Green
-					szBufferHealthChange += u"0,255,0" + u">(+"+str(iHealthChange)+u")" + u"</color>" + u"</font>"
+					#not enough space for a + sign
+					#szBufferHealthChange += u"0,255,0" + u">(+"+str(iHealthChange)+u")" + u"</color>" + u"</font>"
+					szBufferHealthChange += u"0,255,0" + u">("+str(iHealthChange)+u")" + u"</color>" + u"</font>"
 				elif iHealthChange < 0: # Red
 					szBufferHealthChange += u"255,0,0" + u">("+str(iHealthChange)+u")" + u"</color>" + u"</font>"
 				else: # Yellow
@@ -2813,7 +2815,7 @@ class CvMainInterface:
 					
 				#now add them all together and display on top of the Screen
 				szBuffer = szBufferCurrentHealth + szBufferHealthChange +szBufferHealthIcon
-				screen.setLabel("HealthText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 33 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_HEALTH, -1 )
+				screen.setLabel("HealthText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 32 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_HEALTH, -1 )
 
 			# CITY HAPPINESS vs UNHAPPINESS
 				pHeadSelectedCity.updateCityHappiness()
