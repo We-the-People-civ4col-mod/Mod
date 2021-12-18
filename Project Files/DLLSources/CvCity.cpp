@@ -3990,7 +3990,8 @@ void CvCity::updateCultureLevel()
 
 	CultureLevelTypes eCultureLevel = ((CultureLevelTypes)0);
 
-	//if (!isOccupation()) // R&R mod, vetiarvind, bug fix for units "disappearing" during disorder
+	// WTP, ray, removed bad bugfix try of vetiarvind which actually fixed nothing and caused a new bug
+	if (!isOccupation())
 	{
 		for (int iI = (GC.getNumCultureLevelInfos() - 1); iI > 0; iI--)
 		{
