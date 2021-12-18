@@ -290,12 +290,12 @@ public:
 	// TAC - LbD - Ray - END
 
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
-	void spawnOwnPlayerUnitOnPlot(int iIndex) const;
-	void spawnBarbarianUnitOnPlot(int iIndex) const;
-	void spawnOwnPlayerUnitOnAdjacentPlot(int iIndex) const;
-	void spawnBarbarianUnitOnAdjacentPlot(int iIndex) const;
-	bool isPlayerUnitOnAdjacentPlot(int iIndex) const;
-	bool isBarbarianUnitOnAdjacentPlot(int iIndex) const;
+	void spawnOwnPlayerUnitOnPlotOfUnit(int iIndex) const;
+	void spawnBarbarianUnitOnPlotOfUnit(int iIndex) const;
+	void spawnOwnPlayerUnitOnAdjacentPlotOfUnit(int iIndex) const;
+	void spawnBarbarianUnitOnAdjacentPlotOfUnit(int iIndex) const;
+	bool isPlayerUnitOnAdjacentPlotOfUnit(int iIndex) const;
+	bool isBarbarianUnitOnAdjacentPlotOfUnit(int iIndex) const;
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
 
 	// WTP, ray, saving 1 more Profession for Fisher Issue - START

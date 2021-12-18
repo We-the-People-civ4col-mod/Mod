@@ -1127,39 +1127,38 @@ int CyUnit::getLastLbDProfessionBefore()
 // WTP, ray, saving 1 more Profession for Fisher Issue - END
 
 // WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
-void CyUnit::spawnOwnPlayerUnitOnPlot(int iIndex) const
+void CyUnit::spawnOwnPlayerUnitOnPlotOfUnit(int iIndex) const
 {
 	if (m_pUnit)
-		m_pUnit->spawnOwnPlayerUnitOnPlot(iIndex);
+		m_pUnit->spawnOwnPlayerUnitOnPlotOfUnit(iIndex);
 }
 
-void CyUnit::spawnBarbarianUnitOnPlot(int iIndex) const
+void CyUnit::spawnBarbarianUnitOnPlotOfUnit(int iIndex) const
 {
 	if (m_pUnit)
-		m_pUnit->spawnBarbarianUnitOnPlot(iIndex);
+		m_pUnit->spawnBarbarianUnitOnPlotOfUnit(iIndex);
 }
 
-void CyUnit::spawnOwnPlayerUnitOnAdjacentPlot(int iIndex) const
+void CyUnit::spawnOwnPlayerUnitOnAdjacentPlotOfUnit(int iIndex) const
 {
 	if (m_pUnit)
-		m_pUnit->spawnOwnPlayerUnitOnAdjacentPlot(iIndex);
+		m_pUnit->spawnOwnPlayerUnitOnAdjacentPlotOfUnit(iIndex);
 }
 
-void CyUnit::spawnBarbarianUnitOnAdjacentPlot(int iIndex) const
+void CyUnit::spawnBarbarianUnitOnAdjacentPlotOfUnit(int iIndex) const
 {
 	if (m_pUnit)
-		m_pUnit->spawnBarbarianUnitOnAdjacentPlot(iIndex);
+		m_pUnit->spawnBarbarianUnitOnAdjacentPlotOfUnit(iIndex);
 }
 
-
-bool CyUnit::isPlayerUnitOnAdjacentPlot(int iIndex) const
+bool CyUnit::isPlayerUnitOnAdjacentPlotOfUnit(int iIndex) const
 {
-	return m_pUnit ? m_pUnit->isPlayerUnitOnAdjacentPlot(iIndex) : false;
+	return m_pUnit ? m_pUnit->isPlayerUnitOnAdjacentPlotOfUnit(iIndex) : false;
 }
 
-bool CyUnit::isBarbarianUnitOnAdjacentPlot(int iIndex) const
+bool CyUnit::isBarbarianUnitOnAdjacentPlotOfUnit(int iIndex) const
 {
-	return m_pUnit ? m_pUnit->isPlayerUnitOnAdjacentPlot(iIndex) : false;
+	return m_pUnit ? m_pUnit->isPlayerUnitOnAdjacentPlotOfUnit(iIndex) : false;
 }
 // WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
 

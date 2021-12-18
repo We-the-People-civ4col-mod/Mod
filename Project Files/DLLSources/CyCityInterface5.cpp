@@ -50,6 +50,15 @@ void CyCityPythonInterface5(python::class_<CyCity>& x)
 		.def("changeCityHealth", &CyCity::changeCityHealth, "void (int)")
 		// R&R, ray, Health - END
 
+		// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
+		.def("spawnOwnPlayerUnitOnPlotOfCity", &CyCity::spawnOwnPlayerUnitOnPlotOfCity, "void (int)")
+		.def("spawnBarbarianUnitOnPlotOfCity", &CyCity::spawnBarbarianUnitOnPlotOfCity, "void (int)")
+		.def("spawnOwnPlayerUnitOnAdjacentPlotOfCity", &CyCity::spawnOwnPlayerUnitOnAdjacentPlotOfCity, "void (int)")
+		.def("spawnBarbarianUnitOnAdjacentPlotOfCity", &CyCity::spawnBarbarianUnitOnAdjacentPlotOfCity, "void (int)")
+		.def("isPlayerUnitOnAdjacentPlotOfCity", &CyCity::isPlayerUnitOnAdjacentPlotOfCity, "bool (int)")
+		.def("isBarbarianUnitOnAdjacentPlotOfCity", &CyCity::isBarbarianUnitOnAdjacentPlotOfCity, "bool (int)")
+		// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+
 		// WTP, ray, Happiness - START
 		.def("getCityHappiness", &CyCity::getCityHappiness, "int ()")
 		.def("setCityHappiness", &CyCity::setCityHappiness, "void (int)")

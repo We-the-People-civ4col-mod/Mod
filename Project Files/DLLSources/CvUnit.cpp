@@ -15385,7 +15385,7 @@ void CvUnit::createTreasures(int overallAmount, int maxTreasureGold)
 // WTP, merge Treasures, of Raubwuerger - END
 
 // WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
-void CvUnit::spawnOwnPlayerUnitOnPlot(int /*UnitTypes*/ iIndex) const
+void CvUnit::spawnOwnPlayerUnitOnPlotOfUnit(int /*UnitTypes*/ iIndex) const
 {
 	CvPlayer& onwPlayer = GET_PLAYER(getOwnerINLINE());
 	UnitTypes eUnitToSpawn = (UnitTypes) iIndex;
@@ -15393,7 +15393,7 @@ void CvUnit::spawnOwnPlayerUnitOnPlot(int /*UnitTypes*/ iIndex) const
 	return;
 }
 
-void CvUnit::spawnBarbarianUnitOnPlot(int /*UnitTypes*/ iIndex) const
+void CvUnit::spawnBarbarianUnitOnPlotOfUnit(int /*UnitTypes*/ iIndex) const
 {
 	PlayerTypes eBarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
 	if (eBarbarianPlayerType == NO_PLAYER)
@@ -15407,7 +15407,7 @@ void CvUnit::spawnBarbarianUnitOnPlot(int /*UnitTypes*/ iIndex) const
 	return;
 }
 
-void CvUnit::spawnOwnPlayerUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const
+void CvUnit::spawnOwnPlayerUnitOnAdjacentPlotOfUnit(int /*UnitTypes*/ iIndex) const
 {
 	CvPlayer& onwPlayer = GET_PLAYER(getOwnerINLINE());
 	UnitTypes eUnitToSpawn = (UnitTypes) iIndex;
@@ -15436,7 +15436,7 @@ void CvUnit::spawnOwnPlayerUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const
 	return;
 }
 
-void CvUnit::spawnBarbarianUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const
+void CvUnit::spawnBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitTypes*/ iIndex) const
 {
 	PlayerTypes eBarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
 	if (eBarbarianPlayerType == NO_PLAYER)
@@ -15471,7 +15471,7 @@ void CvUnit::spawnBarbarianUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const
 	return;
 }
 
-bool CvUnit::isPlayerUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const
+bool CvUnit::isPlayerUnitOnAdjacentPlotOfUnit(int /*UnitTypes*/ iIndex) const
 {
 	PlayerTypes eOwnPlayerType = getOwnerINLINE();
 	UnitTypes eUnit = (UnitTypes) iIndex;
@@ -15503,7 +15503,7 @@ bool CvUnit::isPlayerUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const
 	return false;
 }
 
-bool CvUnit::isBarbarianUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const
+bool CvUnit::isBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitTypes*/ iIndex) const
 {
 	PlayerTypes eBarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
 	if (eBarbarianPlayerType == NO_PLAYER)
