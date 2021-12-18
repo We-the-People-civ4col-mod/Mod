@@ -7293,11 +7293,26 @@ int CvUnit::canGiveExperience(const CvPlot* pPlot) const
 		{
 			CvUnit* pUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = pPlot->nextUnitNode(pUnitNode);
-
-			if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny())
+// Ramstormp, WtP, Generals and admirals only share experience with units in the army or the navy respectively - START
+			//if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny())
+			//{
+			//	++iNumUnits;
+			//}
+			if (((UnitClassTypes)getUnitClassType() == GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL")))
 			{
-				++iNumUnits;
+				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() > 20)// Ramstormp, PTSD, Promotions is a navy thing)
+				{
+					++iNumUnits;
+				}
 			}
+			else
+			{
+				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->baseCombatStr() > 2 && pUnit->getDomainType() == DOMAIN_LAND) // Ramstormp, PTSD, Promotions is an army thing
+				{
+					++iNumUnits;
+				}
+			}
+// Ramstormp - END
 		}
 	}
 
@@ -7324,13 +7339,29 @@ bool CvUnit::giveExperience()
 			{
 				CvUnit* pUnit = ::getUnit(pUnitNode->m_data);
 				pUnitNode = pPlot->nextUnitNode(pUnitNode);
-
-				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny())
+// Ramstormp, WtP, Generals and admirals only share experience with units in the army or the navy respectively - START
+				//if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny())
+				//{
+				//	pUnit->changeExperience(i < iRemainder ? iMinExperiencePerUnit+1 : iMinExperiencePerUnit);
+				//	pUnit->testPromotionReady();
+				//}
+				if (((UnitClassTypes)getUnitClassType() == GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL")))
 				{
-					pUnit->changeExperience(i < iRemainder ? iMinExperiencePerUnit+1 : iMinExperiencePerUnit);
-					pUnit->testPromotionReady();
+					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() > 20) // Ramstormp, PTSD, Promote your navy only
+					{
+						pUnit->changeExperience(i < iRemainder ? iMinExperiencePerUnit + 1 : iMinExperiencePerUnit);
+						pUnit->testPromotionReady();
+					}
 				}
-
+				else
+				{
+					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->baseCombatStr() > 2) // Ramstormp, PTSD, Promote your army only
+					{
+						pUnit->changeExperience(i < iRemainder ? iMinExperiencePerUnit + 1 : iMinExperiencePerUnit);
+						pUnit->testPromotionReady();
+					}
+				}
+// Ramstormp - END
 				i++;
 			}
 
