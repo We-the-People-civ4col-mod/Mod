@@ -1118,7 +1118,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_IS_CANAL</Tag>
-        <English>[ICON_BULLET]Can only be built adjacent to [COLOR_UNIT_TEXT]water plots[COLOR_REVERT] like coasts, shallow coast, large rivers, lakes or ice lakes [NEWLINE][ICON_BULLET]Allows [COLOR_UNIT_TEXT]coastal ships[COLOR_REVERT] and [COLOR_UNIT_TEXT]fishing boats[COLOR_REVERT] to cross [COLOR_HIGHLIGHT_TEXT]land[COLOR_REVERT]</English>
+        <English>[ICON_BULLET]Can only be built adjacent to [COLOR_UNIT_TEXT]water plots[COLOR_REVERT] like coasts, shallow coasts, large rivers, lakes or ice lakes [NEWLINE][ICON_BULLET]Allows [COLOR_UNIT_TEXT]coastal ships[COLOR_REVERT] and [COLOR_UNIT_TEXT]fishing boats[COLOR_REVERT] to cross [COLOR_HIGHLIGHT_TEXT]land tiles[COLOR_REVERT]</English>
         <German>[ICON_BULLET]Kann nur angrenzend an [COLOR_UNIT_TEXT]Wassergeländefelder[COLOR_REVERT], wie z.B. Küsten, flache Küsten, große Flüsse, Seen oder Eisseen gebaut werden [NEWLINE][ICON_BULLET]Erlaubt [COLOR_UNIT_TEXT]Küstenschiffen [COLOR_REVERT] und [COLOR_UNIT_TEXT]Fischerbooten[COLOR_REVERT] die Durchfahrt über [COLOR_HIGHLIGHT_TEXT]Land[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1137,7 +1137,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE</Tag>
-        <English>Hunters stage</English>
+        <English>Hunters' blind</English>
         <German>
             <Text>Jagdpier</Text>
             <Gender>Neuter</Gender>
@@ -1146,7 +1146,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Hunters stage[COLOR_REVERT]</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Hunters' blind[COLOR_REVERT]</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Jagdpier[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1184,7 +1184,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_LAKE</Tag>
-        <English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LAKE]fresh water lake[\LINK], [LINK=TERRAIN_ICE_LAKE]ice lakes[\LINK], [LINK=TERRAIN_ICE_LAKE]coasts[\LINK] or [LINK=TERRAIN_ICE_LAKE]shallow coasts[\LINK]</English>
+        <English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LAKE]fresh water lakes[\LINK], [LINK=TERRAIN_ICE_LAKE]ice lakes[\LINK], [LINK=TERRAIN_ICE_LAKE]coasts[\LINK] or [LINK=TERRAIN_ICE_LAKE]shallow coasts[\LINK]</English>
         <German>[ICON_BULLET]Kann nur auf [LINK=TERRAIN_LAKE]Süßwassersee[\LINK], [LINK=TERRAIN_ICE_LAKE]Eisseen[\LINK], [LINK=TERRAIN_ICE_LAKE]Küsten[\LINK] oderr [LINK=TERRAIN_ICE_LAKE]flachen Küsten[\LINK] gebaut werden.</German>
     </TEXT>
     <TEXT>
@@ -1194,7 +1194,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_ANIMALS</Tag>
-        <English>[ICON_BULLET]Spawns wild animals that guard it.</English>
+        <English>[ICON_BULLET]Spawns wild animals that then guard it.</English>
         <German>[ICON_BULLET]Erzeugt Wilde Tiere als Beschützer.</German>
     </TEXT>
     <TEXT>
@@ -1204,7 +1204,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_CRIMINALS</Tag>
-        <English>[ICON_BULLET]Spawns revolting units and outlaws who guard it.</English>
+        <English>[ICON_BULLET]Spawns outlaws who guard their hideout.</English>
         <German>[ICON_BULLET]Erzeugt Revoltierende Sklaven und Kriminelle als Beschützer.</German>
     </TEXT>
 </Civ4GameText>
