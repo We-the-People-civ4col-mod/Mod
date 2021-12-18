@@ -5087,6 +5087,9 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 			return false;
 		}
 
+		// WTP, ray, let us remove it - why should MP games play on different rules as SP games?
+		// it was perceived as a bug and I really feel it is overexagerrated anyways
+		/*
 		if ((GC.getUnitInfo(eUnit).getCombat() > 0) && !(GC.getUnitInfo(eUnit).isOnlyDefensive()))
 		{
 			if (GC.getGameINLINE().isGameMultiPlayer())
@@ -5094,6 +5097,7 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 				return false;
 			}
 		}
+		*/
 
 		if (GC.getGameINLINE().isOption(GAMEOPTION_ONE_CITY_CHALLENGE) && isHuman())
 		{
