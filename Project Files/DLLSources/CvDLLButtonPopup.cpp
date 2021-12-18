@@ -346,13 +346,17 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 						CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 						pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-						if (pLoopUnit->canPromote((PromotionTypes) info.getData1(), info.getData2()))
+						// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
+						if ((pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->baseCombatStr() > 2) || (pLoopUnit->getDomainType() == DOMAIN_SEA && pLoopUnit->baseCombatStr() >= 20))
 						{
-							iCount--;
-							if (iCount == 0)
+							if (pLoopUnit->canPromote((PromotionTypes) info.getData1(), info.getData2()))
 							{
-								gDLL->sendPushMission(info.getData2(), MISSION_LEAD, pLoopUnit->getID(), -1, 0, false);
-								break;
+								iCount--;
+								if (iCount == 0)
+								{
+									gDLL->sendPushMission(info.getData2(), MISSION_LEAD, pLoopUnit->getID(), -1, 0, false);
+									break;
+								}
 							}
 						}
 					}
@@ -2188,7 +2192,6 @@ bool CvDLLButtonPopup::launchLeadUnitPopup(CvPopup* pPopup, CvPopupInfo &info)
 
 	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_CHOOSE_UNIT_TO_LEAD"));
 
-
 	int iCount = 1;
 	CvUnit* pFirstUnit = NULL;
 	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
@@ -2197,16 +2200,20 @@ bool CvDLLButtonPopup::launchLeadUnitPopup(CvPopup* pPopup, CvPopupInfo &info)
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-		if (pLoopUnit->canPromote((PromotionTypes) info.getData1(), info.getData2()))
+		// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
+		if ((pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->baseCombatStr() > 2) || (pLoopUnit->getDomainType() == DOMAIN_SEA && pLoopUnit->baseCombatStr() >= 20))
 		{
-			if (!pFirstUnit)
+			if (pLoopUnit->canPromote((PromotionTypes) info.getData1(), info.getData2()))
 			{
-				pFirstUnit = pLoopUnit;
+				if (!pFirstUnit)
+				{
+					pFirstUnit = pLoopUnit;
+				}
+				CvWStringBuffer szBuffer;
+				GAMETEXT.setUnitHelp(szBuffer, pLoopUnit, true);
+				gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szBuffer.getCString(), NULL, iCount, WIDGET_GENERAL);
+				iCount++;
 			}
-			CvWStringBuffer szBuffer;
-			GAMETEXT.setUnitHelp(szBuffer, pLoopUnit, true);
-			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szBuffer.getCString(), NULL, iCount, WIDGET_GENERAL);
-			iCount++;
 		}
 	}
 

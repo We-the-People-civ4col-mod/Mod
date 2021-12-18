@@ -7441,18 +7441,26 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 			CvUnit* pUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
-			if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canPromote((PromotionTypes)kUnitInfo.getLeaderPromotion(), getID()))
+			// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
+			if ((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->baseCombatStr() > 2) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20))
 			{
-				++iNumUnits;
+				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canPromote((PromotionTypes)kUnitInfo.getLeaderPromotion(), getID()))
+				{
+					++iNumUnits;
+				}
 			}
 		}
 	}
 	else
 	{
 		CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).getUnit(iUnitId);
-		if (pUnit && pUnit != this && pUnit->canPromote((PromotionTypes)kUnitInfo.getLeaderPromotion(), getID()))
+		// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
+		if ((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->baseCombatStr() > 2) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20))
 		{
-			iNumUnits = 1;
+			if (pUnit && pUnit != this && pUnit->canPromote((PromotionTypes)kUnitInfo.getLeaderPromotion(), getID()))
+			{
+				iNumUnits = 1;
+			}
 		}
 	}
 	return iNumUnits;
@@ -7468,28 +7476,40 @@ int CvUnit::canGiveExperience(const CvPlot* pPlot) const
 		CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 		while(pUnitNode != NULL)
 		{
+			// Ramstormp, WtP, Generals and admirals only share experience with units in the army or the navy respectively - START
 			CvUnit* pUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = pPlot->nextUnitNode(pUnitNode);
-// Ramstormp, WtP, Generals and admirals only share experience with units in the army or the navy respectively - START
-			//if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny())
-			//{
-			//	++iNumUnits;
-			//}
-			if (((UnitClassTypes)getUnitClassType() == GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL")))
+			// WTP, adjustment ray, small improvement, let us read the UnitClassTypes only once
+			UnitClassTypes eLeaderUnitClassType = getUnitClassType();
+			// Navy Case with Great Admiral
+			if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL"))
 			{
-				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() > 20)// Ramstormp, PTSD, Promotions is a navy thing)
+				// not really happy about the >= 20 being hardcoded but for now it prevents e.g. Fishing Boat, which is good
+				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)
 				{
 					++iNumUnits;
 				}
 			}
-			else
+			// Army Case with Great General
+			else if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_GENERAL"))
 			{
-				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->baseCombatStr() > 2 && pUnit->getDomainType() == DOMAIN_LAND) // Ramstormp, PTSD, Promotions is an army thing
+				// not really happy about the > 2 being hardcoded but for now it prevents normal settlers which is good
+				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->baseCombatStr() > 2)
 				{
 					++iNumUnits;
 				}
 			}
-// Ramstormp - END
+			
+			// WTP, ray we keep this for safety in case something ever changes
+			// old default case if we ever have something else than a Great General Unitclass / Great Admiral Unitclass
+			else if (eLeaderUnitClassType != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") && eLeaderUnitClassType != GC.getDefineINT("UNITCLASS_GREAT_GENERAL"))
+			{
+				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny())
+				{
+					++iNumUnits;
+				}
+			}
+			// Ramstormp, WtP, Generals and admirals only share experience with units in the army or the navy respectively - END
 		}
 	}
 
@@ -7516,29 +7536,43 @@ bool CvUnit::giveExperience()
 			{
 				CvUnit* pUnit = ::getUnit(pUnitNode->m_data);
 				pUnitNode = pPlot->nextUnitNode(pUnitNode);
-// Ramstormp, WtP, Generals and admirals only share experience with units in the army or the navy respectively - START
-				//if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny())
-				//{
-				//	pUnit->changeExperience(i < iRemainder ? iMinExperiencePerUnit+1 : iMinExperiencePerUnit);
-				//	pUnit->testPromotionReady();
-				//}
-				if (((UnitClassTypes)getUnitClassType() == GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL")))
+				// Ramstormp, WtP, Generals and admirals only share experience with units in the army or the navy respectively - START
+				// Navy Case with Great Admiral
+
+				// WTP, adjustment ray, small improvement, let us read the UnitClassTypes only once
+				UnitClassTypes eLeaderUnitClassType = getUnitClassType();
+				if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL"))
 				{
-					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() > 20) // Ramstormp, PTSD, Promote your navy only
+					// not really happy about the >= 20 being hardcoded but for now it prevents e.g. Fishing Boat, which is good
+					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)
 					{
 						pUnit->changeExperience(i < iRemainder ? iMinExperiencePerUnit + 1 : iMinExperiencePerUnit);
 						pUnit->testPromotionReady();
 					}
 				}
-				else
+				// Army Case with Great General
+				else if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_GENERAL"))
 				{
-					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->baseCombatStr() > 2) // Ramstormp, PTSD, Promote your army only
+					// not really happy about the > 2 being hardcoded but for now it prevents normal settlers which is good
+					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->baseCombatStr() > 2)
 					{
 						pUnit->changeExperience(i < iRemainder ? iMinExperiencePerUnit + 1 : iMinExperiencePerUnit);
 						pUnit->testPromotionReady();
 					}
 				}
-// Ramstormp - END
+
+				// WTP, ray we keep this for safety in case something ever changes
+				// old default case if we ever have something else than a Great General Unitclass / Great Admiral Unitclass
+				else if (eLeaderUnitClassType != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") && eLeaderUnitClassType != GC.getDefineINT("UNITCLASS_GREAT_GENERAL"))
+				{
+					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny())
+					{
+						pUnit->changeExperience(i < iRemainder ? iMinExperiencePerUnit+1 : iMinExperiencePerUnit);
+						pUnit->testPromotionReady();
+					}
+				}
+
+				// Ramstormp, WtP, Generals and admirals only share experience with units in the army or the navy respectively - END
 				i++;
 			}
 
