@@ -9416,7 +9416,6 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 	if (pCity != NULL)
 	{
 		int iStored = pCity->getYieldStored(eYield);
-	
 		int iMaxCapacity = (eYield == YIELD_FOOD) ? pCity->growthThreshold() : pCity->getMaxYieldCapacity();
 
 		// WTP, ray, just to be save e.g. if getMaxYieldCapacity is really 0 - START
