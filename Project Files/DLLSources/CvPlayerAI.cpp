@@ -9435,29 +9435,21 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 			if (iSurplus > 0)
 			{
 				iValue = std::min(iSurplus, -iAmount);
-//VET BugFix - begin /
 
-				//int iMaxCapacity = (eYield == YIELD_FOOD) ? pCity->growthThreshold() : iMaxCapacity = pCity->getMaxYieldCapacity();
-				//FAssert(iMaxCapacity > 0);
-//VET BugFix - end /
-//VET NewCapacity - begin 4/8
+				// WTP; removed the vetiarvind "bugfix", because it was most likely actually causing the bug 
+				// (the code he commented out was also wrong but now it is correct again)
+				int iMaxCapacity = (eYield == YIELD_FOOD) ? pCity->growthThreshold() : pCity->getMaxYieldCapacity();
+				FAssert(iMaxCapacity > 0);
+
+//VET NewCapacity - begin 4/8			
 				if (GC.getNEW_CAPACITY())
 				{
 					iValue *= 50 + ((100 * iStored) / std::max(1, iMaxCapacity));
 					int iMax = iMaxCapacity * 9 / 10;
 					if (iTotalStored >= iMax)
-					{
-						// Ramstormp, Division by zero fix, not sure what is going on - START
-						if (iMax != 0)
-						{
-							iValue *= 125 + ((100 * iMax) / iMax);
-							iValue /= 100;
-						}
-						else
-						{
-							iValue *= 125;
-						}
-						// Ramstormp - END
+					{						
+						iValue *= 125 + ((100 * iMax) / iMax);
+						iValue /= 100;
 					}
 				}
 				else
