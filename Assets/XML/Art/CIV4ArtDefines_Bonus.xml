@@ -228,7 +228,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_PARROTS</Type>
-            <fScale>1.0</fScale>
+            <fScale>4.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Parrots/bird2.nif</NIF>
             <KFM/>
