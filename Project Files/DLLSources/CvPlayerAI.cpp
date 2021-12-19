@@ -9458,8 +9458,17 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 					int iMax = iMaxCapacity * 9 / 10;
 					if (iTotalStored >= iMax)
 					{
-						iValue *= 125 + ((100 * iMax) / iMax);
-						iValue /= 100;
+						// Ramstormp, Division by zero fix, not sure what is going on - START
+						if (iMax != 0)
+						{
+							iValue *= 125 + ((100 * iMax) / iMax);
+							iValue /= 100;
+						}
+						else
+						{
+							iValue *= 125;
+						}
+						// Ramstormp - END
 					}
 				}
 				else
