@@ -9438,7 +9438,7 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 
 				// WTP; removed the vetiarvind "bugfix", because it was most likely actually causing the bug 
 				// (the code he commented out was also wrong but now it is correct again)
-				int iMaxCapacity = (eYield == YIELD_FOOD) ? pCity->growthThreshold() : pCity->getMaxYieldCapacity();
+				iMaxCapacity = (eYield == YIELD_FOOD) ? pCity->growthThreshold() : pCity->getMaxYieldCapacity();
 				FAssert(iMaxCapacity > 0);
 
 //VET NewCapacity - begin 4/8			
@@ -9448,6 +9448,13 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 					int iMax = iMaxCapacity * 9 / 10;
 					if (iTotalStored >= iMax)
 					{						
+						// WTP, ray, just to be save e.g. if getMaxYieldCapacity is really 0 - START
+						if (iMax == 0)
+						{
+							iMax = 1;
+						}
+						// WTP, ray, just to be save e.g. if getMaxYieldCapacity is really 0 - END
+
 						iValue *= 125 + ((100 * iMax) / iMax);
 						iValue /= 100;
 					}
