@@ -9407,7 +9407,6 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 		int iStored = pCity->getYieldStored(eYield);
 	
 		int iMaxCapacity = (eYield == YIELD_FOOD) ? pCity->growthThreshold() : pCity->getMaxYieldCapacity();
-
 		// WTP, ray, just to be save e.g. if getMaxYieldCapacity is really 0 - START
 		if (iMaxCapacity == 0)
 		{
@@ -9444,24 +9443,19 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 			{
 				iValue = std::min(iSurplus, -iAmount);
 
-				// WTP; removed the vetiarvind "bugfix", because it was most likely actually causing the bug 
-				// (the code he commented out was also wrong but now it is correct again)
-				iMaxCapacity = (eYield == YIELD_FOOD) ? pCity->growthThreshold() : pCity->getMaxYieldCapacity();
-				FAssert(iMaxCapacity > 0);
-
-				// WTP, ray, just to be save e.g. if getMaxYieldCapacity is really 0 - START
-				if (iMaxCapacity == 0)
-				{
-					iMaxCapacity = 300;
-				}
-				// WTP, ray, just to be save e.g. if getMaxYieldCapacity is really 0 - END
-
-
 //VET NewCapacity - begin 4/8
 				if (GC.getNEW_CAPACITY())
 				{
 					iValue *= 50 + ((100 * iStored) / std::max(1, iMaxCapacity));
 					int iMax = iMaxCapacity * 9 / 10;
+
+					// WTP, ray, even if it should never happen, let us prevent iMax being 0 if iMaxCapacity for some reason is 1 above - START
+					if (iMax == 0)
+					{
+						iMax = 270;
+					}
+					// WTP, ray, even if it should never happen, let us prevent iMax being 0 if iMaxCapacity for some reason is 1 above - END
+
 					if (iTotalStored >= iMax)
 					{
 						iValue *= 125 + ((100 * iMax) / iMax);
@@ -9499,6 +9493,14 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 			if (GC.getNEW_CAPACITY())
 			{
 				int iMax = iMaxCapacity * 9 / 10;
+
+				// WTP, ray, even if it should never happen, let us prevent iMax being 0 if iMaxCapacity for some reason is 1 above - START
+				if (iMax == 0)
+				{
+					iMax = 270;
+				}
+				// WTP, ray, even if it should never happen, let us prevent iMax being 0 if iMaxCapacity for some reason is 1 above - END
+
 				if (iTotalStored > iMax)
 				{
 					iValue *= 10;
