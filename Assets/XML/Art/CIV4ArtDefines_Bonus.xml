@@ -223,7 +223,7 @@
             <KFM>Art/Terrain/Resources/Pig/Pig.kfm</KFM>
             <Button>Art/interface/buttons/Guinea_Pig.dds</Button>
             <FontButtonIndex>58</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -234,7 +234,7 @@
             <KFM/>
             <Button>Art/Interface/Buttons/Parrots.dds</Button>
             <FontButtonIndex>57</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -245,7 +245,7 @@
             <KFM/>
             <Button>Art/Interface/Buttons/toucan.dds</Button>
             <FontButtonIndex>74</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -256,7 +256,7 @@
             <KFM>Art/Terrain/Resources/Pig_NO_SOUND/Pig_NO_SOUND.kfm</KFM>
             <Button>Art/Interface/Buttons/capybara.dds</Button>
             <FontButtonIndex>62</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -267,7 +267,7 @@
             <KFM>Art/Terrain/Resources/Pig_NO_SOUND/Pig_NO_SOUND.kfm</KFM>
             <Button>Art/Interface/Buttons/tapir.dds</Button>
             <FontButtonIndex>61</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -278,7 +278,7 @@
             <KFM>Art/Terrain/Resources/Fur/Fur.kfm</KFM>
             <Button>Art/Interface/Buttons/Rabbits.dds</Button>
             <FontButtonIndex>1</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -289,7 +289,7 @@
             <KFM>Art/Terrain/Resources/Deer/Deer.kfm</KFM>
             <Button>Art/Interface/Buttons/caribou.dds</Button>
             <FontButtonIndex>5</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -300,7 +300,7 @@
             <KFM>Art/Terrain/Resources/Deer/Deer.kfm</KFM>
             <Button>Art/Interface/Buttons/moose.dds</Button>
             <FontButtonIndex>80</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -311,7 +311,7 @@
             <KFM>Art/Terrain/Resources/Deer/Deer.kfm</KFM>
             <Button>Art/Interface/Buttons/big_horn_sheep.dds</Button>
             <FontButtonIndex>88</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -322,7 +322,7 @@
             <KFM>Art/Terrain/Resources/Horse/Horse.kfm</KFM>
             <Button>Art/Interface/Buttons/Goat.dds</Button>
             <FontButtonIndex>89</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -333,7 +333,7 @@
             <KFM>Art/Terrain/Resources/Cow/Cow.kfm</KFM>
             <Button>Art/Interface/Buttons/muskox.dds</Button>
             <FontButtonIndex>90</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -355,7 +355,7 @@
             <KFM>Art/Terrain/Resources/Sheep_NO_SOUND/Sheep_NO_SOUND.kfm</KFM>
             <Button>Art/Interface/Buttons/booby.dds</Button>
             <FontButtonIndex>81</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
        <BonusArtInfo>
@@ -366,7 +366,7 @@
             <KFM/>
             <Button>Art/Interface/Buttons/gull.dds</Button>
             <FontButtonIndex>84</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -377,7 +377,7 @@
             <KFM>Art/Terrain/Resources/Sheep_NO_SOUND/Sheep_NO_SOUND.kfm</KFM>
             <Button>Art/Interface/Buttons/duck.dds</Button>
             <FontButtonIndex>82</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -388,7 +388,7 @@
             <KFM>Art/Terrain/Resources/Sheep_NO_SOUND/Sheep_NO_SOUND.kfm</KFM>
             <Button>Art/Interface/Buttons/loon.dds</Button>
             <FontButtonIndex>86</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -399,7 +399,7 @@
             <KFM>Art/Terrain/Resources/Sheep_NO_SOUND/Sheep_NO_SOUND.kfm</KFM>
             <Button>Art/Interface/Buttons/Canada_Goose.dds</Button>
             <FontButtonIndex>83</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -718,7 +718,7 @@
             <KFM>Art/Terrain/Resources/Sea_Walrus/Sea_Lions.kfm</KFM>
             <Button>Art/Interface/Buttons/walrus.dds</Button>
             <FontButtonIndex>34</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
@@ -729,7 +729,7 @@
             <KFM>Art/Terrain/Resources/Sheep_NO_SOUND/Sheep_NO_SOUND.kfm</KFM>
             <Button>Art/Interface/Buttons/penguin.dds</Button>
             <FontButtonIndex>30</FontButtonIndex>
-            <bShadowCastor>0</bShadowCastor>
+            <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
