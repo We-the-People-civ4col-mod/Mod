@@ -3384,12 +3384,13 @@ class CvMainInterface:
 		if ((CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_MINIMAP_ONLY)):
 			if (CyInterface().isScoresVisible() and not CyInterface().isCityScreenUp() and not CyEngine().isGlobeviewUp() ):
 
+				iCount = 8
+				iBtnHeight = 22
+				iWidth = int((25 * xResolution) / 100)
+				yCoord = yResolution - SADDLE_HEIGHT * 14/16 - self.SCORE_TEXT_BOTTOM_MARGIN_SMALL
+
 				# Scrollable Scoreboard
 				if (not pHeadSelectedCity):
-					iCount = 8
-					iBtnHeight = 22
-					iWidth = int((25 * xResolution) / 100)
-					yCoord = yResolution - SADDLE_HEIGHT * 14/16 - self.SCORE_TEXT_BOTTOM_MARGIN_SMALL
 					screen.addTableControlGFC("ScoreBackground", 1, xResolution - self.SCORE_BACKGROUND_SIDE_MARGIN/2 - iWidth, yCoord - (iBtnHeight * (iCount - 1)), iWidth, (iBtnHeight * (iCount - 1)), False, False, 0, 0, TableStyles.TABLE_STYLE_STANDARD)
 					screen.enableSelect("ScoreBackground", False)
 					screen.setTableColumnHeader("ScoreBackground", 0, "", iWidth - 10)
