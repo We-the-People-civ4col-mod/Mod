@@ -2656,6 +2656,14 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 	GET_TEAM(getTeam()).changeBuildingClassCount((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), iChange);
 	GET_PLAYER(getOwnerINLINE()).changeBuildingClassCount((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), iChange);
 	setLayoutDirty(true);
+
+	// WTP, ray, new Harbour System - START
+	int iMaxHarbourSpaceProvidedByBuilding = GC.getBuildingInfo(eBuilding).getMaxHarbourSpaceProvided();
+	if (iMaxHarbourSpaceProvidedByBuilding != 0 && iMaxHarbourSpaceProvidedByBuilding > getCityHarbourSpace())
+	{
+		setCityHarbourSpace(iMaxHarbourSpaceProvidedByBuilding);
+	}
+	// WTP, ray, new Harbour System - END
 }
 
 HandicapTypes CvCity::getHandicapType() const
@@ -2755,7 +2763,19 @@ int CvCity::foodDifference() const
 
 int CvCity::growthThreshold() const
 {
-	return (GET_PLAYER(getOwnerINLINE()).getGrowthThreshold(getPopulation()) * (100 - getCityHealth() - getCityHappiness() + getCityUnHappiness()) / 100); // R&R, ray, Health // WTP, ray, Happiness - START
+	// R&R, ray, Health
+	// WTP, ray, Happiness - START
+	int iHealthModifier = getCityHealth();
+	int iCityModifer = getCityHappiness() - getCityUnHappiness();
+	int iTotalModifier = iHealthModifier + iCityModifer;
+
+	// WTP, ray, for safety
+	if (iTotalModifier > 50)
+	{
+		iTotalModifier = 75;
+	}
+
+	return ((GET_PLAYER(getOwnerINLINE()).getGrowthThreshold(getPopulation()) * (100 - iTotalModifier)) / 100);
 }
 
 int CvCity::productionLeft() const
@@ -3465,7 +3485,6 @@ int CvCity::getBuildingDefense() const
 	return m_iBuildingDefense;
 }
 
-
 void CvCity::changeBuildingDefense(int iChange)
 {
 	if (iChange != 0)
@@ -3570,7 +3589,10 @@ bool CvCity::isBombardable(const CvUnit* pUnit) const
 
 int CvCity::getTotalDefense() const
 {
-	return (getBuildingDefense() + GET_PLAYER(getOwnerINLINE()).getCityDefenseModifier());
+	// WTP, ray, Improvements give Bonus to their City - START
+	// return (getBuildingDefense() + GET_PLAYER(getOwnerINLINE()).getCityDefenseModifier());
+	return (getBuildingDefense() + GET_PLAYER(getOwnerINLINE()).getCityDefenseModifier() + getFortDefenseBonusForCity());
+	// WTP, ray, Improvements give Bonus to their City - END
 }
 
 
@@ -3979,7 +4001,8 @@ void CvCity::updateCultureLevel()
 
 	CultureLevelTypes eCultureLevel = ((CultureLevelTypes)0);
 
-	//if (!isOccupation()) // R&R mod, vetiarvind, bug fix for units "disappearing" during disorder
+	// WTP, ray, removed bad bugfix try of vetiarvind which actually fixed nothing and caused a new bug
+	if (!isOccupation())
 	{
 		for (int iI = (GC.getNumCultureLevelInfos() - 1); iI > 0; iI--)
 		{
@@ -4238,6 +4261,30 @@ int CvCity::getBaseYieldRateModifier(YieldTypes eIndex, int iExtra) const
 	}
 
 	iModifier += iExtra;
+
+	// WTP, ray, Improvements give Bonus to their City - START
+	if (eIndex == YIELD_CROSSES)
+	{
+		iModifier += getMonasteryCrossBonusForCity();
+	}
+	// WTP, ray, Improvements give Bonus to their City - END
+
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	if (eIndex == YIELD_FOOD)
+	{
+		iModifier += getImprovementFoodModifierForCity();
+	}
+
+	if (eIndex == YIELD_HAMMERS)
+	{
+		iModifier += getImprovementHammersModifierForCity();
+	}
+
+	if (eIndex == YIELD_TOOLS)
+	{
+		iModifier += getImprovementToolsModifierForCity();
+	}
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - END
 
 	// note: player->invalidateYieldRankCache() must be called for anything that is checked here
 	// so if any extra checked things are added here, the cache needs to be invalidated
@@ -9348,7 +9395,6 @@ int CvCity::getCityHealthChangeFromRessourcesInCityRadius() const
 
 	return iCityHealthChangeFromRessourcesInCityRadius;
 }
-
 // WTP, ray, Health Overhaul - END
 
 int CvCity::getCityHealthChange() const
@@ -9402,8 +9448,161 @@ void CvCity::doCityHealth()
 // R&R, ray, Health - END
 
 
-// WTP, ray, Happiness - START
+// WTP, ray, Improvements give Bonus to their City - START
+int CvCity::getMonasteryCrossBonusForCity() const
+{
+	//not necessary for Natives, saves performance
+	if (isNative())
+	{
+		return 0;
+	}
 
+	int iMonsasteryCrossBonus = 0;
+	int iMonsasteryCrossBonusModifier = GC.getDefineINT("MONASTERY_CROSSES_MODIFIER_FOR_CITY");
+	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
+	{
+		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
+		// if it has a Monastery and a Missionary in it
+		if(pLoopPlot->isMonastery() && (pLoopPlot->getMonasteryMissionary() != NULL))
+		{
+			// we double if it is second level improvement, which we know if it has no more upgrade
+			if (GC.getImprovementInfo(pLoopPlot->getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT)
+			{
+				iMonsasteryCrossBonusModifier = iMonsasteryCrossBonusModifier * 2;
+			}
+			// we give the Bonus only if also worked by a worker inside the City
+			if (isUnitWorkingPlot(pLoopPlot))
+			{
+				iMonsasteryCrossBonus += iMonsasteryCrossBonusModifier;
+			}
+		}
+	}
+	return iMonsasteryCrossBonus;
+}
+
+int CvCity::getFortDefenseBonusForCity() const
+{
+	//not necessary for Natives, saves performance
+	if (isNative())
+	{
+		return 0;
+	}
+
+	int iFortDefenseBonus = 0;
+	int iFortDefenseBonusModifier = GC.getDefineINT("FORT_DEFENSE_MODIFIER_FOR_CITY");
+	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
+	{
+		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
+		// if it has a Fort that is protected
+		if(pLoopPlot->isFort() && (pLoopPlot->getFortDefender() != NULL))
+		{
+			// we double if it is second level improvement, which we know if it has no more upgrade
+			if (GC.getImprovementInfo(pLoopPlot->getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT)
+			{
+				iFortDefenseBonusModifier = iFortDefenseBonusModifier * 2;
+			}
+			// we give the Bonus only if also worked by a worker inside the City
+			if (isUnitWorkingPlot(pLoopPlot))
+			{
+				iFortDefenseBonus += iFortDefenseBonusModifier;
+			}
+		}
+	}
+	return iFortDefenseBonus;
+}
+// WTP, ray, Improvements give Bonus to their City - END
+
+
+// WTP, ray, Improvements give Bonus to their City - PART 2 - START
+int CvCity::getImprovementFoodModifierForCity() const
+{
+	//not necessary for Natives, saves performance
+	if (isNative())
+	{
+		return 0;
+	}
+
+	int FoodModifierForCity = 0;
+	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
+	{
+		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
+		ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
+		if(eImprovement != NO_IMPROVEMENT)
+		{
+			CvImprovementInfo& info = GC.getImprovementInfo(eImprovement);
+			if (info.getFoodModifierForCity() > 0)
+			{
+				// we give the Bonus only if also worked by a worker inside the City
+				if (isUnitWorkingPlot(pLoopPlot))
+				{
+					FoodModifierForCity += info.getFoodModifierForCity();
+				}
+			}
+		}
+	}
+	return FoodModifierForCity;
+}
+
+int CvCity::getImprovementHammersModifierForCity() const
+{
+	//not necessary for Natives, saves performance
+	if (isNative())
+	{
+		return 0;
+	}
+
+	int HammersModifierForCity = 0;
+	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
+	{
+		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
+		ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
+		if(eImprovement != NO_IMPROVEMENT)
+		{
+			CvImprovementInfo& info = GC.getImprovementInfo(eImprovement);
+			if (info.getHammersModifierForCity() > 0)
+			{
+				// we give the Bonus only if also worked by a worker inside the City
+				if (isUnitWorkingPlot(pLoopPlot))
+				{
+					HammersModifierForCity += info.getHammersModifierForCity();
+				}
+			}
+		}
+	}
+	return HammersModifierForCity;
+}
+
+int CvCity::getImprovementToolsModifierForCity() const
+{
+	//not necessary for Natives, saves performance
+	if (isNative())
+	{
+		return 0;
+	}
+
+	int ToolsModifierForCity = 0;
+	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
+	{
+		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
+		ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
+		if(eImprovement != NO_IMPROVEMENT)
+		{
+			CvImprovementInfo& info = GC.getImprovementInfo(eImprovement);
+			if (info.getToolsModifierForCity() > 0)
+			{
+				// we give the Bonus only if also worked by a worker inside the City
+				if (isUnitWorkingPlot(pLoopPlot))
+				{
+					ToolsModifierForCity += info.getToolsModifierForCity();
+				}
+			}
+		}
+	}
+	return ToolsModifierForCity;
+}
+// WTP, ray, Improvements give Bonus to their City - PART 2 - END
+
+// WTP, ray, Happiness - START
 void CvCity::doCityHappiness()
 {	
 	// we do not do this for every tiny village
@@ -9529,6 +9728,68 @@ void CvCity::doCityUnHappiness()
 
 	return;
 }
+
+// WTP, ray, new Harbour System - START
+int CvCity::getCityHarbourSpace() const
+{
+	int iValueToReturn = m_iCityHarbourSpace;
+	if (!plot()->isCoastalLand())
+	{
+		return 0;
+	}
+
+	else
+	{
+		int iMinHarbourSpace = GC.getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS();
+		// even without Harbour Coastal Villages should return base Harbour Space
+		if (iValueToReturn < iMinHarbourSpace)
+		{
+			iValueToReturn = iMinHarbourSpace;
+		}
+	}
+
+	return iValueToReturn;
+}
+
+void CvCity::setCityHarbourSpace(int iValue)
+{
+	if (iValue < 0)
+	{
+		return;
+	}
+
+	m_iCityHarbourSpace = iValue;
+}
+
+int CvCity::getCityHarbourSpaceUsed() const
+{
+	int iCityHarbourSpaceUsed = 0;
+	CvPlot* pPlot = plot();
+	for (int i = 0; i < pPlot->getNumUnits(); ++i)
+	{
+		CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);
+		if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_SEA)
+		{
+			iCityHarbourSpaceUsed += pLoopUnit->getUnitInfo().getHarbourSpaceNeeded();
+		}
+	}
+
+	return iCityHarbourSpaceUsed;
+}
+
+// a small helper function
+bool CvCity::bShouldShowCityHarbourSystem() const
+{
+	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && plot()->isCoastalLand() && isHuman())
+	{
+		return true;
+	}
+
+	return false;
+}
+
+// WTP, ray, new Harbour System - END
+
 
 // basic set and get methods
 int CvCity::getCityHappiness() const
@@ -12216,7 +12477,6 @@ bool CvCity::isCustomHouseNeverSell(YieldTypes eYield) const
 // WTP, ray, LbD Slaves Revolt and Free - START - adjusted to also have DefaultAI
 void CvCity::createFleeingUnit(UnitTypes eUnit, bool bDefautAI)
 {
-
 	if (GC.getGameINLINE().getBarbarianPlayer() == NO_PLAYER)
     {
         return;
@@ -12268,29 +12528,24 @@ void CvCity::createFleeingUnit(UnitTypes eUnit, bool bDefautAI)
 void CvCity::doEntertainmentBuildings()
 {
 	int iCulturePerTurn = getCultureRate();
-	SpecialBuildingTypes eSpecialBuilding = (SpecialBuildingTypes) GC.getDefineINT("SPECIALBUILDING_TAVERN");
-
 	int factorFromBuildingLevel = 0;
 	BuildingTypes highestLevelEntertainmentBuilding = NO_BUILDING;
 
-	if (eSpecialBuilding != NO_SPECIALBUILDING)
+	for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
 	{
-		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
+		BuildingTypes eBuilding = (BuildingTypes) i;
+		if (isHasBuilding(eBuilding))
 		{
-			BuildingTypes eBuilding = (BuildingTypes) i;
 			CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
-			if (kBuilding.getSpecialBuildingType() == eSpecialBuilding)
-			{
-				if (isHasBuilding(eBuilding))
-				{
-					factorFromBuildingLevel = kBuilding.getEntertainmentGoldModifier();
-					highestLevelEntertainmentBuilding = eBuilding;
-				}
+			if (kBuilding.getEntertainmentGoldModifier() > factorFromBuildingLevel)
+			{	
+				factorFromBuildingLevel = kBuilding.getEntertainmentGoldModifier();
+				highestLevelEntertainmentBuilding = eBuilding;
 			}
 		}
 	}
 
-	int iGoldthroughCulture = iCulturePerTurn * factorFromBuildingLevel; // now as defined in XML
+	int iGoldthroughCulture = iCulturePerTurn * factorFromBuildingLevel / 100; // now as defined in XML
 	iGoldthroughCulture = iGoldthroughCulture * (100 + getCityHappiness() - getCityUnHappiness()) / 100; // WTP, ray, Happiness - START
 
 	if (highestLevelEntertainmentBuilding != NO_BUILDING && iGoldthroughCulture > 0)
@@ -12301,6 +12556,165 @@ void CvCity::doEntertainmentBuildings()
 	}
 }
 // R&R, ray, Entertainment Buildings - END
+
+
+// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
+void CvCity::spawnOwnPlayerUnitOnPlotOfCity(int /*UnitTypes*/ iIndex) const
+{
+	CvPlayer& onwPlayer = GET_PLAYER(getOwnerINLINE());
+	UnitTypes eUnitToSpawn = (UnitTypes) iIndex;
+	CvUnit* eOwnUnitToSpawn = onwPlayer.initUnit(eUnitToSpawn, GC.getUnitInfo(eUnitToSpawn).getDefaultProfession(), getX_INLINE(), getY_INLINE(), NO_UNITAI);
+	return;
+}
+
+// careful with this, will take over City for Barbarians
+void CvCity::spawnBarbarianUnitOnPlotOfCity(int /*UnitTypes*/ iIndex) const
+{
+	PlayerTypes eBarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
+	if (eBarbarianPlayerType == NO_PLAYER)
+    {
+        return;
+    }
+
+	CvPlayer& barbarianPlayer = GET_PLAYER(eBarbarianPlayerType);
+	UnitTypes eUnitToSpawn = (UnitTypes) iIndex;
+	CvUnit* eBarbarianUnitToSpawn = barbarianPlayer.initUnit(eUnitToSpawn, GC.getUnitInfo(eUnitToSpawn).getDefaultProfession(), getX_INLINE(), getY_INLINE(), NO_UNITAI);
+	return;
+}
+
+void CvCity::spawnOwnPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const
+{
+	CvPlayer& onwPlayer = GET_PLAYER(getOwnerINLINE());
+	UnitTypes eUnitToSpawn = (UnitTypes) iIndex;
+
+	// we use this as last fallback if we do not find an adjacent plot below
+	CvPlot* pPlotToSpawn = plot();
+
+	// try to find a better adjacent plot
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	{
+		CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		if (pAdjacentPlot != NULL)
+		{
+			// if the adjacent Plot is valid and there are no other Units, prevent Cities for safety reasons
+			if (pAdjacentPlot->isValidDomainForAction(eUnitToSpawn) && pAdjacentPlot->getNumUnits() == 0 && !pAdjacentPlot->isCity())
+			{
+				// we found a proper fallback solution and use it as spawning plot
+				pPlotToSpawn = pAdjacentPlot;
+				break;
+			}
+		}
+	}
+
+	// now we spawn and are done
+	CvUnit* eOwnUnitToSpawn = onwPlayer.initUnit(eUnitToSpawn, GC.getUnitInfo(eUnitToSpawn).getDefaultProfession(), pPlotToSpawn->getX_INLINE(), pPlotToSpawn->getY_INLINE(), NO_UNITAI);
+	return;
+}
+
+void CvCity::spawnBarbarianUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const
+{
+	PlayerTypes eBarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
+	if (eBarbarianPlayerType == NO_PLAYER)
+    {
+        return;
+    }
+
+	CvPlayer& barbarianPlayer = GET_PLAYER(eBarbarianPlayerType);
+	UnitTypes eUnitToSpawn = (UnitTypes) iIndex;
+
+	// we use this as last fallback belok
+	CvPlot* pPlotToSpawn = plot();
+
+	// try to find a better adjacent plot
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	{
+		CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		if (pAdjacentPlot != NULL)
+		{
+			// if the adjacent Plot is valid and there are no other Units, prevent Cities for safety reasons
+			if (pAdjacentPlot->isValidDomainForAction(eUnitToSpawn) && pAdjacentPlot->getNumUnits() == 0 && !pAdjacentPlot->isCity())
+			{
+				// we found a proper fallback solution and use it as spawning plot
+				pPlotToSpawn = pAdjacentPlot;
+				break;
+			}
+		}
+	}
+
+	// now we spawn and are done
+	CvUnit* eBarbarianUnitToSpawn = barbarianPlayer.initUnit(eUnitToSpawn, GC.getUnitInfo(eUnitToSpawn).getDefaultProfession(), pPlotToSpawn->getX_INLINE(), pPlotToSpawn->getY_INLINE(), NO_UNITAI);
+	return;
+}
+
+bool CvCity::isPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const
+{
+	PlayerTypes eOwnPlayerType = getOwnerINLINE();
+	UnitTypes eUnit = (UnitTypes) iIndex;
+
+	// we check the adjacent Plots
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	{
+		CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		if (pAdjacentPlot != NULL)
+		{
+			// if the adjacent Plot is valid and there are no other Units, prevent Cities for safety reasons
+			CLLNode<IDInfo>* pUnitNode = pAdjacentPlot->headUnitNode();
+			while (pUnitNode)
+			{
+				CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+				pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+				// check for owner and UnitType
+				if (pLoopUnit->getOwnerINLINE() == eOwnPlayerType && pLoopUnit->getUnitType() == eUnit)
+				{
+					// we found a unit of our player;
+					return true;
+				}
+			}
+		}
+	}
+
+	// nothing found, return false
+	return false;
+}
+
+bool CvCity::isBarbarianUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const
+{
+	PlayerTypes eBarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
+	if (eBarbarianPlayerType == NO_PLAYER)
+    {
+        return false;
+    }
+
+	UnitTypes eUnit = (UnitTypes) iIndex;
+
+	// we check the adjacent Plots
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	{
+		CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		if (pAdjacentPlot != NULL)
+		{
+			// if the adjacent Plot is valid and there are no other Units, prevent Cities for safety reasons
+			CLLNode<IDInfo>* pUnitNode = pAdjacentPlot->headUnitNode();
+			while (pUnitNode)
+			{
+				CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+				pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+				// check for owner and UnitType
+				if (pLoopUnit->getOwnerINLINE() == eBarbarianPlayerType && pLoopUnit->getUnitType() == eUnit)
+				{
+					// we found a unit of our player;
+					return true;
+				}
+			}
+		}
+	}
+
+	// nothing found, return false
+	return false;
+}
+// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
 
 void CvCity::setPreferredYieldAtCityPlot(YieldTypes eYield)
 {

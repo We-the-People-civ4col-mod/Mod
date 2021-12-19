@@ -5135,6 +5135,9 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 			return false;
 		}
 
+		// WTP, ray, let us remove it - why should MP games play on different rules as SP games?
+		// it was perceived as a bug and I really feel it is overexagerrated anyways
+		/*
 		if ((GC.getUnitInfo(eUnit).getCombat() > 0) && !(GC.getUnitInfo(eUnit).isOnlyDefensive()))
 		{
 			if (GC.getGameINLINE().isGameMultiPlayer())
@@ -5142,6 +5145,7 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 				return false;
 			}
 		}
+		*/
 
 		if (GC.getGameINLINE().isOption(GAMEOPTION_ONE_CITY_CHALLENGE) && isHuman())
 		{
@@ -11294,7 +11298,6 @@ void CvPlayer::doCrosses()
 	// WTP, ray, Happiness - START
 	int iHappinessRate = getHappinessRate();
 	int iUnHappinessRate = getUnHappinessRate();
-
 	iCrossRate = (iCrossRate * (100 + iHappinessRate - iUnHappinessRate)) / 100; // this is percentage modifcation
 	// WTP, ray, Happiness - EMD
 
@@ -21555,6 +21558,12 @@ int CvPlayer::AI_getAttitudeValue(PlayerTypes ePlayer)
 // R&R, ray, Pirates - START
 void CvPlayer::createEnemyPirates()
 {
+	// WTP, ray, for safety 
+	if (GC.getGameINLINE().getBarbarianPlayer() == NO_PLAYER)
+	{
+		return;
+	}
+
 	CvPlayer& barbarianPlayer = GET_PLAYER(GC.getGameINLINE().getBarbarianPlayer());
 
 	// we never want to have too many of these
@@ -21857,7 +21866,24 @@ void CvPlayer::checkForMilitiaOrUnrest()
 	{
 		if (pLoopCity->getPopulation() >= minCitySize && !pLoopCity->isDisorder()) // check if city big enough and not in disorder
 		{
-			if(pLoopCity->plot()->getNumDefenders(getID()) == 0) // is this city undefended
+			// WTP, ray, now checking only for armed Units - START
+			// read this in the mod of Ramstormp, had fogotten to check that defenders need to be armed
+			// we count now actually only the units that can fight
+
+			bool bCityDefendersFound = false;
+			CvPlot* pPlot = pLoopCity->plot();
+			for (int i = 0; i < pPlot->getNumUnits(); ++i)
+			{
+				CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);
+				// we check for a Land Unit that can fight on that plot and is from our own Player
+				if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack() && pLoopUnit->getOwnerINLINE() == pLoopCity->getOwnerINLINE())
+				{
+					bCityDefendersFound = true;
+					break;
+				}
+			}
+
+			if(bCityDefendersFound == false) // is this city undefended
 			{
 				int foodQty = gamespeedMod;
 

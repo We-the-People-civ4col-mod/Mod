@@ -668,12 +668,8 @@ public:
 	DllExport CvUnitInfo();
 	virtual ~CvUnitInfo();
 
-	// PatchMod: Berth size START
-protected:
-	int m_iBerthSize;
-public:
-	int getBerthSize() const;
-	// PatchMod: Berth size END
+	int getBerthSize() const; // PatchMod: Berth size START
+	int getHarbourSpaceNeeded() const; //// WTP, ray, new Harbour System - START
 
 /** NBMOD EDU **/
     int NBMOD_GetTeachLevel() const;
@@ -864,6 +860,9 @@ public:
 
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
+
+	int m_iBerthSize; // PatchMod: Berth size START
+	int m_iHarbourSpaceNeeded; // WTP, ray, new Harbour System - START
 
     /** NBMOD EDU **/
     int m_iTeachLevel;
@@ -1287,7 +1286,8 @@ public:
 	int getMilitaryProductionModifier() const;
 	int getAssetValue() const;
 	int getPowerValue() const;
-	int getYieldStorage() const;
+	int getYieldStorage() const; 
+	int getMaxHarbourSpaceProvided() const; // WTP, ray, new Harbour System - START
 	int getSpecialBuildingType() const;
 	inline int getIndexOf_NextBuildingType_In_SpecialBuilding() const		{ return m_iIndexOf_NextBuildingType_In_SpecialBuilding; }
 	int getConquestProbability() const;
@@ -1392,6 +1392,7 @@ protected:
 	int m_iAssetValue;
 	int m_iPowerValue;
 	int m_iYieldStorage;
+	int m_iMaxHarbourSpaceProvided; // WTP, ray, new Harbour System - START
 	int m_iSpecialBuildingType;
 	int m_iIndexOf_NextBuildingType_In_SpecialBuilding;
 	int m_iConquestProbability;
@@ -2323,6 +2324,9 @@ public:
 	int getFeatureGrowthProbability() const;
 	int getUpgradeTime() const;
 	int getDefenseModifier() const;
+	int getFoodModifierForCity() const; // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	int getHammersModifierForCity() const; // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	int getToolsModifierForCity() const; // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	int getPillageGold() const;
 	int getImprovementPillage() const;
 	void setImprovementPillage(int i);
@@ -2341,6 +2345,8 @@ public:
 	bool isActsAsCity() const;
 	bool isFort() const; // R&R, ray, Monasteries and Forts
 	bool isMonastery() const; // R&R, ray, Monasteries and Forts
+	bool isCanal() const; // WTP, ray, Canal
+	bool isNotAllowedNextToSameAsItself() const; // WTP, ray, Not allowed next to itself - START
 	bool isHillsMakesValid() const;
 	bool isRiverSideMakesValid() const;
 	bool isRequiresFlatlands() const;
@@ -2395,6 +2401,9 @@ protected:
 	int m_iFeatureGrowthProbability;
 	int m_iUpgradeTime;
 	int m_iDefenseModifier;
+	int m_iFoodModifierForCity;  // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	int m_iHammersModifierForCity;  // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	int m_iToolsModifierForCity;  // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	int m_iPillageGold;
 	int m_iImprovementPillage;
 	int m_iImprovementUpgrade;
@@ -2411,6 +2420,8 @@ protected:
 	bool m_bActsAsCity;
 	bool m_bFort; // R&R, ray, Monasteries and Forts
 	bool m_bMonastery; // R&R, ray, Monasteries and Forts
+	bool m_bCanal; // WTP, ray, Canal - START
+	bool m_bNotAllowedNextToSameAsItself; // WTP, ray, Not allowed next to itself - START
 	bool m_bHillsMakesValid;
 	bool m_bRiverSideMakesValid;
 	bool m_bRequiresFlatlands;

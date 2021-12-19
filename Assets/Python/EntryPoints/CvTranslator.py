@@ -35,6 +35,8 @@ IconMap = {
 			"[ICON_POWER]" : FontSymbols.POWER_CHAR,
 			"[ICON_GOLD]" : FontSymbols.GOLD_CHAR,
 			"[ICON_REBEL]" : FontSymbols.REBEL_CHAR,
+			"[ICON_ANCHOR]": FontSymbols.ANCHOR_CHAR,
+			"[ICON_NO_ANCHOR]": FontSymbols.NO_ANCHOR_CHAR,
 		 }
 
 

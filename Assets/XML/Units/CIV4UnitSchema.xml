@@ -369,6 +369,7 @@
 	<ElementType name="iCargo" content="textOnly" dt:type="int"/>
 	<ElementType name="iRequiredTransportSize" content="textOnly" dt:type="int"/>
 	<ElementType name="iBerthSize" content="textOnly" dt:type="int"/>
+	<ElementType name="iHarbourSpaceNeeded" content="textOnly" dt:type="int"/>
 	<ElementType name="iAsset" content="textOnly" dt:type="int"/>
 	<ElementType name="iPower" content="textOnly" dt:type="int"/>
 	<ElementType name="ArtDefineTag" content="textOnly"/>
@@ -539,6 +540,7 @@
 		<element type="iCargo"/>
 		<element type="iRequiredTransportSize"/>
 		<element type="iBerthSize" minOccurs="0"/>
+		<element type="iHarbourSpaceNeeded" minOccurs="0"/>
 		<element type="iAsset"/>
 		<element type="iPower"/>
 		<element type="iNativeLearnTime"/>

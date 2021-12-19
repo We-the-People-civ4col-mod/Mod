@@ -2273,7 +2273,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PREMIUM_COATS</Tag>
-        <English>Premium Coats</English>
+        <English>Luxury Coats</English>
         <French>
             <Text>Manteaux de qualité</Text>
             <Gender>Male</Gender>
@@ -2837,7 +2837,7 @@
         </German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_ROYAL_MAN_O_WAR</Tag>
+        <Tag>TXT_KEY_UNITCLASS_COLONIAL_MAN_O_WAR</Tag>
         <English>Man O' War: Men O' War</English>
         <German>
             <Text>Schlachtschiff:Schlachtschiffe</Text>
@@ -3056,7 +3056,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_STONE</Tag>
         <English>
-            <Text>Stone:Stones</Text>
+            <Text>Stone:Stone</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -3367,7 +3367,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_VALUABLE_WOOD</Tag>
-        <English>Valuable Wood</English>
+        <English>Exotic Wood</English>
         <French>Bois précieux</French>
         <German>
             <Text>Edelholz</Text>
@@ -3760,7 +3760,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_REVOLTING_SLAVE</Tag>
         <English>
-            <Text>Revolting African Slave:Revolting African Slaves</Text>
+            <Text>Rebelling African Slave:Rebelling African Slaves</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -3788,7 +3788,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_REVOLTING_NATIVE_SLAVE</Tag>
         <English>
-            <Text>Revolting Native Slave:Revolting Native Slaves</Text>
+            <Text>Rebelling Native Slave:Rebelling Native Slaves</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -3815,7 +3815,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_REVOLTING_CRIMINAL</Tag>
-        <English>Revolting Criminal:Revolting Criminals</English>
+        <English>Rebelling Criminal:Rebelling Criminals</English>
         <French>
             <Text>Bagnard revolté:Bagnards revoltés</Text>
             <Gender>Male</Gender>

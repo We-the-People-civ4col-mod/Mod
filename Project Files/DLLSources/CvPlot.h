@@ -184,6 +184,11 @@ public:
 	bool isMonastery() const;
 	// R&R, ray, Monasteries and Forts - END
 
+	//R&R mod, vetiarvind, super forts merge, refactor checks for activating monastery and forts - start
+	CvUnit* getFortDefender();
+	CvUnit* getMonasteryMissionary();
+	//R&R mod, vetiarvind, super forts merge, refactor checks for activating monastery and forts - end
+
 	bool isOccupation() const;
 	bool isBeingWorked() const;
 
@@ -593,10 +598,6 @@ protected:
 
 	void processArea(CvArea* pArea, int iChange);
 	void doImprovementUpgrade();
-	//R&R mod, vetiarvind, super forts merge, refactor checks for activating monastery and forts - start
-	CvUnit* getFortDefender();
-	CvUnit* getMonasteryMissionary();
-	//R&R mod, vetiarvind, super forts merge, refactor checks for activating monastery and forts - end
 	// R&R, ray, Monasteries and Forts - START	
 	void doFort();
 	void doMonastery();

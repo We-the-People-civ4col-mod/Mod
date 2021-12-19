@@ -5330,6 +5330,10 @@
                     <iUnitClassMod>10</iUnitClassMod>
                 </UnitClassAttackMod>
                 <UnitClassAttackMod>
+                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
+                    <iUnitClassMod>10</iUnitClassMod>
+                </UnitClassAttackMod>
+                <UnitClassAttackMod>
                     <UnitClassType>UNITCLASS_COLONIAL_MAN_O_WAR</UnitClassType>
                     <iUnitClassMod>10</iUnitClassMod>
                 </UnitClassAttackMod>

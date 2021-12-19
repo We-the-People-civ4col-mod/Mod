@@ -65,6 +65,46 @@
         <English>????</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BUILD_WINDMILL</Tag>
+        <English>Build a [LINK=IMPROVEMENT_WIND_MILL]windmill[\LINK]</English>
+        <German>[LINK=IMPROVEMENT_WIND_MILL]Windmühle[\LINK] bauen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_WINDMILL_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_IRONMILL</Tag>
+        <English>Build an [LINK=IMPROVEMENT_IRON_MILL]ironmill[\LINK]</English>
+        <German>[LINK=IMPROVEMENT_IRON_MILL]Eisenmühle[\LINK] bauen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_IRONMILL_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_SAWMILL</Tag>
+        <English>Build a [LINK=IMPROVEMENT_LUMBERMILL]sawmill[\LINK]</English>
+        <German>[LINK=IMPROVEMENT_LUMBERMILL]Sägewerk[\LINK] bauen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_SAWMILL_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_WINDMILL_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_CANAL</Tag>
+        <English>Build an [LINK=IMPROVEMENT_CANAL]canal[\LINK]</English>
+        <German>[LINK=IMPROVEMENT_CANAL]Kanal[\LINK] bauen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_CANAL_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILD_FORT</Tag>
         <English>Build a [LINK=IMPROVEMENT_FORT]fort[\LINK]</English>
         <French>Construire un [LINK=IMPROVEMENT_FORT]fort[\LINK]</French>
@@ -348,7 +388,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_RAFT_STATION_HELP</Tag>
-        <English>Allows to cross [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK]</English>
+        <English>Allows [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK] to be crossed </English>
         <German>Erlaubt die Überquerung eines [LINK=TERRAIN_LARGE_RIVERS]Großen Flusses[\LINK]</German>
     </TEXT>
     <TEXT>
@@ -363,7 +403,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_HUNTERS_STAGE</Tag>
-        <English>Build [LINK=IMPROVEMENT_HUNTERS_STAGE]hunters stage[\LINK]</English>
+        <English>Build [LINK=IMPROVEMENT_HUNTERS_STAGE]hunters' blind[\LINK]</English>
         <German>[LINK=IMPROVEMENT_HUNTERS_STAGE]Jagdpier[\LINK] bauen</German>
     </TEXT>
     <TEXT>
@@ -378,7 +418,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_SALINA_HELP</Tag>
-        <English>Yields raw salt from Coastal Terrain.</English>
+        <English>Yields raw salt from coastal terrain.</English>
         <German>Erbringt Salzerträge auf Küstengebiet</German>
     </TEXT>
     <TEXT>

@@ -2223,12 +2223,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROYAL_TROOP_GALLEON_PEDIA</Tag>
-        <English>Todo</English>
+        <English>[COLOR_UNIT_TEXT]Royal Troop Galleons[COLOR_REVERT] have six cargo slots, the most of any naval unit in the game, so they can transport more troops than the Man o' War, and can carry goods as well. [NEWLINE]Though they are no match for the biggest fighting ships they are stronger than normal [LINK=UNIT_GALLEON]galleons[\LINK]. They also have the ability to attack other units.[PARAGRAPH:1]For a comparison of all ships that are available, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
         <German>Todo</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROYAL_TROOP_GALLEON_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Royal Troop Galleons[COLOR_REVERT] are the main transport ships used by the [COLOR_HIGHLIGHT_TEXT]European Kings[COLOR_REVERT] to transport their troops but are also able to transport goods.[NEWLINE]They have six cargo slots, the most of any naval unit in the game except other galeons.[NEWLINE]They are stronger than normal [LINK=UNIT_GALLEON]galleons[\LINK] and also have the ability to attack other ships.[NEWLINE]They can put up a good fight against attacking colonial ship during [LINK=WAR_OF_INDEPENDENCE]war of independence[\LINK].[NEWLINE][COLOR_HIGHLIGHT_TEXT]Royal Troop Galleons[COLOR_REVERT] are only available to the European kings.</English>
+        <English>[COLOR_UNIT_TEXT]Royal Troop Galleons[COLOR_REVERT] are the main transport ships used by the [COLOR_HIGHLIGHT_TEXT]European kings[COLOR_REVERT] to transport their troops. They are also able to transport goods.[NEWLINE]They have six cargo slots, the most of any naval unit in the game except other galleons.[NEWLINE]Stronger than normal [LINK=UNIT_GALLEON]galleons[\LINK], they have the ability to attack other ships.[NEWLINE]They can put up a good fight against attacking colonial ships during the [LINK=WAR_OF_INDEPENDENCE]War of Independence[\LINK].[NEWLINE]Given the opportunity they can finish off damaged attackers.[NEWLINE][COLOR_HIGHLIGHT_TEXT]Royal Troop Galleons[COLOR_REVERT] are only available to the European kings, but on rare occasions they can be captured.</English>
         <German>[COLOR_UNIT_TEXT]Königliche Truppengaleonen[COLOR_REVERT] sind das primäre Transportschiff der [COLOR_HIGHLIGHT_TEXT]Europäischen Könige[COLOR_REVERT] um ihre Truppen zu transportieren, können aber auch Güter befördern.[NEWLINE]Sie haben 6 Frachträume und somit mehr als jedes andere Schiff, außer anderen Galleonen.[NEWLINE]Sie sind stärker als normale [LINK=UNIT_GALLEON]Galleonen[\LINK] und können andere Schiffe auch angreifen.[NEWLINE]Während des [LINK=WAR_OF_INDEPENDENCE]Unabhängigkeitskrieges[\LINK] können sie den Schiffen der Kolonien einen guten Kampf liefern.[NEWLINE][COLOR_HIGHLIGHT_TEXT]Königliche Truppengaleonen[COLOR_REVERT] stehen nur den Königen Europas zur Verfügung.</German>
     </TEXT>
     <TEXT>
@@ -6587,19 +6587,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FREED_SLAVE_STRATEGY</Tag>
-        <English>You can acquire [COLOR_UNIT_TEXT]freed slaves[COLOR_REVERT] only if [COLOR_UNIT_TEXT]African slaves[COLOR_REVERT] work long enough in a city and get granted their freedom for their loyal service.[NEWLINE]They're like [LINK=UNIT_CONVERTED_NATIVES]Converted Natives[\LINK].[NEWLINE]They will no longer try to flee.[NEWLINE]They are especially productive in the fields, but will accomplish less when put to work in a high education profession.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_SLAVES]Servants, Criminals and Slaves[\LINK].</English>
+        <English>You can acquire [COLOR_UNIT_TEXT]freed slaves[COLOR_REVERT] only if [COLOR_UNIT_TEXT]African slaves[COLOR_REVERT] work long enough in a city and are granted freedom for their loyal service.[NEWLINE]They're like [LINK=UNIT_CONVERTED_NATIVES]Converted Natives[\LINK].[NEWLINE]They will no longer try to flee.[NEWLINE]They are especially productive in the fields, but will accomplish less when put to work in a high education profession.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_SLAVES]Servants, Criminals and Slaves[\LINK].</English>
         <German>[COLOR_UNIT_TEXT]Befreite Sklaven[COLOR_REVERT] werden nur dadurch erlangt, dass [COLOR_UNIT_TEXT]Versklavte Afrikaner[COLOR_REVERT] lange Zeit loyal in Ihrem Beruf gearbeit haben, wodurch sie sich ihre Freiheit verdienten.[NEWLINE]Sie sind exzellente Feldarbeiter, ähnlich wie [LINK=UNIT_CONVERTED_NATIVES]Konvertierte Ureinwohner[\LINK], und werden nicht mehr davonlaufen.[PARAGRAPH:2]Für weitere Informationen siehe [LINK=CONCEPT_SLAVES]Schuldknechte, Kriminelle und Sklaven[\LINK].</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FREED_SLAVE_PEDIA</Tag>
-        <English>An estimated 12 million Africans arrived in the Americas from the 16th to the 19th centuries.[NEWLINE]Of these, an estimated 645,000 were brought to what is now the United States.[NEWLINE]The usual estimate is that about 15 per cent of slaves died during the voyage.[NEWLINE]Mortality rates were higher in Africa itself due to capturing and transporting local people to the ships.[NEWLINE]Approximately 6 million black Africans were killed in tribal wars.[NEWLINE]Only a few of them were granted freedom by their owners for loyal service until slavery was abolished by the Northern states under the government of Abraham Lincoln.</English>
+        <English>Roughly 12 million Africans arrived in the Americas from the 16th to the 19th centuries.[NEWLINE]Of these, an estimated 645,000 were brought to what is now the United States.[NEWLINE]About 15 per cent of slaves died during the voyage.[NEWLINE]n Africa itself mortality was high due to capturing and transporting local people to the ships.[NEWLINE]Approximately 6 million black Africans were killed in tribal wars.[NEWLINE]Only a few of them were granted freedom by their owners for loyal service. Finally slavery was abolished by the Northern states under the government of Abraham Lincoln. When the South was defeated in 1865 all slaves were officially freed.</English>
         <French>On estime à 12 millions le nombre d'africains arrivés aux Amériques entre le 16ème et le 19ème siècle. Parmi ceux-ci, environ 645 000 sont arrivés aux actuels Etats-Unis. On estime généralement à 15% le taux de mortalité des captifs pendant le voyage.</French>
         <German>Die Kolonisierung Amerikas vom 16. bis 19. Jahrhundert ging mit einer Massenversklavung von Afrikanern einher, die in allen Teilen des dünn besiedelten Doppelkontinents als billige Arbeitskräfte eingesetzt wurden. Dies betrifft nicht nur die britischen, niederländischen, schwedischen, französischen und spanischen Kolonien, aus denen später die Vereinigten Staaten entstanden sind, sondern in noch grösserem Umfang Brasilien und die europäischen Kolonien in der Karibik. Auf dem nordamerikanischen Festland erlangte die Sklaverei jedoch Ausprägungsformen, die auf dem Doppelkontinent einzigartig waren, und nach der Gründung der Vereinigten Staaten stand sie im Spannungsfeld zwischen einer Ökonomie, die auf der Arbeitsleistung von Sklaven erbaut war, und dem politischen Programm einer jungen Nation, deren Selbstverständnis prominent die Idee der Freiheit zugrundelag. Nur wenigen Sklaven wurde von ihren Besitzern die Freiheit geschenkt, bis 1862 die Nordstaaten unter der Führung von Abraham Lincoln die Sklaverei in den Vereinigten Staaten abschafften.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_SLAVE</Tag>
         <English>
-            <Text>Revolting African Slave:Revolting African Slaves</Text>
+            <Text>Rebelling African Slave:Rebelling African Slaves</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -6626,20 +6626,20 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_SLAVE_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Revolting African slaves[COLOR_REVERT] cannot be acquired.[NEWLINE]They are only generated by [COLOR_HIGHLIGHT_TEXT]slave revolts[COLOR_REVERT].[NEWLINE]Rebelling slaves will attack the player and fight until death.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_SLAVES]Servants, Criminals and Slaves[\LINK].</English>
+        <English>[COLOR_UNIT_TEXT]Rebelling African slaves[COLOR_REVERT] cannot be acquired.[NEWLINE]They are only generated by [COLOR_HIGHLIGHT_TEXT]slave revolts[COLOR_REVERT].[NEWLINE]Rebelling slaves will attack the player and fight until death.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_SLAVES]Servants, Criminals and Slaves[\LINK].</English>
         <French>Les [COLOR_UNIT_TEXT]Esclaves africains révoltés[COLOR_REVERT] ne peuvent pas être obtenus.[NEWLINE]Ils sont générés uniquement par les [COLOR_HIGHLIGHT_TEXT]Révoltes d'esclaves[COLOR_REVERT], attaquent le joueur et se battent jusqu'à la mort.[PARAGRAPH:2]Pour plus d'informations, voir [LINK=CONCEPT_SLAVES]Engagés, bagnards et esclaves[\LINK].</French>
         <German>[COLOR_UNIT_TEXT]Revoltierende Afrikanische Sklaven[COLOR_REVERT] können nicht erlangt werden.[NEWLINE]Sie werden lediglich durch [COLOR_HIGHLIGHT_TEXT]Sklavenrevolten[COLOR_REVERT] erzeugt, greifen den Spieler und kämpfen bis zum Tod.[PARAGRAPH:2]Für weitere Informationen siehe [LINK=CONCEPT_SLAVES]Schuldknechte, Kriminelle und Sklaven[\LINK].</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_SLAVE_PEDIA</Tag>
-        <English>12 million Africans arrived in the Americas from the 16th to the 19th centuries.[NEWLINE]Of these, an estimated 645,000 were brought to what is now the United States.[NEWLINE]The usual estimate is that about 15 per cent of slaves died during the voyage.[NEWLINE]Mortality rates were higher in Africa itself due to capturing and transporting local people to the ships.[NEWLINE]Approximately 6 million black Africans were killed in tribal wars.[NEWLINE]Only a few of them were granted freedom by their owners for loyal service until slavery was abolished by the Northern states under the government of Abraham Lincoln.</English>
+        <English>12 million Africans arrived in the Americas from the 16th to the 19th centuries.[NEWLINE]Of these, an estimated 645,000 were brought to what is now the United States.[NEWLINE]Many slaves died during the voyage.[NEWLINE]In Africa itself mortality rates were high during the fighting to capture and transport local people to the ships.[NEWLINE]Approximately 6 million black Africans were killed in tribal wars.[NEWLINE]Only a few were later granted freedom by their owners for loyal service. Slaves were emancipated by President Abraham Lincoln early in 1863 during the American Civil War, and all slaves were freed when the South was defeated in 1865.</English>
         <French>On estime à 12 millions le nombre d'africains arrivés aux Amériques entre le 16ème et le 19ème siècle. Parmi ceux-ci, environ 645 000 sont arrivés aux actuels Etats-Unis. On estime généralement à 15% le taux de mortalité des captifs pendant le voyage.</French>
         <German>Die Kolonisierung Amerikas vom 16. bis 19. Jahrhundert ging mit einer Massenversklavung von Afrikanern einher, die in allen Teilen des dünn besiedelten Doppelkontinents als billige Arbeitskräfte eingesetzt wurden. Dies betrifft nicht nur die britischen, niederländischen, schwedischen, französischen und spanischen Kolonien, aus denen später die Vereinigten Staaten entstanden sind, sondern in noch grösserem Umfang Brasilien und die europäischen Kolonien in der Karibik. Auf dem nordamerikanischen Festland erlangte die Sklaverei jedoch Ausprägungsformen, die auf dem Doppelkontinent einzigartig waren, und nach der Gründung der Vereinigten Staaten stand sie im Spannungsfeld zwischen einer Ökonomie, die auf der Arbeitsleistung von Sklaven erbaut war, und dem politischen Programm einer jungen Nation, deren Selbstverständnis prominent die Idee der Freiheit zugrundelag. Nur wenigen Sklaven wurde von ihren Besitzern die Freiheit geschenkt, bis 1862 die Nordstaaten der Vereinigten Staaten unter der Führung von Abraham Lincoln die Sklaverei abschafften.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_CRIMINAL</Tag>
         <English>
-            <Text>Revolting Criminal:Revolting Criminals</Text>
+            <Text>Rebelling Criminal:Rebelling Criminals</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -6666,7 +6666,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_CRIMINAL_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Revolting criminals[COLOR_REVERT] cannot be acquired.[NEWLINE]They occur only after [COLOR_HIGHLIGHT_TEXT]revolts of criminals[COLOR_REVERT] who work as forced labour.[NEWLINE]They will attack the player and fight until death.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_SLAVES]Servants, Criminals and Slaves[\LINK].</English>
+        <English>[COLOR_UNIT_TEXT]Rebelling criminals[COLOR_REVERT] cannot be acquired.[NEWLINE]They occur only after [COLOR_HIGHLIGHT_TEXT] criminals[COLOR_REVERT] who work as forced labour decide to revolt.[NEWLINE]They will attack the player and fight until death.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_SLAVES]Servants, Criminals and Slaves[\LINK].</English>
         <French>Les [COLOR_UNIT_TEXT]bagnard révoltés[COLOR_REVERT] ne peuvent pas être obtenus.[NEWLINE]Ils sont uniquement créés par les [COLOR_HIGHLIGHT_TEXT]bagnard révoltés[COLOR_REVERT] qui ont été contraints aux travaux forcés.[NEWLINE]Ils attaquent le joueur et se battent jusqu'à la mort.[PARAGRAPH:2]Pour plus d'informations, voir [LINK=CONCEPT_SLAVES]Engagés, bagnards et esclaves[\LINK].</French>
         <German>[COLOR_UNIT_TEXT]Revoltierende Kriminelle[COLOR_REVERT] können nicht erlangt werden.[NEWLINE]Sie werden lediglich durch [COLOR_HIGHLIGHT_TEXT]Aufstände von Kriminelle[COLOR_REVERT] erzeugt, die zur Zwangsarbeit gezwungen wurden.[NEWLINE]Sie greifen den Spieler and und kämpfen bis zum Tod.[PARAGRAPH:2]Für weitere Informationen siehe [LINK=CONCEPT_SLAVES]Schuldknechte, Kriminelle und Sklaven[\LINK].</German>
     </TEXT>
@@ -6681,7 +6681,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_NATIVE_SLAVE</Tag>
         <English>
-            <Text>Revolting Native Slave:Revolting Native Slaves</Text>
+            <Text>Rebelling Native Slave:Rebelling Native Slaves</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -6708,13 +6708,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_NATIVE_SLAVE_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Revolting native slaves[COLOR_REVERT] cannot be acquired.[NEWLINE]They are only generated by [COLOR_HIGHLIGHT_TEXT]slave revolts[COLOR_REVERT], will attack the player and fight until death.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_SLAVES]Servants, Criminals and Slaves[\LINK].</English>
+        <English>[COLOR_UNIT_TEXT]Rebelling Native slaves[COLOR_REVERT] cannot be acquired.[NEWLINE]They are only generated by [COLOR_HIGHLIGHT_TEXT]slave revolts[COLOR_REVERT]. They then attack the player and fight until death.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_SLAVES]Servants, Criminals and Slaves[\LINK].</English>
         <French>Le [COLOR_UNIT_TEXT]Indigène révolté et asservi[COLOR_REVERT] ne peut être obtenu. Ils ne sont créés que par des [COLOR_HIGHLIGHT_TEXT]révoltes d'esclaves[COLOR_REVERT], attaquent le joueur et se battent jusqu'à la mort.[PARAGRAPH:2]Pour plus d'informations, voir [LINK=CONCEPT_SLAVES]Engagés, bagnards et esclaves[\LINK].</French>
         <German>[COLOR_UNIT_TEXT]Revoltierende Versklavte Ureinwohner[COLOR_REVERT] können nicht erlangt werden. Sie werden lediglich durch [COLOR_HIGHLIGHT_TEXT]Sklavenrevolten[COLOR_REVERT] erzeugt, greifen den Spieler und kämpfen bis zum Tod.[PARAGRAPH:2]Für weitere Informationen siehe [LINK=CONCEPT_SLAVES]Schuldknechte, Kriminelle und Sklaven[\LINK].</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_REVOLTING_NATIVE_SLAVE_PEDIA</Tag>
-        <English>Before slaves from Africa were brought to the New World, the use of labour from enslaved Natives was widespread, especially in South and Central America.</English>
+        <English>Even though slaves from Africa were brought to the New World, the use of labour from enslaved Natives continued to be widespread, especially in South and Central America.</English>
         <French>Avant l'arrivée des esclaves venus d'Afrique, l'usage d'indigènes capturés comme esclaves était très répandu, particulièrement en Amérique du Sud et en Amérique Centrale.</French>
         <German>Bevor Sklaven aus Afrika in großen Mengen in die Neue Welt gebracht wurden, war der Handel mit versklavten Ureinwohnern vor allem in Süd- und Mittelamerika weit verbreitet.</German>
     </TEXT>

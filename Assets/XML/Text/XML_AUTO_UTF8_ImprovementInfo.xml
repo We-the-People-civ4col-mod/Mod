@@ -271,6 +271,48 @@
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Große Bauernhöfe[COLOR_REVERT] sind die Erweiterung des [LINK=IMPROVEMENT_FARM]Bauernhofes[\LINK]. Die Produktion von [LINK=YIELD_FOOD]Nahrung[\LINK] und [LINK=YIELD_BARLEY]Gerste[\LINK] ist dort erhöht.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ein Bauernhof ist ein mit verschiedensten Gebäuden bebautes Stück Land, das von Anbauflächen umgeben ist und primär der Produktion von Nahrung dient. Oft in Form von Getreideanbau oder Viehzucht. Der Begriff 'Bauernhof' sagt allerdings noch nichts über die Grösse aus, die von mehreren Morgen bis hin zu mehreren Tausend Hektar variieren kann.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_WIND_MILL</Tag>
+        <English>Windmill</English>
+        <German>
+            <Text>Windmühle</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_WIND_MILL_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Windmills[COLOR_REVERT] on the map give a percentual bonus on the total production of [LINK=YIELD_FOOD]food[\LINK] in their City if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Historians debate whether Middle Eastern windmills triggered the first European windmills. In northwestern Europe the horizontal-axis or vertical windmill (so called due to the plane of the movement of its sails) dates from the last quarter of the 12th century in the triangle of northern France, eastern England and Flanders. The earliest certain reference to a windmill in Europe (assumed to have been of the vertical type) dates from 1185 in Weedley, Yorkshire, although a number of earlier but less certainly dated twelfth century European sources referring to windmills have also been found. These earliest mills were used to grind cereals.</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Windmühlen[COLOR_REVERT] auf der Karte geben einen prozentualen Bonus auf die gesamte Herstellung von [LINK=YIELD_FOOD]Nahrung[\LINK] der Stadt, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Aufgrund des Fehlens von Beweisen, existiert eine Debatte unter Historikern, ob die Windmühlen des Mittleren Ostens die Entwicklung der europäischen Windmühlen ausgelöst haben. Im nordwestlichen Europa datieren horizontale oder vertikale Windmühlen vom Ende des 12. Jahrhunderts. Die ersten Windmühlen dienten ausschliesslich zum Mahlen von Getreide.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_IRON_MILL</Tag>
+        <English>Ironmill</English>
+        <German>
+            <Text>Eisenmühle</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_IRON_MILL_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ironmills[COLOR_REVERT] on the map give a percentual bonus on the total production of [LINK=YIELD_TOOLS]tools[\LINK] in their City if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A watermill or water mill is a mill that uses hydropower. It is a structure that uses a water wheel or water turbine to drive a mechanical process such as milling (grinding), rolling, or hammering. Such processes are needed in the production of many material goods, including flour, lumber, paper, textiles, and many metal products. These watermills may comprise gristmills, sawmills, paper mills, textile mills, hammermills, trip hammering mills, rolling mills, wire drawing mills.</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Eisenmühlen[COLOR_REVERT] auf der Karte geben einen prozentualen Bonus auf die gesamte Herstellung von [LINK=YIELD_TOOLS]Werkzeuge[\LINK] der Stadt, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Eine Wassermühle ist eine meist historische technische Anlage, die mittels einer Wasserkraftmaschine durch Wasserkraft angetrieben wird und die kinetische Energie des Wassers nutzt. Bei der Anlage kann es sich um eine Mühle im engeren Sinne handeln, in der etwas gemahlen bzw. zerkleinert wird (Mahlmühle), oder um eine Mühle, in der sonstige Maschinen angetrieben werden (z. B. Hammerwerk, Sägemühle, Schleifmühle, Papiermühle, Pumpwerk, Pochmühle). Für die Umsetzung der Wasserenergie in mechanische Arbeit kommen bei historischen Mühlen fast ausschließlich Wasserräder zum Einsatz; diese wurden in neuerer Zeit oft durch Wasserturbinen ersetzt. Das zum Antrieb nötige Wasser (Aufschlagwasser) wird normalerweise einem Fließgewässer entnommen. Je nach örtlichen Gegebenheiten sind zur Erhöhung der Fallhöhe und zur Speicherung von Wasser Teiche, Stauwehre, Kanäle oder andere Wasserbauwerke erforderlich, siehe dazu auch Schlacht (Wasserbauwerk).</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_CANAL</Tag>
+        <English>Canal</English>
+        <German>
+            <Text>Kanal</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_CANAL_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Canals[COLOR_REVERT] allow small ships to pass throught them to connect to water plots or to give an inland city access to the ocean or a lake or a large river. They may however only be one plot long.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]DThe Panama Canal (Spanish: Canal de Panamá) is an artificial 82 km (51 mi) waterway in Panama that connects the Atlantic Ocean with the Pacific Ocean and divides North and South America. The canal cuts across the Isthmus of Panama and is a conduit for maritime trade.</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kanäle[COLOR_REVERT] erlauben es kleinen Schiffen durch sie hindurch zu fahren und somit zwei Gewässer zu verbinden oder eine Stadt im Landesinneren Zugang zum Meer, zu einem See oder einem größeren Fluss zu geben.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]er Panamakanal ist eine künstliche, rund 82 Kilometer lange Wasserstraße mit einer Scheitelhaltung von 26 Metern, die die Landenge von Panama in Mittelamerika durchschneidet, den Atlantik mit dem Pazifik für die Schifffahrt verbindet und ihr damit die Fahrt um das Kap Hoorn oder durch die Magellanstraße an der Südspitze Südamerikas erspart.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FORT</Tag>
         <English>Fort</English>
         <French>
@@ -610,8 +652,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LUMBERMILL_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sawmills[COLOR_REVERT] are [COLOR_HIGHLIGHT_TEXT]upgrades[COLOR_REVERT] of [LINK=IMPROVEMENT_LUMBERJACK_CAMP]lumberjack camps[\LINK]. They cannot be directly built in [LINK=FEATURE_FOREST]forests[\LINK], [LINK=FEATURE_LIGHT_FOREST]light forests[\LINK], [LINK=FEATURE_FOREST_TUNDRA]taiga[\LINK] and [LINK=FEATURE_JUNGLE]jungle[\LINK] but develop over time through work. The production of [LINK=YIELD_LUMBER]lumber[\LINK] and [LINK=YIELD_VALUABLE_WOOD]valuable wood[\LINK] increases even more than with the lodge or lumberjack camp.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]At first a lodge will be a small, makeshift shelter of boughs, poles, skins, earth or rough boards. Over time it evolves into a lumberjack camp. The sawmill on the other hand is industrial and efficient.[PARAGRAPH:1]Lumberjacks are known for their music and cameraderie at the end of a hard day's work.</English>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Das [COLOR_HIGHLIGHT_TEXT]Sägewerk[COLOR_REVERT] ist die finale  [COLOR_HIGHLIGHT_TEXT]Erweiterung[COLOR_REVERT] eines [LINK=IMPROVEMENT_LUMBERJACK_CAMP]Holzfäller Camps[\LINK]. Sägemühlen können nicht direkt in [LINK=FEATURE_FOREST]Wäldern[\LINK], [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK], [LINK=FEATURE_FOREST_TUNDRA]Taiga[\LINK] und [LINK=FEATURE_JUNGLE]Dschungel[\LINK] errichtet werden, sondern enwickeln sich durch längere forstwirtschaftliche Nutzung. Die Produktion von [LINK=YIELD_LUMBER]Holz[\LINK] und [LINK=YIELD_VALUABLE_WOOD]Edelholz[\LINK] erhöht sich gegenüber einer Holzfällerhütte oder einem Holzfällercamp deutlich.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Zunächst wird eine Holzfällerhütte nur ein kleiner, behelfsmäßiger Unterstand aus Ästen, Stangen, Fellen, Erde oder groben Brettern sein. Im Lauf der Zeit entwickelt es sich zu einem Holzfällerlager. Dagegen ist das Sägewerk sehr viel effizienter und fast schon industriell.[PARAGRAPH:1]Holzfäller sind bekannt für ihre Kameradschaft und Musik am Ende eines harten Arbeitstages.</German>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sawmills[COLOR_REVERT] on the map give a percentual bonus on the total production of [LINK=YIELD_HAMMMERS]hammers[\LINK] in their City if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Lumberjacks are known for their music and cameraderie at the end of a hard day's work.</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sägewerk[COLOR_REVERT] auf der Karte geben einen prozentualen Bonus auf die gesamte [LINK=YIELD_HAMMMERS]Bauproduktion[\LINK] der Stadt, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Holzfäller sind bekannt für ihre Kameradschaft und Musik am Ende eines harten Arbeitstages</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_MINE</Tag>
@@ -1075,6 +1117,11 @@
         <German>[ICON_BULLET]Erlaubt es allen Landeinheiten einen [LINK=TERRAIN_LARGE_RIVERS]Großen Fluss[\LINK] zu überqueren.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_IS_CANAL</Tag>
+        <English>[ICON_BULLET]Can only be built adjacent to [COLOR_UNIT_TEXT]water plots[COLOR_REVERT] like coasts, shallow coasts, large rivers, lakes or ice lakes [NEWLINE][ICON_BULLET]Allows [COLOR_UNIT_TEXT]coastal ships[COLOR_REVERT] and [COLOR_UNIT_TEXT]fishing boats[COLOR_REVERT] to cross [COLOR_HIGHLIGHT_TEXT]land tiles[COLOR_REVERT]</English>
+        <German>[ICON_BULLET]Kann nur angrenzend an [COLOR_UNIT_TEXT]Wassergeländefelder[COLOR_REVERT], wie z.B. Küsten, flache Küsten, große Flüsse, Seen oder Eisseen gebaut werden [NEWLINE][ICON_BULLET]Erlaubt [COLOR_UNIT_TEXT]Küstenschiffen [COLOR_REVERT] und [COLOR_UNIT_TEXT]Fischerbooten[COLOR_REVERT] die Durchfahrt über [COLOR_HIGHLIGHT_TEXT]Land[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS</Tag>
         <English>Fishing nets</English>
         <German>
@@ -1090,7 +1137,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE</Tag>
-        <English>Hunters stage</English>
+        <English>Hunters' blind</English>
         <German>
             <Text>Jagdpier</Text>
             <Gender>Neuter</Gender>
@@ -1099,7 +1146,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Hunters stage[COLOR_REVERT]</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Hunters' blind[COLOR_REVERT]</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Jagdpier[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
@@ -1137,7 +1184,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_LAKE</Tag>
-        <English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LAKE]fresh water lake[\LINK], [LINK=TERRAIN_ICE_LAKE]ice lakes[\LINK], [LINK=TERRAIN_ICE_LAKE]coasts[\LINK] or [LINK=TERRAIN_ICE_LAKE]shallow coasts[\LINK]</English>
+        <English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LAKE]fresh water lakes[\LINK], [LINK=TERRAIN_ICE_LAKE]ice lakes[\LINK], [LINK=TERRAIN_ICE_LAKE]coasts[\LINK] or [LINK=TERRAIN_ICE_LAKE]shallow coasts[\LINK]</English>
         <German>[ICON_BULLET]Kann nur auf [LINK=TERRAIN_LAKE]Süßwassersee[\LINK], [LINK=TERRAIN_ICE_LAKE]Eisseen[\LINK], [LINK=TERRAIN_ICE_LAKE]Küsten[\LINK] oderr [LINK=TERRAIN_ICE_LAKE]flachen Küsten[\LINK] gebaut werden.</German>
     </TEXT>
     <TEXT>
@@ -1147,7 +1194,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_ANIMALS</Tag>
-        <English>[ICON_BULLET]Spawns wild animals that guard it.</English>
+        <English>[ICON_BULLET]Spawns wild animals that then guard it.</English>
         <German>[ICON_BULLET]Erzeugt Wilde Tiere als Beschützer.</German>
     </TEXT>
     <TEXT>
@@ -1157,7 +1204,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_CRIMINALS</Tag>
-        <English>[ICON_BULLET]Spawns revolting units and outlaws who guard it.</English>
+        <English>[ICON_BULLET]Spawns outlaws who guard their hideout.</English>
         <German>[ICON_BULLET]Erzeugt Revoltierende Sklaven und Kriminelle als Beschützer.</German>
     </TEXT>
 </Civ4GameText>

@@ -18813,13 +18813,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLADES_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_BLADES_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLADES_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_BLADES_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLADES_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_BLADES_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -18856,7 +18856,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_BLADES_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -18880,13 +18880,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLADES_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_BLADES_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLADES_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_BLADES_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLADES_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_BLADES_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -18923,14 +18923,14 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_BLADES_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_BLADES_DONE1</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_BLADES_DONE2</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_BLADES_DONE3</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_BLADES_DONE4</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_DONE1</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_DONE2</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_DONE3</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_DONE4</Event>
             </Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_BLADES_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -18953,13 +18953,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -18996,7 +18996,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -19020,13 +19020,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -19063,14 +19063,14 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE1</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE2</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE3</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE4</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_DONE1</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_DONE2</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_DONE3</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_DONE4</Event>
             </Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -19093,13 +19093,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CANNONS_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_CANNONS_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CANNONS_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_CANNONS_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CANNONS_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_CANNONS_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -19136,7 +19136,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -19160,13 +19160,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CANNONS_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_CANNONS_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CANNONS_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_CANNONS_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CANNONS_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_CANNONS_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -19203,14 +19203,14 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_DONE1</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_DONE2</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_DONE3</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_DONE4</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_DONE1</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_DONE2</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_DONE3</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_DONE4</Event>
             </Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -19233,13 +19233,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GUNS_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_GUNS_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GUNS_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_GUNS_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GUNS_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_GUNS_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -19276,7 +19276,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GUNS_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -19300,13 +19300,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GUNS_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_GUNS_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GUNS_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_GUNS_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GUNS_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_GUNS_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -19343,14 +19343,14 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GUNS_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GUNS_DONE1</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GUNS_DONE2</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GUNS_DONE3</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GUNS_DONE4</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_DONE1</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_DONE2</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_DONE3</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_DONE4</Event>
             </Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GUNS_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -19373,13 +19373,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_ROPES_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_ROPES_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_ROPES_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_ROPES_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_ROPES_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_ROPES_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -19416,7 +19416,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_ROPES_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -19440,13 +19440,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_ROPES_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_ROPES_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_ROPES_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_ROPES_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_ROPES_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_ROPES_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -19483,14 +19483,14 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_ROPES_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_ROPES_DONE1</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_ROPES_DONE2</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_ROPES_DONE3</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_ROPES_DONE4</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_DONE1</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_DONE2</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_DONE3</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_DONE4</Event>
             </Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_ROPES_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -19513,13 +19513,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_CIGARS_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_CIGARS_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_CIGARS_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -19556,7 +19556,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CIGARS_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -19580,13 +19580,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_CIGARS_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_CIGARS_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_CIGARS_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -19623,12 +19623,12 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_DONE1</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_DONE5</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CIGARS_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CIGARS_DONE1</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CIGARS_DONE5</Event>
             </Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CIGARS_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -19651,13 +19651,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SPICES_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SPICES_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SPICES_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SPICES_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SPICES_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_SPICES_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -19694,7 +19694,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SPICES_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -19718,13 +19718,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SPICES_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SPICES_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SPICES_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SPICES_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SPICES_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_SPICES_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -19761,12 +19761,12 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE1</Event>
-				<Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE5</Event>           
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SPICES_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SPICES_DONE1</Event>
+				<Event>EVENT_PORT_ROYAL_TRADE_QUEST_SPICES_DONE5</Event>           
 			</Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SPICES_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -19789,13 +19789,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SILVER_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SILVER_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SILVER_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SILVER_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SILVER_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_SILVER_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -19832,7 +19832,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SILVER_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -19856,13 +19856,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SILVER_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SILVER_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SILVER_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SILVER_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SILVER_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_SILVER_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -19899,12 +19899,12 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE1</Event>
-				<Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE5</Event>            
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SILVER_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SILVER_DONE1</Event>
+				<Event>EVENT_PORT_ROYAL_TRADE_QUEST_SILVER_DONE5</Event>            
 			</Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SILVER_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -19927,13 +19927,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SALT_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SALT_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SALT_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SALT_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SALT_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_SALT_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -19970,7 +19970,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SALT_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -19994,13 +19994,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SALT_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SALT_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SALT_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_SALT_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SALT_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_SALT_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -20037,12 +20037,12 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE1</Event>
-				<Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE5</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SALT_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SALT_DONE1</Event>
+				<Event>EVENT_PORT_ROYAL_TRADE_QUEST_SALT_DONE5</Event>
 			</Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SALT_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -20065,13 +20065,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RUM_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_RUM_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RUM_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_RUM_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RUM_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_RUM_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -20108,7 +20108,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_RUM_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -20132,13 +20132,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RUM_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_RUM_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RUM_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_RUM_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RUM_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_RUM_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -20175,12 +20175,12 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_DONE1</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_DONE5</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_RUM_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_RUM_DONE1</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_RUM_DONE5</Event>
             </Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_RUM_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -20203,13 +20203,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GOLD_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_GOLD_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GOLD_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_GOLD_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GOLD_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_GOLD_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -20246,7 +20246,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GOLD_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GOLD_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -20270,13 +20270,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GOLD_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_GOLD_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GOLD_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_GOLD_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GOLD_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_GOLD_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -20313,12 +20313,12 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GOLD_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GOLD_DONE1</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GOLD_DONE5</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GOLD_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GOLD_DONE1</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GOLD_DONE5</Event>
             </Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GOLD_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GOLD_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -20341,13 +20341,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GEMS_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_GEMS_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GEMS_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_GEMS_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GEMS_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_GEMS_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -20384,7 +20384,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GEMS_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GEMS_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -20408,13 +20408,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GEMS_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_GEMS_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GEMS_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_GEMS_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GEMS_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_GEMS_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -20451,12 +20451,12 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GEMS_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GEMS_DONE1</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GEMS_DONE5</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GEMS_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GEMS_DONE1</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GEMS_DONE5</Event>
             </Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_GEMS_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GEMS_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -20479,13 +20479,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_FURNITURE_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_FURNITURE_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_FURNITURE_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -20522,7 +20522,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_FURNITURE_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -20546,13 +20546,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_FURNITURE_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_FURNITURE_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_FURNITURE_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -20589,12 +20589,12 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_DONE1</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_DONE5</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_FURNITURE_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_FURNITURE_DONE1</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_FURNITURE_DONE5</Event>
             </Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_FURNITURE_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -20617,13 +20617,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_COFFEE_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_COFFEE_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_COFFEE_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -20660,7 +20660,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COFFEE_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -20684,13 +20684,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_COFFEE_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_COFFEE_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_COFFEE_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -20727,12 +20727,12 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_DONE1</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_DONE5</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COFFEE_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COFFEE_DONE1</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COFFEE_DONE5</Event>
             </Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COFFEE_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -20755,13 +20755,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCOA_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_COCOA_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCOA_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_COCOA_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCOA_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_COCOA_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -20798,7 +20798,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCOA_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -20822,13 +20822,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCOA_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_COCOA_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCOA_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_COCOA_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCOA_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_COCOA_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -20865,12 +20865,12 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_DONE1</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_DONE5</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCOA_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCOA_DONE1</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCOA_DONE5</Event>
             </Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCOA_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -20893,13 +20893,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -20936,7 +20936,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -20960,13 +20960,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -21003,12 +21003,12 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE1</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE5</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_DONE1</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_DONE5</Event>
             </Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
@@ -21031,13 +21031,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_WINE_START</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_WINE_START</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_WINE_START</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_WINE_START</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_WINE_START</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_WINE_START</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -21074,7 +21074,7 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_WINE_START</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -21098,13 +21098,13 @@
             <PythonCallback/>
         </EventTriggerInfo>
         <EventTriggerInfo>
-            <Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_WINE_DONE</Type>
+            <Type>EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_WINE_DONE</Type>
             <WorldNewsTexts>
-                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_WINE_DONE</Text>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_PORT_ROYAL_TRADE_QUEST_WINE_DONE</Text>
             </WorldNewsTexts>
             <TriggerTexts>
                 <TriggerText>
-                    <Text>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_WINE_DONE</Text>
+                    <Text>TXT_KEY_EVENT_TRIGGER_PORT_ROYAL_TRADE_QUEST_WINE_DONE</Text>
                     <Era>NONE</Era>
                 </TriggerText>
             </TriggerTexts>
@@ -21141,12 +21141,12 @@
             <ImprovementsRequired/>
             <RoutesRequired/>
             <Events>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE1</Event>
-				<Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE5</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_WINE_DONE</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_WINE_DONE1</Event>
+				<Event>EVENT_PORT_ROYAL_TRADE_QUEST_WINE_DONE5</Event>
 			</Events>
             <PrereqEvents>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_START</Event>
+                <Event>EVENT_PORT_ROYAL_TRADE_QUEST_WINE_START</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
             <bRecurring>0</bRecurring>

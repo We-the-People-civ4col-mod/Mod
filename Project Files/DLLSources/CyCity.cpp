@@ -1194,6 +1194,23 @@ void CyCity::setRebelSentiment(int iValue)
 	}
 }
 
+// WTP, ray, new Harbour System - START
+int CyCity::getCityHarbourSpace() const
+{
+	return m_pCity ? m_pCity->getCityHarbourSpace() : -1;
+}
+
+int CyCity::getCityHarbourSpaceUsed() const
+{
+	return m_pCity ? m_pCity->getCityHarbourSpaceUsed() : -1;
+}
+
+bool CyCity::bShouldShowCityHarbourSystem() const
+{
+	return m_pCity ? m_pCity->bShouldShowCityHarbourSystem() : -1;
+}
+// WTP, ray, new Harbour System - END
+
 // R&R, ray, Health - START
 int CyCity::getCityHealth() const
 {
@@ -1221,6 +1238,44 @@ void CyCity::changeCityHealth(int iValue)
 	}
 }
 // R&R, ray, Health - END
+
+
+// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
+void CyCity::spawnOwnPlayerUnitOnPlotOfCity(int iIndex) const
+{
+	if (m_pCity)
+		m_pCity->spawnOwnPlayerUnitOnPlotOfCity(iIndex);
+}
+
+void CyCity::spawnBarbarianUnitOnPlotOfCity(int iIndex) const
+{
+	if (m_pCity)
+		m_pCity->spawnBarbarianUnitOnPlotOfCity(iIndex);
+}
+
+void CyCity::spawnOwnPlayerUnitOnAdjacentPlotOfCity(int iIndex) const
+{
+	if (m_pCity)
+		m_pCity->spawnOwnPlayerUnitOnAdjacentPlotOfCity(iIndex);
+}
+
+void CyCity::spawnBarbarianUnitOnAdjacentPlotOfCity(int iIndex) const
+{
+	if (m_pCity)
+		m_pCity->spawnBarbarianUnitOnAdjacentPlotOfCity(iIndex);
+}
+
+bool CyCity::isPlayerUnitOnAdjacentPlotOfCity(int iIndex) const
+{
+	return m_pCity ? m_pCity->isPlayerUnitOnAdjacentPlotOfCity(iIndex) : false;
+}
+
+bool CyCity::isBarbarianUnitOnAdjacentPlotOfCity(int iIndex) const
+{
+	return m_pCity ? m_pCity->isPlayerUnitOnAdjacentPlotOfCity(iIndex) : false;
+}
+// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+
 
 // WTP, ray, Happiness - START
 int CyCity::getCityHappiness() const

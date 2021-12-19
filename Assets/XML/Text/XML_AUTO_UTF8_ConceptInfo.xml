@@ -646,6 +646,16 @@
         <German>[H1]Lagerhauskapazität[\H1][PARAGRAPH:2][BOLD]Lagerraum[\BOLD][PARAGRAPH:1]Die verbrauchte Lagerhauskapazität berechnet sich aus allen gelagerten Gütern ausser Nahrung. Man sollte gut darauf achten, dass genügend freie Lagerhauskapazität verfügbar ist und bei drohenden Engpässen weitere Lagerungsgebäude bauen. Dies sind vor allem das [LINK=BUILDING_WAREHOUSE]Lagerhaus[\LINK] und dessen Ausbaustufen. Aber auch Gebäude, wie der [LINK=BUILDING_MARKET]Dorfmarkt[\LINK] erhöhen die Lagerkapazität.[PARAGRAPH:2][BOLD]Überschreiten der Lagerhauskapazität[\BOLD][PARAGRAPH:1]Wird die Maximalgrenze der Lagerkapazität durch die Summe aller gelagerten Waren überschritten, so können unterschiedliche Effekte in Krafte treten. Meist gehen Teile der überschüssigen Güter einfach verloren. Ab einer gewissen Ausbaustufen des Lagergebäudes, dem [LINK=BUILDING_CUSTOM_HOUSE]Zollhaus[\LINK] oder der [COLOR_HIGHLIGHT_TEXT]Zentralen Zollbehörde[COLOR_REVERT] werden sie jedoch mit leichten Abzügen verkauft. Steuern müssen natürlich ebenfalls entrichtet werden. Auch boykottierte Güter können verkauft werden, allerdings ist dann der Preis sehr niedrig.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_CONCEPT_NEW_HARBOUR_SYSTEM</Tag>
+        <English>Harbour Space</English>
+        <German>Ankerplätze</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONCEPT_NEW_HARBOUR_SYSTEM_PEDIA</Tag>
+        <English>[H1]HARBOUR SPACE[\H1][PARAGRAPH:2][BOLD]Harbour Space[\BOLD][PARAGRAPH:1]TODO</English>
+        <German>[H1]ANKERPLÄTZE[\H1][PARAGRAPH:2][BOLD]Ankerplätze[\BOLD][PARAGRAPH:1]TODO</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CONCEPT_THE_NEW_WORLD</Tag>
         <English>The New World</English>
         <French>

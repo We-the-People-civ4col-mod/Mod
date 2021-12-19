@@ -658,6 +658,14 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 			//End TAC Whaling, ray
 		}
 
+		// WTP, ray, new Harbour System - START
+		if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && pUnit->getUnitInfo().getHarbourSpaceNeeded() > 0)
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_UNIT_HARBOR_SPACE_NEEDED", pUnit->getUnitInfo().getHarbourSpaceNeeded(), gDLL->getSymbolID(ANCHOR_CHAR)));
+		}
+		// WTP, ray, new Harbour System - END
+
 		if (pUnit->fortifyModifier() != 0)
 		{
 			szString.append(NEWLINE);
@@ -3140,6 +3148,7 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 		szTempBuffer.append(CvWString::format(L"%d%c", netHealth, GC.getYieldInfo(YIELD_HEALTH).getChar()));
 	}
 	// R&R, ray, Health - END
+
 	if (!bFirst)
 	{
 		szString.append(NEWLINE);
@@ -3209,6 +3218,36 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 		szString.append(gDLL->getText("TXT_KEY_TOTAL_CITY_UNHAPPINESS_BILLBOARD", netUnHappiness, GC.getYieldInfo(YIELD_UNHAPPINESS).getChar()));
 	}
 	// WTP, ray, Happiness - END
+
+	// WTP, ray, new Harbour System - START
+	// of course we display only for coastal cities
+	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && pCity->plot()->isCoastalLand() && pCity->isHuman())
+	{
+		int iCityHarborSpaceUsed = pCity->getCityHarbourSpaceUsed();
+		int iCityHarborSpaceMax = pCity->getCityHarbourSpace();
+
+		// less than 50% of City Harbor Space is used
+		if (iCityHarborSpaceUsed < (iCityHarborSpaceMax/2))
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_STILL_FREE", iCityHarborSpaceUsed, iCityHarborSpaceMax, gDLL->getSymbolID(ANCHOR_CHAR)));
+		}
+
+		// more than 50% of City Harbor Space is used - not yet totally full though
+		if (iCityHarborSpaceUsed >= (iCityHarborSpaceMax/2) && iCityHarborSpaceUsed < iCityHarborSpaceMax)
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_ALMOST_FULL", iCityHarborSpaceUsed, iCityHarborSpaceMax, gDLL->getSymbolID(ANCHOR_CHAR)));
+		}
+
+		// City Harbor Space is totally full
+		if (iCityHarborSpaceUsed >= iCityHarborSpaceMax)
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_TOTALLY_FULL", iCityHarborSpaceUsed, iCityHarborSpaceMax, gDLL->getSymbolID(NO_ANCHOR_CHAR)));
+		}
+	}
+	// WTP, ray, new Harbour System - END
 
 	szString.append(NEWLINE);
 
@@ -5091,8 +5130,15 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 			szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CARRIES", GC.getSpecialUnitInfo((SpecialUnitTypes) kUnitInfo.getSpecialCargo()).getTextKeyWide()));
 		}
 		//End TAC Whaling, ray
-
 	}
+
+	// WTP, ray, new Harbour System - START
+	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && kUnitInfo.getHarbourSpaceNeeded() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_HARBOR_SPACE_NEEDED", kUnitInfo.getHarbourSpaceNeeded(), gDLL->getSymbolID(ANCHOR_CHAR)));
+	}
+	// WTP, ray, new Harbour System - EMD
 
 	if (kUnitInfo.getRequiredTransportSize() > 1)
 	{
@@ -6147,6 +6193,13 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_YIELD_STORAGE", iYieldStorage));
 	}
+	// WTP, ray, new Harbour System - START
+	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && kBuilding.getMaxHarbourSpaceProvided() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED", kBuilding.getMaxHarbourSpaceProvided(), gDLL->getSymbolID(ANCHOR_CHAR)));
+	}
+	// WTP, ray, new Harbour System - END
 
 	if (kBuilding.getStorageLossSellPercentage() > 0)
 	{
@@ -6755,7 +6808,6 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 		szBuffer.append(szTempBuffer);
 
 		setYieldChangeHelp(szBuffer, L", ", L"", L"", info.getYieldIncreaseArray(), false, false);
-
 		setYieldChangeHelp(szBuffer, L"", L"", gDLL->getText("TXT_KEY_MISC_ON_HILLS").c_str(), info.getHillsYieldChangeArray());
 		setYieldChangeHelp(szBuffer, L"", L"", gDLL->getText("TXT_KEY_MISC_ALONG_RIVER").c_str(), info.getRiverSideYieldChangeArray());
 		//	Civics
@@ -6806,11 +6858,29 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 			}
 			//WTP, ray, Large Rivers - END
 		}
+
 		if (info.isRequiresFlatlands())
 		{
 			szBuffer.append(NEWLINE);
 			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_ONLY_BUILD_FLATLANDS"));
 		}
+
+		// WTP, ray, Canal - START
+		if (info.isCanal())
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_IS_CANAL"));
+		}
+		// WTP, ray, Canal - END
+
+		// WTP, ray, Not allowed next to itself - START
+		if (info.isNotAllowedNextToSameAsItself())
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_NOT_ALLOWED_NEXT_TO_ITSELF"));
+		}
+		// WTP, ray, Not allowed next to itself - END
+
 		//WTP, ray, Large Rivers - START
 		if (info.getTerrainMakesValid(TERRAIN_LARGE_RIVERS))
 		{
@@ -6890,13 +6960,62 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_FORT_FEATURES"));
+		// WTP, ray, Improvements give Bonus to their City - START
+		int iFortDefenseBonusModifier = GC.getDefineINT("FORT_DEFENSE_MODIFIER_FOR_CITY");
+
+		// we double if it is second level improvement, which we know if it has no more upgrade
+		if (info.getImprovementUpgrade() == NO_IMPROVEMENT)
+		{
+			iFortDefenseBonusModifier= iFortDefenseBonusModifier * 2;
+		}
+
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_FORT_DEFENSE_MODIFIER_IF_WORKED", iFortDefenseBonusModifier, gDLL->getSymbolID(DEFENSE_CHAR)));
+		// WTP, ray, Improvements give Bonus to their City - END
 	}
 	if (info.isMonastery())
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_MONASTERY_FEATURES"));
+		// WTP, ray, Improvements give Bonus to their City - START
+		int iMonsasteryCrossBonusModifier = GC.getDefineINT("MONASTERY_CROSSES_MODIFIER_FOR_CITY");
+
+		// we double if it is second level improvement, which we know if it has no more upgrade
+		if (info.getImprovementUpgrade() == NO_IMPROVEMENT)
+		{
+			iMonsasteryCrossBonusModifier = iMonsasteryCrossBonusModifier * 2;
+		}
+
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_MONASTERY_CROSSS_MODIFIER_IF_WORKED", iMonsasteryCrossBonusModifier, GC.getYieldInfo(YIELD_CROSSES).getChar()));
+		// WTP, ray, Improvements give Bonus to their City - END
 	}
 	// R&R, ray, Monasteries and Forts - END
+
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	if (info.getFoodModifierForCity() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_FOOD_MODIFIER_IF_WORKED", info.getFoodModifierForCity(), GC.getYieldInfo(YIELD_FOOD).getChar()));
+		// WTP, ray, Improvements give Bonus to their City - END
+	}
+
+	if (info.getHammersModifierForCity() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_HAMMERS_MODIFIER_IF_WORKED", info.getHammersModifierForCity(), GC.getYieldInfo(YIELD_HAMMERS).getChar()));
+		// WTP, ray, Improvements give Bonus to their City - END
+	}
+
+	if (info.getToolsModifierForCity() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_TOOLS_MODIFIER_IF_WORKED", info.getToolsModifierForCity(), GC.getYieldInfo(YIELD_TOOLS).getChar()));
+		// WTP, ray, Improvements give Bonus to their City - END
+	}
+
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - END
+
 	if (info.getFeatureGrowthProbability() > 0)
 	{
 		szBuffer.append(NEWLINE);
@@ -8393,6 +8512,55 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 	}
 	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - END
 
+	// WTP, ray, Improvements give Bonus to their City - START
+	if (eYieldType == YIELD_CROSSES)
+	{
+		int MonasteryMod = kCity.getMonasteryCrossBonusForCity();
+		if (0 != MonasteryMod)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_MONASTERY_BONUS", MonasteryMod, info.getChar()));
+			iBaseModifier += MonasteryMod;
+		}		
+	}
+	// WTP, ray, Improvements give Bonus to their City - END
+
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	if (eYieldType == YIELD_FOOD)
+	{
+		int FoodModOfImprovements = kCity.getImprovementFoodModifierForCity();
+		if (0 != FoodModOfImprovements)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_WIND_MILL_BONUS", FoodModOfImprovements, info.getChar()));
+			iBaseModifier += FoodModOfImprovements;
+		}		
+	}
+
+	if (eYieldType == YIELD_HAMMERS)
+	{
+		int HammersModOfImprovements = kCity.getImprovementHammersModifierForCity();
+		if (0 != HammersModOfImprovements)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_SAW_MILL_BONUS", HammersModOfImprovements, info.getChar()));
+			iBaseModifier += HammersModOfImprovements;
+		}		
+	}
+
+	if (eYieldType == YIELD_TOOLS)
+	{
+		int ToolsModOfImprovements = kCity.getImprovementToolsModifierForCity();
+		if (0 != ToolsModOfImprovements)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_IRON_MILL_BONUS", ToolsModOfImprovements, info.getChar()));
+			iBaseModifier += ToolsModOfImprovements;
+		}		
+	}
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - END
+
+
 	FAssertMsg(iBaseModifier == kCity.getBaseYieldRateModifier(eYieldType), "Yield Modifier in setProductionHelp does not agree with actual value");
 
 	return iBaseModifier;
@@ -8455,6 +8623,22 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 		}
 	}
 	// WTP, ray, Happiness - END
+
+	// WTP, ray, new Harbour System - START
+	// for some reason this does not work - it displays "NO_ANCHOR_CHAR" as "?"
+	/*
+	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && pCity->plot()->isCoastalLand() && pCity->isHuman())
+	{
+		int iCityHarborSpaceUsed = pCity->getCityHarbourSpaceUsed();
+		int iCityHarborSpaceMax = pCity->getCityHarbourSpace();
+
+		if (iCityHarborSpaceUsed >= iCityHarborSpaceMax)
+		{
+			szBuffer.append(CvWString::format(L" %c", gDLL->getSymbolID(NO_ANCHOR_CHAR)));
+		}
+	}
+	*/
+	// WTP, ray, new Harbour System - END
 
 	// XXX out this in bottom bar???
 	if (pCity->isOccupation())

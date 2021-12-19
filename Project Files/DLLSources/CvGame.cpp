@@ -6367,7 +6367,11 @@ int CvGame::calculateSyncChecksum(CvString* pLogString)
 	iValue += getSorenRand().getSeed();
 
 	iValue += getNumCities();
-	iValue += getNumDeals();
+
+	// WTP, ray, this most likely caused the MP desyncs - e.g. when Bargaining with Natives
+	// But other DLL Diplo-Events might have caused it as well.
+	// Not sure though what happens if it is taken out - most likely nothing other than fixing desyncs.
+	// iValue += getNumDeals();
 
 	iValue += GC.getMapINLINE().getOwnedPlots();
 	iValue += GC.getMapINLINE().getNumAreas();

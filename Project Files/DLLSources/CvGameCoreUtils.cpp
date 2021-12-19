@@ -1524,6 +1524,13 @@ int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void
 		return true;
 	}
 
+	// WTP, ray, Canal - START
+	if (pNewPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pNewPlot->getImprovementType()).isCanal())
+	{
+		return true;
+	}
+	// WTP, ray, Canal - END
+
 	const TeamTypes eTeam = GET_PLAYER(ePlayer).getTeam();
 
 	if (pNewPlot->isWater() && pNewPlot->isRevealed(eTeam, false) && !pNewPlot->isImpassable())

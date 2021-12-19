@@ -33,6 +33,7 @@
 	const int defaultWorksWaterCount = 0 ;
 	const int defaultRebelSentiment = 0 ;
 	const int defaultCityHealth = 0 ; // R&R, ray, Health
+	const int defaultCityHarbourSpace = 0 ; // WTP, ray, new Harbour System - START
 	const int defaultCityHappiness = 0; // WTP, ray, Happiness - START
 	const int defaultCityUnHappiness = 0; // WTP, ray, Happiness - START
 	const int defaultCityTimerFestivitiesOrUnrest = 0; // WTP, ray, Happiness - START
@@ -90,6 +91,7 @@ enum SavegameVariableTypes
 	CitySave_WorksWaterCount,
 	CitySave_RebelSentiment,
 	CitySave_CityHealth, // R&R, ray, Health
+	CitySave_CityHarbourSpace,// WTP, ray, new Harbour System - START
 	CitySave_CityHappiness, // WTP, ray, Happiness - START
 	CitySave_CityUnHappiness, // WTP, ray, Happiness - START
 	CitySave_TeachUnitMultiplier,
@@ -210,8 +212,9 @@ const char* getSavedEnumNameCity(SavegameVariableTypes eType)
 		case CitySave_WorksWaterCount: return "CitySave_WorksWaterCount";
 		case CitySave_RebelSentiment: return "CitySave_RebelSentiment";
 		case CitySave_CityHealth: return "CitySave_CityHealth";
-		case CitySave_CityHappiness: return "CitySave_m_iCityHappiness"; // WTP, ray, Happiness - START
-		case CitySave_CityUnHappiness: return "CitySave_m_iCityUnhappiness"; // WTP, ray, Happiness - START
+		case CitySave_CityHarbourSpace: return "CitySave_CityHarbourSpace"; // WTP, ray, new Harbour System - START
+		case CitySave_CityHappiness: return "CitySave_CityHappiness"; // WTP, ray, Happiness - START
+		case CitySave_CityUnHappiness: return "CitySave_CityUnhappiness"; // WTP, ray, Happiness - START
 		case CitySave_CityTimerFestivitiesOrUnrest: return "CitySave_CityTimerFestivitiesOrUnrest"; // WTP, ray, Happiness - START
 		case CitySave_TeachUnitMultiplier: return "CitySave_TeachUnitMultiplier";
 		case CitySave_EducationThresholdMultiplier: return "CitySave_EducationThresholdMultiplier";
@@ -330,6 +333,7 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bC
 	m_iWorksWaterCount = defaultWorksWaterCount;
 	m_iRebelSentiment = defaultRebelSentiment;
 	m_iCityHealth = defaultCityHealth; // R&R, ray, Health
+	m_iCityHarbourSpace = defaultCityHarbourSpace; // WTP, ray, new Harbour System - START
 	m_iCityHappiness = defaultCityHappiness; // WTP, ray, Happiness - START
 	m_iCityUnHappiness = defaultCityUnHappiness; // WTP, ray, Happiness - START
 	m_iCityTimerFestivitiesOrUnrest = defaultCityTimerFestivitiesOrUnrest; // WTP, ray, Happiness - START
@@ -463,6 +467,7 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_WorksWaterCount: reader.Read(m_iWorksWaterCount); break;
 		case CitySave_RebelSentiment: reader.Read(m_iRebelSentiment); break;
 		case CitySave_CityHealth: reader.Read(m_iCityHealth); break; // R&R, ray, Health
+		case CitySave_CityHarbourSpace: reader.Read(m_iCityHarbourSpace); break; // WTP, ray, new Harbour System - START
 		case CitySave_CityHappiness: reader.Read(m_iCityHappiness); break; // WTP, ray, Happiness - START
 		case CitySave_CityUnHappiness: reader.Read(m_iCityUnHappiness); break; // WTP, ray, Happiness - START
 		case CitySave_CityTimerFestivitiesOrUnrest: reader.Read(m_iCityTimerFestivitiesOrUnrest); break; // WTP, ray, Happiness - START
@@ -608,6 +613,7 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_WorksWaterCount, m_iWorksWaterCount, defaultWorksWaterCount);
 	writer.Write(CitySave_RebelSentiment, m_iRebelSentiment, defaultRebelSentiment);
 	writer.Write(CitySave_CityHealth, m_iCityHealth, defaultCityHealth); // R&R, ray, Health
+	writer.Write(CitySave_CityHarbourSpace, m_iCityHarbourSpace, defaultCityHarbourSpace); // WTP, ray, new Harbour System - START
 	writer.Write(CitySave_CityHappiness, m_iCityHappiness, defaultCityHappiness); // WTP, ray, Happiness - START
 	writer.Write(CitySave_CityUnHappiness, m_iCityUnHappiness, defaultCityUnHappiness); // WTP, ray, Happiness - START
 	writer.Write(CitySave_CityTimerFestivitiesOrUnrest, m_iCityTimerFestivitiesOrUnrest, defaultCityTimerFestivitiesOrUnrest); // WTP, ray, Happiness - START

@@ -277,12 +277,28 @@ public:
 	int getRebelSentiment() const;
 	void setRebelSentiment(int iValue);
 
+	// WTP, ray, new Harbour System - START
+	int getCityHarbourSpace() const;
+	int getCityHarbourSpaceUsed() const;
+	bool bShouldShowCityHarbourSystem() const;
+	// WTP, ray, new Harbour System - END
+
 	// R&R, ray, Health - START
 	int getCityHealth() const;
 	int getCityHealthChange() const;
 	void setCityHealth(int iValue);
 	void changeCityHealth(int iValue);
 	// R&R, ray, Health - END
+
+	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
+	void spawnOwnPlayerUnitOnPlotOfCity(int /*UnitTypes*/ iIndex) const;
+	void spawnBarbarianUnitOnPlotOfCity(int /*UnitTypes*/ iIndex) const; // careful with this, because will take over City for Barbarians
+	void spawnOwnPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
+	void spawnBarbarianUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
+
+	bool isPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
+	bool isBarbarianUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
+	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
 
 	// WTP, ray, Happiness - START
 	int getCityHappiness() const;

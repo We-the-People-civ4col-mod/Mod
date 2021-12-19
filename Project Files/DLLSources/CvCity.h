@@ -521,6 +521,34 @@ public:
 	int getCityHealthChangeFromRessourcesInCityRadius() const;
 	// WTP, ray, Health Overhaul - END
 
+	// WTP, ray, new Harbour System - START
+	int getCityHarbourSpace() const;
+	void setCityHarbourSpace(int iValue);
+	int getCityHarbourSpaceUsed() const;
+	bool bShouldShowCityHarbourSystem() const;
+	// WTP, ray, new Harbour System - END
+
+	// WTP, ray, Improvements give Bonus to their City - START
+	int getMonasteryCrossBonusForCity() const;
+	int getFortDefenseBonusForCity() const;
+	// WTP, ray, Improvements give Bonus to their City - END
+
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	int getImprovementFoodModifierForCity() const;
+	int getImprovementHammersModifierForCity() const;
+	int getImprovementToolsModifierForCity() const;
+	// WTP, ray, Improvements give Bonus to their City - PART 2 - END
+
+	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
+	void spawnOwnPlayerUnitOnPlotOfCity(int /*UnitTypes*/ iIndex) const;
+	void spawnBarbarianUnitOnPlotOfCity(int /*UnitTypes*/ iIndex) const; // careful with this, because will take over City for Barbarians
+	void spawnOwnPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
+	void spawnBarbarianUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
+
+	bool isPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
+	bool isBarbarianUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
+	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+
 	// WTP, ray, Happiness - START
 	int getCityHappiness() const;
 	void setCityHappiness(int iValue);
@@ -742,6 +770,7 @@ protected:
 	int m_iTradePostGold; // WTP, ray, Native Trade Posts - START
 	bool m_bStirredUp; // R&R, ray , Stirring Up Natives
 	int m_iRebelSentiment;
+	int m_iCityHarbourSpace; // WTP, ray, new Harbour System - START
 	int m_iCityHealth; // R&R, ray, Health
 	int m_iCityHappiness; // WTP, ray, Happiness
 	int m_iCityUnHappiness; // WTP, ray, Happiness
@@ -821,6 +850,7 @@ protected:
 	void doYields();
 	void addTempHurryYieldsForProduction();
 	void doEntertainmentBuildings(); // R&R, ray, Entertainment Buildings
+
 	void doCulture();
 	void doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate);
 	void doSpecialists();

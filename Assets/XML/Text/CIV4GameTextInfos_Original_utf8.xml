@@ -318,6 +318,11 @@
         <Spanish>[ICON_BULLET]Requiere un río</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_NOT_ALLOWED_NEXT_TO_ITSELF</Tag>
+        <English>[ICON_BULLET]Can't be built next to another improvement of the same type (or its own upgrade)</English>
+        <German>[ICON_BULLET]Kann nicht neben einem andere Improvement der selben Art (oder seiner Ausbaustufe) gebaut werden</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_EVOLVES</Tag>
         <English>[ICON_BULLET]Becomes a [COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1_ImpName[\LINK][COLOR_REVERT] in %d2_Num [NUM2:turn:turns]</English>
         <French>[ICON_BULLET]Se transforme en : [COLOR_HIGHLIGHT_TEXT][LINK=literal]%s1_ImpName[\LINK][COLOR_REVERT] après %d2_Num [NUM2:tour:tours]</French>
@@ -627,6 +632,11 @@
         <Spanish>[ICON_BULLET]Bodega : %d1_Num</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_HARBOR_SPACE_NEEDED</Tag>
+        <English>[ICON_BULLET]Dock Space Needed : %d1_Num%F2_Icon</English>
+        <German>[ICON_BULLET]Braucht zum Andocken : %d1_Num%F2_Icon</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CARRIES</Tag>
         <English>[SPACE](carries %s1_Name)</English>
         <French>[SPACE](transporte : %s1_Name)</French>
@@ -825,6 +835,11 @@
         <German>[ICON_BULLET]Speichert %d1_Mod%%[ICON_FOOD] nach Wachstum</German>
         <Italian>[ICON_BULLET]Immagazzina %d1_Mod%% di [ICON_FOOD] dopo la crescita</Italian>
         <Spanish>[ICON_BULLET]Almacena el %d1_Mod%% de los [ICON_FOOD] tras el crecimiento</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED</Tag>
+        <English>[ICON_BULLET]Offers maximum %d1_HarbourSpace%F2_Icon</English>
+        <German>[ICON_BULLET]Bietet maximal %d1_HarbourSpace%F2_Icon</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_HEAL_MOD</Tag>
@@ -1124,17 +1139,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_HILLS_YIELD</Tag>
-        <English>Improvement %s1 : %D2%F3 (on hills)</English>
+        <English>%s1 : %D2%F3 (on hills)</English>
         <French>%s1 : %D2%F3 (sur les collines)</French>
-        <German>Modernisierung %s1 : %D2%F3 (auf Hügeln)</German>
+        <German> %s1 : %D2%F3 (auf Hügeln)</German>
         <Italian>%s1 : %D2%F3 (sulle colline)</Italian>
         <Spanish>%s1 : %D2%F3 (en colinas)</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_RIVER_YIELD</Tag>
-        <English>Improvement %s1 : %D2%F3 (next to river)</English>
+        <English>%s1 : %D2%F3 (next to river)</English>
         <French>%s1 : %D2%F3 (près des fleuves)</French>
-        <German>Modernisierung %s1 : %D2%F3 (an einem Fluß)</German>
+        <German>%s1 : %D2%F3 (an einem Fluß)</German>
         <Italian>%s1 : %D2%F3 (vicino a un fiume)</Italian>
         <Spanish>%s1 : %D2%F3 (junto a un río)</Spanish>
     </TEXT>

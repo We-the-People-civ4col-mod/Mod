@@ -10732,28 +10732,12 @@
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bFeature>0</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_SHRUB</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
-                    <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_TAR_PIT</FeatureType>

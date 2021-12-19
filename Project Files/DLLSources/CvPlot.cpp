@@ -536,15 +536,20 @@ void CvPlot::doImprovement()
 void CvPlot::upgradeImprovement(ImprovementTypes eImprovementUpgrade, int iUpgradeRate)
 {
 	changeUpgradeProgress(iUpgradeRate);
-
 	// WTP, ray, Improvement Growth Modifier - START
-	// if (getUpgradeProgress() >= GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType()))
-	if (getOwnerINLINE() != NO_PLAYER && getUpgradeTimeLeft(getImprovementType(),getOwnerINLINE()) == 0)
+	int iUpgradeDuration = GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType());
+
+	if (getOwnerINLINE() != NO_PLAYER)
+	{
+		int iUpgradeDurationModifier = GET_PLAYER(getOwnerINLINE()).getImprovementUpgradeDurationModifier();
+		iUpgradeDuration = iUpgradeDuration * (100 + iUpgradeDurationModifier) / 100;
+	}
+
+	if (getUpgradeProgress() >= iUpgradeDuration)
 	{
 		setImprovementType(eImprovementUpgrade);
 	}
 	// WTP, ray, Improvement Growth Modifier - END
-
 }
 
 void CvPlot::doImprovementUpgrade()
@@ -2026,6 +2031,41 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 		return false;
 	}
 
+	// WTP, ray, Not allowed next to itself - START
+	if (GC.getImprovementInfo(eImprovement).isNotAllowedNextToSameAsItself())
+	{
+		for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+		{
+			CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+			if (pAdjacentPlot != NULL)
+			{
+				// we catch ourselves
+				if (pAdjacentPlot->getImprovementType() == eImprovement)
+				{
+					return false;
+				}
+				// now let us also consider our growing improvements
+				ImprovementTypes eOurGrowingImprovement = (ImprovementTypes) GC.getImprovementInfo(eImprovement).getImprovementUpgrade();
+				if (eOurGrowingImprovement != NO_IMPROVEMENT && eOurGrowingImprovement == eImprovement)
+				{
+					return false;
+				}
+			}
+		}
+	}
+	// WTP, ray, Not allowed next to itself - END
+
+	// WTP, ray, Canal - START
+	if (GC.getImprovementInfo(eImprovement).isCanal())
+	{
+		// we do not want to allow endless long canals, only next to Water Plots
+		if (isCoastalLand())
+		{
+			bValid = true;
+		}
+	}
+	// WTP, ray, Canal - END
+
 	if (GC.getImprovementInfo(eImprovement).isHillsMakesValid() && (isHills() || isPeak()))
 	{
 		bValid = true;
@@ -2182,7 +2222,8 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 			}
 
 			// Super Forts begin *AI_worker* - prevent forts from being built over when outside culture range
-			if (GC.getImprovementInfo(getImprovementType()).isActsAsCity())
+			// WTP, ray, Canal -- also adjust here to prevent canals destroying other Improvements
+			if (GC.getImprovementInfo(getImprovementType()).isActsAsCity() || GC.getImprovementInfo(getImprovementType()).isCanal())
 			{
 				if (!isWithinCultureRange(ePlayer) && !(getCultureRangeForts(ePlayer) > 1))
 				{
@@ -2256,8 +2297,9 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 			//R&R, ray, preventing exploit to build directly next to a Native Village in own culture - END
 
 
-			//R&R, vetiarvind, Super Forts begin *AI_worker* - prevent workers from two different players from building a fort in the same plot 
-			if(GC.getImprovementInfo(eImprovement).isActsAsCity())
+			//R&R, vetiarvind, Super Forts begin *AI_worker* - prevent workers from two different players from building a fort in the same plot
+			// WTP, ray, Canal - also adjust here
+			if(GC.getImprovementInfo(eImprovement).isActsAsCity() || GC.getImprovementInfo(eImprovement).isCanal())
 			{
 				CLLNode<IDInfo>* pUnitNode = headUnitNode();
 				CvUnit* pLoopUnit;
@@ -2273,7 +2315,8 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 							ImprovementTypes eImprovementBuild = (ImprovementTypes)(GC.getBuildInfo(pLoopUnit->getBuildType()).getImprovement());
 							if(eImprovementBuild != NO_IMPROVEMENT)
 							{
-								if(GC.getImprovementInfo(eImprovementBuild).isActsAsCity())
+								// WTP, ray, Canal - also adjust here
+								if(GC.getImprovementInfo(eImprovementBuild).isActsAsCity()  || GC.getImprovementInfo(eImprovement).isCanal())
 								{
 									return false;
 								}
@@ -2415,6 +2458,12 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 	FeatureTypes eResultFeature = (FeatureTypes)(GC.getBuildInfo(eBuild).getResultFeature());
 	if (eResultFeature != NO_FEATURE)
 	{
+		//no reforrestation on City Plots
+		if (isCity())
+		{
+			return false;
+		}
+
 		// check if there is not already Feature
 		if (getFeatureType() != NO_FEATURE)
 		{
@@ -4023,7 +4072,8 @@ bool CvPlot::isCity(bool bCheckImprovement, TeamTypes eForTeam) const
 {
 	if (bCheckImprovement && NO_IMPROVEMENT != getImprovementType())
 	{
-		if (GC.getImprovementInfo(getImprovementType()).isActsAsCity())
+		// WTP, ray, Canal - also adjust here
+		if (GC.getImprovementInfo(getImprovementType()).isActsAsCity() || GC.getImprovementInfo(getImprovementType()).isCanal())
 		{
 			if (NO_TEAM == eForTeam || (NO_TEAM == getTeam() && GC.getImprovementInfo(getImprovementType()).isOutsideBorders()) || GET_TEAM(eForTeam).isFriendlyTerritory(getTeam()))
 			{
@@ -4354,6 +4404,15 @@ bool CvPlot::isValidDomainForAction(UnitTypes eUnit) const
 	switch (kUnitInfo.getDomainType())
 	{
 	case DOMAIN_SEA:
+
+		// WTP, ray, Canal - START
+		// in Canals, which are actually on land plots, we do not want to have any Ships bigger than Coastal Ships or Fishing Boats
+		if (!isWater() && !kUnitInfo.getTerrainImpassable(TERRAIN_OCEAN) && !(kUnitInfo.isGatherBoat() && kUnitInfo.getHarbourSpaceNeeded() == 1) && getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(getImprovementType()).isCanal())
+		{
+			return false;
+		}
+		// WTP, ray, Canal - END
+
 		return (isWater() || kUnitInfo.isCanMoveAllTerrain());
 		break;
 
@@ -4827,14 +4886,18 @@ int CvPlot::getUpgradeTimeLeft(ImprovementTypes eImprovement, PlayerTypes ePlaye
 	int iTurnsLeft;
 
 	// WTP, ray, Improvement Growth Modifier - START
-	// modify in here by getImprovementUpgradeDurationModifier
-	// erst get ownerInline
+	int iNormalImprovementUpgradeTime = GC.getGameINLINE().getImprovementUpgradeTime(eImprovement);
 	int iUpgradeDurationModifier = GET_PLAYER(ePlayer).getImprovementUpgradeDurationModifier();
-	int iUpgradeDuration = GC.getGameINLINE().getImprovementUpgradeTime(eImprovement);
-	int iModifiedUpgradeDuration = iUpgradeDuration * (100 + iUpgradeDurationModifier) / 100;
-	iUpgradeLeft = (iModifiedUpgradeDuration - ((getImprovementType() == eImprovement) ? getUpgradeProgress() : 0));
+	int iModifiedImprovementUpgradeTime = (iNormalImprovementUpgradeTime * (100 + iUpgradeDurationModifier)) / 100;
+	int iUpgradeProgress = 0;
+	if (getImprovementType() == eImprovement)
+	{
+		iUpgradeProgress = getUpgradeProgress();
+	}
+
 	//iUpgradeLeft = (GC.getGameINLINE().getImprovementUpgradeTime(eImprovement) - ((getImprovementType() == eImprovement) ? getUpgradeProgress() : 0));
-	// WTP, ray, Improvement Growth Modifier - START
+	iUpgradeLeft = iModifiedImprovementUpgradeTime - iUpgradeProgress;
+	// WTP, ray, Improvement Growth Modifier - END
 
 	if (ePlayer == NO_PLAYER)
 	{
@@ -4849,12 +4912,10 @@ int CvPlot::getUpgradeTimeLeft(ImprovementTypes eImprovement, PlayerTypes ePlaye
 	}
 
 	iTurnsLeft = (iUpgradeLeft / iUpgradeRate);
-
 	if ((iTurnsLeft * iUpgradeRate) < iUpgradeLeft)
 	{
 		iTurnsLeft++;
 	}
-
 	return std::max(1, iTurnsLeft);
 }
 

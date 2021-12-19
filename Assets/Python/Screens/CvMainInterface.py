@@ -210,6 +210,10 @@ HELP_TOTAL_HAPPINESS_NEGATIVE = 4302
 HELP_TOTAL_HAPPINESS_ZERO = 4303
 # CITY HAPPINESS vs UNHAPPINESS - END
 
+# WTP, ray, new Harbour System - START
+NEW_HARBOUR_SYSTEM = 4304
+
+# WTP, ray, new Harbour System - END
 
 BUILDING_MANAGMENT_PANEL_UP = True
 BUILDING_CHANGE_MANAGMENT_PANEL_UP = False
@@ -1919,14 +1923,14 @@ class CvMainInterface:
 				screen.addTableControlGFC("ImportTradeRouteText", 1, CITIZEN_BAR_WIDTH + (MAP_EDGE_MARGIN_WIDTH * 2), CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH + 3 * STACK_BAR_HEIGHT / 2, BUILD_AREA_WIDTH, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT * 3), False, False, MEDIUM_BUTTON_SIZE, MEDIUM_BUTTON_SIZE, TableStyles.TABLE_STYLE_STANDARD)
 				screen.setStyle("ImportTradeRouteText", "Table_EmptyScroll_Style")
 				
-				# R&R, Robert Surcouf, Custom House Popup-Screen START			
-				# R&R mod, vetiarvind, max yield import limit - start				
+				# R&R, Robert Surcouf, Custom House Popup-Screen START
+				# R&R mod, vetiarvind, max yield import limit - start
 				screen.setButtonGFC("ExportButton", self.setFontSize(localText.getText("TXT_KEY_DEMO_SCREEN_EXPORTS_TEXT", ()), 1), "", CITIZEN_BAR_WIDTH + (MAP_EDGE_MARGIN_WIDTH * 2) + BUILD_AREA_WIDTH, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH, BUILD_AREA_WIDTH - MEDIUM_BUTTON_SIZE+20, 3 * STACK_BAR_HEIGHT / 2, WidgetTypes.WIDGET_CONDENSED_YIELD_IMPORT_EXPORT, false, -1, ButtonStyles.BUTTON_STYLE_STANDARD)				
 				# R&R mod, vetiarvind, max yield import limit - end
 				#screen.setButtonGFC("ExportButton", self.setFontSize(localText.getText("TXT_KEY_DEMO_SCREEN_EXPORTS_TEXT", ()), 1), "", CITIZEN_BAR_WIDTH + (MAP_EDGE_MARGIN_WIDTH * 2) + BUILD_AREA_WIDTH, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH, BUILD_AREA_WIDTH - MEDIUM_BUTTON_SIZE, 3 * STACK_BAR_HEIGHT / 2, WidgetTypes.WIDGET_YIELD_IMPORT_EXPORT, false, -1, ButtonStyles.BUTTON_STYLE_STANDARD)
 				# R&R, Robert Surcouf, Custom House Popup-Screen END
 				screen.addTableControlGFC("ExportTradeRouteText", 1, CITIZEN_BAR_WIDTH + (MAP_EDGE_MARGIN_WIDTH * 2) + BUILD_AREA_WIDTH, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH + 3 * STACK_BAR_HEIGHT / 2, BUILD_AREA_WIDTH, TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT * 3), False, False, MEDIUM_BUTTON_SIZE, MEDIUM_BUTTON_SIZE, TableStyles.TABLE_STYLE_STANDARD)
-				screen.setStyle("ExportTradeRouteText", "Table_EmptyScroll_Style")				
+				screen.setStyle("ExportTradeRouteText", "Table_EmptyScroll_Style")
 
 				for iYield in range(YieldTypes.NUM_YIELD_TYPES):
 					# transport feeder - start - Nightinggale
@@ -2598,6 +2602,7 @@ class CvMainInterface:
 		screen.hide("UnhappinessText") # CITY HAPPINESS vs UNHAPPINESS
 		screen.hide("EducationText")
 		screen.hide("CultureText")
+		screen.hide("HarbourText")
 		screen.hide("CityNameText")
 		screen.hide("PopulationText")
 		screen.hide("ProductionInputText")
@@ -2657,7 +2662,7 @@ class CvMainInterface:
 				iFoodDifference = pHeadSelectedCity.foodDifference()
 				iProductionDiffNoFood = pHeadSelectedCity.getCurrentProductionDifference(True)
 				iProductionDiffJustFood = 0
-				szBuffer = u"<font=4>"
+				szBuffer = u"<font=3>"
 				if (iFoodDifference > 0):
 					szBuffer = localText.getText("INTERFACE_CITY_GROWING", (pHeadSelectedCity.getFoodTurnsLeft(), ))
 				elif (iFoodDifference < 0):
@@ -2665,9 +2670,9 @@ class CvMainInterface:
 				else:
 					szBuffer = localText.getText("INTERFACE_CITY_STAGNANT", ())
 				szBuffer += u"</font>"
-				screen.setText("PopulationText", "Background", szBuffer, CvUtil.FONT_LEFT_JUSTIFY, xResolution * 5 / 100, CITY_TITLE_BAR_HEIGHT / 8, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_HELP_POPULATION, -1, -1 )
-				screen.setStyle("PopulationText", "Button_Stone_Style")					
-					
+				screen.setText("PopulationText", "Background", szBuffer, CvUtil.FONT_LEFT_JUSTIFY, xResolution * 4 / 100, CITY_TITLE_BAR_HEIGHT / 8, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_HELP_POPULATION, -1, -1 )
+				screen.setStyle("PopulationText", "Button_Stone_Style")
+
 			# CURRENT PRODUCTION BAR FILL
 				fProductionNeeded = float(pHeadSelectedCity.getProductionNeeded(YieldTypes.YIELD_HAMMERS))
 				if (fProductionNeeded > 0):
@@ -2759,37 +2764,59 @@ class CvMainInterface:
 			# CITY HAMMER PRODUCTION
 				iHammers = pHeadSelectedCity.getCurrentProductionDifference(True)
 				# R&R, Robert Surcouf Screen Resolution/Ratio - Start
-				szBuffer = u"<font=4>" + u"%i%c" % (iHammers, gc.getYieldInfo(YieldTypes.YIELD_HAMMERS).getChar()) + u"</font>"
-				#screen.setLabel("HammerText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 25 / 100, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PRODUCTION_MOD_HELP, -1, -1 )
-				screen.setLabel("HammerText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 15 / 100 +iXmodifier , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PRODUCTION_MOD_HELP, -1, -1 )
+				szBuffer = u"<font=3>" + u"%i%c" % (iHammers, gc.getYieldInfo(YieldTypes.YIELD_HAMMERS).getChar()) + u"</font>"
+				screen.setLabel("HammerText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 12 / 100 +iXmodifier , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PRODUCTION_MOD_HELP, -1, -1 )
 
 			# CITY LIBERTYBELL PRODUCTION
 				iLiberty = pHeadSelectedCity.calculateNetYield(YieldTypes.YIELD_BELLS)
-				szBuffer = u"<font=4>" + u"%i%c" % (iLiberty, gc.getYieldInfo(YieldTypes.YIELD_BELLS).getChar()) + u"</font>"
-				#screen.setLabel("LibertyText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 30 / 100, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_BELLS, -1 )
-				screen.setLabel("LibertyText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 19 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_BELLS, -1 )
+				szBuffer = u"<font=3>" + u"%i%c" % (iLiberty, gc.getYieldInfo(YieldTypes.YIELD_BELLS).getChar()) + u"</font>"
+				screen.setLabel("LibertyText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 16 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_BELLS, -1 )
 
 			# CITY CROSS PRODUCTION
 				iCrosses = pHeadSelectedCity.calculateNetYield(YieldTypes.YIELD_CROSSES)
-				szBuffer = u"<font=4>" + u"%i%c" % (iCrosses, gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar()) + u"</font>"
-				#screen.setLabel("CrossesText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 70 / 100, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_CROSSES, -1 )
-				screen.setLabel("CrossesText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 23 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_CROSSES, -1 )
+				szBuffer = u"<font=3>" + u"%i%c" % (iCrosses, gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar()) + u"</font>"
+				screen.setLabel("CrossesText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 20 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_CROSSES, -1 )
+
+			# CITY EDUCATION PRODUCTION
+				iBooks = pHeadSelectedCity.calculateNetYield(YieldTypes.YIELD_EDUCATION)
+				szBuffer = u"<font=3>" + u"%i%c" % (iBooks, gc.getYieldInfo(YieldTypes.YIELD_EDUCATION).getChar()) + u"</font>"
+				screen.setLabel("EducationText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 24 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_EDUCATION, -1 )
+
+			# CITY Culture PRODUCTION
+				iCulture = pHeadSelectedCity.getCultureRate() # RaR, ray, small correction
+				szBuffer = u"<font=3>" + u"%i%c" % (iCulture, gc.getYieldInfo(YieldTypes.YIELD_CULTURE).getChar()) + u"</font>"
+				screen.setLabel("CultureText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 28 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_CULTURE, -1 )
 
 			# CITY HEALTH PRODUCTION
+				#get the coloured string for current City Health
 				iHealth = pHeadSelectedCity.getCityHealth()
-				iHealthChange = pHeadSelectedCity.getCityHealthChange()
-				szBuffer = u"<font=4>" + u"%i%c" % (iHealth, gc.getYieldInfo(YieldTypes.YIELD_HEALTH).getChar()) + u"</font>"
-				szBuffer += u"<font=3>" + u"<color="
-				if iHealthChange > 0: # Green
-					szBuffer += u"0,255,0" + u">("+str(iHealthChange)+u")" + u"</color>" + u"</font>"
-				elif iHealthChange < 0: # Red
-					szBuffer += u"255,0,0" + u">("+str(iHealthChange)+u")" + u"</color>" + u"</font>"
+				szBufferCurrentHealth = u"<font=3>" + u"<color="
+				if iHealth > 0: # Green
+					szBufferCurrentHealth += u"0,255,0" + u">" +str(iHealth) + u"</color>" + u"</font>"
+				elif iHealth < 0: # Red
+					szBufferCurrentHealth += u"255,0,0" + u">" + str(iHealth) + u"</color>" + u"</font>"
 				else: # Yellow
-					szBuffer += u"255,255,0" + u">("+str(iHealthChange)+u")" + u"</color>" + u"</font>"
+					szBufferCurrentHealth += u"255,255,0" + u">" + str(iHealth) + u"</color>" + u"</font>"
 				
-				#screen.setLabel("CrossesText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 70 / 100, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_CROSSES, -1 )
-				screen.setLabel("HealthText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 31 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_HEALTH, -1 )
+				#get the coloured string for change of City Health
+				iHealthChange = pHeadSelectedCity.getCityHealthChange()
+				szBufferHealthChange = u"<font=3>" + u"<color="
+				if iHealthChange > 0: # Green
+					#not enough space for a + sign
+					#szBufferHealthChange += u"0,255,0" + u">(+"+str(iHealthChange)+u")" + u"</color>" + u"</font>"
+					szBufferHealthChange += u"0,255,0" + u">("+str(iHealthChange)+u")" + u"</color>" + u"</font>"
+				elif iHealthChange < 0: # Red
+					szBufferHealthChange += u"255,0,0" + u">("+str(iHealthChange)+u")" + u"</color>" + u"</font>"
+				else: # Yellow
+					szBufferHealthChange += u"255,255,0" + u">("+str(iHealthChange)+u")" + u"</color>" + u"</font>"
 				
+				#get the Health Icon String
+				szBufferHealthIcon = u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_HEALTH).getChar()) + u"</font>"
+					
+				#now add them all together and display on top of the Screen
+				szBuffer = szBufferCurrentHealth + szBufferHealthChange +szBufferHealthIcon
+				screen.setLabel("HealthText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 32 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_HEALTH, -1 )
+
 			# CITY HAPPINESS vs UNHAPPINESS
 				pHeadSelectedCity.updateCityHappiness()
 				pHeadSelectedCity.updateCityUnHappiness()
@@ -2798,43 +2825,54 @@ class CvMainInterface:
 				
 				if iHappiness > iUnhappiness: # Green and we use Icon Happiness
 					iTotalHap = iHappiness - iUnhappiness
-					szBufferTotal = u"<font=4>" + u" <color="u"0,255,0" + u">"+str(iTotalHap) + u"</color>" + u"</font>"
-					szBufferTotal += u"<font=4>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar()) + u"</font>"
-					szBufferTotal += u"<font=4>" + u"=" + u"</font>"
-					screen.setLabel("TotalHappinessText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 69 / 99-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_HAPPINESS_POSITIVE, -1 )
+					szBufferTotal = u"<font=3>" + u"<color="u"0,255,0" + u">"+str(iTotalHap) + u"</color>" + u"</font>"
+					szBufferTotal += u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar()) + u"</font>"
+					szBufferTotal += u"<font=3>" + u"=" + u"</font>"
+					screen.setLabel("TotalHappinessText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 69 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_HAPPINESS_POSITIVE, -1 )
 				elif iUnhappiness > iHappiness: # Red and we use Icon Unhappiness
 					iTotalUnhap = iUnhappiness - iHappiness
-					szBufferTotal = u"<font=4>" + u" <color="u"255,0,0" + u">"+str(iTotalUnhap) + u"</color>" + u"</font>"
-					szBufferTotal += u"<font=4>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_UNHAPPINESS).getChar()) + u"</font>"
-					szBufferTotal += u"<font=4>" + u"=" + u"</font>"
-					screen.setLabel("TotalHappinessText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 69 / 99-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_HAPPINESS_NEGATIVE, -1 )
+					szBufferTotal = u"<font=3>" + u"<color="u"255,0,0" + u">"+str(iTotalUnhap) + u"</color>" + u"</font>"
+					szBufferTotal += u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_UNHAPPINESS).getChar()) + u"</font>"
+					szBufferTotal += u"<font=3>" + u"=" + u"</font>"
+					screen.setLabel("TotalHappinessText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 69 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_HAPPINESS_NEGATIVE, -1 )
 				else: # Yellow and we use Icon Happiness
 					iTotalZeroHap = 0
-					szBufferTotal = u"<font=4>" + u" <color="u"255,255,0" + u">" + str(iTotalZeroHap) + u"</color>" + u"</font>"
-					szBufferTotal += u"<font=4>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar()) + u"</font>"
-					szBufferTotal += u"<font=4>" + u"=" + u"</font>"
-					screen.setLabel("TotalHappinessText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 69 / 99-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_HAPPINESS_ZERO, -1 )
+					szBufferTotal = u"<font=3>" + u"<color="u"255,255,0" + u">" + str(iTotalZeroHap) + u"</color>" + u"</font>"
+					szBufferTotal += u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar()) + u"</font>"
+					szBufferTotal += u"<font=3>" + u"=" + u"</font>"
+					screen.setLabel("TotalHappinessText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 69 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_HAPPINESS_ZERO, -1 )
 				
-				szBufferHappiness = u"<font=4>" + u" " + u"</font>"
-				szBufferHappiness += u"<font=4>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar()) + u"</font>"
-				szBufferHappiness += u"<font=4>" + u"vs" + u"</font>"
-				screen.setLabel("HappinessText", "Background", szBufferHappiness, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 73 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_HAPPINESS, -1 )
+				szBufferHappiness = u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar()) + u"</font>"
+				szBufferHappiness += u"<font=3>" + u"-" + u"</font>"
+				screen.setLabel("HappinessText", "Background", szBufferHappiness, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 72 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_HAPPINESS, -1 )
 				
-				szBufferUnHappiness = u"<font=4>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_UNHAPPINESS).getChar()) + u" </font>"
-				screen.setLabel("UnhappinessText", "Background", szBufferUnHappiness, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 76 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_UNHAPPINESS, -1 )
+				szBufferUnHappiness = u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_UNHAPPINESS).getChar()) + u" </font>"
+				screen.setLabel("UnhappinessText", "Background", szBufferUnHappiness, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 74 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_UNHAPPINESS, -1 )
 				
-			# CITY EDUCATION PRODUCTION
-				iBooks = pHeadSelectedCity.calculateNetYield(YieldTypes.YIELD_EDUCATION)
-				szBuffer = u"<font=4>" + u"%i%c" % (iBooks, gc.getYieldInfo(YieldTypes.YIELD_EDUCATION).getChar()) + u"</font>"
-				#screen.setLabel("EducationText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 75 / 100, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_EDUCATION, -1 )
-				screen.setLabel("EducationText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 26 / 98 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_EDUCATION, -1 )
-				# R&R, Robert Surcouf Screen Resolution/Ratio - End
-
-			# CITY Culture PRODUCTION
-				iCulture = pHeadSelectedCity.getCultureRate() # RaR, ray, small correction
-				szBuffer = u"<font=4>" + u"%i%c" % (iCulture, gc.getYieldInfo(YieldTypes.YIELD_CULTURE).getChar()) + u"</font>"
-				#screen.setLabel("LibertyText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 30 / 100, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_BELLS, -1 )
-				screen.setLabel("CultureText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 80 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_CULTURE, -1 )
+			# WTP, ray, new Harbour System - START
+				if (pHeadSelectedCity.bShouldShowCityHarbourSystem()):
+				
+					iMaxHarbourSpace = pHeadSelectedCity.getCityHarbourSpace()
+					iUsedHarbourSpace = pHeadSelectedCity.getCityHarbourSpaceUsed()
+					iHalfMaxHarbourSpace = (iMaxHarbourSpace / 2)
+					
+					#green: less than 50 percent of the harbour space is full
+					if (iUsedHarbourSpace <= iHalfMaxHarbourSpace):
+						szBuffer = u"<font=3>" + u" <color="u"0,255,0" + u">"+ str(iUsedHarbourSpace) + u"(" + str(iMaxHarbourSpace) + u")" + u"</color>" + u"</font>"
+						szBuffer += u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.ANCHOR_CHAR)) + "</font>"
+						screen.setLabel("HarbourText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 78 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, NEW_HARBOUR_SYSTEM, -1 )
+					
+					# red: the harbour is completely full
+					elif (iUsedHarbourSpace >= iMaxHarbourSpace):
+						szBuffer = u"<font=3>" + u" <color="u"255,0,0" + u">"+ str(iUsedHarbourSpace) + u"(" + str(iMaxHarbourSpace) + u")" + u"</color>" + u"</font>"
+						szBuffer += u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.NO_ANCHOR_CHAR)) + "</font>"
+						screen.setLabel("HarbourText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 78 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, NEW_HARBOUR_SYSTEM, -1 )
+						
+					# yellow: more than half is full, but not completely
+					else:
+						szBuffer = u"<font=3>" + u" <color="u"255,255,0" + u">" + str(iUsedHarbourSpace) + u"(" + str(iMaxHarbourSpace) + u")" + u"</color>" + u"</font>"
+						szBuffer += u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.ANCHOR_CHAR)) + "</font>"
+						screen.setLabel("HarbourText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 78 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, NEW_HARBOUR_SYSTEM, -1 )
 				
 			# REBEL BAR FILL PERCENTAGE
 				fPercentage = float(pHeadSelectedCity.getRebelPercent() / 100.0)
@@ -2893,9 +2931,11 @@ class CvMainInterface:
 					szBuffer += u"/" + str(iMaxYield) + u")"
 #VET NewCapacity - end 1/1
 					szBuffer += u"</font>"
+					# WTP, ray, adding the Yield Icon for Trade Goods
+					szBuffer += u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar()) + u"</font>"
 					
 					#screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 83 / 100, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CITY_NAME, -1, -1 )
-					screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 86 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, VET_NEW_CAPACITY, -1 )
+					screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 87 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, VET_NEW_CAPACITY, -1 )
 					#screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 84 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 					
 				# R&R, Robert Surcouf VET NewCapacity - End
@@ -2928,6 +2968,7 @@ class CvMainInterface:
 				screen.hide("HammerText")
 				screen.hide("EducationText")
 				screen.hide("CultureText")
+				screen.hide("HarbourText")
 				# R&R, Robert Surcouf,START
 				screen.hide("StorageCapacityText")
 				# R&R, Robert Surcouf,END
@@ -3721,6 +3762,10 @@ class CvMainInterface:
 				#return localText.getText("TXT_KEY_YIELD_RATE", (gc.getPlayer(gc.getGame().getActivePlayer()).getYieldRate(YieldTypes.YIELD_CROSSES), gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar()))
 				return localText.getText("TXT_KEY_CONCEPT_NEW_STORAGE", ());
 # R&R, Robert Surcouf VET NewCapacity Help- End
+# WTP, ray, new Harbour System - START
+			elif iData1 == NEW_HARBOUR_SYSTEM:
+				return localText.getText("TXT_KEY_CONCEPT_NEW_HARBOUR_SYSTEM", ());
+# WTP, ray, new Harbour System - END
 # CITY HAPPINESS vs UNHAPPINESS - START
 			elif iData1 == HELP_TOTAL_HAPPINESS_POSITIVE:
 				return localText.getText("TXT_KEY_TOTAL_HAPPINESS_POSITIVE_EFFECTS", ());

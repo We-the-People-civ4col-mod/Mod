@@ -449,7 +449,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BOOBY_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Boobies[COLOR_REVERT] are a source of meat on remote islands and along the coast. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Boobies are seabirds, related to gannets. The English name "booby" comes from the Spanish slang term bobo, meaning "stupid", since these tame birds had a habit of landing on board sailing ships, where they were easily captured and eaten. Boobies hunt fish by diving from a height into the sea and pursuing their prey underwater.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Boobies[COLOR_REVERT] are a source of meat on remote islands and along the coast. Along with cormorants and pelicans, boobies have historically been one of the most abundant producers of guano, a fertilizer that dramatically increases farm yields.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Boobies are seabirds, related to gannets. They're known as guano producers. The word "guano" originates from the Andean indigenous language Quechua, which refers to dung used as an agricultural fertilizer. Archaeological evidence suggests that for well over 1,500 years Andean people collected guano from small islands off the desert coast of Peru to build up the soil. The English name "booby" comes from the Spanish slang term bobo, meaning "stupid", since these tame birds had a habit of landing on board sailing ships, where they were easily captured and eaten. Boobies hunt fish by diving from a height into the sea and pursuing their prey underwater.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tölpel[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
@@ -1026,7 +1026,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BOG_ORE</Tag>
-        <English>Ironstone</English>
+        <English>Bog Iron</English>
         <German>
             <Text>Raseneisenstein</Text>
             <Gender>Male</Gender>
@@ -1035,7 +1035,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BOG_ORE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][COLOR_HIGHLIGHT_TEXT]Ironstone[COLOR_REVERT] is a substitute for ore wherever richer deposits are too distant or otherwise inaccessible.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Ironstone, though widespread is a limited source of iron. It occurs as rock fragments with high metal content in groundwater soils ranging from silt to gravel.[PARAGRAPH:1]In Europe from the 15th century up to the Second World War ironstone was used for iron production in the absence of richer iron ore.</English>
+        <English>[BOLD]Strategy :[\BOLD][COLOR_HIGHLIGHT_TEXT]Bog iron[COLOR_REVERT] is a substitute for ore wherever richer deposits are too distant or otherwise inaccessible. It's easy to refine. Slag at L'Anse aux Meadows has much more iron than was smelted out of the ore, showing that Vikings processing the ore were not skilled, but also that iron processing knowledge was widespread.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Bog iron, or ironstone, was widely sought in colonial North America. The earliest known iron mines in North America are bog iron at St. John's, Newfoundland, in operation in 1578. The first mining efforts in Virginia occurred as early as 1608. Bog iron, though widespread, is a limited source of iron. It occurs as rock fragments with high metal content in groundwater soils ranging from silt to gravel. By 1694 the natural bog iron in Concord, Massachusetts, had been exhausted, and the land was sold for farming.[PARAGRAPH:1]In Europe from the 15th century up to the Second World War ironstone was used for iron production in the absence of richer ore.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moorerz[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>

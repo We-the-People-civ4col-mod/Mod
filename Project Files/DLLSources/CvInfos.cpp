@@ -2621,9 +2621,9 @@ int CvUnitInfo::NBMOD_GetTeachLevel() const
 //
 //------------------------------------------------------------------------------------------------------
 CvUnitInfo::CvUnitInfo() :
-// PatchMod: Berth size START
-m_iBerthSize(1),
-// PatchMod: Berth size END
+
+m_iBerthSize(1), // PatchMod: Berth size START
+m_iHarbourSpaceNeeded(0), // WTP, ray, new Harbour System - START
 
 /** NBMOD EDU **/
 m_iTeachLevel(3),
@@ -3566,9 +3566,8 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iDomainCargo);
 	stream->Read(&m_iCargoSpace);
 	stream->Read(&m_iRequiredTransportSize);
-	// PatchMod: Berth size START
-	stream->Read(&m_iBerthSize);
-	// PatchMod: Berth size END
+	stream->Read(&m_iBerthSize); // PatchMod: Berth size START
+	stream->Read(&m_iHarbourSpaceNeeded); // WTP, ray, new Harbour System - START
 	stream->Read(&m_iAssetValue);
 	stream->Read(&m_iPowerValue);
 	stream->Read(&m_iUnitClassType);
@@ -3794,9 +3793,8 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iDomainCargo);
 	stream->Write(m_iCargoSpace);
 	stream->Write(m_iRequiredTransportSize);
-	// PatchMod: Berth size START
-	stream->Write(m_iBerthSize);
-	// PatchMod: Berth size END
+	stream->Write(m_iBerthSize); // PatchMod: Berth size START
+	stream->Write(m_iHarbourSpaceNeeded); // WTP, ray, new Harbour System - START
 	stream->Write(m_iAssetValue);
 	stream->Write(m_iPowerValue);
 	stream->Write(m_iUnitClassType);
@@ -4086,9 +4084,8 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	m_iDomainCargo = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(&m_iCargoSpace, "iCargo");
 	pXML->GetChildXmlValByName(&m_iRequiredTransportSize, "iRequiredTransportSize");
-	// PatchMod: Berth size START
-	pXML->GetChildXmlValByName(&m_iBerthSize, "iBerthSize");
-	// PatchMod: Berth size END
+	pXML->GetChildXmlValByName(&m_iBerthSize, "iBerthSize"); // PatchMod: Berth size START
+	pXML->GetChildXmlValByName(&m_iHarbourSpaceNeeded, "iHarbourSpaceNeeded"); // WTP, ray, new Harbour System - START
 	pXML->GetChildXmlValByName(&m_iAssetValue, "iAsset");
 	pXML->GetChildXmlValByName(&m_iPowerValue, "iPower");
 	// Read the mesh groups elements
@@ -4934,6 +4931,7 @@ m_iMilitaryProductionModifier(0),
 m_iAssetValue(0),
 m_iPowerValue(0),
 m_iYieldStorage(0),
+m_iMaxHarbourSpaceProvided(0), // WTP, ray, new Harbour System - START
 m_iSpecialBuildingType(NO_SPECIALBUILDING),
 m_iIndexOf_NextBuildingType_In_SpecialBuilding(NO_BUILDING),
 m_iConquestProbability(0),
@@ -5089,6 +5087,12 @@ int CvBuildingInfo::getYieldStorage() const
 {
 	return m_iYieldStorage;
 }
+// WTP, ray, new Harbour System - START
+int CvBuildingInfo::getMaxHarbourSpaceProvided() const
+{
+	return m_iMaxHarbourSpaceProvided;
+}
+// WTP, ray, new Harbour System - END
 int CvBuildingInfo::getSpecialBuildingType() const
 {
 	return m_iSpecialBuildingType;
@@ -5382,6 +5386,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iAssetValue);
 	stream->Read(&m_iPowerValue);
 	stream->Read(&m_iYieldStorage);
+	stream->Read(&m_iMaxHarbourSpaceProvided); // WTP, ray, new Harbour System - START
 	stream->Read(&m_iSpecialBuildingType);
 	stream->Read(&m_iIndexOf_NextBuildingType_In_SpecialBuilding);
 	stream->Read(&m_iConquestProbability);
@@ -5477,6 +5482,7 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iAssetValue);
 	stream->Write(m_iPowerValue);
 	stream->Write(m_iYieldStorage);
+	stream->Write(m_iMaxHarbourSpaceProvided);	// WTP, ray, new Harbour System - START
 	stream->Write(m_iSpecialBuildingType);
 	stream->Write(m_iIndexOf_NextBuildingType_In_SpecialBuilding);
 	stream->Write(m_iConquestProbability);
@@ -5594,6 +5600,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iAssetValue, "iAsset");
 	pXML->GetChildXmlValByName(&m_iPowerValue, "iPower");
 	pXML->GetChildXmlValByName(&m_iYieldStorage, "iYieldStorage");
+	pXML->GetChildXmlValByName(&m_iMaxHarbourSpaceProvided, "iMaxHarbourSpaceProvided"); // WTP, ray, new Harbour System - START
 	pXML->GetChildXmlValByName(&m_fVisibilityPriority, "fVisibilityPriority");
 	pXML->SetVariableListTagPair(&m_aiLandPlotYieldChange, "LandPlotYieldChanges", NUM_YIELD_TYPES, 0); // R&R, ray, Landplot Yields
 	pXML->SetVariableListTagPair(&m_aiSeaPlotYieldChange, "SeaPlotYieldChanges", NUM_YIELD_TYPES, 0);
@@ -8156,6 +8163,9 @@ m_iGoodyUniqueRange(0),
 m_iFeatureGrowthProbability(0),
 m_iUpgradeTime(0),
 m_iDefenseModifier(0),
+m_iFoodModifierForCity(0), // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+m_iHammersModifierForCity(0), // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+m_iToolsModifierForCity(0), // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 m_iPillageGold(0),
 m_iImprovementPillage(NO_IMPROVEMENT),
 m_iImprovementUpgrade(NO_IMPROVEMENT),
@@ -8172,6 +8182,8 @@ m_bUpgradeRequiresFortify(false),
 m_bActsAsCity(true),
 m_bFort(true), // R&R, ray, Monasteries and Forts
 m_bMonastery(true), // R&R, ray, Monasteries and Forts
+m_bCanal(true), // WTP, ray, Canal - START
+m_bNotAllowedNextToSameAsItself(false), // WTP, ray, Not allowed next to itself - START
 m_bHillsMakesValid(false),
 m_bRiverSideMakesValid(false),
 m_bRequiresFlatlands(false),
@@ -8245,6 +8257,22 @@ int CvImprovementInfo::getDefenseModifier() const
 {
 	return m_iDefenseModifier;
 }
+
+// WTP, ray, Improvements give Bonus to their City - PART 2 - START
+int CvImprovementInfo::getFoodModifierForCity() const
+{
+	return m_iFoodModifierForCity;
+}
+int CvImprovementInfo::getHammersModifierForCity() const
+{
+	return m_iHammersModifierForCity;
+}
+int CvImprovementInfo::getToolsModifierForCity() const
+{
+	return m_iToolsModifierForCity;
+}
+// WTP, ray, Improvements give Bonus to their City - PART 2 - END
+
 int CvImprovementInfo::getPillageGold() const
 {
 	return m_iPillageGold;
@@ -8324,6 +8352,21 @@ bool CvImprovementInfo::isMonastery() const
 	return m_bMonastery;
 }
 // R&R, ray, Monasteries and Forts- END
+
+// WTP, ray, Canal - START
+bool CvImprovementInfo::isCanal() const
+{
+	return m_bCanal;
+}
+// WTP, ray, Canal - END
+
+// WTP, ray, Not allowed next to itself - START
+bool CvImprovementInfo::isNotAllowedNextToSameAsItself() const
+{
+	return m_bNotAllowedNextToSameAsItself;
+}
+// WTP, ray, Not allowed next to itself - END
+
 bool CvImprovementInfo::isHillsMakesValid() const
 {
 	return m_bHillsMakesValid;
@@ -8506,6 +8549,9 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iFeatureGrowthProbability);
 	stream->Read(&m_iUpgradeTime);
 	stream->Read(&m_iDefenseModifier);
+	stream->Read(&m_iFoodModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	stream->Read(&m_iHammersModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	stream->Read(&m_iToolsModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	stream->Read(&m_iPillageGold);
 	stream->Read(&m_iImprovementPillage);
 	stream->Read(&m_iImprovementUpgrade);
@@ -8521,6 +8567,8 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bActsAsCity);
 	stream->Read(&m_bFort); // R&R, ray, Monasteries and Forts
 	stream->Read(&m_bMonastery); // R&R, ray, Monasteries and Forts
+	stream->Read(&m_bCanal); // WTP, ray, Canal - START
+	stream->Read(&m_bNotAllowedNextToSameAsItself);// WTP, ray, Not allowed next to itself - START
 	stream->Read(&m_bHillsMakesValid);
 	stream->Read(&m_bRiverSideMakesValid);
 	stream->Read(&m_bRequiresFlatlands);
@@ -8586,6 +8634,9 @@ void CvImprovementInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iFeatureGrowthProbability);
 	stream->Write(m_iUpgradeTime);
 	stream->Write(m_iDefenseModifier);
+	stream->Write(m_iFoodModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	stream->Write(m_iHammersModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	stream->Write(m_iToolsModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	stream->Write(m_iPillageGold);
 	stream->Write(m_iImprovementPillage);
 	stream->Write(m_iImprovementUpgrade);
@@ -8601,6 +8652,8 @@ void CvImprovementInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bActsAsCity);
 	stream->Write(m_bFort); // R&R, ray, Monasteries and Forts
 	stream->Write(m_bMonastery); // R&R, ray, Monasteries and Forts
+	stream->Write(m_bCanal); // WTP, ray, Canal - START
+	stream->Write(m_bNotAllowedNextToSameAsItself);// WTP, ray, Not allowed next to itself - START
 	stream->Write(m_bHillsMakesValid);
 	stream->Write(m_bRiverSideMakesValid);
 	stream->Write(m_bRequiresFlatlands);
@@ -8653,6 +8706,8 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bActsAsCity, "bActsAsCity");
 	pXML->GetChildXmlValByName(&m_bFort, "bFort"); // R&R, ray, Monasteries and Forts
 	pXML->GetChildXmlValByName(&m_bMonastery, "bMonastery"); // R&R, ray, Monasteries and Forts
+	pXML->GetChildXmlValByName(&m_bCanal, "bCanal"); // WTP, ray, Canal - START
+	pXML->GetChildXmlValByName(&m_bNotAllowedNextToSameAsItself, "bNotAllowedNextToSameAsItself"); // WTP, ray, Not allowed next to itself - START
 	pXML->GetChildXmlValByName(&m_bHillsMakesValid, "bHillsMakesValid");
 	pXML->GetChildXmlValByName(&m_bRiverSideMakesValid, "bRiverSideMakesValid");
 	pXML->GetChildXmlValByName(&m_bRequiresFlatlands, "bRequiresFlatlands");
@@ -8671,6 +8726,9 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iFeatureGrowthProbability, "iFeatureGrowth");
 	pXML->GetChildXmlValByName(&m_iUpgradeTime, "iUpgradeTime");
 	pXML->GetChildXmlValByName(&m_iDefenseModifier, "iDefenseModifier");
+	pXML->GetChildXmlValByName(&m_iFoodModifierForCity, "iFoodModifierForCity"); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	pXML->GetChildXmlValByName(&m_iHammersModifierForCity, "iHammersModifierForCity"); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	pXML->GetChildXmlValByName(&m_iToolsModifierForCity, "iToolsModifierForCity"); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	pXML->GetChildXmlValByName(&m_iPillageGold, "iPillageGold");
 	pXML->GetChildXmlValByName(&m_bOutsideBorders, "bOutsideBorders");
 	// Super Forts begin *XML*
@@ -16482,6 +16540,14 @@ int CvUnitInfo::getBerthSize() const
 	return m_iBerthSize;
 }
 // PatchMod: Berth size END
+
+// WTP, ray, new Harbour System - START
+int CvUnitInfo::getHarbourSpaceNeeded() const
+{
+	return m_iHarbourSpaceNeeded;
+}
+// WTP, ray, new Harbour System - END
+
 // PatchMod: Achievements START
 CvAchieveInfo::CvAchieveInfo() :
 	m_bActive(false),
