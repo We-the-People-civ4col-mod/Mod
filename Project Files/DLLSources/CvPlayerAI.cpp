@@ -9418,6 +9418,14 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 		int iStored = pCity->getYieldStored(eYield);
 	
 		int iMaxCapacity = (eYield == YIELD_FOOD) ? pCity->growthThreshold() : pCity->getMaxYieldCapacity();
+
+		// WTP, ray, just to be save e.g. if getMaxYieldCapacity is really 0 - START
+		if (iMaxCapacity == 0)
+		{
+			iMaxCapacity = 300;
+		}
+		// WTP, ray, just to be save e.g. if getMaxYieldCapacity is really 0 - END
+
 		// transport feeder - start - Nightinggale
 		//int iMaintainLevel = pCity->getMaintainLevel(eYield);
 		int iMaintainLevel = pCity->getAutoMaintainThreshold(eYield);
@@ -9452,20 +9460,21 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 				iMaxCapacity = (eYield == YIELD_FOOD) ? pCity->growthThreshold() : pCity->getMaxYieldCapacity();
 				FAssert(iMaxCapacity > 0);
 
-//VET NewCapacity - begin 4/8			
+				// WTP, ray, just to be save e.g. if getMaxYieldCapacity is really 0 - START
+				if (iMaxCapacity == 0)
+				{
+					iMaxCapacity = 300;
+				}
+				// WTP, ray, just to be save e.g. if getMaxYieldCapacity is really 0 - END
+
+
+//VET NewCapacity - begin 4/8
 				if (GC.getNEW_CAPACITY())
 				{
 					iValue *= 50 + ((100 * iStored) / std::max(1, iMaxCapacity));
 					int iMax = iMaxCapacity * 9 / 10;
 					if (iTotalStored >= iMax)
-					{						
-						// WTP, ray, just to be save e.g. if getMaxYieldCapacity is really 0 - START
-						if (iMax == 0)
-						{
-							iMax = 1;
-						}
-						// WTP, ray, just to be save e.g. if getMaxYieldCapacity is really 0 - END
-
+					{
 						iValue *= 125 + ((100 * iMax) / iMax);
 						iValue /= 100;
 					}
