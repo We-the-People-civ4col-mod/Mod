@@ -1324,8 +1324,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HEALTH_CITY_PLOT_CHANGE</Tag>
-        <English>%s1 City Location = %d2%F3</English>
-        <German>%s1 durch Standort = %d2%F3</German>
+        <English>%s1 by City Location = %d2%F3</English>
+        <German>%s1 by durch Standort = %d2%F3</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HEALTH_RESSOURCE_CHANGE</Tag>
