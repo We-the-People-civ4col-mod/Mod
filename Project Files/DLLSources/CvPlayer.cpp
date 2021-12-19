@@ -21866,7 +21866,24 @@ void CvPlayer::checkForMilitiaOrUnrest()
 	{
 		if (pLoopCity->getPopulation() >= minCitySize && !pLoopCity->isDisorder()) // check if city big enough and not in disorder
 		{
-			if(pLoopCity->plot()->getNumDefenders(getID()) == 0) // is this city undefended
+			// WTP, ray, now checking only for armed Units - START
+			// read this in the mod of Ramstormp, had fogotten to check that defenders need to be armed
+			// we count now actually only the units that can fight
+
+			bool bCityDefendersFound = false;
+			CvPlot* pPlot = pLoopCity->plot();
+			for (int i = 0; i < pPlot->getNumUnits(); ++i)
+			{
+				CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);
+				// we check for a Land Unit that can fight on that plot and is from our own Player
+				if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack() && pLoopUnit->getOwnerINLINE() == pLoopCity->getOwnerINLINE())
+				{
+					bCityDefendersFound = true;
+					break;
+				}
+			}
+
+			if(bCityDefendersFound == false) // is this city undefended
 			{
 				int foodQty = gamespeedMod;
 

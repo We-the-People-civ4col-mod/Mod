@@ -7442,7 +7442,7 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 			pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
 			// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
-			if ((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->baseCombatStr() > 2) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20))
+			if ((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20))
 			{
 				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canPromote((PromotionTypes)kUnitInfo.getLeaderPromotion(), getID()))
 				{
@@ -7455,7 +7455,7 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 	{
 		CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).getUnit(iUnitId);
 		// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
-		if ((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->baseCombatStr() > 2) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20))
+		if ((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20))
 		{
 			if (pUnit && pUnit != this && pUnit->canPromote((PromotionTypes)kUnitInfo.getLeaderPromotion(), getID()))
 			{
@@ -7493,8 +7493,8 @@ int CvUnit::canGiveExperience(const CvPlot* pPlot) const
 			// Army Case with Great General
 			else if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_GENERAL"))
 			{
-				// not really happy about the > 2 being hardcoded but for now it prevents normal settlers which is good
-				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->baseCombatStr() > 2)
+				// here we could easily switch to canAttack
+				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->canAttack())
 				{
 					++iNumUnits;
 				}
@@ -7554,7 +7554,7 @@ bool CvUnit::giveExperience()
 				else if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_GENERAL"))
 				{
 					// not really happy about the > 2 being hardcoded but for now it prevents normal settlers which is good
-					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->baseCombatStr() > 2)
+					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->canAttack())
 					{
 						pUnit->changeExperience(i < iRemainder ? iMinExperiencePerUnit + 1 : iMinExperiencePerUnit);
 						pUnit->testPromotionReady();

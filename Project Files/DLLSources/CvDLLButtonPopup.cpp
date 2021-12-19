@@ -347,7 +347,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 						pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
 						// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
-						if ((pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->baseCombatStr() > 2) || (pLoopUnit->getDomainType() == DOMAIN_SEA && pLoopUnit->baseCombatStr() >= 20))
+						if ((pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack()) || (pLoopUnit->getDomainType() == DOMAIN_SEA && pLoopUnit->baseCombatStr() >= 20))
 						{
 							if (pLoopUnit->canPromote((PromotionTypes) info.getData1(), info.getData2()))
 							{
@@ -2201,7 +2201,7 @@ bool CvDLLButtonPopup::launchLeadUnitPopup(CvPopup* pPopup, CvPopupInfo &info)
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 
 		// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
-		if ((pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->baseCombatStr() > 2) || (pLoopUnit->getDomainType() == DOMAIN_SEA && pLoopUnit->baseCombatStr() >= 20))
+		if ((pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack()) || (pLoopUnit->getDomainType() == DOMAIN_SEA && pLoopUnit->baseCombatStr() >= 20))
 		{
 			if (pLoopUnit->canPromote((PromotionTypes) info.getData1(), info.getData2()))
 			{
