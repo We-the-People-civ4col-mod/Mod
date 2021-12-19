@@ -7502,7 +7502,7 @@ int CvUnit::canGiveExperience(const CvPlot* pPlot) const
 			
 			// WTP, ray we keep this for safety in case something ever changes
 			// old default case if we ever have something else than a Great General Unitclass / Great Admiral Unitclass
-			else if (eLeaderUnitClassType != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") && eLeaderUnitClassType != GC.getDefineINT("UNITCLASS_GREAT_GENERAL"))
+			else
 			{
 				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny())
 				{
@@ -7563,7 +7563,7 @@ bool CvUnit::giveExperience()
 
 				// WTP, ray we keep this for safety in case something ever changes
 				// old default case if we ever have something else than a Great General Unitclass / Great Admiral Unitclass
-				else if (eLeaderUnitClassType != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") && eLeaderUnitClassType != GC.getDefineINT("UNITCLASS_GREAT_GENERAL"))
+				else
 				{
 					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny())
 					{
