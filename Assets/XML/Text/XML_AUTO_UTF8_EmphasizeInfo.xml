@@ -530,7 +530,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_PREMIUM_COATS</Tag>
-        <English>Deemphasize Premium Coats</English>
+        <English>Deemphasize Luxurious Coats</English>
         <French>Minimiser Manteaux de qualité</French>
         <German>Schwerpunkt Teure Pelzkleidung aufheben</German>
         <Italian>De-accentuare abbigliamento di pelliccia costoso</Italian>
@@ -538,7 +538,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_PREMIUM_FUR</Tag>
-        <English>Deemphasize Premium Furs</English>
+        <English>Deemphasize Luxury Furs</English>
         <French>Minimiser Fourrure de qualité</French>
         <German>Schwerpunkt Hochwertige Pelze aufheben</German>
         <Italian>De-accentuare pellicce di alta qualità</Italian>
@@ -650,7 +650,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_VALUABLE_WOOD</Tag>
-        <English>Deemphasize Valuable Wood</English>
+        <English>Deemphasize Exotic Wood</English>
         <French>Minimiser le Bois précieux</French>
         <German>Schwerpunkt Edelholz aufheben</German>
         <Italian>De-accentuare legno pregiato</Italian>
@@ -698,7 +698,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_PREMIUM_COATS</Tag>
-        <English>Emphasize Premium Coats</English>
+        <English>Emphasize Luxurious Coats</English>
         <French>Privilégier Manteaux de qualité</French>
         <German>Schwerpunkt Teure Pelzkleidung</German>
         <Italian>Accentuare abbigliamento di pelliccia costoso</Italian>
@@ -706,7 +706,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_PREMIUM_FUR</Tag>
-        <English>Emphasize Premium Furs</English>
+        <English>Emphasize Luxury Furs</English>
         <French>Privilégier Fourrure de qualité</French>
         <German>Schwerpunkt Hochwertige Pelze</German>
         <Italian>Accentuare pellicce di alta qualità</Italian>
@@ -818,7 +818,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_VALUABLE_WOOD</Tag>
-        <English>Emphasize Valuable Wood</English>
+        <English>Emphasize Exotic Wood</English>
         <French>Privilégier le Bois précieux</French>
         <German>Schwerpunkt Edelholz</German>
         <Italian>Accentuare legno pregiato</Italian>
