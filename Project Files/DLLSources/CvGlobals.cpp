@@ -317,6 +317,11 @@ m_FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS(0),
 m_TIMER_FESTIVITIES_OR_UNRESTS(0),
 // WTP, ray, Happiness - END
 
+/// GameFont XML control - start - Nightinggale
+m_iFontSymbolBonusOffset(0),
+m_iFontSymbolCustomOffset(0),
+/// GameFont XML control - end - Nightinggale
+
 m_MAX_TREASURE_AMOUNT(0), // WTP, merge Treasures, of Raubwuerger
 m_TRADE_POST_GOLD_PER_NATIVE(0), // WTP, ray, Native Trade Posts - START
 
@@ -2800,6 +2805,11 @@ void CvGlobals::cacheGlobals()
 	m_TIMER_FESTIVITIES_OR_UNRESTS = getDefineINT("TIMER_FESTIVITIES_OR_UNRESTS");
 	// WTP, ray, Happiness - END
 
+	/// GameFont XML control - start - Nightinggale
+	m_iFontSymbolBonusOffset = getDefineINT("FONT_SYMBOL_BONUS_OFFSET");
+	m_iFontSymbolCustomOffset = getDefineINT("FONT_SYMBOL_CUSTOM_OFFSET");
+	/// GameFont XML control - end - Nightinggale
+
 	m_MAX_TREASURE_AMOUNT = getDefineINT("MAX_TREASURE_AMOUNT"); // WTP, merge Treasures, of Raubwuerger
 	m_TRADE_POST_GOLD_PER_NATIVE = getDefineINT("TRADE_POST_GOLD_PER_NATIVE"); // WTP, ray, Native Trade Posts - START
 
@@ -3103,3 +3113,14 @@ void CvGlobals::cleanInfoStrings()
 		}
 	}
 }
+
+/// GameFont XML control - start - Nightinggale
+int CvGlobals::getFontSymbolBonusOffset() const
+{
+	return m_iFontSymbolBonusOffset;
+}
+int CvGlobals::getFontSymbolCustomOffset() const
+{
+	return m_iFontSymbolCustomOffset;
+}
+/// GameFont XML control - end - Nightinggale

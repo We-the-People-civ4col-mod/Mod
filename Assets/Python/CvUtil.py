@@ -379,15 +379,20 @@ OtherFontIcons = { 'happy' : FontSymbols.HAPPY_CHAR,
 				'power' : FontSymbols.POWER_CHAR,
 				'gold' : FontSymbols.GOLD_CHAR,
 				'rebel' : FontSymbols.REBEL_CHAR,
+				'attitude furious' : FontSymbols.ATTITUDE_FURIOUS_CHAR,
+				'attitude annoyed' : FontSymbols.ATTITUDE_ANNOYED_CHAR,
+				'attitude cautious' : FontSymbols.ATTITUDE_CAUTIOUS_CHAR,
+				'attitude pleased' : FontSymbols.ATTITUDE_PLEASED_CHAR,
+				'attitude friendly' : FontSymbols.ATTITUDE_FRIENDLY_CHAR,
 				# TAC - Trade Routes Advisor - koma13 - START
 				'checkbox' : FontSymbols.CHECKBOX_CHAR,
 				'checkboxSelected' : FontSymbols.CHECKBOX_SELECTED_CHAR,
-				'anchor' : FontSymbols.ANCHOR_CHAR,
-				'anchorEurope' : FontSymbols.ANCHOR_EUROPE_CHAR,
 				'export' : FontSymbols.EXPORT_CHAR,
 				'import' : FontSymbols.IMPORT_CHAR,
 				'exportImport' : FontSymbols.EXPORT_IMPORT_CHAR,
+				'anchor' : FontSymbols.ANCHOR_CHAR,
 				'noAnchor' : FontSymbols.NO_ANCHOR_CHAR,
+				'anchorEurope' : FontSymbols.ANCHOR_EUROPE_CHAR,
 				# TAC - Trade Routes Advisor - koma13 - END
 				}
 

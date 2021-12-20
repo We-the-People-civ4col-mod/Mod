@@ -3450,7 +3450,7 @@ class CvMainInterface:
 										if (not gc.getPlayer(ePlayer).isHuman() and ePlayer != gc.getGame().getActivePlayer()):
 										# gc.getPlayer(ePlayer).isNative()):
 											iAtt = gc.getPlayer(ePlayer).AI_getAttitude(gc.getGame().getActivePlayer())
-											cAtt = unichr(CyGame().getSymbolID(FontSymbols.NO_ANCHOR_CHAR)+iAtt+1)
+											cAtt = unichr(CyGame().getSymbolID(FontSymbols.ATTITUDE_FURIOUS_CHAR) + iAtt)
 											#iGold = gc.getPlayer(ePlayer).getGold()
 											szBuffer += " " +cAtt #+ " (" +u"%d" %iGold  + localText.getText("[ICON_GOLD]", ()) + ")"
 										#elif (not gc.getPlayer(ePlayer).isHuman() and ePlayer != gc.getGame().getActivePlayer() and gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_MORE_VARIABLES_HIDDEN)):

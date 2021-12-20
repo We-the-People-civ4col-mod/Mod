@@ -8625,8 +8625,6 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 	// WTP, ray, Happiness - END
 
 	// WTP, ray, new Harbour System - START
-	// for some reason this does not work - it displays "NO_ANCHOR_CHAR" as "?"
-	/*
 	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && pCity->plot()->isCoastalLand() && pCity->isHuman())
 	{
 		int iCityHarborSpaceUsed = pCity->getCityHarbourSpaceUsed();
@@ -8637,7 +8635,6 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 			szBuffer.append(CvWString::format(L" %c", gDLL->getSymbolID(NO_ANCHOR_CHAR)));
 		}
 	}
-	*/
 	// WTP, ray, new Harbour System - END
 
 	// XXX out this in bottom bar???

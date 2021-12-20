@@ -87,7 +87,7 @@ public:
 	void verifyDeals();
 
 	DllExport void getGlobeviewConfigurationParameters(TeamTypes eTeam, bool& bStarsVisible, bool& bWorldIsRound);
-	int getSymbolID(int iSymbol);
+	int getSymbolID(FontSymbols eSymbol);
 
 	int getProductionPerPopulation(HurryTypes eHurry);
 

@@ -1128,52 +1128,11 @@ class CvDomesticAdvisor:
 			if infoPointer.getMissionaryChar() == iIndex:
 				return infoPointer
 			
-
-		if iIndex >= CyGame().getSymbolID(FontSymbols.HAPPY_CHAR) and iIndex <= (CyGame().getSymbolID(FontSymbols.NO_ANCHOR_CHAR) + 5):
-		
-				list = [ "HAPPY_CHAR",
-				"UNHAPPY_CHAR",
-				"HEALTHY_CHAR",
-				"UNHEALTHY_CHAR",
-				"BULLET_CHAR",
-				"STRENGTH_CHAR",
-				"MOVES_CHAR",
-				"RELIGION_CHAR",
-				"STAR_CHAR",
-				"SILVER_STAR_CHAR",
-				"TRADE_CHAR",
-				"DEFENSE_CHAR",
-				"GREAT_PEOPLE_CHAR",
-				"BAD_GOLD_CHAR",
-				"BAD_FOOD_CHAR",
-				"EATEN_FOOD_CHAR",
-				"GOLDEN_AGE_CHAR",
-				"ANGRY_POP_CHAR",
-				"OPEN_BORDERS_CHAR",
-				"DEFENSIVE_PACT_CHAR",
-				"MAP_CHAR",
-				"OCCUPATION_CHAR",
-				"REBEL_CHAR",
-				"GOLD_CHAR",
-				"POWER_CHAR",
-				"CHECKBOX_CHAR",
-				"CHECKBOX_SELECTED_CHAR",
-				"ANCHOR_CHAR",
-				"ANCHOR_EUROPE_CHAR",
-				"EXPORT_CHAR",
-				"IMPORT_CHAR",
-				"EXPORT_IMPORT_CHAR",
-				"NO_ANCHOR_CHAR",
-
-				"ATTITUDE_FURIOUS (big not used)",
-				"ATTITUDE_ANNOYED (big not used)",
-				"ATTITUDE_CAUTIOUS (big not used)",
-				"ATTITUDE_PLEASED (big not used)",
-				"ATTITUDE_FRIENDLY (big not used)",
-				]
-		
-				return list[iIndex - CyGame().getSymbolID(FontSymbols.HAPPY_CHAR)]
-
+		for iSymbol in range(FontSymbols.MAX_NUM_SYMBOLS):
+			if iIndex == CyGame().getSymbolID(iSymbol):
+				for strKey in (CvUtil.OtherFontIcons.keys()):
+					if (CvUtil.OtherFontIcons[strKey] == iSymbol):
+						return strKey
 		
 		return None
 	

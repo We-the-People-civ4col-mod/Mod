@@ -868,6 +868,8 @@ public:
 
 	/// GameFont XML control - start - Nightinggale
 	void setupGameFontChars();
+	int getFontSymbolBonusOffset() const;
+	int getFontSymbolCustomOffset() const;
 	/// GameFont XML control - end - Nightinggale
 
 	DllExport float getCAMERA_MIN_YAW();
@@ -1416,6 +1418,11 @@ protected:
 	int m_FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS;
 	int m_TIMER_FESTIVITIES_OR_UNRESTS;
 	// WTP, ray, Happiness - END
+
+	/// GameFont XML control - start - Nightinggale
+	int  m_iFontSymbolBonusOffset;
+	int  m_iFontSymbolCustomOffset;
+	/// GameFont XML control - end - Nightinggale
 
 	int m_MAX_TREASURE_AMOUNT; // WTP, merge Treasures, of Raubwuerger
 	int m_TRADE_POST_GOLD_PER_NATIVE; // WTP, ray, Native Trade Posts - START

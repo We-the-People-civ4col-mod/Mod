@@ -1,0 +1,16 @@
+Important info regarding modding GameFont
+by Nightinggale
+
+The exe has some hidden limitations regarding GameFont, particularly when it comes to city billboards.
+More specifically ID assigning uses different code than what is used everywhere else. This can result in the GameFont debug output working while billboards doesn't.
+This should not be a problem if the following restrictions are obeyed:
+- do not add or remove boxes prior to vanilla symbols
+- anything after vanilla symbols can't be used on billboards
+- vanilla symbols aren't moved (IDs hardcoded in exe, at least the bullet char is)
+
+GlobalDefineALT contains some GameFont offsets. This is to move IDs not used by billboards out of the billboard only range as well as moving custom symbols into the billboard range.
+
+The exe assigns IDs during startup. Preventing it from doing so will crash the game. However we are free to change after the exe is done.
+Changing GameFont IDs should be done in CvGlobals::setupGameFontChars(), which is called right after the exe is done doing whatever it is doing.
+
+No known upper limit for GameFont icons as long as the icons aren't used on Billboards.
