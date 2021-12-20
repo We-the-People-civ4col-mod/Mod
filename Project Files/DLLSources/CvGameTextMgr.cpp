@@ -8632,7 +8632,10 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 
 		if (iCityHarborSpaceUsed >= iCityHarborSpaceMax)
 		{
-			szBuffer.append(CvWString::format(L" %c", gDLL->getSymbolID(NO_ANCHOR_CHAR)));
+			// CAREFUL !!! This Icon is not a standard Icon (of Vanilla) that the exe knows. Thus we needed to have a workaround.
+			// do not use "gDLL->getSymbolID(NO_ANCHOR_CHAR)" like you would for normal FontIcons (of Vanilla)
+			// use instead "GC.getGameINLINE().getSymbolID(NO_ANCHOR_CHAR)" because it applies our modded code for FontIcons
+			szBuffer.append(CvWString::format(L" %c", GC.getGameINLINE().getSymbolID(NO_ANCHOR_CHAR)));
 		}
 	}
 	// WTP, ray, new Harbour System - END
