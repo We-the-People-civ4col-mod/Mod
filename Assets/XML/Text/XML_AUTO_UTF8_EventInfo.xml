@@ -126,7 +126,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BISHOP_APPOINTMENT_2</Tag>
-        <English>That is a lot of money for our colonies to pay. Although having a bishop will one day become necessary, we are still only few and currently cannot afford it.</English>
+        <English>That is a lot of money for our colonies to pay. Although having a bishop will one day become necessary, we are too few right now to afford it.</English>
         <French>Cela représente beaucoup d'argent à payer pour nos colonies. Bien qu'un évêque nous sera forcément un jour nécessaire, nous sommes encore peu nombreux et ne pouvons pas nous le permettre pour le moment.</French>
         <German>Das ist sehr viel Geld, dass wir zahlen müssten. Obwohl ein Bischof sicherlich irgendwann angemessen sein wird, sind wir momentan noch wenige und können uns das nicht leisten.</German>
     </TEXT>
@@ -156,7 +156,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BOOK_MORMON_2</Tag>
-        <English>Do not stop him, the Lord works in mysterious ways. To each his own faith, as long as they pay their taxes ...</English>
+        <English>Do not stop him. The Lord works in mysterious ways. To each his own faith, as long as they pay their taxes ...</English>
         <French>Ne l'arrêtez pas, les voies du Seigneur sont impénétrables. A chacun sa foi, tant que chacun paye ses taxes ...</French>
         <German>Lasst ihn gewähren, Gottes Wege sind unergründlich. Ein jeder mag seinen Glauben leben, wie es ihm beliebt, solange er seine Steuern zahlt ...</German>
     </TEXT>
@@ -180,7 +180,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BROKEN_AXIS_1</Tag>
-        <English>Ah well, pay somebody to help repair the axle. We need that transport on the roads again soon.</English>
+        <English>Ah well, pay somebody to help repair the axle. We need that transport to get moving soon.</English>
         <French>Très bien, payons quelqu'un pour qu'il apporte son aide. Nous avons besoin que ces chariots reprennent rapidement la route.</French>
         <German>Nun gut, bezahlt jemanden damit er bei der Reparatur hilft. Wir brauchen dieses Fahrzeug bald wieder auf der Strasse.</German>
     </TEXT>
@@ -276,13 +276,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CARPENTER_FAMILY_2</Tag>
-        <English>Perhaps his youngest brother, who is a farmer at the homestead of his parents, wishes to come.</English>
+        <English>Perhaps his youngest brother, a farmer at the parents' homestead, wants to come.</English>
         <French>Peut-être son frère plus jeune souhaite venir, celui qui est fermier dans la propriété de ses parents.</French>
         <German>Vielleicht möchte sein jüngerer Bruder, der noch auf dem elterlichen Hof arbeitet, nach Amerika kommen?</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CARPENTER_FAMILY_3</Tag>
-        <English>As I recall his cousin is on the run because he is a poacher. Does he want to come? But I cannot pay for his passage.</English>
+        <English>As I recall his cousin is on the run because he is a poacher. Does he want to come? Make it clear I won't pay for his passage.</English>
         <French>Je crois que son cousin est un braconnier en fuite. Peut-être souhaite-t-il venir ? Mais je ne peux pas payer pour son passage.</French>
         <German>Wurde sein Vetter nicht vom Landbüttel daheim als Wilderer gesucht? Nun, er kann hier gerne ein neues Leben anfangen. Für die Überfahrt hat er aber selber aufzukommen.</German>
     </TEXT>
@@ -342,7 +342,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COCA_PROBLEM_2</Tag>
-        <English>Leave us alone with such stupidities. One day you might even tell us that alcohol is dangerous as well.</English>
+        <English>Leave us alone with such stupidities. One day you might tell us that even alcohol is dangerous.</English>
         <French>Ce ne sont que des rumeurs. Quoi d'autres après ça ? Que l'alcool serait également dangereux pour la santé ? Cessons avec ces balivernes.</French>
         <German>Laßt uns mit solch einem Unsinn in Ruhe. Eines Tages werdet ihr uns noch erzählen, daß selbst Alkohol gefährlich sei.</German>
     </TEXT>
@@ -426,7 +426,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CONTAMINATED_WELL_1</Tag>
-        <English>That is bad news, but we currently cannot afford to help.</English>
+        <English>That is bad news, but at this time we cannot afford to help.</English>
         <French>C'est une mauvaise nouvelle, mais nous ne disposons pas des moyens pour aider.</French>
         <German>Das sind wahrhaft schlechte Nachrichten, aber im Moment können wir nicht helfen.</German>
     </TEXT>
@@ -518,7 +518,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DESPERATE_CONQUISTADORES_2</Tag>
-        <English>Those man were simply desperate. They will be put into our service. Such an incident will not happen again.</English>
+        <English>Those men were simply desperate. They will be put into our service. Such an incident will not happen again.</English>
         <French>Ces hommes étaient désespérés. Nous allons les mettre à notre service et un tel incident n'arrivera plus.</French>
         <German>Die Männer waren schlicht verzweifelt. Wir werden sie in uneren Dienst stellen und Sorge tragen, dass so etwas nicht wieder vorkommt.</German>
     </TEXT>
@@ -530,19 +530,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DIPLOMATIC_CONNECTIONS_2</Tag>
-        <English>We should better not risk angering our neighbours.</English>
+        <English>We'd better not risk angering our neighbours.</English>
         <French>Cela risque d'énerver nos voisins, ce n'est peut-être pas une bonne idée.</French>
         <German>Wir sollten es vermeiden unsere Nachbarn zu verärgern.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DISEASED_NATIVES_1</Tag>
-        <English>Send them some food. It's probably just the flu and they should recover.</English>
+        <English>Send them some food. It's probably just the flu. They should recover.</English>
         <French>Envoyez leur de la nourriture. Il s'agit probablement d'une mauvaise grippe contre laquelle les indigènes ne sont pas immunisés.</French>
         <German>Schickt ihnen etwas Nahrung. Es ist sicherlich nur eine kleine Erkältung und es geht ihnen bald besser.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DISEASED_NATIVES_2</Tag>
-        <English>They shall bring their diseased to our city. We will pay the doctors for their treatment.</English>
+        <English>They can bring their diseased to our city. We'll pay the doctors for their treatment.</English>
         <French>Qu'ils amènent leur malades dans notre ville. Nous allons prendre en charge leur traitement médical.</French>
         <German>Die Wilden sollen ihre Kranken in unsere Stadt bringen. Wir werden die Doktoren bezahlen um sie zu behandeln.</German>
     </TEXT>
@@ -720,7 +720,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_CATHEDRAL_4</Tag>
-        <English>It will take some time for him to earn our trust. He shall hunt in the forests and bring meat for our community.</English>
+        <English>It will take some time for him to earn our trust. He can hunt in the forests and bring back meat for our community.</English>
         <French>Il faudra du temps pour qu'il gagne notre confiance. Il chassera dans la forêt et ramènera la viande à notre communauté.</French>
         <German>Bis wir ihn in unserer Mitte aufnehmen, muss er sich unser Vertrauen erst verdienen. Er soll uns in den nahen Wäldern Fleisch beschaffen.</German>
     </TEXT>
@@ -810,13 +810,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_CATHEDRALS_DONE_5</Tag>
-        <English>Life in the colonies is arduous and has made many cold-hearted. Many a rough fellow grumbles that the pomp of the houses of worship is a waste and that every priest is a parasite. Send us some tough guys to teach these heretics piety!</English>
+        <English>Life in the colonies is arduous and has made people cold-hearted. Many a rough fellow grumbles that the pomp of the houses of worship is a waste and that every priest is a parasite. Send us some tough guys to teach these heretics piety!</English>
         <French>La vie dans les colonies est pénible et en a rendu plus d'un insensible. Plus d'un rude grogne que le faste des lieux de culte est un gaspillage et que chaque prêtre est un parasite. Envoyez-nous des durs à cuire pour enseigner la piété à ces hérétiques !</French>
         <German>Das Leben in den Kolonien ist beschwerlich und hat viele kaltherzig werden lassen. So mancher raue Gesell murrt, der Prunk der Gotteshäuser sei Verschwendung und jeder Pfaffe ein Schmarotzer. Schickt uns ein paar harte Burschen, um diesen Ketzern Frömmigkeit einzubleuen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_DOCKS</Tag>
-        <English>Well, we were planning to build many harbours anyway; but an additional reward shall be welcome.</English>
+        <English>Well, we were planning to build many harbours anyway; but an additional reward is always welcome.</English>
         <French>Bien, nous avions prévus de construire plusieurs ports de toute manière. Une récompense additionnelle ne peut être que la bienvenue.</French>
         <German>Wir wollten zwar sowieso mehrere Hafenstädte gründen, aber eine zusätzliche Belohnung ist natürlich sehr willkommen.</German>
     </TEXT>
@@ -948,25 +948,25 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GREAT_ARSENAL</Tag>
-        <English>If your colony is the first to build a Great Armoury in America, an interesting deal can be brokered for you, the negotiator announces. He would be back for the topping-out ceremony of the Great Armoury, and it would be advisable to have some gold available then.</English>
+        <English>The negotiator announces that if your colony is the first to build a Great Armoury in America, an interesting deal can be brokered for you. He plans to be back for the Great Armoury opening ceremony. It would be advisable to have some gold available then.</English>
         <French>Si votre colonie est la première à construire une grande armurerie en Amérique, un accord intéressant peut être négocié pour vous, annonce le négociateur. Il sera de retour pour la cérémonie d'inauguration de la Grande Armurerie, et il serait bon d'avoir de l'or disponible à ce moment-là.</French>
         <German>Falls Eure Kolonie die erste sei, die in Amerika ein Großes Zeughaus errichte, könne Euch ein interessantes Geschäft vermittelt werden, kündigt der Unterhändler an. Zum Richtfest des Großen Zeughauses komme er wieder, und es sei ratsam, dann etwas Gold zur Verfügung zu haben.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GREAT_ARSENAL_DONE_1</Tag>
-        <English>Two masterful gunsmiths from St. Petersburg can come to the New World, the negotiator offers you. Splendid!</English>
+        <English>The negotiator offers you two talented gunsmiths from St. Petersburg who want to come to the New World. Splendid!</English>
         <French>Deux armuriers compétents de Saint-Petersbourg peuvent venir aux Amériques et travailler pour vous.</French>
         <German>Zwei meisterliche Büchsenmacher aus Sankt Petersburg können in die Neue Welt kommen, bietet Euch der Unterhändler an. Famos!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GREAT_ARSENAL_DONE_2</Tag>
-        <English>Soon the Russian prince is to marry the daughter of the Prussian king. Now he wishes to get rid of certain young valets while assuring their discretion.</English>
+        <English>Soon the Russian prince is to marry the daughter of the Prussian king. Now he wishes to get rid of certain young fops while assuring their discretion.</English>
         <French>Bientôt le souverain russe va se marier à la fille du roi de Prusse. Il souhaite maintenant se débarrase de certains valets en toute discretion.</French>
         <German>Der russische Fürst heiratet in Bälde die Tochter des preußischen Königs. Vorab würde er gerne diskret einige junge Kammerdiener loswerden, deren Zutraulichkeiten jetzt nicht mehr erwünscht sind. Nun denn!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GREAT_ARSENAL_DONE_3</Tag>
-        <English>The Russian prince could spread the word through his envoys at the European courts how impressive your armoury is and that it is almost equal even to the one in Moscow. That sounds flattering!</English>
+        <English>The Russian prince could spread the word through his envoys at the European courts about your impressive armoury, how it's almost equal to the one in Moscow. That sounds flattering!</English>
         <French>Le prince russe pourrait faire savoir par l'intermédiaire de ses envoyés aux cours européennes combien votre arsenal était impressionnant et qu'il était presque égal à celui de Moscou. Ça a l'air flatteur !</French>
         <German>Der russische Fürst könne über seine Gesandten an den europäischen Höfen die Kunde verbreiten lassen, wie beeindruckend Euer Zeughaus sei und dass es selbst dem in Moskau fast gleichkomme. Das klingt schmeichelhaft!</German>
     </TEXT>
@@ -978,7 +978,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GREAT_TOOL_FACTORY</Tag>
-        <English>A vision after my own heart! Well, I will have this Great Tool Factory built, as the first production facility of its kind in America. Of course, I expect the artisans to honour this commitment ...</English>
+        <English>A vision after my own heart! Well, I will have this Great Tool Factory built, as the first of its kind in America. Of course, I expect the artisans to honour this commitment ...</English>
         <French>Une vision selon mon propre cœur ! Je ferai construire cette Hauts fourneaux, la première installation de production de ce type en Amérique. Bien sûr, j'attends des artisans qu'ils honorent cet engagement...</French>
         <German>Eine Vision nach meinem Geschmack! Wohlan, ich werde diese Große Eisenwarenfabrik errichten lassen, als erste Produktionsstätte dieser Art in Amerika. Natürlich erwarte ich, dass die Handwerkerschaft dieses Engagement honorieren wird ...</German>
     </TEXT>
@@ -996,13 +996,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GREAT_TOOL_FACTORY_DONE_3</Tag>
-        <English>Now it is time to fill the large factory hall with life. The guild masters should make their most capable sons available for the blacksmith's trade!</English>
+        <English>Now it's time to fill the large factory hall with life. Guild masters should encourage their most capable sons to enter the blacksmith's trade!</English>
         <French>Il est maintenant temps de remplir de vie le grand hall de l'usine. Les maîtres de guilde devraient mettre à disposition leurs fils les plus capables pour le métier de forgeron !</French>
         <German>Jetzt gilt es, die große Fabrikhalle mit Leben zu füllen. Die Zunftmeister sollen ihre tüchtigsten Söhne fürs Schmiedehandwerk zur Verfügung stellen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GREAT_TOOL_FACTORY_DONE_4</Tag>
-        <English>This factory will not only keep our civilian economy humming, but also boost the production of goods essential to the war effort. Let the workers in uniform do their duty at the workbenches! Let the world know that we are a defensible young nation.</English>
+        <English>This factory will not only keep our civilian economy humming, but also boost the production of goods essential to the war effort. Let the workers in uniform do their duty at the workbenches! The world will see that we may be a young nation, but we are well-defended.</English>
         <French>Cette usine permettra non seulement de faire tourner notre économie civile, mais aussi de stimuler la production de biens essentiels à l'effort de guerre. Laissez les travailleurs en uniforme faire leur travail à l'établi ! Faites savoir au monde que nous sommes une jeune nation défendable.</French>
         <German>Diese Fabrik wird nicht nur unsere zivile Wirtschaft zum Brummen bringen, sondern auch die Fertigung kriegswichtiger Güter ankurbeln. Lasst die Arbeiter in Uniform an den Werkbänken ihren Dienst verrichten! Die Welt soll wissen, dass wir eine wehrhafte junge Nation sind.</German>
     </TEXT>
