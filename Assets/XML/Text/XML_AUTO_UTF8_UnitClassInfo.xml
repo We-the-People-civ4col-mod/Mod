@@ -2180,7 +2180,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PEARLS_HUNTER</Tag>
-        <English>ART_DEF_UNIT_PEARLS_HUNTER</English>
+        <English>TXT_KEY_UNIT_PEARLS_HUNTER</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIONEER</Tag>
@@ -2738,6 +2738,15 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SCOUT</Tag>
         <English>TXT_KEY_UNIT_SCOUT</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_EXPERT_SETTLER</Tag>
+        <English>Prepared Settler:Prepared Pioneers</English>
+        <German>
+            <Text>Vorbereiteter Siedler:Vorbereitete Siedler</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_SEALS_HUNTER</Tag>
