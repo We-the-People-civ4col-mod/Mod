@@ -996,7 +996,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GREAT_TOOL_FACTORY_DONE_3</Tag>
-        <English>Now it's time to fill the large factory hall with life. Guild masters should encourage their most capable sons to enter the blacksmith's trade!</English>
+        <English>Now it's time to fill the large factory hall with life. Guild masters should encourage their most capable sons to join the blacksmith's trade!</English>
         <French>Il est maintenant temps de remplir de vie le grand hall de l'usine. Les maîtres de guilde devraient mettre à disposition leurs fils les plus capables pour le métier de forgeron !</French>
         <German>Jetzt gilt es, die große Fabrikhalle mit Leben zu füllen. Die Zunftmeister sollen ihre tüchtigsten Söhne fürs Schmiedehandwerk zur Verfügung stellen!</German>
     </TEXT>
@@ -1020,7 +1020,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HAPPY_HUNTING_1</Tag>
-        <English>Wonderful! Let's celebrate and eat the coming night.</English>
+        <English>Wonderful! Let's celebrate and feast this coming night.</English>
         <French>Merveilleux ! Fêtons la nuit qui vient et mangeons.</French>
         <German>Wunderbar! Lasst uns die kommende Nacht feiern und fressen.</German>
         <Italian>Invia le congratulazioni agli abitanti.</Italian>
@@ -1042,7 +1042,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HIDDEN_GEM_MINE_1</Tag>
-        <English>Send a few men to follow them around without being noticed. The Natives might lead us to a hidden gem mine.</English>
+        <English>Send a few men to follow them around without being noticed. The Natives might lead us to a hidden mine sparkling with gems.</English>
         <French>Envoyez des hommes pour les suivre sans se faire repérer. Ils pourront nous emmener vers cette mine cachée.</French>
         <German>Lasst einige unsere Männer die Ureinwohner vorsichtig verfolgen. Sie führen uns vieleicht zu einer versteckten Edelsteinmine</German>
     </TEXT>
@@ -1188,7 +1188,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LOST_TRIBE_3</Tag>
-        <English>We will teach them manners! Send a troop of soldiers with fixed bayonets to bring me all silver they can find.</English>
+        <English>We will teach them manners! Send a troop of soldiers with fixed bayonets to bring me all the silver they can find.</English>
         <French>Nous allons leur apprendre nos manières ! Envoyez une troupe de soldats armés de bayonnettes et ramenez tout l'argent que vous trouverez.</French>
         <German>Wir werden diese Weiber schon Mores lehren. Schickt einen Trupp Soldaten los und lasst sie die Bajonette aufpflanzen. Und bringt mir alles Silber, das Ihr finden könnt.</German>
     </TEXT>
@@ -1206,7 +1206,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LUXURY_GOODS_2</Tag>
-        <English>We must show a firm hand! Send the troops to break up this crowd and lock up all troublemakers overnight.</English>
+        <English>We must show a firm hand! Send the troops to break up this crowd and lock up all the troublemakers overnight.</English>
         <French>Nous devons montrer notre intransigeance ! Envoyez les troupes pour disperser la foule et emprisonner les perturbateurs dans la nuit.</French>
         <German>Wir müssen hart durchgreifen. Entsendet die lokalen Truppen um die Menge auseinanderzutreiben. Alle Unruhenstifter sollen über Nacht eingesperrt werden.</German>
     </TEXT>
@@ -1254,7 +1254,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MOLESTING_MISSIONARY_1</Tag>
-        <English>That is outrageous. Instantly free the missionary. A man of the church would never have done such things.</English>
+        <English>That is outrageous. Free the missionary immediately! A man of the church would never have done such things.</English>
         <French>C'est une outrage ! Libérez immédiatement le missionnaire. Un homme de Dieu ne peut se laisser à de pareils perversions.</French>
         <German>Das ist unerhört. Befreit den Missionar sofort. Ein Mann der Kirche kann sich doch solcher Taten nicht schuldig gemacht haben.</German>
     </TEXT>
@@ -1284,7 +1284,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MONASTERY_HIDING_SLAVES_1</Tag>
-        <English>Well, those slaves have to be returned to our European neighbour again. It's the law.</English>
+        <English>Well, those slaves have to be returned to our European neighbour. It's the law.</English>
         <French>Ces esclaves doivent être rendus à leur maître. C'est la loi.</French>
         <German>Wir müssen dem Gesetz Folge leisten und die Sklaven wieder unserem Nachbarn übergeben.</German>
     </TEXT>
@@ -1334,7 +1334,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_NATIVE_TRAINING_1</Tag>
-        <English>Our Native mercenary shall stay for some time. Gaining further knowledge is always a good idea.</English>
+        <English>Our Native mercenary should stay for a while. Gaining further knowledge is always a good idea.</English>
         <French>Notre mercenaire peut rester quelques temps. Gagner davantage de connaissances est toujours une bonne chose.</French>
         <German>Der Indianischen Söldner kann ruhig eine Weile in dem Dorf bleiben. Der Austausch von Wissen ist immer sinnvoll.</German>
     </TEXT>
@@ -1424,19 +1424,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PIRATES_1</Tag>
-        <English>Empty talk. These loyal souls would never tamper with my, well, er, I mean his majesty's property, of course. Away! Do not insult my ear with such tall tales.</English>
+        <English>Empty talk. These loyal souls would never tamper with my, well, er, I mean His Majesty's property, of course. Away! Do not insult my ear with such tall tales.</English>
         <French>Bavardages inutiles. Ces âmes loyales ne toucheraient jamais à ma, enfin, euh, je veux dire, bien sûr, à la propriété de sa majesté. Va-t'en ! N'insulte pas mon oreille avec de telles histoires.</French>
         <German>Leeres Geschwätz. Diese treuen Seelen würden sich nie an meinem, also, ähäm, ich meine natürlich Seiner Majestät Eigentum vergreifen. Hinfort! Beleidigt mein Ohr nicht mit solchen Lügenmärchen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PIRATES_2</Tag>
-        <English>Well, that is unfortunately all too true. Take some gold and strengthen the guard. Let us hope that we can ship these sources of greed as quickly as possible.</English>
+        <English>Well, that is unfortunately all too true. Take some gold and strengthen the guard. Let us hope that we can send away these greedy rapscallions as quickly as possible.</English>
         <French>Eh bien, c'est trop vrai, j'en ai peur. Prends de l'or et renforce la garde. Espérons que nous pourrons expédier ces sources d'avidité le plus rapidement possible.</French>
         <German>Nun, das ist leider nur allzu wahr gesprochen. Nehmt etwas Gold und verstärkt die Wachmannschaften. Lasst uns hoffen, dass wir diese Quellen der Gier so rasch als möglich verschiffen können.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PIRATES_3</Tag>
-        <English>Gather the people together! Let it be proclaimed at every market that the wealth of the land is immeasurable and that anyone who ventures into its depths with desire and will can pick up the gold with his bare hands! Above all, far from our houses and churches lies earthly fortune, far, far behind the hills. Give a horse to every cutthroat whose greed has gone to his head, and do not let him out of your sight until he is beyond the hills. Then peace should return.</English>
+        <English>Gather the people together! Let it be proclaimed at every market that the wealth of the land is immeasurable and that anyone who ventures into its depths with desire and will can pick up gold with his bare hands! Far from our houses and churches lies earthly fortune, far, far behind the hills. Give a horse to every cutthroat whose greed has gone to his head, and do not let him out of your sight until he disappears over the hills. Then peace should return.</English>
         <French>Rassemblez les gens ! Que l'on proclame sur tous les marchés que les richesses de la terre sont incommensurables, et que quiconque s'aventure dans ses profondeurs avec désir et volonté peut ramasser l'or à mains nues ! Surtout, loin de nos maisons et de nos églises se trouve la fortune terrestre, loin, très loin au-delà des collines. Donnez un cheval à chaque égorgeur dont la cupidité lui est montée à la tête, et ne le perdez pas de vue jusqu'à ce qu'il soit au-delà des collines. Ensuite, tout devrait redevenir calme.</French>
         <German>Trommelt die Leute zusammen! Lasst auf jedem Markte verkünden, dass der Reichtum des Landes unermesslich sei und jeder, der mit Lust und Wille in seine Tiefen vorstöße, das Gold mit bloßen Händen aufklauben könne! Vor allem fern unserer Häuser und Kirchen liegt das irdische Glück, weit, weit hinter den Hügeln. Gebt darauf jedem Halsabschneider, dem die Gier zu Kopfe gestiegen ist, ein Pferd und lasst ihn nicht aus den Augen, bis er hinter den Hügeln ist. Dann sollte wieder Ruhe einkehren.</German>
     </TEXT>
@@ -1460,7 +1460,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_POLITICAL_REFUGEE_2</Tag>
-        <English>To be honest, we don't need another dandy who wastes our time and money. To establish this colony we need people who can tackle the challenges of life here in the New World.</English>
+        <English>To be honest, we don't need another dandy who wastes our time and money. To establish this colony we need people ready to tackle the challenges of life here in the New World.</English>
         <French>To be honest, we don't need another dandy who wastes our time and money. To establish this colony we need people who can tackle the challanges of the life here in the New World.</French>
         <German>Lieber nicht, wir sind gerade etwas knapp bei Kasse und diese Studierten sind doch alles Aufschneider, die nur den ganzen Tag im Salon verbringen und kluge Reden schwingen. Ich brauche Leute, die auch anpacken können.</German>
     </TEXT>
@@ -1502,7 +1502,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRIVATEER_5</Tag>
-        <English>That is a pity, but we cannot change it. However, they've done some profitable raids.</English>
+        <English>That is a pity, but we cannot change it. There's no denying they've done some profitable raids.</English>
         <French>This is a pity, but we cannot change it. However, they did some profitable raids.</French>
         <German>Tja, leider nicht zu ändern. Wenigstens konnten sie einige profitable Kaperfahrten durchführen.</German>
     </TEXT>
@@ -1624,7 +1624,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RUM_BLOSSOM_2</Tag>
-        <English>Our dockers and sailors will mutiny if they are running low on rum. Stop them! Take up your arms!</English>
+        <English>Our dockers and sailors will mutiny if they run low on rum. Stop them! Take up your arms!</English>
         <French>Nos dockers et marins vont se mutiner s'ils n'auront pas leur rhum. Arrêtons les ! A vos armes !</French>
         <German>Die Werftarbeiter und Matrosen werden meutern, wenn der Schnaps ausgeht. Haltet sie auf! Zu den Waffen, Männer!</German>
     </TEXT>
@@ -1868,7 +1868,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_4</Tag>
-        <English>Gun them down, dispossess them, banish them! Better we get rid off this scum now, or else they'll stab us later in the back.</English>
+        <English>Gun them down, dispossess them, banish them! Better we get rid of this scum now, or later they'll stab us in the back.</English>
         <French>J'ordonne aux soldats de tirer ! Vous devez les déposer et les bannir ! Il vaut mieux se débarasser d'eux maintenant plutôt qu'ils nous trahissent plus tard.</French>
         <German>Kartätscht dieses Pack zusammen, enteignet sie, jagt sie aus der Stadt! Besser wir bereinigen die Sache jetzt schnell und gründlich, als dass sie uns später in den Rücken fallen ...</German>
     </TEXT>
@@ -2302,7 +2302,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRADEFORT2_2</Tag>
-        <English>This now threatens our trade interests again. But I am not a brute either. We should share our success with our neighbours.</English>
+        <English>This threatens our trade interests again. But I'm no brute. We can share our success with our neighbours.</English>
         <French>This now threatens our trade interests again. But I am not a brute either. We should share our success with our neighbours.</French>
         <German>Das bedroht nun wieder unsere Handelsinteressen. Aber ich bin auch kein Unmensch. Wir sollten unsere Nachbarn an unserem Erfolg teilhaben lassen.</German>
     </TEXT>
@@ -2326,7 +2326,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LOST_SHIP_1</Tag>
-        <English>Aye, the ship is unsalvageable. These damn shallow waters! Steer the ship close to shore. Maybe we can salvage something from it later.</English>
+        <English>Aye, the ship is unsalvageable. These damn shallow waters! Steer the ship close to shore. Maybe we can recover something from it later.</English>
         <French>Aye, the ship is unsalvageable. These damn shallow waters. Then the ship will at least steer close to shore, maybe we can salvage something from it later!</French>
         <German>Aye, das Schiff ist nicht mehr zu retten. Diese verdammten seichten Gewässer. Dann steuert das Schiff wenigstens in Ufernähe, vielleicht können wir später noch etwas daraus bergen!</German>
     </TEXT>
