@@ -239,7 +239,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_TOUCAN</Type>
-            <fScale>40.0</fScale>
+            <fScale>4.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/toucan/toucan.nif</NIF>
             <KFM/>
