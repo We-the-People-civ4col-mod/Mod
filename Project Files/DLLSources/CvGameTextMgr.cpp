@@ -2877,34 +2877,40 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			}
 
 			// WTP, check Harbour System also for Monasteries, Forts and Canals - START
-			if(GC.getImprovementInfo(eImprovement).isFort() || GC.getImprovementInfo(eImprovement).isMonastery() || GC.getImprovementInfo(eImprovement).isCanal())
+			if (GC.getENABLE_NEW_HARBOUR_SYSTEM())
 			{
-				// we check how many Units that place would allow
-				int iImprovementHarbourSpace = GC.getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS();
-				// it is the second level Improvement, so we double - unless for canal, which has no upgrade
-				if (GC.getImprovementInfo(eImprovement).getImprovementUpgrade() == NO_IMPROVEMENT && !GC.getImprovementInfo(eImprovement).isCanal())
+				if(GC.getImprovementInfo(eImprovement).isFort() || GC.getImprovementInfo(eImprovement).isMonastery() || GC.getImprovementInfo(eImprovement).isCanal())
 				{
-					iImprovementHarbourSpace = iImprovementHarbourSpace * 2;
-				}
+					// we check how many Units that place would allow
+					int iImprovementHarbourSpace = GC.getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS();
+					// it is the second level Improvement, so we double - unless for canal, which has no upgrade
+					if (GC.getImprovementInfo(eImprovement).getImprovementUpgrade() == NO_IMPROVEMENT && !GC.getImprovementInfo(eImprovement).isCanal())
+					{
+						iImprovementHarbourSpace = iImprovementHarbourSpace * 2;
+					}
 
-				szString.append(NEWLINE);
-				szString.append(gDLL->getText("TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED", iImprovementHarbourSpace, GC.getSymbolID(ANCHOR_CHAR)));
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED", iImprovementHarbourSpace, GC.getSymbolID(ANCHOR_CHAR)));
+				}
 			}
 			// WTP, check Harbour System also for Monasteries, Forts and Canals - END
 
 			// WTP, check Barracks System also for Monasteries and Forts - START
-			if(GC.getImprovementInfo(eImprovement).isFort() || GC.getImprovementInfo(eImprovement).isMonastery())
+			if (GC.getENABLE_NEW_BARRACKS_SYSTEM())
 			{
-				// we check how many Units that place would allow
-				int iImprovementBarracksSpace = GC.getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS();
-				// it is the second level Improvement, so we double - unless for canal, which has no upgrade
-				if (GC.getImprovementInfo(eImprovement).getImprovementUpgrade() == NO_IMPROVEMENT)
+				if(GC.getImprovementInfo(eImprovement).isFort() || GC.getImprovementInfo(eImprovement).isMonastery())
 				{
-					iImprovementBarracksSpace = iImprovementBarracksSpace * 2;
-				}
+					// we check how many Units that place would allow
+					int iImprovementBarracksSpace = GC.getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS();
+					// it is the second level Improvement, so we double - unless for canal, which has no upgrade
+					if (GC.getImprovementInfo(eImprovement).getImprovementUpgrade() == NO_IMPROVEMENT)
+					{
+						iImprovementBarracksSpace = iImprovementBarracksSpace * 2;
+					}
 
-				szString.append(NEWLINE);
-				szString.append(gDLL->getText("TXT_KEY_BUILDING_MAX_BARRACKS_SPACE_PROVIDED", iImprovementBarracksSpace, GC.getSymbolID(BARRACKS_CHAR)));
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_BUILDING_MAX_BARRACKS_SPACE_PROVIDED", iImprovementBarracksSpace, GC.getSymbolID(BARRACKS_CHAR)));
+				}
 			}
 			// WTP, check Harbour System also for Monasteries, Forts and Canals - END
 		}
