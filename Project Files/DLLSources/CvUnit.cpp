@@ -2931,8 +2931,6 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	}
 	// WTP, ray, Canal - END
 
-
-
 	const FeatureTypes eFeature = pPlot->getFeatureType();
 
 	// Prevent the AI from moving through storms and sustaining damage
@@ -2985,7 +2983,6 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 				bLandUnitMayBeLoaded = canLoad(pPlot, false);
 			}
 
-
 			// stop large ships from entering Large Rivers in own Terrain
 			// if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam()) // sea units can enter impassable in own cultural borders
 			if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam() || pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS || pPlot->getTerrainType() == TERRAIN_LAKE || pPlot->getTerrainType() == TERRAIN_ICE_LAKE || pPlot->getTerrainType() == TERRAIN_SHALLOW_COAST)
@@ -3005,14 +3002,14 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 	// WTP, ray, new Harbour System - START
 	// of course this is only checked if new Harbour System is enabled
-	if (GC.getENABLE_NEW_HARBOUR_SYSTEM())
+	// We check this only for Humans, AI can ignore it because it is too difficult to teach it
+	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && isHuman())
 	{
-		// Stop Ships from Entering a City in which harbour is full - safety check to prevent it from checking Improvements
-		if (DOMAIN_SEA == getDomainType() && pPlot->isCity() && pPlot->getImprovementType() == NO_IMPROVEMENT)
+		// Stop Ships from Entering a City in which harbour is full - e might also check "automated"
+		if (DOMAIN_SEA == getDomainType() && pPlot->isCity(true, getTeam()))
 		{
-			//We check this only for Humans, AI can ignore it because it is too difficult to teach it
-			//To prevent issues with Trade Route Automation System, we may consider to have "Not Automated here"
-			if (isHuman())
+			// Case real City
+			if (pPlot->getImprovementType() == NO_IMPROVEMENT)
 			{
 				// this is only checked for Colonial Cities, Native Villages can always be entered
 				CvCity* pCity = pPlot->getPlotCity();
@@ -3034,21 +3031,62 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 					}
 				}
 			}
+
+			// Case "actAsCity" Improvement - also considered as City
+			else
+			{
+				// just to ensure that something may be messed up in the future
+				bool bWeCheckAllowedUnitsOnPlot = (pPlot->isFort() || pPlot->isMonastery() || pPlot->isCanal());
+				if (bWeCheckAllowedUnitsOnPlot)
+				{
+					// this is how much the Unit needs
+					int iHarbourSpaceNeededByUnit = getUnitInfo().getHarbourSpaceNeeded();
+
+					// we check how many Units that place would allow
+					int iImprovementHarbourSpace = GC.getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS();
+					// it is the second level Improvement, so we double - unless for canal, which has no upgrade
+					if (GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT && !pPlot->isCanal())
+					{
+						iImprovementHarbourSpace = iImprovementHarbourSpace * 2;
+					}
+
+					// now we calculate how much is already used
+					int iImprovementHarbourSpaceUsed = 0;
+					for (int i = 0; i < pPlot->getNumUnits(); ++i)
+					{
+						CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);
+						// we only count Land Units that can attack, civil Units are not considered
+						// we also not consider Units loaded on Ships
+						// we also not consider Units of other Nations
+						if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_SEA)
+						{
+							iImprovementHarbourSpaceUsed += pLoopUnit->getUnitInfo().getHarbourSpaceNeeded();
+						}
+					}
+
+					// we now know how much is available
+					int iImprovementShipSpaceAvailable = iImprovementHarbourSpace - iImprovementHarbourSpaceUsed;
+					if (iHarbourSpaceNeededByUnit > iImprovementShipSpaceAvailable)
+					{
+						return false;
+					}
+				}
+			}
 		}
 	}
 	// WTP, ray, new Harbour System - END
 
 	// WTP, ray, new Barracks System - START
 	// of course this is only checked if new Barracks System is enabled
-	if (GC.getENABLE_NEW_BARRACKS_SYSTEM())
+	// We check this only for Humans, AI can ignore it because it is too difficult to teach it
+	if (GC.getENABLE_NEW_BARRACKS_SYSTEM() && isHuman())
 	{
-		// Stop Combat Land Units from Entering a City in which barracks are full - safety check to prevent it from checking Improvements
+		// Stop Combat Land Units from Entering a City in which barracks are full - we might also check "automated"
 		// here we also check just for can Attack - we check City owner further down
-		if (DOMAIN_LAND == getDomainType() && pPlot->isCity() && pPlot->getImprovementType() == NO_IMPROVEMENT && canAttack())
+		if (DOMAIN_LAND == getDomainType() && pPlot->isCity(true, getTeam()) && canAttack())
 		{
-			//We check this only for Humans, AI can ignore it because it is too difficult to teach it
-			//To prevent issues with automated Units, we may consider to have "Not Automated here"
-			if (isHuman())
+			// Case real City
+			if (pPlot->getImprovementType() == NO_IMPROVEMENT)
 			{
 				// this is only checked for Colonial Cities, Native Villages can always be entered
 				CvCity* pCity = pPlot->getPlotCity();
@@ -3074,6 +3112,57 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 						{
 							return false;
 						}
+					}
+				}
+			}
+
+			// Case "actAsCity" Improvement - also considered as City
+			else
+			{
+				// just to ensure that something may be messed up in the future
+				bool bWeCheckAllowedUnitsOnPlot = (pPlot->isFort() || pPlot->isMonastery());
+				if (bWeCheckAllowedUnitsOnPlot)
+				{
+					// this is how much the Unit needs
+					int iBarracksSpaceNeededByUnit = getUnitInfo().getBarracksSpaceNeeded();
+					// we also need to check the PRofession
+					if (getProfession() != NO_PROFESSION)
+					{
+						iBarracksSpaceNeededByUnit += GC.getProfessionInfo(getProfession()).getBarracksSpaceNeededChange();
+					}
+
+					// we check how many Units that place would allow
+					int iImprovementBarracksSpace = GC.getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS();
+					// it is the second level Improvement, so we double
+					if (GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT)
+					{
+						iImprovementBarracksSpace = iImprovementBarracksSpace * 2;
+					}
+
+					// now we calculate how much is already used
+					int iImprovementBarracksSpaceUsed = 0;
+					for (int i = 0; i < pPlot->getNumUnits(); ++i)
+					{
+						CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);
+						// we only count Land Units that can attack, civil Units are not considered
+						// we also not consider Units loaded on Ships
+						// we also not consider Units of other Nations
+						if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack() && pLoopUnit->getTransportUnit() == NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+						{
+							iImprovementBarracksSpaceUsed += pLoopUnit->getUnitInfo().getBarracksSpaceNeeded();
+							// we also need to consider Professions
+							if (pLoopUnit->getProfession() != NO_PROFESSION)
+							{
+								iImprovementBarracksSpaceUsed += GC.getProfessionInfo(pLoopUnit->getProfession()).getBarracksSpaceNeededChange();
+							}
+						}
+					}
+
+					// we now know how much is available
+					int iBarracksSpaceAvailable = iImprovementBarracksSpace - iImprovementBarracksSpaceUsed;
+					if (iBarracksSpaceNeededByUnit > iBarracksSpaceAvailable)
+					{
+						return false;
 					}
 				}
 			}

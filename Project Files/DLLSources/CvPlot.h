@@ -182,6 +182,7 @@ public:
 	// R&R, ray, Monasteries and Forts - START
 	bool isFort() const;
 	bool isMonastery() const;
+	bool isCanal() const;
 	// R&R, ray, Monasteries and Forts - END
 
 	//R&R mod, vetiarvind, super forts merge, refactor checks for activating monastery and forts - start

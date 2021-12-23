@@ -4171,6 +4171,16 @@ bool CvPlot::isMonastery() const
 
 	return false;
 }
+
+bool CvPlot::isCanal() const
+{
+	if (getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(getImprovementType()).isCanal())
+	{
+		return true;
+	}
+
+	return false;
+}
 // R&R, ray, Monasteries and Forts - END
 
 
