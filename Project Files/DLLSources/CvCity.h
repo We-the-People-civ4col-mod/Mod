@@ -528,6 +528,13 @@ public:
 	bool bShouldShowCityHarbourSystem() const;
 	// WTP, ray, new Harbour System - END
 
+	// WTP, ray, new Barracks System - START
+	int getCityBarracksSpace() const;
+	void setCityBarracksSpace(int iValue);
+	int getCityBarracksSpaceUsed() const;
+	bool bShouldShowCityBarracksSystem() const;
+	// WTP, ray, new Barracks  System - END
+
 	// WTP, ray, Improvements give Bonus to their City - START
 	int getMonasteryCrossBonusForCity() const;
 	int getFortDefenseBonusForCity() const;
@@ -771,6 +778,7 @@ protected:
 	bool m_bStirredUp; // R&R, ray , Stirring Up Natives
 	int m_iRebelSentiment;
 	int m_iCityHarbourSpace; // WTP, ray, new Harbour System - START
+	int m_iCityBarracksSpace; // WTP, ray, new Barracks System - START
 	int m_iCityHealth; // R&R, ray, Health
 	int m_iCityHappiness; // WTP, ray, Happiness
 	int m_iCityUnHappiness; // WTP, ray, Happiness

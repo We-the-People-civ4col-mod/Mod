@@ -3038,6 +3038,50 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	}
 	// WTP, ray, new Harbour System - END
 
+	// WTP, ray, new Barracks System - START
+	// of course this is only checked if new Barracks System is enabled
+	if (GC.getENABLE_NEW_BARRACKS_SYSTEM())
+	{
+		// Stop Combat Land Units from Entering a City in which barracks are full - safety check to prevent it from checking Improvements
+		// here we also check just for can Attack - we check City owner further down
+		if (DOMAIN_LAND == getDomainType() && pPlot->isCity() && pPlot->getImprovementType() == NO_IMPROVEMENT && canAttack())
+		{
+			//We check this only for Humans, AI can ignore it because it is too difficult to teach it
+			//To prevent issues with automated Units, we may consider to have "Not Automated here"
+			if (isHuman())
+			{
+				// this is only checked for Colonial Cities, Native Villages can always be entered
+				CvCity* pCity = pPlot->getPlotCity();
+				if (pCity != NULL)
+				{
+					// here we ensure we check this only for the Owner of the Unit being Owner of the City
+					if(!pCity->isNative() && pCity->getOwnerINLINE() == getOwnerINLINE())
+					{
+						int iBarracksSpaceNeededByUnit = getUnitInfo().getBarracksSpaceNeeded();
+
+						// we also need to check the PRofession
+						if (getProfession() != NO_PROFESSION)
+						{
+							iBarracksSpaceNeededByUnit += GC.getProfessionInfo(getProfession()).getBarracksSpaceNeededChange();
+						}
+
+						// Caclulating free Harbour Space in City
+						int iBarracksSpaceMaxInCity = pPlot->getPlotCity()->getCityBarracksSpace();
+						int iBarracksSpaceUsedInCity = pPlot->getPlotCity()->getCityBarracksSpaceUsed();
+						int iBarracksSpaceAvailableInCity = iBarracksSpaceMaxInCity - iBarracksSpaceUsedInCity;
+
+						if (iBarracksSpaceNeededByUnit > iBarracksSpaceAvailableInCity)
+						{
+							return false;
+						}
+					}
+				}
+			}
+		}
+	}
+	// WTP, ray, new Barracks System - END
+
+
 	if (m_pUnitInfo->getMoves() == 0)
 	{
 		return false;

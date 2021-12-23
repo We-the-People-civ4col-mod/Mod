@@ -1410,7 +1410,8 @@ CvProfessionInfo::CvProfessionInfo() :
 	// m_iYieldConsumed(NO_YIELD),
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 	m_iSpecialBuilding(NO_SPECIALBUILDING),
-	m_iCombatChange(0),
+	m_iCombatChange(0), 
+	m_iBarracksSpaceNeededChange(0), // WTP, ray, new Barracks System - START
 	m_iMovesChange(0),
 	m_iWorkRate(0),
 	m_iMissionaryRate(0),
@@ -1492,6 +1493,12 @@ int CvProfessionInfo::getCombatChange() const
 {
 	return m_iCombatChange;
 }
+// WTP, ray, new Barracks System - START
+int CvProfessionInfo::getBarracksSpaceNeededChange() const
+{
+	return m_iBarracksSpaceNeededChange;
+}
+// WTP, ray, new Barracks System - END
 int CvProfessionInfo::getMovesChange() const
 {
 	return m_iMovesChange;
@@ -1619,6 +1626,7 @@ void CvProfessionInfo::read(FDataStreamBase* stream)
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 	stream->Read(&m_iSpecialBuilding);
 	stream->Read(&m_iCombatChange);
+	stream->Read(&m_iBarracksSpaceNeededChange); // WTP, ray, new Barracks System - START
 	stream->Read(&m_iMovesChange);
 	stream->Read(&m_iWorkRate);
 	stream->Read(&m_iMissionaryRate);
@@ -1685,6 +1693,7 @@ void CvProfessionInfo::write(FDataStreamBase* stream)
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 	stream->Write(m_iSpecialBuilding);
 	stream->Write(m_iCombatChange);
+	stream->Write(m_iBarracksSpaceNeededChange); // WTP, ray, new Barracks System - START
 	stream->Write(m_iMovesChange);
 	stream->Write(m_iWorkRate);
 	stream->Write(m_iMissionaryRate);
@@ -1753,6 +1762,7 @@ bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "SpecialBuilding");
 	m_aszExtraXMLforPass3.push_back(szTextVal);
 	pXML->GetChildXmlValByName(&m_iCombatChange, "iCombatChange");
+	pXML->GetChildXmlValByName(&m_iBarracksSpaceNeededChange, "iBarracksSpaceNeededChange"); // WTP, ray, new Barracks System - START
 	pXML->GetChildXmlValByName(&m_iMovesChange, "iMovesChange");
 	pXML->GetChildXmlValByName(&m_iWorkRate, "iWorkRate");
 	pXML->GetChildXmlValByName(&m_iMissionaryRate, "iMissionaryRate");
@@ -2624,6 +2634,7 @@ CvUnitInfo::CvUnitInfo() :
 
 m_iBerthSize(1), // PatchMod: Berth size START
 m_iHarbourSpaceNeeded(0), // WTP, ray, new Harbour System - START
+m_iBarracksSpaceNeeded(0), // WTP, ray, new Barracks System - START
 
 /** NBMOD EDU **/
 m_iTeachLevel(3),
@@ -3568,6 +3579,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iRequiredTransportSize);
 	stream->Read(&m_iBerthSize); // PatchMod: Berth size START
 	stream->Read(&m_iHarbourSpaceNeeded); // WTP, ray, new Harbour System - START
+	stream->Read(&m_iBarracksSpaceNeeded); // WTP, ray, new Barracks System - START
 	stream->Read(&m_iAssetValue);
 	stream->Read(&m_iPowerValue);
 	stream->Read(&m_iUnitClassType);
@@ -3795,6 +3807,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iRequiredTransportSize);
 	stream->Write(m_iBerthSize); // PatchMod: Berth size START
 	stream->Write(m_iHarbourSpaceNeeded); // WTP, ray, new Harbour System - START
+	stream->Write(m_iBarracksSpaceNeeded); // WTP, ray, new Barracks System - START
 	stream->Write(m_iAssetValue);
 	stream->Write(m_iPowerValue);
 	stream->Write(m_iUnitClassType);
@@ -4086,6 +4099,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iRequiredTransportSize, "iRequiredTransportSize");
 	pXML->GetChildXmlValByName(&m_iBerthSize, "iBerthSize"); // PatchMod: Berth size START
 	pXML->GetChildXmlValByName(&m_iHarbourSpaceNeeded, "iHarbourSpaceNeeded"); // WTP, ray, new Harbour System - START
+	pXML->GetChildXmlValByName(&m_iBarracksSpaceNeeded, "iBarracksSpaceNeeded"); // WTP, ray, new Barracks System - START
 	pXML->GetChildXmlValByName(&m_iAssetValue, "iAsset");
 	pXML->GetChildXmlValByName(&m_iPowerValue, "iPower");
 	// Read the mesh groups elements
@@ -4932,6 +4946,7 @@ m_iAssetValue(0),
 m_iPowerValue(0),
 m_iYieldStorage(0),
 m_iMaxHarbourSpaceProvided(0), // WTP, ray, new Harbour System - START
+m_iMaxBarracksSpaceProvided(0), // WTP, ray, new Barracks System - START
 m_iSpecialBuildingType(NO_SPECIALBUILDING),
 m_iIndexOf_NextBuildingType_In_SpecialBuilding(NO_BUILDING),
 m_iConquestProbability(0),
@@ -5093,6 +5108,14 @@ int CvBuildingInfo::getMaxHarbourSpaceProvided() const
 	return m_iMaxHarbourSpaceProvided;
 }
 // WTP, ray, new Harbour System - END
+
+// WTP, ray, new Barracks System - START
+int CvBuildingInfo::getMaxBarracksSpaceProvided() const
+{
+	return m_iMaxBarracksSpaceProvided;
+}
+// WTP, ray, new Barracks System - END
+
 int CvBuildingInfo::getSpecialBuildingType() const
 {
 	return m_iSpecialBuildingType;
@@ -5387,6 +5410,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iPowerValue);
 	stream->Read(&m_iYieldStorage);
 	stream->Read(&m_iMaxHarbourSpaceProvided); // WTP, ray, new Harbour System - START
+	stream->Read(&m_iMaxBarracksSpaceProvided); // WTP, ray, new Barracks System - START
 	stream->Read(&m_iSpecialBuildingType);
 	stream->Read(&m_iIndexOf_NextBuildingType_In_SpecialBuilding);
 	stream->Read(&m_iConquestProbability);
@@ -5482,7 +5506,8 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iAssetValue);
 	stream->Write(m_iPowerValue);
 	stream->Write(m_iYieldStorage);
-	stream->Write(m_iMaxHarbourSpaceProvided);	// WTP, ray, new Harbour System - START
+	stream->Write(m_iMaxHarbourSpaceProvided); // WTP, ray, new Harbour System - START
+	stream->Write(m_iMaxBarracksSpaceProvided);	// WTP, ray, new Barracks System - START
 	stream->Write(m_iSpecialBuildingType);
 	stream->Write(m_iIndexOf_NextBuildingType_In_SpecialBuilding);
 	stream->Write(m_iConquestProbability);
@@ -5601,6 +5626,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iPowerValue, "iPower");
 	pXML->GetChildXmlValByName(&m_iYieldStorage, "iYieldStorage");
 	pXML->GetChildXmlValByName(&m_iMaxHarbourSpaceProvided, "iMaxHarbourSpaceProvided"); // WTP, ray, new Harbour System - START
+	pXML->GetChildXmlValByName(&m_iMaxBarracksSpaceProvided, "iMaxBarracksSpaceProvided"); // WTP, ray, new Barracks System - START
 	pXML->GetChildXmlValByName(&m_fVisibilityPriority, "fVisibilityPriority");
 	pXML->SetVariableListTagPair(&m_aiLandPlotYieldChange, "LandPlotYieldChanges", NUM_YIELD_TYPES, 0); // R&R, ray, Landplot Yields
 	pXML->SetVariableListTagPair(&m_aiSeaPlotYieldChange, "SeaPlotYieldChanges", NUM_YIELD_TYPES, 0);
@@ -16545,6 +16571,13 @@ int CvUnitInfo::getBerthSize() const
 int CvUnitInfo::getHarbourSpaceNeeded() const
 {
 	return m_iHarbourSpaceNeeded;
+}
+// WTP, ray, new Harbour System - END
+
+// WTP, ray, new Barracks System - START
+int CvUnitInfo::getBarracksSpaceNeeded() const
+{
+	return m_iBarracksSpaceNeeded;
 }
 // WTP, ray, new Harbour System - END
 

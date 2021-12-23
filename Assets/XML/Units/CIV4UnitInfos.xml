@@ -22762,6 +22762,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
             <iAsset>400</iAsset>
             <iPower>0</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -23119,6 +23120,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
             <iAsset>400</iAsset>
             <iPower>0</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -23301,6 +23303,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
             <iAsset>400</iAsset>
             <iPower>300</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -23471,6 +23474,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
             <iAsset>100</iAsset>
             <iPower>100</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -23658,6 +23662,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
             <iAsset>400</iAsset>
             <iPower>300</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -23919,6 +23924,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
             <iAsset>300</iAsset>
             <iPower>250</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -24111,6 +24117,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
             <iAsset>300</iAsset>
             <iPower>250</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -24298,6 +24305,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
             <iAsset>300</iAsset>
             <iPower>250</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -24436,6 +24444,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
             <iAsset>300</iAsset>
             <iPower>250</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -24623,6 +24632,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
             <iAsset>300</iAsset>
             <iPower>250</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -24881,6 +24891,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
             <iAsset>300</iAsset>
             <iPower>250</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -25091,6 +25102,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
             <iAsset>200</iAsset>
             <iPower>150</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -25334,6 +25346,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>2</iBarracksSpaceNeeded>
             <iAsset>300</iAsset>
             <iPower>200</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -25523,6 +25536,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
             <iAsset>200</iAsset>
             <iPower>150</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -25744,6 +25758,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
             <iAsset>200</iAsset>
             <iPower>150</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -27678,6 +27693,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
             <iAsset>300</iAsset>
             <iPower>350</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -27849,6 +27865,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>2</iBarracksSpaceNeeded>
             <iAsset>300</iAsset>
             <iPower>350</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -28020,6 +28037,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>1</iBerthSize>
+            <iBarracksSpaceNeeded>2</iBarracksSpaceNeeded>
             <iAsset>300</iAsset>
             <iPower>250</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -28161,6 +28179,7 @@
             <iCargo>0</iCargo>
             <iRequiredTransportSize>1</iRequiredTransportSize>
             <iBerthSize>2</iBerthSize>
+            <iBarracksSpaceNeeded>2</iBarracksSpaceNeeded>
             <iAsset>300</iAsset>
             <iPower>250</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>

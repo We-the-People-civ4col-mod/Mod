@@ -37,6 +37,9 @@ IconMap = {
 			"[ICON_REBEL]" : FontSymbols.REBEL_CHAR,
 			"[ICON_ANCHOR]": FontSymbols.ANCHOR_CHAR,
 			"[ICON_NO_ANCHOR]": FontSymbols.NO_ANCHOR_CHAR,
+			"[ANCHOR_EUROPE_CHAR]": FontSymbols.ANCHOR_EUROPE_CHAR,
+			"[ICON_BARRACKS]": FontSymbols.BARRACKS_CHAR,
+			"[ICON_NO_BARRACKS]": FontSymbols.NO_BARRACKS_CHAR,
 		 }
 
 

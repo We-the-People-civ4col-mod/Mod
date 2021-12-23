@@ -662,9 +662,17 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && pUnit->getUnitInfo().getHarbourSpaceNeeded() > 0)
 		{
 			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_UNIT_HARBOR_SPACE_NEEDED", pUnit->getUnitInfo().getHarbourSpaceNeeded(), gDLL->getSymbolID(ANCHOR_CHAR)));
+			szString.append(gDLL->getText("TXT_KEY_UNIT_HARBOR_SPACE_NEEDED", pUnit->getUnitInfo().getHarbourSpaceNeeded(),GC.getGameINLINE().getSymbolID(ANCHOR_CHAR)));
 		}
 		// WTP, ray, new Harbour System - END
+
+		// WTP, ray, new Barracks System - START
+		if (GC.getENABLE_NEW_BARRACKS_SYSTEM() && pUnit->getUnitInfo().getBarracksSpaceNeeded() > 0)
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED", pUnit->getUnitInfo().getBarracksSpaceNeeded(), GC.getGameINLINE().getSymbolID(BARRACKS_CHAR)));
+		}
+		// WTP, ray, new Barracks System - END
 
 		if (pUnit->fortifyModifier() != 0)
 		{
@@ -1249,6 +1257,15 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
 			}
 		}
 	}
+
+	// WTP, ray, new Barracks System - START
+	int iBarracksSpaceNeededChange = kProfession.getBarracksSpaceNeededChange();
+	if (iBarracksSpaceNeededChange > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED", iBarracksSpaceNeededChange, GC.getGameINLINE().getSymbolID(BARRACKS_CHAR)));
+	}
+	// WTP, ray, new Barracks System - END
 
 	if (kProfession.getWorkRate() != 0)
 	{
@@ -3220,8 +3237,7 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 	// WTP, ray, Happiness - END
 
 	// WTP, ray, new Harbour System - START
-	// of course we display only for coastal cities
-	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && pCity->plot()->isCoastalLand() && pCity->isHuman())
+	if (pCity->bShouldShowCityHarbourSystem())
 	{
 		int iCityHarborSpaceUsed = pCity->getCityHarbourSpaceUsed();
 		int iCityHarborSpaceMax = pCity->getCityHarbourSpace();
@@ -3230,26 +3246,54 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 		if (iCityHarborSpaceUsed < (iCityHarborSpaceMax/2))
 		{
 			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_STILL_FREE", iCityHarborSpaceUsed, iCityHarborSpaceMax, gDLL->getSymbolID(ANCHOR_CHAR)));
+			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_STILL_FREE", iCityHarborSpaceUsed, iCityHarborSpaceMax, GC.getGameINLINE().getSymbolID(ANCHOR_CHAR)));
 		}
 
 		// more than 50% of City Harbor Space is used - not yet totally full though
 		if (iCityHarborSpaceUsed >= (iCityHarborSpaceMax/2) && iCityHarborSpaceUsed < iCityHarborSpaceMax)
 		{
 			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_ALMOST_FULL", iCityHarborSpaceUsed, iCityHarborSpaceMax, gDLL->getSymbolID(ANCHOR_CHAR)));
+			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_ALMOST_FULL", iCityHarborSpaceUsed, iCityHarborSpaceMax, GC.getGameINLINE().getSymbolID(ANCHOR_CHAR)));
 		}
 
 		// City Harbor Space is totally full
 		if (iCityHarborSpaceUsed >= iCityHarborSpaceMax)
 		{
 			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_TOTALLY_FULL", iCityHarborSpaceUsed, iCityHarborSpaceMax, gDLL->getSymbolID(NO_ANCHOR_CHAR)));
+			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_TOTALLY_FULL", iCityHarborSpaceUsed, iCityHarborSpaceMax, GC.getGameINLINE().getSymbolID(NO_ANCHOR_CHAR)));
 		}
 	}
 	// WTP, ray, new Harbour System - END
 
-	szString.append(NEWLINE);
+
+	// WTP, ray, new Barracks System - START
+	if (pCity->bShouldShowCityBarracksSystem())
+	{
+		int iCityBarracksSpaceUsed = pCity->getCityBarracksSpaceUsed();
+		int iCityBarracksSpaceMax = pCity->getCityBarracksSpace();
+
+		// less than 50% of City Barracks Space is used
+		if (iCityBarracksSpaceUsed < (iCityBarracksSpaceMax/2))
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_STILL_FREE", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getGameINLINE().getSymbolID(BARRACKS_CHAR)));
+		}
+
+		// more than 50% of City Harbor Space is used - not yet totally full though
+		if (iCityBarracksSpaceUsed >= (iCityBarracksSpaceMax/2) && iCityBarracksSpaceUsed < iCityBarracksSpaceMax)
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_ALMOST_FULL", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getGameINLINE().getSymbolID(BARRACKS_CHAR)));
+		}
+
+		// City Harbor Space is totally full
+		if (iCityBarracksSpaceUsed >= iCityBarracksSpaceMax)
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_TOTALLY_FULL", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getGameINLINE().getSymbolID(NO_BARRACKS_CHAR)));
+		}
+	}
+	// WTP, ray, new Barracks System - END
 
 	szString.append(NEWLINE);
 	szString.append(gDLL->getText("TXT_KEY_CITY_BAR_SELECT", pCity->getNameKey()));
@@ -5136,9 +5180,17 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && kUnitInfo.getHarbourSpaceNeeded() > 0)
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_HARBOR_SPACE_NEEDED", kUnitInfo.getHarbourSpaceNeeded(), gDLL->getSymbolID(ANCHOR_CHAR)));
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_HARBOR_SPACE_NEEDED", kUnitInfo.getHarbourSpaceNeeded(), GC.getGameINLINE().getSymbolID(ANCHOR_CHAR)));
 	}
-	// WTP, ray, new Harbour System - EMD
+	// WTP, ray, new Harbour System - END
+
+	// WTP, ray, new Barracks System - START
+	if (GC.getENABLE_NEW_BARRACKS_SYSTEM() && kUnitInfo.getBarracksSpaceNeeded() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED", kUnitInfo.getBarracksSpaceNeeded(), GC.getGameINLINE().getSymbolID(BARRACKS_CHAR)));
+	}
+	// WTP, ray, new Barracks System - END
 
 	if (kUnitInfo.getRequiredTransportSize() > 1)
 	{
@@ -6193,13 +6245,22 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_YIELD_STORAGE", iYieldStorage));
 	}
+
 	// WTP, ray, new Harbour System - START
 	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && kBuilding.getMaxHarbourSpaceProvided() > 0)
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED", kBuilding.getMaxHarbourSpaceProvided(), gDLL->getSymbolID(ANCHOR_CHAR)));
+		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED", kBuilding.getMaxHarbourSpaceProvided(), GC.getGameINLINE().getSymbolID(ANCHOR_CHAR)));
 	}
 	// WTP, ray, new Harbour System - END
+
+	// WTP, ray, new Barracks System - START
+	if (GC.getENABLE_NEW_BARRACKS_SYSTEM() && kBuilding.getMaxBarracksSpaceProvided() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_MAX_BARRACKS_SPACE_PROVIDED", kBuilding.getMaxBarracksSpaceProvided(), GC.getGameINLINE().getSymbolID(BARRACKS_CHAR)));
+	}
+	// WTP, ray, new Barracks System - END
 
 	if (kBuilding.getStorageLossSellPercentage() > 0)
 	{
@@ -8639,6 +8700,24 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 		}
 	}
 	// WTP, ray, new Harbour System - END
+
+	// WTP, ray, new Barracks System - START
+	if (GC.getENABLE_NEW_BARRACKS_SYSTEM() && pCity->isHuman())
+	{
+		int iCityBarracksSpaceUsed = pCity->getCityBarracksSpaceUsed();
+		int iCityBarracksSpaceMax = pCity->getCityBarracksSpace();
+
+		if (iCityBarracksSpaceUsed >= iCityBarracksSpaceMax)
+		{
+			// CAREFUL !!! This Icon is not a standard Icon (of Vanilla) that the exe knows. Thus we needed to have a workaround.
+			// do not use "gDLL->getSymbolID(NO_BARRACKS_CHAR)" like you would for normal FontIcons (of Vanilla)
+			// use instead "GC.getGameINLINE().getSymbolID(NO_BARRACKS_CHAR)" because it applies our modded code for FontIcons
+			szBuffer.append(CvWString::format(L" %c", GC.getGameINLINE().getSymbolID(NO_BARRACKS_CHAR)));
+		}
+	}
+	// WTP, ray, new Barracks System - END
+
+
 
 	// XXX out this in bottom bar???
 	if (pCity->isOccupation())

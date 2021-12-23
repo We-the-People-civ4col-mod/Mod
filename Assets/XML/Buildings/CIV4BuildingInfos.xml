@@ -2496,6 +2496,7 @@
             <iAsset>25</iAsset>
             <iPower>25</iPower>
             <iYieldStorage>0</iYieldStorage>
+            <iMaxBarracksSpaceProvided>6</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>100.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -2578,6 +2579,7 @@
             <iAsset>50</iAsset>
             <iPower>50</iPower>
             <iYieldStorage>0</iYieldStorage>
+            <iMaxBarracksSpaceProvided>8</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>100.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -2672,6 +2674,7 @@
             <iAsset>100</iAsset>
             <iPower>100</iPower>
             <iYieldStorage>0</iYieldStorage>
+            <iMaxBarracksSpaceProvided>10</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>100.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -2766,6 +2769,7 @@
             <iAsset>150</iAsset>
             <iPower>200</iPower>
             <iYieldStorage>0</iYieldStorage>
+            <iMaxBarracksSpaceProvided>12</iMaxBarracksSpaceProvided>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>100.0</fVisibilityPriority>
             <LandPlotYieldChanges/>

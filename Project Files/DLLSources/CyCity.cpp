@@ -1211,6 +1211,24 @@ bool CyCity::bShouldShowCityHarbourSystem() const
 }
 // WTP, ray, new Harbour System - END
 
+// WTP, ray, new Barracks System - START
+int CyCity::getCityBarracksSpace() const
+{
+	return m_pCity ? m_pCity->getCityBarracksSpace() : -1;
+}
+
+int CyCity::getCityBarracksSpaceUsed() const
+{
+	return m_pCity ? m_pCity->getCityBarracksSpaceUsed() : -1;
+}
+
+bool CyCity::bShouldShowCityBarracksSystem() const
+{
+	return m_pCity ? m_pCity->bShouldShowCityBarracksSystem() : -1;
+}
+// WTP, ray, new Barracks System - END
+
+
 // R&R, ray, Health - START
 int CyCity::getCityHealth() const
 {

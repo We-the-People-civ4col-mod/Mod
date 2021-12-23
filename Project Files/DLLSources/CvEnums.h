@@ -835,6 +835,8 @@ enum FontSymbols
 	ANCHOR_CHAR,
 	NO_ANCHOR_CHAR,
 	ANCHOR_EUROPE_CHAR,
+	BARRACKS_CHAR, // WTP, ray, new Barracks System - START
+	NO_BARRACKS_CHAR,// WTP, ray, new Barracks System - START
 	// TAC - Trade Routes Advisor - koma13 - END
 
 #ifdef _USRDLL

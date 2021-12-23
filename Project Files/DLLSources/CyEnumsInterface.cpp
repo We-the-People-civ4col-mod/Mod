@@ -624,6 +624,8 @@ void CyEnumsPythonInterface()
 		.value("ANCHOR_CHAR", ANCHOR_CHAR)
 		.value("NO_ANCHOR_CHAR", NO_ANCHOR_CHAR)
 		.value("ANCHOR_EUROPE_CHAR", ANCHOR_EUROPE_CHAR)
+		.value("BARRACKS_CHAR", BARRACKS_CHAR) // WTP, ray, new Barracks System - START
+		.value("NO_BARRACKS_CHAR", NO_BARRACKS_CHAR) // WTP, ray, new Barracks System - START
 		// TAC - Trade Routes Advisor - koma13 - END
 		.value("MAX_NUM_SYMBOLS", MAX_NUM_SYMBOLS)
 		;

@@ -393,6 +393,8 @@ OtherFontIcons = { 'happy' : FontSymbols.HAPPY_CHAR,
 				'anchor' : FontSymbols.ANCHOR_CHAR,
 				'noAnchor' : FontSymbols.NO_ANCHOR_CHAR,
 				'anchorEurope' : FontSymbols.ANCHOR_EUROPE_CHAR,
+				'Barracks' : FontSymbols.BARRACKS_CHAR,
+				'noBarracks' : FontSymbols.NO_BARRACKS_CHAR,
 				# TAC - Trade Routes Advisor - koma13 - END
 				}
 

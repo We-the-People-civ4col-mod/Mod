@@ -1264,6 +1264,14 @@
 		<iDefineIntVal>4</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>ENABLE_NEW_BARRACKS_SYSTEM</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS</DefineName>
+		<iDefineIntVal>4</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>FORT_DEFENSE_MODIFIER_FOR_CITY</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>
 	</Define>

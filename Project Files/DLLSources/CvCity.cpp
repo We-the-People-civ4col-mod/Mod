@@ -2664,6 +2664,14 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 		setCityHarbourSpace(iMaxHarbourSpaceProvidedByBuilding);
 	}
 	// WTP, ray, new Harbour System - END
+
+	// WTP, ray, new Barracks System - START
+	int iMaxBarracksSpaceProvidedByBuilding = GC.getBuildingInfo(eBuilding).getMaxBarracksSpaceProvided();
+	if (iMaxBarracksSpaceProvidedByBuilding != 0 && iMaxBarracksSpaceProvidedByBuilding > getCityBarracksSpace())
+	{
+		setCityBarracksSpace(iMaxBarracksSpaceProvidedByBuilding);
+	}
+	// WTP, ray, new Barracks System - END
 }
 
 HandicapTypes CvCity::getHandicapType() const
@@ -9777,7 +9785,6 @@ int CvCity::getCityHarbourSpaceUsed() const
 	return iCityHarbourSpaceUsed;
 }
 
-// a small helper function
 bool CvCity::bShouldShowCityHarbourSystem() const
 {
 	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && plot()->isCoastalLand() && isHuman())
@@ -9787,9 +9794,67 @@ bool CvCity::bShouldShowCityHarbourSystem() const
 
 	return false;
 }
-
 // WTP, ray, new Harbour System - END
 
+
+// WTP, ray, new Barracks System - START
+int CvCity::getCityBarracksSpace() const
+{
+	int iValueToReturn = m_iCityBarracksSpace;
+	int iMinBarracksSpace = GC.getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS();
+	// even without Barracks Villages should return base Barracks Space
+	if (iValueToReturn < iMinBarracksSpace)
+	{
+			iValueToReturn = iMinBarracksSpace;
+	}
+	
+	return iValueToReturn;
+}
+
+void CvCity::setCityBarracksSpace(int iValue)
+{
+	if (iValue < 0)
+	{
+		return;
+	}
+
+	m_iCityBarracksSpace = iValue;
+}
+
+int CvCity::getCityBarracksSpaceUsed() const
+{
+	int iCityBarracksSpaceUsed = 0;
+	CvPlot* pPlot = plot();
+	for (int i = 0; i < pPlot->getNumUnits(); ++i)
+	{
+		CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);
+		// we only count Land Units that can attack, civil Units are not considered
+		// we also not consider Units loaded on Ships
+		// we also not consider Units of other Nations
+		if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack() && pLoopUnit->getTransportUnit() == NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+		{
+			iCityBarracksSpaceUsed += pLoopUnit->getUnitInfo().getBarracksSpaceNeeded();
+			// we also need to consider Professions
+			if (pLoopUnit->getProfession() != NO_PROFESSION)
+			{
+				iCityBarracksSpaceUsed += GC.getProfessionInfo(pLoopUnit->getProfession()).getBarracksSpaceNeededChange();
+			}
+		}
+	}
+
+	return iCityBarracksSpaceUsed;
+}
+
+bool CvCity::bShouldShowCityBarracksSystem() const
+{
+	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && isHuman())
+	{
+		return true;
+	}
+
+	return false;
+}
+// WTP, ray, new Barracks System - END
 
 // basic set and get methods
 int CvCity::getCityHappiness() const

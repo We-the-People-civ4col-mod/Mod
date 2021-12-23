@@ -43,6 +43,12 @@ void CyCityPythonInterface5(python::class_<CyCity>& x)
 		.def("bShouldShowCityHarbourSystem", &CyCity::bShouldShowCityHarbourSystem, "bool ()")
 		// WTP, ray, new Harbour System - END
 
+		// WTP, ray, new Barracks System - START
+		.def("getCityBarracksSpace", &CyCity::getCityBarracksSpace, "int ()")
+		.def("getCityBarracksSpaceUsed", &CyCity::getCityBarracksSpaceUsed, "int ()")
+		.def("bShouldShowCityBarracksSystem", &CyCity::bShouldShowCityBarracksSystem, "bool ()")
+		// WTP, ray, new Barracks System - END
+
 		// R&R, ray, Health - START
 		.def("getCityHealth", &CyCity::getCityHealth, "int ()")
 		.def("getCityHealthChange", &CyCity::getCityHealthChange, "int ()")

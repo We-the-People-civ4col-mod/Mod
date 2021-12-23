@@ -637,6 +637,11 @@
         <German>[ICON_BULLET]Braucht zum Andocken : %d1_Num%F2_Icon</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED</Tag>
+        <English>[ICON_BULLET]Barracks Space Needed : %d1_Num%F2_Icon</English>
+        <German>[ICON_BULLET]Braucht Kasernenplatz : %d1_Num%F2_Icon</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CARRIES</Tag>
         <English>[SPACE](carries %s1_Name)</English>
         <French>[SPACE](transporte : %s1_Name)</French>
@@ -838,6 +843,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED</Tag>
+        <English>[ICON_BULLET]Offers maximum %d1_HarbourSpace%F2_Icon</English>
+        <German>[ICON_BULLET]Bietet maximal %d1_HarbourSpace%F2_Icon</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_MAX_BARRACKS_SPACE_PROVIDED</Tag>
         <English>[ICON_BULLET]Offers maximum %d1_HarbourSpace%F2_Icon</English>
         <German>[ICON_BULLET]Bietet maximal %d1_HarbourSpace%F2_Icon</German>
     </TEXT>

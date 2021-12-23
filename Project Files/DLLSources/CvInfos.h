@@ -362,6 +362,7 @@ public:
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 	int getSpecialBuilding() const;
 	int getCombatChange() const;
+	int getBarracksSpaceNeededChange() const;	// WTP, ray, new Barracks System - START
 	int getMovesChange() const;
 	int getWorkRate() const;
 	int getMissionaryRate() const;
@@ -408,6 +409,7 @@ protected:
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 	int m_iSpecialBuilding;
 	int m_iCombatChange;
+	int m_iBarracksSpaceNeededChange; // WTP, ray, new Barracks System - START
 	int m_iMovesChange;
 	int m_iWorkRate;
 	int m_iMissionaryRate;
@@ -669,7 +671,8 @@ public:
 	virtual ~CvUnitInfo();
 
 	int getBerthSize() const; // PatchMod: Berth size START
-	int getHarbourSpaceNeeded() const; //// WTP, ray, new Harbour System - START
+	int getHarbourSpaceNeeded() const; // WTP, ray, new Harbour System - START
+	int getBarracksSpaceNeeded() const; // WTP, ray, new Barracks System - START
 
 /** NBMOD EDU **/
     int NBMOD_GetTeachLevel() const;
@@ -863,6 +866,7 @@ protected:
 
 	int m_iBerthSize; // PatchMod: Berth size START
 	int m_iHarbourSpaceNeeded; // WTP, ray, new Harbour System - START
+	int m_iBarracksSpaceNeeded; // WTP, ray, new Barracks System - START
 
     /** NBMOD EDU **/
     int m_iTeachLevel;
@@ -1288,6 +1292,7 @@ public:
 	int getPowerValue() const;
 	int getYieldStorage() const; 
 	int getMaxHarbourSpaceProvided() const; // WTP, ray, new Harbour System - START
+	int getMaxBarracksSpaceProvided() const; // WTP, ray, new Barracks System - START
 	int getSpecialBuildingType() const;
 	inline int getIndexOf_NextBuildingType_In_SpecialBuilding() const		{ return m_iIndexOf_NextBuildingType_In_SpecialBuilding; }
 	int getConquestProbability() const;
@@ -1393,6 +1398,7 @@ protected:
 	int m_iPowerValue;
 	int m_iYieldStorage;
 	int m_iMaxHarbourSpaceProvided; // WTP, ray, new Harbour System - START
+	int m_iMaxBarracksSpaceProvided; // WTP, ray, new Barracks System - START
 	int m_iSpecialBuildingType;
 	int m_iIndexOf_NextBuildingType_In_SpecialBuilding;
 	int m_iConquestProbability;

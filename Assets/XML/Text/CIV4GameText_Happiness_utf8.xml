@@ -122,23 +122,43 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_HARBOR_STILL_FREE</Tag>
-        <English>Harbour Space Available : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+        <English>Harbour space available : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
         <German>Ankerplätze in der Stadt : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_HARBOR_ALMOST_FULL</Tag>
-        <English>Last Chance to Dock Here : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+        <English>Last chance to dock here : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
         <German>Ankerplätze in der Stadt : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_HARBOR_TOTALLY_FULL</Tag>
-        <English>Harbour Is Now Full : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+        <English>Harbour is now full : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
         <German>Ankerplätze in der Stadt : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_BAR_HARBOUR_FULL</Tag>
-        <English>[COLOR_NEGATIVE_TEXT] Harbour Full : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+        <English>[COLOR_NEGATIVE_TEXT] Harbour full : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
         <German>[COLOR_NEGATIVE_TEXT] Hafen voll : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_BARRACKS_STILL_FREE</Tag>
+        <English>Barracks space available : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+        <German>Kasernenplätze in der Stadt : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_BARRACKS_ALMOST_FULL</Tag>
+        <English>Barracks almost full : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+        <German>Kasernenplätze fast voll : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_BARRACKS_TOTALLY_FULL</Tag>
+        <English>Barracks are now full : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+        <German>Kasernenplätze jetzt voll : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_BAR_BARRACKS_FULL</Tag>
+        <English>[COLOR_NEGATIVE_TEXT] Barracks full : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+        <German>[COLOR_NEGATIVE_TEXT] Kaserne voll : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_UNREST_BECAUSE_UNHAPPINESS</Tag>

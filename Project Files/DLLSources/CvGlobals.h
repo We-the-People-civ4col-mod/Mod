@@ -689,6 +689,9 @@ public:
 	// WTP, ray, new Harbour System - START
 	int getENABLE_NEW_HARBOUR_SYSTEM();
 	int getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS();
+	// WTP, ray, new Barracks System - START
+	int getENABLE_NEW_BARRACKS_SYSTEM();
+	int getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS();
 	// NBMOD REF
 	int getNBMOD_REF_ENABLE();
 	int getNBMOD_REF_RANDOM_SHIPS();
@@ -1250,6 +1253,9 @@ protected:
 	// WTP, ray, new Harbour System - START
 	int m_ENABLE_NEW_HARBOUR_SYSTEM;
 	int m_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
+	// WTP, ray, new Barracks System - START
+	int m_ENABLE_NEW_BARRACKS_SYSTEM;
+	int m_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
 	// NBMOD REF
 	int m_NBMOD_REF_ENABLE;
 	int m_NBMOD_REF_RANDOM_SHIPS;
@@ -1841,6 +1847,17 @@ inline int CvGlobals::getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS()
 {
 	return m_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
 }
+// WTP, ray, new Harbour System - END
+// WTP, ray, new Barracks System - START
+inline int CvGlobals::getENABLE_NEW_BARRACKS_SYSTEM()
+{
+	return m_ENABLE_NEW_BARRACKS_SYSTEM;
+}
+inline int CvGlobals::getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS()
+{
+	return m_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
+}
+// WTP, ray, new Barracks System - END
 // NBMOD REF
 inline int CvGlobals::getNBMOD_REF_ENABLE()
 {

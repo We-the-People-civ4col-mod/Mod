@@ -2553,6 +2553,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>3</iCombatChange>
+            <iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
             <iMovesChange>1</iMovesChange>
             <bMoveIntoPeak>1</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
@@ -2597,6 +2598,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>4</iCombatChange>
+            <iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
             <iMovesChange>0</iMovesChange>
             <bMoveIntoPeak>1</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
@@ -2641,6 +2643,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>5</iCombatChange>
+            <iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
             <iMovesChange>1</iMovesChange>
             <bMoveIntoPeak>1</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
@@ -2690,6 +2693,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>5</iCombatChange>
+            <iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
             <iMovesChange>0</iMovesChange>
             <bMoveIntoPeak>1</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
@@ -2739,6 +2743,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>6</iCombatChange>
+            <iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
             <iMovesChange>2</iMovesChange>
             <bMoveIntoPeak>1</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
@@ -2792,6 +2797,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>2</iCombatChange>
+            <iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
             <iMovesChange>0</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
@@ -2841,6 +2847,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>3</iCombatChange>
+            <iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
             <iMovesChange>0</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
@@ -2890,6 +2897,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>7</iCombatChange>
+            <iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
             <iMovesChange>0</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
@@ -2934,6 +2942,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>9</iCombatChange>
+            <iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
             <iMovesChange>0</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
@@ -2991,6 +3000,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>8</iCombatChange>
+            <iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
             <iMovesChange>0</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
@@ -3035,6 +3045,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>12</iCombatChange>
+            <iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
             <iMovesChange>0</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
@@ -3092,6 +3103,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>7</iCombatChange>
+            <iBarracksSpaceNeededChange>2</iBarracksSpaceNeededChange>
             <iMovesChange>2</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
@@ -3145,6 +3157,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>8</iCombatChange>
+            <iBarracksSpaceNeededChange>2</iBarracksSpaceNeededChange>
             <iMovesChange>2</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
@@ -3198,6 +3211,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>8</iCombatChange>
+            <iBarracksSpaceNeededChange>2</iBarracksSpaceNeededChange>
             <iMovesChange>1</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
@@ -3251,6 +3265,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>11</iCombatChange>
+            <iBarracksSpaceNeededChange>2</iBarracksSpaceNeededChange>
             <iMovesChange>1</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>

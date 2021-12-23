@@ -283,6 +283,12 @@ public:
 	bool bShouldShowCityHarbourSystem() const;
 	// WTP, ray, new Harbour System - END
 
+	// WTP, ray, new Barracks System - START
+	int getCityBarracksSpace() const;
+	int getCityBarracksSpaceUsed() const;
+	bool bShouldShowCityBarracksSystem() const;
+	// WTP, ray, new Harbour System - END
+
 	// R&R, ray, Health - START
 	int getCityHealth() const;
 	int getCityHealthChange() const;
