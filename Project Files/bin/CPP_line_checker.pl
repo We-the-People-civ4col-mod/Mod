@@ -42,7 +42,7 @@ sub processfile
 	
 	# check for files not ending with a newline
 	# useful as git will mark the last line as modified unless the file ends with a blank line
-	#die  $path . "(" . (scalar @lines) . ") No end of line at end of file\n" unless $text eq "\r\n" || substr($text, 1) eq "\n";
+	die  $path . "(" . (scalar @lines) . ") No end of line at end of file\n" unless $text eq "\r\n" || substr($text, 1) eq "\n";
 	
 	# loop through all lines to check for errors
 	my $i = 0;
