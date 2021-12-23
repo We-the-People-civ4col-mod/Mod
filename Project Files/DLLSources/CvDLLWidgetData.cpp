@@ -1955,7 +1955,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 						szBuffer.append(NEWLINE);
 						if (GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE()).getGold() < iCost)
 						{
-							szBuffer.append(gDLL->getText("TXT_KEY_BUILD_CANNOT_AFFORD", iCost, gDLL->getSymbolID(GOLD_CHAR)));
+							szBuffer.append(gDLL->getText("TXT_KEY_BUILD_CANNOT_AFFORD", iCost, GC.getSymbolID(GOLD_CHAR)));
 						}
 						else
 						{
@@ -2213,7 +2213,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					}
 				}
 
-				szTempBuffer.Format(L"%s%d %c", NEWLINE, iPrice, gDLL->getSymbolID(GOLD_CHAR));
+				szTempBuffer.Format(L"%s%d %c", NEWLINE, iPrice, GC.getSymbolID(GOLD_CHAR));
 				szBuffer.append(szTempBuffer);
 			}
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType() == COMMAND_GIFT)
@@ -2511,7 +2511,7 @@ void CvDLLWidgetData::parseContactCivHelp(CvWidgetDataStruct &widgetDataStruct, 
 		CvPlayerAI& player = GET_PLAYER((PlayerTypes)widgetDataStruct.m_iData1);
 		
 		szBuffer.append(CvWString::format(L"\nPlayer %d, Team %d", player.getID(), player.getTeam()));
-		szBuffer.append(CvWString::format(L"\n%d%c %d%c", player.getGold(), gDLL->getSymbolID(GOLD_CHAR), GET_TEAM(player.getTeam()).getRebelPercent(), gDLL->getSymbolID(POWER_CHAR)));
+		szBuffer.append(CvWString::format(L"\n%d%c %d%c", player.getGold(), GC.getSymbolID(GOLD_CHAR), GET_TEAM(player.getTeam()).getRebelPercent(), GC.getSymbolID(POWER_CHAR)));
 		szBuffer.append(CvWString::format(L"\nCities = %d, Units = %d, Pop = %d, AIPop = %d", player.getNumCities(), player.getNumUnits(), player.getTotalPopulation(), player.AI_getPopulation()));
 		szBuffer.append(CvWString::format(L"\nIncome = %d, Hurry Spending = %d", player.AI_getTotalIncome(), player.AI_getHurrySpending()));
 		for (int i = 0; i < NUM_STRATEGY_TYPES; ++i)

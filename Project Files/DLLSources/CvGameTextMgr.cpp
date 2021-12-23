@@ -394,15 +394,15 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 
 		if (pUnit->isFighting())
 		{
-			szTempBuffer.Format(L"?/%d%c", pUnit->baseCombatStr(), gDLL->getSymbolID(STRENGTH_CHAR));
+			szTempBuffer.Format(L"?/%d%c", pUnit->baseCombatStr(), GC.getSymbolID(STRENGTH_CHAR));
 		}
 		else if (pUnit->isHurt())
 		{
-			szTempBuffer.Format(L"%.1f/%d%c", (((float)(pUnit->baseCombatStr() * pUnit->currHitPoints())) / ((float)(pUnit->maxHitPoints()))), pUnit->baseCombatStr(), gDLL->getSymbolID(STRENGTH_CHAR));
+			szTempBuffer.Format(L"%.1f/%d%c", (((float)(pUnit->baseCombatStr() * pUnit->currHitPoints())) / ((float)(pUnit->maxHitPoints()))), pUnit->baseCombatStr(), GC.getSymbolID(STRENGTH_CHAR));
 		}
 		else
 		{
-			szTempBuffer.Format(L"%d%c", pUnit->baseCombatStr(), gDLL->getSymbolID(STRENGTH_CHAR));
+			szTempBuffer.Format(L"%d%c", pUnit->baseCombatStr(), GC.getSymbolID(STRENGTH_CHAR));
 		}
 		szString.append(szTempBuffer);
 	}
@@ -417,11 +417,11 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		// ray, new Movement Calculation - END
 		if ((pUnit->baseMoves() == iCurrMoves) || (pUnit->getTeam() != GC.getGameINLINE().getActiveTeam()))
 		{
-			szTempBuffer.Format(L"%d%c", pUnit->baseMoves(), gDLL->getSymbolID(MOVES_CHAR));
+			szTempBuffer.Format(L"%d%c", pUnit->baseMoves(), GC.getSymbolID(MOVES_CHAR));
 		}
 		else
 		{
-			szTempBuffer.Format(L"%d/%d%c", iCurrMoves, pUnit->baseMoves(), gDLL->getSymbolID(MOVES_CHAR));
+			szTempBuffer.Format(L"%d/%d%c", iCurrMoves, pUnit->baseMoves(), GC.getSymbolID(MOVES_CHAR));
 		}
 		szString.append(szTempBuffer);
 	}
@@ -436,7 +436,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		int iValue = GET_PLAYER(pUnit->getOwnerINLINE()).getSellToEuropeProfit(pUnit->getYield(), pUnit->getYieldStored());
 		if (iValue > 0)
 		{
-			szTempBuffer.Format(L" (%d%c)", iValue, gDLL->getSymbolID(GOLD_CHAR));
+			szTempBuffer.Format(L" (%d%c)", iValue, GC.getSymbolID(GOLD_CHAR));
 			szString.append(szTempBuffer);
 		}
 		
@@ -447,7 +447,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		int iValueAfrica = GET_PLAYER(pUnit->getOwnerINLINE()).getSellToAfricaProfit(pUnit->getYield(), pUnit->getYieldStored());
 		if (iValueAfrica > 0)
 		{
-			szTempBuffer.Format(L" (%d%c)", iValueAfrica, gDLL->getSymbolID(GOLD_CHAR));
+			szTempBuffer.Format(L" (%d%c)", iValueAfrica, GC.getSymbolID(GOLD_CHAR));
 			szString.append(szTempBuffer);
 		}
 		// R&R, ray, Africa - END
@@ -459,7 +459,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		int iValuePortRoyal = GET_PLAYER(pUnit->getOwnerINLINE()).getSellToPortRoyalProfit(pUnit->getYield(), pUnit->getYieldStored());
 		if (iValuePortRoyal > 0)
 		{
-			szTempBuffer.Format(L" (%d%c)", iValuePortRoyal, gDLL->getSymbolID(GOLD_CHAR));
+			szTempBuffer.Format(L" (%d%c)", iValuePortRoyal, GC.getSymbolID(GOLD_CHAR));
 			szString.append(szTempBuffer);
 		}
 		// R&R, ray, Port Royal - END
@@ -662,7 +662,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && pUnit->getUnitInfo().getHarbourSpaceNeeded() > 0)
 		{
 			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_UNIT_HARBOR_SPACE_NEEDED", pUnit->getUnitInfo().getHarbourSpaceNeeded(),GC.getGameINLINE().getSymbolID(ANCHOR_CHAR)));
+			szString.append(gDLL->getText("TXT_KEY_UNIT_HARBOR_SPACE_NEEDED", pUnit->getUnitInfo().getHarbourSpaceNeeded(), GC.getSymbolID(ANCHOR_CHAR)));
 		}
 		// WTP, ray, new Harbour System - END
 
@@ -670,7 +670,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		if (GC.getENABLE_NEW_BARRACKS_SYSTEM() && pUnit->getUnitInfo().getBarracksSpaceNeeded() > 0)
 		{
 			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED", pUnit->getUnitInfo().getBarracksSpaceNeeded(), GC.getGameINLINE().getSymbolID(BARRACKS_CHAR)));
+			szString.append(gDLL->getText("TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED", pUnit->getUnitInfo().getBarracksSpaceNeeded(), GC.getSymbolID(BARRACKS_CHAR)));
 		}
 		// WTP, ray, new Barracks System - END
 
@@ -1241,18 +1241,18 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
 		if (iCombatChange != 0 || iMovesChange != 0)
 		{
 			szBuffer.append(NEWLINE);
-			szTempBuffer.Format(L"%c", gDLL->getSymbolID(BULLET_CHAR));
+			szTempBuffer.Format(L"%c", GC.getSymbolID(BULLET_CHAR));
 			szBuffer.append(szTempBuffer);
 
 			if (iCombatChange != 0)
 			{
-				szTempBuffer.Format(L"%d%c ", iCombatChange, gDLL->getSymbolID(STRENGTH_CHAR));
+				szTempBuffer.Format(L"%d%c ", iCombatChange, GC.getSymbolID(STRENGTH_CHAR));
 				szBuffer.append(szTempBuffer);
 			}
 
 			if (iMovesChange != 0)
 			{
-				szTempBuffer.Format(L"%d%c ", iMovesChange, gDLL->getSymbolID(MOVES_CHAR));
+				szTempBuffer.Format(L"%d%c ", iMovesChange, GC.getSymbolID(MOVES_CHAR));
 				szBuffer.append(szTempBuffer);
 			}
 		}
@@ -1263,7 +1263,7 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
 	if (iBarracksSpaceNeededChange > 0)
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED", iBarracksSpaceNeededChange, GC.getGameINLINE().getSymbolID(BARRACKS_CHAR)));
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED", iBarracksSpaceNeededChange, GC.getSymbolID(BARRACKS_CHAR)));
 	}
 	// WTP, ray, new Barracks System - END
 
@@ -1777,7 +1777,7 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 							{
 								szString.append(CvWString::format(L" %d.%02d/%d", iCurrent, iCurrent100, iBase));
 							}
-							szString.append(CvWString::format(L"%c", gDLL->getSymbolID(STRENGTH_CHAR)));
+							szString.append(CvWString::format(L"%c", GC.getSymbolID(STRENGTH_CHAR)));
 						}
 
 
@@ -2346,27 +2346,26 @@ bool CvGameTextMgr::setCombatPlotHelp(CvWStringBuffer &szString, CvPlot* pPlot)
 // DO NOT REMOVE - needed for font testing - Moose
 void createTestFontString(CvWStringBuffer& szString)
 {
-	int iI;
 	szString.assign(L"!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[?]^_`abcdefghijklmnopqrstuvwxyz\n");
 	szString.append(L"{}~\\????G????T??????????S??F?O????????a??de??????µ???p??st?f???????????«»°???????©®?£??????");
 	szString.append(L"\n");
-	for (iI=0;iI<NUM_YIELD_TYPES;++iI)
-		szString.append(CvWString::format(L"%c", GC.getYieldInfo((YieldTypes) iI).getChar()));
+	for (YieldTypes iI = FIRST_YIELD;iI<NUM_YIELD_TYPES;++iI)
+		szString.append(CvWString::format(L"%c", GC.getYieldInfo(iI).getChar()));
 	szString.append(L"\n");
-	for (iI=0;iI<GC.getNumSpecialBuildingInfos();++iI)
-		szString.append(CvWString::format(L"%c", GC.getSpecialBuildingInfo((SpecialBuildingTypes) iI).getChar()));
+	for (SpecialBuildingTypes iI = FIRST_SPECIALBUILDING;iI<GC.getNumSpecialBuildingInfos();++iI)
+		szString.append(CvWString::format(L"%c", GC.getSpecialBuildingInfo(iI).getChar()));
 	szString.append(L"\n");
-	for (iI=0;iI<GC.getNumFatherPointInfos();++iI)
-		szString.append(CvWString::format(L"%c", GC.getFatherPointInfo((FatherPointTypes) iI).getChar()));
+	for (FatherPointTypes iI = FIRST_FATHER_POINT;iI<GC.getNumFatherPointInfos();++iI)
+		szString.append(CvWString::format(L"%c", GC.getFatherPointInfo(iI).getChar()));
 	szString.append(L"\n");
-	for (iI=0;iI<GC.getNumCivilizationInfos();++iI)
-		szString.append(CvWString::format(L"%c", GC.getCivilizationInfo((CivilizationTypes) iI).getMissionaryChar()));
+	for (CivilizationTypes iI = FIRST_CIVILIZATION;iI<GC.getNumCivilizationInfos();++iI)
+		szString.append(CvWString::format(L"%c", GC.getCivilizationInfo(iI).getMissionaryChar()));
 	szString.append(L"\n");
-	for (iI = 0; iI < GC.getNumBonusInfos(); ++iI)
-		szString.append(CvWString::format(L"%c", GC.getBonusInfo((BonusTypes) iI).getChar()));
+	for (BonusTypes iI = FIRST_BONUS; iI < GC.getNumBonusInfos(); ++iI)
+		szString.append(CvWString::format(L"%c", GC.getBonusInfo(iI).getChar()));
 	szString.append(L"\n");
-	for (iI=0; iI<MAX_NUM_SYMBOLS; ++iI)
-		szString.append(CvWString::format(L"%c", gDLL->getSymbolID(iI)));
+	for (FontSymbols iI = FIRST_FONTSYMBOL; iI<MAX_NUM_SYMBOLS; ++iI)
+		szString.append(CvWString::format(L"%c", GC.getSymbolID(iI)));
 }
 
 void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
@@ -3246,21 +3245,21 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 		if (iCityHarborSpaceUsed < (iCityHarborSpaceMax/2))
 		{
 			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_STILL_FREE", iCityHarborSpaceUsed, iCityHarborSpaceMax, GC.getGameINLINE().getSymbolID(ANCHOR_CHAR)));
+			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_STILL_FREE", iCityHarborSpaceUsed, iCityHarborSpaceMax, GC.getSymbolID(ANCHOR_CHAR)));
 		}
 
 		// more than 50% of City Harbor Space is used - not yet totally full though
 		if (iCityHarborSpaceUsed >= (iCityHarborSpaceMax/2) && iCityHarborSpaceUsed < iCityHarborSpaceMax)
 		{
 			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_ALMOST_FULL", iCityHarborSpaceUsed, iCityHarborSpaceMax, GC.getGameINLINE().getSymbolID(ANCHOR_CHAR)));
+			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_ALMOST_FULL", iCityHarborSpaceUsed, iCityHarborSpaceMax, GC.getSymbolID(ANCHOR_CHAR)));
 		}
 
 		// City Harbor Space is totally full
 		if (iCityHarborSpaceUsed >= iCityHarborSpaceMax)
 		{
 			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_TOTALLY_FULL", iCityHarborSpaceUsed, iCityHarborSpaceMax, GC.getGameINLINE().getSymbolID(NO_ANCHOR_CHAR)));
+			szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_TOTALLY_FULL", iCityHarborSpaceUsed, iCityHarborSpaceMax, GC.getSymbolID(NO_ANCHOR_CHAR)));
 		}
 	}
 	// WTP, ray, new Harbour System - END
@@ -3276,21 +3275,21 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 		if (iCityBarracksSpaceUsed < (iCityBarracksSpaceMax/2))
 		{
 			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_STILL_FREE", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getGameINLINE().getSymbolID(BARRACKS_CHAR)));
+			szString.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_STILL_FREE", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getSymbolID(BARRACKS_CHAR)));
 		}
 
 		// more than 50% of City Harbor Space is used - not yet totally full though
 		if (iCityBarracksSpaceUsed >= (iCityBarracksSpaceMax/2) && iCityBarracksSpaceUsed < iCityBarracksSpaceMax)
 		{
 			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_ALMOST_FULL", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getGameINLINE().getSymbolID(BARRACKS_CHAR)));
+			szString.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_ALMOST_FULL", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getSymbolID(BARRACKS_CHAR)));
 		}
 
 		// City Harbor Space is totally full
 		if (iCityBarracksSpaceUsed >= iCityBarracksSpaceMax)
 		{
 			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_TOTALLY_FULL", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getGameINLINE().getSymbolID(NO_BARRACKS_CHAR)));
+			szString.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_TOTALLY_FULL", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getSymbolID(NO_BARRACKS_CHAR)));
 		}
 	}
 	// WTP, ray, new Barracks System - END
@@ -3650,7 +3649,7 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 			{
 				if (kTrait.isFreePromotionUnitCombat(iJ))
 				{
-					szTempBuffer.Format(L"\n        %c%s", gDLL->getSymbolID(BULLET_CHAR), GC.getUnitCombatInfo((UnitCombatTypes)iJ).getDescription());
+					szTempBuffer.Format(L"\n        %c%s", GC.getSymbolID(BULLET_CHAR), GC.getUnitCombatInfo((UnitCombatTypes)iJ).getDescription());
 					szHelpString.append(szTempBuffer);
 				}
 			}
@@ -4511,7 +4510,7 @@ void CvGameTextMgr::parseCivInfos(CvWStringBuffer &szInfoText, CivilizationTypes
 					}
 					else
 					{
-						szBuffer.Format(L"\n  %c%s - (%s)", gDLL->getSymbolID(BULLET_CHAR),
+						szBuffer.Format(L"\n  %c%s - (%s)", GC.getSymbolID(BULLET_CHAR),
 							GC.getUnitInfo(eDefaultUnit).getDescription(),
 							GC.getUnitInfo(eUniqueUnit).getDescription());
 					}
@@ -4562,7 +4561,7 @@ void CvGameTextMgr::parseCivInfos(CvWStringBuffer &szInfoText, CivilizationTypes
 					}
 					else
 					{
-						szBuffer.Format(L"\n  %c%s - (%s)", gDLL->getSymbolID(BULLET_CHAR),
+						szBuffer.Format(L"\n  %c%s - (%s)", GC.getSymbolID(BULLET_CHAR),
 							GC.getBuildingInfo(eDefaultBuilding).getDescription(),
 							GC.getBuildingInfo(eUniqueBuilding).getDescription());
 					}
@@ -4589,11 +4588,11 @@ void CvGameTextMgr::parseCivInfos(CvWStringBuffer &szInfoText, CivilizationTypes
 				{
 					if (eLoopUnitProfession != NO_PROFESSION)
 					{
-						szDesc += CvWString::format(L"\n  %c%s (%s)", gDLL->getSymbolID(BULLET_CHAR), GC.getProfessionInfo(eLoopUnitProfession).getDescription(), GC.getUnitInfo(eLoopUnit).getDescription());
+						szDesc += CvWString::format(L"\n  %c%s (%s)", GC.getSymbolID(BULLET_CHAR), GC.getProfessionInfo(eLoopUnitProfession).getDescription(), GC.getUnitInfo(eLoopUnit).getDescription());
 					}
 					else
 					{
-						szDesc += CvWString::format(L"\n  %c%s", gDLL->getSymbolID(BULLET_CHAR), GC.getUnitInfo(eLoopUnit).getDescription());
+						szDesc += CvWString::format(L"\n  %c%s", GC.getSymbolID(BULLET_CHAR), GC.getUnitInfo(eLoopUnit).getDescription());
 					}
 				}
 			}
@@ -5086,7 +5085,7 @@ void CvGameTextMgr::parseCivicInfo(CvWStringBuffer &szHelpText, CivicTypes eCivi
 	{
 		if (kCivicInfo.isHurry(iI))
 		{
-			szHelpText.append(CvWString::format(L"%s%c%s", NEWLINE, gDLL->getSymbolID(BULLET_CHAR), GC.getHurryInfo((HurryTypes)iI).getDescription()));
+			szHelpText.append(CvWString::format(L"%s%c%s", NEWLINE, GC.getSymbolID(BULLET_CHAR), GC.getHurryInfo((HurryTypes)iI).getDescription()));
 		}
 	}
 
@@ -5134,10 +5133,10 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 		szBuffer.append(NEWLINE);
 		if (kUnitInfo.getCombat() > 0)
 		{
-			szTempBuffer.Format(L"%d%c, ", kUnitInfo.getCombat(), gDLL->getSymbolID(STRENGTH_CHAR));
+			szTempBuffer.Format(L"%d%c, ", kUnitInfo.getCombat(), GC.getSymbolID(STRENGTH_CHAR));
 			szBuffer.append(szTempBuffer);
 		}
-		szTempBuffer.Format(L"%d%c", kUnitInfo.getMoves(), gDLL->getSymbolID(MOVES_CHAR));
+		szTempBuffer.Format(L"%d%c", kUnitInfo.getMoves(), GC.getSymbolID(MOVES_CHAR));
 		szBuffer.append(szTempBuffer);
 	}
 
@@ -5157,7 +5156,7 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 
 	if (NO_PROMOTION != kUnitInfo.getLeaderPromotion())
 	{
-		szBuffer.append(CvWString::format(L"%s%c%s", NEWLINE, gDLL->getSymbolID(BULLET_CHAR), gDLL->getText("TXT_KEY_PROMOTION_WHEN_LEADING").GetCString()));
+		szBuffer.append(CvWString::format(L"%s%c%s", NEWLINE, GC.getSymbolID(BULLET_CHAR), gDLL->getText("TXT_KEY_PROMOTION_WHEN_LEADING").GetCString()));
 		parsePromotionHelp(szBuffer, (PromotionTypes)kUnitInfo.getLeaderPromotion(), L"\n   ");
 	}
 
@@ -5180,7 +5179,7 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && kUnitInfo.getHarbourSpaceNeeded() > 0)
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_HARBOR_SPACE_NEEDED", kUnitInfo.getHarbourSpaceNeeded(), GC.getGameINLINE().getSymbolID(ANCHOR_CHAR)));
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_HARBOR_SPACE_NEEDED", kUnitInfo.getHarbourSpaceNeeded(), GC.getSymbolID(ANCHOR_CHAR)));
 	}
 	// WTP, ray, new Harbour System - END
 
@@ -5188,7 +5187,7 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 	if (GC.getENABLE_NEW_BARRACKS_SYSTEM() && kUnitInfo.getBarracksSpaceNeeded() > 0)
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED", kUnitInfo.getBarracksSpaceNeeded(), GC.getGameINLINE().getSymbolID(BARRACKS_CHAR)));
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED", kUnitInfo.getBarracksSpaceNeeded(), GC.getSymbolID(BARRACKS_CHAR)));
 	}
 	// WTP, ray, new Barracks System - END
 
@@ -5839,7 +5838,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 	if(!isEmpty(szYieldsDemandedList))
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getSymbolID(BULLET_CHAR));
+		szBuffer.append(GC.getSymbolID(BULLET_CHAR));
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_YIELD_DEMAND", szYieldsDemandedList.GetCString()));
 	}
 	//Androrc End
@@ -6108,7 +6107,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 								szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_YIELDS_CONVERSION", szYieldsList.GetCString(), GC.getYieldInfo((YieldTypes) kProfession.getYieldsProduced(0)).getChar()));
 							}
 							szBuffer.append(NEWLINE);
-							szBuffer.append(gDLL->getSymbolID(BULLET_CHAR));
+							szBuffer.append(GC.getSymbolID(BULLET_CHAR));
 							szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_PROFESSION_OUTPUT", kBuilding.getProfessionOutput(), GC.getYieldInfo((YieldTypes) kProfession.getYieldsProduced(0)).getChar()));
 						}
 					}
@@ -6164,7 +6163,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		{
 			szBuffer.append(NEWLINE);
 			// TAC - Messages - Ray - START
-			//szBuffer.append(gDLL->getSymbolID(BULLET_CHAR));
+			//szBuffer.append(GC.getSymbolID(BULLET_CHAR));
 			szBuffer.append(gDLL->getText("TXT_KEY_REPLACES_UNIT", kNextBuilding.getTextKeyWide()));
 			// TAC - Messages - Ray - END
 		}
@@ -6212,7 +6211,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	if (!isEmpty(szYieldsDemandedList))
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getSymbolID(BULLET_CHAR));
+		szBuffer.append(GC.getSymbolID(BULLET_CHAR));
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_YIELD_DEMAND", szYieldsDemandedList.GetCString()));
 	}
 
@@ -6250,7 +6249,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && kBuilding.getMaxHarbourSpaceProvided() > 0)
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED", kBuilding.getMaxHarbourSpaceProvided(), GC.getGameINLINE().getSymbolID(ANCHOR_CHAR)));
+		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED", kBuilding.getMaxHarbourSpaceProvided(), GC.getSymbolID(ANCHOR_CHAR)));
 	}
 	// WTP, ray, new Harbour System - END
 
@@ -6258,7 +6257,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	if (GC.getENABLE_NEW_BARRACKS_SYSTEM() && kBuilding.getMaxBarracksSpaceProvided() > 0)
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_MAX_BARRACKS_SPACE_PROVIDED", kBuilding.getMaxBarracksSpaceProvided(), GC.getGameINLINE().getSymbolID(BARRACKS_CHAR)));
+		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_MAX_BARRACKS_SPACE_PROVIDED", kBuilding.getMaxBarracksSpaceProvided(), GC.getSymbolID(BARRACKS_CHAR)));
 	}
 	// WTP, ray, new Barracks System - END
 
@@ -6738,7 +6737,7 @@ void CvGameTextMgr::setYieldChangeHelp(CvWStringBuffer &szBuffer, const CvWStrin
 			{
 				if (bNewLine)
 				{
-					szTempBuffer.Format(L"\n%c", gDLL->getSymbolID(BULLET_CHAR));
+					szTempBuffer.Format(L"\n%c", GC.getSymbolID(BULLET_CHAR));
 				}
 				szTempBuffer += CvWString::format(L"%s%s%s%d%s%c",
 					szStart.GetCString(),
@@ -7031,7 +7030,7 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 		}
 
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_FORT_DEFENSE_MODIFIER_IF_WORKED", iFortDefenseBonusModifier, gDLL->getSymbolID(DEFENSE_CHAR)));
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_FORT_DEFENSE_MODIFIER_IF_WORKED", iFortDefenseBonusModifier, GC.getSymbolID(DEFENSE_CHAR)));
 		// WTP, ray, Improvements give Bonus to their City - END
 	}
 	if (info.isMonastery())
@@ -7878,7 +7877,7 @@ void CvGameTextMgr::getActiveDealsString(CvWStringBuffer &szBuffer, PlayerTypes 
 			|| (pDeal->getFirstPlayer() == eOtherPlayer && pDeal->getSecondPlayer() == eThisPlayer))
 		{
 			szBuffer.append(NEWLINE);
-			szBuffer.append(CvWString::format(L"%c", gDLL->getSymbolID(BULLET_CHAR)));
+			szBuffer.append(CvWString::format(L"%c", GC.getSymbolID(BULLET_CHAR)));
 			getDealString(szBuffer, *pDeal, eThisPlayer);
 		}
 		pDeal = GC.getGameINLINE().nextDeal(&iIndex);
@@ -7889,7 +7888,7 @@ void CvGameTextMgr::buildHintsList(CvWStringBuffer& szBuffer)
 {
 	for (int i = 0; i < GC.getNumHints(); i++)
 	{
-		szBuffer.append(CvWString::format(L"%c%s", gDLL->getSymbolID(BULLET_CHAR), GC.getHints(i).getText()));
+		szBuffer.append(CvWString::format(L"%c%s", GC.getSymbolID(BULLET_CHAR), GC.getHints(i).getText()));
 		szBuffer.append(NEWLINE);
 		szBuffer.append(NEWLINE);
 	}
@@ -8693,10 +8692,7 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 
 		if (iCityHarborSpaceUsed >= iCityHarborSpaceMax)
 		{
-			// CAREFUL !!! This Icon is not a standard Icon (of Vanilla) that the exe knows. Thus we needed to have a workaround.
-			// do not use "gDLL->getSymbolID(NO_ANCHOR_CHAR)" like you would for normal FontIcons (of Vanilla)
-			// use instead "GC.getGameINLINE().getSymbolID(NO_ANCHOR_CHAR)" because it applies our modded code for FontIcons
-			szBuffer.append(CvWString::format(L" %c", GC.getGameINLINE().getSymbolID(NO_ANCHOR_CHAR)));
+			szBuffer.append(CvWString::format(L" %c", GC.getSymbolID(NO_ANCHOR_CHAR)));
 		}
 	}
 	// WTP, ray, new Harbour System - END
@@ -8709,10 +8705,7 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 
 		if (iCityBarracksSpaceUsed >= iCityBarracksSpaceMax)
 		{
-			// CAREFUL !!! This Icon is not a standard Icon (of Vanilla) that the exe knows. Thus we needed to have a workaround.
-			// do not use "gDLL->getSymbolID(NO_BARRACKS_CHAR)" like you would for normal FontIcons (of Vanilla)
-			// use instead "GC.getGameINLINE().getSymbolID(NO_BARRACKS_CHAR)" because it applies our modded code for FontIcons
-			szBuffer.append(CvWString::format(L" %c", GC.getGameINLINE().getSymbolID(NO_BARRACKS_CHAR)));
+			szBuffer.append(CvWString::format(L" %c", GC.getSymbolID(NO_BARRACKS_CHAR)));
 		}
 	}
 	// WTP, ray, new Barracks System - END
@@ -8722,7 +8715,7 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 	// XXX out this in bottom bar???
 	if (pCity->isOccupation())
 	{
-		szBuffer.append(CvWString::format(L" (%c:%d)", gDLL->getSymbolID(OCCUPATION_CHAR), pCity->getOccupationTimer()));
+		szBuffer.append(CvWString::format(L" (%c:%d)", GC.getSymbolID(OCCUPATION_CHAR), pCity->getOccupationTimer()));
 	}
 
 	if (pCity->isVisible(GC.getGameINLINE().getActiveTeam(), true))
@@ -8761,12 +8754,12 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 		int iDefenseModifier = pCity->getDefenseModifier();
 		if (iDefenseModifier != 0)
 		{
-			szBuffer.append(CvWString::format(L" %c:%s%d%%", gDLL->getSymbolID(DEFENSE_CHAR), ((iDefenseModifier > 0) ? "+" : ""), iDefenseModifier));
+			szBuffer.append(CvWString::format(L" %c:%s%d%%", GC.getSymbolID(DEFENSE_CHAR), ((iDefenseModifier > 0) ? "+" : ""), iDefenseModifier));
 		}
 
 		if (pCity->getRebelPercent() > 0)
 		{
-			szBuffer.append(CvWString::format(L" %c:%d%%", gDLL->getSymbolID(POWER_CHAR), pCity->getRebelPercent()));
+			szBuffer.append(CvWString::format(L" %c:%d%%", GC.getSymbolID(POWER_CHAR), pCity->getRebelPercent()));
 		}
 	}
 

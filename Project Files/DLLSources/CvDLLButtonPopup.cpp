@@ -1876,7 +1876,7 @@ bool CvDLLButtonPopup::launchEducationPopup(CvPopup* pPopup, CvPopupInfo &info)
 			szText.Format(L"%s", kUnit.getDescription());
 			if (iPrice > 0)
 			{
-				szText += CvWString::format(L" (%d%c)", iPrice, gDLL->getSymbolID(GOLD_CHAR));
+				szText += CvWString::format(L" (%d%c)", iPrice, GC.getSymbolID(GOLD_CHAR));
 			}
 			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szText, kUnit.getButton(), iI, WIDGET_GENERAL, -1, -1, true, POPUP_LAYOUT_STRETCH, DLL_FONT_LEFT_JUSTIFY);
 			++iNumUnits;
@@ -3243,7 +3243,7 @@ bool CvDLLButtonPopup::launchTeacherListPopup(CvPopup* pPopup, CvPopupInfo &info
 			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kUnit.getButton(), -1, WIDGET_HELP_TEACHER_UNIT, eUnit);
 			if (iPrice >= 0)
 			{
-				gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, CvWString::format(L" %d%c", iPrice, gDLL->getSymbolID(GOLD_CHAR)));
+				gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, CvWString::format(L" %d%c", iPrice, GC.getSymbolID(GOLD_CHAR)));
 				gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 1, eUnit, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
 				gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_REPEAT_TEXT"), eUnit, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_REPEAT_HELP").getWithoutFormatting());
 				gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->getOrderedStudentsRepeat(eUnit), eUnit);

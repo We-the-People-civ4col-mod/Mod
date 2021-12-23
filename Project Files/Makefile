@@ -455,6 +455,7 @@ test_DllExport:
 	@ECHO Testing DllExport
 	@$(PERL) bin\DllExport.pl "$(SOURCE_DIR)"
 	@$(PERL) bin\xml_validation.pl
+	@$(PERL) bin\CPP_line_checker.pl
 
 # first step in the testing process
 # each target mentioned here will run in a dedicated process

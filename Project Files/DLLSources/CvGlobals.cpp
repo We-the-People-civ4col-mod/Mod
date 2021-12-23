@@ -3121,6 +3121,29 @@ void CvGlobals::cleanInfoStrings()
 }
 
 /// GameFont XML control - start - Nightinggale
+
+// Replace the vanilla getSymbolID with this function.
+// Vanilla wants to map modded symbol IDs to IDs outside of the range, which works on billboards.
+// This function allows mapping our own symbols to IDs, which works on billboards.
+int CvGlobals::getSymbolID(FontSymbols eSymbol) const
+{
+	if (eSymbol < 0 || eSymbol >= MAX_NUM_SYMBOLS)
+	{
+		return -1;
+	}
+	if (eSymbol <= ATTITUDE_FRIENDLY_CHAR)
+	{
+		// use vanilla code for vanilla symbols.
+		// the exe hardcodes IDs for vanilla symbols, hence no way to move them.
+		// do not use gDLL in the call as the error detection script will trigger on it and cause an error.
+		return GC.getDLLIFace()->getSymbolID(eSymbol);
+	}
+
+	// non-vanilla symbols are placed before the vanilla symbols to avoid hitting the ID limit in billboards.
+	return eSymbol - (ATTITUDE_FRIENDLY_CHAR + 1) // Index relative to first custom symbol.
+		+ getFontSymbolCustomOffset();         // use xml defined ID of first custom symbol.
+}
+
 int CvGlobals::getFontSymbolBonusOffset() const
 {
 	return m_iFontSymbolBonusOffset;

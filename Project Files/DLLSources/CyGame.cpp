@@ -64,7 +64,7 @@ int CyGame::getSymbolID(int iSymbol)
 {
 	if (m_pGame)
 	{
-		return m_pGame->getSymbolID((FontSymbols)iSymbol);
+		return GC.getSymbolID((FontSymbols)iSymbol);
 	}
 	return -1;
 }

@@ -3429,29 +3429,6 @@ void CvGame::getGlobeviewConfigurationParameters(TeamTypes eTeam, bool& bStarsVi
 	}
 }
 
-
-int CvGame::getSymbolID(FontSymbols eSymbol)
-{
-	if (eSymbol < 0 || eSymbol >= MAX_NUM_SYMBOLS)
-	{
-		return -1;
-	}
-	if (eSymbol <= ATTITUDE_FRIENDLY_CHAR)
-	{
-		// use vanilla code for vanilla symbols
-		return gDLL->getInterfaceIFace()->getSymbolID(eSymbol);
-	}
-	int a = eSymbol;
-	a -= ATTITUDE_FRIENDLY_CHAR;
-	a += 1;
-	a += GC.getFontSymbolCustomOffset();
-
-	// non-vanilla symbols are placed before the vanilla symbols to avoid hitting the ID limit in billboards
-	return eSymbol - (ATTITUDE_FRIENDLY_CHAR + 1) // Index relative to first custom symbol
-		+ GC.getFontSymbolCustomOffset();         // use xml defined ID of first custom symbol
-}
-
-
 int CvGame::getAdjustedPopulationPercent(VictoryTypes eVictory) const
 {
 	int iPopulation;

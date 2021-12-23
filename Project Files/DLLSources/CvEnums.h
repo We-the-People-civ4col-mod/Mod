@@ -840,7 +840,8 @@ enum FontSymbols
 	// TAC - Trade Routes Advisor - koma13 - END
 
 #ifdef _USRDLL
-	MAX_NUM_SYMBOLS
+	MAX_NUM_SYMBOLS,
+	FIRST_FONTSYMBOL = 0,
 #endif
 };
 
