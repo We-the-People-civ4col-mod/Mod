@@ -139,7 +139,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>TriggerChance</PythonCanDo>
+            <PythonCanDo/>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -1736,7 +1736,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>TriggerChance</PythonCanDo>
+            <PythonCanDo/>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -1807,7 +1807,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>TriggerChance</PythonCanDo>
+            <PythonCanDo/>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -2629,7 +2629,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>TriggerChance</PythonCanDo>
+            <PythonCanDo/>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -4077,7 +4077,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>TriggerChance</PythonCanDo>
+            <PythonCanDo/>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -4148,7 +4148,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>TriggerChance</PythonCanDo>
+            <PythonCanDo/>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -4219,7 +4219,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>TriggerChance</PythonCanDo>
+            <PythonCanDo/>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -4290,7 +4290,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>TriggerChance</PythonCanDo>
+            <PythonCanDo/>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -7494,7 +7494,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>TriggerChance</PythonCanDo>
+            <PythonCanDo/>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -10153,7 +10153,7 @@
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,art/eventimages/event_image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>-1</iWeight>
+            <iWeight>100</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>1</bProbabilityBuildingMultiply>
             <eCivic>NONE</eCivic>
@@ -10203,7 +10203,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>TriggerChance</PythonCanDo>
+            <PythonCanDo/>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -10223,7 +10223,7 @@
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,art/eventimages/event_image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>-1</iWeight>
+            <iWeight>200</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <eCivic>NONE</eCivic>
@@ -10274,7 +10274,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>TriggerChance</PythonCanDo>
+            <PythonCanDo/>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -10393,7 +10393,7 @@
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,art/eventimages/event_image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>-1</iWeight>
+            <iWeight>50</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <eCivic>NONE</eCivic>
@@ -10445,7 +10445,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>TriggerChance</PythonCanDo>
+            <PythonCanDo/>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -10463,7 +10463,7 @@
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,art/eventimages/event_image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>-1</iWeight>
+            <iWeight>50</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <eCivic>NONE</eCivic>
@@ -10513,7 +10513,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>TriggerChance</PythonCanDo>
+            <PythonCanDo/>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
