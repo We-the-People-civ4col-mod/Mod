@@ -306,5 +306,10 @@
             <Description>TXT_KEY_CONCEPT_NEW_HARBOUR_SYSTEM</Description>
             <Civilopedia>TXT_KEY_CONCEPT_NEW_HARBOUR_SYSTEM_PEDIA</Civilopedia>
         </ConceptInfo>
+        <ConceptInfo>
+            <Type>CONCEPT_NEW_BARRACKS_SYSTEM</Type>
+            <Description>TXT_KEY_CONCEPT_NEW_BARRACKS_SYSTEM</Description>
+            <Civilopedia>TXT_KEY_CONCEPT_NEW_BARRACKS_SYSTEM_PEDIA</Civilopedia>
+        </ConceptInfo>
     </ConceptInfos>
 </Civ4BasicInfos>

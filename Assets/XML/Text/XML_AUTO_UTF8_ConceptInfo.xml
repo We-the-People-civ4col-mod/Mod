@@ -656,6 +656,16 @@
         <German>[H1]ANKERPLÄTZE[\H1][PARAGRAPH:2][BOLD]Ankerplätze[\BOLD][PARAGRAPH:1]TODO</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_CONCEPT_NEW_BARRACKS_SYSTEM</Tag>
+        <English>Harbour Space</English>
+        <German>Ankerplätze</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONCEPT_NEW_BARRACKS_SYSTEM_PEDIA</Tag>
+        <English>[H1]HARBOUR SPACE[\H1][PARAGRAPH:2][BOLD]Harbour Space[\BOLD][PARAGRAPH:1]TODO</English>
+        <German>[H1]ANKERPLÄTZE[\H1][PARAGRAPH:2][BOLD]Ankerplätze[\BOLD][PARAGRAPH:1]TODO</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CONCEPT_THE_NEW_WORLD</Tag>
         <English>The New World</English>
         <French>
