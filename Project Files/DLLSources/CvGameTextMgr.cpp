@@ -2915,6 +2915,74 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			// WTP, check Harbour System also for Monasteries, Forts and Canals - END
 		}
 
+		// WTP, check Harbour System also for Plots with City - START
+		if (pPlot->isCity())
+		{
+			CvCity* pCity = pPlot->getPlotCity();
+
+			szString.append(NEWLINE);
+			szString.append(pCity->getNameKey());
+
+			// WTP, ray, new Harbour System - START
+			if (pCity->bShouldShowCityHarbourSystem())
+			{
+				int iCityHarborSpaceUsed = pCity->getCityHarbourSpaceUsed();
+				int iCityHarborSpaceMax = pCity->getCityHarbourSpace();
+
+				// less than 50% of City Harbor Space is used
+				if (iCityHarborSpaceUsed < (iCityHarborSpaceMax/2))
+				{
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_STILL_FREE", iCityHarborSpaceUsed, iCityHarborSpaceMax, GC.getSymbolID(ANCHOR_CHAR)));
+				}
+
+				// more than 50% of City Harbor Space is used - not yet totally full though
+				if (iCityHarborSpaceUsed >= (iCityHarborSpaceMax/2) && iCityHarborSpaceUsed < iCityHarborSpaceMax)
+				{
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_ALMOST_FULL", iCityHarborSpaceUsed, iCityHarborSpaceMax, GC.getSymbolID(ANCHOR_CHAR)));
+				}
+
+				// City Harbor Space is totally full
+				if (iCityHarborSpaceUsed >= iCityHarborSpaceMax)
+				{
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_CITY_HARBOR_TOTALLY_FULL", iCityHarborSpaceUsed, iCityHarborSpaceMax, GC.getSymbolID(NO_ANCHOR_CHAR)));
+				}
+			}
+			// WTP, ray, new Harbour System - END
+
+			// WTP, ray, new Barracks System - START
+			if (pCity->bShouldShowCityBarracksSystem())
+			{
+				int iCityBarracksSpaceUsed = pCity->getCityBarracksSpaceUsed();
+				int iCityBarracksSpaceMax = pCity->getCityBarracksSpace();
+
+				// less than 50% of City Barracks Space is used
+				if (iCityBarracksSpaceUsed < (iCityBarracksSpaceMax/2))
+				{
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_STILL_FREE", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getSymbolID(BARRACKS_CHAR)));
+				}
+
+				// more than 50% of City Harbor Space is used - not yet totally full though
+				if (iCityBarracksSpaceUsed >= (iCityBarracksSpaceMax/2) && iCityBarracksSpaceUsed < iCityBarracksSpaceMax)
+				{
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_ALMOST_FULL", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getSymbolID(BARRACKS_CHAR)));
+				}
+
+				// City Harbor Space is totally full
+				if (iCityBarracksSpaceUsed >= iCityBarracksSpaceMax)
+				{
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_TOTALLY_FULL", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getSymbolID(NO_BARRACKS_CHAR)));
+				}
+			}
+			// WTP, ray, new Barracks System - END
+		}
+		// WTP, check Harbour System also for Plots with City - END
+
 		if (pPlot->getRevealedRouteType(GC.getGameINLINE().getActiveTeam(), true) != NO_ROUTE)
 		{
 			szString.append(NEWLINE);
