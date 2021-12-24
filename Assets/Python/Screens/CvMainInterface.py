@@ -210,10 +210,8 @@ HELP_TOTAL_HAPPINESS_NEGATIVE = 4302
 HELP_TOTAL_HAPPINESS_ZERO = 4303
 # CITY HAPPINESS vs UNHAPPINESS - END
 
-# WTP, ray, new Harbour System - START
-NEW_HARBOUR_SYSTEM = 4304
-
-# WTP, ray, new Harbour System - END
+NEW_HARBOUR_SYSTEM = 4304 # WTP, ray, new Harbour System - START
+NEW_BARRACKS_SYSTEM = 4305 # WTP, ray, new Barracks System - START
 
 BUILDING_MANAGMENT_PANEL_UP = True
 BUILDING_CHANGE_MANAGMENT_PANEL_UP = False
@@ -2855,25 +2853,54 @@ class CvMainInterface:
 					iMaxHarbourSpace = pHeadSelectedCity.getCityHarbourSpace()
 					iUsedHarbourSpace = pHeadSelectedCity.getCityHarbourSpaceUsed()
 					iHalfMaxHarbourSpace = (iMaxHarbourSpace / 2)
-					
+	
 					#green: less than 50 percent of the harbour space is full
+					# we remove the numbers and put them in Mouse over to save space
+					# careful, 2nd line of buffer now "=" instead "+="
 					if (iUsedHarbourSpace <= iHalfMaxHarbourSpace):
-						szBuffer = u"<font=3>" + u" <color="u"0,255,0" + u">"+ str(iUsedHarbourSpace) + u"(" + str(iMaxHarbourSpace) + u")" + u"</color>" + u"</font>"
-						szBuffer += u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.ANCHOR_CHAR)) + "</font>"
-						screen.setLabel("HarbourText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 78 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, NEW_HARBOUR_SYSTEM, -1 )
-					
+						#szBuffer = u"<font=3>" + u" <color="u"0,255,0" + u">"+ str(iUsedHarbourSpace) + u"(" + str(iMaxHarbourSpace) + u")" + u"</color>" + u"</font>"
+						szBuffer = u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.ANCHOR_CHAR)) + "</font>"
+						screen.setLabel("HarbourText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 77 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_HARBOUR_SYSTEM, NEW_HARBOUR_SYSTEM, -1 )
+
 					# red: the harbour is completely full
 					elif (iUsedHarbourSpace >= iMaxHarbourSpace):
-						szBuffer = u"<font=3>" + u" <color="u"255,0,0" + u">"+ str(iUsedHarbourSpace) + u"(" + str(iMaxHarbourSpace) + u")" + u"</color>" + u"</font>"
-						szBuffer += u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.NO_ANCHOR_CHAR)) + "</font>"
-						screen.setLabel("HarbourText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 78 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, NEW_HARBOUR_SYSTEM, -1 )
-						
+						#szBuffer = u"<font=3>" + u" <color="u"255,0,0" + u">"+ str(iUsedHarbourSpace) + u"(" + str(iMaxHarbourSpace) + u")" + u"</color>" + u"</font>"
+						szBuffer = u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.NO_ANCHOR_CHAR)) + "</font>"
+						screen.setLabel("HarbourText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 77 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_HARBOUR_SYSTEM, NEW_HARBOUR_SYSTEM, -1 )
+
 					# yellow: more than half is full, but not completely
 					else:
-						szBuffer = u"<font=3>" + u" <color="u"255,255,0" + u">" + str(iUsedHarbourSpace) + u"(" + str(iMaxHarbourSpace) + u")" + u"</color>" + u"</font>"
-						szBuffer += u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.ANCHOR_CHAR)) + "</font>"
-						screen.setLabel("HarbourText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 78 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, NEW_HARBOUR_SYSTEM, -1 )
-				
+						#szBuffer = u"<font=3>" + u" <color="u"255,255,0" + u">" + str(iUsedHarbourSpace) + u"(" + str(iMaxHarbourSpace) + u")" + u"</color>" + u"</font>"
+						szBuffer = u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.ANCHOR_CHAR)) + "</font>"
+						screen.setLabel("HarbourText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 77 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_HARBOUR_SYSTEM, NEW_HARBOUR_SYSTEM, -1 )
+
+			# WTP, ray, new Barracks System - START
+				if (pHeadSelectedCity.bShouldShowCityBarracksSystem()):
+
+					iMaxBarracksSpace = pHeadSelectedCity.getCityBarracksSpace()
+					iUsedBarracksSpace = pHeadSelectedCity.getCityBarracksSpaceUsed()
+					iHalfMaxBarracksSpace = (iMaxBarracksSpace / 2)
+
+					#green: less than 50 percent of the barracks space is full
+					# we remove the numbers and put them in Mouse over to save space
+					# careful, 2nd line of buffer now "=" instead "+="
+					if (iUsedBarracksSpace <= iHalfMaxBarracksSpace):
+						#szBuffer = u"<font=3>" + u" <color="u"0,255,0" + u">"+ str(iUsedBarracksSpace) + u"(" + str(iMaxBarracksSpace) + u")" + u"</color>" + u"</font>"
+						szBuffer = u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.BARRACKS_CHAR)) + "</font>"
+						screen.setLabel("BarracksText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 79 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_BARRACKS_SYSTEM, NEW_BARRACKS_SYSTEM, -1 )
+
+					# red: the barracks are completely full
+					elif (iUsedBarracksSpace >= iMaxBarracksSpace):
+						#szBuffer = u"<font=3>" + u" <color="u"255,0,0" + u">"+ str(iUsedBarracksSpace) + u"(" + str(iMaxBarracksSpace) + u")" + u"</color>" + u"</font>"
+						szBuffer = u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.NO_BARRACKS_CHAR)) + "</font>"
+						screen.setLabel("BarracksText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 79 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_BARRACKS_SYSTEM, NEW_BARRACKS_SYSTEM, -1 )
+
+					# yellow: more than half is full, but not completely
+					else:
+						#szBuffer = u"<font=3>" + u" <color="u"255,255,0" + u">" + str(iUsedBarracksSpace) + u"(" + str(iMaxBarracksSpace) + u")" + u"</color>" + u"</font>"
+						szBuffer = u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.BARRACKS_CHAR)) + "</font>"
+						screen.setLabel("BarracksText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 79 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_BARRACKS_SYSTEM, NEW_BARRACKS_SYSTEM, -1 )
+
 			# REBEL BAR FILL PERCENTAGE
 				fPercentage = float(pHeadSelectedCity.getRebelPercent() / 100.0)
 				screen.setBarPercentage("RebelBar", InfoBarTypes.INFOBAR_STORED, fPercentage)
@@ -3767,6 +3794,10 @@ class CvMainInterface:
 			elif iData1 == NEW_HARBOUR_SYSTEM:
 				return localText.getText("TXT_KEY_CONCEPT_NEW_HARBOUR_SYSTEM", ());
 # WTP, ray, new Harbour System - END
+# WTP, ray, new Barracks System - START
+			elif iData1 == NEW_BARRACKS_SYSTEM:
+				return localText.getText("TXT_KEY_CONCEPT_NEW_BARRACKS_SYSTEM", ());
+# WTP, ray, new Barracks System - END
 # CITY HAPPINESS vs UNHAPPINESS - START
 			elif iData1 == HELP_TOTAL_HAPPINESS_POSITIVE:
 				return localText.getText("TXT_KEY_TOTAL_HAPPINESS_POSITIVE_EFFECTS", ());

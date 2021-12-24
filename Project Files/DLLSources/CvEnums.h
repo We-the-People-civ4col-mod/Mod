@@ -545,6 +545,8 @@ enum WidgetTypes
 	WIDGET_NETWORK_DESYNC,
 	WIDGET_JUMP_TO_SETTLEMENT,
 	WIDGET_MISSION_CHAR,
+	WIDGET_HELP_HARBOUR_SYSTEM, // WTP, ray, Widgets for Harbour System and Barracks System - START
+	WIDGET_HELP_BARRACKS_SYSTEM, // WTP, ray, Widgets for Harbour System and Barracks System - START
 
 #ifdef _USRDLL
 	NUM_WIDGET_TYPES
