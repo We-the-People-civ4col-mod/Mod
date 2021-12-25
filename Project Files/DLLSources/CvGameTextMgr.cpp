@@ -1238,7 +1238,11 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
 		}
 		int iMovesChange = kProfession.getMovesChange();
 
-		if (iCombatChange != 0 || iMovesChange != 0)
+		// WTP, ray, Cannons to Professions - START
+		int iBombardRateChangeProfession = kProfession.getBombardRateChangeProfession();
+		// WTP, ray, Cannons to Professions - END
+
+		if (iCombatChange != 0 || iMovesChange != 0 || iBombardRateChangeProfession != 0) // WTP, ray, Cannons to Professions - START
 		{
 			szBuffer.append(NEWLINE);
 			szTempBuffer.Format(L"%c", GC.getSymbolID(BULLET_CHAR));
@@ -1255,6 +1259,14 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
 				szTempBuffer.Format(L"%d%c ", iMovesChange, GC.getSymbolID(MOVES_CHAR));
 				szBuffer.append(szTempBuffer);
 			}
+
+			// WTP, ray, Cannons to Professions - START
+			if (iBombardRateChangeProfession != 0)
+			{
+				szTempBuffer.Format(L"%d%c ", iBombardRateChangeProfession, GC.getSymbolID(BOMBARD_CHAR));
+				szBuffer.append(szTempBuffer);
+			}
+			// WTP, ray, Cannons to Professions - END
 		}
 	}
 

@@ -1411,6 +1411,7 @@ CvProfessionInfo::CvProfessionInfo() :
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 	m_iSpecialBuilding(NO_SPECIALBUILDING),
 	m_iCombatChange(0), 
+	m_iBombardRateChangeProfession(0), // WTP, ray, Cannons to Professions - START
 	m_iBarracksSpaceNeededChange(0), // WTP, ray, new Barracks System - START
 	m_iMovesChange(0),
 	m_iWorkRate(0),
@@ -1493,12 +1494,21 @@ int CvProfessionInfo::getCombatChange() const
 {
 	return m_iCombatChange;
 }
+
+// WTP, ray, Cannons to Professions - START
+int CvProfessionInfo::getBombardRateChangeProfession() const
+{
+	return m_iBombardRateChangeProfession;
+}
+// WTP, ray, Cannons to Professions - END
+
 // WTP, ray, new Barracks System - START
 int CvProfessionInfo::getBarracksSpaceNeededChange() const
 {
 	return m_iBarracksSpaceNeededChange;
 }
 // WTP, ray, new Barracks System - END
+
 int CvProfessionInfo::getMovesChange() const
 {
 	return m_iMovesChange;
@@ -1626,6 +1636,7 @@ void CvProfessionInfo::read(FDataStreamBase* stream)
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 	stream->Read(&m_iSpecialBuilding);
 	stream->Read(&m_iCombatChange);
+	stream->Read(&m_iBombardRateChangeProfession); // WTP, ray, Cannons to Professions - START
 	stream->Read(&m_iBarracksSpaceNeededChange); // WTP, ray, new Barracks System - START
 	stream->Read(&m_iMovesChange);
 	stream->Read(&m_iWorkRate);
@@ -1693,6 +1704,7 @@ void CvProfessionInfo::write(FDataStreamBase* stream)
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 	stream->Write(m_iSpecialBuilding);
 	stream->Write(m_iCombatChange);
+	stream->Write(m_iBombardRateChangeProfession); // WTP, ray, Cannons to Professions - START
 	stream->Write(m_iBarracksSpaceNeededChange); // WTP, ray, new Barracks System - START
 	stream->Write(m_iMovesChange);
 	stream->Write(m_iWorkRate);
@@ -1762,6 +1774,7 @@ bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "SpecialBuilding");
 	m_aszExtraXMLforPass3.push_back(szTextVal);
 	pXML->GetChildXmlValByName(&m_iCombatChange, "iCombatChange");
+	pXML->GetChildXmlValByName(&m_iBombardRateChangeProfession, "iBombardRateChangeProfession"); // WTP, ray, Cannons to Professions - START
 	pXML->GetChildXmlValByName(&m_iBarracksSpaceNeededChange, "iBarracksSpaceNeededChange"); // WTP, ray, new Barracks System - START
 	pXML->GetChildXmlValByName(&m_iMovesChange, "iMovesChange");
 	pXML->GetChildXmlValByName(&m_iWorkRate, "iWorkRate");

@@ -362,6 +362,7 @@ public:
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 	int getSpecialBuilding() const;
 	int getCombatChange() const;
+	int getBombardRateChangeProfession() const; // WTP, ray, Cannons to Professions - START
 	int getBarracksSpaceNeededChange() const;	// WTP, ray, new Barracks System - START
 	int getMovesChange() const;
 	int getWorkRate() const;
@@ -409,6 +410,7 @@ protected:
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 	int m_iSpecialBuilding;
 	int m_iCombatChange;
+	int m_iBombardRateChangeProfession;// WTP, ray, Cannons to Professions - START
 	int m_iBarracksSpaceNeededChange; // WTP, ray, new Barracks System - START
 	int m_iMovesChange;
 	int m_iWorkRate;

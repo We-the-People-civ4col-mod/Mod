@@ -626,9 +626,10 @@ void CyEnumsPythonInterface()
 		.value("ANCHOR_CHAR", ANCHOR_CHAR)
 		.value("NO_ANCHOR_CHAR", NO_ANCHOR_CHAR)
 		.value("ANCHOR_EUROPE_CHAR", ANCHOR_EUROPE_CHAR)
+		// TAC - Trade Routes Advisor - koma13 - END
 		.value("BARRACKS_CHAR", BARRACKS_CHAR) // WTP, ray, new Barracks System - START
 		.value("NO_BARRACKS_CHAR", NO_BARRACKS_CHAR) // WTP, ray, new Barracks System - START
-		// TAC - Trade Routes Advisor - koma13 - END
+		.value("BOMBARD_CHAR", BOMBARD_CHAR) // WTP, ray, Cannons to Professions - START
 		.value("MAX_NUM_SYMBOLS", MAX_NUM_SYMBOLS)
 		;
 	python::enum_<HandicapTypes>("HandicapTypes")
