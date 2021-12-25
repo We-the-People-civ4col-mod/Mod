@@ -3656,8 +3656,8 @@ class CvMainInterface:
 				iPanelHeight = iY - iCurY
 				iPanelX = xResolution - 14 - iPanelWidth
 				iPanelY = iCurY
-				screen.setPanelSize("ScoreBackground", iPanelX, iPanelY, iPanelWidth, iPanelHeight )
-				screen.show("ScoreBackground")
+#				screen.setPanelSize("ScoreBackground", iPanelX, iPanelY, iPanelWidth, iPanelHeight )
+#				screen.show("ScoreBackground")
 
 		else:
 			if iCurrentLayerID != -1:
