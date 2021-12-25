@@ -1768,11 +1768,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_BOMBARD_TEXT</Tag>
-        <English>[ICON_BULLET]%D1_DmgChange%% settlement bombard damage</English>
-        <French>[ICON_BULLET]Dégâts de bombardements %D1_DmgChange%%</French>
-        <German>[ICON_BULLET]%D1_DmgChange%% Siedlungs-Bombardierungsschaden</German>
-        <Italian>[ICON_BULLET]%D1_DmgChange%% di danno da bombardamento sull'insediamento</Italian>
-        <Spanish>[ICON_BULLET]%D1_DmgChange%% al daño al cañonear asentamientos</Spanish>
+        <English>[ICON_BULLET]%D1_DmgChange%%%F2_Icon settlement bombard damage</English>
+        <French>[ICON_BULLET]Dégâts de bombardements %D1_DmgChange%%%F2_Icon </French>
+        <German>[ICON_BULLET]%D1_DmgChange%%%F2_Icon Siedlungs-Bombardierungsschaden</German>
+        <Italian>[ICON_BULLET]%D1_DmgChange%%%F2_Icon di danno da bombardamento sull'insediamento</Italian>
+        <Spanish>[ICON_BULLET]%D1_DmgChange%%%F2_Icon al daño al cañonear asentamientos</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_CITY_ATTACK_TEXT</Tag>
@@ -1816,19 +1816,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BOMBARD_RATE</Tag>
-        <English>[ICON_BULLET]Can bombard settlement defenses (-%d1_Mod%%/Turn)</English>
-        <French>[ICON_BULLET]Peut bombarder les défenses de la colonie (-%d1_Mod%%/Tour)</French>
-        <German>[ICON_BULLET]Kann Siedlungsverteidigungen bombardieren (-%d1_Mod%%/Runde)</German>
-        <Italian>[ICON_BULLET]Può bombardare le difese degli insediamenti (-%d1_Mod%%/turno)</Italian>
-        <Spanish>[ICON_BULLET]Puede cañonear las defensas de los asentamientos (-%d1_Mod%%/turno)</Spanish>
+        <English>[ICON_BULLET]Can bombard settlement defenses : (-%d1_Mod%%/Turn)%F2_Icon</English>
+        <French>[ICON_BULLET]Peut bombarder les défenses de la colonie : (-%d1_Mod%%/Tour)%F2_Icon</French>
+        <German>[ICON_BULLET]Kann Siedlungsverteidigungen bombardieren : (-%d1_Mod%%/Runde)%F2_Icon</German>
+        <Italian>[ICON_BULLET]Può bombardare le difese degli insediamenti : (-%d1_Mod%%/turno)%F2_Icon</Italian>
+        <Spanish>[ICON_BULLET]Puede cañonear las defensas de los asentamientos : (-%d1_Mod%%/turno)%F2_Icon</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BOMBARD_RATE_SHORT</Tag>
-        <English>[ICON_BULLET]Bombard settlement : -%d1_Mod%%/Turn</English>
-        <French>[ICON_BULLET]Bombarder colonie : -%d1_Mod%%/Tour</French>
-        <German>[ICON_BULLET]Siedlung bombardieren : -%d1_Mod%%/Runde</German>
-        <Italian>[ICON_BULLET]Bombarda insediamento : -%d1_Mod%%/turno</Italian>
-        <Spanish>[ICON_BULLET]Cañonear asentamiento : -%d1_Mod%%/turno</Spanish>
+        <English>[ICON_BULLET]Bombard settlement : -%d1_Mod%%/Turn%F2_Icon</English>
+        <French>[ICON_BULLET]Bombarder colonie : -%d1_Mod%%/Tour%F2_Icon</French>
+        <German>[ICON_BULLET]Siedlung bombardieren : -%d1_Mod%%/Runde%F2_Icon</German>
+        <Italian>[ICON_BULLET]Bombarda insediamento : -%d1_Mod%%/turno%F2_Icon</Italian>
+        <Spanish>[ICON_BULLET]Cañonear asentamiento : -%d1_Mod%%/turno%F2_Icon</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_OF</Tag>

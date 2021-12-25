@@ -642,6 +642,14 @@
         <German>[ICON_BULLET]Braucht Kasernenplatz : %d1_Num%F2_Icon</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_PROFESSION_BOMBARD_RATE_CHANGE</Tag>
+        <English>[ICON_BULLET]%D1_DmgChange%%%F2_Icon settlement bombard damage</English>
+        <French>[ICON_BULLET]Dégâts de bombardements %D1_DmgChange%%%F2_Icon </French>
+        <German>[ICON_BULLET]%D1_DmgChange%%%F2_Icon Siedlungs-Bombardierungsschaden</German>
+        <Italian>[ICON_BULLET]%D1_DmgChange%%%F2_Icon di danno da bombardamento sull'insediamento</Italian>
+        <Spanish>[ICON_BULLET]%D1_DmgChange%%%F2_Icon al daño al cañonear asentamientos</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CARRIES</Tag>
         <English>[SPACE](carries %s1_Name)</English>
         <French>[SPACE](transporte : %s1_Name)</French>

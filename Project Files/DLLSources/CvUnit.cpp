@@ -9501,10 +9501,17 @@ int CvUnit::rebelModifier(PlayerTypes eOtherPlayer) const
 	return iModifier;
 }
 
-
 int CvUnit::bombardRate() const
 {
-	return (m_pUnitInfo->getBombardRate() + getExtraBombardRate());
+	// WTP, ray, Cannons to Professions - START
+	int iBombardRateChangeProfession = 0;
+	if (getProfession() != NO_PROFESSION)
+	{
+		iBombardRateChangeProfession = GC.getProfessionInfo(getProfession()).getBombardRateChangeProfession();
+	}
+
+	return (m_pUnitInfo->getBombardRate() + getExtraBombardRate() + iBombardRateChangeProfession);
+	// WTP, ray, Cannons to Professions - START
 }
 
 

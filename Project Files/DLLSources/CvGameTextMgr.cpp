@@ -1084,12 +1084,12 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 			if (bShort)
 			{
 				szString.append(NEWLINE);
-				szString.append(gDLL->getText("TXT_KEY_UNIT_BOMBARD_RATE_SHORT", ((pUnit->bombardRate() * 100) / GC.getMAX_CITY_DEFENSE_DAMAGE())));
+				szString.append(gDLL->getText("TXT_KEY_UNIT_BOMBARD_RATE_SHORT", ((pUnit->bombardRate() * 100) / GC.getMAX_CITY_DEFENSE_DAMAGE()), GC.getSymbolID(BOMBARD_CHAR)));
 			}
 			else
 			{
 				szString.append(NEWLINE);
-				szString.append(gDLL->getText("TXT_KEY_UNIT_BOMBARD_RATE", ((pUnit->bombardRate() * 100) / GC.getMAX_CITY_DEFENSE_DAMAGE())));
+				szString.append(gDLL->getText("TXT_KEY_UNIT_BOMBARD_RATE", ((pUnit->bombardRate() * 100) / GC.getMAX_CITY_DEFENSE_DAMAGE()), GC.getSymbolID(BOMBARD_CHAR)));
 			}
 		}
 
@@ -1238,11 +1238,7 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
 		}
 		int iMovesChange = kProfession.getMovesChange();
 
-		// WTP, ray, Cannons to Professions - START
-		int iBombardRateChangeProfession = kProfession.getBombardRateChangeProfession();
-		// WTP, ray, Cannons to Professions - END
-
-		if (iCombatChange != 0 || iMovesChange != 0 || iBombardRateChangeProfession != 0) // WTP, ray, Cannons to Professions - START
+		if (iCombatChange != 0 || iMovesChange != 0)
 		{
 			szBuffer.append(NEWLINE);
 			szTempBuffer.Format(L"%c", GC.getSymbolID(BULLET_CHAR));
@@ -1259,16 +1255,21 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
 				szTempBuffer.Format(L"%d%c ", iMovesChange, GC.getSymbolID(MOVES_CHAR));
 				szBuffer.append(szTempBuffer);
 			}
-
-			// WTP, ray, Cannons to Professions - START
-			if (iBombardRateChangeProfession != 0)
-			{
-				szTempBuffer.Format(L"%d%c ", iBombardRateChangeProfession, GC.getSymbolID(BOMBARD_CHAR));
-				szBuffer.append(szTempBuffer);
-			}
-			// WTP, ray, Cannons to Professions - END
 		}
 	}
+
+	// WTP, ray, Cannons to Professions - START
+	if (bCivilopediaText)
+	{
+		// only display for Profession Colopedia - otherwise already calculated in total Bombard Rate of Unit
+		int iBombardRateChangeProfession = kProfession.getBombardRateChangeProfession();
+		if (iBombardRateChangeProfession != 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_PROFESSION_BOMBARD_RATE_CHANGE", iBombardRateChangeProfession, GC.getSymbolID(BOMBARD_CHAR)));
+		}
+	}
+	// WTP, ray, Cannons to Professions - END
 
 	// WTP, ray, new Barracks System - START
 	int iBarracksSpaceNeededChange = kProfession.getBarracksSpaceNeededChange();
@@ -4834,7 +4835,8 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 	if (kPromotion.getBombardRateChange() != 0)
 	{
 		szBuffer.append(pcNewline);
-		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_BOMBARD_TEXT", kPromotion.getBombardRateChange()));
+		// WTP, ray, Cannons to Professions - START, added Bombard Icon
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_BOMBARD_TEXT", kPromotion.getBombardRateChange(), GC.getSymbolID(BOMBARD_CHAR)));
 	}
 
 	if (kPromotion.getEnemyHealChange() != 0)
@@ -5768,7 +5770,8 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 	if (kUnitInfo.getBombardRate() > 0)
 	{
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_BOMBARD_RATE", ((kUnitInfo.getBombardRate() * 100) / GC.getMAX_CITY_DEFENSE_DAMAGE())));
+		// WTP, ray, Cannons to Professions - START, added Bombard Icon
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_BOMBARD_RATE", ((kUnitInfo.getBombardRate() * 100) / GC.getMAX_CITY_DEFENSE_DAMAGE()), GC.getSymbolID(BOMBARD_CHAR)));
 	}
 
 	bFirst = true;
