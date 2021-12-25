@@ -10601,6 +10601,9 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 		case UNITAI_DEFENSIVE:
 			{
 				int iExtraCombatStrength = kProfession.getCombatChange() - GC.getProfessionInfo(GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()).getCombatChange();
+				// WTP, ray, Cannons to Professions - START
+				int iExtraBombardStrength = kProfession.getBombardRateChangeProfession()- GC.getProfessionInfo(GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()).getBombardRateChangeProfession();
+				// WTP, ray, Cannons to Professions - END
 				if (isNative())
 				{
 					iValue += 10;
@@ -10611,6 +10614,7 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 					if (kProfession.isCityDefender())
 					{
 						iValue += iExtraCombatStrength * 25;
+						iValue += iExtraBombardStrength * 25; // WTP, ray, Cannons to Professions - START
 					}
 				}
 			}
@@ -10622,11 +10626,15 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 			{
 				iValue += 10;
 				int iExtraCombatStrength = kProfession.getCombatChange() - GC.getProfessionInfo(GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()).getCombatChange();
+				// WTP, ray, Cannons to Professions - START
+				int iExtraBombardStrength = kProfession.getBombardRateChangeProfession()- GC.getProfessionInfo(GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()).getBombardRateChangeProfession();
+				// WTP, ray, Cannons to Professions - END
 				if (!kProfession.isUnarmed() && iExtraCombatStrength > 0)
 				{
 					iValue += iExtraCombatStrength * 15;
 					//iValue += kProfession.getMovesChange() * 15;
 					iValue += kProfession.getMovesChange() * 10;
+					iValue += iExtraBombardStrength * 10; // WTP, ray, Cannons to Professions - START
 				}
 			}
 			// TAC - AI purchases military units - koma13 - END
@@ -10644,6 +10652,9 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 				{
 					iValue += iExtraCombatStrength * 15;
 					iValue *= 1 + kProfession.getMovesChange();
+
+					// WTP, ray, Cannons to Professions - START
+					// in Counter BombarStrength does not matter
 				}
 			}
 			break;

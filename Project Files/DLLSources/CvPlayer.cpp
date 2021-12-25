@@ -10650,6 +10650,14 @@ int CvPlayer::NBMOD_GetEuropeMilitaryValue() const
                     fThisStrength += (float)GC.getProfessionInfo(getRevolutionEuropeProfession(iI)).getCombatChange();
                 }
 
+				// WTP, ray, Cannons to Professions - START
+				// let the Unit be more valuable if it has a Profession that can bombard
+				if (getRevolutionEuropeProfession(iI) != NO_PROFESSION)
+                {
+                    fThisStrength += (float)GC.getProfessionInfo(getRevolutionEuropeProfession(iI)).getBombardRateChangeProfession();
+                }
+				// WTP, ray, Cannons to Professions - END
+
                 // Die St�rke mit einem Gewicht versehen
                 fThisStrength = fThisStrength * GC.getUnitInfo(getRevolutionEuropeUnit(iI)).NBMOD_GetStrengthWeight();
 
@@ -11052,6 +11060,14 @@ int CvPlayer::NBMOD_GetEuropeShipStrength() const
                 {
                     fThisStrength += (float)GC.getProfessionInfo(getRevolutionEuropeProfession(iI)).getCombatChange();
                 }
+
+				// WTP, ray, Cannons to Professions - START
+				// let the Unit be more valuable if it has a Profession that can bombard
+				if (getRevolutionEuropeProfession(iI) != NO_PROFESSION)
+                {
+                    fThisStrength += (float)GC.getProfessionInfo(getRevolutionEuropeProfession(iI)).getBombardRateChangeProfession();
+                }
+				// WTP, ray, Cannons to Professions - END
 
                 // Die St�rke mit einem Gewicht versehen
                 fThisStrength = fThisStrength * GC.getUnitInfo(getRevolutionEuropeUnit(iI)).NBMOD_GetStrengthWeight();

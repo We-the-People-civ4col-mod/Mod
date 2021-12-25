@@ -504,7 +504,8 @@ void CyInfoPythonInterface3()
 		//.def("getYieldConsumed", &CvProfessionInfo::getYieldConsumed, "int ()")
 		// R&R, ray , MYCP partially based on code of Aymerick - END
 		.def("getSpecialBuilding", &CvProfessionInfo::getSpecialBuilding, "int ()")
-		.def("getCombatChange", &CvProfessionInfo::getCombatChange, "int ()")
+		.def("getCombatChange", &CvProfessionInfo::getCombatChange, "int ()") 
+		.def("getBombardRateChangeProfession", &CvProfessionInfo::getBombardRateChangeProfession, "int ()") // WTP, ray, Cannons to Professions - START
 		.def("getMovesChange", &CvProfessionInfo::getMovesChange, "int ()")
 		.def("getWorkRate", &CvProfessionInfo::getWorkRate, "int ()")
 		.def("getMissionaryRate", &CvProfessionInfo::getMissionaryRate, "int ()")
