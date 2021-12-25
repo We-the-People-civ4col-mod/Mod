@@ -690,6 +690,7 @@
 	<ElementType name="iAdjacentTileHealChange" content="textOnly" dt:type="int"/>
 	<ElementType name="iCombatPercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iCombatChange" content="textOnly" dt:type="int"/>
+	<ElementType name="iBombardRateChangeProfession" content="textOnly" dt:type="int"/>
 	<ElementType name="iBarracksSpaceNeededChange" content="textOnly" dt:type="int"/>
 	<ElementType name="bUnitCombat" content="textOnly" dt:type="boolean"/>
 	<ElementType name="UnitCombat" content="eltOnly">
@@ -824,6 +825,7 @@
 		<element type="bUnarmed"/>
 		<element type="bNoDefensiveBonus"/>
 		<element type="iCombatChange"/>
+		<element type="iBombardRateChangeProfession" minOccurs="0"/>
 		<element type="iBarracksSpaceNeededChange" minOccurs="0"/>
 		<element type="iMovesChange"/>
 		<element type="bMoveIntoPeak" minOccurs="0"/>
