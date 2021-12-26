@@ -1,1410 +1,259 @@
 Version=11
 BeginGame
-	Era=ERA_DISCOVERY
-	Speed=GAMESPEED_TAC_NORMAL
-	Calendar=CALENDAR_DEFAULT
-	Option=GAMEOPTION_LEAD_ANY_CIV
-	Option=GAMEOPTION_PERMANENT_ALLIANCES
-	Option=GAMEOPTION_NEW_RANDOM_SEED
-	Option=GAMEOPTION_NO_MORE_VARIABLES_HIDDEN
-	Victory=VICTORY_REVOLUTION
-	Victory=VICTORY_DOMINATION
-	GameTurn=0
-	MaxTurns=0
-	MaxCityElimination=0
-	NumAdvancedStartPoints=720
-	TargetScore=0
-	StartYear=1492
-	Description=TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE
+	Description=TXT_KEY_WORLDBUILDER_TAC_AMERICA_DESC
 	ModPath=
 	WBNorthAmericanNative=1
 	WBSouthAmericanNative=1
 	WBCentralAmericanNative=1
 EndGame
-BeginTeam
-	TeamID=0
-	ContactWithTeam=0
-	ContactWithTeam=38
-	ContactWithTeam=39
-	ContactWithTeam=40
-	ContactWithTeam=41
-	ContactWithTeam=42
-	ContactWithTeam=43
-	ContactWithTeam=44
-	ContactWithTeam=45
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=1
-	ContactWithTeam=1
-	ContactWithTeam=38
-	ContactWithTeam=39
-	ContactWithTeam=40
-	ContactWithTeam=41
-	ContactWithTeam=42
-	ContactWithTeam=43
-	ContactWithTeam=44
-	ContactWithTeam=45
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=2
-	ContactWithTeam=2
-	ContactWithTeam=38
-	ContactWithTeam=39
-	ContactWithTeam=40
-	ContactWithTeam=41
-	ContactWithTeam=42
-	ContactWithTeam=43
-	ContactWithTeam=44
-	ContactWithTeam=45
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=3
-	ContactWithTeam=3
-	ContactWithTeam=38
-	ContactWithTeam=39
-	ContactWithTeam=40
-	ContactWithTeam=41
-	ContactWithTeam=42
-	ContactWithTeam=43
-	ContactWithTeam=44
-	ContactWithTeam=45
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=4
-	ContactWithTeam=4
-	ContactWithTeam=38
-	ContactWithTeam=39
-	ContactWithTeam=40
-	ContactWithTeam=41
-	ContactWithTeam=42
-	ContactWithTeam=43
-	ContactWithTeam=44
-	ContactWithTeam=45
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=5
-	ContactWithTeam=5
-	ContactWithTeam=38
-	ContactWithTeam=39
-	ContactWithTeam=40
-	ContactWithTeam=41
-	ContactWithTeam=42
-	ContactWithTeam=43
-	ContactWithTeam=44
-	ContactWithTeam=45
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=6
-	ContactWithTeam=6
-	ContactWithTeam=38
-	ContactWithTeam=39
-	ContactWithTeam=40
-	ContactWithTeam=41
-	ContactWithTeam=42
-	ContactWithTeam=43
-	ContactWithTeam=44
-	ContactWithTeam=45
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=7
-	ContactWithTeam=7
-	ContactWithTeam=38
-	ContactWithTeam=39
-	ContactWithTeam=40
-	ContactWithTeam=41
-	ContactWithTeam=42
-	ContactWithTeam=43
-	ContactWithTeam=44
-	ContactWithTeam=45
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=8
-	ContactWithTeam=8
-	ContactWithTeam=12
-	ContactWithTeam=15
-	ContactWithTeam=19
-	ContactWithTeam=21
-	ContactWithTeam=22
-	ContactWithTeam=32
-	AtWar=22
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=9
-	ContactWithTeam=9
-	ContactWithTeam=14
-	ContactWithTeam=28
-	ContactWithTeam=30
-	ContactWithTeam=32
-	ContactWithTeam=33
-	AtWar=30
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=10
-	ContactWithTeam=10
-	ContactWithTeam=13
-	ContactWithTeam=15
-	ContactWithTeam=18
-	ContactWithTeam=25
-	ContactWithTeam=27
-	AtWar=13
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=11
-	ContactWithTeam=11
-	ContactWithTeam=25
-	ContactWithTeam=26
-	ContactWithTeam=33
-	ContactWithTeam=37
-	AtWar=25
-	AtWar=26
-	AtWar=37
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=12
-	ContactWithTeam=8
-	ContactWithTeam=12
-	ContactWithTeam=16
-	ContactWithTeam=21
-	ContactWithTeam=32
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=13
-	ContactWithTeam=10
-	ContactWithTeam=13
-	ContactWithTeam=23
-	ContactWithTeam=27
-	ContactWithTeam=31
-	ContactWithTeam=36
-	AtWar=10
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=14
-	ContactWithTeam=9
-	ContactWithTeam=14
-	ContactWithTeam=15
-	ContactWithTeam=32
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=15
-	ContactWithTeam=8
-	ContactWithTeam=10
-	ContactWithTeam=14
-	ContactWithTeam=15
-	ContactWithTeam=22
-	ContactWithTeam=32
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=16
-	ContactWithTeam=12
-	ContactWithTeam=16
-	ContactWithTeam=28
-	ContactWithTeam=30
-	ContactWithTeam=32
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=17
-	ContactWithTeam=17
-	ContactWithTeam=24
-	ContactWithTeam=34
-	ContactWithTeam=35
-	ContactWithTeam=36
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=18
-	ContactWithTeam=10
-	ContactWithTeam=18
-	ContactWithTeam=25
-	ContactWithTeam=27
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=19
-	ContactWithTeam=8
-	ContactWithTeam=19
-	ContactWithTeam=22
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=20
-	ContactWithTeam=20
-	ContactWithTeam=24
-	ContactWithTeam=27
-	ContactWithTeam=29
-	ContactWithTeam=31
-	ContactWithTeam=34
-	ContactWithTeam=35
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=21
-	ContactWithTeam=8
-	ContactWithTeam=12
-	ContactWithTeam=21
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=22
-	ContactWithTeam=8
-	ContactWithTeam=15
-	ContactWithTeam=19
-	ContactWithTeam=22
-	ContactWithTeam=32
-	AtWar=8
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=23
-	ContactWithTeam=13
-	ContactWithTeam=23
-	ContactWithTeam=29
-	ContactWithTeam=35
-	ContactWithTeam=36
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=24
-	ContactWithTeam=17
-	ContactWithTeam=20
-	ContactWithTeam=24
-	ContactWithTeam=34
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=25
-	ContactWithTeam=10
-	ContactWithTeam=11
-	ContactWithTeam=18
-	ContactWithTeam=25
-	ContactWithTeam=26
-	ContactWithTeam=37
-	AtWar=11
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=26
-	ContactWithTeam=11
-	ContactWithTeam=25
-	ContactWithTeam=26
-	ContactWithTeam=33
-	ContactWithTeam=37
-	AtWar=11
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=27
-	ContactWithTeam=10
-	ContactWithTeam=13
-	ContactWithTeam=18
-	ContactWithTeam=20
-	ContactWithTeam=27
-	ContactWithTeam=31
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=28
-	ContactWithTeam=9
-	ContactWithTeam=16
-	ContactWithTeam=28
-	ContactWithTeam=30
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=29
-	ContactWithTeam=20
-	ContactWithTeam=23
-	ContactWithTeam=29
-	ContactWithTeam=31
-	ContactWithTeam=35
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=30
-	ContactWithTeam=9
-	ContactWithTeam=16
-	ContactWithTeam=28
-	ContactWithTeam=30
-	ContactWithTeam=32
-	AtWar=9
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=31
-	ContactWithTeam=13
-	ContactWithTeam=20
-	ContactWithTeam=27
-	ContactWithTeam=29
-	ContactWithTeam=31
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=32
-	ContactWithTeam=8
-	ContactWithTeam=9
-	ContactWithTeam=12
-	ContactWithTeam=14
-	ContactWithTeam=15
-	ContactWithTeam=16
-	ContactWithTeam=22
-	ContactWithTeam=30
-	ContactWithTeam=32
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=33
-	ContactWithTeam=9
-	ContactWithTeam=11
-	ContactWithTeam=26
-	ContactWithTeam=33
-	ContactWithTeam=37
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=34
-	ContactWithTeam=17
-	ContactWithTeam=20
-	ContactWithTeam=24
-	ContactWithTeam=34
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=35
-	ContactWithTeam=17
-	ContactWithTeam=20
-	ContactWithTeam=23
-	ContactWithTeam=29
-	ContactWithTeam=35
-	ContactWithTeam=36
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=36
-	ContactWithTeam=13
-	ContactWithTeam=17
-	ContactWithTeam=23
-	ContactWithTeam=35
-	ContactWithTeam=36
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=37
-	ContactWithTeam=11
-	ContactWithTeam=25
-	ContactWithTeam=26
-	ContactWithTeam=33
-	ContactWithTeam=37
-	AtWar=11
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=38
-	ContactWithTeam=0
-	ContactWithTeam=1
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=4
-	ContactWithTeam=5
-	ContactWithTeam=6
-	ContactWithTeam=7
-	ContactWithTeam=38
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=39
-	ContactWithTeam=0
-	ContactWithTeam=1
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=4
-	ContactWithTeam=5
-	ContactWithTeam=6
-	ContactWithTeam=7
-	ContactWithTeam=39
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=40
-	ContactWithTeam=0
-	ContactWithTeam=1
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=4
-	ContactWithTeam=5
-	ContactWithTeam=6
-	ContactWithTeam=7
-	ContactWithTeam=40
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=41
-	ContactWithTeam=0
-	ContactWithTeam=1
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=4
-	ContactWithTeam=5
-	ContactWithTeam=6
-	ContactWithTeam=7
-	ContactWithTeam=41
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=42
-	ContactWithTeam=0
-	ContactWithTeam=1
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=4
-	ContactWithTeam=5
-	ContactWithTeam=6
-	ContactWithTeam=7
-	ContactWithTeam=42
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=43
-	ContactWithTeam=0
-	ContactWithTeam=1
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=4
-	ContactWithTeam=5
-	ContactWithTeam=6
-	ContactWithTeam=7
-	ContactWithTeam=43
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=44
-	ContactWithTeam=0
-	ContactWithTeam=1
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=4
-	ContactWithTeam=5
-	ContactWithTeam=6
-	ContactWithTeam=7
-	ContactWithTeam=44
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=45
-	ContactWithTeam=0
-	ContactWithTeam=1
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=4
-	ContactWithTeam=5
-	ContactWithTeam=6
-	ContactWithTeam=7
-	ContactWithTeam=45
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=46
-	ContactWithTeam=46
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=47
-	ContactWithTeam=47
-	RevealMap=0
-EndTeam
-BeginTeam
-	TeamID=48
-	ContactWithTeam=48
-	RevealMap=0
-EndTeam
 BeginPlayer
 	Team=0
-	LeaderType=LEADER_FRONTENAC
-	LeaderName=TXT_KEY_LEADER_FRONTENAC
-	CivDesc=TXT_KEY_CIV_FRANCE_DESC
-	CivShortDesc=TXT_KEY_CIV_FRANCE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_FRANCE_ADJECTIVE
-	CivType=CIVILIZATION_FRANCE
-	Color=PLAYERCOLOR_LIGHT_PURPLE
-	ArtStyle=ARTSTYLE_FRANCE
-	PlayableCiv=1
-	StartingGold=100
-	StartingX=45, StartingY=81
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=1
-	LeaderType=LEADER_PENN
-	LeaderName=TXT_KEY_LEADER_PENN
-	CivDesc=TXT_KEY_CIV_ENGLAND_DESC
-	CivShortDesc=TXT_KEY_CIV_ENGLAND_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_ENGLAND_ADJECTIVE
-	CivType=CIVILIZATION_ENGLAND
-	Color=PLAYERCOLOR_DARK_RED
-	ArtStyle=ARTSTYLE_ENGLAND
-	PlayableCiv=1
-	StartingGold=100
-	StartingX=40, StartingY=75
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=2
-	LeaderType=LEADER_HERNAN_CORTES
-	LeaderName=TXT_KEY_LEADER_HERNAN_CORTES
-	CivDesc=TXT_KEY_CIV_SPAIN_DESC
-	CivShortDesc=TXT_KEY_CIV_SPAIN_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_SPAIN_ADJECTIVE
-	CivType=CIVILIZATION_SPAIN
-	Color=PLAYERCOLOR_DARK_YELLOW
-	ArtStyle=ARTSTYLE_SPAIN
-	PlayableCiv=1
-	StartingGold=100
-	StartingX=23, StartingY=70
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=3
-	LeaderType=LEADER_SOUSA
-	LeaderName=TXT_KEY_LEADER_SOUSA
-	CivDesc=TXT_KEY_CIV_PORTUGAL_DESC
-	CivShortDesc=TXT_KEY_CIV_PORTUGAL_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_PORTUGAL_ADJECTIVE
-	CivType=CIVILIZATION_PORTUGAL
-	Color=PLAYERCOLOR_PORTUGAL
-	ArtStyle=ARTSTYLE_PORTUGAL
-	PlayableCiv=1
-	StartingGold=100
-	StartingX=67, StartingY=45
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=4
-	LeaderType=LEADER_DONCK
-	LeaderName=TXT_KEY_LEADER_DONCK
-	CivDesc=TXT_KEY_CIV_DUTCH_DESC
-	CivShortDesc=TXT_KEY_CIV_DUTCH_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_DUTCH_ADJECTIVE
-	CivType=CIVILIZATION_DUTCH
-	Color=PLAYERCOLOR_DARK_ORANGE
-	ArtStyle=ARTSTYLE_DUTCH
-	PlayableCiv=1
-	StartingGold=100
-	StartingX=54, StartingY=62
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=5
-	LeaderType=LEADER_EGEDE
-	LeaderName=TXT_KEY_LEADER_EGEDE
-	CivDesc=TXT_KEY_CIV_DENMARK_DESC
-	CivShortDesc=TXT_KEY_CIV_DENMARK_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_DENMARK_ADJECTIVE
-	CivType=CIVILIZATION_DENMARK
-	Color=PLAYERCOLOR_DENMARK
-	ArtStyle=ARTSTYLE_DENMARK
-	PlayableCiv=1
-	StartingGold=100
-	StartingX=66, StartingY=112
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=6
-	LeaderType=LEADER_RISING
-	LeaderName=TXT_KEY_LEADER_RISING
-	CivDesc=TXT_KEY_CIV_SWEDEN_DESC
-	CivShortDesc=TXT_KEY_CIV_SWEDEN_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_SWEDEN_ADJECTIVE
-	CivType=CIVILIZATION_SWEDEN
-	Color=PLAYERCOLOR_SWEDEN
-	ArtStyle=ARTSTYLE_DENMARK
-	PlayableCiv=1
-	StartingGold=100
-	StartingX=60, StartingY=85
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=7
-	LeaderType=LEADER_ERMAK
-	LeaderName=TXT_KEY_LEADER_ERMAK
-	CivDesc=TXT_KEY_CIV_RUSSIA_DESC
-	CivShortDesc=TXT_KEY_CIV_RUSSIA_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_RUSSIA_ADJECTIVE
-	CivType=CIVILIZATION_RUSSIA
-	Color=PLAYERCOLOR_BROWN
-	ArtStyle=ARTSTYLE_RUSSIA
-	PlayableCiv=1
-	StartingGold=100
-	StartingX=1, StartingY=114
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=8
-	LeaderType=LEADER_OPPUSSOQUIONUSKE
-	LeaderName=TXT_KEY_LEADER_OPPUSSOQUIONUSKE
-	CivDesc=TXT_KEY_CIV_ALGONQUIAN_DESC
-	CivShortDesc=TXT_KEY_CIV_ALGONQUIAN_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_ALGONQUIAN_ADJECTIVE
-	CivType=CIVILIZATION_ALGONQUIAN
-	Color=PLAYERCOLOR_ALGONQUIAN
-	ArtStyle=ARTSTYLE_NATIVES_IROQUOIS
-	PlayableCiv=0
-	StartingGold=8140
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=15, AttitudeExtra=2
-	AttitudePlayer=21, AttitudeExtra=2
-	AttitudePlayer=22, AttitudeExtra=-10
-	AttitudePlayer=32, AttitudeExtra=5
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=9
-	LeaderType=LEADER_MANGAS_COLORADAS
-	LeaderName=TXT_KEY_LEADER_MANGAS_COLORADAS
-	CivDesc=TXT_KEY_CIV_APACHE_DESC
-	CivShortDesc=TXT_KEY_CIV_APACHE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_APACHE_ADJECTIVE
-	CivType=CIVILIZATION_APACHE
-	Color=PLAYERCOLOR_PEACH
-	ArtStyle=ARTSTYLE_NATIVES_WEST
-	PlayableCiv=0
-	StartingGold=5056
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=11, AttitudeExtra=2
-	AttitudePlayer=15, AttitudeExtra=2
-	AttitudePlayer=30, AttitudeExtra=-10
-	AttitudePlayer=32, AttitudeExtra=-5
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=10
-	LeaderType=LEADER_AGUEYBANA
-	LeaderName=TXT_KEY_LEADER_AGUEYBANA
-	CivDesc=TXT_KEY_CIV_ARAWAK_DESC
-	CivShortDesc=TXT_KEY_CIV_ARAWAK_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_ARAWAK_ADJECTIVE
-	CivType=CIVILIZATION_ARAWAK
-	Color=PLAYERCOLOR_LIGHT_YELLOW
-	ArtStyle=ARTSTYLE_NATIVES_CARIBBEAN
-	PlayableCiv=0
-	StartingGold=5570
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=13, AttitudeExtra=-10
-	AttitudePlayer=15, AttitudeExtra=-5
-	AttitudePlayer=18, AttitudeExtra=2
-	AttitudePlayer=25, AttitudeExtra=5
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=11
-	LeaderType=LEADER_MONTEZUMA
-	LeaderName=TXT_KEY_LEADER_MONTEZUMA
-	CivDesc=TXT_KEY_CIV_AZTEC_DESC
-	CivShortDesc=TXT_KEY_CIV_AZTEC_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_AZTEC_ADJECTIVE
-	CivType=CIVILIZATION_AZTEC
-	Color=PLAYERCOLOR_DARK_DARK_GREEN
-	ArtStyle=ARTSTYLE_NATIVES_SOUTH
-	PlayableCiv=0
-	StartingGold=23560
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=9, AttitudeExtra=2
-	AttitudePlayer=25, AttitudeExtra=-10
-	AttitudePlayer=26, AttitudeExtra=-10
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=12
-	LeaderType=LEADER_RUNNING_EAGLE
-	LeaderName=TXT_KEY_LEADER_RUNNING_EAGLE
-	CivDesc=TXT_KEY_CIV_BLACKFOOT_DESC
-	CivShortDesc=TXT_KEY_CIV_BLACKFOOT_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_BLACKFOOT_ADJECTIVE
-	CivType=CIVILIZATION_BLACKFOOT
-	Color=PLAYERCOLOR_BLACKFOOT
-	ArtStyle=ARTSTYLE_NATIVES_WEST
-	PlayableCiv=0
-	StartingGold=5380
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=13
-	LeaderType=LEADER_JAUREYBO
-	LeaderName=TXT_KEY_LEADER_JAUREYBO
-	CivDesc=TXT_KEY_CIV_CARIBS_DESC
-	CivShortDesc=TXT_KEY_CIV_CARIBS_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_CARIBS_ADJECTIVE
-	CivType=CIVILIZATION_CARIBS
-	Color=PLAYERCOLOR_CARIBS
-	ArtStyle=ARTSTYLE_NATIVES_CARIBBEAN
-	PlayableCiv=0
-	StartingGold=8140
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=10, AttitudeExtra=-10
-	AttitudePlayer=18, AttitudeExtra=-2
-	AttitudePlayer=20, AttitudeExtra=-2
-	AttitudePlayer=36, AttitudeExtra=-5
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=14
-	LeaderType=LEADER_IRON_JACKET
-	LeaderName=TXT_KEY_LEADER_IRON_JACKET
-	CivDesc=TXT_KEY_CIV_COMANCHE_DESC
-	CivShortDesc=TXT_KEY_CIV_COMANCHE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_COMANCHE_ADJECTIVE
-	CivType=CIVILIZATION_COMANCHE
-	Color=PLAYERCOLOR_COMANCHE
-	ArtStyle=ARTSTYLE_NATIVES_WEST
-	PlayableCiv=0
-	StartingGold=5380
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=15
-	LeaderType=LEADER_OCONOSTOTA
-	LeaderName=TXT_KEY_LEADER_OCONOSTOTA
-	CivDesc=TXT_KEY_CIV_CHEROKEE_DESC
-	CivShortDesc=TXT_KEY_CIV_CHEROKEE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_CHEROKEE_ADJECTIVE
-	CivType=CIVILIZATION_CHEROKEE
-	Color=PLAYERCOLOR_TOROMONA
-	ArtStyle=ARTSTYLE_NATIVES_WEST
-	PlayableCiv=0
-	StartingGold=5056
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=8, AttitudeExtra=2
-	AttitudePlayer=9, AttitudeExtra=2
-	AttitudePlayer=10, AttitudeExtra=-5
-	AttitudePlayer=22, AttitudeExtra=-2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=16
-	LeaderType=LEADER_PINE_LEAF
-	LeaderName=TXT_KEY_LEADER_PINE_LEAF
-	CivDesc=TXT_KEY_CIV_CROW_DESC
-	CivShortDesc=TXT_KEY_CIV_CROW_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_CROW_ADJECTIVE
-	CivType=CIVILIZATION_CROW
-	Color=PLAYERCOLOR_CROW
-	ArtStyle=ARTSTYLE_NATIVES_WEST
-	PlayableCiv=0
-	StartingGold=4060
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=17
-	LeaderType=LEADER_SEPE_TIARAJU
-	LeaderName=TXT_KEY_LEADER_SEPE_TIARAJU
-	CivDesc=TXT_KEY_CIV_GUARANI_DESC
-	CivShortDesc=TXT_KEY_CIV_GUARANI_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_GUARANI_ADJECTIVE
-	CivType=CIVILIZATION_GUARANI
-	Color=PLAYERCOLOR_GUARANI
-	ArtStyle=ARTSTYLE_NATIVES_CENTRALAMERICA
-	PlayableCiv=0
-	StartingGold=7112
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=20, AttitudeExtra=-5
-	AttitudePlayer=31, AttitudeExtra=2
-	AttitudePlayer=34, AttitudeExtra=-2
-	AttitudePlayer=36, AttitudeExtra=2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=18
-	LeaderType=LEADER_URRACA
-	LeaderName=TXT_KEY_LEADER_URRACA
-	CivDesc=TXT_KEY_CIV_GUAYMI_DESC
-	CivShortDesc=TXT_KEY_CIV_GUAYMI_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_GUAYMI_ADJECTIVE
-	CivType=CIVILIZATION_GUAYMI
-	Color=PLAYERCOLOR_GUAYMI
-	ArtStyle=ARTSTYLE_NATIVES_CARIBBEAN
-	PlayableCiv=0
-	StartingGold=4713
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=10, AttitudeExtra=2
-	AttitudePlayer=13, AttitudeExtra=-2
-	AttitudePlayer=20, AttitudeExtra=10
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=19
-	LeaderType=LEADER_KONDIARONK
-	LeaderName=TXT_KEY_LEADER_KONDIARONK
-	CivDesc=TXT_KEY_CIV_HURON_DESC
-	CivShortDesc=TXT_KEY_CIV_HURON_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_HURON_ADJECTIVE
-	CivType=CIVILIZATION_HURON
-	Color=PLAYERCOLOR_HURON
-	ArtStyle=ARTSTYLE_NATIVES_HURON
-	PlayableCiv=0
-	StartingGold=4060
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=20
-	LeaderType=LEADER_HUAYNA_CAPAC
-	LeaderName=TXT_KEY_LEADER_HUAYNA_CAPAC
-	CivDesc=TXT_KEY_CIV_INCA_DESC
-	CivShortDesc=TXT_KEY_CIV_INCA_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_INCA_ADJECTIVE
-	CivType=CIVILIZATION_INCA
-	Color=PLAYERCOLOR_LIGHT_ORANGE
-	ArtStyle=ARTSTYLE_NATIVES_SOUTH
-	PlayableCiv=0
-	StartingGold=30413
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=13, AttitudeExtra=-2
-	AttitudePlayer=17, AttitudeExtra=-5
-	AttitudePlayer=18, AttitudeExtra=10
-	AttitudePlayer=24, AttitudeExtra=5
-	AttitudePlayer=31, AttitudeExtra=-2
-	AttitudePlayer=34, AttitudeExtra=5
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=21
-	LeaderType=LEADER_TUGLAWINA
-	LeaderName=TXT_KEY_LEADER_TUGLAWINA
-	CivDesc=TXT_KEY_CIV_INUIT_DESC
-	CivShortDesc=TXT_KEY_CIV_INUIT_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_INUIT_ADJECTIVE
-	CivType=CIVILIZATION_INUIT
-	Color=PLAYERCOLOR_INUIT
-	ArtStyle=ARTSTYLE_NATIVES_INUIT
-	PlayableCiv=0
-	StartingGold=6427
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=8, AttitudeExtra=2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=22
-	LeaderType=LEADER_LOGAN
-	LeaderName=TXT_KEY_LEADER_LOGAN
-	CivDesc=TXT_KEY_CIV_IROQUOIS_DESC
-	CivShortDesc=TXT_KEY_CIV_IROQUOIS_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_IROQUOIS_ADJECTIVE
-	CivType=CIVILIZATION_IROQUOIS
-	Color=PLAYERCOLOR_BLUE
-	ArtStyle=ARTSTYLE_NATIVES_IROQUOIS
-	PlayableCiv=0
-	StartingGold=4028
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=8, AttitudeExtra=-10
-	AttitudePlayer=15, AttitudeExtra=-2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=23
-	LeaderType=LEADER_MACHIPARA
-	LeaderName=TXT_KEY_LEADER_MACHIPARA
-	CivDesc=TXT_KEY_CIV_MACHIPARO_DESC
-	CivShortDesc=TXT_KEY_CIV_MACHIPARO_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_MACHIPARO_ADJECTIVE
-	CivType=CIVILIZATION_MACHIPARO
-	Color=PLAYERCOLOR_MACHIPARO
-	ArtStyle=ARTSTYLE_NATIVES_CENTRALAMERICA
-	PlayableCiv=0
-	StartingGold=4060
-	StartingX=21, StartingY=29
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=24
-	LeaderType=LEADER_LAUTARO
-	LeaderName=TXT_KEY_LEADER_LAUTARO
-	CivDesc=TXT_KEY_CIV_MAPUCHE_DESC
-	CivShortDesc=TXT_KEY_CIV_MAPUCHE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_MAPUCHE_ADJECTIVE
-	CivType=CIVILIZATION_MAPUCHE
-	Color=PLAYERCOLOR_MAPUCHE
-	ArtStyle=ARTSTYLE_NATIVES_TEHUELCHE
-	PlayableCiv=0
-	StartingGold=3685
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=20, AttitudeExtra=2
-	AttitudePlayer=34, AttitudeExtra=-2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=25
-	LeaderType=LEADER_PACAL
-	LeaderName=TXT_KEY_LEADER_PACAL
-	CivDesc=TXT_KEY_CIV_MAYA_DESC
-	CivShortDesc=TXT_KEY_CIV_MAYA_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_MAYA_ADJECTIVE
-	CivType=CIVILIZATION_MAYA
-	Color=PLAYERCOLOR_MIDDLE_CYAN
-	ArtStyle=ARTSTYLE_NATIVES_SOUTH
-	PlayableCiv=0
-	StartingGold=15850
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=10, AttitudeExtra=5
-	AttitudePlayer=11, AttitudeExtra=-10
-	AttitudePlayer=26, AttitudeExtra=10
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=26
-	LeaderType=LEADER_SERPENT_QUECHQUEMITL
-	LeaderName=TXT_KEY_LEADER_SERPENT_QUECHQUEMITL
-	CivDesc=TXT_KEY_CIV_MIXTEC_DESC
-	CivShortDesc=TXT_KEY_CIV_MIXTEC_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_MIXTEC_ADJECTIVE
-	CivType=CIVILIZATION_MIXTEC
-	Color=PLAYERCOLOR_MIXTEC
-	ArtStyle=ARTSTYLE_NATIVES_SOUTH
-	PlayableCiv=0
-	StartingGold=7626
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=11, AttitudeExtra=-10
-	AttitudePlayer=25, AttitudeExtra=10
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=27
-	LeaderType=LEADER_QUEMUENCHATOCHA
-	LeaderName=TXT_KEY_LEADER_QUEMUENCHATOCHA
-	CivDesc=TXT_KEY_CIV_MUISCA_DESC
-	CivShortDesc=TXT_KEY_CIV_MUISCA_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_MUISCA_ADJECTIVE
-	CivType=CIVILIZATION_MUISCA
-	Color=PLAYERCOLOR_MUISCA
-	ArtStyle=ARTSTYLE_NATIVES_CENTRALAMERICA
-	PlayableCiv=0
-	StartingGold=4060
-	StartingX=39, StartingY=30
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=28
-	LeaderType=LEADER_NARBONA
-	LeaderName=TXT_KEY_LEADER_NARBONA
-	CivDesc=TXT_KEY_CIV_NAVAJO_DESC
-	CivShortDesc=TXT_KEY_CIV_NAVAJO_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_NAVAJO_ADJECTIVE
-	CivType=CIVILIZATION_NAVAJO
-	Color=PLAYERCOLOR_NAVAJO
-	ArtStyle=ARTSTYLE_NATIVES_WEST
-	PlayableCiv=0
-	StartingGold=4060
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=29
-	LeaderType=LEADER_AOMAGUA
-	LeaderName=TXT_KEY_LEADER_AOMAGUA
-	CivDesc=TXT_KEY_CIV_OMAGUA_DESC
-	CivShortDesc=TXT_KEY_CIV_OMAGUA_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_OMAGUA_ADJECTIVE
-	CivType=CIVILIZATION_OMAGUA
-	Color=PLAYERCOLOR_OMAGUA
-	ArtStyle=ARTSTYLE_NATIVES_EAST
-	PlayableCiv=0
-	StartingGold=4060
-	StartingX=39, StartingY=45
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=30
-	LeaderType=LEADER_WASHAKIE
-	LeaderName=TXT_KEY_LEADER_WASHAKIE
-	CivDesc=TXT_KEY_CIV_SHOSHONE_DESC
-	CivShortDesc=TXT_KEY_CIV_SHOSHONE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_SHOSHONE_ADJECTIVE
-	CivType=CIVILIZATION_SHOSHONE
-	Color=PLAYERCOLOR_PINK
-	ArtStyle=ARTSTYLE_NATIVES_WEST
-	PlayableCiv=0
-	StartingGold=4371
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=9, AttitudeExtra=-10
-	AttitudePlayer=32, AttitudeExtra=10
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=31
-	LeaderType=LEADER_SHUAR
-	LeaderName=TXT_KEY_LEADER_SHUAR
-	CivDesc=TXT_KEY_CIV_SHUAR_DESC
-	CivShortDesc=TXT_KEY_CIV_SHUAR_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_SHUAR_ADJECTIVE
-	CivType=CIVILIZATION_SHUAR
-	Color=PLAYERCOLOR_DARK_CYAN
-	ArtStyle=ARTSTYLE_NATIVES_SHUAR
-	PlayableCiv=0
-	StartingGold=4285
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=17, AttitudeExtra=2
-	AttitudePlayer=20, AttitudeExtra=-5
-	AttitudePlayer=36, AttitudeExtra=-10
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=32
-	LeaderType=LEADER_SITTING_BULL
-	LeaderName=TXT_KEY_LEADER_SITTING_BULL
-	CivDesc=TXT_KEY_CIV_SIOUX_DESC
-	CivShortDesc=TXT_KEY_CIV_SIOUX_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_SIOUX_ADJECTIVE
-	CivType=CIVILIZATION_SIOUX
-	Color=PLAYERCOLOR_GRAY_WARM
-	ArtStyle=ARTSTYLE_NATIVES_WEST
-	PlayableCiv=0
-	StartingGold=4371
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=8, AttitudeExtra=5
-	AttitudePlayer=9, AttitudeExtra=-5
-	AttitudePlayer=30, AttitudeExtra=10
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=33
-	LeaderType=LEADER_ERENDIRA
-	LeaderName=TXT_KEY_LEADER_ERENDIRA
-	CivDesc=TXT_KEY_CIV_TARASCANS_DESC
-	CivShortDesc=TXT_KEY_CIV_TARASCANS_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_TARASCANS_ADJECTIVE
-	CivType=CIVILIZATION_TARASCANS
-	Color=PLAYERCOLOR_TARASCANS
-	ArtStyle=ARTSTYLE_NATIVES_SOUTH
-	PlayableCiv=0
-	StartingGold=8020
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=34
-	LeaderType=LEADER_ORKEKE
-	LeaderName=TXT_KEY_LEADER_ORKEKE
-	CivDesc=TXT_KEY_CIV_TEHUELCHE_DESC
-	CivShortDesc=TXT_KEY_CIV_TEHUELCHE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_TEHUELCHE_ADJECTIVE
-	CivType=CIVILIZATION_TEHUELCHE
-	Color=PLAYERCOLOR_SHOSHONE
-	ArtStyle=ARTSTYLE_NATIVES_TEHUELCHE
-	PlayableCiv=0
-	StartingGold=4285
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=17, AttitudeExtra=-2
-	AttitudePlayer=20, AttitudeExtra=5
-	AttitudePlayer=24, AttitudeExtra=-5
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=35
-	LeaderType=LEADER_TARANO
-	LeaderName=TXT_KEY_LEADER_TARANO
-	CivDesc=TXT_KEY_CIV_TOROMONA_DESC
-	CivShortDesc=TXT_KEY_CIV_TOROMONA_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_TOROMONA_ADJECTIVE
-	CivType=CIVILIZATION_TOROMONA
-	Color=PLAYERCOLOR_DARK_GRAY
-	ArtStyle=ARTSTYLE_NATIVES_SHUAR
-	PlayableCiv=0
-	StartingGold=4060
-	StartingX=65, StartingY=51
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=36
-	LeaderType=LEADER_CUNHAMBEBE
-	LeaderName=TXT_KEY_LEADER_CUNHAMBEBE
-	CivDesc=TXT_KEY_CIV_TUPI_DESC
-	CivShortDesc=TXT_KEY_CIV_TUPI_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_TUPI_ADJECTIVE
-	CivType=CIVILIZATION_TUPI
-	Color=PLAYERCOLOR_Tupi
-	ArtStyle=ARTSTYLE_NATIVES_EAST
-	PlayableCiv=0
-	StartingGold=5313
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	AttitudePlayer=13, AttitudeExtra=-5
-	AttitudePlayer=17, AttitudeExtra=-10
-	AttitudePlayer=31, AttitudeExtra=2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=37
-	LeaderType=LEADER_COCIJOEZA
-	LeaderName=TXT_KEY_LEADER_COCIJOEZA
-	CivDesc=TXT_KEY_CIV_ZAPOTEC_DESC
-	CivShortDesc=TXT_KEY_CIV_ZAPOTEC_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_ZAPOTEC_ADJECTIVE
-	CivType=CIVILIZATION_ZAPOTEC
-	Color=PLAYERCOLOR_ZAPOTEC
-	ArtStyle=ARTSTYLE_NATIVES_SOUTH
-	PlayableCiv=0
-	StartingGold=4060
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	AttitudePlayer=0, AttitudeExtra=2
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=38
-	LeaderType=LEADER_FRENCH_KING
-	LeaderName=TXT_KEY_LEADER_FRENCH_KING
-	CivDesc=TXT_KEY_CIV_FRANCE_EUROPE_DESC
-	CivShortDesc=TXT_KEY_CIV_FRANCE_EUROPE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_FRANCE_EUROPE_ADJECTIVE
-	CivType=CIVILIZATION_FRANCE_EUROPE
-	Color=PLAYERCOLOR_DARK_BLUE
-	ArtStyle=ARTSTYLE_FRANCE
-	PlayableCiv=0
-	StartingGold=100
-	StartingX=45, StartingY=81
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=39
-	LeaderType=LEADER_ENGLISH_KING
-	LeaderName=TXT_KEY_LEADER_ENGLISH_KING
-	CivDesc=TXT_KEY_CIV_ENGLAND_EUROPE_DESC
-	CivShortDesc=TXT_KEY_CIV_ENGLAND_EUROPE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_ENGLAND_EUROPE_ADJECTIVE
-	CivType=CIVILIZATION_ENGLAND_EUROPE
-	Color=PLAYERCOLOR_RED_KING
-	ArtStyle=ARTSTYLE_ENGLAND
-	PlayableCiv=0
-	StartingGold=100
-	StartingX=40, StartingY=75
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=40
-	LeaderType=LEADER_SPANISH_KING
-	LeaderName=TXT_KEY_LEADER_SPANISH_KING
-	CivDesc=TXT_KEY_CIV_SPAIN_EUROPE_DESC
-	CivShortDesc=TXT_KEY_CIV_SPAIN_EUROPE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_SPAIN_EUROPE_ADJECTIVE
-	CivType=CIVILIZATION_SPAIN_EUROPE
-	Color=PLAYERCOLOR_YELLOW
-	ArtStyle=ARTSTYLE_SPAIN
-	PlayableCiv=0
-	StartingGold=100
-	StartingX=23, StartingY=70
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=41
-	LeaderType=LEADER_DUTCH_KING
-	LeaderName=TXT_KEY_LEADER_DUTCH_KING
-	CivDesc=TXT_KEY_CIV_DUTCH_EUROPE_DESC
-	CivShortDesc=TXT_KEY_CIV_DUTCH_EUROPE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_DUTCH_EUROPE_ADJECTIVE
-	CivType=CIVILIZATION_DUTCH_EUROPE
-	Color=PLAYERCOLOR_MIDDLE_PURPLE
-	ArtStyle=ARTSTYLE_DUTCH
-	PlayableCiv=0
-	StartingGold=100
-	StartingX=54, StartingY=62
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=42
-	LeaderType=LEADER_PORTUGUESE_KING
-	LeaderName=TXT_KEY_LEADER_PORTUGUESE_KING
-	CivDesc=TXT_KEY_CIV_PORTUGAL_EUROPE_DESC
-	CivShortDesc=TXT_KEY_CIV_PORTUGAL_EUROPE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_PORTUGAL_EUROPE_ADJECTIVE
-	CivType=CIVILIZATION_PORTUGAL_EUROPE
-	Color=PLAYERCOLOR_PORTUGAL_EUROPE
-	ArtStyle=ARTSTYLE_PORTUGAL
-	PlayableCiv=0
-	StartingGold=100
-	StartingX=67, StartingY=45
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=43
-	LeaderType=LEADER_DANISH_KING
-	LeaderName=TXT_KEY_LEADER_DANISH_KING
-	CivDesc=TXT_KEY_CIV_DENMARK_EUROPE_DESC
-	CivShortDesc=TXT_KEY_CIV_DENMARK_EUROPE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_DENMARK_EUROPE_ADJECTIVE
-	CivType=CIVILIZATION_DENMARK_EUROPE
-	Color=PLAYERCOLOR_DENMARK_EUROPE
-	ArtStyle=ARTSTYLE_DENMARK
-	PlayableCiv=0
-	StartingGold=100
-	StartingX=66, StartingY=112
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=44
-	LeaderType=LEADER_SWEDISH_KING
-	LeaderName=TXT_KEY_LEADER_SWEDISH_KING
-	CivDesc=TXT_KEY_CIV_SWEDEN_EUROPE_DESC
-	CivShortDesc=TXT_KEY_CIV_SWEDEN_EUROPE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_SWEDEN_EUROPE_ADJECTIVE
-	CivType=CIVILIZATION_SWEDEN_EUROPE
-	Color=PLAYERCOLOR_SWEDEN_EUROPE
-	ArtStyle=ARTSTYLE_DENMARK
-	PlayableCiv=0
-	StartingGold=100
-	StartingX=60, StartingY=85
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=45
-	LeaderType=LEADER_RUSSIAN_KING
-	LeaderName=TXT_KEY_LEADER_RUSSIAN_KING
-	CivDesc=TXT_KEY_CIV_RUSSIA_EUROPE_DESC
-	CivShortDesc=TXT_KEY_CIV_RUSSIA_EUROPE_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_RUSSIA_EUROPE_ADJECTIVE
-	CivType=CIVILIZATION_RUSSIA_EUROPE
-	Color=PLAYERCOLOR_KINGRUSSIA
-	ArtStyle=ARTSTYLE_RUSSIA
-	PlayableCiv=0
-	StartingGold=100
-	StartingX=1, StartingY=114
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	LeaderType=NONE
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=46
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=47
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=48
 	LeaderType=NONE
 	CivType=NONE
-	Color=NONE
-	ArtStyle=NONE
-	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginMap
-	grid width=68
-	grid height=128
+	grid width=72
+	grid height=100
 	top latitude=90
 	bottom latitude=-90
 	wrap X=0
@@ -1412,11 +261,11 @@ BeginMap
 	world size=WORLDSIZE_HUGE
 	climate=CLIMATE_TEMPERATE
 	sealevel=SEALEVEL_MEDIUM
-	num plots written=8704
+	num plots written=7200
 	num signs written=0
-	Randomize Features=false
-	Randomize Resources=false
-	Randomize Goodies=false
+	Randomize Features=true
+	Randomize Resources=true
+	Randomize Goodies=true
 EndMap
 
 ### Plot Info ###
