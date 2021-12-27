@@ -31804,25 +31804,21 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=252
-	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=1
 EndPlot
 BeginPlot
 	x=19,y=253
-	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=1
 EndPlot
 BeginPlot
 	x=19,y=254
-	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=19,y=255
-	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -33376,13 +33372,11 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=252
-	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=1
 EndPlot
 BeginPlot
 	x=20,y=253
-	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=0
 EndPlot
@@ -34926,13 +34920,11 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=252
-	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=0
 EndPlot
 BeginPlot
 	x=21,y=253
-	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=0
 EndPlot
@@ -36455,7 +36447,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=254
-	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
