@@ -2601,6 +2601,7 @@ class CvMainInterface:
 		screen.hide("EducationText")
 		screen.hide("CultureText")
 		screen.hide("HarbourText")
+		screen.hide("BarracksText")
 		screen.hide("CityNameText")
 		screen.hide("PopulationText")
 		screen.hide("ProductionInputText")
@@ -2996,6 +2997,7 @@ class CvMainInterface:
 				screen.hide("EducationText")
 				screen.hide("CultureText")
 				screen.hide("HarbourText")
+				screen.hide("BarracksText")
 				# R&R, Robert Surcouf,START
 				screen.hide("StorageCapacityText")
 				# R&R, Robert Surcouf,END
