@@ -24151,7 +24151,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=75
-	BonusType=BONUS_BOREAL_FOREST
+	BonusType=BONUS_GIANT_TREE
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
