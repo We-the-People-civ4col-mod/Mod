@@ -210,10 +210,12 @@ class CvDomesticAdvisor:
 		
 		## R&R, Robert Surcouf, Domestic Market display START
 		szListName = self.StatePages[self.GENERAL_STATE][2] + "ListBackground"
+		CocaLeaveColumn = 2
+		CocaLeaveYieldID = 8
+		screen.setTableColumnHeader(szListName,  CocaLeaveColumn, "<font=2>" + (u" %c" % gc.getYieldInfo(CocaLeaveYieldID).getChar()) + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 18 + 1)
 		iStartYield=gc.getDefineINT("DOMESTIC_MARKET_SCREEN_START_YIELD_ID")
 		for iYield in range(iStartYield, YieldTypes.YIELD_LUXURY_GOODS + 1):
-			#screen.setTableColumnHeader(szListName, iYield-iStartYield + 2, "<font=2>" + (u" %c" % gc.getYieldInfo(iYield).getChar()) + "</font>", (self.WAREHOUSE_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )
-			screen.setTableColumnHeader(szListName, iYield-iStartYield + 2, "<font=2>" + (u" %c" % gc.getYieldInfo(iYield).getChar()) + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 17 + 1)
+			screen.setTableColumnHeader(szListName, iYield-iStartYield + 3, "<font=2>" + (u" %c" % gc.getYieldInfo(iYield).getChar()) + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 18 + 1)
 		## R&R, Robert Surcouf, Domestic Market display End
 		
 		#GeneralState Headers
@@ -564,6 +566,17 @@ class CvDomesticAdvisor:
 		
 		## R&R, Robert Surcouf, Domestic Market display START
 		elif(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 2): 
+			CocaLeaveColumn = 2
+			CocaLeaveYieldID = 8
+			if (pLoopCity.getYieldStored(CocaLeaveYieldID)<pLoopCity.getYieldDemand(CocaLeaveYieldID)):
+				if (pLoopCity.getYieldStored(CocaLeaveYieldID) == 0):
+					screen.setTableInt(szState + "ListBackground", CocaLeaveColumn, i, "<font=2>" + "<color=255,0,0>" + unicode(pLoopCity.getYieldStored(CocaLeaveYieldID)) + " / " + "</color>" + "<color=255,0,0>" + unicode(pLoopCity.getYieldDemand(CocaLeaveYieldID)) + " / " + "</color>" + unicode(pLoopCity.getYieldBuyPrice(CocaLeaveYieldID)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+				else:
+					screen.setTableInt(szState + "ListBackground", CocaLeaveColumn, i, "<font=2>" + "<color=0,255,255>" + unicode(pLoopCity.getYieldStored(CocaLeaveYieldID)) + " / " + "</color>" + "<color=255,0,0>" + unicode(pLoopCity.getYieldDemand(CocaLeaveYieldID)) + " / " + "</color>" + unicode(pLoopCity.getYieldBuyPrice(CocaLeaveYieldID)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			elif (pLoopCity.getYieldStored(CocaLeaveYieldID)>pLoopCity.getYieldDemand(CocaLeaveYieldID)):
+				screen.setTableInt(szState + "ListBackground", CocaLeaveColumn, i, "<font=2>" + "<color=0,255,0>" + unicode(pLoopCity.getYieldStored(CocaLeaveYieldID)) + " / " +  unicode(pLoopCity.getYieldDemand(CocaLeaveYieldID)) + " / " + "</color>" + unicode(pLoopCity.getYieldBuyPrice(CocaLeaveYieldID)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			else:
+				screen.setTableInt(szState + "ListBackground", CocaLeaveColumn, i, "<font=2>" + "<color=0,255,255>" + unicode(pLoopCity.getYieldStored(CocaLeaveYieldID)) + " / " + unicode(pLoopCity.getYieldDemand(CocaLeaveYieldID)) + " / " + "</color>" + unicode(pLoopCity.getYieldBuyPrice(CocaLeaveYieldID)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 			iStartYield=gc.getDefineINT("DOMESTIC_MARKET_SCREEN_START_YIELD_ID")
 			for iYield in range(iStartYield, YieldTypes.YIELD_LUXURY_GOODS + 1):
 				#screen.setTableInt("GeneralStatePage3ListBackground", iYield-iStartYield + 2, i, "<font=2>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "/"+ "<color=0,255,0>" +  unicode(pLoopCity.getYieldDemand(iYield)) + "</color>" "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
@@ -572,16 +585,16 @@ class CvDomesticAdvisor:
 					# CBM - screen.setTableInt(szState + "ListBackground", iYield-iStartYield + 2, i, "<font=2>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "/"+ "<color=255,0,0>" +  unicode(pLoopCity.getYieldDemand(iYield)) + "</color>" "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 					# CBM added differentiation between no stock and not enough stock - start
 					if (pLoopCity.getYieldStored(iYield) == 0):
-						screen.setTableInt(szState + "ListBackground", iYield-iStartYield + 2, i, "<font=2>" + "<color=255,0,0>" + unicode(pLoopCity.getYieldStored(iYield)) + " / " + "</color>" + "<color=255,0,0>" + unicode(pLoopCity.getYieldDemand(iYield)) + " / " + "</color>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+						screen.setTableInt(szState + "ListBackground", iYield-iStartYield + 3, i, "<font=2>" + "<color=255,0,0>" + unicode(pLoopCity.getYieldStored(iYield)) + " / " + "</color>" + "<color=255,0,0>" + unicode(pLoopCity.getYieldDemand(iYield)) + " / " + "</color>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 					else:
-						screen.setTableInt(szState + "ListBackground", iYield-iStartYield + 2, i, "<font=2>" + "<color=0,255,255>" + unicode(pLoopCity.getYieldStored(iYield)) + " / " + "</color>" + "<color=255,0,0>" + unicode(pLoopCity.getYieldDemand(iYield)) + " / " + "</color>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+						screen.setTableInt(szState + "ListBackground", iYield-iStartYield + 3, i, "<font=2>" + "<color=0,255,255>" + unicode(pLoopCity.getYieldStored(iYield)) + " / " + "</color>" + "<color=255,0,0>" + unicode(pLoopCity.getYieldDemand(iYield)) + " / " + "</color>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 					# CBM added differentiation between no stock and not enough stock - end
 				elif (pLoopCity.getYieldStored(iYield)>pLoopCity.getYieldDemand(iYield)):
 					# CBM - screen.setTableInt(szState + "ListBackground", iYield-iStartYield + 2, i, "<font=2>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "/"+ "<color=0,255,0>" +  unicode(pLoopCity.getYieldDemand(iYield)) + "</color>" "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-					screen.setTableInt(szState + "ListBackground", iYield-iStartYield + 2, i, "<font=2>" + "<color=0,255,0>" + unicode(pLoopCity.getYieldStored(iYield)) + " / " +  unicode(pLoopCity.getYieldDemand(iYield)) + " / " + "</color>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+					screen.setTableInt(szState + "ListBackground", iYield-iStartYield + 3, i, "<font=2>" + "<color=0,255,0>" + unicode(pLoopCity.getYieldStored(iYield)) + " / " +  unicode(pLoopCity.getYieldDemand(iYield)) + " / " + "</color>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				else:
 					# CBM - screen.setTableInt(szState + "ListBackground", iYield-iStartYield + 2, i, "<font=2>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "/"+ "<color=0,255,255>" +  unicode(pLoopCity.getYieldDemand(iYield)) + "</color>" "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-					screen.setTableInt(szState + "ListBackground", iYield-iStartYield + 2, i, "<font=2>" + "<color=0,255,255>" + unicode(pLoopCity.getYieldStored(iYield)) + " / " + unicode(pLoopCity.getYieldDemand(iYield)) + " / " + "</color>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+					screen.setTableInt(szState + "ListBackground", iYield-iStartYield + 3, i, "<font=2>" + "<color=0,255,255>" + unicode(pLoopCity.getYieldStored(iYield)) + " / " + unicode(pLoopCity.getYieldDemand(iYield)) + " / " + "</color>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				# CBM 0.8.020 display of quantity available in city - end	
 		## R&R, Robert Surcouf, Domestic Market display End
 		elif(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 3): 
