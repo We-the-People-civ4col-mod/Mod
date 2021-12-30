@@ -1414,8 +1414,8 @@ BeginMap
 	sealevel=SEALEVEL_MEDIUM
 	num plots written=8704
 	num signs written=0
-	Randomize Features=false
-	Randomize Resources=false
+	Randomize Features=true
+	Randomize Resources=true
 	Randomize Goodies=true
 EndMap
 
