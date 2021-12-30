@@ -34,7 +34,6 @@ import WarehouseAdvisor
 ## Accessing the page (arrows and button pressing) is set up automatically
 
 
-
 # globals
 gc = CyGlobalContext()
 ArtFileMgr = CyArtFileMgr()
