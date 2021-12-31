@@ -6943,7 +6943,7 @@ bool CvPlayerAI::AI_doDiploCancelDeals(PlayerTypes ePlayer)
 								}
 							}
 
-							for (pNode = pLoopDeal->headSecondTradesNode(); (pNode != NULL); pNode = pLoopDeal->nextSecondTradesNode(pNode))
+							for (CLLNode<TradeData>* pNode = pLoopDeal->headSecondTradesNode(); (pNode != NULL); pNode = pLoopDeal->nextSecondTradesNode(pNode))
 							{
 								if (pLoopDeal->getSecondPlayer() == getID())
 								{
