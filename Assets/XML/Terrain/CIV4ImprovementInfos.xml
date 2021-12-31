@@ -1877,6 +1877,17 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
+                    <BonusType>BONUS_FLAX</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_HEMP</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>				
+                <BonusTypeStruct>
                     <BonusType>BONUS_COFFEE</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -3052,6 +3063,17 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
+                    <BonusType>BONUS_DOMESTIC_GOOSE</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FOOD</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
                     <BonusType>BONUS_HORSES</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -3761,6 +3783,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_HEMP</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_FLAX</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FLAX</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -4913,6 +4946,17 @@
                 </BonusTypeStruct>
                 <BonusTypeStruct>
                     <BonusType>BONUS_CHICKEN</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FOOD</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_DOMESTIC_GOOSE</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>

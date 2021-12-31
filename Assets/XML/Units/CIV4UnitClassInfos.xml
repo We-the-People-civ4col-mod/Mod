@@ -667,11 +667,6 @@
             <DefaultUnit>UNIT_RED_PEPPER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
-            <Type>UNITCLASS_WOOL</Type>
-            <Description>TXT_KEY_UNITCLASS_WOOL</Description>
-            <DefaultUnit>UNIT_WOOL</DefaultUnit>
-        </UnitClassInfo>
-        <UnitClassInfo>
             <Type>UNITCLASS_COTTON</Type>
             <Description>TXT_KEY_UNITCLASS_COTTON</Description>
             <DefaultUnit>UNIT_COTTON</DefaultUnit>
@@ -680,12 +675,37 @@
             <Type>UNITCLASS_INDIGO</Type>
             <Description>TXT_KEY_UNITCLASS_INDIGO</Description>
             <DefaultUnit>UNIT_INDIGO</DefaultUnit>
+        </UnitClassInfo>	
+        <UnitClassInfo>
+            <Type>UNITCLASS_WOOL</Type>
+            <Description>TXT_KEY_UNITCLASS_WOOL</Description>
+            <DefaultUnit>UNIT_WOOL</DefaultUnit>
         </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_GOAT_HIDES</Type>
+            <Description>TXT_KEY_UNITCLASS_GOAT_HIDES</Description>
+            <DefaultUnit>UNIT_GOAT_HIDES</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_PIG_SKIN</Type>
+            <Description>TXT_KEY_UNITCLASS_PIG_SKIN</Description>
+            <DefaultUnit>UNIT_PIG_SKIN</DefaultUnit>
+        </UnitClassInfo>			
         <UnitClassInfo>
             <Type>UNITCLASS_HIDES</Type>
             <Description>TXT_KEY_UNITCLASS_HIDES</Description>
             <DefaultUnit>UNIT_HIDES</DefaultUnit>
+        </UnitClassInfo>		
+        <UnitClassInfo>
+            <Type>UNITCLASS_DOWNS</Type>
+            <Description>TXT_KEY_UNITCLASS_DOWNS</Description>
+            <DefaultUnit>UNIT_DOWNS</DefaultUnit>
         </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_WILD_FEATHERS</Type>
+            <Description>TXT_KEY_UNITCLASS_WILD_FEATHERS</Description>
+            <DefaultUnit>UNIT_WILD_FEATHERS</DefaultUnit>
+        </UnitClassInfo>			
         <UnitClassInfo>
             <Type>UNITCLASS_FUR</Type>
             <Description>TXT_KEY_UNITCLASS_FUR</Description>
@@ -707,6 +727,11 @@
             <DefaultUnit>UNIT_SUGAR</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_FRUITS</Type>
+            <Description>TXT_KEY_UNITCLASS_FRUITS</Description>
+            <DefaultUnit>UNIT_FRUITS</DefaultUnit>
+        </UnitClassInfo>		
+        <UnitClassInfo>
             <Type>UNITCLASS_GRAPES</Type>
             <Description>TXT_KEY_UNITCLASS_GRAPES</Description>
             <DefaultUnit>UNIT_GRAPES</DefaultUnit>
@@ -721,6 +746,11 @@
             <Description>TXT_KEY_UNITCLASS_HEMP</Description>
             <DefaultUnit>UNIT_HEMP</DefaultUnit>
         </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_FLAX</Type>
+            <Description>TXT_KEY_UNITCLASS_FLAX</Description>
+            <DefaultUnit>UNIT_FLAX</DefaultUnit>
+        </UnitClassInfo>		
         <UnitClassInfo>
             <Type>UNITCLASS_WHALE_BLUBBER</Type>
             <Description>TXT_KEY_UNITCLASS_WHALE_BLUBBER</Description>
@@ -770,7 +800,17 @@
             <Type>UNITCLASS_COLOURED_CLOTH</Type>
             <Description>TXT_KEY_UNITCLASS_COLOURED_CLOTH</Description>
             <DefaultUnit>UNIT_COLOURED_CLOTH</DefaultUnit>
+        </UnitClassInfo>	
+        <UnitClassInfo>
+            <Type>UNITCLASS_GOAT_HIDE_BOOTS</Type>
+            <Description>TXT_KEY_UNITCLASS_GOAT_HIDE_BOOTS</Description>
+            <DefaultUnit>UNIT_GOAT_HIDE_BOOTS</DefaultUnit>
         </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_PIG_LEATHER</Type>
+            <Description>TXT_KEY_UNITCLASS_PIG_LEATHER</Description>
+            <DefaultUnit>UNIT_PIG_LEATHER</DefaultUnit>
+        </UnitClassInfo>		
         <UnitClassInfo>
             <Type>UNITCLASS_LEATHER</Type>
             <Description>TXT_KEY_UNITCLASS_LEATHER</Description>
@@ -795,7 +835,12 @@
             <Type>UNITCLASS_RUM</Type>
             <Description>TXT_KEY_UNITCLASS_RUM</Description>
             <DefaultUnit>UNIT_RUM</DefaultUnit>
-        </UnitClassInfo>
+        </UnitClassInfo>	
+        <UnitClassInfo>
+            <Type>UNITCLASS_HOOCH</Type>
+            <Description>TXT_KEY_UNITCLASS_HOOCH</Description>
+            <DefaultUnit>UNIT_HOOCH</DefaultUnit>
+        </UnitClassInfo>		
         <UnitClassInfo>
             <Type>UNITCLASS_WINE</Type>
             <Description>TXT_KEY_UNITCLASS_WINE</Description>
@@ -827,6 +872,11 @@
             <DefaultUnit>UNIT_FURNITURE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_PADDED_FURNITURE</Type>
+            <Description>TXT_KEY_UNITCLASS_PADDED_FURNITURE</Description>
+            <DefaultUnit>UNIT_PADDED_FURNITURE</DefaultUnit>
+        </UnitClassInfo>		
+        <UnitClassInfo>
             <Type>UNITCLASS_TOOLS</Type>
             <Description>TXT_KEY_UNITCLASS_TOOLS</Description>
             <DefaultUnit>UNIT_TOOLS</DefaultUnit>
@@ -850,12 +900,32 @@
             <Type>UNITCLASS_SHEEP</Type>
             <Description>TXT_KEY_UNITCLASS_SHEEP</Description>
             <DefaultUnit>UNIT_SHEEP</DefaultUnit>
+        </UnitClassInfo>	
+        <UnitClassInfo>
+            <Type>UNITCLASS_GOATS</Type>
+            <Description>TXT_KEY_UNITCLASS_GOATS</Description>
+            <DefaultUnit>UNIT_GOATS</DefaultUnit>
         </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_PIGS</Type>
+            <Description>TXT_KEY_UNITCLASS_PIGS</Description>
+            <DefaultUnit>UNIT_PIGS</DefaultUnit>
+        </UnitClassInfo>		
         <UnitClassInfo>
             <Type>UNITCLASS_CATTLE</Type>
             <Description>TXT_KEY_UNITCLASS_CATTLE</Description>
             <DefaultUnit>UNIT_CATTLE</DefaultUnit>
+        </UnitClassInfo>	
+        <UnitClassInfo>
+            <Type>UNITCLASS_CHICKEN</Type>
+            <Description>TXT_KEY_UNITCLASS_CHICKEN</Description>
+            <DefaultUnit>UNIT_CHICKEN</DefaultUnit>
         </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_GEESE</Type>
+            <Description>TXT_KEY_UNITCLASS_GEESE</Description>
+            <DefaultUnit>UNIT_GEESE</DefaultUnit>
+        </UnitClassInfo>			
         <UnitClassInfo>
             <Type>UNITCLASS_HORSES</Type>
             <Description>TXT_KEY_UNITCLASS_HORSES</Description>

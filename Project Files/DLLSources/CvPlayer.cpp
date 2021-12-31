@@ -15263,151 +15263,187 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 	if (iPrice < iOldPrice)
 	{
 		switch (eYield)
-							{
-							case YIELD_ROPE:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_HEMP) <= price_diff)
-								{
-									eYield = YIELD_HEMP;
-									iPrice = getYieldBuyPrice(YIELD_HEMP) - 1;
-								}
-								break;
-							case YIELD_SAILCLOTH:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_HEMP) <= price_diff)
-								{
-									eYield = YIELD_HEMP;
-									iPrice = getYieldBuyPrice(YIELD_HEMP) - 1;
-								}
-								break;
-							case YIELD_GOLD:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_SILVER) <= price_diff)
-								{
-									eYield = YIELD_SILVER;
-									iPrice = getYieldBuyPrice(YIELD_SILVER) - 1;
-								}
-								break;
-							case YIELD_COCOA:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_COCOA_FRUITS) <= price_diff)
-								{
-									eYield = YIELD_COCOA_FRUITS;
-									iPrice = getYieldBuyPrice(YIELD_COCOA_FRUITS) - 1;
-								}
-								break;
-							case YIELD_COFFEE:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_COFFEE_BERRIES) <= price_diff)
-								{
-									eYield = YIELD_COFFEE_BERRIES;
-									iPrice = getYieldBuyPrice(YIELD_COFFEE_BERRIES) - 1;
-								}
-								break;
-							case YIELD_CIGARS:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_TOBACCO) <= price_diff)
-								{
-									eYield = YIELD_TOBACCO;
-									iPrice = getYieldBuyPrice(YIELD_TOBACCO) - 1;
-								}
-								break;
-							case YIELD_WOOL_CLOTH:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_WOOL) <= price_diff)
-								{
-									eYield = YIELD_WOOL;
-									iPrice = getYieldBuyPrice(YIELD_WOOL) - 1;
-								}
-								break;
-							case YIELD_CLOTH:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_COTTON) <= price_diff)
-								{
-									eYield = YIELD_COTTON;
-									iPrice = getYieldBuyPrice(YIELD_COTTON) - 1;
-								}
-								break;
-							case YIELD_COLOURED_CLOTH:
-								if (getYieldBuyPrice(eYield) - (getYieldBuyPrice(YIELD_INDIGO) + getYieldBuyPrice(YIELD_CLOTH)) <= price_diff)
-								{
-									if (getYieldBuyPrice(YIELD_CLOTH) - getYieldBuyPrice(YIELD_INDIGO) <= price_diff)
-									{
-										eYield = YIELD_INDIGO;
-										iPrice = getYieldBuyPrice(YIELD_INDIGO) - 1;
-									}
-									else
-									{
-										eYield = YIELD_CLOTH;
-										iPrice = getYieldBuyPrice(YIELD_CLOTH) - 1;
-									}
-								}
-								break;
-							case YIELD_LEATHER:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_HIDES) <= price_diff)
-								{
-									eYield = YIELD_HIDES;
-									iPrice = getYieldBuyPrice(YIELD_HIDES) - 1;
-								}
-								break;
-							case YIELD_COATS:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_FUR) <= price_diff)
-								{
-									eYield = YIELD_FUR;
-									iPrice = getYieldBuyPrice(YIELD_FUR) - 1;
-								}
-								break;
-							case YIELD_PREMIUM_COATS:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_PREMIUM_FUR) <= price_diff)
-								{
-									eYield = YIELD_PREMIUM_FUR;
-									iPrice = getYieldBuyPrice(YIELD_PREMIUM_FUR) - 1;
-								}
-								break;
-							case YIELD_SALT:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_RAW_SALT) <= price_diff)
-								{
-									eYield = YIELD_RAW_SALT;
-									iPrice = getYieldBuyPrice(YIELD_RAW_SALT) - 1;
-								}
-								break;
-							case YIELD_SPICES:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_RED_PEPPER) <= price_diff)
-								{
-									eYield = YIELD_RED_PEPPER;
-									iPrice = getYieldBuyPrice(YIELD_RED_PEPPER) - 1;
-								}
-								break;	
-							case YIELD_BEER:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_BARLEY) <= price_diff)
-								{
-									eYield = YIELD_BARLEY;
-									iPrice = getYieldBuyPrice(YIELD_BARLEY) - 1;
-								}
-								break;
-							case YIELD_RUM:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_SUGAR) <= price_diff)
-								{
-									eYield = YIELD_SUGAR;
-									iPrice = getYieldBuyPrice(YIELD_SUGAR) - 1;
-								}
-								break;
-							case YIELD_WINE:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_GRAPES) <= price_diff)
-								{
-									eYield = YIELD_GRAPES;
-									iPrice = getYieldBuyPrice(YIELD_GRAPES) - 1;
-								}
-								break;
-							case YIELD_WHALE_OIL:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_WHALE_BLUBBER) <= price_diff)
-								{
-									eYield = YIELD_WHALE_BLUBBER;
-									iPrice = getYieldBuyPrice(YIELD_WHALE_BLUBBER) - 1;
-								}
-								break;
-							case YIELD_FURNITURE:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_VALUABLE_WOOD) <= price_diff)
-								{
-									eYield = YIELD_VALUABLE_WOOD;
-									iPrice = getYieldBuyPrice(YIELD_VALUABLE_WOOD) - 1;
-								}
-								break;
-							default:
-								break;
-							}
+		{
+			case YIELD_ROPE:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_HEMP) <= price_diff)
+				{
+					eYield = YIELD_HEMP;
+					iPrice = getYieldBuyPrice(YIELD_HEMP) - 1;
+				}
+				break;
+			case YIELD_SAILCLOTH:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_FLAX) <= price_diff)
+				{
+					eYield = YIELD_FLAX;
+					iPrice = getYieldBuyPrice(YIELD_FLAX) - 1;
+				}
+				break;
+			case YIELD_GOLD:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_SILVER) <= price_diff)
+				{
+					eYield = YIELD_SILVER;
+					iPrice = getYieldBuyPrice(YIELD_SILVER) - 1;
+				}
+				break;
+			case YIELD_COCOA:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_COCOA_FRUITS) <= price_diff)
+				{
+					eYield = YIELD_COCOA_FRUITS;
+					iPrice = getYieldBuyPrice(YIELD_COCOA_FRUITS) - 1;
+				}
+				break;
+			case YIELD_COFFEE:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_COFFEE_BERRIES) <= price_diff)
+				{
+					eYield = YIELD_COFFEE_BERRIES;
+					iPrice = getYieldBuyPrice(YIELD_COFFEE_BERRIES) - 1;
+				}
+				break;
+			case YIELD_CIGARS:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_TOBACCO) <= price_diff)
+				{
+					eYield = YIELD_TOBACCO;
+					iPrice = getYieldBuyPrice(YIELD_TOBACCO) - 1;
+				}
+				break;
+			case YIELD_WOOL_CLOTH:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_WOOL) <= price_diff)
+				{
+					eYield = YIELD_WOOL;
+					iPrice = getYieldBuyPrice(YIELD_WOOL) - 1;
+				}
+				break;
+			case YIELD_CLOTH:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_COTTON) <= price_diff)
+				{
+					eYield = YIELD_COTTON;
+					iPrice = getYieldBuyPrice(YIELD_COTTON) - 1;
+				}
+				break;
+			case YIELD_COLOURED_CLOTH:
+				if (getYieldBuyPrice(eYield) - (getYieldBuyPrice(YIELD_INDIGO) + getYieldBuyPrice(YIELD_CLOTH)) <= price_diff)
+				{
+					if (getYieldBuyPrice(YIELD_CLOTH) - getYieldBuyPrice(YIELD_INDIGO) <= price_diff)
+					{
+						eYield = YIELD_INDIGO;
+						iPrice = getYieldBuyPrice(YIELD_INDIGO) - 1;
+					}
+					else
+					{
+						eYield = YIELD_CLOTH;
+						iPrice = getYieldBuyPrice(YIELD_CLOTH) - 1;
+					}
+				}
+				break;
+			case YIELD_GOAT_HIDE_BOOTS:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_GOAT_HIDES) <= price_diff)
+				{
+					eYield = YIELD_GOAT_HIDES;
+					iPrice = getYieldBuyPrice(YIELD_GOAT_HIDES) - 1;
+				}
+				break;
+			case YIELD_PIG_LEATHER:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_PIG_SKIN) <= price_diff)
+				{
+					eYield = YIELD_PIG_SKIN;
+					iPrice = getYieldBuyPrice(YIELD_PIG_SKIN) - 1;
+				}
+				break;
+			case YIELD_LEATHER:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_HIDES) <= price_diff)
+				{
+					eYield = YIELD_HIDES;
+					iPrice = getYieldBuyPrice(YIELD_HIDES) - 1;
+				}
+				break;
+			case YIELD_COATS:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_FUR) <= price_diff)
+				{
+					eYield = YIELD_FUR;
+					iPrice = getYieldBuyPrice(YIELD_FUR) - 1;
+				}
+				break;
+			case YIELD_PREMIUM_COATS:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_PREMIUM_FUR) <= price_diff)
+				{
+					eYield = YIELD_PREMIUM_FUR;
+					iPrice = getYieldBuyPrice(YIELD_PREMIUM_FUR) - 1;
+				}
+				break;
+			case YIELD_SALT:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_RAW_SALT) <= price_diff)
+				{
+					eYield = YIELD_RAW_SALT;
+					iPrice = getYieldBuyPrice(YIELD_RAW_SALT) - 1;
+				}
+				break;
+			case YIELD_SPICES:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_RED_PEPPER) <= price_diff)
+				{
+					eYield = YIELD_RED_PEPPER;
+					iPrice = getYieldBuyPrice(YIELD_RED_PEPPER) - 1;
+				}
+				break;	
+			case YIELD_BEER:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_BARLEY) <= price_diff)
+				{
+					eYield = YIELD_BARLEY;
+					iPrice = getYieldBuyPrice(YIELD_BARLEY) - 1;
+				}
+				break;
+			case YIELD_RUM:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_SUGAR) <= price_diff)
+				{
+					eYield = YIELD_SUGAR;
+					iPrice = getYieldBuyPrice(YIELD_SUGAR) - 1;
+				}
+				break;
+			case YIELD_HOOCH:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_FRUITS) <= price_diff)
+				{
+					eYield = YIELD_FRUITS;
+					iPrice = getYieldBuyPrice(YIELD_FRUITS) - 1;
+				}
+				break;
+			case YIELD_WINE:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_GRAPES) <= price_diff)
+				{
+					eYield = YIELD_GRAPES;
+					iPrice = getYieldBuyPrice(YIELD_GRAPES) - 1;
+				}
+				break;
+			case YIELD_WHALE_OIL:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_WHALE_BLUBBER) <= price_diff)
+				{
+					eYield = YIELD_WHALE_BLUBBER;
+					iPrice = getYieldBuyPrice(YIELD_WHALE_BLUBBER) - 1;
+				}
+				break;
+			case YIELD_FURNITURE:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_VALUABLE_WOOD) <= price_diff)
+				{
+					eYield = YIELD_VALUABLE_WOOD;
+					iPrice = getYieldBuyPrice(YIELD_VALUABLE_WOOD) - 1;
+				}
+				break;
+			case YIELD_PADDED_FURNITURE:
+				if (getYieldBuyPrice(eYield) - (getYieldBuyPrice(YIELD_VALUABLE_WOOD) + getYieldBuyPrice(YIELD_DOWNS)) <= price_diff)
+				{
+					if (getYieldBuyPrice(YIELD_VALUABLE_WOOD) > getYieldBuyPrice(YIELD_DOWNS))
+					{
+						eYield = YIELD_INDIGO;
+						iPrice = getYieldBuyPrice(YIELD_VALUABLE_WOOD) - 1;
+					}
+					else
+					{
+						eYield = YIELD_CLOTH;
+						iPrice = getYieldBuyPrice(YIELD_DOWNS) - 1;
+					}
+				}
+				break;
+			default:
+				break;
+		}
 	}
 
 	//Never let price fall below Minimum
@@ -15788,151 +15824,187 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 	if (iPrice < iOldPrice)
 	{
 		switch (eYield)
-							{
-							case YIELD_ROPE:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_HEMP) <= price_diff)
-								{
-									eYield = YIELD_HEMP;
-									iPrice = getYieldAfricaBuyPrice(YIELD_HEMP) - 1;
-								}
-								break;
-							case YIELD_SAILCLOTH:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_HEMP) <= price_diff)
-								{
-									eYield = YIELD_HEMP;
-									iPrice = getYieldAfricaBuyPrice(YIELD_HEMP) - 1;
-								}
-								break;
-							case YIELD_GOLD:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_SILVER) <= price_diff)
-								{
-									eYield = YIELD_SILVER;
-									iPrice = getYieldAfricaBuyPrice(YIELD_SILVER) - 1;
-								}
-								break;
-							case YIELD_COCOA:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_COCOA_FRUITS) <= price_diff)
-								{
-									eYield = YIELD_COCOA_FRUITS;
-									iPrice = getYieldAfricaBuyPrice(YIELD_COCOA_FRUITS) - 1;
-								}
-								break;
-							case YIELD_COFFEE:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_COFFEE_BERRIES) <= price_diff)
-								{
-									eYield = YIELD_COFFEE_BERRIES;
-									iPrice = getYieldAfricaBuyPrice(YIELD_COFFEE_BERRIES) - 1;
-								}
-								break;
-							case YIELD_CIGARS:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_TOBACCO) <= price_diff)
-								{
-									eYield = YIELD_TOBACCO;
-									iPrice = getYieldAfricaBuyPrice(YIELD_TOBACCO) - 1;
-								}
-								break;
-							case YIELD_WOOL_CLOTH:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_WOOL) <= price_diff)
-								{
-									eYield = YIELD_WOOL;
-									iPrice = getYieldAfricaBuyPrice(YIELD_WOOL) - 1;
-								}
-								break;
-							case YIELD_CLOTH:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_COTTON) <= price_diff)
-								{
-									eYield = YIELD_COTTON;
-									iPrice = getYieldAfricaBuyPrice(YIELD_COTTON) - 1;
-								}
-								break;
-							case YIELD_COLOURED_CLOTH:
-								if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_INDIGO) + getYieldAfricaBuyPrice(YIELD_CLOTH)) <= price_diff)
-								{
-									if (getYieldAfricaBuyPrice(YIELD_CLOTH) - getYieldAfricaBuyPrice(YIELD_INDIGO) <= price_diff)
-									{
-										eYield = YIELD_INDIGO;
-										iPrice = getYieldAfricaBuyPrice(YIELD_INDIGO) - 1;
-									}
-									else
-									{
-										eYield = YIELD_CLOTH;
-										iPrice = getYieldAfricaBuyPrice(YIELD_CLOTH) - 1;
-									}
-								}
-								break;
-							case YIELD_LEATHER:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_HIDES) <= price_diff)
-								{
-									eYield = YIELD_HIDES;
-									iPrice = getYieldAfricaBuyPrice(YIELD_HIDES) - 1;
-								}
-								break;
-							case YIELD_COATS:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_FUR) <= price_diff)
-								{
-									eYield = YIELD_FUR;
-									iPrice = getYieldAfricaBuyPrice(YIELD_FUR) - 1;
-								}
-								break;
-							case YIELD_PREMIUM_COATS:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_PREMIUM_FUR) <= price_diff)
-								{
-									eYield = YIELD_PREMIUM_FUR;
-									iPrice = getYieldAfricaBuyPrice(YIELD_PREMIUM_FUR) - 1;
-								}
-								break;
-							case YIELD_SALT:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_RAW_SALT) <= price_diff)
-								{
-									eYield = YIELD_RAW_SALT;
-									iPrice = getYieldAfricaBuyPrice(YIELD_RAW_SALT) - 1;
-								}
-								break;
-							case YIELD_SPICES:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_RED_PEPPER) <= price_diff)
-								{
-									eYield = YIELD_RED_PEPPER;
-									iPrice = getYieldAfricaBuyPrice(YIELD_RED_PEPPER) - 1;
-								}
-								break;	
-							case YIELD_BEER:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_BARLEY) <= price_diff)
-								{
-									eYield = YIELD_BARLEY;
-									iPrice = getYieldAfricaBuyPrice(YIELD_BARLEY) - 1;
-								}
-								break;
-							case YIELD_RUM:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_SUGAR) <= price_diff)
-								{
-									eYield = YIELD_SUGAR;
-									iPrice = getYieldAfricaBuyPrice(YIELD_SUGAR) - 1;
-								}
-								break;
-							case YIELD_WINE:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_GRAPES) <= price_diff)
-								{
-									eYield = YIELD_GRAPES;
-									iPrice = getYieldAfricaBuyPrice(YIELD_GRAPES) - 1;
-								}
-								break;
-							case YIELD_WHALE_OIL:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_WHALE_BLUBBER) <= price_diff)
-								{
-									eYield = YIELD_WHALE_BLUBBER;
-									iPrice = getYieldAfricaBuyPrice(YIELD_WHALE_BLUBBER) - 1;
-								}
-								break;
-							case YIELD_FURNITURE:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) <= price_diff)
-								{
-									eYield = YIELD_VALUABLE_WOOD;
-									iPrice = getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) - 1;
-								}
-								break;
-							default:
-								break;
-							}
+		{
+			case YIELD_ROPE:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_HEMP) <= price_diff)
+				{
+					eYield = YIELD_HEMP;
+					iPrice = getYieldAfricaBuyPrice(YIELD_HEMP) - 1;
+				}
+				break;
+			case YIELD_SAILCLOTH:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_FLAX) <= price_diff)
+				{
+					eYield = YIELD_FLAX;
+					iPrice = getYieldAfricaBuyPrice(YIELD_FLAX) - 1;
+				}
+				break;
+			case YIELD_GOLD:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_SILVER) <= price_diff)
+				{
+					eYield = YIELD_SILVER;
+					iPrice = getYieldAfricaBuyPrice(YIELD_SILVER) - 1;
+				}
+				break;
+			case YIELD_COCOA:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_COCOA_FRUITS) <= price_diff)
+				{
+					eYield = YIELD_COCOA_FRUITS;
+					iPrice = getYieldAfricaBuyPrice(YIELD_COCOA_FRUITS) - 1;
+				}
+				break;
+			case YIELD_COFFEE:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_COFFEE_BERRIES) <= price_diff)
+				{
+					eYield = YIELD_COFFEE_BERRIES;
+					iPrice = getYieldAfricaBuyPrice(YIELD_COFFEE_BERRIES) - 1;
+				}
+				break;
+			case YIELD_CIGARS:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_TOBACCO) <= price_diff)
+				{
+					eYield = YIELD_TOBACCO;
+					iPrice = getYieldAfricaBuyPrice(YIELD_TOBACCO) - 1;
+				}
+				break;
+			case YIELD_WOOL_CLOTH:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_WOOL) <= price_diff)
+				{
+					eYield = YIELD_WOOL;
+					iPrice = getYieldAfricaBuyPrice(YIELD_WOOL) - 1;
+				}
+				break;
+			case YIELD_CLOTH:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_COTTON) <= price_diff)
+				{
+					eYield = YIELD_COTTON;
+					iPrice = getYieldAfricaBuyPrice(YIELD_COTTON) - 1;
+				}
+				break;
+			case YIELD_COLOURED_CLOTH:
+				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_INDIGO) + getYieldAfricaBuyPrice(YIELD_CLOTH)) <= price_diff)
+				{
+					if (getYieldAfricaBuyPrice(YIELD_CLOTH) - getYieldAfricaBuyPrice(YIELD_INDIGO) <= price_diff)
+					{
+						eYield = YIELD_INDIGO;
+						iPrice = getYieldAfricaBuyPrice(YIELD_INDIGO) - 1;
+					}
+					else
+					{
+						eYield = YIELD_CLOTH;
+						iPrice = getYieldAfricaBuyPrice(YIELD_CLOTH) - 1;
+					}
+				}
+				break;
+			case YIELD_GOAT_HIDE_BOOTS:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_GOAT_HIDES) <= price_diff)
+				{
+					eYield = YIELD_GOAT_HIDES;
+					iPrice = getYieldAfricaBuyPrice(YIELD_GOAT_HIDES) - 1;
+				}
+				break;
+			case YIELD_PIG_LEATHER:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_PIG_SKIN) <= price_diff)
+				{
+					eYield = YIELD_PIG_SKIN;
+					iPrice = getYieldAfricaBuyPrice(YIELD_PIG_SKIN) - 1;
+				}
+				break;
+			case YIELD_LEATHER:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_HIDES) <= price_diff)
+				{
+					eYield = YIELD_HIDES;
+					iPrice = getYieldAfricaBuyPrice(YIELD_HIDES) - 1;
+				}
+				break;
+			case YIELD_COATS:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_FUR) <= price_diff)
+				{
+					eYield = YIELD_FUR;
+					iPrice = getYieldAfricaBuyPrice(YIELD_FUR) - 1;
+				}
+				break;
+			case YIELD_PREMIUM_COATS:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_PREMIUM_FUR) <= price_diff)
+				{
+					eYield = YIELD_PREMIUM_FUR;
+					iPrice = getYieldAfricaBuyPrice(YIELD_PREMIUM_FUR) - 1;
+				}
+				break;
+			case YIELD_SALT:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_RAW_SALT) <= price_diff)
+				{
+					eYield = YIELD_RAW_SALT;
+					iPrice = getYieldAfricaBuyPrice(YIELD_RAW_SALT) - 1;
+				}
+				break;
+			case YIELD_SPICES:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_RED_PEPPER) <= price_diff)
+				{
+					eYield = YIELD_RED_PEPPER;
+					iPrice = getYieldAfricaBuyPrice(YIELD_RED_PEPPER) - 1;
+				}
+				break;	
+			case YIELD_BEER:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_BARLEY) <= price_diff)
+				{
+					eYield = YIELD_BARLEY;
+					iPrice = getYieldAfricaBuyPrice(YIELD_BARLEY) - 1;
+				}
+				break;
+			case YIELD_RUM:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_SUGAR) <= price_diff)
+				{
+					eYield = YIELD_SUGAR;
+					iPrice = getYieldAfricaBuyPrice(YIELD_SUGAR) - 1;
+				}
+				break;
+			case YIELD_HOOCH:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_FRUITS) <= price_diff)
+				{
+					eYield = YIELD_FRUITS;
+					iPrice = getYieldAfricaBuyPrice(YIELD_FRUITS) - 1;
+				}
+				break;
+			case YIELD_WINE:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_GRAPES) <= price_diff)
+				{
+					eYield = YIELD_GRAPES;
+					iPrice = getYieldAfricaBuyPrice(YIELD_GRAPES) - 1;
+				}
+				break;
+			case YIELD_WHALE_OIL:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_WHALE_BLUBBER) <= price_diff)
+				{
+					eYield = YIELD_WHALE_BLUBBER;
+					iPrice = getYieldAfricaBuyPrice(YIELD_WHALE_BLUBBER) - 1;
+				}
+				break;
+			case YIELD_FURNITURE:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) <= price_diff)
+				{
+					eYield = YIELD_VALUABLE_WOOD;
+					iPrice = getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) - 1;
+				}
+				break;
+			case YIELD_PADDED_FURNITURE:
+				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) + getYieldAfricaBuyPrice(YIELD_DOWNS)) <= price_diff)
+				{
+					if (getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) > getYieldAfricaBuyPrice(YIELD_DOWNS))
+					{
+						eYield = YIELD_INDIGO;
+						iPrice = getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) - 1;
+					}
+					else
+					{
+						eYield = YIELD_CLOTH;
+						iPrice = getYieldAfricaBuyPrice(YIELD_DOWNS) - 1;
+					}
+				}
+				break;
+			default:
+				break;
+		}
 	}
 
 	//Never let price fall below Minimum
@@ -16254,151 +16326,187 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 	if (iPrice < iOldPrice)
 	{
 		switch (eYield)
-							{
-							case YIELD_ROPE:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_HEMP) <= price_diff)
-								{
-									eYield = YIELD_HEMP;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_HEMP) - 1;
-								}
-								break;
-							case YIELD_SAILCLOTH:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_HEMP) <= price_diff)
-								{
-									eYield = YIELD_HEMP;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_HEMP) - 1;
-								}
-								break;
-							case YIELD_GOLD:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_SILVER) <= price_diff)
-								{
-									eYield = YIELD_SILVER;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_SILVER) - 1;
-								}
-								break;
-							case YIELD_COCOA:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_COCOA_FRUITS) <= price_diff)
-								{
-									eYield = YIELD_COCOA_FRUITS;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_COCOA_FRUITS) - 1;
-								}
-								break;
-							case YIELD_COFFEE:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_COFFEE_BERRIES) <= price_diff)
-								{
-									eYield = YIELD_COFFEE_BERRIES;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_COFFEE_BERRIES) - 1;
-								}
-								break;
-							case YIELD_CIGARS:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_TOBACCO) <= price_diff)
-								{
-									eYield = YIELD_TOBACCO;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_TOBACCO) - 1;
-								}
-								break;
-							case YIELD_WOOL_CLOTH:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_WOOL) <= price_diff)
-								{
-									eYield = YIELD_WOOL;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_WOOL) - 1;
-								}
-								break;
-							case YIELD_CLOTH:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_COTTON) <= price_diff)
-								{
-									eYield = YIELD_COTTON;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_COTTON) - 1;
-								}
-								break;
-							case YIELD_COLOURED_CLOTH:
-								if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_INDIGO) + getYieldPortRoyalBuyPrice(YIELD_CLOTH)) <= price_diff)
-								{
-									if (getYieldPortRoyalBuyPrice(YIELD_CLOTH) - getYieldPortRoyalBuyPrice(YIELD_INDIGO) <= price_diff)
-									{
-										eYield = YIELD_INDIGO;
-										iPrice = getYieldPortRoyalBuyPrice(YIELD_INDIGO) - 1;
-									}
-									else
-									{
-										eYield = YIELD_CLOTH;
-										iPrice = getYieldPortRoyalBuyPrice(YIELD_CLOTH) - 1;
-									}
-								}
-								break;
-							case YIELD_LEATHER:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_HIDES) <= price_diff)
-								{
-									eYield = YIELD_HIDES;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_HIDES) - 1;
-								}
-								break;
-							case YIELD_COATS:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_FUR) <= price_diff)
-								{
-									eYield = YIELD_FUR;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_FUR) - 1;
-								}
-								break;
-							case YIELD_PREMIUM_COATS:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_PREMIUM_FUR) <= price_diff)
-								{
-									eYield = YIELD_PREMIUM_FUR;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_PREMIUM_FUR) - 1;
-								}
-								break;
-							case YIELD_SALT:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_RAW_SALT) <= price_diff)
-								{
-									eYield = YIELD_RAW_SALT;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_RAW_SALT) - 1;
-								}
-								break;
-							case YIELD_SPICES:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_RED_PEPPER) <= price_diff)
-								{
-									eYield = YIELD_RED_PEPPER;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_RED_PEPPER) - 1;
-								}
-								break;
-							case YIELD_BEER:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_BARLEY) <= price_diff)
-								{
-									eYield = YIELD_BARLEY;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_BARLEY) - 1;
-								}
-								break;
-							case YIELD_RUM:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_SUGAR) <= price_diff)
-								{
-									eYield = YIELD_SUGAR;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_SUGAR) - 1;
-								}
-								break;
-							case YIELD_WINE:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_GRAPES) <= price_diff)
-								{
-									eYield = YIELD_GRAPES;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_GRAPES) - 1;
-								}
-								break;
-							case YIELD_WHALE_OIL:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_WHALE_BLUBBER) <= price_diff)
-								{
-									eYield = YIELD_WHALE_BLUBBER;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_WHALE_BLUBBER) - 1;
-								}
-								break;
-							case YIELD_FURNITURE:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) <= price_diff)
-								{
-									eYield = YIELD_VALUABLE_WOOD;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) - 1;
-								}
-								break;
-							default:
-								break;
-							}
+		{
+			case YIELD_ROPE:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_HEMP) <= price_diff)
+				{
+					eYield = YIELD_HEMP;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_HEMP) - 1;
+				}
+				break;
+			case YIELD_SAILCLOTH:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_FLAX) <= price_diff)
+				{
+					eYield = YIELD_FLAX;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_FLAX) - 1;
+				}
+				break;
+			case YIELD_GOLD:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_SILVER) <= price_diff)
+				{
+					eYield = YIELD_SILVER;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_SILVER) - 1;
+				}
+				break;
+			case YIELD_COCOA:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_COCOA_FRUITS) <= price_diff)
+				{
+					eYield = YIELD_COCOA_FRUITS;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_COCOA_FRUITS) - 1;
+				}
+				break;
+			case YIELD_COFFEE:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_COFFEE_BERRIES) <= price_diff)
+				{
+					eYield = YIELD_COFFEE_BERRIES;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_COFFEE_BERRIES) - 1;
+				}
+				break;
+			case YIELD_CIGARS:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_TOBACCO) <= price_diff)
+				{
+					eYield = YIELD_TOBACCO;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_TOBACCO) - 1;
+				}
+				break;
+			case YIELD_WOOL_CLOTH:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_WOOL) <= price_diff)
+				{
+					eYield = YIELD_WOOL;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_WOOL) - 1;
+				}
+				break;
+			case YIELD_CLOTH:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_COTTON) <= price_diff)
+				{
+					eYield = YIELD_COTTON;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_COTTON) - 1;
+				}
+				break;
+			case YIELD_COLOURED_CLOTH:
+				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_INDIGO) + getYieldPortRoyalBuyPrice(YIELD_CLOTH)) <= price_diff)
+				{
+					if (getYieldPortRoyalBuyPrice(YIELD_CLOTH) - getYieldPortRoyalBuyPrice(YIELD_INDIGO) <= price_diff)
+					{
+						eYield = YIELD_INDIGO;
+						iPrice = getYieldPortRoyalBuyPrice(YIELD_INDIGO) - 1;
+					}
+					else
+					{
+						eYield = YIELD_CLOTH;
+						iPrice = getYieldPortRoyalBuyPrice(YIELD_CLOTH) - 1;
+					}
+				}
+				break;
+			case YIELD_GOAT_HIDE_BOOTS:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_GOAT_HIDES) <= price_diff)
+				{
+					eYield = YIELD_GOAT_HIDES;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_GOAT_HIDES) - 1;
+				}
+				break;
+			case YIELD_PIG_LEATHER:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_PIG_SKIN) <= price_diff)
+				{
+					eYield = YIELD_PIG_SKIN;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_PIG_SKIN) - 1;
+				}
+				break;
+			case YIELD_LEATHER:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_HIDES) <= price_diff)
+				{
+					eYield = YIELD_HIDES;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_HIDES) - 1;
+				}
+				break;
+			case YIELD_COATS:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_FUR) <= price_diff)
+				{
+					eYield = YIELD_FUR;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_FUR) - 1;
+				}
+				break;
+			case YIELD_PREMIUM_COATS:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_PREMIUM_FUR) <= price_diff)
+				{
+					eYield = YIELD_PREMIUM_FUR;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_PREMIUM_FUR) - 1;
+				}
+				break;
+			case YIELD_SALT:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_RAW_SALT) <= price_diff)
+				{
+					eYield = YIELD_RAW_SALT;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_RAW_SALT) - 1;
+				}
+				break;
+			case YIELD_SPICES:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_RED_PEPPER) <= price_diff)
+				{
+					eYield = YIELD_RED_PEPPER;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_RED_PEPPER) - 1;
+				}
+				break;
+			case YIELD_BEER:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_BARLEY) <= price_diff)
+				{
+					eYield = YIELD_BARLEY;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_BARLEY) - 1;
+				}
+				break;
+			case YIELD_RUM:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_SUGAR) <= price_diff)
+				{
+					eYield = YIELD_SUGAR;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_SUGAR) - 1;
+				}
+				break;
+			case YIELD_HOOCH:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_FRUITS) <= price_diff)
+				{
+					eYield = YIELD_FRUITS;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_FRUITS) - 1;
+				}
+				break;
+			case YIELD_WINE:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_GRAPES) <= price_diff)
+				{
+					eYield = YIELD_GRAPES;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_GRAPES) - 1;
+				}
+				break;
+			case YIELD_WHALE_OIL:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_WHALE_BLUBBER) <= price_diff)
+				{
+					eYield = YIELD_WHALE_BLUBBER;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_WHALE_BLUBBER) - 1;
+				}
+				break;
+			case YIELD_FURNITURE:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) <= price_diff)
+				{
+					eYield = YIELD_VALUABLE_WOOD;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) - 1;
+				}
+				break;
+			case YIELD_PADDED_FURNITURE:
+				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) + getYieldPortRoyalBuyPrice(YIELD_DOWNS)) <= price_diff)
+				{
+					if (getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) > getYieldPortRoyalBuyPrice(YIELD_DOWNS))
+					{
+						eYield = YIELD_INDIGO;
+						iPrice = getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) - 1;
+					}
+					else
+					{
+						eYield = YIELD_CLOTH;
+						iPrice = getYieldPortRoyalBuyPrice(YIELD_DOWNS) - 1;
+					}
+				}
+				break;
+			default:
+				break;
+		}
 	}
 
 	//Never let price fall below Minimum

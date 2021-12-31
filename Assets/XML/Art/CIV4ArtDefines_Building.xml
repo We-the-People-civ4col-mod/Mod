@@ -1615,6 +1615,18 @@
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_BONUS_FLAX</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>1.4</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Flax/wheat.nif</NIF>
+            <KFM/>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
+        </BuildingArtInfo>		
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_INDIGO</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
@@ -1671,6 +1683,18 @@
             <fScale>1.2</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Chickens/Chickens.nif</NIF>
+            <KFM/>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
+        </BuildingArtInfo>
+        <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_BONUS_DOMESTIC_GOOSE</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>2.0</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Goose/Goose_FX.nif</NIF>
             <KFM/>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>

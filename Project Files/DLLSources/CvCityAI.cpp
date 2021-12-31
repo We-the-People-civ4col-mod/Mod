@@ -4502,6 +4502,8 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_WOOL_CLOTH:
 		case YIELD_CLOTH:
 		case YIELD_COLOURED_CLOTH:
+		case YIELD_GOAT_HIDE_BOOTS:
+		case YIELD_PIG_LEATHER:
 		case YIELD_LEATHER:
 		case YIELD_COATS:
 		case YIELD_PREMIUM_COATS:
@@ -4509,31 +4511,42 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_SPICES:
 		case YIELD_BEER:
 		case YIELD_RUM:
+		case YIELD_HOOCH:
 		case YIELD_WINE:
 		case YIELD_WHALE_OIL:
 		case YIELD_FURNITURE:
+		case YIELD_PADDED_FURNITURE:
 			break;
 		// We punish overproduction of input yields 
 		case YIELD_LUMBER:
 		case YIELD_STONE:
 		case YIELD_HEMP:
+		case YIELD_FLAX:
 		case YIELD_ORE:
 		case YIELD_SHEEP:
+		case YIELD_GOATS:
+		case YIELD_PIGS:
 		case YIELD_CATTLE:
+		case YIELD_CHICKEN:
+		case YIELD_GEESE:
 		case YIELD_COCA_LEAVES:
 		case YIELD_COCOA_FRUITS:
 		case YIELD_COFFEE_BERRIES:
 		case YIELD_TOBACCO:
-		case YIELD_WOOL:
 		case YIELD_COTTON:
 		case YIELD_INDIGO:
+		case YIELD_WOOL:
+		case YIELD_GOAT_HIDES:
+		case YIELD_PIG_SKIN:
 		case YIELD_HIDES:
+		case YIELD_DOWNS:
 		case YIELD_FUR:
 		case YIELD_PREMIUM_FUR:
 		case YIELD_RAW_SALT:
 		case YIELD_RED_PEPPER:
 		case YIELD_BARLEY:
 		case YIELD_SUGAR:
+		case YIELD_FRUITS:
 		case YIELD_GRAPES:
 		case YIELD_WHALE_BLUBBER:
 		case YIELD_VALUABLE_WOOD:
@@ -4585,6 +4598,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_BLADES:
 		case YIELD_MUSKETS:
 		// Previous metals are never reduced in value
+		case YIELD_WILD_FEATHERS:
 		case YIELD_SILVER:
 		case YIELD_GOLD:
 		case YIELD_GEMS:
@@ -5459,7 +5473,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			}
 			// R&R, ray, AI builds Improvements wiser - START
 			//else if (eYield != YIELD_FOOD)
-			else if (eYield != YIELD_FOOD && eYield != YIELD_LUMBER && eYield != YIELD_FUR)
+			else if (eYield != YIELD_FOOD && eYield != YIELD_LUMBER && eYield != YIELD_FUR && eYield != YIELD_WILD_FEATHERS)
 			// R&R, ray, AI builds Improvements wiser - END
 			{
 				if (aiCurrentYields[eYield] <= (kOwner.AI_getBestPlotYield(eYield) / 2))
@@ -5574,7 +5588,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 
 					// R&R, ray, AI builds Improvements wiser - START
 					//else if (eYield != YIELD_FOOD)
-					else if (eYield != YIELD_FOOD && eYield != YIELD_LUMBER && eYield != YIELD_FUR)
+					else if (eYield != YIELD_FOOD && eYield != YIELD_LUMBER && eYield != YIELD_FUR && eYield != YIELD_WILD_FEATHERS)
 					// R&R, ray, AI builds Improvements wiser - END
 					{
 						if (aiFinalYields[eYield] <= (kOwner.AI_getBestPlotYield(eYield) / 2))

@@ -392,7 +392,7 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
-            <Type>ART_DEF_BONUS_GOOSE</Type>
+            <Type>ART_DEF_BONUS_CANADA_GOOSE</Type>
             <fScale>2.0</fScale>
             <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Canada_Goose/Goose_FX.nif</NIF>
@@ -755,6 +755,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_FLAX</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Flax/wheat.nif</NIF>
+            <KFM>Art/Terrain/Resources/Flax/wheat.kfm</KFM>
+            <Button>Art/Interface/Buttons/Flax_Button.dds</Button>
+            <FontButtonIndex>95</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>		
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_INDIGO</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
@@ -806,6 +817,17 @@
             <KFM>Art/Terrain/Resources/Sheep_NO_SOUND/Sheep_NO_SOUND.kfm</KFM>
             <Button>Art/interface/buttons/Chicken.dds</Button>
             <FontButtonIndex>16</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_DOMESTIC_GOOSE</Type>
+            <fScale>2.0</fScale>
+            <fInterfaceScale>1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Goose/Goose_FX.nif</NIF>
+            <KFM>Art/Terrain/Resources/Sheep_NO_SOUND/Sheep_NO_SOUND.kfm</KFM>
+            <Button>Art/interface/buttons/Domestic_Goose.dds</Button>
+            <FontButtonIndex>94</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>

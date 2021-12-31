@@ -495,7 +495,7 @@
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seetaucher[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BONUS_GOOSE</Tag>
+        <Tag>TXT_KEY_BONUS_CANADA_GOOSE</Tag>
         <English>Canada Goose</English>
         <German>
             <Text>Kanadagans</Text>
@@ -504,7 +504,7 @@
         </German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BONUS_GOOSE_PEDIA</Tag>
+        <Tag>TXT_KEY_BONUS_CANADA_GOOSE_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]One[COLOR_HIGHLIGHT_TEXT]Canada goose[COLOR_REVERT] is a big meal for a hunting party.  In the north wild game is often very lean. Geese are a good source of fat in temperate or cold climates. Geese are strong fliers. Flocks of geese can be found anywhere on land or water.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The Canada goose is a large aquatic bird. As a black goose it's in a different genera from domestic grey and white geese. Fairly tolerant of cold, as winter comes it migrates south in large V-shaped flocks. It's hunted and is an especially good source of fat. A single cooked goose will provide several bowls of grease. With its wing an adult goose can break a man's arm.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kanadagans[COLOR_REVERT] </German>
     </TEXT>
@@ -619,6 +619,20 @@
         <Tag>TXT_KEY_BONUS_CHICKEN_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Chickens[COLOR_REVERT] can be raised for meat on farms or in the city. Their eggs are a universal protein source. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The chicken is domesticated from red junglefowl originally from Southeastern Asia. There are more chickens in the world than any other bird. Chickens are omnivores. In the wild, they often scratch at the soil to search for seeds, insects and even animals as large as lizards, small snakes or young mice. An unusual variety of chicken that has its origins in South America is the Araucana, bred in southern Chile by the Mapuche people. Araucanas lay blue-green eggs.</English>
         <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hühner[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_DOMESTIC_GOOSE</Tag>
+        <English>Domestic Geese</English>
+        <German>
+            <Text>Hausgänse</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_DOMESTIC_GOOSE_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Domestic Geese[COLOR_REVERT] TODO</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hausgänse[COLOR_REVERT] TODO</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_FISH</Tag>
@@ -835,7 +849,7 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Hanfpflanzen</Text>
+            <Text>Hanf</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
@@ -856,6 +870,20 @@
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Le chanvre, chanvre textile, chanvre industriel ou chanvre agricole est une variété de plante cultivée de la famille des Cannabaceae. C'est une plante annuelle, sélectionnée pour la taille de sa tige et sa faible teneur en THC ou autres cannabinoïdes à partir de l'espèce que les botanistes nomment le Chanvre cultivé (Cannabis sativa L.). Il est parfois appelé localement « chènevis », comme le nom de la graine de chanvre. Bien que désignant la même espèce botanique, le terme chanvre est désormais utilisé de préférence pour désigner la plante industrielle et sa fibre végétale, tandis que Cannabis est le nom scientifique utilisé aussi pour désigner la forme récréative ou médicale.</French>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hanf[COLOR_REVERT] wächst im flachem [LINK=TERRAIN_GRASS]Grasland[\LINK]. Gelegentlich können besonders gute Anbaugebiete für Hanf auch von [LINK=FEATURE_FOREST]Wald[\LINK] oder [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] überwachsen sein.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Hanf war bereits im Mittelalter einer der wichtigsten Rohstoffe, um stabile Stoffe, Seile oder andere Güter herzustellen. Während der Kolonisierung der Neuen Welt fand auch Hanf seinen Weg in die Plantagen der Kolonien. George Washington besass beispielsweise selbst Hanf-Plantagen.</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_FLAX</Tag>
+        <English>Flax plants</English>
+        <German>
+            <Text>Flachs</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_FLAX_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Flax plants[COLOR_REVERT] grow on flat [LINK=TERRAIN_GRASS]grass[\LINK] terrain that is either open or overgrown by [LINK=FEATURE_FOREST]forest[\LINK] or [LINK=FEATURE_LIGHT_FOREST]light forest[\LINK]. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Flax, also known as common flax or linseed, is a flowering plant and cultivated as a food and fiber crop in regions of the world with temperate climates. Textiles made from flax are known in Western countries as linen and are traditionally used for bed sheets, underclothes, and table linen. Its oil is known as linseed oil. In addition to referring to the plant, the word "flax" may refer to the unspun fibers of the flax plant. The plant species is known only as a cultivated plant and appears to have been domesticated just once from the wild species Linum bienne, called pale flax.</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Flachs[COLOR_REVERT] wächst im flachem [LINK=TERRAIN_GRASS]Grasland[\LINK]. Gelegentlich können besonders gute Anbaugebiete für Hanf auch von [LINK=FEATURE_FOREST]Wald[\LINK] oder [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] überwachsen sein.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Gemeiner Lein (Linum usitatissimum), auch Saat-Lein und Flachs genannt, ist eine alte Kulturpflanze, die zur Faser- (Faserlein) und zur Ölgewinnung (Öllein, Leinsamen, Leinöl) angebaut wird. Er ist eine Art aus der Gattung Lein (Linum) in der Familie der Leingewächse (Linaceae) und die einzige Lein-Art, deren Anbau eine wirtschaftliche Bedeutung hat. Es gibt etliche Sorten. In der Praxis wird nach der Hauptverwendung Faserlein und Öllein unterschieden.</German>
+    </TEXT>	
     <TEXT>
         <Tag>TXT_KEY_BONUS_HIGH_SEA_FISH</Tag>
         <English>Cod</English>

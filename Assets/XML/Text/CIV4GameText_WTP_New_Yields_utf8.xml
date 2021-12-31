@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text Infos -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<!-- GOATS -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_GOATS</Tag>
+        <English>Goats</English>
+        <German>
+            <Text>Ziegen</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_GOATS</Tag>
+        <English>Goats</English>
+        <German>
+            <Text>Ziegen</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_GOATS</Tag>
+        <English>Goats</English>
+        <German>
+            <Text>Ziegen</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_GOATS_PEDIA</Tag>
+        <English>[TAB][H1]Goats[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Ziegen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_GOATS_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SHEEP_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>	
+	<!-- PIGS -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_PIGS</Tag>
+        <English>Pigs</English>
+        <German>
+            <Text>Schweine</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_PIGS</Tag>
+        <English>Pigs</English>
+        <German>
+            <Text>Schweine</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PIGS</Tag>
+        <English>Pigs</English>
+        <German>
+            <Text>Schweine</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_PIGS_PEDIA</Tag>
+        <English>[TAB][H1]Pigs[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Schweine[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PIGS_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PIGS_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- CHICKEN -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_CHICKEN</Tag>
+        <English>Chicken</English>
+        <German>
+            <Text>Hühner</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_CHICKEN</Tag>
+        <English>Chicken</English>
+        <German>
+            <Text>Hühner</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CHICKEN</Tag>
+        <English>Chicken</English>
+        <German>
+            <Text>Hühner</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_CHICKEN_PEDIA</Tag>
+        <English>[TAB][H1]Chicken[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Hühner[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CHICKEN_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CHICKEN_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- GEESE -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_GEESE</Tag>
+        <English>Domestic Geese</English>
+        <German>
+            <Text>Hausgänse</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_GEESE</Tag>
+        <English>Domestic Geese</English>
+        <German>
+            <Text>Hausgänse</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_GEESE</Tag>
+        <English>Domestic Geese</English>
+        <German>
+            <Text>Hausgänse</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_GEESE_PEDIA</Tag>
+        <English>[TAB][H1]Domestic Geese[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Hausgänse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_GEESE_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_GEESE_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- GOAT_HIDES -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_GOAT_HIDES</Tag>
+        <English>Goat Hides</English>
+        <German>
+            <Text>Ziegenfelle</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_GOAT_HIDES</Tag>
+        <English>Goat Hides</English>
+        <German>
+            <Text>Ziegenfelle</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_GOAT_HIDES</Tag>
+        <English>Goat Hides</English>
+        <German>
+            <Text>Ziegenfelle</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_GOAT_HIDES_PEDIA</Tag>
+        <English>[TAB][H1]Goat Hides[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Ziegenfelle[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_GOAT_HIDES_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_GOAT_HIDES_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- PIG_SKIN -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_PIG_SKIN</Tag>
+        <English>Pig Skins</English>
+        <German>
+            <Text>Schweinehäute</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_PIG_SKIN</Tag>
+        <English>Pig Skins</English>
+        <German>
+            <Text>Schweinehäute</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PIG_SKIN</Tag>
+        <English>Pig Skins</English>
+        <German>
+            <Text>Schweinehäute</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_PIG_SKIN_PEDIA</Tag>
+        <English>[TAB][H1]Pig Skins[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Schweinehäute[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PIG_SKIN_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PIG_SKIN_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- DOWNS -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_DOWNS</Tag>
+        <English>Downs</English>
+        <German>
+            <Text>Daunen</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_DOWNS</Tag>
+        <English>Downs</English>
+        <German>
+            <Text>Daunen</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_DOWNS</Tag>
+        <English>Downs</English>
+        <German>
+            <Text>Daunen</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_DOWNS_PEDIA</Tag>
+        <English>[TAB][H1]Downs[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Daunen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_DOWNS_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_DOWNS_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- WILD_FEATHERS -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_WILD_FEATHERS</Tag>
+        <English>Wild Bird Feathers</English>
+        <German>
+            <Text>Wildvogelfedern</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_WILD_FEATHERS</Tag>
+        <English>Wildbird Feathers</English>
+        <German>
+            <Text>Wildvogelfedern</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_WILD_FEATHERS</Tag>
+        <English>Wildbird Feathers</English>
+        <German>
+            <Text>Wildvogelfedern</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_WILD_FEATHERS_PEDIA</Tag>
+        <English>[TAB][H1]Wildbird Feathers[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Wildvogelfedern[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_WILD_FEATHERS_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_WILD_FEATHERS_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- GOAT_HIDE_BOOTS -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_GOAT_HIDE_BOOTS</Tag>
+        <English>Goathide Boots</English>
+        <German>
+            <Text>Ziegenlederstiefel</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_GOAT_HIDE_BOOTS</Tag>
+        <English>Goathide Boots</English>
+        <German>
+            <Text>Ziegenlederstiefel</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_GOAT_HIDE_BOOTS</Tag>
+        <English>Goathide Boots</English>
+        <German>
+            <Text>Ziegenlederstiefel</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_GOAT_HIDE_BOOTS_PEDIA</Tag>
+        <English>[TAB][H1]Goathide Boots[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Ziegenlederstiefel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_GOAT_HIDE_BOOTS_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_GOAT_HIDE_BOOTS_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- PIG_LEATHER -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_PIG_LEATHER</Tag>
+        <English>Pigleather Aprons</English>
+        <German>
+            <Text>Schweinelederschürzen</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_PIG_LEATHER</Tag>
+        <English>Pigleather Aprons</English>
+        <German>
+            <Text>Schweinelederschürzen</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PIG_LEATHER</Tag>
+        <English>Pigleather Aprons</English>
+        <German>
+            <Text>Schweinelederschürzen</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_PIG_LEATHER_PEDIA</Tag>
+        <English>[TAB][H1]Pigleather Aprons[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Schweinelederschürzen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PIG_LEATHER_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PIG_LEATHER_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- FRUITS -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_FRUITS</Tag>
+        <English>Fruits</English>
+        <German>
+            <Text>Früchte</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_FRUITS</Tag>
+        <English>Fruits</English>
+        <German>
+            <Text>Früchte</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FRUITS</Tag>
+        <English>Fruits</English>
+        <German>
+            <Text>Früchte</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_FRUITS_PEDIA</Tag>
+        <English>[TAB][H1]Fruits[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Früchte[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FRUITS_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FRUITS_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- HOOCH -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_HOOCH</Tag>
+        <English>Hooch</English>
+        <German>
+            <Text>Schnapps</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_HOOCH</Tag>
+        <English>Hooch</English>
+        <German>
+            <Text>Schnapps</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HOOCH</Tag>
+        <English>Hooch</English>
+        <German>
+            <Text>Schnapps</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_HOOCH_PEDIA</Tag>
+        <English>[TAB][H1]Hooch[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Schnapps[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HOOCH_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HOOCH_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>	
+	<!-- FLAX -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_FLAX</Tag>
+        <English>Flax</English>
+        <German>
+            <Text>Flachs</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_FLAX</Tag>
+        <English>Flax</English>
+        <German>
+            <Text>Flachs</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FLAX</Tag>
+        <English>Flax</English>
+        <German>
+            <Text>Flachs</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_FLAX_PEDIA</Tag>
+        <English>[TAB][H1]Flax[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Flachs[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FLAX_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FLAX_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>		
+	<!-- PADDED_FURNITURE -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_PADDED_FURNITURE</Tag>
+        <English>Padded Furniture</English>
+        <German>
+            <Text>Gepolsterte Möbel</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_PADDED_FURNITURE</Tag>
+        <English>Padded Furniture</English>
+        <German>
+            <Text>Gepolsterte Möbel</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PADDED_FURNITURE</Tag>
+        <English>Padded Furniture</English>
+        <German>
+            <Text>Gepolsterte Möbel</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_PADDED_FURNITURE_PEDIA</Tag>
+        <English>[TAB][H1]Padded Furniture[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Gepolsterte Möbel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PADDED_FURNITURE_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PADDED_FURNITURE_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>		
+</Civ4GameText>
