@@ -9391,7 +9391,7 @@ int CvCity::getCityHealthChangeFromRessourcesInCityRadius() const
 	{
 		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
 		
-		if(pLoopPlot->getBonusType() != NO_BONUS)
+		if(pLoopPlot != NULL && pLoopPlot->getBonusType() != NO_BONUS)
 		{
 			// only if worked
 			if (isUnitWorkingPlot(pLoopPlot))
@@ -9471,7 +9471,7 @@ int CvCity::getMonasteryCrossBonusForCity() const
 	{
 		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
 		// if it has a Monastery and a Missionary in it
-		if(pLoopPlot->isMonastery() && (pLoopPlot->getMonasteryMissionary() != NULL))
+		if(pLoopPlot != NULL && pLoopPlot->isMonastery() && (pLoopPlot->getMonasteryMissionary() != NULL))
 		{
 			// we double if it is second level improvement, which we know if it has no more upgrade
 			if (GC.getImprovementInfo(pLoopPlot->getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT)
@@ -9502,7 +9502,7 @@ int CvCity::getFortDefenseBonusForCity() const
 	{
 		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
 		// if it has a Fort that is protected
-		if(pLoopPlot->isFort() && (pLoopPlot->getFortDefender() != NULL))
+		if(pLoopPlot != NULL && pLoopPlot->isFort() && (pLoopPlot->getFortDefender() != NULL))
 		{
 			// we double if it is second level improvement, which we know if it has no more upgrade
 			if (GC.getImprovementInfo(pLoopPlot->getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT)
@@ -9534,16 +9534,19 @@ int CvCity::getImprovementFoodModifierForCity() const
 	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
 	{
 		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
-		ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
-		if(eImprovement != NO_IMPROVEMENT)
+		if (pLoopPlot != NULL)
 		{
-			CvImprovementInfo& info = GC.getImprovementInfo(eImprovement);
-			if (info.getFoodModifierForCity() > 0)
+			ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
+			if(eImprovement != NO_IMPROVEMENT)
 			{
-				// we give the Bonus only if also worked by a worker inside the City
-				if (isUnitWorkingPlot(pLoopPlot))
+				CvImprovementInfo& info = GC.getImprovementInfo(eImprovement);
+				if (info.getFoodModifierForCity() > 0)
 				{
-					FoodModifierForCity += info.getFoodModifierForCity();
+					// we give the Bonus only if also worked by a worker inside the City
+					if (isUnitWorkingPlot(pLoopPlot))
+					{
+						FoodModifierForCity += info.getFoodModifierForCity();
+					}
 				}
 			}
 		}
@@ -9563,16 +9566,19 @@ int CvCity::getImprovementHammersModifierForCity() const
 	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
 	{
 		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
-		ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
-		if(eImprovement != NO_IMPROVEMENT)
+		if(pLoopPlot != NULL)
 		{
-			CvImprovementInfo& info = GC.getImprovementInfo(eImprovement);
-			if (info.getHammersModifierForCity() > 0)
+			ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
+			if(eImprovement != NO_IMPROVEMENT)
 			{
-				// we give the Bonus only if also worked by a worker inside the City
-				if (isUnitWorkingPlot(pLoopPlot))
+				CvImprovementInfo& info = GC.getImprovementInfo(eImprovement);
+				if (info.getHammersModifierForCity() > 0)
 				{
-					HammersModifierForCity += info.getHammersModifierForCity();
+					// we give the Bonus only if also worked by a worker inside the City
+					if (isUnitWorkingPlot(pLoopPlot))
+					{
+						HammersModifierForCity += info.getHammersModifierForCity();
+					}
 				}
 			}
 		}
@@ -9592,16 +9598,19 @@ int CvCity::getImprovementToolsModifierForCity() const
 	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
 	{
 		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
-		ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
-		if(eImprovement != NO_IMPROVEMENT)
+		if (pLoopPlot != NULL)
 		{
-			CvImprovementInfo& info = GC.getImprovementInfo(eImprovement);
-			if (info.getToolsModifierForCity() > 0)
+			ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
+			if(eImprovement != NO_IMPROVEMENT)
 			{
-				// we give the Bonus only if also worked by a worker inside the City
-				if (isUnitWorkingPlot(pLoopPlot))
+				CvImprovementInfo& info = GC.getImprovementInfo(eImprovement);
+				if (info.getToolsModifierForCity() > 0)
 				{
-					ToolsModifierForCity += info.getToolsModifierForCity();
+					// we give the Bonus only if also worked by a worker inside the City
+					if (isUnitWorkingPlot(pLoopPlot))
+					{
+						ToolsModifierForCity += info.getToolsModifierForCity();
+					}
 				}
 			}
 		}
