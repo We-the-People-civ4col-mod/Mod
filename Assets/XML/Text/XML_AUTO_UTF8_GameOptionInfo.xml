@@ -74,7 +74,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_LEAD_ANY_CIV_HELP</Tag>
-        <English>Players may lead any Nation with any Leader.</English>
+        <English>Players may lead any nation with any leader.</English>
         <French>Les joueurs peuvent mener n'importe quelle nation avec n'importe quel chef.</French>
         <German>Die Spieler können eine jede Nation mit jedem Anführer anführen.</German>
         <Italian>I giocatori possono condurre una nazione qualsiasi con un qualsiasi leader.</Italian>
@@ -90,7 +90,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_LOCK_MODS_HELP</Tag>
-        <English>Sets a random admin password so that debug tools cannot be used, and the game assets cannot be modified. Only for single-player games.</English>
+        <English>Sets a random admin password so that debug tools cannot be used, and game assets cannot be modified. (Only for single-player games).</English>
         <French>Les outils de debug ne peuvent pas être utilisés et les données de la partie ne peuvent pas être modifiées. Utile pour les parties en solo.</French>
         <German>Debug-Tools können nicht verwendet und die Spieldaten können nicht modifiziert werden. Hilfreich für herausfordernde Einzelspieler-Partien.</German>
         <Italian>Impedisce l'utilizzo degli strumenti di debug, impedendo la modifica dei beni di gioco. Utile per delle competitive partite a giocatore singolo.</Italian>
@@ -138,7 +138,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_CITY_RAZING_HELP</Tag>
-        <English>European Settlements cannot be razed by other Europeans after capture.</English>
+        <English>European settlements cannot be razed by other Europeans after capture.</English>
         <French>Impossible pour les Européens de raser les autres colonies européennes après leur capture.</French>
         <German>Europäische Siedlungen können nach der Einnahme durch andere Europäer nicht mehr zerstört werden.</German>
         <Italian>Gli insediamenti europei non possono essere razziati da altri europei dopo la conquista.</Italian>
@@ -154,7 +154,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_EVENTS_HELP</Tag>
-        <English>Random Events do not occur.</English>
+        <English>Random events do not occur.</English>
         <French>Les événements aléatoires ne se produisent pas.</French>
         <German>Es finden keine Zufallsereignisse ausgelöst.</German>
         <Italian>Non si verificano eventi casuali</Italian>
@@ -202,7 +202,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_WILD_LAND_ANIMALS_HELP</Tag>
-        <English>Wild Land Animals will not be spawned.</English>
+        <English>Wild land animals will not be spawned.</English>
         <French>Aucun animal sauvage n'apparaît sur les terres.</French>
         <German>Es werden keine Wilden Tiere an Land erzeugt.</German>
         <Italian>Non si producono animali selvatici sulla terraferma.</Italian>
@@ -218,7 +218,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_WILD_SEA_ANIMALS_HELP</Tag>
-        <English>Wild Sea Animals will not be spawned.</English>
+        <English>Wild sea animals will not be spawned.</English>
         <French>Aucun animal sauvage n'apparaît dans les mers.</French>
         <German>Es werden keine Wilden Tiere im Wasser erzeugt.</German>
         <Italian>Non si creano animali selvatici nell'acqua.</Italian>
@@ -250,7 +250,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_PERMANENT_ALLIANCES_HELP</Tag>
-        <English>Two colonies can form a Permanent Alliance which lasts the rest of the game.</English>
+        <English>Two colonies can form a permanent alliance which lasts the rest of the game.</English>
         <French>Deux colonies peuvent former une Alliance permanente qui durera jusqu'à la fin du jeu.</French>
         <German>Zwei Kolonien können eine Allianz schließen, die die restliche Spielzeit überdauert.</German>
         <Italian>Due colonie possono formare una alleanza permanente che duri fino alla fine della partita.</Italian>
@@ -306,27 +306,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_DEACTIVATE_HEMISPHERE_RESTRICTIONS</Tag>
-        <English>No Hemisphere Restrictions for Ressources</English>
+        <English>No Hemisphere Restrictions for Resources</English>
         <German>Keine Einschränkung der Hemispheren für Ressourcen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_DEACTIVATE_HEMISPHERE_RESTRICTIONS_HELP</Tag>
-        <English>Normally some Bonus Ressources (like e.g. Walruss, Penguin, Capybara, ...) are restricted to either northern or southern hemisphere for immsersion. If you activate this setting that restriction is removed.</English>
+        <English>Normally some bonus resources (like the walrus, penguin, capybara, ...) are restricted for immersion either to the northern or southern hemisphere. If you activate this setting that restriction is removed.</English>
         <German>Standardmäßig sind viele Bonus-Ressourcen (wie z.B. Walross, Pinguin, Cabyara, ...) aus Gründen der Realitätstreue entweder auf die nördliche oder südliche Hemisphere beschränkt. Mit Aktivierung dieser Option wird diese Einschränkung aufgehoben.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_GOODIES_ALWAYS_DISPLAY_COLOURED_CIRCLE</Tag>
-        <English>Revealed Goodies always display coloured circles</English>
+        <English>Revealed goodies always display coloured circles</English>
         <German>Entdeckte Goodies zeigen immer Farbkreis als Hinweis</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_GOODIES_ALWAYS_DISPLAY_COLOURED_CIRCLE_HELP</Tag>
-        <English>This helps to easily identify Goodies on the map once revealed</English>
+        <English>This helps to easily identify goodies on the map once revealed</English>
         <German>Hilft bereits entdeckte Goodies auf der Karte einfach zu finden</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE</Tag>
-        <English>Only 1 Colonist learning per Native settlement</English>
+        <English>Only One Colonist Learning per Native Settlement</English>
         <French>Un seul élève à la fois par établissement autochtone</French>
         <German>Nur 1 Schüler gleichzeitig je Siedlung der Ureinwohner</German>
         <Italian>Solo 1 studente alla volta per insediamento nativo</Italian>
@@ -334,7 +334,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE_HELP</Tag>
-        <English>Only 1 Colonist is allowed to live and learn in a Native settlement at any one time. After he's qualified, the next Colonist can be trained.</English>
+        <English>Only one colonist is allowed to live and learn in a Native settlement at any given time. After he's qualified, the next colonist can be trained.</English>
         <French>Un seul colon peut vivre dans une colonie indigène à la fois et apprendre d'eux. Le prochain doit attendre que celui-ci ait terminé ses études.</French>
         <German>Nur 1 Kolonist darf zur selben Zeit in einer Siedlung der Ureinwohner leben und von ihnen lernen. Der nächste muss warten, bis dieser seine Ausbildung beendet hat.</German>
         <Italian>Solo 1 colono può vivere in un insediamento nativo alla volta e imparare da loro. Il prossimo deve aspettare che questo abbia finito la sua educazione.</Italian>
@@ -358,7 +358,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_USE_OLD_FOUNDING_FATHER_SYSTEM</Tag>
-        <English>Use old System for Founding Fathers</English>
+        <English>Use Old System for Founding Fathers</English>
         <French>Utiliser l'ancien système pour les Pères fondateurs</French>
         <German>Altes Gründervätersystem benutzen</German>
         <Italian>Utilizzare vecchio sistema per Padre fondatore</Italian>
@@ -366,7 +366,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_USE_OLD_FOUNDING_FATHER_SYSTEM_HELP</Tag>
-        <English>With the New System, FFs become available again if their owning Civ is destroyed.</English>
+        <English>With the new system, FFs become available again whenever the civ that recruited them is destroyed.</English>
         <French>Avec le nouveau système, les PF sont à nouveau disponibles si posséder Civ est détruit.</French>
         <German>Beim neuen System werden Gründerväter wieder verfügbar, wenn die bisher besitzende Civ vernichtet wird.</German>
         <Italian>Con il nuovo sistema, FFs saranno disponibili nuovamente se in possesso di Civ è distrutto.</Italian>
