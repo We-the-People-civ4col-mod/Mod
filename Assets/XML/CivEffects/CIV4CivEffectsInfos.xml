@@ -117,5 +117,29 @@
 				</AllowRoute>
 			</AllowRoutes>
 		</TagGroupAllow>
+	</CivEffectInfo>	
+	<CivEffectInfo>
+		<Type>CIV_EFFECT_TRAIT_SOPHISTICATED</Type>
+		<TagGroupGrowth>
+			<iLearningByDoingModifier>50</iLearningByDoingModifier>
+		</TagGroupGrowth>
+	</CivEffectInfo>
+	<CivEffectInfo>
+		<Type>CIV_EFFECT_TRAIT_PIONEER</Type>
+		<TagGroupGrowth>
+			<iLearningByDoingModifier>10</iLearningByDoingModifier>
+		</TagGroupGrowth>
+	</CivEffectInfo>
+	<CivEffectInfo>
+		<Type>CIV_EFFECT_TRAIT_SEAFARERS</Type>
+		<TagGroupGrowth>
+			<iLearningByDoingModifier>10</iLearningByDoingModifier>
+		</TagGroupGrowth>
+	</CivEffectInfo>
+	<CivEffectInfo>
+		<Type>CIV_EFFECT_TRAIT_INDUSTRIOUS</Type>
+		<TagGroupGrowth>
+			<iLearningByDoingModifier>10</iLearningByDoingModifier>
+		</TagGroupGrowth>
 	</CivEffectInfo>
 </Civ4CivEffectInfos>

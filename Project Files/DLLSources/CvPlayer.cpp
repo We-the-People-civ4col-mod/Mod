@@ -19478,18 +19478,8 @@ bool CvPlayer::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, i
 		calculatedChance = calculatedChance * ki_modifier / 100;
 	}
 
-	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
-	{
-		TraitTypes eTrait = (TraitTypes) iTrait;
-		if (eTrait != NO_TRAIT)
-		{
-			if (hasTrait(eTrait))
-			{
-				calculatedChance *= GC.getTraitInfo(eTrait).getLearningByDoingModifier() + 100;
-				calculatedChance /= 100;
-			}
-		}
-	}
+	calculatedChance *= CivEffect()->getLearningByDoingModifier() / 100; // CivEffects - Nightinggale
+
 								//Schmiddie, added LbD modifier for Sophisticated Trait ENDE
 
 	//ray Multiplayer Random Fix

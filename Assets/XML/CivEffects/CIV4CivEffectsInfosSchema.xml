@@ -18,6 +18,7 @@
 	<ElementType name="iAllow" content="textOnly" dt:type="int" />
 	<ElementType name="iAllowFoundCity" content="textOnly" dt:type="int" />
 	<ElementType name="iCanUseDomesticMarket" content="textOnly" dt:type="int" />
+	<ElementType name="iLearningByDoingModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iNumUnitsOnDockChange" content="textOnly" dt:type="int" />
 	
 
@@ -130,6 +131,7 @@
 	</ElementType>
 
 	<ElementType name="TagGroupGrowth" content="eltOnly">
+		<element type="iLearningByDoingModifier" minOccurs="0" />
 		<element type="iNumUnitsOnDockChange" minOccurs="0" />
 	</ElementType>
 	

@@ -3882,16 +3882,6 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 			szHelpString.append(gDLL->getText("TXT_KEY_FATHER_IMPROVEMENT_PRICE_MODIFIER", kTrait.getImprovementPriceModifier()));
 		}
 
-		if (kTrait.getLearningByDoingModifier() != 0)
-		{
-			szHelpString.append(NEWLINE);
-			if (bIndent)
-			{
-				szHelpString.append(L"  ");
-			}
-			szHelpString.append(gDLL->getText("TXT_KEY_FATHER_LEARNING_BY_DOING_MODIFIER", kTrait.getLearningByDoingModifier()));
-		}
-
 		if (kTrait.getSpecialistPriceModifier() != 0)
 		{
 			szHelpString.append(NEWLINE);
@@ -3935,6 +3925,9 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 			}
 		}
 	}
+	// CivEffects - Nightinggale - start
+	parseCivEffects(szHelpString, kTrait.getCivEffect(), eCivilization, bDawnOfMan, bIndent);
+	// CivEffects - Nightinggale - end
 }
 
 void CvGameTextMgr::parseLeaderTraits(CvWStringBuffer &szHelpString, LeaderHeadTypes eLeader, CivilizationTypes eCivilization, bool bDawnOfMan, bool bCivilopediaText)
@@ -9206,6 +9199,33 @@ void CvGameTextMgr::setFatherHelp(CvWStringBuffer &szBuffer, FatherTypes eFather
 		parseTraits(szBuffer, (TraitTypes) kFatherInfo.getTrait(), eCivilization, false, false);
 	}
 }
+
+// CivEffects - Nightinggale - start
+void CvGameTextMgr::parseCivEffects(CvWStringBuffer &szHelpString, CivEffectTypes eCivEffect, CivilizationTypes eCivilization, bool bDawnOfMan, bool bIndent)
+{
+	if (eCivEffect == NO_CIV_EFFECT)
+	{
+		return;
+	}
+
+	CvWString szTempBuffer;
+
+	const CivEffectInfo& kEffect = GC.getCivEffectInfo(eCivEffect);
+
+	if (!bDawnOfMan)
+	{
+		if (kEffect.getLearningByDoingModifier() != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			szHelpString.append(gDLL->getText("TXT_KEY_FATHER_LEARNING_BY_DOING_MODIFIER", kEffect.getLearningByDoingModifier()));
+		}
+	}
+}
+// CivEffects - Nightinggale - end
 
 void CvGameTextMgr::getTradeScreenTitleIcon(CvString& szButton, CvWidgetDataStruct& widgetData, PlayerTypes ePlayer)
 {

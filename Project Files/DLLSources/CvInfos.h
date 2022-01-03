@@ -3172,7 +3172,6 @@ public:
 	int getCultureLevelModifier() const;
 	int getPioneerSpeedModifier() const;
 	int getImprovementPriceModifier() const;
-	int getLearningByDoingModifier() const;
 	int getSpecialistPriceModifier() const;
 	int getStorageCapacityModifier() const;		// Schmiddie, 7 new variables for traits for Europeans, END
 
@@ -3232,7 +3231,6 @@ protected:
 	int m_iCultureLevelModifier;
 	int m_iPioneerSpeedModifier;
 	int m_iImprovementPriceModifier;
-	int m_iLearningByDoingModifier;
 	int m_iSpecialistPriceModifier;
 	int m_iStorageCapacityModifier;		// Schmiddie, 7 new variables for traits for Europeans, END
 
@@ -4846,6 +4844,7 @@ public:
 	inline int getCanUseDomesticMarket                     () const { return m_iCanUseDomesticMarket  ; }
 
 	// growth
+	int getLearningByDoingModifier                         () const;
 	inline int getNumUnitsOnDockChange                     () const { return m_iNumUnitsOnDockChange  ; }
 
 	// unit
@@ -4876,6 +4875,7 @@ protected:
 	int m_iCanUseDomesticMarket;
 
 	// growth
+	int m_iLearningByDoingModifier;
 	int m_iNumUnitsOnDockChange;
 
 	// unit

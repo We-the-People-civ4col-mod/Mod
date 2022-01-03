@@ -37,7 +37,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>10</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -87,7 +86,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>-10</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -142,7 +140,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -192,7 +189,6 @@
             <iCultureLevelModifier>-10</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -242,7 +238,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>10</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -265,6 +260,7 @@
             <Type>TRAIT_SEAFARERS</Type>
             <Description>TXT_KEY_TRAIT_SEAFARERS</Description>
             <ShortDescription>TXT_KEY_TRAIT_SEAFARERS_SHORT</ShortDescription>
+			<eCivEffect>CIV_EFFECT_TRAIT_SEAFARERS</eCivEffect>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -292,7 +288,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>10</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -411,7 +406,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -490,7 +484,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -573,7 +566,6 @@
             <iCultureLevelModifier>-20</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -623,7 +615,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>10</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -694,7 +685,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -749,7 +739,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -799,7 +788,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -849,7 +837,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -890,6 +877,7 @@
             <Type>TRAIT_INDUSTRIOUS</Type>
             <Description>TXT_KEY_TRAIT_INDUSTRIOUS</Description>
             <ShortDescription>TXT_KEY_TRAIT_INDUSTRIOUS_SHORT</ShortDescription>
+			<eCivEffect>CIV_EFFECT_TRAIT_INDUSTRIOUS</eCivEffect>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -917,7 +905,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>10</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -972,7 +959,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1022,7 +1008,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1127,7 +1112,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1186,7 +1170,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>25</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1214,6 +1197,7 @@
             <Type>TRAIT_SOPHISTICATED</Type>
             <Description>TXT_KEY_TRAIT_SOPHISTICATED</Description>
             <ShortDescription>TXT_KEY_TRAIT_SOPHISTICATED_SHORT</ShortDescription>
+			<eCivEffect>CIV_EFFECT_TRAIT_SOPHISTICATED</eCivEffect>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1241,7 +1225,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>50</iLearningByDoingModifier>
             <iSpecialistPriceModifier>-50</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1269,6 +1252,7 @@
             <Type>TRAIT_PIONEER</Type>
             <Description>TXT_KEY_TRAIT_PIONEER</Description>
             <ShortDescription>TXT_KEY_TRAIT_PIONEER_SHORT</ShortDescription>
+			<eCivEffect>CIV_EFFECT_TRAIT_PIONEER</eCivEffect>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1296,7 +1280,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>50</iPioneerSpeedModifier>
             <iImprovementPriceModifier>-50</iImprovementPriceModifier>
-            <iLearningByDoingModifier>10</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1346,7 +1329,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields>
@@ -1437,7 +1419,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields>
@@ -1497,7 +1478,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>10</iStorageCapacityModifier>
             <CityExtraYields>
@@ -1565,7 +1545,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1643,7 +1622,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1693,7 +1671,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1761,7 +1738,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>10</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1816,7 +1792,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1884,7 +1859,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -1934,7 +1908,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2002,7 +1975,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2070,7 +2042,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2147,7 +2118,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2215,7 +2185,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2279,7 +2248,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2343,7 +2311,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2407,7 +2374,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2462,7 +2428,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2512,7 +2477,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2599,7 +2563,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2682,7 +2645,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2765,7 +2727,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2870,7 +2831,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -2953,7 +2913,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3008,7 +2967,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3058,7 +3016,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3117,7 +3074,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3172,7 +3128,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3227,7 +3182,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3301,7 +3255,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3361,7 +3314,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3416,7 +3368,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3521,7 +3472,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3620,7 +3570,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3716,7 +3665,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3794,7 +3742,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3890,7 +3837,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -3993,7 +3939,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4076,7 +4021,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4163,7 +4107,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4230,7 +4173,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4313,7 +4255,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4373,7 +4314,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4433,7 +4373,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4493,7 +4432,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4548,7 +4486,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4631,7 +4568,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4702,7 +4638,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4761,7 +4696,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4833,7 +4767,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4883,7 +4816,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4943,7 +4875,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -4998,7 +4929,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5048,7 +4978,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5098,7 +5027,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5181,7 +5109,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5231,7 +5158,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5281,7 +5207,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5340,7 +5265,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5403,7 +5327,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5462,7 +5385,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5563,7 +5485,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5613,7 +5534,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5673,7 +5593,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5728,7 +5647,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5800,7 +5718,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5899,7 +5816,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -5949,7 +5865,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6008,7 +5923,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6091,7 +6005,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6167,7 +6080,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6268,7 +6180,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6376,7 +6287,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>10</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6431,7 +6341,6 @@
             <iCultureLevelModifier>-25</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>-10</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6499,7 +6408,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6558,7 +6466,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6617,7 +6524,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6672,7 +6578,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6735,7 +6640,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6807,7 +6711,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6871,7 +6774,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -6940,7 +6842,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7063,7 +6964,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7159,7 +7059,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7231,7 +7130,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7314,7 +7212,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7364,7 +7261,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7431,7 +7327,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7500,7 +7395,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7587,7 +7481,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7664,7 +7557,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7719,7 +7611,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields>
@@ -7783,7 +7674,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7833,7 +7723,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7883,7 +7772,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -7979,7 +7867,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -8034,7 +7921,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
@@ -8089,7 +7975,6 @@
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>

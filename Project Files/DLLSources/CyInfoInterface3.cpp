@@ -176,7 +176,6 @@ void CyInfoPythonInterface3()
 		.def("getCultureLevelModifier", &CvTraitInfo::getCultureLevelModifier, "int ()")
 		.def("getPioneerSpeedModifier", &CvTraitInfo::getPioneerSpeedModifier, "int ()")
 		.def("getImprovementPriceModifier", &CvTraitInfo::getImprovementPriceModifier, "int ()")
-		.def("getLearningByDoingModifier", &CvTraitInfo::getLearningByDoingModifier, "int ()")
 		.def("getSpecialistPriceModifier", &CvTraitInfo::getSpecialistPriceModifier, "int ()")
 		.def("getStorageCapacityModifier", &CvTraitInfo::getStorageCapacityModifier, "int ()")		// Schmiddie, 7 new variables for traits for Europeans, END
 		.def("getYieldModifier", &CvTraitInfo::getYieldModifier, "int (int)")

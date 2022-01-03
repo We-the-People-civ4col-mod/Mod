@@ -350,7 +350,6 @@
 	<ElementType name="iCultureLevelModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iPioneerSpeedModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iImprovementPriceModifier" content="textOnly" dt:type="int"/>
-	<ElementType name="iLearningByDoingModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iSpecialistPriceModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iStorageCapacityModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="GoodyType" content="textOnly"/>
@@ -395,7 +394,6 @@
 		<element type="iCultureLevelModifier"/>
 		<element type="iPioneerSpeedModifier"/>
 		<element type="iImprovementPriceModifier"/>
-		<element type="iLearningByDoingModifier"/>
 		<element type="iSpecialistPriceModifier"/>
 		<element type="iStorageCapacityModifier"/>
 		<element type="CityExtraYields"/>

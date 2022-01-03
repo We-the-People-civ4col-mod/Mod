@@ -76,6 +76,9 @@ public:
 	DllExport void parseLeaderHeadHelp(CvWStringBuffer &szBuffer, PlayerTypes eThisPlayer, PlayerTypes eOtherPlayer);
 	DllExport void parseLeaderLineHelp(CvWStringBuffer &szBuffer, PlayerTypes eThisPlayer, PlayerTypes eOtherPlayer);
 	DllExport void parseGreatGeneralHelp(CvWStringBuffer &szBuffer, CvPlayer& kPlayer);
+	// CivEffects - Nightinggale - start
+	void parseCivEffects(CvWStringBuffer &szHelpString, CivEffectTypes eCivEffect, CivilizationTypes eCivilization = NO_CIVILIZATION, bool bDawnOfMan = false, bool bIndent = true);
+	// CivEffects - Nightinggale - end
 	DllExport void setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool bCivilopediaText = false);
 	DllExport void setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool bCivilopediaText = false, bool bStrategyText = false, CvCity* pCity = NULL);
 	DllExport void setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes eProfession, bool bCivilopediaText = false, bool bStrategyText = false);

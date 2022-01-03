@@ -44,7 +44,9 @@ void CvPlayerCivEffect::applyCivEffect(const CivEffectInfo& kCivEffect, int iCha
 	m_iAllowFoundCity += iChange * kCivEffect.getAllowFoundCity();
 	m_iCacheCanUseDomesticMarket += iChange * kCivEffect.getCanUseDomesticMarket();
 
-	m_iCacheNumUnitsOnDock += iChange * kCivEffect.getNumUnitsOnDockChange();
+	// growth
+	m_iCacheLearningByDoingModifier          += iChange * kCivEffect.getLearningByDoingModifier         ();
+	m_iCacheNumUnitsOnDock                   += iChange * kCivEffect.getNumUnitsOnDockChange            ();
 
 
 	bUpdatePromotions |= m_ja_iCacheFreePromotions                    .addCache(iChange, kCivEffect.getFreePromotions                (), pCivInfo);
@@ -146,6 +148,8 @@ void CvPlayerCivEffect::resetCivEffectCache()
 
 	m_iCacheCanUseDomesticMarket = 0;
 
+	// growth
+	m_iCacheLearningByDoingModifier = 100;
 	m_iCacheNumUnitsOnDock = 0;
 
 	m_ja_iCacheFreePromotions.reset();
@@ -279,4 +283,11 @@ void CvPlayerCivEffect::updateHasCivEffectCache() const
 		break;
 	}
 	BOOST_STATIC_ASSERT(NUM_CIV_CATEGORY_TYPES == 6);
+}
+
+// growth
+int CvPlayerCivEffect::getLearningByDoingModifier() const
+{
+	// cap chance at 0% to avoid calculations using negative chances
+	return m_iCacheLearningByDoingModifier > 0 ? m_iCacheLearningByDoingModifier : 0;
 }
