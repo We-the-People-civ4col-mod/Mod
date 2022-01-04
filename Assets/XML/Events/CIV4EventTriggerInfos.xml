@@ -1130,6 +1130,7 @@
             <UnitsRequired>
                 <UnitClass>UNITCLASS_CONVERTED_NATIVE</UnitClass>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
+                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>				
                 <UnitClass>UNITCLASS_SCOUT</UnitClass>
                 <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
@@ -6663,6 +6664,8 @@
             <eMinDifficulty>NONE</eMinDifficulty>
             <UnitsRequired>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
+                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
+				<UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>				
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
             </UnitsRequired>
             <iNumUnits>5</iNumUnits>
@@ -6951,6 +6954,7 @@
                 <UnitClass>UNITCLASS_HESSIAN</UnitClass>
                 <UnitClass>UNITCLASS_RANGER</UnitClass>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
+                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>				
                 <UnitClass>UNITCLASS_MILITIA</UnitClass>
                 <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
@@ -7030,6 +7034,7 @@
                 <UnitClass>UNITCLASS_HESSIAN</UnitClass>
                 <UnitClass>UNITCLASS_RANGER</UnitClass>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
+                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>				
                 <UnitClass>UNITCLASS_MILITIA</UnitClass>
                 <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
@@ -7109,6 +7114,7 @@
                 <UnitClass>UNITCLASS_HESSIAN</UnitClass>
                 <UnitClass>UNITCLASS_RANGER</UnitClass>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
+                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>				
                 <UnitClass>UNITCLASS_MILITIA</UnitClass>
                 <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
@@ -7189,6 +7195,7 @@
                 <UnitClass>UNITCLASS_HESSIAN</UnitClass>
                 <UnitClass>UNITCLASS_RANGER</UnitClass>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
+                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>				
                 <UnitClass>UNITCLASS_MILITIA</UnitClass>
                 <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>

@@ -999,6 +999,18 @@
         <Spanish>Los Dragones son la combinación perfecta de velocidad y fuerza, lo que hace de ellos las unidades más temidas en el campo de batalla colonial. Hasta los poderosos Cañones temen al Dragón, pues esta unidad recibe una bonificación importante al atacarlos. Para asignar a una unidad la profesión de Dragón, debéis tener disponibles Armas y Caballos.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_PROFESSION_LIGHT_ARTILLERY_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_HEAVY_ARTILLERY_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_ROYAL_ARTILLERY_HELP</Tag>
+        <English>????</English>
+    </TEXT>	
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_DYER</Tag>
         <English>Cloth Dyer:Cloth Dyers</English>
         <French>

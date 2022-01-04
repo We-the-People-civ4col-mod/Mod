@@ -2679,6 +2679,19 @@
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN_EXPERT</Tag>
+        <English>
+            <Text>Veteran Heavy Artillerist:Veteran Heavy Artillerists</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Schwere Artillerie Veteran:Schwere Artillerie Veteranen</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN_PEDIA</Tag>
         <English>Among the earliest inventions that made use of gunpowder, cannons remained important until the 19th century.[NEWLINE]By the late 1500s cannon had become light but powerful weapons that could be easily target whatever the battle might present.[NEWLINE]Such cannons proved extremely useful against Native foes who had never experienced the devastating effects of grapeshot and had no tactics to counter them.</English>
@@ -3172,6 +3185,19 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY_VETERAN_EXPERT</Tag>
+        <English>
+            <Text>Veteran Light Artillerist:Veteran Light Artillerists</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Leichte Artillerie Veteran:Leichte Artillerie Veteranen</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY_VETERAN_PEDIA</Tag>
@@ -4601,6 +4627,19 @@
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ROYAL_ARTILLERY_EXPERT</Tag>
+        <English>
+            <Text>Royal Artillerist:Royal Artillerists</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Königlicher Artillerist:Königliche Artilleristen</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROYAL_ARTILLERY_PEDIA</Tag>

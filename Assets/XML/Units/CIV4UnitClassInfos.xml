@@ -367,6 +367,11 @@
             <DefaultUnit>UNIT_HEAVY_ARTILLERY_VETERAN</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_ROYAL_ARTILLERY</Type>
+            <Description>TXT_KEY_UNITCLASS_HEAVY_ARTILLERY</Description>
+            <DefaultUnit>UNIT_ROYAL_ARTILLERY</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_MORTAR</Type>
             <Description>TXT_KEY_UNITCLASS_MORTAR</Description>
             <DefaultUnit>UNIT_MORTAR</DefaultUnit>

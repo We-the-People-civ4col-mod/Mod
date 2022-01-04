@@ -359,7 +359,7 @@
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_KING_REINFORCEMENT_ARTIL</DefineName>
-		<DefineTextVal>UNITCLASS_HEAVY_ARTILLERY</DefineTextVal>
+		<DefineTextVal>UNITCLASS_ROYAL_ARTILLERY</DefineTextVal>
 	</Define>
 	<Define>
 		<DefineName>KING_REINFORCEMENT_ARTIL</DefineName>

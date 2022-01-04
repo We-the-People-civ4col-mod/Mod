@@ -716,6 +716,18 @@
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_LINE_INFANTRY</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_HESSIAN</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
@@ -732,9 +744,29 @@
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_ARTILLERY</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_MORTAR</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_VETERAN_CAVALRY</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>				
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_CAVALRY</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_VETERAN_DRAGOON</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_DRAGOON</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>	
             </UnitStrengthModifiers>
             <FreeBuildingClasses/>
             <GoodyFactors/>
@@ -860,7 +892,15 @@
                 <ProfessionEquipmentModifier>
                     <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
                     <iModifier>-20</iModifier>
+                </ProfessionEquipmentModifier>		
+				<ProfessionEquipmentModifier>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <iModifier>-20</iModifier>
                 </ProfessionEquipmentModifier>
+				<ProfessionEquipmentModifier>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <iModifier>-20</iModifier>
+                </ProfessionEquipmentModifier>	
                 <ProfessionEquipmentModifier>
                     <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
                     <iModifier>-20</iModifier>
@@ -6602,6 +6642,14 @@
                     <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_ARTILLERY</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_MORTAR</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
             </UnitStrengthModifiers>
             <FreeBuildingClasses/>
             <GoodyFactors/>
@@ -7987,6 +8035,10 @@
                     <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_LINE_INFANTRY</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
             </UnitStrengthModifiers>
             <FreeBuildingClasses/>
             <GoodyFactors/>
@@ -8054,9 +8106,37 @@
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
-                    <UnitClass>UNITCLASS_CONTINENTAL_GUARD</UnitClass>
+                    <UnitClass>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>				
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_LINE_INFANTRY</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_CONTINENTAL_GUARD</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>			
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_VETERAN_CAVALRY</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>				
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_CAVALRY</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_VETERAN_DRAGOON</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_DRAGOON</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>					
             </UnitStrengthModifiers>
             <FreeBuildingClasses/>
             <GoodyFactors/>
@@ -9852,6 +9932,10 @@
             <UnitStrengthModifiers>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_VETERAN_TOWN_GUARD</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_ROYAL_HALBERDIER</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
             </UnitStrengthModifiers>
