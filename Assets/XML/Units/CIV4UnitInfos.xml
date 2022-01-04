@@ -29879,7 +29879,7 @@
             <DefaultProfession>PROFESSION_LIGHT_ARTILLERY</DefaultProfession>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
-            <Description>TXT_KEY_UNIT_LIGHT_ARTILLERY_VETERAN</Description>
+            <Description>TXT_KEY_UNIT_LIGHT_ARTILLERY_VETERAN_EXPERT</Description>
             <Civilopedia>TXT_KEY_UNIT_LIGHT_ARTILLERY_VETERAN_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_LIGHT_ARTILLERY_VETERAN_STRATEGY</Strategy>
             <iTeachLevel>3</iTeachLevel>
@@ -30362,7 +30362,7 @@
             <DefaultProfession>PROFESSION_HEAVY_ARTILLERY</DefaultProfession>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
-            <Description>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN</Description>
+            <Description>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN_EXPERT</Description>
             <Civilopedia>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN_STRATEGY</Strategy>
             <iTeachLevel>3</iTeachLevel>
@@ -30845,7 +30845,7 @@
             <DefaultProfession>PROFESSION_ROYAL_ARTILLERY</DefaultProfession>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
-            <Description>TXT_KEY_UNIT_ROYAL_ARTILLERY</Description>
+            <Description>TXT_KEY_UNIT_ROYAL_ARTILLERY_EXPERT</Description>
             <Civilopedia>TXT_KEY_UNIT_ROYAL_ARTILLERY_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_ROYAL_ARTILLERY_STRATEGY</Strategy>
             <iTeachLevel>200</iTeachLevel>
@@ -44138,32 +44138,7 @@
             <PrereqOrBuildings/>
             <ProductionTraits/>
             <iAIWeight>0</iAIWeight>
-            <YieldCosts>
-                <YieldCost>
-                    <YieldType>YIELD_SAILCLOTH</YieldType>
-                    <iCost>80</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_ROPE</YieldType>
-                    <iCost>80</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_TOOLS</YieldType>
-                    <iCost>120</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_CANNONS</YieldType>
-                    <iCost>100</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_BLADES</YieldType>
-                    <iCost>50</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_HAMMERS</YieldType>
-                    <iCost>220</iCost>
-                </YieldCost>
-            </YieldCosts>
+            <YieldCosts/>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -46180,36 +46155,11 @@
             </UnitAIs>
             <NotUnitAIs/>
             <Builds/>
-            <PrereqBuilding>BUILDINGCLASS_SHIPYARD</PrereqBuilding>
+            <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
             <ProductionTraits/>
             <iAIWeight>0</iAIWeight>
-            <YieldCosts>
-                <YieldCost>
-                    <YieldType>YIELD_SAILCLOTH</YieldType>
-                    <iCost>90</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_ROPE</YieldType>
-                    <iCost>90</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_TOOLS</YieldType>
-                    <iCost>80</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_CANNONS</YieldType>
-                    <iCost>120</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_BLADES</YieldType>
-                    <iCost>60</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_HAMMERS</YieldType>
-                    <iCost>130</iCost>
-                </YieldCost>
-            </YieldCosts>
+            <YieldCosts/>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -46550,36 +46500,11 @@
             </UnitAIs>
             <NotUnitAIs/>
             <Builds/>
-            <PrereqBuilding>BUILDINGCLASS_SHIPYARD</PrereqBuilding>
+            <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
             <ProductionTraits/>
             <iAIWeight>0</iAIWeight>
-            <YieldCosts>
-                <YieldCost>
-                    <YieldType>YIELD_SAILCLOTH</YieldType>
-                    <iCost>90</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_ROPE</YieldType>
-                    <iCost>90</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_TOOLS</YieldType>
-                    <iCost>100</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_CANNONS</YieldType>
-                    <iCost>160</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_BLADES</YieldType>
-                    <iCost>90</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_HAMMERS</YieldType>
-                    <iCost>220</iCost>
-                </YieldCost>
-            </YieldCosts>
+            <YieldCosts/>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -46920,36 +46845,11 @@
             </UnitAIs>
             <NotUnitAIs/>
             <Builds/>
-            <PrereqBuilding>BUILDINGCLASS_GREAT_SHIPYARD</PrereqBuilding>
+            <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
             <ProductionTraits/>
             <iAIWeight>0</iAIWeight>
-            <YieldCosts>
-                <YieldCost>
-                    <YieldType>YIELD_SAILCLOTH</YieldType>
-                    <iCost>100</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_ROPE</YieldType>
-                    <iCost>100</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_TOOLS</YieldType>
-                    <iCost>200</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_CANNONS</YieldType>
-                    <iCost>250</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_BLADES</YieldType>
-                    <iCost>100</iCost>
-                </YieldCost>
-                <YieldCost>
-                    <YieldType>YIELD_HAMMERS</YieldType>
-                    <iCost>300</iCost>
-                </YieldCost>
-            </YieldCosts>
+            <YieldCosts/>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
