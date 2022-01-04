@@ -351,50 +351,6 @@
             </Buildings>
             <Units>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LINE_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_HEAVY_ARTILLERY_VETERAN</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
                     <UnitType>UNIT_CHRISTIAN_MISSIONARY_PROT</UnitType>
                 </Unit>
@@ -414,26 +370,6 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ARMED_BRAVE</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -845,52 +781,8 @@
             </Buildings>
             <Units>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
                     <UnitType>UNIT_PRIEST</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LINE_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_HEAVY_ARTILLERY_VETERAN</UnitType>
                 </Unit>
             </Units>
             <Professions>
@@ -908,26 +800,6 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ARMED_BRAVE</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -1307,52 +1179,8 @@
             </Buildings>
             <Units>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
                     <UnitType>UNIT_PRIEST</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LINE_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_HEAVY_ARTILLERY_VETERAN</UnitType>
                 </Unit>
             </Units>
             <Professions>
@@ -1370,26 +1198,6 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ARMED_BRAVE</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -1722,50 +1530,6 @@
             </Buildings>
             <Units>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LINE_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_HEAVY_ARTILLERY_VETERAN</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
                     <UnitType>UNIT_CHRISTIAN_MISSIONARY_PROT</UnitType>
                 </Unit>
@@ -1785,26 +1549,6 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ARMED_BRAVE</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -2111,52 +1855,8 @@
             </Buildings>
             <Units>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
                     <UnitType>UNIT_PRIEST</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LINE_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_HEAVY_ARTILLERY_VETERAN</UnitType>
                 </Unit>
             </Units>
             <Professions>
@@ -2174,26 +1874,6 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ARMED_BRAVE</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -2453,50 +2133,6 @@
             </Buildings>
             <Units>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LINE_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_HEAVY_ARTILLERY_VETERAN</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
                     <UnitType>UNIT_CHRISTIAN_MISSIONARY_PROT</UnitType>
                 </Unit>
@@ -2516,26 +2152,6 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ARMED_BRAVE</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -2829,50 +2445,6 @@
             </Buildings>
             <Units>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LINE_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_HEAVY_ARTILLERY_VETERAN</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
                     <UnitType>UNIT_CHRISTIAN_MISSIONARY_PROT</UnitType>
                 </Unit>
@@ -2892,26 +2464,6 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ARMED_BRAVE</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -3368,52 +2920,8 @@
             </Buildings>
             <Units>
                 <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_MAN_O_WAR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_SHIP_OF_THE_LINE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
                     <UnitType>UNIT_RUSSIAN_PRIEST</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_LINE_INFANTRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_CAVALRY</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_ROYAL_TROOP_GALLEON</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_LIGHT_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_LIGHT_ARTILLERY_VETERAN</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_HEAVY_ARTILLERY_VETERAN</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
@@ -3435,26 +2943,6 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ARMED_BRAVE</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
-                    <bValid>0</bValid>
-                </Profession>
-                <Profession>
-                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -3611,7 +3099,7 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_ROYAL_ARTILLERY</UnitType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
@@ -3704,31 +3192,31 @@
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
@@ -3925,7 +3413,7 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_ROYAL_ARTILLERY</UnitType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
@@ -4021,28 +3509,28 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
@@ -4236,7 +3724,7 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_ROYAL_ARTILLERY</UnitType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
@@ -4332,28 +3820,28 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
@@ -4550,7 +4038,7 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_ROYAL_ARTILLERY</UnitType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
@@ -4646,28 +4134,28 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
@@ -4848,7 +4336,7 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_ROYAL_ARTILLERY</UnitType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
@@ -4944,28 +4432,28 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
@@ -5147,7 +4635,7 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_ROYAL_ARTILLERY</UnitType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
@@ -5243,28 +4731,28 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
@@ -5447,7 +4935,7 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_ROYAL_ARTILLERY</UnitType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
@@ -5543,28 +5031,28 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
@@ -5750,7 +5238,7 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <UnitType>UNIT_ROYAL_ARTILLERY</UnitType>
+                    <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
@@ -5846,28 +5334,28 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
-                    <FreeUnitProfession>NONE</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_ROYAL_DRAGOON</UnitClassType>
@@ -6439,6 +5927,10 @@
                     <UnitType>UNIT_GREAT_CHIEF</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <UnitType>UNIT_NATIVE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_WAGON_TRAIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -6465,10 +5957,6 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <UnitType>UNIT_NATIVE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
@@ -6826,6 +6314,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>	
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -7791,6 +7291,18 @@
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
             </Professions>
             <Traits/>
             <FreeUnitClasses>
@@ -8372,6 +7884,10 @@
                     <UnitType>UNIT_GREAT_CHIEF</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <UnitType>UNIT_NATIVE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_WAGON_TRAIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -8398,10 +7914,6 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <UnitType>UNIT_NATIVE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
@@ -8759,6 +8271,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -9345,6 +8869,10 @@
                     <UnitType>UNIT_GREAT_CHIEF</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <UnitType>UNIT_NATIVE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_WAGON_TRAIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -9371,10 +8899,6 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <UnitType>UNIT_NATIVE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
@@ -9732,6 +9256,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -10706,6 +10242,18 @@
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
             </Professions>
             <Traits/>
             <FreeUnitClasses>
@@ -11669,6 +11217,18 @@
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
             </Professions>
             <Traits/>
             <FreeUnitClasses>
@@ -12627,6 +12187,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -13589,6 +13161,18 @@
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
             </Professions>
             <Traits/>
             <FreeUnitClasses>
@@ -14181,6 +13765,10 @@
                     <UnitType>UNIT_GREAT_CHIEF</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <UnitType>UNIT_NATIVE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_WAGON_TRAIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -14207,10 +13795,6 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <UnitType>UNIT_NATIVE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
@@ -14568,6 +14152,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -15154,6 +14750,10 @@
                     <UnitType>UNIT_GREAT_CHIEF</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <UnitType>UNIT_NATIVE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_WAGON_TRAIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -15180,10 +14780,6 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <UnitType>UNIT_NATIVE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
@@ -15541,6 +15137,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -16116,6 +15724,10 @@
                     <UnitType>UNIT_GREAT_CHIEF</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <UnitType>UNIT_NATIVE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_WAGON_TRAIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -16142,10 +15754,6 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <UnitType>UNIT_NATIVE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
@@ -16503,6 +16111,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -17488,6 +17108,18 @@
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
             </Professions>
             <Traits/>
             <FreeUnitClasses>
@@ -18452,6 +18084,18 @@
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
             </Professions>
             <Traits/>
             <FreeUnitClasses>
@@ -19029,6 +18673,10 @@
                     <UnitType>UNIT_GREAT_CHIEF</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <UnitType>UNIT_NATIVE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_WAGON_TRAIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -19055,10 +18703,6 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <UnitType>UNIT_NATIVE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
@@ -19416,6 +19060,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -19996,6 +19652,10 @@
                     <UnitType>UNIT_GREAT_CHIEF</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <UnitType>UNIT_NATIVE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_WAGON_TRAIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -20022,10 +19682,6 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <UnitType>UNIT_NATIVE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
@@ -20383,6 +20039,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -21349,6 +21017,18 @@
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
             </Professions>
             <Traits/>
             <FreeUnitClasses>
@@ -22311,6 +21991,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -23286,6 +22978,18 @@
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
             </Professions>
             <Traits/>
             <FreeUnitClasses>
@@ -23841,6 +23545,10 @@
                     <UnitType>UNIT_GREAT_CHIEF</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <UnitType>UNIT_NATIVE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_WAGON_TRAIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -23867,10 +23575,6 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <UnitType>UNIT_NATIVE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
@@ -24228,6 +23932,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -24814,6 +24530,10 @@
                     <UnitType>UNIT_GREAT_CHIEF</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <UnitType>UNIT_NATIVE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_WAGON_TRAIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -24840,10 +24560,6 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <UnitType>UNIT_NATIVE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
@@ -25201,6 +24917,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -25773,6 +25501,10 @@
                     <UnitType>UNIT_GREAT_CHIEF</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <UnitType>UNIT_NATIVE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_WAGON_TRAIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -25799,10 +25531,6 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <UnitType>UNIT_NATIVE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
@@ -26160,6 +25888,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -27115,6 +26855,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -28075,6 +27827,18 @@
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
             </Professions>
             <Traits/>
             <FreeUnitClasses>
@@ -28635,6 +28399,10 @@
                     <UnitType>UNIT_GREAT_CHIEF</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <UnitType>UNIT_NATIVE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_WAGON_TRAIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -28661,10 +28429,6 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <UnitType>UNIT_NATIVE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
@@ -29022,6 +28786,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -29987,6 +29763,18 @@
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
             </Professions>
             <Traits/>
             <FreeUnitClasses>
@@ -30946,6 +30734,18 @@
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
             </Professions>
             <Traits/>
             <FreeUnitClasses>
@@ -31902,6 +31702,18 @@
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
             </Professions>
             <Traits/>
             <FreeUnitClasses>
@@ -32468,6 +32280,10 @@
                     <UnitType>UNIT_GREAT_CHIEF</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <UnitType>UNIT_NATIVE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_WAGON_TRAIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -32494,10 +32310,6 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <UnitType>UNIT_NATIVE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
@@ -32855,6 +32667,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -33423,6 +33247,10 @@
                     <UnitType>UNIT_GREAT_CHIEF</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <UnitType>UNIT_NATIVE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_WAGON_TRAIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -33449,10 +33277,6 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <UnitType>UNIT_NATIVE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
@@ -33810,6 +33634,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>
@@ -34372,6 +34208,10 @@
                     <UnitType>UNIT_GREAT_CHIEF</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <UnitType>UNIT_NATIVE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_WAGON_TRAIN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -34398,10 +34238,6 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <UnitType>UNIT_NATIVE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
@@ -34759,6 +34595,18 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_BARLEY_FARMER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_ARTILLERY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
             </Professions>

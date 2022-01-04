@@ -2364,7 +2364,15 @@
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_VETERAN</UnitClass>
-                    <iFreeUnits>5</iFreeUnits>
+                    <iFreeUnits>3</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_VETERAN_CAVALRY</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_VETERAN_DRAGOON</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_CONTINENTAL_GUARD</UnitClass>
@@ -2432,7 +2440,11 @@
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_VETERAN</UnitClass>
-                    <iFreeUnits>5</iFreeUnits>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_VETERAN_CAVALRY</UnitClass>
+                    <iFreeUnits>2</iFreeUnits>
                 </FreeUnit>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_VETERAN_DRAGOON</UnitClass>
