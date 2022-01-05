@@ -2,7 +2,7 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
         <Tag>TXT_KEY_INVISIBLE_RANGER</Tag>
-        <English>[ICON_BULLET]Invisible while in Forests.</English>
+        <English>[ICON_BULLET]Invisible while in forests.</English>
         <French>[ICON_BULLET]Invisible dans la forêt.</French>
         <German>[ICON_BULLET]In Wäldern unsichtbar.</German>
         <Italian>[ICON_BULLET]Invisible while in Forests.</Italian>
