@@ -11710,7 +11710,7 @@
             <PythonCanDoUnit/>
             <PythonCallback/>
         </EventTriggerInfo>
-       <EventTriggerInfo>
+        <EventTriggerInfo>
             <Type>EVENTTRIGGER_LOST_SHIP_1</Type>
             <WorldNewsTexts>
                 <Text>TXT_KEY_EVENTTRIGGER_LOST_SHIP_1</Text>
