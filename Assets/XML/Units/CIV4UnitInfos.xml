@@ -28438,7 +28438,7 @@
             <Description>TXT_KEY_UNIT_EMIGRANT</Description>
             <Civilopedia>TXT_KEY_UNIT_EMIGRANT_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_EMIGRANT_STRATEGY</Strategy>
-            <iTeachLevel>1</iTeachLevel>
+            <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
             <bNoBadGoodies>0</bNoBadGoodies>
