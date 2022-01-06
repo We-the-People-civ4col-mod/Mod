@@ -40324,7 +40324,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>3500</iEuropeCost>
+            <iEuropeCost>4000</iEuropeCost>
             <iEuropeCostIncrease>800</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -41603,7 +41603,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>4000</iEuropeCost>
+            <iEuropeCost>3600</iEuropeCost>
             <iEuropeCostIncrease>1200</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -41795,7 +41795,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>4400</iEuropeCost>
+            <iEuropeCost>4000</iEuropeCost>
             <iEuropeCostIncrease>1400</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -41983,8 +41983,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>5000</iEuropeCost>
-            <iEuropeCostIncrease>1250</iEuropeCostIncrease>
+            <iEuropeCost>4500</iEuropeCost>
+            <iEuropeCostIncrease>1500</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>20</iMinAreaSize>
@@ -42353,7 +42353,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>8000</iEuropeCost>
+            <iEuropeCost>6000</iEuropeCost>
             <iEuropeCostIncrease>2000</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
