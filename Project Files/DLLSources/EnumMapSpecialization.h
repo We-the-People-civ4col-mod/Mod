@@ -5,6 +5,7 @@
 #include "CvEnumsFunctions.h"
 #include "EnumMapSpecializationInt.h"
 #include "EnumMapSpecializationBool.h"
+#include "EnumMapSpecializationReference.h"
 
 // special cases for EnumMap. Needs to be included after this file
 template<class T, int DEFAULT>

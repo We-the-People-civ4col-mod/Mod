@@ -11,12 +11,13 @@ template <typename T>
 struct VARINFO
 {
 	static const JITarrayTypes JIT = NO_JIT_ARRAY_TYPE;
-	static const VariableTypes TYPE = VARIABLE_TYPE_GENERIC;
+	static const VariableTypes TYPE = VARIABLE_TYPE_CLASS;
+	static const int IS_CLASS = 1;
 	static const int LENGTH = MAX_SHORT;
 	static const int DEFAULT = 0;
 	static const int SIZE = sizeof(T);
 	template <int T> struct STATIC {
-		static const int VAL = T * sizeof(T) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;
+		static const int VAL = VARIABLE_TYPE_DYNAMIC;
 	};
 };
 

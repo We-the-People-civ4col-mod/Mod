@@ -226,6 +226,7 @@ sub handleStruct
 	$output .= "{\n";
 	$output .= "\tstatic const JITarrayTypes JIT = " . $var{$name}{JIT} . ";\n";
 	$output .= "\tstatic const int DEFAULT = " . $var{$name}{DEFAULT} . ";\n";
+	$output .= "\tstatic const int IS_CLASS = 0;\n";
 	
 	if (exists $var{$type}{var})
 	{
