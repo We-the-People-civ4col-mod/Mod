@@ -502,6 +502,11 @@
             <DefaultUnit>UNIT_CARAVELA_REDONDA</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_SCHOONER</Type>
+            <Description>TXT_KEY_UNITCLASS_SCHOONER</Description>
+            <DefaultUnit>UNIT_SCHOONER</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_MERCHANTMAN</Type>
             <Description>TXT_KEY_UNITCLASS_MERCHANTMAN</Description>
             <DefaultUnit>UNIT_MERCHANTMAN</DefaultUnit>
@@ -535,11 +540,6 @@
             <Type>UNITCLASS_SLOOP</Type>
             <Description>TXT_KEY_UNITCLASS_SLOOP</Description>
             <DefaultUnit>UNIT_SLOOP</DefaultUnit>
-        </UnitClassInfo>
-        <UnitClassInfo>
-            <Type>UNITCLASS_SCHOONER</Type>
-            <Description>TXT_KEY_UNITCLASS_SCHOONER</Description>
-            <DefaultUnit>UNIT_SCHOONER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_PRIVATEER</Type>
