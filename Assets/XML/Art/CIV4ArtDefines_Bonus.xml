@@ -888,8 +888,8 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_HARDWOOD</Type>
-            <fScale>1.0</fScale>
-            <fInterfaceScale>1.0</fInterfaceScale>
+            <fScale>1.5</fScale>
+            <fInterfaceScale>1.3</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Hard_Wood/olive_press.nif</NIF>
             <KFM>Art/Terrain/Resources/Hard_Wood/olive_press.kfm</KFM>
             <Button>Art/Interface/Buttons/Hard_Wood_Button.dds</Button>
@@ -999,7 +999,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_CHERRIES</Type>
             <fScale>4.0</fScale>
-            <fInterfaceScale>1.3</fInterfaceScale>
+            <fInterfaceScale>1.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Cherries/Cherry_Trees.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/Cherries_Button.dds</Button>

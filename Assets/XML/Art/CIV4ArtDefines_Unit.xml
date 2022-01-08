@@ -16319,7 +16319,7 @@
             </AudioRunSounds>
         </UnitArtInfo>	
 		<UnitArtInfo>
-            <Type>ART_DEF_UNIT_PADDED_YERBA_TEA</Type>
+            <Type>ART_DEF_UNIT_YERBA_TEA</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>

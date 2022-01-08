@@ -112,17 +112,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HARDWOOD</Tag>
-        <English>Hardwood Trees</English>
+        <English>Hardwood</English>
         <German>
-            <Text>Hartholzbäume</Text>
+            <Text>Hartholz</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HARDWOOD_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hardwood Trees[COLOR_REVERT] TODO</English>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hartholzbäume[COLOR_REVERT] TODO</German>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hardwood[COLOR_REVERT] TODO</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hartholz[COLOR_REVERT] TODO</German>
     </TEXT>	
     <TEXT>
         <Tag>TXT_KEY_BONUS_CATTLE</Tag>
