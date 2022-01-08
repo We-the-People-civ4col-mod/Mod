@@ -1842,7 +1842,7 @@
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
-                </BonusTypeStruct>
+                </BonusTypeStruct>				
                 <BonusTypeStruct>
                     <BonusType>BONUS_SUGAR</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
@@ -2087,6 +2087,21 @@
                         </YieldIntegerPair>
                         <YieldIntegerPair>
                             <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_HARDWOOD</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_HARDWOOD</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -2783,6 +2798,17 @@
                         </YieldIntegerPair>
                     </YieldChanges>
                 </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_MAPLE_TREES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_MAPLE_SIRUP</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
             </BonusTypeStructs>
             <ImprovementPillage/>
             <ImprovementUpgrade>IMPROVEMENT_COLLECTORS_DEPOT</ImprovementUpgrade>
@@ -2799,10 +2825,18 @@
                     <YieldType>YIELD_COCA_LEAVES</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_YERBA_LEAVES</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
             </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_YERBA_LEAVES</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -2849,6 +2883,17 @@
                         </YieldIntegerPair>
                     </YieldChanges>
                 </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_YERBA</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_YERBA_LEAVES</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>				
             </BonusTypeStructs>
             <ImprovementPillage/>
             <ImprovementUpgrade>IMPROVEMENT_COLLECTORS_DEPOT2</ImprovementUpgrade>
@@ -2924,6 +2969,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_BLOODWOOD</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_LOGWOOD</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -4002,6 +4058,21 @@
                         </YieldIntegerPair>
                     </YieldChanges>
                 </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_HARDWOOD</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_LUMBER</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_HARDWOOD</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
             </BonusTypeStructs>
             <ImprovementPillage/>
             <ImprovementUpgrade/>
@@ -4676,6 +4747,17 @@
                         </YieldIntegerPair>
                     </YieldChanges>
                 </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_MAPLE_TREES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_MAPLE_SIRUP</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
             </BonusTypeStructs>
             <ImprovementPillage/>
             <ImprovementUpgrade/>
@@ -4692,10 +4774,18 @@
                     <YieldType>YIELD_COCA_LEAVES</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_YERBA_LEAVES</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
             </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_YERBA_LEAVES</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -4738,6 +4828,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_COCA_LEAVES</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_YERBA</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_YERBA_LEAVES</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -4817,6 +4918,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_BLOODWOOD</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_LOGWOOD</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>

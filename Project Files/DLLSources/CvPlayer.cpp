@@ -15306,6 +15306,13 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 					iPrice = getYieldBuyPrice(YIELD_TOBACCO) - 1;
 				}
 				break;
+			case YIELD_YERBA_TEA:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_YERBA_LEAVES) <= price_diff)
+				{
+					eYield = YIELD_YERBA_LEAVES;
+					iPrice = getYieldBuyPrice(YIELD_YERBA_LEAVES) - 1;
+				}
+				break;
 			case YIELD_WOOL_CLOTH:
 				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_WOOL) <= price_diff)
 				{
@@ -15332,6 +15339,21 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 					{
 						eYield = YIELD_CLOTH;
 						iPrice = getYieldBuyPrice(YIELD_CLOTH) - 1;
+					}
+				}
+				break;
+			case YIELD_COLOURED_WOOL_CLOTH:
+				if (getYieldBuyPrice(eYield) - (getYieldBuyPrice(YIELD_LOGWOOD) + getYieldBuyPrice(YIELD_WOOL_CLOTH)) <= price_diff)
+				{
+					if (getYieldBuyPrice(YIELD_WOOL_CLOTH) - getYieldBuyPrice(YIELD_LOGWOOD) <= price_diff)
+					{
+						eYield = YIELD_LOGWOOD;
+						iPrice = getYieldBuyPrice(YIELD_LOGWOOD) - 1;
+					}
+					else
+					{
+						eYield = YIELD_WOOL_CLOTH;
+						iPrice = getYieldBuyPrice(YIELD_WOOL_CLOTH) - 1;
 					}
 				}
 				break;
@@ -15867,6 +15889,13 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 					iPrice = getYieldAfricaBuyPrice(YIELD_TOBACCO) - 1;
 				}
 				break;
+			case YIELD_YERBA_TEA:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_YERBA_LEAVES) <= price_diff)
+				{
+					eYield = YIELD_YERBA_LEAVES;
+					iPrice = getYieldAfricaBuyPrice(YIELD_YERBA_LEAVES) - 1;
+				}
+				break;
 			case YIELD_WOOL_CLOTH:
 				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_WOOL) <= price_diff)
 				{
@@ -15896,6 +15925,20 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 					}
 				}
 				break;
+			case YIELD_COLOURED_WOOL_CLOTH:
+				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_LOGWOOD) + getYieldAfricaBuyPrice(YIELD_WOOL_CLOTH)) <= price_diff)
+				{
+					if (getYieldAfricaBuyPrice(YIELD_WOOL_CLOTH) - getYieldAfricaBuyPrice(YIELD_LOGWOOD) <= price_diff)
+					{
+						eYield = YIELD_LOGWOOD;
+						iPrice = getYieldAfricaBuyPrice(YIELD_LOGWOOD) - 1;
+					}
+					else
+					{
+						eYield = YIELD_WOOL_CLOTH;
+						iPrice = getYieldAfricaBuyPrice(YIELD_WOOL_CLOTH) - 1;
+					}
+				}
 			case YIELD_GOAT_HIDE_BOOTS:
 				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_GOAT_HIDES) <= price_diff)
 				{
@@ -16369,6 +16412,13 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 					iPrice = getYieldPortRoyalBuyPrice(YIELD_TOBACCO) - 1;
 				}
 				break;
+			case YIELD_YERBA_TEA:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_YERBA_LEAVES) <= price_diff)
+				{
+					eYield = YIELD_YERBA_LEAVES;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_YERBA_LEAVES) - 1;
+				}
+				break;
 			case YIELD_WOOL_CLOTH:
 				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_WOOL) <= price_diff)
 				{
@@ -16398,6 +16448,20 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 					}
 				}
 				break;
+			case YIELD_COLOURED_WOOL_CLOTH:
+				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_LOGWOOD) + getYieldPortRoyalBuyPrice(YIELD_WOOL_CLOTH)) <= price_diff)
+				{
+					if (getYieldPortRoyalBuyPrice(YIELD_WOOL_CLOTH) - getYieldPortRoyalBuyPrice(YIELD_LOGWOOD) <= price_diff)
+					{
+						eYield = YIELD_LOGWOOD;
+						iPrice = getYieldPortRoyalBuyPrice(YIELD_LOGWOOD) - 1;
+					}
+					else
+					{
+						eYield = YIELD_WOOL_CLOTH;
+						iPrice = getYieldPortRoyalBuyPrice(YIELD_WOOL_CLOTH) - 1;
+					}
+				}
 			case YIELD_GOAT_HIDE_BOOTS:
 				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_GOAT_HIDES) <= price_diff)
 				{
@@ -19648,10 +19712,13 @@ void CvPlayer::doAIImmigrant(int iIndex)
 
 // TAC - AI Economy - Ray - START
 // R&R, ray improvement redistribution
-void CvPlayer::redistributeWood() {
+void CvPlayer::redistributeWood() 
+{
 
-	// do nothing if Player has no cities
-	if (getNumCities() <1) {
+	// do nothing if Player has no cities or just one
+	int citycount = getNumCities();
+	if (citycount <= 1) 
+	{
 		return;
 	}
 
@@ -19661,71 +19728,90 @@ void CvPlayer::redistributeWood() {
 		return;
 	}
 
-	int citycount = getNumCities();
-
 	//calculate total wood and stone of all cities
 	int totalwood = 0;
 	int totalstone = 0;
-	int iTotalPopulation = 0;
+	int totalhardwood = 0;
 
 	CvCity* pLoopCity;
 
-	// Loop through cities first time to get all wood
+	// Loop through cities first time to get ressources to distribute, but we leave a rest
 	int iLoop;
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
-		//add wood and stone
-		totalwood += pLoopCity->getYieldStored(YIELD_LUMBER);
-		totalstone += pLoopCity->getYieldStored(YIELD_STONE);
-		//add population
-		iTotalPopulation += pLoopCity->getPopulation();
-		//reset Lumber and Stone to 0 because already added to storage variables
-		pLoopCity->setYieldStored(YIELD_LUMBER, 0);
-		pLoopCity->setYieldStored(YIELD_STONE, 0);
+		// WTP, ray, this may have caused negative storage bug
+		// thus we leave some in the city
+		int iRestToLeave = 50;
+
+		// for Lumber
+		if (pLoopCity->getYieldStored(YIELD_LUMBER) > iRestToLeave)
+		{
+			totalwood += pLoopCity->getYieldStored(YIELD_LUMBER) - iRestToLeave;
+			pLoopCity->setYieldStored(YIELD_LUMBER, iRestToLeave);
+		}
+
+		// for Stone
+		if (pLoopCity->getYieldStored(YIELD_STONE) > iRestToLeave)
+		{
+			totalwood += pLoopCity->getYieldStored(YIELD_STONE) - iRestToLeave;
+			pLoopCity->setYieldStored(YIELD_STONE, iRestToLeave);
+		}
+
+		// for Hardwood
+		if (pLoopCity->getYieldStored(YIELD_HARDWOOD) > iRestToLeave)
+		{
+			totalwood += pLoopCity->getYieldStored(YIELD_HARDWOOD) - iRestToLeave;
+			pLoopCity->setYieldStored(YIELD_HARDWOOD, iRestToLeave);
+		}
 	}
 
-	int woodToDisbributePerCitizen = totalwood / iTotalPopulation;
-	int stoneToDisbributePerCitizen = totalstone / iTotalPopulation;
+	// now we distribute accordign to population
+	int iTotalPopulation = getTotalPopulation();
 
-	// Loop through cities second time to distribute all wood
-	int iLoop2;
-	for (pLoopCity = firstCity(&iLoop2); pLoopCity != NULL; pLoopCity = nextCity(&iLoop2))
+	// should never happen, but let us be safe to avoid division by 0
+	if (iTotalPopulation != 0)
 	{
-		// bigger cities get more
-		int iPopulationOfThisCity = pLoopCity->getPopulation();
-		// R&R, ray, small fix
-		int woodtodistribute = woodToDisbributePerCitizen * iPopulationOfThisCity;
-		int stonetodistribute = stoneToDisbributePerCitizen * iPopulationOfThisCity;
-		pLoopCity->setYieldStored(YIELD_LUMBER, woodtodistribute);
-		pLoopCity->setYieldStored(YIELD_STONE, stonetodistribute);
-		// substract the wood and stone distributed from the total amounts
-		totalwood -= woodtodistribute;
-		totalstone -= stonetodistribute;
+		int woodToDisbributePerCitizen = totalwood / iTotalPopulation;
+		int stoneToDisbributePerCitizen = totalstone / iTotalPopulation;
+		int hardwoodToDisbributePerCitizen = totalhardwood / iTotalPopulation;
+
+		// Loop through cities second time to distribute all wood
+		int iLoop2;
+		for (pLoopCity = firstCity(&iLoop2); pLoopCity != NULL; pLoopCity = nextCity(&iLoop2))
+		{
+			// bigger cities get more
+			int iPopulationOfThisCity = pLoopCity->getPopulation();
+		
+			// we distribute accordign to the Population Size
+			int woodtodistribute = woodToDisbributePerCitizen * iPopulationOfThisCity;
+			int stonetodistribute = stoneToDisbributePerCitizen * iPopulationOfThisCity;
+			int hardwoodtodistribute = hardwoodToDisbributePerCitizen * iPopulationOfThisCity;
+
+			// we dsitribte the caclulated ressources on to what it already has
+			pLoopCity->changeYieldStored(YIELD_LUMBER, woodtodistribute);
+			pLoopCity->changeYieldStored(YIELD_STONE, stonetodistribute);
+			pLoopCity->changeYieldStored(YIELD_HARDWOOD, hardwoodtodistribute);
+
+			// substract the distributed ressources from the total amounts
+			totalwood -= woodtodistribute;
+			totalstone -= stonetodistribute;
+			totalhardwood -= hardwoodtodistribute;
+		}
 	}
 
-	// for safety, if there is some wood left, give it to the first city
+	// for safety, if there are some ressources left, we add it to the first city
 	if (totalwood > 0)
 	{
-		int iLoop3;
-		for (pLoopCity = firstCity(&iLoop3); pLoopCity != NULL; pLoopCity = nextCity(&iLoop3))
-		{
-			int woodalreadydistributed = pLoopCity->getYieldStored(YIELD_LUMBER);
-			pLoopCity->setYieldStored(YIELD_LUMBER, totalwood + woodalreadydistributed);
-			break;
-		}
+		getCity(0)->changeYieldStored(YIELD_LUMBER, totalwood);
 	}
-	// for safety, if there is some stone left, give it to the first city
 	if (totalstone > 0)
 	{
-		int iLoop4;
-		for (pLoopCity = firstCity(&iLoop4); pLoopCity != NULL; pLoopCity = nextCity(&iLoop4))
-		{
-			int stonealreadydistributed = pLoopCity->getYieldStored(YIELD_STONE);
-			pLoopCity->setYieldStored(YIELD_STONE, totalstone + stonealreadydistributed);
-			break;
-		}
+		getCity(0)->changeYieldStored(YIELD_STONE, totalstone);
 	}
-
+	if (totalhardwood > 0)
+	{
+		getCity(0)->changeYieldStored(YIELD_HARDWOOD, totalhardwood);
+	}
 }
 // TAC - AI Economy - Ray - END
 

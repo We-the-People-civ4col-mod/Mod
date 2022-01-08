@@ -627,6 +627,11 @@
             <DefaultUnit>UNIT_LUMBER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_HARDWOOD</Type>
+            <Description>TXT_KEY_UNITCLASS_HARDWOOD</Description>
+            <DefaultUnit>UNIT_HARDWOOD</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_STONE</Type>
             <Description>TXT_KEY_UNITCLASS_STONE</Description>
             <DefaultUnit>UNIT_STONE</DefaultUnit>
@@ -650,6 +655,11 @@
             <Type>UNITCLASS_COCA_LEAVES</Type>
             <Description>TXT_KEY_UNITCLASS_COCA_LEAVES</Description>
             <DefaultUnit>UNIT_COCA_LEAVES</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_MAPLE_SIRUP</Type>
+            <Description>TXT_KEY_UNITCLASS_MAPLE_SIRUP</Description>
+            <DefaultUnit>UNIT_MAPLE_SIRUP</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_COCOA_FRUITS</Type>
@@ -681,6 +691,11 @@
             <Description>TXT_KEY_UNITCLASS_INDIGO</Description>
             <DefaultUnit>UNIT_INDIGO</DefaultUnit>
         </UnitClassInfo>	
+        <UnitClassInfo>
+            <Type>UNITCLASS_LOGWOOD</Type>
+            <Description>TXT_KEY_UNITCLASS_LOGWOOD</Description>
+            <DefaultUnit>UNIT_LOGWOOD</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_WOOL</Type>
             <Description>TXT_KEY_UNITCLASS_WOOL</Description>
@@ -747,6 +762,11 @@
             <DefaultUnit>UNIT_TOBACCO</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_YERBA_LEAVES</Type>
+            <Description>TXT_KEY_UNITCLASS_YERBA_LEAVES</Description>
+            <DefaultUnit>UNIT_YERBA_LEAVES</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_HEMP</Type>
             <Description>TXT_KEY_UNITCLASS_HEMP</Description>
             <DefaultUnit>UNIT_HEMP</DefaultUnit>
@@ -792,11 +812,6 @@
             <DefaultUnit>UNIT_SPICES</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
-            <Type>UNITCLASS_WOOL_CLOTH</Type>
-            <Description>TXT_KEY_UNITCLASS_WOOL_CLOTH</Description>
-            <DefaultUnit>UNIT_WOOL_CLOTH</DefaultUnit>
-        </UnitClassInfo>
-        <UnitClassInfo>
             <Type>UNITCLASS_CLOTH</Type>
             <Description>TXT_KEY_UNITCLASS_CLOTH</Description>
             <DefaultUnit>UNIT_CLOTH</DefaultUnit>
@@ -805,7 +820,17 @@
             <Type>UNITCLASS_COLOURED_CLOTH</Type>
             <Description>TXT_KEY_UNITCLASS_COLOURED_CLOTH</Description>
             <DefaultUnit>UNIT_COLOURED_CLOTH</DefaultUnit>
-        </UnitClassInfo>	
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_WOOL_CLOTH</Type>
+            <Description>TXT_KEY_UNITCLASS_WOOL_CLOTH</Description>
+            <DefaultUnit>UNIT_WOOL_CLOTH</DefaultUnit>
+        </UnitClassInfo>		
+        <UnitClassInfo>
+            <Type>UNITCLASS_COLOURED_WOOL_CLOTH</Type>
+            <Description>TXT_KEY_UNITCLASS_COLOURED_WOOL_CLOTH</Description>
+            <DefaultUnit>UNIT_COLOURED_WOOL_CLOTH</DefaultUnit>
+        </UnitClassInfo>		
         <UnitClassInfo>
             <Type>UNITCLASS_GOAT_HIDE_BOOTS</Type>
             <Description>TXT_KEY_UNITCLASS_GOAT_HIDE_BOOTS</Description>
@@ -855,6 +880,11 @@
             <Type>UNITCLASS_CIGARS</Type>
             <Description>TXT_KEY_UNITCLASS_CIGARS</Description>
             <DefaultUnit>UNIT_CIGARS</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_YERBA_TEA</Type>
+            <Description>TXT_KEY_UNITCLASS_YERBA_TEA</Description>
+            <DefaultUnit>UNIT_YERBA_TEA</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_ROPE</Type>

@@ -1399,6 +1399,18 @@
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_BONUS_YERBA</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>1.4</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Yerba/Cnq.nif</NIF>
+            <KFM/>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
+        </BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_HORSES</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
@@ -1635,6 +1647,18 @@
             <fScale>1.4</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Indigo/Indigo.nif</NIF>
+            <KFM/>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
+        </BuildingArtInfo>
+        <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_BONUS_BLOODWOOD</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>1.4</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Bloodwood/blauholz.nif</NIF>
             <KFM/>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
@@ -1963,6 +1987,18 @@
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_MAPLE_TREES</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Maple_Trees/blauholz.nif</NIF>
+            <KFM/>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
+        </BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_BOREAL_FOREST</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
@@ -1971,6 +2007,18 @@
             <fScale>1.2</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Valuable_Wood/spices.nif</NIF>
+            <KFM/>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
+        </BuildingArtInfo>
+        <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_BONUS_HARDWOOD</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Hard_Wood/olive_press.nif</NIF>
             <KFM/>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>

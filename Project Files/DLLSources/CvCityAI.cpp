@@ -4499,9 +4499,11 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_COCOA:
 		case YIELD_COFFEE:
 		case YIELD_CIGARS:
-		case YIELD_WOOL_CLOTH:
+		case YIELD_YERBA_TEA:
 		case YIELD_CLOTH:
 		case YIELD_COLOURED_CLOTH:
+		case YIELD_WOOL_CLOTH:
+		case YIELD_COLOURED_WOOL_CLOTH:
 		case YIELD_GOAT_HIDE_BOOTS:
 		case YIELD_PIG_LEATHER:
 		case YIELD_LEATHER:
@@ -4519,6 +4521,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 			break;
 		// We punish overproduction of input yields 
 		case YIELD_LUMBER:
+		case YIELD_HARDWOOD:
 		case YIELD_STONE:
 		case YIELD_HEMP:
 		case YIELD_FLAX:
@@ -4530,11 +4533,14 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_CHICKEN:
 		case YIELD_GEESE:
 		case YIELD_COCA_LEAVES:
+		case YIELD_MAPLE_SIRUP:
 		case YIELD_COCOA_FRUITS:
 		case YIELD_COFFEE_BERRIES:
 		case YIELD_TOBACCO:
+		case YIELD_YERBA_LEAVES:
 		case YIELD_COTTON:
 		case YIELD_INDIGO:
+		case YIELD_LOGWOOD:
 		case YIELD_WOOL:
 		case YIELD_GOAT_HIDES:
 		case YIELD_PIG_SKIN:
@@ -4888,7 +4894,8 @@ bool CvCityAI::AI_shouldExportYield(YieldTypes eYield) const
 	}
 	// TAC - AI Economy - koma13 - END
 
-	if ((GET_PLAYER(getOwnerINLINE()).AI_shouldBuyFromEurope(eYield)) || eYield == YIELD_LUMBER || eYield == YIELD_STONE)
+	// WTP, ray small correction to not hardcode Lumber, Stone and Hardwood
+	if ((GET_PLAYER(getOwnerINLINE()).AI_shouldBuyFromEurope(eYield)) || GC.getYieldInfo(eYield).isIgnoredForStorageCapacity())
 	{
 		return false;
 	}

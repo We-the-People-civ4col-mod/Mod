@@ -513,6 +513,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_YERBA</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Yerba/Cnq.nif</NIF>
+            <KFM>Art/Terrain/Resources/Yerba/Cnq.kfm</KFM>
+            <Button>Art/Interface/Buttons/Yerba_Button.dds</Button>
+            <FontButtonIndex>99</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>			
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_COFFEE</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
@@ -776,6 +787,17 @@
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
+		<BonusArtInfo>
+            <Type>ART_DEF_BONUS_BLOODWOOD</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Bloodwood/blauholz.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/Bloodwood_Button.dds</Button>
+            <FontButtonIndex>96</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_STONE</Type>
             <fScale>1.0</fScale>
@@ -865,6 +887,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_HARDWOOD</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Hard_Wood/olive_press.nif</NIF>
+            <KFM>Art/Terrain/Resources/Hard_Wood/olive_press.kfm</KFM>
+            <Button>Art/Interface/Buttons/Hard_Wood_Button.dds</Button>
+            <FontButtonIndex>97</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>	
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_RED_PEPPER</Type>
             <fScale>0.8</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
@@ -875,6 +908,17 @@
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_MAPLE_TREES</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Maple_Trees/blauholz.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/Maple_Tree_Button.dds</Button>
+            <FontButtonIndex>98</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>	
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_BARLEY</Type>
             <fScale>1.0</fScale>
@@ -1127,6 +1171,17 @@
             <FontButtonIndex>49</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
-        </BonusArtInfo>
+        </BonusArtInfo>						
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_MAPLE_TREES</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Maple_Trees/blauholz.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/Maple_Tree_Button.dds</Button>
+            <FontButtonIndex>98</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>							
     </BonusArtInfos>
 </Civ4ArtDefines>

@@ -578,5 +578,251 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_PADDED_FURNITURE_STRATEGY</Tag>
         <English>Can be left empty</English>
-    </TEXT>		
+    </TEXT>
+	<!-- HARDWOOD -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_HARDWOOD</Tag>
+        <English>Hardwood</English>
+        <German>
+            <Text>Hartholz</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_HARDWOOD</Tag>
+        <English>Hardwood</English>
+        <German>
+            <Text>Hartholz</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HARDWOOD</Tag>
+        <English>Hardwood</English>
+        <German>
+            <Text>Hartholz</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_HARDWOOD_PEDIA</Tag>
+        <English>[TAB][H1]Hardwood[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Hartholz[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HARDWOOD_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HARDWOOD_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- MAPLE_SIRUP -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_MAPLE_SIRUP</Tag>
+        <English>Maple Sirup</English>
+        <German>
+            <Text>Ahornsaft</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_MAPLE_SIRUP</Tag>
+        <English>Maple Sirup</English>
+        <German>
+            <Text>Ahornsaft</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MAPLE_SIRUP</Tag>
+        <English>Maple Sirup</English>
+        <German>
+            <Text>Ahornsaft</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_MAPLE_SIRUP_PEDIA</Tag>
+        <English>[TAB][H1]Maple Sirup[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Ahornsaft[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- YERBA_LEAVES -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_YERBA_LEAVES</Tag>
+        <English>Yerba Leaves</English>
+        <German>
+            <Text>Yerbablätter</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_YERBA_LEAVES</Tag>
+        <English>Yerba Leaves</English>
+        <German>
+            <Text>Yerbablätter</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YERBA_LEAVES</Tag>
+        <English>Yerba Leaves</English>
+        <German>
+            <Text>Yerbablätter</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_YERBA_LEAVES_PEDIA</Tag>
+        <English>[TAB][H1]Yerba Leaves[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Yerbablätter[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YERBA_LEAVES_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YERBA_LEAVES_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- LOGWOOD -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_LOGWOOD</Tag>
+        <English>Logwood</English>
+        <German>
+            <Text>Färbholz</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_LOGWOOD</Tag>
+        <English>Logwood</English>
+        <German>
+            <Text>Färbholz</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LOGWOOD</Tag>
+        <English>Logwood</English>
+        <German>
+            <Text>Färbholz</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_LOGWOOD_PEDIA</Tag>
+        <English>[TAB][H1]Logwood[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Färbholz[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LOGWOOD_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LOGWOOD_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- YERBA_TEA -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_YERBA_TEA</Tag>
+        <English>Yerba Tea</English>
+        <German>
+            <Text>Yerbatee</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_YERBA_TEA</Tag>
+        <English>Yerba Tea</English>
+        <German>
+            <Text>Yerbatee</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YERBA_TEA</Tag>
+        <English>Yerba Tea</English>
+        <German>
+            <Text>Yerbatee</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_YERBA_TEA_PEDIA</Tag>
+        <English>[TAB][H1]Yerba Tea[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Yerbatee[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YERBA_TEA_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YERBA_TEA_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>	
+	<!-- COLOURED_WOOL_CLOTH -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_COLOURED_WOOL_CLOTH</Tag>
+        <English>Coloured Wool Cloth</English>
+        <German>
+            <Text>Gefärbter Wollstoff</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_COLOURED_WOOL_CLOTH</Tag>
+        <English>Coloured Wool Cloth</English>
+        <German>
+            <Text>Gefärbter Wollstoff</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH</Tag>
+        <English>Coloured Wool Cloth</English>
+        <German>
+            <Text>Gefärbter Wollstoff</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_COLOURED_WOOL_CLOTH_PEDIA</Tag>
+        <English>[TAB][H1]Coloured Wool Cloth[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Gefärbter Wollstoff[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
 </Civ4GameText>

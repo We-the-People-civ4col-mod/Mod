@@ -111,6 +111,20 @@
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Borealwald[COLOR_REVERT] entsteht nur auf Waldgebieten der [LINK=FEATURE_FOREST_TUNDRA]Taiga[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Edelholz ist sehr hart, hat eine hohe Dichte, feine Texturen und kann sehr glatt geschliffen werden. Daher ist es sehr begehrt, um Verzierungen oder hochwertige Holzprodukte, wie zum Beispiel Möbel, herzustellen.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_HARDWOOD</Tag>
+        <English>Hardwood Trees</English>
+        <German>
+            <Text>Hartholzbäume</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_HARDWOOD_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hardwood Trees[COLOR_REVERT] TODO</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Hartholzbäume[COLOR_REVERT] TODO</German>
+    </TEXT>	
+    <TEXT>
         <Tag>TXT_KEY_BONUS_CATTLE</Tag>
         <English>Cattle</English>
         <French>Bétail</French>
@@ -158,6 +172,20 @@
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]La plante de [COLOR_UNIT_TEXT]Coca[COLOR_REVERT] est endémique aux montagnes tropicales d'Amérique du Sud. Elle ne pousse que sur les collines de [LINK=TERRAIN_SAVANNAH]savane[\LINK].[PARAGRAPH:2][BOLD]Histoire :[\BOLD][PARAGRAPH:1]La coca est une plante d'Amérique du Sud de la famille des Érythroxylacées. Elle joue un rôle important dans la culture andine, à travers ses utilisations rituelles ou médicinales des [LINK=YIELD_COCA_LEAVES]feuilles de coca[\LINK].[PARAGRAPH:1]Elle pousse à l'état sauvage dans la cordillère des Andes à des altitudes variant de 300 à 2 000 m. Comme toutes les espèces du genre Erythroxylum, elle apprécie particulièrement les sols acides.[PARAGRAPH:1]C'est un fondement culturel pour l'Amérique latine - notamment les hauts plateaux andins - où son usage remonte à près de 5 000 ans. Du fait de ses différentes vertus, c'est une plante sacrée pour certains peuples amérindiens. Pour ces derniers, Mama Coca est la fille de Pachamama. Elle est ainsi utilisée traditionnellement de la Colombie jusqu'au Chili aussi bien pour ses vertus stimulantes que dans le cadre de cérémonies religieuses, elle aurait même servi de taxe d'imposition. Dans l'Empire inca, la coca issue de l'actuel Pérou (tupa coca) servait aux cérémonies religieuses et aux dignitaires alors que la coca issue de l'actuelle Bolivie (muma coca) servait aux fonctionnaires voire au peuple. Son usage est signalé par les conquérants espagnols dès le XVIe siècle qui en condamnent d'abord l'usage la qualifiant de « satanique » avant de l'encourager en constatant l'efficacité en termes de rentabilité sur les travailleurs. C'est Nicolas Monardés de Séville, un naturaliste espagnol qui en donne la première description dans les années 1580 même si la plante ne sera vraiment connue sur le plan scientifique qu'au XVIIIe siècle.</French>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cocapflanzen[COLOR_REVERT] sind in tropischen Breitengraden auf hügeliger [LINK=TERRAIN_SAVANNAH]Savanne[\LINK] beheimatet. Gelegentlich können besonders gute Anbaugebiete für Cocapflanzen auch von [LINK=FEATURE_JUNGLE]Dschungel[\LINK], [LINK=FEATURE_FOREST]Wald[\LINK] oder [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] überwachsen sein.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1][COLOR_UNIT_TEXT]Cocapflanzen[COLOR_REVERT] sind in den Höhenlagen tropischer Breitengrade beheimatet. Sie wachsen im Hügelland der [LINK=TERRAIN_SAVANNAH]Savanne[\LINK].[PARAGRAPH:2]Der Begriff [LINK=YIELD_COCA_LEAVES]Cocablätter[\LINK] bezieht sich meist auf Blätter der kultivierten Planzen aus der Familie der Cocapflanzen (Erythoxylaceae), welche im westlichen Teil Süd-Amerikas beheimatet sind. Sowohl in der alten Geschichte, wie auch in der modernen Zeit wurden diese Pflanzen sehr hoch geschätzt, da sie psychoaktive Substanzen beinhalten, die man durch das Kauen der Blätter oder durch den Konsum des daraus aufgebrühten Tees aufnehmen kann. In der heutigen Zeit, wird aus diesen Blättern auch die Droge Kokain gewonnen. Weniger bedenkliche Anwirkungen der Cocablätter sind aber beispielsweise die Anwendung in geringeren Mengen als Mittel gegen Höhenkrankheit oder gegen Hungergefühle, Durstgefühle oder Müdigkeit. Ausserdem kann Coca auch zur Betäubung von Schmerzen verwendet werden.[PARAGRAPH:1]Cocablätter wurden jeher in den Regionen der Anden zu relgiösen, medizinischen und nahrungsergänzenden Zwecken eingesetzt. Wahrscheinlich sogar schon seit mehr als 8000 Jahren. In dieser langen Zeitperiode wurde die Cocapflanze irgendwann domestiziert. Heutzutage wird sie in vier unterschiedlichen Gattungen bzw. Unterarten gezüchtet. Im Inkareich glaubte man an einen göttlichen Ursprung der Planze und verwendete die Blätter als Opfergabe, aber auch als Mittel um die Zukunft vorherzusagen oder einfach nur um Gebete und Zeremonien vorzubereiten. Die Pflanze breitete sich schliesslich über ein sehr großes Gebiet von Kolumbien im Norden bis Chile im Süden aus.[PARAGRAPH:2]Nach der spanischen Eroberung des Inkareiches wurde die Einnahme der Pflanze weiterhin von den Spaniern toleriert, da sie die Leistung der Zwangsarbeiter steigerte. Die religiöse Verwendung der Pflanze wurde aber verboten. Den Spaniern selbst wurde vom Konsum der Blätter abgeraten. Obwohl bereits im 16. Jahrhundert Cocablätter in Europa bekannt waren, erlangten diese dort zu dieser Zeit nie Beliebtheit. Dies änderte sich erst, als im 19. Jahrhundert Kokain entdeckt wurde.</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_YERBA</Tag>
+        <English>Yerba plants</English>
+        <German>
+            <Text>Yerbapflanzen</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_YERBA_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_UNIT_TEXT]Yerba plants[COLOR_REVERT] TODO</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Yerbapflanzen[COLOR_REVERT] </German>
+    </TEXT>	
     <TEXT>
         <Tag>TXT_KEY_BONUS_COCOA</Tag>
         <English>Cocoa trees</English>
@@ -1021,6 +1049,20 @@
         <Spanish>[BOLD]Estrategia :[\BOLD][PARAGRAPH:1]El tinte es el proceso de aplicar colores a los tejidos. Una práctica humana que, durante más de tres mil años, permitía ampliar el blanco natural de la seda, la lana y el algodón a todo un espectro de colores. Los tintes naturales se crean a partir de miles de sustancias, incluyendo conchas, animales y plantas, aunque estos tintes son frecuentemente caros y no siempre permanentes. Los tintes modernos se basan en sustancias artificiales o procesadas, como el carbón vegetal y otros compuestos químicos. Las naciones que poseen grandes industrias de teñido tienen la ventaja de que los procesos para la creación del tinte se pueden reconvertir fácilmente en otros. Alemania lo descubrió en la Primera Guerra Mundial, cuando se comprobó que las fábricas de tinte artificial podían modificarse fácilmente para fabricar explosivos, gas venenoso y otras herramientas bélicas.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_BLOODWOOD</Tag>
+        <English>Bloodwood Trees</English>
+        <German>
+            <Text>Blutholzbäume</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_BLOODWOOD_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bloodwood Trees[COLOR_REVERT] TODO</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blutholzbäume[COLOR_REVERT] TODO</German>
+    </TEXT>	
+    <TEXT>
         <Tag>TXT_KEY_BONUS_IRON</Tag>
         <English>Iron ore deposits</English>
         <French>
@@ -1324,6 +1366,21 @@
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Capsicum frutescens est un « piment de Cayenne ». Il appartient à la famille des Solanaceae et est cultivé pour ses fruits à la saveur particulièrement piquante. Sur l'échelle de Scoville, il est noté de 30 000 jusqu'à 50 000. Il en existe plusieurs variétés, dont Capsicum frutescens tabasco qui entre dans la composition de la sauce du même nom.</French>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Roter Pfeffer[COLOR_REVERT] wächst in hügeliger [LINK=TERRAIN_PLAINS]Prairie[\LINK]. Gelegentlich können besonders gute Anbaugebiete für Roten Pfeffer auch von [LINK=FEATURE_FOREST]Wald[\LINK] oder [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] überwachsen sein.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Der Cayenne-Pfeffer, auch bekannt als Guinea-Gewürz oder auch Roter Pfeffer, ist ein scharfer roter Chili-Pfeffer, der genutzt wird, um Gerichte zu verfeinern, oder auch als Medizin Anwendung findet. Benannt nach der Stadt Cayenne in Französisch-Guayana, ist sie eine Sorte von Capsicum annuum, verwandt mit Paprika, Jalapenos und anderen. Capsicum genus zählt zu den Nachtschattengewächsen.</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_MAPLE_TREES</Tag>
+        <English>Maple trees</English>
+        <German>
+            <Text>Ahornbäume</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_MAPLE_TREES_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Maple Trees[COLOR_REVERT] TODO</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ahornbäume[COLOR_REVERT] TODO</German>
+    </TEXT>	
     <TEXT>
         <Tag>TXT_KEY_BONUS_SALT</Tag>
         <English>Salt deposits</English>

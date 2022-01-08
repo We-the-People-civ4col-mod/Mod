@@ -135,13 +135,13 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 				}
 
 				// raw
-				else if ( eYield == YIELD_WOOL || eYield == YIELD_GOAT_HIDES ||eYield == YIELD_PIG_SKIN || eYield == YIELD_HIDES || eYield == YIELD_DOWNS || eYield == YIELD_FUR || eYield == YIELD_PREMIUM_FUR || eYield == YIELD_BARLEY || eYield == YIELD_SUGAR || eYield == YIELD_FRUITS || eYield == YIELD_GRAPES || eYield == YIELD_COCOA_FRUITS || eYield == YIELD_COFFEE_BERRIES || eYield == YIELD_RAW_SALT || eYield == YIELD_RED_PEPPER || eYield == YIELD_COTTON || eYield == YIELD_INDIGO || eYield == YIELD_TOBACCO || eYield == YIELD_WHALE_BLUBBER || eYield == YIELD_VALUABLE_WOOD)
+				else if ( eYield == YIELD_WOOL || eYield == YIELD_GOAT_HIDES ||eYield == YIELD_PIG_SKIN || eYield == YIELD_HIDES || eYield == YIELD_DOWNS || eYield == YIELD_FUR || eYield == YIELD_PREMIUM_FUR || eYield == YIELD_BARLEY || eYield == YIELD_SUGAR || eYield == YIELD_FRUITS || eYield == YIELD_GRAPES || eYield == YIELD_COCOA_FRUITS || eYield == YIELD_COFFEE_BERRIES || eYield == YIELD_RAW_SALT || eYield == YIELD_RED_PEPPER || eYield == YIELD_COTTON || eYield == YIELD_INDIGO || eYield == YIELD_LOGWOOD || eYield == YIELD_TOBACCO || eYield == YIELD_YERBA_LEAVES || eYield == YIELD_WHALE_BLUBBER || eYield == YIELD_VALUABLE_WOOD)
 				{
 					m_em_iCustomHouseSellThreshold.set(eYield, GC.getCUSTOMHOUSE_RAW_SELL_THRESHOLD() * iGameSpeedModifier);
 				}
 
 				// produced
-				else if (eYield == YIELD_COCA_LEAVES || eYield == YIELD_WILD_FEATHERS || eYield == YIELD_SILVER || eYield == YIELD_GOLD || eYield == YIELD_GEMS || eYield == YIELD_COCOA || eYield == YIELD_COFFEE || eYield == YIELD_SALT ||  eYield == YIELD_SPICES || eYield == YIELD_WOOL_CLOTH || eYield == YIELD_CLOTH || eYield == YIELD_COLOURED_CLOTH || eYield == YIELD_GOAT_HIDE_BOOTS || eYield == YIELD_PIG_LEATHER || eYield == YIELD_LEATHER || eYield == YIELD_COATS || eYield == YIELD_PREMIUM_COATS || eYield == YIELD_BEER || eYield == YIELD_RUM || eYield == YIELD_HOOCH || eYield == YIELD_WINE || eYield == YIELD_CIGARS || eYield == YIELD_WHALE_OIL || eYield == YIELD_FURNITURE || eYield == YIELD_PADDED_FURNITURE)
+				else if (eYield == YIELD_COCA_LEAVES || eYield == YIELD_MAPLE_SIRUP || eYield == YIELD_WILD_FEATHERS || eYield == YIELD_SILVER || eYield == YIELD_GOLD || eYield == YIELD_GEMS || eYield == YIELD_COCOA || eYield == YIELD_COFFEE || eYield == YIELD_SALT ||  eYield == YIELD_SPICES || eYield == YIELD_CLOTH || eYield == YIELD_COLOURED_CLOTH || eYield == YIELD_WOOL_CLOTH || eYield == YIELD_COLOURED_WOOL_CLOTH || eYield == YIELD_GOAT_HIDE_BOOTS || eYield == YIELD_PIG_LEATHER || eYield == YIELD_LEATHER || eYield == YIELD_COATS || eYield == YIELD_PREMIUM_COATS || eYield == YIELD_BEER || eYield == YIELD_RUM || eYield == YIELD_HOOCH || eYield == YIELD_WINE || eYield == YIELD_CIGARS || eYield == YIELD_YERBA_TEA || eYield == YIELD_WHALE_OIL || eYield == YIELD_FURNITURE || eYield == YIELD_PADDED_FURNITURE)
 				{
 					m_em_iCustomHouseSellThreshold.set(eYield, GC.getCUSTOMHOUSE_PRODUCED_SELL_THRESHOLD() * iGameSpeedModifier);
 				}
