@@ -281,7 +281,7 @@
             <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
             <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
             <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
-            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileNatives>1</bSpawnHostileNatives>
             <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
