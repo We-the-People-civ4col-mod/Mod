@@ -1056,7 +1056,7 @@
             <iDamagePrereq>0</iDamagePrereq>
             <bBad>0</bBad>
             <bWar>0</bWar>
-            <UnitClass>UNIT_REVOLTING_CRIMINAL</UnitClass>
+            <UnitClass>UNITCLASS_REVOLTING_CRIMINAL</UnitClass>
             <TeachUnitClass>NONE</TeachUnitClass>
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
