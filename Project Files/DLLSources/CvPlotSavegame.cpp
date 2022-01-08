@@ -353,8 +353,8 @@ void CvPlot::read(CvSavegameReader reader)
 		case Save_VisibilityCount          : reader.Read(m_em_iVisibilityCount)               ; break;
 		case Save_RevealedOwner            : reader.Read(m_em_eRevealedOwner)                 ; break;
 
-		case Save_CultureRangeCities       : m_em2_iCultureRangeCities           .Read(reader); break;
-		case Save_InvisibleVisibilityCount : m_em2_iInvisibleVisibilityCount     .Read(reader); break;
+		case Save_CultureRangeCities       : reader.Read(m_em2_iCultureRangeCities)           ; break;
+		case Save_InvisibleVisibilityCount : reader.Read(m_em2_iInvisibleVisibilityCount)     ; break;
 
 		case Save_ScriptData               : reader.Read(m_szScriptData)                      ; break;
 

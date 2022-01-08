@@ -239,7 +239,6 @@
     <ClInclude Include="DLLSources\NetworkDataPacking.h" />
     <ClInclude Include="DLLSources\Profile.h" />
     <ClInclude Include="DLLSources\CvMacros.h" />
-    <ClInclude Include="DLLSources\EnumMap2D.h" />
     <ClInclude Include="DLLSources\EnumMap.h" />
     <ClInclude Include="DLLSources\PlayerArray.h" />
     <ClInclude Include="DLLSources\CvPlotFunctions.h" />

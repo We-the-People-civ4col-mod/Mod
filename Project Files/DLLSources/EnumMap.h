@@ -1397,6 +1397,6 @@ protected:
 
 
 template<class IndexType, class T, int DEFAULT = VARINFO<T>::DEFAULT>
-class EnumMap : public EnumMapBase <IndexType, T, DEFAULT, IndexType> {};
+class EnumMap : public EnumMapBase <IndexType, T, DEFAULT, IndexType, VARINFO<T>::STATIC<VARINFO<IndexType>::LENGTH>::VAL, VARINFO<T>::TYPE> {};
 
 #endif

@@ -579,8 +579,8 @@ protected:
 
 	CvPlotBuilder* m_pPlotBuilder;		// builds bonuses and improvements
 
-	EnumMap2D<PlayerTypes, CultureLevelTypes, char> m_em2_iCultureRangeCities;
-	EnumMap2D<TeamTypes, InvisibleTypes, short> m_em2_iInvisibleVisibilityCount;
+	EnumMap<PlayerTypes, EnumMap<CultureLevelTypes, char > > m_em2_iCultureRangeCities;
+	EnumMap<TeamTypes  , EnumMap<InvisibleTypes   , short> > m_em2_iInvisibleVisibilityCount;
 
 	CLinkList<IDInfo> m_units;
 

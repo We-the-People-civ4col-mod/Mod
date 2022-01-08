@@ -6,7 +6,7 @@
 
 template<>
 template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-inline void CvSavegameReader::ReadEnumMap<bool>::Read(CvSavegameReader& reader, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
+inline void CvSavegameReader::ReadEnumMap<VARIABLE_TYPE_BOOL>::Read(CvSavegameReader& reader, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
 {
 	const bool bValid = boost::is_same<bool, T>::value;
 	BOOST_STATIC_ASSERT(bValid);
@@ -50,7 +50,7 @@ inline void CvSavegameReader::ReadEnumMap<bool>::Read(CvSavegameReader& reader, 
 
 template<>
 template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-inline void CvSavegameWriter::WriteEnumMap<bool>::Write(CvSavegameWriter& kWriter, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
+inline void CvSavegameWriter::WriteEnumMap<VARIABLE_TYPE_BOOL>::Write(CvSavegameWriter& kWriter, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
 {
 	const bool bValid = boost::is_same<bool, T>::value;
 	BOOST_STATIC_ASSERT(bValid);
@@ -124,13 +124,16 @@ inline void CvSavegameWriter::WriteEnumMap<bool>::Write(CvSavegameWriter& kWrite
 	}
 }
 
-
-template<typename Ta>
+template<int TYPE2>
 template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-inline void CvSavegameReader::ReadEnumMap<Ta>::Read(CvSavegameReader& reader, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
+inline void CvSavegameReader::ReadEnumMap<TYPE2>::Read(CvSavegameReader& reader, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
 {
-	const bool bValid = boost::is_same<Ta, T>::value && !boost::is_same<bool, T>::value;
-	BOOST_STATIC_ASSERT(bValid);
+	const bool bValid1 = !boost::is_same<bool, T>::value;
+	BOOST_STATIC_ASSERT(bValid1);
+	const bool bValid2 = TYPE == TYPE2;
+	BOOST_STATIC_ASSERT(bValid2);
+	const bool bValid3 = TYPE != VARIABLE_TYPE_CLASS;
+	BOOST_STATIC_ASSERT(bValid3);
 	em.reset();
 
 	while (true)
@@ -161,11 +164,11 @@ inline void CvSavegameReader::ReadEnumMap<Ta>::Read(CvSavegameReader& reader, En
 	}
 }
 
-template<typename Ta>
+template<int TYPE2>
 template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-inline void CvSavegameWriter::WriteEnumMap<Ta>::Write(CvSavegameWriter& kWriter, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
+inline void CvSavegameWriter::WriteEnumMap<TYPE2>::Write(CvSavegameWriter& kWriter, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
 {
-	const bool bValid = boost::is_same<Ta, T>::value && !boost::is_same<bool, T>::value;
+	const bool bValid = TYPE == TYPE2 && !boost::is_same<bool, T>::value;
 	BOOST_STATIC_ASSERT(bValid);
 
 	SavegameEnumMapTokenWrite<IndexType, LengthType>* Token = NULL;
@@ -210,6 +213,96 @@ inline void CvSavegameWriter::WriteEnumMap<Ta>::Write(CvSavegameWriter& kWriter,
 		for (IndexType eIndex = Token->getFirstIndex(); eIndex <= Token->getLastIndex(); ++eIndex)
 		{
 			kWriter.Write(em.get(eIndex));
+		}
+		SAFE_DELETE(Token);
+	}
+}
+
+
+template<>
+template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+inline void CvSavegameReader::ReadEnumMap<VARIABLE_TYPE_CLASS>::Read(CvSavegameReader& reader, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
+{
+	em.reset();
+
+	while (true)
+	{
+		SavegameEnumMapTokenRead<IndexType, LengthType> Token(reader);
+
+		if (Token.isEmpty())
+		{
+			return;
+		}
+
+		for (IndexType i = Token.getFirstIndex(); i <= Token.getLastIndex(); ++i)
+		{
+			IndexType iIndex = (IndexType)reader.ConvertIndex(ArrayType((LengthType)0), static_cast<int>(i));
+			if (iIndex != (IndexType)-1)
+			{
+				reader.Read(em[iIndex]);
+			}
+			else
+			{
+				// -1 means xml entry was removed. Discard the data in question and hope the savegame will still work
+				EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE> tmp;
+				reader.Read(tmp);
+			}
+		}
+
+		if (Token.isLast())
+		{
+			return;
+		}
+	}
+}
+
+
+template<>
+template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+inline void CvSavegameWriter::WriteEnumMap<VARIABLE_TYPE_CLASS>::Write(CvSavegameWriter& kWriter, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
+{
+	SavegameEnumMapTokenWrite<IndexType, LengthType>* Token = NULL;
+	std::list<SavegameEnumMapTokenWrite<IndexType, LengthType>* > tokens;
+
+	const IndexType eEnd = (IndexType)VARINFO<LengthType>::end();
+	for (IndexType i = (IndexType)VARINFO<LengthType>::start(); i < eEnd; ++i)
+	{
+		if (em[i].hasContent())
+		{
+			if (Token == NULL)
+			{
+				Token = new SavegameEnumMapTokenWrite<IndexType, LengthType>();
+				Token->setStart(i);
+				tokens.push_back(Token);
+			}
+			Token->setEnd(i);
+		}
+		else if (Token != NULL)
+		{
+			Token = NULL;
+		}
+	}
+
+	if (tokens.size() == 0)
+	{
+		SavegameEnumMapTokenWrite<IndexType, LengthType> EmptyToken;
+		EmptyToken.writeEmpty(kWriter);
+		return;
+	}
+
+	while (tokens.size() != 0)
+	{
+		Token = tokens.front();
+		tokens.pop_front();
+		if (tokens.size() == 0)
+		{
+			Token->setLast();
+		}
+
+		Token->write(kWriter);
+		for (IndexType eIndex = Token->getFirstIndex(); eIndex <= Token->getLastIndex(); ++eIndex)
+		{
+			kWriter.Write(em[eIndex]);
 		}
 		SAFE_DELETE(Token);
 	}

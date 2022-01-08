@@ -1046,8 +1046,8 @@ protected:
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	std::vector<EventTriggerTypes> m_triggersFired;
 	EnumMap<CivicOptionTypes, CivicTypes> m_em_eCivics;
-	EnumMap2D<ImprovementTypes, YieldTypes, int> m_em_iImprovementYieldChange;
-	EnumMap2D<BuildingClassTypes, YieldTypes, int> m_em_iBuildingYieldChange;
+	EnumMap<ImprovementTypes  , EnumMap<YieldTypes, int> > m_em_iImprovementYieldChange;
+	EnumMap<BuildingClassTypes, EnumMap<YieldTypes, int> > m_em_iBuildingYieldChange;
 	CLinkList<int> m_groupCycle;
 	std::vector<CvWString> m_aszCityNames;
 	FFreeListTrashArray<CvCityAI> m_cities;

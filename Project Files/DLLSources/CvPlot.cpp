@@ -8094,7 +8094,7 @@ int CvPlot::getCultureRangeCities(PlayerTypes eOwnerIndex, CultureLevelTypes eRa
 	FAssert(eRangeIndex >= 0);
 	FAssert(eRangeIndex < GC.getNumCultureLevelInfos());
 
-	return m_em2_iCultureRangeCities.get(eOwnerIndex, eRangeIndex);
+	return m_em2_iCultureRangeCities[eOwnerIndex].get(eRangeIndex);
 }
 
 
@@ -8117,7 +8117,7 @@ void CvPlot::changeCultureRangeCities(PlayerTypes eOwnerIndex, CultureLevelTypes
 	{
 		bOldCultureRangeCities = isCultureRangeCity(eOwnerIndex, eRangeIndex);
 
-		m_em2_iCultureRangeCities.add(eOwnerIndex, eRangeIndex, iChange);
+		m_em2_iCultureRangeCities[eOwnerIndex].add(eRangeIndex, iChange);
 
 		if (bOldCultureRangeCities != isCultureRangeCity(eOwnerIndex, eRangeIndex))
 		{
@@ -8134,7 +8134,7 @@ int CvPlot::getInvisibleVisibilityCount(TeamTypes eTeam, InvisibleTypes eInvisib
 	FAssertMsg(eInvisible >= 0, "eInvisible is expected to be non-negative (invalid Index)");
 	FAssertMsg(eInvisible < GC.getNumInvisibleInfos(), "eInvisible is expected to be within maximum bounds (invalid Index)");
 
-	return m_em2_iInvisibleVisibilityCount.get(eTeam, eInvisible);
+	return m_em2_iInvisibleVisibilityCount[eTeam].get(eInvisible);
 }
 
 
@@ -8157,7 +8157,7 @@ void CvPlot::changeInvisibleVisibilityCount(TeamTypes eTeam, InvisibleTypes eInv
 	{
 		bOldInvisibleVisible = isInvisibleVisible(eTeam, eInvisible);
 
-		m_em2_iInvisibleVisibilityCount.add(eTeam, eInvisible, iChange);
+		m_em2_iInvisibleVisibilityCount[eTeam].add(eInvisible, iChange);
 
 		if (bOldInvisibleVisible != isInvisibleVisible(eTeam, eInvisible))
 		{

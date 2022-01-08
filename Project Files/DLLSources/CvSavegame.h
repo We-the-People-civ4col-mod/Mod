@@ -97,9 +97,6 @@ public:
 	template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
 	void Read(EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em);
 
-	template<class T1, class T2, class T3, int T4>
-	void Read(EnumMap2DDefault<T1, T2, T3, T4>& em);
-
 	template<class T>
 	void Read(PlayerArrayBase<T>& array);
 
@@ -256,7 +253,7 @@ public:
 #endif
 
 private:
-	template<class Ta>
+	template<int TYPE2>
 	struct ReadEnumMap
 	{
 		template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
@@ -379,12 +376,6 @@ public:
 	template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
 	void Write(SavegameVariableTypes eType, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em);
 
-	template<class T1, class T2, class T3, int T4>
-	void Write(EnumMap2DDefault<T1, T2, T3, T4>& em);
-
-	template<class T1, class T2, class T3, int T4>
-	void Write(SavegameVariableTypes eType, EnumMap2DDefault<T1, T2, T3, T4>& em);
-
 	template<class T>
 	void Write(SavegameVariableTypes eType, const CLinkList<T>& lList);
 
@@ -495,7 +486,7 @@ public:
 	int GetXmlSize(JITarrayTypes eType);
 
 private:
-	template<class Ta>
+	template<int TYPE2>
 	struct WriteEnumMap
 	{
 		template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
@@ -562,13 +553,7 @@ inline T CvSavegameReader::ReadBitfield(T variable)
 template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
 inline void CvSavegameReader::Read(EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
 {
-	ReadEnumMap<T>::Read(*this, em);
-}
-
-template<class T1, class T2, class T3, int T4>
-inline void CvSavegameReader::Read(EnumMap2DDefault<T1, T2, T3, T4>& em)
-{
-	em.Read(*this);
+	ReadEnumMap<TYPE>::Read(*this, em);
 }
 
 template<class T>
@@ -850,27 +835,11 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, JustInTimeArray
 template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
 inline void CvSavegameWriter::Write(EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
 {
-	WriteEnumMap<T>::Write(*this, em);
+	WriteEnumMap<TYPE>::Write(*this, em);
 }
 
 template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
 inline void CvSavegameWriter::Write(SavegameVariableTypes eType, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
-{
-	if (em.hasContent())
-	{
-		Write(eType);
-		Write(em);
-	}
-}
-
-template<class T1, class T2, class T3, int T4>
-inline void CvSavegameWriter::Write(EnumMap2DDefault<T1, T2, T3, T4>& em)
-{
-	em.Write(*this);
-}
-
-template<class T1, class T2, class T3, int T4>
-inline void CvSavegameWriter::Write(SavegameVariableTypes eType, EnumMap2DDefault<T1, T2, T3, T4>& em)
 {
 	if (em.hasContent())
 	{

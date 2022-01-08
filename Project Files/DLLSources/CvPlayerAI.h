@@ -526,8 +526,8 @@ protected:
 
 	EnumMap<PlayerTypes, bool> m_em_bFirstContact;
 
-	EnumMap2D<PlayerTypes, ContactTypes, int> m_em_iContactTimer;
-	EnumMap2D<PlayerTypes, MemoryTypes, int> m_em_iMemoryCount;
+	EnumMap<PlayerTypes, EnumMap<ContactTypes, int> > m_em_iContactTimer;
+	EnumMap<PlayerTypes, EnumMap<MemoryTypes , int> > m_em_iMemoryCount;
 	
 	std::vector<int> m_aiAICitySites;
 	

@@ -17,7 +17,7 @@ struct VARINFO
 	static const int DEFAULT = 0;
 	static const int SIZE = sizeof(T);
 	template <int T> struct STATIC {
-		static const int VAL = VARIABLE_TYPE_DYNAMIC;
+		static const int VAL = 0;
 	};
 };
 

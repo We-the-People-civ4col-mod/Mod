@@ -92,9 +92,9 @@ protected:
 	EnumMap<TeamTypes  , int> m_em_iNumRevealedTiles;
 	EnumMap<TeamTypes  , AreaAITypes> m_em_eAreaAIType;
 	IDInfo* m_aTargetCities;
-	EnumMap2D<PlayerTypes, YieldTypes , short> m_em2_iYieldRateModifier;
-	EnumMap2D<PlayerTypes, UnitAITypes, int  > m_em2_iNumTrainAIUnits;
-	EnumMap2D<PlayerTypes, UnitAITypes, int  > m_em2_iNumAIUnits;
+	EnumMap<PlayerTypes, EnumMap<YieldTypes , short> > m_em2_iYieldRateModifier;
+	EnumMap<PlayerTypes, EnumMap<UnitAITypes, int  > > m_em2_iNumTrainAIUnits;
+	EnumMap<PlayerTypes, EnumMap<UnitAITypes, int  > > m_em2_iNumAIUnits;
 	EnumMap<BonusTypes, int> m_em_iNumBonuses;
 	EnumMap<ImprovementTypes, int> m_em_iNumImprovements;
 public:

@@ -82,6 +82,9 @@ $var{Yield}            = {not_strict => 1};
 
 
 $var{int}              = {var => 1, get => "getInt"};
+$var{short}            = {var => 1, get => "getInt", JIT => "JIT_ARRAY_INT"};
+$var{"unsigned short"} = {var => 1, get => "getInt", JIT => "JIT_ARRAY_INT"};
+$var{char}             = {var => 1, get => "getInt", JIT => "JIT_ARRAY_INT"};
 
 
 
