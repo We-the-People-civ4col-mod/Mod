@@ -114,7 +114,6 @@ foreach my $name (sort(keys %var))
 	handleComparison($name);
 	handleStruct($name);
 	handleInfoArray($name);
-	handleEnumMap($name);
 	
 	$output .= "\n"; # extra newline between different variables
 }
@@ -348,23 +347,6 @@ sub handleInfoArray
 	$output .= "\t\t: InfoArray" . ($id - 1) . "<" . addtemplates("T", $id, 0) . ">(eType0, eType1, eType2, eType3) {}\n" unless $id == 1;
 	$output .= "\t\t: InfoArrayBase(eType0, eType1, eType2, eType3) {}\n" if $id == 1;
 	$output .= "};\n";
-}
-
-sub handleEnumMap
-{
-	my $name = shift;
-	
-	return if exists $var{$name}{var};
-	
-	$output .= "SET_ARRAY_XML_ENUM(";
-	$output .= $var{$name}{type};
-	$output .= ", ";
-	$output .= $var{$name}{NUM};
-	$output .= ", ";
-	$output .= $var{$name}{JIT};
-	$output .= ", ";
-	$output .= $var{$name}{COMPILE};
-	$output .= ")\n";
 }
 
 sub addtemplates

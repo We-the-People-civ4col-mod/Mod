@@ -4,6 +4,11 @@
 #include "CvSavegame.h"
 #include "CvSavegameEnumMapHelper.h"
 
+enum
+{
+	ENUMMAP_BITMASK_8_BIT = 7,
+};
+
 template<>
 template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
 inline void CvSavegameReader::ReadEnumMap<VARIABLE_TYPE_BOOL>::Read(CvSavegameReader& reader, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE>& em)
@@ -149,7 +154,7 @@ inline void CvSavegameReader::ReadEnumMap<TYPE2>::Read(CvSavegameReader& reader,
 		{
 			T tBuffer;
 			reader.Read(tBuffer);
-			IndexType iIndex = (IndexType)reader.ConvertIndex(ArrayType((LengthType)0), static_cast<int>(i));
+			IndexType iIndex = (IndexType)reader.ConvertIndex(VARINFO<LengthType>::JIT, static_cast<int>(i));
 			if (iIndex != (IndexType)-1)
 			{
 				// -1 means xml entry was removed. Discard the data in question and hope the savegame will still work
@@ -236,7 +241,7 @@ inline void CvSavegameReader::ReadEnumMap<VARIABLE_TYPE_CLASS>::Read(CvSavegameR
 
 		for (IndexType i = Token.getFirstIndex(); i <= Token.getLastIndex(); ++i)
 		{
-			IndexType iIndex = (IndexType)reader.ConvertIndex(ArrayType((LengthType)0), static_cast<int>(i));
+			IndexType iIndex = (IndexType)reader.ConvertIndex(VARINFO<LengthType>::JIT, static_cast<int>(i));
 			if (iIndex != (IndexType)-1)
 			{
 				reader.Read(em[iIndex]);
