@@ -9367,7 +9367,7 @@ CvCity* CvUnit::getEvasionCity() const
 					//WTP, ray, Large Rivers - START
 					// Correcting that Ships eveade to Cities without Ocean access
 					// if (pLoopCity->plot()->isFriendlyCity(*this, false))
-					if (pLoopCity->plot()->isFriendlyCity(*this, false) && pLoopCity->plot()->hasAnyOtherWaterPlotsThanJustLargeRivers())
+					if (pLoopCity->plot()->isFriendlyCity(*this, false) && pLoopCity->plot()->hasDeepWaterCoast())
 					{
 						for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); ++iBuildingClass)
 						{

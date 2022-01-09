@@ -9672,6 +9672,9 @@ void CvCity::doCityHappiness()
 	randomFatherCategorySelection = randomFatherCategorySelection + 1;
 	FatherPointTypes ePointType = (FatherPointTypes) randomFatherCategorySelection;
 
+	// let us add a bit so it is not too low with bad luck
+	iFoundingFatherPoints += iMaxFoundingFatherPoints/2;
+
 	GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, iFoundingFatherPoints);
 
 	CvWString szBuffer;

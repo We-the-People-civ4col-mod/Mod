@@ -667,10 +667,22 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		// WTP, ray, new Harbour System - END
 
 		// WTP, ray, new Barracks System - START
-		if (GC.getENABLE_NEW_BARRACKS_SYSTEM() && pUnit->getUnitInfo().getBarracksSpaceNeeded() > 0)
+		if (GC.getENABLE_NEW_BARRACKS_SYSTEM())
 		{
-			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED", pUnit->getUnitInfo().getBarracksSpaceNeeded(), GC.getSymbolID(BARRACKS_CHAR)));
+			// first we just check how Barracks Space the Unit needs
+			int iBarracksSpaceNeeded =	pUnit->getUnitInfo().getBarracksSpaceNeeded();
+			// then we add add the Barracks Space needed from the Profession
+			if (pUnit->getProfession() != NO_PROFESSION)
+			{
+				iBarracksSpaceNeeded += GC.getProfessionInfo(pUnit->getProfession()).getBarracksSpaceNeededChange();
+			}
+
+			// of course we onyl display in case it is more than 0; 
+			if (iBarracksSpaceNeeded)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED", iBarracksSpaceNeeded, GC.getSymbolID(BARRACKS_CHAR)));
+			}
 		}
 		// WTP, ray, new Barracks System - END
 

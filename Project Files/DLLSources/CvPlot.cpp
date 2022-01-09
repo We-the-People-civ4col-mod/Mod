@@ -1007,26 +1007,26 @@ bool CvPlot::isCoastalLand(int iMinWaterSize) const
 //WTP, ray, Large Rivers - START
 // this checks if the adjacent water tiles are just Large Rivers
 // needed to prevent that Buildings for bigger ships can be built - anything that can not enter Large Rivers
-bool CvPlot::hasAnyOtherWaterPlotsThanJustLargeRivers() const
+bool CvPlot::hasDeepWaterCoast() const
 {
 	PROFILE_FUNC();
 
-	// now we check if there is any plot adjacent that is Water but not Large Rivers
-	// if we find any Water Plot that is not Large Rivers, this is not just Large Rivers
+	// now we check if we find any Water Plot that is COAST
+	// all others, like e.g. Large Rivers, Lakes, Ice Lakes, Shallow Coast, ... would be problematic
 	for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
 	{
 		CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
 
 		if (pAdjacentPlot != NULL)
 		{
-			if (pAdjacentPlot->isWater() && pAdjacentPlot->getTerrainType() != TERRAIN_LARGE_RIVERS)
+			if (pAdjacentPlot->isWater() && pAdjacentPlot->getTerrainType() == TERRAIN_COAST)
 			{
 					return true;
 			}
 		}
 	}
 
-	// otherwise it is Coastal LAnds and all Water Plots need to be Large Rivers
+	// otherwise it is just Water Plots we want to avoid
 	return false;
 }
 //WTP, ray, Large Rivers - END

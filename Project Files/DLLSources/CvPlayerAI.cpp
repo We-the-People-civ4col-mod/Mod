@@ -1721,7 +1721,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 		// to ensure that first city is not found at Large River without other Water access
 		if (bStartingLoc)
 		{
-			if (pPlot->hasAnyOtherWaterPlotsThanJustLargeRivers())
+			if (pPlot->hasDeepWaterCoast())
 			{
 				iValue *= 125; // found value increased
 				iValue /= 100;
