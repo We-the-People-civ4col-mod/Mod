@@ -19540,10 +19540,12 @@ void CvPlayer::doAIImmigrant(int iIndex)
 
 // TAC - AI Economy - Ray - START
 // R&R, ray improvement redistribution
-void CvPlayer::redistributeWood() {
-
-	// do nothing if Player has no cities
-	if (getNumCities() <1) {
+void CvPlayer::redistributeWood() 
+{
+	// do nothing if Player has no cities or just one
+	int citycount = getNumCities();
+	if (citycount <= 1) 
+	{
 		return;
 	}
 
@@ -19553,69 +19555,70 @@ void CvPlayer::redistributeWood() {
 		return;
 	}
 
-	int citycount = getNumCities();
-
 	//calculate total wood and stone of all cities
 	int totalwood = 0;
 	int totalstone = 0;
-	int iTotalPopulation = 0;
 
+	// Loop through cities first time to get ressources to distribute, but we leave a rest
 	CvCity* pLoopCity;
-
-	// Loop through cities first time to get all wood
 	int iLoop;
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
-		//add wood and stone
-		totalwood += pLoopCity->getYieldStored(YIELD_LUMBER);
-		totalstone += pLoopCity->getYieldStored(YIELD_STONE);
-		//add population
-		iTotalPopulation += pLoopCity->getPopulation();
-		//reset Lumber and Stone to 0 because already added to storage variables
-		pLoopCity->setYieldStored(YIELD_LUMBER, 0);
-		pLoopCity->setYieldStored(YIELD_STONE, 0);
+		// WTP, ray, this may have caused negative storage bug
+		// thus we leave some in the city
+		int iRestToLeave = 50;
+		// for Lumber
+		if (pLoopCity->getYieldStored(YIELD_LUMBER) > iRestToLeave)
+		{
+
+			totalwood += pLoopCity->getYieldStored(YIELD_LUMBER) - iRestToLeave;
+			pLoopCity->setYieldStored(YIELD_LUMBER, iRestToLeave);
+		}
+		// for Stone
+		if (pLoopCity->getYieldStored(YIELD_STONE) > iRestToLeave)
+		{
+			totalwood += pLoopCity->getYieldStored(YIELD_STONE) - iRestToLeave;
+			pLoopCity->setYieldStored(YIELD_STONE, iRestToLeave);
+		}
 	}
 
-	int woodToDisbributePerCitizen = totalwood / iTotalPopulation;
-	int stoneToDisbributePerCitizen = totalstone / iTotalPopulation;
-
-	// Loop through cities second time to distribute all wood
-	int iLoop2;
-	for (pLoopCity = firstCity(&iLoop2); pLoopCity != NULL; pLoopCity = nextCity(&iLoop2))
+	// now we distribute accordign to population
+	int iTotalPopulation = getTotalPopulation();
+	// should never happen, but let us be safe to avoid division by 0
+	if (iTotalPopulation != 0)
 	{
-		// bigger cities get more
-		int iPopulationOfThisCity = pLoopCity->getPopulation();
-		// R&R, ray, small fix
-		int woodtodistribute = woodToDisbributePerCitizen * iPopulationOfThisCity;
-		int stonetodistribute = stoneToDisbributePerCitizen * iPopulationOfThisCity;
-		pLoopCity->setYieldStored(YIELD_LUMBER, woodtodistribute);
-		pLoopCity->setYieldStored(YIELD_STONE, stonetodistribute);
-		// substract the wood and stone distributed from the total amounts
-		totalwood -= woodtodistribute;
-		totalstone -= stonetodistribute;
+		int woodToDisbributePerCitizen = totalwood / iTotalPopulation;
+		int stoneToDisbributePerCitizen = totalstone / iTotalPopulation;
+
+		// Loop through cities second time to distribute all wood
+		int iLoop2;
+		for (pLoopCity = firstCity(&iLoop2); pLoopCity != NULL; pLoopCity = nextCity(&iLoop2))
+		{
+			// bigger cities get more
+			int iPopulationOfThisCity = pLoopCity->getPopulation();
+		
+			// we distribute accordign to the Population Size
+			int woodtodistribute = woodToDisbributePerCitizen * iPopulationOfThisCity;
+			int stonetodistribute = stoneToDisbributePerCitizen * iPopulationOfThisCity;
+
+			// we dsitribte the caclulated ressources on to what it already has
+			pLoopCity->changeYieldStored(YIELD_LUMBER, woodtodistribute);
+			pLoopCity->changeYieldStored(YIELD_STONE, stonetodistribute);
+
+			// substract the distributed ressources from the total amounts
+			totalwood -= woodtodistribute;
+			totalstone -= stonetodistribute;
+		}
 	}
 
-	// for safety, if there is some wood left, give it to the first city
+	// for safety, if there are some ressources left, we add it to the first city
 	if (totalwood > 0)
 	{
-		int iLoop3;
-		for (pLoopCity = firstCity(&iLoop3); pLoopCity != NULL; pLoopCity = nextCity(&iLoop3))
-		{
-			int woodalreadydistributed = pLoopCity->getYieldStored(YIELD_LUMBER);
-			pLoopCity->setYieldStored(YIELD_LUMBER, totalwood + woodalreadydistributed);
-			break;
-		}
+		getCity(0)->changeYieldStored(YIELD_LUMBER, totalwood);
 	}
-	// for safety, if there is some stone left, give it to the first city
 	if (totalstone > 0)
 	{
-		int iLoop4;
-		for (pLoopCity = firstCity(&iLoop4); pLoopCity != NULL; pLoopCity = nextCity(&iLoop4))
-		{
-			int stonealreadydistributed = pLoopCity->getYieldStored(YIELD_STONE);
-			pLoopCity->setYieldStored(YIELD_STONE, totalstone + stonealreadydistributed);
-			break;
-		}
+		getCity(0)->changeYieldStored(YIELD_STONE, totalstone);
 	}
 
 }
