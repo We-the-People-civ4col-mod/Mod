@@ -422,6 +422,10 @@
                     <iChange>1</iChange>
                 </UnitMoveChange>
                 <UnitMoveChange>
+                    <UnitClass>UNITCLASS_SCHOONER</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+                <UnitMoveChange>
                     <UnitClass>UNITCLASS_CARAVELA_REDONDA</UnitClass>
                     <iChange>1</iChange>
                 </UnitMoveChange>
@@ -455,10 +459,6 @@
                 </UnitMoveChange>
                 <UnitMoveChange>
                     <UnitClass>UNITCLASS_SLOOP</UnitClass>
-                    <iChange>1</iChange>
-                </UnitMoveChange>
-                <UnitMoveChange>
-                    <UnitClass>UNITCLASS_SCHOONER</UnitClass>
                     <iChange>1</iChange>
                 </UnitMoveChange>
                 <UnitMoveChange>
@@ -594,10 +594,6 @@
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_SLOOP</UnitClass>
-                    <iCombatModifier>10</iCombatModifier>
-                </UnitStrengthModifier>
-                <UnitStrengthModifier>
-                    <UnitClass>UNITCLASS_SCHOONER</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
@@ -5237,6 +5233,10 @@
                     <iChange>1</iChange>
                 </UnitMoveChange>
                 <UnitMoveChange>
+                    <UnitClass>UNITCLASS_SCHOONER</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+                <UnitMoveChange>
                     <UnitClass>UNITCLASS_CARAVELA_REDONDA</UnitClass>
                     <iChange>1</iChange>
                 </UnitMoveChange>
@@ -8919,6 +8919,10 @@
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_CARRACK</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_SCHOONER</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
                 <UnitStrengthModifier>
