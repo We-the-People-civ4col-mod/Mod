@@ -3724,7 +3724,7 @@
             <Type>TRAIT_FRANCISCO_DE_ORELLANA</Type>
             <Description>TXT_KEY_TRAIT_FRANCISCO_DE_ORELLANA</Description>
             <ShortDescription>TXT_KEY_FATHER_FRANCISCO_DE_ORELLANA</ShortDescription>
-            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iLevelExperienceModifier>-10</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
             <iNativeAngerModifier>0</iNativeAngerModifier>
