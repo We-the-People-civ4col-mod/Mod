@@ -888,7 +888,7 @@
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_HARDWOOD</Type>
-            <fScale>1.5</fScale>
+            <fScale>1.8</fScale>
             <fInterfaceScale>1.3</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Hard_Wood/olive_press.nif</NIF>
             <KFM>Art/Terrain/Resources/Hard_Wood/olive_press.kfm</KFM>
