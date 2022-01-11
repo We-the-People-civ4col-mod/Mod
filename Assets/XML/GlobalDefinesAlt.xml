@@ -662,6 +662,10 @@
 		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>PORT_ROYAL_PORT_TAX</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>UNITCLASS_RANGER</DefineName>
 		<DefineTextVal>UNITCLASS_RANGER</DefineTextVal>
 	</Define>
