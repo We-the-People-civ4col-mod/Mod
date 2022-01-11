@@ -187,11 +187,11 @@
     </Define>
     <Define>
         <DefineName>FOW_WAS_VISIBLE_COLOR</DefineName>
-        <fDefineFloatVal>0.43</fDefineFloatVal>
+        <fDefineFloatVal>0.63</fDefineFloatVal>
     </Define>
     <Define>
         <DefineName>FOW_MINIMAP_WAS_VISIBLE_COLOR</DefineName>
-        <fDefineFloatVal>0.43</fDefineFloatVal>
+        <fDefineFloatVal>0.63</fDefineFloatVal>
     </Define>
     <Define>
         <DefineName>CITY_SCREEN_FOG_ENABLED</DefineName>
