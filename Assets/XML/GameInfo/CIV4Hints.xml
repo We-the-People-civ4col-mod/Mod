@@ -249,5 +249,8 @@
         <HintInfo>
             <Description>TXT_KEY_QUOTE_50</Description>
         </HintInfo>
+        <HintInfo>
+            <Description>TXT_KEY_QUOTE_51</Description>
+        </HintInfo>
     </HintInfos>
 </Civ4Hints>
