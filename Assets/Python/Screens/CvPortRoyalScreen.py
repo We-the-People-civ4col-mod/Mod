@@ -570,21 +570,21 @@ class CvPortRoyalScreen:
 			iPrice = player.getTradeMessageAmount(i)
 			szBuffer = u"-"
 			szTax = u"-"
-			
+			#gc.getDefineINT("PORT_ROYAL_PORT_TAX")
 			if player.getTradeMessageType(i) == TradeMessageTypes.TRADE_MESSAGE_EUROPE_YIELD_SOLD:
 				iPrice *= self.playerEurope.getYieldPortRoyalBuyPrice(iYield)
 				szBuffer = u"%d%c" % (player.getTradeMessageAmount(i), gc.getYieldInfo(iYield).getChar())
 				szAction = localText.getText("TXT_KEY_EU_TRADE_LOG_SOLD", ())
-				if player.getTaxRate() > 0:
-					szTax = str(iPrice * player.getTaxRate() / 100)
+				if gc.getDefineINT("PORT_ROYAL_PORT_TAX") > 0:
+					szTax = str(iPrice * gc.getDefineINT("PORT_ROYAL_PORT_TAX") / 100)
 			elif player.getTradeMessageType(i) == TradeMessageTypes.TRADE_MESSAGE_EUROPE_YIELD_BOUGHT:
 				iPrice *= self.playerEurope.getYieldPortRoyalSellPrice(iYield)
 				szBuffer = u"%d%c" % (player.getTradeMessageAmount(i), gc.getYieldInfo(iYield).getChar())
 				szAction = localText.getText("TXT_KEY_EU_TRADE_LOG_BOUGHT", ())
 			elif player.getTradeMessageType(i) == TradeMessageTypes.TRADE_MESSAGE_TREASURE:
 				szAction = localText.getText("TXT_KEY_UNIT_TREASURE", ())
-				if player.getTaxRate() > 0:
-					szTax = str(iPrice * player.getTaxRate() / 100)
+				if gc.getDefineINT("PORT_ROYAL_PORT_TAX") > 0:
+					szTax = str(iPrice * gc.getDefineINT("PORT_ROYAL_PORT_TAX") / 100)
 			
 			if player.getTradeMessageType(i) == TradeMessageTypes.TRADE_MESSAGE_LACK_FUNDS:
 				iLastFailed = i
