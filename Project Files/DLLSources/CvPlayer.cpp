@@ -16162,11 +16162,11 @@ void CvPlayer::sellYieldUnitToAfrica(CvUnit* pUnit, int iAmount, int iCommission
 				// R&R, ray, Smuggling - START
 				if (bSmuggling)
 				{
-					GAMETEXT.setEuropeYieldSoldHelp(szMessage, *this, eYield, iAmount, iBribe);
+					GAMETEXT.setAfricaYieldSoldHelp(szMessage, *this, eYield, iAmount, iBribe);
 				}
 				else
 				{
-					GAMETEXT.setEuropeYieldSoldHelp(szMessage, *this, eYield, iAmount, iCommission);
+					GAMETEXT.setAfricaYieldSoldHelp(szMessage, *this, eYield, iAmount, iCommission);
 				}
 				// R&R, ray, Smuggling - END
 				m_aszTradeMessages.push_back(szMessage.getCString());
@@ -16197,7 +16197,7 @@ void CvPlayer::sellYieldUnitToAfrica(CvUnit* pUnit, int iAmount, int iCommission
 			pUnit->kill(bDelayedDeath);
 
 			CvWStringBuffer szMessage;
-			GAMETEXT.setEuropeYieldSoldHelp(szMessage, *this, eYield, iAmount, iCommission);
+			GAMETEXT.setAfricaYieldSoldHelp(szMessage, *this, eYield, iAmount, iCommission);
 			m_aszTradeMessages.push_back(szMessage.getCString());
 
 			// TAC - Trade Messages - koma13 - START
@@ -16556,59 +16556,17 @@ void CvPlayer::sellYieldUnitToPortRoyal(CvUnit* pUnit, int iAmount, int iCommiss
 		YieldTypes eYield = pUnit->getYield();
 		if (NO_YIELD != eYield)
 		{
-			// R&R, ray, Smuggling - START
-			bool bSmuggling = false;
-			// no smuggling in Port Royal
-			//CvUnit* Transport = pUnit->getTransportUnit();
-			//if (Transport != NULL)
-			//{
-			//	if(GC.getYieldInfo(eYield).isCargo() && Transport->getUnitClassType() == (UnitClassTypes)GC.getDefineINT("UNITCLASS_SMUGGLING_SHIP"))
-			//	{
-			//		bSmuggling = true;
-			//	}
-			//}
-
-			//if (isYieldEuropeTradable(eYield))
-			if (isYieldPortRoyalTradable(eYield) || bSmuggling)
-			// R&R, ray, Smuggling - END
+			// no smuggling in Port Royal, that is why we do not check it here
+			if (isYieldPortRoyalTradable(eYield))
 			{
 				iAmount = std::min(iAmount, pUnit->getYieldStored());
 
-				// R&R, ray, Smuggling - START
-				// int iProfit = getSellToEuropeProfit(eYield, iAmount * (100 - iCommission) / 100);
-				int iProfit = 0;
-				int iBribe = GC.getDefineINT("SMUGGLING_BRIBE_RATE");
-				int iSellPrice = 0; // R&R, vetiarvind, Price dependent tax rate change
-				if (bSmuggling)
-				{
-					if (!isYieldPortRoyalTradable(eYield))
-					{
-						int minPrice = GC.getYieldInfo(eYield).getMinimumBuyPrice();
-						iProfit = iAmount * minPrice * (100 - iBribe) / 100;
-						iSellPrice = minPrice; // R&R, vetiarvind, Price dependent tax rate change
-					}
-					else
-					{
-						CvPlayer& kPlayerEurope = GET_PLAYER(getParent());
-						int price = kPlayerEurope.getYieldPortRoyalBuyPrice(eYield);
-						iProfit = iAmount * price  * (100 - iBribe) / 100;
-						iSellPrice = price; // R&R, vetiarvind, Price dependent tax rate change
-					}
-				}
-				else
-				{
-					iProfit = getSellToPortRoyalProfit(eYield, iAmount * (100 - iCommission) / 100);
-					iSellPrice = kPlayerEurope.getYieldPortRoyalBuyPrice(eYield); // R&R, vetiarvind, Price dependent tax rate change
-				}
-				// R&R, ray, Smuggling - END
-				changeGold(iProfit * getExtraTradeMultiplier(kPlayerEurope.getID()) / 100);
-				
-				// R&R, vetiarvind, Price dependent tax rate change - Start				
+				int iProfit = getSellToPortRoyalProfit(eYield, iAmount * (100 - iCommission) / 100);
+				int iSellPrice = kPlayerEurope.getYieldPortRoyalBuyPrice(eYield); 	
+				changeGold(iProfit * getExtraTradeMultiplier(kPlayerEurope.getID()) / 100);	
+
 				changeYieldTradedTotalPortRoyal(eYield, iAmount, iSellPrice);
 				kPlayerEurope.changeYieldTradedTotalPortRoyal(eYield, iAmount, iSellPrice);
-				//changeYieldTradedTotal(eYield, iAmount);
-				//kPlayerEurope.changeYieldTradedTotal(eYield, iAmount);
-				// R&R, vetiarvind, Price dependent tax rate change - End
 				GC.getGameINLINE().changeYieldBoughtTotalPortRoyal(kPlayerEurope.getID(), eYield, -iAmount);
 
 				pUnit->setYieldStored(pUnit->getYieldStored() - iAmount);
@@ -16621,21 +16579,11 @@ void CvPlayer::sellYieldUnitToPortRoyal(CvUnit* pUnit, int iAmount, int iCommiss
 				for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
 				{
 					FatherPointTypes ePointType = (FatherPointTypes) i;
-
 					changeFatherPoints(ePointType, iProfit * GC.getFatherPointInfo(ePointType).getEuropeTradeGoldPointPercent() / 100);
 				}
 
 				CvWStringBuffer szMessage;
-				// R&R, ray, Smuggling - START
-				if (bSmuggling)
-				{
-					GAMETEXT.setEuropeYieldSoldHelp(szMessage, *this, eYield, iAmount, iBribe);
-				}
-				else
-				{
-					GAMETEXT.setEuropeYieldSoldHelp(szMessage, *this, eYield, iAmount, iCommission);
-				}
-				// R&R, ray, Smuggling - END
+				GAMETEXT.setPortRoyalYieldSoldHelp(szMessage, *this, eYield, iAmount, iCommission);
 				m_aszTradeMessages.push_back(szMessage.getCString());
 
 				// TAC - Trade Messages - koma13 - START
@@ -16646,9 +16594,7 @@ void CvPlayer::sellYieldUnitToPortRoyal(CvUnit* pUnit, int iAmount, int iCommiss
 				// TAC - Trade Messages - koma13 - END
 
 				gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szMessage.getCString(), "AS2D_BUILD_BANK", MESSAGE_TYPE_LOG_ONLY);
-
 				gDLL->getInterfaceIFace()->setDirty(PortRoyalScreen_DIRTY_BIT, true);
-
 				gDLL->getEventReporterIFace()->yieldSoldToEurope(getID(), eYield, iAmount); // was this the problem ?
 			}
 		}
@@ -16656,7 +16602,7 @@ void CvPlayer::sellYieldUnitToPortRoyal(CvUnit* pUnit, int iAmount, int iCommiss
 		{
 			int iAmount = pUnit->getYieldStored();
 			int iNetAmount = iAmount * (100 - iCommission) / 100;
-			iNetAmount -= (iNetAmount * getTaxRate()) / 100;
+			iNetAmount -= (iNetAmount * GC.getDefineINT("PORT_ROYAL_PORT_TAX")) / 100;
 			changeGold(iNetAmount * getExtraTradeMultiplier(kPlayerEurope.getID()) / 100);
 
 			pUnit->setYieldStored(0);
@@ -16664,7 +16610,7 @@ void CvPlayer::sellYieldUnitToPortRoyal(CvUnit* pUnit, int iAmount, int iCommiss
 			pUnit->kill(bDelayedDeath);
 
 			CvWStringBuffer szMessage;
-			GAMETEXT.setEuropeYieldSoldHelp(szMessage, *this, eYield, iAmount, iCommission);
+			GAMETEXT.setPortRoyalYieldSoldHelp(szMessage, *this, eYield, iAmount, iCommission);
 			m_aszTradeMessages.push_back(szMessage.getCString());
 
 			// TAC - Trade Messages - koma13 - START
@@ -21013,7 +20959,7 @@ void CvPlayer::checkForSmugglers()
 		return;
 	}
 
-	if(GC.getDefineINT("PORT_ROYAL_PORT_TAX") > getTaxRate())
+	if(GC.getDefineINT("SMUGGLING_BRIBE_RATE") > getTaxRate())
 	{
 		return;
 	}
@@ -22282,8 +22228,8 @@ int CvPlayer::getSellToPortRoyalProfit(YieldTypes eYield, int iAmount) const
 	CvPlayer& kPlayerEurope = GET_PLAYER(getParent());
 
 	int iPrice = iAmount * kPlayerEurope.getYieldPortRoyalBuyPrice(eYield);
-	int iBribe = GC.getDefineINT("PORT_ROYAL_PORT_TAX"); // twice bribe rate of smuggling
-	iPrice -= (iPrice * iBribe) / 100;
+	int iPortRoyalTax = GC.getDefineINT("PORT_ROYAL_PORT_TAX"); // twice bribe rate of smuggling
+	iPrice -= (iPrice * iPortRoyalTax) / 100;
 
 	return iPrice;
 }

@@ -64,7 +64,6 @@ public:
 	DllExport void setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCity, const CvUnit& kUnit);
 	DllExport void setEuropeYieldSoldHelp(CvWStringBuffer &szString, const CvPlayer& kPlayer, YieldTypes eYield, int iAmount, int iCommission);
 	DllExport void setEuropeYieldBoughtHelp(CvWStringBuffer &szString, const CvPlayer& kPlayer, YieldTypes eYield, int iAmount);
-
 	DllExport void parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait, CivilizationTypes eCivilization = NO_CIVILIZATION, bool bDawnOfMan = false, bool bIndent = true);
 	DllExport void parseLeaderTraits(CvWStringBuffer &szInfoText, LeaderHeadTypes eLeader = NO_LEADER, CivilizationTypes eCivilization = NO_CIVILIZATION, bool bDawnOfMan = false, bool bCivilopediaText = false);
 	DllExport void parseLeaderShortTraits(CvWStringBuffer &szInfoText, LeaderHeadTypes eLeader);
@@ -111,6 +110,10 @@ public:
 
 	DllExport void setResourceLayerInfo(ResourceLayerOptions eOption, CvWString& szName, CvString& szButton);
 	DllExport void setUnitLayerInfo(UnitLayerOptionTypes eOption, CvWString& szName, CvString& szButton);
+
+	// WTP, ray, fixing wrong Trade Log in Port Royal
+	void setAfricaYieldSoldHelp(CvWStringBuffer &szString, const CvPlayer& kPlayer, YieldTypes eYield, int iAmount, int iCommission);
+	void setPortRoyalYieldSoldHelp(CvWStringBuffer &szString, const CvPlayer& kPlayer, YieldTypes eYield, int iAmount, int iCommission);
 
 private:
 	void eventGoldHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, PlayerTypes ePlayer, PlayerTypes eOtherPlayer);

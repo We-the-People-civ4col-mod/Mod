@@ -9341,6 +9341,105 @@ void CvGameTextMgr::setEuropeYieldBoughtHelp(CvWStringBuffer &szString, const Cv
 	szString.append(gDLL->getText("TXT_KEY_YIELD_BOUGHT", iAmount, GC.getYieldInfo(eYield).getChar(), kPlayerEurope.getYieldSellPrice(eYield), iGross));
 }
 
+
+// WTP, ray, fixing wrong Trade Log in Port Royal - START
+void CvGameTextMgr::setAfricaYieldSoldHelp(CvWStringBuffer &szString, const CvPlayer& kPlayer, YieldTypes eYield, int iAmount, int iCommission)
+{
+	FAssert(kPlayer.getParent() != NO_PLAYER);
+	CvPlayer& kPlayerEurope = GET_PLAYER(kPlayer.getParent());
+
+	int iGross = iAmount;
+	if (eYield != NO_YIELD)
+	{
+		iGross *= kPlayerEurope.getYieldAfricaBuyPrice(eYield);
+		szString.append(gDLL->getText("TXT_KEY_YIELD_SOLD", iAmount, GC.getYieldInfo(eYield).getChar(), kPlayerEurope.getYieldAfricaBuyPrice(eYield), iGross));
+	}
+	else
+	{
+		szString.append(gDLL->getText("TXT_KEY_TREASURE_DELIVERED", iGross));
+	}
+
+	// R&R, ray, Smuggling - START
+	if (iCommission == GC.getDefineINT("SMUGGLING_BRIBE_RATE"))
+	{
+		int iCommissionGold = iGross * iCommission / 100;
+		iGross -= iCommissionGold;
+		szString.append(NEWLINE);
+		szString.append(gDLL->getText("TXT_KEY_YIELD_BRIBE", iCommission, iCommissionGold));
+	}
+	else
+	{
+		if (iCommission != 0)
+		{
+			int iCommissionGold = iGross * iCommission / 100;
+			iGross -= iCommissionGold;
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_YIELD_COMMISSION", iCommission, iCommissionGold));
+		}
+		if (kPlayer.getTaxRate() != 0)
+		{
+			int iTaxGold = iGross * kPlayer.getTaxRate() / 100;
+			iGross -= iTaxGold;
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_YIELD_TAX", kPlayer.getTaxRate(), iTaxGold));
+		}
+	}
+	// R&R, ray, Smuggling - END
+
+	FAssert(eYield == NO_YIELD || kPlayer.getSellToAfricaProfit(eYield, iAmount * (100 - iCommission) / 100) == iGross);
+	szString.append(NEWLINE);
+	szString.append(gDLL->getText("TXT_KEY_YIELD_NET_PROFIT", iGross));
+}
+
+void CvGameTextMgr::setPortRoyalYieldSoldHelp(CvWStringBuffer &szString, const CvPlayer& kPlayer, YieldTypes eYield, int iAmount, int iCommission)
+{
+	FAssert(kPlayer.getParent() != NO_PLAYER);
+	CvPlayer& kPlayerEurope = GET_PLAYER(kPlayer.getParent());
+
+	int iGross = iAmount;
+	if (eYield != NO_YIELD)
+	{
+		iGross *= kPlayerEurope.getYieldPortRoyalBuyPrice(eYield);
+		szString.append(gDLL->getText("TXT_KEY_YIELD_SOLD", iAmount, GC.getYieldInfo(eYield).getChar(), kPlayerEurope.getYieldPortRoyalBuyPrice(eYield), iGross));
+	}
+	else
+	{
+		szString.append(gDLL->getText("TXT_KEY_TREASURE_DELIVERED", iGross));
+	}
+
+	// R&R, ray, Smuggling - START
+	// so smuggling in Port Royal
+	/*
+	if (iCommission == GC.getDefineINT("SMUGGLING_BRIBE_RATE"))
+	{
+		int iCommissionGold = iGross * iCommission / 100;
+		iGross -= iCommissionGold;
+		szString.append(NEWLINE);
+		szString.append(gDLL->getText("TXT_KEY_YIELD_BRIBE", iCommission, iCommissionGold));
+	}
+	*/
+
+	if (iCommission != 0)
+	{
+		int iCommissionGold = iGross * iCommission / 100;
+		iGross -= iCommissionGold;
+		szString.append(NEWLINE);
+		szString.append(gDLL->getText("TXT_KEY_YIELD_COMMISSION", iCommission, iCommissionGold));
+	}
+	if (GC.getDefineINT("PORT_ROYAL_PORT_TAX") != 0)
+	{
+		int iTaxGold = iGross * GC.getDefineINT("PORT_ROYAL_PORT_TAX") / 100;
+		iGross -= iTaxGold;
+		szString.append(NEWLINE);
+		szString.append(gDLL->getText("TXT_KEY_YIELD_TAX", GC.getDefineINT("PORT_ROYAL_PORT_TAX"), iTaxGold));
+	}
+	// R&R, ray, Smuggling - END
+
+	FAssert(eYield == NO_YIELD || kPlayer.getSellToPortRoyalProfit(eYield, iAmount * (100 - iCommission) / 100) == iGross);
+	szString.append(NEWLINE);
+	szString.append(gDLL->getText("TXT_KEY_YIELD_NET_PROFIT", iGross));
+}
+
 void CvGameTextMgr::setEventHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, int iEventTriggeredId, PlayerTypes ePlayer)
 {
 	//Barthoze : TIME IS THE ISSUE
