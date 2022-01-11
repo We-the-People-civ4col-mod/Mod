@@ -6540,6 +6540,10 @@
             <BuildingProductionModifiers/>
             <BuildingRequiredYieldModifiers/>
             <UnitStrengthModifiers>
+			    <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_SLOOP</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_CORVETTE</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
