@@ -40713,7 +40713,24 @@
                 </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
-            <EvasionBuildings/>
+            <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+            </EvasionBuildings>
             <iCombat>30</iCombat>
             <iXPValueAttack>5</iXPValueAttack>
             <iXPValueDefense>3</iXPValueDefense>
