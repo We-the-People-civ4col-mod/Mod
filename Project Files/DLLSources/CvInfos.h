@@ -1625,6 +1625,8 @@ public:
 	ProfessionTypes getDefaultProfession() const;
 	DllExport int getMissionaryChar() const;
 	DllExport void setMissionaryChar(int iChar);
+	int getChar() const;
+	void setChar(int iChar);
 
 	DllExport bool isAIPlayable() const;
 	DllExport bool isPlayable() const;

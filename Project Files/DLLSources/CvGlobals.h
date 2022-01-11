@@ -322,6 +322,7 @@ public:
 	DllExport int getNumCivilizationInfos();
 	DllExport std::vector<CvCivilizationInfo*>& getCivilizationInfo();
 	DllExport CvCivilizationInfo& getCivilizationInfo(CivilizationTypes eCivilizationNum);
+	CvCivilizationInfo& getInfo(CivilizationTypes eCivilizationNum);
 
 	DllExport int getNumLeaderHeadInfos();
 	DllExport std::vector<CvLeaderHeadInfo*>& getLeaderHeadInfo();
@@ -385,6 +386,7 @@ public:
 	DllExport int getNumFatherPointInfos();
 	std::vector<CvFatherPointInfo*>& getFatherPointInfo();
 	DllExport CvFatherPointInfo& getFatherPointInfo(FatherPointTypes e);
+	CvFatherPointInfo& getInfo(FatherPointTypes e);
 
 	int getNumUnitCombatInfos();
 	std::vector<CvInfoBase*>& getUnitCombatInfo();
@@ -426,6 +428,7 @@ public:
 
 	std::vector<CvYieldInfo*>& getYieldInfo();
 	DllExport	CvYieldInfo& getYieldInfo(YieldTypes eYieldNum);
+	CvYieldInfo& getInfo(YieldTypes eYieldNum);
 
 	DllExport int getNumRouteInfos();
 	std::vector<CvRouteInfo*>& getRouteInfo();
@@ -472,6 +475,7 @@ public:
 	DllExport int getNumSpecialBuildingInfos();
 	std::vector<CvSpecialBuildingInfo*>& getSpecialBuildingInfo();
 	DllExport CvSpecialBuildingInfo& getSpecialBuildingInfo(SpecialBuildingTypes eSpecialBuildingNum);
+	CvSpecialBuildingInfo& getInfo(SpecialBuildingTypes eSpecialBuilding);
 
 	DllExport int getNumUnitClassInfos();
 	std::vector<CvUnitClassInfo*>& getUnitClassInfo();
@@ -1428,8 +1432,7 @@ protected:
 	// WTP, ray, Happiness - END
 
 	/// GameFont XML control - start - Nightinggale
-	int  m_iFontSymbolBonusOffset;
-	int  m_iFontSymbolCustomOffset;
+	int  m_iGameFontCustomSymbolID;
 	/// GameFont XML control - end - Nightinggale
 
 	int m_MAX_TREASURE_AMOUNT; // WTP, merge Treasures, of Raubwuerger

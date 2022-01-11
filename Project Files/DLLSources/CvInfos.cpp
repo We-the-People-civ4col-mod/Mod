@@ -6149,6 +6149,14 @@ void CvCivilizationInfo::setMissionaryChar(int iChar)
 {
 	m_iMissionaryChar = iChar;
 }
+int CvCivilizationInfo::getChar() const
+{
+	return m_iMissionaryChar;
+}
+void CvCivilizationInfo::setChar(int iChar)
+{
+	m_iMissionaryChar = iChar;
+}
 bool CvCivilizationInfo::isAIPlayable() const
 {
 	return m_bAIPlayable;

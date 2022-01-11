@@ -321,8 +321,7 @@ m_TIMER_FESTIVITIES_OR_UNRESTS(0),
 // WTP, ray, Happiness - END
 
 /// GameFont XML control - start - Nightinggale
-m_iFontSymbolBonusOffset(0),
-m_iFontSymbolCustomOffset(0),
+m_iGameFontCustomSymbolID(0),
 /// GameFont XML control - end - Nightinggale
 
 m_MAX_TREASURE_AMOUNT(0), // WTP, merge Treasures, of Raubwuerger
@@ -1357,6 +1356,13 @@ CvCivilizationInfo& CvGlobals::getCivilizationInfo(CivilizationTypes eCivilizati
 	return *(m_paCivilizationInfo[eCivilizationNum]);
 }
 
+CvCivilizationInfo& CvGlobals::getInfo(CivilizationTypes eCivilizationNum)
+{
+	FAssert(eCivilizationNum > -1);
+	FAssert(eCivilizationNum < (int)m_paCivilizationInfo.size());
+	return *(m_paCivilizationInfo[eCivilizationNum]);
+}
+
 
 int CvGlobals::getNumLeaderHeadInfos()
 {
@@ -1636,6 +1642,13 @@ CvFatherPointInfo& CvGlobals::getFatherPointInfo(FatherPointTypes e)
 	return *(m_paFatherPointInfo[e]);
 }
 
+CvFatherPointInfo& CvGlobals::getInfo(FatherPointTypes e)
+{
+	FAssert(e > -1);
+	FAssert(e < GC.getNumFatherPointInfos());
+	return *(m_paFatherPointInfo[e]);
+}
+
 int CvGlobals::getNumUnitCombatInfos()
 {
 	return (int)m_paUnitCombatInfo.size();
@@ -1804,6 +1817,13 @@ std::vector<CvYieldInfo*>& CvGlobals::getYieldInfo()	// For Moose - XML Load Uti
 }
 
 CvYieldInfo& CvGlobals::getYieldInfo(YieldTypes eYieldNum)
+{
+	FAssert(eYieldNum > -1);
+	FAssert(eYieldNum < NUM_YIELD_TYPES);
+	return *(m_paYieldInfo[eYieldNum]);
+}
+
+CvYieldInfo& CvGlobals::getInfo(YieldTypes eYieldNum)
 {
 	FAssert(eYieldNum > -1);
 	FAssert(eYieldNum < NUM_YIELD_TYPES);
@@ -2016,6 +2036,13 @@ std::vector<CvSpecialBuildingInfo*>& CvGlobals::getSpecialBuildingInfo()	// For 
 }
 
 CvSpecialBuildingInfo& CvGlobals::getSpecialBuildingInfo(SpecialBuildingTypes eSpecialBuildingNum)
+{
+	FAssert(eSpecialBuildingNum > -1);
+	FAssert(eSpecialBuildingNum < GC.getNumSpecialBuildingInfos());
+	return *(m_paSpecialBuildingInfo[eSpecialBuildingNum]);
+}
+
+CvSpecialBuildingInfo& CvGlobals::getInfo(SpecialBuildingTypes eSpecialBuildingNum)
 {
 	FAssert(eSpecialBuildingNum > -1);
 	FAssert(eSpecialBuildingNum < GC.getNumSpecialBuildingInfos());
@@ -2811,11 +2838,6 @@ void CvGlobals::cacheGlobals()
 	m_TIMER_FESTIVITIES_OR_UNRESTS = getDefineINT("TIMER_FESTIVITIES_OR_UNRESTS");
 	// WTP, ray, Happiness - END
 
-	/// GameFont XML control - start - Nightinggale
-	m_iFontSymbolBonusOffset = getDefineINT("FONT_SYMBOL_BONUS_OFFSET");
-	m_iFontSymbolCustomOffset = getDefineINT("FONT_SYMBOL_CUSTOM_OFFSET");
-	/// GameFont XML control - end - Nightinggale
-
 	m_MAX_TREASURE_AMOUNT = getDefineINT("MAX_TREASURE_AMOUNT"); // WTP, merge Treasures, of Raubwuerger
 	m_TRADE_POST_GOLD_PER_NATIVE = getDefineINT("TRADE_POST_GOLD_PER_NATIVE"); // WTP, ray, Native Trade Posts - START
 
@@ -3141,15 +3163,6 @@ int CvGlobals::getSymbolID(FontSymbols eSymbol) const
 
 	// non-vanilla symbols are placed before the vanilla symbols to avoid hitting the ID limit in billboards.
 	return eSymbol - (ATTITUDE_FRIENDLY_CHAR + 1) // Index relative to first custom symbol.
-		+ getFontSymbolCustomOffset();         // use xml defined ID of first custom symbol.
-}
-
-int CvGlobals::getFontSymbolBonusOffset() const
-{
-	return m_iFontSymbolBonusOffset;
-}
-int CvGlobals::getFontSymbolCustomOffset() const
-{
-	return m_iFontSymbolCustomOffset;
+		+ m_iGameFontCustomSymbolID;              // use xml defined ID of first custom symbol.
 }
 /// GameFont XML control - end - Nightinggale

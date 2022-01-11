@@ -1,5 +1,7 @@
 
 #include "CvGameCoreDLL.h"
+#include "CvXMLLoadUtility.h"
+#include "CvDLLXMLIFaceBase.h"
 
 #include "UserSettings.h"
 
@@ -208,19 +210,74 @@ void CvGlobals::postXMLLoad(bool bFirst)
 
 
 /// GameFont XML control - start - Nightinggale
+
+template<typename T>
+static void setupGameFontCharsOffset(const T eOffset)
+{
+	if (eOffset == 0)
+	{
+		return;
+	}
+
+	const T eNumInfos = (T)getArrayLength(getJITarrayType(eOffset));
+	for (T eLoop = (T)0; eLoop < eNumInfos; ++eLoop)
+	{
+		if (GC.getInfo(eLoop).getChar() != -1)
+		{
+			GC.getInfo(eLoop).setChar(GC.getInfo(eLoop).getChar() + eOffset);
+		}
+	}
+}
+
+
 void CvGlobals::setupGameFontChars()
 {
 	// call setChar after the exe is done setting GameFont chars
 	// while the exe generally does a good job at assigning GameFont IDs, it has limitations and it can fail
 
-	const int bonusBaseID = GC.getFontSymbolBonusOffset();
+	CvXMLLoadUtility util;
+	int iStart = 0;
 
-	for (BonusTypes eBonus = FIRST_BONUS; eBonus < NUM_BONUS_TYPES; ++eBonus)
+	util.CreateFXml();
+
+	FXml* pXML = util.GetXML();
+	CvDLLXmlIFaceBase* pInterface = gDLL->getXMLIFace();
+
+	bool bLoaded = util.LoadCivXml(pXML, "xml\\Interface\\GameFontIDs.xml");
+	if (!bLoaded)
 	{
-		// Bonus icon order is defined in bonus art. The "read" index is calculated like this in BTS.
-		int bonusID = bonusBaseID + getInfo(eBonus).getArtInfo()->getFontButtonIndex();
-		getInfo(eBonus).setChar(bonusID);
+		return;
 	}
 
+	if (!pInterface->LocateNode(pXML, "GameFontIDs"))
+	{
+		return;
+	}
+
+	/*
+	gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"Cities"))
+	{
+		pXML->SetStringList(&m_paszCityNames, &m_iNumCityNames);
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	*/
+
+
+	pInterface->SetToChildByTagName(pXML, "Addresses");
+	util.GetChildXmlValByName(&m_iGameFontCustomSymbolID, "CustomSymbol");
+	pInterface->SetToParent(pXML);
+
+	pInterface->SetToChildByTagName(pXML, "Offsets");
+	util.GetChildXmlValByName(&iStart, "Bonus");
+	setupGameFontCharsOffset(static_cast<BonusTypes>(iStart));
+	util.GetChildXmlValByName(&iStart, "Building");
+	setupGameFontCharsOffset(static_cast<SpecialBuildingTypes>(iStart));
+	util.GetChildXmlValByName(&iStart, "FatherPoint");
+	setupGameFontCharsOffset(static_cast<FatherPointTypes>(iStart));
+	util.GetChildXmlValByName(&iStart, "Mission");
+	setupGameFontCharsOffset(static_cast<CivilizationTypes>(iStart));
+	util.GetChildXmlValByName(&iStart, "Yield");
+	setupGameFontCharsOffset(static_cast<YieldTypes>(iStart));
+
+	util.DestroyFXml();
 }
 /// GameFont XML control - end - Nightinggale

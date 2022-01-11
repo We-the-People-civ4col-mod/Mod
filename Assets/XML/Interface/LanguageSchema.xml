@@ -25,4 +25,27 @@
 		<element type="Language" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 
+	<ElementType name="Bonus" content="textOnly" dt:type="int"/>
+	<ElementType name="Building" content="textOnly" dt:type="int"/>
+	<ElementType name="CustomSymbol" content="textOnly" dt:type="int"/>
+	<ElementType name="FatherPoint" content="textOnly" dt:type="int"/>
+	<ElementType name="Mission" content="textOnly" dt:type="int"/>
+	<ElementType name="Yield" content="textOnly" dt:type="int"/>
+
+	<ElementType name="Addresses" content="eltOnly">
+		<element type="CustomSymbol"/>
+	</ElementType>
+	
+	<ElementType name="Offsets" content="eltOnly">
+		<element type="Bonus"/>
+		<element type="Building"/>
+		<element type="FatherPoint"/>
+		<element type="Mission"/>
+		<element type="Yield"/>
+	</ElementType>
+
+	<ElementType name="GameFontIDs" content="eltOnly">
+		<element type="Addresses"/>
+		<element type="Offsets"/>
+	</ElementType>
 </Schema>
