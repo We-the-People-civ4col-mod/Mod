@@ -149,7 +149,7 @@
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
                 <FreeUnit>
-                    <UnitClass>UNITCLASS_CARAVELA_REDONDA</UnitClass>
+                    <UnitClass>UNITCLASS_SLAVE_BARQUE</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
