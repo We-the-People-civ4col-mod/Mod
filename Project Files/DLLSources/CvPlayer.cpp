@@ -21204,7 +21204,7 @@ void CvPlayer::checkForSmugglers()
 		return;
 	}
 
-	if(GC.getDefineINT("SMUGGLING_BRIBE_RATE") * 2 > getTaxRate())
+	if(GC.getDefineINT("PORT_ROYAL_PORT_TAX") > getTaxRate())
 	{
 		return;
 	}
@@ -22473,7 +22473,7 @@ int CvPlayer::getSellToPortRoyalProfit(YieldTypes eYield, int iAmount) const
 	CvPlayer& kPlayerEurope = GET_PLAYER(getParent());
 
 	int iPrice = iAmount * kPlayerEurope.getYieldPortRoyalBuyPrice(eYield);
-	int iBribe = GC.getDefineINT("SMUGGLING_BRIBE_RATE") * 2; // twice bribe rate of smuggling
+	int iBribe = GC.getDefineINT("PORT_ROYAL_PORT_TAX"); // twice bribe rate of smuggling
 	iPrice -= (iPrice * iBribe) / 100;
 
 	return iPrice;

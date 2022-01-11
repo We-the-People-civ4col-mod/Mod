@@ -356,7 +356,7 @@ class CvPortRoyalScreen:
 		screen.setText(self.getNextWidgetName(), "Background", szTreasury, CvUtil.FONT_LEFT_JUSTIFY, self.STANDARD_MARGIN, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, self.TREASURY_ID, -1 )
 		szExit = u"<font=4>" + localText.getText(hudColor, ()) + localText.getText("TXT_KEY_PEDIA_SCREEN_EXIT", ()).upper() + "</font>"
 		screen.setText(self.getNextWidgetName(), "Background", szExit, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - self.STANDARD_MARGIN, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1 )
-		szTaxRate = u"<font=4>" + localText.getText(hudColor, ()) + localText.getText("TXT_KEY_MISC_BRIBE_RATE", (2 * gc.getDefineINT("SMUGGLING_BRIBE_RATE"), player.NBMOD_GetMaxTaxRate())).upper() + u"</font>"
+		szTaxRate = u"<font=4>" + localText.getText(hudColor, ()) + localText.getText("TXT_KEY_MISC_BRIBE_RATE", (gc.getDefineINT("PORT_ROYAL_PORT_TAX"), player.NBMOD_GetMaxTaxRate())).upper() + u"</font>"
 		# R&R, Robert Surcouf, No More Variables Hidden game option START
 		#screen.setText(self.getNextWidgetName(), "Background", szTaxRate, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - CyInterface().determineWidth(szExit) - self.STANDARD_MARGIN * 2, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		screen.setText(self.getNextWidgetName(), "Background", szTaxRate, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - CyInterface().determineWidth(szExit) - self.STANDARD_MARGIN * 2, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, self.HELP_TAX_RATE, -1 )
