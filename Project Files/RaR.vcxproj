@@ -233,6 +233,7 @@
     <ClInclude Include="DLLSources\CyData.h" />
     <ClInclude Include="DLLSources\CyUserSettings.h" />
     <ClInclude Include="DLLSources\EnumMapSpecializationBool.h" />
+    <ClInclude Include="DLLSources\EnumMapCore.h" />
     <ClInclude Include="DLLSources\EnumMapSpecializationInt.h" />
     <ClInclude Include="DLLSources\EnumMapSpecialization.h" />
     <ClInclude Include="DLLSources\EnumMapSpecializationClass.h" />

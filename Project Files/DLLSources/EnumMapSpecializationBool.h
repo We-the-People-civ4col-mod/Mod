@@ -60,14 +60,15 @@ struct BoolToken
 
 BOOST_STATIC_ASSERT(sizeof(BoolToken) == 4);
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC>
+template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapBoolVariable
 {
 	BOOST_STATIC_ASSERT(0);
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType>
-class EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC>
+template<class IndexType, class T, int DEFAULT, class LengthType, int LENGTH_KNOWN_WHILE_COMPILING>
+class EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, LENGTH_KNOWN_WHILE_COMPILING>
+	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
 {
 public:
 	static const Length = VARINFO<IndexType>::LENGTH;
@@ -109,8 +110,9 @@ protected:
 	}
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType>
-class EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC>
+template<class IndexType, class T, int DEFAULT, class LengthType, int LENGTH_KNOWN_WHILE_COMPILING>
+class EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>
+	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
 {
 public:
 	IndexType getLength() const
@@ -164,9 +166,9 @@ protected:
 	}
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC>
-class EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_BOOL>
-	: public EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, STATIC>
+template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int LENGTH_KNOWN_WHILE_COMPILING>
+class EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_BOOL, LENGTH_KNOWN_WHILE_COMPILING>
+	: public EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, STATIC, LENGTH_KNOWN_WHILE_COMPILING>
 {
 public:
 	bool hasContent() const
@@ -223,7 +225,7 @@ public:
 	}
 
 protected:
-	EnumMapBase() : EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, STATIC>() {}
+	EnumMapBase() : EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, STATIC, LENGTH_KNOWN_WHILE_COMPILING>() {}
 	BOOST_STATIC_ASSERT(DEFAULT == 0 || DEFAULT == 1);
 };
 

@@ -65,7 +65,7 @@ class BoolArray;
 
 template<class T> class JustInTimeArray;
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
+template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapBase;
 template<class IndexType, class IndexType2, class T>
 class EnumMap2D;
@@ -228,14 +228,14 @@ protected:
 	InfoArray1Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
 		: InfoArray1<T0>(eType0, eType1, eType2, eType3) {}
 public:
-	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-	void assignFrom(const EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE>& em);
-	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-	void addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange = 1) const;
-	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-	void addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
-	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-	void copyTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em) const;
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+	void assignFrom(const EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+	void addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em, int iChange = 1) const;
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+	void addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+	void copyTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em) const;
 };
 template<typename T0, typename T1>
 class InfoArray2Only : public InfoArray2<T0, T1>
@@ -244,16 +244,16 @@ protected:
 	InfoArray2Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
 		: InfoArray2<T0, T1>(eType0, eType1, eType2, eType3) {}
 public:
-	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-	void assignFrom(const EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE>& em);
-	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-	void addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange = 1) const;
-	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-	void addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
-	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-	void copyTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em) const;
-	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-	void copyTo(EnumMapBase<T0, bool, DEFAULT, LengthType, STATIC, TYPE> & em) const;
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+	void assignFrom(const EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+	void addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em, int iChange = 1) const;
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+	void addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+	void copyTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em) const;
+	template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+	void copyTo(EnumMapBase<T0, bool, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em) const;
 	template<typename T>
 	void addTo(EnumMap2D<T0, T1, T> & em, int iChange = 1) const;
 	template<typename Ta, typename Tb, typename Tc>
@@ -280,8 +280,8 @@ protected:
 };
 
 template<typename T0>
-template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-void InfoArray1Only<T0>::assignFrom(const EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em)
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+void InfoArray1Only<T0>::assignFrom(const EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em)
 {
 	const int iLength = em.GetNumPositiveElements();
 	_setLength(iLength);
@@ -300,8 +300,8 @@ void InfoArray1Only<T0>::assignFrom(const EnumMapBase<T0, T, DEFAULT, LengthType
 
 
 template<typename T0, typename T1>
-template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-void InfoArray2Only<T0, T1>::assignFrom(const EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em)
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+void InfoArray2Only<T0, T1>::assignFrom(const EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em)
 {
 	const bool bTypeCheck = !boost::is_same<T, bool>::value;
 	BOOST_STATIC_ASSERT(bTypeCheck);
@@ -321,15 +321,15 @@ void InfoArray2Only<T0, T1>::assignFrom(const EnumMapBase<T0, T, DEFAULT, Length
 }
 
 template<typename T0>
-template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-void InfoArray1Only<T0>::addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange) const
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+void InfoArray1Only<T0>::addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em, int iChange) const
 {
 	addTo(em, iChange, NULL);
 }
 
 template<typename T0>
-template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-void InfoArray1Only<T0>::addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+void InfoArray1Only<T0>::addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
 {
 	const bool bTypeCheck = !boost::is_same<Tb, bool>::value;
 	BOOST_STATIC_ASSERT(bTypeCheck);
@@ -344,15 +344,15 @@ void InfoArray1Only<T0>::addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, T
 }
 
 template<typename T0, typename T1>
-template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-void InfoArray2Only<T0, T1>::addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange) const
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+void InfoArray2Only<T0, T1>::addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em, int iChange) const
 {
 	addTo(em, iChange, NULL);
 }
 
 template<typename T0, typename T1>
-template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-void InfoArray2Only<T0, T1>::addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+void InfoArray2Only<T0, T1>::addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
 {
 	const bool bTypeCheck = !boost::is_same<Tb, bool>::value;
 	BOOST_STATIC_ASSERT(bTypeCheck);
@@ -367,8 +367,8 @@ void InfoArray2Only<T0, T1>::addTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATI
 }
 
 template<typename T0>
-template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-void InfoArray1Only<T0>::copyTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em) const
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+void InfoArray1Only<T0>::copyTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em) const
 {
 	em.reset();
 	for (int i = 0; i < getLength(); ++i)
@@ -378,8 +378,8 @@ void InfoArray1Only<T0>::copyTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, 
 }
 
 template<typename T0, typename T1>
-template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-void InfoArray2Only<T0, T1>::copyTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE> & em) const
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+void InfoArray2Only<T0, T1>::copyTo(EnumMapBase<T0, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em) const
 {
 	em.reset();
 	for (int i = 0; i < getLength(); ++i)
@@ -389,8 +389,8 @@ void InfoArray2Only<T0, T1>::copyTo(EnumMapBase<T0, T, DEFAULT, LengthType, STAT
 }
 
 template<typename T0, typename T1>
-template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-void InfoArray2Only<T0, T1>::copyTo(EnumMapBase<T0, bool, DEFAULT, LengthType, STATIC, TYPE> & em) const
+template<class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+void InfoArray2Only<T0, T1>::copyTo(EnumMapBase<T0, bool, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> & em) const
 {
 	em.reset();
 	for (int i = 0; i < getLength(); ++i)

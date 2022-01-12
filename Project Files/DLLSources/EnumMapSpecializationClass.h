@@ -24,8 +24,9 @@
 
 
 
-template<class IndexType, class T, int DEFAULT, class LengthType>
-class EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>
+template<class IndexType, class T, int DEFAULT, class LengthType, int LENGTH_KNOWN_WHILE_COMPILING>
+class EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>
+	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
 {
 public:
 	EnumMapBase();
@@ -45,27 +46,27 @@ protected:
 	T* m_pArray;
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType>
-EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::EnumMapBase()
+template<class IndexType, class T, int DEFAULT, class LengthType, int LENGTH_KNOWN_WHILE_COMPILING>
+EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::EnumMapBase()
 	: m_pArray(NULL)
 {
 	BOOST_STATIC_ASSERT(VARINFO<T>::IS_CLASS == 1);
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType>
-EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::~EnumMapBase()
+template<class IndexType, class T, int DEFAULT, class LengthType, int LENGTH_KNOWN_WHILE_COMPILING>
+EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::~EnumMapBase()
 {
 	reset();
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType>
-bool EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::isAllocated() const
+template<class IndexType, class T, int DEFAULT, class LengthType, int LENGTH_KNOWN_WHILE_COMPILING>
+bool EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::isAllocated() const
 {
 	return m_pArray != NULL;
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType>
-void EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::allocate()
+template<class IndexType, class T, int DEFAULT, class LengthType, int LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::allocate()
 {
 	if (!isAllocated())
 	{
@@ -73,14 +74,14 @@ void EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::all
 	}
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType>
-void EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::reset()
+template<class IndexType, class T, int DEFAULT, class LengthType, int LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::reset()
 {
 	SAFE_DELETE_ARRAY(m_pArray);
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType>
-bool EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::hasContent()
+template<class IndexType, class T, int DEFAULT, class LengthType, int LENGTH_KNOWN_WHILE_COMPILING>
+bool EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::hasContent()
 {
 	if (isAllocated())
 	{
@@ -95,15 +96,15 @@ bool EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::has
 	return false;
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType>
-T& EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::operator[](IndexType eIndex)
+template<class IndexType, class T, int DEFAULT, class LengthType, int LENGTH_KNOWN_WHILE_COMPILING>
+T& EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::operator[](IndexType eIndex)
 {
 	allocate();
 	return m_pArray[eIndex];
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType>
-const T& EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::operator[](IndexType eIndex) const
+template<class IndexType, class T, int DEFAULT, class LengthType, int LENGTH_KNOWN_WHILE_COMPILING>
+const T& EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::operator[](IndexType eIndex) const
 {
 	if (isAllocated())
 	{

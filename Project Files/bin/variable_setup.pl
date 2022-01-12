@@ -247,17 +247,30 @@ sub structEnum
 	my $type = $var{$name}{type};
 	
 	$output .= "\tstatic const VariableTypes TYPE = (int)" . $var{$name}{COMPILE} . " < 128 ? VARIABLE_TYPE_CHAR : VARIABLE_TYPE_SHORT;\n";
+	$output .= "\tstatic const int LENGTH_KNOWN_WHILE_COMPILING = (int)" . $var{$name}{COMPILE} . " != MAX_SHORT ? 2 : 1;\n";
+	$output .= "\tstatic const $type FIRST = " . $var{$name}{START} . ";\n";
+	$output .= "\tstatic const $type LAST = static_cast<" . $type . ">((int)" . $var{$name}{END} . " - 1);\n";
+	$output .= "\tstatic const $type NUM_ELEMENTS = static_cast<" . $type . ">((int)LAST - (int)FIRST + 1);\n";
 	$output .= "\tstatic const $type LENGTH = " . $var{$name}{COMPILE} . ";\n";
+	$output .= "\tstatic $type first() { return " . $var{$name}{START} . ";}\n";
+	$output .= "\tstatic $type last() { return " . $var{$name}{END} . " - static_cast<" . $type . ">(1);}\n";
+	$output .= "\tstatic $type numElements() { return last() - first() + static_cast<" . $type . ">(1);}\n";
 	$output .= "\tstatic $type start() { return " . $var{$name}{START} . ";}\n";
 	$output .= "\tstatic $type end() { return " . $var{$name}{END} . ";}\n";
 	$output .= "\tstatic $type length() { return end() - start();}\n";
-	$output .= "\tstatic bool isInRange($type eIndex) { return eIndex >= start() && eIndex < end();}\n";
+	$output .= "\tstatic bool isInRange($type eIndex) { return _isInRange<LENGTH_KNOWN_WHILE_COMPILING>(eIndex);}\n";
 	$output .= "\ttemplate <int T> struct STATIC {\n";
 	$output .= "\t\tstatic const int VAL = T * ((int)TYPE == (int)VARIABLE_TYPE_CHAR ? 1 : 2) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;\n";
 	$output .= "\t};\n";
 	$output .= "\ttemplate <int T> struct COMPATIBLE {\n";
 	$output .= "\t\tstatic const bool VAL = boost::is_same<" . $type . ", T>::VAL;\n";
 	$output .= "\t};\n";
+	$output .= "protected:\n";
+	$output .= "\ttemplate<int KNOWN>	static bool _isInRange(" . $type . " eIndex) {}\n";
+	$output .= "\ttemplate<>	static bool _isInRange<0>(" . $type . " eIndex) { return eIndex >= first() && eIndex <= last(); }\n";
+	$output .= "\ttemplate<>	static bool _isInRange<1>(" . $type . " eIndex) { return eIndex >= FIRST && eIndex <= last(); }\n";
+	$output .= "\ttemplate<>	static bool _isInRange<2>(" . $type . " eIndex) { return eIndex >= FIRST && eIndex <= LAST; }\n";
+
 }
 
 sub structVar

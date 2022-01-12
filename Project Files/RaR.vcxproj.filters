@@ -861,6 +861,9 @@
     <ClInclude Include="DLLSources\EnumMapSpecializationClass.h">
       <Filter>Data\Header\EnumMap Internals</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\EnumMapCore.h">
+      <Filter>Data\Header\EnumMap Internals</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">

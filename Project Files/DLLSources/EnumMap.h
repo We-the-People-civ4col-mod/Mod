@@ -28,9 +28,22 @@
 // See the end of the file for (often unneeded) additionaly features, like disabling type checks and altering default values.
 // Default is 0, except if the second parameter is an enum, in which case the default is -1 (like NO_PLAYER)
 
+template<class IndexType, class LengthType, int LENGTH_KNOWN_WHILE_COMPILING>
+class EnumMapCore
+{
+public:
+	static const IndexType FIRST;
+	static const IndexType LAST;
+	static const IndexType NUM_ELEMENTS;
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC = VARINFO<T>::STATIC<VARINFO<LengthType>::LENGTH>::VAL, int TYPE = VARINFO<T>::TYPE>
+	bool isInRange(IndexType eIndex) const;
+};
+
+
+
+template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapBase
+	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
 {
 protected:
 	// protected constructor does the same as abstract class in C#
@@ -43,6 +56,6 @@ protected:
 
 
 template<class IndexType, class T, int DEFAULT = VARINFO<T>::DEFAULT>
-class EnumMap : public EnumMapBase <IndexType, T, DEFAULT, IndexType, VARINFO<T>::STATIC<VARINFO<IndexType>::LENGTH>::VAL, VARINFO<T>::TYPE> {};
+class EnumMap : public EnumMapBase <IndexType, T, DEFAULT, IndexType, VARINFO<T>::STATIC<VARINFO<IndexType>::LENGTH>::VAL, VARINFO<T>::TYPE, VARINFO<IndexType>::LENGTH_KNOWN_WHILE_COMPILING> {};
 
 #endif
