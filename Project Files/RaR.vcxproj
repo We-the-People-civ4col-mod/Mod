@@ -235,7 +235,7 @@
     <ClInclude Include="DLLSources\EnumMapSpecializationBool.h" />
     <ClInclude Include="DLLSources\EnumMapSpecializationInt.h" />
     <ClInclude Include="DLLSources\EnumMapSpecialization.h" />
-    <ClInclude Include="DLLSources\EnumMapSpecializationReference.h" />
+    <ClInclude Include="DLLSources\EnumMapSpecializationClass.h" />
     <ClInclude Include="DLLSources\NetworkDataPacking.h" />
     <ClInclude Include="DLLSources\Profile.h" />
     <ClInclude Include="DLLSources\CvMacros.h" />

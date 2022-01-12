@@ -1,0 +1,123 @@
+#ifndef ENUM_MAP_FUNCTIONS_GENERIC_H
+#define ENUM_MAP_FUNCTIONS_GENERIC_H
+#pragma once
+
+#include "EnumMap.h"
+
+//
+// EnumMap of classes
+//
+// Works like any other EnumMap, except it contains an array of class instances.
+// For this reason a number of the normal functions aren't supported, most noteworthy get and set.
+// Instead it makes use of the array index operator [], which returns a reference.
+//
+// Usage:
+// em[index].
+// This will grant full access to the inner class. If said class supports [] too, then it's em[][]
+// There is support for EnumMaps of EnumMaps of EnumMaps of..... No hard limit, but such a massive data structure could indicate a poor code design.
+//
+// For savegames:
+// Can save as long as there is savegame code for the inner class and said class has hasContent()
+// hasContent() tells if a class instance should be saved or not, hence the fallback of always returning true should work.
+// It is however preferred to have code to check if the instance has non-default data as that will reduce savegame size.
+
+
+
+
+template<class IndexType, class T, int DEFAULT, class LengthType>
+class EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>
+{
+public:
+	EnumMapBase();
+	~EnumMapBase();
+
+	bool isAllocated() const;
+	void allocate();
+	void reset();
+
+	bool hasContent();
+
+	// operator overloading
+	T& operator[](IndexType eIndex);
+	const T& operator[](IndexType eIndex) const;
+
+protected:
+	T* m_pArray;
+};
+
+template<class IndexType, class T, int DEFAULT, class LengthType>
+EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::EnumMapBase()
+	: m_pArray(NULL)
+{
+	BOOST_STATIC_ASSERT(VARINFO<T>::IS_CLASS == 1);
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType>
+EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::~EnumMapBase()
+{
+	reset();
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType>
+bool EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::isAllocated() const
+{
+	return m_pArray != NULL;
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType>
+void EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::allocate()
+{
+	if (!isAllocated())
+	{
+		m_pArray = new T[VARINFO<LengthType>::length()];
+	}
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType>
+void EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::reset()
+{
+	SAFE_DELETE_ARRAY(m_pArray);
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType>
+bool EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::hasContent()
+{
+	if (isAllocated())
+	{
+		for (LengthType i = (LengthType)0; i < VARINFO<LengthType>::length(); ++i)
+		{
+			if (m_pArray[i].hasContent())
+			{
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType>
+T& EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::operator[](IndexType eIndex)
+{
+	allocate();
+	return m_pArray[eIndex];
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType>
+const T& EnumMapBase<IndexType, T, DEFAULT, LengthType, 0, VARIABLE_TYPE_CLASS>::operator[](IndexType eIndex) const
+{
+	if (isAllocated())
+	{
+		return m_pArray[eIndex];
+	}
+	else
+	{
+		// array not allocated
+		// make an instance of the class in question and return that one
+		// it's static anyway, so no harm in using a static instance over and over
+		// this avoids allocations and dealing with memory leaks at the memory cost of one T instance per type of EnumMap from this file
+		static T empty;
+		return empty;
+	}
+}
+
+#endif
