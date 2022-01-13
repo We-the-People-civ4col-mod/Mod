@@ -237,7 +237,7 @@ sub handleStruct
 	$output .= "template <> struct VARINFO<$type>\n";
 	$output .= "{\n";
 	$output .= "\tstatic const JITarrayTypes JIT = " . $var{$name}{JIT} . ";\n";
-	$output .= "\tstatic const int DEFAULT = " . $var{$name}{DEFAULT} . ";\n";
+	$output .= "\tstatic const $type DEFAULT = static_cast<$type>(" . $var{$name}{DEFAULT} . ");\n";
 	$output .= "\tstatic const int IS_CLASS = 0;\n";
 	
 	if (exists $var{$type}{var})
@@ -290,7 +290,7 @@ sub structVar
 	
 	$output .= "\tstatic const VariableTypes TYPE = VARIABLE_TYPE_GENERIC;\n";
 	$output .= "\ttemplate <int T> struct STATIC {\n";
-	$output .= "\t\tstatic const int VAL = (T * sizeof($type)) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;\n";
+	$output .= "\t\tstatic const VariableStaticTypes VAL = (T * sizeof($type)) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;\n";
 	$output .= "\t};\n";
 	handleStructVarGroup($type);
 }

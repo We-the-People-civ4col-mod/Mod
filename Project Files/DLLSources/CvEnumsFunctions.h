@@ -17,7 +17,7 @@ struct VARINFO
 	static const int DEFAULT = 0;
 	static const int SIZE = sizeof(T);
 	template <int T> struct STATIC {
-		static const int VAL = 0;
+		static const VariableStaticTypes VAL = VARIABLE_TYPE_DYNAMIC;
 	};
 };
 
@@ -32,7 +32,7 @@ struct VARINFO<bool>
 	static const int LENGTH = MAX_SHORT;
 	static const int DEFAULT = 0;
 	template <int T> struct STATIC {
-		static const int VAL = T <= 64 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;
+		static const VariableStaticTypes VAL = T <= 64 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;
 	};
 	static int getNumBlocks(int iLength)
 	{
@@ -55,9 +55,9 @@ template <> struct VARINFO<ENUM_NAME> \
 	static const JITarrayTypes JIT = JIT_TYPE; \
 	static const VariableTypes TYPE = VARIABLE_TYPE_GENERIC; \
 	static const int LENGTH = MAX_SHORT; \
-	static const int DEFAULT = 0; \
+	static const ENUM_NAME DEFAULT = static_cast<ENUM_NAME>(0); \
 	template <int T> struct STATIC { \
-		static const int VAL = T * sizeof(ENUM_NAME) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC; \
+		static const VariableStaticTypes VAL = T * sizeof(ENUM_NAME) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC; \
 	}; \
 };
 

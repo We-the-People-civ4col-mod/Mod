@@ -60,7 +60,7 @@ struct BoolToken
 
 BOOST_STATIC_ASSERT(sizeof(BoolToken) == 4);
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapBoolVariable
 {
 	BOOST_STATIC_ASSERT(0);
@@ -166,7 +166,7 @@ protected:
 	}
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_BOOL, LENGTH_KNOWN_WHILE_COMPILING>
 	: public EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, STATIC, LENGTH_KNOWN_WHILE_COMPILING>
 {

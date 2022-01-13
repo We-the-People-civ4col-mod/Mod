@@ -94,7 +94,7 @@ public:
 	// allocates memory
 	void Read(wchar* szString);
 	
-	template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+	template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 	void Read(EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
 
 	template<class T>
@@ -256,7 +256,7 @@ private:
 	template<int TYPE2>
 	struct ReadEnumMap
 	{
-		template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+		template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 		static void Read(CvSavegameReader& reader, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
 
 	};
@@ -370,10 +370,10 @@ public:
 	template<class T>
 	void Write(SavegameVariableTypes eType, JustInTimeArray<T>& jitArray);
 
-	template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+	template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 	void Write(EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
 
-	template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+	template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 	void Write(SavegameVariableTypes eType, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
 
 	template<class T>
@@ -489,7 +489,7 @@ private:
 	template<int TYPE2>
 	struct WriteEnumMap
 	{
-		template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+		template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 		static void Write(CvSavegameWriter& kWriter, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
 	};
 
@@ -550,7 +550,7 @@ inline T CvSavegameReader::ReadBitfield(T variable)
 	return variable;
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 inline void CvSavegameReader::Read(EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em)
 {
 	ReadEnumMap<TYPE>::Read(*this, em);
@@ -832,13 +832,13 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, JustInTimeArray
 	}
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 inline void CvSavegameWriter::Write(EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em)
 {
 	WriteEnumMap<TYPE>::Write(*this, em);
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 inline void CvSavegameWriter::Write(SavegameVariableTypes eType, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em)
 {
 	if (em.hasContent())

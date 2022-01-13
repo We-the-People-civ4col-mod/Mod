@@ -41,7 +41,7 @@ public:
 
 
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE, int LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapBase
 	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
 {
