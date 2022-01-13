@@ -8802,16 +8802,15 @@ void CvCity::setOrderedStudents(UnitTypes eUnit, int iCount, bool bRepeat, bool 
 
 void CvCity::checkOrderedStudentsForRepeats(UnitTypes eUnit)
 {
-	FAssert(eUnit >= 0);
-	FAssert(eUnit < GC.getNumUnitInfos());
+	FAssert(m_em_bOrderedStudentsRepeat.isInRange(eUnit));
 
 	if (m_em_bOrderedStudentsRepeat.isAllocated() && m_em_iOrderedStudents.isAllocated())
 	{
-		for (int iUnit = 0; iUnit < m_em_bOrderedStudentsRepeat.numElements(); iUnit++)
+		for (UnitTypes eLoopUnit = m_em_bOrderedStudentsRepeat.FIRST; eLoopUnit <= m_em_bOrderedStudentsRepeat.LAST; ++eLoopUnit)
 		{
-			if (m_em_bOrderedStudentsRepeat.get((UnitTypes)iUnit))
+			if (m_em_bOrderedStudentsRepeat.get(eLoopUnit))
 			{
-				m_em_iOrderedStudents.set((UnitTypes)iUnit, 1);
+				m_em_iOrderedStudents.set(eLoopUnit, 1);
 			}
 		}
 		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
