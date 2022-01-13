@@ -66,7 +66,7 @@ class EnumMapBoolVariable
 	BOOST_STATIC_ASSERT(0);
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, LENGTH_KNOWN_WHILE_COMPILING>
 	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
 {
@@ -110,7 +110,7 @@ protected:
 	}
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>
 	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
 {

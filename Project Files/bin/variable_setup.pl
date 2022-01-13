@@ -33,7 +33,7 @@ $var{CivEffect}        = {not_strict => 1, JIT => "JIT_ARRAY_CIV_EFFECT", NUM =>
 $var{Civic}            = {not_strict => 1};
 $var{CivicOption}      = {not_strict => 1};
 $var{Civilization}     = {not_strict => 1};
-$var{CityPlot}         = {not_strict => 1, JIT => "NO_JIT_ARRAY_TYPE", NUM => "NUM_CITY_PLOTS", COMPILE => "NUM_CITY_PLOTS_2_PLOTS"};
+$var{CityPlot}         = {not_strict => 1, JIT => "NO_JIT_ARRAY_TYPE", NUM => "NUM_CITY_PLOTS", COMPILE => "NUM_CITY_PLOTS_2_PLOTS", LENGTH_KNOWN_WHILE_COMPILING => "0"};
 $var{Climate}          = {not_strict => 1};
 $var{Contact}          = {not_strict => 1};
 $var{Culture}          = {not_strict => 1, type => "CultureLevelTypes", NUM => "NUM_CULTURELEVEL_TYPES", COMPILE => "COMPILE_TIME_NUM_CULTURELEVEL_TYPES"};
@@ -109,6 +109,16 @@ foreach my $name (sort(keys %var))
 	$var{$name}{COMPILE} = "COMPILE_TIME_NUM_" . $NAME . "_TYPES" unless exists $var{$name}{COMPILE};
 	$var{$name}{START} = "static_cast<$type>(0)" unless exists $var{$name}{START};
 	$var{$name}{END} = $var{$name}{NUM} unless exists $var{$name}{END};
+	
+	if (exists $var{$name}{LENGTH_KNOWN_WHILE_COMPILING})
+	{
+		$var{$name}{LENGTH_KNOWN_WHILE_COMPILING} = "MAX_SHORT" if $var{$name}{LENGTH_KNOWN_WHILE_COMPILING} eq "0";
+
+	}
+	else
+	{
+		$var{$name}{LENGTH_KNOWN_WHILE_COMPILING} = $var{$name}{COMPILE};
+	}
 
 	handleOperators($type);
 	handleComparison($name);
@@ -247,7 +257,7 @@ sub structEnum
 	my $type = $var{$name}{type};
 	
 	$output .= "\tstatic const VariableTypes TYPE = (int)" . $var{$name}{COMPILE} . " < 128 ? VARIABLE_TYPE_CHAR : VARIABLE_TYPE_SHORT;\n";
-	$output .= "\tstatic const int LENGTH_KNOWN_WHILE_COMPILING = (int)" . $var{$name}{COMPILE} . " != MAX_SHORT ? 2 : 1;\n";
+	$output .= "\tstatic const VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING = (int)" . $var{$name}{LENGTH_KNOWN_WHILE_COMPILING} . " != MAX_SHORT ? VARIABLE_LENGTH_ALL_KNOWN : VARIABLE_LENGTH_FIRST_KNOWN;\n";
 	$output .= "\tstatic const $type FIRST = " . $var{$name}{START} . ";\n";
 	$output .= "\tstatic const $type LAST = static_cast<" . $type . ">((int)" . $var{$name}{END} . " - 1);\n";
 	$output .= "\tstatic const $type NUM_ELEMENTS = static_cast<" . $type . ">((int)LAST - (int)FIRST + 1);\n";
@@ -260,7 +270,7 @@ sub structEnum
 	$output .= "\tstatic $type length() { return end() - start();}\n";
 	$output .= "\tstatic bool isInRange($type eIndex) { return _isInRange<LENGTH_KNOWN_WHILE_COMPILING>(eIndex);}\n";
 	$output .= "\ttemplate <int T> struct STATIC {\n";
-	$output .= "\t\tstatic const int VAL = T * ((int)TYPE == (int)VARIABLE_TYPE_CHAR ? 1 : 2) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;\n";
+	$output .= "\t\tstatic const VariableStaticTypes VAL = T * ((int)TYPE == (int)VARIABLE_TYPE_CHAR ? 1 : 2) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;\n";
 	$output .= "\t};\n";
 	$output .= "\ttemplate <int T> struct COMPATIBLE {\n";
 	$output .= "\t\tstatic const bool VAL = boost::is_same<" . $type . ", T>::VAL;\n";

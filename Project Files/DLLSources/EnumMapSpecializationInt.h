@@ -4,13 +4,13 @@
 
 #include "EnumMap.h"
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, class STORAGE, int LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapVariable
 {
 	BOOST_STATIC_ASSERT(0);
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, int LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>
 	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
 {
@@ -45,7 +45,7 @@ protected:
 	STORAGE m_pArray[VARINFO<LengthType>::LENGTH];
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, int LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>
 	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
 {
@@ -97,7 +97,7 @@ protected:
 	STORAGE* m_pArray;
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, class STORAGE, int LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapShared
 	: public EnumMapVariable<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>
 {
@@ -273,8 +273,7 @@ protected:
 };
 
 
-//template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int TYPE>
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_CHAR, LENGTH_KNOWN_WHILE_COMPILING>
 	: public EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, char, LENGTH_KNOWN_WHILE_COMPILING>
 {
@@ -282,7 +281,7 @@ protected:
 	EnumMapBase() : EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, char, LENGTH_KNOWN_WHILE_COMPILING>() {}
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_SHORT, LENGTH_KNOWN_WHILE_COMPILING>
 	: public EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, short, LENGTH_KNOWN_WHILE_COMPILING>
 {
@@ -290,7 +289,7 @@ protected:
 	EnumMapBase() : EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, short, LENGTH_KNOWN_WHILE_COMPILING>() {}
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, int LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT, class LengthType, int STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_GENERIC, LENGTH_KNOWN_WHILE_COMPILING>
 	: public EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, T, LENGTH_KNOWN_WHILE_COMPILING>
 {
