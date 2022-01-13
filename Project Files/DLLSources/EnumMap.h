@@ -48,10 +48,16 @@ class EnumMapBase
 	bool isAllocated() const;
 	void allocate();
 	void reset();
-
 	bool hasContent();
+	bool hasContent() const;
 
-	// operator overloading
+	// access elements by value
+	// not available when T is a class
+	T get(IndexType eIndex) const;
+	void set(IndexType eIndex, T bValue);
+
+	// access elements by reference
+	// only available when T is a class
 	T& operator[](IndexType eIndex);
 	const T& operator[](IndexType eIndex) const;
 

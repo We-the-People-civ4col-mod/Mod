@@ -75,39 +75,18 @@ public:
 	static const int iNumBlocks = (VARINFO<IndexType>::LENGTH + 31) / 32;
 	static const byte DefaultByte = DEFAULT ? 0xFF : 0;
 
-	IndexType getLength() const
-	{
-		return Length;
-	}
+	IndexType getLength() const;
 
-	void reset()
-	{
-		memset(m_pArray, DefaultByte, iNumBlocks * 4);
-	}
-	void allocate()
-	{
-	}
-	bool isAllocated() const
-	{
-		return true;
-	}
+	void reset();
+	void allocate();
+	bool isAllocated() const;
 
-	bool get(IndexType eIndex) const
-	{
-		return m_pArray[eIndex / 32].get(eIndex);
-	}
-	void set(IndexType eIndex, bool bValue)
-	{
-		m_pArray[eIndex / 32].set(eIndex, bValue);
-	}
+	bool get(IndexType eIndex) const;
+	void set(IndexType eIndex, bool bValue);
 
 protected:
 	BoolToken m_pArray[iNumBlocks];
-
-	EnumMapBoolVariable()
-	{
-		reset();
-	}
+	EnumMapBoolVariable();
 };
 
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
@@ -115,55 +94,22 @@ class EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAM
 	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
 {
 public:
-	IndexType getLength() const
-	{
-		return VARINFO<LengthType>::length();
-	}
 	static const byte DefaultByte = DEFAULT ? 0xFF : 0;
 
-	void reset()
-	{
-		SAFE_DELETE_ARRAY(m_pArray);
-	}
-	void allocate()
-	{
-		if (!isAllocated())
-		{
-			reset();
-			m_pArray = new  BoolToken[getNumBlocks()];
-			memset(m_pArray, DefaultByte, getNumBlocks() * 4);
-		}
-	}
-	bool isAllocated() const
-	{
-		return m_pArray != NULL;
-	}
+	IndexType getLength() const;
 
-	bool get(IndexType eIndex) const
-	{
-		return isAllocated() ? m_pArray[eIndex / 32].get(eIndex) : DEFAULT;
-	}
-	void set(IndexType eIndex, bool bValue)
-	{
-		if (isAllocated() || bValue != DEFAULT)
-		{
-			allocate();
-			m_pArray[eIndex / 32].set(eIndex, bValue);
-		}
-	}
+	void reset();
+	void allocate();
+	bool isAllocated() const;
+
+	bool get(IndexType eIndex) const;
+	void set(IndexType eIndex, bool bValue);
 
 protected:
 	BoolToken *m_pArray;
+	EnumMapBoolVariable();
 
-	EnumMapBoolVariable()
-		: m_pArray(NULL)
-	{
-	}
-
-	int getNumBlocks()
-	{
-		return (getLength() + 31) / 32;
-	}
+	int getNumBlocks() const;
 };
 
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
@@ -171,63 +117,190 @@ class EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_BOOL,
 	: public EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, STATIC, LENGTH_KNOWN_WHILE_COMPILING>
 {
 public:
-	bool hasContent() const
-	{
-		if (isAllocated())
-		{
-			for (IndexType i = First(); i < End(); ++i)
-			{
-				if (get(i) != DEFAULT)
-				{
-					return true;
-				}
-			}
-		}
-		return false;
-	}
-	IndexType First() const
-	{
-		return VARINFO<LengthType>::start();
-	}
-
-	IndexType End() const
-	{
-		return VARINFO<LengthType>::end();
-	}
-
-	IndexType getLength() const
-	{
-		return VARINFO<LengthType>::length();
-	}
-
-	IndexType numElements() const
-	{
-		return VARINFO<LengthType>::length();
-	}
-	int getTotal() const
-	{
-		int iTotal = 0;
-		if (isAllocated())
-		{
-			for (IndexType i = First(); i < End(); ++i)
-			{
-				if (get(i))
-				{
-					++iTotal;
-				}
-			}
-		}
-		else
-		{
-			iTotal = getLength() * DEFAULT;
-		}
-		return iTotal;
-	}
-
+	bool hasContent() const;
+	IndexType First() const;
+	IndexType End() const;
+	IndexType getLength() const;
+	IndexType numElements() const;
+	int getTotal() const;
 protected:
 	EnumMapBase() : EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, STATIC, LENGTH_KNOWN_WHILE_COMPILING>() {}
 	BOOST_STATIC_ASSERT(DEFAULT == 0 || DEFAULT == 1);
 };
+
+//
+// static functions
+//
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+IndexType EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, LENGTH_KNOWN_WHILE_COMPILING>::getLength() const
+{
+	return Length;
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, LENGTH_KNOWN_WHILE_COMPILING>::reset()
+{
+	memset(m_pArray, DefaultByte, iNumBlocks * 4);
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, LENGTH_KNOWN_WHILE_COMPILING>::allocate()
+{
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, LENGTH_KNOWN_WHILE_COMPILING>::isAllocated() const
+{
+	return true;
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, LENGTH_KNOWN_WHILE_COMPILING>::get(IndexType eIndex) const
+	{
+		return m_pArray[eIndex / 32].get(eIndex);
+	}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, LENGTH_KNOWN_WHILE_COMPILING>::set(IndexType eIndex, bool bValue)
+{
+	m_pArray[eIndex / 32].set(eIndex, bValue);
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, LENGTH_KNOWN_WHILE_COMPILING>::EnumMapBoolVariable()
+{
+	reset();
+}
+
+//
+// Dynamic functions
+//
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+IndexType EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>::getLength() const
+{
+	return VARINFO<LengthType>::length();
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>::reset()
+{
+	SAFE_DELETE_ARRAY(m_pArray);
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>::allocate()
+{
+	if (!isAllocated())
+	{
+		reset();
+		m_pArray = new  BoolToken[getNumBlocks()];
+		memset(m_pArray, DefaultByte, getNumBlocks() * 4);
+	}
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>::isAllocated() const
+{
+	return m_pArray != NULL;
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>::get(IndexType eIndex) const
+{
+	return isAllocated() ? m_pArray[eIndex / 32].get(eIndex) : DEFAULT;
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>::set(IndexType eIndex, bool bValue)
+{
+	if (isAllocated() || bValue != DEFAULT)
+	{
+		allocate();
+		m_pArray[eIndex / 32].set(eIndex, bValue);
+	}
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>::EnumMapBoolVariable()
+	: m_pArray(NULL)
+{
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+int EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>::getNumBlocks() const
+{
+	return (getLength() + 31) / 32;
+}
+
+
+
+//
+// Base class (entry)
+//
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+bool EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_BOOL, LENGTH_KNOWN_WHILE_COMPILING>::hasContent() const
+{
+	if (isAllocated())
+	{
+		for (IndexType i = First(); i < End(); ++i)
+		{
+			if (get(i) != DEFAULT)
+			{
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+IndexType EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_BOOL, LENGTH_KNOWN_WHILE_COMPILING>::First() const
+{
+	return VARINFO<LengthType>::start();
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+IndexType EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_BOOL, LENGTH_KNOWN_WHILE_COMPILING>::End() const
+{
+	return VARINFO<LengthType>::end();
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+IndexType EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_BOOL, LENGTH_KNOWN_WHILE_COMPILING>::getLength() const
+{
+	return VARINFO<LengthType>::length();
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+IndexType EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_BOOL, LENGTH_KNOWN_WHILE_COMPILING>::numElements() const
+{
+	return VARINFO<LengthType>::length();
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+int EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_BOOL, LENGTH_KNOWN_WHILE_COMPILING>::getTotal() const
+{
+	int iTotal = 0;
+	if (isAllocated())
+	{
+		for (IndexType i = First(); i < End(); ++i)
+		{
+			if (get(i))
+			{
+				++iTotal;
+			}
+		}
+	}
+	else
+	{
+		iTotal = getLength() * DEFAULT;
+	}
+	return iTotal;
+}
+
 
 
 #endif
