@@ -3,20 +3,23 @@
 #pragma once
 
 #include "EnumMap.h"
+#include "EnumMapCore.h"
 
 
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapVariable
 {
 	BOOST_STATIC_ASSERT(0);
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-class EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+class EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>
 	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
 {
 public:
+	static const T DEFAULT = (T)DEFAULT_INT;
+
 	void reset();
 	void allocate();
 	bool isAllocated() const;
@@ -29,11 +32,13 @@ protected:
 	STORAGE m_pArray[VARINFO<LengthType>::LENGTH];
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-class EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+class EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>
 	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
 {
 public:
+	static const T DEFAULT = (T)DEFAULT_INT;
+
 	void reset();
 	void allocate();
 	bool isAllocated() const;
@@ -53,14 +58,14 @@ protected:
 	void setALLDefault<1>()
 	{
 		allocate();
-		memset(m_pArray, DEFAULT, VARINFO<LengthType>::length() * sizeof(STORAGE));
+		memset(m_pArray, DEFAULT_INT, VARINFO<LengthType>::length() * sizeof(STORAGE));
 	}
 };
 
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapShared
-	: public EnumMapVariable<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>
+	: public EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>
 {
 public:
 	T get(IndexType eIndex) const;
@@ -83,35 +88,51 @@ public:
 	void copyToVector(std::vector<T>& thisVector) const;
 	void copyFromVector(const std::vector<T>& thisVector);
 protected:
-	EnumMapShared() : EnumMapVariable<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>() {}
+	EnumMapShared() : EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>() {}
 };
 
 //
 // EnumMapBase
 //
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-class EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_CHAR, LENGTH_KNOWN_WHILE_COMPILING>
-	: public EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, char, LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+class EnumMapBase<IndexType, T, DEFAULT_INT, LengthType, STATIC, VARIABLE_TYPE_CHAR, LENGTH_KNOWN_WHILE_COMPILING>
+	: public EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, char, LENGTH_KNOWN_WHILE_COMPILING>
 {
 protected:
-	EnumMapBase() : EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, char, LENGTH_KNOWN_WHILE_COMPILING>() {}
+	EnumMapBase() : EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, char, LENGTH_KNOWN_WHILE_COMPILING>() {}
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-class EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_SHORT, LENGTH_KNOWN_WHILE_COMPILING>
-	: public EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, short, LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+class EnumMapBase<IndexType, T, DEFAULT_INT, LengthType, STATIC, VARIABLE_TYPE_SHORT, LENGTH_KNOWN_WHILE_COMPILING>
+	: public EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, short, LENGTH_KNOWN_WHILE_COMPILING>
 {
 protected:
-	EnumMapBase() : EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, short, LENGTH_KNOWN_WHILE_COMPILING>() {}
+	EnumMapBase() : EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, short, LENGTH_KNOWN_WHILE_COMPILING>() {}
 };
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-class EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_GENERIC, LENGTH_KNOWN_WHILE_COMPILING>
-	: public EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, T, LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+class EnumMapBase<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, VARIABLE_TYPE_GENERIC, LENGTH_KNOWN_WHILE_COMPILING>
+	: public EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, T, LENGTH_KNOWN_WHILE_COMPILING>
 {
+public:
+	// operator overloading
+	T& operator[](IndexType eIndex);
+	const T& operator[](IndexType eIndex) const;
 protected:
-	EnumMapBase() : EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, T, LENGTH_KNOWN_WHILE_COMPILING>() {}
+	EnumMapBase() : EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, T, LENGTH_KNOWN_WHILE_COMPILING>() {}
+};
+
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+class EnumMapBase<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_GENERIC, LENGTH_KNOWN_WHILE_COMPILING>
+	: public EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMIC, T, LENGTH_KNOWN_WHILE_COMPILING>
+{
+public:
+	// operator overloading
+	T& operator[](IndexType eIndex);
+	const T& operator[](IndexType eIndex) const;
+protected:
+	EnumMapBase() : EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMIC, T, LENGTH_KNOWN_WHILE_COMPILING>() {}
 };
 
 
@@ -119,34 +140,34 @@ protected:
 // static
 //
 
-template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::reset()
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::reset()
 {
 	setALLDefault();
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::allocate()
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::allocate()
 {
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-bool EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::isAllocated() const
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+bool EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::isAllocated() const
 {
 	return true;
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::setALLDefault()
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::setALLDefault()
 {
-	for (LengthType i = (LengthType)0; i < VARINFO<LengthType>::length(); ++i)
+	for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
 	{
-		m_pArray[i] = (STORAGE)DEFAULT;
+		m_pArray[i] = DEFAULT;
 	}
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::EnumMapVariable()
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::EnumMapVariable()
 {
 	setALLDefault();
 }
@@ -157,47 +178,47 @@ EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, STORAGE
 //  dynamic
 //
 
-template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::reset()
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::reset()
 {
 	SAFE_DELETE_ARRAY(m_pArray);
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::allocate()
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::allocate()
 {
 	if (!isAllocated())
 	{
-		m_pArray = new STORAGE[VARINFO<LengthType>::length()];
-		setALLDefault < DEFAULT == 0 || sizeof(STORAGE) == 1 ? 1 : 0>();
+		m_pArray = new STORAGE[NUM_ELEMENTS];
+		setALLDefault < DEFAULT_INT == 0 || sizeof(STORAGE) == 1 ? 1 : 0>();
 	}
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-bool EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::isAllocated() const
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+bool EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::isAllocated() const
 {
 	return m_pArray != NULL;
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::~EnumMapVariable()
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::~EnumMapVariable()
 {
 	SAFE_DELETE_ARRAY(m_pArray);
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 template<int iType>
-void EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::setALLDefault()
+void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::setALLDefault()
 {
 	allocate();
-	for (LengthType i = (LengthType)0; i < VARINFO<LengthType>::length(); ++i)
+	for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
 	{
-		m_pArray[i] = (STORAGE)DEFAULT;
+		m_pArray[i] = DEFAULT;
 	}
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::EnumMapVariable()
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::EnumMapVariable()
 	: m_pArray(NULL)
 {}
 
@@ -205,98 +226,120 @@ EnumMapVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAG
 // shared
 //
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-T EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::get(IndexType eIndex) const
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+T EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::get(IndexType eIndex) const
 {
-	FAssert(VARINFO<LengthType>::isInRange((LengthType)eIndex));
-	return (T)(isAllocated() ? m_pArray[eIndex] : DEFAULT);
+	FAssert(isInRange(eIndex));
+	return isAllocated() ? (T)m_pArray[eIndex - FIRST] : DEFAULT;
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::set(IndexType eIndex, T eValue)
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::set(IndexType eIndex, T eValue)
 {
-	FAssert(VARINFO<LengthType>::isInRange((LengthType)eIndex));
+	FAssert(isInRange(eIndex));
 	allocate();
-	m_pArray[eIndex] = eValue;
+	m_pArray[eIndex - FIRST] = eValue;
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::add(IndexType eIndex, T eValue)
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::add(IndexType eIndex, T eValue)
 {
-	FAssert(VARINFO<LengthType>::isInRange((LengthType)eIndex));
+	FAssert(isInRange(eIndex));
 	allocate();
-	m_pArray[eIndex] += eValue;
+	m_pArray[eIndex - FIRST] += eValue;
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::keepMin(IndexType eIndex, T eValue)
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::keepMin(IndexType eIndex, T eValue)
 {
-	FAssert(VARINFO<LengthType>::isInRange((LengthType)eIndex));
 	if (eValue < get(eIndex))
 	{
 		set(eIndex, eValue);
 	}
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::keepMax(IndexType eIndex, T eValue)
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::keepMax(IndexType eIndex, T eValue)
 {
-	FAssert(VARINFO<LengthType>::isInRange((LengthType)eIndex));
 	if (eValue > get(eIndex))
 	{
 		set(eIndex, eValue);
 	}
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-T EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getDefault() const
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+T EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getDefault() const
 {
-	return (T)DEFAULT;
+	return DEFAULT;
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-bool EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::isDefault(IndexType eIndex) const
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+bool EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::isDefault(IndexType eIndex) const
 {
-	FAssert(VARINFO<LengthType>::isInRange((LengthType)eIndex));
-	return get(eIndex) == getDefault();
+	return get(eIndex) == DEFAULT;
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-int EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getTotal() const
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+int EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getTotal() const
 {
-	int iTotal = 0;
-	for (IndexType i = First(); i < getEnd(); ++i)
+	if (isAllocated())
 	{
-		iTotal += get(i);
+		int iTotal = 0;
+		for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
+		{
+			iTotal += m_pArray[i];
+		}
+		return iTotal;
 	}
-	return iTotal;
-}
-
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::setAll(T eValue)
-{
-	for (IndexType i = First(); i < getEnd(); ++i)
+	else
 	{
-		set(i, eValue);
+		return DEFAULT_INT * NUM_ELEMENTS;
 	}
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::addAll(T eValue)
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::setAll(T eValue)
 {
-	for (IndexType i = First(); i < getEnd(); ++i)
+	if (!isAllocated())
 	{
-		add(i, eValue);
+		if (eValue == DEFAULT)
+		{
+			return;
+		}
+		allocate();
+	}
+	for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
+	{
+		m_pArray[i] = eValue;
+	}
+}
+
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::addAll(T eValue)
+{
+	if (eValue == (T)0)
+	{
+		return;
+	}
+	allocate();
+	for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
+	{
+		m_pArray[i] += eValue;
 	}
 }
 	
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-T EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getMin() const
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+T EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getMin() const
 {
-	T eMin = get((IndexType)0);
-	for (IndexType i = First(); i < getEnd(); ++i)
+	if (!isAllocated())
 	{
-		T eLoopValue = get(i);
+		return DEFAULT;
+	}
+
+	T eMin = get((IndexType)0);
+	for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
+	{
+		T eLoopValue = m_pArray[i];
 		if (eMin > eLoopValue)
 		{
 			eMin = eLoopValue;
@@ -305,13 +348,18 @@ T EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN
 	return eMin;
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-T EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getMax() const
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+T EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getMax() const
 {
-	T eMax = get((IndexType)0);
-	for (IndexType i = First(); i < getEnd(); ++i)
+	if (!isAllocated())
 	{
-		T eLoopValue = get(i);
+		return DEFAULT;
+	}
+
+	T eMax = get((IndexType)0);
+	for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
+	{
+		T eLoopValue = m_pArray[i];
 		if (eMax < eLoopValue)
 		{
 			eMax = eLoopValue;
@@ -320,32 +368,32 @@ T EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN
 	return eMax;
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-IndexType EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::First() const
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+IndexType EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::First() const
 {
 	return VARINFO<LengthType>::start();
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-IndexType EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getEnd() const
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+IndexType EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getEnd() const
 {
 	return VARINFO<LengthType>::end();
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-IndexType EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getLength() const
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+IndexType EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getLength() const
 {
 	return VARINFO<LengthType>::length();
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-bool EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::hasContent() const
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+bool EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::hasContent() const
 {
 	if (isAllocated())
 	{
-		for (IndexType i = First(); i < getEnd(); ++i)
+		for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
 		{
-			if (!isDefault(i))
+			if (m_pArray[i] != DEFAULT)
 			{
 				return true;
 			}
@@ -354,14 +402,14 @@ bool EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KN
 	return false;
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-bool EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::hasContent()
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+bool EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::hasContent()
 {
 	if (isAllocated())
 	{
-		for (IndexType i = First(); i < getEnd(); ++i)
+		for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
 		{
-			if (get(i) != getDefault())
+			if (m_pArray[i] != DEFAULT)
 			{
 				return true;
 			}
@@ -371,29 +419,74 @@ bool EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KN
 	return false;
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::copyToVector(std::vector<T>& thisVector) const
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::copyToVector(std::vector<T>& thisVector) const
 {
-	thisVector.reserve(getLength());
-	thisVector.resize(getLength(), getDefault());
+	thisVector.reserve(NUM_ELEMENTS);
+	thisVector.resize(NUM_ELEMENTS, DEFAULT);
 
 	if (isAllocated())
 	{
-		for (IndexType eIndex = First(); eIndex < getLength(); ++eIndex)
+		for (IndexType eIndex = FIRST; eIndex <= LAST; ++eIndex)
 		{
-			thisVector[eIndex] = get(eIndex);
+			thisVector[eIndex - FIRST] = get(eIndex);
 		}
 	}
 }
 
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapShared<IndexType, T, DEFAULT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::copyFromVector(const std::vector<T>& thisVector)
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::copyFromVector(const std::vector<T>& thisVector)
 {
-	FAssert((unsigned int)getLength() == thisVector.size());
+	FAssert((unsigned int)NUM_ELEMENTS == thisVector.size());
 
-	for (IndexType eIndex = First(); eIndex < getLength(); ++eIndex)
+	for (IndexType eIndex = FIRST; eIndex <= LAST; ++eIndex)
 	{
-		set(eIndex, thisVector[eIndex]);
+		set(eIndex, thisVector[eIndex - FIRST]);
+	}
+}
+
+//
+// access by reference functions ( only)
+//
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+T& EnumMapBase<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, VARIABLE_TYPE_GENERIC, LENGTH_KNOWN_WHILE_COMPILING>::operator[](IndexType eIndex)
+{
+	FAssert(isInRange(eIndex));
+	return m_pArray[eIndex - FIRST];
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+const T& EnumMapBase<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, VARIABLE_TYPE_GENERIC, LENGTH_KNOWN_WHILE_COMPILING>::operator[](IndexType eIndex) const
+{
+	FAssert(isInRange(eIndex));
+	return m_pArray[eIndex - FIRST];
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+T& EnumMapBase<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_GENERIC, LENGTH_KNOWN_WHILE_COMPILING>::operator[](IndexType eIndex)
+{
+	FAssert(isInRange(eIndex));
+	allocate();
+	return m_pArray[eIndex - FIRST];
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+const T& EnumMapBase<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_GENERIC, LENGTH_KNOWN_WHILE_COMPILING>::operator[](IndexType eIndex) const
+{
+	FAssert(isInRange(eIndex));
+	if (isAllocated())
+	{
+		return m_pArray[eIndex - FIRST];
+	}
+	else
+	{
+		// array not allocated
+		// make an instance of the class in question and return that one
+		// it's static anyway, so no harm in using a static instance over and over
+		// this avoids allocations and dealing with memory leaks at the memory cost of one T instance per type of EnumMap from this file
+		static T empty = (T)DEFAULT;
+		return empty;
 	}
 }
 
