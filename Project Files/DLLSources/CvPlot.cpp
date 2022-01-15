@@ -1031,7 +1031,6 @@ bool CvPlot::hasDeepWaterCoast() const
 }
 //WTP, ray, Large Rivers - END
 
-
 bool CvPlot::isAdjacentWaterPassable(CvPlot* pPlot) const
 {
 	FAssert(pPlot != NULL);
@@ -1843,29 +1842,6 @@ bool CvPlot::canHaveBonus(BonusTypes eBonus, bool bIgnoreLatitude) const
 	}
 	// Ray, adding 2 more XML tags to control bonus placement - END
 
-	// ray, deactivate Hemisphere Restrictions
-	// if this Game Option is activated the checks inside are not executed - thus Hemisphere Restrictions for Ressources is lifted
-	if(!GC.getGameINLINE().isOption(GAMEOPTION_DEACTIVATE_HEMISPHERE_RESTRICTIONS))
-	{
-		//ray, Norther and Southern Hemisphere, using hint of f1rpo - START
-		if (GC.getBonusInfo(eBonus).isOnlySouthernHemisphere())
-		{
-			if (!isSouthernHemisphere())
-			{
-				return false;
-			}
-		}
-
-		if (GC.getBonusInfo(eBonus).isOnlyNorthernHemisphere())
-		{
-			if (!isNorthernHemisphere())
-			{
-				return false;
-			}
-		}
-		//ray, Norther and Southern Hemisphere, using hint of f1rpo - END
-	}
-
 	if (GC.getBonusInfo(eBonus).getMinAreaSize() != -1)
 	{
 		if (area()->getNumTiles() < GC.getBonusInfo(eBonus).getMinAreaSize())
@@ -1888,19 +1864,44 @@ bool CvPlot::canHaveBonus(BonusTypes eBonus, bool bIgnoreLatitude) const
 	}
 
 	//TAC Whaling, ray
-	if (isWater() && !GC.getBonusInfo(eBonus).isOcean())
+	//WTP, ray we correct the logic
+	if (GC.getBonusInfo(eBonus).isWhalingboatWorkable())
 	{
-		if (!isPotentialCityWork())
+		// We check that it is not adjacent to coast, because that may bring it in 2 Plot reach of CityRadius
+		// Thus we do not want to be adjacent to any Coast - the rest is already caught by XML, since it can only be placed on Ocean
+		CvPlot* pAdjacentPlot;
+		for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 		{
-			return false;
+			pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+			if (pAdjacentPlot != NULL && (pAdjacentPlot->getTerrainType() == TERRAIN_COAST || pAdjacentPlot->getTerrainType() == TERRAIN_SHALLOW_COAST))
+			{
+				return false;
+			}
 		}
 	}
 
-	/*if (!isPotentialCityWork())
+	// ray, deactivate Hemisphere Restrictions
+	// if this Game Option is activated the checks inside are not executed - thus Hemisphere Restrictions for Ressources is lifted
+	if(!GC.getGameINLINE().isOption(GAMEOPTION_DEACTIVATE_HEMISPHERE_RESTRICTIONS))
 	{
-		return false;
-	}*/
-	//End TAC Whaling, ray
+		//ray, Norther and Southern Hemisphere, using hint of f1rpo - START
+		if (GC.getBonusInfo(eBonus).isOnlySouthernHemisphere())
+		{
+			if (!isSouthernHemisphere())
+			{
+				return false;
+			}
+		}
+
+		if (GC.getBonusInfo(eBonus).isOnlyNorthernHemisphere())
+		{
+			if (!isNorthernHemisphere())
+			{
+				return false;
+			}
+		}
+		//ray, Norther and Southern Hemisphere, using hint of f1rpo - END
+	}
 
 	return true;
 }
