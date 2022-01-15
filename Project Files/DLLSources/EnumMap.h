@@ -93,6 +93,15 @@ protected:
 
 
 template<class IndexType, class T, int DEFAULT = VARINFO<T>::DEFAULT>
-class EnumMap : public EnumMapBase <IndexType, T, DEFAULT, IndexType, VARINFO<T>::STATIC<VARINFO<IndexType>::LENGTH>::VAL, VARINFO<T>::TYPE, VARINFO<IndexType>::LENGTH_KNOWN_WHILE_COMPILING> {};
+class EnumMap : public EnumMapBase <IndexType, T, DEFAULT, IndexType, VARINFO<T>::STATIC<VARINFO<IndexType>::LENGTH>::VAL, VARINFO<T>::TYPE, VARINFO<IndexType>::LENGTH_KNOWN_WHILE_COMPILING>
+{
+public:
+	EnumMap<IndexType, T, DEFAULT>& operator=(const EnumMap<IndexType, T, DEFAULT>& rhs)
+	{
+		FAssertMsg(this != &rhs, "EnumMap can't assign (=) into itself");
+		EnumMapBase<IndexType, T, DEFAULT, IndexType, VARINFO<T>::STATIC<VARINFO<IndexType>::LENGTH>::VAL, VARINFO<T>::TYPE, VARINFO<IndexType>::LENGTH_KNOWN_WHILE_COMPILING>::assignmentOperator(rhs);
+		return *this;
+	}
+};
 
 #endif

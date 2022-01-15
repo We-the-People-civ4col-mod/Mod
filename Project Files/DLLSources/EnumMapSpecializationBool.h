@@ -86,6 +86,8 @@ public:
 protected:
 	BoolToken m_pArray[iNumBlocks];
 	EnumMapBoolVariable();
+
+	void assignmentOperator(const EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, LENGTH_KNOWN_WHILE_COMPILING>& rhs);
 };
 
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
@@ -116,6 +118,8 @@ protected:
 	~EnumMapBoolVariable();
 
 	int getNumBlocks() const;
+
+	void assignmentOperator(const EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>& rhs);
 };
 
 template<class IndexType, class T, int DEFAULT, class LengthType>
@@ -140,6 +144,8 @@ protected:
 	BoolToken *m_pArray;
 	EnumMapBoolVariable();
 	~EnumMapBoolVariable();
+
+	void assignmentOperator(const EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_LENGTH_ALL_KNOWN>& rhs);
 };
 
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
@@ -209,6 +215,15 @@ template<class IndexType, class T, int DEFAULT, class LengthType, VariableLength
 EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, LENGTH_KNOWN_WHILE_COMPILING>::EnumMapBoolVariable()
 {
 	reset();
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void assignmentOperator(const EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, LENGTH_KNOWN_WHILE_COMPILING>& rhs)
+{
+	for (int i = 0; i < iNumBlocks; ++i)
+	{
+		m_pArray[i] = rhs.m_pArray[i];
+	}
 }
 
 //
@@ -342,6 +357,26 @@ int EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC
 	return (NUM_ELEMENTS + 31) / 32;
 }
 
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void assignmentOperator(const EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>& rhs)
+{
+	if (NUM_ELEMENTS <= 32)
+	{
+		m_eArray.iData = rhs.m_eArray.iData;
+	}
+	else
+	{
+		if (!rhs.isAllocated())
+		{
+			reset();
+			return;
+		}
+		allocate();
+		memcpy(m_pArray, rhs.m_pArray, NUM_BLOCKS * sizeof(BoolToken));
+	}
+}
+
 //
 // Dynamic functions
 // Known length
@@ -432,6 +467,18 @@ template<class IndexType, class T, int DEFAULT, class LengthType>
 EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_LENGTH_ALL_KNOWN>::~EnumMapBoolVariable()
 {
 	SAFE_DELETE_ARRAY(m_pArray);
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType>
+void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_LENGTH_ALL_KNOWN>::assignmentOperator(const EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_LENGTH_ALL_KNOWN>& rhs)
+{
+	if (!rhs.isAllocated())
+	{
+		reset();
+		return;
+	}
+	allocate();
+	memcpy(m_pArray, rhs.m_pArray, NUM_BLOCKS * sizeof(BoolToken));
 }
 
 

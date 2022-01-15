@@ -29,6 +29,8 @@ protected:
 
 	EnumMapVariable();
 
+	void assignmentOperator(const EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, VARIABLE_LENGTH_ALL_KNOWN>& rhs);
+
 	STORAGE m_pArray[COMPILE_NUM_ELEMENTS];
 };
 
@@ -50,6 +52,8 @@ protected:
 
 	EnumMapVariable();
 
+	void assignmentOperator(const EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>& rhs);
+
 	STORAGE* m_pArray;
 
 	// specialized functions
@@ -58,7 +62,7 @@ protected:
 	void setALLDefault<1>()
 	{
 		allocate();
-		memset(m_pArray, DEFAULT_INT, VARINFO<LengthType>::length() * sizeof(STORAGE));
+		memset(m_pArray, DEFAULT_INT, NUM_ELEMENTS * sizeof(STORAGE));
 	}
 };
 
@@ -172,6 +176,14 @@ EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STO
 	setALLDefault();
 }
 
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE>
+void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, VARIABLE_LENGTH_ALL_KNOWN>::assignmentOperator(const EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, VARIABLE_LENGTH_ALL_KNOWN>& rhs)
+{
+	for (IndexType i = (Indextype)0; i < NUM_ELEMENTS; ++i)
+	{
+		m_pArray[i] = rhs.m_pArray[i];
+	}
+}
 
 
 //
@@ -221,6 +233,18 @@ template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STOR
 EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::EnumMapVariable()
 	: m_pArray(NULL)
 {}
+
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::assignmentOperator(const EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>& rhs)
+{
+	if (!rhs.isAllocated())
+	{
+		reset();
+		return;
+	}
+	allocate();
+	memcpy(m_pArray, rhs.m_pArray, sizeof(STORAGE)*NUM_ELEMENTS);
+}
 
 //
 // shared

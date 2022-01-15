@@ -44,6 +44,8 @@ public:
 
 protected:
 	T* m_pArray;
+
+	void assignmentOperator(const EnumMapBase<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>& rhs);
 };
 
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
@@ -121,6 +123,23 @@ const T& EnumMapBase<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, V
 		static T empty;
 		return empty;
 	}
+}
+
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void assignmentOperator(const EnumMapBase<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>& rhs)
+{
+	if (!rhs.isAllocated())
+	{
+		reset();
+		return;
+	}
+	allocate();
+	for (int i = 0; i < NUM_ELEMENTS; ++i)
+	{
+		m_pArray[i] = rhs.m_pArray[i];
+	}
+
 }
 
 #endif
