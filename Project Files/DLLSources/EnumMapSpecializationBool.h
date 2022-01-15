@@ -71,7 +71,7 @@ class EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATI
 	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
 {
 public:
-	static const int iNumBlocks = (NUM_ELEMENTS + 31) / 32;
+	static const int iNumBlocks = (COMPILE_NUM_ELEMENTS + 31) / 32;
 	static const byte DefaultByte = DEFAULT ? 0xFF : 0;
 	static const unsigned int DefaultInt = DEFAULT == 0 ? 0 : MAX_UNSIGNED_INT;
 

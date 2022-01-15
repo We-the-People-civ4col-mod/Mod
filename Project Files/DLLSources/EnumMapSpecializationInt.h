@@ -13,9 +13,9 @@ class EnumMapVariable
 	BOOST_STATIC_ASSERT(0);
 };
 
-template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-class EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>
-	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE>
+class EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, VARIABLE_LENGTH_ALL_KNOWN>
+	: public EnumMapCore<IndexType, LengthType, VARIABLE_LENGTH_ALL_KNOWN>
 {
 public:
 	static const T DEFAULT = (T)DEFAULT_INT;
@@ -29,7 +29,7 @@ protected:
 
 	EnumMapVariable();
 
-	STORAGE m_pArray[VARINFO<LengthType>::LENGTH];
+	STORAGE m_pArray[COMPILE_NUM_ELEMENTS];
 };
 
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
@@ -140,25 +140,25 @@ protected:
 // static
 //
 
-template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::reset()
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE>
+void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, VARIABLE_LENGTH_ALL_KNOWN>::reset()
 {
 	setALLDefault();
 }
 
-template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::allocate()
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE>
+void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, VARIABLE_LENGTH_ALL_KNOWN>::allocate()
 {
 }
 
-template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-bool EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::isAllocated() const
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE>
+bool EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, VARIABLE_LENGTH_ALL_KNOWN>::isAllocated() const
 {
 	return true;
 }
 
-template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::setALLDefault()
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE>
+void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, VARIABLE_LENGTH_ALL_KNOWN>::setALLDefault()
 {
 	for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
 	{
@@ -166,8 +166,8 @@ void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC
 	}
 }
 
-template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::EnumMapVariable()
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE>
+EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, VARIABLE_LENGTH_ALL_KNOWN>::EnumMapVariable()
 {
 	setALLDefault();
 }

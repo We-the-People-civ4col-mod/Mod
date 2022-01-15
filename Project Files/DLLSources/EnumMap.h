@@ -37,6 +37,10 @@ public:
 	static const IndexType NUM_ELEMENTS;
 
 	bool isInRange(IndexType eIndex) const;
+
+protected:
+	// do not let the "outside world" access members, which aren't available in all cases
+	static const IndexType COMPILE_NUM_ELEMENTS; // only available when static arrays is an option
 };
 
 
@@ -45,6 +49,11 @@ template<class IndexType, class T, int DEFAULT, class LengthType, VariableStatic
 class EnumMapBase
 	: public EnumMapCore<IndexType, LengthType, LENGTH_KNOWN_WHILE_COMPILING>
 {
+	// list of EnumMap member functions
+	// note that not all functions are available for all combinations
+	// for instance adding 5 to all values makes no sense when T is bool or class
+	// using an invalid function will fail at compile time, stating no such member function
+
 	bool isAllocated() const;
 	void allocate();
 	void reset();
@@ -55,9 +64,20 @@ class EnumMapBase
 	// not available when T is a class
 	T get(IndexType eIndex) const;
 	void set(IndexType eIndex, T bValue);
+	void add(IndexType eIndex, T eValue);
+	void keepMin(IndexType eIndex, T eValue);
+	void keepMax(IndexType eIndex, T eValue);
+	int getTotal() const;
+	void setAll(T eValue);
+	void addAll(T eValue);
+	T getMin() const;
+	T getMax() const;
+
+	void copyToVector(std::vector<T>& thisVector) const;
+	void copyFromVector(const std::vector<T>& thisVector);
 
 	// access elements by reference
-	// only available when T is a class
+	// not available when T is a bool or enum
 	T& operator[](IndexType eIndex);
 	const T& operator[](IndexType eIndex) const;
 
