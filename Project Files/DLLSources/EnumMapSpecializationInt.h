@@ -91,6 +91,8 @@ public:
 	bool hasContent();
 	void copyToVector(std::vector<T>& thisVector) const;
 	void copyFromVector(const std::vector<T>& thisVector);
+	int GetNumNonZeroElements() const;
+	int GetNumPositiveElements() const;
 protected:
 	EnumMapShared() : EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>() {}
 };
@@ -467,6 +469,34 @@ void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGT
 	{
 		set(eIndex, thisVector[eIndex - FIRST]);
 	}
+}
+
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+int EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::GetNumNonZeroElements() const
+{
+	int iNum = 0;
+	for (IndexType eLoop = FIRST; eLoop <= LAST; ++eLoop)
+	{
+		if (get(eLoop) != 0)
+		{
+			++iNum;
+		}
+	}
+	return iNum;
+}
+
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+int EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::GetNumPositiveElements() const
+{
+	int iNum = 0;
+	for (IndexType eLoop = FIRST; eLoop <= LAST; ++eLoop)
+	{
+		if (get(eLoop) > 0)
+		{
+			++iNum;
+		}
+	}
+	return iNum;
 }
 
 //

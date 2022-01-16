@@ -82,13 +82,9 @@ class EnumMapBase
 	const T& operator[](IndexType eIndex) const;
 
 
-protected:
-	// protected constructor does the same as abstract class in C#
-	// it means the class can be inherited and used as function arguments, but it can't be allocated directly.
-	EnumMapBase()
-	{
-		BOOST_STATIC_ASSERT(false);
-	}
+	// instances are only allowed to use specialized classes, not this generic one
+	// make sure this class can't compile
+	BOOST_STATIC_ASSERT(false);
 };
 
 
@@ -102,6 +98,26 @@ public:
 		EnumMapBase<IndexType, T, DEFAULT, IndexType, VARINFO<T>::STATIC<VARINFO<IndexType>::LENGTH>::VAL, VARINFO<T>::TYPE, VARINFO<IndexType>::LENGTH_KNOWN_WHILE_COMPILING>::assignmentOperator(rhs);
 		return *this;
 	}
+};
+
+// define some classes for EnumMaps of EnumMaps
+// while technically not needed, it will make it way easier when using one of those as function argument, particularly in case of function overloading
+template<typename A, typename B, class T, int DEFAULT = VARINFO<T>::DEFAULT>
+class EnumMap2D
+	: public EnumMap<A, EnumMap<B, T, DEFAULT> >
+{
+};
+
+template<typename A, typename B, typename C, class T, int DEFAULT = VARINFO<T>::DEFAULT>
+class EnumMap3D
+	: public EnumMap<A, EnumMap<B, EnumMap<C, T, DEFAULT> > >
+{
+};
+
+template<typename A, typename B, typename C, typename D, class T, int DEFAULT = VARINFO<T>::DEFAULT>
+class EnumMap4D
+	: public EnumMap<A, EnumMap<B, EnumMap<C, EnumMap<D, T, DEFAULT> > > >
+{
 };
 
 #endif

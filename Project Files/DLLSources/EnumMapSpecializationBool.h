@@ -156,6 +156,7 @@ public:
 	IndexType First() const;
 	IndexType getLength() const;
 	int getTotal() const;
+	int getNumTrueElements() const;
 protected:
 	EnumMapBase() : EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, STATIC, LENGTH_KNOWN_WHILE_COMPILING>() {}
 	BOOST_STATIC_ASSERT(DEFAULT == 0 || DEFAULT == 1);
@@ -517,6 +518,24 @@ int EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_BOOL, L
 	{
 		return NUM_ELEMENTS * DEFAULT;
 	}
+}
+
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+int EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, VARIABLE_TYPE_BOOL, LENGTH_KNOWN_WHILE_COMPILING>::getNumTrueElements() const
+{
+	if (!isAllocated())
+	{
+		return DEFAULT * (int)NUM_ELEMENTS;
+	}
+	int iCount = 0;
+	for (IndexType eLoop = FIRST; eLoop <= LAST; ++eLoop)
+	{
+		if (get(eLoop))
+		{
+			++iCount;
+		}
+	}
+	return iCount;
 }
 
 #endif
