@@ -803,12 +803,34 @@
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Stone/Stone.nif</NIF>
-            <KFM/>
+            <KFM>Art/Terrain/Resources/Stone/stone.kfm</KFM>
             <Button>,Art/colonization_atlas_professions_bonus.dds,5,13</Button>
             <FontButtonIndex>7</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_CLAY</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Clay/marble.nif</NIF>
+            <KFM>Art/Terrain/Resources/Clay/marble.kfm</KFM>
+            <Button>Art/Interface/Buttons/Clay_Button.dds</Button>
+            <FontButtonIndex>100</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_COAL</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Coal/coal.nif</NIF>
+            <KFM>Art/Terrain/Resources/Coal/coal.kfm</KFM>
+            <Button>Art/Interface/Buttons/Coal_Button.dds</Button>
+            <FontButtonIndex>102</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>		
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_CATTLE</Type>
             <fScale>1.1</fScale>
@@ -906,6 +928,17 @@
             <Button>,Art/colonization_atlas_professions_bonus.dds,8,12</Button>
             <FontButtonIndex>0</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_VANILLA</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Vanilla/Vanilla.nif</NIF>
+            <KFM>Art/Terrain/Resources/Vanilla/Vanilla.kfm</KFM>
+            <Button>Art/Interface/Buttons/Vanilla_Button.dds</Button>
+            <FontButtonIndex>102</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>

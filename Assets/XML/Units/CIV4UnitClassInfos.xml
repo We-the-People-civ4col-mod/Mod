@@ -637,6 +637,21 @@
             <DefaultUnit>UNIT_STONE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_CLAY</Type>
+            <Description>TXT_KEY_UNITCLASS_CLAY</Description>
+            <DefaultUnit>UNIT_CLAY</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_ORE</Type>
+            <Description>TXT_KEY_UNITCLASS_ORE</Description>
+            <DefaultUnit>UNIT_ORE</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_COAL</Type>
+            <Description>TXT_KEY_UNITCLASS_COAL</Description>
+            <DefaultUnit>UNIT_COAL</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_SILVER</Type>
             <Description>TXT_KEY_UNITCLASS_SILVER</Description>
             <DefaultUnit>UNIT_SILVER</DefaultUnit>
@@ -680,7 +695,12 @@
             <Type>UNITCLASS_RED_PEPPER</Type>
             <Description>TXT_KEY_UNITCLASS_RED_PEPPER</Description>
             <DefaultUnit>UNIT_RED_PEPPER</DefaultUnit>
-        </UnitClassInfo>
+        </UnitClassInfo>	
+        <UnitClassInfo>
+            <Type>UNITCLASS_VANILLA_PODS</Type>
+            <Description>TXT_KEY_UNITCLASS_VANILLA_PODS</Description>
+            <DefaultUnit>UNIT_VANILLA_PODS</DefaultUnit>
+        </UnitClassInfo>		
         <UnitClassInfo>
             <Type>UNITCLASS_COTTON</Type>
             <Description>TXT_KEY_UNITCLASS_COTTON</Description>
@@ -787,11 +807,6 @@
             <DefaultUnit>UNIT_VALUABLE_WOOD</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
-            <Type>UNITCLASS_ORE</Type>
-            <Description>TXT_KEY_UNITCLASS_ORE</Description>
-            <DefaultUnit>UNIT_ORE</DefaultUnit>
-        </UnitClassInfo>
-        <UnitClassInfo>
             <Type>UNITCLASS_COCOA</Type>
             <Description>TXT_KEY_UNITCLASS_COCOA</Description>
             <DefaultUnit>UNIT_COCOA</DefaultUnit>
@@ -810,6 +825,11 @@
             <Type>UNITCLASS_SPICES</Type>
             <Description>TXT_KEY_UNITCLASS_SPICES</Description>
             <DefaultUnit>UNIT_SPICES</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_VANILLA</Type>
+            <Description>TXT_KEY_UNITCLASS_VANILLA</Description>
+            <DefaultUnit>UNIT_VANILLA</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CLOTH</Type>

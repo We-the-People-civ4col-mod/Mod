@@ -825,4 +825,253 @@
         <Tag>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
+	
+	
+	<!-- COLOURED_WOOL_CLOTH -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_COLOURED_WOOL_CLOTH</Tag>
+        <English>Coloured Wool Cloth</English>
+        <German>
+            <Text>Gefärbter Wollstoff</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_COLOURED_WOOL_CLOTH</Tag>
+        <English>Coloured Wool Cloth</English>
+        <German>
+            <Text>Gefärbter Wollstoff</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH</Tag>
+        <English>Coloured Wool Cloth</English>
+        <German>
+            <Text>Gefärbter Wollstoff</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_COLOURED_WOOL_CLOTH_PEDIA</Tag>
+        <English>[TAB][H1]Coloured Wool Cloth[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Gefärbter Wollstoff[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+
+	<!-- COLOURED_WOOL_CLOTH -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_COLOURED_WOOL_CLOTH</Tag>
+        <English>Coloured Wool Cloth</English>
+        <German>
+            <Text>Gefärbter Wollstoff</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_COLOURED_WOOL_CLOTH</Tag>
+        <English>Coloured Wool Cloth</English>
+        <German>
+            <Text>Gefärbter Wollstoff</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH</Tag>
+        <English>Coloured Wool Cloth</English>
+        <German>
+            <Text>Gefärbter Wollstoff</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_COLOURED_WOOL_CLOTH_PEDIA</Tag>
+        <English>[TAB][H1]Coloured Wool Cloth[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Gefärbter Wollstoff[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- CLAY -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_CLAY</Tag>
+        <English>Clay</English>
+        <German>
+            <Text>Lehm</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_CLAY</Tag>
+        <English>Clay</English>
+        <German>
+            <Text>Lehm</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CLAY</Tag>
+        <English>Clay</English>
+        <German>
+            <Text>Lehm</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_CLAY_PEDIA</Tag>
+        <English>[TAB][H1]Vanilla[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Vanille[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CLAY_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CLAY_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>	
+	<!-- COAL -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_COAL</Tag>
+        <English>Coal</English>
+        <German>
+            <Text>Kohle</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_COAL</Tag>
+        <English>Coal</English>
+        <German>
+            <Text>Kohle</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COAL</Tag>
+        <English>Coal</English>
+        <German>
+            <Text>Kohle</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_COAL_PEDIA</Tag>
+        <English>[TAB][H1]Coal[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Kohle[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COAL_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COAL_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- VANILLA, dried -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_VANILLA</Tag>
+        <English>Vanilla</English>
+        <German>
+            <Text>Vanille</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_VANILLA</Tag>
+        <English>Vanilla</English>
+        <German>
+            <Text>Vanille</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VANILLA</Tag>
+        <English>Vanilla</English>
+        <German>
+            <Text>Vanille</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_VANILLA_PEDIA</Tag>
+        <English>[TAB][H1]Vanilla[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Vanille[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VANILLA_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VANILLA_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>	
+	<!-- VANILLA Pods, green -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_VANILLA_PODS</Tag>
+        <English>Green Vanilla Pods</English>
+        <German>
+            <Text>Grüne Vanilleschote</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_VANILLA_PODS</Tag>
+        <English>Green Vanilla Pods</English>
+        <German>
+            <Text>Grüne Vanilleschote</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VANILLA_PODS</Tag>
+        <English>Green Vanilla Pods</English>
+        <German>
+            <Text>Grüne Vanilleschote</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_VANILLA_PODS_PEDIA</Tag>
+        <English>[TAB][H1]Green Vanilla Pods[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Grüne Vanilleschote[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VANILLA_PODS_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VANILLA_PODS_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>	
 </Civ4GameText>

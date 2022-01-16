@@ -1202,6 +1202,10 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_FRUITS</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_BARLEY</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
@@ -1214,11 +1218,23 @@
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_LOGWOOD</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_TOBACCO</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_YERBA_LEAVES</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -1353,17 +1369,6 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
-                    <BonusType>BONUS_TURKEYS</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
                     <BonusType>BONUS_PUMPKIN</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -1402,7 +1407,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1430,17 +1435,6 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
-                    <BonusType>BONUS_VULTURE</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
                     <BonusType>BONUS_IGUANA</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -1457,7 +1451,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1468,7 +1462,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1479,29 +1473,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_PARROTS</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_TOUCAN</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1512,7 +1484,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1523,7 +1495,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1534,7 +1506,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1545,7 +1517,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1556,7 +1528,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1567,7 +1539,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1611,7 +1583,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1622,7 +1594,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1633,7 +1605,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1644,7 +1616,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1711,6 +1683,10 @@
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_FRUITS</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_BARLEY</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
@@ -1723,11 +1699,23 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_LOGWOOD</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_TOBACCO</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_YERBA_LEAVES</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -1882,7 +1870,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_HEMP</YieldType>
+                            <YieldType>YIELD_FLAX</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1922,6 +1910,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldIncreases>
@@ -2119,25 +2111,29 @@
             <ArtDefineTag>ART_DEF_IMPROVEMENT_TRAPPER_HUT</ArtDefineTag>
             <PrereqNatureYields>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>1</iValue>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_FUR</YieldType>
+                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_WILD_FEATHERS</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </PrereqNatureYields>
             <YieldIncreases>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FUR</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_WILD_FEATHERS</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldIncreases>
@@ -2319,17 +2315,6 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
-                    <BonusType>BONUS_GOAT</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FUR</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
                     <BonusType>BONUS_MUSK_OX</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -2364,17 +2349,6 @@
                 </BonusTypeStruct>
                 <BonusTypeStruct>
                     <BonusType>BONUS_WALRUSS</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FUR</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_PENGUIN</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
@@ -2460,7 +2434,62 @@
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
+                </BonusTypeStruct>			
+                <BonusTypeStruct>
+                    <BonusType>BONUS_TURKEYS</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
                 </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_VULTURE</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_PARROTS</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_TOUCAN</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_PENGUIN</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>						
             </BonusTypeStructs>
             <ImprovementPillage/>
             <ImprovementUpgrade>IMPROVEMENT_TRAPPER_CAMP</ImprovementUpgrade>
@@ -2556,6 +2585,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_ORE</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_COAL</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_COAL</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -2666,6 +2706,17 @@
                         </YieldIntegerPair>
                     </YieldChanges>
                 </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_CLAY</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_CLAY</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
             </BonusTypeStructs>
             <ImprovementPillage/>
             <ImprovementUpgrade>IMPROVEMENT_LARGE_QUARRY</ImprovementUpgrade>
@@ -2748,10 +2799,26 @@
                     <YieldType>YIELD_RED_PEPPER</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_VANILLA_PODS</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_MAPLE_SIRUP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
             </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_VANILLA_PODS</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_MAPLE_SIRUP</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -2794,6 +2861,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_RED_PEPPER</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_VANILLA</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_VANILLA_PODS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3007,7 +3085,23 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_GOATS</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_CATTLE</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_PIGS</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GEESE</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_CHICKEN</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -3102,7 +3196,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_PIGS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3113,7 +3207,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_CHICKEN</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3124,7 +3218,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_GEESE</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3151,6 +3245,17 @@
                         </YieldIntegerPair>
                     </YieldChanges>
                 </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_GOAT</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_GOATS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
             </BonusTypeStructs>
             <ImprovementPillage/>
             <ImprovementUpgrade>IMPROVEMENT_LARGE_PASTURE</ImprovementUpgrade>
@@ -3169,6 +3274,10 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_FRUITS</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_BARLEY</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
@@ -3181,11 +3290,23 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_LOGWOOD</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_TOBACCO</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_YERBA_LEAVES</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -3320,17 +3441,6 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
-                    <BonusType>BONUS_TURKEYS</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
                     <BonusType>BONUS_PUMPKIN</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -3369,7 +3479,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3397,17 +3507,6 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
-                    <BonusType>BONUS_VULTURE</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
                     <BonusType>BONUS_IGUANA</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -3424,7 +3523,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3435,7 +3534,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3446,29 +3545,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_PARROTS</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_TOUCAN</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3479,7 +3556,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3490,7 +3567,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3501,7 +3578,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3512,7 +3589,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3523,7 +3600,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3534,7 +3611,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3578,7 +3655,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3589,7 +3666,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3600,7 +3677,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3611,7 +3688,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3678,6 +3755,10 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_FRUITS</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_BARLEY</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
@@ -3690,11 +3771,23 @@
                     <iValue>4</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_LOGWOOD</YieldType>
+                    <iValue>4</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_TOBACCO</YieldType>
                     <iValue>4</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_YERBA_LEAVES</YieldType>
+                    <iValue>4</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>4</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>4</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -3889,6 +3982,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldIncreases>
@@ -4086,25 +4183,25 @@
             <ArtDefineTag>ART_DEF_IMPROVEMENT_TRAPPER_CAMP</ArtDefineTag>
             <PrereqNatureYields>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>1</iValue>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_FUR</YieldType>
+                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </PrereqNatureYields>
             <YieldIncreases>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>2</iValue>
-                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FUR</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_WILD_FEATHERS</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldIncreases>
@@ -4286,17 +4383,6 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
-                    <BonusType>BONUS_GOAT</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FUR</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
                     <BonusType>BONUS_MUSK_OX</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -4331,17 +4417,6 @@
                 </BonusTypeStruct>
                 <BonusTypeStruct>
                     <BonusType>BONUS_WALRUSS</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FUR</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_PENGUIN</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
@@ -4427,7 +4502,62 @@
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
+                </BonusTypeStruct>				
+                <BonusTypeStruct>
+                    <BonusType>BONUS_TURKEYS</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
                 </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_VULTURE</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_PARROTS</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_TOUCAN</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_PENGUIN</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>				
             </BonusTypeStructs>
             <ImprovementPillage/>
             <ImprovementUpgrade/>
@@ -4444,10 +4574,18 @@
                     <YieldType>YIELD_ORE</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COAL</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
             </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_ORE</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COAL</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -4505,6 +4643,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_ORE</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_COAL</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_COAL</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -4569,10 +4718,18 @@
                     <YieldType>YIELD_STONE</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
             </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldIncreases>
@@ -4611,6 +4768,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_STONE</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_CLAY</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_CLAY</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -4697,10 +4865,26 @@
                     <YieldType>YIELD_RED_PEPPER</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_VANILLA_PODS</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_MAPLE_SIRUP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
             </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_VANILLA_PODS</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_MAPLE_SIRUP</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -4743,6 +4927,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_RED_PEPPER</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_VANILLA</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_VANILLA_PODS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -4956,11 +5151,27 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_GOATS</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_CATTLE</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HORSES</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_PIGS</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_CHICKEN</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_GEESE</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldIncreases>
@@ -5051,7 +5262,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_PIGS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -5062,7 +5273,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_CHICKEN</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -5073,7 +5284,7 @@
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_FOOD</YieldType>
+                            <YieldType>YIELD_GEESE</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -5096,6 +5307,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_SHEEP</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_GOAT</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_GOATS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -5681,6 +5903,10 @@
                     <YieldType>YIELD_PREMIUM_FUR</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
             </YieldIncreases>
             <RiverSideYieldChanges/>
             <HillsYieldChanges/>
@@ -5727,7 +5953,96 @@
                 </TerrainMakesValid>
             </TerrainMakesValids>
             <FeatureMakesValids/>
-            <BonusTypeStructs/>
+            <BonusTypeStructs>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_FUR_SEAL</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_SEALS</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FUR</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_SEA_OTTERS</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_BOOBY</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_GULL</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_DUCK</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_LOON</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_CANADA_GOOSE</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+            </BonusTypeStructs>
             <ImprovementPillage/>
             <ImprovementUpgrade/>
             <RouteYieldChanges/>
@@ -6035,6 +6350,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldIncreases>

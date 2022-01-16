@@ -15405,6 +15405,13 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 					eYield = YIELD_RED_PEPPER;
 					iPrice = getYieldBuyPrice(YIELD_RED_PEPPER) - 1;
 				}
+				break;
+			case YIELD_VANILLA:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_VANILLA_PODS) <= price_diff)
+				{
+					eYield = YIELD_VANILLA_PODS;
+					iPrice = getYieldBuyPrice(YIELD_VANILLA_PODS) - 1;
+				}
 				break;	
 			case YIELD_BEER:
 				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_BARLEY) <= price_diff)
@@ -15987,6 +15994,13 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 					eYield = YIELD_RED_PEPPER;
 					iPrice = getYieldAfricaBuyPrice(YIELD_RED_PEPPER) - 1;
 				}
+				break;
+			case YIELD_VANILLA:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_VANILLA_PODS) <= price_diff)
+				{
+					eYield = YIELD_VANILLA_PODS;
+					iPrice = getYieldAfricaBuyPrice(YIELD_VANILLA_PODS) - 1;
+				}
 				break;	
 			case YIELD_BEER:
 				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_BARLEY) <= price_diff)
@@ -16509,6 +16523,13 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 				{
 					eYield = YIELD_RED_PEPPER;
 					iPrice = getYieldPortRoyalBuyPrice(YIELD_RED_PEPPER) - 1;
+				}
+				break;
+			case YIELD_VANILLA:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_VANILLA_PODS) <= price_diff)
+				{
+					eYield = YIELD_VANILLA_PODS;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_VANILLA_PODS) - 1;
 				}
 				break;
 			case YIELD_BEER:
@@ -19676,8 +19697,9 @@ void CvPlayer::redistributeWood()
 
 	//calculate total wood and stone of all cities
 	int totalwood = 0;
-	int totalstone = 0;
 	int totalhardwood = 0;
+	int totalstone = 0;
+	int totalclay = 0;
 
 	CvCity* pLoopCity;
 
@@ -19696,6 +19718,13 @@ void CvPlayer::redistributeWood()
 			pLoopCity->setYieldStored(YIELD_LUMBER, iRestToLeave);
 		}
 
+		// for Hardwood
+		if (pLoopCity->getYieldStored(YIELD_HARDWOOD) > iRestToLeave)
+		{
+			totalwood += pLoopCity->getYieldStored(YIELD_HARDWOOD) - iRestToLeave;
+			pLoopCity->setYieldStored(YIELD_HARDWOOD, iRestToLeave);
+		}
+
 		// for Stone
 		if (pLoopCity->getYieldStored(YIELD_STONE) > iRestToLeave)
 		{
@@ -19703,12 +19732,13 @@ void CvPlayer::redistributeWood()
 			pLoopCity->setYieldStored(YIELD_STONE, iRestToLeave);
 		}
 
-		// for Hardwood
-		if (pLoopCity->getYieldStored(YIELD_HARDWOOD) > iRestToLeave)
+		// for Clay
+		if (pLoopCity->getYieldStored(YIELD_CLAY) > iRestToLeave)
 		{
-			totalwood += pLoopCity->getYieldStored(YIELD_HARDWOOD) - iRestToLeave;
-			pLoopCity->setYieldStored(YIELD_HARDWOOD, iRestToLeave);
+			totalclay += pLoopCity->getYieldStored(YIELD_CLAY) - iRestToLeave;
+			pLoopCity->setYieldStored(YIELD_CLAY, iRestToLeave);
 		}
+
 	}
 
 	// now we distribute accordign to population
@@ -19718,8 +19748,9 @@ void CvPlayer::redistributeWood()
 	if (iTotalPopulation != 0)
 	{
 		int woodToDisbributePerCitizen = totalwood / iTotalPopulation;
-		int stoneToDisbributePerCitizen = totalstone / iTotalPopulation;
 		int hardwoodToDisbributePerCitizen = totalhardwood / iTotalPopulation;
+		int stoneToDisbributePerCitizen = totalstone / iTotalPopulation;
+		int clayToDisbributePerCitizen = totalclay / iTotalPopulation;
 
 		// Loop through cities second time to distribute all wood
 		int iLoop2;
@@ -19730,18 +19761,21 @@ void CvPlayer::redistributeWood()
 		
 			// we distribute accordign to the Population Size
 			int woodtodistribute = woodToDisbributePerCitizen * iPopulationOfThisCity;
-			int stonetodistribute = stoneToDisbributePerCitizen * iPopulationOfThisCity;
 			int hardwoodtodistribute = hardwoodToDisbributePerCitizen * iPopulationOfThisCity;
+			int stonetodistribute = stoneToDisbributePerCitizen * iPopulationOfThisCity;
+			int claytodistribute = clayToDisbributePerCitizen * iPopulationOfThisCity;
 
 			// we dsitribte the caclulated ressources on to what it already has
 			pLoopCity->changeYieldStored(YIELD_LUMBER, woodtodistribute);
-			pLoopCity->changeYieldStored(YIELD_STONE, stonetodistribute);
 			pLoopCity->changeYieldStored(YIELD_HARDWOOD, hardwoodtodistribute);
+			pLoopCity->changeYieldStored(YIELD_STONE, stonetodistribute);
+			pLoopCity->changeYieldStored(YIELD_CLAY, claytodistribute);
 
 			// substract the distributed ressources from the total amounts
 			totalwood -= woodtodistribute;
-			totalstone -= stonetodistribute;
 			totalhardwood -= hardwoodtodistribute;
+			totalstone -= stonetodistribute;
+			totalclay -= claytodistribute;
 		}
 	}
 
@@ -19750,13 +19784,17 @@ void CvPlayer::redistributeWood()
 	{
 		getCity(0)->changeYieldStored(YIELD_LUMBER, totalwood);
 	}
+	if (totalhardwood > 0)
+	{
+		getCity(0)->changeYieldStored(YIELD_HARDWOOD, totalhardwood);
+	}
 	if (totalstone > 0)
 	{
 		getCity(0)->changeYieldStored(YIELD_STONE, totalstone);
 	}
-	if (totalhardwood > 0)
+	if (totalclay > 0)
 	{
-		getCity(0)->changeYieldStored(YIELD_HARDWOOD, totalhardwood);
+		getCity(0)->changeYieldStored(YIELD_CLAY, totalclay);
 	}
 }
 // TAC - AI Economy - Ray - END

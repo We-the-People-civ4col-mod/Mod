@@ -1613,6 +1613,48 @@
         <Italian>[BOLD]Strategia :[\BOLD][PARAGRAPH:1]La pietra è da sempre il materiale più importante nelle opere di costruzione dell'uomo. Infatti, i primi oggetti in pietra risalgono agli albori della storia dell'umanità. Pare che fu addirittura il Paronthropus, un antenato dell'uomo vissuto due milioni di anni fa, a utilizzare i primi strumenti realizzati in pietra.[PARAGRAPH:1]La maggior parte degli oggetti in pietra veniva creata scheggiando e affilando: l'artigiano colpiva una pietra con un'altra pietra più dura, cercando di rimuovere piccole scaglie, fino a ottenere la forma desiderata. Le tribù mesoamericane usavano questo metodo per realizzare le loro letali e affilate spade di ossidiana.[PARAGRAPH:1]Il metodo di affilamento veniva utilizzato per lavorare materiali più ruvidi e grezzi, come il basalto e il granito; questo processo era lungo e ripetitivo per l'artigiano, che doveva affilare la pietra con materiale più duro o con sabbia, utilizzando acqua come lubrificante. Molte delle prime asce di pietra europee vennero realizzate con questo procedimento.</Italian>
         <Spanish>[BOLD]Estrategia :[\BOLD][PARAGRAPH:1]La piedra ha sido y sigue siendo uno de los materiales más importantes de construcción de la humanidad. De hecho, las herramientas de piedra pertenecen a la Prehistoria. Parece ser que las primeras fueron empleadas por el parantropus, un antepasado del hombre que vivió hace unos dos millones de años.[PARAGRAPH:1]La mayoría de las herramientas de piedra se creaban a base de cincelar o amolar. La primera técnica se usaba al trabajar materiales cristalinos como el sílex, el pedernal y la obsidiana. El fabricante golpeaba la piedra con otra más dura, separando cuidadosamente escamas de piedra hasta que la herramienta tenía la forma adecuada. Las tribus centroamericanas empleaban este método para fabricar sus afiladas y mortíferas espadas de obsidiana.[PARAGRAPH:1]El método de amolar se empleaba al trabajar con materiales más duros y toscos como el basalto y el granito. Es un proceso largo y tedioso en el que el fabricante desbasta repetidamente la piedra con un material más duro o con arena, empleando a menudo agua como lubricante. Muchas de las primeras hachas de piedra europeas se crearon mediante este proceso.</Spanish>
     </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BONUS_CLAY</Tag>
+        <English>Clay</English>
+        <German>
+            <Text>Lehm</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_CLAY_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Clay[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] TODO</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lehm[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1] TODO</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BONUS_COAL</Tag>
+        <English>Coal</English>
+        <German>
+            <Text>Kohle</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_COAL_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] TODO</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kohle[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1] TODO</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BONUS_VANILLA</Tag>
+        <English>Vanilla</English>
+        <German>
+            <Text>Vanille</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_VANILLA_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vanilla[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] TODO</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vanille[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1] TODO</German>
+    </TEXT>	
     <TEXT>
         <Tag>TXT_KEY_BONUS_SUGAR</Tag>
         <English>Sugarcane</English>

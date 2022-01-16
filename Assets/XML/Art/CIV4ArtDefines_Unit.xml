@@ -240,7 +240,7 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-        </UnitArtInfo>
+        </UnitArtInfo>		
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SPICE_TRADER</Type>
             <Button>,Art/colonization_atlas_units.dds,4,3</Button>
@@ -1461,6 +1461,31 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_VANILLA_PODS</Type>
+            <Button>,Art/colonization_atlas_resources.dds,6,5</Button>
+            <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>1.2</fInterfaceScale>
+            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <KFM/>
+            <TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.2</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+            </AudioRunSounds>
+        </UnitArtInfo>		
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_SPICES</Type>
             <Button>,Art/colonization_atlas_resources.dds,7,5</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -1485,6 +1510,31 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_VANILLA</Type>
+            <Button>,Art/colonization_atlas_resources.dds,7,5</Button>
+            <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>1.2</fInterfaceScale>
+            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <KFM/>
+            <TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.2</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+            </AudioRunSounds>
+        </UnitArtInfo>		
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_GRAPES</Type>
             <Button>,Art/colonization_atlas_resources.dds,3,3</Button>
@@ -1710,6 +1760,56 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_CLAY</Type>
+            <Button>,Art/colonization_atlas_resources.dds,8,5</Button>
+            <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>1.2</fInterfaceScale>
+            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <KFM/>
+            <TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.2</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_COAL</Type>
+            <Button>,Art/colonization_atlas_resources.dds,8,5</Button>
+            <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>1.2</fInterfaceScale>
+            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <KFM/>
+            <TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.2</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+            </AudioRunSounds>
+        </UnitArtInfo>		
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SILVER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,1</Button>

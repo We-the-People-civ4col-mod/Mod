@@ -4511,6 +4511,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_PREMIUM_COATS:
 		case YIELD_SALT:
 		case YIELD_SPICES:
+		case YIELD_VANILLA:
 		case YIELD_BEER:
 		case YIELD_RUM:
 		case YIELD_HOOCH:
@@ -4523,9 +4524,11 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_LUMBER:
 		case YIELD_HARDWOOD:
 		case YIELD_STONE:
+		case YIELD_CLAY:
 		case YIELD_HEMP:
 		case YIELD_FLAX:
 		case YIELD_ORE:
+		case YIELD_COAL:
 		case YIELD_SHEEP:
 		case YIELD_GOATS:
 		case YIELD_PIGS:
@@ -4550,6 +4553,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_PREMIUM_FUR:
 		case YIELD_RAW_SALT:
 		case YIELD_RED_PEPPER:
+		case YIELD_VANILLA_PODS:
 		case YIELD_BARLEY:
 		case YIELD_SUGAR:
 		case YIELD_FRUITS:

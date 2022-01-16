@@ -1335,7 +1335,7 @@
             <fScale>1.2</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Bog_Ore/gems.nif</NIF>
-            <KFM>Art/Terrain/Resources/Bog_Ore/gems.kfm</KFM>
+            <KFM/>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
@@ -1670,7 +1670,31 @@
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.2</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Stone/stone_freeze0000.nif</NIF>
+            <NIF>Art/Terrain/Resources/Stone/Stone.nif</NIF>
+            <KFM/>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
+        </BuildingArtInfo>
+        <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_BONUS_CLAY</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Clay/marble.nif</NIF>
+            <KFM/>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
+        </BuildingArtInfo>
+        <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_BONUS_COAL</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Coal/coal.nif</NIF>
             <KFM/>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
@@ -1986,6 +2010,18 @@
             <KFM/>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
+        <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_BONUS_VANILLA</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,8</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Vanilla/Vanilla.nif</NIF>
+            <KFM/>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
+        </BuildingArtInfo>	
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_MAPLE_TREES</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
