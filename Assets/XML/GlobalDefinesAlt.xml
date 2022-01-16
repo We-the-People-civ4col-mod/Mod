@@ -1286,5 +1286,15 @@
 	<Define>
 		<DefineName>FONT_SYMBOL_CUSTOM_OFFSET</DefineName>
 		<iDefineIntVal>8658</iDefineIntVal>
+		<DefineName>CITY_STARVATION_DONATION_FOOD_RECEIVED</DefineName>
+		<iDefineIntVal>20</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>CITY_STARVATION_DONATION_GOLD_PAYED</DefineName>
+		<iDefineIntVal>200</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>CITY_STARVATION_NO_DONATION_OCCUPATION_TIMER</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 </Civ4Defines>
