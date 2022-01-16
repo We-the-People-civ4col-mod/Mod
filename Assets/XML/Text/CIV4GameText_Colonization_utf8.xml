@@ -2386,6 +2386,16 @@
         <Spanish>Los ciudadanos abandonan [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] en busca de Alimentos.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_CITY_STARVING_AND_REVOLTING</Tag>
+        <English>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Citizens are starving. The lack of support from the government has caused them to rebel[COLOR_REVERT]</English>
+        <German>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Die Bürger verhunger. Die ausbleibende Unterstützung durch die Regierung hat zu Revolten geführt.[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_STARVING_BUT_COLONIES_PAID</Tag>
+        <English>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Citizens are starving. The government however has granted emergency funding of %d2_gold[ICON_GOLD] to deliver %d3_food[ICON_FOOD] to the city.[COLOR_REVERT]</English>
+        <German>[COLOR_REVERT]%s1_city : [COLOR_WARNING_TEXT]Die Bürger verhunger. Die Regierung hat jedoch eine Notfallzahlung von %d2_gold[ICON_GOLD] gestattet, um %d3_food[ICON_FOOD] in die Stadt zu liefern.[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BELOW_MIN_SPECS_MESSAGE</Tag>
         <English>Your machine is below minimum specifications. Colonization will not run on this hardware setup.</English>
         <French>Votre ordinateur ne répond pas à la configuration minimale requise. Colonization ne peut pas fonctionner avec cette configuration matérielle.</French>

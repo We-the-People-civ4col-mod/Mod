@@ -6924,19 +6924,73 @@ void CvCity::doGrowth()
 	}
 	else if (getFood() < 0)
 	{
+		// Food is reset to 0
 		changeFood(-(getFood()));
+
+		// Population is larger 1, we can eject citizens
 		if (getPopulation() > 1)
 		{
 			if (!AI_removeWorstPopulationUnit(false))
 			{
 				AI_removeWorstPopulationUnit(true);
 			}
-
 			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING", getNameKey()), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 		}
-		else if (!isNative())
+		// WTP, ray, necessary changes related to branch PLAINS, which also allows settling in hostile Terrains without Food
+
+		// Population is just 1, we do not want to abandon city
+		else
 		{
-			changeOccupationTimer(2);
+			int iFoodReceivedForStarvationDonation = GC.getDefineINT("CITY_STARVATION_DONATION_FOOD_RECEIVED");
+			// Native Case: just to avoid triggering this unnecessarily for Natives
+			if (isNative())
+			{
+				changeFood(iFoodReceivedForStarvationDonation);
+			}
+
+			// other players
+			else
+			{
+				CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
+				int iGold = kPlayer.getGold();
+				int iGoldToPayedForStarvationDonation = GC.getDefineINT("CITY_STARVATION_DONATION_GOLD_PAYED") * GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getStoragePercent() / 100;
+				int iOccupationTimerinCaseNoDonation = GC.getDefineINT("CITY_STARVATION_NO_DONATION_OCCUPATION_TIMER"); 
+
+				// Case HUMAN: let us substract Gold for Human Player and trigger message about donation
+				if (isHuman())
+				{
+					// We could donate food
+					if (iGold > iGoldToPayedForStarvationDonation)
+					{
+						kPlayer.changeGold(iGoldToPayedForStarvationDonation);
+						changeFood(iFoodReceivedForStarvationDonation);
+						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING_BUT_COLONIES_PAID", getNameKey(), iGoldToPayedForStarvationDonation, iFoodReceivedForStarvationDonation), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+					}
+
+					// We did not have the gold, thus unrest
+					// but only if the City is not already in unrest, to prevent endless loops
+					else if (getOccupationTimer() == 0)
+					{
+						changeOccupationTimer(iOccupationTimerinCaseNoDonation);
+						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING_AND_REVOLTING", getNameKey()), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+					}
+				}
+				
+				// Case AI: We keep this simple for now
+				// no unrest, receives gold but has to pay for it
+				else
+				{
+					if (iGold > iGoldToPayedForStarvationDonation/2)
+					{
+						kPlayer.changeGold(iGoldToPayedForStarvationDonation/2);
+					}
+					else
+					{
+						kPlayer.changeGold(iGold);
+					}
+					changeFood(iFoodReceivedForStarvationDonation);
+				}
+			}
 		}
 	}
 }
