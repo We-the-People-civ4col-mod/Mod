@@ -93,6 +93,7 @@ public:
 	void copyFromVector(const std::vector<T>& thisVector);
 	int GetNumNonZeroElements() const;
 	int GetNumPositiveElements() const;
+	void generateInitCivEffect(const InfoArray<IndexType, int>& kIarray);
 protected:
 	EnumMapShared() : EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>() {}
 };
@@ -497,6 +498,18 @@ int EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH
 		}
 	}
 	return iNum;
+}
+
+template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::generateInitCivEffect(const InfoArray<IndexType, int>& kIarray)
+{
+	for (int i = 0; i < kIarray.getLength(); ++i)
+	{
+		if (kIarray.get1(i) > 0)
+		{
+			set(kIarray.get0(i), 0);
+		}
+	}
 }
 
 //

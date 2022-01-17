@@ -63,9 +63,6 @@
 
 class CvXMLLoadUtility;
 class CvCivilizationInfo;
-class BoolArray;
-
-template<class T> class JustInTimeArray;
 
 class InfoArrayBase
 {
@@ -148,50 +145,9 @@ public:
 	// szType is always getType()
 	// sTagName is the root xml tax name of the structure to be read
 	void read(CvXMLLoadUtility* pXML, const char* szType, const char *sTagName);
-	void assign(const BoolArray* pBArray);
-	void assign(const std::vector<int>& vec);
-	void assign(const std::vector<bool>& vec);
 	void convertClass(const InfoArrayBase* pArray, const CvCivilizationInfo* pCivInfo = NULL);
 private:
 	void readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vector<short>& aArray, std::vector<short>& aIndex, int iLevel, const char *sTagName, const char* szType);
-
-public:
-
-	// writing assign JIT array code in the header to avoid template errors/warnings
-	template<class T>
-	void assign(const JustInTimeArray<T>* pJITArray)
-	{
-		FAssert(m_iNumDimentions == 2);
-		SAFE_DELETE_ARRAY(m_pArray);
-		m_iLength = 0;
-		for (int i = 0; i < pJITArray->length(); i++)
-		{
-			if (pJITArray->get(i) != 0)
-			{
-				m_iLength++;
-			}
-		}
-
-		if (m_iLength == 0)
-		{
-			return;
-		}
-
-		m_pArray = new short[m_iLength * 2];
-
-		int iCounter = 0;
-
-		for (int i = 0; i < pJITArray->length(); i++)
-		{
-			if (pJITArray->get(i) != 0)
-			{
-				m_pArray[iCounter] = i;
-				iCounter++;
-				m_pArray[iCounter] = pJITArray->get(i);
-				iCounter++;
-			}
-		}
-	}
 };
 
 

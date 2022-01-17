@@ -346,6 +346,7 @@ sub handleInfoArray
 	$output .= "public InfoArray$index<" . addtemplates("T", $id, 0) . ">\n" unless $id == 1;
 	$output .= "protected InfoArrayBase\n\t, public boost::noncopyable\n" if $id == 1;
 	$output .= "{\n";
+	$output .= "\tfriend class CyInfoArray;\n";
 	$output .= "public:\n";
 	$output .= "\tint getLength() const\n\t{\n\t\treturn InfoArrayBase::getLength();\n\t}\n" if $id == 1;
 	$output .= "\t$type get$index(int iIndex) const\n";

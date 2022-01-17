@@ -16410,45 +16410,45 @@ CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
 		// Since the array all have 1 as default, the task for this CivEffect is to provide -1
 		//   whenever there is a positive value in a CivEffect
 
-		BonusArray          <int> ja_Bonuses       (1);
-		BuildArray          <int> ja_Builds        (1);
-		BuildingClassArray  <int> ja_Buildings     (1);
-		CivicArray          <int> ja_Civics        (1);
-		UnitClassArray      <int> ja_Immigrants    (1);
-		ImprovementArray    <int> ja_Improvements  (1);
-		ProfessionArray     <int> ja_Professions   (1);
-		PromotionArray      <int> ja_Promotions    (1);
-		RouteArray          <int> ja_Routes        (1);
-		UnitClassArray      <int> ja_Units         (1);
-		YieldArray          <int> ja_Yields        (1);
+		EnumMap<BonusTypes          , int, 1> Bonuses;
+		EnumMap<BuildTypes          , int, 1> Builds;
+		EnumMap<BuildingClassTypes  , int, 1> Buildings;
+		EnumMap<CivicTypes          , int, 1> Civics;
+		EnumMap<UnitClassTypes      , int, 1> Immigrants;
+		EnumMap<ImprovementTypes    , int, 1> Improvements;
+		EnumMap<ProfessionTypes     , int, 1> Professions;
+		EnumMap<PromotionTypes      , int, 1> Promotions;
+		EnumMap<RouteTypes          , int, 1> Routes;
+		EnumMap<UnitClassTypes      , int, 1> Units;
+		EnumMap<YieldTypes          , int, 1> Yields;
 
 		for (CivEffectTypes eCivEffect = FIRST_CIV_EFFECT; eCivEffect < NUM_CIV_EFFECT_TYPES; ++eCivEffect)
 		{
 			const CivEffectInfo& kInfo = GC.getCivEffectInfo(eCivEffect);
-			ja_Bonuses         .generateInitCivEffect(kInfo.getAllowedBonuses());
-			ja_Builds          .generateInitCivEffect(kInfo.getAllowedBuilds());
-			ja_Buildings       .generateInitCivEffect(kInfo.getAllowedBuildingClasses());
-			ja_Civics          .generateInitCivEffect(kInfo.getAllowedCivics());
-			ja_Immigrants      .generateInitCivEffect(kInfo.getAllowedImmigrants());
-			ja_Improvements    .generateInitCivEffect(kInfo.getAllowedImprovements());
-			ja_Professions     .generateInitCivEffect(kInfo.getAllowedProfessions());
-			ja_Promotions      .generateInitCivEffect(kInfo.getAllowedPromotions());
-			ja_Routes          .generateInitCivEffect(kInfo.getAllowedRoutes());
-			ja_Units           .generateInitCivEffect(kInfo.getAllowedUnitClasses());
-			ja_Yields          .generateInitCivEffect(kInfo.getAllowedYields());
+			Bonuses         .generateInitCivEffect(kInfo.getAllowedBonuses());
+			Builds          .generateInitCivEffect(kInfo.getAllowedBuilds());
+			Buildings       .generateInitCivEffect(kInfo.getAllowedBuildingClasses());
+			Civics          .generateInitCivEffect(kInfo.getAllowedCivics());
+			Immigrants      .generateInitCivEffect(kInfo.getAllowedImmigrants());
+			Improvements    .generateInitCivEffect(kInfo.getAllowedImprovements());
+			Professions     .generateInitCivEffect(kInfo.getAllowedProfessions());
+			Promotions      .generateInitCivEffect(kInfo.getAllowedPromotions());
+			Routes          .generateInitCivEffect(kInfo.getAllowedRoutes());
+			Units           .generateInitCivEffect(kInfo.getAllowedUnitClasses());
+			Yields          .generateInitCivEffect(kInfo.getAllowedYields());
 		}
 
-		m_info_AllowBonuses         .assign(&ja_Bonuses);
-		m_info_AllowBuilds          .assign(&ja_Builds);
-		m_info_AllowBuildings       .assign(&ja_Buildings);
-		m_info_AllowCivics          .assign(&ja_Civics);
-		m_info_AllowImmigrants      .assign(&ja_Immigrants);
-		m_info_AllowImprovements    .assign(&ja_Improvements);
-		m_info_AllowProfessions     .assign(&ja_Professions);
-		m_info_AllowPromotions      .assign(&ja_Promotions);
-		m_info_AllowRoutes          .assign(&ja_Routes);
-		m_info_AllowUnits           .assign(&ja_Units);
-		m_info_AllowYields          .assign(&ja_Yields);
+		m_info_AllowBonuses         .assignFrom(Bonuses);
+		m_info_AllowBuilds          .assignFrom(Builds);
+		m_info_AllowBuildings       .assignFrom(Buildings);
+		m_info_AllowCivics          .assignFrom(Civics);
+		m_info_AllowImmigrants      .assignFrom(Immigrants);
+		m_info_AllowImprovements    .assignFrom(Improvements);
+		m_info_AllowProfessions     .assignFrom(Professions);
+		m_info_AllowPromotions      .assignFrom(Promotions);
+		m_info_AllowRoutes          .assignFrom(Routes);
+		m_info_AllowUnits           .assignFrom(Units);
+		m_info_AllowYields          .assignFrom(Yields);
 	}
 }
 

@@ -12,12 +12,6 @@ CyInfoArray::CyInfoArray(const InfoArrayBase& parent)
 	m_Array = parent;
 }
 
-CyInfoArray::CyInfoArray(const BoolArray& BArray)
-	: m_Array(BArray.getType(), JIT_ARRAY_NO_TYPE, JIT_ARRAY_NO_TYPE, JIT_ARRAY_NO_TYPE)
-{
-	m_Array.assign(&BArray);
-}
-
 int CyInfoArray::get(int iIndex) const
 {
 	return getSub(iIndex, 0);

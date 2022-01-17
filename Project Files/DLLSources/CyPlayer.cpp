@@ -1511,22 +1511,27 @@ CyInfoArray* CyPlayer::getSpecialBuildingTypes() const
 {
 	// Currently a bit pointless, but here there is a single location to alter all of the python code using this should we need to update.
 
-	BoolArray BA(JIT_ARRAY_BUILDING_SPECIAL, true);
+	EnumMap<SpecialBuildingTypes, bool, true> em;
 
-	return new CyInfoArray(BA);
+	return new CyInfoArray(em);
 }
 
 CyInfoArray* CyPlayer::getStoredYieldTypes() const
 {
 	// Currently a bit pointless, but here there is a single location to alter all of the python code using this should we need to update.
 
-	BoolArray BA(JIT_ARRAY_YIELD);
+	EnumMap<YieldTypes, bool, true> em;
 
-	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
+	for (YieldTypes eYield = em.FIRST; eYield <= em.LAST; ++eYield)
 	{
-		BA.set(true, eYield);
+		if (eYield >= NUM_CARGO_YIELD_TYPES // only show cargo yields
+			|| (m_pPlayer && !m_pPlayer->CivEffect()->canUseYield(eYield))) // remove yields not used by the player
+		{
+			em.set(eYield, false);
+		}
 	}
-	return new CyInfoArray(BA);
+
+	return new CyInfoArray(em);
 }
 
 // CivEffect
