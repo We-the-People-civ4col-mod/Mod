@@ -317,7 +317,7 @@ int CvArea::getYieldRateModifier(PlayerTypes eIndex1, YieldTypes eIndex2) const
 {
 	FAssert(validEnumRange(eIndex1));
 	FAssert(validEnumRange(eIndex2));
-	return m_em2_iYieldRateModifier.get(eIndex1, eIndex2);
+	return m_em2_iYieldRateModifier[eIndex1].get(eIndex2);
 }
 
 
@@ -328,7 +328,7 @@ void CvArea::changeYieldRateModifier(PlayerTypes eIndex1, YieldTypes eIndex2, in
 
 	if (iChange != 0)
 	{
-		m_em2_iYieldRateModifier.add(eIndex1, eIndex2, iChange);
+		m_em2_iYieldRateModifier[eIndex1].add(eIndex2, iChange);
 
 		GET_PLAYER(eIndex1).invalidateYieldRankCache(eIndex2);
 
@@ -348,7 +348,7 @@ int CvArea::getNumTrainAIUnits(PlayerTypes eIndex1, UnitAITypes eIndex2) const
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be < MAX_PLAYERS");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be >= 0");
 	FAssertMsg(eIndex2 < NUM_UNITAI_TYPES, "eIndex2 is expected to be < NUM_UNITAI_TYPES");
-	return m_em2_iNumTrainAIUnits.get(eIndex1, eIndex2);
+	return m_em2_iNumTrainAIUnits[eIndex1].get(eIndex2);
 }
 
 
@@ -358,7 +358,7 @@ void CvArea::changeNumTrainAIUnits(PlayerTypes eIndex1, UnitAITypes eIndex2, int
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be < MAX_PLAYERS");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be >= 0");
 	FAssertMsg(eIndex2 < NUM_UNITAI_TYPES, "eIndex2 is expected to be < NUM_UNITAI_TYPES");
-	m_em2_iNumTrainAIUnits.add(eIndex1, eIndex2, iChange);
+	m_em2_iNumTrainAIUnits[eIndex1].add(eIndex2, iChange);
 	FAssert(getNumTrainAIUnits(eIndex1, eIndex2) >= 0);
 }
 
@@ -369,7 +369,7 @@ int CvArea::getNumAIUnits(PlayerTypes eIndex1, UnitAITypes eIndex2) const
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be < MAX_PLAYERS");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be >= 0");
 	FAssertMsg(eIndex2 < NUM_UNITAI_TYPES, "eIndex2 is expected to be < NUM_UNITAI_TYPES");
-	return m_em2_iNumAIUnits.get(eIndex1, eIndex2);
+	return m_em2_iNumAIUnits[eIndex1].get(eIndex2);
 }
 
 
@@ -379,7 +379,7 @@ void CvArea::changeNumAIUnits(PlayerTypes eIndex1, UnitAITypes eIndex2, int iCha
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be < MAX_PLAYERS");
 	if (eIndex2 != NO_UNITAI)
 	{
-		m_em2_iNumAIUnits.add(eIndex1, eIndex2, iChange);
+		m_em2_iNumAIUnits[eIndex1].add(eIndex2, iChange);
 		FAssert(getNumAIUnits(eIndex1, eIndex2) >= 0);
 	}
 }

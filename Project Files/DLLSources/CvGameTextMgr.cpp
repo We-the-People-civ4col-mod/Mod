@@ -5449,7 +5449,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 	// R&R, Androrc, Domestic Market
 	// R&R, ray, adjustment Domestic Markets, displaying as list
 	CvWString szYieldsDemandedList;
-	const InfoArray<YieldTypes, IntTypes> &infoYieldDemands = GC.getUnitInfo(eUnit).getYieldDemands();
+	const InfoArray<YieldTypes, int> &infoYieldDemands = GC.getUnitInfo(eUnit).getYieldDemands();
 	for (int iI = 0; iI < infoYieldDemands.getLength(); ++iI)
 	{
 		szYieldsDemandedList += CvWString::format(L"%c", GC.getYieldInfo(infoYieldDemands.getYield(iI)).getChar());
@@ -5820,7 +5820,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	}
 
 	CvWString szYieldsDemandedList;
-	const InfoArray<YieldTypes, IntTypes> &infoYieldDemands = kBuilding.getYieldDemands();
+	const InfoArray<YieldTypes, int> &infoYieldDemands = kBuilding.getYieldDemands();
 	for (int iI = 0; iI < infoYieldDemands.getLength(); ++iI)
 	{
 		szYieldsDemandedList += CvWString::format(L"%c", GC.getYieldInfo(infoYieldDemands.getYield(iI)).getChar());

@@ -6260,7 +6260,7 @@ int CvPlayerAI::AI_getContactTimer(PlayerTypes eIndex1, ContactTypes eIndex2)
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_CONTACT_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
-	return m_em_iContactTimer.get(eIndex1, eIndex2);
+	return m_em_iContactTimer[eIndex1].get(eIndex2);
 }
 
 
@@ -6270,7 +6270,7 @@ void CvPlayerAI::AI_changeContactTimer(PlayerTypes eIndex1, ContactTypes eIndex2
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_CONTACT_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
-	m_em_iContactTimer.add(eIndex1, eIndex2, iChange);
+	m_em_iContactTimer[eIndex1].add(eIndex2, iChange);
 	FAssert(AI_getContactTimer(eIndex1, eIndex2) >= 0);
 }
 
@@ -6281,7 +6281,7 @@ int CvPlayerAI::AI_getMemoryCount(PlayerTypes eIndex1, MemoryTypes eIndex2)
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_MEMORY_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
-	return m_em_iMemoryCount.get(eIndex1, eIndex2);
+	return m_em_iMemoryCount[eIndex1].get(eIndex2);
 }
 
 
@@ -6291,7 +6291,7 @@ void CvPlayerAI::AI_changeMemoryCount(PlayerTypes eIndex1, MemoryTypes eIndex2, 
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_MEMORY_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
-	m_em_iMemoryCount.add(eIndex1, eIndex2, iChange);
+	m_em_iMemoryCount[eIndex1].add(eIndex2, iChange);
 	FAssert(AI_getMemoryCount(eIndex1, eIndex2) >= 0);
 }
 

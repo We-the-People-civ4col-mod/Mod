@@ -29,7 +29,7 @@ template<class T>
 class BuildingClassArray: public JustInTimeArray<T>
 {
 public:
-	BuildingClassArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_BUILDING_CLASS, eDefault){};
+	BuildingClassArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_BUILDINGCLASS, eDefault){};
 };
 
 template<class T>
@@ -211,21 +211,21 @@ template<class T>
 class UnitAIArray: public JustInTimeArray<T>
 {
 public:
-	UnitAIArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_UNIT_AI, eDefault){};
+	UnitAIArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_UNITAI, eDefault){};
 };
 
 template<class T>
 class UnitClassArray: public JustInTimeArray<T>
 {
 public:
-	UnitClassArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_UNIT_CLASS, eDefault){};
+	UnitClassArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_UNITCLASS, eDefault){};
 };
 
 template<class T>
 class UnitCombatArray: public JustInTimeArray<T>
 {
 public:
-	UnitCombatArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_UNIT_COMBAT, eDefault){};
+	UnitCombatArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_UNITCOMBAT, eDefault){};
 };
 
 template<class T>

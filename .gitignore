@@ -10,7 +10,7 @@
 *.log
 *.vcxprojAssemblyReference.cache
 *.ini
-*.ini.bak
+*.bak
 .DS_Store
 .DS_Store?
 ._*
