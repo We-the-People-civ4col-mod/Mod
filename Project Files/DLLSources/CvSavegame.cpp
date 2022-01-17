@@ -483,6 +483,9 @@ CvSavegameWriter::CvSavegameWriter(CvSavegameWriterBase& writerbase)
 	, m_writerbase(writerbase)
 {
 	m_eClassType = NUM_SAVEGAME_CLASS_TYPES;
+#ifdef WITH_DEBUG_WRITE_SAVEGAME
+	m_iDebugWriteMode = 0;
+#endif
 }
 
 // copy constructor
@@ -684,6 +687,7 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType, CvRandom& rand)
 	Write(rand);
 }
 
+#ifndef WITH_DEBUG_WRITE_SAVEGAME
 void CvSavegameWriter::Write(byte* var, unsigned int iSize)
 {
 	for (unsigned int i = 0; i < iSize; ++i)
@@ -692,6 +696,7 @@ void CvSavegameWriter::Write(byte* var, unsigned int iSize)
 		++var;
 	}
 }
+#endif
 
 void CvSavegameWriter::Write(SavegameVariableTypes eType)
 {
@@ -888,7 +893,7 @@ CvSavegameWriterBase::CvSavegameWriterBase(FDataStreamBase* pStream)
 {
 	// set the debug flag
 	// TODO: don't hardcode all savegames to include debug info
-	SetBit(m_iFlag, Savegame_baseclass_flags_debug);
+	//SetBit(m_iFlag, Savegame_baseclass_flags_debug);
 	// TODO compression and don't hardcore this setting at compile time
 	//SetBit(m_iFlag, Savegame_baseclass_flags_compressed);
 
@@ -1070,3 +1075,60 @@ inline void FVariable::write(CvSavegameWriter writer)
 	else
 		writer.Write(m_dValue);
 }
+
+#ifdef WITH_DEBUG_WRITE_SAVEGAME
+void CvSavegameWriter::Write(byte* var, unsigned int iSize)
+{
+	for (unsigned int i = 0; i < iSize; ++i)
+	{
+		switch (m_iDebugWriteMode)
+		{
+		case 2:
+			m_vectorB.push_back(*var);
+			break;
+		case 1:
+			m_vectorA.push_back(*var);
+			/* fallthrough */
+		case 0:
+			m_vector.push_back(*var);
+		}
+		++var;
+	}
+}
+
+void CvSavegameWriter::DEBUG_startA()
+{
+	m_iDebugWriteMode = 1;
+	m_vectorA.clear();
+	m_vectorB.clear();
+}
+
+void CvSavegameWriter::DEBUG_startB()
+{
+	m_iDebugWriteMode = 2;
+}
+
+void CvSavegameWriter::DEBUG_end()
+{
+	m_iDebugWriteMode = 0;
+}
+
+bool CvSavegameWriter::DEBUG_compare() const
+{
+	if (m_vectorA.size() != m_vectorB.size())
+	{
+		return true;
+	}
+	const unsigned int iSize = m_vectorA.size();
+
+	for (unsigned int i = 0; i < iSize; ++i)
+	{
+		if (m_vectorA[i] != m_vectorB[i])
+		{
+			return true;
+		}
+	}
+
+	return false;
+}
+#endif

@@ -325,6 +325,7 @@
             <Type>TRAIT_SEAFARERS</Type>
             <Description>TXT_KEY_TRAIT_SEAFARERS</Description>
             <ShortDescription>TXT_KEY_TRAIT_SEAFARERS_SHORT</ShortDescription>
+			<eCivEffect>CIV_EFFECT_TRAIT_SEAFARERS</eCivEffect>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1241,6 +1242,7 @@
             <Type>TRAIT_INDUSTRIOUS</Type>
             <Description>TXT_KEY_TRAIT_INDUSTRIOUS</Description>
             <ShortDescription>TXT_KEY_TRAIT_INDUSTRIOUS_SHORT</ShortDescription>
+			<eCivEffect>CIV_EFFECT_TRAIT_INDUSTRIOUS</eCivEffect>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1676,6 +1678,7 @@
             <Type>TRAIT_SOPHISTICATED</Type>
             <Description>TXT_KEY_TRAIT_SOPHISTICATED</Description>
             <ShortDescription>TXT_KEY_TRAIT_SOPHISTICATED_SHORT</ShortDescription>
+			<eCivEffect>CIV_EFFECT_TRAIT_SOPHISTICATED</eCivEffect>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1768,6 +1771,7 @@
             <Type>TRAIT_PIONEER</Type>
             <Description>TXT_KEY_TRAIT_PIONEER</Description>
             <ShortDescription>TXT_KEY_TRAIT_PIONEER_SHORT</ShortDescription>
+			<eCivEffect>CIV_EFFECT_TRAIT_PIONEER</eCivEffect>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>

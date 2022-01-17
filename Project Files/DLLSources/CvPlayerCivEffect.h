@@ -36,6 +36,8 @@ public:
 
 	inline bool canUseDomesticMarket()                             const { return m_iCacheCanUseDomesticMarket > 0; }
 
+	// growth
+	int getLearningByDoingModifier() const;
 	inline unsigned int getNumUnitsOnDock()                        const { return m_iCacheNumUnitsOnDock > 0 ? m_iCacheNumUnitsOnDock : 1; } // return 0 or negative crashes the game
 
 
@@ -70,6 +72,7 @@ private:
 	int    m_iCacheCanUseDomesticMarket;
 
 	// Growth
+	int    m_iCacheLearningByDoingModifier;
 	int    m_iCacheNumUnitsOnDock;
 
 	// Units

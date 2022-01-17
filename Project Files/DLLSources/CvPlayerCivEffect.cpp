@@ -6,7 +6,7 @@ CvPlayerCivEffect::CvPlayerCivEffect()
 	: m_iAllowFoundCity(0)
 	, m_ba_CacheAllowBuild                     (JIT_ARRAY_BUILD, true)
 	, m_ja_iCacheFreePromotionsForProfessions  (JIT_ARRAY_PROFESSION      , JIT_ARRAY_PROMOTION)
-	, m_ja_iCacheFreePromotionsForUnitClasses  (JIT_ARRAY_UNIT_CLASS      , JIT_ARRAY_PROMOTION)
+	, m_ja_iCacheFreePromotionsForUnitClasses  (JIT_ARRAY_UNITCLASS       , JIT_ARRAY_PROMOTION)
 {
 }
 
@@ -44,7 +44,9 @@ void CvPlayerCivEffect::applyCivEffect(const CivEffectInfo& kCivEffect, int iCha
 	m_iAllowFoundCity += iChange * kCivEffect.getAllowFoundCity();
 	m_iCacheCanUseDomesticMarket += iChange * kCivEffect.getCanUseDomesticMarket();
 
-	m_iCacheNumUnitsOnDock += iChange * kCivEffect.getNumUnitsOnDockChange();
+	// growth
+	m_iCacheLearningByDoingModifier          += iChange * kCivEffect.getLearningByDoingModifier         ();
+	m_iCacheNumUnitsOnDock                   += iChange * kCivEffect.getNumUnitsOnDockChange            ();
 
 
 	bUpdatePromotions |= m_ja_iCacheFreePromotions                    .addCache(iChange, kCivEffect.getFreePromotions                (), pCivInfo);
@@ -146,6 +148,8 @@ void CvPlayerCivEffect::resetCivEffectCache()
 
 	m_iCacheCanUseDomesticMarket = 0;
 
+	// growth
+	m_iCacheLearningByDoingModifier = 100;
 	m_iCacheNumUnitsOnDock = 0;
 
 	m_ja_iCacheFreePromotions.reset();
@@ -278,5 +282,12 @@ void CvPlayerCivEffect::updateHasCivEffectCache() const
 	case CIV_CATEGORY_NOT_SET:
 		break;
 	}
-	BOOST_STATIC_ASSERT(NUM_CIV_CATEGORY_TYPES == 6);
+	BOOST_STATIC_ASSERT(NUM_CIV_CATEGORY_TYPES == static_cast<CivCategoryTypes>(6));
+}
+
+// growth
+int CvPlayerCivEffect::getLearningByDoingModifier() const
+{
+	// cap chance at 0% to avoid calculations using negative chances
+	return m_iCacheLearningByDoingModifier > 0 ? m_iCacheLearningByDoingModifier : 0;
 }

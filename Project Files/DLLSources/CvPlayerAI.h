@@ -498,8 +498,8 @@ protected:
 	
 	EnumMap<YieldTypes, int> m_em_iAverageYieldMultiplier;
 	EnumMap<YieldTypes, int> m_em_iYieldValuesTimes100;
-	EnumMapDefault<YieldTypes, int, -1> m_em_iBestWorkedYieldPlots;
-	EnumMapDefault<YieldTypes, int, -1> m_em_iBestUnworkedYieldPlots;
+	EnumMap<YieldTypes, int, -1> m_em_iBestWorkedYieldPlots;
+	EnumMap<YieldTypes, int, -1> m_em_iBestUnworkedYieldPlots;
 	
 	int m_iUpgradeUnitsCacheTurn;
 	int m_iUpgradeUnitsCachedExpThreshold;
@@ -517,8 +517,8 @@ protected:
 	EnumMap<UnitClassTypes, int> m_em_iUnitClassWeights;
 	EnumMap<UnitCombatTypes, int> m_em_iUnitCombatWeights;
 	EnumMap<EmotionTypes, int> m_em_iEmotions;
-	EnumMapDefault<StrategyTypes, int, -1> m_em_iStrategyStartedTurn;
-	EnumMapDefault<StrategyTypes, int, -1> m_em_iStrategyData;
+	EnumMap<StrategyTypes, int, -1> m_em_iStrategyStartedTurn;
+	EnumMap<StrategyTypes, int, -1> m_em_iStrategyData;
 
 	mutable EnumMap<PlayerTypes, int> m_em_iCloseBordersAttitudeCache;
 	mutable EnumMap<PlayerTypes, int> m_em_iStolenPlotsAttitudeCache;
@@ -526,8 +526,8 @@ protected:
 
 	EnumMap<PlayerTypes, bool> m_em_bFirstContact;
 
-	EnumMap2D<PlayerTypes, ContactTypes, int> m_em_iContactTimer;
-	EnumMap2D<PlayerTypes, MemoryTypes, int> m_em_iMemoryCount;
+	EnumMap<PlayerTypes, EnumMap<ContactTypes, int> > m_em_iContactTimer;
+	EnumMap<PlayerTypes, EnumMap<MemoryTypes , int> > m_em_iMemoryCount;
 	
 	std::vector<int> m_aiAICitySites;
 	

@@ -9376,7 +9376,7 @@ int CvPlayer::getImprovementYieldChange(ImprovementTypes eIndex1, YieldTypes eIn
 	FAssertMsg(eIndex1 < GC.getNumImprovementInfos(), "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_YIELD_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
-	return m_em_iImprovementYieldChange.get(eIndex1, eIndex2);
+	return m_em_iImprovementYieldChange[eIndex1].get(eIndex2);
 }
 
 
@@ -9389,7 +9389,7 @@ void CvPlayer::changeImprovementYieldChange(ImprovementTypes eIndex1, YieldTypes
 
 	if (iChange != 0)
 	{
-		m_em_iImprovementYieldChange.add(eIndex1, eIndex2, iChange);
+		m_em_iImprovementYieldChange[eIndex1].add(eIndex2, iChange);
 		FAssert(getImprovementYieldChange(eIndex1, eIndex2) >= 0);
 
 		updateYield();
@@ -9402,7 +9402,7 @@ int CvPlayer::getBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTyp
 	FAssert(eBuildingClass < GC.getNumBuildingClassInfos());
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_em_iBuildingYieldChange.get(eBuildingClass, eYield);
+	return m_em_iBuildingYieldChange[eBuildingClass].get(eYield);
 }
 
 void CvPlayer::changeBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield, int iChange)
@@ -9414,7 +9414,7 @@ void CvPlayer::changeBuildingYieldChange(BuildingClassTypes eBuildingClass, Yiel
 
 	if (iChange != 0)
 	{
-		m_em_iBuildingYieldChange.add(eBuildingClass, eYield, iChange);
+		m_em_iBuildingYieldChange[eBuildingClass].add(eYield, iChange);
 		FAssert(getBuildingYieldChange(eBuildingClass, eYield) >= 0);
 
 		updateYield();
@@ -19685,18 +19685,8 @@ bool CvPlayer::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, i
 		calculatedChance = calculatedChance * ki_modifier / 100;
 	}
 
-	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
-	{
-		TraitTypes eTrait = (TraitTypes) iTrait;
-		if (eTrait != NO_TRAIT)
-		{
-			if (hasTrait(eTrait))
-			{
-				calculatedChance *= GC.getTraitInfo(eTrait).getLearningByDoingModifier() + 100;
-				calculatedChance /= 100;
-			}
-		}
-	}
+	calculatedChance *= CivEffect()->getLearningByDoingModifier() / 100; // CivEffects - Nightinggale
+
 								//Schmiddie, added LbD modifier for Sophisticated Trait ENDE
 
 	//ray Multiplayer Random Fix

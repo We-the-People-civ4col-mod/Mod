@@ -20,7 +20,7 @@ bool isHardcodedArray(JITarrayTypes eType)
 	case JIT_ARRAY_GAME_OPTION:
 	case JIT_ARRAY_MEMORY:
 	case JIT_ARRAY_PLAYER_OPTION:
-	case JIT_ARRAY_UNIT_AI:
+	case JIT_ARRAY_UNITAI:
 		return true;
 	}
 	return false;
@@ -31,21 +31,21 @@ int getArrayLength(JITarrayTypes eType)
 	switch (eType)
 	{
 	case JIT_ARRAY_ACHIEVE:            return NUM_ACHIEVE_TYPES;
-	case JIT_ARRAY_ART_STYLE:          return GC.getNumArtStyleTypes();
+	case JIT_ARRAY_ARTSTYLE:           return GC.getNumArtStyleTypes();
 	case JIT_ARRAY_BONUS:              return GC.getNumBonusInfos();
 	case JIT_ARRAY_BUILD:              return GC.getNumBuildInfos();
 	case JIT_ARRAY_BUILDING:           return GC.getNumBuildingInfos();
-	case JIT_ARRAY_BUILDING_CLASS:     return GC.getNumBuildingClassInfos();
+	case JIT_ARRAY_BUILDINGCLASS:      return GC.getNumBuildingClassInfos();
 	case JIT_ARRAY_BUILDING_SPECIAL:   return GC.getNumSpecialBuildingInfos();
 	case JIT_ARRAY_CONTACT:            return NUM_CONTACT_TYPES;
 	case JIT_ARRAY_CIV_EFFECT:         return NUM_CIV_EFFECT_TYPES;
 	case JIT_ARRAY_CIVIC:              return GC.getNumCivicInfos();
-	case JIT_ARRAY_CIVIC_OPTION:       return GC.getNumCivicOptionInfos();
+	case JIT_ARRAY_CIVICOPTION:        return GC.getNumCivicOptionInfos();
 	case JIT_ARRAY_CIVILIZATION:       return GC.getNumCivilizationInfos();
 	case JIT_ARRAY_CLIMATE:            return NUM_CLIMATE_TYPES;
 	case JIT_ARRAY_COLOR:              return GC.getNumColorInfos();
 	case JIT_ARRAY_CULTURE:            return GC.getNumCultureLevelInfos();
-	case JIT_ARRAY_DIPLO:              return GC.getNumDiplomacyInfos();
+	case JIT_ARRAY_DIPLOMACY:          return GC.getNumDiplomacyInfos();
 	case JIT_ARRAY_DOMAIN:             return NUM_DOMAIN_TYPES;
 	case JIT_ARRAY_ERA:                return GC.getNumEraInfos();
 	case JIT_ARRAY_EMOTION:            return NUM_EMOTION_TYPES;
@@ -64,7 +64,7 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_HURRY:              return GC.getNumHurryInfos();
 	case JIT_ARRAY_IMPROVEMENT:        return GC.getNumImprovementInfos();
 	case JIT_ARRAY_INVISIBLE:          return NUM_INVISIBLE_TYPES;
-	case JIT_ARRAY_LEADER_HEAD:        return GC.getNumLeaderHeadInfos();
+	case JIT_ARRAY_LEADER:             return GC.getNumLeaderHeadInfos();
 	case JIT_ARRAY_MEMORY:             return NUM_MEMORY_TYPES;
 	case JIT_ARRAY_PLAYER_COLOR:       return GC.getNumPlayerColorInfos();
 	case JIT_ARRAY_PLAYER_OPTION:      return NUM_PLAYEROPTION_TYPES;
@@ -77,9 +77,9 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_TRADE_SCREEN:       return NUM_TRADESCREEN_TYPES;
 	case JIT_ARRAY_TRAIT:              return GC.getNumTraitInfos();
 	case JIT_ARRAY_UNIT:               return GC.getNumUnitInfos();
-	case JIT_ARRAY_UNIT_AI:            return NUM_UNITAI_TYPES;
-	case JIT_ARRAY_UNIT_CLASS:         return GC.getNumUnitClassInfos();
-	case JIT_ARRAY_UNIT_COMBAT:        return GC.getNumUnitCombatInfos();
+	case JIT_ARRAY_UNITAI:             return NUM_UNITAI_TYPES;
+	case JIT_ARRAY_UNITCLASS:          return GC.getNumUnitClassInfos();
+	case JIT_ARRAY_UNITCOMBAT:         return GC.getNumUnitCombatInfos();
 	case JIT_ARRAY_UNIT_SPECIAL:       return GC.getNumSpecialUnitInfos();
 	case JIT_ARRAY_VICTORY:            return GC.getNumVictoryInfos();
 	case JIT_ARRAY_WORLD_SIZE:         return NUM_WORLDSIZE_TYPES;
@@ -104,16 +104,16 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	case JIT_ARRAY_BONUS:              return &GC.getBonusInfo((BonusTypes)iIndex);
 	case JIT_ARRAY_BUILD:              return &GC.getBuildInfo((BuildTypes)iIndex);
 	case JIT_ARRAY_BUILDING:           return &GC.getBuildingInfo((BuildingTypes)iIndex);
-	case JIT_ARRAY_BUILDING_CLASS:     return &GC.getBuildingClassInfo((BuildingClassTypes)iIndex);
+	case JIT_ARRAY_BUILDINGCLASS:      return &GC.getBuildingClassInfo((BuildingClassTypes)iIndex);
 	case JIT_ARRAY_BUILDING_SPECIAL:   return &GC.getSpecialBuildingInfo((SpecialBuildingTypes)iIndex);
 	case JIT_ARRAY_CIV_EFFECT:         return &GC.getCivEffectInfo(static_cast<CivEffectTypes>(iIndex));
 	case JIT_ARRAY_CIVIC:              return &GC.getCivicInfo((CivicTypes)iIndex);
-	case JIT_ARRAY_CIVIC_OPTION:       return &GC.getCivicOptionInfo((CivicOptionTypes)iIndex);
+	case JIT_ARRAY_CIVICOPTION:        return &GC.getCivicOptionInfo((CivicOptionTypes)iIndex);
 	case JIT_ARRAY_CIVILIZATION:       return &GC.getCivilizationInfo((CivilizationTypes)iIndex);
 	case JIT_ARRAY_CLIMATE:            return &GC.getClimateInfo((ClimateTypes)iIndex);
 	case JIT_ARRAY_COLOR:              return &GC.getColorInfo((ColorTypes)iIndex);
 	case JIT_ARRAY_CULTURE:            return &GC.getCultureLevelInfo((CultureLevelTypes)iIndex);
-	case JIT_ARRAY_DIPLO:              return &GC.getDiplomacyInfo(iIndex);
+	case JIT_ARRAY_DIPLOMACY:          return &GC.getDiplomacyInfo(iIndex);
 	case JIT_ARRAY_DOMAIN:             return &GC.getDomainInfo((DomainTypes)iIndex);
 	case JIT_ARRAY_ERA:                return &GC.getEraInfo((EraTypes)iIndex);
 	case JIT_ARRAY_EMPHASIZE:          return &GC.getEmphasizeInfo((EmphasizeTypes)iIndex);
@@ -130,7 +130,7 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	case JIT_ARRAY_HURRY:              return &GC.getHurryInfo((HurryTypes)iIndex);
 	case JIT_ARRAY_IMPROVEMENT:        return &GC.getImprovementInfo((ImprovementTypes)iIndex);
 	case JIT_ARRAY_INVISIBLE:          return &GC.getInvisibleInfo((InvisibleTypes)iIndex);
-	case JIT_ARRAY_LEADER_HEAD:        return &GC.getLeaderHeadInfo((LeaderHeadTypes)iIndex);
+	case JIT_ARRAY_LEADER:             return &GC.getLeaderHeadInfo((LeaderHeadTypes)iIndex);
 	case JIT_ARRAY_MEMORY:             return &GC.getMemoryInfo((MemoryTypes)iIndex);
 	case JIT_ARRAY_PLAYER_COLOR:       return &GC.getPlayerColorInfo((PlayerColorTypes)iIndex);
 	case JIT_ARRAY_PLAYER_OPTION:      return &GC.getPlayerOptionInfo((PlayerOptionTypes)iIndex);
@@ -142,9 +142,9 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	case JIT_ARRAY_TRADE_SCREEN:       return &GC.getTradeScreenInfo((TradeScreenTypes)iIndex);
 	case JIT_ARRAY_TRAIT:              return &GC.getTraitInfo((TraitTypes)iIndex);
 	case JIT_ARRAY_UNIT:               return &GC.getUnitInfo((UnitTypes)iIndex);
-	case JIT_ARRAY_UNIT_AI:            return &GC.getUnitAIInfo((UnitAITypes)iIndex);
-	case JIT_ARRAY_UNIT_CLASS:         return &GC.getUnitClassInfo((UnitClassTypes)iIndex);
-	case JIT_ARRAY_UNIT_COMBAT:        return &GC.getUnitCombatInfo((UnitCombatTypes)iIndex);
+	case JIT_ARRAY_UNITAI:             return &GC.getUnitAIInfo((UnitAITypes)iIndex);
+	case JIT_ARRAY_UNITCLASS:          return &GC.getUnitClassInfo((UnitClassTypes)iIndex);
+	case JIT_ARRAY_UNITCOMBAT:         return &GC.getUnitCombatInfo((UnitCombatTypes)iIndex);
 	case JIT_ARRAY_UNIT_SPECIAL:       return &GC.getSpecialUnitInfo((SpecialUnitTypes)iIndex);
 	case JIT_ARRAY_VICTORY:            return &GC.getVictoryInfo((VictoryTypes)iIndex);
 	case JIT_ARRAY_WORLD_SIZE:         return &GC.getWorldInfo((WorldSizeTypes)iIndex);
@@ -163,7 +163,7 @@ static const char* getArrayType(PlotTypes eType)
 	case PLOT_LAND:  return "PLOT_LAND";
 	case PLOT_OCEAN: return "PLOT_OCEAN";
 	}
-	BOOST_STATIC_ASSERT(NUM_PLOT_TYPES == 4);
+	BOOST_STATIC_ASSERT(NUM_PLOT_TYPES == static_cast<PlotTypes>(4));
 	FAssert(false);
 	return "";
 }
@@ -179,7 +179,7 @@ static const char* getArrayType(CivCategoryTypes eType)
 	case CIV_CATEGORY_CHURCH:    return "CIV_CATEGORY_CHURCH";
 	case CIV_CATEGORY_NOT_SET:   return "CIV_CATEGORY_NOT_SET";
 	}
-	BOOST_STATIC_ASSERT(NUM_CIV_CATEGORY_TYPES == 6);
+	BOOST_STATIC_ASSERT(NUM_CIV_CATEGORY_TYPES == static_cast<CivCategoryTypes>(6));
 	FAssert(false);
 	return "";
 }
@@ -196,7 +196,7 @@ const char* getArrayType(JITarrayTypes eType, int iIndex)
 
 	switch (eType)
 	{
-	case JIT_ARRAY_ART_STYLE:          return GC.getArtStyleTypes((ArtStyleTypes)iIndex); // use the actual art style string for type
+	case JIT_ARRAY_ARTSTYLE:           return GC.getArtStyleTypes((ArtStyleTypes)iIndex); // use the actual art style string for type
 	case JIT_ARRAY_PLOT_TYPE:          return getArrayType(static_cast<PlotTypes>(iIndex));
 	case JIT_ARRAY_CIV_CATEGORY:       return getArrayType(static_cast<CivCategoryTypes>(iIndex));
 	}
@@ -226,20 +226,20 @@ const char* getArrayName(JITarrayTypes eType)
 	switch (eBaseType)
 	{
 	case JIT_ARRAY_ACHIEVE:            return "Achieve";
-	case JIT_ARRAY_ART_STYLE:          return "ArtStyle";
+	case JIT_ARRAY_ARTSTYLE:           return "ArtStyle";
 	case JIT_ARRAY_BONUS:              return "Bonus";
 	case JIT_ARRAY_BUILD:              return "Build";
 	case JIT_ARRAY_BUILDING:           return "Building";
-	case JIT_ARRAY_BUILDING_CLASS:     return "BuildingClass";
+	case JIT_ARRAY_BUILDINGCLASS:      return "BuildingClass";
 	case JIT_ARRAY_BUILDING_SPECIAL:   return "SpecialBuilding";
 	case JIT_ARRAY_CIV_EFFECT:         return "CivEffect";
 	case JIT_ARRAY_CIVIC:              return "Civic";
-	case JIT_ARRAY_CIVIC_OPTION:       return "CivicOption";
+	case JIT_ARRAY_CIVICOPTION:        return "CivicOption";
 	case JIT_ARRAY_CIVILIZATION:       return "Civilization";
 	case JIT_ARRAY_CLIMATE:            return "Cllimate";
 	case JIT_ARRAY_COLOR:              return "Color";
 	case JIT_ARRAY_CULTURE:            return "Culture";
-	case JIT_ARRAY_DIPLO:              return "Diplo";
+	case JIT_ARRAY_DIPLOMACY:          return "Diplo";
 	case JIT_ARRAY_ERA:                return "Era";
 	case JIT_ARRAY_EMPHASIZE:          return "Emphasize";
 	case JIT_ARRAY_EUROPE:             return "Europe";
@@ -255,7 +255,7 @@ const char* getArrayName(JITarrayTypes eType)
 	case JIT_ARRAY_HURRY:              return "Hurry";
 	case JIT_ARRAY_IMPROVEMENT:        return "Improvement";
 	case JIT_ARRAY_INVISIBLE:          return "Invisible";
-	case JIT_ARRAY_LEADER_HEAD:        return "LeaderHead";
+	case JIT_ARRAY_LEADER:             return "LeaderHead";
 	case JIT_ARRAY_MEMORY:             return "Memory";
 	case JIT_ARRAY_PLAYER_COLOR:       return "PlayerColor";
 	case JIT_ARRAY_PLAYER_OPTION:      return "PlayerOption";
@@ -267,9 +267,9 @@ const char* getArrayName(JITarrayTypes eType)
 	case JIT_ARRAY_TRADE_SCREEN:       return "TradeScreen";
 	case JIT_ARRAY_TRAIT:              return "Trait";
 	case JIT_ARRAY_UNIT:               return "Unit";
-	case JIT_ARRAY_UNIT_AI:            return "UnitAI";
-	case JIT_ARRAY_UNIT_CLASS:         return "UnitClass";
-	case JIT_ARRAY_UNIT_COMBAT:        return "UnitCombat";
+	case JIT_ARRAY_UNITAI:             return "UnitAI";
+	case JIT_ARRAY_UNITCLASS:          return "UnitClass";
+	case JIT_ARRAY_UNITCOMBAT:         return "UnitCombat";
 	case JIT_ARRAY_UNIT_SPECIAL:       return "SpecialUnit";
 	case JIT_ARRAY_VICTORY:            return "Victory";
 	case JIT_ARRAY_WORLD_SIZE:         return "WorldSize";
@@ -298,20 +298,20 @@ const char* getArrayPrefix(JITarrayTypes eType)
 	switch (eBaseType)
 	{
 	case JIT_ARRAY_ACHIEVE:            return "ACHIEVE_";
-	case JIT_ARRAY_ART_STYLE:          return "ARTSTYLE_";
+	case JIT_ARRAY_ARTSTYLE:           return "ARTSTYLE_";
 	case JIT_ARRAY_BONUS:              return "BONUS_";
 	case JIT_ARRAY_BUILD:              return "BUILD_";
 	case JIT_ARRAY_BUILDING:           return "BUILDING_";
-	case JIT_ARRAY_BUILDING_CLASS:     return "BUILDINGCLASS_";
+	case JIT_ARRAY_BUILDINGCLASS:      return "BUILDINGCLASS_";
 	case JIT_ARRAY_BUILDING_SPECIAL:   return "SPECIALBUILDING_";
 	case JIT_ARRAY_CIVIC:              return "CIVIC_";
-	case JIT_ARRAY_CIVIC_OPTION:       return "CIVICOPTION_";
+	case JIT_ARRAY_CIVICOPTION:        return "CIVICOPTION_";
 	case JIT_ARRAY_CIVILIZATION:       return "CIVILIZATION_";
 	case JIT_ARRAY_CIV_EFFECT:         return "CIV_EFFECT_";
 	case JIT_ARRAY_CLIMATE:            return "CLIMATE_";
 	case JIT_ARRAY_COLOR:              return "COLOR_";
 	case JIT_ARRAY_CULTURE:            return "CULTURELEVEL_";
-	case JIT_ARRAY_DIPLO:              return ""; // intentionally left blank. Types starts with USER_ or AI_ prefixes
+	case JIT_ARRAY_DIPLOMACY:          return ""; // intentionally left blank. Types starts with USER_ or AI_ prefixes
 	case JIT_ARRAY_ERA:                return "ERA_";
 	case JIT_ARRAY_EMPHASIZE:          return "EMPHASIZE_";
 	case JIT_ARRAY_EUROPE:             return "EUROPE_";
@@ -327,7 +327,7 @@ const char* getArrayPrefix(JITarrayTypes eType)
 	case JIT_ARRAY_HURRY:              return "HURRY_";
 	case JIT_ARRAY_IMPROVEMENT:        return "IMPROVEMENT_";
 	case JIT_ARRAY_INVISIBLE:          return "INVISIBLE_";
-	case JIT_ARRAY_LEADER_HEAD:        return "LEADER_";
+	case JIT_ARRAY_LEADER:             return "LEADER_";
 	case JIT_ARRAY_MEMORY:             return "MEMORY_";
 	case JIT_ARRAY_PLAYER_COLOR:       return "PLAYERCOLOR_";
 	case JIT_ARRAY_PLAYER_OPTION:      return "PLAYEROPTION_";
@@ -339,9 +339,9 @@ const char* getArrayPrefix(JITarrayTypes eType)
 	case JIT_ARRAY_TRADE_SCREEN:       return "TRADE_SCREEN_";
 	case JIT_ARRAY_TRAIT:              return "TRAIT_";
 	case JIT_ARRAY_UNIT:               return "UNIT_";
-	case JIT_ARRAY_UNIT_AI:            return "UNITAI_";
-	case JIT_ARRAY_UNIT_CLASS:         return "UNITCLASS_";
-	case JIT_ARRAY_UNIT_COMBAT:        return "UNITCOMBAT_";
+	case JIT_ARRAY_UNITAI:             return "UNITAI_";
+	case JIT_ARRAY_UNITCLASS:          return "UNITCLASS_";
+	case JIT_ARRAY_UNITCOMBAT:         return "UNITCOMBAT_";
 	case JIT_ARRAY_UNIT_SPECIAL:       return "SPECIALUNIT_";
 	case JIT_ARRAY_VICTORY:            return "VICTORY_";
 	case JIT_ARRAY_WORLD_SIZE:         return "WORLDSIZE_";

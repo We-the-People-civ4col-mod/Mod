@@ -575,6 +575,7 @@ void CvGlobals::setCityCatchmentRadius(int iRadius)
 		UserSettings settings;
 		setCityCatchmentRadius(settings.getColonyRadius());
 	}
+	LAST_CITY_PLOT = NUM_CITY_PLOTS - static_cast<CityPlotTypes>(1);
 #endif
 }
 

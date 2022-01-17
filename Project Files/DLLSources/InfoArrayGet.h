@@ -28,7 +28,7 @@ inline BuildingTypes get(BuildingTypes eType, int iIndex, int iTokenIndex = 0) c
 
 inline BuildingClassTypes _getBuildingClass(int iIndex, int iTokenIndex = 0) const
 {
-	return static_cast<BuildingClassTypes>(getWithType(JIT_ARRAY_BUILDING_CLASS, iIndex, iTokenIndex));
+	return static_cast<BuildingClassTypes>(getWithType(JIT_ARRAY_BUILDINGCLASS, iIndex, iTokenIndex));
 }
 
 inline BuildingClassTypes _get(BuildingClassTypes eType, int iIndex, int iTokenIndex = 0) const
@@ -70,7 +70,7 @@ inline CivicTypes _get(CivicTypes eType, int iIndex, int iTokenIndex = 0) const
 
 inline CivicOptionTypes _getCivicOption(int iIndex, int iTokenIndex = 0) const
 {
-	return static_cast<CivicOptionTypes>(getWithType(JIT_ARRAY_CIVIC_OPTION, iIndex, iTokenIndex));
+	return static_cast<CivicOptionTypes>(getWithType(JIT_ARRAY_CIVICOPTION, iIndex, iTokenIndex));
 }
 
 inline CivicOptionTypes _get(CivicOptionTypes eType, int iIndex, int iTokenIndex = 0) const
@@ -160,7 +160,7 @@ inline ImprovementTypes _get(ImprovementTypes eType, int iIndex, int iTokenIndex
 
 inline LeaderHeadTypes _getLeaderHead(int iIndex, int iTokenIndex = 0) const
 {
-	return static_cast<LeaderHeadTypes>(getWithType(JIT_ARRAY_LEADER_HEAD, iIndex, iTokenIndex));
+	return static_cast<LeaderHeadTypes>(getWithType(JIT_ARRAY_LEADER, iIndex, iTokenIndex));
 }
 
 inline LeaderHeadTypes _get(LeaderHeadTypes eType, int iIndex, int iTokenIndex = 0) const
@@ -230,7 +230,7 @@ inline UnitTypes _get(UnitTypes eType, int iIndex, int iTokenIndex = 0) const
 
 inline UnitClassTypes _getUnitClass(int iIndex, int iTokenIndex = 0) const
 {
-	return static_cast<UnitClassTypes>(getWithType(JIT_ARRAY_UNIT_CLASS, iIndex, iTokenIndex));
+	return static_cast<UnitClassTypes>(getWithType(JIT_ARRAY_UNITCLASS, iIndex, iTokenIndex));
 }
 
 inline UnitClassTypes _get(UnitClassTypes eType, int iIndex, int iTokenIndex = 0) const
@@ -240,7 +240,7 @@ inline UnitClassTypes _get(UnitClassTypes eType, int iIndex, int iTokenIndex = 0
 
 inline UnitCombatTypes _getUnitCombat(int iIndex, int iTokenIndex = 0) const
 {
-	return static_cast<UnitCombatTypes>(getWithType(JIT_ARRAY_UNIT_COMBAT, iIndex, iTokenIndex));
+	return static_cast<UnitCombatTypes>(getWithType(JIT_ARRAY_UNITCOMBAT, iIndex, iTokenIndex));
 }
 
 inline UnitCombatTypes _get(UnitCombatTypes eType, int iIndex, int iTokenIndex = 0) const

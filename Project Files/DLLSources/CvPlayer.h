@@ -1043,7 +1043,7 @@ protected:
 	EnumMap<YieldTypes, int> m_em_iTaxYieldModifierCount;
 	EnumMap<YieldTypes, int> m_em_iYieldScoreTotal; // R&R, vetiarvind, Price dependent tax rate change
 
-	EnumMapDefault<YieldTypes, bool, true> m_em_bYieldEuropeTradable;
+	EnumMap<YieldTypes, bool, true> m_em_bYieldEuropeTradable;
 	EnumMap<FeatTypes, bool> m_em_bFeatAccomplished;
 	EnumMap<PlayerOptionTypes, bool> m_em_bOptions;
 
@@ -1063,7 +1063,7 @@ protected:
 	EnumMap<HurryTypes, int> m_em_iHurryCount;
 	EnumMap<SpecialBuildingTypes, int> m_em_iSpecialBuildingNotRequiredCount;
 	EnumMap<PlayerTypes, int> m_em_iMissionaryPoints;
-	EnumMapDefault<PlayerTypes, int, 100> m_em_iMissionaryThresholdMultiplier;
+	EnumMap<PlayerTypes, int, 100> m_em_iMissionaryThresholdMultiplier;
 	EnumMap<ProfessionTypes, int> m_em_iProfessionEquipmentModifier;
 	EnumMap<TraitTypes, int> m_em_iTraitCount;
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
@@ -1074,8 +1074,8 @@ protected:
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	std::vector<EventTriggerTypes> m_triggersFired;
 	EnumMap<CivicOptionTypes, CivicTypes> m_em_eCivics;
-	EnumMap2D<ImprovementTypes, YieldTypes, int> m_em_iImprovementYieldChange;
-	EnumMap2D<BuildingClassTypes, YieldTypes, int> m_em_iBuildingYieldChange;
+	EnumMap<ImprovementTypes  , EnumMap<YieldTypes, int> > m_em_iImprovementYieldChange;
+	EnumMap<BuildingClassTypes, EnumMap<YieldTypes, int> > m_em_iBuildingYieldChange;
 	CLinkList<int> m_groupCycle;
 	std::vector<CvWString> m_aszCityNames;
 	FFreeListTrashArray<CvCityAI> m_cities;

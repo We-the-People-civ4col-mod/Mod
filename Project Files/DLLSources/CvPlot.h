@@ -250,7 +250,7 @@ public:
 
 	//WTP, Nightinggale - Terrain locator - start
 	template <typename T>
-	bool hasNearbyPlotWith(const InfoArray<T>& kInfo, int iRange = 1, bool bEmptyReturnVal = true) const;
+	bool hasNearbyPlotWith(const InfoArray1<T>& kInfo, int iRange = 1, bool bEmptyReturnVal = true) const;
 
 	// function to avoid using an InfoArray, though it only works when searching for a single value
 	// use InfoArray if searching for multiple as it will be faster
@@ -589,8 +589,8 @@ protected:
 
 	CvPlotBuilder* m_pPlotBuilder;		// builds bonuses and improvements
 
-	EnumMap2D<PlayerTypes, CultureLevelTypes, char> m_em2_iCultureRangeCities;
-	EnumMap2D<TeamTypes, InvisibleTypes, short> m_em2_iInvisibleVisibilityCount;
+	EnumMap<PlayerTypes, EnumMap<CultureLevelTypes, char > > m_em2_iCultureRangeCities;
+	EnumMap<TeamTypes  , EnumMap<InvisibleTypes   , short> > m_em2_iInvisibleVisibilityCount;
 
 	CLinkList<IDInfo> m_units;
 

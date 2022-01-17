@@ -207,8 +207,8 @@ protected:
 	EnumMap<YieldTypes,int> m_em_iEmphasizeYieldCount;
 	bool m_bForceEmphasizeCulture;
 
-	EnumMapInt<CityPlotTypes, int> m_em_iBestBuildValue;
-	EnumMapInt<CityPlotTypes,BuildTypes> m_em_eBestBuild;
+	EnumMap<CityPlotTypes, int> m_em_iBestBuildValue;
+	EnumMap<CityPlotTypes,BuildTypes> m_em_eBestBuild;
 
 	EnumMap<EmphasizeTypes,bool> m_em_bEmphasize;
 
