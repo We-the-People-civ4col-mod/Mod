@@ -803,7 +803,7 @@
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Stone/Stone.nif</NIF>
-            <KFM>Art/Terrain/Resources/Stone/stone.kfm</KFM>
+            <KFM/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,5,13</Button>
             <FontButtonIndex>7</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
@@ -913,7 +913,7 @@
             <fScale>1.8</fScale>
             <fInterfaceScale>1.3</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Hard_Wood/olive_press.nif</NIF>
-            <KFM>Art/Terrain/Resources/Hard_Wood/olive_press.kfm</KFM>
+            <KFM/>
             <Button>Art/Interface/Buttons/Hard_Wood_Button.dds</Button>
             <FontButtonIndex>97</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
