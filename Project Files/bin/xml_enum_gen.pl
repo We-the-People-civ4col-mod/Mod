@@ -152,10 +152,11 @@ sub processFile
 	unless ($isHardcoded)
 	{
 		print $output "#ifndef HARDCODE_XML_VALUES\n";
-		print $output "extern " . $enum . " NUM_" . $TYPE . "_TYPES;\n";
+		print $output "extern const " . $enum . "& NUM_" . $TYPE . "_TYPES;\n";
 		print $output "#endif\n\n";
-		print $output_declare  $enum . " NUM_" . $TYPE . "_TYPES;\n";
-		print $output_init "NUM_" . $TYPE . "_TYPES = (" . $enum . ")" . getNumFunction($basename) . ";\n";
+		print $output_declare  $enum . " NUM_" . $TYPE . "_TYPES_NON_CONST;\n";
+		print $output_declare  "const " . $enum . "& NUM_" . $TYPE . "_TYPES = NUM_" . $TYPE . "_TYPES_NON_CONST;\n";
+		print $output_init "NUM_" . $TYPE . "_TYPES_NON_CONST = (" . $enum . ")" . getNumFunction($basename) . ";\n";
 	}
 	print $output "#define NUM_" . substr($enum, 0, -5) . "_TYPES NUM_" . $TYPE . "_TYPES\n\n"
 }
