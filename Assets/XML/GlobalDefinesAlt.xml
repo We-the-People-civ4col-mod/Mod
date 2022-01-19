@@ -1295,4 +1295,8 @@
 		<DefineName>CITY_STARVATION_NO_DONATION_OCCUPATION_TIMER</DefineName>
 		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>PERCENT_MODIFIER_GAMEOPTION_UNREST_TURNS_DEPEND_ON_CITY_SIZE</DefineName>
+		<iDefineIntVal>200</iDefineIntVal>
+	</Define>
 </Civ4Defines>

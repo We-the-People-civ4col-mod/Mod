@@ -2,7 +2,7 @@
 
 <GameFontIDs xmlns="x-schema:LanguageSchema.xml">
 	<Addresses>
-		<CustomSymbol>8658</CustomSymbol>
+		<CustomSymbol>8683</CustomSymbol>
 	</Addresses>
 	<Offsets>
 		<Bonus>125</Bonus>

@@ -1298,7 +1298,14 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 
 		if (iTeamCulturePercent < GC.getDefineINT("OCCUPATION_CULTURE_PERCENT_THRESHOLD"))
 		{
-			pNewCity->changeOccupationTimer(((GC.getDefineINT("BASE_OCCUPATION_TURNS") + ((pNewCity->getPopulation() * GC.getDefineINT("OCCUPATION_TURNS_POPULATION_PERCENT")) / 100)) * (100 - iTeamCulturePercent)) / 100);
+			// WTP, ray, Game Option Unrest Duration depends stronger on City size - START
+			int iGameOptionModiferForCitySize = 100;
+			if (GC.getGame().isOption(GAMEOPTION_UNREST_TURNS_DEPEND_ON_CITY_SIZE))
+			{
+				iGameOptionModiferForCitySize = (iGameOptionModiferForCitySize * GC.getDefineINT("PERCENT_MODIFIER_GAMEOPTION_UNREST_TURNS_DEPEND_ON_CITY_SIZE")) / 100;
+			}
+			pNewCity->changeOccupationTimer(((GC.getDefineINT("BASE_OCCUPATION_TURNS") + ((pNewCity->getPopulation() * GC.getDefineINT("OCCUPATION_TURNS_POPULATION_PERCENT")* iGameOptionModiferForCitySize / 100) / 100)) * (100 - iTeamCulturePercent)) / 100);
+			// WTP, ray, Game Option Unrest Duration depends stronger on City size - END
 		}
 
 		GC.getMapINLINE().verifyUnitValidPlot();
