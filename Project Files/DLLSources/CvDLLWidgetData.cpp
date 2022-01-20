@@ -2808,7 +2808,6 @@ void CvDLLWidgetData::parseCityHarbourSystemHelp(CvWidgetDataStruct &widgetDataS
 		if (iCityHarborSpaceUsed > 0)
 		{
 			szBuffer.append(SEPARATOR);
-			szBuffer.append(NEWLINE);
 			CvWString szDesc;
 			CvPlot* pPlot = pHeadSelectedCity->plot();
 			for (int i = 0; i < pPlot->getNumUnits(); ++i)
@@ -2840,28 +2839,24 @@ void CvDLLWidgetData::parseCityBarracksSystemHelp(CvWidgetDataStruct &widgetData
 		if (iCityBarracksSpaceUsed < (iCityBarracksSpaceMax/2))
 		{
 			szBuffer.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_STILL_FREE", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getSymbolID(BARRACKS_CHAR)));
-			szBuffer.append(NEWLINE);
 		}
 
 		// more than 50% of City Harbor Space is used - not yet totally full though
 		if (iCityBarracksSpaceUsed >= (iCityBarracksSpaceMax/2) && iCityBarracksSpaceUsed < iCityBarracksSpaceMax)
 		{
 			szBuffer.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_ALMOST_FULL", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getSymbolID(BARRACKS_CHAR)));
-			szBuffer.append(NEWLINE);
 		}
 
 		// City Harbor Space is totally full
 		if (iCityBarracksSpaceUsed >= iCityBarracksSpaceMax)
 		{
 			szBuffer.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_TOTALLY_FULL", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getSymbolID(NO_BARRACKS_CHAR)));
-			szBuffer.append(NEWLINE);
 		}
 
 		// improving Widget Display
 		if (iCityBarracksSpaceUsed > 0)
 		{
 			szBuffer.append(SEPARATOR);
-			szBuffer.append(NEWLINE);
 			CvWString szDesc;
 			CvPlot* pPlot = pHeadSelectedCity->plot();
 			for (int i = 0; i < pPlot->getNumUnits(); ++i)
