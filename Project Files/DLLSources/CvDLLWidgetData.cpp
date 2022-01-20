@@ -2803,6 +2803,28 @@ void CvDLLWidgetData::parseCityHarbourSystemHelp(CvWidgetDataStruct &widgetDataS
 		{
 			szBuffer.append(gDLL->getText("TXT_KEY_CITY_HARBOR_TOTALLY_FULL", iCityHarborSpaceUsed, iCityHarborSpaceMax, GC.getSymbolID(NO_ANCHOR_CHAR)));
 		}
+
+		// improving Widget Display
+		if (iCityHarborSpaceUsed > 0)
+		{
+			szBuffer.append(SEPARATOR);
+			szBuffer.append(NEWLINE);
+			CvWString szDesc;
+			CvPlot* pPlot = pHeadSelectedCity->plot();
+			for (int i = 0; i < pPlot->getNumUnits(); ++i)
+			{
+				CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);
+				if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_SEA)
+				{
+					int iCityHarbourSpaceUsedSingleUnit = pLoopUnit->getUnitInfo().getHarbourSpaceNeeded();
+					if (iCityHarbourSpaceUsedSingleUnit > 0)
+					{
+						szDesc = CvWString::format(L"\n %c%s %d%c", GC.getSymbolID(BULLET_CHAR), pLoopUnit->getUnitInfo().getDescription(), iCityHarbourSpaceUsedSingleUnit, GC.getSymbolID(ANCHOR_CHAR));
+						szBuffer.append(szDesc);
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -2818,22 +2840,64 @@ void CvDLLWidgetData::parseCityBarracksSystemHelp(CvWidgetDataStruct &widgetData
 		if (iCityBarracksSpaceUsed < (iCityBarracksSpaceMax/2))
 		{
 			szBuffer.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_STILL_FREE", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getSymbolID(BARRACKS_CHAR)));
+			szBuffer.append(NEWLINE);
 		}
 
 		// more than 50% of City Harbor Space is used - not yet totally full though
 		if (iCityBarracksSpaceUsed >= (iCityBarracksSpaceMax/2) && iCityBarracksSpaceUsed < iCityBarracksSpaceMax)
 		{
 			szBuffer.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_ALMOST_FULL", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getSymbolID(BARRACKS_CHAR)));
+			szBuffer.append(NEWLINE);
 		}
 
 		// City Harbor Space is totally full
 		if (iCityBarracksSpaceUsed >= iCityBarracksSpaceMax)
 		{
 			szBuffer.append(gDLL->getText("TXT_KEY_CITY_BARRACKS_TOTALLY_FULL", iCityBarracksSpaceUsed, iCityBarracksSpaceMax, GC.getSymbolID(NO_BARRACKS_CHAR)));
+			szBuffer.append(NEWLINE);
+		}
+
+		// improving Widget Display
+		if (iCityBarracksSpaceUsed > 0)
+		{
+			szBuffer.append(SEPARATOR);
+			szBuffer.append(NEWLINE);
+			CvWString szDesc;
+			CvPlot* pPlot = pHeadSelectedCity->plot();
+			for (int i = 0; i < pPlot->getNumUnits(); ++i)
+			{
+				CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);
+				// we only count Land Units that can attack, civil Units are not considered
+				// we also not consider Units loaded on Ships
+				// we also not consider Units of other Nations
+				if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack() && pLoopUnit->getTransportUnit() == NULL && pLoopUnit->getOwnerINLINE() == pHeadSelectedCity->getOwnerINLINE())
+				{
+					int iCityBarracksSpaceUsedSingleUnit = pLoopUnit->getUnitInfo().getBarracksSpaceNeeded();
+					// In case the Unit has a Profession
+					if (pLoopUnit->getProfession() != NO_PROFESSION)
+					{
+						CvProfessionInfo& kProfessionInfo = GC.getProfessionInfo(pLoopUnit->getProfession());
+						iCityBarracksSpaceUsedSingleUnit += kProfessionInfo.getBarracksSpaceNeededChange();			
+						if (iCityBarracksSpaceUsedSingleUnit > 0)
+						{
+							szDesc = CvWString::format(L"\n %c%s %d%c", GC.getSymbolID(BULLET_CHAR), kProfessionInfo.getDescription(), iCityBarracksSpaceUsedSingleUnit, GC.getSymbolID(BARRACKS_CHAR));
+							szBuffer.append(szDesc);
+						}
+					}
+					// otherwise
+					else
+					{
+						if (iCityBarracksSpaceUsedSingleUnit > 0)
+						{
+							szDesc = CvWString::format(L"\n %c%s %d%c", GC.getSymbolID(BULLET_CHAR), pLoopUnit->getUnitInfo().getDescription(), iCityBarracksSpaceUsedSingleUnit, GC.getSymbolID(BARRACKS_CHAR));
+							szBuffer.append(szDesc);
+						}
+					}
+				}
+			}
 		}
 	}
 }
-
 // WTP, ray, Widgets for Harbour System and Barracks System - END
 
 
