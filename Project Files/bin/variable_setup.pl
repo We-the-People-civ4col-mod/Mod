@@ -348,7 +348,14 @@ sub handleInfoArray
 	$output .= "{\n";
 	$output .= "\tfriend class CyInfoArray;\n";
 	$output .= "public:\n";
-	$output .= "\tint getLength() const\n\t{\n\t\treturn InfoArrayBase::getLength();\n\t}\n" if $id == 1;
+	if ($id == 1)
+	{
+		$output .= "\tint getLength() const\n\t{\n\t\treturn InfoArrayBase::getLength();\n\t}\n";
+		$output .= "\t$type get(int iIndex) const\n";
+		$output .= "\t{\n";
+		$output .= "\t\treturn static_cast<$type>(getInternal(iIndex, $index));\n";
+		$output .= "\t}\n";
+	}
 	$output .= "\t$type get$index(int iIndex) const\n";
 	$output .= "\t{\n";
 	$output .= "\t\treturn static_cast<$type>(getInternal(iIndex, $index));\n";

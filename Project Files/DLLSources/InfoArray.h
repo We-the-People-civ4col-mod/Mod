@@ -105,8 +105,6 @@ public:
 	// adds UnitClass->Unit and BuildingClass->Building conversion. Otherwise the same as without the civinfo argument 
 	int getWithTypeWithConversion(JITarrayTypes eType, int iIndex, int iTokenIndex, const CvCivilizationInfo *pCivInfo) const;
 
-#include "InfoArrayGet.h"
-
 protected:
 	// needed by python interface. Do not use this in the DLL as it lacks type checking
 	int pyGet(int iIndex, int iSubIndex) const {return getInternal(iIndex, iSubIndex);}
@@ -145,7 +143,6 @@ public:
 	// szType is always getType()
 	// sTagName is the root xml tax name of the structure to be read
 	void read(CvXMLLoadUtility* pXML, const char* szType, const char *sTagName);
-	void convertClass(const InfoArrayBase* pArray, const CvCivilizationInfo* pCivInfo = NULL);
 private:
 	void readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vector<short>& aArray, std::vector<short>& aIndex, int iLevel, const char *sTagName, const char* szType);
 };

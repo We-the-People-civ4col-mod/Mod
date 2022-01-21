@@ -395,6 +395,7 @@ public:
 
 	CyInfoArray* getSpecialBuildingTypes() const;
 	CyInfoArray* getStoredYieldTypes() const;
+	CyInfoArray* getDomesticDemandYieldTypes() const;
 
 	int getCivEffectCount(CivEffectTypes eCivEffect) const;
 

@@ -177,19 +177,19 @@ void CvGlobals::postXMLLoad(bool bFirst)
 		
 		// set up consumed yields for fast looping
 		{
-			YieldCargoArray<int> aYields;
+			EnumMap<YieldTypes, int> aYields;
 
 			for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 			{
 				CvBuildingInfo &kBuilding = GC.getBuildingInfo(eBuilding);
-				aYields.addCache(1, kBuilding.getYieldDemands());
+				kBuilding.getYieldDemands().addTo(aYields);
 			}
 			for (UnitTypes eUnit = FIRST_UNIT; eUnit < NUM_UNIT_TYPES; ++eUnit)
 			{
 				CvUnitInfo &kUnit = GC.getUnitInfo(eUnit);
-				aYields.addCache(1, kUnit.getYieldDemands());
+				kUnit.getYieldDemands().addTo(aYields);
 			}
-			m_acUnitYieldDemandTypes.assign(aYields);
+			m_iaDomesticDemandYieldTypes.assignFrom(aYields);
 		}
 
 		for (EventTriggerTypes eTrigger = FIRST_EVENTTRIGGER; eTrigger < NUM_EVENTTRIGGER_TYPES; ++eTrigger)

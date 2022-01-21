@@ -1567,6 +1567,24 @@ CyInfoArray* CyPlayer::getStoredYieldTypes() const
 	return new CyInfoArray(em);
 }
 
+CyInfoArray* CyPlayer::getDomesticDemandYieldTypes() const
+{
+	EnumMap<YieldTypes, bool> em;
+
+	const InfoArray<YieldTypes>& array = GC.getDomesticDemandYieldTypes();
+
+	for (int i = 0; i < array.getLength(); ++i)
+	{
+		const YieldTypes eYield = array.get(i);
+		if (!m_pPlayer || m_pPlayer->CivEffect()->canUseYield(eYield))
+		{
+			em.set(eYield, true);
+		}
+	}
+
+	return new CyInfoArray(em);
+}
+
 // CivEffect
 int CyPlayer::getCivEffectCount(CivEffectTypes eCivEffect) const
 {
