@@ -93,6 +93,9 @@ class DomesticAdvisorTable:
 
 	# add an array telling which columns to add
 	# this will split the page into multiple subpages if needed
+	def addHeaderArray(self, infoArray):
+		self.__addHeaderArrayCustom(infoArray)
+
 	def addHeaderArrayBuildings(self):
 		self.__addHeaderArrayBuildings()
 
@@ -233,6 +236,11 @@ class DomesticAdvisorTable:
 		char = (u" %c" % iChar)
 		self.__addHeaderDirect(iWidth, char)
 
+	def __addHeaderArrayCustom(self, infoArray):
+		self.InfoArray = infoArray
+		iTableWidth = self.iWidth - self.columnWidth[0][0] - self.columnWidth[0][1]
+		self.__addHeaderArray(iTableWidth)
+		
 	def __addHeaderArrayBuildings(self):
 		self.InfoArray = gc.getPlayer(CyGame().getActivePlayer()).getSpecialBuildingTypes()
 		iTableWidth = self.iWidth - self.columnWidth[0][0] - self.columnWidth[0][1]

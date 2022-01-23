@@ -7020,39 +7020,33 @@ void CvCity::doYields()
 	{
 		YieldCargoArray<int> aYields;
 		getYieldDemands(aYields);
-		const YieldTypeArray& kYieldArray = GC.getUnitYieldDemandTypes();
-		for (int i = 0;; ++i)
+		const InfoArray<YieldTypes>& kYieldArray = GC.getDomesticDemandYieldTypes();
+		for (int i = 0; i < kYieldArray.getLength(); ++i)
 		{
-			YieldTypes eYield = kYieldArray.get(i);
-			if (eYield != NO_YIELD)
+			const YieldTypes eYield = kYieldArray.get(i);
+
+			FAssert(validEnumRange(eYield));
+			int iAmount = aYields.get(eYield);
+			if (iAmount > 0 && (getYieldStored(eYield) + aiYields[eYield]) > 0) // R&R, ray, improvment from vetiarvind
 			{
-				FAssert(validEnumRange(eYield));
-				int iAmount = aYields.get(eYield);
-				if (iAmount > 0 && (getYieldStored(eYield)+aiYields[eYield]) > 0) // R&R, ray, improvment from vetiarvind
+				int iAmountForSale = getYieldStored(eYield) + aiYields[eYield];
+				if (iAmount > iAmountForSale)
 				{
-					int iAmountForSale = getYieldStored(eYield) + aiYields[eYield];
-					if (iAmount > iAmountForSale)
-					{
-						iAmount = iAmountForSale;
-					}
-					int iProfit = iAmount * getYieldBuyPrice(eYield);
+					iAmount = iAmountForSale;
+				}
+				int iProfit = iAmount * getYieldBuyPrice(eYield);
 
-					// WTP, ray, Happiness - START 
-					iProfit = iProfit * (100 + iCityHappinessDomesticMarketGoldModifiers) / 100;
-					// WTP, ray, Happiness - END
+				// WTP, ray, Happiness - START 
+				iProfit = iProfit * (100 + iCityHappinessDomesticMarketGoldModifiers) / 100;
+				// WTP, ray, Happiness - END
 
-					// WTP, ray, Domestic Market Profit Modifier - START
-					iProfit = iProfit * (100 + iDomesticMarketProfitModifierInPercent) / 100;
-					// WTP, ray, Domestic Market Profit Modifier - END
+				// WTP, ray, Domestic Market Profit Modifier - START
+				iProfit = iProfit * (100 + iDomesticMarketProfitModifierInPercent) / 100;
+				// WTP, ray, Domestic Market Profit Modifier - END
 
-					aiYields[eYield] -= iAmount;
-					GET_PLAYER(getOwnerINLINE()).changeGold(iProfit);
-					iTotalProfitFromDomesticMarket = iTotalProfitFromDomesticMarket + iProfit;
-				}	
-			}
-			else
-			{
-				break;
+				aiYields[eYield] -= iAmount;
+				GET_PLAYER(getOwnerINLINE()).changeGold(iProfit);
+				iTotalProfitFromDomesticMarket = iTotalProfitFromDomesticMarket + iProfit;
 			}
 		}
 		if (iTotalProfitFromDomesticMarket != 0 && GC.getDOMESTIC_SALES_MESSAGES() == 1)
@@ -12462,35 +12456,29 @@ void CvCity::getYieldDemands(YieldCargoArray<int> &aYields) const
 	// apply market multiplier to each yield
 	int iMarketModifier = this->getMarketModifier();
 	// for performance reasions, use getUnitYieldDemandTypes as it skips all yields no units/buildings will ever demand
-	const YieldTypeArray& kYieldArray = GC.getUnitYieldDemandTypes();
-	for (int i = 0;; ++i)
+	const InfoArray<YieldTypes>& kYieldArray = GC.getDomesticDemandYieldTypes();
+	for (int i = 0; i < kYieldArray.getLength(); ++i)
 	{
 		YieldTypes eYield = kYieldArray.get(i);
-		if (eYield != NO_YIELD)
-		{
-			int iDemand = aYields.get(eYield);
-			if (iDemand != 0) // skip calculating on something we know ends up as 0
-			{
-				// What goes on here looks significantly different from Androrc's original version, though it provides the same results.
-				// original code:
-				/// int iBuildingDemand = (iDemand * (MarketLevel * 50)) / 100; // 50 percent more demand per level
-				/// return (iRawDemand + iBuildingDemand) / 100;
 
-				// The current code essentially does the same. MarketLevel was 0-3 based on special building priority
-				// while iMarketModifier is set in xml to be 100-250, in steps of 50
-				// By starting from 100 instead of 0, iRawDemand + iBuildingDemand is no longer needed
-				// The two divisions by 100 can then be combined into a single division of 100*100
-				// The result is the same output, but around half the calculation time
-				// Even better it puts the modifier in xml rather than some (for xml) hidden special building calculations
-
-				iDemand *= iMarketModifier;
-				iDemand /= 10000;
-				aYields.set(iDemand, eYield);
-			}
-		}
-		else
+		int iDemand = aYields.get(eYield);
+		if (iDemand != 0) // skip calculating on something we know ends up as 0
 		{
-			break;
+			// What goes on here looks significantly different from Androrc's original version, though it provides the same results.
+			// original code:
+			/// int iBuildingDemand = (iDemand * (MarketLevel * 50)) / 100; // 50 percent more demand per level
+			/// return (iRawDemand + iBuildingDemand) / 100;
+
+			// The current code essentially does the same. MarketLevel was 0-3 based on special building priority
+			// while iMarketModifier is set in xml to be 100-250, in steps of 50
+			// By starting from 100 instead of 0, iRawDemand + iBuildingDemand is no longer needed
+			// The two divisions by 100 can then be combined into a single division of 100*100
+			// The result is the same output, but around half the calculation time
+			// Even better it puts the modifier in xml rather than some (for xml) hidden special building calculations
+
+			iDemand *= iMarketModifier;
+			iDemand /= 10000;
+			aYields.set(iDemand, eYield);
 		}
 	}
 }

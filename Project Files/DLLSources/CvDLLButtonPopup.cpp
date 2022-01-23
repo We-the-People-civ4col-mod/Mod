@@ -3372,25 +3372,18 @@ bool CvDLLButtonPopup::launchDomesticMarketPopup(CvPopup* pPopup, CvPopupInfo &i
 	YieldCargoArray<int> aYields;
 	pCity->getYieldDemands(aYields);
 
-	const YieldTypeArray& kYieldArray = GC.getUnitYieldDemandTypes();
-	for (int i = 0;; ++i)
+	const InfoArray<YieldTypes>& kYieldArray = GC.getDomesticDemandYieldTypes();
+	for (int i = 0; i < kYieldArray.getLength(); ++i)
 	{
 		YieldTypes eYield = kYieldArray.get(i);
-		if (eYield != NO_YIELD)
-		{
-			CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+		const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
 
-			gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
-			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, eYield);
-			gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_NUMBER", pCity->getYieldStored(eYield)));
-			gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_NUMBER", pCity->getYieldBuyPrice(eYield)));
-			gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_NUMBER", aYields.get(eYield)));
-			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
-		}
-		else
-		{
-			break;
-		}
+		gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, eYield);
+		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_NUMBER", pCity->getYieldStored(eYield)));
+		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_NUMBER", pCity->getYieldBuyPrice(eYield)));
+		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_NUMBER", aYields.get(eYield)));
+		gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
 	}
 
 	gDLL->getInterfaceIFace()->popupLaunch(pPopup, true, POPUPSTATE_IMMEDIATE);

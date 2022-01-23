@@ -978,7 +978,7 @@ public:
 
 	void cleanInfoStrings();
 	
-	const YieldTypeArray& getUnitYieldDemandTypes() const { return m_acUnitYieldDemandTypes; }
+	const InfoArray<YieldTypes>& getDomesticDemandYieldTypes() const { return m_iaDomesticDemandYieldTypes; }
 
 	void setCityCatchmentRadius(int iSetting);
 
@@ -1409,7 +1409,7 @@ protected:
 	int m_BAD_CITY_LOCATION_HEALTH_MALUS;
 	// WTP, ray, Health Overhaul - END
 
-	YieldTypeArray m_acUnitYieldDemandTypes;
+	InfoArray<YieldTypes> m_iaDomesticDemandYieldTypes;
 
 	// WTP, ray, Happiness - START
 	int m_MIN_POP_NEG_HAPPINESS;
