@@ -1585,6 +1585,46 @@ CyInfoArray* CyPlayer::getDomesticDemandYieldTypes() const
 	return new CyInfoArray(em);
 }
 
+CyInfoArray* CyPlayer::getTeachUnitTypes(int iTeachLevel) const
+{
+	EnumMap<UnitTypes, bool> em;
+
+	if (m_pPlayer != NULL)
+	{
+		const CvPlayerCivEffect* pPlayer = m_pPlayer->CivEffect();
+		for (UnitTypes eUnit = em.FIRST; eUnit <= em.LAST; ++eUnit)
+		{
+			if (pPlayer->canUseUnit(eUnit) && GC.getUnitInfo(eUnit).NBMOD_GetTeachLevel() == iTeachLevel)
+			{
+				em.set(eUnit, true);
+			}
+
+		}
+	}
+	return new CyInfoArray(em);
+}
+
+int CyPlayer::getMaxTeachLevel() const
+{
+	int iLevel = 0;
+	if (m_pPlayer != NULL)
+	{
+		const CvPlayerCivEffect* pPlayer = m_pPlayer->CivEffect();
+		for (UnitTypes eUnit = FIRST_UNIT; eUnit < NUM_UNIT_TYPES; ++eUnit)
+		{
+			if (pPlayer->canUseUnit(eUnit))
+			{
+				const int iUnitLevel = GC.getUnitInfo(eUnit).NBMOD_GetTeachLevel();
+				if (iUnitLevel > iLevel && iUnitLevel < 100)
+				{
+					iLevel = iUnitLevel;
+				}
+			}
+		}
+	}
+	return iLevel;
+}
+
 // CivEffect
 int CyPlayer::getCivEffectCount(CivEffectTypes eCivEffect) const
 {

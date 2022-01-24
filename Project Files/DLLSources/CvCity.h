@@ -710,6 +710,7 @@ public:
 	bool canProduceYield(YieldTypes eYield);
 
 	bool educateStudent(int iUnitId, UnitTypes eUnit);
+	bool canTeach(UnitTypes eUnit) const;
 	int getSpecialistTuition(UnitTypes eUnit) const;
 
 	bool isExport(YieldTypes eYield) const;

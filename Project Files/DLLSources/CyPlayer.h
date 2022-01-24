@@ -397,6 +397,9 @@ public:
 	CyInfoArray* getStoredYieldTypes() const;
 	CyInfoArray* getDomesticDemandYieldTypes() const;
 
+	CyInfoArray* getTeachUnitTypes(int iTeachLevel) const;
+	int getMaxTeachLevel() const;
+
 	int getCivEffectCount(CivEffectTypes eCivEffect) const;
 
 	unsigned int getNumUnitsOnDock() const;

@@ -10787,6 +10787,11 @@ void CvCity::NBMOD_SetCityTeachLevelCache() // NBMOD EDU cache - Nightinggale
 
 /** NBMOD EDU **/
 
+bool CvCity::canTeach(UnitTypes eUnit) const
+{
+	return getSpecialistTuition(eUnit) >= 0;
+}
+
 int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 {
 	if (m_em_iSpecialistWeights.get(eUnit) <= 0)

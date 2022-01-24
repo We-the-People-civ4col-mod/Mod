@@ -1154,6 +1154,11 @@ int CyCity::getPopulationUnitIndex(CyUnit* pUnit)
 	return m_pCity ? m_pCity->getPopulationUnitIndex(pUnit->getUnit()) : -1;
 }
 
+bool CyCity::canTeach(int iUnit) const
+{
+	return m_pCity ? m_pCity->canTeach(static_cast<UnitTypes>(iUnit)) : false;
+}
+
 int CyCity::getTeachUnitClass()
 {
 	return m_pCity ? m_pCity->getTeachUnitClass() : -1;

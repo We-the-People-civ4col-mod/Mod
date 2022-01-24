@@ -271,6 +271,8 @@ public:
 	void addPopulationUnit(CyUnit* pUnit, int /*ProfessionTypes*/ eProfession);
 	bool removePopulationUnit(CyUnit* pUnit, bool bDelete, int /*ProfessionTypes*/ eProfession);
 
+	bool canTeach(int iUnit) const;
+
 	int getTeachUnitClass();
 	int getTeachUnit() const; // native advisor update - Nightinggale
 	int getRebelPercent();

@@ -375,16 +375,28 @@ class DomesticAdvisorTable:
 		return iWidth
 	
 	def __getColumnHeader(self, iColumn):
-		info = self.__getInfoForColumn(iColumn)
-		if (info != None):
-			return (u" %c" % info.getChar())
+		if self.__hasGetChar():
+			info = self.__getInfoForColumn(iColumn)
+			if (info != None):
+				return (u" %c" % info.getChar())
 			
 		return ""
+	
+	def __hasGetChar(self):
+		if (self.InfoArray != None):
+			if (self.InfoArray.getType(0) == JITarrayTypes.JIT_ARRAY_BUILDING_SPECIAL):
+				return True
+			if (self.InfoArray.getType(0) == JITarrayTypes.JIT_ARRAY_YIELD):
+				return True
+			
+		return False
 	
 	def __getInfoForType(self, iType):
 		if (self.InfoArray != None):
 			if (self.InfoArray.getType(0) == JITarrayTypes.JIT_ARRAY_BUILDING_SPECIAL):
 				return gc.getSpecialBuildingInfo(iType)
+			if (self.InfoArray.getType(0) == JITarrayTypes.JIT_ARRAY_UNIT):
+				return gc.getUnitInfo(iType)
 			if (self.InfoArray.getType(0) == JITarrayTypes.JIT_ARRAY_YIELD):
 				return gc.getYieldInfo(iType)
 			
