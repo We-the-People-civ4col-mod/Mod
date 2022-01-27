@@ -4961,7 +4961,7 @@ m_iYieldStorage(0),
 m_iMaxHarbourSpaceProvided(0), // WTP, ray, new Harbour System - START
 m_iMaxBarracksSpaceProvided(0), // WTP, ray, new Barracks System - START
 m_iSpecialBuildingType(NO_SPECIALBUILDING),
-m_iIndexOf_NextBuildingType_In_SpecialBuilding(NO_BUILDING),
+m_eIndexOf_NextBuildingType_In_SpecialBuilding(NO_BUILDING),
 m_iConquestProbability(0),
 m_iHealRateChange(0),
 m_iDefenseModifier(0),
@@ -5425,7 +5425,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iMaxHarbourSpaceProvided); // WTP, ray, new Harbour System - START
 	stream->Read(&m_iMaxBarracksSpaceProvided); // WTP, ray, new Barracks System - START
 	stream->Read(&m_iSpecialBuildingType);
-	stream->Read(&m_iIndexOf_NextBuildingType_In_SpecialBuilding);
+	stream->Read(&m_eIndexOf_NextBuildingType_In_SpecialBuilding);
 	stream->Read(&m_iConquestProbability);
 	stream->Read(&m_iHealRateChange);
 	stream->Read(&m_iDefenseModifier);
@@ -5522,7 +5522,7 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iMaxHarbourSpaceProvided); // WTP, ray, new Harbour System - START
 	stream->Write(m_iMaxBarracksSpaceProvided);	// WTP, ray, new Barracks System - START
 	stream->Write(m_iSpecialBuildingType);
-	stream->Write(m_iIndexOf_NextBuildingType_In_SpecialBuilding);
+	stream->Write(m_eIndexOf_NextBuildingType_In_SpecialBuilding);
 	stream->Write(m_iConquestProbability);
 	stream->Write(m_iHealRateChange);
 	stream->Write(m_iDefenseModifier);
@@ -5668,15 +5668,15 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 
 bool CvBuildingInfo::readPass2(CvXMLLoadUtility* pXML)
 {
-	m_iIndexOf_NextBuildingType_In_SpecialBuilding = GC.getInfoTypeForString(getType());
+	m_eIndexOf_NextBuildingType_In_SpecialBuilding = getIndexForType<BuildingTypes>(getType());
 	if(getSpecialBuildingType() != NO_SPECIALBUILDING)
 	{
 		for(int i=0;i<GC.getNumBuildingInfos();i++)
 		{
-			BuildingTypes eLoopBuilding = (BuildingTypes) ((m_iIndexOf_NextBuildingType_In_SpecialBuilding + i + 1) % GC.getNumBuildingInfos());
+			BuildingTypes eLoopBuilding = (BuildingTypes) ((m_eIndexOf_NextBuildingType_In_SpecialBuilding + i + 1) % GC.getNumBuildingInfos());
 			if(GC.getBuildingInfo(eLoopBuilding).getSpecialBuildingType() == getSpecialBuildingType())
 			{
-				m_iIndexOf_NextBuildingType_In_SpecialBuilding = eLoopBuilding;
+				m_eIndexOf_NextBuildingType_In_SpecialBuilding = eLoopBuilding;
 				break;
 			}
 		}
@@ -5729,6 +5729,10 @@ int CvSpecialBuildingInfo::getFontButtonIndex() const
 	return m_iFontButtonIndex;
 }
 // Arrays
+const InfoArray<BuildingTypes, int>& CvSpecialBuildingInfo::getBuildings() const
+{
+	return m_buildings;
+}
 int CvSpecialBuildingInfo::getProductionTraits(int i) const
 {
 	FAssertMsg(i < GC.getNumTraitInfos(), "Index out of bounds");
@@ -5753,6 +5757,24 @@ bool CvSpecialBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiProductionTraits, "ProductionTraits", GC.getNumTraitInfos(), 0);
 	pXML->GetChildXmlValByName(m_szNatureObject, "NatureObject");	// TAC - Nature Objects - koma13
 	return true;
+}
+void CvSpecialBuildingInfo::postXmlReadSetup()
+{
+	EnumMap<SpecialBuildingTypes, EnumMap<BuildingTypes, int, -1> > em;
+
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
+	{
+		CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
+		SpecialBuildingTypes eSpecial = static_cast<SpecialBuildingTypes>(kBuilding.getSpecialBuildingType());
+		if (eSpecial != NO_SPECIALBUILDING)
+		{
+			em[eSpecial].set(eBuilding, kBuilding.getSpecialBuildingPriority());
+		}
+	}
+	for (SpecialBuildingTypes eSpecialBuilding = em.FIRST; eSpecialBuilding <= em.LAST; ++eSpecialBuilding)
+	{
+		GC.getSpecialBuildingInfo(eSpecialBuilding).m_buildings.assignFrom(em[eSpecialBuilding]);
+	}
 }
 //======================================================================================================
 //					CvBuildingClassInfo
@@ -16850,17 +16872,29 @@ CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
 		// Since the array all have 1 as default, the task for this CivEffect is to provide -1
 		//   whenever there is a positive value in a CivEffect
 
-		EnumMap<BonusTypes          , int, 1> Bonuses;
-		EnumMap<BuildTypes          , int, 1> Builds;
-		EnumMap<BuildingClassTypes  , int, 1> Buildings;
-		EnumMap<CivicTypes          , int, 1> Civics;
-		EnumMap<UnitClassTypes      , int, 1> Immigrants;
-		EnumMap<ImprovementTypes    , int, 1> Improvements;
-		EnumMap<ProfessionTypes     , int, 1> Professions;
-		EnumMap<PromotionTypes      , int, 1> Promotions;
-		EnumMap<RouteTypes          , int, 1> Routes;
-		EnumMap<UnitClassTypes      , int, 1> Units;
-		EnumMap<YieldTypes          , int, 1> Yields;
+		EnumMap<BonusTypes          , int> Bonuses;
+		EnumMap<BuildTypes          , int> Builds;
+		EnumMap<BuildingClassTypes  , int> Buildings;
+		EnumMap<CivicTypes          , int> Civics;
+		EnumMap<UnitClassTypes      , int> Immigrants;
+		EnumMap<ImprovementTypes    , int> Improvements;
+		EnumMap<ProfessionTypes     , int> Professions;
+		EnumMap<PromotionTypes      , int> Promotions;
+		EnumMap<RouteTypes          , int> Routes;
+		EnumMap<UnitClassTypes      , int> Units;
+		EnumMap<YieldTypes          , int> Yields;
+
+		Bonuses             .setAll(1);
+		Builds              .setAll(1);
+		Buildings           .setAll(1);
+		Civics              .setAll(1);
+		Immigrants          .setAll(1);
+		Improvements        .setAll(1);
+		Professions         .setAll(1);
+		Promotions          .setAll(1);
+		Routes              .setAll(1);
+		Units               .setAll(1);
+		Yields              .setAll(1);
 
 		for (CivEffectTypes eCivEffect = FIRST_CIV_EFFECT; eCivEffect < NUM_CIV_EFFECT_TYPES; ++eCivEffect)
 		{

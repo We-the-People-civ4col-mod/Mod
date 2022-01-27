@@ -91,7 +91,7 @@ public:
 	bool hasContent();
 	void copyToVector(std::vector<T>& thisVector) const;
 	void copyFromVector(const std::vector<T>& thisVector);
-	int GetNumNonZeroElements() const;
+	int getNumNonDefaultElements() const;
 	int GetNumPositiveElements() const;
 	void generateInitCivEffect(const InfoArray<IndexType, int>& kIarray);
 protected:
@@ -473,12 +473,12 @@ void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGT
 }
 
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-int EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::GetNumNonZeroElements() const
+int EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getNumNonDefaultElements() const
 {
 	int iNum = 0;
 	for (IndexType eLoop = FIRST; eLoop <= LAST; ++eLoop)
 	{
-		if (get(eLoop) != 0)
+		if (get(eLoop) != DEFAULT)
 		{
 			++iNum;
 		}

@@ -438,6 +438,7 @@ public:
 	void setHasFreeBuilding(BuildingTypes eIndex, bool bNewValue);
 	bool isHasConceptualBuilding(BuildingTypes eIndex) const;
 	bool isDominantSpecialBuilding(BuildingTypes eIndex) const;
+	BuildingTypes getDominantBuilding(SpecialBuildingTypes eSpecialBuilding) const;
 	void clearOrderQueue();
 	DllExport void pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bool bPop, bool bAppend, bool bForce = false);
 	DllExport void popOrder(int iNum, bool bFinish = false, bool bChoose = false);

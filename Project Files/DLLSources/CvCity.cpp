@@ -6267,7 +6267,7 @@ bool CvCity::isDominantSpecialBuilding(BuildingTypes eIndex) const
 	
 	//Walk through all the possible buildings in the building slot of the given building ...
 	//... and check if the given building is the building with the highest tier (SpecialBuildingPriority), built in that slot.
-	BuildingTypes eNextBuilding = (BuildingTypes) kBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
+	BuildingTypes eNextBuilding = kBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
 	while (eNextBuilding != eIndex)
 	{
 		CvBuildingInfo& kNextBuilding = GC.getBuildingInfo(eNextBuilding);
@@ -6279,10 +6279,38 @@ bool CvCity::isDominantSpecialBuilding(BuildingTypes eIndex) const
 			}
 		}
 
-		eNextBuilding = (BuildingTypes) kNextBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
+		eNextBuilding = kNextBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
 	}
 
 	return true;
+}
+
+BuildingTypes CvCity::getDominantBuilding(SpecialBuildingTypes eSpecialBuilding) const
+{
+	// the the building present in the city, which has the highest special building priority.
+	// relies on the <building,priority> InfoArray stored in CvSpecialBuildingInfo as this skips all the building info class lookup.
+	if (eSpecialBuilding != NO_SPECIALBUILDING)
+	{
+		const InfoArray<BuildingTypes, int>& iaBuildings = GC.getSpecialBuildingInfo(eSpecialBuilding).getBuildings();
+
+		int iBestPriority = -1;
+		BuildingTypes eBestBuilding = NO_BUILDING;
+		for (int i = 0; i < iaBuildings.getLength(); ++i)
+		{
+			const BuildingTypes eBuilding = iaBuildings.getBuilding(i);
+			if (isHasConceptualBuilding(eBuilding))
+			{
+				const int iPriority = iaBuildings.getInt(i);
+				if (iPriority > iBestPriority)
+				{
+					iBestPriority = iPriority;
+					eBestBuilding = eBuilding;
+				}
+			}
+		}
+		return eBestBuilding;
+	}
+	return NO_BUILDING;
 }
 
 void CvCity::clearOrderQueue()

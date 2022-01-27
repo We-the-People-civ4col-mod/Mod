@@ -774,6 +774,8 @@ void CyEnumsPythonInterface()
 		;
 	python::enum_<SpecialBuildingTypes>("SpecialBuildingTypes")
 		.value("NO_SPECIALBUILDING", NO_SPECIALBUILDING)
+		// next line looks up an "enum" value at runtime where it is based on xml type strings
+		.value("SPECIALBUILDING_EDUCATION", getIndexForType<SpecialBuildingTypes>("SPECIALBUILDING_EDUCATION", "SPECIALBUILDING_EDUCATION must exist in xml"))
 		;
 	python::enum_<InfoBarTypes>("InfoBarTypes")
 		.value("INFOBAR_STORED", INFOBAR_STORED)

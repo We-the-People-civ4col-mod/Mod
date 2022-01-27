@@ -995,6 +995,11 @@ bool CyCity::isHasFreeBuilding(int /*BuildingTypes*/ iIndex)
 	return m_pCity ? m_pCity->isHasFreeBuilding((BuildingTypes) iIndex) : false;
 }
 
+int CyCity::getDominantBuilding(int /*SpecialBuildingTypes*/ iSpecialBuilding) const
+{
+	return m_pCity ? m_pCity->getDominantBuilding(static_cast<SpecialBuildingTypes>(iSpecialBuilding)) : -1;
+}
+
 void CyCity::clearOrderQueue()
 {
 	if (m_pCity)

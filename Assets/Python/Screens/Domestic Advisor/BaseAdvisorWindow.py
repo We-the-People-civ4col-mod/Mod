@@ -38,7 +38,11 @@ class BaseAdvisorWindow:
 			self.tableManager.addText(pLoopCity.getName())
 			self.drawColonyRow(iCity, pLoopCity)
 			
+	def drawColonyRowCustom(self, iCity, pCity):
+		return
+	
 	def drawColonyRow(self, iCity, pCity):
+		self.drawColonyRowCustom(iCity, pCity)
 		self.tableManager.autofillRow(iCity, pCity)
 		
 	def drawColonyCell(self, iCity, pCity, iType, info):

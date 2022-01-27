@@ -29,8 +29,15 @@ class TeacherAdvisor(MultiPageDomesticAdvisor.MultiPageDomesticAdvisor):
 class TeacherAdvisorSingleLevel(BaseAdvisorWindow.BaseAdvisorWindow):
 	def __init__(self, parent, iTeachLevel):
 		BaseAdvisorWindow.BaseAdvisorWindow.__init__(self, parent, "TeacherState" + str(iTeachLevel))
-	
 		self.iTeachLevel = iTeachLevel
+		
+	def drawColonyRowCustom(self, iCity, pCity):
+		iBuilding = pCity.getDominantBuilding(SpecialBuildingTypes.SPECIALBUILDING_EDUCATION)
+		if iBuilding != -1:
+			self.tableManager.addPanelButton(gc.getBuildingInfo(iBuilding).getButton(), WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, iBuilding, -1)
+		else:
+			self.tableManager.skipCell()
+		self.tableManager.addTextRight(str(pCity.calculateNetYield(YieldTypes.YIELD_EDUCATION)))
 		
 	def drawColonyCell(self, iCity, pCity, iType, info):
 		if pCity.canTeach(iType):
@@ -47,5 +54,7 @@ class TeacherAdvisorSingleLevel(BaseAdvisorWindow.BaseAdvisorWindow):
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
 		self.tableManager.addHeaderButton()
 		self.tableManager.addHeaderCityName()
+		self.tableManager.addHeaderTxt("", self.tableManager.defaultColumnWidth)
+		self.tableManager.addHeaderTxt("", self.tableManager.defaultColumnWidth)
 		self.tableManager.addHeaderArray(player.getTeachUnitTypes(self.iTeachLevel))
 		

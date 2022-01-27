@@ -1296,7 +1296,7 @@ public:
 	int getMaxHarbourSpaceProvided() const; // WTP, ray, new Harbour System - START
 	int getMaxBarracksSpaceProvided() const; // WTP, ray, new Barracks System - START
 	int getSpecialBuildingType() const;
-	inline int getIndexOf_NextBuildingType_In_SpecialBuilding() const		{ return m_iIndexOf_NextBuildingType_In_SpecialBuilding; }
+	inline BuildingTypes getIndexOf_NextBuildingType_In_SpecialBuilding() const		{ return m_eIndexOf_NextBuildingType_In_SpecialBuilding; }
 	int getConquestProbability() const;
 	int getHealRateChange() const;
 	int getDefenseModifier() const;
@@ -1402,7 +1402,7 @@ protected:
 	int m_iMaxHarbourSpaceProvided; // WTP, ray, new Harbour System - START
 	int m_iMaxBarracksSpaceProvided; // WTP, ray, new Barracks System - START
 	int m_iSpecialBuildingType;
-	int m_iIndexOf_NextBuildingType_In_SpecialBuilding;
+	BuildingTypes m_eIndexOf_NextBuildingType_In_SpecialBuilding;
 	int m_iConquestProbability;
 	int m_iHealRateChange;
 	int m_iDefenseModifier;
@@ -1464,6 +1464,8 @@ class CvSpecialBuildingInfo :
 {
 	//---------------------------------------PUBLIC INTERFACE---------------------------------
 public:
+	friend class CvSpecialBuildingInfo;
+
 	CvSpecialBuildingInfo();
 	virtual ~CvSpecialBuildingInfo();
 	bool isValid() const;
@@ -1472,17 +1474,22 @@ public:
 	DllExport int getFontButtonIndex() const;
 
 	// Arrays
+	const InfoArray<BuildingTypes, int>& getBuildings() const;
+
 	int getProductionTraits(int i) const;
 
 	const char* getNatureObject() const;	// TAC - Nature Objects - koma13
 
 	bool read(CvXMLLoadUtility* pXML);
+
+	static void postXmlReadSetup();
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
 	bool m_bValid;
 	int m_iChar;
 	int m_iFontButtonIndex;
 	// Arrays
+	InfoArray<BuildingTypes, int> m_buildings;
 	int* m_aiProductionTraits;
 	CvString m_szNatureObject;	// TAC - Nature Objects - koma13
 };

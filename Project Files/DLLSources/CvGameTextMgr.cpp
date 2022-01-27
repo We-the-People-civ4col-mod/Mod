@@ -6290,7 +6290,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		szBuffer.append(gDLL->getText("TXT_KEY_REPLACES_UNIT", GC.getBuildingInfo(eDefaultBuilding).getTextKeyWide()));
 	}
 
-	BuildingTypes eNextBuilding = (BuildingTypes) kBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
+	BuildingTypes eNextBuilding = kBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
 	while (eNextBuilding != eBuilding)
 	{
 		CvBuildingInfo& kNextBuilding = GC.getBuildingInfo(eNextBuilding);
@@ -6304,7 +6304,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 			// TAC - Messages - Ray - END
 		}
 
-		eNextBuilding = (BuildingTypes) kNextBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
+		eNextBuilding = kNextBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
 	}
 
 	if (kBuilding.getFreePromotion() != NO_PROMOTION)

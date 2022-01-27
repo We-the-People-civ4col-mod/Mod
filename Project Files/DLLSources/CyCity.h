@@ -236,6 +236,8 @@ public:
 	void setHasRealBuilding(int /*BuildingTypes*/ iIndex, bool bNewValue);
 	bool isHasFreeBuilding(int /*BuildingTypes*/ iIndex);
 
+	int getDominantBuilding(int /*SpecialBuildingTypes*/ iSpecialBuilding) const;
+
 	void clearOrderQueue();
 	void pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bool bPop, bool bAppend, bool bForce);
 	void popOrder(int iNum, bool bFinish, bool bChoose);

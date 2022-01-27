@@ -282,12 +282,12 @@ void InfoArray2Only<T0, T1>::assignFrom(const EnumMap<Ta, T, DEFAULT> & em)
 {
 	const bool bTypeCheck = !boost::is_same<T, bool>::value;
 	BOOST_STATIC_ASSERT(bTypeCheck);
-	const int iLength = em.GetNumNonZeroElements();
+	const int iLength = em.getNumNonDefaultElements();
 	_setLength(iLength);
 	for (T0 eIndex = em.FIRST; eIndex <= em.LAST; ++eIndex)
 	{
 		int iVal = em.get(eIndex);
-		if (iVal != 0)
+		if (iVal != em.DEFAULT)
 		{
 			bool bDone = _setValue(eIndex, iVal);
 #ifndef FASSERT_ENABLE
