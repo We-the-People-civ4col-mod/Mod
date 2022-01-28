@@ -2056,6 +2056,18 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 	}
 	// WTP, ray, Not allowed next to itself - END
 
+	// WTP, ray, small adjustment for Goodies spwawning hostile Units - START
+	// we do not want them to be spawned on Peaks, the graphics look really ugly there and it is bad for gameplay
+	// Hills should still be allowed
+	if (GC.getImprovementInfo(eImprovement).isGoodyForSpawningHostileAnimals() || GC.getImprovementInfo(eImprovement).isGoodyForSpawningHostileNatives() || GC.getImprovementInfo(eImprovement).isGoodyForSpawningHostileCriminals())
+	{
+		if (isPeak())
+		{
+			return false;
+		}
+	}
+	// WTP, ray, small adjustment for Goodies spwawning hostile Units - END
+
 	// WTP, ray, Canal - START
 	if (GC.getImprovementInfo(eImprovement).isCanal())
 	{
@@ -2141,7 +2153,6 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 
 	return true;
 }
-
 
 bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible) const
 {
