@@ -1718,7 +1718,7 @@
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
             <bNoBadGoodies>0</bNoBadGoodies>
-            <bOnlyDefensive>1</bOnlyDefensive>
+            <bOnlyDefensive>0</bOnlyDefensive>
             <bNoCapture>0</bNoCapture>
             <bQuickCombat>0</bQuickCombat>
             <bRivalTerritory>0</bRivalTerritory>
@@ -2320,7 +2320,7 @@
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
             <bNoBadGoodies>0</bNoBadGoodies>
-            <bOnlyDefensive>1</bOnlyDefensive>
+            <bOnlyDefensive>0</bOnlyDefensive>
             <bNoCapture>0</bNoCapture>
             <bQuickCombat>0</bQuickCombat>
             <bRivalTerritory>0</bRivalTerritory>
@@ -2927,7 +2927,7 @@
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
             <bNoBadGoodies>0</bNoBadGoodies>
-            <bOnlyDefensive>1</bOnlyDefensive>
+            <bOnlyDefensive>0</bOnlyDefensive>
             <bNoCapture>0</bNoCapture>
             <bQuickCombat>0</bQuickCombat>
             <bRivalTerritory>0</bRivalTerritory>
@@ -3351,7 +3351,7 @@
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
             <bNoBadGoodies>0</bNoBadGoodies>
-            <bOnlyDefensive>1</bOnlyDefensive>
+            <bOnlyDefensive>0</bOnlyDefensive>
             <bNoCapture>0</bNoCapture>
             <bQuickCombat>0</bQuickCombat>
             <bRivalTerritory>0</bRivalTerritory>
@@ -36673,7 +36673,7 @@
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
             <bNoBadGoodies>0</bNoBadGoodies>
-            <bOnlyDefensive>1</bOnlyDefensive>
+            <bOnlyDefensive>0</bOnlyDefensive>
             <bNoCapture>0</bNoCapture>
             <bQuickCombat>0</bQuickCombat>
             <bRivalTerritory>0</bRivalTerritory>
@@ -40489,7 +40489,7 @@
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
             <bNoBadGoodies>0</bNoBadGoodies>
-            <bOnlyDefensive>1</bOnlyDefensive>
+            <bOnlyDefensive>0</bOnlyDefensive>
             <bNoCapture>0</bNoCapture>
             <bQuickCombat>0</bQuickCombat>
             <bRivalTerritory>0</bRivalTerritory>
