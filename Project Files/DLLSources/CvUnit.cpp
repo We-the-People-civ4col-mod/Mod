@@ -574,48 +574,51 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 			{
 				eCaptureProfession = GC.getUnitInfo(eCaptureUnitType).getDefaultProfession();
 			}
-			CvUnit* pkCapturedUnit = GET_PLAYER(eCapturingPlayer).initUnit(eCaptureUnitType, eCaptureProfession, pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, iYieldStored);
-
-			if (pkCapturedUnit != NULL)
+			// WTP, ray fixing Unit duplication bug
+			if (eCaptureProfession == NO_PROFESSION || (eCaptureProfession != NO_PROFESSION && GC.getProfessionInfo(eCaptureProfession).getCombatChange() == 0))
 			{
-				bool bAlive = true;
-				if (pAttacker != NULL && pAttacker->getUnitInfo().isCapturesCargo())
+				CvUnit* pkCapturedUnit = GET_PLAYER(eCapturingPlayer).initUnit(eCaptureUnitType, eCaptureProfession, pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, iYieldStored);
+				if (pkCapturedUnit != NULL)
 				{
-					pkCapturedUnit->setXY(pAttacker->getX_INLINE(), pAttacker->getY_INLINE());
-					if(pkCapturedUnit->getTransportUnit() == NULL) //failed to load
+					bool bAlive = true;
+					if (pAttacker != NULL && pAttacker->getUnitInfo().isCapturesCargo())
 					{
-						bAlive = false;
-						pkCapturedUnit->kill(false);
-					}
-				}
-
-				if (bAlive)
-				{
-					szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_CAPTURED_UNIT", GC.getUnitInfo(eCaptureUnitType).getTextKeyWide());
-					gDLL->getInterfaceIFace()->addMessage(eCapturingPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, pkCapturedUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
-
-					if (!pkCapturedUnit->isCargo())
-					{
-						// Add a captured mission
-						CvMissionDefinition kMission;
-						kMission.setMissionTime(GC.getMissionInfo(MISSION_CAPTURED).getTime() * gDLL->getSecsPerTurn());
-						kMission.setUnit(BATTLE_UNIT_ATTACKER, pkCapturedUnit);
-						kMission.setUnit(BATTLE_UNIT_DEFENDER, NULL);
-						kMission.setPlot(pPlot);
-						kMission.setMissionType(MISSION_CAPTURED);
-						gDLL->getEntityIFace()->AddMission(&kMission);
-					}
-
-					pkCapturedUnit->finishMoves();
-
-					if (!GET_PLAYER(eCapturingPlayer).isHuman())
-					{
-						CvPlot* pPlot = pkCapturedUnit->plot();
-						if (pPlot && !pPlot->isCity(false))
+						pkCapturedUnit->setXY(pAttacker->getX_INLINE(), pAttacker->getY_INLINE());
+						if(pkCapturedUnit->getTransportUnit() == NULL) //failed to load
 						{
-							if (GET_PLAYER(eCapturingPlayer).AI_getPlotDanger(pPlot) && GC.getDefineINT("AI_CAN_DISBAND_UNITS"))
+							bAlive = false;
+							pkCapturedUnit->kill(false);
+						}
+					}
+
+					if (bAlive)
+					{
+						szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_CAPTURED_UNIT", GC.getUnitInfo(eCaptureUnitType).getTextKeyWide());
+						gDLL->getInterfaceIFace()->addMessage(eCapturingPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, pkCapturedUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
+
+						if (!pkCapturedUnit->isCargo())
+						{
+							// Add a captured mission
+							CvMissionDefinition kMission;
+							kMission.setMissionTime(GC.getMissionInfo(MISSION_CAPTURED).getTime() * gDLL->getSecsPerTurn());
+							kMission.setUnit(BATTLE_UNIT_ATTACKER, pkCapturedUnit);
+							kMission.setUnit(BATTLE_UNIT_DEFENDER, NULL);
+							kMission.setPlot(pPlot);
+							kMission.setMissionType(MISSION_CAPTURED);
+							gDLL->getEntityIFace()->AddMission(&kMission);
+						}
+
+						pkCapturedUnit->finishMoves();
+
+						if (!GET_PLAYER(eCapturingPlayer).isHuman())
+						{
+							CvPlot* pPlot = pkCapturedUnit->plot();
+							if (pPlot && !pPlot->isCity(false))
 							{
-								pkCapturedUnit->kill(false);
+								if (GET_PLAYER(eCapturingPlayer).AI_getPlotDanger(pPlot) && GC.getDefineINT("AI_CAN_DISBAND_UNITS"))
+								{
+									pkCapturedUnit->kill(false);
+								}
 							}
 						}
 					}
@@ -1460,7 +1463,7 @@ void CvUnit::updateCombat(bool bQuick)
 			// we do not capture Units anymore that are flagged as bNoCapture
 			if (!pDefender->getUnitInfo().isNoCapture())
 			{
-				if ((pDefender->cargoSpace() > 0 && (pDefender->getDomainType() == DOMAIN_LAND || (pDefender->getDomainType() == DOMAIN_SEA && pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)) || pDefender->getUnitInfo().isTreasure() || (pDefender->isUnarmed() && pDefender->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pDefender->getProfession()).getCombatChange() > 0)) && !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE())) 
+				if (((pDefender->cargoSpace() > 0 && (pDefender->getDomainType() == DOMAIN_LAND || (pDefender->getDomainType() == DOMAIN_SEA && pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS))) || pDefender->getUnitInfo().isTreasure() || (pDefender->isUnarmed() && pDefender->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pDefender->getProfession()).getCombatChange() > 0)) && !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE())) 
 				{
 					CvUnit* pkCapturedUnitAfterFight = GET_PLAYER(getOwnerINLINE()).initUnit(pDefender->getUnitType(), pDefender->getProfession(), pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, pDefender->getYieldStored());
 					pkCapturedUnitAfterFight->setDamage(GC.getMAX_HIT_POINTS() / 2);	
