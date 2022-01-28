@@ -375,8 +375,11 @@ class DomesticAdvisorTable:
 		return iWidth
 	
 	def __getColumnHeader(self, iColumn):
-		if self.__hasGetChar():
-			info = self.__getInfoForColumn(iColumn)
+		info = self.__getInfoForColumn(iColumn)
+		customHeader = self.parent.getCustomHeader(iColumn, info)
+		if customHeader != None:
+			return customHeader
+		elif self.__hasGetChar():
 			if (info != None):
 				return (u" %c" % info.getChar())
 			

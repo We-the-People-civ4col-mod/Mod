@@ -54,6 +54,11 @@ class BaseAdvisorWindow:
 		
 		return None
 	
+	# set the header on a column added by an InfoArray
+	# returning None will use a default value, usually getChar
+	def getCustomHeader(self, iType, pInfo):
+		return None
+	
 	# add custom actions to input
 	# note that standard action like sort or widget based (like click to jump to colony) will not require custom input code
 	def handleInput (self, inputClass):

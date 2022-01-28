@@ -21,10 +21,6 @@ class MultiPageDomesticAdvisor:
 		self.name = name
 		self.screenName = self.name + "ListBackground"
 		self.pages = []
-		self.setupPages(parent, name)
-		
-		self.currentPage = 0
-		self.lastPage = len(self.pages) - 1
 		
 	def setupPages(self, parent, name):
 		# the only function to be overwritten. It should contain lines like:
@@ -34,6 +30,10 @@ class MultiPageDomesticAdvisor:
 		return
 		
 	def draw(self):
+		if len(self.pages) == 0:
+			self.setupPages(self.parent, self.name)		
+			self.currentPage = 0
+			self.lastPage = len(self.pages) - 1
 		self.pages[self.currentPage].draw()
 		
 	def hide(self):
