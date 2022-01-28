@@ -1517,13 +1517,12 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 	if (!(iFocusFlags & BUILDINGFOCUS_NO_RECURSION))
 	// TAC - AI Buildings - koma13 - END
 	{
-		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
+		// WTP, ray, refactored according to advice of Nightinggale
+		for (BuildingTypes eLoopBuilding = FIRST_BUILDING; eLoopBuilding < NUM_BUILDING_TYPES; ++eLoopBuilding)
 		{
-			BuildingTypes eLoopBuilding = (BuildingTypes)i;
 			if (!isHasBuilding(eLoopBuilding))
 			{
-				CvBuildingInfo& kLoopBuilding = GC.getBuildingInfo(eLoopBuilding);
-				
+				CvBuildingInfo& kLoopBuilding = GC.getBuildingInfo(eLoopBuilding);			
 				if (kLoopBuilding.isBuildingClassNeededInCity(kBuildingInfo.getBuildingClassType()))
 				{
 					// TAC - AI Buildings - koma13 - START
@@ -1531,9 +1530,9 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 					bool bOthersNeeded = ((kLoopBuilding.getAIWeight() > 0) || AI_isProductionBuilding(eLoopBuilding, bIsMajorCity));
 					if (!bOthersNeeded && bIsMajorCity)
 					{
-						for (int j = 0; j < GC.getNumBuildingInfos(); ++j)
+						// WTP, ray, refactored according to advice of Nightinggale
+						for (BuildingTypes eLoopBuilding2 = FIRST_BUILDING; eLoopBuilding2 < NUM_BUILDING_TYPES; eLoopBuilding2++)
 						{
-							BuildingTypes eLoopBuilding2 = (BuildingTypes)j;
 							if ((eLoopBuilding2 != eBuilding) && isHasBuilding(eLoopBuilding2))
 							{
 								if (kLoopBuilding.isBuildingClassNeededInCity(GC.getBuildingInfo(eLoopBuilding2).getBuildingClassType()))
@@ -4125,9 +4124,9 @@ int CvCityAI::AI_professionBasicOutput(ProfessionTypes eProfession, UnitTypes eU
 			iExtra += GC.getUnitInfo(eUnit).getYieldChange(eYieldProduced);
 		}
 
-		for (int i = 0; i < GC.getNumBuildingInfos(); i++)
+		// WTP, ray, refactored according to advice of Nightinggale
+		for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 		{
-			BuildingTypes eBuilding = (BuildingTypes) i;
 			if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == eSpecialBuilding)
 			{
 				if (isHasBuilding(eBuilding))

@@ -1139,11 +1139,12 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 
 	abEverOwned[getID()] = true;
 
-	for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
+	// WTP, ray, refactored according to advice of Nightinggale
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; eBuilding++)
 	{
-		pabHasRealBuilding[iI] = pOldCity->isHasRealBuilding((BuildingTypes)iI);
-		paiBuildingOriginalOwner[iI] = pOldCity->getBuildingOriginalOwner((BuildingTypes)iI);
-		paiBuildingOriginalTime[iI] = pOldCity->getBuildingOriginalTime((BuildingTypes)iI);
+		pabHasRealBuilding[eBuilding] = pOldCity->isHasRealBuilding(eBuilding);
+		paiBuildingOriginalOwner[eBuilding] = pOldCity->getBuildingOriginalOwner(eBuilding);
+		paiBuildingOriginalTime[eBuilding] = pOldCity->getBuildingOriginalTime(eBuilding);
 	}
 
 	std::vector<BuildingYieldChange> aBuildingYieldChange;
@@ -12304,12 +12305,12 @@ int CvPlayer::getAdvancedStartBuildingCost(BuildingTypes eBuilding, bool bAdd, C
 			}
 
 			// Check other buildings in this city and make sure none of them require this one
-			for (int iBuildingLoop = 0; iBuildingLoop < GC.getNumBuildingInfos(); iBuildingLoop++)
+			// WTP, ray, refactored according to advice of Nightinggale
+			for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; eBuilding++)
 			{
-				BuildingTypes eBuildingLoop = (BuildingTypes) iBuildingLoop;
-				if (pCity->isHasRealBuilding(eBuildingLoop))
+				if (pCity->isHasRealBuilding(eBuilding))
 				{
-					if (GC.getBuildingInfo(eBuildingLoop).isBuildingClassNeededInCity(kBuilding.getBuildingClassType()))
+					if (GC.getBuildingInfo(eBuilding).isBuildingClassNeededInCity(kBuilding.getBuildingClassType()))
 					{
 						return -1;
 					}
@@ -19170,9 +19171,9 @@ bool CvPlayer::checkPower(bool bReset)
 			iCityAsset += pCity->getPopulationUnitByIndex(i)->getAsset();
 		}
 
-		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
+		// WTP, ray, refactored according to advice of Nightinggale
+		for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 		{
-			BuildingTypes eBuilding = (BuildingTypes) i;
 			if (pCity->isHasBuilding(eBuilding))
 			{
 				iCityPower += GC.getBuildingInfo(eBuilding).getPowerValue();
@@ -19532,7 +19533,6 @@ void CvPlayer::doAchievements(bool afterMove)
 							count = 0;
 							for (pCity = firstCity(&iJ); pCity != NULL; pCity = nextCity(&iJ))
 							{
-
 								// R&R, ray fixed Achievement System for Buildings - START
 								int iSpecialBuildingTypeToCheck = GC.getBuildingInfo((BuildingTypes)iK).getSpecialBuildingType();
 								int iMinSpecialBuildingPriorityToCheck = GC.getBuildingInfo((BuildingTypes)iK).getSpecialBuildingPriority();

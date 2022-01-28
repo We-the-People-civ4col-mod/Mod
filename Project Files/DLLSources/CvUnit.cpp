@@ -5401,9 +5401,9 @@ bool CvUnit::canKingTransport() const
 	if (isHuman())
 	{
 		bool hasHarbor = false;
-		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
+		// WTP, ray, refactored according to advice of Nightinggale
+		for (BuildingTypes eLoopBuilding = FIRST_BUILDING; eLoopBuilding < NUM_BUILDING_TYPES; ++eLoopBuilding)
 		{
-			BuildingTypes eLoopBuilding = (BuildingTypes)i;
 			CvBuildingInfo& kLoopBuilding = GC.getBuildingInfo(eLoopBuilding);
 			if(kLoopBuilding.getSeaPlotYieldChange(YIELD_FOOD) > 1 && pCity->isHasBuilding(eLoopBuilding))
 			{
@@ -14602,9 +14602,9 @@ bool CvUnit::raidBuilding(CvCity* pCity)
 	}
 
 	std::vector<BuildingTypes> aBuildings;
-	for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
+	// WTP, ray, refactored according to advice of Nightinggale
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; eBuilding++)
 	{
-		BuildingTypes eBuilding = (BuildingTypes)iI;
 		CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
 		// R&R, ray fix for Buildings with workers destoryed
 		// only buildings without workers possible will be destroyed

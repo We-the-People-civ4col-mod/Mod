@@ -186,7 +186,8 @@ void CvPlayerCivEffect::rebuildCivEffectCache()
 
 	// Setup some default data based on xml values
 	// While those aren't from the CivEffect file itself, they are still useful to include in the cache.
-	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < GC.getNumBuildingInfos(); ++eBuilding)
+	// WTP, ray, refactored according to advice of Nightinggale
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 	{
 		if (eBuilding != kCivInfo.getCivilizationBuildings(GC.getBuildingInfo(eBuilding).getBuildingClassType()))
 		{

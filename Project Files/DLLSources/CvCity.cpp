@@ -70,7 +70,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 
 	CvPlot* pAdjacentPlot;
 	CvPlot* pPlot;
-	BuildingTypes eLoopBuilding;
+	//BuildingTypes eLoopBuilding;
 	
 	pPlot = GC.getMapINLINE().plotINLINE(iX, iY);
 
@@ -235,12 +235,13 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 			}
 		}
 	}
-
-	for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
+			
+	// WTP, ray, refactored according to advice of Nightinggale
+	for (BuildingTypes eLoopBuilding = FIRST_BUILDING; eLoopBuilding < NUM_BUILDING_TYPES; eLoopBuilding++)
 	{
-		if (GET_PLAYER(getOwnerINLINE()).isBuildingFree((BuildingTypes)iI))
+		if (GET_PLAYER(getOwnerINLINE()).isBuildingFree(eLoopBuilding))
 		{
-			setHasFreeBuilding(((BuildingTypes)iI), true);
+			setHasFreeBuilding((eLoopBuilding), true);
 		}
 	}
 
@@ -270,7 +271,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 		{
 			if (GC.getCivilizationInfo(getCivilizationType()).isCivilizationFreeBuildingClass(iI))
 			{
-				eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iI)));
+				BuildingTypes eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iI)));
 
 				if (eLoopBuilding != NO_BUILDING)
 				{
@@ -424,10 +425,11 @@ void CvCity::kill()
 
 	setCultureLevel(NO_CULTURELEVEL);
 
-	for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
+	// WTP, ray, refactored according to advice of Nightinggale
+	for (BuildingTypes eLoopBuilding = FIRST_BUILDING; eLoopBuilding < NUM_BUILDING_TYPES; eLoopBuilding++)
 	{
-		setHasRealBuilding(((BuildingTypes)iI), false);
-		setHasFreeBuilding(((BuildingTypes)iI), false);
+		setHasRealBuilding((eLoopBuilding), false);
+		setHasFreeBuilding((eLoopBuilding), false);
 	}
 
 	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
@@ -1194,9 +1196,9 @@ int CvCity::getNumProfessionBuildingSlots(ProfessionTypes eProfession) const
 	}
 
 	int iTotalSlots = 0;
-	for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
+	// WTP, ray, refactored according to advice of Nightinggale
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 	{
-		BuildingTypes eBuilding = (BuildingTypes) i;
 		CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
 		if (kBuilding.getSpecialBuildingType() == eSpecialBuilding)
 		{
@@ -1246,9 +1248,9 @@ bool CvCity::isAvailableProfessionSlot(ProfessionTypes eProfession, const CvUnit
 			}
 			*/
 			bool bHasBuilding = false;
-			for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
+			// WTP, ray, refactored according to advice of Nightinggale
+			for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 			{
-				BuildingTypes eBuilding = (BuildingTypes) i;
 				if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == GC.getProfessionInfo(eProfession).getSpecialBuilding() && isHasBuilding(eBuilding))
 				{
 					bHasBuilding = true;
@@ -3045,9 +3047,9 @@ int CvCity::getProfessionOutput(ProfessionTypes eProfession, const CvUnit* pUnit
 	}
 
 	int iProfessionOutput = 0;
-	for (int i = 0; i < GC.getNumBuildingInfos(); i++)
+	// WTP, ray, refactored according to advice of Nightinggale
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; eBuilding++)
 	{
-		BuildingTypes eBuilding = (BuildingTypes) i;
 		if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == eSpecialBuilding)
 		{
 			if (isHasBuilding(eBuilding))
@@ -3123,9 +3125,9 @@ BuildingTypes CvCity::getYieldBuilding(YieldTypes eYield) const
 			SpecialBuildingTypes eSpecialBuilding = (SpecialBuildingTypes) GC.getProfessionInfo(eProfession).getSpecialBuilding();
 			if(eSpecialBuilding != NO_SPECIALBUILDING)
 			{
-				for (int iBuilding = 0; iBuilding < GC.getNumBuildingInfos(); ++iBuilding)
+				// WTP, ray, refactored according to advice of Nightinggale
+				for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; eBuilding++)
 				{
-					BuildingTypes eBuilding = (BuildingTypes) iBuilding;
 					if(isHasBuilding(eBuilding))
 					{
 						if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == eSpecialBuilding)
@@ -6121,9 +6123,11 @@ void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool 
 	{
 		//Iterate over all the buildings in the game and build a temporary cache which indicates if a building exists in the city AND has the highest tier in its building slot.
 		std::deque<bool> abOldBuildings(GC.getNumBuildingInfos());
-		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
+
+		// WTP, ray, refactored according to advice of Nightinggale
+		for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 		{
-			abOldBuildings[i] = isHasBuilding((BuildingTypes) i);
+			abOldBuildings[eBuilding] = isHasBuilding(eBuilding);
 		}
 
 		//Update the cities array for "real" buildings.
@@ -6143,10 +6147,9 @@ void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool 
 		}
 
 		//Iterate over all the buildings in the game ...
-		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
+		// WTP, ray, refactored according to advice of Nightinggale
+		for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 		{
-			BuildingTypes eBuilding = (BuildingTypes) i;
-
 			//... check if there is a difference between the array with the cached building state and the cities array for "real" buildings and if it is the highest tier in its building slot.
 			if (abOldBuildings[eBuilding] != isHasBuilding(eBuilding))
 			{
@@ -6216,9 +6219,10 @@ void CvCity::setHasFreeBuilding(BuildingTypes eIndex, bool bNewValue)
 	{
 		//Iterate over all the buildings in the game and build a temporary cache which indicates if a building exists in the city AND has the highest tier in its building slot.
 		std::deque<bool> abOldBuildings(GC.getNumBuildingInfos());
-		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
+		// WTP, ray, refactored according to advice of Nightinggale
+		for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 		{
-			abOldBuildings[i] = isHasBuilding((BuildingTypes) i);
+			abOldBuildings[eBuilding] = isHasBuilding(eBuilding);
 		}
 
 		//Update the cities array for "free" buildings.
@@ -6226,10 +6230,9 @@ void CvCity::setHasFreeBuilding(BuildingTypes eIndex, bool bNewValue)
 		setYieldRateDirty();
 
 		//Iterate over all the buildings in the game ...
-		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
+		// WTP, ray, refactored according to advice of Nightinggale
+		for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 		{
-			BuildingTypes eBuilding = (BuildingTypes) i;
-
 			//... check if there is a difference between the array with the cached building state and the cities array for "free" buildings and if it is the highest tier in its building slot.
 			if (abOldBuildings[eBuilding] != isHasBuilding(eBuilding))
 			{
@@ -6773,9 +6776,9 @@ void CvCity::getOrdersWaitingForYield(std::vector< std::pair<OrderTypes, int> >&
 		}
 	}
 
-	for (int iBuilding = 0; iBuilding < GC.getNumBuildingInfos(); ++iBuilding)
+	// WTP, ray, refactored according to advice of Nightinggale
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 	{
-		BuildingTypes eBuilding = (BuildingTypes) iBuilding;
 		if (getBuildingProduction(eBuilding) > 0)
 		{
 			int iNeeded = getYieldProductionNeeded(eBuilding, eYield);
@@ -7573,32 +7576,31 @@ void CvCity::doProduction(bool bAllowNoProduction)
 
 void CvCity::doDecay()
 {
-	int iI;
-
-	for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
+	// WTP, ray, refactored according to advice of Nightinggale
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; eBuilding++)
 	{
-		if (getProductionBuilding() != ((BuildingTypes)iI))
+		if (getProductionBuilding() != eBuilding)
 		{
-			if (getBuildingProduction((BuildingTypes)iI) > 0)
+			if (getBuildingProduction(eBuilding) > 0)
 			{
-				changeBuildingProductionTime(((BuildingTypes)iI), 1);
+				changeBuildingProductionTime(eBuilding, 1);
 
 				if (isHuman())
 				{
-					if (getBuildingProductionTime((BuildingTypes)iI) > GC.getDefineINT("BUILDING_PRODUCTION_DECAY_TIME"))
+					if (getBuildingProductionTime(eBuilding) > GC.getDefineINT("BUILDING_PRODUCTION_DECAY_TIME"))
 					{
-						setBuildingProduction(((BuildingTypes)iI), ((getBuildingProduction((BuildingTypes)iI) * GC.getDefineINT("BUILDING_PRODUCTION_DECAY_PERCENT")) / 100));
+						setBuildingProduction((eBuilding), ((getBuildingProduction(eBuilding) * GC.getDefineINT("BUILDING_PRODUCTION_DECAY_PERCENT")) / 100));
 					}
 				}
 			}
 			else
 			{
-				setBuildingProductionTime(((BuildingTypes)iI), 0);
+				setBuildingProductionTime((eBuilding), 0);
 			}
 		}
 	}
 
-	for (iI = 0; iI < GC.getNumUnitInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumUnitInfos(); iI++)
 	{
 		if (getProductionUnit() != ((UnitTypes)iI))
 		{
@@ -10777,15 +10779,16 @@ void CvCity::NBMOD_SetCityTeachLevelCache() // NBMOD EDU cache - Nightinggale
 {
 	int iMaxTeachLevel = 0;
 
-	// alle m�glichen Geb�ude durchgehen
-	for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
+	// loop all possible buildings
+	// WTP, ray, refactored according to advice of Nightinggale
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; eBuilding++)
 	{
-		// abfragen ob dieses geb�ude in der Stadt vorkommt
-		if (isHasBuilding((BuildingTypes)iI))
+		// check if the Building exists in City
+		if (isHasBuilding(eBuilding))
 		{
-			if (GC.getBuildingInfo((BuildingTypes)iI).NBMOD_GetTeachLevel() > iMaxTeachLevel)
+			if (GC.getBuildingInfo(eBuilding).NBMOD_GetTeachLevel() > iMaxTeachLevel)
 			{
-				iMaxTeachLevel = GC.getBuildingInfo((BuildingTypes)iI).NBMOD_GetTeachLevel();
+				iMaxTeachLevel = GC.getBuildingInfo(eBuilding).NBMOD_GetTeachLevel();
 			}
 		}
 	}
@@ -11473,9 +11476,10 @@ void CvCity::doAutoExport(YieldTypes eYield)
 // PatchMod: Achievements START
 bool CvCity::isHasSpecialBuilding(int iValue) const
 {
-	for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
+	// WTP, ray, refactored according to advice of Nightinggale
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; eBuilding++)
 	{
-		if (GC.getBuildingInfo((BuildingTypes)iI).getSpecialBuildingType() == iValue && isHasBuilding((BuildingTypes)iI))
+		if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == iValue && isHasBuilding(eBuilding))
 		{
 			return true;
 		}
@@ -12662,9 +12666,9 @@ void CvCity::doEntertainmentBuildings()
 	int factorFromBuildingLevel = 0;
 	BuildingTypes highestLevelEntertainmentBuilding = NO_BUILDING;
 
-	for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
+	// WTP, ray, refactored according to advice of Nightinggale
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 	{
-		BuildingTypes eBuilding = (BuildingTypes) i;
 		if (isHasBuilding(eBuilding))
 		{
 			CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);

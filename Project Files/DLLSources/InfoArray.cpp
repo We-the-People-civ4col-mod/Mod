@@ -531,7 +531,7 @@ void InfoArrayMod::convertClass(const InfoArrayBase* pInfoArray, const CvCiviliz
 			}
 			else
 			{
-				for (BuildingTypes eLoopBuilding = FIRST_BUILDING; eLoopBuilding < GC.getNumBuildingInfos(); ++eLoopBuilding)
+				for (BuildingTypes eLoopBuilding = FIRST_BUILDING; eLoopBuilding < NUM_BUILDING_TYPES; ++eLoopBuilding)
 				{
 					CvBuildingInfo& kInfo = GC.getBuildingInfo(eLoopBuilding);
 					if (kInfo.getBuildingClassType() == eBuildingClass)

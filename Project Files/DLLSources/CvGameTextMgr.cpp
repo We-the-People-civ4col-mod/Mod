@@ -3329,11 +3329,12 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 	}
 
 	bFirst = true;
-	for (int iI = 0; iI < GC.getNumBuildingInfos(); ++iI)
+	// WTP, ray, refactored according to advice of Nightinggale
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; eBuilding++)
 	{
-		if (pCity->isHasRealBuilding((BuildingTypes)iI))
+		if (pCity->isHasRealBuilding(eBuilding))
 		{
-			setListHelp(szString, NEWLINE, GC.getBuildingInfo((BuildingTypes)iI).getDescription(), L", ", bFirst);
+			setListHelp(szString, NEWLINE, GC.getBuildingInfo(eBuilding).getDescription(), L", ", bFirst);
 			bFirst = false;
 		}
 	}
@@ -8146,13 +8147,14 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 	int iBaseProduction = 0;
 
 	int iBuildingYield = 0;
-	for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
+	// WTP, ray, refactored according to advice of Nightinggale
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 	{
-		if (city.isHasBuilding((BuildingTypes)i))
+		if (city.isHasBuilding(eBuilding))
 		{
-			iBuildingYield += GC.getBuildingInfo((BuildingTypes) i).getYieldChange(eYieldType);
-			iBuildingYield += city.getBuildingYieldChange((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes) i).getBuildingClassType(), eYieldType);
-			iBuildingYield += owner.getBuildingYieldChange((BuildingClassTypes)GC.getBuildingInfo((BuildingTypes) i).getBuildingClassType(), eYieldType);
+			iBuildingYield += GC.getBuildingInfo(eBuilding).getYieldChange(eYieldType);
+			iBuildingYield += city.getBuildingYieldChange((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), eYieldType);
+			iBuildingYield += owner.getBuildingYieldChange((BuildingClassTypes)GC.getBuildingInfo(eBuilding).getBuildingClassType(), eYieldType);
 		}
 	}
 
@@ -8641,11 +8643,12 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 
 	// Buildings
 	int iBuildingMod = 0;
-	for (int i = 0; i < GC.getNumBuildingInfos(); i++)
+	// WTP, ray, refactored according to advice of Nightinggale
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 	{
-		CvBuildingInfo& infoBuilding = GC.getBuildingInfo((BuildingTypes)i);
-		if (kCity.isHasBuilding((BuildingTypes)i))
+		if (kCity.isHasBuilding(eBuilding))
 		{
+			CvBuildingInfo& infoBuilding = GC.getBuildingInfo(eBuilding);
 			iBuildingMod += infoBuilding.getYieldModifier(eYieldType);
 		}
 	}

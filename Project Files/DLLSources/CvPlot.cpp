@@ -8877,11 +8877,13 @@ void CvPlot::processArea(CvArea* pArea, int iChange)
 		pArea->changeCitiesPerPlayer(pCity->getOwnerINLINE(), iChange);
 		pArea->changePopulationPerPlayer(pCity->getOwnerINLINE(), (pCity->getPopulation() * iChange));
 
-		for (iI = 0; iI < GC.getNumBuildingInfos(); ++iI)
+		// While those aren't from the CivEffect file itself, they are still useful to include in the cache.
+		// WTP, ray, refactored according to advice of Nightinggale
+		for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
 		{
-			if (pCity->isHasBuilding((BuildingTypes)iI))
+			if (pCity->isHasBuilding(eBuilding))
 			{
-				pArea->changePower(pCity->getOwnerINLINE(), (GC.getBuildingInfo((BuildingTypes)iI).getPowerValue() * iChange));
+				pArea->changePower(pCity->getOwnerINLINE(), (GC.getBuildingInfo(eBuilding).getPowerValue() * iChange));
 			}
 		}
 
@@ -9121,9 +9123,10 @@ int CvPlot::calculateMaxYield(YieldTypes eYield) const
 	if (!isWater() && !isImpassable())
 	{
 		int iBuildingYield = 0;
-		for (int iBuilding = 0; iBuilding < GC.getNumBuildingInfos(); iBuilding++)
+		// WTP, ray, refactored according to advice of Nightinggale
+		for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; eBuilding++)
 		{
-			CvBuildingInfo& building = GC.getBuildingInfo((BuildingTypes)iBuilding);
+			CvBuildingInfo& building = GC.getBuildingInfo(eBuilding);
 			iBuildingYield = building.getLandPlotYieldChange(eYield);
 		}
 		// ray, small improvement to LandPlotYieldChanges, SeaPlotYieldChanges, RiverPlotYieldChanges of Buildings
@@ -9137,9 +9140,10 @@ int CvPlot::calculateMaxYield(YieldTypes eYield) const
 	if (isWater() && !isImpassable())
 	{
 		int iBuildingYield = 0;
-		for (int iBuilding = 0; iBuilding < GC.getNumBuildingInfos(); iBuilding++)
+		// WTP, ray, refactored according to advice of Nightinggale
+		for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; eBuilding++)
 		{
-			CvBuildingInfo& building = GC.getBuildingInfo((BuildingTypes)iBuilding);
+			CvBuildingInfo& building = GC.getBuildingInfo(eBuilding);
 			iBuildingYield = building.getSeaPlotYieldChange(eYield);
 		}
 		// ray, small improvement to LandPlotYieldChanges, SeaPlotYieldChanges, RiverPlotYieldChanges of Buildings
@@ -9152,9 +9156,10 @@ int CvPlot::calculateMaxYield(YieldTypes eYield) const
 	if (isRiver())
 	{
 		int iBuildingYield = 0;
-		for (int iBuilding = 0; iBuilding < GC.getNumBuildingInfos(); iBuilding++)
+		// WTP, ray, refactored according to advice of Nightinggale
+		for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; eBuilding++)
 		{
-			CvBuildingInfo& building = GC.getBuildingInfo((BuildingTypes)iBuilding);
+			CvBuildingInfo& building = GC.getBuildingInfo(eBuilding);
 			iBuildingYield = std::max(building.getRiverPlotYieldChange(eYield), iBuildingYield);
 		}
 		// ray, small improvement to LandPlotYieldChanges, SeaPlotYieldChanges, RiverPlotYieldChanges of Buildings
