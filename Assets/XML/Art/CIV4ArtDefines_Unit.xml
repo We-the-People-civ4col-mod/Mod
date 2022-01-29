@@ -1084,7 +1084,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_PROFESSION_UNIT_MISSIONARY</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,2,12</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,12</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Missionary_Jesuit.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>

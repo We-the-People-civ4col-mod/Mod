@@ -1299,4 +1299,8 @@
 		<DefineName>PERCENT_MODIFIER_GAMEOPTION_UNREST_TURNS_DEPEND_ON_CITY_SIZE</DefineName>
 		<iDefineIntVal>200</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>CITY_DEFENSE_HILL_BONUS</DefineName>
+		<iDefineIntVal>20</iDefineIntVal>
+	</Define>
 </Civ4Defines>

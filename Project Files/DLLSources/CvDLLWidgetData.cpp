@@ -2773,6 +2773,37 @@ void CvDLLWidgetData::parseCityDefenseHelp(CvWidgetDataStruct &widgetDataStruct,
 	CvCity* pHeadSelectedCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
 	if (pHeadSelectedCity != NULL)
 	{
+		// WTP, ray, City Defense Help improved
+		int iBuildingDefense = pHeadSelectedCity->getBuildingDefense();
+		int iFortDefenseBonus = pHeadSelectedCity->getFortDefenseBonusForCity();
+		int iHillModifier = GC.getDefineINT("CITY_DEFENSE_HILL_BONUS");
+		int iOwnerTraitModifier = GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).getCityDefenseModifier();
+
+		if (iBuildingDefense != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_CITY_BUILDING_DEFENSE_MODIFIER", iBuildingDefense));
+			szBuffer.append(NEWLINE);
+		}
+		if (iFortDefenseBonus != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_CITY_FORT_DEFENSE_MODIFIER", iFortDefenseBonus));
+			szBuffer.append(NEWLINE);
+		}
+		if ((pHeadSelectedCity->plot())->isHills())
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_CITY_HILL_DEFENSE_MODIFIER", iHillModifier));
+			szBuffer.append(NEWLINE);
+		}
+		if (iOwnerTraitModifier != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_CITY_PLAYER_TRAITS_DEFENSE_MODIFIER", iOwnerTraitModifier));
+			szBuffer.append(NEWLINE);
+		}
+		if (pHeadSelectedCity->getTotalDefense() != 0)
+		{
+			szBuffer.append(SEPARATOR);
+			szBuffer.append(NEWLINE);
+		}
 		szBuffer.append(gDLL->getText("TXT_KEY_PLOT_BONUS", pHeadSelectedCity->getTotalDefense()));
 	}
 }

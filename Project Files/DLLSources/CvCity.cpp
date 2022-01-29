@@ -3601,7 +3601,12 @@ int CvCity::getTotalDefense() const
 {
 	// WTP, ray, Improvements give Bonus to their City - START
 	// return (getBuildingDefense() + GET_PLAYER(getOwnerINLINE()).getCityDefenseModifier());
-	return (getBuildingDefense() + GET_PLAYER(getOwnerINLINE()).getCityDefenseModifier() + getFortDefenseBonusForCity());
+	int iHillModifier = 0;
+	if (plot()->isHills())
+	{
+		iHillModifier = GC.getDefineINT("CITY_DEFENSE_HILL_BONUS");
+	}
+	return (getBuildingDefense() + GET_PLAYER(getOwnerINLINE()).getCityDefenseModifier() + getFortDefenseBonusForCity() + iHillModifier);
 	// WTP, ray, Improvements give Bonus to their City - END
 }
 
