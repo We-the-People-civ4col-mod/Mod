@@ -6167,10 +6167,10 @@
             <bFishingboatWorkable>0</bFishingboatWorkable>
         </BonusInfo>
         <BonusInfo>
-            <Type>BONUS_GOOSE</Type>
-            <Description>TXT_KEY_BONUS_GOOSE</Description>
-            <Civilopedia>TXT_KEY_BONUS_GOOSE_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_BONUS_GOOSE</ArtDefineTag>
+            <Type>BONUS_CANADA_GOOSE</Type>
+            <Description>TXT_KEY_BONUS_CANADA_GOOSE</Description>
+            <Civilopedia>TXT_KEY_BONUS_CANADA_GOOSE_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_BONUS_CANADA_GOOSE</ArtDefineTag>
             <BuildingType>NONE</BuildingType>
             <YieldChanges>
                 <YieldIntegerPair>

@@ -392,7 +392,7 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
-            <Type>ART_DEF_BONUS_GOOSE</Type>
+            <Type>ART_DEF_BONUS_CANADA_GOOSE</Type>
             <fScale>2.0</fScale>
             <fInterfaceScale>1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Canada_Goose/Goose_FX.nif</NIF>
