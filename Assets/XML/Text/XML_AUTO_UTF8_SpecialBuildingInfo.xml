@@ -2,7 +2,7 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_BEER</Tag>
-        <English>Beer production</English>
+        <English>Breweries</English>
         <French>Production de bière</French>
         <German>Brauereien</German>
         <Italian>Beerproduction</Italian>
@@ -50,7 +50,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_CLOTH</Tag>
-        <English>Cloth Buildings</English>
+        <English>Textile Mills</English>
         <French>
             <Text>Bâtiments dédiés aux tissus</Text>
             <Gender>Male</Gender>
@@ -98,7 +98,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_CORN</Tag>
-        <English>Corn</English>
+        <English>Granary</English>
         <French>Maïs</French>
         <German>Getreide</German>
         <Italian>Corn</Italian>
@@ -130,7 +130,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_DOCK</Tag>
-        <English>Docks</English>
+        <English>Port Facilities</English>
         <French>
             <Text>Docks</Text>
             <Gender>Male</Gender>
@@ -206,7 +206,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_HORSES</Tag>
-        <English>Horse Buildings</English>
+        <English>Horse Stables</English>
         <French>
             <Text>Bâtiments dédiés aux chevaux</Text>
             <Gender>Male</Gender>
@@ -250,7 +250,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_MUSKETS</Tag>
-        <English>Armoury Buildings</English>
+        <English>Armouries</English>
         <French>
             <Text>Bâtiments dédiés aux armes</Text>
             <Gender>Male</Gender>
@@ -270,7 +270,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_PRINT</Tag>
-        <English>Printing Buildings</English>
+        <English>Printers</English>
         <French>Bâtiments d'imprimerie</French>
         <German>Druckereien</German>
         <Italian>Edifici per la stampa</Italian>
@@ -278,7 +278,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_RUM</Tag>
-        <English>Rum Buildings</English>
+        <English>Distilleries</English>
         <French>
             <Text>Bâtiments dédiés au rhum</Text>
             <Gender>Male</Gender>
@@ -398,7 +398,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_WHALE_OIL</Tag>
-        <English>Train Oil Production</English>
+        <English>Whale Oil Production</English>
         <French>Production d'huile de baleine</French>
         <German>Walfettverarbeitung</German>
         <Italian>Whaleoilproduction</Italian>
