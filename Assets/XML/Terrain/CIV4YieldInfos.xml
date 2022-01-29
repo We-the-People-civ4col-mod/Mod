@@ -83,7 +83,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_LUMBER</UnitClass>
             <iTextureIndex>1</iTextureIndex>
-            <iWaterTextureIndex>1</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,2,14</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,2,1</HighlightIcon>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,2,1</Button>
@@ -123,8 +123,8 @@
             <iAsset>1</iAsset>
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_HARDWOOD</UnitClass>
-            <iTextureIndex>0</iTextureIndex>
-            <iWaterTextureIndex>10</iWaterTextureIndex>
+            <iTextureIndex>31</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Hardwood_Goods_Icon.dds</Icon>	
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,1,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Hardwood_Goods_Button.dds</Button>
@@ -165,7 +165,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_STONE</UnitClass>
             <iTextureIndex>14</iTextureIndex>
-            <iWaterTextureIndex>14</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,8,14</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,13,1</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,8,5</Button>
@@ -205,8 +205,8 @@
             <iAsset>1</iAsset>
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_CLAY</UnitClass>
-            <iTextureIndex>14</iTextureIndex>
-            <iWaterTextureIndex>14</iWaterTextureIndex>
+            <iTextureIndex>32</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Clay_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,13,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Clay_Goods_Button.dds</Button>
@@ -247,7 +247,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_HEMP</UnitClass>
             <iTextureIndex>25</iTextureIndex>
-            <iWaterTextureIndex>25</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,5,12</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,5,1</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,5,3</Button>
@@ -287,8 +287,8 @@
             <iAsset>1</iAsset>
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_FLAX</UnitClass>
-            <iTextureIndex>25</iTextureIndex>
-            <iWaterTextureIndex>25</iWaterTextureIndex>
+            <iTextureIndex>33</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Linen_Fiber_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,5,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Linen_Fiber_Goods_Button.dds</Button>
@@ -329,7 +329,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_ORE</UnitClass>
             <iTextureIndex>9</iTextureIndex>
-            <iWaterTextureIndex>9</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,14</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,8,1</HighlightIcon>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,1</Button>
@@ -368,8 +368,8 @@
             <iAsset>1</iAsset>
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_COAL</UnitClass>
-            <iTextureIndex>14</iTextureIndex>
-            <iWaterTextureIndex>14</iWaterTextureIndex>
+            <iTextureIndex>34</iTextureIndex>
+            <iWaterTextureIndex>34</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Coal_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,13,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Coal_Goods_Button.dds</Button>
@@ -450,7 +450,7 @@
             <iAsset>1</iAsset>
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_GOATS</UnitClass>
-            <iTextureIndex>22</iTextureIndex>
+            <iTextureIndex>35</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Goats_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,7,2</HighlightIcon>
@@ -491,7 +491,7 @@
             <iAsset>1</iAsset>
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_PIGS</UnitClass>
-            <iTextureIndex>22</iTextureIndex>
+            <iTextureIndex>36</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Pigs_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,7,2</HighlightIcon>
@@ -573,7 +573,7 @@
             <iAsset>1</iAsset>
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_CHICKEN</UnitClass>
-            <iTextureIndex>23</iTextureIndex>
+            <iTextureIndex>37</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Chicken_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,7,2</HighlightIcon>
@@ -614,7 +614,7 @@
             <iAsset>1</iAsset>
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_GEESE</UnitClass>
-            <iTextureIndex>23</iTextureIndex>
+            <iTextureIndex>38</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Goose_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,7,2</HighlightIcon>
@@ -697,7 +697,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_COCOA_FRUITS</UnitClass>
             <iTextureIndex>3</iTextureIndex>
-            <iWaterTextureIndex>3</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,5,10</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,9,1</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,5,1</Button>
@@ -738,7 +738,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_COFFEE_BERRIES</UnitClass>
             <iTextureIndex>16</iTextureIndex>
-            <iWaterTextureIndex>16</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,3,11</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,5,1</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,3,2</Button>
@@ -779,7 +779,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_TOBACCO</UnitClass>
             <iTextureIndex>7</iTextureIndex>
-            <iWaterTextureIndex>7</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,14</Icon>
             <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Tobacco_Yerba.dds</CombiIcon>	
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,7,1</HighlightIcon>
@@ -820,8 +820,8 @@
             <iAsset>1</iAsset>
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_YERBA_LEAVES</UnitClass>
-            <iTextureIndex>7</iTextureIndex>
-            <iWaterTextureIndex>7</iWaterTextureIndex>
+            <iTextureIndex>39</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Yerba_Leaves_Goods_Icon.dds</Icon>
             <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Tobacco_Yerba.dds</CombiIcon>	
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,7,1</HighlightIcon>
@@ -863,7 +863,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_COTTON</UnitClass>
             <iTextureIndex>4</iTextureIndex>
-            <iWaterTextureIndex>4</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,14</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,5,1</HighlightIcon>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,1</Button>
@@ -904,7 +904,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_INDIGO</UnitClass>
             <iTextureIndex>11</iTextureIndex>
-            <iWaterTextureIndex>11</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,1,13</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,10,1</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,1,4</Button>
@@ -944,8 +944,8 @@
             <iAsset>1</iAsset>
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_LOGWOOD</UnitClass>
-            <iTextureIndex>11</iTextureIndex>
-            <iWaterTextureIndex>11</iWaterTextureIndex>
+            <iTextureIndex>40</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Bloodwood_Goods_Icon.dds</Icon>	
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,10,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Bloodwood_Goods_Button.dds</Button>
@@ -1319,7 +1319,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_RED_PEPPER</UnitClass>
             <iTextureIndex>17</iTextureIndex>
-            <iWaterTextureIndex>17</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,6,14</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,5,1</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,6,5</Button>
@@ -1359,8 +1359,8 @@
             <iAsset>1</iAsset>
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_VANILLA_PODS</UnitClass>
-            <iTextureIndex>17</iTextureIndex>
-            <iWaterTextureIndex>17</iWaterTextureIndex>
+            <iTextureIndex>41</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Vanilla_Pods_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,5,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Vanilla_Pods_Goods_Button.dds</Button>
@@ -1442,7 +1442,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_SUGAR</UnitClass>
             <iTextureIndex>6</iTextureIndex>
-            <iWaterTextureIndex>6</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,14</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,6,1</HighlightIcon>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,1</Button>
@@ -1482,8 +1482,8 @@
             <iAsset>1</iAsset>
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_FRUITS</UnitClass>
-            <iTextureIndex>6</iTextureIndex>
-            <iWaterTextureIndex>6</iWaterTextureIndex>
+            <iTextureIndex>42</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Fruits_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,6,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Fruits_Goods_Button.dds</Button>
@@ -1524,7 +1524,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_GRAPES</UnitClass>
             <iTextureIndex>18</iTextureIndex>
-            <iWaterTextureIndex>18</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,3,12</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,5,1</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,3,3</Button>
@@ -1606,7 +1606,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_VALUABLE_WOOD</UnitClass>
             <iTextureIndex>19</iTextureIndex>
-            <iWaterTextureIndex>19</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,5,11</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,5,1</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,5,2</Button>
@@ -1932,8 +1932,8 @@
             <iAsset>1</iAsset>
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_WILD_FEATHERS</UnitClass>
-            <iTextureIndex>-1</iTextureIndex>
-            <iWaterTextureIndex>-1</iWaterTextureIndex>
+            <iTextureIndex>43</iTextureIndex>
+            <iWaterTextureIndex>43</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Wild_Feathres_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,5,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Wild_Feathres_Goods_Button.dds</Button>
@@ -1974,7 +1974,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_SILVER</UnitClass>
             <iTextureIndex>2</iTextureIndex>
-            <iWaterTextureIndex>2</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,14</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,3,1</HighlightIcon>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,1</Button>
@@ -2015,7 +2015,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_GOLD</UnitClass>
             <iTextureIndex>13</iTextureIndex>
-            <iWaterTextureIndex>13</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,1,12</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,4,1</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,1,3</Button>
@@ -2137,7 +2137,7 @@
             <iAsset>1</iAsset>
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_MAPLE_SIRUP</UnitClass>
-            <iTextureIndex>30</iTextureIndex>
+            <iTextureIndex>44</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Maple_Sirup_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,9,1</HighlightIcon>
@@ -2179,7 +2179,7 @@
             <ColorType>COLOR_YIELD_FOOD</ColorType>
             <UnitClass>UNITCLASS_COCOA</UnitClass>
             <iTextureIndex>3</iTextureIndex>
-            <iWaterTextureIndex>3</iWaterTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,7,10</Icon>
             <CombiIcon>,Art/colonization_atlas_resources.dds,3,9</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,9,1</HighlightIcon>
@@ -2268,7 +2268,6 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,4,2</HighlightIcon>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,2</Button>
         </YieldInfo>
-		
         <YieldInfo>
             <Type>YIELD_YERBA_TEA</Type>
             <Description>TXT_KEY_YIELD_YERBA_TEA</Description>
