@@ -2444,24 +2444,32 @@
         <Spanish>Bonificación de defensa : %D1_Mod%%</Spanish>
     </TEXT>
 	<TEXT>
+        <Tag>TXT_KEY_PLOT_BONUS_CITY</Tag>
+        <English>Defense bonus : %D1_Mod%%%F2_Icon</English>
+        <French>Bonus de défense : %D1_Mod%%%F2_Icon</French>
+        <German>Defensivbonus : %D1_Mod%%%F2_Icon</German>
+        <Italian>Bonus difensivo : %D1_Mod%%%F2_Icon</Italian>
+        <Spanish>Bonificación de defensa : %D1_Mod%%%F2_Icon</Spanish>
+    </TEXT>
+	<TEXT>
         <Tag>TXT_KEY_CITY_BUILDING_DEFENSE_MODIFIER</Tag>
-        <English>From Buildings : %D1_Mod%%</English>
-        <German>Durch Gebäude : %D1_Mod%%</German>
+        <English>From Buildings : %D1_Mod%%%F2_Icon</English>
+        <German>Durch Gebäude : %D1_Mod%%%F2_Icon</German>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_CITY_FORT_DEFENSE_MODIFIER</Tag>
-        <English>From Forts close by : %D1_Mod%%</English>
-        <German>Von Forts im Umland : %D1_Mod%%</German>
+        <English>From Forts close by : %D1_Mod%%%F2_Icon</English>
+        <German>Von Forts im Umland : %D1_Mod%%%F2_Icon</German>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_CITY_HILL_DEFENSE_MODIFIER</Tag>
-        <English>From Location on Hills : %D1_Mod%%</English>
-        <German>Durch Standort auf Hügeln : +%D1_Mod%%</German>
+        <English>From Location on Hills : %D1_Mod%%%F2_Icon</English>
+        <German>Durch Standort auf Hügeln : +%D1_Mod%%%F2_Icon</German>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_CITY_PLAYER_TRAITS_DEFENSE_MODIFIER</Tag>
-        <English>From Bonusses of Player : %D1_Mod%%</English>
-        <German>Durch Spielereigenschaften : %D1_Mod%%</German>
+        <English>From Bonusses of Player : %D1_Mod%%%F2_Icon</English>
+        <German>Durch Spielereigenschaften : %D1_Mod%%%F2_Icon</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLOT_PEAK</Tag>
