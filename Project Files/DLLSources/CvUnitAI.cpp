@@ -7476,7 +7476,7 @@ void CvUnitAI::AI_setMovePriority(int iNewValue)
 	}
 }
 
-bool CvUnitAI::AI_hasAIChanged(int iNumTurns)
+bool CvUnitAI::AI_hasAIChanged(int iNumTurns) const
 {
 	if (getGameTurnCreated() == AI_getLastAIChangeTurn())
 	{
@@ -7490,7 +7490,7 @@ bool CvUnitAI::AI_hasAIChanged(int iNumTurns)
 	return false;
 }
 
-int CvUnitAI::AI_getLastAIChangeTurn()
+int CvUnitAI::AI_getLastAIChangeTurn() const
 {
 	return m_iLastAIChangeTurn;
 }
@@ -8156,7 +8156,7 @@ bool CvUnitAI::AI_unloadWhereNeeded(int iMaxPath)
 bool CvUnitAI::AI_betterJob()
 {
 
-	CvCity* pCity = plot()->getPlotCity();
+	CvCity* const pCity = plot()->getPlotCity();
 	if (pCity == NULL)
 	{
 		return false;
@@ -8171,15 +8171,17 @@ bool CvUnitAI::AI_betterJob()
 	// Check if the unit can have its original profession assigned when leaving the city
 	// This prevents the crash that was reported in issue #394
 	if (!canHaveProfession(eOriginalProfession, false, plot(), /*bForceCheck*/true))
-	{	FAssertMsg(false, "Illegal Profession");
+	{
+		FAssertMsg(false, "Illegal Profession");
 		return false;
 	}
 
+	// TODO: Try to remove this
 	pCity->AI_setWorkforceHack(true);
 
 	std::vector<CvUnit*> units;
-	int iOriginalMovePriority = AI_getMovePriority();
-	UnitAITypes eOriginalAI = AI_getUnitAIType();
+	const int iOriginalMovePriority = AI_getMovePriority();
+	const UnitAITypes eOriginalAI = AI_getUnitAIType();
 	
 	bool bJoined=false;
 	if (canJoinCity(plot()))
@@ -8188,28 +8190,36 @@ bool CvUnitAI::AI_betterJob()
 		pCity->addPopulationUnit(this, NO_PROFESSION);
 	}
 
-	CvPlot * pPlot = plot();
+	CvPlot* const pPlot = plot();
 	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		CvUnit* const pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 		
 		if (pLoopUnit != this && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 		{
 			if (!pLoopUnit->AI_hasAIChanged(5) && pLoopUnit->canJoinCity(pPlot))
 			{
-				if (pLoopUnit->canHaveProfession(eOriginalProfession, true) && canHaveProfession(pLoopUnit->getProfession(), true))
+				const ProfessionTypes eLoopProfession = pLoopUnit->getProfession();
+
+				// Defensive check since it has been observed that units with NO_PROFESSION can be in this list!
+				// If this is the case then we'd end up with an AV further below when passing NO_PROFESSION to GC.getProfessionInfo
+				// TODO: Consider adding an assert check to track down why this is happening
+				if (eLoopProfession == NO_PROFESSION)
+					continue;
+
+				if (pLoopUnit->canHaveProfession(eOriginalProfession, true) && canHaveProfession(eLoopProfession, true))
 				{
 					units.push_back(pLoopUnit);
 				}
 			}
 		}
 	}
-	
+
 	for (int i = 0; i < pCity->getPopulation(); ++i)
 	{
-		CvUnit* pLoopUnit = pCity->getPopulationUnitByIndex(i);
+		CvUnit* const pLoopUnit = pCity->getPopulationUnitByIndex(i);
 		if (pLoopUnit != this && pLoopUnit->getProfession() != NO_PROFESSION)
 		{
 			if (pLoopUnit != this)
@@ -8226,15 +8236,17 @@ bool CvUnitAI::AI_betterJob()
 	}
 	
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	int iSuitability = kOwner.AI_professionSuitability(this, eOriginalProfession, plot());
+	const int iSuitability = kOwner.AI_professionSuitability(this, eOriginalProfession, plot());
 	
 	int iBestValue = 0;
 	CvUnit* pBestUnit = NULL;
 	
 	for (uint i = 0; i < units.size(); ++i)
 	{
-		CvUnit* pLoopUnit = units[i];
-		CvPlot* pLoopPlot = GC.getProfessionInfo(pLoopUnit->getProfession()).isWorkPlot() ? pCity->getPlotWorkedByUnit(pLoopUnit) : plot();
+		CvUnit* const pLoopUnit = units[i];
+		const ProfessionTypes eLoopProfession = pLoopUnit->getProfession();
+
+		const CvPlot* const pLoopPlot = GC.getProfessionInfo(eLoopProfession).isWorkPlot() ? pCity->getPlotWorkedByUnit(pLoopUnit) : plot();
 		int iOtherSuitability = kOwner.AI_professionSuitability(pLoopUnit, eOriginalProfession, pLoopPlot);
 		int iValue = 0;
 
@@ -8243,10 +8255,8 @@ bool CvUnitAI::AI_betterJob()
 			iValue = iOtherSuitability - iSuitability;
 		}
 
-		int iOriginalValue = iSuitability + kOwner.AI_professionSuitability(pLoopUnit, pLoopUnit->getProfession(), pLoopPlot);
-		
-		int iNewValue = kOwner.AI_professionSuitability(this, pLoopUnit->getProfession(), pLoopPlot) + kOwner.AI_professionSuitability(pLoopUnit, eOriginalProfession, pLoopPlot);
-		
+		const int iOriginalValue = iSuitability + kOwner.AI_professionSuitability(pLoopUnit, eLoopProfession, pLoopPlot);
+		const int iNewValue = kOwner.AI_professionSuitability(this, eLoopProfession, pLoopPlot) + kOwner.AI_professionSuitability(pLoopUnit, eOriginalProfession, pLoopPlot);
 		iValue = std::max(iValue, iNewValue - iOriginalValue);
 		
 		if (iValue > iBestValue)

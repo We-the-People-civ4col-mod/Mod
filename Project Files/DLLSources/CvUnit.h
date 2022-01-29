@@ -755,7 +755,7 @@ public:
 	virtual void AI_setUnitAIType(UnitAITypes eNewValue) = 0;
 	virtual UnitAIStates AI_getUnitAIState() const = 0;
 	virtual void AI_setUnitAIState(UnitAIStates eNewValue) = 0;
-	virtual bool AI_hasAIChanged(int iNumTurns) = 0;
+	virtual bool AI_hasAIChanged(int iNumTurns) const = 0;
 	virtual int AI_sacrificeValue(const CvPlot* pPlot) const = 0;
 	virtual CvPlot* AI_determineDestination(CvPlot** ppMissionPlot, MissionTypes* peMission, MissionAITypes* peMissionAI) = 0;
 	virtual bool AI_moveFromTransport(CvPlot* pHintPlot) = 0;
