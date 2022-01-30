@@ -530,6 +530,7 @@ public:
 
 	// city iteration
 	DllExport CvCity* firstCity(int *pIterIdx, bool bRev=false) const;
+	CvCity* firstCity() const;
 	DllExport CvCity* nextCity(int *pIterIdx, bool bRev=false) const;
 	DllExport int getNumCities() const;
 	DllExport CvCity* getCity(int iID) const;

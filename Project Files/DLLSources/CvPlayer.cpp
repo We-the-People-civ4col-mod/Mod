@@ -966,7 +966,7 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 	PlayerTypes eOldOwner;
 	PlayerTypes eOriginalOwner;
 	PlayerTypes eHighestCulturePlayer;
-	BuildingTypes eBuilding;
+	// BuildingTypes eBuilding;
 	bool bForceUnowned;
 	bool bRecapture;
 	bool bRaze;
@@ -1254,23 +1254,22 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 		if (pabHasRealBuilding[iI])
 		{
 			BuildingClassTypes eBuildingClass = (BuildingClassTypes)GC.getBuildingInfo((BuildingTypes)iI).getBuildingClassType();
-			eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(eBuildingClass);
+			BuildingTypes eBuildingCivSpecific = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(eBuildingClass);
 
-			if (eBuilding != NO_BUILDING)
+			if (eBuildingCivSpecific != NO_BUILDING)
 			{
 				const CvBuildingInfo& kBuilding = GC.getBuildingInfo((BuildingTypes)iI);
 				if (bTrade || !(kBuilding.isNeverCapture()))
 				{
 					if (pNewCity->isValidBuildingLocation(kBuilding))
 					{
-						if (!bConquest || bRecapture || pNewCity->isHasRealBuilding(eBuilding) || GC.getGameINLINE().getSorenRandNum(100, "Capture Probability") < kBuilding.getConquestProbability())
+						if (!bConquest || bRecapture || pNewCity->isHasRealBuilding(eBuildingCivSpecific) || GC.getGameINLINE().getSorenRandNum(100, "Capture Probability") < kBuilding.getConquestProbability())
 						{
 							bSetHasBuilding = true;
 						}
 					}
 				}
-
-				pNewCity->setHasRealBuildingTimed(eBuilding, bSetHasBuilding, false, ((PlayerTypes)(paiBuildingOriginalOwner[iI])), paiBuildingOriginalTime[iI]);
+				pNewCity->setHasRealBuildingTimed(eBuildingCivSpecific, bSetHasBuilding, false, ((PlayerTypes)(paiBuildingOriginalOwner[iI])), paiBuildingOriginalTime[iI]);
 			}
 		}
 	}
@@ -9597,6 +9596,7 @@ CLLNode<int>* CvPlayer::tailGroupCycleNode() const
 {
 	return m_groupCycle.tail();
 }
+
 void CvPlayer::addCityName(const CvWString& szName)
 {
 	m_aszCityNames.push_back(szName);
@@ -9606,7 +9606,6 @@ int CvPlayer::getNumCityNames() const
 {
 	return m_aszCityNames.size();
 }
-
 
 const CvWString& CvPlayer::getCityName(int iIndex) const
 {
@@ -9618,11 +9617,16 @@ CvCity* CvPlayer::firstCity(int *pIterIdx, bool bRev) const
 	return !bRev ? m_cities.beginIter(pIterIdx) : m_cities.endIter(pIterIdx);
 }
 
+CvCity* CvPlayer::firstCity() const
+{
+	int iUnused = 0;
+	return firstCity(&iUnused);
+}
+
 CvCity* CvPlayer::nextCity(int *pIterIdx, bool bRev) const
 {
 	return !bRev ? m_cities.nextIter(pIterIdx) : m_cities.prevIter(pIterIdx);
 }
-
 
 int CvPlayer::getNumCities() const
 {
@@ -9635,18 +9639,15 @@ CvCity* CvPlayer::getCity(int iID) const
 	return(m_cities.getAt(iID));
 }
 
-
 CvCity* CvPlayer::addCity()
 {
 	return(m_cities.add());
 }
 
-
 void CvPlayer::deleteCity(int iID)
 {
 	m_cities.removeAt(iID);
 }
-
 
 CvUnit* CvPlayer::firstUnit(int *pIterIdx) const
 {
@@ -9670,7 +9671,6 @@ CvUnit* CvPlayer::firstUnit(int *pIterIdx) const
 
 	return pUnit;
 }
-
 
 CvUnit* CvPlayer::nextUnit(int *pIterIdx) const
 {
@@ -9696,7 +9696,6 @@ CvUnit* CvPlayer::nextUnit(int *pIterIdx) const
 	return pUnit;
 }
 
-
 int CvPlayer::getNumUnits() const
 {
 	return (int)(m_units.size());
@@ -9707,7 +9706,6 @@ CvUnit* CvPlayer::getUnit(int iID) const
 {
     return (m_units.getById(iID));
 }
-
 
 CvUnit* CvPlayer::addUnit()
 {
@@ -19688,7 +19686,6 @@ void CvPlayer::doAIImmigrant(int iIndex)
 // R&R, ray improvement redistribution
 void CvPlayer::redistributeWood() 
 {
-
 	// do nothing if Player has no cities or just one
 	int citycount = getNumCities();
 	if (citycount <= 1) 
@@ -19787,21 +19784,25 @@ void CvPlayer::redistributeWood()
 	}
 
 	// for safety, if there are some ressources left, we add it to the first city
-	if (totalwood > 0)
+	CvCity* pFirstCity = firstCity();
+	if (pFirstCity != NULL)
 	{
-		getCity(0)->changeYieldStored(YIELD_LUMBER, totalwood);
-	}
-	if (totalhardwood > 0)
-	{
-		getCity(0)->changeYieldStored(YIELD_HARDWOOD, totalhardwood);
-	}
-	if (totalstone > 0)
-	{
-		getCity(0)->changeYieldStored(YIELD_STONE, totalstone);
-	}
-	if (totalclay > 0)
-	{
-		getCity(0)->changeYieldStored(YIELD_CLAY, totalclay);
+		if (totalwood > 0)
+		{
+			pFirstCity->changeYieldStored(YIELD_LUMBER, totalwood);
+		}
+		if (totalhardwood > 0)
+		{
+			pFirstCity->changeYieldStored(YIELD_HARDWOOD, totalhardwood);
+		}
+		if (totalstone > 0)
+		{
+			pFirstCity->changeYieldStored(YIELD_STONE, totalstone);
+		}
+		if (totalclay > 0)
+		{
+			pFirstCity->changeYieldStored(YIELD_CLAY, totalclay);
+		}
 	}
 }
 // TAC - AI Economy - Ray - END
