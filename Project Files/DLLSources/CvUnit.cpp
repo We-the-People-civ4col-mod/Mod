@@ -2951,13 +2951,13 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 
 	// WTP, ray, Canal - START
 	// in Canals, which are actually on land plots, we do not want to have any Ships bigger than Coastal Ships or GatherBoats
-	if (getUnitInfo().getDomainType() == DOMAIN_SEA && !pPlot->isWater() && !getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN) && !(getUnitInfo().isGatherBoat() && getUnitInfo().getHarbourSpaceNeeded() == 1) && pPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pPlot->getImprovementType()).isCanal())
+	if (getUnitInfo().getDomainType() == DOMAIN_SEA && !kPlot.isWater() && !getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN) && !(getUnitInfo().isGatherBoat() && getUnitInfo().getHarbourSpaceNeeded() == 1) && kPlot.getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(kPlot.getImprovementType()).isCanal())
 	{
 		return false;
 	}
 	// WTP, ray, Canal - END
 
-	const FeatureTypes eFeature = pPlot->getFeatureType();
+	const FeatureTypes eFeature = kPlot.getFeatureType();
 
 	// Prevent the AI from moving through storms and sustaining damage
 	// Strictly speaking this should preferably be handled by either the path cost or a separate PF flag
@@ -2968,8 +2968,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 
 	const CvArea *const pPlotArea = kPlot.area();
 	TeamTypes ePlotTeam = kPlot.getTeam();
-	const bool bCanEnterArea = canEnterArea(kPlot.getOwnerINLINE(), pPlotArea);
-	const FeatureTypes eFeature = kPlot.getFeatureType();
+	bool bCanEnterArea = canEnterArea(kPlot.getOwnerINLINE(), pPlotArea);
 	const DomainTypes eDomainType = getDomainType();
 
 	if (bCanEnterArea)
@@ -3016,17 +3015,17 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 			{
 				//WTP, ray, small adaptation to ensure that not all Improvements allow Movement on Large Rivers by adding "Outside Borders check" which is only true for "Ferry Station" aka "Raft Station"
 				// TODO: Maybe create a new XML tag "bAllowLargeRiverMovement in XML of Improvements instead - might be cleaner
-				bLandUnitMayPassLargeRiverDueToImprovement = (pPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pPlot->getImprovementType()).getTerrainMakesValid(TERRAIN_LARGE_RIVERS) && GC.getImprovementInfo(pPlot->getImprovementType()).isOutsideBorders());
+				bLandUnitMayPassLargeRiverDueToImprovement = (kPlot.getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(kPlot.getImprovementType()).getTerrainMakesValid(TERRAIN_LARGE_RIVERS) && GC.getImprovementInfo(kPlot.getImprovementType()).isOutsideBorders());
 				//WTP, ray, small adaptation to ensure that not all Terrain Features allow Movement on Large Rivers by adding "bNoImprovement check" which is only true for "River Ford" (at least on Terrain Large Rivers
 				// TODO: Maybe create a new XML tag "bAllowLargeRiverMovement in XML of Terrain Features instead - might be cleaner
-				bLandUnitMayPassLargeRiverDueToTerrainFeature = (pPlot->getFeatureType() != NO_FEATURE && GC.getFeatureInfo(pPlot->getFeatureType()).isTerrain(TERRAIN_LARGE_RIVERS) && GC.getFeatureInfo(pPlot->getFeatureType()).isNoImprovement());
+				bLandUnitMayPassLargeRiverDueToTerrainFeature = (kPlot.getFeatureType() != NO_FEATURE && GC.getFeatureInfo(kPlot.getFeatureType()).isTerrain(TERRAIN_LARGE_RIVERS) && GC.getFeatureInfo(kPlot.getFeatureType()).isNoImprovement());
 				bLandUnitMayPassLargeRiverDueToProfession = (getProfession() != NO_PROFESSION && GC.getProfessionInfo(getProfession()).isCanCrossLargeRivers());
 				bLandUnitMayBeLoaded = canLoad(&kPlot, false);
 			}
 
 			// stop large ships from entering Large Rivers in own Terrain
 			// if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam()) // sea units can enter impassable in own cultural borders
-			if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam() || pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS || pPlot->getTerrainType() == TERRAIN_LAKE || pPlot->getTerrainType() == TERRAIN_ICE_LAKE || pPlot->getTerrainType() == TERRAIN_SHALLOW_COAST)
+			if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam() || kPlot.getTerrainType() == TERRAIN_LARGE_RIVERS || kPlot.getTerrainType() == TERRAIN_LAKE || kPlot.getTerrainType() == TERRAIN_ICE_LAKE || kPlot.getTerrainType() == TERRAIN_SHALLOW_COAST)
 			{
 				// if (bIgnoreLoad || !canLoad(pPlot, true))
 				if (bIgnoreLoad || !canLoad(&kPlot, true))
@@ -3047,13 +3046,13 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && isHuman())
 	{
 		// Stop Ships from Entering a City in which harbour is full - e might also check "automated"
-		if (DOMAIN_SEA == getDomainType() && pPlot->isCity(true, getTeam()))
+		if (DOMAIN_SEA == getDomainType() && kPlot.isCity(true, getTeam()))
 		{
 			// Case real City
-			if (pPlot->getImprovementType() == NO_IMPROVEMENT)
+			if (kPlot.getImprovementType() == NO_IMPROVEMENT)
 			{
 				// this is only checked for Colonial Cities, Native Villages can always be entered
-				CvCity* pCity = pPlot->getPlotCity();
+				CvCity* pCity = kPlot.getPlotCity();
 				if (pCity != NULL)
 				{
 					if(!pCity->isNative())
@@ -3061,8 +3060,8 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 						int iHarbourSpaceNeededByUnit = getUnitInfo().getHarbourSpaceNeeded();
 
 						// Caclulating free Harbour Space in City
-						int iHarbourSpaceMaxInCity = pPlot->getPlotCity()->getCityHarbourSpace();
-						int iHarbourSpaceUsedInCity = pPlot->getPlotCity()->getCityHarbourSpaceUsed();
+						int iHarbourSpaceMaxInCity = kPlot.getPlotCity()->getCityHarbourSpace();
+						int iHarbourSpaceUsedInCity = kPlot.getPlotCity()->getCityHarbourSpaceUsed();
 						int iHarbourSpaceAvailableInCity = iHarbourSpaceMaxInCity - iHarbourSpaceUsedInCity;
 
 						if (iHarbourSpaceNeededByUnit > iHarbourSpaceAvailableInCity)
@@ -3077,7 +3076,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 			else
 			{
 				// just to ensure that something may be messed up in the future
-				bool bWeCheckAllowedUnitsOnPlot = (pPlot->isFort() || pPlot->isMonastery() || pPlot->isCanal());
+				bool bWeCheckAllowedUnitsOnPlot = (kPlot.isFort() || kPlot.isMonastery() || kPlot.isCanal());
 				if (bWeCheckAllowedUnitsOnPlot)
 				{
 					// this is how much the Unit needs
@@ -3086,16 +3085,16 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 					// we check how many Units that place would allow
 					int iImprovementHarbourSpace = GC.getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS();
 					// it is the second level Improvement, so we double - unless for canal, which has no upgrade
-					if (GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT && !pPlot->isCanal())
+					if (GC.getImprovementInfo(kPlot.getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT && !kPlot.isCanal())
 					{
 						iImprovementHarbourSpace = iImprovementHarbourSpace * 2;
 					}
 
 					// now we calculate how much is already used
 					int iImprovementHarbourSpaceUsed = 0;
-					for (int i = 0; i < pPlot->getNumUnits(); ++i)
+					for (int i = 0; i < kPlot.getNumUnits(); ++i)
 					{
-						CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);
+						CvUnit* pLoopUnit = kPlot.getUnitByIndex(i);
 						// we only count Land Units that can attack, civil Units are not considered
 						// we also not consider Units loaded on Ships
 						// we also not consider Units of other Nations
@@ -3124,13 +3123,13 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 	{
 		// Stop Combat Land Units from Entering a City in which barracks are full - we might also check "automated"
 		// here we also check just for can Attack - we check City owner further down
-		if (DOMAIN_LAND == getDomainType() && pPlot->isCity(true, getTeam()) && canAttack())
+		if (DOMAIN_LAND == getDomainType() && kPlot.isCity(true, getTeam()) && canAttack())
 		{
 			// Case real City
-			if (pPlot->getImprovementType() == NO_IMPROVEMENT)
+			if (kPlot.getImprovementType() == NO_IMPROVEMENT)
 			{
 				// this is only checked for Colonial Cities, Native Villages can always be entered
-				CvCity* pCity = pPlot->getPlotCity();
+				CvCity* pCity = kPlot.getPlotCity();
 				if (pCity != NULL)
 				{
 					// here we ensure we check this only for the Owner of the Unit being Owner of the City
@@ -3145,8 +3144,8 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 						}
 
 						// Caclulating free Harbour Space in City
-						int iBarracksSpaceMaxInCity = pPlot->getPlotCity()->getCityBarracksSpace();
-						int iBarracksSpaceUsedInCity = pPlot->getPlotCity()->getCityBarracksSpaceUsed();
+						int iBarracksSpaceMaxInCity = kPlot.getPlotCity()->getCityBarracksSpace();
+						int iBarracksSpaceUsedInCity = kPlot.getPlotCity()->getCityBarracksSpaceUsed();
 						int iBarracksSpaceAvailableInCity = iBarracksSpaceMaxInCity - iBarracksSpaceUsedInCity;
 
 						if (iBarracksSpaceNeededByUnit > iBarracksSpaceAvailableInCity)
@@ -3161,7 +3160,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 			else
 			{
 				// just to ensure that something may be messed up in the future
-				bool bWeCheckAllowedUnitsOnPlot = (pPlot->isFort() || pPlot->isMonastery());
+				bool bWeCheckAllowedUnitsOnPlot = (kPlot.isFort() || kPlot.isMonastery());
 				if (bWeCheckAllowedUnitsOnPlot)
 				{
 					// this is how much the Unit needs
@@ -3175,16 +3174,16 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 					// we check how many Units that place would allow
 					int iImprovementBarracksSpace = GC.getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS();
 					// it is the second level Improvement, so we double
-					if (GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT)
+					if (GC.getImprovementInfo(kPlot.getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT)
 					{
 						iImprovementBarracksSpace = iImprovementBarracksSpace * 2;
 					}
 
 					// now we calculate how much is already used
 					int iImprovementBarracksSpaceUsed = 0;
-					for (int i = 0; i < pPlot->getNumUnits(); ++i)
+					for (int i = 0; i < kPlot.getNumUnits(); ++i)
 					{
-						CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);
+						CvUnit* pLoopUnit = kPlot.getUnitByIndex(i);
 						// we only count Land Units that can attack, civil Units are not considered
 						// we also not consider Units loaded on Ships
 						// we also not consider Units of other Nations
