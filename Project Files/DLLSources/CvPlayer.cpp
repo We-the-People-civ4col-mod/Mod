@@ -9509,6 +9509,12 @@ CvCity* CvPlayer::firstCity(int *pIterIdx, bool bRev) const
 	return !bRev ? m_cities.beginIter(pIterIdx) : m_cities.endIter(pIterIdx);
 }
 
+CvCity* CvPlayer::firstCity() const
+{
+	int iUnused = 0;
+	return firstCity(&iUnused);
+}
+
 CvCity* CvPlayer::nextCity(int *pIterIdx, bool bRev) const
 {
 	return !bRev ? m_cities.nextIter(pIterIdx) : m_cities.prevIter(pIterIdx);
@@ -19358,15 +19364,18 @@ void CvPlayer::redistributeWood()
 	}
 
 	// for safety, if there are some ressources left, we add it to the first city
-	if (totalwood > 0)
+	CvCity* pFirstCity = firstCity();
+	if (pFirstCity != NULL)
 	{
-		getCity(0)->changeYieldStored(YIELD_LUMBER, totalwood);
+		if (totalwood > 0)
+		{
+			pFirstCity->changeYieldStored(YIELD_LUMBER, totalwood);
+		}
+		if (totalstone > 0)
+		{
+			pFirstCity->changeYieldStored(YIELD_STONE, totalstone);
+		}
 	}
-	if (totalstone > 0)
-	{
-		getCity(0)->changeYieldStored(YIELD_STONE, totalstone);
-	}
-
 }
 // TAC - AI Economy - Ray - END
 
