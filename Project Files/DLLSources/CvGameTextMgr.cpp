@@ -9329,10 +9329,12 @@ void CvGameTextMgr::setEuropeYieldSoldHelp(CvWStringBuffer &szString, const CvPl
 			szString.append(gDLL->getText("TXT_KEY_YIELD_TAX", kPlayer.getTaxRate(), iTaxGold));
 		}
 	}
-	// R&R, ray, Smuggling - END
-
-	FAssert(eYield == NO_YIELD || kPlayer.getSellToEuropeProfit(eYield, iAmount * (100 - iCommission) / 100) == iGross);
+	if (iCommission != GC.getDefineINT("SMUGGLING_BRIBE_RATE"))
+	{
+		FAssert(eYield == NO_YIELD || kPlayer.getSellToEuropeProfit(eYield, iAmount * (100 - iCommission) / 100) == iGross);
+	}
 	szString.append(NEWLINE);
+	// R&R, ray, Smuggling - END
 	szString.append(gDLL->getText("TXT_KEY_YIELD_NET_PROFIT", iGross));
 }
 
@@ -9387,9 +9389,11 @@ void CvGameTextMgr::setAfricaYieldSoldHelp(CvWStringBuffer &szString, const CvPl
 			szString.append(gDLL->getText("TXT_KEY_YIELD_TAX", kPlayer.getTaxRate(), iTaxGold));
 		}
 	}
+	if (iCommission != GC.getDefineINT("SMUGGLING_BRIBE_RATE"))
+	{
+		FAssert(eYield == NO_YIELD || kPlayer.getSellToAfricaProfit(eYield, iAmount * (100 - iCommission) / 100) == iGross);
+	}
 	// R&R, ray, Smuggling - END
-
-	FAssert(eYield == NO_YIELD || kPlayer.getSellToAfricaProfit(eYield, iAmount * (100 - iCommission) / 100) == iGross);
 	szString.append(NEWLINE);
 	szString.append(gDLL->getText("TXT_KEY_YIELD_NET_PROFIT", iGross));
 }
