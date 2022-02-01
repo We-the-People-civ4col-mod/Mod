@@ -120,8 +120,6 @@ class CvTradeScreenInfo; // trade screen type - Nightinggale
 
 class CivEffectInfo;
 
-#include "InfoCacheArray.h"
-#include "EnumTypeCacheArray.h"
 #include "Profile.h"
 
 class CvGlobals

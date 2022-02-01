@@ -12910,22 +12910,16 @@ void CvCity::UpdateBuildingAffectedCache()
 	if (kPlayer.canUseDomesticMarket())
 	{
 		m_ja_iBuildingYieldDemands.reset();
-		const BuildingTypeArray &kBuildingArray = kPlayer.getAllowedBuildingInfos();
-		for (int i = 0;; ++i)
+		const InfoArray<BuildingTypes>& kBuildingArray = kPlayer.getAllowedBuildings();
+		const int iNumBuildings = kBuildingArray.getLength();
+		for (int i = 0; i < iNumBuildings; ++i)
 		{
-			BuildingTypes eBuilding = kBuildingArray.get(i);
-			if (eBuilding != NO_BUILDING)
+			const BuildingTypes eBuilding = kBuildingArray.get(i);
+			if (isHasBuilding(eBuilding))
 			{
-				if (isHasBuilding(eBuilding))
-				{
-					CvBuildingInfo &kInfo = GC.getBuildingInfo(eBuilding);
-					m_ja_iBuildingYieldDemands.addCache(1, kInfo.getYieldDemands());
-					m_iCacheMarketModifier += kInfo.getDomesticMarketModifier();
-				}
-			}
-			else
-			{
-				break;
+				const CvBuildingInfo& kInfo = GC.getBuildingInfo(eBuilding);
+				m_ja_iBuildingYieldDemands.addCache(1, kInfo.getYieldDemands());
+				m_iCacheMarketModifier += kInfo.getDomesticMarketModifier();
 			}
 		}
 	}

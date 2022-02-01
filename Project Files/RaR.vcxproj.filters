@@ -343,9 +343,6 @@
     <ClCompile Include="DLLSources\InfoArray.cpp">
       <Filter>Data\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\InfoCacheArray.cpp">
-      <Filter>Data\CPP</Filter>
-    </ClCompile>
     <ClCompile Include="DLLSources\JustInTime_Features.cpp">
       <Filter>Data\CPP</Filter>
     </ClCompile>
@@ -772,9 +769,6 @@
       <Filter>Data\Header</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\JustInTimeArray.h">
-      <Filter>Data\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\InfoCacheArray.h">
       <Filter>Data\Header</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\InfoArrayGet.h">

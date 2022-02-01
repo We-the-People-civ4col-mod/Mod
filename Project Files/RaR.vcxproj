@@ -105,7 +105,6 @@
     <ClCompile Include="DLLSources\CvPlayerSavegame.cpp" />
     <ClCompile Include="DLLSources\CvGlobalConstants.cpp" />
     <ClCompile Include="DLLSources\CvPlayerCivEffect.cpp" />
-    <ClCompile Include="DLLSources\InfoCacheArray.cpp" />
     <ClCompile Include="DLLSources\CvGlobalsEnumSetup.cpp" />
     <ClCompile Include="DLLSources\BoolArray.cpp" />
     <ClCompile Include="DLLSources\InfoArray.cpp" />
@@ -261,7 +260,6 @@
     <ClInclude Include="DLLSources\iconv\cp1257.h" />
     <ClInclude Include="DLLSources\CvPlayerCivEffect.h" />
     <ClInclude Include="DLLSources\EnumTypeCacheArray.h" />
-    <ClInclude Include="DLLSources\InfoCacheArray.h" />
     <ClInclude Include="DLLSources\BoolArray.h" />
     <ClInclude Include="DLLSources\InfoArray.h" />
     <ClInclude Include="DLLSources\InfoArrayGet.h" />
