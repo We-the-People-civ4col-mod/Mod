@@ -5504,8 +5504,8 @@ void CvGame::createAnimalsLand()
 								continue;
 							}
 							iValue = 0;
-
-							if (pPlot->getTerrainType() != NO_TERRAIN)
+							// WTP, ray, for spawing we now als check that the Owern of the Plot is either NO_Player or Native, thus it will not spawn in cultural radius of Europeans and Kings
+							if (pPlot->getTerrainType() != NO_TERRAIN && (pPlot->getOwnerINLINE() == NO_PLAYER || GET_PLAYER(pPlot->getOwnerINLINE()).isNative()))
 							{
 								if (GC.getUnitInfo(eLoopUnit).getTerrainNative(pPlot->getTerrainType()))
 								{
@@ -5616,7 +5616,8 @@ void CvGame::createAnimalsSea()
 							iValue = 0;
 							if (pPlot->getTerrainType() != NO_TERRAIN)
 							{
-								if (GC.getUnitInfo(eLoopUnit).getTerrainNative(pPlot->getTerrainType()))
+								// WTP, ray, for spawing we now als check that the Owern of the Plot is either NO_Player or Native, thus it will not spawn in cultural radius of Europeans and Kings
+								if (GC.getUnitInfo(eLoopUnit).getTerrainNative(pPlot->getTerrainType()) && (pPlot->getOwnerINLINE() == NO_PLAYER || GET_PLAYER(pPlot->getOwnerINLINE()).isNative()))
 								{
 									iRand = GC.getWILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT();
 									iValue += (1 + getSorenRandNum(iRand, "Wild Sea Animal Selection - Terrain Weight"));
