@@ -4,7 +4,6 @@
 
 CvPlayerCivEffect::CvPlayerCivEffect()
 	: m_iAllowFoundCity(0)
-	, m_ba_CacheAllowBuild                     (JIT_ARRAY_BUILD, true)
 	, m_ja_iCacheFreePromotionsForProfessions  (JIT_ARRAY_PROFESSION      , JIT_ARRAY_PROMOTION)
 	, m_ja_iCacheFreePromotionsForUnitClasses  (JIT_ARRAY_UNITCLASS       , JIT_ARRAY_PROMOTION)
 {
@@ -71,12 +70,12 @@ void CvPlayerCivEffect::applyCivEffect(const CivEffectInfo& kCivEffect, int iCha
 	{
 		// Something changed, which might affect which builds are allowed
 		// reset and rebuild the BoolArray to make sure it's up to date
-		m_ba_CacheAllowBuild.reset();
-		for (BuildTypes eBuild = FIRST_BUILD; eBuild < NUM_BUILD_TYPES; ++eBuild)
+		m_em_bCacheAllowBuild.reset();
+		for (BuildTypes eBuild = m_em_bCacheAllowBuild.FIRST; eBuild < m_em_bCacheAllowBuild.LAST; ++eBuild)
 		{
 			if (this->m_ja_iCacheAllowsBuilds.get(eBuild) <= 0)
 			{
-				m_ba_CacheAllowBuild.set(false, eBuild);
+				m_em_bCacheAllowBuild.set(eBuild, false);
 				continue;
 			}
 
@@ -85,14 +84,14 @@ void CvPlayerCivEffect::applyCivEffect(const CivEffectInfo& kCivEffect, int iCha
 			ImprovementTypes eImprovement = static_cast<ImprovementTypes>(kBuild.getImprovement());
 			if (eImprovement != NO_IMPROVEMENT && !this->canUseImprovement(eImprovement))
 			{
-				m_ba_CacheAllowBuild.set(false, eBuild);
+				m_em_bCacheAllowBuild.set(eBuild, false);
 				continue;
 			}
 
 			RouteTypes eRoute = static_cast<RouteTypes>(kBuild.getRoute());
 			if (eRoute != NO_ROUTE && !this->canUseRoute(eRoute))
 			{
-				m_ba_CacheAllowBuild.set(false, eBuild);
+				m_em_bCacheAllowBuild.set(eBuild, false);
 				continue;
 			}
 		}
@@ -144,7 +143,7 @@ void CvPlayerCivEffect::resetCivEffectCache()
 	m_ja_iCacheAllowsUnits.reset();
 	m_ja_iCacheAllowsYields.reset();
 
-	m_ba_CacheAllowBuild.reset();
+	m_em_bCacheAllowBuild.reset();
 
 	m_iCacheCanUseDomesticMarket = 0;
 

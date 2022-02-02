@@ -7772,7 +7772,7 @@ bool CvPlot::isRevealed(TeamTypes eTeam, bool bDebug) const
 		return true;
 	}
 
-	return m_pab_Revealed.get(eTeam);
+	return m_em_bRevealed.get(eTeam);
 }
 
 
@@ -7787,7 +7787,7 @@ void CvPlot::setRevealed(TeamTypes eTeam, bool bNewValue, bool bTerrainOnly, Tea
 
 	if (isRevealed(eTeam, false) != bNewValue)
 	{
-		m_pab_Revealed.set(eTeam, bNewValue);
+		m_em_bRevealed.set(eTeam, bNewValue);
 
 		if (area())
 		{

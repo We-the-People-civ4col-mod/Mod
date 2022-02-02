@@ -337,9 +337,6 @@
     <ClCompile Include="DLLSources\FDialogTemplate.cpp">
       <Filter>Misc\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\BoolArray.cpp">
-      <Filter>Data\CPP</Filter>
-    </ClCompile>
     <ClCompile Include="DLLSources\InfoArray.cpp">
       <Filter>Data\CPP</Filter>
     </ClCompile>
@@ -373,14 +370,8 @@
     <ClCompile Include="DLLSources\CvAreaSavegame.cpp">
       <Filter>CV\Savegames</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\PlayerBoolArray.cpp">
-      <Filter>Data\CPP</Filter>
-    </ClCompile>
     <ClCompile Include="DLLSources\CvPlotFunctions.cpp">
       <Filter>CV\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\PlayerArray.cpp">
-      <Filter>Data\CPP</Filter>
     </ClCompile>
     <ClCompile Include="DLLSources\CvCityAISavegame.cpp">
       <Filter>CV\Savegames</Filter>
@@ -696,9 +687,6 @@
     <ClInclude Include="DLLSources\CyArtFileMgr.h">
       <Filter>Python\Header</Filter>
     </ClInclude>
-    <ClInclude Include="DLLSources\BoolArray.h">
-      <Filter>Data\Header</Filter>
-    </ClInclude>
     <ClInclude Include="DLLSources\iconv\converters.h">
       <Filter>Misc\Header</Filter>
     </ClInclude>
@@ -795,14 +783,8 @@
     <ClInclude Include="DLLSources\CvSavegame.h">
       <Filter>CV\Savegames</Filter>
     </ClInclude>
-    <ClInclude Include="DLLSources\PlayerBoolArray.h">
-      <Filter>Data\Header</Filter>
-    </ClInclude>
     <ClInclude Include="DLLSources\CvPlotFunctions.h">
       <Filter>CV\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\PlayerArray.h">
-      <Filter>Data\Header</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\EnumMap.h">
       <Filter>Data\Header</Filter>

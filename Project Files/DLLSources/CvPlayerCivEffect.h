@@ -18,7 +18,7 @@ public:
 	void applyCivEffect(CivEffectTypes       eCivEffect, int iChange = 1);
 
 	inline bool canUseBonus       (BonusTypes       eBonus        ) const { return m_ja_iCacheAllowsBonuses       .get(eBonus)       > 0; }
-	inline bool canUseBuild       (BuildTypes       eBuild        ) const { return m_ba_CacheAllowBuild           .get(eBuild)          ; }
+	inline bool canUseBuild       (BuildTypes       eBuild        ) const { return m_em_bCacheAllowBuild          .get(eBuild)          ; }
 	inline bool canUseBuilding    (BuildingTypes    eBuilding     ) const { return m_em_iCacheAllowsBuildings     .get(eBuilding)    > 0; }
 	inline bool canUseCivic       (CivicTypes       eCivic        ) const { return m_ja_iCacheAllowsCivics        .get(eCivic)       > 0; }
 	inline bool canUseImmigrant   (UnitTypes        eUnit         ) const { return m_ja_iCacheAllowsImmigrants    .get(eUnit)        > 0; }
@@ -65,8 +65,8 @@ private:
 	char m_iAllowFoundCity;
 
 	// caches of allow caches
-	BoolArray                  m_ba_CacheAllowBuild;
-	InfoArray<BuildingTypes>   m_iaAllowedBuildings;
+	EnumMap<BuildTypes, bool, true>  m_em_bCacheAllowBuild;
+	InfoArray<BuildingTypes>         m_iaAllowedBuildings;
 
 	// City
 	int    m_iCacheCanUseDomesticMarket;

@@ -54,17 +54,13 @@ CvUnitTemporaryStrengthModifier::~CvUnitTemporaryStrengthModifier()
 
 
 CvUnit::CvUnit() :
-	m_ba_HasRealPromotion(JIT_ARRAY_PROMOTION),
 	m_eUnitType(NO_UNIT),
 	m_iID(-1),
 	m_iVisibilityRange(-1),
 
 	// unit yield cache - start - Nightinggale
-	m_eCachedYield(NO_YIELD),
+	m_eCachedYield(NO_YIELD)
 	// unit yield cache - end - Nightinggale
-
-	m_ba_isPromotionApplied(JIT_ARRAY_PROMOTION)
-
 {
 	CvDLLEntity::createUnitEntity(this);		// create and attach entity to unit
 
@@ -12858,7 +12854,7 @@ bool CvUnit::isHasRealPromotion(PromotionTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_ba_HasRealPromotion.get(eIndex);
+	return m_embHasRealPromotion.get(eIndex);
 }
 
 void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
@@ -12868,7 +12864,7 @@ void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
 
 	if (isHasRealPromotion(eIndex) != bValue)
 	{
-		m_ba_HasRealPromotion.set(bValue, eIndex);
+		m_embHasRealPromotion.set(eIndex, bValue);
 
 		setPromotions(eIndex);
 
@@ -13017,13 +13013,13 @@ void CvUnit::setPromotions(PromotionTypes ePromotion)
 
 	// Only update promotions if the unit can have some or there are already promotions applied
 	// most calls will likely be from 
-	if (eUnitCombat != NO_UNITCOMBAT || m_ba_isPromotionApplied.isAllocated())
+	if (eUnitCombat != NO_UNITCOMBAT || m_embisPromotionApplied.hasContent())
 	{
 
 		CvPlayerAI &kOwner = GET_PLAYER(getOwnerINLINE());
 
-		PromotionTypes eLoopPromotion = ePromotion != NO_PROMOTION ? ePromotion : FIRST_PROMOTION;
-		PromotionTypes eLastPromotion = ePromotion != NO_PROMOTION ? ePromotion : NUM_PROMOTION_TYPES - static_cast<PromotionTypes>(1);
+		PromotionTypes eLoopPromotion = ePromotion != NO_PROMOTION ? ePromotion : m_embisPromotionApplied.FIRST;
+		const PromotionTypes eLastPromotion = ePromotion != NO_PROMOTION ? ePromotion : m_embisPromotionApplied.LAST;
 
 		ProfessionTypes eProfession = getProfession();
 
@@ -13060,17 +13056,17 @@ void CvUnit::setPromotions(PromotionTypes ePromotion)
 			if (bHasPromotion)
 			{
 				bFoundAnyPromotions = true;
-				if (!m_ba_isPromotionApplied.get(eLoopPromotion))
+				if (!m_embisPromotionApplied.get(eLoopPromotion))
 				{
-					m_ba_isPromotionApplied.set(true, eLoopPromotion);
+					m_embisPromotionApplied.set(eLoopPromotion, true);
 					processPromotion(eLoopPromotion, 1);
 				}
 			}
 			else
 			{
-				if (m_ba_isPromotionApplied.get(eLoopPromotion))
+				if (m_embisPromotionApplied.get(eLoopPromotion))
 				{
-					m_ba_isPromotionApplied.set(false, eLoopPromotion);
+					m_embisPromotionApplied.set(eLoopPromotion, false);
 					processPromotion(eLoopPromotion, -1);
 				}
 			}
@@ -13080,7 +13076,7 @@ void CvUnit::setPromotions(PromotionTypes ePromotion)
 		{
 			// try to release the array
 			// See top check with unit combat to see why it's good to release the array if possible. There is more to it than just memory usage.
-			m_ba_isPromotionApplied.isEmpty();
+			m_embisPromotionApplied.releaseMemoryIfUnused();
 		}
 	}
 

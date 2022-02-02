@@ -297,14 +297,7 @@ namespace boost
 #include "EnumMapSpecialization.h"
 
 #include "JustInTimeArray.h"
-#include "BoolArray.h"
-#include "PlayerArray.h"
-#include "PlayerBoolArray.h"
 #include "InfoArray.h"
-
-
-
-
 #include "EnumMap.h"
 
 #include "CvGlobals.h"

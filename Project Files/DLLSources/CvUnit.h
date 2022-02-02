@@ -904,7 +904,7 @@ protected:
 	CvWString m_szName;
 	CvString m_szScriptData;
 
-	BoolArray m_ba_HasRealPromotion;
+	EnumMap<PromotionTypes, bool> m_embHasRealPromotion;
 	PromotionArray<int> m_ja_iFreePromotionCount;
 	TerrainArray<int> m_ja_iTerrainDoubleMoveCount;
 	FeatureArray<int> m_ja_iFeatureDoubleMoveCount;
@@ -948,12 +948,12 @@ protected:
 	//int canCrossCoastOnly() const;
 	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO - END
 
-	BoolArray m_ba_isPromotionApplied;
+	EnumMap<PromotionTypes, bool> m_embisPromotionApplied;
 };
 
 inline bool CvUnit::isHasPromotion(PromotionTypes eIndex) const
 {
-	return m_ba_isPromotionApplied.get(eIndex);
+	return m_embisPromotionApplied.get(eIndex);
 }
 
 #endif

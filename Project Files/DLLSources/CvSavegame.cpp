@@ -324,16 +324,6 @@ void CvSavegameReader::Read(wchar* szString)
 	}
 }
 
-void CvSavegameReader::Read(BoolArray& baArray)
-{
-	baArray.Read(*this);
-}
-
-void CvSavegameReader::Read(PlayerBoolArrayBase& array)
-{
-	array.Read(*this);
-}
-
 void CvSavegameReader::Read(CvTurnScoreMap& Map)
 {
 	int iSize;
@@ -581,11 +571,6 @@ void CvSavegameWriter::Write(const wchar* szString)
 	}
 }
 
-void CvSavegameWriter::Write(BoolArray& baArray)
-{
-	baArray.Write(*this);
-}
-
 void CvSavegameWriter::Write(SavegameVariableTypes eType, const CvString& szString)
 {
 	if (szString.length() > 0)
@@ -619,24 +604,6 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType, const wchar* szString)
 	{
 		Write(eType);
 		Write(szString);
-	}
-}
-
-void CvSavegameWriter::Write(SavegameVariableTypes eType, BoolArray& baArray)
-{
-	if (baArray.hasContent())
-	{
-		Write(eType);
-		Write(baArray);
-	}
-}
-
-void CvSavegameWriter::Write(SavegameVariableTypes eType, const PlayerBoolArrayBase& array)
-{
-	if (array.hasContent())
-	{
-		Write(eType);
-		array.Write(*this);
 	}
 }
 
