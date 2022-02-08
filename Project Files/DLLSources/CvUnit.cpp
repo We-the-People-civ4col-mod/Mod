@@ -2789,13 +2789,6 @@ bool CvUnit::canEnterTerritory(PlayerTypes ePlayer, bool bIgnoreRightOfPassage) 
 		return true;
 	}
 
-	// R&R, ray, changes to Wild Animals - START
-	if (getUnitInfo().isAnimal())
-	{
-		return false;
-	}
-	// R&R, ray, changes to Wild Animals - END
-
 	// R&R, ray, Fleeing Units START
 	if(AI_getUnitAIType() == UNITAI_FLEEING)
 	{
@@ -2917,6 +2910,26 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	{
 		return false;
 	}
+
+	// R&R, ray, changes to Wild Animals - START
+	// we now just check that the Animals can not enter City Radius of "Non-Natives" anymore
+	if (getUnitInfo().isAnimal())
+	{
+		PlayerTypes ePlotOwner = pPlot->getOwnerINLINE();
+		if (ePlotOwner != NO_PLAYER)
+		{
+			CvPlayerAI& kPlayer = GET_PLAYER(ePlotOwner);
+			// the owner of the Plot is not a Native
+			if (!kPlayer.isNative())
+			{
+				if (pPlot->isCityRadius())
+				{
+					return false;
+				}
+			}
+		}
+	}
+	// R&R, ray, changes to Wild Animals - END
 
 	if (pPlot->isImpassable())
 	{
