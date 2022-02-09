@@ -41248,7 +41248,7 @@
             <SpecialCargo>SPECIALUNIT_YIELD_CARGO</SpecialCargo>
             <DomainCargo>DOMAIN_LAND</DomainCargo>
             <iCargo>2</iCargo>
-            <iRequiredTransportSize>6</iRequiredTransportSize>
+            <iRequiredTransportSize>4</iRequiredTransportSize>
             <iBerthSize>3</iBerthSize>
             <iAsset>100</iAsset>
             <iPower>0</iPower>
@@ -41413,8 +41413,8 @@
             <SpecialCargo>SPECIALUNIT_YIELD_CARGO</SpecialCargo>
             <DomainCargo>DOMAIN_LAND</DomainCargo>
             <iCargo>2</iCargo>
-            <iRequiredTransportSize>6</iRequiredTransportSize>
-            <iBerthSize>3</iBerthSize>
+            <iRequiredTransportSize>4</iRequiredTransportSize>
+            <iBerthSize>4</iBerthSize>
             <iAsset>100</iAsset>
             <iPower>0</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -41578,8 +41578,8 @@
             <SpecialCargo>SPECIALUNIT_YIELD_CARGO</SpecialCargo>
             <DomainCargo>DOMAIN_LAND</DomainCargo>
             <iCargo>4</iCargo>
-            <iRequiredTransportSize>6</iRequiredTransportSize>
-            <iBerthSize>6</iBerthSize>
+            <iRequiredTransportSize>5</iRequiredTransportSize>
+            <iBerthSize>5</iBerthSize>
             <iAsset>150</iAsset>
             <iPower>0</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
@@ -41739,7 +41739,7 @@
             <SpecialCargo>NONE</SpecialCargo>
             <DomainCargo>DOMAIN_LAND</DomainCargo>
             <iCargo>1</iCargo>
-            <iRequiredTransportSize>6</iRequiredTransportSize>
+            <iRequiredTransportSize>4</iRequiredTransportSize>
             <iBerthSize>3</iBerthSize>
             <iAsset>100</iAsset>
             <iPower>0</iPower>
@@ -41904,8 +41904,8 @@
             <SpecialCargo>NONE</SpecialCargo>
             <DomainCargo>DOMAIN_LAND</DomainCargo>
             <iCargo>4</iCargo>
-            <iRequiredTransportSize>6</iRequiredTransportSize>
-            <iBerthSize>6</iBerthSize>
+            <iRequiredTransportSize>5</iRequiredTransportSize>
+            <iBerthSize>5</iBerthSize>
             <iAsset>150</iAsset>
             <iPower>0</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>

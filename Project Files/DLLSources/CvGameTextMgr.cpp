@@ -5333,8 +5333,12 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 			{
 			    if (kTransportUnitInfo.getSpecialCargo() == NO_SPECIALUNIT || kUnitInfo.getSpecialCargo() == kTransportUnitInfo.getSpecialCargo())
 			    {
-					szBuffer.append(NEWLINE);
-					szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CARGO", kTransportUnitInfo.getTextKeyWide()));
+					// case Treasure Ships and Slave Ships separated from other
+					if ((kTransportUnitInfo.isTreasureShip() && kUnitInfo.isTreasure()) || (kTransportUnitInfo.isSlaveShip() && kUnitInfo.LbD_canRevolt()) || (kTransportUnitInfo.isTroopShip() && !kUnitInfo.isOnlyDefensive()) || (!kTransportUnitInfo.isTreasureShip() && !kTransportUnitInfo.isSlaveShip()&& !kTransportUnitInfo.isTroopShip()))
+					{
+						szBuffer.append(NEWLINE);
+						szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CARGO", kTransportUnitInfo.getTextKeyWide()));
+					}
 			    }
 			}
 		}
