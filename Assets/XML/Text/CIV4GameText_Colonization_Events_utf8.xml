@@ -2835,8 +2835,34 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Tag>
-        <English>For the glory and wealth of the colonies!</English>
-        <German>Für Ruhm und Reichtum der Kolonien!</German>
+        <English>For the Glory and Wealth of our colonies! Higher sale prices are always welcome!</English>
+        <German>Für Ruhm und Reichtum unserer Kolonien! Höhere Verkaufspreise sind immer willkommen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Tag>
+        <English>For the glory and wealth of our colonies! Let the smuggling with Port Royal flourish!</English>
+        <German>Für Ruhm und Reichtum unserer Kolonien! Möge der Schmuggel mit Port Royal erblühen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE2_COLONIES</Tag>
+        <English>For the glory and wealth of our colonies! Death and destruction to foreign merchant fleets!</English>
+        <German>Für Ruhm und Reichtum unserer Kolonien! Tod und verderben den fremden Handelsflotten!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE3_COLONIES</Tag>
+        <English>For the glory and wealth of our colonies! Let's sink the enemy fleets!</English>
+        <German>Für Ruhm und Reichtum unserer Kolonien! Lasst uns die gegnerischen Flotten versenken!</German>
+
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE4_COLONIES</Tag>
+        <English>For the glory and wealth of our colonies! Hopefully the mercenaries will not turn against us!</English>
+        <German>Für Ruhm und Reichtum unserer Kolonien! Hoffentlich wenden sich die Söldner nicht gegen uns!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE5_COLONIES</Tag>
+        <English>For the glory and wealth of our colonies! Let the natives do the dirty work!</English>
+        <German>Für Ruhm und Reichtum unserer Kolonien! Lasst die Ureinwohner die schmutzige Arbeit erledigen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORT_ROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
