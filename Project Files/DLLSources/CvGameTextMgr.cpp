@@ -5333,8 +5333,12 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 			{
 			    if (kTransportUnitInfo.getSpecialCargo() == NO_SPECIALUNIT || kUnitInfo.getSpecialCargo() == kTransportUnitInfo.getSpecialCargo())
 			    {
+					// WTP, ray, let us not have Land Transports transport other Land Transports, it feels stupid and might allow exploits
+					bool bTransportedUnitIsLandTransport = (kUnitInfo.getDomainType() == DOMAIN_LAND && kUnitInfo.getCargoSpace() > 0);
+					bool bTransportingUnitIsLandTransport = (kTransportUnitInfo.getDomainType() == DOMAIN_LAND && kTransportUnitInfo.getCargoSpace() > 0);
+					if (!(bTransportedUnitIsLandTransport && bTransportingUnitIsLandTransport))
 					// case Treasure Ships and Slave Ships separated from other
-					if ((kTransportUnitInfo.isTreasureShip() && kUnitInfo.isTreasure()) || (kTransportUnitInfo.isSlaveShip() && kUnitInfo.LbD_canRevolt()) || (kTransportUnitInfo.isTroopShip() && !kUnitInfo.isOnlyDefensive()) || (!kTransportUnitInfo.isTreasureShip() && !kTransportUnitInfo.isSlaveShip()&& !kTransportUnitInfo.isTroopShip()))
+					if ((kTransportUnitInfo.isTreasureShip() && kUnitInfo.isTreasure()) || (kTransportUnitInfo.isSlaveShip() && kUnitInfo.LbD_canRevolt()) || (kTransportUnitInfo.isTroopShip() && !kUnitInfo.isOnlyDefensive()) || (!kTransportUnitInfo.isTreasureShip() && !kTransportUnitInfo.isSlaveShip() && !kTransportUnitInfo.isTroopShip()))
 					{
 						szBuffer.append(NEWLINE);
 						szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CARGO", kTransportUnitInfo.getTextKeyWide()));

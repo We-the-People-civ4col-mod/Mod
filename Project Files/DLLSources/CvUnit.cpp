@@ -4006,6 +4006,15 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 		return false;
 	}
 
+	// WTP, ray, let us not have Land Transports transport other Land Transports, it feels stupid and might allow exploits - START
+	bool bTransportedUnitIsLandTransport = (getDomainType() == DOMAIN_LAND && getUnitInfo().getCargoSpace() > 0);
+	bool bTransportingUnitIsLandTransport = (pTransport->getDomainType() == DOMAIN_LAND && getUnitInfo().getCargoSpace() > 0);
+	if (bTransportedUnitIsLandTransport && bTransportingUnitIsLandTransport)
+	{
+		return false;
+	}
+	// WTP, ray, let us not have Land Transports transport other Land Transports, it feels stupid and might allow exploits - END
+
 	// WTP, ray Slave Ship - START
 	// a Slave Ship can only carry Slaves or Goods
 	// to avoid AI issues - only for Human player
