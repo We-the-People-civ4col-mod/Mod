@@ -34246,6 +34246,40 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
+			<ProfessionsNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_HALBERDIER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_CAVALRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_DRAGOON</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_ARTILLERY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+            </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
             <Type>UNIT_PREACHER</Type>
@@ -34742,6 +34776,40 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
+            <ProfessionsNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_HALBERDIER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_CAVALRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_DRAGOON</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_ARTILLERY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+            </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
             <Type>UNIT_PRIEST</Type>
@@ -35238,6 +35306,40 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
+			<ProfessionsNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_HALBERDIER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_CAVALRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_DRAGOON</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_ARTILLERY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+            </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
             <Type>UNIT_RUSSIAN_PRIEST</Type>
@@ -35734,6 +35836,40 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
+			<ProfessionsNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_HALBERDIER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_CAVALRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_DRAGOON</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_ARTILLERY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+            </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
             <Type>UNIT_STATESMAN</Type>
@@ -37611,6 +37747,40 @@
             </FreePromotions>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
+            <ProfessionsNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_HALBERDIER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_CAVALRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_DRAGOON</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_ARTILLERY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+            </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
             <Type>UNIT_CHRISTIAN_MISSIONARY</Type>
