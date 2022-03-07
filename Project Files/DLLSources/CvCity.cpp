@@ -104,6 +104,12 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 				int iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS();
 				setYieldBuyPrice(eYield, iBuyPrice);
 			}
+			// WTP, now also Household Goolds, but the Diff is only half
+			else if (eYield == YIELD_HOUSEHOLD_GOODS)
+			{
+				int iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS() / 2);
+				setYieldBuyPrice(eYield, iBuyPrice);
+			}
 			else
 			{
 				int iBuyPrice = kYield.getBuyPriceLow() + GC.getGameINLINE().getSorenRandNum(kYield.getBuyPriceHigh() - kYield.getBuyPriceLow() + 1, "Yield Price");
@@ -124,24 +130,24 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 			if (kYield.isCargo())
 			{
 				// strategic raw
-				if (eYield == YIELD_ORE || eYield == YIELD_COAL ||eYield == YIELD_HEMP || eYield == YIELD_FLAX)
+				if (eYield == YIELD_ORE || eYield == YIELD_COAL || eYield == YIELD_PEAT || eYield == YIELD_HEMP || eYield == YIELD_FLAX)
 				{
 					m_em_iCustomHouseSellThreshold.set(eYield, GC.getCUSTOMHOUSE_STRATEGIC_RAW_SELL_THRESHOLD() * iGameSpeedModifier);
 				}
 				// strategic produced
-				else if ( eYield == YIELD_TOOLS || eYield == YIELD_BLADES || eYield == YIELD_MUSKETS || eYield == YIELD_CANNONS || eYield == YIELD_SHEEP || eYield == YIELD_GOATS || eYield == YIELD_PIGS || eYield == YIELD_CATTLE || eYield == YIELD_CHICKEN || eYield == YIELD_GEESE || eYield == YIELD_HORSES || eYield == YIELD_ROPE || eYield == YIELD_SAILCLOTH || eYield == YIELD_TRADE_GOODS || eYield == YIELD_LUXURY_GOODS)
+				else if ( eYield == YIELD_TOOLS || eYield == YIELD_BLADES || eYield == YIELD_MUSKETS || eYield == YIELD_CANNONS || eYield == YIELD_SHEEP || eYield == YIELD_GOATS || eYield == YIELD_PIGS || eYield == YIELD_CATTLE || eYield == YIELD_CHICKEN || eYield == YIELD_GEESE || eYield == YIELD_HORSES || eYield == YIELD_ROPE || eYield == YIELD_SAILCLOTH || eYield == YIELD_TRADE_GOODS || eYield == YIELD_HOUSEHOLD_GOODS || eYield == YIELD_LUXURY_GOODS)
 				{
 					m_em_iCustomHouseSellThreshold.set(eYield, GC.getCUSTOMHOUSE_STRATEGIC_PRODUCED_SELL_THRESHOLD() * iGameSpeedModifier);
 				}
 
 				// raw
-				else if ( eYield == YIELD_WOOL || eYield == YIELD_GOAT_HIDES ||eYield == YIELD_PIG_SKIN || eYield == YIELD_HIDES || eYield == YIELD_DOWNS || eYield == YIELD_FUR || eYield == YIELD_PREMIUM_FUR || eYield == YIELD_BARLEY || eYield == YIELD_SUGAR || eYield == YIELD_FRUITS || eYield == YIELD_GRAPES || eYield == YIELD_COCOA_FRUITS || eYield == YIELD_COFFEE_BERRIES || eYield == YIELD_RAW_SALT || eYield == YIELD_RED_PEPPER || eYield == YIELD_VANILLA_PODS || eYield == YIELD_COTTON || eYield == YIELD_INDIGO || eYield == YIELD_LOGWOOD || eYield == YIELD_TOBACCO || eYield == YIELD_YERBA_LEAVES || eYield == YIELD_WHALE_BLUBBER || eYield == YIELD_VALUABLE_WOOD)
+				else if ( eYield == YIELD_WOOL || eYield == YIELD_GOAT_HIDES ||eYield == YIELD_PIG_SKIN || eYield == YIELD_HIDES || eYield == YIELD_DOWNS || eYield == YIELD_FUR || eYield == YIELD_PREMIUM_FUR || eYield == YIELD_BARLEY || eYield == YIELD_SUGAR || eYield == YIELD_FRUITS || eYield == YIELD_GRAPES || eYield == YIELD_OLIVES || eYield == YIELD_RAPE || eYield == YIELD_COCOA_FRUITS || eYield == YIELD_COFFEE_BERRIES || eYield == YIELD_PEANUTS || eYield == YIELD_RAW_SALT || eYield == YIELD_RED_PEPPER || eYield == YIELD_VANILLA_PODS || eYield == YIELD_COTTON || eYield == YIELD_INDIGO || eYield == YIELD_LOGWOOD || eYield == YIELD_TOBACCO || eYield == YIELD_YERBA_LEAVES || eYield == YIELD_WHALE_BLUBBER || eYield == YIELD_VALUABLE_WOOD)
 				{
 					m_em_iCustomHouseSellThreshold.set(eYield, GC.getCUSTOMHOUSE_RAW_SELL_THRESHOLD() * iGameSpeedModifier);
 				}
 
 				// produced
-				else if (eYield == YIELD_COCA_LEAVES || eYield == YIELD_MAPLE_SIRUP || eYield == YIELD_WILD_FEATHERS || eYield == YIELD_SILVER || eYield == YIELD_GOLD || eYield == YIELD_GEMS || eYield == YIELD_COCOA || eYield == YIELD_COFFEE || eYield == YIELD_SALT || eYield == YIELD_SPICES || eYield == YIELD_VANILLA || eYield == YIELD_CLOTH || eYield == YIELD_COLOURED_CLOTH || eYield == YIELD_WOOL_CLOTH || eYield == YIELD_COLOURED_WOOL_CLOTH || eYield == YIELD_GOAT_HIDE_BOOTS || eYield == YIELD_PIG_LEATHER || eYield == YIELD_LEATHER || eYield == YIELD_COATS || eYield == YIELD_PREMIUM_COATS || eYield == YIELD_BEER || eYield == YIELD_RUM || eYield == YIELD_HOOCH || eYield == YIELD_WINE || eYield == YIELD_CIGARS || eYield == YIELD_YERBA_TEA || eYield == YIELD_WHALE_OIL || eYield == YIELD_FURNITURE || eYield == YIELD_PADDED_FURNITURE)
+				else if (eYield == YIELD_COCA_LEAVES || eYield == YIELD_MAPLE_SIRUP || eYield == YIELD_WILD_FEATHERS || eYield == YIELD_SILVER || eYield == YIELD_GOLD || eYield == YIELD_GEMS || eYield == YIELD_COCOA || eYield == YIELD_COFFEE || eYield == YIELD_ROASTED_PEANUTS || eYield == YIELD_SALT || eYield == YIELD_SPICES || eYield == YIELD_VANILLA || eYield == YIELD_CLOTH || eYield == YIELD_COLOURED_CLOTH || eYield == YIELD_WOOL_CLOTH || eYield == YIELD_COLOURED_WOOL_CLOTH || eYield == YIELD_GOAT_HIDE_BOOTS || eYield == YIELD_PIG_LEATHER || eYield == YIELD_LEATHER || eYield == YIELD_COATS || eYield == YIELD_PREMIUM_COATS || eYield == YIELD_BEER || eYield == YIELD_RUM || eYield == YIELD_HOOCH || eYield == YIELD_WINE || eYield == YIELD_OLIVE_OIL || eYield == YIELD_RAPE_OIL || eYield == YIELD_CIGARS || eYield == YIELD_YERBA_TEA || eYield == YIELD_WHALE_OIL || eYield == YIELD_FURNITURE || eYield == YIELD_PADDED_FURNITURE)
 				{
 					m_em_iCustomHouseSellThreshold.set(eYield, GC.getCUSTOMHOUSE_PRODUCED_SELL_THRESHOLD() * iGameSpeedModifier);
 				}
@@ -12554,6 +12560,12 @@ void CvCity::doPrices()
 			if (eYield == YIELD_LUXURY_GOODS)
 			{
 				int iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS();
+				setYieldBuyPrice(eYield, iBuyPrice);
+			}
+			// WTP, now also Household Goolds, but the Diff is only half
+			else if (eYield == YIELD_HOUSEHOLD_GOODS)
+			{
+				int iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS() / 2);
 				setYieldBuyPrice(eYield, iBuyPrice);
 			}
 			else

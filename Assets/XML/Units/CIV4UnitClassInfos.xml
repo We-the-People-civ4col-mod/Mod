@@ -651,6 +651,11 @@
             <Description>TXT_KEY_UNITCLASS_COAL</Description>
             <DefaultUnit>UNIT_COAL</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_PEAT</Type>
+            <Description>TXT_KEY_UNITCLASS_PEAT</Description>
+            <DefaultUnit>UNIT_PEAT</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_SILVER</Type>
             <Description>TXT_KEY_UNITCLASS_SILVER</Description>
@@ -685,6 +690,11 @@
             <Type>UNITCLASS_COFFEE_BERRIES</Type>
             <Description>TXT_KEY_UNITCLASS_COFFEE_BERRIES</Description>
             <DefaultUnit>UNIT_COFFEE_BERRIES</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_PEANUTS</Type>
+            <Description>TXT_KEY_UNITCLASS_PEANUTS</Description>
+            <DefaultUnit>UNIT_PEANUTS</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_RAW_SALT</Type>
@@ -775,6 +785,16 @@
             <Type>UNITCLASS_GRAPES</Type>
             <Description>TXT_KEY_UNITCLASS_GRAPES</Description>
             <DefaultUnit>UNIT_GRAPES</DefaultUnit>
+        </UnitClassInfo>		
+		<UnitClassInfo>
+            <Type>UNITCLASS_OLIVES</Type>
+            <Description>TXT_KEY_UNITCLASS_OLIVES</Description>
+            <DefaultUnit>UNIT_OLIVES</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_RAPE</Type>
+            <Description>TXT_KEY_UNITCLASS_RAPE</Description>
+            <DefaultUnit>UNIT_RAPE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_TOBACCO</Type>
@@ -815,6 +835,11 @@
             <Type>UNITCLASS_COFFEE</Type>
             <Description>TXT_KEY_UNITCLASS_COFFEE</Description>
             <DefaultUnit>UNIT_COFFEE</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_ROASTED_PEANUTS</Type>
+            <Description>TXT_KEY_UNITCLASS_ROASTED_PEANUTS</Description>
+            <DefaultUnit>UNIT_ROASTED_PEANUTS</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_SALT</Type>
@@ -895,6 +920,16 @@
             <Type>UNITCLASS_WINE</Type>
             <Description>TXT_KEY_UNITCLASS_WINE</Description>
             <DefaultUnit>UNIT_WINE</DefaultUnit>
+        </UnitClassInfo>	
+		<UnitClassInfo>
+            <Type>UNITCLASS_OLIVE_OIL</Type>
+            <Description>TXT_KEY_UNITCLASS_OLIVE_OIL</Description>
+            <DefaultUnit>UNIT_OLIVE_OIL</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_RAPE_OIL</Type>
+            <Description>TXT_KEY_UNITCLASS_RAPE_OIL</Description>
+            <DefaultUnit>UNIT_RAPE_OIL</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CIGARS</Type>
@@ -985,6 +1020,11 @@
             <Type>UNITCLASS_HORSES</Type>
             <Description>TXT_KEY_UNITCLASS_HORSES</Description>
             <DefaultUnit>UNIT_HORSES</DefaultUnit>
+        </UnitClassInfo>
+		 <UnitClassInfo>
+            <Type>UNITCLASS_HOUSEHOLD_GOODS</Type>
+            <Description>TXT_KEY_UNITCLASS_HOUSEHOLD_GOODS</Description>
+            <DefaultUnit>UNIT_HOUSEHOLD_GOODS</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_LUXURY_GOODS</Type>

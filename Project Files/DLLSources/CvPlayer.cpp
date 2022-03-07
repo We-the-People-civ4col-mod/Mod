@@ -15305,6 +15305,13 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 					iPrice = getYieldBuyPrice(YIELD_COFFEE_BERRIES) - 1;
 				}
 				break;
+			case YIELD_ROASTED_PEANUTS:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_PEANUTS) <= price_diff)
+				{
+					eYield = YIELD_PEANUTS;
+					iPrice = getYieldBuyPrice(YIELD_PEANUTS) - 1;
+				}
+				break;
 			case YIELD_CIGARS:
 				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_TOBACCO) <= price_diff)
 				{
@@ -15445,6 +15452,20 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 				{
 					eYield = YIELD_GRAPES;
 					iPrice = getYieldBuyPrice(YIELD_GRAPES) - 1;
+				}
+				break;
+			case YIELD_OLIVE_OIL:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_OLIVES) <= price_diff)
+				{
+					eYield = YIELD_OLIVES;
+					iPrice = getYieldBuyPrice(YIELD_OLIVES) - 1;
+				}
+				break;
+			case YIELD_RAPE_OIL:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_RAPE) <= price_diff)
+				{
+					eYield = YIELD_RAPE;
+					iPrice = getYieldBuyPrice(YIELD_RAPE) - 1;
 				}
 				break;
 			case YIELD_WHALE_OIL:
@@ -15895,6 +15916,13 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 					iPrice = getYieldAfricaBuyPrice(YIELD_COFFEE_BERRIES) - 1;
 				}
 				break;
+			case YIELD_ROASTED_PEANUTS:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_PEANUTS) <= price_diff)
+				{
+					eYield = YIELD_PEANUTS;
+					iPrice = getYieldAfricaBuyPrice(YIELD_PEANUTS) - 1;
+				}
+				break;
 			case YIELD_CIGARS:
 				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_TOBACCO) <= price_diff)
 				{
@@ -16034,6 +16062,20 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 				{
 					eYield = YIELD_GRAPES;
 					iPrice = getYieldAfricaBuyPrice(YIELD_GRAPES) - 1;
+				}
+				break;
+			case YIELD_OLIVE_OIL:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_OLIVES) <= price_diff)
+				{
+					eYield = YIELD_OLIVES;
+					iPrice = getYieldAfricaBuyPrice(YIELD_OLIVES) - 1;
+				}
+				break;
+			case YIELD_RAPE_OIL:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_RAPE) <= price_diff)
+				{
+					eYield = YIELD_RAPE;
+					iPrice = getYieldAfricaBuyPrice(YIELD_RAPE) - 1;
 				}
 				break;
 			case YIELD_WHALE_OIL:
@@ -16425,6 +16467,13 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 					iPrice = getYieldPortRoyalBuyPrice(YIELD_COFFEE_BERRIES) - 1;
 				}
 				break;
+			case YIELD_ROASTED_PEANUTS:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_PEANUTS) <= price_diff)
+				{
+					eYield = YIELD_PEANUTS;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_PEANUTS) - 1;
+				}
+				break;
 			case YIELD_CIGARS:
 				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_TOBACCO) <= price_diff)
 				{
@@ -16564,6 +16613,20 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 				{
 					eYield = YIELD_GRAPES;
 					iPrice = getYieldPortRoyalBuyPrice(YIELD_GRAPES) - 1;
+				}
+				break;
+			case YIELD_OLIVE_OIL:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_OLIVES) <= price_diff)
+				{
+					eYield = YIELD_OLIVES;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_OLIVES) - 1;
+				}
+				break;
+			case YIELD_RAPE_OIL:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_RAPE) <= price_diff)
+				{
+					eYield = YIELD_RAPE;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_RAPE) - 1;
 				}
 				break;
 			case YIELD_WHALE_OIL:

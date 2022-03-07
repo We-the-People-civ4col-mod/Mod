@@ -4491,12 +4491,12 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 	
 	switch (eYield)
 	{
-
 		case YIELD_FOOD:
 		// Strategic resource, no reduction
 		case YIELD_HORSES:
 		case YIELD_COCOA:
 		case YIELD_COFFEE:
+		case YIELD_ROASTED_PEANUTS:
 		case YIELD_CIGARS:
 		case YIELD_YERBA_TEA:
 		case YIELD_CLOTH:
@@ -4515,6 +4515,8 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_RUM:
 		case YIELD_HOOCH:
 		case YIELD_WINE:
+		case YIELD_OLIVE_OIL:
+		case YIELD_RAPE_OIL:
 		case YIELD_WHALE_OIL:
 		case YIELD_FURNITURE:
 		case YIELD_PADDED_FURNITURE:
@@ -4528,6 +4530,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_FLAX:
 		case YIELD_ORE:
 		case YIELD_COAL:
+		case YIELD_PEAT:
 		case YIELD_SHEEP:
 		case YIELD_GOATS:
 		case YIELD_PIGS:
@@ -4538,6 +4541,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_MAPLE_SIRUP:
 		case YIELD_COCOA_FRUITS:
 		case YIELD_COFFEE_BERRIES:
+		case YIELD_PEANUTS:
 		case YIELD_TOBACCO:
 		case YIELD_YERBA_LEAVES:
 		case YIELD_COTTON:
@@ -4557,53 +4561,55 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_SUGAR:
 		case YIELD_FRUITS:
 		case YIELD_GRAPES:
+		case YIELD_OLIVES:
+		case YIELD_RAPE:
 		case YIELD_WHALE_BLUBBER:
 		case YIELD_VALUABLE_WOOD:
-		{
-			PlayerTypes eParent = GET_PLAYER(getOwnerINLINE()).getParent();
-
-			if (eParent != NO_PLAYER)
 			{
-				CvPlayer& kParent = GET_PLAYER(eParent);
+				PlayerTypes eParent = GET_PLAYER(getOwnerINLINE()).getParent();
 
-				// We value the yield by what we would have had to pay for it in
-				// a port as long as we only have a small amount of it
-				const int iBaselineAmount = 50;
-
-				// We want to encourage the production of a least a small
-				// amount of any given yield since that makes it more
-				// likely that it can be used as input
-				if (getYieldStored(eYield) <= iBaselineAmount)
+				if (eParent != NO_PLAYER)
 				{
-					const int iBestBuyPrice = std::min(kParent.getYieldSellPrice(eYield), kParent.getYieldAfricaSellPrice(eYield));
-					iValue = iAmount * iBestBuyPrice;
-				}
-				else
-				{ 
-					// Erik: For every 100 units in excess of the maintain level + baseline,
-					// decrement the estimated value by 1 to "punish" overproduction
-					// Note: This should only be applied to input yields and 
-					// not final products like muskets etc.
-					const int iExcessSurplus = std::max(0, getYieldStored(eYield) - getMaintainLevel(eYield)) - iBaselineAmount;
-					const int iReductionFactor = iExcessSurplus / 100;
-					// TODO: Consider domestic prices as well
-					const int iBestSellPrice = std::max(kParent.getYieldBuyPrice(eYield), kParent.getYieldAfricaBuyPrice(eYield));
-					iValue = iAmount * std::max(1, iBestSellPrice - iReductionFactor);
+					CvPlayer& kParent = GET_PLAYER(eParent);
+
+					// We value the yield by what we would have had to pay for it in
+					// a port as long as we only have a small amount of it
+					const int iBaselineAmount = 50;
+
+					// We want to encourage the production of a least a small
+					// amount of any given yield since that makes it more
+					// likely that it can be used as input
+					if (getYieldStored(eYield) <= iBaselineAmount)
+					{
+						const int iBestBuyPrice = std::min(kParent.getYieldSellPrice(eYield), kParent.getYieldAfricaSellPrice(eYield));
+						iValue = iAmount * iBestBuyPrice;
+					}
+					else
+					{ 
+						// Erik: For every 100 units in excess of the maintain level + baseline,
+						// decrement the estimated value by 1 to "punish" overproduction
+						// Note: This should only be applied to input yields and 
+						// not final products like muskets etc.
+						const int iExcessSurplus = std::max(0, getYieldStored(eYield) - getMaintainLevel(eYield)) - iBaselineAmount;
+						const int iReductionFactor = iExcessSurplus / 100;
+						// TODO: Consider domestic prices as well
+						const int iBestSellPrice = std::max(kParent.getYieldBuyPrice(eYield), kParent.getYieldAfricaBuyPrice(eYield));
+						iValue = iAmount * std::max(1, iBestSellPrice - iReductionFactor);
+					}
 				}
 			}
-		}
-		break;
+			break;
 		case YIELD_TRADE_GOODS:
 		// These are strategic yields and their price is never reduced
 		case YIELD_ROPE:
 		case YIELD_SAILCLOTH:
 			break;
 		case YIELD_TOOLS:
-		{
-			const int populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
-			iValue = static_cast<int>(iAmount * YIELD_TOOLS_BASE_VALUE + populationMultiplier);
-		}
-		break;
+			{
+				const int populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
+				iValue = static_cast<int>(iAmount * YIELD_TOOLS_BASE_VALUE + populationMultiplier);
+			}
+			break;
 		case YIELD_BLADES:
 		case YIELD_MUSKETS:
 		// Previous metals are never reduced in value
@@ -4611,30 +4617,31 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_SILVER:
 		case YIELD_GOLD:
 		case YIELD_GEMS:
+		case YIELD_HOUSEHOLD_GOODS:
 		case YIELD_LUXURY_GOODS:
-		break;
+			break;
 		case YIELD_HAMMERS:
-		{
-			const int populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
-			iValue = static_cast<int>(iAmount * YIELD_HAMMERS_BASE_VALUE + populationMultiplier);
-		}
-		break;
+			{
+				const int populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
+				iValue = static_cast<int>(iAmount * YIELD_HAMMERS_BASE_VALUE + populationMultiplier);
+			}
+			break;
 		case YIELD_BELLS:
-		{
-			// Erik: Estimate the value of bells based on this formula: 
-			// If rebel sentiment is <50%: 
-			//   Liberty bell value = (10 + pop/5 ) * (150% - rebel sentiment%) 
-			// Else
-			//  Liberty bell value = (10 + pop/5)
+			{
+				// Erik: Estimate the value of bells based on this formula: 
+				// If rebel sentiment is <50%: 
+				//   Liberty bell value = (10 + pop/5 ) * (150% - rebel sentiment%) 
+				// Else
+				//  Liberty bell value = (10 + pop/5)
 				
-			// Note that the doubles are necessary for the calculation to round correctly
-			const int rebelPercent = getRebelPercent();
-			const double rebelFactor = (125 - getRebelPercent()) / (double)100;
-			const double populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
+				// Note that the doubles are necessary for the calculation to round correctly
+				const int rebelPercent = getRebelPercent();
+				const double rebelFactor = (125 - getRebelPercent()) / (double)100;
+				const double populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
 				
-			iValue = static_cast<int>(iAmount * ((YIELD_BELLS_BASE_VALUE + populationMultiplier) * (getRebelPercent() < 50 ? rebelFactor : 1.0)));
-		}
-		break;
+				iValue = static_cast<int>(iAmount * ((YIELD_BELLS_BASE_VALUE + populationMultiplier) * (getRebelPercent() < 50 ? rebelFactor : 1.0)));
+			}
+			break;
 		case YIELD_CROSSES:
 			break;
 		case YIELD_CULTURE:

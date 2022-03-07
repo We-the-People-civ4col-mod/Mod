@@ -1074,4 +1074,332 @@
         <Tag>TXT_KEY_UNIT_VANILLA_PODS_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>	
+	<!-- PEAT -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_PEAT</Tag>
+        <English>Peat</English>
+        <German>
+            <Text>Torf</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_PEAT</Tag>
+        <English>Peat</English>
+        <German>
+            <Text>Torf</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PEAT</Tag>
+        <English>Peat</English>
+        <German>
+            <Text>Torf</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_PEAT_PEDIA</Tag>
+        <English>[TAB][H1]Peat[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Torf[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PEAT_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PEAT_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>	
+	<!-- PEANUTS -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_PEANUTS</Tag>
+        <English>Peanuts</English>
+        <German>
+            <Text>Erdnüsse</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_PEANUTS</Tag>
+        <English>Peanuts</English>
+        <German>
+            <Text>Erdnüsse</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PEANUTS</Tag>
+        <English>Peanuts</English>
+        <German>
+            <Text>Erdnüsse</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_PEANUTS_PEDIA</Tag>
+        <English>[TAB][H1]Peanuts[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Erdnüsse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PEANUTS_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PEANUTS_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- ROASTED PEANUTS -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_ROASTED_PEANUTS</Tag>
+        <English>Roasted Peanuts</English>
+        <German>
+            <Text>Geröstete Erdnüsse</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_ROASTED_PEANUTS</Tag>
+        <English>Roasted Peanuts</English>
+        <German>
+            <Text>Geröstete Erdnüsse</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ROASTED_PEANUTS</Tag>
+        <English>Roasted Peanuts</English>
+        <German>
+            <Text>Geröstete Erdnüsse</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_ROASTED_PEANUTS_PEDIA</Tag>
+        <English>[TAB][H1]Roasted Peanuts[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Geröstete Erdnüsse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ROASTED_PEANUTS_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ROASTED_PEANUTS_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>		
+	<!-- OLIVES -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_OLIVES</Tag>
+        <English>Olives</English>
+        <German>
+            <Text>Oliven</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_OLIVES</Tag>
+        <English>Olives</English>
+        <German>
+            <Text>Oliven</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_OLIVES</Tag>
+        <English>Olives</English>
+        <German>
+            <Text>Oliven</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_OLIVES_PEDIA</Tag>
+        <English>[TAB][H1]Olives[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Oliven[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_OLIVES_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_OLIVES_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- RAPE -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_RAPE</Tag>
+        <English>Rape</English>
+        <German>
+            <Text>Raps</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_RAPE</Tag>
+        <English>Rape</English>
+        <German>
+            <Text>Raps</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RAPE</Tag>
+        <English>Rape</English>
+        <German>
+            <Text>Raps</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_RAPE_PEDIA</Tag>
+        <English>[TAB][H1]Rape[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Raps[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RAPE_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RAPE_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- OLIVE_OIL -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_OLIVE_OIL</Tag>
+        <English>Olive Oil</English>
+        <German>
+            <Text>Olivenöl</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_OLIVE_OIL</Tag>
+        <English>Olive Oil</English>
+        <German>
+            <Text>Olivenöl</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_OLIVE_OIL</Tag>
+        <English>Olive Oil</English>
+        <German>
+            <Text>Olivenöl</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_OLIVE_OIL_PEDIA</Tag>
+        <English>[TAB][H1]Olive Oil[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Olivenöl[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_OLIVE_OIL_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_OLIVE_OIL_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- RAPE_OIL -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_RAPE_OIL</Tag>
+        <English>Rape Oil</English>
+        <German>
+            <Text>Rapsöl</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_RAPE_OIL</Tag>
+        <English>Rape Oil</English>
+        <German>
+            <Text>Rapsöl</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RAPE_OIL</Tag>
+        <English>Rape Oil</English>
+        <German>
+            <Text>Rapsöl</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_RAPE_OIL_PEDIA</Tag>
+        <English>[TAB][H1]Rape Oil[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Rapsöl[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RAPE_OIL_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RAPE_OIL_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- HOUSEHOLD_GOODS -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_HOUSEHOLD_GOODS</Tag>
+        <English>Household Goods</English>
+        <German>
+            <Text>Haushaltswaren</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_HOUSEHOLD_GOODS</Tag>
+        <English>Household Goods</English>
+        <German>
+            <Text>Haushaltswaren</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HOUSEHOLD_GOODS</Tag>
+        <English>Household Goods</English>
+        <German>
+            <Text>Haushaltswaren</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_HOUSEHOLD_GOODS_PEDIA</Tag>
+        <English>[TAB][H1]Household Goods[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Haushaltswaren[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HOUSEHOLD_GOODS_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HOUSEHOLD_GOODS_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
 </Civ4GameText>
