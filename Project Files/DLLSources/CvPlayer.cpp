@@ -1193,7 +1193,11 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 		UnitTypes eNewUnitType = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(pOldUnit->getUnitClassType());
 		if (eNewUnitType != NO_UNIT)
 		{
-			CvUnit* pNewUnit = initUnit(eNewUnitType, NO_PROFESSION, pCityPlot->getX_INLINE(), pCityPlot->getY_INLINE(), pOldUnit->AI_getUnitAIType());
+			//CvUnit* pNewUnit = initUnit(eNewUnitType, NO_PROFESSION, pCityPlot->getX_INLINE(), pCityPlot->getY_INLINE(), pOldUnit->AI_getUnitAIType());
+			// Assign the generic colonist AI rather than the profession specific AI on city takeover. This prevents inappropriate
+			// combinations of professions and unit AIs (Example: I recently observed a previous citizen that originally had UNITAI_SETTLER end up with the settler AI
+			// even though he was not equipped as a settler but a regular free colonist!)
+			CvUnit* const pNewUnit = initUnit(eNewUnitType, NO_PROFESSION, pCityPlot->getX_INLINE(), pCityPlot->getY_INLINE(), UNITAI_COLONIST);
 			pNewUnit->convert(pOldUnit, true); //kills old unit
 			aNewPopulationUnits.push_back(pNewUnit);
 		}
