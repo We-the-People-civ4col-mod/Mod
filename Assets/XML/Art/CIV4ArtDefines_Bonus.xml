@@ -830,6 +830,17 @@
             <FontButtonIndex>102</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+		<BonusArtInfo>
+            <Type>ART_DEF_BONUS_PEAT</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Peat/marble.nif</NIF>
+            <KFM>Art/Terrain/Resources/Peat/marble.kfm</KFM>
+            <Button>Art/Interface/Buttons/Peat_Button.dds</Button>
+            <FontButtonIndex>103</FontButtonIndex>
+            <bShadowCastor>0</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>		
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_CATTLE</Type>
@@ -896,7 +907,29 @@
             <FontButtonIndex>2</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>	
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_OLIVES</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Olive/olives.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/Olive_Button.dds</Button>
+            <FontButtonIndex>104</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
+        <BonusArtInfo>
+            <Type>ART_DEF_BONUS_RAPE</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.1</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/Rape/wheat.nif</NIF>
+            <KFM>Art/Terrain/Resources/Rape/wheat.kfm</KFM>
+            <Button>Art/interface/buttons/Rape_Button.dds</Button>
+            <FontButtonIndex>105</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>	
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_BOREAL_FOREST</Type>
             <fScale>1.6</fScale>

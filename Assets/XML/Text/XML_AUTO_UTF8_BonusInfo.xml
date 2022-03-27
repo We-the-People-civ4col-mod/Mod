@@ -868,6 +868,34 @@
         <Italian>[BOLD]Strategia :[\BOLD][PARAGRAPH:1]Realizzato dalla fermentazione dell'uva, il primo vino risale circa al 6000 a. C. e si diffuse rapirdamente attraverso il Medio Oriente e l'Egitto, diventando una delle bevande più popolari del mondo antico. Le qualità d'uva usate per la realizzazione del vino crescono in differenti zone del mondo; la maggior parte delle vigne si possono trovare sulle colline e nelle vallate di regioni dal clima temperato. L'industria del vino è andata perfezionandosi nel corso dei secoli: molte regioni europee, come le vallate del Reno e della Loira, sono rinomate per la produzione di ottimi vini, principale forma di economia della zona.</Italian>
         <Spanish>[BOLD]Estrategia :[\BOLD][PARAGRAPH:1]El vino, una bebida preparada a partir de uvas fermentadas, se elaboró por vez primera ya en el 6000 a. C. Su consumo se extendió rápidamente por Oriente Medio y Egipto, y pronto se convirtió en una popular bebida en el mundo antiguo. Las uvas empleadas en la fabricación del vino crecen en muchas y muy distintas partes del mundo. La mayoría de las viñas están en colinas y valles de regiones templadas. La vinicultura se ha perfeccionado como industria a lo largo de varios siglos. Muchas regiones, como los valles del Rin y del Loira en Europa, son conocidas por sus grandes vinos y obtienen una parte significativa de sus ingresos de la vinicultura.</Spanish>
     </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BONUS_OLIVES</Tag>
+        <English>Olive Trees</English>
+        <German>
+            <Text>Olivenbäume</Text>
+            <Gender>Maale</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_RAPE_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Olive Trees[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] TODO.</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Olivenbäume[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1] TODO.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_RAPE</Tag>
+        <English>Rape Plants</English>
+        <German>
+            <Text>Rapspflanzen</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_RAPE_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rape Plants[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] TODO.</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rapspflanzen[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1] TODO.</German>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_HEMP</Tag>
         <English>Hemp plants</English>
@@ -1640,6 +1668,20 @@
         <Tag>TXT_KEY_BONUS_COAL_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] TODO</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kohle[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1] TODO</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BONUS_PEAT</Tag>
+        <English>Peat</English>
+        <German>
+            <Text>Torf</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_COAL_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Peat[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1] TODO</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Torf[COLOR_REVERT] TODO [NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1] TODO</German>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_BONUS_VANILLA</Tag>
