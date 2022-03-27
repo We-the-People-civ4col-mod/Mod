@@ -516,7 +516,10 @@ void CvCity::doTurn()
 	{
 		doExtraCityDefenseAttacks(); // R&R, ray, Extra City Defense Attacks
 		doEntertainmentBuildings(); // R&R, ray, Entertainment Buildings
-		doLbD(); // TAC - LBD - Ray - START
+		if (!isDisorder())
+		{
+			doLbD(); // TAC - LBD - Ray - START
+		}
 		doPrices(); // R&R, Androrc Domestic Market
 		doCityHealth(); // R&R, ray, Health
 		// WTP, ray, Happiness - START
@@ -11500,6 +11503,10 @@ void CvCity::doLbD()
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
 		CvUnit* pLoopUnit = m_aPopulationUnits[i];
+
+		// Units with no movement left should be ignored since attempting to remove them (on lbd success) from the city will fail
+		if (pLoopUnit->movesLeft() == 0)
+			continue;
 
 		bool lbd_expert_successful = false;
 		bool lbd_free_successful = false;
