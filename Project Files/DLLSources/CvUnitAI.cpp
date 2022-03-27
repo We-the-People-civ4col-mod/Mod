@@ -487,7 +487,13 @@ bool CvUnitAI::AI_europeUpdate()
 						AI_europe();
 					}
 					// TAC - AI Assault Sea Fix - koma13 - END
-					crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
+					else
+					{ 
+						// Added the else clause to prevent the assertion caused by attempting to
+						// call the below function twice (it is also called by AI_europe())
+						crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
+						finishMoves();
+					}
 				}
 
 				if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
@@ -498,7 +504,11 @@ bool CvUnitAI::AI_europeUpdate()
 						AI_africa();
 					}
 					// TAC - AI Assault Sea Fix - koma13 - END
-					crossOcean(UNIT_TRAVEL_STATE_FROM_AFRICA);
+					else
+					{ 
+						crossOcean(UNIT_TRAVEL_STATE_FROM_AFRICA);
+						finishMoves();
+					}
 				}
 			}				
 			break;
@@ -509,6 +519,7 @@ bool CvUnitAI::AI_europeUpdate()
 				{
 					AI_sellYieldUnits(EUROPE);
 				}
+				else
 				crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
 			}
 			else if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
@@ -17350,7 +17361,8 @@ bool CvUnitAI::AI_retreatToCity(bool bPrimary, int iMaxPath, bool bAvoidDanger)
 									{
 										iBestValue = iValue;
 										pBestPlot = getPathEndTurnPlot();
-										FAssert(!atPlot(pBestPlot));
+										// See comment further below
+										//FAssert(!atPlot(pBestPlot));
 									}
 								}
 							}
@@ -17390,8 +17402,13 @@ bool CvUnitAI::AI_retreatToCity(bool bPrimary, int iMaxPath, bool bAvoidDanger)
 
 	if (pBestPlot != NULL)
 	{
-		FAssert(!atPlot(pBestPlot));
-		getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), ((iPass > 0) ? MOVE_IGNORE_DANGER : 0));
+		// Disabling these checks since there's nothing wrong with attempting to retreat and then determining that staying at the current plot 
+		// is the better choice
+		//FAssert(!atPlot(pBestPlot));
+		if (atPlot(pBestPlot))
+			getGroup()->pushMission(MISSION_SKIP);
+		else
+			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), ((iPass > 0) ? MOVE_IGNORE_DANGER : 0));
 		return true;
 	}
 
