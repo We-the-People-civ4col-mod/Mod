@@ -1597,7 +1597,7 @@
             </FeatureTerrainBooleans>
         </BonusInfo>	
         <BonusInfo>
-            <Type>BONUS_COAL</Type>
+            <Type>BONUS_PEAT</Type>
             <Description>TXT_KEY_BONUS_PEAT</Description>
             <Civilopedia>TXT_KEY_BONUS_PEAT_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_BONUS_PEAT</ArtDefineTag>
