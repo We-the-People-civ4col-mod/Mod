@@ -12123,7 +12123,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_PROFESSION_UNIT_PIONEER</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,5</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,18</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Hardy_Pioneer.dds</FullLengthIcon>
             <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
