@@ -6601,10 +6601,14 @@ void CvPlayerAI::AI_doCounter()
 	}
 	// TAC - AI Improved Navel AI - koma13 - END
 	// TAC - AI Revolution - koma13 - START
-	int iLastWave = AI_getLastWave();
+	const int iLastWave = AI_getLastWave();
 	if (iLastWave > -1)
 	{
-		AI_setLastWave(iLastWave + 1);
+		// Cap the max wave
+		if (iLastWave < GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getWaveTurns())
+		{
+			AI_setLastWave(iLastWave + 1);
+		}
 	}
 	// TAC - AI Revolution - koma13 - END
 }
@@ -9393,7 +9397,7 @@ void CvPlayerAI::AI_updateYieldValues()
 	}
 }
 
-int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, int iAmount)
+int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, int iAmount) const
 {
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
@@ -9485,7 +9489,8 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 //VET NewCapacity - end 6/8
 				iStored += (pCity->AI_getTransitYield(eYield) * 75) / 100;
 				// Erik: Adding this since I suspect a bug may cause this variable to be negative
-				FAssertMsg(iStored >= 0, "iStored expected to be >= 0");
+				//FAssertMsg(iStored >= 0, "iStored expected to be >= 0");
+				iStored = std::max(0, iStored);
 			}
 
 			iValue = iAmount * 100;

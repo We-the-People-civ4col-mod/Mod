@@ -306,7 +306,7 @@ public:
 	// TAC - AI More food - koma13 - END
 
 	void AI_updateYieldValues();
-	int AI_transferYieldValue(const IDInfo target, YieldTypes eYield, int iAmount);
+	int AI_transferYieldValue(const IDInfo target, YieldTypes eYield, int iAmount) const;
 	
 	int AI_countYieldWaiting();
 	int AI_highestYieldAdvantage(YieldTypes eYield);
