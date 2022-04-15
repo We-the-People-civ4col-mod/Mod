@@ -1,5 +1,5 @@
 CvArtFileMgr.h
-	DllExport CvArtInfo##name##* get##name##ArtInfo(const char *szArtDefineTag) const; \
+	DllExport CvArtInfo##name* get##name##ArtInfo(const char *szArtDefineTag) const; \
 	DllExport static CvArtFileMgr& GetInstance();
 	DllExport void Init();
 	DllExport void DeInit();
