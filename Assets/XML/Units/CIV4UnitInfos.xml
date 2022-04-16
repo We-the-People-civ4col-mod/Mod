@@ -59459,6 +59459,10 @@
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bTerrainNative>1</bTerrainNative>
                 </TerrainNative>
+                <TerrainNative>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bTerrainNative>1</bTerrainNative>
+                </TerrainNative>
             </TerrainNatives>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
@@ -59596,6 +59600,10 @@
             <TerrainNatives>
                 <TerrainNative>
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bTerrainNative>1</bTerrainNative>
+                </TerrainNative>
+				<TerrainNative>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bTerrainNative>1</bTerrainNative>
                 </TerrainNative>
             </TerrainNatives>
@@ -59737,6 +59745,14 @@
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
                     <bTerrainNative>1</bTerrainNative>
                 </TerrainNative>
+				<TerrainNative>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bTerrainNative>1</bTerrainNative>
+                </TerrainNative>
+				<TerrainNative>
+                    <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bTerrainNative>1</bTerrainNative>
+                </TerrainNative>
             </TerrainNatives>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
@@ -59874,6 +59890,14 @@
             <TerrainNatives>
                 <TerrainNative>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bTerrainNative>1</bTerrainNative>
+                </TerrainNative>
+				<TerrainNative>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
+                    <bTerrainNative>1</bTerrainNative>
+                </TerrainNative>
+				<TerrainNative>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <bTerrainNative>1</bTerrainNative>
                 </TerrainNative>
             </TerrainNatives>
@@ -60015,6 +60039,10 @@
                     <TerrainType>TERRAIN_GRASS</TerrainType>
                     <bTerrainNative>1</bTerrainNative>
                 </TerrainNative>
+                <TerrainNative>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bTerrainNative>1</bTerrainNative>
+                </TerrainNative>
             </TerrainNatives>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
@@ -60154,6 +60182,14 @@
                     <TerrainType>TERRAIN_TUNDRA</TerrainType>
                     <bTerrainNative>1</bTerrainNative>
                 </TerrainNative>
+                <TerrainNative>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
+                    <bTerrainNative>1</bTerrainNative>
+                </TerrainNative>
+				<TerrainNative>
+                    <TerrainType>TERRAIN_SNOW</TerrainType>
+                    <bTerrainNative>1</bTerrainNative>
+                </TerrainNative>
             </TerrainNatives>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
@@ -60291,6 +60327,14 @@
             <TerrainNatives>
                 <TerrainNative>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bTerrainNative>1</bTerrainNative>
+                </TerrainNative>
+				<TerrainNative>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bTerrainNative>1</bTerrainNative>
+                </TerrainNative>
+				<TerrainNative>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
                     <bTerrainNative>1</bTerrainNative>
                 </TerrainNative>
             </TerrainNatives>
