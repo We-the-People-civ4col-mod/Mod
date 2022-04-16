@@ -3264,8 +3264,18 @@ CvUnit* CvCityAI::AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 	{
 		if (getPopulation() > 1)
 		{
-			bool bSuccess = removePopulationUnit(pUnit, false, GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
-			FAssertMsg(bSuccess, "Failed to remove useless citizen");
+			// Units that have no moves left have been observed to cause an assertion if attempted to be removed from the city
+			// The reason is the (anti-exploit) game rule that prohibits any change of profession when leaving with no moves left
+			if (pUnit->movesLeft() > 0)
+			{
+				bool bSuccess = removePopulationUnit(pUnit, false, GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
+				FAssertMsg(bSuccess, "Failed to remove useless citizen");
+			}
+			else
+			{
+				// Unit can neither move nor be employed this turn. Just assign NO_PROFESSION and let the job assigner try again next turn
+				pUnit->setProfession(NO_PROFESSION);
+			}
 		}
 		return NULL;
 	}
