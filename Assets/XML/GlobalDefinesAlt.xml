@@ -1290,6 +1290,8 @@
 	<Define>
 		<DefineName>FONT_SYMBOL_CUSTOM_OFFSET</DefineName>
 		<iDefineIntVal>8658</iDefineIntVal>
+	</Define>
+	<Define>	
 		<DefineName>CITY_STARVATION_DONATION_FOOD_RECEIVED</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>
 	</Define>

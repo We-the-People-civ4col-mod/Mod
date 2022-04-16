@@ -6990,7 +6990,7 @@ void CvCity::doGrowth()
 					// We could donate food
 					if (iGold > iGoldToPayedForStarvationDonation)
 					{
-						kPlayer.changeGold(iGoldToPayedForStarvationDonation);
+						kPlayer.changeGold(-iGoldToPayedForStarvationDonation);
 						changeFood(iFoodReceivedForStarvationDonation);
 						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING_BUT_COLONIES_PAID", getNameKey(), iGoldToPayedForStarvationDonation, iFoodReceivedForStarvationDonation), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 					}
@@ -7008,13 +7008,14 @@ void CvCity::doGrowth()
 				// no unrest, receives gold but has to pay for it
 				else
 				{
-					if (iGold > iGoldToPayedForStarvationDonation/2)
+					int iGoldForAI = iGoldToPayedForStarvationDonation/2;
+					if (iGold > iGoldForAI)
 					{
-						kPlayer.changeGold(iGoldToPayedForStarvationDonation/2);
+						kPlayer.changeGold(-iGoldForAI);
 					}
 					else
 					{
-						kPlayer.changeGold(iGold);
+						kPlayer.changeGold(-iGold);
 					}
 					changeFood(iFoodReceivedForStarvationDonation);
 				}
