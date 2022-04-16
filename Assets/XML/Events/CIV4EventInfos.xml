@@ -8445,7 +8445,7 @@
             <iRandomGold>0</iRandomGold>
             <iCulture>0</iCulture>
             <iHealth>0</iHealth>
-            <UnitClass>UNITCLASS_GALLEON</UnitClass>
+            <UnitClass>UNITCLASS_BRIGANTINE</UnitClass>
             <iNumFreeUnits>2</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
@@ -17952,7 +17952,7 @@
             <iRandomGold>0</iRandomGold>
             <iCulture>0</iCulture>
             <iHealth>0</iHealth>
-            <UnitClass>UNITCLASS_GALLEON</UnitClass>
+            <UnitClass>UNITCLASS_BRIGANTINE</UnitClass>
             <iNumFreeUnits>1</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
