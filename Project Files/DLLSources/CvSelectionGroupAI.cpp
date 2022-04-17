@@ -50,7 +50,9 @@ void CvSelectionGroupAI::AI_reset()
 	AI_resetSavedData();
 }
 
-
+// Split all units on this plot that belongs to our team into separate groups (each with a member unit)
+// Note that if called on a transport, all contained units will be split (even though they are not in the
+// same group as the transport)
 void CvSelectionGroupAI::AI_separate()
 {
 	CLLNode<IDInfo>* pEntityNode;
