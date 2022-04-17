@@ -606,10 +606,6 @@
 		<iDefineIntVal>100</iDefineIntVal>
 	</Define>
 	<Define>
-		<DefineName>NEW_CAPACITY</DefineName>
-		<iDefineIntVal>1</iDefineIntVal>
-	</Define>
-	<Define>
 		<DefineName>CUSTOMHOUSE_STRATEGIC_RAW_SELL_THRESHOLD</DefineName>
 		<iDefineIntVal>300</iDefineIntVal>
 	</Define>

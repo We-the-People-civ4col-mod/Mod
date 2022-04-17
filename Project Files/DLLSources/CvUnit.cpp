@@ -4308,13 +4308,8 @@ int CvUnit::getMaxLoadYieldAmount(YieldTypes eYield) const
 		int iMaxAvailable = pCity->getYieldStored(eYield);
 		if (!isHuman() || isAutomated())
 		{
-//VET NewCapacity - begin 1/1
-			//iMaxAvailable -= pCity->getMaintainLevel(eYield);
-
 			// R&R, ray, improvement
-			//if (GC.getNEW_CAPACITY())
-			if (GC.getNEW_CAPACITY() && !isHuman() && (pCity->getTotalYieldStored() > pCity->getMaxYieldCapacity() / 2))
-			//if (GC.getNEW_CAPACITY() && !isHuman())
+			if (!isHuman() && (pCity->getTotalYieldStored() > pCity->getMaxYieldCapacity() / 2))
 			{
 				// ray, making special storage capacity rules for Yields XML configurable
 				int iCargoYields = 0;
@@ -4336,7 +4331,6 @@ int CvUnit::getMaxLoadYieldAmount(YieldTypes eYield) const
 					iMaxAvailable -= pCity->getAutoMaintainThreshold(eYield);
 					// transport feeder - end - Nightinggale
 				}
-//VET NewCapacity - end 1/1
 		}
 		iMaxAmount = std::min(iMaxAmount, iMaxAvailable);
 	}

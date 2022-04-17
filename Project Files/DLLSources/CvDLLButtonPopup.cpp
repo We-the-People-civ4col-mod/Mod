@@ -3280,17 +3280,10 @@ bool CvDLLButtonPopup::launchCustomHousePopup(CvPopup* pPopup, CvPopupInfo &info
 		return false;
 	}
 
-	// R&R, ray, finishing Custom House Screen
-	if(!GC.getNEW_CAPACITY())
-	{
-		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_CUSTOM_HOUSE_POPUP_TEXT_NO_NEW_CAPACITY"));
-	}
-
-	else if (!pCity->getHasUnlockedStorageLossTradeSettings())
+	if (!pCity->getHasUnlockedStorageLossTradeSettings())
 	{
 		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_CUSTOM_HOUSE_NOT_BUILT_YET_POPUP_TEXT", pCity->getNameKey()));
 	}
-		
 	else
 	{
 		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_CUSTOM_HOUSE_POPUP_TEXT", pCity->getNameKey()));

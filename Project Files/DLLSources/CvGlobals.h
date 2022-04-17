@@ -658,8 +658,6 @@ public:
 	int getAI_TRANSPORT_DANGER_RANGE();
 	int getAI_LOST_TRANSPORT_MEMORY_COUNT();
 	// TAC - AI Improved Navel AI - koma13 - END
-	int getNEW_CAPACITY(); //VET NewCapacity - 1/2
-
 	// R&R, ray, caching globals from Global Defines Alt - START
 	int getPLOT_VISIBILITY_RANGE();
 	int getUNIT_VISIBILITY_RANGE();
@@ -1219,7 +1217,6 @@ protected:
 	int m_iPEAK_SEE_FROM_CHANGE;
 	int m_iHILLS_SEE_FROM_CHANGE;
 	int m_iMAX_REBEL_YIELD_MODIFIER;
-	int m_iNEW_CAPACITY; //VET NewCapacity - 2/2
 	// TAC - AI Improved Navel AI - koma13 - START
 	int m_iAI_TRANSPORT_DANGER_RANGE;
 	int m_iAI_LOST_TRANSPORT_MEMORY_COUNT;
@@ -1741,10 +1738,6 @@ inline int CvGlobals::getHILLS_SEE_FROM_CHANGE()
 inline int CvGlobals::getMAX_REBEL_YIELD_MODIFIER()
 {
 	return m_iMAX_REBEL_YIELD_MODIFIER;
-}
-inline int CvGlobals::getNEW_CAPACITY() //VET NewCapacity - 3/3
-{
-	return m_iNEW_CAPACITY;
 }
 
 // TAC - AI Improved Navel AI - koma13 - START

@@ -357,11 +357,9 @@ public:
 	void setCulture(PlayerTypes eIndex, int iNewValue, bool bPlots);
 	void changeCulture(PlayerTypes eIndex, int iChange, bool bPlots);
 
-//VET NewCapacity - begin 1/2
 	int getTotalYieldStored() const; // In python
 	void setTotalYieldStored(int iValue);
 	void changeTotalYieldStored(int iChange);
-//VET NewCapacity - end 1/2
 	int getYieldStored(YieldTypes eYield) const;
 	void setYieldStored(YieldTypes eYield, int iValue);
 	void changeYieldStored(YieldTypes eYield, int iChange);
@@ -787,7 +785,7 @@ protected:
 	int m_iCityTimerFestivitiesOrUnrest; // WTP, ray, Happiness
 	int m_iTeachUnitMultiplier;
 	int m_iEducationThresholdMultiplier;
-	int m_iTotalYieldStored;			//VET NewCapacity - 2/2
+	int m_iTotalYieldStored;
 
 	bool m_bNeverLost;
 	bool m_bBombarded;
