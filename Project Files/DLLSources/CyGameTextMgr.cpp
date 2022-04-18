@@ -13,7 +13,7 @@ m_pGameTextMgr(NULL)
 	m_pGameTextMgr = &CvGameTextMgr::GetInstance();
 }
 CyGameTextMgr::CyGameTextMgr(CvGameTextMgr* pGameTextMgr) :
-m_pGameTextMgr(m_pGameTextMgr)
+m_pGameTextMgr(pGameTextMgr)
 {}
 void CyGameTextMgr::Reset()
 {
