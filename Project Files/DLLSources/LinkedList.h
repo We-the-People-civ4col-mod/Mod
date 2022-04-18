@@ -273,7 +273,7 @@ inline CLLNode<tVARTYPE>* CLinkList<tVARTYPE>::deleteNode(CLLNode<tVARTYPE>* pNo
 }
 
 // Not used and probably not tested. Note that if the last else statement triggers, we get a null dereference
-#ifdef 0
+#if 0
 template <class tVARTYPE>
 inline void CLinkList<tVARTYPE>::moveToEnd(CLLNode<tVARTYPE>* pNode)
 {
