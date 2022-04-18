@@ -7388,15 +7388,26 @@ bool CvPlayerAI::AI_doDiploDemandTribute(PlayerTypes ePlayer)
 	}
 
 	TradeData item;
+	bool bItemValid = false;
+
 	int iReceiveGold = std::min(std::max(0, (kPlayer.getGold() - 50)), kPlayer.AI_goldTarget());
 	iReceiveGold -= (iReceiveGold % GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
+
 	if (iReceiveGold > 50)
 	{
 		setTradeItem(&item, TRADE_GOLD, iReceiveGold, NULL);
+		bItemValid = true;
 	}
 	else if (GET_TEAM(getTeam()).AI_mapTradeVal(kPlayer.getTeam()) > 100)
 	{
 		setTradeItem(&item, TRADE_MAPS, 0, NULL);
+		bItemValid = true;
+	}
+
+	// In case neither of the conditions above initialized item
+	if (!bItemValid)
+	{
+		return false;
 	}
 
 	if (!canTradeItem(ePlayer, item, true))
