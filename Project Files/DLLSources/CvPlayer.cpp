@@ -3996,9 +3996,13 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 					pSupportUnit = kPlayer.initUnit(DefaultSupportType, GC.getUnitInfo(DefaultSupportType).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
 				}
 
-				//sending message
-				CvWString szBuffer = gDLL->getText("TXT_KEY_REV_SUPPORT_ARRIVED", GC.getLeaderHeadInfo(GET_PLAYER(getParent()).getLeaderType()).getDescription());
-				gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, pSupportUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pSupportUnit->getX(), pSupportUnit->getY(), true, true);
+				// Suppress cppcheck warning
+				if (pSupportUnit != NULL)
+				{
+					//sending message
+					CvWString szBuffer = gDLL->getText("TXT_KEY_REV_SUPPORT_ARRIVED", GC.getLeaderHeadInfo(GET_PLAYER(getParent()).getLeaderType()).getDescription());
+					gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, pSupportUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pSupportUnit->getX(), pSupportUnit->getY(), true, true);
+				}
 			}
 		}
 		break;
@@ -4571,6 +4575,9 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 	case TRADE_PEACE_TREATY:
 		return true;
 		break;
+
+	default:
+		FAssertMsg(false, "Invalid TradeData");
 	}
 
 	return false;
