@@ -1184,6 +1184,25 @@ int CvCity::countNumRiverPlots() const
 	return iCount;
 }
 
+
+int CvCity::getNumAvailableWorkSlots() const
+{
+	int cnt = 0;
+
+	for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
+	{
+		const BuildingTypes eBuilding = (BuildingTypes)i;
+
+		if (isHasBuilding(eBuilding))
+		{
+			cnt += getAvailableBuildingSlots(eBuilding, NULL);
+		}
+	}
+
+	return cnt;
+}
+
+
 int CvCity::getNumProfessionBuildingSlots(ProfessionTypes eProfession) const
 {
 	FAssert(!GC.getProfessionInfo(eProfession).isWorkPlot());
@@ -1253,7 +1272,7 @@ bool CvCity::isAvailableProfessionSlot(ProfessionTypes eProfession, const CvUnit
 				if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == GC.getProfessionInfo(eProfession).getSpecialBuilding() && isHasBuilding(eBuilding))
 				{
 					bHasBuilding = true;
-					if (!isAvailableBuildingSlot(eBuilding, pUnit))
+					if (getAvailableBuildingSlots(eBuilding, pUnit) == 0)
 					{
 						return false;
 					}
@@ -1272,7 +1291,7 @@ bool CvCity::isAvailableProfessionSlot(ProfessionTypes eProfession, const CvUnit
 
 //Androrc Multiple Professions per Building
 //get the available slots per building, instead of per profession
-bool CvCity::isAvailableBuildingSlot(BuildingTypes eBuilding, const CvUnit* pUnit) const
+int CvCity::getAvailableBuildingSlots(BuildingTypes eBuilding, const CvUnit* pUnit) const
 {
 	int iSlots = 0;
 
@@ -1297,10 +1316,10 @@ bool CvCity::isAvailableBuildingSlot(BuildingTypes eBuilding, const CvUnit* pUni
 	if (iSlots <= 0)
 	{
 		FAssert(iSlots == 0);
-		return false;
+		return 0;
 	}
 
-	return true;
+	return iSlots;
 }
 //Androrc End
 
@@ -5818,7 +5837,7 @@ void CvCity::alterUnitWorkingBuilding(BuildingTypes eBuilding, int iUnitId, bool
 		}
 	}
 
-	if (isAvailableBuildingSlot(eBuilding, pUnit))
+	if (getAvailableBuildingSlots(eBuilding, pUnit) > 0)
 	{
 		if (pUnit != NULL)
 		{

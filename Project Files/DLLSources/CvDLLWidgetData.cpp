@@ -3370,7 +3370,7 @@ void CvDLLWidgetData::doCityUnitAssignCitizen(const CvWidgetDataStruct& destinat
 					CvUnit* pUnit = pCity->getPopulationUnitById(sourceWidgetData.m_iData1);
 					if (pUnit != NULL && GC.getProfessionInfo(pUnit->getProfession()).getSpecialBuilding() != GC.getBuildingInfo((BuildingTypes) destinationWidgetData.m_iData2).getSpecialBuildingType()) //if isn't NULL and isn't already working in that building
 					{
-						if (pCity->isAvailableBuildingSlot((BuildingTypes) destinationWidgetData.m_iData2, pUnit))
+						if (pCity->getAvailableBuildingSlots((BuildingTypes) destinationWidgetData.m_iData2, pUnit) > 0)
 						{
 							gDLL->sendDoTask(pCity->getID(), TASK_CHANGE_WORKING_BUILDING, destinationWidgetData.m_iData2, sourceWidgetData.m_iData1, true, false, false, false);
 						}
@@ -3520,7 +3520,7 @@ void CvDLLWidgetData::doMoveCargoToCity(const CvWidgetDataStruct& destinationWid
 					CvUnit* pUnit = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getUnit(iUnitId);
 					if (pUnit != NULL)
 					{
-						if (pCity->isAvailableBuildingSlot((BuildingTypes) destinationWidgetData.m_iData2, pUnit))
+						if (pCity->getAvailableBuildingSlots((BuildingTypes) destinationWidgetData.m_iData2, pUnit) > 0)
 						{
 							gDLL->sendDoTask(pCity->getID(), TASK_CHANGE_WORKING_BUILDING, destinationWidgetData.m_iData2, iUnitId, true, false, false, false);
 						}
@@ -3898,7 +3898,7 @@ void CvDLLWidgetData::doUnitIntoCity(const CvWidgetDataStruct& destinationWidget
 					CvUnit* pUnit = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getUnit(iUnitId);
 					if (pUnit != NULL)
 					{
-						if (pCity->isAvailableBuildingSlot((BuildingTypes) destinationWidgetData.m_iData2, pUnit))
+						if (pCity->getAvailableBuildingSlots((BuildingTypes) destinationWidgetData.m_iData2, pUnit) > 0)
 						{
 							gDLL->sendDoTask(pCity->getID(), TASK_CHANGE_WORKING_BUILDING, destinationWidgetData.m_iData2, iUnitId, true, false, false, false);
 						}
