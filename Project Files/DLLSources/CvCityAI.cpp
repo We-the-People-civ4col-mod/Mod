@@ -21,9 +21,9 @@
 #include "CvSavegame.h"
 
 
-#define BUILDINGFOCUS_NO_RECURSION			(1 << 31)
-#define BUILDINGFOCUS_BUILD_ANYTHING		(1 << 30)
-#define BUILDINGFOCUS_MILITARY				(1 << 29)	// TAC - AI Buildings - koma13
+#define BUILDINGFOCUS_NO_RECURSION			(1U << 31)
+#define BUILDINGFOCUS_BUILD_ANYTHING		(1U << 30)
+#define BUILDINGFOCUS_MILITARY				(1U << 29)	// TAC - AI Buildings - koma13
 
 #define YIELD_DISCOUNT_TURNS 			10
 
@@ -251,8 +251,12 @@ void CvCityAI::AI_assignWorkingPlots()
 		iCount++;
 		if (iCount > iMaxIterations)
 		{
+			const int iNumFreePlots = getNumAvailableWorkPlots();
+			const int iNumFreeSlots = getNumAvailableWorkSlots();
+
 			CvWString szTempBuffer;
-			szTempBuffer.Format(L"AI plot assignment confusion. Unit: %s in city: %s could not be assigned to a job!", pUnit->getNameAndProfession().GetCString(), getName().GetCString());
+			szTempBuffer.Format(L"AI plot assignment confusion. Unit: %s in city: %s could not be assigned to a job!. Available plots: %d slots: %d", 
+				pUnit->getNameAndProfession().GetCString(), getName().GetCString(), iNumFreePlots, iNumFreeSlots);
 			std::string s(szTempBuffer.begin(), szTempBuffer.end());
 			FAssertMsg(false, s.c_str());
 			break;
@@ -1063,7 +1067,7 @@ bool CvCityAI::AI_isProductionBuilding(BuildingTypes eBuilding, bool bMajorCity)
 }
 // TAC - AI Buildings - koma13 - END
 
-int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
+int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, unsigned int iFocusFlags) const
 {
 	//
 	bool bIsStarted = getBuildingProduction(eBuilding) > 0;

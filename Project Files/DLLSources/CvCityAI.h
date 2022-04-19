@@ -42,7 +42,7 @@ public:
 
 	bool AI_isProductionBuilding(BuildingTypes eBuilding, bool bMajorCity = false) const;	// TAC - AI Buildings - koma13
 	
-	int AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags = 0) const;
+	int AI_buildingValue(BuildingTypes eBuilding, unsigned int iFocusFlags = 0) const;
 
 	int AI_neededSeaWorkers() const;
 
