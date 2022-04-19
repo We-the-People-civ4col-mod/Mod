@@ -13955,7 +13955,9 @@ bool CvUnitAI::AI_anyAttack(int iRange, int iOddsThreshold, int iMinStack, bool 
 								if (bCanBombard)
 								{
 									CvCity* pCity = bombardTarget(pLoopPlot);
-									FAssert(pCity != NULL);
+									// Note: bCanBombard can be true if a fort was found rather than a city
+									// If that's the case we simply ignore it for now (may want to revisit it though)
+									//FAssert(pCity != NULL);
 									if (pCity != NULL)
 									{
 										int iValue = getGroup()->AI_attackOdds(pCity->plot(), true);
