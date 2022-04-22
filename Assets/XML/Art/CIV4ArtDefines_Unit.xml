@@ -1462,7 +1462,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_VANILLA_PODS</Type>
-            <Button>,Art/colonization_atlas_resources.dds,6,5</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Vanilla_Pods_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -1512,7 +1512,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_VANILLA</Type>
-            <Button>,Art/colonization_atlas_resources.dds,7,5</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Vanilla_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -1562,7 +1562,7 @@
         </UnitArtInfo>	
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_OLIVES</Type>
-            <Button>,Art/colonization_atlas_resources.dds,3,3</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Olives_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -1587,7 +1587,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_RAPE</Type>
-            <Button>,Art/colonization_atlas_resources.dds,3,3</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Rape_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -1637,7 +1637,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_OLIVE_OIL</Type>
-            <Button>,Art/colonization_atlas_resources.dds,4,3</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Olive_Oil_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -1662,7 +1662,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_RAPE_OIL</Type>
-            <Button>,Art/colonization_atlas_resources.dds,4,3</Button>
+            <Button>,Art/interface/buttons/New_Yields_Buttons/Rape_Seed_Oil_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -1862,7 +1862,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_CLAY</Type>
-            <Button>,Art/colonization_atlas_resources.dds,8,5</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Clay_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -1887,7 +1887,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_COAL</Type>
-            <Button>,Art/colonization_atlas_resources.dds,8,5</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Coal_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -1912,7 +1912,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_PEAT</Type>
-            <Button>,Art/colonization_atlas_resources.dds,8,5</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Peat_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -2512,7 +2512,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_PEANUTS</Type>
-            <Button>,Art/colonization_atlas_resources.dds,3,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Peanuts_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -2587,7 +2587,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_ROASTED_PEANUTS</Type>
-            <Button>,Art/colonization_atlas_resources.dds,1,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Roasted_Peanuts_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -2912,7 +2912,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_HOUSEHOLD_GOODS</Type>
-            <Button>,Art/colonization_atlas_resources.dds,8,3</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Household_Items_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16170,7 +16170,7 @@
 		<!-- WTP, ray, Art Defs of new Trade Goods start -->
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_GOATS</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Goats_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16195,7 +16195,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_PIGS</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Pigs_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16220,7 +16220,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_CHICKEN</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Chicken_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16245,7 +16245,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_GEESE</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Goose_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16270,7 +16270,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_GOAT_HIDES</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Goat_Hide_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16295,7 +16295,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_PIG_SKIN</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Pig_Skin_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16320,7 +16320,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_DOWNS</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Downs_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16345,7 +16345,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_WILD_FEATHERS</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Wild_Feathres_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16370,7 +16370,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_GOAT_HIDE_BOOTS</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Goat_Hide_Boots_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16395,7 +16395,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_PIG_LEATHER</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Pig_Leather_Aprons_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16420,7 +16420,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_FRUITS</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Fruits_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16445,7 +16445,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_HOOCH</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Hooch_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16470,7 +16470,7 @@
         </UnitArtInfo>		
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_FLAX</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Linen_Fiber_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16495,7 +16495,7 @@
         </UnitArtInfo>	
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_PADDED_FURNITURE</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Padded_Furniture_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16520,7 +16520,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_HARDWOOD</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Hardwood_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16545,7 +16545,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_MAPLE_SIRUP</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Maple_Sirup_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16570,7 +16570,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_YERBA_LEAVES</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Yerba_Leaves_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16595,7 +16595,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_LOGWOOD</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Bloodwood_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16620,7 +16620,7 @@
         </UnitArtInfo>	
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_YERBA_TEA</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Yerba_Tea_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16645,7 +16645,7 @@
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_COLOURED_WOOL_CLOTH</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,2</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Coloured_Wool_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
