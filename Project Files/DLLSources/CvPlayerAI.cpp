@@ -2046,7 +2046,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 			{
 				// R&R, ray, adjustment because of MYCP
 				// WTP, ray, adjustment because of MYCP
-				if (pPlot->getYield(YIELD_FUR) < GC.getFOOD_CONSUMPTION_PER_POPULATION() && pPlot->getYield(YIELD_WILD_FEATHERS) < GC.getFOOD_CONSUMPTION_PER_POPULATION() && pPlot->getYield(YIELD_FRUITS) < GC.getFOOD_CONSUMPTION_PER_POPULATION())
+				if (pPlot->getYield(YIELD_FUR) < GC.getFOOD_CONSUMPTION_PER_POPULATION() && pPlot->getYield(YIELD_WILD_FEATHERS) < GC.getFOOD_CONSUMPTION_PER_POPULATION() && pPlot->getYield(YIELD_FRUITS) < GC.getFOOD_CONSUMPTION_PER_POPULATION() && pPlot->getYield(YIELD_RICE) < GC.getFOOD_CONSUMPTION_PER_POPULATION() && pPlot->getYield(YIELD_CASSAVA) < GC.getFOOD_CONSUMPTION_PER_POPULATION())
 				{
 					return 1;
 				}
@@ -2195,7 +2195,7 @@ int CvPlayerAI::AI_foundValueNative(int iX, int iY, bool allowSettleOnBonus) con
 				{
 					// R&R, ray, adjustment because of MYCP
 					// WTP, ray, adjustment because of MYCP
-					if (pLoopPlot->getYield(YIELD_FOOD) < 2 && pLoopPlot->getYield(YIELD_FUR) < 2 && pLoopPlot->getYield(YIELD_WILD_FEATHERS) < 2 && pLoopPlot->getYield(YIELD_FRUITS) < 2)
+					if (pLoopPlot->getYield(YIELD_FOOD) < 2 && pLoopPlot->getYield(YIELD_FUR) < 2 && pLoopPlot->getYield(YIELD_WILD_FEATHERS) < 2 && pLoopPlot->getYield(YIELD_FRUITS) < 2 && pLoopPlot->getYield(YIELD_RICE) < 2 && pLoopPlot->getYield(YIELD_CASSAVA) < 2)
 					{
 						iBadTileCount++;
 					}
@@ -2204,7 +2204,7 @@ int CvPlayerAI::AI_foundValueNative(int iX, int iY, bool allowSettleOnBonus) con
 				{
 					// R&R, ray, adjustment because of MYCP
 					// WTP, ray, adjustment because of MYCP
-					if (pLoopPlot->getYield(YIELD_FOOD) < 1 && pLoopPlot->getYield(YIELD_FUR) < 2 && pLoopPlot->getYield(YIELD_WILD_FEATHERS) < 2 && pLoopPlot->getYield(YIELD_FRUITS) < 2)
+					if (pLoopPlot->getYield(YIELD_FOOD) < 1 && pLoopPlot->getYield(YIELD_FUR) < 2 && pLoopPlot->getYield(YIELD_WILD_FEATHERS) < 2 && pLoopPlot->getYield(YIELD_FRUITS) < 2 && pLoopPlot->getYield(YIELD_RICE) < 2 && pLoopPlot->getYield(YIELD_CASSAVA) < 2)
 					{
 						iBadTileCount++;
 					}
@@ -8619,6 +8619,7 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_COTTON:
 		case YIELD_INDIGO:
 		case YIELD_LOGWOOD:
+		case YIELD_COCHINEAL:
 		case YIELD_WOOL:
 		case YIELD_GOAT_HIDES:
 		case YIELD_PIG_SKIN:
@@ -8653,6 +8654,8 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_CANNONS:
 			return false;
 			break;
+		case YIELD_RICE:
+		case YIELD_CASSAVA:
 		case YIELD_COCA_LEAVES:
 		case YIELD_MAPLE_SIRUP:
 		case YIELD_WILD_FEATHERS:
@@ -8671,11 +8674,13 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_GOAT_HIDE_BOOTS:
 		case YIELD_PIG_LEATHER:
 		case YIELD_LEATHER:
+		case YIELD_PADDED_LEATHER_COATS:
 		case YIELD_COATS:
 		case YIELD_PREMIUM_COATS:
 		case YIELD_SALT:
 		case YIELD_SPICES:
 		case YIELD_VANILLA:
+		case YIELD_CHOCOLATE:
 		case YIELD_BEER:
 		case YIELD_RUM:
 		case YIELD_HOOCH:
@@ -8687,6 +8692,7 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_PADDED_FURNITURE:
 			return true;
 			break;
+		case YIELD_FIELD_WORKER_TOOLS:
 		case YIELD_HOUSEHOLD_GOODS:
 		case YIELD_LUXURY_GOODS:
 			return false;
@@ -8845,6 +8851,7 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 		case YIELD_COTTON:
 		case YIELD_INDIGO:
 		case YIELD_LOGWOOD:
+		case YIELD_COCHINEAL:
 		case YIELD_WOOL:
 		case YIELD_GOAT_HIDES:
 		case YIELD_PIG_SKIN:
@@ -8887,6 +8894,8 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 		case YIELD_CANNONS:
 			bFinal = false;
 			break;
+		case YIELD_RICE:
+		case YIELD_CASSAVA:
 		case YIELD_COCA_LEAVES:
 		case YIELD_MAPLE_SIRUP:
 		case YIELD_WILD_FEATHERS:
@@ -8920,11 +8929,13 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 		case YIELD_GOAT_HIDE_BOOTS:
 		case YIELD_PIG_LEATHER:
 		case YIELD_LEATHER:
+		case YIELD_PADDED_LEATHER_COATS:
 		case YIELD_COATS:
 		case YIELD_PREMIUM_COATS:
 		case YIELD_SALT:
 		case YIELD_SPICES:
 		case YIELD_VANILLA:
+		case YIELD_CHOCOLATE:
 		case YIELD_BEER:
 		case YIELD_RUM:
 		case YIELD_HOOCH:
@@ -8934,6 +8945,7 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 		case YIELD_WHALE_OIL:
 		case YIELD_FURNITURE:
 		case YIELD_PADDED_FURNITURE:
+		case YIELD_FIELD_WORKER_TOOLS:
 		case YIELD_HOUSEHOLD_GOODS:
 		case YIELD_LUXURY_GOODS:
 			bFinal = true;
@@ -8984,6 +8996,8 @@ bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
 		case YIELD_CHICKEN:
 		case YIELD_GEESE:
 		case YIELD_HORSES:
+		case YIELD_RICE:
+		case YIELD_CASSAVA:
 		case YIELD_COCA_LEAVES:
 		case YIELD_MAPLE_SIRUP:
 		case YIELD_COCOA_FRUITS:
@@ -8994,6 +9008,7 @@ bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
 		case YIELD_COTTON:
 		case YIELD_INDIGO:
 		case YIELD_LOGWOOD:
+		case YIELD_COCHINEAL:
 		case YIELD_WOOL:
 		case YIELD_GOAT_HIDES:
 		case YIELD_PIG_SKIN:
@@ -9039,11 +9054,13 @@ bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
 		case YIELD_GOAT_HIDE_BOOTS:
 		case YIELD_PIG_LEATHER:
 		case YIELD_LEATHER:
+		case YIELD_PADDED_LEATHER_COATS:
 		case YIELD_COATS:
 		case YIELD_PREMIUM_COATS:
 		case YIELD_SALT:
 		case YIELD_SPICES:
 		case YIELD_VANILLA:
+		case YIELD_CHOCOLATE:
 		case YIELD_BEER:
 		case YIELD_RUM:
 		case YIELD_HOOCH:
@@ -9053,6 +9070,7 @@ bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
 		case YIELD_WHALE_OIL:
 		case YIELD_FURNITURE:
 		case YIELD_PADDED_FURNITURE:
+		case YIELD_FIELD_WORKER_TOOLS:
 		case YIELD_HOUSEHOLD_GOODS:
 		case YIELD_LUXURY_GOODS:
 			bBuy = false;
@@ -9191,6 +9209,7 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 			case YIELD_COTTON:
 			case YIELD_INDIGO:
 			case YIELD_LOGWOOD:
+			case YIELD_COCHINEAL:
 			case YIELD_WOOL:
 			case YIELD_GOAT_HIDES:
 			case YIELD_PIG_SKIN:
@@ -9227,6 +9246,8 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 				iValue *= iWeaponsMultiplier;
 				iValue /= 100;
 				break;
+			case YIELD_RICE:
+			case YIELD_CASSAVA:
 			case YIELD_COCA_LEAVES:
 			case YIELD_MAPLE_SIRUP:
 			case YIELD_WILD_FEATHERS:
@@ -9245,11 +9266,13 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 			case YIELD_GOAT_HIDE_BOOTS:
 			case YIELD_PIG_LEATHER:
 			case YIELD_LEATHER:
+			case YIELD_PADDED_LEATHER_COATS:
 			case YIELD_COATS:
 			case YIELD_PREMIUM_COATS:
 			case YIELD_SALT:
 			case YIELD_SPICES:
 			case YIELD_VANILLA:
+			case YIELD_CHOCOLATE:
 			case YIELD_BEER:
 			case YIELD_RUM:
 			case YIELD_HOOCH:
@@ -9262,6 +9285,7 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 				iValue *= iGoodsMultiplier;
 				iValue /= 100;
 				break;
+			case YIELD_FIELD_WORKER_TOOLS:
 			case YIELD_HOUSEHOLD_GOODS:
 			case YIELD_LUXURY_GOODS:
 				break;
@@ -9374,6 +9398,7 @@ void CvPlayerAI::AI_updateYieldValues()
 			case YIELD_COTTON:
 			case YIELD_INDIGO:
 			case YIELD_LOGWOOD:
+			case YIELD_COCHINEAL:
 			case YIELD_WOOL:
 			case YIELD_GOAT_HIDES:
 			case YIELD_PIG_SKIN:
@@ -9403,6 +9428,8 @@ void CvPlayerAI::AI_updateYieldValues()
 			case YIELD_CANNONS:
 				iValue += kParent.getYieldSellPrice(eYield);
 				break;
+			case YIELD_RICE:
+			case YIELD_CASSAVA:
 			case YIELD_COCA_LEAVES:
 			case YIELD_MAPLE_SIRUP:
 			case YIELD_WILD_FEATHERS:
@@ -9421,11 +9448,13 @@ void CvPlayerAI::AI_updateYieldValues()
 			case YIELD_GOAT_HIDE_BOOTS:
 			case YIELD_PIG_LEATHER:
 			case YIELD_LEATHER:
+			case YIELD_PADDED_LEATHER_COATS:
 			case YIELD_COATS:
 			case YIELD_PREMIUM_COATS:
 			case YIELD_SALT:
 			case YIELD_SPICES:
 			case YIELD_VANILLA:
+			case YIELD_CHOCOLATE:
 			case YIELD_BEER:
 			case YIELD_RUM:
 			case YIELD_HOOCH:
@@ -9437,6 +9466,7 @@ void CvPlayerAI::AI_updateYieldValues()
 			case YIELD_PADDED_FURNITURE:
 				iValue += kParent.getYieldBuyPrice(eYield);
 				break;
+			case YIELD_FIELD_WORKER_TOOLS:
 			case YIELD_HOUSEHOLD_GOODS:
 			case YIELD_LUXURY_GOODS:
 				iValue += kParent.getYieldSellPrice(eYield);

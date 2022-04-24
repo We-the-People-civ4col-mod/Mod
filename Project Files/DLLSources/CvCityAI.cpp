@@ -4506,11 +4506,13 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_GOAT_HIDE_BOOTS:
 		case YIELD_PIG_LEATHER:
 		case YIELD_LEATHER:
+		case YIELD_PADDED_LEATHER_COATS:
 		case YIELD_COATS:
 		case YIELD_PREMIUM_COATS:
 		case YIELD_SALT:
 		case YIELD_SPICES:
 		case YIELD_VANILLA:
+		case YIELD_CHOCOLATE:
 		case YIELD_BEER:
 		case YIELD_RUM:
 		case YIELD_HOOCH:
@@ -4537,6 +4539,8 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_CATTLE:
 		case YIELD_CHICKEN:
 		case YIELD_GEESE:
+		case YIELD_RICE:
+		case YIELD_CASSAVA:
 		case YIELD_COCA_LEAVES:
 		case YIELD_MAPLE_SIRUP:
 		case YIELD_COCOA_FRUITS:
@@ -4547,6 +4551,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_COTTON:
 		case YIELD_INDIGO:
 		case YIELD_LOGWOOD:
+		case YIELD_COCHINEAL:
 		case YIELD_WOOL:
 		case YIELD_GOAT_HIDES:
 		case YIELD_PIG_SKIN:
@@ -4617,6 +4622,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_SILVER:
 		case YIELD_GOLD:
 		case YIELD_GEMS:
+		case YIELD_FIELD_WORKER_TOOLS:
 		case YIELD_HOUSEHOLD_GOODS:
 		case YIELD_LUXURY_GOODS:
 			break;
