@@ -1777,6 +1777,10 @@ enum DiploEventTypes
 	DIPLOEVENT_EUROPE_PEACE, // R&R, ray, European Peace
 	DIPLOEVENT_NATIVE_TRADE, // R&R, ray, Natives Trading
 	DIPLOEVENT_FOUND_CITY_CHECK_NATIVES,
+	// RevolutionDCM start - new diplomacy option
+	DIPLOEVENT_DO_NOT_BOTHER,
+	DIPLOEVENT_RESUME_BOTHER,
+	// RevolutionDCM end
 
 #ifdef _USRDLL
 	NUM_DIPLOEVENT_TYPES
@@ -1789,7 +1793,8 @@ enum DiploCommentTypes
 	//DiploCommentTypes is used as DiplomacyTypes, but cant be changed because of the exe.
 	//For the Savegame to write the right size the variables force the enum to have the right width
 	#ifdef _USRDLL
-	NUM_DIPLOCOMMENT_TYPES = COMPILE_TIME_NUM_DIPLOMACY_TYPES,
+	//NUM_DIPLOCOMMENT_TYPES = COMPILE_TIME_NUM_DIPLOMACY_TYPES,
+	NUM_DIPLOCOMMENT_TYPES = COMPILE_TIME_NUM_DIPLOMACY_TYPES + 6, // 6 extra diplo reactions in addition to not bother / resume
 	#endif
 
 	COMPILE_TIME_NUM_DIPLOCOMMENT_TYPES = NUM_DIPLOCOMMENT_TYPES

@@ -6723,4 +6723,158 @@
         <Italian>L'agente del nostro re in [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] è stato catturato e interrogato. Le nostre relazioni con le loro colonie ne hanno sofferto.</Italian>
         <Spanish>El agente de nuestro Rey en [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] ha sido capturado e interrogado. Nuestras relaciones con sus colonias se han visto afectadas por ello.</Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>USER_LETS_TALK</Tag>
+        <English>We wish to resume talks...</English>
+        <French>Nous souhaitons reprendre les négociations...</French>
+        <German>Wir wünschen, die Gespräche wieder aufzunehmen...</German>
+        <Spanish>Desearíamos retomar el diálogo...</Spanish>
+        <Finnish>Haluamme palata puheväleihin...</Finnish>
+        <Polish>Chcielibyämy wznowiâ rozmowy...</Polish>
+        <Korean>대화 재개를 희망합니다...</Korean>
+        <Czech>Přejeme si obnovit jednání...</Czech>
+        <Italian>Desideriamo riprendere i colloqui...</Italian>
+        <Hungarian>Folytatni akarjuk a beszédet...</Hungarian>
+        <Russian>Мы хотим возобновить переговоры...</Russian>
+        <ChineseSimp>我们希望恢复对话...</ChineseSimp>
+        <Brazilian>Queremos retomar negociações...</Brazilian>
+        <Turkish>Konuşmaya devam etmek istiyoruz...</Turkish>
+        <Ukrainian>Ми бажаємо відновити переговори...</Ukrainian>
+        <Arabic>نحن نود إكمال الكلام...</Arabic>
+    </TEXT>
+    <TEXT>
+        <Tag>USER_STOP_BOTHERING</Tag>
+        <English>Cease bothering us!</English>
+        <French>Cessez de nous importuner!</French>
+        <German>Belästigt uns nicht weiter!</German>
+        <Finnish>Jätä meidät rauhaan!</Finnish>
+        <Polish>Przestań nas dręczyâ!</Polish>
+        <Korean>그만 괴롭히시오!</Korean>
+        <Czech>Přestaňte nás obtěžovat!</Czech>
+        <Italian>Smettila di infastidirci!</Italian>
+        <Hungarian>Hagyj békén minket!</Hungarian>
+        <Russian>Не беспокоить!</Russian>
+        <Spanish>¡Dejad de molestarnos!</Spanish>
+        <Brazilian>Pare de incomodar-nos!</Brazilian>
+        <ChineseSimp>不要再来烦我们!</ChineseSimp>
+        <Greek>Σταμάτα να μας ενοχλείς!</Greek>
+        <Turkish>Barış bizi rahatsız ediyor!</Turkish>
+        <Ukrainian>Припиніть турбувати нас!</Ukrainian>
+        <Arabic>القضية تزعجنا!</Arabic>
+    </TEXT>
+    <TEXT>
+        <Tag>ASSUME_NOT_SNUFFED</Tag>
+        <English>What a shame. My diplomats enjoyed your openness and all it revealed about you.</English>
+        <French>Quel dommage ! Mes diplomates avaient apprécié votre ouverture d'esprit qui en disait long sur vous.</French>
+        <German>Was für ein Jammer! Meine Diplomaten genossen Eure Offenheit und was sie über Euch verriet.</German>
+        <Spanish>Qué lástima. Mis diplomáticos disfrutaban de vuestra franqueza y todo lo que revelaba sobre vos.</Spanish>
+        <Finnish>Harmi. Diplomaattini nauttivat avoimuudestanne ja sen tarjoamista... paljastuksista.</Finnish>
+        <Polish>Jaki wstyd. Moi dyplomaci cieszyli się z Twojej otwartoäci i wszystkiego co o Tobie usłyszeli.</Polish>
+        <Korean>유감이군요. 당신과의 솔직한 대화를 즐겼고, 비밀도 없었지 않습니까.</Korean>
+        <Italian>Che peccato. I miei diplomatici amavano la tua apertura e quello che rivelava su di te.</Italian>
+        <Brazilian>Isso é uma vergonha. Meus diplomatas divertiram-se com a sua franqueza e tudo o que ela revelou sobre você.</Brazilian>
+        <Danish>Sikke en skam. Mine diplomater nød din åbenhed og alt det det afslørede om dig.</Danish>
+        <Czech>Jaká škoda. Mým diplomatům se líbila tvoje otevřenost a vše, co o tobě prozradila.</Czech>
+        <ChineseSimp>真是耻辱啊.我的外交官们正在享受你的不设防以及从你处泄露出来的情报</ChineseSimp>
+        <Russian>Какой позор. Мои дипломаты воспользовались вашей открытостью и все рассказали о вас.</Russian>
+        <Turkish>Ne yazık. Diplomatlarım, senin açık sözlülüğünden ve senin hakkında açığa çıkanlardan keyfini alıyorlardı.</Turkish>
+        <Arabic>ياله من عار. الدبلوماسيون الخاصين بي تمتعوا بإنفتاحك وكل ما كشف عنك.</Arabic>
+        <Hungarian>De kár. A diplomatáim örömmel fogadták a nyitottságodat, és mindazt amit rólatok megtudtak.</Hungarian>
+        <Ukrainian>Який сором. Мої дипломати скористалися вашою відкритістю, і все про вас з'ясували.</Ukrainian>
+    </TEXT>
+    <TEXT>
+        <Tag>ASSUME_REALLY_SNUFFED</Tag>
+        <English>So be it. But the next time we meet, it may be on the battlefield!</English>
+        <French>Qu'il en soit soit ainsi. Mais la prochaine fois que l'on se recontrera, ce sera peut-être sur le champ de bataille!</French>
+        <German>So sei es! Doch unser nächstes Treffen könnte auf dem Schlachtfeld sein!</German>
+        <Spanish>Que así sea. Pero la próxima vez que nos veamos, ¡podría ser en el campo de batalla!</Spanish>
+        <Finnish>Olkoon niin. Voi olla että seuraavan kerran tapaamme taistelutantereella!</Finnish>
+        <Polish>Niech tak będzie. Ale nasze następne spotkanie może się odbyć na polu walki!</Polish>
+        <Korean>그러지. 하지만 다음에 만날땐, 전장이 될 것이오!</Korean>
+        <Czech>Budiž. Ale naše příští setkání by také mohlo být na bojišti!</Czech>
+        <Italian>Così sia. Ma la prossima volta che ci incontreremo, potrebbe essere sul campo di battaglia!</Italian>
+        <Brazilian>Que assim seja. Mas da próxima vez que nos encontramos, pode ser no campo de batalha!</Brazilian>
+        <Danish>Så lad det være sådan! Men næste gang vi mødes, kunne blive på slagmarken!</Danish>
+        <Russian>Так тому и быть! Но, в следующий раз, наша встреча, возможно, будет уже на поле сражения!</Russian>
+        <ChineseSimp>就这样吧。但是我们下次再见面，就可能是在战场上了！</ChineseSimp>
+        <Turkish>Öyle olsun. Ancak bir dahaki görüşmemiz, savaş meydanında olabilir!</Turkish>
+        <Hungarian>Ám legye!. De legközelebb ha találkozunk lehet, hogy az a csatatéren lesz!</Hungarian>
+        <Ukrainian>Нехай буде так. Але коли ми зустрінемося наступного разу, це може бути поле бою!</Ukrainian>
+    </TEXT>
+    <TEXT>
+        <Tag>ASSUME_SNUFFED</Tag>
+        <English>So be it. But if we need you at the table, your absense may not be to your advantage.</English>
+        <French>Alors faites le, mais si nous avons besoin de vous la prochaine fois, ça ne sera pas à vÔtre avantage.</French>
+        <German>So sei es. Eure Abwesenheit vom Verhandlungstisch wird jedoch nicht zu Eurem Vorteil sein.</German>
+        <Spanish>Que así sea. Pero si os necesitamos a la mesa, vuestra ausencia puede que no sea en vuestro mayor interés.</Spanish>
+        <Finnish>Olkoon niin. Jos kuitenkin joskus haluaisimme nähdä teidät neuvottelupöydän ääressä, ei poissaolonne ole välttämättä hyödyksenne.</Finnish>
+        <Polish>Niech tak będzie. Ale jeäli będziemy potrzebowaâ Cię przy stole, Twoja nieobecnoäâ będzie na Twojá nie korzyäâ.</Polish>
+        <Korean>그러지. 하지만 대화의 단절이 당신에게 이익을 주리라 생각하지는 않소.</Korean>
+        <Brazilian>Que assim seja. Mas se precisamos de você na mesa, sua ausência não pode ser a sua vantagem.</Brazilian>
+        <Danish>Så lad det være sådan! Men hvis vi har brug for dig ved bordet, kan dit fravær viser sig ikke at være til din fordel.</Danish>
+        <Czech>Budiž. Ale jestli tě budeme znovu potřebovat, tvoje nepřítomnost ti nebude ku prospěchu.</Czech>
+        <Russian>Так тому и быть. Но если Вы, вдруг, понадобитесь за этим столом, ваше отсутствие вряд ли сыграет Вам на пользу.</Russian>
+        <ChineseSimp>就这样吧。但是如果我们如果需要你参加的话，缺席可对你没什么好处。</ChineseSimp>
+        <Turkish>Öyle olsun. Masada sana ihtiyacımız varsa, yokluğun avantajına gelmeyebilir.</Turkish>
+        <Italian>Così sia. Ma se ci sarà bisogno di te al tavolo, la tua assenza difficilmente ti sarà di vantaggio.</Italian>
+        <Hungarian>Ám legyen! De ha legközelebb szükségünk lesz rád az asztak körül, akkor a távolléted nem fog az előnyödre válni.</Hungarian>
+        <Ukrainian>Нехай буде так. Але якщо ви будете відсутні за столом переговорів, коли будете потрібні, це не піде вам на користь.</Ukrainian>
+    </TEXT>
+    <TEXT>
+        <Tag>RESUME_TALKS</Tag>
+        <English>If you wish. I will contact you when it suits me.</English>
+        <French>Si vous le souhaitez. Je vous contacterai lorsque cela me conviendra.</French>
+        <German>Wie Ihr wünscht. Ich werde Euch kontaktieren, sobald es mir genehm ist.</German>
+        <Spanish>Como desees. Ya te llamare cuando me apetezca.</Spanish>
+        <Finnish>Kuten haluat. Otamme yhteyttä kun se meille sopii.</Finnish>
+        <Polish>Jak chcesz. Odezwę się kiedy zacznie mi to pasowaâ.</Polish>
+        <Korean>바램대로. 필요하면 연락드리겠습니다.</Korean>
+        <Danish>Hvis du ønsker det. Jeg vil kontakte dig hvornår det passer mig.</Danish>
+        <Russian>Как пожелаете. Попробуем связаться с вами в более подходящий момент.</Russian>
+        <Czech>Pokud si to přeješ, až se mi to bude hodit, spojím se s tebou.</Czech>
+        <ChineseSimp>如果你愿意，我会在方便的时候联络你。</ChineseSimp>
+        <Turkish>Eğer istersen. Bana uygun olduğunda sizinle irtibata geçeceğim.</Turkish>
+        <Italian>Se volete. Vi contatterò quando mi semberà opportuno.</Italian>
+        <Arabic>إذا أردت يمكنني الإتصال بك حينما يكون مناسباً لي.</Arabic>
+        <Hungarian>Ahogy akarod. Majd felveszem veled a kapcsolatot mikor megfelelő lesz nekem.</Hungarian>
+        <Ukrainian>Як забажаєте. Я зв'яжуся з вами, коли мене це влаштовуватиме.</Ukrainian>
+    </TEXT>
+    <TEXT>
+        <Tag>RESUME_TALKS_GLADLY</Tag>
+        <English>Excellent! There are many things you have to offer us.</English>
+        <French>Excellent! Il y a tant de choses que avez à nous offrir.</French>
+        <German>Exzellent! Es gibt so vieles, was Ihr uns bieten könnt.</German>
+        <Spanish>¡Excelente! Hay un montón de cosas que podéis ofrecernos.</Spanish>
+        <Finnish>Mainiota! On niin paljon mitä voitte tarjota meille!</Finnish>
+        <Polish>Äwietnie! Jest wiele rzeczy, które musisz nam zaoferowaâ.</Polish>
+        <Korean>멋지군요! 제공해 주었으면 하는 것들이 많이 있습니다.</Korean>
+        <Czech>Vynikající! Existuje mnoho věcí, které nám můžete nabídnout.</Czech>
+        <Danish>Fremragende! Der er mange ting du har at tilbyde os.</Danish>
+        <Russian>Отлично! Наверняка, у Вас есть масса предложений интересных нам.</Russian>
+        <ChineseSimp>太好了！你给我们提供了很多东西。</ChineseSimp>
+        <Turkish>Mükemmel! Bize sunmanız gereken birçok şey var.</Turkish>
+        <Italian>Eccellente! Ci sono molte cose che puoi offrirci.</Italian>
+        <Arabic>ممتاز! لديك الكثير من الأشياء التي يمكنك عرضها لنا.</Arabic>
+        <Hungarian>Kiváló! Sok dolog van, amit felajánlhatsz nekünk.</Hungarian>
+        <Ukrainian>Відмінно! Ви можете багато чого нам запропонувати.</Ukrainian>
+    </TEXT>
+    <TEXT>
+        <Tag>RESUME_TALKS_RELUCTANT</Tag>
+        <English>If you insist. But I have enjoyed your absense.</English>
+        <French>Si vous le souhaitez, mais j'ai apprécié votre absence.</French>
+        <German>Wenn Ihr darauf besteht. Aber ich genoss Eure Abwesenheit.</German>
+        <Spanish>Si insistís. Pero debo decir que he disfrutado vuestra ausencia.</Spanish>
+        <Finnish>Jos niin vaadit... olen kuitenkin nauttinut poissaolostasi.</Finnish>
+        <Polish>Jeëeli się upierasz. Ale polubiłem twojá nieobecnoäâ.</Polish>
+        <Korean>주장대로. 하지만 난 당신의 부재를 즐기고 있었소.</Korean>
+        <Danish>Hvis du insisterer. Men jeg har nydt dit fravær.</Danish>
+        <Russian>Если вы настаиваете. Но и без Вас было совсем не плохо.</Russian>
+        <Czech>Pokud na tom trváš. Ale v tvé nepřítomnosti jsem se měl lépe.</Czech>
+        <ChineseSimp>如果你坚持的话。不过我不想再看见你。</ChineseSimp>
+        <Turkish>Eğer ısrar ediyorsan yokluğundan zevk duyarım.</Turkish>
+        <Italian>Se insisti. Ma ho apprezzato la tua assenza.</Italian>
+        <Arabic>إذا كنت مصراً. لكن أنا قد إستمتعت بمكانك.</Arabic>
+        <Hungarian>Ha ragaszkodsz hozzá. De azért élveztem a távollétedet.</Hungarian>
+        <Ukrainian>Якщо ви наполягаєте. Але я насолоджуватимуся вашою відсутністю.</Ukrainian>
+    </TEXT>
 </Civ4GameText>

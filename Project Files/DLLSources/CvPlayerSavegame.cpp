@@ -62,6 +62,7 @@ const int defaultTimerNativeSlave = 0;
 const int defaultTimerAfricanSlaves = 0;
 const int defaultTimerStealingImmigrant = 0;
 const int defaultChurchFavoursReceived = 0;
+const int defaultDoNotBotherStatus = NO_PLAYER;
 
 const int defaultKingNumUnitMultiplier = 100;
 const int defaultMissionarySuccessPercent = 100;
@@ -158,6 +159,7 @@ enum SavegameVariableTypes
 	PlayerSave_TimerAfricanSlaves,
 	PlayerSave_TimerStealingImmigrant,
 	PlayerSave_ChurchFavoursReceived,
+	PlayerSave_DoNotBotherStatus,
 
 	PlayerSave_KingNumUnitMultiplier,
 	PlayerSave_MissionarySuccessPercent,
@@ -525,7 +527,7 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_iTimerAfricanSlaves = defaultTimerAfricanSlaves;
 	m_iTimerStealingImmigrant = defaultTimerStealingImmigrant;
 	m_iChurchFavoursReceived = defaultChurchFavoursReceived;
-
+	m_bDoNotBotherStatus = defaultDoNotBotherStatus;
 	m_iKingNumUnitMultiplier = defaultKingNumUnitMultiplier;
 	m_iMissionarySuccessPercent = defaultMissionarySuccessPercent;
 	m_iNativeTradePostSuccessPercent = defaultNativeTradePostSuccessPercent; // WTP, ray, Native Trade Posts - START
@@ -732,6 +734,7 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_TimerAfricanSlaves: reader.Read(m_iTimerAfricanSlaves); break;
 		case PlayerSave_TimerStealingImmigrant: reader.Read(m_iTimerStealingImmigrant); break;
 		case PlayerSave_ChurchFavoursReceived: reader.Read(m_iChurchFavoursReceived); break;
+		case PlayerSave_DoNotBotherStatus: reader.Read(m_bDoNotBotherStatus); break;
 
 		case PlayerSave_KingNumUnitMultiplier: reader.Read(m_iKingNumUnitMultiplier); break;
 		case PlayerSave_MissionarySuccessPercent: reader.Read(m_iMissionarySuccessPercent); break;
@@ -944,6 +947,7 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_TimerAfricanSlaves, m_iTimerAfricanSlaves, defaultTimerAfricanSlaves);
 	writer.Write(PlayerSave_TimerStealingImmigrant, m_iTimerStealingImmigrant, defaultTimerStealingImmigrant);
 	writer.Write(PlayerSave_ChurchFavoursReceived, m_iChurchFavoursReceived, defaultChurchFavoursReceived);
+	writer.Write(PlayerSave_DoNotBotherStatus, m_bDoNotBotherStatus, defaultChurchFavoursReceived);
 
 	writer.Write(PlayerSave_KingNumUnitMultiplier, m_iKingNumUnitMultiplier, defaultKingNumUnitMultiplier);
 	writer.Write(PlayerSave_MissionarySuccessPercent, m_iMissionarySuccessPercent, defaultMissionarySuccessPercent);

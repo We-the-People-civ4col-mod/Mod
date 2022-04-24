@@ -408,6 +408,9 @@ public:
 	void setScriptData(std::string szNewValue);
 	int AI_maxGoldTrade(int iPlayer);
 	void forcePeace(int iPlayer);
+	// RevolutionDCM start - new diplomacy option
+	bool isDoNotBotherStatus(int /*PlayerTypes*/ playerID);
+	// RevolutionDCM end
 private:
 	CvPlayer* m_pPlayer;
 	// R&R mod, vetiarvind, trade groups - start

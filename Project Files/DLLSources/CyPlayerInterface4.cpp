@@ -75,5 +75,7 @@ void CyPlayerPythonInterface4(python::class_<CyPlayer>& x)
 
 		.def("getCivEffectCount", &CyPlayer::getCivEffectCount, "int (CivEffectTypes eCivEffect)")
 		.def("getNumUnitsOnDock", &CyPlayer::getNumUnitsOnDock, "unsigned int ()")
+
+		.def("isDoNotBotherStatus", &CyPlayer::isDoNotBotherStatus, "	bool isDoNotBotherStatus(int /*PlayerTypes*/ playerID)")
 		;
 }

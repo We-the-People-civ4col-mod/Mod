@@ -6630,6 +6630,7 @@ void CvPlayerAI::AI_doMilitary()
 		GC.getGameINLINE().getSorenRandNum(GC.getLeaderHeadInfo(getPersonalityType()).getAttackOddsChangeRand(), "AI Attack Odds Change #2"));
 }
 
+// Called by the AI player when initiating diplomacy
 void CvPlayerAI::AI_doDiplo()
 {
 	PROFILE_FUNC();
@@ -6707,7 +6708,12 @@ void CvPlayerAI::AI_doDiplo()
 					{
 						if (kPlayer.getTeam() != getTeam() && !(GET_TEAM(getTeam()).isHuman()) && (kPlayer.isHuman() || !(GET_TEAM(kPlayer.getTeam()).isHuman())))
 						{
-							FAssertMsg(iI != getID(), "iI is not expected to be equal with getID()");
+							FAssertMsg(ePlayer != getID(), "iI is not expected to be equal with getID()");
+
+							// Check if we're allowed to bother the target player
+							const bool bDoNotBother = isDoNotBotherStatus(ePlayer);
+							if (bDoNotBother)
+								continue;
 
 							if (!(GET_TEAM(getTeam()).isAtWar(kPlayer.getTeam())))
 							{

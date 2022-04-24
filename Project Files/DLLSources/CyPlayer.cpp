@@ -1637,5 +1637,14 @@ unsigned int CyPlayer::getNumUnitsOnDock() const
 	return m_pPlayer ? m_pPlayer->CivEffect()->getNumUnitsOnDock() : 0;
 }
 
+// RevolutionDCM start - new diplomacy option
+bool CyPlayer::isDoNotBotherStatus(int /*PlayerTypes*/ playerID)
+{
+	if (m_pPlayer)
+		return m_pPlayer->isDoNotBotherStatus((PlayerTypes)playerID);
+	else
+		return false;
+}
+// RevolutionDCM end
 
 

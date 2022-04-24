@@ -69,6 +69,8 @@ CvPlayer::CvPlayer()
 
 	m_iChurchFavoursReceived = 0; // R&R, ray, Church Favours
 
+	m_bDoNotBotherStatus = NO_PLAYER;
+
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	m_cache_YieldEquipmentAmount = new YieldArray<unsigned short>[GC.getNumProfessionInfos()];
 	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
@@ -4389,6 +4391,16 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			pCity->area()->setTargetCity(getID(), pCity);
 		}
 		break;
+
+	// RevolutionDCM start - new diplomacy option
+	case DIPLOEVENT_DO_NOT_BOTHER:
+		if (!isHuman())	setDoNotBotherStatus((PlayerTypes)iData1);
+		break;
+
+	case DIPLOEVENT_RESUME_BOTHER:
+		setDoNotBotherStatus(NO_PLAYER);
+		break;
+		// RevolutionDCM end
 
 	default:
 		FAssert(false);
@@ -22423,4 +22435,15 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	CvSavegameWriter writer(writerbase);
 	write(writer);
 	writerbase.WriteFile();
+}
+
+// RevolutionDCM start - new diplomacy option
+void CvPlayer::setDoNotBotherStatus(PlayerTypes playerID)
+{
+	m_bDoNotBotherStatus = playerID;
+}
+
+bool CvPlayer::isDoNotBotherStatus(PlayerTypes playerID) const
+{
+	return m_bDoNotBotherStatus == playerID;
 }

@@ -1016,7 +1016,8 @@ protected:
 	// R&R, ray, Timers Diplo Events - END
 
 	int m_iChurchFavoursReceived; // R&R, ray, Church Favours
-
+	// RevolutionDCM - new diplomacy option
+	int m_bDoNotBotherStatus;
 
 	PlayerTypes m_eID;
 	LeaderHeadTypes m_ePersonalityType;
@@ -1146,6 +1147,11 @@ public:
 	void updateTransportThreshold(YieldTypes eYield);
 	// transport feeder - end - Nightinggale
 	void sortEuropeUnits();
+
+	// RevolutionDCM start - new diplomacy option
+	void setDoNotBotherStatus(PlayerTypes playerID);
+	bool isDoNotBotherStatus(PlayerTypes playerID) const;
+	// RevolutionDCM end
 };
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
