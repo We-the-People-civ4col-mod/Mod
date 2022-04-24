@@ -670,6 +670,16 @@
             <Type>UNITCLASS_GEMS</Type>
             <Description>TXT_KEY_UNITCLASS_GEMS</Description>
             <DefaultUnit>UNIT_GEMS</DefaultUnit>
+        </UnitClassInfo>		
+		<UnitClassInfo>
+            <Type>UNITCLASS_RICE</Type>
+            <Description>TXT_KEY_UNITCLASS_RICE</Description>
+            <DefaultUnit>UNIT_RICE</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_CASSAVA</Type>
+            <Description>TXT_KEY_UNITCLASS_CASSAVA</Description>
+            <DefaultUnit>UNIT_CASSAVA</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_COCA_LEAVES</Type>
@@ -725,6 +735,11 @@
             <Type>UNITCLASS_LOGWOOD</Type>
             <Description>TXT_KEY_UNITCLASS_LOGWOOD</Description>
             <DefaultUnit>UNIT_LOGWOOD</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_COCHINEAL</Type>
+            <Description>TXT_KEY_UNITCLASS_COCHINEAL</Description>
+            <DefaultUnit>UNIT_COCHINEAL</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_WOOL</Type>
@@ -856,6 +871,11 @@
             <Description>TXT_KEY_UNITCLASS_VANILLA</Description>
             <DefaultUnit>UNIT_VANILLA</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_CHOCOLATE</Type>
+            <Description>TXT_KEY_UNITCLASS_CHOCOLATE</Description>
+            <DefaultUnit>UNIT_CHOCOLATE</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CLOTH</Type>
             <Description>TXT_KEY_UNITCLASS_CLOTH</Description>
@@ -890,6 +910,11 @@
             <Type>UNITCLASS_LEATHER</Type>
             <Description>TXT_KEY_UNITCLASS_LEATHER</Description>
             <DefaultUnit>UNIT_LEATHER</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_PADDED_LEATHER_COATS</Type>
+            <Description>TXT_KEY_UNITCLASS_PADDED_LEATHER_COATS</Description>
+            <DefaultUnit>UNIT_PADDED_LEATHER_COATS</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_COATS</Type>
@@ -1021,7 +1046,12 @@
             <Description>TXT_KEY_UNITCLASS_HORSES</Description>
             <DefaultUnit>UNIT_HORSES</DefaultUnit>
         </UnitClassInfo>
-		 <UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_FIELD_WORKER_TOOLS</Type>
+            <Description>TXT_KEY_UNITCLASS_FIELD_WORKER_TOOLS</Description>
+            <DefaultUnit>UNIT_FIELD_WORKER_TOOLS</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
             <Type>UNITCLASS_HOUSEHOLD_GOODS</Type>
             <Description>TXT_KEY_UNITCLASS_HOUSEHOLD_GOODS</Description>
             <DefaultUnit>UNIT_HOUSEHOLD_GOODS</DefaultUnit>

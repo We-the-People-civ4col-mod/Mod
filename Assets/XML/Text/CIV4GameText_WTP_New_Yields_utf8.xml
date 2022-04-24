@@ -1317,4 +1317,250 @@
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_GOODS_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
+	<!-- FIELD_WORKER_TOOLS -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_FIELD_WORKER_TOOLS</Tag>
+        <English>Fieldworker Tools</English>
+        <German>
+            <Text>Feldarbeiterwerkzeuge</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_FIELD_WORKER_TOOLS</Tag>
+        <English>Fieldworker Tools</English>
+        <German>
+            <Text>Feldarbeiterwerkzeuge</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FIELD_WORKER_TOOLS</Tag>
+        <English>Fieldworker Tools</English>
+        <German>
+            <Text>Feldarbeiterwerkzeuge</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_FIELD_WORKER_TOOLS_PEDIA</Tag>
+        <English>[TAB][H1]Fieldworker Tools[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Feldarbeiterwerkzeuge[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FIELD_WORKER_TOOLS_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FIELD_WORKER_TOOLS_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- RICE -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_RICE</Tag>
+        <English>Rice</English>
+        <German>
+            <Text>Reis</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_RICE</Tag>
+        <English>Rice</English>
+        <German>
+            <Text>Reis</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RICE</Tag>
+        <English>Rice</English>
+        <German>
+            <Text>Reis</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_RICE_PEDIA</Tag>
+        <English>[TAB][H1]Rice[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Reis[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RICE_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RICE_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- CASSAVA -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_CASSAVA</Tag>
+        <English>Cassava</English>
+        <German>
+            <Text>Cassava</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_CASSAVA</Tag>
+        <English>Cassava</English>
+        <German>
+            <Text>Cassava</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CASSAVA</Tag>
+        <English>Cassava</English>
+        <German>
+            <Text>Cassava</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_CASSAVA_PEDIA</Tag>
+        <English>[TAB][H1]Cassava[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Cassava[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CASSAVA_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CASSAVA_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- COCHINEAL -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_COCHINEAL</Tag>
+        <English>Cochineal</English>
+        <German>
+            <Text>Cochineal</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_COCHINEAL</Tag>
+        <English>Cochineal</English>
+        <German>
+            <Text>Cochineal</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COCHINEAL</Tag>
+        <English>Cochineal</English>
+        <German>
+            <Text>Cochineal</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_COCHINEAL_PEDIA</Tag>
+        <English>[TAB][H1]Cochineal[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Cochineal[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COCHINEAL_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COCHINEAL_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- CHOCOLATE -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_CHOCOLATE</Tag>
+        <English>Chocolate</English>
+        <German>
+            <Text>Schokolade</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_CHOCOLATE</Tag>
+        <English>Chocolate</English>
+        <German>
+            <Text>Schokolade</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CHOCOLATE</Tag>
+        <English>Chocolate</English>
+        <German>
+            <Text>Schokolade</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_CHOCOLATE_PEDIA</Tag>
+        <English>[TAB][H1]Chocolate[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Schokolade[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CHOCOLATE_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CHOCOLATE_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- PADDED_LEATHER_COATS -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_PADDED_LEATHER_COATS</Tag>
+        <English>Padded Leather Coats</English>
+        <German>
+            <Text>Geplosterte Ledermäntel</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_PADDED_LEATHER_COATS</Tag>
+        <English>Padded Leather Coats</English>
+        <German>
+            <Text>Geplosterte Ledermäntel</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PADDED_LEATHER_COATS</Tag>
+        <English>Padded Leather Coats</English>
+        <German>
+            <Text>Geplosterte Ledermäntel</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_PADDED_LEATHER_COATS_PEDIA</Tag>
+        <English>[TAB][H1]Padded Leather Coats[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Geplosterte Ledermäntel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PADDED_LEATHER_COATS_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PADDED_LEATHER_COATS_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
 </Civ4GameText>
