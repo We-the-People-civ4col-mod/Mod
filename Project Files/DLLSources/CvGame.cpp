@@ -1372,13 +1372,18 @@ void CvGame::updateScore(bool bForce)
 			}
 		}
 
-		abPlayerScored[eBestPlayer] = true;
-
-		setRankPlayer(iI, eBestPlayer);
-		setPlayerScore(eBestPlayer, iBestScore);
-		if (GET_PLAYER(eBestPlayer).isAlive())
+		// Check added due to cppcheck detecting that
+		// abPlayerScored[eBestPlayer == -1] could potentially be written to
+		if (eBestPlayer != NO_PLAYER)
 		{
-			GET_PLAYER(eBestPlayer).updateScoreHistory(getGameTurn(), iBestScore);
+			abPlayerScored[eBestPlayer] = true;
+
+			setRankPlayer(iI, eBestPlayer);
+			setPlayerScore(eBestPlayer, iBestScore);
+			if (GET_PLAYER(eBestPlayer).isAlive())
+			{
+				GET_PLAYER(eBestPlayer).updateScoreHistory(getGameTurn(), iBestScore);
+			}
 		}
 	}
 
@@ -1414,11 +1419,15 @@ void CvGame::updateScore(bool bForce)
 			}
 		}
 
-		abTeamScored[eBestTeam] = true;
-
-		setRankTeam(iI, eBestTeam);
-		setTeamRank(eBestTeam, iI);
-		setTeamScore(eBestTeam, iBestScore);
+		// Check added due to cppcheck detecting that
+		// abTeamScored[NO_TEAM == -1] could potentially be written to
+		if (eBestTeam != NO_TEAM)
+		{ 
+			abTeamScored[eBestTeam] = true;
+			setRankTeam(iI, eBestTeam);
+			setTeamRank(eBestTeam, iI);
+			setTeamScore(eBestTeam, iBestScore);
+		}
 	}
 }
 

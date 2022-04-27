@@ -52,7 +52,7 @@ public:
 	void insertBefore(const tVARTYPE& val, CLLNode<tVARTYPE>* pThisNode);
 	void insertAfter(const tVARTYPE& val, CLLNode<tVARTYPE>* pThisNode);
 	CLLNode<tVARTYPE>* deleteNode(CLLNode<tVARTYPE>* pNode);
-	void moveToEnd(CLLNode<tVARTYPE>* pThisNode);
+	//void moveToEnd(CLLNode<tVARTYPE>* pThisNode);
 
 	CLLNode<tVARTYPE>* next(CLLNode<tVARTYPE>* pNode) const;
 	CLLNode<tVARTYPE>* prev(CLLNode<tVARTYPE>* pNode) const;
@@ -272,7 +272,8 @@ inline CLLNode<tVARTYPE>* CLinkList<tVARTYPE>::deleteNode(CLLNode<tVARTYPE>* pNo
 	return pNextNode;
 }
 
-
+// Not used and probably not tested. Note that if the last else statement triggers, we get a null dereference
+#if 0
 template <class tVARTYPE>
 inline void CLinkList<tVARTYPE>::moveToEnd(CLLNode<tVARTYPE>* pNode)
 {
@@ -320,7 +321,7 @@ inline void CLinkList<tVARTYPE>::moveToEnd(CLLNode<tVARTYPE>* pNode)
 	pNode->m_pPrev = m_pTail;
 	m_pTail = pNode;
 }
-
+#endif
 
 template <class tVARTYPE>
 inline CLLNode<tVARTYPE>* CLinkList<tVARTYPE>::next(CLLNode<tVARTYPE>* pNode) const

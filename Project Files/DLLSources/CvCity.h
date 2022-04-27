@@ -87,11 +87,12 @@ public:
 	int countNumWaterPlots() const;
 	int countNumRiverPlots() const;
 
+	int getNumAvailableWorkSlots() const;
 	int getNumProfessionBuildingSlots(ProfessionTypes eProfession) const;
 	bool isAvailableProfessionSlot(ProfessionTypes eProfession, const CvUnit* pUnit) const;
 
 	//Androrc Multiple Professions per Building
-	bool isAvailableBuildingSlot(BuildingTypes eBuilding, const CvUnit* pUnit) const;
+	int getAvailableBuildingSlots(BuildingTypes eBuilding, const CvUnit* pUnit) const;
 	//Androrc End
 	
 	int professionCount(ProfessionTypes eProfession) const;
@@ -572,7 +573,7 @@ public:
 	virtual UnitTypes AI_bestUnit(bool bAsync = false, UnitAITypes* peBestUnitAI = NULL, bool bPickAny = false) const = 0;
 	virtual UnitTypes AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync = false) const = 0;
 	virtual BuildingTypes AI_bestBuilding(int iFocusFlags = 0, int iMaxTurns = MAX_INT, bool bAsync = false) const = 0;
-	virtual int AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags = 0) const = 0;
+	virtual int AI_buildingValue(BuildingTypes eBuilding, unsigned int iFocusFlags = 0) const = 0;
 	virtual int AI_neededSeaWorkers() const = 0;
 	virtual bool AI_isDefended(int iExtra = 0) const = 0;
 	virtual bool AI_isDanger() const = 0;
