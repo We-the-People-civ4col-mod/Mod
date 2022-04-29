@@ -150,10 +150,19 @@ Note:
 If you have the Steam version, you are automatically up to date and don't need to do anything.
 (Only the old CD version needs to be updated).
 
+Here's how to play "We The People" Mod, or Civ4Col Multiplayer games, without bugs.
+Revert your Steam installation of Civ4Col to "Original Release version" - which is easily possible.
+Go to your Steam client, and switch back to "Original Release Version" - even if Steam says it is "unsupported".
+(Simply ignore that "unsupported". It has absolutely no implication. This is in fact the best version available on Steam.)
+
 Install "We The People" like any other mod.
 First, unpack the archive from the download link of the corresponding release (e.g. on GitHub).
 Then copy the unzipped mod into the "Mods" folder of Colonization:
 (e.g. C:\User\UserName\My Games\Colonization\MODS).
+
+Use a Steam desktop icon to open "We The People". Generate the icon by right-clicking the game, going to "Manage" and then "Add Desktop Shortcut". Once you see the icon, right-click it, go to "Properties" and change the URL to   steam://rungameid/16810/Mod="WeThePeople-3.0.1"   or whichever release of the mod you're currently using.
+
+Once that's done, clicking your new icon will take you to the mod, passing through the Vanilla window along the way without launching it. Opening Vanilla and going from there to the mod can cause problems.
 
 P.S.: Check the forum every now and then to see if there are new versions.
 
