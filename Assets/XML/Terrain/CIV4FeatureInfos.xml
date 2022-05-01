@@ -132,6 +132,10 @@
                     <YieldType>YIELD_HEMP</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SUGAR</YieldType>
                     <iValue>-3</iValue>
@@ -228,6 +232,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -383,6 +391,10 @@
                     <YieldType>YIELD_HEMP</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SUGAR</YieldType>
                     <iValue>-3</iValue>
@@ -479,6 +491,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -634,6 +650,10 @@
                     <YieldType>YIELD_HEMP</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SUGAR</YieldType>
                     <iValue>-3</iValue>
@@ -730,6 +750,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -871,6 +895,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -1037,6 +1065,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -1644,6 +1676,10 @@
                     <YieldType>YIELD_HEMP</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SUGAR</YieldType>
                     <iValue>-3</iValue>
@@ -1812,6 +1848,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -2008,6 +2048,10 @@
                     <YieldType>YIELD_HEMP</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SUGAR</YieldType>
                     <iValue>-3</iValue>
@@ -2084,6 +2128,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -2259,6 +2307,10 @@
                     <YieldType>YIELD_HEMP</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SUGAR</YieldType>
                     <iValue>-3</iValue>
@@ -2335,6 +2387,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -2510,6 +2566,10 @@
                     <YieldType>YIELD_HEMP</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SUGAR</YieldType>
                     <iValue>-3</iValue>
@@ -2586,6 +2646,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -2783,6 +2847,10 @@
                     <YieldType>YIELD_HEMP</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FUR</YieldType>
                     <iValue>1</iValue>
@@ -2978,6 +3046,10 @@
                     <YieldType>YIELD_HEMP</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FUR</YieldType>
                     <iValue>1</iValue>
@@ -3119,6 +3191,10 @@
                     <YieldType>YIELD_HEMP</YieldType>
                     <iValue>-2</iValue>
                 </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
+                    <iValue>-2</iValue>
+                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FUR</YieldType>
                     <iValue>1</iValue>
@@ -3223,6 +3299,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -3392,6 +3472,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>-1</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>-1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -3581,6 +3665,10 @@
                     <YieldType>YIELD_HEMP</YieldType>
                     <iValue>-1</iValue>
                 </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
+                    <iValue>-1</iValue>
+                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FUR</YieldType>
                     <iValue>-1</iValue>
@@ -3764,6 +3852,10 @@
                     <YieldType>YIELD_HEMP</YieldType>
                     <iValue>-1</iValue>
                 </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
+                    <iValue>-1</iValue>
+                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_LUMBER</YieldType>
                     <iValue>-1</iValue>
@@ -3920,11 +4012,15 @@
             <ArtDefineTag>ART_DEF_FEATURE_SWAMP</ArtDefineTag>
             <YieldChanges>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <YieldType>YIELD_WILD_FEATHERS</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_HEMP</YieldType>
+                    <YieldType>YIELD_RICE</YieldType>
+                    <iValue>-2</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_PEAT</YieldType>
                     <iValue>-2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -4023,12 +4119,16 @@
             <ArtDefineTag>ART_DEF_FEATURE_BOG</ArtDefineTag>
             <YieldChanges>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_FUR</YieldType>
-                    <iValue>3</iValue>
+                    <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                    <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_HEMP</YieldType>
+                    <YieldType>YIELD_RICE</YieldType>
                     <iValue>-1</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_PEAT</YieldType>
+                    <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
@@ -4541,6 +4641,10 @@
                     <YieldType>YIELD_HEMP</YieldType>
                     <iValue>-2</iValue>
                 </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
+                    <iValue>-2</iValue>
+                </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FUR</YieldType>
                     <iValue>1</iValue>
@@ -4645,6 +4749,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -6245,6 +6353,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
+                    <iValue>-1</iValue>
+                </YieldIntegerPair>
+				<YieldIntegerPair>
+                    <YieldType>YIELD_FLAX</YieldType>
                     <iValue>-1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>

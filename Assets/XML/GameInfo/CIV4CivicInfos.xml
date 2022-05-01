@@ -145,6 +145,10 @@
                     <YieldType>YIELD_HEMP</YieldType>
                     <iYield>50</iYield>
                 </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_FLAX</YieldType>
+                    <iYield>50</iYield>
+                </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_HAMMERS</YieldType>
                     <iYield>50</iYield>

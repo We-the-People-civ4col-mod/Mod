@@ -952,6 +952,14 @@
         <Tag>TXT_KEY_TRAIT_WILLIAM_BREWSTER</Tag>
         <English>TXT_KEY_FATHER_WILLIAM_BREWSTER</English>
     </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_THOMAS_HOOKER</Tag>
+        <English>TXT_KEY_FATHER_THOMAS_HOOKER</English>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_TOME_DE_SOUSA</Tag>
+        <English>TXT_KEY_FATHER_TOME_DE_SOUSA</English>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_HERMAN_OF_ALASKA</Tag>
         <English>TXT_KEY_FATHER_HERMAN_OF_ALASKA</English>
