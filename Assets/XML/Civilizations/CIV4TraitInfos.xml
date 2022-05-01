@@ -4531,10 +4531,6 @@
                 <BuildingYieldChange>
                     <BuildingClassType>BUILDINGCLASS_FUR_TRADERS_HOUSE</BuildingClassType>
                     <BuildingYields>
-					    <YieldChange>
-                            <YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
-                            <iYieldChange>1</iYieldChange>
-                        </YieldChange>
                         <YieldChange>
                             <YieldType>YIELD_COATS</YieldType>
                             <iYieldChange>1</iYieldChange>
@@ -4549,10 +4545,6 @@
                     <BuildingClassType>BUILDINGCLASS_FUR_TRADING_POST</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
-                            <YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
-                            <iYieldChange>2</iYieldChange>
-                        </YieldChange>
-                        <YieldChange>
                             <YieldType>YIELD_COATS</YieldType>
                             <iYieldChange>2</iYieldChange>
                         </YieldChange>
@@ -4565,10 +4557,6 @@
                 <BuildingYieldChange>
                     <BuildingClassType>BUILDINGCLASS_FUR_FACTORY</BuildingClassType>
                     <BuildingYields>
-                        <YieldChange>
-                            <YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
-                            <iYieldChange>3</iYieldChange>
-                        </YieldChange>
                         <YieldChange>
                             <YieldType>YIELD_COATS</YieldType>
                             <iYieldChange>3</iYieldChange>
@@ -7281,7 +7269,35 @@
             </FreePromotionUnitCombats>
             <YieldModifiers/>
             <TaxYieldModifiers/>
-            <BuildingYieldChanges/>
+            <BuildingYieldChanges>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_FUR_TRADERS_HOUSE</BuildingClassType>
+                    <BuildingYields>
+					    <YieldChange>
+                            <YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
+                            <iYieldChange>1</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_FUR_TRADING_POST</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
+                            <iYieldChange>2</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_FUR_FACTORY</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
+                            <iYieldChange>3</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+            </BuildingYieldChanges>
             <UnitMoveChanges/>
             <ProfessionMoveChanges/>
             <BuildingProductionModifiers/>

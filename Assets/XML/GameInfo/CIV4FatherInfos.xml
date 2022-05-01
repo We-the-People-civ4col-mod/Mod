@@ -1309,7 +1309,7 @@
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_PREACHER</UnitClass>
-                    <iFreeUnits>3</iFreeUnits>
+                    <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>
