@@ -9487,6 +9487,10 @@
                     <YieldType>YIELD_COCA_LEAVES</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
+	            <YieldModifier>
+                    <YieldType>YIELD_YERBA_LEAVES</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>			
             </YieldModifiers>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
