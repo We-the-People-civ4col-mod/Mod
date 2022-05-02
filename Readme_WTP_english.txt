@@ -162,6 +162,8 @@ Then copy the unzipped mod into the "Mods" folder of Colonization:
 
 Use a Steam desktop icon to open "We The People". Generate the icon by right-clicking the game, going to "Manage" and then "Add Desktop Shortcut". Once you see the icon, right-click it, go to "Properties" and change the URL to   steam://rungameid/16810/Mod="WeThePeople-3.0.1"   or whichever release of the mod you're currently using.
 
+The text between the quotes should match the name of your mod folder.
+
 Once that's done, clicking your new icon will take you to the mod, passing through the Vanilla window along the way without launching it. Opening Vanilla and going from there to the mod can cause problems.
 
 P.S.: Check the forum every now and then to see if there are new versions.
