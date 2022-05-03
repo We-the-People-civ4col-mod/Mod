@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text Infos -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<!-- BREEDER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_BREEDER</Tag>
+        <English>Expert Poultry Breeder</English>
+        <German>
+            <Text>Erfahrener Geflügelzüchter</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BREEDER</Tag>
+        <English>Expert Poultry Breeder</English>
+        <German>
+            <Text>Erfahrener Geflügelzüchter</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_BREEDER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_BREEDER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- CASSAVA_PLANTER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_CASSAVA_PLANTER</Tag>
+        <English>Expert Cassava Planter</English>
+        <German>
+            <Text>Erfahrener Cassavapflanzer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER</Tag>
+        <English>Expert Cassava Planter</English>
+        <German>
+            <Text>Erfahrener Cassavapflanzer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- COCHINEAL_COLLECTOR -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_COCHINEAL_COLLECTOR</Tag>
+        <English>Expert Cochineal Collector</English>
+        <German>
+            <Text>Erfahrener Cochineal Sammler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR</Tag>
+        <English>Expert Cochineal Collector</English>
+        <German>
+            <Text>Erfahrener Cochineal Sammler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- LINEN_PLANTER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_LINEN_PLANTER</Tag>
+        <English>Expert Flax Planter</English>
+        <German>
+            <Text>Erfahrener Flachspflanzer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LINEN_PLANTER</Tag>
+        <English>Expert Flax Planter</English>
+        <German>
+            <Text>Erfahrener Flachspflanzer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_LINEN_PLANTER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_LINEN_PLANTER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- LOGWOOD_COLLECTOR -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_LOGWOOD_COLLECTOR</Tag>
+        <English>Expert Logwood Collector</English>
+        <German>
+            <Text>Erfahrener Färberholzsammler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR</Tag>
+        <English>Expert Logwood Collector</English>
+        <German>
+            <Text>Erfahrener Färberholzsammler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- LOGWOOD_OLIVES_PLANTER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_OLIVES_PLANTER</Tag>
+        <English>Expert Olives Planter</English>
+        <German>
+            <Text>Erfahrener Olivenpflanzer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_OLIVES_PLANTER</Tag>
+        <English>Expert Olives Planter</English>
+        <German>
+            <Text>Erfahrener Olivenpflanzer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_OLIVES_PLANTER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_OLIVES_PLANTER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- PEANUT_PLANTER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_PEANUT_PLANTER</Tag>
+        <English>Expert Peanut Planter</English>
+        <German>
+            <Text>Erfahrener Erdnusspflanzer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PEANUT_PLANTER</Tag>
+        <English>Expert Peanut Planter</English>
+        <German>
+            <Text>Erfahrener Erdnusspflanzer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_PEANUT_PLANTER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_PEANUT_PLANTER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- PEAT_CUTTER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_PEAT_CUTTER</Tag>
+        <English>Expert Peat Cutter</English>
+        <German>
+            <Text>Erfahrener Torfsammler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PEAT_CUTTER</Tag>
+        <English>Expert Peat Cutter</English>
+        <German>
+            <Text>Erfahrener Torfsammler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_PEAT_CUTTER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_PEAT_CUTTER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- RAPE_PLANTER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_RAPE_PLANTER</Tag>
+        <English>Expert Rape Planter</English>
+        <German>
+            <Text>Erfahrener Rapspflanzer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RAPE_PLANTER</Tag>
+        <English>Expert Rape Planter</English>
+        <German>
+            <Text>Erfahrener Rapspflanzer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_RAPE_PLANTER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_RAPE_PLANTER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- RICE_FARMER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_RICE_FARMER</Tag>
+        <English>Expert Rice Farmer</English>
+        <German>
+            <Text>Erfahrener Reisbauer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RICE_FARMER</Tag>
+        <English>Expert Rice Farmer</English>
+        <German>
+            <Text>Erfahrener Reisbauer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_RICE_FARMER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_RICE_FARMER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- VANILLA_COLLECTOR -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_VANILLA_COLLECTOR</Tag>
+        <English>Expert Vanilla Collector</English>
+        <German>
+            <Text>Erfahrener Vanillesammler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR</Tag>
+        <English>Expert Vanilla Collector</English>
+        <German>
+            <Text>Erfahrener Vanillesammler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- YERBA_PLANTER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_YERBA_PLANTER</Tag>
+        <English>Expert Yerba Planter</English>
+        <German>
+            <Text>Erfahrener Yerbapflanzer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YERBA_PLANTER</Tag>
+        <English>Expert Yerba Planter</English>
+        <German>
+            <Text>Erfahrener Yerbapflanzer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_YERBA_PLANTER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_YERBA_PLANTER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+</Civ4GameText>

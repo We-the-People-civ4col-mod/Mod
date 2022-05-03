@@ -960,6 +960,10 @@
         <Tag>TXT_KEY_TRAIT_TOME_DE_SOUSA</Tag>
         <English>TXT_KEY_FATHER_TOME_DE_SOUSA</English>
     </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_JUAN_PONCE_DE_LEON</Tag>
+        <English>TXT_KEY_FATHER_JUAN_PONCE_DE_LEON</English>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_HERMAN_OF_ALASKA</Tag>
         <English>TXT_KEY_FATHER_HERMAN_OF_ALASKA</English>

@@ -66,10 +66,20 @@
             <Description>TXT_KEY_UNITCLASS_TOBACCO_PLANTER</Description>
             <DefaultUnit>UNIT_TOBACCO_PLANTER</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_YERBA_PLANTER</Type>
+            <Description>TXT_KEY_UNITCLASS_YERBA_PLANTER</Description>
+            <DefaultUnit>UNIT_YERBA_PLANTER</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_HEMP_PLANTER</Type>
             <Description>TXT_KEY_UNITCLASS_HEMP_PLANTER</Description>
             <DefaultUnit>UNIT_HEMP_PLANTER</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_LINEN_PLANTER</Type>
+            <Description>TXT_KEY_UNITCLASS_LINEN_PLANTER</Description>
+            <DefaultUnit>UNIT_LINEN_PLANTER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_COTTON_PLANTER</Type>
@@ -80,6 +90,16 @@
             <Type>UNITCLASS_INDIGO_PLANTER</Type>
             <Description>TXT_KEY_UNITCLASS_INDIGO_PLANTER</Description>
             <DefaultUnit>UNIT_INDIGO_PLANTER</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_LOGWOOD_COLLECTOR</Type>
+            <Description>TXT_KEY_UNITCLASS_LOGWOOD_COLLECTOR</Description>
+            <DefaultUnit>UNIT_LOGWOOD_COLLECTOR</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_COCHINEAL_COLLECTOR</Type>
+            <Description>TXT_KEY_UNITCLASS_COCHINEAL_COLLECTOR</Description>
+            <DefaultUnit>UNIT_COCHINEAL_COLLECTOR</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_SUGAR_PLANTER</Type>
@@ -101,6 +121,11 @@
             <Description>TXT_KEY_UNITCLASS_COFFEE_PLANTER</Description>
             <DefaultUnit>UNIT_COFFEE_PLANTER</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_PEANUT_PLANTER</Type>
+            <Description>TXT_KEY_UNITCLASS_PEANUT_PLANTER</Description>
+            <DefaultUnit>UNIT_PEANUT_PLANTER</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_RED_PEPPER_PLANTER</Type>
             <Description>TXT_KEY_UNITCLASS_RED_PEPPER_PLANTER</Description>
@@ -111,10 +136,30 @@
             <Description>TXT_KEY_UNITCLASS_FARMER</Description>
             <DefaultUnit>UNIT_FARMER</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_RICE_FARMER</Type>
+            <Description>TXT_KEY_UNITCLASS_RICE_FARMER</Description>
+            <DefaultUnit>UNIT_RICE_FARMER</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_CASSAVA_PLANTER</Type>
+            <Description>TXT_KEY_UNITCLASS_CASSAVA_PLANTER</Description>
+            <DefaultUnit>UNIT_CASSAVA_PLANTER</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_GRAPES_PICKER</Type>
             <Description>TXT_KEY_UNITCLASS_GRAPES_PICKER</Description>
             <DefaultUnit>UNIT_GRAPES_PICKER</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_OLIVES_PLANTER</Type>
+            <Description>TXT_KEY_UNITCLASS_OLIVES_PLANTER</Description>
+            <DefaultUnit>UNIT_OLIVES_PLANTER</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_RAPE_PLANTER</Type>
+            <Description>TXT_KEY_UNITCLASS_RAPE_PLANTER</Description>
+            <DefaultUnit>UNIT_RAPE_PLANTER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_TRAPPER</Type>

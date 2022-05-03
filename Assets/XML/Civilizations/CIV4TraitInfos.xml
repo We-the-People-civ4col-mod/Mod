@@ -817,7 +817,7 @@
             <ProfessionEquipmentModifiers>
                 <ProfessionEquipmentModifier>
                     <ProfessionType>PROFESSION_SETTLER</ProfessionType>
-                    <iModifier>-50</iModifier>
+                    <iModifier>-25</iModifier>
                 </ProfessionEquipmentModifier>
             </ProfessionEquipmentModifiers>
             <FreePromotions/>
@@ -3080,7 +3080,12 @@
             <YieldModifiers/>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
-            <UnitMoveChanges/>
+            <UnitMoveChanges>
+                <UnitMoveChange>
+                    <UnitClass>UNITCLASS_RANGER</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+            </UnitMoveChanges>
             <ProfessionMoveChanges/>
             <BuildingProductionModifiers/>
             <BuildingRequiredYieldModifiers/>
@@ -3207,7 +3212,12 @@
             <YieldModifiers/>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
-            <UnitMoveChanges/>
+            <UnitMoveChanges>
+                <UnitMoveChange>
+                    <UnitClass>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+            </UnitMoveChanges>
             <ProfessionMoveChanges/>
             <BuildingProductionModifiers/>
             <BuildingRequiredYieldModifiers/>
@@ -3976,6 +3986,10 @@
                     <YieldType>YIELD_CANNONS</YieldType>
                     <iYield>1</iYield>
                 </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_BLADES</YieldType>
+                    <iYield>1</iYield>
+                </YieldModifier>
             </TaxYieldModifiers>
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
@@ -4031,7 +4045,16 @@
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
-            <CityExtraYields/>
+            <CityExtraYields>
+                <CityExtraYield>
+                    <YieldType>YIELD_BELLS</YieldType>
+                    <iYield>2</iYield>
+                </CityExtraYield>
+				<CityExtraYield>
+                    <YieldType>YIELD_CULTURE</YieldType>
+                    <iYield>2</iYield>
+                </CityExtraYield>
+            </CityExtraYields>
             <ExtraYieldThresholds/>
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
@@ -4040,6 +4063,10 @@
             <TaxYieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_BELLS</YieldType>
+                    <iYield>1</iYield>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_CULTURE</YieldType>
                     <iYield>1</iYield>
                 </YieldModifier>
             </TaxYieldModifiers>
@@ -5803,6 +5830,14 @@
             <UnitMoveChanges/>
             <ProfessionMoveChanges/>
             <BuildingProductionModifiers>
+			    <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_BLACKSMITH_HOUSE</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+				<BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_BLACKSMITH_SHOP</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
                 <BuildingProductionModifier>
                     <BuildingClass>BUILDINGCLASS_IRONWORKS</BuildingClass>
                     <iModifier>100</iModifier>
@@ -5976,6 +6011,77 @@
                 </UnitMoveChange>
                 <UnitMoveChange>
                     <UnitClass>UNITCLASS_CARRIER</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+            </UnitMoveChanges>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers/>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+		<TraitInfo>
+            <Type>TRAIT_JUAN_PONCE_DE_LEON</Type>
+            <Description>TXT_KEY_TRAIT_JUAN_PONCE_DE_LEON</Description>
+            <ShortDescription>TXT_KEY_FATHER_JUAN_PONCE_DE_LEON</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iRecruitPriceDiscountAfrica>0</iRecruitPriceDiscountAfrica>
+            <iRecruitPriceDiscountPortRoyal>0</iRecruitPriceDiscountPortRoyal>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers>
+                <ProfessionEquipmentModifier>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <iModifier>-25</iModifier>
+                </ProfessionEquipmentModifier>
+            </ProfessionEquipmentModifiers>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers/>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges/>
+            <UnitMoveChanges>
+                <UnitMoveChange>
+                    <UnitClass>UNITCLASS_EXPERT_SETTLER</UnitClass>
                     <iChange>1</iChange>
                 </UnitMoveChange>
             </UnitMoveChanges>
@@ -6180,7 +6286,7 @@
                 </YieldModifier>
 				<YieldModifier>
                     <YieldType>YIELD_HARDWOOD</YieldType>
-                    <iYield>20</iYield>
+                    <iYield>25</iYield>
                 </YieldModifier>
             </YieldModifiers>
             <TaxYieldModifiers/>
@@ -7467,7 +7573,12 @@
             <FreePromotions/>
             <FreePromotionUnitCombats/>
             <YieldModifiers/>
-            <TaxYieldModifiers/>
+            <TaxYieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_CROSSES</YieldType>
+                    <iYield>1</iYield>
+                </YieldModifier>
+            </TaxYieldModifiers>
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
             <ProfessionMoveChanges/>
@@ -8003,10 +8114,6 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_HEMP</YieldType>
-                    <iYield>25</iYield>
-                </YieldModifier>
-				<YieldModifier>
-                    <YieldType>YIELD_FLAX</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
             </YieldModifiers>
@@ -9413,7 +9520,7 @@
             <iRecruitPriceDiscountPortRoyal>0</iRecruitPriceDiscountPortRoyal>
             <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
             <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
-            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iPopGrowthThresholdModifier>10</iPopGrowthThresholdModifier>
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
@@ -9429,7 +9536,12 @@
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
             <FreePromotionUnitCombats/>
-            <YieldModifiers/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_FLAX</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+            </YieldModifiers>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
             <UnitMoveChanges/>

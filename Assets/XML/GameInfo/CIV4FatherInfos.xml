@@ -148,6 +148,10 @@
                     <UnitClass>UNITCLASS_GALLEON</UnitClass>
                     <iFreeUnits>2</iFreeUnits>
                 </FreeUnit>
+				<FreeUnit>
+                    <UnitClass>UNITCLASS_BRIGANTINE</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>
                 <FatherPointCost>
@@ -174,13 +178,17 @@
             <FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
             <RevealImprovements/>
             <FreeUnits>
+			    <FreeUnit>
+                    <UnitClass>UNITCLASS_EXPERT_SETTLER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_COLONIST</UnitClass>
-                    <iFreeUnits>7</iFreeUnits>
+                    <iFreeUnits>5</iFreeUnits>
                 </FreeUnit>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_INDENTURED_SERVANT</UnitClass>
-                    <iFreeUnits>5</iFreeUnits>
+                    <iFreeUnits>3</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>
@@ -193,7 +201,7 @@
                     <iCost>950</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
-            <Trait/>
+            <Trait>TRAIT_JUAN_PONCE_DE_LEON</Trait>
             <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
@@ -266,7 +274,12 @@
             <Strategy>TXT_KEY_FATHER_PEDRO_ALVARES_CABRAL_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
             <RevealImprovements/>
-            <FreeUnits/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_CARRACK</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
@@ -1362,12 +1375,12 @@
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,8,9</Button>
         </FatherInfo>
-        <FatherInfo>
-            <Type>FATHER_HERMAN_OF_ALASKA</Type>
-            <Portrait>Art/Interface/Screens/Founding_Fathers/HermanofAlaska.dds</Portrait>
-            <Description>TXT_KEY_FATHER_HERMAN_OF_ALASKA</Description>
-            <Civilopedia>TXT_KEY_FATHER_HERMAN_OF_ALASKA_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_FATHER_HERMAN_OF_ALASKA_STRATEGY</Strategy>
+<FatherInfo>
+            <Type>FATHER_TOME_DE_SOUSA</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/Tome_de_Sousa.dds</Portrait>
+            <Description>TXT_KEY_FATHER_TOME_DE_SOUSA</Description>
+            <Civilopedia>TXT_KEY_FATHER_TOME_DE_SOUSA_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_TOME_DE_SOUSA_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_RELIGION</FatherCategory>
             <RevealImprovements/>
             <FreeUnits>
@@ -1375,9 +1388,21 @@
                     <UnitClass>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_INDENTURED_SERVANT</UnitClass>
+                    <iFreeUnits>2</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_COLONIST</UnitClass>
+                    <iFreeUnits>2</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_VETERAN</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
             </FreeUnits>
-            <FatherPointCosts>
-                <FatherPointCost>
+            <FatherPointCosts>	
+			    <FatherPointCost>
                     <FatherPointType>FATHER_POINT_RELIGION</FatherPointType>
                     <iCost>675</iCost>
                 </FatherPointCost>
@@ -1386,11 +1411,11 @@
                     <iCost>1000</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
-            <Trait>TRAIT_HERMAN_OF_ALASKA</Trait>
+            <Trait>TRAIT_TOME_DE_SOUSA</Trait>
             <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
-            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,7,12</Button>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,2,10</Button>
         </FatherInfo>
         <FatherInfo>
             <Type>FATHER_BARTOLOME_DE_LAS_CASAS</Type>
@@ -1717,29 +1742,17 @@
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,1,9</Button>
         </FatherInfo>
-        <FatherInfo>
-            <Type>FATHER_TOME_DE_SOUSA</Type>
-            <Portrait>Art/Interface/Screens/Founding_Fathers/Tome_de_Sousa.dds</Portrait>
-            <Description>TXT_KEY_FATHER_TOME_DE_SOUSA</Description>
-            <Civilopedia>TXT_KEY_FATHER_TOME_DE_SOUSA_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_FATHER_TOME_DE_SOUSA_STRATEGY</Strategy>
+		 <FatherInfo>
+            <Type>FATHER_HERMAN_OF_ALASKA</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/HermanofAlaska.dds</Portrait>
+            <Description>TXT_KEY_FATHER_HERMAN_OF_ALASKA</Description>
+            <Civilopedia>TXT_KEY_FATHER_HERMAN_OF_ALASKA_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_HERMAN_OF_ALASKA_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_RELIGION</FatherCategory>
             <RevealImprovements/>
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClass>
-                    <iFreeUnits>1</iFreeUnits>
-                </FreeUnit>
-                <FreeUnit>
-                    <UnitClass>UNITCLASS_INDENTURED_SERVANT</UnitClass>
-                    <iFreeUnits>2</iFreeUnits>
-                </FreeUnit>
-                <FreeUnit>
-                    <UnitClass>UNITCLASS_COLONIST</UnitClass>
-                    <iFreeUnits>2</iFreeUnits>
-                </FreeUnit>
-                <FreeUnit>
-                    <UnitClass>UNITCLASS_VETERAN</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
@@ -1753,11 +1766,11 @@
                     <iCost>7000</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
-            <Trait>TRAIT_TOME_DE_SOUSA</Trait>
+            <Trait>TRAIT_HERMAN_OF_ALASKA</Trait>
             <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
-            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,2,10</Button>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,7,12</Button>
         </FatherInfo>
         <FatherInfo>
             <Type>FATHER_MIGUEL_HIDALGO</Type>
@@ -1820,7 +1833,7 @@
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_MOUNTED_CONQUISTADOR</UnitClass>
-                    <iFreeUnits>1</iFreeUnits>
+                    <iFreeUnits>2</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>
@@ -2184,7 +2197,12 @@
             <Strategy>TXT_KEY_FATHER_DE_GRASSE_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_MILITARY</FatherCategory>
             <RevealImprovements/>
-            <FreeUnits/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_MILITARY</FatherPointType>
@@ -2570,7 +2588,12 @@
             <Strategy>TXT_KEY_FATHER_BETSY_ROSS_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
             <RevealImprovements/>
-            <FreeUnits/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_WEAVER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
@@ -2670,7 +2693,7 @@
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_FURNITURE_MAKER</UnitClass>
-                    <iFreeUnits>2</iFreeUnits>
+                    <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_LUMBERJACK</UnitClass>
@@ -2744,7 +2767,12 @@
             <Strategy>TXT_KEY_FATHER_BENJAMIN_RUSH_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
             <RevealImprovements/>
-            <FreeUnits/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_DOCTOR</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
