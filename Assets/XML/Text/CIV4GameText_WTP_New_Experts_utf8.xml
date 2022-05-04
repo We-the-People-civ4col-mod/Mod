@@ -211,7 +211,7 @@
 	<!-- PEAT_CUTTER -->
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PEAT_CUTTER</Tag>
-        <English>Expert Peat Cutter</English>
+        <English>Expert Peat and Clay Cutter</English>
         <German>
             <Text>Erfahrener Torfsammler</Text>
             <Gender>Male</Gender>
@@ -220,7 +220,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT_CUTTER</Tag>
-        <English>Expert Peat Cutter</English>
+        <English>Expert Peat and Clay Cutter</English>
         <German>
             <Text>Erfahrener Torfsammler</Text>
             <Gender>Male</Gender>
@@ -350,6 +350,122 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_PLANTER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- HERDER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_HERDER</Tag>
+        <English>Expert Herder</English>
+        <German>
+            <Text>Erfahrener Hirte</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HERDER</Tag>
+        <English>Expert Herder</English>
+        <German>
+            <Text>Erfahrener Hirte</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_HERDER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_HERDER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- MAPLE_SIRUP_COLLECTOR -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_MAPLE_SIRUP_COLLECTOR</Tag>
+        <English>Expert Maple Sirup Collector</English>
+        <German>
+            <Text>Erfahrener Ahornsaftsammler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR</Tag>
+        <English>Expert Maple Sirup Collector</English>
+        <German>
+            <Text>Erfahrener Ahornsaftsammler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- CONFECTIONER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_CONFECTIONER</Tag>
+        <English>Master Confectioner</English>
+        <German>
+            <Text>Meister Confiseur</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CONFECTIONER</Tag>
+        <English>Master Confectioner</English>
+        <German>
+            <Text>Meister Confiseur</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_CONFECTIONER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_CONFECTIONER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- OIL_TRADER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_OIL_TRADER</Tag>
+        <English>Master Oil Trader</English>
+        <German>
+            <Text>Meister Ölhändler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_OIL_TRADER</Tag>
+        <English>Master Oil Trader</English>
+        <German>
+            <Text>Meister Ölhändler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_OIL_TRADER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_OIL_TRADER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>

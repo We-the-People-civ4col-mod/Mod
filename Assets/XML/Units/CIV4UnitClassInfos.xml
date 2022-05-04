@@ -141,6 +141,11 @@
             <Description>TXT_KEY_UNITCLASS_VANILLA_COLLECTOR</Description>
             <DefaultUnit>UNIT_VANILLA_COLLECTOR</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_MAPLE_SIRUP_COLLECTOR</Type>
+            <Description>TXT_KEY_UNITCLASS_MAPLE_SIRUP_COLLECTOR</Description>
+            <DefaultUnit>UNIT_MAPLE_SIRUP_COLLECTOR</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_FARMER</Type>
             <Description>TXT_KEY_UNITCLASS_FARMER</Description>
@@ -241,6 +246,11 @@
             <Description>TXT_KEY_UNITCLASS_WINE_MAKER</Description>
             <DefaultUnit>UNIT_WINE_MAKER</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_OIL_TRADER</Type>
+            <Description>TXT_KEY_UNITCLASS_OIL_TRADER</Description>
+            <DefaultUnit>UNIT_OIL_TRADER</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_WEAVER</Type>
             <Description>TXT_KEY_UNITCLASS_WEAVER</Description>
@@ -260,6 +270,11 @@
             <Type>UNITCLASS_SPICE_TRADER</Type>
             <Description>TXT_KEY_UNITCLASS_SPICE_TRADER</Description>
             <DefaultUnit>UNIT_SPICE_TRADER</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_CONFECTIONER</Type>
+            <Description>TXT_KEY_UNITCLASS_CONFECTIONER</Description>
+            <DefaultUnit>UNIT_CONFECTIONER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_TOBACCONIST</Type>
@@ -290,6 +305,11 @@
             <Type>UNITCLASS_BREEDER</Type>
             <Description>TXT_KEY_UNITCLASS_BREEDER</Description>
             <DefaultUnit>UNIT_BREEDER</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_HERDER</Type>
+            <Description>TXT_KEY_UNITCLASS_HERDER</Description>
+            <DefaultUnit>UNIT_HERDER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_BUTCHER</Type>
