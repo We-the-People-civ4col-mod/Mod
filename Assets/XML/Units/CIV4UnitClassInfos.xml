@@ -136,6 +136,11 @@
             <Description>TXT_KEY_UNITCLASS_RED_PEPPER_PLANTER</Description>
             <DefaultUnit>UNIT_RED_PEPPER_PLANTER</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_VANILLA_COLLECTOR</Type>
+            <Description>TXT_KEY_UNITCLASS_VANILLA_COLLECTOR</Description>
+            <DefaultUnit>UNIT_VANILLA_COLLECTOR</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_FARMER</Type>
             <Description>TXT_KEY_UNITCLASS_FARMER</Description>
