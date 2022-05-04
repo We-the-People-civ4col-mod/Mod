@@ -51,6 +51,11 @@
             <Description>TXT_KEY_UNITCLASS_STONECUTTER</Description>
             <DefaultUnit>UNIT_STONECUTTER</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_PEAT_CUTTER</Type>
+            <Description>TXT_KEY_UNITCLASS_PEAT_CUTTER</Description>
+            <DefaultUnit>UNIT_PEAT_CUTTER</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_PROSPECTOR</Type>
             <Description>TXT_KEY_UNITCLASS_PROSPECTOR</Description>
