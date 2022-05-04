@@ -276,6 +276,11 @@
             <Description>TXT_KEY_UNITCLASS_RANCHER</Description>
             <DefaultUnit>UNIT_RANCHER</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_BREEDER</Type>
+            <Description>TXT_KEY_UNITCLASS_BREEDER</Description>
+            <DefaultUnit>UNIT_BREEDER</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_BUTCHER</Type>
             <Description>TXT_KEY_UNITCLASS_BUTCHER</Description>
