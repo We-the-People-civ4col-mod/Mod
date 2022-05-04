@@ -13881,7 +13881,7 @@
             </YieldDemands>
             <YieldChanges>
                 <YieldChange>
-                    <YieldType>YIELD_VANILLA</YieldType>
+                    <YieldType>YIELD_VANILLA_PODS</YieldType>
                     <iChange>3</iChange>
                 </YieldChange>
                 <YieldChange>
@@ -13895,7 +13895,7 @@
             </YieldChanges>
             <BonusYieldChanges>
                 <BonusYieldChange>
-                    <YieldType>YIELD_VANILLA</YieldType>
+                    <YieldType>YIELD_VANILLA_PODS</YieldType>
                     <iChange>2</iChange>
                 </BonusYieldChange>
                 <BonusYieldChange>
