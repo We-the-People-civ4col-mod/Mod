@@ -469,4 +469,91 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+	<!-- FRUITS_PICKER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_FRUITS_PICKER</Tag>
+        <English>Expert Fruits Picker</English>
+        <German>
+            <Text>Erfahrener Früchtesammler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FRUITS_PICKER</Tag>
+        <English>Expert Fruits Picker</English>
+        <German>
+            <Text>Erfahrener Früchtesammler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_FRUITS_PICKER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_FRUITS_PICKER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- POULTRY_BUTCHER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_POULTRY_BUTCHER</Tag>
+        <English>Expert Poultry Butcher</English>
+        <German>
+            <Text>Erfahrener Geflügelschlachter</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER</Tag>
+        <English>Expert Poultry Butcher</English>
+        <German>
+            <Text>Erfahrener Geflügelschlachter</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- ART_DEF_UNIT_COAL_MINER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_COAL_MINER</Tag>
+        <English>Expert Coal Miner</English>
+        <German>
+            <Text>Erfahrener Kohlearbeiter</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_COAL_MINER</Tag>
+        <English>Expert Coal Miner</English>
+        <German>
+            <Text>Erfahrener Kohlearbeiter</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_COAL_MINER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_COAL_MINER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>

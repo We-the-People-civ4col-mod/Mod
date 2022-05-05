@@ -46,6 +46,11 @@
             <Description>TXT_KEY_UNITCLASS_MINER</Description>
             <DefaultUnit>UNIT_MINER</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_COAL_MINER</Type>
+            <Description>TXT_KEY_UNITCLASS_COAL_MINER</Description>
+            <DefaultUnit>UNIT_COAL_MINER</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_STONECUTTER</Type>
             <Description>TXT_KEY_UNITCLASS_STONECUTTER</Description>
@@ -165,6 +170,11 @@
             <Type>UNITCLASS_GRAPES_PICKER</Type>
             <Description>TXT_KEY_UNITCLASS_GRAPES_PICKER</Description>
             <DefaultUnit>UNIT_GRAPES_PICKER</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_FRUITS_PICKER</Type>
+            <Description>TXT_KEY_UNITCLASS_FRUITS_PICKER</Description>
+            <DefaultUnit>UNIT_FRUITS_PICKER</DefaultUnit>
         </UnitClassInfo>
 		<UnitClassInfo>
             <Type>UNITCLASS_OLIVES_PLANTER</Type>
@@ -315,6 +325,11 @@
             <Type>UNITCLASS_BUTCHER</Type>
             <Description>TXT_KEY_UNITCLASS_BUTCHER</Description>
             <DefaultUnit>UNIT_BUTCHER</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_POULTRY_BUTCHER</Type>
+            <Description>TXT_KEY_UNITCLASS_POULTRY_BUTCHER</Description>
+            <DefaultUnit>UNIT_POULTRY_BUTCHER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_PIONEER</Type>
