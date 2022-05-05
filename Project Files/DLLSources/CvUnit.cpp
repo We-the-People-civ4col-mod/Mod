@@ -326,7 +326,7 @@ void CvUnit::uninit()
 
 // FUNCTION: reset()
 // Initializes data members that are serialized.
-void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall)
+void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall, bool bIdentityChange)
 {
 	//--------------------------------
 	// Uninit class
@@ -16740,7 +16740,7 @@ int CvUnit::getDiscriminationFactor() const
 		}
 		else if (eEthnicity == ETHNICITY_MESTIZZO)
 		{
-		return 1;
+			return 1;
 		}
 		else
 		{
@@ -16755,7 +16755,7 @@ int CvUnit::getDiscriminationFactor() const
 		}
 		else if (eEthnicity == ETHNICITY_MESTIZZO || eEthnicity == ETHNICITY_MULATTO)
 		{
-		return 1;
+			return 1;
 		}
 		else
 		{
@@ -16763,4 +16763,9 @@ int CvUnit::getDiscriminationFactor() const
 		}
 	}
 	return 0;
+}
+
+void CvUnit::changeIdentity(UnitTypes eUnit)
+{
+	reset(getID(), eUnit, getOwner(), false, true);
 }

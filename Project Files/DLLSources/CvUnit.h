@@ -94,8 +94,10 @@ public:
 
 	void reloadEntity();
 	void init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, Coordinates initCoord, DirectionTypes eFacingDirection, int iYieldStored);
+	void init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, int iX, int iY, DirectionTypes eFacingDirection, int iYieldStored);
+	void changeIdentity(UnitTypes eUnit);
 	void uninit();
-	void reset(int iID = 0, UnitTypes eUnit = NO_UNIT, PlayerTypes eOwner = NO_PLAYER, bool bConstructorCall = false);
+	void reset(int iID = 0, UnitTypes eUnit = NO_UNIT, PlayerTypes eOwner = NO_PLAYER, bool bConstructorCall = false, bool bIdentityChange = false);
 	void setupGraphical();
 	void convert(CvUnit* pUnit, bool bKill);
 	void kill(bool bDelay, CvUnit* pAttacker = NULL);
@@ -777,7 +779,7 @@ public:
 
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
-	void resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall);
+	void resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall, bool bIdentityChange = false);
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
@@ -810,6 +812,7 @@ public:
 	virtual ProfessionTypes AI_getOldProfession() const = 0;
 	virtual void AI_setOldProfession(ProfessionTypes eProfession) = 0;
 	virtual ProfessionTypes AI_getIdealProfession() const = 0;
+	virtual int AI_getBirthmark() const = 0;
 
 	/*** TRIANGLETRADE 10/15/08 by DPII ***/
 	bool canSailToAfrica(const CvPlot* pPlot, UnitTravelStates eNewState = NO_UNIT_TRAVEL_STATE) const;

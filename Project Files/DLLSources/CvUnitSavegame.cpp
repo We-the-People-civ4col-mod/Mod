@@ -198,14 +198,17 @@ int getNumSavedEnumValuesUnit()
 }
 
 // assign everything to default values
-void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall)
+void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall, bool bIdentityChange)
 {
 	m_eFacingDirection = defaultFacingDirection;
 	m_eUnitType = eUnit;
 	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
 
 	m_iID = iID;
-	m_iGroupID = defaultGroupID;
+	if (!bIdentityChange)
+	{
+		m_iGroupID = defaultGroupID;
+	}
 	m_iHotKeyNumber = defaultHotKeyNumber;
 	m_coord.set(defaultX, defaultY);
 	m_iLastMoveTurn = defaultLastMoveTurn;

@@ -24867,3 +24867,35 @@ void CvPlayer::onTurnLogging() const
 		}
 	}
 }
+
+CvUnit* CvPlayer::getTempUnit(UnitTypes eUnit, int iX, int iY)
+{
+	if (m_pTempUnit == NULL)
+	{
+		// TODO: Deal with profession type!
+		m_pTempUnit = initUnit(eUnit, NO_PROFESSION, iX, iY, NO_UNITAI, NO_DIRECTION, UNIT_BIRTHMARK_TEMP_UNIT);
+		((CvPlayerAI*)this)->AI_changeNumAIUnits(m_pTempUnit->AI_getUnitAIType(), -1);	//	This one doesn't count
+		removeGroupCycle(m_pTempUnit->getGroup()->getID());
+	}
+	else
+	{
+		if (m_pTempUnit->plot() != NULL)
+		{
+			m_pTempUnit->setXY(INVALID_PLOT_COORD, INVALID_PLOT_COORD, true, false);
+		}
+
+		m_pTempUnit->changeIdentity(eUnit);
+		m_pTempUnit->setXY(iX, iY, true, false);
+	}
+
+	//	Set an arbitrary automation type - just need it to be flagged as automated	
+	m_pTempUnit->getGroup()->setAutomateType(AUTOMATE_BUILD);
+
+	return m_pTempUnit;
+}
+
+void CvPlayer::releaseTempUnit()
+{
+	//GC.getGame().logOOSSpecial(10, m_pTempUnit->getID(), INVALID_PLOT_COORD, INVALID_PLOT_COORD);
+	m_pTempUnit->setXY(INVALID_PLOT_COORD, INVALID_PLOT_COORD, true, false);
+}
