@@ -241,6 +241,8 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
+			<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>		
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SPICE_TRADER</Type>
@@ -258,6 +260,8 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
+			<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_FURNITURE_MAKER</Type>
@@ -634,6 +638,8 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
+			<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_FUR_TRAPPER</Type>
@@ -861,6 +867,8 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
+			<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_FERMENTATOR</Type>
@@ -878,6 +886,8 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
+			<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_WHALE_OIL_COOKER</Type>
@@ -16841,7 +16851,7 @@
             <Type>ART_DEF_UNIT_CASSAVA_PLANTER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Cassava_Planter_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Cassava_Planter_Europe.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.5</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Cassava_Planter/worker.nif</NIF>
             <KFM>Art/Units/Settler/worker/worker.kfm</KFM>
@@ -16858,24 +16868,7 @@
             <Type>ART_DEF_UNIT_COCHINEAL_COLLECTOR</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Cochineal_Collector_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Cochineal_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Cochineal_Collector/Free_Colonist.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Cochineal_Collector/Free_Colonist.kfm</KFM>
-            <fBattleDistance>0.35</fBattleDistance>
-            <fRangedDeathTime>0.31</fRangedDeathTime>
-            <bActAsRanged>0</bActAsRanged>
-            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-            <AudioRunSounds>
-                <AudioRunTypeLoop/>
-                <AudioRunTypeEnd/>
-            </AudioRunSounds>
-        </UnitArtInfo>
-		<UnitArtInfo>
-            <Type>ART_DEF_UNIT_COCHINEAL_COLLECTOR</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Cochineal_Collector_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Cochineal_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.5</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Cochineal_Collector/Free_Colonist.nif</NIF>
             <KFM>Art/Units/Settler/Expert_Cochineal_Collector/Free_Colonist.kfm</KFM>
@@ -16892,7 +16885,7 @@
             <Type>ART_DEF_UNIT_LINEN_PLANTER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Linen_Planter_button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Linen_Planter_Europe.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.5</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Linen_Planter/BarleySicle.nif</NIF>
             <KFM>Art/Units/Settler/spearman/spearman.kfm</KFM>
@@ -16926,7 +16919,7 @@
             <Type>ART_DEF_UNIT_OLIVES_PLANTER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Olives_Planter_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Olives_Planter_Europe.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.5</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Olives_Planter/worker.nif</NIF>
             <KFM>Art/Units/Settler/worker/worker.kfm</KFM>
@@ -16989,6 +16982,8 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
+			<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_RICE_FARMER</Type>
@@ -17011,7 +17006,7 @@
             <Type>ART_DEF_UNIT_VANILLA_COLLECTOR</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Vanilla_Collector.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Vanilla_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.54</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Vanilla_Collector/Indentured_Servant.nif</NIF>
             <KFM>Art/Units/Settler/Expert_Vanilla_Collector/Indentured_Servant.kfm</KFM>
@@ -17040,12 +17035,14 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
+			<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_HERDER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Herder_button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Herder_Europe.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.5</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Herder/cowherdsman.nif</NIF>
             <KFM>Art/Units/Indentured_Servant/Indentured_Servant.kfm</KFM>
@@ -17062,7 +17059,7 @@
             <Type>ART_DEF_UNIT_MAPLE_SIRUP_COLLECTOR</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Maple_Sirup_Collector_button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Maple_Sirup_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.5</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Maple_Sirup_Collector/scout_fx.nif</NIF>
             <KFM>Art/Units/Settler/scout_european/Scout.kfm</KFM>
@@ -17113,7 +17110,7 @@
             <Type>ART_DEF_UNIT_FRUITS_PICKER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Fruits_Collector_button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Fruits_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.5</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Fruits_Collector/mongol_settler_b_fx.nif</NIF>
             <KFM>Art/Units/Settler/Expert_Fruits_Collector/mongol_settler_b.kfm</KFM>
@@ -17147,7 +17144,7 @@
             <Type>ART_DEF_UNIT_COAL_MINER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Coal_Miner_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Coal_Miner_Europe.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.5</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Coal_Miner/scout.nif</NIF>
             <KFM>Art/Units/Settler/scout_european/Scout.kfm</KFM>
