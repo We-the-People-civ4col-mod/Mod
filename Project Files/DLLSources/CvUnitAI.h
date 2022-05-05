@@ -34,7 +34,7 @@ public:
 	CvUnitAI();
 	virtual ~CvUnitAI();
 
-	void AI_init();
+	void AI_init(int iBirthmark);
 	void AI_uninit();
 	void AI_reset();
 

@@ -112,7 +112,7 @@ void CvUnit::reloadEntity()
 }
 
 
-void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, Coordinates initCoord, DirectionTypes eFacingDirection, int iYieldStored)
+void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, Coordinates initCoord, DirectionTypes eFacingDirection, int iYieldStored, int iBirthmark)
 {
 	CvWString szBuffer;
 	int iUnitName;
@@ -139,6 +139,14 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 		}
 	}
 
+	if (isTempUnit() || iBirthmark == UNIT_BIRTHMARK_TEMP_UNIT)
+	{
+		AI_init(iBirthmark);
+		jumpTo(initCoord, false, false);
+		return;
+	}
+
+	
 	// TAC - Great General Names - Ray - START
 	//Neuer Code
 	//identifiziere General anhand UnitClass
@@ -280,7 +288,10 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 
 	updateBestLandCombat();
 
-	AI_init();
+	if (iBirthmark != UNIT_BIRTHMARK_TEMP_UNIT)
+		AI_init(GC.getGameINLINE().getSorenRandNum(10000, "AI Unit Birthmark"));
+	else
+		AI_init(iBirthmark);
 
 	setProfession(eProfession);
 
@@ -326,13 +337,13 @@ void CvUnit::uninit()
 
 // FUNCTION: reset()
 // Initializes data members that are serialized.
-void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall)
+void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall, bool bIdentityChange)
 {
 	//--------------------------------
 	// Uninit class
 	uninit();
 
-	resetSavedData(iID, eUnit, eOwner, bConstructorCall);
+	resetSavedData(iID, eUnit, eOwner, bConstructorCall, bIdentityChange);
 	if(eOwner!=NO_PLAYER){
 		setPromotions();
 	}
@@ -775,6 +786,9 @@ float CvUnit::NBMOD_GetShipStrength() const
 void CvUnit::doTurn()
 {
 	PROFILE_FUNC();
+
+	if (GET_PLAYER(getOwnerINLINE()).isTempUnit(this))
+		return;
 
 	FAssertMsg(!isDead(), "isDead did not return false as expected");
 	FAssert(getGroup() != NULL || GET_PLAYER(getOwnerINLINE()).getPopulationUnitCity(getID()) != NULL);
@@ -3015,29 +3029,12 @@ int CvUnit::getPathCost() const
 	return getGroup()->getPathCost();
 }
 
-// TAC - AI Improved Naval AI - koma13 - START
-/*
-bool CvUnit::generatePath(const CvPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns) const
-{
-	return getGroup()->generatePath(plot(), pToPlot, iFlags, bReuse, piPathTurns);
-}
-*/
-// TAC - AI Improved Naval AI - koma13 - END
-
 bool CvUnit::generatePath(const CvPlot* pToPlot, int iFlags, bool bReuse,
 	int* piPathTurns, int iMaxPath,   // <advc.128>
 	bool bUseTempFinder) const
 {
-	if (!bUseTempFinder) // </advc.128>
-		return getGroup()->generatePath(plot(), pToPlot, iFlags, bReuse, piPathTurns, iMaxPath);
-	// <advc.128>
-	FAssert(!bReuse);
-	KmodPathFinder temp_finder;
-	temp_finder.SetSettings(getGroup(), iFlags, iMaxPath, GLOBAL_DEFINE_MOVE_DENOMINATOR);
-	bool r = temp_finder.GeneratePath(pToPlot);
-	if (piPathTurns != NULL)
-		*piPathTurns = temp_finder.GetPathTurns();
-	return r; // </advc.128>
+	return getGroup()->generatePath(plot(), pToPlot, iFlags, bReuse, piPathTurns,
+		iMaxPath, bUseTempFinder);
 }
 
 // K-Mod. Return the standard pathfinder, for extracting path information.
@@ -10716,6 +10713,18 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 		}
 	}
 
+	// Temp units do not really exist, and are just used to provide a data anchor for virtual pathing calculations.
+	// As such they do not need to process their position into the wider game state and indeed should not without additional concurrency protection.
+	if (isTempUnit())
+	{
+		m_coord = toCoord;
+		if (!getGroup())
+		{
+			joinGroup(NULL);
+		}
+		return;
+	}
+
 	FAssert(!at(toCoord) || coord().isInvalidPlotCoord());
 	FAssert(!isFighting());
 	FAssert(toCoord.isInvalidPlotCoord() || (GC.getMap().plotINLINE(toCoord)->getX_INLINE() == toCoord.x()));
@@ -15038,6 +15047,11 @@ bool CvUnit::isOnMap() const
 		return false;
 	}
 
+	if (isTempUnit())
+	{
+		return false;
+	}
+
 	return true;
 }
 
@@ -16754,7 +16768,7 @@ int CvUnit::getDiscriminationFactor() const
 		}
 		else if (eEthnicity == ETHNICITY_MESTIZZO)
 		{
-		return 1;
+			return 1;
 		}
 		else
 		{
@@ -16769,7 +16783,7 @@ int CvUnit::getDiscriminationFactor() const
 		}
 		else if (eEthnicity == ETHNICITY_MESTIZZO || eEthnicity == ETHNICITY_MULATTO)
 		{
-		return 1;
+			return 1;
 		}
 		else
 		{
@@ -16817,4 +16831,14 @@ void CvUnit::groupTransportedYieldUnits(CvUnit* pYieldUnit)
 			}
 		}
 	}
+}
+
+void CvUnit::changeIdentity(UnitTypes eUnit)
+{
+	reset(getID(), eUnit, getOwner(), false, true);
+}
+
+bool CvUnit::isTempUnit() const
+{
+	return GET_PLAYER(getOwner()).isTempUnit(this);
 }

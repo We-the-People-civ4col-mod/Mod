@@ -354,13 +354,6 @@ void CvMap::setup()
 	kAStar.Initialize(&GC.getRouteFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, routeValid, NULL, NULL, NULL);
 	kAStar.Initialize(&GC.getBorderFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, borderValid, NULL, NULL, NULL);
 	kAStar.Initialize(&GC.getAreaFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, areaValid, NULL, joinArea, NULL);
-
-	// Erik: We have to create and initialize the coastal route pathfinder since
-	// the exe cannot do this for us
-	FAStar* coastalRouteFinder = gDLL->getFAStarIFace()->create();
-	FAssert(coastalRouteFinder);
-	GC.setCoastalRouteFinder(coastalRouteFinder);
-	kAStar.Initialize(&GC.getCoastalRouteFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, stepHeuristic, stepCost, coastalRouteValid, NULL, NULL, NULL);
 }
 
 
@@ -609,14 +602,14 @@ void CvMap::verifyUnitValidPlot()
 	}
 }
 
-CvPlot* CvMap::syncRandPlot(int iFlags, int iArea, int iMinUnitDistance, int iTimeout)
+CvPlot* CvMap::syncRandPlot(int iFlags, int iArea, int iMinUnitDistance, int iTimeout) const
 {
 	CvPlot* pPlot = NULL;
 	int iCount = 0;
 
 	while (iCount < iTimeout)
 	{
-		CvPlot* pTestPlot = plotSoren(GC.getGameINLINE().getSorenRandNum(getGridWidthINLINE(), "Rand Plot Width"), GC.getGameINLINE().getSorenRandNum(getGridHeightINLINE(), "Rand Plot Height"));
+		CvPlot* const pTestPlot = plotSoren(GC.getGameINLINE().getSorenRandNum(getGridWidthINLINE(), "Rand Plot Width"), GC.getGameINLINE().getSorenRandNum(getGridHeightINLINE(), "Rand Plot Height"));
 
 		FAssertMsg(pTestPlot != NULL, "TestPlot is not assigned a valid value");
 

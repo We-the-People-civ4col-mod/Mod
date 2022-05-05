@@ -14,6 +14,7 @@
 #include "CvTradeRouteGroup.h" //R&R mod, vetiarvind, trade groups
 #include "PlayerHelperFunctions.h"
 
+#define	UNIT_BIRTHMARK_TEMP_UNIT	20000
 
 class CvDiploParameters;
 class CvPlayerAI;
@@ -219,7 +220,7 @@ public:
 	void getCivilizationCityName(CvWString& szBuffer, CivilizationTypes eCivilization) const;
 	bool isCityNameValid(const CvWString& szName, bool bTestDestroyed = true) const;
 	DllExport CvUnit* initUnit(UnitTypes eUnit, ProfessionTypes eProfession, int iX, int iY, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION, int iYieldStored = 0);
-	CvUnit* initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordinates initCoord, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION, int iYieldStored = 0);
+	CvUnit* initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordinates initCoord, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION, int iYieldStored = 0, int iBirthmark = -1);
 	CvUnit* initEuropeUnit(UnitTypes eUnit, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION);
 	bool initEuropeSettler(bool bPayEquipment);
 	bool initEuropeTransport(bool bPay);
@@ -589,7 +590,9 @@ public:
 
 	// unit iteration
 	DllExport CvUnit* firstUnit(int *pIterIdx) const;
+	CvUnit* firstUnitInternal(int* pIterIdx) const;
 	DllExport CvUnit* nextUnit(int *pIterIdx) const;
+	CvUnit* nextUnitInternal(int* pIterIdx) const;
 	DllExport int getNumUnits() const;
 	int getNumShips() const;// WTP, ray, easily counting Ships - START
 	DllExport CvUnit* getUnit(int iID) const;
@@ -1254,6 +1257,11 @@ protected:
 	void testOOSanDoEvent(EventTypes eEvent, bool bSuccess) const;
 	void testOOSanDoGoody(GoodyTypes eGoody, int iUnitID, bool bSuccess) const;
 
+	// Temp unit which is used to generate paths for hypothetical units.
+	// Kept around rather than created each usage to avoid chewing through the ID space.
+	CvUnit* m_pTempUnit;
+
+	// transport feeder - start - Nightinggale
 public:
 	int getIDSecondPlayerFrenchNativeWar() const;//WTP, ray, Colonial Intervention In Native War - START
 	// transport feeder - start - Nightinggale
@@ -1287,6 +1295,13 @@ public:
 	long long getPlayerOppressometer() const
 	{
 		return m_lPlayerOppressometer;
+	}
+	CvUnit* getOrCreateTempUnit(UnitTypes eUnit, int iX, int iY);
+	void releaseTempUnit();
+
+	inline bool isTempUnit(const CvUnit* pUnit) const
+	{
+		return (pUnit == m_pTempUnit || pUnit->AI_getBirthmark() == UNIT_BIRTHMARK_TEMP_UNIT);
 	}
 };
 

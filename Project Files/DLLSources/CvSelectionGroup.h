@@ -11,12 +11,15 @@
 
 class CvPlot;
 class CvArea;
+class CvSelectionGroupAI;
 class FAStarNode;
-
 class CvSelectionGroup
 {
 
 public:
+
+	__forceinline CvSelectionGroupAI& AI() { return (CvSelectionGroupAI&)*this; }
+	__forceinline const CvSelectionGroupAI& AI() const { return (CvSelectionGroupAI&)*this; }
 
     /** NBMOD REF **/
 
@@ -56,7 +59,7 @@ public:
 	bool canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible = false, bool bUseCache = false);
 	bool canEverDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible, bool bUseCache);
 	void setupActionCache();
-	bool isHuman();
+	bool isHuman() const;
 	DllExport bool isBusy();
 	bool isCargoBusy();
 	int baseMoves();
@@ -137,7 +140,7 @@ public:
 	void setActivityType(ActivityTypes eNewValue);
 
 	AutomateTypes getAutomateType() const;
-	bool isAutomated();
+	bool isAutomated() const;
 	void setAutomateType(AutomateTypes eNewValue);
 
 	// FAStarNode* getPathLastNode() const; // disabled by K-Mod. Use path_finder methods instead.
@@ -149,10 +152,8 @@ public:
 	// TAC - AI Improved Naval AI - koma13 - START
 	CvPlot* getPathPlotByIndex(int iIndex) const;
 	int getPathLength() const;
-	//bool generatePath(const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL) const;
-	//bool generatePath(const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL, bool bIgnoreDanger = true) const;
 	// TAC - AI Improved Naval AI - koma13 - END
-	bool generatePath(const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL, int iMaxPath = -1) const; // Exposed to Python (K-mod added iMaxPath)
+	bool generatePath(const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL, int iMaxPath = -1, bool bUseTempFinder = false) const; // Exposed to Python (K-mod added iMaxPath)
 	// void resetPath() const; // disabled by K-mod. Use path_finder.Reset instead. (was exposed to Python)
 
 	DllExport void clearUnits();

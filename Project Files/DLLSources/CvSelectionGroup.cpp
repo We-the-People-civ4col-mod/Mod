@@ -1647,7 +1647,7 @@ bool CvSelectionGroup::canDoInterfaceModeAt(InterfaceModeTypes eInterfaceMode, C
 }
 
 
-bool CvSelectionGroup::isHuman()
+bool CvSelectionGroup::isHuman() const
 {
 	if (getOwnerINLINE() != NO_PLAYER)
 	{
@@ -3471,7 +3471,7 @@ AutomateTypes CvSelectionGroup::getAutomateType() const
 }
 
 
-bool CvSelectionGroup::isAutomated()
+bool CvSelectionGroup::isAutomated() const
 {
 	return (getAutomateType() != NO_AUTOMATE);
 }
@@ -3637,109 +3637,47 @@ int CvSelectionGroup::getPathLength() const
 }
 // TAC - AI Improved Naval AI - koma13 - END
 
-// TAC - AI Improved Naval AI - koma13 - START
-//bool CvSelectionGroup::generatePath( const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns) const
-//bool CvSelectionGroup::generatePath( const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns, bool bIgnoreDanger) const
-// TAC - AI Improved Naval AI - koma13 - END
-bool CvSelectionGroup::generatePath(const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns, int iMaxPath) const
+// Note that the bReuse parameter is ignored due to internal cacheing and hence there is no need to request it.
+// If a temporary path finder is used, be aware that the life time of the pf is restricted to the duration of
+// generatePath and thus attempting to access the internal pf state to get the nodes will be invalid!
+bool CvSelectionGroup::generatePath(const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns, int iMaxPath, bool bUseTempFinder) const
 {
-	bool inPort = false;
+	PROFILE("CvSelectionGroup::generatePath()");
 
-	#ifdef FASSERT_ENABLE
-	// Prevent assert from triggering when a player uses the group pathfinder in a port like Europe since
-	// that particular usage is safe
+	if (pFromPlot == NULL || pToPlot == NULL) {
+		FAssert(false);
+		return false;
+	}
+
+	bool inPort = false;
+#ifdef FASSERT_ENABLE
 	CvUnit* const pNewHeadUnit = getHeadUnit();
 	const UnitTravelStates eTravelState = pNewHeadUnit ? pNewHeadUnit->getUnitTravelState() : NO_UNIT_TRAVEL_STATE;
 
 	if (eTravelState == UNIT_TRAVEL_STATE_IN_EUROPE || eTravelState == UNIT_TRAVEL_STATE_IN_AFRICA ||
-		eTravelState == UNIT_TRAVEL_STATE_IN_PORT_ROYAL)
-	{
+		eTravelState == UNIT_TRAVEL_STATE_IN_PORT_ROYAL) {
 		inPort = true;
 	}
-	#endif
-	
-	// K-Mod - if I can stop the UI from messing with this pathfinder, I might be able to reduce OOS bugs.
-	// (note, the const-cast is just to get around the bad code from the original developers)
-	// advc.128: MAX_MOVES: The AI may use this function to anticipate human moves. * /
-	FAssert(const_cast<CvSelectionGroup*>(this)->AI_isControlled() || (iFlags & MOVE_MAX_MOVES) || inPort);
-	// K-Mod end
-
-	PROFILE("CvSelectionGroup::generatePath()");
-
-	if (pFromPlot == NULL || pToPlot == NULL)
-		return false;
-
-	/*if (!bReuse)
-	path_finder.Reset();*/
-	path_finder.SetSettings(this, iFlags, iMaxPath);
-	bool bSuccess = path_finder.GeneratePath(pFromPlot->getX(), pFromPlot->getY(), pToPlot->getX(), pToPlot->getY());
-	/* test.
-	if (bSuccess != gDLL->getFAStarIFace()->GeneratePath(&GC.getPathFinder(), pFromPlot->getX(), pFromPlot->getY(), pToPlot->getX(), pToPlot->getY(), false, iFlags, bReuse)) {
-	pNode = gDLL->getFAStarIFace()->GetLastNode(&GC.getPathFinder());
-	if (bSuccess || iMaxPath < 0 || !pNode || pNode->m_iData2 <= iMaxPath) {
-	//::MessageBoxA(NULL,"pathfind mismatch","CvGameCore",MB_OK);
-	FAssert(false);
-	}
-	}*/
-
-	if (piPathTurns != NULL)
-	{
-		*piPathTurns = MAX_INT;
-		if (bSuccess)
-			*piPathTurns = path_finder.GetPathTurns();
-	}
-
-	return bSuccess;
-
-#if 0
-	PROFILE_FUNC();
-
-	FAStarNode* pNode;
-	bool bSuccess;
-
-	gDLL->getFAStarIFace()->SetData(&GC.getPathFinder(), this);
-
-	bSuccess = gDLL->getFAStarIFace()->GeneratePath(&GC.getPathFinder(), pFromPlot->getX_INLINE(), pFromPlot->getY_INLINE(), pToPlot->getX_INLINE(), pToPlot->getY_INLINE(), false, iFlags, bReuse);
-
-	if (piPathTurns != NULL)
-	{
-		*piPathTurns = MAX_INT;
-
-		if (bSuccess)
-		{
-			pNode = getPathLastNode();
-
-			if (pNode != NULL)
-			{
-				*piPathTurns = pNode->m_iData2;
-			}
-		}
-	}
-	// TAC - AI Improved Naval AI - koma13 - START
-	if (bSuccess)
-	{
-		if (GET_PLAYER(getOwnerINLINE()).AI_needsProtection(getHeadUnitAI()))
-		{
-			if ((iFlags & MOVE_IGNORE_DANGER)== 0)
-			{
-				if (!bIgnoreDanger || plot()->getPlotCity() != NULL)
-				{
-					if (getPathEndTurnPlot() != pToPlot)
-					{
-						if (GET_PLAYER(getOwnerINLINE()).AI_isPathDanger(this, pFromPlot, pToPlot))
-						{
-							bSuccess = false;
-						}
-					}
-				}
-			}
-		}
-	}
-	// TAC - AI Improved Naval AI - koma13 - END
-	return bSuccess;
 #endif
-}
 
+	FAssert(AI().AI_isControlledInternal() || (iFlags & MOVE_MAX_MOVES) || inPort);
+	FAssert(!bUseTempFinder || !bReuse);
+
+	KmodPathFinder tempFinder;
+	KmodPathFinder& pathFinder = (bUseTempFinder ? tempFinder : path_finder);
+	pathFinder.SetSettings(this, iFlags, iMaxPath, bUseTempFinder ? GLOBAL_DEFINE_MOVE_DENOMINATOR : 0);
+
+	const bool bSuccess = pathFinder.GeneratePath(pFromPlot->getX(), pFromPlot->getY(), pToPlot->getX(), pToPlot->getY());
+
+	if (piPathTurns != NULL) {
+		*piPathTurns = MAX_INT;
+		if (bSuccess) {
+			*piPathTurns = pathFinder.GetPathTurns();
+		}
+	}
+
+	return bSuccess;
+}
 
 /* void CvSelectionGroup::resetPath() const
 {

@@ -548,7 +548,7 @@ inline bool CvSelectionGroupAI::AI_isGroupAttack()
 	return m_bGroupAttack;
 }
 
-bool CvSelectionGroupAI::AI_isControlled()
+bool CvSelectionGroupAI::AI_isControlled() const
 {
 	return (!isHuman() || isAutomated());
 }

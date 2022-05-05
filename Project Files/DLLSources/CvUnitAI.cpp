@@ -48,7 +48,7 @@ CvUnitAI::~CvUnitAI()
 }
 
 
-void CvUnitAI::AI_init()
+void CvUnitAI::AI_init(int iBirthmark)
 {
 	AI_reset();
 
@@ -62,6 +62,7 @@ void CvUnitAI::AI_init()
 	{
 		setAllowDangerousPath(true);
 	}
+	AI_setBirthmark(iBirthmark);
 }
 
 
