@@ -443,18 +443,18 @@
 	<!-- OIL_TRADER -->
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_OIL_TRADER</Tag>
-        <English>Master Oil Trader</English>
+        <English>Master Cooking Oil Trader</English>
         <German>
-            <Text>Meister Ölhändler</Text>
+            <Text>Meister Kochölhändler</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OIL_TRADER</Tag>
-        <English>Master Oil Trader</English>
+        <English>Master Cooking Oil Trader</English>
         <German>
-            <Text>Meister Ölhändler</Text>
+            <Text>Meister Kochölhändler</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
