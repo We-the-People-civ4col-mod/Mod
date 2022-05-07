@@ -195,7 +195,7 @@ class CvPortRoyalScreen:
 		self.BOX_H = self.BOX_W * 6 / 5 - ((self.XResolution * 9) / (self.YResolution * 16) )* self.BOX_W / 10 
 		##self.BOX_X = (self.XResolution - self.BOX_W * self.NUM_YIELDS_IN_A_ROW ) / 2  
 		#self.BOX_X = (self.XResolution - self.BOX_W * self.NUM_YIELDS) / 2
-		self.BOX_Y = self.YResolution -3* self.BOX_H  -self.STANDARD_MARGIN +15
+		self.BOX_Y = self.YResolution -3* self.BOX_H  -self.STANDARD_MARGIN + 25
 		#self.BOX_Y = self.YResolution - self.BOX_H - self.STANDARD_MARGIN
 		## R&R, Robert Surcouf,  Multiple rows of Yields if necessary END 
 		self.INBOUND_SHIP_W = self.YResolution / 20
