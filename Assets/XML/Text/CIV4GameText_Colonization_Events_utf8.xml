@@ -1589,9 +1589,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WINE_PLANTS</Tag>
-        <English>A European vintager offers to sell us his best grapevines. His price is 400[ICON_GOLD].</English>
-        <French>Un vigneron européen propose de vendre l'un de ses meilleurs cépages. Il demande 400[ICON_GOLD].</French>
-        <German>Ein Winzer aus Europa bietet uns seine besten Rebstöcke zum Kauf. Er verlangt 400[ICON_GOLD].</German>
+        <English>A European vintager offers to sell us his best grapevines. Of course he wants be payed in gold.</English>
+        <French>Un vigneron européen propose de vendre l'un de ses meilleurs cépages. Il demande d'argon.</French>
+        <German>Ein Winzer aus Europa bietet uns seine besten Rebstöcke zum Kauf. Er verlangt dafür natürlich gold.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_RED_PEPPER_PLANTS</Tag>
@@ -1601,9 +1601,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RED_PEPPER_PLANTS</Tag>
-        <English>Local Natives will sell us some seeds from their red pepper plants. They ask 300[ICON_GOLD].</English>
-        <French>Des indigènes proposent de nous vendre leurs semences pour des plants de piment. Il demande 300[ICON_GOLD].</French>
-        <German>Ureinwohner aus der Gegend bieten uns Setzlinge ihres Roten Pfeffers zum Kauf. Sie verlangen 300[ICON_GOLD].</German>
+        <English>Local Natives will sell us some seeds from their red pepper plants. They ask to be payed in gold in exchange.</English>
+        <French>Des indigènes proposent de nous vendre leurs semences pour des plants de piment. Il demande d'argon.</French>
+        <German>Ureinwohner aus der Gegend bieten uns Setzlinge ihres Roten Pfeffers zum Kauf. Sie verlangen dafür natürlich gold.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SICK_IMMIGRANTS</Tag>
@@ -1637,9 +1637,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SALT_RESOURCE</Tag>
-        <English>Local settlers report that, on nearby hills in the desert, the air tastes very salty. A mining expedition might discover salt deposits but it will cost 500[ICON_GOLD].</English>
-        <French>Ces colons nous ont informé que l'air est particulièrement salé dans quelques collines du désert. Une expédition minière pourrait y trouver un gisement de sel, mais celle-ci coûtera 500[ICON_GOLD].</French>
-        <German>Lokale Siedler berichten, dass die Luft auf nahegelegenen Hügeln in der Wüste nach Salz riecht. Eine Expedition zur Exploration des Salzvorkommens würde rund 500[ICON_GOLD] kosten.</German>
+        <English>Local settlers report that, on nearby hills in the desert, the air tastes very salty. A mining expedition might discover salt deposits but it will cost some gold.</English>
+        <French>Ces colons nous ont informé que l'air est particulièrement salé dans quelques collines du désert. Une expédition minière pourrait y trouver un gisement de sel, mais celle-ci coûtera d'argon.</French>
+        <German>Lokale Siedler berichten, dass die Luft auf nahegelegenen Hügeln in der Wüste nach Salz riecht. Eine Expedition zur Exploration des Salzvorkommens würde uns natürlich etwas Gold kosten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BISONS</Tag>
