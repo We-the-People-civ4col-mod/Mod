@@ -1570,9 +1570,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PIRATEATTACK1</Tag>
-        <English>Spying the growing wealth of our sea traders, a scurvy collection of pirates is massing off our shores, demanding ransom of a 1000[ICON_GOLD] lest they put our shipping to fire and the sword!</English>
-        <French>Après avoir espionné nos négociants maritimes dont la richesse est grandissante, une bande de pirates a pillé nos côtes, demandant un 1000[ICON_GOLD] en rançon pour ne pas passer nos navires par le feux.</French>
-        <German>Durch den wachsenden Reichtum unserer Fernhändler angelockt, hat sich eine dreckige Bande Piraten vor unseren Küsten versammelt. Sie verlangen 1000[ICON_GOLD] als Lösegeld, damit sie unsere Schiffe nicht in Flammen aufgehen lassen.</German>
+        <English>Spying the growing wealth of our sea traders, a scurvy collection of pirates is massing off our shores, demanding ransom lest they put our shipping to fire and the sword!</English>
+        <French>Après avoir espionné nos négociants maritimes dont la richesse est grandissante, une bande de pirates a pillé nos côtes, demandant en rançon pour ne pas passer nos navires par le feux.</French>
+        <German>Durch den wachsenden Reichtum unserer Fernhändler angelockt, hat sich eine dreckige Bande Piraten vor unseren Küsten versammelt. Sie verlangen Lösegeld, damit sie unsere Schiffe nicht in Flammen aufgehen lassen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PIRATEATTACK2</Tag>
