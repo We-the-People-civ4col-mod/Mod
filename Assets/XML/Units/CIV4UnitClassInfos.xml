@@ -231,6 +231,16 @@
             <Description>TXT_KEY_UNITCLASS_TANNER</Description>
             <DefaultUnit>UNIT_TANNER</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_LEATHER_TAYLOR</Type>
+            <Description>TXT_KEY_UNITCLASS_LEATHER_TAYLOR</Description>
+            <DefaultUnit>UNIT_LEATHER_TAYLOR</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_CLOTH_TAYLOR</Type>
+            <Description>TXT_KEY_UNITCLASS_CLOTH_TAYLOR</Description>
+            <DefaultUnit>UNIT_CLOTH_TAYLOR</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CARPENTER</Type>
             <Description>TXT_KEY_UNITCLASS_CARPENTER</Description>
@@ -275,6 +285,11 @@
             <Type>UNITCLASS_FERMENTATOR</Type>
             <Description>TXT_KEY_UNITCLASS_FERMENTATOR</Description>
             <DefaultUnit>UNIT_FERMENTATOR</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_PEANUT_ROASTER</Type>
+            <Description>TXT_KEY_UNITCLASS_PEANUT_ROASTER</Description>
+            <DefaultUnit>UNIT_PEANUT_ROASTER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_SPICE_TRADER</Type>

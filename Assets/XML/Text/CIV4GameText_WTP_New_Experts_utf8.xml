@@ -527,7 +527,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- ART_DEF_UNIT_COAL_MINER -->
+	<!-- COAL_MINER -->
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_COAL_MINER</Tag>
         <English>Expert Coal Miner</English>
@@ -553,6 +553,93 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNIT_COAL_MINER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- LEATHER_TAYLOR -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_LEATHER_TAYLOR</Tag>
+        <English>Master Leather Taylor</English>
+        <German>
+            <Text>Meister Lederschneider</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR</Tag>
+        <English>Master Leather Taylor</English>
+        <German>
+            <Text>Meister Lederschneider</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- CLOTH_TAYLOR -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_CLOTH_TAYLOR</Tag>
+        <English>Master Clothes Taylor</English>
+        <German>
+            <Text>Erfahrener Kleiderschneider</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CLOTH_TAYLOR</Tag>
+        <English>Master Clothes Taylor</English>
+        <German>
+            <Text>Meister Kleiderschneider</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_CLOTH_TAYLOR_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_CLOTH_TAYLOR_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- PEANUT_ROASTER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_PEANUT_ROASTER</Tag>
+        <English>Master Peanut Roaster</English>
+        <German>
+            <Text>Meister Erdnussröster</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_PEANUT_ROASTER</Tag>
+        <English>Master Peanut Roaster</English>
+        <German>
+            <Text>Meister Erdnussröster</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_PEANUT_ROASTER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_PEANUT_ROASTER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>

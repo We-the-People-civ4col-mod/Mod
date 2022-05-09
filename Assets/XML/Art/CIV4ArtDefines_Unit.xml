@@ -17157,5 +17157,56 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_LEATHER_TAYLOR</Type>
+            <Button>Art/interface/buttons/New_Unit_Buttons/Master_Leather_Taylor_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Leather_Taylor_Europe.dds</FullLengthIcon>
+            <fScale>0.55</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/Master_Leather_Taylor/Indentured_Servant.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Leather_Taylor/Indentured_Servant.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_CLOTH_TAYLOR</Type>
+            <Button>Art/interface/buttons/New_Unit_Buttons/Master_Cloth_Taylor_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Cloth_Taylor_Europe.dds</FullLengthIcon>
+            <fScale>0.5</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/Master_Cloth_Taylor/musketman.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Cloth_Taylor/Musketman/Musketman.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_PEANUT_ROASTER</Type>
+            <Button>Art/interface/buttons/New_Unit_Buttons/Master_Peanut_Roaster_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Peanut_Roaster_Europe.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/Master_Peanut_Roaster/whale_oil_cook1.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Peanut_Roaster/whale_oil_cook1.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
     </UnitArtInfos>
 </Civ4ArtDefines>
