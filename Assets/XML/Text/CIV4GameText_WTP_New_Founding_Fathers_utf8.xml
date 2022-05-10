@@ -6,7 +6,7 @@
 <!-- Game Text Infos -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<!-- CARL_VON_LINNES -->
-	 <TEXT>
+	<TEXT>
         <Tag>TXT_KEY_FATHER_CARL_VON_LINNES</Tag>
         <English>
             <Text>Carl Linnaeus</Text>
@@ -26,10 +26,38 @@
     <TEXT>
         <Tag>TXT_KEY_FATHER_CARL_VON_LINNES_PEDIA</Tag>
         <English>[H1]Carl Linnaeus[\H1][NEWLINE][BOLD]Lived : [\BOLD]1707 - 1778[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
-        <German>[H1]Carl Linnaeus[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1707 - 17783[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+        <German>[H1]Carl Linnaeus[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1707 - 1778[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_CARL_VON_LINNES_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- SIR_THOMAS_GATES -->
+	<TEXT>
+        <Tag>TXT_KEY_FATHER_SIR_THOMAS_GATES</Tag>
+        <English>
+            <Text>Sir Thomas Gates</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>Sir Thomas Gates</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_SIR_THOMAS_GATES</Tag>
+        <English>TXT_KEY_FATHER_SIR_THOMAS_GATES</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_SIR_THOMAS_GATES_PEDIA</Tag>
+        <English>[H1]Sir Thomas Gates[\H1][NEWLINE][BOLD]Lived : [\BOLD]1578 - 1622[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]Sir Thomas Gates[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1578 - 1622[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_SIR_THOMAS_GATES_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>	

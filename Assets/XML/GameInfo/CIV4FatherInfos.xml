@@ -2614,6 +2614,40 @@
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,4,3</Button>
         </FatherInfo>
+		<FatherInfo>
+            <Type>FATHER_SIR_THOMAS_GATES</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/Sir_Thomas_Gates.dds</Portrait>
+            <Description>TXT_KEY_FATHER_SIR_THOMAS_GATES</Description>
+            <Civilopedia>TXT_KEY_FATHER_SIR_THOMAS_GATES_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_SIR_THOMAS_GATES_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_BREEDER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+				<FreeUnit>
+                    <UnitClass>UNITCLASS_POULTRY_BUTCHER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+				<FreeUnit>
+                    <UnitClass>UNITCLASS_HERDER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>1600</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_SIR_THOMAS_GATES</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,2,14</Button>
+        </FatherInfo>
         <FatherInfo>
             <Type>FATHER_BETSY_ROSS</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Betsy_Ross.dds</Portrait>
