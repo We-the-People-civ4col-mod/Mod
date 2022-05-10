@@ -2,7 +2,7 @@ Ausführliche Informationen gibt es in unserem Forum:
 https://forums.civfanatics.com/forums/civ4col-we-the-people.591/
 
 
-Willkommen bei "We the Peole"!
+Willkommen bei "We the People"!
 
 Vorwort
 -------
@@ -53,7 +53,7 @@ https://forums.civfanatics.com/forums/civ4col-we-the-people.591/
 
 ------------------
 
-Aktuelle WTP Teammitglieder
+Aktuelle aktive WTP Teammitglieder
 
 	raystuttgart
 	Devolution
@@ -63,7 +63,6 @@ Aktuelle WTP Teammitglieder
 	Fürstbischof
 	Kendon
 	Raubwürger
-	Flavius Belisarius
 
 Ehemalige (jetzt inaktive) RaR Mitglieder:
 
@@ -84,11 +83,10 @@ Natürlich die TAC-Mannschaft.
 Sonst grundsätzlich fast jeder Modder der bisher veröffentlicht hat.
 Sagt uns bitte, wenn wir Teile deiner Arbeit verwenden und deinen Namen vergessen haben.
 
-	Mighty Toad
 	Lethiel
 	Zeta Nexus
 	Vaeringjar
-	Rampstormp
+	Ramstormp
 	Writing Bull
 	Willi_Tell
 	Isabelxxx
@@ -150,10 +148,24 @@ Hinweis dazu:
 Wenn du die Steam Version hast, bist du automatisch auf diesem Stand und musst nichts machen.
 (Nur die alte CD Version muss aktualiser werden.)
 
+Hier ist wie du die We the People Mod,oder Civ4Col Multiplayer Spiele ohne Bugs zu laufen kriegst.
+Du musst deine Steam Installation auf den Original CD stand zurücksetzen.
+Dies ist bei steam sehr einfach möglich.Ihn der Steam Bibliothek rechtsklicken auf das Spiel,
+anschliesend auf Betas klicken .Dort den "original_release_unsupported-Original Release-UNSUPPORTED"auswählen.
+ACHTUNG:Das unsupported also nicht unterstützt hat auf die spielbarkeit keinen Einfluss.   
+
+
 Installiere "We the People" sonst wie jede andere Mod.
 Entpacke zuerast das Archiv vom Download-Link des entsprechenden Release (z.B. auf GIT Hub).
 Danach kopiere die entpackte Mod in den "Mods"-Ordner von Colonization:
 (z.B. C:\Benutzer\Benutzername\My Games\Colonization\MODS)
+
+So könnt ihr die MOD direkt über den Desktop starten unter Steam
+Ihr müsst ein steam Colonization desktop icon erstellen in der steam Bibliothek rechtsklick auf das Spiel,dort unter "Verwalten" Desktop verknüpfung hinzufügen klicken.  
+Auf dieses müsst ihr auch rechtsklicken, und unter Eigenschaften auf den Reiter Webdokumente die URL ändern zu z.B "steam://rungameid/16810/Mod="WeThePeople-3.0.1",
+hierbei ist zu beachten das ihr bei jedem neuen release den "Pfad" neu eingeben müsst.
+Habt ihr alles richtig gemacht wird das spiel jetzt nach dem start direkt die MOD laden.
+
 
 P.S.: Schau ab und zu im Forum nach, ob es neue Versionen gibt.
 
