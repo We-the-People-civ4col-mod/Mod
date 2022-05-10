@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text Infos -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<!-- CARL_VON_LINNES -->
+	 <TEXT>
+        <Tag>TXT_KEY_FATHER_CARL_VON_LINNES</Tag>
+        <English>
+            <Text>Carl Linnaeus</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>Carl Linnaeus</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_CARL_VON_LINNES</Tag>
+        <English>TXT_KEY_FATHER_CARL_VON_LINNES</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_CARL_VON_LINNES_PEDIA</Tag>
+        <English>[H1]Carl Linnaeus[\H1][NEWLINE][BOLD]Lived : [\BOLD]1707 - 1778[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]Carl Linnaeus[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1707 - 17783[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_CARL_VON_LINNES_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>	
+</Civ4GameText>

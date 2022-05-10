@@ -320,7 +320,41 @@
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,6,5</Button>
-        </FatherInfo>
+        </FatherInfo>	
+		<FatherInfo>
+            <Type>FATHER_CARL_VON_LINNES</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/Carl_von_Linnes.dds</Portrait>
+            <Description>TXT_KEY_FATHER_CARL_VON_LINNES</Description>
+            <Civilopedia>TXT_KEY_FATHER_CARL_VON_LINNES_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_CARL_VON_LINNES_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_PEANUT_PLANTER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_PEANUT_ROASTER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
+                    <iCost>2500</iCost>
+                </FatherPointCost>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>2100</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_CARL_VON_LINNES</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,1,14</Button>
+        </FatherInfo>	
         <FatherInfo>
             <Type>FATHER_JAMES_COOK</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/James_Cook.dds</Portrait>
