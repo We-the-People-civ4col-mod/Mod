@@ -643,4 +643,33 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+	<!-- POTTER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_POTTER</Tag>
+        <English>Master Potter</English>
+        <German>
+            <Text>Meister Töpfer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_POTTER</Tag>
+        <English>Master Potter</English>
+        <German>
+            <Text>Meister Töpfer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_POTTER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_POTTER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>

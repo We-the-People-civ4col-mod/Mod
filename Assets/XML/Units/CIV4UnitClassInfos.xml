@@ -291,6 +291,11 @@
             <Description>TXT_KEY_UNITCLASS_PEANUT_ROASTER</Description>
             <DefaultUnit>UNIT_PEANUT_ROASTER</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_POTTER</Type>
+            <Description>TXT_KEY_UNITCLASS_POTTER</Description>
+            <DefaultUnit>UNIT_POTTER</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_SPICE_TRADER</Type>
             <Description>TXT_KEY_UNITCLASS_SPICE_TRADER</Description>
