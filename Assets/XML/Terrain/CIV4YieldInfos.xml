@@ -2927,7 +2927,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Goat_Hide_Boots_Goods_Icon.dds</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Leather_Goods.dds</CombiIcon>
+			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Padded.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,2,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Goat_Hide_Boots_Goods_Button.dds</Button>
         </YieldInfo>
@@ -2969,7 +2969,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Padded_Leather_Coats_Goods_Icon.dds</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Leather_Goods.dds</CombiIcon>
+			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Padded.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,2,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Padded_Leather_Coats_Goods_Button.dds</Button>
         </YieldInfo>
