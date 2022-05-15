@@ -15370,6 +15370,20 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 					}
 				}
 				break;
+			case YIELD_PIG_LEATHER:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_PIG_SKIN) <= price_diff)
+				{
+					eYield = YIELD_PIG_SKIN;
+					iPrice = getYieldBuyPrice(YIELD_PIG_SKIN) - 1;
+				}
+				break;
+			case YIELD_LEATHER:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_HIDES) <= price_diff)
+				{
+					eYield = YIELD_HIDES;
+					iPrice = getYieldBuyPrice(YIELD_HIDES) - 1;
+				}
+				break;
 			case YIELD_GOAT_HIDE_BOOTS:
 				if (getYieldBuyPrice(eYield) - (getYieldBuyPrice(YIELD_WOOL) + getYieldBuyPrice(YIELD_GOAT_HIDES)) <= price_diff)
 				{
@@ -15385,27 +15399,13 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 					}
 				}
 				break;
-			case YIELD_PIG_LEATHER:
-				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_PIG_SKIN) <= price_diff)
-				{
-					eYield = YIELD_PIG_SKIN;
-					iPrice = getYieldBuyPrice(YIELD_PIG_SKIN) - 1;
-				}
-				break;
-			case YIELD_LEATHER:
-				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_HIDES) <= price_diff)
-				{
-					eYield = YIELD_HIDES;
-					iPrice = getYieldBuyPrice(YIELD_HIDES) - 1;
-				}
-				break;
 			case YIELD_PADDED_LEATHER_COATS:
-				if (getYieldBuyPrice(eYield) - (getYieldBuyPrice(YIELD_LEATHER) + getYieldBuyPrice(YIELD_DOWNS)) <= price_diff)
+				if (getYieldBuyPrice(eYield) - (getYieldBuyPrice(YIELD_HIDES) + getYieldBuyPrice(YIELD_DOWNS)) <= price_diff)
 				{
-					if (getYieldBuyPrice(YIELD_LEATHER) > getYieldBuyPrice(YIELD_DOWNS))
+					if (getYieldBuyPrice(YIELD_HIDES) > getYieldBuyPrice(YIELD_DOWNS))
 					{
 						eYield = YIELD_INDIGO;
-						iPrice = getYieldBuyPrice(YIELD_LEATHER) - 1;
+						iPrice = getYieldBuyPrice(YIELD_HIDES) - 1;
 					}
 					else
 					{
@@ -16019,6 +16019,20 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 					}
 				}
 				break;
+			case YIELD_PIG_LEATHER:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_PIG_SKIN) <= price_diff)
+				{
+					eYield = YIELD_PIG_SKIN;
+					iPrice = getYieldAfricaBuyPrice(YIELD_PIG_SKIN) - 1;
+				}
+				break;
+			case YIELD_LEATHER:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_HIDES) <= price_diff)
+				{
+					eYield = YIELD_HIDES;
+					iPrice = getYieldAfricaBuyPrice(YIELD_HIDES) - 1;
+				}
+				break;
 			case YIELD_GOAT_HIDE_BOOTS:
 				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_WOOL) + getYieldAfricaBuyPrice(YIELD_GOAT_HIDES)) <= price_diff)
 				{
@@ -16034,27 +16048,13 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 					}
 				}
 				break;
-			case YIELD_PIG_LEATHER:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_PIG_SKIN) <= price_diff)
-				{
-					eYield = YIELD_PIG_SKIN;
-					iPrice = getYieldAfricaBuyPrice(YIELD_PIG_SKIN) - 1;
-				}
-				break;
-			case YIELD_LEATHER:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_HIDES) <= price_diff)
-				{
-					eYield = YIELD_HIDES;
-					iPrice = getYieldAfricaBuyPrice(YIELD_HIDES) - 1;
-				}
-				break;
 			case YIELD_PADDED_LEATHER_COATS:
-				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_LEATHER) + getYieldAfricaBuyPrice(YIELD_DOWNS)) <= price_diff)
+				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_HIDES) + getYieldAfricaBuyPrice(YIELD_DOWNS)) <= price_diff)
 				{
-					if (getYieldAfricaBuyPrice(YIELD_LEATHER) > getYieldAfricaBuyPrice(YIELD_DOWNS))
+					if (getYieldAfricaBuyPrice(YIELD_HIDES) > getYieldAfricaBuyPrice(YIELD_DOWNS))
 					{
 						eYield = YIELD_INDIGO;
-						iPrice = getYieldAfricaBuyPrice(YIELD_LEATHER) - 1;
+						iPrice = getYieldAfricaBuyPrice(YIELD_HIDES) - 1;
 					}
 					else
 					{
@@ -16609,6 +16609,20 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 					}
 				}
 				break;
+			case YIELD_PIG_LEATHER:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_PIG_SKIN) <= price_diff)
+				{
+					eYield = YIELD_PIG_SKIN;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_PIG_SKIN) - 1;
+				}
+				break;
+			case YIELD_LEATHER:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_HIDES) <= price_diff)
+				{
+					eYield = YIELD_HIDES;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_HIDES) - 1;
+				}
+				break;
 			case YIELD_GOAT_HIDE_BOOTS:
 				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_WOOL) + getYieldPortRoyalBuyPrice(YIELD_GOAT_HIDES)) <= price_diff)
 				{
@@ -16624,27 +16638,13 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 					}
 				}
 				break;
-			case YIELD_PIG_LEATHER:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_PIG_SKIN) <= price_diff)
-				{
-					eYield = YIELD_PIG_SKIN;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_PIG_SKIN) - 1;
-				}
-				break;
-			case YIELD_LEATHER:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_HIDES) <= price_diff)
-				{
-					eYield = YIELD_HIDES;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_HIDES) - 1;
-				}
-				break;
 			case YIELD_PADDED_LEATHER_COATS:
-				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_LEATHER) + getYieldPortRoyalBuyPrice(YIELD_DOWNS)) <= price_diff)
+				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_HIDES) + getYieldPortRoyalBuyPrice(YIELD_DOWNS)) <= price_diff)
 				{
-					if (getYieldPortRoyalBuyPrice(YIELD_LEATHER) > getYieldPortRoyalBuyPrice(YIELD_DOWNS))
+					if (getYieldPortRoyalBuyPrice(YIELD_HIDES) > getYieldPortRoyalBuyPrice(YIELD_DOWNS))
 					{
 						eYield = YIELD_INDIGO;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_LEATHER) - 1;
+						iPrice = getYieldPortRoyalBuyPrice(YIELD_HIDES) - 1;
 					}
 					else
 					{

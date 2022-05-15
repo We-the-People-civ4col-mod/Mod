@@ -4503,9 +4503,9 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_COLOURED_CLOTH:
 		case YIELD_WOOL_CLOTH:
 		case YIELD_COLOURED_WOOL_CLOTH:
-		case YIELD_GOAT_HIDE_BOOTS:
 		case YIELD_PIG_LEATHER:
 		case YIELD_LEATHER:
+		case YIELD_GOAT_HIDE_BOOTS:
 		case YIELD_PADDED_LEATHER_COATS:
 		case YIELD_COATS:
 		case YIELD_PREMIUM_COATS:

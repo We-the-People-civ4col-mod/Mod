@@ -8671,9 +8671,9 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_COLOURED_CLOTH:
 		case YIELD_WOOL_CLOTH:
 		case YIELD_COLOURED_WOOL_CLOTH:
-		case YIELD_GOAT_HIDE_BOOTS:
 		case YIELD_PIG_LEATHER:
 		case YIELD_LEATHER:
+		case YIELD_GOAT_HIDE_BOOTS:
 		case YIELD_PADDED_LEATHER_COATS:
 		case YIELD_COATS:
 		case YIELD_PREMIUM_COATS:
@@ -8926,9 +8926,9 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 			break;
 		case YIELD_COLOURED_CLOTH:
 		case YIELD_COLOURED_WOOL_CLOTH:
-		case YIELD_GOAT_HIDE_BOOTS:
 		case YIELD_PIG_LEATHER:
 		case YIELD_LEATHER:
+		case YIELD_GOAT_HIDE_BOOTS:
 		case YIELD_PADDED_LEATHER_COATS:
 		case YIELD_COATS:
 		case YIELD_PREMIUM_COATS:
@@ -9051,9 +9051,9 @@ bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
 		case YIELD_COLOURED_CLOTH:
 		case YIELD_WOOL_CLOTH:
 		case YIELD_COLOURED_WOOL_CLOTH:
-		case YIELD_GOAT_HIDE_BOOTS:
 		case YIELD_PIG_LEATHER:
 		case YIELD_LEATHER:
+		case YIELD_GOAT_HIDE_BOOTS:
 		case YIELD_PADDED_LEATHER_COATS:
 		case YIELD_COATS:
 		case YIELD_PREMIUM_COATS:
@@ -9263,9 +9263,9 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 			case YIELD_COLOURED_CLOTH:
 			case YIELD_WOOL_CLOTH:
 			case YIELD_COLOURED_WOOL_CLOTH:
-			case YIELD_GOAT_HIDE_BOOTS:
 			case YIELD_PIG_LEATHER:
 			case YIELD_LEATHER:
+			case YIELD_GOAT_HIDE_BOOTS:
 			case YIELD_PADDED_LEATHER_COATS:
 			case YIELD_COATS:
 			case YIELD_PREMIUM_COATS:
@@ -9445,9 +9445,9 @@ void CvPlayerAI::AI_updateYieldValues()
 			case YIELD_COLOURED_CLOTH:
 			case YIELD_WOOL_CLOTH:
 			case YIELD_COLOURED_WOOL_CLOTH:
-			case YIELD_GOAT_HIDE_BOOTS:
 			case YIELD_PIG_LEATHER:
 			case YIELD_LEATHER:
+			case YIELD_GOAT_HIDE_BOOTS:
 			case YIELD_PADDED_LEATHER_COATS:
 			case YIELD_COATS:
 			case YIELD_PREMIUM_COATS:
