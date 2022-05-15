@@ -631,18 +631,6 @@
             </YieldModifiers>
         </EmphasizeInfo>
 		<EmphasizeInfo>
-            <Type>EMPHASIZE_GOAT_HIDE_BOOTS</Type>
-            <Description>TXT_KEY_EMPHASIZE_GOAT_HIDE_BOOTS</Description>
-            <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
-            <bAvoidGrowth>0</bAvoidGrowth>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
-                    <iYield>1</iYield>
-                </YieldModifier>
-            </YieldModifiers>
-        </EmphasizeInfo>
-		<EmphasizeInfo>
             <Type>EMPHASIZE_PIG_LEATHER</Type>
             <Description>TXT_KEY_EMPHASIZE_PIG_LEATHER</Description>
             <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
@@ -686,6 +674,18 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_LEATHER</YieldType>
+                    <iYield>1</iYield>
+                </YieldModifier>
+            </YieldModifiers>
+        </EmphasizeInfo>
+		<EmphasizeInfo>
+            <Type>EMPHASIZE_GOAT_HIDE_BOOTS</Type>
+            <Description>TXT_KEY_EMPHASIZE_GOAT_HIDE_BOOTS</Description>
+            <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+            <bAvoidGrowth>0</bAvoidGrowth>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
                     <iYield>1</iYield>
                 </YieldModifier>
             </YieldModifiers>

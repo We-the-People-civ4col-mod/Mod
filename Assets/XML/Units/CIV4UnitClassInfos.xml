@@ -1012,11 +1012,6 @@
             <DefaultUnit>UNIT_COLOURED_WOOL_CLOTH</DefaultUnit>
         </UnitClassInfo>		
         <UnitClassInfo>
-            <Type>UNITCLASS_GOAT_HIDE_BOOTS</Type>
-            <Description>TXT_KEY_UNITCLASS_GOAT_HIDE_BOOTS</Description>
-            <DefaultUnit>UNIT_GOAT_HIDE_BOOTS</DefaultUnit>
-        </UnitClassInfo>
-        <UnitClassInfo>
             <Type>UNITCLASS_PIG_LEATHER</Type>
             <Description>TXT_KEY_UNITCLASS_PIG_LEATHER</Description>
             <DefaultUnit>UNIT_PIG_LEATHER</DefaultUnit>
@@ -1025,6 +1020,11 @@
             <Type>UNITCLASS_LEATHER</Type>
             <Description>TXT_KEY_UNITCLASS_LEATHER</Description>
             <DefaultUnit>UNIT_LEATHER</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_GOAT_HIDE_BOOTS</Type>
+            <Description>TXT_KEY_UNITCLASS_GOAT_HIDE_BOOTS</Description>
+            <DefaultUnit>UNIT_GOAT_HIDE_BOOTS</DefaultUnit>
         </UnitClassInfo>
 		<UnitClassInfo>
             <Type>UNITCLASS_PADDED_LEATHER_COATS</Type>

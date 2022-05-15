@@ -2806,48 +2806,6 @@
             <Button>Art/interface/buttons/New_Yields_Buttons/Coloured_Wool_Goods_Button.dds</Button>
         </YieldInfo>
         <YieldInfo>
-            <Type>YIELD_GOAT_HIDE_BOOTS</Type>
-            <Description>TXT_KEY_YIELD_GOAT_HIDE_BOOTS</Description>
-            <Civilopedia>TXT_KEY_YIELD_GOAT_HIDE_BOOTS_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
-            <iBuyPriceLow>8</iBuyPriceLow>
-            <iBuyPriceHigh>9</iBuyPriceHigh>
-            <iBuyPriceMin>3</iBuyPriceMin>
-            <iSellPriceDifference>1</iSellPriceDifference>
-            <iPriceChangeThreshold>1500</iPriceChangeThreshold>
-            <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>-5</iEuropeVolumeAttrition>
-            <iAfricaBuyPriceLow>8</iAfricaBuyPriceLow>
-            <iAfricaBuyPriceHigh>9</iAfricaBuyPriceHigh>
-            <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
-            <iPortRoyalBuyPriceLow>8</iPortRoyalBuyPriceLow>
-            <iPortRoyalBuyPriceHigh>9</iPortRoyalBuyPriceHigh>
-            <iPortRoyalSellPriceDifference>1</iPortRoyalSellPriceDifference>
-            <iNativeBuyPrice>8</iNativeBuyPrice>
-            <iNativeSellPrice>-1</iNativeSellPrice>
-            <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
-            <iNativeHappy>1</iNativeHappy>
-            <iHillsChange>0</iHillsChange>
-            <iPeakChange>0</iPeakChange>
-            <iLakeChange>0</iLakeChange>
-            <iCityChange>0</iCityChange>
-            <iMinCity>0</iMinCity>
-            <iAIWeightPercent>100</iAIWeightPercent>
-            <iAIBaseValue>1</iAIBaseValue>
-            <iNativeBaseValue>0</iNativeBaseValue>
-            <iPower>0</iPower>
-            <iAsset>1</iAsset>
-            <ColorType>COLOR_YIELD_FOOD</ColorType>
-            <UnitClass>UNITCLASS_GOAT_HIDE_BOOTS</UnitClass>
-            <iTextureIndex>-1</iTextureIndex>
-            <iWaterTextureIndex>-1</iWaterTextureIndex>
-            <Icon>Art/interface/buttons/New_Yieds_Icons/Goat_Hide_Boots_Goods_Icon.dds</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Leather_Goods.dds</CombiIcon>
-            <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,2,2</HighlightIcon>
-            <Button>Art/interface/buttons/New_Yields_Buttons/Goat_Hide_Boots_Goods_Button.dds</Button>
-        </YieldInfo>
-        <YieldInfo>
             <Type>YIELD_PIG_LEATHER</Type>
             <Description>TXT_KEY_YIELD_PIG_LEATHER</Description>
             <Civilopedia>TXT_KEY_YIELD_PIG_LEATHER_PEDIA</Civilopedia>
@@ -2930,6 +2888,48 @@
 			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Leather_Goods.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,2,2</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,4,4</Button>
+        </YieldInfo>
+		<YieldInfo>
+            <Type>YIELD_GOAT_HIDE_BOOTS</Type>
+            <Description>TXT_KEY_YIELD_GOAT_HIDE_BOOTS</Description>
+            <Civilopedia>TXT_KEY_YIELD_GOAT_HIDE_BOOTS_PEDIA</Civilopedia>
+            <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
+            <iBuyPriceLow>8</iBuyPriceLow>
+            <iBuyPriceHigh>9</iBuyPriceHigh>
+            <iBuyPriceMin>3</iBuyPriceMin>
+            <iSellPriceDifference>1</iSellPriceDifference>
+            <iPriceChangeThreshold>1500</iPriceChangeThreshold>
+            <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
+            <iEuropeVolumeAttrition>-5</iEuropeVolumeAttrition>
+            <iAfricaBuyPriceLow>8</iAfricaBuyPriceLow>
+            <iAfricaBuyPriceHigh>9</iAfricaBuyPriceHigh>
+            <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
+            <iPortRoyalBuyPriceLow>8</iPortRoyalBuyPriceLow>
+            <iPortRoyalBuyPriceHigh>9</iPortRoyalBuyPriceHigh>
+            <iPortRoyalSellPriceDifference>1</iPortRoyalSellPriceDifference>
+            <iNativeBuyPrice>8</iNativeBuyPrice>
+            <iNativeSellPrice>-1</iNativeSellPrice>
+            <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
+            <iNativeHappy>1</iNativeHappy>
+            <iHillsChange>0</iHillsChange>
+            <iPeakChange>0</iPeakChange>
+            <iLakeChange>0</iLakeChange>
+            <iCityChange>0</iCityChange>
+            <iMinCity>0</iMinCity>
+            <iAIWeightPercent>100</iAIWeightPercent>
+            <iAIBaseValue>1</iAIBaseValue>
+            <iNativeBaseValue>0</iNativeBaseValue>
+            <iPower>0</iPower>
+            <iAsset>1</iAsset>
+            <ColorType>COLOR_YIELD_FOOD</ColorType>
+            <UnitClass>UNITCLASS_GOAT_HIDE_BOOTS</UnitClass>
+            <iTextureIndex>-1</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
+            <Icon>Art/interface/buttons/New_Yieds_Icons/Goat_Hide_Boots_Goods_Icon.dds</Icon>
+			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Leather_Goods.dds</CombiIcon>
+            <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,2,2</HighlightIcon>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Goat_Hide_Boots_Goods_Button.dds</Button>
         </YieldInfo>
 		<YieldInfo>
             <Type>YIELD_PADDED_LEATHER_COATS</Type>

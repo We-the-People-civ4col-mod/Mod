@@ -559,7 +559,7 @@
 	<!-- LEATHER_TAYLOR -->
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_LEATHER_TAYLOR</Tag>
-        <English>Master Leather Taylor</English>
+        <English>Master Leather Padder</English>
         <German>
             <Text>Meister Lederschneider</Text>
             <Gender>Male</Gender>
@@ -568,7 +568,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR</Tag>
-        <English>Master Leather Taylor</English>
+        <English>Master Leather Padder</English>
         <German>
             <Text>Meister Lederschneider</Text>
             <Gender>Male</Gender>
@@ -588,7 +588,7 @@
 	<!-- CLOTH_TAYLOR -->
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_CLOTH_TAYLOR</Tag>
-        <English>Master Clothes Taylor</English>
+        <English>Master Tailor</English>
         <German>
             <Text>Erfahrener Kleiderschneider</Text>
             <Gender>Male</Gender>
@@ -597,7 +597,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CLOTH_TAYLOR</Tag>
-        <English>Master Clothes Taylor</English>
+        <English>Master Tailor</English>
         <German>
             <Text>Meister Kleiderschneider</Text>
             <Gender>Male</Gender>
