@@ -1563,4 +1563,250 @@
         <Tag>TXT_KEY_UNIT_PADDED_LEATHER_COATS_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
+	<!-- MILK -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_MILK</Tag>
+        <English>Milk</English>
+        <German>
+            <Text>Milch</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_MILK</Tag>
+        <English>Milk</English>
+        <German>
+            <Text>Milch</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MILK</Tag>
+        <English>Milk</English>
+        <German>
+            <Text>Milch</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_MILK_PEDIA</Tag>
+        <English>[TAB][H1]Milk[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Milch[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MILK_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MILK_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- KAUTSCHUK -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_KAUTSCHUK</Tag>
+        <English>Kautschuk</English>
+        <German>
+            <Text>Kautschuk</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_KAUTSCHUK</Tag>
+        <English>Kautschuk</English>
+        <German>
+            <Text>Kautschuk</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_KAUTSCHUK</Tag>
+        <English>Kautschuk</English>
+        <German>
+            <Text>Kautschuk</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_KAUTSCHUK_PEDIA</Tag>
+        <English>[TAB][H1]Kautschuk[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Kautschuk[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_KAUTSCHUK_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_KAUTSCHUK_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- CHEESE -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_CHEESE</Tag>
+        <English>Cheese</English>
+        <German>
+            <Text>Käse</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_CHEESE</Tag>
+        <English>Cheese</English>
+        <German>
+            <Text>Käse</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CHEESE</Tag>
+        <English>Cheese</English>
+        <German>
+            <Text>Käse</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_CHEESE_PEDIA</Tag>
+        <English>[TAB][H1]Cheese[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Käse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CHEESE_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CHEESE_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- POTTERY -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_POTTERY</Tag>
+        <English>Pottery</English>
+        <German>
+            <Text>Töpferwaren</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_POTTERY</Tag>
+        <English>Pottery</English>
+        <German>
+            <Text>Töpferwaren</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_POTTERY</Tag>
+        <English>Pottery</English>
+        <German>
+            <Text>Töpferwaren</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_POTTERY_PEDIA</Tag>
+        <English>[TAB][H1]Pottery[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Töpferwaren[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_POTTERY_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_POTTERY_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- EVERYDAY_CLOTHES -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_EVERYDAY_CLOTHES</Tag>
+        <English>Everyday Clothes</English>
+        <German>
+            <Text>Alltagskleidung</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_EVERYDAY_CLOTHES</Tag>
+        <English>Everyday Clothes</English>
+        <German>
+            <Text>Alltagskleidung</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_EVERYDAY_CLOTHES</Tag>
+        <English>Everyday Clothes</English>
+        <German>
+            <Text>Alltagskleidung</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_EVERYDAY_CLOTHES_PEDIA</Tag>
+        <English>[TAB][H1]Everyday Clothes[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Alltagskleidung[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_EVERYDAY_CLOTHES_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_EVERYDAY_CLOTHES_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+	<!-- FESTIVE_CLOTHES -->
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_FESTIVE_CLOTHES</Tag>
+        <English>Festive Clothes</English>
+        <German>
+            <Text>Festliche Kleidung</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_FESTIVE_CLOTHES</Tag>
+        <English>Festive Clothes</English>
+        <German>
+            <Text>Festliche Kleidung</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FESTIVE_CLOTHES</Tag>
+        <English>Festive Clothes</English>
+        <German>
+            <Text>Festliche Kleidung</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_FESTIVE_CLOTHES_PEDIA</Tag>
+        <English>[TAB][H1]Festive Clothes[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <German>[TAB][H1]Festliche Kleidung[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FESTIVE_CLOTHES_PEDIA</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FESTIVE_CLOTHES_STRATEGY</Tag>
+        <English>Can be left empty</English>
+    </TEXT>
 </Civ4GameText>

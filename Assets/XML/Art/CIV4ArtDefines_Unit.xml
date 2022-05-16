@@ -2446,6 +2446,31 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_FESTIVE_CLOTHES</Type>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Festive_Clothes_Goods_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>1.2</fInterfaceScale>
+            <NIF>Art/Units/Trade_Goods/Cloth/Cloth.nif</NIF>
+            <KFM/>
+            <TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.2</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+            </AudioRunSounds>
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_LEATHER</Type>
             <Button>,Art/colonization_atlas_resources.dds,4,4</Button>
@@ -2671,6 +2696,31 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_MILK</Type>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Milk_Goods_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>1.2</fInterfaceScale>
+            <NIF>Art/Units/Trade_Goods/Coffee/Coffee.nif</NIF>
+            <KFM/>
+            <TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.2</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+            </AudioRunSounds>
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_COCOA</Type>
             <Button>,Art/colonization_atlas_resources.dds,7,1</Button>
@@ -2724,6 +2774,31 @@
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_ROASTED_PEANUTS</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Roasted_Peanuts_Goods_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>1.2</fInterfaceScale>
+            <NIF>Art/Units/Trade_Goods/Coffee/Coffee.nif</NIF>
+            <KFM/>
+            <TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.2</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+            </AudioRunSounds>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_CHEESE</Type>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Cheese_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -16705,6 +16780,31 @@
             </AudioRunSounds>
         </UnitArtInfo>
 		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_KAUTSCHUK</Type>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Kautschuk_Goods_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>1.2</fInterfaceScale>
+            <NIF>Art/Units/Trade_Goods/Trade_Goods/Trade_Goods.nif</NIF>
+            <KFM/>
+            <TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.2</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+            </AudioRunSounds>
+        </UnitArtInfo>
+		<UnitArtInfo>
             <Type>ART_DEF_UNIT_YERBA_LEAVES</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Yerba_Leaves_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16807,6 +16907,56 @@
 		<UnitArtInfo>
             <Type>ART_DEF_UNIT_COLOURED_WOOL_CLOTH</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Coloured_Wool_Goods_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>1.2</fInterfaceScale>
+            <NIF>Art/Units/Trade_Goods/Trade_Goods/Trade_Goods.nif</NIF>
+            <KFM/>
+            <TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.2</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+            </AudioRunSounds>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_EVERYDAY_CLOTHES</Type>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Everyday_Clothes_Goods_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>1.2</fInterfaceScale>
+            <NIF>Art/Units/Trade_Goods/Trade_Goods/Trade_Goods.nif</NIF>
+            <KFM/>
+            <TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.2</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+            </AudioRunSounds>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_POTTERY</Type>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Pottery_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>

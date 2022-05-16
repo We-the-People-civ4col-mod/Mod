@@ -226,7 +226,7 @@
             <Type>SPECIALBUILDING_PRINT</Type>
             <Description>TXT_KEY_SPECIALBUILDING_PRINT</Description>
             <bValid>1</bValid>
-            <FontButtonIndex>17</FontButtonIndex>
+            <FontButtonIndex>31</FontButtonIndex>
             <ProductionTraits/>
             <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
             <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,8,2</NatureObject>
@@ -235,7 +235,7 @@
             <Type>SPECIALBUILDING_MILL</Type>
             <Description>TXT_KEY_SPECIALBUILDING_MILL</Description>
             <bValid>1</bValid>
-            <FontButtonIndex>2</FontButtonIndex>
+            <FontButtonIndex>34</FontButtonIndex>
             <ProductionTraits/>
             <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
             <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,8,2</NatureObject>
@@ -244,7 +244,7 @@
             <Type>SPECIALBUILDING_TRAIN_STATION</Type>
             <Description>TXT_KEY_SPECIALBUILDING_TRAIN_STATION</Description>
             <bValid>1</bValid>
-            <FontButtonIndex>12</FontButtonIndex>
+            <FontButtonIndex>32</FontButtonIndex>
             <ProductionTraits/>
             <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
             <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,1,3</NatureObject>
@@ -253,7 +253,7 @@
             <Type>SPECIALBUILDING_CORN</Type>
             <Description>TXT_KEY_SPECIALBUILDING_CORN</Description>
             <bValid>1</bValid>
-            <FontButtonIndex>2</FontButtonIndex>
+            <FontButtonIndex>0</FontButtonIndex>
             <ProductionTraits/>
             <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
             <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,2,1</NatureObject>
@@ -262,7 +262,7 @@
             <Type>SPECIALBUILDING_HEALTH</Type>
             <Description>TXT_KEY_SPECIALBUILDING_HEALTH</Description>
             <bValid>1</bValid>
-            <FontButtonIndex>23</FontButtonIndex>
+            <FontButtonIndex>36</FontButtonIndex>
             <ProductionTraits/>
             <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
             <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,7,1</NatureObject>
@@ -271,7 +271,7 @@
             <Type>SPECIALBUILDING_WELL</Type>
             <Description>TXT_KEY_SPECIALBUILDING_WELL</Description>
             <bValid>1</bValid>
-            <FontButtonIndex>3</FontButtonIndex>
+            <FontButtonIndex>33</FontButtonIndex>
             <ProductionTraits/>
             <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
             <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,4,1</NatureObject>
@@ -280,7 +280,7 @@
             <Type>SPECIALBUILDING_DEFENSE</Type>
             <Description>TXT_KEY_SPECIALBUILDING_DEFENSE</Description>
             <bValid>1</bValid>
-            <FontButtonIndex>21</FontButtonIndex>
+            <FontButtonIndex>35</FontButtonIndex>
             <ProductionTraits/>
             <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
             <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,1,3</NatureObject>

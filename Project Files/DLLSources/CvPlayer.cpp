@@ -15312,6 +15312,13 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 					iPrice = getYieldBuyPrice(YIELD_PEANUTS) - 1;
 				}
 				break;
+			case YIELD_CHEESE:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_MILK) <= price_diff)
+				{
+					eYield = YIELD_MILK;
+					iPrice = getYieldBuyPrice(YIELD_MILK) - 1;
+				}
+				break;
 			case YIELD_CIGARS:
 				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_TOBACCO) <= price_diff)
 				{
@@ -15355,6 +15362,21 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 					}
 				}
 				break;
+			case YIELD_FESTIVE_CLOTHES:
+				if (getYieldBuyPrice(eYield) - (getYieldBuyPrice(YIELD_COLOURED_CLOTH) + getYieldBuyPrice(YIELD_CLOTH)) <= price_diff)
+				{
+					if (getYieldBuyPrice(YIELD_CLOTH) - getYieldBuyPrice(YIELD_COLOURED_CLOTH) <= price_diff)
+					{
+						eYield = YIELD_COLOURED_CLOTH;
+						iPrice = getYieldBuyPrice(YIELD_COLOURED_CLOTH) - 1;
+					}
+					else
+					{
+						eYield = YIELD_CLOTH;
+						iPrice = getYieldBuyPrice(YIELD_CLOTH) - 1;
+					}
+				}
+				break;
 			case YIELD_COLOURED_WOOL_CLOTH:
 				if (getYieldBuyPrice(eYield) - (getYieldBuyPrice(YIELD_LOGWOOD) + getYieldBuyPrice(YIELD_WOOL_CLOTH)) <= price_diff)
 				{
@@ -15366,6 +15388,21 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 					else
 					{
 						eYield = YIELD_WOOL_CLOTH;
+						iPrice = getYieldBuyPrice(YIELD_WOOL_CLOTH) - 1;
+					}
+				}
+				break;
+			case YIELD_EVERYDAY_CLOTHES:
+				if (getYieldBuyPrice(eYield) - (getYieldBuyPrice(YIELD_COLOURED_WOOL_CLOTH) + getYieldBuyPrice(YIELD_WOOL_CLOTH)) <= price_diff)
+				{
+					if (getYieldBuyPrice(YIELD_WOOL_CLOTH) - getYieldBuyPrice(YIELD_COLOURED_WOOL_CLOTH) <= price_diff)
+					{
+						eYield = YIELD_COLOURED_WOOL_CLOTH;
+						iPrice = getYieldBuyPrice(YIELD_COLOURED_WOOL_CLOTH) - 1;
+					}
+					else
+					{
+						eYield = YIELD_CLOTH;
 						iPrice = getYieldBuyPrice(YIELD_WOOL_CLOTH) - 1;
 					}
 				}
@@ -15511,6 +15548,13 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 				{
 					eYield = YIELD_WHALE_BLUBBER;
 					iPrice = getYieldBuyPrice(YIELD_WHALE_BLUBBER) - 1;
+				}
+				break;
+			case YIELD_POTTERY:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_CLAY) <= price_diff)
+				{
+					eYield = YIELD_CLAY;
+					iPrice = getYieldBuyPrice(YIELD_CLAY) - 1;
 				}
 				break;
 			case YIELD_FURNITURE:
@@ -15961,6 +16005,13 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 					iPrice = getYieldAfricaBuyPrice(YIELD_PEANUTS) - 1;
 				}
 				break;
+			case YIELD_CHEESE:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_MILK) <= price_diff)
+				{
+					eYield = YIELD_MILK;
+					iPrice = getYieldAfricaBuyPrice(YIELD_MILK) - 1;
+				}
+				break;
 			case YIELD_CIGARS:
 				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_TOBACCO) <= price_diff)
 				{
@@ -16004,6 +16055,21 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 					}
 				}
 				break;
+			case YIELD_FESTIVE_CLOTHES:
+				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_COLOURED_CLOTH) + getYieldAfricaBuyPrice(YIELD_CLOTH)) <= price_diff)
+				{
+					if (getYieldAfricaBuyPrice(YIELD_CLOTH) - getYieldAfricaBuyPrice(YIELD_COLOURED_CLOTH) <= price_diff)
+					{
+						eYield = YIELD_COLOURED_CLOTH;
+						iPrice = getYieldAfricaBuyPrice(YIELD_COLOURED_CLOTH) - 1;
+					}
+					else
+					{
+						eYield = YIELD_CLOTH;
+						iPrice = getYieldAfricaBuyPrice(YIELD_CLOTH) - 1;
+					}
+				}
+				break;
 			case YIELD_COLOURED_WOOL_CLOTH:
 				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_LOGWOOD) + getYieldAfricaBuyPrice(YIELD_WOOL_CLOTH)) <= price_diff)
 				{
@@ -16015,6 +16081,21 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 					else
 					{
 						eYield = YIELD_WOOL_CLOTH;
+						iPrice = getYieldAfricaBuyPrice(YIELD_WOOL_CLOTH) - 1;
+					}
+				}
+				break;
+			case YIELD_EVERYDAY_CLOTHES:
+				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_COLOURED_WOOL_CLOTH) + getYieldAfricaBuyPrice(YIELD_WOOL_CLOTH)) <= price_diff)
+				{
+					if (getYieldAfricaBuyPrice(YIELD_WOOL_CLOTH) - getYieldAfricaBuyPrice(YIELD_COLOURED_WOOL_CLOTH) <= price_diff)
+					{
+						eYield = YIELD_COLOURED_WOOL_CLOTH;
+						iPrice = getYieldAfricaBuyPrice(YIELD_COLOURED_WOOL_CLOTH) - 1;
+					}
+					else
+					{
+						eYield = YIELD_CLOTH;
 						iPrice = getYieldAfricaBuyPrice(YIELD_WOOL_CLOTH) - 1;
 					}
 				}
@@ -16160,6 +16241,13 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 				{
 					eYield = YIELD_WHALE_BLUBBER;
 					iPrice = getYieldAfricaBuyPrice(YIELD_WHALE_BLUBBER) - 1;
+				}
+				break;
+			case YIELD_POTTERY:
+				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_CLAY) <= price_diff)
+				{
+					eYield = YIELD_CLAY;
+					iPrice = getYieldAfricaBuyPrice(YIELD_CLAY) - 1;
 				}
 				break;
 			case YIELD_FURNITURE:
@@ -16551,6 +16639,13 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 					iPrice = getYieldPortRoyalBuyPrice(YIELD_PEANUTS) - 1;
 				}
 				break;
+			case YIELD_CHEESE:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_MILK) <= price_diff)
+				{
+					eYield = YIELD_MILK;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_MILK) - 1;
+				}
+				break;
 			case YIELD_CIGARS:
 				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_TOBACCO) <= price_diff)
 				{
@@ -16594,6 +16689,21 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 					}
 				}
 				break;
+			case YIELD_FESTIVE_CLOTHES:
+				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_COLOURED_CLOTH) + getYieldPortRoyalBuyPrice(YIELD_CLOTH)) <= price_diff)
+				{
+					if (getYieldPortRoyalBuyPrice(YIELD_CLOTH) - getYieldPortRoyalBuyPrice(YIELD_COLOURED_CLOTH) <= price_diff)
+					{
+						eYield = YIELD_COLOURED_CLOTH;
+						iPrice = getYieldPortRoyalBuyPrice(YIELD_COLOURED_CLOTH) - 1;
+					}
+					else
+					{
+						eYield = YIELD_CLOTH;
+						iPrice = getYieldPortRoyalBuyPrice(YIELD_CLOTH) - 1;
+					}
+				}
+				break;
 			case YIELD_COLOURED_WOOL_CLOTH:
 				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_LOGWOOD) + getYieldPortRoyalBuyPrice(YIELD_WOOL_CLOTH)) <= price_diff)
 				{
@@ -16605,6 +16715,21 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 					else
 					{
 						eYield = YIELD_WOOL_CLOTH;
+						iPrice = getYieldPortRoyalBuyPrice(YIELD_WOOL_CLOTH) - 1;
+					}
+				}
+				break;
+			case YIELD_EVERYDAY_CLOTHES:
+				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_COLOURED_WOOL_CLOTH) + getYieldPortRoyalBuyPrice(YIELD_WOOL_CLOTH)) <= price_diff)
+				{
+					if (getYieldPortRoyalBuyPrice(YIELD_WOOL_CLOTH) - getYieldPortRoyalBuyPrice(YIELD_COLOURED_WOOL_CLOTH) <= price_diff)
+					{
+						eYield = YIELD_COLOURED_WOOL_CLOTH;
+						iPrice = getYieldPortRoyalBuyPrice(YIELD_COLOURED_WOOL_CLOTH) - 1;
+					}
+					else
+					{
+						eYield = YIELD_CLOTH;
 						iPrice = getYieldPortRoyalBuyPrice(YIELD_WOOL_CLOTH) - 1;
 					}
 				}
@@ -16750,6 +16875,13 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 				{
 					eYield = YIELD_WHALE_BLUBBER;
 					iPrice = getYieldPortRoyalBuyPrice(YIELD_WHALE_BLUBBER) - 1;
+				}
+				break;
+			case YIELD_POTTERY:
+				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_CLAY) <= price_diff)
+				{
+					eYield = YIELD_CLAY;
+					iPrice = getYieldPortRoyalBuyPrice(YIELD_CLAY) - 1;
 				}
 				break;
 			case YIELD_FURNITURE:

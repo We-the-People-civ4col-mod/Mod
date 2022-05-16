@@ -806,6 +806,11 @@
             <Description>TXT_KEY_UNITCLASS_MAPLE_SIRUP</Description>
             <DefaultUnit>UNIT_MAPLE_SIRUP</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_KAUTSCHUK</Type>
+            <Description>TXT_KEY_UNITCLASS_KAUTSCHUK</Description>
+            <DefaultUnit>UNIT_KAUTSCHUK</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_COCOA_FRUITS</Type>
             <Description>TXT_KEY_UNITCLASS_COCOA_FRUITS</Description>
@@ -820,6 +825,11 @@
             <Type>UNITCLASS_PEANUTS</Type>
             <Description>TXT_KEY_UNITCLASS_PEANUTS</Description>
             <DefaultUnit>UNIT_PEANUTS</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_MILK</Type>
+            <Description>TXT_KEY_UNITCLASS_MILK</Description>
+            <DefaultUnit>UNIT_MILK</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_RAW_SALT</Type>
@@ -971,6 +981,11 @@
             <Description>TXT_KEY_UNITCLASS_ROASTED_PEANUTS</Description>
             <DefaultUnit>UNIT_ROASTED_PEANUTS</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_CHEESE</Type>
+            <Description>TXT_KEY_UNITCLASS_CHEESE</Description>
+            <DefaultUnit>UNIT_CHEESE</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_SALT</Type>
             <Description>TXT_KEY_UNITCLASS_SALT</Description>
@@ -1001,6 +1016,11 @@
             <Description>TXT_KEY_UNITCLASS_COLOURED_CLOTH</Description>
             <DefaultUnit>UNIT_COLOURED_CLOTH</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_FESTIVE_CLOTHES</Type>
+            <Description>TXT_KEY_UNITCLASS_FESTIVE_CLOTHES</Description>
+            <DefaultUnit>UNIT_FESTIVE_CLOTHES</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_WOOL_CLOTH</Type>
             <Description>TXT_KEY_UNITCLASS_WOOL_CLOTH</Description>
@@ -1010,6 +1030,11 @@
             <Type>UNITCLASS_COLOURED_WOOL_CLOTH</Type>
             <Description>TXT_KEY_UNITCLASS_COLOURED_WOOL_CLOTH</Description>
             <DefaultUnit>UNIT_COLOURED_WOOL_CLOTH</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_EVERYDAY_CLOTHES</Type>
+            <Description>TXT_KEY_UNITCLASS_EVERYDAY_CLOTHES</Description>
+            <DefaultUnit>UNIT_EVERYDAY_CLOTHES</DefaultUnit>
         </UnitClassInfo>		
         <UnitClassInfo>
             <Type>UNITCLASS_PIG_LEATHER</Type>
@@ -1095,6 +1120,11 @@
             <Type>UNITCLASS_WHALE_OIL</Type>
             <Description>TXT_KEY_UNITCLASS_WHALE_OIL</Description>
             <DefaultUnit>UNIT_WHALE_OIL</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_POTTERY</Type>
+            <Description>TXT_KEY_UNITCLASS_POTTERY</Description>
+            <DefaultUnit>UNIT_POTTERY</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_FURNITURE</Type>

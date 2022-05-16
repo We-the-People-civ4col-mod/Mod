@@ -4497,12 +4497,15 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_COCOA:
 		case YIELD_COFFEE:
 		case YIELD_ROASTED_PEANUTS:
+		case YIELD_CHEESE:
 		case YIELD_CIGARS:
 		case YIELD_YERBA_TEA:
 		case YIELD_CLOTH:
 		case YIELD_COLOURED_CLOTH:
+		case YIELD_FESTIVE_CLOTHES:
 		case YIELD_WOOL_CLOTH:
 		case YIELD_COLOURED_WOOL_CLOTH:
+		case YIELD_EVERYDAY_CLOTHES:
 		case YIELD_PIG_LEATHER:
 		case YIELD_LEATHER:
 		case YIELD_GOAT_HIDE_BOOTS:
@@ -4520,6 +4523,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_OLIVE_OIL:
 		case YIELD_RAPE_OIL:
 		case YIELD_WHALE_OIL:
+		case YIELD_POTTERY:
 		case YIELD_FURNITURE:
 		case YIELD_PADDED_FURNITURE:
 			break;
@@ -4543,9 +4547,11 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_CASSAVA:
 		case YIELD_COCA_LEAVES:
 		case YIELD_MAPLE_SIRUP:
+		case YIELD_KAUTSCHUK:
 		case YIELD_COCOA_FRUITS:
 		case YIELD_COFFEE_BERRIES:
 		case YIELD_PEANUTS:
+		case YIELD_MILK:
 		case YIELD_TOBACCO:
 		case YIELD_YERBA_LEAVES:
 		case YIELD_COTTON:

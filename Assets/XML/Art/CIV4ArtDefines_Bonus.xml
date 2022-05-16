@@ -970,7 +970,7 @@
             <NIF>Art/Terrain/Resources/Vanilla/Vanilla.nif</NIF>
             <KFM>Art/Terrain/Resources/Vanilla/Vanilla.kfm</KFM>
             <Button>Art/Interface/Buttons/Vanilla_Button.dds</Button>
-            <FontButtonIndex>102</FontButtonIndex>
+            <FontButtonIndex>101</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>

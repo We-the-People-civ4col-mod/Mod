@@ -824,6 +824,47 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Peanuts_Goods_Button.dds</Button>
         </YieldInfo>
+		<YieldInfo>
+            <Type>YIELD_MILK</Type>
+            <Description>TXT_KEY_YIELD_MILK</Description>
+            <Civilopedia>TXT_KEY_YIELD_MILK_PEDIA</Civilopedia>
+            <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
+            <iBuyPriceLow>3</iBuyPriceLow>
+            <iBuyPriceHigh>4</iBuyPriceHigh>
+            <iBuyPriceMin>2</iBuyPriceMin>
+            <iSellPriceDifference>2</iSellPriceDifference>
+            <iPriceChangeThreshold>1000</iPriceChangeThreshold>
+            <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
+            <iEuropeVolumeAttrition>-5</iEuropeVolumeAttrition>
+            <iAfricaBuyPriceLow>3</iAfricaBuyPriceLow>
+            <iAfricaBuyPriceHigh>4</iAfricaBuyPriceHigh>
+            <iAfricaSellPriceDifference>2</iAfricaSellPriceDifference>
+            <iPortRoyalBuyPriceLow>3</iPortRoyalBuyPriceLow>
+            <iPortRoyalBuyPriceHigh>4</iPortRoyalBuyPriceHigh>
+            <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
+            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeSellPrice>3</iNativeSellPrice>
+            <iNativeConsumptionPercent>20</iNativeConsumptionPercent>
+            <iNativeHappy>0</iNativeHappy>
+            <iHillsChange>-4</iHillsChange>
+            <iPeakChange>0</iPeakChange>
+            <iLakeChange>0</iLakeChange>
+            <iCityChange>1</iCityChange>
+            <iMinCity>0</iMinCity>
+            <iAIWeightPercent>100</iAIWeightPercent>
+            <iAIBaseValue>1</iAIBaseValue>
+            <iNativeBaseValue>1</iNativeBaseValue>
+            <iPower>0</iPower>
+            <iAsset>1</iAsset>
+            <ColorType>COLOR_YIELD_FOOD</ColorType>
+            <UnitClass>UNITCLASS_MILK</UnitClass>
+            <iTextureIndex>-1</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
+            <Icon>Art/interface/buttons/New_Yieds_Icons/Milk_Goods_Icon.dds</Icon>
+            <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,1</HighlightIcon>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Milk_Goods_Button.dds</Button>
+        </YieldInfo>
         <YieldInfo>
             <Type>YIELD_TOBACCO</Type>
             <Description>TXT_KEY_YIELD_TOBACCO</Description>
@@ -2429,6 +2470,47 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,9,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Maple_Sirup_Goods_Button.dds</Button>
         </YieldInfo>
+		<YieldInfo>
+            <Type>YIELD_KAUTSCHUK</Type>
+            <Description>TXT_KEY_YIELD_KAUTSCHUK</Description>
+            <Civilopedia>TXT_KEY_YIELD_KAUTSCHUK_PEDIA</Civilopedia>
+            <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
+            <iBuyPriceLow>10</iBuyPriceLow>
+            <iBuyPriceHigh>11</iBuyPriceHigh>
+            <iBuyPriceMin>2</iBuyPriceMin>
+            <iSellPriceDifference>2</iSellPriceDifference>
+            <iPriceChangeThreshold>1000</iPriceChangeThreshold>
+            <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
+            <iEuropeVolumeAttrition>-5</iEuropeVolumeAttrition>
+            <iAfricaBuyPriceLow>9</iAfricaBuyPriceLow>
+            <iAfricaBuyPriceHigh>10</iAfricaBuyPriceHigh>
+            <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
+            <iPortRoyalBuyPriceLow>8</iPortRoyalBuyPriceLow>
+            <iPortRoyalBuyPriceHigh>9</iPortRoyalBuyPriceHigh>
+            <iPortRoyalSellPriceDifference>1</iPortRoyalSellPriceDifference>
+            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeSellPrice>6</iNativeSellPrice>
+            <iNativeConsumptionPercent>20</iNativeConsumptionPercent>
+            <iNativeHappy>0</iNativeHappy>
+            <iHillsChange>0</iHillsChange>
+            <iPeakChange>0</iPeakChange>
+            <iLakeChange>0</iLakeChange>
+            <iCityChange>0</iCityChange>
+            <iMinCity>0</iMinCity>
+            <iAIWeightPercent>100</iAIWeightPercent>
+            <iAIBaseValue>1</iAIBaseValue>
+            <iNativeBaseValue>1</iNativeBaseValue>
+            <iPower>0</iPower>
+            <iAsset>1</iAsset>
+            <ColorType>COLOR_YIELD_FOOD</ColorType>
+            <UnitClass>UNITCLASS_KAUTSCHUK</UnitClass>
+            <iTextureIndex>52</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
+            <Icon>Art/interface/buttons/New_Yieds_Icons/Kautschuk_Goods_Icon.dds</Icon>
+            <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,9,1</HighlightIcon>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Kautschuk_Goods_Button.dds</Button>
+        </YieldInfo>
         <YieldInfo>
             <Type>YIELD_COCOA</Type>
             <Description>TXT_KEY_YIELD_COCOA</Description>
@@ -2554,7 +2636,49 @@
             <CombiIcon>,Art/colonization_atlas_resources.dds,3,9</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Roasted_Peanuts_Goods_Button.dds</Button>
-        </YieldInfo>	
+        </YieldInfo>
+		<YieldInfo>
+            <Type>YIELD_CHEESE</Type>
+            <Description>TXT_KEY_YIELD_CHEESE</Description>
+            <Civilopedia>TXT_KEY_YIELD_CHEESE_PEDIA</Civilopedia>
+            <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
+            <iBuyPriceLow>7</iBuyPriceLow>
+            <iBuyPriceHigh>8</iBuyPriceHigh>
+            <iBuyPriceMin>5</iBuyPriceMin>
+            <iSellPriceDifference>2</iSellPriceDifference>
+            <iPriceChangeThreshold>1500</iPriceChangeThreshold>
+            <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
+            <iEuropeVolumeAttrition>-10</iEuropeVolumeAttrition>
+            <iAfricaBuyPriceLow>8</iAfricaBuyPriceLow>
+            <iAfricaBuyPriceHigh>9</iAfricaBuyPriceHigh>
+            <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
+            <iPortRoyalBuyPriceLow>8</iPortRoyalBuyPriceLow>
+            <iPortRoyalBuyPriceHigh>9</iPortRoyalBuyPriceHigh>
+            <iPortRoyalSellPriceDifference>1</iPortRoyalSellPriceDifference>
+            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeSellPrice>-1</iNativeSellPrice>
+            <iNativeConsumptionPercent>20</iNativeConsumptionPercent>
+            <iNativeHappy>0</iNativeHappy>
+            <iHillsChange>0</iHillsChange>
+            <iPeakChange>0</iPeakChange>
+            <iLakeChange>0</iLakeChange>
+            <iCityChange>0</iCityChange>
+            <iMinCity>0</iMinCity>
+            <iAIWeightPercent>100</iAIWeightPercent>
+            <iAIBaseValue>1</iAIBaseValue>
+            <iNativeBaseValue>0</iNativeBaseValue>
+            <iPower>0</iPower>
+            <iAsset>1</iAsset>
+            <ColorType>COLOR_YIELD_FOOD</ColorType>
+            <UnitClass>UNITCLASS_CHEESE</UnitClass>
+            <iTextureIndex>-1</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
+            <Icon>Art/interface/buttons/New_Yieds_Icons/Cheese_Goods_Icon.dds</Icon>
+            <CombiIcon>,Art/colonization_atlas_resources.dds,3,9</CombiIcon>
+            <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Cheese_Goods_Button.dds</Button>
+        </YieldInfo>		
         <YieldInfo>
             <Type>YIELD_CIGARS</Type>
             <Description>TXT_KEY_YIELD_CIGARS</Description>
@@ -2717,9 +2841,51 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,4,11</Icon>
-            <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Dying</CombiIcon>
+            <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Dying.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,4,2</Button>
+        </YieldInfo>
+		<YieldInfo>
+            <Type>YIELD_FESTIVE_CLOTHES</Type>
+            <Description>TXT_KEY_YIELD_FESTIVE_CLOTHES</Description>
+            <Civilopedia>TXT_KEY_YIELD_FESTIVE_CLOTHES_PEDIA</Civilopedia>
+            <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
+            <iBuyPriceLow>19</iBuyPriceLow>
+            <iBuyPriceHigh>20</iBuyPriceHigh>
+            <iBuyPriceMin>8</iBuyPriceMin>
+            <iSellPriceDifference>2</iSellPriceDifference>
+            <iPriceChangeThreshold>2000</iPriceChangeThreshold>
+            <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
+            <iEuropeVolumeAttrition>-10</iEuropeVolumeAttrition>
+            <iAfricaBuyPriceLow>18</iAfricaBuyPriceLow>
+            <iAfricaBuyPriceHigh>19</iAfricaBuyPriceHigh>
+            <iAfricaSellPriceDifference>2</iAfricaSellPriceDifference>
+            <iPortRoyalBuyPriceLow>18</iPortRoyalBuyPriceLow>
+            <iPortRoyalBuyPriceHigh>19</iPortRoyalBuyPriceHigh>
+            <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
+            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeSellPrice>-1</iNativeSellPrice>
+            <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
+            <iNativeHappy>0</iNativeHappy>
+            <iHillsChange>0</iHillsChange>
+            <iPeakChange>0</iPeakChange>
+            <iLakeChange>0</iLakeChange>
+            <iCityChange>0</iCityChange>
+            <iMinCity>0</iMinCity>
+            <iAIWeightPercent>100</iAIWeightPercent>
+            <iAIBaseValue>1</iAIBaseValue>
+            <iNativeBaseValue>0</iNativeBaseValue>
+            <iPower>0</iPower>
+            <iAsset>1</iAsset>
+            <ColorType>COLOR_YIELD_FOOD</ColorType>
+            <UnitClass>UNITCLASS_FESTIVE_CLOTHES</UnitClass>
+            <iTextureIndex>-1</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
+            <Icon>Art/interface/buttons/New_Yieds_Icons/Festive_Clothes_Goods_Icon.dds</Icon>
+            <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Tailor_Combi_Icon.dds</CombiIcon>
+            <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Festive_Clothes_Goods_Button.dds</Button>
         </YieldInfo>
         <YieldInfo>
             <Type>YIELD_WOOL_CLOTH</Type>
@@ -2801,9 +2967,51 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Coloured_Wool_Goods_Icon.dds</Icon>
-            <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Dying</CombiIcon>
+            <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Dying.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Coloured_Wool_Goods_Button.dds</Button>
+        </YieldInfo>
+		<YieldInfo>
+            <Type>YIELD_EVERYDAY_CLOTHES</Type>
+            <Description>TXT_KEY_YIELD_EVERYDAY_CLOTHES</Description>
+            <Civilopedia>TXT_KEY_YIELD_EVERYDAY_CLOTHES_PEDIA</Civilopedia>
+            <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
+            <iBuyPriceLow>29</iBuyPriceLow>
+            <iBuyPriceHigh>30</iBuyPriceHigh>
+            <iBuyPriceMin>8</iBuyPriceMin>
+            <iSellPriceDifference>2</iSellPriceDifference>
+            <iPriceChangeThreshold>2000</iPriceChangeThreshold>
+            <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
+            <iEuropeVolumeAttrition>-10</iEuropeVolumeAttrition>
+            <iAfricaBuyPriceLow>28</iAfricaBuyPriceLow>
+            <iAfricaBuyPriceHigh>29</iAfricaBuyPriceHigh>
+            <iAfricaSellPriceDifference>2</iAfricaSellPriceDifference>
+            <iPortRoyalBuyPriceLow>28</iPortRoyalBuyPriceLow>
+            <iPortRoyalBuyPriceHigh>29</iPortRoyalBuyPriceHigh>
+            <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
+            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeSellPrice>-1</iNativeSellPrice>
+            <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
+            <iNativeHappy>0</iNativeHappy>
+            <iHillsChange>0</iHillsChange>
+            <iPeakChange>0</iPeakChange>
+            <iLakeChange>0</iLakeChange>
+            <iCityChange>0</iCityChange>
+            <iMinCity>0</iMinCity>
+            <iAIWeightPercent>100</iAIWeightPercent>
+            <iAIBaseValue>1</iAIBaseValue>
+            <iNativeBaseValue>0</iNativeBaseValue>
+            <iPower>0</iPower>
+            <iAsset>1</iAsset>
+            <ColorType>COLOR_YIELD_FOOD</ColorType>
+            <UnitClass>UNITCLASS_EVERYDAY_CLOTHES</UnitClass>
+            <iTextureIndex>-1</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
+            <Icon>Art/interface/buttons/New_Yieds_Icons/Everyday_Clothes_Goods_Icon.dds</Icon>
+            <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Tailor_Combi_Icon.dds</CombiIcon>
+            <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Everyday_Clothes_Goods_Button.dds</Button>
         </YieldInfo>
         <YieldInfo>
             <Type>YIELD_PIG_LEATHER</Type>
@@ -3515,6 +3723,47 @@
             <Icon>,Art/colonization_atlas_resources.dds,2,15</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,2</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,2,6</Button>
+        </YieldInfo>
+		<YieldInfo>
+            <Type>YIELD_POTTERY</Type>
+            <Description>TXT_KEY_YIELD_POTTERY</Description>
+            <Civilopedia>TXT_KEY_YIELD_POTTERY_PEDIA</Civilopedia>
+            <bCargo>1</bCargo>
+            <bIsExportYield>1</bIsExportYield>
+            <iBuyPriceLow>15</iBuyPriceLow>
+            <iBuyPriceHigh>16</iBuyPriceHigh>
+            <iBuyPriceMin>3</iBuyPriceMin>
+            <iSellPriceDifference>2</iSellPriceDifference>
+            <iPriceChangeThreshold>2000</iPriceChangeThreshold>
+            <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
+            <iEuropeVolumeAttrition>-15</iEuropeVolumeAttrition>
+            <iAfricaBuyPriceLow>16</iAfricaBuyPriceLow>
+            <iAfricaBuyPriceHigh>17</iAfricaBuyPriceHigh>
+            <iAfricaSellPriceDifference>5</iAfricaSellPriceDifference>
+            <iPortRoyalBuyPriceLow>16</iPortRoyalBuyPriceLow>
+            <iPortRoyalBuyPriceHigh>17</iPortRoyalBuyPriceHigh>
+            <iPortRoyalSellPriceDifference>5</iPortRoyalSellPriceDifference>
+            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeSellPrice>-1</iNativeSellPrice>
+            <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
+            <iNativeHappy>0</iNativeHappy>
+            <iHillsChange>0</iHillsChange>
+            <iPeakChange>0</iPeakChange>
+            <iLakeChange>0</iLakeChange>
+            <iCityChange>0</iCityChange>
+            <iMinCity>0</iMinCity>
+            <iAIWeightPercent>150</iAIWeightPercent>
+            <iAIBaseValue>3</iAIBaseValue>
+            <iNativeBaseValue>0</iNativeBaseValue>
+            <iPower>0</iPower>
+            <iAsset>1</iAsset>
+            <ColorType>COLOR_YIELD_FOOD</ColorType>
+            <UnitClass>UNITCLASS_POTTERY</UnitClass>
+            <iTextureIndex>-1</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
+            <Icon>Art/interface/buttons/New_Yieds_Icons/Pottery_Goods_Icon.dds</Icon>
+            <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,2</HighlightIcon>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Pottery_Goods_Button.dds</Button>
         </YieldInfo>
         <YieldInfo>
             <Type>YIELD_FURNITURE</Type>

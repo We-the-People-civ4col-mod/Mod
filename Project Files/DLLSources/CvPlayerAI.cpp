@@ -8614,6 +8614,7 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_COCOA_FRUITS:
 		case YIELD_COFFEE_BERRIES:
 		case YIELD_PEANUTS:
+		case YIELD_MILK:
 		case YIELD_TOBACCO:
 		case YIELD_YERBA_LEAVES:
 		case YIELD_COTTON:
@@ -8658,6 +8659,7 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_CASSAVA:
 		case YIELD_COCA_LEAVES:
 		case YIELD_MAPLE_SIRUP:
+		case YIELD_KAUTSCHUK:
 		case YIELD_WILD_FEATHERS:
 		case YIELD_SILVER:
 		case YIELD_GOLD:
@@ -8665,12 +8667,15 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_COCOA:
 		case YIELD_COFFEE:
 		case YIELD_ROASTED_PEANUTS:
+		case YIELD_CHEESE:
 		case YIELD_CIGARS:
 		case YIELD_YERBA_TEA:
 		case YIELD_CLOTH:
 		case YIELD_COLOURED_CLOTH:
+		case YIELD_FESTIVE_CLOTHES:
 		case YIELD_WOOL_CLOTH:
 		case YIELD_COLOURED_WOOL_CLOTH:
+		case YIELD_EVERYDAY_CLOTHES:
 		case YIELD_PIG_LEATHER:
 		case YIELD_LEATHER:
 		case YIELD_GOAT_HIDE_BOOTS:
@@ -8688,6 +8693,7 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_OLIVE_OIL:
 		case YIELD_RAPE_OIL:
 		case YIELD_WHALE_OIL:
+		case YIELD_POTTERY:
 		case YIELD_FURNITURE:
 		case YIELD_PADDED_FURNITURE:
 			return true;
@@ -8846,6 +8852,7 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 		case YIELD_COCOA_FRUITS:
 		case YIELD_COFFEE_BERRIES:
 		case YIELD_PEANUTS:
+		case YIELD_MILK:
 		case YIELD_TOBACCO:
 		case YIELD_YERBA_LEAVES:
 		case YIELD_COTTON:
@@ -8898,6 +8905,7 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 		case YIELD_CASSAVA:
 		case YIELD_COCA_LEAVES:
 		case YIELD_MAPLE_SIRUP:
+		case YIELD_KAUTSCHUK:
 		case YIELD_WILD_FEATHERS:
 		case YIELD_SILVER:
 		case YIELD_GOLD:
@@ -8905,12 +8913,13 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 		case YIELD_COCOA:
 		case YIELD_COFFEE:
 		case YIELD_ROASTED_PEANUTS:
+		case YIELD_CHEESE:
 		case YIELD_CIGARS:
 		case YIELD_YERBA_TEA:
 			bFinal = true;
 			break;
-		case YIELD_WOOL_CLOTH:
 		case YIELD_CLOTH:
+		case YIELD_WOOL_CLOTH:
 			{
 				int iLoop;
 				CvCity* pLoopCity = NULL;
@@ -8925,7 +8934,9 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 			}
 			break;
 		case YIELD_COLOURED_CLOTH:
+		case YIELD_FESTIVE_CLOTHES:
 		case YIELD_COLOURED_WOOL_CLOTH:
+		case YIELD_EVERYDAY_CLOTHES:
 		case YIELD_PIG_LEATHER:
 		case YIELD_LEATHER:
 		case YIELD_GOAT_HIDE_BOOTS:
@@ -8943,6 +8954,7 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 		case YIELD_OLIVE_OIL:
 		case YIELD_RAPE_OIL:
 		case YIELD_WHALE_OIL:
+		case YIELD_POTTERY:
 		case YIELD_FURNITURE:
 		case YIELD_PADDED_FURNITURE:
 		case YIELD_FIELD_WORKER_TOOLS:
@@ -9000,9 +9012,11 @@ bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
 		case YIELD_CASSAVA:
 		case YIELD_COCA_LEAVES:
 		case YIELD_MAPLE_SIRUP:
+		case YIELD_KAUTSCHUK:
 		case YIELD_COCOA_FRUITS:
 		case YIELD_COFFEE_BERRIES:
 		case YIELD_PEANUTS:
+		case YIELD_MILK:
 		case YIELD_TOBACCO:
 		case YIELD_YERBA_LEAVES:
 		case YIELD_COTTON:
@@ -9045,12 +9059,15 @@ bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
 		case YIELD_COCOA:
 		case YIELD_COFFEE:
 		case YIELD_ROASTED_PEANUTS:
+		case YIELD_CHEESE:
 		case YIELD_CIGARS:
 		case YIELD_YERBA_TEA:
 		case YIELD_CLOTH:
 		case YIELD_COLOURED_CLOTH:
+		case YIELD_FESTIVE_CLOTHES:
 		case YIELD_WOOL_CLOTH:
 		case YIELD_COLOURED_WOOL_CLOTH:
+		case YIELD_EVERYDAY_CLOTHES:
 		case YIELD_PIG_LEATHER:
 		case YIELD_LEATHER:
 		case YIELD_GOAT_HIDE_BOOTS:
@@ -9068,6 +9085,7 @@ bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
 		case YIELD_OLIVE_OIL:
 		case YIELD_RAPE_OIL:
 		case YIELD_WHALE_OIL:
+		case YIELD_POTTERY:
 		case YIELD_FURNITURE:
 		case YIELD_PADDED_FURNITURE:
 		case YIELD_FIELD_WORKER_TOOLS:
@@ -9204,6 +9222,7 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 			case YIELD_COCOA_FRUITS:
 			case YIELD_COFFEE_BERRIES:
 			case YIELD_PEANUTS:
+			case YIELD_MILK:
 			case YIELD_TOBACCO:
 			case YIELD_YERBA_LEAVES:
 			case YIELD_COTTON:
@@ -9250,6 +9269,7 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 			case YIELD_CASSAVA:
 			case YIELD_COCA_LEAVES:
 			case YIELD_MAPLE_SIRUP:
+			case YIELD_KAUTSCHUK:
 			case YIELD_WILD_FEATHERS:
 			case YIELD_SILVER:
 			case YIELD_GOLD:
@@ -9257,12 +9277,15 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 			case YIELD_COCOA:
 			case YIELD_COFFEE:
 			case YIELD_ROASTED_PEANUTS:
+			case YIELD_CHEESE:
 			case YIELD_CIGARS:
 			case YIELD_YERBA_TEA:
 			case YIELD_CLOTH:
 			case YIELD_COLOURED_CLOTH:
+			case YIELD_FESTIVE_CLOTHES:
 			case YIELD_WOOL_CLOTH:
 			case YIELD_COLOURED_WOOL_CLOTH:
+			case YIELD_EVERYDAY_CLOTHES:
 			case YIELD_PIG_LEATHER:
 			case YIELD_LEATHER:
 			case YIELD_GOAT_HIDE_BOOTS:
@@ -9280,6 +9303,7 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 			case YIELD_OLIVE_OIL:
 			case YIELD_RAPE_OIL:
 			case YIELD_WHALE_OIL:
+			case YIELD_POTTERY:
 			case YIELD_FURNITURE:
 			case YIELD_PADDED_FURNITURE:
 				iValue *= iGoodsMultiplier;
@@ -9393,6 +9417,7 @@ void CvPlayerAI::AI_updateYieldValues()
 			case YIELD_COCOA_FRUITS:
 			case YIELD_COFFEE_BERRIES:
 			case YIELD_PEANUTS:
+			case YIELD_MILK:
 			case YIELD_TOBACCO:
 			case YIELD_YERBA_LEAVES:
 			case YIELD_COTTON:
@@ -9432,6 +9457,7 @@ void CvPlayerAI::AI_updateYieldValues()
 			case YIELD_CASSAVA:
 			case YIELD_COCA_LEAVES:
 			case YIELD_MAPLE_SIRUP:
+			case YIELD_KAUTSCHUK:
 			case YIELD_WILD_FEATHERS:
 			case YIELD_SILVER:
 			case YIELD_GOLD:
@@ -9439,12 +9465,15 @@ void CvPlayerAI::AI_updateYieldValues()
 			case YIELD_COCOA:
 			case YIELD_COFFEE:
 			case YIELD_ROASTED_PEANUTS:
+			case YIELD_CHEESE:
 			case YIELD_CIGARS:
 			case YIELD_YERBA_TEA:
 			case YIELD_CLOTH:
 			case YIELD_COLOURED_CLOTH:
+			case YIELD_FESTIVE_CLOTHES:
 			case YIELD_WOOL_CLOTH:
 			case YIELD_COLOURED_WOOL_CLOTH:
+			case YIELD_EVERYDAY_CLOTHES:
 			case YIELD_PIG_LEATHER:
 			case YIELD_LEATHER:
 			case YIELD_GOAT_HIDE_BOOTS:
@@ -9462,6 +9491,7 @@ void CvPlayerAI::AI_updateYieldValues()
 			case YIELD_OLIVE_OIL:
 			case YIELD_RAPE_OIL:
 			case YIELD_WHALE_OIL:
+			case YIELD_POTTERY:
 			case YIELD_FURNITURE:
 			case YIELD_PADDED_FURNITURE:
 				iValue += kParent.getYieldBuyPrice(eYield);
