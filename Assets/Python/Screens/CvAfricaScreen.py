@@ -179,7 +179,7 @@ class CvAfricaScreen:
 		self.NUM_YIELDS = len(self.YieldList)
 		## R&R, Robert Surcouf,  Multiple rows of Yields if necessary START
 		#self.NUM_YIELDS_IN_A_ROW = 26 -> Two rows if num > 26
-		self.NUM_YIELDS_IN_A_ROW = 30
+		self.NUM_YIELDS_IN_A_ROW = 32
 		
 		# Window reduction for small resolutions
 		# Sometimes yield boxes are too large ...
