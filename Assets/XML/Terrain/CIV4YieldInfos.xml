@@ -2851,19 +2851,19 @@
             <Civilopedia>TXT_KEY_YIELD_FESTIVE_CLOTHES_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
             <bIsExportYield>1</bIsExportYield>
-            <iBuyPriceLow>19</iBuyPriceLow>
-            <iBuyPriceHigh>20</iBuyPriceHigh>
+            <iBuyPriceLow>29</iBuyPriceLow>
+            <iBuyPriceHigh>30</iBuyPriceHigh>
             <iBuyPriceMin>8</iBuyPriceMin>
-            <iSellPriceDifference>2</iSellPriceDifference>
+            <iSellPriceDifference>5</iSellPriceDifference>
             <iPriceChangeThreshold>2000</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
             <iEuropeVolumeAttrition>-10</iEuropeVolumeAttrition>
-            <iAfricaBuyPriceLow>18</iAfricaBuyPriceLow>
-            <iAfricaBuyPriceHigh>19</iAfricaBuyPriceHigh>
-            <iAfricaSellPriceDifference>2</iAfricaSellPriceDifference>
-            <iPortRoyalBuyPriceLow>18</iPortRoyalBuyPriceLow>
-            <iPortRoyalBuyPriceHigh>19</iPortRoyalBuyPriceHigh>
-            <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
+            <iAfricaBuyPriceLow>28</iAfricaBuyPriceLow>
+            <iAfricaBuyPriceHigh>29</iAfricaBuyPriceHigh>
+            <iAfricaSellPriceDifference>5</iAfricaSellPriceDifference>
+            <iPortRoyalBuyPriceLow>28</iPortRoyalBuyPriceLow>
+            <iPortRoyalBuyPriceHigh>29</iPortRoyalBuyPriceHigh>
+            <iPortRoyalSellPriceDifference>5</iPortRoyalSellPriceDifference>
             <iNativeBuyPrice>-1</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
             <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
@@ -2980,16 +2980,16 @@
             <iBuyPriceLow>29</iBuyPriceLow>
             <iBuyPriceHigh>30</iBuyPriceHigh>
             <iBuyPriceMin>8</iBuyPriceMin>
-            <iSellPriceDifference>2</iSellPriceDifference>
+            <iSellPriceDifference>5</iSellPriceDifference>
             <iPriceChangeThreshold>2000</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
             <iEuropeVolumeAttrition>-10</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>28</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>29</iAfricaBuyPriceHigh>
-            <iAfricaSellPriceDifference>2</iAfricaSellPriceDifference>
+            <iAfricaSellPriceDifference>5</iAfricaSellPriceDifference>
             <iPortRoyalBuyPriceLow>28</iPortRoyalBuyPriceLow>
             <iPortRoyalBuyPriceHigh>29</iPortRoyalBuyPriceHigh>
-            <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
+            <iPortRoyalSellPriceDifference>5</iPortRoyalSellPriceDifference>
             <iNativeBuyPrice>-1</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
             <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
@@ -3730,19 +3730,19 @@
             <Civilopedia>TXT_KEY_YIELD_POTTERY_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
             <bIsExportYield>1</bIsExportYield>
-            <iBuyPriceLow>15</iBuyPriceLow>
-            <iBuyPriceHigh>16</iBuyPriceHigh>
+            <iBuyPriceLow>8</iBuyPriceLow>
+            <iBuyPriceHigh>9</iBuyPriceHigh>
             <iBuyPriceMin>3</iBuyPriceMin>
             <iSellPriceDifference>2</iSellPriceDifference>
             <iPriceChangeThreshold>2000</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
             <iEuropeVolumeAttrition>-15</iEuropeVolumeAttrition>
-            <iAfricaBuyPriceLow>16</iAfricaBuyPriceLow>
-            <iAfricaBuyPriceHigh>17</iAfricaBuyPriceHigh>
-            <iAfricaSellPriceDifference>5</iAfricaSellPriceDifference>
-            <iPortRoyalBuyPriceLow>16</iPortRoyalBuyPriceLow>
-            <iPortRoyalBuyPriceHigh>17</iPortRoyalBuyPriceHigh>
-            <iPortRoyalSellPriceDifference>5</iPortRoyalSellPriceDifference>
+            <iAfricaBuyPriceLow>9</iAfricaBuyPriceLow>
+            <iAfricaBuyPriceHigh>10</iAfricaBuyPriceHigh>
+            <iAfricaSellPriceDifference>2</iAfricaSellPriceDifference>
+            <iPortRoyalBuyPriceLow>9</iPortRoyalBuyPriceLow>
+            <iPortRoyalBuyPriceHigh>10</iPortRoyalBuyPriceHigh>
+            <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
             <iNativeBuyPrice>-1</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
             <iNativeConsumptionPercent>50</iNativeConsumptionPercent>

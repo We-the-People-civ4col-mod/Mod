@@ -115,7 +115,7 @@
         <English>Hardwood</English>
         <German>
             <Text>Hartholz</Text>
-            <Gender>Male</Gender>
+            <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
     </TEXT>
@@ -384,39 +384,39 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CARIBOU</Tag>
-        <English>Caribou</English>
+        <English>Caribous</English>
         <German>
-            <Text>Caribou</Text>
-            <Gender>Male</Gender>
+            <Text>Caribous</Text>
+            <Gender>Neuters</Gender>
             <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CARIBOU_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][PARAGRAPH:1][COLOR_UNIT_TEXT]Caribou[COLOR_REVERT] migrate across tundra and [LINK=FEATURE_FOREST_TUNDRA]taiga[\LINK] in vast herds. They are also found in smaller groups in northern [LINK=FEATURE_LIGHT_FOREST]light forests[\LINK]or in [LINK=FEATURE_FOREST]forests[\LINK].[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The North American range of caribou extends from Alaska through the Yukon, the Northwest Territories and Nunavut into the boreal forest and south through the Canadian Rockies. Porcupine caribou and barren-ground caribou form large herds which undertake lengthy seasonal migrations from birthing grounds to feeding grounds in the tundra and taiga, some of the longest migrations of any mammal. Arctic people depend on caribou for food, clothing, and shelter. Woodland caribou swim high out of the water, unlike any other mammal, because their hollow, air-filled, quill-like hair acts as a supporting life jacket.</English>
-        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Caribou[COLOR_REVERT] </German>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][PARAGRAPH:1][COLOR_UNIT_TEXT]Caribous[COLOR_REVERT] migrate across tundra and [LINK=FEATURE_FOREST_TUNDRA]taiga[\LINK] in vast herds. They are also found in smaller groups in northern [LINK=FEATURE_LIGHT_FOREST]light forests[\LINK]or in [LINK=FEATURE_FOREST]forests[\LINK].[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The North American range of caribou extends from Alaska through the Yukon, the Northwest Territories and Nunavut into the boreal forest and south through the Canadian Rockies. Porcupine caribou and barren-ground caribou form large herds which undertake lengthy seasonal migrations from birthing grounds to feeding grounds in the tundra and taiga, some of the longest migrations of any mammal. Arctic people depend on caribou for food, clothing, and shelter. Woodland caribou swim high out of the water, unlike any other mammal, because their hollow, air-filled, quill-like hair acts as a supporting life jacket.</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Caribous[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MOOSE</Tag>
-        <English>Moose</English>
+        <English>Mooses</English>
         <German>
-            <Text>Elch</Text>
+            <Text>Elche</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MOOSE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_UNIT_TEXT]Moose[COLOR_REVERT] are solitary, fond of browsing on water plants in ponds and lakes. They are the most dangerous member of the deer family. Moose are found in northern [LINK=FEATURE_LIGHT_FOREST]light forests[\LINK]or in [LINK=FEATURE_FOREST]forests[\LINK], especially near rivers and lakes.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The moose is the largest and heaviest member of the deer family, standing two meters high at the shoulder and weighing up to 700 kilograms. It has distinctive broad palm-shaped antlers. Solitary animals, moose eat aquatic plants. On land they browse. The word "moose" is borrowed from the Algonquian language, first entering English in 1606. Birds, carnivores and rodents eat dropped antlers which are full of protein. In terms of raw numbers, moose attack more people than bears and wolves combined.</English>
-        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Elch[COLOR_REVERT] </German>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_UNIT_TEXT]Mooses[COLOR_REVERT] are solitary, fond of browsing on water plants in ponds and lakes. They are the most dangerous member of the deer family. Moose are found in northern [LINK=FEATURE_LIGHT_FOREST]light forests[\LINK]or in [LINK=FEATURE_FOREST]forests[\LINK], especially near rivers and lakes.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The moose is the largest and heaviest member of the deer family, standing two meters high at the shoulder and weighing up to 700 kilograms. It has distinctive broad palm-shaped antlers. Solitary animals, moose eat aquatic plants. On land they browse. The word "moose" is borrowed from the Algonquian language, first entering English in 1606. Birds, carnivores and rodents eat dropped antlers which are full of protein. In terms of raw numbers, moose attack more people than bears and wolves combined.</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Elche[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_BIG_HORN</Tag>
         <English>Bighorn Sheep</English>
         <German>
-            <Text>Dickhornschaf</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Dickhornschafe</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -426,11 +426,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GOAT</Tag>
-        <English>Goat</English>
+        <English>Goats</English>
         <German>
-            <Text>Ziege</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Ziegen</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -442,9 +442,9 @@
         <Tag>TXT_KEY_BONUS_MUSK_OX</Tag>
         <English>Musk Ox</English>
         <German>
-            <Text>Moschusochse</Text>
+            <Text>Moschusochsen</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -457,8 +457,8 @@
         <English>Llamas</English>
         <German>
             <Text>Llamas</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -472,7 +472,7 @@
         <German>
             <Text>Tölpel</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -485,8 +485,8 @@
         <English>Gulls</English>
         <German>
             <Text>Möwen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -499,8 +499,8 @@
         <English>Ducks</English>
         <German>
             <Text>Enten</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -514,7 +514,7 @@
         <German>
             <Text>Seetaucher</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -524,25 +524,25 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CANADA_GOOSE</Tag>
-        <English>Canada Goose</English>
+        <English>Canada Geese</English>
         <German>
-            <Text>Kanadagans</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Text>Kanadagänse</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CANADA_GOOSE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]One[COLOR_HIGHLIGHT_TEXT]Canada goose[COLOR_REVERT] is a big meal for a hunting party.  In the north wild game is often very lean. Geese are a good source of fat in temperate or cold climates. Geese are strong fliers. Flocks of geese can be found anywhere on land or water.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The Canada goose is a large aquatic bird. As a black goose it's in a different genera from domestic grey and white geese. Fairly tolerant of cold, as winter comes it migrates south in large V-shaped flocks. It's hunted and is an especially good source of fat. A single cooked goose will provide several bowls of grease. With its wing an adult goose can break a man's arm.</English>
-        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kanadagans[COLOR_REVERT] </German>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]One[COLOR_HIGHLIGHT_TEXT]Canada Geese[COLOR_REVERT] is a big meal for a hunting party.  In the north wild game is often very lean. Geese are a good source of fat in temperate or cold climates. Geese are strong fliers. Flocks of geese can be found anywhere on land or water.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]The Canada goose is a large aquatic bird. As a black goose it's in a different genera from domestic grey and white geese. Fairly tolerant of cold, as winter comes it migrates south in large V-shaped flocks. It's hunted and is an especially good source of fat. A single cooked goose will provide several bowls of grease. With its wing an adult goose can break a man's arm.</English>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kanadagänse[COLOR_REVERT] </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_GUINEA_PIG</Tag>
-        <English>Guinea Pig</English>
+        <English>Guinea Pigs</English>
         <German>
             <Text>Meerschweinchen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -556,7 +556,7 @@
         <German>
             <Text>Papageien</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -580,10 +580,10 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_CAPYBARA</Tag>
-        <English>Capybara</English>
+        <English>Capybaras</English>
         <German>
-            <Text>Wasserschwein</Text>
-            <Gender>Male</Gender>
+            <Text>Wasserschweine</Text>
+            <Gender>Neuter</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
@@ -611,8 +611,8 @@
         <English>Rabbits</English>
         <German>
             <Text>Kaninchen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -975,7 +975,7 @@
         <English>Mackerel</English>
         <German>
             <Text>Makrelen</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
@@ -1081,7 +1081,7 @@
         <English>Bloodwood Trees</English>
         <German>
             <Text>Blutholzbäume</Text>
-            <Gender>Female</Gender>
+            <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
@@ -1222,7 +1222,7 @@
         <German>
             <Text>Tiertränkstelle:Tiertränkstellen</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -1396,18 +1396,31 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MAPLE_TREES</Tag>
-        <English>Maple trees</English>
+        <English>Maple Trees</English>
         <German>
             <Text>Ahornbäume</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </German>
-
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_MAPLE_TREES_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Maple Trees[COLOR_REVERT] TODO</English>
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ahornbäume[COLOR_REVERT] TODO</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BONUS_KAUTSCHUK</Tag>
+        <English>Kautschuk Trees</English>
+        <German>
+            <Text>Kautschukbäume</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BONUS_MAPLE_TREES_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kautschuk Trees[COLOR_REVERT] TODO</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kautschukbäume[COLOR_REVERT] TODO</German>
     </TEXT>	
     <TEXT>
         <Tag>TXT_KEY_BONUS_SALT</Tag>
@@ -1853,7 +1866,7 @@
         <Tag>TXT_KEY_BONUS_PENGUIN</Tag>
         <English>Penguin</English>
         <German>
-            <Text>Pinguin</Text>
+            <Text>Pinguine</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
@@ -1861,7 +1874,7 @@
     <TEXT>
         <Tag>TXT_KEY_BONUS_PENGUIN_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Penguins[COLOR_REVERT] live along the coasts of South America. They're also found on islands or ice shelves. Penguin eggs can be eaten but there are no permanent human settlements that rely on penguins as food.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1]Penguins, aquatic flightless birds, live south of the equator, with the sole exception of the Galapagos penquin. In size they range from one to 35 kilograms, in height from 30 cm to one meter. They eat fish and are eaten by orcas. They have no fear of humans so the birds and their eggs can be a food source for desperate adventurers.</English>
-        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pinguin[COLOR_REVERT]</German>
+        <German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Pinguine[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BONUS_WHALE</Tag>
@@ -1928,7 +1941,7 @@
         <English>Squash</English>
         <German>
             <Text>Zuchini</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
@@ -1957,7 +1970,7 @@
         <German>
             <Text>Feigenkaktusse</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -1974,7 +1987,7 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Apfelbaum</Text>
+            <Text>Apfelbäume</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
@@ -2084,7 +2097,7 @@
         </French>
         <German>
             <Text>Tomaten</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
@@ -2104,7 +2117,7 @@
         </French>
         <German>
             <Text>Erdnüsse</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
@@ -2119,7 +2132,7 @@
         <English>Lingonberries</English>
         <German>
             <Text>Tundrabeeren</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
@@ -2133,7 +2146,7 @@
         <English>Huckleberries</English>
         <German>
             <Text>Heidelbeeren</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
@@ -2147,7 +2160,7 @@
         <English>Blueberries</English>
         <German>
             <Text>Blaubeeren</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
@@ -2161,7 +2174,7 @@
         <English>Cranberries</English>
         <German>
             <Text>Moosbeeren</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
@@ -2200,7 +2213,7 @@
         <German>
             <Text>Reis</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -2227,7 +2240,7 @@
         <English>Beans</English>
         <German>
             <Text>Bohnen</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
@@ -2264,9 +2277,9 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Bienenstock</Text>
+            <Text>Bienenstöcke</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </German>
         <Italian>
             <Text>Alveare dell'ape</Text>

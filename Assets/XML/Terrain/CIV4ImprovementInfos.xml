@@ -2887,6 +2887,17 @@
                         </YieldIntegerPair>
                     </YieldChanges>
                 </BonusTypeStruct>
+				<BonusTypeStruct>
+                    <BonusType>BONUS_KAUTSCHUK</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_KAUTSCHUK</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
             </BonusTypeStructs>
             <ImprovementPillage/>
             <ImprovementUpgrade>IMPROVEMENT_COLLECTORS_DEPOT</ImprovementUpgrade>
@@ -4949,6 +4960,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_MAPLE_SIRUP</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+				<BonusTypeStruct>
+                    <BonusType>BONUS_KAUTSCHUK</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_KAUTSCHUK</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
