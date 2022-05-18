@@ -17375,5 +17375,39 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_MILK_MAID</Type>
+            <Button>Art/interface/buttons/New_Unit_Buttons/Milkmaid_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Milkmaid_CM.dds</FullLengthIcon>
+            <fScale>0.55</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/Master_Milkmaid/sailor.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Milkmaid/sailor.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_CHEESE_MAKER</Type>
+            <Button>Art/interface/buttons/New_Unit_Buttons/Master_Cheese_Maker_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Cheese_Maker.dds</FullLengthIcon>
+            <fScale>0.55</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/Master_Cheese_Maker/warrior.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Cheese_Maker/warrior.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
     </UnitArtInfos>
 </Civ4ArtDefines>

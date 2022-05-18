@@ -672,4 +672,62 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+	<!-- MILK_MAID -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_MILK_MAID</Tag>
+        <English>Skilled Milk Maid</English>
+        <German>
+            <Text>Fleißige Milchmaid</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MILK_MAID</Tag>
+        <English>Skilled Milk Maid</English>
+        <German>
+            <Text>Fleißige Milchmaid</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_MILK_MAID_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_MILK_MAID_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- CHEESE_MAKER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_CHEESE_MAKER</Tag>
+        <English>Master Cheese Maker</English>
+        <German>
+            <Text>Meister Käsemacher</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CHEESE_MAKER</Tag>
+        <English>Master Cheese Maker</English>
+        <German>
+            <Text>Meister Käsemacher</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_CHEESE_MAKER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_CHEESE_MAKER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>
