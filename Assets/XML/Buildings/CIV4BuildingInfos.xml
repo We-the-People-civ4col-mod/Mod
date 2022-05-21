@@ -1873,7 +1873,7 @@
             <iBombardDefense>0</iBombardDefense>
             <iAsset>100</iAsset>
             <iPower>0</iPower>
-            <iYieldStorage>300</iYieldStorage>
+            <iYieldStorage>0</iYieldStorage>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>1.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
@@ -1890,7 +1890,7 @@
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
-            <iDomesticMarketModifier>250</iDomesticMarketModifier>
+			<iDomesticMarketModifier>250</iDomesticMarketModifier>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
             <DomainFreeExperiences/>
@@ -1898,11 +1898,11 @@
             <PrereqBuildingClasses/>
             <BuildingClassNeededs>
                 <BuildingClassNeeded>
-                    <BuildingClassType>BUILDINGCLASS_CENTRAL_CITY_MARKET</BuildingClassType>
+                    <BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
-                <BuildingClassNeeded>
-                    <BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
+				<BuildingClassNeeded>
+                    <BuildingClassType>BUILDINGCLASS_CENTRAL_CITY_MARKET</BuildingClassType>
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>

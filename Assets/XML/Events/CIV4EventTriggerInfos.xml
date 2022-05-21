@@ -7856,7 +7856,6 @@
                 <BuildingClass>BUILDINGCLASS_MARKET</BuildingClass>
                 <BuildingClass>BUILDINGCLASS_TOWN_MARKET</BuildingClass>
                 <BuildingClass>BUILDINGCLASS_CENTRAL_CITY_MARKET</BuildingClass>
-                <BuildingClass>BUILDINGCLASS_STATUE_GOVERNOR</BuildingClass>
             </BuildingsRequired>
             <iNumBuildings>5</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
@@ -11095,7 +11094,6 @@
                 <BuildingClass>BUILDINGCLASS_MARKET</BuildingClass>
                 <BuildingClass>BUILDINGCLASS_TOWN_MARKET</BuildingClass>
                 <BuildingClass>BUILDINGCLASS_CENTRAL_CITY_MARKET</BuildingClass>
-                <BuildingClass>BUILDINGCLASS_STATUE_GOVERNOR</BuildingClass>
             </BuildingsRequired>
             <iNumBuildings>1</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
