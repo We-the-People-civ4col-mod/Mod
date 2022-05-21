@@ -98,9 +98,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_CORN</Tag>
-        <English>Corn</English>
+        <English>Corn Chamber</English>
         <French>Maïs</French>
-        <German>Getreide</German>
+        <German>Getreidekammer</German>
         <Italian>Corn</Italian>
         <Spanish>Corn</Spanish>
     </TEXT>
@@ -126,7 +126,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_DEFENSE</Tag>
-        <English>TXT_KEY_SPECIALBUILDING_WALLS</English>
+        <English>Fortress</English>
+        <German>
+            <Text>Festung</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_DOCK</Tag>

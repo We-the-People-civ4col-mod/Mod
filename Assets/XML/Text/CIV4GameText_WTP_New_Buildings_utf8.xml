@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text Infos -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<!-- STANDPOST -->
+	<TEXT>
+        <Tag>TXT_KEY_SPECIALBUILDING_STATUE</Tag>
+        <English>Statue</English>
+        <German>
+            <Text>Statue</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<!-- CONFECTIONER -->
+	<TEXT>
+        <Tag>TXT_KEY_SPECIALBUILDING_CONFECTIONER</Tag>
+        <English>Confectioner</English>
+        <German>
+            <Text>Süßwarenhändler</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_HOUSE</Tag>
+        <English>Confectioner's House</English>
+        <German>
+            <Text>Süßwarenhändlerhaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_SHOP</Tag>
+        <English>Confectioner's Shop</English>
+        <German>
+            <Text>Süßwarenhändlerladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_FACTORY</Tag>
+        <English>Confectionery</English>
+        <German>
+            <Text>Süßwarenfabrik</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE</Tag>
+        <English>Confectioner's House</English>
+        <German>
+            <Text>Süßwarenhändlerhaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP</Tag>
+        <English>Confectioner's Shop</English>
+        <German>
+            <Text>Süßwarenhändlerladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY</Tag>
+        <English>Confectionery</English>
+        <German>
+            <Text>Süßwarenfabrik</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>	
+	<!-- LEATHER_PADDER -->
+	<TEXT>
+        <Tag>TXT_KEY_SPECIALBUILDING_LEATHER_PADDER</Tag>
+        <English>Leather Padder</English>
+        <German>
+            <Text>Lederpolsterei</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_HOUSE</Tag>
+        <English>Leather Padder's House</English>
+        <German>
+            <Text>Ledermäntelhaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_SHOP</Tag>
+        <English>Leather Padder's Shop</English>
+        <German>
+            <Text>Ledermmänteladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_FACTORY</Tag>
+        <English>Leather Padding Factory</English>
+        <German>
+            <Text>Ledermmäntelfabrik</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE</Tag>
+        <English>Leather Padder's House</English>
+        <German>
+            <Text>Ledermäntelhaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP</Tag>
+        <English>Leather Padder's Shop</English>
+        <German>
+            <Text>Ledermmänteladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY</Tag>
+        <English>Leather Coat Factory</English>
+        <German>
+            <Text>Ledermmäntelfabrik</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<!-- OIL_TRADER -->
+	<TEXT>
+        <Tag>TXT_KEY_SPECIALBUILDING_OIL_TRADER</Tag>
+        <English>Cooking Oil Trader</English>
+        <German>
+            <Text>Kochölhändler</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_HOUSE</Tag>
+        <English>Cooking Oil Trader's House</English>
+        <German>
+            <Text>Kochölhändlerhaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_SHOP</Tag>
+        <English>Cooking Oil Trader's Shop</English>
+        <German>
+            <Text>Kochölhändlerladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_FACTORY</Tag>
+        <English>Cooking Oil Trader Factory</English>
+        <German>
+            <Text>Kochölhändlerfabrik</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE</Tag>
+        <English>Cooking Oil Trader's House</English>
+        <German>
+            <Text>Kochölhändlerhaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP</Tag>
+        <English>Cooking Oil Trader's Shop</English>
+        <German>
+            <Text>Kochölhändlerladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY</Tag>
+        <English>Cooking Oil Factory</English>
+        <German>
+            <Text>Kochölhändlerfabrik</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>	
+	<!-- PEANUT_ROASTER -->
+	<TEXT>
+        <Tag>TXT_KEY_SPECIALBUILDING_PEANUT_ROASTER</Tag>
+        <English>Peanut Roastery</English>
+        <German>
+            <Text>Erdnusrösterei</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_PEANUT_ROASTER_HOUSE</Tag>
+        <English>Peanut Roaster's House</English>
+        <German>
+            <Text>Erdnusrösterhaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_PEANUT_ROASTER_SHOP</Tag>
+        <English>Peanut Roaster's Shop</English>
+        <German>
+            <Text>Erdnusrösterladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_PEANUT_ROASTER_FACTORY</Tag>
+        <English>Peanut Roastery</English>
+        <German>
+            <Text>Erdnusrösterei</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_HOUSE</Tag>
+        <English>Peanut Roaster's House</English>
+        <German>
+            <Text>Erdnusrösterhaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_SHOP</Tag>
+        <English>Peanut Roaster's Shop</English>
+        <German>
+            <Text>Erdnusrösterladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_FACTORY</Tag>
+        <English>Peanut Roastery</English>
+        <German>
+            <Text>Erdnusrösterei</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<!-- POTTERY -->
+	<TEXT>
+        <Tag>TXT_KEY_SPECIALBUILDING_POTTERY</Tag>
+        <English>Pottery</English>
+        <German>
+            <Text>Töpferei</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_POTTERY_HOUSE</Tag>
+        <English>Potter's House</English>
+        <German>
+            <Text>Töpferhaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_POTTERY_SHOP</Tag>
+        <English>Potter's Shop</English>
+        <German>
+            <Text>Töpferladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_POTTERY_FACTORY</Tag>
+        <English>Pottery</English>
+        <German>
+            <Text>Töpferei</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE</Tag>
+        <English>Potter's House</English>
+        <German>
+            <Text>Töpferhaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POTTERY_SHOP</Tag>
+        <English>Potter's Shop</English>
+        <German>
+            <Text>Töpferladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POTTERY_FACTORY</Tag>
+        <English>Pottery</English>
+        <German>
+            <Text>Töpferei</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<!-- TAILOR -->
+	<TEXT>
+        <Tag>TXT_KEY_SPECIALBUILDING_TAILOR</Tag>
+        <English>Tailor</English>
+        <German>
+            <Text>Schneiderei</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_TAILOR_HOUSE</Tag>
+        <English>Tailor's House</English>
+        <German>
+            <Text>Schneiderhaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TAILOR_SHOP</Tag>
+        <English>Tailor's Shop</English>
+        <German>
+            <Text>Schneiderladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TAILOR_FACTORY</Tag>
+        <English>Clothes Factory</English>
+        <German>
+            <Text>Schneiderei</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE</Tag>
+        <English>Tailor's House</English>
+        <German>
+            <Text>Schneiderhaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAILOR_SHOP</Tag>
+        <English>Tailor's Shop</English>
+        <German>
+            <Text>Schneiderladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAILOR_FACTORY</Tag>
+        <English>Clothes Factory</English>
+        <German>
+            <Text>Schneiderei</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+</Civ4GameText>
