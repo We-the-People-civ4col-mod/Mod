@@ -78,7 +78,37 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
-    </TEXT>	
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 	<!-- LEATHER_PADDER -->
 	<TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_LEATHER_PADDER</Tag>
@@ -143,6 +173,36 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 	<!-- OIL_TRADER -->
 	<TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_OIL_TRADER</Tag>
@@ -206,7 +266,37 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
-    </TEXT>	
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 	<!-- PEANUT_ROASTER -->
 	<TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_PEANUT_ROASTER</Tag>
@@ -270,6 +360,36 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_HOUSE_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_HOUSE_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_SHOP_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_SHOP_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_FACTORY_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_FACTORY_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
     </TEXT>
 	<!-- POTTERY -->
 	<TEXT>
@@ -335,6 +455,36 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_POTTERY_SHOP_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_POTTERY_SHOP_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 	<!-- TAILOR -->
 	<TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_TAILOR</Tag>
@@ -398,5 +548,35 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_TAILOR_SHOP_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TAILOR_SHOP_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
     </TEXT>
 </Civ4GameText>

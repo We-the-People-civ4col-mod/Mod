@@ -2461,8 +2461,8 @@
             <bAnimated>0</bAnimated>
             <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Confectioner_House_City.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>1.2</fScale>
-            <fInterfaceScale>0.6</fInterfaceScale>
+            <fScale>0.45</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Confectioner/roesterei_house.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Confectioner_House_Button.dds</Button>
@@ -2473,8 +2473,8 @@
             <bAnimated>0</bAnimated>
             <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Confectioner_Shop_City.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>1.2</fScale>
-            <fInterfaceScale>0.6</fInterfaceScale>
+            <fScale>0.45</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Confectioner/roesterei.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Confectioner_Shop_Button.dds</Button>
@@ -2485,8 +2485,8 @@
             <bAnimated>0</bAnimated>
             <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Confectionery_City.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>1.2</fScale>
-            <fInterfaceScale>0.6</fInterfaceScale>
+            <fScale>0.45</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Confectioner/roesterei_fabrik.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Confectionery_Button.dds</Button>
@@ -2535,7 +2535,7 @@
             <bAnimated>0</bAnimated>
             <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Oil_Trader_House_City.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>1.2</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Oil_Trader/Saline_small.nif</NIF>
             <KFM/>
@@ -2547,7 +2547,7 @@
             <bAnimated>0</bAnimated>
             <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Oil_Trader_Shop_City.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>1.2</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Oil_Trader/Saline_middle.nif</NIF>
             <KFM/>
@@ -2559,7 +2559,7 @@
             <bAnimated>0</bAnimated>
             <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Oil_Factory_City.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>1.2</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Oil_Trader/Saline_big.nif</NIF>
             <KFM/>
