@@ -401,7 +401,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_PEARLS_HUNTER</Type>
-            <Button>,Art/colonization_atlas_units.dds,2,1</Button>
+            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Pearl_Diver_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Pearls_Hunter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
@@ -541,7 +541,7 @@
             <Type>ART_DEF_UNIT_ROPES_MAKER</Type>
             <Button>,Art/colonization_atlas_units.dds,1,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/rope_maker.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <fScale>0.52</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Rope_Maker/Indentured_Servant.nif</NIF>
             <KFM>Art/Units/Indentured_Servant/Indentured_Servant.kfm</KFM>
@@ -910,7 +910,7 @@
             <Type>ART_DEF_UNIT_STATESMAN</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Elder_Statesman.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Elder_Statesman/Elder_Statesman.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
@@ -927,7 +927,7 @@
             <Type>ART_DEF_UNIT_EMIGRANT</Type>
             <Button>,Art/colonization_atlas_units.dds,3,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/emigrant.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/european_emigrant/Elder_Statesman.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
@@ -12378,7 +12378,7 @@
             <Type>ART_DEF_UNIT_SCOUT</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Scout_Seasoned.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Seasoned_Scout/Seasoned_Scout.nif</NIF>
             <KFM>Art/Units/Seasoned_Scout/Seasoned_Scout.kfm</KFM>
@@ -12548,7 +12548,7 @@
             <Type>ART_DEF_UNIT_BUCCANNEER</Type>
             <Button>,Art/colonization_atlas_units.dds,7,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Buccaneer.dds</FullLengthIcon>
-            <fScale>0.50</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Buccaneer/Imperial_Soldier.nif</NIF>
             <KFM>Art/Units/Special_Military/Buccaneer/Imperial_Soldier.kfm</KFM>
@@ -12565,7 +12565,7 @@
             <Type>ART_DEF_UNIT_SLAVE_HUNTER</Type>
             <Button>,Art/colonization_atlas_units.dds,8,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Slave_Hunter.dds</FullLengthIcon>
-            <fScale>0.50</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Slave_Hunter/Indentured_Servant.nif</NIF>
             <KFM>Art/Units/Special_Military/Slave_Hunter/Indentured_Servant.kfm</KFM>
@@ -12787,7 +12787,7 @@
             <Button>,Art/colonization_atlas_military.dds,1,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Great_Admiral.dds</FullLengthIcon>
             <fScale>0.50</fScale>
-            <fInterfaceScale>1.0</fInterfaceScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Great_Admiral/Great_General.nif</NIF>
             <KFM>Art/Units/Special_Military/Great_Admiral/Great_General.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -12804,7 +12804,7 @@
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,12</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Great_General.dds</FullLengthIcon>
             <fScale>0.50</fScale>
-            <fInterfaceScale>1.0</fInterfaceScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Great_General/Great_General.nif</NIF>
             <KFM>Art/Units/Special_Military/Great_Admiral/Great_General.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -16373,7 +16373,7 @@
             <Type>ART_DEF_UNIT_REVOLTING_SLAVE</Type>
             <Button>,Art/colonization_atlas_units.dds,1,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/CM_revolting_slave.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/special_military/revolting_Slave/infantry.nif</NIF>
             <KFM>Art/Units/special_military/revolting_slave/infantry.kfm</KFM>
@@ -17018,7 +17018,7 @@
             <Type>ART_DEF_UNIT_COCHINEAL_COLLECTOR</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Cochineal_Collector_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Cochineal_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.5</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Cochineal_Collector/Free_Colonist.nif</NIF>
             <KFM>Art/Units/Settler/Expert_Cochineal_Collector/Free_Colonist.kfm</KFM>
@@ -17260,7 +17260,7 @@
             <Type>ART_DEF_UNIT_FRUITS_PICKER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Fruits_Collector_button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Fruits_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.5</fScale>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Fruits_Collector/mongol_settler_b_fx.nif</NIF>
             <KFM>Art/Units/Settler/Expert_Fruits_Collector/mongol_settler_b.kfm</KFM>

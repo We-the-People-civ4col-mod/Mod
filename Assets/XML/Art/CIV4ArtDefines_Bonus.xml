@@ -1076,7 +1076,7 @@
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_CHERRIES</Type>
             <fScale>4.0</fScale>
-            <fInterfaceScale>1.8</fInterfaceScale>
+            <fInterfaceScale>6</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Cherries/Cherry_Trees.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/Cherries_Button.dds</Button>
