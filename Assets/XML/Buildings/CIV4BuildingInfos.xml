@@ -1826,8 +1826,8 @@
         <BuildingInfo>
             <Type>BUILDING_STATUE_GOVERNOR</Type>
             <BuildingClass>BUILDINGCLASS_STATUE_GOVERNOR</BuildingClass>
-            <SpecialBuildingType>SPECIALBUILDING_TRADE</SpecialBuildingType>
-            <iSpecialBuildingPriority>3</iSpecialBuildingPriority>
+            <SpecialBuildingType>SPECIALBUILDING_STATUE</SpecialBuildingType>
+            <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
             <Description>TXT_KEY_BUILDING_STATUE_GOVERNOR</Description>
             <Civilopedia>TXT_KEY_BUILDING_STATUE_GOVERNOR_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_BUILDING_STATUE_GOVERNOR_STRATEGY</Strategy>
