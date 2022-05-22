@@ -2514,6 +2514,45 @@
             <ExpertUnit>UNITCLASS_TOBACCONIST</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
+		<ProfessionInfo>
+            <Type>PROFESSION_YERBA_TRADER</Type>
+            <Description>TXT_KEY_PROFESSION_YERBA_TRADER</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_YERBA_TRADER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_YERBA_TRADER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_YERBA_TRADER_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_CIGARS</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>300</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_YERBA_TEA</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>YIELD_YERBA_LEAVES</YieldType>
+            </YieldsConsumed>
+            <Button>Art/interface/buttons/New_Profession_Buttons/Yerba_Tea_Trader.dds</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_YERBA_TRADER</ExpertUnit>
+            <iLbDLearnLevel>2</iLbDLearnLevel>
+        </ProfessionInfo>
         <ProfessionInfo>
             <Type>PROFESSION_ROPES_MAKER</Type>
             <Description>TXT_KEY_PROFESSION_ROPES_MAKER</Description>

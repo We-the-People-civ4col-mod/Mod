@@ -469,6 +469,35 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+	<!-- YERBA_TRADER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_YERBA_TRADER</Tag>
+        <English>Master Yerba Tea Trader</English>
+        <German>
+            <Text>Meister Yerbateehändler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_YERBA_TRADER</Tag>
+        <English>Master Yerba Tea Trader</English>
+        <German>
+            <Text>Meister Yerbateehändler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_YERBA_TRADER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_YERBA_TRADER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 	<!-- OIL_TRADER -->
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_OIL_TRADER</Tag>

@@ -520,6 +520,23 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_YERBA_TRADER</Type>
+            <Button>Art/interface/buttons/New_Unit_Buttons/Master_Yerba_Tea_Trader_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Yerba_Tea_Trader_Europe.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/Master_Yerba_Tea_Trader/maceman.nif</NIF>
+            <KFM>Art/Units/Settler/maceman/maceman.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SAILCLOTH_MAKER</Type>
             <Button>,Art/colonization_atlas_units.dds,2,4</Button>

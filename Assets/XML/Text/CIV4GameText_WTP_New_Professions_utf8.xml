@@ -673,7 +673,7 @@
 	<TEXT>
         <Tag>TXT_KEY_PROFESSION_CLAY_MINER</Tag>
         <English>
-            <Text>Clay Miner:Clay Miner</Text>
+            <Text>Clay Miner:Clay Miners</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -700,7 +700,7 @@
 	<TEXT>
         <Tag>TXT_KEY_PROFESSION_COAL_MINER</Tag>
         <English>
-            <Text>Coal Miner:Coal Miner</Text>
+            <Text>Coal Miner:Coal Miners</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -721,6 +721,33 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COAL_MINER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_PROFESSION_YERBA_TRADER</Tag>
+        <English>
+            <Text>Yerba Tea Trader:Yerba Tea Traders</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Yerbateehändler:Yerbateehändler</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_YERBA_TRADER_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_YERBA_TRADER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_YERBA_TRADER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>

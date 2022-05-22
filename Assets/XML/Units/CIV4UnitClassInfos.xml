@@ -326,6 +326,11 @@
             <Description>TXT_KEY_UNITCLASS_TOBACCONIST</Description>
             <DefaultUnit>UNIT_TOBACCONIST</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_YERBA_TRADER</Type>
+            <Description>TXT_KEY_UNITCLASS_YERBA_TRADER</Description>
+            <DefaultUnit>UNIT_YERBA_TRADER</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_ROPES_MAKER</Type>
             <Description>TXT_KEY_UNITCLASS_ROPES_MAKER</Description>
