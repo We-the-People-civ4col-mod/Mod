@@ -1012,24 +1012,24 @@
     </TEXT>	
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_DYER</Tag>
-        <English>Cloth Dyer:Cloth Dyers</English>
+        <English>Cloth Dyer (Indigo):Cloth Dyers (Indigo)</English>
         <French>
-            <Text>Teinturier:Teinturiers</Text>
+            <Text>Teinturier (Indigo):Teinturiers (Indigo)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-	  <German>
-            <Text>Leinenfärber:Leinenfärber</Text>
+        <German>
+            <Text>Leinenfärber (Indigo):Leinenfärber (Indigo)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Cloth Dyer:Cloth Dyers</Text>
+            <Text>Cloth Dyer (Indigo):Cloth Dyers (Indigo)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Cloth Dyer:Cloth Dyers</Text>
+            <Text>Cloth Dyer (Indigo):Cloth Dyers (Indigo)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -1052,24 +1052,24 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WOOL_DYER</Tag>
-        <English>Wool Dyer:Wool Dyers</English>
+        <English>Wool Dyer (Indigo):Wool Dyers (Indigo)</English>
         <French>
-            <Text>Teinturier:Teinturiers</Text>
+            <Text>Teinturier (Indigo):Teinturiers (Indigo)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Wollfärber:Wollfärber</Text>
+            <Text>Wollfärber (Indigo):Wollfärber (Indigo)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Wool Dyer:Wool Dyers</Text>
+            <Text>Wool Dyer (Indigo):Wool Dyers (Indigo)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Wool Dyer:Wool Dyers</Text>
+            <Text>Wool Dyer (Indigo):Wool Dyers (Indigo)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>

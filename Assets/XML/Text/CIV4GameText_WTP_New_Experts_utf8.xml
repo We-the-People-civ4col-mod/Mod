@@ -411,6 +411,35 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+	<!-- KAUTSCHUK_COLLECTOR -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_KAUTSCHUK_COLLECTOR</Tag>
+        <English>Expert Kautschuk Collector</English>
+        <German>
+            <Text>Erfahrener Kautschuksammler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR</Tag>
+        <English>Expert Kautschuk Collector</English>
+        <German>
+            <Text>Erfahrener Kautschuksammler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 	<!-- CONFECTIONER -->
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_CONFECTIONER</Tag>

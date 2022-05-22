@@ -151,6 +151,11 @@
             <Description>TXT_KEY_UNITCLASS_MAPLE_SIRUP_COLLECTOR</Description>
             <DefaultUnit>UNIT_MAPLE_SIRUP_COLLECTOR</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_KAUTSCHUK_COLLECTOR</Type>
+            <Description>TXT_KEY_UNITCLASS_KAUTSCHUK_COLLECTOR</Description>
+            <DefaultUnit>UNIT_MAPLE_KAUTSCHUK</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_FARMER</Type>
             <Description>TXT_KEY_UNITCLASS_FARMER</Description>
