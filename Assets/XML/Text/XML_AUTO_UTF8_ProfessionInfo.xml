@@ -905,7 +905,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_DISTILLER</Tag>
         <English>
-            <Text>Distiller:Distillers</Text>
+            <Text>Distiller (Rum):Distillers (Rum)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -3028,14 +3028,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_TANNER</Tag>
-        <English>Tanner:Tanners</English>
+        <English>Tanner (Cattle Hides):Tanners (Cattle Hides)</English>
         <French>
             <Text>Tanneur:Tanneurs</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Ledergerber:Ledergerber</Text>
+            <Text>Ledergerber (Rinderhäute):Ledergerber (Rinderhäute)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>

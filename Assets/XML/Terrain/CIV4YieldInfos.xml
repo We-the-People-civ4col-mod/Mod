@@ -2718,6 +2718,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,15</Icon>
+			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Tobacco_Yerba.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,4,2</HighlightIcon>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,2</Button>
         </YieldInfo>
@@ -2759,6 +2760,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Yerba_Tea_Goods_Icon.dds</Icon>
+			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Tobacco_Yerba.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,4,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Yerba_Tea_Goods_Button.dds</Button>
         </YieldInfo>			

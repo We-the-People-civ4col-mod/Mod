@@ -479,13 +479,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CIGAR_FACTORY</Tag>
-        <English>Cigar Factory</English>
+        <English>Cigar and Tea Factory</English>
         <French>
             <Text>Usine de cigares:Usines de cigares</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Zigarrenfabrik</German>
+        <German>Zigarren- und Teefabrik</German>
         <Italian>
             <Text>Fabbrica di sigari</Text>
             <Gender>Female</Gender>
@@ -2388,13 +2388,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOBACCONIST_HOUSE</Tag>
-        <English>Tobacconist's House</English>
+        <English>Tobacco and Yerba House</English>
         <French>
             <Text>Atelier du cigarier:Ateliers de cigarier</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Tabakhaus</German>
+        <German>Tabak- und Yerbahaus</German>
         <Italian>
             <Text>Casa del tabaccaio</Text>
             <Gender>Female</Gender>
@@ -2424,13 +2424,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOBACCONIST_SHOP</Tag>
-        <English>Tobacconist's Shop</English>
+        <English>Tobacco and Yerba Shop</English>
         <French>
             <Text>Boutique de tabac:Boutiques de tabac</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Tabakwarenbetrieb</German>
+        <German>Tabakwaren- und Teewarenbetrieb</German>
         <Italian>
             <Text>Negozio del tabaccaio</Text>
             <Gender>Male</Gender>

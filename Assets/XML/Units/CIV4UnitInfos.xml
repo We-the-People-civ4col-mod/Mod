@@ -25480,6 +25480,14 @@
                     <YieldType>YIELD_FURNITURE</YieldType>
                     <iYieldMod>100</iYieldMod>
                 </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_PADDED_FURNITURE</YieldType>
+                    <iYieldMod>100</iYieldMod>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_POTTERY</YieldType>
+                    <iYieldMod>50</iYieldMod>
+                </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
                 <YieldDemand>
@@ -31185,15 +31193,15 @@
             <DomainMods/>
             <YieldModifiers>
 			    <YieldModifier>
-                    <YieldType>YIELD_ROASTED_PEANUTS</YieldType>
+                    <YieldType>YIELD_POTTERY</YieldType>
                     <iYieldMod>100</iYieldMod>
                 </YieldModifier>
                 <YieldModifier>
-                    <YieldType>YIELD_COCOA</YieldType>
+                    <YieldType>YIELD_FURNITURE</YieldType>
                     <iYieldMod>50</iYieldMod>
                 </YieldModifier>
                 <YieldModifier>
-                    <YieldType>YIELD_COFFEE</YieldType>
+                    <YieldType>YIELD_PADDED_FURNITURE</YieldType>
                     <iYieldMod>50</iYieldMod>
                 </YieldModifier>
             </YieldModifiers>
@@ -31253,11 +31261,11 @@
             </YieldDemands>
             <YieldChanges>
                 <YieldChange>
-                    <YieldType>YIELD_VANILLA</YieldType>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_SPICES</YieldType>
+                    <YieldType>YIELD_PEAT</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
             </YieldChanges>

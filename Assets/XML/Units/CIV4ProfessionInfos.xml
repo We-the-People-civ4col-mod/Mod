@@ -2042,6 +2042,46 @@
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
 		<ProfessionInfo>
+            <Type>PROFESSION_WOOL_DYER</Type>
+            <Description>TXT_KEY_PROFESSION_WOOL_DYER</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_DYER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_DYER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_DYER_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_COLOURED_CLOTH</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>300</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_COLOURED_WOOL_CLOTH</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>YIELD_WOOL_CLOTH</YieldType>
+                <YieldType>YIELD_INDIGO</YieldType>
+            </YieldsConsumed>
+            <Button>Art/interface/buttons/New_Profession_Buttons/Wool_Cloth_Dyer.dds</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_DYER</ExpertUnit>
+            <iLbDLearnLevel>2</iLbDLearnLevel>
+        </ProfessionInfo>
+		<ProfessionInfo>
             <Type>PROFESSION_DYER_LOGWOOD</Type>
             <Description>TXT_KEY_PROFESSION_DYER_LOGWOOD</Description>
             <Civilopedia>TXT_KEY_PROFESSION_DYER_PEDIA</Civilopedia>
@@ -2077,6 +2117,46 @@
                 <YieldType>YIELD_LOGWOOD</YieldType>
             </YieldsConsumed>
             <Button>,Art/colonization_atlas_professions_bonus.dds,5,5</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_DYER</ExpertUnit>
+            <iLbDLearnLevel>2</iLbDLearnLevel>
+        </ProfessionInfo>
+		<ProfessionInfo>
+            <Type>PROFESSION_WOOL_DYER_LOGWOOD</Type>
+            <Description>TXT_KEY_PROFESSION_WOOL_DYER_LOGWOOD</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_DYER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_DYER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_DYER_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_COLOURED_CLOTH</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>300</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_COLOURED_WOOL_CLOTH</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>YIELD_WOOL_CLOTH</YieldType>
+                <YieldType>YIELD_LOGWOOD</YieldType>
+            </YieldsConsumed>
+            <Button>Art/interface/buttons/New_Profession_Buttons/Wool_Cloth_Dyer.dds</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_DYER</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
@@ -2121,86 +2201,6 @@
             <ExpertUnit>UNITCLASS_DYER</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
-        <ProfessionInfo>
-            <Type>PROFESSION_WOOL_DYER</Type>
-            <Description>TXT_KEY_PROFESSION_WOOL_DYER</Description>
-            <Civilopedia>TXT_KEY_PROFESSION_DYER_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_PROFESSION_DYER_STRATEGY</Strategy>
-            <Help>TXT_KEY_PROFESSION_DYER_HELP</Help>
-            <Combat>NONE</Combat>
-            <DefaultUnitAI>NONE</DefaultUnitAI>
-            <SpecialBuilding>SPECIALBUILDING_COLOURED_CLOTH</SpecialBuilding>
-            <bWorkPlot>0</bWorkPlot>
-            <bCitizen>1</bCitizen>
-            <bWater>0</bWater>
-            <bScout>0</bScout>
-            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
-            <bCityDefender>0</bCityDefender>
-            <bCanFound>0</bCanFound>
-            <bUnarmed>0</bUnarmed>
-            <bNoDefensiveBonus>0</bNoDefensiveBonus>
-            <iCombatChange>0</iCombatChange>
-            <iMovesChange>0</iMovesChange>
-            <bMoveIntoPeak>0</bMoveIntoPeak>
-            <iWorkRate>0</iWorkRate>
-            <iMissionaryRate>0</iMissionaryRate>
-            <iNativeTradeRate>0</iNativeTradeRate>
-            <iPower>0</iPower>
-            <iAsset>300</iAsset>
-            <YieldEquipedNums/>
-            <FreePromotions/>
-            <YieldsProduced>
-                <YieldType>YIELD_COLOURED_CLOTH</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>YIELD_WOOL_CLOTH</YieldType>
-                <YieldType>YIELD_INDIGO</YieldType>
-            </YieldsConsumed>
-            <Button>,Art/colonization_atlas_professions_bonus.dds,5,5</Button>
-            <bUseLbD>1</bUseLbD>
-            <ExpertUnit>UNITCLASS_DYER</ExpertUnit>
-            <iLbDLearnLevel>2</iLbDLearnLevel>
-        </ProfessionInfo>
-		<ProfessionInfo>
-            <Type>PROFESSION_WOOL_DYER_LOGWOOD</Type>
-            <Description>TXT_KEY_PROFESSION_WOOL_DYER_LOGWOOD</Description>
-            <Civilopedia>TXT_KEY_PROFESSION_DYER_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_PROFESSION_DYER_STRATEGY</Strategy>
-            <Help>TXT_KEY_PROFESSION_DYER_HELP</Help>
-            <Combat>NONE</Combat>
-            <DefaultUnitAI>NONE</DefaultUnitAI>
-            <SpecialBuilding>SPECIALBUILDING_COLOURED_CLOTH</SpecialBuilding>
-            <bWorkPlot>0</bWorkPlot>
-            <bCitizen>1</bCitizen>
-            <bWater>0</bWater>
-            <bScout>0</bScout>
-            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
-            <bCityDefender>0</bCityDefender>
-            <bCanFound>0</bCanFound>
-            <bUnarmed>0</bUnarmed>
-            <bNoDefensiveBonus>0</bNoDefensiveBonus>
-            <iCombatChange>0</iCombatChange>
-            <iMovesChange>0</iMovesChange>
-            <bMoveIntoPeak>0</bMoveIntoPeak>
-            <iWorkRate>0</iWorkRate>
-            <iMissionaryRate>0</iMissionaryRate>
-            <iNativeTradeRate>0</iNativeTradeRate>
-            <iPower>0</iPower>
-            <iAsset>300</iAsset>
-            <YieldEquipedNums/>
-            <FreePromotions/>
-            <YieldsProduced>
-                <YieldType>YIELD_COLOURED_CLOTH</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>YIELD_WOOL_CLOTH</YieldType>
-                <YieldType>YIELD_LOGWOOD</YieldType>
-            </YieldsConsumed>
-            <Button>,Art/colonization_atlas_professions_bonus.dds,5,5</Button>
-            <bUseLbD>1</bUseLbD>
-            <ExpertUnit>UNITCLASS_DYER</ExpertUnit>
-            <iLbDLearnLevel>2</iLbDLearnLevel>
-        </ProfessionInfo>
 		<ProfessionInfo>
             <Type>PROFESSION_WOOL_DYER_COCHINEAL</Type>
             <Description>TXT_KEY_PROFESSION_WOOL_DYER_COCHINEAL</Description>
@@ -2230,13 +2230,13 @@
             <YieldEquipedNums/>
             <FreePromotions/>
             <YieldsProduced>
-                <YieldType>YIELD_COLOURED_CLOTH</YieldType>
+                <YieldType>YIELD_COLOURED_WOOL_CLOTH</YieldType>
             </YieldsProduced>
             <YieldsConsumed>
                 <YieldType>YIELD_WOOL_CLOTH</YieldType>
                 <YieldType>YIELD_COCHINEAL</YieldType>
             </YieldsConsumed>
-            <Button>,Art/colonization_atlas_professions_bonus.dds,5,5</Button>
+            <Button>Art/interface/buttons/New_Profession_Buttons/Wool_Cloth_Dyer.dds</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_DYER</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
@@ -2358,6 +2358,45 @@
             <ExpertUnit>UNITCLASS_TANNER</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
+		<ProfessionInfo>
+            <Type>PROFESSION_TANNER_PIG</Type>
+            <Description>TXT_KEY_PROFESSION_TANNER_PIG</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_TANNER_PIG_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_TANNER_PIG_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_TANNER_PIG_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_LEATHER</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>300</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_PIG_LEATHER</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>YIELD_PIG_SKIN</YieldType>
+            </YieldsConsumed>
+            <Button>Art/interface/buttons/New_Profession_Buttons/Pig_Leather_Tanner.dds</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_TANNER</ExpertUnit>
+            <iLbDLearnLevel>2</iLbDLearnLevel>
+        </ProfessionInfo>
         <ProfessionInfo>
             <Type>PROFESSION_BREWER</Type>
             <Description>TXT_KEY_PROFESSION_BREWER</Description>
@@ -2436,6 +2475,45 @@
             <ExpertUnit>UNITCLASS_DISTILLER</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
+		<ProfessionInfo>
+            <Type>PROFESSION_HOOCH_DISTILLER</Type>
+            <Description>TXT_KEY_PROFESSION_HOOCH_DISTILLER</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_HOOCH_DISTILLER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_HOOCH_DISTILLER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_HOOCH_DISTILLER_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_RUM</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>300</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_HOOCH</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>YIELD_FRUITS</YieldType>
+            </YieldsConsumed>
+            <Button>Art/interface/buttons/New_Profession_Buttons/Hooch_Distiller.dds</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_DISTILLER</ExpertUnit>
+            <iLbDLearnLevel>2</iLbDLearnLevel>
+        </ProfessionInfo>
         <ProfessionInfo>
             <Type>PROFESSION_WINE_MAKER</Type>
             <Description>TXT_KEY_PROFESSION_WINE_MAKER</Description>
@@ -2473,6 +2551,84 @@
             <Button>,Art/colonization_atlas_professions_bonus.dds,2,5</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_WINE_MAKER</ExpertUnit>
+            <iLbDLearnLevel>2</iLbDLearnLevel>
+        </ProfessionInfo>
+		<ProfessionInfo>
+            <Type>PROFESSION_POTTER</Type>
+            <Description>TXT_KEY_PROFESSION_POTTER</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_POTTER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_POTTER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_POTTER_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_POTTERY</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>300</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_POTTERY</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>YIELD_CLAY</YieldType>
+            </YieldsConsumed>
+            <Button>Art/interface/buttons/New_Profession_Buttons/Potter.dds</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_POTTER</ExpertUnit>
+            <iLbDLearnLevel>2</iLbDLearnLevel>
+        </ProfessionInfo>
+		<ProfessionInfo>
+            <Type>PROFESSION_PEANUT_ROASTER</Type>
+            <Description>TXT_KEY_PROFESSION_PEANUT_ROASTER</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_PEANUT_ROASTER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_PEANUT_ROASTER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_PEANUT_ROASTER_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_PEANUT_ROASTER</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>300</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_ROASTED_PEANUTS</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>YIELD_PEANUTS</YieldType>
+            </YieldsConsumed>
+            <Button>Art/interface/buttons/New_Profession_Buttons/Peanut_Trader.dds</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_PEANUT_ROASTER</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
@@ -2705,6 +2861,46 @@
                 <YieldType>YIELD_VALUABLE_WOOD</YieldType>
             </YieldsConsumed>
             <Button>,Art/colonization_atlas_professions_bonus.dds,4,6</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_FURNITURE_MAKER</ExpertUnit>
+            <iLbDLearnLevel>3</iLbDLearnLevel>
+        </ProfessionInfo>
+		<ProfessionInfo>
+            <Type>PROFESSION_PADDED_FURNITURE_MAKER</Type>
+            <Description>TXT_KEY_PROFESSION_PADDED_FURNITURE_MAKER</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_PADDED_FURNITURE_MAKER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_PADDED_FURNITURE_MAKER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_PADDED_FURNITURE_MAKER_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_FURNITURE</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>300</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_PADDED_FURNITURE</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+				<YieldType>YIELD_DOWNS</YieldType>
+            </YieldsConsumed>
+            <Button>Art/interface/buttons/New_Profession_Buttons/Padded_Furntiture_Maker.dds</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_FURNITURE_MAKER</ExpertUnit>
             <iLbDLearnLevel>3</iLbDLearnLevel>

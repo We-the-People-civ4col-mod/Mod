@@ -4172,7 +4172,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -5383,7 +5383,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -5964,7 +5964,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -6450,7 +6450,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -8431,7 +8431,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
