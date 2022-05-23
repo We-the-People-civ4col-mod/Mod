@@ -6279,11 +6279,15 @@
             </YieldDemands>
             <YieldChanges>
                 <YieldChange>
-                    <YieldType>YIELD_LUMBER</YieldType>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                    <YieldType>YIELD_COAL</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+				<YieldChange>
+                    <YieldType>YIELD_SALT</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
@@ -6293,11 +6297,15 @@
             </YieldChanges>
             <BonusYieldChanges>
                 <BonusYieldChange>
-                    <YieldType>YIELD_LUMBER</YieldType>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iChange>1</iChange>
                 </BonusYieldChange>
                 <BonusYieldChange>
-                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                    <YieldType>YIELD_COAL</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+				<BonusYieldChange>
+                    <YieldType>YIELD_SALT</YieldType>
                     <iChange>1</iChange>
                 </BonusYieldChange>
                 <BonusYieldChange>
@@ -10317,11 +10325,11 @@
                     <iChange>3</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_COTTON</YieldType>
+                    <YieldType>YIELD_LUMBER</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -10331,11 +10339,11 @@
                     <iChange>2</iChange>
                 </BonusYieldChange>
                 <BonusYieldChange>
-                    <YieldType>YIELD_COTTON</YieldType>
+                    <YieldType>YIELD_LUMBER</YieldType>
                     <iChange>1</iChange>
                 </BonusYieldChange>
                 <BonusYieldChange>
-                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
                     <iChange>1</iChange>
                 </BonusYieldChange>
             </BonusYieldChanges>
@@ -22956,6 +22964,10 @@
                     <YieldType>YIELD_LEATHER</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
+				<YieldChange>
+                    <YieldType>YIELD_PIG_LEATHER</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
             </YieldChanges>
             <BonusYieldChanges/>
             <bLandYieldChanges>1</bLandYieldChanges>
@@ -24445,11 +24457,11 @@
             <DomainMods/>
             <YieldModifiers>
                 <YieldModifier>
-                    <YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+                    <YieldType>YIELD_EVERYDAY_CLOTHES</YieldType>
                     <iYieldMod>100</iYieldMod>
                 </YieldModifier>
 				<YieldModifier>
-                    <YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+                    <YieldType>YIELD_FESTIVE_CLOTHES</YieldType>
                     <iYieldMod>100</iYieldMod>
                 </YieldModifier>
             </YieldModifiers>
@@ -25483,10 +25495,6 @@
 				<YieldModifier>
                     <YieldType>YIELD_PADDED_FURNITURE</YieldType>
                     <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-				<YieldModifier>
-                    <YieldType>YIELD_POTTERY</YieldType>
-                    <iYieldMod>50</iYieldMod>
                 </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
@@ -28592,6 +28600,10 @@
                     <YieldType>YIELD_COLOURED_CLOTH</YieldType>
                     <iYieldMod>100</iYieldMod>
                 </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_COLOURED_WOOL_CLOTH</YieldType>
+                    <iYieldMod>100</iYieldMod>
+                </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
                 <YieldDemand>
@@ -28654,10 +28666,6 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_CLOTH</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_SAILCLOTH</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -29632,14 +29640,6 @@
                     <YieldType>YIELD_ROASTED_PEANUTS</YieldType>
                     <iYieldMod>100</iYieldMod>
                 </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_COCOA</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_COFFEE</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
                 <YieldDemand>
@@ -29697,11 +29697,11 @@
             </YieldDemands>
             <YieldChanges>
                 <YieldChange>
-                    <YieldType>YIELD_VANILLA</YieldType>
+                    <YieldType>YIELD_COFFEE</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_SPICES</YieldType>
+                    <YieldType>YIELD_COCOA</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -30156,10 +30156,6 @@
                     <YieldType>YIELD_MILK</YieldType>
                     <iYieldMod>100</iYieldMod>
                 </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_CHEESE</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
                 <YieldDemand>
@@ -30217,11 +30213,7 @@
             </YieldDemands>
             <YieldChanges>
                 <YieldChange>
-                    <YieldType>YIELD_FOOD</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_GRAPES</YieldType>
+                    <YieldType>YIELD_CHEESE</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -30676,10 +30668,6 @@
                     <YieldType>YIELD_CHEESE</YieldType>
                     <iYieldMod>100</iYieldMod>
                 </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_MILK</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
                 <YieldDemand>
@@ -30737,11 +30725,7 @@
             </YieldDemands>
             <YieldChanges>
                 <YieldChange>
-                    <YieldType>YIELD_BEER</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_WINE</YieldType>
+                    <YieldType>YIELD_MILK</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -31196,14 +31180,6 @@
                     <YieldType>YIELD_POTTERY</YieldType>
                     <iYieldMod>100</iYieldMod>
                 </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_FURNITURE</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_PADDED_FURNITURE</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
                 <YieldDemand>
@@ -31262,10 +31238,6 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_CLAY</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_PEAT</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -31974,7 +31946,7 @@
                 </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
-		 <UnitInfo>
+		<UnitInfo>
             <Type>UNIT_CONFECTIONER</Type>
             <Class>UNITCLASS_CONFECTIONER</Class>
             <UniqueNames/>
@@ -32333,6 +32305,526 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_CONFECTIONER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SCOUT</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_SCOUT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>3</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_TOWN_GUARD_ORDINARY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>3</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_COLONIAL_MILITIA</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>2</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_CAVALRY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>3</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_LINE_INFANTRY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>2</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_DRAGOON</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+				<UnitMeshGroups>
+					<ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
+					<fMaxSpeed>1.75</fMaxSpeed>
+					<fPadTime>1</fPadTime>
+					<iMeleeWaveSize>4</iMeleeWaveSize>
+					<iRangedWaveSize>0</iRangedWaveSize>
+					<UnitMeshGroup>
+						<iRequired>2</iRequired>
+						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_LIGHT_ARTILLERY</ArtDefineTag>
+					</UnitMeshGroup>
+				</UnitMeshGroups>
+				<UnitMeshGroups>
+					<ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
+					<fMaxSpeed>1.75</fMaxSpeed>
+					<fPadTime>1</fPadTime>
+					<iMeleeWaveSize>4</iMeleeWaveSize>
+					<iRangedWaveSize>0</iRangedWaveSize>
+					<UnitMeshGroup>
+						<iRequired>2</iRequired>
+						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_ARTILLERY</ArtDefineTag>
+					</UnitMeshGroup>
+				</UnitMeshGroups>				
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_PIONEER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+            </ProfessionMeshGroups>
+            <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+            <HotKey/>
+            <bAltDown>0</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>0</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <FreePromotions/>
+            <LeaderPromotion>NONE</LeaderPromotion>
+            <iLeaderExperience>0</iLeaderExperience>
+            <ProfessionsNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_HALBERDIER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_CAVALRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_DRAGOON</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_ROYAL_ARTILLERY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+            </ProfessionsNotAllowed>
+        </UnitInfo>
+		<UnitInfo>
+            <Type>UNIT_HOUSEHOLD_TRADER</Type>
+            <Class>UNITCLASS_HOUSEHOLD_TRADER</Class>
+            <UniqueNames/>
+            <Special>NONE</Special>
+            <Capture>NONE</Capture>
+            <Combat>NONE</Combat>
+            <Domain>DOMAIN_LAND</Domain>
+            <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+            <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <Invisible>NONE</Invisible>
+            <SeeInvisible>NONE</SeeInvisible>
+            <Description>TXT_KEY_UNIT_HOUSEHOLD_TRADER</Description>
+            <Civilopedia>TXT_KEY_UNIT_HOUSEHOLD_TRADER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_HOUSEHOLD_TRADER_STRATEGY</Strategy>
+            <iTeachLevel>2</iTeachLevel>
+            <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
+            <bGraphicalOnly>0</bGraphicalOnly>
+            <bNoBadGoodies>0</bNoBadGoodies>
+            <bOnlyDefensive>0</bOnlyDefensive>
+            <bNoCapture>0</bNoCapture>
+            <bQuickCombat>0</bQuickCombat>
+            <bRivalTerritory>0</bRivalTerritory>
+            <bMilitaryProduction>0</bMilitaryProduction>
+            <bFound>1</bFound>
+            <bInvisible>0</bInvisible>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <bCanMoveImpassable>0</bCanMoveImpassable>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <bCanMoveAllTerrain>0</bCanMoveAllTerrain>
+            <bFlatMovementCost>0</bFlatMovementCost>
+            <bIgnoreTerrainCost>0</bIgnoreTerrainCost>
+            <bMechanized>0</bMechanized>
+            <bLineOfSight>0</bLineOfSight>
+            <bHiddenNationality>0</bHiddenNationality>
+            <bAlwaysHostile>0</bAlwaysHostile>
+            <bTreasure>0</bTreasure>
+            <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
+            <bLbDCanGetFree>0</bLbDCanGetFree>
+            <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
+            <UnitClassUpgrades/>
+            <UnitAIs>
+                <UnitAI>
+                    <UnitAIType>UNITAI_COLONIST</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+            </UnitAIs>
+            <NotUnitAIs/>
+            <Builds>
+                <Build>
+                    <BuildType>BUILD_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PLASTERED_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_FARM</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_WINDMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_IRONMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CANAL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PLANTATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_MINE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_VINEYARD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_COLLECTORS_POST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_COLLECTORS_POST2</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_LODGE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_COCOA_PLANTATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_TRAPPER_HUT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_FORT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_MONASTERY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_LUSHGRASS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_CACTUS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_DRAIN_MARSH</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_DRAIN_WETLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_GRASS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_WETLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SAVANNAH</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_DESERT_IRRIGATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SALINA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+            </Builds>
+            <PrereqBuilding>NONE</PrereqBuilding>
+            <PrereqOrBuildings/>
+            <ProductionTraits/>
+            <iAIWeight>0</iAIWeight>
+            <YieldCosts/>
+            <iHurryCostModifier>0</iHurryCostModifier>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iEuropeCost>1200</iEuropeCost>
+            <iEuropeCostIncrease>200</iEuropeCostIncrease>
+            <iImmigrationWeight>50</iImmigrationWeight>
+            <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
+            <iMinAreaSize>-1</iMinAreaSize>
+            <iMoves>1</iMoves>
+            <bCapturesCargo>0</bCapturesCargo>
+            <bCapturesShips>0</bCapturesShips>
+            <iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
+            <iWorkRate>0</iWorkRate>
+            <iWorkRateModifier>0</iWorkRateModifier>
+            <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
+            <FeatureImpassables/>
+            <EvasionBuildings/>
+            <iCombat>1</iCombat>
+            <iXPValueAttack>4</iXPValueAttack>
+            <iXPValueDefense>2</iXPValueDefense>
+            <iWithdrawalProb>0</iWithdrawalProb>
+            <iCityAttack>0</iCityAttack>
+            <iCityDefense>0</iCityDefense>
+            <iHillsAttack>0</iHillsAttack>
+            <iHillsDefense>0</iHillsDefense>
+            <iDomesticBonus>0</iDomesticBonus>
+            <TerrainAttacks/>
+            <TerrainDefenses/>
+            <FeatureAttacks/>
+            <FeatureDefenses/>
+            <UnitClassAttackMods/>
+            <UnitClassDefenseMods/>
+            <UnitCombatMods/>
+            <DomainMods/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+                    <iYieldMod>100</iYieldMod>
+                </YieldModifier>
+                <YieldModifier>
+                    <YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+                    <iYieldMod>100</iYieldMod>
+                </YieldModifier>
+            </YieldModifiers>
+            <YieldDemands>
+                <YieldDemand>
+                    <YieldType>YIELD_LUXURY_GOODS</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_COCOA</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_COFFEE</YieldType>
+                    <iYieldDemand>20</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_CIGARS</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_CLOTH</YieldType>
+                    <iYieldDemand>20</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_COATS</YieldType>
+                    <iYieldDemand>20</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_SALT</YieldType>
+                    <iYieldDemand>20</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_SPICES</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WHALE_OIL</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_FURNITURE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+            </YieldDemands>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_TOOLS</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_POTTERY</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges/>
+            <bLandYieldChanges>1</bLandYieldChanges>
+            <bWaterYieldChanges>1</bWaterYieldChanges>
+            <iBombardRate>0</iBombardRate>
+            <SpecialCargo>NONE</SpecialCargo>
+            <DomainCargo>NONE</DomainCargo>
+            <iCargo>0</iCargo>
+            <iRequiredTransportSize>1</iRequiredTransportSize>
+            <iBerthSize>1</iBerthSize>
+            <iAsset>300</iAsset>
+            <iPower>0</iPower>
+            <iNativeLearnTime>-1</iNativeLearnTime>
+            <iStudentWeight>0</iStudentWeight>
+            <iTeacherWeight>2</iTeacherWeight>
+            <ProfessionMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>NONE</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_HOUSEHOLD_TRADER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
                 <UnitMeshGroups>
@@ -33329,7 +33821,7 @@
             </YieldDemands>
             <YieldChanges>
                 <YieldChange>
-                    <YieldType>YIELD_TOBACCO</YieldType>
+                    <YieldType>YIELD_CIGARS</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -33842,6 +34334,10 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_CIGARS</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+				<YieldChange>
+                    <YieldType>YIELD_YERBA_TEA</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -34358,10 +34854,6 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_WOOL_CLOTH</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_COLOURED_CLOTH</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -36900,10 +37392,6 @@
             <UnitCombatMods/>
             <DomainMods/>
             <YieldModifiers>
-			    <YieldModifier>
-                    <YieldType>YIELD_DOWNS</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_WOOL</YieldType>
                     <iYieldMod>100</iYieldMod>
@@ -36915,10 +37403,6 @@
 				<YieldModifier>
                     <YieldType>YIELD_GOAT_HIDES</YieldType>
                     <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-				<YieldModifier>
-                    <YieldType>YIELD_PIG_SKIN</YieldType>
-                    <iYieldMod>50</iYieldMod>
                 </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
@@ -36977,11 +37461,11 @@
             </YieldDemands>
             <YieldChanges>
                 <YieldChange>
-                    <YieldType>YIELD_LEATHER</YieldType>
+                    <YieldType>YIELD_DOWNS</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_WHALE_OIL</YieldType>
+                    <YieldType>YIELD_PIG_SKIN</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -37440,18 +37924,6 @@
                     <YieldType>YIELD_PIG_SKIN</YieldType>
                     <iYieldMod>100</iYieldMod>
                 </YieldModifier>
-				<YieldModifier>
-                    <YieldType>YIELD_HIDES</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-				<YieldModifier>
-                    <YieldType>YIELD_GOAT_HIDES</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-				<YieldModifier>
-                    <YieldType>YIELD_WOOL</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
                 <YieldDemand>
@@ -37509,11 +37981,15 @@
             </YieldDemands>
             <YieldChanges>
                 <YieldChange>
-                    <YieldType>YIELD_LEATHER</YieldType>
+                    <YieldType>YIELD_HIDES</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
-                    <YieldType>YIELD_WHALE_OIL</YieldType>
+                    <YieldType>YIELD_GOAT_HIDES</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+				<YieldChange>
+                    <YieldType>YIELD_WOOL</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
             </YieldChanges>

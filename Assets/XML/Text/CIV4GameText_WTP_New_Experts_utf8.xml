@@ -469,6 +469,35 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+	<!-- HOUSEHOLD_TRADER -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_HOUSEHOLD_TRADER</Tag>
+        <English>Master Household Goods Trader</English>
+        <German>
+            <Text>Meister Haushaltswarenhändler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER</Tag>
+        <English>Master Household Goods Trader</English>
+        <German>
+            <Text>Meister Haushaltswarenhändler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 	<!-- YERBA_TRADER -->
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_YERBA_TRADER</Tag>
@@ -559,18 +588,18 @@
 	<!-- POULTRY_BUTCHER -->
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_POULTRY_BUTCHER</Tag>
-        <English>Expert Poultry Butcher</English>
+        <English>Master Poultry Butcher</English>
         <German>
-            <Text>Erfahrener Geflügelschlachter</Text>
+            <Text>Meister Geflügelschlachter</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER</Tag>
-        <English>Expert Poultry Butcher</English>
+        <English>Master Poultry Butcher</English>
         <German>
-            <Text>Erfahrener Geflügelschlachter</Text>
+            <Text>Meister Geflügelschlachter</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>

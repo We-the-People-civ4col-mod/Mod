@@ -8696,10 +8696,10 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_POTTERY:
 		case YIELD_FURNITURE:
 		case YIELD_PADDED_FURNITURE:
-			return true;
-			break;
 		case YIELD_FIELD_WORKER_TOOLS:
 		case YIELD_HOUSEHOLD_GOODS:
+			return true;
+			break;
 		case YIELD_LUXURY_GOODS:
 			return false;
 			break;
@@ -8920,6 +8920,8 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 			break;
 		case YIELD_CLOTH:
 		case YIELD_WOOL_CLOTH:
+		case YIELD_COLOURED_CLOTH:
+		case YIELD_COLOURED_WOOL_CLOTH:
 			{
 				int iLoop;
 				CvCity* pLoopCity = NULL;
@@ -8933,9 +8935,7 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 				}
 			}
 			break;
-		case YIELD_COLOURED_CLOTH:
 		case YIELD_FESTIVE_CLOTHES:
-		case YIELD_COLOURED_WOOL_CLOTH:
 		case YIELD_EVERYDAY_CLOTHES:
 		case YIELD_PIG_LEATHER:
 		case YIELD_LEATHER:
@@ -9306,11 +9306,11 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 			case YIELD_POTTERY:
 			case YIELD_FURNITURE:
 			case YIELD_PADDED_FURNITURE:
+			case YIELD_FIELD_WORKER_TOOLS:
+			case YIELD_HOUSEHOLD_GOODS:
 				iValue *= iGoodsMultiplier;
 				iValue /= 100;
 				break;
-			case YIELD_FIELD_WORKER_TOOLS:
-			case YIELD_HOUSEHOLD_GOODS:
 			case YIELD_LUXURY_GOODS:
 				break;
 			case YIELD_HAMMERS:
@@ -9494,10 +9494,10 @@ void CvPlayerAI::AI_updateYieldValues()
 			case YIELD_POTTERY:
 			case YIELD_FURNITURE:
 			case YIELD_PADDED_FURNITURE:
-				iValue += kParent.getYieldBuyPrice(eYield);
-				break;
 			case YIELD_FIELD_WORKER_TOOLS:
 			case YIELD_HOUSEHOLD_GOODS:
+				iValue += kParent.getYieldBuyPrice(eYield);
+				break;
 			case YIELD_LUXURY_GOODS:
 				iValue += kParent.getYieldSellPrice(eYield);
 				break;

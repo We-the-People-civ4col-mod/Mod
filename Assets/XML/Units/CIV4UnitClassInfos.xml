@@ -317,6 +317,11 @@
             <DefaultUnit>UNIT_SPICE_TRADER</DefaultUnit>
         </UnitClassInfo>
 		<UnitClassInfo>
+            <Type>UNITCLASS_HOUSEHOLD_TRADER</Type>
+            <Description>TXT_KEY_UNITCLASS_HOUSEHOLD_TRADER</Description>
+            <DefaultUnit>UNIT_HOUSEHOLD_TRADER</DefaultUnit>
+        </UnitClassInfo>
+		<UnitClassInfo>
             <Type>UNITCLASS_CONFECTIONER</Type>
             <Description>TXT_KEY_UNITCLASS_CONFECTIONER</Description>
             <DefaultUnit>UNIT_CONFECTIONER</DefaultUnit>

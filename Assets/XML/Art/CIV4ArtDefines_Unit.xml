@@ -17274,6 +17274,23 @@
             </AudioRunSounds>
         </UnitArtInfo>
 		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_HOUSEHOLD_TRADER</Type>
+            <Button>Art/interface/buttons/New_Unit_Buttons/Master_Household_Goods_Trader_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Household_Goods_Trader_Europe.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/Master_Household_Goods_Trader/Indentured_Servant.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Household_Goods_Trader/Indentured_Servant.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+		<UnitArtInfo>
             <Type>ART_DEF_UNIT_OIL_TRADER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Master_Oil_Trader_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Oil_Trader_Europe.dds</FullLengthIcon>

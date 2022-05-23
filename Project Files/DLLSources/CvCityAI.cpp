@@ -4526,6 +4526,8 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_POTTERY:
 		case YIELD_FURNITURE:
 		case YIELD_PADDED_FURNITURE:
+		case YIELD_FIELD_WORKER_TOOLS:
+		case YIELD_HOUSEHOLD_GOODS:
 			break;
 		// We punish overproduction of input yields 
 		case YIELD_LUMBER:
@@ -4628,8 +4630,6 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_SILVER:
 		case YIELD_GOLD:
 		case YIELD_GEMS:
-		case YIELD_FIELD_WORKER_TOOLS:
-		case YIELD_HOUSEHOLD_GOODS:
 		case YIELD_LUXURY_GOODS:
 			break;
 		case YIELD_HAMMERS:

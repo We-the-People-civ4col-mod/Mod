@@ -862,7 +862,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Milk_Goods_Icon.dds</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Milk_Goods_Icon.dds</CombiIcon>
+			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Stable_Combi_Icon.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Milk_Goods_Button.dds</Button>
         </YieldInfo>
@@ -2676,7 +2676,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Cheese_Goods_Icon.dds</Icon>
-            <CombiIcon>,Art/colonization_atlas_resources.dds,3,9</CombiIcon>
+            <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Stable_Combi_Icon.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Cheese_Goods_Button.dds</Button>
         </YieldInfo>		
@@ -3889,6 +3889,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Field_Worker_Tools_Icon.dds</Icon>
+			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Household_Trader.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,8,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Field_Worker_Tools_Button.dds</Button>
         </YieldInfo>
@@ -3929,6 +3930,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Household_Items_Goods_Icon.dds</Icon>
+			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Household_Trader.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,8,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Household_Items_Goods_Button.dds</Button>
         </YieldInfo>

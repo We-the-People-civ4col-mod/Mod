@@ -1476,7 +1476,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -1575,8 +1575,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>-1</iProfessionOutput>
-            <iMaxWorkers>0</iMaxWorkers>
+            <iProfessionOutput>3</iProfessionOutput>
+            <iMaxWorkers>2</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -1666,8 +1666,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>-1</iProfessionOutput>
-            <iMaxWorkers>0</iMaxWorkers>
+            <iProfessionOutput>6</iProfessionOutput>
+            <iMaxWorkers>3</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -1765,8 +1765,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>-1</iProfessionOutput>
-            <iMaxWorkers>0</iMaxWorkers>
+            <iProfessionOutput>6</iProfessionOutput>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -1798,7 +1798,16 @@
                     <iYieldChange>4</iYieldChange>
                 </YieldChange>
             </YieldChanges>
-            <YieldModifiers/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
+            </YieldModifiers>
             <iDomesticMarketModifier>200</iDomesticMarketModifier>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
@@ -3558,7 +3567,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>5</iProfessionOutput>
-            <iMaxWorkers>4</iMaxWorkers>
+            <iMaxWorkers>6</iMaxWorkers>
             <iMinAreaSize>10</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -3879,7 +3888,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -4482,7 +4491,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -4796,7 +4805,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -5093,7 +5102,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -5675,7 +5684,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -6736,7 +6745,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>5</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -6844,7 +6853,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>4</iMaxWorkers>
+            <iMaxWorkers>5</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -6952,7 +6961,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>5</iMaxWorkers>
+            <iMaxWorkers>6</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -7244,7 +7253,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>5</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -8024,7 +8033,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>7</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -8123,7 +8132,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>8</iProfessionOutput>
-            <iMaxWorkers>4</iMaxWorkers>
+            <iMaxWorkers>5</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -9517,7 +9526,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>4</iProfessionOutput>
-            <iMaxWorkers>2</iMaxWorkers>
+            <iMaxWorkers>3</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -9621,7 +9630,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>4</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -10996,7 +11005,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -11307,7 +11316,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -11613,7 +11622,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -11910,7 +11919,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -12200,7 +12209,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -12499,7 +12508,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>

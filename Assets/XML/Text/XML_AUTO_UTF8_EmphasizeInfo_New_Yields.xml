@@ -231,6 +231,66 @@
         <German>Schwerpunkt Ahornsaft aufheben</German>
     </TEXT>
 	<TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_KAUTSCHUK</Tag>
+        <English>Emphasize Kautschuk</English>
+        <German>Schwerpunkt Kautschuk</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_NO_KAUTSCHUK</Tag>
+        <English>Deemphasize Kautschuk</English>
+        <German>Schwerpunkt Kautschuk aufheben</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_FESTIVE_CLOTHES</Tag>
+        <English>Emphasize Festive Clothes</English>
+        <German>Schwerpunkt Festliche Kleidung</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_NO_FESTIVE_CLOTHES</Tag>
+        <English>Deemphasize Festive Clothes</English>
+        <German>Schwerpunkt Festliche Kleidung aufheben</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_EVERYDAY_CLOTHES</Tag>
+        <English>Emphasize Everyday Clothes</English>
+        <German>Schwerpunkt Alltagskleidung</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_NO_EVERYDAY_CLOTHES</Tag>
+        <English>Deemphasize Everyday Clothes</English>
+        <German>Schwerpunkt Alltagskleidung aufheben</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_POTTERY</Tag>
+        <English>Emphasize Pottery</English>
+        <German>Schwerpunkt Töpferwaren</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_NO_POTTERY</Tag>
+        <English>Deemphasize Pottery</English>
+        <German>Schwerpunkt Töpferwaren aufheben</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_MILK</Tag>
+        <English>Emphasize Milk</English>
+        <German>Schwerpunkt Milch</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_NO_MILK</Tag>
+        <English>Deemphasize Milk</English>
+        <German>Schwerpunkt Milch aufheben</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_CHEESE</Tag>
+        <English>Emphasize Cheese</English>
+        <German>Schwerpunkt Käse</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_NO_CHEESE</Tag>
+        <English>Deemphasize Cheese</English>
+        <German>Schwerpunkt Käse aufheben</German>
+    </TEXT>
+	<TEXT>
         <Tag>TXT_KEY_EMPHASIZE_ROASTED_PEANUTS</Tag>
         <English>Emphasize Roasted Peanuts</English>
         <German>Schwerpunkt Geröstete Erdnüsse</German>
