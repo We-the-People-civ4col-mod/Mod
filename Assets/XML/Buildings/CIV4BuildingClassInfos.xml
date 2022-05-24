@@ -618,6 +618,12 @@
             <DefaultBuilding>BUILDING_VILLAGE_WELL</DefaultBuilding>
             <VictoryThresholds/>
         </BuildingClassInfo>
+		<BuildingClassInfo>
+            <Type>BUILDINGCLASS_GRAVEYARD</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_GRAVEYARD</Description>
+            <DefaultBuilding>BUILDING_GRAVEYARD</DefaultBuilding>
+            <VictoryThresholds/>
+        </BuildingClassInfo>
         <BuildingClassInfo>
             <Type>BUILDINGCLASS_BONUS</Type>
             <Description>TXT_KEY_BUILDINGCLASS_BONUS</Description>

@@ -15,6 +15,44 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
+	<!-- GRAVEYARD -->
+	<TEXT>
+        <Tag>TXT_KEY_SPECIALBUILDING_GRAVEYARD</Tag>
+        <English>Graveyard</English>
+        <German>
+            <Text>Friedhof</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_GRAVEYARD</Tag>
+        <English>Graveyard</English>
+        <German>
+            <Text>Friedhof</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_GRAVEYARD</Tag>
+        <English>Graveyard</English>
+        <German>
+            <Text>Friedhof</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+	</TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILDING_GRAVEYARD_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_GRAVEYARD_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 	<!-- CONFECTIONER -->
 	<TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_CONFECTIONER</Tag>
