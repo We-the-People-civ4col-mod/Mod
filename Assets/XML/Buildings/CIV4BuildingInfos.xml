@@ -1081,11 +1081,11 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_COCOA</YieldType>
-                    <iModifier>40</iModifier>
+                    <iModifier>25</iModifier>
                 </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_COFFEE</YieldType>
-                    <iModifier>40</iModifier>
+                    <iModifier>25</iModifier>
                 </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
@@ -1170,7 +1170,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>8</iProfessionOutput>
+            <iProfessionOutput>6</iProfessionOutput>
             <iMaxWorkers>8</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
@@ -3478,11 +3478,11 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_ROPE</YieldType>
-                    <iModifier>30</iModifier>
+                    <iModifier>25</iModifier>
                 </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_SAILCLOTH</YieldType>
-                    <iModifier>30</iModifier>
+                    <iModifier>25</iModifier>
                 </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
@@ -3566,7 +3566,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>5</iProfessionOutput>
+            <iProfessionOutput>6</iProfessionOutput>
             <iMaxWorkers>6</iMaxWorkers>
             <iMinAreaSize>10</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
@@ -3599,11 +3599,11 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_ROPE</YieldType>
-                    <iModifier>40</iModifier>
+                    <iModifier>50</iModifier>
                 </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_SAILCLOTH</YieldType>
-                    <iModifier>40</iModifier>
+                    <iModifier>50</iModifier>
                 </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
@@ -4207,6 +4207,10 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_COLOURED_CLOTH</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_COLOURED_WOOL_CLOTH</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
             </YieldModifiers>
@@ -4833,6 +4837,10 @@
                     <YieldType>YIELD_LEATHER</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_PIG_LEATHER</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
@@ -5420,6 +5428,10 @@
                     <YieldType>YIELD_RUM</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_HOOCH</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
@@ -6001,6 +6013,10 @@
                     <YieldType>YIELD_CIGARS</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_YERBA_TEA</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
@@ -6194,7 +6210,7 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
-                    <iModifier>40</iModifier>
+                    <iModifier>50</iModifier>
                 </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
@@ -6487,6 +6503,10 @@
                     <YieldType>YIELD_FURNITURE</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_PADDED_FURNITURE</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
@@ -6771,11 +6791,11 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_TOOLS</YieldType>
-                    <iModifier>40</iModifier>
+                    <iModifier>20</iModifier>
                 </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_BLADES</YieldType>
-                    <iModifier>40</iModifier>
+                    <iModifier>20</iModifier>
                 </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
@@ -6879,11 +6899,11 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_TOOLS</YieldType>
-                    <iModifier>50</iModifier>
+                    <iModifier>25</iModifier>
                 </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_BLADES</YieldType>
-                    <iModifier>50</iModifier>
+                    <iModifier>25</iModifier>
                 </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
@@ -6992,11 +7012,11 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_TOOLS</YieldType>
-                    <iModifier>100</iModifier>
+                    <iModifier>50</iModifier>
                 </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_BLADES</YieldType>
-                    <iModifier>100</iModifier>
+                    <iModifier>50</iModifier>
                 </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
@@ -7157,7 +7177,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>5</iProfessionOutput>
+            <iProfessionOutput>6</iProfessionOutput>
             <iMaxWorkers>3</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
@@ -7252,7 +7272,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>5</iProfessionOutput>
+            <iProfessionOutput>6</iProfessionOutput>
             <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
@@ -7279,11 +7299,11 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_MUSKETS</YieldType>
-                    <iModifier>40</iModifier>
+                    <iModifier>25</iModifier>
                 </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_CANNONS</YieldType>
-                    <iModifier>40</iModifier>
+                    <iModifier>25</iModifier>
                 </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
@@ -7357,7 +7377,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>5</iMaxWorkers>
+            <iMaxWorkers>6</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -7486,8 +7506,16 @@
                     <YieldType>YIELD_SHEEP</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_GOATS</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_CATTLE</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_PIGS</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
                 <YieldModifier>
@@ -7571,12 +7599,28 @@
                     <YieldType>YIELD_SHEEP</YieldType>
                     <iModifier>20</iModifier>
                 </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_GOATS</YieldType>
+                    <iModifier>20</iModifier>
+                </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_CATTLE</YieldType>
                     <iModifier>20</iModifier>
                 </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_HORSES</YieldType>
+                    <iModifier>20</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_PIGS</YieldType>
+                    <iModifier>20</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_CHICKEN</YieldType>
+                    <iModifier>20</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_GEESE</YieldType>
                     <iModifier>20</iModifier>
                 </YieldModifier>
             </YieldModifiers>
@@ -7669,15 +7713,31 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_SHEEP</YieldType>
-                    <iModifier>40</iModifier>
+                    <iModifier>25</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_GOATS</YieldType>
+                    <iModifier>25</iModifier>
                 </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_CATTLE</YieldType>
-                    <iModifier>40</iModifier>
+                    <iModifier>25</iModifier>
                 </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_HORSES</YieldType>
-                    <iModifier>40</iModifier>
+                    <iModifier>25</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_PIGS</YieldType>
+                    <iModifier>25</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_CHICKEN</YieldType>
+                    <iModifier>25</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_GEESE</YieldType>
+                    <iModifier>25</iModifier>
                 </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
@@ -7747,7 +7807,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>6</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -7773,15 +7833,31 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_SHEEP</YieldType>
-                    <iModifier>60</iModifier>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_GOATS</YieldType>
+                    <iModifier>50</iModifier>
                 </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_CATTLE</YieldType>
-                    <iModifier>60</iModifier>
+                    <iModifier>50</iModifier>
                 </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_HORSES</YieldType>
-                    <iModifier>60</iModifier>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_PIGS</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_CHICKEN</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_GEESE</YieldType>
+                    <iModifier>50</iModifier>
                 </YieldModifier>
 				<YieldModifier>
                     <YieldType>YIELD_MILK</YieldType>
@@ -8064,7 +8140,12 @@
             <SeaPlotYieldChanges/>
             <RiverPlotYieldChanges/>
             <YieldChanges/>
-            <YieldModifiers/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_HAMMERS</YieldType>
+                    <iModifier>25</iModifier>
+                </YieldModifier>
+            </YieldModifiers>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
             <DomainFreeExperiences/>
@@ -8140,7 +8221,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>8</iProfessionOutput>
-            <iMaxWorkers>5</iMaxWorkers>
+            <iMaxWorkers>6</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -8166,7 +8247,7 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_HAMMERS</YieldType>
-                    <iModifier>20</iModifier>
+                    <iModifier>50</iModifier>
                 </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
@@ -8481,8 +8562,20 @@
                     <YieldType>YIELD_WOOL</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_GOAT_HIDES</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
                 <YieldModifier>
                     <YieldType>YIELD_HIDES</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_PIG_SKIN</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_DOWNS</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
             </YieldModifiers>
@@ -8705,7 +8798,7 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_BELLS</YieldType>
-                    <iModifier>100</iModifier>
+                    <iModifier>75</iModifier>
                 </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
@@ -8818,7 +8911,7 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_BELLS</YieldType>
-                    <iModifier>150</iModifier>
+                    <iModifier>100</iModifier>
                 </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
@@ -9637,7 +9730,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>4</iProfessionOutput>
+            <iProfessionOutput>6</iProfessionOutput>
             <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
@@ -9741,8 +9834,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>5</iProfessionOutput>
-            <iMaxWorkers>5</iMaxWorkers>
+            <iProfessionOutput>8</iProfessionOutput>
+            <iMaxWorkers>6</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -10136,7 +10229,7 @@
             <YieldCosts>
                 <YieldCost>
                     <YieldType>YIELD_HAMMERS</YieldType>
-                    <iCost>50</iCost>
+                    <iCost>40</iCost>
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
@@ -10611,7 +10704,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iProfessionOutput>4</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iMaxWorkers>4</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -10642,7 +10735,7 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_HEALTH</YieldType>
-                    <iModifier>10</iModifier>
+                    <iModifier>50</iModifier>
                 </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
@@ -10705,11 +10798,11 @@
             <YieldCosts>
                 <YieldCost>
                     <YieldType>YIELD_HAMMERS</YieldType>
-                    <iCost>50</iCost>
+                    <iCost>40</iCost>
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
-                    <iCost>20</iCost>
+                    <iCost>10</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -10795,7 +10888,7 @@
             <YieldCosts>
                 <YieldCost>
                     <YieldType>YIELD_HAMMERS</YieldType>
-                    <iCost>50</iCost>
+                    <iCost>40</iCost>
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
@@ -12631,7 +12724,11 @@
             <YieldChanges/>
             <YieldModifiers>
                 <YieldModifier>
-                    <YieldType>YIELD_POTTERY</YieldType>
+                    <YieldType>YIELD_FESTIVE_CLOTHES</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
+				 <YieldModifier>
+                    <YieldType>YIELD_EVERYDAY_CLOTHES</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
             </YieldModifiers>
