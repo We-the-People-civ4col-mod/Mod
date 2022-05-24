@@ -154,7 +154,7 @@
             <Type>ART_DEF_BUILDING_NEWSPAPER</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,2,5</CityTexture>
+            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/News_letter_better_scaled.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.7</fScale>
             <fInterfaceScale>0.45</fInterfaceScale>
