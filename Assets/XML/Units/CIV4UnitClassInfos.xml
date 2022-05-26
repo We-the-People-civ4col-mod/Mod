@@ -591,6 +591,11 @@
             <Description>TXT_KEY_UNITCLASS_SLAVE_HUNTER</Description>
             <DefaultUnit>UNIT_SLAVE_HUNTER</DefaultUnit>
         </UnitClassInfo>
+		<UnitClassInfo>
+            <Type>UNITCLASS_SLAVE_MASTER</Type>
+            <Description>TXT_KEY_UNITCLASS_SLAVE_MASTER</Description>
+            <DefaultUnit>UNIT_SLAVE_MASTER</DefaultUnit>
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_ROYAL_HALBERDIER</Type>
             <Description>TXT_KEY_UNIT_ROYAL_HALBERDIER</Description>

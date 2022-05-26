@@ -724,6 +724,10 @@
         <Tag>TXT_KEY_UNITCLASS_SLAVE_HUNTER</Tag>
         <English>TXT_KEY_UNIT_SLAVE_HUNTER</English>
     </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_SLAVE_MASTER</Tag>
+        <English>TXT_KEY_UNIT_SLAVE_MASTER</English>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CONVERTED_NATIVE</Tag>
         <English>Converted Native:Converted Natives</English>

@@ -252,7 +252,7 @@
 		<ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_LARGE_PEN</Type>
             <bExtraAnimations>0</bExtraAnimations>
-            <fScale>1.0</fScale>
+            <fScale>1.1</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Structures/Improvements/Large_Breeding_Pen/large_ranch.nif</NIF>
             <KFM/>

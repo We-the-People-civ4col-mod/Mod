@@ -1313,6 +1313,29 @@
         <English>[COLOR_UNIT_TEXT]Slave Hunters[COLOR_REVERT] are skilled in fighting and capturing runaway slaves as well as armed revolting slaves. You can only acquire them by recruitment in Africa or by rare events.</English>
         <German>[COLOR_UNIT_TEXT]Sklavenjäger[COLOR_REVERT] sind darauf spezialisiert flüchtende Sklaven wieder einzufangen oder Sklavenrevolten niederzuschlagen. Sie können lediglich in Afrika rekrutiert werden oder durch seltene Ereignisse erhalten werden.</German>
     </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_SLAVE_MASTER</Tag>
+        <English>
+            <Text>Slave Master:Slave Master</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Sklavenbesitzer:Sklavenbesitzer</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SLAVE_MASTER_PEDIA</Tag>
+        <English>The Atlantic slave trade, transatlantic slave trade, or Euro-American slave trade involved the transportation by slave traders of various enslaved African people, mainly to the Americas. The slave trade regularly used the triangular trade route and its Middle Passage, and existed from the 16th to the 19th centuries. The majority of those who were enslaved and transported in the transatlantic slave trade were people from Central and West Africa that had been sold by other West Africans to Western European slave traders, while others had been captured directly by the slave traders in coastal raids. Europeans gathered and imprisoned the enslaved at forts on the African coast and then brought them to the Americas. Except for the Portuguese, European slave traders generally did not participate in the raids because life expectancy for Europeans in sub-Saharan Africa was less than one year during the period of the slave trade (which was prior to the widespread availability of quinine as a treatment for malaria). The South Atlantic and Caribbean economies were particularly dependent on labour for the production of sugarcane and other commodities. This was viewed as crucial by those Western European states which, in the late 17th and 18th centuries, were vying with one another to create overseas empires.</English>
+        <German>Zuweilen gingen die Europäer selbst auf Sklavenjagd. Die meisten Sklaven wurden aber von lokalen Herrschern und Händlern an der afrikanischen Küste verkauft. Da Krieg die wichtigste Quelle für Gefangene war, die sich als Sklaven an die Europäer verkaufen ließen, führte der Sklavenhandel auch zu mehr Konflikten in Afrika. Teilweise wurden Kriege gezielt geschürt, um mehr Sklaven zu bekommen. Nach der Überfahrt mit eigens umgerüsteten Sklavenschiffen kamen jene Sklaven, welche diese "Middle Passage" des oben angesprochenen Dreieckshandels überlebt hatten, in die Plantagen und Bergwerke Amerikas, vor allem Westindiens. Die niederländische Insel Curaçao vor der Küste von Venezuela wurde zum bedeutendsten Sklavenmarkt der Welt.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_SLAVE_MASTER_STRATEGY</Tag>
+        <English>[COLOR_UNIT_TEXT]Slave Master[COLOR_REVERT] are capable of making Slaves, Criminals and Indentured Servants work harder to produce more. You can only acquire them by recruitment in Africa or by rare events.</English>
+        <German>[COLOR_UNIT_TEXT]Sklavenbesitzer[COLOR_REVERT] sind in der Lage Sklaven, Kriminelle und Leibeigene härter arbeiten zu lassen um mehr zu produzieren. Sie können lediglich in Afrika rekrutiert werden oder durch seltene Ereignisse erhalten werden.</German>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONTINENTAL_GUARD</Tag>
         <English>Continental Guard:Continental Guards</English>

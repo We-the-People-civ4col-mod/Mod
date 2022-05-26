@@ -11033,6 +11033,10 @@
                     <UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
+				<UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
             </UnitStrengthModifiers>
             <FreeBuildingClasses/>
             <GoodyFactors/>

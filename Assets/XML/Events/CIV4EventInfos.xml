@@ -41818,7 +41818,7 @@
             <iRandomGold>0</iRandomGold>
             <iCulture>0</iCulture>
             <iHealth>0</iHealth>
-            <UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
+            <UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
             <iNumFreeUnits>2</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
@@ -42077,7 +42077,7 @@
             <iRandomGold>0</iRandomGold>
             <iCulture>0</iCulture>
             <iHealth>0</iHealth>
-            <UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
+            <UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
             <iNumFreeUnits>2</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
@@ -42595,7 +42595,7 @@
             <iRandomGold>0</iRandomGold>
             <iCulture>0</iCulture>
             <iHealth>0</iHealth>
-            <UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
+            <UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
             <iNumFreeUnits>2</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
@@ -43113,7 +43113,7 @@
             <iRandomGold>0</iRandomGold>
             <iCulture>0</iCulture>
             <iHealth>0</iHealth>
-            <UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
+            <UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
             <iNumFreeUnits>2</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
@@ -43631,7 +43631,7 @@
             <iRandomGold>0</iRandomGold>
             <iCulture>0</iCulture>
             <iHealth>0</iHealth>
-            <UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
+            <UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
             <iNumFreeUnits>2</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
@@ -44149,7 +44149,7 @@
             <iRandomGold>0</iRandomGold>
             <iCulture>0</iCulture>
             <iHealth>0</iHealth>
-            <UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
+            <UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
             <iNumFreeUnits>2</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
@@ -44667,7 +44667,7 @@
             <iRandomGold>0</iRandomGold>
             <iCulture>0</iCulture>
             <iHealth>0</iHealth>
-            <UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
+            <UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
             <iNumFreeUnits>2</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
@@ -45185,7 +45185,7 @@
             <iRandomGold>0</iRandomGold>
             <iCulture>0</iCulture>
             <iHealth>0</iHealth>
-            <UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
+            <UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
             <iNumFreeUnits>2</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
