@@ -162,6 +162,15 @@
         <Tag>TXT_KEY_BUILD_PASTURE_HELP</Tag>
         <English>????</English>
     </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_BUILD_PEN</Tag>
+        <English>Build a [LINK=IMPROVEMENT_PASTURE]breeding pen[\LINK]</English>
+        <German>[LINK=IMPROVEMENT_PASTURE]Zuchgehe[\LINK] bauen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_PEN_HELP</Tag>
+        <English>????</English>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_PLANTATION</Tag>
         <English>Build a [LINK=IMPROVEMENT_PLANTATION]plantation[\LINK]</English>

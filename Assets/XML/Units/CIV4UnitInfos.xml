@@ -98,6 +98,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -596,6 +600,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -1203,6 +1211,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -1791,6 +1803,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -2393,6 +2409,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -3430,6 +3450,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -4015,6 +4039,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -4543,6 +4571,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -5053,6 +5085,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -5575,6 +5611,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -6077,6 +6117,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -6591,6 +6635,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -7085,6 +7133,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -7593,6 +7645,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -8099,6 +8155,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -8603,6 +8663,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -9105,6 +9169,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -9613,6 +9681,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -10117,6 +10189,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -10625,6 +10701,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -11129,6 +11209,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -11645,6 +11729,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -12157,6 +12245,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -12673,6 +12765,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -13187,6 +13283,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -13691,6 +13791,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -14199,6 +14303,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -14703,6 +14811,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -15211,6 +15323,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -15717,6 +15833,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -16211,6 +16331,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -16709,6 +16833,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -17203,6 +17331,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -17701,6 +17833,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -18195,6 +18331,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -18701,6 +18841,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -19203,6 +19347,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -19709,6 +19857,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -20211,6 +20363,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -20717,6 +20873,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -21205,6 +21365,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -21686,6 +21850,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -22208,6 +22376,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -22726,6 +22898,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -23248,6 +23424,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -23766,6 +23946,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -24288,6 +24472,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -24808,6 +24996,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -25318,6 +25510,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -25836,6 +26032,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -26350,6 +26550,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -26872,6 +27076,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -27386,6 +27594,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -27908,6 +28120,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -28426,6 +28642,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -28948,6 +29168,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -29468,6 +29692,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -29984,6 +30212,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -30494,6 +30726,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -31008,6 +31244,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -31518,6 +31758,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -32040,6 +32284,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -32558,6 +32806,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -33080,6 +33332,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -33592,6 +33848,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -34102,6 +34362,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -34620,6 +34884,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -35134,6 +35402,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -35656,6 +35928,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -36176,6 +36452,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -36694,6 +36974,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -37224,6 +37508,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -37746,6 +38034,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -38273,6 +38565,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -42341,6 +42637,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -42822,6 +43122,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -43343,6 +43647,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -43806,6 +44114,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -44291,6 +44603,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -44772,6 +45088,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -45259,6 +45579,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -47249,6 +47573,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -47731,6 +48059,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -48194,6 +48526,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -48703,6 +49039,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -49235,6 +49575,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -49765,6 +50109,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -50293,6 +50641,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -51663,6 +52015,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -52210,6 +52566,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -52700,6 +53060,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -53188,6 +53552,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -54132,6 +54500,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -54630,6 +55002,10 @@
                     <BuildType>BUILD_PASTURE</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
                 <Build>
                     <BuildType>BUILD_MINE</BuildType>
                     <bBuild>1</bBuild>
@@ -55062,6 +55438,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+				<Build>
+                    <BuildType>BUILD_PEN</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>

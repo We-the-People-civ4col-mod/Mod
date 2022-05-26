@@ -3096,23 +3096,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_GOATS</YieldType>
-                    <iValue>2</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
                     <YieldType>YIELD_CATTLE</YieldType>
-                    <iValue>2</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_PIGS</YieldType>
-                    <iValue>2</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_GEESE</YieldType>
-                    <iValue>2</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_CHICKEN</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -3151,19 +3135,11 @@
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
-                    <TerrainType>TERRAIN_WETLAND</TerrainType>
-                    <bMakesValid>1</bMakesValid>
-                </TerrainMakesValid>
-                <TerrainMakesValid>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
-                    <bMakesValid>1</bMakesValid>
-                </TerrainMakesValid>
-                <TerrainMakesValid>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
@@ -3202,6 +3178,125 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
+                    <BonusType>BONUS_HORSES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_HORSES</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_SHEEP</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_SHEEP</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+            </BonusTypeStructs>
+            <ImprovementPillage/>
+            <ImprovementUpgrade>IMPROVEMENT_LARGE_PASTURE</ImprovementUpgrade>
+            <RouteYieldChanges/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
+		<ImprovementInfo>
+            <Type>IMPROVEMENT_PEN</Type>
+            <Description>TXT_KEY_IMPROVEMENT_PEN</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_PEN_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_PEN</ArtDefineTag>
+            <PrereqNatureYields>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </PrereqNatureYields>
+            <YieldIncreases>
+			    <YieldIntegerPair>
+                    <YieldType>YIELD_GOATS</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_PIGS</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GEESE</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_CHICKEN</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+            </YieldIncreases>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>0</bWater>
+            <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>25</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>0</iTilesPerGoody>
+            <iGoodyRange>0</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>50</iUpgradeTime>
+            <iDefenseModifier>0</iDefenseModifier>
+            <iPillageGold>5</iPillageGold>
+            <bOutsideBorders>0</bOutsideBorders>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+				<TerrainMakesValid>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
+            <BonusTypeStructs>
+                <BonusTypeStruct>
                     <BonusType>BONUS_PIG</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -3235,28 +3330,6 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
-                    <BonusType>BONUS_HORSES</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_HORSES</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_SHEEP</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_SHEEP</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
                     <BonusType>BONUS_GOAT</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -3269,7 +3342,7 @@
                 </BonusTypeStruct>
             </BonusTypeStructs>
             <ImprovementPillage/>
-            <ImprovementUpgrade>IMPROVEMENT_LARGE_PASTURE</ImprovementUpgrade>
+            <ImprovementUpgrade>IMPROVEMENT_LARGE_PEN</ImprovementUpgrade>
             <RouteYieldChanges/>
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
@@ -5173,15 +5246,129 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_GOATS</YieldType>
-                    <iValue>3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
                     <YieldType>YIELD_CATTLE</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_HORSES</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+            </YieldIncreases>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>0</bWater>
+            <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>25</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>0</iTilesPerGoody>
+            <iGoodyRange>0</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>0</iUpgradeTime>
+            <iDefenseModifier>0</iDefenseModifier>
+            <iPillageGold>10</iPillageGold>
+            <bOutsideBorders>0</bOutsideBorders>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
+            <BonusTypeStructs>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_CATTLE</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_CATTLE</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_HORSES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_HORSES</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_SHEEP</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_SHEEP</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+            </BonusTypeStructs>
+            <ImprovementPillage/>
+            <ImprovementUpgrade/>
+            <RouteYieldChanges/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
+		<ImprovementInfo>
+            <Type>IMPROVEMENT_LARGE_PEN</Type>
+            <Description>TXT_KEY_IMPROVEMENT_LARGE_PEN</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_LARGE_PEN_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_LARGE_PEN</ArtDefineTag>
+            <PrereqNatureYields>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </PrereqNatureYields>
+            <YieldIncreases>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GOATS</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
 				<YieldIntegerPair>
@@ -5224,27 +5411,19 @@
             <bOutsideBorders>0</bOutsideBorders>
             <TerrainMakesValids>
                 <TerrainMakesValid>
-                    <TerrainType>TERRAIN_GRASS</TerrainType>
-                    <bMakesValid>1</bMakesValid>
-                </TerrainMakesValid>
-                <TerrainMakesValid>
                     <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
-                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
-                    <bMakesValid>1</bMakesValid>
-                </TerrainMakesValid>
-                <TerrainMakesValid>
-                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
-                <TerrainMakesValid>
-                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+				<TerrainMakesValid>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>
@@ -5267,17 +5446,6 @@
                 </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_CATTLE</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_CATTLE</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
                 <BonusTypeStruct>
                     <BonusType>BONUS_PIG</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
@@ -5307,28 +5475,6 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_GEESE</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_HORSES</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_HORSES</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_SHEEP</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_SHEEP</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -6557,6 +6703,6 @@
             <ImprovementUpgrade/>
             <RouteYieldChanges/>
             <bGraphicalOnly>0</bGraphicalOnly>
-        </ImprovementInfo>
-    </ImprovementInfos>
+        </ImprovementInfo>	
+	</ImprovementInfos>
 </Civ4ImprovementInfos>
