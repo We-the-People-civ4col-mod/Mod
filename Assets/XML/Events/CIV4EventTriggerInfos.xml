@@ -11439,7 +11439,7 @@
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/achievements/firstfort.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>-1</iWeight>
+            <iWeight>1000</iWeight>
             <bProbabilityUnitMultiply>1</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <eCivic>NONE</eCivic>
@@ -11476,7 +11476,7 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>1</bGlobal>
             <bPickPlayer>1</bPickPlayer>
@@ -11514,7 +11514,7 @@
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/achievements/statesman.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>500</iWeight>
+            <iWeight>1000</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <eCivic>NONE</eCivic>
@@ -11554,7 +11554,7 @@
                 <Event>EVENT_TRADEFORT_1</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>0</bGlobal>
             <bPickPlayer>1</bPickPlayer>
@@ -11588,7 +11588,7 @@
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/achievements/no_smoking.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>-1</iWeight>
+            <iWeight>1000</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <eCivic>NONE</eCivic>
