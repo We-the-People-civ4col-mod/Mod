@@ -13662,9 +13662,19 @@ void CvUnit::setUnitTravelState(UnitTravelStates eState, bool bShowEuropeScreen)
 
 		if (getGroup() != NULL)
 		{
-			// Unconditionally separate all units (all units will be re-assigned to a group with the unit as its single member)
-			// This fixes (among other things) the #482 infinite loop
-			getGroup()->AI_separate();
+			if (!isHuman())
+			{
+				// Do not split if the unit is in a port. This prevents the bug where a massive REF in Europe runs out of group ids while joining separate groups!
+				if (!(eState == UNIT_TRAVEL_STATE_IN_EUROPE || eState == UNIT_TRAVEL_STATE_IN_AFRICA || eState == UNIT_TRAVEL_STATE_IN_PORT_ROYAL))
+				{ 
+					// Erik: Unconditionally separate all units (all units will be re-assigned to a group with the unit as its single member)
+					getGroup()->AI_separate();
+				}
+			}
+			else
+			{
+				getGroup()->splitGroup(1, this);
+			}
 		}
 
 		if (!isOnMap())
