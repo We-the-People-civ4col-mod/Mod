@@ -2164,11 +2164,9 @@ void CvCityAI::AI_updateBestBuild()
 
 			if (NULL != pLoopPlot && pLoopPlot->getWorkingCity() == this)
 			{
-				// Due to lazy memory allocation, it's not possible to get a reference to data in an EnumMap
-				// To get around this limitation, use a buffer.
-				int iBestBuildValue = m_em_iBestBuildValue.get(eLoopCityPlot);
-				BuildTypes eBestBuildType = m_em_eBestBuild.get(eLoopCityPlot);
-
+				// Temporary out variables
+				int iBestBuildValue = 0;
+				BuildTypes eBestBuildType = NO_BUILD;
 				AI_bestPlotBuild(pLoopPlot, &iBestBuildValue, &eBestBuildType);
 
 				// write the buffer back into the EnumMap
@@ -5360,44 +5358,37 @@ int CvCityAI::AI_experienceWeight() const
 	return ((getProductionExperience() + getDomainFreeExperience(DOMAIN_SEA)) * 2);
 }
 
-
-int CvCityAI::AI_plotYieldValue(const CvPlot* pPlot, int* piYields) const
+PlotYieldValue CvCityAI::AI_plotYieldValue(const CvPlot& kPlot, const int* piYields) const
 {
 	FAssert(piYields != NULL);
+	
 	int iValue = 0;
-	
 	int iBestValue = 0;
-	
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+	
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes)iJ;
-		
 		if (piYields[eYield] > 0)
 		{
-			// TAC - AI More Food - koma13 - START
-			//int iTempValue = (1 + piYields[eYield]) * kOwner.AI_yieldValue(eYield);
-			int iTempValue = (1 + piYields[eYield]) * kOwner.AI_yieldValue(eYield, true, 1, true);
-			// TAC - AI More Food - koma13 - END
+			// bProduce and bFood are bot set to false to avoid hard-coded AI base values from
+			// interfering
+			int iTempValue = piYields[eYield] * kOwner.AI_yieldValue(eYield, false, 1, false);
 			
-			bool bImportant = false;
-			
-			if (pPlot->isBeingWorked())
+			if (kPlot.isBeingWorked())
 			{
-				if (pPlot->getYield(eYield) > 0)
+				if (kPlot.getYield(eYield) > 0)
 				{
 					iTempValue *= 2;
-					bImportant = true;
 				}
-			}
-			
+			}	
 			iValue += iTempValue;
 			iBestValue = std::max(iBestValue, iTempValue);
 		}
 	}
 	iValue += iBestValue * 2;
 	
-	return iValue;
+	PlotYieldValue pyv(iValue, iBestValue);
+	return pyv;
 }
 
 // Improved worker AI provided by Blake - thank you!
@@ -5483,7 +5474,8 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 		}
 	}
 	
-	int iCurrentValue = AI_plotYieldValue(pPlot, aiCurrentYields);
+	PlotYieldValue val = AI_plotYieldValue(*pPlot, aiCurrentYields);
+	int iCurrentValue = val.iAggregate;
 
 	int iBestValue = 0;
 	BuildTypes eBestBuild = NO_BUILD;
@@ -5598,8 +5590,9 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 				}
 			}
 			
-			int iValue = AI_plotYieldValue(pPlot, aiFinalYields);
-			
+			PlotYieldValue val = AI_plotYieldValue(*pPlot, aiFinalYields);
+			int iValue = val.iAggregate;
+
 			if (kBuild.getRoute() != NO_ROUTE)
 			{
 				//WTP, Nightinggale, Large Rivers - START
@@ -5700,6 +5693,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 
 				if (iValue > iCurrentValue)
 				{
+					/*
 					if (!isHuman())
 					{
 						if (eImprovement != NO_IMPROVEMENT)
@@ -5708,7 +5702,8 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 							iValue /= 100;
 						}
 					}
-				
+					*/
+
 					if (eFeature != NO_FEATURE)
 					{
 						if (kBuild.isFeatureRemove(eFeature))

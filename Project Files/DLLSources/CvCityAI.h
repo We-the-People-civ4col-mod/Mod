@@ -9,6 +9,15 @@
 
 typedef std::vector<std::pair<UnitAITypes, int> > UnitTypeWeightArray;
 
+struct PlotYieldValue
+{
+	PlotYieldValue(int iAggregate_, int iBestValue_) : iAggregate(iAggregate_), iBestValue(iBestValue_)
+	{}
+
+	const int iAggregate;
+	const int iBestValue;
+};
+
 class CvCityAI : public CvCity
 {
 
@@ -177,6 +186,8 @@ public:
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
+	void AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildTypes* peBestBuild) const;
+
 protected:
 
 	void AI_resetSavedData();
@@ -263,9 +274,8 @@ protected:
 
 	int AI_experienceWeight() const;
 
-	int AI_plotYieldValue(const CvPlot* pPlot, int* piYields) const;
-	void AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildTypes* peBestBuild) const;
-
+	PlotYieldValue AI_plotYieldValue(const CvPlot& kPlot, const int* piYields) const;
+	
 	int AI_getYieldMagicValue(const int* piYieldsTimes100) const;
 	int AI_getPlotMagicValue(const CvPlot* pPlot, bool bWorkerOptimization = false) const;
 	int AI_countGoodTiles(bool bUnworkedOnly, int iThreshold = 50, bool bWorkerOptimization = false) const;

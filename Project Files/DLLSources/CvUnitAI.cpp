@@ -900,22 +900,31 @@ bool CvUnitAI::AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot, BuildTypes* 
 					{
 						if ((pLoopPlot->getImprovementType() == NO_IMPROVEMENT) || !(GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_SAFE_AUTOMATION) && !(pLoopPlot->getImprovementType() == (GC.getDefineINT("RUINS_IMPROVEMENT")))))
 						{
-							iValue = pCity->AI_getBestBuildValue(iI);
+							int iBestBuildValue = 0;
+							BuildTypes eBestBuildType = NO_BUILD;
+							static_cast<CvCityAI*>(pCity)->AI_bestPlotBuild(pLoopPlot, &iBestBuildValue, &eBestBuildType);
+
+							iValue = iBestBuildValue;
+							//iValue = pCity->AI_getBestBuildValue(iI);
 
 							if (iValue > iBestValue)
 							{
-								eBuild = pCity->AI_getBestBuild(iI);
+								//eBuild = pCity->AI_getBestBuild(iI);
+								eBuild = eBestBuildType;
 								FAssertMsg(eBuild < GC.getNumBuildInfos(), "Invalid Build");
 
 								if (eBuild != NO_BUILD)
 								{
+									/*
 									if (0 == iPass)
 									{
 										iBestValue = iValue;
 										pBestPlot = pLoopPlot;
 										eBestBuild = eBuild;
 									}
-									else if (canBuild(pLoopPlot, eBuild))
+									
+									else*/
+									if (canBuild(pLoopPlot, eBuild))
 									{
 										if (!(pLoopPlot->isVisibleEnemyUnit(this)))
 										{
@@ -944,7 +953,8 @@ bool CvUnitAI::AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot, BuildTypes* 
 													//XXX this could be improved greatly by
 													//looking at the real build time and other factors
 													//when deciding whether to stack.
-													iValue /= iPathTurns;
+													// Don't punish spending an additional turn
+													iValue /= (iPathTurns <= 2) ? 1 : iPathTurns;
 
 													iBestValue = iValue;
 													pBestPlot = pLoopPlot;
@@ -16532,7 +16542,7 @@ bool CvUnitAI::AI_improveCity(CvCity* pCity)
 				}
 				if (iPlotMoveCost > 1)
 				{
-					eMission = MISSION_ROUTE_TO;
+						eMission = MISSION_ROUTE_TO;
 				}
 			}
 		}
