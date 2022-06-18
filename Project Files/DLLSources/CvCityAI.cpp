@@ -19,6 +19,8 @@
 #include "CvDLLFAStarIFaceBase.h"
 
 #include "CvSavegame.h"
+#include <algorithm> // find
+#include <deque>
 
 
 #define BUILDINGFOCUS_NO_RECURSION			(1 << 31)
