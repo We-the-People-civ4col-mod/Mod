@@ -15697,7 +15697,7 @@ void CvPlayerAI::AI_updateBestYieldPlots()
 	}
 }
 
-CvPlot* CvPlayerAI::AI_getBestWorkedYieldPlot(YieldTypes eYield)
+CvPlot* CvPlayerAI::AI_getBestWorkedYieldPlot(YieldTypes eYield) const
 {
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
@@ -15706,7 +15706,7 @@ CvPlot* CvPlayerAI::AI_getBestWorkedYieldPlot(YieldTypes eYield)
 	return GC.getMapINLINE().plotByIndexINLINE(m_em_iBestWorkedYieldPlots.get(eYield));
 }
 
-CvPlot* CvPlayerAI::AI_getBestUnworkedYieldPlot(YieldTypes eYield)
+CvPlot* CvPlayerAI::AI_getBestUnworkedYieldPlot(YieldTypes eYield) const
 {
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
@@ -15715,7 +15715,7 @@ CvPlot* CvPlayerAI::AI_getBestUnworkedYieldPlot(YieldTypes eYield)
 	return GC.getMapINLINE().plotByIndexINLINE(m_em_iBestUnworkedYieldPlots.get(eYield));
 }
 
-int CvPlayerAI::AI_getBestPlotYield(YieldTypes eYield)
+int CvPlayerAI::AI_getBestPlotYield(YieldTypes eYield) const
 {
 	CvPlot* pPlot = AI_getBestWorkedYieldPlot(eYield);
 	if (pPlot == NULL)

@@ -20,6 +20,7 @@
 #include "FProfiler.h"
 #include "CvGameTextMgr.h"
 #include "CvTradeRoute.h"
+#include <algorithm> // sort
 #include <numeric>
 
 // interfaces used

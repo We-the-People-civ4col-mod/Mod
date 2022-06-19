@@ -177,9 +177,9 @@ public:
 	bool AI_isPort() const;
 	void AI_setPort(bool iNewValue);
 
-	int AI_getFoundValue();
+	int AI_getFoundValue() const;
 
-	int AI_getRequiredYieldLevel(YieldTypes eYield);
+	int AI_getRequiredYieldLevel(YieldTypes eYield) const;
 	void AI_updateRequiredYieldLevels();
 
 	void AI_educateStudent(int iUnitId);

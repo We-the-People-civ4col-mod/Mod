@@ -5010,12 +5010,12 @@ bool CvCityAI::AI_potentialPlot(const EnumMap<YieldTypes, short>& em_iYields) co
 	return true;
 }
 
-int CvCityAI::AI_getFoundValue()
+int CvCityAI::AI_getFoundValue() const
 {
 	return m_iFoundValue;
 }
 
-int CvCityAI::AI_getRequiredYieldLevel(YieldTypes eYield)
+int CvCityAI::AI_getRequiredYieldLevel(YieldTypes eYield) const
 {
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
@@ -5392,7 +5392,7 @@ PlotYieldValue CvCityAI::AI_plotYieldValue(const CvPlot& kPlot, const int* piYie
 BestPlotBuild CvCityAI::AI_bestPlotBuild(const CvPlot& kPlot) const
 {
 	PROFILE_FUNC();
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
 	if (kPlot.getWorkingCity() != this)
 	{

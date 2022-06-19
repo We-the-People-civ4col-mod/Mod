@@ -642,7 +642,7 @@ public:
 	virtual int AI_getTransitYield(YieldTypes eYield) const = 0;
 	virtual bool AI_isPort() const = 0;
 	virtual void AI_setPort(bool iNewValue) = 0;
-	virtual int AI_getRequiredYieldLevel(YieldTypes eYield) = 0;
+	virtual int AI_getRequiredYieldLevel(YieldTypes eYield) const = 0;
 	virtual void AI_educateStudent(int iUnitId) = 0;
 	virtual bool AI_isWorkforceHack() = 0;
 	virtual void AI_setWorkforceHack(bool bNewValue) = 0;
