@@ -2457,22 +2457,21 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 		CvCity* pWorkingCity = pPlot->getWorkingCity();
 		if (NULL != pWorkingCity)
 		{
-		    int iPlotIndex = pWorkingCity->getCityPlotIndex(pPlot);
-            int iBuildValue = pWorkingCity->AI_getBestBuildValue(iPlotIndex);
-            BuildTypes eBestBuild = pWorkingCity->AI_getBestBuild(iPlotIndex);
-			int iCurrentValue = 0;
-			BuildTypes eCurrentBuild = NO_BUILD;
-            static_cast<CvCityAI*>(pWorkingCity)->AI_bestPlotBuild(*pPlot, &iCurrentValue, &eCurrentBuild);
-
+			const int iPlotIndex = pWorkingCity->getCityPlotIndex(pPlot);
+			const BuildTypes eBestBuild = pWorkingCity->AI_getBestBuild(iPlotIndex);
+					
             if (NO_BUILD != eBestBuild)
             {
-                szTempBuffer.Format(L"\nBest Build: %s (%d)", GC.getBuildInfo(eBestBuild).getDescription(), iBuildValue);
+				const int iBuildValue = pWorkingCity->AI_getBestBuildValue(iPlotIndex);
+				szTempBuffer.Format(L"\nBest Build (cached): %s (%d)", GC.getBuildInfo(eBestBuild).getDescription(), iBuildValue);
                 szString.append(szTempBuffer);
 			}
 
-			if (NO_BUILD != eCurrentBuild)
+			const BestPlotBuild bestPlotBuild = static_cast<CvCityAI*>(pWorkingCity)->AI_bestPlotBuild(*pPlot);
+
+			if (NO_BUILD != bestPlotBuild.eBuild)
 			{
-				szTempBuffer.Format(L"\nCurr Build: %s (%d)", GC.getBuildInfo(eCurrentBuild).getDescription(), iCurrentValue);
+				szTempBuffer.Format(L"\nCurr Build: %s (%d)", GC.getBuildInfo(bestPlotBuild.eBuild).getDescription(), bestPlotBuild.iValue);
                 szString.append(szTempBuffer);
             }
 		}

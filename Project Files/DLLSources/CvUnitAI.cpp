@@ -885,83 +885,80 @@ bool CvUnitAI::AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot, BuildTypes* 
 	BuildTypes eBestBuild = NO_BUILD;
 	CvPlot* pBestPlot = NULL;
 
-	
 	for (int iPass = 0; iPass < 2; iPass++)
 	{
 		for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
 		{
-			CvPlot* pLoopPlot = plotCity(pCity->getX_INLINE(), pCity->getY_INLINE(), iI);
+			CvPlot* const pLoopPlot = plotCity(pCity->getX_INLINE(), pCity->getY_INLINE(), iI);
 
-			if (pLoopPlot != NULL)
+			if (pLoopPlot == NULL)
+				continue;
+			if (!AI_plotValid(pLoopPlot))
+				continue;
+			if (pLoopPlot == pIgnorePlot)
+				continue;
+			
+			if ((pLoopPlot->getImprovementType() == NO_IMPROVEMENT) || !(GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_SAFE_AUTOMATION) && !(pLoopPlot->getImprovementType() == (GC.getDefineINT("RUINS_IMPROVEMENT")))))
 			{
-				if (AI_plotValid(pLoopPlot))
+				const BestPlotBuild bestPlotBuild = static_cast<CvCityAI*>(pCity)->AI_bestPlotBuild(*pLoopPlot);
+				const int iBestBuildValue = bestPlotBuild.iValue;
+				const BuildTypes eBestBuildType = bestPlotBuild.eBuild;
+
+				iValue = iBestBuildValue;
+				//iValue = pCity->AI_getBestBuildValue(iI);
+
+				if (iValue > iBestValue)
 				{
-					if (pLoopPlot != pIgnorePlot)
+					//eBuild = pCity->AI_getBestBuild(iI);
+					eBuild = eBestBuildType;
+					FAssertMsg(eBuild < GC.getNumBuildInfos(), "Invalid Build");
+
+					if (eBuild != NO_BUILD)
 					{
-						if ((pLoopPlot->getImprovementType() == NO_IMPROVEMENT) || !(GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_SAFE_AUTOMATION) && !(pLoopPlot->getImprovementType() == (GC.getDefineINT("RUINS_IMPROVEMENT")))))
+						/*
+						if (0 == iPass)
 						{
-							int iBestBuildValue = 0;
-							BuildTypes eBestBuildType = NO_BUILD;
-							static_cast<CvCityAI*>(pCity)->AI_bestPlotBuild(*pLoopPlot, &iBestBuildValue, &eBestBuildType);
-
-							iValue = iBestBuildValue;
-							//iValue = pCity->AI_getBestBuildValue(iI);
-
-							if (iValue > iBestValue)
+							iBestValue = iValue;
+							pBestPlot = pLoopPlot;
+							eBestBuild = eBuild;
+						}
+									
+						else*/
+						if (canBuild(pLoopPlot, eBuild))
+						{
+							if (!(pLoopPlot->isVisibleEnemyUnit(this)))
 							{
-								//eBuild = pCity->AI_getBestBuild(iI);
-								eBuild = eBestBuildType;
-								FAssertMsg(eBuild < GC.getNumBuildInfos(), "Invalid Build");
-
-								if (eBuild != NO_BUILD)
+								int iPathTurns = 0;
+								if (generatePath(pLoopPlot, 0, true, &iPathTurns))
 								{
-									/*
-									if (0 == iPass)
+									// XXX take advantage of range (warning... this could lead to some units doing nothing...)
+									int iMaxWorkers = 1;
+									if (getPathLastNode()->m_iData1 == 0)
 									{
+										iPathTurns++;
+									}
+									else if (iPathTurns <= 1)
+									{
+										iMaxWorkers = AI_calculatePlotWorkersNeeded(pLoopPlot, eBuild);
+									}
+									if (pUnit != NULL)
+									{
+										if (pUnit->plot()->isCity() && iPathTurns == 1 && getPathLastNode()->m_iData1 > 0)
+										{
+											iMaxWorkers += 10;
+										}
+									}	
+									if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_BUILD, getGroup()) < iMaxWorkers)
+									{
+										//XXX this could be improved greatly by
+										//looking at the real build time and other factors
+										//when deciding whether to stack.
+										// Don't punish spending an additional turn
+										iValue /= (iPathTurns <= 2) ? 1 : iPathTurns;
+
 										iBestValue = iValue;
 										pBestPlot = pLoopPlot;
 										eBestBuild = eBuild;
-									}
-									
-									else*/
-									if (canBuild(pLoopPlot, eBuild))
-									{
-										if (!(pLoopPlot->isVisibleEnemyUnit(this)))
-										{
-											int iPathTurns = 0;
-											if (generatePath(pLoopPlot, 0, true, &iPathTurns))
-											{
-												// XXX take advantage of range (warning... this could lead to some units doing nothing...)
-												int iMaxWorkers = 1;
-												if (getPathLastNode()->m_iData1 == 0)
-												{
-													iPathTurns++;
-												}
-												else if (iPathTurns <= 1)
-												{
-													iMaxWorkers = AI_calculatePlotWorkersNeeded(pLoopPlot, eBuild);
-												}
-												if (pUnit != NULL)
-												{
-													if (pUnit->plot()->isCity() && iPathTurns == 1 && getPathLastNode()->m_iData1 > 0)
-													{
-														iMaxWorkers += 10;
-													}
-												}	
-												if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_BUILD, getGroup()) < iMaxWorkers)
-												{
-													//XXX this could be improved greatly by
-													//looking at the real build time and other factors
-													//when deciding whether to stack.
-													// Don't punish spending an additional turn
-													iValue /= (iPathTurns <= 2) ? 1 : iPathTurns;
-
-													iBestValue = iValue;
-													pBestPlot = pLoopPlot;
-													eBestBuild = eBuild;
-												}
-											}
-										}
 									}
 								}
 							}

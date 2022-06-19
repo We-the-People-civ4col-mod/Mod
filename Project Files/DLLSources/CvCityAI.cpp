@@ -2164,22 +2164,19 @@ void CvCityAI::AI_updateBestBuild()
 
 			if (NULL != pLoopPlot && pLoopPlot->getWorkingCity() == this)
 			{
-				// Temporary out variables
-				int iBestBuildValue = 0;
-				BuildTypes eBestBuildType = NO_BUILD;
-				AI_bestPlotBuild(*pLoopPlot, &iBestBuildValue, &eBestBuildType);
+				const BestPlotBuild bestPlotBuild = AI_bestPlotBuild(*pLoopPlot);
 
 				// write the buffer back into the EnumMap
-				m_em_iBestBuildValue.set(eLoopCityPlot, iBestBuildValue);
-				m_em_eBestBuild.set(eLoopCityPlot, eBestBuildType);
+				m_em_iBestBuildValue.set(eLoopCityPlot, bestPlotBuild.iValue);
+				m_em_eBestBuild.set(eLoopCityPlot, bestPlotBuild.eBuild);
 				
-				if (iBestBuildValue > 0)
+				if (bestPlotBuild.iValue > 0)
 				{
-					FAssert(eBestBuildType != NO_BUILD);
+					FAssert(bestPlotBuild.eBuild != NO_BUILD);
 				}
-				if (eBestBuildType != NO_BUILD)
+				if (bestPlotBuild.eBuild != NO_BUILD)
 				{
-					FAssert(iBestBuildValue > 0);
+					FAssert(bestPlotBuild.iValue > 0);
 				}
 			}
 		}
@@ -5392,23 +5389,15 @@ PlotYieldValue CvCityAI::AI_plotYieldValue(const CvPlot& kPlot, const int* piYie
 }
 
 // Improved worker AI provided by Blake - thank you!
-void CvCityAI::AI_bestPlotBuild(const CvPlot& kPlot, int* piBestValue, BuildTypes* peBestBuild) const
+BestPlotBuild CvCityAI::AI_bestPlotBuild(const CvPlot& kPlot) const
 {
 	PROFILE_FUNC();
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
-	if (piBestValue != NULL)
-	{
-		*piBestValue = 0;
-	}
-	if (peBestBuild != NULL)
-	{
-		*peBestBuild = NO_BUILD;
-	}
-
 	if (kPlot.getWorkingCity() != this)
 	{
-		return;
+		const BestPlotBuild bestPlotBuild(-1, NO_BUILD);
+		return bestPlotBuild;
 	}
 	
 	FAssertMsg(kPlot.getOwnerINLINE() == getOwnerINLINE(), "pPlot must be owned by this city's owner");
@@ -5768,19 +5757,17 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot& kPlot, int* piBestValue, BuildType
 			}
 		}
 	}
-	
+
 	if (eBestBuild != NO_BUILD)
 	{
 		FAssertMsg(iBestValue > 0, "iBestValue is expected to be greater than 0");
-		
-		if (piBestValue != NULL)
-		{
-			*piBestValue = iBestValue;
-		}
-		if (peBestBuild != NULL)
-		{
-			*peBestBuild = eBestBuild;
-		}
+		const BestPlotBuild bestPlotBuild(iBestValue, eBestBuild);
+		return bestPlotBuild;
+	}
+	else
+	{
+		const BestPlotBuild bestPlotBuild(-1, NO_BUILD);
+		return bestPlotBuild;
 	}
 }
 

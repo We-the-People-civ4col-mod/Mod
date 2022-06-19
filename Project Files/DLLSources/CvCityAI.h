@@ -18,6 +18,15 @@ struct PlotYieldValue
 	const int iBestValue;
 };
 
+struct BestPlotBuild
+{
+	BestPlotBuild(int iValue_, BuildTypes eBuild_) : iValue(iValue_), eBuild(eBuild_)
+	{}
+
+	const int iValue;
+	const BuildTypes eBuild;
+};
+
 class CvCityAI : public CvCity
 {
 
@@ -186,7 +195,7 @@ public:
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
-	void AI_bestPlotBuild(const CvPlot& kPlot, int* piBestValue, BuildTypes* peBestBuild) const;
+	BestPlotBuild AI_bestPlotBuild(const CvPlot& kPlot) const;
 
 protected:
 
