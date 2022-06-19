@@ -2167,7 +2167,7 @@ void CvCityAI::AI_updateBestBuild()
 				// Temporary out variables
 				int iBestBuildValue = 0;
 				BuildTypes eBestBuildType = NO_BUILD;
-				AI_bestPlotBuild(pLoopPlot, &iBestBuildValue, &eBestBuildType);
+				AI_bestPlotBuild(*pLoopPlot, &iBestBuildValue, &eBestBuildType);
 
 				// write the buffer back into the EnumMap
 				m_em_iBestBuildValue.set(eLoopCityPlot, iBestBuildValue);
@@ -5364,9 +5364,9 @@ PlotYieldValue CvCityAI::AI_plotYieldValue(const CvPlot& kPlot, const int* piYie
 	
 	int iValue = 0;
 	int iBestValue = 0;
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	
-	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; eYield++)
 	{
 		if (piYields[eYield] > 0)
 		{
@@ -5392,7 +5392,7 @@ PlotYieldValue CvCityAI::AI_plotYieldValue(const CvPlot& kPlot, const int* piYie
 }
 
 // Improved worker AI provided by Blake - thank you!
-void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildTypes* peBestBuild) const
+void CvCityAI::AI_bestPlotBuild(const CvPlot& kPlot, int* piBestValue, BuildTypes* peBestBuild) const
 {
 	PROFILE_FUNC();
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
@@ -5406,12 +5406,12 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 		*peBestBuild = NO_BUILD;
 	}
 
-	if (pPlot->getWorkingCity() != this)
+	if (kPlot.getWorkingCity() != this)
 	{
 		return;
 	}
 	
-	FAssertMsg(pPlot->getOwnerINLINE() == getOwnerINLINE(), "pPlot must be owned by this city's owner");
+	FAssertMsg(kPlot.getOwnerINLINE() == getOwnerINLINE(), "pPlot must be owned by this city's owner");
 	
 	BuildTypes eForcedBuild = NO_BUILD;
 	
@@ -5419,12 +5419,12 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 		CLLNode<IDInfo>* pUnitNode;
 		CvUnit* pLoopUnit;
 
-		pUnitNode = pPlot->headUnitNode();
+		pUnitNode = kPlot.headUnitNode();
 
 		while (pUnitNode != NULL)
 		{
 			pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = pPlot->nextUnitNode(pUnitNode);
+			pUnitNode = kPlot.nextUnitNode(pUnitNode);
 
 			if (pLoopUnit->getBuildType() != NO_BUILD)
 			{
@@ -5441,17 +5441,17 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
 		YieldTypes eYield = (YieldTypes)iI;
-		aiCurrentYields[iI] = pPlot->calculateNatureYield(eYield, getTeam(), false);
-		if (pPlot->getImprovementType() != NO_IMPROVEMENT)
+		aiCurrentYields[iI] = kPlot.calculateNatureYield(eYield, getTeam(), false);
+		if (kPlot.getImprovementType() != NO_IMPROVEMENT)
 		{
-			aiCurrentYields[iI] += (pPlot->calculateImprovementYieldChange(pPlot->getImprovementType(), eYield, getOwnerINLINE(), false));
+			aiCurrentYields[iI] += (kPlot.calculateImprovementYieldChange(kPlot.getImprovementType(), eYield, getOwnerINLINE(), false));
 		}
 		
-		if (pPlot->getRouteType() != NO_ROUTE)
+		if (kPlot.getRouteType() != NO_ROUTE)
 		{
 			if (aiCurrentYields[iI] > 0)
 			{
-				aiCurrentYields[iI] += GC.getRouteInfo(pPlot->getRouteType()).getYieldChange(eYield);
+				aiCurrentYields[iI] += GC.getRouteInfo(kPlot.getRouteType()).getYieldChange(eYield);
 			}
 		}
 		//Zero out particulary bad yields.
@@ -5474,15 +5474,15 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 		}
 	}
 	
-	PlotYieldValue val = AI_plotYieldValue(*pPlot, aiCurrentYields);
+	PlotYieldValue val = AI_plotYieldValue(kPlot, aiCurrentYields);
 	int iCurrentValue = val.iAggregate;
 
 	int iBestValue = 0;
 	BuildTypes eBestBuild = NO_BUILD;
 	
 	int aiFinalYields[NUM_YIELD_TYPES];	
-	FeatureTypes eFeature = (FeatureTypes)pPlot->getFeatureType();
-	ImprovementTypes eImprovement = pPlot->getImprovementType();	
+	FeatureTypes eFeature = (FeatureTypes)kPlot.getFeatureType();
+	ImprovementTypes eImprovement = kPlot.getImprovementType();
 	
 	bool bIgnoreFeature = true;
 	if (eFeature != NO_FEATURE)
@@ -5494,7 +5494,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			
 			if (kFeature.getYieldChange(eYield) > 0)
 			{
-				int iYield = pPlot->calculateNatureYield(eYield, getTeam(), false);
+				int iYield = kPlot.calculateNatureYield(eYield, getTeam(), false);
 				
 				if (iYield > ((kOwner.AI_getBestPlotYield(eYield) * 2) / 3))
 				{
@@ -5504,9 +5504,9 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			}
 		}
 		
-		if (pPlot->getBonusType() != NO_BONUS)
+		if (kPlot.getBonusType() != NO_BONUS)
 		{
-			CvBonusInfo& kBonus = GC.getBonusInfo(pPlot->getBonusType());
+			CvBonusInfo& kBonus = GC.getBonusInfo(kPlot.getBonusType());
 			for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
 			{
 				YieldTypes eYield = (YieldTypes)iYield;
@@ -5532,7 +5532,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 		BuildTypes eBuild = (BuildTypes)iI;
 		
 		CvBuildInfo& kBuild = GC.getBuildInfo(eBuild);
-		bool bValid = GET_PLAYER(getOwnerINLINE()).canBuild(pPlot, eBuild, true, true);
+		bool bValid = GET_PLAYER(getOwnerINLINE()).canBuild(&kPlot, eBuild, true, true);
 		
 		if (bValid && eForcedBuild != NO_BUILD && eForcedBuild != eBuild)
 		{
@@ -5567,7 +5567,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
 			{
 				YieldTypes eYield = (YieldTypes)iYield;
-				aiFinalYields[eYield] = pPlot->getYieldWithBuild(eBuild, eYield, true);
+				aiFinalYields[eYield] = kPlot.getYieldWithBuild(eBuild, eYield, true);
 				
 				//Zero out particulary bad yields.
 				if (aiFinalYields[eYield] > 0)
@@ -5590,7 +5590,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 				}
 			}
 			
-			PlotYieldValue val = AI_plotYieldValue(*pPlot, aiFinalYields);
+			PlotYieldValue val = AI_plotYieldValue(kPlot, aiFinalYields);
 			int iValue = val.iAggregate;
 
 			if (kBuild.getRoute() != NO_ROUTE)
@@ -5606,13 +5606,13 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 				}
 				//WTP, Nightinggale, Large Rivers - END
 
-				if (pPlot->getCrumbs() > 0)
+				if (kPlot.getCrumbs() > 0)
 				{
 					bool bValid = true;
 					for (int i = 0; i < NUM_CARDINALDIRECTION_TYPES; ++i)
 					{
-						CvPlot* pLoopPlot = ::plotCardinalDirection(pPlot->getX_INLINE(), pPlot->getY_INLINE(), (CardinalDirectionTypes)i);
-						if (pLoopPlot != NULL && pLoopPlot->getCrumbs() > 2 * pPlot->getCrumbs())
+						CvPlot* pLoopPlot = ::plotCardinalDirection(kPlot.getX_INLINE(), kPlot.getY_INLINE(), (CardinalDirectionTypes)i);
+						if (pLoopPlot != NULL && pLoopPlot->getCrumbs() > 2 * kPlot.getCrumbs())
 						{
 							bValid = false;
 							break;
@@ -5635,7 +5635,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 				else if (bRemoveFeature)
 				{
 					iValue *= 2;
-					if (pPlot->getBonusType() != NO_BONUS)
+					if (kPlot.getBonusType() != NO_BONUS)
 					{
 						iValue *= 2;
 					}
@@ -5650,7 +5650,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 					for (int i = 0; i < NUM_CITY_PLOTS; ++i)
 					{
 						CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), i);
-						if (pLoopPlot != NULL && pLoopPlot != pPlot)
+						if (pLoopPlot != NULL && pLoopPlot != &kPlot)
 						{
 							if (pLoopPlot->getFeatureType() == eFeature)
 							{
@@ -5681,7 +5681,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 									iBestYield = std::max(iBestYield, pBestYieldPlot->calculateBestNatureYield(eYield, getTeam()));
 								}
 								
-								if (pPlot->calculateBestNatureYield(eYield, getTeam()) >= iBestYield)
+								if (kPlot.calculateBestNatureYield(eYield, getTeam()) >= iBestYield)
 								{
 									iValue *= 75;
 									iValue /= 100;
@@ -5714,13 +5714,13 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 								YieldTypes eYield = (YieldTypes) iYield;
 								if (GC.getYieldInfo(eYield).isCargo())
 								{
-									iValue += pPlot->getFeatureYield(eBuild, eYield, getTeam(), &pCity) * 2;
+									iValue += kPlot.getFeatureYield(eBuild, eYield, getTeam(), &pCity) * 2;
 								}
 							}
 							FAssert(pCity == this);
 							//XXX update this once chops are saner (likely the chop yield type is defined)
 							
-							if (pPlot->getBonusType() != NO_BONUS)
+							if (kPlot.getBonusType() != NO_BONUS)
 							{
 								iValue /= 2;
 								//XXX Traditionally in Col, removing a feature destroys the bonus.							

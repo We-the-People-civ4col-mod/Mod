@@ -2462,7 +2462,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
             BuildTypes eBestBuild = pWorkingCity->AI_getBestBuild(iPlotIndex);
 			int iCurrentValue = 0;
 			BuildTypes eCurrentBuild = NO_BUILD;
-            static_cast<CvCityAI*>(pWorkingCity)->AI_bestPlotBuild(pPlot, &iCurrentValue, &eCurrentBuild);
+            static_cast<CvCityAI*>(pWorkingCity)->AI_bestPlotBuild(*pPlot, &iCurrentValue, &eCurrentBuild);
 
             if (NO_BUILD != eBestBuild)
             {

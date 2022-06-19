@@ -902,7 +902,7 @@ bool CvUnitAI::AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot, BuildTypes* 
 						{
 							int iBestBuildValue = 0;
 							BuildTypes eBestBuildType = NO_BUILD;
-							static_cast<CvCityAI*>(pCity)->AI_bestPlotBuild(pLoopPlot, &iBestBuildValue, &eBestBuildType);
+							static_cast<CvCityAI*>(pCity)->AI_bestPlotBuild(*pLoopPlot, &iBestBuildValue, &eBestBuildType);
 
 							iValue = iBestBuildValue;
 							//iValue = pCity->AI_getBestBuildValue(iI);

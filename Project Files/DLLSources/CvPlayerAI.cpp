@@ -8980,7 +8980,7 @@ bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
 
 // TAC - AI More food - koma13 - START
 //int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount)
-int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, bool bFood)
+int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, bool bFood) const
 // TAC - AI More food - koma13 - END
 {
 	int iValue = 0;

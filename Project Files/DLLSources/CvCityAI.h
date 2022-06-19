@@ -186,7 +186,7 @@ public:
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
-	void AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildTypes* peBestBuild) const;
+	void AI_bestPlotBuild(const CvPlot& kPlot, int* piBestValue, BuildTypes* peBestBuild) const;
 
 protected:
 
