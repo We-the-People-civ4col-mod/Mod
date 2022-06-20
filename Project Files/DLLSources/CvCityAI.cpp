@@ -2160,13 +2160,12 @@ void CvCityAI::AI_updateBestBuild()
 	{
 		if (eLoopCityPlot != CITY_HOME_PLOT)
 		{
-			CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), eLoopCityPlot);
+			const CvPlot* const pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), eLoopCityPlot);
 
 			if (NULL != pLoopPlot && pLoopPlot->getWorkingCity() == this)
 			{
 				const BestPlotBuild bestPlotBuild = AI_bestPlotBuild(*pLoopPlot);
 
-				// write the buffer back into the EnumMap
 				m_em_iBestBuildValue.set(eLoopCityPlot, bestPlotBuild.iValue);
 				m_em_eBestBuild.set(eLoopCityPlot, bestPlotBuild.eBuild);
 				
@@ -3389,11 +3388,11 @@ CvUnit* CvCityAI::AI_juggleColonist(CvUnit* pUnit)
 
 void CvCityAI::AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB)
 {
-	ProfessionTypes eProfessionA = pUnitA->getProfession();
-	CvPlot* pPlotA = getPlotWorkedByUnit(pUnitA);
+	const ProfessionTypes eProfessionA = pUnitA->getProfession();
+	CvPlot* const pPlotA = getPlotWorkedByUnit(pUnitA);
 	
-	ProfessionTypes eProfessionB = pUnitB->getProfession();
-	CvPlot* pPlotB = getPlotWorkedByUnit(pUnitB);
+	const ProfessionTypes eProfessionB = pUnitB->getProfession();
+	CvPlot* const pPlotB = getPlotWorkedByUnit(pUnitB);
 	
 	//remove from plot
 	if (pPlotA != NULL)
@@ -3406,7 +3405,6 @@ void CvCityAI::AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB)
 	}
 
 	//remove from building
-	
 	pUnitA->setProfession(NO_PROFESSION);
 	pUnitB->setProfession(NO_PROFESSION);
 
@@ -3417,12 +3415,6 @@ void CvCityAI::AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB)
 	}
 	
 	const bool bResB = pUnitB->setProfession(eProfessionA);
-
-	while (!bResB)
-	{
-		const bool bRes = pUnitB->setProfession(eProfessionA);
-	}
-
 	if (pPlotA != NULL)
 	{
 		setUnitWorkingPlot(pPlotA, pUnitB->getID());
@@ -3430,6 +3422,7 @@ void CvCityAI::AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB)
 
 	if (!(bResA && bResB))
 	{
+		// TODO: Let CvCity::setUnitWorkingPlot return the failure reason
 		CvWString szTempBuffer;	
 		szTempBuffer.Format(L"Units: %s and %s in city: %s failed to swap!", pUnitA->getNameAndProfession().GetCString(), pUnitB->getNameAndProfession().GetCString(), getName().GetCString());
 		std::string s(szTempBuffer.begin(), szTempBuffer.end());
@@ -5355,10 +5348,8 @@ int CvCityAI::AI_experienceWeight() const
 	return ((getProductionExperience() + getDomainFreeExperience(DOMAIN_SEA)) * 2);
 }
 
-PlotYieldValue CvCityAI::AI_plotYieldValue(const CvPlot& kPlot, const int* piYields) const
+PlotYieldValue CvCityAI::AI_plotYieldValue(const CvPlot& kPlot, const boost::array<int, NUM_YIELD_TYPES>& piYields) const
 {
-	FAssert(piYields != NULL);
-	
 	int iValue = 0;
 	int iBestValue = 0;
 	
@@ -5367,7 +5358,7 @@ PlotYieldValue CvCityAI::AI_plotYieldValue(const CvPlot& kPlot, const int* piYie
 	{
 		if (piYields[eYield] > 0)
 		{
-			// bProduce and bFood are bot set to false to avoid hard-coded AI base values from
+			// bProduce and bFood are both set to false to avoid hard-coded AI base values from
 			// interfering
 			int iTempValue = piYields[eYield] * kOwner.AI_yieldValue(eYield, false, 1, false);
 			
@@ -5384,7 +5375,7 @@ PlotYieldValue CvCityAI::AI_plotYieldValue(const CvPlot& kPlot, const int* piYie
 	}
 	iValue += iBestValue * 2;
 	
-	PlotYieldValue pyv(iValue, iBestValue);
+	const PlotYieldValue pyv(iValue, iBestValue);
 	return pyv;
 }
 
@@ -5426,7 +5417,7 @@ BestPlotBuild CvCityAI::AI_bestPlotBuild(const CvPlot& kPlot) const
 		}
 	}
 	
-	int aiCurrentYields[NUM_YIELD_TYPES];
+	boost::array<int, NUM_YIELD_TYPES> aiCurrentYields;
 	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
 		YieldTypes eYield = (YieldTypes)iI;
@@ -5463,13 +5454,14 @@ BestPlotBuild CvCityAI::AI_bestPlotBuild(const CvPlot& kPlot) const
 		}
 	}
 	
-	PlotYieldValue val = AI_plotYieldValue(kPlot, aiCurrentYields);
+	const PlotYieldValue val = AI_plotYieldValue(kPlot, aiCurrentYields);
 	int iCurrentValue = val.iAggregate;
 
 	int iBestValue = 0;
 	BuildTypes eBestBuild = NO_BUILD;
 	
-	int aiFinalYields[NUM_YIELD_TYPES];	
+	boost::array<int, NUM_YIELD_TYPES> aiFinalYields;
+
 	FeatureTypes eFeature = (FeatureTypes)kPlot.getFeatureType();
 	ImprovementTypes eImprovement = kPlot.getImprovementType();
 	
@@ -5477,10 +5469,8 @@ BestPlotBuild CvCityAI::AI_bestPlotBuild(const CvPlot& kPlot) const
 	if (eFeature != NO_FEATURE)
 	{
 		CvFeatureInfo& kFeature = GC.getFeatureInfo(eFeature);
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; eYield++)
 		{
-			YieldTypes eYield = (YieldTypes)iYield;
-			
 			if (kFeature.getYieldChange(eYield) > 0)
 			{
 				int iYield = kPlot.calculateNatureYield(eYield, getTeam(), false);
@@ -5496,10 +5486,8 @@ BestPlotBuild CvCityAI::AI_bestPlotBuild(const CvPlot& kPlot) const
 		if (kPlot.getBonusType() != NO_BONUS)
 		{
 			CvBonusInfo& kBonus = GC.getBonusInfo(kPlot.getBonusType());
-			for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; eYield++)
 			{
-				YieldTypes eYield = (YieldTypes)iYield;
-				
 				if (kBonus.getYieldChange(eYield) > 0)
 				{
 					if (kFeature.getYieldChange(eYield) < 0)
@@ -5516,10 +5504,8 @@ BestPlotBuild CvCityAI::AI_bestPlotBuild(const CvPlot& kPlot) const
 		}
 	}
 	
-	for (int iI = 0; iI < GC.getNumBuildInfos(); iI++)
+	for (BuildTypes eBuild = FIRST_BUILD; eBuild < NUM_BUILD_TYPES; eBuild++)
 	{
-		BuildTypes eBuild = (BuildTypes)iI;
-		
 		CvBuildInfo& kBuild = GC.getBuildInfo(eBuild);
 		bool bValid = GET_PLAYER(getOwnerINLINE()).canBuild(&kPlot, eBuild, true, true);
 		
@@ -5553,9 +5539,8 @@ BestPlotBuild CvCityAI::AI_bestPlotBuild(const CvPlot& kPlot) const
 				bRemoveFeature = kBuild.isFeatureRemove(eFeature);
 			}
 
-			for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; eYield++)
 			{
-				YieldTypes eYield = (YieldTypes)iYield;
 				aiFinalYields[eYield] = kPlot.getYieldWithBuild(eBuild, eYield, true);
 				
 				//Zero out particulary bad yields.
@@ -5579,7 +5564,7 @@ BestPlotBuild CvCityAI::AI_bestPlotBuild(const CvPlot& kPlot) const
 				}
 			}
 			
-			PlotYieldValue val = AI_plotYieldValue(kPlot, aiFinalYields);
+			const PlotYieldValue val = AI_plotYieldValue(kPlot, aiFinalYields);
 			int iValue = val.iAggregate;
 
 			if (kBuild.getRoute() != NO_ROUTE)
@@ -5652,9 +5637,8 @@ BestPlotBuild CvCityAI::AI_bestPlotBuild(const CvPlot& kPlot) const
 					if (bUnique)
 					{
 						CvFeatureInfo& kFeature = GC.getFeatureInfo(eFeature);
-						for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
+						for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; eYield++)
 						{
-							YieldTypes eYield = (YieldTypes)iYield;
 							if (kFeature.getYieldChange(eYield) > 0)
 							{
 								int iBestYield = 0;
@@ -5698,9 +5682,8 @@ BestPlotBuild CvCityAI::AI_bestPlotBuild(const CvPlot& kPlot) const
 						if (kBuild.isFeatureRemove(eFeature))
 						{
 							CvCity* pCity = NULL;
-							for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+							for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; eYield++)
 							{
-								YieldTypes eYield = (YieldTypes) iYield;
 								if (GC.getYieldInfo(eYield).isCargo())
 								{
 									iValue += kPlot.getFeatureYield(eBuild, eYield, getTeam(), &pCity) * 2;
@@ -5742,14 +5725,14 @@ BestPlotBuild CvCityAI::AI_bestPlotBuild(const CvPlot& kPlot) const
 			{
 				int iBestTime = kBestBuild.getTime();
 				
-				for (int iBuild = 0; iBuild < GC.getNumBuildInfos(); ++iBuild)
+				for (BuildTypes eBuild = FIRST_BUILD; eBuild < NUM_BUILD_TYPES; eBuild++)
 				{
-					CvBuildInfo& kLoopBuild = GC.getBuildInfo((BuildTypes)iBuild);
+					CvBuildInfo& kLoopBuild = GC.getBuildInfo(eBuild);
 					if (kLoopBuild.isFeatureRemove(eFeature))
 					{
 						if (kLoopBuild.getTime() < iBestTime)
 						{
-							eBestBuild = (BuildTypes)iBuild;
+							eBestBuild =eBuild;
 							iBestTime = kLoopBuild.getTime();
 						}
 					}
@@ -5889,6 +5872,7 @@ int CvCityAI::AI_calculateWaterWorldPercent() const
 	return iWaterPercent;
 }
 
+#if 0
 //Please note, takes the yield multiplied by 100
 int CvCityAI::AI_getYieldMagicValue(const int* piYieldsTimes100) const
 {
@@ -5979,6 +5963,7 @@ int CvCityAI::AI_countGoodTiles(bool bUnworkedOnly, int iThreshold, bool bWorker
 	}
 	return iCount;
 }
+#endif
 
 int CvCityAI::AI_calculateTargetCulturePerTurn()
 {

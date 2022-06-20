@@ -6,6 +6,7 @@
 #define CIV4_CITY_AI_H
 
 #include "CvCity.h"
+#include <boost\array.hpp>
 
 typedef std::vector<std::pair<UnitAITypes, int> > UnitTypeWeightArray;
 
@@ -150,18 +151,20 @@ public:
 	int AI_getNeededYield(YieldTypes eYield) const;
 	void AI_setNeededYield(YieldTypes eYield, int iNewValue);
 
-	int AI_getAverageYieldImported(YieldTypes eYield) const;
-	int AI_getAverageYieldExported(YieldTypes eYield) const;
-
+	// Unimplemented, inherited from vanilla
+	//int AI_getAverageYieldImported(YieldTypes eYield) const;
+	//int AI_getAverageYieldExported(YieldTypes eYield) const;
+	
 	int AI_getTradeBalance(YieldTypes eYield) const;
 	void AI_changeTradeBalance(YieldTypes eYield, int iAmount);
 	
 	int AI_getYieldAdvantage(YieldTypes eYield) const;
 	void AI_setYieldAdvantage(YieldTypes eYield, int iNewValue);
 
-	void AI_addImportedYield(YieldTypes eYield, int iAmount);
-	void AI_addExportedYield(YieldTypes eYield, int iAmount);
-
+	// Unimplemented, inherited from vanilla
+	//void AI_addImportedYield(YieldTypes eYield, int iAmount);
+	//void AI_addExportedYield(YieldTypes eYield, int iAmount);
+	
 	void AI_assignDesiredYield();
 	YieldTypes AI_getDesiredYield() const;
 
@@ -283,11 +286,12 @@ protected:
 
 	int AI_experienceWeight() const;
 
-	PlotYieldValue AI_plotYieldValue(const CvPlot& kPlot, const int* piYields) const;
+	PlotYieldValue AI_plotYieldValue(const CvPlot& kPlot, const boost::array<int, NUM_YIELD_TYPES>& piYields) const;
 	
-	int AI_getYieldMagicValue(const int* piYieldsTimes100) const;
-	int AI_getPlotMagicValue(const CvPlot* pPlot, bool bWorkerOptimization = false) const;
-	int AI_countGoodTiles(bool bUnworkedOnly, int iThreshold = 50, bool bWorkerOptimization = false) const;
+	// Unused and disabled for now, seems to be (mostly) copy-pasted from BTS 
+	//int AI_getYieldMagicValue(const int* piYieldsTimes100) const;
+	//int AI_getPlotMagicValue(const CvPlot* pPlot, bool bWorkerOptimization = false) const;
+	//int AI_countGoodTiles(bool bUnworkedOnly, int iThreshold = 50, bool bWorkerOptimization = false) const;
 	int AI_calculateTargetCulturePerTurn();
 
 	int AI_buildingSpecialYieldChangeValue(BuildingTypes kBuilding, YieldTypes eYield) const;
