@@ -105,7 +105,8 @@ public:
 
     int AI_calculateWaterWorldPercent() const;
 
-    int AI_countNumBonuses(BonusTypes eBonus, bool bIncludeOurs, bool bIncludeNeutral, int iOtherCultureThreshold, bool bLand = true, bool bWater = true) const;
+	// Unused and disabled for now, seems to be (mostly) copy-pasted from BTS 
+    //int AI_countNumBonuses(BonusTypes eBonus, bool bIncludeOurs, bool bIncludeNeutral, int iOtherCultureThreshold, bool bLand = true, bool bWater = true) const;
 
 	int AI_playerCloseness(PlayerTypes eIndex, int iMaxDistance) const;
 	int AI_cityThreat(bool bDangerPercent = false) const;
@@ -293,8 +294,8 @@ protected:
 	//int AI_getPlotMagicValue(const CvPlot* pPlot, bool bWorkerOptimization = false) const;
 	//int AI_countGoodTiles(bool bUnworkedOnly, int iThreshold = 50, bool bWorkerOptimization = false) const;
 	int AI_calculateTargetCulturePerTurn();
-
-	int AI_buildingSpecialYieldChangeValue(BuildingTypes kBuilding, YieldTypes eYield) const;
+	// Unused and disabled for now
+	//int AI_buildingSpecialYieldChangeValue(BuildingTypes kBuilding, YieldTypes eYield) const;
 
 	void AI_cachePlayerCloseness(int iMaxDistance) const;
 	void AI_updateWorkersNeededHere();

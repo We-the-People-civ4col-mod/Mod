@@ -5969,7 +5969,8 @@ int CvCityAI::AI_calculateTargetCulturePerTurn()
 {
 	return 1;
 }
-	
+
+#if 0
 // +1/+3/+5 plot based on base food yield (1/2/3)
 // +4 if being worked.
 // +4 if a bonus.
@@ -6066,6 +6067,7 @@ int CvCityAI::AI_countNumBonuses(BonusTypes eBonus, bool bIncludeOurs, bool bInc
 	return iCount;
 
 }
+#endif
 
 int CvCityAI::AI_playerCloseness(PlayerTypes eIndex, int iMaxDistance) const
 {
