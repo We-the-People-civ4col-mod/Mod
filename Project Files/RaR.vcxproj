@@ -367,102 +367,102 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Debug|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Profile|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Release|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Final Release|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Assert|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Release|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Release|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Final Release|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Final Release|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Build Release|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Debug|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test-Debug|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Debug|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Profile|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Profile|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Assert|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Assert|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v71</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -535,6 +535,7 @@ nmake clean  /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Profile|Win32'">
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -552,6 +553,7 @@ nmake clean  /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -569,6 +571,7 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Final Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -585,6 +588,7 @@ nmake dll /NOLOGO</NMakeReBuildCommandLine>
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath />
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Assert|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -602,6 +606,7 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -621,6 +626,7 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -645,6 +651,7 @@ set TARGET=Release
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Final Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -669,6 +676,7 @@ set TARGET=FinalRelease
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Final Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -687,6 +695,7 @@ bin\jom build /NOLOGO</NMakeReBuildCommandLine>
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Build Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -709,6 +718,7 @@ nmake BuildRelease /NOLOGO</NMakeReBuildCommandLine>
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Debug|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -727,6 +737,7 @@ bin\jom build /NOLOGO</NMakeReBuildCommandLine>
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath />
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test-Debug|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -751,6 +762,7 @@ set TARGET=Debug
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR /DCHECK_GLOBAL_CONSTANTS</AdditionalOptions>
     <NMakeIncludeSearchPath />
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Debug|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -775,7 +787,7 @@ set TARGET=Debug
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
-    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Profile|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -794,6 +806,7 @@ bin\jom build /NOLOGO</NMakeReBuildCommandLine>
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DPROFILING_ENABLED</AdditionalOptions>
     <NMakeIncludeSearchPath />
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Profile|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -818,6 +831,7 @@ set TARGET=Profile
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES /DPROFILING_ENABLED</AdditionalOptions>
     <NMakeIncludeSearchPath />
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Assert|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -837,6 +851,7 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Assert|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -861,6 +876,7 @@ set TARGET=Assert
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
+    <IncludePath>$(ProjectDir)\..\..\Compiler\Microsoft SDKs\Windows\v6.0\Include;$(ProjectDir)\..\..\..\Compiler\lib\Boost-1.32.0\include;$(ProjectDir)\..\..\..\Compiler\lib\Python24\include;$(ProjectDir)\..\..\Compiler\Microsoft Visual C++ Toolkit 2003\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>

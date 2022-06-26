@@ -23,6 +23,7 @@
 //#define USE_MEMMANAGER
 #include <crtdbg.h>
 #endif
+#include <algorithm>
 #include <vector>
 #include <list>
 #include <tchar.h>
