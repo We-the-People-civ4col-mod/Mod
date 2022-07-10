@@ -818,21 +818,27 @@ void CvUnit::doTurn()
 
 	setMadeAttack(false);
 
-	// ray, new Movement Calculation - START
-	// we do not reset to 0 anymore because this would prevent the new calulation
-	// we give back the full movement points of the Unit instead: Unit, Profession, Promotion, Traits, ...
-	// but of course we never give more than the Unit can actually have
-	// setMoves(0);
-	if ((getMoves() - maxMoves()) < 0)
+	if (GC.useClassicMovementSystem())
 	{
 		setMoves(0);
 	}
-
 	else
 	{
-		changeMoves(-maxMoves());
+		// ray, new Movement Calculation - START
+		// we do not reset to 0 anymore because this would prevent the new calulation
+		// we give back the full movement points of the Unit instead: Unit, Profession, Promotion, Traits, ...
+		// but of course we never give more than the Unit can actually have
+		// setMoves(0);
+		if ((getMoves() - maxMoves()) < 0)
+		{
+			setMoves(0);
+		}
+		else
+		{
+			changeMoves(-maxMoves());
+		}
+		// ray, new Movement Calculation - END
 	}
-	// ray, new Movement Calculation - END
 }
 
 
@@ -8277,10 +8283,16 @@ int CvUnit::maxMoves() const
 
 int CvUnit::movesLeft() const
 {
-	// ray, new Movement Calculation - START
-	// this can get smaller than 0 now
-	// return std::max(0, (maxMoves() - getMoves()));
-	return (maxMoves() - getMoves());
+	if (GC.useClassicMovementSystem())
+	{
+		return std::max(0, (maxMoves() - getMoves()));
+	}
+	else
+	{
+		// ray, new Movement Calculation - START
+		// this can get smaller than 0 now
+		return (maxMoves() - getMoves());
+	}
 }
 
 

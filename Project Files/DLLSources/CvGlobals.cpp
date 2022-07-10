@@ -373,7 +373,8 @@ m_bUSE_AI_CHOOSE_PRODUCTION_CALLBACK(false),
 m_bUSE_DO_PILLAGE_GOLD_CALLBACK(false),
 m_bUSE_GET_EXPERIENCE_NEEDED_CALLBACK(false),
 m_bUSE_DO_COMBAT_CALLBACK(false),
-// K-Mod \RaR end
+// K-Mod \RaR end,
+m_bUseClassicMovementSystem(true),
 m_paHints(NULL),
 m_paMainMenus(NULL)
 {
@@ -2833,6 +2834,7 @@ void CvGlobals::cacheGlobals()
 	m_bUSE_GET_EXPERIENCE_NEEDED_CALLBACK = getDefineINT("USE_GET_EXPERIENCE_NEEDED_CALLBACK") != 0;
 	m_bUSE_DO_COMBAT_CALLBACK = getDefineINT("USE_DO_COMBAT_CALLBACK") != 0;
 	// K-Mod end \ RaR
+	m_bUseClassicMovementSystem = getDefineINT("USE_CLASSIC_MOVEMENT_SYSTEM") != 0;
 }
 
 int CvGlobals::getDefineINT( const char * szName ) const

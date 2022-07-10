@@ -3404,10 +3404,16 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 
 	bool bHasTerrainCost = (iRegularCost > 0);
 
-	// ray, new Movement Calculation - START
-	// this needs to be prevented because the Unit will otherwise not get full Terrain Cost
-	// iRegularCost = std::min(iRegularCost, pUnit->baseMoves()) * GC.getMOVE_DENOMINATOR();
-	iRegularCost = iRegularCost * GC.getMOVE_DENOMINATOR();
+	if (GC.useClassicMovementSystem())
+	{
+		iRegularCost = std::min(iRegularCost, pUnit->baseMoves()) * GC.getMOVE_DENOMINATOR();
+	}
+	else
+	{
+		// ray, new Movement Calculation - START
+		// this (see if block) needs to be prevented because the Unit will otherwise not get full Terrain Cost
+		iRegularCost = iRegularCost * GC.getMOVE_DENOMINATOR();
+	}
 
 	if (bHasTerrainCost)
 	{

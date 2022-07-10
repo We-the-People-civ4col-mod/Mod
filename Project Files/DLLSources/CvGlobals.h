@@ -1485,6 +1485,8 @@ protected:
 	bool m_bUSE_DO_COMBAT_CALLBACK;
 	// K-Mod \ RaR end
 
+	bool m_bUseClassicMovementSystem;
+
 	// DLL interface
 	CvDLLUtilityIFaceBase* m_pDLL;
 
@@ -1512,6 +1514,8 @@ protected:
 		inline bool getUSE_DO_PILLAGE_GOLD_CALLBACK() { return m_bUSE_DO_PILLAGE_GOLD_CALLBACK; }
 		inline bool getUSE_GET_EXPERIENCE_NEEDED_CALLBACK() { return m_bUSE_GET_EXPERIENCE_NEEDED_CALLBACK; }
 		inline bool getUSE_DO_COMBAT_CALLBACK() { return m_bUSE_DO_COMBAT_CALLBACK; }
+
+		inline bool useClassicMovementSystem() { return m_bUseClassicMovementSystem; }
 };
 
 extern CvGlobals gGlobals;	// for debugging
