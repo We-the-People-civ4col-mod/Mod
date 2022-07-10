@@ -1305,6 +1305,6 @@
 	</Define>
 	<Define>
 		<DefineName>USE_CLASSIC_MOVEMENT_SYSTEM</DefineName>
-		<iDefineIntVal>1</iDefineIntVal>
+		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
 </Civ4Defines>
