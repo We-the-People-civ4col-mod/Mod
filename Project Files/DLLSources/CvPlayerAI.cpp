@@ -12231,7 +12231,9 @@ void CvPlayerAI::AI_doNativeArmy(TeamTypes eTeam)
 		{
 			int iValue = 0;
 
-			int iAreaPopulation = pArea->getPopulationPerPlayer(getID()) + pArea->getUnitsPerPlayer(getID());
+			// since we divide by area population, make sure it can't be zero
+			// one submitted savegame did trigger the zero population condition, hence crashed - Nightinggale
+			int iAreaPopulation = std::max(1, pArea->getPopulationPerPlayer(getID()) + pArea->getUnitsPerPlayer(getID()));
 
 			CvCity* pLoopCity = pLoopUnit->plot()->getPlotCity();
 			if (pLoopCity != NULL && pLoopCity->getOwnerINLINE() != getID())
