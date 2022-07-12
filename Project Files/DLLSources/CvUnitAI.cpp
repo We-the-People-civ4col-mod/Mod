@@ -15354,7 +15354,8 @@ bool CvUnitAI::AI_yieldDestination(int iMaxPath)
 			{
 				if (iPathTurns < iMaxPath)
 				{
-					int iValue = pCity->getMaxYieldCapacity() - pCity->getTotalYieldStored();
+					int iValue = 10 + 3 * std::max(0, pCity->getMaintainLevel(getYield()) - pCity->getYieldStored(getYield()));
+					iValue += pCity->getMaxYieldCapacity() - pCity->getTotalYieldStored();
 					iValue = iValue / (iPathTurns + 3);
 					
 					if (iValue > iBestValue)
