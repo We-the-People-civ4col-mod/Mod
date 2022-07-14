@@ -6483,10 +6483,16 @@ void CvPlayerAI::AI_doTradeRoutes()
 						int iStored = pLoopCity->getYieldStored(eLoopYield);
 
 						int iCargoYields = 0;
-						for (int iYield = 3; iYield < NUM_YIELD_TYPES; iYield++)//without YIELD_FOOD, YIELD_LUMBER, YIELD STONE
+
+						for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 						{
-							if ((pLoopCity->getYieldStored((YieldTypes)iYield) > 0) && (GC.getYieldInfo((YieldTypes)iYield).isCargo()))
-								{iCargoYields++;}
+							if (GC.getYieldInfo(eYield).isIgnoredForStorageCapacity())
+									continue;
+
+							if ((pLoopCity->getYieldStored(eYield) > 0) && (GC.getYieldInfo(eYield).isCargo()))
+							{
+								iCargoYields++;
+							}
 						}
 						if (iCargoYields < 1)
 						{
