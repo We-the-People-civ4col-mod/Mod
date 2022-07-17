@@ -11584,6 +11584,8 @@ int CvPlayerAI::AI_professionSuitability(const CvUnit* pUnit, ProfessionTypes eP
 	return iValue;
 }
 
+// Note: A swap should never fail so an assert\fail here indicates that the caller
+// messed up!
 void CvPlayerAI::AI_swapUnitJobs(CvUnit* pUnitA, CvUnit* pUnitB)
 {
 	FAssert(pUnitA->plot() == pUnitB->plot());

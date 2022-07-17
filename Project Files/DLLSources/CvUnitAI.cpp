@@ -8318,7 +8318,7 @@ bool CvUnitAI::AI_betterJob()
 				if (eLoopProfession == NO_PROFESSION)
 					continue;
 
-				if (pLoopUnit->canHaveProfession(eOriginalProfession, true) && canHaveProfession(eLoopProfession, true))
+				if (pLoopUnit->canHaveProfession(eOriginalProfession, true, NULL, /*bForceCheck*/true) && canHaveProfession(eLoopProfession, true, NULL, /*bForceCheck*/true))
 				{
 					units.push_back(pLoopUnit);
 				}
@@ -8335,7 +8335,7 @@ bool CvUnitAI::AI_betterJob()
 			{
 				if (!pLoopUnit->AI_hasAIChanged(5))
 				{
-					if (pLoopUnit->canHaveProfession(eOriginalProfession, true) && canHaveProfession(pLoopUnit->getProfession(), true))
+					if (pLoopUnit->canHaveProfession(eOriginalProfession, true, NULL, /*bForceCheck*/true) && canHaveProfession(pLoopUnit->getProfession(), true, NULL, /*bForceCheck*/true))
 					{
 						units.push_back(pLoopUnit);
 					}
