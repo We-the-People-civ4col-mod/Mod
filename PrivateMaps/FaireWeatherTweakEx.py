@@ -329,6 +329,7 @@ class MapConstants :
         self.SAVANNAH = 8
 	#Androrc End
         self.PLAINS = 9
+        self.SHALLOW_COAST = 10
         return
     
     def initInGameOptions(self):
@@ -3276,6 +3277,7 @@ def generateTerrainTypes():
     terrainGrass = gc.getInfoTypeForString("TERRAIN_GRASS")
     terrainHill = gc.getInfoTypeForString("TERRAIN_HILL")
     terrainCoast = gc.getInfoTypeForString("TERRAIN_COAST")
+    terrainShallowCoast = gc.getInfoTypeForString("TERRAIN_SHALLOW_COAST")
     terrainOcean = gc.getInfoTypeForString("TERRAIN_OCEAN")
     terrainPeak = gc.getInfoTypeForString("TERRAIN_PEAK")
     terrainMarsh = gc.getInfoTypeForString("TERRAIN_MARSH")
@@ -3290,6 +3292,8 @@ def generateTerrainTypes():
             terrainTypes[i] = terrainOcean
         elif sm.terrainMap[i] == mc.COAST:
             terrainTypes[i] = terrainCoast
+        elif sm.terrainMap[i] == mc.SHALLOW_COAST:
+            terrainTypes[i] = terrainShallowCoast
         elif sm.terrainMap[i] == mc.DESERT:
             terrainTypes[i] = terrainDesert
         elif sm.terrainMap[i] == mc.PRAIRIE:
@@ -3815,6 +3819,38 @@ def europeMatch(x,y):
         return True
     return False
 
+def isAdjacentPlotTerrainType(x, y, terrainType):
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    
+    for direction in range(1,9,1):
+        xx,yy = GetXYFromDirection(x, y, direction)
+        plot = mmap.plot(xx,yy)
+        if plot.getTerrainType() == terrainType:
+            return True
+    return False
+
+def generateShallowCoast():
+    
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    terrainCoast = gc.getInfoTypeForString("TERRAIN_COAST")
+    terrainShallowCoast = gc.getInfoTypeForString("TERRAIN_SHALLOW_COAST")
+    
+    shallowCoastChance = 0.2 # Baseline chance for convering coast to shallow coast
+    shallowCostAdjacentChance = 0.4 # Higher chance if there's already adjacent shallow coast
+    
+    # Convert some patches of (regular) coast to shallow coasts
+    for y in range(mc.height):
+        for x in range(mc.width):
+            plot = mmap.plot(x,y)
+            if plot.getTerrainType() == terrainCoast:
+                if isAdjacentPlotTerrainType(x, y, terrainShallowCoast):
+                    if PRand.random() <= shallowCostAdjacentChance:
+                        plot.setTerrainType(terrainShallowCoast, True, True)               
+                elif PRand.random() <= shallowCoastChance:
+                    plot.setTerrainType(terrainShallowCoast, True, True)
+
 def afterGeneration():
     gc = CyGlobalContext()
     mmap = gc.getMap()
@@ -3877,6 +3913,7 @@ def afterGeneration():
                     plot.setEurope(europeEast)
         
     createIce()
+    generateShallowCoast()
     
 def createIce():
     gc = CyGlobalContext()
