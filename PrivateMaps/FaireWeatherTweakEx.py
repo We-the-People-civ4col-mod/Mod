@@ -321,14 +321,14 @@ class MapConstants :
         self.COAST = 1
         self.MARSH = 2
         self.GRASS = 3
-        self.PLAINS = 4
+        self.PRAIRIE = 4
         self.DESERT = 5
         self.TUNDRA = 6
         self.SNOW = 7
 	#Androrc Savannah
         self.SAVANNAH = 8
 	#Androrc End
-
+        self.PLAINS = 9
         return
     
     def initInGameOptions(self):
@@ -1992,7 +1992,10 @@ class SmallMaps :
                         if self.rainFallMap[i] < (PRand.random() * (self.desertThreshold - minRain) + self.desertThreshold - minRain)/2.0 + minRain:
                             self.terrainMap[i] = mc.DESERT
                         else:
-                            self.terrainMap[i] = mc.PLAINS
+                            if PRand.random() <= 0.5:
+                                self.terrainMap[i] = mc.PRAIRIE
+                            else:
+                                self.terrainMap[i] = mc.PLAINS
                 elif self.rainFallMap[i] < self.plainsThreshold:
                     if self.averageTempMap[i] < mc.SnowTemp:
                         self.terrainMap[i] = mc.SNOW
@@ -2000,7 +2003,10 @@ class SmallMaps :
                         self.terrainMap[i] = mc.TUNDRA
                     else:
                         if self.rainFallMap[i] < ((PRand.random() * (self.plainsThreshold - self.desertThreshold) + self.plainsThreshold - self.desertThreshold))/2.0 + self.desertThreshold: 
-                            self.terrainMap[i] = mc.PLAINS
+                            if PRand.random() <= 0.5:
+                                self.terrainMap[i] = mc.PRAIRIE
+                            else:
+                                self.terrainMap[i] = mc.PLAINS
                         else:
                             self.terrainMap[i] = mc.GRASS
                 elif self.rainFallMap[i] < self.grassThreshold:
@@ -2129,12 +2135,14 @@ class SmallMaps :
                     lineString += '+'
                 elif mapLoc == mc.MARSH:
                     lineString += 'M'
-                elif mapLoc == mc.PLAINS:
+                elif mapLoc == mc.PRAIRIE:
                     lineString += 'P'
                 elif mapLoc == mc.TUNDRA:
                     lineString += 'T'
                 elif mapLoc == mc.SNOW:
                     lineString += 'I'
+                elif mapLoc == mc.PLAINS:
+                    lineString += 'L'    
             lineString += "-" + wz.GetZoneName(wz.GetZone(y))
             print lineString
         lineString = " "
@@ -2893,7 +2901,7 @@ class RiverMap :
                     lineString1 += 'D.'
                 elif mapLoc == mc.GRASS:
                     lineString1 += 'R.'
-                elif mapLoc == mc.PLAINS:
+                elif mapLoc == mc.PRAIRIE:
                     lineString1 += 'P.'
                 elif mapLoc == mc.TUNDRA:
                     lineString1 += 'T.'
@@ -2901,6 +2909,8 @@ class RiverMap :
                     lineString1 += 'M.'
                 elif mapLoc == mc.SNOW:
                     lineString1 += 'I.'
+                elif mapLoc == mc.PLAINS:
+                    lineString1 += 'L.'
                 mapLoc = rm.riverMap[GetIndex(x,y)]
                 if mapLoc == rm.O:
                     lineString2 += '..'
@@ -3260,7 +3270,7 @@ def generateTerrainTypes():
     print "Adding Terrain"
     gc = CyGlobalContext()
     terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
-    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS")
+    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
     terrainIce = gc.getInfoTypeForString("TERRAIN_SNOW")
     terrainTundra = gc.getInfoTypeForString("TERRAIN_TUNDRA")
     terrainGrass = gc.getInfoTypeForString("TERRAIN_GRASS")
@@ -3272,6 +3282,7 @@ def generateTerrainTypes():
     #Androrc Savannah
     terrainSavannah = gc.getInfoTypeForString("TERRAIN_SAVANNAH")
     #Androrc End
+    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
     
     terrainTypes = [0]*(mc.width*mc.height)
     for i in range(mc.width*mc.height):
@@ -3281,8 +3292,8 @@ def generateTerrainTypes():
             terrainTypes[i] = terrainCoast
         elif sm.terrainMap[i] == mc.DESERT:
             terrainTypes[i] = terrainDesert
-        elif sm.terrainMap[i] == mc.PLAINS:
-            terrainTypes[i] = terrainPlains
+        elif sm.terrainMap[i] == mc.PRAIRIE:
+            terrainTypes[i] = terrainPrairie
         elif sm.terrainMap[i] == mc.GRASS:
             terrainTypes[i] = terrainGrass
         #Androrc Savannah
@@ -3295,6 +3306,9 @@ def generateTerrainTypes():
             terrainTypes[i] = terrainIce
         elif sm.terrainMap[i] == mc.MARSH:
             terrainTypes[i] = terrainMarsh
+        elif sm.terrainMap[i] == mc.PLAINS:
+            terrainTypes[i] = terrainPlains
+            
     print "Finished generating terrain types."
     return terrainTypes
 
@@ -3751,7 +3765,7 @@ def addFeatures():
             plot.isPeak() == False:
                 if sm.rainFallMap[i] > sm.plainsThreshold*1.5:#jungle
                     if sm.averageTempMap[i] > mc.JungleTemp:
-                        if sm.terrainMap[i] == mc.PLAINS:
+                        if sm.terrainMap[i] == mc.PRAIRIE:
                             plot.setFeatureType(featureForest,0)
                         ## R&R, ray, corrected maps to generate Savannah plains
                         ## agnat86, generates also unvegetated Savannah
@@ -3783,7 +3797,7 @@ def addFeatures():
                             plot.setFeatureType(featureForestTundra,0)
 
             if plot.isPeak() == False and plot.isWater() == False:
-                if sm.terrainMap[i] == mc.PLAINS and PRand.random() < mc.chanceForLightForest:
+                if sm.terrainMap[i] == mc.PRAIRIE and PRand.random() < mc.chanceForLightForest:
                     plot.setFeatureType(featureLightForest,0)
                 if sm.terrainMap[i] == mc.MARSH and PRand.random() < mc.chanceForTreelessMarsh:
                     plot.setFeatureType(FeatureTypes.NO_FEATURE,0)
