@@ -7,6 +7,22 @@
 #include "CvSelectionGroup.h"
 #include "CvMap.h"
 
+#define MULTICORE
+
+#ifdef MULTICORE
+
+#pragma push_macro("free")  
+#pragma push_macro("new")  
+#undef free
+#undef new
+#include "tbb/parallel_for.h"
+#include "tbb/blocked_range.h"
+#include "tbb/cache_aligned_allocator.h"
+#pragma pop_macro("new")  
+#pragma pop_macro("free")  
+
+#endif
+
 int KmodPathFinder::admissible_scaled_weight = 1;
 int KmodPathFinder::admissible_base_weight = 1;
 
@@ -316,6 +332,90 @@ void KmodPathFinder::RecalculateHeuristics()
 	}
 }
 
+struct ProcesNodesOutput 
+{
+
+};
+
+
+namespace
+{
+// Allocated once and then cleared to avoid allocations in the inner loop
+// Note: The allocator can't deal with FAStarNode* so we have to use an int :(
+std::vector<int, tbb::cache_aligned_allocator<int> > open_list_out(NUM_DIRECTION_TYPES);
+std::vector<int, tbb::cache_aligned_allocator<int> > child_nodes_out(NUM_DIRECTION_TYPES);
+std::vector<FAStarNode*> child_nodes(NUM_DIRECTION_TYPES);
+}
+
+// We can process each child node in parallell sine they are independent of each other. Also, even though the parent node is shared it is not modified
+// inside the par. loop
+struct ProcessNodesInternal
+{
+	ProcessNodesInternal(FAStarNode* parent_node_, std::vector<FAStarNode*>& child_nodes_, CvPathSettings& settings_, int dest_x_, int dest_y_) :
+		parent_node(parent_node_), child_nodes(child_nodes_), settings(settings_), dest_x(dest_x_), dest_y(dest_y_)  {}
+	
+	void operator()(const tbb::blocked_range<size_t>& r) const
+	{
+		const size_t end = r.end();
+
+		for (size_t i = r.begin(); i != end; ++i)
+		{
+			FAStarNode* child_node = child_nodes[i];
+			const int x = child_node->m_iX;
+			const int y = child_node->m_iY;
+			const bool bNewNode = !child_node->m_bOnStack;
+
+			if (bNewNode)
+			{
+				//child_node->m_iX = x;
+				//child_node->m_iY = y;
+				pathAdd(parent_node, child_node, ASNC_NEWADD, &settings, 0);
+
+				if (pathValid_join(parent_node, child_node, settings.pGroup , settings.iFlags))
+				{
+					// This path to the new node is valid. So we need to fill in the data.
+					child_node->m_iKnownCost = MAX_INT;
+					child_node->m_iHeuristicCost = settings.iHeuristicWeight * pathHeuristic(x, y, dest_x, dest_y);
+					// total cost will be set when the parent is set.
+
+					child_node->m_bOnStack = true;
+
+					if (pathValid_source(child_node, settings.pGroup, settings.iFlags))
+					{
+						// We keep a separate out array to avoid having to call push back. The order
+						// is not significant (the incided would not have to match up the child's index though)
+						open_list_out[i] = reinterpret_cast<int>(child_node);
+						child_node->m_eFAStarListType = FASTARLIST_OPEN;
+					}
+					else
+					{
+						child_node->m_eFAStarListType = FASTARLIST_CLOSED; // This node is a dead end.
+					}
+				}
+				else
+				{
+					// can't get to the plot from here.
+					child_node = NULL;
+				}
+			}
+			else
+			{
+				if (!pathValid_join(parent_node, child_node, settings.pGroup, settings.iFlags))
+					child_node = NULL;
+			}
+
+			child_nodes_out[i] = reinterpret_cast<int>(child_node);
+		}
+	}
+
+	// TODO: Constify
+	FAStarNode* parent_node;
+	std::vector<FAStarNode*>& child_nodes;
+	CvPathSettings& settings;
+	int dest_x;
+	int dest_y;
+};
+
 bool KmodPathFinder::ProcessNode()
 {
 	OpenList_t::iterator best_it = open_list.end();
@@ -345,15 +445,20 @@ bool KmodPathFinder::ProcessNode()
 
 	FAssert(&GetNode(parent_node->m_iX, parent_node->m_iY) == parent_node);
 
+	child_nodes.clear();
+	// Fill the out list since we consider non-null to contain a valid node at that index
+	std::fill(open_list_out.begin(), open_list_out.end(), NULL);
+	std::fill(child_nodes_out.begin(), child_nodes_out.end(), NULL);
+
 	// open a new node for each direction coming off the chosen node.
 	for (int i = 0; i < NUM_DIRECTION_TYPES; i++)
 	{
-		CvPlot* pAdjacentPlot = plotDirection(parent_node->m_iX, parent_node->m_iY, (DirectionTypes)i);
+		CvPlot* const pAdjacentPlot = plotDirection(parent_node->m_iX, parent_node->m_iY, (DirectionTypes)i);
 		if (!pAdjacentPlot)
 			continue;
 
-		const int& x = pAdjacentPlot->getX(); // convenience
-		const int& y = pAdjacentPlot->getY(); //
+		const int x = pAdjacentPlot->getX(); // convenience
+		const int y = pAdjacentPlot->getY(); //
 
 		if (parent_node->m_pParent && parent_node->m_pParent->m_iX == x && parent_node->m_pParent->m_iY == y)
 			continue; // no need to backtrack.
@@ -362,49 +467,36 @@ bool KmodPathFinder::ProcessNode()
 		//FAssert(iPlotNum >= 0 && iPlotNum < GC.getMap().numPlots());
 
 		FAStarNode* child_node = &GetNode(x, y);
-		bool bNewNode = !child_node->m_bOnStack;
+		child_node->m_iX = x;
+		child_node->m_iY = y;
+		child_nodes.push_back(child_node);			
+	}
 
-		if (bNewNode)
-		{
-			child_node->m_iX = x;
-			child_node->m_iY = y;
-			pathAdd(parent_node, child_node, ASNC_NEWADD, &settings, 0);
+	// Execute parallel work
+	ProcessNodesInternal pni(parent_node, child_nodes, settings, dest_x, dest_y);	tbb::parallel_for(tbb::blocked_range<size_t>(0, child_nodes.size()), pni, tbb::auto_partitioner());
 
-			if (pathValid_join(parent_node, child_node, settings.pGroup , settings.iFlags))
-			{
-				// This path to the new node is valid. So we need to fill in the data.
-				child_node->m_iKnownCost = MAX_INT;
-				child_node->m_iHeuristicCost = settings.iHeuristicWeight * pathHeuristic(x, y, dest_x, dest_y);
-				// total cost will be set when the parent is set.
+	// Add discovered reachable nodes to the open list	
+	for (size_t i=0; i<open_list_out.size(); i++)
+	{
+		FAStarNode* const child_node = reinterpret_cast<FAStarNode*>(open_list_out[i]);
 
-				child_node->m_bOnStack = true;
-
-				if (pathValid_source(child_node, settings.pGroup, settings.iFlags))
-				{
-					open_list.push_back(child_node);
-					child_node->m_eFAStarListType = FASTARLIST_OPEN;
-				}
-				else
-				{
-					child_node->m_eFAStarListType = FASTARLIST_CLOSED; // This node is a dead end.
-				}
-			}
-			else
-			{
-				// can't get to the plot from here.
-				child_node = NULL;
-			}
+		if (child_node != NULL)
+		{		
+			open_list.push_back(child_node);
 		}
-		else
-		{
-			if (!pathValid_join(parent_node, child_node, settings.pGroup, settings.iFlags))
-				child_node = NULL;
-		}
-
+	}
+		for (size_t i = 0; i < child_nodes_out.size(); ++i)
+	{	
+		FAStarNode* const child_node = reinterpret_cast<FAStarNode*>(child_nodes_out[i]);
+		
 		if (child_node == NULL)
 			continue;
+	
+		const int x = child_node->m_iX;
+		const int y = child_node->m_iY;
+		const bool bNewNode = !child_node->m_bOnStack;
 
-		FAssert(child_node->m_iX == x && child_node->m_iY == y);
+		//FAssert(child_node->m_iX == x && child_node->m_iY == y);
 
 		if (x == dest_x && y == dest_y)
 			end_node = child_node; // We've found our destination - but we still need to finish our calculations
