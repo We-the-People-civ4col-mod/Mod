@@ -60,5 +60,53 @@
         <Tag>TXT_KEY_FATHER_SIR_THOMAS_GATES_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
+    </TEXT>
+	<!-- EUSEBIO FRANCISCO KINO -->
+	<TEXT>
+        <Tag>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO</Tag>
+        <English>
+            <Text>Eusebio Francisco Kino</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>Eusebio Francisco Kino</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO_PEDIA</Tag>
+        <English>[H1]Eusebio Francisco Kino[\H1][NEWLINE][BOLD]Lived : [\BOLD]1654 - 1711[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]Eusebio Francisco Kino[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1654 - 1711[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- HUMPHREY GILBERT -->
+	<TEXT>
+        <Tag>TXT_KEY_FATHER_HUMPHREY_GILBERT</Tag>
+        <English>
+            <Text>Humphrey Gilbert</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>Humphrey Gilbert</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_HUMPHREY_GILBERT_PEDIA</Tag>
+        <English>[H1]Humphrey Gilbert[\H1][NEWLINE][BOLD]Lived : [\BOLD]1537 - 1583[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]Humphrey Gilbert[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1537 - 1583[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_HUMPHREY_GILBERT_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
     </TEXT>	
 </Civ4GameText>

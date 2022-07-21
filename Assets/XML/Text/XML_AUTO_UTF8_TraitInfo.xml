@@ -576,6 +576,14 @@
         <Tag>TXT_KEY_TRAIT_JOHN_ROLFE</Tag>
         <English>TXT_KEY_FATHER_JOHN_ROLFE</English>
     </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_EUSEBIO_FRANCISO_KINO</Tag>
+        <English>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO</English>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_HUMPHREY_GILBERT</Tag>
+        <English>TXT_KEY_FATHER_HUMPHREY_GILBERT</English>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_JOHN_SMITH</Tag>
         <English>TXT_KEY_FATHER_JOHN_SMITH</English>

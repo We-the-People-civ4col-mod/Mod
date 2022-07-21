@@ -160,7 +160,7 @@
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>790</iCost>
+                    <iCost>800</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait/>
@@ -168,6 +168,40 @@
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,4,2</Button>
+        </FatherInfo>
+		<FatherInfo>
+            <Type>FATHER_HUMPHREY_GILBERT</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/Humphrey_Gilbert.dds</Portrait>
+            <Description>TXT_KEY_FATHER_HUMPHREY_GILBERT</Description>
+            <Civilopedia>TXT_KEY_FATHER_HUMPHREY_GILBERT_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_HUMPHREY_GILBERT_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_RELIGION</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_RAPE_PLANTER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_OIL_TRADER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
+                    <iCost>950</iCost>
+                </FatherPointCost>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>900</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_HUMPHREY_GILBERT</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,4,14</Button>
         </FatherInfo>
         <FatherInfo>
             <Type>FATHER_JUAN_PONCE_DE_LEON</Type>
@@ -194,11 +228,11 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
-                    <iCost>1000</iCost>
+                    <iCost>1100</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>950</iCost>
+                    <iCost>1000</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_JUAN_PONCE_DE_LEON</Trait>
@@ -228,11 +262,11 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_EXPLORATION</FatherPointType>
-                    <iCost>1200</iCost>
+                    <iCost>1250</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>1050</iCost>
+                    <iCost>1100</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_GONZALO_JIMENEZ_DE_QUESADA</Trait>
@@ -912,6 +946,10 @@
                     <UnitClass>UNITCLASS_TOBACCO_PLANTER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
+				<FreeUnit>
+                    <UnitClass>UNITCLASS_TOBACCONIST</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>
                 <FatherPointCost>
@@ -942,6 +980,10 @@
                     <UnitClass>UNITCLASS_SUGAR_PLANTER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
+				<FreeUnit>
+                    <UnitClass>UNITCLASS_DISTILLER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>
                 <FatherPointCost>
@@ -970,6 +1012,10 @@
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_COTTON_PLANTER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+				<FreeUnit>
+                    <UnitClass>UNITCLASS_WEAVER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
@@ -1127,7 +1173,11 @@
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_INDIGO_PLANTER</UnitClass>
-                    <iFreeUnits>2</iFreeUnits>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+				<FreeUnit>
+                    <UnitClass>UNITCLASS_DYER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>
@@ -1505,6 +1555,40 @@
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,1,7</Button>
+        </FatherInfo>		
+		<FatherInfo>
+            <Type>FATHER_EUSEBIO_FRANCISO_KINO</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/Eusebio_Francisco_Kino.dds</Portrait>
+            <Description>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO</Description>
+            <Civilopedia>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_RELIGION</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_OLIVES_PLANTER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_OIL_TRADER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_RELIGION</FatherPointType>
+                    <iCost>1400</iCost>
+                </FatherPointCost>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>1750</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_EUSEBIO_FRANCISO_KINO</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,3,14</Button>
         </FatherInfo>
         <FatherInfo>
             <Type>FATHER_ROGER_WILLIAMS</Type>
