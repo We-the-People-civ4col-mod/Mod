@@ -175,7 +175,7 @@
             <Description>TXT_KEY_FATHER_HUMPHREY_GILBERT</Description>
             <Civilopedia>TXT_KEY_FATHER_HUMPHREY_GILBERT_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_FATHER_HUMPHREY_GILBERT_STRATEGY</Strategy>
-            <FatherCategory>FATHERCATEGORY_RELIGION</FatherCategory>
+            <FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
             <RevealImprovements/>
             <FreeUnits>
                 <FreeUnit>
@@ -1459,7 +1459,7 @@
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,8,9</Button>
         </FatherInfo>
-<FatherInfo>
+        <FatherInfo>
             <Type>FATHER_TOME_DE_SOUSA</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Tome_de_Sousa.dds</Portrait>
             <Description>TXT_KEY_FATHER_TOME_DE_SOUSA</Description>
