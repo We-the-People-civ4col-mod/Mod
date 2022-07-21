@@ -3417,7 +3417,7 @@
             <FreeBuildingClasses/>
             <GoodyFactors/>
         </TraitInfo>
-		<TraitInfo>
+        <TraitInfo>
             <Type>TRAIT_EUSEBIO_FRANCISO_KINO</Type>
             <Description>TXT_KEY_TRAIT_EUSEBIO_FRANCISO_KINO</Description>
             <ShortDescription>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO</ShortDescription>
@@ -3511,7 +3511,7 @@
             <FreeBuildingClasses/>
             <GoodyFactors/>
         </TraitInfo>
-		<TraitInfo>
+        <TraitInfo>
             <Type>TRAIT_HUMPHREY_GILBERT</Type>
             <Description>TXT_KEY_TRAIT_HUMPHREY_GILBERT</Description>
             <ShortDescription>TXT_KEY_FATHER_HUMPHREY_GILBERT</ShortDescription>

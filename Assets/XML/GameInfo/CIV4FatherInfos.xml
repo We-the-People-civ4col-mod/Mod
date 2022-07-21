@@ -169,7 +169,7 @@
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,4,2</Button>
         </FatherInfo>
-		<FatherInfo>
+        <FatherInfo>
             <Type>FATHER_HUMPHREY_GILBERT</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Humphrey_Gilbert.dds</Portrait>
             <Description>TXT_KEY_FATHER_HUMPHREY_GILBERT</Description>
@@ -946,7 +946,7 @@
                     <UnitClass>UNITCLASS_TOBACCO_PLANTER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
-				<FreeUnit>
+                <FreeUnit>
                     <UnitClass>UNITCLASS_TOBACCONIST</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
@@ -980,7 +980,7 @@
                     <UnitClass>UNITCLASS_SUGAR_PLANTER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
-				<FreeUnit>
+                <FreeUnit>
                     <UnitClass>UNITCLASS_DISTILLER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
@@ -1014,7 +1014,7 @@
                     <UnitClass>UNITCLASS_COTTON_PLANTER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
-				<FreeUnit>
+                <FreeUnit>
                     <UnitClass>UNITCLASS_WEAVER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
@@ -1175,7 +1175,7 @@
                     <UnitClass>UNITCLASS_INDIGO_PLANTER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
-				<FreeUnit>
+                <FreeUnit>
                     <UnitClass>UNITCLASS_DYER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
@@ -1556,7 +1556,7 @@
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,1,7</Button>
         </FatherInfo>		
-		<FatherInfo>
+        <FatherInfo>
             <Type>FATHER_EUSEBIO_FRANCISO_KINO</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Eusebio_Francisco_Kino.dds</Portrait>
             <Description>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO</Description>
