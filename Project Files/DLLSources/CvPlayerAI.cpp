@@ -5061,9 +5061,21 @@ int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* p
 		break;
 	}
 
+#if 0
+	const int iEuropeCost = kUnitInfo.getEuropeCost();
 
-	iValue +=  kUnitInfo.getAIWeight();
+	// Normalize unit costs to prevent the AI from repeating purchases of the same
+	// unit when the cost escalates
+	if (iEuropeCost > 0)
+	{
+		// Since the value is not scaled and only compared to similarly scaled values
+		// it's ok to multiply here to prevent truncatin after the division.
+		iValue *= 100;
+		iValue /= iEuropeCost;
+	}
 
+	//iValue +=  kUnitInfo.getAIWeight();
+#endif
 	return std::max(0, iValue);
 }
 
@@ -8359,7 +8371,7 @@ void CvPlayerAI::AI_doEurope()
 		return;
 	}
 
-	AI_updateNextBuyUnit(false);
+	AI_updateNextBuyUnit();
 	
 	for (int i = 0; i < getNumEuropeUnits(); i++)
 	{
@@ -8390,15 +8402,14 @@ void CvPlayerAI::AI_doEurope()
 							AI_clearStrategy(STRATEGY_MILITARY_BUILDUP);
 						}
 						// TAC - AI Military Buildup - koma13 - END
-						AI_updateNextBuyUnit(false);
+						AI_updateNextBuyUnit();
 					}
 				}
 			}
 
-			// TAC - AI Military Buildup - koma13 - START
-			//if (!bProfessionChange)
-			if (!bProfessionChange && (kUnit.getTeacherWeight() <= 0) && !AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
-			// TAC - AI Military Buildup - koma13 - END
+			// Only consider changing the profession if this is a regular, unequipped colonist.
+			// TODO: Consider checkinf for lack of equipment instead!
+			if (!bProfessionChange && (pUnit->getProfession() == PROFESSION_COLONIST) && !AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 			{
 				if (AI_neededWorkers(NULL) > 0)
 				{
@@ -15105,7 +15116,7 @@ UnitTypes CvPlayerAI::AI_nextBuyProfessionUnit(ProfessionTypes* peProfession, Un
 
 namespace 
 { 
-	const UnitAITypes validUnitAITypes[] = { UNITAI_DEFENSIVE , UNITAI_OFFENSIVE , UNITAI_COUNTER, UNITAI_TRANSPORT_SEA, UNITAI_ASSAULT_SEA, UNITAI_COMBAT_SEA, UNITAI_PIRATE_SEA, UNITAI_ESCORT_SEA };
+	const UnitAITypes validUnitAITypes[] = {UNITAI_DEFENSIVE , UNITAI_OFFENSIVE , UNITAI_COUNTER, UNITAI_TRANSPORT_SEA, UNITAI_COMBAT_SEA, UNITAI_PIRATE_SEA};
 }
 
 // TAC - AI purchases military units - koma13 - START
@@ -15126,58 +15137,7 @@ void CvPlayerAI::AI_updateNextBuyUnit(bool bPriceLimit)
 		int iMultiplier = AI_unitAIValueMultipler(eLoopUnitAI);
 		if (iMultiplier <= 0)
 			continue;
-
-		// TAC - AI purchases military units - koma13 - START
-		/*
-		int iTreasureSum = -1;
-		int iTreasureSize = -1;
-
-		if ((eLoopUnitAI == UNITAI_TRANSPORT_SEA) && (AI_totalUnitAIs(UNITAI_TREASURE) > 0))
-		{
-			int iLoop;
-			CvUnit* pLoopUnit;
-			for (pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
-			{
-				if (pLoopUnit->canMove())
-				{
-					if (pLoopUnit->AI_getUnitAIType() == UNITAI_TREASURE)
-					{
-						int iSize = pLoopUnit->getUnitInfo().getRequiredTransportSize();
-						if (iSize > 1)
-						{
-							iTreasureSize = std::max(iTreasureSize, iSize);
-							iTreasureSum += pLoopUnit->getYieldStored();
-						}
-					}
-				}
-			}
-			for (pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
-			{
-				if (pLoopUnit->AI_getUnitAIType() == UNITAI_TRANSPORT_SEA)
-				{
-					if (pLoopUnit->cargoSpace() >= iTreasureSize)
-					{
-						//Can already transport all treasure, cancel.
-						iTreasureSize = -1;
-						iTreasureSum = -1;
-						break;
-					}
-				}
-			}
-		}
-		if (iTreasureSum < 1)
-		{
-			iTreasureSum = 1;
-		}
-		if (iTreasureSize < 1)
-		{
-			iTreasureSize = 1;
-		}
-		if (iTreasureSum > 0)
-		{
-			bValid = true;
-		}
-		*/
+		
 		// TAC - AI purchases military units - koma13 - END
 		// TAC - AI Assault Sea - koma13 - START
 		if (eLoopUnitAI == UNITAI_ASSAULT_SEA || eLoopUnitAI == UNITAI_ESCORT_SEA)
@@ -15192,38 +15152,33 @@ void CvPlayerAI::AI_updateNextBuyUnit(bool bPriceLimit)
 			UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
 			if (eLoopUnit != NO_UNIT)
 			{
+				// Only consider units that default to this unit ai
 				const CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
-				if (kUnitInfo.getDefaultProfession() == NO_PROFESSION || kUnitInfo.getDefaultUnitAIType() == UNITAI_DEFENSIVE || kUnitInfo.getDefaultUnitAIType() == UNITAI_COUNTER)
+				if (kUnitInfo.getDefaultUnitAIType() != eLoopUnitAI)
+					continue;
+
+				//if (kUnitInfo.getDefaultProfession() == NO_PROFESSION || kUnitInfo.getDefaultUnitAIType() == UNITAI_DEFENSIVE || kUnitInfo.getDefaultUnitAIType() == UNITAI_COUNTER)
 				{
-					int iPrice = getEuropeUnitBuyPrice(eLoopUnit);
+					const int iPrice = getEuropeUnitBuyPrice(eLoopUnit);
 					// TAC - AI purchases military units - koma13 - START
 					//if (iPrice > 0)// && !kUnitInfo.getUnitAIType(eLoopUnitAI))
 					int iInitialPrice = getEuropeUnitBuyPrice(eLoopUnit, false);
-					int iMaxPrice = (iInitialPrice * GC.getDefineINT("AI_EUROPE_PRICE_LIMIT_PERCENT")) / 100;
-					if ((iPrice > 0) && ((iPrice < iMaxPrice) || !bPriceLimit)) // && (iPrice <= getGold()))
+					//int iMaxPrice = (iInitialPrice * GC.getDefineINT("AI_EUROPE_PRICE_LIMIT_PERCENT")) / 100;
+					//if ((iPrice > 0) && ((iPrice < iMaxPrice) || !bPriceLimit)) // && (iPrice <= getGold()))
+					if ((iPrice > 0)  && (iPrice <= getGold()))
 					{
-						/*
-						if (iTreasureSum > 0) //Perform treasure calculations
-						{
-							if (kUnitInfo.getCargoSpace() >= iTreasureSize)
-							{
-								iMultipler += 100 + (100 * iTreasureSum) / iPrice;
-								iPrice = std::max(iPrice / 3, iPrice - iTreasureSum);
-							}
-						}
-						*/
-
 						if (kUnitInfo.getDefaultUnitAIType() == UNITAI_COMBAT_SEA)
 						{
 							//if (kUnitInfo.isHiddenNationality())
+							// TOOD: This veto does not belong here!
 							if (kUnitInfo.isHiddenNationality() || (kUnitInfo.getDefaultUnitAIType() == UNITAI_TRANSPORT_SEA))
 							{
 								iMultiplier = 0;
 							}
 						}
 
-						int iGoldValue = AI_unitGoldValue(eLoopUnit, eLoopUnitAI, NULL);
-						int iValue = (iMultiplier * iGoldValue) / iPrice;
+						const int iGoldValue = AI_unitGoldValue(eLoopUnit, eLoopUnitAI, NULL);
+						int iValue = (100*(iMultiplier * iGoldValue)) / iPrice;
 						if (getEuropeUnitBuyPrice(eLoopUnit) > getGold())
 						{
 							if (iValue < 100)
@@ -15245,6 +15200,7 @@ void CvPlayerAI::AI_updateNextBuyUnit(bool bPriceLimit)
 		}
 	}
 
+#if 0
 	// TAC - AI Military Buildup - koma13 - START
 	if (bPriceLimit && (eBestUnit != NO_UNIT))
 	{
@@ -15257,16 +15213,19 @@ void CvPlayerAI::AI_updateNextBuyUnit(bool bPriceLimit)
 		}
 	}
 	// TAC - AI Military Buildup - koma13 - END
+#endif
 
 	m_eNextBuyUnit = eBestUnit;
 	m_eNextBuyUnitAI = eBestUnitAI;
 	m_iNextBuyUnitValue = iBestValue;
 }
 
+/*
 int CvPlayerAI::AI_highestNextBuyValue()
 {
 	return std::max(m_iNextBuyUnitValue, m_iNextBuyProfessionValue);
 }
+*/
 
 void CvPlayerAI::AI_updateNextBuyProfession()
 {
