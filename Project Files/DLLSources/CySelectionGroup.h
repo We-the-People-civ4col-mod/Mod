@@ -75,11 +75,7 @@ public:
 	CyPlot* getPathFirstPlot();
 	CyPlot* getPathEndTurnPlot();
 	
-	// TAC - AI Improved Naval AI - koma13 - START
-	//bool generatePath(CyPlot* pFromPlot, CyPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns);
-	bool generatePath(CyPlot* pFromPlot, CyPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns, bool bIgnoreDanger);
-	// TAC - AI Improved Naval AI - koma13 - END
-
+	bool generatePath(CyPlot* pFromPlot, CyPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns); // Exposed to Python (K-mod added iMaxPath)
 	void resetPath();
 	bool isAssignedTradeRoute(int iRouteID) const;
 	bool canAssignTradeRoute(int iRouteID, bool bReusePath) const;

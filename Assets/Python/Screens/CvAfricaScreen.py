@@ -1236,9 +1236,9 @@ class CvAfricaScreen:
 
 		while (city):
 			if (city.isCoastal(gc.getMIN_WATER_SIZE_FOR_OCEAN()) and city.isEuropeAccessable()):
-				if unit.getGroup().generatePath(plotEast, city.plot(), 0, false, None, true):
+				if unit.getGroup().generatePath(plotEast, city.plot(), 0, false, None):
 					self.CityPlotList.append([city, None])
-				elif unit.getGroup().generatePath(plotWest, city.plot(), 0, false, None, true):
+				elif unit.getGroup().generatePath(plotWest, city.plot(), 0, false, None):
 					self.CityPlotList.append([city, None])
 			(city, iter) = player.nextCity(iter, false)
 	
