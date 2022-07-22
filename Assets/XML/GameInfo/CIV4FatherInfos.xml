@@ -968,6 +968,40 @@
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,7,6</Button>
         </FatherInfo>
         <FatherInfo>
+            <Type>FATHER_ROBERT_BAKEWELL</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/Robert_Bakewell.dds</Portrait>
+            <Description>TXT_KEY_FATHER_ROBERT_BAKEWELL</Description>
+            <Civilopedia>TXT_KEY_FATHER_ROBERT_BAKEWELL_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_ROBERT_BAKEWELL_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_TRADE</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_RANCHER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+				<FreeUnit>
+                    <UnitClass>UNITCLASS_BUTCHER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_TRADE</FatherPointType>
+                    <iCost>2500</iCost>
+                </FatherPointCost>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>1800</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_ROBERT_BAKEWELL</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,6,14</Button>
+        </FatherInfo>
+        <FatherInfo>
             <Type>FATHER_WILLIAM_BREWSTER</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Brewster.dds</Portrait>
             <Description>TXT_KEY_FATHER_WILLIAM_BREWSTER</Description>
@@ -988,11 +1022,11 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_TRADE</FatherPointType>
-                    <iCost>2500</iCost>
+                    <iCost>2750</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>1800</iCost>
+                    <iCost>2000</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_WILLIAM_BREWSTER</Trait>
@@ -2712,15 +2746,11 @@
             <RevealImprovements/>
             <FreeUnits>
                 <FreeUnit>
-                    <UnitClass>UNITCLASS_BREEDER</UnitClass>
-                    <iFreeUnits>1</iFreeUnits>
-                </FreeUnit>
-				<FreeUnit>
-                    <UnitClass>UNITCLASS_POULTRY_BUTCHER</UnitClass>
-                    <iFreeUnits>1</iFreeUnits>
-                </FreeUnit>
-				<FreeUnit>
                     <UnitClass>UNITCLASS_HERDER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+				<FreeUnit>
+                    <UnitClass>UNITCLASS_BUTCHER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
@@ -2753,7 +2783,7 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>2000</iCost>
+                    <iCost>1800</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_BETSY_ROSS</Trait>
@@ -2761,6 +2791,36 @@
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,7,1</Button>
+        </FatherInfo>
+        <FatherInfo>
+            <Type>FATHER_THOMAS_WEST_DE_LA_WARR</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/Thomas_West_de_la_Warr.dds</Portrait>
+            <Description>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR</Description>
+            <Civilopedia>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_BREEDER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+				<FreeUnit>
+                    <UnitClass>UNITCLASS_POULTRY_BUTCHER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>2000</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_THOMAS_WEST_DE_LA_WARR</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,5,14</Button>
         </FatherInfo>
         <FatherInfo>
             <Type>FATHER_IVAN_KRUZENSHTERN</Type>

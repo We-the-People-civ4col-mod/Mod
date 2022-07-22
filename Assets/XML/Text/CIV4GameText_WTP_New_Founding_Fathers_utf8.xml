@@ -108,5 +108,61 @@
         <Tag>TXT_KEY_FATHER_HUMPHREY_GILBERT_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
-    </TEXT>	
+    </TEXT>
+	<!-- ROBERT_BAKEWELL -->
+	<TEXT>
+        <Tag>TXT_KEY_FATHER_ROBERT_BAKEWELL</Tag>
+        <English>
+            <Text>Robert Bakewell</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>Robert Bakewell</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_ROBERT_BAKEWELL</Tag>
+        <English>TXT_KEY_FATHER_ROBERT_BAKEWELL</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_ROBERT_BAKEWELL_PEDIA</Tag>
+        <English>[H1]Robert Bakewell[\H1][NEWLINE][BOLD]Lived : [\BOLD]1725 - 1795[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]Robert Bakewell[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1725 - 1795[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_ROBERT_BAKEWELL_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- THOMAS_WEST_DE_LA_WARR -->
+	<TEXT>
+        <Tag>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR</Tag>
+        <English>
+            <Text>Thomas West, Baron de la Warr</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>Thomas West, Baron de la Warr</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_THOMAS_WEST_DE_LA_WARR</Tag>
+        <English>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR_PEDIA</Tag>
+        <English>[H1]Thomas West, Baron de la Warr[\H1][NEWLINE][BOLD]Lived : [\BOLD]1577 - 1618[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]Thomas West, Baron de la Warr[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1577 - 1618[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>
