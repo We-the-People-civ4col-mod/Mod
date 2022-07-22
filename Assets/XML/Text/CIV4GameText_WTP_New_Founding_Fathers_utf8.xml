@@ -165,4 +165,88 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+	<!-- JAMES_BAKER -->
+	<TEXT>
+        <Tag>TXT_KEY_FATHER_JAMES_BAKER</Tag>
+        <English>
+            <Text>James Baker, Dr.</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>James Baker, Dr.</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_JAMES_BAKER</Tag>
+        <English>TXT_KEY_FATHER_JAMES_BAKER</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JAMES_BAKER_PEDIA</Tag>
+        <English>[H1]James Baker, Dr.[\H1][NEWLINE][BOLD]Lived : [\BOLD]1739 - 1825[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]James Baker, Dr.[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1739 - 1825[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JAMES_BAKER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- WILLIAM_STRACHEY -->
+	<TEXT>
+        <Tag>TXT_KEY_FATHER_WILLIAM_STRACHEY</Tag>
+        <English>
+            <Text>William Strachey</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>William Strachey</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_WILLIAM_STRACHEY</Tag>
+        <English>TXT_KEY_FATHER_WILLIAM_STRACHEY</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_WILLIAM_STRACHEY_PEDIA</Tag>
+        <English>[H1]William Strachey[\H1][NEWLINE][BOLD]Lived : [\BOLD]1572 - 1621[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]William Strachey[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1572 - 1621[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_WILLIAM_STRACHEY_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- SIR_JOHN_HARVEY -->
+	<TEXT>
+        <Tag>TXT_KEY_FATHER_SIR_JOHN_HARVEY</Tag>
+        <English>
+            <Text>Sir John Harvey</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>Sir John Harvey</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_SIR_JOHN_HARVEY</Tag>
+        <English>TXT_KEY_FATHER_SIR_JOHN_HARVEY</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_SIR_JOHN_HARVEY_PEDIA</Tag>
+        <English>[H1]Sir John Harvey[\H1][NEWLINE][BOLD]Lived : [\BOLD]1581 - 1650[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]Sir John Harvey[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1581 - 1650[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_SIR_JOHN_HARVEY_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>

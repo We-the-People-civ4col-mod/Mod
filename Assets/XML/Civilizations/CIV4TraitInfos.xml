@@ -4792,6 +4792,222 @@
             <GoodyFactors/>
         </TraitInfo>
         <TraitInfo>
+            <Type>TRAIT_WILLIAM_STRACHEY</Type>
+            <Description>TXT_KEY_TRAIT_WILLIAM_STRACHEY</Description>
+            <ShortDescription>TXT_KEY_FATHER_WILLIAM_STRACHEY</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iRecruitPriceDiscountAfrica>0</iRecruitPriceDiscountAfrica>
+            <iRecruitPriceDiscountPortRoyal>0</iRecruitPriceDiscountPortRoyal>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_HIDES</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+                <YieldModifier>
+                    <YieldType>YIELD_PIG_SKIN</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+            </YieldModifiers>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_TANNERS_HOUSE</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_LEATHER</YieldType>
+                            <iYieldChange>1</iYieldChange>
+                        </YieldChange>
+                        <YieldChange>
+                            <YieldType>YIELD_PIG_LEATHER</YieldType>
+                            <iYieldChange>1</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_TANNERY</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_LEATHER</YieldType>
+                            <iYieldChange>2</iYieldChange>
+                        </YieldChange>
+                        <YieldChange>
+                            <YieldType>YIELD_PIG_LEATHER</YieldType>
+                            <iYieldChange>2</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_LEATHER_FACTORY</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_LEATHER</YieldType>
+                            <iYieldChange>3</iYieldChange>
+                        </YieldChange>
+                        <YieldChange>
+                            <YieldType>YIELD_PIG_LEATHER</YieldType>
+                            <iYieldChange>3</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+            </BuildingYieldChanges>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers/>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
+            <Type>TRAIT_SIR_JOHN_HARVEY</Type>
+            <Description>TXT_KEY_TRAIT_SIR_JOHN_HARVEY</Description>
+            <ShortDescription>TXT_KEY_FATHER_SIR_JOHN_HARVEY</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iRecruitPriceDiscountAfrica>0</iRecruitPriceDiscountAfrica>
+            <iRecruitPriceDiscountPortRoyal>0</iRecruitPriceDiscountPortRoyal>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_GOAT_HIDES</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+            </YieldModifiers>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_LEATHER_PADDER_HOUSE</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
+                            <iYieldChange>1</iYieldChange>
+                        </YieldChange>
+                        <YieldChange>
+                            <YieldType>YIELD_PADDED_LEATHER_COATS</YieldType>
+                            <iYieldChange>1</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_LEATHER_PADDER_SHOP</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
+                            <iYieldChange>2</iYieldChange>
+                        </YieldChange>
+                        <YieldChange>
+                            <YieldType>YIELD_PADDED_LEATHER_COATS</YieldType>
+                            <iYieldChange>2</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_LEATHER_PADDER_FACTORY</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
+                            <iYieldChange>3</iYieldChange>
+                        </YieldChange>
+                        <YieldChange>
+                            <YieldType>YIELD_PADDED_LEATHER_COATS</YieldType>
+                            <iYieldChange>3</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+            </BuildingYieldChanges>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers/>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
             <Type>TRAIT_JOHN_WINTHROP</Type>
             <Description>TXT_KEY_TRAIT_JOHN_WINTHROP</Description>
             <ShortDescription>TXT_KEY_FATHER_JOHN_WINTHROP</ShortDescription>
@@ -5803,6 +6019,76 @@
             <GoodyFactors/>
         </TraitInfo>
         <TraitInfo>
+            <Type>TRAIT_NATHANIAL_HAWTHORNE</Type>
+            <Description>TXT_KEY_TRAIT_NATHANIAL_HAWTHORNE</Description>
+            <ShortDescription>TXT_KEY_NATHANIAL_HAWTHORNE</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iRecruitPriceDiscountAfrica>0</iRecruitPriceDiscountAfrica>
+            <iRecruitPriceDiscountPortRoyal>0</iRecruitPriceDiscountPortRoyal>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers>
+				<YieldModifier>
+                    <YieldType>YIELD_EVERYDAY_CLOTHES</YieldType>
+                    <iYield>20</iYield>
+                </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_FESTIVE_CLOTHES</YieldType>
+                    <iYield>20</iYield>
+                </YieldModifier>
+            </YieldModifiers>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges/>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers/>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
             <Type>TRAIT_ALEXANDER_VON_HUMBOLDT</Type>
             <Description>TXT_KEY_TRAIT_ALEXANDER_VON_HUMBOLDT</Description>
             <ShortDescription>TXT_KEY_FATHER_ALEXANDER_VON_HUMBOLDT</ShortDescription>
@@ -6012,7 +6298,16 @@
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
             <FreePromotionUnitCombats/>
-            <YieldModifiers/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+                <YieldModifier>
+                    <YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+            </YieldModifiers>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
@@ -6857,7 +7152,12 @@
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
             <FreePromotionUnitCombats/>
-            <YieldModifiers/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_KAUTSCHUK</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+            </YieldModifiers>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
@@ -7407,6 +7707,10 @@
                     <YieldType>YIELD_WHALE_OIL</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
+				<YieldModifier>
+                    <YieldType>YIELD_POTTERY</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
             </YieldModifiers>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
@@ -7563,35 +7867,7 @@
             </FreePromotionUnitCombats>
             <YieldModifiers/>
             <TaxYieldModifiers/>
-            <BuildingYieldChanges>
-                <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_FUR_TRADERS_HOUSE</BuildingClassType>
-                    <BuildingYields>
-					    <YieldChange>
-                            <YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
-                            <iYieldChange>1</iYieldChange>
-                        </YieldChange>
-                    </BuildingYields>
-                </BuildingYieldChange>
-                <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_FUR_TRADING_POST</BuildingClassType>
-                    <BuildingYields>
-                        <YieldChange>
-                            <YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
-                            <iYieldChange>2</iYieldChange>
-                        </YieldChange>
-                    </BuildingYields>
-                </BuildingYieldChange>
-                <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_FUR_FACTORY</BuildingClassType>
-                    <BuildingYields>
-                        <YieldChange>
-                            <YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
-                            <iYieldChange>3</iYieldChange>
-                        </YieldChange>
-                    </BuildingYields>
-                </BuildingYieldChange>
-            </BuildingYieldChanges>
+            <BuildingYieldChanges/>
             <UnitMoveChanges/>
             <ProfessionMoveChanges/>
             <BuildingProductionModifiers/>
@@ -7697,6 +7973,112 @@
                         </YieldChange>
                         <YieldChange>
                             <YieldType>YIELD_SALT</YieldType>
+                            <iYieldChange>3</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+            </BuildingYieldChanges>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers/>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
+            <Type>TRAIT_JAMES_BAKER</Type>
+            <Description>TXT_KEY_TRAIT_JAMES_BAKER</Description>
+            <ShortDescription>TXT_KEY_FATHER_JAMES_BAKER</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iRecruitPriceDiscountAfrica>0</iRecruitPriceDiscountAfrica>
+            <iRecruitPriceDiscountPortRoyal>0</iRecruitPriceDiscountPortRoyal>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_VANILLA_PODS</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+            </YieldModifiers>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_CONFECTIONER_HOUSE</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_VANILLA</YieldType>
+                            <iYieldChange>1</iYieldChange>
+                        </YieldChange>
+                        <YieldChange>
+                            <YieldType>YIELD_CHOCOLATE</YieldType>
+                            <iYieldChange>1</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_CONFECTIONER_SHOP</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_VANILLA</YieldType>
+                            <iYieldChange>2</iYieldChange>
+                        </YieldChange>
+                        <YieldChange>
+                            <YieldType>YIELD_CHOCOLATE</YieldType>
+                            <iYieldChange>2</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_CONFECTIONER_FACTORY</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_VANILLA</YieldType>
+                            <iYieldChange>3</iYieldChange>
+                        </YieldChange>
+                        <YieldChange>
+                            <YieldType>YIELD_CHOCOLATE</YieldType>
                             <iYieldChange>3</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
