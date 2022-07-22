@@ -69,7 +69,7 @@ public:
 
 	void doAIImmigrant(int iIndex); // PatchMod: AI immigration boost START
 
-	void redistributeCannonsAndMuskets(); // TAC - AI Economy - Ray - START
+	//void redistributeCannonsAndMuskets(); // TAC - AI Economy - Ray - START
 
 	void redistributeWood(); // R&R, ray, redistribute cannons and muskets
 

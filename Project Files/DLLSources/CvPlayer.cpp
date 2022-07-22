@@ -2185,7 +2185,7 @@ void CvPlayer::doTurn()
 
 			redistributeWood();
 			// R&R, ray, redistribute cannons and muskets
-			redistributeCannonsAndMuskets();
+			//redistributeCannonsAndMuskets();
 		}
 		// TAC - AI Economy - Ray - END
 	}
@@ -19593,6 +19593,7 @@ void CvPlayer::redistributeWood()
 
 
 // R&R, ray, redistribute cannons and muskets
+/*
 void CvPlayer::redistributeCannonsAndMuskets()
 {
 	// do nothing if Player has no cities
@@ -19657,7 +19658,7 @@ void CvPlayer::redistributeCannonsAndMuskets()
 
 	}
 }
-
+*/
 
 // TAC - LbD - Ray - START
 bool CvPlayer::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int pre_rounds, int l_level)
