@@ -4913,6 +4913,14 @@ int CvPlot::getUpgradeProgress() const
 
 int CvPlot::getUpgradeTimeLeft(ImprovementTypes eImprovement, PlayerTypes ePlayer) const
 {
+	// If the improvement is currently not owned, return the token 1 turn
+	// TOOD: Consider refactoring this so we can return a value that indicates that the
+	// value should be ignored
+	if (ePlayer == NO_PLAYER)
+	{
+		return 1;
+	}
+		
 	int iUpgradeLeft;
 	int iUpgradeRate;
 	int iTurnsLeft;
