@@ -249,4 +249,32 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+	<!-- JOHN_MAURICE -->
+	<TEXT>
+        <Tag>TXT_KEY_FATHER_JOHN_MAURICE</Tag>
+        <English>
+            <Text>John Maurice, Prince of Nassau-Siegen</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>Johann Moritz, Fürst von Nassau-Siegen</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_TRAIT_JOHN_MAURICE</Tag>
+        <English>TXT_KEY_FATHER_JOHN_MAURICE</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JOHN_MAURICE_PEDIA</Tag>
+        <English>[H1]John Maurice, Prince of Nassau-Siegen[\H1][NEWLINE][BOLD]Lived : [\BOLD]1604 - 1679[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]Johann Moritz, Fürst von Nassau-Siegen[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1604 - 1679[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JOHN_MAURICE_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>
