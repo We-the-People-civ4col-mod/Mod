@@ -3757,16 +3757,82 @@
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
-            <ExtraYieldThresholds/>
+            <ExtraYieldThresholds>
+                <YieldThreshold>
+                    <YieldType>YIELD_SILVER</YieldType>
+                    <iYieldThreshold>3</iYieldThreshold>
+                </YieldThreshold>
+            </ExtraYieldThresholds>
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
             <FreePromotionUnitCombats/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_LOGWOOD</YieldType>
-                    <iYield>25</iYield>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges/>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers/>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
+            <Type>TRAIT_PIET_HEYN</Type>
+            <Description>TXT_KEY_TRAIT_PIET_HEYN</Description>
+            <ShortDescription>TXT_KEY_FATHER_PIET_HEYN</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iAfricaSellProfitModifierInPercent>0</iAfricaSellProfitModifierInPercent>
+            <iPortRoyalSellProfitModifierInPercent>0</iPortRoyalSellProfitModifierInPercent>
+            <iDomesticMarketProfitModifierInPercent>0</iDomesticMarketProfitModifierInPercent>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
+            <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iRecruitPriceDiscountAfrica>0</iRecruitPriceDiscountAfrica>
+            <iRecruitPriceDiscountPortRoyal>0</iRecruitPriceDiscountPortRoyal>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
+            <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
+            <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds>
+                <YieldThreshold>
+                    <YieldType>YIELD_GOLD</YieldType>
+                    <iYieldThreshold>3</iYieldThreshold>
+                </YieldThreshold>
+            </ExtraYieldThresholds>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers/>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
@@ -5860,7 +5926,12 @@
                     <bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
                 </FreePromotionUnitCombat>
             </FreePromotionUnitCombats>
-            <YieldModifiers/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_COAL</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+            </YieldModifiers>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
@@ -6627,7 +6698,7 @@
             <FreePromotionUnitCombats/>
             <YieldModifiers>
                 <YieldModifier>
-                    <YieldType>YIELD_CASSAVA</YieldType>
+                    <YieldType>YIELD_ORE</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
             </YieldModifiers>
@@ -9411,7 +9482,7 @@
             <FreeBuildingClasses/>
             <GoodyFactors/>
         </TraitInfo>
-		<TraitInfo>
+        <TraitInfo>
             <Type>TRAIT_THOMAS_WEST_DE_LA_WARR</Type>
             <Description>TXT_KEY_TRAIT_THOMAS_WEST_DE_LA_WARR</Description>
             <ShortDescription>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR</ShortDescription>
@@ -10110,7 +10181,12 @@
                     <bFreePromotionUnitCombat>1</bFreePromotionUnitCombat>
                 </FreePromotionUnitCombat>
             </FreePromotionUnitCombats>
-            <YieldModifiers/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_LOGWOOD</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+            </YieldModifiers>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
@@ -10929,7 +11005,12 @@
             <YieldModifiers/>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
-            <UnitMoveChanges/>
+            <UnitMoveChanges>
+                <UnitMoveChange>
+                    <UnitClass>UNITCLASS_EXPERT_TRADER</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+            </UnitMoveChanges>
             <ProfessionMoveChanges/>
             <BuildingProductionModifiers/>
             <BuildingRequiredYieldModifiers/>
@@ -11593,7 +11674,12 @@
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
             <FreePromotionUnitCombats/>
-            <YieldModifiers/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_CASSAVA</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+            </YieldModifiers>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
@@ -11781,7 +11867,12 @@
             <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
-            <ExtraYieldThresholds/>
+            <ExtraYieldThresholds>
+                <YieldThreshold>
+                    <YieldType>YIELD_GEMS</YieldType>
+                    <iYieldThreshold>3</iYieldThreshold>
+                </YieldThreshold>
+            </ExtraYieldThresholds>
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
             <FreePromotionUnitCombats/>

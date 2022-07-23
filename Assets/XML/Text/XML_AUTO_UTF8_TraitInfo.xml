@@ -973,6 +973,10 @@
         <English>TXT_KEY_FATHER_TOME_DE_SOUSA</English>
     </TEXT>
 	<TEXT>
+        <Tag>TXT_KEY_TRAIT_PIET_HEYN</Tag>
+        <English>TXT_KEY_FATHER_PIET_HEYN</English>
+    </TEXT>	
+	<TEXT>
         <Tag>TXT_KEY_TRAIT_JUAN_PONCE_DE_LEON</Tag>
         <English>TXT_KEY_FATHER_JUAN_PONCE_DE_LEON</English>
     </TEXT>

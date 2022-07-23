@@ -626,7 +626,7 @@
                     <iCost>6000</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
-            <Trait/>
+            <Trait>TRAIT_PIET_HEYN</Trait>
             <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
@@ -1145,7 +1145,12 @@
             <Strategy>TXT_KEY_FATHER_CYRUS_MCCORMICK_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_TRADE</FatherCategory>
             <RevealImprovements/>
-            <FreeUnits/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_FARMER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_TRADE</FatherPointType>
@@ -2510,7 +2515,12 @@
             <Strategy>TXT_KEY_FATHER_DOM_PEDRO_I_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_MILITARY</FatherCategory>
             <RevealImprovements/>
-            <FreeUnits/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_GREAT_GENERAL</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_MILITARY</FatherPointType>
@@ -2603,7 +2613,16 @@
             <Strategy>TXT_KEY_FATHER_HENRY_SHRAPNEL_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_MILITARY</FatherCategory>
             <RevealImprovements/>
-            <FreeUnits/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_MILITARY</FatherPointType>
@@ -2902,6 +2921,10 @@
             <FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
             <RevealImprovements/>
             <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_BUTCHER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_WEAVER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
@@ -3246,7 +3269,12 @@
             <Strategy>TXT_KEY_FATHER_BEN_FRANKLIN_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
             <RevealImprovements/>
-            <FreeUnits/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_STATESMAN</UnitClass>
+                    <iFreeUnits>2</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
@@ -3288,7 +3316,12 @@
             <Strategy>TXT_KEY_FATHER_THOMAS_JEFFERSON_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
             <RevealImprovements/>
-            <FreeUnits/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_STATESMAN</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
