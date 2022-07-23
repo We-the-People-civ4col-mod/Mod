@@ -8409,7 +8409,7 @@ void CvPlayerAI::AI_doEurope()
 
 			// Only consider changing the profession if this is a regular, unequipped colonist.
 			// TODO: Consider checkinf for lack of equipment instead!
-			if (!bProfessionChange && (pUnit->getProfession() == PROFESSION_COLONIST) && !AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+			if (!bProfessionChange && (pUnit->getProfession() == GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()) && !AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 			{
 				if (AI_neededWorkers(NULL) > 0)
 				{
