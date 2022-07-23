@@ -40730,7 +40730,7 @@
             <bGraphicalOnly>0</bGraphicalOnly>
             <bNoBadGoodies>0</bNoBadGoodies>
             <bOnlyDefensive>0</bOnlyDefensive>
-            <bNoCapture>0</bNoCapture>
+            <bNoCapture>1</bNoCapture>
             <bQuickCombat>0</bQuickCombat>
             <bRivalTerritory>0</bRivalTerritory>
             <bMilitaryProduction>0</bMilitaryProduction>
@@ -40745,7 +40745,7 @@
             <bMechanized>0</bMechanized>
             <bLineOfSight>0</bLineOfSight>
             <bHiddenNationality>1</bHiddenNationality>
-            <bAlwaysHostile>0</bAlwaysHostile>
+            <bAlwaysHostile>1</bAlwaysHostile>
             <bTreasure>0</bTreasure>
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
@@ -40918,7 +40918,7 @@
             <bGraphicalOnly>0</bGraphicalOnly>
             <bNoBadGoodies>0</bNoBadGoodies>
             <bOnlyDefensive>0</bOnlyDefensive>
-            <bNoCapture>0</bNoCapture>
+            <bNoCapture>1</bNoCapture>
             <bQuickCombat>0</bQuickCombat>
             <bRivalTerritory>0</bRivalTerritory>
             <bMilitaryProduction>0</bMilitaryProduction>
@@ -40933,7 +40933,7 @@
             <bMechanized>0</bMechanized>
             <bLineOfSight>0</bLineOfSight>
             <bHiddenNationality>1</bHiddenNationality>
-            <bAlwaysHostile>0</bAlwaysHostile>
+            <bAlwaysHostile>1</bAlwaysHostile>
             <bTreasure>0</bTreasure>
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
@@ -41106,7 +41106,7 @@
             <bGraphicalOnly>0</bGraphicalOnly>
             <bNoBadGoodies>0</bNoBadGoodies>
             <bOnlyDefensive>0</bOnlyDefensive>
-            <bNoCapture>0</bNoCapture>
+            <bNoCapture>1</bNoCapture>
             <bQuickCombat>0</bQuickCombat>
             <bRivalTerritory>0</bRivalTerritory>
             <bMilitaryProduction>0</bMilitaryProduction>
@@ -41121,7 +41121,7 @@
             <bMechanized>0</bMechanized>
             <bLineOfSight>0</bLineOfSight>
             <bHiddenNationality>1</bHiddenNationality>
-            <bAlwaysHostile>0</bAlwaysHostile>
+            <bAlwaysHostile>1</bAlwaysHostile>
             <bTreasure>0</bTreasure>
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
@@ -41245,7 +41245,7 @@
             <bGraphicalOnly>0</bGraphicalOnly>
             <bNoBadGoodies>0</bNoBadGoodies>
             <bOnlyDefensive>0</bOnlyDefensive>
-            <bNoCapture>0</bNoCapture>
+            <bNoCapture>1</bNoCapture>
             <bQuickCombat>0</bQuickCombat>
             <bRivalTerritory>0</bRivalTerritory>
             <bMilitaryProduction>0</bMilitaryProduction>
@@ -41260,7 +41260,7 @@
             <bMechanized>0</bMechanized>
             <bLineOfSight>0</bLineOfSight>
             <bHiddenNationality>1</bHiddenNationality>
-            <bAlwaysHostile>0</bAlwaysHostile>
+            <bAlwaysHostile>1</bAlwaysHostile>
             <bTreasure>0</bTreasure>
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
