@@ -332,27 +332,50 @@ void KmodPathFinder::RecalculateHeuristics()
 	}
 }
 
-struct ProcesNodesOutput 
-{
-
-};
-
-
 namespace
 {
-// Allocated once and then cleared to avoid allocations in the inner loop
-// Note: The allocator can't deal with FAStarNode* so we have to use an int :(
-std::vector<int, tbb::cache_aligned_allocator<int> > open_list_out(NUM_DIRECTION_TYPES);
-std::vector<int, tbb::cache_aligned_allocator<int> > child_nodes_out(NUM_DIRECTION_TYPES);
-std::vector<FAStarNode*> child_nodes(NUM_DIRECTION_TYPES);
+
+struct ProcesNodesOutput
+{
+	FAStarNode* open_list;
+	FAStarNode* child_nodes_out;
+	FAStarNode* end_node; // Only 1 can be the end_node
+	int iNewCost;
+
+	void reset()
+	{
+		open_list = NULL;
+		child_nodes_out = NULL;
+		end_node = NULL;
+		iNewCost = MAX_INT;
+	}
+};
+
+	// A list of nodes we want to explore, the order is not important but the index will have to match with the slots below
+	std::vector<FAStarNode*> child_nodes(NUM_DIRECTION_TYPES);
+	// We maintain an array for output data with a slot per viable child node to avoid possible contention i.e. push_back 
+	typedef std::vector<ProcesNodesOutput, tbb::cache_aligned_allocator<ProcesNodesOutput> > ProcesNodesOutputVec;
+	// Allocated once and then cleared to avoid allocations in the inner loop
+	ProcesNodesOutputVec pno(NUM_DIRECTION_TYPES);
+
+void ResetProcesNodesOutput()
+{
+	for (size_t i = 0; i < pno.size(); ++i)
+	{
+		pno[i].reset();
+	}
 }
 
-// We can process each child node in parallell sine they are independent of each other. Also, even though the parent node is shared it is not modified
-// inside the par. loop
+} // end anon namespace
+
+// We can process each child node in parallell since 1) they are independent of each other, 2) even though the parent node is shared
+// it is not mutated inside the par. loop
 struct ProcessNodesInternal
 {
-	ProcessNodesInternal(FAStarNode* parent_node_, std::vector<FAStarNode*>& child_nodes_, CvPathSettings& settings_, int dest_x_, int dest_y_) :
-		parent_node(parent_node_), child_nodes(child_nodes_), settings(settings_), dest_x(dest_x_), dest_y(dest_y_)  {}
+	ProcessNodesInternal(FAStarNode* parent_node_, std::vector<FAStarNode*>& child_nodes_, CvPathSettings& settings_, 
+		int dest_x_, int dest_y_, ProcesNodesOutputVec& pno_) :
+		parent_node(parent_node_), child_nodes(child_nodes_), settings(settings_), dest_x(dest_x_), dest_y(dest_y_), pno(pno_) 
+		{}
 	
 	void operator()(const tbb::blocked_range<size_t>& r) const
 	{
@@ -367,8 +390,6 @@ struct ProcessNodesInternal
 
 			if (bNewNode)
 			{
-				//child_node->m_iX = x;
-				//child_node->m_iY = y;
 				pathAdd(parent_node, child_node, ASNC_NEWADD, &settings, 0);
 
 				if (pathValid_join(parent_node, child_node, settings.pGroup , settings.iFlags))
@@ -382,9 +403,7 @@ struct ProcessNodesInternal
 
 					if (pathValid_source(child_node, settings.pGroup, settings.iFlags))
 					{
-						// We keep a separate out array to avoid having to call push back. The order
-						// is not significant (the incided would not have to match up the child's index though)
-						open_list_out[i] = reinterpret_cast<int>(child_node);
+						pno[i].open_list = child_node;
 						child_node->m_eFAStarListType = FASTARLIST_OPEN;
 					}
 					else
@@ -404,16 +423,32 @@ struct ProcessNodesInternal
 					child_node = NULL;
 			}
 
-			child_nodes_out[i] = reinterpret_cast<int>(child_node);
+			if (child_node != NULL)
+			{ 
+				// Check if we've reached the destination node
+				if (x == dest_x && y == dest_y)
+				{
+					pno[i].end_node = child_node; // We've found our destination - but we still need to finish our calculations
+				}
+		
+				if (parent_node->m_iKnownCost < child_node->m_iKnownCost)
+				{
+					pno[i].iNewCost = parent_node->m_iKnownCost + pathCost(parent_node, child_node, 666, &settings, 0);
+					FAssert(pno[i].iNewCost > 0);
+				}
+			}
+
+			// Store back the updated node
+			pno[i].child_nodes_out = child_node;
 		}
 	}
 
-	// TODO: Constify
 	FAStarNode* parent_node;
 	std::vector<FAStarNode*>& child_nodes;
 	CvPathSettings& settings;
 	int dest_x;
 	int dest_y;
+	ProcesNodesOutputVec &pno;
 };
 
 bool KmodPathFinder::ProcessNode()
@@ -446,9 +481,7 @@ bool KmodPathFinder::ProcessNode()
 	FAssert(&GetNode(parent_node->m_iX, parent_node->m_iY) == parent_node);
 
 	child_nodes.clear();
-	// Fill the out list since we consider non-null to contain a valid node at that index
-	std::fill(open_list_out.begin(), open_list_out.end(), NULL);
-	std::fill(child_nodes_out.begin(), child_nodes_out.end(), NULL);
+	ResetProcesNodesOutput();
 
 	// open a new node for each direction coming off the chosen node.
 	for (int i = 0; i < NUM_DIRECTION_TYPES; i++)
@@ -473,21 +506,24 @@ bool KmodPathFinder::ProcessNode()
 	}
 
 	// Execute parallel work
-	ProcessNodesInternal pni(parent_node, child_nodes, settings, dest_x, dest_y);	tbb::parallel_for(tbb::blocked_range<size_t>(0, child_nodes.size()), pni, tbb::auto_partitioner());
+	ProcessNodesInternal pni(parent_node, child_nodes, settings, dest_x, dest_y, pno);	const int grainSize = 2; // 1 seems to result in too little work per task
+	tbb::parallel_for(tbb::blocked_range<size_t>(0, child_nodes.size(), grainSize), pni, tbb::auto_partitioner());
 
-	// Add discovered reachable nodes to the open list	
-	for (size_t i=0; i<open_list_out.size(); i++)
+	for (size_t i=0; i<pno.size(); i++)
 	{
-		FAStarNode* const child_node = reinterpret_cast<FAStarNode*>(open_list_out[i]);
-
-		if (child_node != NULL)
+		// Add discovered reachable nodes to the open list	
+		if (pno[i].open_list != NULL)
 		{		
-			open_list.push_back(child_node);
+			open_list.push_back(pno[i].open_list);
 		}
-	}
-		for (size_t i = 0; i < child_nodes_out.size(); ++i)
-	{	
-		FAStarNode* const child_node = reinterpret_cast<FAStarNode*>(child_nodes_out[i]);
+		
+		// Add the end node if we found one
+		if (pno[i].end_node != NULL)
+		{		
+			//FAssert(end_node == NULL); // we can only have a single end-node
+			end_node = pno[i].end_node;
+		}
+			FAStarNode* const child_node = pno[i].child_nodes_out;
 		
 		if (child_node == NULL)
 			continue;
@@ -495,61 +531,51 @@ bool KmodPathFinder::ProcessNode()
 		const int x = child_node->m_iX;
 		const int y = child_node->m_iY;
 		const bool bNewNode = !child_node->m_bOnStack;
+		const int iNewCost = pno[i].iNewCost;
 
-		//FAssert(child_node->m_iX == x && child_node->m_iY == y);
-
-		if (x == dest_x && y == dest_y)
-			end_node = child_node; // We've found our destination - but we still need to finish our calculations
-
-		if (parent_node->m_iKnownCost < child_node->m_iKnownCost)
+		if (iNewCost < child_node->m_iKnownCost)
 		{
-			int iNewCost = parent_node->m_iKnownCost + pathCost(parent_node, child_node, 666, &settings, 0);
-			FAssert(iNewCost > 0);
+			int cost_delta = iNewCost - child_node->m_iKnownCost; // new minus old. Negative value.
 
-			if (iNewCost < child_node->m_iKnownCost)
+			child_node->m_iKnownCost = iNewCost;
+			child_node->m_iTotalCost = child_node->m_iKnownCost + child_node->m_iHeuristicCost;
+
+			// remove child from the list of the previous parent.
+			if (child_node->m_pParent)
 			{
-				int cost_delta = iNewCost - child_node->m_iKnownCost; // new minus old. Negative value.
-
-				child_node->m_iKnownCost = iNewCost;
-				child_node->m_iTotalCost = child_node->m_iKnownCost + child_node->m_iHeuristicCost;
-
-				// remove child from the list of the previous parent.
-				if (child_node->m_pParent)
+				FAssert(!bNewNode);
+				FAStarNode* x_parent = child_node->m_pParent;
+				// x_parent just lost one of its children. We have to break the news to them.
+				// this would easier if we had stl instead of bog arrays.
+				int temp = x_parent->m_iNumChildren;
+				for (int j = 0; j < x_parent->m_iNumChildren; j++)
 				{
-					FAssert(!bNewNode);
-					FAStarNode* x_parent = child_node->m_pParent;
-					// x_parent just lost one of its children. We have to break the news to them.
-					// this would easier if we had stl instead of bog arrays.
-					int temp = x_parent->m_iNumChildren;
-					for (int j = 0; j < x_parent->m_iNumChildren; j++)
+					if (x_parent->m_apChildren[j] == child_node)
 					{
-						if (x_parent->m_apChildren[j] == child_node)
-						{
-							// found it.
-							for (j++ ; j < x_parent->m_iNumChildren; j++)
-								x_parent->m_apChildren[j-1] = x_parent->m_apChildren[j];
-							x_parent->m_apChildren[j-1] = 0; // not necessary, but easy enough to keep things neat.
+						// found it.
+						for (j++ ; j < x_parent->m_iNumChildren; j++)
+							x_parent->m_apChildren[j-1] = x_parent->m_apChildren[j];
+						x_parent->m_apChildren[j-1] = 0; // not necessary, but easy enough to keep things neat.
 
-							x_parent->m_iNumChildren--;
-						}
+						x_parent->m_iNumChildren--;
 					}
-					FAssert(x_parent->m_iNumChildren == temp - 1);
-					// recalculate movement points
-					pathAdd(parent_node, child_node, ASNC_PARENTADD_UP, &settings, 0);
 				}
-
-				// add child to the list of the new parent
-				FAssert(parent_node->m_iNumChildren < NUM_DIRECTION_TYPES);
-				parent_node->m_apChildren[parent_node->m_iNumChildren] = child_node;
-				parent_node->m_iNumChildren++;
-				child_node->m_pParent = parent_node;
-
-				// update the new (reduced) costs for all the grandchildren.
-				FAssert(child_node->m_iNumChildren == 0 || !bNewNode);
-				ForwardPropagate(child_node, cost_delta);
-
-				FAssert(child_node->m_iKnownCost > parent_node->m_iKnownCost);
+				FAssert(x_parent->m_iNumChildren == temp - 1);
+				// recalculate movement points
+				pathAdd(parent_node, child_node, ASNC_PARENTADD_UP, &settings, 0);
 			}
+
+			// add child to the list of the new parent
+			FAssert(parent_node->m_iNumChildren < NUM_DIRECTION_TYPES);
+			parent_node->m_apChildren[parent_node->m_iNumChildren] = child_node;
+			parent_node->m_iNumChildren++;
+			child_node->m_pParent = parent_node;
+
+			// update the new (reduced) costs for all the grandchildren.
+			FAssert(child_node->m_iNumChildren == 0 || !bNewNode);
+			ForwardPropagate(child_node, cost_delta);
+
+			FAssert(child_node->m_iKnownCost > parent_node->m_iKnownCost);
 		}
 		// else parent has higher cost. So there must already be a faster route to the child.
 	}
