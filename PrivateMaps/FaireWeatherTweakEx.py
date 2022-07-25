@@ -3819,7 +3819,18 @@ def europeMatch(x,y):
         return True
     return False
 
-def isAdjacentPlotTerrainType(x, y, terrainType):
+def isAllAdjacentPlotTerrainType(x, y, terrainType):
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    
+    for direction in range(1,9,1):
+        xx,yy = GetXYFromDirection(x, y, direction)
+        plot = mmap.plot(xx,yy)
+        if plot.getTerrainType() != terrainType:
+            return False
+    return True
+
+def isAnyAdjacentPlotTerrainType(x, y, terrainType):
     gc = CyGlobalContext()
     mmap = gc.getMap()
     
@@ -3830,6 +3841,17 @@ def isAdjacentPlotTerrainType(x, y, terrainType):
             return True
     return False
 
+def isAnyAdjacentPlotType(x, y, plotType):
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    
+    for direction in range(1,9,1):
+        xx,yy = GetXYFromDirection(x, y, direction)
+        plot = mmap.plot(xx,yy)
+        if plot.getPlotType() == plotType:
+            return True
+    return False
+
 def generateShallowCoast():
     
     gc = CyGlobalContext()
@@ -3837,7 +3859,7 @@ def generateShallowCoast():
     terrainCoast = gc.getInfoTypeForString("TERRAIN_COAST")
     terrainShallowCoast = gc.getInfoTypeForString("TERRAIN_SHALLOW_COAST")
     
-    shallowCoastChance = 0.2 # Baseline chance for convering coast to shallow coast
+    shallowCoastChance = 0.2 # Baseline chance for converting coast to shallow coast
     shallowCostAdjacentChance = 0.4 # Higher chance if there's already adjacent shallow coast
     
     # Convert some patches of (regular) coast to shallow coasts
@@ -3846,7 +3868,7 @@ def generateShallowCoast():
             plot = mmap.plot(x,y)
             if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
                 if plot.getTerrainType() == terrainCoast:
-                    if isAdjacentPlotTerrainType(x, y, terrainShallowCoast):
+                    if isAnyAdjacentPlotTerrainType(x, y, terrainShallowCoast):
                         if PRand.random() <= shallowCostAdjacentChance:
                             plot.setTerrainType(terrainShallowCoast, True, True)               
                     elif PRand.random() <= shallowCoastChance:
@@ -3861,7 +3883,7 @@ def generateShrubland():
     terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
     terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
 
-    shrublandChance = 0.3 # Baseline chance for convering prairie to shrubland
+    shrublandChance = 0.3 # Baseline chance for converting prairie to shrubland
     
     # Convert some prairie that's adjaceant to desert to shrubland 
     for y in range(mc.height):
@@ -3869,7 +3891,7 @@ def generateShrubland():
             plot = mmap.plot(x,y)
             if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
                 if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
-                    if isAdjacentPlotTerrainType(x, y, terrainDesert):
+                    if isAnyAdjacentPlotTerrainType(x, y, terrainDesert):
                         if PRand.random() <= shrublandChance:
                             plot.setTerrainType(terrainShrubland, True, True)               
 
@@ -3883,7 +3905,7 @@ def generateTaiga():
     terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
     terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
     
-    taigaChance = 0.5 # Baseline chance for convering prairie to shrubland
+    taigaChance = 0.5 # Baseline chance for converting terrain to shrubland
     
     # Convert some prairie that's adjaceant to desert to shrubland 
     for y in range(mc.height):
@@ -3891,9 +3913,42 @@ def generateTaiga():
             plot = mmap.plot(x,y)
             if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
                 if plot.getTerrainType() == terrainGrassland or plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
-                    if isAdjacentPlotTerrainType(x, y, terrainTundra):
+                    if isAnyAdjacentPlotTerrainType(x, y, terrainTundra):
                         if PRand.random() <= taigaChance:
                             plot.setTerrainType(terrainTaiga, True, True)               
+
+def generateRockSteppes():
+
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
+    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
+    terrainRockSteppes = gc.getInfoTypeForString("TERRAIN_ROCK_STEPPES")
+    
+    rockSteppesChance = 0.25 # Baseline chance for converting terrain
+    
+    # Convert 3x3 of flat fertile river-less land to rock steppes to reflect arid land  
+    for y in range(mc.height):
+        for x in range(mc.width):
+            plot = mmap.plot(x,y)
+            if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
+                if not plot.isRiver():
+                    if not isAnyAdjacentPlotType(x, y, PlotTypes.PLOT_OCEAN):
+                        if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
+                            if isAllAdjacentPlotTerrainType(x, y, terrainPrairie) or isAllAdjacentPlotTerrainType(x, y, terrainPlains):
+                                if PRand.random() <= rockSteppesChance * 0.2:
+                                    plot.setTerrainType(terrainRockSteppes, True, True)               
+
+    
+    for y in range(mc.height):
+        for x in range(mc.width):
+            plot = mmap.plot(x,y)
+            if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
+                if not plot.isRiver():
+                    if not isAnyAdjacentPlotType(x, y, PlotTypes.PLOT_OCEAN):
+                        if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
+                            if PRand.random() <= rockSteppesChance:
+                                plot.setTerrainType(terrainRockSteppes, True, True)               
 
 def afterGeneration():
     gc = CyGlobalContext()
@@ -3960,6 +4015,7 @@ def afterGeneration():
     generateShallowCoast()
     generateShrubland()
     generateTaiga()
+    generateRockSteppes()
     
 def createIce():
     gc = CyGlobalContext()
