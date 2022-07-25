@@ -3844,12 +3844,56 @@ def generateShallowCoast():
     for y in range(mc.height):
         for x in range(mc.width):
             plot = mmap.plot(x,y)
-            if plot.getTerrainType() == terrainCoast:
-                if isAdjacentPlotTerrainType(x, y, terrainShallowCoast):
-                    if PRand.random() <= shallowCostAdjacentChance:
-                        plot.setTerrainType(terrainShallowCoast, True, True)               
-                elif PRand.random() <= shallowCoastChance:
-                    plot.setTerrainType(terrainShallowCoast, True, True)
+            if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
+                if plot.getTerrainType() == terrainCoast:
+                    if isAdjacentPlotTerrainType(x, y, terrainShallowCoast):
+                        if PRand.random() <= shallowCostAdjacentChance:
+                            plot.setTerrainType(terrainShallowCoast, True, True)               
+                    elif PRand.random() <= shallowCoastChance:
+                        plot.setTerrainType(terrainShallowCoast, True, True)
+
+def generateShrubland():
+    
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    terrainShrubland = gc.getInfoTypeForString("TERRAIN_SHRUBLAND")
+    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
+    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
+    terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
+
+    shrublandChance = 0.3 # Baseline chance for convering prairie to shrubland
+    
+    # Convert some prairie that's adjaceant to desert to shrubland 
+    for y in range(mc.height):
+        for x in range(mc.width):
+            plot = mmap.plot(x,y)
+            if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
+                if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
+                    if isAdjacentPlotTerrainType(x, y, terrainDesert):
+                        if PRand.random() <= shrublandChance:
+                            plot.setTerrainType(terrainShrubland, True, True)               
+
+def generateTaiga():
+    
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    terrainTaiga = gc.getInfoTypeForString("TERRAIN_TAIGA")
+    terrainGrassland = gc.getInfoTypeForString("TERRAIN_GRASS")
+    terrainTundra = gc.getInfoTypeForString("TERRAIN_TUNDRA")
+    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
+    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
+    
+    taigaChance = 0.5 # Baseline chance for convering prairie to shrubland
+    
+    # Convert some prairie that's adjaceant to desert to shrubland 
+    for y in range(mc.height):
+        for x in range(mc.width):
+            plot = mmap.plot(x,y)
+            if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
+                if plot.getTerrainType() == terrainGrassland or plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
+                    if isAdjacentPlotTerrainType(x, y, terrainTundra):
+                        if PRand.random() <= taigaChance:
+                            plot.setTerrainType(terrainTaiga, True, True)               
 
 def afterGeneration():
     gc = CyGlobalContext()
@@ -3914,6 +3958,8 @@ def afterGeneration():
         
     createIce()
     generateShallowCoast()
+    generateShrubland()
+    generateTaiga()
     
 def createIce():
     gc = CyGlobalContext()
