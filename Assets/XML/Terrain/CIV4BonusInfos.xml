@@ -2344,10 +2344,6 @@
             <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
                     <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
