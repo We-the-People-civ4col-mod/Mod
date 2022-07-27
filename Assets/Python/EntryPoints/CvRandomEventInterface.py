@@ -3020,63 +3020,9 @@ def getHelpQuestStartEuropeTradeYieldAndAmount(argsList):
 	king = gc.getPlayer(eking)
 	
 	# we get the Yield as Parameter from Event 
-	yields = {
-		0 : "YIELD_FOOD",
-		1 : "YIELD_LUMBER",
-		2 : "YIELD_STONE",
-		3 : "YIELD_HEMP",
-		4 : "YIELD_ORE",
-		5 : "YIELD_SHEEP",
-		6 : "YIELD_CATTLE",
-		7 : "YIELD_HORSES",
-		8 : "YIELD_COCA_LEAVES",
-		9 : "YIELD_COCOA_FRUITS",
-		10 : "YIELD_COFFEE_BERRIES",
-		11 : "YIELD_TOBACCO",
-		12 : "YIELD_WOOL",
-		13 : "YIELD_COTTON",
-		14 : "YIELD_INDIGO",
-		15 : "YIELD_HIDES",
-		16 : "YIELD_FUR",
-		17 : "YIELD_PREMIUM_FUR",
-		18 : "YIELD_RAW_SALT",
-		19 : "YIELD_RED_PEPPER",
-		20 : "YIELD_BARLEY",
-		21 : "YIELD_SUGAR",
-		22 : "YIELD_GRAPES",
-		23 : "YIELD_WHALE_BLUBBER",
-		24 : "YIELD_VALUABLE_WOOD",
-		25 : "YIELD_TRADE_GOODS",
-		26 : "YIELD_ROPE",
-		27 : "YIELD_SAILCLOTH",
-		28 : "YIELD_TOOLS",
-		29 : "YIELD_BLADES",
-		30 : "YIELD_MUSKETS",
-		31 : "YIELD_CANNONS",
-		32 : "YIELD_SILVER",
-		33 : "YIELD_GOLD",
-		34 : "YIELD_GEMS",
-		35 : "YIELD_COCOA",
-		36 : "YIELD_COFFEE",
-		37 : "YIELD_CIGARS",
-		38 : "YIELD_WOOL_CLOTH",
-		39 : "YIELD_CLOTH",
-		40 : "YIELD_COLOURED_CLOTH",
-		41 : "YIELD_LEATHER",
-		42 : "YIELD_COATS",
-		43 : "YIELD_PREMIUM_COATS",
-		44 : "YIELD_SALT",
-		45 : "YIELD_SPICES",
-		46 : "YIELD_BEER",
-		47 : "YIELD_RUM",
-		48 : "YIELD_WINE",
-		49 : "YIELD_WHALE_OIL",
-		50 : "YIELD_FURNITURE",
-		51 : "YIELD_LUXURY_GOODS"
-		}
+
 	# First we get the Yield for this Event
-	iChoose = yields[event.getGenericParameter(2)]
-	iYield = gc.getInfoTypeForString(iChoose)
+	iYield = event.getGenericParameter(2)
 	
 	# Second we get the Target Quantity to deliver and of course also consider gamespeed
 	quantity = event.getGenericParameter(3)
@@ -3092,9 +3038,9 @@ def getHelpQuestStartEuropeTradeYieldAndAmount(argsList):
 	# Now we construct the Help Text
 	szHelp = ""
 	if quantity > 0 :
-		if event.getGenericParameter(2) != 25 and event.getGenericParameter(2) != 51:
+		if iYield != gc.getInfoTypeForString("YIELD_TRADE_GOODS") and iYield != gc.getInfoTypeForString("YIELD_LUXURY_GOODS"):
 			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP", (quantity, gc.getYieldInfo(iYield).getChar()))
-		elif event.getGenericParameter(2) == 25 or event.getGenericParameter(2) == 51:
+		elif iYield == gc.getInfoTypeForString("YIELD_TRADE_GOODS") or iYield == gc.getInfoTypeForString("YIELD_LUXURY_GOODS"):
 			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY", (quantity, gc.getYieldInfo(iYield).getChar()))
 	return szHelp
 
@@ -3111,62 +3057,7 @@ def getHelpQuestDoneEuropeTradePriceAndAttitude(argsList):
 	king = gc.getPlayer(eking)
 	
 	# we get the Yield as Parameter from Event 
-	yields = {
-		0 : "YIELD_FOOD",
-		1 : "YIELD_LUMBER",
-		2 : "YIELD_STONE",
-		3 : "YIELD_HEMP",
-		4 : "YIELD_ORE",
-		5 : "YIELD_SHEEP",
-		6 : "YIELD_CATTLE",
-		7 : "YIELD_HORSES",
-		8 : "YIELD_COCA_LEAVES",
-		9 : "YIELD_COCOA_FRUITS",
-		10 : "YIELD_COFFEE_BERRIES",
-		11 : "YIELD_TOBACCO",
-		12 : "YIELD_WOOL",
-		13 : "YIELD_COTTON",
-		14 : "YIELD_INDIGO",
-		15 : "YIELD_HIDES",
-		16 : "YIELD_FUR",
-		17 : "YIELD_PREMIUM_FUR",
-		18 : "YIELD_RAW_SALT",
-		19 : "YIELD_RED_PEPPER",
-		20 : "YIELD_BARLEY",
-		21 : "YIELD_SUGAR",
-		22 : "YIELD_GRAPES",
-		23 : "YIELD_WHALE_BLUBBER",
-		24 : "YIELD_VALUABLE_WOOD",
-		25 : "YIELD_TRADE_GOODS",
-		26 : "YIELD_ROPE",
-		27 : "YIELD_SAILCLOTH",
-		28 : "YIELD_TOOLS",
-		29 : "YIELD_BLADES",
-		30 : "YIELD_MUSKETS",
-		31 : "YIELD_CANNONS",
-		32 : "YIELD_SILVER",
-		33 : "YIELD_GOLD",
-		34 : "YIELD_GEMS",
-		35 : "YIELD_COCOA",
-		36 : "YIELD_COFFEE",
-		37 : "YIELD_CIGARS",
-		38 : "YIELD_WOOL_CLOTH",
-		39 : "YIELD_CLOTH",
-		40 : "YIELD_COLOURED_CLOTH",
-		41 : "YIELD_LEATHER",
-		42 : "YIELD_COATS",
-		43 : "YIELD_PREMIUM_COATS",
-		44 : "YIELD_SALT",
-		45 : "YIELD_SPICES",
-		46 : "YIELD_BEER",
-		47 : "YIELD_RUM",
-		48 : "YIELD_WINE",
-		49 : "YIELD_WHALE_OIL",
-		50 : "YIELD_FURNITURE",
-		51 : "YIELD_LUXURY_GOODS"
-		}
-	iChoose = yields[event.getGenericParameter(2)]
-	iYield = gc.getInfoTypeForString(iChoose)
+	iYield = event.getGenericParameter(2)
 
 	#szHelp = localText.getText("TXT_KEY_EVENT_EUROPE_TRADE_PRICE_AND_ATTITUDE_HELP", ())
 	szHelp = ""
@@ -3197,64 +3088,9 @@ def applyQuestDoneEuropeTradePriceAndAttitude(argsList):
 	king.AI_changeAttitudeExtra(kTriggeredData.ePlayer, event.getGenericParameter(3))
 	
 	# getting the Yield for the Price Change
-	yields = {
-		0 : "YIELD_FOOD",
-		1 : "YIELD_LUMBER",
-		2 : "YIELD_STONE",
-		3 : "YIELD_HEMP",
-		4 : "YIELD_ORE",
-		5 : "YIELD_SHEEP",
-		6 : "YIELD_CATTLE",
-		7 : "YIELD_HORSES",
-		8 : "YIELD_COCA_LEAVES",
-		9 : "YIELD_COCOA_FRUITS",
-		10 : "YIELD_COFFEE_BERRIES",
-		11 : "YIELD_TOBACCO",
-		12 : "YIELD_WOOL",
-		13 : "YIELD_COTTON",
-		14 : "YIELD_INDIGO",
-		15 : "YIELD_HIDES",
-		16 : "YIELD_FUR",
-		17 : "YIELD_PREMIUM_FUR",
-		18 : "YIELD_RAW_SALT",
-		19 : "YIELD_RED_PEPPER",
-		20 : "YIELD_BARLEY",
-		21 : "YIELD_SUGAR",
-		22 : "YIELD_GRAPES",
-		23 : "YIELD_WHALE_BLUBBER",
-		24 : "YIELD_VALUABLE_WOOD",
-		25 : "YIELD_TRADE_GOODS",
-		26 : "YIELD_ROPE",
-		27 : "YIELD_SAILCLOTH",
-		28 : "YIELD_TOOLS",
-		29 : "YIELD_BLADES",
-		30 : "YIELD_MUSKETS",
-		31 : "YIELD_CANNONS",
-		32 : "YIELD_SILVER",
-		33 : "YIELD_GOLD",
-		34 : "YIELD_GEMS",
-		35 : "YIELD_COCOA",
-		36 : "YIELD_COFFEE",
-		37 : "YIELD_CIGARS",
-		38 : "YIELD_WOOL_CLOTH",
-		39 : "YIELD_CLOTH",
-		40 : "YIELD_COLOURED_CLOTH",
-		41 : "YIELD_LEATHER",
-		42 : "YIELD_COATS",
-		43 : "YIELD_PREMIUM_COATS",
-		44 : "YIELD_SALT",
-		45 : "YIELD_SPICES",
-		46 : "YIELD_BEER",
-		47 : "YIELD_RUM",
-		48 : "YIELD_WINE",
-		49 : "YIELD_WHALE_OIL",
-		50 : "YIELD_FURNITURE",
-		51 : "YIELD_LUXURY_GOODS"
-		}
-	
-	# changing the Price
-	iChoose = yields[event.getGenericParameter(2)]
-	iYield = gc.getInfoTypeForString(iChoose)
+	iYield = event.getGenericParameter(2)
+    
+    # changing the Price
 	iPrice = king.getYieldBuyPrice(iYield)
 	king.setYieldBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
 
@@ -4714,63 +4550,7 @@ def getHelpQuestStartAfricaTradeYieldAndAmount(argsList):
 	king = gc.getPlayer(eking)
 	
 	# we get the Yield as Parameter from Event 
-	yields = {
-		0 : "YIELD_FOOD",
-		1 : "YIELD_LUMBER",
-		2 : "YIELD_STONE",
-		3 : "YIELD_HEMP",
-		4 : "YIELD_ORE",
-		5 : "YIELD_SHEEP",
-		6 : "YIELD_CATTLE",
-		7 : "YIELD_HORSES",
-		8 : "YIELD_COCA_LEAVES",
-		9 : "YIELD_COCOA_FRUITS",
-		10 : "YIELD_COFFEE_BERRIES",
-		11 : "YIELD_TOBACCO",
-		12 : "YIELD_WOOL",
-		13 : "YIELD_COTTON",
-		14 : "YIELD_INDIGO",
-		15 : "YIELD_HIDES",
-		16 : "YIELD_FUR",
-		17 : "YIELD_PREMIUM_FUR",
-		18 : "YIELD_RAW_SALT",
-		19 : "YIELD_RED_PEPPER",
-		20 : "YIELD_BARLEY",
-		21 : "YIELD_SUGAR",
-		22 : "YIELD_GRAPES",
-		23 : "YIELD_WHALE_BLUBBER",
-		24 : "YIELD_VALUABLE_WOOD",
-		25 : "YIELD_TRADE_GOODS",
-		26 : "YIELD_ROPE",
-		27 : "YIELD_SAILCLOTH",
-		28 : "YIELD_TOOLS",
-		29 : "YIELD_BLADES",
-		30 : "YIELD_MUSKETS",
-		31 : "YIELD_CANNONS",
-		32 : "YIELD_SILVER",
-		33 : "YIELD_GOLD",
-		34 : "YIELD_GEMS",
-		35 : "YIELD_COCOA",
-		36 : "YIELD_COFFEE",
-		37 : "YIELD_CIGARS",
-		38 : "YIELD_WOOL_CLOTH",
-		39 : "YIELD_CLOTH",
-		40 : "YIELD_COLOURED_CLOTH",
-		41 : "YIELD_LEATHER",
-		42 : "YIELD_COATS",
-		43 : "YIELD_PREMIUM_COATS",
-		44 : "YIELD_SALT",
-		45 : "YIELD_SPICES",
-		46 : "YIELD_BEER",
-		47 : "YIELD_RUM",
-		48 : "YIELD_WINE",
-		49 : "YIELD_WHALE_OIL",
-		50 : "YIELD_FURNITURE",
-		51 : "YIELD_LUXURY_GOODS"
-		}
-	# First we get the Yield for this Event
-	iChoose = yields[event.getGenericParameter(2)]
-	iYield = gc.getInfoTypeForString(iChoose)
+	iYield = event.getGenericParameter(2)
 	
 	# Second we get the Target Quantity to deliver and of course also consider gamespeed
 	quantity = event.getGenericParameter(3)
@@ -4786,9 +4566,9 @@ def getHelpQuestStartAfricaTradeYieldAndAmount(argsList):
 	# Now we construct the Help Text
 	szHelp = ""
 	if quantity > 0 :
-		if event.getGenericParameter(2) != 25 and event.getGenericParameter(2) != 51:
+		if iYield != gc.getInfoTypeForString("YIELD_TRADE_GOODS") and iYield != gc.getInfoTypeForString("YIELD_LUXURY_GOODS"):
 			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP", (quantity, gc.getYieldInfo(iYield).getChar()))
-		elif event.getGenericParameter(2) == 25 or event.getGenericParameter(2) == 51:
+		elif iYield == gc.getInfoTypeForString("YIELD_TRADE_GOODS") or iYield== event.getGenericParameter(2) != gc.getInfoTypeForString("YIELD_LUXURY_GOODS"):
 			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY", (quantity, gc.getYieldInfo(iYield).getChar()))
 	return szHelp
 
@@ -4805,62 +4585,7 @@ def getHelpQuestDoneAfricaTradePriceAndAttitude(argsList):
 	king = gc.getPlayer(eking)
 	
 	# we get the Yield as Parameter from Event 
-	yields = {
-		0 : "YIELD_FOOD",
-		1 : "YIELD_LUMBER",
-		2 : "YIELD_STONE",
-		3 : "YIELD_HEMP",
-		4 : "YIELD_ORE",
-		5 : "YIELD_SHEEP",
-		6 : "YIELD_CATTLE",
-		7 : "YIELD_HORSES",
-		8 : "YIELD_COCA_LEAVES",
-		9 : "YIELD_COCOA_FRUITS",
-		10 : "YIELD_COFFEE_BERRIES",
-		11 : "YIELD_TOBACCO",
-		12 : "YIELD_WOOL",
-		13 : "YIELD_COTTON",
-		14 : "YIELD_INDIGO",
-		15 : "YIELD_HIDES",
-		16 : "YIELD_FUR",
-		17 : "YIELD_PREMIUM_FUR",
-		18 : "YIELD_RAW_SALT",
-		19 : "YIELD_RED_PEPPER",
-		20 : "YIELD_BARLEY",
-		21 : "YIELD_SUGAR",
-		22 : "YIELD_GRAPES",
-		23 : "YIELD_WHALE_BLUBBER",
-		24 : "YIELD_VALUABLE_WOOD",
-		25 : "YIELD_TRADE_GOODS",
-		26 : "YIELD_ROPE",
-		27 : "YIELD_SAILCLOTH",
-		28 : "YIELD_TOOLS",
-		29 : "YIELD_BLADES",
-		30 : "YIELD_MUSKETS",
-		31 : "YIELD_CANNONS",
-		32 : "YIELD_SILVER",
-		33 : "YIELD_GOLD",
-		34 : "YIELD_GEMS",
-		35 : "YIELD_COCOA",
-		36 : "YIELD_COFFEE",
-		37 : "YIELD_CIGARS",
-		38 : "YIELD_WOOL_CLOTH",
-		39 : "YIELD_CLOTH",
-		40 : "YIELD_COLOURED_CLOTH",
-		41 : "YIELD_LEATHER",
-		42 : "YIELD_COATS",
-		43 : "YIELD_PREMIUM_COATS",
-		44 : "YIELD_SALT",
-		45 : "YIELD_SPICES",
-		46 : "YIELD_BEER",
-		47 : "YIELD_RUM",
-		48 : "YIELD_WINE",
-		49 : "YIELD_WHALE_OIL",
-		50 : "YIELD_FURNITURE",
-		51 : "YIELD_LUXURY_GOODS"
-		}
-	iChoose = yields[event.getGenericParameter(2)]
-	iYield = gc.getInfoTypeForString(iChoose)
+	iYield = event.getGenericParameter(2)
 
 	#szHelp = localText.getText("TXT_KEY_EVENT_EUROPE_TRADE_PRICE_AND_ATTITUDE_HELP", ())
 	szHelp = ""
@@ -4891,64 +4616,8 @@ def applyQuestDoneAfricaTradePriceAndAttitude(argsList):
 	king.AI_changeAttitudeExtra(kTriggeredData.ePlayer, event.getGenericParameter(3))
 	
 	# getting the Yield for the Price Change
-	yields = {
-		0 : "YIELD_FOOD",
-		1 : "YIELD_LUMBER",
-		2 : "YIELD_STONE",
-		3 : "YIELD_HEMP",
-		4 : "YIELD_ORE",
-		5 : "YIELD_SHEEP",
-		6 : "YIELD_CATTLE",
-		7 : "YIELD_HORSES",
-		8 : "YIELD_COCA_LEAVES",
-		9 : "YIELD_COCOA_FRUITS",
-		10 : "YIELD_COFFEE_BERRIES",
-		11 : "YIELD_TOBACCO",
-		12 : "YIELD_WOOL",
-		13 : "YIELD_COTTON",
-		14 : "YIELD_INDIGO",
-		15 : "YIELD_HIDES",
-		16 : "YIELD_FUR",
-		17 : "YIELD_PREMIUM_FUR",
-		18 : "YIELD_RAW_SALT",
-		19 : "YIELD_RED_PEPPER",
-		20 : "YIELD_BARLEY",
-		21 : "YIELD_SUGAR",
-		22 : "YIELD_GRAPES",
-		23 : "YIELD_WHALE_BLUBBER",
-		24 : "YIELD_VALUABLE_WOOD",
-		25 : "YIELD_TRADE_GOODS",
-		26 : "YIELD_ROPE",
-		27 : "YIELD_SAILCLOTH",
-		28 : "YIELD_TOOLS",
-		29 : "YIELD_BLADES",
-		30 : "YIELD_MUSKETS",
-		31 : "YIELD_CANNONS",
-		32 : "YIELD_SILVER",
-		33 : "YIELD_GOLD",
-		34 : "YIELD_GEMS",
-		35 : "YIELD_COCOA",
-		36 : "YIELD_COFFEE",
-		37 : "YIELD_CIGARS",
-		38 : "YIELD_WOOL_CLOTH",
-		39 : "YIELD_CLOTH",
-		40 : "YIELD_COLOURED_CLOTH",
-		41 : "YIELD_LEATHER",
-		42 : "YIELD_COATS",
-		43 : "YIELD_PREMIUM_COATS",
-		44 : "YIELD_SALT",
-		45 : "YIELD_SPICES",
-		46 : "YIELD_BEER",
-		47 : "YIELD_RUM",
-		48 : "YIELD_WINE",
-		49 : "YIELD_WHALE_OIL",
-		50 : "YIELD_FURNITURE",
-		51 : "YIELD_LUXURY_GOODS"
-		}
-	
-	# changing the Price
-	iChoose = yields[event.getGenericParameter(2)]
-	iYield = gc.getInfoTypeForString(iChoose)
+	iYield = event.getGenericParameter(2)
+
 	# careful, uses Africa methods here
 	iPrice = king.getYieldAfricaBuyPrice(iYield)
 	king.setYieldAfricaBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
@@ -5032,63 +4701,7 @@ def getHelpQuestStartPortRoyalTradeYieldAndAmount(argsList):
 	king = gc.getPlayer(eking)
 	
 	# we get the Yield as Parameter from Event 
-	yields = {
-		0 : "YIELD_FOOD",
-		1 : "YIELD_LUMBER",
-		2 : "YIELD_STONE",
-		3 : "YIELD_HEMP",
-		4 : "YIELD_ORE",
-		5 : "YIELD_SHEEP",
-		6 : "YIELD_CATTLE",
-		7 : "YIELD_HORSES",
-		8 : "YIELD_COCA_LEAVES",
-		9 : "YIELD_COCOA_FRUITS",
-		10 : "YIELD_COFFEE_BERRIES",
-		11 : "YIELD_TOBACCO",
-		12 : "YIELD_WOOL",
-		13 : "YIELD_COTTON",
-		14 : "YIELD_INDIGO",
-		15 : "YIELD_HIDES",
-		16 : "YIELD_FUR",
-		17 : "YIELD_PREMIUM_FUR",
-		18 : "YIELD_RAW_SALT",
-		19 : "YIELD_RED_PEPPER",
-		20 : "YIELD_BARLEY",
-		21 : "YIELD_SUGAR",
-		22 : "YIELD_GRAPES",
-		23 : "YIELD_WHALE_BLUBBER",
-		24 : "YIELD_VALUABLE_WOOD",
-		25 : "YIELD_TRADE_GOODS",
-		26 : "YIELD_ROPE",
-		27 : "YIELD_SAILCLOTH",
-		28 : "YIELD_TOOLS",
-		29 : "YIELD_BLADES",
-		30 : "YIELD_MUSKETS",
-		31 : "YIELD_CANNONS",
-		32 : "YIELD_SILVER",
-		33 : "YIELD_GOLD",
-		34 : "YIELD_GEMS",
-		35 : "YIELD_COCOA",
-		36 : "YIELD_COFFEE",
-		37 : "YIELD_CIGARS",
-		38 : "YIELD_WOOL_CLOTH",
-		39 : "YIELD_CLOTH",
-		40 : "YIELD_COLOURED_CLOTH",
-		41 : "YIELD_LEATHER",
-		42 : "YIELD_COATS",
-		43 : "YIELD_PREMIUM_COATS",
-		44 : "YIELD_SALT",
-		45 : "YIELD_SPICES",
-		46 : "YIELD_BEER",
-		47 : "YIELD_RUM",
-		48 : "YIELD_WINE",
-		49 : "YIELD_WHALE_OIL",
-		50 : "YIELD_FURNITURE",
-		51 : "YIELD_LUXURY_GOODS"
-		}
-	# First we get the Yield for this Event
-	iChoose = yields[event.getGenericParameter(2)]
-	iYield = gc.getInfoTypeForString(iChoose)
+	iYield = event.getGenericParameter(2)
 	
 	# Second we get the Target Quantity to deliver and of course also consider gamespeed
 	quantity = event.getGenericParameter(3)
@@ -5104,9 +4717,9 @@ def getHelpQuestStartPortRoyalTradeYieldAndAmount(argsList):
 	# Now we construct the Help Text
 	szHelp = ""
 	if quantity > 0 :
-		if event.getGenericParameter(2) != 25 and event.getGenericParameter(2) != 51:
+		if iYield != gc.getInfoTypeForString("YIELD_TRADE_GOODS") and iYield != gc.getInfoTypeForString("YIELD_LUXURY_GOODS"):
 			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PORT_ROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP", (quantity, gc.getYieldInfo(iYield).getChar()))
-		elif event.getGenericParameter(2) == 25 or event.getGenericParameter(2) == 51:
+		elif iYield == gc.getInfoTypeForString("YIELD_TRADE_GOODS") or iYield == gc.getInfoTypeForString("YIELD_LUXURY_GOODS"):
 			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PORT_ROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY", (quantity, gc.getYieldInfo(iYield).getChar()))
 	return szHelp
 
@@ -5123,62 +4736,7 @@ def getHelpQuestDonePortRoyalTradePriceAndAttitude(argsList):
 	king = gc.getPlayer(eking)
 	
 	# we get the Yield as Parameter from Event 
-	yields = {
-		0 : "YIELD_FOOD",
-		1 : "YIELD_LUMBER",
-		2 : "YIELD_STONE",
-		3 : "YIELD_HEMP",
-		4 : "YIELD_ORE",
-		5 : "YIELD_SHEEP",
-		6 : "YIELD_CATTLE",
-		7 : "YIELD_HORSES",
-		8 : "YIELD_COCA_LEAVES",
-		9 : "YIELD_COCOA_FRUITS",
-		10 : "YIELD_COFFEE_BERRIES",
-		11 : "YIELD_TOBACCO",
-		12 : "YIELD_WOOL",
-		13 : "YIELD_COTTON",
-		14 : "YIELD_INDIGO",
-		15 : "YIELD_HIDES",
-		16 : "YIELD_FUR",
-		17 : "YIELD_PREMIUM_FUR",
-		18 : "YIELD_RAW_SALT",
-		19 : "YIELD_RED_PEPPER",
-		20 : "YIELD_BARLEY",
-		21 : "YIELD_SUGAR",
-		22 : "YIELD_GRAPES",
-		23 : "YIELD_WHALE_BLUBBER",
-		24 : "YIELD_VALUABLE_WOOD",
-		25 : "YIELD_TRADE_GOODS",
-		26 : "YIELD_ROPE",
-		27 : "YIELD_SAILCLOTH",
-		28 : "YIELD_TOOLS",
-		29 : "YIELD_BLADES",
-		30 : "YIELD_MUSKETS",
-		31 : "YIELD_CANNONS",
-		32 : "YIELD_SILVER",
-		33 : "YIELD_GOLD",
-		34 : "YIELD_GEMS",
-		35 : "YIELD_COCOA",
-		36 : "YIELD_COFFEE",
-		37 : "YIELD_CIGARS",
-		38 : "YIELD_WOOL_CLOTH",
-		39 : "YIELD_CLOTH",
-		40 : "YIELD_COLOURED_CLOTH",
-		41 : "YIELD_LEATHER",
-		42 : "YIELD_COATS",
-		43 : "YIELD_PREMIUM_COATS",
-		44 : "YIELD_SALT",
-		45 : "YIELD_SPICES",
-		46 : "YIELD_BEER",
-		47 : "YIELD_RUM",
-		48 : "YIELD_WINE",
-		49 : "YIELD_WHALE_OIL",
-		50 : "YIELD_FURNITURE",
-		51 : "YIELD_LUXURY_GOODS"
-		}
-	iChoose = yields[event.getGenericParameter(2)]
-	iYield = gc.getInfoTypeForString(iChoose)
+	iYield = event.getGenericParameter(2)
 
 	#szHelp = localText.getText("TXT_KEY_EVENT_EUROPE_TRADE_PRICE_AND_ATTITUDE_HELP", ())
 	szHelp = ""
@@ -5209,64 +4767,8 @@ def applyQuestDonePortRoyalTradePriceAndAttitude(argsList):
 	king.AI_changeAttitudeExtra(kTriggeredData.ePlayer, event.getGenericParameter(3))
 	
 	# getting the Yield for the Price Change
-	yields = {
-		0 : "YIELD_FOOD",
-		1 : "YIELD_LUMBER",
-		2 : "YIELD_STONE",
-		3 : "YIELD_HEMP",
-		4 : "YIELD_ORE",
-		5 : "YIELD_SHEEP",
-		6 : "YIELD_CATTLE",
-		7 : "YIELD_HORSES",
-		8 : "YIELD_COCA_LEAVES",
-		9 : "YIELD_COCOA_FRUITS",
-		10 : "YIELD_COFFEE_BERRIES",
-		11 : "YIELD_TOBACCO",
-		12 : "YIELD_WOOL",
-		13 : "YIELD_COTTON",
-		14 : "YIELD_INDIGO",
-		15 : "YIELD_HIDES",
-		16 : "YIELD_FUR",
-		17 : "YIELD_PREMIUM_FUR",
-		18 : "YIELD_RAW_SALT",
-		19 : "YIELD_RED_PEPPER",
-		20 : "YIELD_BARLEY",
-		21 : "YIELD_SUGAR",
-		22 : "YIELD_GRAPES",
-		23 : "YIELD_WHALE_BLUBBER",
-		24 : "YIELD_VALUABLE_WOOD",
-		25 : "YIELD_TRADE_GOODS",
-		26 : "YIELD_ROPE",
-		27 : "YIELD_SAILCLOTH",
-		28 : "YIELD_TOOLS",
-		29 : "YIELD_BLADES",
-		30 : "YIELD_MUSKETS",
-		31 : "YIELD_CANNONS",
-		32 : "YIELD_SILVER",
-		33 : "YIELD_GOLD",
-		34 : "YIELD_GEMS",
-		35 : "YIELD_COCOA",
-		36 : "YIELD_COFFEE",
-		37 : "YIELD_CIGARS",
-		38 : "YIELD_WOOL_CLOTH",
-		39 : "YIELD_CLOTH",
-		40 : "YIELD_COLOURED_CLOTH",
-		41 : "YIELD_LEATHER",
-		42 : "YIELD_COATS",
-		43 : "YIELD_PREMIUM_COATS",
-		44 : "YIELD_SALT",
-		45 : "YIELD_SPICES",
-		46 : "YIELD_BEER",
-		47 : "YIELD_RUM",
-		48 : "YIELD_WINE",
-		49 : "YIELD_WHALE_OIL",
-		50 : "YIELD_FURNITURE",
-		51 : "YIELD_LUXURY_GOODS"
-		}
-	
-	# changing the Price
-	iChoose = yields[event.getGenericParameter(2)]
-	iYield = gc.getInfoTypeForString(iChoose)
+	iYield = event.getGenericParameter(2)
+    
 	# careful, uses Port Royal methods here
 	iPrice = king.getYieldPortRoyalBuyPrice(iYield)
 	king.setYieldPortRoyalBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
