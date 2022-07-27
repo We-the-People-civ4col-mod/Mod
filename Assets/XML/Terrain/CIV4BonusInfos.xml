@@ -296,10 +296,6 @@
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
@@ -359,10 +355,6 @@
             <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans/>
             <FeatureBooleans>
-			    <FeatureBoolean>
-                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
@@ -7864,7 +7856,7 @@
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
             <bUseLSystem>0</bUseLSystem>
-        </BonusInfo>			
+        </BonusInfo>
         <BonusInfo>
             <Type>BONUS_SHEEP</Type>
             <Description>TXT_KEY_BONUS_SHEEP</Description>
@@ -10649,18 +10641,10 @@
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>0</bCoastalLandOnly>
-			<TerrainBooleans/>
+            <TerrainBooleans/>
             <FeatureBooleans>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_JUNGLE</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
                     <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -10674,7 +10658,7 @@
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
-        </BonusInfo>		
+        </BonusInfo>
         <BonusInfo>
             <Type>BONUS_SUGAR</Type>
             <Description>TXT_KEY_BONUS_SUGAR</Description>
@@ -11182,7 +11166,7 @@
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
-        </BonusInfo>		
+        </BonusInfo>
         <BonusInfo>
             <Type>BONUS_COCOA</Type>
             <Description>TXT_KEY_BONUS_COCOA</Description>
@@ -11229,10 +11213,6 @@
                 </FeatureBoolean>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>
@@ -11683,7 +11663,7 @@
             </FeatureTerrainBooleans>
             <bUseLSystem>0</bUseLSystem>
         </BonusInfo>
-		<BonusInfo>
+        <BonusInfo>
             <Type>BONUS_KAUTSCHUK</Type>
             <Description>TXT_KEY_BONUS_KAUTSCHUK</Description>
             <Civilopedia>TXT_KEY_BONUS_KAUTSCHUK_PEDIA</Civilopedia>
@@ -12574,7 +12554,7 @@
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
             <bUseLSystem>0</bUseLSystem>
-        </BonusInfo>	
+        </BonusInfo>
         <BonusInfo>
             <Type>BONUS_SILVER</Type>
             <Description>TXT_KEY_BONUS_SILVER</Description>
