@@ -508,8 +508,24 @@
         <English>%d1%F2 per Citizen</English>
         <French>%d1%F2 par citoyen</French>
         <German>%d1%F2 pro Bürger</German>
-        <Italian>%d1%F2 per cittad.</Italian>
+        <Italian>%d1%F2 per cittad</Italian>
         <Spanish>%d1%F2 por ciudadano</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_OUTPUT_BY_RESOURCE</Tag>
+        <English>%s1 : %d2%F3_icon</English>
+        <French>%s1 : %d2%F3_icon</French>
+        <German>%s1 : %d2%F3_icon</German>
+        <Italian>%s1 : %d2%F3_icon</Italian>
+        <Spanish>%s1 : %d2%F3_icon</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_OUTPUT_BY_FEATURE</Tag>
+        <English>%s1 : %d2%F3_icon</English>
+        <French>%s1 : %d2%F3_icon</French>
+        <German>%s1 : %d2%F3_icon</German>
+        <Italian>%s1 : %d2%F3_icon</Italian>
+        <Spanish>%s1 : %d2%F3_icon</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRICE_RISE</Tag>
