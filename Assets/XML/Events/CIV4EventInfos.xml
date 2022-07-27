@@ -2889,7 +2889,7 @@
             <PythonHelp>getHelpSecondCity2</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>200</iAIValue>
-            <iGenericParameter1>20</iGenericParameter1>
+            <iGenericParameter1>25</iGenericParameter1>
             <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -6391,7 +6391,7 @@
             <PythonHelp>getHelpBonus</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>1000</iAIValue>
-            <iGenericParameter1>40</iGenericParameter1>
+            <iGenericParameter1>BONUS_WHALE</iGenericParameter1>
             <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -6452,7 +6452,7 @@
             <PythonHelp>getHelpBonus</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>1000</iAIValue>
-            <iGenericParameter1>21</iGenericParameter1>
+            <iGenericParameter1>BONUS_COCOA</iGenericParameter1>
             <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -6513,7 +6513,7 @@
             <PythonHelp>getHelpBonus</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>1000</iAIValue>
-            <iGenericParameter1>21</iGenericParameter1>
+            <iGenericParameter1>BONUS_COCOA</iGenericParameter1>
             <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -13888,7 +13888,7 @@
             <PythonHelp>getHelpBonus</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>1000</iAIValue>
-            <iGenericParameter1>27</iGenericParameter1>
+            <iGenericParameter1>BONUS_GRAPES</iGenericParameter1>
             <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -14010,7 +14010,7 @@
             <PythonHelp>getHelpBonus</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>1000</iAIValue>
-            <iGenericParameter1>29</iGenericParameter1>
+            <iGenericParameter1>BONUS_RED_PEPPER</iGenericParameter1>
             <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -14132,7 +14132,7 @@
             <PythonHelp>getHelpBonus</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>1000</iAIValue>
-            <iGenericParameter1>23</iGenericParameter1>
+            <iGenericParameter1>BONUS_SALT</iGenericParameter1>
             <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -17670,7 +17670,7 @@
             <PythonHelp>getHelpBonus</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>1000</iAIValue>
-            <iGenericParameter1>40</iGenericParameter1>
+            <iGenericParameter1>BONUS_HIGH_SEA_FISH</iGenericParameter1>
             <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -18615,7 +18615,7 @@
             <PythonHelp>getHelpBonus</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>10</iAIValue>
-            <iGenericParameter1>36</iGenericParameter1>
+            <iGenericParameter1>BONUS_GEMS</iGenericParameter1>
             <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -25249,7 +25249,7 @@
             <PythonHelp>getHelpBonus</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>1000</iAIValue>
-            <iGenericParameter1>3</iGenericParameter1>
+            <iGenericParameter1>BONUS_FISH</iGenericParameter1>
             <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
