@@ -3950,6 +3950,45 @@ def generateRockSteppes():
                             if PRand.random() <= rockSteppesChance:
                                 plot.setTerrainType(terrainRockSteppes, True, True)               
 
+def generateWetland():
+
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    terrainWetland = gc.getInfoTypeForString("TERRAIN_WETLAND")
+    terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
+    terrainTundra = gc.getInfoTypeForString("TERRAIN_TUNDRA")
+    
+    wetlandChance = 0.2 # Baseline chance for converting terrain
+    wetlandAdjacentChance = 0.4 # Higher chance if there's already adjacent wetland
+    
+    # Convert non-dry river plots
+    for y in range(mc.height):
+        for x in range(mc.width):
+            plot = mmap.plot(x,y)
+            if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
+                if plot.isRiver():
+                    if not isAnyAdjacentPlotTerrainType(x, y, terrainDesert) and not isAnyAdjacentPlotTerrainType(x, y, terrainTundra):
+                        if isAnyAdjacentPlotTerrainType(x, y, terrainWetland):
+                            if PRand.random() <= wetlandAdjacentChance:
+                                plot.setTerrainType(terrainWetland, True, True)               
+                        else:
+                            if PRand.random() <= wetlandChance:
+                                plot.setTerrainType(terrainWetland, True, True)                    
+    
+    # Convert non-dry plots adjacent to lakes and coast
+    for y in range(mc.height):
+        for x in range(mc.width):
+            plot = mmap.plot(x,y)
+            if not plot.getPlotType() == PlotTypes.PLOT_PEAK and plot.getPlotType() == PlotTypes.PLOT_LAND:
+                if isAnyAdjacentPlotType(x, y, PlotTypes.PLOT_OCEAN):
+                    if not isAnyAdjacentPlotTerrainType(x, y, terrainDesert) and not isAnyAdjacentPlotTerrainType(x, y, terrainTundra):
+                        if isAnyAdjacentPlotTerrainType(x, y, terrainWetland):
+                            if PRand.random() <= wetlandAdjacentChance:
+                                plot.setTerrainType(terrainWetland, True, True)               
+                        else:
+                            if PRand.random() <= wetlandChance:
+                                plot.setTerrainType(terrainWetland, True, True)                    
+                        
 def afterGeneration():
     gc = CyGlobalContext()
     mmap = gc.getMap()
@@ -4016,6 +4055,7 @@ def afterGeneration():
     generateShrubland()
     generateTaiga()
     generateRockSteppes()
+    generateWetland()
     
 def createIce():
     gc = CyGlobalContext()
