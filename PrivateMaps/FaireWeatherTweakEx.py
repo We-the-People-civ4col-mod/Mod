@@ -4056,6 +4056,9 @@ def afterGeneration():
     generateTaiga()
     generateRockSteppes()
     generateWetland()
+    mg = CyMapGenerator()
+    mg.addFeaturesOnLand()
+    mg.addFeaturesOnWater()
     
 def createIce():
     gc = CyGlobalContext()

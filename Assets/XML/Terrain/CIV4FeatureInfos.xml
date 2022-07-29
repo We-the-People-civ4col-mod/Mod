@@ -5244,7 +5244,7 @@
             <iMovement>3</iMovement>
             <iSeeThrough>0</iSeeThrough>
             <iDefense>-15</iDefense>
-            <iAppearance>0</iAppearance>
+            <iAppearance>100</iAppearance>
             <iDisappearance>0</iDisappearance>
             <iTurnDamage>0</iTurnDamage>
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
@@ -5349,7 +5349,7 @@
             <iMovement>3</iMovement>
             <iSeeThrough>0</iSeeThrough>
             <iDefense>-30</iDefense>
-            <iAppearance>0</iAppearance>
+            <iAppearance>100</iAppearance>
             <iDisappearance>0</iDisappearance>
             <iTurnDamage>20</iTurnDamage>
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
@@ -5467,7 +5467,7 @@
             <iMovement>3</iMovement>
             <iSeeThrough>0</iSeeThrough>
             <iDefense>-15</iDefense>
-            <iAppearance>0</iAppearance>
+            <iAppearance>100</iAppearance>
             <iDisappearance>0</iDisappearance>
             <iTurnDamage>0</iTurnDamage>
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
@@ -5585,7 +5585,7 @@
             <iMovement>3</iMovement>
             <iSeeThrough>0</iSeeThrough>
             <iDefense>-15</iDefense>
-            <iAppearance>0</iAppearance>
+            <iAppearance>100</iAppearance>
             <iDisappearance>0</iDisappearance>
             <iTurnDamage>0</iTurnDamage>
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
@@ -5699,7 +5699,7 @@
             <iMovement>1</iMovement>
             <iSeeThrough>0</iSeeThrough>
             <iDefense>0</iDefense>
-            <iAppearance>0</iAppearance>
+            <iAppearance>100</iAppearance>
             <iDisappearance>0</iDisappearance>
             <iTurnDamage>0</iTurnDamage>
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
@@ -5728,10 +5728,6 @@
                 </TerrainBoolean>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_OCEAN</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>

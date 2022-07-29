@@ -73,6 +73,12 @@ void CyMapGenerator::addFeaturesOnLand()
 }
 //WTP, ray, Randomize Features Map Option - END
 
+void CyMapGenerator::addFeaturesOnWater()
+{
+	if (m_pMapGenerator)
+		m_pMapGenerator->addFeaturesOnWater();
+}
+
 void CyMapGenerator::addBonuses()
 {
 	if (m_pMapGenerator)
