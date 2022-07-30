@@ -42,7 +42,7 @@ class CvPediaYields:
 		#self.W_STATS_PANE = (w * 55 / 100)
 		#self.H_STATS_PANE = (h * 30 / 100)
 		self.W_STATS_PANE = (w * 60 / 100)
-		self.H_STATS_PANE = (h * 20 / 100)
+		self.H_STATS_PANE = (h * 35 / 100)
 		## R&R, Robert Surcouf,  Pedia - End
 		
 		self.X_HISTORY_PANE = x
@@ -50,7 +50,7 @@ class CvPediaYields:
 		self.W_HISTORY_PANE = w
 		self.H_HISTORY_PANE = h - self.H_ICON_PANE - (h * 5 / 100)
 
-		self.top.deleteAllWidgets()						
+		self.top.deleteAllWidgets()
 		screen = self.top.getScreen()
 		
 		bNotActive = (not screen.isActive())
@@ -65,7 +65,7 @@ class CvPediaYields:
 		# Top
 		screen.setText(self.top.getNextWidgetName(), "Background", self.top.MENU_TEXT, CvUtil.FONT_LEFT_JUSTIFY, self.top.X_MENU, self.top.Y_MENU, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_PEDIA_MAIN, CivilopediaPageTypes.CIVILOPEDIA_PAGE_YIELDS, -1)
 
-		if self.top.iLastScreen	!= CvScreenEnums.PEDIA_YIELDS or bNotActive:		
+		if self.top.iLastScreen	!= CvScreenEnums.PEDIA_YIELDS or bNotActive:
 			self.placeLinks(true)
 			self.top.iLastScreen = CvScreenEnums.PEDIA_YIELDS
 		else:
@@ -90,11 +90,26 @@ class CvPediaYields:
 		screen.addListBoxGFC(panelName, "", self.X_STATS_PANE, self.Y_STATS_PANE, self.W_STATS_PANE, self.H_STATS_PANE, TableStyles.TABLE_STYLE_EMPTY)
 		screen.enableSelect(panelName, False)
 		
-		# ray, making special storage capacity rules for Yields XML configurable
+# ray, making special storage capacity rules for Yields XML configurable
 		if(yieldInfo.isIgnoredForStorageCapacity()):
-		#if(yieldInfo.isCargo()):
 			szTextIsIgnoredInStorageCapacity = localText.getText("TXT_KEY_YIELD_IS_IGNORED_IN_STORAGE_CAPACITY", ())
 			screen.appendListBoxString(panelName, szTextIsIgnoredInStorageCapacity, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+
+# ray, also showing Yield Bonus Resources, but only if larger 0
+		for iBonus in range(gc.getNumBonusInfos()):
+			bonusInfo = gc.getBonusInfo(iBonus)
+			iBonusYields = bonusInfo.getYieldChange(self.iYields)
+			if (iBonusYields > 0):
+				szTextResource = localText.getText("TXT_KEY_YIELD_OUTPUT_BY_RESOURCE", (bonusInfo.getDescription(), iBonusYields, gc.getYieldInfo(self.iYields).getChar()))
+				screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szTextResource + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+
+# ray, also showing Yields From Terrain Features, but only if larger 0
+		for iFeature in range(gc.getNumFeatureInfos()):
+			featureInfo = gc.getFeatureInfo(iFeature)
+			iFeatureYields = featureInfo.getYieldChange(self.iYields)
+			if (iFeatureYields > 0):
+				szTextFeature = localText.getText("TXT_KEY_YIELD_OUTPUT_BY_FEATURE", (featureInfo.getDescription(), iFeatureYields, gc.getYieldInfo(self.iYields).getChar()))
+				screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szTextFeature + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 
 		for i in range(gc.getNumBuildingInfos()):
 			buildingInfo = gc.getBuildingInfo(i)
@@ -117,7 +132,7 @@ class CvPediaYields:
 				
 			if (buildingInfo.getYieldChange(self.iYields) != 0):
 				if (buildingInfo.getYieldChange(self.iYields) > 0):
-						szSign = "+"
+					szSign = "+"
 				else:
 					szSign = ""
 
@@ -159,7 +174,7 @@ class CvPediaYields:
 				szBonus = ": "
 				if (change != 0):
 					if (change > 0):
-							szBonus +=  "+"
+						szBonus +=  "+"
 					szBonus +=  str(change)
 					if (bonus != 0):
 						szBonus += "("
@@ -200,7 +215,7 @@ class CvPediaYields:
 		listSorted=[(0,0)]*gc.getNumYieldInfos()
 		for j in range(gc.getNumYieldInfos()):
 			listSorted[j] = (gc.getYieldInfo(j).getDescription(), j)
-		listSorted.sort()	
+		listSorted.sort()
 			
 		iSelected = 0
 		i = 0
