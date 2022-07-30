@@ -4049,6 +4049,10 @@
                     <YieldType>YIELD_FOOD</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
             </YieldChanges>
             <RiverYieldIncreases>
                 <YieldIntegerPair>
@@ -4080,6 +4084,10 @@
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
@@ -4144,6 +4152,10 @@
                     <YieldType>YIELD_FOOD</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
             </YieldChanges>
             <RiverYieldIncreases>
                 <YieldIntegerPair>
@@ -4175,6 +4187,10 @@
             <TerrainBooleans>
                 <TerrainBoolean>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>

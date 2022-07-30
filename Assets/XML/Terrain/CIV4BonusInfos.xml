@@ -3348,6 +3348,10 @@
                     <YieldType>YIELD_FOOD</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
             </YieldChanges>
             <iHealthEffectFromRessource>1</iHealthEffectFromRessource>
             <iAIObjective>0</iAIObjective>
@@ -6164,7 +6168,7 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_WILD_FEATHERS</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
@@ -6294,7 +6298,7 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_WILD_FEATHERS</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
@@ -6381,7 +6385,7 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_WILD_FEATHERS</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
@@ -6476,7 +6480,7 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_WILD_FEATHERS</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>4</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
@@ -6579,7 +6583,7 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_WILD_FEATHERS</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
@@ -6674,7 +6678,7 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_WILD_FEATHERS</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>4</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
@@ -6769,7 +6773,7 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_WILD_FEATHERS</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>5</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
@@ -6879,7 +6883,7 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_WILD_FEATHERS</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
@@ -11403,7 +11407,7 @@
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
             <bUseLSystem>0</bUseLSystem>
-        </BonusInfo>	
+        </BonusInfo>
         <BonusInfo>
             <Type>BONUS_VANILLA</Type>
             <Description>TXT_KEY_BONUS_VANILLA</Description>
