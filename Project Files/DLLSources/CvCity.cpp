@@ -12488,7 +12488,8 @@ void CvCity::getYieldDemands(YieldCargoArray<int> &aYields) const
 
 	// Add building demands
 	aYields.copy(getBuildingYieldDemands());
-
+	
+	// comment by ray: this here is just citizens
 	// add unit demands
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
@@ -12496,6 +12497,23 @@ void CvCity::getYieldDemands(YieldCargoArray<int> &aYields) const
 		// reuse CivEffect cache code as it's essentially we same we need here: add a bunch of InfoArrays into one JIT array.
 		aYields.addCache(1, GC.getUnitInfo(pLoopUnit->getUnitType()).getYieldDemands());
 	}
+
+	// WTP, ray, adjustments to Domestic Market to also consider Defenders on City Plot - START
+	CvPlot* pCityCenterPlot = plot();
+	CLLNode<IDInfo>* pUnitNode = pCityCenterPlot->headUnitNode();
+	while (pUnitNode)
+	{
+		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+		// however, we only consider Units that belong to the same Player as the City
+		if (pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+		{
+			aYields.addCache(1, GC.getUnitInfo(pLoopUnit->getUnitType()).getYieldDemands());
+		}
+	}
+
+	// WTP, ray, adjustments to Domestic Market to also consider Defenders on City Plot - END
 
 	// apply market multiplier to each yield
 	int iMarketModifier = this->getMarketModifier();
