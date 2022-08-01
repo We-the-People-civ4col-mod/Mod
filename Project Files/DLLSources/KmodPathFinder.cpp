@@ -280,8 +280,10 @@ void KmodPathFinder::SetSettings(const CvPathSettings& new_settings)
 		{
 			if (settings.pGroup->getDomainType() == DOMAIN_SEA)
 			{
-				// this assume there are no sea-roads, or promotions to reduce sea movement cost.
-				settings.iHeuristicWeight = GC.getMOVE_DENOMINATOR();
+				// Not accurate anymore due to the introduction of streams:
+				// K-Mod "this assume there are no sea-roads, or promotions to reduce sea movement cost."
+				//settings.iHeuristicWeight = GC.getMOVE_DENOMINATOR();
+				settings.iHeuristicWeight = MinimumStepCost(settings.pGroup->baseMoves());
 			}
 			else
 			{
