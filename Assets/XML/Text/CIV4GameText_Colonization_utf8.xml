@@ -528,6 +528,22 @@
         <Spanish>%s1 : %d2%F3_icon</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_YIELD_OUTPUT_BY_IMPROVEMENT</Tag>
+        <English>%s1 : %d2%F3_icon</English>
+        <French>%s1 : %d2%F3_icon</French>
+        <German>%s1 : %d2%F3_icon</German>
+        <Italian>%s1 : %d2%F3_icon</Italian>
+        <Spanish>%s1 : %d2%F3_icon</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_OUTPUT_BY_TERRAIN</Tag>
+        <English>%s1 : %d2%F3_icon</English>
+        <French>%s1 : %d2%F3_icon</French>
+        <German>%s1 : %d2%F3_icon</German>
+        <Italian>%s1 : %d2%F3_icon</Italian>
+        <Spanish>%s1 : %d2%F3_icon</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PRICE_RISE</Tag>
         <English>The price of [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in %s2_civ has risen to %d3[ICON_GOLD]</English>
         <French>Le prix pour [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] a augmenté pour atteindre %d3[ICON_GOLD] dans les %s2_civ</French>

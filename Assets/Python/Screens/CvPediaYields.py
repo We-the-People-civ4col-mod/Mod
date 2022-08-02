@@ -41,7 +41,7 @@ class CvPediaYields:
 		## R&R, Robert Surcouf,  Pedia - Start
 		#self.W_STATS_PANE = (w * 55 / 100)
 		#self.H_STATS_PANE = (h * 30 / 100)
-		self.W_STATS_PANE = (w * 60 / 100)
+		self.W_STATS_PANE = (w * 35 / 100)
 		self.H_STATS_PANE = (h * 35 / 100)
 		## R&R, Robert Surcouf,  Pedia - End
 		
@@ -77,6 +77,7 @@ class CvPediaYields:
 		screen.addDDSGFC(self.top.getNextWidgetName(), gc.getYieldInfo(self.iYields).getButton(), self.X_ICON + self.W_ICON/2 - self.ICON_SIZE/2, self.Y_ICON + self.H_ICON/2 - self.ICON_SIZE/2, self.ICON_SIZE, self.ICON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 		self.placeStats()
+		self.placeStats2()
 		self.placeHistory()
 
 	def placeStats(self):
@@ -95,22 +96,7 @@ class CvPediaYields:
 			szTextIsIgnoredInStorageCapacity = localText.getText("TXT_KEY_YIELD_IS_IGNORED_IN_STORAGE_CAPACITY", ())
 			screen.appendListBoxString(panelName, szTextIsIgnoredInStorageCapacity, WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 
-# ray, also showing Yield Bonus Resources, but only if larger 0
-		for iBonus in range(gc.getNumBonusInfos()):
-			bonusInfo = gc.getBonusInfo(iBonus)
-			iBonusYields = bonusInfo.getYieldChange(self.iYields)
-			if (iBonusYields > 0):
-				szTextResource = localText.getText("TXT_KEY_YIELD_OUTPUT_BY_RESOURCE", (bonusInfo.getDescription(), iBonusYields, gc.getYieldInfo(self.iYields).getChar()))
-				screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szTextResource + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-
-# ray, also showing Yields From Terrain Features, but only if larger 0
-		for iFeature in range(gc.getNumFeatureInfos()):
-			featureInfo = gc.getFeatureInfo(iFeature)
-			iFeatureYields = featureInfo.getYieldChange(self.iYields)
-			if (iFeatureYields > 0):
-				szTextFeature = localText.getText("TXT_KEY_YIELD_OUTPUT_BY_FEATURE", (featureInfo.getDescription(), iFeatureYields, gc.getYieldInfo(self.iYields).getChar()))
-				screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szTextFeature + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-
+# ray, this here shows Building Bonusses
 		for i in range(gc.getNumBuildingInfos()):
 			buildingInfo = gc.getBuildingInfo(i)
 #MultipleYieldsProduced Start
@@ -123,7 +109,7 @@ class CvPediaYields:
 							#screen.appendListBoxStringNoUpdate(panelName, u"<font=4>" + u"%s: " %buildingInfo.getDescription() + szText + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 							screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + u"%s: " %buildingInfo.getDescription() + szText + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 							## R&R, Robert Surcouf,  Pedia - End
-#MultipleYieldsProduced End	
+#MultipleYieldsProduced End
 			if(buildingInfo.getYieldModifier(self.iYields) > 0):
 				## R&R, Robert Surcouf,  Pedia - Start
 				#screen.appendListBoxStringNoUpdate(panelName, u"<font=4>" + u"%s: " %(buildingInfo.getDescription()) + u"+%d%% %c" % (buildingInfo.getYieldModifier(self.iYields), gc.getYieldInfo(self.iYields).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
@@ -189,6 +175,52 @@ class CvPediaYields:
 					
 				screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szName + szBonus + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 ## Show-yield-producing-units End - Nightinggale
+
+		screen.updateListBox(panelName)
+
+
+	def placeStats2(self):
+	
+		screen = self.top.getScreen()
+
+		yieldInfo = gc.getYieldInfo(self.iYields)
+
+		panelName = self.top.getNextWidgetName()
+
+		screen.addListBoxGFC(panelName, "", self.X_STATS_PANE + self.W_STATS_PANE + self.W_STATS_PANE / 8, self.Y_STATS_PANE, self.W_STATS_PANE * 4 / 5, self.H_STATS_PANE, TableStyles.TABLE_STYLE_EMPTY)
+		screen.enableSelect(panelName, False)
+
+# ray, also showing Yield from Terrain, but only if larger 0
+		for iTerrain in range(gc.getNumTerrainInfos()):
+			terrainInfo = gc.getTerrainInfo(iTerrain)
+			iTerrainYields = terrainInfo.getYield(self.iYields)
+			if (iTerrainYields > 0):
+				szTextResource = localText.getText("TXT_KEY_YIELD_OUTPUT_BY_TERRAIN", (terrainInfo.getDescription(), iTerrainYields, gc.getYieldInfo(self.iYields).getChar()))
+				screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szTextResource + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+
+# ray, also showing Yield from Improvements , but only if larger 0
+		for iImprovement in range(gc.getNumImprovementInfos()):
+			improvementInfo = gc.getImprovementInfo(iImprovement)
+			iImprovementYields = improvementInfo.getYieldIncrease(self.iYields)
+			if (iImprovementYields > 0):
+				szTextResource = localText.getText("TXT_KEY_YIELD_OUTPUT_BY_IMPROVEMENT", (improvementInfo.getDescription(), iImprovementYields, gc.getYieldInfo(self.iYields).getChar()))
+				screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szTextResource + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+
+# ray, also showing Yield from Bonus Resources, but only if larger 0
+		for iBonus in range(gc.getNumBonusInfos()):
+			bonusInfo = gc.getBonusInfo(iBonus)
+			iBonusYields = bonusInfo.getYieldChange(self.iYields)
+			if (iBonusYields > 0):
+				szTextResource = localText.getText("TXT_KEY_YIELD_OUTPUT_BY_RESOURCE", (bonusInfo.getDescription(), iBonusYields, gc.getYieldInfo(self.iYields).getChar()))
+				screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szTextResource + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+
+# ray, also showing Yields from Terrain Features, but only if larger 0
+		for iFeature in range(gc.getNumFeatureInfos()):
+			featureInfo = gc.getFeatureInfo(iFeature)
+			iFeatureYields = featureInfo.getYieldChange(self.iYields)
+			if (iFeatureYields > 0):
+				szTextFeature = localText.getText("TXT_KEY_YIELD_OUTPUT_BY_FEATURE", (featureInfo.getDescription(), iFeatureYields, gc.getYieldInfo(self.iYields).getChar()))
+				screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szTextFeature + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 
 		screen.updateListBox(panelName)
 
