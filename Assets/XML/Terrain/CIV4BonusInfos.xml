@@ -11564,7 +11564,16 @@
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>0</bCoastalLandOnly>
-            <TerrainBooleans/>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_FOREST</FeatureType>
@@ -11633,7 +11642,7 @@
             <bArea>0</bArea>
             <bPeaks>0</bPeaks>
             <bHills>1</bHills>
-            <bFlatlands>1</bFlatlands>
+            <bFlatlands>0</bFlatlands>
             <bNoRiverSide>0</bNoRiverSide>
             <bRiverSideOnly>0</bRiverSideOnly>
             <bCoastalLandOnly>0</bCoastalLandOnly>

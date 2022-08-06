@@ -1781,6 +1781,10 @@
                     <YieldType>YIELD_HARDWOOD</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_LOGWOOD</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
             </YieldIncreases>
             <RiverSideYieldChanges/>
             <HillsYieldChanges/>
@@ -1959,6 +1963,17 @@
                         </YieldIntegerPair>
                         <YieldIntegerPair>
                             <YieldType>YIELD_HARDWOOD</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_BLOODWOOD</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_LOGWOOD</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -2802,17 +2817,6 @@
                         </YieldIntegerPair>
                     </YieldChanges>
                 </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_KAUTSCHUK</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_KAUTSCHUK</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
             </BonusTypeStructs>
             <ImprovementPillage/>
             <ImprovementUpgrade>IMPROVEMENT_COLLECTORS_DEPOT</ImprovementUpgrade>
@@ -2834,7 +2838,7 @@
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_LOGWOOD</YieldType>
+                    <YieldType>YIELD_KAUTSCHUK</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -2852,7 +2856,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_LOGWOOD</YieldType>
+                    <YieldType>YIELD_KAUTSCHUK</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -2915,12 +2919,12 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
-                    <BonusType>BONUS_BLOODWOOD</BonusType>
+                    <BonusType>BONUS_KAUTSCHUK</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_LOGWOOD</YieldType>
+                            <YieldType>YIELD_KAUTSCHUK</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -4041,6 +4045,10 @@
                     <YieldType>YIELD_HARDWOOD</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_LOGWOOD</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
             </YieldIncreases>
             <RiverSideYieldChanges/>
             <HillsYieldChanges/>
@@ -4219,6 +4227,17 @@
                         </YieldIntegerPair>
                         <YieldIntegerPair>
                             <YieldType>YIELD_HARDWOOD</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_BLOODWOOD</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_LOGWOOD</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -5040,17 +5059,6 @@
                         </YieldIntegerPair>
                     </YieldChanges>
                 </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_KAUTSCHUK</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_KAUTSCHUK</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
             </BonusTypeStructs>
             <ImprovementPillage/>
             <ImprovementUpgrade/>
@@ -5072,7 +5080,7 @@
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_LOGWOOD</YieldType>
+                    <YieldType>YIELD_KAUTSCHUK</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -5090,7 +5098,7 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_LOGWOOD</YieldType>
+                    <YieldType>YIELD_KAUTSCHUK</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -5153,12 +5161,12 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
-                    <BonusType>BONUS_BLOODWOOD</BonusType>
+                    <BonusType>BONUS_KAUTSCHUK</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
-                            <YieldType>YIELD_LOGWOOD</YieldType>
+                            <YieldType>YIELD_KAUTSCHUK</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -6716,6 +6724,10 @@
                     <YieldType>YIELD_HARDWOOD</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_LOGWOOD</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
             </YieldIncreases>
             <RiverSideYieldChanges/>
             <HillsYieldChanges/>
@@ -6895,6 +6907,6 @@
             <ImprovementUpgrade/>
             <RouteYieldChanges/>
             <bGraphicalOnly>0</bGraphicalOnly>
-        </ImprovementInfo>	
-	</ImprovementInfos>
+        </ImprovementInfo>
+    </ImprovementInfos>
 </Civ4ImprovementInfos>

@@ -1880,7 +1880,7 @@
             <iHotKeyPriority>0</iHotKeyPriority>
             <Button>Art\Interface\Game Hud\actions\Horse_Pasture_high_res.dds</Button>
         </BuildInfo>
-		<BuildInfo>
+        <BuildInfo>
             <Type>BUILD_PEN</Type>
             <Description>TXT_KEY_BUILD_PEN</Description>
             <Help>TXT_KEY_BUILD_PASTURE_PEN</Help>
@@ -2717,7 +2717,7 @@
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
-                    <bRemove>1</bRemove>
+                    <bRemove>0</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_CACTUS_TREES</FeatureType>
@@ -2728,7 +2728,7 @@
                             <iYield>10</iYield>
                         </Yield>
                     </Yields>
-                    <bRemove>1</bRemove>
+                    <bRemove>0</bRemove>
                 </FeatureStruct>
                 <FeatureStruct>
                     <FeatureType>FEATURE_LICHEN</FeatureType>

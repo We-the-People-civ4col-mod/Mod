@@ -46,7 +46,7 @@
             <Icon>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,14</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,1</HighlightIcon>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,1</Button>
-        </YieldInfo>		
+        </YieldInfo>        
         <YieldInfo>
             <Type>YIELD_LUMBER</Type>
             <Description>TXT_KEY_YIELD_LUMBER</Description>
@@ -88,7 +88,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,2,1</HighlightIcon>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,2,1</Button>
         </YieldInfo>	
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_HARDWOOD</Type>
             <Description>TXT_KEY_YIELD_HARDWOOD</Description>
             <Civilopedia>TXT_KEY_YIELD_HARDWOOD_PEDIA</Civilopedia>
@@ -292,7 +292,7 @@
             <Icon>Art/interface/buttons/New_Yieds_Icons/Linen_Fiber_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Linen_Fiber_Goods_Button.dds</Button>
-        </YieldInfo>		
+        </YieldInfo>        
         <YieldInfo>
             <Type>YIELD_ORE</Type>
             <Description>TXT_KEY_YIELD_ORE</Description>
@@ -536,7 +536,7 @@
             <Icon>Art/interface/buttons/New_Yieds_Icons/Pigs_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,7,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Pigs_Goods_Button.dds</Button>
-        </YieldInfo>		
+        </YieldInfo>        
         <YieldInfo>
             <Type>YIELD_CATTLE</Type>
             <Description>TXT_KEY_YIELD_CATTLE</Description>
@@ -618,7 +618,7 @@
             <Icon>Art/interface/buttons/New_Yieds_Icons/Chicken_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,7,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Chicken_Goods_Button.dds</Button>
-        </YieldInfo>		
+        </YieldInfo>        
         <YieldInfo>
             <Type>YIELD_GEESE</Type>
             <Description>TXT_KEY_YIELD_GEESE</Description>
@@ -659,7 +659,7 @@
             <Icon>Art/interface/buttons/New_Yieds_Icons/Goose_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,7,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Goose_Goods_Button.dds</Button>
-        </YieldInfo>				
+        </YieldInfo>                
         <YieldInfo>
             <Type>YIELD_HORSES</Type>
             <Description>TXT_KEY_YIELD_HORSES</Description>
@@ -824,7 +824,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Peanuts_Goods_Button.dds</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_MILK</Type>
             <Description>TXT_KEY_YIELD_MILK</Description>
             <Civilopedia>TXT_KEY_YIELD_MILK_PEDIA</Civilopedia>
@@ -862,7 +862,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Milk_Goods_Icon.dds</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Stable_Combi_Icon.dds</CombiIcon>
+        	<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Stable_Combi_Icon.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Milk_Goods_Button.dds</Button>
         </YieldInfo>
@@ -1032,7 +1032,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,10,1</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,1,4</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_LOGWOOD</Type>
             <Description>TXT_KEY_YIELD_LOGWOOD</Description>
             <Civilopedia>TXT_KEY_YIELD_LOGWOOD_PEDIA</Civilopedia>
@@ -1073,7 +1073,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,10,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Bloodwood_Goods_Button.dds</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_COCHINEAL</Type>
             <Description>TXT_KEY_YIELD_COCHINEAL</Description>
             <Civilopedia>TXT_KEY_YIELD_COCHINEAL_PEDIA</Civilopedia>
@@ -1155,8 +1155,8 @@
             <CombiIcon>,Art/colonization_atlas_resources.dds,4,9</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,1</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,5,6</Button>
-        </YieldInfo>	
-		<YieldInfo>
+        </YieldInfo>
+        <YieldInfo>
             <Type>YIELD_GOAT_HIDES</Type>
             <Description>TXT_KEY_YIELD_GOAT_HIDES</Description>
             <Civilopedia>TXT_KEY_YIELD_GOAT_HIDES_PEDIA</Civilopedia>
@@ -1198,7 +1198,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Goat_Hide_Goods_Button.dds</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_PIG_SKIN</Type>
             <Description>TXT_KEY_YIELD_PIG_SKIN</Description>
             <Civilopedia>TXT_KEY_YIELD_PIG_SKIN_PEDIA</Civilopedia>
@@ -1282,7 +1282,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,1</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,6,3</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_DOWNS</Type>
             <Description>TXT_KEY_YIELD_DOWNS</Description>
             <Civilopedia>TXT_KEY_YIELD_DOWNS_PEDIA</Civilopedia>
@@ -1323,7 +1323,7 @@
             <CombiIcon>,Art/colonization_atlas_resources.dds,4,9</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Downs_Goods_Button.dds</Button>
-        </YieldInfo>		
+        </YieldInfo>
         <YieldInfo>
             <Type>YIELD_FUR</Type>
             <Description>TXT_KEY_YIELD_FUR</Description>
@@ -1528,7 +1528,7 @@
             <Icon>Art/interface/buttons/New_Yieds_Icons/Vanilla_Pods_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Vanilla_Pods_Goods_Button.dds</Button>
-        </YieldInfo>				
+        </YieldInfo>                
         <YieldInfo>
             <Type>YIELD_BARLEY</Type>
             <Description>TXT_KEY_YIELD_BARLEY</Description>
@@ -2143,7 +2143,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,14,1</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,3,1</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_WILD_FEATHERS</Type>
             <Description>TXT_KEY_YIELD_WILD_FEATHERS</Description>
             <Civilopedia>TXT_KEY_YIELD_WILD_FEATHERS_PEDIA</Civilopedia>
@@ -2307,7 +2307,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,14,1</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,7,2</Button>
         </YieldInfo>	
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_RICE</Type>
             <Description>TXT_KEY_YIELD_RICE</Description>
             <Civilopedia>TXT_KEY_YIELD_RICE_PEDIA</Civilopedia>
@@ -2348,7 +2348,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,9,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Rice_Goods_Button.dds</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_CASSAVA</Type>
             <Description>TXT_KEY_YIELD_CASSAVA</Description>
             <Civilopedia>TXT_KEY_YIELD_CASSAVA_PEDIA</Civilopedia>
@@ -2471,7 +2471,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,9,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Maple_Sirup_Goods_Button.dds</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_KAUTSCHUK</Type>
             <Description>TXT_KEY_YIELD_KAUTSCHUK</Description>
             <Civilopedia>TXT_KEY_YIELD_KAUTSCHUK_PEDIA</Civilopedia>
@@ -2638,7 +2638,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Roasted_Peanuts_Goods_Button.dds</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_CHEESE</Type>
             <Description>TXT_KEY_YIELD_CHEESE</Description>
             <Civilopedia>TXT_KEY_YIELD_CHEESE_PEDIA</Civilopedia>
@@ -2679,7 +2679,7 @@
             <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Stable_Combi_Icon.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Cheese_Goods_Button.dds</Button>
-        </YieldInfo>		
+        </YieldInfo>        
         <YieldInfo>
             <Type>YIELD_CIGARS</Type>
             <Description>TXT_KEY_YIELD_CIGARS</Description>
@@ -2718,7 +2718,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,15</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Tobacco_Yerba.dds</CombiIcon>
+        	<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Tobacco_Yerba.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,4,2</HighlightIcon>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,2</Button>
         </YieldInfo>
@@ -2760,10 +2760,10 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Yerba_Tea_Goods_Icon.dds</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Tobacco_Yerba.dds</CombiIcon>
+        	<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Tobacco_Yerba.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,4,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Yerba_Tea_Goods_Button.dds</Button>
-        </YieldInfo>			
+        </YieldInfo>        	
         <YieldInfo>
             <Type>YIELD_CLOTH</Type>
             <Description>TXT_KEY_YIELD_CLOTH</Description>
@@ -2848,7 +2848,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,4,2</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_FESTIVE_CLOTHES</Type>
             <Description>TXT_KEY_YIELD_FESTIVE_CLOTHES</Description>
             <Civilopedia>TXT_KEY_YIELD_FESTIVE_CLOTHES_PEDIA</Civilopedia>
@@ -2932,7 +2932,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,4,6</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_COLOURED_WOOL_CLOTH</Type>
             <Description>TXT_KEY_YIELD_COLOURED_WOOL_CLOTH</Description>
             <Civilopedia>TXT_KEY_YIELD_COLOURED_WOOL_CLOTH_PEDIA</Civilopedia>
@@ -2974,7 +2974,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Coloured_Wool_Goods_Button.dds</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_EVERYDAY_CLOTHES</Type>
             <Description>TXT_KEY_YIELD_EVERYDAY_CLOTHES</Description>
             <Civilopedia>TXT_KEY_YIELD_EVERYDAY_CLOTHES_PEDIA</Civilopedia>
@@ -3054,7 +3054,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Pig_Leather_Aprons_Goods_Icon.dds</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Leather_Goods.dds</CombiIcon>
+        	<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Leather_Goods.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,2,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Pig_Leather_Aprons_Goods_Button.dds</Button>
         </YieldInfo>
@@ -3096,11 +3096,11 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,4,13</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Leather_Goods.dds</CombiIcon>
+        	<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Leather_Goods.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,2,2</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,4,4</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_GOAT_HIDE_BOOTS</Type>
             <Description>TXT_KEY_YIELD_GOAT_HIDE_BOOTS</Description>
             <Civilopedia>TXT_KEY_YIELD_GOAT_HIDE_BOOTS_PEDIA</Civilopedia>
@@ -3138,11 +3138,11 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Goat_Hide_Boots_Goods_Icon.dds</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Padded.dds</CombiIcon>
+        	<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Padded.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,2,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Goat_Hide_Boots_Goods_Button.dds</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_PADDED_LEATHER_COATS</Type>
             <Description>TXT_KEY_YIELD_PADDED_LEATHER_COATS</Description>
             <Civilopedia>TXT_KEY_YIELD_PADDED_LEATHER_COATS_PEDIA</Civilopedia>
@@ -3180,7 +3180,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Padded_Leather_Coats_Goods_Icon.dds</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Padded.dds</CombiIcon>
+        	<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Padded.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,2,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Padded_Leather_Coats_Goods_Button.dds</Button>
         </YieldInfo>
@@ -3394,7 +3394,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Vanilla_Goods_Button.dds</Button>
         </YieldInfo>	
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_CHOCOLATE</Type>
             <Description>TXT_KEY_YIELD_CHOCOLATE</Description>
             <Civilopedia>TXT_KEY_YIELD_CHOCOLATE_PEDIA</Civilopedia>
@@ -3515,7 +3515,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,15</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Distillery_Goods.dds</CombiIcon>
+        	<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Distillery_Goods.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,3,2</HighlightIcon>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,2</Button>
         </YieldInfo>
@@ -3557,7 +3557,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Hooch_Goods_Icon.dds</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Distillery_Goods.dds</CombiIcon>
+        	<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Distillery_Goods.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,3,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Hooch_Goods_Button.dds</Button>
         </YieldInfo>
@@ -3602,7 +3602,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,4,3</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_OLIVE_OIL</Type>
             <Description>TXT_KEY_YIELD_OLIVE_OIL</Description>
             <Civilopedia>TXT_KEY_YIELD_OLIVE_OIL_PEDIA</Civilopedia>
@@ -3640,11 +3640,11 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Olive_Oil_Goods_Icon.dds</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Oil.dds</CombiIcon>	
+        	<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Oil.dds</CombiIcon>	
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Olive_Oil_Goods_Button.dds</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_RAPE_OIL</Type>
             <Description>TXT_KEY_YIELD_RAPE_OIL</Description>
             <Civilopedia>TXT_KEY_YIELD_RAPE_OIL_PEDIA</Civilopedia>
@@ -3682,7 +3682,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Rape_Seed_Oil_Goods_Icon.dds</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Oil.dds</CombiIcon>	
+        	<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Oil.dds</CombiIcon>	
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Rape_Seed_Oil_Goods_Button.dds</Button>
         </YieldInfo>
@@ -3727,7 +3727,7 @@
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,2</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,2,6</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_POTTERY</Type>
             <Description>TXT_KEY_YIELD_POTTERY</Description>
             <Civilopedia>TXT_KEY_YIELD_POTTERY_PEDIA</Civilopedia>
@@ -3806,7 +3806,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,6,11</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Furniture.dds</CombiIcon>
+        	<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Furniture.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,6,2</Button>
         </YieldInfo>
@@ -3848,11 +3848,11 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Padded_Furniture_Goods_Icon.dds</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Furniture.dds</CombiIcon>
+        	<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Furniture.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Padded_Furniture_Goods_Button.dds</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_FIELD_WORKER_TOOLS</Type>
             <Description>TXT_KEY_YIELD_FIELD_WORKER_TOOLS</Description>
             <Civilopedia>TXT_KEY_YIELD_FIELD_WORKER_TOOLS_PEDIA</Civilopedia>
@@ -3889,11 +3889,11 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Field_Worker_Tools_Icon.dds</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Household_Trader.dds</CombiIcon>
+        	<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Household_Trader.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,8,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Field_Worker_Tools_Button.dds</Button>
         </YieldInfo>
-		<YieldInfo>
+        <YieldInfo>
             <Type>YIELD_HOUSEHOLD_GOODS</Type>
             <Description>TXT_KEY_YIELD_HOUSEHOLD_GOODS</Description>
             <Civilopedia>TXT_KEY_YIELD_HOUSEHOLD_GOODS_PEDIA</Civilopedia>
@@ -3930,7 +3930,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Household_Items_Goods_Icon.dds</Icon>
-			<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Household_Trader.dds</CombiIcon>
+        	<CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Household_Trader.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,8,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Household_Items_Goods_Button.dds</Button>
         </YieldInfo>
