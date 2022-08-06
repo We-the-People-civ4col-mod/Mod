@@ -776,7 +776,8 @@ void CvUnit::doTurn()
 	
 	// R&R, Robert Surcouf, Damage on Storm plots, Start
 	// R&R, bugfix: we only damage ships on Sea and not the transported units, ray, START
-	if (getDomainType() == DOMAIN_SEA)
+	// WTP, ray, we also add logic to damage Units on Land by Land Storms like e.g. Blizzard and Sandstorm
+	if (getDomainType() == DOMAIN_SEA || (getDomainType() == DOMAIN_LAND && !plot()->isWater()))
 	{
 		FeatureTypes eFeature = plot()->getFeatureType();
 		if (NO_FEATURE != eFeature)
@@ -3465,7 +3466,8 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 	
 	// R&R, Robert Surcouf, Damage on Storm plots, Start
 	// R&R, bugfix: we only damage ships on Sea and not the transported units, ray, START
-	if (getDomainType() == DOMAIN_SEA)
+	// WTP, ray, we also add logic to damage Units on Land by Land Storms like e.g. Blizzard and Sandstorm
+	if (getDomainType() == DOMAIN_SEA || (getDomainType() == DOMAIN_LAND && !plot()->isWater()))
 	{
 		FeatureTypes eFeature = plot()->getFeatureType();
 		if (NO_FEATURE != eFeature)
