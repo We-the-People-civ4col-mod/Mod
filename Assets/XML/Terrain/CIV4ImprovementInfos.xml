@@ -1202,10 +1202,6 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_FRUITS</YieldType>
-                    <iValue>2</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
                     <YieldType>YIELD_BARLEY</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
@@ -1410,17 +1406,6 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
-                    <BonusType>BONUS_MELON</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
                     <BonusType>BONUS_OASIS</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -1454,105 +1439,6 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
-                    <BonusType>BONUS_BANANA</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_PASSION_FRUIT</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_GUAVA</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_COCONUT</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_PINE_APPLE</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_PAPAYA</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_APPLES</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_CHERRIES</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_LEMONS</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
                     <BonusType>BONUS_TOMATO</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -1570,50 +1456,6 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_FOOD</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_TUNDRA_BERRIES</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_HUCKLE_BERRIES</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_BLUE_BERRIES</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_CRAN_BERRIES</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -3101,13 +2943,17 @@
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
         <ImprovementInfo>
-            <Type>IMPROVEMENT_COCOA_PLANTATION</Type>
-            <Description>TXT_KEY_IMPROVEMENT_COCOA_PLANTATION</Description>
-            <Civilopedia>TXT_KEY_IMPROVEMENT_COCOA_PLANTATION_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_IMPROVEMENT_COCOA_PLANTATION</ArtDefineTag>
+            <Type>IMPROVEMENT_FRUIT_PLANTATION</Type>
+            <Description>TXT_KEY_IMPROVEMENT_FRUIT_PLANTATION</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_FRUIT_PLANTATION_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_FRUIT_PLANTATION</ArtDefineTag>
             <PrereqNatureYields>
                 <YieldIntegerPair>
                     <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FRUITS</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </PrereqNatureYields>
@@ -3118,6 +2964,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FRUITS</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldIncreases>
@@ -3173,9 +3023,163 @@
                         </YieldIntegerPair>
                     </YieldChanges>
                 </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_MELON</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_BANANA</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_PASSION_FRUIT</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_GUAVA</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_COCONUT</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_PINE_APPLE</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_PAPAYA</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_APPLES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_CHERRIES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_LEMONS</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_TUNDRA_BERRIES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_HUCKLE_BERRIES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_BLUE_BERRIES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_CRAN_BERRIES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
             </BonusTypeStructs>
             <ImprovementPillage/>
-            <ImprovementUpgrade>IMPROVEMENT_LARGE_COCOA_PLANTATION</ImprovementUpgrade>
+            <ImprovementUpgrade>IMPROVEMENT_LARGE_FRUIT_PLANTATION</ImprovementUpgrade>
             <RouteYieldChanges/>
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
@@ -3458,10 +3462,6 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_FRUITS</YieldType>
-                    <iValue>3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
                     <YieldType>YIELD_BARLEY</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
@@ -3666,17 +3666,6 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
-                    <BonusType>BONUS_MELON</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
                     <BonusType>BONUS_OASIS</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -3710,105 +3699,6 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
-                    <BonusType>BONUS_BANANA</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_PASSION_FRUIT</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_GUAVA</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_COCONUT</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_PINE_APPLE</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_PAPAYA</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_APPLES</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_CHERRIES</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_LEMONS</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
                     <BonusType>BONUS_TOMATO</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -3826,50 +3716,6 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_FOOD</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_TUNDRA_BERRIES</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_HUCKLE_BERRIES</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_BLUE_BERRIES</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_CRAN_BERRIES</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -5335,13 +5181,17 @@
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
         <ImprovementInfo>
-            <Type>IMPROVEMENT_LARGE_COCOA_PLANTATION</Type>
-            <Description>TXT_KEY_IMPROVEMENT_LARGE_COCOA_PLANTATION</Description>
-            <Civilopedia>TXT_KEY_IMPROVEMENT_LARGE_COCOA_PLANTATION_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_IMPROVEMENT_LARGE_COCOA_PLANTATION</ArtDefineTag>
+            <Type>IMPROVEMENT_LARGE_FRUIT_PLANTATION</Type>
+            <Description>TXT_KEY_IMPROVEMENT_LARGE_FRUIT_PLANTATION</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_LARGE_FRUIT_PLANTATION_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_LARGE_FRUIT_PLANTATION</ArtDefineTag>
             <PrereqNatureYields>
                 <YieldIntegerPair>
                     <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FRUITS</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </PrereqNatureYields>
@@ -5352,6 +5202,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FRUITS</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldIncreases>
@@ -5403,6 +5257,160 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_MELON</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_BANANA</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_PASSION_FRUIT</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_GUAVA</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_COCONUT</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_PINE_APPLE</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_PAPAYA</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_APPLES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_CHERRIES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_LEMONS</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_TUNDRA_BERRIES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_HUCKLE_BERRIES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_BLUE_BERRIES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_CRAN_BERRIES</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FRUITS</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>

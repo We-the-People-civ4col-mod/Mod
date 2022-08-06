@@ -258,6 +258,7 @@ void CyInfoPythonInterface2()
 		.def("getGroupRand", &CvBonusInfo::getGroupRand, "int ()")
 		.def("isOneArea", &CvBonusInfo::isOneArea, "bool ()")
 		.def("isHills", &CvBonusInfo::isHills, "bool ()")
+		.def("isPeaks", &CvBonusInfo::isPeaks, "bool ()")
 		 //TAC Whaling, ray
 		.def("isOcean", &CvBonusInfo::isOcean, "bool ()")
 		.def("isWhalingboatWorkable", &CvBonusInfo::isWhalingboatWorkable, "bool ()")

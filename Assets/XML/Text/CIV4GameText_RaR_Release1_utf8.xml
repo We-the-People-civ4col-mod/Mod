@@ -1297,6 +1297,26 @@
         <Spanish>Salud de la ciudad : %d1 %F2_Icon</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_BONUS_RESOURCE_IS_WATER</Tag>
+        <English>[ICON_BULLET]valid on Water</English>
+        <German>[ICON_BULLET]gültig auf Wasser</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_BONUS_RESOURCE_IS_FLATLAND</Tag>
+        <English>[ICON_BULLET]valid on Flatlands</English>
+        <German>[ICON_BULLET]gültig auf Flachland</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_BONUS_RESOURCE_IS_HILLS</Tag>
+        <English>[ICON_BULLET]valid on Hills</English>
+        <German>[ICON_BULLET]gültig auf Hügeln</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_BONUS_RESOURCE_IS_PEAKS</Tag>
+        <English>[ICON_BULLET]valid on Peaks</English>
+        <German>[ICON_BULLET]gültig auf Gebirge</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_HEALTH_FROM_RESSOURCE</Tag>
         <English>if worked by citizen: +%d1%F2_Icon</English>
         <German>falls bewirtschaftet: +%d1%F2_Icon</German>

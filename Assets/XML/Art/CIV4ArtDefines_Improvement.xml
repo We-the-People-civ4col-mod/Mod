@@ -115,7 +115,7 @@
             <Button>,Art/colonization_atlas_buildings.dds,1,11</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
-            <Type>ART_DEF_IMPROVEMENT_COCOA_PLANTATION</Type>
+            <Type>ART_DEF_IMPROVEMENT_FRUIT_PLANTATION</Type>
             <bExtraAnimations>0</bExtraAnimations>
             <fScale>0.6</fScale>
             <fInterfaceScale>1.25</fInterfaceScale>
@@ -223,7 +223,7 @@
             <Button>,Art/colonization_atlas_buildings.dds,6,14</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
-            <Type>ART_DEF_IMPROVEMENT_LARGE_COCOA_PLANTATION</Type>
+            <Type>ART_DEF_IMPROVEMENT_LARGE_FRUIT_PLANTATION</Type>
             <bExtraAnimations>0</bExtraAnimations>
             <fScale>0.7</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>

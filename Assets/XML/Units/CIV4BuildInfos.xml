@@ -2772,13 +2772,13 @@
             <Button>Art\Interface\Game Hud\Actions\build_coca_plantation.dds</Button>
         </BuildInfo>
         <BuildInfo>
-            <Type>BUILD_COCOA_PLANTATION</Type>
-            <Description>TXT_KEY_BUILD_COCOA_PLANTATION</Description>
-            <Help>TXT_KEY_BUILD_COCOA_PLANTATION_HELP</Help>
+            <Type>BUILD_FRUIT_PLANTATION</Type>
+            <Description>TXT_KEY_BUILD_FRUIT_PLANTATION</Description>
+            <Help>TXT_KEY_BUILD_FRUIT_PLANTATION_HELP</Help>
             <iTime>1000</iTime>
             <iCost>20</iCost>
             <bKill>0</bKill>
-            <ImprovementType>IMPROVEMENT_COCOA_PLANTATION</ImprovementType>
+            <ImprovementType>IMPROVEMENT_FRUIT_PLANTATION</ImprovementType>
             <PrereqTerrainType>NONE</PrereqTerrainType>
             <ResultTerrainType>NONE</ResultTerrainType>
             <ResultFeatureType>NONE</ResultFeatureType>

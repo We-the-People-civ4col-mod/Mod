@@ -31,64 +31,64 @@
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ruinen[COLOR_REVERT] sind die Überreste einer Stadt oder einer Geländeverbesserung, die im Laufe der Zeit aufgegeben wurde. Selten mal wird Seine Majestät ein paar Forscher zu ihrer Untersuchung abordnen, aber im Allgemeinen dienen sie im Spiel nur dekorativen Zwecken.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ruinen sind die Reste menschlicher Architektur: Strukturen, die einst vollständig waren, dann aber durch den Einfluss der Umwelt, wie Pflanzen, Regen oder Wind, über die Zeit zerfielen. Gründe für die Verwahrlosung können Kriege, Katastrophen, Krankheiten und vieles mehr gewesen sein.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_IMPROVEMENT_COCOA_PLANTATION</Tag>
-        <English>Cocoa Plantation</English>
+        <Tag>TXT_KEY_IMPROVEMENT_FRUIT_PLANTATION</Tag>
+        <English>Fruit Plantation</English>
         <French>
-            <Text>Plantation de cacao</Text>
+            <Text>Plantation de Fruits</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Kakaoplantage</Text>
+            <Text>Fruchtplantage</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Piantagione di cacao</Text>
+            <Text>Piantagione di Frutos</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Plantación de Cacao</Text>
+            <Text>Plantación de Fruto</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_IMPROVEMENT_COCOA_PLANTATION_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cocoa plantations[COLOR_REVERT] can be built only in [LINK=FEATURE_JUNGLE]jungles[\LINK]. They increase the production of [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] and [LINK=YIELD_FOOD]food[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Cocoa plantations are usually a mixture of many different kinds of trees and not a monoculture. This ensures a healthy environment for the precious fruits.</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]plantations de cacao[COLOR_REVERT] sont généralement un mélange de plusieurs types d'arbres et non pas une monoculture. C'est ce qui assure un environnement sain pour les fruits précieux.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kakaoplantagen[COLOR_REVERT] können nur im [LINK=FEATURE_JUNGLE]Dschungel[\LINK] angelegt werden. Sie steigern die Produktion von [LINK=YIELD_COCOA_FRUITS]Kakaofrüchten[\LINK] und [LINK=YIELD_FOOD]Nahrung[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Im Gegensatz zu den Monokulturen anderen Plantagen sind Kakaoplantangen normalerweise eine Mischung verschiedenster Bäume und Sträucher. Dies ermöglicht ein gesundes Umfeld für die wertvollen Früchte.</German>
+        <Tag>TXT_KEY_IMPROVEMENT_FRUIT_PLANTATION_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fruit plantations[COLOR_REVERT] can be built only in [LINK=FEATURE_JUNGLE]jungles[\LINK] or on Bonus Resources for Fruits. They increase the production of [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK], [LINK=YIELD_FRUITS]fruits[\LINK] and [LINK=YIELD_FOOD]food[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Fruit plantations are usually a mixture of many different kinds of trees and not a monoculture. This ensures a healthy environment for the precious fruits.</English>
+        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]plantations de fruits[COLOR_REVERT] sont généralement un mélange de plusieurs types d'arbres et non pas une monoculture. C'est ce qui assure un environnement sain pour les fruits précieux.</French>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fruchtplantagen[COLOR_REVERT] können nur im [LINK=FEATURE_JUNGLE]Dschungel[\LINK] oder auf Bonusresourcen für Früchte angelegt werden. Sie steigern die Produktion von [LINK=YIELD_COCOA_FRUITS]Kakaofrüchten[\LINK], [LINK=YIELD_FRUITS]Früchten[\LINK] und [LINK=YIELD_FOOD]Nahrung[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Im Gegensatz zu den Monokulturen anderen Plantagen sind Fruchtplantagen normalerweise eine Mischung verschiedenster Bäume und Sträucher. Dies ermöglicht ein gesundes Umfeld für die wertvollen Früchte.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_IMPROVEMENT_LARGE_COCOA_PLANTATION</Tag>
-        <English>Large Cocoa Plantation</English>
+        <Tag>TXT_KEY_IMPROVEMENT_LARGE_FRUIT_PLANTATION</Tag>
+        <English>Large Fruit Plantation</English>
         <French>
-            <Text>Grande plantation de cacao</Text>
+            <Text>Grande plantation de fruits</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Große Kakaoplantage</Text>
+            <Text>Große Fruchtplantage</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Grande piantagione di cacao</Text>
+            <Text>Grande piantagione di frutos</Text>
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Gran plantación de cacao</Text>
+            <Text>Gran plantación de frutos</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_IMPROVEMENT_LARGE_COCOA_PLANTATION_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Large cocoa plantations[COLOR_REVERT] are upgrades of [LINK=IMPROVEMENT_COCOA_PLANTATION]cocoa plantations[\LINK]. They increase the production of [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] and [LINK=YIELD_FOOD]food[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Cocoa plantations are usually a mixture of many different kinds of trees and not a monoculture. This ensures a healthy environment for the precious fruits.</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]plantations de cacao[COLOR_REVERT] sont généralement un mélange de plusieurs types d'arbres et non pas une monoculture. C'est ce qui assure un environnement sain pour les fruits précieux.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Große Kakaoplantagen[COLOR_REVERT] sind eine Erweiterung von [LINK=IMPROVEMENT_COCOA_PLANTATION]Kakaoplantagen[\LINK]. Sie verbessern die Produktion von [LINK=YIELD_COCOA_FRUITS]Kakaofrüchten[\LINK] und [LINK=YIELD_FOOD]Nahrung[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Im Gegensatz zu den Monokulturen anderen Plantagen sind Kakaoplantangen normalerweise eine Mischung verschiedenster Bäume und Sträucher. Dies ermöglicht ein gesundes Umfeld für die wertvollen Früchte.</German>
+        <Tag>TXT_KEY_IMPROVEMENT_LARGE_FRUIT_PLANTATION_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Large fruit plantations[COLOR_REVERT] are upgrades of [LINK=IMPROVEMENT_FRUIT_PLANTATION]fruit plantations[\LINK]. They increase the production of [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK], [LINK=YIELD_FRUITS]fruits[\LINK] and [LINK=YIELD_FOOD]food[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Fruit plantations are usually a mixture of many different kinds of trees and not a monoculture. This ensures a healthy environment for the precious fruits.</English>
+        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]plantations de fruits[COLOR_REVERT] sont généralement un mélange de plusieurs types d'arbres et non pas une monoculture. C'est ce qui assure un environnement sain pour les fruits précieux.</French>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Große Fruchtplantagen[COLOR_REVERT] sind eine Erweiterung von [LINK=IMPROVEMENT_FRUIT_PLANTATION]Fruchtplantagen[\LINK]. Sie verbessern die Produktion von [LINK=YIELD_COCOA_FRUITS]Kakaofrüchten[\LINK], [LINK=YIELD_FRUITS]Früchten[\LINK] und [LINK=YIELD_FOOD]Nahrung[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Im Gegensatz zu den Monokulturen anderen Plantagen sind Fruchtplantagen normalerweise eine Mischung verschiedenster Bäume und Sträucher. Dies ermöglicht ein gesundes Umfeld für die wertvollen Früchte.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_POST</Tag>
@@ -122,7 +122,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_DEPOT</Tag>
-        <English>Collectors Depot</English>
+        <English>Collector's Depot</English>
         <French>
             <Text>Dépôt de collecte</Text>
             <Gender>Female</Gender>
@@ -152,63 +152,63 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_POST2</Tag>
-        <English>Coca Post</English>
+        <English>Planter's Post</English>
         <French>
-            <Text>Poste de coca</Text>
+            <Text>Poste de planation</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Cocalager</Text>
+            <Text>Pflanzerlager</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Coca Post</Text>
+            <Text>Planter's Post</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Coca Post</Text>
+            <Text>Planter's Post</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_POST2_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]coca post[COLOR_REVERT] can be built only on hilly [LINK=TERRAIN_SAVANNAH]savannah[\LINK] terrain. It gives a production bonus to [LINK=YIELD_COCA_LEAVES]coca leaves[\LINK] and [LINK=YIELD_FOOD]food[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Coca Leaves can refer to leaves of all four cultivated plants of the Coca family (Erythoxylaceae), native to western South America. In times both ancient and modern, these plants have been highly valued for their psychoactive properties, which can be experienced by chewing the leaves, making coca tea ("Mate de coca") out of it and, in modern times, chemically extracting the psychoactive agents to produce the drug cocaine.[PARAGRAPH:1]Coca leaves are an effective remedy against altitude sickness, and give its consumer a greater tolerance for hunger, thirst and fatigue. Apart from that, coca can be used as an anaesthetic and, due to its religious significance in Indigenous cultures, many other properties are ascribed to it, some of which are supported by modern science.[PARAGRAPH:1]Coca leaves have been used for medicinal, nutritional and religious purposes in the Andean region since prehistoric times, possibly as long as 8,000 years ago. It was during this long period that the ancestral coca plant was domesticated, after which it diversified into the four modern species.[PARAGRAPH:1]In the Incan empire the plant was thought to have a divine origin, and its leaves were used as offerings, as a method of divination similar to the reading of tea leaves in the Old World, and also as preparation for prayers or religious ceremonies. It eventually spread over a large area, from Colombia in the north to Chile in the south.[PARAGRAPH:1]After their conquest of the Incan Empire, the use of the leaf was tolerated by the Spanish because it enhanced the performance of forced labourers, but its religious use was prohibited, and the Spanish themselves were discouraged from using it. Though it was introduced in Europe in the 16th century, it never became popular until the 19th century when the first cocaine was produced.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]Planter's Post[COLOR_REVERT] can be built only on hilly [LINK=TERRAIN_SAVANNAH]savannah[\LINK] terrain. It gives a production bonus to [LINK=YIELD_COCA_LEAVES]coca leaves[\LINK] and [LINK=YIELD_FOOD]food[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Coca Leaves can refer to leaves of all four cultivated plants of the Coca family (Erythoxylaceae), native to western South America. In times both ancient and modern, these plants have been highly valued for their psychoactive properties, which can be experienced by chewing the leaves, making coca tea ("Mate de coca") out of it and, in modern times, chemically extracting the psychoactive agents to produce the drug cocaine.[PARAGRAPH:1]Coca leaves are an effective remedy against altitude sickness, and give its consumer a greater tolerance for hunger, thirst and fatigue. Apart from that, coca can be used as an anaesthetic and, due to its religious significance in Indigenous cultures, many other properties are ascribed to it, some of which are supported by modern science.[PARAGRAPH:1]Coca leaves have been used for medicinal, nutritional and religious purposes in the Andean region since prehistoric times, possibly as long as 8,000 years ago. It was during this long period that the ancestral coca plant was domesticated, after which it diversified into the four modern species.[PARAGRAPH:1]In the Incan empire the plant was thought to have a divine origin, and its leaves were used as offerings, as a method of divination similar to the reading of tea leaves in the Old World, and also as preparation for prayers or religious ceremonies. It eventually spread over a large area, from Colombia in the north to Chile in the south.[PARAGRAPH:1]After their conquest of the Incan Empire, the use of the leaf was tolerated by the Spanish because it enhanced the performance of forced labourers, but its religious use was prohibited, and the Spanish themselves were discouraged from using it. Though it was introduced in Europe in the 16th century, it never became popular until the 19th century when the first cocaine was produced.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]La coca est une plante d'Amérique du Sud de la famille des Érythroxylacées. Elle joue un rôle important dans la culture andine, à travers ses utilisations rituelles ou médicinales des [LINK=YIELD_COCA_LEAVES]feuilles de coca[\LINK].[PARAGRAPH:1]Elle pousse à l'état sauvage dans la cordillère des Andes à des altitudes variant de 300 à 2 000 m. Comme toutes les espèces du genre Erythroxylum, elle apprécie particulièrement les sols acides.[PARAGRAPH:1]C'est un fondement culturel pour l'Amérique latine - notamment les hauts plateaux andins - où son usage remonte à près de 5 000 ans. Du fait de ses différentes vertus, c'est une plante sacrée pour certains peuples amérindiens. Pour ces derniers, Mama Coca est la fille de Pachamama. Elle est ainsi utilisée traditionnellement de la Colombie jusqu'au Chili aussi bien pour ses vertus stimulantes que dans le cadre de cérémonies religieuses, elle aurait même servi de taxe d'imposition. Dans l'Empire inca, la coca issue de l'actuel Pérou (tupa coca) servait aux cérémonies religieuses et aux dignitaires alors que la coca issue de l'actuelle Bolivie (muma coca) servait aux fonctionnaires voire au peuple. Son usage est signalé par les conquérants espagnols dès le XVIe siècle qui en condamnent d'abord l'usage la qualifiant de « satanique » avant de l'encourager en constatant l'efficacité en termes de rentabilité sur les travailleurs. C'est Nicolas Monardés de Séville, un naturaliste espagnol qui en donne la première description dans les années 1580 même si la plante ne sera vraiment connue sur le plan scientifique qu'au XVIIIe siècle.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Das [COLOR_HIGHLIGHT_TEXT]Cocalager[COLOR_REVERT] kann nur in hügeliger [LINK=TERRAIN_SAVANNAH]Savanne[\LINK] angelegt werden. Es gibt einen Bonus auf die Produktion von [LINK=YIELD_COCA_LEAVES]Cocablättern[\LINK] und [LINK=YIELD_FOOD]Nahrung[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Der Begriff [LINK=YIELD_COCA_LEAVES]Cocablätter[\LINK] bezieht sich meist auf Blätter der kultivierten Planzen aus der Familie der Cocapflanzen (Erythoxylaceae), welche im westlichen Teil Südamerikas beheimatet sind. Sowohl in der Antike als auch in der Moderne wurden diese Pflanzen sehr hoch geschätzt, da sie psychoaktive Substanzen beinhalten, die man durch das Kauen der Blätter oder durch den Konsum des daraus aufgebrühten Tees aufnehmen kann. Heutzutage wird aus diesen Blättern auch die Droge Kokain gewonnen.[PARAGRAPH:1]Weniger bedenkliche Anwirkungen der Cocablätter sind aber beispielsweise die Anwendung in geringeren Mengen als Mittel gegen Höhenkrankheit oder gegen Hungergefühle, Durstgefühle oder Müdigkeit. Ausserdem kann Coca auch zur Betäubung von Schmerzen verwendet werden.[PARAGRAPH:1]Cocablätter wurden jeher in den Regionen der Anden zu relgiösen, medizinischen und nahrungsergänzenden Zwecken eingesetzt. Wahrscheinlich sogar schon seit mehr als 8000 Jahren.[PARAGRAPH:1]In dieser langen Zeitperiode wurde die Cocapflanze irgendwann domestiziert. Heutzutage wird sie in vier unterschiedlichen Gattungen bzw. Unterarten gezüchtet. Die Inkas glaubten an einen göttlichen Ursprung der Planze und verwendete die Blätter als Opfergabe, aber auch als Mittel um die Zukunft vorherzusagen oder einfach nur um Gebete und Zeremonien vorzubereiten. Die Pflanze breitete sich schliesslich über ein sehr grosses Gebiet von Kolumbien im Norden bis nach Chile im Süden aus.[PARAGRAPH:1]Nach der Eroberung des Inkareiches wurde die Einnahme der Pflanze weiterhin von den Spaniern toleriert, da sie die Leistung der Zwangsarbeiter steigerte. Die religiöse Verwendung der Pflanze wurde aber verboten. Den Spaniern selbst wurde vom Konsum der Blätter abgeraten. Obwohl bereits im 16. Jahrhundert Cocablätter in Europa bekannt waren, erlangten diese dort zu dieser Zeit nie Beliebtheit. Dies änderte sich erst, als im 19. Jahrhundert Kokain entdeckt wurde.</German>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Das [COLOR_HIGHLIGHT_TEXT]Pflanzerlager[COLOR_REVERT] kann nur in hügeliger [LINK=TERRAIN_SAVANNAH]Savanne[\LINK] angelegt werden. Es gibt einen Bonus auf die Produktion von [LINK=YIELD_COCA_LEAVES]Cocablättern[\LINK] und [LINK=YIELD_FOOD]Nahrung[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Der Begriff [LINK=YIELD_COCA_LEAVES]Cocablätter[\LINK] bezieht sich meist auf Blätter der kultivierten Planzen aus der Familie der Cocapflanzen (Erythoxylaceae), welche im westlichen Teil Südamerikas beheimatet sind. Sowohl in der Antike als auch in der Moderne wurden diese Pflanzen sehr hoch geschätzt, da sie psychoaktive Substanzen beinhalten, die man durch das Kauen der Blätter oder durch den Konsum des daraus aufgebrühten Tees aufnehmen kann. Heutzutage wird aus diesen Blättern auch die Droge Kokain gewonnen.[PARAGRAPH:1]Weniger bedenkliche Anwirkungen der Cocablätter sind aber beispielsweise die Anwendung in geringeren Mengen als Mittel gegen Höhenkrankheit oder gegen Hungergefühle, Durstgefühle oder Müdigkeit. Ausserdem kann Coca auch zur Betäubung von Schmerzen verwendet werden.[PARAGRAPH:1]Cocablätter wurden jeher in den Regionen der Anden zu relgiösen, medizinischen und nahrungsergänzenden Zwecken eingesetzt. Wahrscheinlich sogar schon seit mehr als 8000 Jahren.[PARAGRAPH:1]In dieser langen Zeitperiode wurde die Cocapflanze irgendwann domestiziert. Heutzutage wird sie in vier unterschiedlichen Gattungen bzw. Unterarten gezüchtet. Die Inkas glaubten an einen göttlichen Ursprung der Planze und verwendete die Blätter als Opfergabe, aber auch als Mittel um die Zukunft vorherzusagen oder einfach nur um Gebete und Zeremonien vorzubereiten. Die Pflanze breitete sich schliesslich über ein sehr grosses Gebiet von Kolumbien im Norden bis nach Chile im Süden aus.[PARAGRAPH:1]Nach der Eroberung des Inkareiches wurde die Einnahme der Pflanze weiterhin von den Spaniern toleriert, da sie die Leistung der Zwangsarbeiter steigerte. Die religiöse Verwendung der Pflanze wurde aber verboten. Den Spaniern selbst wurde vom Konsum der Blätter abgeraten. Obwohl bereits im 16. Jahrhundert Cocablätter in Europa bekannt waren, erlangten diese dort zu dieser Zeit nie Beliebtheit. Dies änderte sich erst, als im 19. Jahrhundert Kokain entdeckt wurde.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_DEPOT2</Tag>
-        <English>Coca Depot:Coca Depots</English>
+        <English>Planter's Depot:Planter's Depots</English>
         <French>
             <Text>Dépôt de coca:Dépôts de coca</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Cocadepot:Cocadepots</Text>
+            <Text>Pflanzerdepot:Pflanzerdepots</Text>
             <Gender>Neuter</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Coca Depot:Coca Depots</Text>
+            <Text>Planter's Depot:Planter's Depots</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Coca Depot:Coca Depots</Text>
+            <Text>Planter's Depot:Planter's Depots</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_DEPOT2_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]coca depot[COLOR_REVERT] is the upgrade of the [LINK=IMPROVEMENT_COLLECTORS_POST2]coca post[\LINK]. It gives a production bonus to [LINK=YIELD_COCA_LEAVES]coca leaves[\LINK] and [LINK=YIELD_FOOD]food[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Coca leaves can refer to leaves of all four cultivated plants of the Coca family (Erythoxylaceae) native to western South America. In times both ancient and modern, these plants have been valued for their psychoactive properties, which can be experienced by chewing the leaves, making coca tea ("Mate de coca") out of it and, in modern times, chemically extracting the psychoactive agents to produce the drug cocaine.[PARAGRAPH:1]Coca Leaves are an effective remedy against altitude sickness, giving the consumer a greater tolerance for hunger, thirst and fatigue. Apart from that, coca is an anaesthetic and, due to its religious significance in Indigenous cultures, many other properties are ascribed to it, some of which are supported by modern science.[PARAGRAPH:1]Coca leaves have been used for medicinal, nutritional and religious purposes in the Andean region since prehistoric times, possibly as long as 8,000 years ago.[PARAGRAPH:1]Over this long period the ancestral coca plant was domesticated and diversified into the four modern species. In the Incan empire the plant was thought to have a divine origin, and its leaves were used as offerings, as a method of divination, similar to the reading of tea leaves in the Old World, and also as preparation for prayers or religious ceremonies. It eventually spread over a large area, from Colombia in the north to Chile in the south.[PARAGRAPH:1]After the conquest of the Incan empire the use of the leaf was tolerated by the Spanish because it enhanced the performance of forced labourers, but its religious use was prohibited, and the Spanish themselves were discouraged from using it. Though it was introduced in Europe in the 16th century it never became popular until the 19th century when the first cocaine was produced.</English>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]Planter's Depot[COLOR_REVERT] is the upgrade of the [LINK=IMPROVEMENT_COLLECTORS_POST2]Planter Post[\LINK]. It gives a production bonus to [LINK=YIELD_COCA_LEAVES]coca leaves[\LINK] and [LINK=YIELD_FOOD]food[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Coca leaves can refer to leaves of all four cultivated plants of the Coca family (Erythoxylaceae) native to western South America. In times both ancient and modern, these plants have been valued for their psychoactive properties, which can be experienced by chewing the leaves, making coca tea ("Mate de coca") out of it and, in modern times, chemically extracting the psychoactive agents to produce the drug cocaine.[PARAGRAPH:1]Coca Leaves are an effective remedy against altitude sickness, giving the consumer a greater tolerance for hunger, thirst and fatigue. Apart from that, coca is an anaesthetic and, due to its religious significance in Indigenous cultures, many other properties are ascribed to it, some of which are supported by modern science.[PARAGRAPH:1]Coca leaves have been used for medicinal, nutritional and religious purposes in the Andean region since prehistoric times, possibly as long as 8,000 years ago.[PARAGRAPH:1]Over this long period the ancestral coca plant was domesticated and diversified into the four modern species. In the Incan empire the plant was thought to have a divine origin, and its leaves were used as offerings, as a method of divination, similar to the reading of tea leaves in the Old World, and also as preparation for prayers or religious ceremonies. It eventually spread over a large area, from Colombia in the north to Chile in the south.[PARAGRAPH:1]After the conquest of the Incan empire the use of the leaf was tolerated by the Spanish because it enhanced the performance of forced labourers, but its religious use was prohibited, and the Spanish themselves were discouraged from using it. Though it was introduced in Europe in the 16th century it never became popular until the 19th century when the first cocaine was produced.</English>
         <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]La coca est une plante d'Amérique du Sud de la famille des Érythroxylacées. Elle joue un rôle important dans la culture andine, à travers ses utilisations rituelles ou médicinales des [LINK=YIELD_COCA_LEAVES]feuilles de coca[\LINK].[PARAGRAPH:1]Elle pousse à l'état sauvage dans la cordillère des Andes à des altitudes variant de 300 à 2 000 m. Comme toutes les espèces du genre Erythroxylum, elle apprécie particulièrement les sols acides.[PARAGRAPH:1]C'est un fondement culturel pour l'Amérique latine - notamment les hauts plateaux andins - où son usage remonte à près de 5 000 ans. Du fait de ses différentes vertus, c'est une plante sacrée pour certains peuples amérindiens. Pour ces derniers, Mama Coca est la fille de Pachamama. Elle est ainsi utilisée traditionnellement de la Colombie jusqu'au Chili aussi bien pour ses vertus stimulantes que dans le cadre de cérémonies religieuses, elle aurait même servi de taxe d'imposition. Dans l'Empire inca, la coca issue de l'actuel Pérou (tupa coca) servait aux cérémonies religieuses et aux dignitaires alors que la coca issue de l'actuelle Bolivie (muma coca) servait aux fonctionnaires voire au peuple. Son usage est signalé par les conquérants espagnols dès le XVIe siècle qui en condamnent d'abord l'usage la qualifiant de « satanique » avant de l'encourager en constatant l'efficacité en termes de rentabilité sur les travailleurs. C'est Nicolas Monardés de Séville, un naturaliste espagnol qui en donne la première description dans les années 1580 même si la plante ne sera vraiment connue sur le plan scientifique qu'au XVIIIe siècle.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Das [COLOR_HIGHLIGHT_TEXT]Cocadepot[COLOR_REVERT] ist die Erweiterung des [LINK=IMPROVEMENT_COLLECTORS_POST2]Cocalagers[\LINK]. Es gibt einen Bonus auf die Produktion von [LINK=YIELD_COCA_LEAVES]Cocablättern[\LINK] und [LINK=YIELD_FOOD]Nahrung[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Der Begriff [LINK=YIELD_COCA_LEAVES]Cocablätter[\LINK] bezieht sich meist auf Blätter der kultivierten Planzen aus der Familie der Cocapflanzen (Erythoxylaceae), welche im westlichen Teil Südamerikas beheimatet sind. Sowohl in der Antike als auch in der Moderne wurden diese Pflanzen sehr hoch geschätzt, da sie psychoaktive Substanzen beinhalten, die man durch das Kauen der Blätter oder durch den Konsum des daraus aufgebrühten Tees aufnehmen kann. Heutzutage wird aus diesen Blättern auch die Droge Kokain gewonnen.[PARAGRAPH:1]Weniger bedenkliche Anwirkungen der Cocablätter sind aber beispielsweise die Anwendung in geringeren Mengen als Mittel gegen Höhenkrankheit oder gegen Hungergefühle, Durstgefühle oder Müdigkeit. Ausserdem kann Coca auch zur Betäubung von Schmerzen verwendet werden.[PARAGRAPH:1]Cocablätter wurden jeher in den Regionen der Anden zu relgiösen, medizinischen und nahrungsergänzenden Zwecken eingesetzt. Wahrscheinlich sogar schon seit mehr als 8000 Jahren.[PARAGRAPH:1]In dieser langen Zeitperiode wurde die Cocapflanze irgendwann domestiziert. Heutzutage wird sie in vier unterschiedlichen Gattungen bzw. Unterarten gezüchtet. Die Inkas glaubten an einen göttlichen Ursprung der Planze und verwendete die Blätter als Opfergabe, aber auch als Mittel um die Zukunft vorherzusagen oder einfach nur um Gebete und Zeremonien vorzubereiten. Die Pflanze breitete sich schliesslich über ein sehr grosses Gebiet von Kolumbien im Norden bis nach Chile im Süden aus.[PARAGRAPH:1]Nach der Eroberung des Inkareiches wurde die Einnahme der Pflanze weiterhin von den Spaniern toleriert, da sie die Leistung der Zwangsarbeiter steigerte. Die religiöse Verwendung der Pflanze wurde aber verboten. Den Spaniern selbst wurde vom Konsum der Blätter abgeraten. Obwohl bereits im 16. Jahrhundert Cocablätter in Europa bekannt waren, erlangten diese dort zu dieser Zeit nie Beliebtheit. Dies änderte sich erst, als im 19. Jahrhundert Kokain entdeckt wurde.</German>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Das [COLOR_HIGHLIGHT_TEXT]Pflanzerdepot[COLOR_REVERT] ist die Erweiterung des [LINK=IMPROVEMENT_COLLECTORS_POST2]Pflanzerlagers[\LINK]. Es gibt einen Bonus auf die Produktion von [LINK=YIELD_COCA_LEAVES]Cocablättern[\LINK] und [LINK=YIELD_FOOD]Nahrung[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Der Begriff [LINK=YIELD_COCA_LEAVES]Cocablätter[\LINK] bezieht sich meist auf Blätter der kultivierten Planzen aus der Familie der Cocapflanzen (Erythoxylaceae), welche im westlichen Teil Südamerikas beheimatet sind. Sowohl in der Antike als auch in der Moderne wurden diese Pflanzen sehr hoch geschätzt, da sie psychoaktive Substanzen beinhalten, die man durch das Kauen der Blätter oder durch den Konsum des daraus aufgebrühten Tees aufnehmen kann. Heutzutage wird aus diesen Blättern auch die Droge Kokain gewonnen.[PARAGRAPH:1]Weniger bedenkliche Anwirkungen der Cocablätter sind aber beispielsweise die Anwendung in geringeren Mengen als Mittel gegen Höhenkrankheit oder gegen Hungergefühle, Durstgefühle oder Müdigkeit. Ausserdem kann Coca auch zur Betäubung von Schmerzen verwendet werden.[PARAGRAPH:1]Cocablätter wurden jeher in den Regionen der Anden zu relgiösen, medizinischen und nahrungsergänzenden Zwecken eingesetzt. Wahrscheinlich sogar schon seit mehr als 8000 Jahren.[PARAGRAPH:1]In dieser langen Zeitperiode wurde die Cocapflanze irgendwann domestiziert. Heutzutage wird sie in vier unterschiedlichen Gattungen bzw. Unterarten gezüchtet. Die Inkas glaubten an einen göttlichen Ursprung der Planze und verwendete die Blätter als Opfergabe, aber auch als Mittel um die Zukunft vorherzusagen oder einfach nur um Gebete und Zeremonien vorzubereiten. Die Pflanze breitete sich schliesslich über ein sehr grosses Gebiet von Kolumbien im Norden bis nach Chile im Süden aus.[PARAGRAPH:1]Nach der Eroberung des Inkareiches wurde die Einnahme der Pflanze weiterhin von den Spaniern toleriert, da sie die Leistung der Zwangsarbeiter steigerte. Die religiöse Verwendung der Pflanze wurde aber verboten. Den Spaniern selbst wurde vom Konsum der Blätter abgeraten. Obwohl bereits im 16. Jahrhundert Cocablätter in Europa bekannt waren, erlangten diese dort zu dieser Zeit nie Beliebtheit. Dies änderte sich erst, als im 19. Jahrhundert Kokain entdeckt wurde.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FARM</Tag>

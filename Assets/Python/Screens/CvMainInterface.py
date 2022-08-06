@@ -180,7 +180,7 @@ BUILDING_DATA[25] = [6, 91, 20, 9] #Mill
 BUILDING_DATA[26] = [38, 90, 20, 10] #Trainstation
 BUILDING_DATA[27] = [80, 78, 20, 8] #Corn
 BUILDING_DATA[28] = [84, 40, 20, 13] #Medical Care
-BUILDING_DATA[29] = [58, 92, 20, 8] #Well
+BUILDING_DATA[29] = [54, 92, 20, 8] #Well
 BUILDING_DATA[30] = [87, 79, 20, 10] #Defense
 BUILDING_DATA[31] = [52, 58, 20, 12] #Confectioner
 BUILDING_DATA[32] = [20, 58, 20, 12] #Leather Padder
@@ -188,7 +188,7 @@ BUILDING_DATA[33] = [4, 74, 20, 12] #Cooking Oil Trader
 BUILDING_DATA[34] = [68, 74, 20, 12] #Peanut Roaster
 BUILDING_DATA[35] = [84, 58, 20, 12] #Potter
 BUILDING_DATA[36] = [20, 76, 20, 12] #Tailor
-BUILDING_DATA[37] = [54, 92, 20, 7] #Statue
+BUILDING_DATA[37] = [62, 92, 20, 7] #Statue
 BUILDING_DATA[38] = [80, 86, 20, 11] #Graveyard
 
 BUILDING_GRID = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]

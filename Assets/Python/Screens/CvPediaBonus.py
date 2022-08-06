@@ -112,7 +112,7 @@ class CvPediaBonus:
 				#screen.appendListBoxString(panelName, u"<font=4>" + szYield.upper() + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 				screen.appendListBoxString(panelName, u"<font=3>" + szYield + (u"%c" % gc.getYieldInfo(k).getChar()) + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 				## R&R, Robert Surcouf,  Pedia - End
-		
+
 		## WTP, ray, Health from specific Bonus Ressources if worked
 		iHealthChangeinCityRadius = gc.getBonusInfo(self.iBonus).getHealthEffectFromRessource()
 		if (iHealthChangeinCityRadius > 0):
@@ -124,7 +124,37 @@ class CvPediaBonus:
 			screen.appendListBoxString(panelName, u"<font=3>" + szHealthText + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 		
 		## WTP, ray, we have pedia list the valid Terrains and Features automatically - no need for pointless Strategy texts anymore.
-		
+
+		## WTP, here are the flags for Water, Hills, Flatlands and Peaks
+		bValidWater = false
+		bValidFlatland = gc.getBonusInfo(self.iBonus).isFlatlands()
+		bValidHills = gc.getBonusInfo(self.iBonus).isHills()
+		bValidPeaks = gc.getBonusInfo(self.iBonus).isPeaks()
+
+		## WTP, here are the flags for Water, Hills, Flatlands and Peaks
+		## we need to do a more complicated check for water
+		for x in range(TerrainTypes.NUM_TERRAIN_TYPES):
+			if (gc.getBonusInfo(self.iBonus).isTerrain(x) and gc.getTerrainInfo(x).isWater()):
+				bValidWater = true
+
+		if (bValidWater):
+			sWaterText = localText.getText("TXT_BONUS_RESOURCE_IS_WATER", ())
+			screen.appendListBoxString(panelName, u"<font=3>" + sWaterText + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+			#sNewline = localText.getText("[NEWLINE]", ())
+			#screen.appendListBoxString(panelName, u"<font=3>" + sNewline + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+		else:
+			if (bValidFlatland):
+				sFlatlandText = localText.getText("TXT_BONUS_RESOURCE_IS_FLATLAND", ())
+				screen.appendListBoxString(panelName, u"<font=3>" + sFlatlandText + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+			if (bValidHills):
+				sHillsText = localText.getText("TXT_BONUS_RESOURCE_IS_HILLS", ())
+				screen.appendListBoxString(panelName, u"<font=3>" + sHillsText + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+			if (bValidPeaks):
+				sPeakText = localText.getText("TXT_BONUS_RESOURCE_IS_PEAKS", ())
+				screen.appendListBoxString(panelName, u"<font=3>" + sPeakText + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+			#sNewline = localText.getText("[NEWLINE]", ())
+			#screen.appendListBoxString(panelName, u"<font=3>" + sNewline + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+
 		szIcon = localText.getText("[ICON_BULLET] ", ())
 		
 		# First the List of Terrains
