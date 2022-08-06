@@ -226,6 +226,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>20</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>20</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>20</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -332,6 +340,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>40</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>40</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -448,7 +460,11 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
-                    <iCost>100</iCost>
+                    <iCost>80</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>80</iCost>
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_SILVER</YieldType>
@@ -564,7 +580,11 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
-                    <iCost>200</iCost>
+                    <iCost>150</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>150</iCost>
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_SILVER</YieldType>
@@ -945,6 +965,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>40</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -1046,7 +1074,11 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
-                    <iCost>100</iCost>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -1164,7 +1196,11 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
-                    <iCost>200</iCost>
+                    <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>100</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -1372,6 +1408,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -1469,6 +1513,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -1662,6 +1710,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>20</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -1759,6 +1815,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -2043,6 +2103,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>40</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -2138,6 +2206,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>100</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -2232,6 +2308,14 @@
                 <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>200</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>100</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -2661,6 +2745,10 @@
                     <YieldType>YIELD_STONE</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -2756,6 +2844,10 @@
                     <YieldType>YIELD_STONE</YieldType>
                     <iCost>100</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>100</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -2841,6 +2933,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
+                    <iCost>200</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
                     <iCost>200</iCost>
                 </YieldCost>
                 <YieldCost>
@@ -2935,6 +3031,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
+                    <iCost>400</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
                     <iCost>400</iCost>
                 </YieldCost>
                 <YieldCost>
@@ -3320,6 +3420,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -3441,6 +3549,10 @@
                     <YieldType>YIELD_STONE</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -3560,6 +3672,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>100</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -3784,6 +3900,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -3881,6 +4005,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -4077,6 +4205,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -4174,6 +4310,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -4383,6 +4523,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -4488,6 +4636,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -4697,6 +4849,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -4802,6 +4962,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -5006,6 +5170,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -5103,6 +5275,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -5296,6 +5472,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -5393,6 +5577,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -5592,6 +5780,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -5689,6 +5885,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -5881,6 +6081,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -5978,6 +6186,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -6179,6 +6391,10 @@
                     <YieldType>YIELD_STONE</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -6375,6 +6591,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -6468,6 +6692,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -6661,6 +6889,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -6758,6 +6994,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -6866,7 +7106,11 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
-                    <iCost>50</iCost>
+                    <iCost>75</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>75</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -6974,6 +7218,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>100</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -7173,6 +7421,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -7266,6 +7522,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -7370,6 +7630,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>100</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -7682,6 +7946,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>40</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -7801,6 +8073,14 @@
                 <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -8013,6 +8293,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>20</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>20</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -8110,6 +8398,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>40</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>40</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -8214,6 +8506,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>100</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -8416,6 +8712,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -8522,6 +8826,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -8649,6 +8957,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>20</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -8756,6 +9072,14 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -8870,6 +9194,14 @@
                 <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>150</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>75</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>75</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -9076,6 +9408,14 @@
                     <YieldType>YIELD_HAMMERS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -9182,6 +9522,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>100</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -9295,6 +9639,14 @@
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
                     <iCost>150</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>150</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_SILVER</YieldType>
+                    <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -9411,7 +9763,15 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
-                    <iCost>300</iCost>
+                    <iCost>200</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>200</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_GOLD</YieldType>
+                    <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -9620,7 +9980,11 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
-                    <iCost>50</iCost>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -9724,7 +10088,11 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
-                    <iCost>100</iCost>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -9828,7 +10196,11 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
-                    <iCost>200</iCost>
+                    <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>100</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -9935,6 +10307,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>40</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>10</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>10</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -10030,6 +10410,14 @@
                 <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>60</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -10127,6 +10515,14 @@
                 <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>80</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -10330,6 +10726,14 @@
                 <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>20</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -10595,6 +10999,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -10697,6 +11109,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -10861,7 +11277,7 @@
             <iTeachLevel>0</iTeachLevel>
             <iAICitySize>10</iAICitySize>
         </BuildingInfo>
-		<BuildingInfo>
+        <BuildingInfo>
             <Type>BUILDING_GRAVEYARD</Type>
             <BuildingClass>BUILDINGCLASS_GRAVEYARD</BuildingClass>
             <SpecialBuildingType>SPECIALBUILDING_GRAVEYARD</SpecialBuildingType>
@@ -10893,6 +11309,10 @@
                 <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>20</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -10951,7 +11371,7 @@
             <iTeachLevel>0</iTeachLevel>
             <iAICitySize>10</iAICitySize>
         </BuildingInfo>
-		<BuildingInfo>
+        <BuildingInfo>
             <Type>BUILDING_CONFECTIONER_HOUSE</Type>
             <BuildingClass>BUILDINGCLASS_CONFECTIONER_HOUSE</BuildingClass>
             <SpecialBuildingType>SPECIALBUILDING_CONFECTIONER</SpecialBuildingType>
@@ -11022,8 +11442,8 @@
             </BuildingClassNeededs>
             <AIRequiredCatchmentAreaTerrains>
                 <eRequiredTerrain>TERRAIN_SAVANNAH</eRequiredTerrain>
-				<eRequiredTerrain>TERRAIN_MARSH</eRequiredTerrain>
-				<eRequiredTerrain>TERRAIN_SHRUBLAND</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_MARSH</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_SHRUBLAND</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>
@@ -11034,11 +11454,11 @@
                     <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
-				<AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_VANILLA_COLLECTOR</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
-				<AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_SUGAR_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
@@ -11083,6 +11503,14 @@
                 <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -11137,11 +11565,11 @@
                     <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
-				<AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_VANILLA_COLLECTOR</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
-				<AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_SUGAR_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
@@ -11191,6 +11619,10 @@
                     <YieldType>YIELD_STONE</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -11224,7 +11656,7 @@
                     <YieldType>YIELD_CHOCOLATE</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				 <YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_VANILLA</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -11399,6 +11831,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -11500,6 +11940,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -11705,6 +12149,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -11806,6 +12258,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -12006,6 +12462,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -12103,6 +12567,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -12296,6 +12764,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -12393,6 +12869,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>
@@ -12591,6 +13071,14 @@
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -12692,6 +13180,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
             </YieldCosts>

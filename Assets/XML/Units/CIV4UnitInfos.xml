@@ -64213,6 +64213,10 @@
                     <iCost>30</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>30</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>40</iCost>
                 </YieldCost>
@@ -64228,9 +64232,9 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>1000</iEuropeCost>
+            <iEuropeCost>1200</iEuropeCost>
             <iEuropeCostIncrease>250</iEuropeCostIncrease>
-            <iAfricaCost>1200</iAfricaCost>
+            <iAfricaCost>1400</iAfricaCost>
             <iAfricaCostIncrease>300</iAfricaCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -64411,6 +64415,10 @@
                     <iCost>40</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>40</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
@@ -64426,7 +64434,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>1200</iEuropeCost>
+            <iEuropeCost>1400</iEuropeCost>
             <iEuropeCostIncrease>250</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -64607,6 +64615,10 @@
                     <iCost>50</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>40</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>60</iCost>
                 </YieldCost>
@@ -64622,9 +64634,9 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>1800</iEuropeCost>
+            <iEuropeCost>2000</iEuropeCost>
             <iEuropeCostIncrease>450</iEuropeCostIncrease>
-            <iAfricaCost>2100</iAfricaCost>
+            <iAfricaCost>2200</iAfricaCost>
             <iAfricaCostIncrease>500</iAfricaCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -64805,6 +64817,10 @@
                     <iCost>40</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>40</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
@@ -64820,7 +64836,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>1900</iEuropeCost>
+            <iEuropeCost>2200</iEuropeCost>
             <iEuropeCostIncrease>450</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -65001,6 +65017,10 @@
                     <iCost>40</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>40</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
@@ -65016,7 +65036,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>2000</iEuropeCost>
+            <iEuropeCost>2300</iEuropeCost>
             <iEuropeCostIncrease>500</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -65197,6 +65217,10 @@
                     <iCost>50</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>60</iCost>
                 </YieldCost>
@@ -65212,7 +65236,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>2200</iEuropeCost>
+            <iEuropeCost>2500</iEuropeCost>
             <iEuropeCostIncrease>550</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -65415,6 +65439,10 @@
                     <iCost>55</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>55</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>60</iCost>
                 </YieldCost>
@@ -65432,7 +65460,7 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
-            <iAfricaCost>2400</iAfricaCost>
+            <iAfricaCost>2600</iAfricaCost>
             <iAfricaCostIncrease>600</iAfricaCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -65635,6 +65663,10 @@
                     <iCost>60</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>60</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>80</iCost>
                 </YieldCost>
@@ -65650,7 +65682,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>3000</iEuropeCost>
+            <iEuropeCost>3200</iEuropeCost>
             <iEuropeCostIncrease>750</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -65997,6 +66029,10 @@
                     <iCost>70</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>70</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>100</iCost>
                 </YieldCost>
@@ -66012,7 +66048,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>3500</iEuropeCost>
+            <iEuropeCost>4000</iEuropeCost>
             <iEuropeCostIncrease>800</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -66201,6 +66237,10 @@
                     <iCost>30</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>30</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>30</iCost>
                 </YieldCost>
@@ -66220,7 +66260,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>1800</iEuropeCost>
+            <iEuropeCost>2000</iEuropeCost>
             <iEuropeCostIncrease>250</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -66366,6 +66406,10 @@
                     <iCost>35</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>35</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>35</iCost>
                 </YieldCost>
@@ -66385,7 +66429,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>2000</iEuropeCost>
+            <iEuropeCost>2200</iEuropeCost>
             <iEuropeCostIncrease>250</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -66607,6 +66651,10 @@
                     <iCost>50</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>70</iCost>
                 </YieldCost>
@@ -66626,7 +66674,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>3000</iEuropeCost>
+            <iEuropeCost>3300</iEuropeCost>
             <iEuropeCostIncrease>750</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -67276,6 +67324,10 @@
                     <iCost>70</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>70</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>80</iCost>
                 </YieldCost>
@@ -67295,7 +67347,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>4000</iEuropeCost>
+            <iEuropeCost>4400</iEuropeCost>
             <iEuropeCostIncrease>1200</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -67468,6 +67520,10 @@
                     <iCost>75</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>75</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>90</iCost>
                 </YieldCost>
@@ -67487,7 +67543,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>4400</iEuropeCost>
+            <iEuropeCost>4800</iEuropeCost>
             <iEuropeCostIncrease>1400</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -67656,6 +67712,10 @@
                     <iCost>80</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>80</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>70</iCost>
                 </YieldCost>
@@ -67675,7 +67735,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>5000</iEuropeCost>
+            <iEuropeCost>5500</iEuropeCost>
             <iEuropeCostIncrease>1250</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -68001,6 +68061,10 @@
                     <iCost>90</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>90</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iCost>100</iCost>
                 </YieldCost>
@@ -68020,7 +68084,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>8000</iEuropeCost>
+            <iEuropeCost>9000</iEuropeCost>
             <iEuropeCostIncrease>2000</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -68343,6 +68407,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_ROPE</YieldType>
+                    <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
                     <iCost>100</iCost>
                 </YieldCost>
                 <YieldCost>
@@ -68686,6 +68754,10 @@
                     <iCost>30</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_HARDWOOD</YieldType>
+                    <iCost>30</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_HAMMERS</YieldType>
                     <iCost>60</iCost>
                 </YieldCost>
@@ -68697,7 +68769,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>-1000</iEuropeCost>
+            <iEuropeCost>-1200</iEuropeCost>
             <iEuropeCostIncrease>250</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
