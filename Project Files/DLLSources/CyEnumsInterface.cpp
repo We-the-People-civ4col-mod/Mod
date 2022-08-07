@@ -674,6 +674,9 @@ void CyEnumsPythonInterface()
 		.value("BARRACKS_CHAR", BARRACKS_CHAR) // WTP, ray, new Barracks System - START
 		.value("NO_BARRACKS_CHAR", NO_BARRACKS_CHAR) // WTP, ray, new Barracks System - START
 		.value("BOMBARD_CHAR", BOMBARD_CHAR) // WTP, ray, Cannons to Professions - START
+		.value("OCCUPATION_CHAR_CUSTOM", OCCUPATION_CHAR_CUSTOM) // WTP, ray, Replacing CHARs for Billoard - START
+		.value("DEFENSE_CHAR_CUSTOM", DEFENSE_CHAR_CUSTOM) // WTP, ray, Replacing CHARs for Billoard - START
+		.value("POWER_CHAR_CUSTOM", POWER_CHAR_CUSTOM) // WTP, ray, Replacing CHARs for Billoard - START
 		.value("MAX_NUM_SYMBOLS", MAX_NUM_SYMBOLS)
 		;
 	python::enum_<HandicapTypes>("HandicapTypes")

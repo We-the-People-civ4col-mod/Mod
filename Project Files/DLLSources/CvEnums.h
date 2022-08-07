@@ -841,6 +841,9 @@ enum FontSymbols
 	BARRACKS_CHAR, // WTP, ray, new Barracks System - START
 	NO_BARRACKS_CHAR,// WTP, ray, new Barracks System - START
 	BOMBARD_CHAR, // WTP, ray, Cannons to Professions - START
+	OCCUPATION_CHAR_CUSTOM, // WTP, ray, Replacing CHARs for Billoard - START
+	DEFENSE_CHAR_CUSTOM, // WTP, ray, Replacing CHARs for Billoard - START
+	POWER_CHAR_CUSTOM, // WTP, ray, Replacing CHARs for Billoard - START
 
 #ifdef _USRDLL
 	MAX_NUM_SYMBOLS,

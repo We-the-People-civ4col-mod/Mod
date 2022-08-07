@@ -397,6 +397,9 @@ OtherFontIcons = { 'happy' : FontSymbols.HAPPY_CHAR,
 				'Barracks' : FontSymbols.BARRACKS_CHAR,
 				'noBarracks' : FontSymbols.NO_BARRACKS_CHAR,
 				'bombard' : FontSymbols.BOMBARD_CHAR,
+				'occupation_custom' : FontSymbols.OCCUPATION_CHAR_CUSTOM,
+				'defense_custom' : FontSymbols.DEFENSE_CHAR_CUSTOM,
+				'power_custom' : FontSymbols.POWER_CHAR_CUSTOM,
 				}
 
 GlobalInfosMap = {	'bonus': {'NUM': gc.getNumBonusInfos, 'GET': gc.getBonusInfo},
