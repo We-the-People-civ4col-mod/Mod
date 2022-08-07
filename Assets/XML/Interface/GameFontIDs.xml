@@ -2,13 +2,13 @@
 
 <GameFontIDs xmlns="x-schema:LanguageSchema.xml">
 	<Addresses>
-		<CustomSymbol>8733</CustomSymbol>
+		<CustomSymbol>8683</CustomSymbol>
 	</Addresses>
 	<Offsets>
-		<Bonus>150</Bonus>
-		<Building>0</Building>
-		<FatherPoint>25</FatherPoint>
-		<Mission>25</Mission>
+		<Bonus>125</Bonus>
+		<Building>100</Building>
+		<FatherPoint>-25</FatherPoint>
+		<Mission>-25</Mission>
 		<Yield>0</Yield>
 	</Offsets>
 </GameFontIDs>
