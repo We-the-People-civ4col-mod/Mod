@@ -4700,16 +4700,20 @@ void CvCity::changeCulture(PlayerTypes eIndex, int iChange, bool bPlots)
 	setCulture(eIndex, (getCulture(eIndex) + iChange), bPlots);
 }
 
-//VET NewCapacity - begin 2/9
 int CvCity::getTotalYieldStored() const
-	{return m_iTotalYieldStored;}
+{
+	return m_iTotalYieldStored;
+}
 
 void CvCity::setTotalYieldStored(int iValue)
-	{m_iTotalYieldStored = iValue;}
+{
+	m_iTotalYieldStored = iValue;
+}
 
 void CvCity::changeTotalYieldStored(int iChange)
-	{setTotalYieldStored(getTotalYieldStored() + iChange);}
-//VET NewCapacity - end 2/9
+{
+	setTotalYieldStored(getTotalYieldStored() + iChange);
+}
 
 int CvCity::getYieldStored(YieldTypes eYield) const
 {
@@ -4736,12 +4740,11 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 	int iChange = iValue - getYieldStored(eYield);
 	if (iChange != 0)
 	{
-//VET NewCapacity - begin 3/9
 		// ray, making special storage capacity rules for Yields XML configurable
 		if(!GC.getYieldInfo(eYield).isIgnoredForStorageCapacity() && GC.getYieldInfo(eYield).isCargo())
-		//if ((eYield != YIELD_FOOD) && (eYield != YIELD_LUMBER) && (eYield != YIELD_STONE) && GC.getYieldInfo(eYield).isCargo())
-			{changeTotalYieldStored(iChange);}
-//VET NewCapacity - end 3/9
+		{
+			changeTotalYieldStored(iChange);
+		}
 		m_em_iYieldStored.set(eYield, iValue);
 
 		if (!AI_isWorkforceHack())
@@ -7106,7 +7109,7 @@ void CvCity::doGrowth()
 					// We could donate food
 					if (iGold > iGoldToPayedForStarvationDonation)
 					{
-						kPlayer.changeGold(iGoldToPayedForStarvationDonation);
+						kPlayer.changeGold(-iGoldToPayedForStarvationDonation);
 						changeFood(iFoodReceivedForStarvationDonation);
 						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING_BUT_COLONIES_PAID", getNameKey(), iGoldToPayedForStarvationDonation, iFoodReceivedForStarvationDonation), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 					}
@@ -7124,13 +7127,14 @@ void CvCity::doGrowth()
 				// no unrest, receives gold but has to pay for it
 				else
 				{
-					if (iGold > iGoldToPayedForStarvationDonation/2)
+					int iGoldForAI = iGoldToPayedForStarvationDonation/2;
+					if (iGold > iGoldForAI)
 					{
-						kPlayer.changeGold(iGoldToPayedForStarvationDonation/2);
+						kPlayer.changeGold(-iGoldForAI);
 					}
 					else
 					{
-						kPlayer.changeGold(iGold);
+						kPlayer.changeGold(-iGold);
 					}
 					changeFood(iFoodReceivedForStarvationDonation);
 				}
@@ -7144,10 +7148,8 @@ void CvCity::doYields()
 	int aiYields[NUM_YIELD_TYPES];
 	calculateNetYields(aiYields, NULL, NULL, true);
 
-//VET NewCapacity - begin 4/9
-	int iTotalYields = getTotalYieldStored();
-//VET NewCapacity - end 4/9
-	int iMaxCapacity = getMaxYieldCapacity();
+	const int iTotalYields = getTotalYieldStored();
+	const int iMaxCapacity = getMaxYieldCapacity();
 
 	// WTP, ray, Happiness - START 
 	int iCityHappinessDomesticMarketGoldModifiers = getCityHappiness() - getCityUnHappiness();
@@ -7203,9 +7205,11 @@ void CvCity::doYields()
 	
 	// R&R, ray, adjustment for less Custom House messages
 	int iCustomHouseProfit = 0;
-	
+	bool bPrintOnce = false;
+
 	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
+		
 		switch (eYield)
 		{
 		case YIELD_FOOD:
@@ -7264,50 +7268,39 @@ void CvCity::doYields()
 
 			// ray, making special storage capacity rules for Yields XML configurable
 			if (GC.getYieldInfo(eYield).isCargo() && !GC.getYieldInfo(eYield).isIgnoredForStorageCapacity()) 
-			//if (GC.getYieldInfo(eYield).isCargo() && eYield != YIELD_LUMBER && eYield != YIELD_STONE) // we do not sell YIELD_LUMBER and Stone to Overflow or Custom House
 			{
-				//VET NewCapacity - begin 6/9 -- ray fix
 				int iExcess = 0;
-				if (GC.getNEW_CAPACITY())
+				// Here special sell behaviour for Custom House
+				if (bHasUnlockedTradeSettings && iTotalYields < iMaxCapacity)
 				{
-					// Here special sell behaviour for Custom House
-					if (bHasUnlockedTradeSettings && iTotalYields < iMaxCapacity)
+					int sellThreshold = 0;
+					// R&R, ray, finishing Custom House Screen
+					if (isCustomHouseNeverSell(eYield))
 					{
-						int sellThreshold = 0;
-						// R&R, ray, finishing Custom House Screen
-						if (isCustomHouseNeverSell(eYield))
-						{
-							sellThreshold = iMaxCapacity;
-						}
-						else 
-						{
-							sellThreshold = getCustomHouseSellThreshold(eYield);
-						}
-
-						//R&R, ray, fixing threshold displayed and internal differently for some gamespeeds e.g. Marathon
-						//sellThreshold = sellThreshold * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
-						iExcess = getYieldStored(eYield) - sellThreshold;
+						sellThreshold = iMaxCapacity;
+					}
+					else 
+					{
+						sellThreshold = getCustomHouseSellThreshold(eYield);
 					}
 
-					// normal overflow
-					else
-					{
-						// R&R, ray, reprogrammed Overflow for New City Storage
-						if (getYieldStored(eYield) > 0 && iTotalYields > iMaxCapacity)
-						{
-							iExcess = (iTotalYields - iMaxCapacity) * getYieldStored(eYield) / iTotalYields;
-							if (iExcess == 0)
-							{
-								iExcess = 1;
-							}
-						}
-					}
+					//R&R, ray, fixing threshold displayed and internal differently for some gamespeeds e.g. Marathon
+					//sellThreshold = sellThreshold * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
+					iExcess = getYieldStored(eYield) - sellThreshold;
 				}
-				// no new Capacity
+
+				// normal overflow
 				else
 				{
-//VET NewCapacity - end 6/9 -- ray fix
-					iExcess = getYieldStored(eYield) - iMaxCapacity;
+					// R&R, ray, reprogrammed Overflow for New City Storage
+					if (getYieldStored(eYield) > 0 && iTotalYields > iMaxCapacity)
+					{
+						iExcess = (iTotalYields - iMaxCapacity) * getYieldStored(eYield) / iTotalYields;
+						if (iExcess == 0)
+						{
+							iExcess = 1;
+						}
+					}
 				}
 					
 				if (iExcess > 0)
@@ -7381,20 +7374,12 @@ void CvCity::doYields()
 						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 					}
 				}
-				//VET NewCapacity -- ray fix for messages
-				//else if (aiYields[eYield] > -iExcess)
-				else if (aiYields[eYield] > -iExcess && !GC.getNEW_CAPACITY())
+				else if (!bPrintOnce && (iMaxCapacity - iTotalYields) > 0 && (iMaxCapacity - iTotalYields) < (iMaxCapacity / 10)) //only do this message once
 				{
-					CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE",GC.getYieldInfo(eYield).getChar(), getNameKey());
-					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
-				}
-				//VET NewCapacity -- ray fix for messages - START
-				else if (eYield == YIELD_SHEEP && GC.getNEW_CAPACITY() && (iMaxCapacity - iTotalYields) > 0 && (iMaxCapacity - iTotalYields) < (iMaxCapacity / 10)) //only do this message once, thus iYield 5
-				{
+					bPrintOnce = true;
 					CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE_NEW_CAPACITY", getNameKey());
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 				}
-				//VET NewCapacity -- ray fix for messages - END
 
 				if (aiYields[eYield] > 0)
 				{
@@ -13030,22 +13015,16 @@ void CvCity::UpdateBuildingAffectedCache()
 	if (kPlayer.canUseDomesticMarket())
 	{
 		m_ja_iBuildingYieldDemands.reset();
-		const BuildingTypeArray &kBuildingArray = kPlayer.getAllowedBuildingInfos();
-		for (int i = 0;; ++i)
+		const InfoArray<BuildingTypes>& kBuildingArray = kPlayer.getAllowedBuildings();
+		const int iNumBuildings = kBuildingArray.getLength();
+		for (int i = 0; i < iNumBuildings; ++i)
 		{
-			BuildingTypes eBuilding = kBuildingArray.get(i);
-			if (eBuilding != NO_BUILDING)
+			const BuildingTypes eBuilding = kBuildingArray.get(i);
+			if (isHasBuilding(eBuilding))
 			{
-				if (isHasBuilding(eBuilding))
-				{
-					CvBuildingInfo &kInfo = GC.getBuildingInfo(eBuilding);
-					m_ja_iBuildingYieldDemands.addCache(1, kInfo.getYieldDemands());
-					m_iCacheMarketModifier += kInfo.getDomesticMarketModifier();
-				}
-			}
-			else
-			{
-				break;
+				const CvBuildingInfo& kInfo = GC.getBuildingInfo(eBuilding);
+				m_ja_iBuildingYieldDemands.addCache(1, kInfo.getYieldDemands());
+				m_iCacheMarketModifier += kInfo.getDomesticMarketModifier();
 			}
 		}
 	}

@@ -35,6 +35,7 @@ public:
 	void doRiver(CyPlot* pStartPlot, CardinalDirectionTypes eCardinalDirection);
 	void addFeatures();
 	void addFeaturesOnLand(); //WTP, ray, Randomize Features Map Option
+	void addFeaturesOnWater();
 	void addBonuses();
 	void addUniqueBonusType(int /*BonusTypes*/ eBonusType);
 	void addNonUniqueBonusType(int /*BonusTypes*/ eBonusType);

@@ -410,11 +410,21 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 	if (pUnit->maxMoves() > 0)
 	{
 		szString.append(L", ");
-		// ray, new Movement Calculation - START
-		// needs to change or otherwise UI always shows just 0
-		// int iCurrMoves = ((pUnit->movesLeft() / GC.getMOVE_DENOMINATOR()) + (((pUnit->movesLeft() % GC.getMOVE_DENOMINATOR()) > 0) ? 1 : 0));
-		int iCurrMoves = pUnit->movesLeft() / GC.getMOVE_DENOMINATOR();
-		// ray, new Movement Calculation - END
+
+		int iCurrMoves;
+
+		if (GC.useClassicMovementSystem())
+		{
+			iCurrMoves = ((pUnit->movesLeft() / GC.getMOVE_DENOMINATOR()) + (((pUnit->movesLeft() % GC.getMOVE_DENOMINATOR()) > 0) ? 1 : 0));
+		}
+		else
+		{
+			// ray, new Movement Calculation - START
+			// needs to change or otherwise UI always shows just 0
+			iCurrMoves = pUnit->movesLeft() / GC.getMOVE_DENOMINATOR();
+			// ray, new Movement Calculation - END
+		}
+
 		if ((pUnit->baseMoves() == iCurrMoves) || (pUnit->getTeam() != GC.getGameINLINE().getActiveTeam()))
 		{
 			szTempBuffer.Format(L"%d%c", pUnit->baseMoves(), GC.getSymbolID(MOVES_CHAR));

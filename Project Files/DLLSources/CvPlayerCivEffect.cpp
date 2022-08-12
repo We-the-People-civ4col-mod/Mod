@@ -4,7 +4,6 @@
 
 CvPlayerCivEffect::CvPlayerCivEffect()
 	: m_iAllowFoundCity(0)
-	, m_ba_CacheAllowBuild                     (JIT_ARRAY_BUILD, true)
 	, m_ja_iCacheFreePromotionsForProfessions  (JIT_ARRAY_PROFESSION      , JIT_ARRAY_PROMOTION)
 	, m_ja_iCacheFreePromotionsForUnitClasses  (JIT_ARRAY_UNITCLASS       , JIT_ARRAY_PROMOTION)
 {
@@ -29,7 +28,7 @@ void CvPlayerCivEffect::applyCivEffect(const CivEffectInfo& kCivEffect, int iCha
 
 	m_ja_iCacheAllowsBonuses                                          .addCache(iChange, kCivEffect.getAllowedBonuses                (), pCivInfo);
 	bUpdateBuilds |= m_ja_iCacheAllowsBuilds                          .addCache(iChange, kCivEffect.getAllowedBuilds                 (), pCivInfo);
-	bUpdateBuildings |= m_ja_iCacheAllowsBuildings                    .addCache(iChange, kCivEffect.getAllowedBuildingClasses        (), pCivInfo);
+	bUpdateBuildings |= kCivEffect.getAllowedBuildingClasses()        .addCache(m_em_iCacheAllowsBuildings                    , iChange, pCivInfo);	
 	m_ja_iCacheAllowsCivics                                           .addCache(iChange, kCivEffect.getAllowedCivics                 (), pCivInfo);
 	bUpdateImmigrants |= m_ja_iCacheAllowsImmigrants                  .addCache(iChange, kCivEffect.getAllowedImmigrants             (), pCivInfo);
 	bUpdateBuilds |= m_ja_iCacheAllowsImprovements                    .addCache(iChange, kCivEffect.getAllowedImprovements           (), pCivInfo);
@@ -71,12 +70,12 @@ void CvPlayerCivEffect::applyCivEffect(const CivEffectInfo& kCivEffect, int iCha
 	{
 		// Something changed, which might affect which builds are allowed
 		// reset and rebuild the BoolArray to make sure it's up to date
-		m_ba_CacheAllowBuild.reset();
-		for (BuildTypes eBuild = FIRST_BUILD; eBuild < NUM_BUILD_TYPES; ++eBuild)
+		m_em_bCacheAllowBuild.reset();
+		for (BuildTypes eBuild = m_em_bCacheAllowBuild.FIRST; eBuild < m_em_bCacheAllowBuild.LAST; ++eBuild)
 		{
 			if (this->m_ja_iCacheAllowsBuilds.get(eBuild) <= 0)
 			{
-				m_ba_CacheAllowBuild.set(false, eBuild);
+				m_em_bCacheAllowBuild.set(eBuild, false);
 				continue;
 			}
 
@@ -85,14 +84,14 @@ void CvPlayerCivEffect::applyCivEffect(const CivEffectInfo& kCivEffect, int iCha
 			ImprovementTypes eImprovement = static_cast<ImprovementTypes>(kBuild.getImprovement());
 			if (eImprovement != NO_IMPROVEMENT && !this->canUseImprovement(eImprovement))
 			{
-				m_ba_CacheAllowBuild.set(false, eBuild);
+				m_em_bCacheAllowBuild.set(eBuild, false);
 				continue;
 			}
 
 			RouteTypes eRoute = static_cast<RouteTypes>(kBuild.getRoute());
 			if (eRoute != NO_ROUTE && !this->canUseRoute(eRoute))
 			{
-				m_ba_CacheAllowBuild.set(false, eBuild);
+				m_em_bCacheAllowBuild.set(eBuild, false);
 				continue;
 			}
 		}
@@ -100,7 +99,7 @@ void CvPlayerCivEffect::applyCivEffect(const CivEffectInfo& kCivEffect, int iCha
 
 	if (bUpdateBuildings)
 	{
-		m_at_AllowedBuildings.assign(m_ja_iCacheAllowsBuildings);
+		m_iaAllowedBuildings.assignFrom(m_em_iCacheAllowsBuildings);
 	}
 
 	if (gDLL->isGameInitializing())
@@ -134,7 +133,7 @@ void CvPlayerCivEffect::resetCivEffectCache()
 {
 	m_ja_iCacheAllowsBonuses.reset();
 	m_ja_iCacheAllowsBuilds.reset();
-	m_ja_iCacheAllowsBuildings.reset();
+	m_em_iCacheAllowsBuildings.reset();
 	m_ja_iCacheAllowsCivics.reset();
 	m_ja_iCacheAllowsImmigrants.reset();
 	m_ja_iCacheAllowsImprovements.reset();
@@ -144,7 +143,7 @@ void CvPlayerCivEffect::resetCivEffectCache()
 	m_ja_iCacheAllowsUnits.reset();
 	m_ja_iCacheAllowsYields.reset();
 
-	m_ba_CacheAllowBuild.reset();
+	m_em_bCacheAllowBuild.reset();
 
 	m_iCacheCanUseDomesticMarket = 0;
 
@@ -194,7 +193,7 @@ void CvPlayerCivEffect::rebuildCivEffectCache()
 	{
 		if (eBuilding != kCivInfo.getCivilizationBuildings(GC.getBuildingInfo(eBuilding).getBuildingClassType()))
 		{
-			m_ja_iCacheAllowsBuildings.set(-50, eBuilding);
+			m_em_iCacheAllowsBuildings.set(eBuilding, -50);
 		}
 	}
 

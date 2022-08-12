@@ -2916,57 +2916,56 @@ class CvMainInterface:
 #VET NewCapacity - begin 1/1
 				#szBuffer = u"<font=4>"
 				szBuffer = u"<font=3>"
-				if gc.getDefineINT("NEW_CAPACITY"):
-					aiProducedYields = [[]] * YieldTypes.NUM_YIELD_TYPES
-					for iYield in range(YieldTypes.NUM_YIELD_TYPES):
-						aiProducedYields[iYield] = 0
+				aiProducedYields = [[]] * YieldTypes.NUM_YIELD_TYPES
+				for iYield in range(YieldTypes.NUM_YIELD_TYPES):
+					aiProducedYields[iYield] = 0
 
-					#iTotalYield = 0
-					for iYield in range(YieldTypes.NUM_YIELD_TYPES):
-						iUnproducedYield = pHeadSelectedCity.calculateActualYieldProduced(iYield) - pHeadSelectedCity.getBaseRawYieldProduced(iYield)
-						if iUnproducedYield < 0:
-							for iProfession in range(gc.getNumProfessionInfos()):
-								if gc.getProfessionInfo(iProfession).getYieldsProduced(0) == iYield: #MultipleYieldsProduced Start
-									iNeedYield = gc.getProfessionInfo(iProfession).getYieldsConsumed(0) #MultipleYieldsProduced Start
-									aiProducedYields[iNeedYield] += iUnproducedYield
-						iProducedYield = pHeadSelectedCity.calculateNetYield(iYield)
-						aiProducedYields[iYield] += iProducedYield
+				#iTotalYield = 0
+				for iYield in range(YieldTypes.NUM_YIELD_TYPES):
+					iUnproducedYield = pHeadSelectedCity.calculateActualYieldProduced(iYield) - pHeadSelectedCity.getBaseRawYieldProduced(iYield)
+					if iUnproducedYield < 0:
+						for iProfession in range(gc.getNumProfessionInfos()):
+							if gc.getProfessionInfo(iProfession).getYieldsProduced(0) == iYield: #MultipleYieldsProduced Start
+								iNeedYield = gc.getProfessionInfo(iProfession).getYieldsConsumed(0) #MultipleYieldsProduced Start
+								aiProducedYields[iNeedYield] += iUnproducedYield
+					iProducedYield = pHeadSelectedCity.calculateNetYield(iYield)
+					aiProducedYields[iYield] += iProducedYield
 
-					#	if iYield == YieldTypes.YIELD_FOOD or not gc.getYieldInfo(iYield).isCargo():
-					#		continue
-					#	iNetYield += pHeadSelectedCity.getYieldStored(iYield)
+				#	if iYield == YieldTypes.YIELD_FOOD or not gc.getYieldInfo(iYield).isCargo():
+				#		continue
+				#	iNetYield += pHeadSelectedCity.getYieldStored(iYield)
 
-					iProdusedYield = 0
-					for iYield in range(YieldTypes.NUM_YIELD_TYPES):
-						if iYield != YieldTypes.YIELD_FOOD and gc.getYieldInfo(iYield).isCargo():
-							iProdusedYield += aiProducedYields[iYield]
+				iProdusedYield = 0
+				for iYield in range(YieldTypes.NUM_YIELD_TYPES):
+					if iYield != YieldTypes.YIELD_FOOD and gc.getYieldInfo(iYield).isCargo():
+						iProdusedYield += aiProducedYields[iYield]
 
-					szBuffer += u" <color="
-					iMaxYield = pHeadSelectedCity.getMaxYieldCapacity()
-					iTotalYield = pHeadSelectedCity.getTotalYieldStored()
-					if iTotalYield + iProdusedYield > iMaxYield:
-						szBuffer += u"255,0,0"
-					elif iTotalYield + (2 * iProdusedYield) > iMaxYield:
-						szBuffer += u"255,255,0"
-					else:
-						szBuffer += u"0,255,0"
-					szBuffer +=  u">("
-					szBuffer += str(iTotalYield)
-					if iProdusedYield > 0:
-						szBuffer += u"+" + str(iProdusedYield)
-					elif iProdusedYield < 0:
-						szBuffer += str(iProdusedYield)
-					szBuffer += u"/" + str(iMaxYield) + u")"
+				szBuffer += u" <color="
+				iMaxYield = pHeadSelectedCity.getMaxYieldCapacity()
+				iTotalYield = pHeadSelectedCity.getTotalYieldStored()
+				if iTotalYield + iProdusedYield > iMaxYield:
+					szBuffer += u"255,0,0"
+				elif iTotalYield + (2 * iProdusedYield) > iMaxYield:
+					szBuffer += u"255,255,0"
+				else:
+					szBuffer += u"0,255,0"
+				szBuffer +=  u">("
+				szBuffer += str(iTotalYield)
+				if iProdusedYield > 0:
+					szBuffer += u"+" + str(iProdusedYield)
+				elif iProdusedYield < 0:
+					szBuffer += str(iProdusedYield)
+				szBuffer += u"/" + str(iMaxYield) + u")"
 #VET NewCapacity - end 1/1
-					szBuffer += u"</font>"
-					# WTP, ray, adding the Yield Icon for Trade Goods
-					szBuffer += u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar()) + u"</font>"
-					
-					#screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 83 / 100, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CITY_NAME, -1, -1 )
-					screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 87 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, VET_NEW_CAPACITY, -1 )
-					#screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 84 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
-					
-				# R&R, Robert Surcouf VET NewCapacity - End
+				szBuffer += u"</font>"
+				# WTP, ray, adding the Yield Icon for Trade Goods
+				szBuffer += u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar()) + u"</font>"
+				
+				#screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 83 / 100, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_CITY_NAME, -1, -1 )
+				screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 87 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, VET_NEW_CAPACITY, -1 )
+				#screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 84 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+				
+			# R&R, Robert Surcouf VET NewCapacity - End
 			screen.hide("TimeText")
 			screen.hide("GoldText")
 			

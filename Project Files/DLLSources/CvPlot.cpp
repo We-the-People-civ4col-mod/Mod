@@ -3408,10 +3408,16 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 
 	bool bHasTerrainCost = (iRegularCost > 0);
 
-	// ray, new Movement Calculation - START
-	// this needs to be prevented because the Unit will otherwise not get full Terrain Cost
-	// iRegularCost = std::min(iRegularCost, pUnit->baseMoves()) * GC.getMOVE_DENOMINATOR();
-	iRegularCost = iRegularCost * GC.getMOVE_DENOMINATOR();
+	if (GC.useClassicMovementSystem())
+	{
+		iRegularCost = std::min(iRegularCost, pUnit->baseMoves()) * GC.getMOVE_DENOMINATOR();
+	}
+	else
+	{
+		// ray, new Movement Calculation - START
+		// this (see if block) needs to be prevented because the Unit will otherwise not get full Terrain Cost
+		iRegularCost = iRegularCost * GC.getMOVE_DENOMINATOR();
+	}
 
 	if (bHasTerrainCost)
 	{
@@ -4907,6 +4913,14 @@ int CvPlot::getUpgradeProgress() const
 
 int CvPlot::getUpgradeTimeLeft(ImprovementTypes eImprovement, PlayerTypes ePlayer) const
 {
+	// If the improvement is currently not owned, return the token 1 turn
+	// TOOD: Consider refactoring this so we can return a value that indicates that the
+	// value should be ignored
+	if (ePlayer == NO_PLAYER)
+	{
+		return 1;
+	}
+		
 	int iUpgradeLeft;
 	int iUpgradeRate;
 	int iTurnsLeft;
@@ -7776,7 +7790,7 @@ bool CvPlot::isRevealed(TeamTypes eTeam, bool bDebug) const
 		return true;
 	}
 
-	return m_pab_Revealed.get(eTeam);
+	return m_em_bRevealed.get(eTeam);
 }
 
 
@@ -7791,7 +7805,7 @@ void CvPlot::setRevealed(TeamTypes eTeam, bool bNewValue, bool bTerrainOnly, Tea
 
 	if (isRevealed(eTeam, false) != bNewValue)
 	{
-		m_pab_Revealed.set(eTeam, bNewValue);
+		m_em_bRevealed.set(eTeam, bNewValue);
 
 		if (area())
 		{

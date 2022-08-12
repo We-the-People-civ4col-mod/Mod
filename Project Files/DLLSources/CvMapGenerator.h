@@ -31,6 +31,7 @@ public:
 	bool addRiver(CvPlot *pFreshWaterPlot);
 	DllExport void addFeatures();
 	void addFeaturesOnLand(); //WTP, ray, Randomize Features Map Option
+	void addFeaturesOnWater();
 	DllExport void addBonuses();
 	void addUniqueBonusType(BonusTypes eBonusType);
 	void addNonUniqueBonusType(BonusTypes eBonusType);

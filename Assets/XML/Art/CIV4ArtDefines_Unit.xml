@@ -7619,7 +7619,7 @@
             <FullLengthIcon>,Art/Interface/Screens/Europe/ships/Europe_Slave_Barque.dds</FullLengthIcon>
             <fScale>0.24</fScale>
             <fInterfaceScale>0.5</fInterfaceScale>
-            <NIF>Art/Units/russia/ships/Barque_FX_w_Shroud.nif</NIF>
+            <NIF>Art/Units/Ships_Transport/Slave_Barque/Barque_FX_w_Shroud.nif</NIF>
             <KFM>Art/Units/Frigate/Frigate.kfm</KFM>
             <iDamageStates>4</iDamageStates>
             <TrailDefinition>

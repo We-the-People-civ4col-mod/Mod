@@ -2185,7 +2185,7 @@ void CvPlayer::doTurn()
 
 			redistributeWood();
 			// R&R, ray, redistribute cannons and muskets
-			redistributeCannonsAndMuskets();
+			//redistributeCannonsAndMuskets();
 		}
 		// TAC - AI Economy - Ray - END
 	}
@@ -9617,6 +9617,12 @@ const CvWString& CvPlayer::getCityName(int iIndex) const
 CvCity* CvPlayer::firstCity(int *pIterIdx, bool bRev) const
 {
 	return !bRev ? m_cities.beginIter(pIterIdx) : m_cities.endIter(pIterIdx);
+}
+
+CvCity* CvPlayer::firstCity() const
+{
+	int iUnused = 0;
+	return firstCity(&iUnused);
 }
 
 CvCity* CvPlayer::nextCity(int *pIterIdx, bool bRev) const
@@ -19570,20 +19576,24 @@ void CvPlayer::redistributeWood()
 	}
 
 	// for safety, if there are some ressources left, we add it to the first city
-	if (totalwood > 0)
+	CvCity* pFirstCity = firstCity();
+	if (pFirstCity != NULL)
 	{
-		getCity(0)->changeYieldStored(YIELD_LUMBER, totalwood);
+		if (totalwood > 0)
+		{
+			pFirstCity->changeYieldStored(YIELD_LUMBER, totalwood);
+		}
+		if (totalstone > 0)
+		{
+			pFirstCity->changeYieldStored(YIELD_STONE, totalstone);
+		}
 	}
-	if (totalstone > 0)
-	{
-		getCity(0)->changeYieldStored(YIELD_STONE, totalstone);
-	}
-
 }
 // TAC - AI Economy - Ray - END
 
 
 // R&R, ray, redistribute cannons and muskets
+/*
 void CvPlayer::redistributeCannonsAndMuskets()
 {
 	// do nothing if Player has no cities
@@ -19648,7 +19658,7 @@ void CvPlayer::redistributeCannonsAndMuskets()
 
 	}
 }
-
+*/
 
 // TAC - LbD - Ray - START
 bool CvPlayer::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int pre_rounds, int l_level)
