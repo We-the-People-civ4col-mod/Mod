@@ -2783,7 +2783,7 @@ bool CvDLLButtonPopup::launchChooseProfessionPopup(CvPopup* pPopup, CvPopupInfo 
 		// we want to give ability to "lock" colonist to the current profession by
 		// choosing the same profession as he already does. Only if colonist is currently employed in the city: working the plot, or working in the building
 		// Otherwise, do not allow to change profession to the same profession
-		if ((iProfession == pUnit->getProfession() && (pWorkingPlot != NULL && eWorkingBuilding != NO_BUILDING)) ||
+		if ((iProfession == pUnit->getProfession() && (pWorkingPlot != NULL || eWorkingBuilding != NO_BUILDING)) ||
 			(iProfession != pUnit->getProfession() || bShowOnlyPlotCitizens || bShowOnlyBuildingCitizens) && pUnit->canHaveProfession(eLoopProfession, false))
 		//Androrc End
 		{
