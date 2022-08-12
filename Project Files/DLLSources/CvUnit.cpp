@@ -11476,61 +11476,58 @@ bool CvUnit::setProfession(ProfessionTypes eProfession, bool bForce, bool bRemov
 		return false;
 	}
 
-	if (getProfession() != eProfession)
+	if (getProfession() != NO_PROFESSION)
 	{
-		if (getProfession() != NO_PROFESSION)
+		if (GC.getProfessionInfo(getProfession()).isCitizen())
 		{
-			if (GC.getProfessionInfo(getProfession()).isCitizen())
-			{
-				AI_setOldProfession(getProfession());
-			}
+			AI_setOldProfession(getProfession());
 		}
-		if (isOnMap() && eProfession != NO_PROFESSION && GC.getProfessionInfo(eProfession).isCitizen())
-		{
-			CvCity* pCity = plot()->getPlotCity();
-			if (pCity != NULL)
-			{
-				if (canJoinCity(plot()))
-				{
-					pCity->addPopulationUnit(this, eProfession);
-					bool bLock = true;
-					if (GC.getProfessionInfo(eProfession).isWorkPlot())
-					{
-						int iPlotIndex = pCity->AI_bestProfessionPlot(eProfession, this);
-						if (iPlotIndex != -1)
-						{
-							pCity->alterUnitWorkingPlot(iPlotIndex, getID(), false);
-						}
-						else
-						{
-							bLock = false;
-						}
-					}
-
-					setColonistLocked(bLock);
-					return true;
-				}
-			}
-		}
-
-		// clean up from old profession
-		processProfession(getProfession(), -1, false, bRemoveYieldsFromCity);
-		ProfessionTypes eOldProfession = getProfession();
-
-		// actually change profession
-		m_eProfession = eProfession;
-
-		if (getProfessionUnitCombatType(eOldProfession) != getProfessionUnitCombatType(getProfession()))
-		{
-			// set cached data from promotions
-			setPromotions();
-		}
-		processProfession(getProfession(), 1, true, bRemoveYieldsFromCity);
-
-		//reload unit model
-		reloadEntity();
-		gDLL->getInterfaceIFace()->setDirty(Domestic_Advisor_DIRTY_BIT, true);
 	}
+	if (isOnMap() && eProfession != NO_PROFESSION && GC.getProfessionInfo(eProfession).isCitizen())
+	{
+		CvCity* pCity = plot()->getPlotCity();
+		if (pCity != NULL)
+		{
+			if (canJoinCity(plot()))
+			{
+				pCity->addPopulationUnit(this, eProfession);
+				bool bLock = true;
+				if (GC.getProfessionInfo(eProfession).isWorkPlot())
+				{
+					int iPlotIndex = pCity->AI_bestProfessionPlot(eProfession, this);
+					if (iPlotIndex != -1)
+					{
+						pCity->alterUnitWorkingPlot(iPlotIndex, getID(), false);
+					}
+					else
+					{
+						bLock = false;
+					}
+				}
+
+				setColonistLocked(bLock);
+				return true;
+			}
+		}
+	}
+
+	// clean up from old profession
+	processProfession(getProfession(), -1, false, bRemoveYieldsFromCity);
+	ProfessionTypes eOldProfession = getProfession();
+
+	// actually change profession
+	m_eProfession = eProfession;
+
+	if (getProfessionUnitCombatType(eOldProfession) != getProfessionUnitCombatType(getProfession()))
+	{
+		// set cached data from promotions
+		setPromotions();
+	}
+	processProfession(getProfession(), 1, true, bRemoveYieldsFromCity);
+
+	//reload unit model
+	reloadEntity();
+	gDLL->getInterfaceIFace()->setDirty(Domestic_Advisor_DIRTY_BIT, true);
 
 	if (eProfession != NO_PROFESSION)
 	{
