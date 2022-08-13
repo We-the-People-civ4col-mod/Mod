@@ -8173,6 +8173,20 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 
 		iBaseProduction += iBuildingYield;
 	}
+
+	// WTP, ray, correcting Yield Help for Culture - missing Culture from Citizens - START
+	if (eYieldType == YIELD_CULTURE)
+	{	
+		// keep this consistent with formula in getCultureRate()
+		int cultureFromPopulation = city.getPopulation() / 3;
+		if (cultureFromPopulation != 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_CULTURE_FROM_POPULATION", info.getTextKeyWide(), cultureFromPopulation, info.getChar()));
+		}
+	}
+	// WTP, ray, correcting Yield Help for Culture - missing Culture from Citizens - END
+
 	// R&R, ray , MYCP partially based on code of Aymerick - START
 	std::vector< std::vector<int> > aaiProfessionYields;
 	aaiProfessionYields.resize(GC.getNumProfessionInfos());
@@ -8473,6 +8487,7 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		int iTotalCityHealth = city.getCityHealth();
 		szBuffer.append(gDLL->getText("TXT_KEY_CITY_HEALTH_TOTAL", info.getTextKeyWide(), iTotalCityHealth, info.getChar()));
 	}
+
 	// WTP, ray, Happiness - START
 	// Code Happiness and Unhappiness YIELD Help
 	else if (eYieldType == YIELD_HAPPINESS)
@@ -8588,8 +8603,17 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 	// WTP, ray, Happiness - END
 	else // old code
 	{
-		szBuffer.append(gDLL->getText("TXT_KEY_YIELD_TOTAL", info.getTextKeyWide(), iModifiedProduction, info.getChar()));
-		FAssert(iModifiedProduction == aiYields[eYieldType]);
+		// WTP, ray, correcting Yield Help for Culture - missing Culture from Citizens - START
+		if (eYieldType == GC.getDefineINT("CULTURE_YIELD"))
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_TOTAL", info.getTextKeyWide(), city.getCultureRate(), info.getChar()));
+		}
+		// WTP, ray, correcting Yield Help for Culture - missing Culture from Citizens - END
+		else 
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_TOTAL", info.getTextKeyWide(), iModifiedProduction, info.getChar()));
+			FAssert(iModifiedProduction == aiYields[eYieldType]);
+		}
 	}
 	// R&R, ray, Health - END
 

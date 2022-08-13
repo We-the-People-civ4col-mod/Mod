@@ -1508,4 +1508,9 @@
         <English>[NEWLINE][BOLD]Yield Decreases:[\BOLD]</English>
         <German>[NEWLINE][BOLD]Geringerer Ertrag:[\BOLD]</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CULTURE_FROM_POPULATION</Tag>
+        <English>[ICON_BULLET]%d2%F3_Icon[TAB]from Population</English>
+        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Stadgröße</German>
+    </TEXT>
 </Civ4GameText>
