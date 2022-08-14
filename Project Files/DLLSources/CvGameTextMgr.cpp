@@ -5915,10 +5915,15 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 		int iModifier = GC.getUnitInfo(eUnit).getYieldModifier(eYield);
 		if (iModifier != 0)
 		{
+			//WTP, ray, Slave Hunter and Slave Master - START
 			if (pCity != NULL)
 			{
-				iModifier = iModifier + pCity->getSlaveWorkerProductionBonus(); //WTP, ray, Slave Hunter and Slave Master - START
+				if (GC.getUnitInfo(eUnit).getYieldChange(eYield) > 0)
+				{
+					iModifier = iModifier + pCity->getSlaveWorkerProductionBonus();
+				}
 			}
+			//WTP, ray, Slave Hunter and Slave Master - END
 			mapModifiers[iModifier] += CvWString::format(L"%c", GC.getYieldInfo(eYield).getChar());
 		}
 
@@ -8270,14 +8275,24 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 							if (j == 0 && GC.getProfessionInfo(eProfession).getYieldsProduced(j) == eYieldType)
 							{
 								int iPlotYield = pPlot->getYield(eYieldType);
-								iPlotYield = iPlotYield * Modifier / 100;//WTP, ray, Slave Hunter and Slave Master - START
+								//WTP, ray, Slave Hunter and Slave Master - START
+								if (pUnit->getUnitInfo().getYieldChange(eYieldType) > 0)
+								{
+									iPlotYield = iPlotYield * Modifier / 100;
+								}
+								//WTP, ray, Slave Hunter and Slave Master - END
 								aaiProfessionYields[eProfession][j] += iPlotYield;
 								iBaseProduction += iPlotYield;
 							}
 							else if (GC.getProfessionInfo(eProfession).getYieldsProduced(j) == eYieldType)
 							{
 								int iPlotYield = pPlot->getYield((YieldTypes) GC.getProfessionInfo(eProfession).getYieldsProduced(0)) / 2;
-								iPlotYield = iPlotYield * Modifier / 100;//WTP, ray, Slave Hunter and Slave Master - START
+								//WTP, ray, Slave Hunter and Slave Master - START
+								if (pUnit->getUnitInfo().getYieldChange(eYieldType) > 0)
+								{
+									iPlotYield = iPlotYield * Modifier / 100;
+								}
+								//WTP, ray, Slave Hunter and Slave Master - END
 								aaiProfessionYields[eProfession][j] += iPlotYield;
 								iBaseProduction += iPlotYield;
 							}
@@ -9168,7 +9183,7 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 
 				int iSlaveWorkerProductionBonus = kCity.getSlaveWorkerProductionBonus(); //WTP, ray, Slave Hunter and Slave Master
 				//WTP, ray, Slave Hunter and Slave Master - START
-				if (kUnit.getUnitInfo().LbD_canEscape() && iSlaveWorkerProductionBonus > 0)
+				if (kUnit.getUnitInfo().LbD_canEscape() && iSlaveWorkerProductionBonus > 0 && kUnit.getUnitInfo().getYieldChange(eProfessionYield) > 0)
 				{
 					int iYieldAmountWithModifier =   kCity.getProfessionOutput(eProfession, &kUnit);
 					int iYieldAmountWithoutModifier = iYieldAmount;
@@ -9197,7 +9212,7 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 
 				//WTP, ray, Slave Hunter and Slave Master
 				int iTotalYieldTimes100 = 0;
-				if (kUnit.getUnitInfo().LbD_canEscape() && iSlaveWorkerProductionBonus > 0)
+				if (kUnit.getUnitInfo().LbD_canEscape() && iSlaveWorkerProductionBonus > 0  && kUnit.getUnitInfo().getYieldChange(eProfessionYield) > 0)
 				{
 					iTotalYieldTimes100 = (iModifier + iSlaveWorkerProductionBonus) * iYieldAmount;
 				}

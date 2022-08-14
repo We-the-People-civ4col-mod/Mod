@@ -4187,7 +4187,7 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType) const
 					{
 						int iProductionModifier = 100;
 						CvUnit* pUnit = getUnitWorkingPlot(pPlot);
-						if (pUnit != NULL && pUnit->getUnitInfo().LbD_canEscape())
+						if (pUnit != NULL && pUnit->getUnitInfo().LbD_canEscape() && pUnit->getUnitInfo().getYieldChange(eYieldType) > 0)
 						{
 							iProductionModifier += iSlaveWorkerProductionBonus;
 						}
