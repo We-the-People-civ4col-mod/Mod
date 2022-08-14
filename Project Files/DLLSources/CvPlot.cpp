@@ -6920,13 +6920,14 @@ int CvPlot::calculatePotentialYield(YieldTypes eYield, PlayerTypes ePlayer, Impr
 	{
 		iModifier += GC.getUnitInfo(eUnit).getYieldModifier(eYield);
 		//WTP, ray, Slave Hunter and Slave Master - START
-		if (pWorkingCity != NULL && !pWorkingCity->isNative())
+		//it messes up all calculations
+		/*if (pWorkingCity != NULL && !pWorkingCity->isNative())
 		{
 			if (GC.getUnitInfo(eUnit).LbD_canEscape() && pWorkingCity->getSlaveWorkerProductionBonus() > 0)
 			{
 				iModifier += pWorkingCity->getSlaveWorkerProductionBonus();
 			}
-		}
+		}*/
 		//WTP, ray, Slave Hunter and Slave Master - END
 	}
 

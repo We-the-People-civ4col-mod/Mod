@@ -5915,7 +5915,10 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 		int iModifier = GC.getUnitInfo(eUnit).getYieldModifier(eYield);
 		if (iModifier != 0)
 		{
-			iModifier = iModifier + pCity->getSlaveWorkerProductionBonus();
+			if (pCity != NULL)
+			{
+				iModifier = iModifier + pCity->getSlaveWorkerProductionBonus(); //WTP, ray, Slave Hunter and Slave Master - START
+			}
 			mapModifiers[iModifier] += CvWString::format(L"%c", GC.getYieldInfo(eYield).getChar());
 		}
 
@@ -8246,8 +8249,16 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 				iCityPlotYield = pPlot->getYield(eYieldType);
 			}
 			else
-			{
+			{	
 				CvUnit* pUnit = city.getUnitWorkingPlot(i);
+				//WTP, ray, Slave Hunter and Slave Master - START
+				int Modifier = 100; 
+				int iSlaveWorkerProductionBonus = city.getSlaveWorkerProductionBonus(); 
+				if (NULL != pUnit && pUnit->getUnitInfo().LbD_canEscape() && iSlaveWorkerProductionBonus > 0)
+				{
+					Modifier += iSlaveWorkerProductionBonus;
+				}				
+				//WTP, ray, Slave Hunter and Slave Master - END
 				if (NULL != pUnit && pUnit->getOwnerINLINE() == city.getOwnerINLINE())
 				{
 					ProfessionTypes eProfession = pUnit->getProfession();
@@ -8259,12 +8270,14 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 							if (j == 0 && GC.getProfessionInfo(eProfession).getYieldsProduced(j) == eYieldType)
 							{
 								int iPlotYield = pPlot->getYield(eYieldType);
+								iPlotYield = iPlotYield * Modifier / 100;//WTP, ray, Slave Hunter and Slave Master - START
 								aaiProfessionYields[eProfession][j] += iPlotYield;
 								iBaseProduction += iPlotYield;
 							}
 							else if (GC.getProfessionInfo(eProfession).getYieldsProduced(j) == eYieldType)
 							{
 								int iPlotYield = pPlot->getYield((YieldTypes) GC.getProfessionInfo(eProfession).getYieldsProduced(0)) / 2;
+								iPlotYield = iPlotYield * Modifier / 100;//WTP, ray, Slave Hunter and Slave Master - START
 								aaiProfessionYields[eProfession][j] += iPlotYield;
 								iBaseProduction += iPlotYield;
 							}
@@ -9157,8 +9170,8 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 				//WTP, ray, Slave Hunter and Slave Master - START
 				if (kUnit.getUnitInfo().LbD_canEscape() && iSlaveWorkerProductionBonus > 0)
 				{
-					int iYieldAmountWithModifier =  kCity.getPlotWorkedByUnit(&kUnit)->calculatePotentialYield(eProfessionYield, &kUnit, false);
-					int iYieldAmountWithoutModifier = iYieldAmountWithModifier * 100 / (100 + iSlaveWorkerProductionBonus);
+					int iYieldAmountWithModifier =   kCity.getProfessionOutput(eProfession, &kUnit);
+					int iYieldAmountWithoutModifier = iYieldAmount;
 
 					//we have to correct rounding issues here
 					while ((iYieldAmountWithoutModifier * (100 + iSlaveWorkerProductionBonus) / 100) < iYieldAmountWithModifier)
@@ -9172,13 +9185,27 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 					szString.append(gDLL->getText("TXT_KEY_SLAVE_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP", iSlaveWorkerProductionBonus));
 					szString.append(L"\n=======================\n");
 				}
+			
+				else 
+				{
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_MISC_HELP_BASE_CITIZEN_YIELD", iYieldAmount, iProfessionYieldChar, kUnit.getNameKey()));
+				}
 				//WTP, ray, Slave Hunter and Slave Master - END
 
-				szString.append(NEWLINE);
-				szString.append(gDLL->getText("TXT_KEY_MISC_HELP_BASE_CITIZEN_YIELD", iYieldAmount, iProfessionYieldChar, kUnit.getNameKey()));
 				int iModifier = setCityYieldModifierString(szString, eProfessionYield, kCity);
 
-				int iTotalYieldTimes100 = (iModifier) * iYieldAmount;
+				//WTP, ray, Slave Hunter and Slave Master
+				int iTotalYieldTimes100 = 0;
+				if (kUnit.getUnitInfo().LbD_canEscape() && iSlaveWorkerProductionBonus > 0)
+				{
+					iTotalYieldTimes100 = (iModifier + iSlaveWorkerProductionBonus) * iYieldAmount;
+				}
+				else
+				{
+					iTotalYieldTimes100 = iModifier * iYieldAmount;
+				}
+				//WTP, ray, Slave Hunter and Slave Master - START
 				if (iTotalYieldTimes100 > 0)
 				{
 					szString.append(SEPARATOR);
