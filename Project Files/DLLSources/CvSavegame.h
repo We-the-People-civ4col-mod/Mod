@@ -8,6 +8,7 @@ enum eVariableType;
 struct CvPopupButtonPython;
 
 #include "JustInTimeArray.h"
+#include "BoolArray.h"
 #include "LinkedList.h"
 
 #include "CvDiploParameters.h"
@@ -97,6 +98,9 @@ public:
 	void Read(EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
 
 	template<class T>
+	void Read(PlayerArrayBase<T>& array);
+
+	template<class T>
 	void Read(JustInTimeArray<T>& jitArray);
 
 	template<class T>
@@ -123,6 +127,8 @@ public:
 	template<class T>
 	void Read(CLinkList<T>& lList);
 
+	void Read(BoolArray& baArray);
+	void Read(PlayerBoolArrayBase& array);
 	void Read(CvTurnScoreMap& vec);
 	void Read(CvEventMap& vec);
 
@@ -304,6 +310,11 @@ public:
 	void Write(const CvWString & szString);
 	void Write(const char      * szString);
 	void Write(const wchar     * szString);
+
+	void Write(BoolArray& baArray);
+
+	template<class T>
+	void Write(PlayerArrayBase<T>& array);
 	
 	template<class T>
 	void Write(JustInTimeArray<T>& jitArray);
@@ -343,10 +354,15 @@ public:
 	void Write(SavegameVariableTypes eType, const CvWString & szString);
 	void Write(SavegameVariableTypes eType, const char      * szString);
 	void Write(SavegameVariableTypes eType, const wchar     * szString);
+	void Write(SavegameVariableTypes eType, BoolArray& baArray);
+	void Write(SavegameVariableTypes eType, const PlayerBoolArrayBase& array);
 	void Write(SavegameVariableTypes eType, const IDInfo& idInfo);
 	void Write(SavegameVariableTypes eType, const CvTurnScoreMap& idInfo);
 	void Write(SavegameVariableTypes eType, CvEventMap& idInfo);
 	void Write(SavegameVariableTypes eType, CvRandom& rand);
+
+	template<class T>
+	void Write(SavegameVariableTypes eType, const PlayerArrayBase<T>& array);
 
 	template<class T>
 	void Write(SavegameVariableTypes eType, T eVariable, T eDefault);
@@ -541,6 +557,12 @@ inline void CvSavegameReader::Read(EnumMapBase<IndexType, T, DEFAULT, LengthType
 }
 
 template<class T>
+inline void CvSavegameReader::Read(PlayerArrayBase<T>& array)
+{
+	array.Read(*this);
+}
+
+template<class T>
 inline void CvSavegameReader::Read(JustInTimeArray<T>& jitArray)
 {
 	jitArray.Read(*this);
@@ -659,6 +681,12 @@ inline void CvSavegameWriter::Write(T variable)
 }
 
 template<class T>
+inline void CvSavegameWriter::Write(PlayerArrayBase<T>& array)
+{
+	array.Write(*this);
+}
+
+template<class T>
 inline void CvSavegameWriter::Write(JustInTimeArray<T>& jitArray)
 {
 	jitArray.Write(*this);
@@ -771,6 +799,16 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, const std::vect
 	{
 		Write(eType);
 		Write(vec);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, const PlayerArrayBase<T>& array)
+{
+	if (array.hasContent())
+	{
+		Write(eType);
+		Write(array);
 	}
 }
 

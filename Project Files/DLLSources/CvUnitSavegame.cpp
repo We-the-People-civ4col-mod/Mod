@@ -264,7 +264,7 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_szName.clear();
 	m_szScriptData.clear();
 
-	m_embHasRealPromotion.reset();
+	m_ba_HasRealPromotion.reset();
 	m_ja_iFreePromotionCount.reset();
 
  	resetPromotions();
@@ -357,7 +357,7 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_Name: reader.Read(m_szName); break;
 		case UnitSave_ScriptData: reader.Read(m_szScriptData); break;
 
-		case UnitSave_HasRealPromotion: reader.Read(m_embHasRealPromotion); break;
+		case UnitSave_HasRealPromotion: reader.Read(m_ba_HasRealPromotion); break;
 		case UnitSave_FreePromotionCount: reader.Read(m_ja_iFreePromotionCount); break;
 		}
 	}
@@ -454,7 +454,7 @@ void CvUnit::write(CvSavegameWriter writer)
 	writer.Write(UnitSave_Name, m_szName);
 	writer.Write(UnitSave_ScriptData, m_szScriptData);
 
-	writer.Write(UnitSave_HasRealPromotion, m_embHasRealPromotion);
+	writer.Write(UnitSave_HasRealPromotion, m_ba_HasRealPromotion);
 	writer.Write(UnitSave_FreePromotionCount, m_ja_iFreePromotionCount);
 
 	writer.Write(UnitSave_END);

@@ -65,9 +65,9 @@ bool CyUnit::generatePath(CyPlot* pToPlot, int iFlags, bool bReuse, int* piPathT
 }
 */
 
-bool CyUnit::generatePath(CyPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns)
+bool CyUnit::generatePath(CyPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns, bool bIgnoreDanger)
 {
-	return m_pUnit ? m_pUnit->generatePath(pToPlot->getPlot(), iFlags, bReuse, piPathTurns) : false;
+	return m_pUnit ? m_pUnit->generatePath(pToPlot->getPlot(), iFlags, bReuse, piPathTurns, bIgnoreDanger) : false;
 }
 // TAC - AI Improved Naval AI - koma13 - END
 

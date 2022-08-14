@@ -278,10 +278,8 @@ public:
 
 protected:
 
-	template<typename T>
-	int read(CvSavegameReader& reader, bool*& pArray, bool bAllocate, T eLength);
-	template<typename T>
-	void write(CvSavegameWriter& writer, bool* pArray, T eLength);
+	int read(CvSavegameReader& reader, JITarrayTypes eType, bool*& pArray, bool bAllocate);
+	void write(CvSavegameWriter& writer, JITarrayTypes eType, bool* pArray, int iLength);
 
 	void clearCustomMapOptions();
 	void refreshCustomMapOptions();

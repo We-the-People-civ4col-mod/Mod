@@ -56,13 +56,17 @@ CvUnitTemporaryStrengthModifier::~CvUnitTemporaryStrengthModifier()
 
 
 CvUnit::CvUnit() :
+	m_ba_HasRealPromotion(JIT_ARRAY_PROMOTION),
 	m_eUnitType(NO_UNIT),
 	m_iID(-1),
 	m_iVisibilityRange(-1),
 
 	// unit yield cache - start - Nightinggale
-	m_eCachedYield(NO_YIELD)
+	m_eCachedYield(NO_YIELD),
 	// unit yield cache - end - Nightinggale
+
+	m_ba_isPromotionApplied(JIT_ARRAY_PROMOTION)
+
 {
 	CvDLLEntity::createUnitEntity(this);		// create and attach entity to unit
 
@@ -820,27 +824,21 @@ void CvUnit::doTurn()
 
 	setMadeAttack(false);
 
-	if (GC.useClassicMovementSystem())
+	// ray, new Movement Calculation - START
+	// we do not reset to 0 anymore because this would prevent the new calulation
+	// we give back the full movement points of the Unit instead: Unit, Profession, Promotion, Traits, ...
+	// but of course we never give more than the Unit can actually have
+	// setMoves(0);
+	if ((getMoves() - maxMoves()) < 0)
 	{
 		setMoves(0);
 	}
+
 	else
 	{
-		// ray, new Movement Calculation - START
-		// we do not reset to 0 anymore because this would prevent the new calulation
-		// we give back the full movement points of the Unit instead: Unit, Profession, Promotion, Traits, ...
-		// but of course we never give more than the Unit can actually have
-		// setMoves(0);
-		if ((getMoves() - maxMoves()) < 0)
-		{
-			setMoves(0);
-		}
-		else
-		{
-			changeMoves(-maxMoves());
-		}
-		// ray, new Movement Calculation - END
+		changeMoves(-maxMoves());
 	}
+	// ray, new Movement Calculation - END
 }
 
 
@@ -4345,8 +4343,13 @@ int CvUnit::getMaxLoadYieldAmount(YieldTypes eYield) const
 		int iMaxAvailable = pCity->getYieldStored(eYield);
 		if (!isHuman() || isAutomated())
 		{
+//VET NewCapacity - begin 1/1
+			//iMaxAvailable -= pCity->getMaintainLevel(eYield);
+
 			// R&R, ray, improvement
-			if (!isHuman() && (pCity->getTotalYieldStored() > pCity->getMaxYieldCapacity() / 2))
+			//if (GC.getNEW_CAPACITY())
+			if (GC.getNEW_CAPACITY() && !isHuman() && (pCity->getTotalYieldStored() > pCity->getMaxYieldCapacity() / 2))
+			//if (GC.getNEW_CAPACITY() && !isHuman())
 			{
 				// ray, making special storage capacity rules for Yields XML configurable
 				int iCargoYields = 0;
@@ -4368,6 +4371,7 @@ int CvUnit::getMaxLoadYieldAmount(YieldTypes eYield) const
 					iMaxAvailable -= pCity->getAutoMaintainThreshold(eYield);
 					// transport feeder - end - Nightinggale
 				}
+//VET NewCapacity - end 1/1
 		}
 		iMaxAmount = std::min(iMaxAmount, iMaxAvailable);
 	}
@@ -8327,16 +8331,10 @@ int CvUnit::maxMoves() const
 
 int CvUnit::movesLeft() const
 {
-	if (GC.useClassicMovementSystem())
-	{
-		return std::max(0, (maxMoves() - getMoves()));
-	}
-	else
-	{
-		// ray, new Movement Calculation - START
-		// this can get smaller than 0 now
-		return (maxMoves() - getMoves());
-	}
+	// ray, new Movement Calculation - START
+	// this can get smaller than 0 now
+	// return std::max(0, (maxMoves() - getMoves()));
+	return (maxMoves() - getMoves());
 }
 
 
@@ -12887,7 +12885,7 @@ bool CvUnit::isHasRealPromotion(PromotionTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_embHasRealPromotion.get(eIndex);
+	return m_ba_HasRealPromotion.get(eIndex);
 }
 
 void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
@@ -12897,7 +12895,7 @@ void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
 
 	if (isHasRealPromotion(eIndex) != bValue)
 	{
-		m_embHasRealPromotion.set(eIndex, bValue);
+		m_ba_HasRealPromotion.set(bValue, eIndex);
 
 		setPromotions(eIndex);
 
@@ -13046,13 +13044,13 @@ void CvUnit::setPromotions(PromotionTypes ePromotion)
 
 	// Only update promotions if the unit can have some or there are already promotions applied
 	// most calls will likely be from 
-	if (eUnitCombat != NO_UNITCOMBAT || m_embisPromotionApplied.hasContent())
+	if (eUnitCombat != NO_UNITCOMBAT || m_ba_isPromotionApplied.isAllocated())
 	{
 
 		CvPlayerAI &kOwner = GET_PLAYER(getOwnerINLINE());
 
-		PromotionTypes eLoopPromotion = ePromotion != NO_PROMOTION ? ePromotion : m_embisPromotionApplied.FIRST;
-		const PromotionTypes eLastPromotion = ePromotion != NO_PROMOTION ? ePromotion : m_embisPromotionApplied.LAST;
+		PromotionTypes eLoopPromotion = ePromotion != NO_PROMOTION ? ePromotion : FIRST_PROMOTION;
+		PromotionTypes eLastPromotion = ePromotion != NO_PROMOTION ? ePromotion : NUM_PROMOTION_TYPES - static_cast<PromotionTypes>(1);
 
 		ProfessionTypes eProfession = getProfession();
 
@@ -13089,17 +13087,17 @@ void CvUnit::setPromotions(PromotionTypes ePromotion)
 			if (bHasPromotion)
 			{
 				bFoundAnyPromotions = true;
-				if (!m_embisPromotionApplied.get(eLoopPromotion))
+				if (!m_ba_isPromotionApplied.get(eLoopPromotion))
 				{
-					m_embisPromotionApplied.set(eLoopPromotion, true);
+					m_ba_isPromotionApplied.set(true, eLoopPromotion);
 					processPromotion(eLoopPromotion, 1);
 				}
 			}
 			else
 			{
-				if (m_embisPromotionApplied.get(eLoopPromotion))
+				if (m_ba_isPromotionApplied.get(eLoopPromotion))
 				{
-					m_embisPromotionApplied.set(eLoopPromotion, false);
+					m_ba_isPromotionApplied.set(false, eLoopPromotion);
 					processPromotion(eLoopPromotion, -1);
 				}
 			}
@@ -13109,7 +13107,7 @@ void CvUnit::setPromotions(PromotionTypes ePromotion)
 		{
 			// try to release the array
 			// See top check with unit combat to see why it's good to release the array if possible. There is more to it than just memory usage.
-			m_embisPromotionApplied.releaseMemoryIfUnused();
+			m_ba_isPromotionApplied.isEmpty();
 		}
 	}
 

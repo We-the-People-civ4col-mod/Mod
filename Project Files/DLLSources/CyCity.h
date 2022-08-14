@@ -189,7 +189,7 @@ public:
 	void setCulture(int /*PlayerTypes*/ eIndex, int iNewValue, bool bPlots);
 	void changeCulture(int /*PlayerTypes*/ eIndex, int iChange, bool bPlots);
 
-	int getTotalYieldStored() const;
+	int getTotalYieldStored() const;									//VET NewCapacity - 1/1
 	int getYieldStored(int /*YieldTypes*/ eYield) const;
 	void setYieldStored(int /*YieldTypes*/ eYield, int iValue);
 	void changeYieldStored(int /*YieldTypes*/ eYield, int iChange);

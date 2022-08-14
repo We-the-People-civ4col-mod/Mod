@@ -788,7 +788,7 @@ void CyCity::changeCulture(int /*PlayerTypes*/ eIndex, int iChange, bool bPlots)
 		m_pCity->changeCulture((PlayerTypes)eIndex, iChange, bPlots);
 }
 
-int CyCity::getTotalYieldStored() const
+int CyCity::getTotalYieldStored() const							//VET NewCapacity - 1/1
 {
 	return m_pCity ? m_pCity->getTotalYieldStored() : -1;
 }		

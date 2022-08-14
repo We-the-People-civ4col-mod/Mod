@@ -334,9 +334,6 @@ def WorldBuilderHandleCityEditCultureCB( argsList ):
 def WorldBuilderHandleCityEditGoldCB( argsList ):
 	worldBuilderScreen.handleCityEditGoldCB(argsList)
 
-def WorldBuilderHandleCityOccupationTimerCB( argsList ):
-	worldBuilderScreen.handleCityOccupationTimerCB(argsList)
-
 def WorldBuilderHandleCityEditAddScriptCB( argsList ):
 	worldBuilderScreen.getCityScript()
 

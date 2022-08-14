@@ -1177,14 +1177,39 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 		int iTotalExcess = 0;
 		int iHighestPercentFull = 0;
 
-		const int iCoef = 100;
-		int iExcess = (iCityCapacity - getTotalYieldStored()) * iCoef;
-		if (iExcess < 1)
+//VET NewCapacity - begin 1/7
+		if (GC.getNEW_CAPACITY())
 		{
-			iExcess = iCoef / 2;
+			int iExcess;
+			const int iCoef = 100;
+			iExcess = (iCityCapacity - getTotalYieldStored()) * iCoef;
+			if (iExcess < 1)
+				{iExcess = iCoef / 2;}
+			iTotalExcess = (iCityCapacity * iCoef) / iExcess;
+			iHighestPercentFull = std::max(iHighestPercentFull, 100 * getTotalYieldStored() / iCityCapacity);
 		}
-		iTotalExcess = (iCityCapacity * iCoef) / iExcess;
-		iHighestPercentFull = std::max(iHighestPercentFull, 100 * getTotalYieldStored() / iCityCapacity);
+		else
+		{
+//VET NewCapacity - end 1/7
+			for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+			{
+				YieldTypes eLoopYield = (YieldTypes)i;
+
+				// ray, making special storage capacity rules for Yields XML configurable
+				if (!GC.getYieldInfo(eLoopYield).isIgnoredForStorageCapacity() && GC.getYieldInfo(eLoopYield).isCargo())
+				// if ((eLoopYield != YIELD_FOOD) && (eLoopYield != YIELD_LUMBER) && (eLoopYield != YIELD_STONE) && GC.getYieldInfo(eLoopYield).isCargo())
+				{
+					int iExcess = getYieldStored(eLoopYield) - iCityCapacity;
+					if (iExcess > 0)
+					{
+						iTotalExcess += iExcess;
+					}
+					iHighestPercentFull = std::max(iHighestPercentFull, 100 * getYieldStored(eLoopYield) / iCityCapacity);
+				}
+			}
+//VET NewCapacity - begin 2/7
+		}
+//VET NewCapacity - end 2/7
 		int iTempValue = kBuildingInfo.getYieldStorage();
 		
 		iValue += iTempValue / 3;
@@ -2400,10 +2425,11 @@ void CvCityAI::AI_doNativeTrade()
 	int iBestYieldValue = 0;
 	YieldTypes eBestYield = NO_YIELD;
 
+	
 	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
 		YieldTypes eYield = (YieldTypes)iI;
-
+		
 		// TAC - AI Native Hammer Bugfix - START
 		//if (GC.getYieldInfo(eYield).getNativeSellPrice() == -1)
 		if ((GC.getYieldInfo(eYield).getNativeSellPrice() == -1) && (eYield != YIELD_HAMMERS))
@@ -2454,11 +2480,16 @@ void CvCityAI::AI_doNativeTrade()
 	for (pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
 	{
 		if (pLoopCity != this)
-		{	
+		{
+		
 			int iValue = 10 * std::max(0, pLoopCity->AI_getRequiredYieldLevel(eBestYield) - pLoopCity->getYieldStored(eBestYield));
-			
-			iValue = std::max(iValue, pLoopCity->getMaxYieldCapacity() - pLoopCity->getTotalYieldStored());
-
+//VET NewCapacity - begin 3/7
+			//iValue = std::max(iValue, pLoopCity->getMaxYieldCapacity() - pLoopCity->getYieldStored(eBestYield));
+			if (GC.getNEW_CAPACITY())
+				{iValue = std::max(iValue, pLoopCity->getMaxYieldCapacity() - pLoopCity->getTotalYieldStored());}
+			else
+				{iValue = std::max(iValue, pLoopCity->getMaxYieldCapacity() - pLoopCity->getYieldStored(eBestYield));}
+//VET NewCapacity - end 3/7
 			if (eBestYield == YIELD_HORSES)
 			{
 				iValue *= 3 + pLoopCity->foodDifference();
@@ -4237,10 +4268,22 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 
 		if (eYieldConsumedType != NO_YIELD && eYieldConsumedType != YIELD_FOOD)
 		{
-			if (getTotalYieldStored() > getMaxYieldCapacity())
+			//VET NewCapacity - begin 4/7
+			if (GC.getNEW_CAPACITY())
 			{
-				iInputValue /= 5;
+				if (getTotalYieldStored() > getMaxYieldCapacity())
+				{
+					iInputValue /= 5;
+				}
 			}
+			else
+			{
+				if (getYieldStored(eYieldConsumedType) > getMaxYieldCapacity())
+				{
+					iInputValue /= 5;
+				}
+			}
+			//VET NewCapacity - end 4/7
 		}
 
 		if ((eYieldProducedType != YIELD_FOOD) && GC.getYieldInfo(eYieldProducedType).isCargo())
@@ -4256,7 +4299,18 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 				}
 
 				iNeededYield = std::min(iNeededYield, pv.iYieldOutput);
-				int iExtraValue = iNeededYield * (50 + 100 * (getMaxYieldCapacity() - getTotalYieldStored()) / getMaxYieldCapacity());
+				//VET NewCapacity - begin 5/7
+							//int iExtraValue = iNeededYield * (50 + 100 * (getMaxYieldCapacity() - getYieldStored(eYieldProducedType)) / getMaxYieldCapacity());
+				int iExtraValue;
+				if (GC.getNEW_CAPACITY())
+				{
+					iExtraValue = iNeededYield * (50 + 100 * (getMaxYieldCapacity() - getTotalYieldStored()) / getMaxYieldCapacity());
+				}
+				else
+				{
+					iExtraValue = iNeededYield * (50 + 100 * (getMaxYieldCapacity() - getYieldStored(eYieldProducedType)) / getMaxYieldCapacity());
+				}
+				//VET NewCapacity - end 5/7
 				iExtraValue *= AI_getYieldOutputWeight(eYieldProducedType);
 				iExtraValue /= 100;
 				iOutputValue += iExtraValue;
@@ -4266,7 +4320,18 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 			if ((pv.iNetYield + pv.iYieldOutput > 0) && GC.getYieldInfo(eYieldProducedType).isCargo())
 			{
 				int iSpareCapacity = std::max(0, getMaxYieldCapacity() - (getYieldStored(eYieldProducedType) + pv.iNetYield));
-				int iExcess = getTotalYieldStored() + (pv.iNetYield + pv.iYieldOutput) - getMaxYieldCapacity();
+				//VET NewCapacity - begin 6/7
+							//int iExcess = getYieldStored(eYieldProducedType) + (iNetYield + iYieldOutput) - getMaxYieldCapacity();
+				int iExcess;
+				if (GC.getNEW_CAPACITY())
+				{
+					iExcess = getTotalYieldStored() + (pv.iNetYield + pv.iYieldOutput) - getMaxYieldCapacity();
+				}
+				else
+				{
+					iExcess = getYieldStored(eYieldProducedType) + (pv.iNetYield + pv.iYieldOutput) - getMaxYieldCapacity();
+				}
+				//VET NewCapacity - end 6/7
 				int iLoss = 0;
 				if (iExcess > 0)
 				{
@@ -5334,8 +5399,10 @@ int CvCityAI::AI_getRequiredYieldLevel(YieldTypes eYield)
 {
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-
-	if (getTotalYieldStored() > getMaxYieldCapacity() / 2)
+//VET NewCapacity - begin 7/7
+	// R&R, ray, improvement
+	if (GC.getNEW_CAPACITY() && (getTotalYieldStored() > getMaxYieldCapacity() / 2) )
+	//if (GC.getNEW_CAPACITY())
 	{
 		int iCargoYields = 0;
 		for (int iYield = 1; iYield < NUM_YIELD_TYPES; iYield++)
@@ -5344,11 +5411,10 @@ int CvCityAI::AI_getRequiredYieldLevel(YieldTypes eYield)
 			{iCargoYields++;}
 		}
 		if (iCargoYields < 1)
-		{
-			iCargoYields = 1;
-		}
+			{iCargoYields = 1;}
 		return (getMaintainLevel(eYield) / iCargoYields);
 	}
+//VET NewCapacity - end 7/7
 	return getMaintainLevel(eYield);
 }
 
@@ -5428,7 +5494,14 @@ void CvCityAI::AI_updateRequiredYieldLevels()
 	int iPercent = 60;
 
 	// R&R, ray, fix for new storage capacity
-	aiLevels[YIELD_MUSKETS] = getMaxYieldCapacity() / 5 * iPercent / 100;
+	if (GC.getNEW_CAPACITY())
+	{
+		aiLevels[YIELD_MUSKETS] = getMaxYieldCapacity() / 5 * iPercent / 100;
+	}
+	else
+	{
+		aiLevels[YIELD_MUSKETS] = getMaxYieldCapacity() * iPercent / 100;
+	}
 
 	//for (int iPass = 0; iPass < 2; ++iPass)
 	{

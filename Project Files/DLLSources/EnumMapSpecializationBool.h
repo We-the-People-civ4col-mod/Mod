@@ -79,7 +79,6 @@ public:
 	void allocate();
 	bool isAllocated() const;
 	bool hasContent() const;
-	void releaseMemoryIfUnused();
 
 	bool get(IndexType eIndex) const;
 	void set(IndexType eIndex, bool bValue);
@@ -104,7 +103,6 @@ public:
 	bool isAllocated() const;
 	bool hasContent();
 	bool hasContent() const;
-	void releaseMemoryIfUnused();
 
 	bool get(IndexType eIndex) const;
 	void set(IndexType eIndex, bool bValue);
@@ -138,7 +136,6 @@ public:
 	bool isAllocated() const;
 	bool hasContent();
 	bool hasContent() const;
-	void releaseMemoryIfUnused();
 
 	bool get(IndexType eIndex) const;
 	void set(IndexType eIndex, bool bValue);
@@ -162,7 +159,7 @@ public:
 	int getNumTrueElements() const;
 protected:
 	EnumMapBase() : EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, STATIC, LENGTH_KNOWN_WHILE_COMPILING>() {}
-	BOOST_STATIC_ASSERT(DEFAULT == 0 || DEFAULT == 1); // bools can only be true or false
+	BOOST_STATIC_ASSERT(DEFAULT == 0 || DEFAULT == 1);
 };
 
 //
@@ -197,13 +194,6 @@ bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC
 		}
 	}
 	return false;
-}
-
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_STATIC, LENGTH_KNOWN_WHILE_COMPILING>::releaseMemoryIfUnused()
-{
-	// it's static. Nothing to release.
-	// needed purely because this function has to exist for all specialization cases
 }
 
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
@@ -313,12 +303,6 @@ bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMI
 		}
 	}
 	return false;
-}
-
-template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, LENGTH_KNOWN_WHILE_COMPILING>::releaseMemoryIfUnused()
-{
-	hasContent();
 }
 
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
@@ -452,12 +436,6 @@ bool EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMI
 		}
 	}
 	return false;
-}
-
-template<class IndexType, class T, int DEFAULT, class LengthType>
-void EnumMapBoolVariable<IndexType, T, DEFAULT, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_LENGTH_ALL_KNOWN>::releaseMemoryIfUnused()
-{
-	hasContent();
 }
 
 template<class IndexType, class T, int DEFAULT, class LengthType>

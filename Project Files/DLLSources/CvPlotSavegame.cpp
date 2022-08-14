@@ -231,7 +231,7 @@ void CvPlot::resetSavedData()
 	m_workingCity.reset();
 	m_workingCityOverride.reset();
 
-	m_em_bRevealed.reset();
+	m_pab_Revealed.reset();
 	m_aeRevealedImprovementRouteTypes.reset();
 }
 
@@ -307,7 +307,7 @@ void CvPlot::read(CvSavegameReader reader)
 		case Save_workingCity:             reader.Read(m_workingCity                ); break;
 		case Save_workingCityOverride:     reader.Read(m_workingCityOverride        ); break;
 
-		case Save_Revealed:                reader.Read(m_em_bRevealed               ); break;
+		case Save_Revealed:                reader.Read(m_pab_Revealed               ); break;
 
 		case Save_RevealedImprovementRouteSingle:
 		{
@@ -329,9 +329,9 @@ void CvPlot::read(CvSavegameReader reader)
 			// note that not being in the array shouldn't alter the memory at all
 			// it's either out of date (set in Save_RevealedImprovementRouteSingle) or no info (default value)
 			// writing something means overwriting what is stored using Save_RevealedImprovementRouteSingle.
-			EnumMap<TeamTypes, bool> eTeamArray;
-			const ImprovementTypes eImprovement = getImprovementType();
-			const RouteTypes eRoute = getRouteType();
+			TeamBoolArray eTeamArray;
+			ImprovementTypes eImprovement = getImprovementType();
+			RouteTypes eRoute = getRouteType();
 			reader.Read(eTeamArray);
 			for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 			{
@@ -451,18 +451,18 @@ void CvPlot::write(CvSavegameWriter writer)
 
 	writer.Write(Save_aiYield, m_em_iYield);
 
-	writer.Write(Save_Revealed, m_em_bRevealed);
+	writer.Write(Save_Revealed, m_pab_Revealed);
 
 	if (m_aeRevealedImprovementRouteTypes.isAllocated())
 	{
-		EnumMap<TeamTypes, bool> eTeamArray;
-		const ImprovementTypes ePlotImprovement = getImprovementType();
-		const RouteTypes ePlotRoute = getRouteType();
+		TeamBoolArray eTeamArray;
+		ImprovementTypes ePlotImprovement = getImprovementType();
+		RouteTypes ePlotRoute = getRouteType();
 
 		for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 		{
-			const ImprovementTypes eImprovement = m_aeRevealedImprovementRouteTypes.getImprovement(eTeam);
-			const RouteTypes eRoute = m_aeRevealedImprovementRouteTypes.getRoute(eTeam);
+			ImprovementTypes eImprovement = m_aeRevealedImprovementRouteTypes.getImprovement(eTeam);
+			RouteTypes eRoute = m_aeRevealedImprovementRouteTypes.getRoute(eTeam);
 
 			if (eImprovement != NO_IMPROVEMENT || eRoute != NO_ROUTE)
 			{

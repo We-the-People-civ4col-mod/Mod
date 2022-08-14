@@ -96,7 +96,7 @@ class CvTradeRoutesAdvisor:
 		self.CityList = []
 		(city, iter) = self.player.firstCity(false)
 		while (city):
-			if self.pTransport.generatePath(city.plot(), 0, false, None):
+			if self.pTransport.generatePath(city.plot(), 0, false, None, true):
 				self.CityList.append(city)
 			(city, iter) = self.player.nextCity(iter, false)
 		

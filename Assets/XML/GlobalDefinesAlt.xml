@@ -606,6 +606,10 @@
 		<iDefineIntVal>100</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>NEW_CAPACITY</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>CUSTOMHOUSE_STRATEGIC_RAW_SELL_THRESHOLD</DefineName>
 		<iDefineIntVal>300</iDefineIntVal>
 	</Define>
@@ -1286,8 +1290,6 @@
 	<Define>
 		<DefineName>FONT_SYMBOL_CUSTOM_OFFSET</DefineName>
 		<iDefineIntVal>8658</iDefineIntVal>
-	</Define>
-	<Define>	
 		<DefineName>CITY_STARVATION_DONATION_FOOD_RECEIVED</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
@@ -1298,9 +1300,5 @@
 	<Define>
 		<DefineName>CITY_STARVATION_NO_DONATION_OCCUPATION_TIMER</DefineName>
 		<iDefineIntVal>2</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>USE_CLASSIC_MOVEMENT_SYSTEM</DefineName>
-		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
 </Civ4Defines>

@@ -69,7 +69,7 @@ public:
 
 	void doAIImmigrant(int iIndex); // PatchMod: AI immigration boost START
 
-	//void redistributeCannonsAndMuskets(); // TAC - AI Economy - Ray - START
+	void redistributeCannonsAndMuskets(); // TAC - AI Economy - Ray - START
 
 	void redistributeWood(); // R&R, ray, redistribute cannons and muskets
 
@@ -530,7 +530,6 @@ public:
 
 	// city iteration
 	DllExport CvCity* firstCity(int *pIterIdx, bool bRev=false) const;
-	CvCity* firstCity() const;
 	DllExport CvCity* nextCity(int *pIterIdx, bool bRev=false) const;
 	DllExport int getNumCities() const;
 	DllExport CvCity* getCity(int iID) const;

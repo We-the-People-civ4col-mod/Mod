@@ -578,9 +578,9 @@ protected:
 	signed char m_seeThroughLevelCache;
 	signed char m_iPlotVisibilityCache;
 	signed char m_iUnitVisibilityBonusCache;
-	EnumMap<TeamTypes, short      > m_em_iVisibilityCount;
-	EnumMap<TeamTypes, PlayerTypes> m_em_eRevealedOwner;
-	EnumMap<TeamTypes, bool       > m_em_bRevealed;
+	EnumMap<TeamTypes  , short> m_em_iVisibilityCount;
+	EnumMap<TeamTypes  , PlayerTypes> m_em_eRevealedOwner;
+	TeamBoolArray m_pab_Revealed;
 	RevealedPlotDataArray m_aeRevealedImprovementRouteTypes;
 
 	char* m_szScriptData;

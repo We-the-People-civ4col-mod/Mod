@@ -668,7 +668,7 @@ void CvMapGenerator::addFeaturesOnLand()
 			{
 				if (pPlot->canHaveFeature((FeatureTypes)iJ))
 				{
-					if (GC.getGameINLINE().getMapRandNum(10000, "addFeaturesOnLand") < GC.getFeatureInfo((FeatureTypes)iJ).getAppearanceProbability())
+					if (GC.getGameINLINE().getMapRandNum(10000, "addFeaturesAtPlot") < GC.getFeatureInfo((FeatureTypes)iJ).getAppearanceProbability())
 					{
 						pPlot->setFeatureType((FeatureTypes)iJ);
 					}
@@ -679,38 +679,6 @@ void CvMapGenerator::addFeaturesOnLand()
 }
 //WTP, ray, Randomize Features Map Option - END
 
-void CvMapGenerator::addFeaturesOnWater()
-{
-	PROFILE_FUNC();
-
-	CvPlot* pPlot;
-	int iI, iJ;
-
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
-	{
-		pPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
-		FAssert(pPlot != NULL);
-		// only for Water Plots
-		if (pPlot->isWater())
-		{
-			const FeatureTypes eFeature = pPlot->getFeatureType();
-
-			if (eFeature != NO_FEATURE && GC.getFeatureInfo(eFeature).isImpassable())
-				continue;
-
-			for (iJ = 0; iJ < GC.getNumFeatureInfos(); iJ++)
-			{
-				if (pPlot->canHaveFeature((FeatureTypes)iJ))
-				{
-					if (GC.getGameINLINE().getMapRandNum(10000, "addFeaturesOnWater") < GC.getFeatureInfo((FeatureTypes)iJ).getAppearanceProbability())
-					{
-						pPlot->setFeatureType((FeatureTypes)iJ);
-					}
-				}
-			}
-		}
-	}
-}
 
 void CvMapGenerator::addBonuses()
 {

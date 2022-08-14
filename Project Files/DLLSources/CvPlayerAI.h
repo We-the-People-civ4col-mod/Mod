@@ -369,7 +369,7 @@ public:
 	void AI_updateNextBuyUnit(bool bPriceLimit = true);
 	// TAC - AI purchases military units - koma13 - END
 	void AI_updateNextBuyProfession();
-	//int AI_highestNextBuyValue();
+	int AI_highestNextBuyValue();
 	
 	EmotionTypes AI_strongestEmotion();
 	int AI_emotionWeight(EmotionTypes eEmotion);

@@ -209,12 +209,6 @@ public:
 	template<typename Ta, int DEFAULT>
 	void addTo(EnumMap<Ta, bool, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
 	template<typename Ta, class T, int DEFAULT>
-	bool addCache(EnumMap<Ta, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
-	template<typename class T, int DEFAULT>
-	bool addCache(EnumMap<BuildingTypes, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
-	template<typename class T, int DEFAULT>
-	bool addCache(EnumMap<UnitTypes, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
-	template<typename Ta, class T, int DEFAULT>
 	void copyTo(EnumMap<Ta, T, DEFAULT> & em) const;
 	template<typename Ta, int DEFAULT>
 	void copyTo(EnumMap<Ta, bool, DEFAULT> & em) const;
@@ -397,73 +391,6 @@ void InfoArray2Only<T0, T1>::addTo(EnumMap<Ta, bool, DEFAULT> & em, int iChange,
 			em.set(eIndex, (get1(i) * iChange) > 0);
 		}
 	}
-}
-
-template<typename T0, typename T1>
-template<typename Ta, class T, int DEFAULT>
-bool InfoArray2Only<T0, T1>::addCache(EnumMap<Ta, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
-{
-	const bool bTypeCheck = !boost::is_same<T, bool>::value;
-	BOOST_STATIC_ASSERT(bTypeCheck);
-	bool bChanged = false;
-	for (int i = 0; i < getLength(); ++i)
-	{
-		const T0 eIndex = get0(i);
-		if (em.isInRange(eIndex))
-		{
-			bool bBefore = get1(i) > 0;
-			em.add(eIndex, get1(i) * iChange);
-			bool bAfter = get1(i) > 0;
-			bChanged |= bBefore != bAfter;
-		}
-	}
-	return bChanged;
-}
-
-template<typename T0, typename T1>
-template<class T, int DEFAULT>
-bool InfoArray2Only<T0, T1>::addCache(EnumMap<BuildingTypes, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
-{
-	const bool bTypeCheck1 = !boost::is_same<T, bool>::value;
-	const bool bTypeCheck2 = boost::is_same<T0, BuildingClassTypes>::value;
-	BOOST_STATIC_ASSERT(bTypeCheck1);
-	BOOST_STATIC_ASSERT(bTypeCheck2);
-	bool bChanged = false;
-	for (int i = 0; i < getLength(); ++i)
-	{
-		const BuildingTypes eIndex = pCivInfo->getCivSpecificForClass<BuildingTypes, T0>(get0(i));
-		if (em.isInRange(eIndex))
-		{
-			bool bBefore = get1(i) > 0;
-			em.add(eIndex, get1(i) * iChange);
-			bool bAfter = get1(i) > 0;
-			bChanged |= bBefore != bAfter;
-		}
-	}
-	return bChanged;
-}
-
-template<typename T0, typename T1>
-template<class T, int DEFAULT>
-bool InfoArray2Only<T0, T1>::addCache(EnumMap<UnitTypes, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
-{
-	const bool bTypeCheck1 = !boost::is_same<T, bool>::value;
-	const bool bTypeCheck2 = boost::is_same<T0, UnitClassTypes>::value;
-	BOOST_STATIC_ASSERT(bTypeCheck1);
-	BOOST_STATIC_ASSERT(bTypeCheck2);
-	bool bChanged = false;
-	for (int i = 0; i < getLength(); ++i)
-	{
-		const UnitTypes eIndex = pCivInfo->getCivSpecificForClass<UnitTypes, T0>(get0(i));
-		if (em.isInRange(eIndex))
-		{
-			bool bBefore = get1(i) > 0;
-			em.add(eIndex, get1(i) * iChange);
-			bool bAfter = get1(i) > 0;
-			bChanged |= bBefore != bAfter;
-		}
-	}
-	return bChanged;
 }
 
 template<typename T0>
