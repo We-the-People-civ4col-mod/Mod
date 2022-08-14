@@ -1403,6 +1403,13 @@ void CvDLLWidgetData::parseCityNameHelp(CvWidgetDataStruct &widgetDataStruct, Cv
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_CITY_POPULATION", pHeadSelectedCity->getRealPopulation()));
 
+		//WTP, ray, Slave Hunter and Slave Master - START
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_CITY_SLAVE_REVOLT_REDUCTION_BONUS", pHeadSelectedCity->getSlaveRevoltReductionBonus()));
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_CITY_SLAVE_WORKER_PRODUCTION_BONUS", pHeadSelectedCity->getSlaveWorkerProductionBonus()));
+		//WTP, ray, Slave Hunter and Slave Master - END
+
 		CvWString szTempBuffer;
 		GAMETEXT.setTimeStr(szTempBuffer, pHeadSelectedCity->getGameTurnFounded(), false);
 		szBuffer.append(NEWLINE);

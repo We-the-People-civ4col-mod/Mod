@@ -220,6 +220,8 @@ public:
 	int getExtraDomesticBonusPercent();	
 	int getPillageChange() const;
 	int getAnimalGoldChange() const; //WTP, ray, Animal Promotions increase gold from Animals
+	int getSlaveRevoltReductionBonus() const; //WTP, ray, Slave Hunter and Slave Master
+	int getSlaveWorkerProductionBonus() const; //WTP, ray, Slave Hunter and Slave Master
 	int getUpgradeDiscount() const; 
 	int getExperiencePercent() const;
 	int getImmobileTimer() const;

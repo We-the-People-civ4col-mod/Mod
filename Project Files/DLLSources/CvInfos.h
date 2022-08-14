@@ -250,6 +250,8 @@ public:
 	void setCommandType(int iNewType);
 	int getPillageChange() const;
 	int getAnimalGoldChange() const; //WTP, ray, Animal Promotions increase gold from Animals
+	int getSlaveRevoltReductionBonus() const; //WTP, ray, Slave Hunter and Slave Master
+	int getSlaveWorkerProductionBonus() const; //WTP, ray, Slave Hunter and Slave Master
 	int getUpgradeDiscount() const;
 	int getExperiencePercent() const;
 
@@ -307,7 +309,9 @@ protected:
 	int m_iDomesticBonusPercent;	
 	int m_iCommandType;
 	int m_iPillageChange;
-	int m_iAnimalGoldChange; //WTP, ray, Animal Promotions increase gold from Animals 
+	int m_iAnimalGoldChange; //WTP, ray, Animal Promotions increase gold from Animals
+	int m_iSlaveRevoltReductionBonus; //WTP, ray, Slave Hunter and Slave Master
+	int m_iSlaveWorkerProductionBonus; //WTP, ray, Slave Hunter and Slave Master
 	int m_iUpgradeDiscount;
 	int m_iExperiencePercent;
 	bool m_bHideFromPedia;

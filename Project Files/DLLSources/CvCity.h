@@ -908,6 +908,11 @@ public:
 
 	bool isEuropeAccessable() const; // WTP, ray, fix for SailTo - for the City
 
+	//WTP, ray, Slave Hunter and Slave Master
+	int getSlaveRevoltReductionBonus() const;
+	int getSlaveWorkerProductionBonus() const;
+	//WTP, ray, Slave Hunter and Slave Master
+
 protected:
 	// traderoute popup arrays
 	EnumMap<YieldTypes, bool> m_em_bTradeImports;

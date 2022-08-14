@@ -11326,6 +11326,38 @@ void CvUnit::changeAnimalGoldChange(int iChange)
 }
 //WTP, ray, Animal Promotions increase gold from Animals - END
 
+//WTP, ray, Slave Hunter and Slave Master - START
+int CvUnit::getSlaveRevoltReductionBonus() const
+{
+	return m_iSlaveRevoltReductionBonus;
+}
+
+void CvUnit::changeSlaveRevoltReductionBonus(int iChange)
+{
+	if (iChange != 0)
+	{
+		m_iSlaveRevoltReductionBonus += iChange;
+
+		setInfoBarDirty(true);
+	}
+}
+
+int CvUnit::getSlaveWorkerProductionBonus() const
+{
+	return m_iSlaveWorkerProductionBonus;
+}
+
+void CvUnit::changeSlaveWorkerProductionBonus(int iChange)
+{
+	if (iChange != 0)
+	{
+		m_iSlaveWorkerProductionBonus += iChange;
+
+		setInfoBarDirty(true);
+	}
+}
+//WTP, ray, Slave Hunter and Slave Master - END
+
 
 int CvUnit::getUpgradeDiscount() const
 {
@@ -12939,6 +12971,8 @@ void CvUnit::processPromotion(PromotionTypes ePromotion, int iChange)
 	changeExtraDomesticBonusPercent(GC.getPromotionInfo(ePromotion).getDomesticBonusPercent() * iChange);	
 	changePillageChange(GC.getPromotionInfo(ePromotion).getPillageChange() * iChange);
 	changeAnimalGoldChange(GC.getPromotionInfo(ePromotion).getAnimalGoldChange() * iChange); //WTP, ray, Animal Promotions increase gold from Animals
+	changeSlaveRevoltReductionBonus(GC.getPromotionInfo(ePromotion).getSlaveRevoltReductionBonus() * iChange); //WTP, ray, Slave Hunter and Slave Master
+	changeSlaveWorkerProductionBonus(GC.getPromotionInfo(ePromotion).getSlaveWorkerProductionBonus() * iChange); //WTP, ray, Slave Hunter and Slave Master
 	changeUpgradeDiscount(GC.getPromotionInfo(ePromotion).getUpgradeDiscount() * iChange);
 	changeExperiencePercent(GC.getPromotionInfo(ePromotion).getExperiencePercent() * iChange);
 	changeCargoSpace(GC.getPromotionInfo(ePromotion).getCargoChange() * iChange);
@@ -13005,7 +13039,11 @@ void CvUnit::resetPromotions()
 	m_iExtraHillsDefensePercent = 0;
 	m_iExtraDomesticBonusPercent = 0;
 	m_iPillageChange = 0;
-	m_iAnimalGoldChange = 0; //WTP, ray, Animal Promotions increase gold from Animals 
+
+	m_iAnimalGoldChange = 0; //WTP, ray, Animal Promotions increase gold from Animals
+	m_iSlaveRevoltReductionBonus = 0; //WTP, ray, Slave Hunter and Slave Master
+	m_iSlaveWorkerProductionBonus = 0; //WTP, ray, Slave Hunter and Slave Master
+
 	m_iUpgradeDiscount = 0;
 	m_iExperiencePercent = 0;
 	m_iCargoCapacity = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCargoSpace() : 0;

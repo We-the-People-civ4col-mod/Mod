@@ -866,6 +866,11 @@ public:
 	int getTIMER_FESTIVITIES_OR_UNRESTS();
 	// WTP, ray, Happiness - END
 
+	//WTP, ray, Slave Hunter and Slave Master - START
+	int getMAX_SLAVE_REVOLT_REDUCTION_BONUS_PER_CITY();
+	int getMAX_SLAVE_WORKER_PRODUCTION_BONUS_PER_CITY();
+	//WTP, ray, Slave Hunter and Slave Master - END
+
     int getMAX_TREASURE_AMOUNT(); // WTP, merge Treasures, of Raubwuerger - START
 	int getTRADE_POST_GOLD_PER_NATIVE(); // WTP, ray, Native Trade Posts - START
 
@@ -1430,6 +1435,11 @@ protected:
 	int m_FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS;
 	int m_TIMER_FESTIVITIES_OR_UNRESTS;
 	// WTP, ray, Happiness - END
+
+	//WTP, ray, Slave Hunter and Slave Master - START
+	int m_MAX_SLAVE_REVOLT_REDUCTION_BONUS_PER_CITY;
+	int m_MAX_SLAVE_WORKER_PRODUCTION_BONUS_PER_CITY;
+	//WTP, ray, Slave Hunter and Slave Master - END
 
 	/// GameFont XML control - start - Nightinggale
 	int  m_iGameFontCustomSymbolID;
@@ -2462,6 +2472,18 @@ inline int CvGlobals::getTIMER_FESTIVITIES_OR_UNRESTS()
 	return m_TIMER_FESTIVITIES_OR_UNRESTS;
 }
 // WTP, ray, Happiness - END
+
+//WTP, ray, Slave Hunter and Slave Master - START
+inline int CvGlobals::getMAX_SLAVE_REVOLT_REDUCTION_BONUS_PER_CITY()
+{
+	return m_MAX_SLAVE_REVOLT_REDUCTION_BONUS_PER_CITY;
+}
+
+inline int CvGlobals::getMAX_SLAVE_WORKER_PRODUCTION_BONUS_PER_CITY()
+{
+	return m_MAX_SLAVE_WORKER_PRODUCTION_BONUS_PER_CITY;
+}
+//WTP, ray, Slave Hunter and Slave Master - END
 
 // WTP, merge Treasures, of Raubwuerger - START
 inline int CvGlobals::getMAX_TREASURE_AMOUNT()

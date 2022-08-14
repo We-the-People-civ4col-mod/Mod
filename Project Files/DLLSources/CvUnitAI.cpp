@@ -7773,6 +7773,24 @@ int CvUnitAI::AI_promotionValue(PromotionTypes ePromotion)
 	}
 	//WTP, ray, Animal Promotions increase gold from Animals - END
 
+	//WTP, ray, Slave Hunter and Slave Master - START
+	if (kPromotion.getSlaveRevoltReductionBonus() != 0)
+	{
+		if (eUnitAI == UNITAI_DEFENSIVE)
+		{
+			iValue += kPromotion.getSlaveRevoltReductionBonus()  / 4;
+		}
+	}
+
+	if (kPromotion.getSlaveWorkerProductionBonus() != 0)
+	{
+		if (eUnitAI == UNITAI_DEFENSIVE)
+		{
+			iValue += kPromotion.getSlaveWorkerProductionBonus()  / 4;
+		}
+	}
+	//WTP, ray, Slave Hunter and Slave Masters - END
+
 	if (kPromotion.getExperiencePercent() != 0)
 	{
 		if (eUnitAI == UNITAI_OFFENSIVE || eUnitAI == UNITAI_DEFENSIVE)

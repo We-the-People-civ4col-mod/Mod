@@ -822,6 +822,19 @@ int CyUnit::getAnimalGoldChange() const
 	return m_pUnit ? m_pUnit->getAnimalGoldChange() : -1;
 }
 //WTP, ray, Animal Promotions increase gold from Animals - END
+
+//WTP, ray, Slave Hunter and Slave Master - START
+int CyUnit::getSlaveRevoltReductionBonus() const
+{
+	return m_pUnit ? m_pUnit->getSlaveRevoltReductionBonus() : -1;
+}
+
+int CyUnit::getSlaveWorkerProductionBonus() const
+{
+	return m_pUnit ? m_pUnit->getSlaveWorkerProductionBonus() : -1;
+}
+//WTP, ray, Slave Hunter and Slave Master - END
+
 int CyUnit::getUpgradeDiscount() const
 {
 	return m_pUnit ? m_pUnit->getUpgradeDiscount() : -1;

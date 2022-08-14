@@ -3055,7 +3055,8 @@ int CvCity::getProfessionOutput(ProfessionTypes eProfession, const CvUnit* pUnit
 	int iExtra = 0;
 	if (pUnit != NULL)
 	{
-		iExtra += GC.getUnitInfo(pUnit->getUnitType()).getYieldChange(eYieldProduced);
+		CvUnitInfo& kUnit = GC.getUnitInfo(pUnit->getUnitType());
+		iExtra += kUnit.getYieldChange(eYieldProduced);
 	}
 
 	int iProfessionOutput = 0;
@@ -4171,7 +4172,35 @@ int CvCity::getBaseRawYieldProduced(YieldTypes eYieldType) const
 		{
 			if(isUnitWorkingPlot(i))
 			{
-				iPlotYieldProduction += pPlot->getYield(eYieldType);
+				//WTP, ray, Slave Hunter and Slave Master - START
+				//iPlotYieldProduction += pPlot->getYield(eYieldType);
+				if (isNative())
+				{
+					// normal previous logic
+					iPlotYieldProduction += pPlot->getYield(eYieldType);
+				}
+				
+				else
+				{
+					int iSlaveWorkerProductionBonus = getSlaveWorkerProductionBonus();
+					if (iSlaveWorkerProductionBonus > 0)
+					{
+						int iProductionModifier = 100;
+						CvUnit* pUnit = getUnitWorkingPlot(pPlot);
+						if (pUnit != NULL && pUnit->getUnitInfo().LbD_canEscape())
+						{
+							iProductionModifier += iSlaveWorkerProductionBonus;
+						}
+						iPlotYieldProduction += pPlot->getYield(eYieldType) * iProductionModifier / 100;
+						//WTP, ray, Slave Hunter and Slave Master - END
+					}
+					else
+					{
+						// normal previous logic
+						iPlotYieldProduction += pPlot->getYield(eYieldType);
+					}
+				}			
+				//WTP, ray, Slave Hunter and Slave Master - END
 			}
 		}
 	}
@@ -4859,7 +4888,6 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 		for (int iUnitIndex = 0; iUnitIndex < (int)m_aPopulationUnits.size(); ++iUnitIndex)
 		{
 			CvUnit* pUnit = m_aPopulationUnits[iUnitIndex];
-			
 			if (pUnit->getProfession() != NO_PROFESSION)
 			{
 				CvProfessionInfo& kProfession = GC.getProfessionInfo(pUnit->getProfession());
@@ -4887,6 +4915,7 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 			for (int iUnitIndex = 0; iUnitIndex < (int)m_aPopulationUnits.size(); ++iUnitIndex)
 			{
 				CvUnit* pUnit = m_aPopulationUnits[iUnitIndex];
+
 				if (aiYieldsAvailable[iUnitIndex] > 0)
 				{
 					CvProfessionInfo& kProfession = GC.getProfessionInfo(pUnit->getProfession());
@@ -4895,6 +4924,7 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 					{
 						YieldTypes eYieldConsumed = (YieldTypes) kProfession.getYieldsConsumed(0);
 						YieldTypes eYieldConsumed2 = (YieldTypes) kProfession.getYieldsConsumed(1);
+
 						int iYieldStored = aiYields[eYieldConsumed];
 						int iYieldStored2 = aiYields[eYieldConsumed2];
 						if (iYieldStored < 0 || iYieldStored2 < 0)
@@ -11811,6 +11841,11 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 	// TODO: cases criminal or servant
 	int calculatedChance = (base * mod);
 
+	//WTP, ray, Slave Hunter and Slave Master - START
+	int iSlaveRevoltReductionBonus = getSlaveRevoltReductionBonus();
+	calculatedChance = calculatedChance * (100 - iSlaveRevoltReductionBonus) / 100;
+	//WTP, ray, Slave Hunter and Slave Master - END
+
 	// WTP, ray, adding modifiers for other LBD features - START
 	int iLearningByDoingRunawayModifier = 0;
 	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
@@ -11898,6 +11933,11 @@ bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_sl
 
 	// get chance and random value
 	int calculatedChance = (base * mod);
+
+	//WTP, ray, Slave Hunter and Slave Master - START
+	int iSlaveRevoltReductionBonus = getSlaveRevoltReductionBonus();
+	calculatedChance = calculatedChance * (100 - iSlaveRevoltReductionBonus) / 100;
+	//WTP, ray, Slave Hunter and Slave Master - END
 
 	// WTP, ray, adding modifiers for other LBD features - START
 	int iLearningByDoingRevoltModifier = 0;
@@ -12739,6 +12779,73 @@ void CvCity::doEntertainmentBuildings()
 	}
 }
 // R&R, ray, Entertainment Buildings - END
+
+//WTP, ray, Slave Hunter and Slave Master - START
+
+// reduced Revolting of slave workers
+int CvCity::getSlaveRevoltReductionBonus() const
+{
+	if (isNative())
+	{
+		return 0;
+	}
+
+	int iSlaveRevoltReductionBonus = 0;
+	int iMaxSlaveRevoltReductionBonusPerCity = GC.getMAX_SLAVE_REVOLT_REDUCTION_BONUS_PER_CITY();
+
+	std::vector<CvUnit*> aUnits;
+	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
+	while (pUnitNode)
+	{
+		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+		if (pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+		{
+			iSlaveRevoltReductionBonus += pLoopUnit->getSlaveRevoltReductionBonus();
+		}
+	}
+	
+	if (iSlaveRevoltReductionBonus > iMaxSlaveRevoltReductionBonusPerCity)
+	{
+		iSlaveRevoltReductionBonus = iMaxSlaveRevoltReductionBonusPerCity;
+	}
+
+	return iSlaveRevoltReductionBonus;
+}
+
+// increased Production of Slave workers
+int CvCity::getSlaveWorkerProductionBonus() const
+{
+	if (isNative())
+	{
+		return 0;
+	}
+
+	int iSlaveWorkerProductionBonus = 0;
+	int iMaxSlaveWorkerProductionBonusPerCity = GC.getMAX_SLAVE_WORKER_PRODUCTION_BONUS_PER_CITY(); 
+	
+	std::vector<CvUnit*> aUnits;
+	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
+	while (pUnitNode)
+	{
+		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+		if (pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+		{
+			iSlaveWorkerProductionBonus += pLoopUnit->getSlaveWorkerProductionBonus();
+		}
+	}
+	
+	if (iSlaveWorkerProductionBonus > iMaxSlaveWorkerProductionBonusPerCity)
+	{
+		iSlaveWorkerProductionBonus = iMaxSlaveWorkerProductionBonusPerCity;
+	}
+
+	return iSlaveWorkerProductionBonus;
+}
+//WTP, ray, Slave Hunter and Slave Master - END
 
 
 // WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START

@@ -47802,66 +47802,8 @@
             <TerrainDefenses/>
             <FeatureAttacks/>
             <FeatureDefenses/>
-            <UnitClassAttackMods>
-                <UnitClassAttackMod>
-                    <UnitClassType>UNITCLASS_CRIMINAL</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassAttackMod>
-                <UnitClassAttackMod>
-                    <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassAttackMod>
-                <UnitClassAttackMod>
-                    <UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassAttackMod>
-                <UnitClassAttackMod>
-                    <UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassAttackMod>
-                <UnitClassAttackMod>
-                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassAttackMod>
-                <UnitClassAttackMod>
-                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassAttackMod>
-                <UnitClassAttackMod>
-                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassAttackMod>
-            </UnitClassAttackMods>
-            <UnitClassDefenseMods>
-                <UnitClassDefenseMod>
-                    <UnitClassType>UNITCLASS_CRIMINAL</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassDefenseMod>
-                <UnitClassDefenseMod>
-                    <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassDefenseMod>
-                <UnitClassDefenseMod>
-                    <UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassDefenseMod>
-                <UnitClassDefenseMod>
-                    <UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassDefenseMod>
-                <UnitClassDefenseMod>
-                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassDefenseMod>
-                <UnitClassDefenseMod>
-                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassDefenseMod>
-                <UnitClassDefenseMod>
-                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassDefenseMod>
-            </UnitClassDefenseMods>
+            <UnitClassAttackMods/>
+            <UnitClassDefenseMods/>
             <UnitCombatMods>
                 <UnitCombatMod>
                     <UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
@@ -47951,7 +47893,20 @@
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
             <iHotKeyPriority>0</iHotKeyPriority>
-            <FreePromotions/>
+            <FreePromotions>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_VETERAN1</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_SLAVE_HUNTER_1</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_SLAVE_HUNTER_2</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+            </FreePromotions>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
         </UnitInfo>
@@ -48048,66 +48003,8 @@
             <TerrainDefenses/>
             <FeatureAttacks/>
             <FeatureDefenses/>
-            <UnitClassAttackMods>
-                <UnitClassAttackMod>
-                    <UnitClassType>UNITCLASS_CRIMINAL</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassAttackMod>
-                <UnitClassAttackMod>
-                    <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassAttackMod>
-                <UnitClassAttackMod>
-                    <UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassAttackMod>
-                <UnitClassAttackMod>
-                    <UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassAttackMod>
-                <UnitClassAttackMod>
-                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassAttackMod>
-                <UnitClassAttackMod>
-                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassAttackMod>
-                <UnitClassAttackMod>
-                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassAttackMod>
-            </UnitClassAttackMods>
-            <UnitClassDefenseMods>
-                <UnitClassDefenseMod>
-                    <UnitClassType>UNITCLASS_CRIMINAL</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassDefenseMod>
-                <UnitClassDefenseMod>
-                    <UnitClassType>UNITCLASS_INDENTURED_SERVANT</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassDefenseMod>
-                <UnitClassDefenseMod>
-                    <UnitClassType>UNITCLASS_NATIVE_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassDefenseMod>
-                <UnitClassDefenseMod>
-                    <UnitClassType>UNITCLASS_AFRICAN_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassDefenseMod>
-                <UnitClassDefenseMod>
-                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassDefenseMod>
-                <UnitClassDefenseMod>
-                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassDefenseMod>
-                <UnitClassDefenseMod>
-                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
-                    <iUnitClassMod>50</iUnitClassMod>
-                </UnitClassDefenseMod>
-            </UnitClassDefenseMods>
+            <UnitClassAttackMods/>
+            <UnitClassDefenseMods/>
             <UnitCombatMods>
                 <UnitCombatMod>
                     <UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
@@ -48197,7 +48094,20 @@
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
             <iHotKeyPriority>0</iHotKeyPriority>
-            <FreePromotions/>
+            <FreePromotions>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_VETERAN1</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_SLAVE_MASTER_1</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_SLAVE_MASTER_2</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+            </FreePromotions>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
         </UnitInfo>

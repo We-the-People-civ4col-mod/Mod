@@ -3078,6 +3078,16 @@
         <Spanish>Población: %d1</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_CITY_SLAVE_REVOLT_REDUCTION_BONUS</Tag>
+        <English>Reduction of Slave Revolts : [COLOR_HIGHLIGHT_TEXT]%d1%%[COLOR_REVERT]</English>
+        <German>Reduktion von Sklavenaufständen : [COLOR_HIGHLIGHT_TEXT]%d1%%[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_SLAVE_WORKER_PRODUCTION_BONUS</Tag>
+        <English>Slave Production Bonus : [COLOR_HIGHLIGHT_TEXT]%d1%%[COLOR_REVERT]</English>
+        <German>Produktionsbonus für Sklaven : [COLOR_HIGHLIGHT_TEXT]%d1%%[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CHANGE_NAME_CITY</Tag>
         <English>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT][NEWLINE]to change the name of the colony</English>
         <French>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Cliquez &gt;[COLOR_REVERT][NEWLINE]pour changer le nom</French>

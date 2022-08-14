@@ -4930,8 +4930,21 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 		szBuffer.append(pcNewline);
 		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_ANIMAL_GOLD_CHANGE_TEXT", kPromotion.getAnimalGoldChange()));
 	}
-
 	//WTP, ray, Animal Promotions increase gold from Animals - END
+
+	//WTP, ray, Slave Hunter and Slave Master - START
+	if (kPromotion.getSlaveRevoltReductionBonus() != 0)
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_SLAVE_REVOLT_REDUCTION_BONUS_TEXT", kPromotion.getSlaveRevoltReductionBonus()));
+	}
+
+	if (kPromotion.getSlaveWorkerProductionBonus() != 0)
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_SLAVE_WORKER_PRODUCTION_BONUS_TEXT", kPromotion.getSlaveWorkerProductionBonus()));
+	}
+	//WTP, ray, Slave Hunter and Slave Master - END
 
 	if (kPromotion.getUpgradeDiscount() != 0)
 	{
@@ -5902,6 +5915,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 		int iModifier = GC.getUnitInfo(eUnit).getYieldModifier(eYield);
 		if (iModifier != 0)
 		{
+			iModifier = iModifier + pCity->getSlaveWorkerProductionBonus();
 			mapModifiers[iModifier] += CvWString::format(L"%c", GC.getYieldInfo(eYield).getChar());
 		}
 
@@ -9113,6 +9127,7 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 		// R&R, ray, adjustment to fix display in help
 		YieldTypes eProfessionMainYield = (YieldTypes) kProfession.getYieldsProduced(0);
 		// R&R, ray , MYCP partially based on code of Aymerick - START
+
 		for (int i = 0; i < kProfession.getNumYieldsProduced(); i++)
 		{
 			YieldTypes eProfessionYield = (YieldTypes) kProfession.getYieldsProduced(i);
@@ -9137,10 +9152,33 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 				{
 					iYieldAmount = kCity.getProfessionOutput(eProfession, &kUnit);
 				}
+
+				int iSlaveWorkerProductionBonus = kCity.getSlaveWorkerProductionBonus(); //WTP, ray, Slave Hunter and Slave Master
+				//WTP, ray, Slave Hunter and Slave Master - START
+				if (kUnit.getUnitInfo().LbD_canEscape() && iSlaveWorkerProductionBonus > 0)
+				{
+					int iYieldAmountWithModifier =  kCity.getPlotWorkedByUnit(&kUnit)->calculatePotentialYield(eProfessionYield, &kUnit, false);
+					int iYieldAmountWithoutModifier = iYieldAmountWithModifier * 100 / (100 + iSlaveWorkerProductionBonus);
+
+					//we have to correct rounding issues here
+					while ((iYieldAmountWithoutModifier * (100 + iSlaveWorkerProductionBonus) / 100) < iYieldAmountWithModifier)
+					{
+						iYieldAmountWithoutModifier = iYieldAmountWithoutModifier + 1;
+					}
+
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_SLAVE_PRODUCTION_WITHOUT_MODIFIER_CITIZENHELP",  GC.getYieldInfo(eProfessionYield).getTextKeyWide(), iYieldAmountWithoutModifier, iProfessionYieldChar));
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_SLAVE_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP", iSlaveWorkerProductionBonus));
+					szString.append(L"\n=======================\n");
+				}
+				//WTP, ray, Slave Hunter and Slave Master - END
+
 				szString.append(NEWLINE);
 				szString.append(gDLL->getText("TXT_KEY_MISC_HELP_BASE_CITIZEN_YIELD", iYieldAmount, iProfessionYieldChar, kUnit.getNameKey()));
 				int iModifier = setCityYieldModifierString(szString, eProfessionYield, kCity);
-				int iTotalYieldTimes100 = iModifier * iYieldAmount;
+
+				int iTotalYieldTimes100 = (iModifier) * iYieldAmount;
 				if (iTotalYieldTimes100 > 0)
 				{
 					szString.append(SEPARATOR);

@@ -1756,4 +1756,34 @@
         <Italian>Town Defense</Italian>
         <Spanish>Town Defense</Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SLAVE_HUNTER_1</Tag>
+        <English>Slave Hunter I</English>
+        <German>Sklavenjäger I</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SLAVE_HUNTER_2</Tag>
+        <English>Slave Hunter II</English>
+        <German>Sklavenjäger II</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SLAVE_HUNTER_3</Tag>
+        <English>Slave Hunter III</English>
+        <German>Sklavenjäger III</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SLAVE_MASTER_1</Tag>
+        <English>Slave Master I</English>
+        <German>Sklavenmeister I</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SLAVE_MASTER_2</Tag>
+        <English>Slave Master II</English>
+        <German>Sklavenmeister II</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SLAVE_MASTER_3</Tag>
+        <English>Slave Master III</English>
+        <German>Sklavenmeister III</German>
+    </TEXT>
 </Civ4GameText>

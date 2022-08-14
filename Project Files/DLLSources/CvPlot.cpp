@@ -6919,6 +6919,15 @@ int CvPlot::calculatePotentialYield(YieldTypes eYield, PlayerTypes ePlayer, Impr
 	if (eUnit != NO_UNIT)
 	{
 		iModifier += GC.getUnitInfo(eUnit).getYieldModifier(eYield);
+		//WTP, ray, Slave Hunter and Slave Master - START
+		if (pWorkingCity != NULL && !pWorkingCity->isNative())
+		{
+			if (GC.getUnitInfo(eUnit).LbD_canEscape() && pWorkingCity->getSlaveWorkerProductionBonus() > 0)
+			{
+				iModifier += pWorkingCity->getSlaveWorkerProductionBonus();
+			}
+		}
+		//WTP, ray, Slave Hunter and Slave Master - END
 	}
 
 	return std::max(0, (iYield * iModifier) / 100);
@@ -7006,9 +7015,11 @@ int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 	// R&R, ray, small correction for balancing
 	bool bSecondPlotYieldProduced = false;
 	int iNewBalancedAmountForSecondPlotYield = 0;
+	int iSlaveWorkerProductionBonus = 0;
 	if (pWorkingCity != NULL)
 	{
 		pUnit = pWorkingCity->getUnitWorkingPlot(this);
+
 		// R&R, ray , MYCP partially based on code of Aymerick - START
 		bool bYieldProduced = false;
 		if ((pUnit != NULL) && !bDisplay)

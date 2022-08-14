@@ -528,6 +528,10 @@ public:
 	void changePillageChange(int iChange);
 	int getAnimalGoldChange() const; //WTP, ray, Animal Promotions increase gold from Animals
 	void changeAnimalGoldChange(int iChange); //WTP, ray, Animal Promotions increase gold from Animals
+	int getSlaveRevoltReductionBonus() const; //WTP, ray, Slave Hunter and Slave Master
+	void changeSlaveRevoltReductionBonus(int iChange); //WTP, ray, Slave Hunter and Slave Master
+	int getSlaveWorkerProductionBonus() const; //WTP, ray, Slave Hunter and Slave Master
+	void changeSlaveWorkerProductionBonus(int iChange); //WTP, ray, Slave Hunter and Slave Master
 	int getUpgradeDiscount() const;
 	void changeUpgradeDiscount(int iChange);
 	int getExperiencePercent() const;
@@ -838,6 +842,8 @@ protected:
 	int m_iExtraDomesticBonusPercent;	
 	int m_iPillageChange;
 	int m_iAnimalGoldChange; //WTP, ray, Animal Promotions increase gold from Animals
+	int m_iSlaveRevoltReductionBonus; //WTP, ray, Slave Hunter and Slave Master
+	int m_iSlaveWorkerProductionBonus; //WTP, ray, Slave Hunter and Slave Master
 	int m_iUpgradeDiscount;
 	int m_iExperiencePercent;
 	int m_iBaseCombat;

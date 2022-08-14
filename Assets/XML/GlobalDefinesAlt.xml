@@ -1303,4 +1303,12 @@
 		<DefineName>CITY_DEFENSE_HILL_BONUS</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>MAX_SLAVE_REVOLT_REDUCTION_BONUS_PER_CITY</DefineName>
+		<iDefineIntVal>100</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MAX_SLAVE_WORKER_PRODUCTION_BONUS_PER_CITY</DefineName>
+		<iDefineIntVal>100</iDefineIntVal>
+	</Define>
 </Civ4Defines>
