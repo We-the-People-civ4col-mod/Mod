@@ -17477,5 +17477,39 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_MESTIZZO</Type>
+            <Button>Art/interface/buttons/New_Unit_Buttons/Mestizo_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Mestizo_Europe.dds</FullLengthIcon>
+            <fScale>0.55</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/Mestizzo/worker.nif</NIF>
+            <KFM>Art/Units/Settler/worker/worker.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+		<UnitArtInfo>
+            <Type>ART_DEF_UNIT_MULATTO</Type>
+            <Button>Art/interface/buttons/New_Unit_Buttons/Mulatto_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Mulatto_Europe.dds</FullLengthIcon>
+            <fScale>0.55</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/Mulatto/worker.nif</NIF>
+            <KFM>Art/Units/Settler/worker/worker.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
     </UnitArtInfos>
 </Civ4ArtDefines>

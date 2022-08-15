@@ -817,4 +817,62 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+	<!-- MESTIZZO -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_MESTIZZO</Tag>
+        <English>Mestizzo</English>
+        <German>
+            <Text>Mestizzo</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MESTIZZO</Tag>
+        <English>Mestizzo</English>
+        <German>
+            <Text>Mestizzo</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_MESTIZZO_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_MESTIZZO_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- MULATTO -->
+	<TEXT>
+        <Tag>TXT_KEY_UNITCLASS_MULATTO</Tag>
+        <English>Mulatto</English>
+        <German>
+            <Text>Mulatto</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MULATTO</Tag>
+        <English>Mulatto</English>
+        <German>
+            <Text>Mulatto</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_MULATTO_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_UNIT_MULATTO_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>

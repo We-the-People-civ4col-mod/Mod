@@ -17,6 +17,16 @@
             <DefaultUnit>UNIT_INDENTURED_SERVANT</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_MESTIZZO</Type>
+            <Description>TXT_KEY_UNITCLASS_MESTIZZO</Description>
+            <DefaultUnit>UNIT_MESTIZZO</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_MULATTO</Type>
+            <Description>TXT_KEY_UNITCLASS_MULATTO</Description>
+            <DefaultUnit>UNIT_MULATTO</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_COLONIST</Type>
             <Description>TXT_KEY_UNITCLASS_COLONIST</Description>
             <DefaultUnit>UNIT_COLONIST</DefaultUnit>
