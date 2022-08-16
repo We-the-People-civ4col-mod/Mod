@@ -1177,7 +1177,7 @@
             <fScale>1.0</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Shrimp/shrimp.nif</NIF>
-            <KFM/>
+            <KFM>Art/Terrain/Resources/Crab/Crab.kfm</KFM>
             <Button>Art/Interface/Buttons/Shrimp.dds</Button>
             <FontButtonIndex>10</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
