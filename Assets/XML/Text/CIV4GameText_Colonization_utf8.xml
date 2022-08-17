@@ -2122,6 +2122,11 @@
         <German>[ICON_BULLET]%d1%% höhere Chance besiegte Schiffe zu kapern</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_GIVES_PRODUCTION_WHEN_USED</Tag>
+        <English>[ICON_BULLET]Gives %d1 [COLOR_CYAN]production[COLOR_REVERT] to a city when used</English>
+        <German>[ICON_BULLET]Gibt einer Stadt %d1 [COLOR_CYAN]Produktion[COLOR_REVERT], wenn verwendet</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILD_CANNOT_AFFORD</Tag>
         <English>[COLOR_WARNING_TEXT]Requires %d1%F2_yield[COLOR_REVERT]</English>
         <French>[COLOR_WARNING_TEXT]Requiert %d1%F2_yield[COLOR_REVERT]</French>

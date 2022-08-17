@@ -207,6 +207,11 @@ public:
 	void createTreasures(int overallAmount, int maxTreasureGold);
 	// WTP, merge Treasures, of Raubwuerger - END
 
+	// WTP, ray, Construction Supplies - START
+	bool canUseProductionSupplies() const;
+	void useProductionSupplies();
+	// WTP, ray, Construction Supplies - END
+
 	bool canSpeakWithChief(CvPlot* pPlot) const;
 	void speakWithChief();
 	bool canHold(const CvPlot* pPlot) const;

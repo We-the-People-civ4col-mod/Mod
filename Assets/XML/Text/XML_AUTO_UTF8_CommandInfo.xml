@@ -508,4 +508,14 @@
         <Italian>Stabilire un Trading Post nel villaggio per generare gradualmente dei tesori.</Italian>
         <Spanish>Establecer un puesto de comercio en el pueblo para generar gradualmente tesoros.</Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_COMMAND_USE_CONSTRUCTION_SUPPLIES</Tag>
+        <English>Use Construction Supplies</English>
+        <German>Baumaterial verwenden</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_COMMAND_USE_CONSTRUCTION_SUPPLIES_HELP</Tag>
+        <English>Use the Construction Supply to transform it into Production of the City.</English>
+        <German>Benutze das Baumaterial, um es in Produktion der Stadt umzuwandeln.</German>
+    </TEXT>
 </Civ4GameText>

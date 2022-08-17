@@ -5464,6 +5464,14 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 	}
 	/// Move Into Peak - end - Nightinggale
 
+	// WTP, ray, Construction Supplies - START
+	if (kUnitInfo.getProductionWhenUsed() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_GIVES_PRODUCTION_WHEN_USED", kUnitInfo.getProductionWhenUsed()));
+	}
+	// WTP, ray, Construction Supplies - END
+
 	if (kUnitInfo.isNoBadGoodies())
 	{
 		szBuffer.append(NEWLINE);

@@ -686,6 +686,7 @@ public:
 /** NBMOD EDU **/
 	int getAIWeight() const;
 	int getHurryCostModifier() const;
+	int getProductionWhenUsed() const; // WTP, ray, Construction Supplies - START
 	int getEuropeCost() const;
 	int getEuropeCostIncrease() const;
 	/*** TRIANGLETRADE 10/24/08 by DPII ***/
@@ -881,6 +882,7 @@ protected:
 
 	int m_iAIWeight;
 	int m_iHurryCostModifier;
+	int m_iProductionWhenUsed; // WTP, ray, Construction Supplies - START
 	int m_iEuropeCost;
 	int m_iEuropeCostIncrease;
 	/*** TRIANGLETRADE 10/24/08 by DPII ***/

@@ -772,6 +772,11 @@
             <DefaultUnit>UNIT_FISHING_BOAT</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_CONSTRUCTION_SUPPLIES</Type>
+            <Description>TXT_KEY_UNITCLASS_CONSTRUCTION_SUPPLIES</Description>
+            <DefaultUnit>UNIT_CONSTRUCTION_SUPPLIES</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_FOOD</Type>
             <Description>TXT_KEY_UNITCLASS_FOOD</Description>
             <DefaultUnit>UNIT_FOOD</DefaultUnit>
@@ -825,7 +830,7 @@
             <Type>UNITCLASS_GEMS</Type>
             <Description>TXT_KEY_UNITCLASS_GEMS</Description>
             <DefaultUnit>UNIT_GEMS</DefaultUnit>
-        </UnitClassInfo>        
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_RICE</Type>
             <Description>TXT_KEY_UNITCLASS_RICE</Description>
@@ -880,12 +885,12 @@
             <Type>UNITCLASS_RED_PEPPER</Type>
             <Description>TXT_KEY_UNITCLASS_RED_PEPPER</Description>
             <DefaultUnit>UNIT_RED_PEPPER</DefaultUnit>
-        </UnitClassInfo>	
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_VANILLA_PODS</Type>
             <Description>TXT_KEY_UNITCLASS_VANILLA_PODS</Description>
             <DefaultUnit>UNIT_VANILLA_PODS</DefaultUnit>
-        </UnitClassInfo>        
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_COTTON</Type>
             <Description>TXT_KEY_UNITCLASS_COTTON</Description>
@@ -895,7 +900,7 @@
             <Type>UNITCLASS_INDIGO</Type>
             <Description>TXT_KEY_UNITCLASS_INDIGO</Description>
             <DefaultUnit>UNIT_INDIGO</DefaultUnit>
-        </UnitClassInfo>	
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_LOGWOOD</Type>
             <Description>TXT_KEY_UNITCLASS_LOGWOOD</Description>
@@ -920,7 +925,7 @@
             <Type>UNITCLASS_PIG_SKIN</Type>
             <Description>TXT_KEY_UNITCLASS_PIG_SKIN</Description>
             <DefaultUnit>UNIT_PIG_SKIN</DefaultUnit>
-        </UnitClassInfo>        	
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_HIDES</Type>
             <Description>TXT_KEY_UNITCLASS_HIDES</Description>
@@ -935,7 +940,7 @@
             <Type>UNITCLASS_WILD_FEATHERS</Type>
             <Description>TXT_KEY_UNITCLASS_WILD_FEATHERS</Description>
             <DefaultUnit>UNIT_WILD_FEATHERS</DefaultUnit>
-        </UnitClassInfo>        	
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_FUR</Type>
             <Description>TXT_KEY_UNITCLASS_FUR</Description>

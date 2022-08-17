@@ -2678,6 +2678,7 @@ m_fNBMOD_REF_StrengthWeight(1.0),
 /** NBMOD REF **/
 m_iAIWeight(0),
 m_iHurryCostModifier(0),
+m_iProductionWhenUsed(0), // WTP, ray, Construction Supplies - START
 m_iEuropeCost(0),
 m_iEuropeCostIncrease(0),
 /*** TRIANGLETRADE 10/24/08 by DPII ***/
@@ -2865,6 +2866,14 @@ int CvUnitInfo::getHurryCostModifier() const
 {
 	return m_iHurryCostModifier;
 }
+
+// WTP, ray, Construction Supplies - START
+int CvUnitInfo::getProductionWhenUsed() const
+{
+	return m_iProductionWhenUsed;
+}
+// WTP, ray, Construction Supplies - END
+
 int CvUnitInfo::getEuropeCost() const
 {
 	return m_iEuropeCost;
@@ -3576,6 +3585,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
     /** NBMOD REF **/
 
 	stream->Read(&m_iHurryCostModifier);
+	stream->Read(&m_iProductionWhenUsed); // WTP, ray, Construction Supplies - START
 	stream->Read(&m_iEuropeCost);
 	stream->Read(&m_iEuropeCostIncrease);
 	/*** TRIANGLETRADE 10/24/08 by DPII ***/
@@ -3804,6 +3814,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	/** NBMOD REF **/
 
 	stream->Write(m_iHurryCostModifier);
+	stream->Write(m_iProductionWhenUsed); // WTP, ray, Construction Supplies - START
 	stream->Write(m_iEuropeCost);
 	stream->Write(m_iEuropeCostIncrease);
 	/*** TRIANGLETRADE 10/24/08 by DPII ***/
@@ -4070,6 +4081,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiProductionTraits, "ProductionTraits", GC.getNumTraitInfos(), 0);
 	pXML->GetChildXmlValByName(&m_iAIWeight, "iAIWeight");
 	pXML->GetChildXmlValByName(&m_iHurryCostModifier, "iHurryCostModifier");
+	pXML->GetChildXmlValByName(&m_iProductionWhenUsed, "iProductionWhenUsed"); // WTP, ray, Construction Supplies - START
 	pXML->GetChildXmlValByName(&m_iAdvancedStartCost, "iAdvancedStartCost");
 	pXML->GetChildXmlValByName(&m_iAdvancedStartCostIncrease, "iAdvancedStartCostIncrease");
 	pXML->GetChildXmlValByName(&m_iEuropeCost, "iEuropeCost");

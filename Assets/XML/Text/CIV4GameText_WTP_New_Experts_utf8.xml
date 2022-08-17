@@ -5,8 +5,8 @@
 <!-- -->
 <!-- Game Text Infos -->
 <Civ4GameText xmlns="http://www.firaxis.com">
-	<!-- BREEDER -->
-	<TEXT>
+    <!-- BREEDER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BREEDER</Tag>
         <English>Expert Poultry Breeder</English>
         <German>
@@ -24,18 +24,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_BREEDER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_BREEDER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- CASSAVA_PLANTER -->
-	<TEXT>
+    <!-- CASSAVA_PLANTER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CASSAVA_PLANTER</Tag>
         <English>Expert Cassava Planter</English>
         <German>
@@ -53,18 +53,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- COCHINEAL_COLLECTOR -->
-	<TEXT>
+    <!-- COCHINEAL_COLLECTOR -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COCHINEAL_COLLECTOR</Tag>
         <English>Expert Cochineal Collector</English>
         <German>
@@ -82,18 +82,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- LINEN_PLANTER -->
-	<TEXT>
+    <!-- LINEN_PLANTER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LINEN_PLANTER</Tag>
         <English>Expert Flax Planter</English>
         <German>
@@ -111,18 +111,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_LINEN_PLANTER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_LINEN_PLANTER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- LOGWOOD_COLLECTOR -->
-	<TEXT>
+    <!-- LOGWOOD_COLLECTOR -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LOGWOOD_COLLECTOR</Tag>
         <English>Expert Logwood Collector</English>
         <German>
@@ -140,18 +140,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- LOGWOOD_OLIVES_PLANTER -->
-	<TEXT>
+    <!-- LOGWOOD_OLIVES_PLANTER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_OLIVES_PLANTER</Tag>
         <English>Expert Olives Planter</English>
         <German>
@@ -169,18 +169,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVES_PLANTER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVES_PLANTER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- PEANUT_PLANTER -->
-	<TEXT>
+    <!-- PEANUT_PLANTER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PEANUT_PLANTER</Tag>
         <English>Expert Peanut Planter</English>
         <German>
@@ -198,18 +198,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUT_PLANTER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUT_PLANTER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- PEAT_CUTTER -->
-	<TEXT>
+    <!-- PEAT_CUTTER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PEAT_CUTTER</Tag>
         <English>Expert Peat and Clay Cutter</English>
         <German>
@@ -227,18 +227,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT_CUTTER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT_CUTTER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- RAPE_PLANTER -->
-	<TEXT>
+    <!-- RAPE_PLANTER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RAPE_PLANTER</Tag>
         <English>Expert Rape Planter</English>
         <German>
@@ -256,18 +256,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_PLANTER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_PLANTER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- RICE_FARMER -->
-	<TEXT>
+    <!-- RICE_FARMER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RICE_FARMER</Tag>
         <English>Expert Rice Farmer</English>
         <German>
@@ -285,18 +285,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_RICE_FARMER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_RICE_FARMER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- VANILLA_COLLECTOR -->
-	<TEXT>
+    <!-- VANILLA_COLLECTOR -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_VANILLA_COLLECTOR</Tag>
         <English>Expert Vanilla Collector</English>
         <German>
@@ -314,18 +314,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- YERBA_PLANTER -->
-	<TEXT>
+    <!-- YERBA_PLANTER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_YERBA_PLANTER</Tag>
         <English>Expert Yerba Planter</English>
         <German>
@@ -343,18 +343,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_PLANTER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_PLANTER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- HERDER -->
-	<TEXT>
+    <!-- HERDER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HERDER</Tag>
         <English>Expert Herder</English>
         <German>
@@ -372,18 +372,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_HERDER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_HERDER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- MAPLE_SIRUP_COLLECTOR -->
-	<TEXT>
+    <!-- MAPLE_SIRUP_COLLECTOR -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MAPLE_SIRUP_COLLECTOR</Tag>
         <English>Expert Maple Sirup Collector</English>
         <German>
@@ -401,18 +401,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- KAUTSCHUK_COLLECTOR -->
-	<TEXT>
+    <!-- KAUTSCHUK_COLLECTOR -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_KAUTSCHUK_COLLECTOR</Tag>
         <English>Expert Kautschuk Collector</English>
         <German>
@@ -430,18 +430,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- CONFECTIONER -->
-	<TEXT>
+    <!-- CONFECTIONER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CONFECTIONER</Tag>
         <English>Master Confectioner</English>
         <German>
@@ -459,18 +459,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CONFECTIONER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CONFECTIONER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- HOUSEHOLD_TRADER -->
-	<TEXT>
+    <!-- HOUSEHOLD_TRADER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HOUSEHOLD_TRADER</Tag>
         <English>Master Household Goods Trader</English>
         <German>
@@ -488,18 +488,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- YERBA_TRADER -->
-	<TEXT>
+    <!-- YERBA_TRADER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_YERBA_TRADER</Tag>
         <English>Master Yerba Tea Trader</English>
         <German>
@@ -517,18 +517,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TRADER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TRADER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- OIL_TRADER -->
-	<TEXT>
+    <!-- OIL_TRADER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_OIL_TRADER</Tag>
         <English>Master Cooking Oil Trader</English>
         <German>
@@ -546,18 +546,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_OIL_TRADER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_OIL_TRADER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- FRUITS_PICKER -->
-	<TEXT>
+    <!-- FRUITS_PICKER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FRUITS_PICKER</Tag>
         <English>Expert Fruits Picker</English>
         <German>
@@ -575,18 +575,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PICKER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PICKER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- POULTRY_BUTCHER -->
-	<TEXT>
+    <!-- POULTRY_BUTCHER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_POULTRY_BUTCHER</Tag>
         <English>Master Poultry Butcher</English>
         <German>
@@ -604,18 +604,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- COAL_MINER -->
-	<TEXT>
+    <!-- COAL_MINER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COAL_MINER</Tag>
         <English>Expert Coal Miner</English>
         <German>
@@ -633,18 +633,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_COAL_MINER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_COAL_MINER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- LEATHER_TAYLOR -->
-	<TEXT>
+    <!-- LEATHER_TAYLOR -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LEATHER_TAYLOR</Tag>
         <English>Master Leather Padder</English>
         <German>
@@ -662,18 +662,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- CLOTH_TAYLOR -->
-	<TEXT>
+    <!-- CLOTH_TAYLOR -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CLOTH_TAYLOR</Tag>
         <English>Master Tailor</English>
         <German>
@@ -691,18 +691,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CLOTH_TAYLOR_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CLOTH_TAYLOR_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- PEANUT_ROASTER -->
-	<TEXT>
+    <!-- PEANUT_ROASTER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PEANUT_ROASTER</Tag>
         <English>Master Peanut Roaster</English>
         <German>
@@ -720,18 +720,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUT_ROASTER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUT_ROASTER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- POTTER -->
-	<TEXT>
+    <!-- POTTER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_POTTER</Tag>
         <English>Master Potter</English>
         <German>
@@ -749,18 +749,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_POTTER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_POTTER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- MILK_MAID -->
-	<TEXT>
+    <!-- MILK_MAID -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MILK_MAID</Tag>
         <English>Skilled Milk Maid</English>
         <German>
@@ -778,18 +778,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_MILK_MAID_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_MILK_MAID_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- CHEESE_MAKER -->
-	<TEXT>
+    <!-- CHEESE_MAKER -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHEESE_MAKER</Tag>
         <English>Master Cheese Maker</English>
         <German>
@@ -807,18 +807,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CHEESE_MAKER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CHEESE_MAKER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- MESTIZZO -->
-	<TEXT>
+    <!-- MESTIZZO -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MESTIZZO</Tag>
         <English>Mestizzo</English>
         <German>
@@ -836,18 +836,18 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_MESTIZZO_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_MESTIZZO_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- MULATTO -->
-	<TEXT>
+    <!-- MULATTO -->
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MULATTO</Tag>
         <English>Mulatto</English>
         <German>
@@ -865,13 +865,42 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_MULATTO_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_MULATTO_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <!-- CONSTRUCTION_SUPPLIES -->
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_CONSTRUCTION_SUPPLIES</Tag>
+        <English>Construction Supplies</English>
+        <German>
+            <Text>Baumaterial</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES</Tag>
+        <English>Construction Supplies</English>
+        <German>
+            <Text>Baumaterial</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>

@@ -9,10 +9,15 @@
         <Tag>TXT_KEY_UNIT_ANIMAL_STRATEGY</Tag>
         <English>????</English>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CITY_OCCUPATION_ENDED</Tag>
         <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]The unrest has ended now. All business is back to normal.</English>
         <German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Die Unruhen sind vorrüber. Das Leben in der Stadt nimmt wieder seinen normalen Lauf.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_OCCUPATION_ENDED</Tag>
+        <English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Construction Supplies were added to the City.</English>
+        <German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Baumaterialien wurden der Stadt hinzugefügt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_SHIP_ESCAPED_CITY</Tag>

@@ -241,9 +241,9 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-			<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+        	<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
             <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
-        </UnitArtInfo>		
+        </UnitArtInfo>        
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SPICE_TRADER</Type>
             <Button>,Art/colonization_atlas_units.dds,4,3</Button>
@@ -260,7 +260,7 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-			<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+        	<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
             <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
@@ -520,7 +520,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_YERBA_TRADER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Master_Yerba_Tea_Trader_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Yerba_Tea_Trader_Europe.dds</FullLengthIcon>
@@ -655,7 +655,7 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-			<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+        	<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
             <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
@@ -884,7 +884,7 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-			<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+        	<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
             <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
@@ -903,7 +903,7 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-			<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+        	<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
             <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
@@ -1512,7 +1512,7 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>		
+        </UnitArtInfo>        
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SPICES</Type>
             <Button>,Art/colonization_atlas_resources.dds,7,5</Button>
@@ -1587,7 +1587,7 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>		
+        </UnitArtInfo>        
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_GRAPES</Type>
             <Button>,Art/colonization_atlas_resources.dds,3,3</Button>
@@ -1688,7 +1688,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_OLIVE_OIL</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Olive_Oil_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -1713,7 +1713,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_RAPE_OIL</Type>
             <Button>,Art/interface/buttons/New_Yields_Buttons/Rape_Seed_Oil_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -1987,7 +1987,7 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>			
+        </UnitArtInfo>        	
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SILVER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,1</Button>
@@ -2263,7 +2263,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_RICE</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Rice_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -2288,7 +2288,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_CASSAVA</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Cassava_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -2463,7 +2463,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_FESTIVE_CLOTHES</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Festive_Clothes_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -2513,7 +2513,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_GOAT_HIDE_BOOTS</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Goat_Hide_Boots_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -2538,7 +2538,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_PADDED_LEATHER_COATS</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Padded_Leather_Coats_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -2713,7 +2713,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_MILK</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Milk_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -2813,7 +2813,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_CHEESE</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Cheese_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -12595,7 +12595,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_SLAVE_MASTER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Slave_Master_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Slave_Master_Europe.dds</FullLengthIcon>
@@ -13022,57 +13022,57 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_LIGHT_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,2,10</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/artillery_specialist.dds</FullLengthIcon>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Units/Special_Military/Specialists/Artillery_Light/LightSpearman.nif</NIF>
-			<KFM>Art/Units/Special_Military/Specialists/Artillery_Heavy/LightSpearman.kfm</KFM>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_HEAVY_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,1,10</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/artillery_specialist_heavy.dds</FullLengthIcon>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Units/Special_Military/Specialists/Artillery_Heavy/LightSpearman.nif</NIF>
-			<KFM>Art/Units/Special_Military/Specialists/Artillery_Heavy/LightSpearman.kfm</KFM>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_ROYAL_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,10</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/artillery_specialist_royal.dds</FullLengthIcon>
-			<fScale>0.44</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Units/Special_Military/Specialists/Artillery_Royal/LightSpearman.nif</NIF>
-			<KFM>Art/Units/Special_Military/Specialists/Artillery_Heavy/LightSpearman.kfm</KFM>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>	
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_LIGHT_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,2,10</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/artillery_specialist.dds</FullLengthIcon>
+        	<fScale>0.44</fScale>
+        	<fInterfaceScale>1.0</fInterfaceScale>
+        	<NIF>Art/Units/Special_Military/Specialists/Artillery_Light/LightSpearman.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Specialists/Artillery_Heavy/LightSpearman.kfm</KFM>
+        	<fBattleDistance>0.35</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>0</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_HEAVY_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,1,10</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/artillery_specialist_heavy.dds</FullLengthIcon>
+        	<fScale>0.44</fScale>
+        	<fInterfaceScale>1.0</fInterfaceScale>
+        	<NIF>Art/Units/Special_Military/Specialists/Artillery_Heavy/LightSpearman.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Specialists/Artillery_Heavy/LightSpearman.kfm</KFM>
+        	<fBattleDistance>0.35</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>0</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_ROYAL_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,10</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/artillery_specialist_royal.dds</FullLengthIcon>
+        	<fScale>0.44</fScale>
+        	<fInterfaceScale>1.0</fInterfaceScale>
+        	<NIF>Art/Units/Special_Military/Specialists/Artillery_Royal/LightSpearman.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Specialists/Artillery_Heavy/LightSpearman.kfm</KFM>
+        	<fBattleDistance>0.35</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>0</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+        	</AudioRunSounds>
+        </UnitArtInfo>	
         <!-- RaR Units Infantry -->
         <!-- RaR Units Infantry Town Guard-->
         <UnitArtInfo>
@@ -15013,1361 +15013,1361 @@
         </UnitArtInfo>
 <!-- RaR Units Artillery -->
 <!-- RaR Units Artillery Light Artillery -->
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_PROFESSION_LIGHT_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Special_Military/Professions/Light_Artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Light_Artillery_vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_ENGLAND_LIGHT_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/England/Artillery/england_light_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SPAIN_LIGHT_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Spain/Artillery/Spain_light_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_DUTCH_LIGHT_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Dutch/Artillery/Dutch_light_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_DANISH_LIGHT_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Denmark/Artillery/Denmark_light_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SWEDISH_LIGHT_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Sweden/Artillery/Sweden_light_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_RUSSIA_LIGHT_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Russia/Artillery/Russia_light_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_FRANCE_LIGHT_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/France/Artillery/France_light_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_PORTUGAL_LIGHT_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Portugal/Artillery/Portugal_light_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_PROFESSION_LIGHT_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Special_Military/Professions/Light_Artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Light_Artillery_vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_ENGLAND_LIGHT_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/England/Artillery/england_light_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_SPAIN_LIGHT_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Spain/Artillery/Spain_light_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_DUTCH_LIGHT_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Dutch/Artillery/Dutch_light_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_DANISH_LIGHT_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Denmark/Artillery/Denmark_light_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_SWEDISH_LIGHT_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Sweden/Artillery/Sweden_light_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_RUSSIA_LIGHT_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Russia/Artillery/Russia_light_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_FRANCE_LIGHT_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/France/Artillery/France_light_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_PORTUGAL_LIGHT_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Portugal/Artillery/Portugal_light_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
 <!-- RaR Units Artillery Light Artillery Veteran -->
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_PROFESSION_LIGHT_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_ENGLAND_LIGHT_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/England/Artillery/england_light_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SPAIN_LIGHT_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_DUTCH_LIGHT_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Dutch/Artillery/Dutch_light_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_DANISH_LIGHT_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Denmark/Artillery/Denmark_light_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SWEDISH_LIGHT_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Sweden/Artillery/Sweden_light_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_RUSSIA_LIGHT_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Russia/Artillery/Russia_light_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_FRANCE_LIGHT_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/France/Artillery/France_light_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_PORTUGAL_LIGHT_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,6</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Portugal/Artillery/Portugal_light_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_PROFESSION_LIGHT_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_ENGLAND_LIGHT_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/England/Artillery/england_light_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_SPAIN_LIGHT_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Spain/Artillery/Spain_light_artillery_vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_DUTCH_LIGHT_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Dutch/Artillery/Dutch_light_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_DANISH_LIGHT_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Denmark/Artillery/Denmark_light_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_SWEDISH_LIGHT_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Sweden/Artillery/Sweden_light_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_RUSSIA_LIGHT_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Russia/Artillery/Russia_light_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_FRANCE_LIGHT_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/France/Artillery/France_light_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_PORTUGAL_LIGHT_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,6</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/light_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Portugal/Artillery/Portugal_light_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Light_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
 <!-- RaR Units Artillery Heavy Artillery -->
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_PROFESSION_HEAVY_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_ENGLAND_HEAVY_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/England/Artillery/england_heavy_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SPAIN_HEAVY_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Spain/Artillery/Spain_heavy_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_DUTCH_HEAVY_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Dutch/Artillery/Dutch_heavy_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_DANISH_HEAVY_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Denmark/Artillery/Denmark_heavy_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SWEDISH_HEAVY_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Sweden/Artillery/Sweden_heavy_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_RUSSIA_HEAVY_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Russia/Artillery/Russia_heavy_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_FRANCE_HEAVY_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/France/Artillery/France_heavy_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_PORTUGAL_HEAVY_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,5,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Portugal/Artillery/Portugal_heavy_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_PROFESSION_HEAVY_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_ENGLAND_HEAVY_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/England/Artillery/england_heavy_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_SPAIN_HEAVY_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Spain/Artillery/Spain_heavy_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_DUTCH_HEAVY_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Dutch/Artillery/Dutch_heavy_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_DANISH_HEAVY_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Denmark/Artillery/Denmark_heavy_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_SWEDISH_HEAVY_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Sweden/Artillery/Sweden_heavy_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_RUSSIA_HEAVY_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Russia/Artillery/Russia_heavy_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_FRANCE_HEAVY_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/France/Artillery/France_heavy_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_PORTUGAL_HEAVY_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,5,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Portugal/Artillery/Portugal_heavy_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
 <!-- RaR Units Artillery Heavy Artillery Veteran -->
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_PROFESSION_HEAVY_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_ENGLAND_HEAVY_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/England/Artillery/england_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SPAIN_HEAVY_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Spain/Artillery/Spain_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_DUTCH_HEAVY_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Dutch/Artillery/Dutch_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_DANISH_HEAVY_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Denmark/Artillery/Denmark_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SWEDISH_HEAVY_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Sweden/Artillery/Sweden_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_RUSSIA_HEAVY_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Russia/Artillery/Russia_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_FRANCE_HEAVY_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/France/Artillery/France_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_PORTUGAL_HEAVY_ARTILLERY_VETERAN</Type>
-			<Button>,Art/colonization_atlas_military.dds,6,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Portugal/Artillery/Portugal_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_PROFESSION_HEAVY_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_ENGLAND_HEAVY_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/England/Artillery/england_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_SPAIN_HEAVY_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Spain/Artillery/Spain_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_DUTCH_HEAVY_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Dutch/Artillery/Dutch_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_DANISH_HEAVY_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Denmark/Artillery/Denmark_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_SWEDISH_HEAVY_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Sweden/Artillery/Sweden_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_RUSSIA_HEAVY_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Russia/Artillery/Russia_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_FRANCE_HEAVY_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/France/Artillery/France_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_PORTUGAL_HEAVY_ARTILLERY_VETERAN</Type>
+        	<Button>,Art/colonization_atlas_military.dds,6,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/heavy_artillery_vet.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Portugal/Artillery/Portugal_heavy_artillery_vet/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
 <!-- RaR Units Artillery Royal Artillery -->
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_PROFESSION_ROYAL_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_ENGLAND_ROYAL_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/England/Artillery/england_royal_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SPAIN_ROYAL_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Spain/Artillery/Spain_royal_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_DUTCH_ROYAL_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Dutch/Artillery/Dutch_royal_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_DANISH_ROYAL_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Denmark/Artillery/Denmark_royal_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SWEDISH_ROYAL_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Sweden/Artillery/Sweden_royal_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_RUSSIA_ROYAL_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Russia/Artillery/Russia_royal_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_FRANCE_ROYAL_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/France/Artillery/France_royal_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_PORTUGAL_ROYAL_ARTILLERY</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,5</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Portugal/Artillery/Portugal_royal_artillery/Imperial_Cannon.nif</NIF>
-			<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_PROFESSION_ROYAL_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_ENGLAND_ROYAL_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/England/Artillery/england_royal_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_SPAIN_ROYAL_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Spain/Artillery/Spain_royal_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_DUTCH_ROYAL_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Dutch/Artillery/Dutch_royal_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Heavy_Artillery_Vet/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_DANISH_ROYAL_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Denmark/Artillery/Denmark_royal_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_SWEDISH_ROYAL_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Sweden/Artillery/Sweden_royal_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_RUSSIA_ROYAL_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Russia/Artillery/Russia_royal_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_FRANCE_ROYAL_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/France/Artillery/France_royal_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_PORTUGAL_ROYAL_ARTILLERY</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,5</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_artillery.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Portugal/Artillery/Portugal_royal_artillery/Imperial_Cannon.nif</NIF>
+        	<KFM>Art/Units/Special_Military/Professions/Royal_Artillery/Imperial_Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
 <!-- RaR Units Artillery Mortar-->
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_MORTAR</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,7</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Special_Military/mortar/bombardB.nif</NIF>
-			<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_DANISH_MORTAR</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,7</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Denmark/Artillery/Denmark_Mortar/Cannon_fx.nif</NIF>
-			<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_DUTCH_MORTAR</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,7</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Dutch/Artillery/Dutch_Mortar/Cannon_fx.nif</NIF>
-			<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_ENGLAND_MORTAR</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,7</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/England/Artillery/england_mortar/Cannon_fx.nif</NIF>
-			<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_FRANCE_MORTAR</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,7</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/France/Artillery/France_mortar/Cannon_fx.nif</NIF>
-			<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_RUSSIA_MORTAR</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,7</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Russia/Artillery/Russia_Mortar/Cannon_fx.nif</NIF>
-			<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_PORTUGAL_MORTAR</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,7</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Portugal/Artillery/Portugal_Mortar/Cannon_fx.nif</NIF>
-			<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SPAIN_MORTAR</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,7</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Spain/Artillery/Spain_Mortar/Cannon_fx.nif</NIF>
-			<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_SWEDISH_MORTAR</Type>
-			<Button>,Art/colonization_atlas_military.dds,4,7</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
-			<fScale>0.53</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
-			<NIF>Art/Units/Sweden/Artillery/Sweden_Mortar/Cannon_fx.nif</NIF>
-			<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
-			<TrailDefinition>
-				<Texture>Art/Shared/wheeltread.dds</Texture>
-				<fWidth>1.0</fWidth>
-				<fLength>180.0</fLength>
-				<fTaper>0.0</fTaper>
-				<fFadeStartTime>0.2</fFadeStartTime>
-				<fFadeFalloff>0.35</fFadeFalloff>
-			</TrailDefinition>
-			<fBattleDistance>0.5</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
-				<AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
-			</AudioRunSounds>
-		</UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_MORTAR</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,7</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Special_Military/mortar/bombardB.nif</NIF>
+        	<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_DANISH_MORTAR</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,7</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Denmark/Artillery/Denmark_Mortar/Cannon_fx.nif</NIF>
+        	<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_DUTCH_MORTAR</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,7</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Dutch/Artillery/Dutch_Mortar/Cannon_fx.nif</NIF>
+        	<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_ENGLAND_MORTAR</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,7</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/England/Artillery/england_mortar/Cannon_fx.nif</NIF>
+        	<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_FRANCE_MORTAR</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,7</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/France/Artillery/France_mortar/Cannon_fx.nif</NIF>
+        	<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_RUSSIA_MORTAR</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,7</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Russia/Artillery/Russia_Mortar/Cannon_fx.nif</NIF>
+        	<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_PORTUGAL_MORTAR</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,7</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Portugal/Artillery/Portugal_Mortar/Cannon_fx.nif</NIF>
+        	<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_SPAIN_MORTAR</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,7</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Spain/Artillery/Spain_Mortar/Cannon_fx.nif</NIF>
+        	<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+        	<Type>ART_DEF_UNIT_SWEDISH_MORTAR</Type>
+        	<Button>,Art/colonization_atlas_military.dds,4,7</Button>
+        	<FullLengthIcon>,Art/Interface/Screens/City_Management/Artstyle_Mortar.dds</FullLengthIcon>
+        	<fScale>0.53</fScale>
+        	<fInterfaceScale>0.8</fInterfaceScale>
+        	<NIF>Art/Units/Sweden/Artillery/Sweden_Mortar/Cannon_fx.nif</NIF>
+        	<KFM>Art/Units/Special_Military/mortar/Cannon.kfm</KFM>
+        	<TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.0</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+        	</TrailDefinition>
+        	<fBattleDistance>0.5</fBattleDistance>
+        	<fRangedDeathTime>0.31</fRangedDeathTime>
+        	<bActAsRanged>1</bActAsRanged>
+        	<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+        	<AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+        	</AudioRunSounds>
+        </UnitArtInfo>
 <!-- WTP, Revoltig Units added in WTP -->
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_REVOLTING_CRIMINAL</Type>
@@ -16437,8 +16437,8 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<!-- WTP, ray, Art Defs of new Trade Goods start -->
-		<UnitArtInfo>
+        <!-- WTP, ray, Art Defs of new Trade Goods start -->
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_GOATS</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Goats_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16463,7 +16463,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_PIGS</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Pigs_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16488,7 +16488,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_CHICKEN</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Chicken_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16513,7 +16513,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_GEESE</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Goose_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16538,7 +16538,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_GOAT_HIDES</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Goat_Hide_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16563,7 +16563,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_PIG_SKIN</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Pig_Skin_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16588,7 +16588,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_DOWNS</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Downs_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16613,7 +16613,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_WILD_FEATHERS</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Wild_Feathres_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16638,7 +16638,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_PIG_LEATHER</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Pig_Leather_Aprons_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16663,7 +16663,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_FRUITS</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Fruits_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16688,7 +16688,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_HOOCH</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Hooch_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16712,8 +16712,8 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>		
-		<UnitArtInfo>
+        </UnitArtInfo>        
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_FLAX</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Linen_Fiber_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16738,7 +16738,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>	
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_PADDED_FURNITURE</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Padded_Furniture_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16763,7 +16763,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_HARDWOOD</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Hardwood_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16788,7 +16788,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_MAPLE_SIRUP</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Maple_Sirup_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16813,7 +16813,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_KAUTSCHUK</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Kautschuk_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16838,7 +16838,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_YERBA_LEAVES</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Yerba_Leaves_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16863,7 +16863,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_LOGWOOD</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Bloodwood_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16888,7 +16888,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_COCHINEAL</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Cochineal_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16912,8 +16912,8 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>		
-		<UnitArtInfo>
+        </UnitArtInfo>        
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_YERBA_TEA</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Yerba_Tea_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16938,7 +16938,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_COLOURED_WOOL_CLOTH</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Coloured_Wool_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16963,7 +16963,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_EVERYDAY_CLOTHES</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Everyday_Clothes_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -16988,7 +16988,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_POTTERY</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Pottery_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -17013,7 +17013,7 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
-		<!-- WTP, ray, Art Defs of new Experts -->
+        <!-- WTP, ray, Art Defs of new Experts -->
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_BREEDER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Breeder_Button.dds</Button>
@@ -17048,7 +17048,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_COCHINEAL_COLLECTOR</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Cochineal_Collector_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Cochineal_Collector_Europe.dds</FullLengthIcon>
@@ -17065,7 +17065,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_LINEN_PLANTER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Linen_Planter_button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Linen_Planter_Europe.dds</FullLengthIcon>
@@ -17082,7 +17082,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_LOGWOOD_COLLECTOR</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Logwood_Collector_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Logwood_Collector_Europe.dds</FullLengthIcon>
@@ -17099,7 +17099,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_OLIVES_PLANTER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Olives_Planter_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Olives_Planter_Europe.dds</FullLengthIcon>
@@ -17116,7 +17116,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_PEANUT_PLANTER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Peanut_Planter_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Peanut_Planter_Europe.dds</FullLengthIcon>
@@ -17133,7 +17133,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_PEAT_CUTTER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Peat_Cutter_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Peat_Cutter_Europe.dds</FullLengthIcon>
@@ -17150,7 +17150,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_RAPE_PLANTER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Rape_Planter_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Rape_Planter_Europe.dds</FullLengthIcon>
@@ -17166,10 +17166,10 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-			<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+        	<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
             <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_RICE_FARMER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Rice_Farmer_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Rice_Farmer_Europe.dds</FullLengthIcon>
@@ -17186,7 +17186,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_VANILLA_COLLECTOR</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Vanilla_Collector.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Vanilla_Collector_Europe.dds</FullLengthIcon>
@@ -17203,7 +17203,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_YERBA_PLANTER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Yerba_Planter_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Yerba_Planter_Europe.dds</FullLengthIcon>
@@ -17219,10 +17219,10 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-			<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+        	<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
             <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_HERDER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Herder_button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Herder_Europe.dds</FullLengthIcon>
@@ -17239,7 +17239,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>	
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_MAPLE_SIRUP_COLLECTOR</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Maple_Sirup_Collector_button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Maple_Sirup_Collector_Europe.dds</FullLengthIcon>
@@ -17256,7 +17256,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_KAUTSCHUK_COLLECTOR</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Kautschuk_Collector_button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Kautschuk_Collector_Europe.dds</FullLengthIcon>
@@ -17273,7 +17273,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_CONFECTIONER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Master_Confectioner_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Confectioner_Europe.dds</FullLengthIcon>
@@ -17290,7 +17290,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_HOUSEHOLD_TRADER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Master_Household_Goods_Trader_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Household_Goods_Trader_Europe.dds</FullLengthIcon>
@@ -17307,7 +17307,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_OIL_TRADER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Master_Oil_Trader_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Oil_Trader_Europe.dds</FullLengthIcon>
@@ -17324,7 +17324,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_FRUITS_PICKER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Fruits_Collector_button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Fruits_Collector_Europe.dds</FullLengthIcon>
@@ -17341,7 +17341,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_POULTRY_BUTCHER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Master_Poultry_butcher_button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Poultry_butcher_europe.dds</FullLengthIcon>
@@ -17358,7 +17358,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_COAL_MINER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Coal_Miner_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Coal_Miner_Europe.dds</FullLengthIcon>
@@ -17375,7 +17375,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_LEATHER_TAYLOR</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Master_Leather_Taylor_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Leather_Taylor_Europe.dds</FullLengthIcon>
@@ -17392,7 +17392,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_CLOTH_TAYLOR</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Master_Cloth_Taylor_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Cloth_Taylor_Europe.dds</FullLengthIcon>
@@ -17409,7 +17409,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_PEANUT_ROASTER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Master_Peanut_Roaster_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Peanut_Roaster_Europe.dds</FullLengthIcon>
@@ -17426,7 +17426,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_POTTER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Master_Potter_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Potter_Europe.dds</FullLengthIcon>
@@ -17443,7 +17443,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_MILK_MAID</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Milkmaid_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Milkmaid_CM.dds</FullLengthIcon>
@@ -17460,7 +17460,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_CHEESE_MAKER</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Master_Cheese_Maker_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Cheese_Maker.dds</FullLengthIcon>
@@ -17477,7 +17477,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_MESTIZZO</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Mestizo_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Mestizo_Europe.dds</FullLengthIcon>
@@ -17494,7 +17494,7 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
-		<UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_MULATTO</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Mulatto_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Mulatto_Europe.dds</FullLengthIcon>
@@ -17502,6 +17502,23 @@
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Mulatto/worker.nif</NIF>
             <KFM>Art/Units/Settler/worker/worker.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_CONSTRUCTION_SUPPLIES</Type>
+            <Button>Art/interface/buttons/New_Unit_Buttons/Construction_Supplies_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Construction_Supplies_Europe.dds</FullLengthIcon>
+            <fScale>0.55</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/Construction_Supplies/Supplies.nif</NIF>
+            <KFM/>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>

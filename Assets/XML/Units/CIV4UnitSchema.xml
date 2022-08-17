@@ -193,6 +193,7 @@
 	<ElementType name="iAIWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iCost" content="textOnly" dt:type="int"/>
 	<ElementType name="iHurryCostModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iProductionWhenUsed" content="textOnly" dt:type="int"/>
 	<ElementType name="iAdvancedStartCost" content="textOnly" dt:type="int"/>
 	<ElementType name="iAdvancedStartCostIncrease" content="textOnly" dt:type="int"/>
 	<ElementType name="iEuropeCost" content="textOnly" dt:type="int"/>
@@ -489,6 +490,7 @@
 		<element type="iAIWeight"/>
 		<element type="YieldCosts"/>
 		<element type="iHurryCostModifier"/>
+		<element type="iProductionWhenUsed" minOccurs="0"/>
 		<element type="iAdvancedStartCost"/>
 		<element type="iAdvancedStartCostIncrease"/>
 		<element type="iEuropeCost"/>

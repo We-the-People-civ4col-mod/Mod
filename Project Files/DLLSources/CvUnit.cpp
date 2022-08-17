@@ -2424,6 +2424,15 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 		break;
 	// R&R, ray , Stirring Up Natives - - END
 
+	// WTP, ray, Construction Supplies - START
+	case COMMAND_USE_CONSTRUCTION_SUPPLIES:
+		if (canUseProductionSupplies())
+		{
+			return true;
+		}
+		break;
+	// WTP, ray, Construction Supplies - END
+
 	default:
 		FAssert(false);
 		break;
@@ -2724,6 +2733,15 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 			}
 			break;
 		// R&R, ray , Stirring Up Natives - - END
+
+		// WTP, ray, Construction Supplies - START
+		case COMMAND_USE_CONSTRUCTION_SUPPLIES:
+			if(isGroupHead())
+			{
+				useProductionSupplies();
+			}
+			break;
+		// WTP, ray, Construction Supplies - END
 		
 		default:
 			FAssert(false);
@@ -4023,7 +4041,7 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 	if (pTransport->getUnitInfo().isSlaveShip() && isHuman())
 	{
 		// it is neither Goods nor a Slave
-		if (getSpecialUnitType() == NO_SPECIALUNIT && !getUnitInfo().LbD_canRevolt())
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !getUnitInfo().LbD_canRevolt() && getUnitInfo().getProductionWhenUsed() != 0)
 		{
 			return false;
 		}
@@ -4036,7 +4054,8 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 	if (pTransport->getUnitInfo().isTreasureShip() && isHuman())
 	{
 		// it is neither Goods nor a Slave
-		if (getSpecialUnitType() == NO_SPECIALUNIT && !getUnitInfo().isTreasure())
+		// WTP, ray, Construction Supplies - START
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !getUnitInfo().isTreasure() && getUnitInfo().getProductionWhenUsed() != 0)
 		{
 			return false;
 		}
@@ -4049,7 +4068,7 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 	if (pTransport->getUnitInfo().isTroopShip() && isHuman())
 	{
 		// it is neither Goods nor a Slave
-		if (getSpecialUnitType() == NO_SPECIALUNIT && !canAttack() && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_GENERAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL"))
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !canAttack() && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_GENERAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") && getUnitInfo().getProductionWhenUsed() != 0)
 		{
 			return false;
 		}
@@ -9579,7 +9598,9 @@ int CvUnit::cargoSpaceAvailable(SpecialUnitTypes eSpecialCargo, DomainTypes eDom
 {
 	if (specialCargo() != NO_SPECIALUNIT)
 	{
-		if (specialCargo() != eSpecialCargo)
+		// WTP, ray, Construction Supplies - START
+		//if (specialCargo() != eSpecialCargo)
+		if (specialCargo() != eSpecialCargo && eDomainCargo != DOMAIN_IMMOBILE)
 		{
 			return 0;
 		}
@@ -15653,6 +15674,49 @@ void CvUnit::createTreasures(int overallAmount, int maxTreasureGold)
 	}
 }
 // WTP, merge Treasures, of Raubwuerger - END
+
+// WTP, ray, Construction Supplies - START
+bool CvUnit::canUseProductionSupplies() const
+{
+	// WTP, ray, small improvements
+	// merge only available for treasures
+	if (getUnitInfo().getProductionWhenUsed() <= 0)
+	{
+		return false;
+	}
+
+	// only in Cities
+	if (plot()->isCity() == false)
+	{
+		return false;
+	}
+
+	// only for our own Cities
+	if (plot()->getPlotCity()->getOwnerINLINE() != getOwnerINLINE())
+	{
+		return false;
+	}
+
+	return true;
+}
+
+void CvUnit::useProductionSupplies()
+{
+	int iProductionSuppliesToBeUsed = getUnitInfo().getProductionWhenUsed();
+	CvCity* pCity = plot()->getPlotCity();
+	
+	// just for safety - should never happen due to "canUse.." check
+	if (pCity == NULL)
+	{
+		return;
+	}
+	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_OCCUPATION_ENDED", pCity->getNameKey()), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_INFO, getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+	pCity->changeProduction(iProductionSuppliesToBeUsed);
+	kill(true);
+
+	return;
+}
+// WTP, ray, Construction Supplies - END
 
 // WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
 void CvUnit::spawnOwnPlayerUnitOnPlotOfUnit(int /*UnitTypes*/ iIndex) const
