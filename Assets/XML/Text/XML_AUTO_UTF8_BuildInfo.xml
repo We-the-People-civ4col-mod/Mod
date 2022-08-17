@@ -96,6 +96,15 @@
         <English>????</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BUILD_SUPPLY_DEPOT</Tag>
+        <English>Build a [LINK=IMPROVEMENT_SUPPLY_DEPOT]supply depot[\LINK]</English>
+        <German>[LINK=IMPROVEMENT_SUPPLY_DEPOT]Versorgungslager[\LINK] bauen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_SUPPLY_DEPOT_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILD_CANAL</Tag>
         <English>Build an [LINK=IMPROVEMENT_CANAL]canal[\LINK]</English>
         <German>[LINK=IMPROVEMENT_CANAL]Kanal[\LINK] bauen</German>

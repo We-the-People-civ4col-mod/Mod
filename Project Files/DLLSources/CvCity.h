@@ -546,6 +546,10 @@ public:
 	int getImprovementToolsModifierForCity() const;
 	// WTP, ray, Improvements give Bonus to their City - PART 2 - END
 
+	// WTP, ray, Improvements give Bonus to their City - PART 3 - START
+	int getImprovementStorageModifierForCity() const;
+	// WTP, ray, Improvements give Bonus to their City - PART 3 - END
+
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
 	void spawnOwnPlayerUnitOnPlotOfCity(int /*UnitTypes*/ iIndex) const;
 	void spawnBarbarianUnitOnPlotOfCity(int /*UnitTypes*/ iIndex) const; // careful with this, because will take over City for Barbarians
@@ -984,7 +988,11 @@ inline int CvCity::NBMOD_GetCityTeachLevel() const
 // cache getMaxYieldCapacity - start - Nightinggale
 inline int CvCity::getMaxYieldCapacity() const
 {
-	return m_cache_MaxYieldCapacity;
+	// WTP, ray, Improvements give Bonus to their City - PART 3 - START
+	int iAdditionalStorageFromImprovements = getImprovementStorageModifierForCity();
+	//return m_cache_MaxYieldCapacity;
+	return m_cache_MaxYieldCapacity + iAdditionalStorageFromImprovements;
+	// WTP, ray, Improvements give Bonus to their City - PART 3 - END
 };
 // cache getMaxYieldCapacity - end - Nightinggale
 

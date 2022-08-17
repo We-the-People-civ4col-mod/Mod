@@ -9094,7 +9094,7 @@ int CvCity::getMaxYieldCapacityUncached() const
 				iCapacity /= 100;
 			}
 		}
-	}			
+	}
 
 	return iCapacity;
 }
@@ -9722,6 +9722,40 @@ int CvCity::getImprovementToolsModifierForCity() const
 	return ToolsModifierForCity;
 }
 // WTP, ray, Improvements give Bonus to their City - PART 2 - END
+
+// WTP, ray, Improvements give Bonus to their City - PART 3 - START
+int CvCity::getImprovementStorageModifierForCity() const
+{
+	//not necessary for Natives, saves performance
+	if (isNative())
+	{
+		return 0;
+	}
+
+	int StorageModifierForCity = 0;
+	for (int iJ = 0; iJ < NUM_CITY_PLOTS; iJ++)
+	{
+		CvPlot* pLoopPlot = getCityIndexPlot(iJ);
+		if (pLoopPlot != NULL)
+		{
+			ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
+			if(eImprovement != NO_IMPROVEMENT)
+			{
+				CvImprovementInfo& info = GC.getImprovementInfo(eImprovement);
+				if (info.getStorageModifierForCity() > 0)
+				{
+					// we give the Bonus only if also worked by a worker inside the City
+					if (isUnitWorkingPlot(pLoopPlot))
+					{
+						StorageModifierForCity += info.getStorageModifierForCity();
+					}
+				}
+			}
+		}
+	}
+	return StorageModifierForCity;
+}
+// WTP, ray, Improvements give Bonus to their City - PART 3 - END
 
 // WTP, ray, Happiness - START
 void CvCity::doCityHappiness()

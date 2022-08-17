@@ -299,6 +299,34 @@
         <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Eisenmühlen[COLOR_REVERT] auf der Karte geben einen prozentualen Bonus auf die gesamte Herstellung von [LINK=YIELD_TOOLS]Werkzeuge[\LINK] der Stadt, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Eine Wassermühle ist eine meist historische technische Anlage, die mittels einer Wasserkraftmaschine durch Wasserkraft angetrieben wird und die kinetische Energie des Wassers nutzt. Bei der Anlage kann es sich um eine Mühle im engeren Sinne handeln, in der etwas gemahlen bzw. zerkleinert wird (Mahlmühle), oder um eine Mühle, in der sonstige Maschinen angetrieben werden (z. B. Hammerwerk, Sägemühle, Schleifmühle, Papiermühle, Pumpwerk, Pochmühle). Für die Umsetzung der Wasserenergie in mechanische Arbeit kommen bei historischen Mühlen fast ausschließlich Wasserräder zum Einsatz; diese wurden in neuerer Zeit oft durch Wasserturbinen ersetzt. Das zum Antrieb nötige Wasser (Aufschlagwasser) wird normalerweise einem Fließgewässer entnommen. Je nach örtlichen Gegebenheiten sind zur Erhöhung der Fallhöhe und zur Speicherung von Wasser Teiche, Stauwehre, Kanäle oder andere Wasserbauwerke erforderlich, siehe dazu auch Schlacht (Wasserbauwerk).</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_SUPPLY_DEPOT</Tag>
+        <English>Supply Depot</English>
+        <German>
+            <Text>Versorgungslager</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_SUPPLY_DEPOT_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Supply Depots[COLOR_REVERT] on the map give additional storage capacity to their City if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]tbd</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Versorgungslager[COLOR_REVERT] auf der Karte geben ihrer Stadt zusätzliche Lagerkapazität, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]tbd</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_LARGE_SUPPLY_DEPOT</Tag>
+        <English>Large Supply Depot</English>
+        <German>
+            <Text>Großes Versorgungslager</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_LARGE_SUPPLY_DEPOT_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Supply Depots[COLOR_REVERT] on the map give additional storage capacity to their City if they are worked by a citizen of the city.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]tbd</English>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Versorgungslager[COLOR_REVERT] auf der Karte geben ihrer Stadt zusätzliche Lagerkapazität, wenn sie von einem Bürger in der Stadt bearbeitet werden.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]tbd</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_CANAL</Tag>
         <English>Canal</English>
         <German>

@@ -87,6 +87,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -644,6 +648,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -1361,6 +1369,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -2087,6 +2099,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -2807,6 +2823,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -3598,6 +3618,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -4345,6 +4369,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -5725,6 +5753,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -6508,6 +6540,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -7096,6 +7132,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -7665,6 +7705,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -8256,6 +8300,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -8817,6 +8865,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -9392,6 +9444,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -9945,6 +10001,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -10514,6 +10574,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -11077,6 +11141,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -11644,6 +11712,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -12205,6 +12277,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -12774,6 +12850,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -13337,6 +13417,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -13906,6 +13990,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -14469,6 +14557,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -15038,6 +15130,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -15601,6 +15697,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -16170,6 +16270,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -16733,6 +16837,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -17302,6 +17410,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -17865,6 +17977,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -18434,6 +18550,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -19000,6 +19120,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -19563,6 +19687,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -20146,6 +20274,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -20707,6 +20839,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -21274,6 +21410,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -21835,6 +21975,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -22402,6 +22546,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -22963,6 +23111,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -23530,6 +23682,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -24091,6 +24247,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -24658,6 +24818,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -25222,6 +25386,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -25770,6 +25938,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -26310,6 +26482,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -26905,6 +27081,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -27494,6 +27674,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -28089,6 +28273,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -28678,6 +28866,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -29273,6 +29465,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -29865,6 +30061,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -30446,6 +30646,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -31037,6 +31241,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -31622,6 +31830,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -32217,6 +32429,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -32802,6 +33018,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -33397,6 +33617,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -33986,6 +34210,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -34581,6 +34809,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -35173,6 +35405,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -35761,6 +35997,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -36306,6 +36546,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -36890,6 +37134,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -37481,6 +37729,9 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -38070,6 +38321,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -38665,6 +38920,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -39257,6 +39516,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -39838,6 +40101,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -40425,6 +40692,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -41009,6 +41280,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -41590,6 +41865,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -42190,6 +42469,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -42809,6 +43092,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -43362,6 +43649,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -43926,6 +44217,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -44525,6 +44820,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -45121,6 +45420,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -49652,6 +49955,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -50160,6 +50467,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -50710,6 +51021,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -51200,6 +51515,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -51714,6 +52033,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -52222,6 +52545,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -52737,6 +53064,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -54897,6 +55228,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -55423,6 +55758,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -55913,6 +56252,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -56485,6 +56828,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -57040,6 +57387,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -57601,6 +57952,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -58156,6 +58511,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -59827,6 +60186,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -60402,6 +60765,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -60908,6 +61275,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -61411,6 +61782,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -62568,6 +62943,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -63110,6 +63489,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_CANAL</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -63561,6 +63944,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_SAWMILL</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_SUPPLY_DEPOT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>

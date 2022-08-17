@@ -1073,6 +1073,11 @@
         <German>[ICON_BULLET]Gibt der Stadt zusätzliche %d1_millbonus%%%F2_Icon, wenn dessen Feld von einem Bürger der Stadt bearbeitet wird.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_STORAGE_MODIFIER_IF_WORKED</Tag>
+        <English>[ICON_BULLET]Adds additional %d1_millbonus [COLOR_CYAN]Storage Capacity[COLOR_REVERT] to its city if its plot is worked by a citizen inside the city.</English>
+        <German>[ICON_BULLET]Gibt der Stadt zusätzliche %d1_millbonus [COLOR_CYAN]Lagerkapazität[COLOR_REVERT], wenn dessen Feld von einem Bürger der Stadt bearbeitet wird.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_NATIVE_RAID_ATTACKED_FORT</Tag>
         <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]Your Fort was attacked by marauding Natives.</English>
         <French>Votre fort a été attaqué par des indigènes lors d'un raid.</French>

@@ -3086,7 +3086,22 @@
         <Tag>TXT_KEY_CITY_SLAVE_WORKER_PRODUCTION_BONUS</Tag>
         <English>Slave Production Bonus : [COLOR_HIGHLIGHT_TEXT]%d1%%[COLOR_REVERT]</English>
         <German>Produktionsbonus für Sklaven : [COLOR_HIGHLIGHT_TEXT]%d1%%[COLOR_REVERT]</German>
+    </TEXT>	
+    <TEXT>
+        <Tag>TXT_KEY_CITY_DEFAULT_STORAGE</Tag>
+        <English>Storage Capacity by Buildings : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</English>
+        <German>Lagerkapazität durch Gebäude: [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_IMPROVEMENT_STORAGE</Tag>
+        <English>Storage Capacity by Improvements : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</English>
+        <German>Lagerkapazität durch Geländeverbesserungen: [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_RESULTING_CITY_TOTAL_STORAGE</Tag>
+        <English>Total Resulting Storage Capacity : [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</English>
+        <German>Resultierende Gesamtlagerkapzität: [COLOR_HIGHLIGHT_TEXT]%d1[COLOR_REVERT]</German>
+    </TEXT>	
     <TEXT>
         <Tag>TXT_KEY_CHANGE_NAME_CITY</Tag>
         <English>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT][NEWLINE]to change the name of the colony</English>

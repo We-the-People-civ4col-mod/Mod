@@ -1410,6 +1410,21 @@ void CvDLLWidgetData::parseCityNameHelp(CvWidgetDataStruct &widgetDataStruct, Cv
 		szBuffer.append(gDLL->getText("TXT_KEY_CITY_SLAVE_WORKER_PRODUCTION_BONUS", pHeadSelectedCity->getSlaveWorkerProductionBonus()));
 		//WTP, ray, Slave Hunter and Slave Master - END
 
+		// WTP, ray, Improvements give Bonus to their City - PART 3 - START
+		int iMaxYieldCapacity = pHeadSelectedCity->getMaxYieldCapacity();
+		int iYieldCapacityFromImprovements = pHeadSelectedCity->getImprovementStorageModifierForCity();
+		int iYieldCapacityFromCity = iMaxYieldCapacity - iYieldCapacityFromImprovements;
+
+		szBuffer.append(NEWLINE);
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_CITY_DEFAULT_STORAGE", iYieldCapacityFromCity));
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_CITY_IMPROVEMENT_STORAGE", iYieldCapacityFromImprovements));
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_RESULTING_CITY_TOTAL_STORAGE", iMaxYieldCapacity));
+		szBuffer.append(NEWLINE);
+		// WTP, ray, Improvements give Bonus to their City - PART 3 - END
+
 		CvWString szTempBuffer;
 		GAMETEXT.setTimeStr(szTempBuffer, pHeadSelectedCity->getGameTurnFounded(), false);
 		szBuffer.append(NEWLINE);

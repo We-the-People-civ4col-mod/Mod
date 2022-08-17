@@ -7248,7 +7248,6 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 	}
 	// WTP, check Harbour System also for Monasteries, Forts and Canals - END
 
-
 	// WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	if (info.getFoodModifierForCity() > 0)
 	{
@@ -7270,8 +7269,16 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_TOOLS_MODIFIER_IF_WORKED", info.getToolsModifierForCity(), GC.getYieldInfo(YIELD_TOOLS).getChar()));
 		// WTP, ray, Improvements give Bonus to their City - END
 	}
-
 	// WTP, ray, Improvements give Bonus to their City - PART 2 - END
+
+	// WTP, ray, Improvements give Bonus to their City - PART 3 - START
+	if (info.getStorageModifierForCity() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_STORAGE_MODIFIER_IF_WORKED", info.getStorageModifierForCity()));
+		// WTP, ray, Improvements give Bonus to their City - END
+	}
+	// WTP, ray, Improvements give Bonus to their City - PART 3 - END
 
 	if (info.getFeatureGrowthProbability() > 0)
 	{
@@ -8862,7 +8869,6 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 		}		
 	}
 	// WTP, ray, Improvements give Bonus to their City - PART 2 - END
-
 
 	FAssertMsg(iBaseModifier == kCity.getBaseYieldRateModifier(eYieldType), "Yield Modifier in setProductionHelp does not agree with actual value");
 

@@ -8233,6 +8233,7 @@ m_iDefenseModifier(0),
 m_iFoodModifierForCity(0), // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 m_iHammersModifierForCity(0), // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 m_iToolsModifierForCity(0), // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+m_iStorageModifierForCity(0), // WTP, ray, Improvements give Bonus to their City - PART 3 - START
 m_iPillageGold(0),
 m_iImprovementPillage(NO_IMPROVEMENT),
 m_iImprovementUpgrade(NO_IMPROVEMENT),
@@ -8339,6 +8340,13 @@ int CvImprovementInfo::getToolsModifierForCity() const
 	return m_iToolsModifierForCity;
 }
 // WTP, ray, Improvements give Bonus to their City - PART 2 - END
+
+// WTP, ray, Improvements give Bonus to their City - PART 3 - START
+int CvImprovementInfo::getStorageModifierForCity() const
+{
+	return m_iStorageModifierForCity;
+}
+// WTP, ray, Improvements give Bonus to their City - PART 3 - END
 
 int CvImprovementInfo::getPillageGold() const
 {
@@ -8619,6 +8627,7 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iFoodModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	stream->Read(&m_iHammersModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	stream->Read(&m_iToolsModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	stream->Read(&m_iStorageModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 3 - START
 	stream->Read(&m_iPillageGold);
 	stream->Read(&m_iImprovementPillage);
 	stream->Read(&m_iImprovementUpgrade);
@@ -8704,6 +8713,7 @@ void CvImprovementInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iFoodModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	stream->Write(m_iHammersModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	stream->Write(m_iToolsModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	stream->Write(m_iStorageModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 3 - START
 	stream->Write(m_iPillageGold);
 	stream->Write(m_iImprovementPillage);
 	stream->Write(m_iImprovementUpgrade);
@@ -8796,6 +8806,7 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iFoodModifierForCity, "iFoodModifierForCity"); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	pXML->GetChildXmlValByName(&m_iHammersModifierForCity, "iHammersModifierForCity"); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	pXML->GetChildXmlValByName(&m_iToolsModifierForCity, "iToolsModifierForCity"); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
+	pXML->GetChildXmlValByName(&m_iStorageModifierForCity, "iStorageModifierForCity"); // WTP, ray, Improvements give Bonus to their City - PART 3 - START
 	pXML->GetChildXmlValByName(&m_iPillageGold, "iPillageGold");
 	pXML->GetChildXmlValByName(&m_bOutsideBorders, "bOutsideBorders");
 	// Super Forts begin *XML*
