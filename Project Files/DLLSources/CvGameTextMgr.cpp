@@ -2938,6 +2938,14 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 				}
 			}
 			// WTP, check Harbour System also for Monasteries, Forts and Canals - END
+
+			// WTP, ray, Improvements give Bonus to their City - PART 3 - START
+			if(GC.getImprovementInfo(eImprovement).getStorageModifierForCity() > 0)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_PLOT_HELP_IMPROVEMENT_STORAGE", GC.getImprovementInfo(eImprovement).getStorageModifierForCity()));
+			}
+			// WTP, ray, Improvements give Bonus to their City - PART 3 - END
 		}
 
 		// WTP, check Harbour System also for Plots with City - START

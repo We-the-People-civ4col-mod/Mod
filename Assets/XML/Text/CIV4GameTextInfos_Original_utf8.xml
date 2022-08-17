@@ -860,6 +860,11 @@
         <German>[ICON_BULLET]Bietet maximal %d1_HarbourSpace%F2_Icon</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_PLOT_HELP_IMPROVEMENT_STORAGE</Tag>
+        <English>[ICON_BULLET]Adds %d1_StorageCapacity [COLOR_CYAN]Storage Capacity[COLOR_REVERT] to City if worked</English>
+        <German>[ICON_BULLET]Gibt Stadt %d1_StorageCapacity [COLOR_CYAN]Lagerkapazität[COLOR_REVERT] wenn bearbeitet</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_HEAL_MOD</Tag>
         <English>[ICON_BULLET]Heals units extra %d1_Mod%% damage/turn</English>
         <French>[ICON_BULLET]Soigne les unités de %d1_Mod%% de dégâts/tour</French>
