@@ -974,7 +974,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 						CvCity* Captialcity = GET_PLAYER(pDefender->getOwnerINLINE()).firstCity(&iLoop);
 						if (Captialcity != 0)
 						{
-							GET_PLAYER(pDefender->getOwnerINLINE()).createBraveLieutenant(eCapableCaptainUnitTypes, Captialcity->getX_INLINE(), Captialcity->getY_INLINE());
+							GET_PLAYER(pDefender->getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnitTypes, Captialcity->getX_INLINE(), Captialcity->getY_INLINE());
 						}
 					}
 				}
@@ -1013,7 +1013,7 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 						CvCity* Captialcity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop);
 						if (Captialcity != 0)
 						{
-							GET_PLAYER(getOwnerINLINE()).createBraveLieutenant(eCapableCaptainUnitTypes, Captialcity->getX_INLINE(), Captialcity->getY_INLINE());
+							GET_PLAYER(getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnitTypes, Captialcity->getX_INLINE(), Captialcity->getY_INLINE());
 						}
 					}
 				}

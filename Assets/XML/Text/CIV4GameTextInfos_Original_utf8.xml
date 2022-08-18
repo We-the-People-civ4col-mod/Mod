@@ -9837,8 +9837,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CC_BORN</Tag>
-        <English>A capable captian is regarded by the warriors stationed in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] as a model of skill and witt.</English>
-        <German>Der fähiger Soldat gilt den in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] stationierten Kämpfern als ein Vorbild an Fähigkeit und Schläue.</German>
+        <English>A capable captain is regarded by the warriors stationed in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] as a model of skill and witt.</English>
+        <German>Der fähiger Seemann gilt den in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] stationierten Kämpfern als ein Vorbild an Fähigkeit und Schläue.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CC_BORN_SOMEWHERE</Tag>
