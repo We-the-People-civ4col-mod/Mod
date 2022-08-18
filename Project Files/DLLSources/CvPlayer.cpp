@@ -12990,6 +12990,100 @@ void CvPlayer::createGreatAdmiral(UnitTypes eGreatAdmirallUnit, bool bIncrementE
 	}
 }
 // R&R, ray, Great Admirals - END
+void CvPlayer::createBraveLieutenant(UnitTypes eBraveLieutentantUnit, int iX, int iY)
+{
+	CvUnit* pGreatUnit = initUnit(eBraveLieutentantUnit, GC.getUnitInfo(eBraveLieutentantUnit).getDefaultProfession(), iX, iY);
+	if (NULL == pGreatUnit)
+	{
+		FAssert(false);
+		return;
+	}
+
+	CvPlot* pPlot = GC.getMapINLINE().plot(iX, iY);
+	CvCity* pCity = pPlot->getPlotCity();
+	CvWString szReplayMessage;
+
+	if (pPlot)
+	{
+		if (pCity)
+		{
+			CvWString szCity;
+			szCity.Format(L"%s (%s)", pCity->getName().GetCString(), GET_PLAYER(pCity->getOwnerINLINE()).getName());
+			szReplayMessage = gDLL->getText("TXT_KEY_MISC_BL_BORN", pCity->getNameKey());
+		}
+		else
+		{
+			szReplayMessage = gDLL->getText("TXT_KEY_MISC_BL_BORN_FIELD");
+		}
+		GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_MAJOR_EVENT, getID(), szReplayMessage, iX, iY, (ColorTypes)GC.getInfoTypeForString("COLOR_UNIT_TEXT"));
+	}
+
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
+	{
+		if (GET_PLAYER((PlayerTypes)iI).isAlive())
+		{
+			if (pPlot->isRevealed(GET_PLAYER((PlayerTypes)iI).getTeam(), false))
+			{
+				gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szReplayMessage, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_MAJOR_EVENT, pGreatUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_UNIT_TEXT"), iX, iY, true, true);
+			}
+			else
+			{
+				CvWString szMessage = gDLL->getText("TXT_KEY_MISC_BL_BORN_SOMEWHERE");
+				gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_UNIT_TEXT"));
+			}
+		}
+	}
+}
+
+
+void CvPlayer::createCapableCaptain(UnitTypes eCapableCaptainUnit, int iX, int iY)
+{
+	CvUnit* pGreatUnit = initUnit(eCapableCaptainUnit, GC.getUnitInfo(eCapableCaptainUnit).getDefaultProfession(), iX, iY);
+	if (NULL == pGreatUnit)
+	{
+		FAssert(false);
+		return;
+	}
+
+	CvPlot* pPlot = GC.getMapINLINE().plot(iX, iY);
+	CvCity* pCity = pPlot->getPlotCity();
+	CvWString szReplayMessage;
+
+	if (pPlot)
+	{
+		if (pCity)
+		{
+			CvWString szCity;
+			szCity.Format(L"%s (%s)", pCity->getName().GetCString(), GET_PLAYER(pCity->getOwnerINLINE()).getName());
+			szReplayMessage = gDLL->getText("TXT_KEY_MISC_CC_BORN", pCity->getNameKey());
+		}
+		else
+		{
+			szReplayMessage = gDLL->getText("TXT_KEY_MISC_CC_BORN_FIELD");
+		}
+		GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_MAJOR_EVENT, getID(), szReplayMessage, iX, iY, (ColorTypes)GC.getInfoTypeForString("COLOR_UNIT_TEXT"));
+	}
+
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
+	{
+		if (GET_PLAYER((PlayerTypes)iI).isAlive())
+		{
+			if (pPlot->isRevealed(GET_PLAYER((PlayerTypes)iI).getTeam(), false))
+			{
+				gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szReplayMessage, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_MAJOR_EVENT, pGreatUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_UNIT_TEXT"), iX, iY, true, true);
+			}
+			else
+			{
+				CvWString szMessage = gDLL->getText("TXT_KEY_MISC_CC_BORN_SOMEWHERE");
+				gDLL->getInterfaceIFace()->addMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_UNIT_TEXT"));
+			}
+		}
+	}
+}
+// WTP, ray, Lieutenants and Captains - START
+
+
+// WTP, ray, Lieutenants and Captains - END
 
 const EventTriggeredData* CvPlayer::getEventOccured(EventTypes eEvent) const
 {

@@ -715,6 +715,19 @@ void CvCity::createGreatAdmiral(UnitTypes eGreatAdmiralUnit, bool bIncrementExpe
 }
 // R&R, ray, Great Admirals - END
 
+// WTP, ray, Lieutenants and Captains - START
+void CvCity::createBraveLieutenant(UnitTypes eBraveLieutenantUnit)
+{
+	GET_PLAYER(getOwnerINLINE()).createBraveLieutenant(eBraveLieutenantUnit, getX_INLINE(), getY_INLINE());
+}
+
+void CvCity::createCapableCaptain(UnitTypes eCapableCaptainUnit)
+{
+	GET_PLAYER(getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnit, getX_INLINE(), getY_INLINE());
+}
+
+// WTP, ray, Lieutenants and Captains - END
+
 void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool bAlt, bool bShift, bool bCtrl)
 {
 	switch (eTask)

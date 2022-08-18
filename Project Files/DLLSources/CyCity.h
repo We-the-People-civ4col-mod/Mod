@@ -27,6 +27,11 @@ public:
 
 	void createGreatGeneral(int /*UnitTypes*/ eGreatGeneralUnit, bool bIncrementExperience);
 	void createGreatAdmiral(int /*UnitTypes*/ eGreatAdmiralUnit, bool bIncrementExperience); // R&R, ray, Great Admirals
+
+	// WTP, ray, Lieutenants and Captains - START
+	void createBraveLieutenant(int /*UnitTypes*/ eBraveLieutenantUnit); 
+	void createCapableCaptain(int /*UnitTypes*/ eCapableCaptainUnit); 
+	// WTP, ray, Lieutenants and Captains - END
 	 
 	void doTask(int /*TaskTypes*/ eTask, int iData1, int iData2, bool bOption);
 	void chooseProduction(int /*UnitTypes*/ eTrainUnit, int /*BuildingTypes*/ eConstructBuilding, bool bFinish, bool bFront);

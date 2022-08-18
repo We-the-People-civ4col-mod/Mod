@@ -40,6 +40,19 @@ void CyCity::createGreatAdmiral(int /*UnitTypes*/ eGreatAdmiralUnit, bool bIncre
 }
 // R&R, ray, Great Admirals - END
 
+// WTP, ray, Lieutenants and Captains - START
+void CyCity::createBraveLieutenant(int /*UnitTypes*/ eBraveLieutenantUnit)
+{
+	if (m_pCity)
+		m_pCity->createBraveLieutenant((UnitTypes) eBraveLieutenantUnit);
+}
+void CyCity::createCapableCaptain(int /*UnitTypes*/ eCapableCaptainUnit)
+{
+	if (m_pCity)
+		m_pCity->createCapableCaptain((UnitTypes) eCapableCaptainUnit);
+}
+// WTP, ray, Lieutenants and Captains - END
+
 void CyCity::doTask(int /*TaskTypes*/ eTask, int iData1, int iData2, bool bOption)
 {
 	if (m_pCity)

@@ -1786,4 +1786,14 @@
         <English>Slave Master III</English>
         <German>Sklavenmeister III</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_BRAVE_LIEUTENANT</Tag>
+        <English>Commandeered by Brave Lieutenant</English>
+        <German>Befehligt durch Mutigen Leutnant</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_CAPABLE_CAPTAIN</Tag>
+        <English>Commandeered by Capable Captain</English>
+        <German>Commandeered by Capable Captain</German>
+    </TEXT>
 </Civ4GameText>

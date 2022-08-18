@@ -9821,6 +9821,36 @@
         <Spanish>Ha aparecido %s1_GreatPersonName en el campo de batalla</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_MISC_BL_BORN</Tag>
+        <English>A brave Lieutenant is regarded by the warriors stationed in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] as a model of bravery.</English>
+        <German>Der unerschrockene Leutnant gilt den in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] stationierten Kämpfern als ein Vorbild an Tapferkeit und Manneszucht.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_BL_BORN_SOMEWHERE</Tag>
+        <English>In a distant region, a young soldier is making a name for himself as a brave lieutenant.</English>
+        <German>In einer fernen Gegend macht ein junger Soldat als ein mutiger Leutnant von sich reden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_BL_BORN_FIELD</Tag>
+        <English>In the recent battle a young soldier fell upon his enemies like a wolf among the lambs. He is now known everywhere as a truly brave lieutentant.</English>
+        <German>In der jüngsten Schlacht fiel ein junger Soldat über seine Feinde her wie der Wolf über die Lämmer. Er gilt nun allerorten als mutiger Leutnant.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_CC_BORN</Tag>
+        <English>A capable captian is regarded by the warriors stationed in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] as a model of skill and witt.</English>
+        <German>Der fähiger Soldat gilt den in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] stationierten Kämpfern als ein Vorbild an Fähigkeit und Schläue.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_CC_BORN_SOMEWHERE</Tag>
+        <English>In a distant region, a young sailor is making a name for himself as a capable captian.</English>
+        <German>In einer fernen Gegend macht ein junger Seeman als ein fähiger Kapitän von sich reden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_CC_BORN_FIELD</Tag>
+        <English>In the recent sea battle a young sailor and his crew fell upon his enemies like a shark on the tunas. He is now known everywhere as a truly capable captain.</English>
+        <German>In der jüngsten Seeschlacht fiel ein junger Seemann und seine Mannschaft über seine Feinde her wie der Hai über Thunfische. Er gilt nun allerorten als wahrhaft fähiger Kapitän.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TRAIT_GREAT_GENERAL_MODIFIER</Tag>
         <English>[ICON_BULLET]%D1%% Great General emergence</English>
         <French>[ICON_BULLET]Emergence d'un Général illustre %D1%%</French>

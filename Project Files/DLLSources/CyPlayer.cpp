@@ -431,6 +431,23 @@ int CyPlayer::getGreatAdmiralsThresholdModifier()
 }
 // R&R, ray, Great Admirals -END
 
+// WTP, ray, Lieutenants and Captains - START
+void CyPlayer::createBraveLieutenant(int eBraveLieutenantUnit, int iX, int iY)
+{
+	if (m_pPlayer)
+	{
+		m_pPlayer->createBraveLieutenant((UnitTypes)eBraveLieutenantUnit, iX, iY);
+	}
+}
+void CyPlayer::createCapableCaptain(int eCapableCaptainUnit, int iX, int iY)
+{
+	if (m_pPlayer)
+	{
+		m_pPlayer->createCapableCaptain((UnitTypes)eCapableCaptainUnit, iX, iY);
+	}
+}
+// WTP, ray, Lieutenants and Captains - END
+
 int CyPlayer::getGreatGeneralRateModifier()
 {
 	return m_pPlayer ? m_pPlayer->getGreatGeneralRateModifier() : -1;

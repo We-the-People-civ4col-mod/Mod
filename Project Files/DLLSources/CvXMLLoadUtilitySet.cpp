@@ -978,6 +978,16 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		GC.getDefinesVarSystem()->SetValue("UNITCLASS_GREAT_ADMIRAL", idx);
 		// R&R, ray, Great Admirals - END
 
+		// WTP, ray, Lieutenants and Captains - START
+		SetGlobalDefine("UNITCLASS_BRAVE_LIEUTENANT", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_BRAVE_LIEUTENANT", idx);
+
+		SetGlobalDefine("UNITCLASS_CAPABLE_CAPTAIN", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_CAPABLE_CAPTAIN", idx);
+		// WTP, ray, Lieutenants and Captains - END
+
 		SetGlobalDefine("WATER_UNIT_FACING_DIRECTION", szVal);
 		bool bFound = false;
 		for(int iDirection=0; iDirection < NUM_DIRECTION_TYPES; ++iDirection)

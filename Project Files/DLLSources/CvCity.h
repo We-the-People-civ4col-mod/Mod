@@ -71,6 +71,11 @@ public:
 	void createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience);
 	void createGreatAdmiral(UnitTypes eGreatAdmiralUnit, bool bIncrementExperience); // R&R, ray, Great Admirals
 
+	// WTP, ray, Lieutenants and Captains - START
+	void createBraveLieutenant(UnitTypes eGreatAdmiralUnit);
+	void createCapableCaptain(UnitTypes eGreatAdmiralUnit);
+	// WTP, ray, Lieutenants and Captains - END
+
 	DllExport void doTask(TaskTypes eTask, int iData1 = -1, int iData2 = -1, bool bOption = false, bool bAlt = false, bool bShift = false, bool bCtrl = false);
 
 	DllExport void chooseProduction(UnitTypes eTrainUnit = NO_UNIT, BuildingTypes eConstructBuilding = NO_BUILDING, bool bFinish = false, bool bFront = false);

@@ -952,6 +952,34 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
 				pDefender->changeExperience(iExperience, maxXPValue(), true, pPlot->getOwnerINLINE() == pDefender->getOwnerINLINE(), true);
 
+				// WTP, ray, Lieutenants and Captains - START
+				if (pDefender->getDomainType() == DOMAIN_LAND)
+				{
+					int iBraveLieutenantChance = GC.getDefineINT("LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT");
+					int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Lieutenant");
+					if (iBraveLieutenantChance > randomValue)
+					{
+						UnitTypes eBraveLieutentantUnitTypes = (UnitTypes)GC.getCivilizationInfo(pDefender->getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
+						GET_PLAYER(pDefender->getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, pDefender->getX_INLINE(), pDefender->getY_INLINE());
+					}
+				}
+				else
+				{
+					int iCapableCaptainChance = GC.getDefineINT("CAPTAIN_CHANCE_PER_SHIP_COMBAT_IN_PERCENT");
+					int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Captain");
+					if (iCapableCaptainChance > randomValue)
+					{
+						UnitTypes eCapableCaptainUnitTypes = (UnitTypes)GC.getCivilizationInfo(pDefender->getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"));
+						int iLoop;
+						CvCity* Captialcity = GET_PLAYER(pDefender->getOwnerINLINE()).firstCity(&iLoop);
+						if (Captialcity != 0)
+						{
+							GET_PLAYER(pDefender->getOwnerINLINE()).createBraveLieutenant(eCapableCaptainUnitTypes, Captialcity->getX_INLINE(), Captialcity->getY_INLINE());
+						}
+					}
+				}
+				// WTP, ray, Lieutenants and Captains - END
+
 				// R&R, ray, adapted change from C.B., with minor modifications
 				bCombatEndedUnresolved = false;
 			}
@@ -961,6 +989,35 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				iExperience = ((iExperience * iDefenderStrength) / iAttackerStrength);
 				iExperience = range(iExperience, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
 				changeExperience(iExperience, pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), true);
+
+				// WTP, ray, Lieutenants and Captains - START
+				if (getDomainType() == DOMAIN_LAND)
+				{
+					int iBraveLieutenantChance = GC.getDefineINT("LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT");
+					int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Lieutenant");
+					if (iBraveLieutenantChance > randomValue)
+					{
+						UnitTypes eBraveLieutentantUnitTypes = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
+						GET_PLAYER(getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, getX_INLINE(), getY_INLINE());
+					}
+				}
+				else
+				{
+					int iCapableCaptainChance = GC.getDefineINT("CAPTAIN_CHANCE_PER_SHIP_COMBAT_IN_PERCENT");
+					int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Captain");
+					if (iCapableCaptainChance > randomValue)
+					{
+						UnitTypes eCapableCaptainUnitTypes = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"));
+						//in this case we need to get the Capitol City
+						int iLoop;
+						CvCity* Captialcity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop);
+						if (Captialcity != 0)
+						{
+							GET_PLAYER(getOwnerINLINE()).createBraveLieutenant(eCapableCaptainUnitTypes, Captialcity->getX_INLINE(), Captialcity->getY_INLINE());
+						}
+					}
+				}
+				// WTP, ray, Lieutenants and Captains - END
 
 				// R&R, ray, adapted change from C.B., with minor modifications
 				bCombatEndedUnresolved = false;
@@ -4068,7 +4125,7 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 	if (pTransport->getUnitInfo().isTroopShip() && isHuman())
 	{
 		// it is neither Goods nor a Slave
-		if (getSpecialUnitType() == NO_SPECIALUNIT && !canAttack() && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_GENERAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") && getUnitInfo().getProductionWhenUsed() != 0)
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !canAttack() && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_GENERAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT") && getUnitClassType() != GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN") && getUnitInfo().getProductionWhenUsed() != 0)
 		{
 			return false;
 		}
@@ -7459,6 +7516,29 @@ bool CvUnit::canPromote(PromotionTypes ePromotion, int iLeaderUnitId) const
 			return false;
 		}
 
+		// WTP, ray, Lieutenants and Captains - START
+		bool bAlradyHasLeader = false;
+		UnitTypes eGeneralUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_GREAT_GENERAL"));
+		UnitTypes eAdmiralUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL"));
+		UnitTypes eLieutenantUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
+		UnitTypes eCaptainUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"));
+
+		int iGeneralPromotion = GC.getUnitInfo(eGeneralUnit).getLeaderPromotion();
+		int iAdmiralPromotion = GC.getUnitInfo(eAdmiralUnit).getLeaderPromotion();
+		int LieutenantPromotion = GC.getUnitInfo(eLieutenantUnit).getLeaderPromotion();
+		int iCaptainPromotion = GC.getUnitInfo(eCaptainUnit).getLeaderPromotion();
+
+		if (isHasPromotion((PromotionTypes) iGeneralPromotion) || isHasPromotion((PromotionTypes) iAdmiralPromotion) || isHasPromotion((PromotionTypes) LieutenantPromotion) || isHasPromotion((PromotionTypes) iCaptainPromotion))
+		{
+			bAlradyHasLeader = true;
+		}
+	
+		if (bAlradyHasLeader == true)
+		{
+			return false;
+		}
+		// WTP, ray, Lieutenants and Captains - END
+
 		if (!GC.getPromotionInfo(ePromotion).isLeader())
 		{
 			return false;
@@ -7628,11 +7708,14 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 					++iNumUnits;
 				}
 			}
+			
+			// WTP, ray, Lieutenants and Captains - END
 		}
 	}
 	else
 	{
 		CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).getUnit(iUnitId);
+
 		// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
 		if ((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20))
 		{
@@ -7641,6 +7724,8 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 				iNumUnits = 1;
 			}
 		}
+		
+		// WTP, ray, Lieutenants and Captains - END
 	}
 	return iNumUnits;
 }
@@ -7661,7 +7746,7 @@ int CvUnit::canGiveExperience(const CvPlot* pPlot) const
 			// WTP, adjustment ray, small improvement, let us read the UnitClassTypes only once
 			UnitClassTypes eLeaderUnitClassType = getUnitClassType();
 			// Navy Case with Great Admiral
-			if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL"))
+			if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") || eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"))
 			{
 				// not really happy about the >= 20 being hardcoded but for now it prevents e.g. Fishing Boat, which is good
 				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)
@@ -7670,7 +7755,7 @@ int CvUnit::canGiveExperience(const CvPlot* pPlot) const
 				}
 			}
 			// Army Case with Great General
-			else if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_GENERAL"))
+			else if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_GENERAL") || eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"))
 			{
 				// here we could easily switch to canAttack
 				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->canAttack())
@@ -7720,7 +7805,7 @@ bool CvUnit::giveExperience()
 
 				// WTP, adjustment ray, small improvement, let us read the UnitClassTypes only once
 				UnitClassTypes eLeaderUnitClassType = getUnitClassType();
-				if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL"))
+				if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") || eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"))
 				{
 					// not really happy about the >= 20 being hardcoded but for now it prevents e.g. Fishing Boat, which is good
 					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)
@@ -7730,7 +7815,7 @@ bool CvUnit::giveExperience()
 					}
 				}
 				// Army Case with Great General
-				else if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_GENERAL"))
+				else if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_GENERAL") || eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"))
 				{
 					// not really happy about the > 2 being hardcoded but for now it prevents normal settlers which is good
 					if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->canAttack())

@@ -537,6 +537,16 @@
             <DefaultUnit>UNIT_GREAT_ADMIRAL</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_BRAVE_LIEUTENANT</Type>
+            <Description>TXT_KEY_UNITCLASS_BRAVE_LIEUTENANT</Description>
+            <DefaultUnit>UNIT_BRAVE_LIEUTENANT</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_CAPABLE_CAPTAIN</Type>
+            <Description>TXT_KEY_UNITCLASS_CAPABLE_CAPTAIN</Description>
+            <DefaultUnit>UNIT_CAPABLE_CAPTAIN</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_HESSIAN</Type>
             <Description>TXT_KEY_UNITCLASS_HESSIAN</Description>
             <DefaultUnit>UNIT_HESSIAN</DefaultUnit>

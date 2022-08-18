@@ -17528,5 +17528,39 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_BRAVE_LIEUTENANT</Type>
+            <Button>,Art/colonization_atlas_military.dds,6,9</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Brave_Lieutenant.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Special_Military/Brave_Lieutenant/Great_General.nif</NIF>
+            <KFM>Art/Units/Special_Military/Brave_Lieutenant/Great_General.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_CAPABLE_CAPTAIN</Type>
+            <Button>,Art/colonization_atlas_military.dds,7,9</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Brave_Captain.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Special_Military/Brave_Captain/Imperial_Soldier.nif</NIF>
+            <KFM>Art/Units/Special_Military/Brave_Captain/Imperial_Soldier.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
     </UnitArtInfos>
 </Civ4ArtDefines>

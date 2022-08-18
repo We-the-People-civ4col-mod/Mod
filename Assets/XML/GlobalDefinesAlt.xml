@@ -1311,4 +1311,21 @@
 		<DefineName>MAX_SLAVE_WORKER_PRODUCTION_BONUS_PER_CITY</DefineName>
 		<iDefineIntVal>100</iDefineIntVal>
 	</Define>
+	<!-- BRAVE LIEUTENANT AND CAPABLE CAPTAIN -->
+	<Define>
+		<DefineName>UNITCLASS_BRAVE_LIEUTENANT</DefineName>
+		<DefineTextVal>UNITCLASS_BRAVE_LIEUTENANT</DefineTextVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_CAPABLE_CAPTAIN</DefineName>
+		<DefineTextVal>UNITCLASS_CAPABLE_CAPTAIN</DefineTextVal>
+	</Define>
+	<Define>
+		<DefineName>LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>CAPTAIN_CHANCE_PER_SHIP_COMBAT_IN_PERCENT</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
 </Civ4Defines>

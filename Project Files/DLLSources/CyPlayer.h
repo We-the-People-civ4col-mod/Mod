@@ -134,6 +134,10 @@ public:
 	int getGreatAdmiralsCreated();
 	int getGreatAdmiralsThresholdModifier(); 
 	// R&R, ray, Great Admirals - END
+	// WTP, ray, Lieutenants and Captains - START
+	void createBraveLieutenant(int eBraveLieutenantUnit, int iX, int iY);
+	void createCapableCaptain(int eGreatAdmiralUnit, int iX, int iY);
+	// WTP, ray, Lieutenants and Captains - END
 	int getGreatGeneralRateModifier();
 	int getDomesticGreatGeneralRateModifier();
 	int getFreeExperience();

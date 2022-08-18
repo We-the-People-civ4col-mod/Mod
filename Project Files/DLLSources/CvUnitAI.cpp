@@ -4968,7 +4968,7 @@ bool CvUnitAI::AI_joinGreatAdmiral()
 
 	for (pLoopUnit = GET_PLAYER(getOwnerINLINE()).firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = GET_PLAYER(getOwnerINLINE()).nextUnit(&iLoop))
 	{
-		if (pLoopUnit->getUnitType() == (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL")))
+		if (pLoopUnit->getUnitType() == (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL")) || pLoopUnit->getUnitType() == (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN")))
 		{
 			plot = pLoopUnit->plot();
 			if (plot != NULL && plot->isCity(true))

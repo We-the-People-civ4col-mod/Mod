@@ -333,6 +333,10 @@ public:
 	int getGreatAdmiralsThresholdModifier() const;
 	void changeGreatAdmiralsThresholdModifier(int iChange);
 	// R&R, ray, Great Admirals - END
+	// WTP, ray, Lieutenants and Captains - START
+	void createBraveLieutenant(UnitTypes eBraveLieutenantUnit, int iX, int iY);
+	void createCapableCaptain(UnitTypes eCapableCaptainUnit, int iX, int iY);
+	// WTP, ray, Lieutenants and Captains - END
 	int getGreatGeneralRateModifier() const;
 	void changeGreatGeneralRateModifier(int iChange);
 	int getDomesticGreatGeneralRateModifier() const;

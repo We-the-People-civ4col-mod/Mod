@@ -881,7 +881,7 @@
         <English>Construction Supplies</English>
         <German>
             <Text>Baumaterial</Text>
-            <Gender>Male</Gender>
+            <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
     </TEXT>
@@ -901,6 +901,64 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <!-- BRAVE_LIEUTENANT -->
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_BRAVE_LIEUTENANT</Tag>
+        <English>Brave Lieutenant</English>
+        <German>
+            <Text>Mutiger Leutnant</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT</Tag>
+        <English>Brave Lieutenant</English>
+        <German>
+            <Text>Mutiger Leutnant</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <!-- CAPABLE_CAPTAIN -->
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_CAPABLE_CAPTAIN</Tag>
+        <English>Capable Captain</English>
+        <German>
+            <Text>Fähiger Kapitän</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN</Tag>
+        <English>Capable Captain</English>
+        <German>
+            <Text>Fähiger Kapitän</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
