@@ -824,8 +824,17 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 
 			if (pUnit->isAlwaysHeal())
 			{
-				szString.append(NEWLINE);
-				szString.append(gDLL->getText("TXT_KEY_PROMOTION_ALWAYS_HEAL_TEXT"));
+				//WTP, ray Negative Promotions - START
+				if (pUnit->getExtraEnemyHeal() < 0)
+				{
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_PROMOTION_SUFFER_DAMAGE_EACH_TURN_TEXT"));
+				}
+				else
+				{
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_PROMOTION_ALWAYS_HEAL_TEXT"));
+				}
 			}
 
 			if (pUnit->isHillsDoubleMove())
@@ -4795,8 +4804,16 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 
 	if (kPromotion.isAlwaysHeal())
 	{
-		szBuffer.append(pcNewline);
-		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_ALWAYS_HEAL_TEXT"));
+		if (kPromotion.getEnemyHealChange() < 0)
+		{
+			szBuffer.append(pcNewline);
+			szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_SUFFER_DAMAGE_EACH_TURN_TEXT"));
+		}
+		else
+		{
+			szBuffer.append(pcNewline);
+			szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_ALWAYS_HEAL_TEXT"));
+		}
 	}
 
 	if (kPromotion.isHillsDoubleMove())
@@ -5053,6 +5070,16 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 		szBuffer.append(pcNewline);
 		szBuffer.append(kPromotion.getHelp());
 	}
+
+	//WTP, ray Negative Promotions - START
+	if (kPromotion.isNegativePromotion())
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_NEGATIVE_PROMOTION"));
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_NEEDS_HEALING_IN_CITY"));
+	}
+	//WTP, ray Negative Promotions - END
 
 	//WTP, ray, Promotions not earned by XP - START
 	if (kPromotion.isNotEarnedByXP())

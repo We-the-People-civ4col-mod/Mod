@@ -675,6 +675,7 @@
 	<ElementType name="PromotionPrereqOr1" content="textOnly"/>
 	<ElementType name="PromotionPrereqOr2" content="textOnly"/>
 	<ElementType name="bLeader" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNegativePromotion" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bBlitz" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bAmphib" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRiver" content="textOnly" dt:type="boolean"/>
@@ -729,6 +730,7 @@
 		<element type="PromotionPrereqOr1"/>
 		<element type="PromotionPrereqOr2"/>
 		<element type="bLeader"/>
+		<element type="bNegativePromotion" minOccurs="0"/>
 		<element type="bBlitz"/>
 		<element type="bAmphib"/>
 		<element type="bRiver"/>

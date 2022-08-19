@@ -920,6 +920,7 @@ m_iExperiencePercent(0),
 m_bHideFromPedia(false),
 m_bNotEarnedByXP(false), //WTP, ray, Promotions not earned by XP
 m_bLeader(false),
+m_bNegativePromotion(false), //WTP, ray Negative Promotions - START
 m_bBlitz(false),
 m_bAmphib(false),
 m_bRiver(false),
@@ -1107,6 +1108,12 @@ bool CvPromotionInfo::isLeader() const
 {
 	return m_bLeader;
 }
+//WTP, ray Negative Promotions - START
+bool CvPromotionInfo::isNegativePromotion() const
+{
+	return m_bNegativePromotion;
+}
+//WTP, ray Negative Promotions - END
 bool CvPromotionInfo::isBlitz() const
 {
 	return m_bBlitz;
@@ -1243,6 +1250,7 @@ void CvPromotionInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iExperiencePercent);
 
 	stream->Read(&m_bLeader);
+	stream->Read(&m_bNegativePromotion); //WTP, ray Negative Promotions - START
 	stream->Read(&m_bBlitz);
 	stream->Read(&m_bAmphib);
 	stream->Read(&m_bRiver);
@@ -1322,6 +1330,7 @@ void CvPromotionInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iUpgradeDiscount);
 	stream->Write(m_iExperiencePercent);
 	stream->Write(m_bLeader);
+	stream->Write(m_bNegativePromotion); //WTP, ray Negative Promotions - START
 	stream->Write(m_bBlitz);
 	stream->Write(m_bAmphib);
 	stream->Write(m_bRiver);
@@ -1358,6 +1367,7 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bHideFromPedia, "bHideFromPedia");
 	pXML->GetChildXmlValByName(&m_bNotEarnedByXP, "bNotEarnedByXP"); //WTP, ray, Promotions not earned by XP
 	pXML->GetChildXmlValByName(&m_bLeader, "bLeader");
+	pXML->GetChildXmlValByName(&m_bNegativePromotion, "bNegativePromotion"); //WTP, ray Negative Promotions - START
 	pXML->GetChildXmlValByName(&m_bBlitz, "bBlitz");
 	pXML->GetChildXmlValByName(&m_bAmphib, "bAmphib");
 	pXML->GetChildXmlValByName(&m_bRiver, "bRiver");

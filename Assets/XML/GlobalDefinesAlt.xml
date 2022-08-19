@@ -1328,4 +1328,12 @@
 		<DefineName>CAPTAIN_CHANCE_PER_SHIP_COMBAT_IN_PERCENT</DefineName>
 		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>CHANCE_FOR_NEGATIVE_PROMOTION_IN_PER_MILLE</DefineName>
+		<iDefineIntVal>1000</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>HEALTH_THRESHOLD_IN_PERCENT_FOR_NEGATIVE_PROMOTION</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
 </Civ4Defines>

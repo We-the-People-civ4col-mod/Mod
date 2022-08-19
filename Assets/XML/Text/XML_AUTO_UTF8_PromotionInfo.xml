@@ -1796,4 +1796,39 @@
         <English>Commandeered by Capable Captain</English>
         <German>Commandeered by Capable Captain</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_NEGATIVE_LEAKING_HULL</Tag>
+        <English>(Negative) Leaking Hull</English>
+        <German>(Negativ) Undichter Rumpf</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_NEGATIVE_TORN_SAILS</Tag>
+        <English>(Negative) Torn Sails</English>
+        <German>(Negativ) Gerissene Segel</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_NEGATIVE_BROKEN_CANNONS</Tag>
+        <English>(Negative) Broken Cannons</English>
+        <German>(Negativ) Zerbrochene Kannonen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_NEGATIVE_INFECTED_WOUNDS</Tag>
+        <English>(Negative) Infected Wounds</English>
+        <German>(Negativ) Infizierte Wunden</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_NEGATIVE_WOUNDED_HORSES</Tag>
+        <English>(Negative) Wounded Horses</English>
+        <German>(Negativ) Verletzte Pferde</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_NEGATIVE_BROKEN_BLADES</Tag>
+        <English>(Negative) Broken Blades</English>
+        <German>(Negativ) Zerbrochene Klingen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_NEGATIVE_BROKEN_GUNS</Tag>
+        <English>(Negative) Broken Guns</English>
+        <German>(Negativ) Zerbrochene Gewehre</German>
+    </TEXT>
 </Civ4GameText>

@@ -879,6 +879,25 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				{
 					changeExperience(GC.getDefineINT("EXPERIENCE_FROM_WITHDRAWL"), pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), true);
 					// R&R, ray, adapted change from C.B., with minor modifications
+
+					//WTP, ray Negative Promotions - START
+					// this here is the Attacker
+					int UnitMaxHitPoints = maxHitPoints(); // should never be 0 here, because Defender won
+					int UnitCurrentHitPoints = currHitPoints();
+					int UnitHitPointsPercentage = 100 * UnitCurrentHitPoints / UnitMaxHitPoints;
+					int iHitPointThresholdForNegativePromotion = GC.getDefineINT("HEALTH_THRESHOLD_IN_PERCENT_FOR_NEGATIVE_PROMOTION");
+
+					if (UnitHitPointsPercentage < iHitPointThresholdForNegativePromotion)
+					{	
+						int iHitPointThresholdForNegativePromotion = GC.getDefineINT("CHANCE_FOR_NEGATIVE_PROMOTION_IN_PER_MILLE");
+						int randomValueNegativePromotion = GC.getGameINLINE().getSorenRandNum(1000, "Check for Negativ Promotion");
+						if (randomValueNegativePromotion < iHitPointThresholdForNegativePromotion)
+						{
+							acquireAnyNegativePromotion();
+						}
+					}
+					//WTP, ray Negative Promotions - START
+
 					bCombatEndedUnresolved = false;
 					break;
 				}
@@ -980,6 +999,23 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				}
 				// WTP, ray, Lieutenants and Captains - END
 
+				//WTP, ray Negative Promotions - START
+				int UnitMaxHitPoints = pDefender->maxHitPoints(); // should never be 0 here, because Defender won
+				int UnitCurrentHitPoints = pDefender->currHitPoints();
+				int UnitHitPointsPercentage = 100 * UnitCurrentHitPoints / UnitMaxHitPoints;
+				int iHitPointThresholdForNegativePromotion = GC.getDefineINT("HEALTH_THRESHOLD_IN_PERCENT_FOR_NEGATIVE_PROMOTION");
+
+				if (UnitHitPointsPercentage < iHitPointThresholdForNegativePromotion)
+				{	
+					int iHitPointThresholdForNegativePromotion = GC.getDefineINT("CHANCE_FOR_NEGATIVE_PROMOTION_IN_PER_MILLE");
+					int randomValueNegativePromotion = GC.getGameINLINE().getSorenRandNum(1000, "Check for Negativ Promotion");
+					if (randomValueNegativePromotion < iHitPointThresholdForNegativePromotion)
+					{
+						pDefender->acquireAnyNegativePromotion();
+					}
+				}
+				//WTP, ray Negative Promotions - END
+
 				// R&R, ray, adapted change from C.B., with minor modifications
 				bCombatEndedUnresolved = false;
 			}
@@ -1019,6 +1055,23 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				}
 				// WTP, ray, Lieutenants and Captains - END
 
+				//WTP, ray Negative Promotions - START
+				int UnitMaxHitPoints = maxHitPoints(); // should never be 0 here, because Defender won
+				int UnitCurrentHitPoints = currHitPoints();
+				int UnitHitPointsPercentage = 100 * UnitCurrentHitPoints / UnitMaxHitPoints;
+				int iHitPointThresholdForNegativePromotion = GC.getDefineINT("HEALTH_THRESHOLD_IN_PERCENT_FOR_NEGATIVE_PROMOTION");
+
+				if (UnitHitPointsPercentage < iHitPointThresholdForNegativePromotion)
+				{	
+					int iHitPointThresholdForNegativePromotion = GC.getDefineINT("CHANCE_FOR_NEGATIVE_PROMOTION_IN_PER_MILLE");
+					int randomValueNegativePromotion = GC.getGameINLINE().getSorenRandNum(1000, "Check for Negativ Promotion");
+					if (randomValueNegativePromotion < iHitPointThresholdForNegativePromotion)
+					{
+						acquireAnyNegativePromotion();
+					}
+				}
+				//WTP, ray Negative Promotions - END
+
 				// R&R, ray, adapted change from C.B., with minor modifications
 				bCombatEndedUnresolved = false;
 			}
@@ -1038,6 +1091,41 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 		int iExperienceDefender = std::max(1,(defenseXPValue()/2));
 		iExperienceDefender = range(iExperienceDefender, GC.getDefineINT("MIN_EXPERIENCE_PER_COMBAT"), GC.getDefineINT("MAX_EXPERIENCE_PER_COMBAT"));
 		pDefender->changeExperience(iExperienceDefender, maxXPValue(), true, pPlot->getOwnerINLINE() == pDefender->getOwnerINLINE(), true);
+
+		//WTP, ray Negative Promotions - START
+
+		// this here is the Attacker
+		int UnitMaxHitPoints = maxHitPoints(); // should never be 0 here, because Defender won
+		int UnitCurrentHitPoints = currHitPoints();
+		int UnitHitPointsPercentage = 100 * UnitCurrentHitPoints / UnitMaxHitPoints;
+		int iHitPointThresholdForNegativePromotion = GC.getDefineINT("HEALTH_THRESHOLD_IN_PERCENT_FOR_NEGATIVE_PROMOTION");
+
+		if (UnitHitPointsPercentage < iHitPointThresholdForNegativePromotion)
+		{	
+			int iHitPointThresholdForNegativePromotion = GC.getDefineINT("CHANCE_FOR_NEGATIVE_PROMOTION_IN_PER_MILLE");
+			int randomValueNegativePromotion = GC.getGameINLINE().getSorenRandNum(1000, "Check for Negativ Promotion");
+			if (randomValueNegativePromotion < iHitPointThresholdForNegativePromotion)
+			{
+				acquireAnyNegativePromotion();
+			}
+		}
+
+		// this here is the Defender
+		int UnitMaxHitPointsDefender = pDefender->maxHitPoints(); // should never be 0 here, because Defender won
+		int UnitCurrentHitPointsDefender = pDefender->currHitPoints();
+		int UnitHitPointsPercentageDefender = 100 * (UnitMaxHitPointsDefender - UnitCurrentHitPointsDefender) / UnitMaxHitPointsDefender;
+		int iHitPointThresholdForNegativePromotionDefender = GC.getDefineINT("HEALTH_THRESHOLD_IN_PERCENT_FOR_NEGATIVE_PROMOTION");
+
+		if (UnitHitPointsPercentageDefender < iHitPointThresholdForNegativePromotionDefender)
+		{	
+			int iHitPointThresholdForNegativePromotion = GC.getDefineINT("CHANCE_FOR_NEGATIVE_PROMOTION_IN_PER_MILLE");
+			int randomValueNegativePromotion = GC.getGameINLINE().getSorenRandNum(1000, "Check for Negativ Promotion");
+			if (randomValueNegativePromotion < iHitPointThresholdForNegativePromotion)
+			{
+				pDefender->acquireAnyNegativePromotion();
+			}
+		}
+		//WTP, ray Negative Promotions - END
 	}
 	// R&R, ray, adapted change from C.B., with minor modifications - END
 }
@@ -6526,6 +6614,20 @@ int CvUnit::healTurns(const CvPlot* pPlot) const
 void CvUnit::doHeal()
 {
 	changeDamage(-(healRate(plot())));
+
+	//WTP, ray Negative Promotions - START
+	if(!isHuman())
+	{
+		if (plot()->isCity())
+		{
+			cleanseAllNegativePromotions();
+		}
+	}
+	else
+	{
+		cleanseAllNegativePromotions();
+	}
+	//WTP, ray Negative Promotions - END
 }
 
 
@@ -12891,6 +12993,103 @@ bool CvUnit::canAcquirePromotion(PromotionTypes ePromotion) const
 
 	return true;
 }
+
+//WTP, ray Negative Promotions - START
+bool CvUnit::canAcquireNegativePromotion(PromotionTypes ePromotion) const
+{
+	FAssertMsg(ePromotion >= 0, "ePromotion is expected to be non-negative (invalid Index)");
+	FAssertMsg(ePromotion < GC.getNumPromotionInfos(), "ePromotion is expected to be within maximum bounds (invalid Index)");
+
+	if (isHasPromotion(ePromotion))
+	{
+		return false;
+	}
+
+	const CvPromotionInfo& kPromotion = GC.getPromotionInfo(ePromotion);
+
+	// check that this is in fact a Negative Promotion
+	if (!kPromotion.isNegativePromotion())
+	{
+		return false;
+	}
+
+	// Negatives currently have no prerequs but who kno
+	if (kPromotion.getPrereqPromotion() != NO_PROMOTION)
+	{
+		if (!isHasPromotion((PromotionTypes)(kPromotion.getPrereqPromotion())))
+		{
+			return false;
+		}
+	}
+
+	if (kPromotion.getPrereqOrPromotion1() != NO_PROMOTION)
+	{
+		if (!isHasPromotion((PromotionTypes)(kPromotion.getPrereqOrPromotion1())))
+		{
+			if ((kPromotion.getPrereqOrPromotion2() == NO_PROMOTION) || !isHasPromotion((PromotionTypes)(kPromotion.getPrereqOrPromotion2())))
+			{
+				return false;
+			}
+		}
+	}
+	if (!isPromotionValid(ePromotion))
+	{
+		return false;
+	}
+
+	return true;
+}
+
+void CvUnit::acquireAnyNegativePromotion()
+{
+	PromotionTypes eNegativePromotionToGive = NO_PROMOTION;
+	int iBestNegativePromotionRandValue = 0;
+
+	for (int iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
+	{
+		int iNegativePromotionRand = GC.getGameINLINE().getSorenRandNum(100, "Negative Promotion Rand");
+		if (canAcquireNegativePromotion((PromotionTypes)iI) && iNegativePromotionRand > iBestNegativePromotionRandValue)
+		{
+			eNegativePromotionToGive = (PromotionTypes)iI;
+			iBestNegativePromotionRandValue = iNegativePromotionRand;
+		}
+	}
+
+	// if we found a Negative Promotion, let us apply it
+	if (eNegativePromotionToGive != NO_PROMOTION)
+	{
+		setHasRealPromotion(eNegativePromotionToGive, true);
+		CvWString szBuffer = gDLL->getText("TXT_KEY_UNIT_HAS_ACQUIRED_NEGATIVE_PROMOTION", getUnitInfo().getTextKeyWide(), GC.getPromotionInfo(eNegativePromotionToGive).getTextKeyWide());
+		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, GC.getPromotionInfo(eNegativePromotionToGive).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE());
+	}
+
+	return;
+}
+
+void CvUnit::cleanseAllNegativePromotions()
+{
+	bool bNegativePromotionCleansed = false;
+
+	for (int iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
+	{
+		if (GC.getPromotionInfo((PromotionTypes) iI).isNegativePromotion() && isHasPromotion((PromotionTypes) iI))
+		{
+			setHasRealPromotion((PromotionTypes) iI, false);
+			bNegativePromotionCleansed = true;
+		}
+	}
+
+	// if we found a Negative Promotion, let us apply it
+	if (bNegativePromotionCleansed)
+	{
+		CvWString szBuffer = gDLL->getText("TXT_KEY_UNIT_WAS_CLEASED_OF_NEGATIVE_PROMOTIONS", getUnitInfo().getTextKeyWide());
+		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, getUnitInfo().getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE());
+	}
+
+	return;
+}
+
+//WTP, ray Negative Promotions - END
 
 bool CvUnit::isPromotionValid(PromotionTypes ePromotion) const
 {

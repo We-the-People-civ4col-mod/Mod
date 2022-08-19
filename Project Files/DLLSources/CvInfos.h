@@ -256,6 +256,7 @@ public:
 	int getExperiencePercent() const;
 
 	bool isLeader() const;
+	bool isNegativePromotion() const; //WTP, ray Negative Promotions - START
 	bool isBlitz() const;
 	bool isAmphib() const;
 	bool isRiver() const;
@@ -317,6 +318,7 @@ protected:
 	bool m_bHideFromPedia;
 	bool m_bNotEarnedByXP; //WTP, ray, Promotions not earned by XP
 	bool m_bLeader;
+	bool m_bNegativePromotion; //WTP, ray Negative Promotions - START
 	bool m_bBlitz;
 	bool m_bAmphib;
 	bool m_bRiver;

@@ -654,6 +654,9 @@ public:
 	int getExtraUnitCombatModifier(UnitCombatTypes eIndex) const;
 	void changeExtraUnitCombatModifier(UnitCombatTypes eIndex, int iChange);
 	bool canAcquirePromotion(PromotionTypes ePromotion) const;
+	bool canAcquireNegativePromotion(PromotionTypes ePromotion) const; //WTP, ray Negative Promotions - START
+	void acquireAnyNegativePromotion(); //WTP, ray Negative Promotions - START
+	void cleanseAllNegativePromotions(); //WTP, ray Negative Promotions - START
 	bool canAcquirePromotionAny() const;
 	bool isPromotionValid(PromotionTypes ePromotion) const;
 	bool isHasPromotion(PromotionTypes eIndex) const;
