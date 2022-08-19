@@ -362,6 +362,69 @@
                         <ArtDefineTag>ART_DEF_UNIT_CONTINENTAL_GUARD_FLAGBEARER_DENMARK</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
             </StyleUnits>
         </UnitArtStyleTypeInfo>
         <!-- Dutch -->
@@ -709,6 +772,69 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_CONTINENTAL_GUARD_FLAGBEARER_DUTCH</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
             </StyleUnits>
@@ -1060,6 +1186,69 @@
                         <ArtDefineTag>ART_DEF_UNIT_CONTINENTAL_GUARD_FLAGBEARER_ENGLAND</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
             </StyleUnits>
         </UnitArtStyleTypeInfo>
         <!-- France -->
@@ -1409,6 +1598,69 @@
                         <ArtDefineTag>ART_DEF_UNIT_CONTINENTAL_GUARD_FLAGBEARER_FRANCE</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
             </StyleUnits>
         </UnitArtStyleTypeInfo>
         <!-- Portugal -->
@@ -1756,6 +2008,69 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_CONTINENTAL_GUARD_FLAGBEARER_PORTUGAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
             </StyleUnits>
@@ -2114,6 +2429,69 @@
                         <ArtDefineTag>ART_DEF_UNIT_CONTINENTAL_GUARD_FLAGBEARER_RUSSIA</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
             </StyleUnits>
         </UnitArtStyleTypeInfo>
         <!-- Spain -->
@@ -2463,6 +2841,69 @@
                         <ArtDefineTag>ART_DEF_UNIT_CONTINENTAL_GUARD_FLAGBEARER_SPAIN</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
             </StyleUnits>
         </UnitArtStyleTypeInfo>
         <!-- Sweden -->
@@ -2810,6 +3251,69 @@
                     <ProfessionType>NONE</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_CONTINENTAL_GUARD_FLAGBEARER_SWEDEN</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>NONE</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_DRAGOON</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </StyleUnit>
+                <StyleUnit>
+                    <UnitType>UNIT_BRAVE_LIEUTENANT</UnitType>
+                    <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <UnitMeshGroup>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE_LIEUTENANT</ArtDefineTag>
                     </UnitMeshGroup>
                 </StyleUnit>
             </StyleUnits>

@@ -47016,7 +47016,7 @@
             <iHotKeyPriority>0</iHotKeyPriority>
             <FreePromotions/>
             <LeaderPromotion>PROMOTION_BRAVE_LIEUTENANT</LeaderPromotion>
-            <iLeaderExperience>5</iLeaderExperience>
+            <iLeaderExperience>10</iLeaderExperience>
         </UnitInfo>
         <UnitInfo>
             <Type>UNIT_CAPABLE_CAPTAIN</Type>
@@ -47198,7 +47198,7 @@
             <iHotKeyPriority>0</iHotKeyPriority>
             <FreePromotions/>
             <LeaderPromotion>PROMOTION_CAPABLE_CAPTAIN</LeaderPromotion>
-            <iLeaderExperience>5</iLeaderExperience>
+            <iLeaderExperience>10</iLeaderExperience>
         </UnitInfo>
         <UnitInfo>
             <Type>UNIT_HESSIAN</Type>
