@@ -7848,7 +7848,7 @@ int CvUnit::canGiveExperience(const CvPlot* pPlot) const
 			// WTP, adjustment ray, small improvement, let us read the UnitClassTypes only once
 			UnitClassTypes eLeaderUnitClassType = getUnitClassType();
 			// Navy Case with Great Admiral
-			if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") || eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"))
+			if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") || eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"))
 			{
 				// not really happy about the >= 20 being hardcoded but for now it prevents e.g. Fishing Boat, which is good
 				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)
@@ -7857,7 +7857,7 @@ int CvUnit::canGiveExperience(const CvPlot* pPlot) const
 				}
 			}
 			// Army Case with Great General
-			else if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_GENERAL") || eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"))
+			else if (eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_GREAT_GENERAL") || eLeaderUnitClassType == GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"))
 			{
 				// here we could easily switch to canAttack
 				if (pUnit && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canAcquirePromotionAny() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->canAttack())
