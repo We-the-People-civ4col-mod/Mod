@@ -8576,7 +8576,7 @@
             <bAmphib>0</bAmphib>
             <bRiver>0</bRiver>
             <bEnemyRoute>0</bEnemyRoute>
-            <bAlwaysHeal>1</bAlwaysHeal>
+            <bAlwaysHeal>0</bAlwaysHeal>
             <bHillsDoubleMove>0</bHillsDoubleMove>
             <iVisibilityChange>0</iVisibilityChange>
             <iMovesChange>0</iMovesChange>
@@ -8584,12 +8584,12 @@
             <iWithdrawalChange>0</iWithdrawalChange>
             <iCargoChange>0</iCargoChange>
             <iBombardRateChange>0</iBombardRateChange>
-            <iEnemyHealChange>-20</iEnemyHealChange>
-            <iNeutralHealChange>-10</iNeutralHealChange>
+            <iEnemyHealChange>-50</iEnemyHealChange>
+            <iNeutralHealChange>-25</iNeutralHealChange>
             <iFriendlyHealChange>0</iFriendlyHealChange>
             <iSameTileHealChange>0</iSameTileHealChange>
             <iAdjacentTileHealChange>0</iAdjacentTileHealChange>
-            <iCombatPercent>0</iCombatPercent>
+            <iCombatPercent>-20</iCombatPercent>
             <iCityAttack>0</iCityAttack>
             <iCityDefense>0</iCityDefense>
             <iHillsAttack>0</iHillsAttack>
@@ -8913,7 +8913,7 @@
             <bAmphib>0</bAmphib>
             <bRiver>0</bRiver>
             <bEnemyRoute>0</bEnemyRoute>
-            <bAlwaysHeal>1</bAlwaysHeal>
+            <bAlwaysHeal>0</bAlwaysHeal>
             <bHillsDoubleMove>0</bHillsDoubleMove>
             <iVisibilityChange>0</iVisibilityChange>
             <iMovesChange>0</iMovesChange>
@@ -8921,12 +8921,12 @@
             <iWithdrawalChange>0</iWithdrawalChange>
             <iCargoChange>0</iCargoChange>
             <iBombardRateChange>0</iBombardRateChange>
-            <iEnemyHealChange>-20</iEnemyHealChange>
-            <iNeutralHealChange>-10</iNeutralHealChange>
+            <iEnemyHealChange>-50</iEnemyHealChange>
+            <iNeutralHealChange>-25</iNeutralHealChange>
             <iFriendlyHealChange>0</iFriendlyHealChange>
             <iSameTileHealChange>0</iSameTileHealChange>
             <iAdjacentTileHealChange>0</iAdjacentTileHealChange>
-            <iCombatPercent>0</iCombatPercent>
+            <iCombatPercent>-20</iCombatPercent>
             <iCityAttack>0</iCityAttack>
             <iCityDefense>0</iCityDefense>
             <iHillsAttack>0</iHillsAttack>

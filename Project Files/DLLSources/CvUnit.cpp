@@ -809,7 +809,20 @@ void CvUnit::doTurn()
 	{
 		if (isHurt())
 		{
-			doHeal();
+			doHeal();			
+			//WTP, ray Negative Promotions - START
+			if(!isHuman())
+			{
+				if (plot()->isCity())
+				{
+					cleanseAllNegativePromotions();
+				}
+			}
+			else
+			{
+				cleanseAllNegativePromotions();
+			}
+			//WTP, ray Negative Promotions - END
 		}
 
 		if (!isCargo())
@@ -6614,20 +6627,6 @@ int CvUnit::healTurns(const CvPlot* pPlot) const
 void CvUnit::doHeal()
 {
 	changeDamage(-(healRate(plot())));
-
-	//WTP, ray Negative Promotions - START
-	if(!isHuman())
-	{
-		if (plot()->isCity())
-		{
-			cleanseAllNegativePromotions();
-		}
-	}
-	else
-	{
-		cleanseAllNegativePromotions();
-	}
-	//WTP, ray Negative Promotions - END
 }
 
 

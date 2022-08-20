@@ -501,6 +501,11 @@
         <Spanish>[ICON_BULLET]Cura un %d1_Amount%% más de[SPACE]</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_PROMOTION_HEALS_NEGATIVE_TEXT</Tag>
+        <English>[ICON_BULLET]Heals %d1_Amount%% less[SPACE]</English>
+        <German>[ICON_BULLET]%d1_Amount%%[SPACE]weniger Heilung[SPACE]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROMOTION_ENEMY_LANDS_TEXT</Tag>
         <English>Damage/turn in enemy lands</English>
         <French>Dégâts/tour en territoire ennemi</French>
@@ -10656,8 +10661,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_WAS_CLEASED_OF_NEGATIVE_PROMOTIONS</Tag>
-        <English>Unit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] has healed all negative Effects</English>
-        <German>Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] hat alle negative Eigenschaft geheilt.</German>
+        <English>Unit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] has [COLOR_POSITIVE_TEXT]healed all negative Effects[COLOR_REVERT].</English>
+        <German>Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] hat [COLOR_POSITIVE_TEXT]alle negative Eigenschaft geheilt[COLOR_REVERT].</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_DEFENSES_IN_CITY_REDUCED_TO</Tag>
