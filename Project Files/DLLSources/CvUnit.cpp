@@ -807,22 +807,23 @@ void CvUnit::doTurn()
 	}
 	else
 	{
-		if (isHurt())
+		//WTP, ray Negative Promotions - START
+		if(!isHuman())
 		{
-			doHeal();			
-			//WTP, ray Negative Promotions - START
-			if(!isHuman())
-			{
-				if (plot()->isCity())
-				{
-					cleanseAllNegativePromotions();
-				}
-			}
-			else
+			if (plot()->isCity())
 			{
 				cleanseAllNegativePromotions();
 			}
-			//WTP, ray Negative Promotions - END
+		}
+		else
+		{
+			cleanseAllNegativePromotions();
+		}
+		//WTP, ray Negative Promotions - END
+
+		if (isHurt())
+		{
+			doHeal();			
 		}
 
 		if (!isCargo())
@@ -6443,7 +6444,11 @@ bool CvUnit::canFortify(const CvPlot* pPlot) const
 
 bool CvUnit::canHeal(const CvPlot* pPlot) const
 {
-	if (!isHurt())
+	//WTP, ray Negative Promotions - START
+	//we allow to heal also if Health is perfect if a negative Promotion exists
+	//if (!isHurt())
+	if (!isHurt() && !isHasNegativePromotion())
+	//WTP, ray Negative Promotions - END
 	{
 		return false;
 	}
@@ -13081,6 +13086,20 @@ void CvUnit::cleanseAllNegativePromotions()
 	}
 
 	return;
+}
+
+bool CvUnit::isHasNegativePromotion() const
+{
+	bool bHasNegativePromotion = false;
+	for (int iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
+	{
+		if (GC.getPromotionInfo((PromotionTypes) iI).isNegativePromotion() && isHasPromotion((PromotionTypes) iI))
+		{
+			bHasNegativePromotion = true;
+		}
+	}
+
+	return bHasNegativePromotion;
 }
 
 //WTP, ray Negative Promotions - END
