@@ -715,7 +715,7 @@
 	</Define>
 	<Define>
 		<DefineName>COLONIAL_FORCED_PEACE_TURNS</DefineName>
-		<iDefineIntVal>20</iDefineIntVal>
+		<iDefineIntVal>1</iDefineIntVal> <!-- 20 -->
 	</Define>
 	<Define>
 		<DefineName>SETTLEMENT_TREASURE_YIELD</DefineName>
@@ -1335,5 +1335,21 @@
 	<Define>
 		<DefineName>HEALTH_THRESHOLD_IN_PERCENT_FOR_NEGATIVE_PROMOTION</DefineName>
 		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MIN_ROUND_COLONIAL_INTERVENTION_NATIVE_WAR</DefineName>
+		<iDefineIntVal>1</iDefineIntVal> <!-- 30 -->
+	</Define>
+	<Define>
+		<DefineName>TIMER_COLONIAL_INTERVENTION_NATIVE_WAR</DefineName>
+		<iDefineIntVal>1</iDefineIntVal> <!-- 50 -->
+	</Define>
+	<Define>
+		<DefineName>COLONIAL_INTERVENTION_NATIVE_WAR_CHANCE</DefineName>
+		<iDefineIntVal>1000</iDefineIntVal> <!-- 500 -->
+	</Define>
+	<Define>
+		<DefineName>COLONIAL_INTERVENTION_NATIVE_WAR_GOLD_TO_PAY_PER_UNIT</DefineName>
+		<iDefineIntVal>1000</iDefineIntVal>
 	</Define>
 </Civ4Defines>

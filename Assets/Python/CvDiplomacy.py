@@ -409,6 +409,13 @@ class CvDiplomacy:
 			self.addUserComment("USER_DIPLOCOMMENT_CHURCH_WAR_YES_BUT", -1, -1)
 			self.addUserComment("USER_DIPLOCOMMENT_CHURCH_WAR_NO", -1, -1)
 		# RaR, ray Church Wars
+		
+		# WTP, ray, Colonial Intervention In Native War - START
+		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_COLONIAL_INTERVENTION_NATIVE_WAR")):
+
+			self.addUserComment("USER_DIPLOCOMMENT_COLONIAL_INTERVENTION_NATIVE_WAR_END", -1, -1)
+			self.addUserComment("USER_DIPLOCOMMENT_COLONIAL_INTERVENTION_NATIVE_WAR_CONTINUE", -1, -1)
+		# WTP, ray, Colonial Intervention In Native War - END
 
 		# If the AI is gifting some goods (yields)
 		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_NATIVES_YIELD_GIFT")):
@@ -1304,6 +1311,16 @@ class CvDiplomacy:
 			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_CHURCH_WAR, diploScreen.getData(), 3)
 			diploScreen.closeScreen()
 		# RaR, ray Church Wars
+		
+		# WTP, ray, Colonial Intervention In Native War - START
+		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_COLONIAL_INTERVENTION_NATIVE_WAR_END")):
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_COLONIAL_INTERVENTION_NATIVE_WAR, diploScreen.getData(), 1)
+			diploScreen.closeScreen()
+		
+		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_COLONIAL_INTERVENTION_NATIVE_WAR_CONTINUE")):
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_COLONIAL_INTERVENTION_NATIVE_WAR, diploScreen.getData(), 2)
+			diploScreen.closeScreen()
+		# WTP, ray, Colonial Intervention In Native War - END
 		
 		# R&R, ray, Natives Trading
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_NATIVES_TRADE_ACCEPT")):

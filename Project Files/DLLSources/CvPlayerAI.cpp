@@ -6685,6 +6685,7 @@ void CvPlayerAI::AI_doDiplo()
 					kPlayer.checkForBishop(); // R&R, ray, Bishop - START
 					kPlayer.checkForChurchContact(); // R&R, ray, the Church - START
 					kPlayer.checkForChurchWar(); // R&R, ray, Church War
+					kPlayer.checkForColonialInterventionInNativeWar(); //WTP, ray, Colonial Intervention In Native War - START
 					kPlayer.checkForSmugglers(); // R&R, ray, Smuggling - START
 					kPlayer.checkForRangers(); // R&R, ray, Rangers - START
 					kPlayer.checkForConquistadors(); // R&R, ray, Conquistadors - START

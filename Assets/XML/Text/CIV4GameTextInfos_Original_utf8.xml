@@ -1668,19 +1668,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_PEACE_WITH</Tag>
-        <English>Peace with[SPACE][COLOR_HIGHLIGHT_TEXT]</English>
-        <French>Paix avec[SPACE][COLOR_HIGHLIGHT_TEXT]</French>
-        <German>Frieden mit[SPACE][COLOR_HIGHLIGHT_TEXT]</German>
-        <Italian>Pace con[SPACE][COLOR_HIGHLIGHT_TEXT]</Italian>
-        <Spanish>Paz con[SPACE][COLOR_HIGHLIGHT_TEXT]</Spanish>
+        <English>Peace with[SPACE]</English>
+        <French>Paix avec[SPACE]</French>
+        <German>Frieden mit[SPACE]</German>
+        <Italian>Pace con[SPACE]</Italian>
+        <Spanish>Paz con[SPACE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_WAR_WITH</Tag>
-        <English>War with[SPACE][COLOR_HIGHLIGHT_TEXT]</English>
-        <French>Guerre avec[SPACE][COLOR_HIGHLIGHT_TEXT]</French>
-        <German>Krieg mit[SPACE][COLOR_HIGHLIGHT_TEXT]</German>
-        <Italian>Guerra con[SPACE][COLOR_HIGHLIGHT_TEXT]</Italian>
-        <Spanish>Guerra con[SPACE][COLOR_HIGHLIGHT_TEXT]</Spanish>
+        <English>War with[SPACE]</English>
+        <French>Guerre avec[SPACE]</French>
+        <German>Krieg mit[SPACE]</German>
+        <Italian>Guerra con[SPACE]</Italian>
+        <Spanish>Guerra con[SPACE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_GOLD_TO_OFFER</Tag>

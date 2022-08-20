@@ -52,6 +52,7 @@ const int defaultTimerRevolutionaryNoble = 0;
 const int defaultTimerBishop = 0;
 const int defaultTimerChurchDemand = 0;
 const int defaultTimerChurchWar = 0;
+const int defaultTimerColonialInterventionInNativeWar = 0; //WTP, ray, Colonial Intervention In Native War - START
 const int defaultTimerSmugglingShip = 0;
 const int defaultTimerRanger = 0;
 const int defaultTimerConquistador = 0;
@@ -148,6 +149,7 @@ enum SavegameVariableTypes
 	PlayerSave_TimerBishop,
 	PlayerSave_TimerChurchDemand,
 	PlayerSave_TimerChurchWar,
+	PlayerSave_TimerColonialInterventionInNativeWar, //WTP, ray, Colonial Intervention In Native War - START
 	PlayerSave_TimerSmugglingShip,
 	PlayerSave_TimerRanger,
 	PlayerSave_TimerConquistador,
@@ -329,6 +331,7 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_TimerBishop: return "PlayerSave_TimerBishop";
 	case PlayerSave_TimerChurchDemand: return "PlayerSave_TimerChurchDemand";
 	case PlayerSave_TimerChurchWar: return "PlayerSave_TimerChurchWar";
+	case PlayerSave_TimerColonialInterventionInNativeWar: return "TimerColonialInterventionInNativeWar";	//WTP, ray, Colonial Intervention In Native War - START
 	case PlayerSave_TimerSmugglingShip: return "PlayerSave_TimerSmugglingShip";
 	case PlayerSave_TimerRanger: return "PlayerSave_TimerRanger";
 	case PlayerSave_TimerConquistador: return "PlayerSave_TimerConquistador";
@@ -515,6 +518,7 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_iTimerBishop = defaultTimerBishop;
 	m_iTimerChurchDemand = defaultTimerChurchDemand;
 	m_iTimerChurchWar = defaultTimerChurchWar;
+	m_iTimerColonialInterventionInNativeWar = defaultTimerColonialInterventionInNativeWar; //WTP, ray, Colonial Intervention In Native War - START
 	m_iTimerSmugglingShip = defaultTimerSmugglingShip;
 	m_iTimerRanger = defaultTimerRanger;
 	m_iTimerConquistador = defaultTimerConquistador;
@@ -722,6 +726,7 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_TimerBishop: reader.Read(m_iTimerBishop); break;
 		case PlayerSave_TimerChurchDemand: reader.Read(m_iTimerChurchDemand); break;
 		case PlayerSave_TimerChurchWar: reader.Read(m_iTimerChurchWar); break;
+		case PlayerSave_TimerColonialInterventionInNativeWar: reader.Read(m_iTimerColonialInterventionInNativeWar); break;	//WTP, ray, Colonial Intervention In Native War - START
 		case PlayerSave_TimerSmugglingShip: reader.Read(m_iTimerSmugglingShip); break;
 		case PlayerSave_TimerRanger: reader.Read(m_iTimerRanger); break;
 		case PlayerSave_TimerConquistador: reader.Read(m_iTimerConquistador); break;
@@ -934,6 +939,7 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_TimerBishop, m_iTimerBishop, defaultTimerBishop);
 	writer.Write(PlayerSave_TimerChurchDemand, m_iTimerChurchDemand, defaultTimerChurchDemand);
 	writer.Write(PlayerSave_TimerChurchWar, m_iTimerChurchWar, defaultTimerChurchWar);
+	writer.Write(PlayerSave_TimerColonialInterventionInNativeWar, m_iTimerColonialInterventionInNativeWar, defaultTimerColonialInterventionInNativeWar); //WTP, ray, Colonial Intervention In Native War - START
 	writer.Write(PlayerSave_TimerSmugglingShip, m_iTimerSmugglingShip, defaultTimerSmugglingShip);
 	writer.Write(PlayerSave_TimerRanger, m_iTimerRanger, defaultTimerRanger);
 	writer.Write(PlayerSave_TimerConquistador, m_iTimerConquistador, defaultTimerConquistador);

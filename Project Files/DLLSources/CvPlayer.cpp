@@ -55,7 +55,8 @@ CvPlayer::CvPlayer()
 	m_iTimerRevolutionaryNoble = 0;
 	m_iTimerBishop = 0;
 	m_iTimerChurchDemand = 0;
-	m_iTimerChurchWar = 0;
+	m_iTimerChurchWar = 0; 
+	m_iTimerColonialInterventionInNativeWar = 0; //WTP, ray, Colonial Intervention In Native War - START
 	m_iTimerSmugglingShip = 0;
 	m_iTimerRanger = 0;
 	m_iTimerConquistador = 0;
@@ -3732,6 +3733,68 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 		}
 		break;
 	// R&R, ray, Church War - END
+
+	//WTP, ray, Colonial Intervention In Native War - START
+	case DIPLOEVENT_COLONIAL_INTERVENTION_NATIVE_WAR:
+		{
+			//getting the Data from Diplo-Event
+			PlayerTypes NativeID = (PlayerTypes) iData1; // Selection of Native currently at war
+			int choice = iData2; // the selection choice
+
+			CvPlayer& kPlayer = GET_PLAYER(ePlayer); // Human Player
+			CvPlayer& kNativePlayer = GET_PLAYER(NativeID); // Native to declare war
+
+			// we have chosen end the war
+			if(choice == 1)
+			{
+				// reward
+				AI_changeAttitudeExtra(ePlayer, 4); // European Attitude improvment
+				kNativePlayer.AI_changeAttitudeExtra(ePlayer, 2); // Native Attitude improvement
+
+				// make peace with Natives
+				GET_TEAM(kPlayer.getTeam()).makePeace(GET_PLAYER(NativeID).getTeam(),true);
+
+				//sending message
+				CvWString szBuffer = gDLL->getText("TXT_KEY_COLONIAL_INTERVENTION_NATIVE_WAR_ENDED", kNativePlayer.getNameKey());
+				gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), NULL, NULL, false, false);
+			}
+
+			// we have chosen to continue the war
+			// this is choice 2 but there is no other choice
+			else
+			{
+				AI_changeAttitudeExtra(ePlayer, -2); // European Attitude worsened
+
+				//get City
+				int iLoop;
+				CvCity* locationToAppear = kNativePlayer.firstCity(&iLoop);
+
+				if (locationToAppear != NULL)
+				{
+					UnitTypes Colonial_Intervention_Unit1 = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_NATIVE_MERC"));
+					UnitTypes Colonial_Intervention_Unit2 = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_RANGER"));
+					UnitTypes Colonial_Intervention_Unit3 = (UnitTypes)GC.getCivilizationInfo(kNativePlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_GREAT_GENERAL"));
+
+					// now let us see how much Gold the Natives have and how many Native Soldiers can be acquired
+					int iGoldCostPerUnit = GC.getCOLONIAL_INTERVENTION_NATIVE_WAR_GOLD_TO_PAY_PER_UNIT();				
+					while (kNativePlayer.getGold() > iGoldCostPerUnit)
+					{
+						kNativePlayer.changeGold(-iGoldCostPerUnit);
+						CvUnit* Intervention_Unit_Native = kNativePlayer.initUnit(Colonial_Intervention_Unit1, GC.getUnitInfo(Colonial_Intervention_Unit1).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
+					}
+
+					// these 2 are for free
+					CvUnit* Intervention_Unit_Colonial = kNativePlayer.initUnit(Colonial_Intervention_Unit2, GC.getUnitInfo(Colonial_Intervention_Unit2).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
+					CvUnit* Intervention_Unit_Native_Leader = kNativePlayer.initUnit(Colonial_Intervention_Unit3, GC.getUnitInfo(Colonial_Intervention_Unit3).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
+					
+					//sending message
+					CvWString szBuffer = gDLL->getText("TXT_KEY_COLONIAL_INTERVENTION_NATIVE_WAR_CONTINUED", kNativePlayer.getNameKey());
+					gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, Intervention_Unit_Native_Leader->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), locationToAppear->getX(), locationToAppear->getY(), true, true);
+				}
+			}
+		}
+		break;
+	//WTP, ray, Colonial Intervention In Native War - END
 
 	// R&R, ray, Smuggling - START
 	case DIPLOEVENT_ACQUIRE_SMUGGLERS:
@@ -22835,6 +22898,113 @@ void CvPlayer::checkForChurchWar()
 	return;
 }
 // R&R, ray, Church War - END
+
+
+//WTP, ray, Colonial Intervention In Native War - START
+void CvPlayer::checkForColonialInterventionInNativeWar()
+{
+	// we only do this for Human player
+	if (!isHuman())
+	{
+		return;
+	}
+	
+	// only if not in revolution
+	if(isInRevolution())
+	{
+		return;
+	}
+
+	//check if min round for feature activation has been reached
+	int iminround = GC.getMIN_ROUND_COLONIAL_INTERVENTION_NATIVE_WAR();
+
+	// modification for GameSpeed
+	int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+	iminround = iminround * gamespeedMod / 100;
+
+	if(GC.getGame().getGameTurn() < iminround)
+	{
+		return;
+	}
+
+	if(m_iTimerColonialInterventionInNativeWar > 0)
+	{
+		m_iTimerColonialInterventionInNativeWar = (m_iTimerColonialInterventionInNativeWar - 1);
+		return;
+	}
+
+
+	// check randoms
+	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "Colonial Intervention in Native War");
+	int iColonialInterventionChance = GC.getCOLONIAL_INTERVENTION_NATIVE_WAR_CHANCE();
+
+	if (randomValue > iColonialInterventionChance)
+	{
+		return;
+	}
+
+	//ok, now check for a Native Player we are at war with
+	PlayerTypes eNativeAtWarWith = NO_PLAYER;
+
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	{
+		CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+		if (kPlayer.isAlive() && kPlayer.isNative() && GET_TEAM(kPlayer.getTeam()).isAtWar(getTeam()))
+		{
+			eNativeAtWarWith = (PlayerTypes) iPlayer;
+			break;
+		}
+	}
+
+	// we stop if we did not find a suitable Native Player
+	if (eNativeAtWarWith == NO_PLAYER)
+	{
+		return;
+	}
+
+	// now we need to find a Colonial Player that knows both us and the Native Player, but is not at war with us
+	PlayerTypes eColonialDiploPlayer = NO_PLAYER;
+
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	{
+		CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+		if (kPlayer.isAlive() && kPlayer.isPlayable() && !GET_TEAM(kPlayer.getTeam()).isAtWar(getTeam()))
+		{
+			if (kPlayer.canContact((PlayerTypes) getID()) && kPlayer.canContact(eNativeAtWarWith))
+			{
+				eColonialDiploPlayer = (PlayerTypes) iPlayer;
+				break;
+			}
+		}
+	}
+
+	// we stop if we did not find a suitable Colonial Player
+	if (eColonialDiploPlayer == NO_PLAYER)
+	{
+		return;
+	}
+
+	// otherwise we have now found all we need to build the Diplo Dialogue
+
+	// reset timer
+	m_iTimerColonialInterventionInNativeWar = GC.getTIMER_COLONIAL_INTERVENTION_NATIVE_WAR()*gamespeedMod/100;
+
+	CvDiploParameters* pDiplo = new CvDiploParameters(eColonialDiploPlayer);
+	pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_COLONIAL_INTERVENTION_NATIVE_WAR"));
+
+	CvPlayer& kNativeAtWarWith = GET_PLAYER((PlayerTypes) eNativeAtWarWith);
+
+	//getting Native Civ for text
+	pDiplo->addDiploCommentVariable(kNativeAtWarWith.getCivilizationDescription());
+	//setting ID of Enemy as Data
+	pDiplo->setData(kNativeAtWarWith.getID());
+	pDiplo->setAIContact(true);
+	gDLL->beginDiplomacy(pDiplo, getID());
+	
+	return;
+}
+//WTP, ray, Colonial Intervention In Native War - END
+
 
 /*** TRIANGLETRADE 10/15/08 by DPII ***/
 bool CvPlayer::canTradeWithAfrica() const

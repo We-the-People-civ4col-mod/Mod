@@ -97,6 +97,8 @@ public:
 
 	void checkForChurchWar(); // R&R, ray, Church War
 
+	void checkForColonialInterventionInNativeWar(); //WTP, ray, Colonial Intervention In Native War - START
+
 	void checkForSmugglers(); // R&R, ray, Smuggling - START
 
 	void checkForRangers(); // R&R, ray, Rangers - START
@@ -1008,6 +1010,7 @@ protected:
 	int m_iTimerBishop;
 	int m_iTimerChurchDemand;
 	int m_iTimerChurchWar;
+	int m_iTimerColonialInterventionInNativeWar; //WTP, ray, Colonial Intervention In Native War - START
 	int m_iTimerSmugglingShip;
 	int m_iTimerRanger;
 	int m_iTimerConquistador;
