@@ -6735,8 +6735,8 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_COLONIAL_INTERVENTION_NATIVE_WAR_CONTINUE</Tag>
-        <English>Impossible, these heathens must be purged by fire. (War continues, Attitude worsened, Natives get War Support)</English>
-        <German>Unmöglich, diese Heiden müssen durch Feuer gereinigt werden. (Krieg geht weit, Ansehen verschlechter, Ureinwohner erhalten Unterstützung)</German>
+        <English>Impossible, these heathens must be purged by fire. (War continues, Attitude worsened, King and Church Attitude improved, Natives get War Support)</English>
+        <German>Unmöglich, diese Heiden müssen durch Feuer gereinigt werden. (Krieg geht weit, Ansehen verschlechter, Ansehen bei König und Kirche verbessert, Ureinwohner erhalten Unterstützung)</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COLONIAL_INTERVENTION_NATIVE_WAR_ENDED</Tag>

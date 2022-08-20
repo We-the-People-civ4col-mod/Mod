@@ -3765,6 +3765,23 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			{
 				AI_changeAttitudeExtra(ePlayer, -2); // European Attitude worsened
 
+				// improve attitude to Church
+				PlayerTypes eChurchPlayer = GC.getGameINLINE().getChurchPlayer();
+				if (eChurchPlayer != NO_PLAYER)
+				{
+					CvPlayer& kChurchPlayer = GET_PLAYER(eChurchPlayer);
+					kChurchPlayer.AI_changeAttitudeExtra(ePlayer, 2);
+				}
+
+				// improve Attitude to King
+				PlayerTypes eKingPlayer = kPlayer.getParent();
+				if (eKingPlayer != NO_PLAYER)
+				{
+					CvPlayer& kKingPlayer = GET_PLAYER(eChurchPlayer);
+					kKingPlayer.AI_changeAttitudeExtra(ePlayer, 2);
+				}
+
+
 				//get City
 				int iLoop;
 				CvCity* locationToAppear = kNativePlayer.firstCity(&iLoop);
