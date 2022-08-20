@@ -6740,12 +6740,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COLONIAL_INTERVENTION_NATIVE_WAR_ENDED</Tag>
-        <English>You have followed the request of your colonial neighbour and ended war with the [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. They owe you a favour.</English>
-        <German>Ihr seid der bitte eures kolonialen Nachbars gefolgt und habt den Krieg mit den [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] beendet. Sie schulden euch einen Gefallen.</German>
+        <English>You have followed the request of your colonial neighbour and ended war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. They owe you a favour.</English>
+        <German>Ihr seid der bitte eures kolonialen Nachbars gefolgt und habt den Krieg mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] beendet. Sie schulden euch einen Gefallen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COLONIAL_INTERVENTION_NATIVE_WAR_CONTINUED</Tag>
-        <English>The war with the heathen [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] continues. Rumors say that they get support from the other Colonies.</English>
-        <German>Der Krieg mit den heidnischen [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] geht weiter. Es heißt sie bekommen Unterstützung von den anderen Kolonien.</German>
+        <English>The war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] and his tribe continues. Rumors say that they get support from another Colonial Nation.</English>
+        <German>Der Krieg mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] und seinem Stamm geht weiter. Es heißt sie bekommen Unterstützung von einer anderen Kolnialmacht.</German>
     </TEXT>
 </Civ4GameText>
