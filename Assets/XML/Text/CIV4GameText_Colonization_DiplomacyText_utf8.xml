@@ -6745,7 +6745,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COLONIAL_INTERVENTION_NATIVE_WAR_CONTINUED</Tag>
-        <English>The war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] and his tribe continues. Rumors say that they get support from another Colonial Nation.</English>
-        <German>Der Krieg mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] und seinem Stamm geht weiter. Es heißt sie bekommen Unterstützung von einer anderen Kolnialmacht.</German>
+        <English>The war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] continues. Rumors say that the Natives get support from another Colonial Nation.</English>
+        <German>Der Krieg mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] geht weiter. Es heißt die Ureinwohner bekommen Unterstützung von einer anderen Kolnialmacht.</German>
     </TEXT>
 </Civ4GameText>
