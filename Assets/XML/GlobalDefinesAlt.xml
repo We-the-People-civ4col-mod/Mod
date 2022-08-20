@@ -1330,7 +1330,7 @@
 	</Define>
 	<Define>
 		<DefineName>CHANCE_FOR_NEGATIVE_PROMOTION_IN_PER_MILLE</DefineName>
-		<iDefineIntVal>200</iDefineIntVal>
+		<iDefineIntVal>500</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>HEALTH_THRESHOLD_IN_PERCENT_FOR_NEGATIVE_PROMOTION</DefineName>

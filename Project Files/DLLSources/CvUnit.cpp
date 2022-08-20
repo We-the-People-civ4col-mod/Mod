@@ -865,6 +865,11 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 	int iAttackerDamage;
 	int iDefenderDamage;
 	int iDefenderOdds;
+	
+	//WTP, ray Negative Promotions - START	
+	int iHitPointThresholdForNegativePromotion = GC.getDefineINT("HEALTH_THRESHOLD_IN_PERCENT_FOR_NEGATIVE_PROMOTION");
+	int iChanceForNegativePromotion = GC.getDefineINT("CHANCE_FOR_NEGATIVE_PROMOTION_IN_PER_MILLE");
+	//WTP, ray Negative Promotions - END
 
 	getDefenderCombatValues(*pDefender, pPlot, iAttackerStrength, iAttackerFirepower, iDefenderOdds, iDefenderStrength, iAttackerDamage, iDefenderDamage, &cdDefenderDetails);
 
@@ -898,18 +903,16 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 					int UnitMaxHitPoints = maxHitPoints(); // should never be 0 here, because Defender won
 					int UnitCurrentHitPoints = currHitPoints();
 					int UnitHitPointsPercentage = 100 * UnitCurrentHitPoints / UnitMaxHitPoints;
-					int iHitPointThresholdForNegativePromotion = GC.getDefineINT("HEALTH_THRESHOLD_IN_PERCENT_FOR_NEGATIVE_PROMOTION");
 
 					if (UnitHitPointsPercentage < iHitPointThresholdForNegativePromotion)
 					{	
-						int iHitPointThresholdForNegativePromotion = GC.getDefineINT("CHANCE_FOR_NEGATIVE_PROMOTION_IN_PER_MILLE");
 						int randomValueNegativePromotion = GC.getGameINLINE().getSorenRandNum(1000, "Check for Negativ Promotion");
-						if (randomValueNegativePromotion < iHitPointThresholdForNegativePromotion)
+						if (randomValueNegativePromotion < iChanceForNegativePromotion)
 						{
 							acquireAnyNegativePromotion();
 						}
 					}
-					//WTP, ray Negative Promotions - START
+					//WTP, ray Negative Promotions - END
 
 					bCombatEndedUnresolved = false;
 					break;
@@ -1016,13 +1019,11 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				int UnitMaxHitPoints = pDefender->maxHitPoints(); // should never be 0 here, because Defender won
 				int UnitCurrentHitPoints = pDefender->currHitPoints();
 				int UnitHitPointsPercentage = 100 * UnitCurrentHitPoints / UnitMaxHitPoints;
-				int iHitPointThresholdForNegativePromotion = GC.getDefineINT("HEALTH_THRESHOLD_IN_PERCENT_FOR_NEGATIVE_PROMOTION");
 
 				if (UnitHitPointsPercentage < iHitPointThresholdForNegativePromotion)
 				{	
-					int iHitPointThresholdForNegativePromotion = GC.getDefineINT("CHANCE_FOR_NEGATIVE_PROMOTION_IN_PER_MILLE");
 					int randomValueNegativePromotion = GC.getGameINLINE().getSorenRandNum(1000, "Check for Negativ Promotion");
-					if (randomValueNegativePromotion < iHitPointThresholdForNegativePromotion)
+					if (randomValueNegativePromotion < iChanceForNegativePromotion)
 					{
 						pDefender->acquireAnyNegativePromotion();
 					}
@@ -1072,13 +1073,11 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				int UnitMaxHitPoints = maxHitPoints(); // should never be 0 here, because Defender won
 				int UnitCurrentHitPoints = currHitPoints();
 				int UnitHitPointsPercentage = 100 * UnitCurrentHitPoints / UnitMaxHitPoints;
-				int iHitPointThresholdForNegativePromotion = GC.getDefineINT("HEALTH_THRESHOLD_IN_PERCENT_FOR_NEGATIVE_PROMOTION");
 
 				if (UnitHitPointsPercentage < iHitPointThresholdForNegativePromotion)
 				{	
-					int iHitPointThresholdForNegativePromotion = GC.getDefineINT("CHANCE_FOR_NEGATIVE_PROMOTION_IN_PER_MILLE");
 					int randomValueNegativePromotion = GC.getGameINLINE().getSorenRandNum(1000, "Check for Negativ Promotion");
-					if (randomValueNegativePromotion < iHitPointThresholdForNegativePromotion)
+					if (randomValueNegativePromotion < iChanceForNegativePromotion)
 					{
 						acquireAnyNegativePromotion();
 					}
@@ -1111,13 +1110,11 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 		int UnitMaxHitPoints = maxHitPoints(); // should never be 0 here, because Defender won
 		int UnitCurrentHitPoints = currHitPoints();
 		int UnitHitPointsPercentage = 100 * UnitCurrentHitPoints / UnitMaxHitPoints;
-		int iHitPointThresholdForNegativePromotion = GC.getDefineINT("HEALTH_THRESHOLD_IN_PERCENT_FOR_NEGATIVE_PROMOTION");
 
 		if (UnitHitPointsPercentage < iHitPointThresholdForNegativePromotion)
 		{	
-			int iHitPointThresholdForNegativePromotion = GC.getDefineINT("CHANCE_FOR_NEGATIVE_PROMOTION_IN_PER_MILLE");
 			int randomValueNegativePromotion = GC.getGameINLINE().getSorenRandNum(1000, "Check for Negativ Promotion");
-			if (randomValueNegativePromotion < iHitPointThresholdForNegativePromotion)
+			if (randomValueNegativePromotion < iChanceForNegativePromotion)
 			{
 				acquireAnyNegativePromotion();
 			}
@@ -1127,13 +1124,11 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 		int UnitMaxHitPointsDefender = pDefender->maxHitPoints(); // should never be 0 here, because Defender won
 		int UnitCurrentHitPointsDefender = pDefender->currHitPoints();
 		int UnitHitPointsPercentageDefender = 100 * (UnitMaxHitPointsDefender - UnitCurrentHitPointsDefender) / UnitMaxHitPointsDefender;
-		int iHitPointThresholdForNegativePromotionDefender = GC.getDefineINT("HEALTH_THRESHOLD_IN_PERCENT_FOR_NEGATIVE_PROMOTION");
 
-		if (UnitHitPointsPercentageDefender < iHitPointThresholdForNegativePromotionDefender)
+		if (UnitHitPointsPercentageDefender < iHitPointThresholdForNegativePromotion)
 		{	
-			int iHitPointThresholdForNegativePromotion = GC.getDefineINT("CHANCE_FOR_NEGATIVE_PROMOTION_IN_PER_MILLE");
-			int randomValueNegativePromotion = GC.getGameINLINE().getSorenRandNum(1000, "Check for Negativ Promotion");
-			if (randomValueNegativePromotion < iHitPointThresholdForNegativePromotion)
+			int randomValueNegativePromotionDefender = GC.getGameINLINE().getSorenRandNum(1000, "Check for Negativ Promotion");
+			if (randomValueNegativePromotionDefender < iHitPointThresholdForNegativePromotion)
 			{
 				pDefender->acquireAnyNegativePromotion();
 			}
