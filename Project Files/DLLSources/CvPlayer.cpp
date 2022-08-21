@@ -22979,13 +22979,14 @@ void CvPlayer::checkForColonialInterventionInNativeWar()
 		return;
 	}
 
-	// now we need to find a Colonial Player that knows both us and the Native Player, but is not at war with us
+	// now we need to find a Colonial Player that knows both us and the Native Player, but is not at war with us or the Natives
 	PlayerTypes eColonialDiploPlayer = NO_PLAYER;
 
 	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
 	{
 		CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
-		if (kPlayer.isAlive() && kPlayer.isPlayable() && !GET_TEAM(kPlayer.getTeam()).isAtWar(getTeam()))
+		CvPlayer& kNativePlayer = GET_PLAYER((PlayerTypes) eNativeAtWarWith);
+		if (kPlayer.isAlive() && kPlayer.isPlayable() && !GET_TEAM(kPlayer.getTeam()).isAtWar(getTeam()) && !GET_TEAM(kPlayer.getTeam()).isAtWar(kNativePlayer.getTeam()))
 		{
 			if (kPlayer.canContact((PlayerTypes) getID()) && kPlayer.canContact(eNativeAtWarWith))
 			{

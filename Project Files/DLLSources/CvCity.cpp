@@ -9766,6 +9766,10 @@ int CvCity::getImprovementStorageModifierForCity() const
 			}
 		}
 	}
+
+	// consider GameSpeed
+	StorageModifierForCity = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
+
 	return StorageModifierForCity;
 }
 // WTP, ray, Improvements give Bonus to their City - PART 3 - END
