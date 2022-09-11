@@ -296,7 +296,7 @@ class CvInfoScreen:
 		self.TEXT_POWER = localText.getText("TXT_KEY_POWER", ())
 		self.TEXT_CULTURE = gc.getYieldInfo(gc.getDefineINT("CULTURE_YIELD")).getDescription()
 
-		self.TEXT_VALUE = localText.getText("TXT_KEY_DEMO_SCREEN_VALUE_TEXT", ())
+		self.TEXT_VALUE = localText.getText("TXT_KEY_DEMO_SCREEN_VALUE_TEXT_COLOURED", ())
 		self.TEXT_RANK = localText.getText("TXT_KEY_DEMO_SCREEN_RANK_TEXT", ())
 		self.TEXT_AVERAGE = localText.getText("TXT_KEY_DEMOGRAPHICS_SCREEN_RIVAL_AVERAGE", ())
 		self.TEXT_BEST = localText.getText("TXT_KEY_INFO_RIVAL_BEST", ())
