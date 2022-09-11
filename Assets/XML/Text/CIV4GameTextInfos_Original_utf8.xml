@@ -1228,11 +1228,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_VALUE_TEXT</Tag>
-        <English>[COLOR_FONT_CREAM]Value[COLOR_REVERT]</English>
-        <French>[COLOR_FONT_CREAM]Valeur[COLOR_REVERT]</French>
-        <German>[COLOR_FONT_CREAM]Wert[COLOR_REVERT]</German>
-        <Italian>[COLOR_FONT_CREAM]Valore[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_FONT_CREAM]Valor[COLOR_REVERT]</Spanish>
+        <English>Value :</English>
+        <French>Valeur :</French>
+        <German>Wert :</German>
+        <Italian>Valore :</Italian>
+        <Spanish>Valor :</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INFO_RIVAL_BEST</Tag>
