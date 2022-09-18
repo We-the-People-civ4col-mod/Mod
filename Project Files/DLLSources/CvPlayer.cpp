@@ -22973,9 +22973,9 @@ void CvPlayer::acquireUsedShip(int iUsedShipClassType, int iPrice)
 			pUnit->addToMap(pStartingPlot->getX_INLINE(), pStartingPlot->getY_INLINE());
 
 			// we damage the Ship a tiny bit
-			int iMin_Damage_Usedhips = GC.getDefineINT("MIN_DAMAGE_PERCENT_USED_SHIPS");
-			int iMax_Damage_UsedShips = GC.getDefineINT("MAX_XP_SPAWNING_USED_SHIPS");
-			int iDamageRand = std::max(iMin_Damage_Usedhips, GC.getGameINLINE().getSorenRandNum(iMax_Damage_UsedShips, "random used ship damage"));
+			int iMin_Damage_UsedShips = GC.getDefineINT("MIN_DAMAGE_PERCENT_USED_SHIPS");
+			int iMax_Damage_UsedShips = GC.getDefineINT("MAX_DAMAGE_PERCENT_USED_SHIPS");
+			int iDamageRand = std::max(iMin_Damage_UsedShips, GC.getGameINLINE().getSorenRandNum(iMax_Damage_UsedShips, "random used ship damage"));
 			pUnit->setDamage(GC.getMAX_HIT_POINTS() * iDamageRand / 100);
 
 			// we give the Unit a negative Promotion
@@ -22983,7 +22983,7 @@ void CvPlayer::acquireUsedShip(int iUsedShipClassType, int iPrice)
 
 			// we give the Unit random XP from 1 to 3
 			int iMin_XP_UsedShips = GC.getDefineINT("MIN_XP_SPAWNING_USED_SHIPS");
-			int iMax_XP_UsedShips = GC.getDefineINT("MAX_DAMAGE_PERCENT_USED_SHIPS");
+			int iMax_XP_UsedShips = GC.getDefineINT("MAX_XP_SPAWNING_USED_SHIPS");
 			int iXPRand = std::max(iMin_XP_UsedShips, GC.getGameINLINE().getSorenRandNum(iMax_XP_UsedShips, "random used ship XP"));
 			pUnit->setExperience(iXPRand);
 
