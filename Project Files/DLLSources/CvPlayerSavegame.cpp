@@ -59,6 +59,7 @@ const int defaultTimerConquistador = 0;
 const int defaultTimerPirates = 0;
 const int defaultTimerContinentalGuard = 0;
 const int defaultTimerMortar = 0;
+const int defaultTimerUsedShips = 0; //WTP, ray Kings Used Ship - START
 const int defaultTimerNativeSlave = 0;
 const int defaultTimerAfricanSlaves = 0;
 const int defaultTimerStealingImmigrant = 0;
@@ -156,6 +157,7 @@ enum SavegameVariableTypes
 	PlayerSave_TimerPirates,
 	PlayerSave_TimerContinentalGuard,
 	PlayerSave_TimerMortar,
+	PlayerSave_TimerUsedShips, //WTP, ray Kings Used Ship - START
 	PlayerSave_TimerNativeSlave,
 	PlayerSave_TimerAfricanSlaves,
 	PlayerSave_TimerStealingImmigrant,
@@ -338,6 +340,7 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_TimerPirates: return "PlayerSave_TimerPirates";
 	case PlayerSave_TimerContinentalGuard: return "PlayerSave_TimerContinentalGuard";
 	case PlayerSave_TimerMortar: return "PlayerSave_TimerMortar";
+	case PlayerSave_TimerUsedShips: return "PlayerSave_TimerUsedShips";	//WTP, ray Kings Used Ship - START
 	case PlayerSave_TimerNativeSlave: return "PlayerSave_TimerNativeSlave";
 	case PlayerSave_TimerAfricanSlaves: return "PlayerSave_TimerAfricanSlaves";
 	case PlayerSave_TimerStealingImmigrant: return "PlayerSave_TimerStealingImmigrant";
@@ -525,6 +528,7 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_iTimerPirates = defaultTimerPirates;
 	m_iTimerContinentalGuard = defaultTimerContinentalGuard;
 	m_iTimerMortar = defaultTimerMortar;
+	m_iTimerUsedShips = defaultTimerUsedShips; //WTP, ray Kings Used Ship
 	m_iTimerNativeSlave = defaultTimerNativeSlave;
 	m_iTimerAfricanSlaves = defaultTimerAfricanSlaves;
 	m_iTimerStealingImmigrant = defaultTimerStealingImmigrant;
@@ -733,6 +737,7 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_TimerPirates: reader.Read(m_iTimerPirates); break;
 		case PlayerSave_TimerContinentalGuard: reader.Read(m_iTimerContinentalGuard); break;
 		case PlayerSave_TimerMortar: reader.Read(m_iTimerMortar); break;
+		case PlayerSave_TimerUsedShips: reader.Read(m_iTimerUsedShips); break;	//WTP, ray Kings Used Ship - START
 		case PlayerSave_TimerNativeSlave: reader.Read(m_iTimerNativeSlave); break;
 		case PlayerSave_TimerAfricanSlaves: reader.Read(m_iTimerAfricanSlaves); break;
 		case PlayerSave_TimerStealingImmigrant: reader.Read(m_iTimerStealingImmigrant); break;
@@ -946,6 +951,7 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_TimerPirates, m_iTimerPirates, defaultTimerPirates);
 	writer.Write(PlayerSave_TimerContinentalGuard, m_iTimerContinentalGuard, defaultTimerContinentalGuard);
 	writer.Write(PlayerSave_TimerMortar, m_iTimerMortar, defaultTimerMortar);
+	writer.Write(PlayerSave_TimerUsedShips, m_iTimerUsedShips, defaultTimerUsedShips);//WTP, ray Kings Used Ship - START
 	writer.Write(PlayerSave_TimerNativeSlave, m_iTimerNativeSlave, defaultTimerNativeSlave);
 	writer.Write(PlayerSave_TimerAfricanSlaves, m_iTimerAfricanSlaves, defaultTimerAfricanSlaves);
 	writer.Write(PlayerSave_TimerStealingImmigrant, m_iTimerStealingImmigrant, defaultTimerStealingImmigrant);

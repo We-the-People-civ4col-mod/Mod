@@ -10169,6 +10169,62 @@
             </Responses>
         </DiplomacyInfo>
         <DiplomacyInfo>
+            <Type>USER_DIPLOCOMMENT_KING_ASK_FOR_USED_SHIP</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>USER_DIPLO_ASK_TO_BUY_USED_SHIP</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
+            <Type>AI_DIPLOCOMMENT_KING_OFFERS_USED_SHIP</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>AI_DIPLO_KING_OFFERS_USED_SHIP</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
+            <Type>AI_DIPLOCOMMENT_KING_REFUSES_TO_OFFER_USED_SHIP</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>AI_DIPLO_KING_REFUSES_TO_OFFER_USED_SHIP</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
+            <Type>USER_DIPLOCOMMENT_ACCEPT_BUY_USED_SHIP</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>USER_DIPLO_ACCEPT_BUY_USED_SHIP</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
             <Type>USER_DIPLOCOMMENT_PROPOSE</Type>
             <Responses>
                 <Response>

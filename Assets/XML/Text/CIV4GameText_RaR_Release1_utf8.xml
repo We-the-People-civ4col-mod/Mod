@@ -368,6 +368,11 @@
         <German>Milord, der [COLOR_UNIT_TEXT]Mörser[COLOR_REVERT], den wir von unseren europäischen Alliierten gekauft haben, ist nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] geliefert worden.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_USED_SHIP_BOUGHT</Tag>
+        <English>Milord, the [COLOR_UNIT_TEXT]%s1_shipname[COLOR_REVERT], the used [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT] we recently bought for [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD] has been readied in Europe.</English>
+        <German>Milord, die [COLOR_UNIT_TEXT]%s1_shipname[COLOR_REVERT], das gebrauchtes Schiff vom Typ [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT], welches wir [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD] erworben haben, steht in Europa bereit.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_TRAITS</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Civilization Traits[COLOR_REVERT]</English>
         <French>[COLOR_FONT_RED]Profil de civilisation[COLOR_REVERT]</French>

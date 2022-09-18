@@ -1352,4 +1352,37 @@
 		<DefineName>COLONIAL_INTERVENTION_NATIVE_WAR_GOLD_TO_PAY_PER_UNIT</DefineName>
 		<iDefineIntVal>1000</iDefineIntVal>
 	</Define>
+	<!-- USED SHIPS -->
+	<Define>
+		<DefineName>FIRST_TURN_USED_SHIPS_AVAILABLE</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>USED_SHIP_TIMER</DefineName>
+		<iDefineIntVal>30</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MIN_DISCOUNT_USED_SHIP_PERCENT</DefineName>
+		<iDefineIntVal>20</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MAX_DISCOUNT_USED_SHIP_PERCENT</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MIN_XP_SPAWNING_USED_SHIPS</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MAX_XP_SPAWNING_USED_SHIPS</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MIN_DAMAGE_PERCENT_USED_SHIPS</DefineName>
+		<iDefineIntVal>25</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MAX_DAMAGE_PERCENT_USED_SHIPS</DefineName>
+		<iDefineIntVal>75</iDefineIntVal>
+	</Define>
 </Civ4Defines>

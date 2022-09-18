@@ -68,6 +68,12 @@ CvPlayer::CvPlayer()
 	m_iTimerStealingImmigrant = 0;
 	// R&R, ray, Timers Diplo Events - END
 
+	//WTP, ray Kings Used Ship - START
+	m_iTimerUsedShips = 0; 
+	m_iCachedUsedShipPrice = 0;
+	m_iCachedUsedShipClassTypeID = 0;
+	//WTP, ray Kings Used Ship - END
+
 	m_iChurchFavoursReceived = 0; // R&R, ray, Church Favours
 
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
@@ -4004,6 +4010,26 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 		break;
 	// R&R, ray, Pirates - END
 
+	//WTP, ray Kings Used Ship - START
+	case DIPLOEVENT_ACQUIRE_USED_SHIPS:
+		{
+			// get the Player
+			CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+
+			// read cash for the data of the used
+			int iRandomUsedShipTypeID = kPlayer.m_iCachedUsedShipClassTypeID;
+			int pricetopay = kPlayer.m_iCachedUsedShipPrice;
+
+			// call the logic
+			kPlayer.acquireUsedShip(iRandomUsedShipTypeID, pricetopay);
+
+			// reset cache, optional - would be overwritten anyways
+			kPlayer.m_iCachedUsedShipPrice = 0;
+			kPlayer.m_iCachedUsedShipClassTypeID = 0;
+
+		}
+		break;
+	//WTP, ray Kings Used Ship - END
 
 	// R&R, ray, Continental Guard - START
 	case DIPLOEVENT_ACQUIRE_CONTINENTAL_GUARD:
@@ -22794,6 +22820,187 @@ int CvPlayer::getChurchFavourPrice()
 	return iChurchFavourPrice;
 }
 // R&R, ray, Church Favours - END
+
+//WTP, ray Kings Used Ship - START
+void CvPlayer::cacheUsedShipData(int iUsedShipPrice, int iUsedShipClassType)
+{
+	m_iCachedUsedShipPrice = iUsedShipPrice;
+	m_iCachedUsedShipClassTypeID = iUsedShipClassType;
+	return;
+}
+
+int CvPlayer::getUsedShipPrice(int iUsedShipClassType)
+{
+	int iPrice = 0;
+
+	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iUsedShipClassType);
+	if (eUnit != NO_UNIT)
+	{
+		iPrice = getEuropeUnitBuyPrice(eUnit);
+
+		// we now calculate the discount percent
+		int iMinDiscountForNewShipsPercent = GC.getDefineINT("MIN_DISCOUNT_USED_SHIP_PERCENT");
+		int iMaxDiscountForNewShipsPercent = GC.getDefineINT("MAX_DISCOUNT_USED_SHIP_PERCENT");
+		
+		int iDiscountRandPercent = std::max(iMinDiscountForNewShipsPercent, GC.getGameINLINE().getSorenRandNum(iMaxDiscountForNewShipsPercent, "random used ship discount"));
+
+		// we modify the price by the attitude of the King
+		int iKingsAttitude = GET_PLAYER(getParent()).AI_getAttitudeVal(getID());
+		iDiscountRandPercent = iDiscountRandPercent + iKingsAttitude;
+
+		// let us not go above max limit
+		if (iDiscountRandPercent > iMaxDiscountForNewShipsPercent)
+		{
+			iDiscountRandPercent = iMaxDiscountForNewShipsPercent;
+		}
+
+		iPrice = iPrice * (100 - iDiscountRandPercent) / 100;
+	}
+
+	return iPrice;
+}
+
+int CvPlayer::getRandomUsedShipClassTypeID()
+{
+	UnitClassTypes eBestUnitClass = NO_UNITCLASS;
+	int iBestLastCompareValue = 0;
+
+	for (int iI = 0; iI < NUM_UNITCLASS_TYPES; ++iI)
+	{
+		int iUnitClassCompareRand = GC.getGameINLINE().getSorenRandNum(100, "Used Ship Class Rand");
+		if (iUnitClassCompareRand > iBestLastCompareValue)
+		{
+			UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI);
+			if (eUnit != NULL && GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA && GC.getUnitInfo(eUnit).getEuropeCost() > 0 && getGold() > GC.getUnitInfo(eUnit).getEuropeCost())
+			{
+				eBestUnitClass = (UnitClassTypes)iI;
+				// we perfer weaker combat vessels, so we substract combat value so a Trade Vessel might get a better value
+				iBestLastCompareValue = iUnitClassCompareRand - (GC.getUnitInfo(eUnit).getCombat() / 2);
+			}
+		}
+	}
+
+	// we should always find a Ship
+	FAssert(eBestUnitClass != NO_UNITCLASS);
+	return eBestUnitClass;
+}
+
+bool CvPlayer::isKingWillingToTradeUsedShips()
+{
+	if (!isAlive())
+	{
+		return false;
+	}
+
+	if (getParent() == NO_PLAYER)
+	{
+		return false;
+	}
+
+	if (isInRevolution())
+	{
+		return false;
+	}
+
+	// here we check first turn
+	int iDefaultFirstTurnForNewShips = GC.getDefineINT("FIRST_TURN_USED_SHIPS_AVAILABLE");
+	int iGameSpeedModifier = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent();
+	int iFirstTurnForNewShips = iDefaultFirstTurnForNewShips * iGameSpeedModifier / 100; 
+	if (GC.getGameINLINE().getElapsedGameTurns() < iFirstTurnForNewShips)
+	{
+		return false;
+	}
+
+	// here we check since last time bought
+	if (m_iTimerUsedShips > 0)
+	{
+		return false;
+	}
+
+	int iLoop;
+	CvCity* pCity = firstCity(&iLoop);
+	if (pCity == NULL)
+	{
+		return false;
+	}
+
+	return true;
+}
+
+void CvPlayer::resetCounterForUsedShipDeals()
+{
+	// we increase the timer, to prevent Ship directly being bought again or save-scumming --> better in Diplo-Event that asks
+	int iDefaultUsedShipTimer = GC.getDefineINT("USED_SHIP_TIMER");
+	int iGameSpeedModifier = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent();
+	m_iTimerUsedShips = iDefaultUsedShipTimer * iGameSpeedModifier / 100;
+
+	return;
+}
+
+void CvPlayer::acquireUsedShip(int iUsedShipClassType, int iPrice)
+{
+	// we leave if there is no City, just for safety, otherwise AI might potentially also have issues using the Ship
+	// we spawn however in Europe
+	int iLoop;
+	CvCity* pCity = firstCity(&iLoop);
+	if (pCity == NULL)
+	{
+		return;
+	}
+
+	// if for some strange reason the gold is not enough, also leave
+	if (getGold() < iPrice)
+	{
+		return;
+	}
+
+	// check the Colonization Specific Unit
+	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iUsedShipClassType);
+
+	// get the Starting Plot
+	CvPlot* pStartingPlot = getStartingPlot(); 
+
+	if (NO_UNIT != eUnit && NULL != pStartingPlot)
+	{	
+		// we init the Used Ship as Unit from its Unit Class in Europe
+		// code below in comments would be in Colonies - as alternative
+		// CvUnit* pUnit = initUnit(eUnit, NO_PROFESSION, pCity->getX_INLINE(), pCity->getY_INLINE());
+		CvUnit* pUnit = initUnit(eUnit, NO_PROFESSION, INVALID_PLOT_COORD, INVALID_PLOT_COORD);
+        if (pUnit != NULL)
+		{
+			pUnit->setUnitTravelState(UNIT_TRAVEL_STATE_IN_EUROPE, false);
+			//add unit to map after setting Europe state so that it doesn't bump enemy units
+			pUnit->addToMap(pStartingPlot->getX_INLINE(), pStartingPlot->getY_INLINE());
+
+			// we damage the Ship a tiny bit
+			int iMin_Damage_Usedhips = GC.getDefineINT("MIN_DAMAGE_PERCENT_USED_SHIPS");
+			int iMax_Damage_UsedShips = GC.getDefineINT("MAX_XP_SPAWNING_USED_SHIPS");
+			int iDamageRand = std::max(iMin_Damage_Usedhips, GC.getGameINLINE().getSorenRandNum(iMax_Damage_UsedShips, "random used ship damage"));
+			pUnit->setDamage(GC.getMAX_HIT_POINTS() * iDamageRand / 100);
+
+			// we give the Unit a negative Promotion
+			pUnit->acquireAnyNegativePromotion();
+
+			// we give the Unit random XP from 1 to 3
+			int iMin_XP_UsedShips = GC.getDefineINT("MIN_XP_SPAWNING_USED_SHIPS");
+			int iMax_XP_UsedShips = GC.getDefineINT("MAX_DAMAGE_PERCENT_USED_SHIPS");
+			int iXPRand = std::max(iMin_XP_UsedShips, GC.getGameINLINE().getSorenRandNum(iMax_XP_UsedShips, "random used ship XP"));
+			pUnit->setExperience(iXPRand);
+
+			// we pay the Gold
+			changeGold(-iPrice);
+
+			// we post a message
+			CvWString szBuffer;
+			szBuffer = gDLL->getText("TXT_KEY_USED_SHIP_BOUGHT", pUnit->getNameKey(), pUnit->getUnitInfo().getTextKeyWide(), iPrice);
+			gDLL->getInterfaceIFace()->addMessage(pUnit->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, pUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pStartingPlot->getX_INLINE(), pStartingPlot->getY_INLINE(), true, true);
+		}
+	}
+
+	return;
+}
+// //WTP, ray Kings Used Ship - END
+
 
 // R&R, ray, Church War - START
 void CvPlayer::checkForChurchWar()

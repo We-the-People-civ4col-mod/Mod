@@ -5300,6 +5300,26 @@
         <Spanish>Sólo os protegeremos cuando lo consideremos oportuno. Ahora podéis retiraros.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>USER_DIPLO_ASK_TO_BUY_USED_SHIP</Tag>
+        <English>Could your Majeyty help us to acquire a used ship for a good price?</English>
+        <German>Könnte Ihre Majestät uns helfen günstig ein gebrauchtes Schiffe zu erwerben?</German>
+    </TEXT>
+    <TEXT>
+        <Tag>AI_DIPLO_KING_OFFERS_USED_SHIP</Tag>
+        <English>We know a ship trader willing to sell a %s3_unit for %d1[ICON_GOLD] and might arrange the deal.</English>
+        <German>Wir kennen einen Schiffshändler, der ein Schiff des Typs %s3_unit für %d1[ICON_GOLD] verkaufen möchte.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>AI_DIPLO_KING_REFUSES_TO_OFFER_USED_SHIP</Tag>
+        <English>Currently we cannot bothered with such business. Maybe in a few months we may grant you such a favour</English>
+        <German>Im Moment können wir mit solch Lapalien nicht belästigt werden. Vielleicht können wir aber in einigen Monaten helfen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>USER_DIPLO_ACCEPT_BUY_USED_SHIP</Tag>
+        <English>Thank you your Majesty. We appreciate your support and gladly acquire it.</English>
+        <German>Danke Eure Majestät. Wir schätzen eure Unterstätzung und erwerben das Schiff gerne.</German>
+    </TEXT>
+    <TEXT>
         <Tag>AI_DIPLO_KING_REVIVE_1</Tag>
         <English>Fate does not seem to be favourably disposed towards you. But breathe a sigh of relief. New emigrants are waiting for you in the home port. Do not disappoint Us! To cover the expenses of the Crown, We shall raise your tax rate to %d1_new_rate%%. You may thank Us for this mercy.</English>
         <French>Le destin ne semble pas être favorablement disposé à votre égard. Mais poussez un soupir de soulagement. De nouveaux émigrants vous attendent dans le port d'attache. Ne nous décevez pas ! Pour couvrir les dépenses de la Couronne, Nous augmenterons votre taux d'imposition à %d1_new_rate%%. Vous pouvez Nous remercier pour cette clémence.</French>

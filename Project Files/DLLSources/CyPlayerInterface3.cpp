@@ -115,7 +115,14 @@ void CyPlayerPythonInterface3(python::class_<CyPlayer>& x)
 		// WTP, ray, Yields Traded Total for Africa and Port Royal - END
 		.def("getMissionaryPoints", &CyPlayer::getMissionaryPoints, "int (int /*PlayerTypes*/ ePlayer)") 
 		.def("missionaryThreshold", &CyPlayer::missionaryThreshold, "int (int /*PlayerTypes*/ ePlayer)") 
-		.def("getMissionaryRateModifier", &CyPlayer::getMissionaryRateModifier, "int (int /*PlayerTypes*/ ePlayer)") 
+		.def("getMissionaryRateModifier", &CyPlayer::getMissionaryRateModifier, "int (int /*PlayerTypes*/ ePlayer)")
+		//WTP, ray Kings Used Ship - START
+		.def("cacheUsedShipData", &CyPlayer::cacheUsedShipData, "int (int iUsedShipPrice, int iUsedShipClassType)") 
+		.def("getRandomUsedShipClassTypeID", &CyPlayer::getRandomUsedShipClassTypeID, "int ()") 
+		.def("getUsedShipPrice", &CyPlayer::getUsedShipPrice, "int (int iUsedShipClassType)") 
+		.def("isKingWillingToTradeUsedShips", &CyPlayer::isKingWillingToTradeUsedShips, "bool ()")
+		.def("resetCounterForUsedShipDeals", &CyPlayer::resetCounterForUsedShipDeals, "void ()")
+		//WTP, ray Kings Used Ship - END
 		// R&R, Robert Surcouf, No More Variables Hidden game option END		
 		.def("getYieldScoreTotalINT", &CyPlayer::getYieldScoreTotalINT, "int (int /*YieldTypes*/ eIndex)") // R&R, vetiarvind, Price dependent tax rate change
 		.def("getChurchFavourPrice", &CyPlayer::getChurchFavourPrice, "int ()") // R&R, ray, Church Favours

@@ -265,6 +265,7 @@ public:
 	int missionaryThreshold(int /*PlayerTypes*/  ePlayer) const;
 	int getMissionaryRateModifier() const;
 	// R&R, Robert Surcouf, No More Variables Hidden game option END
+
 	int getTaxRate();
 	void changeTaxRate(int iChange);
 	bool canTradeWithEurope();
@@ -343,6 +344,14 @@ public:
 	void addRevolutionEuropeUnit(int /*UnitTypes*/ eUnit, int /*ProfessionTypes*/ eProfession);
 
 	int getChurchFavourPrice() const; // R&R, ray, Church Favours
+
+	// R&R, ray, Church Favours - START
+	void cacheUsedShipData(int iUsedShipPrice, int iUsedShipClassType);
+	int getRandomUsedShipClassTypeID() const;
+	int getUsedShipPrice(int iUsedShipClassType) const;
+	bool isKingWillingToTradeUsedShips() const;
+	void resetCounterForUsedShipDeals();
+	// R&R, ray, Church Favours - START
 
 	int getNumTradeMessages() const;
 	std::wstring getTradeMessage(int i) const;

@@ -164,7 +164,7 @@
         <UnitClassInfo>
             <Type>UNITCLASS_KAUTSCHUK_COLLECTOR</Type>
             <Description>TXT_KEY_UNITCLASS_KAUTSCHUK_COLLECTOR</Description>
-            <DefaultUnit>UNIT_MAPLE_KAUTSCHUK</DefaultUnit>
+            <DefaultUnit>UNIT_KAUTSCHUK_COLLECTOR</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_FARMER</Type>
@@ -1190,7 +1190,7 @@
             <Type>UNITCLASS_PADDED_FURNITURE</Type>
             <Description>TXT_KEY_UNITCLASS_PADDED_FURNITURE</Description>
             <DefaultUnit>UNIT_PADDED_FURNITURE</DefaultUnit>
-        </UnitClassInfo>        
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_TOOLS</Type>
             <Description>TXT_KEY_UNITCLASS_TOOLS</Description>
@@ -1215,7 +1215,7 @@
             <Type>UNITCLASS_SHEEP</Type>
             <Description>TXT_KEY_UNITCLASS_SHEEP</Description>
             <DefaultUnit>UNIT_SHEEP</DefaultUnit>
-        </UnitClassInfo>	
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_GOATS</Type>
             <Description>TXT_KEY_UNITCLASS_GOATS</Description>
@@ -1225,12 +1225,12 @@
             <Type>UNITCLASS_PIGS</Type>
             <Description>TXT_KEY_UNITCLASS_PIGS</Description>
             <DefaultUnit>UNIT_PIGS</DefaultUnit>
-        </UnitClassInfo>        
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CATTLE</Type>
             <Description>TXT_KEY_UNITCLASS_CATTLE</Description>
             <DefaultUnit>UNIT_CATTLE</DefaultUnit>
-        </UnitClassInfo>	
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CHICKEN</Type>
             <Description>TXT_KEY_UNITCLASS_CHICKEN</Description>
@@ -1240,7 +1240,7 @@
             <Type>UNITCLASS_GEESE</Type>
             <Description>TXT_KEY_UNITCLASS_GEESE</Description>
             <DefaultUnit>UNIT_GEESE</DefaultUnit>
-        </UnitClassInfo>        	
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_HORSES</Type>
             <Description>TXT_KEY_UNITCLASS_HORSES</Description>

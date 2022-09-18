@@ -1191,13 +1191,45 @@ int CyPlayer::getMissionaryRateModifier() const
 }
 // R&R, Robert Surcouf, No More Variables Hidden game option END
 
+//WTP, ray Kings Used Ship - START
+void CyPlayer::cacheUsedShipData(int iUsedShipPrice, int iUsedShipClassType)
+{
+		if (m_pPlayer)
+		{
+			m_pPlayer->cacheUsedShipData(iUsedShipPrice, iUsedShipClassType);
+		}
+}
+
+int CyPlayer::getRandomUsedShipClassTypeID() const
+{
+	return m_pPlayer ? m_pPlayer->getRandomUsedShipClassTypeID() : -1; 
+}
+
+int CyPlayer::getUsedShipPrice(int /*UnitClaseTypes*/ iUsedShipClassType) const
+{
+	return m_pPlayer ? m_pPlayer->getUsedShipPrice(iUsedShipClassType) : -1; 
+}
+
+bool CyPlayer::isKingWillingToTradeUsedShips() const
+{
+	return m_pPlayer ? m_pPlayer->isKingWillingToTradeUsedShips() : false;
+}
+
+void CyPlayer::resetCounterForUsedShipDeals()
+{
+		if (m_pPlayer)
+		{
+			m_pPlayer->resetCounterForUsedShipDeals();
+		}
+}
+//WTP, ray Kings Used Ship - END
+
 // R&R, ray, Church Favours - START
 int CyPlayer::getChurchFavourPrice() const
 {
 	return m_pPlayer ? m_pPlayer->getChurchFavourPrice() : -1; 
 }
 // R&R, ray, Church Favours - END
-
 
 /** NBMOD TAX **/
 int CyPlayer::NBMOD_GetMaxTaxRate() const

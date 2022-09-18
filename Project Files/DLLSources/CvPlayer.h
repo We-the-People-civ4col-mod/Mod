@@ -127,6 +127,15 @@ public:
 	int getChurchFavourPrice();
 	// R&R, ray, Church Favours - END
 
+	//WTP, ray Kings Used Ship - START
+	void cacheUsedShipData(int iUsedShipPrice, int iUsedShipClassType);
+	int getUsedShipPrice(int iUsedShipClassType);
+	int getRandomUsedShipClassTypeID();
+	bool isKingWillingToTradeUsedShips();
+	void resetCounterForUsedShipDeals();
+	void acquireUsedShip(int iUsedShipClassType, int iPrice);
+	//WTP, ray Kings Used Ship - END
+
 	// R&R, ray, Bargaining - Start
 	bool tryGetNewBargainPriceSell();
 	bool tryGetNewBargainPriceBuy();
@@ -1021,6 +1030,12 @@ protected:
 	int m_iTimerAfricanSlaves;
 	int m_iTimerStealingImmigrant;
 	// R&R, ray, Timers Diplo Events - END
+
+	//WTP, ray Kings Used Ship - START
+	int m_iTimerUsedShips;
+	int m_iCachedUsedShipPrice;
+	int m_iCachedUsedShipClassTypeID;
+	//WTP, ray Kings Used Ship - START
 
 	int m_iChurchFavoursReceived; // R&R, ray, Church Favours
 
