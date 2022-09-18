@@ -2085,6 +2085,61 @@
                     <Civilizations/>
                     <Leaders>
                         <Leader>
+                            <LeaderType>LEADER_ENGLISH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_FRENCH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_SPANISH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_DUTCH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_PORTUGUESE_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_DANISH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_SWEDISH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_RUSSIAN_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                    </Leaders>
+                    <Attitudes>
+                        <Attitude>
+                            <AttitudeType>ATTITUDE_FRIENDLY</AttitudeType>
+                            <bAttitudeType>1</bAttitudeType>
+                        </Attitude>
+                        <Attitude>
+                            <AttitudeType>ATTITUDE_PLEASED</AttitudeType>
+                            <bAttitudeType>1</bAttitudeType>
+                        </Attitude>
+                        <Attitude>
+                            <AttitudeType>ATTITUDE_CAUTIOUS</AttitudeType>
+                            <bAttitudeType>1</bAttitudeType>
+                        </Attitude>
+                    </Attitudes>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>AI_DIPLO_KING_WELCOME_FR</Text>
+                    </DiplomacyText>
+                </Response>
+                <Response>
+                    <Civilizations/>
+                    <Leaders>
+                        <Leader>
                             <LeaderType>LEADER_PENN</LeaderType>
                             <bLeaderType>1</bLeaderType>
                         </Leader>
@@ -3371,6 +3426,57 @@
                     <DiplomacyPowers/>
                     <DiplomacyText>
                         <Text>AI_DIPLO_CHURCH_WELCOME_FUR</Text>
+                    </DiplomacyText>
+                </Response>
+                <Response>
+                    <Civilizations/>
+                    <Leaders>
+                        <Leader>
+                            <LeaderType>LEADER_ENGLISH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_FRENCH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_SPANISH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_DUTCH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_PORTUGUESE_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_DANISH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_SWEDISH_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                        <Leader>
+                            <LeaderType>LEADER_RUSSIAN_KING</LeaderType>
+                            <bLeaderType>1</bLeaderType>
+                        </Leader>
+                    </Leaders>
+                    <Attitudes>
+                        <Attitude>
+                            <AttitudeType>ATTITUDE_ANNOYED</AttitudeType>
+                            <bAttitudeType>1</bAttitudeType>
+                        </Attitude>
+                        <Attitude>
+                            <AttitudeType>ATTITUDE_FURIOUS</AttitudeType>
+                            <bAttitudeType>1</bAttitudeType>
+                        </Attitude>
+                    </Attitudes>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>AI_DIPLO_KING_WELCOME_FUR</Text>
                     </DiplomacyText>
                 </Response>
                 <Response>
