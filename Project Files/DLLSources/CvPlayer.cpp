@@ -22965,22 +22965,21 @@ void CvPlayer::doAILogicforUsedShipDeals()
 	// we count the Ships, both transports and combat
 	int iNumTransportShips = 0;
 	int iNumCombatShips = 0;
-	for (int i=0;i<getNumUnits();i++)
+
+	int iLoop;
+	CvUnit* pLoopUnit;
+	for(pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
 	{
-		CvUnit* pUnit = getUnit(i);
-		if (pUnit != NULL)
+		UnitAITypes eUnitAI = pLoopUnit->AI_getUnitAIType();
+		if (eUnitAI != NO_UNITAI)
 		{
-			UnitAITypes eUnitAI = pUnit->AI_getUnitAIType();
-			if (eUnitAI != NUM_UNITAI_TYPES)
+			if (eUnitAI == UNITAI_TRANSPORT_SEA)
 			{
-				if (eUnitAI == UNITAI_TRANSPORT_SEA)
-				{
-					iNumTransportShips++;
-				}
-				else if (eUnitAI == UNITAI_ASSAULT_SEA || eUnitAI == UNITAI_COMBAT_SEA || eUnitAI == UNITAI_ESCORT_SEA ||  eUnitAI == UNITAI_PIRATE_SEA)
-				{
-					iNumCombatShips++;
-				}
+				iNumTransportShips++;
+			}
+			else if (eUnitAI == UNITAI_ASSAULT_SEA || eUnitAI == UNITAI_COMBAT_SEA || eUnitAI == UNITAI_ESCORT_SEA ||  eUnitAI == UNITAI_PIRATE_SEA)
+			{
+				iNumCombatShips++;
 			}
 		}
 	}
@@ -22989,7 +22988,7 @@ void CvPlayer::doAILogicforUsedShipDeals()
 	int iNumCities = getNumCities();
 	
 	// we exit if there are no Cities, and no other Ships
-	if (iNumCities == 0 || iNumTransportShips == 0 || iNumCombatShips == 0)
+	if (iNumCities == 0)
 	{
 		return;
 	}
