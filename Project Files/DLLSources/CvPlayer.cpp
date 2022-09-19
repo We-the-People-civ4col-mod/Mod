@@ -23049,9 +23049,8 @@ void CvPlayer::doAILogicforUsedShipDeals()
 		CvCity* pCity = firstCity(&iLoop);
 		if (eUnit != NO_UNIT && NULL != pCity)
 		{	
-			// we init the Used Ship as Unit from its Unit Class in Europe
-			// code below in comments would be in Colonies - as alternative
-			// CvUnit* pUnit = initUnit(eUnit, NO_PROFESSION, pCity->getX_INLINE(), pCity->getY_INLINE());
+			// for AI we init the Used Ship in the Colonies
+			// simply because I was afraid if it could cause issues to init in the New World
 			CvUnit* pUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE(), NO_UNITAI);
 			if (pUnit != NULL)
 			{
