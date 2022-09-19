@@ -23004,13 +23004,6 @@ void CvPlayer::doAILogicforUsedShipDeals()
 
 	int iShipPrice = getUsedShipPrice(iShipClassTypeID);
 
-	// exit if the cost is more than half of current gold
-	// AI might then need the gold for other stuff
-	if (iShipPrice > getGold() / 2)
-	{
-		return;
-	}
-
 	// now let us check if the need to decide if it should be acquired
 	bool bShipShouldBeAcquired = false;
 
@@ -23044,37 +23037,8 @@ void CvPlayer::doAILogicforUsedShipDeals()
 	// also reset the counter so AI will also have to wait for next bargain
 	if (bShipShouldBeAcquired)
 	{
-		int iLoop;
-		CvCity* pCity = firstCity(&iLoop);
-		if (eUnit != NO_UNIT && NULL != pCity)
-		{	
-			// for AI we init the Used Ship in the Colonies
-			// simply because I was afraid if it could cause issues to init in the New World
-			CvUnit* pUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE(), NO_UNITAI);
-			if (pUnit != NULL)
-			{
-				// we damage the Ship a tiny bit
-				int iMin_Damage_UsedShips = GC.getDefineINT("MIN_DAMAGE_PERCENT_USED_SHIPS");
-				int iMax_Damage_UsedShips = GC.getDefineINT("MAX_DAMAGE_PERCENT_USED_SHIPS");
-				int iDamageRand = std::max(iMin_Damage_UsedShips, GC.getGameINLINE().getSorenRandNum(iMax_Damage_UsedShips, "random used ship damage"));
-				pUnit->setDamage(GC.getMAX_HIT_POINTS() * iDamageRand / 100);
-
-				// for AI we do not give the Unit a negative Promotion, it would heal it anyways in City
-				// pUnit->acquireAnyNegativePromotion();
-
-				// we give the Unit random XP from 1 to 3
-				int iMin_XP_UsedShips = GC.getDefineINT("MIN_XP_SPAWNING_USED_SHIPS");
-				int iMax_XP_UsedShips = GC.getDefineINT("MAX_XP_SPAWNING_USED_SHIPS");
-				int iXPRand = std::max(iMin_XP_UsedShips, GC.getGameINLINE().getSorenRandNum(iMax_XP_UsedShips, "random used ship XP"));
-				pUnit->setExperience(iXPRand);
-
-				// we pay the Gold
-				changeGold(-iShipPrice);
-
-				// we reset the counter for Used Ships
-				resetCounterForUsedShipDeals();
-			}
-		}
+		acquireUsedShip(iShipClassTypeID, iShipPrice);
+		resetCounterForUsedShipDeals();
 	}
 
 	return;
