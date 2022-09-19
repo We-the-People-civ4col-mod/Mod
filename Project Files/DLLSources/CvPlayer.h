@@ -132,6 +132,8 @@ public:
 	int getUsedShipPrice(int iUsedShipClassType);
 	int getRandomUsedShipClassTypeID();
 	bool isKingWillingToTradeUsedShips();
+	void decreaseCounterForUsedShipDeals();
+	void doAILogicforUsedShipDeals();
 	void resetCounterForUsedShipDeals();
 	void acquireUsedShip(int iUsedShipClassType, int iPrice);
 	//WTP, ray Kings Used Ship - END

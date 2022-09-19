@@ -897,13 +897,16 @@ class CvDiplomacy:
 		# WTP, ray Kings Used Ship - START
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_KING_ASK_FOR_USED_SHIP")):
 			iRandomUsedShip = gc.getPlayer(gc.getGame().getActivePlayer()).getRandomUsedShipClassTypeID()
-			iPrice = gc.getPlayer(gc.getGame().getActivePlayer()).getUsedShipPrice(iRandomUsedShip)
- 			if (gc.getPlayer(gc.getGame().getActivePlayer()).isKingWillingToTradeUsedShips() and gc.getPlayer(gc.getGame().getActivePlayer()).getGold() >= iPrice):
-				gc.getPlayer(gc.getGame().getActivePlayer()).resetCounterForUsedShipDeals()
-				szName = gc.getUnitClassInfo(iRandomUsedShip).getTextKey()
-				# We store this to the cache at the Player for Used Ship Data
-				gc.getPlayer(gc.getGame().getActivePlayer()).cacheUsedShipData(iPrice,iRandomUsedShip);
-				self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_KING_OFFERS_USED_SHIP"), iPrice, iRandomUsedShip, szName)
+			if (iRandomUsedShip != -1):
+				iPrice = gc.getPlayer(gc.getGame().getActivePlayer()).getUsedShipPrice(iRandomUsedShip)
+				if (gc.getPlayer(gc.getGame().getActivePlayer()).isKingWillingToTradeUsedShips() and gc.getPlayer(gc.getGame().getActivePlayer()).getGold() >= iPrice):
+					gc.getPlayer(gc.getGame().getActivePlayer()).resetCounterForUsedShipDeals()
+					szName = gc.getUnitClassInfo(iRandomUsedShip).getTextKey()
+					# We store this to the cache at the Player for Used Ship Data
+					gc.getPlayer(gc.getGame().getActivePlayer()).cacheUsedShipData(iPrice,iRandomUsedShip);
+					self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_KING_OFFERS_USED_SHIP"), iPrice, iRandomUsedShip, szName)
+				else:
+					self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_KING_REFUSES_TO_OFFER_USED_SHIP"))
 			else:
 				self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_KING_REFUSES_TO_OFFER_USED_SHIP"))
 

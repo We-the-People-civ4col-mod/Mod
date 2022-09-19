@@ -2188,6 +2188,10 @@ void CvPlayer::doTurn()
 		*/
 		//WTP, ray, fixing precalcuated Diplo Event Issue - END
 
+		//WTP, ray Kings Used Ship - START
+		decreaseCounterForUsedShipDeals();
+		//WTP, ray Kings Used Ship - END
+
 		// TAC - AI Economy - Ray - START
 		if (!isHuman())
 		{
@@ -2198,6 +2202,10 @@ void CvPlayer::doTurn()
 			redistributeWood();
 			// R&R, ray, redistribute cannons and muskets
 			redistributeCannonsAndMuskets();
+
+			//WTP, ray Kings Used Ship - START
+			doAILogicforUsedShipDeals();
+			//WTP, ray Kings Used Ship - END
 		}
 		// TAC - AI Economy - Ray - END
 	}
@@ -22880,8 +22888,8 @@ int CvPlayer::getRandomUsedShipClassTypeID()
 		}
 	}
 
-	// we should always find a Ship
-	FAssert(eBestUnitClass != NO_UNITCLASS);
+	// it is possible that we do not find a Ship because fo the Money check with getGold()
+	// FAssert(eBestUnitClass != NO_UNITCLASS);
 	return eBestUnitClass;
 }
 
@@ -22927,6 +22935,153 @@ bool CvPlayer::isKingWillingToTradeUsedShips()
 	return true;
 }
 
+void CvPlayer::decreaseCounterForUsedShipDeals()
+{
+	if (m_iTimerUsedShips > 0)
+	{
+		m_iTimerUsedShips = m_iTimerUsedShips - 1;
+	}
+}
+
+void CvPlayer::doAILogicforUsedShipDeals()
+{
+	// comment: 
+	// The call to this function already checks that it is not Human
+	// isKingWillingToTradeUsedShips should check the rest - should also catch non-European
+
+	if(!isPlayable())
+	{
+		return;
+	}
+
+	// let us check the timers and all other conditions
+	if (!isKingWillingToTradeUsedShips())
+	{
+		return;
+	}
+
+	// now let us do the actual logic
+
+	// we count the Ships, both transports and combat
+	int iNumTransportShips = 0;
+	int iNumCombatShips = 0;
+	for (int i=0;i<getNumUnits();i++)
+	{
+		CvUnit* pUnit = getUnit(i);
+		if (pUnit != NULL)
+		{
+			UnitAITypes eUnitAI = pUnit->AI_getUnitAIType();
+			if (eUnitAI != NUM_UNITAI_TYPES)
+			{
+				if (eUnitAI == UNITAI_TRANSPORT_SEA)
+				{
+					iNumTransportShips++;
+				}
+				else if (eUnitAI == UNITAI_ASSAULT_SEA || eUnitAI == UNITAI_COMBAT_SEA || eUnitAI == UNITAI_ESCORT_SEA ||  eUnitAI == UNITAI_PIRATE_SEA)
+				{
+					iNumCombatShips++;
+				}
+			}
+		}
+	}
+
+	// we count the Cities
+	int iNumCities = getNumCities();
+	
+	// we exit if there are no Cities, and no other Ships
+	if (iNumCities == 0 || iNumTransportShips == 0 || iNumCombatShips == 0)
+	{
+		return;
+	}
+
+	// now let us check the Ship and the Price it would cost
+	int iShipClassTypeID = getRandomUsedShipClassTypeID();
+
+	// we did not get any ship
+	if (iShipClassTypeID == -1)
+	{
+		return;
+	}
+
+	int iShipPrice = getUsedShipPrice(iShipClassTypeID);
+
+	// exit if the cost is more than half of current gold
+	// AI might then need the gold for other stuff
+	if (iShipPrice > getGold() / 2)
+	{
+		return;
+	}
+
+	// now let us check if the need to decide if it should be acquired
+	bool bShipShouldBeAcquired = false;
+
+	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iShipClassTypeID);
+	if(eUnit != NO_UNIT)
+	{
+		CvUnitInfo& kUnit = GC.getUnitInfo(eUnit);
+		UnitAITypes eDefaultUnitAI = (UnitAITypes)kUnit.getDefaultUnitAIType();
+
+		// for Transport Ships, we check number of Cities
+		if (eDefaultUnitAI == UNITAI_TRANSPORT_SEA)
+		{
+		    if (iNumTransportShips < iNumCities)
+			{
+				bShipShouldBeAcquired = true;
+			}
+		}
+		// for Combat Ships, we check number of Transport Ships
+		else if (eDefaultUnitAI == UNITAI_ASSAULT_SEA || eDefaultUnitAI == UNITAI_COMBAT_SEA || eDefaultUnitAI == UNITAI_ESCORT_SEA ||  eDefaultUnitAI == UNITAI_PIRATE_SEA)
+		{
+			// check if we need Combat Ships for Transports
+			// but only buy Combat Ships if enough Transport Ships are available
+			if (iNumCombatShips < iNumTransportShips && iNumTransportShips >= iNumCities)
+			{
+				bShipShouldBeAcquired = true;
+			}
+		}
+	}
+
+	// ok, let us finally buy it
+	// also reset the counter so AI will also have to wait for next bargain
+	if (bShipShouldBeAcquired)
+	{
+		int iLoop;
+		CvCity* pCity = firstCity(&iLoop);
+		if (eUnit != NO_UNIT && NULL != pCity)
+		{	
+			// we init the Used Ship as Unit from its Unit Class in Europe
+			// code below in comments would be in Colonies - as alternative
+			// CvUnit* pUnit = initUnit(eUnit, NO_PROFESSION, pCity->getX_INLINE(), pCity->getY_INLINE());
+			CvUnit* pUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE(), NO_UNITAI);
+			if (pUnit != NULL)
+			{
+				// we damage the Ship a tiny bit
+				int iMin_Damage_UsedShips = GC.getDefineINT("MIN_DAMAGE_PERCENT_USED_SHIPS");
+				int iMax_Damage_UsedShips = GC.getDefineINT("MAX_DAMAGE_PERCENT_USED_SHIPS");
+				int iDamageRand = std::max(iMin_Damage_UsedShips, GC.getGameINLINE().getSorenRandNum(iMax_Damage_UsedShips, "random used ship damage"));
+				pUnit->setDamage(GC.getMAX_HIT_POINTS() * iDamageRand / 100);
+
+				// for AI we do not give the Unit a negative Promotion, it would heal it anyways in City
+				// pUnit->acquireAnyNegativePromotion();
+
+				// we give the Unit random XP from 1 to 3
+				int iMin_XP_UsedShips = GC.getDefineINT("MIN_XP_SPAWNING_USED_SHIPS");
+				int iMax_XP_UsedShips = GC.getDefineINT("MAX_XP_SPAWNING_USED_SHIPS");
+				int iXPRand = std::max(iMin_XP_UsedShips, GC.getGameINLINE().getSorenRandNum(iMax_XP_UsedShips, "random used ship XP"));
+				pUnit->setExperience(iXPRand);
+
+				// we pay the Gold
+				changeGold(-iShipPrice);
+
+				// we reset the counter for Used Ships
+				resetCounterForUsedShipDeals();
+			}
+		}
+	}
+
+	return;
+}
+
 void CvPlayer::resetCounterForUsedShipDeals()
 {
 	// we increase the timer, to prevent Ship directly being bought again or save-scumming --> better in Diplo-Event that asks
@@ -22957,8 +23112,9 @@ void CvPlayer::acquireUsedShip(int iUsedShipClassType, int iPrice)
 	// check the Colonization Specific Unit
 	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iUsedShipClassType);
 
-	// get the Starting Plot
-	CvPlot* pStartingPlot = getStartingPlot(); 
+	// this Method should just be called for Human
+	// the Ship should be spawned in Europe
+	CvPlot* pStartingPlot = getStartingPlot();
 
 	if (NO_UNIT != eUnit && NULL != pStartingPlot)
 	{	
