@@ -373,6 +373,11 @@
         <German>Milord, die [COLOR_UNIT_TEXT]%s1_shipname[COLOR_REVERT], das gebrauchtes Schiff vom Typ [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT], welches wir [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD] erworben haben, steht in Europa bereit.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_USED_SHIP_BARGAIN_AVAILABLE</Tag>
+        <English>Milord, one of our contacts in Europe told us that a used ship in good shape will be sold for a bargain price. Our King could help to arrange the deal before it is sold to others.</English>
+        <German>Milord, einer unserer Kontakte in Europa hat uns von berichtet, dass ein gebrauchtes Shiff zu einem guten Preis verkauft wird. Unser König könnte helfen, dass wir den Zuschlag bekommen.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_TRAITS</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Civilization Traits[COLOR_REVERT]</English>
         <French>[COLOR_FONT_RED]Profil de civilisation[COLOR_REVERT]</French>
