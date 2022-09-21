@@ -374,8 +374,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_USED_SHIP_BARGAIN_AVAILABLE</Tag>
-        <English>Milord, one of our contacts in Europe told us that a used ship in good shape will be sold for a bargain price. Our King could help to arrange the deal before it is sold to others.</English>
-        <German>Milord, einer unserer Kontakte in Europa hat uns von berichtet, dass ein gebrauchtes Shiff zu einem guten Preis verkauft wird. Unser König könnte helfen, dass wir den Zuschlag bekommen.</German>
+        <English>Milord, one of our contacts in Europe told us that a [COLOR_UNIT_TEXT]used ship[COLOR_REVERT] in good shape will be sold for a bargain price. Our King could help to arrange the deal before it is sold to others.</English>
+        <German>Milord, einer unserer Kontakte in Europa hat uns von berichtet, dass ein [COLOR_UNIT_TEXTgebrauchtes Shiff[COLOR_REVERT] zu einem guten Preis verkauft wird. Unser König könnte helfen, dass wir den Zuschlag bekommen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_TRAITS</Tag>

@@ -22945,7 +22945,7 @@ void CvPlayer::decreaseCounterForUsedShipDeals()
 		{
 			// we post a message that Used Ships may be available
 			CvWString szBuffer = gDLL->getText("TXT_KEY_USED_SHIP_BARGAIN_AVAILABLE");
-			gDLL->getInterfaceIFace()->addMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));
+			gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));
 		}
 	}
 }
