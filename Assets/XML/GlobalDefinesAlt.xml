@@ -295,7 +295,7 @@
 	</Define>
 	<Define>
 		<DefineName>BASE_CHANCE_CAPTURING_SHIPS</DefineName>
-		<iDefineIntVal>100</iDefineIntVal>
+		<iDefineIntVal>200</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_NATIVE_MERC</DefineName>

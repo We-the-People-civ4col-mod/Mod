@@ -1553,6 +1553,8 @@ void CvUnit::updateCombat(bool bQuick)
 									pkCapturedUnitAfterSeaFight->setHasRealPromotion(ePromotion, true);
 								}
 							}
+							// WTP, ray, captured Ships should also get a Negative Promotion
+							pkCapturedUnitAfterSeaFight->acquireAnyNegativePromotion();
 						}
 					}
 				}
