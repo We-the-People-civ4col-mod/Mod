@@ -751,6 +751,12 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		GC.getDefinesVarSystem()->SetValue("UNITCLASS_NATIVE_MERC", idx);
 		//End TAC Native Mercs
 
+		// WTP, ray, Big Colonies and Native Allies War - START
+		SetGlobalDefine("UNITCLASS_NATIVE_WARRIORS", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_NATIVE_WARRIORS", idx);
+		// WTP, ray, Big Colonies and Native Allies War - END
+
 		//WTP, Protected Hostile Goodies - START
 		SetGlobalDefine("UNITCLASS_PROTECTOR_HOSTILE_VILLAGE", szVal);
 		idx = FindInInfoClass(szVal);

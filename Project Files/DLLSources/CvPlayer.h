@@ -99,6 +99,8 @@ public:
 
 	void checkForColonialInterventionInNativeWar(); //WTP, ray, Colonial Intervention In Native War - START
 
+	void checkForColonialAndNativeAlliesWar(); // WTP, ray, Big Colonies and Native Allies War - START
+
 	void checkForSmugglers(); // R&R, ray, Smuggling - START
 
 	void checkForRangers(); // R&R, ray, Rangers - START
@@ -1022,6 +1024,7 @@ protected:
 	int m_iTimerChurchDemand;
 	int m_iTimerChurchWar;
 	int m_iTimerColonialInterventionInNativeWar; //WTP, ray, Colonial Intervention In Native War - START
+	int m_iTimerColoniesAndNativeAlliesWar; // WTP, ray, Big Colonies and Native Allies War - START
 	int m_iTimerSmugglingShip;
 	int m_iTimerRanger;
 	int m_iTimerConquistador;
@@ -1032,6 +1035,8 @@ protected:
 	int m_iTimerAfricanSlaves;
 	int m_iTimerStealingImmigrant;
 	// R&R, ray, Timers Diplo Events - END
+
+	int m_iDSecondPlayerFrenchNativeWar; //WTP, ray, Colonial Intervention In Native War - START
 
 	//WTP, ray Kings Used Ship - START
 	int m_iTimerUsedShips;
@@ -1164,8 +1169,9 @@ protected:
 
 	void doUpdateCacheOnTurn();
 
-	// transport feeder - start - Nightinggale
 public:
+	int getIDSecondPlayerFrenchNativeWar() const;//WTP, ray, Colonial Intervention In Native War - START
+	// transport feeder - start - Nightinggale
 	void updateTransportThreshold();
 	void updateTransportThreshold(YieldTypes eYield);
 	// transport feeder - end - Nightinggale

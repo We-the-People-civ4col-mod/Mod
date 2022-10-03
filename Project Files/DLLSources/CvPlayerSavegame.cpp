@@ -53,6 +53,7 @@ const int defaultTimerBishop = 0;
 const int defaultTimerChurchDemand = 0;
 const int defaultTimerChurchWar = 0;
 const int defaultTimerColonialInterventionInNativeWar = 0; //WTP, ray, Colonial Intervention In Native War - START
+const int defaultTimerColoniesAndNativeAlliesWar = 0; // WTP, ray, Big Colonies and Native Allies War - START
 const int defaultTimerSmugglingShip = 0;
 const int defaultTimerRanger = 0;
 const int defaultTimerConquistador = 0;
@@ -69,6 +70,8 @@ const int defaultKingNumUnitMultiplier = 100;
 const int defaultMissionarySuccessPercent = 100;
 const int defaultNativeTradePostSuccessPercent = 100; // WTP, ray, Native Trade Posts - START
 const int defaultTimeNoTrade = 0;
+
+const int defaultIDSecondPlayerFrenchNativeWar = 0;
 
 const bool defaultAlive = false;
 const bool defaultWillingToBargain = false;
@@ -151,6 +154,7 @@ enum SavegameVariableTypes
 	PlayerSave_TimerChurchDemand,
 	PlayerSave_TimerChurchWar,
 	PlayerSave_TimerColonialInterventionInNativeWar, //WTP, ray, Colonial Intervention In Native War - START
+	PlayerSave_TimerColoniesAndNativeAlliesWar, // WTP, ray, Big Colonies and Native Allies War - START
 	PlayerSave_TimerSmugglingShip,
 	PlayerSave_TimerRanger,
 	PlayerSave_TimerConquistador,
@@ -167,6 +171,8 @@ enum SavegameVariableTypes
 	PlayerSave_MissionarySuccessPercent,
 	PlayerSave_NativeTradePostSuccessPercent, // WTP, ray, Native Trade Posts - START
 	PlayerSave_TimeNoTrade,
+
+	PlayerSave_iDSecondPlayerFrenchNativeWar, //WTP, ray, Colonial Intervention In Native War - START
 
 	PlayerSave_Alive,
 	PlayerSave_WillingToBargain,
@@ -333,7 +339,8 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_TimerBishop: return "PlayerSave_TimerBishop";
 	case PlayerSave_TimerChurchDemand: return "PlayerSave_TimerChurchDemand";
 	case PlayerSave_TimerChurchWar: return "PlayerSave_TimerChurchWar";
-	case PlayerSave_TimerColonialInterventionInNativeWar: return "TimerColonialInterventionInNativeWar";	//WTP, ray, Colonial Intervention In Native War - START
+	case PlayerSave_TimerColonialInterventionInNativeWar: return "PlayerSave_TimerColonialInterventionInNativeWar";	//WTP, ray, Colonial Intervention In Native War - START
+	case PlayerSave_TimerColoniesAndNativeAlliesWar: return "PlayerSave_TimerColoniesAndNativeAlliesWar";	// WTP, ray, Big Colonies and Native Allies War - START
 	case PlayerSave_TimerSmugglingShip: return "PlayerSave_TimerSmugglingShip";
 	case PlayerSave_TimerRanger: return "PlayerSave_TimerRanger";
 	case PlayerSave_TimerConquistador: return "PlayerSave_TimerConquistador";
@@ -350,6 +357,8 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_MissionarySuccessPercent: return "PlayerSave_MissionarySuccessPercent";
 	case PlayerSave_NativeTradePostSuccessPercent: return "PlayerSave_NativeTradePostSuccessPercent"; // WTP, ray, Native Trade Posts - START
 	case PlayerSave_TimeNoTrade: return "PlayerSave_TimeNoTrade";
+
+	case PlayerSave_iDSecondPlayerFrenchNativeWar: return "PlayerSave_iDSecondPlayerFrenchNativeWar"; //WTP, ray, Colonial Intervention In Native War - START
 
 	case PlayerSave_Alive: return "PlayerSave_Alive";
 	case PlayerSave_WillingToBargain: return "PlayerSave_WillingToBargain";
@@ -522,6 +531,7 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_iTimerChurchDemand = defaultTimerChurchDemand;
 	m_iTimerChurchWar = defaultTimerChurchWar;
 	m_iTimerColonialInterventionInNativeWar = defaultTimerColonialInterventionInNativeWar; //WTP, ray, Colonial Intervention In Native War - START
+	m_iTimerColoniesAndNativeAlliesWar = defaultTimerColoniesAndNativeAlliesWar; // WTP, ray, Big Colonies and Native Allies War - START
 	m_iTimerSmugglingShip = defaultTimerSmugglingShip;
 	m_iTimerRanger = defaultTimerRanger;
 	m_iTimerConquistador = defaultTimerConquistador;
@@ -538,6 +548,8 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_iMissionarySuccessPercent = defaultMissionarySuccessPercent;
 	m_iNativeTradePostSuccessPercent = defaultNativeTradePostSuccessPercent; // WTP, ray, Native Trade Posts - START
 	m_iTimeNoTrade = defaultTimeNoTrade;
+
+	m_iDSecondPlayerFrenchNativeWar = defaultIDSecondPlayerFrenchNativeWar; //WTP, ray, Colonial Intervention In Native War - START
 
 	m_bAlive = defaultAlive;
 	m_bWillingToBargain = defaultWillingToBargain;
@@ -731,6 +743,7 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_TimerChurchDemand: reader.Read(m_iTimerChurchDemand); break;
 		case PlayerSave_TimerChurchWar: reader.Read(m_iTimerChurchWar); break;
 		case PlayerSave_TimerColonialInterventionInNativeWar: reader.Read(m_iTimerColonialInterventionInNativeWar); break;	//WTP, ray, Colonial Intervention In Native War - START
+		case PlayerSave_TimerColoniesAndNativeAlliesWar: reader.Read(m_iTimerColoniesAndNativeAlliesWar); break;	// WTP, ray, Big Colonies and Native Allies War - START
 		case PlayerSave_TimerSmugglingShip: reader.Read(m_iTimerSmugglingShip); break;
 		case PlayerSave_TimerRanger: reader.Read(m_iTimerRanger); break;
 		case PlayerSave_TimerConquistador: reader.Read(m_iTimerConquistador); break;
@@ -747,6 +760,8 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_MissionarySuccessPercent: reader.Read(m_iMissionarySuccessPercent); break;
 		case PlayerSave_NativeTradePostSuccessPercent: reader.Read(m_iNativeTradePostSuccessPercent); break; // WTP, ray, Native Trade Posts - START)
 		case PlayerSave_TimeNoTrade: reader.Read(m_iTimeNoTrade); break;
+
+		case PlayerSave_iDSecondPlayerFrenchNativeWar: reader.Read(m_iDSecondPlayerFrenchNativeWar); break;	//WTP, ray Kings Used Ship - START
 
 		case PlayerSave_Alive: reader.Read(m_bAlive); break;
 		case PlayerSave_WillingToBargain: reader.Read(m_bWillingToBargain); break;
@@ -945,6 +960,7 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_TimerChurchDemand, m_iTimerChurchDemand, defaultTimerChurchDemand);
 	writer.Write(PlayerSave_TimerChurchWar, m_iTimerChurchWar, defaultTimerChurchWar);
 	writer.Write(PlayerSave_TimerColonialInterventionInNativeWar, m_iTimerColonialInterventionInNativeWar, defaultTimerColonialInterventionInNativeWar); //WTP, ray, Colonial Intervention In Native War - START
+	writer.Write(PlayerSave_TimerColoniesAndNativeAlliesWar, m_iTimerColoniesAndNativeAlliesWar, defaultTimerColoniesAndNativeAlliesWar); // WTP, ray, Big Colonies and Native Allies War - START
 	writer.Write(PlayerSave_TimerSmugglingShip, m_iTimerSmugglingShip, defaultTimerSmugglingShip);
 	writer.Write(PlayerSave_TimerRanger, m_iTimerRanger, defaultTimerRanger);
 	writer.Write(PlayerSave_TimerConquistador, m_iTimerConquistador, defaultTimerConquistador);
@@ -961,6 +977,8 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_MissionarySuccessPercent, m_iMissionarySuccessPercent, defaultMissionarySuccessPercent);
 	writer.Write(PlayerSave_NativeTradePostSuccessPercent, m_iNativeTradePostSuccessPercent, defaultNativeTradePostSuccessPercent); // WTP, ray, Native Trade Posts - START
 	writer.Write(PlayerSave_TimeNoTrade, m_iTimeNoTrade, defaultTimeNoTrade);
+
+	writer.Write(PlayerSave_iDSecondPlayerFrenchNativeWar, m_iDSecondPlayerFrenchNativeWar, defaultIDSecondPlayerFrenchNativeWar); //WTP, ray, Colonial Intervention In Native War - START
 
 	writer.Write(PlayerSave_Alive, m_bAlive, defaultAlive);
 	writer.Write(PlayerSave_WillingToBargain, m_bWillingToBargain, defaultWillingToBargain);

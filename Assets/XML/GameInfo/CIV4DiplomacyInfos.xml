@@ -6415,6 +6415,20 @@
             </Responses>
         </DiplomacyInfo>
         <DiplomacyInfo>
+            <Type>AI_DIPLOCOMMENT_COLONIES_AND_NATIVE_ALLIES_WAR</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>AI_DIPLO_COLONIES_AND_NATIVE_ALLIES_WAR</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
             <Type>AI_DIPLOCOMMENT_FOUND_CITY_CANT_AFFORD</Type>
             <Responses>
                 <Response>
@@ -7124,6 +7138,34 @@
                     <DiplomacyPowers/>
                     <DiplomacyText>
                         <Text>USER_DIPLO_COLONIAL_INTERVENTION_NATIVE_WAR_CONTINUE</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
+            <Type>USER_DIPLOCOMMENT_COLONIES_AND_NATIVE_ALLIES_WAR_REFUSE</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>USER_DIPLO_COLONIES_AND_NATIVE_ALLIES_WAR_REFUSE</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
+            <Type>USER_DIPLOCOMMENT_COLONIES_AND_NATIVE_ALLIES_WAR_ACCEPT</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>USER_DIPLO_COLONIES_AND_NATIVE_ALLIES_WAR_ACCEPT</Text>
                     </DiplomacyText>
                 </Response>
             </Responses>

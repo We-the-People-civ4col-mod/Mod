@@ -47,6 +47,8 @@ CvPlayer::CvPlayer()
 	m_iTimeNoTrade = 0;
 	// R&R, ray, Bargaining - END
 
+	m_iDSecondPlayerFrenchNativeWar = 0; //WTP, ray, Colonial Intervention In Native War - START
+
 	// R&R, ray, Timers Diplo Events - START
 	m_iTimerNativeMerc = 0;
 	m_iTimerEuropeanWars = 0;
@@ -57,6 +59,7 @@ CvPlayer::CvPlayer()
 	m_iTimerChurchDemand = 0;
 	m_iTimerChurchWar = 0; 
 	m_iTimerColonialInterventionInNativeWar = 0; //WTP, ray, Colonial Intervention In Native War - START
+	m_iTimerColoniesAndNativeAlliesWar= 0; // WTP, ray, Big Colonies and Native Allies War - START
 	m_iTimerSmugglingShip = 0;
 	m_iTimerRanger = 0;
 	m_iTimerConquistador = 0;
@@ -3827,6 +3830,141 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 		break;
 	//WTP, ray, Colonial Intervention In Native War - END
 
+
+	// WTP, ray, Big Colonies and Native Allies War - START
+	case DIPLOEVENT_COLONIES_AND_NATIVE_ALLIES_WAR_REFUSE:
+		{
+			// logic needs to be programmed
+			int iIDofEnemyColonialPlayer = iData1;
+			int IIDofRefusedEnemyNativePlayer = GET_PLAYER(ePlayer).getIDSecondPlayerFrenchNativeWar();
+			//CvPlayer& HumanPlayer = GET_PLAYER(ePlayer);
+
+			// increase Attitude of RefusedEnemyNativePlayer
+			if (IIDofRefusedEnemyNativePlayer != NO_PLAYER)
+			{
+				CvPlayer& kRefusedEnemyNativePlayer = GET_PLAYER((PlayerTypes) IIDofRefusedEnemyNativePlayer);
+				kRefusedEnemyNativePlayer.AI_changeAttitudeExtra(ePlayer, 2);
+			}
+
+			// decrease Attitude of RefusedAllyNativePlayer, which is this player
+			AI_changeAttitudeExtra(ePlayer, -2);
+
+			// sending message - if we can figure out our enemy currently at war
+			if (iIDofEnemyColonialPlayer != NO_PLAYER)
+			{					
+				CvPlayer& kEnemyColonialPlayer = GET_PLAYER((PlayerTypes) iIDofEnemyColonialPlayer);
+				CvWString szBuffer = gDLL->getText("TXT_KEY_COLONIES_AND_NATIVE_ALLIES_WAR_REFUSED", kEnemyColonialPlayer.getNameKey());
+				gDLL->getInterfaceIFace()->addMessage(ePlayer, true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));
+			}
+
+		}
+		break;
+
+	case DIPLOEVENT_COLONIES_AND_NATIVE_ALLIES_WAR_ACCEPT:
+		{
+			// data for the players
+			int iIDofEnemyColonialPlayer = iData1;
+			int IIDofDeclaredEnemyNativePlayer = GET_PLAYER(ePlayer).getIDSecondPlayerFrenchNativeWar();
+			CvPlayer& HumanPlayer = GET_PLAYER(ePlayer);
+
+			// 	modifier for GameSpeed
+			int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+
+			// balancing data for Weapons and Guns
+			int iGunsNeededToPayNatives = GC.getDefineINT("WEAPONS_DEMANDED_COLONIES_AND_NATIVE_ALLIES_WAR") * gamespeedMod / 100;
+			int iHorsesNeededToPayNatives = GC.getDefineINT("HORSES_DEMANDED_COLONIES_AND_NATIVE_ALLIES_WAR") * gamespeedMod / 100;
+
+			// add the guns and horses to the Native Capitol
+			int iLoop;
+			CvCity* pNativeAllyCapitolCity = firstCity(&iLoop);
+			if (pNativeAllyCapitolCity != NULL)
+			{
+				pNativeAllyCapitolCity->changeYieldStored(YIELD_MUSKETS, iGunsNeededToPayNatives);
+				pNativeAllyCapitolCity->changeYieldStored(YIELD_HORSES, iHorsesNeededToPayNatives);
+			}
+
+			// of course also remove them from our own capitol
+			int iLoop2;
+			CvCity* pOurOwnCapitolCity = HumanPlayer.firstCity(&iLoop2);
+			if (pOurOwnCapitolCity != NULL)
+			{
+				// to be save and prevent negative values
+				iGunsNeededToPayNatives = std::min(iGunsNeededToPayNatives, pNativeAllyCapitolCity->getYieldStored(YIELD_MUSKETS));
+				iHorsesNeededToPayNatives = std::min(iHorsesNeededToPayNatives, pNativeAllyCapitolCity->getYieldStored(YIELD_HORSES));
+
+				pOurOwnCapitolCity->changeYieldStored(YIELD_MUSKETS, -iGunsNeededToPayNatives);
+				pOurOwnCapitolCity->changeYieldStored(YIELD_HORSES, -iHorsesNeededToPayNatives);
+			}
+
+			// in exchange we also get some Warriors - we use the Civilization of the Native Civ for getting the UnitTypes= 
+			int iNumNativeWarriorsCreated = GC.getDefineINT("NATIVE_WARRIORS_RECEIVED_COLONIES_AND_NATIVE_ALLIES_WAR");
+			UnitTypes NativeWarriorUnitType = (UnitTypes)GC.getCivilizationInfo(HumanPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_NATIVE_WARRIORS"));
+			if (pOurOwnCapitolCity != NULL)
+			{	
+				for (int i=0;i<iNumNativeWarriorsCreated;i++)
+				{
+					CvUnit* NativeWarriorUnit = HumanPlayer.initUnit(NativeWarriorUnitType, NO_PROFESSION, pOurOwnCapitolCity->getX_INLINE(), pOurOwnCapitolCity->getY_INLINE(), NO_UNITAI);
+				}
+			}
+			
+
+			// creating alliances and declaring War
+			// sending message - if we can figure out our enemy currently at war
+			// also worsening Attitude of Enemies against us
+			if (iIDofEnemyColonialPlayer != NO_PLAYER && IIDofDeclaredEnemyNativePlayer != NO_PLAYER)
+			{
+				// getting the 2 enemy players
+				CvPlayer& ColonialEnemy = GET_PLAYER((PlayerTypes) iIDofEnemyColonialPlayer);
+				CvPlayer& NativeEnemy = GET_PLAYER((PlayerTypes) IIDofDeclaredEnemyNativePlayer);
+
+				// the allied Teams
+				CvTeamAI& HumanTeam = GET_TEAM(HumanPlayer.getTeam());
+				CvTeamAI& NativeAllyTeam = GET_TEAM(getTeam());
+
+				// the enemies Teams
+				CvTeamAI& ColonialEnemyTeam = GET_TEAM(ColonialEnemy.getTeam());
+				CvTeamAI& NativeEnemyTeam = GET_TEAM(NativeEnemy.getTeam());
+
+				// now we declare war with our ally
+				// also we afterwards set Defensive Pacts
+
+				// now we declare War to the otherNative
+				HumanTeam.setAtWar(NativeEnemy.getTeam(), true);
+
+				// our Native Ally now declares War to both of them
+				NativeAllyTeam.setAtWar(ColonialEnemy.getTeam(), true);
+				NativeAllyTeam.setAtWar(NativeEnemy.getTeam(), true);
+
+				// now we also set a defensive Pact with our ally
+				NativeAllyTeam.setDefensivePact(HumanPlayer.getTeam(), true);
+				HumanTeam.setDefensivePact(getTeam(), true);
+
+				// the enemies also create a defensive Pact
+				NativeEnemyTeam.setDefensivePact(ColonialEnemy.getTeam(), true);
+				ColonialEnemyTeam.setDefensivePact(NativeEnemy.getTeam(), true);
+
+				// changing attitudes a bit
+				AI_changeAttitudeExtra(ePlayer, 2);
+				AI_changeAttitudeExtra((PlayerTypes) IIDofDeclaredEnemyNativePlayer, -2);
+				AI_changeAttitudeExtra((PlayerTypes) iIDofEnemyColonialPlayer, -2);
+
+				ColonialEnemy.AI_changeAttitudeExtra((PlayerTypes) getID(), -2);
+				ColonialEnemy.AI_changeAttitudeExtra(ePlayer, -2);
+				ColonialEnemy.AI_changeAttitudeExtra((PlayerTypes) IIDofDeclaredEnemyNativePlayer, 2);
+
+				NativeEnemy.AI_changeAttitudeExtra((PlayerTypes) getID(), -2);
+				NativeEnemy.AI_changeAttitudeExtra(ePlayer, -2);
+				NativeEnemy.AI_changeAttitudeExtra((PlayerTypes) iIDofEnemyColonialPlayer, 2);
+
+				// sending message
+				CvWString szBuffer = gDLL->getText("TXT_KEY_COLONIES_AND_NATIVE_ALLIES_WAR_ACCEPTED", getNameKey(), ColonialEnemy.getNameKey(), NativeEnemy.getNameKey());
+				gDLL->getInterfaceIFace()->addMessage(ePlayer, true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"));
+			}
+		}
+		break;
+	// WTP, ray, Big Colonies and Native Allies War - END
+
+	
 	// R&R, ray, Smuggling - START
 	case DIPLOEVENT_ACQUIRE_SMUGGLERS:
 		{
@@ -23355,6 +23493,194 @@ void CvPlayer::checkForColonialInterventionInNativeWar()
 }
 //WTP, ray, Colonial Intervention In Native War - END
 
+// WTP, ray, Big Colonies and Native Allies War - START
+void CvPlayer::checkForColonialAndNativeAlliesWar()
+{
+	// we only do this for Human player
+	if (!isHuman())
+	{
+		return;
+	}
+	
+	// only if not in revolution
+	if(isInRevolution())
+	{
+		return;
+	}
+
+	//check if min round for feature activation has been reached
+	int iminround = GC.getMIN_ROUND_COLONIES_AND_NATIVE_ALLIES_WAR();
+
+	// modification for GameSpeed
+	int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+	iminround = iminround * gamespeedMod / 100;
+
+	if(GC.getGame().getGameTurn() < iminround)
+	{
+		return;
+	}
+
+	if(m_iTimerColoniesAndNativeAlliesWar > 0)
+	{
+		m_iTimerColoniesAndNativeAlliesWar= (m_iTimerColoniesAndNativeAlliesWar - 1);
+		return;
+	}
+
+	// check randoms
+	int iFrenchNativeWarRandom = GC.getGameINLINE().getSorenRandNum(1000, "French and Indian War");
+	int iFrenchAndIndianWarBaseChance = GC.getBASE_CHANCE_COLONIES_AND_NATIVE_ALLIES_WAR();
+
+	if (iFrenchNativeWarRandom > iFrenchAndIndianWarBaseChance)
+	{
+		return;
+	}
+
+	//ok, now check for a Colonial Player we are at war with, not the King
+	PlayerTypes eColonialPlayerAtWarWith = NO_PLAYER;
+
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	{
+		CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+		if (kPlayer.isAlive() && !kPlayer.isNative() && !kPlayer.isEurope() && GET_TEAM(kPlayer.getTeam()).isAtWar(getTeam()))
+		{
+			eColonialPlayerAtWarWith = (PlayerTypes) iPlayer;
+			break;
+		}
+	}
+
+	// we stop if we did not find a suitable Colonial Player
+	if (eColonialPlayerAtWarWith == NO_PLAYER)
+	{
+		return;
+	}
+
+	// now we need to find the first Native Player that knows both us and the Colonial Player
+	// but is not at war with us or the Colonial Player
+	PlayerTypes eFirstNativeDiploPlayer = NO_PLAYER;
+
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	{
+		CvPlayer& kFirstNativePlayer = GET_PLAYER((PlayerTypes) iPlayer);
+		CvPlayer& kColonialPlayer = GET_PLAYER((PlayerTypes) eColonialPlayerAtWarWith);
+		if (kFirstNativePlayer.isAlive() && kFirstNativePlayer.isNative() && !GET_TEAM(kFirstNativePlayer.getTeam()).isAtWar(getTeam()) && !GET_TEAM(kFirstNativePlayer.getTeam()).isAtWar(kColonialPlayer.getTeam()))
+		{
+			if (kFirstNativePlayer.canContact((PlayerTypes) getID()) && kFirstNativePlayer.canContact(eColonialPlayerAtWarWith))
+			{
+				// we also check attitudes, Native should like us and not like other Colonial AI
+				bool bFirstNativePlayerLikesUs = kFirstNativePlayer.AI_getAttitude((PlayerTypes) getID(), false) >= ATTITUDE_CAUTIOUS;
+				bool bFirstNativePlayerDislikesEnemy = kFirstNativePlayer.AI_getAttitude((PlayerTypes) kColonialPlayer.getID(), false) <= ATTITUDE_CAUTIOUS;
+				if (bFirstNativePlayerLikesUs && bFirstNativePlayerDislikesEnemy)
+				{
+					eFirstNativeDiploPlayer = (PlayerTypes) iPlayer;
+					break;
+				}
+			}
+		}
+	}
+
+	// now we need to find the second Native Player that knows both us and the Colonial Player
+	// but is not at war with us or the Colonial Player
+	PlayerTypes eSecondNativeDiploPlayer = NO_PLAYER;
+
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	{
+		// it must be a different one than the first Native Player of course
+		if ((PlayerTypes) iPlayer != eFirstNativeDiploPlayer)
+		{
+			CvPlayer& kSecondNativePlayer = GET_PLAYER((PlayerTypes) iPlayer);
+			CvPlayer& kFirstNativePlayerToCompare = GET_PLAYER((PlayerTypes) eFirstNativeDiploPlayer);
+			CvPlayer& kColonialPlayer = GET_PLAYER((PlayerTypes) eColonialPlayerAtWarWith);
+			// here we also check that the 2 Native Players are not at war
+			if (kSecondNativePlayer.isAlive() && kSecondNativePlayer.isNative() && !GET_TEAM(kSecondNativePlayer.getTeam()).isAtWar(getTeam()) && !GET_TEAM(kSecondNativePlayer.getTeam()).isAtWar(kColonialPlayer.getTeam()) && !GET_TEAM(kSecondNativePlayer.getTeam()).isAtWar(kFirstNativePlayerToCompare.getTeam()))
+			{
+				// we check if all of the players at least know each other - chances are high that they are on the same continent then
+				if (kSecondNativePlayer.canContact((PlayerTypes) getID()) && kSecondNativePlayer.canContact(eColonialPlayerAtWarWith) && kSecondNativePlayer.canContact(eFirstNativeDiploPlayer))
+				{
+					// here we also check attitudes but jus for our own, the other Native AI should not like us, max cautious
+					bool bSecondNativePlayerDisklikesUs = kSecondNativePlayer.AI_getAttitude((PlayerTypes) getID(), false) <= ATTITUDE_CAUTIOUS;
+					if (bSecondNativePlayerDisklikesUs)
+					{
+						eSecondNativeDiploPlayer = (PlayerTypes) iPlayer;
+						break;
+					}
+				}
+			}
+		}
+	}
+
+	// we stop if we did not find 2 suitable Native Players
+	if (eFirstNativeDiploPlayer == NO_PLAYER || eSecondNativeDiploPlayer == NO_PLAYER)
+	{
+		return;
+	}
+
+	// balancing data for Weapons and Guns with GameSpeed
+	int iGunsNeededToPayNatives = GC.getDefineINT("WEAPONS_DEMANDED_COLONIES_AND_NATIVE_ALLIES_WAR") * gamespeedMod / 100;
+	int iHorsesNeededToPayNatives = GC.getDefineINT("HORSES_DEMANDED_COLONIES_AND_NATIVE_ALLIES_WAR") * gamespeedMod / 100;
+
+	int iLoop;
+	CvCity* pCapitolCity = firstCity(&iLoop);
+
+	bool bEnoughWeaponsAndHorses = false;
+
+	if (pCapitolCity != NULL)
+	{
+		if(pCapitolCity->getYieldStored(YIELD_MUSKETS) >= iGunsNeededToPayNatives && pCapitolCity->getYieldStored(YIELD_HORSES) >= iHorsesNeededToPayNatives)
+		{
+			bEnoughWeaponsAndHorses = true;
+		}
+	}
+
+	// we do not have enough guns and horses
+	if (bEnoughWeaponsAndHorses == false)
+	{
+		return;
+	}
+
+	// we might also implement a check if all players are on the same continent
+	// for the moment, let us try without it
+
+	// otherwise we have now found all we need to build the Diplo Dialogue
+
+	// reset timer
+	m_iTimerColoniesAndNativeAlliesWar = GC.getTIMER_COLONIES_AND_NATIVE_ALLIES_WAR()*gamespeedMod/100;
+	
+	CvDiploParameters* pDiplo = new CvDiploParameters(eFirstNativeDiploPlayer);
+	pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_COLONIES_AND_NATIVE_ALLIES_WAR"));
+
+	// now, let us fill the variables in the text above
+	
+	//getting Colonial Enemy Civ for text
+	CvPlayer& kColonialAtWarWith = GET_PLAYER((PlayerTypes) eColonialPlayerAtWarWith);
+	pDiplo->addDiploCommentVariable(kColonialAtWarWith.getCivilizationDescription());
+
+	//getting Native Enemy Civ for text
+	CvPlayer& kNativeAtWarWith = GET_PLAYER((PlayerTypes) eSecondNativeDiploPlayer);
+	pDiplo->addDiploCommentVariable(kNativeAtWarWith.getCivilizationDescription());
+
+	// we also add the horses and guns values for text
+	pDiplo->addDiploCommentVariable(iGunsNeededToPayNatives);
+	pDiplo->addDiploCommentVariable(iGunsNeededToPayNatives);
+
+	//setting ID of Colonial Enemy as Data
+	pDiplo->setData(kColonialAtWarWith.getID());
+	
+	//found no better way than to cash it like this without breaking the game
+	m_iDSecondPlayerFrenchNativeWar = kNativeAtWarWith.getID();
+
+	// letus then start the dialogue
+	pDiplo->setAIContact(true);
+	gDLL->beginDiplomacy(pDiplo, getID());
+	
+	return;
+}
+
+// necessary for the DLL Diplo Event because it has 2 Player IDs
+int CvPlayer::getIDSecondPlayerFrenchNativeWar() const
+{
+	return m_iDSecondPlayerFrenchNativeWar;
+}
+// WTP, ray, Big Colonies and Native Allies War - END
 
 /*** TRIANGLETRADE 10/15/08 by DPII ***/
 bool CvPlayer::canTradeWithAfrica() const

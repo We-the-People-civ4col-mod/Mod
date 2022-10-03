@@ -6769,6 +6769,21 @@
         <German>Unmöglich, diese Heiden müssen durch Feuer gereinigt werden. (Krieg geht weit, Ansehen verschlechter, Ansehen bei König und Kirche verbessert, Ureinwohner erhalten Unterstützung)</German>
     </TEXT>
     <TEXT>
+        <Tag>AI_DIPLO_COLONIES_AND_NATIVE_ALLIES_WAR</Tag>
+        <English>The evil [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] are our enemies as well. Also, they seem to conspire with the treacherous [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] to rob us our hunting grounds. If you will give us %d3 Musquets and %d4 Horses we will join you in war and teach both of them a lesson. (Warning: If you accept, this starts a huge war similar to the historic "French and Indian War".)</English>
+        <German>Die bösartigen [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] sind auch unsere Feinde. Sie scheinen sich auch mit den verräterischen [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] zu verschwören um uns unser Jagdgründe zu stehlen. Wenn ihr uns %d3 Musketen und %d4 Pferde gebt, werden wir uns eurem Krieg anschließen und beiden eine Lektion erteilen. (Warnung: Bei Annahme wird ein großer Krieg ähnlich dem historischen "Siebenjährigen Krieg" gestartet.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>USER_DIPLO_COLONIES_AND_NATIVE_ALLIES_WAR_REFUSE</Tag>
+        <English>We appreciate your offer to support us in these dire times, but escalating this war by involving Native allies on both sides would only cause more unnecessary blood shed. (Refuse)</English>
+        <German>Wir schätzen euer Angebot uns in dieser schweren Stunde zu unterstützen, aber eine Eskalation dieses Krieges durch die Einbeziehung der verbündeten Stämme beider Seiten, würde nur zu noch mehr unnötigem Blutverießen führen. (Ablehnen) </German>
+    </TEXT>
+    <TEXT>
+        <Tag>USER_DIPLO_COLONIES_AND_NATIVE_ALLIES_WAR_ACCEPT</Tag>
+        <English>Let us teach those cowards and oath breakers a lessons. Your Tribe shall get the weapons and horses you requested. In exchange you could send us a few Warriors as Scouts. (Accept)</English>
+        <German>Lasst uns diese Feiglingen und Eidbrechern eine Lektion erteilen. Euer Stamm soll die erbetenen Waffen und Pferde erhalten. Schickt uns im Austausch einige Krieger als Führer. (Annehmen) </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_COLONIAL_INTERVENTION_NATIVE_WAR_ENDED</Tag>
         <English>You have followed the request of your colonial neighbour and ended war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. They owe you a favour.</English>
         <German>Ihr seid der bitte eures kolonialen Nachbars gefolgt und habt den Krieg mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] beendet. Sie schulden euch einen Gefallen.</German>
@@ -6777,5 +6792,15 @@
         <Tag>TXT_KEY_COLONIAL_INTERVENTION_NATIVE_WAR_CONTINUED</Tag>
         <English>The war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] continues. Rumors say that the Natives get support from another Colonial Nation.</English>
         <German>Der Krieg mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] geht weiter. Es heißt die Ureinwohner bekommen Unterstützung von einer anderen Kolnialmacht.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_COLONIES_AND_NATIVE_ALLIES_WAR_REFUSED</Tag>
+        <English>The war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] continues. We decided it was wiser not to involve the Natives in this conflict to prevent unnecessary blood shed</English>
+        <German>Der Krieg mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] geht weiter. Um unötiges Blutvergießen zu verhindern haben wir uns aber entschieden die Ureinwohner nicht in diesen Konflikt hineinzuziehen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_COLONIES_AND_NATIVE_ALLIES_WAR_ACCEPTED</Tag>
+        <English>We accepted the offer of [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] to join forces in a war against [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT].</English>
+        <German>Wir habe das Angebot von [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] angenommen, gemeinsam gegen [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] in den Krieg zu ziehen.</German>
     </TEXT>
 </Civ4GameText>

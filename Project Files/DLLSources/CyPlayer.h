@@ -380,6 +380,10 @@ public:
 	bool isYieldAfricaTradable(int /*YieldTypes*/ eIndex);
 	/*************************************/
 
+	//WTP, ray, Colonial Intervention In Native War - START
+	int getIDSecondPlayerFrenchNativeWar();
+	//WTP, ray, Colonial Intervention In Native War - END
+
 	// R&R, ray, Port Royal
 	int getNumPortRoyalUnits();
 	CyUnit* getPortRoyalUnit(int iIndex);

@@ -1765,6 +1765,8 @@ enum DiploEventTypes
 	DIPLOEVENT_CHURCH_FAVOUR, // R&R, ray, Church Favours
 	DIPLOEVENT_CHURCH_WAR, // R&R, ray, Church War
 	DIPLOEVENT_COLONIAL_INTERVENTION_NATIVE_WAR, //WTP, ray, Colonial Intervention In Native War - START
+	DIPLOEVENT_COLONIES_AND_NATIVE_ALLIES_WAR_REFUSE, // WTP, ray, Big Colonies and Native Allies War - START
+	DIPLOEVENT_COLONIES_AND_NATIVE_ALLIES_WAR_ACCEPT, // WTP, ray, Big Colonies and Native Allies War - START
 	DIPLOEVENT_ACQUIRE_SMUGGLERS, // R&R, ray, Smuggling
 	DIPLOEVENT_ACQUIRE_RANGERS, // R&R, ray, Rangers
 	DIPLOEVENT_ACQUIRE_CONQUISTADORS, // R&R, ray, Conquistadors

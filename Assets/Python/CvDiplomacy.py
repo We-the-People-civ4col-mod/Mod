@@ -416,13 +416,20 @@ class CvDiplomacy:
 			self.addUserComment("USER_DIPLOCOMMENT_CHURCH_WAR_YES_BUT", -1, -1)
 			self.addUserComment("USER_DIPLOCOMMENT_CHURCH_WAR_NO", -1, -1)
 		# RaR, ray Church Wars
-		
+
 		# WTP, ray, Colonial Intervention In Native War - START
 		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_COLONIAL_INTERVENTION_NATIVE_WAR")):
 
 			self.addUserComment("USER_DIPLOCOMMENT_COLONIAL_INTERVENTION_NATIVE_WAR_END", -1, -1)
 			self.addUserComment("USER_DIPLOCOMMENT_COLONIAL_INTERVENTION_NATIVE_WAR_CONTINUE", -1, -1)
 		# WTP, ray, Colonial Intervention In Native War - END
+
+		# WTP, ray, Big Colonies and Native Allies War - START
+		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_COLONIES_AND_NATIVE_ALLIES_WAR")):
+
+			self.addUserComment("USER_DIPLOCOMMENT_COLONIES_AND_NATIVE_ALLIES_WAR_REFUSE", -1, -1)
+			self.addUserComment("USER_DIPLOCOMMENT_COLONIES_AND_NATIVE_ALLIES_WAR_ACCEPT", -1, -1)
+		# WTP, ray, Big Colonies and Native Allies War - END
 
 		# If the AI is gifting some goods (yields)
 		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_NATIVES_YIELD_GIFT")):
@@ -1353,6 +1360,16 @@ class CvDiplomacy:
 			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_COLONIAL_INTERVENTION_NATIVE_WAR, diploScreen.getData(), 2)
 			diploScreen.closeScreen()
 		# WTP, ray, Colonial Intervention In Native War - END
+		
+		# WTP, ray, Big Colonies and Native Allies War - START
+		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_COLONIES_AND_NATIVE_ALLIES_WAR_REFUSE")):
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_COLONIES_AND_NATIVE_ALLIES_WAR_REFUSE, diploScreen.getData(), -1)
+			diploScreen.closeScreen()
+		
+		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_COLONIES_AND_NATIVE_ALLIES_WAR_ACCEPT")):
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_COLONIES_AND_NATIVE_ALLIES_WAR_ACCEPT, diploScreen.getData(), -1)
+			diploScreen.closeScreen()
+		# WTP, ray, Big Colonies and Native Allies War - END
 		
 		# R&R, ray, Natives Trading
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_NATIVES_TRADE_ACCEPT")):

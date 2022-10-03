@@ -1499,6 +1499,14 @@ bool CyPlayer::isYieldAfricaTradable(int /*YieldTypes*/ eIndex)
 {
 	return m_pPlayer ? m_pPlayer->isYieldAfricaTradable((YieldTypes)eIndex) : false;
 }
+
+//WTP, ray, Colonial Intervention In Native War - START
+int CyPlayer::getIDSecondPlayerFrenchNativeWar()
+{
+	return m_pPlayer ? m_pPlayer->getIDSecondPlayerFrenchNativeWar() : -1;
+}
+//WTP, ray, Colonial Intervention In Native War - END
+
 /**************************************/
 
 // R&R, ray, Port Royal

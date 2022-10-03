@@ -780,6 +780,8 @@ public:
 	int getMIN_ROUND_COLONIAL_INTERVENTION_NATIVE_WAR(); //WTP, ray, Colonial Intervention In Native War - START
 	int getCOLONIAL_INTERVENTION_NATIVE_WAR_CHANCE(); //WTP, ray, Colonial Intervention In Native War - START
 	int getCOLONIAL_INTERVENTION_NATIVE_WAR_GOLD_TO_PAY_PER_UNIT(); //WTP, ray, Colonial Intervention In Native War - START
+	int getMIN_ROUND_COLONIES_AND_NATIVE_ALLIES_WAR(); // WTP, ray, Big Colonies and Native Allies War - START
+	int getBASE_CHANCE_COLONIES_AND_NATIVE_ALLIES_WAR(); // WTP, ray, Big Colonies and Native Allies War - START
 	int getMIN_ROUND_PIRATES();
 	int getBASE_CHANCE_PIRATES();
 	int getBASE_CHANCE_CONTINENTAL_GUARD();
@@ -803,6 +805,7 @@ public:
 	int getTIMER_REVOLUTIONARY_NOBLE();
 	int getTIMER_BISHOP();
 	int getTIMER_COLONIAL_INTERVENTION_NATIVE_WAR(); //WTP, ray, Colonial Intervention In Native War - START
+	int getTIMER_COLONIES_AND_NATIVE_ALLIES_WAR(); // WTP, ray, Big Colonies and Native Allies War - START
 	int getTIMER_CHURCH_DEMAND();
 	int getTIMER_CHURCH_WAR();
 	int getTIMER_SMUGGLING_SHIP();
@@ -1359,6 +1362,8 @@ protected:
 	int m_MIN_ROUND_COLONIAL_INTERVENTION_NATIVE_WAR; //WTP, ray, Colonial Intervention In Native War - START
 	int m_COLONIAL_INTERVENTION_NATIVE_WAR_CHANCE; //WTP, ray, Colonial Intervention In Native War - START
 	int m_COLONIAL_INTERVENTION_NATIVE_WAR_GOLD_TO_PAY_PER_UNIT; //WTP, ray, Colonial Intervention In Native War - START
+	int m_MIN_ROUND_COLONIES_AND_NATIVE_ALLIES_WAR; // WTP, ray, Big Colonies and Native Allies War - START
+	int m_BASE_CHANCE_COLONIES_AND_NATIVE_ALLIES_WAR; // WTP, ray, Big Colonies and Native Allies War - START
 	int m_BASE_CHANCE_CHURCH_WAR;
 	int m_MIN_ROUND_CHURCH_WAR;
 	int m_CHURCH_CONTACT_CHANCE;
@@ -1377,6 +1382,7 @@ protected:
 	int m_TIMER_REVOLUTIONARY_NOBLE;
 	int m_TIMER_BISHOP;
 	int m_TIMER_COLONIAL_INTERVENTION_NATIVE_WAR; //WTP, ray, Colonial Intervention In Native War - START
+	int m_TIMER_COLONIES_AND_NATIVE_ALLIES_WAR; // WTP, ray, Big Colonies and Native Allies War - START
 	int m_TIMER_CHURCH_DEMAND;
 	int m_TIMER_CHURCH_WAR;
 	int m_TIMER_SMUGGLING_SHIP;
@@ -2218,6 +2224,18 @@ inline int CvGlobals::getCOLONIAL_INTERVENTION_NATIVE_WAR_GOLD_TO_PAY_PER_UNIT()
 	return m_COLONIAL_INTERVENTION_NATIVE_WAR_GOLD_TO_PAY_PER_UNIT;
 }
 //WTP, ray, Colonial Intervention In Native War - END
+
+// WTP, ray, Big Colonies and Native Allies War - START
+inline int CvGlobals::getMIN_ROUND_COLONIES_AND_NATIVE_ALLIES_WAR()
+{
+	return m_MIN_ROUND_COLONIES_AND_NATIVE_ALLIES_WAR;
+}
+inline int CvGlobals::getBASE_CHANCE_COLONIES_AND_NATIVE_ALLIES_WAR()
+{
+	return m_BASE_CHANCE_COLONIES_AND_NATIVE_ALLIES_WAR;
+}
+// WTP, ray, Big Colonies and Native Allies War - END
+
 inline int CvGlobals::getPRICE_MILITIA()
 {
 	return m_PRICE_MILITIA;
@@ -2274,6 +2292,14 @@ inline int CvGlobals::getTIMER_COLONIAL_INTERVENTION_NATIVE_WAR()
 	return m_TIMER_COLONIAL_INTERVENTION_NATIVE_WAR;
 }
 //WTP, ray, Colonial Intervention In Native War - END
+
+// WTP, ray, Big Colonies and Native Allies War - START
+inline int CvGlobals::getTIMER_COLONIES_AND_NATIVE_ALLIES_WAR()
+{
+	return m_TIMER_COLONIES_AND_NATIVE_ALLIES_WAR;
+}
+// WTP, ray, Big Colonies and Native Allies War - END
+
 inline int CvGlobals::getTIMER_CHURCH_DEMAND()
 {
 	return m_TIMER_CHURCH_DEMAND;
