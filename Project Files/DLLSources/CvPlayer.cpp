@@ -23660,7 +23660,7 @@ void CvPlayer::checkForColonialAndNativeAlliesWar()
 
 	// we also add the horses and guns values for text
 	pDiplo->addDiploCommentVariable(iGunsNeededToPayNatives);
-	pDiplo->addDiploCommentVariable(iGunsNeededToPayNatives);
+	pDiplo->addDiploCommentVariable(iHorsesNeededToPayNatives);
 
 	//setting ID of Colonial Enemy as Data
 	pDiplo->setData(kColonialAtWarWith.getID());
