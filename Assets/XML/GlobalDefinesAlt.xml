@@ -715,7 +715,7 @@
 	</Define>
 	<Define>
 		<DefineName>COLONIAL_FORCED_PEACE_TURNS</DefineName>
-		<iDefineIntVal>2</iDefineIntVal>
+		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>SETTLEMENT_TREASURE_YIELD</DefineName>
@@ -1388,15 +1388,15 @@
 	<!-- French Native War -->
 	<Define>
 		<DefineName>MIN_ROUND_COLONIES_AND_NATIVE_ALLIES_WAR</DefineName>
-		<iDefineIntVal>2</iDefineIntVal>
+		<iDefineIntVal>50</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>TIMER_COLONIES_AND_NATIVE_ALLIES_WAR</DefineName>
-		<iDefineIntVal>1</iDefineIntVal>
+		<iDefineIntVal>100</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>BASE_CHANCE_COLONIES_AND_NATIVE_ALLIES_WAR</DefineName>
-		<iDefineIntVal>500</iDefineIntVal>
+		<iDefineIntVal>100</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>WEAPONS_DEMANDED_COLONIES_AND_NATIVE_ALLIES_WAR</DefineName>
