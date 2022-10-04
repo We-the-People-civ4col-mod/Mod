@@ -6674,7 +6674,8 @@ void CvPlayerAI::AI_doDiplo()
 
 				//WTP, ray, fixing precalcuated Diplo Event Issue - START
 				// the King triggers it only for its own "Colonies"
-				if (kPlayer.getParent() == getID())
+				// we only need to do this once for iPass 1
+				if (kPlayer.getParent() == getID() && (iPass == 1))
 				{
 					//these methods catch all other errors themselves
 					kPlayer.checkForNativeMercs(); //TAC Native Mercs

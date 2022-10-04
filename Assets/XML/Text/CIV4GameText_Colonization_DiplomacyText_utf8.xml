@@ -5321,13 +5321,33 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_REFUSES_TO_OFFER_USED_SHIP</Tag>
-        <English>Currently we cannot bothered with such business. Maybe in a few months we may grant you such a favour</English>
+        <English>Currently we cannot be bothered with such business. Maybe in a few months we may grant you such a favour</English>
         <German>Im Moment können wir mit solch Lapalien nicht belästigt werden. Vielleicht können wir aber in einigen Monaten helfen.</German>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACCEPT_BUY_USED_SHIP</Tag>
         <English>Thank you your Majesty. We appreciate your support and gladly acquire it.</English>
         <German>Danke Eure Majestät. Wir schätzen eure Unterstätzung und erwerben das Schiff gerne.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>USER_DIPLO_ASK_FOREIGN_KING_BUY_IMMIGRANTS</Tag>
+        <English>Would your Majeyty help us to hire willing and skilled workers for our Colonly? We will pay a good price.</English>
+        <German>Könnte Ihre Majestät uns helfen willige und fähige Arbeiter für unsere Kolonie zu suchen? Wir bezahlen auch einen guten Preis.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>AI_DIPLO_FOREIGN_KING_OFFERS_IMMIGRANTS</Tag>
+        <English>We know a ship trader willing to sell a %s3_unit for %d1[ICON_GOLD] and might arrange the deal.</English>
+        <German>Wir kennen einen Schiffshändler, der ein Schiff des Typs %s3_unit für %d1[ICON_GOLD] verkaufen möchte.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>AI_DIPLO_FOREIGN_KING_REFUSES_IMMIGRANTS</Tag>
+        <English>Currently we cannot be bothered with such business. Maybe in a few months we may grant you such a favour</English>
+        <German>Im Moment können wir mit solch Lapalien nicht belästigt werden. Vielleicht können wir aber in einigen Monaten helfen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>USER_DIPLO_ACCEPT_FOREIGN_IMMIGRANTS</Tag>
+        <English>Thank you your Majesty. We appreciate your support and gladly hire them.</English>
+        <German>Danke Eure Majestät. Wir schätzen eure Unterstätzung und werben die Arbeiter freudig an.</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_REVIVE_1</Tag>

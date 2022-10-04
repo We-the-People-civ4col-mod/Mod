@@ -140,6 +140,16 @@ public:
 	void acquireUsedShip(int iUsedShipClassType, int iPrice);
 	//WTP, ray Kings Used Ship - END
 
+	// WTP, ray, Foreign Kings, buy Immigrants - START
+	void cacheForeignImmigrantData(int iForeignImmigrantPrice, int iForeignImmigrantClassType);
+	int getForeignImmigrantPrice(int iForeignImmigrantClassType, int iKingID);
+	int getRandomForeignImmigrantClassTypeID();
+	bool isForeignKingWillingToTradeImmigrants(int iKingID);
+	void decreaseCounterForForeignKingImmigrantsDeals();
+	void resetCounterForForeignImmigrantsDeals();
+	void acquireForeignImmigrant(int iForeignImmigrantClassType, int iPrice);
+	// WTP, ray, Foreign Kings, buy Immigrants - START
+
 	// R&R, ray, Bargaining - Start
 	bool tryGetNewBargainPriceSell();
 	bool tryGetNewBargainPriceBuy();
@@ -1042,10 +1052,15 @@ protected:
 	int m_iTimerUsedShips;
 	int m_iCachedUsedShipPrice;
 	int m_iCachedUsedShipClassTypeID;
-	//WTP, ray Kings Used Ship - START
+	//WTP, ray Kings Used Ship - END
+
+	// WTP, ray, Foreign Kings, buy Immigrants - START
+	int m_iTimerForeignImmigrants; 
+	int m_iCachedForeignImmigrantPrice;
+	int m_iCachedForeignImmigrantClassTypeID;
+	// WTP, ray, Foreign Kings, buy Immigrants - END
 
 	int m_iChurchFavoursReceived; // R&R, ray, Church Favours
-
 
 	PlayerTypes m_eID;
 	LeaderHeadTypes m_ePersonalityType;

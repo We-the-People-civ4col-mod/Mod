@@ -10373,6 +10373,62 @@
             </Responses>
         </DiplomacyInfo>
         <DiplomacyInfo>
+            <Type>USER_DIPLOCOMMENT_ASK_FOREIGN_KING_BUY_IMMIGRANTS</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>USER_DIPLO_ASK_FOREIGN_KING_BUY_IMMIGRANTS</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
+            <Type>AI_DIPLOCOMMENT_FOREIGN_KING_OFFERS_IMMIGRANTS</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>AI_DIPLO_FOREIGN_KING_OFFERS_IMMIGRANTS</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
+            <Type>AI_DIPLOCOMMENT_FOREIGN_KING_REFUSES_IMMIGRANTS</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>AI_DIPLO_FOREIGN_KING_REFUSES_IMMIGRANTS</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
+            <Type>USER_DIPLOCOMMENT_ACCEPT_FOREIGN_IMMIGRANTS</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>USER_DIPLO_ACCEPT_FOREIGN_IMMIGRANTS</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
             <Type>USER_DIPLOCOMMENT_PROPOSE</Type>
             <Responses>
                 <Response>

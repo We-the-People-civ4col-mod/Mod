@@ -1414,4 +1414,21 @@
 		<DefineName>NATIVE_WARRIORS_RECEIVED_COLONIES_AND_NATIVE_ALLIES_WAR</DefineName>
 		<iDefineIntVal>3</iDefineIntVal>
 	</Define>
+	<!-- FOREIGN IMMIGRANTS -->
+	<Define>
+		<DefineName>FIRST_TURN_FOREIGN_IMMIGRANTS_AVAILABLE</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>FOREIGN_IMMIGRANTS_TIMER</DefineName>
+		<iDefineIntVal>30</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MIN_DISCOUNT_FOREIGN_IMMIGRANTS_PERCENT</DefineName>
+		<iDefineIntVal>20</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MAX_DISCOUNT_FOREIGN_IMMIGRANTS_PERCENT</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
 </Civ4Defines>

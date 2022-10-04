@@ -113,6 +113,13 @@ class CvDiplomacy:
 			self.addUserComment("USER_DIPLOCOMMENT_ACCEPT_BUY_USED_SHIP", -1, -1)
 			self.addUserComment("USER_DIPLOCOMMENT_REJECT_OFFER", -1, -1)
 		# WTP, ray Kings Used Ship - END
+		
+		# WTP, ray, Foreign Kings, buy Immigrants - START
+		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_FOREIGN_KING_OFFERS_IMMIGRANTS")):
+
+			self.addUserComment("USER_DIPLOCOMMENT_ACCEPT_FOREIGN_IMMIGRANTS", -1, -1)
+			self.addUserComment("USER_DIPLOCOMMENT_REJECT_OFFER", -1, -1)
+		# WTP, ray, Foreign Kings, buy Immigrants - START
 
 		# If the AI is raising taxes
 		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_KISS_PINKY")):
@@ -665,6 +672,12 @@ class CvDiplomacy:
 					self.addUserComment("USER_DIPLOCOMMENT_BUY_UNITS", -1, -1)
 					self.addUserComment("USER_DIPLOCOMMENT_KING_ASK_FOR_USED_SHIP", -1, -1) # WTP, ray Kings Used Ship - START
 
+			# WTP, ray, Foreign Kings, buy Immigrants - START
+			if (gc.getPlayer(self.diploScreen.getWhoTradingWith()).isEurope()):
+				if (not gc.getTeam(gc.getPlayer(self.diploScreen.getWhoTradingWith()).getTeam()).isParentOf(gc.getGame().getActiveTeam())):
+					self.addUserComment("USER_DIPLOCOMMENT_ASK_FOREIGN_KING_BUY_IMMIGRANTS", -1, -1)
+			# WTP, ray, Foreign Kings, buy Immigrants - END
+
 			else:
 				self.addUserComment("USER_DIPLOCOMMENT_SOMETHING_ELSE", -1, -1)
 
@@ -740,6 +753,7 @@ class CvDiplomacy:
 			   eComment == self.getCommentID("AI_DIPLOCOMMENT_KING_ASK_FOR_GOLD") or
 		       eComment == self.getCommentID("AI_DIPLOCOMMENT_BUY_UNITS") or
 		       eComment == self.getCommentID("AI_DIPLOCOMMENT_KING_OFFERS_USED_SHIP") or # WTP, ray Kings Used Ship - START
+		       eComment == self.getCommentID("AI_DIPLOCOMMENT_FOREIGN_KING_OFFERS_IMMIGRANTS") or # WTP, ray, Foreign Kings, buy Immigrants - START
 		       eComment == self.getCommentID("AI_DIPLOCOMMENT_KING_GIFT_SHIP") or
 		       eComment == self.getCommentID("AI_DIPLOCOMMENT_KING_REVIVE")):
 			self.diploScreen.performHeadAction( LeaderheadAction.LEADERANIM_OFFER_PINKY )
@@ -923,6 +937,29 @@ class CvDiplomacy:
 			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_USED_SHIPS, -1, -1)
 			diploScreen.closeScreen()
 		# WTP, ray Kings Used Ship - END
+
+		# WTP, ray, Foreign Kings, buy Immigrants - START
+		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_ASK_FOREIGN_KING_BUY_IMMIGRANTS")):
+			iRandomImmigrant = gc.getPlayer(gc.getGame().getActivePlayer()).getRandomForeignImmigrantClassTypeID()
+			if (iRandomImmigrant != -1):
+				iPrice = gc.getPlayer(gc.getGame().getActivePlayer()).getForeignImmigrantPrice(iRandomImmigrant, self.diploScreen.getWhoTradingWith())
+				if (gc.getPlayer(gc.getGame().getActivePlayer()).isForeignKingWillingToTradeImmigrants(self.diploScreen.getWhoTradingWith()) and gc.getPlayer(gc.getGame().getActivePlayer()).getGold() >= iPrice):
+					gc.getPlayer(self.diploScreen.getWhoTradingWith()).resetCounterForForeignImmigrantsDeals()
+					szName = gc.getUnitClassInfo(iRandomImmigrant).getTextKey()
+					# We store this to the cache at the Player for Used Ship Data
+					gc.getPlayer(gc.getGame().getActivePlayer()).cacheForeignImmigrantData(iPrice,iRandomImmigrant);
+					self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_FOREIGN_KING_OFFERS_IMMIGRANTS"), iPrice, iRandomImmigrant, szName)
+				else:
+					self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_FOREIGN_KING_REFUSES_IMMIGRANTS"))
+			else:
+				self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_FOREIGN_KING_REFUSES_IMMIGRANTS"))
+
+		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_ACCEPT_FOREIGN_IMMIGRANTS")):
+			CyInterface().playGeneralSound("AS2D_KISS_MY_RING")
+			# The Event will read the data from the cache and then clean it
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_FOREIGN_IMMIGRANTS, -1, -1)
+			diploScreen.closeScreen()
+		# WTP, ray, Foreign Kings, buy Immigrants - END
 
 		# If we want to propose a trade
 		elif(self.isComment(eComment, "USER_DIPLOCOMMENT_PROPOSE")):

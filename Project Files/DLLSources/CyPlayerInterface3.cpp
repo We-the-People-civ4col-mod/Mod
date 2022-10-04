@@ -123,6 +123,15 @@ void CyPlayerPythonInterface3(python::class_<CyPlayer>& x)
 		.def("isKingWillingToTradeUsedShips", &CyPlayer::isKingWillingToTradeUsedShips, "bool ()")
 		.def("resetCounterForUsedShipDeals", &CyPlayer::resetCounterForUsedShipDeals, "void ()")
 		//WTP, ray Kings Used Ship - END
+
+		// WTP, ray, Foreign Kings, buy Immigrants - START
+		.def("cacheForeignImmigrantData", &CyPlayer::cacheForeignImmigrantData, "int (int iForeignImmigrantPrice, int iForeignImmigrantClassType)") 
+		.def("getRandomForeignImmigrantClassTypeID", &CyPlayer::getRandomForeignImmigrantClassTypeID, "int ()") 
+		.def("getForeignImmigrantPrice", &CyPlayer::getForeignImmigrantPrice, "int (int iForeignImmigrantClassType, int iEuropeKingID)") 
+		.def("isForeignKingWillingToTradeImmigrants", &CyPlayer::isForeignKingWillingToTradeImmigrants, "bool (int iEuropeKingID)")
+		.def("resetCounterForForeignImmigrantsDeals", &CyPlayer::resetCounterForForeignImmigrantsDeals, "void ()")
+		// WTP, ray, Foreign Kings, buy Immigrants - END
+
 		// R&R, Robert Surcouf, No More Variables Hidden game option END		
 		.def("getYieldScoreTotalINT", &CyPlayer::getYieldScoreTotalINT, "int (int /*YieldTypes*/ eIndex)") // R&R, vetiarvind, Price dependent tax rate change
 		.def("getChurchFavourPrice", &CyPlayer::getChurchFavourPrice, "int ()") // R&R, ray, Church Favours

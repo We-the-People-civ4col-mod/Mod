@@ -373,6 +373,11 @@
         <German>Milord, die [COLOR_UNIT_TEXT]%s1_shipname[COLOR_REVERT], das gebrauchtes Schiff vom Typ [COLOR_SELECTED_TEXT]%s2_shiptype[COLOR_REVERT], welches wir [COLOR_SELECTED_TEXT]%d3_gold[COLOR_REVERT][ICON_GOLD] erworben haben, steht in Europa bereit.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_FOREIGN_COLONIST_HIRED</Tag>
+        <English>Milord, the [COLOR_SELECTED_TEXT]%s1_unit[COLOR_REVERT] we recently hired have arrived in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
+        <German>Milord, die [COLOR_SELECTED_TEXT]%s1_unit[COLOR_REVERT], welche wir kürzlich angeworben haben, sind in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] angekommen.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_USED_SHIP_BARGAIN_AVAILABLE</Tag>
         <English>Milord, one of our contacts in Europe told us that a [COLOR_UNIT_TEXT]used ship[COLOR_REVERT] in good shape will be sold for a bargain price. Our King could help to arrange the deal before it is sold to others.</English>
         <German>Milord, einer unserer Kontakte in Europa hat uns von berichtet, dass ein [COLOR_UNIT_TEXTgebrauchtes Shiff[COLOR_REVERT] zu einem guten Preis verkauft wird. Unser König könnte helfen, dass wir den Zuschlag bekommen.</German>

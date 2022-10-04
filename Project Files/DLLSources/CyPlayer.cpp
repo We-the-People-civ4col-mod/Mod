@@ -1194,10 +1194,10 @@ int CyPlayer::getMissionaryRateModifier() const
 //WTP, ray Kings Used Ship - START
 void CyPlayer::cacheUsedShipData(int iUsedShipPrice, int iUsedShipClassType)
 {
-		if (m_pPlayer)
-		{
-			m_pPlayer->cacheUsedShipData(iUsedShipPrice, iUsedShipClassType);
-		}
+	if (m_pPlayer)
+	{
+		m_pPlayer->cacheUsedShipData(iUsedShipPrice, iUsedShipClassType);
+	}
 }
 
 int CyPlayer::getRandomUsedShipClassTypeID() const
@@ -1217,12 +1217,46 @@ bool CyPlayer::isKingWillingToTradeUsedShips() const
 
 void CyPlayer::resetCounterForUsedShipDeals()
 {
-		if (m_pPlayer)
-		{
-			m_pPlayer->resetCounterForUsedShipDeals();
-		}
+	if (m_pPlayer)
+	{
+		m_pPlayer->resetCounterForUsedShipDeals();
+	}
 }
 //WTP, ray Kings Used Ship - END
+
+
+// WTP, ray, Foreign Kings, buy Immigrants - START
+void CyPlayer::cacheForeignImmigrantData(int iForeignImmigrantPrice, int iForeignImmigrantClassType)
+{
+	if (m_pPlayer)
+	{
+		m_pPlayer->cacheForeignImmigrantData(iForeignImmigrantPrice, iForeignImmigrantClassType);
+	}
+}
+
+int CyPlayer::getRandomForeignImmigrantClassTypeID() const
+{
+	return m_pPlayer ? m_pPlayer->getRandomForeignImmigrantClassTypeID() : -1; 
+}
+
+int CyPlayer::getForeignImmigrantPrice(int /*UnitClaseTypes*/ iForeignImmigrantClassType, int iEuropeKingID) const
+{
+	return m_pPlayer ? m_pPlayer->getForeignImmigrantPrice(iForeignImmigrantClassType, iEuropeKingID) : -1; 
+}
+
+bool CyPlayer::isForeignKingWillingToTradeImmigrants(int iEuropeKingID) const
+{
+	return m_pPlayer ? m_pPlayer->isForeignKingWillingToTradeImmigrants(iEuropeKingID) : false;
+}
+
+void CyPlayer::resetCounterForForeignImmigrantsDeals()
+{
+		if (m_pPlayer)
+		{
+			m_pPlayer->resetCounterForForeignImmigrantsDeals();
+		}
+}
+// WTP, ray, Foreign Kings, buy Immigrants - END
 
 // R&R, ray, Church Favours - START
 int CyPlayer::getChurchFavourPrice() const
