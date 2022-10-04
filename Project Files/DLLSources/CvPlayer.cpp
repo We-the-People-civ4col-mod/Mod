@@ -3929,11 +3929,11 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				// also we afterwards set Defensive Pacts
 
 				// now we declare War to the otherNative
-				HumanTeam.setAtWar(NativeEnemy.getTeam(), true);
+				HumanTeam.declareWar(NativeEnemy.getTeam(), false, WARPLAN_LIMITED);
 
 				// our Native Ally now declares War to both of them
-				NativeAllyTeam.setAtWar(ColonialEnemy.getTeam(), true);
-				NativeAllyTeam.setAtWar(NativeEnemy.getTeam(), true);
+				NativeAllyTeam.declareWar(ColonialEnemy.getTeam(), false, WARPLAN_LIMITED);
+				NativeAllyTeam.declareWar(NativeEnemy.getTeam(), false, WARPLAN_LIMITED);
 
 				// now we also set a defensive Pact with our ally
 				NativeAllyTeam.setDefensivePact(HumanPlayer.getTeam(), true);
