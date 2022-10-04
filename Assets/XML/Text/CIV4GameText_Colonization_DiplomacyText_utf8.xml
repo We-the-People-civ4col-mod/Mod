@@ -5179,7 +5179,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_WELCOME_FR</Tag>
-        <English>Welcome my good governor. What good news to you bring us from the New World? Or do you come with request for the crown again?</English>
+        <English>Welcome my good governor. What good news do you bring us from the New World? Or do you come with request for the crown again?</English>
         <German>Willkommen, mein guter Gouverneur. Welche gute Kunde bringt ihr aus der Neuen Welt? Oder erbittet ihr etwa erneut die Hilfe der Krone?</German>
     </TEXT>
     <TEXT>
@@ -5311,7 +5311,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ASK_TO_BUY_USED_SHIP</Tag>
-        <English>Could your Majeyty help us to acquire a used ship for a good price?</English>
+        <English>Could your Majesty help us to acquire a used ship for a good price?</English>
         <German>Könnte Ihre Majestät uns helfen günstig ein gebrauchtes Schiffe zu erwerben?</German>
     </TEXT>
     <TEXT>
@@ -5326,18 +5326,18 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACCEPT_BUY_USED_SHIP</Tag>
-        <English>Thank you your Majesty. We appreciate your support and gladly acquire it.</English>
+        <English>Thank you your Majesty. We appreciate your support and gladly acquire the ship.</English>
         <German>Danke Eure Majestät. Wir schätzen eure Unterstätzung und erwerben das Schiff gerne.</German>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ASK_FOREIGN_KING_BUY_IMMIGRANTS</Tag>
-        <English>Would your Majeyty help us to hire willing and skilled workers for our Colonly? We will pay a good price.</English>
+        <English>Would your Majeyty help us to hire willing and skilled workers for our colony? We will pay a good price.</English>
         <German>Könnte Ihre Majestät uns helfen willige und fähige Arbeiter für unsere Kolonie zu suchen? Wir bezahlen auch einen guten Preis.</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FOREIGN_KING_OFFERS_IMMIGRANTS</Tag>
-        <English>We heard of some %s3_unit looking for a new home and for %d1[ICON_GOLD] we might arrange their passage.</English>
-        <German>Wir heard of some %s3_unit looking for a new home and for %d1[ICON_GOLD] könnten wir ihre Überfahrt arrangieren.</German>
+        <English>We heard of a %s3_unit looking for a new home and for %d1[ICON_GOLD] we might arrange their passage.</English>
+        <German>Wir haben von einem %s3_unit gehört, der eine neue Heimat sucht und für %d1[ICON_GOLD] könnten wir ihre Überfahrt arrangieren.</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FOREIGN_KING_REFUSES_IMMIGRANTS</Tag>
@@ -5346,7 +5346,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_ACCEPT_FOREIGN_IMMIGRANTS</Tag>
-        <English>Thank you your Majesty. We appreciate your support and gladly hire them.</English>
+        <English>Thank you your Majesty. We appreciate your support and gladly hire the workers.</English>
         <German>Danke Eure Majestät. Wir schätzen eure Unterstätzung und werben die Arbeiter freudig an.</German>
     </TEXT>
     <TEXT>
