@@ -5336,8 +5336,8 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FOREIGN_KING_OFFERS_IMMIGRANTS</Tag>
-        <English>We know a ship trader willing to sell a %s3_unit for %d1[ICON_GOLD] and might arrange the deal.</English>
-        <German>Wir kennen einen Schiffshändler, der ein Schiff des Typs %s3_unit für %d1[ICON_GOLD] verkaufen möchte.</German>
+        <English>We heard of some %s3_unit looking for a new home and for %d1[ICON_GOLD] we might arrange their passage.</English>
+        <German>Wir heard of some %s3_unit looking for a new home and for %d1[ICON_GOLD] könnten wir ihre Überfahrt arrangieren.</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FOREIGN_KING_REFUSES_IMMIGRANTS</Tag>
