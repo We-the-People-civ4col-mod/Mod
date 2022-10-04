@@ -6790,7 +6790,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_COLONIES_AND_NATIVE_ALLIES_WAR</Tag>
-        <English>The evil [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] are our enemies as well. Also, they seem to conspire with the treacherous [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] to rob us our hunting grounds. If you will give us [COLOR_HIGHLIGHT_TEXT]%d3 Musquets[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]%d4 Horses[COLOR_REVERT] we will join you in war and teach both of them a lesson. (Warning: If you accept, this starts a huge war similar to the historic "French and Indian War".)</English>
+        <English>The evil [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] are our enemies as well. We see how they conspire with the treacherous [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] to seize our hunting grounds. If you will give us [COLOR_HIGHLIGHT_TEXT]%d3 muskets[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]%d4 horses[COLOR_REVERT] we will join your war and teach both of them a lesson. (Warning: If you accept, this starts a huge war similar to the historic "French and Indian War".)</English>
         <German>Die bösartigen [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] sind auch unsere Feinde. Sie scheinen sich auch mit den verräterischen [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] zu verschwören um uns unser Jagdgründe zu stehlen. Wenn ihr uns [COLOR_HIGHLIGHT_TEXT]%d3 Musketen[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]%d4 Pferde[COLOR_REVERT] gebt, werden wir uns eurem Krieg anschließen und beiden eine Lektion erteilen. (Warnung: Bei Annahme wird ein großer Krieg ähnlich dem historischen "Siebenjährigen Krieg" gestartet.</German>
     </TEXT>
     <TEXT>
