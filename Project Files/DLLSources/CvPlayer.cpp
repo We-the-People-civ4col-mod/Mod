@@ -23489,6 +23489,9 @@ void CvPlayer::acquireForeignImmigrant(int iForeignImmigrantClassType, int iPric
 		return;
 	}
 
+	// we pay the Gold
+	changeGold(-iPrice);
+
 	// check the Colonization Specific Unit
 	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iForeignImmigrantClassType);
 
