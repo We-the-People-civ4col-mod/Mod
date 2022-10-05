@@ -4601,9 +4601,11 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			if (choice == 1)
 			{
 				int iGoldToPayBaseValue = GC.getDefineINT("ROYAL_INTERVENTIONS_GOLD_PRICE");
+				iGoldToPayBaseValue = iGoldToPayBaseValue * GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getStoragePercent() / 100;
 				int iGoldModiferByAttitude = GC.getDefineINT("ROYAL_INTERVENTIONS_PERCENT_GOLD_PRICE_CHANGE_PER_ATTITUDE_POINT");
 				int iKingsAttitudeValue = GET_PLAYER((PlayerTypes) getID()).AI_getAttitudeVal(ePlayer, false);
 				int iGoldModifiedByAttitude = iGoldToPayBaseValue * (100 - iGoldModiferByAttitude * iKingsAttitudeValue) / 100;
+
 				if (iGoldModifiedByAttitude < iGoldToPayBaseValue / 2)
 				{
 					iGoldModifiedByAttitude = iGoldToPayBaseValue / 2;
@@ -22572,9 +22574,11 @@ void CvPlayer::checkForRoyalIntervention()
 
 	// here we calculate 2)
 	int iGoldToPayBaseValue = GC.getDefineINT("ROYAL_INTERVENTIONS_GOLD_PRICE");
+	iGoldToPayBaseValue = iGoldToPayBaseValue * GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getStoragePercent() / 100;
 	int iGoldModiferByAttitude = GC.getDefineINT("ROYAL_INTERVENTIONS_PERCENT_GOLD_PRICE_CHANGE_PER_ATTITUDE_POINT");
 	int iKingsAttitudeValue = GET_PLAYER(getParent()).AI_getAttitudeVal((PlayerTypes) getID(), false);
 	int iGoldModifiedByAttitude = iGoldToPayBaseValue * (100 - iGoldModiferByAttitude * iKingsAttitudeValue) / 100;
+
 	if (iGoldModifiedByAttitude < iGoldToPayBaseValue / 2)
 	{
 		iGoldModifiedByAttitude = iGoldToPayBaseValue / 2;
