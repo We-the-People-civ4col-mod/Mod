@@ -408,13 +408,20 @@ class CvDiplomacy:
 			self.addUserComment("USER_DIPLOCOMMENT_STEALING_IMMIGRANT_NO", -1, -1)
 		# RaR, ray Stealing Immigrants
 		
-		
 		# RWL European Peace
 		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_EUROPE_PEACE")):
 
 			self.addUserComment("USER_DIPLOCOMMENT_EUROPE_PEACE_YES", -1, -1)
 			self.addUserComment("USER_DIPLOCOMMENT_EUROPE_PEACE_NO", -1, -1)
 		# RWL European Peace
+		
+		# WTP, ray, Royal Intervention, START
+		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_ROYAL_INTERVENTION")):
+
+			self.addUserComment("USER_DIPLOCOMMENT_ROYAL_INTERVENTION_YES_GOLD", -1, -1)
+			self.addUserComment("USER_DIPLOCOMMENT_ROYAL_INTERVENTION_YES_TAX_INCREASE", -1, -1)
+			self.addUserComment("USER_DIPLOCOMMENT_ROYAL_INTERVENTION_NO", -1, -1)
+		# WTP, ray, Royal Intervention, START
 		
 		# RaR, ray Church Wars
 		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_CHURCH_WAR")):
@@ -1373,6 +1380,20 @@ class CvDiplomacy:
 			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_EUROPE_PEACE, diploScreen.getData(), 2)
 			diploScreen.closeScreen()
 		# RWL European Peace
+		
+		# WTP, ray, Royal Intervention, START
+		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_ROYAL_INTERVENTION_YES_GOLD")):
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ROYAL_INTERVENTION, diploScreen.getData(), 1)
+			diploScreen.closeScreen()
+		
+		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_ROYAL_INTERVENTION_YES_TAX_INCREASE")):
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ROYAL_INTERVENTION, diploScreen.getData(), 2)
+			diploScreen.closeScreen()
+		
+		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_ROYAL_INTERVENTION_NO")):
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ROYAL_INTERVENTION, diploScreen.getData(), 3)
+			diploScreen.closeScreen()
+		# WTP, ray, Royal Intervention, END
 		
 		# RaR, ray Church Wars
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_CHURCH_WAR_YES")):

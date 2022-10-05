@@ -6823,4 +6823,34 @@
         <English>We accepted the offer of [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] to join forces in a war against [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT].</English>
         <German>Wir habe das Angebot von [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] angenommen, gemeinsam gegen [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] in den Krieg zu ziehen.</German>
     </TEXT>
+    <TEXT>
+        <Tag>AI_DIPLO_ROYAL_INTERVENTION</Tag>
+        <English>We wonder why the conflict against [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] is taking so long. Do you require more troops? If yes, we are willing to send you a ship and two battalions for just [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. Alternatively to the gold we could also agree a tax increase of [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT].</English>
+        <German>Wir fragen uns warum der Konflikt mit [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] so lange andauert. Benötigt ihr mehr Truppen? Falls ja, sind wir bereit euch ein Schiff und zwei ein Battallione Truppen für lediglich [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD] zu überlassen. Als Alternative zu der Goldzahlung bieten wir euch eine Steuererhöhung von [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT] an.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>USER_DIPLO_ROYAL_INTERVENTION_YES_GOLD</Tag>
+        <English>We gladly pay that price to receive Your Majesty's elite troops. Be assured this war will end soon. (pay gold)</English>
+        <German>Wir zahlen gerne diesen Preis um die Elite Truppen Ihrer Majestät zu bekommen! Seid versichert, dieser Krieg endet bald. (Gold bezahlen)</German>
+    </TEXT>
+    <TEXT>
+        <Tag>USER_DIPLO_ROYAL_INTERVENTION_YES_TAX_INCREASE</Tag>
+        <English>Yes, we could really use these troops your Majesty. But we would rather agree on the tax increase. (tax increase)</English>
+        <German>Wir können diese Truppen gut gebrauchen Eure Majestät. Aber wir würden lieber die Steuererhöhung annehmen. (Steuererhöhung)</German>
+    </TEXT>
+    <TEXT>
+        <Tag>USER_DIPLO_ROYAL_INTERVENTION_NO</Tag>
+        <English>Do not worry Your Majesty, our colonies are strong enough to win this conflict without having to further bother you.(King delighted)</English>
+        <German>Seid unbesorgt Eure Majestät, unsere Kolonien sind stark genug diesen Konflikt zu lösen ohne euch weiter belästigen zu müssen. (König erfreut)</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ROYAL_INTERVENTION_ACCEPTED</Tag>
+        <English>We accepted the support of our King in our conflict against [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT]. His troops have arrived in [COLOR_HIGHLIGHT_TEXT]%s2_city_name[COLOR_REVERT].</English>
+        <German>Wir haben die Unterstützung unseres Königs in unserem Konflikt gegen [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT] angenommen. Seine Truppen sind in [COLOR_HIGHLIGHT_TEXT]%s2_city_name[COLOR_REVERT] angekommen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ROYAL_INTERVENTION_REFUSED</Tag>
+        <English>We refused the support of our King in our conflict against [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT]. His Majesty was delighted by our pride and determination.</English>
+        <German>Wir haben die Unterstützung unseres Königs in unserem Konflikt gegen [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT] abgelehnt.Seine Majestät schien sehr erfreut über unseren Stolz und Willen.</German>
+    </TEXT>
 </Civ4GameText>

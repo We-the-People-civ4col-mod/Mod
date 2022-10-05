@@ -892,6 +892,20 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("UNITCLASS_DIPLOMAT_2", idx);
 		// R&R, ray, European Peace - END
+
+		// WTP, ray, Royal Intervention, START
+		SetGlobalDefine("UNITCLASS_ROYAL_INTERVENTIONS_SHIP", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_ROYAL_INTERVENTIONS_SHIP", idx);
+
+		SetGlobalDefine("UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1", idx);
+
+		SetGlobalDefine("UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2", idx);
+		// WTP, ray, Royal Intervention, END
 		
 		//TAC Whaling, ray
 		SetGlobalDefine("UNITCLASS_WHALING_BOAT", szVal);

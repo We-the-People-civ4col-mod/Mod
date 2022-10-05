@@ -1781,6 +1781,7 @@ enum DiploEventTypes
 	DIPLOEVENT_EUROPE_WAR, //TAC European Wars
 	DIPLOEVENT_STEALING_IMMIGRANT, // R&R, Stealing Immigrant
 	DIPLOEVENT_EUROPE_PEACE, // R&R, ray, European Peace
+	DIPLOEVENT_ROYAL_INTERVENTION, // WTP, ray, Royal Intervention, START
 	DIPLOEVENT_NATIVE_TRADE, // R&R, ray, Natives Trading
 	DIPLOEVENT_FOUND_CITY_CHECK_NATIVES,
 

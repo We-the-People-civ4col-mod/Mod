@@ -123,6 +123,8 @@ public:
 
 	void checkForEuropeanPeace(); // R&R, ray, European Peace - START
 
+	void checkForRoyalIntervention(); // WTP, ray, Royal Intervention, START
+
 	// R&R, ray, Church Favours - START
 	int getNumChurchFavoursReceived();
 	void increaseNumChurchFavoursReceived();
@@ -1029,6 +1031,7 @@ protected:
 	int m_iTimerNativeMerc;
 	int m_iTimerEuropeanWars;
 	int m_iTimerEuropeanPeace;
+	int m_iTimerRoyalInterventions; // WTP, ray, Royal Intervention, START
 	int m_iTimerPrisonsCrowded;
 	int m_iTimerRevolutionaryNoble;
 	int m_iTimerBishop;

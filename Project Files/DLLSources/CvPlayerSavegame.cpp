@@ -47,6 +47,7 @@ const int defaultSeaCombatExperience = 0;
 const int defaultTimerNativeMerc = 0;
 const int defaultTimerEuropeanWars = 0;
 const int defaultTimerEuropeanPeace = 0;
+const int defaultTimerRoyalInterventions = 0; // WTP, ray, Royal Intervention, START
 const int defaultTimerPrisonsCrowded = 0;
 const int defaultTimerRevolutionaryNoble = 0;
 const int defaultTimerBishop = 0;
@@ -149,6 +150,7 @@ enum SavegameVariableTypes
 	PlayerSave_TimerNativeMerc,
 	PlayerSave_TimerEuropeanWars,
 	PlayerSave_TimerEuropeanPeace,
+	PlayerSave_TimerRoyalInterventions, // WTP, ray, Royal Intervention, START
 	PlayerSave_TimerPrisonsCrowded,
 	PlayerSave_TimerRevolutionaryNoble,
 	PlayerSave_TimerBishop,
@@ -336,6 +338,7 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_TimerNativeMerc: return "PlayerSave_TimerNativeMerc";
 	case PlayerSave_TimerEuropeanWars: return "PlayerSave_TimerEuropeanWars";
 	case PlayerSave_TimerEuropeanPeace: return "PlayerSave_TimerEuropeanPeace";
+	case PlayerSave_TimerRoyalInterventions: return "PlayerSave_TimerRoyalInterventions"; // WTP, ray, Royal Intervention, START
 	case PlayerSave_TimerPrisonsCrowded: return "PlayerSave_TimerPrisonsCrowded";
 	case PlayerSave_TimerRevolutionaryNoble: return "PlayerSave_TimerRevolutionaryNoble";
 	case PlayerSave_TimerBishop: return "PlayerSave_TimerBishop";
@@ -528,6 +531,7 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_iTimerNativeMerc = defaultTimerNativeMerc;
 	m_iTimerEuropeanWars = defaultTimerEuropeanWars;
 	m_iTimerEuropeanPeace = defaultTimerEuropeanPeace;
+	m_iTimerRoyalInterventions = defaultTimerRoyalInterventions; // WTP, ray, Royal Intervention, START
 	m_iTimerPrisonsCrowded = defaultTimerPrisonsCrowded;
 	m_iTimerRevolutionaryNoble = defaultTimerRevolutionaryNoble;
 	m_iTimerBishop = defaultTimerBishop;
@@ -740,6 +744,7 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_TimerNativeMerc: reader.Read(m_iTimerNativeMerc); break;
 		case PlayerSave_TimerEuropeanWars: reader.Read(m_iTimerEuropeanWars); break;
 		case PlayerSave_TimerEuropeanPeace: reader.Read(m_iTimerEuropeanPeace); break;
+		case PlayerSave_TimerRoyalInterventions: reader.Read(m_iTimerRoyalInterventions); break; // WTP, ray, Royal Intervention, START
 		case PlayerSave_TimerPrisonsCrowded: reader.Read(m_iTimerPrisonsCrowded); break;
 		case PlayerSave_TimerRevolutionaryNoble: reader.Read(m_iTimerRevolutionaryNoble); break;
 		case PlayerSave_TimerBishop: reader.Read(m_iTimerBishop); break;
@@ -958,6 +963,7 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_TimerNativeMerc, m_iTimerNativeMerc, defaultTimerNativeMerc);
 	writer.Write(PlayerSave_TimerEuropeanWars, m_iTimerEuropeanWars, defaultTimerEuropeanWars);
 	writer.Write(PlayerSave_TimerEuropeanPeace, m_iTimerEuropeanPeace, defaultTimerEuropeanPeace);
+	writer.Write(PlayerSave_TimerRoyalInterventions, m_iTimerRoyalInterventions, defaultTimerRoyalInterventions); // WTP, ray, Royal Intervention, START
 	writer.Write(PlayerSave_TimerPrisonsCrowded, m_iTimerPrisonsCrowded, defaultTimerPrisonsCrowded);
 	writer.Write(PlayerSave_TimerRevolutionaryNoble, m_iTimerRevolutionaryNoble, defaultTimerRevolutionaryNoble);
 	writer.Write(PlayerSave_TimerBishop, m_iTimerBishop, defaultTimerBishop);

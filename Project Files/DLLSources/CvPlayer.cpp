@@ -53,6 +53,7 @@ CvPlayer::CvPlayer()
 	m_iTimerNativeMerc = 0;
 	m_iTimerEuropeanWars = 0;
 	m_iTimerEuropeanPeace = 0;
+	m_iTimerRoyalInterventions = 0; // WTP, ray, Royal Intervention, START
 	m_iTimerPrisonsCrowded = 0;
 	m_iTimerRevolutionaryNoble = 0;
 	m_iTimerBishop = 0;
@@ -4544,7 +4545,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 		break;
 	// R&R, Stealing Immigrant - END
 
-	// R&R  European PEACE
+	// R&R, ray, European Peace, START
 	case DIPLOEVENT_EUROPE_PEACE:
 		{
 			//getting the Data from Diplo-Event
@@ -4584,7 +4585,88 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			}
 		}
 		break;
-	// R&R  END European PEACE
+	// R&R, ray, European Peace, END
+
+	// WTP, ray, Royal Intervention, START
+	case DIPLOEVENT_ROYAL_INTERVENTION:
+		{
+			//getting the Enemy from Diplo-Event for our message
+			PlayerTypes enemyID = (PlayerTypes) iData1;
+			CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+
+			PlayerTypes parentID = kPlayer.getParent();
+			int choice = iData2;
+
+			// we decided to pay gold
+			if (choice == 1)
+			{
+				int iGoldToPayBaseValue = GC.getDefineINT("ROYAL_INTERVENTIONS_GOLD_PRICE");
+				int iGoldModiferByAttitude = GC.getDefineINT("ROYAL_INTERVENTIONS_PERCENT_GOLD_PRICE_CHANGE_PER_ATTITUDE_POINT");
+				int iKingsAttitudeValue = GET_PLAYER((PlayerTypes) getID()).AI_getAttitudeVal(ePlayer, false);
+				int iGoldModifiedByAttitude = iGoldToPayBaseValue * (100 - iGoldModiferByAttitude * iKingsAttitudeValue) / 100;
+				if (iGoldModifiedByAttitude < iGoldToPayBaseValue / 2)
+				{
+					iGoldModifiedByAttitude = iGoldToPayBaseValue / 2;
+				}
+
+				// just for safety - do not know if an event might mess with the Gold stack in between
+				if (kPlayer.getGold() > iGoldModifiedByAttitude)
+				{
+					kPlayer.changeGold(-iGoldModifiedByAttitude);
+				}
+				else
+				{
+					kPlayer.changeGold(-getGold());
+				}
+			}
+
+			// we decided to accept a tax increase
+			if (choice == 2)
+			{
+				// here we get the tax we would accept instead
+				int iAlternativeTaxIncrease = GC.getDefineINT("ROYAL_INTERVENTIONS_TAX_INCREASE");
+				kPlayer.changeTaxRate(iAlternativeTaxIncrease);
+
+			}
+
+			// we decided to refuse and get Attitude improvement instead of Units
+			if (choice == 3)
+			{
+				int iAttitudeImprovementToColonies = GC.getDefineINT("ROYAL_INTERVENTIONS_ATTITUDE_IMPROVEMENT");
+				AI_changeAttitudeExtra(ePlayer, 1);
+			}
+
+			// we have chosen one of the 2 Options that give us Royal Units
+			if(choice == 1 || choice == 2)
+			{
+				UnitTypes RoyalInterventionShip =(UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_ROYAL_INTERVENTIONS_SHIP"));
+				UnitTypes RoyalInterventionLandUnit1 =(UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1"));
+				UnitTypes RoyalInterventionLandUnit2 =(UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2"));
+
+				//get City
+				int iLoop;
+				CvCity* locationToAppear = kPlayer.firstCity(&iLoop);
+
+				//just for safety
+				if (locationToAppear != NULL) {
+					//creating the units
+					CvUnit* RoyalInterventionShipUnit = kPlayer.initUnit(RoyalInterventionShip, GC.getUnitInfo(RoyalInterventionShip).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
+					CvUnit* RoyalInterventionLandUnitA = kPlayer.initUnit(RoyalInterventionLandUnit1, GC.getUnitInfo(RoyalInterventionLandUnit1).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
+					CvUnit* RoyalInterventionLandUnitB = kPlayer.initUnit(RoyalInterventionLandUnit2, GC.getUnitInfo(RoyalInterventionLandUnit2).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
+
+					CvWString szBuffer = gDLL->getText("TXT_KEY_ROYAL_INTERVENTION_ACCEPTED", GC.getLeaderHeadInfo(GET_PLAYER(enemyID).getLeaderType()).getDescription(), locationToAppear->getNameKey());
+					gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, RoyalInterventionShipUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), true, true);
+				}
+			}
+			// we just post a message
+			else 
+			{
+				CvWString szBuffer = gDLL->getText("TXT_KEY_ROYAL_INTERVENTION_REFUSED", GC.getLeaderHeadInfo(GET_PLAYER(enemyID).getLeaderType()).getDescription());
+				gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), NULL, NULL, false, false);
+			}
+		}
+		break;
+	// WTP, ray, Royal Intervention, END
 
 	// R&R, ray, Natives Trading - START
 	case DIPLOEVENT_NATIVE_TRADE:
@@ -22332,7 +22414,7 @@ void CvPlayer::checkForPirates()
 }
 // R&R, ray, Pirates - END
 
-// R&R, ray, European Peace -START
+// R&R, ray, European Peace, START
 void CvPlayer::checkForEuropeanPeace()
 {
 	// only do this for human Colonist-Players if not in revolution and if AW is not enabled
@@ -22370,8 +22452,9 @@ void CvPlayer::checkForEuropeanPeace()
 		return;
 	}
 
+	// WTP, ray, replaced this old crappy logic with new one below
 	//ok, now get random player
-	int randomPeaceID = GC.getGameINLINE().getSorenRandNum(MAX_PLAYERS - 1, "Europe War Enemy To MAKE PEACE");
+	/*int randomPeaceID = GC.getGameINLINE().getSorenRandNum(MAX_PLAYERS - 1, "Europe War Enemy To MAKE PEACE");
 	CvPlayer& potentialEnemyToMakePeace = GET_PLAYER((PlayerTypes) randomPeaceID);
 	TeamTypes enemyTeam = potentialEnemyToMakePeace.getTeam();
 	// if potentialEnemy fulfills one of theses conditions do nothing
@@ -22380,7 +22463,27 @@ void CvPlayer::checkForEuropeanPeace()
 	if(!potentialEnemyToMakePeace.isAlive() || !GET_TEAM(getTeam()).isAtWar(enemyTeam) || !potentialEnemyToMakePeace.AI_isWillingToTalk(getID()) || getTeam() == potentialEnemyToMakePeace.getTeam() || potentialEnemyToMakePeace.isNative() || potentialEnemyToMakePeace.isEurope() || potentialEnemyToMakePeace.getID() == getID() || potentialEnemyToMakePeace.isInRevolution())
 	{
 		return;
+	}*/
+
+	//ok, now let us get the Colonial Player we are at war with
+	PlayerTypes eColonialAtWarWith = NO_PLAYER;
+
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	{
+		CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+		if (kPlayer.isAlive() && kPlayer.isPlayable() && GET_TEAM(kPlayer.getTeam()).isAtWar(getTeam()) && !kPlayer.isInRevolution() && kPlayer.AI_isWillingToTalk(getID()))
+		{
+			eColonialAtWarWith = (PlayerTypes) iPlayer;
+			break;
+		}
 	}
+
+	// we stop if we did not find a Colonial Player that we are at war with
+	if (eColonialAtWarWith == NO_PLAYER)
+	{
+		return;
+	}
+
 
 	//ok conditions checked now make diplo
 	else
@@ -22391,6 +22494,7 @@ void CvPlayer::checkForEuropeanPeace()
 		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_EUROPE_PEACE"));
 
 		//getting Parent of Enemy for Text
+		CvPlayer& potentialEnemyToMakePeace = GET_PLAYER((PlayerTypes) eColonialAtWarWith);
 		pDiplo->addDiploCommentVariable(GC.getLeaderHeadInfo(GET_PLAYER(potentialEnemyToMakePeace.getParent()).getLeaderType()).getDescription());
 		//setting ID of Enemy as Data
 		pDiplo->setData(potentialEnemyToMakePeace.getID());
@@ -22400,6 +22504,144 @@ void CvPlayer::checkForEuropeanPeace()
 	return;
 }
 // R&R, ray, European Peace - END
+
+// WTP, ray, Royal Intervention, START
+void CvPlayer::checkForRoyalIntervention()
+{
+	// no contact with King once in Revolution
+	if(isInRevolution())
+	{
+		return;
+	}
+
+	// check timer condition for Royal Intervention
+	if(m_iTimerRoyalInterventions > 0)
+	{
+		m_iTimerRoyalInterventions = (m_iTimerRoyalInterventions - 1);
+		return;
+	}
+    
+	int randomRoyalInterventionValue = GC.getGameINLINE().getSorenRandNum(1000, "Royal Interventions");
+	int iRoyalInterventionChance = GC.getBASE_CHANCE_ROYAL_INTERVENTIONS();
+
+	// check chance for Royal Intervention
+	if (iRoyalInterventionChance < randomRoyalInterventionValue)
+	{
+		return;
+	}
+
+	//get City
+	CvCity* pLoopCity = NULL;
+	CvCity* locationToAppear = NULL;
+	int iLoop;
+	locationToAppear = firstCity(&iLoop); 
+
+    //for safety
+	if (locationToAppear == NULL)
+	{
+		return;
+	}
+
+	//ok, now let us get the Colonial Player we are at war with
+	PlayerTypes eColonialAtWarWith = NO_PLAYER;
+
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	{
+		CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+		if (kPlayer.isAlive() && kPlayer.isPlayable() && GET_TEAM(kPlayer.getTeam()).isAtWar(getTeam()))
+		{
+			eColonialAtWarWith = (PlayerTypes) iPlayer;
+			break;
+		}
+	}
+
+	// we stop if we did not find a Colonial Player that we are at war with
+	if (eColonialAtWarWith == NO_PLAYER)
+	{
+		return;
+	}
+
+	//ok conditions checked now execute the actual logic
+	int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+	m_iTimerRoyalInterventions = GC.getTIMER_ROYAL_INTERVENTIONS() * gamespeedMod /100;
+
+	// we need the following variables: 
+	// 1) Other colony at war : eColonialAtWarWith
+	// 2) Gold Price to pay : ROYAL_INTERVENTIONS_GOLD_PRICE, ROYAL_INTERVENTIONS_PERCENT_GOLD_PRICE_CHANGE_PER_ATTITUDE_POINT
+	// 3) Alternative Tax increase: ROYAL_INTERVENTIONS_TAX_INCREASE
+
+	// here we calculate 2)
+	int iGoldToPayBaseValue = GC.getDefineINT("ROYAL_INTERVENTIONS_GOLD_PRICE");
+	int iGoldModiferByAttitude = GC.getDefineINT("ROYAL_INTERVENTIONS_PERCENT_GOLD_PRICE_CHANGE_PER_ATTITUDE_POINT");
+	int iKingsAttitudeValue = GET_PLAYER(getParent()).AI_getAttitudeVal((PlayerTypes) getID(), false);
+	int iGoldModifiedByAttitude = iGoldToPayBaseValue * (100 - iGoldModiferByAttitude * iKingsAttitudeValue) / 100;
+	if (iGoldModifiedByAttitude < iGoldToPayBaseValue / 2)
+	{
+		iGoldModifiedByAttitude = iGoldToPayBaseValue / 2;
+	}
+
+	// here we calculate 3)
+	int iAlternativeTaxIncrease = GC.getDefineINT("ROYAL_INTERVENTIONS_TAX_INCREASE");
+
+	// Human Case
+	// handle this by DiploEvent with own king
+	if (isHuman())
+	{	
+		// only if we have enough Gold
+		if (getGold() > iGoldModifiedByAttitude)
+		{
+			CvDiploParameters* pDiplo = new CvDiploParameters(getParent());
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ROYAL_INTERVENTION"));
+
+			//getting other Colony for text
+			pDiplo->addDiploCommentVariable(GC.getLeaderHeadInfo(GET_PLAYER(eColonialAtWarWith).getLeaderType()).getDescription());
+			pDiplo->addDiploCommentVariable(iGoldModifiedByAttitude);
+			pDiplo->addDiploCommentVariable(iAlternativeTaxIncrease);
+
+			//setting ID of Enemy as Data
+			pDiplo->setData(eColonialAtWarWith);
+			pDiplo->setAIContact(true);
+			gDLL->beginDiplomacy(pDiplo, getID());
+		}
+	}
+
+	// AI logic
+	// directly handle it in logic
+	else
+	{
+		// if AI has the money
+		if (getGold() > iGoldModifiedByAttitude)
+		{
+			changeGold(-iGoldModifiedByAttitude);
+		}
+
+		// otherwise AI needs to accept the tax
+		else
+		{
+			changeTaxRate(iAlternativeTaxIncrease);
+		}
+
+		// we try to get the UnitTypes from the Parent to be save
+		UnitTypes RoyalInterventionShip = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(getParent()).getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_ROYAL_INTERVENTIONS_SHIP"));
+		UnitTypes RoyalInterventionLandUnit1 =(UnitTypes)GC.getCivilizationInfo(GET_PLAYER(getParent()).getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1"));
+		UnitTypes RoyalInterventionLandUnit2 =(UnitTypes)GC.getCivilizationInfo(GET_PLAYER(getParent()).getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2"));
+
+		//get City
+		int iLoop;
+		CvCity* locationToAppear = firstCity(&iLoop);
+
+		//just for safety
+		if (locationToAppear != NULL) 
+		{
+			//creating the units
+			CvUnit* RoyalInterventionShipUnit = initUnit(RoyalInterventionShip, GC.getUnitInfo(RoyalInterventionShip).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
+			CvUnit* RoyalInterventionLandUnitA = initUnit(RoyalInterventionLandUnit1, GC.getUnitInfo(RoyalInterventionLandUnit1).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
+			CvUnit* RoyalInterventionLandUnitB = initUnit(RoyalInterventionLandUnit2, GC.getUnitInfo(RoyalInterventionLandUnit2).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
+		}	
+	}
+	return;
+}
+// WTP, ray, Royal Intervention, END
 
 // R&R, ray, Bargaining - Start
 bool CvPlayer::tryGetNewBargainPriceSell()

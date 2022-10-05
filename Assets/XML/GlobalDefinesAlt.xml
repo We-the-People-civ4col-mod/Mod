@@ -715,7 +715,7 @@
 	</Define>
 	<Define>
 		<DefineName>COLONIAL_FORCED_PEACE_TURNS</DefineName>
-		<iDefineIntVal>20</iDefineIntVal>
+		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>SETTLEMENT_TREASURE_YIELD</DefineName>
@@ -1430,5 +1430,42 @@
 	<Define>
 		<DefineName>MAX_DISCOUNT_FOREIGN_IMMIGRANTS_PERCENT</DefineName>
 		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<!-- ROYAL_INTERVENTIONS -->
+	<Define>
+		<DefineName>TIMER_ROYAL_INTERVENTIONS</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BASE_CHANCE_ROYAL_INTERVENTIONS</DefineName>
+		<iDefineIntVal>500</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ROYAL_INTERVENTIONS_GOLD_PRICE</DefineName>
+		<iDefineIntVal>3000</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ROYAL_INTERVENTIONS_PERCENT_GOLD_PRICE_CHANGE_PER_ATTITUDE_POINT</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ROYAL_INTERVENTIONS_TAX_INCREASE</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ROYAL_INTERVENTIONS_ATTITUDE_IMPROVEMENT</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_ROYAL_INTERVENTIONS_SHIP</DefineName>
+		<DefineTextVal>UNITCLASS_ROYAL_FRIGATE</DefineTextVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1</DefineName>
+		<DefineTextVal>UNITCLASS_ROYAL_LINE_INFANTRY</DefineTextVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2</DefineName>
+		<DefineTextVal>UNITCLASS_ROYAL_DRAGOON</DefineTextVal>
 	</Define>
 </Civ4Defines>

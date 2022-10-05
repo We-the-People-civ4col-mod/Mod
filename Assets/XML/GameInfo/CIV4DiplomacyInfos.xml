@@ -7045,6 +7045,62 @@
             </Responses>
         </DiplomacyInfo>
         <DiplomacyInfo>
+            <Type>AI_DIPLOCOMMENT_ROYAL_INTERVENTION</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>AI_DIPLO_ROYAL_INTERVENTION</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
+            <Type>USER_DIPLOCOMMENT_ROYAL_INTERVENTION_YES_GOLD</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>USER_DIPLO_ROYAL_INTERVENTION_YES_GOLD</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
+            <Type>USER_DIPLOCOMMENT_ROYAL_INTERVENTION_YES_TAX_INCREASE</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>USER_DIPLO_ROYAL_INTERVENTION_YES_TAX_INCREASE</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
+            <Type>USER_DIPLOCOMMENT_ROYAL_INTERVENTION_NO</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>USER_DIPLO_ROYAL_INTERVENTION_NO</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
             <Type>USER_DIPLOCOMMENT_STEALING_IMMIGRANT_YES</Type>
             <Responses>
                 <Response>

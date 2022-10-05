@@ -764,6 +764,7 @@ public:
 	int getMIN_ROUND_EUROPE_WARS();
 	int getBASE_CHANCE_EUROPE_WARS();
 	int getBASE_CHANCE_EUROPE_PEACE();
+	int getBASE_CHANCE_ROYAL_INTERVENTIONS();// WTP, ray, Royal Intervention, START
 	int getMIN_ROUND_PRISONS_CROWDED();
 	int getPRISONS_CROWDED_CHANCE();
 	int getMIN_ROUND_REVOLUTIONARY_NOBLE();
@@ -801,6 +802,7 @@ public:
 	int getTIMER_NATIVE_MERC();
 	int getTIMER_EUROPEAN_WARS();
 	int getTIMER_EUROPEAN_PEACE();
+	int getTIMER_ROYAL_INTERVENTIONS(); // WTP, ray, Royal Intervention, START
 	int getTIMER_PRISONS_CROWDED();
 	int getTIMER_REVOLUTIONARY_NOBLE();
 	int getTIMER_BISHOP();
@@ -1342,6 +1344,7 @@ protected:
 	int m_MIN_ROUND_EUROPE_WARS;
 	int m_BASE_CHANCE_EUROPE_WARS;
 	int m_BASE_CHANCE_EUROPE_PEACE;
+	int m_BASE_CHANCE_ROYAL_INTERVENTIONS; // WTP, ray, Royal Intervention, START
 	int m_MIN_ROUND_PRISONS_CROWDED;
 	int m_PRISONS_CROWDED_CHANCE;
 	int m_MIN_ROUND_REVOLUTIONARY_NOBLE;
@@ -1378,6 +1381,7 @@ protected:
 	int m_TIMER_NATIVE_MERC;
 	int m_TIMER_EUROPEAN_WARS;
 	int m_TIMER_EUROPEAN_PEACE;
+	int m_TIMER_ROYAL_INTERVENTIONS; // WTP, ray, Royal Intervention, START
 	int m_TIMER_PRISONS_CROWDED;
 	int m_TIMER_REVOLUTIONARY_NOBLE;
 	int m_TIMER_BISHOP;
@@ -2142,6 +2146,12 @@ inline int CvGlobals::getBASE_CHANCE_EUROPE_PEACE()
 {
 	return m_BASE_CHANCE_EUROPE_PEACE;
 }
+// WTP, ray, Royal Intervention, START
+inline int CvGlobals::getBASE_CHANCE_ROYAL_INTERVENTIONS()
+{
+	return m_BASE_CHANCE_ROYAL_INTERVENTIONS;
+}
+// WTP, ray, Royal Intervention, END
 inline int CvGlobals::getMIN_ROUND_PRISONS_CROWDED()
 {
 	return m_MIN_ROUND_PRISONS_CROWDED;
@@ -2274,6 +2284,12 @@ inline int CvGlobals::getTIMER_EUROPEAN_PEACE()
 {
 	return m_TIMER_EUROPEAN_PEACE;
 }
+// WTP, ray, Royal Intervention, START
+inline int CvGlobals::getTIMER_ROYAL_INTERVENTIONS()
+{
+	return m_TIMER_ROYAL_INTERVENTIONS;
+}
+// WTP, ray, Royal Intervention, END
 inline int CvGlobals::getTIMER_PRISONS_CROWDED()
 {
 	return m_TIMER_PRISONS_CROWDED;

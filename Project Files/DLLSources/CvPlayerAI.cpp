@@ -6693,6 +6693,7 @@ void CvPlayerAI::AI_doDiplo()
 					kPlayer.checkForConquistadors(); // R&R, ray, Conquistadors - START
 					kPlayer.checkForPirates(); // R&R, ray, Pirates - START
 					kPlayer.checkForEuropeanPeace(); // R&R, ray, European Peace, START
+					kPlayer.checkForRoyalIntervention(); // WTP, ray, Royal Intervention, START
 					kPlayer.checkForEuropeanWars(); //TAC European Wars
 					kPlayer.checkForStealingImmigrant(); // R&R, Stealing Immigrant
 					kPlayer.checkForContinentalGuard(); // R&R, ray, Continental Guard - START
