@@ -715,7 +715,7 @@
 	</Define>
 	<Define>
 		<DefineName>COLONIAL_FORCED_PEACE_TURNS</DefineName>
-		<iDefineIntVal>2</iDefineIntVal>
+		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>SETTLEMENT_TREASURE_YIELD</DefineName>
@@ -1434,11 +1434,11 @@
 	<!-- ROYAL_INTERVENTIONS -->
 	<Define>
 		<DefineName>TIMER_ROYAL_INTERVENTIONS</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
+		<iDefineIntVal>50</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>BASE_CHANCE_ROYAL_INTERVENTIONS</DefineName>
-		<iDefineIntVal>500</iDefineIntVal>
+		<iDefineIntVal>100</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>ROYAL_INTERVENTIONS_GOLD_PRICE</DefineName>
