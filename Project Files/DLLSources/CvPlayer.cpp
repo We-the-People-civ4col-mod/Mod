@@ -2221,6 +2221,7 @@ void CvPlayer::doTurn()
 
 			//WTP, ray Kings Used Ship - START
 			doAILogicforUsedShipDeals();
+			doAILogicforForeignImmigrants();
 			//WTP, ray Kings Used Ship - END
 		}
 		// TAC - AI Economy - Ray - END
@@ -23388,7 +23389,6 @@ bool CvPlayer::isForeignKingWillingToTradeImmigrants(int iForeignKingID)
 	// this is the King we are buying the Foreign Immigrants from
 	CvPlayerAI& kForeignKing = GET_PLAYER((PlayerTypes) iForeignKingID);
 
-	// TODO
 	// we need to check that we are not at war with its Colonies
 	bool bAtWarWithColoniesOfThatKing = false;
 	for (int iI = 0; iI < MAX_PLAYERS; iI++)
@@ -23445,7 +23445,6 @@ bool CvPlayer::isForeignKingWillingToTradeImmigrants(int iForeignKingID)
 void CvPlayer::decreaseCounterForForeignKingImmigrantsDeals()
 {
 	// here we check since last time bought from this King
-	// this may need a public get Method
 	if (m_iTimerForeignImmigrants > 0)
 	{
 		// this may need a public set Method
@@ -23453,14 +23452,74 @@ void CvPlayer::decreaseCounterForForeignKingImmigrantsDeals()
 	}
 }
 
-
-// for this feature we do not do an AI method for now
-/*
 void CvPlayer::doAILogicforForeignImmigrants()
 {
+	// comment: 
+	// The call to this function already checks that it is not Human
+
+	if(!isPlayable())
+	{
+		return;
+	}
+
+	if (isInRevolution())
+	{
+		return;
+	}
+
+	if (getParent() == NO_PLAYER)
+	{
+		return;
+	}
+
+	// here we check since last time bought from this King
+	// in this case we use our own timer and we also need to decrease it
+	if (m_iTimerForeignImmigrants > 0)
+	{
+		m_iTimerForeignImmigrants = m_iTimerForeignImmigrants - 1;
+		return;
+	}
+
+	// here we check first turn
+	int iDefaultFirstForeignImmigrants = GC.getDefineINT("FIRST_TURN_FOREIGN_IMMIGRANTS_AVAILABLE");
+	int iGameSpeedModifier = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent();
+	int iFirstTurnForForeignImmigrants = iDefaultFirstForeignImmigrants * iGameSpeedModifier / 100; 
+	if (GC.getGameINLINE().getElapsedGameTurns() < iFirstTurnForForeignImmigrants)
+	{
+		return;
+	}
+
+	// here we check if there is a city - needed to spawn
+	int iLoop;
+	CvCity* pCity = firstCity(&iLoop);
+	if (pCity == NULL)
+	{
+		return;
+	}
+
+	// now let us check the Immigrant and the Price it would cost
+	int iForeignImmigrantTypeID = getRandomForeignImmigrantClassTypeID();
+
+	// we did not get any ship
+	if (iForeignImmigrantTypeID == -1)
+	{
+		return;
+	}
+
+	// for getting the Price we use the AIs own Parent
+	int iForeignImmigrantPrice = getForeignImmigrantPrice(iForeignImmigrantTypeID, getParent());
+
+	// we acquire if we have at least double the gold
+	// Timers and such ensure that this otherwise does not happen to often anyways
+	if (getGold() > iForeignImmigrantPrice * 2)
+	{
+		acquireForeignImmigrant(iForeignImmigrantTypeID, iForeignImmigrantPrice);
+		resetCounterForForeignImmigrantsDeals(); // here we reset our own timer
+	} 
+
 	return;
 }
-*/
+
 
 // this is the counter at the Foreign King Player, it is reset from Python logic
 void CvPlayer::resetCounterForForeignImmigrantsDeals()

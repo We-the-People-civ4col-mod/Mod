@@ -1251,10 +1251,10 @@ bool CyPlayer::isForeignKingWillingToTradeImmigrants(int iEuropeKingID) const
 
 void CyPlayer::resetCounterForForeignImmigrantsDeals()
 {
-		if (m_pPlayer)
-		{
-			m_pPlayer->resetCounterForForeignImmigrantsDeals();
-		}
+	if (m_pPlayer)
+	{
+		m_pPlayer->resetCounterForForeignImmigrantsDeals();
+	}
 }
 // WTP, ray, Foreign Kings, buy Immigrants - END
 

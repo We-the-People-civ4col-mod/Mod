@@ -146,6 +146,7 @@ public:
 	int getRandomForeignImmigrantClassTypeID();
 	bool isForeignKingWillingToTradeImmigrants(int iKingID);
 	void decreaseCounterForForeignKingImmigrantsDeals();
+	void doAILogicforForeignImmigrants();
 	void resetCounterForForeignImmigrantsDeals();
 	void acquireForeignImmigrant(int iForeignImmigrantClassType, int iPrice);
 	// WTP, ray, Foreign Kings, buy Immigrants - START
