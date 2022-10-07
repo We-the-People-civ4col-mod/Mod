@@ -1944,7 +1944,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Coal/Ore.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
