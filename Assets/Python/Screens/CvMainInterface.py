@@ -899,6 +899,8 @@ class CvMainInterface:
 		iY = yResolution - BOTTOM_CENTER_HUD_HEIGHT / iK1
 		if iNum > iMax:
 			if iNum % 3 == 1:
+				iNum += 2
+			if iNum % 3 == 2:
 				iNum += 1
 			iNum /= 3
 			#RWL, ray
