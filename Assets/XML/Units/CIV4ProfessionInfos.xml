@@ -2900,6 +2900,7 @@
                 <YieldType>YIELD_POTTERY</YieldType>
             </YieldsProduced>
             <YieldsConsumed>
+                <YieldType>YIELD_PEAT</YieldType>
                 <YieldType>YIELD_CLAY</YieldType>
             </YieldsConsumed>
             <Button>Art/interface/buttons/New_Profession_Buttons/Potter.dds</Button>

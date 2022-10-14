@@ -415,7 +415,7 @@
             <Icon>Art/interface/buttons/New_Yieds_Icons/Linen_Fiber_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Linen_Fiber_Goods_Button.dds</Button>
-        </YieldInfo>        
+        </YieldInfo>
         <YieldInfo>
             <Type>YIELD_ORE</Type>
             <Description>TXT_KEY_YIELD_ORE</Description>
@@ -2562,20 +2562,20 @@
             <Civilopedia>TXT_KEY_YIELD_POTTERY_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
             <bIsExportYield>1</bIsExportYield>
-            <iBuyPriceLow>8</iBuyPriceLow>
-            <iBuyPriceHigh>9</iBuyPriceHigh>
-            <iBuyPriceMin>3</iBuyPriceMin>
+            <iBuyPriceLow>13</iBuyPriceLow>
+            <iBuyPriceHigh>14</iBuyPriceHigh>
+            <iBuyPriceMin>6</iBuyPriceMin>
             <iSellPriceDifference>2</iSellPriceDifference>
             <iPriceChangeThreshold>2000</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
             <iEuropeVolumeAttrition>-15</iEuropeVolumeAttrition>
-            <iAfricaBuyPriceLow>9</iAfricaBuyPriceLow>
-            <iAfricaBuyPriceHigh>10</iAfricaBuyPriceHigh>
+            <iAfricaBuyPriceLow>14</iAfricaBuyPriceLow>
+            <iAfricaBuyPriceHigh>15</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>2</iAfricaSellPriceDifference>
-            <iPortRoyalBuyPriceLow>9</iPortRoyalBuyPriceLow>
-            <iPortRoyalBuyPriceHigh>10</iPortRoyalBuyPriceHigh>
+            <iPortRoyalBuyPriceLow>14</iPortRoyalBuyPriceLow>
+            <iPortRoyalBuyPriceHigh>15</iPortRoyalBuyPriceHigh>
             <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
-            <iNativeBuyPrice>8</iNativeBuyPrice>
+            <iNativeBuyPrice>-1</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
             <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
             <iNativeHappy>0</iNativeHappy>
