@@ -17084,8 +17084,8 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_LOGWOOD_COLLECTOR</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Logwood_Collector_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Logwood_Collector_Europe.dds</FullLengthIcon>
+            <Button>,Art/colonization_atlas_units.dds,1,7</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Logwood_Collector.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Logwood_Collector/Expert_Lumberjack.nif</NIF>
