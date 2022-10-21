@@ -17171,12 +17171,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_RICE_FARMER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Rice_Farmer_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Rice_Farmer_Europe.dds</FullLengthIcon>
+            <Button>,Art/colonization_atlas_units.dds,2,7</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Rice_Farmer.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Rice_Farmer/expert_farmer.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Rice_Farmer/expert_farmer.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Rice_Farmer/expert_fisherman.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Rice_Farmer/expert_fisherman.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
