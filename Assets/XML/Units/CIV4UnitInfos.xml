@@ -49815,8 +49815,16 @@
                     <iMeleeWaveSize>1</iMeleeWaveSize>
                     <iRangedWaveSize>1</iRangedWaveSize>
                     <UnitMeshGroup>
-                        <iRequired>2</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_BUCCANNEER</ArtDefineTag>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_BUCCANNEER_TWO</ArtDefineTag>
+                    </UnitMeshGroup>
+					<UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_BUCCANNEER_ONE</ArtDefineTag>
+                    </UnitMeshGroup>
+					<UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_BUCCANNEER_THREE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>

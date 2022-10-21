@@ -12562,13 +12562,47 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
-            <Type>ART_DEF_UNIT_BUCCANNEER</Type>
+            <Type>ART_DEF_UNIT_BUCCANNEER_ONE</Type>
             <Button>,Art/colonization_atlas_units.dds,7,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Buccaneer.dds</FullLengthIcon>
             <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Special_Military/Buccaneer/Imperial_Soldier.nif</NIF>
-            <KFM>Art/Units/Special_Military/Buccaneer/Imperial_Soldier.kfm</KFM>
+            <NIF>Art/Units/Special_Military/Buccaneer/Buccaneer1/Native_Musketman.nif</NIF>
+            <KFM>Art/Units/Special_Military/Buccaneer/Buccaneer1/Native_Musketman.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_BUCCANNEER_TWO</Type>
+            <Button>,Art/colonization_atlas_units.dds,7,6</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Buccaneer.dds</FullLengthIcon>
+            <fScale>0.55</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Special_Military/Buccaneer/Buccaneer2/Imperial_Soldier.nif</NIF>
+            <KFM>Art/Units/Special_Military/Buccaneer/Buccaneer2/Imperial_Soldier.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_BUCCANNEER_THREE</Type>
+            <Button>,Art/colonization_atlas_units.dds,7,6</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Buccaneer.dds</FullLengthIcon>
+            <fScale>0.54</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Special_Military/Buccaneer/Buccaneer3/Indentured_Servant.nif</NIF>
+            <KFM>Art/Units/Special_Military/Buccaneer/Buccaneer3/Indentured_Servant.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
