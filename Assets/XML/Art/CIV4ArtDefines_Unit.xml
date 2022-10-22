@@ -17513,12 +17513,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_MESTIZZO</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Mestizo_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Mestizo_Europe.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <Button>,Art/colonization_atlas_units.dds,4,7</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/mestizzo.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Mestizzo/worker.nif</NIF>
-            <KFM>Art/Units/Settler/worker/worker.kfm</KFM>
+            <NIF>Art/Units/Settler/Mestizzo/Expert_Cotton_Planter.nif</NIF>
+            <KFM>Art/Units/Settler/Mestizzo/Expert_Cotton_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17531,7 +17531,7 @@
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_MULATTO</Type>
             <Button>,Art/colonization_atlas_units.dds,3,7</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Mulatto.dds</FullLengthIcon>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/mulatto.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Mulatto/Expert_Cotton_Planter.nif</NIF>
