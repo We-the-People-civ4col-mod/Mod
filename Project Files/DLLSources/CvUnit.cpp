@@ -991,28 +991,31 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				pDefender->changeExperience(iExperience, maxXPValue(), true, pPlot->getOwnerINLINE() == pDefender->getOwnerINLINE(), true);
 
 				// WTP, ray, Lieutenants and Captains - START
-				if (pDefender->getDomainType() == DOMAIN_LAND)
+				if (GET_PLAYER(pDefender->getOwnerINLINE()).isPlayable() || GET_PLAYER(pDefender->getOwnerINLINE()).isEurope())
 				{
-					int iBraveLieutenantChance = GC.getDefineINT("LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT");
-					int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Lieutenant");
-					if (iBraveLieutenantChance > randomValue)
+					if (pDefender->getDomainType() == DOMAIN_LAND)
 					{
-						UnitTypes eBraveLieutentantUnitTypes = (UnitTypes)GC.getCivilizationInfo(pDefender->getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
-						GET_PLAYER(pDefender->getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, pDefender->getX_INLINE(), pDefender->getY_INLINE());
-					}
-				}
-				else
-				{
-					int iCapableCaptainChance = GC.getDefineINT("CAPTAIN_CHANCE_PER_SHIP_COMBAT_IN_PERCENT");
-					int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Captain");
-					if (iCapableCaptainChance > randomValue)
-					{
-						UnitTypes eCapableCaptainUnitTypes = (UnitTypes)GC.getCivilizationInfo(pDefender->getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"));
-						int iLoop;
-						CvCity* Captialcity = GET_PLAYER(pDefender->getOwnerINLINE()).firstCity(&iLoop);
-						if (Captialcity != 0)
+						int iBraveLieutenantChance = GC.getDefineINT("LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT");
+						int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Lieutenant");
+						if (iBraveLieutenantChance > randomValue)
 						{
-							GET_PLAYER(pDefender->getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnitTypes, Captialcity->getX_INLINE(), Captialcity->getY_INLINE());
+							UnitTypes eBraveLieutentantUnitTypes = (UnitTypes)GC.getCivilizationInfo(pDefender->getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
+							GET_PLAYER(pDefender->getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, pDefender->getX_INLINE(), pDefender->getY_INLINE());
+						}
+					}
+					else
+					{
+						int iCapableCaptainChance = GC.getDefineINT("CAPTAIN_CHANCE_PER_SHIP_COMBAT_IN_PERCENT");
+						int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Captain");
+						if (iCapableCaptainChance > randomValue)
+						{
+							UnitTypes eCapableCaptainUnitTypes = (UnitTypes)GC.getCivilizationInfo(pDefender->getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"));
+							int iLoop;
+							CvCity* Captialcity = GET_PLAYER(pDefender->getOwnerINLINE()).firstCity(&iLoop);
+							if (Captialcity != 0)
+							{
+								GET_PLAYER(pDefender->getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnitTypes, Captialcity->getX_INLINE(), Captialcity->getY_INLINE());
+							}
 						}
 					}
 				}
@@ -1044,29 +1047,32 @@ void CvUnit::resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition&
 				changeExperience(iExperience, pDefender->maxXPValue(), true, pPlot->getOwnerINLINE() == getOwnerINLINE(), true);
 
 				// WTP, ray, Lieutenants and Captains - START
-				if (getDomainType() == DOMAIN_LAND)
+				if (GET_PLAYER(getOwnerINLINE()).isPlayable() || GET_PLAYER(getOwnerINLINE()).isEurope())
 				{
-					int iBraveLieutenantChance = GC.getDefineINT("LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT");
-					int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Lieutenant");
-					if (iBraveLieutenantChance > randomValue)
+					if (getDomainType() == DOMAIN_LAND)
 					{
-						UnitTypes eBraveLieutentantUnitTypes = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
-						GET_PLAYER(getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, getX_INLINE(), getY_INLINE());
-					}
-				}
-				else
-				{
-					int iCapableCaptainChance = GC.getDefineINT("CAPTAIN_CHANCE_PER_SHIP_COMBAT_IN_PERCENT");
-					int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Captain");
-					if (iCapableCaptainChance > randomValue)
-					{
-						UnitTypes eCapableCaptainUnitTypes = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"));
-						//in this case we need to get the Capitol City
-						int iLoop;
-						CvCity* Captialcity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop);
-						if (Captialcity != 0)
+						int iBraveLieutenantChance = GC.getDefineINT("LIEUTENANT_CHANCE_PER_LAND_COMBAT_IN_PERCENT");
+						int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Lieutenant");
+						if (iBraveLieutenantChance > randomValue)
 						{
-							GET_PLAYER(getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnitTypes, Captialcity->getX_INLINE(), Captialcity->getY_INLINE());
+							UnitTypes eBraveLieutentantUnitTypes = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT"));
+							GET_PLAYER(getOwnerINLINE()).createBraveLieutenant(eBraveLieutentantUnitTypes, getX_INLINE(), getY_INLINE());
+						}
+					}
+					else
+					{
+						int iCapableCaptainChance = GC.getDefineINT("CAPTAIN_CHANCE_PER_SHIP_COMBAT_IN_PERCENT");
+						int randomValue = GC.getGameINLINE().getSorenRandNum(100, "Check for Captain");
+						if (iCapableCaptainChance > randomValue)
+						{
+							UnitTypes eCapableCaptainUnitTypes = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"));
+							//in this case we need to get the Capitol City
+							int iLoop;
+							CvCity* Captialcity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop);
+							if (Captialcity != 0)
+							{
+								GET_PLAYER(getOwnerINLINE()).createCapableCaptain(eCapableCaptainUnitTypes, Captialcity->getX_INLINE(), Captialcity->getY_INLINE());
+							}
 						}
 					}
 				}
