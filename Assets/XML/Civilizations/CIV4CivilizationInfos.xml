@@ -3192,7 +3192,7 @@
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_ROYAL_FRIGATE</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_ROYAL_ARTILLERY</FreeUnitProfession>
+                    <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_ROYAL_ARTILLERY</UnitClassType>
