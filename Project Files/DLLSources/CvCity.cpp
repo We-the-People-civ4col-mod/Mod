@@ -7097,8 +7097,8 @@ void CvCity::doYields()
 	int aiYields[NUM_YIELD_TYPES];
 	calculateNetYields(aiYields, NULL, NULL, true);
 
-	int iTotalYields = getTotalYieldStored();
-	int iMaxCapacity = getMaxYieldCapacity();
+	const int iTotalYields = getTotalYieldStored();
+	const int iMaxCapacity = getMaxYieldCapacity();
 
 	// WTP, ray, Happiness - START 
 	int iCityHappinessDomesticMarketGoldModifiers = getCityHappiness() - getCityUnHappiness();
