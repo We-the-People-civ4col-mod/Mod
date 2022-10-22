@@ -846,6 +846,8 @@ enum FontSymbols
 	OCCUPATION_CHAR_CUSTOM, // WTP, ray, Replacing CHARs for Billoard - START
 	DEFENSE_CHAR_CUSTOM, // WTP, ray, Replacing CHARs for Billoard - START
 	POWER_CHAR_CUSTOM, // WTP, ray, Replacing CHARs for Billoard - START
+	POSITIVE_DOMESTIC_MARKET_EVENT_CHAR, // WTP, ray Domestic Market Events - START
+	NEGATIVE_DOMESTIC_MARKET_EVENT_CHAR, // WTP, ray Domestic Market Events - START
 
 #ifdef _USRDLL
 	MAX_NUM_SYMBOLS,
@@ -2791,6 +2793,5 @@ enum VariableLengthTypes
 	VARIABLE_LENGTH_FIRST_KNOWN,
 	VARIABLE_LENGTH_ALL_KNOWN,
 };
-
 
 #endif	// CVENUMS_h

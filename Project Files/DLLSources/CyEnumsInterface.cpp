@@ -677,6 +677,8 @@ void CyEnumsPythonInterface()
 		.value("OCCUPATION_CHAR_CUSTOM", OCCUPATION_CHAR_CUSTOM) // WTP, ray, Replacing CHARs for Billoard - START
 		.value("DEFENSE_CHAR_CUSTOM", DEFENSE_CHAR_CUSTOM) // WTP, ray, Replacing CHARs for Billoard - START
 		.value("POWER_CHAR_CUSTOM", POWER_CHAR_CUSTOM) // WTP, ray, Replacing CHARs for Billoard - START
+		.value("POSITIVE_DOMESTIC_MARKET_EVENT_CHAR", POSITIVE_DOMESTIC_MARKET_EVENT_CHAR) // WTP, ray Domestic Market Events - START
+		.value("NEGATIVE_DOMESTIC_MARKET_EVENT_CHAR", NEGATIVE_DOMESTIC_MARKET_EVENT_CHAR) // WTP, ray Domestic Market Events - START
 		.value("MAX_NUM_SYMBOLS", MAX_NUM_SYMBOLS)
 		;
 	python::enum_<HandicapTypes>("HandicapTypes")

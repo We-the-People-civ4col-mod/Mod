@@ -1464,20 +1464,41 @@
 		<DefineName>UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2</DefineName>
 		<DefineTextVal>UNITCLASS_ROYAL_DRAGOON</DefineTextVal>
 	</Define>
-	<Define>	
-		<DefineName>CITY_STARVATION_DONATION_FOOD_RECEIVED</DefineName>
+	<!-- DOMESTIC DEMAND EVENTS -->
+	<Define>
+		<DefineName>ENABLE_DOMESTIC_DEMAND_EVENTS </DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MIN_CITY_POPULATION_DOMESTIC_DEMAND_EVENTS</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BASE_DURATION_DOMESTIC_DOMESTIC_DEMAND_EVENTS</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>DEMAND_INCREASE_PERCENT_DOMESTIC_DEMAND_EVENTS</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>PRICE_INCREASE_PERCENT_DOMESTIC_DEMAND_EVENTS</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>DEMAND_DECREASE_PERCENT_DOMESTIC_DEMAND_EVENTS</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>PRICE_DECREASE_PERCENT_DOMESTIC_DEMAND_EVENTS</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>TIMER_BETWEEN_DOMESTIC_DEMAND_EVENTS</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
 	<Define>
-		<DefineName>CITY_STARVATION_DONATION_GOLD_PAYED</DefineName>
-		<iDefineIntVal>200</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>CITY_STARVATION_NO_DONATION_OCCUPATION_TIMER</DefineName>
-		<iDefineIntVal>2</iDefineIntVal>
-	</Define>
-	<Define>
-		<DefineName>USE_CLASSIC_MOVEMENT_SYSTEM</DefineName>
-		<iDefineIntVal>0</iDefineIntVal>
+		<DefineName>PERCENT_CHANCE_PER_HAPPINESS_DOMESTIC_DEMAND_EVENTS</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
 	</Define>
 </Civ4Defines>

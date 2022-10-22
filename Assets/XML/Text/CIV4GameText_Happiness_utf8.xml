@@ -175,4 +175,14 @@
         <English>[ICON_BULLET]%D1%% less %F2_Icon from Slaves in Cities</English>
         <German>[ICON_BULLET]%D1%% weniger %F2_Icon durch Sklavenhaltung in Städten</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_DOMESTIC_MARKET_EVENT_POSITIVE</Tag>
+        <English>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high happiness has caused increased domestic demand and prices.</English>
+        <German>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Zufriedenheit hat zu erhöhten Preisen und starker Nachfrage geführt.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_DOMESTIC_MARKET_EVENT_NEGATIVE</Tag>
+        <English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high unhappiness has caused decreased domestic demand and prices.</English>
+        <German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Unzufriedenheit hat zu reduzierten Preisen und geringer Nachfrage geführt.</German>
+    </TEXT>
 </Civ4GameText>

@@ -692,6 +692,8 @@ public:
 	// WTP, ray, new Barracks System - START
 	int getENABLE_NEW_BARRACKS_SYSTEM();
 	int getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS();
+	// WTP, ray Domestic Market Events - START
+	int getENABLE_DOMESTIC_DEMAND_EVENTS();
 	// NBMOD REF
 	int getNBMOD_REF_ENABLE();
 	int getNBMOD_REF_RANDOM_SHIPS();
@@ -1271,6 +1273,8 @@ protected:
 	// WTP, ray, new Barracks System - START
 	int m_ENABLE_NEW_BARRACKS_SYSTEM;
 	int m_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
+	// WTP, ray Domestic Market Events - START
+	int m_ENABLE_DOMESTIC_DEMAND_EVENTS;
 	// NBMOD REF
 	int m_NBMOD_REF_ENABLE;
 	int m_NBMOD_REF_RANDOM_SHIPS;
@@ -1886,6 +1890,13 @@ inline int CvGlobals::getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS()
 	return m_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
 }
 // WTP, ray, new Barracks System - END
+
+// WTP, ray Domestic Market Events - START
+inline int CvGlobals::getENABLE_DOMESTIC_DEMAND_EVENTS()
+{
+	return m_ENABLE_DOMESTIC_DEMAND_EVENTS;
+}
+
 // NBMOD REF
 inline int CvGlobals::getNBMOD_REF_ENABLE()
 {

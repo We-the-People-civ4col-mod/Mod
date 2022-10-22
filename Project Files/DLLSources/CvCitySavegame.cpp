@@ -38,6 +38,10 @@
 	const int defaultCityHappiness = 0; // WTP, ray, Happiness - START
 	const int defaultCityUnHappiness = 0; // WTP, ray, Happiness - START
 	const int defaultCityTimerFestivitiesOrUnrest = 0; // WTP, ray, Happiness - START
+	const int defaultDomesticDemandEventDuration = 0; // WTP, ray Domestic Market Events - START
+	const int defaultDomesticDemandEventTimer = 0; // WTP, ray Domestic Market Events - START
+	const int defaultDomesticDemandEventPriceModifier = 0; // WTP, ray Domestic Market Events - START
+	const int defaultDomesticDemandEventDemandModifier = 0; // WTP, ray Domestic Market Events - START
 	const int defaultTeachUnitMultiplier = 100 ;
 	const int defaultEducationThresholdMultiplier = 100 ;
 	const int defaultPopulationRank = -1;
@@ -174,6 +178,11 @@ enum SavegameVariableTypes
 
 	CitySave_CityTimerFestivitiesOrUnrest, // WTP, ray, Happiness - START
 
+	CitySave_DomesticDemandEventDuration, // WTP, ray Domestic Market Events - START
+	CitySave_DomesticDemandEventTimer, // WTP, ray Domestic Market Events - START
+	CitySave_DomesticDemandEventPriceModifier, // WTP, ray Domestic Market Events - START
+	CitySave_DomesticDemandEventDemandModifier, // WTP, ray Domestic Market Events - START
+
 	CitySave_tradeAutoExports,
 
 	NUM_CITYSAVE_ENUM_VALUES,
@@ -219,6 +228,10 @@ const char* getSavedEnumNameCity(SavegameVariableTypes eType)
 		case CitySave_CityHappiness: return "CitySave_CityHappiness"; // WTP, ray, Happiness - START
 		case CitySave_CityUnHappiness: return "CitySave_CityUnhappiness"; // WTP, ray, Happiness - START
 		case CitySave_CityTimerFestivitiesOrUnrest: return "CitySave_CityTimerFestivitiesOrUnrest"; // WTP, ray, Happiness - START
+		case CitySave_DomesticDemandEventDuration: return "CitySave_DomesticDemandEventDuration"; // WTP, ray Domestic Market Events - START
+		case CitySave_DomesticDemandEventTimer: return "CitySave_DomesticDemandEventTimer"; // WTP, ray Domestic Market Events - START
+		case CitySave_DomesticDemandEventPriceModifier: return "CitySave_DomesticDemandEventPriceModifier"; // WTP, ray Domestic Market Events - START
+		case CitySave_DomesticDemandEventDemandModifier: return "CitySave_DomesticDemandEventDemandModifier"; // WTP, ray Domestic Market Events - START
 		case CitySave_TeachUnitMultiplier: return "CitySave_TeachUnitMultiplier";
 		case CitySave_EducationThresholdMultiplier: return "CitySave_EducationThresholdMultiplier";
 		case CitySave_PopulationRank: return "CitySave_PopulationRank";
@@ -341,6 +354,14 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bC
 	m_iCityHappiness = defaultCityHappiness; // WTP, ray, Happiness - START
 	m_iCityUnHappiness = defaultCityUnHappiness; // WTP, ray, Happiness - START
 	m_iCityTimerFestivitiesOrUnrest = defaultCityTimerFestivitiesOrUnrest; // WTP, ray, Happiness - START
+
+	// WTP, ray Domestic Market Events - START
+	m_iDomesticDemandEventDuration = defaultDomesticDemandEventDuration;
+	m_iDomesticDemandEventTimer = defaultDomesticDemandEventTimer;
+	m_iDomesticDemandEventPriceModifier = defaultDomesticDemandEventPriceModifier;
+	m_iDomesticDemandEventDemandModifier = defaultDomesticDemandEventDemandModifier;
+	// WTP, ray Domestic Market Events - END
+
 	m_iTeachUnitMultiplier = defaultTeachUnitMultiplier;
 	m_iEducationThresholdMultiplier = defaultEducationThresholdMultiplier;
 	m_iPopulationRank = defaultPopulationRank;
@@ -476,6 +497,10 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_CityHappiness: reader.Read(m_iCityHappiness); break; // WTP, ray, Happiness - START
 		case CitySave_CityUnHappiness: reader.Read(m_iCityUnHappiness); break; // WTP, ray, Happiness - START
 		case CitySave_CityTimerFestivitiesOrUnrest: reader.Read(m_iCityTimerFestivitiesOrUnrest); break; // WTP, ray, Happiness - START
+		case CitySave_DomesticDemandEventDuration: reader.Read(m_iDomesticDemandEventDuration); break; // WTP, ray Domestic Market Events - START
+		case CitySave_DomesticDemandEventTimer: reader.Read(m_iDomesticDemandEventTimer); break; // WTP, ray Domestic Market Events - START
+		case CitySave_DomesticDemandEventPriceModifier: reader.Read(m_iDomesticDemandEventPriceModifier); break; // WTP, ray Domestic Market Events - START
+		case CitySave_DomesticDemandEventDemandModifier: reader.Read(m_iDomesticDemandEventDemandModifier); break; // WTP, ray Domestic Market Events - START
 		case CitySave_TeachUnitMultiplier: reader.Read(m_iTeachUnitMultiplier); break;
 		case CitySave_EducationThresholdMultiplier: reader.Read(m_iEducationThresholdMultiplier); break;
 		case CitySave_PopulationRank: reader.Read(m_iPopulationRank); break;
@@ -623,6 +648,10 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_CityHappiness, m_iCityHappiness, defaultCityHappiness); // WTP, ray, Happiness - START
 	writer.Write(CitySave_CityUnHappiness, m_iCityUnHappiness, defaultCityUnHappiness); // WTP, ray, Happiness - START
 	writer.Write(CitySave_CityTimerFestivitiesOrUnrest, m_iCityTimerFestivitiesOrUnrest, defaultCityTimerFestivitiesOrUnrest); // WTP, ray, Happiness - START
+	writer.Write(CitySave_DomesticDemandEventDuration, m_iDomesticDemandEventDuration, defaultDomesticDemandEventDuration); // WTP, ray Domestic Market Events - START
+	writer.Write(CitySave_DomesticDemandEventTimer, m_iDomesticDemandEventTimer, defaultDomesticDemandEventTimer); // WTP, ray Domestic Market Events - START
+	writer.Write(CitySave_DomesticDemandEventPriceModifier, m_iDomesticDemandEventPriceModifier, defaultDomesticDemandEventPriceModifier); // WTP, ray Domestic Market Events - START
+	writer.Write(CitySave_DomesticDemandEventDemandModifier, m_iDomesticDemandEventDemandModifier, defaultDomesticDemandEventDemandModifier); // WTP, ray Domestic Market Events - START
 	writer.Write(CitySave_TeachUnitMultiplier, m_iTeachUnitMultiplier, defaultTeachUnitMultiplier);
 	writer.Write(CitySave_EducationThresholdMultiplier, m_iEducationThresholdMultiplier, defaultEducationThresholdMultiplier);
 	writer.Write(CitySave_PopulationRank, m_iPopulationRank, defaultPopulationRank);

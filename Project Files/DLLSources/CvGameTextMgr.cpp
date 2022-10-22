@@ -9046,7 +9046,20 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 	}
 	// WTP, ray, new Barracks System - END
 
-
+	// WTP, ray Domestic Market Events - START
+	if (GC.getENABLE_DOMESTIC_DEMAND_EVENTS() && pCity->isHuman())
+	{
+		int iDomesticDemandEventPriceModifier = pCity->getDomesticDemandEventPriceModifier();
+		if (iDomesticDemandEventPriceModifier > 0)
+		{
+			szBuffer.append(CvWString::format(L" %c", GC.getSymbolID(POSITIVE_DOMESTIC_MARKET_EVENT_CHAR)));
+		}
+		if (iDomesticDemandEventPriceModifier < 0)
+		{
+			szBuffer.append(CvWString::format(L" %c", GC.getSymbolID(NEGATIVE_DOMESTIC_MARKET_EVENT_CHAR)));
+		}
+	}
+	// WTP, ray Domestic Market Events - END
 
 	// XXX out this in bottom bar???
 	if (pCity->isOccupation())

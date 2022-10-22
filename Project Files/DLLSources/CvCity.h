@@ -361,7 +361,6 @@ public:
 	int calculateTeamCulturePercent(TeamTypes eIndex) const;
 	void setCulture(PlayerTypes eIndex, int iNewValue, bool bPlots);
 	void changeCulture(PlayerTypes eIndex, int iChange, bool bPlots);
-
 	int getTotalYieldStored() const; // In python
 	void setTotalYieldStored(int iValue);
 	void changeTotalYieldStored(int iChange);
@@ -792,6 +791,10 @@ protected:
 	int m_iCityHappiness; // WTP, ray, Happiness
 	int m_iCityUnHappiness; // WTP, ray, Happiness
 	int m_iCityTimerFestivitiesOrUnrest; // WTP, ray, Happiness
+	int m_iDomesticDemandEventDuration; // WTP, ray Domestic Market Events - START
+	int m_iDomesticDemandEventTimer; // WTP, ray Domestic Market Events - START
+	int m_iDomesticDemandEventPriceModifier; // WTP, ray Domestic Market Events - START
+	int m_iDomesticDemandEventDemandModifier; // WTP, ray Domestic Market Events - START
 	int m_iTeachUnitMultiplier;
 	int m_iEducationThresholdMultiplier;
 	int m_iTotalYieldStored;
@@ -880,6 +883,28 @@ protected:
 	void doCityHealth(); // R&R, ray, Health - START
 	void doCityHappiness(); // WTP, ray, Happiness - START
 	void doCityUnHappiness(); // WTP, ray, Happiness - START
+
+	// WTP, ray Domestic Market Events - START
+protected:
+	void checkForDomesticDemandEvent();
+
+	void setDurationDomesticDemandEvent(int iDuration);
+	void reduceRemainingDurationDomesticDemandEvent();
+	int getRemainingDurationDomesticDemandEvent() const;
+
+	void setTimerDomesticDemandEvent(int iTimer);
+	void reduceTimerDomesticDemandEvent();
+	int getTimerDomesticDemandEvent() const;
+
+	void setDomesticDemandEventPriceModifier(int iDomesticDemandEventModifier);
+	void setDomesticDemandEventDemandModifier(int iDomesticDemandEventModifier);	
+
+public:
+	int getDomesticDemandEventPriceModifier() const;
+	int getDomesticDemandEventDemandModifier() const;
+	// WTP, ray Domestic Market Events - END
+
+protected:
 	bool doCheckProduction();
 	void doCheat(bool bAlt, bool bShift, bool bCtrl);
 	int getExtraProductionDifference(int iExtra, int iModifier) const;

@@ -98,29 +98,30 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 			CvYieldInfo& kYield = GC.getYieldInfo(eYield);
 			FAssert(kYield.getBuyPriceHigh() >= kYield.getBuyPriceLow());
 
+			int iBuyPrice = 0;
+
 			// Luxury Goods should also give a little profit
 			if (eYield == YIELD_LUXURY_GOODS)
 			{
-				int iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS();
-				setYieldBuyPrice(eYield, iBuyPrice);
+				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS();
 			}
 			// WTP, now also Fieldworker Tools, but the Diff is only half
 			else if (eYield == YIELD_FIELD_WORKER_TOOLS)
 			{
-				int iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS() / 2);
-				setYieldBuyPrice(eYield, iBuyPrice);
+				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS() / 2);
 			}
 			// WTP, now also Household Goods, but the Diff is only half
 			else if (eYield == YIELD_HOUSEHOLD_GOODS)
 			{
-				int iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS() / 2);
-				setYieldBuyPrice(eYield, iBuyPrice);
+				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS() / 2);
 			}
 			else
 			{
-				int iBuyPrice = kYield.getBuyPriceLow() + GC.getGameINLINE().getSorenRandNum(kYield.getBuyPriceHigh() - kYield.getBuyPriceLow() + 1, "Yield Price");
-				setYieldBuyPrice(eYield, iBuyPrice);
+				iBuyPrice = kYield.getBuyPriceLow() + GC.getGameINLINE().getSorenRandNum(kYield.getBuyPriceHigh() - kYield.getBuyPriceLow() + 1, "Yield Price");
 			}
+
+			setYieldBuyPrice(eYield, iBuyPrice);
+
 		}
 	}
 	//Androrc End
@@ -542,6 +543,7 @@ void CvCity::doTurn()
 		doCityHappiness();
 		doCityUnHappiness();
 		// WTP, ray, Happiness - END
+		checkForDomesticDemandEvent(); // WTP, ray Domestic Market Events - START
 	}
 	
 	doDecay();
@@ -7095,8 +7097,8 @@ void CvCity::doYields()
 	int aiYields[NUM_YIELD_TYPES];
 	calculateNetYields(aiYields, NULL, NULL, true);
 
-	const int iTotalYields = getTotalYieldStored();
-	const int iMaxCapacity = getMaxYieldCapacity();
+	int iTotalYields = getTotalYieldStored();
+	int iMaxCapacity = getMaxYieldCapacity();
 
 	// WTP, ray, Happiness - START 
 	int iCityHappinessDomesticMarketGoldModifiers = getCityHappiness() - getCityUnHappiness();
@@ -7214,7 +7216,7 @@ void CvCity::doYields()
 			bool bHasUnlockedTradeSettings = getHasUnlockedStorageLossTradeSettings();
 
 			// ray, making special storage capacity rules for Yields XML configurable
-			if (GC.getYieldInfo(eYield).isCargo() && !GC.getYieldInfo(eYield).isIgnoredForStorageCapacity()) 
+			if (GC.getYieldInfo(eYield).isCargo() && !GC.getYieldInfo(eYield).isIgnoredForStorageCapacity())
 			{
 				int iExcess = 0;
 				// Here special sell behaviour for Custom House
@@ -7249,7 +7251,7 @@ void CvCity::doYields()
 						}
 					}
 				}
-					
+				
 				if (iExcess > 0)
 				{
 					int iLoss = std::max(GC.getCITY_YIELD_DECAY_PERCENT() * iExcess / 100, GC.getMIN_CITY_YIELD_DECAY());
@@ -8984,7 +8986,6 @@ void CvCity::setOrderedStudents(UnitTypes eUnit, int iCount, bool bRepeat, bool 
 void CvCity::checkOrderedStudentsForRepeats(UnitTypes eUnit)
 {
 	FAssert(m_em_bOrderedStudentsRepeat.isInRange(eUnit));
-
 	if (m_em_bOrderedStudentsRepeat.isAllocated() && m_em_iOrderedStudents.isAllocated())
 	{
 		for (UnitTypes eLoopUnit = m_em_bOrderedStudentsRepeat.FIRST; eLoopUnit <= m_em_bOrderedStudentsRepeat.LAST; ++eLoopUnit)
@@ -9908,6 +9909,189 @@ void CvCity::doCityUnHappiness()
 
 	return;
 }
+// WTP, ray, Happiness - END
+
+// WTP, ray Domestic Market Events - START
+void CvCity::checkForDomesticDemandEvent()
+{
+	// ok, let us check all conditions where we do nothing and exit
+
+	// if the feature is not activated, do nothing
+	if (!GC.getENABLE_DOMESTIC_DEMAND_EVENTS())
+	{
+		return;
+	}
+
+	// we exit if there is still a Domestic Demand Timer, so the last Event was not long enough ago
+	// before we do so however, we reduce the timer
+	if (getTimerDomesticDemandEvent() > 0)
+	{
+		reduceTimerDomesticDemandEvent();
+		return;
+	}
+
+	// we exit if there is already a Domestic Demand Event going on
+	// before we do so however, we reduce the duration counter
+	// if event is over, we also clear the modifier and start the timer for next
+	if (getRemainingDurationDomesticDemandEvent() > 0)
+	{
+		reduceRemainingDurationDomesticDemandEvent();
+
+		//  also in here we may start the Timer, to get some timely disance to the next
+		// also in here we would then also set the modifier to 0 again
+		if (getRemainingDurationDomesticDemandEvent() == 0)
+		{
+			// the event is over, set modifiser again to 0
+			setDomesticDemandEventPriceModifier(0);
+			setDomesticDemandEventDemandModifier(0);
+
+			// the event is over, now start the timer so the next is not directly triggered
+			setTimerDomesticDemandEvent(GC.getDefineINT("TIMER_BETWEEN_DOMESTIC_DEMAND_EVENTS"));
+		}
+
+		return;
+	}
+
+
+	// we exit if we the city is not owned by a Colonial Nation or if the Player is in Revolution
+	PlayerTypes eOwner = getOwnerINLINE();
+	if (eOwner == NO_PLAYER || !GET_PLAYER(getOwnerINLINE()).isPlayable() || GET_PLAYER(getOwnerINLINE()).isInRevolution())
+	{
+		return;
+	}
+
+	// we exit if we are in rebellion or City Health is negative or city too small
+	if (isOccupation() || getCityHealth() < 0 || getPopulation() < GC.getDefineINT("MIN_CITY_POPULATION_DOMESTIC_DEMAND_EVENTS"))
+	{
+		return;
+	}
+
+	// we exit if there is no Market Building in the City
+	if (getMarketModifier() == 0)
+	{
+		return;
+	}
+
+	// ok, now we can do the actual logic
+
+	// 1. get the Happiness of the City and split into positive case or negative case
+	int iHappinessBalance = getCityHappiness() - getCityUnHappiness();
+
+	// it is balanced, do nothing
+	if (iHappinessBalance == 0)
+	{
+		return;
+	}
+
+	// if it is positive, we may trigger a positive Domestic Market Event
+	else if (iHappinessBalance > 0)
+	{
+		int iPositiveDomesticEventRandom = GC.getGameINLINE().getSorenRandNum(100, "Randomized Chance of Positive Domestic Demand Event");
+		int iPositiveDomesticEventChance = iHappinessBalance * GC.getDefineINT("PERCENT_CHANCE_PER_HAPPINESS_DOMESTIC_DEMAND_EVENTS");
+
+		// in case we have enough Happiness to pass the random check : trigger positive Domestic Demand Event
+		if (iPositiveDomesticEventChance >= iPositiveDomesticEventRandom)
+		{
+			// one modifier is for demand, the other one is for price
+			setDomesticDemandEventDemandModifier(GC.getDefineINT("DEMAND_INCREASE_PERCENT_DOMESTIC_DEMAND_EVENTS"));
+			setDomesticDemandEventPriceModifier(GC.getDefineINT("PRICE_INCREASE_PERCENT_DOMESTIC_DEMAND_EVENTS"));
+
+			// duration is also influenced by the Happiness Balance
+			int iDurationOfDomesticDemandEvent = iHappinessBalance + GC.getDefineINT("BASE_DURATION_DOMESTIC_DOMESTIC_DEMAND_EVENTS");
+			setDurationDomesticDemandEvent(iDurationOfDomesticDemandEvent);
+
+			// add message
+			CvWString szBuffer = gDLL->getText("TXT_KEY_CITY_DOMESTIC_MARKET_EVENT_POSITIVE", getNameKey());
+			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+		}
+	}
+
+	// if it is negative, we may trigger a negative Domestic Market Event
+	else if (iHappinessBalance < 0)
+	{
+		int iNegativeDomesticEventRandom = GC.getGameINLINE().getSorenRandNum(100, "Randomized Chance of Negative Domestic Demand Event");
+		int iNegativeDomesticEventChance = -1 * iHappinessBalance * GC.getDefineINT("PERCENT_CHANCE_PER_HAPPINESS_DOMESTIC_DEMAND_EVENTS");
+
+		// in case we have enough Happiness to pass the random check : trigger positive Domestic Demand Event
+		if (iNegativeDomesticEventChance >= iNegativeDomesticEventRandom)
+		{
+			// one modifier is for demand, the other one is for price
+			setDomesticDemandEventDemandModifier(-GC.getDefineINT("DEMAND_DECREASE_PERCENT_DOMESTIC_DEMAND_EVENTS"));
+			setDomesticDemandEventPriceModifier(-GC.getDefineINT("PRICE_DECREASE_PERCENT_DOMESTIC_DEMAND_EVENTS"));
+
+			// duration is also influenced by the Happiness Balance
+			int iDurationOfDomesticDemandEvent = -1 * iHappinessBalance + GC.getDefineINT("BASE_DURATION_DOMESTIC_DOMESTIC_DEMAND_EVENTS");
+			setDurationDomesticDemandEvent(iDurationOfDomesticDemandEvent);
+
+			// add message
+			CvWString szBuffer = gDLL->getText("TXT_KEY_CITY_DOMESTIC_MARKET_EVENT_NEGATIVE", getNameKey());
+			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+		}
+	}
+
+	return;
+}
+
+// the Duration methods
+void CvCity::setDurationDomesticDemandEvent(int iDuration)
+{
+	m_iDomesticDemandEventDuration = iDuration;
+}
+
+void CvCity::reduceRemainingDurationDomesticDemandEvent()
+{
+	if (m_iDomesticDemandEventDuration > 0)
+	{
+		m_iDomesticDemandEventDuration = m_iDomesticDemandEventDuration -1;
+	}
+}
+
+int CvCity::getRemainingDurationDomesticDemandEvent() const
+{
+	return m_iDomesticDemandEventDuration;
+}
+
+// the timer methods
+void CvCity::setTimerDomesticDemandEvent(int iTimer)
+{
+	m_iDomesticDemandEventTimer = iTimer;
+}
+
+void CvCity::reduceTimerDomesticDemandEvent()
+{
+	if (m_iDomesticDemandEventTimer > 0)
+	{
+		m_iDomesticDemandEventTimer = m_iDomesticDemandEventTimer -1;
+	}
+}
+
+int CvCity::getTimerDomesticDemandEvent() const
+{
+	return m_iDomesticDemandEventTimer;
+}
+
+// the price modifier
+void CvCity::setDomesticDemandEventPriceModifier(int iPriceModifier)
+{
+	m_iDomesticDemandEventPriceModifier = iPriceModifier;
+}
+
+int CvCity::getDomesticDemandEventPriceModifier() const
+{
+	return m_iDomesticDemandEventPriceModifier;
+}
+
+// the deamnd modifier
+void CvCity::setDomesticDemandEventDemandModifier(int iDemandModifier)
+{
+	m_iDomesticDemandEventDemandModifier = iDemandModifier;
+}
+
+int CvCity::getDomesticDemandEventDemandModifier() const
+{
+	return m_iDomesticDemandEventDemandModifier;
+}
+// WTP, ray Domestic Market Events - END
 
 // WTP, ray, new Harbour System - START
 int CvCity::getCityHarbourSpace() const
@@ -11724,6 +11908,7 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 	}
 	
 	calculatedChance *= GET_PLAYER(getOwnerINLINE()).getLearningByDoingModifier() / 100; // CivEffects - Nightinggale
+
 	//ray Multiplayer Random Fix
 	//int randomValue = rand() % 1000 + 1;
 	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "LbD Expert City");
@@ -12546,7 +12731,13 @@ void CvCity::doExtraCityDefenseAttacks()
 int CvCity::getYieldBuyPrice(YieldTypes eYield) const
 {
 	FAssert(validEnumRange(eYield));
-	return m_em_iYieldBuyPrice.get(eYield);
+
+	// WTP, ray Domestic Market Events - START
+	// we modify the price in case there is a Market Event going on
+	int iDomesticMarketEventModifier = getDomesticDemandEventPriceModifier();
+	int iModifiedPrice = m_em_iYieldBuyPrice.get(eYield) * (100 + iDomesticMarketEventModifier) /  100;
+	return iModifiedPrice;
+
 }
 
 // R&R, ray, adjustment Domestic Markets
@@ -12603,6 +12794,11 @@ void CvCity::getYieldDemands(YieldCargoArray<int> &aYields) const
 
 	// apply market multiplier to each yield
 	int iMarketModifier = this->getMarketModifier();
+
+	// WTP, ray Domestic Market Events - START
+	// here we add the event modifier on top, which may be positive or negative
+	iMarketModifier = iMarketModifier + this->getDomesticDemandEventDemandModifier();
+	// WTP, ray Domestic Market Events - END
 	// for performance reasions, use getUnitYieldDemandTypes as it skips all yields no units/buildings will ever demand
 	const InfoArray<YieldTypes>& kYieldArray = GC.getDomesticDemandYieldTypes();
 	for (int i = 0; i < kYieldArray.getLength(); ++i)
@@ -12661,37 +12857,38 @@ void CvCity::doPrices()
 
 		if (kYield.isCargo())
 		{
+			int iBuyPrice = 0;
+
 			// Luxury Goods should always give a little profit
 			if (eYield == YIELD_LUXURY_GOODS)
 			{
-				int iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS();
-				setYieldBuyPrice(eYield, iBuyPrice);
+				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS();
 			}
 			// WTP, now also Fieldwoker Tools, but the Diff is only half
 			else if (eYield == YIELD_FIELD_WORKER_TOOLS)
 			{
-				int iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS() / 2);
-				setYieldBuyPrice(eYield, iBuyPrice);
+				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS() / 2);
 			}
 			// WTP, now also Household Goods, but the Diff is only half
 			else if (eYield == YIELD_HOUSEHOLD_GOODS)
 			{
-				int iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS() / 2);
-				setYieldBuyPrice(eYield, iBuyPrice);
+				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS() / 2);
 			}
 			else
 			{
 				int iBaseThreshold = kYield.getPriceChangeThreshold() * GC.getHandicapInfo(getHandicapType()).getEuropePriceThresholdMultiplier() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 10000;
-				int iNewPrice = kYield.getBuyPriceLow() + GC.getGameINLINE().getSorenRandNum(kYield.getBuyPriceHigh() - kYield.getBuyPriceLow() + 1, "Price selection");
-				iNewPrice += getYieldStored(eYield) / std::max(1, iBaseThreshold);
+				iBuyPrice = kYield.getBuyPriceLow() + GC.getGameINLINE().getSorenRandNum(kYield.getBuyPriceHigh() - kYield.getBuyPriceLow() + 1, "Price selection");
+				iBuyPrice += getYieldStored(eYield) / std::max(1, iBaseThreshold);
 
-				if (GC.getGameINLINE().getSorenRandNum(100, "Price correction") < kYield.getPriceCorrectionPercent() * std::abs(iNewPrice - getYieldBuyPrice(eYield)))
+				if (GC.getGameINLINE().getSorenRandNum(100, "Price correction") < kYield.getPriceCorrectionPercent() * std::abs(iBuyPrice - getYieldBuyPrice(eYield)))
 				{
-					iNewPrice = std::min(iNewPrice, getYieldBuyPrice(eYield) + 1);
-					iNewPrice = std::max(iNewPrice, getYieldBuyPrice(eYield) - 1);
-					setYieldBuyPrice(eYield, iNewPrice);
+					iBuyPrice = std::min(iBuyPrice, getYieldBuyPrice(eYield) + 1);
+					iBuyPrice = std::max(iBuyPrice, getYieldBuyPrice(eYield) - 1);
 				}
 			}
+
+			setYieldBuyPrice(eYield, iBuyPrice);
+
 		}
 	}
 }
@@ -13117,7 +13314,6 @@ void CvCity::UpdateBuildingAffectedCache()
 			}
 		}
 	}
-		
 }
 // building affected cache - end - Nightinggale
 
