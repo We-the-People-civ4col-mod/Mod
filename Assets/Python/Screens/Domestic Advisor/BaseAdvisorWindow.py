@@ -38,7 +38,11 @@ class BaseAdvisorWindow:
 			self.tableManager.addText(pLoopCity.getName())
 			self.drawColonyRow(iCity, pLoopCity)
 			
+	def drawColonyRowCustom(self, iCity, pCity):
+		return
+	
 	def drawColonyRow(self, iCity, pCity):
+		self.drawColonyRowCustom(iCity, pCity)
 		self.tableManager.autofillRow(iCity, pCity)
 		
 	def drawColonyCell(self, iCity, pCity, iType, info):
@@ -48,6 +52,11 @@ class BaseAdvisorWindow:
 	def getWidgetHelp(self, argsList):
 		iScreen, eWidgetType, iData1, iData2, bOption = argsList
 		
+		return None
+	
+	# set the header on a column added by an InfoArray
+	# returning None will use a default value, usually getChar
+	def getCustomHeader(self, iType, pInfo):
 		return None
 	
 	# add custom actions to input

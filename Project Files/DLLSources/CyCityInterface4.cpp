@@ -42,6 +42,7 @@ void CyCityPythonInterface4(python::class_<CyCity>& x)
 		.def("isHasRealBuilding", &CyCity::isHasRealBuilding, "bool (BuildingID)")
 		.def("setHasRealBuilding", &CyCity::setHasRealBuilding, "(BuildingID, bool)")
 		.def("isHasFreeBuilding", &CyCity::isHasFreeBuilding, "bool (BuildingID)")
+		.def("getDominantBuilding", &CyCity::getDominantBuilding, "int (SpecialBuildingID)")
 
 		.def("clearOrderQueue", &CyCity::clearOrderQueue, "void ()")
 		.def("pushOrder", &CyCity::pushOrder, "void (OrderTypes eOrder, int iData1, int iData2, bool bSave, bool bPop, bool bAppend, bool bForce)")

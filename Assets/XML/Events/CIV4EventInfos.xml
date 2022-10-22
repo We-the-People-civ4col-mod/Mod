@@ -8445,7 +8445,7 @@
             <iRandomGold>0</iRandomGold>
             <iCulture>0</iCulture>
             <iHealth>0</iHealth>
-            <UnitClass>UNITCLASS_GALLEON</UnitClass>
+            <UnitClass>UNITCLASS_BRIGANTINE</UnitClass>
             <iNumFreeUnits>2</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
@@ -17947,7 +17947,7 @@
             <iRandomGold>0</iRandomGold>
             <iCulture>0</iCulture>
             <iHealth>0</iHealth>
-            <UnitClass>UNITCLASS_GALLEON</UnitClass>
+            <UnitClass>UNITCLASS_BRIGANTINE</UnitClass>
             <iNumFreeUnits>1</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
@@ -21922,7 +21922,9 @@
             <Type>EVENT_POLITICAL_REFUGEE_1</Type>
             <Description>TXT_KEY_EVENT_POLITICAL_REFUGEE_1</Description>
             <LocalInfoText/>
-            <WorldNewsTexts>TXT_KEY_EVENTTRIGGER_POLITICAL_REFUGEE</WorldNewsTexts>
+            <WorldNewsTexts>
+				<Text>TXT_KEY_EVENTTRIGGER_POLITICAL_REFUGEE</Text>
+			</WorldNewsTexts>
             <OtherPlayerPopup/>
             <QuestFailText/>
             <bQuest>0</bQuest>
@@ -23234,7 +23236,9 @@
             <Type>EVENT_ADMIRAL_1_1</Type>
             <Description>TXT_KEY_EVENT_ADMIRAL_1_1</Description>
             <LocalInfoText/>
-            <WorldNewsTexts>TXT_KEY_EVENT_ADMIRAL_LAND</WorldNewsTexts>
+            <WorldNewsTexts>
+				<Text>TXT_KEY_EVENT_ADMIRAL_LAND</Text>
+			</WorldNewsTexts>
             <OtherPlayerPopup/>
             <QuestFailText/>
             <bQuest>0</bQuest>
@@ -23295,7 +23299,9 @@
             <Type>EVENT_ADMIRAL_1_2</Type>
             <Description>TXT_KEY_EVENT_ADMIRAL_1_2</Description>
             <LocalInfoText/>
-            <WorldNewsTexts>TXT_KEY_EVENT_ADMIRAL_LAND</WorldNewsTexts>
+            <WorldNewsTexts>
+				<Text>TXT_KEY_EVENT_ADMIRAL_LAND</Text>
+			</WorldNewsTexts>
             <OtherPlayerPopup/>
             <QuestFailText/>
             <bQuest>0</bQuest>
@@ -23356,7 +23362,9 @@
             <Type>EVENT_ADMIRAL_1_3</Type>
             <Description>TXT_KEY_EVENT_ADMIRAL_1_3</Description>
             <LocalInfoText/>
-            <WorldNewsTexts>TXT_KEY_EVENT_ADMIRAL_BORD</WorldNewsTexts>
+            <WorldNewsTexts>
+				<Text>TXT_KEY_EVENT_ADMIRAL_BORD</Text>
+			</WorldNewsTexts>
             <OtherPlayerPopup/>
             <QuestFailText/>
             <bQuest>0</bQuest>

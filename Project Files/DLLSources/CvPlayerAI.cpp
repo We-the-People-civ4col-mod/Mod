@@ -6276,7 +6276,7 @@ int CvPlayerAI::AI_getContactTimer(PlayerTypes eIndex1, ContactTypes eIndex2)
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_CONTACT_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
-	return m_em_iContactTimer.get(eIndex1, eIndex2);
+	return m_em_iContactTimer[eIndex1].get(eIndex2);
 }
 
 
@@ -6286,7 +6286,7 @@ void CvPlayerAI::AI_changeContactTimer(PlayerTypes eIndex1, ContactTypes eIndex2
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_CONTACT_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
-	m_em_iContactTimer.add(eIndex1, eIndex2, iChange);
+	m_em_iContactTimer[eIndex1].add(eIndex2, iChange);
 	FAssert(AI_getContactTimer(eIndex1, eIndex2) >= 0);
 }
 
@@ -6297,7 +6297,7 @@ int CvPlayerAI::AI_getMemoryCount(PlayerTypes eIndex1, MemoryTypes eIndex2)
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_MEMORY_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
-	return m_em_iMemoryCount.get(eIndex1, eIndex2);
+	return m_em_iMemoryCount[eIndex1].get(eIndex2);
 }
 
 
@@ -6307,7 +6307,7 @@ void CvPlayerAI::AI_changeMemoryCount(PlayerTypes eIndex1, MemoryTypes eIndex2, 
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_MEMORY_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
-	m_em_iMemoryCount.add(eIndex1, eIndex2, iChange);
+	m_em_iMemoryCount[eIndex1].add(eIndex2, iChange);
 	FAssert(AI_getMemoryCount(eIndex1, eIndex2) >= 0);
 }
 
@@ -6379,15 +6379,8 @@ void CvPlayerAI::AI_doTradeRoutes()
 					if (pBestYieldCity != NULL)
 					{
 						// R&R, ray, fix for new storage capacity
-						if (GC.getNEW_CAPACITY())
-						{
-							int iNewMaintainLevelForNewCapacity = GC.getGameINLINE().getCargoYieldCapacity();
-							pBestYieldCity->setMaintainLevel(eLoopYield, iNewMaintainLevelForNewCapacity);
-						}
-						else
-						{
-							pBestYieldCity->setMaintainLevel(eLoopYield, pBestYieldCity->getMaxYieldCapacity() / 2);
-						}
+						int iNewMaintainLevelForNewCapacity = GC.getGameINLINE().getCargoYieldCapacity();
+						pBestYieldCity->setMaintainLevel(eLoopYield, iNewMaintainLevelForNewCapacity);
 					}
 				}
 			}
@@ -6477,15 +6470,8 @@ void CvPlayerAI::AI_doTradeRoutes()
 								{
 									bShouldImport = true;
 									// R&R, ray, fix for new storage capacity
-									if (GC.getNEW_CAPACITY())
-									{
-										int iNewMaintainLevelForNewCapacity = GC.getGameINLINE().getCargoYieldCapacity();
-										pLoopCity->setMaintainLevel(eLoopYield, iNewMaintainLevelForNewCapacity);
-									}
-									else
-									{
-										pLoopCity->setMaintainLevel(eLoopYield, pLoopCity->getMaxYieldCapacity() / 3);
-									}
+									int iNewMaintainLevelForNewCapacity = GC.getGameINLINE().getCargoYieldCapacity();
+									pLoopCity->setMaintainLevel(eLoopYield, iNewMaintainLevelForNewCapacity);
 								}
 							}
 						}
@@ -6501,51 +6487,35 @@ void CvPlayerAI::AI_doTradeRoutes()
 						int iMaintainLevel = pLoopCity->getMaintainLevel(eLoopYield);
 						int iStored = pLoopCity->getYieldStored(eLoopYield);
 
-//VET NewCapacity - begin 1/8
-						if (GC.getNEW_CAPACITY())
-						{
-							int iCargoYields = 0;
-							for (int iYield = 3; iYield < NUM_YIELD_TYPES; iYield++)//without YIELD_FOOD, YIELD_LUMBER, YIELD STONE
-							{
-								if ((pLoopCity->getYieldStored((YieldTypes)iYield) > 0) && (GC.getYieldInfo((YieldTypes)iYield).isCargo()))
-									{iCargoYields++;}
-							}
-							if (iCargoYields < 1)
-								{iCargoYields = 1;}
-							iMaintainLevel /= iCargoYields;
-							if (iStored > iMaintainLevel)
-							{
-								if ((aiYields[eLoopYield] > 0) || (pLoopCity->getTotalYieldStored() > (iCapacity * 90) / 100) || pLoopCity->isBestPortCity())
-								{
-									bShouldExport = true;
-								}	
-							}
-							else if (iMaintainLevel > 0 && iStored < iMaintainLevel)
-							{
-								bShouldImport = true;
+						int iCargoYields = 0;
 
-							}
-						}
-						else
+						for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 						{
-//VET NewCapacity - end 1/8					
-							if (iStored > iMaintainLevel)
+							if (GC.getYieldInfo(eYield).isIgnoredForStorageCapacity())
+									continue;
+
+							if ((pLoopCity->getYieldStored(eYield) > 0) && (GC.getYieldInfo(eYield).isCargo()))
 							{
-								// TAC - AI Economy - koma13 - START
-								//if ((aiYields[eLoopYield] > 0) || (iStored > (iCapacity * 90) / 100) || pLoopCity->AI_isPort())
-								if ((aiYields[eLoopYield] > 0) || (iStored > (iCapacity * 90) / 100) || pLoopCity->isBestPortCity())
-								// TAC - AI Economy - koma13 - END
-								{
-									bShouldExport = true;
-								}
+								iCargoYields++;
 							}
-							else if (iMaintainLevel > 0 && iStored < iMaintainLevel)
-							{
-								bShouldImport = true;
-							}
-//VET NewCapacity - begin 2/8
 						}
-//VET NewCapacity - end 2/8
+						if (iCargoYields < 1)
+						{
+							iCargoYields = 1;
+						}
+
+						iMaintainLevel /= iCargoYields;
+						if (iStored > iMaintainLevel)
+						{
+							if ((aiYields[eLoopYield] > 0) || (pLoopCity->getTotalYieldStored() > (iCapacity * 90) / 100) || pLoopCity->isBestPortCity())
+							{
+								bShouldExport = true;
+							}	
+						}
+						else if (iMaintainLevel > 0 && iStored < iMaintainLevel)
+						{
+							bShouldImport = true;
+						}
 					}
 				}
 				if (bShouldImport)
@@ -8787,14 +8757,7 @@ bool CvPlayerAI::AI_isYieldNeeded(YieldTypes eYield, int iCapacityPercent, CvCit
 			else
 			{
 				// R&R, ray, fix for new storage capacity
-				if (GC.getNEW_CAPACITY())
-				{
-					iTotalNeeded += ((pLoopCity->getMaxYieldCapacity() / 5 * iCapacityPercent) / 100) - pLoopCity->getYieldStored(eYield);
-				}
-				else
-				{
-					iTotalNeeded += ((pLoopCity->getMaxYieldCapacity() * iCapacityPercent) / 100) - pLoopCity->getYieldStored(eYield);
-				}
+				iTotalNeeded += ((pLoopCity->getMaxYieldCapacity() / 5 * iCapacityPercent) / 100) - pLoopCity->getYieldStored(eYield);
 			}
 		}
 	}
@@ -9657,11 +9620,9 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 		//int iMaintainLevel = pCity->getMaintainLevel(eYield);
 		int iMaintainLevel = pCity->getAutoMaintainThreshold(eYield);
 		// transport feeder - end - Nightinggale
-//VET NewCapacity - begin 3/8
 		int iTotalStored = pCity->getTotalYieldStored();
 		// R&R, ray, improvement
-		if (GC.getNEW_CAPACITY() && (iTotalStored > iMaxCapacity / 2) )
-		//if (GC.getNEW_CAPACITY())
+		if (iTotalStored > iMaxCapacity / 2)
 		{
 			int iCargoYields = 0;
 			for (int iYield = 1; iYield < NUM_YIELD_TYPES; iYield++)//YIELD_FOOD
@@ -9670,10 +9631,11 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 					{iCargoYields++;}
 			}
 			if (iCargoYields < 1)
-				{iCargoYields = 1;}
+			{
+				iCargoYields = 1;
+			}
 			iMaintainLevel /= iCargoYields;
 		}
-//VET NewCapacity - end 3/8
 		FAssert(iMaxCapacity > 0);
 		if (iAmount < 0) // Loading
 		{
@@ -9682,55 +9644,7 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 			{
 				iValue = std::min(iSurplus, -iAmount);
 
-//VET NewCapacity - begin 4/8
-				if (GC.getNEW_CAPACITY())
-				{
-					iValue *= 50 + ((100 * iStored) / std::max(1, iMaxCapacity));
-					int iMax = iMaxCapacity * 9 / 10;
-
-					// WTP, ray, even if it should never happen, let us prevent iMax being 0 if iMaxCapacity for some reason is 1 above - START
-					if (iMax == 0)
-					{
-						iMax = 270;
-					}
-					// WTP, ray, even if it should never happen, let us prevent iMax being 0 if iMaxCapacity for some reason is 1 above - END
-
-					if (iTotalStored >= iMax)
-					{
-						iValue *= 125 + ((100 * iMax) / iMax);
-						iValue /= 100;
-					}
-				}
-				else
-				{
-//VET NewCapacity - end 4/8
-					iValue *= 50 + ((100 * iStored) / std::max(1, iMaxCapacity));
-					if (iStored >= iMaxCapacity)
-					{
-						iValue *= 125 + ((100 * (iStored - iMaxCapacity)) / iMaxCapacity);
-						iValue /= 100;
-					}
-//VET NewCapacity - begin 5/8
-				}
-//VET NewCapacity - end 5/8
-			}
-		}
-		else //Unloading
-		{
-			if (iAmount > 0)
-			{
-//VET NewCapacity - begin 6/8
-				iTotalStored += (pCity->AI_getTransitYield(eYield) * 75) / 100;
-//VET NewCapacity - end 6/8
-				iStored += (pCity->AI_getTransitYield(eYield) * 75) / 100;
-				// Erik: Adding this since I suspect a bug may cause this variable to be negative
-				FAssertMsg(iStored >= 0, "iStored expected to be >= 0");
-			}
-
-			iValue = iAmount * 100;
-//VET NewCapacity - begin 7/8
-			if (GC.getNEW_CAPACITY())
-			{
+				iValue *= 50 + ((100 * iStored) / std::max(1, iMaxCapacity));
 				int iMax = iMaxCapacity * 9 / 10;
 
 				// WTP, ray, even if it should never happen, let us prevent iMax being 0 if iMaxCapacity for some reason is 1 above - START
@@ -9740,33 +9654,43 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 				}
 				// WTP, ray, even if it should never happen, let us prevent iMax being 0 if iMaxCapacity for some reason is 1 above - END
 
-				if (iTotalStored > iMax)
+				if (iTotalStored >= iMax)
 				{
-					iValue *= 10;
-					iValue /= 100 + ((100 * (iTotalStored - iMax)) / iMax);
-				}
-				else
-				{
-					iValue *=  std::max(10, 10 + (100 * (iMaxCapacity - pCity->getTotalYieldStored())) / std::max(1, 10 + iMaxCapacity));
+					iValue *= 125 + ((100 * iMax) / iMax);
 					iValue /= 100;
 				}
+			}
+		}
+		else //Unloading
+		{
+			if (iAmount > 0)
+			{
+				iTotalStored += (pCity->AI_getTransitYield(eYield) * 75) / 100;
+				iStored += (pCity->AI_getTransitYield(eYield) * 75) / 100;
+				// Erik: Adding this since I suspect a bug may cause this variable to be negative
+				FAssertMsg(iStored >= 0, "iStored expected to be >= 0");
+			}
+
+			iValue = iAmount * 100;
+			int iMax = iMaxCapacity * 9 / 10;
+
+			// WTP, ray, even if it should never happen, let us prevent iMax being 0 if iMaxCapacity for some reason is 1 above - START
+			if (iMax == 0)
+			{
+				iMax = 270;
+			}
+			// WTP, ray, even if it should never happen, let us prevent iMax being 0 if iMaxCapacity for some reason is 1 above - END
+
+			if (iTotalStored > iMax)
+			{
+				iValue *= 10;
+				iValue /= 100 + ((100 * (iTotalStored - iMax)) / iMax);
 			}
 			else
 			{
-//VET NewCapacity - end 7/8
-				if (iStored > iMaxCapacity)
-				{
-					iValue *= 10;
-					iValue /= 100 + ((100 * (iStored - iMaxCapacity)) / iMaxCapacity);
-				}
-				else
-				{
-					iValue *=  std::max(10, 10 + (100 * (iMaxCapacity - pCity->getYieldStored(eYield))) / std::max(1, 10 + iMaxCapacity));
-					iValue /= 100;
-				}
-//VET NewCapacity - begin 8/8
+				iValue *=  std::max(10, 10 + (100 * (iMaxCapacity - pCity->getTotalYieldStored())) / std::max(1, 10 + iMaxCapacity));
+				iValue /= 100;
 			}
-//VET NewCapacity - end 8/8
 
 			if (iStored < iMaintainLevel && iMaintainLevel > 0)
 			{

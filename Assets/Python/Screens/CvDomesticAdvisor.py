@@ -10,6 +10,8 @@ import ImportExportAdvisor
 import ProductionAdvisor
 import NativeAdvisor
 import WarehouseAdvisor
+import TeacherAdvisor
+
 
 
 ## I rewrote most of the page to remove all hardcoded values
@@ -130,6 +132,7 @@ class CvDomesticAdvisor:
 		self.CITIZEN_STATE            = self.addButton("CitizenState",           "INTERFACE_CITY_CITIZEN_BUTTON")
 		self.TOTAL_PRODUCTION_STATE   = self.addButton("TotalProductionState",   "INTERFACE_TOTAL_PRODUCTION_BUTTON")  # total production page - Nightinggale
 		self.TRADEROUTE_STATE         = self.addButton("TradeRouteState",        "INTERFACE_IMPORT_EXPORT_BUTTON")
+		self.TEACHER_STATE            = self.addButton("TeacherState",           "INTERFACE_TEACHER_LIST"            , TeacherAdvisor.TeacherAdvisor(self))
 		self.NATIVE_STATE             = self.addButton("NativeState",            "INTERFACE_NATIVE_BUTTON"           , NativeAdvisor.NativeAdvisor(self))
 		
 		if (gc.getUserSettings().getDebugMaxGameFont() > 0):
@@ -357,9 +360,7 @@ class CvDomesticAdvisor:
 			self.drawGameFont()
 		
 		self.drawButtons()
-		if self.StateWindow[self.CurrentState] != None:
-			screen.show(self.StateWindow[self.CurrentState].screenName)
-		else:
+		if self.StateWindow[self.CurrentState] == None:
 			screen.show(self.StatePages[self.CurrentState][self.CurrentPage] + "ListBackground")			
 		self.updateAppropriateCitySelection()
 

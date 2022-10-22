@@ -23457,7 +23457,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=93
-	BonusType=BONUS_GOOSE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=32,
@@ -25937,7 +25936,6 @@ BeginPlot
 	x=29,y=92
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_GOOSE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=8,
@@ -26773,7 +26771,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=90
-	BonusType=BONUS_GOOSE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=8,
@@ -29406,7 +29403,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=87
-	BonusType=BONUS_GOOSE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=8,
@@ -34022,7 +34018,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=89
-	BonusType=BONUS_GOOSE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=8,19,
@@ -41126,7 +41121,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=91
-	BonusType=BONUS_GOOSE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 	TeamReveal=8,
@@ -43711,7 +43705,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=92
-	BonusType=BONUS_GOOSE
 	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 EndPlot

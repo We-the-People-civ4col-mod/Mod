@@ -284,6 +284,13 @@ int getIndexForTypeAddingPrefix(JITarrayTypes eType, const char* pTypeString);
 const char* getArrayTypeWithoutPrefix(JITarrayTypes eType, int iIndex);
 JITarrayTypes getJITArrayTypeFromString(const char* szType);
 
+template<typename T>
+T getIndexForType(const char* pTypeString, const char* pAssertMsg = NULL)
+{
+	int iIndex = getIndexForType(VARINFO<T>::JIT, pTypeString);
+	FAssertMsg(iIndex != -1 || pAssertMsg == NULL, pAssertMsg);
+	return (T)iIndex;
+}
 
 
 #include "JustInTimeArrayTypes.h"

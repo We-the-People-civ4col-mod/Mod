@@ -194,7 +194,7 @@ public:
 	void setCulture(int /*PlayerTypes*/ eIndex, int iNewValue, bool bPlots);
 	void changeCulture(int /*PlayerTypes*/ eIndex, int iChange, bool bPlots);
 
-	int getTotalYieldStored() const;									//VET NewCapacity - 1/1
+	int getTotalYieldStored() const;
 	int getYieldStored(int /*YieldTypes*/ eYield) const;
 	void setYieldStored(int /*YieldTypes*/ eYield, int iValue);
 	void changeYieldStored(int /*YieldTypes*/ eYield, int iChange);
@@ -241,6 +241,8 @@ public:
 	void setHasRealBuilding(int /*BuildingTypes*/ iIndex, bool bNewValue);
 	bool isHasFreeBuilding(int /*BuildingTypes*/ iIndex);
 
+	int getDominantBuilding(int /*SpecialBuildingTypes*/ iSpecialBuilding) const;
+
 	void clearOrderQueue();
 	void pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bool bPop, bool bAppend, bool bForce);
 	void popOrder(int iNum, bool bFinish, bool bChoose);
@@ -275,6 +277,8 @@ public:
 	CyUnit* getUnitWorkingPlot(int iPlotIndex);
 	void addPopulationUnit(CyUnit* pUnit, int /*ProfessionTypes*/ eProfession);
 	bool removePopulationUnit(CyUnit* pUnit, bool bDelete, int /*ProfessionTypes*/ eProfession);
+
+	bool canTeach(int iUnit) const;
 
 	int getTeachUnitClass();
 	int getTeachUnit() const; // native advisor update - Nightinggale

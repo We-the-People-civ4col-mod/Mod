@@ -93,6 +93,9 @@ class DomesticAdvisorTable:
 
 	# add an array telling which columns to add
 	# this will split the page into multiple subpages if needed
+	def addHeaderArray(self, infoArray):
+		self.__addHeaderArrayCustom(infoArray)
+
 	def addHeaderArrayBuildings(self):
 		self.__addHeaderArrayBuildings()
 
@@ -233,6 +236,11 @@ class DomesticAdvisorTable:
 		char = (u" %c" % iChar)
 		self.__addHeaderDirect(iWidth, char)
 
+	def __addHeaderArrayCustom(self, infoArray):
+		self.InfoArray = infoArray
+		iTableWidth = self.iWidth - self.columnWidth[0][0] - self.columnWidth[0][1]
+		self.__addHeaderArray(iTableWidth)
+		
 	def __addHeaderArrayBuildings(self):
 		self.InfoArray = gc.getPlayer(CyGame().getActivePlayer()).getSpecialBuildingTypes()
 		iTableWidth = self.iWidth - self.columnWidth[0][0] - self.columnWidth[0][1]
@@ -368,15 +376,30 @@ class DomesticAdvisorTable:
 	
 	def __getColumnHeader(self, iColumn):
 		info = self.__getInfoForColumn(iColumn)
-		if (info != None):
-			return (u" %c" % info.getChar())
+		customHeader = self.parent.getCustomHeader(iColumn, info)
+		if customHeader != None:
+			return customHeader
+		elif self.__hasGetChar():
+			if (info != None):
+				return (u" %c" % info.getChar())
 			
 		return ""
+	
+	def __hasGetChar(self):
+		if (self.InfoArray != None):
+			if (self.InfoArray.getType(0) == JITarrayTypes.JIT_ARRAY_BUILDING_SPECIAL):
+				return True
+			if (self.InfoArray.getType(0) == JITarrayTypes.JIT_ARRAY_YIELD):
+				return True
+			
+		return False
 	
 	def __getInfoForType(self, iType):
 		if (self.InfoArray != None):
 			if (self.InfoArray.getType(0) == JITarrayTypes.JIT_ARRAY_BUILDING_SPECIAL):
 				return gc.getSpecialBuildingInfo(iType)
+			if (self.InfoArray.getType(0) == JITarrayTypes.JIT_ARRAY_UNIT):
+				return gc.getUnitInfo(iType)
 			if (self.InfoArray.getType(0) == JITarrayTypes.JIT_ARRAY_YIELD):
 				return gc.getYieldInfo(iType)
 			

@@ -90,6 +90,10 @@ CUSTOM_LDFLAGS =
 # Allows overwriting in Makefile.settings
 PERL=perl
 
+# set the heap size when creating the precompiled header file
+# 100% = 75 MB. Max is 2000%
+PRECOMPILE_MEMORY = /Zm150
+
 
 !IF [IF NOT EXIST Makefile.settings EXIT 1] != 0
 !IF [ECHO CUSTOM_CFLAGS = > Makefile.settings]
@@ -295,6 +299,7 @@ source_list: Make_Dir test_DllExport
     @FOR %j in ($(SUBDIRS)) DO @(FOR /F "delims=." %i IN ('dir /b $(SOURCE_DIR)\%j\*.cpp') DO @ECHO. $(TEMP_TARGET_FILES)\%j\%i.obj \>> $(FILE_DEPENDS))
     @ECHO.>> $(FILE_DEPENDS)
 	@$(PERL) bin\xml_enum_gen.pl
+	@$(PERL) bin\variable_setup.pl
 	@$(PERL) bin\Makefile_setup.pl "$(PROGRAMFILES)"
 
 fastdep:
@@ -414,7 +419,7 @@ $(Target_PCH) $(TEMP_TARGET_FILES)\_precompile.obj: $(PRECOMPILE_DEPENDENCIES)
 	@ECHO.>"$(Target_PCH).@"
 	@ECHO.>"$(TEMP_TARGET_FILES)\_precompile.obj.@"
 	@FOR %i IN ($(TEMP_TARGET_FILES)\*.obj) DO @IF EXIST "%i" DEL "%i"
-    @$(CPP) /nologo $(CFLAGS) $(PRECOMPILE_CFLAGS1)$(PRECOMPILE_CFLAGS2) $(INCS) /YcCvGameCoreDLL.h /Fo"$(TEMP_TARGET_FILES)\_precompile.obj" /c $(SOURCE_DIR)\_precompile.cpp
+    @$(CPP) /nologo $(CFLAGS) $(PRECOMPILE_CFLAGS1)$(PRECOMPILE_CFLAGS2) $(PRECOMPILE_MEMORY) $(INCS) /YcCvGameCoreDLL.h /Fo"$(TEMP_TARGET_FILES)\_precompile.obj" /c $(SOURCE_DIR)\_precompile.cpp
 	@DEL "$(Target_PCH).@"
 	@DEL "$(TEMP_TARGET_FILES)\_precompile.obj.@"
 

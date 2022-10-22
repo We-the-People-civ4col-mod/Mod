@@ -61,7 +61,7 @@ void CyCityPythonInterface3(python::class_<CyCity>& x)
 		.def("setCulture", &CyCity::setCulture, "void (int PlayerTypes eIndex`, bool bPlots)")
 		.def("changeCulture", &CyCity::changeCulture, "void (int PlayerTypes eIndex, int iChange, bool bPlots)")
 
-		.def("getTotalYieldStored", &CyCity::getTotalYieldStored, "int ()")						//VET NewCapacity - 1/1
+		.def("getTotalYieldStored", &CyCity::getTotalYieldStored, "int ()")
 		.def("getYieldStored", &CyCity::getYieldStored, "int /*YieldTypes*/ ()")
 		.def("setYieldStored", &CyCity::setYieldStored, "void (int YieldTypes eIndex, int)")
 		.def("changeYieldStored", &CyCity::changeYieldStored, "void (int YieldTypes, int)")

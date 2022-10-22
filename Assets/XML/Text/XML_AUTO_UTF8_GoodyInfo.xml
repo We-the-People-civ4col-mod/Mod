@@ -240,7 +240,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHIEF_NATIVE_SLAVE</Tag>
-        <English>You have proven to be fierce warriors. Allow us to give you this worthless prisoner from our raids against our enemies as present of friendship.</English>
+        <English>You have shown yourselves to be fierce warriors. As a sign of our friendship, take this worthless prisoner captured from our enemies.</English>
         <German>Ihr habt euch als starke Kämpfer erwiesen. Erlaubt uns euch diesen unwürdigen Gefangenen von einem unserer Beutetzüge als Geschenk zu übergeben.</German>
     </TEXT>
     <TEXT>
@@ -370,12 +370,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RANGER</Tag>
-        <English>You have discovered a wounded [COLOR_UNIT_TEXT]ranger[COLOR_REVERT] who offers his services to us for our help!</English>
+        <English>You have discovered a wounded [COLOR_UNIT_TEXT]ranger[COLOR_REVERT] who gratefully offers his services to us!</English>
         <German>Ihr habt einen verwundeten [COLOR_UNIT_TEXT]Ranger[COLOR_REVERT] entdeckt, der uns für unsere Hilfe seine Dienste anbietet!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_TRADER</Tag>
-        <English>You have discovered a [COLOR_UNIT_TEXT]Native trader[COLOR_REVERT] who had lost his orientation and now wants to offer his services to you!</English>
+        <English>You have discovered a [COLOR_UNIT_TEXT]Native trader[COLOR_REVERT] who had gotten lost. He now wants to work with you!</English>
         <German>Ihr habt einen [COLOR_UNIT_TEXT]Ureinwohnerhändler[COLOR_REVERT] entdeckt, der die Orientierung verloren hatte und Euch nun seine Dienste anbietet!</German>
     </TEXT>
     <TEXT>
@@ -385,7 +385,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_HOSTILE_RANGER_IN_THE_WILDERNESS</Tag>
-        <English>Milord, we've found a [COLOR_WARNING_TEXT]ranger[COLOR_REVERT] in the wilderness who refuses to talk to us. Instead when we approach he attacks.</English>
+        <English>Milord, we've found a [COLOR_WARNING_TEXT]ranger[COLOR_REVERT] in the wilderness who refuses to talk to us. Whenever we approach he attacks.</English>
         <German>Milord, wir haben einen [COLOR_WARNING_TEXT]Ranger[COLOR_REVERT] in der Wildnis gefunden, der sich weigerte mit uns zu reden. Als wir uns näherten, griff er uns überraschend an.</German>
     </TEXT>
     <TEXT>
@@ -400,7 +400,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVES_ON_WAR_PATH</Tag>
-        <English>As it seems the [COLOR_WARNING_TEXT]Natives[COLOR_REVERT] in this village have been preparing to go on the warpath. This is going to be a tough fight.</English>
+        <English>The [COLOR_WARNING_TEXT]Natives[COLOR_REVERT] in this village were already preparing to go on the warpath. This is going to be a tough fight.</English>
         <German>So wie es scheint, bereiten sich die [COLOR_WARNING_TEXT]Ureinwohner[COLOR_REVERT] dieser Siedlung darauf vor, auf den Kriegspfad zu gehen. Dies wird ein schwieriger Kampf werden.</German>
     </TEXT>
     <TEXT>
@@ -420,7 +420,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUNAWAY_NATIVE_SLAVES</Tag>
-        <English>Milord, we've found runaway [COLOR_WARNING_TEXT]Native slaves[COLOR_REVERT]. Let us catch them so we can bring them back to their owners.</English>
+        <English>Milord, we've found runaway [COLOR_WARNING_TEXT]Native slaves[COLOR_REVERT]. Let's catch them so we can bring them back to their owners.</English>
         <German>Milord, wir haben entlaufene [COLOR_WARNING_TEXT]Versklavte Ureinwohner[COLOR_REVERT] gefunden. Wir sollten sie wieder einfangen und zu ihren rechtmäßigen Besitzern zurückbringen.</German>
     </TEXT>
     <TEXT>
@@ -490,17 +490,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_LYNX_TRAIL</Tag>
-        <English>Milord, we've found a dead dear. Our scouts report that all footprints and traces point towards a [COLOR_WARNING_TEXT]lynx[COLOR_REVERT] hunting in this area.</English>
+        <English>Milord, we've found a dead deer. Our scouts also saw footprints of a [COLOR_WARNING_TEXT]lynx[COLOR_REVERT] that's hunting in this area.</English>
         <German>Milord, wir haben ein totes Reh gefunden. Unsere Späher berichten, dass die Spuren auf einen [COLOR_WARNING_TEXT]Luchs[COLOR_REVERT] hindeuten, der in dieser Gegend jagt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SHADOW_IN_THE_JUNGLE</Tag>
-        <English>Milord, our men report that they have seen [COLOR_WARNING_TEXT]a shadow moving in the trees[COLOR_REVERT]. Maybe we should listen to them and get ready for an attack.</English>
+        <English>Milord, our men say they saw [COLOR_WARNING_TEXT]a shadow moving in the trees[COLOR_REVERT]. Maybe we should listen to them and get ready for an attack.</English>
         <German>Milord, unsere Männer berichten über einen [COLOR_WARNING_TEXT]Schatten, der sich in den Bäumen bewegt[COLOR_REVERT]. Wir sollten vielleicht auf sie hören und uns auf einen Angriff vorbereiten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_COUGAR_IN_THE_NIGHT</Tag>
-        <English>Milord, the men at the campfire report to have heard faint noises in the grass. We think a [COLOR_WARNING_TEXT]big cat[COLOR_REVERT] or some other predator is close by.</English>
+        <English>Milord, the men at the campfire heard faint noises in the grass. We think a [COLOR_WARNING_TEXT]big cat[COLOR_REVERT] or some other predator is close by.</English>
         <German>Milord, die Männer am Lagerfeuer berichten, daß sie leise Geräusche im Gras gehört haben. Wir vermuten eine [COLOR_WARNING_TEXT]Raubkatze[COLOR_REVERT] oder ein anderes Raubtier in der Nähe.</German>
     </TEXT>
     <TEXT>

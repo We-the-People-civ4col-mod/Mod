@@ -138,7 +138,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CLIMBER</Tag>
-        <English>Climber</English>
+        <English>Rock Climber</English>
         <French>
             <Text>Arriviste:Arriviste</Text>
             <Gender>Male:Female</Gender>
@@ -346,7 +346,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_FORESTWARRIORS</Tag>
-        <English>Forestwarriors</English>
+        <English>Forest Warriors</English>
         <French>
             <Text>Forrestier:Forrestière</Text>
             <Gender>Male:Female</Gender>
@@ -618,7 +618,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_LIBERTARIAN</Tag>
-        <English>Libertarian</English>
+        <English>Rebel Mastermind</English>
         <French>
             <Text>Libertaire:Libertaire</Text>
             <Gender>Male:Female</Gender>

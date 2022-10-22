@@ -3366,7 +3366,7 @@ int CvUnitInfo::getYieldModifier(int i) const
 	return m_aiYieldModifier ? m_aiYieldModifier[i] : -1;
 }
 // R&R, Androrc, Domestic Market -- modified by Nightinggale - start
-const InfoArray<YieldTypes, IntTypes>& CvUnitInfo::getYieldDemands() const
+const InfoArray<YieldTypes, int>& CvUnitInfo::getYieldDemands() const
 {
 	return m_info_YieldDemands;
 }
@@ -5003,7 +5003,7 @@ m_iYieldStorage(0),
 m_iMaxHarbourSpaceProvided(0), // WTP, ray, new Harbour System - START
 m_iMaxBarracksSpaceProvided(0), // WTP, ray, new Barracks System - START
 m_iSpecialBuildingType(NO_SPECIALBUILDING),
-m_iIndexOf_NextBuildingType_In_SpecialBuilding(NO_BUILDING),
+m_eIndexOf_NextBuildingType_In_SpecialBuilding(NO_BUILDING),
 m_iConquestProbability(0),
 m_iHealRateChange(0),
 m_iDefenseModifier(0),
@@ -5244,7 +5244,7 @@ const InfoArray<PlotTypes>& CvBuildingInfo::AI_getRequiredCatchmentAreaPlotTypes
 {
 	return m_info_AIRequiredCatchmentAreaPlotTypes;
 }
-const InfoArray<UnitClassTypes, IntTypes>& CvBuildingInfo::AI_getUnitClassWeight() const
+const InfoArray<UnitClassTypes, int>& CvBuildingInfo::AI_getUnitClassWeight() const
 {
 	return m_info_AIUnitClassWeight;
 }
@@ -5266,7 +5266,7 @@ bool CvBuildingInfo::isCenterInCity() const
 	return m_bCenterInCity;
 }
 // R&R, Androrc, Domestic Market -- modified by Nightinggale - start
-const InfoArray<YieldTypes, IntTypes>& CvBuildingInfo::getYieldDemands() const
+const InfoArray<YieldTypes, int>& CvBuildingInfo::getYieldDemands() const
 {
 	return m_info_YieldDemands;
 }
@@ -5467,7 +5467,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iMaxHarbourSpaceProvided); // WTP, ray, new Harbour System - START
 	stream->Read(&m_iMaxBarracksSpaceProvided); // WTP, ray, new Barracks System - START
 	stream->Read(&m_iSpecialBuildingType);
-	stream->Read(&m_iIndexOf_NextBuildingType_In_SpecialBuilding);
+	stream->Read(&m_eIndexOf_NextBuildingType_In_SpecialBuilding);
 	stream->Read(&m_iConquestProbability);
 	stream->Read(&m_iHealRateChange);
 	stream->Read(&m_iDefenseModifier);
@@ -5564,7 +5564,7 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iMaxHarbourSpaceProvided); // WTP, ray, new Harbour System - START
 	stream->Write(m_iMaxBarracksSpaceProvided);	// WTP, ray, new Barracks System - START
 	stream->Write(m_iSpecialBuildingType);
-	stream->Write(m_iIndexOf_NextBuildingType_In_SpecialBuilding);
+	stream->Write(m_eIndexOf_NextBuildingType_In_SpecialBuilding);
 	stream->Write(m_iConquestProbability);
 	stream->Write(m_iHealRateChange);
 	stream->Write(m_iDefenseModifier);
@@ -5710,15 +5710,15 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 
 bool CvBuildingInfo::readPass2(CvXMLLoadUtility* pXML)
 {
-	m_iIndexOf_NextBuildingType_In_SpecialBuilding = GC.getInfoTypeForString(getType());
+	m_eIndexOf_NextBuildingType_In_SpecialBuilding = getIndexForType<BuildingTypes>(getType());
 	if(getSpecialBuildingType() != NO_SPECIALBUILDING)
 	{
 		for(int i=0;i<GC.getNumBuildingInfos();i++)
 		{
-			BuildingTypes eLoopBuilding = (BuildingTypes) ((m_iIndexOf_NextBuildingType_In_SpecialBuilding + i + 1) % GC.getNumBuildingInfos());
+			BuildingTypes eLoopBuilding = (BuildingTypes) ((m_eIndexOf_NextBuildingType_In_SpecialBuilding + i + 1) % GC.getNumBuildingInfos());
 			if(GC.getBuildingInfo(eLoopBuilding).getSpecialBuildingType() == getSpecialBuildingType())
 			{
-				m_iIndexOf_NextBuildingType_In_SpecialBuilding = eLoopBuilding;
+				m_eIndexOf_NextBuildingType_In_SpecialBuilding = eLoopBuilding;
 				break;
 			}
 		}
@@ -5771,6 +5771,10 @@ int CvSpecialBuildingInfo::getFontButtonIndex() const
 	return m_iFontButtonIndex;
 }
 // Arrays
+const InfoArray<BuildingTypes, int>& CvSpecialBuildingInfo::getBuildings() const
+{
+	return m_buildings;
+}
 int CvSpecialBuildingInfo::getProductionTraits(int i) const
 {
 	FAssertMsg(i < GC.getNumTraitInfos(), "Index out of bounds");
@@ -5795,6 +5799,24 @@ bool CvSpecialBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiProductionTraits, "ProductionTraits", GC.getNumTraitInfos(), 0);
 	pXML->GetChildXmlValByName(m_szNatureObject, "NatureObject");	// TAC - Nature Objects - koma13
 	return true;
+}
+void CvSpecialBuildingInfo::postXmlReadSetup()
+{
+	EnumMap<SpecialBuildingTypes, EnumMap<BuildingTypes, int, -1> > em;
+
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
+	{
+		CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
+		SpecialBuildingTypes eSpecial = static_cast<SpecialBuildingTypes>(kBuilding.getSpecialBuildingType());
+		if (eSpecial != NO_SPECIALBUILDING)
+		{
+			em[eSpecial].set(eBuilding, kBuilding.getSpecialBuildingPriority());
+		}
+	}
+	for (SpecialBuildingTypes eSpecialBuilding = em.FIRST; eSpecialBuilding <= em.LAST; ++eSpecialBuilding)
+	{
+		GC.getSpecialBuildingInfo(eSpecialBuilding).m_buildings.assignFrom(em[eSpecialBuilding]);
+	}
 }
 //======================================================================================================
 //					CvBuildingClassInfo
@@ -10191,7 +10213,7 @@ bool CvTerrainInfo::canHavePlotType(PlotTypes ePlotType) const
 	case PLOT_OCEAN:
 		return isWater();
 	}
-	BOOST_STATIC_ASSERT(NUM_PLOT_TYPES == 4);
+	BOOST_STATIC_ASSERT(NUM_PLOT_TYPES == static_cast<PlotTypes>(4));
 	return false;
 }
 
@@ -15137,7 +15159,7 @@ void CvEventTriggerInfo::verifyTriggerSettings(const InfoArray<T>& kArray) const
 {
 	for (int i = 0; i < kArray.getLength(); ++i)
 	{
-		const T eVar = kArray.getWithTemplate(i, (T)0);
+		const T eVar = kArray.get0(i);
 
 		const char* szError = NULL;
 
@@ -16882,6 +16904,10 @@ bool CvTradeScreenInfo::read(CvXMLLoadUtility* pXML)
 ///
 /// CivEffect
 ///
+int CivEffectInfo::getLearningByDoingModifier() const
+{
+	return m_iLearningByDoingModifier;
+}
 
 CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
 	// allow
@@ -16891,6 +16917,9 @@ CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
 
 	// growth
 	, m_iNumUnitsOnDockChange(0)
+
+	// unit
+	, m_iLearningByDoingModifier(0)
 {
 	if (bAutogenerateAllow)
 	{
@@ -16904,45 +16933,57 @@ CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
 		// Since the array all have 1 as default, the task for this CivEffect is to provide -1
 		//   whenever there is a positive value in a CivEffect
 
-		BonusArray          <int> ja_Bonuses       (1);
-		BuildArray          <int> ja_Builds        (1);
-		BuildingClassArray  <int> ja_Buildings     (1);
-		CivicArray          <int> ja_Civics        (1);
-		UnitClassArray      <int> ja_Immigrants    (1);
-		ImprovementArray    <int> ja_Improvements  (1);
-		ProfessionArray     <int> ja_Professions   (1);
-		PromotionArray      <int> ja_Promotions    (1);
-		RouteArray          <int> ja_Routes        (1);
-		UnitClassArray      <int> ja_Units         (1);
-		YieldArray          <int> ja_Yields        (1);
+		EnumMap<BonusTypes          , int> Bonuses;
+		EnumMap<BuildTypes          , int> Builds;
+		EnumMap<BuildingClassTypes  , int> Buildings;
+		EnumMap<CivicTypes          , int> Civics;
+		EnumMap<UnitClassTypes      , int> Immigrants;
+		EnumMap<ImprovementTypes    , int> Improvements;
+		EnumMap<ProfessionTypes     , int> Professions;
+		EnumMap<PromotionTypes      , int> Promotions;
+		EnumMap<RouteTypes          , int> Routes;
+		EnumMap<UnitClassTypes      , int> Units;
+		EnumMap<YieldTypes          , int> Yields;
+
+		Bonuses             .setAll(1);
+		Builds              .setAll(1);
+		Buildings           .setAll(1);
+		Civics              .setAll(1);
+		Immigrants          .setAll(1);
+		Improvements        .setAll(1);
+		Professions         .setAll(1);
+		Promotions          .setAll(1);
+		Routes              .setAll(1);
+		Units               .setAll(1);
+		Yields              .setAll(1);
 
 		for (CivEffectTypes eCivEffect = FIRST_CIV_EFFECT; eCivEffect < NUM_CIV_EFFECT_TYPES; ++eCivEffect)
 		{
 			const CivEffectInfo& kInfo = GC.getCivEffectInfo(eCivEffect);
-			ja_Bonuses         .generateInitCivEffect(kInfo.getAllowedBonuses());
-			ja_Builds          .generateInitCivEffect(kInfo.getAllowedBuilds());
-			ja_Buildings       .generateInitCivEffect(kInfo.getAllowedBuildingClasses());
-			ja_Civics          .generateInitCivEffect(kInfo.getAllowedCivics());
-			ja_Immigrants      .generateInitCivEffect(kInfo.getAllowedImmigrants());
-			ja_Improvements    .generateInitCivEffect(kInfo.getAllowedImprovements());
-			ja_Professions     .generateInitCivEffect(kInfo.getAllowedProfessions());
-			ja_Promotions      .generateInitCivEffect(kInfo.getAllowedPromotions());
-			ja_Routes          .generateInitCivEffect(kInfo.getAllowedRoutes());
-			ja_Units           .generateInitCivEffect(kInfo.getAllowedUnitClasses());
-			ja_Yields          .generateInitCivEffect(kInfo.getAllowedYields());
+			Bonuses         .generateInitCivEffect(kInfo.getAllowedBonuses());
+			Builds          .generateInitCivEffect(kInfo.getAllowedBuilds());
+			Buildings       .generateInitCivEffect(kInfo.getAllowedBuildingClasses());
+			Civics          .generateInitCivEffect(kInfo.getAllowedCivics());
+			Immigrants      .generateInitCivEffect(kInfo.getAllowedImmigrants());
+			Improvements    .generateInitCivEffect(kInfo.getAllowedImprovements());
+			Professions     .generateInitCivEffect(kInfo.getAllowedProfessions());
+			Promotions      .generateInitCivEffect(kInfo.getAllowedPromotions());
+			Routes          .generateInitCivEffect(kInfo.getAllowedRoutes());
+			Units           .generateInitCivEffect(kInfo.getAllowedUnitClasses());
+			Yields          .generateInitCivEffect(kInfo.getAllowedYields());
 		}
 
-		m_info_AllowBonuses         .assign(&ja_Bonuses);
-		m_info_AllowBuilds          .assign(&ja_Builds);
-		m_info_AllowBuildings       .assign(&ja_Buildings);
-		m_info_AllowCivics          .assign(&ja_Civics);
-		m_info_AllowImmigrants      .assign(&ja_Immigrants);
-		m_info_AllowImprovements    .assign(&ja_Improvements);
-		m_info_AllowProfessions     .assign(&ja_Professions);
-		m_info_AllowPromotions      .assign(&ja_Promotions);
-		m_info_AllowRoutes          .assign(&ja_Routes);
-		m_info_AllowUnits           .assign(&ja_Units);
-		m_info_AllowYields          .assign(&ja_Yields);
+		m_info_AllowBonuses         .assignFrom(Bonuses);
+		m_info_AllowBuilds          .assignFrom(Builds);
+		m_info_AllowBuildings       .assignFrom(Buildings);
+		m_info_AllowCivics          .assignFrom(Civics);
+		m_info_AllowImmigrants      .assignFrom(Immigrants);
+		m_info_AllowImprovements    .assignFrom(Improvements);
+		m_info_AllowProfessions     .assignFrom(Professions);
+		m_info_AllowPromotions      .assignFrom(Promotions);
+		m_info_AllowRoutes          .assignFrom(Routes);
+		m_info_AllowUnits           .assignFrom(Units);
+		m_info_AllowYields          .assignFrom(Yields);
 	}
 }
 
@@ -16986,7 +17027,8 @@ bool CivEffectInfo::read(CvXMLLoadUtility* pXML)
 
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "TagGroupGrowth"))
 	{
-		pXML->GetChildXmlValByName(&m_iNumUnitsOnDockChange, "iNumUnitsOnDockChange");
+		pXML->GetChildXmlValByName(&m_iLearningByDoingModifier , "iLearningByDoingModifier"     );
+		pXML->GetChildXmlValByName(&m_iNumUnitsOnDockChange    , "iNumUnitsOnDockChange"        );
 
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}

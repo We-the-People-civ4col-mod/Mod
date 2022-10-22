@@ -8,12 +8,17 @@ enum eVariableType;
 struct CvPopupButtonPython;
 
 #include "JustInTimeArray.h"
-#include "BoolArray.h"
 #include "LinkedList.h"
 
 #include "CvDiploParameters.h"
 #include "CvPopupInfo.h"
 #include "CvReplayMessage.h"
+
+// savegame debugging option
+// note: might not result in usable savegames in case of failure
+//#define WITH_DEBUG_WRITE_SAVEGAME
+
+int getByteSizeForXML(JITarrayTypes eType);
 
 #define CHUNK_SIZE (MAX_UNSIGNED_SHORT)
 #define COMPRESS_THRESHOLD (MAX_UNSIGNED_CHAR)
@@ -88,14 +93,8 @@ public:
 	// allocates memory
 	void Read(wchar* szString);
 	
-	template<class T1, class T2, int T3, class T4, class T5>
-	void Read(EnumMapBase<T1, T2, T3, T4, T5>& em);
-
-	template<class T1, class T2, class T3, int T4>
-	void Read(EnumMap2DDefault<T1, T2, T3, T4>& em);
-
-	template<class T>
-	void Read(PlayerArrayBase<T>& array);
+	template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+	void Read(EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
 
 	template<class T>
 	void Read(JustInTimeArray<T>& jitArray);
@@ -124,8 +123,6 @@ public:
 	template<class T>
 	void Read(CLinkList<T>& lList);
 
-	void Read(BoolArray& baArray);
-	void Read(PlayerBoolArrayBase& array);
 	void Read(CvTurnScoreMap& vec);
 	void Read(CvEventMap& vec);
 
@@ -250,6 +247,14 @@ public:
 #endif
 
 private:
+	template<int TYPE2>
+	struct ReadEnumMap
+	{
+		template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+		static void Read(CvSavegameReader& reader, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
+
+	};
+
 
 	template<typename T>
 	void ReadEnum(T& variable);
@@ -299,11 +304,6 @@ public:
 	void Write(const CvWString & szString);
 	void Write(const char      * szString);
 	void Write(const wchar     * szString);
-
-	void Write(BoolArray& baArray);
-
-	template<class T>
-	void Write(PlayerArrayBase<T>& array);
 	
 	template<class T>
 	void Write(JustInTimeArray<T>& jitArray);
@@ -343,15 +343,10 @@ public:
 	void Write(SavegameVariableTypes eType, const CvWString & szString);
 	void Write(SavegameVariableTypes eType, const char      * szString);
 	void Write(SavegameVariableTypes eType, const wchar     * szString);
-	void Write(SavegameVariableTypes eType, BoolArray& baArray);
-	void Write(SavegameVariableTypes eType, const PlayerBoolArrayBase& array);
 	void Write(SavegameVariableTypes eType, const IDInfo& idInfo);
 	void Write(SavegameVariableTypes eType, const CvTurnScoreMap& idInfo);
 	void Write(SavegameVariableTypes eType, CvEventMap& idInfo);
 	void Write(SavegameVariableTypes eType, CvRandom& rand);
-
-	template<class T>
-	void Write(SavegameVariableTypes eType, const PlayerArrayBase<T>& array);
 
 	template<class T>
 	void Write(SavegameVariableTypes eType, T eVariable, T eDefault);
@@ -359,17 +354,11 @@ public:
 	template<class T>
 	void Write(SavegameVariableTypes eType, JustInTimeArray<T>& jitArray);
 
-	template<class T1, class T2, int T3, class T4, class T5>
-	void Write(EnumMapBase<T1, T2, T3, T4, T5>& em);
+	template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+	void Write(EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
 
-	template<class T1, class T2, int T3, class T4, class T5>
-	void Write(SavegameVariableTypes eType, EnumMapBase<T1, T2, T3, T4, T5>& em);
-
-	template<class T1, class T2, class T3, int T4>
-	void Write(EnumMap2DDefault<T1, T2, T3, T4>& em);
-
-	template<class T1, class T2, class T3, int T4>
-	void Write(SavegameVariableTypes eType, EnumMap2DDefault<T1, T2, T3, T4>& em);
+	template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+	void Write(SavegameVariableTypes eType, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
 
 	template<class T>
 	void Write(SavegameVariableTypes eType, const CLinkList<T>& lList);
@@ -481,6 +470,12 @@ public:
 	int GetXmlSize(JITarrayTypes eType);
 
 private:
+	template<int TYPE2>
+	struct WriteEnumMap
+	{
+		template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+		static void Write(CvSavegameWriter& kWriter, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em);
+	};
 
 	template<typename T>
 	void WriteEnum(T variable);
@@ -494,6 +489,18 @@ private:
 
 	CvSavegameWriterBase& m_writerbase;
 	std::vector<byte>& m_vector;
+
+#ifdef WITH_DEBUG_WRITE_SAVEGAME
+public:
+	void DEBUG_startA();
+	void DEBUG_startB();
+	void DEBUG_end();
+	bool DEBUG_compare() const;
+protected:
+	int m_iDebugWriteMode;
+	std::vector<byte> m_vectorA;
+	std::vector<byte> m_vectorB;
+#endif
 };
 
 //
@@ -527,22 +534,10 @@ inline T CvSavegameReader::ReadBitfield(T variable)
 	return variable;
 }
 
-template<class T1, class T2, int T3, class T4, class T5>
-inline void CvSavegameReader::Read(EnumMapBase<T1, T2, T3, T4, T5>& em)
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+inline void CvSavegameReader::Read(EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em)
 {
-	em.Read(*this);
-}
-
-template<class T1, class T2, class T3, int T4>
-inline void CvSavegameReader::Read(EnumMap2DDefault<T1, T2, T3, T4>& em)
-{
-	em.Read(*this);
-}
-
-template<class T>
-inline void CvSavegameReader::Read(PlayerArrayBase<T>& array)
-{
-	array.Read(*this);
+	ReadEnumMap<TYPE>::Read(*this, em);
 }
 
 template<class T>
@@ -664,12 +659,6 @@ inline void CvSavegameWriter::Write(T variable)
 }
 
 template<class T>
-inline void CvSavegameWriter::Write(PlayerArrayBase<T>& array)
-{
-	array.Write(*this);
-}
-
-template<class T>
 inline void CvSavegameWriter::Write(JustInTimeArray<T>& jitArray)
 {
 	jitArray.Write(*this);
@@ -786,16 +775,6 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, const std::vect
 }
 
 template<class T>
-inline void CvSavegameWriter::Write(SavegameVariableTypes eType, const PlayerArrayBase<T>& array)
-{
-	if (array.hasContent())
-	{
-		Write(eType);
-		Write(array);
-	}
-}
-
-template<class T>
 inline void CvSavegameWriter::Write(SavegameVariableTypes eType, T eVariable, T eDefault)
 {
 	if (eVariable != eDefault)
@@ -815,30 +794,14 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, JustInTimeArray
 	}
 }
 
-template<class T1, class T2, int T3, class T4, class T5>
-inline void CvSavegameWriter::Write(EnumMapBase<T1, T2, T3, T4, T5>& em)
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+inline void CvSavegameWriter::Write(EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em)
 {
-	em.Write(*this);
+	WriteEnumMap<TYPE>::Write(*this, em);
 }
 
-template<class T1, class T2, int T3, class T4, class T5>
-inline void CvSavegameWriter::Write(SavegameVariableTypes eType, EnumMapBase<T1, T2, T3, T4, T5>& em)
-{
-	if (em.hasContent())
-	{
-		Write(eType);
-		Write(em);
-	}
-}
-
-template<class T1, class T2, class T3, int T4>
-inline void CvSavegameWriter::Write(EnumMap2DDefault<T1, T2, T3, T4>& em)
-{
-	em.Write(*this);
-}
-
-template<class T1, class T2, class T3, int T4>
-inline void CvSavegameWriter::Write(SavegameVariableTypes eType, EnumMap2DDefault<T1, T2, T3, T4>& em)
+template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em)
 {
 	if (em.hasContent())
 	{
@@ -938,5 +901,7 @@ private:
 	std::vector<byte> m_vector;
 	std::vector<byte> m_table;
 };
+
+#include "CvSavegameEnumMap.h"
 
 #endif

@@ -25,6 +25,7 @@ InfoArray::InfoArray()
 InfoArrayBase::InfoArrayBase(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
 	: m_iLength(0)
 	, m_iNumDimentions(0)
+	, m_bStatic(false)
 	, m_pArray(NULL)
 	, m_aiTypes(0)
 {
@@ -58,7 +59,10 @@ InfoArrayBase::InfoArrayBase(JITarrayTypes eType0, JITarrayTypes eType1, JITarra
 
 InfoArrayBase::~InfoArrayBase()
 {
-	SAFE_DELETE_ARRAY(m_pArray);
+	if (!m_bStatic)
+	{
+		SAFE_DELETE_ARRAY(m_pArray);
+	}
 }
 
 ///
@@ -75,11 +79,19 @@ int InfoArrayBase::getInternal(int iIndex, int iDimention) const
 
 	FAssert(iIndex >= 0);
 	FAssert(iDimention >= 0 && iDimention < m_iNumDimentions);
-	FAssert(m_pArray != NULL);
 
-	unsigned int iArrayIndex = (iIndex * m_iNumDimentions) + iDimention;
+	if (m_bStatic)
+	{
+		return m_aiStaticArray[iIndex + iDimention];
+	}
+	else
+	{
+		FAssert(m_pArray != NULL);
 
-	return m_pArray[iArrayIndex];
+		unsigned int iArrayIndex = (iIndex * m_iNumDimentions) + iDimention;
+
+		return m_pArray[iArrayIndex];
+	}
 }
 
 int InfoArrayBase::_getIndexOf(int iValue, int iDim) const
@@ -92,6 +104,80 @@ int InfoArrayBase::_getIndexOf(int iValue, int iDim) const
 		}
 	}
 	return -1;
+}
+
+void InfoArrayBase::_setLength(int iLength)
+{
+	if (m_bStatic)
+	{
+		// clear static array
+		m_pArray = NULL;
+	}
+	else
+	{
+		SAFE_DELETE_ARRAY(m_pArray);
+	}
+
+	int iNewShortLength = iLength * m_iNumDimentions;
+	m_bStatic = iNewShortLength <= 2;
+	m_iLength = iLength;
+
+	if (m_bStatic)
+	{
+		m_aiStaticArray[0] = -1;
+		m_aiStaticArray[1] = -1;
+	}
+	else
+	{
+		m_pArray = new short[iNewShortLength];
+		memset(m_pArray, 0xFF, iNewShortLength * sizeof(short));
+	}
+
+}
+
+bool InfoArrayBase::_setValue(int iValue0)
+{
+	for (int i = 0; i < m_iLength; ++i)
+	{
+		if (getInternal(i) == -1)
+		{
+			if (m_bStatic)
+			{
+				m_aiStaticArray[i] = iValue0;
+			}
+			else
+			{
+				m_pArray[i] = iValue0;
+			}
+			return (i+1) == m_iLength; // filled the last element?
+		}
+	}
+	FAssertMsg(false, "InfoArray calls set value on full array");
+	return false;
+}
+
+bool InfoArrayBase::_setValue(int iValue0, int iValue1)
+{
+	for (int i = 0; i < m_iLength; ++i)
+	{
+		if (getInternal(i) == -1)
+		{
+			if (m_bStatic)
+			{
+				FAssert(i == 0);
+				m_aiStaticArray[0] = iValue0;
+				m_aiStaticArray[1] = iValue1;
+			}
+			else
+			{
+				m_pArray[i*2] = iValue0;
+				m_pArray[i * 2 + 1] = iValue1;
+			}
+			return (i + 1) == m_iLength; // filled the last element?
+		}
+	}
+	FAssertMsg(false, "InfoArray calls set value on full array");
+	return false;
 }
 
 int InfoArrayBase::getIndex(int iIndex) const
@@ -183,7 +269,7 @@ bool InfoArrayBase::areIndexesValid(int iMax, int iDimention, int iMin) const
 
 int InfoArrayBase::getWithTypeWithConversion(JITarrayTypes eType, int iIndex, int iTokenIndex, const CvCivilizationInfo *pCivInfo) const
 {
-	if (eType == JIT_ARRAY_BUILDING && getType(iTokenIndex) == JIT_ARRAY_BUILDING_CLASS)
+	if (eType == JIT_ARRAY_BUILDING && getType(iTokenIndex) == JIT_ARRAY_BUILDINGCLASS)
 	{
 		FAssertMsg(pCivInfo != NULL, "InfoArray::getWithType called without pCivInfo argument when in index conversion mode");
 		int iValue = getInternal(iIndex, iTokenIndex);
@@ -192,7 +278,7 @@ int InfoArrayBase::getWithTypeWithConversion(JITarrayTypes eType, int iIndex, in
 			return pCivInfo->getCivilizationBuildings(iValue);
 		}
 	}
-	else if (eType == JIT_ARRAY_UNIT && getType(iTokenIndex) == JIT_ARRAY_UNIT_CLASS)
+	else if (eType == JIT_ARRAY_UNIT && getType(iTokenIndex) == JIT_ARRAY_UNITCLASS)
 	{
 		FAssertMsg(pCivInfo != NULL, "InfoArray::getWithType called without pCivInfo argument when in index conversion mode");
 		int iValue = getInternal(iIndex, iTokenIndex);
@@ -209,6 +295,12 @@ int InfoArrayBase::getWithTypeWithConversion(JITarrayTypes eType, int iIndex, in
 	return -1;
 }
 
+int InfoArrayBase::getWithType(JITarrayTypes eType, int iIndex, int iTokenIndex) const
+{
+	FAssert(GetBaseType(eType) == getType(iTokenIndex) || (eType >= NUM_JITarrayTypes && getType(iTokenIndex) >= NUM_JITarrayTypes));
+	return getInternal(iIndex, iTokenIndex);
+}
+
 ///
 /// operator overload
 ///
@@ -221,17 +313,31 @@ InfoArrayBase& InfoArrayBase::operator=(const InfoArrayBase &rhs)
 
 		this->m_iLength = rhs.m_iLength;
 
-		SAFE_DELETE_ARRAY(this->m_pArray);
+		if (this->m_bStatic)
+		{
+			// clear static array
+			this->m_pArray = NULL;
+		}
+		else
+		{
+			SAFE_DELETE_ARRAY(this->m_pArray);
+		}
+
+		this->m_bStatic = rhs.m_bStatic;
 
 		int iLoopLength = m_iLength * m_iNumDimentions;
 
 		if (iLoopLength > 0)
 		{
-			this->m_pArray = new short [iLoopLength];
-
-			for (int i=0; i < iLoopLength; i++)
+			if (rhs.m_bStatic)
 			{
-				this->m_pArray[iLoopLength] = rhs.m_pArray[iLoopLength];
+				// copying the pointer will copy the entire static array due to the union
+				this->m_pArray = rhs.m_pArray;
+			}
+			else
+			{
+				this->m_pArray = new short[iLoopLength];
+				memcpy(this->m_pArray, rhs.m_pArray, iLoopLength * sizeof(short));
 			}
 		}
 	}
@@ -244,7 +350,7 @@ InfoArrayBase& InfoArrayBase::operator=(const InfoArrayBase &rhs)
 /// Only available to InfoArrayMod and they will completely overwrite the existing content
 ///
 
-void InfoArrayMod::readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vector<short>& aArray, std::vector<short>& aIndex, int iLevel, const char *sTagName, const char* szType)
+void InfoArrayBase::readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vector<short>& aArray, std::vector<short>& aIndex, int iLevel, const char *sTagName, const char* szType)
 {
 	int iIndexStart = iIndex;
 	do
@@ -347,9 +453,18 @@ void InfoArrayMod::readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vecto
 	} while (gDLL->getXMLIFace()->NextSibling(pXML->GetXML()) && (m_iNumDimentions > 1 || iLevel < 1));
 }
 
-void InfoArrayMod::read(CvXMLLoadUtility* pXML, const char* szType, const char *sTagName)
+void InfoArrayBase::read(CvXMLLoadUtility* pXML, const char* szType, const char *sTagName)
 {
-	SAFE_DELETE_ARRAY(m_pArray);
+	if (m_bStatic)
+	{
+		// clear static array
+		m_pArray = NULL;
+	}
+	else
+	{
+		SAFE_DELETE_ARRAY(m_pArray);
+	}
+	m_bStatic = false;
 	m_iLength = 0;
 
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),sTagName))
@@ -372,229 +487,23 @@ void InfoArrayMod::read(CvXMLLoadUtility* pXML, const char* szType, const char *
 
 			if (m_iLength > 0)
 			{
-				m_pArray = new short[iArrayLength];
-				for (int i = 0; i < iArrayLength; i++)
+				m_bStatic = iArrayLength <= 2;
+				if (m_bStatic)
 				{
-					m_pArray[i] = aArray[i];
+					for (int i = 0; i < iArrayLength; ++i)
+					{
+						m_aiStaticArray[i] = aArray[i];
+					}
+				}
+				else
+				{
+					m_pArray = new short[iArrayLength];
+					memcpy(m_pArray, &aArray[0], iArrayLength * sizeof(short));
 				}
 			}
 
 			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 		}
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
-}
-
-void InfoArrayMod::assign(const BoolArray* pBArray)
-{
-	FAssert(m_iNumDimentions == 1);
-	SAFE_DELETE_ARRAY(m_pArray);
-	m_iLength = 0;
-	for (int i = 0; i < pBArray->length(); i++)
-	{
-		if (pBArray->get(i))
-		{
-			m_iLength++;
-		}
-	}
-	
-
-	if (m_iLength == 0)
-	{
-		return;
-	}
-
-	m_pArray = new short[m_iLength];
-
-	int iCounter = 0;
-
-	for (int i = 0; i < pBArray->length(); i++)
-	{
-		if (pBArray->get(i))
-		{
-			m_pArray[iCounter] = i;
-			iCounter++;
-		}
-	}
-}
-
-void InfoArrayMod::assign(const std::vector<int>& vec)
-{
-	assert(m_iNumDimentions == 1 || m_iNumDimentions == 2);
-	SAFE_DELETE_ARRAY(m_pArray);
-	m_iLength = 0;
-	const unsigned int iVecSize = vec.size();
-	for (unsigned int i = 0; i < iVecSize; ++i)
-	{
-		if (vec[i] != 0)
-		{
-			++m_iLength;
-		}
-	}
-
-
-	if (m_iLength == 0)
-	{
-		return;
-	}
-
-	m_pArray = new short[m_iLength * m_iNumDimentions];
-
-	int iCounter = 0;
-
-	for (unsigned int i = 0; i < iVecSize; ++i)
-	{
-		if (vec[i] != 0)
-		{
-			m_pArray[iCounter * m_iNumDimentions] = i;
-			if (m_iNumDimentions == 2)
-			{
-				m_pArray[(iCounter * m_iNumDimentions) + 1] = vec[i];
-			}
-			++iCounter;
-			if (iCounter == m_iLength)
-			{
-				// done converting. The rest of the values are all 0
-				return;
-			}
-		}
-	}
-}
-
-void InfoArrayMod::assign(const std::vector<bool>& vec)
-{
-	assert(m_iNumDimentions == 1);
-	SAFE_DELETE_ARRAY(m_pArray);
-	m_iLength = 0;
-	const unsigned int iVecSize = vec.size();
-	for (unsigned int i = 0; i < iVecSize; ++i)
-	{
-		if (vec[i])
-		{
-			++m_iLength;
-		}
-	}
-
-
-	if (m_iLength == 0)
-	{
-		return;
-	}
-
-	m_pArray = new short[m_iLength];
-
-	int iCounter = 0;
-
-	for (unsigned int i = 0; i < iVecSize; ++i)
-	{
-		if (vec[i])
-		{
-			m_pArray[iCounter] = i;
-			++iCounter;
-			if (iCounter == m_iLength)
-			{
-				// done converting. The rest of the values are all 0
-				return;
-			}
-		}
-	}
-}
-
-void InfoArrayMod::convertClass(const InfoArrayBase* pInfoArray, const CvCivilizationInfo* pCivInfo)
-{
-	FAssertMsg(pInfoArray->getType(0) == JIT_ARRAY_BUILDING_CLASS || pInfoArray->getType(0) == JIT_ARRAY_UNIT_CLASS, "InfoArray tries to resolve class in an array without classes");
-
-	JITarrayTypes eType = getType(0);
-
-	FAssertMsg((eType == JIT_ARRAY_BUILDING && pInfoArray->getType(0) == JIT_ARRAY_BUILDING_CLASS) || (eType == JIT_ARRAY_UNIT && pInfoArray->getType(0) == JIT_ARRAY_UNIT_CLASS), "InfoArray types mismatch");
-	FAssertMsg(getType(1) == pInfoArray->getType(1) && getType(2) == pInfoArray->getType(2) && getType(3) == pInfoArray->getType(3), "InfoArray types mismatch");
-
-	SAFE_DELETE_ARRAY(m_pArray);
-	std::vector<short> aArray;
-
-	if (eType == JIT_ARRAY_BUILDING)
-	{
-		for (int iI = 0; iI < pInfoArray->getLength(); ++iI)
-		{
-			BuildingClassTypes eBuildingClass = pInfoArray->_getBuildingClass(iI);
-			if (pCivInfo != NULL)
-			{
-				int iBuilding = pCivInfo->getCivilizationBuildings(eBuildingClass);
-				if (iBuilding >= 0)
-				{
-					aArray.push_back(iBuilding);
-					for (int i = 1; i < m_iNumDimentions; i++)
-					{
-						aArray.push_back(pInfoArray->getInternal(iI, i));
-					}
-				}
-			}
-			else
-			{
-				for (BuildingTypes eLoopBuilding = FIRST_BUILDING; eLoopBuilding < NUM_BUILDING_TYPES; ++eLoopBuilding)
-				{
-					CvBuildingInfo& kInfo = GC.getBuildingInfo(eLoopBuilding);
-					if (kInfo.getBuildingClassType() == eBuildingClass)
-					{
-						aArray.push_back(eLoopBuilding);
-						for (int i = 1; i < m_iNumDimentions; i++)
-						{
-							aArray.push_back(pInfoArray->getInternal(iI, i));
-						}
-					}
-				}
-			}
-		}
-	}
-	else if (eType == JIT_ARRAY_UNIT)
-	{
-		for (int iI = 0; iI < pInfoArray->getLength(); ++iI)
-		{
-			UnitClassTypes eUnitClass = pInfoArray->_getUnitClass(iI);
-			if (pCivInfo != NULL)
-			{
-				int iUnit = pCivInfo->getCivilizationUnits(eUnitClass);
-				if (iUnit >= 0)
-				{
-					aArray.push_back(iUnit);
-					for (int i = 1; i < m_iNumDimentions; i++)
-					{
-						aArray.push_back(pInfoArray->getInternal(iI, i));
-					}
-				}
-			}
-			else
-			{
-				for (UnitTypes eLoopUnit = FIRST_UNIT; eLoopUnit < GC.getNumUnitInfos(); ++eLoopUnit)
-				{
-					CvUnitInfo& kInfo = GC.getUnitInfo(eLoopUnit);
-					if (kInfo.getUnitClassType() == eUnitClass)
-					{
-						aArray.push_back(eLoopUnit);
-						for (int i = 1; i < m_iNumDimentions; i++)
-						{
-							aArray.push_back(pInfoArray->getInternal(iI, i));
-						}
-					}
-				}
-			}
-		}
-	}
-	else
-	{
-		FAssertMsg(false, "Unimplemented type");
-	}
-
-	int iArrayLength = aArray.size(); // local copy rather than the same function call over and over
-
-	m_iLength = iArrayLength / m_iNumDimentions;
-
-	if (m_iLength > 0)
-	{
-		m_pArray = new short[iArrayLength];
-		for (int i = 0; i < iArrayLength; ++i)
-		{
-			m_pArray[i] = aArray[i];
-		}
 	}
 }

@@ -146,7 +146,11 @@
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_GALLEON</UnitClass>
-                    <iFreeUnits>2</iFreeUnits>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_SLAVE_BARQUE</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
 				<FreeUnit>
                     <UnitClass>UNITCLASS_BRIGANTINE</UnitClass>

@@ -59,10 +59,10 @@
 #define getWithType(a, b, c) getWithType(b, c)
 #endif
 
-class CvCivilizationInfo;
+#include "CvEnums.h"
 
-template<class IndexType, class T>
-class EnumMap;
+class CvXMLLoadUtility;
+class CvCivilizationInfo;
 
 class InfoArrayBase
 {
@@ -100,16 +100,10 @@ public:
 		return (JITarrayTypes)((m_aiTypes >> (8 * i)) & 0xFF);
 	}
 
-	int getWithType(JITarrayTypes eType, int iIndex, int iTokenIndex) const
-	{
-		FAssert(GetBaseType(eType) == getType(iTokenIndex) || (eType >= NUM_JITarrayTypes && getType(iTokenIndex) >= NUM_JITarrayTypes));
-		return getInternal(iIndex, iTokenIndex);
-	}
+	int getWithType(JITarrayTypes eType, int iIndex, int iTokenIndex) const;
 
 	// adds UnitClass->Unit and BuildingClass->Building conversion. Otherwise the same as without the civinfo argument 
 	int getWithTypeWithConversion(JITarrayTypes eType, int iIndex, int iTokenIndex, const CvCivilizationInfo *pCivInfo) const;
-
-#include "InfoArrayGet.h"
 
 protected:
 	// needed by python interface. Do not use this in the DLL as it lacks type checking
@@ -118,9 +112,18 @@ protected:
 	int getInternal(int iIndex, int iTokenIndex = 0) const;
 	int _getIndexOf(int iValue, int iDim) const;
 
+	void _setLength(int iLength);
+	bool _setValue(int iValue0);
+	bool _setValue(int iValue0, int iValue1);
+
 	short m_iLength;
-	char m_iNumDimentions;
-	short* m_pArray;
+	char m_iNumDimentions : 7;
+	bool m_bStatic : 1;
+	union
+	{
+		short m_aiStaticArray[2];
+		short* m_pArray;
+	};
 	union
 	{
 		struct
@@ -132,287 +135,498 @@ protected:
 		};
 		unsigned int m_aiTypes;
 	};
-};
 
-///
-/// write functions
-/// These functions will completely overwrite the existing content
-///
-class InfoArrayMod : public InfoArrayBase
-{
 public:
-	InfoArrayMod() {};
-	InfoArrayMod(JITarrayTypes eType0, JITarrayTypes eType1 = JIT_ARRAY_NO_TYPE, JITarrayTypes eType2 = JIT_ARRAY_NO_TYPE, JITarrayTypes eType3 = JIT_ARRAY_NO_TYPE) : InfoArrayBase(eType0, eType1, eType2, eType3){};
 	// bReadFloat will multiply the read value by 100 and store the int value of that
 	// It doesn't provide extra functionality other than allowing floats to be written in XML for human readability
 
 	// szType is always getType()
 	// sTagName is the root xml tax name of the structure to be read
 	void read(CvXMLLoadUtility* pXML, const char* szType, const char *sTagName);
-	void assign(const BoolArray* pBArray);
-	void assign(const std::vector<int>& vec);
-	void assign(const std::vector<bool>& vec);
-	void convertClass(const InfoArrayBase* pArray, const CvCivilizationInfo* pCivInfo = NULL);
 private:
 	void readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vector<short>& aArray, std::vector<short>& aIndex, int iLevel, const char *sTagName, const char* szType);
-
-public:
-
-	// writing assign JIT array code in the header to avoid template errors/warnings
-	template<class T>
-	void assign(const JustInTimeArray<T>* pJITArray)
-	{
-		FAssert(m_iNumDimentions == 2);
-		SAFE_DELETE_ARRAY(m_pArray);
-		m_iLength = 0;
-		for (int i = 0; i < pJITArray->length(); i++)
-		{
-			if (pJITArray->get(i) != 0)
-			{
-				m_iLength++;
-			}
-		}
-
-		if (m_iLength == 0)
-		{
-			return;
-		}
-
-		m_pArray = new short[m_iLength * 2];
-
-		int iCounter = 0;
-
-		for (int i = 0; i < pJITArray->length(); i++)
-		{
-			if (pJITArray->get(i) != 0)
-			{
-				m_pArray[iCounter] = i;
-				iCounter++;
-				m_pArray[iCounter] = pJITArray->get(i);
-				iCounter++;
-			}
-		}
-	}
 };
-
-template<int DIMENTION, typename T> class InfoArrayToken {};
-template <typename type> struct JIT_TYPE {};
-
-
-
-
-#define INFO_ARRAY_CONST(type, JITtype )                                           \
-template <> struct JIT_TYPE<type>                                                  \
-{                                                                                  \
-	static const JITarrayTypes TYPE = JITtype;                                     \
-};
-
-#define INFO_ARRAY_GET_SHARED(type, getName, JITtype, returnType)                  \
-INFO_ARRAY_CONST(type, JITtype)                                                    \
-template<int DIMENTION> class InfoArrayToken<DIMENTION, type>                      \
- : virtual protected InfoArrayMod                                                  \
-{                                                                                  \
-BOOST_STATIC_ASSERT(DIMENTION >= 0 && DIMENTION < 4);                              \
-protected:                                                                         \
-	InfoArrayToken() {}                                                            \
-public:                                                                            \
-	returnType getName(int iIndex) const                                           \
-	{                                                                              \
-		return static_cast< returnType > (getInternal(iIndex, DIMENTION));         \
-	}                                                                              \
-	returnType getWithTemplate(int iIndex, returnType eVar) const                  \
-	{                                                                              \
-		return static_cast< returnType > (getInternal(iIndex, DIMENTION));         \
-	}                                                                              \
-	int getIndexOf(returnType eValue) const                                        \
-	{                                                                              \
-		return _getIndexOf(eValue, DIMENTION);                                     \
-	}                                                                              \
-};
-
-#define INFO_ARRAY_GET(type, getName, JITtype)                                     \
-	INFO_ARRAY_GET_SHARED(type, getName, JITtype, type)
-
-#define INFO_ARRAY_GET_INT(type, getName, JITtype)                                 \
-enum type {};                                                                      \
-INFO_ARRAY_GET_SHARED(type, getName, JITtype, int)
-
 
 
 enum JIT_NoneTypes {};
-INFO_ARRAY_CONST(JIT_NoneTypes, JIT_ARRAY_NO_TYPE)
-template<int DIMENTION> class InfoArrayToken<DIMENTION, JIT_NoneTypes>
+
+
+//
+// Here comes a complex setup, which is based on a fairly simple idea.
+// InfoArray inherits InfoArrayX (X being 1-4) and InfoArrayXOnly.
+// This mean an InfoArray with two non-default parameters will have InfoArray1, InfoArray2 and InfoArray2Only.
+// The extra class names allows partial specialization even in cases where the C++ standard doesn't support partial specialization.
+// All classes allows specialization meaning we can add code for say interaction between UnitClassTypes and UnitTypes.
+// Defining all 12 classes is however a bit lengthy (4 InfoArrayX, 4 InfoArrayXOnly, 4 InfoArraySelector)
+//
+
+
+template<typename T0>
+class InfoArray1 {};
+template<typename T0, typename T1>
+class InfoArray2 {};
+template<typename T0, typename T1, typename T2>
+class InfoArray3 {};
+template<typename T0, typename T1, typename T2, typename T3>
+class InfoArray4 {};
+
+// the only classes. Each instance of InfoArray will have precisely one of those
+template<typename T0>
+class InfoArray1Only : public InfoArray1<T0>
 {
 protected:
-	InfoArrayToken() {};
+	InfoArray1Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
+		: InfoArray1<T0>(eType0, eType1, eType2, eType3) {}
+public:
+	template<typename Ta, class T, int DEFAULT>
+	void assignFrom(const EnumMap<Ta, T, DEFAULT>& em);
+	template<typename Ta, int DEFAULT>
+	void assignFrom(const EnumMap<Ta, bool, DEFAULT>& em);
+	template<typename Ta, class T, int DEFAULT>
+	void addTo(EnumMap<Ta, T, DEFAULT> & em, int iChange = 1) const;
+	template<typename Ta, class T, int DEFAULT>
+	void addTo(EnumMap<Ta, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
+	template<typename Ta, int DEFAULT>
+	void addTo(EnumMap<Ta, bool, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
+	template<typename Ta, class T, int DEFAULT>
+	void copyTo(EnumMap<Ta, T, DEFAULT> & em) const;
+};
+template<typename T0, typename T1>
+class InfoArray2Only : public InfoArray2<T0, T1>
+{
+protected:
+	InfoArray2Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
+		: InfoArray2<T0, T1>(eType0, eType1, eType2, eType3) {}
+public:
+	template<typename Ta, class T, int DEFAULT>
+	void assignFrom(const EnumMap<Ta, T, DEFAULT>& em);
+	template<typename Ta, typename Tb, int DEFAULT>
+	void assignFrom(const EnumMap2D<Ta, Tb, bool, DEFAULT> & em);
+	template<typename Ta, class T, int DEFAULT>
+	void addTo(EnumMap<Ta, T, DEFAULT> & em, int iChange = 1) const;
+	template<typename Ta, class T, int DEFAULT>
+	void addTo(EnumMap<Ta, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
+	template<typename Ta, int DEFAULT>
+	void addTo(EnumMap<Ta, bool, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
+	template<typename Ta, class T, int DEFAULT>
+	bool addCache(EnumMap<Ta, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
+	template<typename class T, int DEFAULT>
+	bool addCache(EnumMap<BuildingTypes, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
+	template<typename class T, int DEFAULT>
+	bool addCache(EnumMap<UnitTypes, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
+	template<typename Ta, class T, int DEFAULT>
+	void copyTo(EnumMap<Ta, T, DEFAULT> & em) const;
+	template<typename Ta, int DEFAULT>
+	void copyTo(EnumMap<Ta, bool, DEFAULT> & em) const;
+	template<typename Ta, typename Tb, typename T, int DEFAULT>
+	void addTo(EnumMap2D<Ta, Tb, T, DEFAULT> & em, int iChange = 1) const;
+	template<typename Ta, typename Tb, typename T, int DEFAULT>
+	void addTo(EnumMap2D<Ta, Tb, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
+};
+template<typename T0, typename T1, typename T2>
+class InfoArray3Only : public InfoArray3<T0, T1, T2>
+{
+protected:
+	InfoArray3Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
+		: InfoArray3<T0, T1, T2>(eType0, eType1, eType2, eType3) {}
+public:
+	template<typename Ta, typename Tb, typename T, int DEFAULT>
+	void addTo(EnumMap2D<Ta, Tb, T, DEFAULT> & em, int iChange = 1) const;
+	template<typename Ta, typename Tb, typename T, int DEFAULT>
+	void addTo(EnumMap2D<Ta, Tb, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
+	template<typename Ta, typename Tb, int DEFAULT>
+	void addTo(EnumMap2D<Ta, Tb, bool, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
+};
+template<typename T0, typename T1, typename T2, typename T3>
+class InfoArray4Only : public InfoArray4<T0, T1, T2, T3>
+{
+protected:
+	InfoArray4Only(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
+		: InfoArray4<T0, T1, T2, T3>(eType0, eType1, eType2, eType3) {}
 };
 
-INFO_ARRAY_GET(AchieveTypes                 , getAchieve            , JIT_ARRAY_ACHIEVE            )
-INFO_ARRAY_GET(ArtStyleTypes                , getArtStyle           , JIT_ARRAY_ART_STYLE          )
-INFO_ARRAY_GET(BonusTypes                   , getBonus              , JIT_ARRAY_BONUS              )
-INFO_ARRAY_GET(BuildTypes                   , getBuild              , JIT_ARRAY_BUILD              )
-INFO_ARRAY_GET(BuildingTypes                , getBuilding           , JIT_ARRAY_BUILDING           )
-INFO_ARRAY_GET(BuildingClassTypes           , getBuildingClass      , JIT_ARRAY_BUILDING_CLASS     )
-INFO_ARRAY_GET(SpecialBuildingTypes         , getSpecialBuilding    , JIT_ARRAY_BUILDING_SPECIAL   )
-INFO_ARRAY_GET(CivEffectTypes               , getCivEffect          , JIT_ARRAY_CIV_EFFECT         )
-INFO_ARRAY_GET(CivicTypes                   , getCivic              , JIT_ARRAY_CIVIC              )
-INFO_ARRAY_GET(CivicOptionTypes             , getCivicOption        , JIT_ARRAY_CIVIC_OPTION       )
-INFO_ARRAY_GET(CivilizationTypes            , getCivilization       , JIT_ARRAY_CIVILIZATION       )
-INFO_ARRAY_GET(ClimateTypes                 , getClimate            , JIT_ARRAY_CLIMATE            )
-INFO_ARRAY_GET(ColorTypes                   , getColor              , JIT_ARRAY_COLOR              )
-INFO_ARRAY_GET(CultureLevelTypes            , getCulture            , JIT_ARRAY_CULTURE            )
-INFO_ARRAY_GET(DiplomacyTypes               , getDiplomacy          , JIT_ARRAY_DIPLO              )
-INFO_ARRAY_GET(DomainTypes                  , getDomain             , JIT_ARRAY_DOMAIN             )
-INFO_ARRAY_GET(EraTypes                     , getEra                , JIT_ARRAY_ERA                )
-INFO_ARRAY_GET(EmphasizeTypes               , getEmphasize          , JIT_ARRAY_EMPHASIZE          )
-INFO_ARRAY_GET(EuropeTypes                  , getEurope             , JIT_ARRAY_EUROPE             )
-INFO_ARRAY_GET(EventTypes                   , getEvent              , JIT_ARRAY_EVENT              )
-INFO_ARRAY_GET(EventTriggerTypes            , getEventTrigger       , JIT_ARRAY_EVENT_TRIGGER      )
-INFO_ARRAY_GET(FatherTypes                  , getFather             , JIT_ARRAY_FATHER             )
-INFO_ARRAY_GET(FatherPointTypes             , getFatherPoint        , JIT_ARRAY_FATHER_POINT       )
-INFO_ARRAY_GET(FeatureTypes                 , getFeature            , JIT_ARRAY_FEATURE            )
-INFO_ARRAY_GET(GameOptionTypes              , getGameOption         , JIT_ARRAY_GAME_OPTION        )
-INFO_ARRAY_GET(GameSpeedTypes               , getGameSpeed          , JIT_ARRAY_GAME_SPEED         )
-INFO_ARRAY_GET(GoodyTypes                   , getGoody              , JIT_ARRAY_GOODY              )
-INFO_ARRAY_GET(HandicapTypes                , getHandicap           , JIT_ARRAY_HANDICAP           )
-INFO_ARRAY_GET(HurryTypes                   , getHurry              , JIT_ARRAY_HURRY              )
-INFO_ARRAY_GET(ImprovementTypes             , getImprovement        , JIT_ARRAY_IMPROVEMENT        )
-INFO_ARRAY_GET(InvisibleTypes               , getInvisibiity        , JIT_ARRAY_INVISIBLE          )
-INFO_ARRAY_GET(LeaderHeadTypes              , getLeaderHead         , JIT_ARRAY_LEADER_HEAD        )
-INFO_ARRAY_GET(MemoryTypes                  , getMemory             , JIT_ARRAY_MEMORY             )
-INFO_ARRAY_GET(PlayerColorTypes             , getPlayerColor        , JIT_ARRAY_PLAYER_COLOR       )
-INFO_ARRAY_GET(PlayerOptionTypes            , getPlayerOption       , JIT_ARRAY_PLAYER_OPTION      )
-INFO_ARRAY_GET(ProfessionTypes              , getProfession         , JIT_ARRAY_PROFESSION         )
-INFO_ARRAY_GET(PromotionTypes               , getPromotion          , JIT_ARRAY_PROMOTION          )
-INFO_ARRAY_GET(RouteTypes                   , getRoute              , JIT_ARRAY_ROUTE              )
-INFO_ARRAY_GET(SeaLevelTypes                , getSeaLevel           , JIT_ARRAY_SEA_LEVEL          )
-INFO_ARRAY_GET(TerrainTypes                 , getTerrain            , JIT_ARRAY_TERRAIN            )
-INFO_ARRAY_GET(TraitTypes                   , getTrait              , JIT_ARRAY_TRAIT              )
-INFO_ARRAY_GET(UnitTypes                    , getUnit               , JIT_ARRAY_UNIT               )
-INFO_ARRAY_GET(UnitAITypes                  , getUnitAI             , JIT_ARRAY_UNIT_AI            )
-INFO_ARRAY_GET(UnitClassTypes               , getUnitClass          , JIT_ARRAY_UNIT_CLASS         )
-INFO_ARRAY_GET(UnitCombatTypes              , getUnitCombat         , JIT_ARRAY_UNIT_COMBAT        )
-INFO_ARRAY_GET(SpecialUnitTypes             , getSpecialUnit        , JIT_ARRAY_UNIT_SPECIAL       )
-INFO_ARRAY_GET(VictoryTypes                 , getVictory            , JIT_ARRAY_VICTORY            )
-INFO_ARRAY_GET(WorldSizeTypes               , getWorldSize          , JIT_ARRAY_WORLD_SIZE         )
-INFO_ARRAY_GET(YieldTypes                   , getYield              , JIT_ARRAY_YIELD              )
+template<typename T0>
+template<typename Ta, class T, int DEFAULT>
+void InfoArray1Only<T0>::assignFrom(const EnumMap<Ta, T, DEFAULT> & em)
+{
+	const int iLength = em.GetNumPositiveElements();
+	_setLength(iLength);
+	for (T0 eIndex = em.FIRST; eIndex <= em.LAST; ++eIndex)
+	{
+		if (em.get(eIndex) > 0)
+		{
+			bool bDone = _setValue(eIndex);
+#ifndef FASSERT_ENABLE
+			if (bDone) return;
+#endif
+		}
+	}
+}
 
-// enums not linked to xml
-INFO_ARRAY_GET(CivCategoryTypes             , getCivCategory        , JIT_ARRAY_CIV_CATEGORY       )
-INFO_ARRAY_GET(FeatTypes                    , getFeat               , JIT_ARRAY_FEAT               )
-INFO_ARRAY_GET(StrategyTypes                , getStrategy           , JIT_ARRAY_STRATEGY           )
-INFO_ARRAY_GET(PlayerTypes                  , getPlayer             , JIT_ARRAY_PLAYER             )
-INFO_ARRAY_GET(PlotTypes                    , getPlotType           , JIT_ARRAY_PLOT_TYPE          )
-INFO_ARRAY_GET(TeamTypes                    , getTeam               , JIT_ARRAY_TEAM               )
-
-// int/float etc
-INFO_ARRAY_GET_INT(ModifierTypes            , getModifier           , JIT_ARRAY_MODIFIER           )
-INFO_ARRAY_GET_INT(ModifierFloatTypes       , getModifierFloat      , JIT_ARRAY_MODIFIER_FLOAT     )
-INFO_ARRAY_GET_INT(AllowTypes               , getAllow              , JIT_ARRAY_ALLOW              )
-INFO_ARRAY_GET_INT(IntTypes                 , getInt                , JIT_ARRAY_INT                )
-INFO_ARRAY_GET_INT(UIntTypes                , getInt                , JIT_ARRAY_UNSIGNED_INT       )
-INFO_ARRAY_GET_INT(FloatTypes               , getFloat              , JIT_ARRAY_FLOAT              )
+template<typename T0>
+template<typename Ta, int DEFAULT>
+void InfoArray1Only<T0>::assignFrom(const EnumMap<Ta, bool, DEFAULT> & em)
+{
+	const int iLength = em.getNumTrueElements();
+	_setLength(iLength);
+	for (T0 eIndex = em.FIRST; eIndex <= em.LAST; ++eIndex)
+	{
+		if (em.get(eIndex))
+		{
+			bool bDone = _setValue(eIndex);
+#ifndef FASSERT_ENABLE
+			if (bDone) return;
+#endif
+		}
+	}
+}
 
 
-//
-// Uses multiple inheritage with a single parent
-// Uses virtual parents to get this to work properly
-// Details: https://www.geeksforgeeks.org/multiple-inheritance-in-c/
-//
+template<typename T0, typename T1>
+template<typename Ta, class T, int DEFAULT>
+void InfoArray2Only<T0, T1>::assignFrom(const EnumMap<Ta, T, DEFAULT> & em)
+{
+	const bool bTypeCheck = !boost::is_same<T, bool>::value;
+	BOOST_STATIC_ASSERT(bTypeCheck);
+	const int iLength = em.getNumNonDefaultElements();
+	_setLength(iLength);
+	for (T0 eIndex = em.FIRST; eIndex <= em.LAST; ++eIndex)
+	{
+		int iVal = em.get(eIndex);
+		if (iVal != em.DEFAULT)
+		{
+			bool bDone = _setValue(eIndex, iVal);
+#ifndef FASSERT_ENABLE
+			if (bDone) return;
+#endif
+		}
+	}
+}
+
+template<typename T0, typename T1>
+template<typename Ta, typename Tb, int DEFAULT>
+void InfoArray2Only<T0, T1>::assignFrom(const EnumMap2D<Ta, Tb, bool, DEFAULT> & em)
+{
+	const int iLength = em.getNumTrueElements();
+	_setLength(iLength);
+	for (T0 eIndex0 = em.FIRST; eIndex0 <= em.LAST; ++eIndex0)
+	{
+		const EnumMap<Tb, bool, DEFAULT>& em1 = em[eIndex0];
+		for (Tb eIndex1 = em1.FIRST; eIndex1 <= em1.LAST; ++eIndex1)
+		{
+			if (em1.get(eIndex1))
+			{
+				bool bDone = _setValue(eIndex0, eIndex1);
+#ifndef FASSERT_ENABLE
+				if (bDone) return;
+#endif
+			}
+		}
+	}
+}
+
+template<typename T0>
+template<typename Ta, class T, int DEFAULT>
+void InfoArray1Only<T0>::addTo(EnumMap<Ta, T, DEFAULT> & em, int iChange) const
+{
+	addTo(em, iChange, NULL);
+}
+
+template<typename T0>
+template<typename Ta, class T, int DEFAULT>
+void InfoArray1Only<T0>::addTo(EnumMap<Ta, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+{
+	const bool bTypeCheck = !boost::is_same<T, bool>::value;
+	BOOST_STATIC_ASSERT(bTypeCheck);
+	for (int i = 0; i < getLength(); ++i)
+	{
+		const T0 eIndex = pCivInfo->getCivSpecificForClass<Ta, T0>(get0(i));
+		if (em.isInRange(eIndex))
+		{
+			em.add(eIndex, iChange);
+		}
+	}
+}
+
+template<typename T0>
+template<typename Ta, int DEFAULT>
+void InfoArray1Only<T0>::addTo(EnumMap<Ta, bool, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+{
+	for (int i = 0; i < getLength(); ++i)
+	{
+		const T0 eIndex = pCivInfo->getCivSpecificForClass<Ta, T0>(get0(i));
+		if (em.isInRange(eIndex))
+		{
+			em.set(eIndex, iChange);
+		}
+	}
+}
+
+template<typename T0, typename T1>
+template<typename Ta, class T, int DEFAULT>
+void InfoArray2Only<T0, T1>::addTo(EnumMap<Ta, T, DEFAULT> & em, int iChange) const
+{
+	addTo(em, iChange, NULL);
+}
+
+template<typename T0, typename T1>
+template<typename Ta, class T, int DEFAULT>
+void InfoArray2Only<T0, T1>::addTo(EnumMap<Ta, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+{
+	const bool bTypeCheck = !boost::is_same<T, bool>::value;
+	BOOST_STATIC_ASSERT(bTypeCheck);
+	for (int i = 0; i < getLength(); ++i)
+	{
+		const T0 eIndex = pCivInfo->getCivSpecificForClass<Ta, T0>(get0(i));
+		if (em.isInRange(eIndex))
+		{
+			em.add(eIndex, get1(i) * iChange);
+		}
+	}
+}
+
+template<typename T0, typename T1>
+template<typename Ta, int DEFAULT>
+void InfoArray2Only<T0, T1>::addTo(EnumMap<Ta, bool, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+{
+	for (int i = 0; i < getLength(); ++i)
+	{
+		const T0 eIndex = pCivInfo->getCivSpecificForClass<Ta, T0>(get0(i));
+		if (em.isInRange(eIndex))
+		{
+			em.set(eIndex, (get1(i) * iChange) > 0);
+		}
+	}
+}
+
+template<typename T0, typename T1>
+template<typename Ta, class T, int DEFAULT>
+bool InfoArray2Only<T0, T1>::addCache(EnumMap<Ta, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+{
+	const bool bTypeCheck = !boost::is_same<T, bool>::value;
+	BOOST_STATIC_ASSERT(bTypeCheck);
+	bool bChanged = false;
+	for (int i = 0; i < getLength(); ++i)
+	{
+		const T0 eIndex = get0(i);
+		if (em.isInRange(eIndex))
+		{
+			bool bBefore = get1(i) > 0;
+			em.add(eIndex, get1(i) * iChange);
+			bool bAfter = get1(i) > 0;
+			bChanged |= bBefore != bAfter;
+		}
+	}
+	return bChanged;
+}
+
+template<typename T0, typename T1>
+template<class T, int DEFAULT>
+bool InfoArray2Only<T0, T1>::addCache(EnumMap<BuildingTypes, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+{
+	const bool bTypeCheck1 = !boost::is_same<T, bool>::value;
+	const bool bTypeCheck2 = boost::is_same<T0, BuildingClassTypes>::value;
+	BOOST_STATIC_ASSERT(bTypeCheck1);
+	BOOST_STATIC_ASSERT(bTypeCheck2);
+	bool bChanged = false;
+	for (int i = 0; i < getLength(); ++i)
+	{
+		const BuildingTypes eIndex = pCivInfo->getCivSpecificForClass<BuildingTypes, T0>(get0(i));
+		if (em.isInRange(eIndex))
+		{
+			bool bBefore = get1(i) > 0;
+			em.add(eIndex, get1(i) * iChange);
+			bool bAfter = get1(i) > 0;
+			bChanged |= bBefore != bAfter;
+		}
+	}
+	return bChanged;
+}
+
+template<typename T0, typename T1>
+template<class T, int DEFAULT>
+bool InfoArray2Only<T0, T1>::addCache(EnumMap<UnitTypes, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+{
+	const bool bTypeCheck1 = !boost::is_same<T, bool>::value;
+	const bool bTypeCheck2 = boost::is_same<T0, UnitClassTypes>::value;
+	BOOST_STATIC_ASSERT(bTypeCheck1);
+	BOOST_STATIC_ASSERT(bTypeCheck2);
+	bool bChanged = false;
+	for (int i = 0; i < getLength(); ++i)
+	{
+		const UnitTypes eIndex = pCivInfo->getCivSpecificForClass<UnitTypes, T0>(get0(i));
+		if (em.isInRange(eIndex))
+		{
+			bool bBefore = get1(i) > 0;
+			em.add(eIndex, get1(i) * iChange);
+			bool bAfter = get1(i) > 0;
+			bChanged |= bBefore != bAfter;
+		}
+	}
+	return bChanged;
+}
+
+template<typename T0>
+template<typename Ta, class T, int DEFAULT>
+void InfoArray1Only<T0>::copyTo(EnumMap<Ta, T, DEFAULT> & em) const
+{
+	em.reset();
+	for (int i = 0; i < getLength(); ++i)
+	{
+		em.set(get0(i), 1);
+	}
+}
+
+template<typename T0, typename T1>
+template<typename Ta, class T, int DEFAULT>
+void InfoArray2Only<T0, T1>::copyTo(EnumMap<Ta, T, DEFAULT> & em) const
+{
+	em.reset();
+	for (int i = 0; i < getLength(); ++i)
+	{
+		const T0 eIndex = get0(i);
+		if (em.isInRange(eIndex))
+		{
+			em.set(eIndex, get1(i));
+		}
+	}
+}
+
+template<typename T0, typename T1>
+template<typename Ta, int DEFAULT>
+void InfoArray2Only<T0, T1>::copyTo(EnumMap<Ta, bool, DEFAULT> & em) const
+{
+	em.reset();
+	for (int i = 0; i < getLength(); ++i)
+	{
+		const T0 eIndex = get0(i);
+		if (em.isInRange(eIndex))
+		{
+			em.set(eIndex, get1(i) > (T0)0);
+		}
+	}
+}
+
+template<typename T0, typename T1>
+template<typename Ta, typename Tb, typename T, int DEFAULT>
+void InfoArray2Only<T0, T1>::addTo(EnumMap2D<Ta, Tb, T, DEFAULT> & em, int iChange) const
+{
+	addTo(em, iChange, NULL);
+}
+
+template<typename T0, typename T1>
+template<typename Ta, typename Tb, typename T, int DEFAULT>
+void InfoArray2Only<T0, T1>::addTo(EnumMap2D<Ta, Tb, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+{
+	const bool bTypeCheck = !boost::is_same<Tb, bool>::value;
+	BOOST_STATIC_ASSERT(bTypeCheck);
+	for (int i = 0; i < getLength(); ++i)
+	{
+		const Ta eIndex0 = pCivInfo->getCivSpecificForClass<Ta, T0>(get0(i));
+		if (em.isInRange(eIndex0))
+		{
+			if (em[eIndex0].isInRange(pCivInfo->getCivSpecificForClass<Tb, T1>(get1(i))))
+			{
+				em[eIndex0].add(pCivInfo->getCivSpecificForClass<Tb, T1>(get1(i)), iChange);
+			}
+		}
+	}
+}
+
+template<typename T0, typename T1, typename T2>
+template<typename Ta, typename Tb, typename T, int DEFAULT>
+void InfoArray3Only<T0, T1, T2>::addTo(EnumMap2D<Ta, Tb, T, DEFAULT> & em, int iChange) const
+{
+	addTo(em, iChange, NULL);
+}
+
+template<typename T0, typename T1, typename T2>
+template<typename Ta, typename Tb, typename T, int DEFAULT>
+void InfoArray3Only<T0, T1, T2>::addTo(EnumMap2D<Ta, Tb, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+{
+	const bool bTypeCheck = !boost::is_same<T, bool>::value;
+	BOOST_STATIC_ASSERT(bTypeCheck);
+	for (int i = 0; i < getLength(); ++i)
+	{
+		const Ta eIndex0 = pCivInfo->getCivSpecificForClass<Ta, T0>(get0(i));
+		if (em.isInRange(eIndex0))
+		{
+			if (em[eIndex0].isInRange(pCivInfo->getCivSpecificForClass<Tb, T1>(get1(i))))
+			{
+				em[eIndex0].add(pCivInfo->getCivSpecificForClass<Tb, T1>(get1(i)), get2(i) * iChange);
+			}
+		}
+	}
+}
+
+template<typename T0, typename T1, typename T2>
+template<typename Ta, typename Tb, int DEFAULT>
+void InfoArray3Only<T0, T1, T2>::addTo(EnumMap2D<Ta, Tb, bool, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
+{
+	for (int i = 0; i < getLength(); ++i)
+	{
+		const Ta eIndex0 = pCivInfo->getCivSpecificForClass<Ta, T0>(get0(i));
+		if (em.isInRange(eIndex0))
+		{
+			if (em[eIndex0].isInRange(pCivInfo->getCivSpecificForClass<Tb, T1>(get1(i))))
+			{
+				em[eIndex0].set(pCivInfo->getCivSpecificForClass<Tb, T1>(get1(i)), (get2(i) * iChange) > 0);
+			}
+		}
+	}
+}
 
 template<typename T0, typename T1 = JIT_NoneTypes, typename T2 = JIT_NoneTypes, typename T3 = JIT_NoneTypes>
-class InfoArray : virtual protected InfoArrayMod
-	, public InfoArrayToken<0, T0>
-	, public InfoArrayToken<1, T1>
-	, public InfoArrayToken<2, T2>
-	, public InfoArrayToken<3, T3>
-	, public boost::noncopyable
+class InfoArray : public InfoArray4Only<T0, T1, T2, T3>
 {
-	// classes, which somehow bypasses the compile time type check
-	// TODO remove as many as possible
-	friend class CvCity;
-	friend class CvGlobals;
-	friend class CivEffectInfo;
-	friend class CvPlayerCivEffect;
-	friend class CvInfoBase;
 public:
-	InfoArray() : InfoArrayMod(JIT_TYPE<T0>::TYPE, JIT_TYPE<T1>::TYPE, JIT_TYPE<T2>::TYPE, JIT_TYPE<T3>::TYPE)
-		, InfoArrayToken<0, T0>()
-		, InfoArrayToken<1, T1>()
-		, InfoArrayToken<2, T2>()
-		, InfoArrayToken<3, T3>()
+	InfoArray() : InfoArray4Only<T0, T1, T2, T3>(VARINFO<T0>::JIT, VARINFO<T1>::JIT, VARINFO<T2>::JIT, VARINFO<T3>::JIT)
 	{};
 
+	// the actual functions are in child classes. They are added here to get an overview
+	// note that some might not work in all cases and some might have different arguments depending on template
+#if 0
 	int getLength() const;
 
-	// interaction with EnumMap
-	template<typename T>
-	void assignFrom(const EnumMap<T0, T>& em);
-	void assignFrom(const EnumMap<T0, bool>& em);
+	T getType(int iIndex) const; // like getBonus, getImprovement etc
+	T getWithTemplate(int iIndex, T eVar) const; // get, which works with an argument. Useful for calling from a template function using a templat eVar type
 
-	template<typename T>
-	void addTo(EnumMap<T0, T> & em, int iChange = 1) const;
+	// EnumMap interaction
+	void assignFrom(const EnumMapBase<T0, T>& em);
+	void addTo(EnumMapBase<Ta, Tb> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
+	void copyTo(EnumMapBase<T0, T> & em) const;
 
-	template<typename T>
-	void copyTo(EnumMap<T0, T> & em) const;
+	void addTo(EnumMap2D<Ta, Tb, Tc> & em, int iChange = 1, const CvCivilizationInfo* pCivInfo = NULL) const;
+
+	// addTo uses pCivInfo if InfoArray is UnitClassTypes and EnumMap is UnitTypes. Same with buildings
+	// in all other cases pCivInfo isn't used and compilation fails unless T0 == Ta
+#endif
+};
+
+template<typename T0, typename T1, typename T2>
+class InfoArray< T0, T1, T2, JIT_NoneTypes> : public InfoArray3Only<T0, T1, T2>
+{
+public:
+	InfoArray() : InfoArray3Only<T0, T1, T2>(VARINFO<T0>::JIT, VARINFO<T1>::JIT, VARINFO<T2>::JIT, JIT_ARRAY_NO_TYPE)
+	{};
+};
+
+template<typename T0, typename T1>
+class InfoArray< T0, T1, JIT_NoneTypes, JIT_NoneTypes> : public InfoArray2Only<T0, T1>
+{
+public:
+	InfoArray() : InfoArray2Only<T0, T1>(VARINFO<T0>::JIT, VARINFO<T1>::JIT, JIT_ARRAY_NO_TYPE, JIT_ARRAY_NO_TYPE)
+	{};
 };
 
 
-template<typename T0, typename T1, typename T2, typename T3>
-int InfoArray<T0, T1, T2, T3>::getLength() const
+template<typename T0>
+class InfoArray< T0, JIT_NoneTypes, JIT_NoneTypes, JIT_NoneTypes> : public InfoArray1Only<T0>
 {
-	return InfoArrayBase::getLength();
-}
+public:
+	InfoArray() : InfoArray1Only<T0>(VARINFO<T0>::JIT, JIT_ARRAY_NO_TYPE, JIT_ARRAY_NO_TYPE, JIT_ARRAY_NO_TYPE)
+	{};
+};
 
-template<typename T0, typename T1, typename T2, typename T3>
-template<typename T>
-void InfoArray<T0, T1, T2, T3>::assignFrom(const EnumMap<T0, T> & em)
-{
-	const bool bTypeCheck = boost::is_same<T2, JIT_NoneTypes>::value && boost::is_same<T3, JIT_NoneTypes>::value;
-	BOOST_STATIC_ASSERT(bTypeCheck);
-	// buffer everything in a vector to avoid the need for templates in InfoArray.cpp
-	std::vector<int> vec;
-	em.copyToVector(vec);
-	assign(vec);
-}
-
-template<typename T0, typename T1, typename T2, typename T3>
-void InfoArray<T0, T1, T2, T3>::assignFrom(const EnumMap<T0, bool> & em)
-{
-	const bool bTypeCheck = boost::is_same<T1, JIT_NoneTypes>::value && boost::is_same<T2, JIT_NoneTypes>::value && boost::is_same<T3, JIT_NoneTypes>::value;
-	BOOST_STATIC_ASSERT(bTypeCheck);
-	// buffer everything in a vector to avoid the need for templates in InfoArray.cpp
-	std::vector<bool> vec;
-	vec.reserve(em.LENGTH);
-	for (int i = 0; i < em.LENGTH; ++i)
-	{
-		vec.push_back(em.get((T0)i));
-	}
-	assign(vec);
-}
-
-template<typename T0, typename T1, typename T2, typename T3>
-template<typename T>
-void InfoArray<T0, T1, T2, T3>::addTo(EnumMap<T0, T> & em, int iChange) const
-{
-	const bool bTypeCheck = boost::is_same<T2, JIT_NoneTypes>::value && boost::is_same<T3, JIT_NoneTypes>::value;
-	BOOST_STATIC_ASSERT(bTypeCheck);
-
-	FAssert(iChange == 1 || iChange == -1);
-	for (int i = 0; i < this->m_iLength; ++i)
-	{
-		int iValue = m_iNumDimentions == 2 ? getInternal(i, 1) : 1;
-		iValue *= iChange;
-		em.add((T0)getInternal(i, 0), iValue);
-	}
-}
-
-template<typename T0, typename T1, typename T2, typename T3>
-template<typename T>
-void InfoArray<T0, T1, T2, T3>::copyTo(EnumMap<T0, T> & em) const
-{
-	em.setAll(0);
-	addTo(em);
-}
 
 #endif

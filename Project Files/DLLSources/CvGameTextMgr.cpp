@@ -410,11 +410,21 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 	if (pUnit->maxMoves() > 0)
 	{
 		szString.append(L", ");
-		// ray, new Movement Calculation - START
-		// needs to change or otherwise UI always shows just 0
-		// int iCurrMoves = ((pUnit->movesLeft() / GC.getMOVE_DENOMINATOR()) + (((pUnit->movesLeft() % GC.getMOVE_DENOMINATOR()) > 0) ? 1 : 0));
-		int iCurrMoves = pUnit->movesLeft() / GC.getMOVE_DENOMINATOR();
-		// ray, new Movement Calculation - END
+
+		int iCurrMoves;
+
+		if (GC.useClassicMovementSystem())
+		{
+			iCurrMoves = ((pUnit->movesLeft() / GC.getMOVE_DENOMINATOR()) + (((pUnit->movesLeft() % GC.getMOVE_DENOMINATOR()) > 0) ? 1 : 0));
+		}
+		else
+		{
+			// ray, new Movement Calculation - START
+			// needs to change or otherwise UI always shows just 0
+			iCurrMoves = pUnit->movesLeft() / GC.getMOVE_DENOMINATOR();
+			// ray, new Movement Calculation - END
+		}
+
 		if ((pUnit->baseMoves() == iCurrMoves) || (pUnit->getTeam() != GC.getGameINLINE().getActiveTeam()))
 		{
 			szTempBuffer.Format(L"%d%c", pUnit->baseMoves(), GC.getSymbolID(MOVES_CHAR));
@@ -4410,6 +4420,9 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 			}
 		}
 	}
+	// CivEffects - Nightinggale - start
+	parseCivEffects(szHelpString, kTrait.getCivEffect(), eCivilization, bDawnOfMan, bIndent);
+	// CivEffects - Nightinggale - end
 }
 
 void CvGameTextMgr::parseLeaderTraits(CvWStringBuffer &szHelpString, LeaderHeadTypes eLeader, CivilizationTypes eCivilization, bool bDawnOfMan, bool bCivilopediaText)
@@ -6068,7 +6081,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 	// R&R, Androrc, Domestic Market
 	// R&R, ray, adjustment Domestic Markets, displaying as list
 	CvWString szYieldsDemandedList;
-	const InfoArray<YieldTypes, IntTypes> &infoYieldDemands = GC.getUnitInfo(eUnit).getYieldDemands();
+	const InfoArray<YieldTypes, int> &infoYieldDemands = GC.getUnitInfo(eUnit).getYieldDemands();
 	for (int iI = 0; iI < infoYieldDemands.getLength(); ++iI)
 	{
 		szYieldsDemandedList += CvWString::format(L"%c", GC.getYieldInfo(infoYieldDemands.getYield(iI)).getChar());
@@ -6392,7 +6405,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		szBuffer.append(gDLL->getText("TXT_KEY_REPLACES_UNIT", GC.getBuildingInfo(eDefaultBuilding).getTextKeyWide()));
 	}
 
-	BuildingTypes eNextBuilding = (BuildingTypes) kBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
+	BuildingTypes eNextBuilding = kBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
 	while (eNextBuilding != eBuilding)
 	{
 		CvBuildingInfo& kNextBuilding = GC.getBuildingInfo(eNextBuilding);
@@ -6406,7 +6419,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 			// TAC - Messages - Ray - END
 		}
 
-		eNextBuilding = (BuildingTypes) kNextBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
+		eNextBuilding = kNextBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
 	}
 
 	if (kBuilding.getFreePromotion() != NO_PROMOTION)
@@ -6441,7 +6454,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	}
 
 	CvWString szYieldsDemandedList;
-	const InfoArray<YieldTypes, IntTypes> &infoYieldDemands = kBuilding.getYieldDemands();
+	const InfoArray<YieldTypes, int> &infoYieldDemands = kBuilding.getYieldDemands();
 	for (int iI = 0; iI < infoYieldDemands.getLength(); ++iI)
 	{
 		szYieldsDemandedList += CvWString::format(L"%c", GC.getYieldInfo(infoYieldDemands.getYield(iI)).getChar());
@@ -10262,6 +10275,33 @@ void CvGameTextMgr::setFatherHelp(CvWStringBuffer &szBuffer, FatherTypes eFather
 		parseTraits(szBuffer, (TraitTypes) kFatherInfo.getTrait(), eCivilization, false, false);
 	}
 }
+
+// CivEffects - Nightinggale - start
+void CvGameTextMgr::parseCivEffects(CvWStringBuffer &szHelpString, CivEffectTypes eCivEffect, CivilizationTypes eCivilization, bool bDawnOfMan, bool bIndent)
+{
+	if (eCivEffect == NO_CIV_EFFECT)
+	{
+		return;
+	}
+
+	CvWString szTempBuffer;
+
+	const CivEffectInfo& kEffect = GC.getCivEffectInfo(eCivEffect);
+
+	if (!bDawnOfMan)
+	{
+		if (kEffect.getLearningByDoingModifier() != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			szHelpString.append(gDLL->getText("TXT_KEY_FATHER_LEARNING_BY_DOING_MODIFIER", kEffect.getLearningByDoingModifier()));
+		}
+	}
+}
+// CivEffects - Nightinggale - end
 
 void CvGameTextMgr::getTradeScreenTitleIcon(CvString& szButton, CvWidgetDataStruct& widgetData, PlayerTypes ePlayer)
 {

@@ -120,8 +120,6 @@ class CvTradeScreenInfo; // trade screen type - Nightinggale
 
 class CivEffectInfo;
 
-#include "InfoCacheArray.h"
-#include "EnumTypeCacheArray.h"
 #include "Profile.h"
 
 class CvGlobals
@@ -664,8 +662,6 @@ public:
 	int getAI_TRANSPORT_DANGER_RANGE();
 	int getAI_LOST_TRANSPORT_MEMORY_COUNT();
 	// TAC - AI Improved Navel AI - koma13 - END
-	int getNEW_CAPACITY(); //VET NewCapacity - 1/2
-
 	// R&R, ray, caching globals from Global Defines Alt - START
 	int getPLOT_VISIBILITY_RANGE();
 	int getUNIT_VISIBILITY_RANGE();
@@ -996,7 +992,7 @@ public:
 
 	void cleanInfoStrings();
 	
-	const YieldTypeArray& getUnitYieldDemandTypes() const { return m_acUnitYieldDemandTypes; }
+	const InfoArray<YieldTypes>& getDomesticDemandYieldTypes() const { return m_iaDomesticDemandYieldTypes; }
 
 	void setCityCatchmentRadius(int iSetting);
 
@@ -1239,7 +1235,6 @@ protected:
 	int m_iPEAK_SEE_FROM_CHANGE;
 	int m_iHILLS_SEE_FROM_CHANGE;
 	int m_iMAX_REBEL_YIELD_MODIFIER;
-	int m_iNEW_CAPACITY; //VET NewCapacity - 2/2
 	// TAC - AI Improved Navel AI - koma13 - START
 	int m_iAI_TRANSPORT_DANGER_RANGE;
 	int m_iAI_LOST_TRANSPORT_MEMORY_COUNT;
@@ -1436,7 +1431,7 @@ protected:
 	int m_BAD_CITY_LOCATION_HEALTH_MALUS;
 	// WTP, ray, Health Overhaul - END
 
-	YieldTypeArray m_acUnitYieldDemandTypes;
+	InfoArray<YieldTypes> m_iaDomesticDemandYieldTypes;
 
 	// WTP, ray, Happiness - START
 	int m_MIN_POP_NEG_HAPPINESS;
@@ -1518,6 +1513,8 @@ protected:
 	bool m_bUSE_DO_COMBAT_CALLBACK;
 	// K-Mod \ RaR end
 
+	bool m_bUseClassicMovementSystem;
+
 	// DLL interface
 	CvDLLUtilityIFaceBase* m_pDLL;
 
@@ -1545,6 +1542,8 @@ protected:
 		inline bool getUSE_DO_PILLAGE_GOLD_CALLBACK() { return m_bUSE_DO_PILLAGE_GOLD_CALLBACK; }
 		inline bool getUSE_GET_EXPERIENCE_NEEDED_CALLBACK() { return m_bUSE_GET_EXPERIENCE_NEEDED_CALLBACK; }
 		inline bool getUSE_DO_COMBAT_CALLBACK() { return m_bUSE_DO_COMBAT_CALLBACK; }
+
+		inline bool useClassicMovementSystem() { return m_bUseClassicMovementSystem; }
 };
 
 extern CvGlobals gGlobals;	// for debugging
@@ -1770,10 +1769,6 @@ inline int CvGlobals::getHILLS_SEE_FROM_CHANGE()
 inline int CvGlobals::getMAX_REBEL_YIELD_MODIFIER()
 {
 	return m_iMAX_REBEL_YIELD_MODIFIER;
-}
-inline int CvGlobals::getNEW_CAPACITY() //VET NewCapacity - 3/3
-{
-	return m_iNEW_CAPACITY;
 }
 
 // TAC - AI Improved Navel AI - koma13 - START

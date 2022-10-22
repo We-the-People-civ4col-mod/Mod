@@ -1635,22 +1635,85 @@ CyInfoArray* CyPlayer::getSpecialBuildingTypes() const
 {
 	// Currently a bit pointless, but here there is a single location to alter all of the python code using this should we need to update.
 
-	BoolArray BA(JIT_ARRAY_BUILDING_SPECIAL, true);
+	EnumMap<SpecialBuildingTypes, bool, true> em;
 
-	return new CyInfoArray(BA);
+	return new CyInfoArray(em);
 }
 
 CyInfoArray* CyPlayer::getStoredYieldTypes() const
 {
 	// Currently a bit pointless, but here there is a single location to alter all of the python code using this should we need to update.
 
-	BoolArray BA(JIT_ARRAY_YIELD);
+	EnumMap<YieldTypes, bool, true> em;
 
-	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
+	for (YieldTypes eYield = em.FIRST; eYield <= em.LAST; ++eYield)
 	{
-		BA.set(true, eYield);
+		if (eYield >= NUM_CARGO_YIELD_TYPES // only show cargo yields
+			|| (m_pPlayer && !m_pPlayer->CivEffect()->canUseYield(eYield))) // remove yields not used by the player
+		{
+			em.set(eYield, false);
+		}
 	}
-	return new CyInfoArray(BA);
+
+	return new CyInfoArray(em);
+}
+
+CyInfoArray* CyPlayer::getDomesticDemandYieldTypes() const
+{
+	EnumMap<YieldTypes, bool> em;
+
+	const InfoArray<YieldTypes>& array = GC.getDomesticDemandYieldTypes();
+
+	for (int i = 0; i < array.getLength(); ++i)
+	{
+		const YieldTypes eYield = array.get(i);
+		if (!m_pPlayer || m_pPlayer->CivEffect()->canUseYield(eYield))
+		{
+			em.set(eYield, true);
+		}
+	}
+
+	return new CyInfoArray(em);
+}
+
+CyInfoArray* CyPlayer::getTeachUnitTypes(int iTeachLevel) const
+{
+	EnumMap<UnitTypes, bool> em;
+
+	if (m_pPlayer != NULL)
+	{
+		const CvPlayerCivEffect* pPlayer = m_pPlayer->CivEffect();
+		for (UnitTypes eUnit = em.FIRST; eUnit <= em.LAST; ++eUnit)
+		{
+			if (pPlayer->canUseUnit(eUnit) && GC.getUnitInfo(eUnit).NBMOD_GetTeachLevel() == iTeachLevel)
+			{
+				em.set(eUnit, true);
+			}
+
+		}
+	}
+	return new CyInfoArray(em);
+}
+
+int CyPlayer::getMaxTeachLevel() const
+{
+	int iLevel = 0;
+	if (m_pPlayer != NULL)
+	{
+		const CvPlayerCivEffect* pPlayer = m_pPlayer->CivEffect();
+		for (UnitTypes eUnit = FIRST_UNIT; eUnit < NUM_UNIT_TYPES; ++eUnit)
+		{
+			if (pPlayer->canUseUnit(eUnit))
+			{
+				const int iUnitLevel = GC.getUnitInfo(eUnit).NBMOD_GetTeachLevel();
+				if (iUnitLevel > iLevel && iUnitLevel < 100)
+				{
+					iLevel = iUnitLevel;
+				}
+			}
+		}
+	}
+	return iLevel;
 }
 
 // CivEffect

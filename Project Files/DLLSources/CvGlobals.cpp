@@ -113,7 +113,6 @@ m_iSEAWATER_SEE_FROM_CHANGE(0),
 m_iPEAK_SEE_FROM_CHANGE(0),
 m_iHILLS_SEE_FROM_CHANGE(0),
 m_iMAX_REBEL_YIELD_MODIFIER(0),
-m_iNEW_CAPACITY(0),				//VET NewCapacity - 1/3
 // TAC - AI Improved Navel AI - koma13 - START
 m_iAI_TRANSPORT_DANGER_RANGE(0),
 m_iAI_LOST_TRANSPORT_MEMORY_COUNT(0),
@@ -386,7 +385,8 @@ m_bUSE_AI_CHOOSE_PRODUCTION_CALLBACK(false),
 m_bUSE_DO_PILLAGE_GOLD_CALLBACK(false),
 m_bUSE_GET_EXPERIENCE_NEEDED_CALLBACK(false),
 m_bUSE_DO_COMBAT_CALLBACK(false),
-// K-Mod \RaR end
+// K-Mod \RaR end,
+m_bUseClassicMovementSystem(true),
 m_paHints(NULL),
 m_paMainMenus(NULL)
 {
@@ -588,6 +588,7 @@ void CvGlobals::setCityCatchmentRadius(int iRadius)
 		UserSettings settings;
 		setCityCatchmentRadius(settings.getColonyRadius());
 	}
+	LAST_CITY_PLOT = NUM_CITY_PLOTS - static_cast<CityPlotTypes>(1);
 #endif
 }
 
@@ -2622,7 +2623,6 @@ void CvGlobals::cacheGlobals()
 	m_iPEAK_SEE_FROM_CHANGE = getDefineINT("PEAK_SEE_FROM_CHANGE");
 	m_iHILLS_SEE_FROM_CHANGE = getDefineINT("HILLS_SEE_FROM_CHANGE");
 	m_iMAX_REBEL_YIELD_MODIFIER = getDefineINT("MAX_REBEL_YIELD_MODIFIER");
-	m_iNEW_CAPACITY = getDefineINT("NEW_CAPACITY");				//VET NewCapacity - 2/3
 	// TAC - AI Improved Navel AI - koma13 - START
 	m_iAI_TRANSPORT_DANGER_RANGE = getDefineINT("AI_TRANSPORT_DANGER_RANGE");
 	m_iAI_LOST_TRANSPORT_MEMORY_COUNT = getDefineINT("AI_LOST_TRANSPORT_MEMORY_COUNT");
@@ -2882,6 +2882,7 @@ void CvGlobals::cacheGlobals()
 	m_bUSE_GET_EXPERIENCE_NEEDED_CALLBACK = getDefineINT("USE_GET_EXPERIENCE_NEEDED_CALLBACK") != 0;
 	m_bUSE_DO_COMBAT_CALLBACK = getDefineINT("USE_DO_COMBAT_CALLBACK") != 0;
 	// K-Mod end \ RaR
+	m_bUseClassicMovementSystem = getDefineINT("USE_CLASSIC_MOVEMENT_SYSTEM") != 0;
 }
 
 int CvGlobals::getDefineINT( const char * szName ) const

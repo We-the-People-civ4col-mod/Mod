@@ -18,8 +18,8 @@ public:
 	void applyCivEffect(CivEffectTypes       eCivEffect, int iChange = 1);
 
 	inline bool canUseBonus       (BonusTypes       eBonus        ) const { return m_ja_iCacheAllowsBonuses       .get(eBonus)       > 0; }
-	inline bool canUseBuild       (BuildTypes       eBuild        ) const { return m_ba_CacheAllowBuild           .get(eBuild)          ; }
-	inline bool canUseBuilding    (BuildingTypes    eBuilding     ) const { return m_ja_iCacheAllowsBuildings     .get(eBuilding)    > 0; }
+	inline bool canUseBuild       (BuildTypes       eBuild        ) const { return m_em_bCacheAllowBuild          .get(eBuild)          ; }
+	inline bool canUseBuilding    (BuildingTypes    eBuilding     ) const { return m_em_iCacheAllowsBuildings     .get(eBuilding)    > 0; }
 	inline bool canUseCivic       (CivicTypes       eCivic        ) const { return m_ja_iCacheAllowsCivics        .get(eCivic)       > 0; }
 	inline bool canUseImmigrant   (UnitTypes        eUnit         ) const { return m_ja_iCacheAllowsImmigrants    .get(eUnit)        > 0; }
 	inline bool canUseImprovement (ImprovementTypes eImprovement  ) const { return m_ja_iCacheAllowsImprovements  .get(eImprovement) > 0; }
@@ -32,11 +32,13 @@ public:
 	inline bool canConquerCity    (CivCategoryTypes eCivCategory  ) const { return m_ja_iCacheAllowsConqueringCity.get(eCivCategory) > 0; }
 	inline bool canFoundCity()                                      const { return m_iAllowFoundCity > 0; }
 
-	inline const BuildingTypeArray& getAllowedBuildingInfos()      const { return m_at_AllowedBuildings; }
+	inline const InfoArray<BuildingTypes>& getAllowedBuildings   () const { return m_iaAllowedBuildings; }
 
-	inline bool canUseDomesticMarket()                             const { return m_iCacheCanUseDomesticMarket > 0; }
+	inline bool canUseDomesticMarket()                              const { return m_iCacheCanUseDomesticMarket > 0; }
 
-	inline unsigned int getNumUnitsOnDock()                        const { return m_iCacheNumUnitsOnDock > 0 ? m_iCacheNumUnitsOnDock : 1; } // return 0 or negative crashes the game
+	// growth
+	int getLearningByDoingModifier() const;
+	inline unsigned int getNumUnitsOnDock()                         const { return m_iCacheNumUnitsOnDock > 0 ? m_iCacheNumUnitsOnDock : 1; } // return 0 or negative crashes the game
 
 
 	// unit
@@ -48,7 +50,7 @@ private:
 	// Allow
 	BonusArray          <char> m_ja_iCacheAllowsBonuses;
 	BuildArray          <char> m_ja_iCacheAllowsBuilds;
-	BuildingArray       <char> m_ja_iCacheAllowsBuildings;
+	EnumMap<BuildingTypes, char> m_em_iCacheAllowsBuildings;
 	CivicArray          <char> m_ja_iCacheAllowsCivics;
 	UnitArray           <char> m_ja_iCacheAllowsImmigrants;
 	ImprovementArray    <char> m_ja_iCacheAllowsImprovements;
@@ -63,13 +65,14 @@ private:
 	char m_iAllowFoundCity;
 
 	// caches of allow caches
-	BoolArray                  m_ba_CacheAllowBuild;
-	BuildingTypeArray          m_at_AllowedBuildings;
+	EnumMap<BuildTypes, bool, true>  m_em_bCacheAllowBuild;
+	InfoArray<BuildingTypes>         m_iaAllowedBuildings;
 
 	// City
 	int    m_iCacheCanUseDomesticMarket;
 
 	// Growth
+	int    m_iCacheLearningByDoingModifier;
 	int    m_iCacheNumUnitsOnDock;
 
 	// Units

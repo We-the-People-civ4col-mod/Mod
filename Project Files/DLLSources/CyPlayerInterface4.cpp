@@ -69,6 +69,9 @@ void CyPlayerPythonInterface4(python::class_<CyPlayer>& x)
 
 		.def("getSpecialBuildingTypes", &CyPlayer::getSpecialBuildingTypes, python::return_value_policy<python::manage_new_object>(), "CyInfoArray ()")
 		.def("getStoredYieldTypes", &CyPlayer::getStoredYieldTypes, python::return_value_policy<python::manage_new_object>(), "CyInfoArray ()")
+		.def("getDomesticDemandYieldTypes", &CyPlayer::getDomesticDemandYieldTypes, python::return_value_policy<python::manage_new_object>(), "CyInfoArray ()")
+		.def("getTeachUnitTypes", &CyPlayer::getTeachUnitTypes, python::return_value_policy<python::manage_new_object>(), "CyInfoArray (int)")
+		.def("getMaxTeachLevel", &CyPlayer::getMaxTeachLevel, "int ()")
 
 		.def("getCivEffectCount", &CyPlayer::getCivEffectCount, "int (CivEffectTypes eCivEffect)")
 		.def("getNumUnitsOnDock", &CyPlayer::getNumUnitsOnDock, "unsigned int ()")

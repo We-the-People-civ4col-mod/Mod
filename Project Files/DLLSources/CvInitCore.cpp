@@ -1889,8 +1889,8 @@ void CvInitCore::read(FDataStreamBase* pStream)
 		}
 	}
 
-	m_iNumVictories = this->read(reader, JIT_ARRAY_VICTORY, m_abVictories, true);
-	this->read(reader, JIT_ARRAY_GAME_OPTION, m_abOptions, false);
+	m_iNumVictories = this->read(reader, m_abVictories, true, NUM_VICTORY_TYPES);
+	this->read(reader, m_abOptions, false, NUM_GAMEOPTION_TYPES);
 
 	for (int i = 0; i < NUM_MPOPTION_TYPES; ++i)
 	{
@@ -1987,8 +1987,8 @@ void CvInitCore::write(FDataStreamBase* pStream)
 		writer.Write(m_aeCustomMapOptions[i]);
 	}
 
-	this->write(writer, JIT_ARRAY_VICTORY, m_abVictories, m_iNumVictories);
-	this->write(writer, JIT_ARRAY_GAME_OPTION, m_abOptions, NUM_GAMEOPTION_TYPES);
+	this->write(writer, m_abVictories, static_cast<VictoryTypes>(m_iNumVictories));
+	this->write(writer, m_abOptions, NUM_GAMEOPTION_TYPES);
 
 	for (int i = 0; i < NUM_MPOPTION_TYPES; ++i)
 	{
@@ -2042,33 +2042,41 @@ void CvInitCore::write(FDataStreamBase* pStream)
 	writerbase.WriteFile();
 }
 
-int CvInitCore::read(CvSavegameReader& reader, JITarrayTypes eType, bool*& pArray, bool bAllocate)
+template<typename T>
+int CvInitCore::read(CvSavegameReader& reader, bool*& pArray, bool bAllocate, T eLength)
 {
-	BoolArray baTemp(eType);
+	EnumMap<T, bool> baTemp;
 	reader.Read(baTemp);
-
-	int iLength = baTemp.length();
+	static const bool bCheck = (int)baTemp.FIRST == 0;
+	BOOST_STATIC_ASSERT(bCheck);
 
 	if (bAllocate)
 	{
 		SAFE_DELETE_ARRAY(pArray);
-		pArray = new bool[iLength];
+		pArray = new bool[baTemp.NUM_ELEMENTS];
 	}
 
-	for (int i = 0; i < iLength; ++i)
+	for (T i = baTemp.FIRST; i < baTemp.NUM_ELEMENTS; ++i)
 	{
 		pArray[i] = baTemp.get(i);
 	}
-	return iLength;
+	return baTemp.NUM_ELEMENTS;
 }
 
-void CvInitCore::write(CvSavegameWriter& writer, JITarrayTypes eType, bool* pArray, int iLength)
+template<typename T>
+void CvInitCore::write(CvSavegameWriter& writer, bool* pArray, T eLength)
 {
-	BoolArray baTemp(eType);
+	EnumMap<T, bool> baTemp;
+	static const bool bCheck = (int)baTemp.FIRST == 0;
+	BOOST_STATIC_ASSERT(bCheck);
 
-	for (int i = 0; i < iLength; ++i)
+	for (T i = baTemp.FIRST; i < eLength; ++i)
 	{
-		baTemp.safeSet(pArray[i], i);
+		const T eVar = (T)i;
+		if (baTemp.isInRange(eVar))
+		{
+			baTemp.set(i, pArray[i]);
+		}
 	}
 
 	writer.Write(baTemp);

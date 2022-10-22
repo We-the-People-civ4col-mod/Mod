@@ -11,7 +11,7 @@ static inline JITarrayTypes getJITarrayType(AchieveTypes var) {
 
 static inline JITarrayTypes getJITarrayType(ArtStyleTypes var)
 {
-	return JIT_ARRAY_ART_STYLE;
+	return JIT_ARRAY_ARTSTYLE;
 }
 
 static inline JITarrayTypes getJITarrayType(BonusTypes var)
@@ -31,7 +31,7 @@ static inline JITarrayTypes getJITarrayType(BuildingTypes var)
 
 static inline JITarrayTypes getJITarrayType(BuildingClassTypes var)
 {
-	return JIT_ARRAY_BUILDING_CLASS;
+	return JIT_ARRAY_BUILDINGCLASS;
 }
 
 static inline JITarrayTypes getJITarrayType(SpecialBuildingTypes var)
@@ -56,7 +56,7 @@ static inline JITarrayTypes getJITarrayType(CivicTypes var)
 
 static inline JITarrayTypes getJITarrayType(CivicOptionTypes var)
 {
-	return JIT_ARRAY_CIVIC_OPTION;
+	return JIT_ARRAY_CIVICOPTION;
 }
 
 static inline JITarrayTypes getJITarrayType(CivilizationTypes var)
@@ -81,7 +81,7 @@ static inline JITarrayTypes getJITarrayType(CultureLevelTypes var)
 
 static inline JITarrayTypes getJITarrayType(DiplomacyTypes var)
 {
-	return JIT_ARRAY_DIPLO;
+	return JIT_ARRAY_DIPLOMACY;
 }
 
 static inline JITarrayTypes getJITarrayType(EraTypes var)
@@ -166,7 +166,7 @@ static inline JITarrayTypes getJITarrayType(InvisibleTypes var)
 
 static inline JITarrayTypes getJITarrayType(LeaderHeadTypes var)
 {
-	return JIT_ARRAY_LEADER_HEAD;
+	return JIT_ARRAY_LEADER;
 }
 
 static inline JITarrayTypes getJITarrayType(MemoryTypes var)
@@ -241,17 +241,17 @@ static inline JITarrayTypes getJITarrayType(UnitTypes var)
 
 static inline JITarrayTypes getJITarrayType(UnitAITypes var)
 {
-	return JIT_ARRAY_UNIT_AI;
+	return JIT_ARRAY_UNITAI;
 }
 
 static inline JITarrayTypes getJITarrayType(UnitClassTypes var)
 {
-	return JIT_ARRAY_UNIT_CLASS;
+	return JIT_ARRAY_UNITCLASS;
 }
 
 static inline JITarrayTypes getJITarrayType(UnitCombatTypes var)
 {
-	return JIT_ARRAY_UNIT_COMBAT;
+	return JIT_ARRAY_UNITCOMBAT;
 }
 
 static inline JITarrayTypes getJITarrayType(SpecialUnitTypes var)

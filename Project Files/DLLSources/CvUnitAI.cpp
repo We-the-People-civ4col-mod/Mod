@@ -6253,8 +6253,6 @@ bool CvUnitAI::AI_europeBuyNativeYields()
 
 bool CvUnitAI::AI_europeBuyYields()
 {
-	
-	
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	CvPlayer& kPlayerEurope = GET_PLAYER(kOwner.getParent());
 	
@@ -6263,9 +6261,6 @@ bool CvUnitAI::AI_europeBuyYields()
 	{
 		aiYields[iYield] = 0;
 	}
-//VET NewCapacity - begin 1/4
-	// no longer needed
-//VET NewCapacity - end 1/4
 	
 	int aiTotalYields[NUM_YIELD_TYPES];
 	kOwner.calculateTotalYields(aiTotalYields);
@@ -6282,9 +6277,6 @@ bool CvUnitAI::AI_europeBuyYields()
 				for (pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
 				{	
 					int iNeeded = pLoopCity->getMaintainLevel(eLoopYield);
-//VET NewCapacity - begin 2/4
-					// no longer needed
-//VET NewCapacity - end 2/4
 					iNeeded -= pLoopCity->getYieldStored(eLoopYield);
 					if (iNeeded > 0)
 					{
@@ -15333,27 +15325,10 @@ bool CvUnitAI::AI_joinCityDefender()
 			int iAmount = GET_PLAYER(getOwnerINLINE()).getYieldEquipmentAmount(getProfession(), (YieldTypes)iYield);
 			if (iAmount > 0)
 			{
-//VET NewCapacity - begin 3/4
-				if (GC.getNEW_CAPACITY())
+				if ((pCity->getTotalYieldStored() + (iAmount * 2)) > iCapacity)
 				{
-					if ((pCity->getTotalYieldStored() + (iAmount * 2)) > iCapacity)
-					{
-						return false;
-					}
+					return false;
 				}
-				else
-//VET NewCapacity - begin 3/4 (ray fix)
-				{
-//VET NewCapacity - end 3/4 (ray fix)
-//VET NewCapacity - end 3/4
-					if ((pCity->getYieldStored((YieldTypes)iYield) + (iAmount * 2)) > iCapacity)
-					{
-						return false;
-					}
-//VET NewCapacity - begin 3/4 (ray fix)
-
-				}
-//VET NewCapacity - end 3/4 (ray fix)
 			}
 		}
 	}
@@ -15398,13 +15373,7 @@ bool CvUnitAI::AI_yieldDestination(int iMaxPath)
 				if (iPathTurns < iMaxPath)
 				{
 					int iValue = 10 + 3 * std::max(0, pCity->getMaintainLevel(getYield()) - pCity->getYieldStored(getYield()));
-//VET NewCapacity - begin 4/4
-					//iValue += pCity->getMaxYieldCapacity() - pCity->getYieldStored(getYield());
-					if (GC.getNEW_CAPACITY())
-						{iValue += pCity->getMaxYieldCapacity() - pCity->getTotalYieldStored();}
-					else
-						{iValue += pCity->getMaxYieldCapacity() - pCity->getYieldStored(getYield());}
-//VET NewCapacity - end 4/4
+					iValue += pCity->getMaxYieldCapacity() - pCity->getTotalYieldStored();
 					iValue = iValue / (iPathTurns + 3);
 					
 					if (iValue > iBestValue)

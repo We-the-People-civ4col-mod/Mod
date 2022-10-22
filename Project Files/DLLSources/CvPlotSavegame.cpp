@@ -231,7 +231,7 @@ void CvPlot::resetSavedData()
 	m_workingCity.reset();
 	m_workingCityOverride.reset();
 
-	m_pab_Revealed.reset();
+	m_em_bRevealed.reset();
 	m_aeRevealedImprovementRouteTypes.reset();
 }
 
@@ -307,7 +307,7 @@ void CvPlot::read(CvSavegameReader reader)
 		case Save_workingCity:             reader.Read(m_workingCity                ); break;
 		case Save_workingCityOverride:     reader.Read(m_workingCityOverride        ); break;
 
-		case Save_Revealed:                reader.Read(m_pab_Revealed               ); break;
+		case Save_Revealed:                reader.Read(m_em_bRevealed               ); break;
 
 		case Save_RevealedImprovementRouteSingle:
 		{
@@ -329,9 +329,9 @@ void CvPlot::read(CvSavegameReader reader)
 			// note that not being in the array shouldn't alter the memory at all
 			// it's either out of date (set in Save_RevealedImprovementRouteSingle) or no info (default value)
 			// writing something means overwriting what is stored using Save_RevealedImprovementRouteSingle.
-			TeamBoolArray eTeamArray;
-			ImprovementTypes eImprovement = getImprovementType();
-			RouteTypes eRoute = getRouteType();
+			EnumMap<TeamTypes, bool> eTeamArray;
+			const ImprovementTypes eImprovement = getImprovementType();
+			const RouteTypes eRoute = getRouteType();
 			reader.Read(eTeamArray);
 			for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 			{
@@ -342,25 +342,25 @@ void CvPlot::read(CvSavegameReader reader)
 			}
 		} break;
 
-		case Save_aiYield: m_em_iYield.Read(reader); break;
+		case Save_aiYield                  : reader.Read(m_em_iYield)                         ; break;
 
 		// PlayerArrays
-		case Save_Culture                  : m_em_iCulture                       .Read(reader); break;
-		case Save_CultureRangeForts        : m_em_iCultureRangeForts             .Read(reader); break;
-		case Save_DangerMap                : m_em_iDangerMap                     .Read(reader); break;
-		case Save_FoundValue               : m_em_iFoundValue                    .Read(reader); break;
-		case Save_PlayerCityRadiusCount    : m_em_iPlayerCityRadiusCount         .Read(reader); break;
-		case Save_VisibilityCount          : m_em_iVisibilityCount               .Read(reader); break;
-		case Save_RevealedOwner            : m_em_eRevealedOwner                 .Read(reader); break;
+		case Save_Culture                  : reader.Read(m_em_iCulture)                       ; break;
+		case Save_CultureRangeForts        : reader.Read(m_em_iCultureRangeForts)             ; break;
+		case Save_DangerMap                : reader.Read(m_em_iDangerMap)                     ; break;
+		case Save_FoundValue               : reader.Read(m_em_iFoundValue)                    ; break;
+		case Save_PlayerCityRadiusCount    : reader.Read(m_em_iPlayerCityRadiusCount)         ; break;
+		case Save_VisibilityCount          : reader.Read(m_em_iVisibilityCount)               ; break;
+		case Save_RevealedOwner            : reader.Read(m_em_eRevealedOwner)                 ; break;
 
-		case Save_CultureRangeCities       : m_em2_iCultureRangeCities           .Read(reader); break;
-		case Save_InvisibleVisibilityCount : m_em2_iInvisibleVisibilityCount     .Read(reader); break;
+		case Save_CultureRangeCities       : reader.Read(m_em2_iCultureRangeCities)           ; break;
+		case Save_InvisibleVisibilityCount : reader.Read(m_em2_iInvisibleVisibilityCount)     ; break;
 
-		case Save_ScriptData               : reader.Read(m_szScriptData); break;
+		case Save_ScriptData               : reader.Read(m_szScriptData)                      ; break;
 
-		case Save_BuildProgress            : m_em_iBuildProgress                 .Read(reader); break;
+		case Save_BuildProgress            : reader.Read(m_em_iBuildProgress)                 ; break;
 			
-		case Save_Units                    : reader.Read(m_units); break;
+		case Save_Units                    : reader.Read(m_units)                             ; break;
 
 		default:
 			FAssertMsg(false, "Unhandled savegame enum");
@@ -451,18 +451,18 @@ void CvPlot::write(CvSavegameWriter writer)
 
 	writer.Write(Save_aiYield, m_em_iYield);
 
-	writer.Write(Save_Revealed, m_pab_Revealed);
+	writer.Write(Save_Revealed, m_em_bRevealed);
 
 	if (m_aeRevealedImprovementRouteTypes.isAllocated())
 	{
-		TeamBoolArray eTeamArray;
-		ImprovementTypes ePlotImprovement = getImprovementType();
-		RouteTypes ePlotRoute = getRouteType();
+		EnumMap<TeamTypes, bool> eTeamArray;
+		const ImprovementTypes ePlotImprovement = getImprovementType();
+		const RouteTypes ePlotRoute = getRouteType();
 
 		for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 		{
-			ImprovementTypes eImprovement = m_aeRevealedImprovementRouteTypes.getImprovement(eTeam);
-			RouteTypes eRoute = m_aeRevealedImprovementRouteTypes.getRoute(eTeam);
+			const ImprovementTypes eImprovement = m_aeRevealedImprovementRouteTypes.getImprovement(eTeam);
+			const RouteTypes eRoute = m_aeRevealedImprovementRouteTypes.getRoute(eTeam);
 
 			if (eImprovement != NO_IMPROVEMENT || eRoute != NO_ROUTE)
 			{

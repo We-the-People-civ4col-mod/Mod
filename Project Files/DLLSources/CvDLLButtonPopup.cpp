@@ -3280,17 +3280,10 @@ bool CvDLLButtonPopup::launchCustomHousePopup(CvPopup* pPopup, CvPopupInfo &info
 		return false;
 	}
 
-	// R&R, ray, finishing Custom House Screen
-	if(!GC.getNEW_CAPACITY())
-	{
-		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_CUSTOM_HOUSE_POPUP_TEXT_NO_NEW_CAPACITY"));
-	}
-
-	else if (!pCity->getHasUnlockedStorageLossTradeSettings())
+	if (!pCity->getHasUnlockedStorageLossTradeSettings())
 	{
 		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_CUSTOM_HOUSE_NOT_BUILT_YET_POPUP_TEXT", pCity->getNameKey()));
 	}
-		
 	else
 	{
 		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_CUSTOM_HOUSE_POPUP_TEXT", pCity->getNameKey()));
@@ -3372,25 +3365,18 @@ bool CvDLLButtonPopup::launchDomesticMarketPopup(CvPopup* pPopup, CvPopupInfo &i
 	YieldCargoArray<int> aYields;
 	pCity->getYieldDemands(aYields);
 
-	const YieldTypeArray& kYieldArray = GC.getUnitYieldDemandTypes();
-	for (int i = 0;; ++i)
+	const InfoArray<YieldTypes>& kYieldArray = GC.getDomesticDemandYieldTypes();
+	for (int i = 0; i < kYieldArray.getLength(); ++i)
 	{
 		YieldTypes eYield = kYieldArray.get(i);
-		if (eYield != NO_YIELD)
-		{
-			CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+		const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
 
-			gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
-			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, eYield);
-			gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_NUMBER", pCity->getYieldStored(eYield)));
-			gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_NUMBER", pCity->getYieldBuyPrice(eYield)));
-			gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_NUMBER", aYields.get(eYield)));
-			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
-		}
-		else
-		{
-			break;
-		}
+		gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, eYield);
+		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_NUMBER", pCity->getYieldStored(eYield)));
+		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_NUMBER", pCity->getYieldBuyPrice(eYield)));
+		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_NUMBER", aYields.get(eYield)));
+		gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
 	}
 
 	gDLL->getInterfaceIFace()->popupLaunch(pPopup, true, POPUPSTATE_IMMEDIATE);
