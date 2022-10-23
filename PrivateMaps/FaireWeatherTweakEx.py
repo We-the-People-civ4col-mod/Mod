@@ -321,14 +321,15 @@ class MapConstants :
         self.COAST = 1
         self.MARSH = 2
         self.GRASS = 3
-        self.PLAINS = 4
+        self.PRAIRIE = 4
         self.DESERT = 5
         self.TUNDRA = 6
         self.SNOW = 7
 	#Androrc Savannah
         self.SAVANNAH = 8
 	#Androrc End
-
+        self.PLAINS = 9
+        self.SHALLOW_COAST = 10
         return
     
     def initInGameOptions(self):
@@ -1992,7 +1993,10 @@ class SmallMaps :
                         if self.rainFallMap[i] < (PRand.random() * (self.desertThreshold - minRain) + self.desertThreshold - minRain)/2.0 + minRain:
                             self.terrainMap[i] = mc.DESERT
                         else:
-                            self.terrainMap[i] = mc.PLAINS
+                            if PRand.random() <= 0.5:
+                                self.terrainMap[i] = mc.PRAIRIE
+                            else:
+                                self.terrainMap[i] = mc.PLAINS
                 elif self.rainFallMap[i] < self.plainsThreshold:
                     if self.averageTempMap[i] < mc.SnowTemp:
                         self.terrainMap[i] = mc.SNOW
@@ -2000,7 +2004,10 @@ class SmallMaps :
                         self.terrainMap[i] = mc.TUNDRA
                     else:
                         if self.rainFallMap[i] < ((PRand.random() * (self.plainsThreshold - self.desertThreshold) + self.plainsThreshold - self.desertThreshold))/2.0 + self.desertThreshold: 
-                            self.terrainMap[i] = mc.PLAINS
+                            if PRand.random() <= 0.5:
+                                self.terrainMap[i] = mc.PRAIRIE
+                            else:
+                                self.terrainMap[i] = mc.PLAINS
                         else:
                             self.terrainMap[i] = mc.GRASS
                 elif self.rainFallMap[i] < self.grassThreshold:
@@ -2129,12 +2136,14 @@ class SmallMaps :
                     lineString += '+'
                 elif mapLoc == mc.MARSH:
                     lineString += 'M'
-                elif mapLoc == mc.PLAINS:
+                elif mapLoc == mc.PRAIRIE:
                     lineString += 'P'
                 elif mapLoc == mc.TUNDRA:
                     lineString += 'T'
                 elif mapLoc == mc.SNOW:
                     lineString += 'I'
+                elif mapLoc == mc.PLAINS:
+                    lineString += 'L'    
             lineString += "-" + wz.GetZoneName(wz.GetZone(y))
             print lineString
         lineString = " "
@@ -2893,7 +2902,7 @@ class RiverMap :
                     lineString1 += 'D.'
                 elif mapLoc == mc.GRASS:
                     lineString1 += 'R.'
-                elif mapLoc == mc.PLAINS:
+                elif mapLoc == mc.PRAIRIE:
                     lineString1 += 'P.'
                 elif mapLoc == mc.TUNDRA:
                     lineString1 += 'T.'
@@ -2901,6 +2910,8 @@ class RiverMap :
                     lineString1 += 'M.'
                 elif mapLoc == mc.SNOW:
                     lineString1 += 'I.'
+                elif mapLoc == mc.PLAINS:
+                    lineString1 += 'L.'
                 mapLoc = rm.riverMap[GetIndex(x,y)]
                 if mapLoc == rm.O:
                     lineString2 += '..'
@@ -3260,18 +3271,20 @@ def generateTerrainTypes():
     print "Adding Terrain"
     gc = CyGlobalContext()
     terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
-    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS")
+    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
     terrainIce = gc.getInfoTypeForString("TERRAIN_SNOW")
     terrainTundra = gc.getInfoTypeForString("TERRAIN_TUNDRA")
     terrainGrass = gc.getInfoTypeForString("TERRAIN_GRASS")
     terrainHill = gc.getInfoTypeForString("TERRAIN_HILL")
     terrainCoast = gc.getInfoTypeForString("TERRAIN_COAST")
+    terrainShallowCoast = gc.getInfoTypeForString("TERRAIN_SHALLOW_COAST")
     terrainOcean = gc.getInfoTypeForString("TERRAIN_OCEAN")
     terrainPeak = gc.getInfoTypeForString("TERRAIN_PEAK")
     terrainMarsh = gc.getInfoTypeForString("TERRAIN_MARSH")
     #Androrc Savannah
     terrainSavannah = gc.getInfoTypeForString("TERRAIN_SAVANNAH")
     #Androrc End
+    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
     
     terrainTypes = [0]*(mc.width*mc.height)
     for i in range(mc.width*mc.height):
@@ -3279,10 +3292,12 @@ def generateTerrainTypes():
             terrainTypes[i] = terrainOcean
         elif sm.terrainMap[i] == mc.COAST:
             terrainTypes[i] = terrainCoast
+        elif sm.terrainMap[i] == mc.SHALLOW_COAST:
+            terrainTypes[i] = terrainShallowCoast
         elif sm.terrainMap[i] == mc.DESERT:
             terrainTypes[i] = terrainDesert
-        elif sm.terrainMap[i] == mc.PLAINS:
-            terrainTypes[i] = terrainPlains
+        elif sm.terrainMap[i] == mc.PRAIRIE:
+            terrainTypes[i] = terrainPrairie
         elif sm.terrainMap[i] == mc.GRASS:
             terrainTypes[i] = terrainGrass
         #Androrc Savannah
@@ -3295,6 +3310,9 @@ def generateTerrainTypes():
             terrainTypes[i] = terrainIce
         elif sm.terrainMap[i] == mc.MARSH:
             terrainTypes[i] = terrainMarsh
+        elif sm.terrainMap[i] == mc.PLAINS:
+            terrainTypes[i] = terrainPlains
+            
     print "Finished generating terrain types."
     return terrainTypes
 
@@ -3751,7 +3769,7 @@ def addFeatures():
             plot.isPeak() == False:
                 if sm.rainFallMap[i] > sm.plainsThreshold*1.5:#jungle
                     if sm.averageTempMap[i] > mc.JungleTemp:
-                        if sm.terrainMap[i] == mc.PLAINS:
+                        if sm.terrainMap[i] == mc.PRAIRIE:
                             plot.setFeatureType(featureForest,0)
                         ## R&R, ray, corrected maps to generate Savannah plains
                         ## agnat86, generates also unvegetated Savannah
@@ -3783,7 +3801,7 @@ def addFeatures():
                             plot.setFeatureType(featureForestTundra,0)
 
             if plot.isPeak() == False and plot.isWater() == False:
-                if sm.terrainMap[i] == mc.PLAINS and PRand.random() < mc.chanceForLightForest:
+                if sm.terrainMap[i] == mc.PRAIRIE and PRand.random() < mc.chanceForLightForest:
                     plot.setFeatureType(featureLightForest,0)
                 if sm.terrainMap[i] == mc.MARSH and PRand.random() < mc.chanceForTreelessMarsh:
                     plot.setFeatureType(FeatureTypes.NO_FEATURE,0)
@@ -3801,6 +3819,176 @@ def europeMatch(x,y):
         return True
     return False
 
+def isAllAdjacentPlotTerrainType(x, y, terrainType):
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    
+    for direction in range(1,9,1):
+        xx,yy = GetXYFromDirection(x, y, direction)
+        plot = mmap.plot(xx,yy)
+        if plot.getTerrainType() != terrainType:
+            return False
+    return True
+
+def isAnyAdjacentPlotTerrainType(x, y, terrainType):
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    
+    for direction in range(1,9,1):
+        xx,yy = GetXYFromDirection(x, y, direction)
+        plot = mmap.plot(xx,yy)
+        if plot.getTerrainType() == terrainType:
+            return True
+    return False
+
+def isAnyAdjacentPlotType(x, y, plotType):
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    
+    for direction in range(1,9,1):
+        xx,yy = GetXYFromDirection(x, y, direction)
+        plot = mmap.plot(xx,yy)
+        if plot.getPlotType() == plotType:
+            return True
+    return False
+
+def generateShallowCoast():
+    
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    terrainCoast = gc.getInfoTypeForString("TERRAIN_COAST")
+    terrainShallowCoast = gc.getInfoTypeForString("TERRAIN_SHALLOW_COAST")
+    
+    shallowCoastChance = 0.2 # Baseline chance for converting coast to shallow coast
+    shallowCostAdjacentChance = 0.4 # Higher chance if there's already adjacent shallow coast
+    
+    # Convert some patches of (regular) coast to shallow coasts
+    for y in range(mc.height):
+        for x in range(mc.width):
+            plot = mmap.plot(x,y)
+            if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
+                if plot.getTerrainType() == terrainCoast:
+                    if isAnyAdjacentPlotTerrainType(x, y, terrainShallowCoast):
+                        if PRand.random() <= shallowCostAdjacentChance:
+                            plot.setTerrainType(terrainShallowCoast, True, True)               
+                    elif PRand.random() <= shallowCoastChance:
+                        plot.setTerrainType(terrainShallowCoast, True, True)
+
+def generateShrubland():
+    
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    terrainShrubland = gc.getInfoTypeForString("TERRAIN_SHRUBLAND")
+    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
+    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
+    terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
+
+    shrublandChance = 0.3 # Baseline chance for converting prairie to shrubland
+    
+    # Convert some prairie that's adjaceant to desert to shrubland 
+    for y in range(mc.height):
+        for x in range(mc.width):
+            plot = mmap.plot(x,y)
+            if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
+                if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
+                    if isAnyAdjacentPlotTerrainType(x, y, terrainDesert):
+                        if PRand.random() <= shrublandChance:
+                            plot.setTerrainType(terrainShrubland, True, True)               
+
+def generateTaiga():
+    
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    terrainTaiga = gc.getInfoTypeForString("TERRAIN_TAIGA")
+    terrainGrassland = gc.getInfoTypeForString("TERRAIN_GRASS")
+    terrainTundra = gc.getInfoTypeForString("TERRAIN_TUNDRA")
+    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
+    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
+    
+    taigaChance = 0.5 # Baseline chance for converting terrain to shrubland
+    
+    # Convert some prairie that's adjaceant to desert to shrubland 
+    for y in range(mc.height):
+        for x in range(mc.width):
+            plot = mmap.plot(x,y)
+            if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
+                if plot.getTerrainType() == terrainGrassland or plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
+                    if isAnyAdjacentPlotTerrainType(x, y, terrainTundra):
+                        if PRand.random() <= taigaChance:
+                            plot.setTerrainType(terrainTaiga, True, True)               
+
+def generateRockSteppes():
+
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
+    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
+    terrainRockSteppes = gc.getInfoTypeForString("TERRAIN_ROCK_STEPPES")
+    
+    rockSteppesChance = 0.25 # Baseline chance for converting terrain
+    
+    # Convert 3x3 of flat fertile river-less land to rock steppes to reflect arid land  
+    for y in range(mc.height):
+        for x in range(mc.width):
+            plot = mmap.plot(x,y)
+            if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
+                if not plot.isRiver():
+                    if not isAnyAdjacentPlotType(x, y, PlotTypes.PLOT_OCEAN):
+                        if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
+                            if isAllAdjacentPlotTerrainType(x, y, terrainPrairie) or isAllAdjacentPlotTerrainType(x, y, terrainPlains):
+                                if PRand.random() <= rockSteppesChance * 0.2:
+                                    plot.setTerrainType(terrainRockSteppes, True, True)               
+
+    
+    for y in range(mc.height):
+        for x in range(mc.width):
+            plot = mmap.plot(x,y)
+            if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
+                if not plot.isRiver():
+                    if not isAnyAdjacentPlotType(x, y, PlotTypes.PLOT_OCEAN):
+                        if plot.getTerrainType() == terrainPrairie or plot.getTerrainType() == terrainPlains:
+                            if PRand.random() <= rockSteppesChance:
+                                plot.setTerrainType(terrainRockSteppes, True, True)               
+
+def generateWetland():
+
+    gc = CyGlobalContext()
+    mmap = gc.getMap()
+    terrainWetland = gc.getInfoTypeForString("TERRAIN_WETLAND")
+    terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
+    terrainTundra = gc.getInfoTypeForString("TERRAIN_TUNDRA")
+    
+    wetlandChance = 0.2 # Baseline chance for converting terrain
+    wetlandAdjacentChance = 0.4 # Higher chance if there's already adjacent wetland
+    
+    # Convert non-dry river plots
+    for y in range(mc.height):
+        for x in range(mc.width):
+            plot = mmap.plot(x,y)
+            if not plot.getPlotType() == PlotTypes.PLOT_PEAK:
+                if plot.isRiver():
+                    if not isAnyAdjacentPlotTerrainType(x, y, terrainDesert) and not isAnyAdjacentPlotTerrainType(x, y, terrainTundra):
+                        if isAnyAdjacentPlotTerrainType(x, y, terrainWetland):
+                            if PRand.random() <= wetlandAdjacentChance:
+                                plot.setTerrainType(terrainWetland, True, True)               
+                        else:
+                            if PRand.random() <= wetlandChance:
+                                plot.setTerrainType(terrainWetland, True, True)                    
+    
+    # Convert non-dry plots adjacent to lakes and coast
+    for y in range(mc.height):
+        for x in range(mc.width):
+            plot = mmap.plot(x,y)
+            if not plot.getPlotType() == PlotTypes.PLOT_PEAK and plot.getPlotType() == PlotTypes.PLOT_LAND:
+                if isAnyAdjacentPlotType(x, y, PlotTypes.PLOT_OCEAN):
+                    if not isAnyAdjacentPlotTerrainType(x, y, terrainDesert) and not isAnyAdjacentPlotTerrainType(x, y, terrainTundra):
+                        if isAnyAdjacentPlotTerrainType(x, y, terrainWetland):
+                            if PRand.random() <= wetlandAdjacentChance:
+                                plot.setTerrainType(terrainWetland, True, True)               
+                        else:
+                            if PRand.random() <= wetlandChance:
+                                plot.setTerrainType(terrainWetland, True, True)                    
+                        
 def afterGeneration():
     gc = CyGlobalContext()
     mmap = gc.getMap()
@@ -3863,6 +4051,14 @@ def afterGeneration():
                     plot.setEurope(europeEast)
         
     createIce()
+    generateShallowCoast()
+    generateShrubland()
+    generateTaiga()
+    generateRockSteppes()
+    generateWetland()
+    mg = CyMapGenerator()
+    mg.addFeaturesOnLand()
+    mg.addFeaturesOnWater()
     
 def createIce():
     gc = CyGlobalContext()

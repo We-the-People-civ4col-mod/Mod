@@ -516,17 +516,22 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 	if (pUnit->getLbDrounds() != 0 && pUnit->getLastLbDProfession() != NO_PROFESSION)
 	{
 		const ProfessionTypes lastProfession = pUnit->getLastLbDProfession();
-		bool bCanBecomeExpert = pUnit->getUnitInfo().LbD_canBecomeExpert();
-		int iLbDRoundsWorked = pUnit->getLbDrounds();
+		const bool bCanBecomeExpert = pUnit->getUnitInfo().LbD_canBecomeExpert();
+		const int iLbDRoundsWorked = pUnit->getLbDrounds();
 
 		// Display for become Expert - with turns worked and Expert Unit in Text
 		if(bCanBecomeExpert && lastProfession != NO_PROFESSION && GC.getProfessionInfo(lastProfession).LbD_isUsed() && iLbDRoundsWorked >0)
 		{
-			int expert = GC.getProfessionInfo(lastProfession).LbD_getExpert();
-			UnitTypes expertUnitType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCivilizationType()).getCivilizationUnits(expert);
-			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP", iLbDRoundsWorked, GC.getUnitInfo(expertUnitType).getDescription()));
-			szString.append(SEPARATOR);
+			const int expert = GC.getProfessionInfo(lastProfession).LbD_getExpert();
+			const UnitTypes expertUnitType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCivilizationType()).getCivilizationUnits(expert);
+			// We need this check Since the current player (e.g. natives) may not have this expert type. (I observed that expertUnitType was -1 when changing to a native player in debug mode 
+			// which caused an AV)
+			if (expertUnitType != NO_UNIT)
+			{ 
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP", iLbDRoundsWorked, GC.getUnitInfo(expertUnitType).getDescription()));
+				szString.append(SEPARATOR);
+			}
 		}
 
 	}
@@ -536,16 +541,19 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 	if (pUnit->getLbDroundsBefore() != 0 && pUnit->getLastLbDProfessionBefore() != NO_PROFESSION)
 	{
 		const ProfessionTypes lastProfessionBefore = pUnit->getLastLbDProfessionBefore();
-		bool bCanBecomeExpert = pUnit->getUnitInfo().LbD_canBecomeExpert();
-		int iLbDRoundsWorkedBefore = pUnit->getLbDroundsBefore();
+		const bool bCanBecomeExpert = pUnit->getUnitInfo().LbD_canBecomeExpert();
+		const int iLbDRoundsWorkedBefore = pUnit->getLbDroundsBefore();
 		// Display Profession before Last for become Expert - with turns worked and Expert Unit in Text
 		if(bCanBecomeExpert && lastProfessionBefore != NO_PROFESSION && GC.getProfessionInfo(lastProfessionBefore).LbD_isUsed() && iLbDRoundsWorkedBefore >0)
 		{
-			int expertBefore = GC.getProfessionInfo(lastProfessionBefore).LbD_getExpert();
-			UnitTypes expertUnitTypeBefore = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCivilizationType()).getCivilizationUnits(expertBefore);
-			szString.append(NEWLINE);
-			szString.append(gDLL->getText("TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP", iLbDRoundsWorkedBefore, GC.getUnitInfo(expertUnitTypeBefore).getDescription()));
-			szString.append(SEPARATOR);
+			const int expertBefore = GC.getProfessionInfo(lastProfessionBefore).LbD_getExpert();
+			const UnitTypes expertUnitTypeBefore = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCivilizationType()).getCivilizationUnits(expertBefore);
+			if (expertUnitTypeBefore != NO_UNIT)
+			{ 
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP", iLbDRoundsWorkedBefore, GC.getUnitInfo(expertUnitTypeBefore).getDescription()));
+				szString.append(SEPARATOR);
+			}
 		}
 	
 	}
@@ -2577,6 +2585,8 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 	{
 		CvUnit* pSelectedUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
 
+		// Suppress asert 
+		/*
 		if (pSelectedUnit != NULL)
 		{
 			int iPathTurns;
@@ -2586,6 +2596,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 				szString.append(CvWString::format(L"\nPathturns = %d, cost = %d", iPathTurns, iPathCost));
 			}
 		}
+		*/
 
 		//Distances to various things.
 		if (pPlot->isOwned())
@@ -6730,7 +6741,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		if ((gDLL->getChtLvl() > 0) && gDLL->ctrlKey() && (pCity != NULL))
 		{
 			int iBuildingValue = pCity->AI_buildingValue(eBuilding);
-			szBuffer.append(CvWString::format(L"\nAI Building Value = %d", iBuildingValue));
+			szBuffer.append(CvWString::format(L"\nAI Building = %d, Value = %d", eBuilding, iBuildingValue));
 		}
 	}
 

@@ -36,6 +36,7 @@
 #include "CvDLLPythonIFaceBase.h"
 
 #include "CvSavegame.h"
+#include "BetterBTSAI.h"
 
 
 // Public Functions...
@@ -1331,6 +1332,7 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 	pCityPlot->setRevealed(GET_PLAYER(eOldOwner).getTeam(), true, false, NO_TEAM);
 
 	gDLL->getEventReporterIFace()->cityAcquired(eOldOwner, getID(), pNewCity, bConquest, bTrade);
+	if (gPlayerLogLevel >= 1) logBBAI(" Player %d (%S) acquires city %S bConq %d bTrade %d", getID(), getCivilizationDescription(0), pNewCity->getName(0).GetCString(), bConquest, bTrade); // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
 
 	SAFE_DELETE_ARRAY(pabHasRealBuilding);
 	SAFE_DELETE_ARRAY(paiBuildingOriginalOwner);
@@ -2217,8 +2219,6 @@ void CvPlayer::doTurn()
 			kPlayerAI.AI_updateBestPortCities();
 
 			redistributeWood();
-			// R&R, ray, redistribute cannons and muskets
-			redistributeCannonsAndMuskets();
 
 			//WTP, ray Kings Used Ship - START
 			doAILogicforUsedShipDeals();
@@ -3106,12 +3106,15 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 
 	case DIPLOEVENT_DEMAND_WAR:
 		FAssertMsg(GET_PLAYER(ePlayer).getTeam() != getTeam(), "shouldn't call this function on our own team");
-
+		if (gTeamLogLevel >= 2) // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
+			logBBAI(" Team %d (%S) declares war on team %d due to DIPLOEVENT_DEMAND_WAR", getTeam(), getCivilizationDescription(0), ePlayer);
 		GET_TEAM(getTeam()).declareWar(GET_PLAYER(ePlayer).getTeam(), false, WARPLAN_LIMITED);
 		break;
 
 	case DIPLOEVENT_JOIN_WAR:
 		AI_changeMemoryCount(ePlayer, MEMORY_ACCEPTED_JOIN_WAR, 1);
+		if (gTeamLogLevel >= 2) // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
+			logBBAI(" Team %d (%S) declares war on team %d due to DIPLOEVENT_JOIN_WAR", getTeam(), getCivilizationDescription(0), ePlayer);
 		GET_TEAM(GET_PLAYER(ePlayer).getTeam()).declareWar(((TeamTypes)iData1), false, WARPLAN_DOGPILE);
 
 		for (iI = 0; iI < MAX_PLAYERS; iI++)
@@ -6378,6 +6381,7 @@ void CvPlayer::found(int iX, int iY)
 	}
 
 	gDLL->getEventReporterIFace()->cityBuilt(pCity);
+	if (gPlayerLogLevel >= 1) logBBAI(" Player %d (%S) founds new city %S at %d, %d", getID(), getCivilizationDescription(0), pCity->getName(0).GetCString(), iX, iY); // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
 }
 
 
@@ -7324,7 +7328,7 @@ int CvPlayer::revolutionEuropeUnitThreshold() const
 
 CvPlot* CvPlayer::getStartingPlot() const
 {
-	return GC.getMapINLINE().plotSorenINLINE(m_iStartingX, m_iStartingY);
+	return GC.getMapINLINE().plotSoren(m_iStartingX, m_iStartingY);
 }
 
 
@@ -8234,7 +8238,8 @@ void CvPlayer::verifyAlive()
 
 				// TAC - RESPAWN Option - Ray - Start
 				// WTP, ray, fix for Colonial AI not being possible to eliminate a Colonial AI - Check for "No more Settler" removed because causing Problems with Settler is Europe
-				if (!isNative() && !isHuman() && GC.getDefineINT("KI_RESPAWN_OFF") == 1 && GC.getGameINLINE().getGameTurn() > iMinTurnForAIRespawningOff && (getNumUnits() < 5 || AI_getNumAIUnits(UNITAI_TRANSPORT_SEA) == 0))
+				// Added veto check for having at least a single settler
+				if (!isNative() && !isHuman() && GC.getGameINLINE().getGameTurn() > iMinTurnForAIRespawningOff && GC.getDefineINT("KI_RESPAWN_OFF") == 1 && AI_getNumAIUnits(UNITAI_SETTLER) == 0 && (getNumUnits() < 5 || AI_getNumAIUnits(UNITAI_TRANSPORT_SEA) == 0))
 				{
 					bKill = true;
 					bRespawnDeactivated = true;
@@ -8490,6 +8495,8 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 
 		if (isTurnActive())
 		{
+			onTurnLogging(); // bbai logging
+
 			if (GC.getLogging())
 			{
 				if (gDLL->getChtLvl() > 0)
@@ -17701,7 +17708,10 @@ CvUnit* CvPlayer::buyEuropeUnit(UnitTypes eUnit, int iPriceModifier)
 		changeGold(-iPrice);
 		GET_TEAM(getTeam()).changeUnitsPurchasedHistory(pUnit->getUnitClassType(), 1);
 		gDLL->getEventReporterIFace()->unitBoughtFromEurope(getID(), pUnit->getID());
+		if (gPlayerLogLevel >= 1) logBBAI(" Player %d (%S) buys Unit:%S Gold:%d", 
+			getID(), getCivilizationDescription(0), pUnit->getNameAndProfession().GetCString(), iPrice);
 	}
+
 
 	return pUnit;
 }
@@ -20623,74 +20633,6 @@ void CvPlayer::redistributeWood()
 	}
 }
 // TAC - AI Economy - Ray - END
-
-
-// R&R, ray, redistribute cannons and muskets
-void CvPlayer::redistributeCannonsAndMuskets()
-{
-	// do nothing if Player has no cities
-	if (getNumCities() <1) {
-		return;
-	}
-
-	//only do this every 5 rounds
-	if (GC.getGame().getGameTurn() % 5 != 0)
-	{
-		return;
-	}
-
-	// Loop through cities
-	int iLoop;
-	CvCity* pLoopCity;
-	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-	{
-		int iAvailableMuskets = pLoopCity->getYieldStored(YIELD_CANNONS);
-		int iAvailableCannons = pLoopCity->getYieldStored(YIELD_CANNONS);
-		int iNeededCannons = pLoopCity->getProductionNeeded(YIELD_CANNONS);
-
-		// R&R, ray, we now also redistribute Blades to Tools - START
-		int iAvailableBlades = pLoopCity->getYieldStored(YIELD_BLADES);
-		int iAvailableTools = pLoopCity->getYieldStored(YIELD_TOOLS);
-
-		if (iAvailableBlades > 100 && iAvailableTools < 200)
-		{
-			int iBladesToRedistribute = iAvailableBlades - 100;
-			pLoopCity->setYieldStored(YIELD_TOOLS, iAvailableTools + iBladesToRedistribute);
-			pLoopCity->setYieldStored(YIELD_BLADES, iAvailableBlades - iBladesToRedistribute);
-		}
-		// R&R, ray, we now also redistribute Blades to Tools - END
-
-		if (iNeededCannons > iAvailableCannons)
-		{
-			// change muskets to cannons if enough available but leave at least 100
-			if (iAvailableMuskets > 100)
-			{
-				int iMusketsToPotentialyTransfer = iAvailableMuskets - 100;
-				int iMusketsToReallyTransfer = 0;
-				if (iMusketsToPotentialyTransfer >= iNeededCannons)
-				{
-					iMusketsToReallyTransfer = iNeededCannons;
-				}
-				else
-				{
-					iMusketsToReallyTransfer = iMusketsToPotentialyTransfer;
-				}
-				// change Muskets to Cannons
-				pLoopCity->setYieldStored(YIELD_CANNONS, iAvailableCannons + iMusketsToReallyTransfer);
-				pLoopCity->setYieldStored(YIELD_MUSKETS, iAvailableMuskets - iMusketsToReallyTransfer);
-			}
-		}
-		else if (iAvailableCannons > iNeededCannons)
-		{
-			int iCannonsToTransfer = iAvailableCannons - iNeededCannons;
-			// change Cannons to Muskets
-			pLoopCity->setYieldStored(YIELD_CANNONS, iAvailableCannons - iCannonsToTransfer);
-			pLoopCity->setYieldStored(YIELD_MUSKETS, iAvailableMuskets + iCannonsToTransfer);
-		}
-
-	}
-}
-
 
 // TAC - LbD - Ray - START
 bool CvPlayer::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int pre_rounds, int l_level)
@@ -24491,4 +24433,27 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	CvSavegameWriter writer(writerbase);
 	write(writer);
 	writerbase.WriteFile();
+}
+
+/*	K-Mod. The body of this function use to be part of setTurnActive.
+	I've moved it here just to improve the readability of that function.
+	(Based on BETTER_BTS_AI_MOD, 10/26/09, jdog5000 - AI logging.) */
+void CvPlayer::onTurnLogging() const
+{
+	if (gPlayerLogLevel > 0)
+	{
+		logBBAI("Player %d (%S) setTurnActive for turn %d (%d)", getID(), getCivilizationDescription(0), GC.getGame().getGameTurn(), std::abs(GC.getGame().getGameTurnYear()));
+		logBBAI(" Player % d(% S) has % d cities, % d pop, % d power, % d assets", getID(), getCivilizationDescription(0), getNumCities(), getTotalPopulation(), getPower(), getAssets());
+
+		if (GC.getGame().getGameTurn() > 0 &&
+			(GC.getGame().getGameTurn() % 25) == 0)
+		{
+			CvWStringBuffer szBuffer;
+			GAMETEXT.setScoreHelp(szBuffer, getID());
+			logBBAI(" %S", szBuffer);
+
+			int iGameTurn = GC.getGame().getGameTurn();
+			logBBAI(" Total Score: %d, Population Score: %d (%d total pop), Land Score: %d", calculateScore(), getPopScore(), getTotalPopulation(), getLandScore());
+		}
+	}
 }

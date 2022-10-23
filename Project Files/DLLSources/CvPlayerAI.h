@@ -86,7 +86,7 @@ public:
 	int AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreAttackers = false);
 	CvCity* AI_findTargetCity(CvArea* pArea);
 
-	int AI_getPlotDanger(CvPlot* pPlot, int iRange = -1, bool bTestMoves = true, bool bOffensive = false);
+	int AI_getPlotDanger(CvPlot* pPlot, int iRange = -1, bool bTestMoves = true, bool bOffensive = false) const;
 	int AI_getUnitDanger(CvUnit* pUnit, int iRange = -1, bool bTestMoves = true, bool bAnyDanger = true) const;
 	
 	// TAC - AI Improved Naval AI - koma13 - START
@@ -151,7 +151,7 @@ public:
 	bool AI_hasSeaTransport(const CvUnit* pCargo) const;
 
 	int AI_neededExplorers(CvArea* pArea);
-	int AI_neededWorkers(CvArea* pArea);
+	int AI_neededWorkers(CvArea* pArea) const;
 	//int AI_neededMissionary(CvArea* pArea);
 	
 	int AI_adjacentPotentialAttackers(CvPlot* pPlot, bool bTestCanMove = false);
@@ -336,9 +336,9 @@ public:
 
 	int AI_desiredCityCount();
 	
-	int AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUnitAI);
+	int AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUnitAI) const;
 	int AI_professionGoldValue(ProfessionTypes eProfession);
-	ProfessionTypes AI_idealProfessionForUnit(UnitTypes eUnitType);
+	ProfessionTypes AI_idealProfessionForUnit(UnitTypes eUnitType) const;
 	ProfessionTypes AI_idealProfessionForUnitAIType(UnitAITypes eUnitAI, CvCity* pCity = NULL);
 	
 	int AI_professionBasicValue(ProfessionTypes eProfession, UnitTypes eUnit, CvCity* pCity);
@@ -369,7 +369,7 @@ public:
 	void AI_updateNextBuyUnit(bool bPriceLimit = true);
 	// TAC - AI purchases military units - koma13 - END
 	void AI_updateNextBuyProfession();
-	int AI_highestNextBuyValue();
+	//int AI_highestNextBuyValue();
 	
 	EmotionTypes AI_strongestEmotion();
 	int AI_emotionWeight(EmotionTypes eEmotion);
@@ -462,7 +462,11 @@ public:
 
 	int AI_getYieldBestExportPrice(YieldTypes eYield) const;
 	void AI_hurryBestDockUnits(int iHurryCount);
+	int AI_getColonialMilitaryModifier() const;
+	bool AI_shouldHurryUnit() const;
 
+	// TODO: Make protective and replace with a getter
+	int m_estimatedUnemploymentCount;
 
 protected:
 
@@ -575,9 +579,9 @@ protected:
 	int m_iWaveIndex;
 	// TAC - AI Revolution - koma13 - END
 	
-	bool AI_shouldHurryUnit() const;
 	int AI_getBestDockUnit() const;
 	bool AI_canHurryDockUnit() const;
+	int AI_estimateUnemploymentCount() const;
 
 	friend class CvGameTextMgr;
 };

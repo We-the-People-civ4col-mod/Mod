@@ -29,12 +29,7 @@ public:
 	bool canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible);
 	void doCommand(CommandTypes eCommand, int iData1, int iData2);
 	CyPlot* getPathEndTurnPlot();
-	
-	// TAC - AI Improved Naval AI - koma13 - START
-	//bool generatePath(CyPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL);
-	bool generatePath(CyPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL, bool bIgnoreDanger = true);
-	// TAC - AI Improved Naval AI - koma13 - END
-
+	bool generatePath(CyPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL);
 	bool canEnterTerritory(int /*PlayerTypes*/ ePlayer, bool bIgnoreRightOfPassage);
 	bool canEnterArea(int /*PlayerTypes*/ ePlayer, CyArea* pArea, bool bIgnoreRightOfPassage);
 	bool canMoveInto(CyPlot* pPlot, bool bAttack, bool bDeclareWar, bool bIgnoreLoad);

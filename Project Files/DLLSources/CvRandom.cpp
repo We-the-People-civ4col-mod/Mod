@@ -302,3 +302,10 @@ void CvRandom::write(CvSavegameWriter writer)
 {
 	writer.Write(m_ulRandomSeed);
 }
+
+// Returns the next random seed. Useful for inspecting\comparing the state of the RNG without
+// being forced to actually generate a new random number.
+unsigned long CvRandom::peek() const
+{
+	return ((RANDOM_A * m_ulRandomSeed) + RANDOM_C);
+}

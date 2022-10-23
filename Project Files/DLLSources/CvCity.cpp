@@ -30,6 +30,7 @@
 #include "CvDLLEventReporterIFaceBase.h"
 
 #include "CvSavegame.h"
+#include "BetterBTSAI.h"
 
 // Public Functions...
 
@@ -520,13 +521,21 @@ void CvCity::doTurn()
 
 	AI_doTurn();
 
-	bool bAllowNoProduction = !doCheckProduction();
+	const bool bAllowNoProduction = !doCheckProduction();
 
 	doSpecialists();
 	doYields();
 	doGrowth();
 	doCulture();
 	doPlotCulture(false, getOwnerINLINE(), getCultureRate());
+	
+	if (!m_bHasHurried && !isHuman() && !isNative())
+	{
+		// Hurry needs to happen just before the production processing to avoid
+		// the hurried yields from being used for other purposes
+		static_cast<CvCityAI*>(this)->AI_doHurry();
+	}
+	
 	doProduction(bAllowNoProduction);
 	
 	if (!isNative())
@@ -2551,6 +2560,7 @@ bool CvCity::canHurry(HurryTypes eHurry, bool bTestVisible) const
 		{
 			return false;
 		}
+#if 0
 		// TAC - AI Military Buildup - koma13 - START
 		CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
 		if (!kPlayer.isHuman())
@@ -2575,8 +2585,8 @@ bool CvCity::canHurry(HurryTypes eHurry, bool bTestVisible) const
 			}
 		}
 		// TAC - AI Military Buildup - koma13 - END
+#endif
 	}
-
 	return true;
 }
 
@@ -2633,6 +2643,19 @@ void CvCity::hurry(HurryTypes eHurry)
 
 	// Python Event
 	gDLL->getEventReporterIFace()->cityHurry(this, eHurry);
+
+	if (gCityLogLevel >= 2) // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
+	{
+		CvWStringBuffer szBuffer; CvWString szString;
+		if (isProductionUnit())
+			szString = GC.getUnitInfo(getProductionUnit()).getDescription();
+		else if (isProductionBuilding())
+			szString = GC.getBuildingInfo(getProductionBuilding()).getDescription();
+		else if (isProductionConvince())
+			szString = GC.getFatherPointInfo(getProductionFatherPoint()).getDescription();
+		logBBAI(" Player %S City %S hurrying production of %S at cost of %d gold", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), 
+			getName().GetCString(), szString.GetCString(), iHurryGold);
+	}
 }
 
 
@@ -3222,7 +3245,7 @@ bool CvCity::at(CvPlot* pPlot) const
 
 CvPlot* CvCity::plot() const
 {
-	return GC.getMapINLINE().plotSorenINLINE(getX_INLINE(), getY_INLINE());
+	return GC.getMapINLINE().plotSoren(getX_INLINE(), getY_INLINE());
 }
 
 int CvCity::getArea() const
@@ -3244,7 +3267,7 @@ CvArea* CvCity::waterArea() const
 
 CvPlot* CvCity::getRallyPlot() const
 {
-	return GC.getMapINLINE().plotSorenINLINE(m_iRallyX, m_iRallyY);
+	return GC.getMapINLINE().plotSoren(m_iRallyX, m_iRallyY);
 }
 
 
@@ -5303,6 +5326,56 @@ void CvCity::updateCacheStorageLossTradingValues(BuildingTypes eBuilding, bool b
 	}
 }
 
+void CvCity::pushOrderInternal(OrderTypes eOrder, int eBuildingOrUnit)
+{
+	OrderData order;
+	order.eOrderType = eOrder;
+	
+	if (eOrder == ORDER_CONSTRUCT)
+	{
+		order.iData1 = static_cast<BuildingTypes>(eBuildingOrUnit);
+		order.iData2 = -1; // Unused
+	
+		if (gCityLogLevel >= 2) 
+		{ 
+			logBBAI(" Player %S City %S considers hurrying of building %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+				getName().GetCString(), GC.getBuildingInfo(static_cast<BuildingTypes>(eBuildingOrUnit)).getDescription());
+		}
+	}
+	else if (eOrder == ORDER_TRAIN)
+	{
+		order.iData1 = static_cast<UnitTypes>(eBuildingOrUnit);
+		order.iData2 = NO_UNITAI;
+
+		if (gCityLogLevel >= 2)
+		{		
+			logBBAI(" Player %S City %S considers hurrying of unit %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+				getName().GetCString(), GC.getUnitInfo(static_cast<UnitTypes>(eBuildingOrUnit)).getDescription());
+		}
+	}
+	else
+	{
+		FAssertMsg(false, "Unsupported OrderType");
+	}
+	order.bSave = false;
+
+	m_orderQueue.insertAtBeginning(order);
+
+	startHeadOrder();
+
+}
+
+void CvCity::popOrderInternal()
+{
+	CLLNode<OrderData>* pOrderNode = headOrderQueueNode();
+
+	if (pOrderNode == NULL)
+		return;
+
+	m_orderQueue.deleteNode(pOrderNode);
+	pOrderNode = NULL;
+}
+
 bool CvCity::isEverOwned(PlayerTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
@@ -6407,40 +6480,60 @@ void CvCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bo
 	switch (eOrder)
 	{
 	case ORDER_TRAIN:
-		if (canTrain((UnitTypes)iData1) || bForce)
+	{
+		UnitTypes const eUnit = (UnitTypes)iData1; // advc
+		if (canTrain(eUnit) || bForce)
 		{
-			if (iData2 == -1)
+			if (iData2 == NO_UNITAI)
 			{
-				iData2 = GC.getUnitInfo((UnitTypes)iData1).getDefaultUnitAIType();
+				iData2 = GC.getUnitInfo(eUnit).getDefaultUnitAIType();
 			}
 
-			GET_PLAYER(getOwnerINLINE()).changeUnitClassMaking(((UnitClassTypes)(GC.getUnitInfo((UnitTypes) iData1).getUnitClassType())), 1);
-
-			area()->changeNumTrainAIUnits(getOwnerINLINE(), ((UnitAITypes)iData2), 1);
-			GET_PLAYER(getOwnerINLINE()).AI_changeNumTrainAIUnits(((UnitAITypes)iData2), 1);
+			UnitAITypes const eUnitAI = (UnitAITypes)iData2; // advc
+			GET_PLAYER(getOwner()).changeUnitClassMaking((UnitClassTypes)GC.getUnitInfo(eUnit).getUnitClassType(), 1);
+			area()->changeNumTrainAIUnits(getOwner(), eUnitAI, 1);
+			GET_PLAYER(getOwner()).AI_changeNumTrainAIUnits(eUnitAI, 1);
 
 			bValid = true;
 			gDLL->getEventReporterIFace()->cityBuildingUnit(this, (UnitTypes)iData1);
+
+			if (gCityLogLevel >= 1)
+			{
+				CvWString szString;
+				getUnitAIString(szString, eUnitAI);
+				logBBAI(" Player %S City %S pushes production of unit %S with UNITAI %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), 
+					getName().GetCString(), GC.getUnitInfo(eUnit).getDescription(), szString.GetCString());
+			}
 		}
 		break;
-
+	}
 	case ORDER_CONSTRUCT:
-		if (canConstruct((BuildingTypes)iData1) || bForce)
+	{
+		BuildingTypes const eBuilding = (BuildingTypes)iData1; // advc
+		if (canConstruct(eBuilding) || bForce)
 		{
-			GET_PLAYER(getOwnerINLINE()).changeBuildingClassMaking(((BuildingClassTypes)(GC.getBuildingInfo((BuildingTypes) iData1).getBuildingClassType())), 1);
+			GET_PLAYER(getOwnerINLINE()).changeBuildingClassMaking(((BuildingClassTypes)(GC.getBuildingInfo((BuildingTypes)iData1).getBuildingClassType())), 1);
 
 			bValid = true;
+
 			gDLL->getEventReporterIFace()->cityBuildingBuilding(this, (BuildingTypes)iData1);
+			if (gCityLogLevel >= 1) logBBAI(" Player %S City %S pushes production of building %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), 
+				getName().GetCString(), GC.getBuildingInfo(eBuilding).getDescription());
 		}
 		break;
-
+	}
 	case ORDER_CONVINCE:
-		if (canConvince((FatherPointTypes)iData1) || bForce)
+	{
+		FatherPointTypes const eFatherPoint = (FatherPointTypes)iData1; // advc
+		if (canConvince(eFatherPoint) || bForce)
 		{
 			bValid = true;
+			if (gCityLogLevel >= 1) logBBAI(" Player % S City % S pushes convincing of type % S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), 
+				getName().GetCString(), GC.getFatherPointInfo(eFatherPoint).getDescription());
 		}
 		break;
 
+	}
 	default:
 		FAssertMsg(false, "iOrder did not match a valid option");
 		break;
@@ -6557,6 +6650,9 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 
 		if (bFinish)
 		{
+			if (m_bHasHurried)
+				m_bHasHurried = false;
+
 			iProductionNeeded = getYieldProductionNeeded(eTrainUnit, YIELD_HAMMERS);
 
 			iOverflow = std::max(0, getUnitProduction(eTrainUnit) - iProductionNeeded);
@@ -6578,6 +6674,12 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 			}
 
 			gDLL->getEventReporterIFace()->unitBuilt(this, pUnit);
+
+			if (gCityLogLevel >= 1) { // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
+				CvWString szString; getUnitAIString(szString, pUnit->AI_getUnitAIType());
+				logBBAI("    City %S finishes production of unit %S with UNITAI %S", getName().GetCString(), pUnit->getName(0).GetCString(), szString.GetCString());
+			}
+
 		}
 		break;
 
@@ -6588,6 +6690,9 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 
 		if (bFinish)
 		{
+			if (m_bHasHurried)
+				m_bHasHurried = false;
+
 			iProductionNeeded = getYieldProductionNeeded(eConstructBuilding, YIELD_HAMMERS);
 			int iOverflow = std::max(0, getBuildingProduction(eConstructBuilding) - iProductionNeeded);
 			changeOverflowProduction(iOverflow, getProductionModifier(eConstructBuilding));
@@ -6605,6 +6710,9 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 			}
 
 			gDLL->getEventReporterIFace()->buildingBuilt(this, eConstructBuilding);
+
+			if (gCityLogLevel >= 1) // BETTER_BTS_AI_MOD, AI logging, 10/02/09, jdog5000
+				logBBAI("    City %S finishes production of building %S", getName().GetCString(), GC.getBuildingInfo(eConstructBuilding).getDescription());
 		}
 		break;
 
@@ -6712,11 +6820,17 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 	}
 }
 
-bool CvCity::checkRequiredYields(OrderTypes eOrder, int iData1) const
+// Returns true if all yields are present to complete the current build, false otherwise. If eYieldException is not equal to NO_YIELD then
+// the specified yield will not be included in the check. Intended to check if yields other than hammers are sufficient.
+bool CvCity::checkRequiredYields(OrderTypes eOrder, int iData1, YieldTypes eYieldException) const
 {
 	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 	{
 		YieldTypes eYield = (YieldTypes) iYield;
+
+		if (eYieldException == eYield)
+			continue;
+
 		if (GC.getYieldInfo(eYield).isCargo())
 		{	
 			int iAmount = 0;
@@ -6732,7 +6846,9 @@ bool CvCity::checkRequiredYields(OrderTypes eOrder, int iData1) const
 				break;
 			}
 
-			if (iAmount > getYieldStored(eYield) + getYieldRushed(eYield))
+			const int iYieldStored = getYieldStored(eYield);
+			const int iYieldRushed = getYieldRushed(eYield);
+			if (iAmount > iYieldStored + iYieldRushed)
 			{
 				return false;
 			}
@@ -7597,9 +7713,13 @@ void CvCity::doProduction(bool bAllowNoProduction)
 
 	if (!isHuman() || isProductionAutomated())
 	{
-		if (!isProduction() || isProductionConvince() || AI_isChooseProductionDirty())
+		if (!isProduction() || isProductionConvince() || AI_isChooseProductionDirty() || 
+			getProduction() > getProductionNeeded(YIELD_HAMMERS))
 		{
-			AI_chooseProduction();
+			if (!m_bHasHurried)
+			{ 
+				AI_chooseProduction();
+			}
 		}
 	}
 
@@ -7615,9 +7735,9 @@ void CvCity::doProduction(bool bAllowNoProduction)
 
 	if (isProduction())
 	{
-		int iProduction = getStoredProductionDifference();
+		const int iProduction = getStoredProductionDifference();
 
-		FatherPointTypes eFatherPointType = getProductionFatherPoint();
+		const FatherPointTypes eFatherPointType = getProductionFatherPoint();
 		if (eFatherPointType != NO_FATHER_POINT_TYPE)
 		{
 			//Lumber mill is building points

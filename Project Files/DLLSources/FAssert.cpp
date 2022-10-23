@@ -12,10 +12,11 @@ namespace
 	// These are the return values from the modal Assert Dialog
 	enum
 	{
-		ASSERT_DLG_DEBUG		= 0x01,
-		ASSERT_DLG_IGNORE		= 0x02,
-		ASSERT_DLG_IGNOREALWAYS = 0x03,
-		ASSERT_DLG_EXIT			= 0x04,
+		ASSERT_DLG_DEBUG,
+		ASSERT_DLG_IGNORE,
+		ASSERT_DLG_IGNOREALWAYS,
+		ASSERT_DLG_STOP,
+		ASSERT_DLG_EXIT,
 	};
 
 	// This global structure is filled out by the original call to our FAssert
@@ -45,6 +46,7 @@ namespace
 #define IDC_ABORT                       1004
 #define IDC_ASSERTION_TEXT              1005
 #define IDC_COPY_TO_CLIPBOARD           1006
+#define IDC_STOP						1007
 
 	INT_PTR CALLBACK AssertDlgProc(HWND hDlg, UINT msg,WPARAM wParam, LPARAM lParam)
 	{
@@ -100,6 +102,10 @@ namespace
 				case IDC_ABORT:
 					EndDialog(hDlg, ASSERT_DLG_EXIT);
 					return TRUE;
+
+				case IDC_STOP:
+					EndDialog(hDlg, ASSERT_DLG_STOP);
+					return TRUE;
 				}
 			}
 			break;
@@ -112,7 +118,7 @@ namespace
 	{
 		CDialogTemplate dialogTemplate(_T("Assert Failed!"),
 			DS_SETFONT | DS_CENTER | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU,
-			0, 0, 379, 166, _T("MS Shell Dlg"), 8);
+			0, 0, 450, 166, _T("MS Shell Dlg"), 8);
 
 		dialogTemplate.AddButton( _T("Ignore Always"), WS_VISIBLE, 0,
 			157,145,64,14, IDC_IGNORE_ALWAYS );
@@ -122,6 +128,9 @@ namespace
 
 		dialogTemplate.AddButton( _T("&Debug"), WS_VISIBLE, 0,
 			307,145,64,14, IDC_DEBUG );
+
+		dialogTemplate.AddButton(_T("&Stop"), WS_VISIBLE, 0,
+			382, 145, 64, 14, IDC_STOP);
 
 		dialogTemplate.AddButton( _T("&Abort"), WS_VISIBLE, 0,
 			232,145,64,14, IDC_ABORT );
@@ -159,6 +168,13 @@ bool FAssertDlg(const char* szExpr, const char* szMsg, const char* szFile, unsig
 
 	case ASSERT_DLG_IGNOREALWAYS:
 		bIgnoreAlways = true;
+		return false;
+
+	case ASSERT_DLG_STOP:
+		bIgnoreAlways = true;
+		GC.getGameINLINE().setAIAutoPlay(0);
+		GET_PLAYER(GC.getGameINLINE().getActivePlayer()).setDisableHuman(false);
+		GET_PLAYER(GC.getGameINLINE().getActivePlayer()).updateHuman();
 		return false;
 
 	case ASSERT_DLG_EXIT:

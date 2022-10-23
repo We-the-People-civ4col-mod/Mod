@@ -30,6 +30,8 @@
 #include "CvTradeRoute.h"
 
 #include "CvSavegame.h"
+#include "BetterBTSAI.h"
+
 // Public Functions...
 
 CvUnitTemporaryStrengthModifier::CvUnitTemporaryStrengthModifier(CvUnit* pUnit, ProfessionTypes eProfession) :
@@ -1302,7 +1304,7 @@ void CvUnit::updateCombat(bool bQuick)
 					CvPlot* pAdjacentPlot = plotDirection(pDefenderPlot->getX_INLINE(), pDefenderPlot->getY_INLINE(), eDirection);
 
 					// Determine if we can escape to this plot
-					if (pAdjacentPlot != NULL && pDefender->canMoveInto(pAdjacentPlot))
+					if (pAdjacentPlot != NULL && pDefender->canMoveInto(*pAdjacentPlot))
 					{
 						pEjectPlot = pAdjacentPlot;
 						break;
@@ -2928,10 +2930,11 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 }
 
 
-FAStarNode* CvUnit::getPathLastNode() const
+// Disabled by K-Mod. (This function is deprecated.)
+/* FAStarNode* CvUnit::getPathLastNode() const
 {
-	return getGroup()->getPathLastNode();
-}
+return getGroup()->getPathLastNode();
+} */
 
 
 CvPlot* CvUnit::getPathEndTurnPlot() const
@@ -2951,12 +2954,30 @@ bool CvUnit::generatePath(const CvPlot* pToPlot, int iFlags, bool bReuse, int* p
 	return getGroup()->generatePath(plot(), pToPlot, iFlags, bReuse, piPathTurns);
 }
 */
-
-bool CvUnit::generatePath(const CvPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns, bool bIgnoreDanger) const
-{
-	return getGroup()->generatePath(plot(), pToPlot, iFlags, bReuse, piPathTurns, bIgnoreDanger);
-}
 // TAC - AI Improved Naval AI - koma13 - END
+
+bool CvUnit::generatePath(const CvPlot* pToPlot, int iFlags, bool bReuse,
+	int* piPathTurns, int iMaxPath,   // <advc.128>
+	bool bUseTempFinder) const
+{
+	if (!bUseTempFinder) // </advc.128>
+		return getGroup()->generatePath(plot(), pToPlot, iFlags, bReuse, piPathTurns, iMaxPath);
+	// <advc.128>
+	FAssert(!bReuse);
+	KmodPathFinder temp_finder;
+	temp_finder.SetSettings(getGroup(), iFlags, iMaxPath, GC.getMOVE_DENOMINATOR());
+	bool r = temp_finder.GeneratePath(pToPlot);
+	if (piPathTurns != NULL)
+		*piPathTurns = temp_finder.GetPathTurns();
+	return r; // </advc.128>
+}
+
+// K-Mod. Return the standard pathfinder, for extracting path information.
+KmodPathFinder& CvUnit::getPathFinder() const
+{
+	return CvSelectionGroup::path_finder;
+}
+// K-Mod end
 
 bool CvUnit::canEnterTerritory(PlayerTypes ePlayer, bool bIgnoreRightOfPassage) const
 {
@@ -3070,7 +3091,7 @@ TeamTypes CvUnit::getDeclareWarUnitMove(const CvPlot* pPlot) const
 	}
 
 	//check unit
-	if (canMoveInto(pPlot, true, true))
+	if (canMoveInto(*pPlot, true, true))
 	{
 		CvUnit* pUnit = pPlot->plotCheck(PUF_canDeclareWar, getOwnerINLINE(), isAlwaysHostile(pPlot), NO_PLAYER, NO_TEAM, PUF_isVisible, getOwnerINLINE());
 		if (pUnit != NULL)
@@ -3085,11 +3106,13 @@ TeamTypes CvUnit::getDeclareWarUnitMove(const CvPlot* pPlot) const
 	return NO_TEAM;
 }
 
-bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bool bIgnoreLoad) const
+/*  K-Mod. I've rearranged a few things to make the function slightly faster,
+and added "bAssumeVisible" which signals that we should check for units on
+the plot regardless of whether we can actually see. */
+bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bool bIgnoreLoad, bool bAssumeVisible, // advc: 1st param was a pointer
+	bool bDangerCheck) const // advc.001k
 {
-	FAssertMsg(pPlot != NULL, "Plot is not assigned a valid value");
-
-	if (atPlot(pPlot))
+	if (atPlot(&kPlot))
 	{
 		return false;
 	}
@@ -3098,14 +3121,14 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	// we now just check that the Animals can not enter City Radius of "Non-Natives" anymore
 	if (getUnitInfo().isAnimal())
 	{
-		PlayerTypes ePlotOwner = pPlot->getOwnerINLINE();
+		PlayerTypes ePlotOwner = kPlot.getOwnerINLINE();
 		if (ePlotOwner != NO_PLAYER)
 		{
 			CvPlayerAI& kPlayer = GET_PLAYER(ePlotOwner);
 			// the owner of the Plot is not a Native
 			if (!kPlayer.isNative())
 			{
-				if (pPlot->isCityRadius())
+				if (kPlot.isCityRadius())
 				{
 					return false;
 				}
@@ -3114,7 +3137,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	}
 	// R&R, ray, changes to Wild Animals - END
 
-	if (pPlot->isImpassable())
+	if (kPlot.isImpassable())
 	{
 		if (!canMoveImpassable())
 		{
@@ -3124,13 +3147,13 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 	// WTP, ray, Canal - START
 	// in Canals, which are actually on land plots, we do not want to have any Ships bigger than Coastal Ships or GatherBoats
-	if (getUnitInfo().getDomainType() == DOMAIN_SEA && !pPlot->isWater() && !getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN) && !(getUnitInfo().isGatherBoat() && getUnitInfo().getHarbourSpaceNeeded() == 1) && pPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pPlot->getImprovementType()).isCanal())
+	if (getUnitInfo().getDomainType() == DOMAIN_SEA && !kPlot.isWater() && !getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN) && !(getUnitInfo().isGatherBoat() && getUnitInfo().getHarbourSpaceNeeded() == 1) && kPlot.getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(kPlot.getImprovementType()).isCanal())
 	{
 		return false;
 	}
 	// WTP, ray, Canal - END
 
-	const FeatureTypes eFeature = pPlot->getFeatureType();
+	const FeatureTypes eFeature = kPlot.getFeatureType();
 
 	// Prevent the AI from moving through storms and sustaining damage
 	// Strictly speaking this should preferably be handled by either the path cost or a separate PF flag
@@ -3139,28 +3162,42 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		return false;
 	}
 
-	CvArea *pPlotArea = pPlot->area();
-	TeamTypes ePlotTeam = pPlot->getTeam();
-	bool bCanEnterArea = canEnterArea(pPlot->getOwnerINLINE(), pPlotArea);
+	const CvArea *const pPlotArea = kPlot.area();
+	TeamTypes ePlotTeam = kPlot.getTeam();
+	bool bCanEnterArea = canEnterArea(kPlot.getOwnerINLINE(), pPlotArea);
+	const DomainTypes eDomainType = getDomainType();
+
 	if (bCanEnterArea)
-	{	
+	{
 		if (eFeature != NO_FEATURE)
 		{
+			const CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(eFeature);
+
+			// Prevent the AI from moving through storms and sustaining damage
+			// Strictly speaking this should preferably be handled by either the path cost or a separate PF flag
+			// Also checking isGeneratedEveryRound() in case a mod-mod adds turn damage to certain plots and
+			// crossing them would be the only way to make forward progress
+			if (getGroup()->AI_isControlled() && kFeatureInfo.getTurnDamage() > 0 &&
+				kFeatureInfo.isGeneratedEveryRound())
+			{
+				return false;
+			}
+
 			if (m_pUnitInfo->getFeatureImpassable(eFeature))
 			{
-				if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam()) // sea units can enter impassable in own cultural borders
+				if (DOMAIN_SEA != eDomainType || kPlot.getTeam() != getTeam())  // sea units can enter impassable in own cultural borders
 				{
 					return false;
 				}
 				// Erik: The AI may attempt to pathfind into unrevealed ocean plots so have have to check for the plot being revealed
-				if (DOMAIN_SEA == getDomainType() && !pPlot->isRevealed(getTeam(), false))
+				if (DOMAIN_SEA == eDomainType && !kPlot.isRevealed(getTeam(), false))
 				{
 					return false;
 				}
 			}
 		}
-
-		if (m_pUnitInfo->getTerrainImpassable(pPlot->getTerrainType()))
+		
+		if (m_pUnitInfo->getTerrainImpassable(kPlot.getTerrainType()))
 		{
 			//WTP, ray, Large Rivers - START
 			// allow all Land Units to enter Large Rivers with Improvement
@@ -3170,24 +3207,23 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 			bool bLandUnitMayPassLargeRiverDueToProfession = false;
 			bool bLandUnitMayBeLoaded = false;
 
-			if (getDomainType() == DOMAIN_LAND && pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)
+			if (eDomainType == DOMAIN_LAND && kPlot.getTerrainType() == TERRAIN_LARGE_RIVERS)
 			{
 				//WTP, ray, small adaptation to ensure that not all Improvements allow Movement on Large Rivers by adding "Outside Borders check" which is only true for "Ferry Station" aka "Raft Station"
 				// TODO: Maybe create a new XML tag "bAllowLargeRiverMovement in XML of Improvements instead - might be cleaner
-				bLandUnitMayPassLargeRiverDueToImprovement = (pPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pPlot->getImprovementType()).getTerrainMakesValid(TERRAIN_LARGE_RIVERS) && GC.getImprovementInfo(pPlot->getImprovementType()).isOutsideBorders());
+				bLandUnitMayPassLargeRiverDueToImprovement = (kPlot.getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(kPlot.getImprovementType()).getTerrainMakesValid(TERRAIN_LARGE_RIVERS) && GC.getImprovementInfo(kPlot.getImprovementType()).isOutsideBorders());
 				//WTP, ray, small adaptation to ensure that not all Terrain Features allow Movement on Large Rivers by adding "bNoImprovement check" which is only true for "River Ford" (at least on Terrain Large Rivers
 				// TODO: Maybe create a new XML tag "bAllowLargeRiverMovement in XML of Terrain Features instead - might be cleaner
-				bLandUnitMayPassLargeRiverDueToTerrainFeature = (pPlot->getFeatureType() != NO_FEATURE && GC.getFeatureInfo(pPlot->getFeatureType()).isTerrain(TERRAIN_LARGE_RIVERS) && GC.getFeatureInfo(pPlot->getFeatureType()).isNoImprovement());
+				bLandUnitMayPassLargeRiverDueToTerrainFeature = (kPlot.getFeatureType() != NO_FEATURE && GC.getFeatureInfo(kPlot.getFeatureType()).isTerrain(TERRAIN_LARGE_RIVERS) && GC.getFeatureInfo(kPlot.getFeatureType()).isNoImprovement());
 				bLandUnitMayPassLargeRiverDueToProfession = (getProfession() != NO_PROFESSION && GC.getProfessionInfo(getProfession()).isCanCrossLargeRivers());
-				bLandUnitMayBeLoaded = canLoad(pPlot, false);
+				bLandUnitMayBeLoaded = canLoad(&kPlot, false);
 			}
 
 			// stop large ships from entering Large Rivers in own Terrain
 			// if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam()) // sea units can enter impassable in own cultural borders
-			if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam() || pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS || pPlot->getTerrainType() == TERRAIN_LAKE || pPlot->getTerrainType() == TERRAIN_ICE_LAKE || pPlot->getTerrainType() == TERRAIN_SHALLOW_COAST)
+			if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam() || kPlot.getTerrainType() == TERRAIN_LARGE_RIVERS || kPlot.getTerrainType() == TERRAIN_LAKE || kPlot.getTerrainType() == TERRAIN_ICE_LAKE || kPlot.getTerrainType() == TERRAIN_SHALLOW_COAST)
 			{
-				// if (bIgnoreLoad || !canLoad(pPlot, true))
-				if (bIgnoreLoad || !canLoad(pPlot, true))
+				if (bIgnoreLoad || !canLoad(&kPlot, true))
 				{
 					if (bLandUnitMayPassLargeRiverDueToImprovement == false && bLandUnitMayPassLargeRiverDueToTerrainFeature == false && bLandUnitMayPassLargeRiverDueToProfession == false && bLandUnitMayBeLoaded == false)
 					{
@@ -3205,13 +3241,13 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && isHuman())
 	{
 		// Stop Ships from Entering a City in which harbour is full - e might also check "automated"
-		if (DOMAIN_SEA == getDomainType() && pPlot->isCity(true, getTeam()))
+		if (DOMAIN_SEA == getDomainType() && kPlot.isCity(true, getTeam()))
 		{
 			// Case real City
-			if (pPlot->getImprovementType() == NO_IMPROVEMENT)
+			if (kPlot.getImprovementType() == NO_IMPROVEMENT)
 			{
 				// this is only checked for Colonial Cities, Native Villages can always be entered
-				CvCity* pCity = pPlot->getPlotCity();
+				CvCity* pCity = kPlot.getPlotCity();
 				if (pCity != NULL)
 				{
 					if(!pCity->isNative())
@@ -3219,8 +3255,8 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 						int iHarbourSpaceNeededByUnit = getUnitInfo().getHarbourSpaceNeeded();
 
 						// Caclulating free Harbour Space in City
-						int iHarbourSpaceMaxInCity = pPlot->getPlotCity()->getCityHarbourSpace();
-						int iHarbourSpaceUsedInCity = pPlot->getPlotCity()->getCityHarbourSpaceUsed();
+						int iHarbourSpaceMaxInCity = kPlot.getPlotCity()->getCityHarbourSpace();
+						int iHarbourSpaceUsedInCity = kPlot.getPlotCity()->getCityHarbourSpaceUsed();
 						int iHarbourSpaceAvailableInCity = iHarbourSpaceMaxInCity - iHarbourSpaceUsedInCity;
 
 						if (iHarbourSpaceNeededByUnit > iHarbourSpaceAvailableInCity)
@@ -3235,7 +3271,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 			else
 			{
 				// just to ensure that something may be messed up in the future
-				bool bWeCheckAllowedUnitsOnPlot = (pPlot->isFort() || pPlot->isMonastery() || pPlot->isCanal());
+				bool bWeCheckAllowedUnitsOnPlot = (kPlot.isFort() || kPlot.isMonastery() || kPlot.isCanal());
 				if (bWeCheckAllowedUnitsOnPlot)
 				{
 					// this is how much the Unit needs
@@ -3244,16 +3280,16 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 					// we check how many Units that place would allow
 					int iImprovementHarbourSpace = GC.getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS();
 					// it is the second level Improvement, so we double - unless for canal, which has no upgrade
-					if (GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT && !pPlot->isCanal())
+					if (GC.getImprovementInfo(kPlot.getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT && !kPlot.isCanal())
 					{
 						iImprovementHarbourSpace = iImprovementHarbourSpace * 2;
 					}
 
 					// now we calculate how much is already used
 					int iImprovementHarbourSpaceUsed = 0;
-					for (int i = 0; i < pPlot->getNumUnits(); ++i)
+					for (int i = 0; i < kPlot.getNumUnits(); ++i)
 					{
-						CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);
+						CvUnit* pLoopUnit = kPlot.getUnitByIndex(i);
 						// we only count Land Units that can attack, civil Units are not considered
 						// we also not consider Units loaded on Ships
 						// we also not consider Units of other Nations
@@ -3282,13 +3318,13 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	{
 		// Stop Combat Land Units from Entering a City in which barracks are full - we might also check "automated"
 		// here we also check just for can Attack - we check City owner further down
-		if (DOMAIN_LAND == getDomainType() && pPlot->isCity(true, getTeam()) && canAttack())
+		if (DOMAIN_LAND == getDomainType() && kPlot.isCity(true, getTeam()) && canAttack())
 		{
 			// Case real City
-			if (pPlot->getImprovementType() == NO_IMPROVEMENT)
+			if (kPlot.getImprovementType() == NO_IMPROVEMENT)
 			{
 				// this is only checked for Colonial Cities, Native Villages can always be entered
-				CvCity* pCity = pPlot->getPlotCity();
+				CvCity* pCity = kPlot.getPlotCity();
 				if (pCity != NULL)
 				{
 					// here we ensure we check this only for the Owner of the Unit being Owner of the City
@@ -3303,8 +3339,8 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 						}
 
 						// Caclulating free Harbour Space in City
-						int iBarracksSpaceMaxInCity = pPlot->getPlotCity()->getCityBarracksSpace();
-						int iBarracksSpaceUsedInCity = pPlot->getPlotCity()->getCityBarracksSpaceUsed();
+						int iBarracksSpaceMaxInCity = kPlot.getPlotCity()->getCityBarracksSpace();
+						int iBarracksSpaceUsedInCity = kPlot.getPlotCity()->getCityBarracksSpaceUsed();
 						int iBarracksSpaceAvailableInCity = iBarracksSpaceMaxInCity - iBarracksSpaceUsedInCity;
 
 						if (iBarracksSpaceNeededByUnit > iBarracksSpaceAvailableInCity)
@@ -3319,7 +3355,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 			else
 			{
 				// just to ensure that something may be messed up in the future
-				bool bWeCheckAllowedUnitsOnPlot = (pPlot->isFort() || pPlot->isMonastery());
+				bool bWeCheckAllowedUnitsOnPlot = (kPlot.isFort() || kPlot.isMonastery());
 				if (bWeCheckAllowedUnitsOnPlot)
 				{
 					// this is how much the Unit needs
@@ -3333,16 +3369,16 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 					// we check how many Units that place would allow
 					int iImprovementBarracksSpace = GC.getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS();
 					// it is the second level Improvement, so we double
-					if (GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT)
+					if (GC.getImprovementInfo(kPlot.getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT)
 					{
 						iImprovementBarracksSpace = iImprovementBarracksSpace * 2;
 					}
 
 					// now we calculate how much is already used
 					int iImprovementBarracksSpaceUsed = 0;
-					for (int i = 0; i < pPlot->getNumUnits(); ++i)
+					for (int i = 0; i < kPlot.getNumUnits(); ++i)
 					{
-						CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);
+						CvUnit* pLoopUnit = kPlot.getUnitByIndex(i);
 						// we only count Land Units that can attack, civil Units are not considered
 						// we also not consider Units loaded on Ships
 						// we also not consider Units of other Nations
@@ -3375,19 +3411,19 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		return false;
 	}
 
-	switch (getDomainType())
+	switch (eDomainType)
 	{
 	case DOMAIN_SEA:
-		if (!pPlot->isWater() && !m_pUnitInfo->isCanMoveAllTerrain())
+		if (!kPlot.isWater() && !m_pUnitInfo->isCanMoveAllTerrain())
 		{
-			if (!pPlot->isFriendlyCity(*this, true) || !pPlot->isCoastalLand())
+			if (!kPlot.isFriendlyCity(*this, true) || !kPlot.isCoastalLand())
 			{
 				return false;
 			}
 		}
 
 		// PatchMod: Stop MoW's entering native settlements START
-		if (pPlot->isCity() && GET_PLAYER(pPlot->getOwnerINLINE()).isNative())
+		if (kPlot.isCity() && GET_PLAYER(kPlot.getOwnerINLINE()).isNative())
 		{
 			if (GET_PLAYER(getOwnerINLINE()).isEurope())
 			{
@@ -3396,7 +3432,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		}
 		// PatchMod: Stop MoW's entering native settlements END
 		// TAC - Pirates can't enter foreign settlements - START
-		if (pPlot->isCity() && !GET_PLAYER(pPlot->getOwnerINLINE()).isNative() && pPlot->getOwnerINLINE() != getOwnerINLINE())
+		if (kPlot.isCity() && !GET_PLAYER(kPlot.getOwnerINLINE()).isNative() && kPlot.getOwnerINLINE() != getOwnerINLINE())
 		{
 			if (AI_getUnitAIType() == UNITAI_PIRATE_SEA)
 			{
@@ -3410,7 +3446,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	case DOMAIN_LAND:
 
 		// R&R, ray, Start Logik for Peaks
-		if (pPlot->isPeak() && pPlot->getRouteType() == NO_ROUTE)
+		if (kPlot.isPeak() && kPlot.getRouteType() == NO_ROUTE)
 		{
 			// Anything else than Natives, Animals, Pioneers, Scouts, Native Mercenaries and Ranges cannot pass Peaks without Roads
 			/*
@@ -3428,7 +3464,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		// R&R, ray, End Logik for Peaks
 
 		// R&R, ray, Changes for Treasures, START
-		if (m_pUnitInfo->isTreasure() && pPlot->isGoody())
+		if (m_pUnitInfo->isTreasure() && kPlot.isGoody())
 		{
 			return false;
 		}
@@ -3437,7 +3473,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		if (m_pUnitInfo->isAnimal())
 		{
 			//WTP, Protected Hostile Goodies - small adaptation
-			if (pPlot->isFort() || pPlot->isMonastery() || pPlot->isCity() || pPlot->isGoodyForSpawningHostileCriminals() || pPlot->isGoodyForSpawningHostileNatives())
+			if (kPlot.isFort() || kPlot.isMonastery() || kPlot.isCity() || kPlot.isGoodyForSpawningHostileCriminals() || kPlot.isGoodyForSpawningHostileNatives())
 			{
 				return false;
 			}
@@ -3455,22 +3491,22 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		if (getUnitInfo().getCargoSpace() == 6) // easisest way to identify train
 		{ 
 			//Check if the Plot has railroad
-			if (pPlot->getRouteType() != 2)
+			if (kPlot.getRouteType() != 2)
 			{
 				return false;
 			}
 		}
 		// R&R, ray, End Logic for Trains
 
-		if (pPlot->isWater() && !m_pUnitInfo->isCanMoveAllTerrain())
+		if (kPlot.isWater() && !m_pUnitInfo->isCanMoveAllTerrain())
 		{
-			if (bIgnoreLoad || plot()->isWater() || !canLoad(pPlot, false))
+			if (bIgnoreLoad || plot()->isWater() || !canLoad(&kPlot, false))
 			{
 				//WTP, ray, Large Rivers - START
 				// allowing all Land Units to enter Large Rivers
 				// further below we will code exceptions - Maybe also configure in XML
 				//return false;
-				if(pPlot->getTerrainType() != TERRAIN_LARGE_RIVERS)
+				if(kPlot.getTerrainType() != TERRAIN_LARGE_RIVERS)
 				{
 					return false;
 				}
@@ -3490,7 +3526,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 	if (!bAttack)
 	{
-		if (isNoCityCapture() && pPlot->isEnemyCity(*this))
+		if (isNoCityCapture() && kPlot.isEnemyCity(*this))
 		{
 			return false;
 		}
@@ -3508,12 +3544,12 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	{
 		if (bAttack || !canCoexistWithEnemyUnit(NO_TEAM))
 		{
-			if (!isHuman() || (pPlot->isVisible(getTeam(), false)))
+			if (!isHuman() || (kPlot.isVisible(getTeam(), false)))
 			{
-				if (pPlot->isVisibleEnemyUnit(this) != bAttack)
+				if (kPlot.isVisibleEnemyUnit(this) != bAttack)
 				{
 					//FAssertMsg(isHuman() || (!bDeclareWar || (pPlot->isVisibleOtherUnit(getOwnerINLINE()) != bAttack)), "hopefully not an issue, but tracking how often this is the case when we dont want to really declare war");
-					if (!bDeclareWar || (pPlot->isVisibleOtherUnit(getOwnerINLINE()) != bAttack && !(bAttack && pPlot->getPlotCity() && !isNoCityCapture())))
+					if (!bDeclareWar || (kPlot.isVisibleOtherUnit(getOwnerINLINE()) != bAttack && !(bAttack && kPlot.getPlotCity() && !isNoCityCapture())))
 					{
 						return false;
 					}
@@ -3530,14 +3566,14 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 		if (!canCoexistWithEnemyUnit(NO_TEAM))
 		{
-			if (!isHuman() || pPlot->isVisible(getTeam(), false))
+			if (!isHuman() || kPlot.isVisible(getTeam(), false))
 			{
-				if (pPlot->isEnemyCity(*this))
+				if (kPlot.isEnemyCity(*this))
 				{
 					return false;
 				}
 
-				if (pPlot->isVisibleEnemyUnit(this))
+				if (kPlot.isVisibleEnemyUnit(this))
 				{
 					return false;
 				}
@@ -3547,8 +3583,8 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 	if (isHuman())
 	{
-		ePlotTeam = pPlot->getRevealedTeam(getTeam(), false);
-		bCanEnterArea = canEnterArea(pPlot->getRevealedOwner(getTeam(), false), pPlotArea);
+		ePlotTeam = kPlot.getRevealedTeam(getTeam(), false);
+		bCanEnterArea = canEnterArea(kPlot.getRevealedOwner(getTeam(), false), pPlotArea);
 	}
 
 	if (!bCanEnterArea)
@@ -3571,7 +3607,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		{
 			if (GET_TEAM(getTeam()).AI_isSneakAttackReady(ePlotTeam))
 			{
-				if (!(getGroup()->AI_isDeclareWar(pPlot)))
+				if (!(getGroup()->AI_isDeclareWar(&kPlot)))
 				{
 					return false;
 				}
@@ -3589,8 +3625,8 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		CyArgsList argsList;
 		argsList.add(getOwnerINLINE());	// Player ID
 		argsList.add(getID());	// Unit ID
-		argsList.add(pPlot->getX());	// Plot X
-		argsList.add(pPlot->getY());	// Plot Y
+		argsList.add(kPlot.getX());	// Plot X
+		argsList.add(kPlot.getY());	// Plot Y
 		long lResult=0;
 		gDLL->getPythonIFace()->callFunction(PYGameModule, "unitCannotMoveInto", argsList.makeFunctionArgs(), &lResult);
 
@@ -3606,19 +3642,19 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 bool CvUnit::canMoveOrAttackInto(const CvPlot* pPlot, bool bDeclareWar) const
 {
-	return (canMoveInto(pPlot, false, bDeclareWar) || canMoveInto(pPlot, true, bDeclareWar));
+	return (canMoveInto(*pPlot, false, bDeclareWar) || canMoveInto(*pPlot, true, bDeclareWar));
 }
 
 
 bool CvUnit::canMoveThrough(const CvPlot* pPlot) const
 {
-	return canMoveInto(pPlot, false, false, true);
+	return canMoveInto(*pPlot, false, false, true);
 }
 
 
 void CvUnit::attack(CvPlot* pPlot, bool bQuick)
 {
-	FAssert(canMoveInto(pPlot, true));
+	FAssert(canMoveInto(*pPlot, true));
 	FAssert(getCombatTimer() == 0);
 
 	setAttackPlot(pPlot);
@@ -3718,7 +3754,7 @@ bool CvUnit::jumpToNearestValidPlot()
 
 		if (isValidPlot(pLoopPlot))
 		{
-			if (canMoveInto(pLoopPlot))
+			if (canMoveInto(*pLoopPlot))
 			{
 				FAssertMsg(!atPlot(pLoopPlot), "atPlot(pLoopPlot) did not return false as expected");
 
@@ -5471,6 +5507,15 @@ void CvUnit::doLearn()
 	pLearnUnit->convert(this, true);
 
 	gDLL->getEventReporterIFace()->unitLearned(pLearnUnit->getOwnerINLINE(), pLearnUnit->getID());
+
+	if (gUnitLogLevel >= 1)
+	{
+		CvWString szTempString;
+		getUnitAIString(szTempString, AI_getUnitAIType());
+
+		logBBAI(" Player %S Unit %S has finished learning with UnitAI (%S)", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+			getNameAndProfession().GetCString(), szTempString.GetCString());
+	}
 }
 
 UnitTypes CvUnit::getLearnUnitType(const CvPlot* pPlot) const
@@ -7407,6 +7452,7 @@ bool CvUnit::canJoinCity(const CvPlot* pPlot, bool bTestVisible, bool bIgnoreFoo
 			}
 		}
 	}
+#if 0
 	// TAC - AI Attack City - koma13 - START
 	if (!isHuman())
 	{
@@ -7420,7 +7466,7 @@ bool CvUnit::canJoinCity(const CvPlot* pPlot, bool bTestVisible, bool bIgnoreFoo
 		//}
 	}
 	// TAC - AI Attack City - koma13 - END
-
+#endif
 	return true;
 }
 
@@ -7725,11 +7771,14 @@ void CvUnit::promote(PromotionTypes ePromotion, int iLeaderUnitId)
 
 	testPromotionReady();
 
+	CvSelectionGroup::path_finder.Reset(); // K-Mod. (This currently isn't important, because the AI doesn't use promotions mid-turn anyway.)
+
 	if (IsSelected())
 	{
 		gDLL->getInterfaceIFace()->playGeneralSound(GC.getPromotionInfo(ePromotion).getSound());
 
 		gDLL->getInterfaceIFace()->setDirty(UnitInfo_DIRTY_BIT, true);
+		gDLL->getFAStarIFace()->ForceReset(&GC.getInterfacePathFinder()); // K-Mod.
 	}
 	else
 	{
@@ -10792,7 +10841,7 @@ CvPlot* CvUnit::plot() const
 	}
 	else
 	{
-		return GC.getMapINLINE().plotSorenINLINE(getX_INLINE(), getY_INLINE());
+		return GC.getMapINLINE().plotSoren(getX_INLINE(), getY_INLINE());
 	}
 }
 
@@ -11092,7 +11141,7 @@ void CvUnit::changeCargo(int iChange)
 
 CvPlot* CvUnit::getAttackPlot() const
 {
-	return GC.getMapINLINE().plotSorenINLINE(m_iAttackPlotX, m_iAttackPlotY);
+	return GC.getMapINLINE().plotSoren(m_iAttackPlotX, m_iAttackPlotY);
 }
 
 
@@ -11872,34 +11921,11 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 			{
 				for (YieldTypes eYieldType = FIRST_YIELD; eYieldType < NUM_YIELD_TYPES; ++eYieldType)
 				{
-					int iYieldCarried  = kOwner.getYieldEquipmentAmountSecure(getProfession(), eYieldType); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
-					int iYieldRequired = kOwner.getYieldEquipmentAmount(eProfession, eYieldType);
+					const int iYieldCarried  = kOwner.getYieldEquipmentAmountSecure(getProfession(), eYieldType); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+					const int iYieldRequired = kOwner.getYieldEquipmentAmount(eProfession, eYieldType);
 					if (iYieldRequired > 0)
 					{
-						int iMissing = iYieldRequired - iYieldCarried;
-
-						//WTP, ray, Settler Professsion - START
-						// we only do this if the city is larger 3
-						if (!kOwner.isHuman() && !kOwner.isNative() && !GC.getGameINLINE().isBarbarianPlayer(kOwner.getID()) && !kOwner.isEurope() && kNewProfession.canFound() &&  pCity->getPopulation() > 3)
-						{
-							int iYieldsStoredInCity = pCity->getYieldStored(eYieldType);
-							if (iMissing > iYieldsStoredInCity)
-							{
-								// we check the requiredm Yields for AI so it can equip Settlers
-								int iYieldAmountToBeAdded = iMissing - iYieldsStoredInCity;
-
-								//I explicitly use Europe Sell Price because Europe Buy Price would be too expensive.
-								int iPriceSettlerYieldPrice = iYieldAmountToBeAdded * kOwner.getYieldSellPrice(eYieldType);
-
-								// we give Yields required for a little gold
-								if (kOwner.getGold() > iPriceSettlerYieldPrice)
-								{
-									pCity->changeYieldStored(eYieldType, iYieldAmountToBeAdded);
-									kOwner.changeGold(-iPriceSettlerYieldPrice);
-								}
-							}
-						}
-						//WTP, ray, Settler Professsion - END
+						const int iMissing = iYieldRequired - iYieldCarried;
 
 						if (iMissing > pCity->getYieldStored(eYieldType))
 						{

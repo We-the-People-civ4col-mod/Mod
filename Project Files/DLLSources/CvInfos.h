@@ -395,6 +395,8 @@ public:
 	int getNumYieldsConsumed() const;
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 
+	bool isWorkSlot() const;
+
 	/// Move Into Peak - start - Nightinggale
 	bool allowsMoveIntoPeak() const {return m_bMoveIntoPeak;}
 	/// Move Into Peak - end - Nightinggale

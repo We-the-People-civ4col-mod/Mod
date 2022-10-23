@@ -16,6 +16,8 @@
 #include "CvDLLPythonIFaceBase.h"
 
 #include "CvSavegame.h"
+#include "BetterBTSAI.h"
+#include "CvGameTextMgr.h" // GAMETEXT singleton access
 
 // statics
 
@@ -1934,12 +1936,38 @@ bool CvTeamAI::AI_isSneakAttackPreparing(TeamTypes eIndex) const
 	return ((AI_getWarPlan(eIndex) == WARPLAN_PREPARING_LIMITED) || (AI_getWarPlan(eIndex) == WARPLAN_PREPARING_TOTAL));
 }
 
-
+/*
 bool CvTeamAI::AI_isSneakAttackReady(TeamTypes eIndex) const
 {
 	return (AI_isChosenWar(eIndex) && !(AI_isSneakAttackPreparing(eIndex)));
 }
+*/
 
+bool CvTeamAI::AI_isSneakAttackReady(TeamTypes eIndex) const
+{
+	//return (AI_isChosenWar(eIndex) && !(AI_isSneakAttackPreparing(eIndex))); // BtS
+	// K-Mod (advc: originally in an overloaded function)
+	if (eIndex != NO_TEAM)
+		return !isAtWar(eIndex) && AI_isChosenWar(eIndex) && !AI_isSneakAttackPreparing(eIndex); // K-Mod
+	/*
+	for (TeamIter<MAJOR_CIV> it; it.hasNext(); ++it)
+	{
+		if (AI_isSneakAttackReady(it->getID()))
+			return true;
+	}
+	*/
+
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	{
+		if (AI_isSneakAttackReady((TeamTypes)iI))
+		{
+			return true;
+		}
+	}
+
+	return false;
+	// K-Mod end
+}
 
 void CvTeamAI::AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar)
 {
@@ -1947,13 +1975,19 @@ void CvTeamAI::AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar
 
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-
+		
 	if (AI_getWarPlan(eIndex) != eNewValue)
 	{
 		if (bWar || !isAtWar(eIndex))
 		{
 			m_em_eWarPlan.set(eIndex, eNewValue);
 
+			if (gTeamLogLevel >= 1)
+			{
+				CvWStringBuffer buf;
+				GAMETEXT.getWarplanString(buf, eNewValue);
+				logBBAI("Team %d (%S) CvTeamAI::AI_setWarPlan (%S) against team %d (%S)", getID(), GET_PLAYER(getLeaderID()).getCivilizationDescription(0), buf.getCString(), eIndex, GET_PLAYER(GET_TEAM(eIndex).getLeaderID()).getCivilizationDescription(0));
+			}
 			AI_setWarPlanStateCounter(eIndex, 0);
 
 			AI_updateAreaStragies();
@@ -2065,6 +2099,24 @@ void CvTeamAI::write(FDataStreamBase* pStream)
 	write(writer);
 	writerbase.WriteFile();
 }
+
+// <advc.012>
+int CvTeamAI::AI_plotDefense(CvPlot const& kPlot, bool bIgnoreBuilding,
+	bool bGarrisonStrength) const // advc.500b
+{
+	TeamTypes eAttacker = NO_TEAM;
+	/*  We could also be attacked in p by a second war enemy that doesn't own the
+	plot; impossible to predict. An attack by the plot owner is far more likely
+	though. */
+	if (kPlot.getOwner() != NO_PLAYER && GET_TEAM(getID()).isAtWar(kPlot.getTeam()))
+		eAttacker = kPlot.getTeam();
+	/* WTP: Not supported yet
+	return kPlot.defenseModifier(getID(), bIgnoreBuilding, eAttacker,
+		bGarrisonStrength); // advc.500b
+	*/
+	return kPlot.defenseModifier(getID(), bIgnoreBuilding);
+
+} // </advc.012>
 
 // Protected Functions...
 int CvTeamAI::AI_maxWarRand() const

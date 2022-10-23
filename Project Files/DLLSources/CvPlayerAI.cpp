@@ -27,6 +27,15 @@
 #include "CvTradeRoute.h"
 
 #include "CvSavegame.h"
+#include "BetterBTSAI.h"
+
+#pragma push_macro("free")  
+#pragma push_macro("new")  
+#undef free
+#undef new
+#include "tbb/task_group.h"
+#pragma pop_macro("new")  
+#pragma pop_macro("free")  
 
 #define DANGER_RANGE				(4)
 #define GREATER_FOUND_RANGE			(5)
@@ -111,6 +120,8 @@ void CvPlayerAI::AI_doTurnPre()
 	FAssertMsg(getPersonalityType() != NO_LEADER, "getPersonalityType() is not expected to be equal with NO_LEADER");
 	FAssertMsg(getLeaderType() != NO_LEADER, "getLeaderType() is not expected to be equal with NO_LEADER");
 	FAssertMsg(getCivilizationType() != NO_CIVILIZATION, "getCivilizationType() is not expected to be equal with NO_CIVILIZATION");
+
+	int m_estimatedUnemploymentCount = AI_estimateUnemploymentCount();
 
 	AI_invalidateCloseBordersAttitudeCache();
 
@@ -927,16 +938,32 @@ void CvPlayerAI::AI_makeAssignWorkDirty()
 	}
 }
 
+struct ApplyAssignWorkingPlots 
+{
+	ApplyAssignWorkingPlots(CvCity& city_) : city(city_) {};
+
+	void operator()() const
+	{
+		city.AI_assignWorkingPlots();
+	}
+
+	CvCity& city;
+};
 
 void CvPlayerAI::AI_assignWorkingPlots()
 {
 	AI_manageEconomy();
 
+	tbb::task_group g;
+
 	int iLoop;
 	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
-		pLoopCity->AI_assignWorkingPlots();
+		// BUG: This is not thread safe, we need to protect removePop / updatePop
+		g.run(ApplyAssignWorkingPlots(*pLoopCity));
 	}
+
+	g.wait();
 }
 
 
@@ -2458,7 +2485,7 @@ CvCity* CvPlayerAI::AI_findTargetCity(CvArea* pArea)
 }
 
 
-int CvPlayerAI::AI_getPlotDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bool bOffensive)
+int CvPlayerAI::AI_getPlotDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bool bOffensive) const
 {
 	PROFILE_FUNC();
 
@@ -2509,6 +2536,10 @@ int CvPlayerAI::AI_getPlotDanger(CvPlot* pPlot, int iRange, bool bTestMoves, boo
 					{
 						pLoopUnit = ::getUnit(pUnitNode->m_data);
 						pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
+
+						// Ignore animals
+						if (pLoopUnit->getUnitInfo().isAnimal())
+							continue;
 
 						if (pLoopUnit->isEnemy(getTeam()))
 						{
@@ -2614,6 +2645,10 @@ int CvPlayerAI::AI_getUnitDanger(CvUnit* pUnit, int iRange, bool bTestMoves, boo
 						{
 							if (pLoopUnit->canAttack())
 							{
+								// Ignore animals
+								if (pLoopUnit->getUnitInfo().isAnimal())
+									continue;
+
 								if (!(pLoopUnit->isInvisible(getTeam(), false)))
 								{
 									if (pLoopUnit->canMoveOrAttackInto(pPlot))
@@ -3542,7 +3577,7 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 			if (pNode->m_data.m_eItemType == TRADE_GOLD)
 			{
 				int oldPrice = pNode->m_data.m_iData1;
-				int randomPriceChange = GC.getGameINLINE().getSorenRandNum(priceIncreaseMax, "Natives Price Change Sell");
+				int randomPriceChange = GC.getASyncRand().get(priceIncreaseMax, "Natives Price Change Sell");
 				if (randomPriceChange < priceIncreaseMax / 3)
 				{
 					randomPriceChange = priceIncreaseMax / 3;
@@ -3574,7 +3609,7 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 			if (pNode->m_data.m_eItemType == TRADE_GOLD)
 			{
 				int oldPrice = pNode->m_data.m_iData1;
-				int randomPriceChange = GC.getGameINLINE().getSorenRandNum(priceDecreaseMax, "Natives Price Change Buy");
+				int randomPriceChange = GC.getASyncRand().get(priceDecreaseMax, "Natives Price Change Buy");
 				if (randomPriceChange < priceDecreaseMax / 3)
 				{
 					randomPriceChange = priceDecreaseMax / 3;
@@ -5031,9 +5066,21 @@ int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* p
 		break;
 	}
 
+#if 0
+	const int iEuropeCost = kUnitInfo.getEuropeCost();
 
-	iValue +=  kUnitInfo.getAIWeight();
+	// Normalize unit costs to prevent the AI from repeating purchases of the same
+	// unit when the cost escalates
+	if (iEuropeCost > 0)
+	{
+		// Since the value is not scaled and only compared to similarly scaled values
+		// it's ok to multiply here to prevent truncatin after the division.
+		iValue *= 100;
+		iValue /= iEuropeCost;
+	}
 
+	//iValue +=  kUnitInfo.getAIWeight();
+#endif
 	return std::max(0, iValue);
 }
 
@@ -5263,8 +5310,8 @@ int CvPlayerAI::AI_neededExplorers(CvArea* pArea)
 
 }
 
-
-int CvPlayerAI::AI_neededWorkers(CvArea* pArea)
+//Returns an estimate of needed pioneers. If pArea is NULL then all areas will be considered (i.e. the total need of all our cities)
+int CvPlayerAI::AI_neededWorkers(CvArea* pArea) const
 {
 	CvCity* pLoopCity;
 	int iCount;
@@ -5280,7 +5327,16 @@ int CvPlayerAI::AI_neededWorkers(CvArea* pArea)
 		}
 	}
 
-	if (iCount == 0)
+	// Subtract pioneers waiting on the docks
+	for (uint i = 0; i < m_aEuropeUnits.size(); ++i)
+	{
+		if (m_aEuropeUnits[i]->AI_getUnitAIType() == UNITAI_WORKER)
+		{
+			--iCount;
+		}
+	}
+
+	if (iCount <= 0)
 	{
 		return 0;
 	}
@@ -7853,176 +7909,203 @@ bool CvPlayerAI::AI_doDiploDeclareWar(PlayerTypes ePlayer)
 //Convert units from city population to map units (such as pioneers)
 void CvPlayerAI::AI_doProfessions()
 {
-
 	std::map<int, bool> cityDanger;
 
+	int iLoop;
+	
+	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
-		int iLoop;
-		CvCity* pLoopCity;
-		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-		{
-			cityDanger[pLoopCity->getID()] = AI_getPlotDanger(pLoopCity->plot(), 5, true);
-		}
+		cityDanger[pLoopCity->getID()] = AI_getPlotDanger(pLoopCity->plot(), 5, true);
 	}
 
 	for (int iI = 0; iI < NUM_UNITAI_TYPES; ++iI)
 	{
-		UnitAITypes eUnitAI = (UnitAITypes)iI;
+		const UnitAITypes eUnitAI = (UnitAITypes)iI;
 
-		int iPriority = 0;
+		if (!((AI_unitAIValueMultipler(eUnitAI) > 0) && eUnitAI != UNITAI_DEFENSIVE))
+			continue;
 
-		if ((AI_unitAIValueMultipler(eUnitAI) > 0) && eUnitAI != UNITAI_DEFENSIVE)
+		const ProfessionTypes eProfession = AI_idealProfessionForUnitAIType(eUnitAI);
+
+		if ((eProfession != NO_PROFESSION) && (eUnitAI == UNITAI_SETTLER || (eProfession != GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession())))
 		{
-			ProfessionTypes eProfession = AI_idealProfessionForUnitAIType(eUnitAI);
+			const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
 
-			if ((eProfession != NO_PROFESSION) && (eUnitAI == UNITAI_SETTLER || (eProfession != GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession())))
+			bool bDone = false;
+
+			for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 			{
-				CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-
-				bool bDone = false;
-
-				int iLoop;
-				CvCity* pLoopCity;
-
-				for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+				if (pLoopCity->getPopulation() > ((pLoopCity->getHighestPopulation() * 2) / 3))
 				{
-					if (pLoopCity->getPopulation() > ((pLoopCity->getHighestPopulation() * 2) / 3))
+					if (!cityDanger[pLoopCity->getID()] || AI_unitAIIsCombat(eUnitAI))
 					{
-						if (!cityDanger[pLoopCity->getID()] || AI_unitAIIsCombat(eUnitAI))
+						for (int i = 0; i < pLoopCity->getPopulation(); ++i)
+						{
+							CvUnit* pUnit = pLoopCity->getPopulationUnitByIndex(i);
+							if (pUnit != NULL)
+							{
+								// R&R, ray, code changes for Ideal Profession - START
+								// ProfessionTypes eIdealProfession = AI_idealProfessionForUnit(pUnit->getUnitType());
+								UnitClassTypes eUnitClassType = (UnitClassTypes)pUnit->getUnitClassType();
+								
+								// we need 3 possible ideal professions
+								ProfessionTypes eIdealProfession = NO_PROFESSION;
+								ProfessionTypes eSecondIdealProfession = NO_PROFESSION;
+								ProfessionTypes eThirdIdealProfession = NO_PROFESSION;
+
+								for (int iI = 0; iI < GC.getNumProfessionInfos(); ++iI)
+								{
+
+									ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
+									CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
+
+									if (kProfession.isCitizen())
+									{
+										if(eIdealProfession == NO_PROFESSION)
+										{
+											if ((UnitClassTypes)kProfession.LbD_getExpert() == eUnitClassType)
+											{
+												eIdealProfession = eLoopProfession;
+											}
+										}
+										else if(eSecondIdealProfession == NO_PROFESSION)
+										{
+											if ((UnitClassTypes)kProfession.LbD_getExpert() == eUnitClassType)
+											{
+												eSecondIdealProfession = eLoopProfession;
+											}
+										}
+										else
+										{
+											if ((UnitClassTypes)kProfession.LbD_getExpert() == eUnitClassType)
+											{
+												eThirdIdealProfession = eLoopProfession;
+												break;
+											}
+										}
+									}
+								}
+									
+								if (eIdealProfession == NO_PROFESSION || pUnit->getProfession() != eIdealProfession)
+								{
+									if (eSecondIdealProfession == NO_PROFESSION || pUnit->getProfession() != eSecondIdealProfession)
+									{
+										if (eThirdIdealProfession == NO_PROFESSION || pUnit->getProfession() != eThirdIdealProfession)
+										{
+											if (eUnitAI == UNITAI_SETTLER)
+											{
+												// TODO: Replace this with AdvCiv's AI() accessor
+												static_cast<CvCityAI*>(pLoopCity)->AI_doSettlerProfessionCheat();
+											}
+
+											if (pUnit->canHaveProfession(eProfession, false) && (AI_professionSuitability(pUnit, eProfession, pLoopCity->plot()) > 100))
+											{
+												pLoopCity->removePopulationUnit(pUnit, false, eProfession);
+												pUnit->AI_setUnitAIType(eUnitAI);
+												bDone = true;
+			
+												if (gPlayerLogLevel >= 1)
+												{
+													CvWString szTempString;
+													getUnitAIString(szTempString, eUnitAI);
+
+													logBBAI(" Player(%S) City(%S) emits civilian Unit(bdone) (%S) with UnitAI (%S)",
+														getCivilizationDescription(), pLoopCity->getNameKey(), pUnit->getNameAndProfession().GetCString(), szTempString.GetCString());
+												}
+												break;
+											}
+										}
+									}
+									// R&R, ray, code changes for Ideal Profession - END
+								}
+								// R&R, ray, code changes for Ideal Profession - END
+							}
+						}
+					}
+				}
+			}
+
+			if (!bDone)
+			{
+				for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+				{
+					int iBestValue = 0;
+					CvUnit* pBestUnit = NULL;
+
+					if (!cityDanger[pLoopCity->getID()] || AI_unitAIIsCombat(eUnitAI))
+					{
+						if (pLoopCity->getPopulation() > ((pLoopCity->getHighestPopulation() * 2) / 3))
 						{
 							for (int i = 0; i < pLoopCity->getPopulation(); ++i)
 							{
 								CvUnit* pUnit = pLoopCity->getPopulationUnitByIndex(i);
 								if (pUnit != NULL)
 								{
-									// R&R, ray, code changes for Ideal Profession - START
-									// ProfessionTypes eIdealProfession = AI_idealProfessionForUnit(pUnit->getUnitType());
-									UnitClassTypes eUnitClassType = (UnitClassTypes)pUnit->getUnitClassType();
-								
-									// we need 3 possible ideal professions
-									ProfessionTypes eIdealProfession = NO_PROFESSION;
-									ProfessionTypes eSecondIdealProfession = NO_PROFESSION;
-									ProfessionTypes eThirdIdealProfession = NO_PROFESSION;
-
-									for (int iI = 0; iI < GC.getNumProfessionInfos(); ++iI)
+									if (pUnit->canHaveProfession(eProfession, false))
 									{
+										int iValue = AI_professionSuitability(pUnit, eProfession, pLoopCity->plot());
 
-										ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
-										CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
-
-										if (kProfession.isCitizen())
+										if (pUnit->getProfession() == NO_PROFESSION)
 										{
-											if(eIdealProfession == NO_PROFESSION)
+											int iValue = AI_professionSuitability(pUnit, eProfession, pLoopCity->plot());
+
+										}
+										else if (pUnit->getProfession() == pUnit->AI_getIdealProfession())
+										{
+											iValue /= 4;
+										}
+
+										if (eUnitAI == UNITAI_SETTLER)
+										{
+											// TODO: Replace this with AdvCiv's AI() accessor
+											static_cast<CvCityAI*>(pLoopCity)->AI_doSettlerProfessionCheat();
+
+											if (pUnit->AI_getIdealProfession() != NO_PROFESSION)
 											{
-												if ((UnitClassTypes)kProfession.LbD_getExpert() == eUnitClassType)
+												if ((pUnit->getProfession() != pUnit->AI_getIdealProfession()) && (GC.getProfessionInfo(pUnit->AI_getIdealProfession()).isWorkPlot()))
 												{
-													eIdealProfession = eLoopProfession;
-												}
-											}
-											else if(eSecondIdealProfession == NO_PROFESSION)
-											{
-												if ((UnitClassTypes)kProfession.LbD_getExpert() == eUnitClassType)
-												{
-													eSecondIdealProfession = eLoopProfession;
+													iValue *= 150;
+													iValue /= 100;
 												}
 											}
 											else
 											{
-												if ((UnitClassTypes)kProfession.LbD_getExpert() == eUnitClassType)
-												{
-													eThirdIdealProfession = eLoopProfession;
-													break;
-												}
+												iValue *= 120;
+												iValue /= 100;
 											}
 										}
-									}
-									
-									if (eIdealProfession == NO_PROFESSION || pUnit->getProfession() != eIdealProfession)
-									{
-										if (eSecondIdealProfession == NO_PROFESSION || pUnit->getProfession() != eSecondIdealProfession)
+										else if (eUnitAI == UNITAI_SCOUT && pLoopCity->plot()->area()->getNumAIUnits(pLoopCity->getOwner(), UNITAI_SCOUT) == 0)
 										{
-											if (eThirdIdealProfession == NO_PROFESSION || pUnit->getProfession() != eThirdIdealProfession)
-											{
-												if (pUnit->canHaveProfession(eProfession, false) && (AI_professionSuitability(pUnit, eProfession, pLoopCity->plot()) > 100))
-												{
-													pLoopCity->removePopulationUnit(pUnit, false, eProfession);
-													pUnit->AI_setUnitAIType(eUnitAI);
-													bDone = true;
-													break;
-												}
-											}
+											iValue *= 250;
+											iValue /= 100;
+										}
+
+										iValue *= 50;
+										iValue += GC.getGameINLINE().getSorenRandNum(100, "AI pick unit");
+
+										if (iValue > iBestValue)
+										{
+											iBestValue = iValue;
+											pBestUnit = pUnit;
 										}
 									}
-									// R&R, ray, code changes for Ideal Profession - END
 								}
 							}
 						}
 					}
-				}
-
-				if (!bDone)
-				{
-					for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+					if (pBestUnit != NULL)
 					{
-						int iBestValue = 0;
-						CvUnit* pBestUnit = NULL;
+						pLoopCity->removePopulationUnit(pBestUnit, false, eProfession);
+						pBestUnit->AI_setUnitAIType(eUnitAI);
 
-						if (!cityDanger[pLoopCity->getID()] || AI_unitAIIsCombat(eUnitAI))
+						if (gPlayerLogLevel >= 1) 
 						{
-							if (pLoopCity->getPopulation() > ((pLoopCity->getHighestPopulation() * 2) / 3))
-							{
-								for (int i = 0; i < pLoopCity->getPopulation(); ++i)
-								{
-									CvUnit* pUnit = pLoopCity->getPopulationUnitByIndex(i);
-									if (pUnit != NULL)
-									{
-										if (pUnit->canHaveProfession(eProfession, false))
-										{
-											int iValue = AI_professionSuitability(pUnit, eProfession, pLoopCity->plot());
+							CvWString szTempString;
+							getUnitAIString(szTempString, eUnitAI);
+								
+							logBBAI(" Player(%S) City (%S) emits civilian Unit (!bdone) (%S) with UnitAI (%S)",
+								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getNameAndProfession().GetCString(), szTempString.GetCString());
 
-											if (pUnit->getProfession() == NO_PROFESSION)
-											{
-
-											}
-											else if (pUnit->getProfession() == pUnit->AI_getIdealProfession())
-											{
-												iValue /= 4;
-											}
-
-											if (eUnitAI == UNITAI_SETTLER)
-											{
-												if (pUnit->AI_getIdealProfession() != NO_PROFESSION)
-												{
-													if ((pUnit->getProfession() != pUnit->AI_getIdealProfession()) && (GC.getProfessionInfo(pUnit->AI_getIdealProfession()).isWorkPlot()))
-													{
-														iValue *= 150;
-														iValue /= 100;
-													}
-												}
-												else
-												{
-													iValue *= 120;
-													iValue /= 100;
-												}
-											}
-
-											iValue *= 100;
-											iValue += GC.getGameINLINE().getSorenRandNum(100, "AI pick unit");
-
-											if (iValue > iBestValue)
-											{
-												iBestValue = iValue;
-												pBestUnit = pUnit;
-											}
-										}
-									}
-								}
-							}
-						}
-						if (pBestUnit != NULL)
-						{
-							pLoopCity->removePopulationUnit(pBestUnit, false, eProfession);
-							pBestUnit->AI_setUnitAIType(eUnitAI);
 						}
 					}
 				}
@@ -8031,22 +8114,19 @@ void CvPlayerAI::AI_doProfessions()
 	}
 
 	//Military
-	int iLoop;
-	CvCity* pLoopCity;
-
-	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 		if (pLoopCity->AI_isDanger())
 		{
-			ProfessionTypes eProfession = AI_idealProfessionForUnitAIType(UNITAI_DEFENSIVE, pLoopCity);
+			const ProfessionTypes eProfession = AI_idealProfessionForUnitAIType(UNITAI_DEFENSIVE, pLoopCity);
 
 			if ((eProfession != NO_PROFESSION) && (eProfession != GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()))
 			{
 				CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
 				bool bDone = false;
 
-				int iNeededDefenders = pLoopCity->AI_neededDefenders();
-				int iHaveDefenders = pLoopCity->AI_numDefenders(true, false);
+				const int iNeededDefenders = pLoopCity->AI_neededDefenders();
+				const int iHaveDefenders = pLoopCity->AI_numDefenders(true, false);
 
 				if (iHaveDefenders < iNeededDefenders)
 				{
@@ -8089,6 +8169,8 @@ void CvPlayerAI::AI_doProfessions()
 						{
 							pLoopCity->removePopulationUnit(pBestUnit, false, eProfession);
 							pBestUnit->AI_setUnitAIType(UNITAI_DEFENSIVE);
+							if (gPlayerLogLevel >= 1) logBBAI(" Player (%S)'s City (%S) emits military Unit (%S)",
+								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getNameAndProfession().GetCString());
 						}
 						else
 						{
@@ -8099,6 +8181,9 @@ void CvPlayerAI::AI_doProfessions()
 			}
 		}
 	}
+
+
+
 }
 
 void CvPlayerAI::AI_doEurope()
@@ -8117,7 +8202,8 @@ void CvPlayerAI::AI_doEurope()
 	{
 		//Always refresh at start of new turn (maybe do this smarter but it's okay for now)
 		AI_updateNextBuyUnit();
-		AI_updateNextBuyProfession();
+		// Don't by profession units for now until we find a better way to decide who we can productively employ
+		//AI_updateNextBuyProfession();
 	}
 
 	// TAC - AI More Immigrants - koma13 - START
@@ -8129,12 +8215,12 @@ void CvPlayerAI::AI_doEurope()
 
 	eBuyUnit = AI_nextBuyUnit(&eBuyUnitAI, &iBuyUnitValue);
 
-	UnitTypes eBuyProfessionUnit;
-	ProfessionTypes eBuyProfession;
-	UnitAITypes eBuyProfessionAI;
-	int iBuyProfessionValue;
+	UnitTypes eBuyProfessionUnit = NO_UNIT;
+	ProfessionTypes eBuyProfession = NO_PROFESSION;
+	UnitAITypes eBuyProfessionAI = NO_UNITAI;
+	int iBuyProfessionValue = -1;
 
-	eBuyProfessionUnit = AI_nextBuyProfessionUnit(&eBuyProfession, &eBuyProfessionAI, &iBuyProfessionValue);
+	//eBuyProfessionUnit = AI_nextBuyProfessionUnit(&eBuyProfession, &eBuyProfessionAI, &iBuyProfessionValue);
 
 	int iUnitPrice = 0;
 
@@ -8294,7 +8380,7 @@ void CvPlayerAI::AI_doEurope()
 		return;
 	}
 
-	AI_updateNextBuyUnit(false);
+	AI_updateNextBuyUnit();
 	
 	for (int i = 0; i < getNumEuropeUnits(); i++)
 	{
@@ -8325,15 +8411,14 @@ void CvPlayerAI::AI_doEurope()
 							AI_clearStrategy(STRATEGY_MILITARY_BUILDUP);
 						}
 						// TAC - AI Military Buildup - koma13 - END
-						AI_updateNextBuyUnit(false);
+						AI_updateNextBuyUnit();
 					}
 				}
 			}
 
-			// TAC - AI Military Buildup - koma13 - START
-			//if (!bProfessionChange)
-			if (!bProfessionChange && (kUnit.getTeacherWeight() <= 0) && !AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
-			// TAC - AI Military Buildup - koma13 - END
+			// Only consider changing the profession if this is a regular, unequipped colonist.
+			// TODO: Consider checkinf for lack of equipment instead!
+			if (!bProfessionChange && (pUnit->getProfession() == GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()) && !AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 			{
 				if (AI_neededWorkers(NULL) > 0)
 				{
@@ -9907,7 +9992,7 @@ void CvPlayerAI::AI_manageEconomy()
 
 	if (!isNative())
 	{
-		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+		for (CvCity*pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 		{
 			int iAdvantageCount = 0;
 			for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
@@ -10673,7 +10758,7 @@ int CvPlayerAI::AI_professionUpgradeValue(ProfessionTypes eProfession, UnitTypes
 	return iBestValue;
 }
 
-int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUnitAI)
+int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUnitAI) const
 {
 	CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
 	if (kProfession.isCitizen())
@@ -10830,7 +10915,7 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 // R&R, ray, code changes for Ideal Profession - START
 // Heavily modified
 // simply returns the first Expert to Profession that matches UnitType
-ProfessionTypes CvPlayerAI::AI_idealProfessionForUnit(UnitTypes eUnitType)
+ProfessionTypes CvPlayerAI::AI_idealProfessionForUnit(UnitTypes eUnitType) const
 {
 	int eUnitClassType = GC.getUnitInfo(eUnitType).getUnitClassType();
 	ProfessionTypes eIdealProfession = NO_PROFESSION;
@@ -11068,7 +11153,7 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 
 		case UNITAI_TRANSPORT_COAST:
 			{
-				const int iNeeded = countNumCoastalCities();
+				const int iNeeded = countNumCoastalCities() / 2;
 
 				if (iCount < iNeeded)
 				{
@@ -11262,11 +11347,16 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 
 		case UNITAI_ASSAULT_SEA:
 			{
-				if (AI_prepareAssaultSea())	// TAC - AI Assault Sea - koma13
+				// See comment for the escort AI. We allow a single assault ship since they are sometimes useful
+				// for reinforcement missions (ferrying defenders etc.)
+				if (iCurrentCount == 0)
 				{
-					int iLowerPop = 5;
-					int iPop = 15 + 50 * iCount;
-					iValue = (160 * std::max(0, iPopulation - (iLowerPop + iPop * iCount))) / iPop;
+					if (AI_prepareAssaultSea())	// TAC - AI Assault Sea - koma13
+					{
+						int iLowerPop = 5;
+						int iPop = 15 + 50 * iCount;
+						iValue = (160 * std::max(0, iPopulation - (iLowerPop + iPop * iCount))) / iPop;
+					}
 				}
 			}
 		case UNITAI_COMBAT_SEA:
@@ -11283,17 +11373,16 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 
 		case UNITAI_PIRATE_SEA:
 			{
+				// Get combat ships before considering a privateer
+				if (iCurrentCount < 2 && AI_totalUnitAIs(UNITAI_COMBAT_SEA) > 0)
 				// TAC - AI purchases military units - koma13 - START
-				int iCurrentCount = AI_totalUnitAIs(eUnitAI);
-				//if (iCount < 2)
-				if (iCurrentCount < 2)
 				{
 					/*
 					int iLowerPop = 5;
 					int iPop = 16 + 6 * iCount;
 					iValue = (140 * std::max(0, iPopulation - (iLowerPop + iPop * iCount))) / iPop;
 					*/
-					int iLowerPop = 5;
+					int iLowerPop = 10;
 					int iPop = 16 + 6 * iCurrentCount;
 					iValue = (140 * std::max(0, iPopulation - (iLowerPop + iPop * iCurrentCount))) / iPop;
 					
@@ -11309,6 +11398,9 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 
 		// TAC - AI Escort Sea - koma13 - START
 		case UNITAI_ESCORT_SEA:
+			// Disabled for now, the colonial AI is currently not able to undertake intercontinental invasions
+			// and hence there is no need for escort ships
+			/*
 			{
 				if (iCount < AI_totalUnitAIs(UNITAI_ASSAULT_SEA))
 				{
@@ -11317,6 +11409,7 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 					iValue = (160 * std::max(0, iPopulation - (iLowerPop + iPop * iCount))) / iPop;
 				}
 			}
+			*/
 			break;
 		// TAC - AI Escort Sea - koma13 - END
 
@@ -11403,6 +11496,8 @@ int CvPlayerAI::AI_professionSuitability(UnitTypes eUnit, ProfessionTypes eProfe
 
 	int iProModifiers = 0;
 	int iConModifiers = 0;
+
+	const ProfessionTypes eIdealProfession = AI_idealProfessionForUnit(eUnit);
 
 	if (kProfession.isWater() && kUnit.isWaterYieldChanges() || !kProfession.isWater() && kUnit.isLandYieldChanges())
 	{
@@ -11507,7 +11602,15 @@ int CvPlayerAI::AI_professionSuitability(UnitTypes eUnit, ProfessionTypes eProfe
 		}
 		else
 		{
-			iConModifiers += 5;
+			// If this is an expert unit, discourage it slightly
+			if (eIdealProfession != NO_PROFESSION)
+			{
+				iConModifiers += 20;
+			}
+			else
+			{
+				iConModifiers += 10;
+			}
 		}
 	}
 
@@ -11721,6 +11824,8 @@ int CvPlayerAI::AI_professionSuitability(const CvUnit* pUnit, ProfessionTypes eP
 	return iValue;
 }
 
+// Note: A swap should never fail so an assert\fail here indicates that the caller
+// messed up!
 void CvPlayerAI::AI_swapUnitJobs(CvUnit* pUnitA, CvUnit* pUnitB)
 {
 	FAssert(pUnitA->plot() == pUnitB->plot());
@@ -11817,7 +11922,7 @@ int CvPlayerAI::AI_sumAttackerStrength(CvPlot* pPlot, CvPlot* pAttackedPlot, int
 							if (!bCheckCanAttack || bCanAttack)
 							{
 								if (!bCheckCanMove || pLoopUnit->canMove())
-									if (!bCheckCanMove || pAttackedPlot == NULL || pLoopUnit->canMoveInto(pAttackedPlot, /*bAttack*/ true, /*bDeclareWar*/ true))
+									if (!bCheckCanMove || pAttackedPlot == NULL || pLoopUnit->canMoveInto(*pAttackedPlot, /*bAttack*/ true, /*bDeclareWar*/ true))
 										if (eDomainType == NO_DOMAIN || pLoopUnit->getDomainType() == eDomainType)
 											strSum += pLoopUnit->currEffectiveStr(pAttackedPlot, pLoopUnit);
 							}
@@ -11891,7 +11996,7 @@ int CvPlayerAI::AI_setUnitAIStatesRange(CvPlot* pPlot, int iRange, UnitAIStates 
 
 					if ((eValidUnitAIState == NO_UNITAI_STATE) || (pLoopUnit->AI_getUnitAIState() == eValidUnitAIState))
 					{
-						if (std::find(validUnitAITypes.begin(), validUnitAITypes.end(), pLoopUnit->AI_getUnitAIType()) != validUnitAITypes.end())
+						if (std::find(validUnitAITypes.begin(), validUnitAITypes.end(), pLoopUnit->AI_getUnitAIType()) == validUnitAITypes.end())
 						{
 							pLoopUnit->AI_setUnitAIState(eNewUnitAIState);
 							iCount++;
@@ -12601,7 +12706,8 @@ void CvPlayerAI::AI_doMilitaryStrategy()
 
 	std::vector<UnitAITypes> militaryUnitAIs;
 
-	militaryUnitAIs.push_back(UNITAI_COUNTER);
+	// Counter units do not make use of UnitAIStates
+	//militaryUnitAIs.push_back(UNITAI_COUNTER);
 	militaryUnitAIs.push_back(UNITAI_OFFENSIVE);
 
 	CvTeamAI& kTeam = GET_TEAM(getTeam());
@@ -13213,7 +13319,7 @@ void CvPlayerAI::AI_doStrategy()
 			{
 				if ((iRebelPercent > iRebelsNeeded) &&  (AI_getStrategyDuration(STRATEGY_REVOLUTION_PREPARING) > GC.getGameINLINE().AI_adjustedTurn(20)))
 				{
-					if (getEuropeMilitary() < NBMOD_GetColonialMilitaryValue())
+					if (getEuropeMilitary() < (NBMOD_GetColonialMilitaryValue() * AI_getColonialMilitaryModifier()) / 100)
 					{
 						AI_setStrategy(STRATEGY_REVOLUTION_DECLARING);
 						//AI_clearStrategy(STRATEGY_GET_A_SHIP);	// TAC - AI Purchasing military units - koma13
@@ -13227,17 +13333,17 @@ void CvPlayerAI::AI_doStrategy()
 				{
 					int iValue = iRebelPercent + 100 * AI_getStrategyDuration(STRATEGY_REVOLUTION_DECLARING) / GC.getGameINLINE().AI_adjustedTurn(50);
 
-					if (iValue > 125)
+					if (iValue > 100)
 					{
 						// We have to take into account the determined trait, promotions, bonus vs. the king, ability to
 						// keep producing troops / weapons etc. The AI can probably declare with a significantly smaller army than the king and still win.
-						if (getEuropeMilitary() < NBMOD_GetColonialMilitaryValue())
+						if (getEuropeMilitary() < (NBMOD_GetColonialMilitaryValue() * AI_getColonialMilitaryModifier()) / 100)
 						{
 							// Erik: This is wrong, if we have any plans, just cancel them and declare instead.
 							// it's too late to try to conquer someone. If we're are war with indians we can
 							// just choose a civic that gives instant peace.				
-							bool bAtWar = (GET_TEAM(getTeam()).getAnyWarPlanCount() > 0);
-							if (!bAtWar)
+							//bool bAtWar = (GET_TEAM(getTeam()).getAnyWarPlanCount() > 0);
+							//if (!bAtWar)
 							{
 								if (kTeam.canDoRevolution())
 								{
@@ -13385,7 +13491,7 @@ int CvPlayerAI::AI_getOurPlotStrength(CvPlot* pPlot, int iRange, bool bDefensive
 							{
 								if (!(pLoopUnit->isInvisible(getTeam(), false)))
 								{
-									if (pLoopUnit->atPlot(pPlot) || pLoopUnit->canMoveInto(pPlot) || pLoopUnit->canMoveInto(pPlot, /*bAttack*/ true))
+									if (pLoopUnit->atPlot(pPlot) || pLoopUnit->canMoveInto(*pPlot) || pLoopUnit->canMoveInto(*pPlot, /*bAttack*/ true))
 									{
 										if (!bTestMoves)
 										{
@@ -14350,7 +14456,7 @@ bool CvPlayerAI::AI_advancedStartDoRoute(CvPlot* pFromPlot, CvPlot* pToPlot)
 
 		while (pNode != NULL)
 		{
-			CvPlot* pPlot = GC.getMapINLINE().plotSorenINLINE(pNode->m_iX, pNode->m_iY);
+			CvPlot* pPlot = GC.getMapINLINE().plotSoren(pNode->m_iX, pNode->m_iY);
 			RouteTypes eRoute = AI_bestAdvancedStartRoute(pPlot);
 			if (eRoute != NO_ROUTE)
 			{
@@ -15239,7 +15345,7 @@ UnitTypes CvPlayerAI::AI_nextBuyProfessionUnit(ProfessionTypes* peProfession, Un
 
 namespace 
 { 
-	const UnitAITypes validUnitAITypes[] = { UNITAI_DEFENSIVE , UNITAI_OFFENSIVE , UNITAI_COUNTER, UNITAI_TRANSPORT_SEA, UNITAI_ASSAULT_SEA, UNITAI_COMBAT_SEA, UNITAI_PIRATE_SEA, UNITAI_ESCORT_SEA };
+	const UnitAITypes validUnitAITypes[] = {UNITAI_DEFENSIVE , UNITAI_OFFENSIVE , UNITAI_COUNTER, UNITAI_TRANSPORT_SEA, UNITAI_COMBAT_SEA, UNITAI_PIRATE_SEA};
 }
 
 // TAC - AI purchases military units - koma13 - START
@@ -15260,58 +15366,7 @@ void CvPlayerAI::AI_updateNextBuyUnit(bool bPriceLimit)
 		int iMultiplier = AI_unitAIValueMultipler(eLoopUnitAI);
 		if (iMultiplier <= 0)
 			continue;
-
-		// TAC - AI purchases military units - koma13 - START
-		/*
-		int iTreasureSum = -1;
-		int iTreasureSize = -1;
-
-		if ((eLoopUnitAI == UNITAI_TRANSPORT_SEA) && (AI_totalUnitAIs(UNITAI_TREASURE) > 0))
-		{
-			int iLoop;
-			CvUnit* pLoopUnit;
-			for (pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
-			{
-				if (pLoopUnit->canMove())
-				{
-					if (pLoopUnit->AI_getUnitAIType() == UNITAI_TREASURE)
-					{
-						int iSize = pLoopUnit->getUnitInfo().getRequiredTransportSize();
-						if (iSize > 1)
-						{
-							iTreasureSize = std::max(iTreasureSize, iSize);
-							iTreasureSum += pLoopUnit->getYieldStored();
-						}
-					}
-				}
-			}
-			for (pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
-			{
-				if (pLoopUnit->AI_getUnitAIType() == UNITAI_TRANSPORT_SEA)
-				{
-					if (pLoopUnit->cargoSpace() >= iTreasureSize)
-					{
-						//Can already transport all treasure, cancel.
-						iTreasureSize = -1;
-						iTreasureSum = -1;
-						break;
-					}
-				}
-			}
-		}
-		if (iTreasureSum < 1)
-		{
-			iTreasureSum = 1;
-		}
-		if (iTreasureSize < 1)
-		{
-			iTreasureSize = 1;
-		}
-		if (iTreasureSum > 0)
-		{
-			bValid = true;
-		}
-		*/
+		
 		// TAC - AI purchases military units - koma13 - END
 		// TAC - AI Assault Sea - koma13 - START
 		if (eLoopUnitAI == UNITAI_ASSAULT_SEA || eLoopUnitAI == UNITAI_ESCORT_SEA)
@@ -15326,38 +15381,33 @@ void CvPlayerAI::AI_updateNextBuyUnit(bool bPriceLimit)
 			UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
 			if (eLoopUnit != NO_UNIT)
 			{
+				// Only consider units that default to this unit ai
 				const CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
-				if (kUnitInfo.getDefaultProfession() == NO_PROFESSION || kUnitInfo.getDefaultUnitAIType() == UNITAI_DEFENSIVE || kUnitInfo.getDefaultUnitAIType() == UNITAI_COUNTER)
+				if (kUnitInfo.getDefaultUnitAIType() != eLoopUnitAI)
+					continue;
+
+				//if (kUnitInfo.getDefaultProfession() == NO_PROFESSION || kUnitInfo.getDefaultUnitAIType() == UNITAI_DEFENSIVE || kUnitInfo.getDefaultUnitAIType() == UNITAI_COUNTER)
 				{
-					int iPrice = getEuropeUnitBuyPrice(eLoopUnit);
+					const int iPrice = getEuropeUnitBuyPrice(eLoopUnit);
 					// TAC - AI purchases military units - koma13 - START
 					//if (iPrice > 0)// && !kUnitInfo.getUnitAIType(eLoopUnitAI))
 					int iInitialPrice = getEuropeUnitBuyPrice(eLoopUnit, false);
-					int iMaxPrice = (iInitialPrice * GC.getDefineINT("AI_EUROPE_PRICE_LIMIT_PERCENT")) / 100;
-					if ((iPrice > 0) && ((iPrice < iMaxPrice) || !bPriceLimit)) // && (iPrice <= getGold()))
+					//int iMaxPrice = (iInitialPrice * GC.getDefineINT("AI_EUROPE_PRICE_LIMIT_PERCENT")) / 100;
+					//if ((iPrice > 0) && ((iPrice < iMaxPrice) || !bPriceLimit)) // && (iPrice <= getGold()))
+					if ((iPrice > 0)  && (iPrice <= getGold()))
 					{
-						/*
-						if (iTreasureSum > 0) //Perform treasure calculations
-						{
-							if (kUnitInfo.getCargoSpace() >= iTreasureSize)
-							{
-								iMultipler += 100 + (100 * iTreasureSum) / iPrice;
-								iPrice = std::max(iPrice / 3, iPrice - iTreasureSum);
-							}
-						}
-						*/
-
 						if (kUnitInfo.getDefaultUnitAIType() == UNITAI_COMBAT_SEA)
 						{
 							//if (kUnitInfo.isHiddenNationality())
+							// TOOD: This veto does not belong here!
 							if (kUnitInfo.isHiddenNationality() || (kUnitInfo.getDefaultUnitAIType() == UNITAI_TRANSPORT_SEA))
 							{
 								iMultiplier = 0;
 							}
 						}
 
-						int iGoldValue = AI_unitGoldValue(eLoopUnit, eLoopUnitAI, NULL);
-						int iValue = (iMultiplier * iGoldValue) / iPrice;
+						const int iGoldValue = AI_unitGoldValue(eLoopUnit, eLoopUnitAI, NULL);
+						int iValue = (100*(iMultiplier * iGoldValue)) / iPrice;
 						if (getEuropeUnitBuyPrice(eLoopUnit) > getGold())
 						{
 							if (iValue < 100)
@@ -15379,6 +15429,7 @@ void CvPlayerAI::AI_updateNextBuyUnit(bool bPriceLimit)
 		}
 	}
 
+#if 0
 	// TAC - AI Military Buildup - koma13 - START
 	if (bPriceLimit && (eBestUnit != NO_UNIT))
 	{
@@ -15391,16 +15442,19 @@ void CvPlayerAI::AI_updateNextBuyUnit(bool bPriceLimit)
 		}
 	}
 	// TAC - AI Military Buildup - koma13 - END
+#endif
 
 	m_eNextBuyUnit = eBestUnit;
 	m_eNextBuyUnitAI = eBestUnitAI;
 	m_iNextBuyUnitValue = iBestValue;
 }
 
+/*
 int CvPlayerAI::AI_highestNextBuyValue()
 {
 	return std::max(m_iNextBuyUnitValue, m_iNextBuyProfessionValue);
 }
+*/
 
 void CvPlayerAI::AI_updateNextBuyProfession()
 {
@@ -15933,15 +15987,25 @@ int CvPlayerAI::AI_getEuropeYieldSpending()
 // TAC - AI Economy - koma13 - END
 
 // TAC - AI Improved Naval AI - koma13 - START
+// Erik: Repurposed to return true for UnitAITypes types that should
+// avoid enemies (unless protected) during pathfinding
 bool CvPlayerAI::AI_needsProtection(UnitAITypes eUnitAI) const
 {
 	if (!isHuman())
 	{
 		switch (eUnitAI)
 		{
+			case UNITAI_COLONIST:
+			case UNITAI_SETTLER:
+			case UNITAI_WORKER:
+			case UNITAI_MISSIONARY:
+			case UNITAI_TRADER:
+			case UNITAI_WAGON:
+			case UNITAI_TREASURE:
+			case UNITAI_GENERAL:
+			case UNITAI_WORKER_SEA:
 			case UNITAI_TRANSPORT_SEA:
 			case UNITAI_TRANSPORT_COAST:
-				// Erik: Return value was removed by accident, sorry!
 				return true;
 				break;
 
@@ -16419,4 +16483,39 @@ bool CvPlayerAI::AI_canHurryDockUnit() const
 	}
 	
 	return true;
+}
+
+// Returns the effective combat multiplier(*100) that only applies vs. the king.
+// Adjusts the estimated combat strength by  take into account traits (e.g. determined) and the AI bonus vs. its king
+// Note that 100 is the baseline so this function returns the additional modifier to be added. A return value of 150 indicates that our strength should be inflated by 50%
+int CvPlayerAI::AI_getColonialMilitaryModifier() const
+{
+	FAssert(!isHuman());
+
+	// Note: NBMOD_GetColonialMilitaryValue already takes the rebel modifier into account
+	int iModifier = getRebelCombatPercent();
+	iModifier += GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIKingCombatModifier();
+	return iModifier;
+}
+
+// Estimates the unemployment rate in our empire
+int CvPlayerAI::AI_estimateUnemploymentCount() const
+{
+	int cnt = 0;
+	int iLoop;
+	
+	for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
+	{
+		// Only count colonists that are
+		// 1) On the map (so not inside a city or on the docs) 
+		// 2) Not being transported
+		// 3) Not executing a mission(acitvity)
+		if (pLoopUnit->AI_getUnitAIType() == UNITAI_COLONIST && pLoopUnit->isOnMap() && !pLoopUnit->isCargo() &&
+			pLoopUnit->getGroup()->getActivityType() != ACTIVITY_MISSION)
+		{
+			cnt++;
+		}
+	}
+	
+	return cnt;	
 }

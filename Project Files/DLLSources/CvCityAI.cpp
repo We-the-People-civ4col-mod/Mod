@@ -19,6 +19,25 @@
 #include "CvDLLFAStarIFaceBase.h"
 
 #include "CvSavegame.h"
+#include <algorithm>
+#include "BetterBTSAI.h"
+
+#define MULTICORE
+
+#ifdef MULTICORE
+
+#pragma push_macro("free")  
+#pragma push_macro("new")  
+#undef free
+#undef new
+#include "tbb/parallel_reduce.h"
+#include "tbb/blocked_range.h"
+#include "tbb/task_scheduler_init.h"
+#include "tbb/mutex.h"
+#pragma pop_macro("new")  
+#pragma pop_macro("free")  
+
+#endif
 
 
 #define BUILDINGFOCUS_NO_RECURSION			(1 << 31)
@@ -47,6 +66,9 @@ void CvCityAI::AI_init()
 	AI_reset();
 
 	//--------------------------------
+	
+	GET_PLAYER(getOwnerINLINE()).AI_manageEconomy();
+
 	// Init other game data
 	AI_assignWorkingPlots();
 
@@ -103,6 +125,7 @@ void CvCityAI::AI_doTurn()
 	}
 	// R&R, ray, Natives Trading - END
 
+#if 0
 	if (isHuman())
 	{
 	    if (isProductionAutomated())
@@ -113,7 +136,7 @@ void CvCityAI::AI_doTurn()
 	}
 	
 	AI_doHurry();
-
+#endif
 	AI_doEmphasize();
 }
 
@@ -142,6 +165,8 @@ void CvCityAI::AI_doTurn()
 //	}
 //};
 
+tbb::mutex jobMutex;
+
 void CvCityAI::AI_assignWorkingPlots()
 {
 	PROFILE_FUNC();
@@ -158,11 +183,16 @@ void CvCityAI::AI_assignWorkingPlots()
 	
 	AI_assignCityPlot();
 
-	GET_PLAYER(getOwnerINLINE()).AI_manageEconomy();
+	jobMutex.lock();
+
+	// No need to call this here, once per turn should be enough
+	//GET_PLAYER(getOwnerINLINE()).AI_manageEconomy();
+
 	AI_updateNeededYields();
 
 	//remove non-city people
 	removeNonCityPopulationUnits();
+	jobMutex.unlock();
 
 
 	/*
@@ -237,10 +267,22 @@ void CvCityAI::AI_assignWorkingPlots()
 		CvPlot* pWorkedPlot =  getPlotWorkedByUnit(pUnit);
 		if (pWorkedPlot != NULL)
 		{
+			jobMutex.lock();
 			clearUnitWorkingPlot(pWorkedPlot);
+			jobMutex.unlock();
 		}
 		
+#define PARALLEL
+#ifdef PARALLEL		
+		CvUnit* pOldUnit = AI_parallelAssignToBestJob(*pUnit);
+#endif
+
+//#define SERIAL		
+#ifdef SERIAL
 		CvUnit* pOldUnit = AI_assignToBestJob(pUnit);
+		//FAssertMsg(pOldUnit == pOldUnitCheck, "Parallel version produced different result!");
+#endif
+
 		if (pOldUnit != NULL)
 		{
 			if (std::find(citizens.begin(), citizens.end(), pOldUnit) == citizens.end())
@@ -285,8 +327,10 @@ void CvCityAI::AI_assignWorkingPlots()
 	AI_setAssignWorkDirty(false);
 
 	if ((getOwnerINLINE() == GC.getGameINLINE().getActivePlayer()) && isCitySelected())
-	{
+	{   // TODO: defer to main thread
+		jobMutex.lock();
 		gDLL->getInterfaceIFace()->setDirty(CitizenButtons_DIRTY_BIT, true);
+		jobMutex.unlock();
 	}
 }
 
@@ -295,6 +339,8 @@ void CvCityAI::AI_updateAssignWork()
 {
 	if (AI_isAssignWorkDirty())
 	{
+		GET_PLAYER(getOwnerINLINE()).AI_manageEconomy();
+
 		AI_assignWorkingPlots();
 	}
 }
@@ -359,12 +405,25 @@ void CvCityAI::AI_chooseProduction()
 	{
 		if (getProduction() > 0)
 		{
+			if (getProduction() >= getProductionNeeded(YIELD_HAMMERS))
+			{
+				// veto keep building if we've already stored enough hammers to complete
+				// the build. At this point we're just waiting for other yields (e.g. tools)
+				// to complete the build, so the AI should switch to another build to avoid banking 
+				// too many hammers
+				clearOrderQueue();
+			}
 			// if less than 3 turns left, keep building current item
-			if (getProductionTurnsLeft() <= 3)
+			else if (getProductionTurnsLeft() <= 3)
 			{
 				return;
 			}
+			else
+			{
+				clearOrderQueue();
+			}
 		}
+		// If we're producing FF points we should consider swithcing production
 		clearOrderQueue();
 	}
 	
@@ -650,6 +709,12 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync) const
 				{
 					iOriginalValue = GET_PLAYER(getOwnerINLINE()).AI_unitValue(eLoopUnit, eUnitAI, area());
 
+					// Avoid picking the same unit that we recently stopped building due to missing
+					// non-hammer yields
+					if (getUnitProduction(eLoopUnit) >= getYieldProductionNeeded(eLoopUnit, YIELD_HAMMERS) &&
+						!checkRequiredYields(ORDER_TRAIN, eLoopUnit, YIELD_HAMMERS))
+						continue;
+
 					if (iOriginalValue > iBestOriginalValue)
 					{
 						iBestOriginalValue = iOriginalValue;
@@ -669,11 +734,16 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync) const
 		if (eLoopUnit != NO_UNIT)
 		{
 			if (!isHuman() || (GC.getUnitInfo(eLoopUnit).getDefaultUnitAIType() == eUnitAI))
-			{
-				
+			{				
 				if (canTrain(eLoopUnit))
 				{
 					iValue = GET_PLAYER(getOwnerINLINE()).AI_unitValue(eLoopUnit, eUnitAI, area());
+
+					// Avoid picking the same unit that we recently stopped building due to missing
+					// non-hammer yields
+					if (getUnitProduction(eLoopUnit) >= getYieldProductionNeeded(eLoopUnit, YIELD_HAMMERS) &&
+						!checkRequiredYields(ORDER_TRAIN, eLoopUnit, YIELD_HAMMERS))
+						continue;
 
 					if (iValue > ((iBestOriginalValue * 2) / 3))
 					{
@@ -802,16 +872,16 @@ bool CvCityAI::AI_hasCoastalRoute() const
 
 BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns, int iMinThreshold, bool bAsync) const
 {
-	bool bAreaAlone = GET_PLAYER(getOwnerINLINE()).AI_isAreaAlone(area());
+	const bool bAreaAlone = GET_PLAYER(getOwnerINLINE()).AI_isAreaAlone(area());
 
-	int iProductionRank = findYieldRateRank(YIELD_HAMMERS);
+	const int iProductionRank = findYieldRateRank(YIELD_HAMMERS);
 
 	int iBestValue = 0;
 	BuildingTypes eBestBuilding = NO_BUILDING;
 
 	for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
 	{
-		BuildingTypes eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iI)));
+		const BuildingTypes eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iI)));
 
 		if ((eLoopBuilding != NO_BUILDING) && (!isHasConceptualBuilding(eLoopBuilding)))
 		{
@@ -821,33 +891,42 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 
 				if (iValue > 0)
 				{
-					int iTurnsLeft = getProductionTurnsLeft(eLoopBuilding, 0);
+					
+					// Avoid picking the same building that we recently stopped building due to missing
+					// non-hammer yields!
+					if (getBuildingProduction(eLoopBuilding) >= getYieldProductionNeeded(eLoopBuilding, YIELD_HAMMERS) &&
+					 	!checkRequiredYields(ORDER_CONSTRUCT, eLoopBuilding, YIELD_HAMMERS))
+						continue;
 
 					if (bAsync)
 					{
-						iValue *= (GC.getASyncRand().get(25, "AI Best Building ASYNC") + 100);
+						iValue *= (GC.getASyncRand().get(10, "AI Best Building ASYNC") + 100);
 						iValue /= 100;
 					}
 					else
 					{
-						iValue *= (GC.getGameINLINE().getSorenRandNum(25, "AI Best Building") + 100);
+						iValue *= (GC.getGameINLINE().getSorenRandNum(10, "AI Best Building") + 100);
 						iValue /= 100;
 					}
 
-					iValue += getBuildingProduction(eLoopBuilding);
-					
-					
+					const int iBuildingProduction = getBuildingProduction(eLoopBuilding);				
+					const int iTurnsLeft = getProductionTurnsLeft(eLoopBuilding, 0);
+
+					iValue += (iBuildingProduction +  std::max(1, 10 - iTurnsLeft));
+
+
 					bool bValid = ((iMaxTurns <= 0) ? true : false);
 					if (!bValid)
 					{
+					
 						bValid = (iTurnsLeft <= GC.getGameINLINE().AI_turnsPercent(iMaxTurns, GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getConstructPercent()));
 					}
 
 					if (bValid)
 					{
-						iValue = iValue / 2 + iValue / (1 + iTurnsLeft);
+						//iValue = iValue / 2 + iValue / (1 + iTurnsLeft);
 
-						iValue = std::max(1, iValue);
+						//iValue = std::max(1, iValue);
 
 						if (iValue > iBestValue)
 						{
@@ -1345,11 +1424,14 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			if (kBuildingInfo.getYieldModifier(eLoopYield) > 0)
 			{
 				int iRaw = getRawYieldProduced(eLoopYield);
-				if ((eLoopYield == YIELD_BELLS) && kOwner.AI_isStrategy(STRATEGY_FAST_BELLS) && (kOwner.AI_findBestCity() == this))
+				// Commented out the below since bells are too valuable in general to depend on such strict conditions
+				//if ((eLoopYield == YIELD_BELLS) && kOwner.AI_isStrategy(STRATEGY_FAST_BELLS) && (kOwner.AI_findBestCity() == this))
+				if (eLoopYield == YIELD_BELLS)
 				{
-					iRaw += std::max(iRaw, std::min(8, getPopulation()));
+					// Slight hack to value the SPECIALBUILDING_PRINT class more highly
+					iRaw *= getPopulation();
 				}
-				iAdded += ((2 * getRawYieldProduced(eLoopYield)) * kBuildingInfo.getYieldModifier(eLoopYield)) / 100;
+				iAdded += ((2 * iRaw * kBuildingInfo.getYieldModifier(eLoopYield)) / 100);
 			}
 			
 			if (iAdded != 0)
@@ -1363,7 +1445,12 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			
 			if (kBuildingInfo.getSeaPlotYieldChange(i) != 0)
 			{
-				int iYieldChange = kBuildingInfo.getSeaPlotYieldChange(i);
+				// Determine the net change that would be added by the building
+				// We have to avoid double-counting yield changes that do not stack\accumulate
+				const int iYieldChange = kBuildingInfo.getSeaPlotYieldChange(i) - getSeaPlotYield((YieldTypes)i);
+				
+				if (iYieldChange != 0)
+				{ 
 				int iTempValue = 0;
 				
 				int iFood = 0;
@@ -1408,10 +1495,17 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 				iValue += iTempValue;
 				bIsMilitary = true;
 			}
+			}
 
 			// R&R, ray, Landplot Yields - START
 			if (kBuildingInfo.getLandPlotYieldChange(i) != 0)
 			{
+				// Determine the net change that would be added by the building
+				// We have to avoid double-counting yield changes that do not stack\accumulate
+				const int iYieldChange = kBuildingInfo.getLandPlotYieldChange(i) - getLandPlotYield((YieldTypes)i);
+
+				if (iYieldChange != 0)
+				{
 				int iYieldChange = kBuildingInfo.getLandPlotYieldChange(i);
 				int iTempValue = 0;
 				
@@ -1455,8 +1549,11 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			// R&R, ray, Landplot Yields - END
 		}
 	}
+	}
 	
-	if ((bIsMajorCity) || (iFocusFlags & BUILDINGFOCUS_MILITARY))	// TAC - AI Buildings - koma13
+	// Just because we're a major cities does not mean that we should value the unlocking of units which
+	// we are unlikely to ever build anyway
+	if (/*(bIsMajorCity) || */(iFocusFlags & BUILDINGFOCUS_MILITARY))	// TAC - AI Buildings - koma13
 	{
 		int iUnitsTrainedCount = 0;
 		
@@ -1468,6 +1565,8 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			}
 		}
 		
+		// TODO: Differentiate between domain, transport units getCargoSpace() > 0 and actual military units
+
 		if (iUnitsTrainedCount > 0)
 		{
 			int iBuildingCount = kOwner.getBuildingClassCountPlusMaking(eBuildingClass);
@@ -1683,10 +1782,9 @@ int CvCityAI::AI_neededDefenders() const
 
 	// R&R, ray, AI improvements
 	// Colonial AI should use its colonist for enconomy during first period
-	int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
-	int forcedPeaceTurns= GC.getDefineINT("COLONIAL_FORCED_PEACE_TURNS");
-	forcedPeaceTurns = forcedPeaceTurns * gamespeedMod /100;
-	if (GC.getGameINLINE().getElapsedGameTurns() < forcedPeaceTurns )	{
+	
+	if (GC.getGame().getRemainingForcedPeaceTurns() > 0)
+	{
 		return 0;
 	}
 
@@ -2168,14 +2266,12 @@ void CvCityAI::AI_doHurry(bool bForce)
 	PROFILE_FUNC();
 	FAssert(!isHuman() || isProductionAutomated());
 	
-	
-	if (getProduction() == 0)
-	{
-		return;
-	}
+	// Previously hurried builds must have been processed before considering another hurry
+	FAssert(!m_bHasHurried);
 
+	// TODO: Cache this
 	HurryTypes eGoldHurry = NO_HURRY;
-	for (int i = 0; i < GC.getNumHurryInfos(); ++i)
+	for (int i = FIRST_HURRY; i < GC.getNumHurryInfos(); ++i)
 	{
 		if (GC.getHurryInfo((HurryTypes)i).getGoldPerProduction() > 0)
 		{
@@ -2183,114 +2279,116 @@ void CvCityAI::AI_doHurry(bool bForce)
 			break;
 		}
 	}
-	
-	int iHurryValue = 0;
-	
-	
-	if (getProduction() >= getProductionNeeded(YIELD_HAMMERS))
+
+	const BuildingTypes eCurrentBuilding = getProductionBuilding();
+
+	typedef std::pair<int, BuildingTypes> BuildingHurryCost;
+	std::vector<BuildingHurryCost> buildingHurryCostList;
+
+	for (BuildingTypes iI = FIRST_BUILDING; iI < GC.getNumBuildingClassInfos(); iI++)
 	{
-		iHurryValue += 100;	
-	}
-	
-	bool bCritical = false;
-	
-	if (getProductionUnit() != NO_UNIT)
-	{
-		// Transport units are important so give them high priority
-		if (getProductionUnitAI() == UNITAI_WAGON)
+		const BuildingTypes eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(iI)));
+
+		if (!canConstruct(eLoopBuilding))
+			continue;
+
+		// Only consider buildings that are "hammer complete"	
+		if (getBuildingProduction(eLoopBuilding) >= getYieldProductionNeeded(eLoopBuilding, YIELD_HAMMERS) &&
+			!checkRequiredYields(ORDER_CONSTRUCT, eLoopBuilding, YIELD_HAMMERS))
 		{
-			if (area()->getNumAIUnits(getOwnerINLINE(), UNITAI_WAGON) == 0)
-			{
-				iHurryValue += 100;
-			}
+			// Need to push the order to make the hurry computation correct since only the current build is considered
+			pushOrderInternal(ORDER_CONSTRUCT, eLoopBuilding);
+			const int iHurryCost = hurryGold(eGoldHurry);
+			buildingHurryCostList.push_back(std::make_pair(iHurryCost, eLoopBuilding));
+			popOrderInternal();
 		}
-		if (getProductionUnitAI() == UNITAI_TRANSPORT_COAST)
+	}
+
+	if (!buildingHurryCostList.empty())
+	{
+		const BuildingHurryCost bhc = *std::min_element(buildingHurryCostList.begin(), buildingHurryCostList.end());
+		const BuildingTypes eHurryBuilding = bhc.second;
+		
+		// Need to push the order for the hurry functions to process the correct build
+		pushOrder(ORDER_CONSTRUCT, eHurryBuilding, -1, false, false, false);
+
+		if (!canHurry(eGoldHurry))
 		{
-			CvArea* const pWaterArea = waterArea();
-			
-			if (pWaterArea != NULL)
-			{ 
-				if (GET_PLAYER(getOwnerINLINE()).AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_TRANSPORT_COAST) == 0)
+			// If we can't hurry anything, restore the old build if appropriate
+			if (eCurrentBuilding != NO_BUILDING)
+			{
+				pushOrder(ORDER_CONSTRUCT, eCurrentBuilding, -1, false, false, false);
+				
+				if (gCityLogLevel >= 2)
 				{
-					iHurryValue += 100;
+					logBBAI(" Player %S City %S restoring (no hurry) production of %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+						getName().GetCString(), GC.getBuildingInfo(eCurrentBuilding).getDescription());
 				}
 			}
 		}
-
-		// TAC - AI purchases military units - koma13 - START
-		iHurryValue += 100;
-
-		if (AI_isDanger())
+		else
 		{
-			if (getProductionUnitAI() == UNITAI_DEFENSIVE)
+			// TODO: Log that we can't hurry
+			//pushOrder(ORDER_CONSTRUCT, eHurryBuilding, -1, false, false, false);
+			hurry(eGoldHurry);
+			m_bHasHurried = true;
+			// Return here so we don't attempt to rush more than a single build per turn
+			return;
+		}
+	}
+
+	const UnitTypes eCurrentUnit = getProductionUnit();
+
+	typedef std::pair<int, UnitTypes> UnitHurryCost;
+	std::vector<UnitHurryCost> unitHurryCostList;
+
+	for (UnitTypes iI = FIRST_UNIT; iI < GC.getNumUnitClassInfos(); iI++)
+	{
+		const UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
+
+		if (!canTrain(eLoopUnit))
+			continue;
+
+		// Only consider buildings that are "hammer complete"	
+		if (getUnitProduction(eLoopUnit) >= getYieldProductionNeeded(eLoopUnit, YIELD_HAMMERS) &&
+			!checkRequiredYields(ORDER_TRAIN, eLoopUnit, YIELD_HAMMERS))
+		{
+			// Need to push the order to make the hurry computation correct since only the current build is considered
+			pushOrderInternal(ORDER_TRAIN, eLoopUnit);
+			const int iHurryCost = hurryGold(eGoldHurry);
+			unitHurryCostList.push_back(std::make_pair(iHurryCost, eLoopUnit));
+			popOrderInternal();
+		}
+	}
+
+	if (!unitHurryCostList.empty())
+	{
+		const UnitHurryCost uhc = *std::min_element(unitHurryCostList.begin(), unitHurryCostList.end());
+		const UnitTypes eHurryUnit = uhc.second;
+
+		pushOrder(ORDER_TRAIN, eHurryUnit, NO_UNITAI, false, false, false);
+
+		if (!canHurry(eGoldHurry, true))
+		{
+			// If we can't hurry anything, restore the old build if appropriate
+			if (eCurrentUnit != NO_UNIT)
 			{
-				bCritical = true;
+				pushOrder(ORDER_TRAIN, eCurrentUnit, NO_UNITAI, false, false, false);
+
+				if (gCityLogLevel >= 2)
+				{
+					logBBAI(" Player %S City %S restoring (no hurry) production of %S", GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+						getName().GetCString(), GC.getUnitInfo(eCurrentUnit).getDescription());
+				}
 			}
 		}
-		// TAC - AI purchases military units - koma13 - END
-	}
-	else if (getProductionBuilding() != NO_BUILDING)
-	{
-		iHurryValue += AI_buildingValue(getProductionBuilding());
-		if (getDefenseModifier() == 0)
+		else
 		{
-			iHurryValue += GC.getBuildingInfo(getProductionBuilding()).getDefenseModifier() * 2;
-			if (AI_isDanger())
-			{
-				bCritical = true;
-			}
-		}
-	}
-	
-	int iThreshold = 50;
-	if (getPopulation() > 3)
-	{
-		iThreshold -= 3 * (getPopulation() - 2);
-		iThreshold = std::max(20, iThreshold);
-	}
-	
-	bool bAffordable = GET_PLAYER(getOwnerINLINE()).AI_getHurrySpending() < GET_PLAYER(getOwnerINLINE()).AI_getTotalIncome() / 2;
-	if (getHurryYieldDeficit(eGoldHurry, YIELD_LUMBER) == 0)
-	{
-		iHurryValue += 25;
-		if (bAffordable)
-		{
-			iHurryValue += 25;
-		}
-	}
-	
-	// TAC - AI Buildings - koma13 - START
-	//if (!bCritical && (iHurryValue < iThreshold))
-	if (!bCritical && (iHurryValue < iThreshold) && (GET_PLAYER(getOwnerINLINE()).getGold() <= 25000))
-	// TAC - AI Buildings - koma13 - END
-	{
-		if (getPopulation() < 4)
-		{
-			return;
-		}
-		
-		if (GC.getGameINLINE().getSorenRandNum(100, "AI Hurry") > 25)
-		{
-			return;
-		}
-		
-		if (bAffordable)
-		{
+			hurry(eGoldHurry);
+			m_bHasHurried = true;
 			return;
 		}
 	}
-	
-
-	for (int i = 0; i < GC.getNumHurryInfos(); ++i)
-	{
-		if (canHurry((HurryTypes)i))
-		{
-			hurry((HurryTypes)i);
-			return;
-		}
-	}
-	
-	return;
 }
 
 void CvCityAI::AI_doNativeTrade()
@@ -3125,104 +3223,382 @@ void CvCityAI::AI_juggleCitizens()
 	}
 }
 
+#ifdef  MULTICORE
+struct BestJob
+{
+	BestJob() :
+		iBestValue(0), iBestPlot(-1), eBestProfession(NO_PROFESSION) {};
+
+	BestJob(int iBestValue_, int iBestPlot_, ProfessionTypes eBestProfession_) :
+		iBestValue(iBestValue_), iBestPlot(iBestPlot_), eBestProfession(eBestProfession_) {};
+
+	BestJob& operator=(const BestJob& rhs)
+	{
+		if (this == &rhs)
+			return *this;
+
+		iBestValue = rhs.iBestValue;
+		iBestPlot = rhs.iBestPlot;
+		eBestProfession = rhs.eBestProfession;
+		return *this;
+	}
+
+	int iBestValue;
+	int iBestPlot;
+	ProfessionTypes eBestProfession;
+};
+
+// Note: cannot be a member since it must be called from the functor
+BestJob AI_findBestJob(const CvCityAI& kCity, ProfessionTypes eProfession, const CvUnit& kUnit, bool bIndoorOnly)
+{
+	int iBestValue = 0;
+	int iBestPlot = -1;
+	ProfessionTypes eBestProfession = NO_PROFESSION;
+	
+	// TODO: Get this out of the parallel loop so we don't launch taks with almost nothing to do
+	// We can accomplish this by having a "pre-filtered" list of valid citizen professions
+	if (kUnit.canHaveProfession(eProfession, true))
+	{
+		if (GC.getProfessionInfo(eProfession).isWorkPlot() && !bIndoorOnly)
+		{
+			for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+			{
+				if (iI != CITY_HOME_PLOT)
+				{
+					const CvPlot* const pLoopPlot = kCity.getCityIndexPlot(iI);
+
+					if (pLoopPlot != NULL && kCity.canWork(pLoopPlot))
+					{
+						int iValue = kCity.AI_professionValue(eProfession, &kUnit, pLoopPlot, NULL);
+						
+						bool bValid = true;
+
+						if (pLoopPlot->isBeingWorked())
+						{
+							CvUnit* pWorkingUnit = kCity.getUnitWorkingPlot(iI);
+							FAssert(pWorkingUnit != &kUnit);
+							// TAC - AI Economy - koma13 - START
+							if (pWorkingUnit != NULL && !pWorkingUnit->isColonistLocked())
+							{
+								iValue = kCity.AI_professionValue(eProfession, &kUnit, pLoopPlot, pWorkingUnit);
+							}
+							// TAC - AI Economy - koma13 - END
+							if ((pWorkingUnit->isColonistLocked() || (iValue <= kCity.AI_professionValue(pWorkingUnit->getProfession(), pWorkingUnit, pLoopPlot, NULL))))
+							{
+								bValid = false;
+							}
+						}
+						// TAC - AI Economy - koma13 - START
+						//if (bValid)
+						if (bValid && (iValue > iBestValue))
+							// TAC - AI Economy - koma13 - END
+						{
+							eBestProfession = eProfession;
+							iBestValue = iValue;
+							iBestPlot = iI;
+						}
+					}
+				}
+			}
+		}
+		else
+		{
+			int iValue = kCity.AI_professionValue(eProfession, &kUnit, NULL, NULL);
+			bool bValid = true;
+			if (!kUnit.canHaveProfession(eProfession, false))
+			{
+				CvUnit* pWorstUnit = kCity.AI_getWorstProfessionUnit(eProfession);
+				// R&R, ray, removed unnecessary Assert from developing feature
+				// FAssert(pWorstUnit != pUnit && pWorstUnit != NULL);
+				// TAC - AI Economy - koma13 - START
+				if (pWorstUnit != NULL && !pWorstUnit->isColonistLocked())
+				{
+					iValue = kCity.AI_professionValue(eProfession, &kUnit, NULL, pWorstUnit);
+				}
+				// TAC - AI Economy - koma13 - END
+				if (pWorstUnit == NULL || pWorstUnit->isColonistLocked() || (iValue <= kCity.AI_professionValue(eProfession, pWorstUnit, NULL, NULL)))
+				{
+					bValid = false;
+				}
+			}
+
+			// TAC - AI Economy - koma13 - START
+			//if (bValid)
+			if (bValid && iValue > iBestValue)
+				// TAC - AI Economy - koma13 - END
+			{
+				eBestProfession = eProfession;
+				iBestValue = iValue;
+				iBestPlot = -1;
+			}
+		}
+	}
+
+	return BestJob(iBestValue, iBestPlot, eBestProfession);
+}
+
+struct FindBestJob
+{
+	FindBestJob(const std::vector<ProfessionTypes>& valid_, const CvCityAI& kCity_, const CvUnit& kUnit_, bool bIndoorOnly_) :
+		valid(valid_), kCity(kCity_), kUnit(kUnit_), bIndoorOnly(bIndoorOnly_), bestJob() {}
+
+	FindBestJob(const FindBestJob& x, tbb::split) : valid(x.valid), kCity(x.kCity), kUnit(x.kUnit), bIndoorOnly(x.bIndoorOnly), bestJob()
+	{};
+
+	void operator()(const tbb::blocked_range<size_t>& r)
+	{
+		const size_t end = r.end();
+
+		for (size_t i = r.begin(); i != end; ++i)
+		{
+			const BestJob currentBestJob = AI_findBestJob(kCity, valid[i],  kUnit, bIndoorOnly);
+
+			update(currentBestJob);
+		}
+	}
+
+	void join(const FindBestJob& x)
+	{
+		update(x.bestJob);
+	}
+
+	BestJob bestJob;
+
+private:
+
+	void update(const BestJob& potentialBestJob)
+	{
+		if (potentialBestJob.iBestValue > bestJob.iBestValue)
+		{
+			// Update best job since we've found a better one
+			bestJob = potentialBestJob;
+		}
+		// Tie-breaker clause
+#if 0
+		else if (bestJob.eBestProfession != NO_PROFESSION && potentialBestJob.iBestValue == bestJob.iBestValue)
+		{
+			// Prefer the lowest profession index to preserve commutative ordering
+			if (potentialBestJob.eBestProfession < bestJob.eBestProfession)
+			{
+				// BUG: We can't really swap units this freely. What about swapping slot and plot workers, slaves and experts ?
+				// Swap anyway, even if the values are the same we must preserve
+				// deterministic ordering
+				bestJob = potentialBestJob;
+			}
+		}
+#endif
+	}
+
+	const std::vector<ProfessionTypes>& valid;
+	const CvCityAI& kCity;
+	const CvUnit& kUnit;
+	bool bIndoorOnly;
+};
+
+
+CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
+{
+	const std::vector<ProfessionTypes>& kValidCityJobs = GET_PLAYER(getOwnerINLINE()).m_validCityJobProfessions;
+
+	FindBestJob fbj(GET_PLAYER(getOwnerINLINE()).m_validCityJobProfessions, *this, kUnit, bIndoorOnly);
+
+	// Get the rng state prior to starting a concurrent operation
+	unsigned long rngStatePrior = GC.getGameINLINE().getSorenRand().peek();
+
+	// TODO: Determine if 8 bits are enough
+	// TODO: Split in two ranges to better balance the workload (plot vs. building workers) ?
+	// TODO: Maybe set grainsize to the number of professions that we expect to iterate through divided by the 
+	tbb::parallel_reduce(tbb::blocked_range<size_t>(0, kValidCityJobs.size()), fbj, tbb::auto_partitioner());
+	
+	// Assert that the rng state is the same after the concurrent operation has completed
+	unsigned long rngStatePost = GC.getGameINLINE().getSorenRand().peek();
+
+	FAssertMsg(rngStatePrior == rngStatePost, "It looks like at least one random number has been generated between the invokation of tbb::* !");
+
+	const int iBestValue = fbj.bestJob.iBestValue;
+	const int iBestPlot = fbj.bestJob.iBestPlot;
+	const ProfessionTypes eBestProfession = fbj.bestJob.eBestProfession;
+	
+	// Do the regular serial code here
+
+	jobMutex.lock();
+
+	if (eBestProfession == NO_PROFESSION)
+	{
+		if (getPopulation() > 1)
+		{
+			bool bSuccess = removePopulationUnit(&kUnit, false, (ProfessionTypes)GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
+			FAssertMsg(bSuccess, "Failed to remove useless citizen");
+		}
+		jobMutex.unlock();
+		return NULL;
+	}
+
+	CvUnit* pDisplacedUnit = NULL;
+
+	if (!GC.getProfessionInfo(eBestProfession).isWorkPlot())
+	{
+		// Slot worker has no plot
+		FAssert(iBestPlot == -1);
+
+		if (!kUnit.canHaveProfession(eBestProfession, false))
+		{
+			pDisplacedUnit = AI_getWorstProfessionUnit(eBestProfession);
+			FAssert(pDisplacedUnit != NULL);
+			// TAC - AI Economy - koma13 - STARTf
+			const int iCurrentProfessionValue = AI_professionValue(eBestProfession, &kUnit, NULL, pDisplacedUnit);
+			const int iDisplacedUnitProfessionValue = AI_professionValue(pDisplacedUnit->getProfession(), pDisplacedUnit, NULL, NULL);
+			FAssert(iCurrentProfessionValue > iDisplacedUnitProfessionValue);
+			// TAC - AI Economy - koma13 - END
+			if (iCurrentProfessionValue <= iDisplacedUnitProfessionValue)
+			{
+				while (true)
+				{
+					volatile int iCurrentProfessionValue = AI_professionValue(eBestProfession, &kUnit, NULL, pDisplacedUnit);
+ 					volatile int iDisplacedUnitProfessionValue = AI_professionValue(pDisplacedUnit->getProfession(), pDisplacedUnit, NULL, NULL);
+				}
+			}
+		}
+	}
+	else
+	{
+		FAssertMsg(iBestPlot >= 0, "iPlotIndex expected to be >= 0");
+		FAssertMsg(iBestPlot < NUM_CITY_PLOTS, "iPlotIndex expected to be < NUM_CITY_PLOTS");
+
+		if (isUnitWorkingPlot(iBestPlot))
+		{
+			pDisplacedUnit = getUnitWorkingPlot(iBestPlot);
+			FAssert(pDisplacedUnit != NULL);
+			// TAC - AI Economy - koma13 - START
+			const int iCurrentProfessionValue = AI_professionValue(eBestProfession, &kUnit, getCityIndexPlot(iBestPlot), pDisplacedUnit);
+			const int iDisplacedUnitProfessionValue = AI_professionValue(pDisplacedUnit->getProfession(), pDisplacedUnit, getCityIndexPlot(iBestPlot), NULL);
+
+			FAssert(iCurrentProfessionValue > iDisplacedUnitProfessionValue);
+			if (iCurrentProfessionValue <= iDisplacedUnitProfessionValue)
+			{
+				while (true)
+				{
+					 volatile int iCurrentProfessionValue = AI_professionValue(eBestProfession, &kUnit, getCityIndexPlot(iBestPlot), pDisplacedUnit);
+					 volatile int iDisplacedUnitProfessionValue = AI_professionValue(pDisplacedUnit->getProfession(), pDisplacedUnit, getCityIndexPlot(iBestPlot), NULL);
+				}
+			}
+			// TAC - AI Economy - koma13 - END
+			clearUnitWorkingPlot(iBestPlot);
+		}
+	}
+
+	if (pDisplacedUnit != NULL)
+	{
+		pDisplacedUnit->setProfession(NO_PROFESSION);
+	}
+
+	kUnit.setProfession(eBestProfession);
+
+	FAssert(!isUnitWorkingAnyPlot(&kUnit));
+	if (iBestPlot != -1)
+	{
+		setUnitWorkingPlot(iBestPlot, kUnit.getID());
+	}
+
+	FAssert(iBestPlot != -1 || !GC.getProfessionInfo(eBestProfession).isWorkPlot());
+	FAssert(iBestPlot == -1 || isUnitWorkingAnyPlot(&kUnit));
+
+	jobMutex.unlock();
+
+	return pDisplacedUnit;
+
+}
+#endif
+
 //Returns the displaced unit, if any.
 CvUnit* CvCityAI::AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 {
 	int iBestValue = 0;
 	int iBestPlot = -1;
 	ProfessionTypes eBestProfession = NO_PROFESSION;
-	
-	for (int i=0;i<GC.getNumProfessionInfos();i++)
-	{
-		ProfessionTypes eLoopProfession = (ProfessionTypes) i;
-		if (GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession))
-		{
-			if (GC.getProfessionInfo(eLoopProfession).isCitizen())
-			{
-				if (pUnit->canHaveProfession(eLoopProfession, true))
-				{
-					if (GC.getProfessionInfo(eLoopProfession).isWorkPlot())
-					{
-						if (!bIndoorOnly)
-						{
-							for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-							{
-								if (iI != CITY_HOME_PLOT)
-								{
-									CvPlot* pLoopPlot = getCityIndexPlot(iI);
 
-									if (pLoopPlot != NULL)
+	for (int i = 0; i<GC.getNumProfessionInfos(); i++)
+	{
+		ProfessionTypes eLoopProfession = (ProfessionTypes)i;
+		if (GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession) && GC.getProfessionInfo(eLoopProfession).isCitizen())
+		{
+			if (pUnit->canHaveProfession(eLoopProfession, true))
+			{
+				if (GC.getProfessionInfo(eLoopProfession).isWorkPlot() && !bIndoorOnly)
+				{
+					for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+					{
+						if (iI != CITY_HOME_PLOT)
+						{
+							CvPlot* pLoopPlot = getCityIndexPlot(iI);
+
+							if (pLoopPlot != NULL && canWork(pLoopPlot))
+							{
+								int iValue = AI_professionValue(eLoopProfession, pUnit, pLoopPlot, NULL);
+								//if (iValue > iBestValue)	// TAC - AI Economy - koma13
+								{
+									bool bValid = true;
+
+									if (pLoopPlot->isBeingWorked())
 									{
-										if (canWork(pLoopPlot))
+										CvUnit* pWorkingUnit = getUnitWorkingPlot(iI);
+										FAssert(pWorkingUnit != pUnit);
+										// TAC - AI Economy - koma13 - START
+										if (pWorkingUnit != NULL && !pWorkingUnit->isColonistLocked())
 										{
-											int iValue = AI_professionValue(eLoopProfession, pUnit, pLoopPlot, NULL);
-											//if (iValue > iBestValue)	// TAC - AI Economy - koma13
-											{
-												bool bValid = true;
-												
-												if (pLoopPlot->isBeingWorked())
-												{
-													CvUnit* pWorkingUnit = getUnitWorkingPlot(iI);
-													FAssert(pWorkingUnit != pUnit);
-													// TAC - AI Economy - koma13 - START
-													if (pWorkingUnit != NULL && !pWorkingUnit->isColonistLocked())
-													{
-														iValue = AI_professionValue(eLoopProfession, pUnit, pLoopPlot, pWorkingUnit);
-													}
-													// TAC - AI Economy - koma13 - END
-													if ((pWorkingUnit->isColonistLocked() || (iValue <= AI_professionValue(pWorkingUnit->getProfession(), pWorkingUnit, pLoopPlot, NULL))))
-													{
-														bValid = false;
-													}
-												}
-												// TAC - AI Economy - koma13 - START
-												//if (bValid)
-												if (bValid && (iValue > iBestValue))
-												// TAC - AI Economy - koma13 - END
-												{
-													eBestProfession = eLoopProfession;
-													iBestValue = iValue;
-													iBestPlot = iI;
-												}
-											}
+											iValue = AI_professionValue(eLoopProfession, pUnit, pLoopPlot, pWorkingUnit);
 										}
+										// TAC - AI Economy - koma13 - END
+										if ((pWorkingUnit->isColonistLocked() || (iValue <= AI_professionValue(pWorkingUnit->getProfession(), pWorkingUnit, pLoopPlot, NULL))))
+										{
+											bValid = false;
+										}
+									}
+									// TAC - AI Economy - koma13 - START
+									//if (bValid)
+									if (bValid && (iValue > iBestValue))
+										// TAC - AI Economy - koma13 - END
+									{
+										eBestProfession = eLoopProfession;
+										iBestValue = iValue;
+										iBestPlot = iI;
 									}
 								}
 							}
 						}
 					}
-					else
+				}
+				else
+				{
+					int iValue = AI_professionValue(eLoopProfession, pUnit, NULL, NULL);
+					//if (iValue > iBestValue)	// TAC - AI Economy - koma13
 					{
-						int iValue = AI_professionValue(eLoopProfession, pUnit, NULL, NULL);
-						//if (iValue > iBestValue)	// TAC - AI Economy - koma13
+						bool bValid = true;
+						if (!pUnit->canHaveProfession(eLoopProfession, false))
 						{
-							bool bValid = true;
-							if (!pUnit->canHaveProfession(eLoopProfession, false))
-							{
-								CvUnit* pWorstUnit = AI_getWorstProfessionUnit(eLoopProfession);
-								// R&R, ray, removed unnecessary Assert from developing feature
-								// FAssert(pWorstUnit != pUnit && pWorstUnit != NULL);
-								// TAC - AI Economy - koma13 - START
-								if (pWorstUnit != NULL && !pWorstUnit->isColonistLocked())
-								{
-									iValue = AI_professionValue(eLoopProfession, pUnit, NULL, pWorstUnit);
-								}
-								// TAC - AI Economy - koma13 - END
-								if (pWorstUnit == NULL || pWorstUnit->isColonistLocked() || (iValue <= AI_professionValue(eLoopProfession, pWorstUnit, NULL, NULL)))
-								{
-									bValid = false;
-								}
-							}
-
+							CvUnit* pWorstUnit = AI_getWorstProfessionUnit(eLoopProfession);
+							// R&R, ray, removed unnecessary Assert from developing feature
+							// FAssert(pWorstUnit != pUnit && pWorstUnit != NULL);
 							// TAC - AI Economy - koma13 - START
-							//if (bValid)
-							if (bValid && iValue > iBestValue)
-							// TAC - AI Economy - koma13 - END
+							if (pWorstUnit != NULL && !pWorstUnit->isColonistLocked())
 							{
-								eBestProfession = eLoopProfession;
-								iBestValue = iValue;
-								iBestPlot = -1;
+								iValue = AI_professionValue(eLoopProfession, pUnit, NULL, pWorstUnit);
 							}
+							// TAC - AI Economy - koma13 - END
+							if (pWorstUnit == NULL || pWorstUnit->isColonistLocked() || (iValue <= AI_professionValue(eLoopProfession, pWorstUnit, NULL, NULL)))
+							{
+								bValid = false;
+							}
+						}
+
+						// TAC - AI Economy - koma13 - START
+						//if (bValid)
+						if (bValid && iValue > iBestValue)
+							// TAC - AI Economy - koma13 - END
+						{
+							eBestProfession = eLoopProfession;
+							iBestValue = iValue;
+							iBestPlot = -1;
 						}
 					}
 				}
@@ -3230,7 +3606,7 @@ CvUnit* CvCityAI::AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 		}
 	}
 
-	if(eBestProfession == NO_PROFESSION)
+	if (eBestProfession == NO_PROFESSION)
 	{
 		if (getPopulation() > 1)
 		{
@@ -3239,9 +3615,9 @@ CvUnit* CvCityAI::AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 		}
 		return NULL;
 	}
-		
+
 	CvUnit* pDisplacedUnit = NULL;
-	
+
 	if (!GC.getProfessionInfo(eBestProfession).isWorkPlot())
 	{
 		if (!pUnit->canHaveProfession(eBestProfession, false))
@@ -3281,12 +3657,12 @@ CvUnit* CvCityAI::AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 	{
 		setUnitWorkingPlot(iBestPlot, pUnit->getID());
 	}
-	
+
 	FAssert(iBestPlot != -1 || !GC.getProfessionInfo(eBestProfession).isWorkPlot());
 	FAssert(iBestPlot == -1 || isUnitWorkingAnyPlot(pUnit));
-	
+
 	return pDisplacedUnit;
-}	
+}
 
 //iValueA1 - Value of passed unit with original profession.
 //iValueA2 - Value of passed unit with loop profession.
@@ -4522,15 +4898,16 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 
 					// We value the yield by what we would have had to pay for it in
 					// a port as long as we only have a small amount of it
-					const int iBaselineAmount = 50;
+					const int iBaselineAmount = GC.getGameINLINE().getCargoYieldCapacity()*2;
 
 					// We want to encourage the production of a least a small
 					// amount of any given yield since that makes it more
 					// likely that it can be used as input
 					if (getYieldStored(eYield) <= iBaselineAmount)
 					{
-						const int iBestBuyPrice = std::min(kParent.getYieldSellPrice(eYield), kParent.getYieldAfricaSellPrice(eYield));
-						iValue = iAmount * iBestBuyPrice;
+						//const int iBestBuyPrice = std::min(kParent.getYieldSellPrice(eYield), kParent.getYieldAfricaSellPrice(eYield));
+						//iValue = iAmount * iBestBuyPrice;
+						break; // Use the default player level values
 					}
 					else
 					{ 
@@ -4556,6 +4933,12 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 			{
 				const int populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
 				iValue = static_cast<int>(iAmount * YIELD_TOOLS_BASE_VALUE + populationMultiplier);
+
+				if (AI_isPort() || AI_isMajorCity())
+				{ 
+					iValue *= 150;
+					iValue /= 100;
+				}
 			}
 			break;
 		case YIELD_BLADES:
@@ -4567,10 +4950,16 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_GEMS:
 		case YIELD_LUXURY_GOODS:
 			break;
-		case YIELD_HAMMERS:
+			case YIELD_HAMMERS:
 			{
 				const int populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
 				iValue = static_cast<int>(iAmount * YIELD_HAMMERS_BASE_VALUE + populationMultiplier);
+
+				if (AI_isPort() || AI_isMajorCity())
+				{
+					iValue *= 150;
+					iValue /= 100;
+				}
 			}
 			break;
 		case YIELD_BELLS:
@@ -6488,4 +6877,62 @@ void CvCityAI::write(FDataStreamBase* pStream)
 	CvSavegameWriter writer(writerbase);
 	write(writer);
 	writerbase.WriteFile();
+}
+
+void CvCityAI::AI_doSettlerProfessionCheat()
+{
+	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+
+	if (!(!kOwner.isHuman() && !kOwner.isNative() && !GC.getGameINLINE().isBarbarianPlayer(kOwner.getID()) && !kOwner.isEurope() && getPopulation() > 3))
+		return;
+	
+	// Hackish way to cache this compution
+	static ProfessionTypes eSettlerProfession = NO_PROFESSION;
+
+	if (eSettlerProfession == NO_PROFESSION)
+	{
+		for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+		{
+			const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+
+			if (kProfession.canFound() && GC.getCivilizationInfo(kOwner.getCivilizationType()).isValidProfession(eProfession))
+			{
+				eSettlerProfession = eProfession;
+				break;
+			}
+		}
+	}
+
+	if (eSettlerProfession == NO_PROFESSION)
+		return;
+
+	//make sure all equipment is available
+	if (kOwner.hasContentsYieldEquipmentAmount(eSettlerProfession))
+	{
+		for (YieldTypes eYieldType = FIRST_YIELD; eYieldType < NUM_YIELD_TYPES; ++eYieldType)
+		{
+			const int iYieldRequired = kOwner.getYieldEquipmentAmount(eSettlerProfession, eYieldType);
+			const int iYieldsStoredInCity = getYieldStored(eYieldType);
+
+			const int iMissing = iYieldRequired - iYieldsStoredInCity;
+
+			//WTP, ray, Settler Professsion - START
+			if (iMissing > iYieldsStoredInCity)
+			{
+				// we check the required Yields for AI so it can equip Settlers
+				const int iYieldAmountToBeAdded = iMissing - iYieldsStoredInCity;
+
+				//I explicitly use Europe Sell Price because Europe Buy Price would be too expensive.
+				const int iPriceSettlerYieldPrice = iYieldAmountToBeAdded * kOwner.getYieldSellPrice(eYieldType);
+
+				// we give Yields required for a little gold
+				if (kOwner.getGold() > iPriceSettlerYieldPrice)
+				{
+					changeYieldStored(eYieldType, iYieldAmountToBeAdded);
+					kOwner.changeGold(-iPriceSettlerYieldPrice);
+				}
+			}
+			//WTP, ray, Settler Professsion - END
+		}
+	}
 }

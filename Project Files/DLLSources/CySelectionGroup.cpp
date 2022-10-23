@@ -122,12 +122,12 @@ bool CySelectionGroup::canMoveInto(CyPlot* pPlot, bool bAttack)
 
 bool CySelectionGroup::canMoveOrAttackInto(CyPlot* pPlot, bool bDeclareWar)
 {
-	return m_pSelectionGroup ? m_pSelectionGroup->canMoveOrAttackInto(pPlot->getPlot(), bDeclareWar) : false;
+	return m_pSelectionGroup ? m_pSelectionGroup->canMoveOrAttackInto(*pPlot->getPlot(), bDeclareWar) : false;
 }
 
 bool CySelectionGroup::canMoveThrough(CyPlot* pPlot)
 {
-	return m_pSelectionGroup ? m_pSelectionGroup->canMoveThrough(pPlot->getPlot()) : false;
+	return m_pSelectionGroup ? m_pSelectionGroup->canMoveThrough(*pPlot->getPlot()) : false;
 }
 
 bool CySelectionGroup::canFight()
@@ -251,24 +251,18 @@ CyPlot* CySelectionGroup::getPathEndTurnPlot()
 	return m_pSelectionGroup ? new CyPlot(m_pSelectionGroup->getPathEndTurnPlot()) : NULL;
 }
 
-// TAC - AI Improved Naval AI - koma13 - START
-/*
 bool CySelectionGroup::generatePath(CyPlot* pFromPlot, CyPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns)
 {
 	return m_pSelectionGroup ? m_pSelectionGroup->generatePath(pFromPlot->getPlot(), pToPlot->getPlot(), iFlags, bReuse, piPathTurns) : false;
-}
-*/
-
-bool CySelectionGroup::generatePath(CyPlot* pFromPlot, CyPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns, bool bIgnoreDanger)
-{
-	return m_pSelectionGroup ? m_pSelectionGroup->generatePath(pFromPlot->getPlot(), pToPlot->getPlot(), iFlags, bReuse, piPathTurns, bIgnoreDanger) : false;
 }
 // TAC - AI Improved Naval AI - koma13 - END
 
 void CySelectionGroup::resetPath()
 {
 	if (m_pSelectionGroup)
-		m_pSelectionGroup->resetPath();
+		//m_pSelectionGroup->resetPath();
+		CvSelectionGroup::path_finder.Reset();
+
 }
 
 bool CySelectionGroup::isAssignedTradeRoute(int iRouteID) const

@@ -231,7 +231,7 @@ DllExport bool isEmpty(const char* szString);
 DllExport bool isEmpty(const std::string& szStr);
 DllExport bool isEmpty(const wchar* szString);
 DllExport bool isEmpty(const std::wstring& szStr);
-DllExport bool PUF_isVisibleDebug( const CvUnit* pUnit, int iData1, int iData2 = -1);
+DllExport bool PUF_isVisibleDebug(const CvUnit* pUnit, int iData1, int iData2 = -1);
 DllExport void boolsToString(const bool* pBools, int iNumBools, CvString* szOut);
 DllExport void stringToBools(const char* szString, int* iNumBools, bool** ppBools);
 CvGameTextMgr.h
@@ -1192,7 +1192,7 @@ CvSelectionGroup.h
 	DllExport void clearUnits();
 	DllExport bool addUnit(CvUnit* pUnit, bool bMinimalChange);
 	DllExport CLLNode<IDInfo>* deleteUnitNode(CLLNode<IDInfo>* pNode);
-	DllExport CLLNode<IDInfo>* nextUnitNode(CLLNode<IDInfo>* pNode) const;
+	DllExport inline CLLNode<IDInfo>* nextUnitNode(CLLNode<IDInfo>* pNode) const
 	DllExport int getNumUnits() const;
 	DllExport int getUnitIndex(CvUnit* pUnit, int maxIndex = -1) const;
 	DllExport CLLNode<IDInfo>* headUnitNode() const;

@@ -46,10 +46,31 @@ bool FAssertDlg(const char*, const char*, const char*, unsigned int,
 
 #endif
 
+// K-mod. moved the following macro from CvInitCore.h to here (and modified it)
+// advc.006: Renamed from "FASSERT_BOUNDS", casts added
+// advc.006f: fnString (function name) param removed
+#define FAssertBounds(lower, upper, index) \
+	if (static_cast<int>(index) < static_cast<int>(lower)) \
+	{ \
+		char acOut[256]; \
+		snprintf(acOut, 256, "Index expected to be >= %d. (value: %d)", \
+				static_cast<int>(lower), static_cast<int>(index)); \
+		FAssertMsg(static_cast<int>(index) >= static_cast<int>(lower), acOut); \
+	} \
+	else if (static_cast<int>(index) >= static_cast<int>(upper)) \
+	{ \
+		char acOut[256]; \
+		snprintf(acOut, 256, "Index expected to be < %d. (value: %d)", \
+				static_cast<int>(upper), static_cast<int>(index)); \
+		FAssertMsg(static_cast<int>(index) < static_cast<int>(upper), acOut); \
+	}
+// K-Mod end
 #else
 // FASSERT_ENABLE not defined
 #define FAssert( expr )
 #define FAssertMsg( expr, msg )
+// K-Mod:
+#define FAssertBounds(lower,upper,index) (void)0
 
 #endif
 

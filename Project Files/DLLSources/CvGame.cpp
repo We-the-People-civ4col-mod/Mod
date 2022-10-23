@@ -1649,7 +1649,7 @@ void CvGame::updateColoredPlots()
 										// Erik: Ships implicitly have "nobadgoodies". TODO: Evaluate that this holds true for alls ships
 										if (pHeadSelectedUnit->isNoBadGoodies() || pHeadSelectedUnit->getDomainType() == DOMAIN_SEA)
 										{
-											if (pLoopPlot->isRevealedGoody(pHeadSelectedUnit->getTeam()) && (pHeadSelectedUnit->canMoveInto(pLoopPlot)))
+											if (pLoopPlot->isRevealedGoody(pHeadSelectedUnit->getTeam()) && (pHeadSelectedUnit->canMoveInto(*pLoopPlot)))
 											{
 												gDLL->getEngineIFace()->addColoredPlot(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_GREEN")).getColor(), PLOT_STYLE_CIRCLE, PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS);
 											}
@@ -7373,4 +7373,12 @@ void CvGame::writeDesyncLog()
 	// create a popup telling the task is done
 	CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_DESYNC_LOG_COMPLETE);
 	gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
+}
+
+int CvGame::getRemainingForcedPeaceTurns() const
+{
+	const int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+	const int forcedPeaceTurns = GC.getDefineINT("COLONIAL_FORCED_PEACE_TURNS") * gamespeedMod / 100;
+	const int diff = forcedPeaceTurns - GC.getGameINLINE().getElapsedGameTurns();
+	return std::max(0, diff);
 }

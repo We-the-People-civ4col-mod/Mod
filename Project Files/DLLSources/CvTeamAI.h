@@ -133,7 +133,7 @@ public:
 	WarPlanTypes AI_getWarPlan(TeamTypes eIndex) const;
 	bool AI_isChosenWar(TeamTypes eIndex) const;
 	bool AI_isSneakAttackPreparing(TeamTypes eIndex) const;
-	bool AI_isSneakAttackReady(TeamTypes eIndex) const;
+	bool AI_isSneakAttackReady(TeamTypes eIndex /* K-Mod (any team): */ = NO_TEAM) const;
 	void AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar = true);
 
 	int AI_teamCloseness(TeamTypes eIndex, int iMaxDistance = -1) const;
@@ -166,6 +166,8 @@ public:
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
+	int AI_plotDefense(CvPlot const& kPlot, bool bIgnoreBuilding = false,
+		bool bGarrisonStrength = false) const; // advc.500b
 protected:
 
 	static CvTeamAI* m_aTeams;

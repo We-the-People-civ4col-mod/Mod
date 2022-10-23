@@ -145,7 +145,8 @@ public:
 	// Super Forts end
 
 	int defenseModifier(TeamTypes eDefender, bool bHelp = false) const;
-	int movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const;
+	int movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,														// Exposed to Python
+		bool bAssumeRevealed = false) const; // advc.001i, WTP: default is false rather than true
 
 	bool isAdjacentOwned() const;
 	bool isAdjacentPlayer(PlayerTypes ePlayer, bool bLandOnly = false) const;
@@ -238,6 +239,12 @@ public:
 	CvArea* waterArea() const;
 	CvArea* secondWaterArea() const;
 	int getArea() const;
+	// <advc>
+	//inline CvArea& getArea() const { return *m_pArea; }
+	// (This had called CvMap::getArea in BtS)
+	//	inline CvArea* area() const { return m_pArea; }													// Exposed to Python
+	inline bool isArea(CvArea const& kArea) const { return (area() == &kArea); }
+	//inline bool sameArea(CvPlot const& kPlot) const { return isArea(kPlot.getArea()); }
 	void setArea(int iNewValue);
 
 	//WTP, ray, Large Rivers - Nightinggale addition - start

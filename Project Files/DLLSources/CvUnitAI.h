@@ -68,8 +68,8 @@ public:
 	bool AI_attackFromTransport(CvPlot* pHintPlot, int iLowOddsThreshold, int iHighOddsThreshold);
 	int AI_getMovePriority() const;
 	void AI_setMovePriority(int iNewValue);
-	bool AI_hasAIChanged(int iNumTurns);
-	int AI_getLastAIChangeTurn();
+	bool AI_hasAIChanged(int iNumTurns) const;
+	int AI_getLastAIChangeTurn() const;
 
 	void AI_doInitialMovePriority();
 	void AI_doFound();
@@ -190,7 +190,7 @@ protected:
 
 	bool AI_collectGoods();
 
-	bool AI_deliverUnits();
+	bool AI_deliverUnits(UnitAITypes eUnitAI = NO_UNITAI);
 	
 	CvPlot* AI_bestDestinationPlot(bool bIgnoreDanger = false);	// TAC - AI Improved Naval AI - koma13
 

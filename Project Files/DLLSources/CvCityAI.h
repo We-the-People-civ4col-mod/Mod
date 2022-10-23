@@ -177,6 +177,10 @@ public:
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
+	void AI_doSettlerProfessionCheat();
+
+	void AI_doHurry(bool bForce = false);
+
 protected:
 
 	void AI_resetSavedData();
@@ -222,7 +226,6 @@ protected:
 	int m_iWorkersNeeded;
 	int m_iWorkersHave;
 
-	void AI_doHurry(bool bForce = false);
 	void AI_doEmphasize();
 	void AI_doNativeTrade();
 	int AI_calculateCulturePressure() const;
@@ -252,6 +255,8 @@ protected:
 	void AI_juggleCitizens();
 
 	CvUnit* AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly = false);
+	CvUnit* AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly = false);
+
 	CvUnit* AI_juggleColonist(CvUnit* pUnit);
 
 	void AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB);

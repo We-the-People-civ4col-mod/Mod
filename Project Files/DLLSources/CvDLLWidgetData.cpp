@@ -2550,7 +2550,7 @@ void CvDLLWidgetData::parseContactCivHelp(CvWidgetDataStruct &widgetDataStruct, 
 		{
 			if (player.AI_isStrategy((StrategyTypes) i))
 			{
-				szBuffer.append(CvWString::format(L"\nStrategy %d, Duration %d", i, player.AI_getStrategyDuration((StrategyTypes) i)));
+				szBuffer.append(CvWString::format(L"\nStrategy %s, Duration %d", getStrategyString((StrategyTypes)i).GetCString(), player.AI_getStrategyDuration((StrategyTypes) i)));
 			}
 		}
 		

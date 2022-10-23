@@ -17,6 +17,8 @@ class CvUnitInfo;
 class CvSelectionGroup;
 class FAStarNode;
 class CvArtInfoUnit;
+class KmodPathFinder;
+
 
 class CvSavegameReader;
 class CvSavegameWriter;
@@ -113,17 +115,26 @@ public:
 	bool canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible = false, bool bTestBusy = true);
 	DllExport void doCommand(CommandTypes eCommand, int iData1, int iData2);
 
-	FAStarNode* getPathLastNode() const;
+	//FAStarNode* getPathLastNode() const; // disabled by K-Mod
 	CvPlot* getPathEndTurnPlot() const;
 	int getPathCost() const;
 	// TAC - AI Improved Naval AI - koma13 - START
 	//bool generatePath(const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL) const;
-	bool generatePath(const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL, bool bIgnoreDanger = true) const;
+	//bool generatePath(const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL, bool bIgnoreDanger = true) const;
 	// TAC - AI Improved Naval AI - koma13 - END
+	bool generatePath(const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false,							// Exposed to Python
+		int* piPathTurns = NULL,
+		int iMaxPath = -1, // K-Mod
+		bool bUseTempFinder = false) const; // advc.128
+	KmodPathFinder& getPathFinder() const; // K-Mod
+
 	bool canEnterTerritory(PlayerTypes ePlayer, bool bIgnoreRightOfPassage = false) const;
 	bool canEnterArea(PlayerTypes ePlayer, const CvArea* pArea, bool bIgnoreRightOfPassage = false) const;
 	TeamTypes getDeclareWarUnitMove(const CvPlot* pPlot) const;
-	bool canMoveInto(const CvPlot* pPlot, bool bAttack = false, bool bDeclareWar = false, bool bIgnoreLoad = false) const;
+	bool canMoveInto(CvPlot const& kPlot, bool bAttack = false, bool bDeclareWar = false,					// Exposed to Python
+		bool bIgnoreLoad = false,
+		bool bAssumeVisible = true, // K-Mod
+		bool bDangerCheck = false) const; // advc.001k
 	bool canMoveOrAttackInto(const CvPlot* pPlot, bool bDeclareWar = false) const;
 	bool canMoveThrough(const CvPlot* pPlot) const;
 	void attack(CvPlot* pPlot, bool bQuick);
@@ -768,7 +779,7 @@ public:
 	virtual void AI_setUnitAIType(UnitAITypes eNewValue) = 0;
 	virtual UnitAIStates AI_getUnitAIState() const = 0;
 	virtual void AI_setUnitAIState(UnitAIStates eNewValue) = 0;
-	virtual bool AI_hasAIChanged(int iNumTurns) = 0;
+	virtual bool AI_hasAIChanged(int iNumTurns) const = 0;
 	virtual int AI_sacrificeValue(const CvPlot* pPlot) const = 0;
 	virtual CvPlot* AI_determineDestination(CvPlot** ppMissionPlot, MissionTypes* peMission, MissionAITypes* peMissionAI) = 0;
 	virtual bool AI_moveFromTransport(CvPlot* pHintPlot) = 0;

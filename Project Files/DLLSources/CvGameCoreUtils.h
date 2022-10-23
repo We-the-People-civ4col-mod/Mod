@@ -274,7 +274,7 @@ bool PUF_isCombatTeam(const CvUnit* pUnit, int iData1, int iData2);
 bool PUF_isOtherTeam( const CvUnit* pUnit, int iData1, int iData2 = -1);
 bool PUF_isEnemy( const CvUnit* pUnit, int iData1, int iData2 = -1);
 bool PUF_isVisible( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_isVisibleDebug( const CvUnit* pUnit, int iData1, int iData2 = -1);
+DllExport bool PUF_isVisibleDebug(const CvUnit* pUnit, int iData1, int iData2 = -1);
 bool PUF_canSiege( const CvUnit* pUnit, int iData1, int iData2 = -1);
 bool PUF_isPotentialEnemy( const CvUnit* pUnit, int iData1, int iData2 = -1);
 bool PUF_canDeclareWar( const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
@@ -311,6 +311,8 @@ void sendGameStats(wchar* pURL);
 int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder);
 int pathHeuristic(int iFromX, int iFromY, int iToX, int iToY);
 int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+int pathValid_join(FAStarNode* parent, FAStarNode* node, CvSelectionGroup* pSelectionGroup, int iFlags); // K-Mod
+int pathValid_source(FAStarNode* parent, CvSelectionGroup* pSelectionGroup, int iFlags); // K-Mod
 int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int stepDestValid(int iToX, int iToY, const void* pointer, FAStar* finder);
@@ -339,6 +341,7 @@ void getMissionTypeString(CvWString& szString, MissionTypes eMissionType);
 void getMissionAIString(CvWString& szString, MissionAITypes eMissionAI);
 void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI);
 CvWString getUnitAIStateString(UnitAIStates eUnitAIState);
+CvWString getStrategyString(StrategyTypes eStrategy);
 
 bool shouldMoveBefore(const CvUnit* pUnitA, const CvUnit* pUnitB);
 bool shouldUnitMove(const CvUnit* pUnit);

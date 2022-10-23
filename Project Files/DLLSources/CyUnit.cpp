@@ -65,9 +65,9 @@ bool CyUnit::generatePath(CyPlot* pToPlot, int iFlags, bool bReuse, int* piPathT
 }
 */
 
-bool CyUnit::generatePath(CyPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns, bool bIgnoreDanger)
+bool CyUnit::generatePath(CyPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns)
 {
-	return m_pUnit ? m_pUnit->generatePath(pToPlot->getPlot(), iFlags, bReuse, piPathTurns, bIgnoreDanger) : false;
+	return m_pUnit ? m_pUnit->generatePath(pToPlot->getPlot(), iFlags, bReuse, piPathTurns) : false;
 }
 // TAC - AI Improved Naval AI - koma13 - END
 
@@ -81,7 +81,7 @@ bool CyUnit::canEnterArea(int /*PlayerTypes*/ ePlayer, CyArea* pArea, bool bIgno
 }
 bool CyUnit::canMoveInto(CyPlot* pPlot, bool bAttack, bool bDeclareWar, bool bIgnoreLoad)
 {
-	return m_pUnit ? m_pUnit->canMoveInto(pPlot->getPlot(), bAttack, bDeclareWar, bIgnoreLoad) : false;
+	return m_pUnit ? m_pUnit->canMoveInto(*pPlot->getPlot(), bAttack, bDeclareWar, bIgnoreLoad) : false;
 }
 bool CyUnit::canMoveOrAttackInto(CyPlot* pPlot, bool bDeclareWar)
 {

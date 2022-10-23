@@ -22,6 +22,7 @@
 #include "FProfiler.h"
 
 #include "CvSavegame.h"
+#include "BetterBTSAI.h"
 // Public Functions...
 
 CvTeam::CvTeam()
@@ -556,10 +557,7 @@ bool CvTeam::canDeclareWar(TeamTypes eTeam) const
 
 	if (hasColonialPlayer() && GET_TEAM(eTeam).hasColonialPlayer())
 	{
-		int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
-		int forcedPeaceTurns= GC.getDefineINT("COLONIAL_FORCED_PEACE_TURNS");
-		forcedPeaceTurns = forcedPeaceTurns * gamespeedMod /100;
-		if (GC.getGameINLINE().getElapsedGameTurns() < forcedPeaceTurns )
+		if (GC.getGame().getRemainingForcedPeaceTurns() > 0)
 		{
 			return false;
 		}
@@ -864,6 +862,8 @@ void CvTeam::declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanType
 		}
 
 		gDLL->getEventReporterIFace()->changeWar(true, getID(), eTeam);
+		if (gTeamLogLevel >= 1) 
+			logBBAI(" Team %d (%S) declares war on team %d", getID(), GET_PLAYER(getLeaderID()).getCivilizationDescription(0), eTeam); // BETTER_BTS_AI_MOD (10/02/09, jdog5000): AI logging
 
 		cancelDefensivePacts(getID());
 
@@ -985,6 +985,8 @@ void CvTeam::makePeace(TeamTypes eTeam, bool bBumpUnits)
 		GC.getGameINLINE().addReplayMessage(REPLAY_MESSAGE_MAJOR_EVENT, getLeaderID(), szBuffer, -1, -1, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
 
 		gDLL->getEventReporterIFace()->changeWar(false, getID(), eTeam);
+		if (gTeamLogLevel >= 1) 
+			logBBAI(" Team % d(% S) and team % d(% S) make peace", getID(), GET_PLAYER(getLeaderID()).getCivilizationDescription(0), eTeam, GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationDescription(0)); // BETTER_BTS_AI_MOD, AI logging, 05/21/10, jdog5000
 	}
 }
 
@@ -1026,6 +1028,8 @@ void CvTeam::meet(TeamTypes eTeam, bool bNewDiplo)
 	{
 		makeHasMet(eTeam, bNewDiplo);
 		GET_TEAM(eTeam).makeHasMet(getID(), bNewDiplo);
+		if (gTeamLogLevel >= 2 && GC.getGame().isFinalInitialized() && eTeam != getID() && isAlive() && GET_TEAM(eTeam).isAlive()) 
+			logBBAI(" Team % d(% S) meets team % d(% S)", getID(), GET_PLAYER(getLeaderID()).getCivilizationDescription(0), eTeam, GET_PLAYER(GET_TEAM(eTeam).getLeaderID()).getCivilizationDescription(0)); // BETTER_BTS_AI_MOD, AI logging, 02/20/10, jdog5000
 	}
 }
 

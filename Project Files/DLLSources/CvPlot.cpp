@@ -3340,8 +3340,10 @@ int CvPlot::defenseModifier(TeamTypes eDefender, bool bHelp) const
 	return iModifier;
 }
 
-
-int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
+// bAssumeRevealed=true will allow a unit (AI or player controlled) to use the actual cost rather 
+// than the worst-case estimate if not revealed
+int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
+	bool bAssumeRevealed) const // advc.001i
 {
 	int iRegularCost;
 	int iRouteCost;
@@ -3354,10 +3356,12 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 		return GC.getMOVE_DENOMINATOR();
 	}
 
-	if (!isRevealed(pUnit->getTeam(), false))
+	if (!bAssumeRevealed && !isRevealed(pUnit->getTeam(), false))
 	{
 		if (pUnit->getDomainType() == DOMAIN_SEA)
 		{
+			// Note: Not strictly true due to the introduction of storms which can
+			// "drain" all movement points
 			return GC.getMOVE_DENOMINATOR();
 		}
 		else
@@ -4909,6 +4913,14 @@ int CvPlot::getUpgradeProgress() const
 
 int CvPlot::getUpgradeTimeLeft(ImprovementTypes eImprovement, PlayerTypes ePlayer) const
 {
+	// If the improvement is currently not owned, return the token 1 turn
+	// TOOD: Consider refactoring this so we can return a value that indicates that the
+	// value should be ignored
+	if (ePlayer == NO_PLAYER)
+	{
+		return 1;
+	}
+		
 	int iUpgradeLeft;
 	int iUpgradeRate;
 	int iTurnsLeft;
@@ -5204,7 +5216,7 @@ CvPlot* CvPlot::getInlandCorner() const
 		switch (aiShuffle[iI])
 		{
 		case 0:
-			pRiverPlot = GC.getMapINLINE().plotSorenINLINE(getX_INLINE(), getY_INLINE()); break;
+			pRiverPlot = GC.getMapINLINE().plotSoren(getX_INLINE(), getY_INLINE()); break;
 		case 1:
 			pRiverPlot = plotDirection(getX_INLINE(), getY_INLINE(), DIRECTION_NORTH); break;
 		case 2:

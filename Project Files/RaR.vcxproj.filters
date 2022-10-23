@@ -445,6 +445,9 @@
     <ClCompile Include="DLLSources\CyDataInterface.cpp">
       <Filter>Python\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\BetterBTSAI.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -809,6 +812,8 @@
     </ClInclude>
     <ClInclude Include="DLLSources\NetworkDataPacking.h">
       <Filter>CV\Header</Filter>
+    <ClInclude Include="DLLSources\BetterBTSAI.h">
+      <Filter>CV\CPP</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\CvString.h">
       <Filter>Misc\Header</Filter>

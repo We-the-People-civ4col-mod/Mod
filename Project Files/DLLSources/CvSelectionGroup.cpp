@@ -24,6 +24,10 @@
 #include "CvPopupInfo.h"
 #include "CvTradeRoute.h"
 #include "CvSavegame.h"
+#include "KmodPathFinder.h"
+#include "BetterBTSAI.h"
+
+KmodPathFinder CvSelectionGroup::path_finder; // K-Mod
 
 // Public Functions...
 
@@ -1973,7 +1977,7 @@ bool CvSelectionGroup::canMoveInto(CvPlot* pPlot, bool bAttack)
 		{
 			pLoopUnit = ::getUnit(pUnitNode->m_data);
 
-			if (pLoopUnit->canMoveInto(pPlot, bAttack))
+			if (pLoopUnit->canMoveInto(*pPlot, bAttack))
 			{
 				return true;
 			}
@@ -1983,57 +1987,52 @@ bool CvSelectionGroup::canMoveInto(CvPlot* pPlot, bool bAttack)
 
 	return false;
 }
-
 
 bool CvSelectionGroup::canMoveOrAttackInto(CvPlot* pPlot, bool bDeclareWar)
 {
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
+	// K-Mod. (hack to avoid breaking the DllExport) advc: 2x const, CvPlot&
+	return canMoveOrAttackInto(*pPlot, bDeclareWar, false);
+}
 
-	if (getNumUnits() > 0)
+bool CvSelectionGroup::canMoveOrAttackInto(CvPlot const& kPlot, bool bDeclareWar,
+	bool bCheckMoves, bool bAssumeVisible) const // K-Mod
+{
+	if (getNumUnits() <= 0)
+		return false;
+
+	bool bVisible = bAssumeVisible || kPlot.isVisible(getHeadTeam(), false); // K-Mod
+	for (CLLNode<IDInfo> const* pUnitNode = headUnitNode(); pUnitNode != NULL;
+		pUnitNode = nextUnitNode(pUnitNode))
 	{
-		pUnitNode = headUnitNode();
-
-		while (pUnitNode != NULL)
+		CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		//if (pLoopUnit->canMoveOrAttackInto(pPlot, bDeclareWar))
+		if ((!bCheckMoves || pLoopUnit->canMove()) && // K-Mod
+			(bVisible ? pLoopUnit->canMoveOrAttackInto(&kPlot, bDeclareWar) :
+				pLoopUnit->canMoveInto(kPlot, false, bDeclareWar, false/*, false*/)))
 		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-
-			if (pLoopUnit->canMoveOrAttackInto(pPlot, bDeclareWar))
-			{
-				return true;
-			}
-			pUnitNode = nextUnitNode(pUnitNode);
+			return true;
 		}
 	}
-
 	return false;
 }
 
 
-bool CvSelectionGroup::canMoveThrough(CvPlot* pPlot)
+bool CvSelectionGroup::canMoveThrough(CvPlot const& kPlot, bool bDeclareWar, bool bAssumeVisible) const
 {
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
+	if (getNumUnits() <= 0)
+		return false;
 
-	if (getNumUnits() > 0)
+	for (CLLNode<IDInfo> const* pUnitNode = headUnitNode(); pUnitNode != NULL;
+		pUnitNode = nextUnitNode(pUnitNode))
 	{
-		pUnitNode = headUnitNode();
-
-		while (pUnitNode != NULL)
+		CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		//if (!pLoopUnit->canMoveThrough(kPlot))
+		if (!pLoopUnit->canMoveInto(kPlot, false, bDeclareWar, true/*, bAssumeVisible*/)) // K-Mod
 		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-
-			if (!(pLoopUnit->canMoveThrough(pPlot)))
-			{
-				return false;
-			}
-			pUnitNode = nextUnitNode(pUnitNode);
+			return false;
 		}
-
-		return true;
 	}
-
-	return false;
+	return true;
 }
 
 
@@ -2546,17 +2545,33 @@ bool CvSelectionGroup::groupDeclareWar(CvPlot* pPlot, bool bForce)
 // Returns true if attack was made...
 bool CvSelectionGroup::groupAttack(int iX, int iY, int iFlags, bool& bFailedAlreadyFighting)
 {
-	CvPlot* pDestPlot = GC.getMapINLINE().plotINLINE(iX, iY);
+	FAssert(!isBusy()); // K-Mod
 
-	if (iFlags & MOVE_THROUGH_ENEMY)
+	CvPlot* pDestPlot = GC.getMap().plot(iX, iY);
+
+	// K-Mod. Rather than clearing the existing path data; use a temporary pathfinder.
+	KmodPathFinder final_path;
+	final_path.SetSettings(this, iFlags & ~MOVE_DECLARE_WAR);
+	/*if (iFlags & MOVE_THROUGH_ENEMY) {
+	if (generatePath(plot(), pDestPlot, iFlags))
+	pDestPlot = getPathFirstPlot();
+	}*/ // BtS
+	// K-Mod
+	if (iFlags & (MOVE_THROUGH_ENEMY | MOVE_ATTACK_STACK) && !(iFlags & MOVE_DIRECT_ATTACK))
 	{
-		if (generatePath(plot(), pDestPlot, iFlags))
+		if (final_path.GeneratePath(pDestPlot))
 		{
-			pDestPlot = getPathFirstPlot();
+			pDestPlot = final_path.GetPathFirstPlot();
 		}
-	}
+	} // K-Mod end
 
 	FAssertMsg(pDestPlot != NULL, "DestPlot is not assigned a valid value");
+
+	if (getNumUnits() <= 0)
+		return false; // advc
+
+	if (/*getDomainType0) != DOMAIN_AIR && */stepDistance(getX(), getY(), pDestPlot->getX(), pDestPlot->getY()) != 1)
+		return false; // advc
 
 	bool bStack = (isHuman() && GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_STACK_ATTACK));
 	bool bAttack = false;
@@ -2568,9 +2583,13 @@ bool CvSelectionGroup::groupAttack(int iX, int iY, int iFlags, bool& bFailedAlre
 
 	if (getNumUnits() > 0)
 	{
-		if (stepDistance(getX(), getY(), pDestPlot->getX_INLINE(), pDestPlot->getY_INLINE()) == 1)
+		//if (stepDistance(getX(), getY(), pDestPlot->getX_INLINE(), pDestPlot->getY_INLINE()) == 1)
 		{
-			if ((iFlags & MOVE_DIRECT_ATTACK) || (iFlags & MOVE_DIRECT_RAID) || (generatePath(plot(), pDestPlot, iFlags) && (getPathFirstPlot() == pDestPlot)))
+			//if ((iFlags & MOVE_DIRECT_ATTACK) || (iFlags & MOVE_DIRECT_RAID) || (generatePath(plot(), pDestPlot, iFlags) && (getPathFirstPlot() == pDestPlot)))
+			// K-Mod.
+			if (iFlags & (MOVE_THROUGH_ENEMY | MOVE_ATTACK_STACK | MOVE_DIRECT_ATTACK | MOVE_DIRECT_RAID) ||
+				/*getDomainType() == DOMAIN_AIR ||*/ (final_path.GeneratePath(pDestPlot) &&
+					final_path.GetPathFirstPlot() == pDestPlot)) // K-Mod end
 			{
 				// R&R, ray, Natives raiding party
 				int iAttackOdds;
@@ -2673,11 +2692,12 @@ bool CvSelectionGroup::groupAttack(int iX, int iY, int iFlags, bool& bFailedAlre
 						if (bFailedAlreadyFighting || !bStack)
 						{
 							// if this is AI stack, follow through with the attack to the end
-							if (!isHuman() && getNumUnits() > 1)
+							if (!isHuman() && getNumUnits() > 1 &&
+								// K-Mod: if this is AI stack, follow through with the attack to the end
+								!(iFlags & MOVE_SINGLE_ATTACK))
 							{
 								AI_queueGroupAttack(iX, iY);
 							}
-
 							break;
 						}
 					}
@@ -2725,7 +2745,7 @@ void CvSelectionGroup::groupMove(CvPlot* pPlot, bool bCombat, CvUnit* pCombatUni
 		// K-Mod
 		if (pLoopUnit == NULL)
 			continue;
-		if (pLoopUnit->canMove() && (bCombat ? pLoopUnit->canMoveOrAttackInto(pPlot) : pLoopUnit->canMoveInto(pPlot)))
+		if (pLoopUnit->canMove() && (bCombat ? pLoopUnit->canMoveOrAttackInto(pPlot) : pLoopUnit->canMoveInto(*pPlot)))
 		{
 			pLoopUnit->move(pPlot, true);
 		}
@@ -2763,7 +2783,14 @@ void CvSelectionGroup::groupMove(CvPlot* pPlot, bool bCombat, CvUnit* pCombatUni
 			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = nextUnitNode(pUnitNode);
 
-			pLoopUnit->ExecuteMove(((float)(GC.getMissionInfo(MISSION_MOVE_TO).getTime() * gDLL->getMillisecsPerTurn())) / 1000.0f, false);
+			try 
+			{ 
+				pLoopUnit->ExecuteMove(((float)(GC.getMissionInfo(MISSION_MOVE_TO).getTime() * gDLL->getMillisecsPerTurn())) / 1000.0f, false);
+			}
+			catch (...)
+			{
+				logBBAI(" pLoopUnit->ExecuteMove exception!");
+			}
 		}
 	}
 }
@@ -2771,8 +2798,8 @@ void CvSelectionGroup::groupMove(CvPlot* pPlot, bool bCombat, CvUnit* pCombatUni
 // Returns true if move was made...
 bool CvSelectionGroup::groupPathTo(int iX, int iY, int iFlags)
 {
-	CvPlot* pDestPlot;
-	CvPlot* pPathPlot;
+	KmodPathFinder final_path; // K-Mod
+	CvPlot* const pOriginPlot = plot(); // K-Mod
 
 	if (at(iX, iY))
 	{
@@ -2783,40 +2810,69 @@ bool CvSelectionGroup::groupPathTo(int iX, int iY, int iFlags)
 	FAssert(getOwnerINLINE() != NO_PLAYER);
 	FAssert(headMissionQueueNode() != NULL);
 
-	pDestPlot = GC.getMapINLINE().plotINLINE(iX, iY);
+	CvPlot* const pDestPlot = GC.getMapINLINE().plotINLINE(iX, iY);
 	FAssertMsg(pDestPlot != NULL, "DestPlot is not assigned a valid value");
 
 	FAssertMsg(canAllMove(), "canAllMove is expected to be true");
 
+	/*
 	if (!generatePath(plot(), pDestPlot, iFlags))
 	{
 		return false;
 	}
 
-	pPathPlot = getPathFirstPlot();
+	pPathPlot = getPathFirstPlot(); // BtS
+	*/
+
+	// K-Mod. I've added & ~MOVE_DECLARE_WAR so that if we need to declare war at this point, and haven't yet done so,
+	// the move will fail here rather than splitting the group inside groupMove.
+	// Also, I've change it to use a different pathfinder, to avoid clearing the path data - and to avoid OOS errors.
+	final_path.SetSettings(this, iFlags & ~MOVE_DECLARE_WAR);
+	if (!final_path.GeneratePath(pDestPlot))
+		return false;
+
+	CvPlot* pPathPlot = final_path.GetPathFirstPlot();
+	// K-Mod end
 
 	if (groupAmphibMove(pPathPlot, iFlags))
-	{
 		return false;
-	}
 
+	/*
 	bool bForce = false;
 	MissionAITypes eMissionAI = AI_getMissionAIType();
 	if (eMissionAI == MISSIONAI_PILLAGE)
-	{
 		bForce = true;
-	}
-
 	if (groupDeclareWar(pPathPlot, bForce))
-	{
-		return false;
-	}
+		return false;*/ // BtS
+	// Disabled by K-Mod. AI war decisions have no business being here.
 
 	bool bEndMove = false;
 	if(pPathPlot == pDestPlot)
 		bEndMove = true;
 
-	groupMove(pPathPlot, iFlags & MOVE_THROUGH_ENEMY, NULL, bEndMove);
+	//groupMove(pPathPlot, iFlags & MOVE_THROUGH_ENEMY, NULL, bEndMove);
+	groupMove(pPathPlot, false, NULL, bEndMove); // K-Mod
+
+	FAssert(getNumUnits() == 0 || atPlot(pPathPlot)); // K-Mod
+
+	// K-Mod.
+	if (!AI_isControlled() && !bEndMove)
+	{
+		//If the step we just took will make us change our path to something longer, then cancel the move.
+		// This prevents units from wasting all their moves by trying to walk around enemy units.
+		FAssert(final_path.IsPathComplete());
+		std::pair<int, int> old_moves = std::make_pair(final_path.GetPathTurns(), -final_path.GetFinalMoves());
+		if (!final_path.GeneratePath(pDestPlot)
+			|| std::make_pair(final_path.GetPathTurns(), -final_path.GetFinalMoves()) > old_moves)
+		{
+			clearMissionQueue();
+		}
+		// Also, if the step we just took causes us to backtrack - its probably because we've lost vision of a unit that was blocking the path.
+		// Apply the MOVE_ASSUME_VISIBLE flag, so that we remember to go the long way around.
+		else if (final_path.GetPathFirstPlot() == pOriginPlot)
+			headMissionQueueNode()->m_data.iFlags |= MOVE_ASSUME_VISIBLE;
+	}
+	// K-Mod end
 
 	return true;
 }
@@ -3314,66 +3370,23 @@ void CvSelectionGroup::setAutomateType(AutomateTypes eNewValue)
 }
 
 
-FAStarNode* CvSelectionGroup::getPathLastNode() const
+// Disabled by K-Mod. (This function is deprecated.)
+/* FAStarNode* CvSelectionGroup::getPathLastNode() const
 {
-	return gDLL->getFAStarIFace()->GetLastNode(&GC.getPathFinder());
-}
+//return path_finder.GetEndNode();
+//return gDLL->getFAStarIFace()->GetLastNode(&GC.getPathFinder());
+} */
 
 
 CvPlot* CvSelectionGroup::getPathFirstPlot() const
 {
-	FAStarNode* pNode;
-
-	pNode = getPathLastNode();
-
-	if (pNode->m_pParent == NULL)
-	{
-		return GC.getMapINLINE().plotSorenINLINE(pNode->m_iX, pNode->m_iY);
-	}
-
-	while (pNode != NULL)
-	{
-		if (pNode->m_pParent->m_pParent == NULL)
-		{
-			return GC.getMapINLINE().plotSorenINLINE(pNode->m_iX, pNode->m_iY);
-		}
-
-		pNode = pNode->m_pParent;
-	}
-
-	FAssert(false);
-
-	return NULL;
+	return path_finder.GetPathFirstPlot();
 }
 
 
 CvPlot* CvSelectionGroup::getPathEndTurnPlot() const
 {
-	FAStarNode* pNode;
-
-	pNode = getPathLastNode();
-
-	if (NULL != pNode)
-	{
-		if ((pNode->m_pParent == NULL) || (pNode->m_iData2 == 1))
-		{
-			return GC.getMapINLINE().plotSorenINLINE(pNode->m_iX, pNode->m_iY);
-		}
-
-		while (pNode->m_pParent != NULL)
-		{
-			if (pNode->m_pParent->m_iData2 == 1)
-			{
-				return GC.getMapINLINE().plotSorenINLINE(pNode->m_pParent->m_iX, pNode->m_pParent->m_iY);
-			}
-
-			pNode = pNode->m_pParent;
-		}
-	}
-
-	FAssert(false);
-
-	return NULL;
+	return path_finder.GetPathEndTurnPlot();
 }
 
 //This number is fairly large
@@ -3381,7 +3394,9 @@ CvPlot* CvSelectionGroup::getPathEndTurnPlot() const
 int CvSelectionGroup::getPathCost() const
 {
 	FAStarNode* pNode;
-	pNode = getPathLastNode();
+	//pNode = getPathEndTurnPlot();
+
+	pNode = path_finder.GetEndNode();
 
 	if (pNode != NULL)
 	{
@@ -3396,14 +3411,15 @@ int CvSelectionGroup::getPathCost() const
 
 CvPlot* CvSelectionGroup::getPathSecondLastPlot() const
 {
-	FAStarNode* pNode = getPathLastNode();
+	//FAStarNode* pNode = getPathLastNode();
+	FAStarNode* pNode = path_finder.GetEndNode();
 
 	if (pNode->m_pParent == NULL)
 	{
-		return GC.getMapINLINE().plotSorenINLINE(pNode->m_iX, pNode->m_iY);
+		return GC.getMapINLINE().plotSoren(pNode->m_iX, pNode->m_iY);
 	}
 
-	return GC.getMapINLINE().plotSorenINLINE(pNode->m_pParent->m_iX, pNode->m_pParent->m_iY);
+	return GC.getMapINLINE().plotSoren(pNode->m_pParent->m_iX, pNode->m_pParent->m_iY);
 }
 
 // TAC - AI Improved Naval AI - koma13 - START
@@ -3414,7 +3430,8 @@ CvPlot* CvSelectionGroup::getPathPlotByIndex(int iIndex) const
 	
 	FAStarNode* pNode;
 
-	pNode = getPathLastNode();
+	//pNode = getPathLastNode();
+	pNode = path_finder.GetEndNode();
 
 	int i = 0;
 
@@ -3422,7 +3439,7 @@ CvPlot* CvSelectionGroup::getPathPlotByIndex(int iIndex) const
 	{
 		if (iIndex == i)
 		{
-			return GC.getMapINLINE().plotSorenINLINE(pNode->m_iX, pNode->m_iY);
+			return GC.getMapINLINE().plotSoren(pNode->m_iX, pNode->m_iY);
 		}
 
 		pNode = pNode->m_pParent;
@@ -3437,7 +3454,8 @@ int CvSelectionGroup::getPathLength() const
 {
 	FAStarNode* pNode;
 
-	pNode = getPathLastNode();
+	//pNode = getPathLastNode();
+	pNode = path_finder.GetEndNode();
 
 	if (pNode != NULL)
 	{
@@ -3469,9 +3487,43 @@ int CvSelectionGroup::getPathLength() const
 
 // TAC - AI Improved Naval AI - koma13 - START
 //bool CvSelectionGroup::generatePath( const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns) const
-bool CvSelectionGroup::generatePath( const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns, bool bIgnoreDanger) const
+//bool CvSelectionGroup::generatePath( const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns, bool bIgnoreDanger) const
 // TAC - AI Improved Naval AI - koma13 - END
+bool CvSelectionGroup::generatePath(const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns, int iMaxPath) const
 {
+	// K-Mod - if I can stop the UI from messing with this pathfinder, I might be able to reduce OOS bugs.
+	// (note, the const-cast is just to get around the bad code from the original developers)
+	FAssert(const_cast<CvSelectionGroup*>(this)->AI_isControlled());
+	// K-Mod end
+
+	PROFILE("CvSelectionGroup::generatePath()");
+
+	if (pFromPlot == NULL || pToPlot == NULL)
+		return false;
+
+	/*if (!bReuse)
+	path_finder.Reset();*/
+	path_finder.SetSettings(this, iFlags, iMaxPath);
+	bool bSuccess = path_finder.GeneratePath(pFromPlot->getX(), pFromPlot->getY(), pToPlot->getX(), pToPlot->getY());
+	/* test.
+	if (bSuccess != gDLL->getFAStarIFace()->GeneratePath(&GC.getPathFinder(), pFromPlot->getX(), pFromPlot->getY(), pToPlot->getX(), pToPlot->getY(), false, iFlags, bReuse)) {
+	pNode = gDLL->getFAStarIFace()->GetLastNode(&GC.getPathFinder());
+	if (bSuccess || iMaxPath < 0 || !pNode || pNode->m_iData2 <= iMaxPath) {
+	//::MessageBoxA(NULL,"pathfind mismatch","CvGameCore",MB_OK);
+	FAssert(false);
+	}
+	}*/
+
+	if (piPathTurns != NULL)
+	{
+		*piPathTurns = MAX_INT;
+		if (bSuccess)
+			*piPathTurns = path_finder.GetPathTurns();
+	}
+
+	return bSuccess;
+
+#if 0
 	PROFILE_FUNC();
 
 	FAStarNode* pNode;
@@ -3516,15 +3568,16 @@ bool CvSelectionGroup::generatePath( const CvPlot* pFromPlot, const CvPlot* pToP
 		}
 	}
 	// TAC - AI Improved Naval AI - koma13 - END
-
 	return bSuccess;
+#endif
 }
 
 
-void CvSelectionGroup::resetPath()
+/* void CvSelectionGroup::resetPath() const
 {
-	gDLL->getFAStarIFace()->ForceReset(&GC.getPathFinder());
-}
+//path_finder.Reset(); // note. the K-Mod finder doesn't need resetting in all the same places.
+gDLL->getFAStarIFace()->ForceReset(&GC.getPathFinder());
+} */
 
 
 void CvSelectionGroup::clearUnits()
@@ -3644,13 +3697,6 @@ CLLNode<IDInfo>* CvSelectionGroup::deleteUnitNode(CLLNode<IDInfo>* pNode)
 
 	return pNextUnitNode;
 }
-
-
-CLLNode<IDInfo>* CvSelectionGroup::nextUnitNode(CLLNode<IDInfo>* pNode) const
-{
-	return m_units.next(pNode);
-}
-
 
 int CvSelectionGroup::getNumUnits() const
 {
@@ -4306,3 +4352,27 @@ void CvSelectionGroup::write(FDataStreamBase* pStream)
 	write(writer);
 	writerbase.WriteFile();
 }
+
+// K-Mod
+int CvSelectionGroup::maxMoves() const
+{
+	int iMoves = MAX_INT; // (was 0 - see comment below)
+	for (CLLNode<IDInfo> const* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
+	{
+		CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		iMoves = std::min(iMoves, pLoopUnit->maxMoves());
+		// note: in the original code, this used std::max -- I'm pretty sure that was just a mistake. I don't know why they'd want to use that.
+	}
+	return iMoves;
+}
+
+int CvSelectionGroup::movesLeft() const
+{
+	int iMoves = MAX_INT;
+	for (CLLNode<IDInfo> const* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
+	{
+		CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		iMoves = std::min(iMoves, pLoopUnit->movesLeft());
+	}
+	return iMoves;
+} // K-Mod end

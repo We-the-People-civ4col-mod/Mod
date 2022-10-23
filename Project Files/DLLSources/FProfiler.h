@@ -13,12 +13,6 @@
 #include "CvDLLUtilityIFaceBase.h"
 #include "CvGlobals.h"	// for gDLL
 
-#ifndef FINAL_RELEASE
-#ifndef FP_PROFILE_ENABLE
-	#define FP_PROFILE_ENABLE
-#endif
-#endif
-
 //NOTE: This struct must be identical ot the same struct in  FireEngine/FProfiler.h
 //---------------------------------------------------------------------------------------------------------------------
 struct ProfileSample
@@ -67,6 +61,7 @@ private:
 
 //---------------------------------------------------------------------------------------------------------------------
 
+// The profiler should not be enabled when using multithreading
 // Main Interface for Profile
 #ifdef FP_PROFILE_ENABLE				// Turn Profiling On or Off ..
 #define PROFILE(name)\

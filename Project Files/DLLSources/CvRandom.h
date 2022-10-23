@@ -31,6 +31,8 @@ public:
 	void reseed(unsigned long ulNewValue);
 	unsigned long getSeed();
 
+	unsigned long peek() const;
+
 	// for serialization
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);

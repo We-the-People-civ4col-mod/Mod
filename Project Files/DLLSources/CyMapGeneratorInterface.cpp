@@ -25,6 +25,7 @@ void CyMapGeneratorPythonInterface()
 		.def("doRiver", &CyMapGenerator::doRiver, "void (CyPlot* pStartPlot, int /*CardinalDirectionTypes*/ eCardinalDirection)")
 		.def("addFeatures", &CyMapGenerator::addFeatures, "void ()")
 		.def("addFeaturesOnLand", &CyMapGenerator::addFeaturesOnLand, "void ()") //WTP, ray, Randomize Features Map Option
+		.def("addFeaturesOnWater", &CyMapGenerator::addFeaturesOnWater, "void ()")
 		.def("addBonuses", &CyMapGenerator::addBonuses, "void ()")
 		.def("addUniqueBonusType", &CyMapGenerator::addUniqueBonusType, "void (int /*BonusTypes*/ eBonusType)")
 		.def("addNonUniqueBonusType", &CyMapGenerator::addNonUniqueBonusType, "void (int /*BonusTypes*/ eBonusType)")
