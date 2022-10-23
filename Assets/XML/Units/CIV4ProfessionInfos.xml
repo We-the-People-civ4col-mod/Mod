@@ -3065,6 +3065,45 @@
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
+            <Type>PROFESSION_ROPES_MAKER_FLAX</Type>
+            <Description>TXT_KEY_PROFESSION_ROPES_MAKER_FLAX</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_ROPES_MAKER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_ROPES_MAKER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_ROPES_MAKER_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_DOCK</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>350</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_ROPE</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>YIELD_FLAX</YieldType>
+            </YieldsConsumed>
+            <Button>,Art/colonization_atlas_professions_bonus.dds,2,6</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_ROPES_MAKER</ExpertUnit>
+            <iLbDLearnLevel>2</iLbDLearnLevel>
+        </ProfessionInfo>
+        <ProfessionInfo>
             <Type>PROFESSION_SAILCLOTH_MAKER</Type>
             <Description>TXT_KEY_PROFESSION_SAILCLOTH_MAKER</Description>
             <Civilopedia>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_PEDIA</Civilopedia>
@@ -3097,6 +3136,45 @@
             </YieldsProduced>
             <YieldsConsumed>
                 <YieldType>YIELD_FLAX</YieldType>
+            </YieldsConsumed>
+            <Button>,Art/colonization_atlas_professions_bonus.dds,3,6</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_SAILCLOTH_MAKER</ExpertUnit>
+            <iLbDLearnLevel>2</iLbDLearnLevel>
+        </ProfessionInfo>
+        <ProfessionInfo>
+            <Type>PROFESSION_SAILCLOTH_MAKER_HEMP</Type>
+            <Description>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_HEMP</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_DOCK</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>350</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_SAILCLOTH</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>YIELD_HEMP</YieldType>
             </YieldsConsumed>
             <Button>,Art/colonization_atlas_professions_bonus.dds,3,6</Button>
             <bUseLbD>1</bUseLbD>

@@ -2290,27 +2290,31 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ROPES_MAKER</Tag>
-        <English>Roper:Ropers</English>
+        <English>Roper (Hemp):Ropers (Hemp)</English>
         <French>
-            <Text>Cordelier:Cordeliers</Text>
+            <Text>Cordelier (Chanvre):Cordeliers (Chanvre)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Reepschläger:Reepschläger</Text>
+            <Text>Reepschläger (Hanf):Reepschläger (Hanf)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
-        <Italian>
-            <Text>Roper:Ropers</Text>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_ROPES_MAKER_FLAX</Tag>
+        <English>Roper (Flax):Ropers (Flax)</English>
+        <French>
+            <Text>Cordelier (Lin):Cordeliers (Lin)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Roper:Ropers</Text>
+        </French>
+        <German>
+            <Text>Reepschläger (Flachs):Reepschläger (Flachs)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
-        </Spanish>
+        </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ROPES_MAKER_HELP</Tag>
@@ -2324,9 +2328,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ROPES_MAKER_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Ropers[COLOR_REVERT] produce [LINK=YIELD_ROPE]ropes[\LINK] from [LINK=YIELD_HEMP]hemp[\LINK]. They can do this in buildings like the [LINK=BUILDING_LANDING_STAGE]pier[\LINK] or one of its upgrades. The most effective colonists for this craft are [LINK=UNIT_ROPES_MAKER]master ropers[\LINK].</English>
-        <French>Les [COLOR_UNIT_TEXT]cordeliers[COLOR_REVERT] produisent de la [LINK=YIELD_ROPE]cordage[\LINK] à partir de [LINK=YIELD_HEMP]chanvre[\LINK]. Ils travaillent dans les docks et les ports, dans des bâtiments comme la [LINK=BUILDING_LANDING_STAGE]embarcadère[\LINK] ou l'une de ses améliorations. Les colons les plus efficaces pour cet engin sont les [LINK=UNIT_ROPES_MAKER]maîtres cordeliers[\LINK].</French>
-        <German>[COLOR_UNIT_TEXT]Reepschläger[COLOR_REVERT] stellen [LINK=YIELD_ROPE]Seile[\LINK] aus [LINK=YIELD_HEMP]Hanf[\LINK] her. Die Herstellung findet meist in Gebäuden der Hafengegend statt, also dem [LINK=BUILDING_DOCK]Landungssteg[\LINK] oder einer seiner Ausbaustufen. Der effektivste Kolonist in diesem Handwerk ist der [LINK=UNIT_ROPES_MAKER]Seilermeister[\LINK].</German>
+        <English>[COLOR_UNIT_TEXT]Ropers[COLOR_REVERT] produce [LINK=YIELD_ROPE]ropes[\LINK] from [LINK=YIELD_HEMP]hemp[\LINK] or [LINK=YIELD_FLAX]flax[\LINK]. They can do this in buildings like the [LINK=BUILDING_LANDING_STAGE]pier[\LINK] or one of its upgrades. The most effective colonists for this craft are [LINK=UNIT_ROPES_MAKER]master ropers[\LINK].</English>
+        <French>Les [COLOR_UNIT_TEXT]cordeliers[COLOR_REVERT] produisent de la [LINK=YIELD_ROPE]cordage[\LINK] à partir de [LINK=YIELD_HEMP]chanvre[\LINK] ou [LINK=YIELD_FLAX]lin[\LINK]. Ils travaillent dans les docks et les ports, dans des bâtiments comme la [LINK=BUILDING_LANDING_STAGE]embarcadère[\LINK] ou l'une de ses améliorations. Les colons les plus efficaces pour cet engin sont les [LINK=UNIT_ROPES_MAKER]maîtres cordeliers[\LINK].</French>
+        <German>[COLOR_UNIT_TEXT]Reepschläger[COLOR_REVERT] stellen [LINK=YIELD_ROPE]Seile[\LINK] aus [LINK=YIELD_HEMP]Hanf[\LINK] oder [LINK=YIELD_FLAX]Flachs[\LINK] her. Die Herstellung findet meist in Gebäuden der Hafengegend statt, also dem [LINK=BUILDING_DOCK]Landungssteg[\LINK] oder einer seiner Ausbaustufen. Der effektivste Kolonist in diesem Handwerk ist der [LINK=UNIT_ROPES_MAKER]Seilermeister[\LINK].</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ROYAL_CAVALRY</Tag>
@@ -2490,27 +2494,31 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SAILCLOTH_MAKER</Tag>
-        <English>Sailmaker:Sailmakers</English>
+        <English>Sailmaker (Flax):Sailmakers (Flax)</English>
         <French>
-            <Text>Voilier:Voiliers</Text>
+            <Text>Voilier (Lin):Voiliers (Lin)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Segelmacher:Segelmacher</Text>
+            <Text>Segelmacher (Flachs):Segelmacher (Flachs)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
-        <Italian>
-            <Text>Sailmaker:Sailmakers</Text>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_HEMP</Tag>
+        <English>Sailmaker (Hemp):Sailmakers (Hemp)</English>
+        <French>
+            <Text>Voilier (Chanvre):Voiliers (Chanvre)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Sailmaker:Sailmakers</Text>
+        </French>
+        <German>
+            <Text>Segelmacher (Hanf):Segelmacher (Hanf)</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
-        </Spanish>
+        </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_HELP</Tag>
@@ -2524,9 +2532,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Sailmakers[COLOR_REVERT] produce [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] from [LINK=YIELD_HEMP]hemp[\LINK]. They do this in buildings like the [LINK=BUILDING_DOCK]dock[\LINK] or one of its upgrades. The most effective units for this craft are [LINK=UNIT_SAILCLOTH_MAKER]master sailmakers[\LINK].</English>
-        <French>Les [COLOR_UNIT_TEXT]voiliers[COLOR_REVERT] produisent des [LINK=YIELD_SAILCLOTH]voiles[\LINK] à partir de [LINK=YIELD_HEMP]chanvre[\LINK]. Ils travaillent dans les docks et les ports, dans des bâtiments comme la [LINK=BUILDING_DOCK]docks[\LINK] ou l'une de ses améliorations. Les colons les plus efficaces pour cet engin sont les [LINK=UNIT_SAILCLOTH_MAKER]maîtres cordeliers[\LINK].</French>
-        <German>[COLOR_UNIT_TEXT]Segelmacher[COLOR_REVERT] verarbeiten [LINK=YIELD_HEMP]Hanf[\LINK] zu [LINK=YIELD_SAILCLOTH]Segeltuch[\LINK]. Die Herstellung findet meist in Gebäuden des [LINK=BUILDING_DOCK]Hafens[\LINK] statt und ist noch effektiver, wenn Sie dem Beruf einen [LINK=UNIT_SAILCLOTH_MAKER]Meister-Segelmacher[\LINK] zuweisen.</German>
+        <English>[COLOR_UNIT_TEXT]Sailmakers[COLOR_REVERT] produce [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] from [LINK=YIELD_HEMP]hemp[\LINK] or [LINK=YIELD_FLAX]flax[\LINK]. They do this in buildings like the [LINK=BUILDING_DOCK]dock[\LINK] or one of its upgrades. The most effective units for this craft are [LINK=UNIT_SAILCLOTH_MAKER]master sailmakers[\LINK].</English>
+        <French>Les [COLOR_UNIT_TEXT]voiliers[COLOR_REVERT] produisent des [LINK=YIELD_SAILCLOTH]voiles[\LINK] à partir de [LINK=YIELD_HEMP]chanvre[\LINK] ou [LINK=YIELD_FLAX]chanvre[\LINK]. Ils travaillent dans les docks et les ports, dans des bâtiments comme la [LINK=BUILDING_DOCK]docks[\LINK] ou l'une de ses améliorations. Les colons les plus efficaces pour cet engin sont les [LINK=UNIT_SAILCLOTH_MAKER]maîtres cordeliers[\LINK].</French>
+        <German>[COLOR_UNIT_TEXT]Segelmacher[COLOR_REVERT] verarbeiten [LINK=YIELD_HEMP]Hanf[\LINK] oder [LINK=YIELD_FLAX]Flachs[\LINK] zu [LINK=YIELD_SAILCLOTH]Segeltuch[\LINK]. Die Herstellung findet meist in Gebäuden des [LINK=BUILDING_DOCK]Hafens[\LINK] statt und ist noch effektiver, wenn Sie dem Beruf einen [LINK=UNIT_SAILCLOTH_MAKER]Meister-Segelmacher[\LINK] zuweisen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SALT_MINER</Tag>
