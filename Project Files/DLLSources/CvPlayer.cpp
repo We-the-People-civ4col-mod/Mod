@@ -23790,7 +23790,7 @@ void CvPlayer::acquireForeignImmigrant(int iForeignImmigrantClassType, int iPric
 	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iForeignImmigrantClassType);
 
 	// We simply spawn in the colonies
-	CvUnit* pUnit = initUnit(eUnit, NO_PROFESSION, pCity->getX_INLINE(), pCity->getY_INLINE());
+	CvUnit* pUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE(), NO_UNITAI);
 
 	// we post a message
 	CvWString szBuffer;
