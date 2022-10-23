@@ -12631,12 +12631,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SLAVE_MASTER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Slave_Master_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Slave_Master_Europe.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <Button>,Art/colonization_atlas_units.dds,5,7</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Slave_Master.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Special_Military/Slave_Master/swordsman.nif</NIF>
-            <KFM>Art/Units/Special_Military/Slave_Master/swordsman/swordsman.kfm</KFM>
+            <NIF>Art/Units/Special_Military/Slave_Master/Seasoned_Scout.nif</NIF>
+            <KFM>Art/Units/Special_Military/Slave_Master/Seasoned_Scout.kfm</KFM>
             <fBattleDistance>0.5</fBattleDistance>
             <fRangedDeathTime>0.77</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17514,7 +17514,7 @@
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_MESTIZZO</Type>
             <Button>,Art/colonization_atlas_units.dds,4,7</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/mestizzo.dds</FullLengthIcon>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Mestizzo.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Mestizzo/Expert_Cotton_Planter.nif</NIF>
@@ -17531,7 +17531,7 @@
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_MULATTO</Type>
             <Button>,Art/colonization_atlas_units.dds,3,7</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/mulatto.dds</FullLengthIcon>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Mulatto.dds</FullLengthIcon>
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Mulatto/Expert_Cotton_Planter.nif</NIF>
