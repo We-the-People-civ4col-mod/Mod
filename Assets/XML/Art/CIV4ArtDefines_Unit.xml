@@ -469,12 +469,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_WEAVER</Type>
-            <Button>,Art/colonization_atlas_units.dds,5,2</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/female_weaver.dds</FullLengthIcon>
-            <fScale>0.6</fScale>
+            <Button>,Art/colonization_atlas_units.dds,8,7</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Weaver.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/units/Settler/Female Weaver/settler_female.nif</NIF>
-            <KFM>Art/units/Settler/Female Weaver/settler_female.kfm</KFM>
+            <NIF>Art/units/Settler/Master_Weaver/Master_Carpenter.nif</NIF>
+            <KFM>Art/units/Settler/Master_Weaver/Master_Carpenter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
