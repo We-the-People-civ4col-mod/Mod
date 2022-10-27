@@ -7056,7 +7056,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MP_RENEGOTIATE</Tag>
-        <English>System Message: Trade Renegotiation has begun.</English>
+        <English>System Message: Trade renegotiation has begun.</English>
         <French>Message système : les négociations commerciales ont commencées.</French>
         <German>Systemmeldung: Die Neuverhandlungen für Handelsabkommen haben begonnen.</German>
         <Italian>Messaggio di sistema: la rinegoziazione commerciale è iniziata.</Italian>
@@ -8280,7 +8280,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PITBOSS_PATCH_COMPLETE_TITLE</Tag>
-        <English>Download Complete!</English>
+        <English>Download complete!</English>
         <French>Téléchargement terminé !</French>
         <German>Download abgeschlossen!</German>
         <Italian>Scaricamento completato!</Italian>
@@ -9766,7 +9766,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_SLAVE_WORKER_PRODUCTION_BONUS_TEXT</Tag>
-        <English>[ICON_BULLET]%D1_percent%% higher productivity of slaves and other enforced labor</English>
+        <English>[ICON_BULLET]%D1_percent%% higher productivity of slaves and other enforced labour</English>
         <German>[ICON_BULLET]%D1_percent%% höhere Produktivität von Sklaven und Zwangsarbeitern</German>
     </TEXT>
     <TEXT>
@@ -9781,7 +9781,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_CAN_NOT_BE_EARNED_BY_XP</Tag>
-        <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Can not be earned by XP.[COLOR_REVERT]</English>
+        <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Cannot be earned by XP.[COLOR_REVERT]</English>
         <German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Kann nicht durch EP erworben werden.[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
