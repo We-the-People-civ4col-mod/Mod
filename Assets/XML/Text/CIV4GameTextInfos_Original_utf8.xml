@@ -980,7 +980,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRES_VICTORY</Tag>
-        <English>[ICON_BULLET]%s1_Name Victory must be enabled</English>
+        <English>[ICON_BULLET]%s1_Name "Victory" must be enabled</English>
         <French>[ICON_BULLET]Requiert une victoire de type "%s1_Name"</French>
         <German>[ICON_BULLET]Erfordert Siegvariante %s1_Name</German>
         <Italian>[ICON_BULLET]Richiede la vittoria %s1_Name</Italian>
@@ -1524,7 +1524,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WIDGET_CREATE_GROUP</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Creates a Group[COLOR_REVERT]</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Creates a group[COLOR_REVERT]</English>
         <French>[COLOR_HIGHLIGHT_TEXT]Créer un groupe[COLOR_REVERT]</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Bildet eine Gruppe[COLOR_REVERT]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]Crea un gruppo[COLOR_REVERT]</Italian>
@@ -1532,7 +1532,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WIDGET_DELETE_GROUP</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Separates the Group[COLOR_REVERT]</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Separates the group[COLOR_REVERT]</English>
         <French>[COLOR_HIGHLIGHT_TEXT]Diviser le groupe[COLOR_REVERT]</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Löst eine Gruppe auf[COLOR_REVERT]</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]Separa il gruppo[COLOR_REVERT]</Italian>
@@ -1604,7 +1604,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_MAKE_PEACE_WITH</Tag>
-        <English>Make Peace with</English>
+        <English>Make peace with</English>
         <French>Faire la paix avec : </French>
         <German>Frieden schließen mit</German>
         <Italian>Fai la pace con</Italian>
@@ -1612,7 +1612,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_DECLARE_WAR_ON</Tag>
-        <English>Declare War on</English>
+        <English>Declare war on</English>
         <French>Déclarer la guerre à : </French>
         <German>Krieg erklären gegen</German>
         <Italian>Dichiara guerra a</Italian>
@@ -1620,7 +1620,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_STOP_TRADING_WITH</Tag>
-        <English>Stop Trading with</English>
+        <English>Stop trading with</English>
         <French>Fin des échanges commerciaux avec : </French>
         <German>Einstellung des Handels mit</German>
         <Italian>Interrompi il commercio con</Italian>
@@ -2316,7 +2316,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_GOLD_CITY_CAPTURE</Tag>
-        <English>Milord, you have pillaged %d1_Num[ICON_GOLD] from the capture of [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!!! Would you like to keep it?</English>
+        <English>Milord, you have pillaged %d1_Num[ICON_GOLD] from the capture of [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!!! Would you like to keep the city?</English>
         <French>Vous avez pillé %d1_Num[ICON_GOLD] en capturant [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] ! Voulez-vous le garder ?</French>
         <German>Milord, Ihr habt bei der Eroberung von [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] %d1_Num[ICON_GOLD] erbeutet! Wollt Ihr die Stadt behalten?</German>
         <Italian>Hai saccheggiato %d1_Num[ICON_GOLD] dalla conquista di [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!!! Vuoi mantenerla?</Italian>
@@ -2481,17 +2481,17 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_CITY_FORT_DEFENSE_MODIFIER</Tag>
-        <English>From Forts close by : %D1_Mod%%%F2_Icon</English>
+        <English>From forts close by : %D1_Mod%%%F2_Icon</English>
         <German>Von Forts im Umland : %D1_Mod%%%F2_Icon</German>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_CITY_HILL_DEFENSE_MODIFIER</Tag>
-        <English>From Location on Hills : %D1_Mod%%%F2_Icon</English>
+        <English>From hill location : %D1_Mod%%%F2_Icon</English>
         <German>Durch Standort auf Hügeln : +%D1_Mod%%%F2_Icon</German>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_CITY_PLAYER_TRAITS_DEFENSE_MODIFIER</Tag>
-        <English>From Bonusses of Player : %D1_Mod%%%F2_Icon</English>
+        <English>From player bonuses : %D1_Mod%%%F2_Icon</English>
         <German>Durch Spielereigenschaften : %D1_Mod%%%F2_Icon</German>
     </TEXT>
     <TEXT>
@@ -2784,7 +2784,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_TRYING_TO_CONTACT</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] is trying to contact You!</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] is trying to contact you!</English>
         <French>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] essaie de vous contacter !</French>
         <German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] versucht Sie zu kontaktieren!</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] sta cercando di contattarti!</Italian>
@@ -2960,7 +2960,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ENEMY_TROOPS_SPOTTED</Tag>
-        <English>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Enemy troops have been spotted nearby !</English>
+        <English>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Enemy troops have been spotted nearby!</English>
         <French>Des troupes ennemies ont été repérées près de %s1_CityName !</French>
         <German>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Feindliche Truppen wurden in der Nähe gesichtet !</German>
         <Italian>Truppe nemiche avvistate nei pressi di %s1_CityName!</Italian>
@@ -3656,7 +3656,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_BUILDINGS</Tag>
-        <English>[ICON_BULLET]%D1%%%F2[TAB]from Buildings</English>
+        <English>[ICON_BULLET]%D1%%%F2[TAB]from buildings</English>
         <French>[ICON_BULLET]%D1%%%F2[TAB](bâtiments)</French>
         <German>[ICON_BULLET]%D1%%%F2[TAB]durch Gebäude</German>
         <Italian>[ICON_BULLET]%D1%%%F2[TAB]dagli edifici</Italian>
@@ -3672,7 +3672,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_CAPITAL</Tag>
-        <English>[ICON_BULLET]%D1%%%F2[TAB][TAB]for Capital</English>
+        <English>[ICON_BULLET]%D1%%%F2[TAB][TAB]for Capitol</English>
         <French>[ICON_BULLET]%D1%%%F2[TAB][TAB](capitale)</French>
         <German>[ICON_BULLET]%D1%%%F2[TAB][TAB]für Hauptstadt</German>
         <Italian>[ICON_BULLET]%D1%%%F2[TAB][TAB]dalla capitale</Italian>
@@ -4096,7 +4096,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CANCEL_DEAL_NO</Tag>
-        <English>Hrmmm, perhaps we should rethink this?</English>
+        <English>Hmmm, perhaps we should rethink this?</English>
         <French>Hmm, peut-être devrions-nous y réfléchir davantage ?</French>
         <German>Hmmm, vielleicht sollte ich das noch mal überdenken?</German>
         <Italian>Uhm, forse dovremmo ripensarci?</Italian>
