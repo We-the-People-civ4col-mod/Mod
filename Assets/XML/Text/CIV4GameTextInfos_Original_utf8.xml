@@ -9865,7 +9865,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CC_BORN</Tag>
-        <English>A capable captain is regarded by the warriors stationed in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] as a model of skill and witt.</English>
+        <English>The warriors stationed in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] resepct their captain for his leadership and tactics.</English>
         <German>Der fähiger Seemann gilt den in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] stationierten Kämpfern als ein Vorbild an Fähigkeit und Schläue.</German>
     </TEXT>
     <TEXT>
@@ -9875,7 +9875,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_CC_BORN_FIELD</Tag>
-        <English>In the recent sea battle a young sailor and his crew fell upon his enemies like a shark on the tunas. He is now known everywhere as a truly capable captain.</English>
+        <English>In the recent sea battle a young captain led his crew into the enemy like a shark against a bunch of tuna. He is now known everywhere as a truly capable commander.</English>
         <German>In der jüngsten Seeschlacht fiel ein junger Seemann und seine Mannschaft über seine Feinde her wie der Hai über Thunfische. Er gilt nun allerorten als wahrhaft fähiger Kapitän.</German>
     </TEXT>
     <TEXT>
