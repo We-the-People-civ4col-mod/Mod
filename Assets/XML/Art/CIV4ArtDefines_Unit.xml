@@ -17377,8 +17377,8 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_POULTRY_BUTCHER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Master_Poultry_butcher_button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Poultry_butcher_europe.dds</FullLengthIcon>
+            <Button>,Art/colonization_atlas_units_two.dds,1,1</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Poultry_butcher.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Poultry_butcher/butcher.nif</NIF>
