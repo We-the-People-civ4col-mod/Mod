@@ -522,12 +522,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_YERBA_TRADER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Master_Yerba_Tea_Trader_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Yerba_Tea_Trader_Europe.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <Button>,Art/colonization_atlas_units.dds,8,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Yerba_Tea_Trader.dds</FullLengthIcon>
+            <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Yerba_Tea_Trader/maceman.nif</NIF>
-            <KFM>Art/Units/Settler/maceman/maceman.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Yerba_Tea_Trader/Indentured_Servant.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Yerba_Tea_Trader/Indentured_Servant.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17377,8 +17377,8 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_POULTRY_BUTCHER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Master_Poultry_butcher_button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Poultry_butcher_europe.dds</FullLengthIcon>
+            <Button>,Art/colonization_atlas_units_two.dds,1,1</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Poultry_butcher.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Poultry_butcher/butcher.nif</NIF>
@@ -17411,12 +17411,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_LEATHER_TAYLOR</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Master_Leather_Taylor_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Leather_Taylor_Europe.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,3</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Lether_Taylor.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Leather_Taylor/Indentured_Servant.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Leather_Taylor/Indentured_Servant.kfm</KFM>
+            <NIF>Art/Units/Master_Weaver/Master_Weaver.nif</NIF>
+            <KFM>Art/Units/Master_Weaver/Master_Weaver.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
