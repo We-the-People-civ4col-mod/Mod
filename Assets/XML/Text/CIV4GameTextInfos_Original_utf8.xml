@@ -9850,7 +9850,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_BL_BORN</Tag>
-        <English>A brave Lieutenant is regarded by the warriors stationed in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] as a model of bravery.</English>
+        <English>The warriors stationed in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] look up to their lieutenant for his courage.</English>
         <German>Der unerschrockene Leutnant gilt den in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] stationierten Kämpfern als ein Vorbild an Tapferkeit und Manneszucht.</German>
     </TEXT>
     <TEXT>
@@ -9860,7 +9860,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_BL_BORN_FIELD</Tag>
-        <English>In the recent battle a young soldier fell upon his enemies like a wolf among the lambs. He is now known everywhere as a truly brave lieutentant.</English>
+        <English>In the recent battle a young soldier fell upon his enemies like a wolf among the lambs. He is now known everywhere as a truly brave lieutenant.</English>
         <German>In der jüngsten Schlacht fiel ein junger Soldat über seine Feinde her wie der Wolf über die Lämmer. Er gilt nun allerorten als mutiger Leutnant.</German>
     </TEXT>
     <TEXT>
