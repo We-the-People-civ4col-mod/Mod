@@ -17327,7 +17327,7 @@
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_HOUSEHOLD_TRADER</Type>
             <Button>,Art/colonization_atlas_units_two.dds,2,1</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Household_Goods_Trader_Europe.dds</FullLengthIcon>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Household_Goods_Trader.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Household_Goods_Trader/Indentured_Servant.nif</NIF>
@@ -17411,12 +17411,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_LEATHER_TAYLOR</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,3</Button>
+            <Button>,Art/colonization_atlas_units_two.dds,3,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Lether_Taylor.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Master_Weaver/Master_Weaver.nif</NIF>
-            <KFM>Art/Units/Master_Weaver/Master_Weaver.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Leather_Taylor/Expert_Cotton_Planter.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Leather_Taylor/Expert_Cotton_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
