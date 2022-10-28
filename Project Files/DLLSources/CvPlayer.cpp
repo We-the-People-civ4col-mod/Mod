@@ -1842,52 +1842,42 @@ int CvPlayer::getMercantileFactor() const
 }
 
 // WTP, Africa and Port Royal Profit Modifiers - START
+void  CvPlayer::changeTotalPlayerAfricaSellProfitModifierInPercent(int iChange) // R&R, ray, new Attribute in Traits
+{
+	m_iTotalPlayerAfricaSellProfitModifierInPercent += iChange;
+}
+
+void  CvPlayer::changeTotalPlayerPortRoyalSellProfitModifierInPercent(int iChange) // R&R, ray, new Attribute in Traits
+{
+	m_iTotalPlayerPortRoyalSellProfitModifierInPercent += iChange;
+}
+// WTP, Africa and Port Royal Profit Modifiers - END
+
+// WTP, ray, Domestic Market Profit Modifier - START
+void  CvPlayer::changeTotalPlayerDomesticMarketProfitModifierInPercent(int iChange) // R&R, ray, new Attribute in Traits
+{
+	m_iTotalPlayerDomesticMarketProfitModifierInPercent += iChange;
+}
+// WTP, ray, Domestic Market Profit Modifier - END
+
+// WTP, Africa and Port Royal Profit Modifiers - START
 int CvPlayer::getTotalPlayerAfricaSellProfitModifierInPercent() const
 {
-	int iAfricaProfitModifierTotal = 0;
-	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
-	{
-		if (hasTrait(eTrait))
-		{
-			iAfricaProfitModifierTotal += GC.getTraitInfo(eTrait).getAfricaSellProfitModifierInPercent();
-
-		}
-	}
-	return iAfricaProfitModifierTotal;
+	return m_iTotalPlayerAfricaSellProfitModifierInPercent;
 }
 
 int CvPlayer::getTotalPlayerPortRoyalSellProfitModifierInPercent() const
 {
-	int iPortRoyalProfitModifierTotal = 0;
-	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
-	{
-		if (hasTrait(eTrait))
-		{
-			iPortRoyalProfitModifierTotal += GC.getTraitInfo(eTrait).getPortRoyalSellProfitModifierInPercent();
-
-		}
-	}
-	return iPortRoyalProfitModifierTotal;
+	return m_iTotalPlayerPortRoyalSellProfitModifierInPercent;
 }
 // WTP, Africa and Port Royal Profit Modifiers - END
-
 
 // WTP, ray, Domestic Market Profit Modifier - START
 int CvPlayer::getTotalPlayerDomesticMarketProfitModifierInPercent() const
 {
-	int iDomesticMarketProfitModifierInPercentTotal = 0;
-	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
-	{
-		if (hasTrait(eTrait))
-		{
-			iDomesticMarketProfitModifierInPercentTotal += GC.getTraitInfo(eTrait).getDomesticMarketProfitModifierInPercent();
-
-		}
-	}
-	return iDomesticMarketProfitModifierInPercentTotal;
+	return m_iTotalPlayerDomesticMarketProfitModifierInPercent;
 }
 // WTP, ray, Domestic Market Profit Modifier - END
-
 
 bool CvPlayer::isHuman() const
 {
@@ -6735,6 +6725,20 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 	changeNativeCombatModifier(kTrait.getNativeCombatModifier() * iChange);
 	changeMissionaryRateModifier(kTrait.getMissionaryModifier() * iChange);
 	changeNativeTradeModifier(kTrait.getNativeTradeModifier() * iChange); // R&R, ray, new Attribute in Traits 
+
+	// WTP, Africa and Port Royal Profit Modifiers - START
+	// needs to be stored in the KING Player object, because these prices are calcuated on KING
+	if(getParent() != NO_PLAYER)
+	{
+		GET_PLAYER(getParent()).changeTotalPlayerAfricaSellProfitModifierInPercent(kTrait.getAfricaSellProfitModifierInPercent() * iChange);
+		GET_PLAYER(getParent()).changeTotalPlayerPortRoyalSellProfitModifierInPercent(kTrait.getPortRoyalSellProfitModifierInPercent() * iChange);
+	}
+	// WTP, Africa and Port Royal Profit Modifiers - END
+
+	// WTP, ray, Domestic Market Profit Modifier - START
+	// this can be stored at the player because Domestic Market Prices are player / city related
+	changeTotalPlayerDomesticMarketProfitModifierInPercent(kTrait.getDomesticMarketProfitModifierInPercent() * iChange);
+	// WTP, ray, Domestic Market Profit Modifier - END
 
 	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); ++iProfession)
 	{
@@ -16428,10 +16432,7 @@ int CvPlayer::getYieldAfricaBuyPrice(YieldTypes eYield) const
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
 
-	// WTP, Africa and Port Royal Profit Modifiers - START
-	int iModifierFromTraits = getTotalPlayerAfricaSellProfitModifierInPercent();
-	int iModifiedPrice = m_em_iYieldAfricaBuyPrice.get(eYield) * (100 + iModifierFromTraits) / 100;
-	return iModifiedPrice;
+	return m_em_iYieldAfricaBuyPrice.get(eYield);
 }
 
 void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
@@ -16777,6 +16778,11 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 		}
 	}
 
+	// WTP, Africa and Port Royal Profit Modifiers - START
+	int iModifierFromTraits = getTotalPlayerAfricaSellProfitModifierInPercent();
+	iPrice = (iPrice * (100 + iModifierFromTraits)) / 100;
+	// WTP, Africa and Port Royal Profit Modifiers - END
+
 	//Never let price fall below Minimum
 	iPrice = std::max(iPrice, GC.getYieldInfo(eYield).getMinimumBuyPrice());
 
@@ -17076,10 +17082,7 @@ int CvPlayer::getYieldPortRoyalBuyPrice(YieldTypes eYield) const
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
 
-	// WTP, Africa and Port Royal Profit Modifiers - START
-	int iModifierFromTraits = getTotalPlayerPortRoyalSellProfitModifierInPercent();
-	int iModifiedPrice = m_em_iYieldPortRoyalBuyPrice.get(eYield) * (100 + iModifierFromTraits) / 100;
-	return iModifiedPrice;
+	return m_em_iYieldPortRoyalBuyPrice.get(eYield);
 }
 
 void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
@@ -17424,6 +17427,11 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 				break;
 		}
 	}
+
+	// WTP, Africa and Port Royal Profit Modifiers - START
+	int iModifierFromTraits = getTotalPlayerPortRoyalSellProfitModifierInPercent();
+	iPrice = (iPrice * (100 + iModifierFromTraits)) / 100;
+	// WTP, Africa and Port Royal Profit Modifiers - END
 
 	//Never let price fall below Minimum
 	iPrice = std::max(iPrice, GC.getYieldInfo(eYield).getMinimumBuyPrice());

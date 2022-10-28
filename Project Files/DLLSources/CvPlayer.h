@@ -226,9 +226,12 @@ public:
 	int getTraitCount(TraitTypes eTrait) const;
 	void changeTraitCount(TraitTypes eTrait, int iChange);
 	int getMercantileFactor() const;
+	void changeTotalPlayerAfricaSellProfitModifierInPercent(int iChange); // WTP, Africa and Port Royal Profit Modifiers - START
+	void changeTotalPlayerPortRoyalSellProfitModifierInPercent(int iChange); // WTP, Africa and Port Royal Profit Modifiers - START
+	void changeTotalPlayerDomesticMarketProfitModifierInPercent(int iChange); // WTP, ray, Domestic Market Profit Modifier -START
 	int getTotalPlayerAfricaSellProfitModifierInPercent() const; // WTP, Africa and Port Royal Profit Modifiers - START
 	int getTotalPlayerPortRoyalSellProfitModifierInPercent() const; // WTP, Africa and Port Royal Profit Modifiers - START
-	int getTotalPlayerDomesticMarketProfitModifierInPercent() const; // WTP, ray, Domestic Market Profit Modifier
+	int getTotalPlayerDomesticMarketProfitModifierInPercent() const; // WTP, ray, Domestic Market Profit Modifier -START
 	DllExport bool isHuman() const;
 	DllExport void updateHuman();
 	bool isNative() const;
@@ -1005,6 +1008,9 @@ protected:
 	int m_iFatherPointMultiplier;
 	int m_iMissionaryRateModifier;
 	int m_iNativeTradeModifier; // R&R, ray, new Attribute in Traits
+	int m_iTotalPlayerAfricaSellProfitModifierInPercent; // WTP, Africa and Port Royal Profit Modifiers - START
+	int m_iTotalPlayerPortRoyalSellProfitModifierInPercent; // WTP, Africa and Port Royal Profit Modifiers - START
+	int m_iTotalPlayerDomesticMarketProfitModifierInPercent; // WTP, ray, Domestic Market Profit Modifier - START
 	int m_iMissionarySuccessPercent;
 	int m_iNativeTradePostSuccessPercent; // WTP, ray, Native Trade Posts - START
 

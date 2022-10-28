@@ -105,6 +105,9 @@ const int defaultFatherPointMultiplier = 100;
 const int defaultMissionaryRateModifier = 0;
 const int defaultNativeTradeModifier = 0;
 
+const int defaultTotalPlayerAfricaSellProfitModifierInPercent = 0; // WTP, Africa and Port Royal Profit Modifiers - START
+const int defaultTotalPlayerPortRoyalSellProfitModifierInPercent = 0; // WTP, Africa and Port Royal Profit Modifiers - START
+const int defaultTotalPlayerDomesticMarketProfitModifierInPercent = 0; // WTP, ray, Domestic Market Profit Modifier - START
 
 // 
 enum SavegameVariableTypes
@@ -264,6 +267,10 @@ enum SavegameVariableTypes
 	PlayerSave_FatherPointMultiplier,
 	PlayerSave_MissionaryRateModifier,
 	PlayerSave_NativeTradeModifier,
+
+	PlayerSave_TotalPlayerAfricaSellProfitModifierInPercent, // WTP, Africa and Port Royal Profit Modifiers - START
+	PlayerSave_TotalPlayerPortRoyalSellProfitModifierInPercent, // WTP, Africa and Port Royal Profit Modifiers - START
+	PlayerSave_TotalPlayerDomesticMarketProfitModifierInPercent,// WTP, ray, Domestic Market Profit Modifier - START
 
 	PlayerSave_TradeGroups,
 	PlayerSave_selectionGroups,
@@ -452,6 +459,10 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_FatherPointMultiplier: return "PlayerSave_FatherPointMultiplier";
 	case PlayerSave_MissionaryRateModifier: return "PlayerSave_MissionaryRateModifier";
 	case PlayerSave_NativeTradeModifier: return "PlayerSave_NativeTradeModifier";
+
+	case PlayerSave_TotalPlayerAfricaSellProfitModifierInPercent: return "PlayerSave_TotalPlayerAfricaSellProfitModifierInPercent"; // WTP, Africa and Port Royal Profit Modifiers - START
+	case PlayerSave_TotalPlayerPortRoyalSellProfitModifierInPercent: return "PlayerSave_TotalPlayerPortRoyalSellProfitModifierInPercent"; // WTP, Africa and Port Royal Profit Modifiers - START
+	case PlayerSave_TotalPlayerDomesticMarketProfitModifierInPercent: return "PlayerSave_TotalPlayerDomesticMarketProfitModifierInPercent"; // WTP, ray, Domestic Market Profit Modifier - START
 
 	case PlayerSave_TradeGroups: return "PlayerSave_TradeGroups";
 	case PlayerSave_selectionGroups: return "PlayerSave_selectionGroups";
@@ -656,6 +667,10 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_iFatherPointMultiplier = defaultFatherPointMultiplier;
 	m_iMissionaryRateModifier = defaultMissionaryRateModifier;
 	m_iNativeTradeModifier = defaultNativeTradeModifier;
+
+	m_iTotalPlayerAfricaSellProfitModifierInPercent = defaultTotalPlayerAfricaSellProfitModifierInPercent; // WTP, Africa and Port Royal Profit Modifiers - START
+	m_iTotalPlayerPortRoyalSellProfitModifierInPercent = defaultTotalPlayerPortRoyalSellProfitModifierInPercent; // WTP, Africa and Port Royal Profit Modifiers - START
+	m_iTotalPlayerDomesticMarketProfitModifierInPercent = defaultTotalPlayerDomesticMarketProfitModifierInPercent; // WTP, ray, Domestic Market Profit Modifier - START
 
 	m_aTradeGroups.reset();
 	m_selectionGroups.removeAll();
@@ -862,6 +877,10 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_FatherPointMultiplier: reader.Read(m_iFatherPointMultiplier); break;
 		case PlayerSave_MissionaryRateModifier: reader.Read(m_iMissionaryRateModifier); break;
 		case PlayerSave_NativeTradeModifier: reader.Read(m_iNativeTradeModifier); break;
+
+		case PlayerSave_TotalPlayerAfricaSellProfitModifierInPercent: reader.Read(m_iTotalPlayerAfricaSellProfitModifierInPercent); break; // WTP, Africa and Port Royal Profit Modifiers - START
+		case PlayerSave_TotalPlayerPortRoyalSellProfitModifierInPercent: reader.Read(m_iTotalPlayerPortRoyalSellProfitModifierInPercent); break; // WTP, Africa and Port Royal Profit Modifiers - START
+		case PlayerSave_TotalPlayerDomesticMarketProfitModifierInPercent: reader.Read(m_iTotalPlayerDomesticMarketProfitModifierInPercent); break; // WTP, ray, Domestic Market Profit Modifier - START
 
 		case PlayerSave_TradeGroups: reader.Read(m_aTradeGroups); break;
 		case PlayerSave_selectionGroups: reader.Read(m_selectionGroups); break;
@@ -1070,6 +1089,10 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_FatherPointMultiplier, m_iFatherPointMultiplier, defaultFatherPointMultiplier);
 	writer.Write(PlayerSave_MissionaryRateModifier, m_iMissionaryRateModifier, defaultMissionaryRateModifier);
 	writer.Write(PlayerSave_NativeTradeModifier, m_iNativeTradeModifier, defaultNativeTradeModifier);
+
+	writer.Write(PlayerSave_TotalPlayerAfricaSellProfitModifierInPercent, m_iTotalPlayerAfricaSellProfitModifierInPercent, defaultTotalPlayerAfricaSellProfitModifierInPercent); // WTP, Africa and Port Royal Profit Modifiers - START
+	writer.Write(PlayerSave_TotalPlayerPortRoyalSellProfitModifierInPercent, m_iTotalPlayerPortRoyalSellProfitModifierInPercent, defaultTotalPlayerPortRoyalSellProfitModifierInPercent); // WTP, Africa and Port Royal Profit Modifiers - START
+	writer.Write(PlayerSave_TotalPlayerDomesticMarketProfitModifierInPercent, m_iTotalPlayerDomesticMarketProfitModifierInPercent, defaultTotalPlayerDomesticMarketProfitModifierInPercent); // WTP, ray, Domestic Market Profit Modifier - START
 
 	writer.Write(PlayerSave_TradeGroups, m_aTradeGroups);
 	writer.Write(PlayerSave_selectionGroups, m_selectionGroups);
