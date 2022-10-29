@@ -739,6 +739,7 @@ public:
 	// R&R, ray, Africa
 	int getYieldAfricaSellPrice(YieldTypes eYield) const;
 	int getYieldAfricaBuyPrice(YieldTypes eYield) const;
+	int getYieldAfricaBuyPriceNoModifier(YieldTypes eYield) const;
 	void setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessage);
 	CvUnit* buyYieldUnitFromAfrica(YieldTypes eYield, int iAmount, CvUnit* pTransport);
 	// R&R, ray, Africa - END
@@ -748,6 +749,7 @@ public:
 	CvUnit* buyPortRoyalUnit(UnitTypes eUnit, int iPriceModifier);
 	int getYieldPortRoyalSellPrice(YieldTypes eYield) const;
 	int getYieldPortRoyalBuyPrice(YieldTypes eYield) const;
+	int getYieldPortRoyalBuyPriceNoModifier(YieldTypes eYield) const;
 	void setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMessage);
 	CvUnit* buyYieldUnitFromPortRoyal(YieldTypes eYield, int iAmount, CvUnit* pTransport);
 	// R&R, ray, Port Royal - END
