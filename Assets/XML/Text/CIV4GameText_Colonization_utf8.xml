@@ -1734,13 +1734,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_DOMESTIC_PROFIT_MODIFER_POSITIVE</Tag>
-        <English>[ICON_BULLET]Prices for sales of Domestic Market are %D1%% higher.</English>
-        <German>[ICON_BULLET]Preise für Verkäufe des heimischen Marktes sind %D1%% höher.</German>
+        <English>[ICON_BULLET]Profits for sales of Domestic Market are %D1%% higher.</English>
+        <German>[ICON_BULLET]Gewinne für Verkäufe des heimischen Marktes sind %D1%% höher.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_DOMESTIC_PROFIT_MODIFER_NEGATIVE</Tag>
-        <English>[ICON_BULLET]Prices for sales of Domestic Market  are %D1%% lower.</English>
-        <German>[ICON_BULLET]Preise für Verkäufe des heimischen Marktes sind %D1%% niedriger.</German>
+        <English>[ICON_BULLET]Profits for sales of Domestic Market  are %D1%% lower.</English>
+        <German>[ICON_BULLET]Gewinne für Verkäufe des heimischen Marktes sind %D1%% niedriger.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_PROFESSION_YIELD_EQUIPMENT_MOD</Tag>
