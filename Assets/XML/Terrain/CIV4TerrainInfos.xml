@@ -60,7 +60,7 @@
                     <YieldType>YIELD_CLAY</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
-				<YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_GOATS</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
@@ -600,6 +600,10 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
+                    <YieldType>YIELD_COAL</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_RED_PEPPER</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
@@ -645,7 +649,7 @@
                     <YieldType>YIELD_PEAT</YieldType>
                     <iValue>0</iValue>
                 </YieldIntegerPair>
-				<YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_CLAY</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
@@ -665,11 +669,11 @@
                     <YieldType>YIELD_GOATS</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
-				<YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_PIGS</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
-				<YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_GEESE</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
@@ -1569,7 +1573,7 @@
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_CLAY</YieldType>
+                    <YieldType>YIELD_COAL</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -1602,7 +1606,7 @@
                     <YieldType>YIELD_COCOA_FRUITS</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
-				<YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_YERBA_LEAVES</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
@@ -1622,15 +1626,15 @@
                     <YieldType>YIELD_GEMS</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
-				<YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_GOATS</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
-				<YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_PIGS</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
-				<YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_CHICKEN</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
@@ -1737,19 +1741,19 @@
                     <YieldType>YIELD_FOOD</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
-				<YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_RAPE</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
-				<YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_FLAX</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
-				<YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_PIGS</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
-				<YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_GEESE</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
@@ -1791,15 +1795,15 @@
                     <YieldType>YIELD_FOOD</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
-				<YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_RAPE</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
-				<YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_FLAX</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
-				<YieldIntegerPair>
+                <YieldIntegerPair>
                     <YieldType>YIELD_MAPLE_SIRUP</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
@@ -1838,7 +1842,7 @@
                 <YieldIntegerPair>
                     <YieldType>YIELD_GOATS</YieldType>
                     <iValue>1</iValue>
-                </YieldIntegerPair>				
+                </YieldIntegerPair>                
             </RiverYieldIncreases>
             <bWater>0</bWater>
             <bImpassable>0</bImpassable>

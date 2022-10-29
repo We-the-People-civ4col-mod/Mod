@@ -16429,6 +16429,16 @@ int CvPlayer::getYieldAfricaSellPrice(YieldTypes eYield) const
 
 int CvPlayer::getYieldAfricaBuyPrice(YieldTypes eYield) const
 {
+	// WTP, Africa and Port Royal Profit Modifiers - START
+	int iPrice = getYieldAfricaBuyPriceNoModifier(eYield);
+	int iModifierFromTraits = getTotalPlayerAfricaSellProfitModifierInPercent();
+	iPrice = (iPrice * (100 + iModifierFromTraits)) / 100;
+	return iPrice;
+	// WTP, Africa and Port Royal Profit Modifiers - END
+}
+
+int CvPlayer::getYieldAfricaBuyPriceNoModifier(YieldTypes eYield) const
+{
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
 
@@ -16445,331 +16455,331 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 
 	// NEW PRICING MECHANISM to keep difference between manufactured goods and raw goods
 	int price_diff = GC.getPRICE_DIFF_MAN_TO_RAW();
-	int iOldPrice = getYieldAfricaBuyPrice(eYield);
+	int iOldPrice = getYieldAfricaBuyPriceNoModifier(eYield);
 	if (iPrice < iOldPrice)
 	{
 		switch (eYield)
 		{
 			case YIELD_ROPE:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_HEMP) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_HEMP) <= price_diff)
 				{
 					eYield = YIELD_HEMP;
-					iPrice = getYieldAfricaBuyPrice(YIELD_HEMP) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_HEMP) - 1;
 				}
 				break;
 			case YIELD_SAILCLOTH:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_FLAX) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_FLAX) <= price_diff)
 				{
 					eYield = YIELD_FLAX;
-					iPrice = getYieldAfricaBuyPrice(YIELD_FLAX) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_FLAX) - 1;
 				}
 				break;
 			case YIELD_GOLD:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_SILVER) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_SILVER) <= price_diff)
 				{
 					eYield = YIELD_SILVER;
-					iPrice = getYieldAfricaBuyPrice(YIELD_SILVER) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_SILVER) - 1;
 				}
 				break;
 			case YIELD_COCOA:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_COCOA_FRUITS) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_COCOA_FRUITS) <= price_diff)
 				{
 					eYield = YIELD_COCOA_FRUITS;
-					iPrice = getYieldAfricaBuyPrice(YIELD_COCOA_FRUITS) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_COCOA_FRUITS) - 1;
 				}
 				break;
 			case YIELD_COFFEE:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_COFFEE_BERRIES) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_COFFEE_BERRIES) <= price_diff)
 				{
 					eYield = YIELD_COFFEE_BERRIES;
-					iPrice = getYieldAfricaBuyPrice(YIELD_COFFEE_BERRIES) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_COFFEE_BERRIES) - 1;
 				}
 				break;
 			case YIELD_ROASTED_PEANUTS:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_PEANUTS) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_PEANUTS) <= price_diff)
 				{
 					eYield = YIELD_PEANUTS;
-					iPrice = getYieldAfricaBuyPrice(YIELD_PEANUTS) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_PEANUTS) - 1;
 				}
 				break;
 			case YIELD_CHEESE:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_MILK) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_MILK) <= price_diff)
 				{
 					eYield = YIELD_MILK;
-					iPrice = getYieldAfricaBuyPrice(YIELD_MILK) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_MILK) - 1;
 				}
 				break;
 			case YIELD_CIGARS:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_TOBACCO) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_TOBACCO) <= price_diff)
 				{
 					eYield = YIELD_TOBACCO;
-					iPrice = getYieldAfricaBuyPrice(YIELD_TOBACCO) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_TOBACCO) - 1;
 				}
 				break;
 			case YIELD_YERBA_TEA:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_YERBA_LEAVES) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_YERBA_LEAVES) <= price_diff)
 				{
 					eYield = YIELD_YERBA_LEAVES;
-					iPrice = getYieldAfricaBuyPrice(YIELD_YERBA_LEAVES) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_YERBA_LEAVES) - 1;
 				}
 				break;
 			case YIELD_WOOL_CLOTH:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_WOOL) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_WOOL) <= price_diff)
 				{
 					eYield = YIELD_WOOL;
-					iPrice = getYieldAfricaBuyPrice(YIELD_WOOL) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_WOOL) - 1;
 				}
 				break;
 			case YIELD_CLOTH:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_COTTON) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_COTTON) <= price_diff)
 				{
 					eYield = YIELD_COTTON;
-					iPrice = getYieldAfricaBuyPrice(YIELD_COTTON) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_COTTON) - 1;
 				}
 				break;
 			case YIELD_COLOURED_CLOTH:
-				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_INDIGO) + getYieldAfricaBuyPrice(YIELD_CLOTH)) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - (getYieldAfricaBuyPriceNoModifier(YIELD_INDIGO) + getYieldAfricaBuyPriceNoModifier(YIELD_CLOTH)) <= price_diff)
 				{
-					if (getYieldAfricaBuyPrice(YIELD_CLOTH) - getYieldAfricaBuyPrice(YIELD_INDIGO) <= price_diff)
+					if (getYieldAfricaBuyPriceNoModifier(YIELD_CLOTH) - getYieldAfricaBuyPriceNoModifier(YIELD_INDIGO) <= price_diff)
 					{
 						eYield = YIELD_INDIGO;
-						iPrice = getYieldAfricaBuyPrice(YIELD_INDIGO) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_INDIGO) - 1;
 					}
 					else
 					{
 						eYield = YIELD_CLOTH;
-						iPrice = getYieldAfricaBuyPrice(YIELD_CLOTH) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_CLOTH) - 1;
 					}
 				}
 				break;
 			case YIELD_FESTIVE_CLOTHES:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_COLOURED_CLOTH) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_COLOURED_CLOTH) <= price_diff)
 				{
 					eYield = YIELD_COLOURED_CLOTH;
-					iPrice = getYieldAfricaBuyPrice(YIELD_COLOURED_CLOTH) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_COLOURED_CLOTH) - 1;
 				}
 				break;
 			case YIELD_COLOURED_WOOL_CLOTH:
-				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_LOGWOOD) + getYieldAfricaBuyPrice(YIELD_WOOL_CLOTH)) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - (getYieldAfricaBuyPriceNoModifier(YIELD_LOGWOOD) + getYieldAfricaBuyPriceNoModifier(YIELD_WOOL_CLOTH)) <= price_diff)
 				{
-					if (getYieldAfricaBuyPrice(YIELD_WOOL_CLOTH) - getYieldAfricaBuyPrice(YIELD_LOGWOOD) <= price_diff)
+					if (getYieldAfricaBuyPriceNoModifier(YIELD_WOOL_CLOTH) - getYieldAfricaBuyPriceNoModifier(YIELD_LOGWOOD) <= price_diff)
 					{
 						eYield = YIELD_LOGWOOD;
-						iPrice = getYieldAfricaBuyPrice(YIELD_LOGWOOD) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_LOGWOOD) - 1;
 					}
 					else
 					{
 						eYield = YIELD_WOOL_CLOTH;
-						iPrice = getYieldAfricaBuyPrice(YIELD_WOOL_CLOTH) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_WOOL_CLOTH) - 1;
 					}
 				}
 				break;
 			case YIELD_EVERYDAY_CLOTHES:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_COLOURED_WOOL_CLOTH) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_COLOURED_WOOL_CLOTH) <= price_diff)
 				{
 					eYield = YIELD_COLOURED_WOOL_CLOTH;
-					iPrice = getYieldAfricaBuyPrice(YIELD_COLOURED_WOOL_CLOTH) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_COLOURED_WOOL_CLOTH) - 1;
 				}
 				break;
 			case YIELD_PIG_LEATHER:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_PIG_SKIN) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_PIG_SKIN) <= price_diff)
 				{
 					eYield = YIELD_PIG_SKIN;
-					iPrice = getYieldAfricaBuyPrice(YIELD_PIG_SKIN) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_PIG_SKIN) - 1;
 				}
 				break;
 			case YIELD_LEATHER:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_HIDES) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_HIDES) <= price_diff)
 				{
 					eYield = YIELD_HIDES;
-					iPrice = getYieldAfricaBuyPrice(YIELD_HIDES) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_HIDES) - 1;
 				}
 				break;
 			case YIELD_GOAT_HIDE_BOOTS:
-				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_GOAT_HIDES) + getYieldAfricaBuyPrice(YIELD_WOOL)) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - (getYieldAfricaBuyPriceNoModifier(YIELD_GOAT_HIDES) + getYieldAfricaBuyPriceNoModifier(YIELD_WOOL)) <= price_diff)
 				{
-					if (getYieldAfricaBuyPrice(YIELD_WOOL) > getYieldAfricaBuyPrice(YIELD_GOAT_HIDES))
+					if (getYieldAfricaBuyPriceNoModifier(YIELD_WOOL) > getYieldAfricaBuyPriceNoModifier(YIELD_GOAT_HIDES))
 					{
 						eYield = YIELD_WOOL;
-						iPrice = getYieldAfricaBuyPrice(YIELD_WOOL) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_WOOL) - 1;
 					}
 					else
 					{
 						eYield = YIELD_GOAT_HIDES;
-						iPrice = getYieldAfricaBuyPrice(YIELD_GOAT_HIDES) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_GOAT_HIDES) - 1;
 					}
 				}
 				break;
 			case YIELD_PADDED_LEATHER_COATS:
-				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_HIDES) + getYieldAfricaBuyPrice(YIELD_DOWNS)) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - (getYieldAfricaBuyPriceNoModifier(YIELD_HIDES) + getYieldAfricaBuyPriceNoModifier(YIELD_DOWNS)) <= price_diff)
 				{
-					if (getYieldAfricaBuyPrice(YIELD_DOWNS) > getYieldAfricaBuyPrice(YIELD_HIDES))
+					if (getYieldAfricaBuyPriceNoModifier(YIELD_DOWNS) > getYieldAfricaBuyPriceNoModifier(YIELD_HIDES))
 					{
 						eYield = YIELD_DOWNS;
-						iPrice = getYieldAfricaBuyPrice(YIELD_DOWNS) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_DOWNS) - 1;
 					}
 					else
 					{
 						eYield = YIELD_HIDES;
-						iPrice = getYieldAfricaBuyPrice(YIELD_HIDES) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_HIDES) - 1;
 					}
 				}
 				break;
 			case YIELD_COATS:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_FUR) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_FUR) <= price_diff)
 				{
 					eYield = YIELD_FUR;
-					iPrice = getYieldAfricaBuyPrice(YIELD_FUR) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_FUR) - 1;
 				}
 				break;
 			case YIELD_PREMIUM_COATS:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_PREMIUM_FUR) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_PREMIUM_FUR) <= price_diff)
 				{
 					eYield = YIELD_PREMIUM_FUR;
-					iPrice = getYieldAfricaBuyPrice(YIELD_PREMIUM_FUR) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_PREMIUM_FUR) - 1;
 				}
 				break;
 			case YIELD_SALT:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_RAW_SALT) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_RAW_SALT) <= price_diff)
 				{
 					eYield = YIELD_RAW_SALT;
-					iPrice = getYieldAfricaBuyPrice(YIELD_RAW_SALT) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_RAW_SALT) - 1;
 				}
 				break;
 			case YIELD_SPICES:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_RED_PEPPER) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_RED_PEPPER) <= price_diff)
 				{
 					eYield = YIELD_RED_PEPPER;
-					iPrice = getYieldAfricaBuyPrice(YIELD_RED_PEPPER) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_RED_PEPPER) - 1;
 				}
 				break;
 			case YIELD_VANILLA:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_VANILLA_PODS) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_VANILLA_PODS) <= price_diff)
 				{
 					eYield = YIELD_VANILLA_PODS;
-					iPrice = getYieldAfricaBuyPrice(YIELD_VANILLA_PODS) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_VANILLA_PODS) - 1;
 				}
 				break;
 			case YIELD_CHOCOLATE:
-				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_COCOA) + getYieldAfricaBuyPrice(YIELD_SUGAR)) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - (getYieldAfricaBuyPriceNoModifier(YIELD_COCOA) + getYieldAfricaBuyPriceNoModifier(YIELD_SUGAR)) <= price_diff)
 				{
-					if (getYieldAfricaBuyPrice(YIELD_COCOA) - getYieldAfricaBuyPrice(YIELD_SUGAR) <= price_diff)
+					if (getYieldAfricaBuyPriceNoModifier(YIELD_COCOA) - getYieldAfricaBuyPriceNoModifier(YIELD_SUGAR) <= price_diff)
 					{
 						eYield = YIELD_SUGAR;
-						iPrice = getYieldAfricaBuyPrice(YIELD_SUGAR) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_SUGAR) - 1;
 					}
 					else
 					{
 						eYield = YIELD_COCOA;
-						iPrice = getYieldAfricaBuyPrice(YIELD_COCOA) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_COCOA) - 1;
 					}
 				}
 				break;
 			case YIELD_BEER:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_BARLEY) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_BARLEY) <= price_diff)
 				{
 					eYield = YIELD_BARLEY;
-					iPrice = getYieldAfricaBuyPrice(YIELD_BARLEY) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_BARLEY) - 1;
 				}
 				break;
 			case YIELD_RUM:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_SUGAR) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_SUGAR) <= price_diff)
 				{
 					eYield = YIELD_SUGAR;
-					iPrice = getYieldAfricaBuyPrice(YIELD_SUGAR) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_SUGAR) - 1;
 				}
 				break;
 			case YIELD_HOOCH:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_FRUITS) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_FRUITS) <= price_diff)
 				{
 					eYield = YIELD_FRUITS;
-					iPrice = getYieldAfricaBuyPrice(YIELD_FRUITS) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_FRUITS) - 1;
 				}
 				break;
 			case YIELD_WINE:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_GRAPES) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_GRAPES) <= price_diff)
 				{
 					eYield = YIELD_GRAPES;
-					iPrice = getYieldAfricaBuyPrice(YIELD_GRAPES) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_GRAPES) - 1;
 				}
 				break;
 			case YIELD_OLIVE_OIL:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_OLIVES) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_OLIVES) <= price_diff)
 				{
 					eYield = YIELD_OLIVES;
-					iPrice = getYieldAfricaBuyPrice(YIELD_OLIVES) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_OLIVES) - 1;
 				}
 				break;
 			case YIELD_RAPE_OIL:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_RAPE) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_RAPE) <= price_diff)
 				{
 					eYield = YIELD_RAPE;
-					iPrice = getYieldAfricaBuyPrice(YIELD_RAPE) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_RAPE) - 1;
 				}
 				break;
 			case YIELD_WHALE_OIL:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_WHALE_BLUBBER) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_WHALE_BLUBBER) <= price_diff)
 				{
 					eYield = YIELD_WHALE_BLUBBER;
-					iPrice = getYieldAfricaBuyPrice(YIELD_WHALE_BLUBBER) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_WHALE_BLUBBER) - 1;
 				}
 				break;
 			case YIELD_POTTERY:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_CLAY) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_CLAY) <= price_diff)
 				{
 					eYield = YIELD_CLAY;
-					iPrice = getYieldAfricaBuyPrice(YIELD_CLAY) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_CLAY) - 1;
 				}
 				break;
 			case YIELD_FURNITURE:
-				if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_VALUABLE_WOOD) <= price_diff)
 				{
 					eYield = YIELD_VALUABLE_WOOD;
-					iPrice = getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) - 1;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_VALUABLE_WOOD) - 1;
 				}
 				break;
 			case YIELD_PADDED_FURNITURE:
-				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) + getYieldAfricaBuyPrice(YIELD_DOWNS)) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - (getYieldAfricaBuyPriceNoModifier(YIELD_VALUABLE_WOOD) + getYieldAfricaBuyPriceNoModifier(YIELD_DOWNS)) <= price_diff)
 				{
-					if (getYieldAfricaBuyPrice(YIELD_DOWNS) > getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD))
+					if (getYieldAfricaBuyPriceNoModifier(YIELD_DOWNS) > getYieldAfricaBuyPriceNoModifier(YIELD_VALUABLE_WOOD))
 					{
 						eYield = YIELD_DOWNS;
-						iPrice = getYieldAfricaBuyPrice(YIELD_DOWNS) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_DOWNS) - 1;
 					}
 					else
 					{
 						eYield = YIELD_VALUABLE_WOOD;
-						iPrice = getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_VALUABLE_WOOD) - 1;
 					}
 				}
 				break;
 			case YIELD_FIELD_WORKER_TOOLS:
-				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_HARDWOOD) + getYieldAfricaBuyPrice(YIELD_PIG_SKIN)) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - (getYieldAfricaBuyPriceNoModifier(YIELD_HARDWOOD) + getYieldAfricaBuyPriceNoModifier(YIELD_PIG_SKIN)) <= price_diff)
 				{
-					if (getYieldAfricaBuyPrice(YIELD_HARDWOOD) > getYieldAfricaBuyPrice(YIELD_PIG_SKIN))
+					if (getYieldAfricaBuyPriceNoModifier(YIELD_HARDWOOD) > getYieldAfricaBuyPriceNoModifier(YIELD_PIG_SKIN))
 					{
 						eYield = YIELD_HARDWOOD;
-						iPrice = getYieldAfricaBuyPrice(YIELD_HARDWOOD) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_HARDWOOD) - 1;
 					}
 					else
 					{
 						eYield = YIELD_PIG_SKIN;
-						iPrice = getYieldAfricaBuyPrice(YIELD_PIG_SKIN) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_PIG_SKIN) - 1;
 					}
 				}
 				break;
 			case YIELD_HOUSEHOLD_GOODS:
-				if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) + getYieldAfricaBuyPrice(YIELD_GOAT_HIDES)) <= price_diff)
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - (getYieldAfricaBuyPriceNoModifier(YIELD_VALUABLE_WOOD) + getYieldAfricaBuyPriceNoModifier(YIELD_GOAT_HIDES)) <= price_diff)
 				{
-					if (getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) > getYieldAfricaBuyPrice(YIELD_GOAT_HIDES))
+					if (getYieldAfricaBuyPriceNoModifier(YIELD_VALUABLE_WOOD) > getYieldAfricaBuyPriceNoModifier(YIELD_GOAT_HIDES))
 					{
 						eYield = YIELD_VALUABLE_WOOD;
-						iPrice = getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_VALUABLE_WOOD) - 1;
 					}
 					else
 					{
 						eYield = YIELD_GOAT_HIDES;
-						iPrice = getYieldAfricaBuyPrice(YIELD_GOAT_HIDES) - 1;
+						iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_GOAT_HIDES) - 1;
 					}
 				}
 				break;
@@ -16778,17 +16788,12 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 		}
 	}
 
-	// WTP, Africa and Port Royal Profit Modifiers - START
-	int iModifierFromTraits = getTotalPlayerAfricaSellProfitModifierInPercent();
-	iPrice = (iPrice * (100 + iModifierFromTraits)) / 100;
-	// WTP, Africa and Port Royal Profit Modifiers - END
-
 	//Never let price fall below Minimum
 	iPrice = std::max(iPrice, GC.getYieldInfo(eYield).getMinimumBuyPrice());
 
 	// TAC - Price Limits - Ray - END
 
-	if (iPrice != getYieldAfricaBuyPrice(eYield))
+	if (iPrice != getYieldAfricaBuyPriceNoModifier(eYield))
 	{
 		// TAC - Price Limits - Ray - START
 		//int iOldPrice = getYieldBuyPrice(eYield);
@@ -17079,6 +17084,16 @@ int CvPlayer::getYieldPortRoyalSellPrice(YieldTypes eYield) const
 
 int CvPlayer::getYieldPortRoyalBuyPrice(YieldTypes eYield) const
 {
+	// WTP, Africa and Port Royal Profit Modifiers - START
+	int iPrice = getYieldPortRoyalBuyPriceNoModifier(eYield);
+	const int iModifierFromTraits = getTotalPlayerPortRoyalSellProfitModifierInPercent();
+	iPrice = (iPrice * (100 + iModifierFromTraits)) / 100;
+	return iPrice;
+	// WTP, Africa and Port Royal Profit Modifiers - END
+}
+
+int CvPlayer::getYieldPortRoyalBuyPriceNoModifier(YieldTypes eYield) const
+{
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
 
@@ -17095,100 +17110,100 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 
 	// NEW PRICING MECHANISM to keep difference between manufactured goods and raw goods
 	int price_diff = GC.getPRICE_DIFF_MAN_TO_RAW();
-	int iOldPrice = getYieldPortRoyalBuyPrice(eYield);
+	int iOldPrice = getYieldPortRoyalBuyPriceNoModifier(eYield);
 	if (iPrice < iOldPrice)
 	{
 		switch (eYield)
 		{
 			case YIELD_ROPE:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_HEMP) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_HEMP) <= price_diff)
 				{
 					eYield = YIELD_HEMP;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_HEMP) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_HEMP) - 1;
 				}
 				break;
 			case YIELD_SAILCLOTH:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_FLAX) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_FLAX) <= price_diff)
 				{
 					eYield = YIELD_FLAX;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_FLAX) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_FLAX) - 1;
 				}
 				break;
 			case YIELD_GOLD:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_SILVER) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_SILVER) <= price_diff)
 				{
 					eYield = YIELD_SILVER;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_SILVER) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_SILVER) - 1;
 				}
 				break;
 			case YIELD_COCOA:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_COCOA_FRUITS) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_COCOA_FRUITS) <= price_diff)
 				{
 					eYield = YIELD_COCOA_FRUITS;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_COCOA_FRUITS) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_COCOA_FRUITS) - 1;
 				}
 				break;
 			case YIELD_COFFEE:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_COFFEE_BERRIES) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_COFFEE_BERRIES) <= price_diff)
 				{
 					eYield = YIELD_COFFEE_BERRIES;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_COFFEE_BERRIES) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_COFFEE_BERRIES) - 1;
 				}
 				break;
 			case YIELD_ROASTED_PEANUTS:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_PEANUTS) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_PEANUTS) <= price_diff)
 				{
 					eYield = YIELD_PEANUTS;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_PEANUTS) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_PEANUTS) - 1;
 				}
 				break;
 			case YIELD_CHEESE:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_MILK) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_MILK) <= price_diff)
 				{
 					eYield = YIELD_MILK;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_MILK) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_MILK) - 1;
 				}
 				break;
 			case YIELD_CIGARS:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_TOBACCO) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_TOBACCO) <= price_diff)
 				{
 					eYield = YIELD_TOBACCO;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_TOBACCO) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_TOBACCO) - 1;
 				}
 				break;
 			case YIELD_YERBA_TEA:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_YERBA_LEAVES) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_YERBA_LEAVES) <= price_diff)
 				{
 					eYield = YIELD_YERBA_LEAVES;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_YERBA_LEAVES) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_YERBA_LEAVES) - 1;
 				}
 				break;
 			case YIELD_WOOL_CLOTH:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_WOOL) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_WOOL) <= price_diff)
 				{
 					eYield = YIELD_WOOL;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_WOOL) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_WOOL) - 1;
 				}
 				break;
 			case YIELD_CLOTH:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_COTTON) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_COTTON) <= price_diff)
 				{
 					eYield = YIELD_COTTON;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_COTTON) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_COTTON) - 1;
 				}
 				break;
 			case YIELD_COLOURED_CLOTH:
-				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_INDIGO) + getYieldPortRoyalBuyPrice(YIELD_CLOTH)) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - (getYieldPortRoyalBuyPriceNoModifier(YIELD_INDIGO) + getYieldPortRoyalBuyPriceNoModifier(YIELD_CLOTH)) <= price_diff)
 				{
-					if (getYieldPortRoyalBuyPrice(YIELD_CLOTH) - getYieldPortRoyalBuyPrice(YIELD_INDIGO) <= price_diff)
+					if (getYieldPortRoyalBuyPriceNoModifier(YIELD_CLOTH) - getYieldPortRoyalBuyPriceNoModifier(YIELD_INDIGO) <= price_diff)
 					{
 						eYield = YIELD_INDIGO;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_INDIGO) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_INDIGO) - 1;
 					}
 					else
 					{
 						eYield = YIELD_CLOTH;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_CLOTH) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_CLOTH) - 1;
 					}
 				}
 				break;
@@ -17200,17 +17215,17 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 				}
 				break;
 			case YIELD_COLOURED_WOOL_CLOTH:
-				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_LOGWOOD) + getYieldPortRoyalBuyPrice(YIELD_WOOL_CLOTH)) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - (getYieldPortRoyalBuyPriceNoModifier(YIELD_LOGWOOD) + getYieldPortRoyalBuyPriceNoModifier(YIELD_WOOL_CLOTH)) <= price_diff)
 				{
-					if (getYieldPortRoyalBuyPrice(YIELD_WOOL_CLOTH) - getYieldPortRoyalBuyPrice(YIELD_LOGWOOD) <= price_diff)
+					if (getYieldPortRoyalBuyPriceNoModifier(YIELD_WOOL_CLOTH) - getYieldPortRoyalBuyPriceNoModifier(YIELD_LOGWOOD) <= price_diff)
 					{
 						eYield = YIELD_LOGWOOD;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_LOGWOOD) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_LOGWOOD) - 1;
 					}
 					else
 					{
 						eYield = YIELD_WOOL_CLOTH;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_WOOL_CLOTH) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_WOOL_CLOTH) - 1;
 					}
 				}
 				break;
@@ -17222,204 +17237,204 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 				}
 				break;
 			case YIELD_PIG_LEATHER:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_PIG_SKIN) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_PIG_SKIN) <= price_diff)
 				{
 					eYield = YIELD_PIG_SKIN;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_PIG_SKIN) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_PIG_SKIN) - 1;
 				}
 				break;
 			case YIELD_LEATHER:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_HIDES) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_HIDES) <= price_diff)
 				{
 					eYield = YIELD_HIDES;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_HIDES) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_HIDES) - 1;
 				}
 				break;
 			case YIELD_GOAT_HIDE_BOOTS:
-				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_GOAT_HIDES) + getYieldPortRoyalBuyPrice(YIELD_WOOL)) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - (getYieldPortRoyalBuyPriceNoModifier(YIELD_GOAT_HIDES) + getYieldPortRoyalBuyPriceNoModifier(YIELD_WOOL)) <= price_diff)
 				{
-					if (getYieldPortRoyalBuyPrice(YIELD_WOOL) > getYieldPortRoyalBuyPrice(YIELD_GOAT_HIDES))
+					if (getYieldPortRoyalBuyPriceNoModifier(YIELD_WOOL) > getYieldPortRoyalBuyPriceNoModifier(YIELD_GOAT_HIDES))
 					{
 						eYield = YIELD_WOOL;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_WOOL) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_WOOL) - 1;
 					}
 					else
 					{
 						eYield = YIELD_GOAT_HIDES;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_GOAT_HIDES) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_GOAT_HIDES) - 1;
 					}
 				}
 				break;
 			case YIELD_PADDED_LEATHER_COATS:
-				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_HIDES) + getYieldPortRoyalBuyPrice(YIELD_DOWNS)) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - (getYieldPortRoyalBuyPriceNoModifier(YIELD_HIDES) + getYieldPortRoyalBuyPriceNoModifier(YIELD_DOWNS)) <= price_diff)
 				{
-					if (getYieldPortRoyalBuyPrice(YIELD_HIDES) > getYieldPortRoyalBuyPrice(YIELD_DOWNS))
+					if (getYieldPortRoyalBuyPriceNoModifier(YIELD_HIDES) > getYieldPortRoyalBuyPriceNoModifier(YIELD_DOWNS))
 					{
 						eYield = YIELD_HIDES;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_HIDES) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_HIDES) - 1;
 					}
 					else
 					{
 						eYield = YIELD_DOWNS;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_DOWNS) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_DOWNS) - 1;
 					}
 				}
 				break;
 			case YIELD_COATS:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_FUR) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_FUR) <= price_diff)
 				{
 					eYield = YIELD_FUR;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_FUR) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_FUR) - 1;
 				}
 				break;
 			case YIELD_PREMIUM_COATS:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_PREMIUM_FUR) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_PREMIUM_FUR) <= price_diff)
 				{
 					eYield = YIELD_PREMIUM_FUR;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_PREMIUM_FUR) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_PREMIUM_FUR) - 1;
 				}
 				break;
 			case YIELD_SALT:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_RAW_SALT) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_RAW_SALT) <= price_diff)
 				{
 					eYield = YIELD_RAW_SALT;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_RAW_SALT) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_RAW_SALT) - 1;
 				}
 				break;
 			case YIELD_SPICES:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_RED_PEPPER) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_RED_PEPPER) <= price_diff)
 				{
 					eYield = YIELD_RED_PEPPER;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_RED_PEPPER) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_RED_PEPPER) - 1;
 				}
 				break;
 			case YIELD_VANILLA:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_VANILLA_PODS) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_VANILLA_PODS) <= price_diff)
 				{
 					eYield = YIELD_VANILLA_PODS;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_VANILLA_PODS) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_VANILLA_PODS) - 1;
 				}
 				break;
 			case YIELD_CHOCOLATE:
-				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_COCOA) + getYieldPortRoyalBuyPrice(YIELD_SUGAR)) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - (getYieldPortRoyalBuyPriceNoModifier(YIELD_COCOA) + getYieldPortRoyalBuyPriceNoModifier(YIELD_SUGAR)) <= price_diff)
 				{
-					if (getYieldPortRoyalBuyPrice(YIELD_COCOA) - getYieldPortRoyalBuyPrice(YIELD_SUGAR) <= price_diff)
+					if (getYieldPortRoyalBuyPriceNoModifier(YIELD_COCOA) - getYieldPortRoyalBuyPriceNoModifier(YIELD_SUGAR) <= price_diff)
 					{
 						eYield = YIELD_SUGAR;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_SUGAR) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_SUGAR) - 1;
 					}
 					else
 					{
 						eYield = YIELD_COCOA;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_COCOA) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_COCOA) - 1;
 					}
 				}
 				break;
 			case YIELD_BEER:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_BARLEY) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_BARLEY) <= price_diff)
 				{
 					eYield = YIELD_BARLEY;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_BARLEY) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_BARLEY) - 1;
 				}
 				break;
 			case YIELD_RUM:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_SUGAR) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_SUGAR) <= price_diff)
 				{
 					eYield = YIELD_SUGAR;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_SUGAR) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_SUGAR) - 1;
 				}
 				break;
 			case YIELD_HOOCH:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_FRUITS) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_FRUITS) <= price_diff)
 				{
 					eYield = YIELD_FRUITS;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_FRUITS) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_FRUITS) - 1;
 				}
 				break;
 			case YIELD_WINE:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_GRAPES) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_GRAPES) <= price_diff)
 				{
 					eYield = YIELD_GRAPES;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_GRAPES) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_GRAPES) - 1;
 				}
 				break;
 			case YIELD_OLIVE_OIL:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_OLIVES) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_OLIVES) <= price_diff)
 				{
 					eYield = YIELD_OLIVES;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_OLIVES) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_OLIVES) - 1;
 				}
 				break;
 			case YIELD_RAPE_OIL:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_RAPE) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_RAPE) <= price_diff)
 				{
 					eYield = YIELD_RAPE;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_RAPE) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_RAPE) - 1;
 				}
 				break;
 			case YIELD_WHALE_OIL:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_WHALE_BLUBBER) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_WHALE_BLUBBER) <= price_diff)
 				{
 					eYield = YIELD_WHALE_BLUBBER;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_WHALE_BLUBBER) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_WHALE_BLUBBER) - 1;
 				}
 				break;
 			case YIELD_POTTERY:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_CLAY) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_CLAY) <= price_diff)
 				{
 					eYield = YIELD_CLAY;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_CLAY) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_CLAY) - 1;
 				}
 				break;
 			case YIELD_FURNITURE:
-				if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_VALUABLE_WOOD) <= price_diff)
 				{
 					eYield = YIELD_VALUABLE_WOOD;
-					iPrice = getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) - 1;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_VALUABLE_WOOD) - 1;
 				}
 				break;
 			case YIELD_PADDED_FURNITURE:
-				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) + getYieldPortRoyalBuyPrice(YIELD_DOWNS)) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - (getYieldPortRoyalBuyPriceNoModifier(YIELD_VALUABLE_WOOD) + getYieldPortRoyalBuyPriceNoModifier(YIELD_DOWNS)) <= price_diff)
 				{
-					if (getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) > getYieldPortRoyalBuyPrice(YIELD_DOWNS))
+					if (getYieldPortRoyalBuyPriceNoModifier(YIELD_VALUABLE_WOOD) > getYieldPortRoyalBuyPriceNoModifier(YIELD_DOWNS))
 					{
 						eYield = YIELD_VALUABLE_WOOD;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_VALUABLE_WOOD) - 1;
 					}
 					else
 					{
 						eYield = YIELD_DOWNS;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_DOWNS) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_DOWNS) - 1;
 					}
 				}
 				break;
 			case YIELD_FIELD_WORKER_TOOLS:
-				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_HARDWOOD) + getYieldPortRoyalBuyPrice(YIELD_PIG_SKIN)) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - (getYieldPortRoyalBuyPriceNoModifier(YIELD_HARDWOOD) + getYieldPortRoyalBuyPriceNoModifier(YIELD_PIG_SKIN)) <= price_diff)
 				{
-					if (getYieldPortRoyalBuyPrice(YIELD_HARDWOOD) > getYieldPortRoyalBuyPrice(YIELD_PIG_SKIN))
+					if (getYieldPortRoyalBuyPriceNoModifier(YIELD_HARDWOOD) > getYieldPortRoyalBuyPriceNoModifier(YIELD_PIG_SKIN))
 					{
 						eYield = YIELD_HARDWOOD;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_HARDWOOD) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_HARDWOOD) - 1;
 					}
 					else
 					{
 						eYield = YIELD_PIG_SKIN;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_PIG_SKIN) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_PIG_SKIN) - 1;
 					}
 				}
 				break;
 			case YIELD_HOUSEHOLD_GOODS:
-				if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) + getYieldPortRoyalBuyPrice(YIELD_GOAT_HIDES)) <= price_diff)
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - (getYieldPortRoyalBuyPriceNoModifier(YIELD_VALUABLE_WOOD) + getYieldPortRoyalBuyPriceNoModifier(YIELD_GOAT_HIDES)) <= price_diff)
 				{
-					if (getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) > getYieldPortRoyalBuyPrice(YIELD_GOAT_HIDES))
+					if (getYieldPortRoyalBuyPriceNoModifier(YIELD_VALUABLE_WOOD) > getYieldPortRoyalBuyPriceNoModifier(YIELD_GOAT_HIDES))
 					{
 						eYield = YIELD_VALUABLE_WOOD;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_VALUABLE_WOOD) - 1;
 					}
 					else
 					{
 						eYield = YIELD_GOAT_HIDES;
-						iPrice = getYieldPortRoyalBuyPrice(YIELD_GOAT_HIDES) - 1;
+						iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_GOAT_HIDES) - 1;
 					}
 				}
 				break;
@@ -17428,17 +17443,12 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 		}
 	}
 
-	// WTP, Africa and Port Royal Profit Modifiers - START
-	int iModifierFromTraits = getTotalPlayerPortRoyalSellProfitModifierInPercent();
-	iPrice = (iPrice * (100 + iModifierFromTraits)) / 100;
-	// WTP, Africa and Port Royal Profit Modifiers - END
-
 	//Never let price fall below Minimum
 	iPrice = std::max(iPrice, GC.getYieldInfo(eYield).getMinimumBuyPrice());
 
 	// TAC - Price Limits - Ray - END
 
-	if (iPrice != getYieldPortRoyalBuyPrice(eYield))
+	if (iPrice != getYieldPortRoyalBuyPriceNoModifier(eYield))
 	{
 		// TAC - Price Limits - Ray - START
 		//int iOldPrice = getYieldBuyPrice(eYield);
