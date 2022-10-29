@@ -889,12 +889,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_FERMENTATOR</Type>
-            <Button>,Art/colonization_atlas_units.dds,7,2</Button>
-            <FullLengthIcon>,Art/Interface/Screens/city_management/female_coffee_trader.dds</FullLengthIcon>
-            <fScale>0.6</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,4,1</Button>
+            <FullLengthIcon>,Art/Interface/Screens/city_management/Master_Coffee_Trader.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/female_coffee_trader/Expert_Sugar_Planter.nif</NIF>
-            <KFM>Art/Units/Expert_Sugar_Planter/Expert_Sugar_Planter.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Coffee_Trader/Master_Tobacconist.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Coffee_Trader/Master_Tobacconist.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17186,12 +17186,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_RAPE_PLANTER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Rape_Planter_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Rape_Planter_Europe.dds</FullLengthIcon>
+            <Button>,Art/colonization_atlas_units_two.dds,5,1</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Rape_Planter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Rape_Planter/Expert_Sugar_Planter.nif</NIF>
-            <KFM>Art/Units/Expert_Sugar_Planter/Expert_Sugar_Planter.kfm</KFM>
+            <KFM>Art/Units/Settler/Expert_Rape_Planter/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
