@@ -122201,7 +122201,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=80,y=3
-	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
