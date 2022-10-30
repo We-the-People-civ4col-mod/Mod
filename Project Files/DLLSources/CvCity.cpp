@@ -3118,6 +3118,16 @@ int CvCity::getProfessionOutput(ProfessionTypes eProfession, const CvUnit* pUnit
 		}
 	}
 
+	// WTP, ray, fix for Milk producing Cattle from thin air - START
+	// case for e.g. Milk
+	YieldTypes eYieldProduced2 = (YieldTypes) kProfessionInfo.getYieldsProduced(1);
+	YieldTypes eFirstYieldConsumed = (YieldTypes) kProfessionInfo.getYieldsConsumed(0);
+	if (eYieldProduced2 != NO_YIELD && eYieldProduced2 == eFirstYieldConsumed)
+	{
+		iProfessionOutput = std::min(iProfessionOutput, getYieldStored(eFirstYieldConsumed));
+	}
+	// WTP, ray, fix for Milk producing Cattle from thin air - END
+
 	return iProfessionOutput;
 }
 
