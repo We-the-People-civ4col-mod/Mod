@@ -17135,12 +17135,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_OLIVES_PLANTER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Olives_Planter_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Olives_Planter_Europe.dds</FullLengthIcon>
-            <fScale>0.5</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,8,1</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Olives_Planter.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Olives_Planter/worker.nif</NIF>
-            <KFM>Art/Units/Settler/worker/worker.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Olives_Planter/Expert_Sugar_Planter.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Rape_Planter/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17186,7 +17186,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_RAPE_PLANTER</Type>
-            <Button>,Art/colonization_atlas_units_two.dds,5,1</Button>
+            <Button>,Art/colonization_atlas_units.dds,7,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Rape_Planter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
@@ -17309,12 +17309,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_CONFECTIONER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Master_Confectioner_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Confectioner_Europe.dds</FullLengthIcon>
+            <Button>,Art/colonization_atlas_units_two.dds,7,1</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Confectioner.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Confectioner/Expert_Lumberjack.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Confectioner/Expert_Lumberjack.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Confectioner/Master_Distiller.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Oil_Trader/Master_Distiller.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
