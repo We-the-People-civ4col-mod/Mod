@@ -2501,7 +2501,7 @@ class CvMainInterface:
 		self.PLOT_LIST_ICON_SIZE = 12
 		self.PLOT_LIST_HEALTH_BAR_HEIGHT = 11
 		self.PLOT_LIST_HEALTH_BAR_SHORTENING_CORRECTION = 6
-		CyInterface().cacheInterfacePlotUnits(pHeadSelectedCity.plot())		
+		CyInterface().cacheInterfacePlotUnits(pHeadSelectedCity.plot())
 		#screen.addScrollPanel("CityGarrisonPanel", u"", CITIZEN_BAR_WIDTH + (SMALL_BUTTON_SIZE / 8), yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, xResolution - CITIZEN_BAR_WIDTH - TRANSPORT_AREA_WIDTH + STACK_BAR_HEIGHT * 4 / 8, TRANSPORT_AREA_HEIGHT + (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_EMPTY, false, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )	
 		screen.setLabelAt("CityGarrisonLabel", "CityGarrisonPanel", self.setFontSize((localText.getColorText("TXT_KEY_GARRISON_PANEL", (), gc.getInfoTypeForString("COLOR_FONT_CREAM"))).upper(), 0), CvUtil.FONT_LEFT_JUSTIFY, SMALL_BUTTON_SIZE / 4, STACK_BAR_HEIGHT / 2, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )
 		
@@ -3101,12 +3101,12 @@ class CvMainInterface:
 				#szRate = self.setFontSize(szRate, 0)
 				#screen.setLabel(szStorageLabel, "", self.setFontSize(szStored, 1), CvUtil.FONT_CENTER_JUSTIFY, STACK_BAR_HEIGHT + (i * RESOURCE_TABLE_COLUMN_WIDTH) + (RESOURCE_TABLE_COLUMN_WIDTH / 2), yResolution - (STACK_BAR_HEIGHT * 3), -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
 				iX = STACK_BAR_HEIGHT + ((index - iDelta) * RESOURCE_TABLE_COLUMN_WIDTH) + (RESOURCE_TABLE_COLUMN_WIDTH / 2) + xDelta
-				iY = yResolution - BOTTOM_CENTER_HUD_HEIGHT / iK1 + self.iIconWidth - 25
+				iY = yResolution - BOTTOM_CENTER_HUD_HEIGHT / iK1 + self.iIconWidth - yResolution / 25
 				# WTP, ray, 3 rows
 				if (iK1 == 2):
-					iY = yResolution - (2 * BOTTOM_CENTER_HUD_HEIGHT / 3) + self.iIconWidth - 25
+					iY = yResolution - (2 * BOTTOM_CENTER_HUD_HEIGHT / 3) + self.iIconWidth - yResolution / 25
 				elif (iK1 == 3):
-					iY = yResolution - BOTTOM_CENTER_HUD_HEIGHT / 3 + self.iIconWidth - 25
+					iY = yResolution - BOTTOM_CENTER_HUD_HEIGHT / 3 + self.iIconWidth - yResolution / 25
 				screen.setLabel(szStorageLabel, "", self.setFontSize(szStored, 0), CvUtil.FONT_CENTER_JUSTIFY, iX, iY, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
 # VET DynamicYieldsIcon - 14/15 - start
 				ResourceHideList.append(szStorageLabel)
