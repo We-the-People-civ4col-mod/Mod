@@ -488,12 +488,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_DYER</Type>
-            <Button>,Art/colonization_atlas_units.dds,1,2</Button>
+            <Button>,Art/colonization_atlas_units_two.dds,6,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Dyer.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Dyer/Master_Weaver.nif</NIF>
-            <KFM>Art/Units/Master_Weaver/Master_Weaver.kfm</KFM>
+            <NIF>Art/Units/Settler/Dyer/Expert_Fisherman.nif</NIF>
+            <KFM>Art/Units/Settler/Dyer/Expert_Fisherman.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17428,12 +17428,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_CLOTH_TAYLOR</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Master_Cloth_Taylor_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Cloth_Taylor_Europe.dds</FullLengthIcon>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,5,3</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Cloth_Taylor.dds</FullLengthIcon>
             <fScale>0.5</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Cloth_Taylor/musketman.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Cloth_Taylor/Musketman/Musketman.kfm</KFM>
+            <NIF>Art/Units/Master_Weaver/Master_Weaver.nif</NIF>
+            <KFM>Art/Units/Master_Weaver/Master_Weaver.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
