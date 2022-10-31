@@ -20721,9 +20721,9 @@ bool CvPlayer::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, i
 		calculatedChance = calculatedChance * ki_modifier / 100;
 	}
 
-	calculatedChance *= CivEffect()->getLearningByDoingModifier() / 100; // CivEffects - Nightinggale
+	calculatedChance = calculatedChance * CivEffect()->getLearningByDoingModifier() / 100; // CivEffects - Nightinggale
 
-								//Schmiddie, added LbD modifier for Sophisticated Trait ENDE
+	//Schmiddie, added LbD modifier for Sophisticated Trait ENDE
 
 	//ray Multiplayer Random Fix
 	//int randomValue = rand() % 1000 + 1;

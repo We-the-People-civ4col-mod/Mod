@@ -12037,7 +12037,7 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 		calculatedChance = calculatedChance * ki_modifier / 100;
 	}
 	
-	calculatedChance *= GET_PLAYER(getOwnerINLINE()).getLearningByDoingModifier() / 100; // CivEffects - Nightinggale
+	calculatedChance = calculatedChance * GET_PLAYER(getOwnerINLINE()).getLearningByDoingModifier() / 100; // CivEffects - Nightinggale
 
 	//ray Multiplayer Random Fix
 	//int randomValue = rand() % 1000 + 1;
