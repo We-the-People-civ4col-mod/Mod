@@ -151,7 +151,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_3</Tag>
-        <English>A significant moment, [CT_NAME]. Hopefully you will be able to tell your children about it.</English>
+        <English>A significant moment, [CT_NAME]. With luck you will be able to tell your children about it.</English>
         <French>Longue vie et prospérité à nos deux peuples !</French>
         <German>Ein bedeutsamer Augenblick, [CT_NAME]. Hoffentlich werdet Ihr auch noch Euren Kinder davon erzählen können.</German>
         <Italian>Lunga vita e prosperità!</Italian>
@@ -271,7 +271,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_18</Tag>
-        <English>Then we will let you leave unmolested now, [CT_NAME].</English>
+        <English>You may leave unmolested for now, [CT_NAME].</English>
         <French>La paix et l'honneur, [CT_NAME], c'est tout ce qui compte.</French>
         <German>Dann lassen wir Euch jetzt unbehelligt abrücken, [CT_NAME].</German>
         <Italian>Una pace onorevole, [CT_NAME], ecco di cosa si tratta.</Italian>
@@ -527,7 +527,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_8</Tag>
-        <English>Do not make me angry, [CT_NAME]. You wouldn't like me when I'm angry.</English>
+        <English>Don't make me angry, [CT_NAME]. You won't like me when I'm angry.</English>
         <French>Ne me mettez pas en colère, [CT_NAME]. Il vaut mieux ne pas me voir en colère, croyez-moi.</French>
         <German>Bringt mich nicht in Rage, [CT_NAME]! Das würde Euch nicht gut bekommen!</German>
         <Italian>Non farmi arrabbiare, [CT_NAME]. Non sono divertente, quando mi arrabbio.</Italian>
