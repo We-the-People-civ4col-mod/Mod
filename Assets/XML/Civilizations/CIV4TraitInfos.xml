@@ -45,7 +45,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -76,6 +75,7 @@
             <Type>TRAIT_TOLERANT</Type>
             <Description>TXT_KEY_TRAIT_TOLERANT</Description>
             <ShortDescription>TXT_KEY_TRAIT_TOLERANT_SHORT</ShortDescription>
+			<eCivEffect>CIV_EFFECT_TRAIT_TOLERANT</eCivEffect>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -111,7 +111,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>20</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>20</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -177,7 +176,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -238,7 +236,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -299,7 +296,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -361,7 +357,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -549,7 +544,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -672,7 +666,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -807,7 +800,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -873,7 +865,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -975,7 +966,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -1054,7 +1044,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -1124,7 +1113,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>-50</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>-50</iLearningByDoingRevoltModifier>
@@ -1185,7 +1173,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -1282,7 +1269,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -1352,7 +1338,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -1418,7 +1403,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -1539,7 +1523,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -1638,7 +1621,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -1722,7 +1704,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>50</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -1815,7 +1796,6 @@
             <iPioneerSpeedModifier>50</iPioneerSpeedModifier>
             <iImprovementPriceModifier>-50</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>-50</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -1881,7 +1861,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -1983,7 +1962,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -2054,7 +2032,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -2141,7 +2118,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -2230,7 +2206,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -2291,7 +2266,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -2370,7 +2344,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -2436,7 +2409,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -2515,7 +2487,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -2576,7 +2547,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -2655,7 +2625,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -2734,7 +2703,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -2822,7 +2790,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -2901,7 +2868,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -2976,7 +2942,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -3056,7 +3021,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -3136,7 +3100,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -3202,7 +3165,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -3268,7 +3230,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -3366,7 +3327,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -3460,7 +3420,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -3554,7 +3513,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -3648,7 +3606,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -3742,7 +3699,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -3848,7 +3804,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -3914,7 +3869,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -3980,7 +3934,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -4096,7 +4049,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -4190,7 +4142,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -4256,7 +4207,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>-50</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>-50</iLearningByDoingRevoltModifier>
@@ -4317,7 +4267,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -4395,7 +4344,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -4474,7 +4422,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -4545,7 +4492,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -4630,7 +4576,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -4701,7 +4646,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -4772,7 +4716,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -4888,7 +4831,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -4998,7 +4940,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -5108,7 +5049,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -5214,7 +5154,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -5321,7 +5260,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -5410,7 +5348,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -5517,7 +5454,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -5631,7 +5567,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -5725,7 +5660,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -5823,7 +5757,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -5901,7 +5834,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -6007,7 +5939,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -6083,7 +6014,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -6154,7 +6084,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -6230,7 +6159,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -6300,7 +6228,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -6366,7 +6293,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -6460,7 +6386,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -6559,7 +6484,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -6629,7 +6553,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -6716,7 +6639,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -6787,7 +6709,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -6853,7 +6774,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -6924,7 +6844,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -6999,7 +6918,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -7060,7 +6978,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -7126,7 +7043,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -7220,7 +7136,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -7314,7 +7229,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -7380,7 +7294,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -7441,7 +7354,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -7515,7 +7427,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -7613,7 +7524,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -7691,7 +7601,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -7803,7 +7712,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -7864,7 +7772,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -7939,7 +7846,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -8005,7 +7911,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -8088,7 +7993,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -8198,7 +8102,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -8304,7 +8207,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -8370,7 +8272,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -8440,7 +8341,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -8534,7 +8434,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -8621,7 +8520,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -8733,7 +8631,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -8845,7 +8742,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -8955,7 +8851,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -9074,7 +8969,6 @@
             <iPioneerSpeedModifier>10</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -9149,7 +9043,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -9249,7 +9142,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -9323,7 +9215,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -9421,7 +9312,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -9487,7 +9377,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -9558,7 +9447,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -9628,7 +9516,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -9698,7 +9585,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -9768,7 +9654,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -9851,7 +9736,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -9926,7 +9810,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -10014,7 +9897,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -10148,7 +10030,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -10255,7 +10136,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -10343,7 +10223,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -10449,7 +10328,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -10510,7 +10388,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -10588,7 +10465,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -10659,7 +10535,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -10739,7 +10614,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -10837,7 +10711,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -10925,7 +10798,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -11023,7 +10895,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -11098,7 +10969,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -11164,7 +11034,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -11225,7 +11094,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -11332,7 +11200,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -11410,7 +11277,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -11480,7 +11346,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>50</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -11541,7 +11406,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>-25</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -11607,7 +11471,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -11691,7 +11554,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -11770,7 +11632,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -11836,7 +11697,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -11897,7 +11757,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -11967,7 +11826,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>
@@ -12038,7 +11896,6 @@
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
             <iLearningByDoingFreeModifier>0</iLearningByDoingFreeModifier>
             <iLearningByDoingRunawayModifier>0</iLearningByDoingRunawayModifier>
             <iLearningByDoingRevoltModifier>0</iLearningByDoingRevoltModifier>

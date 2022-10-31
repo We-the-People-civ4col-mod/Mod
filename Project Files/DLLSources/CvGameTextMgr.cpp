@@ -4346,16 +4346,6 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 		}
 		// WTP, ray, Improvement Growth Modifier - EMD
 
-		if (kTrait.getLearningByDoingModifier() != 0)
-		{
-			szHelpString.append(NEWLINE);
-			if (bIndent)
-			{
-				szHelpString.append(L"  ");
-			}
-			szHelpString.append(gDLL->getText("TXT_KEY_FATHER_LEARNING_BY_DOING_MODIFIER", kTrait.getLearningByDoingModifier()));
-		}
-
 		// WTP, ray, adding modifiers for other LBD features - START
 		if (kTrait.getLearningByDoingFreeModifier() != 0)
 		{

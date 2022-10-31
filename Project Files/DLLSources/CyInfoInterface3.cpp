@@ -187,7 +187,6 @@ void CyInfoPythonInterface3()
 		.def("getPioneerSpeedModifier", &CvTraitInfo::getPioneerSpeedModifier, "int ()")
 		.def("getImprovementPriceModifier", &CvTraitInfo::getImprovementPriceModifier, "int ()")
 		.def("getImprovementGrowthTimeModifier", &CvTraitInfo::getImprovementGrowthTimeModifier, "int ()") // WTP, ray, Improvement Growth Modifier
-		.def("getLearningByDoingModifier", &CvTraitInfo::getLearningByDoingModifier, "int ()") 
 		.def("getLearningByDoingFreeModifier", &CvTraitInfo::getLearningByDoingFreeModifier, "int ()") // WTP, ray, adding modifiers for other LBD features - START
 		.def("getLearningByDoingRunawayModifier", &CvTraitInfo::getLearningByDoingRunawayModifier, "int ()") // WTP, ray, adding modifiers for other LBD features - START
 		.def("getLearningByDoingRevoltModifier", &CvTraitInfo::getLearningByDoingRevoltModifier, "int ()") // WTP, ray, adding modifiers for other LBD features - START

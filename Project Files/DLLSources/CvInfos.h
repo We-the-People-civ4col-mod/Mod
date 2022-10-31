@@ -3304,7 +3304,6 @@ public:
 	int getPioneerSpeedModifier() const;
 	int getImprovementPriceModifier() const;
 	int getImprovementGrowthTimeModifier() const; // WTP, ray, Improvement Growth Modifier
-	int getLearningByDoingModifier() const;
 	int getLearningByDoingFreeModifier() const; // WTP, ray, adding modifiers for other LBD features - START
 	int getLearningByDoingRunawayModifier() const; // WTP, ray, adding modifiers for other LBD features - START
 	int getLearningByDoingRevoltModifier() const; // WTP, ray, adding modifiers for other LBD features - START
@@ -3375,7 +3374,6 @@ protected:
 	int m_iPioneerSpeedModifier;
 	int m_iImprovementPriceModifier;
 	int m_iImprovementGrowthTimeModifier;  // WTP, ray, Improvement Growth Modifier
-	int m_iLearningByDoingModifier;
 	int m_iLearningByDoingFreeModifier; // WTP, ray, adding modifiers for other LBD features - START
 	int m_iLearningByDoingRunawayModifier; // WTP, ray, adding modifiers for other LBD features - START
 	int m_iLearningByDoingRevoltModifier; // WTP, ray, adding modifiers for other LBD features - START

@@ -358,7 +358,6 @@
 	<ElementType name="iPioneerSpeedModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iImprovementPriceModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iImprovementGrowthTimeModifier" content="textOnly" dt:type="int"/>
-	<ElementType name="iLearningByDoingModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iLearningByDoingFreeModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iLearningByDoingRunawayModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iLearningByDoingRevoltModifier" content="textOnly" dt:type="int"/>
@@ -414,7 +413,6 @@
 		<element type="iPioneerSpeedModifier"/>
 		<element type="iImprovementPriceModifier"/>
 		<element type="iImprovementGrowthTimeModifier"/>
-		<element type="iLearningByDoingModifier"/>
 		<element type="iLearningByDoingFreeModifier"/>
 		<element type="iLearningByDoingRunawayModifier"/>
 		<element type="iLearningByDoingRevoltModifier"/>
