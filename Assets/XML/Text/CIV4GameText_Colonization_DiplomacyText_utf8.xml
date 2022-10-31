@@ -63,7 +63,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DECLARE_WAR_8</Tag>
-        <English>Kiss your wife one last time and pack your weapons. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] declares war!)</English>
+        <English>Kiss your wife one last time and pick up your weapons. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] declares war!)</English>
         <French>Imbécile ! Maintenant, nous allons vous détruire ! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] vous déclare la guerre !)</French>
         <German>Küsst ein letztes Mal Euer Weib und packt Eure Waffen. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] erklärt Euch den Krieg!)</German>
         <Italian>Folle! Ti distruggeremo! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dichiara guerra!)</Italian>
@@ -79,7 +79,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DECLARE_WAR_10</Tag>
-        <English>A dark time lies ahead of you. Say goodbye to your family and decide where you want your gravestone to be. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] declares war!)</English>
+        <English>A dark time lies ahead of you. Say goodbye to your family and choose your gravestone. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] declares war!)</English>
         <French>Le puissant [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] ne peut plus supporter vos trahisons et vos tromperies ! Maintenant, il faut payer ! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] vous déclare la guerre !)</French>
         <German>Eine dunkle Zeit steht Euch bevor. Nehmt Abschied von Eurer Familie und bestimmt, wo Euer Grabstein stehen soll. ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] erklärt Euch den Krieg!)</German>
         <Italian>L'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] ne ha abbastanza della tua perfidia e dei tuoi tradimenti! Ora pagherai! ([COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] dichiara guerra!)</Italian>
@@ -95,7 +95,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_2</Tag>
-        <English>I have nothing to say to you. And I will not listen to you either.</English>
+        <English>I have nothing to say to you. Nor will I hear you.</English>
         <French>Je n'ai rien à vous dire.</French>
         <German>Ich habe Euch nichts zu sagen. Und ich werde Euch auch nicht zuhören.</German>
         <Italian>Non ho niente da dirti.</Italian>
