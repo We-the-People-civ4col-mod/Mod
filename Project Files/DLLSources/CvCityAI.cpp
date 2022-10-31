@@ -1369,7 +1369,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 									iTempValue /= 100;
 								}
 								
-								if (eYieldProduced == YIELD_HORSES || eYieldProduced == YIELD_BLADES || eYieldProduced == YIELD_MUSKETS || eYieldProduced == YIELD_CANNONS || eYieldProduced == YIELD_TOOLS || eYieldProduced == YIELD_FOOD)
+								if (eYieldProduced == YIELD_HORSES || eYieldProduced == YIELD_BLADES || eYieldProduced == YIELD_MUSKETS || eYieldProduced == YIELD_CANNONS || eYieldProduced == YIELD_BLACK_POWDER || eYieldProduced == YIELD_TOOLS || eYieldProduced == YIELD_FOOD)
 								{
 									bIsMilitary = true;
 								}
@@ -1436,7 +1436,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			
 			if (iAdded != 0)
 			{
-				if (eLoopYield == YIELD_HORSES || eLoopYield == YIELD_BLADES || eLoopYield == YIELD_MUSKETS || eLoopYield == YIELD_CANNONS || eLoopYield == YIELD_TOOLS || eLoopYield == YIELD_FOOD)
+				if (eLoopYield == YIELD_HORSES || eLoopYield == YIELD_BLADES || eLoopYield == YIELD_MUSKETS || eLoopYield == YIELD_CANNONS || eLoopYield == YIELD_BLACK_POWDER || eLoopYield == YIELD_TOOLS || eLoopYield == YIELD_FOOD)
 				{
 					bIsMilitary = true;
 				}
@@ -4849,6 +4849,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_FLAX:
 		case YIELD_ORE:
 		case YIELD_COAL:
+		case YIELD_CHAR_COAL:
 		case YIELD_PEAT:
 		case YIELD_SHEEP:
 		case YIELD_GOATS:
@@ -4926,6 +4927,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 			break;
 		case YIELD_TRADE_GOODS:
 		// These are strategic yields and their price is never reduced
+		case YIELD_BAKERY_GOODS:
 		case YIELD_ROPE:
 		case YIELD_SAILCLOTH:
 			break;
@@ -4991,6 +4993,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_UNHAPPINESS: // WTP, ray, Happiness - START
 			break;
 		case YIELD_CANNONS:
+		case YIELD_BLACK_POWDER:
 			// Erik: Since the AI cannot use this yield for military purposes, I've decided to
 			// block it so that production is not diverted to it. (cannons are usually just sold in Europe
 			// without this fix) 

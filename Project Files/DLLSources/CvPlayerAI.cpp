@@ -4378,7 +4378,7 @@ DenialTypes CvPlayerAI::AI_yieldTrade(YieldTypes eYield, const IDInfo& kTranspor
 		{
 			if (getID() == pCity->getOwnerINLINE())
 			{
-				if (eYield == YIELD_BLADES || eYield == YIELD_MUSKETS || eYield == YIELD_CANNONS || eYield == YIELD_HORSES)
+				if (eYield == YIELD_BLADES || eYield == YIELD_MUSKETS || eYield == YIELD_CANNONS || eYield == YIELD_BLACK_POWDER || eYield == YIELD_HORSES)
 				{
 					return DENIAL_NEVER;
 				}
@@ -6396,7 +6396,7 @@ void CvPlayerAI::AI_doTradeRoutes()
 			{
 				yield_dests[eLoopYield] = NULL;
 			}
-			else if ((eLoopYield == YIELD_BLADES) || (eLoopYield == YIELD_MUSKETS) || (eLoopYield == YIELD_CANNONS) || (eLoopYield == YIELD_HORSES))
+			else if ((eLoopYield == YIELD_BLADES) || (eLoopYield == YIELD_MUSKETS) || (eLoopYield == YIELD_CANNONS) || (eLoopYield == YIELD_BLACK_POWDER) || (eLoopYield == YIELD_HORSES))
 			{
 				yield_dests[eLoopYield] = NULL;
 			}
@@ -8656,6 +8656,7 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_FLAX:
 		case YIELD_ORE:
 		case YIELD_COAL:
+		case YIELD_CHAR_COAL:
 		case YIELD_PEAT:
 			return true;
 			break;
@@ -8703,6 +8704,7 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_TRADE_GOODS:
 			return false;
 			break;
+		case YIELD_BAKERY_GOODS:
 		case YIELD_ROPE:
 		case YIELD_SAILCLOTH:
 			return !AI_isYieldNeeded(eYield);
@@ -8712,6 +8714,7 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_BLADES:
 		case YIELD_MUSKETS:
 		case YIELD_CANNONS:
+		case YIELD_BLACK_POWDER:
 			return false;
 			break;
 		case YIELD_RICE:
@@ -8878,6 +8881,7 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 		case YIELD_FLAX:
 		case YIELD_ORE:
 		case YIELD_COAL:
+		case YIELD_CHAR_COAL:
 		case YIELD_PEAT:
 		case YIELD_SHEEP:
 		case YIELD_GOATS:
@@ -8945,12 +8949,14 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 		case YIELD_TRADE_GOODS:
 			bFinal = true;
 			break;
+		case YIELD_BAKERY_GOODS:
 		case YIELD_ROPE:
 		case YIELD_SAILCLOTH:
 		case YIELD_TOOLS:
 		case YIELD_BLADES:
 		case YIELD_MUSKETS:
 		case YIELD_CANNONS:
+		case YIELD_BLACK_POWDER:
 			bFinal = false;
 			break;
 		case YIELD_RICE:
@@ -9052,6 +9058,7 @@ bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
 		case YIELD_FLAX:
 		case YIELD_ORE:
 		case YIELD_COAL:
+		case YIELD_CHAR_COAL:
 		case YIELD_PEAT:
 		case YIELD_SHEEP:
 		case YIELD_GOATS:
@@ -9094,6 +9101,7 @@ bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
 		case YIELD_WHALE_BLUBBER:
 		case YIELD_VALUABLE_WOOD:
 		case YIELD_TRADE_GOODS:
+		case YIELD_BAKERY_GOODS:
 		case YIELD_ROPE:
 		case YIELD_SAILCLOTH:
 			bBuy = false;
@@ -9104,6 +9112,7 @@ bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
 		case YIELD_BLADES:
 		case YIELD_MUSKETS:
 		case YIELD_CANNONS:
+		case YIELD_BLACK_POWDER:
 		case YIELD_WILD_FEATHERS:
 		case YIELD_SILVER:
 		case YIELD_GOLD:
@@ -9257,6 +9266,7 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 			case YIELD_FLAX:
 			case YIELD_ORE:
 			case YIELD_COAL:
+			case YIELD_CHAR_COAL:
 			case YIELD_PEAT:
 			case YIELD_SHEEP:
 			case YIELD_GOATS:
@@ -9305,6 +9315,7 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 			case YIELD_TRADE_GOODS:
 				break;
 			case YIELD_ROPE:
+			case YIELD_BAKERY_GOODS:
 			case YIELD_SAILCLOTH:
 				iValue *= iWeaponsMultiplier;
 				iValue /= 100;
@@ -9314,6 +9325,7 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 			case YIELD_BLADES:
 			case YIELD_MUSKETS:
 			case YIELD_CANNONS:
+			case YIELD_BLACK_POWDER:
 				iValue *= iWeaponsMultiplier;
 				iValue /= 100;
 				break;
@@ -9454,6 +9466,7 @@ void CvPlayerAI::AI_updateYieldValues()
 			case YIELD_FLAX:
 			case YIELD_ORE:
 			case YIELD_COAL:
+			case YIELD_CHAR_COAL:
 			case YIELD_PEAT:
 			case YIELD_SHEEP:
 			case YIELD_GOATS:
@@ -9498,11 +9511,13 @@ void CvPlayerAI::AI_updateYieldValues()
 				break;
 			case YIELD_TRADE_GOODS:
 			case YIELD_ROPE:
+			case YIELD_BAKERY_GOODS:
 			case YIELD_SAILCLOTH:
 			case YIELD_TOOLS:
 			case YIELD_BLADES:
 			case YIELD_MUSKETS:
 			case YIELD_CANNONS:
+			case YIELD_BLACK_POWDER:
 				iValue += kParent.getYieldSellPrice(eYield);
 				break;
 			case YIELD_RICE:
@@ -9914,7 +9929,7 @@ void CvPlayerAI::AI_manageEconomy()
 				{
 					iWeight += bAtWar ? 20 : 0;
 				}
-				else if (eLoopYield == YIELD_ORE || eLoopYield == YIELD_COAL || eLoopYield == YIELD_PEAT)
+				else if (eLoopYield == YIELD_ORE || eLoopYield == YIELD_COAL || eLoopYield ==YIELD_CHAR_COAL || eLoopYield == YIELD_PEAT)
 				{
 					iWeight *= 20 + GC.getGame().getSorenRandNum(80, "AI Native Yield Value Randomization 3");
 					iWeight /= 100;

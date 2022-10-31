@@ -10,7 +10,7 @@
         <English>Deemphasize Hardwood</English>
         <German>Schwerpunkt Hartholz aufheben</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_FLAX</Tag>
         <English>Emphasize Flax</English>
         <German>Schwerpunkt Flachs</German>
@@ -20,7 +20,7 @@
         <English>Deemphasize Flax</English>
         <German>Schwerpunkt Flachs aufheben</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_COAL</Tag>
         <English>Emphasize Coal</English>
         <German>Schwerpunkt Kohle</German>
@@ -30,7 +30,37 @@
         <English>Deemphasize Coal</English>
         <German>Schwerpunkt Kohle aufheben</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_CHAR_COAL</Tag>
+        <English>Emphasize Charcoal</English>
+        <German>Schwerpunkt Holzkohle</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_NO_CHAR_COAL</Tag>
+        <English>Deemphasize Charcoal</English>
+        <German>Schwerpunkt Holzkohle aufheben</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_BLACK_POWDER</Tag>
+        <English>Emphasize Blackpowder</English>
+        <German>Schwerpunkt Schwarzpulver</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_NO_BLACK_POWDER</Tag>
+        <English>Deemphasize Blackpowder</English>
+        <German>Schwerpunkt Schwarzpulver aufheben</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_BAKERY_GOODS</Tag>
+        <English>Emphasize Bakery Goods</English>
+        <German>Schwerpunkt Backwaren</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EMPHASIZE_NO_BAKERY_GOODS</Tag>
+        <English>Deemphasize Bakery Goods</English>
+        <German>Schwerpunkt Backwaren aufheben</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_PEAT</Tag>
         <English>Emphasize Peat</English>
         <German>Schwerpunkt Torf</German>
@@ -40,7 +70,7 @@
         <English>Deemphasize Peat</English>
         <German>Schwerpunkt Torf aufheben</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_GOATS</Tag>
         <English>Emphasize Goats</English>
         <German>Schwerpunkt Ziegen</German>
@@ -50,7 +80,7 @@
         <English>Deemphasize Goats</English>
         <German>Schwerpunkt Ziegen aufheben</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_PIGS</Tag>
         <English>Emphasize Pigs</English>
         <German>Schwerpunkt Schweine</German>

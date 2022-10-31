@@ -11131,7 +11131,7 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
         if (GC.getNBMOD_REF_REAL_WEAPONS() == 1)
         {
             // Falls die Einheit Waffen/Pferde transportiert
-            if (pLoopUnit->getYield() == YIELD_BLADES || pLoopUnit->getYield() == YIELD_MUSKETS || pLoopUnit->getYield() == YIELD_CANNONS)
+            if (pLoopUnit->getYield() == YIELD_BLADES || pLoopUnit->getYield() == YIELD_MUSKETS || pLoopUnit->getYield() == YIELD_CANNONS || pLoopUnit->getYield() == YIELD_BLACK_POWDER)
             {
                 iStoredWeapons += pLoopUnit->getYieldStored();
             }
@@ -11165,6 +11165,7 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
 		iStoredWeapons += pLoopCity->getYieldStored(YIELD_MUSKETS);
 		iStoredWeapons += pLoopCity->getYieldStored(YIELD_CANNONS);
 		iStoredHorses += pLoopCity->getYieldStored(YIELD_HORSES);
+		// WTP, ray, not sure if we also need something for YIELD_BLACK_POWDER
 	}
 
 	//koma13
@@ -15746,6 +15747,13 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 	{
 		switch (eYield)
 		{
+			case YIELD_BAKERY_GOODS:
+				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_BARLEY) <= price_diff)
+				{
+					eYield = YIELD_BARLEY;
+					iPrice = getYieldBuyPrice(YIELD_BARLEY) - 1;
+				}
+				break;
 			case YIELD_ROPE:
 				if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_HEMP) <= price_diff)
 				{
@@ -16460,6 +16468,13 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 	{
 		switch (eYield)
 		{
+			case YIELD_BAKERY_GOODS:
+				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_BARLEY) <= price_diff)
+				{
+					eYield = YIELD_BARLEY;
+					iPrice = getYieldAfricaBuyPriceNoModifier(YIELD_BARLEY) - 1;
+				}
+				break;
 			case YIELD_ROPE:
 				if (getYieldAfricaBuyPriceNoModifier(eYield) - getYieldAfricaBuyPriceNoModifier(YIELD_HEMP) <= price_diff)
 				{
@@ -17115,6 +17130,13 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 	{
 		switch (eYield)
 		{
+			case YIELD_BAKERY_GOODS:
+				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_BARLEY) <= price_diff)
+				{
+					eYield = YIELD_BARLEY;
+					iPrice = getYieldPortRoyalBuyPriceNoModifier(YIELD_BARLEY) - 1;
+				}
+				break;
 			case YIELD_ROPE:
 				if (getYieldPortRoyalBuyPriceNoModifier(eYield) - getYieldPortRoyalBuyPriceNoModifier(YIELD_HEMP) <= price_diff)
 				{

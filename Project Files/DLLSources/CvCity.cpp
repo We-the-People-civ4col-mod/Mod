@@ -138,12 +138,12 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 			if (kYield.isCargo())
 			{
 				// strategic raw
-				if (eYield == YIELD_ORE || eYield == YIELD_COAL || eYield == YIELD_PEAT || eYield == YIELD_HEMP || eYield == YIELD_FLAX)
+				if (eYield == YIELD_ORE || eYield == YIELD_COAL || eYield == YIELD_CHAR_COAL || eYield == YIELD_PEAT || eYield == YIELD_HEMP || eYield == YIELD_FLAX)
 				{
 					m_em_iCustomHouseSellThreshold.set(eYield, GC.getCUSTOMHOUSE_STRATEGIC_RAW_SELL_THRESHOLD() * iGameSpeedModifier);
 				}
 				// strategic produced
-				else if ( eYield == YIELD_TOOLS || eYield == YIELD_BLADES || eYield == YIELD_MUSKETS || eYield == YIELD_CANNONS || eYield == YIELD_SHEEP || eYield == YIELD_GOATS || eYield == YIELD_PIGS || eYield == YIELD_CATTLE || eYield == YIELD_CHICKEN || eYield == YIELD_GEESE || eYield == YIELD_HORSES || eYield == YIELD_ROPE || eYield == YIELD_SAILCLOTH || eYield == YIELD_TRADE_GOODS || eYield == YIELD_FIELD_WORKER_TOOLS || eYield == YIELD_HOUSEHOLD_GOODS || eYield == YIELD_LUXURY_GOODS)
+				else if ( eYield == YIELD_TOOLS || eYield == YIELD_BLADES || eYield == YIELD_MUSKETS || eYield == YIELD_CANNONS || eYield == YIELD_BLACK_POWDER || eYield == YIELD_SHEEP || eYield == YIELD_GOATS || eYield == YIELD_PIGS || eYield == YIELD_CATTLE || eYield == YIELD_CHICKEN || eYield == YIELD_GEESE || eYield == YIELD_HORSES || eYield == YIELD_BAKERY_GOODS || eYield == YIELD_ROPE || eYield == YIELD_SAILCLOTH || eYield == YIELD_TRADE_GOODS || eYield == YIELD_FIELD_WORKER_TOOLS || eYield == YIELD_HOUSEHOLD_GOODS || eYield == YIELD_LUXURY_GOODS)
 				{
 					m_em_iCustomHouseSellThreshold.set(eYield, GC.getCUSTOMHOUSE_STRATEGIC_PRODUCED_SELL_THRESHOLD() * iGameSpeedModifier);
 				}

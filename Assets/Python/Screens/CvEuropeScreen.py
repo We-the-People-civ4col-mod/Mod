@@ -176,7 +176,7 @@ class CvEuropeScreen:
 		self.NUM_YIELDS = len(self.YieldList)
 		## R&R, Robert Surcouf,  Multiple rows of Yields if necessary START
 		#self.NUM_YIELDS_IN_A_ROW = 26 -> Two rows if num > 26
-		self.NUM_YIELDS_IN_A_ROW = 32
+		self.NUM_YIELDS_IN_A_ROW = 33
 		
 		# Window reduction for small resolutions
 		# Sometimes yield boxes are too large ...

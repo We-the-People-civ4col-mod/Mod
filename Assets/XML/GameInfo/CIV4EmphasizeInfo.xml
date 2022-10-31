@@ -535,6 +535,18 @@
             </YieldModifiers>
         </EmphasizeInfo>
         <EmphasizeInfo>
+            <Type>EMPHASIZE_CHAR_COAL</Type>
+            <Description>TXT_KEY_EMPHASIZE_CHAR_COAL</Description>
+            <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+            <bAvoidGrowth>0</bAvoidGrowth>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_CHAR_COAL</YieldType>
+                    <iYield>1</iYield>
+                </YieldModifier>
+            </YieldModifiers>
+        </EmphasizeInfo>
+        <EmphasizeInfo>
             <Type>EMPHASIZE_PEAT</Type>
             <Description>TXT_KEY_EMPHASIZE_PEAT</Description>
             <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
@@ -1003,6 +1015,18 @@
             </YieldModifiers>
         </EmphasizeInfo>
         <EmphasizeInfo>
+            <Type>EMPHASIZE_BLACK_POWDER</Type>
+            <Description>TXT_KEY_EMPHASIZE_BLACK_POWDER</Description>
+            <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+            <bAvoidGrowth>0</bAvoidGrowth>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iYield>1</iYield>
+                </YieldModifier>
+            </YieldModifiers>
+        </EmphasizeInfo>
+        <EmphasizeInfo>
             <Type>EMPHASIZE_WILD_FEATHERS</Type>
             <Description>TXT_KEY_EMPHASIZE_WILD_FEATHERS</Description>
             <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
@@ -1118,6 +1142,18 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_HORSES</YieldType>
+                    <iYield>1</iYield>
+                </YieldModifier>
+            </YieldModifiers>
+        </EmphasizeInfo>
+        <EmphasizeInfo>
+            <Type>EMPHASIZE_BAKERY_GOODS</Type>
+            <Description>TXT_KEY_EMPHASIZE_BAKERY_GOODS</Description>
+            <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+            <bAvoidGrowth>0</bAvoidGrowth>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
                     <iYield>1</iYield>
                 </YieldModifier>
             </YieldModifiers>
@@ -1723,6 +1759,18 @@
             </YieldModifiers>
         </EmphasizeInfo>
         <EmphasizeInfo>
+            <Type>EMPHASIZE_NO_CHAR_COAL</Type>
+            <Description>TXT_KEY_EMPHASIZE_NO_CHAR_COAL</Description>
+            <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+            <bAvoidGrowth>0</bAvoidGrowth>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_CHAR_COAL</YieldType>
+                    <iYield>-1</iYield>
+                </YieldModifier>
+            </YieldModifiers>
+        </EmphasizeInfo>
+        <EmphasizeInfo>
             <Type>EMPHASIZE_NO_PEAT</Type>
             <Description>TXT_KEY_EMPHASIZE_NO_PEAT</Description>
             <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
@@ -2191,6 +2239,18 @@
             </YieldModifiers>
         </EmphasizeInfo>
         <EmphasizeInfo>
+            <Type>EMPHASIZE_NO_BLACK_POWDER</Type>
+            <Description>TXT_KEY_EMPHASIZE_NO_BLACK_POWDER</Description>
+            <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+            <bAvoidGrowth>0</bAvoidGrowth>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iYield>-1</iYield>
+                </YieldModifier>
+            </YieldModifiers>
+        </EmphasizeInfo>
+        <EmphasizeInfo>
             <Type>EMPHASIZE_NO_WILD_FEATHERS</Type>
             <Description>TXT_KEY_EMPHASIZE_NO_WILD_FEATHERS</Description>
             <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
@@ -2306,6 +2366,18 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_HORSES</YieldType>
+                    <iYield>-1</iYield>
+                </YieldModifier>
+            </YieldModifiers>
+        </EmphasizeInfo>
+        <EmphasizeInfo>
+            <Type>EMPHASIZE_NO_BAKERY_GOODS</Type>
+            <Description>TXT_KEY_EMPHASIZE_NO_BAKERY_GOODS</Description>
+            <Button>Art/Interface/Buttons/Governor/Food.dds</Button>
+            <bAvoidGrowth>0</bAvoidGrowth>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
                     <iYield>-1</iYield>
                 </YieldModifier>
             </YieldModifiers>

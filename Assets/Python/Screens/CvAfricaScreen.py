@@ -78,7 +78,7 @@ class CvAfricaScreen:
 		self.SAIL_WEST_STropic = 34
 		self.SAIL_WEST_STemperate = 35
 		self.SAIL_WEST_SFrigid = 36
-		self.SectorNames = dict([(0, 'NFrigid'), (1, 'NTemperate'), (2, 'NTropic'), (3, 'STropic'), (4, 'STemperate'), (5, 'SFrigid')])		
+		self.SectorNames = dict([(0, 'NFrigid'), (1, 'NTemperate'), (2, 'NTropic'), (3, 'STropic'), (4, 'STemperate'), (5, 'SFrigid')])
 		# R&R, vetiarvind, Navigation Sectors - END
 
 		self.bBookIntro, self.bBookOutro = false, false
@@ -179,7 +179,7 @@ class CvAfricaScreen:
 		self.NUM_YIELDS = len(self.YieldList)
 		## R&R, Robert Surcouf,  Multiple rows of Yields if necessary START
 		#self.NUM_YIELDS_IN_A_ROW = 26 -> Two rows if num > 26
-		self.NUM_YIELDS_IN_A_ROW = 32
+		self.NUM_YIELDS_IN_A_ROW = 33
 		
 		# Window reduction for small resolutions
 		# Sometimes yield boxes are too large ...

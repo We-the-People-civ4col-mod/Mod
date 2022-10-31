@@ -822,6 +822,11 @@
             <DefaultUnit>UNIT_COAL</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_CHAR_COAL</Type>
+            <Description>TXT_KEY_UNITCLASS_CHAR_COAL</Description>
+            <DefaultUnit>UNIT_CHAR_COAL</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_PEAT</Type>
             <Description>TXT_KEY_UNITCLASS_PEAT</Description>
             <DefaultUnit>UNIT_PEAT</DefaultUnit>
@@ -1212,6 +1217,11 @@
             <DefaultUnit>UNIT_CANNONS</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_BLACK_POWDER</Type>
+            <Description>TXT_KEY_UNITCLASS_BLACK_POWDER</Description>
+            <DefaultUnit>UNIT_BLACK_POWDER</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_SHEEP</Type>
             <Description>TXT_KEY_UNITCLASS_SHEEP</Description>
             <DefaultUnit>UNIT_SHEEP</DefaultUnit>
@@ -1245,6 +1255,11 @@
             <Type>UNITCLASS_HORSES</Type>
             <Description>TXT_KEY_UNITCLASS_HORSES</Description>
             <DefaultUnit>UNIT_HORSES</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_BAKERY_GOODS</Type>
+            <Description>TXT_KEY_UNITCLASS_BAKERY_GOODS</Description>
+            <DefaultUnit>UNIT_BAKERY_GOODS</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_FIELD_WORKER_TOOLS</Type>

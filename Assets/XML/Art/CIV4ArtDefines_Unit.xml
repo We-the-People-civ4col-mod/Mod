@@ -1814,6 +1814,31 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_BAKERY_GOODS</Type>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Bakery_Goods_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>1.2</fInterfaceScale>
+            <NIF>Art/Units/Trade_Goods/Food/Food.nif</NIF>
+            <KFM/>
+            <TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.2</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_BEER</Type>
             <Button>,Art/colonization_atlas_resources.dds,2,1</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
@@ -1941,6 +1966,31 @@
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_COAL</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Coal_Goods_Button.dds</Button>
+            <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>1.2</fInterfaceScale>
+            <NIF>Art/Units/Trade_Goods/Coal/Ore.nif</NIF>
+            <KFM/>
+            <TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.2</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_CHAR_COAL</Type>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Charcoal_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
@@ -2991,6 +3041,31 @@
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_CANNONS</Type>
             <Button>,Art/colonization_atlas_resources.dds,3,1</Button>
+            <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
+            <fScale>1.2</fScale>
+            <fInterfaceScale>1.2</fInterfaceScale>
+            <NIF>Art/Units/Trade_Goods/Muskets/Muskets.nif</NIF>
+            <KFM/>
+            <TrailDefinition>
+                <Texture>Art/Shared/wheeltread.dds</Texture>
+                <fWidth>1.2</fWidth>
+                <fLength>180.0</fLength>
+                <fTaper>0.0</fTaper>
+                <fFadeStartTime>0.2</fFadeStartTime>
+                <fFadeFalloff>0.35</fFadeFalloff>
+            </TrailDefinition>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
+                <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_BLACK_POWDER</Type>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Charcoal_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>

@@ -4338,8 +4338,12 @@
                     <YieldType>YIELD_CANNONS</YieldType>
                     <iYield>1</iYield>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_BLADES</YieldType>
+                    <iYield>1</iYield>
+                </YieldModifier>
+                <YieldModifier>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
                     <iYield>1</iYield>
                 </YieldModifier>
             </TaxYieldModifiers>
