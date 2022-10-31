@@ -1467,40 +1467,66 @@ class CvWBDesc:
 
 	def applyInitialItems(self):
 		"add player objects in a last pass"
+		self.identifyValidPlayersAndTeams()
+		self.applyInitialTeams1()
+		self.applyInitialPlayers()
+		self.applyInitialCities()
+		self.applyInitialTeams2()
+		self.applyInitialPlots()
+		
+		return 0	# ok
 
+	def identifyValidPlayersAndTeams(self):
+		self.validPlayers = [0] * gc.getMAX_CIV_PLAYERS()
+		self.validTeams   = [0] * gc.getMAX_CIV_TEAMS()
+		
+		for iPlayerLoop in range(gc.getMAX_CIV_PLAYERS()):
+			if (self.playersDesc[iPlayerLoop]):
+				pWBPlayer = self.playersDesc[iPlayerLoop]
+				if (pWBPlayer.civType != 'NONE' and self.validTeams[pWBPlayer.team] != -1):
+					self.validPlayers[iPlayerLoop] = 1
+					self.validTeams[pWBPlayer.team] = 1
+
+	def applyInitialTeams1(self):
 		# Team stuff
 		if (len(self.teamsDesc)) :
 			for iTeamLoop in range(gc.getMAX_CIV_TEAMS()):
 
-				if (self.teamsDesc[iTeamLoop]):
+				if (self.validTeams[iTeamLoop] and self.teamsDesc[iTeamLoop]):
 
 					pTeam = gc.getTeam(iTeamLoop)
 					pWBTeam = self.teamsDesc[iTeamLoop]
 					# Contact with Other Teams
 					for meetTeam in self.teamsDesc[iTeamLoop].bContactWithTeamList:
-						gc.getTeam(iTeamLoop).meet(meetTeam, false)
+						if (self.validTeams[meetTeam]):
+							gc.getTeam(iTeamLoop).meet(meetTeam, false)
 
 					# Wars
 					for warTeam in self.teamsDesc[iTeamLoop].bWarWithTeamList:
-						gc.getTeam(iTeamLoop).declareWar(warTeam, false, WarPlanTypes.NO_WARPLAN)
+						if (self.validTeams[warTeam]):
+							gc.getTeam(iTeamLoop).declareWar(warTeam, false, WarPlanTypes.NO_WARPLAN)
 
 					# Permanent War/Peace
 					for permanentWarPeaceTeam in self.teamsDesc[iTeamLoop].bPermanentWarPeaceList:
-						gc.getTeam(iTeamLoop).setPermanentWarPeace(permanentWarPeaceTeam, true)
+						if (self.validTeams[permanentWarPeaceTeam]):
+							gc.getTeam(iTeamLoop).setPermanentWarPeace(permanentWarPeaceTeam, true)
 
 					# Open Borders
 					for openBordersTeam in self.teamsDesc[iTeamLoop].bOpenBordersWithTeamList:
-						gc.getTeam(iTeamLoop).signOpenBorders(openBordersTeam)
+						if (self.validTeams[openBordersTeam]):
+							gc.getTeam(iTeamLoop).signOpenBorders(openBordersTeam)
 
 					# Defensive Pacts
 					for defensivePactTeam in self.teamsDesc[iTeamLoop].bDefensivePactWithTeamList:
-						gc.getTeam(iTeamLoop).signDefensivePact(defensivePactTeam)
+						if (self.validTeams[defensivePactTeam]):
+							gc.getTeam(iTeamLoop).signDefensivePact(defensivePactTeam)
 
+	def applyInitialPlayers(self):
 		# Player stuff
 		if (len(self.playersDesc)) :
 			for iPlayerLoop in range(gc.getMAX_CIV_PLAYERS()):
 
-				if (self.playersDesc[iPlayerLoop]):
+				if (self.validPlayers[iPlayerLoop] and self.playersDesc[iPlayerLoop]):
 
 					pPlayer = gc.getPlayer(iPlayerLoop)
 					pWBPlayer = self.playersDesc[iPlayerLoop]
@@ -1538,15 +1564,17 @@ class CvWBDesc:
 					for iCityListLoop in range(len(pWBPlayer.aszCityList)):
 						pPlayer.addCityName(pWBPlayer.aszCityList[iCityListLoop])
 
+	def applyInitialCities(self):
 		# cities
 		for pDesc in self.plotDesc:
 			pDesc.applyCity()
 
+	def applyInitialTeams2(self):
 		# Team stuff
 		if (len(self.teamsDesc)) :
 			for iTeamLoop in range(gc.getMAX_CIV_TEAMS()):
 
-				if (self.teamsDesc[iTeamLoop]):
+				if (self.validTeams[iTeamLoop] and self.teamsDesc[iTeamLoop]):
 
 					pTeam = gc.getTeam(iTeamLoop)
 					pWBTeam = self.teamsDesc[iTeamLoop]
@@ -1559,6 +1587,7 @@ class CvWBDesc:
 							    pPlot = CyMap().plot(iPlotX,iPlotY)
 							    pPlot.setRevealed(pTeam.getID(), True, False, TeamTypes.NO_TEAM)
 
+	def applyInitialPlots(self):
 		# Per plot stuff
 		for iPlotLoop in range(self.mapDesc.numPlotsWritten):
 
@@ -1566,15 +1595,14 @@ class CvWBDesc:
 
 			# Reveal Fog of War for teams
 			for iTeamLoop in range(gc.getMAX_CIV_TEAMS()):
-				pTeam = gc.getTeam(iTeamLoop)
-				if (pWBPlot.abTeamPlotRevealed[iTeamLoop] == 1):
-					pPlot = CyMap().plot(pWBPlot.iX, pWBPlot.iY)
-					pPlot.setRevealed(pTeam.getID(), True, False, TeamTypes.NO_TEAM)
+				if (self.validTeams[iTeamLoop]):
+					pTeam = gc.getTeam(iTeamLoop)
+					if (pWBPlot.abTeamPlotRevealed[iTeamLoop] == 1):
+						pPlot = CyMap().plot(pWBPlot.iX, pWBPlot.iY)
+						pPlot.setRevealed(pTeam.getID(), True, False, TeamTypes.NO_TEAM)
 		# units
 		for pDesc in self.plotDesc:
 			pDesc.applyUnits()
-
-		return 0	# ok
 
 	def read(self, fileName):
 		"Load in a high-level desc of the world, and height/terrainmaps"

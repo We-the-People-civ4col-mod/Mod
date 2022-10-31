@@ -1206,21 +1206,19 @@ int CvTeam::getEnemyPower() const
 
 int CvTeam::getAtWarCount() const
 {
-	int iCount;
-	int iI;
+	int iCount = 0;
 
-	iCount = 0;
-
-	for (iI = 0; iI < MAX_TEAMS; iI++)
+	for (TeamTypes iI = FIRST_TEAM; iI < MAX_TEAMS; ++iI)
 	{
 		// R&R, ray, Changes for Wild Animals
 		// AI will not count fighting Animals as War
-		if (GET_TEAM((TeamTypes)iI).isAlive() && (TeamTypes)iI != GET_PLAYER(GC.getGameINLINE().getBarbarianPlayer()).getTeam())
+		const CvTeam& otherTeam = GET_TEAM(iI);
+		if (otherTeam.isAlive() && !otherTeam.isBarbarian())
 		{
-			if (isAtWar((TeamTypes)iI))
+			if (isAtWar(iI))
 			{
 				FAssert(iI != getID());
-				FAssert(!(AI_isSneakAttackPreparing((TeamTypes)iI)));
+				FAssert(!(AI_isSneakAttackPreparing(iI)));
 				iCount++;
 			}
 		}
@@ -1255,18 +1253,16 @@ int CvTeam::getWarPlanCount(WarPlanTypes eWarPlan) const
 
 int CvTeam::getAnyWarPlanCount() const
 {
-	int iCount;
-	int iI;
+	int iCount = 0;
 
-	iCount = 0;
-
-	for (iI = 0; iI < MAX_TEAMS; iI++)
+	for (TeamTypes iI = FIRST_TEAM; iI < MAX_TEAMS; ++iI)
 	{
 		// R&R, ray, Changes for Wild Animals
 		// AI will not consider fighting Animals here
-		if (GET_TEAM((TeamTypes)iI).isAlive() && (TeamTypes)iI != GET_PLAYER(GC.getGameINLINE().getBarbarianPlayer()).getTeam())
+		const CvTeam& otherTeam = GET_TEAM(iI);
+		if (otherTeam.isAlive() && !otherTeam.isBarbarian())
 		{
-			if (AI_getWarPlan((TeamTypes)iI) != NO_WARPLAN)
+			if (AI_getWarPlan(iI) != NO_WARPLAN)
 			{
 				FAssert(iI != getID());
 				iCount++;
@@ -1826,6 +1822,19 @@ bool CvTeam::hasEuropePlayer() const
 		}
 	}
 
+	return false;
+}
+
+bool CvTeam::isBarbarian() const
+{
+	// Adds an easy way to identify the barbarian team.
+	// Works without crashing even when game init calls it prior to the barbarian player getting added.
+	// Added by Nightinggale
+	const PlayerTypes ePlayerBarbarian = GC.getGameINLINE().getBarbarianPlayer();
+	if (ePlayerBarbarian != NO_PLAYER)
+	{
+		return GET_PLAYER(ePlayerBarbarian).getTeam() == getID();
+	}
 	return false;
 }
 

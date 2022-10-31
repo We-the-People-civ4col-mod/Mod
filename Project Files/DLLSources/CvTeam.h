@@ -88,6 +88,7 @@ public:
 	bool hasNativePlayer() const;
 	bool hasColonialPlayer() const;
 	bool hasEuropePlayer() const;
+	bool isBarbarian() const;
 	PlayerTypes getLeaderID() const;
 	HandicapTypes getHandicapType() const;
 	DllExport CvWString getName() const;
