@@ -4605,7 +4605,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_STUYVESANT_1</Tag>
-        <English>You seem to be doing quite well, Mijnheer [CT_NAME]. You should be granted it, even if such unearned prosperity is a mockery of decency. Well, I will be generous. I grant you an opportunity to help others. Me, that is.</English>
+        <English>You seem to be doing quite well, Mijnheer [CT_NAME]. Your success should be recognized, even if such unearned prosperity is a mockery of decency. Well, I will be generous. I grant you an opportunity to help others. Me, that is.</English>
         <French>Il est rare qu'une personne de ma stature se retrouve dans le besoin, alors considérez que c'est un honneur de m'aider.</French>
         <German>Euch scheint es ja recht gut zu gehen, Mijnheer [CT_NAME]. Es sei Euch gegönnt, auch wenn solch unverdienter Wohlstand dem Anstand spottet. Nun, ich will mich großzügig zeigen. Ich gewähre Euch eine Gelegenheit, anderen zu helfen. Also mir.</German>
         <Italian>È raro che una persona della mia grandezza abbia bisogno, quindi dovresti essere onorato della mia richiesta.</Italian>
@@ -4715,7 +4715,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_DONCK_1</Tag>
-        <English>Don't thank me, Mijnheer. It's only right that I have illustrated your chivalry in the most glowing colours in my travel journal. It's demonstrated by the gold and goods you want to give us today, don't you?</English>
+        <English>Don't thank me, Mijnheer. It's only right that I have illustrated your chivalry in the most glowing colours in my travel journal. It's demonstrated, isn't it, by the gold and goods you intend to give us today?</English>
         <French>Nous sommes dans le besoin, mais nous n'avons pas de quoi négocier. Soyez généreux et donnez-nous ce que nous voulons.</French>
         <German>Dankt mir nicht, Mijnheer. Dass ich in meinem Reisejournal Eure Ritterlichkeit in den glühendsten Farben illustriert habe, habt Ihr Euch doch verdient. Durch das Gold und die Waren, die Ihr uns heute schenken wollt, nicht wahr?</German>
         <Italian>Abbiamo bisogno di aiuto, ma non abbiamo niente da scambiare. Spero che trovi nel tuo cuore la volontà di donarci quello che ci serve.</Italian>
@@ -4851,7 +4851,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_DONCK_1</Tag>
-        <English>Be congratulated, Mijnheer. You meet in me a rival who is highly superior to you in decency, wealth and power - and who nevertheless spares you. No, do not thank me. Keep your life. Now give me everything else that you call your own.</English>
+        <English>Be congratulated, Mijnheer. You meet in me a rival who is highly superior to you in decency, wealth and power - and who nevertheless spares you. No, do not thank me. Keep your life. Just give me everything else you have.</English>
         <French>Je déteste m'attaquer aux plus faibles, mais je le ferai quand même. Donnez-nous ce que nous voulons ou vous en subirez les conséquences.</French>
         <German>Seid beglückwünscht, Mijnheer. Ihr trefft in mir auf einen Rivalen, der Euch an Anstand, Reichtum und Macht hoch überlegen ist - und der Euch dennoch verschont. Nein, dankt mir nicht. Behaltet Euer Leben. Und gebt mir nun alles, was Ihr sonst Euer Eigen nennt.</German>
         <Italian>Odio approfittare degli umili, ma lo farò ugualmente. Dacci ciò che vogliamo o preparati ad affrontare le conseguenze.</Italian>
