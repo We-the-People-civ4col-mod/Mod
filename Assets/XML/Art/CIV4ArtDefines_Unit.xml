@@ -451,6 +451,23 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_MASTER_FIREWORKER</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,2,2</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Fireworker.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/Master_Fireworker/Expert_Lumberjack.nif</NIF>
+            <KFM>Art/Units/Settler/Master_Fireworker/Expert_Lumberjack.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>		
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_DISTILLER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Distiller.dds</FullLengthIcon>
