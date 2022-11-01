@@ -908,7 +908,7 @@ class CvMainInterface:
 			RESOURCE_TABLE_COLUMN_WIDTH = (xResolution - STACK_BAR_HEIGHT) / iNum
 			iK2 = 3
 			iK3 = 7
-			if len(TableYields) % 2 == 1:
+			if len(TableYields) % 3 == 1:
 				ixDelta = RESOURCE_TABLE_COLUMN_WIDTH / 2
 		self.iIconWidth = RESOURCE_TABLE_COLUMN_WIDTH
 		if iK2 == 3:
