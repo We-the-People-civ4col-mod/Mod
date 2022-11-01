@@ -3047,7 +3047,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_JOIN_DENIED_1</Tag>
-        <English>You should choose your sides carefully.</English>
+        <English>You should choose your side carefully.</English>
         <French>Vous devriez mieux choisir votre camp.</French>
         <German>Überlegt sorgfältig, auf welcher Seite Ihr stehen wollt.</German>
         <Italian>Dovresti scegliere attentamente con chi schierarti.</Italian>
@@ -3543,7 +3543,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_ANNOYED_2</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? His people take more from this world than they deserve. (Annoyed)</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? His people take more than they deserve from this world. (Annoyed)</English>
         <French>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] est une personne extrêmement agaçante. (S'inquiète)</French>
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Sein Volk nimmt sich mehr von dieser Welt, als ihm zusteht. (Verärgert)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è una persona estremamente fastidiosa. (Tono infastidito)</Italian>
