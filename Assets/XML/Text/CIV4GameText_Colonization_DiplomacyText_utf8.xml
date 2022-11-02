@@ -5316,12 +5316,12 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_OFFERS_USED_SHIP</Tag>
-        <English>We know a ship trader willing to sell a %s3_unit for %d1[ICON_GOLD] and might arrange the deal.</English>
+        <English>We know a ship trader willing to sell a %s3_unit for %d1[ICON_GOLD]. We could arrange that deal.</English>
         <German>Wir kennen einen Schiffshändler, der ein Schiff des Typs %s3_unit für %d1[ICON_GOLD] verkaufen möchte.</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_REFUSES_TO_OFFER_USED_SHIP</Tag>
-        <English>Currently we cannot be bothered with such business. Maybe in a few months we may grant you such a favour</English>
+        <English>Currently we cannot be bothered with such business. Ask again in a few months.</English>
         <German>Im Moment können wir mit solch Lapalien nicht belästigt werden. Vielleicht können wir aber in einigen Monaten helfen.</German>
     </TEXT>
     <TEXT>
