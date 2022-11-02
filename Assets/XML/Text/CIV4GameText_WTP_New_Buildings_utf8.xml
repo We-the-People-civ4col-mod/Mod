@@ -5,8 +5,8 @@
 <!-- -->
 <!-- Game Text Infos -->
 <Civ4GameText xmlns="http://www.firaxis.com">
-	<!-- STANDPOST -->
-	<TEXT>
+    <!-- STANDPOST -->
+    <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_STATUE</Tag>
         <English>Statue</English>
         <German>
@@ -15,8 +15,8 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<!-- GRAVEYARD -->
-	<TEXT>
+    <!-- GRAVEYARD -->
+    <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_GRAVEYARD</Tag>
         <English>Graveyard</English>
         <German>
@@ -25,8 +25,8 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDINGCLASS_GRAVEYARD</Tag>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_GRAVEYARD</Tag>
         <English>Graveyard</English>
         <German>
             <Text>Friedhof</Text>
@@ -34,7 +34,7 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_GRAVEYARD</Tag>
         <English>Graveyard</English>
         <German>
@@ -42,8 +42,8 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_GRAVEYARD_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -53,8 +53,8 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- CONFECTIONER -->
-	<TEXT>
+    <!-- CONFECTIONER -->
+    <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_CONFECTIONER</Tag>
         <English>Confectioner</English>
         <German>
@@ -62,8 +62,8 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_HOUSE</Tag>
         <English>Confectioner's House</English>
         <German>
@@ -71,9 +71,9 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_SHOP</Tag>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_SHOP</Tag>
         <English>Confectioner's Shop</English>
         <German>
             <Text>Süßwarenhändlerladen</Text>
@@ -81,8 +81,8 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_FACTORY</Tag>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_FACTORY</Tag>
         <English>Confectionery</English>
         <German>
             <Text>Süßwarenfabrik</Text>
@@ -90,7 +90,7 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE</Tag>
         <English>Confectioner's House</English>
         <German>
@@ -98,9 +98,9 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP</Tag>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP</Tag>
         <English>Confectioner's Shop</English>
         <German>
             <Text>Süßwarenhändlerladen</Text>
@@ -108,8 +108,8 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY</Tag>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY</Tag>
         <English>Confectionery</English>
         <German>
             <Text>Süßwarenfabrik</Text>
@@ -117,7 +117,7 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -127,7 +127,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -137,7 +137,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -147,8 +147,8 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- LEATHER_PADDER -->
-	<TEXT>
+    <!-- LEATHER_PADDER -->
+    <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_LEATHER_PADDER</Tag>
         <English>Leather Padder</English>
         <German>
@@ -156,8 +156,8 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_HOUSE</Tag>
         <English>Leather Padder's House</English>
         <German>
@@ -165,9 +165,9 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_SHOP</Tag>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_SHOP</Tag>
         <English>Leather Padder's Shop</English>
         <German>
             <Text>Ledermmänteladen</Text>
@@ -175,8 +175,8 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_FACTORY</Tag>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_FACTORY</Tag>
         <English>Leather Padding Factory</English>
         <German>
             <Text>Ledermmäntelfabrik</Text>
@@ -184,7 +184,7 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE</Tag>
         <English>Leather Padder's House</English>
         <German>
@@ -192,9 +192,9 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP</Tag>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP</Tag>
         <English>Leather Padder's Shop</English>
         <German>
             <Text>Ledermmänteladen</Text>
@@ -202,8 +202,8 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY</Tag>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY</Tag>
         <English>Leather Coat Factory</English>
         <German>
             <Text>Ledermmäntelfabrik</Text>
@@ -211,7 +211,7 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -221,7 +221,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -231,7 +231,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -241,8 +241,8 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- OIL_TRADER -->
-	<TEXT>
+    <!-- OIL_TRADER -->
+    <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_OIL_TRADER</Tag>
         <English>Cooking Oil Trader</English>
         <German>
@@ -250,8 +250,8 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_HOUSE</Tag>
         <English>Cooking Oil Trader's House</English>
         <German>
@@ -259,9 +259,9 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_SHOP</Tag>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_SHOP</Tag>
         <English>Cooking Oil Trader's Shop</English>
         <German>
             <Text>Kochölhändlerladen</Text>
@@ -269,8 +269,8 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_FACTORY</Tag>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_FACTORY</Tag>
         <English>Cooking Oil Trader Factory</English>
         <German>
             <Text>Kochölhändlerfabrik</Text>
@@ -278,7 +278,7 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE</Tag>
         <English>Cooking Oil Trader's House</English>
         <German>
@@ -286,9 +286,9 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP</Tag>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP</Tag>
         <English>Cooking Oil Trader's Shop</English>
         <German>
             <Text>Kochölhändlerladen</Text>
@@ -296,8 +296,8 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY</Tag>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY</Tag>
         <English>Cooking Oil Factory</English>
         <German>
             <Text>Kochölhändlerfabrik</Text>
@@ -305,7 +305,7 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -315,7 +315,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -325,7 +325,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -335,102 +335,102 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- PEANUT_ROASTER -->
-	<TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_PEANUT_ROASTER</Tag>
-        <English>Peanut Roastery</English>
+    <!-- ROASTER -->
+    <TEXT>
+        <Tag>TXT_KEY_SPECIALBUILDING_ROASTER</Tag>
+        <English>Roastery</English>
         <German>
             <Text>Erdnusrösterei</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_PEANUT_ROASTER_HOUSE</Tag>
-        <English>Peanut Roaster's House</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_ROASTER_HOUSE</Tag>
+        <English>Roaster's House</English>
         <German>
-            <Text>Erdnusrösterhaus</Text>
+            <Text>Rösterhaus</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDINGCLASS_PEANUT_ROASTER_SHOP</Tag>
-        <English>Peanut Roaster's Shop</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_ROASTER_SHOP</Tag>
+        <English>Roaster's Shop</English>
+        <German>
+            <Text>Rösterladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_ROASTER_FACTORY</Tag>
+        <English>Roastery</English>
+        <German>
+            <Text>Rösterei</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE</Tag>
+        <English>Roaster's House</English>
+        <German>
+            <Text>Rösterhaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_ROASTER_SHOP</Tag>
+        <English>Roaster's Shop</English>
         <German>
             <Text>Erdnusrösterladen</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDINGCLASS_PEANUT_ROASTER_FACTORY</Tag>
-        <English>Peanut Roastery</English>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY</Tag>
+        <English>Roastery</English>
         <German>
-            <Text>Erdnusrösterei</Text>
+            <Text>Rösterei</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
-        <Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_HOUSE</Tag>
-        <English>Peanut Roaster's House</English>
-        <German>
-            <Text>Erdnusrösterhaus</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_SHOP</Tag>
-        <English>Peanut Roaster's Shop</English>
-        <German>
-            <Text>Erdnusrösterladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-    </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_FACTORY</Tag>
-        <English>Peanut Roastery</English>
-        <German>
-            <Text>Erdnusrösterei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-    </TEXT>
-	<TEXT>
-        <Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_HOUSE_PEDIA</Tag>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_HOUSE_STRATEGY</Tag>
-        <English>TBD</English>
-        <German>TBD</German>
-    </TEXT>
-	<TEXT>
-        <Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_SHOP_PEDIA</Tag>
+        <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_SHOP_STRATEGY</Tag>
-        <English>TBD</English>
-        <German>TBD</German>
-    </TEXT>
-	<TEXT>
-        <Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_FACTORY_PEDIA</Tag>
+        <Tag>TXT_KEY_BUILDING_ROASTER_SHOP_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_PEANUT_ROASTER_FACTORY_STRATEGY</Tag>
+        <Tag>TXT_KEY_BUILDING_ROASTER_SHOP_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- POTTERY -->
-	<TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <!-- POTTERY -->
+    <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_POTTERY</Tag>
         <English>Pottery</English>
         <German>
@@ -438,8 +438,8 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_POTTERY_HOUSE</Tag>
         <English>Potter's House</English>
         <German>
@@ -447,9 +447,9 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDINGCLASS_POTTERY_SHOP</Tag>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_POTTERY_SHOP</Tag>
         <English>Potter's Shop</English>
         <German>
             <Text>Töpferladen</Text>
@@ -457,8 +457,8 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDINGCLASS_POTTERY_FACTORY</Tag>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_POTTERY_FACTORY</Tag>
         <English>Pottery</English>
         <German>
             <Text>Töpferei</Text>
@@ -466,7 +466,7 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE</Tag>
         <English>Potter's House</English>
         <German>
@@ -474,9 +474,9 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_POTTERY_SHOP</Tag>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_POTTERY_SHOP</Tag>
         <English>Potter's Shop</English>
         <German>
             <Text>Töpferladen</Text>
@@ -484,8 +484,8 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_POTTERY_FACTORY</Tag>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY</Tag>
         <English>Pottery</English>
         <German>
             <Text>Töpferei</Text>
@@ -493,7 +493,7 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -503,7 +503,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_SHOP_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -513,7 +513,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -523,8 +523,8 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- TAILOR -->
-	<TEXT>
+    <!-- TAILOR -->
+    <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_TAILOR</Tag>
         <English>Tailor</English>
         <German>
@@ -532,8 +532,8 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_TAILOR_HOUSE</Tag>
         <English>Tailor's House</English>
         <German>
@@ -541,9 +541,9 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDINGCLASS_TAILOR_SHOP</Tag>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_TAILOR_SHOP</Tag>
         <English>Tailor's Shop</English>
         <German>
             <Text>Schneiderladen</Text>
@@ -551,8 +551,8 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDINGCLASS_TAILOR_FACTORY</Tag>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_TAILOR_FACTORY</Tag>
         <English>Clothes Factory</English>
         <German>
             <Text>Schneiderei</Text>
@@ -560,7 +560,7 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE</Tag>
         <English>Tailor's House</English>
         <German>
@@ -568,9 +568,9 @@
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_TAILOR_SHOP</Tag>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TAILOR_SHOP</Tag>
         <English>Tailor's Shop</English>
         <German>
             <Text>Schneiderladen</Text>
@@ -578,8 +578,8 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILDING_TAILOR_FACTORY</Tag>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY</Tag>
         <English>Clothes Factory</English>
         <German>
             <Text>Schneiderei</Text>
@@ -587,7 +587,7 @@
             <Plural>0</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -597,7 +597,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_SHOP_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -607,7 +607,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>

@@ -313,8 +313,8 @@
             <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,3,1</NatureObject>
         </SpecialBuildingInfo>
 		<SpecialBuildingInfo>
-            <Type>SPECIALBUILDING_PEANUT_ROASTER</Type>
-            <Description>TXT_KEY_SPECIALBUILDING_PEANUT_ROASTER</Description>
+            <Type>SPECIALBUILDING_ROASTER</Type>
+            <Description>TXT_KEY_SPECIALBUILDING_ROASTER</Description>
             <bValid>1</bValid>
             <FontButtonIndex>30</FontButtonIndex>
             <ProductionTraits/>

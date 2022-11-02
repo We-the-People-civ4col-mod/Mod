@@ -685,21 +685,21 @@
             <VictoryThresholds/>
         </BuildingClassInfo>
 		<BuildingClassInfo>
-            <Type>BUILDINGCLASS_PEANUT_ROASTER_HOUSE</Type>
-            <Description>TXT_KEY_BUILDINGCLASS_PEANUT_ROASTER_HOUSE</Description>
-            <DefaultBuilding>BUILDING_PEANUT_ROASTER_HOUSE</DefaultBuilding>
+            <Type>BUILDINGCLASS_ROASTER_HOUSE</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_ROASTER_HOUSE</Description>
+            <DefaultBuilding>BUILDING_ROASTER_HOUSE</DefaultBuilding>
             <VictoryThresholds/>
         </BuildingClassInfo>
         <BuildingClassInfo>
-            <Type>BUILDINGCLASS_PEANUT_ROASTER_SHOP</Type>
-            <Description>TXT_KEY_BUILDINGCLASS_PEANUT_ROASTER_SHOP</Description>
-            <DefaultBuilding>BUILDING_PEANUT_ROASTER_SHOP</DefaultBuilding>
+            <Type>BUILDINGCLASS_ROASTER_SHOP</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_ROASTER_SHOP</Description>
+            <DefaultBuilding>BUILDING_ROASTER_SHOP</DefaultBuilding>
             <VictoryThresholds/>
         </BuildingClassInfo>
         <BuildingClassInfo>
-            <Type>BUILDINGCLASS_PEANUT_ROASTER_FACTORY</Type>
-            <Description>TXT_KEY_BUILDINGCLASS_PEANUT_ROASTER_FACTORY</Description>
-            <DefaultBuilding>BUILDING_PEANUT_ROASTER_FACTORY</DefaultBuilding>
+            <Type>BUILDINGCLASS_ROASTER_FACTORY</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_ROASTER_FACTORY</Description>
+            <DefaultBuilding>BUILDING_ROASTER_FACTORY</DefaultBuilding>
             <VictoryThresholds/>
         </BuildingClassInfo>	
 		<BuildingClassInfo>

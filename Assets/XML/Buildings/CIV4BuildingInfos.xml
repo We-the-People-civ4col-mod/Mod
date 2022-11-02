@@ -12339,15 +12339,15 @@
             <iTeachLevel>0</iTeachLevel>
             <iAICitySize>8</iAICitySize>
         </BuildingInfo>
-		<BuildingInfo>
-            <Type>BUILDING_PEANUT_ROASTER_HOUSE</Type>
-            <BuildingClass>BUILDINGCLASS_PEANUT_ROASTER_HOUSE</BuildingClass>
-            <SpecialBuildingType>SPECIALBUILDING_PEANUT_ROASTER</SpecialBuildingType>
+        <BuildingInfo>
+            <Type>BUILDING_ROASTER_HOUSE</Type>
+            <BuildingClass>BUILDINGCLASS_ROASTER_HOUSE</BuildingClass>
+            <SpecialBuildingType>SPECIALBUILDING_ROASTER</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_PEANUT_ROASTER_HOUSE</Description>
-            <Civilopedia>TXT_KEY_BUILDING_PEANUT_ROASTER_HOUSE_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_PEANUT_ROASTER_HOUSE_STRATEGY</Strategy>
-            <ArtDefineTag>ART_DEF_BUILDING_PEANUT_ROASTER_HOUSE</ArtDefineTag>
+            <Description>TXT_KEY_BUILDING_ROASTER_HOUSE</Description>
+            <Civilopedia>TXT_KEY_BUILDING_ROASTER_HOUSE_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_ROASTER_HOUSE_STRATEGY</Strategy>
+            <ArtDefineTag>ART_DEF_BUILDING_ROASTER_HOUSE</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
             <FreeStartEra>NONE</FreeStartEra>
@@ -12430,14 +12430,14 @@
             <iAICitySize>1</iAICitySize>
         </BuildingInfo>
         <BuildingInfo>
-            <Type>BUILDING_PEANUT_ROASTER_SHOP</Type>
-            <BuildingClass>BUILDINGCLASS_PEANUT_ROASTER_SHOP</BuildingClass>
-            <SpecialBuildingType>SPECIALBUILDING_PEANUT_ROASTER</SpecialBuildingType>
+            <Type>BUILDING_ROASTER_SHOP</Type>
+            <BuildingClass>BUILDINGCLASS_ROASTER_SHOP</BuildingClass>
+            <SpecialBuildingType>SPECIALBUILDING_ROASTER</SpecialBuildingType>
             <iSpecialBuildingPriority>1</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_PEANUT_ROASTER_SHOP</Description>
-            <Civilopedia>TXT_KEY_BUILDING_PEANUT_ROASTER_SHOP_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_PEANUT_ROASTER_SHOP_STRATEGY</Strategy>
-            <ArtDefineTag>ART_DEF_BUILDING_PEANUT_ROASTER_SHOP</ArtDefineTag>
+            <Description>TXT_KEY_BUILDING_ROASTER_SHOP</Description>
+            <Civilopedia>TXT_KEY_BUILDING_ROASTER_SHOP_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_ROASTER_SHOP_STRATEGY</Strategy>
+            <ArtDefineTag>ART_DEF_BUILDING_ROASTER_SHOP</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
             <FreeStartEra>NONE</FreeStartEra>
@@ -12506,7 +12506,7 @@
             <PrereqBuildingClasses/>
             <BuildingClassNeededs>
                 <BuildingClassNeeded>
-                    <BuildingClassType>BUILDINGCLASS_PEANUT_ROASTER_HOUSE</BuildingClassType>
+                    <BuildingClassType>BUILDINGCLASS_ROASTER_HOUSE</BuildingClassType>
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
                 <BuildingClassNeeded>
@@ -12533,14 +12533,14 @@
             <iAICitySize>3</iAICitySize>
         </BuildingInfo>
         <BuildingInfo>
-            <Type>BUILDING_PEANUT_ROASTER_FACTORY</Type>
-            <BuildingClass>BUILDINGCLASS_PEANUT_ROASTER_FACTORY</BuildingClass>
-            <SpecialBuildingType>SPECIALBUILDING_PEANUT_ROASTER</SpecialBuildingType>
+            <Type>BUILDING_ROASTER_FACTORY</Type>
+            <BuildingClass>BUILDINGCLASS_ROASTER_FACTORY</BuildingClass>
+            <SpecialBuildingType>SPECIALBUILDING_ROASTER</SpecialBuildingType>
             <iSpecialBuildingPriority>2</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_PEANUT_ROASTER_FACTORY</Description>
-            <Civilopedia>TXT_KEY_BUILDING_PEANUT_ROASTER_FACTORY_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_PEANUT_ROASTER_FACTORY_STRATEGY</Strategy>
-            <ArtDefineTag>ART_DEF_BUILDING_PEANUT_ROASTER_FACTORY</ArtDefineTag>
+            <Description>TXT_KEY_BUILDING_ROASTER_FACTORY</Description>
+            <Civilopedia>TXT_KEY_BUILDING_ROASTER_FACTORY_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_ROASTER_FACTORY_STRATEGY</Strategy>
+            <ArtDefineTag>ART_DEF_BUILDING_ROASTER_FACTORY</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
             <FreeStartEra>NONE</FreeStartEra>
@@ -12614,7 +12614,7 @@
             <PrereqBuildingClasses/>
             <BuildingClassNeededs>
                 <BuildingClassNeeded>
-                    <BuildingClassType>BUILDINGCLASS_PEANUT_ROASTER_SHOP</BuildingClassType>
+                    <BuildingClassType>BUILDINGCLASS_ROASTER_SHOP</BuildingClassType>
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
                 <BuildingClassNeeded>

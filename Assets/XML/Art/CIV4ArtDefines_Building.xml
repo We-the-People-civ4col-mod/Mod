@@ -1637,7 +1637,7 @@
             <NIF>Art/Terrain/Resources/Flax/wheat.nif</NIF>
             <KFM/>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
-        </BuildingArtInfo>		
+        </BuildingArtInfo>        
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_INDIGO</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
@@ -1782,7 +1782,7 @@
             <KFM/>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_OLIVES</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
@@ -1794,7 +1794,7 @@
             <KFM/>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_RAPE</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
@@ -2070,7 +2070,7 @@
             <KFM/>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,10</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_BONUS_KAUTSCHUK</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
@@ -2454,8 +2454,8 @@
             <KFM/>
             <Button>,Art/colonization_atlas_buildings.dds,4,15</Button>
         </BuildingArtInfo>
-		<!-- New Buildings WTP: Graveyard -->
-		<BuildingArtInfo>
+        <!-- New Buildings WTP: Graveyard -->
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_GRAVEYARD</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
@@ -2467,8 +2467,8 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Graveyard_Button.dds</Button>
         </BuildingArtInfo>
-		<!-- New Buildings WTP: Confectioner -->
-		<BuildingArtInfo>
+        <!-- New Buildings WTP: Confectioner -->
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_CONFECTIONER_HOUSE</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
@@ -2480,7 +2480,7 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Confectioner_House_Button.dds</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_CONFECTIONER_SHOP</Type>
             <LSystem>LSYSTEM_2x1</LSystem>
             <bAnimated>0</bAnimated>
@@ -2492,7 +2492,7 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Confectioner_Shop_Button.dds</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_CONFECTIONER_FACTORY</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
@@ -2504,8 +2504,8 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Confectionery_Button.dds</Button>
         </BuildingArtInfo>
-		<!-- New Buildings WTP: Leather Padder -->
-		<BuildingArtInfo>
+        <!-- New Buildings WTP: Leather Padder -->
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_LEATHER_PADDER_HOUSE</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
@@ -2517,7 +2517,7 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Leather_Tailor_House_Button.dds</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_LEATHER_PADDER_SHOP</Type>
             <LSystem>LSYSTEM_2x1</LSystem>
             <bAnimated>0</bAnimated>
@@ -2529,7 +2529,7 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Leather_Tailor_Shop_Button.dds</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_LEATHER_PADDER_FACTORY</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
@@ -2541,8 +2541,8 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Leather_Coat_Factory_Button.dds</Button>
         </BuildingArtInfo>
-		<!-- New Buildings WTP: Oil Trader -->
-		<BuildingArtInfo>
+        <!-- New Buildings WTP: Oil Trader -->
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_OIL_TRADER_HOUSE</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
@@ -2554,7 +2554,7 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Oil_Trader_House_Button.dds</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_OIL_TRADER_SHOP</Type>
             <LSystem>LSYSTEM_2x1</LSystem>
             <bAnimated>0</bAnimated>
@@ -2566,7 +2566,7 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Oil_Trader_Shop_Button.dds</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_OIL_TRADER_FACTORY</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
@@ -2578,9 +2578,9 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Oil_Factory_Button.dds</Button>
         </BuildingArtInfo>
-		<!-- New Buildings WTP: Peanut Roaster -->
-		<BuildingArtInfo>
-            <Type>ART_DEF_BUILDING_PEANUT_ROASTER_HOUSE</Type>
+        <!-- New Buildings WTP: Peanut Roaster -->
+        <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_ROASTER_HOUSE</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
             <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Peanut_Trader_House_City.dds</CityTexture>
@@ -2591,8 +2591,8 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Peanut_Trader_House_Button.dds</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
-            <Type>ART_DEF_BUILDING_PEANUT_ROASTER_SHOP</Type>
+        <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_ROASTER_SHOP</Type>
             <LSystem>LSYSTEM_2x1</LSystem>
             <bAnimated>0</bAnimated>
             <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Peanut_Trader_Shop_City.dds</CityTexture>
@@ -2603,8 +2603,8 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Peanut_Trader_Shop_Button.dds</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
-            <Type>ART_DEF_BUILDING_PEANUT_ROASTER_FACTORY</Type>
+        <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_ROASTER_FACTORY</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
             <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Peanut_Trader_Post_City.dds</CityTexture>
@@ -2615,8 +2615,8 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Peanut_Trader_Post_Button.dds</Button>
         </BuildingArtInfo>
-		<!-- New Buildings WTP: Pottery -->
-		<BuildingArtInfo>
+        <!-- New Buildings WTP: Pottery -->
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_POTTERY_HOUSE</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
@@ -2628,7 +2628,7 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Pottery_House_Button.dds</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_POTTERY_SHOP</Type>
             <LSystem>LSYSTEM_2x1</LSystem>
             <bAnimated>0</bAnimated>
@@ -2640,7 +2640,7 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Pottery_Shop_Button.dds</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_POTTERY_FACTORY</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
@@ -2652,8 +2652,8 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Pottery_Factory_Button.dds</Button>
         </BuildingArtInfo>
-		<!-- New Buildings WTP: Tailor -->
-		<BuildingArtInfo>
+        <!-- New Buildings WTP: Tailor -->
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_TAILOR_HOUSE</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
@@ -2665,7 +2665,7 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Tailor_House_Button.dds</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_TAILOR_SHOP</Type>
             <LSystem>LSYSTEM_2x1</LSystem>
             <bAnimated>0</bAnimated>
@@ -2677,7 +2677,7 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Tailor_Shop_Button.dds</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_TAILOR_FACTORY</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
