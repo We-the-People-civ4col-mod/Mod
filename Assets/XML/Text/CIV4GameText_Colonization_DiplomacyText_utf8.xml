@@ -5225,7 +5225,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DONATE_MORTAR</Tag>
-        <English>We have just concluded a costly war and now must sell some of Our war material. Since you have been a friend of Our colonies, We consider selling it to you.[NEWLINE](HINT: A mortar will cost %d1_gold[ICON_GOLD])</English>
+        <English>We have just concluded a costly war and now must sell some of Our surplus weapons. Since you have been a friend of Our colonies, We coul sell one to you.[NEWLINE](HINT: A mortar will cost %d1_gold[ICON_GOLD])</English>
         <French>Nous venons de mettre fin à une guerre fort coûteuse. Comme vous semblez amical à notre égard, nous vous proposons la vente de quelques équipements militaires.[NEWLINE](HINT: l'unité de mortier vous coûtera %d1_gold[ICON_GOLD])</French>
         <German>Wir haben erst vor Kurzem einen kostspieligen Krieg beendet und planen, Kriegsgerät zu verkaufen. Da Ihr ein Freund Unserer Kolonien zu sein scheint, bieten Wir Euch dieses an.[NEWLINE](Hinweis: Mörser kostet %d1_gold[ICON_GOLD])</German>
     </TEXT>
