@@ -5447,7 +5447,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_TREASURE_TRANSPORT_REJECT_3</Tag>
-        <English>You are a wise man, Your Majesty! So am I.</English>
+        <English>You are a wise man, Your Majesty! As am I.</English>
         <French>Vous êtes un homme sage, Votre Majesté ! Je le suis aussi.</French>
         <German>Ihr seid ein kluger Mann, Eure Majestät! Ich aber auch.</German>
         <Italian>Lei è un uomo saggio, Vostra Maestà! Lo sono anch'io.</Italian>
@@ -5559,7 +5559,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHIEF_GOODY_8</Tag>
-        <English>I'm looking for the Fountain of Youth. I want robust good health, but mainly I need to forget all the hard things I've learned in life.</English>
+        <English>I'm looking for the Fountain of Youth. I want robust good health, but mainly I need to forget all the hard things I learned later in life.</English>
         <French>Adieu ! Et merci de m'avoir laissé remplir ma bouteille d'eau.</French>
         <German>Lebt wohl! Und habt Dank, dass ich meine Wasserflasche füllen durfte.</German>
         <Italian>Addio! E grazie per avermi permesso di riempire la mia bottiglia d'acqua.</Italian>
@@ -5751,7 +5751,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_ASK_FOR_GOLD_10</Tag>
-        <English>Your fame as an explorer of exotic shores impresses Our subjects, and they have asked Us to name the great marketplace of the capital after you. We are happy to comply with this request. Send %d1[ICON_GOLD] for administrative fees.</English>
+        <English>Your fame as an explorer of exotic shores impresses Our subjects, and they have asked Us to name the great marketplace of the capitol after you. We are happy to comply with this request. Send %d1[ICON_GOLD] for administrative fees.</English>
         <French>Votre renommée d'explorateur de rivages exotiques impressionne Nos sujets, et ils Nous ont demandé de donner votre nom à la grande place du marché de la capitale. Nous sommes heureux de répondre à cette demande ! Envoyez-nous %d1[ICON_GOLD] pour les frais administratifs.</French>
         <German>Euer Ruhm als Entdecker exotischer Gestade beeindruckt Unsere Untertanen, und sie haben Uns gebeten, den großen Marktplatz der Hauptstadt nach Euch zu benennen. Diesem Wunsch kommen Wir gerne nach! Schickt Uns %d1[ICON_GOLD] für die Verwaltungsgebühren.</German>
         <Italian>La tua fama di esploratore di lidi esotici impressiona i nostri sudditi, che ci hanno chiesto di dare il tuo nome alla grande piazza del mercato della capitale. Siamo felici di soddisfare questa richiesta! Inviaci %d1[ICON_GOLD] per le spese amministrative.</Italian>
