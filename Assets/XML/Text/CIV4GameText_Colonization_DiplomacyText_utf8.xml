@@ -6800,17 +6800,17 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_COLONIES_AND_NATIVE_ALLIES_WAR_ACCEPT</Tag>
-        <English>Let us teach those cowards and oath breakers a lessons. Your Tribe shall get the weapons and horses you requested. In exchange you could send us a few Warriors as Scouts. (Accept)</English>
+        <English>Let us teach those cowards and oath breakers a lessons. Your tribe shall get the weapons and horses you requested. In exchange you might send us a few warriors as scouts. (Accept)</English>
         <German>Lasst uns diese Feiglingen und Eidbrechern eine Lektion erteilen. Euer Stamm soll die erbetenen Waffen und Pferde erhalten. Schickt uns im Austausch einige Krieger als Führer. (Annehmen) </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COLONIAL_INTERVENTION_NATIVE_WAR_ENDED</Tag>
-        <English>You have followed the request of your colonial neighbour and ended war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. They owe you a favour.</English>
+        <English>You have followed the request of your colonial neighbour and ended the war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]. They owe you a favour.</English>
         <German>Ihr seid der bitte eures kolonialen Nachbars gefolgt und habt den Krieg mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] beendet. Sie schulden euch einen Gefallen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COLONIAL_INTERVENTION_NATIVE_WAR_CONTINUED</Tag>
-        <English>The war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] continues. Rumors say that the Natives get support from another Colonial Nation.</English>
+        <English>The war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] continues. Rumours say that the Natives get support from another colonial nation.</English>
         <German>Der Krieg mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] geht weiter. Es heißt die Ureinwohner bekommen Unterstützung von einer anderen Kolnialmacht.</German>
     </TEXT>
     <TEXT>
