@@ -6111,7 +6111,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_CHURCH_FAVOUR_KING</Tag>
-        <English>Could you please speak for our cause to [COLOR_HIGHLIGHT_TEXT]our King[COLOR_REVERT] ?</English>
+        <English>Could you please speak on behalf of our cause to [COLOR_HIGHLIGHT_TEXT]our King[COLOR_REVERT]?</English>
         <French>Pourriez-vous parler au [COLOR_HIGHLIGHT_TEXT]Roi[COLOR_REVERT] en notre faveur ?</French>
         <German>Könntet Ihr bitte bei [COLOR_HIGHLIGHT_TEXT]unserem König[COLOR_REVERT] für unsere Sache sprechen?</German>
         <Italian>Potresti parlare per la nostra causa al [COLOR_HIGHLIGHT_TEXT]nostro Re[COLOR_REVERT]?</Italian>
@@ -6471,7 +6471,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_SOUSA_1</Tag>
-        <English>Take a seat on the veranda of my plantation. May I offer you some refreshment? A glass of rum? A cup of coffee? A young slave girl?</English>
+        <English>Take a seat on the veranda of my plantation. May I offer you some refreshment? A glass of rum? A cup of coffee? A slave girl?</English>
         <French>Enfin un adversaire à ma mesure ! Que peuvent faire les [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] pour vous ?</French>
         <German>Nehmt Platz auf der Veranda meiner Plantage. Darf ich Euch eine Erfrischung anbieten? Ein Glas Rum? Eine Tasse Kaffee? Eine junge Sklavin?</German>
         <Italian>Finalmente parlo con un degno avversario. Cosa può fare [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] per te?</Italian>
