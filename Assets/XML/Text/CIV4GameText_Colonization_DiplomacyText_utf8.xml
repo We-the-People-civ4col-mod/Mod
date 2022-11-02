@@ -5179,7 +5179,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_KING_WELCOME_FR</Tag>
-        <English>Welcome my good governor. What good news do you bring us from the New World? Or do you come with request for the crown again?</English>
+        <English>Welcome my good governor. What good news do you bring us from the New World? Or do you come again with a request for the Crown?</English>
         <German>Willkommen, mein guter Gouverneur. Welche gute Kunde bringt ihr aus der Neuen Welt? Oder erbittet ihr etwa erneut die Hilfe der Krone?</German>
     </TEXT>
     <TEXT>
@@ -5189,7 +5189,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_CHURCH_DEMAND</Tag>
-        <English>We are delighted to see the colonies prosper and acquiring wealth, but in Europe people are suffering. Thus, since you are good Christians, you would surely like to donate %d1[ICON_GOLD] to your Mother Church, so we can help them.</English>
+        <English>We are delighted to see the colonies acquiring wealth, but in Europe people are suffering. Thus, since you are good Christians, you would surely like to donate %d1[ICON_GOLD] to your Mother Church, so we can help them.</English>
         <French>Nous sommes ravis de voir vos colonies prospérer et acquérir tant d'opulence... Sachez qu'en Europe le peuple souffre. En tant que bons chrétiens miséricordieux, j'imagine que vous donneriez naturellement %d1[ICON_GOLD] à notre Sainte église pour leur venir en aide.</French>
         <German>Wir sind erfreut zu sehen, dass die Kolonien in Wohlstand schwelgen. Aber in Europa leiden die Menschen. Daher werdet Ihr als gute Christen doch sicherlich der Mutter Kirche die kleine Summe von %d1[ICON_GOLD] spenden, damit ihnen geholfen wird.</German>
         <Italian>Siamo lieti di vedere che le colonie si crogiolano nella prosperità. Ma in Europa il popolo sta soffrendo. Perciò, da buoni cristiani, donerete sicuramente la piccola somma di %d1[ICON_GOLD] alla Chiesa Madre affinché siano aiutati.</Italian>
