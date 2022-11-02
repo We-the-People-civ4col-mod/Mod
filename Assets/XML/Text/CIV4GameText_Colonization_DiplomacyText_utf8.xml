@@ -6815,7 +6815,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COLONIES_AND_NATIVE_ALLIES_WAR_REFUSED</Tag>
-        <English>The war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] continues. We decided it was wiser not to involve the Natives in this conflict to prevent unnecessary blood shed</English>
+        <English>The war with [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] continues. It was wiser for us not to involve the Natives in this conflict to avoid unnecessary bloodshed.</English>
         <German>Der Krieg mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] geht weiter. Um unötiges Blutvergießen zu verhindern haben wir uns aber entschieden die Ureinwohner nicht in diesen Konflikt hineinzuziehen.</German>
     </TEXT>
     <TEXT>
@@ -6825,7 +6825,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ROYAL_INTERVENTION</Tag>
-        <English>We wonder why the conflict against [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] is taking so long. Do you require more troops? If yes, we are willing to send you a ship and two battalions for just [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. Alternatively to the gold we could also agree a tax increase of [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT].</English>
+        <English>We wonder why the conflict against [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] is taking so long. Do you require more troops? If yes, we are willing to send you a ship and two battalions for just [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. If you prefer, we could levy a tax increase of [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT] instead of the gold.</English>
         <German>Wir fragen uns warum der Konflikt mit [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] so lange andauert. Benötigt ihr mehr Truppen? Falls ja, sind wir bereit euch ein Schiff und zwei ein Battallione Truppen für lediglich [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD] zu überlassen. Als Alternative zu der Goldzahlung bieten wir euch eine Steuererhöhung von [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT] an.</German>
     </TEXT>
     <TEXT>
