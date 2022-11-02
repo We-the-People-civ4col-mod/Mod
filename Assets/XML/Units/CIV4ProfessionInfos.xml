@@ -1533,7 +1533,7 @@
             <ExpertUnit>UNITCLASS_COCOA_PLANTER</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
-		<ProfessionInfo>
+        <ProfessionInfo>
             <Type>PROFESSION_VANILLA_COLLECTOR</Type>
             <Description>TXT_KEY_PROFESSION_VANILLA_COLLECTOR</Description>
             <Civilopedia>TXT_KEY_PROFESSION_VANILLA_COLLECTOR_PEDIA</Civilopedia>
@@ -1775,7 +1775,7 @@
             <Help>TXT_KEY_PROFESSION_COCOA_DRIER_HELP</Help>
             <Combat>NONE</Combat>
             <DefaultUnitAI>NONE</DefaultUnitAI>
-            <SpecialBuilding>SPECIALBUILDING_WAREHOUSE</SpecialBuilding>
+            <SpecialBuilding>SPECIALBUILDING_ROASTER</SpecialBuilding>
             <bWorkPlot>0</bWorkPlot>
             <bCitizen>1</bCitizen>
             <bWater>0</bWater>
@@ -1814,7 +1814,7 @@
             <Help>TXT_KEY_PROFESSION_COFFEE_DRIER_HELP</Help>
             <Combat>NONE</Combat>
             <DefaultUnitAI>NONE</DefaultUnitAI>
-            <SpecialBuilding>SPECIALBUILDING_WAREHOUSE</SpecialBuilding>
+            <SpecialBuilding>SPECIALBUILDING_ROASTER</SpecialBuilding>
             <bWorkPlot>0</bWorkPlot>
             <bCitizen>1</bCitizen>
             <bWater>0</bWater>
@@ -2908,7 +2908,7 @@
             <ExpertUnit>UNITCLASS_POTTER</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
-		<ProfessionInfo>
+        <ProfessionInfo>
             <Type>PROFESSION_PEANUT_ROASTER</Type>
             <Description>TXT_KEY_PROFESSION_PEANUT_ROASTER</Description>
             <Civilopedia>TXT_KEY_PROFESSION_PEANUT_ROASTER_PEDIA</Civilopedia>
@@ -2916,7 +2916,7 @@
             <Help>TXT_KEY_PROFESSION_PEANUT_ROASTER_HELP</Help>
             <Combat>NONE</Combat>
             <DefaultUnitAI>NONE</DefaultUnitAI>
-            <SpecialBuilding>SPECIALBUILDING_PEANUT_ROASTER</SpecialBuilding>
+            <SpecialBuilding>SPECIALBUILDING_ROASTER</SpecialBuilding>
             <bWorkPlot>0</bWorkPlot>
             <bCitizen>1</bCitizen>
             <bWater>0</bWater>

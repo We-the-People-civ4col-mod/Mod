@@ -703,8 +703,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>3</iProfessionOutput>
-            <iMaxWorkers>3</iMaxWorkers>
+            <iProfessionOutput>0</iProfessionOutput>
+            <iMaxWorkers>0</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -739,20 +739,7 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
-            <AIUnitClassWeights>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_COFFEE_PLANTER</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-            </AIUnitClassWeights>
+            <AIUnitClassWeights/>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -794,8 +781,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>4</iProfessionOutput>
-            <iMaxWorkers>1</iMaxWorkers>
+            <iProfessionOutput>0</iProfessionOutput>
+            <iMaxWorkers>0</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -870,8 +857,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>4</iProfessionOutput>
-            <iMaxWorkers>4</iMaxWorkers>
+            <iProfessionOutput>0</iProfessionOutput>
+            <iMaxWorkers>0</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -910,20 +897,7 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
-            <AIUnitClassWeights>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_COFFEE_PLANTER</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-            </AIUnitClassWeights>
+            <AIUnitClassWeights/>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -977,8 +951,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>5</iProfessionOutput>
-            <iMaxWorkers>5</iMaxWorkers>
+            <iProfessionOutput>0</iProfessionOutput>
+            <iMaxWorkers>0</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -1017,20 +991,7 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
-            <AIUnitClassWeights>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_COFFEE_PLANTER</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-            </AIUnitClassWeights>
+            <AIUnitClassWeights/>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -1084,8 +1045,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>6</iMaxWorkers>
+            <iProfessionOutput>0</iProfessionOutput>
+            <iMaxWorkers>0</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -1110,16 +1071,7 @@
             <SeaPlotYieldChanges/>
             <RiverPlotYieldChanges/>
             <YieldChanges/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_COCOA</YieldType>
-                    <iModifier>25</iModifier>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_COFFEE</YieldType>
-                    <iModifier>25</iModifier>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
             <DomainFreeExperiences/>
@@ -1139,20 +1091,7 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
-            <AIUnitClassWeights>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_COFFEE_PLANTER</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-            </AIUnitClassWeights>
+            <AIUnitClassWeights/>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -1206,8 +1145,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>6</iProfessionOutput>
-            <iMaxWorkers>8</iMaxWorkers>
+            <iProfessionOutput>0</iProfessionOutput>
+            <iMaxWorkers>0</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
             <iCitiesPrereq>0</iCitiesPrereq>
@@ -1232,16 +1171,7 @@
             <SeaPlotYieldChanges/>
             <RiverPlotYieldChanges/>
             <YieldChanges/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_COCOA</YieldType>
-                    <iModifier>50</iModifier>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_COFFEE</YieldType>
-                    <iModifier>50</iModifier>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
             <DomainFreeExperiences/>
@@ -1258,20 +1188,7 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
-            <AIUnitClassWeights>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_COFFEE_PLANTER</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-            </AIUnitClassWeights>
+            <AIUnitClassWeights/>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -12326,7 +12243,7 @@
                     <eUnitClass>UNITCLASS_RAPE_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
-				<AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_OLIVES_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
@@ -12409,7 +12326,9 @@
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
             <AIRequiredCatchmentAreaTerrains>
-				<eRequiredTerrain>TERRAIN_PLAINS_FERTILE</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_PLAINS_FERTILE</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_SAVANNAH</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_MARSH</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>
@@ -12417,7 +12336,19 @@
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
                 <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_PEANUT_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COFFEE_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
             </AIUnitClassWeights>
@@ -12520,7 +12451,19 @@
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
                 <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_PEANUT_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COFFEE_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
             </AIUnitClassWeights>
@@ -12606,6 +12549,14 @@
                     <YieldType>YIELD_ROASTED_PEANUTS</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
+                <YieldModifier>
+                    <YieldType>YIELD_COCOA</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
+                <YieldModifier>
+                    <YieldType>YIELD_COFFEE</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
             </YieldModifiers>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
@@ -12628,7 +12579,19 @@
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
                 <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_PEANUT_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COFFEE_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
             </AIUnitClassWeights>
@@ -12640,7 +12603,7 @@
             <iTeachLevel>0</iTeachLevel>
             <iAICitySize>8</iAICitySize>
         </BuildingInfo>
-		<BuildingInfo>
+        <BuildingInfo>
             <Type>BUILDING_POTTERY_HOUSE</Type>
             <BuildingClass>BUILDINGCLASS_POTTERY_HOUSE</BuildingClass>
             <SpecialBuildingType>SPECIALBUILDING_POTTERY</SpecialBuildingType>
