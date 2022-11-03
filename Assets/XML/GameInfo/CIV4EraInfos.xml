@@ -26,27 +26,8 @@
             <iGreatGeneralPercent>100</iGreatGeneralPercent>
             <iEventChancePerTurn>4</iEventChancePerTurn>
             <iSoundtrackSpace>75</iSoundtrackSpace>
-            <bFirstSoundtrackFirst>1</bFirstSoundtrackFirst>
+            <bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
             <EraInfoSoundtracks>
-                <EraInfoSoundtrack>AS2D_RaR_1</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_2</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_3</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_4</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_5</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_6</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_7</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_8</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_9</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_10</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_13</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_14</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_15</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_16</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_17</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_18</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_19</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_01</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_02</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_03</EraInfoSoundtrack>
@@ -69,6 +50,25 @@
                 <EraInfoSoundtrack>AS2D_WTP_20</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_21</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_22</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_1</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_2</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_3</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_4</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_5</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_6</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_7</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_8</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_9</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_10</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_13</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_14</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_15</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_16</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_17</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_18</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_19</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_OUT_AT_SEA</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_GAILLARD_I_SMILE</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_MATTIE_GROVE</EraInfoSoundtrack>
@@ -145,25 +145,6 @@
             <iSoundtrackSpace>75</iSoundtrackSpace>
             <bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
             <EraInfoSoundtracks>
-                <EraInfoSoundtrack>AS2D_RaR_1</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_2</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_3</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_4</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_5</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_6</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_7</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_8</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_9</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_10</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_13</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_14</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_15</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_16</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_17</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_18</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_19</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_01</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_02</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_03</EraInfoSoundtrack>
@@ -186,6 +167,25 @@
                 <EraInfoSoundtrack>AS2D_WTP_20</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_21</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_22</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_1</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_2</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_3</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_4</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_5</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_6</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_7</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_8</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_9</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_10</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_13</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_14</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_15</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_16</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_17</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_18</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_19</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_BARBARA_ALLEN</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_A_SOLDIER_AND_A_SAILOR</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_BLOW_YE_WINDS_BLOW</EraInfoSoundtrack>
@@ -267,25 +267,6 @@
             <iSoundtrackSpace>75</iSoundtrackSpace>
             <bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
             <EraInfoSoundtracks>
-                <EraInfoSoundtrack>AS2D_RaR_1</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_2</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_3</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_4</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_5</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_6</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_7</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_8</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_9</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_10</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_13</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_14</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_15</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_16</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_17</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_18</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_19</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_01</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_02</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_03</EraInfoSoundtrack>
@@ -308,6 +289,25 @@
                 <EraInfoSoundtrack>AS2D_WTP_20</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_21</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_22</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_1</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_2</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_3</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_4</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_5</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_6</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_7</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_8</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_9</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_10</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_13</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_14</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_15</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_16</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_17</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_18</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_19</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_CHESTER</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_DAUGHTER</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_QUICK_STEP</EraInfoSoundtrack>
@@ -410,27 +410,8 @@
             <iGreatGeneralPercent>100</iGreatGeneralPercent>
             <iEventChancePerTurn>4</iEventChancePerTurn>
             <iSoundtrackSpace>75</iSoundtrackSpace>
-            <bFirstSoundtrackFirst>1</bFirstSoundtrackFirst>
+            <bFirstSoundtrackFirst>0</bFirstSoundtrackFirst>
             <EraInfoSoundtracks>
-                <EraInfoSoundtrack>AS2D_RaR_1</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_2</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_3</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_4</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_5</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_6</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_7</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_8</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_9</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_10</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_13</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_14</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_15</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_16</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_17</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_18</EraInfoSoundtrack>
-                <EraInfoSoundtrack>AS2D_RaR_19</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_01</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_02</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_03</EraInfoSoundtrack>
@@ -453,6 +434,25 @@
                 <EraInfoSoundtrack>AS2D_WTP_20</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_21</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_WTP_22</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_1</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_2</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_3</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_4</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_5</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_6</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_7</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_8</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_9</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_10</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_12</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_13</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_14</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_15</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_16</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_17</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_18</EraInfoSoundtrack>
+                <EraInfoSoundtrack>AS2D_RaR_19</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_DUKE_OF_YORKS</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_EQUALI_IN_C_MINOR_TROMBONES_I_BRUCKNER</EraInfoSoundtrack>
                 <EraInfoSoundtrack>AS2D_EQUALI_IN_C_MINOR_TROMBONES_II_BRUCKNER</EraInfoSoundtrack>
