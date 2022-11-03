@@ -3890,12 +3890,12 @@
         </YieldProduced>
     </AchieveInfo>
     <AchieveInfo>
-        <Type>ACHIEVE_THREE_FERMENTATOR</Type>
-        <Description>TXT_KEY_ACHIEVE_THREE_FERMENTATOR</Description>
+        <Type>ACHIEVE_THREE_ROASTER</Type>
+        <Description>TXT_KEY_ACHIEVE_THREE_ROASTER</Description>
         <bActive>1</bActive>
         <bAfterMove>0</bAfterMove>
-        <HeaderTextKey>TXT_KEY_ACHIEVE_THREE_FERMENTATOR_HEAD</HeaderTextKey>
-        <BodyTextKey>TXT_KEY_ACHIEVE_THREE_FERMENTATOR_TEXT</BodyTextKey>
+        <HeaderTextKey>TXT_KEY_ACHIEVE_THREE_ROASTER_HEAD</HeaderTextKey>
+        <BodyTextKey>TXT_KEY_ACHIEVE_THREE_ROASTER_TEXT</BodyTextKey>
         <PictureFileName>art/achievements/experts.dds</PictureFileName>
         <iPictureX>360</iPictureX>
         <iPictureY>240</iPictureY>
@@ -3913,7 +3913,7 @@
         <NumBuildings/>
         <NumUnits>
             <NumUnits>
-                <UnitType>UNIT_FERMENTATOR</UnitType>
+                <UnitType>UNIT_ROASTER</UnitType>
                 <iNumber>3</iNumber>
             </NumUnits>
         </NumUnits>

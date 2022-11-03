@@ -373,7 +373,7 @@
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
                 <FreeUnit>
-                    <UnitClass>UNITCLASS_PEANUT_ROASTER</UnitClass>
+                    <UnitClass>UNITCLASS_ROASTER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
@@ -1185,7 +1185,7 @@
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
                 <FreeUnit>
-                    <UnitClass>UNITCLASS_FERMENTATOR</UnitClass>
+                    <UnitClass>UNITCLASS_ROASTER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
@@ -1908,7 +1908,7 @@
                     <iFreeUnits>2</iFreeUnits>
                 </FreeUnit>
                 <FreeUnit>
-                    <UnitClass>UNITCLASS_FERMENTATOR</UnitClass>
+                    <UnitClass>UNITCLASS_ROASTER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>

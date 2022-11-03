@@ -5,8 +5,8 @@
 <!-- -->
 <!-- Game Text Infos -->
 <Civ4GameText xmlns="http://www.firaxis.com">
-	<!-- Different Cloth Colouring -->
-	<TEXT>
+    <!-- Different Cloth Colouring -->
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_DYER_LOGWOOD</Tag>
         <English>Cloth Dyer (Logwood):Cloth Dyers (Logwood)</English>
         <French>
@@ -30,7 +30,7 @@
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_DYER_COCHINEAL</Tag>
         <English>Cloth Dyer (Cochineal):Cloth Dyers (Cochineal)</English>
         <French>
@@ -102,8 +102,8 @@
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
-	<!-- Outdoor Professions -->
-	<TEXT>
+    <!-- Outdoor Professions -->
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_BIRD_HUNTER</Tag>
         <English>
             <Text>Bird Hunter:Bird Hunters</Text>
@@ -130,7 +130,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_SEA_BIRD_HUNTER</Tag>
         <English>
             <Text>Sea Bird Hunter:Sea Bird Hunters</Text>
@@ -157,7 +157,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_BLOODWOOD_CUTTER</Tag>
         <English>
             <Text>Bloodwood Cutter:Bloodwood Cutters</Text>
@@ -183,8 +183,8 @@
         <Tag>TXT_KEY_PROFESSION_BLOODWOOD_CUTTER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
-    </TEXT>	
-	<TEXT>
+    </TEXT>    
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_HARDWOOD_LUMBERJACK</Tag>
         <English>
             <Text>Lumberjack (Hardwood): Lumberjack (Hardwood)</Text>
@@ -210,8 +210,8 @@
         <Tag>TXT_KEY_PROFESSION_HARDWOOD_LUMBERJACK_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
-    </TEXT>		
-	<TEXT>
+    </TEXT>        
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_GOATHERD</Tag>
         <English>
             <Text>Goatherd:Goatherds</Text>
@@ -238,7 +238,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_PIG_BREEDER</Tag>
         <English>
             <Text>Pig Breeder:Pig Breeders</Text>
@@ -265,7 +265,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHICKEN_BREEDER</Tag>
         <English>
             <Text>Chicken Breeder:Chicken Breeders</Text>
@@ -292,7 +292,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_GEESE_BREEDER</Tag>
         <English>
             <Text>Geese Breeder:Geese Breeders</Text>
@@ -319,7 +319,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_FRUITS_PICKER</Tag>
         <English>
             <Text>Fruits Picker:Fruits Pickers</Text>
@@ -346,7 +346,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_RICE_FARMER</Tag>
         <English>
             <Text>Rice Farmer:Rice Farmers</Text>
@@ -373,7 +373,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_CASSAVA_PLANTER</Tag>
         <English>
             <Text>Cassava Planter:Cassava Planters</Text>
@@ -400,7 +400,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_FLAX_PLANTER</Tag>
         <English>
             <Text>Flax Planter:Flax Planters</Text>
@@ -427,7 +427,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_RAPE_PLANTER</Tag>
         <English>
             <Text>Rape Planter:Rape Planters</Text>
@@ -454,7 +454,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_OLIVES_PLANTER</Tag>
         <English>
             <Text>Olives Planter:Olives Planters</Text>
@@ -481,7 +481,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_YERBA_COLLECTOR</Tag>
         <English>
             <Text>Yerba Leaves Collector:Yerba Leaves Collectors</Text>
@@ -508,7 +508,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_VANILLA_COLLECTOR</Tag>
         <English>
             <Text>Vanilla Pods Collector:Vanilla Pods Collectors</Text>
@@ -535,7 +535,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_COCHINEAL_COLLECTOR</Tag>
         <English>
             <Text>Cochineal Collector:Cochineal Collectors</Text>
@@ -562,7 +562,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEANUT_PLANTER</Tag>
         <English>
             <Text>Peanut Planter:Peanut Planters</Text>
@@ -589,7 +589,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_KAUTSCHUK_COLLECTOR</Tag>
         <English>
             <Text>Kautschuk Collector:Kautschuk Collectors</Text>
@@ -616,7 +616,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_MAPLE_SIRUP_COLLECTOR</Tag>
         <English>
             <Text>Maple Sirup Collector:Maple Sirup  Collectors</Text>
@@ -643,7 +643,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEAT_CUTTER</Tag>
         <English>
             <Text>Peat Cutter:Peat Cutters</Text>
@@ -670,7 +670,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_CLAY_MINER</Tag>
         <English>
             <Text>Clay Miner:Clay Miners</Text>
@@ -697,7 +697,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_COAL_MINER</Tag>
         <English>
             <Text>Coal Miner:Coal Miners</Text>
@@ -724,7 +724,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_YERBA_TRADER</Tag>
         <English>
             <Text>Yerba Tea Trader:Yerba Tea Traders</Text>
@@ -751,7 +751,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_HOOCH_DISTILLER</Tag>
         <English>
             <Text>Distiller (Hooch):Distillers (Hooch)</Text>
@@ -778,7 +778,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_PADDED_FURNITURE_MAKER</Tag>
         <English>
             <Text>Furniture Maker (Padded):Furniture Makers (Padded)</Text>
@@ -795,7 +795,7 @@
         <Tag>TXT_KEY_PROFESSION_PADDED_FURNITURE_MAKER_HELP</Tag>
         <English>????</English>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_PADDED_FURNITURE_MAKER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -805,7 +805,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_TANNER_PIG</Tag>
         <English>Tanner (Pig Skins):Tanners (Pig Skins)</English>
         <German>
@@ -818,7 +818,7 @@
         <Tag>TXT_KEY_PROFESSION_TANNER_PIG_HELP</Tag>
         <English>????</English>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_TANNER_PIG_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -828,7 +828,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_POTTER</Tag>
         <English>Potter:Potters</English>
         <German>
@@ -841,7 +841,7 @@
         <Tag>TXT_KEY_PROFESSION_POTTER_HELP</Tag>
         <English>????</English>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_POTTER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -850,8 +850,8 @@
         <Tag>TXT_KEY_PROFESSION_POTTER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
-    </TEXT>	
-	<TEXT>
+    </TEXT>    
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_FIELD_WORKER_TOOLS_TRADER</Tag>
         <English>Field Worker Tools Trader:Field Worker Tools Traders</English>
         <German>
@@ -864,7 +864,7 @@
         <Tag>TXT_KEY_PROFESSION_FIELD_WORKER_TOOLS_TRADER_HELP</Tag>
         <English>????</English>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_FIELD_WORKER_TOOLS_TRADER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -874,7 +874,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_HOUSEHOLD_GOODS_TRADER</Tag>
         <English>Household Goods Trader:Household Goods Traders</English>
         <German>
@@ -887,7 +887,7 @@
         <Tag>TXT_KEY_PROFESSION_HOUSEHOLD_GOODS_TRADER_HELP</Tag>
         <English>????</English>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_HOUSEHOLD_GOODS_TRADER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -897,9 +897,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	
-	
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEANUT_ROASTER</Tag>
         <English>Peanut Roaster:Peanut Roasters</English>
         <German>
@@ -912,7 +910,7 @@
         <Tag>TXT_KEY_PROFESSION_PEANUT_ROASTER_HELP</Tag>
         <English>????</English>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEANUT_ROASTER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -922,7 +920,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_GOATS</Tag>
         <English>
             <Text>Butcher (Goats):Butchers (Goats)</Text>
@@ -939,7 +937,7 @@
         <Tag>TXT_KEY_PROFESSION_BUTCHER_GOATS_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_GOATS_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -949,7 +947,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_PIGS</Tag>
         <English>
             <Text>Butcher (Pigs):Butchers (Pigs)</Text>
@@ -966,7 +964,7 @@
         <Tag>TXT_KEY_PROFESSION_BUTCHER_PIGS_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_PIGS_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -976,7 +974,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_CHICKEN</Tag>
         <English>
             <Text>Butcher (Chicken):Butchers (Chicken)</Text>
@@ -993,7 +991,7 @@
         <Tag>TXT_KEY_PROFESSION_BUTCHER_CHICKEN_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_CHICKEN_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -1003,7 +1001,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_GEESE</Tag>
         <English>
             <Text>Butcher (Geese):Butchers (Geese)</Text>
@@ -1020,7 +1018,7 @@
         <Tag>TXT_KEY_PROFESSION_BUTCHER_GEESE_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_GEESE_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -1030,7 +1028,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_CATTLE</Tag>
         <English>
             <Text>Milkmaid (Cattle):Milkmaids (Cattle)</Text>
@@ -1047,7 +1045,7 @@
         <Tag>TXT_KEY_PROFESSION_MILKMAID_CATTLE_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_CATTLE_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -1057,7 +1055,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_SHEEP</Tag>
         <English>
             <Text>Milkmaid (Sheep):Milkmaids (Sheep)</Text>
@@ -1074,7 +1072,7 @@
         <Tag>TXT_KEY_PROFESSION_MILKMAID_SHEEP_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_SHEEP_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -1084,7 +1082,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_GOATS</Tag>
         <English>
             <Text>Milkmaid (Goats):Milkmaids (Goats)</Text>
@@ -1101,7 +1099,7 @@
         <Tag>TXT_KEY_PROFESSION_MILKMAID_GOATS_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_GOATS_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -1111,7 +1109,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHEESE_MAKER</Tag>
         <English>
             <Text>Cheese Maker:Cheese Makers</Text>
@@ -1128,7 +1126,7 @@
         <Tag>TXT_KEY_PROFESSION_CHEESE_MAKER_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHEESE_MAKER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -1138,7 +1136,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_RAPE_OIL_TRADER</Tag>
         <English>
             <Text>Oil Trader (Canola Oil):Cheese Makers (Canola Oil)</Text>
@@ -1155,7 +1153,7 @@
         <Tag>TXT_KEY_PROFESSION_RAPE_OIL_TRADER_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_RAPE_OIL_TRADER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -1165,7 +1163,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_OLIVE_OIL_TRADER</Tag>
         <English>
             <Text>Oil Trader (Olive Oil):Cheese Makers (Olive Oil)</Text>
@@ -1182,7 +1180,7 @@
         <Tag>TXT_KEY_PROFESSION_OLIVE_OIL_TRADER_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_OLIVE_OIL_TRADER_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -1192,7 +1190,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_FESTIVE_CLOTHES_TAILOR</Tag>
         <English>
             <Text>Tailor (Festive Clothes):Tailors (Festive Clothes)</Text>
@@ -1209,7 +1207,7 @@
         <Tag>TXT_KEY_PROFESSION_FESTIVE_CLOTHES_TAILOR_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_FESTIVE_CLOTHES_TAILOR_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -1219,7 +1217,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_EVERYDAY_CLOTHES_TAILOR</Tag>
         <English>
             <Text>Tailor (Everyday Clothes):Tailors (Everyday Clothes)</Text>
@@ -1236,7 +1234,7 @@
         <Tag>TXT_KEY_PROFESSION_EVERYDAY_CLOTHES_TAILOR_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_EVERYDAY_CLOTHES_TAILOR_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -1245,8 +1243,8 @@
         <Tag>TXT_KEY_PROFESSION_EVERYDAY_CLOTHES_TAILOR_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
-    </TEXT>	
-	<TEXT>
+    </TEXT>    
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_CONFECTIONER_CHOCOLATE</Tag>
         <English>
             <Text>Confectioner (Chocolate):Confectioners (Chocolate)</Text>
@@ -1263,7 +1261,7 @@
         <Tag>TXT_KEY_PROFESSION_CONFECTIONER_CHOCOLATE_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_CONFECTIONER_CHOCOLATE_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -1273,7 +1271,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_CONFECTIONER_VANILLA</Tag>
         <English>
             <Text>Confectioner (Vanilla):Confectioners (Vanilla)</Text>
@@ -1290,7 +1288,7 @@
         <Tag>TXT_KEY_PROFESSION_CONFECTIONER_VANILLA_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_CONFECTIONER_VANILLA_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -1300,7 +1298,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_COATS</Tag>
         <English>
             <Text>Leather Padder (Leather Coats):Leather Padders (Leather Coats)</Text>
@@ -1317,7 +1315,7 @@
         <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_COATS_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_COATS_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>
@@ -1327,7 +1325,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
     <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_BOOTS</Tag>
         <English>
             <Text>Leather Padder (Goat Hide Boots):Leather Padders (Goat Hide Boots)</Text>
@@ -1344,7 +1342,7 @@
         <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_BOOTS_HELP</Tag>
         <English>????</English>
     </TEXT>
-		<TEXT>
+        <TEXT>
         <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_BOOTS_PEDIA</Tag>
         <English>TBD</English>
         <German>TBD</German>

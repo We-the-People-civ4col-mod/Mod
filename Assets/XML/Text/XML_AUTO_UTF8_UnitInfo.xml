@@ -1827,46 +1827,6 @@
         <Spanish>Los [COLOR_UNIT_TEXT]Agricultores expertos[COLOR_REVERT] son inestimables si tenéis muchas bocas que alimentar y poca tierra para hacerlo. Producirán muchos más [COLOR_HIGHLIGHT_TEXT]Alimentos[COLOR_REVERT] que un Colono normal asignado a la profesión de Agricultor.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_FERMENTATOR</Tag>
-        <English>
-            <Text>Master Drier:Master Driers</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </English>
-        <French>
-            <Text>Maître torréfacteur:Maître torréfacteurs</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Meister-Fermentierer:Meister-Fermentierer</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Master Fermentator:Master Fermentator</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Master Fermentator:Master Fermentator</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_FERMENTATOR_PEDIA</Tag>
-        <English>After the coffee berries are picked, the green coffee is processed by the wet method, where berries are fermented to produce a mild coffee.[NEWLINE]Beans are sorted for ripeness and the flesh of the beans is removed.[NEWLINE]Beans are then fermented to remove the oily mucilage.[NEWLINE]When fermentation is finished, the beans are washed with lots of fresh water to remove the fermentation residue, causing massive amounts of coffee wastewater.[NEWLINE]Finally the seeds are dried.</English>
-        <French>Après la cueillette des baies de café, le café vert est traité par la méthode humide, où les baies sont fermentées pour produire un café doux. Les grains sont triés en fonction de leur maturité et la chair des grains est retirée. Les grains sont ensuite fermentés pour éliminer la couche visqueuse de mucilage encore présente sur le grain. Lorsque la fermentation est terminée, les grains sont lavés et séchés. Ils sont ensuite triés en fonction de leur maturité et de leur couleur. Le plus souvent, la chair de la baie est enlevée, généralement par machine, et les graines - généralement appelées haricots - sont fermentées pour enlever la couche visqueuse de mucilage encore présente sur le haricot. Lorsque la fermentation est terminée, les grains sont lavés avec de grandes quantités d'eau douce pour éliminer le résidu de fermentation, ce qui génère des quantités massives d'eaux usées de café. Enfin, les graines sont séchées.</French>
-        <German>Nach dem Pflücken der Kaffeebeeren werden diese fermentiert, um die schleimige Schicht, die sich noch auf der Kaffeebohne befindet, zu entfernen. Ist die Fermentation beendet, werden die Bohnen gewaschen und getrocknet. Danach werden sie nach Reifegrad und Farbe sortiert und meist maschinell das Fruchtfleisch der Beere entfernt. Die Kerne - meist Bohnen genannt - werden dann fermentiert, um die noch vorhandene schleimige Schicht der Bohne zu entfernen. Nach Beendigung der Fermentation werden die Bohnen mit großen Mengen Frischwasser gewaschen, um die Fermentationsrückstände zu entfernen, wodurch große Mengen an Kaffeeabwasser entstehen. Schließlich werden die Samen getrocknet.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_FERMENTATOR_STRATEGY</Tag>
-        <English>[COLOR_UNIT_TEXT]Master driers[COLOR_REVERT] are proficient in drying [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] and [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK] to make [LINK=YIELD_COCOA]cocoa[\LINK] and [LINK=YIELD_COFFEE]coffee[\LINK] out of them.[NEWLINE]When assigned to the [LINK=PROFESSION_COCOA_DRIER]cocoa drier[\LINK] or [LINK=PROFESSION_COFFEE_DRIER]coffee drier[\LINK] profession, they are capable of turning out double the amount of either resource in the same amount of time it would take a regular colonist.[PARAGRAPH:1]Master driers can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
-        <French>Les [COLOR_UNIT_TEXT]Maîtres torrefacteurs[COLOR_REVERT] produisent deux fois plus de [COLOR_HIGHLIGHT_TEXT]café torréfié ou cacao[COLOR_REVERT] depuis les [COLOR_HIGHLIGHT_TEXT]grains de cafés ou fèves de cacao[COLOR_REVERT].</French>
-        <German>[COLOR_UNIT_TEXT]Meister-Fermentierer[COLOR_REVERT] verarbeiten doppelt soviele [COLOR_HIGHLIGHT_TEXT]Kaffeebeeren[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Kakaofrüchte[COLOR_REVERT] zu getrocknetem Kaffee bzw. Kakao, wie andere Kolonisten.[PARAGRAPH:1]Meister-Fermentierer können in [LINK=CONCEPT_EUROPE]Europa[\LINK] rekrutiert werden, und sie können auch in einer Kolonie mit einem [LINK=BUILDING_COLLEGE]College[\LINK] oder einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_FISHERMAN</Tag>
         <English>Expert Fisherman:Expert Fishermen</English>
         <French>

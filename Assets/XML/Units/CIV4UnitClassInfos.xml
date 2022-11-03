@@ -297,14 +297,9 @@
             <DefaultUnit>UNIT_DYER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
-            <Type>UNITCLASS_FERMENTATOR</Type>
-            <Description>TXT_KEY_UNITCLASS_FERMENTATOR</Description>
-            <DefaultUnit>UNIT_FERMENTATOR</DefaultUnit>
-        </UnitClassInfo>
-        <UnitClassInfo>
-            <Type>UNITCLASS_PEANUT_ROASTER</Type>
-            <Description>TXT_KEY_UNITCLASS_PEANUT_ROASTER</Description>
-            <DefaultUnit>UNIT_PEANUT_ROASTER</DefaultUnit>
+            <Type>UNITCLASS_ROASTER</Type>
+            <Description>TXT_KEY_UNITCLASS_ROASTER</Description>
+            <DefaultUnit>UNIT_ROASTER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_POTTER</Type>

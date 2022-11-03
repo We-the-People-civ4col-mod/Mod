@@ -901,11 +901,11 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-        	<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+            <SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
             <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
-            <Type>ART_DEF_UNIT_FERMENTATOR</Type>
+            <Type>ART_DEF_UNIT_ROASTER</Type>
             <Button>,Art/colonization_atlas_units_two.dds,4,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/city_management/Master_Coffee_Trader.dds</FullLengthIcon>
             <fScale>0.50</fScale>
@@ -920,7 +920,7 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-        	<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+            <SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
             <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
@@ -17543,23 +17543,6 @@
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Master_Weaver/Master_Weaver.nif</NIF>
             <KFM>Art/Units/Master_Weaver/Master_Weaver.kfm</KFM>
-            <fBattleDistance>0.35</fBattleDistance>
-            <fRangedDeathTime>0.31</fRangedDeathTime>
-            <bActAsRanged>0</bActAsRanged>
-            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-            <AudioRunSounds>
-                <AudioRunTypeLoop/>
-                <AudioRunTypeEnd/>
-            </AudioRunSounds>
-        </UnitArtInfo>
-        <UnitArtInfo>
-            <Type>ART_DEF_UNIT_PEANUT_ROASTER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Master_Peanut_Roaster_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Peanut_Roaster_Europe.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Peanut_Roaster/whale_oil_cook1.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Peanut_Roaster/whale_oil_cook1.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>

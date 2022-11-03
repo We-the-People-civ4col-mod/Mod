@@ -582,9 +582,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COCOA_DRIER_STRATEGY</Tag>
-        <English>Units working in the [LINK=BUILDING_WAREHOUSE]storage house[\LINK] or one of its upgrades can take up the [COLOR_UNIT_TEXT]cocoa drier[COLOR_REVERT] profession. Cocoa driers produce [LINK=YIELD_COCOA]cocoa[\LINK] from [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK]. Assigning a [LINK=UNIT_FERMENTATOR]master drier[\LINK] to this job will generate twice as much cocoa, as long as enough cocoa pods are in stock.</English>
+        <English>Units working in the [LINK=BUILDING_WAREHOUSE]storage house[\LINK] or one of its upgrades can take up the [COLOR_UNIT_TEXT]cocoa drier[COLOR_REVERT] profession. Cocoa driers produce [LINK=YIELD_COCOA]cocoa[\LINK] from [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK]. Assigning a [LINK=UNIT_ROASTER]master roaster[\LINK] to this job will generate twice as much cocoa, as long as enough cocoa pods are in stock.</English>
         <French>Les prairies peuvent toutes produire du [COLOR_HIGHLIGHT_TEXT]Café[COLOR_REVERT] si le colon qui les exploite est assigné à la profession de Planteur de Café. Vos récoltes de Café peuvent être considérablement augmentées en assignant un [COLOR_UNIT_TEXT]Planteur de Café professionnel[COLOR_REVERT] à cette fonction.</French>
-        <German>[COLOR_UNIT_TEXT]Kakaotrockner[COLOR_REVERT] trocknen [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] zu [LINK=YIELD_COCOA]Kakaobohnen[\LINK]. Dieser Prozess ist noch effektiver, wenn Sie dem Beruf einen [LINK=UNIT_FERMENTATOR]Meister-Fermentierer[\LINK] zuweisen.</German>
+        <German>[COLOR_UNIT_TEXT]Kakaotrockner[COLOR_REVERT] trocknen [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] zu [LINK=YIELD_COCOA]Kakaobohnen[\LINK]. Dieser Prozess ist noch effektiver, wenn Sie dem Beruf einen [LINK=UNIT_ROASTER]Meister Röster[\LINK] zuweisen.</German>
         <Italian>Le praterie possono ospitare piantagioni di [COLOR_HIGHLIGHT_TEXT]Caffè[COLOR_REVERT], se assegno il lavoro di coltivatore di Caffè ai coloni che lavorano in quelle caselle. Puoi aumentare ulteriormente la produzione di Caffè assegnando lo stesso lavoro a un [COLOR_UNIT_TEXT]coltivatore esperto di Caffè[COLOR_REVERT].</Italian>
         <Spanish>Las casillas de pradera pueden dar [COLOR_HIGHLIGHT_TEXT]Café[COLOR_REVERT] si asignáis al Colono que trabaja ahí la profesión de Plantador de Café. La cosecha aumentará sustancialmente si ponéis a un [COLOR_UNIT_TEXT]Plantador de Café experto[COLOR_REVERT] en el puesto.</Spanish>
     </TEXT>
@@ -666,13 +666,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COFFEE_DRIER_PEDIA</Tag>
-        <English>TXT_KEY_UNIT_FERMENTATOR_PEDIA</English>
+        <English>TXT_KEY_UNIT_ROASTER_PEDIA</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COFFEE_DRIER_STRATEGY</Tag>
-        <English>Units working in the [LINK=BUILDING_WAREHOUSE]storage house[\LINK] or one of its upgrades can take up the [COLOR_UNIT_TEXT]coffee drier[COLOR_REVERT] profession. Coffee driers produce [LINK=YIELD_COFFEE]coffee[\LINK] from [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK]. Assigning a [LINK=UNIT_FERMENTATOR]master drier[\LINK] to this job will generate twice as much coffee, as long as enough coffee berries are in stock.</English>
-        <French>Les [LINK=UNIT_FERMENTATOR]maîtres torrefacteurs[\LINK] produisent deux fois plus de [LINK=YIELD_COFFEE]café torréfié[\LINK] à partir de [LINK=YIELD_COFFEE_BERRIES]grains de cafés[\LINK].</French>
-        <German>[COLOR_UNIT_TEXT]Kaffeetrockner[COLOR_REVERT] trocknen [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] zu [LINK=YIELD_COFFEE]Rohkaffee[\LINK]. Dieser Prozess ist noch effektiver, wenn Sie dem Beruf einen [LINK=UNIT_FERMENTATOR]Meister-Fermentierer[\LINK] zuweisen.</German>
+        <English>Units working in the [LINK=BUILDING_ROASTER_HOUSE]roaster house[\LINK] or one of its upgrades can take up the [COLOR_UNIT_TEXT]coffee drier[COLOR_REVERT] profession. Coffee driers produce [LINK=YIELD_COFFEE]coffee[\LINK] from [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK]. Assigning a [LINK=UNIT_ROASTER]master roasters[\LINK] to this job will generate twice as much coffee, as long as enough coffee berries are in stock.</English>
+        <French>Les [LINK=UNIT_ROASTER]maîtres rostaires[\LINK] produisent deux fois plus de [LINK=YIELD_COFFEE]café torréfié[\LINK] à partir de [LINK=YIELD_COFFEE_BERRIES]grains de cafés[\LINK].</French>
+        <German>[LINK=UNIT_ROASTER]Meister Röster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] zu [LINK=YIELD_COFFEE]Kaffee[\LINK]. Dieser Prozess ist noch effektiver, wenn Sie dem Beruf einen [LINK=UNIT_ROASTER]Meister Röster[\LINK] zuweisen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COFFEE_PLANTER</Tag>

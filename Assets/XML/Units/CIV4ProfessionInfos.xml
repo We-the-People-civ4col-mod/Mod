@@ -1803,7 +1803,7 @@
             </YieldsConsumed>
             <Button>,Art/colonization_atlas_professions_bonus.dds,3,5</Button>
             <bUseLbD>1</bUseLbD>
-            <ExpertUnit>UNITCLASS_FERMENTATOR</ExpertUnit>
+            <ExpertUnit>UNITCLASS_ROASTER</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
@@ -1842,7 +1842,7 @@
             </YieldsConsumed>
             <Button>,Art/colonization_atlas_professions_bonus.dds,4,5</Button>
             <bUseLbD>1</bUseLbD>
-            <ExpertUnit>UNITCLASS_FERMENTATOR</ExpertUnit>
+            <ExpertUnit>UNITCLASS_ROASTER</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
@@ -2944,7 +2944,7 @@
             </YieldsConsumed>
             <Button>Art/interface/buttons/New_Profession_Buttons/Peanut_Trader.dds</Button>
             <bUseLbD>1</bUseLbD>
-            <ExpertUnit>UNITCLASS_PEANUT_ROASTER</ExpertUnit>
+            <ExpertUnit>UNITCLASS_ROASTER</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>

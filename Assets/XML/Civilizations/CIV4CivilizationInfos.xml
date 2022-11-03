@@ -6131,10 +6131,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -7243,10 +7239,6 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_COFFEE_PLANTER</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -8365,10 +8357,6 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_COFFEE_PLANTER</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -9493,10 +9481,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -10617,10 +10601,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -11732,10 +11712,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -12844,10 +12820,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -13953,10 +13925,6 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_COFFEE_PLANTER</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -15089,10 +15057,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -16214,10 +16178,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -17325,10 +17285,6 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_COFFEE_PLANTER</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -18463,10 +18419,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -19576,10 +19528,6 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_COFFEE_PLANTER</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -20694,10 +20642,6 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_COFFEE_PLANTER</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -21816,10 +21760,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -22932,10 +22872,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -24045,10 +23981,6 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_COFFEE_PLANTER</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -25173,10 +25105,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -26266,10 +26194,6 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_COFFEE_PLANTER</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -27394,10 +27318,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -28505,10 +28425,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -29609,10 +29525,6 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_COFFEE_PLANTER</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -30722,10 +30634,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -31820,10 +31728,6 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_COFFEE_PLANTER</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -32938,10 +32842,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -34049,10 +33949,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -35154,10 +35050,6 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_COFFEE_PLANTER</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -36264,10 +36156,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -37371,10 +37259,6 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
                     <UnitClassType>UNITCLASS_BLACKSMITH</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -38469,10 +38353,6 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_COFFEE_PLANTER</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -39685,10 +39565,6 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_COFFEE_PLANTER</UnitClassType>
-                    <UnitType>NONE</UnitType>
-                </Unit>
-                <Unit>
-                    <UnitClassType>UNITCLASS_FERMENTATOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>

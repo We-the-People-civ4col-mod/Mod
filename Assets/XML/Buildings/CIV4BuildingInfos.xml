@@ -12332,11 +12332,7 @@
             </AIRequiredCatchmentAreaTerrains>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_PEANUT_ROASTER</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
+                    <eUnitClass>UNITCLASS_ROASTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
                 <AIUnitClassWeight>
@@ -12447,11 +12443,7 @@
             </BuildingClassNeededs>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_PEANUT_ROASTER</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
+                    <eUnitClass>UNITCLASS_ROASTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
                 <AIUnitClassWeight>
@@ -12575,11 +12567,7 @@
             </BuildingClassNeededs>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_PEANUT_ROASTER</eUnitClass>
-                    <iWeight>50</iWeight>
-                </AIUnitClassWeight>
-                <AIUnitClassWeight>
-                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
+                    <eUnitClass>UNITCLASS_ROASTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
                 <AIUnitClassWeight>

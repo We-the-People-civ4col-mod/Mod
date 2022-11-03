@@ -2430,22 +2430,22 @@
         <German>"[COLOR_SELECTED_TEXT]Gold, Herr Gouverneur, Gold, die Geldsorgen der Kolonie sind erledigt![COLOR_REVERT]" platzt der Sekretär aufgeregt herein. "[COLOR_SELECTED_TEXT]Herr Gouverneur, dies hier ist der Held, der die Goldader gefunden hat.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ha, hm,[COLOR_REVERT]" macht der Gouverneur. "[COLOR_SELECTED_TEXT]Das ist ja wunderbar. Kommt herein und nehmnt eine Erfrischung zu Euch und dann erzählt mir alles über den Fund. Wie groß ist die Goldader?[COLOR_REVERT]"[NEWLINE][NEWLINE]Und zu dem Sektretär gewandt "[COLOR_SELECTED_TEXT]der Buchhalter soll kommen und schickt nach dem Geologen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Vater, wie wunderschön! Als erstes möchte ich eine neue Halskette. Und dann einen Armreif und...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ruhig, mein Kind,[COLOR_REVERT]" unterbricht sie der genervte Vater, "[COLOR_SELECTED_TEXT]das Gold wird nach Europa verschifft.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aber, Herr Gouverneur, für eine neue Halskette sollte es schon noch reichen...[COLOR_REVERT]", lächelt der Sektretär die Tochter des Gouverneurs anzüglich zu.[NEWLINE][NEWLINE]</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_ACHIEVE_THREE_FERMENTATOR</Tag>
-        <English>Three Master Driers</English>
+        <Tag>TXT_KEY_ACHIEVE_THREE_ROASTER</Tag>
+        <English>Three Master Roasters</English>
         <French>Trois torréfacteurs</French>
-        <German>Drei Meister-Fermentierer</German>
+        <German>Drei Meister Röster</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_ACHIEVE_THREE_FERMENTATOR_HEAD</Tag>
-        <English>Coffee and cocoa</English>
+        <Tag>TXT_KEY_ACHIEVE_THREE_ROASTER_HEAD</Tag>
+        <English>Coffee, cocoa and peanuts</English>
         <French>Trois torréfacteurs</French>
-        <German>Kaffee und Kakao</German>
+        <German>Kaffee, Kakao und Erdnüsse</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_ACHIEVE_THREE_FERMENTATOR_TEXT</Tag>
-        <English>"[COLOR_SELECTED_TEXT]Bring me more of that kind of berry next time[COLOR_REVERT]", the fermenter points to the sacks filled to the brim with fresh coffee berries. "[COLOR_SELECTED_TEXT]They're the best quality.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Now we can process twice as much of the cocoa pods[COLOR_REVERT]", says the other, pleased. "[COLOR_SELECTED_TEXT]The new warehouse plus learning from our last batch means that we can now produce the best product for Europe, but there will also be enough for our own colony too.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <Tag>TXT_KEY_ACHIEVE_THREE_ROASTER_TEXT</Tag>
+        <English>"[COLOR_SELECTED_TEXT]Bring me more of that kind of berry next time[COLOR_REVERT]", the roaster points to the sacks filled to the brim with fresh coffee berries. "[COLOR_SELECTED_TEXT]They're the best quality.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Now we can process twice as much of the cocoa pods[COLOR_REVERT]", says the other, pleased. "[COLOR_SELECTED_TEXT]The new warehouse plus learning from our last batch means that we can now produce the best product for Europe, but there will also be enough for our own colony too.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vous disposez maintenant de torréfacteurs expérimentés. Leur travail permet dorénavant de produire en masse du cacao et du café torréfiés.[NEWLINE][NEWLINE]</French>
-        <German>"[COLOR_SELECTED_TEXT]Bringt mir das nächste Mal noch mehr von diesen Bohnen hier[COLOR_REVERT]", deutet die Fermentiererin auf die prall mit frischen Kaffeebeeren gefüllten Säcke. "[COLOR_SELECTED_TEXT]Die haben die beste Qualität.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Und von den Kakaofrüchten können wir nun auch doppelt so viel verarbeiten[COLOR_REVERT]", freut sich die andere. "[COLOR_SELECTED_TEXT]Das neue Lagerhaus und die Erfahrungen aus der letzten Produktion lassen uns nun beste Ware für Europa herstellen, aber für die Kolonie fällt sicher auch noch genug ab...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+        <German>"[COLOR_SELECTED_TEXT]Bringt mir das nächste Mal noch mehr von diesen Bohnen hier[COLOR_REVERT]", deutet die Röster auf die prall mit frischen Kaffeebeeren gefüllten Säcke. "[COLOR_SELECTED_TEXT]Die haben die beste Qualität.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Und von den Kakaofrüchten können wir nun auch doppelt so viel verarbeiten[COLOR_REVERT]", freut sich die andere. "[COLOR_SELECTED_TEXT]Das neue Lagerhaus und die Erfahrungen aus der letzten Produktion lassen uns nun beste Ware für Europa herstellen, aber für die Kolonie fällt sicher auch noch genug ab...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_CUSTOM_OFFICE</Tag>

@@ -33609,7 +33609,7 @@
             <iRandomGold>0</iRandomGold>
             <iCulture>0</iCulture>
             <iHealth>0</iHealth>
-            <UnitClass>UNITCLASS_FERMENTATOR</UnitClass>
+            <UnitClass>UNITCLASS_ROASTER</UnitClass>
             <iNumFreeUnits>1</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
@@ -33802,7 +33802,7 @@
             <iRandomGold>0</iRandomGold>
             <iCulture>0</iCulture>
             <iHealth>0</iHealth>
-            <UnitClass>UNITCLASS_FERMENTATOR</UnitClass>
+            <UnitClass>UNITCLASS_ROASTER</UnitClass>
             <iNumFreeUnits>1</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
