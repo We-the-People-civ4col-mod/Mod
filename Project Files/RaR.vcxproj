@@ -89,6 +89,7 @@
     <ClCompile Include="DLLSources\CyDataInterface.cpp" />
     <ClCompile Include="DLLSources\CyUserSettings.cpp" />
     <ClCompile Include="DLLSources\CyUserSettingsInterface.cpp" />
+    <ClCompile Include="DLLSources\KmodPathFinder.cpp" />
     <ClCompile Include="DLLSources\Profile.cpp" />
     <ClCompile Include="DLLSources\TestEnumMap.cpp" />
     <ClCompile Include="DLLSources\CvPlotFunctions.cpp" />
@@ -235,6 +236,7 @@
     <ClInclude Include="DLLSources\EnumMapSpecializationInt.h" />
     <ClInclude Include="DLLSources\EnumMapSpecialization.h" />
     <ClInclude Include="DLLSources\EnumMapSpecializationClass.h" />
+    <ClInclude Include="DLLSources\KmodPathFinder.h" />
     <ClInclude Include="DLLSources\NetworkDataPacking.h" />
     <ClInclude Include="DLLSources\Profile.h" />
     <ClInclude Include="DLLSources\CvMacros.h" />

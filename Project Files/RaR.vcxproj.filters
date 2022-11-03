@@ -448,6 +448,9 @@
     <ClCompile Include="DLLSources\BetterBTSAI.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\KmodPathFinder.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -812,7 +815,11 @@
     </ClInclude>
     <ClInclude Include="DLLSources\NetworkDataPacking.h">
       <Filter>CV\Header</Filter>
+    </ClInclude>
     <ClInclude Include="DLLSources\BetterBTSAI.h">
+      <Filter>CV\CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\KmodPathFinder.h">
       <Filter>CV\CPP</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\CvString.h">
