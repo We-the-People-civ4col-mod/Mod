@@ -1501,4 +1501,8 @@
 		<DefineName>PERCENT_CHANCE_PER_HAPPINESS_DOMESTIC_DEMAND_EVENTS</DefineName>
 		<iDefineIntVal>5</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>USE_CLASSIC_MOVEMENT_SYSTEM</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
 </Civ4Defines>
