@@ -322,6 +322,20 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
+			<SoundID>SONG_WTP_23</SoundID>
+			<Filename>Sounds/Soundtrack/Guardian_Angel</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SONG_WTP_24</SoundID>
+			<Filename>Sounds/Soundtrack/Last_Butterfly</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
 			<SoundID>SONG_OPENING_SLIDESHOW</SoundID>
 			<Filename>Sounds/Soundtrack/TitleMusic</Filename>
 			<LoadType>STREAMED</LoadType>
