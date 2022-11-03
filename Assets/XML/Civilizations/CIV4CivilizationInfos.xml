@@ -6174,7 +6174,19 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+ 				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>				
+				<Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -7283,6 +7295,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -8401,6 +8425,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -9524,6 +9560,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -10644,6 +10692,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -11755,6 +11815,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -12863,6 +12935,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -13969,6 +14053,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -15100,6 +15196,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -16221,6 +16329,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -17329,6 +17449,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -18462,6 +18594,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -19572,6 +19716,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -20686,6 +20842,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -21803,6 +21971,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -22915,6 +23095,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -24025,6 +24217,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -25148,6 +25352,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -26238,6 +26454,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -27361,6 +27589,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -28468,6 +28708,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -29569,6 +29821,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -30677,6 +30941,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -31772,6 +32048,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -32885,6 +33173,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -33992,6 +34292,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -35094,6 +35406,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -36199,6 +36523,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -37302,6 +37638,18 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
@@ -38397,6 +38745,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -39609,6 +39969,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+				<Unit>
+                    <UnitClassType>UNITCLASS_BAKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_FIREWORKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>

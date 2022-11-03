@@ -819,6 +819,93 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+	<!-- CHARCOAL_BURNER -->	
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_CHARCOAL_BURNER</Tag>
+        <English>Master Charcoal Burner</English>
+        <German>
+            <Text>Meister Köhler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CHARCOAL_BURNER</Tag>
+        <English>Master Charcoal Burner</English>
+        <German>
+            <Text>Meister Köhler</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CHARCOAL_BURNER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_CHARCOAL_BURNER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+	<!-- BAKER -->	
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_BAKER</Tag>
+        <English>Master Baker</English>
+        <German>
+            <Text>Meister Bäcker</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BAKER</Tag>
+        <English>Master Baker</English>
+        <German>
+            <Text>Meister Bäcker</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BAKER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BAKER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>	
+	<!-- FIREWORKER -->	
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_FIREWORKER</Tag>
+        <English>Master Fireworker</English>
+        <German>
+            <Text>Meister Feuerwerker</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FIREWORKER</Tag>
+        <English>Master Fireworker</English>
+        <German>
+            <Text>Meister Feuerwerker</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FIREWORKER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FIREWORKER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>	
     <!-- MESTIZZO -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MESTIZZO</Tag>

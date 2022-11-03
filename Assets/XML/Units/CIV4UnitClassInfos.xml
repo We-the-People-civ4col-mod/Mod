@@ -237,6 +237,16 @@
             <DefaultUnit>UNIT_GUNSMITH</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_CHARCOAL_BURNER</Type>
+            <Description>TXT_KEY_UNITCLASS_CHARCOAL_BURNER</Description>
+            <DefaultUnit>UNIT_CHARCOAL_BURNER</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_FIREWORKER</Type>
+            <Description>TXT_KEY_UNITCLASS_FIREWORKER</Description>
+            <DefaultUnit>UNIT_FIREWORKER</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_FUR_TRADER</Type>
             <Description>TXT_KEY_UNITCLASS_FUR_TRADER</Description>
             <DefaultUnit>UNIT_FUR_TRADER</DefaultUnit>
@@ -310,6 +320,11 @@
             <Type>UNITCLASS_MILK_MAID</Type>
             <Description>TXT_KEY_UNITCLASS_MILK_MAID</Description>
             <DefaultUnit>UNIT_MILK_MAID</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_BAKER</Type>
+            <Description>TXT_KEY_UNITCLASS_BAKER</Description>
+            <DefaultUnit>UNIT_BAKER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CHEESE_MAKER</Type>

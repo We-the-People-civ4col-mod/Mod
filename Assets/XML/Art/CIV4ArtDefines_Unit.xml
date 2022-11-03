@@ -468,6 +468,23 @@
             </AudioRunSounds>
         </UnitArtInfo>		
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_MASTER_CHARCOAL_BURNER</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,3,2</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Charcoal_Burner.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/units/Settler/Master_Charcoal_Burner/Whale_Oil_Cook1.nif</NIF>
+            <KFM>Art/units/Settler/Master_Charcoal_Burner/Whale_Oil_Cook1.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_DISTILLER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Distiller.dds</FullLengthIcon>
