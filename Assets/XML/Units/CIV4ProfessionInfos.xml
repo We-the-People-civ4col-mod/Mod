@@ -1768,11 +1768,11 @@
             <iLbDLearnLevel>1</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
-            <Type>PROFESSION_COCOA_DRIER</Type>
-            <Description>TXT_KEY_PROFESSION_COCOA_DRIER</Description>
-            <Civilopedia>TXT_KEY_PROFESSION_COCOA_DRIER_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_PROFESSION_COCOA_DRIER_STRATEGY</Strategy>
-            <Help>TXT_KEY_PROFESSION_COCOA_DRIER_HELP</Help>
+            <Type>PROFESSION_COCOA_ROASTER</Type>
+            <Description>TXT_KEY_PROFESSION_COCOA_ROASTER</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_COCOA_ROASTER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_COCOA_ROASTER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_COCOA_ROASTER_HELP</Help>
             <Combat>NONE</Combat>
             <DefaultUnitAI>NONE</DefaultUnitAI>
             <SpecialBuilding>SPECIALBUILDING_ROASTER</SpecialBuilding>
@@ -1807,11 +1807,11 @@
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
-            <Type>PROFESSION_COFFEE_DRIER</Type>
-            <Description>TXT_KEY_PROFESSION_COFFEE_DRIER</Description>
-            <Civilopedia>TXT_KEY_PROFESSION_COFFEE_DRIER_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_PROFESSION_COFFEE_DRIER_STRATEGY</Strategy>
-            <Help>TXT_KEY_PROFESSION_COFFEE_DRIER_HELP</Help>
+            <Type>PROFESSION_COFFEE_ROASTER</Type>
+            <Description>TXT_KEY_PROFESSION_COFFEE_ROASTER</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_COFFEE_ROASTER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_COFFEE_ROASTER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_COFFEE_ROASTER_HELP</Help>
             <Combat>NONE</Combat>
             <DefaultUnitAI>NONE</DefaultUnitAI>
             <SpecialBuilding>SPECIALBUILDING_ROASTER</SpecialBuilding>

@@ -543,9 +543,9 @@
         <German>[COLOR_UNIT_TEXT]Cocasammler[COLOR_REVERT] können [LINK=YIELD_COCA_LEAVES]Cocablätter[\LINK] von Hügeln auf Regionen der [LINK=TERRAIN_SAVANNAH]Savanne[\LINK] sammeln. Der Ertrag ist höher, wenn es auf dem Feld auch die Bonusresource [LINK=BONUS_COCA]Cocapflanzen[\LINK] gibt, und kann noch weiter erhöht werden, wenn man darauf die Geländeverbesserung [LINK=IMPROVEMENT_COLLECTORS_POST2]Cocasammelstelle[\LINK] errichtet. Wenn ein nicht spezialisierter Kolonist lange genug diesen Beruf ausübt, kann er irgendwann zu einem [LINK=UNIT_COCA_COLLECTOR]Erfahrenen Cocasammler[\LINK] werden, der doppelt soviele Cocablätter ernten kann.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PROFESSION_COCOA_DRIER</Tag>
+        <Tag>TXT_KEY_PROFESSION_COCOA_ROASTER</Tag>
         <English>
-            <Text>Cocoa Drier:Cocoa Driers</Text>
+            <Text>Cocoa Roaster:Cocoa Roasters</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -555,34 +555,34 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Kakaotrockner:Kakaotrockner</Text>
+            <Text>Kakaoröster:Kakaoröster</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Cocoa Drier:Cocoa Driers</Text>
+            <Text>Cocoa Roaster:Cocoa Roasters</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Cocoa Drier:Cocoa Driers</Text>
+            <Text>Cocoa Roaster:Cocoa Roasters</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PROFESSION_COCOA_DRIER_HELP</Tag>
+        <Tag>TXT_KEY_PROFESSION_COCOA_ROASTER_HELP</Tag>
         <English>????</English>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PROFESSION_COCOA_DRIER_PEDIA</Tag>
+        <Tag>TXT_KEY_PROFESSION_COCOA_ROASTER_PEDIA</Tag>
         <English>The first real European knowledge about chocolate came in the form of a beverage which was introduced to the Spanish at their meeting with Moctezuma in the Aztec capital of Tenochtitlan in 1519. Cortés and others noted the vast quantities of this beverage that the Aztec emperor consumed, and how it was carefully whipped by his attendants beforehand. Examples of cacao beans along with other agricultural products were brought back to Spain at that time, but it seems that the beverage made from cacao was introduced to the Spanish court in 1544 by Kekchi Maya nobles brought from the New World to Spain by Dominican friars to meet Prince Philip. Within a century, the culinary and medical uses of chocolate had spread to France, England and elsewhere in Western Europe. Demand for this beverage led the French to establish cacao plantations in the Caribbean.</English>
         <French>La première véritable connaissance européenne du chocolat est venue sous la forme d'une boisson qui a été présentée aux Espagnols lors de leur rencontre avec Moctezuma dans la capitale aztèque de Tenochtitlan en 1519. Cortés et d'autres ont noté les grandes quantités de cette boisson que l'empereur aztèque consommait, et la façon dont elle était soigneusement fouettée au préalable par ses serviteurs. Des exemples de fèves de cacao ainsi que d'autres produits agricoles ont été ramenés en Espagne à cette époque, mais il semble que la boisson à base de cacao ait été introduite à la cour espagnole en 1544 par des nobles mayas kekchis amenés du Nouveau Monde en Espagne par des frères dominicains pour rencontrer le prince Philippe. En un siècle, les usages culinaires et médicaux du chocolat se sont répandus en France, en Angleterre et ailleurs en Europe occidentale. La demande de cette boisson a conduit les Français à établir des plantations de cacao dans les Caraïbes.</French>
         <German>Das erste wirkliche europäische Wissen über Schokolade kam in Form eines Getränks, das den Spaniern bei ihrem Treffen mit Moctezuma in der aztekischen Hauptstadt Tenochtitlan im Jahr 1519 vorgestellt wurde. Cortés und andere bemerkten die riesigen Mengen dieses Getränks, die der Aztekenkaiser konsumierte, und wie es zuvor von seinen Dienern sorgfältig aufgeschlagen wurde. Beispiele von Kakaofrüchten wurden zusammen mit anderen landwirtschaftlichen Produkten zu dieser Zeit nach Spanien gebracht, aber es scheint, dass das aus Kakao hergestellte Getränk 1544 von Kekchi Maya-Adligen, die von Dominikanermönchen aus der Neuen Welt nach Spanien gebracht wurden, um Prinz Philip zu treffen, am spanischen Hof eingeführt wurde. Innerhalb eines Jahrhunderts verbreitete sich die kulinarische und medizinische Verwendung von Schokolade in Frankreich, England und anderswo in Westeuropa. Die Nachfrage nach diesem Getränk veranlasste die Franzosen, Kakaoplantagen in der Karibik anzulegen.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PROFESSION_COCOA_DRIER_STRATEGY</Tag>
-        <English>Units working in the [LINK=BUILDING_WAREHOUSE]storage house[\LINK] or one of its upgrades can take up the [COLOR_UNIT_TEXT]cocoa drier[COLOR_REVERT] profession. Cocoa driers produce [LINK=YIELD_COCOA]cocoa[\LINK] from [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK]. Assigning a [LINK=UNIT_ROASTER]master roaster[\LINK] to this job will generate twice as much cocoa, as long as enough cocoa pods are in stock.</English>
+        <Tag>TXT_KEY_PROFESSION_COCOA_ROASTER_STRATEGY</Tag>
+        <English>Units working in the [LINK=BUILDING_WAREHOUSE]storage house[\LINK] or one of its upgrades can take up the [COLOR_UNIT_TEXT]cocoa roaster[COLOR_REVERT] profession. cocoa roasters produce [LINK=YIELD_COCOA]cocoa[\LINK] from [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK]. Assigning a [LINK=UNIT_ROASTER]master roaster[\LINK] to this job will generate twice as much cocoa, as long as enough cocoa pods are in stock.</English>
         <French>Les prairies peuvent toutes produire du [COLOR_HIGHLIGHT_TEXT]Café[COLOR_REVERT] si le colon qui les exploite est assigné à la profession de Planteur de Café. Vos récoltes de Café peuvent être considérablement augmentées en assignant un [COLOR_UNIT_TEXT]Planteur de Café professionnel[COLOR_REVERT] à cette fonction.</French>
         <German>[COLOR_UNIT_TEXT]Kakaotrockner[COLOR_REVERT] trocknen [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] zu [LINK=YIELD_COCOA]Kakaobohnen[\LINK]. Dieser Prozess ist noch effektiver, wenn Sie dem Beruf einen [LINK=UNIT_ROASTER]Meister Röster[\LINK] zuweisen.</German>
         <Italian>Le praterie possono ospitare piantagioni di [COLOR_HIGHLIGHT_TEXT]Caffè[COLOR_REVERT], se assegno il lavoro di coltivatore di Caffè ai coloni che lavorano in quelle caselle. Puoi aumentare ulteriormente la produzione di Caffè assegnando lo stesso lavoro a un [COLOR_UNIT_TEXT]coltivatore esperto di Caffè[COLOR_REVERT].</Italian>
@@ -633,9 +633,9 @@
         <German>Auf [LINK=FEATURE_JUNGLE]Dschungelfeldern[\LINK] können Bürger wertvollen [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] für den Export gewinnen. Setzt man im Stadtbildschirm einen Bürger dort zur Arbeit ein, kann man ihm den Beruf des [COLOR_HIGHLIGHT_TEXT]Kakaopflückers[COLOR_REVERT] zuweisen.[PARAGRAPH:2][LINK=UNIT_COCOA_PLANTER]Erfahrene Kakaopflücker[\LINK] sind im Beruf des Kakaopflückers besonders effektiv, denn sie verdoppeln die Erträge.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PROFESSION_COFFEE_DRIER</Tag>
+        <Tag>TXT_KEY_PROFESSION_COFFEE_ROASTER</Tag>
         <English>
-            <Text>Coffee Drier:Coffee Driers</Text>
+            <Text>coffee roaster:coffee roasters</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
@@ -650,27 +650,27 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Coffee Drier:Coffee Driers</Text>
+            <Text>coffee roaster:coffee roasters</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Coffee Drier:Coffee Driers</Text>
+            <Text>coffee roaster:coffee roasters</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PROFESSION_COFFEE_DRIER_HELP</Tag>
+        <Tag>TXT_KEY_PROFESSION_COFFEE_ROASTER_HELP</Tag>
         <English>????</English>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PROFESSION_COFFEE_DRIER_PEDIA</Tag>
+        <Tag>TXT_KEY_PROFESSION_COFFEE_ROASTER_PEDIA</Tag>
         <English>TXT_KEY_UNIT_ROASTER_PEDIA</English>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PROFESSION_COFFEE_DRIER_STRATEGY</Tag>
-        <English>Units working in the [LINK=BUILDING_ROASTER_HOUSE]roaster house[\LINK] or one of its upgrades can take up the [COLOR_UNIT_TEXT]coffee drier[COLOR_REVERT] profession. Coffee driers produce [LINK=YIELD_COFFEE]coffee[\LINK] from [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK]. Assigning a [LINK=UNIT_ROASTER]master roasters[\LINK] to this job will generate twice as much coffee, as long as enough coffee berries are in stock.</English>
+        <Tag>TXT_KEY_PROFESSION_COFFEE_ROASTER_STRATEGY</Tag>
+        <English>Units working in the [LINK=BUILDING_ROASTER_HOUSE]roaster house[\LINK] or one of its upgrades can take up the [COLOR_UNIT_TEXT]coffee roaster[COLOR_REVERT] profession. coffee roasters produce [LINK=YIELD_COFFEE]coffee[\LINK] from [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK]. Assigning a [LINK=UNIT_ROASTER]master roasters[\LINK] to this job will generate twice as much coffee, as long as enough coffee berries are in stock.</English>
         <French>Les [LINK=UNIT_ROASTER]maîtres rostaires[\LINK] produisent deux fois plus de [LINK=YIELD_COFFEE]café torréfié[\LINK] à partir de [LINK=YIELD_COFFEE_BERRIES]grains de cafés[\LINK].</French>
         <German>[LINK=UNIT_ROASTER]Meister Röster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] zu [LINK=YIELD_COFFEE]Kaffee[\LINK]. Dieser Prozess ist noch effektiver, wenn Sie dem Beruf einen [LINK=UNIT_ROASTER]Meister Röster[\LINK] zuweisen.</German>
     </TEXT>
