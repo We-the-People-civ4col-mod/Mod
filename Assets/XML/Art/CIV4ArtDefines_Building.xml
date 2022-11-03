@@ -2587,7 +2587,7 @@
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.2</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
-            <NIF>Art/Structures/Buildings/ROASTER/Peanut_Trader_01.nif</NIF>
+            <NIF>Art/Structures/Buildings/Peanut_Roaster/Peanut_Trader_01.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Peanut_Trader_House_Button.dds</Button>
         </BuildingArtInfo>
@@ -2599,7 +2599,7 @@
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.2</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
-            <NIF>Art/Structures/Buildings/ROASTER/Peanut_Trader_02.nif</NIF>
+            <NIF>Art/Structures/Buildings/Peanut_Roaster/Peanut_Trader_02.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Peanut_Trader_Shop_Button.dds</Button>
         </BuildingArtInfo>
@@ -2611,7 +2611,7 @@
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.2</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
-            <NIF>Art/Structures/Buildings/ROASTER/Peanut_Trader_03.nif</NIF>
+            <NIF>Art/Structures/Buildings/Peanut_Roaster/Peanut_Trader_03.nif</NIF>
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Peanut_Trader_Post_Button.dds</Button>
         </BuildingArtInfo>
