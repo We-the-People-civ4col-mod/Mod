@@ -1466,7 +1466,7 @@
 	</Define>
 	<!-- DOMESTIC DEMAND EVENTS -->
 	<Define>
-		<DefineName>ENABLE_DOMESTIC_DEMAND_EVENTS </DefineName>
+		<DefineName>ENABLE_DOMESTIC_DEMAND_EVENTS</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
 	<Define>
