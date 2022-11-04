@@ -717,20 +717,20 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DISTILLERS_HOUSE</Tag>
-        <English>Rum Distiller's House</English>
+        <English>Distiller's House</English>
         <French>
             <Text>Atelier du distillateur:Ateliers de distillateur</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Rumbrennerei</German>
+        <German>Brennerei</German>
         <Italian>
-            <Text>Casa del distillatore di rum</Text>
+            <Text>Casa del distillatore</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Casa del destilador de ron:Casas del destilador de ron</Text>
+            <Text>Casa del destilador:Casas del destilador</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -745,28 +745,28 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DISTILLERS_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_BUILDING_TEXT]rum distiller's house[COLOR_REVERT] represents the most basic form of rum production available. A colonist working here as a [LINK=PROFESSION_DISTILLER]distiller[\LINK] will create [LINK=YIELD_RUM]rum[\LINK] by consuming [LINK=YIELD_SUGAR]sugar[\LINK]. Output can be increased greatly by assigning a [LINK=UNIT_DISTILLER]master distiller[\LINK] to work here or by upgrading to a [LINK=BUILDING_RUM_DISTILLERY]rum distillery[\LINK].</English>
+        <English>The [COLOR_BUILDING_TEXT]distiller's house[COLOR_REVERT] represents the most basic form of rum production available. A colonist working here as a [LINK=PROFESSION_DISTILLER]distiller[\LINK] will create [LINK=YIELD_RUM]rum[\LINK] by consuming [LINK=YIELD_SUGAR]sugar[\LINK]. Output can be increased greatly by assigning a [LINK=UNIT_DISTILLER]master distiller[\LINK] to work here or by upgrading to a [LINK=BUILDING_RUM_DISTILLERY]rum distillery[\LINK].</English>
         <French>L'[COLOR_HIGHLIGHT_TEXT]Atelier du distillateur[COLOR_REVERT] est le bâtiment de base pour la production de rhum. Les colons avec pour profession distillateur produisent du [COLOR_HIGHLIGHT_TEXT]rhum[COLOR_REVERT] à partir de [COLOR_HIGHLIGHT_TEXT]sucre[COLOR_REVERT]. Assignez des [COLOR_UNIT_TEXT]maîtres distillateurs[COLOR_REVERT] pour augmenter votre production.</French>
-        <German>Baumwolle, Felle, Tabak und Zucker kann man entweder direkt verkaufen oder sie in weiterverarbeitenden Betrieben zu teureren Fertigwaren veredeln.[PARAGRAPH:2]Die [COLOR_BUILDING_TEXT]Rumbrennerei[COLOR_REVERT] ist das einfachste der Gebäude, die [COLOR_HIGHLIGHT_TEXT]Rum[COLOR_REVERT] produzieren. Wenn zum Beispiel ein Freier Kolonist hier im Beruf des Rumbrenners arbeitet, kann die Rumbrennerei pro Runde drei Einheiten [COLOR_HIGHLIGHT_TEXT]Zucker[COLOR_REVERT] zu drei Einheiten Rum verarbeiten. Der Bau eines [COLOR_BUILDING_TEXT]Rumbrennerbetriebs[COLOR_REVERT] oder die Beschäftigung von [COLOR_UNIT_TEXT]Brennermeistern[COLOR_REVERT] verdoppeln die Produktion. Nach dem Bau einer [COLOR_BUILDING_TEXT]Rumfabrik[COLOR_REVERT] gewinnen die Arbeiter aus der selben Menge Rohstoffe 50% mehr Rum.[PARAGRAPH:2]Ist weniger Rohstoff im Lager, als man braucht, wird entsprechend weniger von der Fertigware produziert. Ist mehr Rohstoff im Lager, als verarbeitet werden kann, bleibt der Rest im Lager.[PARAGRAPH:2]Tipp: Es ist oft, aber nicht immer sinnvoll, Rohstoffe zu veredeln. Man sollte erst prüfen, wie hoch die aktuellen Verkaufspreise von Rohstoff und Fertigprodukt sind. Oft genügt es, zu Spielbeginn die wenigen Bürger, die einem zur Verfügung stehen, zur Rohstoffgewinnung zu nutzen. In der späten Spielphase, wenn die Verkaufspreise für Rohstoffe aufgrund des hohen Marktangebotes gesunken sind, empfiehlt es sich dagegen zumeist, auf den Verkauf veredelter Produkte umzusteigen.</German>
-        <Italian>La [COLOR_BUILDING_TEXT]casa del distillatore di rum[COLOR_REVERT] rappresenta la forma più elementare di impianto di produzione di [COLOR_HIGHLIGHT_TEXT]rum[COLOR_REVERT]. Un [COLOR_UNIT_TEXT]libero colono[COLOR_REVERT] che ci lavora crea tre unità di [COLOR_HIGHLIGHT_TEXT]rum[COLOR_REVERT] per turno, al costo di tre unità di zucchero. Puoi aumentare di molto la produzione mandandoci a lavorare un [COLOR_UNIT_TEXT]mastro distillatore[COLOR_REVERT] oppure trasformandola in una [COLOR_BUILDING_TEXT]distilleria di rum[COLOR_REVERT].</Italian>
-        <Spanish>La [COLOR_BUILDING_TEXT]Casa del destilador de ron[COLOR_REVERT] representa la forma más básica de instalación productora de [COLOR_HIGHLIGHT_TEXT]Ron[COLOR_REVERT] que hay disponible. Un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] que trabaje aquí producirá tres unidades de [COLOR_HIGHLIGHT_TEXT]Ron[COLOR_REVERT] por turno al coste de tres de Azúcar. Esta cantidad puede aumentar significativamente si se asigna a un [COLOR_UNIT_TEXT]Maestro destilador[COLOR_REVERT] a trabajar aquí o se moderniza el edificio a una [COLOR_BUILDING_TEXT]Destilería de ron[COLOR_REVERT].</Spanish>
+        <German>Baumwolle, Felle, Tabak und Zucker kann man entweder direkt verkaufen oder sie in weiterverarbeitenden Betrieben zu teureren Fertigwaren veredeln.[PARAGRAPH:2]Die [COLOR_BUILDING_TEXT]Brennerei[COLOR_REVERT] ist das einfachste der Gebäude, die [COLOR_HIGHLIGHT_TEXT]Rum[COLOR_REVERT] produzieren. Wenn zum Beispiel ein Freier Kolonist hier im Beruf des Rumbrenners arbeitet, kann die Rumbrennerei pro Runde drei Einheiten [COLOR_HIGHLIGHT_TEXT]Zucker[COLOR_REVERT] zu drei Einheiten Rum verarbeiten. Der Bau eines [COLOR_BUILDING_TEXT]Rumbrennerbetriebs[COLOR_REVERT] oder die Beschäftigung von [COLOR_UNIT_TEXT]Brennermeistern[COLOR_REVERT] verdoppeln die Produktion. Nach dem Bau einer [COLOR_BUILDING_TEXT]Rumfabrik[COLOR_REVERT] gewinnen die Arbeiter aus der selben Menge Rohstoffe 50% mehr Rum.[PARAGRAPH:2]Ist weniger Rohstoff im Lager, als man braucht, wird entsprechend weniger von der Fertigware produziert. Ist mehr Rohstoff im Lager, als verarbeitet werden kann, bleibt der Rest im Lager.[PARAGRAPH:2]Tipp: Es ist oft, aber nicht immer sinnvoll, Rohstoffe zu veredeln. Man sollte erst prüfen, wie hoch die aktuellen Verkaufspreise von Rohstoff und Fertigprodukt sind. Oft genügt es, zu Spielbeginn die wenigen Bürger, die einem zur Verfügung stehen, zur Rohstoffgewinnung zu nutzen. In der späten Spielphase, wenn die Verkaufspreise für Rohstoffe aufgrund des hohen Marktangebotes gesunken sind, empfiehlt es sich dagegen zumeist, auf den Verkauf veredelter Produkte umzusteigen.</German>
+        <Italian>La [COLOR_BUILDING_TEXT]casa del distillatore[COLOR_REVERT] rappresenta la forma più elementare di impianto di produzione di [COLOR_HIGHLIGHT_TEXT]rum[COLOR_REVERT]. Un [COLOR_UNIT_TEXT]libero colono[COLOR_REVERT] che ci lavora crea tre unità di [COLOR_HIGHLIGHT_TEXT]rum[COLOR_REVERT] per turno, al costo di tre unità di zucchero. Puoi aumentare di molto la produzione mandandoci a lavorare un [COLOR_UNIT_TEXT]mastro distillatore[COLOR_REVERT] oppure trasformandola in una [COLOR_BUILDING_TEXT]distilleria di rum[COLOR_REVERT].</Italian>
+        <Spanish>La [COLOR_BUILDING_TEXT]Casa del destilador[COLOR_REVERT] representa la forma más básica de instalación productora de [COLOR_HIGHLIGHT_TEXT]Ron[COLOR_REVERT] que hay disponible. Un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] que trabaje aquí producirá tres unidades de [COLOR_HIGHLIGHT_TEXT]Ron[COLOR_REVERT] por turno al coste de tres de Azúcar. Esta cantidad puede aumentar significativamente si se asigna a un [COLOR_UNIT_TEXT]Maestro destilador[COLOR_REVERT] a trabajar aquí o se moderniza el edificio a una [COLOR_BUILDING_TEXT]Destilería de ron[COLOR_REVERT].</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DISTILLERY</Tag>
-        <English>Rum Distillery</English>
+        <English>Distillery</English>
         <French>
-            <Text>Distillerie de rhum:Distilleries de rhum</Text>
+            <Text>Distillerie:Distilleries</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Rumbrennereibetrieb</German>
+        <German>Brennereibetrieb</German>
         <Italian>
-            <Text>Distilleria di rum</Text>
+            <Text>Distilleria</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Destilería de ron:Destilerías de ron</Text>
+            <Text>Destilería:Destilerías</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -781,11 +781,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DISTILLERY_STRATEGY</Tag>
-        <English>The [COLOR_BUILDING_TEXT]rum distillery[COLOR_REVERT] is the intermediate rum-production building. A colonist working here as a [LINK=PROFESSION_DISTILLER]distiller[\LINK] will produce [LINK=YIELD_RUM]rum[\LINK] per turn using an equal amount of [LINK=YIELD_SUGAR]sugar[\LINK]. This can be increased by upgrading to a [LINK=BUILDING_RUM_FACTORY]rum factory[\LINK] or assigning a [LINK=UNIT_DISTILLER]master distiller[\LINK] to work here.</English>
-        <French>La [COLOR_HIGHLIGHT_TEXT]Distillerie de rhum[COLOR_REVERT] est le bâtiment intermédiaire pour la production de rhum. Les colons avec pour profession distillateur produisent du [COLOR_HIGHLIGHT_TEXT]rhum[COLOR_REVERT] à partir de [COLOR_HIGHLIGHT_TEXT]sucre[COLOR_REVERT]. Assignez des [COLOR_UNIT_TEXT]maîtres distillateurs[COLOR_REVERT] pour augmenter votre production.</French>
-        <German>Baumwolle, Felle, Tabak und Zucker kann man entweder direkt verkaufen oder sie in weiterverarbeitenden Betrieben zu teureren Fertigwaren veredeln.[PARAGRAPH:2]Die [COLOR_BUILDING_TEXT]Rumbrennerei[COLOR_REVERT] ist das einfachste der Gebäude, die [COLOR_HIGHLIGHT_TEXT]Rum[COLOR_REVERT] produzieren. Wenn zum Beispiel ein Freier Kolonist hier im Beruf des Rumbrenners arbeitet, kann die Rumbrennerei pro Runde drei Einheiten [COLOR_HIGHLIGHT_TEXT]Zucker[COLOR_REVERT] zu drei Einheiten Rum verarbeiten. Der Bau eines [COLOR_BUILDING_TEXT]Rumbrennerbetriebs[COLOR_REVERT] oder die Beschäftigung von [COLOR_UNIT_TEXT]Brennermeistern[COLOR_REVERT] verdoppeln die Produktion. Nach dem Bau einer [COLOR_BUILDING_TEXT]Rumfabrik[COLOR_REVERT] gewinnen die Arbeiter aus der selben Menge Rohstoffe 50% mehr Rum.[PARAGRAPH:2]Ist weniger Rohstoff im Lager, als man braucht, wird entsprechend weniger von der Fertigware produziert. Ist mehr Rohstoff im Lager, als verarbeitet werden kann, bleibt der Rest im Lager.[PARAGRAPH:2]Tipp: Es ist oft, aber nicht immer sinnvoll, Rohstoffe zu veredeln. Man sollte erst prüfen, wie hoch die aktuellen Verkaufspreise von Rohstoff und Fertigprodukt sind. Oft genügt es, zu Spielbeginn die wenigen Bürger, die einem zur Verfügung stehen, zur Rohstoffgewinnung zu nutzen. In der späten Spielphase, wenn die Verkaufspreise für Rohstoffe aufgrund des hohen Marktangebotes gesunken sind, empfiehlt es sich dagegen zumeist, auf den Verkauf veredelter Produkte umzusteigen.</German>
-        <Italian>La [COLOR_BUILDING_TEXT]distilleria di rum[COLOR_REVERT] è l'edificio di livello intermedio per la produzione di rum. Un [COLOR_UNIT_TEXT]libero colono[COLOR_REVERT] che lavora in una [COLOR_BUILDING_TEXT]distilleria di rum[COLOR_REVERT] crea sei unità di [COLOR_HIGHLIGHT_TEXT]rum[COLOR_REVERT] a turno, al costo di sei unità di zucchero. Puoi aumentare ulteriormente tale numero passando a una [COLOR_BUILDING_TEXT]fabbrica di rum[COLOR_REVERT] o mandandoci a lavorare un [COLOR_UNIT_TEXT]mastro distillatore[COLOR_REVERT].</Italian>
-        <Spanish>La [COLOR_BUILDING_TEXT]Destilería de ron[COLOR_REVERT] es el edificio intermedio de producción de Ron. Un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] que trabaje aquí producirá tres unidades de [COLOR_HIGHLIGHT_TEXT]Ron[COLOR_REVERT] por turno al coste de seis de Azúcar. Esto se puede aumentar si se moderniza a una [COLOR_BUILDING_TEXT]Fábrica de ron[COLOR_REVERT] o se asigna a un [COLOR_UNIT_TEXT]Maestro destilador de ron[COLOR_REVERT] a trabajar aquí.</Spanish>
+        <English>The [COLOR_BUILDING_TEXT]distillery[COLOR_REVERT] is the intermediate rum-production building. A colonist working here as a [LINK=PROFESSION_DISTILLER]distiller[\LINK] will produce [LINK=YIELD_RUM]rum[\LINK] per turn using an equal amount of [LINK=YIELD_SUGAR]sugar[\LINK]. This can be increased by upgrading to a [LINK=BUILDING_RUM_FACTORY]rum factory[\LINK] or assigning a [LINK=UNIT_DISTILLER]master distiller[\LINK] to work here.</English>
+        <French>La [COLOR_HIGHLIGHT_TEXT]Distillerie[COLOR_REVERT] est le bâtiment intermédiaire pour la production de rhum. Les colons avec pour profession distillateur produisent du [COLOR_HIGHLIGHT_TEXT]rhum[COLOR_REVERT] à partir de [COLOR_HIGHLIGHT_TEXT]sucre[COLOR_REVERT]. Assignez des [COLOR_UNIT_TEXT]maîtres distillateurs[COLOR_REVERT] pour augmenter votre production.</French>
+        <German>Baumwolle, Felle, Tabak und Zucker kann man entweder direkt verkaufen oder sie in weiterverarbeitenden Betrieben zu teureren Fertigwaren veredeln.[PARAGRAPH:2]Die [COLOR_BUILDING_TEXT]Brennerei[COLOR_REVERT] ist das einfachste der Gebäude, die [COLOR_HIGHLIGHT_TEXT]Rum[COLOR_REVERT] produzieren. Wenn zum Beispiel ein Freier Kolonist hier im Beruf des Rumbrenners arbeitet, kann die Rumbrennerei pro Runde drei Einheiten [COLOR_HIGHLIGHT_TEXT]Zucker[COLOR_REVERT] zu drei Einheiten Rum verarbeiten. Der Bau eines [COLOR_BUILDING_TEXT]Rumbrennerbetriebs[COLOR_REVERT] oder die Beschäftigung von [COLOR_UNIT_TEXT]Brennermeistern[COLOR_REVERT] verdoppeln die Produktion. Nach dem Bau einer [COLOR_BUILDING_TEXT]Rumfabrik[COLOR_REVERT] gewinnen die Arbeiter aus der selben Menge Rohstoffe 50% mehr Rum.[PARAGRAPH:2]Ist weniger Rohstoff im Lager, als man braucht, wird entsprechend weniger von der Fertigware produziert. Ist mehr Rohstoff im Lager, als verarbeitet werden kann, bleibt der Rest im Lager.[PARAGRAPH:2]Tipp: Es ist oft, aber nicht immer sinnvoll, Rohstoffe zu veredeln. Man sollte erst prüfen, wie hoch die aktuellen Verkaufspreise von Rohstoff und Fertigprodukt sind. Oft genügt es, zu Spielbeginn die wenigen Bürger, die einem zur Verfügung stehen, zur Rohstoffgewinnung zu nutzen. In der späten Spielphase, wenn die Verkaufspreise für Rohstoffe aufgrund des hohen Marktangebotes gesunken sind, empfiehlt es sich dagegen zumeist, auf den Verkauf veredelter Produkte umzusteigen.</German>
+        <Italian>La [COLOR_BUILDING_TEXT]distilleria[COLOR_REVERT] è l'edificio di livello intermedio per la produzione di rum. Un [COLOR_UNIT_TEXT]libero colono[COLOR_REVERT] che lavora in una [COLOR_BUILDING_TEXT]distilleria di rum[COLOR_REVERT] crea sei unità di [COLOR_HIGHLIGHT_TEXT]rum[COLOR_REVERT] a turno, al costo di sei unità di zucchero. Puoi aumentare ulteriormente tale numero passando a una [COLOR_BUILDING_TEXT]fabbrica di rum[COLOR_REVERT] o mandandoci a lavorare un [COLOR_UNIT_TEXT]mastro distillatore[COLOR_REVERT].</Italian>
+        <Spanish>La [COLOR_BUILDING_TEXT]Destilería[COLOR_REVERT] es el edificio intermedio de producción de Ron. Un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] que trabaje aquí producirá tres unidades de [COLOR_HIGHLIGHT_TEXT]Ron[COLOR_REVERT] por turno al coste de seis de Azúcar. Esto se puede aumentar si se moderniza a una [COLOR_BUILDING_TEXT]Fábrica de ron[COLOR_REVERT] o se asigna a un [COLOR_UNIT_TEXT]Maestro destilador de ron[COLOR_REVERT] a trabajar aquí.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DOCK</Tag>
@@ -1956,13 +1956,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_RUM_FACTORY</Tag>
-        <English>Rum Factory</English>
+        <English>Rum and Hooch Factory</English>
         <French>
             <Text>Usine de rhum:Usines de rhum</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Rumfabrik</German>
+        <German>Rum- und Schnappsfabrik</German>
         <Italian>
             <Text>Fabbrica di rum</Text>
             <Gender>Female</Gender>

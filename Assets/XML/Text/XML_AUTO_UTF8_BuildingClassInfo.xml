@@ -414,40 +414,40 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_DISTILLERS_HOUSE</Tag>
-        <English>Rum Distiller's House</English>
+        <English>Distiller's House</English>
         <French>
             <Text>Atelier du distillateur:Ateliers de distillateur</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Rumbrennerei</German>
+        <German>Brennerei</German>
         <Italian>
-            <Text>Casa del distillatore di rum</Text>
+            <Text>Casa del distillatore</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Casa del destilador de ron:Casas del destilador de ron</Text>
+            <Text>Casa del destilador:Casas del destilador</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_DISTILLERY</Tag>
-        <English>Rum Distillery</English>
+        <English>Distillery</English>
         <French>
-            <Text>Distillerie de rhum:Distilleries de rhum</Text>
+            <Text>Distillerie:Distilleries</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Rumbrennereibetrieb</German>
+        <German>Brennereibetrieb</German>
         <Italian>
-            <Text>Distilleria di rum</Text>
+            <Text>Distilleria</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Destilería de ron:Destilerías de ron</Text>
+            <Text>Destilería:Destilerías</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -1036,13 +1036,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_RUM_FACTORY</Tag>
-        <English>Rum Factory</English>
+        <English>Rum and Hooch Factory</English>
         <French>
             <Text>Usine de rhum:Usines de rhum</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Rumfabrik</German>
+        <German>Rum- und Schnappsfabrik</German>
         <Italian>
             <Text>Fabbrica di rum</Text>
             <Gender>Female</Gender>
