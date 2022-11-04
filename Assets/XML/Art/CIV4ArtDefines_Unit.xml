@@ -945,7 +945,7 @@
             <Button>,Art/colonization_atlas_units.dds,4,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/WhaleOil_Cook.dds</FullLengthIcon>
             <fScale>0.48</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fInterfaceScale>0.90</fInterfaceScale>
             <NIF>Art/units/Settler/WhaleOil_Cook/Whale_Oil_Cook1.nif</NIF>
             <KFM>Art/units/Settler/WhaleOil_Cook/Whale_Oil_Cook1.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -995,7 +995,7 @@
             <Type>ART_DEF_UNIT_NOBLE</Type>
             <Button>,Art/colonization_atlas_units.dds,7,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/noble.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/noble/Elder_Statesman.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
@@ -1012,7 +1012,7 @@
             <Type>ART_DEF_UNIT_GOVERNOR</Type>
             <Button>,Art/colonization_atlas_units.dds,8,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Governor.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Governor/Elder_Statesman.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
@@ -12674,7 +12674,7 @@
             <Type>ART_DEF_UNIT_BUCCANNEER_ONE</Type>
             <Button>,Art/colonization_atlas_units.dds,7,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Buccaneer.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Buccaneer/Buccaneer1/Native_Musketman.nif</NIF>
             <KFM>Art/Units/Special_Military/Buccaneer/Buccaneer1/Native_Musketman.kfm</KFM>
@@ -12691,7 +12691,7 @@
             <Type>ART_DEF_UNIT_BUCCANNEER_TWO</Type>
             <Button>,Art/colonization_atlas_units.dds,7,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Buccaneer.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <fScale>0.52</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Buccaneer/Buccaneer2/Imperial_Soldier.nif</NIF>
             <KFM>Art/Units/Special_Military/Buccaneer/Buccaneer2/Imperial_Soldier.kfm</KFM>
@@ -12708,7 +12708,7 @@
             <Type>ART_DEF_UNIT_BUCCANNEER_THREE</Type>
             <Button>,Art/colonization_atlas_units.dds,7,6</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Buccaneer.dds</FullLengthIcon>
-            <fScale>0.54</fScale>
+            <fScale>0.52</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Buccaneer/Buccaneer3/Indentured_Servant.nif</NIF>
             <KFM>Art/Units/Special_Military/Buccaneer/Buccaneer3/Indentured_Servant.kfm</KFM>
@@ -17454,7 +17454,7 @@
             <Type>ART_DEF_UNIT_HOUSEHOLD_TRADER</Type>
             <Button>,Art/colonization_atlas_units_two.dds,2,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Household_Goods_Trader.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.57</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Household_Goods_Trader/Indentured_Servant.nif</NIF>
             <KFM>Art/Units/Settler/Master_Household_Goods_Trader/Indentured_Servant.kfm</KFM>
@@ -17539,7 +17539,7 @@
             <Type>ART_DEF_UNIT_LEATHER_TAYLOR</Type>
             <Button>,Art/colonization_atlas_units_two.dds,3,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Lether_Taylor.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.52</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Leather_Taylor/Expert_Cotton_Planter.nif</NIF>
             <KFM>Art/Units/Settler/Master_Leather_Taylor/Expert_Cotton_Planter.kfm</KFM>
@@ -17573,7 +17573,7 @@
             <Type>ART_DEF_UNIT_POTTER</Type>
             <Button>,Art/colonization_atlas_units.dds,6,7</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Potter.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <fScale>0.57</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Mater_Potter/greatscientistancient.nif</NIF>
             <KFM>Art/Units/Settler/Mater_Potter/greatscientistancient.kfm</KFM>
