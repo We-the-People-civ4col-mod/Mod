@@ -1,0 +1,21 @@
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Global Defines Schema -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="DefineName" content="textOnly"/>
+	<ElementType name="iDefineIntVal" content="textOnly" dt:type="int"/>
+	<ElementType name="fDefineFloatVal" content="textOnly"/>
+	<ElementType name="DefineTextVal" content="textOnly"/>
+	<ElementType name="bAlwaysHardcoded" content="textOnly" dt:type="int"/>
+	<ElementType name="Define" content="eltOnly">
+		<element type="DefineName"/>
+		<element type="iDefineIntVal" minOccurs="0"/>
+		<element type="fDefineFloatVal" minOccurs="0"/>
+		<element type="DefineTextVal" minOccurs="0"/>
+		<element type="bAlwaysHardcoded" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="Civ4Defines" content="eltOnly">
+		<element type="Define" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+</Schema>
