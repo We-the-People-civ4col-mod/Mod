@@ -455,7 +455,7 @@
             <Button>,Art/colonization_atlas_units_two.dds,2,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Fireworker.dds</FullLengthIcon>
             <fScale>0.50</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fInterfaceScale>0.80</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Fireworker/Expert_Lumberjack.nif</NIF>
             <KFM>Art/Units/Settler/Master_Fireworker/Expert_Lumberjack.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -466,7 +466,7 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-        </UnitArtInfo>		
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_MASTER_CHARCOAL_BURNER</Type>
             <Button>,Art/colonization_atlas_units_two.dds,3,2</Button>
@@ -1047,7 +1047,7 @@
             <Button>,Art/colonization_atlas_units.dds,7,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/bishop.dds</FullLengthIcon>
             <fScale>0.48</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fInterfaceScale>0.76</fInterfaceScale>
             <NIF>Art/Units/Settler/Bishop/christianmissionary.nif</NIF>
             <KFM>Art/Units/Settler/Bishop/christianmissionary.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -13050,7 +13050,7 @@
             <Type>ART_DEF_UNIT_ROYAL_LIGHT_INFANTRY</Type>
             <Button>,Art/colonization_atlas_military.dds,2,11</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/infantry_line_specialist.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Imperial_Soldier/Imperial_Soldier.nif</NIF>
             <KFM>Art/Units/Imperial_Soldier/Imperial_Soldier.kfm</KFM>
@@ -17162,7 +17162,7 @@
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Breeder_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Breeder_Europe.dds</FullLengthIcon>
             <fScale>0.48</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fInterfaceScale>0.80</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Breeder/Master_Distiller.nif</NIF>
             <KFM>Art/Units/Settler/Expert_Breeder/Master_Distiller.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -17362,7 +17362,7 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-        	<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+            <SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
             <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
@@ -17381,12 +17381,12 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
-        </UnitArtInfo>	
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_MAPLE_SIRUP_COLLECTOR</Type>
             <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Maple_Sirup_Collector_button.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Maple_Sirup_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.5</fScale>
+            <fScale>0.54</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Maple_Sirup_Collector/scout_fx.nif</NIF>
             <KFM>Art/Units/Settler/scout_european/Scout.kfm</KFM>
@@ -17455,7 +17455,7 @@
             <Button>,Art/colonization_atlas_units_two.dds,2,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Household_Goods_Trader.dds</FullLengthIcon>
             <fScale>0.57</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fInterfaceScale>0.78</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Household_Goods_Trader/Indentured_Servant.nif</NIF>
             <KFM>Art/Units/Settler/Master_Household_Goods_Trader/Indentured_Servant.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -17540,7 +17540,7 @@
             <Button>,Art/colonization_atlas_units_two.dds,3,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Lether_Taylor.dds</FullLengthIcon>
             <fScale>0.52</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fInterfaceScale>0.80</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Leather_Taylor/Expert_Cotton_Planter.nif</NIF>
             <KFM>Art/Units/Settler/Master_Leather_Taylor/Expert_Cotton_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
