@@ -4241,7 +4241,7 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 	if (pTransport->getUnitInfo().isSlaveShip() && isHuman())
 	{
 		// it is neither Goods nor a Slave
-		if (getSpecialUnitType() == NO_SPECIALUNIT && !getUnitInfo().LbD_canRevolt() && getUnitInfo().getProductionWhenUsed() != 0)
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !getUnitInfo().LbD_canRevolt())
 		{
 			return false;
 		}
@@ -4255,7 +4255,7 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 	{
 		// it is neither Goods nor a Slave
 		// WTP, ray, Construction Supplies - START
-		if (getSpecialUnitType() == NO_SPECIALUNIT && !getUnitInfo().isTreasure() && getUnitInfo().getProductionWhenUsed() != 0)
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !getUnitInfo().isTreasure())
 		{
 			return false;
 		}
@@ -4268,7 +4268,7 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 	if (pTransport->getUnitInfo().isTroopShip() && isHuman())
 	{
 		// it is neither Goods nor a Slave
-		if (getSpecialUnitType() == NO_SPECIALUNIT && !canAttack() && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_GENERAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT") && getUnitClassType() != GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN") && getUnitInfo().getProductionWhenUsed() != 0)
+		if (getSpecialUnitType() == NO_SPECIALUNIT && !canAttack() && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_GENERAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL") && getUnitClassType() != GC.getDefineINT("UNITCLASS_BRAVE_LIEUTENANT") && getUnitClassType() != GC.getDefineINT("UNITCLASS_CAPABLE_CAPTAIN"))
 		{
 			return false;
 		}
