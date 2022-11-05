@@ -15769,7 +15769,7 @@ bool CvPlayerAI::AI_isPathDanger(const CvSelectionGroup* pGroup, const CvPlot* p
 		iRange = GC.getAI_TRANSPORT_DANGER_RANGE();
 	}
 		
-	iMovesLeft = (pGroup->getHeadUnit()->movesLeft() / GC.getMOVE_DENOMINATOR());
+	iMovesLeft = (pGroup->getHeadUnit()->movesLeft() / GLOBAL_DEFINE_MOVE_DENOMINATOR);
 	iStart = (pPlot == pToPlot) ? iMovesLeft : 0;
 	//iPathLength = (pPlot == pFromPlot) ? pGroup->getPathLength() - iMovesLeft : pGroup->getPathLength();
 	// fix: avoids NULL crash when iMovesLeft is negative - Nightinggale

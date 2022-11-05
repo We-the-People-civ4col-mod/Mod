@@ -17488,7 +17488,7 @@ bool CvUnitAI::AI_retreatFromDanger()
 	CvPlot* pBestPlot = NULL;
 	
 	int iBestValue = 0;
-	int iMovesLeft = movesLeft() / GC.getMOVE_DENOMINATOR();
+	int iMovesLeft = movesLeft() / GLOBAL_DEFINE_MOVE_DENOMINATOR;
 	int iDX, iDY;
 	
 	MissionAITypes eMissionAI = getGroup()->AI_getMissionAIType();

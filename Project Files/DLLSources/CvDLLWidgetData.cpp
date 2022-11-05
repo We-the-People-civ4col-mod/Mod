@@ -1933,30 +1933,30 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 
 					if (iMovementCost > 0)
 					{
-						iMoves = (GC.getMOVE_DENOMINATOR() / iMovementCost);
+						iMoves = (GLOBAL_DEFINE_MOVE_DENOMINATOR / iMovementCost);
 
-						if ((iMoves * iMovementCost) < GC.getMOVE_DENOMINATOR())
+						if ((iMoves * iMovementCost) < GLOBAL_DEFINE_MOVE_DENOMINATOR)
 						{
 							iMoves++;
 						}
 					}
 					else
 					{
-						iMoves = GC.getMOVE_DENOMINATOR();
+						iMoves = GLOBAL_DEFINE_MOVE_DENOMINATOR;
 					}
 
 					if (iFlatMovementCost > 0)
 					{
-						iFlatMoves = (GC.getMOVE_DENOMINATOR() / iFlatMovementCost);
+						iFlatMoves = (GLOBAL_DEFINE_MOVE_DENOMINATOR / iFlatMovementCost);
 
-						if ((iFlatMoves * iFlatMovementCost) < GC.getMOVE_DENOMINATOR())
+						if ((iFlatMoves * iFlatMovementCost) < GLOBAL_DEFINE_MOVE_DENOMINATOR)
 						{
 							iFlatMoves++;
 						}
 					}
 					else
 					{
-						iFlatMoves = GC.getMOVE_DENOMINATOR();
+						iFlatMoves = GLOBAL_DEFINE_MOVE_DENOMINATOR;
 					}
 
 					if ((iMoves > 1) || (iFlatMoves > 1))

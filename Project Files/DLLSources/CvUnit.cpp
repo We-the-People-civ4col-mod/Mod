@@ -1832,7 +1832,7 @@ void CvUnit::updateCombat(bool bQuick)
 			bool bAdvance = canAdvance(pPlot, 0);
 			if (!bAdvance)
 			{
-				changeMoves(std::max(GC.getMOVE_DENOMINATOR(), pPlot->movementCost(this, plot())));
+				changeMoves(std::max(GLOBAL_DEFINE_MOVE_DENOMINATOR, pPlot->movementCost(this, plot())));
 
 				if (!canMove() || !isBlitz())
 				{
@@ -1944,7 +1944,7 @@ void CvUnit::updateCombat(bool bQuick)
 			}
 			// WTP, ray, fix for Human Unit not stopping automation after attacked - END
 
-			changeMoves(std::max(GC.getMOVE_DENOMINATOR(), pPlot->movementCost(this, plot())));
+			changeMoves(std::max(GLOBAL_DEFINE_MOVE_DENOMINATOR, pPlot->movementCost(this, plot())));
 
 			// R&R, ray, Natives raiding party - START
 			CvCity* pCity = pPlot->getPlotCity();
@@ -2965,7 +2965,7 @@ bool CvUnit::generatePath(const CvPlot* pToPlot, int iFlags, bool bReuse,
 	// <advc.128>
 	FAssert(!bReuse);
 	KmodPathFinder temp_finder;
-	temp_finder.SetSettings(getGroup(), iFlags, iMaxPath, GC.getMOVE_DENOMINATOR());
+	temp_finder.SetSettings(getGroup(), iFlags, iMaxPath, GLOBAL_DEFINE_MOVE_DENOMINATOR);
 	bool r = temp_finder.GeneratePath(pToPlot);
 	if (piPathTurns != NULL)
 		*piPathTurns = temp_finder.GetPathTurns();
@@ -6817,7 +6817,7 @@ bool CvUnit::bombard()
 	}
 
 	setMadeAttack(true);
-	changeMoves(GC.getMOVE_DENOMINATOR());
+	changeMoves(GLOBAL_DEFINE_MOVE_DENOMINATOR);
 
 	// Super Forts begin *bombard* *text*	
 	//R&R mod, vetiarvind, super forts merge ..invert if clause and let R&R code be the case when pBombardCity != null
@@ -7013,7 +7013,7 @@ bool CvUnit::pillage()
 		pPlot->setRouteType(NO_ROUTE); // XXX downgrade rail???
 	}
 
-	changeMoves(GC.getMOVE_DENOMINATOR());
+	changeMoves(GLOBAL_DEFINE_MOVE_DENOMINATOR);
 
 	if (pPlot->isActiveVisible(false))
 	{
@@ -8557,7 +8557,7 @@ int CvUnit::baseMoves() const
 
 int CvUnit::maxMoves() const
 {
-	return (baseMoves() * GC.getMOVE_DENOMINATOR());
+	return (baseMoves() * GLOBAL_DEFINE_MOVE_DENOMINATOR);
 }
 
 

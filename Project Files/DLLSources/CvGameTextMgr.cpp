@@ -415,13 +415,13 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 
 		if (GC.useClassicMovementSystem())
 		{
-			iCurrMoves = ((pUnit->movesLeft() / GC.getMOVE_DENOMINATOR()) + (((pUnit->movesLeft() % GC.getMOVE_DENOMINATOR()) > 0) ? 1 : 0));
+			iCurrMoves = ((pUnit->movesLeft() / GLOBAL_DEFINE_MOVE_DENOMINATOR) + (((pUnit->movesLeft() % GLOBAL_DEFINE_MOVE_DENOMINATOR) > 0) ? 1 : 0));
 		}
 		else
 		{
 			// ray, new Movement Calculation - START
 			// needs to change or otherwise UI always shows just 0
-			iCurrMoves = pUnit->movesLeft() / GC.getMOVE_DENOMINATOR();
+			iCurrMoves = pUnit->movesLeft() / GLOBAL_DEFINE_MOVE_DENOMINATOR;
 			// ray, new Movement Calculation - END
 		}
 

@@ -88,7 +88,6 @@ m_aaiXYCityPlot_2_plot(NULL),
 m_aeTurnLeftDirection(NULL),
 m_aeTurnRightDirection(NULL),
 m_VarSystem(NULL),
-m_iMOVE_DENOMINATOR(0),
 m_iFOOD_CONSUMPTION_PER_POPULATION(0),
 m_iMAX_HIT_POINTS(0),
 m_iHILLS_EXTRA_DEFENSE(0),
@@ -2601,7 +2600,6 @@ FVariableSystem* CvGlobals::getDefinesVarSystem()
 
 void CvGlobals::cacheGlobals()
 {
-	m_iMOVE_DENOMINATOR = getDefineINT("MOVE_DENOMINATOR");
 	m_iFOOD_CONSUMPTION_PER_POPULATION = getDefineINT("FOOD_CONSUMPTION_PER_POPULATION");
 	m_iMAX_HIT_POINTS = getDefineINT("MAX_HIT_POINTS");
 	m_iHILLS_EXTRA_DEFENSE = getDefineINT("HILLS_EXTRA_DEFENSE");

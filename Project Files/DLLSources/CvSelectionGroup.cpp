@@ -3402,7 +3402,7 @@ int CvSelectionGroup::getPathCost() const
 	{
 		int iCost = pNode->m_iTotalCost;
 		iCost *= 100;
-		iCost /= (1000 * GC.getMOVE_DENOMINATOR());
+		iCost /= (1000 * GLOBAL_DEFINE_MOVE_DENOMINATOR);
 
 		return iCost;
 	}

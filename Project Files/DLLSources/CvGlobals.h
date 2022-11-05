@@ -633,7 +633,6 @@ public:
 	DllExport void setDefineFLOAT( const char * szName, float fValue );
 	DllExport void setDefineSTRING( const char * szName, const char * szValue );
 
-	int getMOVE_DENOMINATOR();
 	int getFOOD_CONSUMPTION_PER_POPULATION();
 	int getMAX_HIT_POINTS();
 	int getHILLS_EXTRA_DEFENSE();
@@ -1212,7 +1211,6 @@ protected:
 
 	FVariableSystem* m_VarSystem;
 
-	int m_iMOVE_DENOMINATOR;
 	int m_iFOOD_CONSUMPTION_PER_POPULATION;
 	int m_iMAX_HIT_POINTS;
 	int m_iHILLS_EXTRA_DEFENSE;
@@ -1651,11 +1649,6 @@ bool writeInfoArray(FDataStreamBase* pStream,  std::vector<T*>& array)
 // inlined functions
 // The following functions are copied from CvGlobals.cpp as they are ideal candidates for inlining
 // Nightinggale
-
-inline int CvGlobals::getMOVE_DENOMINATOR()
-{
-	return m_iMOVE_DENOMINATOR;
-}
 
 inline int CvGlobals::getFOOD_CONSUMPTION_PER_POPULATION()
 {

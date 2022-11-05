@@ -36,11 +36,11 @@ CvPathSettings::CvPathSettings(const CvSelectionGroup* pGroup, int iFlags, int i
 
 void KmodPathFinder::InitHeuristicWeights()
 {
-	admissible_base_weight = GC.getMOVE_DENOMINATOR()/2;
-	admissible_scaled_weight = GC.getMOVE_DENOMINATOR()/2;
-	for (int r = 0; r < GC.getNumRouteInfos(); r++)
+	admissible_base_weight = GLOBAL_DEFINE_MOVE_DENOMINATOR/2;
+	admissible_scaled_weight = GLOBAL_DEFINE_MOVE_DENOMINATOR/2;
+	for (RouteTypes eRoute = FIRST_ROUTE; eRoute < NUM_ROUTE_TYPES; ++eRoute)
 	{
-		const CvRouteInfo& kInfo = GC.getRouteInfo((RouteTypes)r);
+		const CvRouteInfo& kInfo = GC.getRouteInfo(eRoute);
 		const int iCost = kInfo.getMovementCost();
 		// WTP: No tech tree yet :(
 		/*
@@ -508,7 +508,8 @@ bool KmodPathFinder::ProcessNode()
 	}
 
 	// Execute parallel work
-	ProcessNodesInternal pni(parent_node, child_nodes, settings, dest_x, dest_y, pno);	const int grainSize = 2; // 1 seems to result in too little work per task
+	ProcessNodesInternal pni(parent_node, child_nodes, settings, dest_x, dest_y, pno);
+	const int grainSize = 2; // 1 seems to result in too little work per task
 	tbb::parallel_for(tbb::blocked_range<size_t>(0, child_nodes.size(), grainSize), pni, tbb::auto_partitioner());
 
 	for (size_t i=0; i<pno.size(); i++)
@@ -525,7 +526,8 @@ bool KmodPathFinder::ProcessNode()
 			//FAssert(end_node == NULL); // we can only have a single end-node
 			end_node = pno[i].end_node;
 		}
-			FAStarNode* const child_node = pno[i].child_nodes_out;
+	
+		FAStarNode* const child_node = pno[i].child_nodes_out;
 		
 		if (child_node == NULL)
 			continue;

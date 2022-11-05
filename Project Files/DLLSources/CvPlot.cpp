@@ -3353,7 +3353,7 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 
 	if (pUnit->flatMovementCost())
 	{
-		return GC.getMOVE_DENOMINATOR();
+		return GLOBAL_DEFINE_MOVE_DENOMINATOR;
 	}
 
 	if (!bAssumeRevealed && !isRevealed(pUnit->getTeam(), false))
@@ -3362,7 +3362,7 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 		{
 			// Note: Not strictly true due to the introduction of storms which can
 			// "drain" all movement points
-			return GC.getMOVE_DENOMINATOR();
+			return GLOBAL_DEFINE_MOVE_DENOMINATOR;
 		}
 		else
 		{
@@ -3377,7 +3377,7 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 
 	if (!isValidDomainForAction(*pUnit))
 	{
-		return GC.getMOVE_DENOMINATOR();
+		return GLOBAL_DEFINE_MOVE_DENOMINATOR;
 	}
 
 	FAssert(pUnit->getDomainType() != DOMAIN_IMMOBILE);
@@ -3410,13 +3410,13 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 
 	if (GC.useClassicMovementSystem())
 	{
-		iRegularCost = std::min(iRegularCost, pUnit->baseMoves()) * GC.getMOVE_DENOMINATOR();
+		iRegularCost = std::min(iRegularCost, pUnit->baseMoves()) * GLOBAL_DEFINE_MOVE_DENOMINATOR;
 	}
 	else
 	{
 		// ray, new Movement Calculation - START
 		// this (see if block) needs to be prevented because the Unit will otherwise not get full Terrain Cost
-		iRegularCost = iRegularCost * GC.getMOVE_DENOMINATOR();
+		iRegularCost = iRegularCost * GLOBAL_DEFINE_MOVE_DENOMINATOR;
 	}
 
 	if (bHasTerrainCost)
