@@ -61,7 +61,9 @@ class CvDomesticAdvisor:
 		self.WIDGET_MISSION = WidgetTypes(WidgetTypes.NUM_WIDGET_TYPES)
 		
 #VET NewCapacity - begin 1/4
-		self.bNewCapacity = (gc.getDefineINT("NEW_CAPACITY") > 0)
+		# WTP ray, careful this does not exist anymore, we set it to true
+		# self.bNewCapacity = (gc.getDefineINT("NEW_CAPACITY") > 0)
+		self.bNewCapacity = true
 #VET NewCapacity - end 1/4
 		## R&R, Robert Surcouf,  Domestic Advisor Screen - Start
 		#self.nTableWidth = self.nScreenWidth * 19 / 20
@@ -147,7 +149,7 @@ class CvDomesticAdvisor:
 		self.StateButtons.append("INTERFACE_CITY_LEFT_ARROW")
 		self.StateButtons.append("INTERFACE_CITY_RIGHT_ARROW")
 		# Next Page / Previous Page
-		self.MAX_YIELDS_IN_A_PAGE = 18
+		self.MAX_YIELDS_IN_A_PAGE = 20
 		#self.MAX_YIELDS_IN_A_PAGE = 19
 		#self.MAX_BUILDINGS_IN_A_PAGE = 26
 		self.MAX_BUILDINGS_IN_A_PAGE = 18
@@ -212,12 +214,9 @@ class CvDomesticAdvisor:
 		
 		## R&R, Robert Surcouf, Domestic Market display START
 		szListName = self.StatePages[self.GENERAL_STATE][2] + "ListBackground"
-		CocaLeaveColumn = 2
-		CocaLeaveYieldID = 8
-		screen.setTableColumnHeader(szListName,  CocaLeaveColumn, "<font=2>" + (u" %c" % gc.getYieldInfo(CocaLeaveYieldID).getChar()) + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 18 + 1)
 		iStartYield=gc.getDefineINT("DOMESTIC_MARKET_SCREEN_START_YIELD_ID")
 		for iYield in range(iStartYield, YieldTypes.YIELD_LUXURY_GOODS + 1):
-			screen.setTableColumnHeader(szListName, iYield-iStartYield + 3, "<font=2>" + (u" %c" % gc.getYieldInfo(iYield).getChar()) + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 18 + 1)
+			screen.setTableColumnHeader(szListName, iYield-iStartYield + 2, "<font=2>" + (u" %c" % gc.getYieldInfo(iYield).getChar()) + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 18 + 1)
 		## R&R, Robert Surcouf, Domestic Market display End
 		
 		#GeneralState Headers
@@ -277,7 +276,7 @@ class CvDomesticAdvisor:
 				screen.setTableColumnHeader( self.StatePages[iState][iPage] + "ListBackground", iYieldOnPage + 2, "<font=2> " + (u" %c" % gc.getYieldInfo(iYield).getChar()) + "</font>", (self.PRODUCTION_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )
 
 		# Building Headers
-		for iSpecial in range(gc.getNumSpecialBuildingInfos()):	
+		for iSpecial in range(gc.getNumSpecialBuildingInfos()):
 			if (iSpecial != gc.getInfoTypeForString("SPECIALBUILDING_BELLS")):
 				iBuildingOnPage = (iSpecial-1) % self.MAX_BUILDINGS_IN_A_PAGE
 				iPage = (iSpecial-1) // self.MAX_BUILDINGS_IN_A_PAGE
@@ -346,7 +345,7 @@ class CvDomesticAdvisor:
 			if (self.CurrentState == self.CITIZEN_STATE):
 				for iCity in range(len(self.Cities)):
 					self.updateCitizenTable(self.Cities[iCity], iCity)
-		## R&R, Robert Surcouf,  Domestic Advisor Screen START					
+		## R&R, Robert Surcouf,  Domestic Advisor Screen START
 		#else:
 		elif self.CurrentState == self.TRADEROUTE_STATE:
 		## R&R, Robert Surcouf,  Domestic Advisor Screen END
@@ -361,7 +360,7 @@ class CvDomesticAdvisor:
 		
 		self.drawButtons()
 		if self.StateWindow[self.CurrentState] == None:
-			screen.show(self.StatePages[self.CurrentState][self.CurrentPage] + "ListBackground")			
+			screen.show(self.StatePages[self.CurrentState][self.CurrentPage] + "ListBackground")
 		self.updateAppropriateCitySelection()
 
 	def updateCityTable(self, pLoopCity, i):
@@ -809,7 +808,7 @@ class CvDomesticAdvisor:
 		SelectionGroup, Iterator = player.firstSelectionGroup(false)
 		while (SelectionGroup != None):
 			if (SelectionGroup.canAssignTradeRoute(-1, false)):
-				self.Transports.append(SelectionGroup)		
+				self.Transports.append(SelectionGroup)
 			SelectionGroup, Iterator = player.nextSelectionGroup(Iterator, false)
 
 		self.RouteValidity = []
