@@ -827,7 +827,7 @@
 	</Define>
 	<Define>
 		<DefineName>DOMESTIC_MARKET_SCREEN_START_YIELD_ID</DefineName>
-		<iDefineIntVal>35</iDefineIntVal>
+		<iDefineIntVal>61</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>TAX_TRADE_THRESHOLD</DefineName>
