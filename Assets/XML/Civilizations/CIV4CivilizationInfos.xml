@@ -5725,6 +5725,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -6841,6 +6853,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_GREAT_ARSENAL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
@@ -7978,6 +8002,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -9111,6 +9147,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -10239,6 +10287,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -11362,6 +11422,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -12482,6 +12554,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -13599,6 +13683,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_GREAT_ARSENAL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
@@ -14747,6 +14843,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -15880,6 +15988,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -16999,6 +17119,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_GREAT_ARSENAL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
@@ -18141,6 +18273,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -19262,6 +19406,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_GREAT_ARSENAL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
@@ -20395,6 +20551,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -21522,6 +21690,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -22639,6 +22819,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_GREAT_ARSENAL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
@@ -23763,6 +23955,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_GREAT_ARSENAL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
@@ -24899,6 +25103,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -26004,6 +26220,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_GREAT_ARSENAL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
@@ -27140,6 +27368,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -28259,6 +28499,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -29367,6 +29619,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_GREAT_ARSENAL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
@@ -30488,6 +30752,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -31598,6 +31874,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_GREAT_ARSENAL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
@@ -32720,6 +33008,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -33839,6 +34139,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -34952,6 +35264,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_GREAT_ARSENAL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
@@ -36074,6 +36398,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -37189,6 +37525,18 @@
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
                     <BuildingClassType>BUILDINGCLASS_STABLE</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
@@ -38295,6 +38643,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_GREAT_ARSENAL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>
@@ -39515,6 +39875,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_GREAT_ARSENAL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_FIREWORKERS_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
                 <Building>

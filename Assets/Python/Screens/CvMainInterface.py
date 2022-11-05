@@ -149,7 +149,7 @@ HELPTEXT_AREA_MIN_WIDTH = 150
 # R&R, Robert Surcouf, No More Variables Hidden game option END
 
 # CITY BUILDINGS GRID MAP
-BUILDING_DATA = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+BUILDING_DATA = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 
 BUILDING_DATA[0] = [36, 20, 20, 12] #Bells
 BUILDING_DATA[1] = [52, 22, 20, 12] #Hammers
@@ -167,31 +167,32 @@ BUILDING_DATA[12] = [36, 56, 20, 12] #Furniture
 BUILDING_DATA[13] = [52, 4, 20, 12] #Tools
 BUILDING_DATA[14] = [36, 2, 20, 12] #Crosses
 BUILDING_DATA[15] = [4, 38, 20, 12] #Muskets
-BUILDING_DATA[16] = [36, 74, 20, 14] #Horses
-BUILDING_DATA[17] = [84, 22, 20, 12] #Dock
-BUILDING_DATA[18] = [4, 2, 20, 12] #WareHouse
-BUILDING_DATA[19] = [4, 56, 20, 12] #Spices
-BUILDING_DATA[20] = [52, 76, 20, 12] #Domestic Market
-BUILDING_DATA[21] = [69, 90, 20, 10] #Tavern
-BUILDING_DATA[22] = [20, 4, 20, 12] #Education
-BUILDING_DATA[23] = [90, 82, 20, 10] #Wall
-BUILDING_DATA[24] = [22, 92, 20, 10] #Print
-BUILDING_DATA[25] = [6, 91, 20, 9] #Mill
-BUILDING_DATA[26] = [38, 90, 20, 10] #Trainstation
-BUILDING_DATA[27] = [80, 78, 20, 8] #Corn
-BUILDING_DATA[28] = [84, 40, 20, 13] #Medical Care
-BUILDING_DATA[29] = [54, 92, 20, 8] #Well
-BUILDING_DATA[30] = [87, 79, 20, 10] #Defense
-BUILDING_DATA[31] = [52, 58, 20, 12] #Confectioner
-BUILDING_DATA[32] = [20, 58, 20, 12] #Leather Padder
-BUILDING_DATA[33] = [4, 74, 20, 12] #Cooking Oil Trader
-BUILDING_DATA[34] = [68, 74, 20, 12] #Peanut Roaster
-BUILDING_DATA[35] = [84, 58, 20, 12] #Potter
-BUILDING_DATA[36] = [20, 76, 20, 12] #Tailor
-BUILDING_DATA[37] = [62, 92, 20, 7] #Statue
-BUILDING_DATA[38] = [80, 86, 20, 11] #Graveyard
+BUILDING_DATA[16] = [4, 2, 20, 12] #Fireworker
+BUILDING_DATA[17] = [36, 74, 20, 14] #Horses
+BUILDING_DATA[18] = [84, 22, 20, 12] #Dock
+BUILDING_DATA[19] = [54, 92, 20, 8] #WareHouse
+BUILDING_DATA[20] = [4, 56, 20, 12] #Spices
+BUILDING_DATA[21] = [52, 76, 20, 12] #Domestic Market
+BUILDING_DATA[22] = [69, 90, 20, 10] #Tavern
+BUILDING_DATA[23] = [20, 4, 20, 12] #Education
+BUILDING_DATA[24] = [90, 80, 20, 10] #Wall
+BUILDING_DATA[25] = [22, 92, 20, 10] #Print
+BUILDING_DATA[26] = [3, 91, 20, 9] #Mill
+BUILDING_DATA[27] = [38, 90, 20, 10] #Trainstation
+BUILDING_DATA[28] = [12, 92, 20, 7] #Corn
+BUILDING_DATA[29] = [84, 40, 20, 13] #Medical Care
+BUILDING_DATA[30] = [80, 90, 20, 8] #Well
+BUILDING_DATA[31] = [87, 76, 20, 10] #Defense
+BUILDING_DATA[32] = [52, 58, 20, 12] #Confectioner
+BUILDING_DATA[33] = [20, 58, 20, 12] #Leather Padder
+BUILDING_DATA[34] = [4, 74, 20, 12] #Cooking Oil Trader
+BUILDING_DATA[35] = [68, 74, 20, 12] #Peanut Roaster
+BUILDING_DATA[36] = [84, 58, 20, 12] #Potter
+BUILDING_DATA[37] = [20, 76, 20, 12] #Tailor
+BUILDING_DATA[38] = [82, 76, 20, 7] #Statue
+BUILDING_DATA[39] = [80, 82, 20, 10] #Graveyard
 
-BUILDING_GRID = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+BUILDING_GRID = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 
 BUILDING_AREA_WIDTH = -1
 BUILDING_AREA_HEIGHT = -1

@@ -183,7 +183,7 @@
         <Tag>TXT_KEY_PROFESSION_BLOODWOOD_CUTTER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
-    </TEXT>    
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HARDWOOD_LUMBERJACK</Tag>
         <English>
@@ -1349,6 +1349,60 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_BOOTS_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_CHARCOAL_BURNER</Tag>
+        <English>
+            <Text>Charcoaler:Charcoalers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Holzköhler:Holzköhler</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_CHARCOAL_BURNER_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_CHARCOAL_BURNER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_CHARCOAL_BURNER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_FIREWORKER</Tag>
+        <English>
+            <Text>Fireworker:Fireworkers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Feuerwerker:Feuerwerker</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_FIREWORKER_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_FIREWORKER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_FIREWORKER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>

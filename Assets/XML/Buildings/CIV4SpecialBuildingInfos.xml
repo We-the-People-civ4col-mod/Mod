@@ -151,6 +151,15 @@
             <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,2,2</NatureObject>
         </SpecialBuildingInfo>
         <SpecialBuildingInfo>
+            <Type>SPECIALBUILDING_BLACK_POWDER</Type>
+            <Description>TXT_KEY_SPECIALBUILDING_BLACK_POWDER</Description>
+            <bValid>1</bValid>
+            <FontButtonIndex>39</FontButtonIndex>
+            <ProductionTraits/>
+            <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
+            <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,2,2</NatureObject>
+        </SpecialBuildingInfo>
+        <SpecialBuildingInfo>
             <Type>SPECIALBUILDING_HORSES</Type>
             <Description>TXT_KEY_SPECIALBUILDING_HORSES</Description>
             <bValid>1</bValid>

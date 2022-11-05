@@ -28190,7 +28190,7 @@
                 </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
-		<UnitInfo>
+        <UnitInfo>
             <Type>UNIT_FIREWORKER</Type>
             <Class>UNITCLASS_FIREWORKER</Class>
             <UniqueNames/>

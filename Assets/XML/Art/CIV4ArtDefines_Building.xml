@@ -2701,7 +2701,7 @@
             <KFM/>
             <Button>,Art/colonization_atlas_buildings.dds,3,10</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_FIREWORKERS_SHOP</Type>
             <LSystem>LSYSTEM_3x3</LSystem>
             <bAnimated>0</bAnimated>
@@ -2713,7 +2713,7 @@
             <KFM/>
             <Button>,Art/colonization_atlas_buildings.dds,4,10</Button>
         </BuildingArtInfo>
-		<BuildingArtInfo>
+        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_FIREWORKERS_FACTORY</Type>
             <LSystem>LSYSTEM_3x3</LSystem>
             <bAnimated>0</bAnimated>
