@@ -49768,7 +49768,7 @@ EndPlot
 BeginPlot
 	x=37,y=194
 	BonusType=BONUS_BOOBY
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=1,
 EndPlot
@@ -50521,7 +50521,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=108
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=24,
 EndPlot
@@ -51848,13 +51848,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=108
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=24,
 EndPlot
 BeginPlot
 	x=39,y=109
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=24,
 EndPlot
@@ -51990,7 +51990,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=133
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=26,
 EndPlot
@@ -53153,7 +53153,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=40,y=108
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=24,
 EndPlot
@@ -54482,7 +54482,7 @@ EndPlot
 BeginPlot
 	x=41,y=108
 	FeatureType=FEATURE_STONE_REEF, FeatureVariety=0
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=24,
 EndPlot
@@ -55771,7 +55771,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=107
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=24,
 EndPlot
@@ -58520,7 +58520,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=134
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=30,
 EndPlot
@@ -62180,12 +62180,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=115
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=47,y=116
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -63469,7 +63469,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=120
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -65974,7 +65974,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=115
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=15,
 EndPlot
@@ -70205,7 +70205,7 @@ BeginPlot
 	x=53,y=173
 	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_LIGHT_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_TAIGA
 	PlotType=1
 	TeamReveal=4,
 EndPlot
@@ -71515,7 +71515,7 @@ BeginPlot
 	x=54,y=174
 	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_TAIGA
 	PlotType=2
 	TeamReveal=4,
 EndPlot
@@ -72842,7 +72842,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=175
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_TAIGA
 	PlotType=2
 	TeamReveal=4,
 EndPlot
@@ -73432,7 +73432,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=59
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=17,
 EndPlot
@@ -74148,14 +74148,14 @@ EndPlot
 BeginPlot
 	x=56,y=172
 	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_TAIGA
 	PlotType=2
 	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=56,y=173
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_TAIGA
 	PlotType=2
 	TeamReveal=4,
 EndPlot
@@ -74753,7 +74753,7 @@ EndPlot
 BeginPlot
 	x=57,y=58
 	FeatureType=FEATURE_STONE_REEF, FeatureVariety=0
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -76772,7 +76772,7 @@ BeginPlot
 	x=58,y=171
 	BonusType=BONUS_DEER
 	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
-	TerrainType=TERRAIN_PLAINS
+	TerrainType=TERRAIN_TAIGA
 	PlotType=2
 	TeamReveal=4,
 EndPlot
@@ -83636,19 +83636,19 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=64,y=12
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=64,y=13
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=64,y=14
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=3,
 EndPlot
@@ -85526,7 +85526,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=65,y=101
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=9,
 EndPlot
@@ -86810,7 +86810,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=66,y=101
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 	TeamReveal=9,
 EndPlot
@@ -90182,7 +90182,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=69,y=24
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 EndPlot
 BeginPlot
@@ -91518,7 +91518,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=70,y=24
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_SHALLOW_COAST
 	PlotType=3
 EndPlot
 BeginPlot
