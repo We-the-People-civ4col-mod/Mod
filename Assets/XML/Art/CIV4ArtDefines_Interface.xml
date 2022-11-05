@@ -815,6 +815,14 @@
             <Path>Art/Interface/Screens/City_Management/button_teaching.dds</Path>
         </InterfaceArtInfo>
         <InterfaceArtInfo>
+            <Type>INTERFACE_HAPPINESS_BUTTON</Type>
+            <Path>Art/Interface/Game Hud/Actions/Happiness_Advisor_Button.dds</Path>
+        </InterfaceArtInfo>
+        <InterfaceArtInfo>
+            <Type>INTERFACE_DOMESTIC_DEMAND_BUTTON</Type>
+            <Path>Art/Interface/Game Hud/Actions/Domestic_Market_Advisor_Button.dds</Path>
+        </InterfaceArtInfo>
+        <InterfaceArtInfo>
             <Type>INTERFACE_CUSTOM_HOUSE</Type>
             <Path>Art/Interface/Screens/City_Management/button_custom.dds</Path>
         </InterfaceArtInfo>
