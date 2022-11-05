@@ -278,7 +278,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HAPPY_HUNTING_3</Tag>
-        <English>There's a growing deer population in the forest near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], allowing our hunters to store up extra meat.</English>
+        <English>Growing deer herds in the forest near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] have allowed our hunters to store up extra meat.</English>
         <French>Les cerfs prolifèrent dans la forêt près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], permettant à nos chasseurs de stocker de la nourriture supplémentaire.</French>
         <German>Die Männer von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben eine Treibjagd in den nahen Wäldern veranstaltet. Eine große Hirschherde lief den wackeren Waidmännern vor die Flinten.</German>
         <Italian>I cervi proliferano nella foresta vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], e i nostri cacciatori possono procurare carne in più.</Italian>
@@ -286,7 +286,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WASHED_OUT</Tag>
-        <English>Floods washed out some of the routes near the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] city of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
+        <English>Floods washed out some of the roads near the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] city of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>Des inondations ont noyé les routes près de la ville [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Ein Fahrweg in der Nähe von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ist leider nicht mehr passierbar.</German>
         <Italian>Le inondazioni hanno distrutto alcune strade vicino alla città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
