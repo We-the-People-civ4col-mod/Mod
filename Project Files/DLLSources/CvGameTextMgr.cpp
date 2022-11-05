@@ -3089,12 +3089,12 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 		if (pPlot->isHills())
 		{
 
-			iTotalMovementCostToDisplay += GC.getHILLS_EXTRA_MOVEMENT();
+			iTotalMovementCostToDisplay += GLOBAL_DEFINE_HILLS_EXTRA_MOVEMENT;
 		}
 		// otherwise maybe there is a Mountain
 		else if (pPlot->isPeak())
 		{
-			iTotalMovementCostToDisplay += GC.getPEAK_EXTRA_MOVEMENT();
+			iTotalMovementCostToDisplay += GLOBAL_DEFINE_PEAK_EXTRA_MOVEMENT;
 		}
 
 		if (iTotalMovementCostToDisplay != 1)

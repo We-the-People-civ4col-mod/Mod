@@ -638,8 +638,6 @@ public:
 	int getHILLS_EXTRA_DEFENSE();
 	int getRIVER_ATTACK_MODIFIER();
 	int getAMPHIB_ATTACK_MODIFIER();
-	int getHILLS_EXTRA_MOVEMENT();
-	int getPEAK_EXTRA_MOVEMENT();
 	DllExport int getMAX_PLOT_LIST_ROWS();
 	DllExport int getUNIT_MULTISELECT_MAX();
 	DllExport int getEVENT_MESSAGE_TIME();
@@ -1216,8 +1214,6 @@ protected:
 	int m_iHILLS_EXTRA_DEFENSE;
 	int m_iRIVER_ATTACK_MODIFIER;
 	int m_iAMPHIB_ATTACK_MODIFIER;
-	int m_iHILLS_EXTRA_MOVEMENT;
-	int m_iPEAK_EXTRA_MOVEMENT;
 	int m_iMAX_PLOT_LIST_ROWS;
 	int m_iUNIT_MULTISELECT_MAX;
 	int m_iEVENT_MESSAGE_TIME;
@@ -1673,16 +1669,6 @@ inline int CvGlobals::getRIVER_ATTACK_MODIFIER()
 inline int CvGlobals::getAMPHIB_ATTACK_MODIFIER()
 {
 	return m_iAMPHIB_ATTACK_MODIFIER;
-}
-
-inline int CvGlobals::getHILLS_EXTRA_MOVEMENT()
-{
-	return m_iHILLS_EXTRA_MOVEMENT;
-}
-
-inline int CvGlobals::getPEAK_EXTRA_MOVEMENT()
-{
-	return m_iPEAK_EXTRA_MOVEMENT;
 }
 
 inline int CvGlobals::getMAX_PLOT_LIST_ROWS()

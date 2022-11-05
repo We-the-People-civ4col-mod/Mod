@@ -3392,12 +3392,12 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 
 		if (isHills())
 		{
-			iRegularCost += GC.getHILLS_EXTRA_MOVEMENT();
+			iRegularCost += GLOBAL_DEFINE_HILLS_EXTRA_MOVEMENT;
 		}
 
 		if (isPeak())
 		{
-			iRegularCost += GC.getPEAK_EXTRA_MOVEMENT();
+			iRegularCost += GLOBAL_DEFINE_PEAK_EXTRA_MOVEMENT;
 		}
 
 		if (iRegularCost > 0)

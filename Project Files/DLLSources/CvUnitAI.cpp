@@ -16553,11 +16553,11 @@ bool CvUnitAI::AI_improveCity(CvCity* pCity)
 
 				if (plot()->isHills())
 				{
-					iPlotMoveCost += GC.getHILLS_EXTRA_MOVEMENT();
+					iPlotMoveCost += GLOBAL_DEFINE_HILLS_EXTRA_MOVEMENT;
 				}
 				if (plot()->isPeak())
 				{
-					iPlotMoveCost += GC.getPEAK_EXTRA_MOVEMENT();
+					iPlotMoveCost += GLOBAL_DEFINE_PEAK_EXTRA_MOVEMENT;
 				}
 				if (iPlotMoveCost > 1)
 				{
@@ -16702,11 +16702,11 @@ bool CvUnitAI::AI_improveLocalPlot(int iRange, CvCity* pIgnoreCity)
 
 			if (plot()->isHills())
 			{
-				iPlotMoveCost += GC.getHILLS_EXTRA_MOVEMENT();
+				iPlotMoveCost += GLOBAL_DEFINE_HILLS_EXTRA_MOVEMENT;
 			}
 			if (plot()->isPeak())
 			{
-				iPlotMoveCost += GC.getPEAK_EXTRA_MOVEMENT();
+				iPlotMoveCost += GLOBAL_DEFINE_PEAK_EXTRA_MOVEMENT;
 			}
 			if (iPlotMoveCost > 1)
 			{
@@ -17048,7 +17048,7 @@ BuildTypes CvUnitAI::AI_betterPlotBuild(CvPlot* pPlot, BuildTypes eBuild)
 	}
 	else if (pPlot->isHills())
 	{
-		if ((GC.getHILLS_EXTRA_MOVEMENT() > 0) && (iWorkersNeeded > 1))
+		if ((GLOBAL_DEFINE_HILLS_EXTRA_MOVEMENT > 0) && (iWorkersNeeded > 1))
 		{
 			bBuildRoute = true;
 		}
@@ -17086,7 +17086,7 @@ BuildTypes CvUnitAI::AI_betterPlotBuild(CvPlot* pPlot, BuildTypes eBuild)
 					
 					if (pPlot->getWorkingCity() != NULL)
 					{
-						iValue *= 2 + iWorkersNeeded + ((pPlot->isHills() && (iWorkersNeeded > 1)) ? 2 * GC.getHILLS_EXTRA_MOVEMENT() : 0);
+						iValue *= 2 + iWorkersNeeded + ((pPlot->isHills() && (iWorkersNeeded > 1)) ? 2 * GLOBAL_DEFINE_HILLS_EXTRA_MOVEMENT : 0);
 						iValue /= 3;
 					}
 					ImprovementTypes eImprovement = (ImprovementTypes)kOriginalBuildInfo.getImprovement();
