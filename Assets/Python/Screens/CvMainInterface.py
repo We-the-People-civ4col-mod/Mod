@@ -184,11 +184,11 @@ BUILDING_DATA[29] = [84, 40, 20, 13] #Medical Care
 BUILDING_DATA[30] = [80, 90, 20, 8] #Well
 BUILDING_DATA[31] = [87, 76, 20, 10] #Defense
 BUILDING_DATA[32] = [52, 58, 20, 12] #Confectioner
-BUILDING_DATA[33] = [20, 58, 20, 12] #Leather Padder
+BUILDING_DATA[33] = [20, 58, 20, 14] #Leather Padder
 BUILDING_DATA[34] = [4, 74, 20, 12] #Cooking Oil Trader
 BUILDING_DATA[35] = [68, 74, 20, 12] #Peanut Roaster
 BUILDING_DATA[36] = [84, 58, 20, 12] #Potter
-BUILDING_DATA[37] = [20, 76, 20, 12] #Tailor
+BUILDING_DATA[37] = [20, 76, 20, 14] #Tailor
 BUILDING_DATA[38] = [82, 76, 20, 7] #Statue
 BUILDING_DATA[39] = [80, 82, 20, 10] #Graveyard
 
