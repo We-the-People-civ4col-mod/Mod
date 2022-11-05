@@ -397,6 +397,24 @@
             <VictoryThresholds/>
         </BuildingClassInfo>
         <BuildingClassInfo>
+            <Type>BUILDINGCLASS_FIREWORKERS_HOUSE</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_FIREWORKER_HOUSE</Description>
+            <DefaultBuilding>BUILDING_FIREWORKERS_HOUSE</DefaultBuilding>
+            <VictoryThresholds/>
+        </BuildingClassInfo>
+        <BuildingClassInfo>
+            <Type>BUILDINGCLASS_FIREWORKERS_SHOP</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_FIREWORKER_SHOP</Description>
+            <DefaultBuilding>BUILDING_FIREWORKERS_SHOP</DefaultBuilding>
+            <VictoryThresholds/>
+        </BuildingClassInfo>
+        <BuildingClassInfo>
+            <Type>BUILDINGCLASS_FIREWORKERS_FACTORY</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_FIREWORKER_FACTORY</Description>
+            <DefaultBuilding>BUILDING_FIREWORKERS_FACTORY</DefaultBuilding>
+            <VictoryThresholds/>
+        </BuildingClassInfo>
+        <BuildingClassInfo>
             <Type>BUILDINGCLASS_STABLE</Type>
             <Description>TXT_KEY_BUILDINGCLASS_STABLE</Description>
             <DefaultBuilding>BUILDING_STABLE</DefaultBuilding>

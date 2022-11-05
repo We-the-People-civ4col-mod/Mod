@@ -617,4 +617,98 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+   <!-- FIREWORKER -->
+    <TEXT>
+        <Tag>TXT_KEY_SPECIALBUILDING_BLACK_POWDER</Tag>
+        <English>Powder Mill</English>
+        <German>
+            <Text>Pulvermühle</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_HOUSE</Tag>
+        <English>Fireworker's House</English>
+        <German>
+            <Text>Haus des Pulvermachers</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_SHOP</Tag>
+        <English>Fireworker's Shop</English>
+        <German>
+            <Text>Pulverladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_FACTORY</Tag>
+        <English>Powder Factory</English>
+        <German>
+            <Text>Pulverfabrik</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE</Tag>
+        <English>Fireworker's House</English>
+        <German>
+            <Text>Haus des Pulvermachers</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP</Tag>
+        <English>Fireworker's Shop</English>
+        <German>
+            <Text>Pulverladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY</Tag>
+        <English>Powder Factory</English>
+        <German>
+            <Text>Pulverfabrik</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+     <TEXT>
+        <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>

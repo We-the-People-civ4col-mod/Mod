@@ -2689,5 +2689,41 @@
             <KFM/>
             <Button>Art/interface/buttons/New_Building_Buttons/Tailory_Button.dds</Button>
         </BuildingArtInfo>
+        <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_FIREWORKERS_HOUSE</Type>
+            <LSystem>LSYSTEM_3x3</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,5,7</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>1.8</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <NIF>Art/Structures/Buildings/Fireworker_Buildings/fireworkers_house.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_buildings.dds,3,10</Button>
+        </BuildingArtInfo>
+		<BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_FIREWORKERS_SHOP</Type>
+            <LSystem>LSYSTEM_3x3</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR3.dds,6,7</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>1.8</fScale>
+            <fInterfaceScale>0.6</fInterfaceScale>
+            <NIF>Art/Structures/Buildings/Fireworker_Buildings/fireworkers_shop.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_buildings.dds,4,10</Button>
+        </BuildingArtInfo>
+		<BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_FIREWORKERS_FACTORY</Type>
+            <LSystem>LSYSTEM_3x3</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR3.dds,7,7</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>1.8</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
+            <NIF>Art/Structures/Buildings/Fireworker_Buildings/fireworkers_factory.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_buildings.dds,5,10</Button>
+        </BuildingArtInfo>
     </BuildingArtInfos>
 </Civ4ArtDefines>
