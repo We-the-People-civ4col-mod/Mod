@@ -2757,7 +2757,7 @@
             <iTextureIndex>3</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,7,10</Icon>
-            <CombiIcon>,Art/colonization_atlas_resources.dds,3,9</CombiIcon>
+            <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Roastery_Combi_Icon.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,9,1</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,7,1</Button>
         </YieldInfo>
@@ -2799,7 +2799,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,1,11</Icon>
-            <CombiIcon>,Art/colonization_atlas_resources.dds,3,9</CombiIcon>
+            <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Roastery_Combi_Icon.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,1,2</Button>
         </YieldInfo>
@@ -2841,7 +2841,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>Art/interface/buttons/New_Yieds_Icons/Roasted_Peanuts_Goods_Icon.dds</Icon>
-            <CombiIcon>,Art/colonization_atlas_resources.dds,3,9</CombiIcon>
+            <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Roastery_Combi_Icon.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Roasted_Peanuts_Goods_Button.dds</Button>
         </YieldInfo>
