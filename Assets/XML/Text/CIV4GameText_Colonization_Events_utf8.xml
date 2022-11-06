@@ -386,13 +386,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FESTIVITY2</Tag>
-        <English>A heir to the throne has been born! His Majesty has invited all the European high nobility to his court. He expects us to deliver wares from [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] to Europe.</English>
+        <English>An heir to the throne has been born! His Majesty has invited all the European high nobility to his court. He expects us to deliver wares from [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] to Europe.</English>
         <French>Un héritier au trône vient de naître. En guise de célébration, notre Roi a invité à sa cour les plus grands nobles de toute l'Europe. Son altesse attend que nous lui livrions des marchandises depuis [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vers l'Europe.</French>
         <German>Ein Thronfolger wurde geboren. Seine Majestät hat den gesamten Hochadel Europas zu den Feierlichkeiten eingeladen. Er erwartet, dass wir zu diesem Prunk und Pomp Warenlieferungen aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] beisteuern.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_1_HELP</Tag>
-        <English>[COLOR_FONT_GOLD]His Majesty is not amused. Rumours report that he was asking for his smelling salts.[COLOR_REVERT]</English>
+        <English>[COLOR_FONT_GOLD]His Majesty is not amused. Rumours report that He was asking for His smelling salts.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Le Roi n'apprécie pas votre humour.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Kammerdiener berichten, dass er nach seinem Riechsalz verlangte.[COLOR_REVERT]</German>
     </TEXT>
@@ -454,7 +454,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_VOLCANO_1</Tag>
-        <English>Milord, terrible things have happened at [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. First the birds fell silent. Then the earth rumbled. And then, then the mountain next to the city burst, and a volcano rose from the rock. It shot glowing hot stones into the air. They fell on the nearby town, killing chickens and dogs and many a small child. Finally, thick flakes of ash floated down and laid a black shroud over the settlement. What fertile misfortune! The survivors beg you to send help.</English>
+        <English>Milord, terrible things have happened at [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. First the birds fell silent. Then the earth rumbled. And then, then the mountain next to the city burst, and a volcano rose from the rock. It shot glowing hot stones into the air. They fell on the nearby town, killing chickens and dogs and many a small child. Finally, thick flakes of ash floated down, laying a black shroud over the settlement. What a catastrophe for the crops! The survivors beg you to send help.</English>
         <French>Milord, des choses terribles sont arrivées à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. D'abord, les oiseaux se sont tus. Puis la terre a grondé. Et puis, la montagne à côté de la ville a éclaté, et un volcan s'est élevé de la roche. Il a tiré des pierres rouges en l'air. Ils sont descendus dans la ville voisine, tuant des poulets et des chiens et beaucoup de petits enfants. Enfin, d'épais flocons de cendres sont tombés et ont recouvert le village d'un linceul noir. Quel malheur fertile ! Les survivants vous supplient d'envoyer de l'aide.</French>
         <German>Milord, Schreckliches ist bei [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] geschehen. Zunächst verstummten die Vögel. Dann grollte die Erde. Und dann, dann barst der Berg neben der Stadt, und ein Vulkan erstieg aus dem Gestein. Er schoss glühendheiße Steine in die Luft. Sie gingen in der nahen Stadt nieder und erschlugen Hühner und Hunde und auch so manches kleine Kind. Schließlich schwebten dichte Ascheflocken herab und legten ein schwarzes Leichentuch über die Siedlung. Welch fruchtbares Unglück! Die Überlebenden flehen Euch an, Hilfe zu schicken.</German>
         <Italian>Signore, sono successe cose terribili a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Prima gli uccelli si sono ammutoliti. Poi la terra ha rimbombato. E poi, poi la montagna vicino alla città è scoppiata, e un vulcano è sorto dalla roccia. Ha sparato rocce incandescenti nell'aria. Sono scesi nella città vicina, uccidendo polli e cani e molti bambini piccoli. Infine, spesse scaglie di cenere scesero e stesero un sudario nero sull'insediamento. Che fertile sfortuna! I sopravvissuti vi implorano di mandare aiuto.</Italian>
@@ -486,7 +486,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_3</Tag>
-        <English>The farmers of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] are increasingly being ambushed by highwaymen. Gradually, hardly any of the locals dare to go to their fields.</English>
+        <English>The farmers of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] are increasingly being ambushed by highwaymen. It's so bad hardly any of the locals dare to work their fields.</English>
         <French>De plus en plus souvent, les bandits de grand chemin guettent les paysans de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Petit à petit, presque plus aucun habitant n'ose se rendre dans ses champs.</French>
         <German>Immer öfter lauern Wegelagerer den Bauern von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] auf. Allmählich traut sich kaum ein Einheimischer noch, seinen Hof zu verlassen und auf den Feldern zu arbeiten.</German>
         <Italian>Sempre più spesso i briganti sono in attesa dei contadini di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. A poco a poco, quasi nessuno dei locali osa andare nei loro campi.</Italian>
