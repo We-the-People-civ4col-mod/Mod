@@ -216,9 +216,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SECONDCOLONY_2_HELP</Tag>
-        <English>[COLOR_FONT_GOLD]His Majesty is offering weapons for the defense of your colony.[COLOR_REVERT]</English>
+        <English>[COLOR_FONT_GOLD]His Majesty is offering blades for the town guard of your colony.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Votre Roi vous offre des armes pour défendre votre colonie.[COLOR_REVERT]</French>
-        <German>[COLOR_FONT_GOLD]Seine Majestät bietet Euch Schusswaffen an, mit denen Ihr die Kolonie verteidigen könnt.[COLOR_REVERT]</German>
+        <German>[COLOR_FONT_GOLD]Seine Majestät bietet Euch Klingen für die Stadtwache an, damit Ihr die Kolonie verteidigen könnt.[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FOREST_FIRE</Tag>

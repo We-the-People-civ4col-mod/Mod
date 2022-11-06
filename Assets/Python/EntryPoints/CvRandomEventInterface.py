@@ -325,7 +325,7 @@ def applySecondCity2(argsList):
 	if not player.isHuman():
 		city = player.firstCity(true)[0]
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
-	iYield1 = gc.getInfoTypeForString("YIELD_MUSKETS")
+	iYield1 = gc.getInfoTypeForString("YIELD_BLADES")
 	city.changeYieldStored(iYield1, event.getGenericParameter(1)*Speed.getTrainPercent()/100)
 
 
@@ -338,7 +338,7 @@ def getHelpSecondCity2(argsList):
 	king = gc.getPlayer(eking)
 	city = player.getCity(kTriggeredData.iCityId)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
-	iYield1 = gc.getInfoTypeForString("YIELD_MUSKETS")
+	iYield1 = gc.getInfoTypeForString("YIELD_BLADES")
 	szHelp = localText.getText("TXT_KEY_EVENT_SECONDCOLONY_2_HELP", (king.getCivilizationAdjectiveKey(), ))
 	if event.getGenericParameter(1) <> 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_YIELD_GAIN", (event.getGenericParameter(1)*Speed.getTrainPercent()/100,  gc.getYieldInfo(iYield1).getChar(), city.getNameKey()))
