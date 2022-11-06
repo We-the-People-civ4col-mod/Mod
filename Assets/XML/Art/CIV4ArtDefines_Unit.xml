@@ -17656,8 +17656,8 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_CONSTRUCTION_SUPPLIES</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Construction_Supplies_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Construction_Supplies_Europe.dds</FullLengthIcon>
+            <Button>,Art/colonization_atlas_units.dds,1,12</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Construction_Supplies.dds</FullLengthIcon>
             <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Construction_Supplies/Supplies.nif</NIF>
