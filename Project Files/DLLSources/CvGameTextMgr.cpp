@@ -2987,8 +2987,12 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			// WTP, ray, Improvements give Bonus to their City - PART 3 - START
 			if(GC.getImprovementInfo(eImprovement).getStorageModifierForCity() > 0)
 			{
+				// get Improvement value
+				int iStorageModifierForCity = GC.getImprovementInfo(eImprovement).getStorageModifierForCity();
+				// we modify by gamespeed ?
+				iStorageModifierForCity = iStorageModifierForCity * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
 				szString.append(NEWLINE);
-				szString.append(gDLL->getText("TXT_KEY_PLOT_HELP_IMPROVEMENT_STORAGE", GC.getImprovementInfo(eImprovement).getStorageModifierForCity()));
+				szString.append(gDLL->getText("TXT_KEY_PLOT_HELP_IMPROVEMENT_STORAGE", iStorageModifierForCity));
 			}
 			// WTP, ray, Improvements give Bonus to their City - PART 3 - END
 		}
@@ -7362,8 +7366,12 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 	// WTP, ray, Improvements give Bonus to their City - PART 3 - START
 	if (info.getStorageModifierForCity() > 0)
 	{
+		// get Improvement value
+		int iStorageModifierForCity = info.getStorageModifierForCity();
+		// we modify by gamespeed
+		iStorageModifierForCity = iStorageModifierForCity * iGrowthPercent / 100;
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_STORAGE_MODIFIER_IF_WORKED", info.getStorageModifierForCity()));
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_STORAGE_MODIFIER_IF_WORKED", iStorageModifierForCity));
 		// WTP, ray, Improvements give Bonus to their City - END
 	}
 	// WTP, ray, Improvements give Bonus to their City - PART 3 - END
