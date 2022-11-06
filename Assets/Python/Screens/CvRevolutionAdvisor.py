@@ -137,19 +137,20 @@ class CvRevolutionAdvisor:
 
 		## R&R, Robert Surcouf,  Revolution Advisor Screen, Cannons, Start
 		#CityCount, iHorses, iMuskets = 0, 0, 0
-		CityCount, iHorses, iBlades, iMuskets, iCannons = 0, 0, 0, 0, 0
+		CityCount, iHorses, iBlades, iMuskets, iCannons, iBlackpowder = 0, 0, 0, 0, 0, 0
 		(city, iter) = self.player.firstCity(true)
 		while(city):
 			iHorses += city.getYieldStored(gc.getInfoTypeForString("YIELD_HORSES"))
 			iBlades += city.getYieldStored(gc.getInfoTypeForString("YIELD_BLADES")) # R&R, ray, Blades
 			iMuskets += city.getYieldStored(gc.getInfoTypeForString("YIELD_MUSKETS"))
 			iCannons += city.getYieldStored(gc.getInfoTypeForString("YIELD_CANNONS")) ## R&R, Robert Surcouf
+			iBlackpowder += city.getYieldStored(gc.getInfoTypeForString("YIELD_BLACK_POWDER"))
 			(city, iter) = self.player.nextCity(iter, true)
 
-		screen.addDDSGFC( "HorseIcon", gc.getYieldInfo(gc.getInfoTypeForString("YIELD_HORSES")).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 8 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addDDSGFC( "HorseIcon", gc.getYieldInfo(gc.getInfoTypeForString("YIELD_HORSES")).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 5 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		HorseText = str(iHorses)
 		HorseText = localText.changeTextColor(HorseText, gc.getInfoTypeForString("COLOR_FONT_GOLD"))
-		screen.setLabel( "Horse Count", "Background", u"<font=4>" + HorseText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.XResolution * 40 / 100), (self.YResolution * 8 / 12) + self.ICON_BUTTON_SIZE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.setLabel( "Horse Count", "Background", u"<font=4>" + HorseText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.XResolution * 40 / 100), (self.YResolution * 5 / 12) + self.ICON_BUTTON_SIZE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 	
 		screen.addDDSGFC( "MusketIcon", gc.getYieldInfo(gc.getInfoTypeForString("YIELD_MUSKETS")).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 9 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		GunText = str(iMuskets) 
@@ -160,6 +161,11 @@ class CvRevolutionAdvisor:
 		CannonText = str(iCannons) 
 		CannonText = localText.changeTextColor(CannonText, gc.getInfoTypeForString("COLOR_FONT_GOLD"))
 		screen.setLabel( "Cannon Count", "Background", u"<font=4>" + CannonText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.XResolution * 40 / 100), (self.YResolution * 7 / 12) + self.ICON_BUTTON_SIZE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		
+		screen.addDDSGFC( "BlackPowderIcon", gc.getYieldInfo(gc.getInfoTypeForString("YIELD_BLACK_POWDER")).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 8 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		BlackPowderText = str(iBlackpowder) 
+		BlackPowderText = localText.changeTextColor(BlackPowderText, gc.getInfoTypeForString("COLOR_FONT_GOLD"))
+		screen.setLabel( "Cannon Count", "Background", u"<font=4>" + BlackPowderText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.XResolution * 40 / 100), (self.YResolution * 8 / 12) + self.ICON_BUTTON_SIZE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		
 		screen.addDDSGFC( "BladesIcon", gc.getYieldInfo(gc.getInfoTypeForString("YIELD_BLADES")).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 6 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		BladesText = str(iBlades) 

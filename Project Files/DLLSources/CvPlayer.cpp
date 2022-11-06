@@ -11164,8 +11164,8 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
 		iStoredWeapons += pLoopCity->getYieldStored(YIELD_BLADES);
 		iStoredWeapons += pLoopCity->getYieldStored(YIELD_MUSKETS);
 		iStoredWeapons += pLoopCity->getYieldStored(YIELD_CANNONS);
+		iStoredWeapons += pLoopCity->getYieldStored(YIELD_BLACK_POWDER);
 		iStoredHorses += pLoopCity->getYieldStored(YIELD_HORSES);
-		// WTP, ray, not sure if we also need something for YIELD_BLACK_POWDER
 	}
 
 	//koma13
