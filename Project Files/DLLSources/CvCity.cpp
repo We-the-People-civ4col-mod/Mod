@@ -9904,7 +9904,7 @@ int CvCity::getImprovementStorageModifierForCity() const
 	}
 
 	// consider GameSpeed
-	StorageModifierForCity = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
+	StorageModifierForCity = StorageModifierForCity* GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
 
 	return StorageModifierForCity;
 }
