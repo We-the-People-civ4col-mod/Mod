@@ -2705,7 +2705,7 @@
             <Type>ART_DEF_BUILDING_FIREWORKERS_SHOP</Type>
             <LSystem>LSYSTEM_3x3</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR3.dds,6,7</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,6,7</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.8</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
@@ -2717,7 +2717,7 @@
             <Type>ART_DEF_BUILDING_FIREWORKERS_FACTORY</Type>
             <LSystem>LSYSTEM_3x3</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR3.dds,7,7</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,7,7</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.8</fScale>
             <fInterfaceScale>0.5</fInterfaceScale>
