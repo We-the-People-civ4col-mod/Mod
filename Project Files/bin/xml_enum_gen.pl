@@ -227,6 +227,11 @@ sub handleGlobalDefineALT
 	my %vartype;
 	my %hardcoded;
 	
+	# add all vanilla values
+	# should they be present in GlobalDefinesALT.xml, then that will be used instead.
+	# vanilla tags not mentioned in the mod will be hardcoded as they are unlikely to change.
+	addVanillaValues(\%value, \%vartype, \%hardcoded);
+	
 	my $declare_hardcoded = "";
 	my $declare_dynamic = "";
 	
@@ -321,4 +326,198 @@ sub handleGlobalDefineALT
 	$output .= $declare_dynamic;
 	$output .= "#endif // hardcoded xml\n";
 	
+}
+
+sub addVanillaSingleValue
+{
+	my $valueContainer = shift;
+	my $tag = shift;
+	my $number = shift;
+	
+	$$valueContainer{value}{$tag} = $number;
+	$$valueContainer{vartype}{$tag} = "int";
+	$$valueContainer{hardcoded}{$tag} = 1;
+}
+
+sub addVanillaValues
+{
+	my %valueContainer =
+	(
+		value => shift,
+		vartype => shift,
+		hardcoded => shift,
+	);
+	
+	addVanillaSingleValue(\%valueContainer, "CIV4_VERSION", 101);
+	addVanillaSingleValue(\%valueContainer, "MIN_VERSION", 000);
+	addVanillaSingleValue(\%valueContainer, "SAVE_VERSION", 002);
+	addVanillaSingleValue(\%valueContainer, "MAX_NUM_LANGUAGES", 100);
+	addVanillaSingleValue(\%valueContainer, "MAX_PLOT_LIST_SIZE", 10);
+	addVanillaSingleValue(\%valueContainer, "MAX_PLOT_LIST_ROWS", 6);
+	addVanillaSingleValue(\%valueContainer, "START_YEAR", 1492);
+	addVanillaSingleValue(\%valueContainer, "WEEKS_PER_MONTHS", 4);
+	addVanillaSingleValue(\%valueContainer, "PLOT_VISIBILITY_RANGE", 1);
+	addVanillaSingleValue(\%valueContainer, "UNIT_VISIBILITY_RANGE", 1);
+	addVanillaSingleValue(\%valueContainer, "PEAK_SEE_FROM_CHANGE", 2);
+	addVanillaSingleValue(\%valueContainer, "PEAK_SEE_THROUGH_CHANGE", 2);
+	addVanillaSingleValue(\%valueContainer, "HILLS_SEE_FROM_CHANGE", 1);
+	addVanillaSingleValue(\%valueContainer, "HILLS_SEE_THROUGH_CHANGE", 1);
+	addVanillaSingleValue(\%valueContainer, "SEAWATER_SEE_FROM_CHANGE", 0);
+	addVanillaSingleValue(\%valueContainer, "MOVE_DENOMINATOR", 60);
+	addVanillaSingleValue(\%valueContainer, "STARTING_DISTANCE_PERCENT", 12);
+	addVanillaSingleValue(\%valueContainer, "OWN_TEAM_STARTING_MODIFIER", 80);
+	addVanillaSingleValue(\%valueContainer, "RIVAL_TEAM_STARTING_MODIFIER", 125);
+	addVanillaSingleValue(\%valueContainer, "MIN_CIV_STARTING_DISTANCE", 10);
+	addVanillaSingleValue(\%valueContainer, "MIN_CITY_RANGE", 1);
+	addVanillaSingleValue(\%valueContainer, "FREE_CITY_CULTURE", 2);
+	addVanillaSingleValue(\%valueContainer, "FREE_CITY_ADJACENT_CULTURE", 1);
+	addVanillaSingleValue(\%valueContainer, "CITY_FREE_CULTURE_GROWTH_FACTOR", 20);
+	addVanillaSingleValue(\%valueContainer, "OWNERSHIP_SCORE_DURATION_THRESHOLD", 20);
+	addVanillaSingleValue(\%valueContainer, "INITIAL_CITY_POPULATION", 0);
+	addVanillaSingleValue(\%valueContainer, "INITIAL_AI_CITY_PRODUCTION", 10);
+	addVanillaSingleValue(\%valueContainer, "BASE_CITY_GROWTH_THRESHOLD", 200);
+	addVanillaSingleValue(\%valueContainer, "CITY_GROWTH_MULTIPLIER", 0);
+	addVanillaSingleValue(\%valueContainer, "FOOD_CONSUMPTION_PER_POPULATION", 2);
+	addVanillaSingleValue(\%valueContainer, "NEW_HURRY_MODIFIER", 50);
+	addVanillaSingleValue(\%valueContainer, "MIN_TIMER_UNIT_DOUBLE_MOVES", 32);
+	addVanillaSingleValue(\%valueContainer, "COMBAT_DAMAGE", 20);
+	addVanillaSingleValue(\%valueContainer, "MAX_HIT_POINTS", 100);
+	addVanillaSingleValue(\%valueContainer, "COMBAT_DIE_SIDES", 1000);
+	addVanillaSingleValue(\%valueContainer, "HILLS_EXTRA_DEFENSE", 25);
+	addVanillaSingleValue(\%valueContainer, "RIVER_ATTACK_MODIFIER", -10);
+	addVanillaSingleValue(\%valueContainer, "AMPHIB_ATTACK_MODIFIER", -50);
+	addVanillaSingleValue(\%valueContainer, "ENEMY_HEAL_RATE", 5);
+	addVanillaSingleValue(\%valueContainer, "NEUTRAL_HEAL_RATE", 10);
+	addVanillaSingleValue(\%valueContainer, "FRIENDLY_HEAL_RATE", 15);
+	addVanillaSingleValue(\%valueContainer, "CITY_HEAL_RATE", 20);
+	addVanillaSingleValue(\%valueContainer, "GREAT_GENERALS_THRESHOLD_INCREASE", 50);
+	addVanillaSingleValue(\%valueContainer, "GREAT_GENERALS_THRESHOLD_INCREASE_TEAM", 50);
+	addVanillaSingleValue(\%valueContainer, "GREAT_GENERALS_THRESHOLD", 30);
+	addVanillaSingleValue(\%valueContainer, "IMMIGRATION_THRESHOLD_INCREASE", 20);
+	addVanillaSingleValue(\%valueContainer, "IMMIGRATION_THRESHOLD", 5);
+	addVanillaSingleValue(\%valueContainer, "EUROPE_MARKET_CORRELATION_PERCENT", 0);
+	addVanillaSingleValue(\%valueContainer, "REVOLUTION_EUROPE_UNIT_THRESHOLD_INCREASE", 25);
+	addVanillaSingleValue(\%valueContainer, "REVOLUTION_EUROPE_UNIT_THRESHOLD", 75);
+	addVanillaSingleValue(\%valueContainer, "KING_INITIAL_UNIT_INCREASE", 4);
+	addVanillaSingleValue(\%valueContainer, "REVOLUTION_EUROPE_UNIT_SHIP_MODIFIER", -50);
+	addVanillaSingleValue(\%valueContainer, "EDUCATION_THRESHOLD_INCREASE", 15);
+	addVanillaSingleValue(\%valueContainer, "EDUCATION_THRESHOLD", 30);
+	addVanillaSingleValue(\%valueContainer, "MISSIONARY_THRESHOLD_INCREASE", 25);
+	addVanillaSingleValue(\%valueContainer, "MISSIONARY_THRESHOLD", 1000);
+	addVanillaSingleValue(\%valueContainer, "MISSIONARY_RATE_EFFECT_ON_SUCCESS", 50);
+	addVanillaSingleValue(\%valueContainer, "NATIVE_TEACH_THRESHOLD_INCREASE", 50);
+	addVanillaSingleValue(\%valueContainer, "LAKE_PLOT_RAND", 160);
+	addVanillaSingleValue(\%valueContainer, "PLOTS_PER_RIVER_EDGE", 12);
+	addVanillaSingleValue(\%valueContainer, "RIVER_SOURCE_MIN_RIVER_RANGE", 4);
+	addVanillaSingleValue(\%valueContainer, "RIVER_SOURCE_MIN_SEAWATER_RANGE", 2);
+	addVanillaSingleValue(\%valueContainer, "LAKE_MAX_AREA_SIZE", 9);
+	addVanillaSingleValue(\%valueContainer, "HILLS_EXTRA_MOVEMENT", 1);
+	addVanillaSingleValue(\%valueContainer, "PEAK_EXTRA_MOVEMENT", 2);
+	addVanillaSingleValue(\%valueContainer, "FEATURE_GROWTH_MODIFIER", 25);
+	addVanillaSingleValue(\%valueContainer, "ROUTE_FEATURE_GROWTH_MODIFIER", -50);
+	addVanillaSingleValue(\%valueContainer, "EXTRA_YIELD", 1);
+	addVanillaSingleValue(\%valueContainer, "FORTIFY_MODIFIER_PER_TURN", 5);
+	addVanillaSingleValue(\%valueContainer, "MAX_FORTIFY_TURNS", 5);
+	addVanillaSingleValue(\%valueContainer, "FATHER_COST_EXTRA_TEAM_MEMBER_MODIFIER", 50);
+	addVanillaSingleValue(\%valueContainer, "PEACE_TREATY_LENGTH", 10);
+	addVanillaSingleValue(\%valueContainer, "COLONIAL_FORCED_PEACE_TURNS", 20);
+	addVanillaSingleValue(\%valueContainer, "OCCUPATION_CULTURE_PERCENT_THRESHOLD", 75);
+	addVanillaSingleValue(\%valueContainer, "BASE_OCCUPATION_TURNS", 3);
+	addVanillaSingleValue(\%valueContainer, "OCCUPATION_TURNS_POPULATION_PERCENT", 50);
+	addVanillaSingleValue(\%valueContainer, "DIFFERENT_TEAM_FEATURE_PRODUCTION_PERCENT", 67);
+	addVanillaSingleValue(\%valueContainer, "UNIT_PRODUCTION_PERCENT", 100);
+	addVanillaSingleValue(\%valueContainer, "BUILDING_PRODUCTION_PERCENT", 100);
+	addVanillaSingleValue(\%valueContainer, "MAXED_UNIT_GOLD_PERCENT", 100);
+	addVanillaSingleValue(\%valueContainer, "MAXED_BUILDING_GOLD_PERCENT", 100);
+	addVanillaSingleValue(\%valueContainer, "MAX_CITY_DEFENSE_DAMAGE", 100);
+	addVanillaSingleValue(\%valueContainer, "CITY_DEFENSE_DAMAGE_HEAL_RATE", 5);
+	addVanillaSingleValue(\%valueContainer, "RAZING_CULTURAL_PERCENT_THRESHOLD", 25);
+	addVanillaSingleValue(\%valueContainer, "BASE_CAPTURE_GOLD", 20);
+	addVanillaSingleValue(\%valueContainer, "CAPTURE_GOLD_PER_POPULATION", 10);
+	addVanillaSingleValue(\%valueContainer, "CAPTURE_GOLD_RAND1", 50);
+	addVanillaSingleValue(\%valueContainer, "CAPTURE_GOLD_RAND2", 50);
+	addVanillaSingleValue(\%valueContainer, "CAPTURE_GOLD_MAX_TURNS", 50);
+	addVanillaSingleValue(\%valueContainer, "MIN_EXPERIENCE_PER_COMBAT", 1);
+	addVanillaSingleValue(\%valueContainer, "MAX_EXPERIENCE_PER_COMBAT", 10);
+	addVanillaSingleValue(\%valueContainer, "EXPERIENCE_FROM_WITHDRAWL", 1);
+	addVanillaSingleValue(\%valueContainer, "MAX_EXPERIENCE_AFTER_UPGRADE", 10);
+	addVanillaSingleValue(\%valueContainer, "BUILDING_PRODUCTION_DECAY_TIME", 50);
+	addVanillaSingleValue(\%valueContainer, "BUILDING_PRODUCTION_DECAY_PERCENT", 99);
+	addVanillaSingleValue(\%valueContainer, "UNIT_PRODUCTION_DECAY_TIME", 10);
+	addVanillaSingleValue(\%valueContainer, "UNIT_PRODUCTION_DECAY_PERCENT", 98);
+	addVanillaSingleValue(\%valueContainer, "BASE_UNIT_UPGRADE_COST", 20);
+	addVanillaSingleValue(\%valueContainer, "UNIT_UPGRADE_COST_PER_PRODUCTION", 3);
+	addVanillaSingleValue(\%valueContainer, "WAR_SUCCESS_DEFENDING", 3);
+	addVanillaSingleValue(\%valueContainer, "WAR_SUCCESS_ATTACKING", 4);
+	addVanillaSingleValue(\%valueContainer, "WAR_SUCCESS_UNIT_CAPTURING", 1);
+	addVanillaSingleValue(\%valueContainer, "WAR_SUCCESS_CITY_CAPTURING", 10);
+	addVanillaSingleValue(\%valueContainer, "DIPLOMACY_VALUE_REMAINDER", 10);
+	addVanillaSingleValue(\%valueContainer, "SCORE_POPULATION_FACTOR", 0);
+	addVanillaSingleValue(\%valueContainer, "SCORE_LAND_FACTOR", 4000);
+	addVanillaSingleValue(\%valueContainer, "SCORE_FATHER_FACTOR", 4000);
+	addVanillaSingleValue(\%valueContainer, "SCORE_FREE_PERCENT", 0);
+	addVanillaSingleValue(\%valueContainer, "SCORE_VICTORY_PERCENT", 0);
+	addVanillaSingleValue(\%valueContainer, "SCORE_HANDICAP_PERCENT_OFFSET", -60);
+	addVanillaSingleValue(\%valueContainer, "SCORE_HANDICAP_PERCENT_PER", 20);
+	addVanillaSingleValue(\%valueContainer, "SCORE_TAX_FACTOR", 100);
+	addVanillaSingleValue(\%valueContainer, "WARLORD_EXTRA_EXPERIENCE_PER_UNIT_PERCENT", 0);
+	addVanillaSingleValue(\%valueContainer, "COMBAT_EXPERIENCE_IN_BORDERS_PERCENT", 100);
+	addVanillaSingleValue(\%valueContainer, "VICTORY_SOUNDTRACK_AVAILABLE", 0);
+	addVanillaSingleValue(\%valueContainer, "MAX_WITHDRAWAL_PROBABILITY", 90);
+	addVanillaSingleValue(\%valueContainer, "PLAYER_ALWAYS_RAZES_CITIES", 0);
+	addVanillaSingleValue(\%valueContainer, "MIN_WATER_SIZE_FOR_OCEAN", 10);
+	addVanillaSingleValue(\%valueContainer, "AI_CAN_DISBAND_UNITS", 1);
+	addVanillaSingleValue(\%valueContainer, "ADVANCED_START_ALLOW_UNITS_OUTSIDE_CITIES", 0);
+	addVanillaSingleValue(\%valueContainer, "ADVANCED_START_MAX_UNITS_PER_CITY", -1);
+	addVanillaSingleValue(\%valueContainer, "ADVANCED_START_SIGHT_RANGE", 4);
+	addVanillaSingleValue(\%valueContainer, "ADVANCED_START_CITY_COST", 67);
+	addVanillaSingleValue(\%valueContainer, "ADVANCED_START_CITY_COST_INCREASE", 0);
+	addVanillaSingleValue(\%valueContainer, "ADVANCED_START_POPULATION_COST", 15);
+	addVanillaSingleValue(\%valueContainer, "ADVANCED_START_POPULATION_COST_INCREASE", 0);
+	addVanillaSingleValue(\%valueContainer, "ADVANCED_START_CULTURE_COST", 25);
+	addVanillaSingleValue(\%valueContainer, "ADVANCED_START_VISIBILITY_COST", 2);
+	addVanillaSingleValue(\%valueContainer, "ADVANCED_START_VISIBILITY_COST_INCREASE", 3);
+	addVanillaSingleValue(\%valueContainer, "ADVANCED_START_CITY_PLACEMENT_MAX_RANGE", 6);
+	addVanillaSingleValue(\%valueContainer, "NEW_CITY_BUILDING_VALUE_MODIFIER", -60);
+	addVanillaSingleValue(\%valueContainer, "EVENT_PROBABILITY_ROLL_SIDES", 100);
+	addVanillaSingleValue(\%valueContainer, "FIRST_EVENT_DELAY_TURNS", 0);
+	addVanillaSingleValue(\%valueContainer, "CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY", 0);
+	addVanillaSingleValue(\%valueContainer, "USE_MODDERS_PLAYEROPTION_1", 0);
+	addVanillaSingleValue(\%valueContainer, "USE_MODDERS_PLAYEROPTION_2", 0);
+	addVanillaSingleValue(\%valueContainer, "USE_MODDERS_PLAYEROPTION_3", 0);
+	addVanillaSingleValue(\%valueContainer, "CITY_YIELD_CAPACITY", 100);
+	addVanillaSingleValue(\%valueContainer, "CITY_YIELD_DECAY_PERCENT", 10);
+	addVanillaSingleValue(\%valueContainer, "MIN_CITY_YIELD_DECAY", 5);
+	addVanillaSingleValue(\%valueContainer, "BUY_PLOT_MIN_CULTURE", 20);
+	addVanillaSingleValue(\%valueContainer, "BUY_PLOT_BASE_CULTURE_COST", 1);
+	addVanillaSingleValue(\%valueContainer, "BUY_PLOT_OWNED_COST_MODIFIER", 100);
+	addVanillaSingleValue(\%valueContainer, "BUY_PLOT_CULTURE_RANGE", 1);
+	addVanillaSingleValue(\%valueContainer, "BUY_PLOT_SELLER_INCOME_PERCENT", 90);
+	addVanillaSingleValue(\%valueContainer, "ENABLE_OPEN_BORDERS", 1);
+	addVanillaSingleValue(\%valueContainer, "ENABLE_GOLD_TRADING", 1);
+	addVanillaSingleValue(\%valueContainer, "ENABLE_MAP_TRADING", 1);
+	addVanillaSingleValue(\%valueContainer, "ENABLE_DEFENSIVE_PACT_TRADING", 1);
+	addVanillaSingleValue(\%valueContainer, "ENABLE_ALLIANCE_TRADING", 1);
+	addVanillaSingleValue(\%valueContainer, "TAX_TRADE_THRESHOLD", 200);
+	addVanillaSingleValue(\%valueContainer, "TAX_TRADE_THRESHOLD_TAX_RATE_PERCENT", 1000);
+	addVanillaSingleValue(\%valueContainer, "TAX_TRADE_THRESHOLD_ATTITUDE_PERCENT", 100);
+	addVanillaSingleValue(\%valueContainer, "TAX_INCREASE_CHANCE", 20);
+	addVanillaSingleValue(\%valueContainer, "TAX_RATE_MAX_INCREASE", 5);
+	addVanillaSingleValue(\%valueContainer, "NO_BAD_GOODIES_GOLD_PERCENT", 200);
+	addVanillaSingleValue(\%valueContainer, "NO_BAD_GOODIES_EXPERIENCE_PERCENT", 150);
+	addVanillaSingleValue(\%valueContainer, "REBEL_SENTIMENT_BELLS_FACTOR", 25);
+	addVanillaSingleValue(\%valueContainer, "REBEL_SENTIMENT_TURN_WEIGHT", 10);
+	addVanillaSingleValue(\%valueContainer, "MAX_REBEL_YIELD_MODIFIER", 50);
+	addVanillaSingleValue(\%valueContainer, "MAX_REBEL_COMBAT_MULTIPLER", 100);
+	addVanillaSingleValue(\%valueContainer, "REBEL_PERCENT_FOR_REVOLUTION", 50);
+	addVanillaSingleValue(\%valueContainer, "SETTLEMENT_TREASURE_YIELD", 100);
+	addVanillaSingleValue(\%valueContainer, "KING_BUY_UNIT_PRICE_MODIFIER", 50);
+	addVanillaSingleValue(\%valueContainer, "KING_TRANSPORT_TREASURE_COMISSION", 50);
+	addVanillaSingleValue(\%valueContainer, "EDUCATION_BASE_TUITION", 1000);
+	addVanillaSingleValue(\%valueContainer, "DOCKS_NEXT_UNITS", 3);
+	addVanillaSingleValue(\%valueContainer, "CONSUME_EQUIPMENT_ON_FOUND", 0);
+	addVanillaSingleValue(\%valueContainer, "FEATURE_PRODUCTION_YIELD_MAX_DISTANCE", 6);
+	addVanillaSingleValue(\%valueContainer, "NATIVE_GOODS_RAID_PERCENT", 50);
+	addVanillaSingleValue(\%valueContainer, "NATIVE_GROWTH_THRESHOLD_MULTIPLIER", 100);
+	addVanillaSingleValue(\%valueContainer, "END_GAME_DISPLAY_WARNING", 100);
 }
