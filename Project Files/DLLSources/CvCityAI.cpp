@@ -1227,7 +1227,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 				{
 					if (pLoopPlot->isWater())
 					{
-						iValue += 8 * std::max(0, pLoopPlot->getYield(YIELD_FOOD) - GC.getFOOD_CONSUMPTION_PER_POPULATION());
+						iValue += 8 * std::max(0, pLoopPlot->getYield(YIELD_FOOD) - GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION);
 					}
 				}
 			}
@@ -4325,8 +4325,8 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 
 		pv.iNetValue = (iOutputValue - iInputValue);
 
-		//int iMinProfessionValue = kOwner.AI_yieldValue(YIELD_FOOD, true, GC.getFOOD_CONSUMPTION_PER_POPULATION());
-		int iMinProfessionValue = AI_estimateYieldValue(YIELD_FOOD, GC.getFOOD_CONSUMPTION_PER_POPULATION());
+		//int iMinProfessionValue = kOwner.AI_yieldValue(YIELD_FOOD, true, GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION);
+		int iMinProfessionValue = AI_estimateYieldValue(YIELD_FOOD, GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION);
 		if (pv.iNetValue <= iMinProfessionValue)
 		{
 			// TAC - AI Economy - koma13 - START
@@ -4542,18 +4542,18 @@ int CvCityAI::AI_unitJoinCityValue(CvUnit* pUnit, ProfessionTypes* peNewProfessi
 		CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), i);
 		if (pLoopPlot != NULL)
 		{
-			iFood += std::max(0, pLoopPlot->getYield(YIELD_FOOD) - GC.getFOOD_CONSUMPTION_PER_POPULATION());
+			iFood += std::max(0, pLoopPlot->getYield(YIELD_FOOD) - GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION);
 		}
 	}
 	if (iFood < getPopulation())
 	{
 		iBestValue *= 6 + iFood;
-		iBestValue /= 6 + getPopulation() * GC.getFOOD_CONSUMPTION_PER_POPULATION();
+		iBestValue /= 6 + getPopulation() * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION;
 	}
 	else if (iFood > getPopulation())
 	{
 		iBestValue *= 4 + iFood;
-		iBestValue /= 4 + getPopulation() * GC.getFOOD_CONSUMPTION_PER_POPULATION();
+		iBestValue /= 4 + getPopulation() * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION;
 	}
 	
 	if (peNewProfession != NULL)
@@ -5358,7 +5358,7 @@ void CvCityAI::AI_setPort(bool iNewValue)
 
 bool CvCityAI::AI_potentialPlot(const EnumMap<YieldTypes, short>& em_iYields) const
 {
-	int iNetFood = em_iYields.get(YIELD_FOOD) - GC.getFOOD_CONSUMPTION_PER_POPULATION();
+	int iNetFood = em_iYields.get(YIELD_FOOD) - GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION;
 
 	if (iNetFood < 0)
 	{
@@ -5815,7 +5815,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 		//Zero out particulary bad yields.
 		if (aiCurrentYields[eYield] > 0)
 		{
-			if ((eYield == YIELD_FOOD) && aiCurrentYields[eYield] <= GC.getFOOD_CONSUMPTION_PER_POPULATION())
+			if ((eYield == YIELD_FOOD) && aiCurrentYields[eYield] <= GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION)
 			{
 				aiCurrentYields[eYield] = 0;
 			}
@@ -5929,7 +5929,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 				//Zero out particulary bad yields.
 				if (aiFinalYields[eYield] > 0)
 				{
-					if ((eYield == YIELD_FOOD) && aiFinalYields[eYield] <= GC.getFOOD_CONSUMPTION_PER_POPULATION())
+					if ((eYield == YIELD_FOOD) && aiFinalYields[eYield] <= GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION)
 					{
 						aiFinalYields[eYield] = 0;
 					}
@@ -6261,7 +6261,7 @@ int CvCityAI::AI_getYieldMagicValue(const int* piYieldsTimes100) const
 {
 	FAssert(piYieldsTimes100 != NULL);
 
-	int iPopEats = GC.getFOOD_CONSUMPTION_PER_POPULATION();
+	int iPopEats = GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION;
 	iPopEats *= 100;
 
 	int iValue = (piYieldsTimes100[YIELD_FOOD] * 100 - iPopEats * 102);

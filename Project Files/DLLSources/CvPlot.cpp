@@ -3408,7 +3408,7 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 
 	bool bHasTerrainCost = (iRegularCost > 0);
 
-	if (GC.useClassicMovementSystem())
+	if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM)
 	{
 		iRegularCost = std::min(iRegularCost, pUnit->baseMoves()) * GLOBAL_DEFINE_MOVE_DENOMINATOR;
 	}

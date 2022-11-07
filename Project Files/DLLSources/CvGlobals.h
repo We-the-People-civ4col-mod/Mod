@@ -633,7 +633,6 @@ public:
 	DllExport void setDefineFLOAT( const char * szName, float fValue );
 	DllExport void setDefineSTRING( const char * szName, const char * szValue );
 
-	int getFOOD_CONSUMPTION_PER_POPULATION();
 	int getMAX_HIT_POINTS();
 	int getHILLS_EXTRA_DEFENSE();
 	int getRIVER_ATTACK_MODIFIER();
@@ -683,12 +682,6 @@ public:
 	int getWILD_ANIMAL_REWARD_RANDOM_BASE();
 	// Max Cross Limit
 	int getIMMIGRATION_MAX_CROSS_LIMIT();
-	// WTP, ray, new Harbour System - START
-	int getENABLE_NEW_HARBOUR_SYSTEM();
-	int getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS();
-	// WTP, ray, new Barracks System - START
-	int getENABLE_NEW_BARRACKS_SYSTEM();
-	int getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS();
 	// WTP, ray Domestic Market Events - START
 	int getENABLE_DOMESTIC_DEMAND_EVENTS();
 	// NBMOD REF
@@ -1209,7 +1202,6 @@ protected:
 
 	FVariableSystem* m_VarSystem;
 
-	int m_iFOOD_CONSUMPTION_PER_POPULATION;
 	int m_iMAX_HIT_POINTS;
 	int m_iHILLS_EXTRA_DEFENSE;
 	int m_iRIVER_ATTACK_MODIFIER;
@@ -1261,12 +1253,6 @@ protected:
 	int m_WILD_ANIMAL_REWARD_RANDOM_BASE;
 	// Max Cross Limit
 	int m_IMMIGRATION_MAX_CROSS_LIMIT;
-	// WTP, ray, new Harbour System - START
-	int m_ENABLE_NEW_HARBOUR_SYSTEM;
-	int m_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
-	// WTP, ray, new Barracks System - START
-	int m_ENABLE_NEW_BARRACKS_SYSTEM;
-	int m_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
 	// WTP, ray Domestic Market Events - START
 	int m_ENABLE_DOMESTIC_DEMAND_EVENTS;
 	// NBMOD REF
@@ -1511,8 +1497,6 @@ protected:
 	bool m_bUSE_DO_COMBAT_CALLBACK;
 	// K-Mod \ RaR end
 
-	bool m_bUseClassicMovementSystem;
-
 	// DLL interface
 	CvDLLUtilityIFaceBase* m_pDLL;
 
@@ -1540,8 +1524,6 @@ protected:
 		inline bool getUSE_DO_PILLAGE_GOLD_CALLBACK() { return m_bUSE_DO_PILLAGE_GOLD_CALLBACK; }
 		inline bool getUSE_GET_EXPERIENCE_NEEDED_CALLBACK() { return m_bUSE_GET_EXPERIENCE_NEEDED_CALLBACK; }
 		inline bool getUSE_DO_COMBAT_CALLBACK() { return m_bUSE_DO_COMBAT_CALLBACK; }
-
-		inline bool useClassicMovementSystem() { return m_bUseClassicMovementSystem; }
 };
 
 extern CvGlobals gGlobals;	// for debugging
@@ -1645,11 +1627,6 @@ bool writeInfoArray(FDataStreamBase* pStream,  std::vector<T*>& array)
 // inlined functions
 // The following functions are copied from CvGlobals.cpp as they are ideal candidates for inlining
 // Nightinggale
-
-inline int CvGlobals::getFOOD_CONSUMPTION_PER_POPULATION()
-{
-	return m_iFOOD_CONSUMPTION_PER_POPULATION;
-}
 
 inline int CvGlobals::getMAX_HIT_POINTS()
 {
@@ -1849,26 +1826,6 @@ inline int CvGlobals::getIMMIGRATION_MAX_CROSS_LIMIT()
 {
 	return m_IMMIGRATION_MAX_CROSS_LIMIT;
 }
-// WTP, ray, new Harbour System - START
-inline int CvGlobals::getENABLE_NEW_HARBOUR_SYSTEM()
-{
-	return m_ENABLE_NEW_HARBOUR_SYSTEM;
-}
-inline int CvGlobals::getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS()
-{
-	return m_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
-}
-// WTP, ray, new Harbour System - END
-// WTP, ray, new Barracks System - START
-inline int CvGlobals::getENABLE_NEW_BARRACKS_SYSTEM()
-{
-	return m_ENABLE_NEW_BARRACKS_SYSTEM;
-}
-inline int CvGlobals::getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS()
-{
-	return m_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
-}
-// WTP, ray, new Barracks System - END
 
 // WTP, ray Domestic Market Events - START
 inline int CvGlobals::getENABLE_DOMESTIC_DEMAND_EVENTS()

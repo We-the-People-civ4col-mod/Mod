@@ -1341,7 +1341,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 	// TAC - AI City Sites - koma13 - START
 	if (!isNative())
 	{
-		if (pPlot->calculateNatureYield(YIELD_FOOD, getTeam(), true) < GC.getFOOD_CONSUMPTION_PER_POPULATION())
+		if (pPlot->calculateNatureYield(YIELD_FOOD, getTeam(), true) < GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION)
 		{
 				return 0;
 		}
@@ -2069,11 +2069,11 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 		}
 		else if (iBonusCount == 1)
 		{
-			if (pPlot->getYield(YIELD_FOOD) < GC.getFOOD_CONSUMPTION_PER_POPULATION())
+			if (pPlot->getYield(YIELD_FOOD) < GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION)
 			{
 				// R&R, ray, adjustment because of MYCP
 				// WTP, ray, adjustment because of MYCP
-				if (pPlot->getYield(YIELD_FUR) < GC.getFOOD_CONSUMPTION_PER_POPULATION() && pPlot->getYield(YIELD_WILD_FEATHERS) < GC.getFOOD_CONSUMPTION_PER_POPULATION() && pPlot->getYield(YIELD_FRUITS) < GC.getFOOD_CONSUMPTION_PER_POPULATION() && pPlot->getYield(YIELD_RICE) < GC.getFOOD_CONSUMPTION_PER_POPULATION() && pPlot->getYield(YIELD_CASSAVA) < GC.getFOOD_CONSUMPTION_PER_POPULATION())
+				if (pPlot->getYield(YIELD_FUR) < GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION && pPlot->getYield(YIELD_WILD_FEATHERS) < GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION && pPlot->getYield(YIELD_FRUITS) < GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION && pPlot->getYield(YIELD_RICE) < GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION && pPlot->getYield(YIELD_CASSAVA) < GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION)
 				{
 					return 1;
 				}
@@ -2095,7 +2095,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 
 		iFood += aiFood[0];
 
-		int iConsumption = 4 * GC.getFOOD_CONSUMPTION_PER_POPULATION();
+		int iConsumption = 4 * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION;
 
 		if (iFood < iConsumption)
 		{
@@ -5960,7 +5960,7 @@ CvCity* CvPlayerAI::AI_findBestCity() const
 	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 		int iValue = 1000 * (1 + pLoopCity->getPopulation());
-		iValue *= 100 + 20 * (pLoopCity->plot()->getYield(YIELD_FOOD) - GC.getFOOD_CONSUMPTION_PER_POPULATION());
+		iValue *= 100 + 20 * (pLoopCity->plot()->getYield(YIELD_FOOD) - GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION);
 		iValue /= std::max(1, pLoopCity->plot()->getDistanceToOcean());
 
 		iValue *= 1 + pLoopCity->area()->getCitiesPerPlayer(getID());
@@ -10099,7 +10099,7 @@ void CvPlayerAI::AI_createNatives()
 		}
 
 		//Require a certain minimum food surplus.
-		while ((pLoopCity->AI_getFoodGatherable(1 + iExtraPop, GC.getFOOD_CONSUMPTION_PER_POPULATION()) / 2) < GC.getFOOD_CONSUMPTION_PER_POPULATION() * (1 + iExtraPop))
+		while ((pLoopCity->AI_getFoodGatherable(1 + iExtraPop, GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION) / 2) < GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION * (1 + iExtraPop))
 		{
 			iExtraPop--;
 			if (iExtraPop == 0)

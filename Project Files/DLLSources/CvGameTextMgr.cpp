@@ -413,7 +413,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 
 		int iCurrMoves;
 
-		if (GC.useClassicMovementSystem())
+		if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM)
 		{
 			iCurrMoves = ((pUnit->movesLeft() / GLOBAL_DEFINE_MOVE_DENOMINATOR) + (((pUnit->movesLeft() % GLOBAL_DEFINE_MOVE_DENOMINATOR) > 0) ? 1 : 0));
 		}
@@ -677,7 +677,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		}
 
 		// WTP, ray, new Harbour System - START
-		if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && pUnit->getUnitInfo().getHarbourSpaceNeeded() > 0)
+		if (GLOBAL_DEFINE_ENABLE_NEW_HARBOUR_SYSTEM && pUnit->getUnitInfo().getHarbourSpaceNeeded() > 0)
 		{
 			szString.append(NEWLINE);
 			szString.append(gDLL->getText("TXT_KEY_UNIT_HARBOR_SPACE_NEEDED", pUnit->getUnitInfo().getHarbourSpaceNeeded(), GC.getSymbolID(ANCHOR_CHAR)));
@@ -685,7 +685,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		// WTP, ray, new Harbour System - END
 
 		// WTP, ray, new Barracks System - START
-		if (GC.getENABLE_NEW_BARRACKS_SYSTEM())
+		if (GLOBAL_DEFINE_ENABLE_NEW_BARRACKS_SYSTEM)
 		{
 			// first we just check how Barracks Space the Unit needs
 			int iBarracksSpaceNeeded =	pUnit->getUnitInfo().getBarracksSpaceNeeded();
@@ -2947,14 +2947,15 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			}
 
 			// WTP, check Harbour System also for Monasteries, Forts and Canals - START
-			if (GC.getENABLE_NEW_HARBOUR_SYSTEM())
+			if (GLOBAL_DEFINE_ENABLE_NEW_HARBOUR_SYSTEM)
 			{
-				if(GC.getImprovementInfo(eImprovement).isFort() || GC.getImprovementInfo(eImprovement).isMonastery() || GC.getImprovementInfo(eImprovement).isCanal())
+				const CvImprovementInfo& kImprovement = GC.getImprovementInfo(eImprovement);
+				if(kImprovement.isFort() || kImprovement.isMonastery() || kImprovement.isCanal())
 				{
 					// we check how many Units that place would allow
-					int iImprovementHarbourSpace = GC.getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS();
+					int iImprovementHarbourSpace = GLOBAL_DEFINE_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
 					// it is the second level Improvement, so we double - unless for canal, which has no upgrade
-					if (GC.getImprovementInfo(eImprovement).getImprovementUpgrade() == NO_IMPROVEMENT && !GC.getImprovementInfo(eImprovement).isCanal())
+					if (kImprovement.getImprovementUpgrade() == NO_IMPROVEMENT && !kImprovement.isCanal())
 					{
 						iImprovementHarbourSpace = iImprovementHarbourSpace * 2;
 					}
@@ -2966,14 +2967,15 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			// WTP, check Harbour System also for Monasteries, Forts and Canals - END
 
 			// WTP, check Barracks System also for Monasteries and Forts - START
-			if (GC.getENABLE_NEW_BARRACKS_SYSTEM())
+			if (GLOBAL_DEFINE_ENABLE_NEW_BARRACKS_SYSTEM)
 			{
-				if(GC.getImprovementInfo(eImprovement).isFort() || GC.getImprovementInfo(eImprovement).isMonastery())
+				const CvImprovementInfo& kImprovement = GC.getImprovementInfo(eImprovement);
+				if(kImprovement.isFort() || kImprovement.isMonastery())
 				{
 					// we check how many Units that place would allow
-					int iImprovementBarracksSpace = GC.getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS();
+					int iImprovementBarracksSpace = GLOBAL_DEFINE_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
 					// it is the second level Improvement, so we double - unless for canal, which has no upgrade
-					if (GC.getImprovementInfo(eImprovement).getImprovementUpgrade() == NO_IMPROVEMENT)
+					if (kImprovement.getImprovementUpgrade() == NO_IMPROVEMENT)
 					{
 						iImprovementBarracksSpace = iImprovementBarracksSpace * 2;
 					}
@@ -5406,7 +5408,7 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 	}
 
 	// WTP, ray, new Harbour System - START
-	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && kUnitInfo.getHarbourSpaceNeeded() > 0)
+	if (GLOBAL_DEFINE_ENABLE_NEW_HARBOUR_SYSTEM && kUnitInfo.getHarbourSpaceNeeded() > 0)
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_HARBOR_SPACE_NEEDED", kUnitInfo.getHarbourSpaceNeeded(), GC.getSymbolID(ANCHOR_CHAR)));
@@ -5414,7 +5416,7 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 	// WTP, ray, new Harbour System - END
 
 	// WTP, ray, new Barracks System - START
-	if (GC.getENABLE_NEW_BARRACKS_SYSTEM() && kUnitInfo.getBarracksSpaceNeeded() > 0)
+	if (GLOBAL_DEFINE_ENABLE_NEW_BARRACKS_SYSTEM && kUnitInfo.getBarracksSpaceNeeded() > 0)
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED", kUnitInfo.getBarracksSpaceNeeded(), GC.getSymbolID(BARRACKS_CHAR)));
@@ -6502,7 +6504,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	}
 
 	// WTP, ray, new Harbour System - START
-	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && kBuilding.getMaxHarbourSpaceProvided() > 0)
+	if (GLOBAL_DEFINE_ENABLE_NEW_HARBOUR_SYSTEM && kBuilding.getMaxHarbourSpaceProvided() > 0)
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED", kBuilding.getMaxHarbourSpaceProvided(), GC.getSymbolID(ANCHOR_CHAR)));
@@ -6510,7 +6512,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	// WTP, ray, new Harbour System - END
 
 	// WTP, ray, new Barracks System - START
-	if (GC.getENABLE_NEW_BARRACKS_SYSTEM() && kBuilding.getMaxBarracksSpaceProvided() > 0)
+	if (GLOBAL_DEFINE_ENABLE_NEW_BARRACKS_SYSTEM && kBuilding.getMaxBarracksSpaceProvided() > 0)
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_MAX_BARRACKS_SPACE_PROVIDED", kBuilding.getMaxBarracksSpaceProvided(), GC.getSymbolID(BARRACKS_CHAR)));
@@ -7312,7 +7314,7 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 	if(info.isFort() || info.isMonastery() || info.isCanal())
 	{
 		// we check how many Units that place would allow
-		int iImprovementHarbourSpace = GC.getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS();
+		int iImprovementHarbourSpace = GLOBAL_DEFINE_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
 		// it is the second level Improvement, so we double - unless for canal, which has no upgrade
 		if (info.getImprovementUpgrade() == NO_IMPROVEMENT && !info.isCanal())
 		{
@@ -7328,7 +7330,7 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 	if(info.isFort() || info.isMonastery())
 	{
 		// we check how many Units that place would allow
-		int iImprovementBarracksSpace = GC.getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS();
+		int iImprovementBarracksSpace = GLOBAL_DEFINE_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
 		// it is the second level Improvement, so we double - unless for canal, which has no upgrade
 		if (info.getImprovementUpgrade() == NO_IMPROVEMENT)
 		{
@@ -9030,7 +9032,7 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 	// WTP, ray, Happiness - END
 
 	// WTP, ray, new Harbour System - START
-	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && pCity->plot()->isCoastalLand() && pCity->isHuman())
+	if (GLOBAL_DEFINE_ENABLE_NEW_HARBOUR_SYSTEM && pCity->plot()->isCoastalLand() && pCity->isHuman())
 	{
 		int iCityHarborSpaceUsed = pCity->getCityHarbourSpaceUsed();
 		int iCityHarborSpaceMax = pCity->getCityHarbourSpace();
@@ -9043,7 +9045,7 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 	// WTP, ray, new Harbour System - END
 
 	// WTP, ray, new Barracks System - START
-	if (GC.getENABLE_NEW_BARRACKS_SYSTEM() && pCity->isHuman())
+	if (GLOBAL_DEFINE_ENABLE_NEW_BARRACKS_SYSTEM && pCity->isHuman())
 	{
 		int iCityBarracksSpaceUsed = pCity->getCityBarracksSpaceUsed();
 		int iCityBarracksSpaceMax = pCity->getCityBarracksSpace();
