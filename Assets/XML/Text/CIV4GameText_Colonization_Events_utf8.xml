@@ -542,7 +542,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MINING_ACCIDENT_3</Tag>
-        <English>A mine near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] is said to be haunted. At least that's what the miners believe. They have left the underground passages in a hurry and caused the entrance to collapse. What superstitious folly!</English>
+        <English>A mine near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] is said to be haunted. At least that's what the miners believe. They rushed out of the underground passages, collapsing the entrance. What superstitious folly!</English>
         <French>On dit qu'une mine près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] est hantée. C'est du moins ce que croient les mineurs. Ils ont fui les souterrains à la hâte, provoquant l'effondrement de l'entrée. Quelle folie superstitieuse !</French>
         <German>In einer Mine bei [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] soll es spuken. Dies glauben zumindestens die Bergleute. Sie haben die unterirdischen Gänge fluchtartig verlassen und den Eingang zum Einsturz gebracht. Welch abergläubische Torheit!</German>
         <Italian>Si dice che una miniera vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sia infestata. Almeno questo è quello che credono i minatori. Sono fuggiti in fretta e furia dai passaggi sotterranei, facendo crollare l'ingresso. Che follia superstiziosa!</Italian>
@@ -564,7 +564,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AT_THE_SWORD_1</Tag>
-        <English>Soldiers from our victorious [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] have rallied behind their combat heroes! Their strength and resolve have firmed! Their proficiency has increased!</English>
+        <English>Soldiers from our victorious [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] are rallying behind their combat heroes! Their resolve is unshakeable! Their proficiency has increased!</English>
         <French>Des soldats de notre glorieuse unité ([COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]) se sont ralliés à leurs héros de guerre ! Leur force et leur détermination se sont aguerries ! Leur compétence s'est accrue !</French>
         <German>Als [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] haben einige unserer Soldaten Heldenhaftes geleistet.</German>
         <Italian>I soldati della vittoriosa unità [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] si sono riuniti attorno ai loro eroi combattenti! La loro forza e la loro determinazione si sono rinsaldate! La loro efficacia è aumentata!</Italian>
@@ -596,7 +596,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FUGITIVE</Tag>
-        <English>The rumour is that [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] authorities captured a fugitive fleeing from [COLOR_HIGHLIGHT_TEXT]%s4_civ_adjective[COLOR_REVERT] justice. No confirmation is available.</English>
+        <English>The rumour is that [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] authorities captured a fugitive fleeing from [COLOR_HIGHLIGHT_TEXT]%s4_civ_adjective[COLOR_REVERT] justice. So far it can't be confirmed.</English>
         <French>Les autorités [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] auraient capturé un fugitif poursuivi par la justice [COLOR_HIGHLIGHT_TEXT]%s4:2_civ_adjective[COLOR_REVERT]. Cette information n'a pas été confirmée.</French>
         <German>Es gibt Gerüchte, [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Häscher hätten einen böse beleumdeten Kerl ergriffen, der von der [COLOR_HIGHLIGHT_TEXT]%s4:2_civ_adjective[COLOR_REVERT] Justiz schon seit langem gesucht wird.</German>
         <Italian>Si dice che le autorità [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] abbiano catturato un uomo in fuga dalla giustizia [COLOR_HIGHLIGHT_TEXT]%s4_civ_adjective[COLOR_REVERT]. Non è disponibile alcuna conferma.</Italian>
@@ -636,7 +636,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PEASANT_WARPREP_1</Tag>
-        <English>Unrest among the rural population in Europe. It seems as if a conflict between our mother country and another European country is about to break out.</English>
+        <English>Unrest among the rural population in Europe. A conflict between our mother country and another European country could break out at any time.</English>
         <French>Des troubles au sein de la population rurale en Europe. Il semble qu'un conflite entre notre mère patrie et une autre puissance européenne va bientôt éclater.</French>
         <German>Unruhen unter der Landbevölkerung in Europa. Ein Krieg zwischen unserem Vaterland und einer anderen europäischen Macht scheint bevorzustehen.</German>
         <Italian>Disordini tra la popolazione rurale in Europa. Sembra che stia per scoppiare un conflitto tra la nostra madrepatria e un altro paese europeo.</Italian>
@@ -758,13 +758,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_LOST_TRIBE_1</Tag>
-        <English>Our imaginative scout has come up with a fairy tale. In deep jungle he got lost one evening. As the night deepened he heard muffled drumming from a hidden ravine.[PARAGRAPH:2]He crawled closer, only to discover a camp of naked warrior women leaping around a fire, wild as young she-wolves. Silver-tipped clubs flashed in the flickering firelight as the Amazons whirled them to the rhythm of the sounds. Then they caught sight of him. Suddenly he felt like a rabbit facing the wolves. He fled.</English>
+        <English>Our imaginative scout has come up with a fairy tale. One evening in dense jungle he got lost. As the night deepened he heard muffled drumming from a hidden ravine.[PARAGRAPH:2]He crawled closer, only to discover a camp of naked warrior women leaping around a fire, wild as young she-wolves. Silver-tipped clubs flashed in the flickering firelight as the Amazons brandished them to the beat of the drums. Then they caught sight of him. Suddenly he felt like a rabbit facing the wolves. He fled.</English>
         <French>Un scout raconte un conte de fées. Dans la jungle la plus profonde, il s'est perdu un soir. La morosité s'abattit sur le monde alors qu'un tambour étouffé retentissait depuis un ravin caché.[PARAGRAPH:2]Il se mit à marcher et regarda un camp de guerrières nues sautant autour d'un feu, sauvages comme de jeunes loups. Des massues en bois à pointe d'argent scintillaient dans la lumière vacillante, et les amazones les maniaient au rythme des sons. Quand ils l'ont aperçu, la convoitise de la chasse a brillé dans leurs yeux, et il s'est enfui.</French>
         <German>Märchenhaftes berichtet ein Späher. Im tiefsten Urwald habe er sich eines Abends verlaufen. Düsternis senkte sich über die Welt, als ein dumpfes Trommeln aus einer verborgenen Schlucht erklang.[PARAGRAPH:2]Er pirschte sich an und blickte hinab auf ein Lager nackter Kriegerinnen, die um ein Feuer sprangen, wild wie junge Wölfinnen. Im flackernden Lichtschein blitzten silberbeschlagene Holzkeulen, die die Amazonen im Rhythmus der Klänge schwangen. Als sie ihn erblickten, funkelte die Jagdlust in ihren Augen, und er floh.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LOST_TRIBE_4_HELP</Tag>
-        <English>[ICON_BULLET]The [COLOR_UNIT_TEXT]%s2:1_unit (%s1:1_unit)[COLOR_REVERT] becomes promoted to [COLOR_UNIT_TEXT]%s3:1_unit[COLOR_REVERT].</English>
+        <English>[ICON_BULLET]The [COLOR_UNIT_TEXT]%s2:1_unit (%s1:1_unit)[COLOR_REVERT] is promoted to [COLOR_UNIT_TEXT]%s3:1_unit[COLOR_REVERT].</English>
         <French>[ICON_BULLET]L'unité [COLOR_UNIT_TEXT]%s2:1_unit (%s1:1_unit)[COLOR_REVERT] a été promu en tant que [COLOR_UNIT_TEXT]%s3:1_unit[COLOR_REVERT].</French>
         <German>[ICON_BULLET]Der [COLOR_UNIT_TEXT]%s2:1_unit (%s1:1_unit)[COLOR_REVERT] wird zu einem [COLOR_UNIT_TEXT]%s3:1_unit[COLOR_REVERT] befördert.</German>
     </TEXT>
@@ -776,7 +776,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PACIFIC_1</Tag>
-        <English>Several scholars in Europe state that the Earth is a globe. Adventurers and explorers from all nations have set sail to find the western route to Asia.</English>
+        <English>Several scholars in Europe declare that the Earth is a globe. Adventurers and explorers from all nations have set sail to find the western route to Asia.</English>
         <French>De nombreux savants en Europe affirment que la Terre est ronde. Des aventuriers et explorateurs de toutes les nations montent les voiles pour découvrir la route de l'Ouest vers l'Asie.</French>
         <German>Die Erde sei eine Kugel, behaupten einige Gelehrte in Europa. Abenteurer und Forscher aus den verschiedensten Nationen brechen auf, um die Westroute nach Asien zu entdecken.</German>
     </TEXT>
@@ -826,11 +826,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_VOLCANO_DORMANT_1</Tag>
-        <English>The volcano near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] no longer spews deadly ash clouds and lava flows.</English>
+        <English>Lava no longer flows from the volcano near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>Le volcan près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a cessé de cracher ses cendres mortelles, sa lave et ses débris rocheux.</French>
         <German>Der Vulkan nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat aufgehört, tödliche Aschenwolken und Lavaflüsse auszuspucken.</German>
         <Italian>Il volcano vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] non ancora e attivo.</Italian>
-        <Spanish>The volcano near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has stopped spewing deadly ash clouds, lava flows, and mud- and debris-filled snow melts.</Spanish>
+        <Spanish>The volcano near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has stopped spewing deadly ash clouds, lava, and mud- and debris-filled snow melts.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_VOLCANO_1_HELP</Tag>
@@ -842,7 +842,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TORNADO_1</Tag>
-        <English>Vicious tornadoes carved a path of destruction through the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Empire.</English>
+        <English>Vicious tornadoes have carved a path of destruction through the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Empire.</English>
         <French>De violentes tornades ont semé le chaos à travers l'empire [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT].</French>
         <German>Ein schwerer Wirbelsturm hat eine Schneise der Verwüstung durch die [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonien geschlagen.</German>
         <Italian>Dei terribili tornado hanno lasciato una scia di distruzione nell'impero [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</Italian>
@@ -850,7 +850,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TORNADO_1</Tag>
-        <English>Milord, a whirlwind as high as the sky is raging through our country. Whoever doesn't flee fast enough is grabbed by it and made to dance through the air like autumn leaves. One community is now without %s8_improvement because the storm tore down all the buildings. Can we help the people?</English>
+        <English>Milord, a whirlwind as high as the sky is raging through our country. Anyone who doesn't flee is snatched up, dancing through the air like autumn leaves. One community is now without %s8_improvement because the storm destroyed all the buildings. Can we help the people?</English>
         <French>Les cieux se sont ouverts et le poing du châtiment s'est abattu. D'effroyables volutes d'air ont anéanti notre %s8_improvement.</French>
         <German>Milord, eine Windhose, so hoch wie der Himmel, tobt durch unser Land. Wer nicht schnell genug flüchtet, den packt sie und lässt ihn wie Herbstlaub durch die Luft tanzen. Eine Gemeinde ist nun ohne %s8_improvement, weil der Sturm alle Bauten zerriss. Können wir den Menschen helfen?</German>
         <Italian>I cieli si sono aperti e la giustizia divina ha colpito. Dei terribili tornado hanno spazzato via %s8_improvement.</Italian>
@@ -870,7 +870,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_CATHEDRAL</Tag>
-        <English>The cathedral in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] draws the attention of foreigners.</English>
+        <English>The cathedral in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] is a popular attraction for foreigners.</English>
         <French>La cathédrale de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] attirent l'attention des étrangers.</French>
         <German>Die Kathedrale in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] lockt Fremde an.</German>
     </TEXT>
@@ -890,7 +890,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BABY_BOOM_1</Tag>
-        <English>Milord, worn out and tired, our men are returning home from the war you sent them to. But they are not tired enough to party in the taverns and spend their war booty. The barmaids make eyes at the war heroes and they make bellies at the maidens. It's a disgraceful hustle and bustle, don't you think?</English>
+        <English>Milord, worn out and tired, our men are returning home from the war you sent them to. But they're not so tired that they can't party in the taverns and spend their war loot. The barmaids make eyes at the war heroes and soon we see many big bellies. A disgraceful goings-on, don't you think?</English>
         <French>De retour de la guerre, nos soldats se sont consacrés à la paix et à fonder des familles. Notre civilisation connaît un baby-boom !</French>
         <German>Milord, abgekämpft und müde kehren unsere Männer aus dem Krieg, in den Ihr sie schicktet, heim. Doch sind sie nicht müde genug, in den Wirtshäusern zu feiern und ihre Kriegsbeute zu verprassen. Die Schankmaiden machen den Kriegshelden schöne Augen und diese den Jungfern dicke Bäuche. Es ist ein schandhaftes Treiben, findet Ihr nicht?</German>
         <Italian>I nostri soldati, tornati dalla guerra, si sono dedicati alla pace e a crearsi delle famiglie. La nostra civiltà gode di un boom di nascite!</Italian>
@@ -912,7 +912,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_JADE_1</Tag>
-        <English>Milord, in the mountains near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], miners have come across strange piles of rubble. It appears to be jade. The rich green of the forest and the soulful blue of the sea shimmer in the soft stones.[NEWLINE]The workers showed one to the natives. Their faces lit up with happiness, and they offered them gold in exchange.</English>
+        <English>Milord, in the mountains near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], miners have come across strange piles of rubble. It appears to be jade. The rich green of the forest and the soulful blue of the sea shimmer in the soft stones.[NEWLINE]The workers showed one to the Natives. Their faces lit up with happiness, and they offered them gold in exchange.</English>
         <French>Milord, dans les montagnes près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], les mineurs ont trouvé d'étranges tas de gravats. Il semble que ce soit du jade. Le vert riche de la forêt et le bleu tendre de la mer scintillent dans les pierres douces. Les ouvriers en ont montré une aux indigènes. Leurs visages se sont illuminés de bonheur, et ils leur ont offert de l'or en échange.</French>
         <German>Milord, in den Bergen nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sind Minenarbeiter auf seltsame Geröllhaufen gestoßen. Es scheint Jade zu sein. Das satte Grün des Waldes und das seelenvolle Blau des Meeres schimmern in den weichen Steinen.[NEWLINE]Einen haben die Arbeiter den Eingeborenen gezeigt. Ihre Gesichter leuchteten vor Glück, und sie boten ihnen Gold zum Tausch an.</German>
         <Italian>Milord, nelle montagne vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], i minatori si sono imbattuti in strani cumuli di macerie. Sembra essere giada. Il verde ricco della foresta e l'azzurro intenso del mare brillano nelle pietre morbide. I loro volti si illuminarono di felicità e offrirono loro dell'oro in cambio.</Italian>
@@ -936,7 +936,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WHALEOFATHING_1</Tag>
-        <English>You peer into the tavern's vaulted ceiling, dimly lit by transfunctions. The air is nipping at your heels. Tobacco smoke and the exhalations of drunken sailors fill the room. Many surround a gaunt captain who entertains the crowd with dilated eyes and a hoarse voice. You hear a few shrill snatches of words alongside much laughter: [COLOR_SELECTED_TEXT]"Eyes as glowing as forge fire ... thirty tentacles."[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Snapping hellmouths ... my ship almost smashed to pieces ..."[COLOR_REVERT] it sounds over. Your adjutant whispers to you calmly: [COLOR_SELECTED_TEXT]"Well, just now it was a single sea monster with a mere twenty tentacles. Milord, what do you intend to do with this braggart?"[COLOR_REVERT]</English>
+        <English>You peer up at the tavern's vaulted ceiling, dimly lit by sconces holding candles. The air nips at your heels. Tobacco smoke and the rank breath of drunken sailors fill the room. Many surround a gaunt captain, eyes dilated, voice hoarse, as he entertains the crowd. You hear snatches of words amid much laughter: [COLOR_SELECTED_TEXT]"Eyes as glowing as forge fire ... thirty tentacles."[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Snapping hellmouths ... my ship almost smashed to pieces ..."[COLOR_REVERT]. Your adjutant whispers to you calmly: [COLOR_SELECTED_TEXT]"A moment ago it was just one sea monster with a mere twenty tentacles. Milord, what do you intend to do with this braggart?"[COLOR_REVERT]</English>
         <French>Vous regardez dans la voûte de la taverne, faiblement éclairée par les transfonctions. L'air est coupant. La fumée du tabac et les exhalaisons des marins ivres emplissent la pièce. Beaucoup entourent un capitaine décharné qui divertit la foule avec des yeux dilatés et une voix rauque. Vous entendez quelques bribes de mots stridents et des rires : [COLOR_SELECTED_TEXT]"Des yeux aussi brillants que du feu de forge... trente tentacules." [COLOR_REVERT] [COLOR_SELECTED_TEXT]"Des bouches d'enfer qui claquent... J'ai failli mettre mon vaisseau en pièces..." [COLOR_REVERT], ça sonne fini. Votre adjudant vous chuchote, avec complaisance : [COLOR_SELECTED_TEXT]"Il y a un instant, c'était un seul monstre marin avec seulement vingt tentacules. Milord, que comptez-vous faire de ce fanfaron ?"[COLOR_REVERT]</French>
         <German>Ihr späht in das von Tranfunzeln dürftig erhellte Gewölbe der Taverne. Die Luft ist zum Schneiden. Tabakqualm und die Ausdünstungen saufender Seefahrer füllen den Raum. Viele umringen einen hageren Kapitän, der mit geweiteten Augen und heiserer Stimme die Meute unterhält. Ihr vernehmt neben viel Gelächter einige schrille Wortfetzen: [COLOR_SELECTED_TEXT]"Augen, glühend groß wie Schmiedefeuer ... dreißig Tentakel."[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Schnappende Höllenmäuler ... mein Schiff fast zertrümmert ..."[COLOR_REVERT], tönt es herüber. Euer Adjutant flüstert euch beflissen zu: [COLOR_SELECTED_TEXT]"Nun, vorhin war es noch ein einziges Seeungeheuer mit schlappen zwanzig Tentakeln. Milord, was gedenkt Ihr mit diesem Aufschneider zu tun?"[COLOR_REVERT]</German>
         <Italian>Scruti il soffitto a volta della taverna, fiocamente illuminato dalle trasfusioni. L'aria è tagliente. Il fumo del tabacco e le esalazioni dei marinai ubriachi riempiono la stanza. Molti circondano un capitano magro che intrattiene la folla con occhi dilatati e una voce rauca. Si sentono alcuni frammenti di parole stridenti insieme a molte risate: [COLOR_SELECTED_TEXT]"Occhi incandescenti come fuoco di fucina ... trenta tentacoli."[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Bocche infernali che scattano ... Quasi distrutto la mia nave a pezzi ..."[COLOR_REVERT], suona finita. Il tuo aiutante ti sussurra, compiaciuto: [COLOR_SELECTED_TEXT]"Beh, un attimo fa era un singolo mostro marino con appena venti tentacoli. Milord, cosa intende fare con questo millantatore?"[COLOR_REVERT]</Italian>
@@ -952,7 +952,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CACAO_BONUS</Tag>
-        <English>The people in the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] colonies discovered a new species of exceptionally fertile cocao plants.</English>
+        <English>The people in the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] colonies discovered a new species of exceptionally fertile cocoa plants.</English>
         <French>Les colons [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] ont découvert une nouvelle espèce de cacaoyer particulièrement fertile.</French>
         <German>In den [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonien wurde eine neue Sorte ertragreicher Kakaobäume entdeckt.</German>
     </TEXT>
