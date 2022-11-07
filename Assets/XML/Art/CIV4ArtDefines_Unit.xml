@@ -17654,6 +17654,44 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
+       <UnitArtInfo>
+            <Type>ART_DEF_UNIT_HARLOT</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,4,2</Button>
+            <FullLengthIcon>,Art/Interface/Screens/city_management/harlot.dds</FullLengthIcon>
+            <fScale>0.47</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/harlot/Expert_Sugar_Planter.nif</NIF>
+            <KFM>Art/Units/Settler/harlot/Expert_Sugar_Planter.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
+        </UnitArtInfo>
+       <UnitArtInfo>
+            <Type>ART_DEF_UNIT_FEMALE_ENTERTAINER</Type>
+            <Button>,Art/colonization_atlas_units_two.dds,5,2</Button>
+            <FullLengthIcon>,Art/Interface/Screens/city_management/female_entertainer.dds</FullLengthIcon>
+            <fScale>0.47</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/female_entertainer/Expert_Sugar_Planter.nif</NIF>
+            <KFM>Art/Units/Settler/harlot/Expert_Sugar_Planter.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+            <SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_CONSTRUCTION_SUPPLIES</Type>
             <Button>,Art/colonization_atlas_units.dds,1,12</Button>
