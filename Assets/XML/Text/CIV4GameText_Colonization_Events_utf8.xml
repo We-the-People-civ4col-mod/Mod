@@ -1034,7 +1034,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TERRAX_1</Tag>
-        <English>Milord, astonishing news has reached us from the Old World. At the coronation feast of the Habsburg Emperor, the rulers of Europe were all gathered together. As the wine flowed, they bragged and teased each other. One word led to another and finally a bet was made: the ruler first to have the most new towns in the interior of the New World will win. Our own king promises us rich rewards if we help him win the bet!</English>
+        <English>Milord, astonishing news has reached us from the Old World. At the coronation feast of the Habsburg Emperor, the rulers of Europe were all gathered together. As the wine flowed, they bragged and teased each other. One word led to another and finally a bet was made: the ruler first to have the most new towns in the interior of the New World will win. Our own King promises us rich rewards if we help Him win the bet!</English>
         <French>Milord, du Vieux Monde nous parvient une nouvelle étonnante : lors de la fête du couronnement de l'empereur teuton, les souverains d'Europe ont festoyé ensemble au banquet. Le vin coule à flot, ils se vantent et se taquinent. Un mot a mené à un autre et finalement un pari a été fait : Pour la Majesté qui réussit la première à fonder de nombreuses nouvelles villes à l'intérieur du Nouveau Monde, les autres Altesses doivent embrasser son cul nu. Sa Majesté nous a promis de riches récompenses si nous l'aidons à gagner le pari !</French>
         <German>Milord, aus der Alten Welt dringt eine erstaunliche Kunde: Beim Krönungsfest des teutschen Kaisers zechten die Herrscher Europas gemeinsam beim Bankett. Der Rebensaft floss, man prahlte und neckte einander. Ein Wort gab das andere und schließlich wurde eine Wette geschlossen: Der Majestät, der es als Erster gelingt, viele neue Städte im Landesinneren der Neuen Welt zu gründen, der müssen die anderen Hoheiten den blanken Arsch küssen. Seine Majestät hat uns reichen Lohn versprochen, wenn wir ihm zum Wettsieg verhelfen!</German>
     </TEXT>
@@ -1070,7 +1070,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SHIPYARD</Tag>
-        <English>Milord, in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a resolute captain's widow has opened a brothel next to the shipyard and recruited a few young whores from home, who now sweeten the carpenters' and stevedores' evening. Should we expel these wanton women?</English>
+        <English>Milord, in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a resolute captain's widow has opened a brothel next to the shipyard and recruited a few young whores from home, who now sweeten the stevedores' evenings. Should we expel these wanton women?</English>
         <French>Milord, la veuve d'un capitaine a ouvert un bordel à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Elle a recruté des jeunes prostitués venues d'Europe pour adoucir les soirées de nos marins. Devons-nous les expulser hors de nos colonies ?</French>
         <German>Milord, in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat eine resolute Kapitänswitwe neben der Schiffswerft ein Bordell aufgemacht und ein paar junge Dirnen aus der Heimat angeworben, die nun den Zimmerleuten und Schauerleuten den Feierabend versüßen. Sollen wir die Weibsbilder vertreiben?</German>
     </TEXT>
@@ -1082,7 +1082,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CARGOSPACE_1</Tag>
-        <English>Milord, in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], a passing master shipwright offers you to enhance a ship in the shipyard. Through clever use of space, he wants to create more cargo capacity. Shall we let him do so?</English>
+        <English>Milord, in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], a passing master shipwright says he can improve a ship in our harbour. Through clever use of space he wants to create more cargo capacity. Shall we let him do so?</English>
         <French>Milord, un maître charpentier de navire propose d'augmenter la capacité en cargaison de l'un de vos bateaux à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Milord, in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] bietet Euch ein durchreisender Schiffsbaumeister an, in der Schiffswerft ein Schiff auszubauen. Durch geschickte Raumnutzung will er mehr Stauraum schaffen. Sollen wir ihn gewähren lassen?</German>
     </TEXT>
@@ -1100,7 +1100,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CARGOSPACE_SUCCESS</Tag>
-        <English>[COLOR_POSITIVE_TEXT]Milord, the enhancement of the cargo space of the [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] is progressing quickly.[COLOR_REVERT]</English>
+        <English>[COLOR_POSITIVE_TEXT]Milord, the expansion of the [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] cargo space is progressing quickly.[COLOR_REVERT]</English>
         <French>[COLOR_POSITIVE_TEXT]Milord, l'amélioration de la cargaison pour le navire [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] avance rapidement.[COLOR_REVERT]</French>
         <German>[COLOR_POSITIVE_TEXT]Milord, der Ausbau der [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] schreitet zügig voran.[COLOR_REVERT]</German>
     </TEXT>
@@ -1166,7 +1166,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_NO_SMOKING</Tag>
-        <English>A tobacco plantation is threatened by angry women.</English>
+        <English>Angry women are threatening a tobacco plantation.</English>
         <French>Les cultivateurs de tabac se font botter le cul par des femmes récalcitrantes.</French>
         <German>Tabakpflanzern wird von renitenten Frauenzimmern Feuer unterm Hintern gemacht.</German>
         <Italian>I coltivatori di tabacco si stanno facendo fare il culo da donne recalcitranti.</Italian>
@@ -1174,7 +1174,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_NO_SMOKING_1</Tag>
-        <English>Milord, angry women are marching to a tobacco plantation outside [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. They carry torches and want to burn down the estate. Their leader makes flaming speeches that inhaling smoke is satanic. Anyone who smokes a cigar would be making a burnt offering to the devil.</English>
+        <English>Milord, angry women are marching to a tobacco plantation outside [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. They carry torches and want to burn down the estate. Their leader loudly declares that inhaling smoke is satanic. Anyone who smokes a cigar is making a burnt offering to the devil.</English>
         <French>Milord, des femmes en colère se dirigent vers une plantation de tabac à l'extérieur de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Ils portent des torches et ont l'intention de brûler le domaine. Leur chef tient des discours enflammés selon lesquels inhaler de la fumée est satanique. Quiconque fume un cigare fait un holocauste au diable.</French>
         <German>Milord, aufgebrachte Weibsbilder marschieren in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] zu einer Tabakplantage. Sie tragen Fackeln und wollen das Anwesen niederbrennen. Ihre Anführerin hält flammende Reden, das Einatmen von Qualm sei satanisch. Wer eine Zigarre paffe, würde dem Teufel ein Brandopfer bringen.</German>
         <Italian>Milord, delle femmine arrabbiate stanno marciando verso una piantagione di tabacco fuori da [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Portano torce e intendono bruciare la tenuta al suolo. Il loro leader fa discorsi infuocati che inalare fumo è satanico. Chiunque sbuffi un sigaro farebbe un'offerta bruciata al diavolo.</Italian>
@@ -1212,19 +1212,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_CATHEDRALS_DONE</Tag>
-        <English>Congratulations, Milord! You are the first governor with five abbeys in the New World. The Lord's blessing will be upon you. As well His Majesty is in a generous mood today.</English>
+        <English>Congratulations, Milord! You are the first governor with five abbeys in the New World. The Lord's blessing will be upon you, and His Majesty is in a generous mood today.</English>
         <French>Félicitations, Milord ! Vous êtes le premier gouverneur à construire cinq abbayes dans le Nouveau Monde. Le Seigneur vous bénit. Votre Roi semble être d'humeur généreuse aujourd'hui.</French>
         <German>Glückwunsch, Milord! Ihr habt als erster Gouverneur fünf Abteien in der Neuen Welt errichtet. Gottes Lohn ist Euch gewiss. Aber auch Seine Majestät möchte sich großzügig zeigen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GREAT_TOOL_FACTORY_1</Tag>
-        <English>A delegation from the craftsmen's guilds is here to see you. The masters praise your efforts in setting up a blacksmith's workshop where ironmongery can be mass produced. The demand for nails and rivets, bolts and axes, clamps and screws is growing. Productivity means more progress in the colonies. They suggest building a factory in a central location, larger than any the New World has ever seen.</English>
+        <English>A delegation from the craftsmen's guilds is here to see you. The masters praise your efforts in setting up a blacksmith's workshop for the mass production of ironmongery. The demand for nails and rivets, bolts and axes, clamps and screws is growing. Productivity means more progress in the colonies. They suggest building a factory in a central location, larger than any the New World has ever seen.</English>
         <French>Vous avez construit votre premier usine sidérurgique. Très bien ! Mais est-ce suffisant ?</French>
         <German>Eine Abordnung der Handwerkergilden wird bei Euch vorstellig. Die Meister loben Eure Tatkraft, eine Schmiedemanufaktur errichtet zu haben, in der Eisenwaren in großen Mengen hergestellt werden können. Doch wüchse die Nachfrage an Nägeln und Nieten, Bolzen und Beilen, Schellen und Schrauben noch weiter an. Die Entwicklung der Kolonien hinge maßgeblich davon ab, diesen Bedarf zu decken. Demütig unterbreitet man Euch die Idee, an zentraler Stelle eine Fabrik zu errichten, größer als alle anderen, die die Neue Welt bisher gesehen hat.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_GREAT_TOOL_FACTORY</Tag>
-        <English>Another governor was the first to build a large hardware factory. Don't count on any more rewards if you catch up.</English>
+        <English>Another governor was the first to build a big hardware factory. Don't count on any rewards even if you catch up.</English>
         <French>Oh non ! Un autre gouverneur a déjà construit des Hauts fourneaux. Oubliez la récompense !</French>
         <German>Ein anderer Gouverneur hat als Erster eine Große Eisenwarenfabrik errichtet. Rechnet nicht mehr mit einer Belohnung, wenn Ihr gleichzieht.</German>
     </TEXT>
@@ -1260,7 +1260,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GREAT_ARSENAL_DONE</Tag>
-        <English>Governor, you were the first in the New World to build a Great Arsenal. As promised, the ominous foreign businessman who claims to be acting on behalf of a Russian prince reappears at the topping-out ceremony. The negotiator still speaks your mother tongue with a terrible accent. You take it upon yourself to recommend your nephews' tutor, Mr Berlitz, who has done wonders for the language education of the good-for-nothings. But first you ask the stranger to present the prince's offers.</English>
+        <English>Governor, you are the first in the New World to build a Great Arsenal. As promised, the ominous foreign businessman who claims to be acting on behalf of a Russian prince reappears at the opening ceremony. The negotiator still speaks your mother tongue with a terrible accent. You take it upon yourself to recommend your nephews' tutor, Mr Berlitz, who offers excellent language education. First, however, you ask the stranger to present the prince's offer.</English>
         <French>Milord, vous êtes le premier à construire un Grand arsenal. L'émissaire étrange de la cour du Grand Tsar de Toutes les Russies vous offrent un contrat intéressant...</French>
         <German>Milord, Ihr habt als Erster in der Neuen Welt ein Großes Zeughaus errichten können. Wie versprochen, taucht zum Richtfest der ominöse ausländische Geschäftsmann wieder auf, der vorgibt, im Auftrag eines russischen Fürsten zu handeln. Immer noch spricht der Unterhändler Eure Muttersprache mit furchtbarem Akzent. Ihr nehmt Euch vor, ihm den Hauslehrer Eurer Neffen, Herrn Berlitz, zu empfehlen, der bei der Spracherziehung der Tunichtgute wahre Wunder wirkte. Doch zuvor bittet Ihr den Fremden, die Angebote des Fürsten vorzutragen.</German>
     </TEXT>
@@ -1272,7 +1272,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RUM_BLOSSOM_1</Tag>
-        <English>A warehouse in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has been raided. Our [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] neighbours in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] are suspected of looting a cartload of rum.</English>
+        <English>A warehouse in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] has been raided. Our [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] neighbours in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] are suspected of stealing a cartload of rum.</English>
         <French>Un entrepôt à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a subi un raid. Nos voisins [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] sont suspectés d'avoir piller notre cargaison de rhum.</French>
         <German>Ein Lagerhaus in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde überfallen und ausgeraubt. Unsere [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] Nachbarn in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] werden verdächtigt, den Überfall begangen und die Ladung Rum geraubt zu haben.</German>
     </TEXT>
@@ -1308,7 +1308,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CARPENTER_FAMILY</Tag>
-        <English>A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] master carpenter wishes to be visited by his family from Europe.</English>
+        <English>A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] master carpenter wishes to bring his family over from Europe.</English>
         <French>Un maître charpentier [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] souhaite que sa famille en Europe lui rende visite.</French>
         <German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Zimmermeister möchte seine Familie in die Neue Welt nachkommen lassen.</German>
     </TEXT>
@@ -1398,7 +1398,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_3</Tag>
-        <English>Milord. The King's loyalists have tricked us. They've gotten into all the granaries in all the cities and destroyed everything edible. In many places good people helped because they were told it was your order! The royalists printed fake notices that said, "Because of outrageously high taxes it is the first duty of citizens to oppose the king! Destroy all food in all cities in protest!"</English>
+        <English>Milord. The King's loyalists have tricked us. They've gotten into all the granaries in all the cities and destroyed everything edible. In many places good people helped because they were told you gave the order! The royalists printed fake notices that said, "Because of outrageously high taxes it is the first duty of citizens to oppose the king! Destroy all food in all cities in protest!"</English>
         <French>Milord ! Les royalistes nous ont durement touchés. Ils ont détruit de grandes réserves de nourritures dans tous nos greniers. Apparemment, ils ont dupé les populations locales et les troupes en proclamant qu'il s'agissait de votre ordre : la « fête de la nourriture » contre le Roi.</French>
         <German>Milord! Die Königstreuen haben uns übel mitgespielt. Sie haben in allen Städten die Kornspeicher besetzt und begonnen, das Getreide und alles andere Essbare zu vernichten. Vielerorts beteiligten sich brave Leute an diesem Frevel, weil es hieß, es wäre Eure Order! Auf getürkten Anschlägen stand zu lesen: "Aufgrund der unverschämt hohen Steuern ist es erste Bürgerpflicht, sich dem König zu widersetzen! Vernichtet aus Protest alle Nahrungsmittel in allen Städten!"</German>
     </TEXT>
@@ -1416,7 +1416,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_2aPYTHON</Tag>
-        <English>The will for revolution is falling, at least just in the bigger cities ...</English>
+        <English>The will for revolution is falling, mainly in the bigger cities ...</English>
         <French>... Le soutien pour une révolution chute, en tout cas dans les grandes villes ...</French>
         <German>... die revolutionäre Begeisterung lässt nach, aber wenigstens nur in den großen Städten ...</German>
     </TEXT>
@@ -1437,7 +1437,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PROSPECTORS</Tag>
-        <English>Attracted by wild rumours of local silver deposits, foreign prospectors are pouring into the mountains near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. These claim jumpers aim to have the best pickings for themselves!</English>
+        <English>Attracted by wild rumours of local silver deposits, foreign prospectors are pouring into the mountains near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. These claim jumpers aim to get the best pickings for themselves!</English>
         <French>Attiré par des rumeurs étranges à propos de gisements d'argent abondants, les prospecteurs étrangers indépendants se ruent dans les montagnes près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Ces itinérants souhaitent certainement garder les meilleurs prises pour eux-mêmes !</French>
         <German>Durch wilde Gerüchte bezüglich reicher Silbervorkommen angelockt, strömen fremde Glücksuchende in die Berge nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Bald werden diese die besten Claims für sich beansprucht haben!</German>
     </TEXT>
@@ -1461,7 +1461,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COUNTERBLASTE_2_HELP</Tag>
-        <English>[COLOR_FONT_GOLD]His Majesty receives word that his citizens in the colonies are questioning his judgment in this matter.[COLOR_REVERT]</English>
+        <English>[COLOR_FONT_GOLD]His Majesty receives word that his citizens in the colonies are questioning his judgement in this matter.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Le roi reçoit la nouvelle que ses citoyens dans les colonies remettent en question son jugement.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Seine Majestät ist höchst unerfreut, dass man sein Urteil zu dieser Angelegenheit in Frage stellt.[COLOR_REVERT]</German>
     </TEXT>
@@ -1589,7 +1589,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WINE_PLANTS</Tag>
-        <English>A European vintager offers to sell us his best grapevines. Of course he wants be payed in gold.</English>
+        <English>A European vintager offers to sell us his best grapevines. Of course he wants be paid in gold.</English>
         <French>Un vigneron européen propose de vendre l'un de ses meilleurs cépages. Il demande d'argon.</French>
         <German>Ein Winzer aus Europa bietet uns seine besten Rebstöcke zum Kauf. Er verlangt dafür natürlich gold.</German>
     </TEXT>
@@ -1601,7 +1601,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RED_PEPPER_PLANTS</Tag>
-        <English>Local Natives will sell us some seeds from their red pepper plants. They ask to be payed in gold in exchange.</English>
+        <English>Local Natives will sell us some seeds from their red pepper plants. They ask to be paid in gold in exchange.</English>
         <French>Des indigènes proposent de nous vendre leurs semences pour des plants de piment. Il demande d'argon.</French>
         <German>Ureinwohner aus der Gegend bieten uns Setzlinge ihres Roten Pfeffers zum Kauf. Sie verlangen dafür natürlich gold.</German>
     </TEXT>
@@ -1853,7 +1853,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MONASTERY_HEALING_WOUNDED</Tag>
-        <English>Some Natives from a nearby village brought a badly wounded young warrior to one of our monasteries. He was attacked by a bear. If we do not help him, he will surely die.</English>
+        <English>Some Natives from a nearby village brought a young warrior, badly wounded, to one of our monasteries. He was attacked by a bear. If we do not help him, he will surely die.</English>
         <French>Des indigènes d'un village avoisinant ont ramené un jeune guerrier sérieusement blessé dans l'un de nos monastères. Il semble avoir été attaqué par un ours. Si nous ne l'aidons pas, il va probablement mourrir.</French>
         <German>Einige Ureinwohner eines nahegelegen Dorfes haben einen schwer verwundeten jungen Krieger in eines unserer Klöster gebracht. Er scheint vom einem Bären angegriffen worden zu sein. Wenn wir nicht helfen, wird er sterben.</German>
     </TEXT>
@@ -1865,7 +1865,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_UNIVERSITY</Tag>
-        <English>An influential society of educated men in our mother country heard about the founding of our first university. They want to help us by sending a highly educated man to work as a professor.</English>
+        <English>An influential society of educated men in our mother country heard about the founding of our first university. They want to help us by sending a prominent academic as a professor.</English>
         <French>Une société influente d'hommes éduqués dans notre mère patrie ont entendu parlé de la fondation de notre première université. Ils souhaitent nous aider en nous envoyer un de leur sage pour y enseigner.</French>
         <German>Eine einflußreiche Gesellschaft gebildeter Männer unseres Heimatlandes hat von der Gründung unserer ersten Universität erfahren. Sie wollen uns helfen, indem sie uns einen hoch gebildeten Mann schicken wollen, der unsere Studenten unterrichtet.</German>
     </TEXT>
@@ -1877,7 +1877,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_YOUNG_COD_SWARM</Tag>
-        <English>One of our fishing boats has sighted a large school of young cod; if we harvest those fish now, the cod will probably not recover.</English>
+        <English>One of our fishing boats has sighted a large school of small young cod. If we harvest those fish now, the cod will probably not recover.</English>
         <French>L'un de nos bateaux de pêche a repéré de larges bancs de jeunes cabillauds. Si nous les pêchons tous d'un seul coup, il ne pourra probablement pas se reproduire.</French>
         <German>Eines unserer Fischerboote hat einen riesigen Schwarm junger Kabeljaufische entdeckt. Wenn wir ihn jedoch jetzt bereits abfischen, wird es sich nicht davon erholen.</German>
     </TEXT>
@@ -2003,7 +2003,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CATTLE_AND_SHEEP</Tag>
-        <English>Rangle war between cowboys and shepherds in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
+        <English>Range war between cowboys and shepherds in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>Contflit entre des éleveurs et des bergers à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
         <German>Streit zwischen Rinderzüchtern und Schafzüchtern in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</German>
     </TEXT>
