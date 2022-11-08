@@ -222,7 +222,7 @@ public:
 	void setDefineFLOAT( const char * szName, float fValue ) { return GC.setDefineFLOAT( szName, fValue ); }
 	void setDefineSTRING( const char * szName, const char * szValue ) { return GC.setDefineSTRING( szName, szValue ); }
 	int getMOVE_DENOMINATOR() const { return GLOBAL_DEFINE_MOVE_DENOMINATOR; }
-	int getFOOD_CONSUMPTION_PER_POPULATION() const { return GC.getFOOD_CONSUMPTION_PER_POPULATION(); }
+	int getFOOD_CONSUMPTION_PER_POPULATION() const { return GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION; }
 	int getMAX_HIT_POINTS() const { return GC.getMAX_HIT_POINTS(); }
 	int getHILLS_EXTRA_DEFENSE() const { return GC.getHILLS_EXTRA_DEFENSE(); }
 	int getRIVER_ATTACK_MODIFIER() const { return GC.getRIVER_ATTACK_MODIFIER(); }

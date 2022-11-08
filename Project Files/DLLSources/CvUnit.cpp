@@ -835,7 +835,7 @@ void CvUnit::doTurn()
 
 	setMadeAttack(false);
 
-	if (GC.useClassicMovementSystem())
+	if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM)
 	{
 		setMoves(0);
 	}
@@ -3238,7 +3238,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 	// WTP, ray, new Harbour System - START
 	// of course this is only checked if new Harbour System is enabled
 	// We check this only for Humans, AI can ignore it because it is too difficult to teach it
-	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && isHuman())
+	if (GLOBAL_DEFINE_ENABLE_NEW_HARBOUR_SYSTEM && isHuman())
 	{
 		// Stop Ships from Entering a City in which harbour is full - e might also check "automated"
 		if (DOMAIN_SEA == getDomainType() && kPlot.isCity(true, getTeam()))
@@ -3278,7 +3278,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 					int iHarbourSpaceNeededByUnit = getUnitInfo().getHarbourSpaceNeeded();
 
 					// we check how many Units that place would allow
-					int iImprovementHarbourSpace = GC.getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS();
+					int iImprovementHarbourSpace = GLOBAL_DEFINE_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
 					// it is the second level Improvement, so we double - unless for canal, which has no upgrade
 					if (GC.getImprovementInfo(kPlot.getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT && !kPlot.isCanal())
 					{
@@ -3314,7 +3314,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 	// WTP, ray, new Barracks System - START
 	// of course this is only checked if new Barracks System is enabled
 	// We check this only for Humans, AI can ignore it because it is too difficult to teach it
-	if (GC.getENABLE_NEW_BARRACKS_SYSTEM() && isHuman())
+	if (GLOBAL_DEFINE_ENABLE_NEW_BARRACKS_SYSTEM && isHuman())
 	{
 		// Stop Combat Land Units from Entering a City in which barracks are full - we might also check "automated"
 		// here we also check just for can Attack - we check City owner further down
@@ -3367,7 +3367,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 					}
 
 					// we check how many Units that place would allow
-					int iImprovementBarracksSpace = GC.getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS();
+					int iImprovementBarracksSpace = GLOBAL_DEFINE_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
 					// it is the second level Improvement, so we double
 					if (GC.getImprovementInfo(kPlot.getImprovementType()).getImprovementUpgrade() == NO_IMPROVEMENT)
 					{
@@ -7092,7 +7092,7 @@ bool CvUnit::found()
 	PlayerTypes eParent = kPlayer.getParent();
 	if (eParent != NO_PLAYER && !GC.getEraInfo(kPlayer.getCurrentEra()).isRevolution() && !isAutomated())
 	{
-		int iFoodDifference = plot()->calculateNatureYield(YIELD_FOOD, getTeam(), true) - GC.getFOOD_CONSUMPTION_PER_POPULATION();
+		int iFoodDifference = plot()->calculateNatureYield(YIELD_FOOD, getTeam(), true) - GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION;
 		bool bInland = !plot()->isCoastalLand(GC.getDefineINT("MIN_WATER_SIZE_FOR_OCEAN"));
 
 		DiploCommentTypes eDiploComment = NO_DIPLOCOMMENT;
@@ -7423,7 +7423,7 @@ bool CvUnit::canJoinCity(const CvPlot* pPlot, bool bTestVisible, bool bIgnoreFoo
 
 	if (!bTestVisible)
 	{
-		if (pCity->getRawYieldProduced(YIELD_FOOD) < pCity->getPopulation() * GC.getFOOD_CONSUMPTION_PER_POPULATION())
+		if (pCity->getRawYieldProduced(YIELD_FOOD) < pCity->getPopulation() * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION)
 		{
 			// TAC - Clear Specialty Fix - koma13 - START
 			//if (!canJoinStarvingCity(*pCity))
@@ -7480,7 +7480,7 @@ bool CvUnit::canJoinStarvingCity(const CvCity& kCity) const
 	}
 
 	int iNewPop = kCity.getPopulation() + 1;
-	if (kCity.AI_getFoodGatherable(iNewPop, 0) >= iNewPop * GC.getFOOD_CONSUMPTION_PER_POPULATION())
+	if (kCity.AI_getFoodGatherable(iNewPop, 0) >= iNewPop * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION)
 	{
 		return true;
 	}
@@ -8563,7 +8563,7 @@ int CvUnit::maxMoves() const
 
 int CvUnit::movesLeft() const
 {
-	if (GC.useClassicMovementSystem())
+	if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM)
 	{
 		return std::max(0, (maxMoves() - getMoves()));
 	}

@@ -4235,7 +4235,7 @@ void CvGame::initScoreCalculation()
 		}
 	}
 
-	m_iMaxPopulation = iMaxFood / std::max(1, GC.getFOOD_CONSUMPTION_PER_POPULATION());
+	m_iMaxPopulation = iMaxFood / std::max(1, GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION);
 	m_iMaxLand = GC.getMapINLINE().getLandPlots();
 	m_iMaxFather = GC.getNumFatherInfos();
 

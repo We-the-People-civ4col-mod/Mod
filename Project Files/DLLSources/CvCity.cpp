@@ -2808,7 +2808,7 @@ int CvCity::extraPopulation() const
 
 int CvCity::foodConsumption(int iExtra) const
 {
-	return ((getPopulation() + iExtra) * GC.getFOOD_CONSUMPTION_PER_POPULATION());
+	return ((getPopulation() + iExtra) * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION);
 }
 
 int CvCity::foodDifference() const
@@ -4303,7 +4303,7 @@ int CvCity::getRawYieldConsumed(YieldTypes eYieldType) const
 	int iYieldConsumed = 0;
 	if (eYieldType == YIELD_FOOD)
 	{
-		iYieldConsumed = getPopulation() * GC.getFOOD_CONSUMPTION_PER_POPULATION();
+		iYieldConsumed = getPopulation() * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION;
 	}
 
 	for (int i = 0; i < getPopulation(); ++i)
@@ -10234,7 +10234,7 @@ int CvCity::getCityHarbourSpace() const
 
 	else
 	{
-		int iMinHarbourSpace = GC.getBASE_HARBOUR_SPACES_WITHOUT_BUILDINGS();
+		const int iMinHarbourSpace = GLOBAL_DEFINE_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
 		// even without Harbour Coastal Villages should return base Harbour Space
 		if (iValueToReturn < iMinHarbourSpace)
 		{
@@ -10273,7 +10273,7 @@ int CvCity::getCityHarbourSpaceUsed() const
 
 bool CvCity::bShouldShowCityHarbourSystem() const
 {
-	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && plot()->isCoastalLand() && isHuman())
+	if (GLOBAL_DEFINE_ENABLE_NEW_HARBOUR_SYSTEM && plot()->isCoastalLand() && isHuman())
 	{
 		return true;
 	}
@@ -10287,7 +10287,7 @@ bool CvCity::bShouldShowCityHarbourSystem() const
 int CvCity::getCityBarracksSpace() const
 {
 	int iValueToReturn = m_iCityBarracksSpace;
-	int iMinBarracksSpace = GC.getBASE_BARRACKS_SPACES_WITHOUT_BUILDINGS();
+	const int iMinBarracksSpace = GLOBAL_DEFINE_BASE_BARRACKS_SPACES_WITHOUT_BUILDINGS;
 	// even without Barracks Villages should return base Barracks Space
 	if (iValueToReturn < iMinBarracksSpace)
 	{
@@ -10333,7 +10333,7 @@ int CvCity::getCityBarracksSpaceUsed() const
 
 bool CvCity::bShouldShowCityBarracksSystem() const
 {
-	if (GC.getENABLE_NEW_HARBOUR_SYSTEM() && isHuman())
+	if (GLOBAL_DEFINE_ENABLE_NEW_HARBOUR_SYSTEM && isHuman())
 	{
 		return true;
 	}
