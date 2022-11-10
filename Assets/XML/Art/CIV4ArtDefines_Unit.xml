@@ -401,7 +401,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_PEARLS_HUNTER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Pearl_Diver_Button.dds</Button>
+            <Button>,Art/colonization_atlas_units.dds,1,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Pearls_Hunter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
