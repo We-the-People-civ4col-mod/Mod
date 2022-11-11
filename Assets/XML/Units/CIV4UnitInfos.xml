@@ -1050,6 +1050,10 @@
                     <iChange>-1</iChange>
                 </YieldChange>
                 <YieldChange>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iChange>-1</iChange>
                 </YieldChange>
@@ -1063,6 +1067,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_CANNONS</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CHAR_COAL</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
                     <iChange>-2</iChange>
                 </YieldChange>
                 <YieldChange>
@@ -1083,6 +1095,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_HEALTH</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CULTURE</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
                     <iChange>-2</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -1777,6 +1797,10 @@
                     <iChange>-1</iChange>
                 </YieldChange>
                 <YieldChange>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iChange>-1</iChange>
                 </YieldChange>
@@ -1790,6 +1814,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_CANNONS</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CHAR_COAL</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
                     <iChange>-2</iChange>
                 </YieldChange>
                 <YieldChange>
@@ -1810,6 +1842,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_HEALTH</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CULTURE</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
                     <iChange>-2</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -2504,6 +2544,10 @@
                     <iChange>-1</iChange>
                 </YieldChange>
                 <YieldChange>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iChange>-1</iChange>
                 </YieldChange>
@@ -2517,6 +2561,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_CANNONS</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CHAR_COAL</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
                     <iChange>-2</iChange>
                 </YieldChange>
                 <YieldChange>
@@ -2537,6 +2589,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_HEALTH</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CULTURE</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
                     <iChange>-2</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -3381,6 +3441,10 @@
                     <iChange>-2</iChange>
                 </YieldChange>
                 <YieldChange>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iChange>-2</iChange>
                 </YieldChange>
@@ -3395,6 +3459,14 @@
                 <YieldChange>
                     <YieldType>YIELD_CANNONS</YieldType>
                     <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CHAR_COAL</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iChange>-2</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_HAMMERS</YieldType>
@@ -3414,6 +3486,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_HEALTH</YieldType>
+                    <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CULTURE</YieldType>
+                    <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
                     <iChange>-3</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -4096,6 +4176,14 @@
                     <iChange>-1</iChange>
                 </YieldChange>
                 <YieldChange>
+                    <YieldType>YIELD_CHAR_COAL</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_HAMMERS</YieldType>
                     <iChange>-1</iChange>
                 </YieldChange>
@@ -4109,6 +4197,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_HEALTH</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CULTURE</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
                     <iChange>-1</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -4855,6 +4951,14 @@
                     <iChange>-1</iChange>
                 </YieldChange>
                 <YieldChange>
+                    <YieldType>YIELD_CHAR_COAL</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_HAMMERS</YieldType>
                     <iChange>-1</iChange>
                 </YieldChange>
@@ -4868,6 +4972,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_HEALTH</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CULTURE</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
                     <iChange>-1</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -5519,6 +5631,10 @@
                     <iChange>-2</iChange>
                 </YieldChange>
                 <YieldChange>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iChange>-2</iChange>
                 </YieldChange>
@@ -5532,6 +5648,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_CANNONS</YieldType>
+                    <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CHAR_COAL</YieldType>
+                    <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
                     <iChange>-3</iChange>
                 </YieldChange>
                 <YieldChange>
@@ -5552,6 +5676,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_HEALTH</YieldType>
+                    <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CULTURE</YieldType>
+                    <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
                     <iChange>-3</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -6310,6 +6442,10 @@
                     <iChange>-2</iChange>
                 </YieldChange>
                 <YieldChange>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iChange>-2</iChange>
                 </YieldChange>
@@ -6323,6 +6459,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_CANNONS</YieldType>
+                    <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CHAR_COAL</YieldType>
+                    <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
                     <iChange>-3</iChange>
                 </YieldChange>
                 <YieldChange>
@@ -6343,6 +6487,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_HEALTH</YieldType>
+                    <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CULTURE</YieldType>
+                    <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
                     <iChange>-3</iChange>
                 </YieldChange>
             </YieldChanges>
@@ -61526,6 +61678,10 @@
                     <iChange>-3</iChange>
                 </YieldChange>
                 <YieldChange>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iChange>-3</iChange>
                 </YieldChange>
@@ -61539,6 +61695,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_CANNONS</YieldType>
+                    <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CHAR_COAL</YieldType>
+                    <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
                     <iChange>-3</iChange>
                 </YieldChange>
                 <YieldChange>
@@ -64043,6 +64207,10 @@
                     <iChange>-2</iChange>
                 </YieldChange>
                 <YieldChange>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iChange>-2</iChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_TOOLS</YieldType>
                     <iChange>-2</iChange>
                 </YieldChange>
@@ -64056,6 +64224,14 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_CANNONS</YieldType>
+                    <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CHAR_COAL</YieldType>
+                    <iChange>-3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
                     <iChange>-3</iChange>
                 </YieldChange>
                 <YieldChange>
@@ -64276,6 +64452,10 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_SAILCLOTH</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
                     <iChange>-1</iChange>
                 </YieldChange>
                 <YieldChange>
