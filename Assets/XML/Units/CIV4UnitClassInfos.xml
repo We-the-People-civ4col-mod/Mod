@@ -437,6 +437,16 @@
             <DefaultUnit>UNIT_DOCTOR</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_ENTERTAINER</Type>
+            <Description>TXT_KEY_UNITCLASS_ENTERTAINER</Description>
+            <DefaultUnit>UNIT_ENTERTAINER</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_HARLOT</Type>
+            <Description>TXT_KEY_UNITCLASS_HARLOT</Description>
+            <DefaultUnit>UNIT_HARLOT</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_CHRISTIAN_MISSIONARY</Type>
             <Description>TXT_KEY_UNITCLASS_CHRISTIAN_MISSIONARY</Description>
             <DefaultUnit>UNIT_CHRISTIAN_MISSIONARY</DefaultUnit>
