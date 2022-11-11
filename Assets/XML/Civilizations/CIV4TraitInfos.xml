@@ -10406,7 +10406,7 @@
             <iRecruitPriceDiscountPortRoyal>0</iRecruitPriceDiscountPortRoyal>
             <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
             <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
-            <iPopGrowthThresholdModifier>10</iPopGrowthThresholdModifier>
+            <iPopGrowthThresholdModifier>-10</iPopGrowthThresholdModifier>
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
