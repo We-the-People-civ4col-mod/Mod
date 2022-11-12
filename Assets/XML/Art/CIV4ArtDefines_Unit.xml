@@ -17210,12 +17210,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_LINEN_PLANTER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Linen_Planter_button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Linen_Planter_Europe.dds</FullLengthIcon>
-            <fScale>0.5</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,8,2</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Linen_Planter.dds</FullLengthIcon>
+            <fScale>0.44</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Linen_Planter/BarleySicle.nif</NIF>
-            <KFM>Art/Units/Settler/spearman/spearman.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Linen_Planter/Expert_Farmer.nif</NIF>
+            <KFM>Art/Units/Expert_Farmer/Expert_Farmer.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
