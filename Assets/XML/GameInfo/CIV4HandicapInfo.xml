@@ -112,6 +112,7 @@
                 <GoodyType>GOODY_COLONIST</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -277,6 +278,7 @@
                 <GoodyType>GOODY_COLONIST</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -442,6 +444,7 @@
                 <GoodyType>GOODY_COLONIST</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -607,6 +610,7 @@
                 <GoodyType>GOODY_COLONIST</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -772,6 +776,7 @@
                 <GoodyType>GOODY_COLONIST</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -937,6 +942,7 @@
                 <GoodyType>GOODY_COLONIST</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -1102,6 +1108,7 @@
                 <GoodyType>GOODY_COLONIST</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>

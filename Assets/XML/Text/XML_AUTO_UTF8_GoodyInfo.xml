@@ -35,6 +35,11 @@
         <German>Ihr habt einen verlaufenen [COLOR_UNIT_TEXT]Missionar[COLOR_REVERT] entdeckt!</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_FAILED_MISSIONARY</Tag>
+        <English>You've discovered a [COLOR_UNIT_TEXT]failed missionary[COLOR_REVERT] on the return from his mission!</English>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]gescheiterten Missionar[COLOR_REVERT] auf der Heimkehr von seiner Mission entdeckt!</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_COLONIST</Tag>
         <English>You've discovered a lost [COLOR_UNIT_TEXT]colonist[COLOR_REVERT] from an earlier colony that failed!</English>
         <French>Vous avez découvert un [COLOR_UNIT_TEXT]colon[COLOR_REVERT] perdu d'une ancienne colonie !</French>

@@ -712,6 +712,11 @@
         <Spanish>Acomódate y descansa. Fume una pipa y deje que le contemos historias sobre nuestra patria para refrescar su espíritu.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_CHIEF_FAILED_MISSIONARY</Tag>
+        <English>Ah, the white man visits us again. Just last spring one of your black robes came to us. But he was rude and insulted our ancestors' spirits. So we had to beat and tie him. Take him with you. (Receive a failed missionary)</English>
+        <German>Ah, uns besucht der weiße Man erneut. Im letzten Frühjahr kam bereits einer ereur Schwarzroben zu uns. Aber er war unhöflich und beleidigte die Geister unserer Ahnen. Wir mussten ihn schlagen und fessen. Nehmt ihn mit euch. (Gescheiterten Missionar erhalten)</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CHIEF_GOODY_EXPERIENCE</Tag>
         <English>We have lived in this world for a long time and have learned in many battles what a warrior needs to survive here. We give you an insight into this knowledge - in the hope that you will stand by us as comrades-in-arms in future battles.</English>
         <French>Laissez nos guerriers vous apprendre nos techniques de combat en signe d'amitié entre nos deux tribus.</French>
