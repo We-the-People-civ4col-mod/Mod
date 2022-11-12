@@ -113,6 +113,9 @@
                 <GoodyType>GOODY_MESTIZZO</GoodyType>
                 <GoodyType>GOODY_MULATTO</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
+                <GoodyType>GOODY_BUCCANNEER</GoodyType>
+                <GoodyType>GOODY_SLAVE_HUNTER</GoodyType>
+                <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
@@ -281,6 +284,9 @@
                 <GoodyType>GOODY_MESTIZZO</GoodyType>
                 <GoodyType>GOODY_MULATTO</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
+                <GoodyType>GOODY_BUCCANNEER</GoodyType>
+                <GoodyType>GOODY_SLAVE_HUNTER</GoodyType>
+                <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
@@ -449,6 +455,9 @@
                 <GoodyType>GOODY_MESTIZZO</GoodyType>
                 <GoodyType>GOODY_MULATTO</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
+                <GoodyType>GOODY_BUCCANNEER</GoodyType>
+                <GoodyType>GOODY_SLAVE_HUNTER</GoodyType>
+                <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
@@ -617,6 +626,9 @@
                 <GoodyType>GOODY_MESTIZZO</GoodyType>
                 <GoodyType>GOODY_MULATTO</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
+                <GoodyType>GOODY_BUCCANNEER</GoodyType>
+                <GoodyType>GOODY_SLAVE_HUNTER</GoodyType>
+                <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
@@ -785,6 +797,9 @@
                 <GoodyType>GOODY_MESTIZZO</GoodyType>
                 <GoodyType>GOODY_MULATTO</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
+                <GoodyType>GOODY_BUCCANNEER</GoodyType>
+                <GoodyType>GOODY_SLAVE_HUNTER</GoodyType>
+                <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
@@ -953,6 +968,9 @@
                 <GoodyType>GOODY_MESTIZZO</GoodyType>
                 <GoodyType>GOODY_MULATTO</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
+                <GoodyType>GOODY_BUCCANNEER</GoodyType>
+                <GoodyType>GOODY_SLAVE_HUNTER</GoodyType>
+                <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
@@ -1121,6 +1139,9 @@
                 <GoodyType>GOODY_MESTIZZO</GoodyType>
                 <GoodyType>GOODY_MULATTO</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
+                <GoodyType>GOODY_BUCCANNEER</GoodyType>
+                <GoodyType>GOODY_SLAVE_HUNTER</GoodyType>
+                <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
