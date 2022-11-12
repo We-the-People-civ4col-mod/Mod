@@ -17261,8 +17261,8 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_PEANUT_PLANTER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Peanut_Planter_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Peanut_Planter_Europe.dds</FullLengthIcon>
+            <Button>,Art/colonization_atlas_units_two.dds,6,2</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Peanut_Planter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Peanut_Planter/Expert_Cotton_Planter.nif</NIF>
@@ -17278,8 +17278,8 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_PEAT_CUTTER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Peat_Cutter_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Peat_Cutter_Europe.dds</FullLengthIcon>
+            <Button>,Art/colonization_atlas_units_two.dds,7,2</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Peat_Cutter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Peat_Cutter/expert_silver_miner.nif</NIF>
