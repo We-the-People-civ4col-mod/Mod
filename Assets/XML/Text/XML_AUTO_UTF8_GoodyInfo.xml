@@ -46,6 +46,16 @@
         <German>Ihr habt einen verlorenen [COLOR_UNIT_TEXT]Kolonisten[COLOR_REVERT] einer gescheiterten Kolonie entdeckt!</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_MESTIZZO</Tag>
+        <English>You've discovered a [COLOR_UNIT_TEXT]young Native[COLOR_REVERT] in the woods! [NEWLINE]At closer look you realize that one of his parents might have been White and ask him to come with you.</English>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]jungen Uhreinwohner[COLOR_REVERT] in den Wäldern entdeckt! [NEWLINE]Bei näherer Betrachtung fällt euch auf, dass einer seiner Elternteile Europäisch gewesen zu sein scheint.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_MULATTO</Tag>
+        <English>You've discovered a [COLOR_UNIT_TEXT]young Black[COLOR_REVERT]! [NEWLINE]Your first thought was that he is a runaway slave. But he tells you that his father was the white owner of his black mother who sent her into the wilderness when she got pregnant.</English>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]jungen Schwarzen[COLOR_REVERT] in den Wäldern entdeckt! [NEWLINE] Ihr haltet ihn zuerst für einen entlaufenen Sklaven. Doch er erzählt euch, dass sein Vater der weiße Besitzer seiner Mutter war, der sie in die Wildnis schickte als sie schwanger wurde.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_CONQUISTADOR</Tag>
         <English>You've discovered a lost [COLOR_UNIT_TEXT]conquistador[COLOR_REVERT] who was separated from his fellows!</English>
         <French>Vous avez découvert un [COLOR_UNIT_TEXT]conquistador[COLOR_REVERT] perdu abandonné par les siens !</French>

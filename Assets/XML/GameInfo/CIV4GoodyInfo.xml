@@ -450,6 +450,68 @@
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
+            <Type>GOODY_MESTIZZO</Type>
+            <Description>TXT_KEY_GOODY_MESTIZZO</Description>
+            <Sound>AS2D_GOODY_XP</Sound>
+            <AnnounceText>TXT_KEY_GOODY_MESTIZZO</AnnounceText>
+            <ChiefText>TXT_KEY_CHIEF_COLONIST</ChiefText>
+            <iGold>0</iGold>
+            <iGoldRand1>0</iGoldRand1>
+            <iGoldRand2>0</iGoldRand2>
+            <iImmigration>0</iImmigration>
+            <iMapOffset>0</iMapOffset>
+            <iMapRange>0</iMapRange>
+            <iMapProb>0</iMapProb>
+            <iExperience>0</iExperience>
+            <iHealing>0</iHealing>
+            <iDamagePrereq>0</iDamagePrereq>
+            <bBad>0</bBad>
+            <bWar>0</bWar>
+            <UnitClass>UNITCLASS_MESTIZZO</UnitClass>
+            <TeachUnitClass>NONE</TeachUnitClass>
+            <iCityGoodyWeight>0</iCityGoodyWeight>
+            <bWaterGoody>0</bWaterGoody>
+            <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
+            <GoodyWeights/>
+        </GoodyInfo>
+        <GoodyInfo>
+            <Type>GOODY_MULATTO</Type>
+            <Description>TXT_KEY_GOODY_MULATTO</Description>
+            <Sound>AS2D_GOODY_XP</Sound>
+            <AnnounceText>TXT_KEY_GOODY_MULATTO</AnnounceText>
+            <ChiefText>TXT_KEY_CHIEF_COLONIST</ChiefText>
+            <iGold>0</iGold>
+            <iGoldRand1>0</iGoldRand1>
+            <iGoldRand2>0</iGoldRand2>
+            <iImmigration>0</iImmigration>
+            <iMapOffset>0</iMapOffset>
+            <iMapRange>0</iMapRange>
+            <iMapProb>0</iMapProb>
+            <iExperience>0</iExperience>
+            <iHealing>0</iHealing>
+            <iDamagePrereq>0</iDamagePrereq>
+            <bBad>0</bBad>
+            <bWar>0</bWar>
+            <UnitClass>UNITCLASS_MULATTO</UnitClass>
+            <TeachUnitClass>NONE</TeachUnitClass>
+            <iCityGoodyWeight>0</iCityGoodyWeight>
+            <bWaterGoody>0</bWaterGoody>
+            <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
+            <GoodyWeights/>
+        </GoodyInfo>
+        <GoodyInfo>
             <Type>GOODY_CONQUISTADOR</Type>
             <Description>TXT_KEY_GOODY_CONQUISTADOR</Description>
             <Sound>AS2D_GOODY_XP</Sound>
