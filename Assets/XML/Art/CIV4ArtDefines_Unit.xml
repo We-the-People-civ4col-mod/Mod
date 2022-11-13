@@ -1546,7 +1546,7 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>        
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SPICES</Type>
             <Button>,Art/colonization_atlas_resources.dds,7,5</Button>
@@ -1621,7 +1621,7 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>        
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_GRAPES</Type>
             <Button>,Art/colonization_atlas_resources.dds,3,3</Button>
@@ -2053,7 +2053,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Peat/Bricks.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -2071,7 +2071,7 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>        	
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SILVER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,1</Button>
