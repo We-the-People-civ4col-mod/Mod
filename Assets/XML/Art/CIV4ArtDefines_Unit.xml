@@ -1826,9 +1826,9 @@
             <Type>ART_DEF_UNIT_BARLEY</Type>
             <Button>,Art/colonization_atlas_resources.dds,1,1</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
-            <fScale>1.2</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Food/Food.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Barley/barley.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -16860,9 +16860,9 @@
             <Type>ART_DEF_UNIT_FLAX</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Linen_Fiber_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
-            <fScale>1.2</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Trade_Goods/Trade_Goods.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Flax/Flax.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
