@@ -3099,11 +3099,11 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_BLACK_POWDER</Type>
-            <Button>Art/interface/buttons/New_Yields_Buttons/Charcoal_Goods_Button.dds</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Blackpowder_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Muskets/Muskets.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Black_Powder/Black_Powder.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -16837,7 +16837,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Trade_Goods/Trade_Goods.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Hooch/Hooch.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -16855,7 +16855,7 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>        
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_FLAX</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Linen_Fiber_Goods_Button.dds</Button>
@@ -16880,7 +16880,7 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>	
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_PADDED_FURNITURE</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Padded_Furniture_Goods_Button.dds</Button>
