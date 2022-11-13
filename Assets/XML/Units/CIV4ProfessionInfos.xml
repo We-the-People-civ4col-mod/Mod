@@ -4798,7 +4798,12 @@
             <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
-            <YieldEquipedNums/>
+            <YieldEquipedNums>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iYieldAmount>100</iYieldAmount>
+                </YieldEquipedNum>
+            </YieldEquipedNums>
             <FreePromotions/>
             <YieldsProduced>
                 <YieldType>NONE</YieldType>
@@ -4840,7 +4845,11 @@
             <YieldEquipedNums>
                 <YieldEquipedNum>
                     <YieldType>YIELD_TRADE_GOODS</YieldType>
-                    <iYieldAmount>100</iYieldAmount>
+                    <iYieldAmount>50</iYieldAmount>
+                </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iYieldAmount>50</iYieldAmount>
                 </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions/>
@@ -4884,6 +4893,10 @@
             <YieldEquipedNums>
                 <YieldEquipedNum>
                     <YieldType>YIELD_TOOLS</YieldType>
+                    <iYieldAmount>50</iYieldAmount>
+                </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
                     <iYieldAmount>50</iYieldAmount>
                 </YieldEquipedNum>
             </YieldEquipedNums>
@@ -4930,6 +4943,10 @@
                 <YieldEquipedNum>
                     <YieldType>YIELD_HORSES</YieldType>
                     <iYieldAmount>50</iYieldAmount>
+                </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iYieldAmount>20</iYieldAmount>
                 </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions/>
