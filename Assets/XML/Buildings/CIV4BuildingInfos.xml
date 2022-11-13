@@ -1780,7 +1780,7 @@
                     <YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -1876,7 +1876,7 @@
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
-			<iDomesticMarketModifier>250</iDomesticMarketModifier>
+        	<iDomesticMarketModifier>250</iDomesticMarketModifier>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
             <DomainFreeExperiences/>
@@ -1887,7 +1887,7 @@
                     <BuildingClassType>BUILDINGCLASS_PALACE</BuildingClassType>
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
-				<BuildingClassNeeded>
+                <BuildingClassNeeded>
                     <BuildingClassType>BUILDINGCLASS_CENTRAL_CITY_MARKET</BuildingClassType>
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
@@ -4266,7 +4266,7 @@
                     <YieldType>YIELD_COLOURED_CLOTH</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_COLOURED_WOOL_CLOTH</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -4918,7 +4918,7 @@
                     <YieldType>YIELD_LEATHER</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_PIG_LEATHER</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -5533,7 +5533,7 @@
                     <YieldType>YIELD_RUM</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_HOOCH</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -6142,7 +6142,7 @@
                     <YieldType>YIELD_CIGARS</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_YERBA_TEA</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -6648,7 +6648,7 @@
                     <YieldType>YIELD_FURNITURE</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_PADDED_FURNITURE</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -7990,7 +7990,7 @@
                     <YieldType>YIELD_SHEEP</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_GOATS</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -7998,7 +7998,7 @@
                     <YieldType>YIELD_CATTLE</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_PIGS</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -8083,7 +8083,7 @@
                     <YieldType>YIELD_SHEEP</YieldType>
                     <iModifier>20</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_GOATS</YieldType>
                     <iModifier>20</iModifier>
                 </YieldModifier>
@@ -8095,15 +8095,15 @@
                     <YieldType>YIELD_HORSES</YieldType>
                     <iModifier>20</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_PIGS</YieldType>
                     <iModifier>20</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_CHICKEN</YieldType>
                     <iModifier>20</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_GEESE</YieldType>
                     <iModifier>20</iModifier>
                 </YieldModifier>
@@ -8207,7 +8207,7 @@
                     <YieldType>YIELD_SHEEP</YieldType>
                     <iModifier>25</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_GOATS</YieldType>
                     <iModifier>25</iModifier>
                 </YieldModifier>
@@ -8219,15 +8219,15 @@
                     <YieldType>YIELD_HORSES</YieldType>
                     <iModifier>25</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_PIGS</YieldType>
                     <iModifier>25</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_CHICKEN</YieldType>
                     <iModifier>25</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_GEESE</YieldType>
                     <iModifier>25</iModifier>
                 </YieldModifier>
@@ -8335,7 +8335,7 @@
                     <YieldType>YIELD_SHEEP</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_GOATS</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -8347,23 +8347,23 @@
                     <YieldType>YIELD_HORSES</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_PIGS</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_CHICKEN</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_GEESE</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_MILK</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_CHEESE</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -9090,7 +9090,7 @@
                     <YieldType>YIELD_WOOL</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_GOAT_HIDES</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -9098,11 +9098,11 @@
                     <YieldType>YIELD_HIDES</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_PIG_SKIN</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_DOWNS</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -11905,11 +11905,11 @@
                     <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
-				<AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_VANILLA_COLLECTOR</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
-				<AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_SUGAR_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
@@ -11922,7 +11922,7 @@
             <iTeachLevel>0</iTeachLevel>
             <iAICitySize>8</iAICitySize>
         </BuildingInfo>
-		<BuildingInfo>
+        <BuildingInfo>
             <Type>BUILDING_LEATHER_PADDER_HOUSE</Type>
             <BuildingClass>BUILDINGCLASS_LEATHER_PADDER_HOUSE</BuildingClass>
             <SpecialBuildingType>SPECIALBUILDING_LEATHER_PADDER</SpecialBuildingType>
@@ -11993,8 +11993,8 @@
             </BuildingClassNeededs>
             <AIRequiredCatchmentAreaTerrains>
                 <eRequiredTerrain>TERRAIN_SAVANNAH</eRequiredTerrain>
-				<eRequiredTerrain>TERRAIN_GRASS</eRequiredTerrain>
-				<eRequiredTerrain>TERRAIN_PLAINS_FERTILE</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_GRASS</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_PLAINS_FERTILE</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>
@@ -12005,7 +12005,7 @@
                     <eUnitClass>UNITCLASS_RANCHER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
-				<AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_BUTCHER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
@@ -12112,7 +12112,7 @@
                     <eUnitClass>UNITCLASS_RANCHER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
-				<AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_BUTCHER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
@@ -12199,7 +12199,7 @@
                     <YieldType>YIELD_PADDED_LEATHER_COATS</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				 <YieldModifier>
+                 <YieldModifier>
                     <YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -12228,7 +12228,7 @@
                     <eUnitClass>UNITCLASS_RANCHER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
-				<AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_BUTCHER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
@@ -12241,7 +12241,7 @@
             <iTeachLevel>0</iTeachLevel>
             <iAICitySize>8</iAICitySize>
         </BuildingInfo>
-		<BuildingInfo>
+        <BuildingInfo>
             <Type>BUILDING_OIL_TRADER_HOUSE</Type>
             <BuildingClass>BUILDINGCLASS_OIL_TRADER_HOUSE</BuildingClass>
             <SpecialBuildingType>SPECIALBUILDING_OIL_TRADER</SpecialBuildingType>
@@ -12312,7 +12312,7 @@
             </BuildingClassNeededs>
             <AIRequiredCatchmentAreaTerrains>
                 <eRequiredTerrain>TERRAIN_TAIGA</eRequiredTerrain>
-				<eRequiredTerrain>TERRAIN_PLAINS_FERTILE</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_PLAINS_FERTILE</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>
@@ -12323,7 +12323,7 @@
                     <eUnitClass>UNITCLASS_RAPE_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
-				<AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_OLIVES_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
@@ -12430,7 +12430,7 @@
                     <eUnitClass>UNITCLASS_RAPE_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
-				<AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_OLIVES_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
@@ -12517,7 +12517,7 @@
                     <YieldType>YIELD_OLIVE_OIL</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				 <YieldModifier>
+                 <YieldModifier>
                     <YieldType>YIELD_RAPE_OIL</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -12964,8 +12964,8 @@
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
             <AIRequiredCatchmentAreaTerrains>
-				<eRequiredTerrain>TERRAIN_MARSH</eRequiredTerrain>
-				<eRequiredTerrain>TERRAIN_WETLAND</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_MARSH</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_WETLAND</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>
@@ -13196,7 +13196,7 @@
             <iTeachLevel>0</iTeachLevel>
             <iAICitySize>8</iAICitySize>
         </BuildingInfo>
-		<BuildingInfo>
+        <BuildingInfo>
             <Type>BUILDING_TAILOR_HOUSE</Type>
             <BuildingClass>BUILDINGCLASS_TAILOR_HOUSE</BuildingClass>
             <SpecialBuildingType>SPECIALBUILDING_TAILOR</SpecialBuildingType>
@@ -13266,12 +13266,12 @@
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
             <AIRequiredCatchmentAreaTerrains>
-				<eRequiredTerrain>TERRAIN_GRASS</eRequiredTerrain>
-				<eRequiredTerrain>TERRAIN_PLAINS_FERTILE</eRequiredTerrain>
-				<eRequiredTerrain>TERRAIN_SAVANNAH</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_GRASS</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_PLAINS_FERTILE</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_SAVANNAH</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
             <AIUnitClassWeights>
-			    <AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_CLOTH_TAYLOR</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
@@ -13378,7 +13378,7 @@
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
             <AIUnitClassWeights>
-			    <AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_CLOTH_TAYLOR</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
@@ -13473,7 +13473,7 @@
                     <YieldType>YIELD_FESTIVE_CLOTHES</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
-				 <YieldModifier>
+                 <YieldModifier>
                     <YieldType>YIELD_EVERYDAY_CLOTHES</YieldType>
                     <iModifier>50</iModifier>
                 </YieldModifier>
@@ -13494,7 +13494,7 @@
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
             <AIUnitClassWeights>
-			    <AIUnitClassWeight>
+                <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_CLOTH_TAYLOR</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
@@ -13504,6 +13504,329 @@
                 </AIUnitClassWeight>
                 <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_DYER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
+            <HotKey/>
+            <bAltDown>0</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>0</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <iTeachLevel>0</iTeachLevel>
+            <iAICitySize>8</iAICitySize>
+        </BuildingInfo>
+        <BuildingInfo>
+            <Type>BUILDING_BAKER_HOUSE</Type>
+            <BuildingClass>BUILDINGCLASS_BAKER_HOUSE</BuildingClass>
+            <SpecialBuildingType>SPECIALBUILDING_BAKER</SpecialBuildingType>
+            <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
+            <Description>TXT_KEY_BUILDING_BAKER_HOUSE</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BAKER_HOUSE_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BAKER_HOUSE_STRATEGY</Strategy>
+            <ArtDefineTag>ART_DEF_BUILDING_BAKER_HOUSE</ArtDefineTag>
+            <MovieDefineTag>NONE</MovieDefineTag>
+            <VictoryPrereq>NONE</VictoryPrereq>
+            <FreeStartEra>NONE</FreeStartEra>
+            <MaxStartEra>NONE</MaxStartEra>
+            <ProductionTraits/>
+            <FreePromotion>NONE</FreePromotion>
+            <bGraphicalOnly>0</bGraphicalOnly>
+            <bWorksWater>0</bWorksWater>
+            <bWater>0</bWater>
+            <bRiver>0</bRiver>
+            <bCapital>0</bCapital>
+            <bNationalWonder>0</bNationalWonder>
+            <bNeverCapture>0</bNeverCapture>
+            <bCenterInCity>0</bCenterInCity>
+            <iAIWeight>80</iAIWeight>
+            <YieldCosts>
+                <YieldCost>
+                    <YieldType>YIELD_HAMMERS</YieldType>
+                    <iCost>30</iCost>
+                </YieldCost>
+            </YieldCosts>
+            <iHurryCostModifier>0</iHurryCostModifier>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iProfessionOutput>3</iProfessionOutput>
+            <iMaxWorkers>2</iMaxWorkers>
+            <iMinAreaSize>-1</iMinAreaSize>
+            <iConquestProb>100</iConquestProb>
+            <iCitiesPrereq>0</iCitiesPrereq>
+            <iTeamsPrereq>0</iTeamsPrereq>
+            <iLevelPrereq>0</iLevelPrereq>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <iExperience>0</iExperience>
+            <iFoodKept>0</iFoodKept>
+            <iHealRateChange>0</iHealRateChange>
+            <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+            <iDefense>0</iDefense>
+            <iBombardDefense>0</iBombardDefense>
+            <iAsset>50</iAsset>
+            <iPower>0</iPower>
+            <iYieldStorage>0</iYieldStorage>
+            <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
+            <fVisibilityPriority>1.0</fVisibilityPriority>
+            <LandPlotYieldChanges/>
+            <SeaPlotYieldChanges/>
+            <RiverPlotYieldChanges/>
+            <YieldChanges/>
+            <YieldModifiers/>
+            <ConstructSound/>
+            <UnitCombatFreeExperiences/>
+            <DomainFreeExperiences/>
+            <DomainProductionModifiers/>
+            <PrereqBuildingClasses/>
+            <BuildingClassNeededs>
+                <BuildingClassNeeded>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGEHALL</BuildingClassType>
+                    <bNeededInCity>1</bNeededInCity>
+                </BuildingClassNeeded>
+            </BuildingClassNeededs>
+            <AIRequiredCatchmentAreaTerrains/>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_BAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FARMER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_RICE_FARMER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_CASSAVA_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
+            <HotKey/>
+            <bAltDown>0</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>0</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <iTeachLevel>0</iTeachLevel>
+            <iAICitySize>1</iAICitySize>
+        </BuildingInfo>
+        <BuildingInfo>
+            <Type>BUILDING_BAKER_SHOP</Type>
+            <BuildingClass>BUILDINGCLASS_BAKER_SHOP</BuildingClass>
+            <SpecialBuildingType>SPECIALBUILDING_BAKER</SpecialBuildingType>
+            <iSpecialBuildingPriority>1</iSpecialBuildingPriority>
+            <Description>TXT_KEY_BUILDING_BAKER_SHOP</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BAKER_SHOP_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BAKER_SHOP_STRATEGY</Strategy>
+            <ArtDefineTag>ART_DEF_BUILDING_BAKER_SHOP</ArtDefineTag>
+            <MovieDefineTag>NONE</MovieDefineTag>
+            <VictoryPrereq>NONE</VictoryPrereq>
+            <FreeStartEra>NONE</FreeStartEra>
+            <MaxStartEra>NONE</MaxStartEra>
+            <ProductionTraits/>
+            <FreePromotion>NONE</FreePromotion>
+            <bGraphicalOnly>0</bGraphicalOnly>
+            <bWorksWater>0</bWorksWater>
+            <bWater>0</bWater>
+            <bRiver>0</bRiver>
+            <bCapital>0</bCapital>
+            <bNationalWonder>0</bNationalWonder>
+            <bNeverCapture>0</bNeverCapture>
+            <bCenterInCity>0</bCenterInCity>
+            <iAIWeight>60</iAIWeight>
+            <YieldCosts>
+                <YieldCost>
+                    <YieldType>YIELD_HAMMERS</YieldType>
+                    <iCost>90</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_TOOLS</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+            </YieldCosts>
+            <iHurryCostModifier>0</iHurryCostModifier>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iProfessionOutput>6</iProfessionOutput>
+            <iMaxWorkers>3</iMaxWorkers>
+            <iMinAreaSize>-1</iMinAreaSize>
+            <iConquestProb>100</iConquestProb>
+            <iCitiesPrereq>0</iCitiesPrereq>
+            <iTeamsPrereq>0</iTeamsPrereq>
+            <iLevelPrereq>0</iLevelPrereq>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <iExperience>0</iExperience>
+            <iFoodKept>0</iFoodKept>
+            <iHealRateChange>0</iHealRateChange>
+            <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+            <iDefense>0</iDefense>
+            <iBombardDefense>0</iBombardDefense>
+            <iAsset>100</iAsset>
+            <iPower>0</iPower>
+            <iYieldStorage>0</iYieldStorage>
+            <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
+            <fVisibilityPriority>1.0</fVisibilityPriority>
+            <LandPlotYieldChanges/>
+            <SeaPlotYieldChanges/>
+            <RiverPlotYieldChanges/>
+            <YieldChanges/>
+            <YieldModifiers/>
+            <ConstructSound/>
+            <UnitCombatFreeExperiences/>
+            <DomainFreeExperiences/>
+            <DomainProductionModifiers/>
+            <PrereqBuildingClasses/>
+            <BuildingClassNeededs>
+                <BuildingClassNeeded>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <bNeededInCity>1</bNeededInCity>
+                </BuildingClassNeeded>
+                <BuildingClassNeeded>
+                    <BuildingClassType>BUILDINGCLASS_TOWNHALL</BuildingClassType>
+                    <bNeededInCity>1</bNeededInCity>
+                </BuildingClassNeeded>
+            </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_BAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FARMER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_RICE_FARMER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_CASSAVA_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
+            <HotKey/>
+            <bAltDown>0</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>0</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <iTeachLevel>0</iTeachLevel>
+            <iAICitySize>3</iAICitySize>
+        </BuildingInfo>
+        <BuildingInfo>
+            <Type>BUILDING_BAKERY</Type>
+            <BuildingClass>BUILDINGCLASS_BAKERY</BuildingClass>
+            <SpecialBuildingType>SPECIALBUILDING_BAKER</SpecialBuildingType>
+            <iSpecialBuildingPriority>2</iSpecialBuildingPriority>
+            <Description>TXT_KEY_BUILDING_BAKERY</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BAKERY_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BAKERY_STRATEGY</Strategy>
+            <ArtDefineTag>ART_DEF_BUILDING_BAKERY</ArtDefineTag>
+            <MovieDefineTag>NONE</MovieDefineTag>
+            <VictoryPrereq>NONE</VictoryPrereq>
+            <FreeStartEra>NONE</FreeStartEra>
+            <MaxStartEra>NONE</MaxStartEra>
+            <ProductionTraits/>
+            <FreePromotion>NONE</FreePromotion>
+            <bGraphicalOnly>0</bGraphicalOnly>
+            <bWorksWater>0</bWorksWater>
+            <bWater>0</bWater>
+            <bRiver>0</bRiver>
+            <bCapital>0</bCapital>
+            <bNationalWonder>0</bNationalWonder>
+            <bNeverCapture>0</bNeverCapture>
+            <bCenterInCity>0</bCenterInCity>
+            <iAIWeight>40</iAIWeight>
+            <YieldCosts>
+                <YieldCost>
+                    <YieldType>YIELD_HAMMERS</YieldType>
+                    <iCost>270</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_TOOLS</YieldType>
+                    <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>50</iCost>
+                </YieldCost>
+            </YieldCosts>
+            <iHurryCostModifier>0</iHurryCostModifier>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iProfessionOutput>6</iProfessionOutput>
+            <iMaxWorkers>4</iMaxWorkers>
+            <iMinAreaSize>-1</iMinAreaSize>
+            <iConquestProb>100</iConquestProb>
+            <iCitiesPrereq>0</iCitiesPrereq>
+            <iTeamsPrereq>0</iTeamsPrereq>
+            <iLevelPrereq>0</iLevelPrereq>
+            <iMinLatitude>0</iMinLatitude>
+            <iMaxLatitude>90</iMaxLatitude>
+            <iExperience>0</iExperience>
+            <iFoodKept>0</iFoodKept>
+            <iHealRateChange>0</iHealRateChange>
+            <iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+            <iDefense>0</iDefense>
+            <iBombardDefense>0</iBombardDefense>
+            <iAsset>200</iAsset>
+            <iPower>0</iPower>
+            <iYieldStorage>0</iYieldStorage>
+            <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
+            <fVisibilityPriority>1.0</fVisibilityPriority>
+            <LandPlotYieldChanges/>
+            <SeaPlotYieldChanges/>
+            <RiverPlotYieldChanges/>
+            <YieldChanges/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iModifier>50</iModifier>
+                </YieldModifier>
+            </YieldModifiers>
+            <ConstructSound/>
+            <UnitCombatFreeExperiences/>
+            <DomainFreeExperiences/>
+            <DomainProductionModifiers/>
+            <PrereqBuildingClasses/>
+            <BuildingClassNeededs>
+                <BuildingClassNeeded>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <bNeededInCity>1</bNeededInCity>
+                </BuildingClassNeeded>
+                <BuildingClassNeeded>
+                    <BuildingClassType>BUILDINGCLASS_CITYHALL</BuildingClassType>
+                    <bNeededInCity>1</bNeededInCity>
+                </BuildingClassNeeded>
+            </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_BAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FARMER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_RICE_FARMER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_CASSAVA_PLANTER</eUnitClass>
                     <iWeight>50</iWeight>
                 </AIUnitClassWeight>
             </AIUnitClassWeights>
@@ -18539,7 +18862,7 @@
             <iHotKeyPriority>0</iHotKeyPriority>
             <iTeachLevel>0</iTeachLevel>
             <iAICitySize>1</iAICitySize>
-        </BuildingInfo>		
+        </BuildingInfo>        
         <BuildingInfo>
             <Type>BUILDING_BONUS_STONE</Type>
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
@@ -19210,7 +19533,7 @@
             <iTeachLevel>0</iTeachLevel>
             <iAICitySize>1</iAICitySize>
         </BuildingInfo>	
-		<BuildingInfo>
+        <BuildingInfo>
             <Type>BUILDING_BONUS_DOMESTIC_GOOSE</Type>
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
@@ -19545,7 +19868,7 @@
             <iTeachLevel>0</iTeachLevel>
             <iAICitySize>1</iAICitySize>
         </BuildingInfo>
-		<BuildingInfo>
+        <BuildingInfo>
             <Type>BUILDING_BONUS_KAUTSCHUK</Type>
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>

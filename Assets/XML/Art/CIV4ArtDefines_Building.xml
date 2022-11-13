@@ -2726,7 +2726,7 @@
             <Button>,Art/colonization_atlas_buildings.dds,5,10</Button>
         </BuildingArtInfo>
 	    <BuildingArtInfo>
-            <Type>ART_DEF_BUILDING_BAKERS_HOUSE</Type>
+            <Type>ART_DEF_BUILDING_BAKER_HOUSE</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
             <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,1,8</CityTexture>
@@ -2738,7 +2738,7 @@
             <Button>,Art/colonization_atlas_buildings.dds,6,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
-            <Type>ART_DEF_BUILDING_BAKERY</Type>
+            <Type>ART_DEF_BUILDING_BAKER_SHOP</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
             <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,2,8</CityTexture>
@@ -2750,7 +2750,7 @@
             <Button>,Art/colonization_atlas_buildings.dds,7,10</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
-            <Type>ART_DEF_BUILDING_BAKING_FACTORY</Type>
+            <Type>ART_DEF_BUILDING_BAKERY</Type>
             <LSystem>LSYSTEM_3x2</LSystem>
             <bAnimated>0</bAnimated>
             <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,3,8</CityTexture>

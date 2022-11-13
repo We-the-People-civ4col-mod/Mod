@@ -756,5 +756,23 @@
             <DefaultBuilding>BUILDING_TAILOR_FACTORY</DefaultBuilding>
             <VictoryThresholds/>
         </BuildingClassInfo>
+        <BuildingClassInfo>
+            <Type>BUILDINGCLASS_BAKER_HOUSE</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_BAKERS_HOUSE</Description>
+            <DefaultBuilding>BUILDING_BAKERS_HOUSE</DefaultBuilding>
+            <VictoryThresholds/>
+        </BuildingClassInfo>
+        <BuildingClassInfo>
+            <Type>BUILDINGCLASS_BAKER_SHOP</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_BAKER_SHOP</Description>
+            <DefaultBuilding>BUILDING_BAKER_SHOP</DefaultBuilding>
+            <VictoryThresholds/>
+        </BuildingClassInfo>
+        <BuildingClassInfo>
+            <Type>BUILDINGCLASS_BAKERY</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_BAKERY</Description>
+            <DefaultBuilding>BUILDING_BAKERY</DefaultBuilding>
+            <VictoryThresholds/>
+        </BuildingClassInfo>
     </BuildingClassInfos>
 </Civ4BuildingClassInfos>

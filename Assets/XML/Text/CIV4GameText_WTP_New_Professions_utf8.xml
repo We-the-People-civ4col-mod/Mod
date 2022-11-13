@@ -210,7 +210,7 @@
         <Tag>TXT_KEY_PROFESSION_HARDWOOD_LUMBERJACK_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
-    </TEXT>        
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GOATHERD</Tag>
         <English>
@@ -1457,6 +1457,59 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PROSTITUTE_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_BAKER_BARLEY</Tag>
+        <English>
+            <Text>Baker (Barley): Bakers (Barley)</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Bäcker (Weizen):Bäcker (Weizen)</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_BAKER_RICE</Tag>
+        <English>
+            <Text>Baker (Rice): Bakers (Rice)</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Bäcker (Reis):Bäcker (Reis)</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_BAKER_CASSAVA</Tag>
+        <English>
+            <Text>Baker (Cassava): Bakers (Cassava)</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Bäcker (Cassava):Bäcker (Cassava)</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_BAKER_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_BAKER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_BAKER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>

@@ -711,4 +711,98 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+    <!-- BAKER -->
+    <TEXT>
+        <Tag>TXT_KEY_SPECIALBUILDING_BAKER</Tag>
+        <English>Baker</English>
+        <German>
+            <Text>Bäckerei</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_BAKER_HOUSE</Tag>
+        <English>Baker's House</English>
+        <German>
+            <Text>Bäckerhaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_BAKER_SHOP</Tag>
+        <English>Baker's Shop</English>
+        <German>
+            <Text>Backladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_BAKERY</Tag>
+        <English>Bakery</English>
+        <German>
+            <Text>Bäckerei</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BAKER_HOUSE</Tag>
+        <English>Baker's House</English>
+        <German>
+            <Text>Bäckerhaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BAKER_SHOP</Tag>
+        <English>Baker's Shop</English>
+        <German>
+            <Text>Bäckerladen</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BAKERY</Tag>
+        <English>Bakery</English>
+        <German>
+            <Text>Bäckerei</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BAKER_HOUSE_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BAKER_HOUSE_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BAKER_SHOP_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BAKER_SHOP_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BAKERY_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_BAKERY_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>

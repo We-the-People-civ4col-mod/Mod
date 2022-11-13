@@ -2319,7 +2319,7 @@
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_DYER</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
-        </ProfessionInfo>        
+        </ProfessionInfo>
         <ProfessionInfo>
             <Type>PROFESSION_FESTIVE_CLOTHES_TAILOR</Type>
             <Description>TXT_KEY_PROFESSION_FESTIVE_CLOTHES_TAILOR</Description>
@@ -2396,6 +2396,123 @@
             <Button>Art/interface/buttons/New_Profession_Buttons/Commoners_Tailor.dds</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_CLOTH_TAYLOR</ExpertUnit>
+            <iLbDLearnLevel>2</iLbDLearnLevel>
+        </ProfessionInfo>
+        <ProfessionInfo>
+            <Type>PROFESSION_BAKER_BARLEY</Type>
+            <Description>TXT_KEY_PROFESSION_BAKER_BARLEY</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_BAKER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_BAKER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_BAKER_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_BAKER</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>300</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_BAKERY_GOODS</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>YIELD_BARLEY</YieldType>
+            </YieldsConsumed>
+            <Button>Art/interface/buttons/New_Profession_Buttons/Profession_Baker_Barley_Button.dds</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_BAKER</ExpertUnit>
+            <iLbDLearnLevel>2</iLbDLearnLevel>
+        </ProfessionInfo>
+        <ProfessionInfo>
+            <Type>PROFESSION_BAKER_RICE</Type>
+            <Description>TXT_KEY_PROFESSION_BAKER_RICE</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_BAKER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_BAKER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_BAKER_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_BAKER</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>300</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_BAKERY_GOODS</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>YIELD_RICE</YieldType>
+            </YieldsConsumed>
+            <Button>Art/interface/buttons/New_Profession_Buttons/Profession_Baker_Rice_Button.dds</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_BAKER</ExpertUnit>
+            <iLbDLearnLevel>2</iLbDLearnLevel>
+        </ProfessionInfo>
+        <ProfessionInfo>
+            <Type>PROFESSION_BAKER_CASSAVA</Type>
+            <Description>TXT_KEY_PROFESSION_BAKER_CASSAVA</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_BAKER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_BAKER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_BAKER_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_BAKER</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>300</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_BAKERY_GOODS</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>YIELD_CASSAVA</YieldType>
+            </YieldsConsumed>
+            <Button>Art/interface/buttons/New_Profession_Buttons/Profession_Baker_Cassava_Button.dds</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_BAKER</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
