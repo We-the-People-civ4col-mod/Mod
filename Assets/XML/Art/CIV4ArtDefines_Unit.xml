@@ -1503,7 +1503,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Red_Pepper/red_Pepper.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -1528,7 +1528,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Vanilla_Pods/vanilla_pods.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -2778,7 +2778,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Coffee/Coffee.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Peanuts/peanuts.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -2878,7 +2878,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Coffee/Coffee.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Roasted_Peanuts/roasted_peanuts.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -2901,9 +2901,9 @@
             <Type>ART_DEF_UNIT_CHEESE</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Cheese_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
-            <fScale>1.2</fScale>
+            <fScale>2.6</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Coffee/Coffee.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Cheese/cheese.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
