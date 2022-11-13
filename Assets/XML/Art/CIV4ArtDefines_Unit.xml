@@ -17176,12 +17176,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_CASSAVA_PLANTER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Cassava_Planter_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Cassava_Planter_Europe.dds</FullLengthIcon>
-            <fScale>0.5</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,2,3</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Cassava_Planter.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Cassava_Planter/worker.nif</NIF>
-            <KFM>Art/Units/Settler/worker/worker.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Cassava_Planter/Expert_Tobacco_Planter.nif</NIF>
+            <KFM>Art/Units/Expert_Tobacco_Planter/Expert_Tobacco_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
