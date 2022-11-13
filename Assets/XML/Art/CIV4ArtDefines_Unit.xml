@@ -17348,8 +17348,8 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_YERBA_PLANTER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Yerba_Planter_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Yerba_Planter_Europe.dds</FullLengthIcon>
+            <Button>,Art/colonization_atlas_units_two.dds,1,3</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Yerba_Planter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Yerba_Planter/Expert_Sugar_Planter.nif</NIF>
