@@ -759,7 +759,7 @@
         <BuildingClassInfo>
             <Type>BUILDINGCLASS_BAKER_HOUSE</Type>
             <Description>TXT_KEY_BUILDINGCLASS_BAKERS_HOUSE</Description>
-            <DefaultBuilding>BUILDING_BAKERS_HOUSE</DefaultBuilding>
+            <DefaultBuilding>BUILDING_BAKER_HOUSE</DefaultBuilding>
             <VictoryThresholds/>
         </BuildingClassInfo>
         <BuildingClassInfo>
