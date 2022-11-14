@@ -1677,6 +1677,21 @@
         <German>Eure Majestät, wichtiger noch als der Aufbau unserer Kolonie ist ihr Schutz vor den Gefahren der Wildnis. Bestien und Eingeborene lauern uns allerorten auf.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENT_THIRDCOLONY_1</Tag>
+        <English>Ensure that these brave young men get what they require for this enterprise. We must know what this new world offers for us. His Majesty will be delighted.</English>
+        <German>Stellt sicher, dass diese mutigen jungen Männer alles erhalten, das sie für dieses Unterfangen benötigen. Wir müssen erfahren, was diese Welt für uns bereit hält. Ihre Majestät wird erfreut sein.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_THIRDCOLONY_2</Tag>
+        <English>While we appreciate the initiative of these young men, their skills are first needed to help us build our colony and its infrastruture. They shall work as pioneers instead.</English>
+        <German>Auch wenn wir die Innitiative dieser jungen Männer begrüßen, werden ihre Fähigkeiten zuerst zum Aufbau unsere Kolonie und ihrer Infrastruktur benötigt. Rüstet sie als Pioniere aus.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_THIRDCOLONY_3</Tag>
+        <English>Our colony currently is currently in a dire financial situation. We must save up our little income for more important investions and thus deny our support for this enterprise.</English>
+        <German>Unsere Kolonie ist aktuell in einer schwierigen finanziellen Lage. Wir müssen unsere geringen Einnahmen für wichtigere Investitionen aufsparen und daher unsere Unterstützung verwehren.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENT_SECOND_CHANCE_1</Tag>
         <English>If he is undisciplined, we cannot have him join the troops. But we could give him a chance as a scout.</English>
         <French>S'il est indiscipliné, nous ne pouvons lui permettre de rejoindre nos troupes. Il peut cependant devenir un éclaireur.</French>
