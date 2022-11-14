@@ -305,4 +305,32 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+    <!-- SAMUEL_NICHOLAS -->
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_SAMUEL_NICHOLAS</Tag>
+        <English>
+            <Text>Samuel Nicholas</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>Samuel Nicholas</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_SAMUEL_NICHOLAS</Tag>
+        <English>TXT_KEY_FATHER_SAMUEL_NICHOLAS</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_SAMUEL_NICHOLAS_PEDIA</Tag>
+        <English>[H1]Samuel Nicholas[\H1][NEWLINE][BOLD]Lived : [\BOLD]1744 - 1790[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]Samuel Nicholas[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1744 - 1790[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_SAMUEL_NICHOLAS_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>
