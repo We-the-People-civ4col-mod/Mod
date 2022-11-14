@@ -1307,6 +1307,40 @@
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,3,15</Button>
         </FatherInfo>
+       <FatherInfo>
+            <Type>FATHER_JOHN_WINTHROP_THE_YOUNGER</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/John_Winthrop_Younger.dds</Portrait>
+            <Description>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER</Description>
+            <Civilopedia>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_TRADE</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_FIREWORKER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_CHARCOAL_BURNER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_TRADE</FatherPointType>
+                    <iCost>6500</iCost>
+                </FatherPointCost>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>5000</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_JOHN_WINTHROP_THE_YOUNGER</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,6,15</Button>
+        </FatherInfo>
         <FatherInfo>
             <Type>FATHER_ALEXANDER_HAMILTON</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Alexander_Hamilton.dds</Portrait>
@@ -1319,11 +1353,11 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_TRADE</FatherPointType>
-                    <iCost>6500</iCost>
+                    <iCost>6750</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>5000</iCost>
+                    <iCost>5250</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_ALEXANDER_HAMILTON</Trait>
@@ -3435,32 +3469,6 @@
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,8,10</Button>
-        </FatherInfo>
-       <FatherInfo>
-            <Type>FATHER_JOHN_WINTHROP_THE_YOUNGER</Type>
-            <Portrait>Art/Interface/Screens/Founding_Fathers/John_Winthrop_Younger.dds</Portrait>
-            <Description>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER</Description>
-            <Civilopedia>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_STRATEGY</Strategy>
-            <FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
-            <RevealImprovements/>
-            <FreeUnits>
-                <FreeUnit>
-                    <UnitClass>UNITCLASS_STATESMAN</UnitClass>
-                    <iFreeUnits>1</iFreeUnits>
-                </FreeUnit>
-            </FreeUnits>
-            <FatherPointCosts>
-                <FatherPointCost>
-                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>12000</iCost>
-                </FatherPointCost>
-            </FatherPointCosts>
-            <Trait>TRAIT_JOHN_WINTHROP_THE_YOUNGER</Trait>
-            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
-            <Sound>AS2D_FUTURE</Sound>
-            <SoundMP>AS2D_MP_FUTURE</SoundMP>
-            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,6,15</Button>
         </FatherInfo>
     </FatherInfos>
 </Civ4FatherInfos>
