@@ -7512,6 +7512,20 @@ void CvCity::doCulture()
 		}
 	}
 	changeCulture(getOwnerINLINE(), getCultureRate(), false);
+
+	// WTP, ray, Political Points from Culture - START
+	// we do this only for Colonies
+	PlayerTypes eOwner = getOwnerINLINE();
+	if (eOwner != NO_PLAYER && GET_PLAYER(eOwner).isPlayable())
+	{
+		//add culture to political points
+		for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
+		{
+			FatherPointTypes ePointType = (FatherPointTypes) i;
+			GET_PLAYER(eOwner).changeFatherPoints(ePointType, getCultureRate() * GC.getFatherPointInfo(ePointType).getYieldPoints(YIELD_CULTURE));
+		}
+	}
+	// WTP, ray, Political Points from Culture - END
 }
 
 
