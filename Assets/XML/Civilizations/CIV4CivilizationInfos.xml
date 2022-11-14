@@ -6012,6 +6012,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -7141,6 +7153,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -8289,6 +8313,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
 			</Buildings>
             <Units>
                 <Unit>
@@ -9434,6 +9470,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -10574,6 +10622,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -11709,6 +11769,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -12841,6 +12913,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -13971,6 +14055,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -15130,6 +15226,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -16275,6 +16383,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -17407,6 +17527,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -18560,6 +18692,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -19694,6 +19838,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -20838,6 +20994,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -21977,6 +22145,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -23107,6 +23287,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -24243,6 +24435,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -25390,6 +25594,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -26508,6 +26724,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -27655,6 +27883,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -28786,6 +29026,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -29907,6 +30159,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -31039,6 +31303,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -32162,6 +32438,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -33295,6 +33583,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -34426,6 +34726,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -35552,6 +35864,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -36685,6 +37009,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -37812,6 +38148,18 @@
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -38931,6 +39279,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -40163,6 +40523,18 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_TAILOR_FACTORY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_HOUSE</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKER_SHOP</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
