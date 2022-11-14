@@ -3372,5 +3372,39 @@
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,8,10</Button>
         </FatherInfo>
+       <FatherInfo>
+            <Type>FATHER_WILLIAM_TAILER</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/William_Tailer.dds</Portrait>
+            <Description>TXT_KEY_FATHER_WILLIAM_TAILER</Description>
+            <Civilopedia>TXT_KEY_FATHER_WILLIAM_TAILER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_WILLIAM_TAILER_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_TRADE</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_FARMER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_FISHING_BOAT</UnitClass>
+                    <iFreeUnits>2</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_TRADE</FatherPointType>
+                    <iCost>720</iCost>
+                </FatherPointCost>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>630</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_WILLIAM_TAILER</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,4,15</Button>
+        </FatherInfo>
     </FatherInfos>
 </Civ4FatherInfos>
