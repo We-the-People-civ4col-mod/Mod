@@ -1453,7 +1453,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Cloth/Cloth.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Rock_Salt/Salt.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -1478,7 +1478,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Cloth/Cloth.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Salt/salt.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -1503,7 +1503,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Red_Pepper/red_Pepper.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -1528,7 +1528,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Vanilla_Pods/vanilla_pods.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -1546,14 +1546,14 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>        
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SPICES</Type>
             <Button>,Art/colonization_atlas_resources.dds,7,5</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Spices/spices.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -1621,7 +1621,7 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>        
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_GRAPES</Type>
             <Button>,Art/colonization_atlas_resources.dds,3,3</Button>
@@ -1696,14 +1696,14 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>	
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_WINE</Type>
             <Button>,Art/colonization_atlas_resources.dds,4,3</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Rum/Rum.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Wine/wine.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -1826,9 +1826,9 @@
             <Type>ART_DEF_UNIT_BARLEY</Type>
             <Button>,Art/colonization_atlas_resources.dds,1,1</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
-            <fScale>1.2</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Food/Food.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Barley/barley.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -1878,7 +1878,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Rum/Rum.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Beer/Beer.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -1953,7 +1953,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Stone/Bricks.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -1978,7 +1978,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Clay/Bricks.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -2053,7 +2053,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Peat/Bricks.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -2071,7 +2071,7 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>        	
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SILVER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,1</Button>
@@ -2353,7 +2353,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Coca/Tobacco.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Rice/rice.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -2426,9 +2426,9 @@
             <Type>ART_DEF_UNIT_HEMP</Type>
             <Button>,Art/colonization_atlas_resources.dds,5,3</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
-            <fScale>1.2</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Cloth/Cloth.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Hemp/Hemp.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -2551,9 +2551,9 @@
             <Type>ART_DEF_UNIT_FESTIVE_CLOTHES</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Festive_Clothes_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
-            <fScale>1.2</fScale>
+            <fScale>2.0</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Cloth/Cloth.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Festive_Clothes/festive_clothes.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -2778,7 +2778,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Coffee/Coffee.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Peanuts/peanuts.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -2801,9 +2801,9 @@
             <Type>ART_DEF_UNIT_MILK</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Milk_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
-            <fScale>1.2</fScale>
+            <fScale>0.8</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Coffee/Coffee.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Milk/milk.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -2878,7 +2878,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Coffee/Coffee.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Roasted_Peanuts/roasted_peanuts.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -2901,9 +2901,9 @@
             <Type>ART_DEF_UNIT_CHEESE</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Cheese_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
-            <fScale>1.2</fScale>
+            <fScale>2.6</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Coffee/Coffee.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Cheese/cheese.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -3076,9 +3076,9 @@
             <Type>ART_DEF_UNIT_CANNONS</Type>
             <Button>,Art/colonization_atlas_resources.dds,3,1</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
-            <fScale>1.2</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Muskets/Muskets.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/cannons/cannon.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -3099,11 +3099,11 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_BLACK_POWDER</Type>
-            <Button>Art/interface/buttons/New_Yields_Buttons/Charcoal_Goods_Button.dds</Button>
+            <Button>Art/interface/buttons/New_Yields_Buttons/Blackpowder_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Muskets/Muskets.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Black_Powder/Black_Powder.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -16837,7 +16837,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Trade_Goods/Trade_Goods.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Hooch/Hooch.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -16855,14 +16855,14 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>        
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_FLAX</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Linen_Fiber_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
-            <fScale>1.2</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Trade_Goods/Trade_Goods.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Flax/Flax.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -16880,7 +16880,7 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>	
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_PADDED_FURNITURE</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Padded_Furniture_Goods_Button.dds</Button>
@@ -17110,9 +17110,9 @@
             <Type>ART_DEF_UNIT_EVERYDAY_CLOTHES</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Everyday_Clothes_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
-            <fScale>1.2</fScale>
+            <fScale>2.0</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Trade_Goods/Trade_Goods.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Everyday_Clothes/everyday_clothes.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -17137,7 +17137,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Trade_Goods/Trade_Goods.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Pottery/pottery.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -17176,12 +17176,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_CASSAVA_PLANTER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Cassava_Planter_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Cassava_Planter_Europe.dds</FullLengthIcon>
-            <fScale>0.5</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,2,3</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Cassava_Planter.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Cassava_Planter/worker.nif</NIF>
-            <KFM>Art/Units/Settler/worker/worker.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Cassava_Planter/Expert_Tobacco_Planter.nif</NIF>
+            <KFM>Art/Units/Expert_Tobacco_Planter/Expert_Tobacco_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17210,12 +17210,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_LINEN_PLANTER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Linen_Planter_button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Linen_Planter_Europe.dds</FullLengthIcon>
-            <fScale>0.5</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,8,2</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Linen_Planter.dds</FullLengthIcon>
+            <fScale>0.44</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Linen_Planter/BarleySicle.nif</NIF>
-            <KFM>Art/Units/Settler/spearman/spearman.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Linen_Planter/Expert_Farmer.nif</NIF>
+            <KFM>Art/Units/Expert_Farmer/Expert_Farmer.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17261,8 +17261,8 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_PEANUT_PLANTER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Peanut_Planter_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Peanut_Planter_Europe.dds</FullLengthIcon>
+            <Button>,Art/colonization_atlas_units_two.dds,6,2</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Peanut_Planter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Peanut_Planter/Expert_Cotton_Planter.nif</NIF>
@@ -17278,8 +17278,8 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_PEAT_CUTTER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Peat_Cutter_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Peat_Cutter_Europe.dds</FullLengthIcon>
+            <Button>,Art/colonization_atlas_units_two.dds,7,2</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Peat_Cutter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Peat_Cutter/expert_silver_miner.nif</NIF>
@@ -17348,8 +17348,8 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_YERBA_PLANTER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Yerba_Planter_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Yerba_Planter_Europe.dds</FullLengthIcon>
+            <Button>,Art/colonization_atlas_units_two.dds,1,3</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Yerba_Planter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Yerba_Planter/Expert_Sugar_Planter.nif</NIF>

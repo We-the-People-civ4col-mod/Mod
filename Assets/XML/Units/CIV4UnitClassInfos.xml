@@ -315,7 +315,7 @@
             <Type>UNITCLASS_POTTER</Type>
             <Description>TXT_KEY_UNITCLASS_POTTER</Description>
             <DefaultUnit>UNIT_POTTER</DefaultUnit>
-        </UnitClassInfo>        
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_MILK_MAID</Type>
             <Description>TXT_KEY_UNITCLASS_MILK_MAID</Description>
@@ -330,7 +330,7 @@
             <Type>UNITCLASS_CHEESE_MAKER</Type>
             <Description>TXT_KEY_UNITCLASS_CHEESE_MAKER</Description>
             <DefaultUnit>UNIT_CHEESE_MAKER</DefaultUnit>
-        </UnitClassInfo>	
+        </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_SPICE_TRADER</Type>
             <Description>TXT_KEY_UNITCLASS_SPICE_TRADER</Description>
@@ -435,6 +435,16 @@
             <Type>UNITCLASS_DOCTOR</Type>
             <Description>TXT_KEY_UNITCLASS_DOCTOR</Description>
             <DefaultUnit>UNIT_DOCTOR</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_ENTERTAINER</Type>
+            <Description>TXT_KEY_UNITCLASS_ENTERTAINER</Description>
+            <DefaultUnit>UNIT_ENTERTAINER</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_HARLOT</Type>
+            <Description>TXT_KEY_UNITCLASS_HARLOT</Description>
+            <DefaultUnit>UNIT_HARLOT</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_CHRISTIAN_MISSIONARY</Type>

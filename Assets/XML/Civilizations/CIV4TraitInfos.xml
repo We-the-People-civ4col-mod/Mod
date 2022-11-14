@@ -7620,7 +7620,7 @@
             <TaxYieldModifiers/>
             <BuildingYieldChanges>
                 <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_WAREHOUSE</BuildingClassType>
+                    <BuildingClassType>BUILDINGCLASS_ROASTER_HOUSE</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_COFFEE</YieldType>
@@ -7629,7 +7629,7 @@
                     </BuildingYields>
                 </BuildingYieldChange>
                 <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_WAREHOUSE_EXPANSION</BuildingClassType>
+                    <BuildingClassType>BUILDINGCLASS_ROASTER_SHOP</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_COFFEE</YieldType>
@@ -7638,29 +7638,11 @@
                     </BuildingYields>
                 </BuildingYieldChange>
                 <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_WAREHOUSE_EXPANSION_2</BuildingClassType>
+                    <BuildingClassType>BUILDINGCLASS_ROASTER_FACTORY</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_COFFEE</YieldType>
                             <iYieldChange>3</iYieldChange>
-                        </YieldChange>
-                    </BuildingYields>
-                </BuildingYieldChange>
-                <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_CUSTOM_HOUSE</BuildingClassType>
-                    <BuildingYields>
-                        <YieldChange>
-                            <YieldType>YIELD_COFFEE</YieldType>
-                            <iYieldChange>4</iYieldChange>
-                        </YieldChange>
-                    </BuildingYields>
-                </BuildingYieldChange>
-                <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_CUSTOM_OFFICE</BuildingClassType>
-                    <BuildingYields>
-                        <YieldChange>
-                            <YieldType>YIELD_COFFEE</YieldType>
-                            <iYieldChange>5</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -8539,7 +8521,7 @@
             <TaxYieldModifiers/>
             <BuildingYieldChanges>
                 <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_WAREHOUSE</BuildingClassType>
+                    <BuildingClassType>BUILDINGCLASS_ROASTER_HOUSE</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_COCOA</YieldType>
@@ -8548,7 +8530,7 @@
                     </BuildingYields>
                 </BuildingYieldChange>
                 <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_WAREHOUSE_EXPANSION</BuildingClassType>
+                    <BuildingClassType>BUILDINGCLASS_ROASTER_SHOP</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_COCOA</YieldType>
@@ -8557,29 +8539,11 @@
                     </BuildingYields>
                 </BuildingYieldChange>
                 <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_WAREHOUSE_EXPANSION_2</BuildingClassType>
+                    <BuildingClassType>BUILDINGCLASS_ROASTER_FACTORY</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_COCOA</YieldType>
                             <iYieldChange>3</iYieldChange>
-                        </YieldChange>
-                    </BuildingYields>
-                </BuildingYieldChange>
-                <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_CUSTOM_HOUSE</BuildingClassType>
-                    <BuildingYields>
-                        <YieldChange>
-                            <YieldType>YIELD_COCOA</YieldType>
-                            <iYieldChange>4</iYieldChange>
-                        </YieldChange>
-                    </BuildingYields>
-                </BuildingYieldChange>
-                <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_CUSTOM_OFFICE</BuildingClassType>
-                    <BuildingYields>
-                        <YieldChange>
-                            <YieldType>YIELD_COCOA</YieldType>
-                            <iYieldChange>5</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -8650,7 +8614,7 @@
             <TaxYieldModifiers/>
             <BuildingYieldChanges>
                 <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_WAREHOUSE</BuildingClassType>
+                    <BuildingClassType>BUILDINGCLASS_ROASTER_HOUSE</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_ROASTED_PEANUTS</YieldType>
@@ -8659,7 +8623,7 @@
                     </BuildingYields>
                 </BuildingYieldChange>
                 <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_WAREHOUSE_EXPANSION</BuildingClassType>
+                    <BuildingClassType>BUILDINGCLASS_ROASTER_SHOP</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_ROASTED_PEANUTS</YieldType>
@@ -8668,29 +8632,11 @@
                     </BuildingYields>
                 </BuildingYieldChange>
                 <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_WAREHOUSE_EXPANSION_2</BuildingClassType>
+                    <BuildingClassType>BUILDINGCLASS_ROASTER_FACTORY</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
                             <YieldType>YIELD_ROASTED_PEANUTS</YieldType>
                             <iYieldChange>3</iYieldChange>
-                        </YieldChange>
-                    </BuildingYields>
-                </BuildingYieldChange>
-                <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_CUSTOM_HOUSE</BuildingClassType>
-                    <BuildingYields>
-                        <YieldChange>
-                            <YieldType>YIELD_ROASTED_PEANUTS</YieldType>
-                            <iYieldChange>4</iYieldChange>
-                        </YieldChange>
-                    </BuildingYields>
-                </BuildingYieldChange>
-                <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_CUSTOM_OFFICE</BuildingClassType>
-                    <BuildingYields>
-                        <YieldChange>
-                            <YieldType>YIELD_ROASTED_PEANUTS</YieldType>
-                            <iYieldChange>5</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
@@ -10460,7 +10406,7 @@
             <iRecruitPriceDiscountPortRoyal>0</iRecruitPriceDiscountPortRoyal>
             <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
             <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
-            <iPopGrowthThresholdModifier>10</iPopGrowthThresholdModifier>
+            <iPopGrowthThresholdModifier>-10</iPopGrowthThresholdModifier>
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>

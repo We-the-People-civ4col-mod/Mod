@@ -349,6 +349,15 @@
             <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,6,1</NatureObject>
         </SpecialBuildingInfo>
         <SpecialBuildingInfo>
+            <Type>SPECIALBUILDING_BAKER</Type>
+            <Description>TXT_KEY_SPECIALBUILDING_BAKER</Description>
+            <bValid>1</bValid>
+            <FontButtonIndex>40</FontButtonIndex>
+            <ProductionTraits/>
+            <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
+            <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,6,1</NatureObject>
+        </SpecialBuildingInfo>
+        <SpecialBuildingInfo>
             <Type>SPECIALBUILDING_STATUE</Type>
             <Description>TXT_KEY_SPECIALBUILDING_STATUE</Description>
             <bValid>1</bValid>

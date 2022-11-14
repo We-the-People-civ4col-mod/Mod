@@ -5537,10 +5537,10 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 			{
 				return false;
 			}
-			else if (pUnit->getUnitInfo().isHiddenNationality()) // R&R, ray, fix for Pirates, Privateers and Smuggles spawning units on water
+			/*else if (pUnit->getUnitInfo().isHiddenNationality()) // R&R, ray, fix for Pirates, Privateers and Smuggles spawning units on water
 			{
 				return false;
-			}
+			}*/
 			else if (pUnit->getUnitInfo().isGatherBoat()) // R&R, ray, fix for Whaling Ships and Fishing Boats spawning units
 			{
 				return false;
