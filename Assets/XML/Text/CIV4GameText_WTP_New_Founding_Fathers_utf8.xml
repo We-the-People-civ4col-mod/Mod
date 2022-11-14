@@ -333,4 +333,32 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+    <!-- JOHN_WINTHROP_THE_YOUNGER -->
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER</Tag>
+        <English>
+            <Text>John Winthrop, the younger</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>John Winthrop, der jüngere</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_JOHN_WINTHROP_THE_YOUNGER</Tag>
+        <English>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_PEDIA</Tag>
+        <English>[H1]John Winthrop, the younger[\H1][NEWLINE][BOLD]Lived : [\BOLD]1606 - 1676[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]John Winthrop, der jüngere[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1606 - 1676[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>
