@@ -17605,12 +17605,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_CHEESE_MAKER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Master_Cheese_Maker_Button.dds</Button>
+            <Button>,Art/colonization_atlas_units_two.dds,3,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Cheese_Maker.dds</FullLengthIcon>
             <fScale>0.55</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Cheese_Maker/warrior.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Cheese_Maker/warrior.kfm</KFM>
+            <NIF>Art/Units/Settler/Master_Cheese_Maker/Indentured_Servant.nif</NIF>
+            <KFM>Art/Units/Indentured_Servant/Indentured_Servant.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
