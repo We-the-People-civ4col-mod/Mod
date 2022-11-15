@@ -119,32 +119,32 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_PEDIA</Tag>
-        <English>TBD</English>
+        <English>At first settlers import candy from the home country but before long an enterprising confectioner realizes that sugar is growing right next door, and all that's needed is a way to flavour it - maybe chocolate or vanilla. There's one other trick; grinding the sugar so fine that the candy has a smooth consistency.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Having a candy store means that the settlers and their children don't need to wait for the ship to come in from Europe to satisfy their sweet tooth. The local confectioner makes everybody happy, the dentist in particular.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The confectioner's shop adds extra variety, candy for every taste, along with traditional sweets that remind people of home. The bigger market helps to keep prices down.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Extra production creates trading opportunities. Some confectioners even set up tables where tea is served to accompany the treats. A very few offer coffee, at first considered scandalous, because the drink is so stimulating.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The candy factory can serve an entire region. For one group it offers cheap sweets thanks to economies of scale. For the well-to-do it delivers an unparalleled variety of exotic confections to impress guests on special occasions.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>A big confectionery makes an important contribution to the region it serves, increasing both trading income and the community's happiness.</English>
         <German>TBD</German>
     </TEXT>
     <!-- LEATHER_PADDER -->
@@ -213,32 +213,32 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Leather is good at keeping out the wind but when the temperature drops it still feels cold. Putting padding into leather coats keeps people warm when the snow flies.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Sewing padding into leather doesn't just make the clothes more comfortable. By adding insulation the leather clothier improves health for those working outside, which can even save their lives.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_PEDIA</Tag>
-        <English>TBD</English>
+        <English>A bigger business can produce a little more for export, not just to Europe but also to the surrounding First Nations and outdoor workers who appreciate not just warm clothing but also distinctive styles like padded shoulders.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>People soon see the advantage of insulated clothing in a cold climate. A fashionable leather clothier also relies on word of mouth to increase business.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_PEDIA</Tag>
-        <English>TBD</English>
+        <English>A big business has efficiencies and economies of scale. A solitary leather clothier might spend days fitting a coat to a single customer but a factory can have enough sizes in stock for everyone to buy off the rack.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Sturdy outdoor leather clothing that stands up to hard wear means more work gets done, people don't get cold, and health and happiness are the result.</English>
         <German>TBD</German>
     </TEXT>
     <!-- OIL_TRADER -->
@@ -307,32 +307,32 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Equipment that crushes olives for their oil can be adapted to work with rapeseed.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Settlers eating wild game soon realize that it has much less fat than they're used to from domestic animals. In a cold climate fat keeps workers warm outdoors. In the wilderness plant oils are a good path to a balanced diet.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_PEDIA</Tag>
-        <English>TBD</English>
+        <English>As the oil pressers refine their trade the quality of the oil attracts new customers.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Oil pressers can now separate their pressings into varying grades to be sold at different prices. As customers discuss which is better for different situations, sales increase.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_PEDIA</Tag>
-        <English>TBD</English>
+        <English>If there's a good supply of olives and rapeseed, the oil presses can be mechanized to generate exportable quantities.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>If surplus quantities of oil and rapeseed can be grown close to the factory, an ambitious manager might prove himself by exporting the very best olive oil to Italy.</English>
         <German>TBD</German>
     </TEXT>
     <!-- ROASTER -->
