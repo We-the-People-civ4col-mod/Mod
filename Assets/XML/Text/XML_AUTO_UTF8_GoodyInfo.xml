@@ -35,10 +35,40 @@
         <German>Ihr habt einen verlaufenen [COLOR_UNIT_TEXT]Missionar[COLOR_REVERT] entdeckt!</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_FAILED_MISSIONARY</Tag>
+        <English>You've discovered a [COLOR_UNIT_TEXT]failed missionary[COLOR_REVERT] on the return from his mission!</English>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]gescheiterten Missionar[COLOR_REVERT] auf der Heimkehr von seiner Mission entdeckt!</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_COLONIST</Tag>
         <English>You've discovered a lost [COLOR_UNIT_TEXT]colonist[COLOR_REVERT] from an earlier colony that failed!</English>
         <French>Vous avez découvert un [COLOR_UNIT_TEXT]colon[COLOR_REVERT] perdu d'une ancienne colonie !</French>
         <German>Ihr habt einen verlorenen [COLOR_UNIT_TEXT]Kolonisten[COLOR_REVERT] einer gescheiterten Kolonie entdeckt!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_BUCCANNEER</Tag>
+        <English>You've discovered a [COLOR_UNIT_TEXT]buccanneer[COLOR_REVERT]! [NEWLINE]It first seems he will attack but after a few seconds of indecisions he lowers his weapons and asks to join you.</English>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]Bukanier[COLOR_REVERT] entdeckt! [NEWLINE]Zuerst scheint es er würde angreifen, aber nach kurzer Zeit senkt er seine Waffen und bittet sich uns anschließen zu dürfen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_SLAVE_HUNTER</Tag>
+        <English>You've discovered a [COLOR_UNIT_TEXT]slave hunter[COLOR_REVERT] searching for his bounty!</English>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]Sklavenjäger[COLOR_REVERT] auf der Suche nach Entflohene entdeckt!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_SLAVE_MASTER</Tag>
+        <English>You've discovered a [COLOR_UNIT_TEXT]slave master[COLOR_REVERT] gone missing while hunting one of his runaway slaves!</English>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]Sklavenhalter[COLOR_REVERT] gefunden, der einen seiner entlaufenen Sklaven sucht!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_MESTIZZO</Tag>
+        <English>You've discovered a [COLOR_UNIT_TEXT]young Native[COLOR_REVERT] in the woods! [NEWLINE]At closer look you realize that one of his parents might have been White and ask him to come with you.</English>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]jungen Uhreinwohner[COLOR_REVERT] in den Wäldern entdeckt! [NEWLINE]Bei näherer Betrachtung fällt euch auf, dass einer seiner Elternteile Europäisch gewesen zu sein scheint.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_MULATTO</Tag>
+        <English>You've discovered a [COLOR_UNIT_TEXT]young Black[COLOR_REVERT]! [NEWLINE]Your first thought was that he is a runaway slave. But he tells you that his father was the white owner of his black mother who sent her into the wilderness when she got pregnant.</English>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]jungen Schwarzen[COLOR_REVERT] in den Wäldern entdeckt! [NEWLINE] Ihr haltet ihn zuerst für einen entlaufenen Sklaven. Doch er erzählt euch, dass sein Vater der weiße Besitzer seiner Mutter war, der sie in die Wildnis schickte als sie schwanger wurde.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CONQUISTADOR</Tag>

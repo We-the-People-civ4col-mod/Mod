@@ -110,8 +110,14 @@
                 <GoodyType>GOODY_NATIVE_SLAVE</GoodyType>
                 <GoodyType>GOODY_NATIVE_MERC</GoodyType>
                 <GoodyType>GOODY_COLONIST</GoodyType>
+                <GoodyType>GOODY_MESTIZZO</GoodyType>
+                <GoodyType>GOODY_MULATTO</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
+                <GoodyType>GOODY_BUCCANNEER</GoodyType>
+                <GoodyType>GOODY_SLAVE_HUNTER</GoodyType>
+                <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -275,8 +281,14 @@
                 <GoodyType>GOODY_NATIVE_SLAVE</GoodyType>
                 <GoodyType>GOODY_NATIVE_MERC</GoodyType>
                 <GoodyType>GOODY_COLONIST</GoodyType>
+                <GoodyType>GOODY_MESTIZZO</GoodyType>
+                <GoodyType>GOODY_MULATTO</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
+                <GoodyType>GOODY_BUCCANNEER</GoodyType>
+                <GoodyType>GOODY_SLAVE_HUNTER</GoodyType>
+                <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -440,8 +452,14 @@
                 <GoodyType>GOODY_NATIVE_SLAVE</GoodyType>
                 <GoodyType>GOODY_NATIVE_MERC</GoodyType>
                 <GoodyType>GOODY_COLONIST</GoodyType>
+                <GoodyType>GOODY_MESTIZZO</GoodyType>
+                <GoodyType>GOODY_MULATTO</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
+                <GoodyType>GOODY_BUCCANNEER</GoodyType>
+                <GoodyType>GOODY_SLAVE_HUNTER</GoodyType>
+                <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -605,8 +623,14 @@
                 <GoodyType>GOODY_NATIVE_SLAVE</GoodyType>
                 <GoodyType>GOODY_NATIVE_MERC</GoodyType>
                 <GoodyType>GOODY_COLONIST</GoodyType>
+                <GoodyType>GOODY_MESTIZZO</GoodyType>
+                <GoodyType>GOODY_MULATTO</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
+                <GoodyType>GOODY_BUCCANNEER</GoodyType>
+                <GoodyType>GOODY_SLAVE_HUNTER</GoodyType>
+                <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -770,8 +794,14 @@
                 <GoodyType>GOODY_NATIVE_SLAVE</GoodyType>
                 <GoodyType>GOODY_NATIVE_MERC</GoodyType>
                 <GoodyType>GOODY_COLONIST</GoodyType>
+                <GoodyType>GOODY_MESTIZZO</GoodyType>
+                <GoodyType>GOODY_MULATTO</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
+                <GoodyType>GOODY_BUCCANNEER</GoodyType>
+                <GoodyType>GOODY_SLAVE_HUNTER</GoodyType>
+                <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -935,8 +965,14 @@
                 <GoodyType>GOODY_NATIVE_SLAVE</GoodyType>
                 <GoodyType>GOODY_NATIVE_MERC</GoodyType>
                 <GoodyType>GOODY_COLONIST</GoodyType>
+                <GoodyType>GOODY_MESTIZZO</GoodyType>
+                <GoodyType>GOODY_MULATTO</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
+                <GoodyType>GOODY_BUCCANNEER</GoodyType>
+                <GoodyType>GOODY_SLAVE_HUNTER</GoodyType>
+                <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
@@ -1100,8 +1136,14 @@
                 <GoodyType>GOODY_NATIVE_SLAVE</GoodyType>
                 <GoodyType>GOODY_NATIVE_MERC</GoodyType>
                 <GoodyType>GOODY_COLONIST</GoodyType>
+                <GoodyType>GOODY_MESTIZZO</GoodyType>
+                <GoodyType>GOODY_MULATTO</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
+                <GoodyType>GOODY_BUCCANNEER</GoodyType>
+                <GoodyType>GOODY_SLAVE_HUNTER</GoodyType>
+                <GoodyType>GOODY_SLAVE_MASTER</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_FAILED_MISSIONARY</GoodyType>
                 <GoodyType>GOODY_RANGER</GoodyType>
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>

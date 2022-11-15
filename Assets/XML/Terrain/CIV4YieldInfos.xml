@@ -4254,6 +4254,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,6,6</Icon>
+            <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Tavern.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,3,16</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,6,6</Button>
         </YieldInfo>
@@ -4374,6 +4375,7 @@
             <iTextureIndex>-1</iTextureIndex>
             <iWaterTextureIndex>-1</iWaterTextureIndex>
             <Icon>,Art/colonization_atlas_resources.dds,2,16</Icon>
+            <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Combi_Icon_Tavern.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,3,16</HighlightIcon>
             <Button>,Art/colonization_atlas_resources.dds,2,7</Button>
         </YieldInfo>

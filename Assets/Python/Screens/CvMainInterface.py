@@ -149,7 +149,7 @@ HELPTEXT_AREA_MIN_WIDTH = 150
 # R&R, Robert Surcouf, No More Variables Hidden game option END
 
 # CITY BUILDINGS GRID MAP
-BUILDING_DATA = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+BUILDING_DATA = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 
 BUILDING_DATA[0] = [30, 20, 20, 12] #Bells
 BUILDING_DATA[1] = [44, 22, 20, 12] #Hammers
@@ -188,11 +188,12 @@ BUILDING_DATA[33] = [16, 58, 20, 12] #Leather Padder
 BUILDING_DATA[34] = [2, 74, 20, 12] #Cooking Oil Trader
 BUILDING_DATA[35] = [58, 74, 20, 12] #Peanut Roaster
 BUILDING_DATA[36] = [72, 58, 20, 12] #Potter
-BUILDING_DATA[37] = [16, 76, 20, 12] #Tailor
-BUILDING_DATA[38] = [60, 90, 20, 7] #Statue
-BUILDING_DATA[39] = [45, 90, 20, 10] #Graveyard
+BUILDING_DATA[37] = [72, 22, 20, 12] #Tailor
+BUILDING_DATA[38] = [16, 76, 20, 12] #Baker
+BUILDING_DATA[39] = [60, 90, 20, 7] #Statue
+BUILDING_DATA[40] = [45, 90, 20, 10] #Graveyard
 
-BUILDING_GRID = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+BUILDING_GRID = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 
 BUILDING_AREA_WIDTH = -1
 BUILDING_AREA_HEIGHT = -1

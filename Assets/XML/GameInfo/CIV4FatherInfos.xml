@@ -1307,6 +1307,40 @@
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,3,15</Button>
         </FatherInfo>
+       <FatherInfo>
+            <Type>FATHER_JOHN_WINTHROP_THE_YOUNGER</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/John_Winthrop_Younger.dds</Portrait>
+            <Description>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER</Description>
+            <Civilopedia>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_TRADE</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_FIREWORKER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_CHARCOAL_BURNER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_TRADE</FatherPointType>
+                    <iCost>6500</iCost>
+                </FatherPointCost>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>5000</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_JOHN_WINTHROP_THE_YOUNGER</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,6,15</Button>
+        </FatherInfo>
         <FatherInfo>
             <Type>FATHER_ALEXANDER_HAMILTON</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Alexander_Hamilton.dds</Portrait>
@@ -1319,11 +1353,11 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_TRADE</FatherPointType>
-                    <iCost>6500</iCost>
+                    <iCost>6750</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>5000</iCost>
+                    <iCost>5250</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_ALEXANDER_HAMILTON</Trait>
@@ -2515,6 +2549,40 @@
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,4,5</Button>
         </FatherInfo>
+       <FatherInfo>
+            <Type>FATHER_SAMUEL_NICHOLAS</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/Samuel_Nicholas.dds</Portrait>
+            <Description>TXT_KEY_FATHER_SAMUEL_NICHOLAS</Description>
+            <Civilopedia>TXT_KEY_FATHER_SAMUEL_NICHOLAS_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_SAMUEL_NICHOLAS_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_MILITARY</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_BRAVE_LIEUTENANT</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_CAPABLE_CAPTAIN</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_MILITARY</FatherPointType>
+                    <iCost>3200</iCost>
+                </FatherPointCost>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>3700</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_SAMUEL_NICHOLAS</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,5,15</Button>
+        </FatherInfo>
         <FatherInfo>
             <Type>FATHER_DE_GRASSE</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/De_Grasse.dds</Portrait>
@@ -3066,6 +3134,36 @@
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,5,9</Button>
         </FatherInfo>
         <FatherInfo>
+            <Type>FATHER_WILLIAM_TAILER</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/William_Tailer.dds</Portrait>
+            <Description>TXT_KEY_FATHER_WILLIAM_TAILER</Description>
+            <Civilopedia>TXT_KEY_FATHER_WILLIAM_TAILER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_WILLIAM_TAILER_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_FARMER</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_BAKER</UnitClass>
+                    <iFreeUnits>2</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>2900</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_WILLIAM_TAILER</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,4,15</Button>
+        </FatherInfo>
+        <FatherInfo>
             <Type>FATHER_LORD_BALTIMORE</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Baltimore.dds</Portrait>
             <Description>TXT_KEY_FATHER_LORD_BALTIMORE</Description>
@@ -3077,7 +3175,7 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>3000</iCost>
+                    <iCost>3200</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_LORD_BALTIMORE</Trait>
@@ -3107,7 +3205,7 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>3500</iCost>
+                    <iCost>3600</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_THOMAS_CHIPPENDALE</Trait>

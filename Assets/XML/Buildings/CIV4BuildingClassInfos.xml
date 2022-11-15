@@ -636,7 +636,7 @@
             <DefaultBuilding>BUILDING_VILLAGE_WELL</DefaultBuilding>
             <VictoryThresholds/>
         </BuildingClassInfo>
-		<BuildingClassInfo>
+        <BuildingClassInfo>
             <Type>BUILDINGCLASS_GRAVEYARD</Type>
             <Description>TXT_KEY_BUILDINGCLASS_GRAVEYARD</Description>
             <DefaultBuilding>BUILDING_GRAVEYARD</DefaultBuilding>
@@ -648,7 +648,7 @@
             <DefaultBuilding>BUILDING_BONUS_BANANA</DefaultBuilding>
             <VictoryThresholds/>
         </BuildingClassInfo>
-		<BuildingClassInfo>
+        <BuildingClassInfo>
             <Type>BUILDINGCLASS_CONFECTIONER_HOUSE</Type>
             <Description>TXT_KEY_BUILDINGCLASS_CONFECTIONER_HOUSE</Description>
             <DefaultBuilding>BUILDING_CONFECTIONER_HOUSE</DefaultBuilding>
@@ -666,7 +666,7 @@
             <DefaultBuilding>BUILDING_CONFECTIONER_FACTORY</DefaultBuilding>
             <VictoryThresholds/>
         </BuildingClassInfo>
-		<BuildingClassInfo>
+        <BuildingClassInfo>
             <Type>BUILDINGCLASS_LEATHER_PADDER_HOUSE</Type>
             <Description>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_HOUSE</Description>
             <DefaultBuilding>BUILDING_LEATHER_PADDER_HOUSE</DefaultBuilding>
@@ -683,8 +683,8 @@
             <Description>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_FACTORY</Description>
             <DefaultBuilding>BUILDING_LEATHER_PADDER_FACTORY</DefaultBuilding>
             <VictoryThresholds/>
-        </BuildingClassInfo>	
-		<BuildingClassInfo>
+        </BuildingClassInfo>
+        <BuildingClassInfo>
             <Type>BUILDINGCLASS_OIL_TRADER_HOUSE</Type>
             <Description>TXT_KEY_BUILDINGCLASS_OIL_TRADER_HOUSE</Description>
             <DefaultBuilding>BUILDING_OIL_TRADER_HOUSE</DefaultBuilding>
@@ -702,7 +702,7 @@
             <DefaultBuilding>BUILDING_OIL_TRADER_FACTORY</DefaultBuilding>
             <VictoryThresholds/>
         </BuildingClassInfo>
-		<BuildingClassInfo>
+        <BuildingClassInfo>
             <Type>BUILDINGCLASS_ROASTER_HOUSE</Type>
             <Description>TXT_KEY_BUILDINGCLASS_ROASTER_HOUSE</Description>
             <DefaultBuilding>BUILDING_ROASTER_HOUSE</DefaultBuilding>
@@ -719,8 +719,8 @@
             <Description>TXT_KEY_BUILDINGCLASS_ROASTER_FACTORY</Description>
             <DefaultBuilding>BUILDING_ROASTER_FACTORY</DefaultBuilding>
             <VictoryThresholds/>
-        </BuildingClassInfo>	
-		<BuildingClassInfo>
+        </BuildingClassInfo>
+        <BuildingClassInfo>
             <Type>BUILDINGCLASS_POTTERY_HOUSE</Type>
             <Description>TXT_KEY_BUILDINGCLASS_POTTERY_HOUSE</Description>
             <DefaultBuilding>BUILDING_POTTERY_HOUSE</DefaultBuilding>
@@ -737,8 +737,8 @@
             <Description>TXT_KEY_BUILDINGCLASS_POTTERY_FACTORY</Description>
             <DefaultBuilding>BUILDING_POTTERY_FACTORY</DefaultBuilding>
             <VictoryThresholds/>
-        </BuildingClassInfo>		
-		<BuildingClassInfo>
+        </BuildingClassInfo>
+        <BuildingClassInfo>
             <Type>BUILDINGCLASS_TAILOR_HOUSE</Type>
             <Description>TXT_KEY_BUILDINGCLASS_TAILOR_HOUSE</Description>
             <DefaultBuilding>BUILDING_TAILOR_HOUSE</DefaultBuilding>
@@ -755,6 +755,24 @@
             <Description>TXT_KEY_BUILDINGCLASS_TAILOR_FACTORY</Description>
             <DefaultBuilding>BUILDING_TAILOR_FACTORY</DefaultBuilding>
             <VictoryThresholds/>
-        </BuildingClassInfo>	
+        </BuildingClassInfo>
+        <BuildingClassInfo>
+            <Type>BUILDINGCLASS_BAKER_HOUSE</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_BAKERS_HOUSE</Description>
+            <DefaultBuilding>BUILDING_BAKER_HOUSE</DefaultBuilding>
+            <VictoryThresholds/>
+        </BuildingClassInfo>
+        <BuildingClassInfo>
+            <Type>BUILDINGCLASS_BAKER_SHOP</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_BAKER_SHOP</Description>
+            <DefaultBuilding>BUILDING_BAKER_SHOP</DefaultBuilding>
+            <VictoryThresholds/>
+        </BuildingClassInfo>
+        <BuildingClassInfo>
+            <Type>BUILDINGCLASS_BAKERY</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_BAKERY</Description>
+            <DefaultBuilding>BUILDING_BAKERY</DefaultBuilding>
+            <VictoryThresholds/>
+        </BuildingClassInfo>
     </BuildingClassInfos>
 </Civ4BuildingClassInfos>

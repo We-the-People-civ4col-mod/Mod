@@ -819,7 +819,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- CHARCOAL_BURNER -->	
+    <!-- CHARCOAL_BURNER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHARCOAL_BURNER</Tag>
         <English>Master Charcoal Burner</English>
@@ -848,7 +848,7 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- BAKER -->	
+    <!-- BAKER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BAKER</Tag>
         <English>Master Baker</English>
@@ -876,8 +876,8 @@
         <Tag>TXT_KEY_UNIT_BAKER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
-    </TEXT>	
-	<!-- FIREWORKER -->	
+    </TEXT>
+    <!-- FIREWORKER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FIREWORKER</Tag>
         <English>Master Fireworker</English>
@@ -905,7 +905,7 @@
         <Tag>TXT_KEY_UNIT_FIREWORKER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
-    </TEXT>	
+    </TEXT>
     <!-- MESTIZZO -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MESTIZZO</Tag>
@@ -1048,6 +1048,64 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <!-- ENTERTAINER -->
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_ENTERTAINER</Tag>
+        <English>Famous Actress</English>
+        <German>
+            <Text>Berühmte Schauspielerin</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ENTERTAINER</Tag>
+        <English>Famous Actress</English>
+        <German>
+            <Text>Berühmte Schauspielerin</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ENTERTAINER_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ENTERTAINER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <!-- HARLOT -->
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_HARLOT</Tag>
+        <English>Seductive Harlot</English>
+        <German>
+            <Text>Verführerische Dirne</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HARLOT</Tag>
+        <English>Seductive Harlot</English>
+        <German>
+            <Text>Verführerische Dirne</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HARLOT_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HARLOT_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>

@@ -1506,19 +1506,4 @@
 		<DefineName>USE_CLASSIC_MOVEMENT_SYSTEM</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
-	<Define>
-		<DefineName>MOVE_DENOMINATOR</DefineName>
-		<iDefineIntVal>60</iDefineIntVal>
-		<bAlwaysHardcoded>1</bAlwaysHardcoded>
-	</Define>
-	<Define>
-		<DefineName>HILLS_EXTRA_MOVEMENT</DefineName>
-		<iDefineIntVal>1</iDefineIntVal>
-		<bAlwaysHardcoded>1</bAlwaysHardcoded>
-	</Define>
-	<Define>
-		<DefineName>PEAK_EXTRA_MOVEMENT</DefineName>
-		<iDefineIntVal>2</iDefineIntVal>
-		<bAlwaysHardcoded>1</bAlwaysHardcoded>
-	</Define>
 </Civ4Defines>
