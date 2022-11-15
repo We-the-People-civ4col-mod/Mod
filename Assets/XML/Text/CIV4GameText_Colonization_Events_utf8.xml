@@ -2050,11 +2050,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PROSTITUTES</Tag>
-<<<<<<< HEAD
         <English>Some women have recently arrived in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] and want to work as barmaids in the saloon. Once the women of the city heard about that, they were irate. They claim that those barmaids are prostitutes who will seduce their good men. If we don't ban the barmaids the women will riot.</English>
-=======
         <English>Some women have recently arrived in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] and want to work as barmaids in the saloon. Once the proper ladies of the city heard about that, they were irate. They claim that those barmaids are prostitutes who will seduce their good men. If we don't ban the barmaids those ladies will riot.</English>
->>>>>>> d9bb28adb0bd8c5aece94ebadd97c3a1cc6544a2
         <French>Des femmes sont récemment arrivées à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] et souhaitent travailler en tant que danseuses dans le saloon. Lorsque les femmes de de la ville ont entendu parler de cette histoire, elles ont commencé à manifester. Elles prétendent que ses danseuses sont en fait des prostitués qui veulent s'en prendre à leurs hommes. Si nous ne chassons pas les danseuses, une émeute va éclater.</French>
         <German>Einige Frauen sind in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] eingetroffen und wollen im Saloon als Barfrauen arbeiten. Sobald die Frauen der Stadt davon Wind bekommen haben, haben sie sofort einen kleinen Aufstand angezettelt. Sie behaupten, dass diese Barfrauen in Wahrheit Prostituierte seien und ihre guten Männer verführen wollten. Wenn wir diese Barfrauen nicht verjagen, werden die Frauen durchdrehen.</German>
     </TEXT>
