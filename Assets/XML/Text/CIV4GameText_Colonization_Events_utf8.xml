@@ -221,14 +221,11 @@
         <German>[COLOR_FONT_GOLD]Seine Majestät bietet Euch Klingen für die Stadtwache an, damit Ihr die Kolonie verteidigen könnt.[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
-<<<<<<< HEAD
-=======
         <Tag>TXT_KEY_EVENT_TRIGGER_THIRDCOLONY</Tag>
         <English>A group of eager young adventurers offers to explore this new world in the name of our glorious nation, if we pay for the supplies and equipment needed for this enterprise.</English>
         <German>Eine Gruppe junger ehrgeiziger Abenteurer bietet an für unser glorreiche Nation diese neue Welt zu erkunden, falls wir für die Vorräte und Ausrüstung dieses Unterfangens aufkommen.</German>
     </TEXT>
     <TEXT>
->>>>>>> d9bb28adb0bd8c5aece94ebadd97c3a1cc6544a2
         <Tag>TXT_KEY_EVENTTRIGGER_FOREST_FIRE</Tag>
         <English>Fire has raged through a forest near the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] city of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
         <French>Le feu s'est propagé à une forêt près de la ville [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
