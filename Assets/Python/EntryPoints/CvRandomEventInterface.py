@@ -328,7 +328,6 @@ def applySecondCity2(argsList):
 	iYield1 = gc.getInfoTypeForString("YIELD_BLADES")
 	city.changeYieldStored(iYield1, event.getGenericParameter(1)*Speed.getTrainPercent()/100)
 
-
 def getHelpSecondCity2(argsList):
 	eEvent = argsList[0]
 	event = gc.getEventInfo(eEvent)
@@ -346,6 +345,27 @@ def getHelpSecondCity2(argsList):
 		if overflow > 0:
 			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_YIELD_OVERFLOW", (overflow,  gc.getYieldInfo(iYield1).getChar(), city.getNameKey()))
 	return szHelp
+
+
+######## THIRD CITY ###########
+
+def canTriggerThirdCity(argsList):
+	ePlayer = argsList[1]
+	iCity = argsList[2]
+	
+	player = gc.getPlayer(ePlayer)
+	city = player.getCity(iCity)
+
+	if city.isNone():
+		return false
+	
+	if not player.isPlayable():
+		return false
+	
+	if player.getNumCities() >= 2:
+		return true
+
+	return false
 
 ######## FESTIVITY ###########
 

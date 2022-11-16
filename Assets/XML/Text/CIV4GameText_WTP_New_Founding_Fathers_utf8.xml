@@ -5,8 +5,8 @@
 <!-- -->
 <!-- Game Text Infos -->
 <Civ4GameText xmlns="http://www.firaxis.com">
-	<!-- CARL_VON_LINNES -->
-	<TEXT>
+    <!-- CARL_VON_LINNES -->
+    <TEXT>
         <Tag>TXT_KEY_FATHER_CARL_VON_LINNES</Tag>
         <English>
             <Text>Carl Linnaeus</Text>
@@ -19,7 +19,7 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TRAIT_CARL_VON_LINNES</Tag>
         <English>TXT_KEY_FATHER_CARL_VON_LINNES</English>
     </TEXT>
@@ -33,8 +33,8 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- SIR_THOMAS_GATES -->
-	<TEXT>
+    <!-- SIR_THOMAS_GATES -->
+    <TEXT>
         <Tag>TXT_KEY_FATHER_SIR_THOMAS_GATES</Tag>
         <English>
             <Text>Sir Thomas Gates</Text>
@@ -47,7 +47,7 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TRAIT_SIR_THOMAS_GATES</Tag>
         <English>TXT_KEY_FATHER_SIR_THOMAS_GATES</English>
     </TEXT>
@@ -61,8 +61,8 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- EUSEBIO FRANCISCO KINO -->
-	<TEXT>
+    <!-- EUSEBIO FRANCISCO KINO -->
+    <TEXT>
         <Tag>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO</Tag>
         <English>
             <Text>Eusebio Francisco Kino</Text>
@@ -85,8 +85,8 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- HUMPHREY GILBERT -->
-	<TEXT>
+    <!-- HUMPHREY GILBERT -->
+    <TEXT>
         <Tag>TXT_KEY_FATHER_HUMPHREY_GILBERT</Tag>
         <English>
             <Text>Humphrey Gilbert</Text>
@@ -109,8 +109,8 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- ROBERT_BAKEWELL -->
-	<TEXT>
+    <!-- ROBERT_BAKEWELL -->
+    <TEXT>
         <Tag>TXT_KEY_FATHER_ROBERT_BAKEWELL</Tag>
         <English>
             <Text>Robert Bakewell</Text>
@@ -123,7 +123,7 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TRAIT_ROBERT_BAKEWELL</Tag>
         <English>TXT_KEY_FATHER_ROBERT_BAKEWELL</English>
     </TEXT>
@@ -137,8 +137,8 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- THOMAS_WEST_DE_LA_WARR -->
-	<TEXT>
+    <!-- THOMAS_WEST_DE_LA_WARR -->
+    <TEXT>
         <Tag>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR</Tag>
         <English>
             <Text>Thomas West, Baron de la Warr</Text>
@@ -151,7 +151,7 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TRAIT_THOMAS_WEST_DE_LA_WARR</Tag>
         <English>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR</English>
     </TEXT>
@@ -165,8 +165,8 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- JAMES_BAKER -->
-	<TEXT>
+    <!-- JAMES_BAKER -->
+    <TEXT>
         <Tag>TXT_KEY_FATHER_JAMES_BAKER</Tag>
         <English>
             <Text>James Baker, Dr.</Text>
@@ -179,7 +179,7 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TRAIT_JAMES_BAKER</Tag>
         <English>TXT_KEY_FATHER_JAMES_BAKER</English>
     </TEXT>
@@ -193,8 +193,8 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- WILLIAM_STRACHEY -->
-	<TEXT>
+    <!-- WILLIAM_STRACHEY -->
+    <TEXT>
         <Tag>TXT_KEY_FATHER_WILLIAM_STRACHEY</Tag>
         <English>
             <Text>William Strachey</Text>
@@ -207,7 +207,7 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TRAIT_WILLIAM_STRACHEY</Tag>
         <English>TXT_KEY_FATHER_WILLIAM_STRACHEY</English>
     </TEXT>
@@ -221,8 +221,8 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- SIR_JOHN_HARVEY -->
-	<TEXT>
+    <!-- SIR_JOHN_HARVEY -->
+    <TEXT>
         <Tag>TXT_KEY_FATHER_SIR_JOHN_HARVEY</Tag>
         <English>
             <Text>Sir John Harvey</Text>
@@ -235,7 +235,7 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TRAIT_SIR_JOHN_HARVEY</Tag>
         <English>TXT_KEY_FATHER_SIR_JOHN_HARVEY</English>
     </TEXT>
@@ -249,8 +249,8 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
-	<!-- JOHN_MAURICE -->
-	<TEXT>
+    <!-- JOHN_MAURICE -->
+    <TEXT>
         <Tag>TXT_KEY_FATHER_JOHN_MAURICE</Tag>
         <English>
             <Text>John Maurice, Prince of Nassau-Siegen</Text>
@@ -263,7 +263,7 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TRAIT_JOHN_MAURICE</Tag>
         <English>TXT_KEY_FATHER_JOHN_MAURICE</English>
     </TEXT>
@@ -274,6 +274,90 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOHN_MAURICE_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <!-- WILLIAM_TAILER -->
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_WILLIAM_TAILER</Tag>
+        <English>
+            <Text>William Tailer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>William Tailer</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_WILLIAM_TAILER</Tag>
+        <English>TXT_KEY_FATHER_WILLIAM_TAILER</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_WILLIAM_TAILER_PEDIA</Tag>
+        <English>[H1]William Tailer[\H1][NEWLINE][BOLD]Lived : [\BOLD]1675 - 1731[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]William Tailer[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1675 - 1731[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_WILLIAM_TAILER_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <!-- SAMUEL_NICHOLAS -->
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_SAMUEL_NICHOLAS</Tag>
+        <English>
+            <Text>Samuel Nicholas</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>Samuel Nicholas</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_SAMUEL_NICHOLAS</Tag>
+        <English>TXT_KEY_FATHER_SAMUEL_NICHOLAS</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_SAMUEL_NICHOLAS_PEDIA</Tag>
+        <English>[H1]Samuel Nicholas[\H1][NEWLINE][BOLD]Lived : [\BOLD]1744 - 1790[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]Samuel Nicholas[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1744 - 1790[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_SAMUEL_NICHOLAS_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <!-- JOHN_WINTHROP_THE_YOUNGER -->
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER</Tag>
+        <English>
+            <Text>John Winthrop, the younger</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>John Winthrop, der jüngere</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_JOHN_WINTHROP_THE_YOUNGER</Tag>
+        <English>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_PEDIA</Tag>
+        <English>[H1]John Winthrop, the younger[\H1][NEWLINE][BOLD]Lived : [\BOLD]1606 - 1676[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]John Winthrop, der jüngere[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1606 - 1676[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_STRATEGY</Tag>
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
