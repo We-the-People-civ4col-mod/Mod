@@ -17159,12 +17159,12 @@
         <!-- WTP, ray, Art Defs of new Experts -->
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_BREEDER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Breeder_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Breeder_Europe.dds</FullLengthIcon>
+            <Button>,Art/colonization_atlas_units_two.dds,5,3</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Breeder.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.80</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Breeder/Master_Distiller.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Breeder/Master_Distiller.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Breeder/Expert_Fisherman.nif</NIF>
+            <KFM>Art/Units/Settler/Dyer/Expert_Fisherman.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17367,12 +17367,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_HERDER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Herder_button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Herder_Europe.dds</FullLengthIcon>
-            <fScale>0.5</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Herder/cowherdsman.nif</NIF>
-            <KFM>Art/Units/Indentured_Servant/Indentured_Servant.kfm</KFM>
+            <Button>,Art/colonization_atlas_units_two.dds,4,3</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Herder.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
+            <fInterfaceScale>0.80</fInterfaceScale>
+            <NIF>Art/Units/Settler/Expert_Herder/Expert_Rancher.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Herder/Expert_Rancher.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
