@@ -17401,12 +17401,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_KAUTSCHUK_COLLECTOR</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Kautschuk_Collector_button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Kautschuk_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.5</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,7,3</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Kautschuk_Collector.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Kautschuk_Collector/worker.nif</NIF>
-            <KFM>Art/Units/Settler/worker/worker.kfm</KFM>
+            <NIF>Art/Units/Settler/Kautschuk_Collector/Expert_Trapper.nif</NIF>
+            <KFM>Art/Units/Expert_Trapper/Expert_Trapper.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
