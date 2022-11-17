@@ -17486,12 +17486,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_FRUITS_PICKER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Fruits_Collector_button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Fruits_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Fruits_Collector/mongol_settler_b_fx.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Fruits_Collector/mongol_settler_b.kfm</KFM>
+            <Button>,Art/colonization_atlas_units_two.dds,8,3.dds</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Fruits_Collector.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
+            <fInterfaceScale>0.80</fInterfaceScale>
+            <NIF>Art/Units/Settler/Expert_Fruits_Collector/settler_male.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Fruits_Collector/settler_male.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
