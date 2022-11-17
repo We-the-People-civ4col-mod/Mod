@@ -17212,7 +17212,7 @@
             <Type>ART_DEF_UNIT_LINEN_PLANTER</Type>
             <Button>,Art/colonization_atlas_units_two.dds,8,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Linen_Planter.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.46</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Linen_Planter/Expert_Farmer.nif</NIF>
             <KFM>Art/Units/Expert_Farmer/Expert_Farmer.kfm</KFM>
@@ -17331,12 +17331,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_VANILLA_COLLECTOR</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Vanilla_Collector.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Vanilla_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.54</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,1,4</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Vanilla_Collector.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Vanilla_Collector/Indentured_Servant.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Vanilla_Collector/Indentured_Servant.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Vanilla_Collector/Expert_Sugar_Planter.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Red_Pepper_Planter/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17370,7 +17370,7 @@
             <Button>,Art/colonization_atlas_units_two.dds,4,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Herder.dds</FullLengthIcon>
             <fScale>0.48</fScale>
-            <fInterfaceScale>0.80</fInterfaceScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Herder/Expert_Rancher.nif</NIF>
             <KFM>Art/Units/Settler/Expert_Herder/Expert_Rancher.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
