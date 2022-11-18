@@ -277,6 +277,7 @@ public:
 	// R&R, ray, Africa
 	int getYieldAfricaSellPrice(int /*YieldTypes*/ eYield);
 	int getYieldAfricaBuyPrice(int /*YieldTypes*/ eYield);
+	int getYieldAfricaBuyPriceNoModifier(int /*YieldTypes*/ eYield);
 	void setYieldAfricaBuyPrice(int /*YieldTypes*/ eYield, int iPrice, bool bMessage);
 	CyUnit* buyYieldUnitFromAfrica(int /*YieldTypes*/ eYield, int iAmount, CyUnit* pTransport);
 	// R&R, ray, Africa - END
@@ -284,6 +285,7 @@ public:
 	// R&R, ray, Port Royal
 	int getYieldPortRoyalSellPrice(int /*YieldTypes*/ eYield);
 	int getYieldPortRoyalBuyPrice(int /*YieldTypes*/ eYield);
+	int getYieldPortRoyalBuyPriceNoModifier(int /*YieldTypes*/ eYield);
 	void setYieldPortRoyalBuyPrice(int /*YieldTypes*/ eYield, int iPrice, bool bMessage);
 	CyUnit* buyYieldUnitFromPortRoyal(int /*YieldTypes*/ eYield, int iAmount, CyUnit* pTransport);
 	// R&R, ray, Port Royal - END

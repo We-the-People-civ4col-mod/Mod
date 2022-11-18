@@ -4646,7 +4646,7 @@ def applyQuestDoneAfricaTradePriceAndAttitude(argsList):
 	iYield = event.getGenericParameter(2)
 
 	# careful, uses Africa methods here
-	iPrice = king.getYieldAfricaBuyPrice(iYield)
+	iPrice = king.getYieldAfricaBuyPriceNoModifier(iYield)
 	king.setYieldAfricaBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
 
 ####### Here start all the AFICA QUEST TRIGGERS Functions #######
@@ -4797,7 +4797,7 @@ def applyQuestDonePortRoyalTradePriceAndAttitude(argsList):
 	iYield = event.getGenericParameter(2)
     
 	# careful, uses Port Royal methods here
-	iPrice = king.getYieldPortRoyalBuyPrice(iYield)
+	iPrice = king.getYieldPortRoyalBuyPriceNoModifier(iYield)
 	king.setYieldPortRoyalBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
 
 ####### Here start all the PORT ROYAL QUEST TRIGGERS Functions #######
