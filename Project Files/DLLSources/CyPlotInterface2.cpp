@@ -94,5 +94,15 @@ void CyPlotPythonInterface2(python::class_<CyPlot>& x)
 		.def("getChokeValue", &CyPlot::getChokeValue, "int ()")
 		.def("calculateChokeValue", &CyPlot::calculateChokeValue, "void ()")
 		// Super Forts end
+
+		// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
+		.def("spawnPlayerUnitOnPlot", &CyPlot::spawnPlayerUnitOnPlot, "void (int /*PlayerTypes*/ iPlayer, int /*UnitTypes*/ iIndex)")
+		.def("spawnBarbarianUnitOnPlot", &CyPlot::spawnBarbarianUnitOnPlot, "void (int /*UnitTypes*/ iIndex)")
+		.def("spawnPlayerUnitOnAdjacentPlot", &CyPlot::spawnPlayerUnitOnAdjacentPlot, "void (int /*PlayerTypes*/ iPlayer, int /*UnitTypes*/ iIndex)")
+		.def("spawnBarbarianUnitOnAdjacentPlot", &CyPlot::spawnBarbarianUnitOnAdjacentPlot, "void (int /*UnitTypes*/ iIndex)")
+		.def("isPlayerUnitOnAdjacentPlot", &CyPlot::isPlayerUnitOnAdjacentPlot, "bool (int /*PlayerTypes*/ iPlayer, int /*UnitTypes*/ iIndex)")
+		.def("isBarbarianUnitOnAdjacentPlot", &CyPlot::isBarbarianUnitOnAdjacentPlot, "bool (int /*UnitTypes*/ iIndex)")
+		// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+
 	;
 }

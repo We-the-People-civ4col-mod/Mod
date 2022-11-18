@@ -190,6 +190,17 @@ public:
 	int getChokeValue();
 	void calculateChokeValue();
 	// Super Forts end
+
+	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
+	void spawnPlayerUnitOnPlot(int /*PlayerTyps*/ iPlayer, int /*UnitTypes*/ iIndex) const;
+	void spawnBarbarianUnitOnPlot(int /*UnitTypes*/ iIndex) const;
+	void spawnPlayerUnitOnAdjacentPlot(int /*PlayerTyps*/ iPlayer, int /*UnitTypes*/ iIndex) const;
+	void spawnBarbarianUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const;
+
+	bool isPlayerUnitOnAdjacentPlot(int /*PlayerTyps*/ iPlayer, int /*UnitTypes*/ iIndex) const;
+	bool isBarbarianUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const;
+	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+
 private:
 	CvPlot* m_pPlot;
 };

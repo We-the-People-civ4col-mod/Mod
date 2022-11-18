@@ -109,12 +109,12 @@ void CyUnitPythonInterface1(python::class_<CyUnit>& x)
 		.def("getLbDrounds", &CyUnit::getLbDrounds, "int ()") // TAC - LbD - Ray - START
 		.def("getLastLbDProfession", &CyUnit::getLastLbDProfession, "int ()") // TAC - LbD - Ray - START
 		// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
-		.def("spawnOwnPlayerUnitOnPlotOfUnit", &CyUnit::spawnOwnPlayerUnitOnPlotOfUnit, "void (int)")
-		.def("spawnBarbarianUnitOnPlotOfUnit", &CyUnit::spawnBarbarianUnitOnPlotOfUnit, "void (int)")
-		.def("spawnOwnPlayerUnitOnAdjacentPlotOfUnit", &CyUnit::spawnOwnPlayerUnitOnAdjacentPlotOfUnit, "void (int)")
-		.def("spawnBarbarianUnitOnAdjacentPlotOfUnit", &CyUnit::spawnBarbarianUnitOnAdjacentPlotOfUnit, "void (int)")
-		.def("isPlayerUnitOnAdjacentPlotOfUnit", &CyUnit::isPlayerUnitOnAdjacentPlotOfUnit, "bool (int)")
-		.def("isBarbarianUnitOnAdjacentPlotOfUnit", &CyUnit::isBarbarianUnitOnAdjacentPlotOfUnit, "bool (int)")
+		.def("spawnOwnPlayerUnitOnPlotOfUnit", &CyUnit::spawnOwnPlayerUnitOnPlotOfUnit, "void (int /*UnitTypes*/ iIndex)")
+		.def("spawnBarbarianUnitOnPlotOfUnit", &CyUnit::spawnBarbarianUnitOnPlotOfUnit, "void (int /*UnitTypes*/ iIndex)")
+		.def("spawnOwnPlayerUnitOnAdjacentPlotOfUnit", &CyUnit::spawnOwnPlayerUnitOnAdjacentPlotOfUnit, "void (int /*UnitTypes*/ iIndex)")
+		.def("spawnBarbarianUnitOnAdjacentPlotOfUnit", &CyUnit::spawnBarbarianUnitOnAdjacentPlotOfUnit, "void (int /*UnitTypes*/ iIndex)")
+		.def("isOwnPlayerUnitOnAdjacentPlotOfUnit", &CyUnit::isOwnPlayerUnitOnAdjacentPlotOfUnit, "bool (int /*UnitTypes*/ iIndex)")
+		.def("isBarbarianUnitOnAdjacentPlotOfUnit", &CyUnit::isBarbarianUnitOnAdjacentPlotOfUnit, "bool (int /*UnitTypes*/ iIndex)")
 		// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
 
 		// WTP, ray, saving 1 more Profession for Fisher Issue - START

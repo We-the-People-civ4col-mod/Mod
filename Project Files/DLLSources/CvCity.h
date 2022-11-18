@@ -559,7 +559,7 @@ public:
 	void spawnOwnPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
 	void spawnBarbarianUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
 
-	bool isPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
+	bool isOwnPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
 	bool isBarbarianUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
 

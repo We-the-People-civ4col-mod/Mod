@@ -1306,14 +1306,14 @@ void CyCity::spawnBarbarianUnitOnAdjacentPlotOfCity(int iIndex) const
 		m_pCity->spawnBarbarianUnitOnAdjacentPlotOfCity(iIndex);
 }
 
-bool CyCity::isPlayerUnitOnAdjacentPlotOfCity(int iIndex) const
+bool CyCity::isOwnPlayerUnitOnAdjacentPlotOfCity(int iIndex) const
 {
-	return m_pCity ? m_pCity->isPlayerUnitOnAdjacentPlotOfCity(iIndex) : false;
+	return m_pCity ? m_pCity->isOwnPlayerUnitOnAdjacentPlotOfCity(iIndex) : false;
 }
 
 bool CyCity::isBarbarianUnitOnAdjacentPlotOfCity(int iIndex) const
 {
-	return m_pCity ? m_pCity->isPlayerUnitOnAdjacentPlotOfCity(iIndex) : false;
+	return m_pCity ? m_pCity->isBarbarianUnitOnAdjacentPlotOfCity(iIndex) : false;
 }
 // WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
 

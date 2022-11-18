@@ -10318,3 +10318,177 @@ void CvPlot::writeDesyncLog(FILE *f)
 		}
 	}
 }
+
+
+// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
+void CvPlot::spawnPlayerUnitOnPlot(int /*PlayerTypes*/ iPlayer, int /*UnitTypes*/ iIndex) const
+{
+	if ((PlayerTypes) iPlayer == NO_PLAYER)
+	{
+		return;
+	}
+
+	CvPlayer& ownPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+	UnitTypes eUnitToSpawn = (UnitTypes) iIndex;
+	CvUnit* eOwnUnitToSpawn = ownPlayer.initUnit(eUnitToSpawn, GC.getUnitInfo(eUnitToSpawn).getDefaultProfession(), getX_INLINE(), getY_INLINE(), NO_UNITAI);
+	return;
+}
+
+// careful with this, will take over City for Barbarians
+void CvPlot::spawnBarbarianUnitOnPlot(int /*UnitTypes*/ iIndex) const
+{
+	PlayerTypes eBarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
+	if (eBarbarianPlayerType == NO_PLAYER)
+    {
+        return;
+    }
+
+	CvPlayer& barbarianPlayer = GET_PLAYER(eBarbarianPlayerType);
+	UnitTypes eUnitToSpawn = (UnitTypes) iIndex;
+	CvUnit* eBarbarianUnitToSpawn = barbarianPlayer.initUnit(eUnitToSpawn, GC.getUnitInfo(eUnitToSpawn).getDefaultProfession(), getX_INLINE(), getY_INLINE(), NO_UNITAI);
+	return;
+}
+
+void CvPlot::spawnPlayerUnitOnAdjacentPlot(int /*PlayerTypes*/ iPlayer, int /*UnitTypes*/ iIndex) const
+{
+	if ((PlayerTypes) iPlayer == NO_PLAYER)
+	{
+		return;
+	}
+
+	CvPlayer& ownPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+	UnitTypes eUnitToSpawn = (UnitTypes) iIndex;
+
+	// we use this as last fallback if we do not find an adjacent plot below
+	const CvPlot* pPlotToSpawn = this;
+
+	// try to find a better adjacent plot
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	{
+		CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		if (pAdjacentPlot != NULL)
+		{
+			// if the adjacent Plot is valid and there are no other Units, prevent Cities for safety reasons
+			if (pAdjacentPlot->isValidDomainForAction(eUnitToSpawn) && pAdjacentPlot->getNumUnits() == 0 && !pAdjacentPlot->isCity())
+			{
+				// we found a proper fallback solution and use it as spawning plot
+				pPlotToSpawn = pAdjacentPlot;
+				break;
+			}
+		}
+	}
+
+	// now we spawn and are done
+	CvUnit* eOwnUnitToSpawn = ownPlayer.initUnit(eUnitToSpawn, GC.getUnitInfo(eUnitToSpawn).getDefaultProfession(), pPlotToSpawn->getX_INLINE(), pPlotToSpawn->getY_INLINE(), NO_UNITAI);
+	return;
+}
+
+void CvPlot::spawnBarbarianUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const
+{
+	PlayerTypes eBarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
+	if (eBarbarianPlayerType == NO_PLAYER)
+    {
+        return;
+    }
+
+	CvPlayer& barbarianPlayer = GET_PLAYER(eBarbarianPlayerType);
+	UnitTypes eUnitToSpawn = (UnitTypes) iIndex;
+
+	// we use this as last fallback belok
+	const CvPlot* pPlotToSpawn = this;
+
+	// try to find a better adjacent plot
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	{
+		CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		if (pAdjacentPlot != NULL)
+		{
+			// if the adjacent Plot is valid and there are no other Units, prevent Cities for safety reasons
+			if (pAdjacentPlot->isValidDomainForAction(eUnitToSpawn) && pAdjacentPlot->getNumUnits() == 0 && !pAdjacentPlot->isCity())
+			{
+				// we found a proper fallback solution and use it as spawning plot
+				pPlotToSpawn = pAdjacentPlot;
+				break;
+			}
+		}
+	}
+
+	// now we spawn and are done
+	CvUnit* eBarbarianUnitToSpawn = barbarianPlayer.initUnit(eUnitToSpawn, GC.getUnitInfo(eUnitToSpawn).getDefaultProfession(), pPlotToSpawn->getX_INLINE(), pPlotToSpawn->getY_INLINE(), NO_UNITAI);
+	return;
+}
+
+bool CvPlot::isPlayerUnitOnAdjacentPlot(int /*PlayerTypes*/ iPlayer, int /*UnitTypes*/ iIndex) const
+{
+	if ((PlayerTypes) iPlayer == NO_PLAYER)
+	{
+		return false;
+	}
+
+	PlayerTypes eOwnPlayerType = (PlayerTypes) iPlayer;
+	UnitTypes eUnit = (UnitTypes) iIndex;
+
+	// we check the adjacent Plots
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	{
+		CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		if (pAdjacentPlot != NULL)
+		{
+			// if the adjacent Plot is valid and there are no other Units, prevent Cities for safety reasons
+			CLLNode<IDInfo>* pUnitNode = pAdjacentPlot->headUnitNode();
+			while (pUnitNode)
+			{
+				CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+				pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
+
+				// check for owner and UnitType
+				if (pLoopUnit->getOwnerINLINE() == eOwnPlayerType && pLoopUnit->getUnitType() == eUnit)
+				{
+					// we found a unit of our player;
+					return true;
+				}
+			}
+		}
+	}
+
+	// nothing found, return false
+	return false;
+}
+
+bool CvPlot::isBarbarianUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const
+{
+	PlayerTypes eBarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
+	if (eBarbarianPlayerType == NO_PLAYER)
+    {
+        return false;
+    }
+
+	UnitTypes eUnit = (UnitTypes) iIndex;
+
+	// we check the adjacent Plots
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	{
+		CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		if (pAdjacentPlot != NULL)
+		{
+			// if the adjacent Plot is valid and there are no other Units, prevent Cities for safety reasons
+			CLLNode<IDInfo>* pUnitNode = pAdjacentPlot->headUnitNode();
+			while (pUnitNode)
+			{
+				CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+				pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
+
+				// check for owner and UnitType
+				if (pLoopUnit->getOwnerINLINE() == eBarbarianPlayerType && pLoopUnit->getUnitType() == eUnit)
+				{
+					// we found a unit of our player;
+					return true;
+				}
+			}
+		}
+	}
+
+	// nothing found, return false
+	return false;
+}
+// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END

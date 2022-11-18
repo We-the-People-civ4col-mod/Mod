@@ -622,6 +622,17 @@ protected:
 public:
 	void setYieldCache();
 	// Cache the computation of the max visibility range
+
+	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
+	void spawnPlayerUnitOnPlot(int /*PlayerTypes*/ iPlayer, int /*UnitTypes*/ iIndex) const;
+	void spawnBarbarianUnitOnPlot(int /*UnitTypes*/ iIndex) const; // careful with this, because will take over City for Barbarians
+	void spawnPlayerUnitOnAdjacentPlot(int /*PlayerTypes*/ iPlayer, int /*UnitTypes*/ iIndex) const;
+	void spawnBarbarianUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const;
+
+	bool isPlayerUnitOnAdjacentPlot(int /*PlayerTypes*/ iPlayer, int /*UnitTypes*/ iIndex) const;
+	bool isBarbarianUnitOnAdjacentPlot(int /*UnitTypes*/ iIndex) const;
+	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+
 protected:
 	// plot visibility cache
 	void setSeeFromLevelCache();

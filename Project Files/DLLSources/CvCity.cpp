@@ -13232,9 +13232,9 @@ int CvCity::getSlaveWorkerProductionBonus() const
 // WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
 void CvCity::spawnOwnPlayerUnitOnPlotOfCity(int /*UnitTypes*/ iIndex) const
 {
-	CvPlayer& onwPlayer = GET_PLAYER(getOwnerINLINE());
+	CvPlayer& ownPlayer = GET_PLAYER(getOwnerINLINE());
 	UnitTypes eUnitToSpawn = (UnitTypes) iIndex;
-	CvUnit* eOwnUnitToSpawn = onwPlayer.initUnit(eUnitToSpawn, GC.getUnitInfo(eUnitToSpawn).getDefaultProfession(), getX_INLINE(), getY_INLINE(), NO_UNITAI);
+	CvUnit* eOwnUnitToSpawn = ownPlayer.initUnit(eUnitToSpawn, GC.getUnitInfo(eUnitToSpawn).getDefaultProfession(), getX_INLINE(), getY_INLINE(), NO_UNITAI);
 	return;
 }
 
@@ -13255,7 +13255,7 @@ void CvCity::spawnBarbarianUnitOnPlotOfCity(int /*UnitTypes*/ iIndex) const
 
 void CvCity::spawnOwnPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const
 {
-	CvPlayer& onwPlayer = GET_PLAYER(getOwnerINLINE());
+	CvPlayer& ownPlayer = GET_PLAYER(getOwnerINLINE());
 	UnitTypes eUnitToSpawn = (UnitTypes) iIndex;
 
 	// we use this as last fallback if we do not find an adjacent plot below
@@ -13278,7 +13278,7 @@ void CvCity::spawnOwnPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) co
 	}
 
 	// now we spawn and are done
-	CvUnit* eOwnUnitToSpawn = onwPlayer.initUnit(eUnitToSpawn, GC.getUnitInfo(eUnitToSpawn).getDefaultProfession(), pPlotToSpawn->getX_INLINE(), pPlotToSpawn->getY_INLINE(), NO_UNITAI);
+	CvUnit* eOwnUnitToSpawn = ownPlayer.initUnit(eUnitToSpawn, GC.getUnitInfo(eUnitToSpawn).getDefaultProfession(), pPlotToSpawn->getX_INLINE(), pPlotToSpawn->getY_INLINE(), NO_UNITAI);
 	return;
 }
 
@@ -13317,7 +13317,7 @@ void CvCity::spawnBarbarianUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) co
 	return;
 }
 
-bool CvCity::isPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const
+bool CvCity::isOwnPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const
 {
 	PlayerTypes eOwnPlayerType = getOwnerINLINE();
 	UnitTypes eUnit = (UnitTypes) iIndex;
@@ -13333,7 +13333,7 @@ bool CvCity::isPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const
 			while (pUnitNode)
 			{
 				CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-				pUnitNode = plot()->nextUnitNode(pUnitNode);
+				pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
 
 				// check for owner and UnitType
 				if (pLoopUnit->getOwnerINLINE() == eOwnPlayerType && pLoopUnit->getUnitType() == eUnit)
@@ -13370,7 +13370,7 @@ bool CvCity::isBarbarianUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const
 			while (pUnitNode)
 			{
 				CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-				pUnitNode = plot()->nextUnitNode(pUnitNode);
+				pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
 
 				// check for owner and UnitType
 				if (pLoopUnit->getOwnerINLINE() == eBarbarianPlayerType && pLoopUnit->getUnitType() == eUnit)
