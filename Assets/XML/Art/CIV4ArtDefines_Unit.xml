@@ -243,7 +243,7 @@
             </AudioRunSounds>
         	<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
             <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
-        </UnitArtInfo>        
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SPICE_TRADER</Type>
             <Button>,Art/colonization_atlas_units.dds,4,3</Button>
@@ -1801,9 +1801,9 @@
             <Type>ART_DEF_UNIT_FURNITURE</Type>
             <Button>,Art/colonization_atlas_resources.dds,6,2</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
-            <fScale>1.2</fScale>
+            <fScale>5</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Furnitures/furnitures.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -16885,9 +16885,9 @@
             <Type>ART_DEF_UNIT_PADDED_FURNITURE</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Padded_Furniture_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
-            <fScale>1.2</fScale>
+            <fScale>5</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Trade_Goods/Trade_Goods.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Padded_Furnitures/furnitures.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -16962,7 +16962,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Trade_Goods/Trade_Goods.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Kautschuk/kautschuk.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
