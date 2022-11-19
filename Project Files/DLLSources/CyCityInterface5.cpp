@@ -58,12 +58,12 @@ void CyCityPythonInterface5(python::class_<CyCity>& x)
 		// R&R, ray, Health - END
 
 		// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
-		.def("spawnOwnPlayerUnitOnPlotOfCity", &CyCity::spawnOwnPlayerUnitOnPlotOfCity, "void (int /*UnitTypes*/ iIndex)")
-		.def("spawnBarbarianUnitOnPlotOfCity", &CyCity::spawnBarbarianUnitOnPlotOfCity, "void (int /*UnitTypes*/ iIndex)")
-		.def("spawnOwnPlayerUnitOnAdjacentPlotOfCity", &CyCity::spawnOwnPlayerUnitOnAdjacentPlotOfCity, "void (int /*UnitTypes*/ iIndex)")
-		.def("spawnBarbarianUnitOnAdjacentPlotOfCity", &CyCity::spawnBarbarianUnitOnAdjacentPlotOfCity, "void (int /*UnitTypes*/ iIndex)")
-		.def("isOwnPlayerUnitOnAdjacentPlotOfCity", &CyCity::isOwnPlayerUnitOnAdjacentPlotOfCity, "bool (int /*UnitTypes*/ iIndex)")
-		.def("isBarbarianUnitOnAdjacentPlotOfCity", &CyCity::isBarbarianUnitOnAdjacentPlotOfCity, "bool (int /*UnitTypes*/ iIndex)")
+		.def("spawnOwnPlayerUnitOnPlotOfCity", &CyCity::spawnOwnPlayerUnitOnPlotOfCity, "void (int /*UnitClassTypes*/ iIndex)")
+		.def("spawnBarbarianUnitOnPlotOfCity", &CyCity::spawnBarbarianUnitOnPlotOfCity, "void (int /*UnitClassTypes*/ iIndex)")
+		.def("spawnOwnPlayerUnitOnAdjacentPlotOfCity", &CyCity::spawnOwnPlayerUnitOnAdjacentPlotOfCity, "void (int /*UnitClassTypes*/ iIndex)")
+		.def("spawnBarbarianUnitOnAdjacentPlotOfCity", &CyCity::spawnBarbarianUnitOnAdjacentPlotOfCity, "void (int /*UnitClassTypes*/ iIndex)")
+		.def("isOwnPlayerUnitOnAdjacentPlotOfCity", &CyCity::isOwnPlayerUnitOnAdjacentPlotOfCity, "bool (int /*UnitClassTypes*/ iIndex)")
+		.def("isBarbarianUnitOnAdjacentPlotOfCity", &CyCity::isBarbarianUnitOnAdjacentPlotOfCity, "bool (int /*UnitClassTypes*/ iIndex)")
 		// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
 
 		// WTP, ray, Happiness - START
