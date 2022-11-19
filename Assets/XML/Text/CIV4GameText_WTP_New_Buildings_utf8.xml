@@ -45,12 +45,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GRAVEYARD_PEDIA</Tag>
-        <English>TBD</English>
+        <English>In a strange land where religious immigrants look back fondly to medieval times, the graveyard often is a place of fear and superstition. On the other hand it's a place to visit lost loved ones for quiet contemplation. Emotional conflicts arise.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GRAVEYARD_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>The two certainties in life are death and taxes. The graveyard handles one. The King takes care of the other.</English>
         <German>TBD</German>
     </TEXT>
     <!-- CONFECTIONER -->
@@ -223,12 +223,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_PEDIA</Tag>
-        <English>A bigger business can produce a little more for export, not just to Europe but also to the surrounding First Nations and outdoor workers who appreciate not just warm clothing but also distinctive styles like padded shoulders.</English>
+        <English>A bigger business can produce a little more for export, not just to Europe but also to the surrounding First Nations and outdoor workers who appreciate warm clothing.  A fashionable leather clothier relies on word of mouth to increase business.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_STRATEGY</Tag>
-        <English>People soon see the advantage of insulated clothing in a cold climate. A fashionable leather clothier also relies on word of mouth to increase business.</English>
+        <English>Practical eople see the advantage of insulated clothing in a cold climate. Devout settlers are obsessed with religious prohibitions, so women of easy virtue can earn extra money wearing leather in private to dominate the pious.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -401,32 +401,32 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Peanuts are widely grown in the tropics and subtropics. Botanically they're a member of the bean family but in cooking they're used like a nut. Unlike most legumes peanut pods mature underground.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Peanuts are an excellent source of protein and vitamins. They complement traditional European grains, contributing to workers' health and stamina.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_SHOP_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Though they can be boiled, fresh harvested raw peanuts are usually roasted before being eaten. Enterprising roasters soon learn to add salt or grind the peanuts into peanut butter. Other nut butters soon follow.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_SHOP_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Once dried, peanuts last for a long time in a scout's saddlebags or in the barrels on a wagon. Peanut oil is also valuable for cooking.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_PEDIA</Tag>
-        <English>TBD</English>
+        <English>As peanut growers start to deliver large crops, roasters extend the market beyond their own cities, promoting the peanut as an exotic delicacy in temperate regions where it won't grow, Europe for example.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>A region with a big peanut roasting factory helps keep workers healthy. Peanuts are especially important where slave populations need added protein. Their owners can afford to eat meat, increasing their risk of heart disease.</English>
         <German>TBD</German>
     </TEXT>
     <!-- POTTERY -->
@@ -495,32 +495,32 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Pottery is an ancient way to store grain. In the rainy insect-ridden New World pots hold enough grain to keep settlers alive through the winter until in the spring they can finally plant their new crops.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Pottery lets villages store their surplus grain to get them through the hungry winter. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_SHOP_PEDIA</Tag>
-        <English>TBD</English>
+        <English>As the pottery business grows employees specialize. Most of the money comes in for sturdy practical pots holding everything from rice to rum, but a few creative types form imaginative vessels with decorative patterns, some merely for display. The Puritans strongly object.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_SHOP_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>With food and drink stored securely in pottery, life is now less precarious. Businesses feel safer taking risks and so the communities grow.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Pottery factories can be built near the best sources of clay, thus delivering high quality cheap.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>With every type of pot in demand, the pottery factory owners are squirrelling away pots of money.</English>
         <German>TBD</German>
     </TEXT>
     <!-- TAILOR -->
@@ -589,38 +589,38 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_PEDIA</Tag>
-        <English>TBD</English>
+        <English>At first women prided themselves on sewing all their families' clothes, getting their cloth from the weaver. The tailor needs to show his garments are better, or hope that people assume they're better simply because he's a man.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>The tailor creates the well-dressed man, stylish and ready to succeed at diplomacy, business or romance.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_SHOP_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The tailor's shop grows to include a variety of sub-trades. The cutter seldom sews the garment. A different specialist chooses the perfect fabric for every style.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_SHOP_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Having a tailor's shop is a sign of success for a growing town. If the shop has a tailor who's fashionable, everyone from the elder statesman to the firebrand preacher will buy there so they can look their best.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_PEDIA</Tag>
-        <English>TBD</English>
+        <English>A tailors' factory offers less prestige than an exclusive shop but it makes up for that in output. Young workers with an eye on advancement can buy off the rack at a fraction of the cost of a personal fitting.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>The tailors' factory demonstrates that menswear is widely available. It's proof that a city has arrived socially.</English>
         <German>TBD</German>
     </TEXT>
    <!-- FIREWORKER -->
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_BLACK_POWDER</Tag>
-        <English>Powder Mill</English>
+        <English>Powder Shed</English>
         <German>
             <Text>Pulvermühle</Text>
             <Gender>Female</Gender>
@@ -629,7 +629,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_HOUSE</Tag>
-        <English>Fireworker's House</English>
+        <English>Powder Maker's House</English>
         <German>
             <Text>Haus des Pulvermachers</Text>
             <Gender>Neuter</Gender>
@@ -638,7 +638,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_SHOP</Tag>
-        <English>Fireworker's Shop</English>
+        <English>Powder Maker's Shop</English>
         <German>
             <Text>Pulverladen</Text>
             <Gender>Male</Gender>
@@ -656,7 +656,7 @@
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE</Tag>
-        <English>Fireworker's House</English>
+        <English>Powder Maker's House</English>
         <German>
             <Text>Haus des Pulvermachers</Text>
             <Gender>Neuter</Gender>
@@ -665,7 +665,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP</Tag>
-        <English>Fireworker's Shop</English>
+        <English>Powder Maker's Shop</English>
         <German>
             <Text>Pulverladen</Text>
             <Gender>Male</Gender>
@@ -683,32 +683,32 @@
     </TEXT>
      <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Well away from other buildings the powder maker mixes gunpowder from sulphur, charcoal and saltpeter: ammunition for the soldiers' guns. In colonial times it's the only available explosive (dynamite will be invented in 1867) so it's also used for artillery, mining and road building.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>The powder maker needs to produce enough black powder so that soldiers are well-supplied to defend their settlements. Even more is needed for miners and the pioneers building roads.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_PEDIA</Tag>
-        <English>TBD</English>
+        <English>As the business gets bigger, the black powder is stored in kegs which represent a massive increase in explosive power, so much that “powder keg” becomes a metaphor for high risk.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The powder maker supplies propellant for guns and artillery, and explosives for mining and road building. For a big army so much has to be kept in kegs that an unlucky event in this building can blow up the entire town.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Centralizing production of propellant for guns and artillery, and explosives for mining and road building, is efficient but it means powder trains of vulnerable wagons are now on the roads, open to attack.</English>
         <German>TBD</German>
     </TEXT>
     <!-- BAKER -->
@@ -777,32 +777,32 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_HOUSE_PEDIA</Tag>
-        <English>TBD</English>
+        <English>At first every household bakes its own bread but soon the baker's house centralizes food production. The baker starts work well before dawn so that households can have their daily bread. Settlers who remember the early starvation days continue to grow squash, beans and corn but new arrivals prefer familiar food from the old country.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_HOUSE_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Having a bakery means each household doesn't need to bake its own bread. That allows other colonists to spend time on what they do best. Specialization helps the economy to grow, a concept soon popularized in books by economists Adam Smith and David Ricardo.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_SHOP_PEDIA</Tag>
-        <English>TBD</English>
+        <English>As the bakery gets more workers it might add a pastry chef who creates sweet treats that bring in business. The business also provides a variety of loaves so that new arrivals can buy the kind of bread that reminds them of home.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKER_SHOP_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>As the bakery grows, offering cookies and pastries, it becomes a social center. Some bakers even set up tables where tea is served to accompany the treats. A few serve coffee which is considered scandalous because of the stimulating effect.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKERY_PEDIA</Tag>
-        <English>TBD</English>
+        <English>A large bakery serves a region. On the one hand it offers cheap food thanks to economies of sale. On the other it delivers an unparalleled variety of pastries, pies and cakes for special occasions.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BAKERY_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>A big bakery makes an important contribution to the region it serves, increasing both the food supply and the community's happiness.</English>
         <German>TBD</German>
     </TEXT>
 </Civ4GameText>
