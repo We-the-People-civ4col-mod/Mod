@@ -27746,7 +27746,7 @@
                 </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
-       <UnitInfo>
+        <UnitInfo>
             <Type>UNIT_CHARCOAL_BURNER</Type>
             <Class>UNITCLASS_CHARCOAL_BURNER</Class>
             <UniqueNames/>
@@ -27977,8 +27977,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>800</iEuropeCost>
-            <iEuropeCostIncrease>50</iEuropeCostIncrease>
+            <iEuropeCost>1200</iEuropeCost>
+            <iEuropeCostIncrease>200</iEuropeCostIncrease>
             <iImmigrationWeight>100</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -28941,7 +28941,7 @@
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
-        </UnitInfo>		
+        </UnitInfo>
         <UnitInfo>
             <Type>UNIT_FUR_TRADER</Type>
             <Class>UNITCLASS_FUR_TRADER</Class>
@@ -46905,8 +46905,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>600</iEuropeCost>
-            <iEuropeCostIncrease>100</iEuropeCostIncrease>
+            <iEuropeCost>1200</iEuropeCost>
+            <iEuropeCostIncrease>200</iEuropeCostIncrease>
             <iImmigrationWeight>10</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -51152,11 +51152,11 @@
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_BUCCANNEER_TWO</ArtDefineTag>
                     </UnitMeshGroup>
-					<UnitMeshGroup>
+                    <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_BUCCANNEER_ONE</ArtDefineTag>
                     </UnitMeshGroup>
-					<UnitMeshGroup>
+                    <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_BUCCANNEER_THREE</ArtDefineTag>
                     </UnitMeshGroup>
@@ -51236,7 +51236,7 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
-            <iAfricaCost>1200</iAfricaCost>
+            <iAfricaCost>1500</iAfricaCost>
             <iAfricaCostIncrease>300</iAfricaCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -51437,7 +51437,7 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
-            <iAfricaCost>1200</iAfricaCost>
+            <iAfricaCost>1500</iAfricaCost>
             <iAfricaCostIncrease>300</iAfricaCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -51809,8 +51809,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>800</iEuropeCost>
-            <iEuropeCostIncrease>100</iEuropeCostIncrease>
+            <iEuropeCost>1600</iEuropeCost>
+            <iEuropeCostIncrease>200</iEuropeCostIncrease>
             <iImmigrationWeight>10</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -52324,8 +52324,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>1200</iEuropeCost>
-            <iEuropeCostIncrease>100</iEuropeCostIncrease>
+            <iEuropeCost>2400</iEuropeCost>
+            <iEuropeCostIncrease>200</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -52875,8 +52875,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>1500</iEuropeCost>
-            <iEuropeCostIncrease>150</iEuropeCostIncrease>
+            <iEuropeCost>3000</iEuropeCost>
+            <iEuropeCostIncrease>200</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -53372,8 +53372,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>1800</iEuropeCost>
-            <iEuropeCostIncrease>180</iEuropeCostIncrease>
+            <iEuropeCost>3200</iEuropeCost>
+            <iEuropeCostIncrease>200</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -53887,7 +53887,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>800</iEuropeCost>
+            <iEuropeCost>1600</iEuropeCost>
             <iEuropeCostIncrease>100</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -54402,7 +54402,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>800</iEuropeCost>
+            <iEuropeCost>2400</iEuropeCost>
             <iEuropeCostIncrease>100</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -68970,6 +68970,10 @@
                     <iCost>20</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iCost>20</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_HAMMERS</YieldType>
                     <iCost>80</iCost>
                 </YieldCost>
@@ -68977,9 +68981,9 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>1200</iEuropeCost>
+            <iEuropeCost>1600</iEuropeCost>
             <iEuropeCostIncrease>250</iEuropeCostIncrease>
-            <iAfricaCost>1400</iAfricaCost>
+            <iAfricaCost>1800</iAfricaCost>
             <iAfricaCostIncrease>300</iAfricaCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -69172,6 +69176,10 @@
                     <iCost>30</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iCost>30</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_HAMMERS</YieldType>
                     <iCost>80</iCost>
                 </YieldCost>
@@ -69179,7 +69187,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>1400</iEuropeCost>
+            <iEuropeCost>2000</iEuropeCost>
             <iEuropeCostIncrease>250</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -69372,6 +69380,10 @@
                     <iCost>40</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iCost>40</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_HAMMERS</YieldType>
                     <iCost>120</iCost>
                 </YieldCost>
@@ -69379,9 +69391,9 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>2000</iEuropeCost>
+            <iEuropeCost>2400</iEuropeCost>
             <iEuropeCostIncrease>450</iEuropeCostIncrease>
-            <iAfricaCost>2200</iAfricaCost>
+            <iAfricaCost>2600</iAfricaCost>
             <iAfricaCostIncrease>500</iAfricaCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -69571,6 +69583,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_CANNONS</YieldType>
+                    <iCost>30</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
                     <iCost>30</iCost>
                 </YieldCost>
                 <YieldCost>
@@ -69774,6 +69790,10 @@
                     <iCost>20</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iCost>20</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_HAMMERS</YieldType>
                     <iCost>120</iCost>
                 </YieldCost>
@@ -69781,7 +69801,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>2300</iEuropeCost>
+            <iEuropeCost>2700</iEuropeCost>
             <iEuropeCostIncrease>500</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -69971,7 +69991,11 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_CANNONS</YieldType>
-                    <iCost>50</iCost>
+                    <iCost>40</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iCost>40</iCost>
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_HAMMERS</YieldType>
@@ -69981,7 +70005,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>2500</iEuropeCost>
+            <iEuropeCost>2800</iEuropeCost>
             <iEuropeCostIncrease>550</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -70193,7 +70217,11 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_CANNONS</YieldType>
-                    <iCost>55</iCost>
+                    <iCost>50</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iCost>50</iCost>
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_HAMMERS</YieldType>
@@ -70205,7 +70233,7 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
-            <iAfricaCost>2600</iAfricaCost>
+            <iAfricaCost>3000</iAfricaCost>
             <iAfricaCostIncrease>600</iAfricaCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -70420,6 +70448,10 @@
                     <iCost>60</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iCost>60</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_HAMMERS</YieldType>
                     <iCost>200</iCost>
                 </YieldCost>
@@ -70427,7 +70459,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>3200</iEuropeCost>
+            <iEuropeCost>3800</iEuropeCost>
             <iEuropeCostIncrease>750</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -70786,6 +70818,10 @@
                     <iCost>80</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iCost>80</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_HAMMERS</YieldType>
                     <iCost>200</iCost>
                 </YieldCost>
@@ -70793,7 +70829,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>4000</iEuropeCost>
+            <iEuropeCost>4400</iEuropeCost>
             <iEuropeCostIncrease>800</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -70994,6 +71030,10 @@
                     <iCost>20</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iCost>20</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_BLADES</YieldType>
                     <iCost>20</iCost>
                 </YieldCost>
@@ -71005,7 +71045,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>2000</iEuropeCost>
+            <iEuropeCost>2500</iEuropeCost>
             <iEuropeCostIncrease>250</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -71021,7 +71061,7 @@
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
-            <iCombat>27</iCombat>
+            <iCombat>24</iCombat>
             <iXPValueAttack>5</iXPValueAttack>
             <iXPValueDefense>3</iXPValueDefense>
             <iWithdrawalProb>20</iWithdrawalProb>
@@ -71163,6 +71203,10 @@
                     <iCost>25</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iCost>25</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_BLADES</YieldType>
                     <iCost>20</iCost>
                 </YieldCost>
@@ -71174,8 +71218,8 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>2200</iEuropeCost>
-            <iEuropeCostIncrease>250</iEuropeCostIncrease>
+            <iEuropeCost>2600</iEuropeCost>
+            <iEuropeCostIncrease>275</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>20</iMinAreaSize>
@@ -71408,6 +71452,10 @@
                     <iCost>60</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iCost>60</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_BLADES</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
@@ -71419,7 +71467,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>3300</iEuropeCost>
+            <iEuropeCost>4000</iEuropeCost>
             <iEuropeCostIncrease>750</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -71602,7 +71650,7 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
-            <iPortRoyalCost>3500</iPortRoyalCost>
+            <iPortRoyalCost>4200</iPortRoyalCost>
             <iPortRoyalCostIncrease>1000</iPortRoyalCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -71764,7 +71812,7 @@
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
             <iPortRoyalCost>3000</iPortRoyalCost>
-            <iPortRoyalCostIncrease>800</iPortRoyalCostIncrease>
+            <iPortRoyalCostIncrease>750</iPortRoyalCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>24</iMinAreaSize>
@@ -71910,8 +71958,8 @@
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>-1</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
-            <iPortRoyalCost>2000</iPortRoyalCost>
-            <iPortRoyalCostIncrease>800</iPortRoyalCostIncrease>
+            <iPortRoyalCost>2200</iPortRoyalCost>
+            <iPortRoyalCostIncrease>600</iPortRoyalCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
@@ -72081,6 +72129,10 @@
                     <iCost>100</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_BLADES</YieldType>
                     <iCost>30</iCost>
                 </YieldCost>
@@ -72092,7 +72144,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>4400</iEuropeCost>
+            <iEuropeCost>5400</iEuropeCost>
             <iEuropeCostIncrease>1200</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -72277,6 +72329,10 @@
                     <iCost>100</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_BLADES</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
@@ -72288,7 +72344,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>4800</iEuropeCost>
+            <iEuropeCost>5800</iEuropeCost>
             <iEuropeCostIncrease>1400</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -72469,6 +72525,10 @@
                     <iCost>100</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_BLADES</YieldType>
                     <iCost>50</iCost>
                 </YieldCost>
@@ -72480,7 +72540,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>5500</iEuropeCost>
+            <iEuropeCost>6500</iEuropeCost>
             <iEuropeCostIncrease>1250</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -72818,6 +72878,10 @@
                     <iCost>150</iCost>
                 </YieldCost>
                 <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iCost>150</iCost>
+                </YieldCost>
+                <YieldCost>
                     <YieldType>YIELD_BLADES</YieldType>
                     <iCost>80</iCost>
                 </YieldCost>
@@ -72830,7 +72894,7 @@
             <iAdvancedStartCost>100</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>9000</iEuropeCost>
-            <iEuropeCostIncrease>2000</iEuropeCostIncrease>
+            <iEuropeCostIncrease>1500</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>20</iMinAreaSize>
@@ -73164,6 +73228,10 @@
                 </YieldCost>
                 <YieldCost>
                     <YieldType>YIELD_CANNONS</YieldType>
+                    <iCost>220</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
                     <iCost>220</iCost>
                 </YieldCost>
                 <YieldCost>

@@ -517,16 +517,6 @@
             <DefaultUnit>UNIT_EUROPEAN_LINE_INFANTRY</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
-            <Type>UNITCLASS_VETERAN_DRAGOON</Type>
-            <Description>TXT_KEY_UNITCLASS_VETERAN_DRAGOON</Description>
-            <DefaultUnit>UNIT_VETERAN_DRAGOON</DefaultUnit>
-        </UnitClassInfo>
-        <UnitClassInfo>
-            <Type>UNITCLASS_VETERAN_CAVALRY</Type>
-            <Description>TXT_KEY_UNITCLASS_VETERAN_CAVALRY</Description>
-            <DefaultUnit>UNIT_VETERAN_CAVALRY</DefaultUnit>
-        </UnitClassInfo>
-        <UnitClassInfo>
             <Type>UNITCLASS_LIGHT_ARTILLERY</Type>
             <Description>TXT_KEY_UNITCLASS_LIGHT_ARTILLERY</Description>
             <DefaultUnit>UNIT_LIGHT_ARTILLERY_VETERAN</DefaultUnit>
@@ -537,9 +527,14 @@
             <DefaultUnit>UNIT_HEAVY_ARTILLERY_VETERAN</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
-            <Type>UNITCLASS_ROYAL_ARTILLERY</Type>
-            <Description>TXT_KEY_UNITCLASS_HEAVY_ARTILLERY</Description>
-            <DefaultUnit>UNIT_ROYAL_ARTILLERY</DefaultUnit>
+            <Type>UNITCLASS_VETERAN_DRAGOON</Type>
+            <Description>TXT_KEY_UNITCLASS_VETERAN_DRAGOON</Description>
+            <DefaultUnit>UNIT_VETERAN_DRAGOON</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_VETERAN_CAVALRY</Type>
+            <Description>TXT_KEY_UNITCLASS_VETERAN_CAVALRY</Description>
+            <DefaultUnit>UNIT_VETERAN_CAVALRY</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_MORTAR</Type>
@@ -652,6 +647,11 @@
             <DefaultUnit>UNIT_ROYAL_LINE_INFANTRY</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_ROYAL_ARTILLERY</Type>
+            <Description>TXT_KEY_UNITCLASS_HEAVY_ARTILLERY</Description>
+            <DefaultUnit>UNIT_ROYAL_ARTILLERY</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_ROYAL_DRAGOON</Type>
             <Description>TXT_KEY_UNITCLASS_ROYAL_DRAGOON</Description>
             <DefaultUnit>UNIT_ROYAL_DRAGOON</DefaultUnit>
@@ -682,14 +682,14 @@
             <DefaultUnit>UNIT_FLUYT</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
-            <Type>UNITCLASS_CARRACK</Type>
-            <Description>TXT_KEY_UNITCLASS_CARRACK</Description>
-            <DefaultUnit>UNIT_CARRACK</DefaultUnit>
-        </UnitClassInfo>
-        <UnitClassInfo>
             <Type>UNITCLASS_CARAVELA_REDONDA</Type>
             <Description>TXT_KEY_UNITCLASS_CARAVELA_REDONDA</Description>
             <DefaultUnit>UNIT_CARAVELA_REDONDA</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_CARRACK</Type>
+            <Description>TXT_KEY_UNITCLASS_CARRACK</Description>
+            <DefaultUnit>UNIT_CARRACK</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_SCHOONER</Type>

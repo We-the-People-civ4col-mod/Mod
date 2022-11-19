@@ -4646,7 +4646,7 @@ def applyQuestDoneAfricaTradePriceAndAttitude(argsList):
 	iYield = event.getGenericParameter(2)
 
 	# careful, uses Africa methods here
-	iPrice = king.getYieldAfricaBuyPrice(iYield)
+	iPrice = king.getYieldAfricaBuyPriceNoModifier(iYield)
 	king.setYieldAfricaBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
 
 ####### Here start all the AFICA QUEST TRIGGERS Functions #######
@@ -4797,7 +4797,7 @@ def applyQuestDonePortRoyalTradePriceAndAttitude(argsList):
 	iYield = event.getGenericParameter(2)
     
 	# careful, uses Port Royal methods here
-	iPrice = king.getYieldPortRoyalBuyPrice(iYield)
+	iPrice = king.getYieldPortRoyalBuyPriceNoModifier(iYield)
 	king.setYieldPortRoyalBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
 
 ####### Here start all the PORT ROYAL QUEST TRIGGERS Functions #######
@@ -4854,6 +4854,7 @@ def canTriggerPortRoyalTradeQuest_SAILCLOTH_DONE(argsList):
 	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
 	
 	return bTrigger
+
 def canTriggerPortRoyalTradeQuest_CANNONS_START(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
@@ -4904,6 +4905,7 @@ def canTriggerPortRoyalTradeQuest_GUNS_DONE(argsList):
 	bTrigger = CanDoPortRoyalTrade(argsList, iYieldID, iQuantity)
 	
 	return bTrigger
+
 def canTriggerPortRoyalTradeQuest_ROPES_START(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
@@ -5657,3 +5659,269 @@ def canTriggerAfricaTradeQuest_TRADINGGOODS_DONE(argsList):
 	bTrigger = CanDoAfricaTrade(argsList, iYieldID, iQuantity)
 	
 	return bTrigger
+
+#######################################################
+######## SPAWNING UNITS - friendly and hostile ########
+#######################################################
+
+### PART A1) UNIT Trigger Check Methods
+#######################################################
+### Those are for the UnitTrigger Triggers to check ###
+#######################################################
+
+# check for own units
+def checkOwnPlayerUnitOnAdjacentPlotOfUnit(argsList):
+	# this is the Unit that triggered
+	kTriggeredData = argsList[0]
+	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
+	iOwnUnitClassTypeToCheck = event.getGenericParameter(1)
+	found = unitThatTriggered.isOwnPlayerUnitOnAdjacentPlotOfUnit(iOwnUnitClassTypeToCheck)
+	if (found):
+		return true
+	return false
+
+# check for Barbarian Units
+def checkBarbarianUnitOnAdjacentPlotOfUnit(argsList):
+	# this is the Unit that triggered
+	kTriggeredData = argsList[0]
+	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
+	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
+	found = unitThatTriggered.isBarbarianUnitOnAdjacentPlotOfUnit(iBarbarianUnitClassTypeToCheck)
+	if (found):
+		return true
+	return false
+
+
+### PART A2) UNIT Trigger Spawn Methods
+#####################################################
+### Those are for the UnitTrigger Events to spawn ###
+#####################################################
+
+### Barbarians Units - either same Plot or adjacent Plot
+### GenericParameter1: UnitClassType to spawn
+### GenericParameter2: Number of Units to spawn
+
+# same Plot
+def spawnBarbarianUnitOnSamePlotAsUnit(argsList):
+	# this is the Unit that triggered
+	kTriggeredData = argsList[1]
+	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
+	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumHostilesToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumHostilesToSpawn):
+		unitThatTriggered.spawnBarbarianUnitOnPlotOfUnit(iHostileUnitClassTypeToSpawn)
+
+# adjacent Plot
+def spawnBarbarianUnitAdjacentToUnit(argsList):
+	# this is the Unit that triggered
+	kTriggeredData = argsList[1]
+	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
+	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumHostilesToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumHostilesToSpawn):
+		unitThatTriggered.spawnBarbarianUnitOnAdjacentPlotOfUnit(iHostileUnitClassTypeToSpawn)
+
+### Own Player Units - either same Plot or adjacent Plot
+### GenericParameter1: UnitClassType to spawn
+### GenericParameter2: Number of Units to spawn
+
+# same Plot
+def spawnOwnPlayerUnitOnSamePlotAsUnit(argsList):
+	# this is the Unit that triggered
+	kTriggeredData = argsList[1]
+	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
+	iOwnUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumOwnToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumOwnToSpawn):
+		unitThatTriggered.spawnOwnPlayerUnitOnPlotOfUnit(iOwnUnitClassTypeToSpawn)
+
+# adjacent Plot
+def spawnOwnPlayerUnitAdjacentToUnit(argsList):
+	# this is the Unit that triggered
+	kTriggeredData = argsList[1]
+	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
+	iOwnUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumOwnToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumOwnToSpawn):
+		unitThatTriggered.spawnOwnPlayerUnitOnAdjacentPlotOfUnit(iOwnUnitClassTypeToSpawn)
+
+### PART B1) CITY Trigger Check Methods
+#######################################################
+### Those are for the CityTrigger Triggers to check ###
+#######################################################
+
+# check for own units
+def checkOwnPlayerUnitOnAdjacentPlotOfCity(argsList):
+	# get the City that triggered
+	#kTriggeredData = argsList[0]
+	ePlayer = argsList[1]
+	iCityIdThatTriggered = argsList[2]
+	player = gc.getPlayer(ePlayer)
+	city = player.getCity(iCityId)
+
+	iOwnUnitClassTypeToCheck = event.getGenericParameter(1)
+	found = city.isOwnPlayerUnitOnAdjacentPlotOfCity(iOwnUnitClassTypeToCheck)
+	if (found):
+		return true
+	return false
+
+
+# check for Barbarian Units
+def checkBarbarianUnitOnAdjacentPlotOfCity(argsList):
+	# get the City that triggered
+	#kTriggeredData = argsList[0]
+	ePlayer = argsList[1]
+	iCityIdThatTriggered = argsList[2]
+	player = gc.getPlayer(ePlayer)
+	city = player.getCity(iCityId)
+
+	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
+	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck)
+	if (found):
+		return true
+	return false
+
+
+### PART B2) CITY Trigger Spawn Methods
+#####################################################
+### Those are for the CityTrigger Events to spawn ###
+#####################################################
+
+### Barbarians Units - either same Plot or adjacent Plot
+### GenericParameter1: UnitClassType to spawn
+### GenericParameter2: Number of Units to spawn
+
+# same Plot # CAREFUL !!!, will take over City
+def spawnBarbarianUnitOnSamePlotAsCity(argsList):
+	# get the City that triggered
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+
+	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumHostilesToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumHostilesToSpawn):
+		city.spawnBarbarianUnitOnPlotOfCity(iHostileUnitClassTypeToSpawn)
+
+# adjacent Plot
+def spawnBarbarianUnitAdjacentToCity(argsList):
+	# get the City that triggered
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+
+	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumHostilesToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumHostilesToSpawn):
+		city.spawnBarbarianUnitOnAdjacentPlotOfCity(iHostileUnitClassTypeToSpawn)
+
+### Own Player Units - either same Plot or adjacent Plot
+### GenericParameter1: UnitClassType to spawn
+### GenericParameter2: Number of Units to spawn
+
+# same Plot
+def spawnOwnPlayerUnitOnSamePlotAsCity(argsList):
+	# get the City that triggered
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+
+	iOwnUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumOwnToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumOwnToSpawn):
+		city.spawnOwnPlayerUnitOnPlotOfCity(iOwnUnitClassTypeToSpawn)
+
+# adjacent Plot
+def spawnOwnPlayerUnitAdjacentToCity(argsList):
+	# get the City that triggered
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+
+	iOwnUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumOwnToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumOwnToSpawn):
+		city.spawnOwnPlayerUnitOnAdjacentPlotOfCity(iOwnUnitClassTypeToSpawn)
+
+### PART C1) PLOT Trigger Check Methods
+#######################################################
+### Those are for the PlotTrigger Triggers to check ###
+#######################################################
+
+# check for own units
+def checkOwnPlayerUnitOnAdjacentPlotOfPlot(argsList):
+	# this is the Unit that triggered
+	kTriggeredData = argsList[0]
+	ePlayer = kTriggeredData.ePlayer
+	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
+	iOwnUnitClassTypeToCheck = event.getGenericParameter(1)
+	found = plotThatTriggered.isPlayerUnitOnAdjacentPlot(ePlayer, iOwnUnitClassTypeToCheck)
+	if (found):
+		return true
+	return false
+
+# check for Barbarian Units
+def checkBarbarianUnitOnAdjacentPlotOfPlot(argsList):
+	# this is the Unit that triggered
+	kTriggeredData = argsList[0]
+	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
+	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
+	found = plotThatTriggered.isBarbarianUnitOnAdjacentPlot(iBarbarianUnitClassTypeToCheck)
+	if (found):
+		return true
+	return false
+
+### PART  2) PLOT Trigger Spawn Methods
+#####################################################
+### Those are for the PlotTrigger Events to spawn ###
+#####################################################
+
+### Barbarians Units - either same Plot or adjacent Plot
+### GenericParameter1: UnitClassType to spawn
+### GenericParameter2: Number of Units to spawn
+
+# same Plot
+def spawnBarbarianUnitOnSamePlotAsPlot(argsList):
+	# this is the Unit that triggered
+	kTriggeredData = argsList[1]
+	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
+	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumHostilesToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumHostilesToSpawn):
+		plotThatTriggered.spawnBarbarianUnitOnPlot(iHostileUnitClassTypeToSpawn)
+
+# adjacent Plot
+def spawnBarbarianUnitAdjacentToPlot(argsList):
+	# this is the Unit that triggered
+	kTriggeredData = argsList[1]
+	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
+	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumHostilesToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumHostilesToSpawn):
+		plotThatTriggered.spawnBarbarianUnitOnAdjacentPlot(iHostileUnitClassTypeToSpawn)
+
+### Own Player Units - either same Plot or adjacent Plot
+### GenericParameter1: UnitClassType to spawn
+### GenericParameter2: Number of Units to spawn
+
+# same Plot
+def spawnOwnPlayerUnitOnSamePlotAsPlot(argsList):
+	# this is the Unit that triggered
+	kTriggeredData = argsList[1]
+	ePlayer = kTriggeredData.ePlayer
+	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
+	iOwnUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumOwnToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumOwnToSpawn):
+		plotThatTriggered.spawnPlayerUnitOnPlot(ePlayer, iOwnUnitClassTypeToSpawn)
+
+# adjacent Plot
+def spawnOwnPlayerUnitAdjacentToPlot(argsList):
+	# this is the Unit that triggered
+	kTriggeredData = argsList[1]
+	ePlayer = kTriggeredData.ePlayer
+	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
+	iOwnUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumOwnToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumOwnToSpawn):
+		plotThatTriggered.spawnPlayerUnitOnAdjacentPlot(ePlayer, iOwnUnitClassTypeToSpawn)

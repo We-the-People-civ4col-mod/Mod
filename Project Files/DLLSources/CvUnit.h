@@ -806,13 +806,13 @@ public:
 	bool isProfessionalMilitary() const;
 
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
-	void spawnOwnPlayerUnitOnPlotOfUnit(int /*UnitTypes*/ iIndex) const;
-	void spawnBarbarianUnitOnPlotOfUnit(int /*UnitTypes*/ iIndex) const;
-	void spawnOwnPlayerUnitOnAdjacentPlotOfUnit(int /*UnitTypes*/ iIndex) const;
-	void spawnBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitTypes*/ iIndex) const;
+	void spawnOwnPlayerUnitOnPlotOfUnit(int /*UnitClassTypes*/ iIndex) const;
+	void spawnBarbarianUnitOnPlotOfUnit(int /*UnitClassTypes*/ iIndex) const;
+	void spawnOwnPlayerUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) const;
+	void spawnBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) const;
 
-	bool isPlayerUnitOnAdjacentPlotOfUnit(int /*UnitTypes*/ iIndex) const;
-	bool isBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitTypes*/ iIndex) const;
+	bool isOwnPlayerUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) const;
+	bool isBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) const;
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
 
 protected:

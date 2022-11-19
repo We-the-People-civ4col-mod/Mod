@@ -1338,6 +1338,11 @@ int CyPlayer::getYieldAfricaBuyPrice(int /*YieldTypes*/ eYield)
 {
 	return m_pPlayer ? m_pPlayer->getYieldAfricaBuyPrice((YieldTypes) eYield) : -1;
 }
+int CyPlayer::getYieldAfricaBuyPriceNoModifier(int /*YieldTypes*/ eYield)
+{
+	return m_pPlayer ? m_pPlayer->getYieldAfricaBuyPriceNoModifier((YieldTypes) eYield) : -1;
+}
+
 void CyPlayer::setYieldAfricaBuyPrice(int /*YieldTypes*/ eYield, int iPrice, bool bMessage)
 {
 	if (m_pPlayer)
@@ -1356,6 +1361,10 @@ int CyPlayer::getYieldPortRoyalSellPrice(int /*YieldTypes*/ eYield)
 int CyPlayer::getYieldPortRoyalBuyPrice(int /*YieldTypes*/ eYield)
 {
 	return m_pPlayer ? m_pPlayer->getYieldPortRoyalBuyPrice((YieldTypes) eYield) : -1;
+}
+int CyPlayer::getYieldPortRoyalBuyPriceNoModifier(int /*YieldTypes*/ eYield)
+{
+	return m_pPlayer ? m_pPlayer->getYieldPortRoyalBuyPriceNoModifier((YieldTypes) eYield) : -1;
 }
 void CyPlayer::setYieldPortRoyalBuyPrice(int /*YieldTypes*/ eYield, int iPrice, bool bMessage)
 {

@@ -243,7 +243,7 @@
             </AudioRunSounds>
         	<SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
             <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
-        </UnitArtInfo>        
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SPICE_TRADER</Type>
             <Button>,Art/colonization_atlas_units.dds,4,3</Button>
@@ -455,7 +455,7 @@
             <Button>,Art/colonization_atlas_units_two.dds,2,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Fireworker.dds</FullLengthIcon>
             <fScale>0.50</fScale>
-            <fInterfaceScale>0.80</fInterfaceScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Fireworker/Expert_Lumberjack.nif</NIF>
             <KFM>Art/Units/Settler/Master_Fireworker/Expert_Lumberjack.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -1801,9 +1801,9 @@
             <Type>ART_DEF_UNIT_FURNITURE</Type>
             <Button>,Art/colonization_atlas_resources.dds,6,2</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
-            <fScale>1.2</fScale>
+            <fScale>5</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Lumber/Lumber.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Furnitures/furnitures.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -12538,7 +12538,7 @@
             <Type>ART_DEF_UNIT_PROFESSION_SCOUT</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,12</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Scout.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>0.68</fInterfaceScale>
             <NIF>Art/Units/Scout/Scout.nif</NIF>
             <KFM>Art/Units/Scout/Scout.kfm</KFM>
@@ -12555,7 +12555,7 @@
             <Type>ART_DEF_UNIT_PROFESSION_UNIT_SCOUT</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,12</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Scout_Seasoned_Mounted.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>0.68</fInterfaceScale>
             <NIF>Art/Units/Seasoned_Scout_Mnt/Seasoned_Scout_Mnt.nif</NIF>
             <KFM>Art/Units/Seasoned_Scout_Mnt/Seasoned_Scout_Mnt.kfm</KFM>
@@ -16885,9 +16885,9 @@
             <Type>ART_DEF_UNIT_PADDED_FURNITURE</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Padded_Furniture_Goods_Button.dds</Button>
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
-            <fScale>1.2</fScale>
+            <fScale>5</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Trade_Goods/Trade_Goods.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Padded_Furnitures/furnitures.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -16962,7 +16962,7 @@
             <FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
             <fScale>1.2</fScale>
             <fInterfaceScale>1.2</fInterfaceScale>
-            <NIF>Art/Units/Trade_Goods/Trade_Goods/Trade_Goods.nif</NIF>
+            <NIF>Art/Units/Trade_Goods/Kautschuk/kautschuk.nif</NIF>
             <KFM/>
             <TrailDefinition>
                 <Texture>Art/Shared/wheeltread.dds</Texture>
@@ -17162,7 +17162,7 @@
             <Button>,Art/colonization_atlas_units_two.dds,5,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Breeder.dds</FullLengthIcon>
             <fScale>0.48</fScale>
-            <fInterfaceScale>0.80</fInterfaceScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Breeder/Expert_Fisherman.nif</NIF>
             <KFM>Art/Units/Settler/Dyer/Expert_Fisherman.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -17193,12 +17193,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_COCHINEAL_COLLECTOR</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Cochineal_Collector_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Cochineal_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,2,4</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Cochineal_Collector.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Cochineal_Collector/Free_Colonist.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Cochineal_Collector/Free_Colonist.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Cochineal_Collector/Expert_Cotton_Planter.nif</NIF>
+            <KFM>Art/Units/Expert_Cotton_Planter/Expert_Cotton_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17212,7 +17212,7 @@
             <Type>ART_DEF_UNIT_LINEN_PLANTER</Type>
             <Button>,Art/colonization_atlas_units_two.dds,8,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Linen_Planter.dds</FullLengthIcon>
-            <fScale>0.44</fScale>
+            <fScale>0.46</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Linen_Planter/Expert_Farmer.nif</NIF>
             <KFM>Art/Units/Expert_Farmer/Expert_Farmer.kfm</KFM>
@@ -17331,12 +17331,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_VANILLA_COLLECTOR</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Vanilla_Collector.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Vanilla_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.54</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,1,4</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Vanilla_Collector.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Vanilla_Collector/Indentured_Servant.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Vanilla_Collector/Indentured_Servant.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Vanilla_Collector/Expert_Sugar_Planter.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Red_Pepper_Planter/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17370,7 +17370,7 @@
             <Button>,Art/colonization_atlas_units_two.dds,4,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Herder.dds</FullLengthIcon>
             <fScale>0.48</fScale>
-            <fInterfaceScale>0.80</fInterfaceScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Herder/Expert_Rancher.nif</NIF>
             <KFM>Art/Units/Settler/Expert_Herder/Expert_Rancher.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -17401,12 +17401,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_KAUTSCHUK_COLLECTOR</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Kautschuk_Collector_button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Kautschuk_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.5</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,7,3</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Kautschuk_Collector.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Kautschuk_Collector/worker.nif</NIF>
-            <KFM>Art/Units/Settler/worker/worker.kfm</KFM>
+            <NIF>Art/Units/Settler/Kautschuk_Collector/Expert_Trapper.nif</NIF>
+            <KFM>Art/Units/Expert_Trapper/Expert_Trapper.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17486,12 +17486,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_FRUITS_PICKER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Fruits_Collector_button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Fruits_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,8,3.dds</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Fruits_Collector.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Fruits_Collector/mongol_settler_b_fx.nif</NIF>
-            <KFM>Art/Units/Settler/Expert_Fruits_Collector/mongol_settler_b.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Fruits_Collector/settler_male.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Fruits_Collector/settler_male.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17520,12 +17520,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_COAL_MINER</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Coal_Miner_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Coal_Miner_Europe.dds</FullLengthIcon>
+            <Button>,Art/colonization_atlas_units_two.dds,6,3</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Coal_Miner.dds</FullLengthIcon>
             <fScale>0.5</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Coal_Miner/scout.nif</NIF>
-            <KFM>Art/Units/Settler/scout_european/Scout.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Coal_Miner/Expert_Silver_Miner.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Coal_Miner/Expert_Silver_Miner.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17539,8 +17539,8 @@
             <Type>ART_DEF_UNIT_LEATHER_TAYLOR</Type>
             <Button>,Art/colonization_atlas_units_two.dds,3,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Lether_Taylor.dds</FullLengthIcon>
-            <fScale>0.52</fScale>
-            <fInterfaceScale>0.80</fInterfaceScale>
+            <fScale>0.50</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Leather_Taylor/Expert_Cotton_Planter.nif</NIF>
             <KFM>Art/Units/Settler/Master_Leather_Taylor/Expert_Cotton_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>

@@ -19210,10 +19210,10 @@ void CvPlayer::doAfricaPrices()
 				int iNewPrice = kYield.getAfricaBuyPriceLow() + GC.getGameINLINE().getSorenRandNum(kYield.getAfricaBuyPriceHigh() - kYield.getAfricaBuyPriceLow() + 1, "Price selection");
 				iNewPrice += getYieldBoughtTotalAfrica(eYield) / std::max(1, iBaseThreshold); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 
-				if (GC.getGameINLINE().getSorenRandNum(100, "Price correction") < kYield.getPriceCorrectionPercent() * std::abs(iNewPrice - getYieldAfricaBuyPrice(eYield)))
+				if (GC.getGameINLINE().getSorenRandNum(100, "Price correction") < kYield.getPriceCorrectionPercent() * std::abs(iNewPrice - getYieldAfricaBuyPriceNoModifier(eYield)))
 				{
-					iNewPrice = std::min(iNewPrice, getYieldAfricaBuyPrice(eYield) + 1);
-					iNewPrice = std::max(iNewPrice, getYieldAfricaBuyPrice(eYield) - 1);
+					iNewPrice = std::min(iNewPrice, getYieldAfricaBuyPriceNoModifier(eYield) + 1);
+					iNewPrice = std::max(iNewPrice, getYieldAfricaBuyPriceNoModifier(eYield) - 1);
 					setYieldAfricaBuyPrice(eYield, iNewPrice, true);
 				}
 			}
@@ -19244,10 +19244,10 @@ void CvPlayer::doPortRoyalPrices()
 				int iNewPrice = kYield.getPortRoyalBuyPriceLow() + GC.getGameINLINE().getSorenRandNum(kYield.getPortRoyalBuyPriceHigh() - kYield.getPortRoyalBuyPriceLow() + 1, "Price selection");
 				iNewPrice += getYieldBoughtTotalPortRoyal(eYield) / std::max(1, iBaseThreshold); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 
-				if (GC.getGameINLINE().getSorenRandNum(100, "Price correction") < kYield.getPriceCorrectionPercent() * std::abs(iNewPrice - getYieldPortRoyalBuyPrice(eYield)))
+				if (GC.getGameINLINE().getSorenRandNum(100, "Price correction") < kYield.getPriceCorrectionPercent() * std::abs(iNewPrice - getYieldPortRoyalBuyPriceNoModifier(eYield)))
 				{
-					iNewPrice = std::min(iNewPrice, getYieldPortRoyalBuyPrice(eYield) + 1);
-					iNewPrice = std::max(iNewPrice, getYieldPortRoyalBuyPrice(eYield) - 1);
+					iNewPrice = std::min(iNewPrice, getYieldPortRoyalBuyPriceNoModifier(eYield) + 1);
+					iNewPrice = std::max(iNewPrice, getYieldPortRoyalBuyPriceNoModifier(eYield) - 1);
 					setYieldPortRoyalBuyPrice(eYield, iNewPrice, true);
 				}
 			}
