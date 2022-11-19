@@ -12538,7 +12538,7 @@
             <Type>ART_DEF_UNIT_PROFESSION_SCOUT</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,12</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Scout.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>0.68</fInterfaceScale>
             <NIF>Art/Units/Scout/Scout.nif</NIF>
             <KFM>Art/Units/Scout/Scout.kfm</KFM>
@@ -12555,7 +12555,7 @@
             <Type>ART_DEF_UNIT_PROFESSION_UNIT_SCOUT</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,12</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Scout_Seasoned_Mounted.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>0.68</fInterfaceScale>
             <NIF>Art/Units/Seasoned_Scout_Mnt/Seasoned_Scout_Mnt.nif</NIF>
             <KFM>Art/Units/Seasoned_Scout_Mnt/Seasoned_Scout_Mnt.kfm</KFM>

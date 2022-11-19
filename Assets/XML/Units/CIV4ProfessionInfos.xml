@@ -5192,6 +5192,10 @@
                     <YieldType>YIELD_BLADES</YieldType>
                     <iYieldAmount>50</iYieldAmount>
                 </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iYieldAmount>20</iYieldAmount>
+                </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions>
                 <FreePromotion>
@@ -5241,6 +5245,10 @@
                 <YieldEquipedNum>
                     <YieldType>YIELD_BLADES</YieldType>
                     <iYieldAmount>50</iYieldAmount>
+                </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iYieldAmount>20</iYieldAmount>
                 </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions>
@@ -5292,6 +5300,10 @@
                     <YieldType>YIELD_MUSKETS</YieldType>
                     <iYieldAmount>50</iYieldAmount>
                 </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iYieldAmount>20</iYieldAmount>
+                </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions/>
             <YieldsProduced>
@@ -5339,6 +5351,10 @@
                 </YieldEquipedNum>
                 <YieldEquipedNum>
                     <YieldType>YIELD_BLADES</YieldType>
+                    <iYieldAmount>40</iYieldAmount>
+                </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
                     <iYieldAmount>40</iYieldAmount>
                 </YieldEquipedNum>
             </YieldEquipedNums>
@@ -5395,6 +5411,10 @@
                     <YieldType>YIELD_MUSKETS</YieldType>
                     <iYieldAmount>50</iYieldAmount>
                 </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iYieldAmount>20</iYieldAmount>
+                </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions/>
             <YieldsProduced>
@@ -5442,6 +5462,10 @@
                 </YieldEquipedNum>
                 <YieldEquipedNum>
                     <YieldType>YIELD_BLADES</YieldType>
+                    <iYieldAmount>40</iYieldAmount>
+                </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
                     <iYieldAmount>40</iYieldAmount>
                 </YieldEquipedNum>
             </YieldEquipedNums>
@@ -5502,6 +5526,10 @@
                     <YieldType>YIELD_MUSKETS</YieldType>
                     <iYieldAmount>50</iYieldAmount>
                 </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iYieldAmount>20</iYieldAmount>
+                </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions>
                 <FreePromotion>
@@ -5555,6 +5583,10 @@
                 <YieldEquipedNum>
                     <YieldType>YIELD_MUSKETS</YieldType>
                     <iYieldAmount>50</iYieldAmount>
+                </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iYieldAmount>20</iYieldAmount>
                 </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions>
@@ -5715,6 +5747,10 @@
                     <YieldType>YIELD_CANNONS</YieldType>
                     <iYieldAmount>50</iYieldAmount>
                 </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iYieldAmount>50</iYieldAmount>
+                </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions>
                 <FreePromotion>
@@ -5764,11 +5800,11 @@
             <YieldEquipedNums>
                 <YieldEquipedNum>
                     <YieldType>YIELD_CANNONS</YieldType>
-                    <iYieldAmount>50</iYieldAmount>
+                    <iYieldAmount>75</iYieldAmount>
                 </YieldEquipedNum>
                 <YieldEquipedNum>
-                    <YieldType>YIELD_BLADES</YieldType>
-                    <iYieldAmount>25</iYieldAmount>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iYieldAmount>75</iYieldAmount>
                 </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions>
@@ -5819,11 +5855,11 @@
             <YieldEquipedNums>
                 <YieldEquipedNum>
                     <YieldType>YIELD_CANNONS</YieldType>
-                    <iYieldAmount>75</iYieldAmount>
+                    <iYieldAmount>100</iYieldAmount>
                 </YieldEquipedNum>
                 <YieldEquipedNum>
-                    <YieldType>YIELD_BLADES</YieldType>
-                    <iYieldAmount>50</iYieldAmount>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iYieldAmount>100</iYieldAmount>
                 </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions>
