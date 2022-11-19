@@ -813,8 +813,8 @@
             <Type>ART_DEF_BONUS_CLAY</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Clay/marble.nif</NIF>
-            <KFM>Art/Terrain/Resources/Clay/marble.kfm</KFM>
+            <NIF>Art/Terrain/Resources/Clay/clay.nif</NIF>
+            <KFM/>
             <Button>Art/Interface/Buttons/Clay_Button.dds</Button>
             <FontButtonIndex>100</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
@@ -835,8 +835,8 @@
             <Type>ART_DEF_BONUS_PEAT</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Peat/marble.nif</NIF>
-            <KFM>Art/Terrain/Resources/Peat/marble.kfm</KFM>
+            <NIF>Art/Terrain/Resources/Peat/peat.nif</NIF>
+            <KFM/>
             <Button>Art/Interface/Buttons/Peat_Button.dds</Button>
             <FontButtonIndex>103</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
