@@ -813,11 +813,11 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SUGAR_PLANTER</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,5</Button>
+            <Button>,Art/colonization_atlas_units_two.dds,5,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_SugarPlanter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Expert_Sugar_Planter/Expert_Sugar_Planter.nif</NIF>
+            <NIF>Art/Units/Settler/Expert_Sugar_Planter/Expert_Sugar_Planter.nif</NIF>
             <KFM>Art/Units/Expert_Sugar_Planter/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
