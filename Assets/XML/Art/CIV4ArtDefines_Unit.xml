@@ -17588,12 +17588,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_MILK_MAID</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Milkmaid_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Milkmaid_CM.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,4,4</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Skilled_Milkmaid.dds</FullLengthIcon>
+            <fScale>0.47</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Milkmaid/sailor.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Milkmaid/sailor.kfm</KFM>
+            <NIF>Art/Units/Settler/Skilled_Milkmaid/Expert_Sugar_Planter.nif</NIF>
+            <KFM>Art/Units/Settler/Skilled_Milkmaid/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17602,6 +17602,8 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
+            <SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_CHEESE_MAKER</Type>
@@ -17658,10 +17660,10 @@
             <Type>ART_DEF_UNIT_HARLOT</Type>
             <Button>,Art/colonization_atlas_units_two.dds,4,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/city_management/harlot.dds</FullLengthIcon>
-            <fScale>0.47</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/harlot/Expert_Sugar_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/harlot/Expert_Sugar_Planter.kfm</KFM>
+            <KFM>Art/Units/Settler/Skilled_Milkmaid/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17680,7 +17682,7 @@
             <fScale>0.47</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/female_entertainer/Expert_Sugar_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/harlot/Expert_Sugar_Planter.kfm</KFM>
+            <KFM>Art/Units/Settler/female_entertainer/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
