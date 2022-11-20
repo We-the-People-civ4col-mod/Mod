@@ -1272,7 +1272,7 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Tongrube</Text>
+            <Text>Lehmgrube</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
@@ -1291,7 +1291,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_CLAY_PIT_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]clay pit[COLOR_REVERT] can be built only on hills. They increase the production of [LINK=YIELD_CLAY]clay[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A clay pit is an open-pit mine from which clay is extracted. Clay is generally used for goods and other everyday items.</English>
         <French>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]clay pit[COLOR_REVERT] can be built only on hills. They increase the production of [LINK=YIELD_CLAY]clay[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A clay pit is an open-pit mine from which clay is extracted. Clay is generally used for goods and other everyday items.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tongruben[COLOR_REVERT] können nur auf Hügeln angelegt werden. Sie erhöhen die Produktion von [LINK=YIELD_CLAY]Ton[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Eine Tongrube ist eine Anlage, die dazu dient, Ton abzubauen. In vielen Fällen dient dieses Material als Material zur Herstellung von Waren und anderen Alltagsgegenständen.</German>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lehmgruben[COLOR_REVERT] können nur auf Hügeln angelegt werden. Sie erhöhen die Produktion von [LINK=YIELD_CLAY]Ton[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Eine Tongrube ist eine Anlage, die dazu dient, Ton abzubauen. In vielen Fällen dient dieses Material als Material zur Herstellung von Waren und anderen Alltagsgegenständen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_OPEN_CLAY_MINE</Tag>
@@ -1302,7 +1302,7 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Ton Tagebau</Text>
+            <Text>Lehmtagebau</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
@@ -1321,7 +1321,7 @@
         <Tag>TXT_KEY_IMPROVEMENT_OPEN_CLAY_MINE_PEDIA</Tag>
         <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Open clay mines[COLOR_REVERT] are the upgrades of [LINK=IMPROVEMENT_CLAY_PIT]clay pits[\LINK]. They increase the production of [LINK=YIELD_CLAY]clay[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]In open-pit clay mines clay is extracted. Clay is generally used for goods and other everyday items.</English>
         <French>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Open clay mines[COLOR_REVERT] are the upgrades of [LINK=IMPROVEMENT_CLAY_PIT]clay pits[\LINK]. They increase the production of [LINK=YIELD_CLAY]clay[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]In open-pit clay mines clay is extracted. Clay is generally used for goods and other everyday items.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Der[COLOR_HIGHLIGHT_TEXT]Ton Tagebau[COLOR_REVERT] ist die Erweiterung der [LINK=IMPROVEMENT_CLAY_PIT]IMPROVEMENT_CLAY_PIT[\LINK]. Er erhöht die Produktion von [LINK=YIELD_CLAY]Ton[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ein Tagebau ist meist eine grubenähnliche Anlage, die dazu dient, Ton in großen Mengen abzubauen. In vielen Fällen dient dieses Material als Material zur Herstellung von Waren und anderen Alltagsgegenständen.</German>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Der[COLOR_HIGHLIGHT_TEXT]Lehmtagebau[COLOR_REVERT] ist die Erweiterung der [LINK=IMPROVEMENT_CLAY_PIT]IMPROVEMENT_CLAY_PIT[\LINK]. Er erhöht die Produktion von [LINK=YIELD_CLAY]Ton[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ein Tagebau ist meist eine grubenähnliche Anlage, die dazu dient, Ton in großen Mengen abzubauen. In vielen Fällen dient dieses Material als Material zur Herstellung von Waren und anderen Alltagsgegenständen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PEAT_PIT</Tag>
@@ -1349,9 +1349,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_PEAT_PIT_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]peat pit[COLOR_REVERT] can be built only on hills. They increase the production of [LINK=YIELD_PEAT]peat[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A peat pit is an open-pit mine from which peat is extracted. </English>
-        <French>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]peat pit[COLOR_REVERT] can be built only on hills. They increase the production of [LINK=YIELD_PEAT]peat[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A peat pit is an open-pit mine from which peat is extracted. </French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Torfgruben[COLOR_REVERT] können nur auf Hügeln angelegt werden. Sie erhöhen die Produktion von [LINK=YIELD_PEAT]Torf[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Eine Torfgrube ist eine Anlage, die dazu dient, Torf abzubauen.</German>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]peat pit[COLOR_REVERT] can be built only on flat wetlands. They increase the production of [LINK=YIELD_PEAT]peat[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A peat pit is an open-pit mine from which peat is extracted. </English>
+        <French>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]peat pit[COLOR_REVERT] can be built only on flat wetlands. They increase the production of [LINK=YIELD_PEAT]peat[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A peat pit is an open-pit mine from which peat is extracted. </French>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Torfgruben[COLOR_REVERT] können nur auf flachem Feuchtland angelegt werden. Sie erhöhen die Produktion von [LINK=YIELD_PEAT]Torf[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Eine Torfgrube ist eine Anlage, die dazu dient, Torf abzubauen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_OPEN_PEAT_MINE</Tag>

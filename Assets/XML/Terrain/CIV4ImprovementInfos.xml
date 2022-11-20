@@ -2576,8 +2576,34 @@
             <iDefenseModifier>0</iDefenseModifier>
             <iPillageGold>5</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>
-            <TerrainMakesValids/>
-            <FeatureMakesValids/>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
                     <BonusType>BONUS_CLAY</BonusType>
@@ -2593,68 +2619,6 @@
             </BonusTypeStructs>
             <ImprovementPillage/>
             <ImprovementUpgrade>IMPROVEMENT_OPEN_CLAY_MINE</ImprovementUpgrade>
-            <RouteYieldChanges/>
-            <bGraphicalOnly>0</bGraphicalOnly>
-        </ImprovementInfo>
-        <ImprovementInfo>
-            <Type>IMPROVEMENT_OPEN_CLAY_MINE</Type>
-            <Description>TXT_KEY_IMPROVEMENT_OPEN_CLAY_MINE</Description>
-            <Civilopedia>TXT_KEY_IMPROVEMENT_OPEN_CLAY_MINE_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_IMPROVEMENT_OPEN_CLAY_MINE</ArtDefineTag>
-            <PrereqNatureYields>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_CLAY</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-             </PrereqNatureYields>
-            <YieldIncreases>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_CLAY</YieldType>
-                    <iValue>3</iValue>
-                </YieldIntegerPair>
-            </YieldIncreases>
-            <RiverSideYieldChanges/>
-            <HillsYieldChanges/>
-            <bActsAsCity>0</bActsAsCity>
-            <bHillsMakesValid>0</bHillsMakesValid>
-            <bRiverSideMakesValid>0</bRiverSideMakesValid>
-            <bRequiresFlatlands>0</bRequiresFlatlands>
-            <bRequiresRiverSide>0</bRequiresRiverSide>
-            <bRequiresFeature>0</bRequiresFeature>
-            <bWater>0</bWater>
-            <bGoody>0</bGoody>
-            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
-            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
-            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
-            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
-            <bPermanent>0</bPermanent>
-            <bUseLSystem>0</bUseLSystem>
-            <iAdvancedStartCost>24</iAdvancedStartCost>
-            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iTilesPerGoody>0</iTilesPerGoody>
-            <iGoodyRange>0</iGoodyRange>
-            <iFeatureGrowth>0</iFeatureGrowth>
-            <iUpgradeTime>50</iUpgradeTime>
-            <iDefenseModifier>0</iDefenseModifier>
-            <iPillageGold>5</iPillageGold>
-            <bOutsideBorders>0</bOutsideBorders>
-            <TerrainMakesValids/>
-            <FeatureMakesValids/>
-            <BonusTypeStructs>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_CLAY</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_CLAY</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-            </BonusTypeStructs>
-            <ImprovementPillage/>
-            <ImprovementUpgrade/>
             <RouteYieldChanges/>
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
@@ -2700,8 +2664,34 @@
             <iDefenseModifier>0</iDefenseModifier>
             <iPillageGold>5</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>
-            <TerrainMakesValids/>
-            <FeatureMakesValids/>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
             <BonusTypeStructs>
                 <BonusTypeStruct>
                     <BonusType>BONUS_PEAT</BonusType>
@@ -2721,68 +2711,6 @@
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
         <ImprovementInfo>
-            <Type>IMPROVEMENT_OPEN_PEAT_MINE</Type>
-            <Description>TXT_KEY_IMPROVEMENT_OPEN_PEAT_MINE</Description>
-            <Civilopedia>TXT_KEY_IMPROVEMENT_OPEN_PEAT_MINE_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_IMPROVEMENT_OPEN_PEAT_MINE</ArtDefineTag>
-            <PrereqNatureYields>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_PEAT</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-             </PrereqNatureYields>
-            <YieldIncreases>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_PEAT</YieldType>
-                    <iValue>3</iValue>
-                </YieldIntegerPair>
-            </YieldIncreases>
-            <RiverSideYieldChanges/>
-            <HillsYieldChanges/>
-            <bActsAsCity>0</bActsAsCity>
-            <bHillsMakesValid>0</bHillsMakesValid>
-            <bRiverSideMakesValid>0</bRiverSideMakesValid>
-            <bRequiresFlatlands>0</bRequiresFlatlands>
-            <bRequiresRiverSide>0</bRequiresRiverSide>
-            <bRequiresFeature>0</bRequiresFeature>
-            <bWater>0</bWater>
-            <bGoody>0</bGoody>
-            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
-            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
-            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
-            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
-            <bPermanent>0</bPermanent>
-            <bUseLSystem>0</bUseLSystem>
-            <iAdvancedStartCost>24</iAdvancedStartCost>
-            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iTilesPerGoody>0</iTilesPerGoody>
-            <iGoodyRange>0</iGoodyRange>
-            <iFeatureGrowth>0</iFeatureGrowth>
-            <iUpgradeTime>50</iUpgradeTime>
-            <iDefenseModifier>0</iDefenseModifier>
-            <iPillageGold>5</iPillageGold>
-            <bOutsideBorders>0</bOutsideBorders>
-            <TerrainMakesValids/>
-            <FeatureMakesValids/>
-            <BonusTypeStructs>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_PEAT</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_PEAT</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-            </BonusTypeStructs>
-            <ImprovementPillage/>
-            <ImprovementUpgrade/>
-            <RouteYieldChanges/>
-            <bGraphicalOnly>0</bGraphicalOnly>
-        </ImprovementInfo>
-        <ImprovementInfo>
             <Type>IMPROVEMENT_QUARRY</Type>
             <Description>TXT_KEY_IMPROVEMENT_QUARRY</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_QUARRY_PEDIA</Civilopedia>
@@ -2793,7 +2721,7 @@
                     <iValue>1</iValue>
                 </YieldIntegerPair>
             </PrereqNatureYields>
-			<YieldIncreases>
+            <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_STONE</YieldType>
                     <iValue>2</iValue>
@@ -2841,6 +2769,73 @@
              </BonusTypeStructs>
             <ImprovementPillage/>
             <ImprovementUpgrade>IMPROVEMENT_LARGE_QUARRY</ImprovementUpgrade>
+            <RouteYieldChanges/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
+        <ImprovementInfo>
+            <Type>IMPROVEMENT_SALINA</Type>
+            <Description>TXT_KEY_IMPROVEMENT_SALINA</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_SALINA_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_SALINA</ArtDefineTag>
+            <PrereqNatureYields/>
+            <YieldIncreases>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_RAW_SALT</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+            </YieldIncreases>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bMonastery>0</bMonastery>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>0</bWater>
+            <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>30</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>0</iTilesPerGoody>
+            <iGoodyRange>0</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>50</iUpgradeTime>
+            <iDefenseModifier>0</iDefenseModifier>
+            <iPillageGold>5</iPillageGold>
+            <bOutsideBorders>0</bOutsideBorders>
+            <TerrainMakesValids/>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
+            <BonusTypeStructs>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_SALT</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_RAW_SALT</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+            </BonusTypeStructs>
+            <ImprovementPillage/>
+            <ImprovementUpgrade>IMPROVEMENT_LARGE_SALINA</ImprovementUpgrade>
             <RouteYieldChanges/>
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
@@ -2932,6 +2927,10 @@
                     <YieldType>YIELD_MAPLE_SIRUP</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_RICE</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
             </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
@@ -2948,6 +2947,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_MAPLE_SIRUP</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_RICE</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -3023,6 +3026,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_MAPLE_SIRUP</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_RICE</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_RICE</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -4987,6 +5001,182 @@
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
         <ImprovementInfo>
+            <Type>IMPROVEMENT_OPEN_CLAY_MINE</Type>
+            <Description>TXT_KEY_IMPROVEMENT_OPEN_CLAY_MINE</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_OPEN_CLAY_MINE_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_OPEN_CLAY_MINE</ArtDefineTag>
+            <PrereqNatureYields>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+             </PrereqNatureYields>
+            <YieldIncreases>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+            </YieldIncreases>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>0</bWater>
+            <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>24</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>0</iTilesPerGoody>
+            <iGoodyRange>0</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>50</iUpgradeTime>
+            <iDefenseModifier>0</iDefenseModifier>
+            <iPillageGold>5</iPillageGold>
+            <bOutsideBorders>0</bOutsideBorders>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
+            <BonusTypeStructs>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_CLAY</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_CLAY</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+            </BonusTypeStructs>
+            <ImprovementPillage/>
+            <ImprovementUpgrade/>
+            <RouteYieldChanges/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
+        <ImprovementInfo>
+            <Type>IMPROVEMENT_OPEN_PEAT_MINE</Type>
+            <Description>TXT_KEY_IMPROVEMENT_OPEN_PEAT_MINE</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_OPEN_PEAT_MINE_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_OPEN_PEAT_MINE</ArtDefineTag>
+            <PrereqNatureYields>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_PEAT</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+             </PrereqNatureYields>
+            <YieldIncreases>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_PEAT</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+            </YieldIncreases>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>0</bWater>
+            <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>24</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>0</iTilesPerGoody>
+            <iGoodyRange>0</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>50</iUpgradeTime>
+            <iDefenseModifier>0</iDefenseModifier>
+            <iPillageGold>5</iPillageGold>
+            <bOutsideBorders>0</bOutsideBorders>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_WETLAND</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_TAR_PIT</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_CRATER</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
+            <BonusTypeStructs>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_PEAT</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_PEAT</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+            </BonusTypeStructs>
+            <ImprovementPillage/>
+            <ImprovementUpgrade/>
+            <RouteYieldChanges/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
+        <ImprovementInfo>
             <Type>IMPROVEMENT_LARGE_QUARRY</Type>
             <Description>TXT_KEY_IMPROVEMENT_LARGE_QUARRY</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_LARGE_QUARRY_PEDIA</Civilopedia>
@@ -5038,6 +5228,73 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_STONE</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+            </BonusTypeStructs>
+            <ImprovementPillage/>
+            <ImprovementUpgrade/>
+            <RouteYieldChanges/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
+        <ImprovementInfo>
+            <Type>IMPROVEMENT_LARGE_SALINA</Type>
+            <Description>TXT_KEY_IMPROVEMENT_LARGE_SALINA</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_LARGE_SALINA_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_LARGE_SALINA</ArtDefineTag>
+            <PrereqNatureYields/>
+            <YieldIncreases>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_RAW_SALT</YieldType>
+                    <iValue>4</iValue>
+                </YieldIntegerPair>
+            </YieldIncreases>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bMonastery>0</bMonastery>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>0</bWater>
+            <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>30</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>0</iTilesPerGoody>
+            <iGoodyRange>0</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>0</iUpgradeTime>
+            <iDefenseModifier>0</iDefenseModifier>
+            <iPillageGold>10</iPillageGold>
+            <bOutsideBorders>0</bOutsideBorders>
+            <TerrainMakesValids/>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
+            <BonusTypeStructs>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_SALT</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_RAW_SALT</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -5136,6 +5393,10 @@
                     <YieldType>YIELD_MAPLE_SIRUP</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_RICE</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
             </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
@@ -5152,6 +5413,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_MAPLE_SIRUP</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_RICE</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -5227,6 +5492,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_MAPLE_SIRUP</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_RICE</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_RICE</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -6579,140 +6855,6 @@
                         <YieldIntegerPair>
                             <YieldType>YIELD_WILD_FEATHERS</YieldType>
                             <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-            </BonusTypeStructs>
-            <ImprovementPillage/>
-            <ImprovementUpgrade/>
-            <RouteYieldChanges/>
-            <bGraphicalOnly>0</bGraphicalOnly>
-        </ImprovementInfo>
-        <ImprovementInfo>
-            <Type>IMPROVEMENT_SALINA</Type>
-            <Description>TXT_KEY_IMPROVEMENT_SALINA</Description>
-            <Civilopedia>TXT_KEY_IMPROVEMENT_SALINA_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_IMPROVEMENT_SALINA</ArtDefineTag>
-            <PrereqNatureYields/>
-            <YieldIncreases>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_RAW_SALT</YieldType>
-                    <iValue>2</iValue>
-                </YieldIntegerPair>
-            </YieldIncreases>
-            <RiverSideYieldChanges/>
-            <HillsYieldChanges/>
-            <bActsAsCity>0</bActsAsCity>
-            <bMonastery>0</bMonastery>
-            <bHillsMakesValid>0</bHillsMakesValid>
-            <bRiverSideMakesValid>0</bRiverSideMakesValid>
-            <bRequiresFlatlands>0</bRequiresFlatlands>
-            <bRequiresRiverSide>0</bRequiresRiverSide>
-            <bRequiresFeature>0</bRequiresFeature>
-            <bWater>0</bWater>
-            <bGoody>0</bGoody>
-            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
-            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
-            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
-            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
-            <bPermanent>0</bPermanent>
-            <bUseLSystem>0</bUseLSystem>
-            <iAdvancedStartCost>30</iAdvancedStartCost>
-            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iTilesPerGoody>0</iTilesPerGoody>
-            <iGoodyRange>0</iGoodyRange>
-            <iFeatureGrowth>0</iFeatureGrowth>
-            <iUpgradeTime>50</iUpgradeTime>
-            <iDefenseModifier>0</iDefenseModifier>
-            <iPillageGold>5</iPillageGold>
-            <bOutsideBorders>0</bOutsideBorders>
-            <TerrainMakesValids/>
-            <FeatureMakesValids>
-                <FeatureMakesValid>
-                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
-                    <bMakesValid>0</bMakesValid>
-                </FeatureMakesValid>
-                <FeatureMakesValid>
-                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
-                    <bMakesValid>1</bMakesValid>
-                </FeatureMakesValid>
-            </FeatureMakesValids>
-            <BonusTypeStructs>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_SALT</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_RAW_SALT</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-            </BonusTypeStructs>
-            <ImprovementPillage/>
-            <ImprovementUpgrade>IMPROVEMENT_LARGE_SALINA</ImprovementUpgrade>
-            <RouteYieldChanges/>
-            <bGraphicalOnly>0</bGraphicalOnly>
-        </ImprovementInfo>
-        <ImprovementInfo>
-            <Type>IMPROVEMENT_LARGE_SALINA</Type>
-            <Description>TXT_KEY_IMPROVEMENT_LARGE_SALINA</Description>
-            <Civilopedia>TXT_KEY_IMPROVEMENT_LARGE_SALINA_PEDIA</Civilopedia>
-            <ArtDefineTag>ART_DEF_IMPROVEMENT_LARGE_SALINA</ArtDefineTag>
-            <PrereqNatureYields/>
-            <YieldIncreases>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_RAW_SALT</YieldType>
-                    <iValue>4</iValue>
-                </YieldIntegerPair>
-            </YieldIncreases>
-            <RiverSideYieldChanges/>
-            <HillsYieldChanges/>
-            <bActsAsCity>0</bActsAsCity>
-            <bMonastery>0</bMonastery>
-            <bHillsMakesValid>0</bHillsMakesValid>
-            <bRiverSideMakesValid>0</bRiverSideMakesValid>
-            <bRequiresFlatlands>0</bRequiresFlatlands>
-            <bRequiresRiverSide>0</bRequiresRiverSide>
-            <bRequiresFeature>0</bRequiresFeature>
-            <bWater>0</bWater>
-            <bGoody>0</bGoody>
-            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
-            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
-            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
-            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
-            <bPermanent>0</bPermanent>
-            <bUseLSystem>0</bUseLSystem>
-            <iAdvancedStartCost>30</iAdvancedStartCost>
-            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iTilesPerGoody>0</iTilesPerGoody>
-            <iGoodyRange>0</iGoodyRange>
-            <iFeatureGrowth>0</iFeatureGrowth>
-            <iUpgradeTime>0</iUpgradeTime>
-            <iDefenseModifier>0</iDefenseModifier>
-            <iPillageGold>10</iPillageGold>
-            <bOutsideBorders>0</bOutsideBorders>
-            <TerrainMakesValids/>
-            <FeatureMakesValids>
-                <FeatureMakesValid>
-                    <FeatureType>FEATURE_SALT_PAN</FeatureType>
-                    <bMakesValid>0</bMakesValid>
-                </FeatureMakesValid>
-                <FeatureMakesValid>
-                    <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
-                    <bMakesValid>1</bMakesValid>
-                </FeatureMakesValid>
-            </FeatureMakesValids>
-            <BonusTypeStructs>
-                <BonusTypeStruct>
-                    <BonusType>BONUS_SALT</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_RAW_SALT</YieldType>
-                            <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
                 </BonusTypeStruct>
