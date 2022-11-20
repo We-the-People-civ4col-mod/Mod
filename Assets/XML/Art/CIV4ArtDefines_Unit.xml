@@ -17384,12 +17384,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_MAPLE_SIRUP_COLLECTOR</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Maple_Sirup_Collector_button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Maple_Sirup_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.54</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,3,4</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Maple_Sirup_Collector.dds</FullLengthIcon>
+            <fScale>0.56</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Maple_Sirup_Collector/scout_fx.nif</NIF>
-            <KFM>Art/Units/Settler/scout_european/Scout.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Maple_Sirup_Collector/Indentured_Servant.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Maple_Sirup_Collector/Indentured_Servant.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
