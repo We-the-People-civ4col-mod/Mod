@@ -102,6 +102,7 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 		// R&R, ray, Africa
 		.def("getYieldAfricaSellPrice", &CyPlayer::getYieldAfricaSellPrice, "int (eYield)")
 		.def("getYieldAfricaBuyPrice", &CyPlayer::getYieldAfricaBuyPrice, "int (eYield)")
+		.def("getYieldAfricaBuyPriceNoModifier", &CyPlayer::getYieldAfricaBuyPriceNoModifier, "int (eYield)")
 		.def("setYieldAfricaBuyPrice", &CyPlayer::setYieldAfricaBuyPrice, "void (eYield, int iValue, bool bMessage)")
 		// R&R, ray, Port Royal
 		.def("getNumPortRoyalUnits", &CyPlayer::getNumPortRoyalUnits, "int ()")
@@ -116,6 +117,7 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 		.def("isYieldPortRoyalTradable", &CyPlayer::isYieldPortRoyalTradable, "bool ()")
 		.def("getYieldPortRoyalSellPrice", &CyPlayer::getYieldPortRoyalSellPrice, "int (eYield)")
 		.def("getYieldPortRoyalBuyPrice", &CyPlayer::getYieldPortRoyalBuyPrice, "int (eYield)")
+		.def("getYieldPortRoyalBuyPriceNoModifier", &CyPlayer::getYieldPortRoyalBuyPriceNoModifier, "int (eYield)")
 		.def("setYieldPortRoyalBuyPrice", &CyPlayer::setYieldPortRoyalBuyPrice, "void (eYield, int iValue, bool bMessage)")
 		// R&R, ray, Port Royal - END
 		/* R&R mod, vetiarvind, trade groups - start */

@@ -44,6 +44,8 @@ class DomesticDemandAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 	def createTableHeader(self):
 		# create table headers
 		
+		self.tableManager.defaultColumnWidth = 85
+		
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
 		self.tableManager.addHeaderButton()
 		self.tableManager.addHeaderCityName()

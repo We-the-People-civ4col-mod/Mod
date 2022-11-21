@@ -501,7 +501,7 @@
         <Spanish>Establecer un puesto comercial</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_COMMAND_ESTABLISH_MISSION_HELP</Tag>
+        <Tag>TXT_KEY_COMMAND_ESTABLISH_TRADE_POST_HELP</Tag>
         <English>Establish a trading post in the settlement to gradually generate treasures.</English>
         <French>Établir un poste de traite dans le village pour générer progressivement des trésors.</French>
         <German>Einen Handelsposten errichten, um mit den Ureinwohnern Handel zu treiben und Schätze zu erzeugen.</German>

@@ -306,13 +306,13 @@ public:
 	// R&R, ray, Health - END
 
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
-	void spawnOwnPlayerUnitOnPlotOfCity(int /*UnitTypes*/ iIndex) const;
-	void spawnBarbarianUnitOnPlotOfCity(int /*UnitTypes*/ iIndex) const; // careful with this, because will take over City for Barbarians
-	void spawnOwnPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
-	void spawnBarbarianUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
+	void spawnOwnPlayerUnitOnPlotOfCity(int /*UnitClassTypes*/ iIndex) const;
+	void spawnBarbarianUnitOnPlotOfCity(int /*UnitClassTypes*/ iIndex) const; // careful with this, because will take over City for Barbarians
+	void spawnOwnPlayerUnitOnAdjacentPlotOfCity(int /*UnitClassTypes*/ iIndex) const;
+	void spawnBarbarianUnitOnAdjacentPlotOfCity(int /*UnitClassTypes*/ iIndex) const;
 
-	bool isPlayerUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
-	bool isBarbarianUnitOnAdjacentPlotOfCity(int /*UnitTypes*/ iIndex) const;
+	bool isOwnPlayerUnitOnAdjacentPlotOfCity(int /*UnitClassTypes*/ iIndex) const;
+	bool isBarbarianUnitOnAdjacentPlotOfCity(int /*UnitClassTypes*/ iIndex) const;
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
 
 	// WTP, ray, Happiness - START
