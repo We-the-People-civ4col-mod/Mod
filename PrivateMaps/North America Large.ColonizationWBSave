@@ -1298,7 +1298,6 @@ BeginPlot
 	x=1,y=80
 	BonusType=BONUS_DEER
 	FeatureType=FEATURE_ANCIENT_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -1863,7 +1862,6 @@ BeginPlot
 	x=2,y=85
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_ANCIENT_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -3492,7 +3490,6 @@ BeginPlot
 	RiverWEDirection=3
 	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -3901,7 +3898,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	isWOfRiver
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -4951,7 +4947,6 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	FeatureType=FEATURE_DENSE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -5704,7 +5699,6 @@ BeginPlot
 	RiverWEDirection=1
 	isWOfRiver
 	FeatureType=FEATURE_DENSE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -6284,7 +6278,6 @@ BeginPlot
 	RiverNSDirection=2
 	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -6952,7 +6945,6 @@ BeginPlot
 	x=11,y=48
 	BonusType=BONUS_HARDWOOD
 	FeatureType=FEATURE_ANCIENT_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_TAIGA
 	PlotType=2
 EndPlot
@@ -8101,7 +8093,6 @@ BeginPlot
 	x=13,y=58
 	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -8205,7 +8196,6 @@ EndPlot
 BeginPlot
 	x=13,y=75
 	FeatureType=FEATURE_ANCIENT_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -9149,7 +9139,6 @@ EndPlot
 BeginPlot
 	x=15,y=53
 	FeatureType=FEATURE_ANCIENT_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -10012,7 +10001,6 @@ EndPlot
 BeginPlot
 	x=17,y=13
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -11313,7 +11301,6 @@ BeginPlot
 	x=19,y=50
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_ANCIENT_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -13525,7 +13512,6 @@ BeginPlot
 	RiverWEDirection=1
 	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -14712,7 +14698,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=67
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -14773,7 +14758,6 @@ BeginPlot
 	RiverNSDirection=0
 	isWOfRiver
 	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -15573,7 +15557,6 @@ BeginPlot
 	x=27,y=22
 	isNOfRiver
 	RiverWEDirection=1
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 EndPlot
@@ -17447,7 +17430,6 @@ EndPlot
 BeginPlot
 	x=30,y=43
 	FeatureType=FEATURE_DENSE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -21223,7 +21205,6 @@ BeginPlot
 	x=37,y=40
 	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -22464,7 +22445,6 @@ EndPlot
 BeginPlot
 	x=39,y=80
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
