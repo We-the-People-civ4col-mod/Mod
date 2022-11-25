@@ -592,10 +592,10 @@
             <Type>ART_DEF_UNIT_ROPES_MAKER</Type>
             <Button>,Art/colonization_atlas_units.dds,1,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/rope_maker.dds</FullLengthIcon>
-            <fScale>0.52</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Rope_Maker/Indentured_Servant.nif</NIF>
-            <KFM>Art/Units/Indentured_Servant/Indentured_Servant.kfm</KFM>
+            <NIF>Art/Units/Settler/Rope_Maker/rope_maker.nif</NIF>
+            <KFM>Art/Units/Master_Carpenter/Master_Carpenter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
