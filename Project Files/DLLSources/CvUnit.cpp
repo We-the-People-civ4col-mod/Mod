@@ -11404,7 +11404,8 @@ int CvUnit::getExtraEnemyHeal() const
 void CvUnit::changeExtraEnemyHeal(int iChange)
 {
 	m_iExtraEnemyHeal = (m_iExtraEnemyHeal + iChange);
-	FAssert(getExtraEnemyHeal() >= 0);
+	//WTP, ray, removed because of Negative Promotions
+	//FAssert(getExtraEnemyHeal() >= 0); 
 }
 
 
@@ -11417,7 +11418,8 @@ int CvUnit::getExtraNeutralHeal() const
 void CvUnit::changeExtraNeutralHeal(int iChange)
 {
 	m_iExtraNeutralHeal = (m_iExtraNeutralHeal + iChange);
-	FAssert(getExtraNeutralHeal() >= 0);
+	//WTP, ray, removed because of Negative Promotions
+	//FAssert(getExtraNeutralHeal() >= 0);
 }
 
 
@@ -11430,7 +11432,8 @@ int CvUnit::getExtraFriendlyHeal() const
 void CvUnit::changeExtraFriendlyHeal(int iChange)
 {
 	m_iExtraFriendlyHeal = (m_iExtraFriendlyHeal + iChange);
-	FAssert(getExtraFriendlyHeal() >= 0);
+	//WTP, ray, removed because of Negative Promotions
+	//FAssert(getExtraFriendlyHeal() >= 0);
 }
 
 
