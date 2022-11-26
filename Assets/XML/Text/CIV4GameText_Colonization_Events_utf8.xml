@@ -795,6 +795,26 @@
         <German>Das ist der junge Ureinwohner aus dem Dorf. Er greift an.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_CRIMINALS_BLACKMAIL_CITY</Tag>
+        <English>A rumour is spreading: The peaceful city of [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] is being blackmailed by criminals.</English>
+        <German>Ein Gerücht macht die Runde: Die friedliche Stadt [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] wird von Kriminellen erpresst.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_CRIMINALS_BLACKMAIL_CITY_1</Tag>
+        <English>Mylord, some criminals have broken into our armory and stolen weapons. They claim that they are just empoverished citizens that cannot even afford to buy food anymore. They demand to be given food and a bit of money. They promise to then lay down their weapons. Otherwise they threaten to attack the citizens.</English>
+        <German>Mylord, einige Kriminelle sind in die Waffenkammer eingebrochen und haben sich bewaffnet. Sie behaupten lediglich verarmte Bürger zu sein, die sich kein Essen mehr leisten können. Sie verlangen von uns etwas Nahrung und Geld. Sie verspechen daraufhin die Waffen niederzulegen. Andernfalls drohen sie damit die Bürger der Stadt anzugreifen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_GIVE</Tag>
+        <English>Give them some food and gold. We will even pardon them if they promise to never seek violence again to solve such issues.</English>
+        <German>Gebt ihnen etwas Essen und Gold. Zusätzlich begnadigen wir sie, wenn sie versprechen nächstes Mal keine Gewalt anzuwenden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_REFUSE</Tag>
+        <English>We will not let criminals blackmail us. The only thing they will get from us is their own death.</English>
+        <German>Wir lassen uns nicht von Kriminellen erpresssen. Das einzige was sie von uns bekommen werden ist ihr eigener tod.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PACIFIC_1</Tag>
         <English>Several scholars in Europe declare that the Earth is a globe. Adventurers and explorers from all nations have set sail to find the western route to Asia.</English>
         <French>De nombreux savants en Europe affirment que la Terre est ronde. Des aventuriers et explorateurs de toutes les nations montent les voiles pour découvrir la route de l'Ouest vers l'Asie.</French>
@@ -816,6 +836,11 @@
         <Tag>TXT_KEY_EVENT_NATIVE_TRADER_ATTACK_HELP</Tag>
         <English>We are being attacked by hostile Natives!</English>
         <German>Wir werden durch Ureinwohner angegriffen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CRIMINALS_REVOLT_HELP</Tag>
+        <English>The poor in our city revolt!</English>
+        <German>Die Armen in unserer Stadt revoltieren!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PACIFIC_DONE</Tag>

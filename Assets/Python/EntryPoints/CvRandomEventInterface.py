@@ -5818,6 +5818,7 @@ def spawnBarbarianUnitOnSamePlotAsCity(argsList):
 def spawnBarbarianUnitAdjacentToCity(argsList):
 	eEvent = argsList[0]
 	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	city = player.getCity(kTriggeredData.iCityId)
 
@@ -5961,4 +5962,71 @@ def canTriggerNativeTraderAttack(argsList):
 
 def getHelpNativeTraderAttack(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_NATIVE_TRADER_ATTACK_HELP", ())
+	return szHelp
+
+######## Criminal Attacks City ###########
+
+def canTriggerCriminalsAttackCity(argsList):
+	ePlayer = argsList[1]
+	iCity = argsList[2]
+	
+	player = gc.getPlayer(ePlayer)
+	city = player.getCity(iCity)
+
+	if city.isNone():
+		return false
+	
+	if not player.isPlayable():
+		return false
+	
+	iHappiness = city.getCityHappiness()
+	iUnhappiness = city.getCityUnHappiness()
+
+	# Happiness Check
+	if iHappiness >= iUnhappiness:
+		return false
+
+	# Food Check
+	eEvent = gc.getInfoTypeForString("EVENT_CRIMINALS_BLACKMAIL_CITY_GIVE")
+	event = gc.getEventInfo(eEvent)
+	iYield = gc.getInfoTypeForString("YIELD_FOOD")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) > quantity :
+		return true
+
+	return false
+
+def applyGiveFood(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	if not player.isHuman():
+		city = player.firstCity(true)[0]
+	iYield1 = gc.getInfoTypeForString("YIELD_FOOD")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	city.changeYieldStored(iYield1, -quantity)
+
+def getHelpGiveFood(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	iYield = gc.getInfoTypeForString("YIELD_FOOD")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	szHelp = ""
+	if event.getGenericParameter(1) <> 0 :
+		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (-quantity, gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
+	return szHelp
+
+def getHelpCriminalsAttackCity(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_CRIMINALS_REVOLT_HELP", ())
 	return szHelp
