@@ -5528,7 +5528,7 @@
             <UnitClass>NONE</UnitClass>
             <iNumFreeUnits>0</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
-            <iUnitExperience>5</iUnitExperience>
+            <iUnitExperience>0</iUnitExperience>
             <iUnitImmobileTurns>0</iUnitImmobileTurns>
             <UnitPromotion/>
             <UnitName/>
