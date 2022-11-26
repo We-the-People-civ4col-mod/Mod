@@ -1578,8 +1578,8 @@ BeginMap
 	num plots written=34816
 	num signs written=0
 	Randomize Features=false
-	Randomize Resources=false
-	Randomize Goodies=false
+	Randomize Resources=true
+	Randomize Goodies=true
 EndMap
 
 ### Plot Info ###
