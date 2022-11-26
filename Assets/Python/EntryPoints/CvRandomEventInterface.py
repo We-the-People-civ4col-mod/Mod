@@ -5673,6 +5673,7 @@ def canTriggerAfricaTradeQuest_TRADINGGOODS_DONE(argsList):
 def checkOwnPlayerUnitOnAdjacentPlotOfUnit(argsList):
 	# this is the Unit that triggered
 	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
 	iOwnUnitClassTypeToCheck = event.getGenericParameter(1)
 	found = unitThatTriggered.isOwnPlayerUnitOnAdjacentPlotOfUnit(iOwnUnitClassTypeToCheck)
@@ -5684,6 +5685,7 @@ def checkOwnPlayerUnitOnAdjacentPlotOfUnit(argsList):
 def checkBarbarianUnitOnAdjacentPlotOfUnit(argsList):
 	# this is the Unit that triggered
 	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
 	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
 	found = unitThatTriggered.isBarbarianUnitOnAdjacentPlotOfUnit(iBarbarianUnitClassTypeToCheck)
@@ -5703,8 +5705,10 @@ def checkBarbarianUnitOnAdjacentPlotOfUnit(argsList):
 
 # same Plot
 def spawnBarbarianUnitOnSamePlotAsUnit(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
 	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
 	iNumHostilesToSpawn = event.getGenericParameter(2)
@@ -5713,8 +5717,10 @@ def spawnBarbarianUnitOnSamePlotAsUnit(argsList):
 
 # adjacent Plot
 def spawnBarbarianUnitAdjacentToUnit(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
 	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
 	iNumHostilesToSpawn = event.getGenericParameter(2)
@@ -5727,8 +5733,10 @@ def spawnBarbarianUnitAdjacentToUnit(argsList):
 
 # same Plot
 def spawnOwnPlayerUnitOnSamePlotAsUnit(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
 	iOwnUnitClassTypeToSpawn = event.getGenericParameter(1)
 	iNumOwnToSpawn = event.getGenericParameter(2)
@@ -5737,8 +5745,10 @@ def spawnOwnPlayerUnitOnSamePlotAsUnit(argsList):
 
 # adjacent Plot
 def spawnOwnPlayerUnitAdjacentToUnit(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
 	iOwnUnitClassTypeToSpawn = event.getGenericParameter(1)
 	iNumOwnToSpawn = event.getGenericParameter(2)
@@ -5752,8 +5762,8 @@ def spawnOwnPlayerUnitAdjacentToUnit(argsList):
 
 # check for own units
 def checkOwnPlayerUnitOnAdjacentPlotOfCity(argsList):
-	# get the City that triggered
-	#kTriggeredData = argsList[0]
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	ePlayer = argsList[1]
 	iCityIdThatTriggered = argsList[2]
 	player = gc.getPlayer(ePlayer)
@@ -5768,8 +5778,8 @@ def checkOwnPlayerUnitOnAdjacentPlotOfCity(argsList):
 
 # check for Barbarian Units
 def checkBarbarianUnitOnAdjacentPlotOfCity(argsList):
-	# get the City that triggered
-	#kTriggeredData = argsList[0]
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	ePlayer = argsList[1]
 	iCityIdThatTriggered = argsList[2]
 	player = gc.getPlayer(ePlayer)
@@ -5793,7 +5803,8 @@ def checkBarbarianUnitOnAdjacentPlotOfCity(argsList):
 
 # same Plot # CAREFUL !!!, will take over City
 def spawnBarbarianUnitOnSamePlotAsCity(argsList):
-	# get the City that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	city = player.getCity(kTriggeredData.iCityId)
@@ -5805,8 +5816,8 @@ def spawnBarbarianUnitOnSamePlotAsCity(argsList):
 
 # adjacent Plot
 def spawnBarbarianUnitAdjacentToCity(argsList):
-	# get the City that triggered
-	kTriggeredData = argsList[1]
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	city = player.getCity(kTriggeredData.iCityId)
 
@@ -5821,7 +5832,8 @@ def spawnBarbarianUnitAdjacentToCity(argsList):
 
 # same Plot
 def spawnOwnPlayerUnitOnSamePlotAsCity(argsList):
-	# get the City that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	city = player.getCity(kTriggeredData.iCityId)
@@ -5833,7 +5845,8 @@ def spawnOwnPlayerUnitOnSamePlotAsCity(argsList):
 
 # adjacent Plot
 def spawnOwnPlayerUnitAdjacentToCity(argsList):
-	# get the City that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	city = player.getCity(kTriggeredData.iCityId)
@@ -5882,7 +5895,8 @@ def checkBarbarianUnitOnAdjacentPlotOfPlot(argsList):
 
 # same Plot
 def spawnBarbarianUnitOnSamePlotAsPlot(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
 	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
 	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
@@ -5892,7 +5906,8 @@ def spawnBarbarianUnitOnSamePlotAsPlot(argsList):
 
 # adjacent Plot
 def spawnBarbarianUnitAdjacentToPlot(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
 	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
 	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
@@ -5906,7 +5921,8 @@ def spawnBarbarianUnitAdjacentToPlot(argsList):
 
 # same Plot
 def spawnOwnPlayerUnitOnSamePlotAsPlot(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
 	ePlayer = kTriggeredData.ePlayer
 	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
@@ -5917,7 +5933,8 @@ def spawnOwnPlayerUnitOnSamePlotAsPlot(argsList):
 
 # adjacent Plot
 def spawnOwnPlayerUnitAdjacentToPlot(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
 	ePlayer = kTriggeredData.ePlayer
 	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
@@ -5925,3 +5942,23 @@ def spawnOwnPlayerUnitAdjacentToPlot(argsList):
 	iNumOwnToSpawn = event.getGenericParameter(2)
 	for iX in range(iNumOwnToSpawn):
 		plotThatTriggered.spawnPlayerUnitOnAdjacentPlot(ePlayer, iOwnUnitClassTypeToSpawn)
+
+######## Native Trader Attack ###########
+
+def canTriggerNativeTraderAttack(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if not player.isPlayable():
+		return false
+	unit = player.getUnit(kTriggeredData.iUnitId)
+	eScout = gc.getInfoTypeForString("PROFESSION_NATIVE_TRADER")
+	if unit.getProfession() != eScout:
+		return false
+	# Read parameter 3 from the event as random chance
+	if TriggerChance(argsList):
+		return true
+	return false
+
+def getHelpNativeTraderAttack(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_NATIVE_TRADER_ATTACK_HELP", ())
+	return szHelp

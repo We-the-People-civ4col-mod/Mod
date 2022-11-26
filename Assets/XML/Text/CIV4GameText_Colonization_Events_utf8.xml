@@ -780,6 +780,21 @@
         <German>[COLOR_WARNING_TEXT](Nicht verfügbar, wenn bereits ein [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_WARNING_TEXT] in Euren Diensten steht.)[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_NATIVE_TRADER_ATTACKED</Tag>
+        <English>A rumour is spreading: A peaceful [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trader was attacked and slaughtered by hostile Natives.</English>
+        <German>Ein Gerücht macht die Runde: Ein friedlicher [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Händler wurde von Ureinwohnern angegriffen und abgeschlachtet.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRADER_ATTACKED_1</Tag>
+        <English>Our native trader is on the way to the nearest village to do his buiseness. He is looking forward to meet the friendly young Native girl from his last visit again, which seems to like to talk to him. However, he also remebers the dangerous looks one of the young Native men gave him when he was talking to her. ... While reminiscing that way he suddenly sees a movement in the corner of his eyes and just at the distance of a hand and arrow flies past his face.</English>
+        <German>Unser Ureinwohnerhändler ist auf dem Weg zum nahgelegenen Dorf um dort seine Geschäfte zu verrichten. Er freut sich darauf das junge freundliche Ureinwohndermädchen wieder zu sehen, dass so gerne mit ihm redet. Aber denkt er auch an die bösen Blicke eines der jungen Ureinwohnermänner, als er mit ihr sprach. ... Während er so in Gedanken ist, sieht er plötzlich einen Bewegung im Augenwinkel und ein Pfeil fliegt nur um eine Handbreite an seinem Gesicht vorbei.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADER_ATTACKED_1</Tag>
+        <English>It is the young Native man from the village. He is attacking.</English>
+        <German>Das ist der junge Ureinwohner aus dem Dorf. Er greift an.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PACIFIC_1</Tag>
         <English>Several scholars in Europe declare that the Earth is a globe. Adventurers and explorers from all nations have set sail to find the western route to Asia.</English>
         <French>De nombreux savants en Europe affirment que la Terre est ronde. Des aventuriers et explorateurs de toutes les nations montent les voiles pour découvrir la route de l'Ouest vers l'Asie.</French>
@@ -796,6 +811,11 @@
         <English>Be the first to explore the western route to Asia. Glory and wealth will be yours!</English>
         <French>Soyez le premier à explorer la route de l'Ouest vers l'Asie. Or et Gloire vous attendra.</French>
         <German>Entdeckt als Erster die westliche Seeroute nach Asien. Ruhm und Reichtümer werden Euch sicher sein.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADER_ATTACK_HELP</Tag>
+        <English>We are being attacked by hostile Natives!</English>
+        <German>Wir werden durch Ureinwohner angegriffen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PACIFIC_DONE</Tag>
