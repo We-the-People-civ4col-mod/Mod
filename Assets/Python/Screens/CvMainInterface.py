@@ -182,14 +182,14 @@ BUILDING_DATA[27] = [72, 86, 20, 10] #Trainstation
 BUILDING_DATA[28] = [32, 89, 20, 7] #Corn
 BUILDING_DATA[29] = [72, 38, 20, 12] #Medical Care
 BUILDING_DATA[30] = [18, 88, 20, 8] #Well
-BUILDING_DATA[31] = [84, 74, 20, 10] #Defense
+BUILDING_DATA[31] = [84, 73, 20, 10] #Defense
 BUILDING_DATA[32] = [44, 56, 20, 12] #Confectioner
 BUILDING_DATA[33] = [16, 56, 20, 12] #Leather Padder
 BUILDING_DATA[34] = [2, 72, 20, 12] #Cooking Oil Trader
 BUILDING_DATA[35] = [58, 72, 20, 12] #Peanut Roaster
 BUILDING_DATA[36] = [72, 56, 20, 12] #Potter
 BUILDING_DATA[37] = [72, 20, 20, 12] #Tailor
-BUILDING_DATA[38] = [16, 72, 20, 12] #Baker
+BUILDING_DATA[38] = [16, 74, 20, 12] #Baker
 BUILDING_DATA[39] = [60, 89, 20, 7] #Statue
 BUILDING_DATA[40] = [45, 88, 20, 10] #Graveyard
 
