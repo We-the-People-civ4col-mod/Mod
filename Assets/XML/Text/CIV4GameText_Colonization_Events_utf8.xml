@@ -815,6 +815,31 @@
         <German>Wir lassen uns nicht von Kriminellen erpresssen. Das einzige was sie von uns bekommen werden ist ihr eigener tod.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_SILVER_MINE_ROBBERY</Tag>
+        <English>A rumour is spreading: A silver mine is regularly being robbed by buccanneers.</English>
+        <German>Ein Gerücht macht die Runde: Eine Silbermine wird regelmäßig von Bukkannieren ausgeraubt.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SILVER_MINE_ROBBERY_1</Tag>
+        <English>Mylord, we hear reports from the foreman of one of our silver mines that buccanneers regularly bribe some of the workers to let them steal some of the mined silver.</English>
+        <German>Mylord, einer der Vorarbetier einer unserer Silberminen berichtet, dass Bukkanniere regelmäßig die Minenarbeiter bestechen, damit diese sie einen Teil des Silbers stehlen lassen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_1</Tag>
+        <English>This must be stopped immediately! Gather some men from the Militia and pay them gold guard the mine.</English>
+        <German>Das muss sofort aufhören! Versammelt einige Männer aus der Miliz und zahlt ihnen Gold um die Mine zu bewachen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_2</Tag>
+        <English>These criminals must pay for this! Search them and put an end to their lifes.</English>
+        <German>Diese Kriminellen werden dafür bezahlen! Sucht sie und setzt ihrem Leben ein Ende.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_3</Tag>
+        <English>Let us solve this peacefully and with as little cost as possible. Offer the miners some gold so they will guard the silver themselves.</English>
+        <German>Lasst uns dies friedlich und mit so wenig Kosten wie möglich. Bietet den Minenarbeitern etwas Gold, damit sie das Silber selbst bewachen.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PACIFIC_1</Tag>
         <English>Several scholars in Europe declare that the Earth is a globe. Adventurers and explorers from all nations have set sail to find the western route to Asia.</English>
         <French>De nombreux savants en Europe affirment que la Terre est ronde. Des aventuriers et explorateurs de toutes les nations montent les voiles pour découvrir la route de l'Ouest vers l'Asie.</French>
@@ -841,6 +866,16 @@
         <Tag>TXT_KEY_EVENT_CRIMINALS_REVOLT_HELP</Tag>
         <English>The poor in our city revolt!</English>
         <German>Die Armen in unserer Stadt revoltieren!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_BUCCANNERS_ATTACK_MINE_HELP</Tag>
+        <English>Our silver mine is attacked by Buccanneers!</English>
+        <German>Unseren Silbermine wird von Buccannieren angegriffen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_MILITIA_DEFENDS_MINE_HELP</Tag>
+        <English>Our silver mine will be guarded by our Militia!</English>
+        <German>Unseren Silbermine wird von unserer Miliz bewacht!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PACIFIC_DONE</Tag>

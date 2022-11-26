@@ -6030,3 +6030,14 @@ def getHelpGiveFood(argsList):
 def getHelpCriminalsAttackCity(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_CRIMINALS_REVOLT_HELP", ())
 	return szHelp
+
+
+######## Buccanners attack Silver Mine ###########
+
+def getHelpBuccanneersAttackMine(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_BUCCANNERS_ATTACK_MINE_HELP", ())
+	return szHelp
+
+def getHelpMilitiaDefend(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_MILITIA_DEFENDS_MINE_HELP", ())
+	return szHelp
