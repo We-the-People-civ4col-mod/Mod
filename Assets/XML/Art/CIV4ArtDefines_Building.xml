@@ -154,7 +154,7 @@
             <Type>ART_DEF_BUILDING_NEWSPAPER</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/News_letter_better_scaled.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,2,5</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.7</fScale>
             <fInterfaceScale>0.45</fInterfaceScale>
@@ -2459,50 +2459,50 @@
             <Type>ART_DEF_BUILDING_GRAVEYARD</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Graveyard_City.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,1,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>10.0</fScale>
+            <fScale>12.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Graveyard/barracks.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Graveyard_Button.dds</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,8,14</Button>
         </BuildingArtInfo>
         <!-- New Buildings WTP: Confectioner -->
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_CONFECTIONER_HOUSE</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Confectioner_House_City.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,4,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>0.45</fScale>
+            <fScale>0.40</fScale>
             <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Confectioner/roesterei_house.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Confectioner_House_Button.dds</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,3,18</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_CONFECTIONER_SHOP</Type>
-            <LSystem>LSYSTEM_2x1</LSystem>
+            <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Confectioner_Shop_City.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,5,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>0.45</fScale>
+            <fScale>0.40</fScale>
             <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Confectioner/roesterei.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Confectioner_Shop_Button.dds</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,4,18</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_CONFECTIONER_FACTORY</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Confectionery_City.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,6,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>0.45</fScale>
             <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Confectioner/roesterei_fabrik.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Confectionery_Button.dds</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,5,18</Button>
         </BuildingArtInfo>
         <!-- New Buildings WTP: Leather Padder -->
         <BuildingArtInfo>
