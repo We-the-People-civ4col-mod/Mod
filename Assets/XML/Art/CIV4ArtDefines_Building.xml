@@ -2546,7 +2546,7 @@
             <Type>ART_DEF_BUILDING_OIL_TRADER_HOUSE</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Oil_Trader_House_City.dds</CityTexture>
+            <CityTexture>Art/Interface/Screens/city_management/Oil_Trader_House_City.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>0.6</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
@@ -2558,7 +2558,7 @@
             <Type>ART_DEF_BUILDING_OIL_TRADER_SHOP</Type>
             <LSystem>LSYSTEM_2x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Oil_Trader_Shop_City.dds</CityTexture>
+            <CityTexture>Art/Interface/Screens/city_management/Oil_Trader_Shop_City.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>0.6</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
@@ -2570,7 +2570,7 @@
             <Type>ART_DEF_BUILDING_OIL_TRADER_FACTORY</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Oil_Factory_City.dds</CityTexture>
+            <CityTexture>Art/Interface/Screens/city_management/Oil_Factory_City.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>0.6</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
