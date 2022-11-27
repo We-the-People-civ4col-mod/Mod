@@ -3489,6 +3489,7 @@ int CvCity::getFood() const
 void CvCity::setFood(int iNewValue)
 {
 	setYieldStored(YIELD_FOOD, iNewValue);
+	FAssert(getYieldStored(YIELD_FOOD) >= 0);
 }
 
 
