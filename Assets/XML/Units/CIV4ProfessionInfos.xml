@@ -3846,7 +3846,7 @@
             </YieldsConsumed>
             <Button>Art/interface/buttons/New_Profession_Buttons/Pig_Breeder.dds</Button>
             <bUseLbD>1</bUseLbD>
-            <ExpertUnit>UNITCLASS_BREEDER</ExpertUnit>
+            <ExpertUnit>UNITCLASS_HERDER</ExpertUnit>
             <iLbDLearnLevel>1</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
