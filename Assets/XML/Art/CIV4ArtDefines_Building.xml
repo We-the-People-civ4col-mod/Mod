@@ -2509,37 +2509,37 @@
             <Type>ART_DEF_BUILDING_LEATHER_PADDER_HOUSE</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Leather_Tailor_House_City.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,7,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.2</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Leather_Padder/coatmaker_01.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Leather_Tailor_House_Button.dds</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,6,18</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_LEATHER_PADDER_SHOP</Type>
             <LSystem>LSYSTEM_2x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Leather_Tailor_Shop_City.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,8,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.2</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Leather_Padder/coatmaker_02.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Leather_Tailor_Shop_Button.dds</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,7,18</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_LEATHER_PADDER_FACTORY</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Leather_Coat_Factory_City.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,8,7</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.2</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Leather_Padder/coatmaker_03.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Leather_Coat_Factory_Button.dds</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,8,18</Button>
         </BuildingArtInfo>
         <!-- New Buildings WTP: Oil Trader -->
         <BuildingArtInfo>
