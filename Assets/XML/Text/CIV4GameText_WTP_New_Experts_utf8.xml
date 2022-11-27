@@ -26,12 +26,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BREEDER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Poultry farmers raise chickens, ducks, turkeys and geese for meat and eggs. Children can look after a pen with few chickens. When the flock gets bigger wolves and bobcats discover an opportunity, so poultry breeding turns into an adult job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BREEDER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Chickens are an excellent food source. They travel well so they often provide the first domestic protein in a new colony.[NEWLINE]When assigned to the Poultry Farmer profession, the expert is capable of producing double the poultry in the same amount of time it would take a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- CASSAVA_PLANTER -->
@@ -55,12 +55,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Cassava roots are a staple food in tropical and subtropical climates. Cassava can be either sweet or bitter, with the bitter more pest-resistant. Proper preparation is important to avoid the risk of acute cyanide intoxication.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Cassava is drought-resistant. It grows on marginal soils. It's usually boiled, but the starch can be extracted for tapioca. In Brazil it's grated and dried into a coarse flour.[NEWLINE]When assigned to the Cassava Planter profession, the expert is capable of turning out double the amount of cassava in the same amount of time it would take a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- COCHINEAL_COLLECTOR -->
@@ -84,12 +84,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The cochineal insects found on prickly pear cactus pads produce carminic acid, a predator-deterring chemical. When mixed with aluminum or calcium salts cochineal becomes carmine dye. Collectors gather the bugs by brushing them off the cactus pads.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Bright red carmine dye, used in the Americas for colouring fabrics, became an important export good in the 16th century. Cochineal insects are found in the areas now known as Peru, Mexico, Chile and Argentina.[NEWLINE]When assigned to the Cochineal Collector profession, the expert can gather double the quantity of cochineal in the same amount of time it would take a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- LINEN_PLANTER -->
@@ -113,12 +113,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LINEN_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Linen fabrics woven from wild flax date back over 30,000 years. Devout colonists all know that linen is frequently mentioned in the Bible.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LINEN_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Linen is comfortable to wear in hot weather. The fabric is strong and absorbent, though it does wrinkle.[NEWLINE]When assigned to the Flax Planter profession, the expert can harvest double the quantity of flax in the same amount of time it would take a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- LOGWOOD_COLLECTOR -->
@@ -142,13 +142,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The logwood tree was of great economic importance in the colonial era when it was exported to Europe for dyeing fabrics. Defying Spanish territorial claims, foreign sailors cut and collected trees for shipment back to Europe. Spain responded by commissioning privateers to attack them.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_STRATEGY</Tag>
         <English>TBD</English>
-        <German>TBD</German>
+        <German>Under attack from Spanish privateers, logwood cutters formed their own pirate crews to raid the Spanish. Blackbeard turned captured logwood sloops into pirate ships.[NEWLINE]When assigned to the Logwood Collector profession, the expert can cut down twice as much logwood in the same time it would take a regular colonist.</German>
     </TEXT>
     <!-- LOGWOOD_OLIVES_PLANTER -->
     <TEXT>
@@ -171,12 +171,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVES_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Olive trees produce either table olives or olives for oil. Spanish colonists brought the olive to the New World in 1560, where its cultivation prospered in present-day Peru, Chile, and Argentina. In the 18th century Spanish missionaries planted olive trees in California.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVES_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>The olive is a small tree originating in the Mediterranean basin. Olives are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars.[NEWLINE]When assigned to the Olive Planter profession, the expert can gather double the olives in the same amount of time it would take a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- PEANUT_PLANTER -->
@@ -200,12 +200,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUT_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Peanuts are legumes farmed for their edible seeds. They're widely grown in the tropics and subtropics by both small and large commercial producers. The peanut is both a grain legume and, due to its high oil content, an oil crop.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUT_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Boiled peanuts are a popular snack in the areas where they're grown. They can be used to treat malnutrition and are especially important for feeding slave populations. Peanuts are usually roasted before being shipped.[NEWLINE]When assigned to the Peanut Planter profession, the expert can gather double the peanuts in the same amount of time it would take a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- PEAT_CUTTER -->
