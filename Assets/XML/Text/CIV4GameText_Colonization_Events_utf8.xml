@@ -815,6 +815,26 @@
         <German>Wir lassen uns nicht von Kriminellen erpresssen. Das einzige was sie von uns bekommen werden ist ihr eigener tod.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_HUNTER_OFFERS_SERVICE</Tag>
+        <English>A rumour is spreading: Escaped slaves near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</English>
+        <German>Ein Gerücht macht die Runde: Entflohene Sklaven in der Nähe von [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_HUNTER_OFFERS_SERVICE_1</Tag>
+        <English>Mylord, a slave hunter has heared that escaped slaves were sighted near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT]. He offers us his services.</English>
+        <German>Mylord, ein Sklavenjäger hat gehört, dass entflohene Sklaven in der Nähen von [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] gesichtet wurden. Er bietet uns seine Dienste an.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SLAVE_HUNTER_SERVICE_ACCEPT</Tag>
+        <English>We will hire him. Tell him to bring these slaves back alive. They are valuable.</English>
+        <German>Wir werden seine Dienste in Anspruch nehmen. Er soll diese Sklaven alle lebend zurück bringen, da sie wertvoll sind.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SLAVE_HUNTER_SERVICE_REFUSE</Tag>
+        <English>We do not need his services. Our militia can handle this as well.</English>
+        <German>Wir benötigen seine Dienste nicht. Unsere Miliz kann der Situation auch Herr werden.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SILVER_MINE_ROBBERY</Tag>
         <English>A rumour is spreading: A silver mine is regularly being robbed by buccanneers.</English>
         <German>Ein Gerücht macht die Runde: Eine Silbermine wird regelmäßig von Bukkannieren ausgeraubt.</German>
@@ -859,23 +879,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_NATIVE_TRADER_ATTACK_HELP</Tag>
-        <English>We are being attacked by hostile Natives!</English>
-        <German>Wir werden durch Ureinwohner angegriffen!</German>
+        <English>[ICON_BULLET]We are being attacked by hostile Natives!</English>
+        <German>[ICON_BULLET]Wir werden durch Ureinwohner angegriffen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CRIMINALS_REVOLT_HELP</Tag>
-        <English>The poor in our city revolt!</English>
-        <German>Die Armen in unserer Stadt revoltieren!</German>
+        <English>[ICON_BULLET]The poor in our city revolt!</English>
+        <German>[ICON_BULLET]Die Armen in unserer Stadt revoltieren!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BUCCANNERS_ATTACK_MINE_HELP</Tag>
-        <English>Our silver mine is attacked by Buccanneers!</English>
-        <German>Unseren Silbermine wird von Buccannieren angegriffen!</German>
+        <English>[ICON_BULLET]Our silver mine is attacked by Buccanneers!</English>
+        <German>[ICON_BULLET]Unseren Silbermine wird von Buccannieren angegriffen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MILITIA_DEFENDS_MINE_HELP</Tag>
-        <English>Our silver mine will be guarded by our Militia!</English>
-        <German>Unseren Silbermine wird von unserer Miliz bewacht!</German>
+        <English>[ICON_BULLET]Our silver mine will be guarded by our Militia!</English>
+        <German>[ICON_BULLET]Unseren Silbermine wird von unserer Miliz bewacht!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PACIFIC_DONE</Tag>

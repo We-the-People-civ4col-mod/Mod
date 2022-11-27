@@ -5771,7 +5771,7 @@ def checkOwnPlayerUnitOnAdjacentPlotOfCity(argsList): ### When you copy rename s
 	ePlayer = argsList[1]
 	iCityIdThatTriggered = argsList[2]
 	player = gc.getPlayer(ePlayer)
-	city = player.getCity(iCityId)
+	city = player.getCity(iCityIdThatTriggered)
 
 	iOwnUnitClassTypeToCheck = event.getGenericParameter(1)
 	found = city.isOwnPlayerUnitOnAdjacentPlotOfCity(iOwnUnitClassTypeToCheck)
@@ -5787,7 +5787,7 @@ def checkBarbarianUnitOnAdjacentPlotOfCity(argsList): ### When you copy rename s
 	ePlayer = argsList[1]
 	iCityIdThatTriggered = argsList[2]
 	player = gc.getPlayer(ePlayer)
-	city = player.getCity(iCityId)
+	city = player.getCity(iCityIdThatTriggered)
 
 	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
 	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck)
@@ -6048,3 +6048,29 @@ def getHelpBuccanneersAttackMine(argsList):
 def getHelpMilitiaDefend(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_MILITIA_DEFENDS_MINE_HELP", ())
 	return szHelp
+
+######## Slave Hunter Offers Service ###########
+
+def checkRunawaySlavesOnAdjacentPlotOfCity(argsList): ### When you copy rename specically for your actuall EventTrigger
+	eEvent = gc.getInfoTypeForString("EVENT_SLAVE_HUNTER_SERVICE_ACCEPT") ### When you copy put in actual Event to read parameters
+	event = gc.getEventInfo(eEvent)
+	ePlayer = argsList[1]
+	iCityIdThatTriggered = argsList[2]
+	player = gc.getPlayer(ePlayer)
+	city = player.getCity(iCityIdThatTriggered)
+
+	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
+	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck)
+	if (found):
+		return true
+
+	iBarbarianUnitClassTypeToCheck2 = event.getGenericParameter(2)
+	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck2)
+	if (found):
+		return true
+
+	iBarbarianUnitClassTypeToCheck3 = event.getGenericParameter(2)
+	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck3)
+	if (found):
+		return true
+	return false
