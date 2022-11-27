@@ -7138,8 +7138,14 @@ void CvCity::doGrowth()
 			if (NO_UNIT != eUnit)
 			{
 				CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession(), getX_INLINE(), getY_INLINE());
-
-				changeFood(-(std::max(0, (growthThreshold() - getFoodKept()))));
+				// WTP, ray, making this error save to prevent negative Storage bug - START
+				int iFoodUsedForGrowth = growthThreshold() - getFoodKept();
+				if (iFoodUsedForGrowth > getFood())
+				{
+					iFoodUsedForGrowth = getFood();
+				}
+				changeFood(-(std::max(0, iFoodUsedForGrowth)));
+				// WTP, ray, making this error save to prevent negative Storage bug - END
 			}
 
 			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_GROWTH", getNameKey()), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
