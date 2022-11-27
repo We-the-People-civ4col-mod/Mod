@@ -1409,6 +1409,8 @@ def applyRumBlossom1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
 	city.changeYieldStored(iYield, quantity)
 	nativecity.changeYieldStored(iYield, -quantity)
 
@@ -1567,6 +1569,8 @@ def applyPirates3(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
 	city.changeYieldStored(iYield, quantity)
 
 def applyPirates4(argsList):
@@ -1579,6 +1583,8 @@ def applyPirates4(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
 	city.changeYieldStored(iYield, quantity)
 
 def getHelpPirates3(argsList):
@@ -2208,6 +2214,8 @@ def applyRequisitionDeliver(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
 	city.changeYieldStored(iYield, quantity)
 	king.setYieldBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
 	
@@ -2319,7 +2327,7 @@ def canTriggerHorsethief(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
-	if (city.getYieldStored(iYield) + quantity) < 1:
+	if city.getYieldStored(iYield) < -quantity:
 		return false
 	return true
 	
@@ -2338,7 +2346,7 @@ def canTriggerCattlethief(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
-	if (city.getYieldStored(iYield) + quantity) < 1:
+	if city.getYieldStored(iYield) < -quantity:
 		return false
 	return true
 
@@ -2352,6 +2360,8 @@ def applyHorsethief_2(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
 	city.changeYieldStored(iYield, quantity)
 	return true
 	
@@ -2365,6 +2375,8 @@ def applyCattlethief_1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
 	city.changeYieldStored(iYield, quantity)
 	return true
 	
@@ -2544,6 +2556,8 @@ def applyBeerRobbery1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return
 	city.changeYieldStored(iYield, quantity)
 	othercity.changeYieldStored(iYield, -quantity)
 
@@ -2620,6 +2634,8 @@ def applyWineTheft1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return
 	city.changeYieldStored(iYield, quantity)
 
 def getHelpWineTheft1(argsList):
@@ -2672,6 +2688,8 @@ def applyLuxuryGoods1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return
 	city.changeYieldStored(iYield, quantity)
 
 def getHelpLuxuryGoods1(argsList):
@@ -2826,6 +2844,8 @@ def applyHorseDeal1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return
 	city.changeYieldStored(iYield, quantity)
 
 def getHelpHorseDeal1(argsList):
@@ -2878,6 +2898,8 @@ def applyWildAnimal1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return
 	city.changeYieldStored(iYield, quantity)
 
 def getHelpWildAnimal1(argsList):
@@ -2955,6 +2977,8 @@ def applyCocaEvent1(argsList):
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
 	iYield = gc.getInfoTypeForString("YIELD_COCA_LEAVES")
+	if city.getYieldStored(iYield) < -quantity :
+		return
 	city.changeYieldStored(iYield, quantity)
 
 def getHelpCocaEvent1(argsList):
@@ -6000,10 +6024,10 @@ def canTriggerCriminalsAttackCity(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
-	if city.getYieldStored(iYield) > quantity :
-		return true
+	if city.getYieldStored(iYield) < quantity :
+		return false
 
-	return false
+	return true
 
 def applyGiveFood(argsList):
 	eEvent = argsList[0]
@@ -6017,6 +6041,8 @@ def applyGiveFood(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < quantity :
+		return false
 	city.changeYieldStored(iYield1, -quantity)
 
 def getHelpGiveFood(argsList):
