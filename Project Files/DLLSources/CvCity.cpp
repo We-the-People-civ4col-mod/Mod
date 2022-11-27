@@ -540,19 +540,24 @@ void CvCity::doTurn()
 	
 	if (!isNative())
 	{
-		doExtraCityDefenseAttacks(); // R&R, ray, Extra City Defense Attacks
-		doEntertainmentBuildings(); // R&R, ray, Entertainment Buildings
-		doLbD(); // TAC - LBD - Ray - START
-		doPrices(); // R&R, Androrc Domestic Market
-		doCityHealth(); // R&R, ray, Health
-		// WTP, ray, Happiness - START
-		updateCityHappiness();
-		updateCityUnHappiness();
-		changeCityTimerFestivitiesOrUnrest(-1);
-		doCityHappiness();
-		doCityUnHappiness();
-		// WTP, ray, Happiness - END
-		checkForDomesticDemandEvent(); // WTP, ray Domestic Market Events - START
+		// WTP, ray fixing Asserts by functions being called during disorder - START
+		// we do not call these anymore if in disorder
+		if (!isDisorder())
+		{
+			doExtraCityDefenseAttacks(); // R&R, ray, Extra City Defense Attacks
+			doEntertainmentBuildings(); // R&R, ray, Entertainment Buildings
+			doLbD(); // TAC - LBD - Ray - START
+			doPrices(); // R&R, Androrc Domestic Market
+			doCityHealth(); // R&R, ray, Health
+			// WTP, ray, Happiness - START
+			updateCityHappiness();
+			updateCityUnHappiness();
+			changeCityTimerFestivitiesOrUnrest(-1);
+			doCityHappiness();
+			doCityUnHappiness();
+			// WTP, ray, Happiness - END
+			checkForDomesticDemandEvent(); // WTP, ray Domestic Market Events - START
+		}
 	}
 	
 	doDecay();
