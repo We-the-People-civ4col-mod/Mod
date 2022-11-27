@@ -5664,14 +5664,16 @@ def canTriggerAfricaTradeQuest_TRADINGGOODS_DONE(argsList):
 ######## SPAWNING UNITS - friendly and hostile ########
 #######################################################
 
-### PART A1) UNIT Trigger Check Methods
+### PART A1) UNIT Trigger Check Methods Blueprints
 #######################################################
 ### Those are for the UnitTrigger Triggers to check ###
+### ! Just Blueprints to be implemented by Trigger !###
 #######################################################
 
 # check for own units
-def checkOwnPlayerUnitOnAdjacentPlotOfUnit(argsList):
-	# this is the Unit that triggered
+def checkOwnPlayerUnitOnAdjacentPlotOfUnit(argsList): ### When you copy rename specically for your actuall EventTrigger
+	eEvent = gc.getInfoTypeForString("EVENT_THAT_STORES_THE_PARAMETERS_TO_CHECK") ### When you copy put in actual Event to read parameters
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
@@ -5682,8 +5684,9 @@ def checkOwnPlayerUnitOnAdjacentPlotOfUnit(argsList):
 	return false
 
 # check for Barbarian Units
-def checkBarbarianUnitOnAdjacentPlotOfUnit(argsList):
-	# this is the Unit that triggered
+def checkBarbarianUnitOnAdjacentPlotOfUnit(argsList): ### When you copy rename specically for your actuall EventTrigger
+	eEvent = gc.getInfoTypeForString("EVENT_THAT_STORES_THE_PARAMETERS_TO_CHECK") ### When you copy put in actual Event to read parameters
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
@@ -5758,11 +5761,12 @@ def spawnOwnPlayerUnitAdjacentToUnit(argsList):
 ### PART B1) CITY Trigger Check Methods
 #######################################################
 ### Those are for the CityTrigger Triggers to check ###
+### ! Just Blueprints to be implemented by Trigger !###
 #######################################################
 
 # check for own units
-def checkOwnPlayerUnitOnAdjacentPlotOfCity(argsList):
-	eEvent = argsList[0]
+def checkOwnPlayerUnitOnAdjacentPlotOfCity(argsList): ### When you copy rename specically for your actuall EventTrigger
+	eEvent = gc.getInfoTypeForString("EVENT_THAT_STORES_THE_PARAMETERS_TO_CHECK") ### When you copy put in actual Event to read parameters
 	event = gc.getEventInfo(eEvent)
 	ePlayer = argsList[1]
 	iCityIdThatTriggered = argsList[2]
@@ -5777,8 +5781,8 @@ def checkOwnPlayerUnitOnAdjacentPlotOfCity(argsList):
 
 
 # check for Barbarian Units
-def checkBarbarianUnitOnAdjacentPlotOfCity(argsList):
-	eEvent = argsList[0]
+def checkBarbarianUnitOnAdjacentPlotOfCity(argsList): ### When you copy rename specically for your actuall EventTrigger
+	eEvent = gc.getInfoTypeForString("EVENT_THAT_STORES_THE_PARAMETERS_TO_CHECK") ### When you copy put in actual Event to read parameters
 	event = gc.getEventInfo(eEvent)
 	ePlayer = argsList[1]
 	iCityIdThatTriggered = argsList[2]
@@ -5860,11 +5864,13 @@ def spawnOwnPlayerUnitAdjacentToCity(argsList):
 ### PART C1) PLOT Trigger Check Methods
 #######################################################
 ### Those are for the PlotTrigger Triggers to check ###
+### ! Just Blueprints to be implemented by Trigger !###
 #######################################################
 
 # check for own units
-def checkOwnPlayerUnitOnAdjacentPlotOfPlot(argsList):
-	# this is the Unit that triggered
+def checkOwnPlayerUnitOnAdjacentPlotOfPlot(argsList): ### When you copy rename specically for your actuall EventTrigger
+	eEvent = gc.getInfoTypeForString("EVENT_THAT_STORES_THE_PARAMETERS_TO_CHECK") ### When you copy put in actual Event to read parameters
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[0]
 	ePlayer = kTriggeredData.ePlayer
 	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
@@ -5875,8 +5881,9 @@ def checkOwnPlayerUnitOnAdjacentPlotOfPlot(argsList):
 	return false
 
 # check for Barbarian Units
-def checkBarbarianUnitOnAdjacentPlotOfPlot(argsList):
-	# this is the Unit that triggered
+def checkBarbarianUnitOnAdjacentPlotOfPlot(argsList): ### When you copy rename specically for your actuall EventTrigger
+	eEvent = gc.getInfoTypeForString("EVENT_THAT_STORES_THE_PARAMETERS_TO_CHECK") ### When you copy put in actual Event to read parameters
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[0]
 	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
 	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
@@ -5885,7 +5892,7 @@ def checkBarbarianUnitOnAdjacentPlotOfPlot(argsList):
 		return true
 	return false
 
-### PART  2) PLOT Trigger Spawn Methods
+### PART C2) PLOT Trigger Spawn Methods
 #####################################################
 ### Those are for the PlotTrigger Events to spawn ###
 #####################################################
