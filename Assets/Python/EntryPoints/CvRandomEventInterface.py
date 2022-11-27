@@ -5758,7 +5758,7 @@ def spawnOwnPlayerUnitAdjacentToUnit(argsList):
 	for iX in range(iNumOwnToSpawn):
 		unitThatTriggered.spawnOwnPlayerUnitOnAdjacentPlotOfUnit(iOwnUnitClassTypeToSpawn)
 
-### PART B1) CITY Trigger Check Methods
+### PART B1) CITY Trigger Check Methods Blueprints
 #######################################################
 ### Those are for the CityTrigger Triggers to check ###
 ### ! Just Blueprints to be implemented by Trigger !###
@@ -5861,7 +5861,7 @@ def spawnOwnPlayerUnitAdjacentToCity(argsList):
 	for iX in range(iNumOwnToSpawn):
 		city.spawnOwnPlayerUnitOnAdjacentPlotOfCity(iOwnUnitClassTypeToSpawn)
 
-### PART C1) PLOT Trigger Check Methods
+### PART C1) PLOT Trigger Check Methods Blueprints
 #######################################################
 ### Those are for the PlotTrigger Triggers to check ###
 ### ! Just Blueprints to be implemented by Trigger !###
