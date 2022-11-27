@@ -1047,7 +1047,7 @@
             <iPortRoyalBuyPriceLow>9</iPortRoyalBuyPriceLow>
             <iPortRoyalBuyPriceHigh>10</iPortRoyalBuyPriceHigh>
             <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
-            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeBuyPrice>12</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
             <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
             <iNativeHappy>0</iNativeHappy>
@@ -1088,7 +1088,7 @@
             <iPortRoyalBuyPriceLow>9</iPortRoyalBuyPriceLow>
             <iPortRoyalBuyPriceHigh>10</iPortRoyalBuyPriceHigh>
             <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
-            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeBuyPrice>12</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
             <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
             <iNativeHappy>0</iNativeHappy>
@@ -1170,7 +1170,7 @@
             <iPortRoyalBuyPriceLow>7</iPortRoyalBuyPriceLow>
             <iPortRoyalBuyPriceHigh>8</iPortRoyalBuyPriceHigh>
             <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
-            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeBuyPrice>8</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
             <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
             <iNativeHappy>3</iNativeHappy>
@@ -2183,7 +2183,7 @@
             <Icon>Art/interface/buttons/New_Yieds_Icons/Vanilla_Pods_Goods_Icon.dds</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,5,1</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Vanilla_Pods_Goods_Button.dds</Button>
-        </YieldInfo>                
+        </YieldInfo>
         <YieldInfo>
             <Type>YIELD_BARLEY</Type>
             <Description>TXT_KEY_YIELD_BARLEY</Description>
@@ -2477,15 +2477,15 @@
             <Civilopedia>TXT_KEY_YIELD_WILD_FEATHERS_PEDIA</Civilopedia>
             <bCargo>1</bCargo>
             <bIsExportYield>1</bIsExportYield>
-            <iBuyPriceLow>3</iBuyPriceLow>
-            <iBuyPriceHigh>4</iBuyPriceHigh>
+            <iBuyPriceLow>4</iBuyPriceLow>
+            <iBuyPriceHigh>5</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
             <iSellPriceDifference>1</iSellPriceDifference>
             <iPriceChangeThreshold>1000</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
             <iEuropeVolumeAttrition>-3</iEuropeVolumeAttrition>
-            <iAfricaBuyPriceLow>2</iAfricaBuyPriceLow>
-            <iAfricaBuyPriceHigh>3</iAfricaBuyPriceHigh>
+            <iAfricaBuyPriceLow>3</iAfricaBuyPriceLow>
+            <iAfricaBuyPriceHigh>4</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
             <iPortRoyalBuyPriceLow>3</iPortRoyalBuyPriceLow>
             <iPortRoyalBuyPriceHigh>4</iPortRoyalBuyPriceHigh>
@@ -2886,7 +2886,7 @@
             <CombiIcon>Art/interface/buttons/New_Yieds_Icons/Stable_Combi_Icon.dds</CombiIcon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,1,2</HighlightIcon>
             <Button>Art/interface/buttons/New_Yields_Buttons/Cheese_Goods_Button.dds</Button>
-        </YieldInfo>        
+        </YieldInfo>
         <YieldInfo>
             <Type>YIELD_CIGARS</Type>
             <Description>TXT_KEY_YIELD_CIGARS</Description>
@@ -2990,7 +2990,7 @@
             <iPortRoyalBuyPriceLow>10</iPortRoyalBuyPriceLow>
             <iPortRoyalBuyPriceHigh>12</iPortRoyalBuyPriceHigh>
             <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
-            <iNativeBuyPrice>8</iNativeBuyPrice>
+            <iNativeBuyPrice>9</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
             <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
             <iNativeHappy>1</iNativeHappy>
@@ -3074,7 +3074,7 @@
             <iPortRoyalBuyPriceLow>18</iPortRoyalBuyPriceLow>
             <iPortRoyalBuyPriceHigh>19</iPortRoyalBuyPriceHigh>
             <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
-            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeBuyPrice>16</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
             <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
             <iNativeHappy>0</iNativeHappy>
@@ -3116,7 +3116,7 @@
             <iPortRoyalBuyPriceLow>18</iPortRoyalBuyPriceLow>
             <iPortRoyalBuyPriceHigh>19</iPortRoyalBuyPriceHigh>
             <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
-            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeBuyPrice>16</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
             <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
             <iNativeHappy>0</iNativeHappy>
@@ -3410,7 +3410,7 @@
             <iPortRoyalBuyPriceLow>11</iPortRoyalBuyPriceLow>
             <iPortRoyalBuyPriceHigh>12</iPortRoyalBuyPriceHigh>
             <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
-            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeBuyPrice>9</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
             <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
             <iNativeHappy>0</iNativeHappy>
@@ -3828,7 +3828,7 @@
             <iPortRoyalBuyPriceLow>16</iPortRoyalBuyPriceLow>
             <iPortRoyalBuyPriceHigh>22</iPortRoyalBuyPriceHigh>
             <iPortRoyalSellPriceDifference>4</iPortRoyalSellPriceDifference>
-            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeBuyPrice>12</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
             <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
             <iNativeHappy>0</iNativeHappy>
@@ -3869,7 +3869,7 @@
             <iPortRoyalBuyPriceLow>14</iPortRoyalBuyPriceLow>
             <iPortRoyalBuyPriceHigh>15</iPortRoyalBuyPriceHigh>
             <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
-            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeBuyPrice>10</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
             <iNativeConsumptionPercent>50</iNativeConsumptionPercent>
             <iNativeHappy>0</iNativeHappy>
@@ -3993,7 +3993,7 @@
             <iPortRoyalBuyPriceLow>12</iPortRoyalBuyPriceLow>
             <iPortRoyalBuyPriceHigh>14</iPortRoyalBuyPriceHigh>
             <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
-            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeBuyPrice>9</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
             <iNativeConsumptionPercent>40</iNativeConsumptionPercent>
             <iNativeHappy>0</iNativeHappy>
@@ -4034,7 +4034,7 @@
             <iPortRoyalBuyPriceLow>14</iPortRoyalBuyPriceLow>
             <iPortRoyalBuyPriceHigh>16</iPortRoyalBuyPriceHigh>
             <iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
-            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeBuyPrice>9</iNativeBuyPrice>
             <iNativeSellPrice>-1</iNativeSellPrice>
             <iNativeConsumptionPercent>40</iNativeConsumptionPercent>
             <iNativeHappy>0</iNativeHappy>

@@ -215,6 +215,24 @@
         <English>????</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BUILD_PEAT_PIT</Tag>
+        <English>Build a [LINK=IMPROVEMENT_QUARRY]peat pit[\LINK]</English>
+        <German>[LINK=IMPROVEMENT_QUARRY]Torfgrube[\LINK] anlegen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_PEAT_PIT_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_CLAY_PIT</Tag>
+        <English>Build a [LINK=IMPROVEMENT_QUARRY]clay pit[\LINK]</English>
+        <German>[LINK=IMPROVEMENT_QUARRY]Lehmgrube[\LINK] anlegen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_CLAY_PIT_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILD_RAILROAD</Tag>
         <English>Build plastered country roads</English>
         <French>Construire une route pavée</French>

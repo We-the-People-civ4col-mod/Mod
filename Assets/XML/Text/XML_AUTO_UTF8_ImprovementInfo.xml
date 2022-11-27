@@ -1263,4 +1263,124 @@
         <English>[ICON_BULLET]Spawns outlaws who guard their hideout.</English>
         <German>[ICON_BULLET]Erzeugt Revoltierende Sklaven und Kriminelle als Beschützer.</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_CLAY_PIT</Tag>
+        <English>Clay Pit</English>
+        <French>
+            <Text>Clay Pit</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Lehmgrube</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Clay Pit</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Clay Pit</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_CLAY_PIT_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]clay pit[COLOR_REVERT] can be built only on hills. They increase the production of [LINK=YIELD_CLAY]clay[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A clay pit is an open-pit mine from which clay is extracted. Clay is generally used for goods and other everyday items.</English>
+        <French>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]clay pit[COLOR_REVERT] can be built only on hills. They increase the production of [LINK=YIELD_CLAY]clay[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A clay pit is an open-pit mine from which clay is extracted. Clay is generally used for goods and other everyday items.</French>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lehmgruben[COLOR_REVERT] können nur auf Hügeln angelegt werden. Sie erhöhen die Produktion von [LINK=YIELD_CLAY]Ton[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Eine Tongrube ist eine Anlage, die dazu dient, Ton abzubauen. In vielen Fällen dient dieses Material als Material zur Herstellung von Waren und anderen Alltagsgegenständen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_OPEN_CLAY_MINE</Tag>
+        <English>Open Clay Mine</English>
+        <French>
+            <Text>Open Clay Mine</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Lehmtagebau</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Open Clay Mine</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Open Clay Mine</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_OPEN_CLAY_MINE_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Open clay mines[COLOR_REVERT] are the upgrades of [LINK=IMPROVEMENT_CLAY_PIT]clay pits[\LINK]. They increase the production of [LINK=YIELD_CLAY]clay[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]In open-pit clay mines clay is extracted. Clay is generally used for goods and other everyday items.</English>
+        <French>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Open clay mines[COLOR_REVERT] are the upgrades of [LINK=IMPROVEMENT_CLAY_PIT]clay pits[\LINK]. They increase the production of [LINK=YIELD_CLAY]clay[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]In open-pit clay mines clay is extracted. Clay is generally used for goods and other everyday items.</French>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Der[COLOR_HIGHLIGHT_TEXT]Lehmtagebau[COLOR_REVERT] ist die Erweiterung der [LINK=IMPROVEMENT_CLAY_PIT]IMPROVEMENT_CLAY_PIT[\LINK]. Er erhöht die Produktion von [LINK=YIELD_CLAY]Ton[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ein Tagebau ist meist eine grubenähnliche Anlage, die dazu dient, Ton in großen Mengen abzubauen. In vielen Fällen dient dieses Material als Material zur Herstellung von Waren und anderen Alltagsgegenständen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_PEAT_PIT</Tag>
+        <English>Peat Pit</English>
+        <French>
+            <Text>Peat Pit</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Torfgrube</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Peat Pit</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Peat Pit</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_PEAT_PIT_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]peat pit[COLOR_REVERT] can be built only on flat wetlands. They increase the production of [LINK=YIELD_PEAT]peat[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A peat pit is an open-pit mine from which peat is extracted. </English>
+        <French>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]peat pit[COLOR_REVERT] can be built only on flat wetlands. They increase the production of [LINK=YIELD_PEAT]peat[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A peat pit is an open-pit mine from which peat is extracted. </French>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Torfgruben[COLOR_REVERT] können nur auf flachem Feuchtland angelegt werden. Sie erhöhen die Produktion von [LINK=YIELD_PEAT]Torf[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Eine Torfgrube ist eine Anlage, die dazu dient, Torf abzubauen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_OPEN_PEAT_MINE</Tag>
+        <English>Open Peat Mine</English>
+        <French>
+            <Text>Open Peat Mine</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Torf Tagebau</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Open Peat Mine</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Open Peat Mine</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_OPEN_PEAT_MINE_PEDIA</Tag>
+        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Open peat mines[COLOR_REVERT] are the upgrades of [LINK=IMPROVEMENT_PEAT_PIT]peat pits[\LINK]. They increase the production of [LINK=YIELD_PEAT]peat[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]In open-pit peat mines peat is extracted. </English>
+        <French>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Open peat mines[COLOR_REVERT] are the upgrades of [LINK=IMPROVEMENT_PEAT_PIT]peat pits[\LINK]. They increase the production of [LINK=YIELD_PEAT]peat[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]In open-pit peat mines peat is extracted.</French>
+        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1]Der[COLOR_HIGHLIGHT_TEXT]Torf Tagebau[COLOR_REVERT] ist die Erweiterung der [LINK=IMPROVEMENT_PEAT_PIT]Torfgrube[\LINK]. Er erhöht die Produktion von [LINK=YIELD_PEAT]Torf[\LINK].[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ein Tagebau ist meist eine grubenähnliche Anlage, die dazu dient, Torf in großen Mengen abzubauen. </German>
+    </TEXT>
 </Civ4GameText>

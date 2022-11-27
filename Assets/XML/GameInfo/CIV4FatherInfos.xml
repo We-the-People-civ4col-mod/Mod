@@ -152,7 +152,7 @@
                     <UnitClass>UNITCLASS_SLAVE_BARQUE</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
-				<FreeUnit>
+                <FreeUnit>
                     <UnitClass>UNITCLASS_BRIGANTINE</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
@@ -315,7 +315,7 @@
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_CARRACK</UnitClass>
-                    <iFreeUnits>1</iFreeUnits>
+                    <iFreeUnits>2</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>
@@ -358,8 +358,8 @@
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,6,5</Button>
-        </FatherInfo>	
-		<FatherInfo>
+        </FatherInfo>
+        <FatherInfo>
             <Type>FATHER_CARL_VON_LINNES</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Carl_von_Linnes.dds</Portrait>
             <Description>TXT_KEY_FATHER_CARL_VON_LINNES</Description>
@@ -392,7 +392,7 @@
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,1,14</Button>
-        </FatherInfo>	
+        </FatherInfo>
         <FatherInfo>
             <Type>FATHER_JAMES_COOK</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/James_Cook.dds</Portrait>
@@ -402,6 +402,10 @@
             <FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
             <RevealImprovements/>
             <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_CAPABLE_CAPTAIN</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_NAVAL_BRIG</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
@@ -434,7 +438,7 @@
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_EMIGRANT</UnitClass>
-                    <iFreeUnits>2</iFreeUnits>
+                    <iFreeUnits>3</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>
@@ -583,7 +587,7 @@
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_BRIGANTINE</UnitClass>
-                    <iFreeUnits>1</iFreeUnits>
+                    <iFreeUnits>2</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>
@@ -647,7 +651,7 @@
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_CARAVELA_REDONDA</UnitClass>
-                    <iFreeUnits>1</iFreeUnits>
+                    <iFreeUnits>2</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>
@@ -984,7 +988,7 @@
                     <UnitClass>UNITCLASS_RANCHER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
-				<FreeUnit>
+                <FreeUnit>
                     <UnitClass>UNITCLASS_BUTCHER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
@@ -1443,7 +1447,7 @@
                     <UnitClass>UNITCLASS_MERCHANTMAN</UnitClass>
                     <iFreeUnits>2</iFreeUnits>
                 </FreeUnit>
-				<FreeUnit>
+                <FreeUnit>
                     <UnitClass>UNITCLASS_ROYAL_FRIGATE</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
@@ -1481,7 +1485,7 @@
                     <UnitClass>UNITCLASS_GUNSMITH</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
-				<FreeUnit>
+                <FreeUnit>
                     <UnitClass>UNITCLASS_HOUSEHOLD_TRADER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
@@ -1647,8 +1651,8 @@
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
-            <FatherPointCosts>	
-			    <FatherPointCost>
+            <FatherPointCosts>
+                <FatherPointCost>
                     <FatherPointType>FATHER_POINT_RELIGION</FatherPointType>
                     <iCost>675</iCost>
                 </FatherPointCost>
@@ -1717,7 +1721,7 @@
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,1,7</Button>
-        </FatherInfo>		
+        </FatherInfo>
         <FatherInfo>
             <Type>FATHER_EUSEBIO_FRANCISO_KINO</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Eusebio_Francisco_Kino.dds</Portrait>
@@ -1975,7 +1979,7 @@
                     <UnitClass>UNITCLASS_STATESMAN</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
-				<FreeUnit>
+                <FreeUnit>
                     <UnitClass>UNITCLASS_CLOTH_TAYLOR</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
@@ -2026,7 +2030,7 @@
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,1,9</Button>
         </FatherInfo>
-		 <FatherInfo>
+        <FatherInfo>
             <Type>FATHER_HERMAN_OF_ALASKA</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/HermanofAlaska.dds</Portrait>
             <Description>TXT_KEY_FATHER_HERMAN_OF_ALASKA</Description>
@@ -2147,7 +2151,7 @@
             <FreeUnits>
                 <FreeUnit>
                     <UnitClass>UNITCLASS_CONQUISTADOR</UnitClass>
-                    <iFreeUnits>1</iFreeUnits>
+                    <iFreeUnits>2</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>
@@ -2439,7 +2443,7 @@
                     <UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
-				<FreeUnit>
+                <FreeUnit>
                     <UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
@@ -2988,7 +2992,7 @@
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,4,3</Button>
         </FatherInfo>
-		<FatherInfo>
+        <FatherInfo>
             <Type>FATHER_SIR_THOMAS_GATES</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Sir_Thomas_Gates.dds</Portrait>
             <Description>TXT_KEY_FATHER_SIR_THOMAS_GATES</Description>
@@ -3001,7 +3005,7 @@
                     <UnitClass>UNITCLASS_HERDER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
-				<FreeUnit>
+                <FreeUnit>
                     <UnitClass>UNITCLASS_BUTCHER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
@@ -3061,7 +3065,7 @@
                     <UnitClass>UNITCLASS_BREEDER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
-				<FreeUnit>
+                <FreeUnit>
                     <UnitClass>UNITCLASS_POULTRY_BUTCHER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>

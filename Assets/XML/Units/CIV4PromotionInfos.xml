@@ -2221,7 +2221,7 @@
             <iCargoChange>0</iCargoChange>
             <iBombardRateChange>0</iBombardRateChange>
             <iEnemyHealChange>0</iEnemyHealChange>
-            <iNeutralHealChange>10</iNeutralHealChange>
+            <iNeutralHealChange>100</iNeutralHealChange>
             <iFriendlyHealChange>0</iFriendlyHealChange>
             <iSameTileHealChange>0</iSameTileHealChange>
             <iAdjacentTileHealChange>0</iAdjacentTileHealChange>
@@ -2303,7 +2303,7 @@
             <iWithdrawalChange>0</iWithdrawalChange>
             <iCargoChange>0</iCargoChange>
             <iBombardRateChange>0</iBombardRateChange>
-            <iEnemyHealChange>10</iEnemyHealChange>
+            <iEnemyHealChange>200</iEnemyHealChange>
             <iNeutralHealChange>0</iNeutralHealChange>
             <iFriendlyHealChange>0</iFriendlyHealChange>
             <iSameTileHealChange>0</iSameTileHealChange>
@@ -2672,7 +2672,7 @@
             <iBombardRateChange>0</iBombardRateChange>
             <iEnemyHealChange>0</iEnemyHealChange>
             <iNeutralHealChange>0</iNeutralHealChange>
-            <iFriendlyHealChange>10</iFriendlyHealChange>
+            <iFriendlyHealChange>100</iFriendlyHealChange>
             <iSameTileHealChange>0</iSameTileHealChange>
             <iAdjacentTileHealChange>0</iAdjacentTileHealChange>
             <iCombatPercent>0</iCombatPercent>
@@ -2737,9 +2737,9 @@
             <iWithdrawalChange>0</iWithdrawalChange>
             <iCargoChange>0</iCargoChange>
             <iBombardRateChange>0</iBombardRateChange>
-            <iEnemyHealChange>10</iEnemyHealChange>
-            <iNeutralHealChange>10</iNeutralHealChange>
-            <iFriendlyHealChange>10</iFriendlyHealChange>
+            <iEnemyHealChange>200</iEnemyHealChange>
+            <iNeutralHealChange>100</iNeutralHealChange>
+            <iFriendlyHealChange>100</iFriendlyHealChange>
             <iSameTileHealChange>10</iSameTileHealChange>
             <iAdjacentTileHealChange>0</iAdjacentTileHealChange>
             <iCombatPercent>0</iCombatPercent>

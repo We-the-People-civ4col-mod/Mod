@@ -2046,7 +2046,7 @@
                     <YieldType>YIELD_COFFEE_BERRIES</YieldType>
                     <iYield>2</iYield>
                 </CityExtraYield>
-				<CityExtraYield>
+                <CityExtraYield>
                     <YieldType>YIELD_VANILLA_PODS</YieldType>
                     <iYield>2</iYield>
                 </CityExtraYield>
@@ -11810,6 +11810,10 @@
             <FreePromotions>
                 <FreePromotion>
                     <PromotionType>PROMOTION_SEEHUNTER1</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_SEEHUNTER2</PromotionType>
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>

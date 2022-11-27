@@ -592,10 +592,10 @@
             <Type>ART_DEF_UNIT_ROPES_MAKER</Type>
             <Button>,Art/colonization_atlas_units.dds,1,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/rope_maker.dds</FullLengthIcon>
-            <fScale>0.52</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Rope_Maker/Indentured_Servant.nif</NIF>
-            <KFM>Art/Units/Indentured_Servant/Indentured_Servant.kfm</KFM>
+            <NIF>Art/Units/Settler/Rope_Maker/rope_maker.nif</NIF>
+            <KFM>Art/Units/Master_Carpenter/Master_Carpenter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -813,11 +813,11 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SUGAR_PLANTER</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,5</Button>
+            <Button>,Art/colonization_atlas_units_two.dds,5,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_SugarPlanter.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Expert_Sugar_Planter/Expert_Sugar_Planter.nif</NIF>
+            <NIF>Art/Units/Settler/Expert_Sugar_Planter/Expert_Sugar_Planter.nif</NIF>
             <KFM>Art/Units/Expert_Sugar_Planter/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -17384,12 +17384,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_MAPLE_SIRUP_COLLECTOR</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Expert_Maple_Sirup_Collector_button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Maple_Sirup_Collector_Europe.dds</FullLengthIcon>
-            <fScale>0.54</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,3,4</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Maple_Sirup_Collector.dds</FullLengthIcon>
+            <fScale>0.56</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Expert_Maple_Sirup_Collector/scout_fx.nif</NIF>
-            <KFM>Art/Units/Settler/scout_european/Scout.kfm</KFM>
+            <NIF>Art/Units/Settler/Expert_Maple_Sirup_Collector/Indentured_Servant.nif</NIF>
+            <KFM>Art/Units/Settler/Expert_Maple_Sirup_Collector/Indentured_Servant.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17588,12 +17588,12 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_MILK_MAID</Type>
-            <Button>Art/interface/buttons/New_Unit_Buttons/Milkmaid_Button.dds</Button>
-            <FullLengthIcon>,Art/Interface/Screens/City_Management/Milkmaid_CM.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
+            <Button>,Art/colonization_atlas_units_two.dds,4,4</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Skilled_Milkmaid.dds</FullLengthIcon>
+            <fScale>0.47</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/Master_Milkmaid/sailor.nif</NIF>
-            <KFM>Art/Units/Settler/Master_Milkmaid/sailor.kfm</KFM>
+            <NIF>Art/Units/Settler/Skilled_Milkmaid/Expert_Sugar_Planter.nif</NIF>
+            <KFM>Art/Units/Settler/Skilled_Milkmaid/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17602,6 +17602,8 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
+            <SelectionSound>AS3D_UN_SPY_SURR_VOX</SelectionSound>
+            <ActionSound>AS3D_UN_SPY_SURR_VOX</ActionSound>
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_CHEESE_MAKER</Type>
@@ -17658,10 +17660,10 @@
             <Type>ART_DEF_UNIT_HARLOT</Type>
             <Button>,Art/colonization_atlas_units_two.dds,4,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/city_management/harlot.dds</FullLengthIcon>
-            <fScale>0.47</fScale>
+            <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/harlot/Expert_Sugar_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/harlot/Expert_Sugar_Planter.kfm</KFM>
+            <KFM>Art/Units/Settler/Skilled_Milkmaid/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -17680,7 +17682,7 @@
             <fScale>0.47</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/female_entertainer/Expert_Sugar_Planter.nif</NIF>
-            <KFM>Art/Units/Settler/harlot/Expert_Sugar_Planter.kfm</KFM>
+            <KFM>Art/Units/Settler/female_entertainer/Expert_Sugar_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>

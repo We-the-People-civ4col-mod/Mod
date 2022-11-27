@@ -402,6 +402,7 @@ OtherFontIcons = { 'happy' : FontSymbols.HAPPY_CHAR,
 				'power_custom' : FontSymbols.POWER_CHAR_CUSTOM,
 				'positive domestic market event' : FontSymbols.POSITIVE_DOMESTIC_MARKET_EVENT_CHAR,
 				'negative domestic market event' : FontSymbols.NEGATIVE_DOMESTIC_MARKET_EVENT_CHAR,
+				'overflow' : FontSymbols.OVERFLOW_CHAR,
 				}
 
 GlobalInfosMap = {	'bonus': {'NUM': gc.getNumBonusInfos, 'GET': gc.getBonusInfo},

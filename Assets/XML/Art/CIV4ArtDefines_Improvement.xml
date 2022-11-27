@@ -160,6 +160,42 @@
             <Button>,Art/colonization_atlas_buildings.dds,2,12</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_CLAY_PIT</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Structures/Improvements/Open_clay_mine/clay_pit.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_buildings.dds,5,17</Button>
+        </ImprovementArtInfo>
+        <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_OPEN_CLAY_MINE</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Structures/Improvements/Open_clay_mine/quarry.nif</NIF>
+            <KFM>Art/Structures/Improvements/Open_clay_mine/quarry.kfm</KFM>
+            <Button>,Art/colonization_atlas_buildings.dds,6,17</Button>
+        </ImprovementArtInfo>
+        <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_PEAT_PIT</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Structures/Improvements/Open_peat_mine/peat_pit.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_buildings.dds,7,17</Button>
+        </ImprovementArtInfo>
+        <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_OPEN_PEAT_MINE</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Structures/Improvements/Open_peat_mine/quarry.nif</NIF>
+            <KFM>Art/Structures/Improvements/Open_peat_mine/quarry.kfm</KFM>
+            <Button>,Art/colonization_atlas_buildings.dds,8,17</Button>
+        </ImprovementArtInfo>
+        <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_VINEYARD</Type>
             <bExtraAnimations>0</bExtraAnimations>
             <fScale>1.0</fScale>

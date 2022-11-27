@@ -494,24 +494,24 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HEALS_EXTRA_TEXT</Tag>
-        <English>[ICON_BULLET]Heals extra %d1_Amount%%[SPACE]</English>
+        <English>[ICON_BULLET]Heals %d1_Amount%%[SPACE]faster[SPACE]</English>
         <French>[ICON_BULLET]Guérison + %d1_Amount%%[SPACE]</French>
-        <German>[ICON_BULLET]%d1_Amount%%[SPACE]zusätzliche Heilung[SPACE]</German>
+        <German>[ICON_BULLET]%d1_Amount%%[SPACE]schnellere Heilung[SPACE]</German>
         <Italian>[ICON_BULLET]Cura il %d1_Amount%% supplementare[SPACE]</Italian>
         <Spanish>[ICON_BULLET]Cura un %d1_Amount%% más de[SPACE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_HEALS_NEGATIVE_TEXT</Tag>
-        <English>[ICON_BULLET]Heals %d1_Amount%% less[SPACE]</English>
-        <German>[ICON_BULLET]%d1_Amount%%[SPACE]weniger Heilung[SPACE]</German>
+        <English>[ICON_BULLET]Heals %d1_Amount%% slower[SPACE]</English>
+        <German>[ICON_BULLET]%d1_Amount%%[SPACE]langsamere Heilung[SPACE]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_ENEMY_LANDS_TEXT</Tag>
-        <English>Damage/turn in enemy lands</English>
-        <French>Dégâts/tour en territoire ennemi</French>
-        <German>Schaden/Runde auf feindlichem Territorium</German>
-        <Italian>Danno/turno in territorio nemico</Italian>
-        <Spanish>Daño/turno en tierra enemiga</Spanish>
+        <English>in enemy lands</English>
+        <French>en territoire ennemi</French>
+        <German>auf feindlichem Territorium</German>
+        <Italian>in territorio nemico</Italian>
+        <Spanish>en tierra enemiga</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_NEUTRAL_LANDS_TEXT</Tag>
@@ -956,11 +956,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRES_NUM_SPECIAL_BUILDINGS_NO_CITY</Tag>
-        <English>[COLOR_WARNING_TEXT]Requires %s1_Name (%d2_NumTotal total)[COLOR_REVERT]</English>
-        <French>[COLOR_WARNING_TEXT]Requiert : %s1_Name (%d2_NumTotal au total)[COLOR_REVERT]</French>
-        <German>[COLOR_WARNING_TEXT]Erfordert : %s1_Name (%d2_NumTotal gesamt)[COLOR_REVERT]</German>
-        <Italian>[COLOR_WARNING_TEXT]Richiede %s1_Name (%d2_NumTotal totali)[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_WARNING_TEXT]Requiere %s1_Name (%d2_NumTotal en total)[COLOR_REVERT]</Spanish>
+        <English>[COLOR_WARNING_TEXT]Requires %s1_Name (%d2_NumTotal for each)[COLOR_REVERT]</English>
+        <French>[COLOR_WARNING_TEXT]Requiert : %s1_Name (%d2_NumTotal au chaque)[COLOR_REVERT]</French>
+        <German>[COLOR_WARNING_TEXT]Erfordert : %s1_Name (%d2_NumTotal für jedes)[COLOR_REVERT]</German>
+        <Italian>[COLOR_WARNING_TEXT]Richiede %s1_Name (%d2_NumTotal ogni)[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_WARNING_TEXT]Requiere %s1_Name (%d2_NumTotal de cada)[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRES_STRING</Tag>

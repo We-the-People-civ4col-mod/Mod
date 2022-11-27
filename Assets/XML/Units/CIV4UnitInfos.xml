@@ -115,6 +115,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -676,6 +684,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -1417,6 +1433,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -2167,6 +2191,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -2911,6 +2943,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -3726,6 +3766,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -4493,6 +4541,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -5913,6 +5969,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -6720,6 +6784,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -7312,6 +7384,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -7885,6 +7965,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -8480,6 +8568,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -9045,6 +9141,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -9624,6 +9728,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -10181,6 +10293,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -10754,6 +10874,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -11321,6 +11449,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -11892,6 +12028,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -12457,6 +12601,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -13030,6 +13182,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -13597,6 +13757,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -14170,6 +14338,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -14737,6 +14913,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -15310,6 +15494,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -15877,6 +16069,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -16450,6 +16650,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -17017,6 +17225,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -17590,6 +17806,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -18157,6 +18381,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -18730,6 +18962,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -19300,6 +19540,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -19867,6 +20115,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -20454,6 +20710,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -21019,6 +21283,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -21590,6 +21862,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -22155,6 +22435,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -22726,6 +23014,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -23291,6 +23587,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -23862,6 +24166,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -24427,6 +24739,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -24998,6 +25318,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -25566,6 +25894,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -26118,6 +26454,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -26662,6 +27006,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -27261,6 +27613,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -27857,6 +28217,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -28450,6 +28818,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -29053,6 +29429,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -29646,6 +30030,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -30245,6 +30637,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -30838,6 +31238,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -31437,6 +31845,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -32022,6 +32438,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -32617,6 +33041,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -33206,6 +33638,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -33805,6 +34245,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -34394,6 +34842,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -34993,6 +35449,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -35586,6 +36050,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -36185,6 +36657,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -36776,6 +37256,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -37325,6 +37813,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -37908,6 +38404,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -38499,6 +39003,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -39087,6 +39599,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -39686,6 +40206,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -40279,6 +40807,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -40878,6 +41414,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -41463,6 +42007,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -42054,6 +42606,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -42642,6 +43202,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -43227,6 +43795,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -43831,6 +44407,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -44454,6 +45038,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -45011,6 +45603,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -45579,6 +46179,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -46182,6 +46790,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -46782,6 +47398,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -51689,6 +52313,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -52201,6 +52833,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -52755,6 +53395,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -53249,6 +53897,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -53767,6 +54423,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -54279,6 +54943,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -54798,6 +55470,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -56962,6 +57642,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -57492,6 +58180,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -57986,6 +58682,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -58562,6 +59266,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -59121,6 +59833,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -59686,6 +60406,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -60245,6 +60973,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -61932,6 +62668,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -62507,6 +63251,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -63066,6 +63818,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -63635,6 +64395,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -64145,6 +64913,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -64652,6 +65428,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -65829,6 +66613,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -66375,6 +67167,14 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_VINEYARD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -66830,6 +67630,14 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_CLAY_PIT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PEAT_PIT</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>

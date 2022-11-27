@@ -1409,6 +1409,8 @@ def applyRumBlossom1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
 	city.changeYieldStored(iYield, quantity)
 	nativecity.changeYieldStored(iYield, -quantity)
 
@@ -1567,6 +1569,8 @@ def applyPirates3(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
 	city.changeYieldStored(iYield, quantity)
 
 def applyPirates4(argsList):
@@ -1579,6 +1583,8 @@ def applyPirates4(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
 	city.changeYieldStored(iYield, quantity)
 
 def getHelpPirates3(argsList):
@@ -2208,6 +2214,8 @@ def applyRequisitionDeliver(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
 	city.changeYieldStored(iYield, quantity)
 	king.setYieldBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
 	
@@ -2319,7 +2327,7 @@ def canTriggerHorsethief(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
-	if (city.getYieldStored(iYield) + quantity) < 1:
+	if city.getYieldStored(iYield) < -quantity:
 		return false
 	return true
 	
@@ -2338,7 +2346,7 @@ def canTriggerCattlethief(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
-	if (city.getYieldStored(iYield) + quantity) < 1:
+	if city.getYieldStored(iYield) < -quantity:
 		return false
 	return true
 
@@ -2352,6 +2360,8 @@ def applyHorsethief_2(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
 	city.changeYieldStored(iYield, quantity)
 	return true
 	
@@ -2365,6 +2375,8 @@ def applyCattlethief_1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
 	city.changeYieldStored(iYield, quantity)
 	return true
 	
@@ -2544,6 +2556,8 @@ def applyBeerRobbery1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return
 	city.changeYieldStored(iYield, quantity)
 	othercity.changeYieldStored(iYield, -quantity)
 
@@ -2620,6 +2634,8 @@ def applyWineTheft1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return
 	city.changeYieldStored(iYield, quantity)
 
 def getHelpWineTheft1(argsList):
@@ -2672,6 +2688,8 @@ def applyLuxuryGoods1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return
 	city.changeYieldStored(iYield, quantity)
 
 def getHelpLuxuryGoods1(argsList):
@@ -2826,6 +2844,8 @@ def applyHorseDeal1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return
 	city.changeYieldStored(iYield, quantity)
 
 def getHelpHorseDeal1(argsList):
@@ -2878,6 +2898,8 @@ def applyWildAnimal1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return
 	city.changeYieldStored(iYield, quantity)
 
 def getHelpWildAnimal1(argsList):
@@ -2955,6 +2977,8 @@ def applyCocaEvent1(argsList):
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
 	iYield = gc.getInfoTypeForString("YIELD_COCA_LEAVES")
+	if city.getYieldStored(iYield) < -quantity :
+		return
 	city.changeYieldStored(iYield, quantity)
 
 def getHelpCocaEvent1(argsList):
@@ -5664,15 +5688,18 @@ def canTriggerAfricaTradeQuest_TRADINGGOODS_DONE(argsList):
 ######## SPAWNING UNITS - friendly and hostile ########
 #######################################################
 
-### PART A1) UNIT Trigger Check Methods
+### PART A1) UNIT Trigger Check Methods Blueprints
 #######################################################
 ### Those are for the UnitTrigger Triggers to check ###
+### ! Just Blueprints to be implemented by Trigger !###
 #######################################################
 
 # check for own units
-def checkOwnPlayerUnitOnAdjacentPlotOfUnit(argsList):
-	# this is the Unit that triggered
+def checkOwnPlayerUnitOnAdjacentPlotOfUnit(argsList): ### When you copy rename specically for your actuall EventTrigger
+	eEvent = gc.getInfoTypeForString("EVENT_THAT_STORES_THE_PARAMETERS_TO_CHECK") ### When you copy put in actual Event to read parameters
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
 	iOwnUnitClassTypeToCheck = event.getGenericParameter(1)
 	found = unitThatTriggered.isOwnPlayerUnitOnAdjacentPlotOfUnit(iOwnUnitClassTypeToCheck)
@@ -5681,9 +5708,11 @@ def checkOwnPlayerUnitOnAdjacentPlotOfUnit(argsList):
 	return false
 
 # check for Barbarian Units
-def checkBarbarianUnitOnAdjacentPlotOfUnit(argsList):
-	# this is the Unit that triggered
+def checkBarbarianUnitOnAdjacentPlotOfUnit(argsList): ### When you copy rename specically for your actuall EventTrigger
+	eEvent = gc.getInfoTypeForString("EVENT_THAT_STORES_THE_PARAMETERS_TO_CHECK") ### When you copy put in actual Event to read parameters
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
 	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
 	found = unitThatTriggered.isBarbarianUnitOnAdjacentPlotOfUnit(iBarbarianUnitClassTypeToCheck)
@@ -5703,8 +5732,10 @@ def checkBarbarianUnitOnAdjacentPlotOfUnit(argsList):
 
 # same Plot
 def spawnBarbarianUnitOnSamePlotAsUnit(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
 	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
 	iNumHostilesToSpawn = event.getGenericParameter(2)
@@ -5713,8 +5744,10 @@ def spawnBarbarianUnitOnSamePlotAsUnit(argsList):
 
 # adjacent Plot
 def spawnBarbarianUnitAdjacentToUnit(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
 	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
 	iNumHostilesToSpawn = event.getGenericParameter(2)
@@ -5727,8 +5760,10 @@ def spawnBarbarianUnitAdjacentToUnit(argsList):
 
 # same Plot
 def spawnOwnPlayerUnitOnSamePlotAsUnit(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
 	iOwnUnitClassTypeToSpawn = event.getGenericParameter(1)
 	iNumOwnToSpawn = event.getGenericParameter(2)
@@ -5737,27 +5772,30 @@ def spawnOwnPlayerUnitOnSamePlotAsUnit(argsList):
 
 # adjacent Plot
 def spawnOwnPlayerUnitAdjacentToUnit(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
 	iOwnUnitClassTypeToSpawn = event.getGenericParameter(1)
 	iNumOwnToSpawn = event.getGenericParameter(2)
 	for iX in range(iNumOwnToSpawn):
 		unitThatTriggered.spawnOwnPlayerUnitOnAdjacentPlotOfUnit(iOwnUnitClassTypeToSpawn)
 
-### PART B1) CITY Trigger Check Methods
+### PART B1) CITY Trigger Check Methods Blueprints
 #######################################################
 ### Those are for the CityTrigger Triggers to check ###
+### ! Just Blueprints to be implemented by Trigger !###
 #######################################################
 
 # check for own units
-def checkOwnPlayerUnitOnAdjacentPlotOfCity(argsList):
-	# get the City that triggered
-	#kTriggeredData = argsList[0]
+def checkOwnPlayerUnitOnAdjacentPlotOfCity(argsList): ### When you copy rename specically for your actuall EventTrigger
+	eEvent = gc.getInfoTypeForString("EVENT_THAT_STORES_THE_PARAMETERS_TO_CHECK") ### When you copy put in actual Event to read parameters
+	event = gc.getEventInfo(eEvent)
 	ePlayer = argsList[1]
 	iCityIdThatTriggered = argsList[2]
 	player = gc.getPlayer(ePlayer)
-	city = player.getCity(iCityId)
+	city = player.getCity(iCityIdThatTriggered)
 
 	iOwnUnitClassTypeToCheck = event.getGenericParameter(1)
 	found = city.isOwnPlayerUnitOnAdjacentPlotOfCity(iOwnUnitClassTypeToCheck)
@@ -5767,13 +5805,13 @@ def checkOwnPlayerUnitOnAdjacentPlotOfCity(argsList):
 
 
 # check for Barbarian Units
-def checkBarbarianUnitOnAdjacentPlotOfCity(argsList):
-	# get the City that triggered
-	#kTriggeredData = argsList[0]
+def checkBarbarianUnitOnAdjacentPlotOfCity(argsList): ### When you copy rename specically for your actuall EventTrigger
+	eEvent = gc.getInfoTypeForString("EVENT_THAT_STORES_THE_PARAMETERS_TO_CHECK") ### When you copy put in actual Event to read parameters
+	event = gc.getEventInfo(eEvent)
 	ePlayer = argsList[1]
 	iCityIdThatTriggered = argsList[2]
 	player = gc.getPlayer(ePlayer)
-	city = player.getCity(iCityId)
+	city = player.getCity(iCityIdThatTriggered)
 
 	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
 	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck)
@@ -5793,7 +5831,8 @@ def checkBarbarianUnitOnAdjacentPlotOfCity(argsList):
 
 # same Plot # CAREFUL !!!, will take over City
 def spawnBarbarianUnitOnSamePlotAsCity(argsList):
-	# get the City that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	city = player.getCity(kTriggeredData.iCityId)
@@ -5805,7 +5844,8 @@ def spawnBarbarianUnitOnSamePlotAsCity(argsList):
 
 # adjacent Plot
 def spawnBarbarianUnitAdjacentToCity(argsList):
-	# get the City that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	city = player.getCity(kTriggeredData.iCityId)
@@ -5821,7 +5861,8 @@ def spawnBarbarianUnitAdjacentToCity(argsList):
 
 # same Plot
 def spawnOwnPlayerUnitOnSamePlotAsCity(argsList):
-	# get the City that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	city = player.getCity(kTriggeredData.iCityId)
@@ -5833,7 +5874,8 @@ def spawnOwnPlayerUnitOnSamePlotAsCity(argsList):
 
 # adjacent Plot
 def spawnOwnPlayerUnitAdjacentToCity(argsList):
-	# get the City that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	city = player.getCity(kTriggeredData.iCityId)
@@ -5843,14 +5885,16 @@ def spawnOwnPlayerUnitAdjacentToCity(argsList):
 	for iX in range(iNumOwnToSpawn):
 		city.spawnOwnPlayerUnitOnAdjacentPlotOfCity(iOwnUnitClassTypeToSpawn)
 
-### PART C1) PLOT Trigger Check Methods
+### PART C1) PLOT Trigger Check Methods Blueprints
 #######################################################
 ### Those are for the PlotTrigger Triggers to check ###
+### ! Just Blueprints to be implemented by Trigger !###
 #######################################################
 
 # check for own units
-def checkOwnPlayerUnitOnAdjacentPlotOfPlot(argsList):
-	# this is the Unit that triggered
+def checkOwnPlayerUnitOnAdjacentPlotOfPlot(argsList): ### When you copy rename specically for your actuall EventTrigger
+	eEvent = gc.getInfoTypeForString("EVENT_THAT_STORES_THE_PARAMETERS_TO_CHECK") ### When you copy put in actual Event to read parameters
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[0]
 	ePlayer = kTriggeredData.ePlayer
 	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
@@ -5861,8 +5905,9 @@ def checkOwnPlayerUnitOnAdjacentPlotOfPlot(argsList):
 	return false
 
 # check for Barbarian Units
-def checkBarbarianUnitOnAdjacentPlotOfPlot(argsList):
-	# this is the Unit that triggered
+def checkBarbarianUnitOnAdjacentPlotOfPlot(argsList): ### When you copy rename specically for your actuall EventTrigger
+	eEvent = gc.getInfoTypeForString("EVENT_THAT_STORES_THE_PARAMETERS_TO_CHECK") ### When you copy put in actual Event to read parameters
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[0]
 	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
 	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
@@ -5871,7 +5916,7 @@ def checkBarbarianUnitOnAdjacentPlotOfPlot(argsList):
 		return true
 	return false
 
-### PART  2) PLOT Trigger Spawn Methods
+### PART C2) PLOT Trigger Spawn Methods
 #####################################################
 ### Those are for the PlotTrigger Events to spawn ###
 #####################################################
@@ -5882,7 +5927,8 @@ def checkBarbarianUnitOnAdjacentPlotOfPlot(argsList):
 
 # same Plot
 def spawnBarbarianUnitOnSamePlotAsPlot(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
 	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
 	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
@@ -5892,7 +5938,8 @@ def spawnBarbarianUnitOnSamePlotAsPlot(argsList):
 
 # adjacent Plot
 def spawnBarbarianUnitAdjacentToPlot(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
 	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
 	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
@@ -5906,7 +5953,8 @@ def spawnBarbarianUnitAdjacentToPlot(argsList):
 
 # same Plot
 def spawnOwnPlayerUnitOnSamePlotAsPlot(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
 	ePlayer = kTriggeredData.ePlayer
 	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
@@ -5917,7 +5965,8 @@ def spawnOwnPlayerUnitOnSamePlotAsPlot(argsList):
 
 # adjacent Plot
 def spawnOwnPlayerUnitAdjacentToPlot(argsList):
-	# this is the Unit that triggered
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[1]
 	ePlayer = kTriggeredData.ePlayer
 	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
@@ -5925,3 +5974,129 @@ def spawnOwnPlayerUnitAdjacentToPlot(argsList):
 	iNumOwnToSpawn = event.getGenericParameter(2)
 	for iX in range(iNumOwnToSpawn):
 		plotThatTriggered.spawnPlayerUnitOnAdjacentPlot(ePlayer, iOwnUnitClassTypeToSpawn)
+
+######## Native Trader Attack ###########
+
+def canTriggerNativeTraderAttack(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if not player.isPlayable():
+		return false
+	unit = player.getUnit(kTriggeredData.iUnitId)
+	eScout = gc.getInfoTypeForString("PROFESSION_NATIVE_TRADER")
+	if unit.getProfession() != eScout:
+		return false
+	# Read parameter 3 from the event as random chance
+	if TriggerChance(argsList):
+		return true
+	return false
+
+def getHelpNativeTraderAttack(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_NATIVE_TRADER_ATTACK_HELP", ())
+	return szHelp
+
+######## Criminal Attacks City ###########
+
+def canTriggerCriminalsAttackCity(argsList):
+	ePlayer = argsList[1]
+	iCity = argsList[2]
+	
+	player = gc.getPlayer(ePlayer)
+	city = player.getCity(iCity)
+
+	if city.isNone():
+		return false
+	
+	if not player.isPlayable():
+		return false
+	
+	iHappiness = city.getCityHappiness()
+	iUnhappiness = city.getCityUnHappiness()
+
+	# Happiness Check
+	if iHappiness >= iUnhappiness:
+		return false
+
+	# Food Check
+	eEvent = gc.getInfoTypeForString("EVENT_CRIMINALS_BLACKMAIL_CITY_GIVE")
+	event = gc.getEventInfo(eEvent)
+	iYield = gc.getInfoTypeForString("YIELD_FOOD")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < quantity :
+		return false
+
+	return true
+
+def applyGiveFood(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	if not player.isHuman():
+		city = player.firstCity(true)[0]
+	iYield1 = gc.getInfoTypeForString("YIELD_FOOD")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < quantity :
+		return false
+	city.changeYieldStored(iYield1, -quantity)
+
+def getHelpGiveFood(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	iYield = gc.getInfoTypeForString("YIELD_FOOD")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	szHelp = ""
+	if event.getGenericParameter(1) <> 0 :
+		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (-quantity, gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
+	return szHelp
+
+def getHelpCriminalsAttackCity(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_CRIMINALS_REVOLT_HELP", ())
+	return szHelp
+
+
+######## Buccanners attack Silver Mine ###########
+
+def getHelpBuccanneersAttackMine(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_BUCCANNERS_ATTACK_MINE_HELP", ())
+	return szHelp
+
+def getHelpMilitiaDefend(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_MILITIA_DEFENDS_MINE_HELP", ())
+	return szHelp
+
+######## Slave Hunter Offers Service ###########
+
+def checkRunawaySlavesOnAdjacentPlotOfCity(argsList): ### When you copy rename specically for your actuall EventTrigger
+	eEvent = gc.getInfoTypeForString("EVENT_SLAVE_HUNTER_SERVICE_ACCEPT") ### When you copy put in actual Event to read parameters
+	event = gc.getEventInfo(eEvent)
+	ePlayer = argsList[1]
+	iCityIdThatTriggered = argsList[2]
+	player = gc.getPlayer(ePlayer)
+	city = player.getCity(iCityIdThatTriggered)
+
+	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
+	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck)
+	if (found):
+		return true
+
+	iBarbarianUnitClassTypeToCheck2 = event.getGenericParameter(2)
+	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck2)
+	if (found):
+		return true
+
+	iBarbarianUnitClassTypeToCheck3 = event.getGenericParameter(2)
+	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck3)
+	if (found):
+		return true
+	return false

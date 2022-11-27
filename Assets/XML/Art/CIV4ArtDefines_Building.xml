@@ -154,7 +154,7 @@
             <Type>ART_DEF_BUILDING_NEWSPAPER</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/News_letter_better_scaled.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,2,5</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.7</fScale>
             <fInterfaceScale>0.45</fInterfaceScale>
@@ -2459,94 +2459,94 @@
             <Type>ART_DEF_BUILDING_GRAVEYARD</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Graveyard_City.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,1,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>10.0</fScale>
+            <fScale>12.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Graveyard/barracks.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Graveyard_Button.dds</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,8,14</Button>
         </BuildingArtInfo>
         <!-- New Buildings WTP: Confectioner -->
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_CONFECTIONER_HOUSE</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Confectioner_House_City.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,4,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>0.45</fScale>
+            <fScale>0.40</fScale>
             <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Confectioner/roesterei_house.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Confectioner_House_Button.dds</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,3,18</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_CONFECTIONER_SHOP</Type>
-            <LSystem>LSYSTEM_2x1</LSystem>
+            <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Confectioner_Shop_City.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,5,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>0.45</fScale>
+            <fScale>0.40</fScale>
             <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Confectioner/roesterei.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Confectioner_Shop_Button.dds</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,4,18</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_CONFECTIONER_FACTORY</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Confectionery_City.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,6,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>0.45</fScale>
             <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Confectioner/roesterei_fabrik.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Confectionery_Button.dds</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,5,18</Button>
         </BuildingArtInfo>
         <!-- New Buildings WTP: Leather Padder -->
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_LEATHER_PADDER_HOUSE</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Leather_Tailor_House_City.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,7,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.2</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Leather_Padder/coatmaker_01.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Leather_Tailor_House_Button.dds</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,6,18</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_LEATHER_PADDER_SHOP</Type>
             <LSystem>LSYSTEM_2x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Leather_Tailor_Shop_City.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,8,8</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.2</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Leather_Padder/coatmaker_02.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Leather_Tailor_Shop_Button.dds</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,7,18</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_LEATHER_PADDER_FACTORY</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Leather_Coat_Factory_City.dds</CityTexture>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,8,7</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.2</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Leather_Padder/coatmaker_03.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Leather_Coat_Factory_Button.dds</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,8,18</Button>
         </BuildingArtInfo>
         <!-- New Buildings WTP: Oil Trader -->
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_OIL_TRADER_HOUSE</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Oil_Trader_House_City.dds</CityTexture>
+            <CityTexture>Art/Interface/Screens/city_management/Oil_Trader_House_City.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>0.6</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
@@ -2558,7 +2558,7 @@
             <Type>ART_DEF_BUILDING_OIL_TRADER_SHOP</Type>
             <LSystem>LSYSTEM_2x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Oil_Trader_Shop_City.dds</CityTexture>
+            <CityTexture>Art/Interface/Screens/city_management/Oil_Trader_Shop_City.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>0.6</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
@@ -2570,7 +2570,7 @@
             <Type>ART_DEF_BUILDING_OIL_TRADER_FACTORY</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Oil_Factory_City.dds</CityTexture>
+            <CityTexture>Art/Interface/Screens/city_management/Oil_Factory_City.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>0.6</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
@@ -2583,9 +2583,9 @@
             <Type>ART_DEF_BUILDING_ROASTER_HOUSE</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Peanut_Trader_House_City.dds</CityTexture>
+            <CityTexture>Art/Interface/Screens/city_management/Roaster_house.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>1.2</fScale>
+            <fScale>1.3</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Peanut_Roaster/Peanut_Trader_01.nif</NIF>
             <KFM/>
@@ -2595,9 +2595,9 @@
             <Type>ART_DEF_BUILDING_ROASTER_SHOP</Type>
             <LSystem>LSYSTEM_2x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Peanut_Trader_Shop_City.dds</CityTexture>
+            <CityTexture>Art/Interface/Screens/city_management/Roaster_Shop.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>1.2</fScale>
+            <fScale>1.4</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Peanut_Roaster/Peanut_Trader_02.nif</NIF>
             <KFM/>
@@ -2607,9 +2607,9 @@
             <Type>ART_DEF_BUILDING_ROASTER_FACTORY</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Peanut_Trader_Post_City.dds</CityTexture>
+            <CityTexture>Art/Interface/Screens/city_management/Roaster_factory.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>1.2</fScale>
+            <fScale>1.4</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Peanut_Roaster/Peanut_Trader_03.nif</NIF>
             <KFM/>

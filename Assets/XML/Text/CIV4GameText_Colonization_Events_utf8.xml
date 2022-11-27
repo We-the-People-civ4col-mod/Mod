@@ -780,6 +780,86 @@
         <German>[COLOR_WARNING_TEXT](Nicht verfügbar, wenn bereits ein [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_WARNING_TEXT] in Euren Diensten steht.)[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_NATIVE_TRADER_ATTACKED</Tag>
+        <English>A rumour is spreading: A peaceful [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trader was attacked and slaughtered by hostile Natives.</English>
+        <German>Ein Gerücht macht die Runde: Ein friedlicher [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Händler wurde von Ureinwohnern angegriffen und abgeschlachtet.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRADER_ATTACKED_1</Tag>
+        <English>Our native trader is on the way to the nearest village to do his buiseness. He is looking forward to meet the friendly young Native girl from his last visit again, which seems to like to talk to him. However, he also remebers the dangerous looks one of the young Native men gave him when he was talking to her. ... While reminiscing that way he suddenly sees a movement in the corner of his eyes and just at the distance of a hand and arrow flies past his face.</English>
+        <German>Unser Ureinwohnerhändler ist auf dem Weg zum nahgelegenen Dorf um dort seine Geschäfte zu verrichten. Er freut sich darauf das junge freundliche Ureinwohndermädchen wieder zu sehen, dass so gerne mit ihm redet. Aber denkt er auch an die bösen Blicke eines der jungen Ureinwohnermänner, als er mit ihr sprach. ... Während er so in Gedanken ist, sieht er plötzlich einen Bewegung im Augenwinkel und ein Pfeil fliegt nur um eine Handbreite an seinem Gesicht vorbei.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADER_ATTACKED_1</Tag>
+        <English>It is the young Native man from the village. He is attacking.</English>
+        <German>Das ist der junge Ureinwohner aus dem Dorf. Er greift an.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_CRIMINALS_BLACKMAIL_CITY</Tag>
+        <English>A rumour is spreading: The peaceful city of [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] is being blackmailed by criminals.</English>
+        <German>Ein Gerücht macht die Runde: Die friedliche Stadt [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] wird von Kriminellen erpresst.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_CRIMINALS_BLACKMAIL_CITY_1</Tag>
+        <English>Mylord, some criminals have broken into our armory and stolen weapons. They claim that they are just empoverished citizens that cannot even afford to buy food anymore. They demand to be given food and a bit of money. They promise to then lay down their weapons. Otherwise they threaten to attack the citizens.</English>
+        <German>Mylord, einige Kriminelle sind in die Waffenkammer eingebrochen und haben sich bewaffnet. Sie behaupten lediglich verarmte Bürger zu sein, die sich kein Essen mehr leisten können. Sie verlangen von uns etwas Nahrung und Geld. Sie verspechen daraufhin die Waffen niederzulegen. Andernfalls drohen sie damit die Bürger der Stadt anzugreifen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_GIVE</Tag>
+        <English>Give them some food and gold. We will even pardon them if they promise to never seek violence again to solve such issues.</English>
+        <German>Gebt ihnen etwas Essen und Gold. Zusätzlich begnadigen wir sie, wenn sie versprechen nächstes Mal keine Gewalt anzuwenden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_REFUSE</Tag>
+        <English>We will not let criminals blackmail us. The only thing they will get from us is their own death.</English>
+        <German>Wir lassen uns nicht von Kriminellen erpresssen. Das einzige was sie von uns bekommen werden ist ihr eigener tod.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_HUNTER_OFFERS_SERVICE</Tag>
+        <English>A rumour is spreading: Escaped slaves near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</English>
+        <German>Ein Gerücht macht die Runde: Entflohene Sklaven in der Nähe von [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_HUNTER_OFFERS_SERVICE_1</Tag>
+        <English>Mylord, a slave hunter has heared that escaped slaves were sighted near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT]. He offers us his services.</English>
+        <German>Mylord, ein Sklavenjäger hat gehört, dass entflohene Sklaven in der Nähen von [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] gesichtet wurden. Er bietet uns seine Dienste an.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SLAVE_HUNTER_SERVICE_ACCEPT</Tag>
+        <English>We will hire him. Tell him to bring these slaves back alive. They are valuable.</English>
+        <German>Wir werden seine Dienste in Anspruch nehmen. Er soll diese Sklaven alle lebend zurück bringen, da sie wertvoll sind.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SLAVE_HUNTER_SERVICE_REFUSE</Tag>
+        <English>We do not need his services. Our militia can handle this as well.</English>
+        <German>Wir benötigen seine Dienste nicht. Unsere Miliz kann der Situation auch Herr werden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_SILVER_MINE_ROBBERY</Tag>
+        <English>A rumour is spreading: A silver mine is regularly being robbed by buccanneers.</English>
+        <German>Ein Gerücht macht die Runde: Eine Silbermine wird regelmäßig von Bukkannieren ausgeraubt.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SILVER_MINE_ROBBERY_1</Tag>
+        <English>Mylord, we hear reports from the foreman of one of our silver mines that buccanneers regularly bribe some of the workers to let them steal some of the mined silver.</English>
+        <German>Mylord, einer der Vorarbetier einer unserer Silberminen berichtet, dass Bukkanniere regelmäßig die Minenarbeiter bestechen, damit diese sie einen Teil des Silbers stehlen lassen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_1</Tag>
+        <English>This must be stopped immediately! Gather some men from the Militia and pay them gold guard the mine.</English>
+        <German>Das muss sofort aufhören! Versammelt einige Männer aus der Miliz und zahlt ihnen Gold um die Mine zu bewachen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_2</Tag>
+        <English>These criminals must pay for this! Search them and put an end to their lifes.</English>
+        <German>Diese Kriminellen werden dafür bezahlen! Sucht sie und setzt ihrem Leben ein Ende.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_3</Tag>
+        <English>Let us solve this peacefully and with as little cost as possible. Offer the miners some gold so they will guard the silver themselves.</English>
+        <German>Lasst uns dies friedlich und mit so wenig Kosten wie möglich. Bietet den Minenarbeitern etwas Gold, damit sie das Silber selbst bewachen.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PACIFIC_1</Tag>
         <English>Several scholars in Europe declare that the Earth is a globe. Adventurers and explorers from all nations have set sail to find the western route to Asia.</English>
         <French>De nombreux savants en Europe affirment que la Terre est ronde. Des aventuriers et explorateurs de toutes les nations montent les voiles pour découvrir la route de l'Ouest vers l'Asie.</French>
@@ -796,6 +876,26 @@
         <English>Be the first to explore the western route to Asia. Glory and wealth will be yours!</English>
         <French>Soyez le premier à explorer la route de l'Ouest vers l'Asie. Or et Gloire vous attendra.</French>
         <German>Entdeckt als Erster die westliche Seeroute nach Asien. Ruhm und Reichtümer werden Euch sicher sein.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_NATIVE_TRADER_ATTACK_HELP</Tag>
+        <English>[ICON_BULLET]We are being attacked by hostile Natives!</English>
+        <German>[ICON_BULLET]Wir werden durch Ureinwohner angegriffen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CRIMINALS_REVOLT_HELP</Tag>
+        <English>[ICON_BULLET]The poor in our city revolt!</English>
+        <German>[ICON_BULLET]Die Armen in unserer Stadt revoltieren!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_BUCCANNERS_ATTACK_MINE_HELP</Tag>
+        <English>[ICON_BULLET]Our silver mine is attacked by Buccanneers!</English>
+        <German>[ICON_BULLET]Unseren Silbermine wird von Buccannieren angegriffen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_MILITIA_DEFENDS_MINE_HELP</Tag>
+        <English>[ICON_BULLET]Our silver mine will be guarded by our Militia!</English>
+        <German>[ICON_BULLET]Unseren Silbermine wird von unserer Miliz bewacht!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PACIFIC_DONE</Tag>
