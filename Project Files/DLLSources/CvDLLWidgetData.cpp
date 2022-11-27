@@ -3115,27 +3115,28 @@ void CvDLLWidgetData::parseShipCargoUnitHelp(CvWidgetDataStruct &widgetDataStruc
 	}
 }
 
+
+// Europe
 void CvDLLWidgetData::parseEuropeUnitHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
 {
 	CvPlayer& kPlayer = GET_PLAYER(GC.getGameINLINE().getActivePlayer());
 	CvUnit* pUnit = kPlayer.getEuropeUnitById(widgetDataStruct.m_iData1);
 	if (pUnit != NULL)
-{
+	{
 		GAMETEXT.setUnitHelp(szBuffer, pUnit, false, true);
 	}
 }
 
-/*** TRIANGLETRADE 10/28/08 by DPII ***/
+// R&R, ray, Africa
 void CvDLLWidgetData::parseAfricaUnitHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
 {
 	CvPlayer& kPlayer = GET_PLAYER(GC.getGameINLINE().getActivePlayer());
 	CvUnit* pUnit = kPlayer.getAfricaUnitById(widgetDataStruct.m_iData1);
 	if (pUnit != NULL)
-{
+	{
 		GAMETEXT.setUnitHelp(szBuffer, pUnit, false, true);
 	}
 }
-/*************************************/
 
 // R&R, ray, Port Royal
 void CvDLLWidgetData::parsePortRoyalUnitHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
@@ -3143,7 +3144,7 @@ void CvDLLWidgetData::parsePortRoyalUnitHelp(CvWidgetDataStruct &widgetDataStruc
 	CvPlayer& kPlayer = GET_PLAYER(GC.getGameINLINE().getActivePlayer());
 	CvUnit* pUnit = kPlayer.getPortRoyalUnitById(widgetDataStruct.m_iData1);
 	if (pUnit != NULL)
-{
+	{
 		GAMETEXT.setUnitHelp(szBuffer, pUnit, false, true);
 	}
 }

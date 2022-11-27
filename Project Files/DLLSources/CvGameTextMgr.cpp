@@ -9072,6 +9072,13 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 	}
 	// WTP, ray Domestic Market Events - END
 
+	// WTP, ray, Overflow Icon in Billboard - START
+	if (pCity->getTotalYieldStored() >= pCity->getMaxYieldCapacity())
+	{
+		szBuffer.append(CvWString::format(L" %c", GC.getSymbolID(OVERFLOW_CHAR)));
+	}
+	// WTP, ray, Overflow Icon in Billboard - END
+
 	// XXX out this in bottom bar???
 	if (pCity->isOccupation())
 	{

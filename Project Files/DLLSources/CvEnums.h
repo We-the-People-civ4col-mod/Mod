@@ -848,6 +848,7 @@ enum FontSymbols
 	POWER_CHAR_CUSTOM, // WTP, ray, Replacing CHARs for Billoard - START
 	POSITIVE_DOMESTIC_MARKET_EVENT_CHAR, // WTP, ray Domestic Market Events - START
 	NEGATIVE_DOMESTIC_MARKET_EVENT_CHAR, // WTP, ray Domestic Market Events - START
+	OVERFLOW_CHAR, // WTP, ray, Overflow Icon in Billboard - START
 
 #ifdef _USRDLL
 	MAX_NUM_SYMBOLS,
