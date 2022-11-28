@@ -6329,11 +6329,18 @@ int CvUnit::getStirUpSuccessPercent() const
 
 bool CvUnit::canSpeakWithChief(CvPlot* pPlot) const
 {
-	ProfessionTypes eProfession = getProfession();
+	// WTP, ray, fix for e.g. Native Mercenaries or Rangers not being able to speak to Chiefs - START
+	/*ProfessionTypes eProfession = getProfession();
 	if (eProfession == NO_PROFESSION)
 	{
 		return false;
+	}*/
+	// The only Units that still cannot speak to Chiefs are Ships and Land Transports or Treasures or Animals (from e.g. Event)
+	if (cargoSpace() > 0 || getUnitInfo().isTreasure() || getUnitInfo().isAnimal())
+	{
+		return false;
 	}
+	// WTP, ray, fix for e.g. Native Mercenaries or Rangers not being able to speak to Chiefs - END
 
 	if (pPlot != NULL)
 	{
