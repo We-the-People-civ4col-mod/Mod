@@ -229,12 +229,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT_CUTTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>A swamp dries and very slowly turns into a peat bog, which offers cheap fuel where wood and coal aren't available. Peat cutters don't need much equipment to do their work, just a cutter and a hod to carry chunks of peat on their back.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT_CUTTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Peat is a peasant fuel, warming the poor and slaves at low or no cost. Peat is the world's most efficient carbon sink, storing 42% of all soil carbon, more than all other vegetation types, including the world's forests. It's not renewable.[NEWLINE]When assigned to the Peat Cutter profession, the expert can cut twice as much peat in the same amount of time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- RAPE_PLANTER -->
@@ -258,12 +258,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Rapeseed is a valuable oil crop. Once the oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry. It's a member of the cabbage family.[NEWLINE]When assigned to the Rapeseed Planter profession, the expert can harvest double the rapeseed in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- RICE_FARMER -->
