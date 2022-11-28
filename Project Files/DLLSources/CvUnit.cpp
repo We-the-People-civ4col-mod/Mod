@@ -6336,7 +6336,7 @@ bool CvUnit::canSpeakWithChief(CvPlot* pPlot) const
 		return false;
 	}*/
 	// The only Units that still cannot speak to Chiefs are Ships and Land Transports or Treasures or Animals (from e.g. Event)
-	if (cargoSpace() > 0 || getUnitInfo().isTreasure() || getUnitInfo().isAnimal())
+	if (cargoSpace() > 0 || getUnitInfo().isTreasure() || getUnitInfo().isAnimal() || isGoods())
 	{
 		return false;
 	}
