@@ -2657,37 +2657,37 @@
             <Type>ART_DEF_BUILDING_TAILOR_HOUSE</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Tailor_House_City.dds</CityTexture>
+            <CityTexture>Art/Interface/Screens/city_management/Tailor_house.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.2</fScale>
-            <fInterfaceScale>0.6</fInterfaceScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Tailor/Weavers_house.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Tailor_House_Button.dds</Button>
+            <Button>Art/interface/buttons/New_Building_Buttons/Tailor_House.dds</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_TAILOR_SHOP</Type>
             <LSystem>LSYSTEM_2x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Tailor_Shop_City.dds</CityTexture>
+            <CityTexture>Art/Interface/Screens/city_management/Tailor_Shop.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.2</fScale>
-            <fInterfaceScale>0.6</fInterfaceScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Tailor/Weavers_shop.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Tailor_Shop_Button.dds</Button>
+            <Button>Art/interface/buttons/New_Building_Buttons/Tailor_shop.dds</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_TAILOR_FACTORY</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Tailory_City.dds</CityTexture>
+            <CityTexture>Art/Interface/Screens/city_management/Tailory.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.2</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
             <NIF>Art/Structures/Buildings/Tailor/Textile_Mill.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Tailory_Button.dds</Button>
+            <Button>Art/interface/buttons/New_Building_Buttons/Tailory.dds</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_FIREWORKERS_HOUSE</Type>
