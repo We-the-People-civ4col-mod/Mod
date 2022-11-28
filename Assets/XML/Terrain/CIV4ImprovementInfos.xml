@@ -3416,12 +3416,7 @@
             <Description>TXT_KEY_IMPROVEMENT_PASTURE</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_PASTURE_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_PASTURE</ArtDefineTag>
-            <PrereqNatureYields>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-            </PrereqNatureYields>
+            <PrereqNatureYields/>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SHEEP</YieldType>
@@ -3542,12 +3537,7 @@
             <Description>TXT_KEY_IMPROVEMENT_PEN</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_PEN_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_PEN</ArtDefineTag>
-            <PrereqNatureYields>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-            </PrereqNatureYields>
+            <PrereqNatureYields/>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_GOATS</YieldType>
@@ -5882,12 +5872,7 @@
             <Description>TXT_KEY_IMPROVEMENT_LARGE_PASTURE</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_LARGE_PASTURE_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_LARGE_PASTURE</ArtDefineTag>
-            <PrereqNatureYields>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-            </PrereqNatureYields>
+            <PrereqNatureYields/>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SHEEP</YieldType>
@@ -6008,12 +5993,7 @@
             <Description>TXT_KEY_IMPROVEMENT_LARGE_PEN</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_LARGE_PEN_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_LARGE_PEN</ArtDefineTag>
-            <PrereqNatureYields>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_FOOD</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-            </PrereqNatureYields>
+            <PrereqNatureYields/>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_GOATS</YieldType>
