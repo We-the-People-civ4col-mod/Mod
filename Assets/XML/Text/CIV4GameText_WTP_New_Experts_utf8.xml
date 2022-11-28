@@ -403,18 +403,18 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>In spring when sap starts to flow in the maple forests, tappers hammer spouts through the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. The sap can also be poured on snow to make maple sugar.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Maple syrup comes from maple forests which grow in north temperate regions. It's a popular treat, contributing to happiness.[NEWLINE]When assigned to the Maple Tree Tapper profession, the expert can get twice as much maple syrup in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- KAUTSCHUK_COLLECTOR -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_KAUTSCHUK_COLLECTOR</Tag>
-        <English>Expert Kautschuk Collector</English>
+        <English>Expert Rubber Collector</English>
         <German>
             <Text>Erfahrener Kautschuksammler</Text>
             <Gender>Male</Gender>
@@ -423,7 +423,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR</Tag>
-        <English>Expert Kautschuk Collector</English>
+        <English>Expert Rubber Collector</English>
         <German>
             <Text>Erfahrener Kautschuksammler</Text>
             <Gender>Male</Gender>
@@ -432,12 +432,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Rubber is harvested by making incisions in the bark of rubber trees. The latex is heated to create rubber that can be dried into waterproof sheets, along with other industrial products.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Rubber has a large stretch ratio, high resilience and is also water-proof. It's classified as an elastomer.[NEWLINE]When assigned to the Rubber Collector profession, the expert can get twice as much rubber in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- CONFECTIONER -->
@@ -461,12 +461,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONFECTIONER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>A confectioner turns plantation sugar into a high-value product by flavouring it - perhaps with chocolate or vanilla. It's important to grind the sugar fine so that the candy has a smooth consistency.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONFECTIONER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>The confectioner creates variety, candy for every taste, alongside traditional sweets that remind people of home. The business can become a social destination, with tables and beverages to accompany the treats.[NEWLINE]When assigned to the Confectioner profession, the master can make twice as much candy in the time a regular colonist would take to do the job.</English>
         <German>TBD</German>
     </TEXT>
     <!-- HOUSEHOLD_TRADER -->
@@ -490,12 +490,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Housewares encompass everything that makes life comfortable, extending from basic necessities to rare luxuries. At first everything comes from Europe but clever artisans soon learn to make, and sometimes improve, familiar items.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Pots and pans are important trade goods. The houseware trader is expected to have all the necessities in stock at a fair price.[NEWLINE]When assigned to the Household Trader profession, the master can handle twice the goods in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- YERBA_TRADER -->
@@ -519,12 +519,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TRADER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Getting started in the yerba trade meant dealing with two especially dangerous Indigenous nations: the Guaraní and Tupí. To add to the challenge, yerba was found in only two regions, Amambay and Alto Paraná.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TRADER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba mate. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the Yerba Trader profession, the master can market twice the quantity of yerba leaves in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- OIL_TRADER -->
