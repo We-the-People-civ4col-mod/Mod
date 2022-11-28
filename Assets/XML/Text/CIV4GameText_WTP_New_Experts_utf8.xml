@@ -287,12 +287,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RICE_FARMER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>In tropical areas rice can survive as a perennial. It grows in water. Rice seeds are milled with a huller to remove the chaff, producing brown rice. Removing the bran creates white rice.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RICE_FARMER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Rice is nutritious and light to carry. Scouts may have a loaf of bread for their first day on the trail but it's the bag of dried rice that feeds them for the rest of the trip.[NEWLINE]When assigned to the Rice Farmer profession, the expert can grow double the rice in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- VANILLA_COLLECTOR -->
@@ -316,12 +316,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Vanilla is a spice derived from orchids. There are three major species, all derived from the original Mexican plant. It can be pollinated by hand to produce the vanilla bean.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Vanilla is one of the two most popular flavours for sweet treats, the other being chocolate. It's used in candy, baking and liqueurs, all of which would be familiar to monks in colonial missions.[NEWLINE]When assigned to the Vanilla Collector profession, the expert can gather twice as many vanilla beans in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- YERBA_PLANTER -->
@@ -345,12 +345,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The Guaraní and Tupí cultivated yerba mate prior to European colonization. After the Jesuits started using it, yerba mate became widespread in what's now Paraguay and throughout other Spanish colonies.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba mate. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the Yerba Planter profession, the expert can get twice as many yerba leaves in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- HERDER -->
@@ -374,18 +374,18 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HERDER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Herding flocks is ancient. Biblical shepherds carried slings which they used to kill lions and Philistines, so herders in the New World were already well-prepared for wolves and bears.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HERDER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Cattle graze the tops of grass stalks. so they can use the same field for years. Sheep eat the whole grass plant down to the root, leaving pastures barren. The result can be a range war.[NEWLINE]When assigned to the Herder profession, the expert can raise twice as many animals in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- MAPLE_SIRUP_COLLECTOR -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MAPLE_SIRUP_COLLECTOR</Tag>
-        <English>Expert Maple Sirup Collector</English>
+        <English>Expert Maple Tree Tapper</English>
         <German>
             <Text>Erfahrener Ahornsaftsammler</Text>
             <Gender>Male</Gender>
@@ -394,7 +394,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR</Tag>
-        <English>Expert Maple Sirup Collector</English>
+        <English>Expert Maple Tree Tapper</English>
         <German>
             <Text>Erfahrener Ahornsaftsammler</Text>
             <Gender>Male</Gender>
