@@ -98788,7 +98788,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=73,y=140
-	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_LAKE
 	PlotType=3
 EndPlot
