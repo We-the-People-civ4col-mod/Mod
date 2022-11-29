@@ -548,18 +548,18 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OIL_TRADER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Olives are crushed for their oil. Once rapeseed oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OIL_TRADER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Cooking oil is used in most households almost every day. Because the market is so widespread it's a good cover for smuggling. Nostalgic settlers often prefer the taste of oil from their home country.[NEWLINE]When assigned to the Cooking Oil Trader profession, the master can sell twice as much cooking oil in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- FRUITS_PICKER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FRUITS_PICKER</Tag>
-        <English>Expert Fruits Picker</English>
+        <English>Expert Fruit Picker</English>
         <German>
             <Text>Erfahrener Früchtesammler</Text>
             <Gender>Male</Gender>
@@ -568,7 +568,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PICKER</Tag>
-        <English>Expert Fruits Picker</English>
+        <English>Expert Fruit Picker</English>
         <German>
             <Text>Erfahrener Früchtesammler</Text>
             <Gender>Male</Gender>
@@ -577,12 +577,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PICKER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Fresh fruit is essential for good health. Fruits mature in different seasons, giving people a feeling for nature. Knowing the right moment to capture a crop's ripeness means getting the best price.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PICKER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Fruit picking is one of the most laborious jobs available, what with climbing and stooping, but without pickers good food rots. It's usually a first job for immigrants and young people, and they move on to something less strenuous at the first opportunity.[NEWLINE]When assigned to the Fruit Picker profession, the expert can harvest twice as much fruit in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- POULTRY_BUTCHER -->
@@ -606,12 +606,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Butchers use sharp knives and they have to work fast so it's a dangerous job. Poultry is tricky because not only do the carcasses have to be cleaned and the meat portioned, but the feathers and down, particularly from geese and ducks, must be plucked for insulation.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Poultry is usually the cheapest domestic meat in any settlement. A good butcher works fast and keeps the price down. Workers who don't get paid much still can eat well and the result is a busy happy community.[NEWLINE]When assigned to the Poultry Butcher profession, the master can get twice as much meat and feathers in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- COAL_MINER -->
@@ -635,18 +635,18 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COAL_MINER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Coal is formed when dead plant matter decays into peat and is converted into coal by the heat and pressure of deep burial over millions of years. During colonial times coal is used for heating, not for industry.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COAL_MINER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Coal mining causes premature death and illness, but it's a soft rock that doesn't need as many explosives as hard rock mining. It's a job where labourers use picks and shovels, and they don't get paid much.[NEWLINE]When assigned to the Coal Miner profession, the expert can get twice the tonnage of coal in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- LEATHER_TAYLOR -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LEATHER_TAYLOR</Tag>
-        <English>Master Leather Padder</English>
+        <English>Master Leather Clothier</English>
         <German>
             <Text>Meister Lederschneider</Text>
             <Gender>Male</Gender>
@@ -655,7 +655,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR</Tag>
-        <English>Master Leather Padder</English>
+        <English>Master Leather Clothier</English>
         <German>
             <Text>Meister Lederschneider</Text>
             <Gender>Male</Gender>
@@ -664,12 +664,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Sewing padding and a lining into leather doesn't just make the garment more comfortable. By adding insulation it also improves health for those working outside, and can even save their lives.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>The clothing business has efficiencies and economies of scale. A solitary leather clothier might spend days fitting a coat to a single customer but a factory can have enough sizes in stock for everyone to buy off the rack.[NEWLINE]When assigned to the Leather Clothier profession, the master can produce twice as much leatherwear in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- CLOTH_TAYLOR -->
@@ -693,12 +693,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CLOTH_TAYLOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The tailor's shop includes sub-trades. The cutter seldom sews the garment. Another chooses the perfect fabric. In a growing town with a fashionable tailor, everyone from the merchant to the blacksmith buys there to look their best.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CLOTH_TAYLOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>The tailor creates the well-dressed man, stylish and ready to succeed at diplomacy, business and romance.[NEWLINE]When assigned to the Tailor profession, the master can complete twice the clothes in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- ROASTER -->
@@ -753,18 +753,18 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POTTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Pottery is an ancient way to store grain. In the rainy insect-ridden New World pots hold enough grain to keep settlers alive through the winter until in the spring they can finally plant their new crops. A few creative types shape imaginative vessels with decorative patterns, some merely for display. Pottery becomes a cottage art form.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POTTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Pottery lets villages store their surplus grain to get them through the hungry winter. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements.[NEWLINE]When assigned to the Potter profession, the master can make twice as many pots in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- MILK_MAID -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MILK_MAID</Tag>
-        <English>Skilled Milk Maid</English>
+        <English>Skilled Milkmaid</English>
         <German>
             <Text>Fleißige Milchmaid</Text>
             <Gender>Female</Gender>
@@ -773,7 +773,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MILK_MAID</Tag>
-        <English>Skilled Milk Maid</English>
+        <English>Skilled Milkmaid</English>
         <German>
             <Text>Fleißige Milchmaid</Text>
             <Gender>Female</Gender>
@@ -782,12 +782,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MILK_MAID_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Milkmaids get milk from cows, goats, sheep and any other cooperative mammal. Their work feeds the town children, improves the taste of tea or coffee, and provides the raw material for cheesemakers.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MILK_MAID_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Milkmaids work hard to deliver much-needed protein to settlers young and old. Anyone who thinks the work is easy hasn't been close enough to the business end of a cow. Milkmaids are also immune to smallpox, a rare advantage in colonial times.[NEWLINE]When assigned to the Milkmaid profession, the expert can get twice the milk in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- CHEESE_MAKER -->
@@ -811,12 +811,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHEESE_MAKER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Cheese is produced by coagulation of the milk protein casein. Milk is usually acidified and the enzymes of either rennet or bacterial enzymes are added so the casein coagulates. Curds are then separated from the liquid whey and pressed into finished cheese.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHEESE_MAKER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Cheese is valued for its transportability, long shelf life, and high content of fat, protein, calcium, and phosphorus. The long storage life of some cheeses, especially when encased in a protective rind, allows selling when markets are favourable.[NEWLINE]When assigned to the Cheesemaker profession, the master can get twice the weight of cheese in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- CHARCOAL_BURNER -->
@@ -840,12 +840,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHARCOAL_BURNER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Charcoal comes from wood cooked in a kiln over six to eight days, sometimes longer. Charcoal burns at 1,100 degrees Celsius. The melting point of iron is 1,200 degrees. By using a bellows on a charcoal fire a blacksmith can get to work.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHARCOAL_BURNER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>The charcoal burner watches the smoke exiting the kiln. If the smoke is thick and grey, the wood is still raw; thin, blue smoke indicates good carbonization.[NEWLINE]When assigned to the Charcoal Burner profession, the expert can get twice as much charcoal in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- BAKER -->
