@@ -6222,6 +6222,10 @@ int CvCivilizationInfo::getChar() const
 {
 	return m_iMissionaryChar;
 }
+int CvCivilizationInfo::getTradingPostChar() const
+{
+	return m_iMissionaryChar + 1;
+}
 void CvCivilizationInfo::setChar(int iChar)
 {
 	m_iMissionaryChar = iChar;

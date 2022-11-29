@@ -231,6 +231,26 @@ static void setupGameFontCharsOffset(const T eOffset)
 	}
 }
 
+static void setupGameFontCharsOffset(const CivilizationTypes eOffset)
+{
+	const int iNoChar = GC.getCivilizationInfo(FIRST_CIVILIZATION).getChar() + eOffset;
+	int iIndex = iNoChar;
+
+	for (CivilizationTypes eLoop = FIRST_CIVILIZATION; eLoop < NUM_CIVILIZATION_TYPES; ++eLoop)
+	{
+		CvCivilizationInfo& kInfo = GC.getCivilizationInfo(eLoop);
+		if (kInfo.getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN)
+		{
+			iIndex += 2;
+			kInfo.setChar(iIndex);
+		}
+		else
+		{
+			kInfo.setChar(iNoChar);
+		}
+	}
+}
+
 
 void CvGlobals::setupGameFontChars()
 {
@@ -255,13 +275,6 @@ void CvGlobals::setupGameFontChars()
 	{
 		return;
 	}
-
-	/*
-	gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"Cities"))
-	{
-		pXML->SetStringList(&m_paszCityNames, &m_iNumCityNames);
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	*/
 
 
 	pInterface->SetToChildByTagName(pXML, "Addresses");

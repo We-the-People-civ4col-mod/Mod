@@ -1643,6 +1643,7 @@ public:
 	DllExport int getMissionaryChar() const;
 	DllExport void setMissionaryChar(int iChar);
 	int getChar() const;
+	int getTradingPostChar() const;
 	void setChar(int iChar);
 
 	DllExport bool isAIPlayable() const;

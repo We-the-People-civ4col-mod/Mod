@@ -8997,7 +8997,7 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 	// WTP, ray, Native Trade Posts - START
 	if (pCity->getTradePostPlayer() != NO_PLAYER)
 	{
-		szBuffer.append(CvWString::format(L" %c", GC.getYieldInfo(YIELD_TRADE_GOODS).getChar()));
+		szBuffer.append(CvWString::format(L" %c", GC.getCivilizationInfo(GET_PLAYER(pCity->getTradePostPlayer()).getCivilizationType()).getTradingPostChar()));
 	}
 	// WTP, ray, Native Trade Posts - END
 

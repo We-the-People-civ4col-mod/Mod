@@ -99,7 +99,8 @@ class NativeAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 					self.tableManager.skipCell()
 				
 				if pLoopCity.getTradePostPlayer() != -1:
-					self.tableManager.addText(self.tradeStationText, pLoopCity.getTradePostPlayer(), -1, player.getWikiWidget())
+					szText = eChar = u" %c" % gc.getCivilizationInfo(gc.getPlayer(pLoopCity.getTradePostPlayer()).getCivilizationType()).getTradingPostChar()
+					self.tableManager.addText(szText, pLoopCity.getTradePostPlayer(), -1, player.getWikiWidget())
 				else:
 					self.tableManager.skipCell()
 				
