@@ -869,18 +869,18 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BAKER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The baker starts work well before dawn so that households can have their daily bread. As the bakery grows, offering cookies and pastries, it becomes a social center. Some bakers even set up tables where tea is served to accompany the treats.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BAKER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>An efficient baker can keep prices down thanks to economies of sale. She might also offer an unparalleled variety of pastries, pies and cakes for special occasions.[NEWLINE]When assigned to the Baker profession, the expert can bake twice as much in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- FIREWORKER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FIREWORKER</Tag>
-        <English>Master Fireworker</English>
+        <English>Master Powder Maker</English>
         <German>
             <Text>Meister Feuerwerker</Text>
             <Gender>Male</Gender>
@@ -889,7 +889,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FIREWORKER</Tag>
-        <English>Master Fireworker</English>
+        <English>Master Powder Maker</English>
         <German>
             <Text>Meister Feuerwerker</Text>
             <Gender>Male</Gender>
@@ -898,12 +898,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FIREWORKER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>In a powder magazine well away from other buildings the powder maker mixes gunpowder from sulphur, charcoal and saltpeter: ammunition for the soldiers' guns. During colonial times it's the only available explosive (dynamite will be invented in 1867) so it's also used for artillery, mining and road building.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FIREWORKER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>The powder maker needs to produce enough black powder for the soldiers' guns. Even more is needed for miners and the pioneers building roads. Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.[NEWLINE]When assigned to the Powder Maker profession, the master can mix twice as much gunpowder in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <!-- MESTIZZO -->
@@ -911,14 +911,14 @@
         <Tag>TXT_KEY_UNITCLASS_MESTIZZO</Tag>
         <English>Mestizzo</English>
         <German>
-            <Text>Mestizzo</Text>
+            <Text>Mestizo</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MESTIZZO</Tag>
-        <English>Mestizzo</English>
+        <English>Mestizo</English>
         <German>
             <Text>Mestizzo</Text>
             <Gender>Male</Gender>
@@ -927,12 +927,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MESTIZZO_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The mestizo is the child of a European and an Indigenous parent. Mestizo children are often rejected by both communities.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MESTIZZO_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Sometimes mestizos advance in spite of of the prejudice. Quanah Parker, a mestizo born to a European mother, leads the Comanches in raids on white settlements.</English>
         <German>TBD</German>
     </TEXT>
     <!-- MULATTO -->
@@ -956,12 +956,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MULATTO_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The mulatto is the child of a European and an African parent, often a slave woman. The child grows up as part of the slave population. To maintain cultural separation Europeans create artificial distinctions, such as being repelled by the idea of touching Black people.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MULATTO_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Mulattos add to the slave population but they also create cultural confusion. European women are not happy to see their husbands fathering Black babies.</English>
         <German>TBD</German>
     </TEXT>
     <!-- CONSTRUCTION_SUPPLIES -->
@@ -985,12 +985,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Construction supplies is a vast category, ranging from wood and bricks to nails and forged hardware.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>The carpenter needs construction supplies to work.</English>
         <German>TBD</German>
     </TEXT>
     <!-- BRAVE_LIEUTENANT -->
@@ -1014,12 +1014,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_PEDIA</Tag>
-        <English>TBD</English>
+        <English>When younger sons aren't smart enough for the priesthood, and their father's rich enough to buy them an army commission, they start as junior officers, charging into battle at the head of their troops. Bravery gives them a fighting chance.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Brave lieutenants are rare, appearing perhaps once out of every ten battles.</English>
         <German>TBD</German>
     </TEXT>
     <!-- CAPABLE_CAPTAIN -->
@@ -1043,12 +1043,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The one essential quality in a capable captain is prowess: the ability to win a fight. The best strategist in the American Revolutionary army was Benedict Arnold. Unfortunately he was strategic enough to recognize that the English would probably win, so he changed to what turned out to be the losing side, and his name became a synonym for infamy.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Capable captains are front line leaders. They are rare, occurring perhaps once out of every ten battles.</English>
         <German>TBD</German>
     </TEXT>
     <!-- ENTERTAINER -->
@@ -1072,12 +1072,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ENTERTAINER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Celebrities come at first from Europe but ultimately talent surfaces everywhere. Nonetheless plays and readings continue to rely on Old Country texts, both classical and sentimental, throughout the colonial period.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ENTERTAINER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Humans are social animals, Fame brings people together to be entertained, to see and be seen. A celebrity performance attracts the entire countryside. To have a resident famous actress improves any community's reputation. Leaving a trail of broken hearts behind her, her legend grows.</English>
         <German>TBD</German>
     </TEXT>
     <!-- HARLOT -->
@@ -1101,12 +1101,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HARLOT_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Church-going ladies may look down on an honest whore but harlots often have influence with the high and mighty, including those in the church. Prostitution is as diverse as society itself. The seductive harlot might have a lucrative career but it's short. Some who like the life go into management after their peak personal earning years.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HARLOT_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Lonely men often find happiness with a whore who also knows how to be a good listener. For the harlot herself, being in a world with five men for every woman means the chance to find her own husband instead of having her marriage arranged by her parents.</English>
         <German>TBD</German>
     </TEXT>
 </Civ4GameText>
