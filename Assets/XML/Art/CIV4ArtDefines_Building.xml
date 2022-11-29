@@ -2620,37 +2620,37 @@
             <Type>ART_DEF_BUILDING_POTTERY_HOUSE</Type>
             <LSystem>LSYSTEM_1x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Pottery_House_City.dds</CityTexture>
+            <CityTexture>Art/Interface/Screens/city_management/Potters_house.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
             <fScale>1.2</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
-            <NIF>Art/Structures/Buildings/Pottery/pottery_01.nif</NIF>
+            <NIF>Art/Structures/Buildings/Pottery/Potters_House.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Pottery_House_Button.dds</Button>
+            <Button>Art/interface/buttons/New_Building_Buttons/Potters_house_city.dds</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_POTTERY_SHOP</Type>
             <LSystem>LSYSTEM_2x1</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Pottery_Shop_City.dds</CityTexture>
+            <CityTexture>Art/Interface/Screens/city_management/Potters_shop.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>1.2</fScale>
+            <fScale>1.4</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
-            <NIF>Art/Structures/Buildings/Pottery/pottery_02.nif</NIF>
+            <NIF>Art/Structures/Buildings/Pottery/Potters_Shop.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Pottery_Shop_Button.dds</Button>
+            <Button>Art/interface/buttons/New_Building_Buttons/Potters_shop_city.dds</Button>
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_POTTERY_FACTORY</Type>
             <LSystem>LSYSTEM_2x2</LSystem>
             <bAnimated>0</bAnimated>
-            <CityTexture>Art/Interface/Screens/City_Screen_New_Buildings/Pottery_Factory_City.dds</CityTexture>
+            <CityTexture>Art/Interface/Screens/city_management/Pottery.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>1.2</fScale>
+            <fScale>1.6</fScale>
             <fInterfaceScale>0.6</fInterfaceScale>
-            <NIF>Art/Structures/Buildings/Pottery/pottery_03.nif</NIF>
+            <NIF>Art/Structures/Buildings/Pottery/Pottery.nif</NIF>
             <KFM/>
-            <Button>Art/interface/buttons/New_Building_Buttons/Pottery_Factory_Button.dds</Button>
+            <Button>Art/interface/buttons/New_Building_Buttons/Pottery_city.dds</Button>
         </BuildingArtInfo>
         <!-- New Buildings WTP: Tailor -->
         <BuildingArtInfo>
