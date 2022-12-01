@@ -461,7 +461,7 @@
             <bExtraAnimations>0</bExtraAnimations>
             <fScale>0.5</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Structures/Improvements/Supply_Depot/Ukraine_Cottage.nif</NIF>
+            <NIF>Art/Structures/Improvements/Supply_Depot/supply_depot.nif</NIF>
             <KFM/>
             <Button>,Art/colonization_atlas_buildings.dds,3,17</Button>
         </ImprovementArtInfo>
@@ -470,7 +470,7 @@
             <bExtraAnimations>0</bExtraAnimations>
             <fScale>0.5</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Structures/Improvements/Large_Supply_Depot/Ukraine_Cottage.nif</NIF>
+            <NIF>Art/Structures/Improvements/Large_Supply_Depot/large_supply_depot.nif</NIF>
             <KFM/>
             <Button>,Art/colonization_atlas_buildings.dds,4,17</Button>
         </ImprovementArtInfo>
