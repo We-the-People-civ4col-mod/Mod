@@ -12048,7 +12048,7 @@
             <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>

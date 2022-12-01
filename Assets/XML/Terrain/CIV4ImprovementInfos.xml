@@ -2752,7 +2752,12 @@
             <iDefenseModifier>0</iDefenseModifier>
             <iPillageGold>5</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>
-            <TerrainMakesValids/>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
             <FeatureMakesValids/>
             <BonusTypeStructs>
                 <BonusTypeStruct>
