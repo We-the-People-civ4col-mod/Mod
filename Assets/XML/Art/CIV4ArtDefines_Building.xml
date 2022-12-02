@@ -228,8 +228,8 @@
             <bAnimated>0</bAnimated>
             <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,6,4</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>1.0</fScale>
-            <fInterfaceScale>0.65</fInterfaceScale>
+            <fScale>1.1</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
             <NIF>Art/Structures/Buildings/stables/ranch.nif</NIF>
             <KFM/>
             <Button>,Art/colonization_atlas_buildings.dds,7,4</Button>
