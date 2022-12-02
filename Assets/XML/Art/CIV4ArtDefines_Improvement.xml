@@ -148,7 +148,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Structures/Improvements/Breeding_Pen/ranch.nif</NIF>
             <KFM/>
-            <Button>,Art/colonization_atlas_buildings.dds,1,17</Button>
+            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,6</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_QUARRY</Type>
@@ -292,7 +292,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Structures/Improvements/Large_Breeding_Pen/large_ranch.nif</NIF>
             <KFM/>
-            <Button>,Art/colonization_atlas_buildings.dds,2,17</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,7,15</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_LARGE_QUARRY</Type>
