@@ -54650,7 +54650,7 @@
             <iPower>0</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
             <iStudentWeight>0</iStudentWeight>
-            <iTeacherWeight>0</iTeacherWeight>
+            <iTeacherWeight>2</iTeacherWeight>
             <ProfessionMeshGroups>
                 <UnitMeshGroups>
                     <ProfessionType>NONE</ProfessionType>
@@ -55173,7 +55173,7 @@
             <iPower>0</iPower>
             <iNativeLearnTime>-1</iNativeLearnTime>
             <iStudentWeight>0</iStudentWeight>
-            <iTeacherWeight>0</iTeacherWeight>
+            <iTeacherWeight>2</iTeacherWeight>
             <ProfessionMeshGroups>
                 <UnitMeshGroups>
                     <ProfessionType>NONE</ProfessionType>
@@ -66321,7 +66321,7 @@
                 <YieldChange>
                     <YieldType>YIELD_WOOL_CLOTH</YieldType>
                     <iChange>-1</iChange>
-                </YieldChange> 
+                </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_WOOL</YieldType>
                     <iChange>-1</iChange>
@@ -76662,7 +76662,7 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
-        </UnitInfo>    
+        </UnitInfo>
         <UnitInfo>
             <Type>UNIT_MAPLE_SIRUP</Type>
             <Class>UNITCLASS_MAPLE_SIRUP</Class>
@@ -77832,7 +77832,7 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
-        </UnitInfo>    
+        </UnitInfo>
         <UnitInfo>
             <Type>UNIT_WOOL</Type>
             <Class>UNITCLASS_WOOL</Class>
@@ -78742,7 +78742,7 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
-        </UnitInfo>    
+        </UnitInfo>
         <UnitInfo>
             <Type>UNIT_HIDES</Type>
             <Class>UNITCLASS_HIDES</Class>
@@ -79652,7 +79652,7 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
-        </UnitInfo>    
+        </UnitInfo>
         <UnitInfo>
             <Type>UNIT_FRUITS</Type>
             <Class>UNITCLASS_FRUITS</Class>
@@ -79912,7 +79912,7 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
-        </UnitInfo>    
+        </UnitInfo>
         <UnitInfo>
             <Type>UNIT_OLIVES</Type>
             <Class>UNITCLASS_OLIVES</Class>
@@ -80302,7 +80302,7 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
-        </UnitInfo>    
+        </UnitInfo>
         <UnitInfo>
             <Type>UNIT_YERBA_LEAVES</Type>
             <Class>UNITCLASS_YERBA_LEAVES</Class>
@@ -83942,7 +83942,7 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
-        </UnitInfo>    
+        </UnitInfo>
         <UnitInfo>
             <Type>UNIT_WINE</Type>
             <Class>UNITCLASS_WINE</Class>
@@ -86152,7 +86152,7 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
-        </UnitInfo>    
+        </UnitInfo>
         <UnitInfo>
             <Type>UNIT_GOATS</Type>
             <Class>UNITCLASS_GOATS</Class>
@@ -86542,7 +86542,7 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
-        </UnitInfo>    
+        </UnitInfo>
         <UnitInfo>
             <Type>UNIT_CHICKEN</Type>
             <Class>UNITCLASS_CHICKEN</Class>
