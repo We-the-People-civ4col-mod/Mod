@@ -4952,7 +4952,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_GEMS:
 		case YIELD_LUXURY_GOODS:
 			break;
-			case YIELD_HAMMERS:
+		case YIELD_HAMMERS:
 			{
 				const int populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
 				iValue = static_cast<int>(iAmount * YIELD_HAMMERS_BASE_VALUE + populationMultiplier);
