@@ -1646,7 +1646,7 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>	
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_OLIVES</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Olives_Goods_Button.dds</Button>
@@ -9659,7 +9659,7 @@
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_ROYAL_FRIGATE</Type>
             <Button>,Art/colonization_atlas_military.dds,5,14</Button>
-            <FullLengthIcon>,Art/Interface/Screens/Europe/ships/Europe_Europe_Royal_Frigate.dds</FullLengthIcon>
+            <FullLengthIcon>,Art/Interface/Screens/Europe/ships/Europe_Royal_Frigate.dds</FullLengthIcon>
             <fScale>0.20</fScale>
             <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/Units/Ships_Transport/Royal_Frigate/Frigate_Constitution_FX.nif</NIF>
@@ -9691,7 +9691,7 @@
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_SPAIN_ROYAL_FRIGATE</Type>
             <Button>,Art/colonization_atlas_military.dds,5,14</Button>
-            <FullLengthIcon>,Art/Interface/Screens/Europe/ships/Europe_Europe_Royal_Frigate.dds</FullLengthIcon>
+            <FullLengthIcon>,Art/Interface/Screens/Europe/ships/Europe_Royal_Frigate.dds</FullLengthIcon>
             <fScale>0.20</fScale>
             <fInterfaceScale>0.5</fInterfaceScale>
             <NIF>Art/Units/spain/ships/Royal_Frigate/Frigate_Constitution_FX.nif</NIF>
@@ -13215,7 +13215,7 @@
                 <AudioRunTypeLoop/>
                 <AudioRunTypeEnd/>
         	</AudioRunSounds>
-        </UnitArtInfo>	
+        </UnitArtInfo>
         <!-- RaR Units Infantry -->
         <!-- RaR Units Infantry Town Guard-->
         <UnitArtInfo>
@@ -17055,7 +17055,7 @@
                 <AudioRunTypeLoop>LOOPSTEP_WHEELS</AudioRunTypeLoop>
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
-        </UnitArtInfo>        
+        </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_YERBA_TEA</Type>
             <Button>Art/interface/buttons/New_Yields_Buttons/Yerba_Tea_Goods_Button.dds</Button>
