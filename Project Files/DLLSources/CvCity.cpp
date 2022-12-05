@@ -13003,48 +13003,65 @@ int CvCity::getYieldDemand(YieldTypes eYield) const
 	return aYields.get(eYield);
 }
 // R&R, ray, adjustment Domestic Markets
+// function completely rewritten by Nightinggale to fix extreme price bug
 // needs to be checked for Special Cases like Luxury Goods
 void CvCity::doPrices()
 {
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	// constants to determine when to change price
+	// higher iPointsPerPriceDiff will make prices move more towards Europe prices
+	// higher iPointsToTriggerPriceChange will increase the chance of no change
+	// iDefaultPoints is how many points a yield has if there is no price diff
+	// note if iDefaultPoints <= iPointsToTriggerPriceChange, then prices will only move towards Europe prices
+	const int iPointsPerPriceDiff = 35;
+	const int iPointsToTriggerPriceChange = 70;
+	const int iDefaultPoints = 100;
+
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
-		CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+		const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+		const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
-		if (kYield.isCargo())
+		int iTargetPrice = kOwner.getYieldSellPrice(eYield);
+
+		// todo: change price offset to an int in yield xml to make it configurable for each yield instead of hardcoding
+		switch (eYield)
 		{
-			int iBuyPrice = 0;
-
+		case YIELD_LUXURY_GOODS:
 			// Luxury Goods should always give a little profit
-			if (eYield == YIELD_LUXURY_GOODS)
-			{
-				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS();
-			}
+			iTargetPrice += GLOBAL_DEFINE_PRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS;
+			break;
+		case YIELD_FIELD_WORKER_TOOLS:
+		case YIELD_HOUSEHOLD_GOODS:
 			// WTP, now also Fieldwoker Tools, but the Diff is only half
-			else if (eYield == YIELD_FIELD_WORKER_TOOLS)
-			{
-				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS() / 2);
-			}
 			// WTP, now also Household Goods, but the Diff is only half
-			else if (eYield == YIELD_HOUSEHOLD_GOODS)
-			{
-				iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + (GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS() / 2);
-			}
-			else
-			{
-				int iBaseThreshold = kYield.getPriceChangeThreshold() * GC.getHandicapInfo(getHandicapType()).getEuropePriceThresholdMultiplier() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 10000;
-				iBuyPrice = kYield.getBuyPriceLow() + GC.getGameINLINE().getSorenRandNum(kYield.getBuyPriceHigh() - kYield.getBuyPriceLow() + 1, "Price selection");
-				iBuyPrice += getYieldStored(eYield) / std::max(1, iBaseThreshold);
+			iTargetPrice += GLOBAL_DEFINE_PRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS / 2;
+			break;
+		}
 
-				if (GC.getGameINLINE().getSorenRandNum(100, "Price correction") < kYield.getPriceCorrectionPercent() * std::abs(iBuyPrice - getYieldBuyPrice(eYield)))
-				{
-					iBuyPrice = std::min(iBuyPrice, getYieldBuyPrice(eYield) + 1);
-					iBuyPrice = std::max(iBuyPrice, getYieldBuyPrice(eYield) - 1);
-				}
-			}
+		const int iPriceDiff = iTargetPrice - getYieldBuyPrice(eYield);
 
-			setYieldBuyPrice(eYield, iBuyPrice);
+		int iMin = -iDefaultPoints;
+		int iMax = iDefaultPoints;
 
+		if (iPriceDiff > 0)
+		{
+			iMax += iPriceDiff * iPointsPerPriceDiff;
+		}
+		else
+		{
+			iMin += iPriceDiff * iPointsPerPriceDiff;
+		}
+
+		// get result in range iMin to iMax, both inclusive
+		int iResult = GC.getGameINLINE().getSorenRandNum(iMax - iMin + 1, "Colony price change") + iMin;
+
+		if (iResult >= iPointsToTriggerPriceChange)
+		{
+			setYieldBuyPrice(eYield, getYieldBuyPrice(eYield) + 1);
+		}
+		else if (iResult <= -iPointsToTriggerPriceChange)
+		{
+			setYieldBuyPrice(eYield, getYieldBuyPrice(eYield) - 1);
 		}
 	}
 }

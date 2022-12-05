@@ -16082,8 +16082,10 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 		}
 	}
 
-	//Never let price fall below Minimum
-	iPrice = std::max(iPrice, GC.getYieldInfo(eYield).getMinimumBuyPrice());
+	//Never let price end up outside of range set in xml
+	const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+	iPrice = std::max(iPrice, kYield.getMinimumBuyPrice());
+	iPrice = std::min(iPrice, kYield.getBuyPriceHigh());
 
 	// TAC - Price Limits - Ray - END
 
