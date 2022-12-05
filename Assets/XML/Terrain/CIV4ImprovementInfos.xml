@@ -1226,10 +1226,6 @@
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_YERBA_LEAVES</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
@@ -1543,10 +1539,6 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_TOBACCO</YieldType>
-                    <iValue>3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_YERBA_LEAVES</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -3709,10 +3701,6 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_YERBA_LEAVES</YieldType>
-                    <iValue>2</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
                     <YieldType>YIELD_HEMP</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
@@ -4026,10 +4014,6 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_TOBACCO</YieldType>
-                    <iValue>4</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_YERBA_LEAVES</YieldType>
                     <iValue>4</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
