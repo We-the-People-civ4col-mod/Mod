@@ -8610,7 +8610,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=89
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -13665,14 +13664,12 @@ BeginPlot
 	x=20,y=88
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=20,y=89
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=20,y=90
@@ -13680,60 +13677,22 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=20,y=91
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	BeginUnit
-		UnitType=UNIT_NATIVE, UnitOwner=4
-		Profession=PROFESSION_BRAVE
-		Damage=0
-		Level=1, Experience=0
-		PromotionType=PROMOTION_GRENADIER2
-		FacingDirection=4
-		UnitAIType=UNITAI_DEFENSIVE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_NATIVE, UnitOwner=4
-		Profession=PROFESSION_BRAVE
-		Damage=0
-		Level=1, Experience=0
-		PromotionType=PROMOTION_MOUNTAINEER2
-		FacingDirection=4
-		UnitAIType=UNITAI_DEFENSIVE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_NATIVE, UnitOwner=4
-		Profession=PROFESSION_BRAVE
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		UnitAIType=UNITAI_DEFENSIVE
-	EndUnit
-	BeginCity
-		CityOwner=4
-		CityName=Orofino
-		CityPopulation=1
-		CitizenType=UNIT_NATIVE
-		Player4Culture=1
-	EndCity
-	TeamReveal=4,
-EndPlot
+	EndPlot
 BeginPlot
 	x=20,y=92
 	FeatureType=FEATURE_RIVER_FORD, FeatureVariety=0
 	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=20,y=93
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=20,y=94
@@ -13741,7 +13700,6 @@ BeginPlot
 	RiverWEDirection=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=20,y=95

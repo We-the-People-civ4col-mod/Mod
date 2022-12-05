@@ -271,6 +271,7 @@ EndMap
 ### Plot Info ###
 BeginPlot
 	x=0,y=0
+	EuropeType=EUROPE_WEST
 	FeatureType=FEATURE_ARROW_E, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
@@ -635,6 +636,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=1,y=0
+	EuropeType=EUROPE_WEST
 	FeatureType=FEATURE_ARROW_E, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
@@ -3488,14 +3490,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=9,y=1
-	EuropeType=EUROPE_WEST
+	EuropeType=EUROPE_SOUTH
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=9,y=2
-	EuropeType=EUROPE_WEST
+	EuropeType=EUROPE_SOUTH
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=0,
@@ -3838,7 +3840,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=1
-	EuropeType=EUROPE_WEST
+	EuropeType=EUROPE_SOUTH
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=0,
@@ -4184,7 +4186,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=11,y=0
-	EuropeType=EUROPE_WEST
+	EuropeType=EUROPE_SOUTH
 	FeatureType=FEATURE_ARROW_E, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
@@ -6277,7 +6279,6 @@ EndPlot
 BeginPlot
 	x=16,y=36
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_WETLAND
 	PlotType=1
 	TeamReveal=0,
@@ -6400,7 +6401,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=0
-	EuropeType=EUROPE_WEST
+	EuropeType=EUROPE_SOUTH
 	FeatureType=FEATURE_ARROW_E, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
@@ -6768,7 +6769,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=1
-	EuropeType=EUROPE_WEST
+	EuropeType=EUROPE_SOUTH
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=0,
@@ -7132,7 +7133,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=2
-	EuropeType=EUROPE_WEST
+	EuropeType=EUROPE_SOUTH
 	BonusType=BONUS_SHRIMP
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
@@ -13844,7 +13845,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=40
-	EuropeType=EUROPE_WEST
+	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=0,8,
@@ -14213,7 +14214,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=39
-	EuropeType=EUROPE_WEST
+	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=0,11,
@@ -14584,7 +14585,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=38
-	EuropeType=EUROPE_WEST
+	EuropeType=EUROPE_EAST
 	FeatureType=FEATURE_ARROW_NW, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3

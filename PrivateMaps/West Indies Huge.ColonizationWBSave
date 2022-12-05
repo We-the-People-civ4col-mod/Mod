@@ -3388,7 +3388,6 @@ BeginPlot
 	x=9,y=40
 	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST_EVERGREEN, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -4433,7 +4432,6 @@ BeginPlot
 	x=12,y=50
 	BonusType=BONUS_SUGAR
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_WETLAND
 	PlotType=2
 EndPlot
@@ -8004,7 +8002,6 @@ BeginPlot
 	x=23,y=48
 	BonusType=BONUS_COCOA
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
 EndPlot
@@ -14242,7 +14239,6 @@ BeginPlot
 	x=43,y=9
 	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -14414,7 +14410,6 @@ BeginPlot
 	x=43,y=38
 	BonusType=BONUS_MINERALS
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
 EndPlot
@@ -19906,7 +19901,6 @@ BeginPlot
 	RiverNSDirection=0
 	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
 EndPlot
@@ -22324,7 +22318,6 @@ EndPlot
 BeginPlot
 	x=67,y=18
 	BonusType=BONUS_YERBA
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
 EndPlot
@@ -25277,7 +25270,6 @@ BeginPlot
 	RiverNSDirection=0
 	isWOfRiver
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 EndPlot
@@ -25324,7 +25316,6 @@ BeginPlot
 	x=76,y=16
 	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
 EndPlot
@@ -27377,7 +27368,6 @@ EndPlot
 BeginPlot
 	x=82,y=22
 	ImprovementType=IMPROVEMENT_GOODY_HUT5
-	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
 EndPlot
