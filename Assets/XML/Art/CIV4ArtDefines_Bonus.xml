@@ -923,8 +923,8 @@
             <Type>ART_DEF_BONUS_RAPE</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>1.1</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Rape/wheat.nif</NIF>
-            <KFM>Art/Terrain/Resources/Rape/wheat.kfm</KFM>
+            <NIF>Art/Terrain/Resources/Rape/rape_colopedia.nif</NIF>
+            <KFM/>
             <Button>Art/interface/buttons/Rape_Button.dds</Button>
             <FontButtonIndex>105</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
