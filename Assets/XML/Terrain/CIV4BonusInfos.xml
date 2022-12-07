@@ -276,7 +276,7 @@
             <TerrainBooleans/>
             <FeatureBooleans>
                 <FeatureBoolean>
-                    <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
                 <FeatureBoolean>
@@ -11614,7 +11614,7 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_KAUTSCHUK</YieldType>
-                    <iValue>6</iValue>
+                    <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
@@ -11647,14 +11647,6 @@
             <FeatureBooleans>
                 <FeatureBoolean>
                     <FeatureType>FEATURE_JUNGLE</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
-                    <bFeature>1</bFeature>
-                </FeatureBoolean>
-                <FeatureBoolean>
-                    <FeatureType>FEATURE_MANGROVE</FeatureType>
                     <bFeature>1</bFeature>
                 </FeatureBoolean>
             </FeatureBooleans>

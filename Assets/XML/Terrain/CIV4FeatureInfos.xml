@@ -109,7 +109,7 @@
                     <iValue>4</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                    <YieldType>YIELD_KAUTSCHUK</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -300,7 +300,7 @@
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
