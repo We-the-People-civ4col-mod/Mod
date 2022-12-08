@@ -4801,7 +4801,7 @@
             <YieldEquipedNums>
                 <YieldEquipedNum>
                     <YieldType>YIELD_BAKERY_GOODS</YieldType>
-                    <iYieldAmount>100</iYieldAmount>
+                    <iYieldAmount>50</iYieldAmount>
                 </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions/>
@@ -4845,10 +4845,6 @@
             <YieldEquipedNums>
                 <YieldEquipedNum>
                     <YieldType>YIELD_TRADE_GOODS</YieldType>
-                    <iYieldAmount>50</iYieldAmount>
-                </YieldEquipedNum>
-                <YieldEquipedNum>
-                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
                     <iYieldAmount>50</iYieldAmount>
                 </YieldEquipedNum>
             </YieldEquipedNums>
