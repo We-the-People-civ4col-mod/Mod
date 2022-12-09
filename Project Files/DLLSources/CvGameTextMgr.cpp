@@ -9073,7 +9073,8 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 	// WTP, ray Domestic Market Events - END
 
 	// WTP, ray, Overflow Icon in Billboard - START
-	if (pCity->getTotalYieldStored() >= pCity->getMaxYieldCapacity())
+	// we now only display it for Colonies and only for the active player
+	if (cityOwnerPlayer.isPlayable() && pCity->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer() && pCity->getTotalYieldStored() >= pCity->getMaxYieldCapacity())
 	{
 		szBuffer.append(CvWString::format(L" %c", GC.getSymbolID(OVERFLOW_CHAR)));
 	}
