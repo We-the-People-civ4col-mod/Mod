@@ -2501,4 +2501,22 @@
         <French>Le premier cabinet médical de vos colonies vient de s'ouvrir. Cela devrait aider à améliorer la santé de vos colons.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Herr Doktor, Sie kommen gerade rechtzeitig. Wir haben den Innenausbau Eurer neuen Praxis gerade abgeschlossen. Ist sie nicht wunderschön geworden?![NEWLINE][NEWLINE]Ein festes Haus aus Stein. Damit habt Ihr eines der besten Häuser in der Stadt. Aber sagt mal, ich habe immer diese Rückenschmerzen, habt Ihr nicht ein Mittel dagegen?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nun, vielen Dank für das Haus, es ist in der Tat wirklich sehr schön geworden.[NEWLINE][NEWLINE]Ich werde gleich morgen einziehen und meine Arztpraxis eröffnen. Kommt doch übermorgen noch einmal vorbei, dann habe ich auch die Kisten mit den Medikamenten ausgepackt![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_CUTTER</Tag>
+        <English>First Pirate Cutter</English>
+        <French>First Pirate Cutter</French>
+        <German>Erster Piratenkutter</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_CUTTER_HEAD</Tag>
+        <English>In Blackbeard's footsteps</English>
+        <French>In Blackbeard's footsteps</French>
+        <German>Auf Blackbeard's Spuren</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_CUTTER_TEXT</Tag>
+        <English>Captain, you now have your first fast pirate cutter, which you can use to disrupt enemy coastal shipping and fill your treasury. [NEWLINE][NEWLINE]In Port Royal you can make a name for yourself, enjoy harlots and heavy rum. But do you really want that? Where is your fear of God, sire? An honorable service for the king or Jolly Roger and eternal damnation? [NEWLINE][NEWLINE]You can still take the right path... but after all, the colony has to be financed somehow... maybe you should...[NEWLINE][NEWLINE]</English>
+        <French>Captain, you now have your first fast pirate cutter, which you can use to disrupt enemy coastal shipping and fill your treasury. [NEWLINE][NEWLINE]In Port Royal you can make a name for yourself, enjoy harlots and heavy rum. But do you really want that? Where is your fear of God, sire? An honorable service for the king or Jolly Roger and eternal damnation? [NEWLINE][NEWLINE]You can still take the right path... but after all, the colony has to be financed somehow... maybe you should...[NEWLINE][NEWLINE]</French>
+        <German>Wohlan Captain, Ihr habt nun Euren ersten schnelle Piratensegler, mit dem Ihr die Küstenschifffahrt des Feindes stören und Eure Schatzkammer füllen könnt. [NEWLINE][NEWLINE]In Port Royal könnt Ihr Euch einen Namen machen, leichte Mädchen und schweren Rum genießen. Aber wollt Ihr das wirklich? Wo bleibt Eure Gottesfurcht, Sire? Ein ehrenvoller Dienst fürs Vaterland oder Jolly Roger und ewige Verdammnis? [NEWLINE][NEWLINE]Noch könnt Ihr den richtigen Weg einschlagen...aber schließlich muss die Kolonie ja auch irgendwie finanziert werden...vielleicht sollte man doch...[NEWLINE][NEWLINE]</German>
+    </TEXT>
 </Civ4GameText>
