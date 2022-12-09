@@ -1545,11 +1545,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_LOGWOOD</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <YieldType>YIELD_ORE</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
