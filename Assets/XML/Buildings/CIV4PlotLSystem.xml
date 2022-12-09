@@ -427,7 +427,7 @@
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops.nif::2x3</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
-			<Attribute Class="Bonus">NO_BONUS,BONUS_ALL,!BONUS_TOBACCO,!BONUS_COTTON,!BONUS_HEMP,!BONUS_INDIGO,!BONUS_COFFEE,!BONUS_COCOA,!BONUS_SUGAR,!BONUS_CORN,!BONUS_POTATO,!BONUS_SWEET_POTATO,!BONUS_SWEET_POTATO,!BONUS_BARLEY,!BONUS_FLAX,!BONUS_PEANUT,!BONUS_RAPE</Attribute>
+			<Attribute Class="Bonus">NO_BONUS,BONUS_ALL,!BONUS_TOBACCO,!BONUS_COTTON,!BONUS_HEMP,!BONUS_INDIGO,!BONUS_COFFEE,!BONUS_COCOA,!BONUS_SUGAR,!BONUS_CORN,!BONUS_POTATO,!BONUS_SWEET_POTATO,!BONUS_BARLEY,!BONUS_FLAX,!BONUS_PEANUT,!BONUS_RAPE</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
 			<Attribute Class="Scalar">bForceGround:1</Attribute>
@@ -1164,6 +1164,175 @@
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+<!-- beans -->
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem.nif::2x2_01_Cnq_Worked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem.nif::2x2_01_Cnq_Worked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem.nif::2x2_01_Cnq_Worked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem.nif::2x2_01_Cnq_Worked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem.nif::1x1_01_Cnq_Worked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem.nif::1x1_01_Cnq_Worked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem.nif::1x1_01_Cnq_Worked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem.nif::1x1_01_Cnq_Worked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem_uw.nif::2x2_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem_uw.nif::2x2_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem_uw.nif::2x2_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem_uw.nif::2x2_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem_uw.nif::1x1_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem_uw.nif::1x1_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem_uw.nif::1x1_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
+			<Attribute Class="Rotation">90,270</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem_uw.nif::1x1_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Scale>0.5</Scale>
@@ -2971,6 +3140,59 @@
 			<Attribute Class="Scalar">szBatchGroup:POTATO_crop</Attribute>
 			<Scale>0.5</Scale>
 		</ArtRef>
+<!-- Beans -->
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem.nif::4x4_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">NO_IMPROVEMENT,IMPROVEMENT_ALL,!IMPROVEMENT_FARM,!IMPROVEMENT_LARGE_FARM,!IMPROVEMENT_PLANTATION,!IMPROVEMENT_LARGE_PLANTATION,!IMPROVEMENT_FRUIT_PLANTATION,!IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem.nif::4x4_02_Cnq_Notworked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">NO_IMPROVEMENT,IMPROVEMENT_ALL,!IMPROVEMENT_FARM,!IMPROVEMENT_LARGE_FARM,!IMPROVEMENT_PLANTATION,!IMPROVEMENT_LARGE_PLANTATION,!IMPROVEMENT_FRUIT_PLANTATION,!IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem.nif::4x4_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem.nif::4x4_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem_uw.nif::2x2_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="art:beans_crop">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Beans/cnq_lsystem_uw.nif::2x2_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
+			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">szBatchGroup:beans_crop</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
 <!-- Hemp -->
 		<ArtRef Name="art:hemp_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem_nw.nif::1x1_01_Cnq_Notworked</Attribute>
@@ -4508,6 +4730,14 @@
 		<!--- Potato -->
 		<ArtRef Name="goal:BONUS_POTATO">
 			<Attribute Class="Bonus">BONUS_POTATO</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:6</Attribute>
+			<Attribute Class="Scalar">bPlace:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
+		</ArtRef>
+		<!--- Beans -->
+		<ArtRef Name="goal:BONUS_BEANS">
+			<Attribute Class="Bonus">BONUS_BEANS</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:6</Attribute>
 			<Attribute Class="Scalar">bPlace:0</Attribute>
 			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
