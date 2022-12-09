@@ -6611,7 +6611,16 @@
             <Description>TXT_KEY_IMPROVEMENT_FISHING_NETS</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_FISHING_NETS_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_FISHING_NETS</ArtDefineTag>
-            <PrereqNatureYields/>
+            <PrereqNatureYields>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GEMS</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
