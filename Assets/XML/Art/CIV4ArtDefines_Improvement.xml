@@ -445,7 +445,7 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Structures/Improvements/Iron_Mill/watermillJAP.nif</NIF>
             <KFM>Art/Structures/Improvements/Iron_Mill/watermillJAP.kfm</KFM>
-            <Button>,Art/colonization_atlas_buildings.dds,8,14</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,8,12</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_CANAL</Type>
