@@ -4845,7 +4845,7 @@
             <YieldEquipedNums>
                 <YieldEquipedNum>
                     <YieldType>YIELD_TRADE_GOODS</YieldType>
-                    <iYieldAmount>50</iYieldAmount>
+                    <iYieldAmount>100</iYieldAmount>
                 </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions/>
