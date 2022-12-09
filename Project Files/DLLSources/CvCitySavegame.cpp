@@ -600,6 +600,14 @@ void CvCity::read(CvSavegameReader reader)
 	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
 		m_em_iYieldStored.keepMax(eYield, 0);
+
+		// make sure we won't read corrupted extreme domestic prices - Nightinggale
+		const CvYieldInfo& kInfo = GC.getInfo(eYield);
+		int iMaxPrice = kInfo.getBuyPriceHigh() + 10;
+		if (getYieldBuyPrice(eYield) > iMaxPrice)
+		{
+			setYieldBuyPrice(eYield, iMaxPrice);
+		}
 	}
 
 	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale

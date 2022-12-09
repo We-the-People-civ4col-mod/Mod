@@ -13059,7 +13059,7 @@ void CvCity::doPrices()
 		{
 			setYieldBuyPrice(eYield, getYieldBuyPrice(eYield) + 1);
 		}
-		else if (iResult <= -iPointsToTriggerPriceChange)
+		else if (iResult <= -iPointsToTriggerPriceChange && kYield.getMinimumBuyPrice() < getYieldBuyPrice(eYield))
 		{
 			setYieldBuyPrice(eYield, getYieldBuyPrice(eYield) - 1);
 		}
