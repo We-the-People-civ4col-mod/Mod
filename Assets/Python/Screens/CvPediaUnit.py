@@ -139,7 +139,7 @@ class CvPediaUnit:
 					szCost = localText.getText("TXT_KEY_PEDIA_COST", ( gc.getActivePlayer().getUnitYieldProductionNeeded(self.iUnit, iYield), ) )
 				## R&R, Robert Surcouf,  Pedia - Start
 				#screen.appendListBoxStringNoUpdate(panelName, u"<font=2>" + szCost.upper() + u"%c" % gc.getYieldInfo(iYield).getChar() + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
-				screen.appendListBoxStringNoUpdate(panelName, u"<font=2>" + szCost + u"%c" % gc.getYieldInfo(iYield).getChar() + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
+				screen.appendListBoxStringNoUpdate(panelName, u"<font=2>" + szCost + u"%c" % gc.getYieldInfo(iYield).getChar() + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_YIELDS, iYield, 1, CvUtil.FONT_LEFT_JUSTIFY)
 				## R&R, Robert Surcouf,  Pedia - Start
 				
 		screen.updateListBox(panelName)
