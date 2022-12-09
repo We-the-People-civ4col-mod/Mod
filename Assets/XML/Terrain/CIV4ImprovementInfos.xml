@@ -6687,7 +6687,20 @@
             <Description>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_HUNTERS_STAGE</ArtDefineTag>
-            <PrereqNatureYields/>
+            <PrereqNatureYields>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_WILD_FEATHERS</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FUR</YieldType>
