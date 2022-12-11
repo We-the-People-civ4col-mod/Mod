@@ -1642,9 +1642,9 @@
                     <FeatureType>FEATURE_SALT_DRAINAGE</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
-            </FeatureMakesValids> 
-			<BonusTypeStructs>
-                 <BonusTypeStruct>
+            </FeatureMakesValids>
+            <BonusTypeStructs>
+                <BonusTypeStruct>
                     <BonusType>BONUS_COTTON</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -3172,7 +3172,7 @@
             <Description>TXT_KEY_IMPROVEMENT_FRUIT_PLANTATION</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_FRUIT_PLANTATION_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_FRUIT_PLANTATION</ArtDefineTag>
-             <PrereqNatureYields>
+            <PrereqNatureYields>
                 <YieldIntegerPair>
                     <YieldType>YIELD_COCOA_FRUITS</YieldType>
                     <iValue>2</iValue>
@@ -3237,7 +3237,7 @@
                 </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
-               <BonusTypeStruct>
+                <BonusTypeStruct>
                     <BonusType>BONUS_COCOA</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -3247,8 +3247,8 @@
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
-                </BonusTypeStruct> 
-				<BonusTypeStruct>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
                     <BonusType>BONUS_MELON</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -5630,7 +5630,7 @@
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </PrereqNatureYields>
-           <YieldIncreases>
+            <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FOOD</YieldType>
                     <iValue>2</iValue>
@@ -5685,7 +5685,7 @@
                 </FeatureMakesValid>
             </FeatureMakesValids>
             <BonusTypeStructs>
-                 <BonusTypeStruct>
+                <BonusTypeStruct>
                     <BonusType>BONUS_COCOA</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -5696,7 +5696,7 @@
                         </YieldIntegerPair>
                     </YieldChanges>
                 </BonusTypeStruct>
-				<BonusTypeStruct>
+                <BonusTypeStruct>
                     <BonusType>BONUS_MELON</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
