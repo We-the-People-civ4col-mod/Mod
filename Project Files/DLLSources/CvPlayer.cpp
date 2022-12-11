@@ -22741,6 +22741,7 @@ void CvPlayer::checkForPrivateersAccusation()
 		// now init the dialogue, there is no specific data to transfer
 		CvDiploParameters* pDiplo = new CvDiploParameters(eColonialPlayer);
 		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_PRIVATEERS_ACCUSSATION"));
+		pDiplo->setData(eColonialPlayer);
 		pDiplo->setAIContact(true);
 		gDLL->beginDiplomacy(pDiplo, getID());
 	}
