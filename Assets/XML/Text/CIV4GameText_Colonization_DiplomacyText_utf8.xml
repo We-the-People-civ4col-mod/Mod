@@ -6845,7 +6845,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PRIVATEERS_ACCUSSATION</Tag>
-        <English>We have been giving convincing evidence by our agents that the [COLOR_HIGHLIGHT_TEXT]privateers[COLOR_REVERT] lurking in our waters are operating under your command. We demand that these Ships are immediately withdrawn to [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT].</English>
+        <English>We have been giving convincing evidence by our agents that the [COLOR_HIGHLIGHT_TEXT]privateers[COLOR_REVERT] lurking in our waters are operating under your command. We demand that these ships are immediately withdrawn to [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT].</English>
         <German>Uns wurden von unseren Agenten überzeugende Beweise zugespielt, dass die [COLOR_HIGHLIGHT_TEXT]Kaperfahrer[COLOR_REVERT], die seit kurzem unsere Hoheitsgewässer heimsuchen unter eurem Befehl handeln. Wir verlangen, dass diese Schiffe unverzüglich nach [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] zurückberufen werden.</German>
     </TEXT>
     <TEXT>
@@ -6855,7 +6855,7 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_PRIVATEERS_DENY</Tag>
-        <English>We have nothing to do with these privateers. You are wrongly informed. These Privateers listen to the command of somebody else. (attitude worsens)</English>
+        <English>We have nothing to do with these privateers. You are wrongly informed. These privateers listen to the command of somebody else. (attitude worsens)</English>
         <German>Wir haben nichts mit diesen Kaperfahrern zu tun. Ihr wurdet falsch informiert. Diese Kaperfahrer stehen unter dem Befehl einer andere Macht. (Beziehungen verschlechtern sich)</German>
     </TEXT>
     <TEXT>
