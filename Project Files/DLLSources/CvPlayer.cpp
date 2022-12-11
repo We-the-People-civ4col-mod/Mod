@@ -22716,12 +22716,13 @@ void CvPlayer::checkForPrivateersAccusation()
 			{
 				// we check if we are in the territory of a player and that player is a colonial player
 				PlayerTypes ePossiblePlayer = pPlot->getOwnerINLINE();
-				if(ePossiblePlayer != NO_PLAYER && GET_PLAYER(ePossiblePlayer).isPlayable())
+				if(ePossiblePlayer != NO_PLAYER && GET_PLAYER(ePossiblePlayer).getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN)
 				{
 					// also we need to check that we are not at war with that player
+					// or that plot and unit are owned by the same team
 					// otherwise the DLL Diplo Event would immersively make no sense
 					TeamTypes eOtherColonialPlayerTeam = GET_PLAYER(ePossiblePlayer).getTeam();
-					if (!GET_TEAM(getTeam()).isAtWar(eOtherColonialPlayerTeam))
+					if (eOtherColonialPlayerTeam != getTeam() && !GET_TEAM(getTeam()).isAtWar(eOtherColonialPlayerTeam))
 					{
 						eColonialPlayer = ePossiblePlayer;
 						break;
@@ -22736,7 +22737,7 @@ void CvPlayer::checkForPrivateersAccusation()
 	{
 		// resetting the timer
 		int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
-		m_iTimerPrivateersDiploEvent = GC.getTIMER_PRIVATEERS_DIPLO_EVENT() * gamespeedMod /100;
+		m_iTimerPrivateersDiploEvent = GLOBAL_DEFINE_TIMER_PRIVATEERS_DIPLO_EVENT * gamespeedMod /100;
 
 		// now init the dialogue, there is no specific data to transfer
 		CvDiploParameters* pDiplo = new CvDiploParameters(eColonialPlayer);
