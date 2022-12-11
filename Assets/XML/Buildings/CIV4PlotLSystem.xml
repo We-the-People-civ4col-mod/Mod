@@ -1849,43 +1849,43 @@
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x1_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x1_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x1_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x1_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x2_01_Cofwe_Worked</Attribute>
@@ -1895,123 +1895,123 @@
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x2_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x2_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x2_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x1_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x1_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x1_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x1_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">0,180</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x2_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x2_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x2_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x2_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Rotation">90,270</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 <!-- cotton -->
 		<ArtRef Name="art:cotton_crop">
@@ -3481,55 +3481,55 @@
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::2x2_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::2x2_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::2x2_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:cocoa_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::2x2_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:cocoa_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 <!-- cocoa improvement crap -->
-		<ArtRef Name="art:COCOA_PLANTATION_RACK">
+		<ArtRef Name="art:FRUIT_PLANTATION_RACK">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x3_01_Rack_NotWorked</Attribute>
 			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szForceContourNode:Building</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
-		<ArtRef Name="art:COCOA_PLANTATION_RACK">
+		<ArtRef Name="art:FRUIT_PLANTATION_RACK">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cocoa/Cofwes_LSystem.nif::1x3_01_Rack_Worked</Attribute>
 			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">szForceContourNode:Building</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.8</Scale>
 		</ArtRef>
 <!-- COTTON -->
 		<ArtRef Name="art:cotton_crop">
@@ -5457,17 +5457,14 @@
 			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
 		</ArtRef>
 <!-- cocoa plantation -->
-		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+		<ArtRef Name="goal:IMPROVEMENT_FRUIT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
-			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:6</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
@@ -5475,17 +5472,14 @@
 			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
 			<Scale>0.6</Scale>
 		</ArtRef>
-		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_FRUIT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
-			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:6</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
@@ -5493,83 +5487,14 @@
 			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
 			<Scale>0.6</Scale>
 		</ArtRef>
-		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
-			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+		<ArtRef Name="goal:IMPROVEMENT_FRUIT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
-			<Attribute Class="Scalar">fCenterCut:70</Attribute>
-			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
-			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
-			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
-			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
-			<Scale>0.6</Scale>
-		</ArtRef>
-		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
-			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
-			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
-			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
-			<Attribute Class="Scalar">fCenterCut:70</Attribute>
-			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
-			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
-			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
-			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
-			<Scale>0.6</Scale>
-		</ArtRef>
-		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
-			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_NORTH</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
-			<Attribute Class="Scalar">fCenterCut:70</Attribute>
-			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
-			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
-			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
-			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
-			<Scale>0.6</Scale>
-		</ArtRef>
-		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
-			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
-			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_NORTH</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
-			<Attribute Class="Scalar">fCenterCut:70</Attribute>
-			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
-			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
-			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
-			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
-			<Scale>0.6</Scale>
-		</ArtRef>
-		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
-			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
-			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
@@ -5577,83 +5502,14 @@
 			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
 			<Scale>0.6</Scale>
 		</ArtRef>
-		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_FRUIT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FRUIT_PLANTATION</Attribute>
 			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_COCOA</Attribute>
+			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:FRUIT_PLANTATION_RACK</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
-			<Attribute Class="Scalar">fCenterCut:70</Attribute>
-			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
-			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
-			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
-			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
-			<Scale>0.6</Scale>
-		</ArtRef>
-		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
-			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
-			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
-			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
-			<Attribute Class="Scalar">fCenterCut:70</Attribute>
-			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
-			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
-			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
-			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
-			<Scale>0.6</Scale>
-		</ArtRef>
-		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
-			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
-			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
-			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
-			<Attribute Class="Scalar">fCenterCut:70</Attribute>
-			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
-			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
-			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
-			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
-			<Scale>0.6</Scale>
-		</ArtRef>
-		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
-			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
-			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_NORTH</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
-			<Attribute Class="Scalar">fCenterCut:70</Attribute>
-			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
-			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
-			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
-			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
-			<Scale>0.6</Scale>
-		</ArtRef>
-		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
-			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
-			<Attribute Class="Bonus">BONUS_COCOA</Attribute>
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_NORTH</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">szExtra:art:COCOA_PLANTATION_RACK</Attribute>
-			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
-			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
