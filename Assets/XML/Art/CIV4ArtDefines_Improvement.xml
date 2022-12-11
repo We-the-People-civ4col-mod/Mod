@@ -119,7 +119,7 @@
             <bExtraAnimations>0</bExtraAnimations>
             <fScale>0.6</fScale>
             <fInterfaceScale>1.25</fInterfaceScale>
-            <NIF>Art/Structures/Improvements/Cocoa_Plantation/Cocoa_Plantation.nif</NIF>
+            <NIF>Art/Structures/Improvements/fruit_plantation/fruit_plantation.nif</NIF>
             <KFM/>
             <Button>,Art/colonization_atlas_buildings.dds,6,15</Button>
         </ImprovementArtInfo>
@@ -263,7 +263,7 @@
             <bExtraAnimations>0</bExtraAnimations>
             <fScale>0.7</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Structures/Improvements/Cocoa_Plantation/Cocoa_Plantation2.nif</NIF>
+            <NIF>Art/Structures/Improvements/fruit_plantation/large_fruit_plantation.nif</NIF>
             <KFM/>
             <Button>,Art/colonization_atlas_buildings.dds,2,11</Button>
         </ImprovementArtInfo>
