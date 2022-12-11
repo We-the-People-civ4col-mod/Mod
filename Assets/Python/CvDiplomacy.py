@@ -421,7 +421,15 @@ class CvDiplomacy:
 			self.addUserComment("USER_DIPLOCOMMENT_ROYAL_INTERVENTION_YES_GOLD", -1, -1)
 			self.addUserComment("USER_DIPLOCOMMENT_ROYAL_INTERVENTION_YES_TAX_INCREASE", -1, -1)
 			self.addUserComment("USER_DIPLOCOMMENT_ROYAL_INTERVENTION_NO", -1, -1)
-		# WTP, ray, Royal Intervention, START
+		# WTP, ray, Royal Intervention, END
+		
+		# WTP, ray, Privateers DLL Diplo Event - START
+		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_PRIVATEERS_ACCUSSATION")):
+
+			self.addUserComment("USER_DIPLOCOMMENT_PRIVATEERS_ADMIT", -1, -1)
+			self.addUserComment("USER_DIPLOCOMMENT_PRIVATEERS_DENY", -1, -1)
+			self.addUserComment("USER_DIPLOCOMMENT_PRIVATEERS_WAR", -1, -1)
+		# WTP, ray, Privateers DLL Diplo Event - END
 		
 		# RaR, ray Church Wars
 		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_CHURCH_WAR")):
@@ -1394,6 +1402,20 @@ class CvDiplomacy:
 			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ROYAL_INTERVENTION, diploScreen.getData(), 3)
 			diploScreen.closeScreen()
 		# WTP, ray, Royal Intervention, END
+		
+		# WTP, ray, Privateers DLL Diplo Event - START
+		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_PRIVATEERS_ADMIT")):
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_PRIVATEERS_ACCUSATION, diploScreen.getData(), 1)
+			diploScreen.closeScreen()
+		
+		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_PRIVATEERS_DENY")):
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_PRIVATEERS_ACCUSATION, diploScreen.getData(), 2)
+			diploScreen.closeScreen()
+		
+		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_PRIVATEERS_WAR")):
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_PRIVATEERS_ACCUSATION, diploScreen.getData(), 3)
+			diploScreen.closeScreen()
+		# WTP, ray, Privateers DLL Diplo Event - END
 		
 		# RaR, ray Church Wars
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_CHURCH_WAR_YES")):

@@ -55,6 +55,7 @@ CvPlayer::CvPlayer()
 	m_iTimerEuropeanWars = 0;
 	m_iTimerEuropeanPeace = 0;
 	m_iTimerRoyalInterventions = 0; // WTP, ray, Royal Intervention, START
+	m_iTimerPrivateersDiploEvent = 0; // WTP, ray, Privateers DLL Diplo Event - START
 	m_iTimerPrisonsCrowded = 0;
 	m_iTimerRevolutionaryNoble = 0;
 	m_iTimerBishop = 0;
@@ -4662,6 +4663,54 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 		}
 		break;
 	// WTP, ray, Royal Intervention, END
+
+	// WTP, ray, Privateers DLL Diplo Event - START
+	case DIPLOEVENT_PRIVATEERS_ACCUSATION:
+		{
+			// this is our own Player
+			CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+
+			// this here is the Colonial Player itself
+			PlayerTypes eColonialPlayer = (PlayerTypes) getID();
+
+			// getting the Parent of the Colonial Player 
+			PlayerTypes parentID = getParent();
+			CvPlayer& kColonialParentPlayer = GET_PLAYER(parentID);
+
+			// this is the choice we made
+			int choice = iData2;
+
+			// we decided to admit a mistake
+			// all ships with hidden nationality will be sent back to Port Royal
+			// attitude will improve to both the colonial player and his parent
+			if (choice == 1)
+			{
+				int iAttitudeDecrease = GC.getDefineINT("AI_ATTITUDE_INCREASE_FOR_ACCEPTING");
+				AI_changeAttitudeExtra(ePlayer, iAttitudeDecrease);
+				kColonialParentPlayer.AI_changeAttitudeExtra(ePlayer, iAttitudeDecrease);
+				// this will withdraw all the Privateers to Port Royal
+				kPlayer.withDrawAllPrivateersToPortRoyal();
+			}
+
+			// we decided to deny accussation
+			// attitude will get worsened to both the colonial player and his parent
+			if (choice == 2)
+			{
+				int iAttitudeDecrease = GC.getDefineINT("AI_ATTITUDE_DECREASE_FOR_REFUSING");
+				AI_changeAttitudeExtra(ePlayer, -iAttitudeDecrease);
+				kColonialParentPlayer.AI_changeAttitudeExtra(ePlayer, -iAttitudeDecrease);
+			}
+
+			// we decided to play with open cards and declare war
+			// no attitude changes necessary since that will come with war declaration anyways
+			if (choice == 3)
+			{
+				GET_TEAM(kPlayer.getTeam()).declareWar(GET_PLAYER(eColonialPlayer).getTeam(),false, WARPLAN_LIMITED);
+			}
+		}
+		break;
+
+	// WTP, ray, Privateers DLL Diplo Event - END
 
 	// R&R, ray, Natives Trading - START
 	case DIPLOEVENT_NATIVE_TRADE:
@@ -22619,6 +22668,111 @@ void CvPlayer::checkForRoyalIntervention()
 	return;
 }
 // WTP, ray, Royal Intervention, END
+
+// WTP, ray, Privateers DLL Diplo Event - START
+void CvPlayer::checkForPrivateersAccusation()
+{
+	// only do this for Human Player, so we end for others
+	if(!isHuman())
+	{
+		return;
+	}
+
+	// we do not check for this during forced peace period
+	if (GC.getGame().getRemainingForcedPeaceTurns() > 0)
+	{
+		return;
+	}
+
+	// check timer condition for Privateers DLL Diplo Event
+	if(m_iTimerPrivateersDiploEvent > 0)
+	{
+		m_iTimerPrivateersDiploEvent = (m_iTimerPrivateersDiploEvent - 1);
+		return;
+	}
+
+	// we do not do this during revolution
+	if(isInRevolution())
+	{
+		return;
+	}
+
+	// this is the variable that we store the Player to contact if we find one
+	PlayerTypes eColonialPlayer = NO_PLAYER;
+
+	// now we loop through our Units and check for
+	// 1. hidden nationality
+	// 2. being in Terrain of another colonial player
+	// 3. not being at war with that other colonial player
+	int iLoop;
+	for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
+	{
+		// we just check for the ships with hidden nationality
+		if (pLoopUnit->getUnitInfo().isHiddenNationality())
+		{
+			// we get the Plot of the Unit
+			CvPlot* pPlot = pLoopUnit->plot();
+			if (pPlot != NULL)
+			{
+				// we check if we are in the territory of a player and that player is a colonial player
+				PlayerTypes ePossiblePlayer = pPlot->getOwnerINLINE();
+				if(ePossiblePlayer != NO_PLAYER && GET_PLAYER(ePossiblePlayer).isPlayable())
+				{
+					// also we need to check that we are not at war with that player
+					// otherwise the DLL Diplo Event would immersively make no sense
+					TeamTypes eOtherColonialPlayerTeam = GET_PLAYER(ePossiblePlayer).getTeam();
+					if (!GET_TEAM(getTeam()).isAtWar(eOtherColonialPlayerTeam))
+					{
+						eColonialPlayer = ePossiblePlayer;
+						break;
+					}
+				}
+			}
+		}
+	}
+
+	// if we found a colonial player for the DIPLO-Event
+	if (eColonialPlayer != NO_PLAYER)
+	{
+		// resetting the timer
+		int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+		m_iTimerPrivateersDiploEvent = GC.getTIMER_PRIVATEERS_DIPLO_EVENT() * gamespeedMod /100;
+
+		// now init the dialogue, there is no specific data to transfer
+		CvDiploParameters* pDiplo = new CvDiploParameters(eColonialPlayer);
+		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_PRIVATEERS_ACCUSSATION"));
+		pDiplo->setAIContact(true);
+		gDLL->beginDiplomacy(pDiplo, getID());
+	}
+
+	return;
+}
+
+void CvPlayer::withDrawAllPrivateersToPortRoyal()
+{
+	CvPlot* pStartingPlot = getStartingPlot();
+
+	// just for safety
+	if (pStartingPlot == NULL)
+	{
+		return;
+	}
+
+	int iLoop;
+	for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
+	{
+		// we just check for the ships with hidden nationality
+		if (pLoopUnit->getUnitInfo().isHiddenNationality())
+		{
+			// these Units would now have to be withdrawn to Port Royal
+			// put them on the Starting Plot because from here the Unit can sail to Port Royal
+			pLoopUnit->setXY(pStartingPlot->getX_INLINE(), pStartingPlot->getY_INLINE());
+			pLoopUnit->sailToPortRoyal();
+		}
+	}
+	return;
+}
+// WTP, ray, Privateers DLL Diplo Event - END
 
 // R&R, ray, Bargaining - Start
 bool CvPlayer::tryGetNewBargainPriceSell()

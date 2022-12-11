@@ -1506,4 +1506,16 @@
 		<DefineName>USE_CLASSIC_MOVEMENT_SYSTEM</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>TIMER_PRIVATEERS_DIPLO_EVENT</DefineName>
+		<iDefineIntVal>30</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>AI_ATTITUDE_INCREASE_FOR_ACCEPTING</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>AI_ATTITUDE_DECREASE_FOR_REFUSING</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
 </Civ4Defines>

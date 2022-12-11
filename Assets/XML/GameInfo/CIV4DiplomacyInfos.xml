@@ -7101,6 +7101,62 @@
             </Responses>
         </DiplomacyInfo>
         <DiplomacyInfo>
+            <Type>AI_DIPLOCOMMENT_PRIVATEERS_ACCUSSATION</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>AI_DIPLO_PRIVATEERS_ACCUSSATION</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
+            <Type>USER_DIPLOCOMMENT_PRIVATEERS_ADMIT</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>USER_DIPLO_PRIVATEERS_ADMIT</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
+            <Type>USER_DIPLOCOMMENT_PRIVATEERS_DENY</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>USER_DIPLO_PRIVATEERS_DENY</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
+            <Type>USER_DIPLOCOMMENT_PRIVATEERS_WAR</Type>
+            <Responses>
+                <Response>
+                    <Civilizations/>
+                    <Leaders/>
+                    <Attitudes/>
+                    <DiplomacyPowers/>
+                    <DiplomacyText>
+                        <Text>USER_DIPLO_PRIVATEERS_WAR</Text>
+                    </DiplomacyText>
+                </Response>
+            </Responses>
+        </DiplomacyInfo>
+        <DiplomacyInfo>
             <Type>USER_DIPLOCOMMENT_STEALING_IMMIGRANT_YES</Type>
             <Responses>
                 <Response>

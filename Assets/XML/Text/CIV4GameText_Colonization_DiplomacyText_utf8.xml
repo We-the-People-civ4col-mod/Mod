@@ -6844,6 +6844,26 @@
         <German>Seid unbesorgt Eure Majestät, unsere Kolonien sind stark genug diesen Konflikt zu lösen ohne euch weiter belästigen zu müssen. (König erfreut)</German>
     </TEXT>
     <TEXT>
+        <Tag>AI_DIPLO_PRIVATEERS_ACCUSSATION</Tag>
+        <English>We have been giving convincing evidence by our agents that the [COLOR_HIGHLIGHT_TEXT]privateers[COLOR_REVERT] lurking in our waters are operating under your command. We demand that these Ships are immediately withdrawn to [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT].</English>
+        <German>Uns wurden von unseren Agenten überzeugende Beweise zugespielt, dass die [COLOR_HIGHLIGHT_TEXT]Kaperfahrer[COLOR_REVERT], die seit kurzem unsere Hoheitsgewässer heimsuchen unter eurem Befehl handeln. Wir verlangen, dass diese Schiffe unverzüglich nach [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] zurückberufen werden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>USER_DIPLO_PRIVATEERS_ADMIT</Tag>
+        <English>We assure you that it was just a misunderstanding and will command these ships back to Port Royal. (attitude improves)</English>
+        <German>Wir versichern euch, dass es sich hierbei lediglich um ein Misverständnis handelt und werden die Schiffe nach Port Royal zurück rufen. (Beziehungen verbessern sich)</German>
+    </TEXT>
+    <TEXT>
+        <Tag>USER_DIPLO_PRIVATEERS_DENY</Tag>
+        <English>We have nothing to do with these privateers. You are wrongly informed. These Privateers listen to the command of somebody else. (attitude worsens)</English>
+        <German>Wir haben nichts mit diesen Kaperfahrern zu tun. Ihr wurdet falsch informiert. Diese Kaperfahrer stehen unter dem Befehl einer andere Macht. (Beziehungen verschlechtern sich)</German>
+    </TEXT>
+    <TEXT>
+        <Tag>USER_DIPLO_PRIVATEERS_WAR</Tag>
+        <English>Your nation has insulted us one time too often. Consider yourself officially at war! (declare war)</English>
+        <German>Eure Nation hat uns einmal zu oft beleidgt. Wir erklären euch hiermit den Krieg! (Krieg erklären)</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_ROYAL_INTERVENTION_ACCEPTED</Tag>
         <English>We accepted the support of our King in our conflict against [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT]. His troops have arrived in [COLOR_HIGHLIGHT_TEXT]%s2_city_name[COLOR_REVERT].</English>
         <German>Wir haben die Unterstützung unseres Königs in unserem Konflikt gegen [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT] angenommen. Seine Truppen sind in [COLOR_HIGHLIGHT_TEXT]%s2_city_name[COLOR_REVERT] angekommen.</German>

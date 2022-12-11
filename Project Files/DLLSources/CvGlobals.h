@@ -791,6 +791,7 @@ public:
 	int getTIMER_EUROPEAN_WARS();
 	int getTIMER_EUROPEAN_PEACE();
 	int getTIMER_ROYAL_INTERVENTIONS(); // WTP, ray, Royal Intervention, START
+	int getTIMER_PRIVATEERS_DIPLO_EVENT(); // WTP, ray, Privateers DLL Diplo Event - START
 	int getTIMER_PRISONS_CROWDED();
 	int getTIMER_REVOLUTIONARY_NOBLE();
 	int getTIMER_BISHOP();
@@ -1361,6 +1362,7 @@ protected:
 	int m_TIMER_EUROPEAN_WARS;
 	int m_TIMER_EUROPEAN_PEACE;
 	int m_TIMER_ROYAL_INTERVENTIONS; // WTP, ray, Royal Intervention, START
+	int m_TIMER_PRIVATEERS_DIPLO_EVENT; // WTP, ray, Privateers DLL Diplo Event - START
 	int m_TIMER_PRISONS_CROWDED;
 	int m_TIMER_REVOLUTIONARY_NOBLE;
 	int m_TIMER_BISHOP;
@@ -2232,6 +2234,13 @@ inline int CvGlobals::getTIMER_ROYAL_INTERVENTIONS()
 	return m_TIMER_ROYAL_INTERVENTIONS;
 }
 // WTP, ray, Royal Intervention, END
+
+// WTP, ray, Privateers DLL Diplo Event - START
+inline int CvGlobals::getTIMER_PRIVATEERS_DIPLO_EVENT()
+{
+	return m_TIMER_PRIVATEERS_DIPLO_EVENT;
+}
+// WTP, ray, Privateers DLL Diplo Event - END
 inline int CvGlobals::getTIMER_PRISONS_CROWDED()
 {
 	return m_TIMER_PRISONS_CROWDED;

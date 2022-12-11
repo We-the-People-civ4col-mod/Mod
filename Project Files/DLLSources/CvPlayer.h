@@ -123,6 +123,9 @@ public:
 
 	void checkForRoyalIntervention(); // WTP, ray, Royal Intervention, START
 
+	void checkForPrivateersAccusation(); // WTP, ray, Privateers DLL Diplo Event - START
+	void withDrawAllPrivateersToPortRoyal(); // WTP, ray, Privateers DLL Diplo Event - START
+
 	// R&R, ray, Church Favours - START
 	int getNumChurchFavoursReceived();
 	void increaseNumChurchFavoursReceived();
@@ -1038,6 +1041,7 @@ protected:
 	int m_iTimerEuropeanWars;
 	int m_iTimerEuropeanPeace;
 	int m_iTimerRoyalInterventions; // WTP, ray, Royal Intervention, START
+	int m_iTimerPrivateersDiploEvent; // WTP, ray, Privateers DLL Diplo Event - START
 	int m_iTimerPrisonsCrowded;
 	int m_iTimerRevolutionaryNoble;
 	int m_iTimerBishop;
