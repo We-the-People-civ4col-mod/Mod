@@ -8336,7 +8336,7 @@ bool CvCity::canApplyEvent(EventTypes eEvent, const EventTriggeredData& kTrigger
 	}
 
 	// changed to make apply and can apply calculate using the same code (read: same result) - Nightinggale
-	if (kEvent.getFoodChange(this) > getFood())
+	if (kEvent.getFoodChange(this) + getFood() < 0)
 	{
 		return false;
 	}
