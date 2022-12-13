@@ -185,12 +185,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JAMES_BAKER_PEDIA</Tag>
-        <English>[H1]James Baker, Dr.[\H1][NEWLINE][BOLD]Lived : [\BOLD]1739 - 1825[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <English>[H1]James Baker, Dr.[\H1][NEWLINE][BOLD]Lived : [\BOLD]1739 - 1825[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]Owing to James Baker's gentle disposition, his parents were induced to fit him for the ministry. With this in view he went through Harvard College, graduating in 1760. However it soon became apparent that his extreme diffidence would prevent him from performing the duties of a minister.[NEWLINE][TAB]Next he opened a store. Soon he saw that there were great possibilities in the chocolate business, so he closed his store and began to manufacture chocolate. The success of this undertaking was remarkable and Baker’s Chocolate has been manufactured ever since, now being known in all parts of the world.</English>
         <German>[H1]James Baker, Dr.[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1739 - 1825[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JAMES_BAKER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Boost your political progress with [COLOR_TECH_TEXT]Doctor James Baker[COLOR_REVERT]. This Founding Father allows you to grow [COLOR_BUILDING_TEXT]vanilla beans[COLOR_REVERT] and [COLOR_BUILDING_TEXT]cocoa beans[COLOR_REVERT], and to manufacture [COLOR_BUILDING_TEXT]vanilla[COLOR_REVERT] and [COLOR_BUILDING_TEXT]cocoa[COLOR_REVERT], in half the normal time.</English>
         <German>TBD</German>
     </TEXT>
     <!-- WILLIAM_STRACHEY -->
@@ -213,12 +213,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_WILLIAM_STRACHEY_PEDIA</Tag>
-        <English>[H1]William Strachey[\H1][NEWLINE][BOLD]Lived : [\BOLD]1572 - 1621[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <English>[H1]William Strachey[\H1][NEWLINE][BOLD]Lived : [\BOLD]1572 - 1621[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]William Strachey was an English writer whose works describe the early history of the English colonization of North America.[NEWLINE][TAB]He was an eye-witness to the 1609 shipwreck of the Sea Venture on Bermuda, then uninhabited. The survivors had to build new boats to continue on to Virginia.[NEWLINE][TAB]His account of the incident and of the Virginia colony is thought by most scholars to have been the source for Shakespeare's play, "The Tempest".[NEWLINE][TAB]Strachey's writings are among the few first-hand descriptions of Virginia in the period. His glossary of Powhatan words is one of only two records of the language, the other being Captain John Smith's.</English>
         <German>[H1]William Strachey[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1572 - 1621[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_WILLIAM_STRACHEY_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Boost your trading with [COLOR_TECH_TEXT]William Strachey[COLOR_REVERT]. This Founding Father allows you to collect [COLOR_BUILDING_TEXT]pig skin[COLOR_REVERT] and [COLOR_BUILDING_TEXT]cattle hides[COLOR_REVERT], and to tan [COLOR_BUILDING_TEXT]pig leather[COLOR_REVERT] and [COLOR_BUILDING_TEXT]cattle leather[COLOR_REVERT]  in half the normal time</English>
         <German>TBD</German>
     </TEXT>
     <!-- SIR_JOHN_HARVEY -->
@@ -241,12 +241,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_SIR_JOHN_HARVEY_PEDIA</Tag>
-        <English>[H1]Sir John Harvey[\H1][NEWLINE][BOLD]Lived : [\BOLD]1581 - 1650[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <English>[H1]Sir John Harvey[\H1][NEWLINE][BOLD]Lived : [\BOLD]1581 - 1650[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]Sir John Harvey  complained about the lack of leather shoes in colonial Virginia. He encouraged shoe manufacturers and tanneries, and also prevented the export of leather or deer hide, keeping it all for the local market.[NEWLINE][TAB] Harvey was the Governor of Virginia, appointed by Charles I. In 1635 he was suspended and impeached by the Council of Virginia.[NEWLINE][TAB]Charles I restored him to his post in 1636. The captain and sailors who transported the governor back to Virginia in 1635 had to sue in Admiralty court for their pay.[NEWLINE][TAB]His government was tyrannical and Harvey himself was called "an obnoxious ruler". In 1639, Harvey was replaced as governor by Sir Francis Wyatt.</English>
         <German>[H1]Sir John Harvey[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1581 - 1650[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_SIR_JOHN_HARVEY_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Boost your political progress with [COLOR_TECH_TEXT]Sir John Harvey[COLOR_REVERT]. This Founding Father allows you to collect [COLOR_BUILDING_TEXT]goat skins[COLOR_REVERT] and manufacture [COLOR_BUILDING_TEXT]goat hide boots[COLOR_REVERT] and [COLOR_BUILDING_TEXT]padded leather coats[COLOR_REVERT] in half the normal time.</English>
         <German>TBD</German>
     </TEXT>
     <!-- JOHN_MAURICE -->
