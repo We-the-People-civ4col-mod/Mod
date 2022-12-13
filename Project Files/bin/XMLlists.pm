@@ -8,6 +8,7 @@ package XMLlists;
 
 use File::Compare;
 use File::Copy;
+use File::Slurp;
 
 use Exporter;
 our @ISA= qw( Exporter );
@@ -24,6 +25,7 @@ our @EXPORT = qw(
 	isTwoLevelFile
 	isDllExport
 	getXMLlocation
+	writeFile
 );
 
 # first is a list of files with hardcoded Type settings in the DLL.
@@ -297,4 +299,22 @@ sub updateAutoFile
 		# copying forces a complete recompile. It really should only be done if something changed.
 		copy($FILE_TMP, $FILE);
 	}
+}
+
+sub writeFile
+{
+	my $file = shift;
+	my $text = shift;
+	
+	if (-e $file)
+	{
+		my $file_content = read_file($file);
+		# return if the two files are identical
+		# updating anyway will for an unneeded recompilation
+		return if $file_content eq $$text;
+	}
+
+	open (my $output_file, "> " . $file) or die "Can't open file " . $file . "\n" . $!;
+	print $output_file $$text;
+	close $output_file;
 }

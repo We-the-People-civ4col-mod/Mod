@@ -202,25 +202,6 @@ sub getTypesInFile
 	die "getTypesInFile: " . $filename . " not supported\n";
 }
 
-
-sub writeFile
-{
-	my $file = shift;
-	my $text = shift;
-	
-	if (-e $file)
-	{
-		my $file_content = read_file($file);
-		# return if the two files are identical
-		# updating anyway will for an unneeded recompilation
-		return if $file_content eq $$text;
-	}
-
-	open (my $output_file, "> " . $file) or die "Can't open file " . $file . "\n" . $!;
-	print $output_file $$text;
-	close $output_file;
-}
-
 sub handleGlobalDefineALT
 {
 	my %value;
