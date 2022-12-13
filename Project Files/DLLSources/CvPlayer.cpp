@@ -22708,7 +22708,7 @@ void CvPlayer::checkForPrivateersAccusation()
 	for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
 	{
 		// we just check for the ships with hidden nationality
-		if (pLoopUnit->getUnitInfo().isHiddenNationality())
+		if (pLoopUnit->getUnitInfo().isHiddenNationality() && pLoopUnit->getDomainType() == DOMAIN_SEA)
 		{
 			// we get the Plot of the Unit
 			CvPlot* pPlot = pLoopUnit->plot();
@@ -22764,7 +22764,7 @@ void CvPlayer::withDrawAllPrivateersToPortRoyal()
 	for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
 	{
 		// we just check for the ships with hidden nationality
-		if (pLoopUnit->getUnitInfo().isHiddenNationality())
+		if (pLoopUnit->getUnitInfo().isHiddenNationality() && pLoopUnit->getDomainType() == DOMAIN_SEA)
 		{
 			// these Units would now have to be withdrawn to Port Royal
 			// put them on the Starting Plot because from here the Unit can sail to Port Royal
