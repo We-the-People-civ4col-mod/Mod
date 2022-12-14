@@ -795,6 +795,26 @@
         <German>Das ist der junge Ureinwohner aus dem Dorf. Er greift an.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_RANGER_BEAR_ATTACK</Tag>
+        <English>A rumour is spreading: A peaceful [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] missionary was attacked by a grizzly but a brave ranger saved him.</English>
+        <German>Ein Gerücht macht die Runde: Ein friedlicher [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Missionar wurde von einem Grizzly angegriffen aber ein mutiger Ranger hat ihn gerettet.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_RANGER_BEAR_ATTACK_1</Tag>
+        <English>Our ranger is on his patrol throught the forests. Suddenly he hears high screams of fear. After a short search he finds the location of those screams. He witnesses a missionary in a tree being attacked by a hungry grizzly angrily trying to shake him down.</English>
+        <German>Einer unserer Missionare ist auf Parolie in den Wäldern. Plötzlich hört er Schreie voller Angst. Nach einer kurzen Suche findet er  den Urpsrpung der Schreie. Er wird Zeuge wie ein Missionar in einem Baum von einem hungrigen Grizzly angegriffen wird, der wütend versucht ihn herunter zu schütteln.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_RANGER_BEAR_ATTACK_1</Tag>
+        <English>We must protect the missionary from the grizzly!</English>
+        <German>Wir müssen den Missionar vor dem Grizzly verteidigen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_RANGER_BEAR_ATTACK_HELP</Tag>
+        <English>A grizzly attacks. A missionary needs to be defended.</English>
+        <German>Ein Grizzly greift an. Ein Missionar muss verteidigt werden.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CRIMINALS_BLACKMAIL_CITY</Tag>
         <English>A rumour is spreading: The peaceful city of [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] is being blackmailed by criminals.</English>
         <German>Ein Gerücht macht die Runde: Die friedliche Stadt [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] wird von Kriminellen erpresst.</German>
