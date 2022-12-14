@@ -6100,3 +6100,43 @@ def checkRunawaySlavesOnAdjacentPlotOfCity(argsList): ### When you copy rename s
 	if (found):
 		return true
 	return false
+
+######## Ranger Bear Attack ###########
+
+def canTriggerIsPlayableWithTriggerChance(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if not player.isPlayable():
+		return false
+	# Read parameter 3 from the event as random chance
+	if TriggerChance(argsList):
+		return true
+	return false
+
+def getHelpRangerBearAttack(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_RANGER_BEAR_ATTACK_HELP", ())
+	return szHelp
+
+# adjacent Plot for Barbarian, same Plot for own Unit
+def spawnBarbarianUnitAdjacentToUnitAndFriendlyOnSamePlot(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	unitThatTriggered = player.getUnit(kTriggeredData.iUnitId)
+	# This part spawns the Barbarian
+	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumHostilesToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumHostilesToSpawn):
+		unitThatTriggered.spawnBarbarianUnitOnAdjacentPlotOfUnit(iHostileUnitClassTypeToSpawn)
+	# This Part spawns the Friendly
+	iOwnUnitClassTypeToSpawn = event.getGenericParameter(4)
+	iNumOwnToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumOwnToSpawn):
+		unitThatTriggered.spawnOwnPlayerUnitOnPlotOfUnit(iOwnUnitClassTypeToSpawn)
+
+######## Highwayman Attack ###########
+
+def getHelpHighwaymanAttack(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_HELP", ())
+	return szHelp
