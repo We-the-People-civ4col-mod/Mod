@@ -6159,3 +6159,9 @@ def hasCattleBonus(argsList):
 def getHelpMilkmaidInNeed(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_MILKMAID_IN_NEED_HELP", ())
 	return szHelp
+
+######## Whale Attack ###########
+
+def getHelpWhaleAttack(argsList):
+	szHelp = localText.getText("TXT_KEY_WHALE_ATTACK_HELP", ())
+	return szHelp
