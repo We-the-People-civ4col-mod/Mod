@@ -5565,7 +5565,7 @@
             <iAIValue>1000</iAIValue>
             <iGenericParameter1>UNITCLASS_REVOLTING_CRIMINAL</iGenericParameter1>
             <iGenericParameter2>1</iGenericParameter2>
-            <iGenericParameter3>1000</iGenericParameter3>
+            <iGenericParameter3>500</iGenericParameter3>
             <iGenericParameter4>UNITCLASS_MILITIA</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -5626,7 +5626,7 @@
             <iAIValue>1000</iAIValue>
             <iGenericParameter1>UNITCLASS_HUMPBACK_WHALE</iGenericParameter1>
             <iGenericParameter2>1</iGenericParameter2>
-            <iGenericParameter3>1000</iGenericParameter3>
+            <iGenericParameter3>500</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
