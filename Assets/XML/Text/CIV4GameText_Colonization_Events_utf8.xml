@@ -835,6 +835,31 @@
         <German>Straßenräuber greifen die Kutsche an. Ein paar mutige Passagiere verteidigen sie.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_MILKMAID_IN_NEED</Tag>
+        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] milkmaid is forced to marry her uncle. She asks the governor for help.</English>
+        <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Milchmaid soll gezwungen werden ihren Onkel zu heiraten. Sie erbittet Hilfe vom Gouverneur.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_MILKMAID_IN_NEED_1</Tag>
+        <English>After the dead of her father a milkmaid is being forced by her uncle to marry her against her will so he can inherit the cattle farm. She has come to the city to plead for help and intervention by the law. But if we do, we will turn her uncle and the rest of this greedy family against us.</English>
+        <German>Nach dem Tod ihres Vaters wird eine junge Milchmaid durch Ihren Onkel gezwungen ihn gegen ihren Willen zu heiraten. Sie ist in die Stadt gekommen und bittet um Hilfe und rechtliche Unterstützung. Wenn wir ihr helfen, werden wir jedoch ihren Onkel und den Rest dieser gierigen Familie gegen uns wenden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_1</Tag>
+        <English>Of course we will protect that poor young girl! We are not afraid of a few hillbillies!</English>
+        <German>Wir werden dem jungen Mädchen natürlich helfen! Wir fürchten uns nicht vor ein paar Hinterwäldlern!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_2</Tag>
+        <English>This is family business that we have no right to get involved with.</English>
+        <German>Wir sollten uns nicht in diese Familienangelegenheit einmischen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_HELP</Tag>
+        <English>Criminals will attack the City.</English>
+        <German>Kriminelle werden die Stadt angreifen.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CRIMINALS_BLACKMAIL_CITY</Tag>
         <English>A rumour is spreading: The peaceful city of [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] is being blackmailed by criminals.</English>
         <German>Ein Gerücht macht die Runde: Die friedliche Stadt [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] wird von Kriminellen erpresst.</German>

@@ -6140,3 +6140,22 @@ def spawnBarbarianUnitAdjacentToUnitAndFriendlyOnSamePlot(argsList):
 def getHelpHighwaymanAttack(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_HELP", ())
 	return szHelp
+
+######## Milkmaid in Need ###########
+
+def hasCattleBonus(argsList):
+	pTriggeredData = argsList[0]
+	player = gc.getPlayer(pTriggeredData.ePlayer)
+	if not player.isPlayable():
+		return false
+	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
+	bonustype = gc.getInfoTypeForString("BONUS_CATTLE")
+	if (plot.getOwner() != pTriggeredData.ePlayer):
+		return false
+	if (plot.getBonusType() == bonustype):
+		return true
+	return false
+	
+def getHelpMilkmaidInNeed(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_MILKMAID_IN_NEED_HELP", ())
+	return szHelp
