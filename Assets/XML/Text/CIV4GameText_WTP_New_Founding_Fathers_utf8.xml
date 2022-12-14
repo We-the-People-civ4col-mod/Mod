@@ -269,12 +269,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOHN_MAURICE_PEDIA</Tag>
-        <English>[H1]John Maurice, Prince of Nassau-Siegen[\H1][NEWLINE][BOLD]Lived : [\BOLD]1604 - 1679[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <English>[H1]John Maurice, Prince of Nassau-Siegen[\H1][NEWLINE][BOLD]Lived : [\BOLD]1604 - 1679[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]]John Maurice was appointed as the governor of the Dutch possessions in Brazil in 1636 by the Dutch West India Company. Immediately after his arrival he defeated the Spanish-Portuguese forces.[NEWLINE][TAB]He also established representative councils in the colony for local government, and developed Recife's transportation infrastructure. His large schemes and lavish expenditures alarmed the parsimonious directors of the West India Company and, refusing to retain his post unless he were given a free hand, he returned to Europe in July 1644.[NEWLINE][TAB]When war broke out with England John Maurice, Prince of Nassau-Siegen, was appointed commander-in-chief of the Dutch States Army. Though hampered in his command by the restrictions of the states-general, he repelled the invasion.</English>
         <German>[H1]Johann Moritz, Fürst von Nassau-Siegen[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1604 - 1679[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOHN_MAURICE_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Boost your military with [COLOR_TECH_TEXT]John Maurice, Prince of Nassau-Siegen[COLOR_REVERT]. This Founding Father gives you a settler militia and also allows you to produce [COLOR_BUILDING_TEXT]cheese[COLOR_REVERT] in half the normal time.</English>
         <German>TBD</German>
     </TEXT>
     <!-- WILLIAM_TAILER -->
@@ -297,12 +297,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_WILLIAM_TAILER_PEDIA</Tag>
-        <English>[H1]William Tailer[\H1][NEWLINE][BOLD]Lived : [\BOLD]1675 - 1731[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <English>[H1]William Tailer[\H1][NEWLINE][BOLD]Lived : [\BOLD]1675 - 1731[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]William Tailer was a military officer and politician in Massachusetts Bay. He commanded a regiment in the 1710 siege of Port Royal, the capital of French Acadia, during Queen Anne's War.[NEWLINE][TAB]Tailer was responsible for overseeing the defenses of Boston in the 1720s, and negotiated with the Iroquois and Abenaki during Dummer's War.[NEWLINE][TAB]An Anglican, he opposed Puritan Governor Joseph Dudley. Tailer was ultimately turned out of office when the king chose Colonel Samuel Shute, a land bank opponent, to replace his government.</English>
         <German>[H1]William Tailer[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1675 - 1731[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_WILLIAM_TAILER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Boost your political progress with [COLOR_TECH_TEXT]William Tailer[COLOR_REVERT]. This Founding Father gives you an expert farmer and allows you to bake more [COLOR_BUILDING_TEXT]bread[COLOR_REVERT] in proportion to the tax rate.</English>
         <German>TBD</German>
     </TEXT>
     <!-- SAMUEL_NICHOLAS -->
@@ -325,12 +325,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_SAMUEL_NICHOLAS_PEDIA</Tag>
-        <English>[H1]Samuel Nicholas[\H1][NEWLINE][BOLD]Lived : [\BOLD]1744 - 1790[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <English>[H1]Samuel Nicholas[\H1][NEWLINE][BOLD]Lived : [\BOLD]1744 - 1790[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]Samuel Nicholas, the first officer commissioned in the United States Continental Marines, is by tradition considered to be the first Commandant of the Marine Corps.[NEWLINE][TAB]He led the first successful landing by Continental Marines, which saw the capture of Nassau.[NEWLINE][TAB]The Marines under Major Nicholas fought a detachment of Cornwallis's main army at Princeton, New Jersey. During the ensuing months, Nicholas's battalion served both as infantry and artillery, participating in several skirmishes.[NEWLINE][TAB]Following the British evacuation of Philadelphia in June 1778, Nicholas was put in charge of recruiting, and also acted as Muster Master of the Navy.</English>
         <German>[H1]Samuel Nicholas[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1744 - 1790[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_SAMUEL_NICHOLAS_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Boost your military with [COLOR_TECH_TEXT]Samuel Nicholas[COLOR_REVERT]. This Founding Father gives you a [COLOR_BUILDING_TEXT]brave lieutenant[COLOR_REVERT] and a [COLOR_BUILDING_TEXT]capable captain[COLOR_REVERT].</English>
         <German>TBD</German>
     </TEXT>
     <!-- JOHN_WINTHROP_THE_YOUNGER -->
@@ -353,12 +353,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_PEDIA</Tag>
-        <English>[H1]John Winthrop, the younger[\H1][NEWLINE][BOLD]Lived : [\BOLD]1606 - 1676[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <English>[H1]John Winthrop, the younger[\H1][NEWLINE][BOLD]Lived : [\BOLD]1606 - 1676[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]John Winthrop the Younger was an early governor of the Connecticut colony. He lived in Massachusetts, where he built a grist mill and was granted a monopoly. This was one of the first monopolies granted in New England.[NEWLINE][TAB]Winthrop became a magistrate of the Connecticut colony in 1651, was governor of the colony in 1657–58, and again became governor in 1659, being annually re-elected until his death.[NEWLINE][TAB]During his tenure as Governor of Connecticut, he oversaw the acceptance of Quakers who were banned from Massachusetts.[NEWLINE][TAB]In 1662 he obtained the charter in England which united the colonies of Connecticut and New Haven.</English>
         <German>[H1]John Winthrop, der jüngere[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1606 - 1676[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Boost your trade with [COLOR_TECH_TEXT]John Winthrop the Younger[COLOR_REVERT]. This Founding Father gives you a [COLOR_BUILDING_TEXT]master charcoal burner[COLOR_REVERT] and [COLOR_BUILDING_TEXT]a master powder maker[COLOR_REVERT].</English>
         <German>TBD</German>
     </TEXT>
 </Civ4GameText>
