@@ -860,6 +860,26 @@
         <German>Kriminelle werden die Stadt angreifen.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_HERDER_IN_NEED</Tag>
+        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] pig pen and its owner are attacked by wolfes</English>
+        <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Schweinestall und sein Besitzer werden von Wölfen angegriffen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_HERDER_IN_NEED_1</Tag>
+        <English>A pig breeder has sent his young son to the city to call for help. Wolfes are attacking the pen and the breeder is desperately trying to protect the animals. We pleads us to send help.</English>
+        <German>Ein Schweinezüchter hat seinen kleinen Sohn in die Stadt geschickt um Hilfe zu holen. Wölfe greifen den Stall an und der Züchter versucht verzweifelt seine Tiere zu beschützen. Er bitte uns um Hilfe.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_HERDER_IN_NEED_1</Tag>
+        <English>We will send help as fast as possible! But he must hold on a bit longer!</English>
+        <German>Wir werden versuchen so schnell wie möglich Hilfe zu schicken! Aber er muss noch etwas durchhalten!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_HERDER_IN_NEED_HELP</Tag>
+        <English>Wolfs attack the pen.</English>
+        <German>Wölfe greifen den Stall an..</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WHALE_ATTACK</Tag>
         <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] whaling ship is attacked by a whale seeking revenge.</English>
         <German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Walfangschiff wird von eime Rache suchenden Wal angegriffen.</German>

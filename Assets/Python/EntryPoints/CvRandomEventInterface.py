@@ -6165,3 +6165,40 @@ def getHelpMilkmaidInNeed(argsList):
 def getHelpWhaleAttack(argsList):
 	szHelp = localText.getText("TXT_KEY_WHALE_ATTACK_HELP", ())
 	return szHelp
+
+######## Pig Herder in Need ###########
+
+def hasPigBonus(argsList):
+	pTriggeredData = argsList[0]
+	player = gc.getPlayer(pTriggeredData.ePlayer)
+	if not player.isPlayable():
+		return false
+	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
+	bonustype = gc.getInfoTypeForString("BONUS_PIG")
+	if (plot.getOwner() != pTriggeredData.ePlayer):
+		return false
+	if (plot.getBonusType() == bonustype):
+		return true
+	return false
+
+def getHelpHerderInNeed(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_HERDER_IN_NEED_HELP", ())
+	return szHelp
+
+# adjacent Plot
+def spawnBarbarianUnitAdjacentToPlotAndFriendlyOnSamePlot(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	ePlayer = kTriggeredData.ePlayer
+	plotThatTriggered = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
+	# this spawns the barbarian Unit
+	iHostileUnitClassTypeToSpawn = event.getGenericParameter(1)
+	iNumHostilesToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumHostilesToSpawn):
+		plotThatTriggered.spawnBarbarianUnitOnAdjacentPlot(iHostileUnitClassTypeToSpawn)
+	# this spawns the friendly Unit
+	iOwnUnitClassTypeToSpawn = event.getGenericParameter(4)
+	iNumOwnToSpawn = event.getGenericParameter(2)
+	for iX in range(iNumOwnToSpawn):
+		plotThatTriggered.spawnPlayerUnitOnPlot(ePlayer, iOwnUnitClassTypeToSpawn)
