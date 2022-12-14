@@ -2001,7 +2001,11 @@
             <FeaturesRequired/>
             <TerrainsRequired/>
             <ImprovementsRequired/>
-            <RoutesRequired/>
+            <RoutesRequired>
+                <RouteType>ROUTE_ROAD</RouteType>
+                <RouteType>ROUTE_PLASTERED_ROAD</RouteType>
+                <RouteType>ROUTE_RAILROAD</RouteType>
+            </RoutesRequired>
             <Events>
                 <Event>EVENT_HIGHWAYMAN_ATTACK_1</Event>
             </Events>
