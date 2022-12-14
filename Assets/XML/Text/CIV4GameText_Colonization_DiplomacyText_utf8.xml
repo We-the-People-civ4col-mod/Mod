@@ -6850,12 +6850,12 @@
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_PRIVATEERS_ADMIT</Tag>
-        <English>We assure you that it was just a misunderstanding and will command these ships back to Port Royal. (attitude improves)</English>
+        <English>We assure you this was all just a misunderstanding. We will order these ships back to Port Royal. (attitude improves)</English>
         <German>Wir versichern euch, dass es sich hierbei lediglich um ein Misverständnis handelt und werden die Schiffe nach Port Royal zurück rufen. (Beziehungen verbessern sich)</German>
     </TEXT>
     <TEXT>
         <Tag>USER_DIPLO_PRIVATEERS_DENY</Tag>
-        <English>We have nothing to do with these privateers. You are wrongly informed. These privateers listen to the command of somebody else. (attitude worsens)</English>
+        <English>We have nothing to do with these privateers. You're misinformed. These pirates must be under the command of somebody else. (attitude worsens)</English>
         <German>Wir haben nichts mit diesen Kaperfahrern zu tun. Ihr wurdet falsch informiert. Diese Kaperfahrer stehen unter dem Befehl einer andere Macht. (Beziehungen verschlechtern sich)</German>
     </TEXT>
     <TEXT>
