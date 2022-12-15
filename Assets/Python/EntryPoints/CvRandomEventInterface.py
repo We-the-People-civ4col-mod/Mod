@@ -6207,8 +6207,13 @@ def spawnBarbarianUnitAdjacentToPlotAndFriendlyOnSamePlot(argsList):
 def getHelpFerryStationRobbers(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_FERRY_STATION_ROBBERS_HELP", ())
 	return szHelp
-	
+
 ######## Slave and Planation Owner Daughter ###########
 def getHelpSlaveAndPlanationOwnerDaughter1(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1_HELP", ())
+	return szHelp
+
+######## Indentured Servant Steals from Employer ###########
+def getHelpIndenturedServantStealsFromEmployer(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1_HELP", ())
 	return szHelp
