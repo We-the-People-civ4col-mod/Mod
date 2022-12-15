@@ -905,6 +905,36 @@
         <German>Kriminelle greifen die Fährstation an.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_AND_PLANATION_OWNER_DAUGHTER</Tag>
+        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] daughter of a plantation owner fell in love with a slave.</English>
+        <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Tocher eines Plantagenbesitzers hat sich in einen Sklaven verliebt.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1</Tag>
+        <English>Mylord, this is a bad situation. The daugher of one of the richest planation owners in this region fell in love with a slave and helped him to escape after her father found out about the relationship and threatened to kill the slave. The slave now sits in the waiting room and pleads us to help. The plantation owner and father has gathered armed men and now tries to enter the building to lynch the poor slave.</English>
+        <German>Mylord, wir sind in einer schlimmen situation. Die Tochter eines der reichsten Plantagenbesitzer der Region hat sich in einen Sklaven verliebt und diesem zur Flucht verholfen, nachdem ihr Vater von der Beziehung erfahren hat und drohte den Sklaven zu töten. Der Sklave sitzt nun im Vorraum und bittet um Hilfe. Der Plantagenbesitzer und Vater hat jedoch bewaffnete Männer versammelt und versucht das Gebäude gewaltsam zu betreten um den Sklaven zu lynchen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1</Tag>
+        <English>We will not allow lynch justice in this city! The slave is under our protection!</English>
+        <German>Wir werden keine Lynchjustiz in dieser Stadt erlauben! Der Sklave steht unter unserem Schutz!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_2</Tag>
+        <English>Let us solve this peacefully! We will pay the plantage owner a very generous amount to buy the slave. This should hopefully calm him down again. The slave and the daugher shall never meet again.</English>
+        <German>Lasst uns dies friedlich regeln und dem Plantagenbesitzer eine so großzügige Summe zukommen um den Skalven freizukaufen, sodass er sich wieder beruhigt! Der Sklave und die Tochter sollen sich nie wieder treffen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_3</Tag>
+        <English>Hand out the slave to the father so he can take justice! This slave has gone way to far by laying his hands on that young girl and twisting her young mind.</English>
+        <German>Händigt den Sklaven dem Vater aus, damit er Gerechtigkeit nehmen kann! Dieser Sklave ist deutlich zuweit gegangen als er seine Hände an das junge Mädchen legte und ihr den Kopf verdrehte.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1_HELP</Tag>
+        <English>Outraged citizens and members of the militia attack the city.</English>
+        <German>Aufgebrachte Bürger und Mitglieder der Miliz greifen die Stadt an.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WHALE_ATTACK</Tag>
         <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] whaling ship is attacked by a whale seeking revenge.</English>
         <German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Walfangschiff wird von eime Rache suchenden Wal angegriffen.</German>
