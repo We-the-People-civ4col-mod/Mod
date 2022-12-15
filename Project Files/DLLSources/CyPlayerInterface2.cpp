@@ -99,6 +99,7 @@ void CyPlayerPythonInterface2(python::class_<CyPlayer>& x)
 		.def("canTradeWithAfrica", &CyPlayer::canTradeWithAfrica, "bool ()")
 		.def("getSellToAfricaProfit", &CyPlayer::getSellToAfricaProfit, "int ()")
 		.def("isYieldAfricaTradable", &CyPlayer::isYieldAfricaTradable, "bool ()")
+		.def("getNumShips", &CyPlayer::getNumShips, "int ()") // WTP, ray, easily counting Ships - START
 		// R&R, ray, Africa
 		.def("getYieldAfricaSellPrice", &CyPlayer::getYieldAfricaSellPrice, "int (eYield)")
 		.def("getYieldAfricaBuyPrice", &CyPlayer::getYieldAfricaBuyPrice, "int (eYield)")

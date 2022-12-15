@@ -138,6 +138,7 @@ public:
 	void createBraveLieutenant(int eBraveLieutenantUnit, int iX, int iY);
 	void createCapableCaptain(int eGreatAdmiralUnit, int iX, int iY);
 	// WTP, ray, Lieutenants and Captains - END
+	int getNumShips(); // WTP, ray, easily counting Ships - START
 	int getGreatGeneralRateModifier();
 	int getDomesticGreatGeneralRateModifier();
 	int getFreeExperience();

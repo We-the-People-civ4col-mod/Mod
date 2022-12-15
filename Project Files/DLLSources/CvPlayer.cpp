@@ -8161,6 +8161,25 @@ void CvPlayer::decreaseTimeNoTrade()
 }
 // R&R, ray, Bargaining - END
 
+// WTP, ray, easily counting Ships - START
+int CvPlayer::getNumShips() const
+{
+	int iNumShips = 0;
+
+	CvUnit* pLoopUnit;
+	int iLoop;
+	for (pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
+	{
+		if (pLoopUnit->getDomainType() == DOMAIN_SEA)
+		{
+			iNumShips++;
+		}
+	}
+
+	return iNumShips;
+}
+// WTP, ray, easily counting Ships - END
+
 bool CvPlayer::isEverAlive() const
 {
 	return m_bEverAlive;
@@ -10131,7 +10150,6 @@ int CvPlayer::getNumUnits() const
 {
 	return (int)(m_units.size());
 }
-
 
 CvUnit* CvPlayer::getUnit(int iID) const
 {

@@ -892,6 +892,14 @@ int CyPlayer::getNumUnits()
 {
 	return m_pPlayer ? m_pPlayer->getNumUnits() : -1;
 }
+
+// WTP, ray, easily counting Ships - START
+int CyPlayer::getNumShips()
+{
+	return m_pPlayer ? m_pPlayer->getNumShips() : -1;
+}
+// WTP, ray, easily counting Ships - END
+
 CyUnit* CyPlayer::getUnit(int iID)
 {
 	return m_pPlayer ? new CyUnit(m_pPlayer->getUnit(iID)) : NULL;

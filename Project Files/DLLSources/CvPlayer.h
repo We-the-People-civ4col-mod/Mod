@@ -577,6 +577,7 @@ public:
 	DllExport CvUnit* firstUnit(int *pIterIdx) const;
 	DllExport CvUnit* nextUnit(int *pIterIdx) const;
 	DllExport int getNumUnits() const;
+	int getNumShips() const;// WTP, ray, easily counting Ships - START
 	DllExport CvUnit* getUnit(int iID) const;
 	CvUnit* addUnit();
 	void addExistingUnit(CvUnit *pUnit);

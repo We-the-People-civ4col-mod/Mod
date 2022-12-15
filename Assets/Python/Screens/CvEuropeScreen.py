@@ -688,12 +688,12 @@ class CvEuropeScreen:
 	
 	
 	def handleInput(self, inputClass):
-		screen = self.getScreen()		
+		screen = self.getScreen()
 		## R&R, vetiarvind, Navigation sectors - START
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
-		inputFnName = inputClass.getFunctionName()								
+		inputFnName = inputClass.getFunctionName()
 		constStrEast = "DialogMap" + "East"
-		constStrWest = "DialogMap" + "West"		
+		constStrWest = "DialogMap" + "West"
 		## R&R, vetiarvind, Navigation sectors - END
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
 			if (inputClass.getButtonType() == WidgetTypes.WIDGET_PLAYER_HURRY):
@@ -1021,18 +1021,19 @@ class CvEuropeScreen:
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
 		pTransport = player.getUnit(iUnit)
 		
-		self.createBox(self.SELL_SHIP_X, self.SELL_SHIP_Y, self.SELL_SHIP_W, self.SELL_SHIP_H, true) 
-		screen.addDDSGFCAt("SellShipEurope", "DialogPanel", "Art/Interface/Screens/Europe/Background.dds", self.SELL_SHIP_IMAGE_X, self.SELL_SHIP_IMAGE_Y, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, WidgetTypes.WIDGET_GENERAL, -1, -1, false)
-		screen.setLabelAt(self.getNextWidgetName(), "SellShipEurope", u"<font=4>" + localText.getText("TXT_KEY_EU_SELL_LABEL", ()) + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, self.STANDARD_MARGIN, self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		self.createBorder(0, 0, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, self.BORDER_SIZE, "SellShipEurope", true)
-		screen.addDDSGFCAt(self.getNextWidgetName(), "SellShipEurope", self.getMirrorShipIcon(pTransport), self.SELL_SHIP_IMAGE_W / 4, self.SELL_SHIP_IMAGE_W / 16, self.SELL_SHIP_IMAGE_W / 2, self.SELL_SHIP_IMAGE_W * 7 / 8, WidgetTypes.WIDGET_SHIP_CARGO, pTransport.getID(), -1, false)
+		if player.getNumShips() > 1:
+			self.createBox(self.SELL_SHIP_X, self.SELL_SHIP_Y, self.SELL_SHIP_W, self.SELL_SHIP_H, true) 
+			screen.addDDSGFCAt("SellShipEurope", "DialogPanel", "Art/Interface/Screens/Europe/Background.dds", self.SELL_SHIP_IMAGE_X, self.SELL_SHIP_IMAGE_Y, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, WidgetTypes.WIDGET_GENERAL, -1, -1, false)
+			screen.setLabelAt(self.getNextWidgetName(), "SellShipEurope", u"<font=4>" + localText.getText("TXT_KEY_EU_SELL_LABEL", ()) + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, self.STANDARD_MARGIN, self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			self.createBorder(0, 0, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, self.BORDER_SIZE, "SellShipEurope", true)
+			screen.addDDSGFCAt(self.getNextWidgetName(), "SellShipEurope", self.getMirrorShipIcon(pTransport), self.SELL_SHIP_IMAGE_W / 4, self.SELL_SHIP_IMAGE_W / 16, self.SELL_SHIP_IMAGE_W / 2, self.SELL_SHIP_IMAGE_W * 7 / 8, WidgetTypes.WIDGET_SHIP_CARGO, pTransport.getID(), -1, false)
+				
+			szMessage = localText.getText("TXT_KEY_EU_SELL_MESSAGE", (pTransport.getName(), self.getShipSellPrice(iUnit)))
+			screen.addMultilineText("DialogMessage", szMessage, self.SELL_SHIP_X + self.SELL_SHIP_IMAGE_X, self.SELL_SHIP_MESSAGE_Y, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_MESSAGE_H, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 			
-		szMessage = localText.getText("TXT_KEY_EU_SELL_MESSAGE", (pTransport.getName(), self.getShipSellPrice(iUnit)))
-		screen.addMultilineText("DialogMessage", szMessage, self.SELL_SHIP_X + self.SELL_SHIP_IMAGE_X, self.SELL_SHIP_MESSAGE_Y, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_MESSAGE_H, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
-		
-		screen.setButtonGFC("DialogButton", u"<font=3>" + localText.getText("TXT_KEY_EU_DIALOG_ACCEPT", ()) + u"</font>", "", self.SELL_SHIP_BUTTON_X, self.SELL_SHIP_BUTTON_Y, self.SELL_SHIP_BUTTON_W, self.SELL_SHIP_BUTTON_H, WidgetTypes.WIDGET_GENERAL, self.SELL_SHIP_EXEC, iUnit, ButtonStyles.BUTTON_STYLE_STANDARD)
-		
-	
+			screen.setButtonGFC("DialogButton", u"<font=3>" + localText.getText("TXT_KEY_EU_DIALOG_ACCEPT", ()) + u"</font>", "", self.SELL_SHIP_BUTTON_X, self.SELL_SHIP_BUTTON_Y, self.SELL_SHIP_BUTTON_W, self.SELL_SHIP_BUTTON_H, WidgetTypes.WIDGET_GENERAL, self.SELL_SHIP_EXEC, iUnit, ButtonStyles.BUTTON_STYLE_STANDARD)
+
+
 	def liftBoycott(self, iYield):
 		screen = self.getScreen()
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
