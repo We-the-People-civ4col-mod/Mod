@@ -6202,3 +6202,8 @@ def spawnBarbarianUnitAdjacentToPlotAndFriendlyOnSamePlot(argsList):
 	iNumOwnToSpawn = event.getGenericParameter(2)
 	for iX in range(iNumOwnToSpawn):
 		plotThatTriggered.spawnPlayerUnitOnPlot(ePlayer, iOwnUnitClassTypeToSpawn)
+
+######## Pig Herder in Need ###########
+def getHelpFerryStationRobbers(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_FERRY_STATION_ROBBERS_HELP", ())
+	return szHelp

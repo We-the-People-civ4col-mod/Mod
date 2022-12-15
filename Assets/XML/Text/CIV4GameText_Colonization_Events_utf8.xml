@@ -861,7 +861,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HERDER_IN_NEED</Tag>
-        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] pig pen and its owner are attacked by wolfes</English>
+        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] pig pen and its owner are attacked by wolfes.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Schweinestall und sein Besitzer werden von Wölfen angegriffen.</German>
     </TEXT>
     <TEXT>
@@ -877,7 +877,32 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_HERDER_IN_NEED_HELP</Tag>
         <English>Wolfs attack the pen.</English>
-        <German>Wölfe greifen den Stall an..</German>
+        <German>Wölfe greifen den Stall an.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_FERRY_STATION_ROBBERS</Tag>
+        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ferry station is attacked by ferry robbers.</English>
+        <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Fährstation wird von Fährräubern angegriffen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_FERRY_STATION_ROBBERS_1</Tag>
+        <English>Mylord, a citizen has recognized a few troublesome looking men riding through the city to be wanted ferry robbers. They were riding in the direction of the local ferry station and they were heavily armed. If we ride now we may still catch them and prevent worse.</English>
+        <German>Mylord, ein Ortsansässiger hat einge nach Ärger aussehende Männer, die durch die Stadt ritten, als gesuchte Fährräuber erkannt. Sie ritten in Richtung der örtlichen Fährstation und waren schwer bewaffnet. Wenn wir jetzt losreiten könnten wir sie noch einholen und schlimmeres verhindern.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FERRY_STATION_ROBBERS_1</Tag>
+        <English>We will gather the milita and teach those ferry robbers a lesson!</English>
+        <German>Wir werden die Miliz versammeln und diesen Fährräubern eine Lektion erteilen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FERRY_STATION_ROBBERS_2</Tag>
+        <English>We are deeply sorry but we are unable to send any help!</English>
+        <German>Wir sind zu tiefst bestürzt, aber uns ist es nicht möglich Hilfe zu schicken!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FERRY_STATION_ROBBERS_HELP</Tag>
+        <English>Criminals attack the ferry station.</English>
+        <German>Kriminelle greifen die Fährstation an.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WHALE_ATTACK</Tag>
