@@ -815,6 +815,26 @@
         <German>Ein Grizzly greift an. Ein Missionar muss verteidigt werden.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_CONQUISTADORES_BEING_AMBUSHED</Tag>
+        <English>A rumour is spreading: [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] conquistadores were ambushed by hostile natives.</English>
+        <German>Ein Gerücht macht die Runde: Ein friedlicher [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Conquistadore wurden von feindlichen Ureinwohnern überfallen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_CONQUISTADORES_BEING_AMBUSHED_1</Tag>
+        <English>Our brave conquistadores tiredly wander through the green hell, hoping for a discovery to become rich. Suddenly they notice that all birds and animals have gone silent and stop. One of the men turns around, screams a warning and points towards the trees but the next moment an arrow hits him in the chest. The silence is over, now war screams come from the bushes and trees. We are being ambushed!</English>
+        <German>Unsere tapferen Conquistadores schreiten müde durch die grüne Hölle, hoffend auf eine Entdeckung um reich zu werden. Plötzlich bemerken sie, dass alle Geräusche von Vögeln und Tieren verschwunden sind und halten daher an. Einer der Männer dreht sich plötzlich um, schreit eine Warnung und zeigt in Richtung der Bäume, als auch schon ein Pfeil in seiner Brust steckt. Die Stille ist nun vorbei und Kriegsschreie hallen aus den Büschen. Wir werden überfallen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_1</Tag>
+        <English>Cover the flanks and fight for your lifes!</English>
+        <German>Verteidigt die Flanken und kämpft um euer Leben!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_HELP</Tag>
+        <English>Hostile naties attack out of the jungle.</English>
+        <German>Feindliche Ureinwohner greifen aus den Dschungel an.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HIGHWAYMAN_ATTACK</Tag>
         <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] stagecoach was attacked by highwaymen but the brave passengers defended it.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Kutsche wurde von Straßenräubern angegriffen aber die mutigen Passagiere haben sie verteidigt.</German>

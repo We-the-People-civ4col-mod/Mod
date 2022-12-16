@@ -6217,3 +6217,17 @@ def getHelpSlaveAndPlanationOwnerDaughter1(argsList):
 def getHelpIndenturedServantStealsFromEmployer(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1_HELP", ())
 	return szHelp
+
+######## Preacher and Harlot ###########
+def getHelpPreacherAndHarlot1(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_PREACHER_AND_HARLOT_1_HELP", ())
+	return szHelp
+
+def getHelpPreacherAndHarlot2(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_PREACHER_AND_HARLOT_2_HELP", ())
+	return szHelp
+
+######## Conquistador Ambush ###########
+def getHelpConquistadorAmbusch(argsList):
+	szHelp = localText.getText("TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_HELP", ())
+	return szHelp
