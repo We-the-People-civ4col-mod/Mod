@@ -3059,10 +3059,6 @@
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_KAUTSCHUK</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
                     <YieldType>YIELD_COCHINEAL</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
@@ -3074,10 +3070,6 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_YERBA_LEAVES</YieldType>
-                    <iValue>2</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_KAUTSCHUK</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -3140,17 +3132,6 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
-                    <BonusType>BONUS_KAUTSCHUK</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_KAUTSCHUK</YieldType>
-                            <iValue>1</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
                     <BonusType>BONUS_CACTUS</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -3175,11 +3156,15 @@
             <PrereqNatureYields>
                 <YieldIntegerPair>
                     <YieldType>YIELD_COCOA_FRUITS</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FRUITS</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_KAUTSCHUK</YieldType>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </PrereqNatureYields>
             <YieldIncreases>
@@ -3193,6 +3178,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FRUITS</YieldType>
+                    <iValue>2</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_KAUTSCHUK</YieldType>
                     <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldIncreases>
@@ -3244,6 +3233,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_KAUTSCHUK</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_KAUTSCHUK</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -5507,10 +5507,6 @@
                     <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
-                    <YieldType>YIELD_KAUTSCHUK</YieldType>
-                    <iValue>1</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
                     <YieldType>YIELD_COCHINEAL</YieldType>
                     <iValue>1</iValue>
                 </YieldIntegerPair>
@@ -5522,10 +5518,6 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_YERBA_LEAVES</YieldType>
-                    <iValue>3</iValue>
-                </YieldIntegerPair>
-                <YieldIntegerPair>
-                    <YieldType>YIELD_KAUTSCHUK</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
@@ -5588,17 +5580,6 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
-                    <BonusType>BONUS_KAUTSCHUK</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
-                    <iDiscoverRand>0</iDiscoverRand>
-                    <YieldChanges>
-                        <YieldIntegerPair>
-                            <YieldType>YIELD_KAUTSCHUK</YieldType>
-                            <iValue>2</iValue>
-                        </YieldIntegerPair>
-                    </YieldChanges>
-                </BonusTypeStruct>
-                <BonusTypeStruct>
                     <BonusType>BONUS_CACTUS</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -5623,11 +5604,15 @@
             <PrereqNatureYields>
                 <YieldIntegerPair>
                     <YieldType>YIELD_COCOA_FRUITS</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FRUITS</YieldType>
-                    <iValue>2</iValue>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_KAUTSCHUK</YieldType>
+                    <iValue>1</iValue>
                 </YieldIntegerPair>
             </PrereqNatureYields>
             <YieldIncreases>
@@ -5641,6 +5626,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_FRUITS</YieldType>
+                    <iValue>3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_KAUTSCHUK</YieldType>
                     <iValue>3</iValue>
                 </YieldIntegerPair>
             </YieldIncreases>
@@ -5692,6 +5681,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_KAUTSCHUK</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_KAUTSCHUK</YieldType>
                             <iValue>2</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
