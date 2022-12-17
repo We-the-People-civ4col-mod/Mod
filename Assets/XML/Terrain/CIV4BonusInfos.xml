@@ -12359,7 +12359,7 @@
             </FeatureTerrainBooleans>
             <bUseLSystem>0</bUseLSystem>
         </BonusInfo>
-	    <BonusInfo>
+        <BonusInfo>
             <Type>BONUS_YERBA</Type>
             <Description>TXT_KEY_BONUS_YERBA</Description>
             <Civilopedia>TXT_KEY_BONUS_YERBA_PEDIA</Civilopedia>
@@ -12399,7 +12399,7 @@
             <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
@@ -12479,7 +12479,7 @@
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
