@@ -6225,7 +6225,7 @@ bool CvCity::isEuropeAccessable() const
 	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 	{
 		pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
-		if (pAdjacentPlot != NULL && pAdjacentPlot->isWater() && pAdjacentPlot->isEuropeAccessable() && pAdjacentPlot->getTerrainType() == TERRAIN_COAST)
+		if (pAdjacentPlot != NULL && pAdjacentPlot->isWater() && pAdjacentPlot->isEuropeAccessable() && (pAdjacentPlot->getTerrainType() == TERRAIN_COAST || pAdjacentPlot->getTerrainType() == TERRAIN_SHALLOW_COAST))
 		{
 			return true;
 		}
