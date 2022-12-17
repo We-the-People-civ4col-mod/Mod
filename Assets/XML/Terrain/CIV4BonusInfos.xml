@@ -11614,7 +11614,7 @@
             <YieldChanges>
                 <YieldIntegerPair>
                     <YieldType>YIELD_KAUTSCHUK</YieldType>
-                    <iValue>3</iValue>
+                    <iValue>2</iValue>
                 </YieldIntegerPair>
             </YieldChanges>
             <iHealthEffectFromRessource>0</iHealthEffectFromRessource>
