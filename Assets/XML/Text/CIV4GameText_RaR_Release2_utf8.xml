@@ -77,13 +77,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERAYCA</Tag>
-        <English>Optimized for playing the mod. Not geographically or historically correct.</English>
+        <English>Optimized for a "New Hope" release. Not geographically or historically correct.</English>
         <French>Optimisé pour le jeu du mod. Ni géographiquement, ni historiquement correcte.</French>
         <German>Optimiert für das Spielen des Mods. Nicht geografisch oder historisch korrekt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_THE_NEW_WORLD</Tag>
-        <English>Geographically correct map of the New World.</English>
+        <English>Optimized for a "New Hope" release. Geographically correct map of the New World.</English>
+        <French>Carte géographiquement correcte des Amériques.</French>
+        <German>Geographisch korrekte Karte der Neuen Welt.</German>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_TWO_CONTINENTS</Tag>
+        <English>Optimized for a "New Hope" release. Two gigantic continents located in the Northern and Southern hemispheres, separated by a wide strait.</English>
         <French>Carte géographiquement correcte des Amériques.</French>
         <German>Geographisch korrekte Karte der Neuen Welt.</German>
     </TEXT>
@@ -772,5 +778,14 @@
         <German>Keine Änderung</German>
         <Italian>Nessun cambiamento</Italian>
         <Spanish>Sin cambios</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_NEW_LANGUAGE_RESTART_REQUIRED</Tag>
+        <English>You must restart the game for the changes to take effect.</English>
+        <French>Aucun changement</French>
+        <German>Keine Änderung</German>
+        <Italian>Nessun cambiamento</Italian>
+        <Spanish>Sin cambios</Spanish>
+		<Russian>You must restart the game for the changes to take effect.</Russian>
     </TEXT>
 </Civ4GameText>
