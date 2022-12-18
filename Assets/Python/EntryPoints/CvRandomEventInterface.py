@@ -1063,14 +1063,14 @@ def ApplyBabyBoom(argsList):
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	city = player.getCity(kTriggeredData.iCityId)
 	count = 0
-	# Alle St�dte auf Bev�lkerungswachstum pr�fen
+	# Check all Cities for growth
 	(loopCity, iter) = player.firstCity(false)
 	while(loopCity):
 		if gc.getGame().getSorenRandNum(100, "(c) TAC 2010 Events") < event.getGenericParameter(1):
 			if not loopCity.isNone():
 				loopCity.setFood(loopCity.growthThreshold())
 				count += 1
-				# Abbrechen, wenn maximale Zahl St�dte erreicht
+				# Break if the max numbe of Cities is reached
 		if count > event.getGenericParameter(2):
 			break
 		(loopCity, iter) = player.nextCity(iter, false)
@@ -1746,7 +1746,7 @@ def SetLandmark(argsList):
 		plot = gc.getMap().plot(kTriggeredData.iPlotX,  kTriggeredData.iPlotY)
 		CyEngine().addSign(plot, -1, szLandmark)
 
-######## Gr�ndungsv�ter Funktionen ###########
+######## Founding Father Functions ###########
 
 def ChangeFatherPoints(argsList):
 	eEvent = argsList[0]
