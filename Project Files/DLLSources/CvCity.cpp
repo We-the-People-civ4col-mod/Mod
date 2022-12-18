@@ -4357,7 +4357,7 @@ int CvCity::getBaseYieldRateModifier(YieldTypes eIndex, int iExtra) const
 
 	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing
 	// Updated to exclude happiness internally to match GUI - Nightinggale
-	if (eIndex != YIELD_HAPPINESS && eIndex != YIELD_UNHAPPINESS)
+	if (eIndex != YIELD_HAPPINESS && eIndex != YIELD_UNHAPPINESS && eIndex != YIELD_LAW && eIndex != YIELD_CRIME)
 	{
 		iModifier += getRebelPercent() * GC.getMAX_REBEL_YIELD_MODIFIER() / 100;
 	}

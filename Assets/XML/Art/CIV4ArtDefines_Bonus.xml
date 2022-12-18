@@ -990,7 +990,7 @@
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Terrain/Resources/rubber/silk.nif</NIF>
-            <KFM/>
+            <KFM>Art/Terrain/Resources/rubber/silk.kfm</KFM>
             <Button>Art/Interface/Buttons/Kautschuk_Button.dds</Button>
             <FontButtonIndex>106</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>

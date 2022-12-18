@@ -4992,6 +4992,10 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 			break;
 		case YIELD_UNHAPPINESS: // WTP, ray, Happiness - START
 			break;
+		case YIELD_LAW: // WTP, ray, Crime and Law - START
+			break;
+		case YIELD_CRIME: // WTP, ray, Crime and Law - START
+			break;
 		case YIELD_CANNONS:
 		case YIELD_BLACK_POWDER:
 			// Erik: Since the AI cannot use this yield for military purposes, I've decided to

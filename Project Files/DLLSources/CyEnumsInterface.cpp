@@ -516,6 +516,8 @@ void CyEnumsPythonInterface()
 		.value("YIELD_EDUCATION", YIELD_EDUCATION)
 		.value("YIELD_HAPPINESS", YIELD_HAPPINESS) // WTP, ray, Happiness - START
 		.value("YIELD_UNHAPPINESS", YIELD_UNHAPPINESS) // WTP, ray, Happiness - START
+		.value("YIELD_LAW", YIELD_LAW) // WTP, ray, Crime and Law - START
+		.value("YIELD_CRIME", YIELD_CRIME) // WTP, ray, Crime and Law - START
 		.value("NUM_YIELD_TYPES", NUM_YIELD_TYPES)
 		;
 	python::enum_<EmphasizeTypes>("EmphasizeTypes")

@@ -9071,6 +9071,15 @@
         <Spanish>Español</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_LANGUAGE_5</Tag>
+        <English>Hungarian</English>
+        <French>Hungarian</French>
+        <German>Hungarian</German>
+        <Italian>Hungarian</Italian>
+        <Spanish>Hungarian</Spanish>
+        <Hungarian>Hungarian</Hungarian>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENT_GOLD_FROM_PLAYER</Tag>
         <English>[ICON_BULLET]Receive %d1[ICON_GOLD] from [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</English>
         <French>[ICON_BULLET]Recevoir %d1[ICON_GOLD] de la part de [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</French>
