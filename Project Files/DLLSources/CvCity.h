@@ -591,6 +591,23 @@ public:
 	void changeCityTimerFestivitiesOrUnrest(int iValue);
 	// WTP, ray, Happiness - END
 
+	// WTP, ray, Crime and Law - START
+	int getCityLaw() const;
+	void setCityLaw(int iValue);
+	void updateCityLaw();
+	int getCityCrime() const;
+	void setCityCrime(int iValue);
+	void updateCityCrime();
+
+	int getLawFromCityDefenders() const;
+	int getLawFromCrosses() const;
+
+	int getCrimeFromPopulation() const;
+	int getCrimeFromUnhappiness() const;
+	int getCrimeFromWars() const;
+	int getCrimBonusFactorFromOverflow() const;
+	// WTP, ray, Crime and Law - END
+
 	int getTeachUnitMultiplier() const;
 	void setTeachUnitMultiplier(int iModifier);
 	UnitClassTypes bestTeachUnitClass();
@@ -792,6 +809,8 @@ protected:
 	int m_iCityHappiness; // WTP, ray, Happiness
 	int m_iCityUnHappiness; // WTP, ray, Happiness
 	int m_iCityTimerFestivitiesOrUnrest; // WTP, ray, Happiness
+	int m_iCityLaw; // WTP, ray, Crime and Law - START
+	int m_iCityCrime; // WTP, ray, Crime and Law - START
 	int m_iDomesticDemandEventDuration; // WTP, ray Domestic Market Events - START
 	int m_iDomesticDemandEventTimer; // WTP, ray Domestic Market Events - START
 	int m_iDomesticDemandEventPriceModifier; // WTP, ray Domestic Market Events - START
@@ -885,6 +904,8 @@ protected:
 	void doCityHealth(); // R&R, ray, Health - START
 	void doCityHappiness(); // WTP, ray, Happiness - START
 	void doCityUnHappiness(); // WTP, ray, Happiness - START
+	void doCityLaw(); // WTP, ray, Crime and Law - START
+	void doCityCrime(); // WTP, ray, Crime and Law - START
 
 	// WTP, ray Domestic Market Events - START
 protected:

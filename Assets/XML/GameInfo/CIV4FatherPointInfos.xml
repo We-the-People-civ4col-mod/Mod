@@ -249,6 +249,10 @@
                     <YieldType>YIELD_CULTURE</YieldType>
                     <iPoints>2</iPoints>
                 </YieldPoint>
+                <YieldPoint>
+                    <YieldType>YIELD_LAW</YieldType>
+                    <iPoints>2</iPoints>
+                </YieldPoint>
             </YieldPoints>
             <iProductionConversionPoints>3</iProductionConversionPoints>
         </FatherPointInfo>

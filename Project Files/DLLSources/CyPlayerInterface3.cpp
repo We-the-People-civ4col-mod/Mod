@@ -139,6 +139,8 @@ void CyPlayerPythonInterface3(python::class_<CyPlayer>& x)
 		.def("getYieldRateModifier", &CyPlayer::getYieldRateModifier, "int (YieldTypes eIndex)")
 		.def("getHappinessRate", &CyPlayer::getHappinessRate, "int ()") // WTP, ray, Happiness - START
 		.def("getUnHappinessRate", &CyPlayer::getUnHappinessRate, "int ()") // WTP, ray, Happiness - START
+		.def("getLawRate", &CyPlayer::getLawRate, "int ()") // WTP, ray, Crime and Law - START
+		.def("getCrimeRate", &CyPlayer::getCrimeRate, "int ()") // WTP, ray, Crime and Law - START
 		.def("getCapitalYieldRateModifier", &CyPlayer::getCapitalYieldRateModifier, "int (YieldTypes eIndex)")
 		.def("getExtraYieldThreshold", &CyPlayer::getExtraYieldThreshold, "int (YieldTypes eIndex)")
 		.def("isYieldEuropeTradable", &CyPlayer::isYieldEuropeTradable, "bool ()")

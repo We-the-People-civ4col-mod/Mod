@@ -1427,6 +1427,80 @@ int CyCity::getUnhappinessFromTaxRate() const
 }
 // WTP, ray, Happiness - END
 
+// WTP, ray, Crime and Law - START
+int CyCity::getCityLaw() const
+{
+	return m_pCity ? m_pCity->getCityLaw() : -1;
+}
+
+void CyCity::setCityLaw(int iValue)
+{
+	if (m_pCity)
+	{
+		m_pCity->setCityLaw(iValue);
+	}
+}
+
+void CyCity::updateCityLaw()
+{
+	if (m_pCity)
+	{
+		m_pCity->updateCityLaw();
+	}
+}
+
+int CyCity::getCityCrime() const
+{
+	return m_pCity ? m_pCity->getCityCrime() : -1;
+}
+
+void CyCity::setCityCrime(int iValue)
+{
+	if (m_pCity)
+	{
+		m_pCity->setCityCrime(iValue);
+	}
+}
+
+void CyCity::updateCityCrime()
+{
+	if (m_pCity)
+	{
+		m_pCity->updateCityCrime();
+	}
+}
+
+int CyCity::getLawFromCityDefenders() const
+{
+	return m_pCity ? m_pCity->getLawFromCityDefenders() : -1;
+}
+
+int CyCity::getLawFromCrosses() const
+{
+	return m_pCity ? m_pCity->getLawFromCrosses() : -1;
+}
+
+int CyCity::getCrimeFromPopulation() const
+{
+	return m_pCity ? m_pCity->getCrimeFromPopulation() : -1;
+}
+
+int CyCity::getCrimeFromUnhappiness() const
+{
+	return m_pCity ? m_pCity->getCrimeFromUnhappiness() : -1;
+}
+
+int CyCity::getCrimeFromWars() const
+{
+	return m_pCity ? m_pCity->getCrimeFromWars() : -1;
+}
+
+int CyCity::getCrimBonusFactorFromOverflow() const
+{
+	return m_pCity ? m_pCity->getCrimBonusFactorFromOverflow() : -1;
+}
+// WTP, ray, Crime and Law - END
+
 // WTP, ray, fix for SailTo - for the City - START
 bool CyCity::isEuropeAccessable() const
 {

@@ -38,6 +38,8 @@
 	const int defaultCityHappiness = 0; // WTP, ray, Happiness - START
 	const int defaultCityUnHappiness = 0; // WTP, ray, Happiness - START
 	const int defaultCityTimerFestivitiesOrUnrest = 0; // WTP, ray, Happiness - START
+	const int defaultCityLaw = 0; // WTP, ray, Crime and Law - START
+	const int defaultCityCrime= 0; // WTP, ray, Crime and Law - START
 	const int defaultDomesticDemandEventDuration = 0; // WTP, ray Domestic Market Events - START
 	const int defaultDomesticDemandEventTimer = 0; // WTP, ray Domestic Market Events - START
 	const int defaultDomesticDemandEventPriceModifier = 0; // WTP, ray Domestic Market Events - START
@@ -101,6 +103,9 @@ enum SavegameVariableTypes
 	CitySave_CityBarracksSpace,// WTP, ray, new Barracks System - START
 	CitySave_CityHappiness, // WTP, ray, Happiness - START
 	CitySave_CityUnHappiness, // WTP, ray, Happiness - START
+	CitySave_CityTimerFestivitiesOrUnrest, // WTP, ray, Happiness - START
+	CitySave_CityLaw, // WTP, ray, Crime and Law - START
+	CitySave_CityCrime, // WTP, ray, Crime and Law - START
 	CitySave_TeachUnitMultiplier,
 	CitySave_EducationThresholdMultiplier,
 	CitySave_PopulationRank,
@@ -178,8 +183,6 @@ enum SavegameVariableTypes
 	CitySave_WorkingPlot,
 	CitySave_TradePostGold,
 
-	CitySave_CityTimerFestivitiesOrUnrest, // WTP, ray, Happiness - START
-
 	CitySave_DomesticDemandEventDuration, // WTP, ray Domestic Market Events - START
 	CitySave_DomesticDemandEventTimer, // WTP, ray Domestic Market Events - START
 	CitySave_DomesticDemandEventPriceModifier, // WTP, ray Domestic Market Events - START
@@ -230,6 +233,8 @@ const char* getSavedEnumNameCity(SavegameVariableTypes eType)
 		case CitySave_CityHappiness: return "CitySave_CityHappiness"; // WTP, ray, Happiness - START
 		case CitySave_CityUnHappiness: return "CitySave_CityUnhappiness"; // WTP, ray, Happiness - START
 		case CitySave_CityTimerFestivitiesOrUnrest: return "CitySave_CityTimerFestivitiesOrUnrest"; // WTP, ray, Happiness - START
+		case CitySave_CityLaw: return "CitySave_CityLaw"; // WTP, ray, Crime and Law - START
+		case CitySave_CityCrime: return "CitySave_CityCrime"; // WTP, ray, Crime and Law - START
 		case CitySave_DomesticDemandEventDuration: return "CitySave_DomesticDemandEventDuration"; // WTP, ray Domestic Market Events - START
 		case CitySave_DomesticDemandEventTimer: return "CitySave_DomesticDemandEventTimer"; // WTP, ray Domestic Market Events - START
 		case CitySave_DomesticDemandEventPriceModifier: return "CitySave_DomesticDemandEventPriceModifier"; // WTP, ray Domestic Market Events - START
@@ -356,6 +361,11 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bC
 	m_iCityHappiness = defaultCityHappiness; // WTP, ray, Happiness - START
 	m_iCityUnHappiness = defaultCityUnHappiness; // WTP, ray, Happiness - START
 	m_iCityTimerFestivitiesOrUnrest = defaultCityTimerFestivitiesOrUnrest; // WTP, ray, Happiness - START
+
+	// WTP, ray, Crime and Law - START
+	m_iCityLaw = defaultCityLaw;
+	m_iCityCrime = defaultCityCrime;
+	// WTP, ray, Crime and Law - START
 
 	// WTP, ray Domestic Market Events - START
 	m_iDomesticDemandEventDuration = defaultDomesticDemandEventDuration;
@@ -500,6 +510,8 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_CityHappiness: reader.Read(m_iCityHappiness); break; // WTP, ray, Happiness - START
 		case CitySave_CityUnHappiness: reader.Read(m_iCityUnHappiness); break; // WTP, ray, Happiness - START
 		case CitySave_CityTimerFestivitiesOrUnrest: reader.Read(m_iCityTimerFestivitiesOrUnrest); break; // WTP, ray, Happiness - START
+		case CitySave_CityLaw: reader.Read(m_iCityLaw); break; // WTP, ray, Crime and Law - START
+		case CitySave_CityCrime: reader.Read(m_iCityCrime); break; // WTP, ray, Crime and Law - START
 		case CitySave_DomesticDemandEventDuration: reader.Read(m_iDomesticDemandEventDuration); break; // WTP, ray Domestic Market Events - START
 		case CitySave_DomesticDemandEventTimer: reader.Read(m_iDomesticDemandEventTimer); break; // WTP, ray Domestic Market Events - START
 		case CitySave_DomesticDemandEventPriceModifier: reader.Read(m_iDomesticDemandEventPriceModifier); break; // WTP, ray Domestic Market Events - START
@@ -660,6 +672,8 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_CityHappiness, m_iCityHappiness, defaultCityHappiness); // WTP, ray, Happiness - START
 	writer.Write(CitySave_CityUnHappiness, m_iCityUnHappiness, defaultCityUnHappiness); // WTP, ray, Happiness - START
 	writer.Write(CitySave_CityTimerFestivitiesOrUnrest, m_iCityTimerFestivitiesOrUnrest, defaultCityTimerFestivitiesOrUnrest); // WTP, ray, Happiness - START
+	writer.Write(CitySave_CityLaw, m_iCityLaw, defaultCityLaw); // WTP, ray, Crime and Law - START
+	writer.Write(CitySave_CityCrime, m_iCityCrime, defaultCityCrime); // WTP, ray, Crime and Law - START
 	writer.Write(CitySave_DomesticDemandEventDuration, m_iDomesticDemandEventDuration, defaultDomesticDemandEventDuration); // WTP, ray Domestic Market Events - START
 	writer.Write(CitySave_DomesticDemandEventTimer, m_iDomesticDemandEventTimer, defaultDomesticDemandEventTimer); // WTP, ray Domestic Market Events - START
 	writer.Write(CitySave_DomesticDemandEventPriceModifier, m_iDomesticDemandEventPriceModifier, defaultDomesticDemandEventPriceModifier); // WTP, ray Domestic Market Events - START

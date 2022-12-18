@@ -556,6 +556,12 @@ void CvCity::doTurn()
 			doCityHappiness();
 			doCityUnHappiness();
 			// WTP, ray, Happiness - END
+			// WTP, ray, Crime and Law - START
+			updateCityLaw();
+			updateCityCrime();
+			doCityLaw();
+			doCityCrime();
+			// WTP, ray, Crime and Law - END
 			checkForDomesticDemandEvent(); // WTP, ray Domestic Market Events - START
 		}
 	}
@@ -7241,6 +7247,10 @@ void CvCity::doYields()
 	// WTP, ray, Happiness - START 
 	int iCityHappinessDomesticMarketGoldModifiers = getCityHappiness() - getCityUnHappiness();
 	// WTP, ray, Happiness - END
+
+	// WTP, ray, Crime and Law - START
+	int iCityLawDomesticMarketGoldModifiers = getCityLaw() - getCityCrime();
+	// WTP, ray, Crime and Law - END
 	
 	// WTP, ray, Domestic Market Profit Modifier - START
 	int iDomesticMarketProfitModifierInPercent = GET_PLAYER(getOwnerINLINE()).getTotalPlayerDomesticMarketProfitModifierInPercent();
@@ -7272,6 +7282,10 @@ void CvCity::doYields()
 				// WTP, ray, Happiness - START 
 				iProfit = iProfit * (100 + iCityHappinessDomesticMarketGoldModifiers) / 100;
 				// WTP, ray, Happiness - END
+
+				// WTP, ray, Crime and Law - START
+				iProfit = iProfit * (100 + iCityLawDomesticMarketGoldModifiers) / 100;
+				// WTP, ray, Crime and Law - END
 
 				// WTP, ray, Domestic Market Profit Modifier - START
 				iProfit = iProfit * (100 + iDomesticMarketProfitModifierInPercent) / 100;
@@ -10067,6 +10081,73 @@ void CvCity::doCityUnHappiness()
 }
 // WTP, ray, Happiness - END
 
+// WTP, ray, Crime and Law - START
+void CvCity::doCityLaw()
+{
+	//add Law to political points as currently configured in XML
+	int iNetCityLaw = getCityLaw() - getCityCrime();
+
+	// we do not do anything if the net law is negative
+	if (iNetCityLaw <= 0)
+	{
+		return;
+	}
+
+	PlayerTypes eOwner = getOwnerINLINE();
+	for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
+	{
+		FatherPointTypes ePointType = (FatherPointTypes) i;
+		GET_PLAYER(eOwner).changeFatherPoints(ePointType, iNetCityLaw * GC.getFatherPointInfo(ePointType).getYieldPoints(YIELD_LAW));
+	}
+	return;
+}
+
+void CvCity::doCityCrime()
+{
+	// this could most easily just steal money or cause unrest
+	int iCityCrime = getCityCrime() - getCityLaw();
+
+	// we do not do anything if the net crime is negative
+	if (iCityCrime <= 0)
+	{
+		return;
+	}
+
+	PlayerTypes eOwner = getOwnerINLINE();
+	CvPlayerAI& kPlayer = GET_PLAYER(eOwner);
+
+	// we substract gold if there is enough
+	if (kPlayer.getGold() > iCityCrime)
+	{
+		kPlayer.changeGold(-iCityCrime);
+
+		// add message
+		CvWString szBuffer = gDLL->getText("TXT_KEY_CITY_GOLD_STOLEN_BECAUSE_CRIME", getNameKey());
+		gDLL->getInterfaceIFace()->addMessage(eOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+
+	}
+
+	// otherwise we set occupation if we are not already in occupation
+	else if (!isOccupation())
+	{
+		if (iCityCrime < 5)
+		{
+			setOccupationTimer(1);
+		}
+		else
+		{
+			setOccupationTimer(2);
+		}
+
+		// add message
+		CvWString szBuffer = gDLL->getText("TXT_KEY_CITY_UNREST_BECAUSE_CRIME", getNameKey());
+		gDLL->getInterfaceIFace()->addMessage(eOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+	}
+
+	return;
+}
+// WTP, ray, Crime and Law - END
+
 // WTP, ray Domestic Market Events - START
 void CvCity::checkForDomesticDemandEvent()
 {
@@ -10368,6 +10449,7 @@ bool CvCity::bShouldShowCityBarracksSystem() const
 }
 // WTP, ray, new Barracks System - END
 
+// WTP, ray, Happiness - START
 // basic set and get methods
 int CvCity::getCityHappiness() const
 {
@@ -10867,8 +10949,229 @@ void CvCity::changeCityTimerFestivitiesOrUnrest(int iValue)
 
 	m_iCityTimerFestivitiesOrUnrest = m_iCityTimerFestivitiesOrUnrest + iValue;
 }
-
 // WTP, ray, Happiness - END
+
+
+// WTP, ray, Crime and Law - START
+int CvCity::getCityLaw() const
+{
+	return m_iCityLaw;
+}
+
+void CvCity::setCityLaw(int iValue)
+{
+	if (iValue < 0)
+	{
+		return;
+	}
+
+	m_iCityLaw = iValue;
+}
+
+void CvCity::updateCityLaw()
+{
+	int iTotalCityLaw = 0;
+
+	iTotalCityLaw += getBaseRawYieldProduced(YIELD_LAW);
+	iTotalCityLaw += getLawFromCityDefenders();
+	iTotalCityLaw += getLawFromCrosses();
+
+	setCityLaw(iTotalCityLaw);
+}
+
+int CvCity::getCityCrime() const
+{
+	return m_iCityCrime;
+}
+
+void CvCity::setCityCrime(int iValue)
+{
+	if (iValue < 0)
+	{
+		return;
+	}
+
+	m_iCityCrime = iValue;
+}
+
+void CvCity::updateCityCrime()
+{
+	int iTotalCityCrime = 0;
+
+	iTotalCityCrime += getBaseRawYieldProduced(YIELD_CRIME); // should not exist but in case it ever does
+	iTotalCityCrime += getCrimeFromPopulation();
+	iTotalCityCrime += getCrimeFromUnhappiness(); 
+	iTotalCityCrime += getCrimeFromWars();
+
+	int iCrimeModifierFromOverflow = getCrimBonusFactorFromOverflow();
+	iTotalCityCrime = iTotalCityCrime * (100 + iCrimeModifierFromOverflow) / 100;
+
+	setCityCrime(iTotalCityCrime);
+}
+
+// specific methods
+int CvCity::getLawFromCityDefenders() const
+{
+	int iDefendersFound = plot()->getNumDefenders(getOwnerINLINE());
+
+	// we can never generate more than what we have as Population
+	if (iDefendersFound > getPopulation())
+	{
+		iDefendersFound = getPopulation();
+	}
+
+	return iDefendersFound;
+}
+
+int CvCity::getLawFromCrosses() const
+{
+	int iLawCrosses = 0;
+	int iCrosses = calculateNetYield(YIELD_CROSSES);
+	int iPopulation = getPopulation();
+	int iPopDivisor = GC.getPOP_DIVISOR_CRIME();
+
+	// to prevent division by 0
+	if (iPopulation == 0)
+	{
+		iPopulation = 1;
+	}
+	if (iPopDivisor == 0)
+	{
+		iPopDivisor = 1;
+	}
+	if ((iPopulation / iPopDivisor) == 0)
+	{
+		iPopulation = 1;
+		iPopDivisor = 1;
+	}
+
+	iLawCrosses = iCrosses / (iPopulation / iPopDivisor);
+
+	if (iLawCrosses > (iPopulation / iPopDivisor))
+	{
+		iLawCrosses = (iPopulation / iPopDivisor);
+	}
+	// if we produce a little, we give at least 1 Happiness
+	if (iLawCrosses == 0 && iCrosses > 0)
+	{
+		iLawCrosses = 1;
+	}
+
+	return iLawCrosses;
+}
+
+int CvCity::getCrimeFromPopulation() const
+{
+	int iCrimePop = 0;
+	int iPopulation = getPopulation();
+	int iMinPopForCrime = GC.getMIN_POP_CRIME();
+
+	// small help for AI
+	if(!isHuman())
+	{
+		iMinPopForCrime = iMinPopForCrime*2;
+	}
+
+	iCrimePop = iPopulation - iMinPopForCrime;
+
+	// to prevent negative Unhappiness in case we have less pop than min value for neg pop
+	if (iCrimePop > 0)
+	{
+		return iCrimePop;
+	}
+
+	return 0;
+}
+
+int CvCity::getCrimeFromUnhappiness() const
+{
+	int iCrimeFromUnhappiness = 0;
+	int iUnhappiness = getCityUnHappiness();
+	int iPopulation = getPopulation();
+	int iPopDivisor = GC.getPOP_DIVISOR_CRIME();
+
+	// to prevent division by 0
+	if (iPopulation == 0)
+	{
+		iPopulation = 1;
+	}
+	if (iPopDivisor == 0)
+	{
+		iPopDivisor = 1;
+	}
+	if ((iPopulation / iPopDivisor) == 0)
+	{
+		iPopulation = 1;
+		iPopDivisor = 1;
+	}
+
+	iCrimeFromUnhappiness = iUnhappiness / (iPopulation / iPopDivisor);
+
+	if (iCrimeFromUnhappiness > (iPopulation / iPopDivisor))
+	{
+		iCrimeFromUnhappiness = (iPopulation / iPopDivisor);
+	}
+	// if we produce a little, we give at least 1 Happiness
+	if (iCrimeFromUnhappiness == 0 && iUnhappiness > 0)
+	{
+		iCrimeFromUnhappiness = 1;
+	}
+	return iCrimeFromUnhappiness;
+}
+
+int CvCity::getCrimeFromWars() const
+{
+	int iCrimeFromWars = 0;
+	int iFactorPerWar = GC.getPER_EUROPEAN_AT_WAR_CRIME(); 
+	int iNumEuropeanWars = 0;
+
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	{
+		if (GET_TEAM((TeamTypes)iI).isAlive())
+		{
+			// we do not count ourselves of course
+			if (iI != GET_TEAM(getTeam()).getID())
+			{
+				// we count teams we are at war with that have European Players - thus we do not count Native-only Teams, Wild Animals, Kings, ...
+				if (GET_TEAM(getTeam()).isAtWar((TeamTypes)iI) && GET_TEAM((TeamTypes)iI).hasColonialPlayer())
+				{
+					iNumEuropeanWars++;
+				}
+			}
+		}
+	}
+
+	iCrimeFromWars = iFactorPerWar * iNumEuropeanWars;
+	return iCrimeFromWars;
+}
+
+int CvCity::getCrimBonusFactorFromOverflow() const
+{
+	int iCrimeBonusFactorFromOverflow = 0;
+	int iMaxFactor = GC.getCRIME_PERCENT_BONUS_FACTOR_OVERFLOW(); 
+
+	// there is overflow
+	if (getTotalYieldStored() > getMaxYieldCapacity())
+	{
+		iCrimeBonusFactorFromOverflow = iMaxFactor;
+	}
+
+	// sorage is moree than 2 thirds full
+	else if (getTotalYieldStored() > getMaxYieldCapacity() / 3 * 2)
+	{
+		iCrimeBonusFactorFromOverflow = iMaxFactor / 3 * 2;
+	}
+
+	// storage is half full
+	else if (getTotalYieldStored() > getMaxYieldCapacity() / 2)
+	{
+		iCrimeBonusFactorFromOverflow = iMaxFactor / 2;
+	}
+
+	return iCrimeBonusFactorFromOverflow;
+}
+// WTP, ray, Crime and Law - END
+
 
 void CvCity::setTeachUnitMultiplier(int iModifier)
 {

@@ -1430,7 +1430,7 @@
 	<!-- ROYAL_INTERVENTIONS -->
 	<Define>
 		<DefineName>TIMER_ROYAL_INTERVENTIONS</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
+		<iDefineIntVal>60</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>BASE_CHANCE_ROYAL_INTERVENTIONS</DefineName>
@@ -1517,5 +1517,22 @@
 	<Define>
 		<DefineName>AI_ATTITUDE_DECREASE_FOR_REFUSING</DefineName>
 		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<!-- Movement System -->
+	<Define>
+		<DefineName>MIN_POP_CRIME</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>POP_DIVISOR_CRIME</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>PER_EUROPEAN_AT_WAR_CRIME</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>CRIME_PERCENT_BONUS_FACTOR_OVERFLOW</DefineName>
+		<iDefineIntVal>60</iDefineIntVal>
 	</Define>
 </Civ4Defines>

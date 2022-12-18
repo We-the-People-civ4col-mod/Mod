@@ -91,6 +91,23 @@ void CyCityPythonInterface5(python::class_<CyCity>& x)
 		.def("getUnhappinessFromTaxRate", &CyCity::getUnhappinessFromTaxRate, "int ()")
 		// WTP, ray, Happiness - END
 
+		// WTP, ray, Crime and Law - START
+		.def("getCityLaw", &CyCity::getCityLaw, "int ()")
+		.def("setCityLaw", &CyCity::setCityLaw, "void (int)")
+		.def("updateCityLaw", &CyCity::updateCityLaw, "void ()")
+
+		.def("getCityCrime", &CyCity::getCityCrime, "int ()")
+		.def("setCityCrime", &CyCity::setCityCrime, "void (int)")
+		.def("updateCityCrime", &CyCity::updateCityCrime, "void ()")
+
+		.def("getLawFromCityDefenders", &CyCity::getLawFromCityDefenders, "int ()")
+		.def("getLawFromCrosses", &CyCity::getLawFromCrosses, "int ()")
+		.def("getCrimeFromPopulation", &CyCity::getCrimeFromPopulation, "int ()")
+		.def("getCrimeFromUnhappiness", &CyCity::getCrimeFromUnhappiness, "int ()")
+		.def("getCrimeFromWars", &CyCity::getCrimeFromWars, "int ()")
+		.def("getCrimBonusFactorFromOverflow", &CyCity::getCrimBonusFactorFromOverflow, "int ()")
+		// WTP, ray, Crime and Law - END
+
 		.def("isEuropeAccessable", &CyCity::isEuropeAccessable, "bool ()") // WTP, ray, fix for SailTo - for the City
 
 		.def("getUnitWorkingPlot", &CyCity::getUnitWorkingPlot, python::return_value_policy<python::manage_new_object>(), "CyUnit* getUnitWorkingPlot(int /*PlotIndex*/)")

@@ -16,6 +16,16 @@
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] der Stadt = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TOTAL_CITY_LAW</Tag>
+        <English>Total [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] of City = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] der Stadt = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TOTAL_CITY_CRIME</Tag>
+        <English>Total [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] of City = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] der Stadt = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_YIELD_HAPPINESS_PRODUCED</Tag>
         <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Buildings</English>
         <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Gebäude</German>
@@ -92,11 +102,41 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_RATE_CROSSES_HAPPINESS_UNHAPPINESS</Tag>
-        <English>%d1%F2 per turn[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]from %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]from %F6</English>
-        <French>%d1%F2 par tour[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]de %F4, [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]de %F6</French>
-        <German>%d1%F2 pro Runde[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]durch %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]durch %F6</German>
-        <Italian>%d1%F2 per turno[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]de %F4, [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]de %F6</Italian>
-        <Spanish>%d1%F2 por turno[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]de %F4, [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]de %F6</Spanish>
+        <English>%d1%F2 per turn[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]from %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]from %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]from %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]from %F10</English>
+        <French>%d1%F2 par tour[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]de %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]de %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]de %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]de %F10</French>
+        <German>%d1%F2 pro Runde[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]durch %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]durch %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]durch %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]durch %F10</German>
+        <Italian>%d1%F2 per turno[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]de %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]de %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]de %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]de %F10</Italian>
+        <Spanish>%d1%F2 por turno[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]de %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]de %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]de %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]de %F10</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LAW_FROM_DEFENDERS</Tag>
+        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by guards stationed in the city</English>
+        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch stationierte Wachen der Stadt</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LAW_FROM_CROSSES</Tag>
+        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by crosses produced</English>
+        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch produzierte Kreuze</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CRIME_FROM_POPULATION</Tag>
+        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by population size</English>
+        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Stadtgröße</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CRIME_FROM_UNHAPPINESS</Tag>
+        <English>[ICON_BULLET]%d2%F3_Icon[TAB]caused by unhappiness</English>
+        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Unzurfriedenheit</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CRIME_FROM_WARS</Tag>
+        <English>[ICON_BULLET]%d2%F3_Icon[TAB]caused by wars</English>
+        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kriege</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CRIME_BONUS_MODIFIER_OVERFLOWS</Tag>
+        <English>[ICON_BULLET]+%d2%%%F3_Icon[TAB]modifier due to full storage</English>
+        <German>[ICON_BULLET]+%d2%%%F3_Icon[TAB]Modifikator durch volle Lager</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TOTAL_HAPPINESS_POSITIVE_EFFECTS</Tag>
@@ -114,6 +154,21 @@
         <German>[COLOR_HIGHLIGHT_TEXT]Zufriedenheit[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_SELECTED_TEXT]weder glücklich noch unglücklich[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]aktuell keine Effekte</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TOTAL_LAW_POSITIVE_EFFECTS</Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]City Law[COLOR_REVERT][NEWLINE]The Citizens are [COLOR_POSITIVE_TEXT]law abident[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe increases[NEWLINE][ICON_BULLET]Happiness is increases[NEWLINE][ICON_BULLET]Additional Founding Father Points are generated[NEWLINE][ICON_BULLET]Domestic Market profits increase[NEWLINE][ICON_BULLET]Entertainment profits increase[NEWLINE][ICON_BULLET]Sever effects of crime prevented</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Gesetz[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_POSITIVE_TEXT]gesetzestreu[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]Auswanderung aus Europa erhöht[NEWLINE][ICON_BULLET]Zufriedenheit steigt[NEWLINE][ICON_BULLET]Zusätzliche Gründerväterpunkte werden generiert[NEWLINE][ICON_BULLET]Höhere Profite durch heimischen Markt[NEWLINE][ICON_BULLET]Höhere Profite durch Unterhaltung[NEWLINE][ICON_BULLET]Schlimmste Auswirkungen der Kriminalität verhindert</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TOTAL_LAW_NEGATIVE_EFFECTS </Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]City Crime[COLOR_REVERT][NEWLINE]The Citizens are [COLOR_NEGATIVE_TEXT]criminal[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe decreases[NEWLINE][ICON_BULLET]Domestic Market profits decrease[NEWLINE][ICON_BULLET]Entertainment profits decrease[NEWLINE][NEWLINE]High Crime can cause [COLOR_NEGATIVE_TEXT]Unrest[COLOR_REVERT][NEWLINE][ICON_BULLET]Gold is being stolen from cities</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Kriminalität[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_NEGATIVE_TEXT]kriminell[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]Auswanderung aus Europa sinkt[NEWLINE][ICON_BULLET]Geringere Profite durch heimischen Markt[NEWLINE][ICON_BULLET]Geringere Profite durch Unterhaltung[NEWLINE][ICON_BULLET]Hohe Kriminalität kann zu Unruhen führen[NEWLINE][ICON_BULLET]Gold wird aus den Städten gestohlen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TOTAL_LAW_ZERO_EFFECTS</Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]City Happiness[COLOR_REVERT][NEWLINE]The Citizens are [COLOR_SELECTED_TEXT]neither law abident nor criminal[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]No current effects</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Zufriedenheit[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_SELECTED_TEXT]weder gesetzestreu noch kriminell[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]aktuell keine Effekte</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_TOTAL_CITY_HAPPINESS_BILLBOARD</Tag>
         <English>Happiness in the City : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</English>
         <French>Satisfaction de la ville : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</French>
@@ -124,6 +179,16 @@
         <English>Unhappiness in the City : [COLOR_NEGATIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</English>
         <French>Insatisfaction de la ville : [COLOR_NEGATIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</French>
         <German>Unzufriedenheit der Stadt : [COLOR_NEGATIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TOTAL_CITY_LAW_BILLBOARD</Tag>
+        <English>Law in the City : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</English>
+        <German>Gesetz der Stadt : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TOTAL_CITY_CRIME_BILLBOARD</Tag>
+        <English>Crime in the City : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</English>
+        <German>Verbrechen der Stadt : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_HARBOR_STILL_FREE</Tag>
@@ -174,6 +239,16 @@
         <Tag>TXT_KEY_FESTIVITIES_BECAUSE_HAPPINESS</Tag>
         <English>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high Happiness has led to festivities that generated %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT].</English>
         <German>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Zufriedenheit in der Stadt hat zu Feierlichkeiten geführt, die %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT] erzeugt haben.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_UNREST_BECAUSE_CRIME</Tag>
+        <English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high crime in the city has caused unrest.</English>
+        <German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Kriminalität in der Stadt hat zu Unruhen geführt.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_GOLD_STOLEN_BECAUSE_CRIME</Tag>
+        <English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high crime in the city has led to gold being stolen.</English>
+        <German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Kriminalität in der Stadt hat dazu geführt, dass Gold gestohlen wurde.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_UNHAPPINESS_SLAVES_MODIFIER</Tag>

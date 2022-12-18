@@ -654,16 +654,18 @@ class CvEuropeScreen:
 		fStoredPercent = float(player.getCrossesStored()) / float(player.immigrationThreshold())
 		screen.setBarPercentage(szWidget, InfoBarTypes.INFOBAR_STORED, fStoredPercent)
 		if (fStoredPercent < 1.0):
-		#  WTP, ray, Happiness
+		#  WTP, ray, Happiness , Crime and Law
 			iCrossRate = player.getYieldRate(YieldTypes.YIELD_CROSSES)
 			iHappinessRate = player.getHappinessRate()
 			iUnHappinessRate = player.getUnHappinessRate()
-			iTotal = (iCrossRate * (100 + iHappinessRate - iUnHappinessRate)) / 100
+			iLawRate = player.getLawRate()
+			iCrimeRate = player.getCrimeRate()
+			iTotal = (iCrossRate * (100 + iHappinessRate - iUnHappinessRate + iLawRate - iCrimeRate)) / 100
 			if (iTotal < 0):
 				iTotal = 0;
 			fRatePercent = float(iTotal) / float(player.immigrationThreshold()) / (1 - fStoredPercent)
 			screen.setBarPercentage(szWidget, InfoBarTypes.INFOBAR_RATE, fRatePercent)
-		#  WTP, ray, Happiness
+		#  WTP, ray, Happiness , Crime and Law
 		screen.setLabel(self.getNextWidgetName(), "", u"<font=3>" + localText.getText("TXT_KEY_IMMIGRATION_BAR", (player.getCrossesStored(), player.immigrationThreshold(), gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar())) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, iX + iW / 2, self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, self.HELP_CROSS_RATE, -1)
 
 		return 0
@@ -909,7 +911,7 @@ class CvEuropeScreen:
 				return localText.getText("TXT_KEY_ECON_GOLD_RESERVE" , ())
 			elif iData1 == self.HELP_CROSS_RATE:
 				#  WTP, ray, Happiness
-				return localText.getText("TXT_KEY_YIELD_RATE_CROSSES_HAPPINESS_UNHAPPINESS", (player.getYieldRate(YieldTypes.YIELD_CROSSES), gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar(), player.getHappinessRate(), gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar(), player.getUnHappinessRate(), gc.getYieldInfo(YieldTypes.YIELD_UNHAPPINESS).getChar()))
+				return localText.getText("TXT_KEY_YIELD_RATE_CROSSES_HAPPINESS_UNHAPPINESS", (player.getYieldRate(YieldTypes.YIELD_CROSSES), gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar(), player.getHappinessRate(), gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar(), player.getUnHappinessRate(), gc.getYieldInfo(YieldTypes.YIELD_UNHAPPINESS).getChar(), player.getLawRate(), gc.getYieldInfo(YieldTypes.YIELD_LAW).getChar(), player.getCrimeRate(), gc.getYieldInfo(YieldTypes.YIELD_CRIME).getChar()))
 			elif iData1 == self.TRAVEL_INFO or iData1 == self.RECALL:
 				return self.cargoMessage(iData2)
 			elif iData1 == self.TRADE_LOG:

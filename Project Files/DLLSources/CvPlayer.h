@@ -501,6 +501,8 @@ public:
 	int getYieldRate(YieldTypes eIndex) const;
 	int getHappinessRate() const; // WTP, ray, Happiness - START
 	int getUnHappinessRate() const; // WTP, ray, Happiness - START
+	int getLawRate() const; // WTP, ray, Crime and Law - START
+	int getCrimeRate() const; // WTP, ray, Crime and Law - START
 	bool isYieldEuropeTradable(YieldTypes eIndex) const;
 	void setYieldEuropeTradable(YieldTypes eIndex, bool bTradeable);
 	void setYieldEuropeTradableAll();

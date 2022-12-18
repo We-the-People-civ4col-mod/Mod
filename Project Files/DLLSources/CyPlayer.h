@@ -195,6 +195,8 @@ public:
 	int getYieldRate(YieldTypes eIndex);
 	int getHappinessRate(); // WTP, ray, Happiness - START
 	int getUnHappinessRate(); // WTP, ray, Happiness - START
+	int getLawRate(); // WTP, ray, Crime and Law - START
+	int getCrimeRate(); // WTP, ray, Crime and Law - START
 	int getYieldRateModifier(YieldTypes eIndex);
 	int getCapitalYieldRateModifier(YieldTypes eIndex);
 	int getExtraYieldThreshold(YieldTypes eIndex);

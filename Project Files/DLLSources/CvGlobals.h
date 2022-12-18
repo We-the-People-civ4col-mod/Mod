@@ -864,6 +864,13 @@ public:
 	int getTIMER_FESTIVITIES_OR_UNRESTS();
 	// WTP, ray, Happiness - END
 
+	// WTP, ray, Crime and Law - START
+	int getMIN_POP_CRIME();
+	int getPOP_DIVISOR_CRIME();
+	int getPER_EUROPEAN_AT_WAR_CRIME();
+	int getCRIME_PERCENT_BONUS_FACTOR_OVERFLOW();
+	// WTP, ray, Crime and Law - END
+
 	//WTP, ray, Slave Hunter and Slave Master - START
 	int getMAX_SLAVE_REVOLT_REDUCTION_BONUS_PER_CITY();
 	int getMAX_SLAVE_WORKER_PRODUCTION_BONUS_PER_CITY();
@@ -1434,6 +1441,13 @@ protected:
 	int m_FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS;
 	int m_TIMER_FESTIVITIES_OR_UNRESTS;
 	// WTP, ray, Happiness - END
+
+	// WTP, ray, Crime and Law - START
+	int m_MIN_POP_CRIME;
+	int m_POP_DIVISOR_CRIME;
+	int m_PER_EUROPEAN_AT_WAR_CRIME;
+	int m_CRIME_PERCENT_BONUS_FACTOR_OVERFLOW;
+	// WTP, ray, Crime and Law - END
 
 	//WTP, ray, Slave Hunter and Slave Master - START
 	int m_MAX_SLAVE_REVOLT_REDUCTION_BONUS_PER_CITY;
@@ -2493,6 +2507,28 @@ inline int CvGlobals::getTIMER_FESTIVITIES_OR_UNRESTS()
 	return m_TIMER_FESTIVITIES_OR_UNRESTS;
 }
 // WTP, ray, Happiness - END
+
+// WTP, ray, Crime and Law - START
+inline int CvGlobals::getMIN_POP_CRIME()
+{
+	return m_MIN_POP_CRIME;
+}
+
+inline int CvGlobals::getPOP_DIVISOR_CRIME()
+{
+	return m_POP_DIVISOR_CRIME;
+}
+
+inline int CvGlobals::getPER_EUROPEAN_AT_WAR_CRIME()
+{
+	return m_PER_EUROPEAN_AT_WAR_CRIME;
+}
+
+inline int CvGlobals::getCRIME_PERCENT_BONUS_FACTOR_OVERFLOW()
+{
+	return m_CRIME_PERCENT_BONUS_FACTOR_OVERFLOW;
+}
+// WTP, ray, Crime and Law - END
 
 //WTP, ray, Slave Hunter and Slave Master - START
 inline int CvGlobals::getMAX_SLAVE_REVOLT_REDUCTION_BONUS_PER_CITY()

@@ -339,6 +339,22 @@ public:
 	int getUnhappinessFromTaxRate() const;
 	// WTP, ray, Happiness - END
 
+	// WTP, ray, Crime and Law - START
+	int getCityLaw() const;
+	void setCityLaw(int iValue);
+	void updateCityLaw();
+	int getCityCrime() const;
+	void setCityCrime(int iValue);
+	void updateCityCrime();
+
+	int getLawFromCityDefenders() const;
+	int getLawFromCrosses() const;
+	int getCrimeFromPopulation() const;
+	int getCrimeFromUnhappiness() const;
+	int getCrimeFromWars() const;
+	int getCrimBonusFactorFromOverflow() const;
+	// WTP, ray, Crime and Law - END
+
 	bool isEuropeAccessable() const; // WTP, ray, fix for SailTo - for the City
 
 	bool isExport(int /*YieldTypes*/ eYield) const;

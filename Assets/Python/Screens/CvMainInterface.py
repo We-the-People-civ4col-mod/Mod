@@ -223,6 +223,12 @@ HELP_TOTAL_HAPPINESS_ZERO = 4303
 NEW_HARBOUR_SYSTEM = 4304 # WTP, ray, new Harbour System - START
 NEW_BARRACKS_SYSTEM = 4305 # WTP, ray, new Barracks System - START
 
+# CRIME and LAW - START
+HELP_TOTAL_LAW_POSITIVE = 4401
+HELP_TOTAL_LAW_NEGATIVE = 4402
+HELP_TOTAL_LAW_ZERO = 4403
+# CRIME and LAW - END
+
 BUILDING_MANAGMENT_PANEL_UP = True
 BUILDING_CHANGE_MANAGMENT_PANEL_UP = False
 SHIP_MANAGMENT_PANEL_UP = False
@@ -3837,6 +3843,14 @@ class CvMainInterface:
 			elif iData1 == HELP_TOTAL_HAPPINESS_ZERO:
 				return localText.getText("TXT_KEY_TOTAL_HAPPINESS_ZERO_EFFECTS", ());
 # CITY HAPPINESS vs UNHAPPINESS - END
+# CRIME and LAW - START
+			elif iData1 == HELP_TOTAL_LAW_POSITIVE:
+				return localText.getText("TXT_KEY_TOTAL_LAW_POSITIVE_EFFECTS", ());
+			elif iData1 == HELP_TOTAL_LAW_NEGATIVE:
+				return localText.getText("TXT_KEY_TOTAL_LAW_NEGATIVE_EFFECTS", ());
+			elif iData1 == HELP_TOTAL_LAW_ZERO:
+				return localText.getText("TXT_KEY_TOTAL_LAW_ZERO_EFFECTS", ());
+# CRIME and LAW - END
 			elif iData1 == TIMETEXT_ID:
 				return self.timeTextHelp()
 

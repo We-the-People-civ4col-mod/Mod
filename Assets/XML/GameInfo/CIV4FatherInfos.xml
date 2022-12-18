@@ -216,7 +216,7 @@
             <FatherCategory>FATHERCATEGORY_EXPLORATION</FatherCategory>
             <RevealImprovements/>
             <FreeUnits>
-			    <FreeUnit>
+                <FreeUnit>
                     <UnitClass>UNITCLASS_EXPERT_SETTLER</UnitClass>
                     <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>

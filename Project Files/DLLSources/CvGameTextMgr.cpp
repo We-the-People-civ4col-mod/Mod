@@ -3412,19 +3412,34 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 	}
 	// R&R, ray, Health - END
 	// WTP, ray, Happiness - START
-	int netHappiness = pCity->getCityHappiness();
-	if (netHappiness != 0)
+	int iHappiness = pCity->getCityHappiness();
+	if (iHappiness != 0)
 	{
 		szString.append(NEWLINE);
-		szString.append(gDLL->getText("TXT_KEY_TOTAL_CITY_HAPPINESS_BILLBOARD", netHappiness, GC.getYieldInfo(YIELD_HAPPINESS).getChar()));
+		szString.append(gDLL->getText("TXT_KEY_TOTAL_CITY_HAPPINESS_BILLBOARD", iHappiness, GC.getYieldInfo(YIELD_HAPPINESS).getChar()));
 	}
-	int netUnHappiness = pCity->getCityUnHappiness();
-	if (netUnHappiness != 0)
+	int iUnHappiness = pCity->getCityUnHappiness();
+	if (iUnHappiness != 0)
 	{
 		szString.append(NEWLINE);
-		szString.append(gDLL->getText("TXT_KEY_TOTAL_CITY_UNHAPPINESS_BILLBOARD", netUnHappiness, GC.getYieldInfo(YIELD_UNHAPPINESS).getChar()));
+		szString.append(gDLL->getText("TXT_KEY_TOTAL_CITY_UNHAPPINESS_BILLBOARD", iUnHappiness, GC.getYieldInfo(YIELD_UNHAPPINESS).getChar()));
 	}
 	// WTP, ray, Happiness - END
+
+	// WTP, ray, Crime and Law - START
+	int iLaw = pCity->getCityLaw();
+	if (iLaw != 0)
+	{
+		szString.append(NEWLINE);
+		szString.append(gDLL->getText("TXT_KEY_TOTAL_CITY_LAW_BILLBOARD", iLaw, GC.getYieldInfo(YIELD_HAPPINESS).getChar()));
+	}
+	int iCrime = pCity->getCityCrime();
+	if (iCrime != 0)
+	{
+		szString.append(NEWLINE);
+		szString.append(gDLL->getText("TXT_KEY_TOTAL_CITY_CRIME_BILLBOARD", iCrime, GC.getYieldInfo(YIELD_UNHAPPINESS).getChar()));
+	}
+	// WTP, ray, Crime and Law - END
 
 	// WTP, ray, new Harbour System - START
 	if (pCity->bShouldShowCityHarbourSystem())
@@ -8701,7 +8716,6 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		city.updateCityHappiness();
 		int iTotalCityHappiness = city.getCityHappiness();
 		szBuffer.append(gDLL->getText("TXT_KEY_TOTAL_CITY_HAPPINESS", info.getTextKeyWide(), iTotalCityHappiness, info.getChar()));
-
 	}
 	else if (eYieldType == YIELD_UNHAPPINESS)
 	{
@@ -8754,6 +8768,71 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		szBuffer.append(gDLL->getText("TXT_KEY_TOTAL_CITY_UNHAPPINESS", info.getTextKeyWide(), iTotalCityUnHappiness, info.getChar()));
 	}
 	// WTP, ray, Happiness - END
+
+	// WTP, ray, Crime and Law - START
+	// these are the Widget Help Texts for Mouse Over in City Screen
+	else if (eYieldType == YIELD_LAW)
+	{
+		int iLawFromDefenders = city.getLawFromCityDefenders();
+		if (iLawFromDefenders != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_LAW_FROM_DEFENDERS", info.getTextKeyWide(), iLawFromDefenders, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+
+		int iLawFromCrosses = city.getLawFromCrosses();
+		if (iLawFromCrosses != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_LAW_FROM_CROSSES", info.getTextKeyWide(), iLawFromCrosses, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+
+		szBuffer.append(SEPARATOR);
+		szBuffer.append(NEWLINE);
+
+		city.updateCityLaw();
+		int iTotalCityLaw = city.getCityLaw();
+		szBuffer.append(gDLL->getText("TXT_KEY_TOTAL_CITY_LAW", info.getTextKeyWide(), iTotalCityLaw, info.getChar()));
+	}
+	else if (eYieldType == YIELD_CRIME)
+	{
+		int iCrimeFromPouluation = city.getCrimeFromPopulation();
+		if (iCrimeFromPouluation != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_CRIME_FROM_POPULATION", info.getTextKeyWide(), iCrimeFromPouluation, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+
+		int iCrimeFromUnhappiness = city.getCrimeFromUnhappiness();
+		if (iCrimeFromUnhappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_CRIME_FROM_UNHAPPINESS", info.getTextKeyWide(), iCrimeFromUnhappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+
+		int iCrimeFromWars = city.getCrimeFromWars();
+		if (iCrimeFromWars != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_CRIME_FROM_WARS", info.getTextKeyWide(), iCrimeFromWars, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+
+		int iCrimBonusFactorFromOverflow = city.getCrimBonusFactorFromOverflow();
+		if (iCrimBonusFactorFromOverflow != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_CRIME_BONUS_MODIFIER_OVERFLOWS", info.getTextKeyWide(), iCrimBonusFactorFromOverflow, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+
+		szBuffer.append(SEPARATOR);
+		szBuffer.append(NEWLINE);
+
+		city.updateCityCrime();
+		int iTotalCityCrime = city.getCityCrime();
+		szBuffer.append(gDLL->getText("TXT_KEY_TOTAL_CITY_CRIME", info.getTextKeyWide(), iTotalCityCrime, info.getChar()));
+	}
+	// WTP, ray, Crime and Law - END
+
 	else // old code
 	{
 		// WTP, ray, correcting Yield Help for Culture - missing Culture from Citizens - START
@@ -9036,6 +9115,23 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 		}
 	}
 	// WTP, ray, Happiness - END
+
+	// WTP, ray, Crime and Law - START
+	// only for Europeans
+	if (!cityOwnerPlayer.isNative())
+	{
+		int iLaw = pCity->getCityLaw();
+		int iCrime = pCity->getCityCrime();
+		if (iLaw > iCrime)
+		{
+			szBuffer.append(CvWString::format(L" %c", GC.getYieldInfo(YIELD_LAW).getChar()));
+		}
+		if (iCrime > iLaw)
+		{
+			szBuffer.append(CvWString::format(L" %c", GC.getYieldInfo(YIELD_CRIME).getChar()));
+		}
+	}
+	// WTP, ray, Crime and Law - END
 
 	// WTP, ray, new Harbour System - START
 	if (GLOBAL_DEFINE_ENABLE_NEW_HARBOUR_SYSTEM && pCity->plot()->isCoastalLand() && pCity->isHuman())

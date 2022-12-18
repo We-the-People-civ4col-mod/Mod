@@ -9284,6 +9284,52 @@ int CvPlayer::getUnHappinessRate() const
 }
 // WTP, ray, Happiness - END
 
+// WTP, ray, Crime and Law - START
+int CvPlayer::getLawRate() const
+{
+	if (getNumCities() == 0)
+	{
+		return 0;
+	}
+
+	int iTotalRate = GC.getCivilizationInfo(getCivilizationType()).getFreeYields(YIELD_LAW);
+	int iLoop;
+	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		iTotalRate += pLoopCity->getCityLaw();
+	}
+
+	iTotalRate = iTotalRate / getNumCities(); // we calculate the average because it is supposed to be a percentage later
+
+	return iTotalRate;
+}
+
+int CvPlayer::getCrimeRate() const
+{
+	if (getNumCities() == 0)
+	{
+		return 0;
+	}
+
+	// small AI cheat to prevent issues 
+	if (!isHuman())
+	{
+		return 0;
+	}
+
+	int iTotalRate = GC.getCivilizationInfo(getCivilizationType()).getFreeYields(YIELD_CRIME);
+	int iLoop;
+	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		iTotalRate += pLoopCity->getCityCrime();
+	}
+
+	iTotalRate = iTotalRate / getNumCities(); // we calculate the average because it is supposed to be a percentage later
+
+	return iTotalRate;
+}
+/// WTP, ray, Crime and Law - END
+
 bool CvPlayer::isYieldEuropeTradable(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
@@ -11771,7 +11817,13 @@ void CvPlayer::doCrosses()
 	int iHappinessRate = getHappinessRate();
 	int iUnHappinessRate = getUnHappinessRate();
 	iCrossRate = (iCrossRate * (100 + iHappinessRate - iUnHappinessRate)) / 100; // this is percentage modifcation
-	// WTP, ray, Happiness - EMD
+	// WTP, ray, Happiness - END
+
+	// WTP, ray, Crime and Law - START
+	int iLawRate = getLawRate();
+	int iCrimeRate = getCrimeRate();
+	iCrossRate = (iCrossRate * (100 + iLawRate - iCrimeRate)) / 100; // this is percentage modifcation
+	// WTP, ray, Crime and Law - END
 
 	//add crosses to political points
 	for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)

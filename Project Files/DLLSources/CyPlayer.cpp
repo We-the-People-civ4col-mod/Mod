@@ -668,6 +668,18 @@ int CyPlayer::getUnHappinessRate()
 	return m_pPlayer ? m_pPlayer->getUnHappinessRate() : -1;
 }
 // WTP, ray, Happiness - END
+
+// WTP, ray, Crime and Law - START
+int CyPlayer::getLawRate()
+{
+	return m_pPlayer ? m_pPlayer->getLawRate() : -1;
+}
+int CyPlayer::getCrimeRate()
+{
+	return m_pPlayer ? m_pPlayer->getCrimeRate() : -1;
+}
+// WTP, ray, Crime and Law - END
+
 int CyPlayer::getYieldRateModifier(YieldTypes eIndex)
 {
 	return m_pPlayer ? m_pPlayer->getYieldRateModifier(eIndex) : 0;
