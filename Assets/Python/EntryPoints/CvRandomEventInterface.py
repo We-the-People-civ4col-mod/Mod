@@ -1063,14 +1063,14 @@ def ApplyBabyBoom(argsList):
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	city = player.getCity(kTriggeredData.iCityId)
 	count = 0
-	# Alle Städte auf Bevölkerungswachstum prüfen
+	# Alle Stï¿½dte auf Bevï¿½lkerungswachstum prï¿½fen
 	(loopCity, iter) = player.firstCity(false)
 	while(loopCity):
 		if gc.getGame().getSorenRandNum(100, "(c) TAC 2010 Events") < event.getGenericParameter(1):
 			if not loopCity.isNone():
 				loopCity.setFood(loopCity.growthThreshold())
 				count += 1
-				# Abbrechen, wenn maximale Zahl Städte erreicht
+				# Abbrechen, wenn maximale Zahl Stï¿½dte erreicht
 		if count > event.getGenericParameter(2):
 			break
 		(loopCity, iter) = player.nextCity(iter, false)
@@ -1746,7 +1746,7 @@ def SetLandmark(argsList):
 		plot = gc.getMap().plot(kTriggeredData.iPlotX,  kTriggeredData.iPlotY)
 		CyEngine().addSign(plot, -1, szLandmark)
 
-######## Gründungsväter Funktionen ###########
+######## Grï¿½ndungsvï¿½ter Funktionen ###########
 
 def ChangeFatherPoints(argsList):
 	eEvent = argsList[0]
@@ -6037,13 +6037,13 @@ def applyGiveFood(argsList):
 	city = player.getCity(kTriggeredData.iCityId)
 	if not player.isHuman():
 		city = player.firstCity(true)[0]
-	iYield1 = gc.getInfoTypeForString("YIELD_FOOD")
+	iYield = gc.getInfoTypeForString("YIELD_FOOD")
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
 	if city.getYieldStored(iYield) < quantity :
 		return false
-	city.changeYieldStored(iYield1, -quantity)
+	city.changeYieldStored(iYield, -quantity)
 
 def getHelpGiveFood(argsList):
 	eEvent = argsList[0]
