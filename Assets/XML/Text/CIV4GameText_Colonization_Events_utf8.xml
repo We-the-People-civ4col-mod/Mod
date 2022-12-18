@@ -832,7 +832,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_HELP</Tag>
         <English>Hostile natives attack out of the jungle.</English>
-        <German>Feindliche Ureinwohner greifen aus den Dschungel an.</German>
+        <German>Feindliche Ureinwohner greifen aus dem Dschungel an.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HIGHWAYMAN_ATTACK</Tag>
