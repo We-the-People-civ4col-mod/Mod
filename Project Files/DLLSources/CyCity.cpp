@@ -1381,6 +1381,11 @@ int CyCity::getHappinessFromCulture() const
 	return m_pCity ? m_pCity->getHappinessFromCulture() : -1;
 }
 
+int CyCity::getHappinessFromLaw() const
+{
+	return m_pCity ? m_pCity->getHappinessFromLaw() : -1;
+}
+
 int CyCity::getHappinessFromEducation() const
 {
 	return m_pCity ? m_pCity->getHappinessFromEducation() : -1;

@@ -580,6 +580,7 @@ public:
 	int getHappinessFromBells() const;
 	int getHappinessFromHealth() const;
 	int getHappinessFromCulture() const;
+	int getHappinessFromLaw() const;
 	int getHappinessFromEducation() const;
 	int getHappinessFromDomesticDemandsFulfilled() const;
 	int getHappinessFromTreaties() const;

@@ -10396,6 +10396,7 @@ void CvCity::updateCityHappiness()
 	iTotalCityHappiness += getHappinessFromBells();
 	iTotalCityHappiness += getHappinessFromHealth();
 	iTotalCityHappiness += getHappinessFromCulture();
+	iTotalCityHappiness += getHappinessFromLaw();
 	iTotalCityHappiness += getHappinessFromEducation();
 	iTotalCityHappiness += getHappinessFromDomesticDemandsFulfilled();
 	iTotalCityHappiness += getHappinessFromTreaties();
@@ -10705,9 +10706,45 @@ int CvCity::getHappinessFromCulture() const
 	// if we produce a little, we give at least 1 Happiness
 	if (iHapCulture == 0 && iCulture > 0)
 	{
-		iCulture = 1;
+		iHapCulture = 1;
 	}
 	return iHapCulture;
+}
+
+int CvCity::getHappinessFromLaw() const
+{
+	int iHapLaw = 0;
+	int iCulture = calculateNetYield(YIELD_LAW);
+	int iPopulation = getPopulation();
+	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS();
+
+	// to prevent division by 0
+	if (iPopulation == 0)
+	{
+		iPopulation = 1;
+	}
+	if (iPopDivisor == 0)
+	{
+		iPopDivisor = 1;
+	}
+	if ((iPopulation / iPopDivisor) == 0)
+	{
+		iPopulation = 1;
+		iPopDivisor = 1;
+	}
+
+	iHapLaw = iCulture / ((iPopulation / iPopDivisor));
+
+	if (iHapLaw > (iPopulation / iPopDivisor))
+	{
+		iHapLaw = (iPopulation / iPopDivisor);
+	}
+	// if we produce a little, we give at least 1 Happiness
+	if (iHapLaw == 0 && iCulture > 0)
+	{
+		iHapLaw = 1;
+	}
+	return iHapLaw;
 }
 
 int CvCity::getHappinessFromEducation() const

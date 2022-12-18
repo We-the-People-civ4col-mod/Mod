@@ -41,6 +41,11 @@
         <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kultur</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_HAPPINESS_LAW</Tag>
+        <English>[ICON_BULLET]%d2%F3_Icon[TAB]from Law</English>
+        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Gesetz</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_HAPPINESS_EDUCATION</Tag>
         <English>[ICON_BULLET]%d2%F3_Icon[TAB]from Education</English>
         <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Bildung</German>

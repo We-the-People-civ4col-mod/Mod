@@ -8670,6 +8670,12 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 			szBuffer.append(gDLL->getText("TXT_KEY_HAPPINESS_CULTURE", info.getTextKeyWide(), iCultureHappiness, info.getChar()));
 			szBuffer.append(NEWLINE);
 		}
+		int iLawHappiness = city.getHappinessFromLaw();
+		if (iLawHappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_HAPPINESS_LAW", info.getTextKeyWide(), iLawHappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
 		int iEducationHappiness = city.getHappinessFromEducation();
 		if (iEducationHappiness != 0)
 		{
