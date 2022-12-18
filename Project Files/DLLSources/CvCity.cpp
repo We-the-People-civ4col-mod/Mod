@@ -11086,7 +11086,15 @@ int CvCity::getCrimeFromPopulation() const
 int CvCity::getCrimeFromUnhappiness() const
 {
 	int iCrimeFromUnhappiness = 0;
-	int iUnhappiness = getCityUnHappiness();
+
+	// we use the diff between Happiness and Unhappiness
+	int iUnhappiness = getCityUnHappiness() - getCityHappiness();
+
+	if (iUnhappiness <= 0)
+	{
+		return 0;
+	}
+
 	int iPopulation = getPopulation();
 	int iPopDivisor = GC.getPOP_DIVISOR_CRIME();
 
