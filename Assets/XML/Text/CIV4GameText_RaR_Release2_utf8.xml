@@ -779,13 +779,12 @@
         <Italian>Nessun cambiamento</Italian>
         <Spanish>Sin cambios</Spanish>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_NEW_LANGUAGE_RESTART_REQUIRED</Tag>
         <English>You must restart the game for the changes to take effect.</English>
-        <French>Aucun changement</French>
-        <German>Keine Änderung</German>
-        <Italian>Nessun cambiamento</Italian>
-        <Spanish>Sin cambios</Spanish>
-		<Russian>You must restart the game for the changes to take effect.</Russian>
+        <French>Vous devez redémarrer le jeu pour que les modifications prennent effet.</French>
+        <German>Du musst das Spiel neu starten, damit die Änderungen wirksam werden.</German>
+        <Italian>Devi riavviare il gioco affinché le modifiche abbiano effetto.</Italian>
+        <Spanish>Debes reiniciar el juego para que los cambios surtan efecto.</Spanish>
     </TEXT>
 </Civ4GameText>
