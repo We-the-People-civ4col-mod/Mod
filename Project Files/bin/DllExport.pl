@@ -64,9 +64,11 @@ sub processfile
 	chomp(my @lines = <$handle>);
 	close $handle;
 	
+	my $i = 0;
 	
 	for my $line (@lines)
 	{
+		$i = $i + 1;
 		if (index($line, "DllExport") != -1)
 		{
 			if ($line eq $next_line)
@@ -75,7 +77,7 @@ sub processfile
 			}
 			else
 			{
-				die "\nDllExport ERROR: $file: Found line, which shouldn't be there: $line\nExpected: $next_line\n\n";
+				die "\n$path($i): Found DllExport on line not used by the exe: $line\nExpected: $next_line\nFor more information see https://github.com/We-the-People-civ4col-mod/Mod/wiki/DLL-interface-to-exe-and-python#exe-calling-dll\n\n";
 			}
 		}
 	}
