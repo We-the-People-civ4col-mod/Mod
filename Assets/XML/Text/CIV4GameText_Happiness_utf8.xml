@@ -165,8 +165,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TOTAL_LAW_NEGATIVE_EFFECTS </Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]City Crime[COLOR_REVERT][NEWLINE]The Citizens are [COLOR_NEGATIVE_TEXT]criminal[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe decreases[NEWLINE][ICON_BULLET]Domestic Market profits decrease[NEWLINE][ICON_BULLET]Entertainment profits decrease[NEWLINE][ICON_BULLET]High Crime can cause [COLOR_NEGATIVE_TEXT]Unrest[COLOR_REVERT][NEWLINE][ICON_BULLET]Gold is being stolen from cities</English>
-        <German>[COLOR_HIGHLIGHT_TEXT]Kriminalität[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_NEGATIVE_TEXT]kriminell[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]Auswanderung aus Europa sinkt[NEWLINE][ICON_BULLET]Geringere Profite durch heimischen Markt[NEWLINE][ICON_BULLET]Geringere Profite durch Unterhaltung[NEWLINE][ICON_BULLET]Hohe Kriminalität kann zu Unruhen führen[NEWLINE][ICON_BULLET]Gold wird aus den Städten gestohlen</German>
+        <English>[COLOR_HIGHLIGHT_TEXT]City Crime[COLOR_REVERT][NEWLINE]The Citizens are [COLOR_NEGATIVE_TEXT]criminal[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe decreases[NEWLINE][ICON_BULLET]Happiness decreases[NEWLINE][ICON_BULLET]Domestic Market profits decrease[NEWLINE][ICON_BULLET]Entertainment profits decrease[NEWLINE][ICON_BULLET]High Crime can cause [COLOR_NEGATIVE_TEXT]Unrest[COLOR_REVERT][NEWLINE][ICON_BULLET]Gold is being stolen from cities</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Kriminalität[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_NEGATIVE_TEXT]kriminell[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]Auswanderung aus Europa sinkt[NEWLINE][ICON_BULLET]Zufriedenheit sinkt[NEWLINE][ICON_BULLET]Geringere Profite durch heimischen Markt[NEWLINE][ICON_BULLET]Geringere Profite durch Unterhaltung[NEWLINE][ICON_BULLET]Hohe Kriminalität kann zu Unruhen führen[NEWLINE][ICON_BULLET]Gold wird aus den Städten gestohlen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TOTAL_LAW_ZERO_EFFECTS</Tag>
