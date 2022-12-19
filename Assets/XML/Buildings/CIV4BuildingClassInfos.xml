@@ -37,6 +37,30 @@
             <VictoryThresholds/>
         </BuildingClassInfo>
         <BuildingClassInfo>
+            <Type>BUILDINGCLASS_VILLAGE_COURT</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_VILLAGE_COURT</Description>
+            <DefaultBuilding>BUILDING_VILLAGE_COURT</DefaultBuilding>
+            <VictoryThresholds/>
+        </BuildingClassInfo>
+        <BuildingClassInfo>
+            <Type>BUILDINGCLASS_TOWN_COURT</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_TOWN_COURT</Description>
+            <DefaultBuilding>BUILDING_TOWN_COURT</DefaultBuilding>
+            <VictoryThresholds/>
+        </BuildingClassInfo>
+        <BuildingClassInfo>
+            <Type>BUILDINGCLASS_CITY_COURT</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_CITY_COURT</Description>
+            <DefaultBuilding>BUILDING_CITY_COURT</DefaultBuilding>
+            <VictoryThresholds/>
+        </BuildingClassInfo>
+        <BuildingClassInfo>
+            <Type>BUILDINGCLASS_SUPREME_COURT</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_SUPREME_COURT</Description>
+            <DefaultBuilding>BUILDING_SUPREME_COURT</DefaultBuilding>
+            <VictoryThresholds/>
+        </BuildingClassInfo>
+        <BuildingClassInfo>
             <Type>BUILDINGCLASS_COLONIAL_CONGRESS</Type>
             <Description>TXT_KEY_BUILDINGCLASS_COLONIAL_CONGRESS</Description>
             <DefaultBuilding>BUILDING_COLONIAL_CONGRESS</DefaultBuilding>

@@ -805,4 +805,127 @@
         <English>A big bakery makes an important contribution to the region it serves, increasing both the food supply and the community's happiness.</English>
         <German>TBD</German>
     </TEXT>
+
+    <!-- Courthouse -->
+    <TEXT>
+        <Tag>TXT_KEY_SPECIALBUILDING_LAW</Tag>
+        <English>Courthouse</English>
+        <German>
+            <Text>Gerichtsgebäude</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_VILLAGE_COURT</Tag>
+        <English>Village Courthous</English>
+        <German>
+            <Text>Dorfgerichtshaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_TOWN_COURT</Tag>
+        <English>Town Courthouse</English>
+        <German>
+            <Text>Stadtgerichtshaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_CITY_COURT</Tag>
+        <English>City Courthouse</English>
+        <German>
+            <Text>Distriktsgerichthaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_SUPREME_COURT</Tag>
+        <English>Supreme Court</English>
+        <German>
+            <Text>Oberstes Gericht</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_VILLAGE_COURT</Tag>
+        <English>Village Courthous</English>
+        <German>
+            <Text>Dorfgerichtshaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TOWN_COURT</Tag>
+        <English>Town Courthouse</English>
+        <German>
+            <Text>Stadtgerichtshaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_CITY_COURT</Tag>
+        <English>City Courthouse</English>
+        <German>
+            <Text>Distriktsgerichthaus</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_SUPREME_COURT</Tag>
+        <English>Supreme Court</English>
+        <German>
+            <Text>Oberstes Gericht</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_VILLAGE_COURT_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_VILLAGE_COURT_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TOWN_COURT_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_TOWN_COURT_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_CITY_COURT_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_CITY_COURT_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_SUPREME_COURT_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_SUPREME_COURT_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>

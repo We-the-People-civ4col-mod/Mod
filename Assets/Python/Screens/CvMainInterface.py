@@ -149,7 +149,7 @@ HELPTEXT_AREA_MIN_WIDTH = 150
 # R&R, Robert Surcouf, No More Variables Hidden game option END
 
 # CITY BUILDINGS GRID MAP
-BUILDING_DATA = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+BUILDING_DATA = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 
 BUILDING_DATA[0] = [30, 18, 20, 12] #Bells
 BUILDING_DATA[1] = [44, 20, 20, 12] #Hammers
@@ -192,8 +192,9 @@ BUILDING_DATA[37] = [72, 20, 20, 12] #Tailor
 BUILDING_DATA[38] = [16, 74, 20, 12] #Baker
 BUILDING_DATA[39] = [60, 89, 20, 7] #Statue
 BUILDING_DATA[40] = [45, 88, 20, 10] #Graveyard
+BUILDING_DATA[41] = [72, 2, 20, 12] #Courthouse
 
-BUILDING_GRID = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+BUILDING_GRID = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 
 BUILDING_AREA_WIDTH = -1
 BUILDING_AREA_HEIGHT = -1

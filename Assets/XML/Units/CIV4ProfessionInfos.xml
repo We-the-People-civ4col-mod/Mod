@@ -4522,6 +4522,45 @@
             <iLbDLearnLevel>3</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
+            <Type>PROFESSION_JUDGE</Type>
+            <Description>TXT_KEY_PROFESSION_JUDGE</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_JUDGE_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_JUDGE_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_JUDGE_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_LAW</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>300</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_LAW</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>NONE</YieldType>
+            </YieldsConsumed>
+            <Button>Art/interface/buttons/New_Profession_Buttons/Profession_Judge_Button.dds</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_JUDGE</ExpertUnit>
+            <iLbDLearnLevel>3</iLbDLearnLevel>
+        </ProfessionInfo>
+        <ProfessionInfo>
             <Type>PROFESSION_ENTERTAINER</Type>
             <Description>TXT_KEY_PROFESSION_ENTERTAINER</Description>
             <Civilopedia>TXT_KEY_PROFESSION_ENTERTAINER_PEDIA</Civilopedia>

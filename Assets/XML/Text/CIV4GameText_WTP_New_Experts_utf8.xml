@@ -1086,7 +1086,7 @@
         <English>Seductive Harlot</English>
         <German>
             <Text>Verführerische Dirne</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
@@ -1095,7 +1095,7 @@
         <English>Seductive Harlot</English>
         <German>
             <Text>Verführerische Dirne</Text>
-            <Gender>Male</Gender>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
     </TEXT>
@@ -1107,6 +1107,35 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_HARLOT_STRATEGY</Tag>
         <English>Lonely men often find happiness with a whore who also knows how to be a good listener. For the harlot herself, being in a world with five men for every woman means the chance to find her own husband instead of having her marriage arranged by her parents.</English>
+        <German>TBD</German>
+    </TEXT>
+    <!-- JUDGE -->
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_JUDGE</Tag>
+        <English>Honored Judge</English>
+        <German>
+            <Text>Ehrenwerter Richter</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_JUDGE</Tag>
+        <English>Honored Judge</English>
+        <German>
+            <Text>Ehrenwerter Richter</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_JUDGE_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_JUDGE_STRATEGY</Tag>
+        <English>TBD</English>
         <German>TBD</German>
     </TEXT>
 </Civ4GameText>

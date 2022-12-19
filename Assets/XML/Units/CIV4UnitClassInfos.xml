@@ -437,6 +437,11 @@
             <DefaultUnit>UNIT_DOCTOR</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_JUDGE</Type>
+            <Description>TXT_KEY_UNITCLASS_JUDGE</Description>
+            <DefaultUnit>UNIT_JUDGE</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_ENTERTAINER</Type>
             <Description>TXT_KEY_UNITCLASS_ENTERTAINER</Description>
             <DefaultUnit>UNIT_ENTERTAINER</DefaultUnit>

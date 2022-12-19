@@ -1513,4 +1513,31 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_JUDGE</Tag>
+        <English>
+            <Text>Judge:Judges</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <German>
+            <Text>Richter:Richter</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_JUDGE_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_JUDGE_PEDIA</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_JUDGE_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>

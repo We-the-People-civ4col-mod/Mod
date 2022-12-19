@@ -375,5 +375,14 @@
             <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
             <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,7,1</NatureObject>
         </SpecialBuildingInfo>
+        <SpecialBuildingInfo>
+            <Type>SPECIALBUILDING_LAW</Type>
+            <Description>TXT_KEY_SPECIALBUILDING_LAW</Description>
+            <bValid>1</bValid>
+            <FontButtonIndex>41</FontButtonIndex>
+            <ProductionTraits/>
+            <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
+            <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,6,1</NatureObject>
+        </SpecialBuildingInfo>
     </SpecialBuildingInfos>
 </Civ4SpecialBuildingInfos>

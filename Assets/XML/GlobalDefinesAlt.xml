@@ -1518,7 +1518,7 @@
 		<DefineName>AI_ATTITUDE_DECREASE_FOR_REFUSING</DefineName>
 		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
-	<!-- Movement System -->
+	<!-- Crime and Law -->
 	<Define>
 		<DefineName>MIN_POP_CRIME</DefineName>
 		<iDefineIntVal>3</iDefineIntVal>
