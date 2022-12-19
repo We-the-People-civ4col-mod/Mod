@@ -786,7 +786,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRADER_ATTACKED_1</Tag>
-        <English>Our Native trader travels to the nearest village to do some business there. He looks forward to seeing the friendly Native woman from his last visit. She liked talking with him.[NEWLINE]At the same time he remembers a dangerous look from one of the young men while he was talking to her. Lost in thought, he suddenly catches a movement out of the corner of his eye.[NEWLINE]Barely a hand's width away an arrow flies past his face.</English>
+        <English>Our Native trader travels to the nearest village to do some business there. He looks forward to seeing the attractive Native woman from his last visit. She liked talking with him.[NEWLINE]At the same time he remembers a dangerous look from one of the young men while he was talking to her. Lost in thought, he suddenly catches a movement out of the corner of his eye.[NEWLINE]Barely a hand's width away an arrow flies past his face.</English>
         <German>Unser Ureinwohnerhändler ist auf dem Weg zum nahgelegenen Dorf um dort seine Geschäfte zu verrichten. Er freut sich darauf das junge freundliche Ureinwohndermädchen wieder zu sehen, dass so gerne mit ihm redet. Aber denkt er auch an die bösen Blicke eines der jungen Ureinwohnermänner, als er mit ihr sprach. ... Während er so in Gedanken ist, sieht er plötzlich einen Bewegung im Augenwinkel und ein Pfeil fliegt nur um eine Handbreite an seinem Gesicht vorbei.</German>
     </TEXT>
     <TEXT>
@@ -801,7 +801,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RANGER_BEAR_ATTACK_1</Tag>
-        <English>Our ranger is on his patrol through the forests. Suddenly he hears high screams of fear. After a short search he finds the location of those screams. He witnesses a missionary in a tree being attacked by a hungry grizzly angrily trying to shake him down.</English>
+        <English>Our ranger is on patrol through the forest. Suddenly he hears a high-pitched scream of fear followed by a rattling sound, like a tree in a high wind. He heads toward the noise and sees a missionary up in a tree, while a hungry grizzly methodically tries to shake him loose.</English>
         <German>Einer unserer Missionare ist auf Parolie in den Wäldern. Plötzlich hört er Schreie voller Angst. Nach einer kurzen Suche findet er  den Urpsrpung der Schreie. Er wird Zeuge wie ein Missionar in einem Baum von einem hungrigen Grizzly angegriffen wird, der wütend versucht ihn herunter zu schütteln.</German>
     </TEXT>
     <TEXT>
@@ -816,22 +816,22 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CONQUISTADORES_BEING_AMBUSHED</Tag>
-        <English>A rumour is spreading: [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] conquistadores were ambushed by hostile natives.</English>
+        <English>A rumour is spreading: [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] conquistadores were ambushed by hostile Natives.</English>
         <German>Ein Gerücht macht die Runde: Ein friedlicher [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Conquistadore wurden von feindlichen Ureinwohnern überfallen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONQUISTADORES_BEING_AMBUSHED_1</Tag>
-        <English>Our brave conquistadores tiredly wander through the green hell, hoping for a discovery to become rich. Suddenly they notice that all birds and animals have gone silent and stop. One of the men turns around, screams a warning and points towards the trees but the next moment an arrow hits him in the chest. The silence is over, now war screams come from the bushes and trees. We are being ambushed!</English>
+        <English>Our bold conquistadors drift aimlessly through the green hell, hoping to stumble over a treasure that will make them rich. The next moment they notice that all birds and animals have gone silent.[NEWLINE]They stop. One of the men turns around, screams a warning and points towards the trees. Suddenly an arrow hits him in the chest. The silence is over. War screams come from the bushes and trees.[NEWLINE]We are being ambushed!</English>
         <German>Unsere tapferen Conquistadores schreiten müde durch die grüne Hölle, hoffend auf eine Entdeckung um reich zu werden. Plötzlich bemerken sie, dass alle Geräusche von Vögeln und Tieren verschwunden sind und halten daher an. Einer der Männer dreht sich plötzlich um, schreit eine Warnung und zeigt in Richtung der Bäume, als auch schon ein Pfeil in seiner Brust steckt. Die Stille ist nun vorbei und Kriegsschreie hallen aus den Büschen. Wir werden überfallen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_1</Tag>
-        <English>Cover the flanks and fight for your lifes!</English>
+        <English>Cover the flanks and fight for your lives!</English>
         <German>Verteidigt die Flanken und kämpft um euer Leben!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_HELP</Tag>
-        <English>Hostile natives attack out of the jungle.</English>
+        <English>From out of the jungle hostile Natives attack.</English>
         <German>Feindliche Ureinwohner greifen aus dem Dschungel an.</German>
     </TEXT>
     <TEXT>
@@ -841,7 +841,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HIGHWAYMAN_ATTACK_1</Tag>
-        <English>On the way to the next city our stagecoach is suddenly halted by its horses shying from the sound of shots. Highwaymen come around some rocks pointing their guns on the driver of the stagecoach. However there are some strong men in the stagecoach reaching for their guns, ready to defend the ladies and their lifes.</English>
+        <English>Travelling to the next city our stagecoach halts suddenly as its horses shy back, startled by loud gunshots. From behind the rocks highwaymen emerge, pointing their guns at the stagecoach driver. Inside the coach a few strong men reach for their own guns, ready to defend the ladies and their lives.</English>
         <German>Auf dem Weg zur nächsten Stadt wird unsere Kutsche durch den plötzlichen Knall von Schüssen und das Aufscheuen ihrer Pferde aufgehalten. Straßenräuber erheben sich aus ihrem Versteck hinter einigen Felsen und richten ihre Waffen auf den Fahrer der Kutsche. Aber innerhalb der Kutsche greifen einige junge starke Männer zu ihren Waffen um die Damen und ihr eigenes Leben zu verteidigen.</German>
     </TEXT>
     <TEXT>
