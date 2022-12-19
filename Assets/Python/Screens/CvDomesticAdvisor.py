@@ -139,9 +139,10 @@ class CvDomesticAdvisor:
 		self.TEACHER_STATE            = self.addButton("TeacherState",           "INTERFACE_TEACHER_LIST"            , TeacherAdvisor.TeacherAdvisor(self))
 		self.NATIVE_STATE             = self.addButton("NativeState",            "INTERFACE_NATIVE_BUTTON"           , NativeAdvisor.NativeAdvisor(self))
 		
-		# WTP, ray, just putting the 2 new button references in here so nobdy has to search.
+		# WTP, ray, just putting the 3 new button references in here so nobdy has to search.
 		# Domestic Demand Advisor Button: INTERFACE_DOMESTIC_DEMAND_BUTTON
 		# Happiness Advisor Button: INTERFACE_HAPPINESS_BUTTON
+		# Crime and Law Advisor Button: INTERFACE_LAW_BUTTON
 		
 		if (gc.getUserSettings().getDebugMaxGameFont() > 0):
 			self.GAME_FONT_STATE      = self.addButton("GameFontState",          "INTERFACE_CITY_MAP_BUTTON")
