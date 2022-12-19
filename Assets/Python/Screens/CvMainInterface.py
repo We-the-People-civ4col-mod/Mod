@@ -152,47 +152,47 @@ HELPTEXT_AREA_MIN_WIDTH = 150
 BUILDING_DATA = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 
 BUILDING_DATA[0] = [30, 18, 20, 12] #Bells
-BUILDING_DATA[1] = [44, 20, 20, 12] #Hammers
-BUILDING_DATA[2] = [58, 18, 20, 12] #Meat
-BUILDING_DATA[3] = [30, 36, 20, 12] #Coats
-BUILDING_DATA[4] = [44, 38, 20, 12] #Leather
-BUILDING_DATA[5] = [44, 2, 20, 12] #Cloth
-BUILDING_DATA[6] = [58, 36, 20, 12] #Coloured Cloth
-BUILDING_DATA[7] = [16, 38, 20, 12] #Beer
-BUILDING_DATA[8] = [58, 0, 20, 12] #Rum
-BUILDING_DATA[9] = [58, 54, 20, 12] #Wine
-BUILDING_DATA[10] = [16, 20, 20, 12] #Cigars
-BUILDING_DATA[11] = [86, 18, 20, 12] #Whale oil
-BUILDING_DATA[12] = [30, 54, 20, 12] #Furniture
-BUILDING_DATA[13] = [2, 18, 20, 12] #Tools
-BUILDING_DATA[14] = [30, 0, 20, 12] #Crosses
-BUILDING_DATA[15] = [2, 36, 20, 12] #Muskets
-BUILDING_DATA[16] = [2, 0, 20, 12] #Fireworker
-BUILDING_DATA[17] = [30, 72, 20, 12] #Horses
-BUILDING_DATA[18] = [86, 36, 20, 12] #Dock
-BUILDING_DATA[19] = [86, 54, 20, 12] #WareHouse
-BUILDING_DATA[20] = [2, 54, 20, 12] #Spices
-BUILDING_DATA[21] = [44, 74, 20, 12] #Domestic Market
-BUILDING_DATA[22] = [86, 0, 20, 12] #Tavern
-BUILDING_DATA[23] = [16, 2, 20, 12] #Education
-BUILDING_DATA[24] = [87, 78, 20, 10] #Wall
-BUILDING_DATA[25] = [72, 74, 20, 10] #Print
-BUILDING_DATA[26] = [2, 89, 20, 9] #Mill
-BUILDING_DATA[27] = [72, 86, 20, 10] #Trainstation
-BUILDING_DATA[28] = [32, 89, 20, 7] #Corn
-BUILDING_DATA[29] = [72, 38, 20, 12] #Medical Care
-BUILDING_DATA[30] = [18, 88, 20, 8] #Well
-BUILDING_DATA[31] = [84, 73, 20, 10] #Defense
-BUILDING_DATA[32] = [44, 56, 20, 12] #Confectioner
-BUILDING_DATA[33] = [16, 56, 20, 12] #Leather Padder
-BUILDING_DATA[34] = [2, 72, 20, 12] #Cooking Oil Trader
-BUILDING_DATA[35] = [58, 72, 20, 12] #Peanut Roaster
-BUILDING_DATA[36] = [72, 56, 20, 12] #Potter
-BUILDING_DATA[37] = [72, 20, 20, 12] #Tailor
-BUILDING_DATA[38] = [16, 74, 20, 12] #Baker
-BUILDING_DATA[39] = [60, 89, 20, 7] #Statue
-BUILDING_DATA[40] = [45, 88, 20, 10] #Graveyard
-BUILDING_DATA[41] = [72, 2, 20, 12] #Courthouse
+BUILDING_DATA[1] = [72, 2, 20, 12] #Courthouse
+BUILDING_DATA[2] = [44, 20, 20, 12] #Hammers
+BUILDING_DATA[3] = [58, 18, 20, 12] #Meat
+BUILDING_DATA[4] = [30, 36, 20, 12] #Coats
+BUILDING_DATA[5] = [44, 38, 20, 12] #Leather
+BUILDING_DATA[6] = [44, 2, 20, 12] #Cloth
+BUILDING_DATA[7] = [58, 36, 20, 12] #Coloured Cloth
+BUILDING_DATA[8] = [16, 38, 20, 12] #Beer
+BUILDING_DATA[9] = [58, 0, 20, 12] #Rum
+BUILDING_DATA[10] = [58, 54, 20, 12] #Wine
+BUILDING_DATA[11] = [16, 20, 20, 12] #Cigars
+BUILDING_DATA[12] = [86, 18, 20, 12] #Whale oil
+BUILDING_DATA[13] = [30, 54, 20, 12] #Furniture
+BUILDING_DATA[14] = [2, 18, 20, 12] #Tools
+BUILDING_DATA[15] = [30, 0, 20, 12] #Crosses
+BUILDING_DATA[16] = [2, 36, 20, 12] #Muskets
+BUILDING_DATA[17] = [2, 0, 20, 12] #Fireworker
+BUILDING_DATA[18] = [30, 72, 20, 12] #Horses
+BUILDING_DATA[19] = [86, 36, 20, 12] #Dock
+BUILDING_DATA[20] = [86, 54, 20, 12] #WareHouse
+BUILDING_DATA[21] = [2, 54, 20, 12] #Spices
+BUILDING_DATA[22] = [44, 74, 20, 12] #Domestic Market
+BUILDING_DATA[23] = [86, 0, 20, 12] #Tavern
+BUILDING_DATA[24] = [16, 2, 20, 12] #Education
+BUILDING_DATA[25] = [87, 78, 20, 10] #Wall
+BUILDING_DATA[26] = [72, 74, 20, 10] #Print
+BUILDING_DATA[27] = [2, 89, 20, 9] #Mill
+BUILDING_DATA[28] = [72, 86, 20, 10] #Trainstation
+BUILDING_DATA[29] = [32, 89, 20, 7] #Corn
+BUILDING_DATA[30] = [72, 38, 20, 12] #Medical Care
+BUILDING_DATA[31] = [18, 88, 20, 8] #Well
+BUILDING_DATA[32] = [84, 73, 20, 10] #Defense
+BUILDING_DATA[33] = [44, 56, 20, 12] #Confectioner
+BUILDING_DATA[34] = [16, 56, 20, 12] #Leather Padder
+BUILDING_DATA[35] = [2, 72, 20, 12] #Cooking Oil Trader
+BUILDING_DATA[36] = [58, 72, 20, 12] #Peanut Roaster
+BUILDING_DATA[37] = [72, 56, 20, 12] #Potter
+BUILDING_DATA[38] = [72, 20, 20, 12] #Tailor
+BUILDING_DATA[39] = [16, 74, 20, 12] #Baker
+BUILDING_DATA[40] = [60, 89, 20, 7] #Statue
+BUILDING_DATA[41] = [45, 88, 20, 10] #Graveyard
 
 BUILDING_GRID = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
 
@@ -2950,19 +2950,19 @@ class CvMainInterface:
 					if (iUsedBarracksSpace <= iHalfMaxBarracksSpace):
 						#szBuffer = u"<font=3>" + u" <color="u"0,255,0" + u">"+ str(iUsedBarracksSpace) + u"(" + str(iMaxBarracksSpace) + u")" + u"</color>" + u"</font>"
 						szBuffer = u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.BARRACKS_CHAR)) + "</font>"
-						screen.setLabel("BarracksText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 82 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_BARRACKS_SYSTEM, NEW_BARRACKS_SYSTEM, -1 )
+						screen.setLabel("BarracksText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 83 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_BARRACKS_SYSTEM, NEW_BARRACKS_SYSTEM, -1 )
 
 					# red: the barracks are completely full
 					elif (iUsedBarracksSpace >= iMaxBarracksSpace):
 						#szBuffer = u"<font=3>" + u" <color="u"255,0,0" + u">"+ str(iUsedBarracksSpace) + u"(" + str(iMaxBarracksSpace) + u")" + u"</color>" + u"</font>"
 						szBuffer = u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.NO_BARRACKS_CHAR)) + "</font>"
-						screen.setLabel("BarracksText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 82 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_BARRACKS_SYSTEM, NEW_BARRACKS_SYSTEM, -1 )
+						screen.setLabel("BarracksText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 83 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_BARRACKS_SYSTEM, NEW_BARRACKS_SYSTEM, -1 )
 
 					# yellow: more than half is full, but not completely
 					else:
 						#szBuffer = u"<font=3>" + u" <color="u"255,255,0" + u">" + str(iUsedBarracksSpace) + u"(" + str(iMaxBarracksSpace) + u")" + u"</color>" + u"</font>"
 						szBuffer = u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.BARRACKS_CHAR)) + "</font>"
-						screen.setLabel("BarracksText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 82 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_BARRACKS_SYSTEM, NEW_BARRACKS_SYSTEM, -1 )
+						screen.setLabel("BarracksText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 83 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_BARRACKS_SYSTEM, NEW_BARRACKS_SYSTEM, -1 )
 
 			# REBEL BAR FILL PERCENTAGE
 				fPercentage = float(pHeadSelectedCity.getRebelPercent() / 100.0)
