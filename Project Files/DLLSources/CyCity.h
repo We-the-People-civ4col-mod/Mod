@@ -333,6 +333,7 @@ public:
 	int getHappinessFromTreaties() const;
 
 	int getUnhappinessFromPopulation() const;
+	int getUnhappinessFromCrime() const;
 	int getUnhappinessFromSlavery() const;
 	int getUnhappinessFromWars() const;
 	int getUnhappinessFromMissingDefense() const;

@@ -85,6 +85,7 @@ void CyCityPythonInterface5(python::class_<CyCity>& x)
 		.def("getHappinessFromTreaties", &CyCity::getHappinessFromTreaties, "int ()")
 
 		.def("getUnhappinessFromPopulation", &CyCity::getUnhappinessFromPopulation, "int ()")
+		.def("getUnhappinessFromCrime", &CyCity::getUnhappinessFromCrime, "int ()")
 		.def("getUnhappinessFromSlavery", &CyCity::getUnhappinessFromSlavery, "int ()")
 		.def("getUnhappinessFromWars", &CyCity::getUnhappinessFromWars, "int ()")
 		.def("getUnhappinessFromMissingDefense", &CyCity::getUnhappinessFromMissingDefense, "int ()")

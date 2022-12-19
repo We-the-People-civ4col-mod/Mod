@@ -1406,6 +1406,11 @@ int CyCity::getUnhappinessFromPopulation() const
 	return m_pCity ? m_pCity->getUnhappinessFromPopulation() : -1;
 }
 
+int CyCity::getUnhappinessFromCrime() const
+{
+	return m_pCity ? m_pCity->getUnhappinessFromCrime() : -1;
+}
+
 int CyCity::getUnhappinessFromSlavery() const
 {
 	return m_pCity ? m_pCity->getUnhappinessFromSlavery() : -1;

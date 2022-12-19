@@ -10127,8 +10127,8 @@ void CvCity::doCityCrime()
 
 	}
 
-	// otherwise we set occupation if we are not already in occupation
-	else if (!isOccupation())
+	// otherwise we set occupation if we are not already in occupation - but only for Human
+	else if (isHuman() && !isOccupation())
 	{
 		if (iCityCrime < 5)
 		{
@@ -10510,6 +10510,7 @@ void CvCity::updateCityUnHappiness()
 	iTotalCityUnHappiness += getBaseRawYieldProduced(YIELD_UNHAPPINESS); // should not exist but in case it ever does
 	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - END
 	iTotalCityUnHappiness += getUnhappinessFromPopulation();
+	iTotalCityUnHappiness += getUnhappinessFromCrime();
 	iTotalCityUnHappiness += getUnhappinessFromSlavery(); 
 	iTotalCityUnHappiness += getUnhappinessFromWars();
 	iTotalCityUnHappiness += getUnhappinessFromMissingDefense();
@@ -10540,6 +10541,48 @@ int CvCity::getUnhappinessFromPopulation() const
 	}
 
 	return 0;
+}
+
+int CvCity::getUnhappinessFromCrime() const
+{
+	int iUnHapCrime = 0;
+	int iNetCrime = getCityCrime() - getCityLaw();
+
+	if (iNetCrime <= 0)
+	{
+		return 0;
+	}
+
+	int iPopulation = getPopulation();
+	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS();
+
+	// to prevent division by 0
+	if (iPopulation == 0)
+	{
+		iPopulation = 1;
+	}
+	if (iPopDivisor == 0)
+	{
+		iPopDivisor = 1;
+	}
+	if ((iPopulation / iPopDivisor) == 0)
+	{
+		iPopulation = 1;
+		iPopDivisor = 1;
+	}
+
+	iUnHapCrime = iNetCrime / ((iPopulation / iPopDivisor));
+
+	if (iUnHapCrime > (iPopulation / iPopDivisor))
+	{
+		iUnHapCrime = (iPopulation / iPopDivisor);
+	}
+	// if we produce a little, we give at least 1 Happiness
+	if (iUnHapCrime == 0 && iNetCrime > 0)
+	{
+		iUnHapCrime = 1;
+	}
+	return iUnHapCrime;
 }
 
 int CvCity::getUnhappinessFromSlavery() const
@@ -10796,7 +10839,13 @@ int CvCity::getHappinessFromCulture() const
 int CvCity::getHappinessFromLaw() const
 {
 	int iHapLaw = 0;
-	int iCulture = calculateNetYield(YIELD_LAW);
+	int iNetLaw = getCityLaw() - getCityCrime();
+
+	if (iNetLaw <= 0)
+	{
+		return 0;
+	}
+
 	int iPopulation = getPopulation();
 	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS();
 
@@ -10815,14 +10864,14 @@ int CvCity::getHappinessFromLaw() const
 		iPopDivisor = 1;
 	}
 
-	iHapLaw = iCulture / ((iPopulation / iPopDivisor));
+	iHapLaw = iNetLaw / ((iPopulation / iPopDivisor));
 
 	if (iHapLaw > (iPopulation / iPopDivisor))
 	{
 		iHapLaw = (iPopulation / iPopDivisor);
 	}
 	// if we produce a little, we give at least 1 Happiness
-	if (iHapLaw == 0 && iCulture > 0)
+	if (iHapLaw == 0 && iNetLaw > 0)
 	{
 		iHapLaw = 1;
 	}

@@ -81,6 +81,11 @@
         <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Bevölkerungsgröße</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNHAPPINESS_CRIME</Tag>
+        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Crime in City</English>
+        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kriminalität</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNHAPPINESS_SLAVERY</Tag>
         <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Slaves</English>
         <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Sklavenhaltung</German>
@@ -155,7 +160,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TOTAL_LAW_POSITIVE_EFFECTS</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]City Law[COLOR_REVERT][NEWLINE]The Citizens are [COLOR_POSITIVE_TEXT]law abident[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe increases[NEWLINE][ICON_BULLET]Happiness is increases[NEWLINE][ICON_BULLET]Additional Founding Father Points are generated[NEWLINE][ICON_BULLET]Domestic Market profits increase[NEWLINE][ICON_BULLET]Entertainment profits increase[NEWLINE][ICON_BULLET]Sever effects of crime prevented</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]City Law[COLOR_REVERT][NEWLINE]The Citizens are [COLOR_POSITIVE_TEXT]law abident[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe increases[NEWLINE][ICON_BULLET]Happiness is increases[NEWLINE][ICON_BULLET]Additional Founding Father Points are generated[NEWLINE][ICON_BULLET]Domestic Market profits increase[NEWLINE][ICON_BULLET]Entertainment profits increase[NEWLINE][ICON_BULLET]Severe effects of crime prevented</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Gesetz[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_POSITIVE_TEXT]gesetzestreu[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]Auswanderung aus Europa erhöht[NEWLINE][ICON_BULLET]Zufriedenheit steigt[NEWLINE][ICON_BULLET]Zusätzliche Gründerväterpunkte werden generiert[NEWLINE][ICON_BULLET]Höhere Profite durch heimischen Markt[NEWLINE][ICON_BULLET]Höhere Profite durch Unterhaltung[NEWLINE][ICON_BULLET]Schlimmste Auswirkungen der Kriminalität verhindert</German>
     </TEXT>
     <TEXT>
