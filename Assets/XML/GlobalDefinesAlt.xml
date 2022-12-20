@@ -1521,7 +1521,7 @@
 	<!-- Crime and Law -->
 	<Define>
 		<DefineName>MIN_POP_CRIME</DefineName>
-		<iDefineIntVal>3</iDefineIntVal>
+		<iDefineIntVal>6</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>POP_DIVISOR_CRIME</DefineName>
