@@ -856,12 +856,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MILKMAID_IN_NEED</Tag>
-        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] milkmaid is forced to marry her uncle. She asks the governor for help.</English>
+        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] milkmaid is being forced to marry her uncle. She asks the governor for help.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Milchmaid soll gezwungen werden ihren Onkel zu heiraten. Sie erbittet Hilfe vom Gouverneur.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MILKMAID_IN_NEED_1</Tag>
-        <English>After the death of her father a milkmaid is being forced by her uncle to marry her against her will so he can inherit the cattle farm. She has come to the city to plead for help and intervention by the law. But if we do, we will turn her uncle and the rest of this greedy family against us.</English>
+        <English>After the death of her father a milkmaid is being forced to marry her uncle against her will so he can inherit the cattle farm. She has come to the city to plead for help, hoping that the law will intervene. We can support her but, if we do, we will turn her uncle and the rest of this greedy family against us.</English>
         <German>Nach dem Tod ihres Vaters wird eine junge Milchmaid durch Ihren Onkel gezwungen ihn gegen ihren Willen zu heiraten. Sie ist in die Stadt gekommen und bittet um Hilfe und rechtliche Unterstützung. Wenn wir ihr helfen, werden wir jedoch ihren Onkel und den Rest dieser gierigen Familie gegen uns wenden.</German>
     </TEXT>
     <TEXT>
