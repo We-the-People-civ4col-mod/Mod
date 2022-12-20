@@ -10654,7 +10654,17 @@ int CvCity::getUnhappinessFromMissingDefense() const
 
 	int iDefendersNeeded = 0;
 	iDefendersNeeded = getPopulation() / iPopDefenseDivisor;
-	int iDefendersFound = plot()->getNumDefenders(getOwnerINLINE());
+	int iDefendersFound = 0;
+	CvPlot* pPlot = plot();
+	for (int i = 0; i < pPlot->getNumUnits(); ++i)
+	{
+		CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);
+		// we check for a Land Unit that can fight on that plot and is from our own Player
+		if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack() && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+		{
+			iDefendersFound++;
+		}
+	}
 	iUnHapMissingDef = iDefendersNeeded - iDefendersFound;
 
 	// we only have a Unappiness for missing defenders - theoreticyally it is possible that we have more
@@ -11061,7 +11071,17 @@ void CvCity::updateCityCrime()
 // specific methods
 int CvCity::getLawFromCityDefenders() const
 {
-	int iDefendersFound = plot()->getNumDefenders(getOwnerINLINE());
+	int iDefendersFound = 0;
+	CvPlot* pPlot = plot();
+	for (int i = 0; i < pPlot->getNumUnits(); ++i)
+	{
+		CvUnit* pLoopUnit = pPlot->getUnitByIndex(i);
+		// we check for a Land Unit that can fight on that plot and is from our own Player
+		if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack() && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+		{
+			iDefendersFound++;
+		}
+	}
 
 	// we can never generate more than what we have as Population
 	if (iDefendersFound > getPopulation())
@@ -11078,6 +11098,11 @@ int CvCity::getLawFromCrosses() const
 	int iCrosses = calculateNetYield(YIELD_CROSSES);
 	int iPopulation = getPopulation();
 	int iPopDivisor = GC.getPOP_DIVISOR_CRIME();
+
+	if (iCrosses == 0)
+	{
+		return 0;
+	}
 
 	// to prevent division by 0
 	if (iPopulation == 0)
@@ -11111,7 +11136,7 @@ int CvCity::getLawFromCrosses() const
 
 int CvCity::getCrimeFromPopulation() const
 {
-	int iCrimePop = 0;
+	int iCrimeFromPopulation = 0;
 	int iPopulation = getPopulation();
 	int iMinPopForCrime = GC.getMIN_POP_CRIME();
 
@@ -11121,15 +11146,23 @@ int CvCity::getCrimeFromPopulation() const
 		iMinPopForCrime = iMinPopForCrime*2;
 	}
 
-	iCrimePop = iPopulation - iMinPopForCrime;
-
-	// to prevent negative Unhappiness in case we have less pop than min value for neg pop
-	if (iCrimePop > 0)
+	// do not start with crime too early
+	if (iPopulation < iMinPopForCrime)
 	{
-		return iCrimePop;
+		return 0;
 	}
 
-	return 0;
+	int iDivisor = GC.getPOP_DIVISOR_CRIME();
+	// just for safety
+	if (iDivisor == 0)
+	{
+		return 0;
+	}
+
+	int iSmoothener = (iMinPopForCrime / iDivisor) - 1;
+	iCrimeFromPopulation = (iPopulation / iDivisor) - iSmoothener;
+
+	return iCrimeFromPopulation;
 }
 
 int CvCity::getCrimeFromUnhappiness() const
