@@ -52,7 +52,12 @@
             <iStorageCapacityModifier>0</iStorageCapacityModifier>
             <CityExtraYields/>
             <ExtraYieldThresholds/>
-            <ProfessionEquipmentModifiers/>
+            <ProfessionEquipmentModifiers>
+                <ProfessionEquipmentModifier>
+                    <ProfessionType>PROFESSION_SCOUT</ProfessionType>
+                    <iModifier>-50</iModifier>
+                </ProfessionEquipmentModifier>
+            </ProfessionEquipmentModifiers>
             <FreePromotions/>
             <FreePromotionUnitCombats/>
             <YieldModifiers/>
@@ -75,7 +80,7 @@
             <Type>TRAIT_TOLERANT</Type>
             <Description>TXT_KEY_TRAIT_TOLERANT</Description>
             <ShortDescription>TXT_KEY_TRAIT_TOLERANT_SHORT</ShortDescription>
-			<eCivEffect>CIV_EFFECT_TRAIT_TOLERANT</eCivEffect>
+            <eCivEffect>CIV_EFFECT_TRAIT_TOLERANT</eCivEffect>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -321,7 +326,7 @@
             <Type>TRAIT_SEAFARERS</Type>
             <Description>TXT_KEY_TRAIT_SEAFARERS</Description>
             <ShortDescription>TXT_KEY_TRAIT_SEAFARERS_SHORT</ShortDescription>
-			<eCivEffect>CIV_EFFECT_TRAIT_SEAFARERS</eCivEffect>
+            <eCivEffect>CIV_EFFECT_TRAIT_SEAFARERS</eCivEffect>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -560,6 +565,10 @@
                     <iYield>25</iYield>
                 </YieldModifier>
                 <YieldModifier>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_BLADES</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
@@ -682,6 +691,10 @@
                     <iYield>25</iYield>
                 </YieldModifier>
                 <YieldModifier>
+                    <YieldType>YIELD_BLACK_POWDER</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_HORSES</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
@@ -744,7 +757,7 @@
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_VETERAN_CAVALRY</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
-                </UnitStrengthModifier>				
+                </UnitStrengthModifier>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_ROYAL_CAVALRY</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
@@ -796,7 +809,7 @@
             <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
             <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
             <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
-            <iCultureLevelModifier>-20</iCultureLevelModifier>
+            <iCultureLevelModifier>-25</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iImprovementGrowthTimeModifier>0</iImprovementGrowthTimeModifier>
@@ -880,15 +893,15 @@
                 <ProfessionEquipmentModifier>
                     <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
                     <iModifier>-20</iModifier>
-                </ProfessionEquipmentModifier>		
-				<ProfessionEquipmentModifier>
+                </ProfessionEquipmentModifier>
+                <ProfessionEquipmentModifier>
                     <ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
                     <iModifier>-20</iModifier>
                 </ProfessionEquipmentModifier>
-				<ProfessionEquipmentModifier>
+                <ProfessionEquipmentModifier>
                     <ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
                     <iModifier>-20</iModifier>
-                </ProfessionEquipmentModifier>	
+                </ProfessionEquipmentModifier>
                 <ProfessionEquipmentModifier>
                     <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
                     <iModifier>-20</iModifier>
@@ -1057,7 +1070,11 @@
                     <iModifier>-50</iModifier>
                 </ProfessionEquipmentModifier>
                 <ProfessionEquipmentModifier>
-                    <ProfessionType>PROFESSION_SCOUT</ProfessionType>
+                    <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <iModifier>-50</iModifier>
+                </ProfessionEquipmentModifier>
+                <ProfessionEquipmentModifier>
+                    <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <iModifier>-50</iModifier>
                 </ProfessionEquipmentModifier>
             </ProfessionEquipmentModifiers>
@@ -1123,7 +1140,20 @@
             <ProfessionEquipmentModifiers/>
             <FreePromotions/>
             <FreePromotionUnitCombats/>
-            <YieldModifiers/>
+            <YieldModifiers>
+                <YieldModifier>
+                    <YieldType>YIELD_BAKERY_GOODS</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+                <YieldModifier>
+                    <YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+                <YieldModifier>
+                    <YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
+            </YieldModifiers>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
@@ -1191,7 +1221,7 @@
                     <YieldType>YIELD_STONE</YieldType>
                     <iYield>2</iYield>
                 </CityExtraYield>
-				<CityExtraYield>
+                <CityExtraYield>
                     <YieldType>YIELD_CLAY</YieldType>
                     <iYield>2</iYield>
                 </CityExtraYield>
@@ -1233,7 +1263,7 @@
             <Type>TRAIT_INDUSTRIOUS</Type>
             <Description>TXT_KEY_TRAIT_INDUSTRIOUS</Description>
             <ShortDescription>TXT_KEY_TRAIT_INDUSTRIOUS_SHORT</ShortDescription>
-			<eCivEffect>CIV_EFFECT_TRAIT_INDUSTRIOUS</eCivEffect>
+            <eCivEffect>CIV_EFFECT_TRAIT_INDUSTRIOUS</eCivEffect>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1328,9 +1358,9 @@
             <iKingAttitudeChange>2</iKingAttitudeChange>
             <iCityDefense>0</iCityDefense>
             <iLandPriceDiscount>-20</iLandPriceDiscount>
-            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
-            <iRecruitPriceDiscountAfrica>0</iRecruitPriceDiscountAfrica>
-            <iRecruitPriceDiscountPortRoyal>0</iRecruitPriceDiscountPortRoyal>
+            <iRecruitPriceDiscount>10</iRecruitPriceDiscount>
+            <iRecruitPriceDiscountAfrica>10</iRecruitPriceDiscountAfrica>
+            <iRecruitPriceDiscountPortRoyal>10</iRecruitPriceDiscountPortRoyal>
             <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
             <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
             <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
@@ -1573,7 +1603,7 @@
                     <YieldType>YIELD_STONE</YieldType>
                     <iModifier>-10</iModifier>
                 </BuildingRequiredYieldModifier>
-				<BuildingRequiredYieldModifier>
+                <BuildingRequiredYieldModifier>
                     <YieldType>YIELD_CLAY</YieldType>
                     <iModifier>-10</iModifier>
                 </BuildingRequiredYieldModifier>
@@ -1668,7 +1698,7 @@
             <Type>TRAIT_SOPHISTICATED</Type>
             <Description>TXT_KEY_TRAIT_SOPHISTICATED</Description>
             <ShortDescription>TXT_KEY_TRAIT_SOPHISTICATED_SHORT</ShortDescription>
-			<eCivEffect>CIV_EFFECT_TRAIT_SOPHISTICATED</eCivEffect>
+            <eCivEffect>CIV_EFFECT_TRAIT_SOPHISTICATED</eCivEffect>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -1714,6 +1744,10 @@
                     <YieldType>YIELD_CULTURE</YieldType>
                     <iYield>2</iYield>
                 </CityExtraYield>
+                <CityExtraYield>
+                    <YieldType>YIELD_LAW</YieldType>
+                    <iYield>2</iYield>
+                </CityExtraYield>
             </CityExtraYields>
             <ExtraYieldThresholds/>
             <ProfessionEquipmentModifiers/>
@@ -1728,29 +1762,16 @@
                     <YieldType>YIELD_CULTURE</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
+                <YieldModifier>
+                    <YieldType>YIELD_LAW</YieldType>
+                    <iYield>25</iYield>
+                </YieldModifier>
             </YieldModifiers>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
             <ProfessionMoveChanges/>
-            <BuildingProductionModifiers>
-                <BuildingProductionModifier>
-                    <BuildingClass>BUILDINGCLASS_TAVERN</BuildingClass>
-                    <iModifier>100</iModifier>
-                </BuildingProductionModifier>
-                <BuildingProductionModifier>
-                    <BuildingClass>BUILDINGCLASS_SALOON</BuildingClass>
-                    <iModifier>100</iModifier>
-                </BuildingProductionModifier>
-                <BuildingProductionModifier>
-                    <BuildingClass>BUILDINGCLASS_THEATRE</BuildingClass>
-                    <iModifier>100</iModifier>
-                </BuildingProductionModifier>
-                <BuildingProductionModifier>
-                    <BuildingClass>BUILDINGCLASS_OPERA</BuildingClass>
-                    <iModifier>100</iModifier>
-                </BuildingProductionModifier>
-            </BuildingProductionModifiers>
+            <BuildingProductionModifiers/>
             <BuildingRequiredYieldModifiers/>
             <UnitStrengthModifiers/>
             <FreeBuildingClasses/>
@@ -1760,7 +1781,7 @@
             <Type>TRAIT_PIONEER</Type>
             <Description>TXT_KEY_TRAIT_PIONEER</Description>
             <ShortDescription>TXT_KEY_TRAIT_PIONEER_SHORT</ShortDescription>
-			<eCivEffect>CIV_EFFECT_TRAIT_PIONEER</eCivEffect>
+            <eCivEffect>CIV_EFFECT_TRAIT_PIONEER</eCivEffect>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
@@ -3918,7 +3939,7 @@
                             <YieldType>YIELD_COLOURED_CLOTH</YieldType>
                             <iYieldChange>1</iYieldChange>
                         </YieldChange>
-						<YieldChange>
+                        <YieldChange>
                             <YieldType>YIELD_COLOURED_WOOL_CLOTH</YieldType>
                             <iYieldChange>1</iYieldChange>
                         </YieldChange>
@@ -3959,7 +3980,7 @@
             <FreeBuildingClasses/>
             <GoodyFactors/>
         </TraitInfo>
-		<TraitInfo>
+        <TraitInfo>
             <Type>TRAIT_TOME_DE_SOUSA</Type>
             <Description>TXT_KEY_TRAIT_TOME_DE_SOUSA</Description>
             <ShortDescription>TXT_KEY_FATHER_TOME_DE_SOUSA</ShortDescription>
@@ -4548,7 +4569,7 @@
                     <YieldType>YIELD_BELLS</YieldType>
                     <iYield>2</iYield>
                 </CityExtraYield>
-				<CityExtraYield>
+                <CityExtraYield>
                     <YieldType>YIELD_CULTURE</YieldType>
                     <iYield>2</iYield>
                 </CityExtraYield>
@@ -4563,7 +4584,7 @@
                     <YieldType>YIELD_BELLS</YieldType>
                     <iYield>1</iYield>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_CULTURE</YieldType>
                     <iYield>1</iYield>
                 </YieldModifier>
@@ -6289,7 +6310,7 @@
             <FreePromotions/>
             <FreePromotionUnitCombats/>
             <YieldModifiers>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_COCHINEAL</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
@@ -6364,11 +6385,11 @@
             <FreePromotions/>
             <FreePromotionUnitCombats/>
             <YieldModifiers>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_EVERYDAY_CLOTHES</YieldType>
                     <iYield>20</iYield>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_FESTIVE_CLOTHES</YieldType>
                     <iYield>20</iYield>
                 </YieldModifier>
@@ -6605,11 +6626,11 @@
             <UnitMoveChanges/>
             <ProfessionMoveChanges/>
             <BuildingProductionModifiers>
-			    <BuildingProductionModifier>
+                <BuildingProductionModifier>
                     <BuildingClass>BUILDINGCLASS_BLACKSMITH_HOUSE</BuildingClass>
                     <iModifier>100</iModifier>
                 </BuildingProductionModifier>
-				<BuildingProductionModifier>
+                <BuildingProductionModifier>
                     <BuildingClass>BUILDINGCLASS_BLACKSMITH_SHOP</BuildingClass>
                     <iModifier>100</iModifier>
                 </BuildingProductionModifier>
@@ -6794,7 +6815,7 @@
             <FreeBuildingClasses/>
             <GoodyFactors/>
         </TraitInfo>
-		<TraitInfo>
+        <TraitInfo>
             <Type>TRAIT_JUAN_PONCE_DE_LEON</Type>
             <Description>TXT_KEY_TRAIT_JUAN_PONCE_DE_LEON</Description>
             <ShortDescription>TXT_KEY_FATHER_JUAN_PONCE_DE_LEON</ShortDescription>
@@ -7053,7 +7074,7 @@
                     <YieldType>YIELD_MAPLE_SIRUP</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_HARDWOOD</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
@@ -7183,7 +7204,7 @@
             <FreePromotions/>
             <FreePromotionUnitCombats/>
             <YieldModifiers>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_PEAT</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
@@ -7261,7 +7282,7 @@
                         <YieldChange>
                             <YieldType>YIELD_RUM</YieldType>
                             <iYieldChange>1</iYieldChange>
-                        </YieldChange>					
+                        </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
                 <BuildingYieldChange>
@@ -7291,7 +7312,7 @@
             <FreeBuildingClasses/>
             <GoodyFactors/>
         </TraitInfo>
-		<TraitInfo>
+        <TraitInfo>
             <Type>TRAIT_THOMAS_HOOKER</Type>
             <Description>TXT_KEY_TRAIT_THOMAS_HOOKER</Description>
             <ShortDescription>TXT_KEY_FATHER_THOMAS_HOOKER</ShortDescription>
@@ -7341,7 +7362,7 @@
             <FreePromotions/>
             <FreePromotionUnitCombats/>
             <YieldModifiers>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_FRUITS</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
@@ -7354,13 +7375,13 @@
                         <YieldChange>
                             <YieldType>YIELD_HOOCH</YieldType>
                             <iYieldChange>1</iYieldChange>
-                        </YieldChange>					
+                        </YieldChange>
                     </BuildingYields>
                 </BuildingYieldChange>
                 <BuildingYieldChange>
                     <BuildingClassType>BUILDINGCLASS_DISTILLERY</BuildingClassType>
                     <BuildingYields>
-						<YieldChange>
+                        <YieldChange>
                             <YieldType>YIELD_HOOCH</YieldType>
                             <iYieldChange>2</iYieldChange>
                         </YieldChange>
@@ -7369,7 +7390,7 @@
                 <BuildingYieldChange>
                     <BuildingClassType>BUILDINGCLASS_RUM_FACTORY</BuildingClassType>
                     <BuildingYields>
-						<YieldChange>
+                        <YieldChange>
                             <YieldType>YIELD_HOOCH</YieldType>
                             <iYieldChange>3</iYieldChange>
                         </YieldChange>
@@ -7383,7 +7404,7 @@
             <UnitStrengthModifiers/>
             <FreeBuildingClasses/>
             <GoodyFactors/>
-        </TraitInfo>	
+        </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_PEDRO_ALVARES_CABRAL</Type>
             <Description>TXT_KEY_TRAIT_PEDRO_ALVARES_CABRAL</Description>
@@ -7639,7 +7660,7 @@
             <BuildingProductionModifiers/>
             <BuildingRequiredYieldModifiers/>
             <UnitStrengthModifiers>
-			    <UnitStrengthModifier>
+                <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_SLOOP</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
@@ -7963,7 +7984,7 @@
                     <YieldType>YIELD_WHALE_OIL</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_POTTERY</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
@@ -8750,7 +8771,7 @@
             <FreeBuildingClasses/>
             <GoodyFactors/>
         </TraitInfo>
-		<TraitInfo>
+        <TraitInfo>
             <Type>TRAIT_CARL_VON_LINNES</Type>
             <Description>TXT_KEY_TRAIT_CARL_VON_LINNES</Description>
             <ShortDescription>TXT_KEY_FATHER_CARL_VON_LINNES</ShortDescription>
@@ -8897,7 +8918,7 @@
                     <YieldType>YIELD_VALUABLE_WOOD</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
-				<YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_DOWNS</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
@@ -8911,7 +8932,7 @@
                             <YieldType>YIELD_FURNITURE</YieldType>
                             <iYieldChange>1</iYieldChange>
                         </YieldChange>
-						<YieldChange>
+                        <YieldChange>
                             <YieldType>YIELD_PADDED_FURNITURE</YieldType>
                             <iYieldChange>1</iYieldChange>
                         </YieldChange>
@@ -8937,7 +8958,7 @@
                             <YieldType>YIELD_FURNITURE</YieldType>
                             <iYieldChange>3</iYieldChange>
                         </YieldChange>
-						<YieldChange>
+                        <YieldChange>
                             <YieldType>YIELD_PADDED_FURNITURE</YieldType>
                             <iYieldChange>3</iYieldChange>
                         </YieldChange>
@@ -9092,7 +9113,7 @@
             <iTreasureModifier>0</iTreasureModifier>
             <iGoodUniqueGoodyChanceModifierLand>0</iGoodUniqueGoodyChanceModifierLand>
             <iGoodUniqueGoodyChanceModifierWater>0</iGoodUniqueGoodyChanceModifierWater>
-            <iUnhappinessFromSlavesModifier>-25</iUnhappinessFromSlavesModifier>
+            <iUnhappinessFromSlavesModifier>25</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -9380,7 +9401,7 @@
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
-                </UnitStrengthModifier>				
+                </UnitStrengthModifier>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
@@ -9392,11 +9413,11 @@
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_CONTINENTAL_GUARD</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
-                </UnitStrengthModifier>			
+                </UnitStrengthModifier>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_VETERAN_CAVALRY</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
-                </UnitStrengthModifier>				
+                </UnitStrengthModifier>
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_ROYAL_CAVALRY</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
@@ -9408,7 +9429,7 @@
                 <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_ROYAL_DRAGOON</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
-                </UnitStrengthModifier>					
+                </UnitStrengthModifier>
             </UnitStrengthModifiers>
             <FreeBuildingClasses/>
             <GoodyFactors/>
@@ -9686,7 +9707,7 @@
             <FreeBuildingClasses/>
             <GoodyFactors/>
         </TraitInfo>
-		<TraitInfo>
+        <TraitInfo>
             <Type>TRAIT_SIR_THOMAS_GATES</Type>
             <Description>TXT_KEY_TRAIT_SIR_THOMAS_GATES</Description>
             <ShortDescription>TXT_KEY_FATHER_SIR_THOMAS_GATES</ShortDescription>
@@ -11066,10 +11087,10 @@
                     <YieldType>YIELD_COCA_LEAVES</YieldType>
                     <iYield>25</iYield>
                 </YieldModifier>
-	            <YieldModifier>
+                <YieldModifier>
                     <YieldType>YIELD_YERBA_LEAVES</YieldType>
                     <iYield>25</iYield>
-                </YieldModifier>			
+                </YieldModifier>
             </YieldModifiers>
             <TaxYieldModifiers/>
             <BuildingYieldChanges>
@@ -12036,7 +12057,7 @@
                     <UnitClass>UNITCLASS_SLAVE_HUNTER</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
-				<UnitStrengthModifier>
+                <UnitStrengthModifier>
                     <UnitClass>UNITCLASS_SLAVE_MASTER</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
