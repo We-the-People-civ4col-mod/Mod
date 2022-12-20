@@ -79,6 +79,8 @@ foreach my $enum (@enums)
 	next if shouldSkipEnum($enum);
 	my $upperName = getEnumUpperCase($enum);
 	
+	handleOperators($enum);
+	
 	$output .= "template <> struct VARINFO<" . $enum . ">\n{\n";
 	$output .= "\tstatic $enum start() { return " . getFirstName($upperName) . ";}\n";
 	$output .= "\tstatic $enum end() { return " . getMaxName($upperName) . ";}\n";
@@ -260,4 +262,49 @@ sub getEnumUpperCase
 	}
 	
 	return $result;
+}
+
+sub handleOperators
+{
+	my $type = shift;
+	
+	operatorAdd($type, "+");
+	operatorAdd($type, "-");
+	
+	operator($type, "++", 0);
+	operator($type, "++", 1);
+	operator($type, "--", 0);
+	operator($type, "--", 1);
+}
+
+sub operator
+{
+	my $type = shift;
+	my $operator = shift;
+	my $postfix = shift;
+	
+	$output .= "static inline $type";
+	$output .= "&" unless $postfix;
+	$output .= " operator" . $operator . "($type& c";
+	$output .= ", int" if $postfix;
+	$output .= ")\n";
+	$output .= "{\n";
+	$output .= "\t" . $type . " cache = c;\n" if $postfix;
+	$output .= "\tc = static_cast<$type>(c " . substr($operator, 0, 1) . " 1);\n";
+	$output .= "\treturn ";
+	$output .=  "c" unless $postfix;
+	$output .=  "cache" if $postfix;
+	$output .= ";\n";
+	$output .= "};\n";
+}
+
+sub operatorAdd
+{
+	my $type = shift;
+	my $operator = shift;
+	
+	$output .= "static inline $type operator" . $operator . "(const $type& A, const $type& B)\n";
+	$output .= "{\n";
+	$output .= "\treturn static_cast<$type>((int)A $operator (int)B);\n";
+	$output .= "};\n";
 }
