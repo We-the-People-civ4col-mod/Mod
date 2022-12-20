@@ -1771,7 +1771,24 @@
             <BuildingYieldChanges/>
             <UnitMoveChanges/>
             <ProfessionMoveChanges/>
-            <BuildingProductionModifiers/>
+            <BuildingProductionModifiers>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_TAVERN</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_SALOON</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_THEATRE</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+                <BuildingProductionModifier>
+                    <BuildingClass>BUILDINGCLASS_OPERA</BuildingClass>
+                    <iModifier>100</iModifier>
+                </BuildingProductionModifier>
+            </BuildingProductionModifiers>
             <BuildingRequiredYieldModifiers/>
             <UnitStrengthModifiers/>
             <FreeBuildingClasses/>
