@@ -73,4 +73,8 @@
 		<element type="FootstepAudioTags"/>
 		<element type="InterfaceVisibilityTypes"/>
 	</ElementType>
+	<ElementType name="FontSymbol" content="textOnly"/>
+	<ElementType name="FontSymbols" content="eltOnly">
+		<element type="FontSymbol" maxOccurs="*"/>
+	</ElementType>
 </Schema>

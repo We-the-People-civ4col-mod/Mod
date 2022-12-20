@@ -1148,10 +1148,8 @@ class CvDomesticAdvisor:
 				return infoPointer
 			
 		for iSymbol in range(FontSymbols.MAX_NUM_SYMBOLS):
-			if iIndex == CyGame().getSymbolID(iSymbol):
-				for strKey in (CvUtil.OtherFontIcons.keys()):
-					if (CvUtil.OtherFontIcons[strKey] == iSymbol):
-						return strKey
+			if iIndex == gc.getSymbolID(iSymbol):
+				return gc.getSymbolName(iSymbol)
 		
 		return None
 	

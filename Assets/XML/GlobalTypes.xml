@@ -204,4 +204,50 @@
 		<InterfaceVisibilityType>INTERFACE_HIDE</InterfaceVisibilityType>
 		<InterfaceVisibilityType>INTERFACE_HIDE_ALL</InterfaceVisibilityType>
 	</InterfaceVisibilityTypes>
+	<FontSymbols>
+		<FontSymbol>HAPPY_CHAR</FontSymbol>
+		<FontSymbol>UNHAPPY_CHAR</FontSymbol>
+		<FontSymbol>HEALTHY_CHAR</FontSymbol>
+		<FontSymbol>UNHEALTHY_CHAR</FontSymbol>
+		<FontSymbol>BULLET_CHAR</FontSymbol>
+		<FontSymbol>STRENGTH_CHAR</FontSymbol>
+		<FontSymbol>MOVES_CHAR</FontSymbol>
+		<FontSymbol>RELIGION_CHAR</FontSymbol>
+		<FontSymbol>STAR_CHAR</FontSymbol>
+		<FontSymbol>SILVER_STAR_CHAR</FontSymbol>
+		<FontSymbol>TRADE_CHAR</FontSymbol>
+		<FontSymbol>DEFENSE_CHAR</FontSymbol>
+		<FontSymbol>GREAT_PEOPLE_CHAR</FontSymbol>
+		<FontSymbol>BAD_GOLD_CHAR</FontSymbol>
+		<FontSymbol>BAD_FOOD_CHAR</FontSymbol>
+		<FontSymbol>EATEN_FOOD_CHAR</FontSymbol>
+		<FontSymbol>GOLDEN_AGE_CHAR</FontSymbol>
+		<FontSymbol>ANGRY_POP_CHAR</FontSymbol>
+		<FontSymbol>OPEN_BORDERS_CHAR</FontSymbol>
+		<FontSymbol>DEFENSIVE_PACT_CHAR</FontSymbol>
+		<FontSymbol>MAP_CHAR</FontSymbol>
+		<FontSymbol>OCCUPATION_CHAR</FontSymbol>
+		<FontSymbol>REBEL_CHAR</FontSymbol>
+		<FontSymbol>GOLD_CHAR</FontSymbol>
+		<FontSymbol>POWER_CHAR</FontSymbol>
+		<FontSymbol>ATTITUDE_FURIOUS_CHAR</FontSymbol>
+		<FontSymbol>ATTITUDE_ANNOYED_CHAR</FontSymbol>
+		<FontSymbol>ATTITUDE_CAUTIOUS_CHAR</FontSymbol>
+		<FontSymbol>ATTITUDE_PLEASED_CHAR</FontSymbol>
+		<FontSymbol>ATTITUDE_FRIENDLY_CHAR</FontSymbol>
+		<FontSymbol>CHECKBOX_CHAR</FontSymbol>
+		<FontSymbol>CHECKBOX_SELECTED_CHAR</FontSymbol>
+		<FontSymbol>EXPORT_CHAR</FontSymbol>
+		<FontSymbol>IMPORT_CHAR</FontSymbol>
+		<FontSymbol>EXPORT_IMPORT_CHAR</FontSymbol>
+		<FontSymbol>ANCHOR_CHAR</FontSymbol>
+		<FontSymbol>NO_ANCHOR_CHAR</FontSymbol>
+		<FontSymbol>ANCHOR_EUROPE_CHAR</FontSymbol>
+		<FontSymbol>BARRACKS_CHAR</FontSymbol>
+		<FontSymbol>NO_BARRACKS_CHAR</FontSymbol>
+		<FontSymbol>BOMBARD_CHAR</FontSymbol>
+		<FontSymbol>POSITIVE_DOMESTIC_MARKET_EVENT_CHAR</FontSymbol>
+		<FontSymbol>NEGATIVE_DOMESTIC_MARKET_EVENT_CHAR</FontSymbol>
+		<FontSymbol>OVERFLOW_CHAR</FontSymbol>
+	</FontSymbols>
 </Civ4Types>

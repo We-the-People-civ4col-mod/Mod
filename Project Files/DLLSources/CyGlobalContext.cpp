@@ -471,6 +471,18 @@ CvAchieveInfo* CyGlobalContext::getAchieveInfo(int i) const
 }
 // PatchMod: Achievements END
 
+
+
+int CyGlobalContext::getSymbolID(int iSymbol)
+{
+	return GC.getSymbolID(static_cast<FontSymbols>(iSymbol));
+}
+
+std::string CyGlobalContext::getSymbolName(int iSymbol)
+{
+	return getTypeStr(static_cast<FontSymbols>(iSymbol));
+}
+
 // variable exclusively for CvGameTextMgr::buildCityBillboardIconString
 // used to display a bunch of GameFont on billboards for debug purposes.
 extern int iGameFontDebugChar;

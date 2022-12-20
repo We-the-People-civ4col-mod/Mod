@@ -63,6 +63,8 @@ void CyGlobalContextPythonInterface7(python::class_<CyGlobalContext>& x)
 		.def("getCityDiameter", &CyGlobalContext::getCityDiameter, "int ()")
 		.def("getDefaultCityCatchmentRadius", &CyGlobalContext::getDefaultCityCatchmentRadius, "int ()")
 		// city radius end
+		.def("getSymbolID", &CyGlobalContext::getSymbolID, "int (int)")
+		.def("getSymbolName", &CyGlobalContext::getSymbolName, "str (int)")
 		.def("setGameFontDebug", &CyGlobalContext::setGameFontDebug, "(int)")
 		.def("setDomesticAdvisorState", &CyGlobalContext::setDomesticAdvisorState, "(int)")
 		.def("getDomesticAdvisorState", &CyGlobalContext::getDomesticAdvisorState, "int ()")

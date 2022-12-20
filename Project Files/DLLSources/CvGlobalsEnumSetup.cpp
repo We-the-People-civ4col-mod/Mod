@@ -276,10 +276,34 @@ void CvGlobals::setupGameFontChars()
 		return;
 	}
 
-
+	FontSymbols eFontSymbolOffset = FIRST_FONTSYMBOL;
 	pInterface->SetToChildByTagName(pXML, "Addresses");
-	util.GetChildXmlValByName(&m_iGameFontCustomSymbolID, "CustomSymbol");
+	util.GetChildXmlValByName(&(int&)eFontSymbolOffset, "BillboardFontSymbolStart");
 	pInterface->SetToParent(pXML);
+
+	for (FontSymbols eSymbol = FIRST_FONTSYMBOL; eSymbol < MAX_NUM_SYMBOLS; ++eSymbol)
+	{
+		m_aiGameFontCustomSymbolID[eSymbol] = static_cast<FontSymbols>(GC.getDLLIFace()->getSymbolID(eSymbol));
+	}
+
+	if (pInterface->SetToChildByTagName(pXML, "BillboardSymbols"))
+	{
+		bool bSuccess = pInterface->SetToChildByTagName(pXML, "BillboardSymbol");
+		if (bSuccess)
+		{
+			CvString szName;
+			while (bSuccess)
+			{
+				util.GetXmlVal(szName);
+				FontSymbols eIndex = getIndexOfType(eIndex, szName);
+				m_aiGameFontCustomSymbolID[eIndex] = eFontSymbolOffset;
+				++eFontSymbolOffset;
+				bSuccess = pInterface->LocateNextSiblingNodeByTagName(pXML, "BillboardSymbol");
+			}
+			pInterface->SetToParent(pXML);
+		}
+		pInterface->SetToParent(pXML);
+	}
 
 	pInterface->SetToChildByTagName(pXML, "Offsets");
 	util.GetChildXmlValByName(&iStart, "Bonus");

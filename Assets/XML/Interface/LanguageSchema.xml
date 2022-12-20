@@ -27,13 +27,13 @@
 
 	<ElementType name="Bonus" content="textOnly" dt:type="int"/>
 	<ElementType name="Building" content="textOnly" dt:type="int"/>
-	<ElementType name="CustomSymbol" content="textOnly" dt:type="int"/>
+	<ElementType name="BillboardFontSymbolStart" content="textOnly" dt:type="int"/>
 	<ElementType name="FatherPoint" content="textOnly" dt:type="int"/>
 	<ElementType name="Mission" content="textOnly" dt:type="int"/>
 	<ElementType name="Yield" content="textOnly" dt:type="int"/>
 
 	<ElementType name="Addresses" content="eltOnly">
-		<element type="CustomSymbol"/>
+		<element type="BillboardFontSymbolStart"/>
 	</ElementType>
 	
 	<ElementType name="Offsets" content="eltOnly">
@@ -44,8 +44,14 @@
 		<element type="Yield"/>
 	</ElementType>
 
+	<ElementType name="BillboardSymbol" content="textOnly"/>
+	<ElementType name="BillboardSymbols" content="eltOnly">
+		<element type="BillboardSymbol" maxOccurs="*"/>
+	</ElementType>
+
 	<ElementType name="GameFontIDs" content="eltOnly">
 		<element type="Addresses"/>
 		<element type="Offsets"/>
+		<element type="BillboardSymbols"/>
 	</ElementType>
 </Schema>

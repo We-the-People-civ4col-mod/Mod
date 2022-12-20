@@ -9191,7 +9191,7 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 	// XXX out this in bottom bar???
 	if (pCity->isOccupation())
 	{
-		szBuffer.append(CvWString::format(L" (%c:%d)", GC.getSymbolID(OCCUPATION_CHAR_CUSTOM), pCity->getOccupationTimer()));
+		szBuffer.append(CvWString::format(L" (%c:%d)", GC.getSymbolID(OCCUPATION_CHAR), pCity->getOccupationTimer()));
 	}
 
 	if (pCity->isVisible(GC.getGameINLINE().getActiveTeam(), true))
@@ -9230,12 +9230,12 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 		int iDefenseModifier = pCity->getDefenseModifier();
 		if (iDefenseModifier != 0)
 		{
-			szBuffer.append(CvWString::format(L" %c:%s%d%%", GC.getSymbolID(DEFENSE_CHAR_CUSTOM), ((iDefenseModifier > 0) ? "+" : ""), iDefenseModifier));
+			szBuffer.append(CvWString::format(L" %c:%s%d%%", GC.getSymbolID(DEFENSE_CHAR), ((iDefenseModifier > 0) ? "+" : ""), iDefenseModifier));
 		}
 
 		if (pCity->getRebelPercent() > 0)
 		{
-			szBuffer.append(CvWString::format(L" %c:%d%%", GC.getSymbolID(POWER_CHAR_CUSTOM), pCity->getRebelPercent()));
+			szBuffer.append(CvWString::format(L" %c:%d%%", GC.getSymbolID(POWER_CHAR), pCity->getRebelPercent()));
 		}
 	}
 

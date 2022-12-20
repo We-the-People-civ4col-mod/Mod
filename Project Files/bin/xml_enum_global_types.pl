@@ -69,9 +69,20 @@ foreach my $enum (@enums)
 	}
 	my $upperName = getEnumUpperCase($enum);
 	
-	$output .= "\n\tNUM_" . $upperName . "_TYPES,\n";
-	$output .= "\tFIRST_" . $upperName . " = 0,\n";
+	$output .= "\n\t" . getMaxName($upperName) . ",\n";
+	$output .= "\t" . getFirstName($upperName) . " = 0,\n";
 	$output .= "};\n\n";
+}
+
+foreach my $enum (@enums)
+{
+	next if shouldSkipEnum($enum);
+	my $upperName = getEnumUpperCase($enum);
+	
+	$output .= "template <> struct VARINFO<" . $enum . ">\n{\n";
+	$output .= "\tstatic $enum start() { return " . getFirstName($upperName) . ";}\n";
+	$output .= "\tstatic $enum end() { return " . getMaxName($upperName) . ";}\n";
+	$output .= "};\n";
 }
 
 $output .= "#endif\n";
@@ -157,6 +168,24 @@ sub getEnumName
 	my $enum = shift;
 	return "InterfaceVisibility" if $enum eq "InterfaceVisibilityTypes";
 	return $enum;
+}
+
+sub getMaxName
+{
+	my $name = shift;
+	
+	return "MAX_NUM_SYMBOLS" if $name eq "FONT_SYMBOLS";
+	
+	return "NUM_" . $name . "_TYPES";
+}
+
+sub getFirstName
+{
+	my $name = shift;
+	
+	return "FIRST_FONTSYMBOL" if $name eq "FONT_SYMBOLS";
+	
+	return "FIRST_" . $name;
 }
 
 sub shouldSkipEnum

@@ -2,7 +2,7 @@
 
 <GameFontIDs xmlns="x-schema:LanguageSchema.xml">
 	<Addresses>
-		<CustomSymbol>8683</CustomSymbol>
+		<BillboardFontSymbolStart>8683</BillboardFontSymbolStart>
 	</Addresses>
 	<Offsets>
 		<Bonus>125</Bonus>
@@ -11,4 +11,14 @@
 		<Mission>-31</Mission>
 		<Yield>0</Yield>
 	</Offsets>
+	<BillboardSymbols>
+		<BillboardSymbol>DEFENSE_CHAR</BillboardSymbol>
+		<BillboardSymbol>OCCUPATION_CHAR</BillboardSymbol>
+		<BillboardSymbol>POWER_CHAR</BillboardSymbol>
+		<BillboardSymbol>NO_ANCHOR_CHAR</BillboardSymbol>
+		<BillboardSymbol>NO_BARRACKS_CHAR</BillboardSymbol>
+		<BillboardSymbol>POSITIVE_DOMESTIC_MARKET_EVENT_CHAR</BillboardSymbol>
+		<BillboardSymbol>NEGATIVE_DOMESTIC_MARKET_EVENT_CHAR</BillboardSymbol>
+		<BillboardSymbol>OVERFLOW_CHAR</BillboardSymbol>
+	</BillboardSymbols>
 </GameFontIDs>

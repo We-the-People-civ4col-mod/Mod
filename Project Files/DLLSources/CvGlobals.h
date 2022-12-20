@@ -1455,7 +1455,7 @@ protected:
 	//WTP, ray, Slave Hunter and Slave Master - END
 
 	/// GameFont XML control - start - Nightinggale
-	int  m_iGameFontCustomSymbolID;
+	FontSymbols  m_aiGameFontCustomSymbolID[MAX_NUM_SYMBOLS];
 	/// GameFont XML control - end - Nightinggale
 
 	int m_MAX_TREASURE_AMOUNT; // WTP, merge Treasures, of Raubwuerger

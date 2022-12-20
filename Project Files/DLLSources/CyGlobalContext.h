@@ -278,6 +278,8 @@ public:
 	int getDefaultCityCatchmentRadius() const;
 	// city radius end
 
+	int getSymbolID(int iSymbol);
+	std::string getSymbolName(int iSymbol);
 	void setGameFontDebug(int iChar);
 	int getDomesticAdvisorState() const;
 	void setDomesticAdvisorState(int iPage);

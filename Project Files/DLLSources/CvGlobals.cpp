@@ -333,10 +333,6 @@ m_MAX_SLAVE_REVOLT_REDUCTION_BONUS_PER_CITY(0),
 m_MAX_SLAVE_WORKER_PRODUCTION_BONUS_PER_CITY(0),
 //WTP, ray, Slave Hunter and Slave Master - END
 
-/// GameFont XML control - start - Nightinggale
-m_iGameFontCustomSymbolID(0),
-/// GameFont XML control - end - Nightinggale
-
 m_MAX_TREASURE_AMOUNT(0), // WTP, merge Treasures, of Raubwuerger
 m_TRADE_POST_GOLD_PER_NATIVE(0), // WTP, ray, Native Trade Posts - START
 
@@ -3180,16 +3176,6 @@ int CvGlobals::getSymbolID(FontSymbols eSymbol) const
 	{
 		return -1;
 	}
-	if (eSymbol <= ATTITUDE_FRIENDLY_CHAR)
-	{
-		// use vanilla code for vanilla symbols.
-		// the exe hardcodes IDs for vanilla symbols, hence no way to move them.
-		// do not use gDLL in the call as the error detection script will trigger on it and cause an error.
-		return GC.getDLLIFace()->getSymbolID(eSymbol);
-	}
-
-	// non-vanilla symbols are placed before the vanilla symbols to avoid hitting the ID limit in billboards.
-	return eSymbol - (ATTITUDE_FRIENDLY_CHAR + 1) // Index relative to first custom symbol.
-		+ m_iGameFontCustomSymbolID;              // use xml defined ID of first custom symbol.
+	return m_aiGameFontCustomSymbolID[eSymbol];
 }
 /// GameFont XML control - end - Nightinggale
