@@ -21,7 +21,7 @@
             <GameTurnInfos>
                 <GameTurnInfo>
                     <iMonthIncrement>12</iMonthIncrement>
-                    <iTurnsPerIncrement>900</iTurnsPerIncrement>
+                    <iTurnsPerIncrement>600</iTurnsPerIncrement>
                 </GameTurnInfo>
             </GameTurnInfos>
         </GameSpeedInfo>
@@ -39,7 +39,7 @@
             <GameTurnInfos>
                 <GameTurnInfo>
                     <iMonthIncrement>16</iMonthIncrement>
-                    <iTurnsPerIncrement>675</iTurnsPerIncrement>
+                    <iTurnsPerIncrement>450</iTurnsPerIncrement>
                 </GameTurnInfo>
             </GameTurnInfos>
         </GameSpeedInfo>
@@ -57,7 +57,7 @@
             <GameTurnInfos>
                 <GameTurnInfo>
                     <iMonthIncrement>8</iMonthIncrement>
-                    <iTurnsPerIncrement>1350</iTurnsPerIncrement>
+                    <iTurnsPerIncrement>900</iTurnsPerIncrement>
                 </GameTurnInfo>
             </GameTurnInfos>
         </GameSpeedInfo>
@@ -75,7 +75,7 @@
             <GameTurnInfos>
                 <GameTurnInfo>
                     <iMonthIncrement>4</iMonthIncrement>
-                    <iTurnsPerIncrement>2700</iTurnsPerIncrement>
+                    <iTurnsPerIncrement>1800</iTurnsPerIncrement>
                 </GameTurnInfo>
             </GameTurnInfos>
         </GameSpeedInfo>
