@@ -2754,6 +2754,12 @@ LeaderHeadTypes CvCity::getPersonalityType() const
 
 ArtStyleTypes CvCity::getArtStyleType() const
 {
+	// for Natives this is not used
+	if (isNative())
+	{
+		return GET_PLAYER(getOwnerINLINE()).getArtStyleType();
+	}
+
 	// WTP, ray, merged Captured City Art from DPII - START
 	if (GC.getDefineINT("FOUNDER_CITY_ART") > 0)
 	{
