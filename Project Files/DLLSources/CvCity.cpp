@@ -2761,7 +2761,7 @@ ArtStyleTypes CvCity::getArtStyleType() const
 	}
 
 	// WTP, ray, merged Captured City Art from DPII - START
-	if (GC.getDefineINT("FOUNDER_CITY_ART") > 0)
+	if (GLOBAL_DEFINE_FOUNDER_CITY_ART > 0)
 	{
 
 		if (getOriginalOwner() != NO_PLAYER)
@@ -2770,7 +2770,7 @@ ArtStyleTypes CvCity::getArtStyleType() const
 		}
 	}
 
-	if (GC.getDefineINT("CULTURE_CITY_ART") > 0)
+	if (GLOBAL_DEFINE_CULTURE_CITY_ART > 0)
 	{	
 		PlayerTypes eHighestCulturePlayer;
 		eHighestCulturePlayer = findHighestCulture();
