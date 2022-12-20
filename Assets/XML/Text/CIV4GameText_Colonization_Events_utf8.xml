@@ -906,7 +906,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FERRY_STATION_ROBBERS_1</Tag>
-        <English>Milord, a citizen has recognized a few rough-looking men riding through the city. They're wanted for ferry robbery,  they were heavily armed and they were heading toward the local ferry station. If we ride now we may might have time to catch them and prevent another crime.</English>
+        <English>Milord, a citizen has recognized a few rough-looking men riding through the city. They're wanted for ferry robbery,  they're heavily armed and they're heading toward the local ferry station. If we ride now we just might have time to catch them and prevent another crime.</English>
         <German>Mylord, ein Ortsansässiger hat einge nach Ärger aussehende Männer, die durch die Stadt ritten, als gesuchte Fährräuber erkannt. Sie ritten in Richtung der örtlichen Fährstation und waren schwer bewaffnet. Wenn wir jetzt losreiten könnten wir sie noch einholen und schlimmeres verhindern.</German>
     </TEXT>
     <TEXT>
@@ -926,12 +926,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_AND_PLANATION_OWNER_DAUGHTER</Tag>
-        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] daughter of a plantation owner fell in love with a slave.</English>
+        <English>A rumour is spreading that the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] daughter of a plantation owner fell in love with a slave.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Tocher eines Plantagenbesitzers hat sich in einen Sklaven verliebt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1</Tag>
-        <English>Mylord, this is a bad situation. The daugher of one of the richest planation owners in this region fell in love with a slave and helped him to escape after her father found out about the relationship and threatened to kill the slave. The slave now sits in the waiting room and pleads us to help. The plantation owner and father has gathered armed men and now tries to enter the building to lynch the poor slave.</English>
+        <English>Milord, we have a bad situation. The daughter of one of the richest plantation owners in this region fell in love with a slave. When her father found out about the relationship and tried to kill the slave, she helped her lover to escape.[NEWLINE]The slave now sits in our waiting room. He pleads for our help. Out that window you can see the plantation owner with his armed men trying to get in here to lynch this poor slave.</English>
         <German>Mylord, wir sind in einer schlimmen situation. Die Tochter eines der reichsten Plantagenbesitzer der Region hat sich in einen Sklaven verliebt und diesem zur Flucht verholfen, nachdem ihr Vater von der Beziehung erfahren hat und drohte den Sklaven zu töten. Der Sklave sitzt nun im Vorraum und bittet um Hilfe. Der Plantagenbesitzer und Vater hat jedoch bewaffnete Männer versammelt und versucht das Gebäude gewaltsam zu betreten um den Sklaven zu lynchen.</German>
     </TEXT>
     <TEXT>
