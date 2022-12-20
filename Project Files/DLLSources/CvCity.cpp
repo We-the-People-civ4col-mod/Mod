@@ -2754,7 +2754,27 @@ LeaderHeadTypes CvCity::getPersonalityType() const
 
 ArtStyleTypes CvCity::getArtStyleType() const
 {
+	// WTP, ray, merged Captured City Art from DPII - START
+	if (GC.getDefineINT("FOUNDER_CITY_ART") > 0)
+	{
+
+		if (getOriginalOwner() != NO_PLAYER)
+		{
+			return GET_PLAYER(getOriginalOwner()).getArtStyleType();	
+		}
+	}
+
+	if (GC.getDefineINT("CULTURE_CITY_ART") > 0)
+	{	
+		PlayerTypes eHighestCulturePlayer;
+		eHighestCulturePlayer = findHighestCulture();
+		return GET_PLAYER(eHighestCulturePlayer).getArtStyleType();
+	}
+	// WTP, ray, merged Captured City Art from DPII - END
+	
+	// old code
 	return GET_PLAYER(getOwnerINLINE()).getArtStyleType();
+
 }
 
 CitySizeTypes CvCity::getCitySizeType() const

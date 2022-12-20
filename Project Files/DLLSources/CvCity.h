@@ -831,6 +831,7 @@ protected:
 	PlayerTypes m_eOriginalOwner;
 	CultureLevelTypes m_eCultureLevel;
 	UnitClassTypes m_eTeachUnitClass;
+
 	PlayerTypes m_eMissionaryPlayer;
 	PlayerTypes m_eTradePostPlayer; // WTP, ray, Native Trade Posts - START
 	EnumMap<YieldTypes,int> m_em_iLandPlotYield; // R&R, ray, Landplot Yields

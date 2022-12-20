@@ -1535,4 +1535,13 @@
 		<DefineName>CRIME_PERCENT_BONUS_FACTOR_OVERFLOW</DefineName>
 		<iDefineIntVal>60</iDefineIntVal>
 	</Define>
+	<!-- Captured City Art -->
+	<Define>
+		<DefineName>CULTURE_CITY_ART</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>FOUNDER_CITY_ART</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
 </Civ4Defines>

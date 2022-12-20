@@ -534,7 +534,6 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_CultureLevel: reader.Read(m_eCultureLevel); break;
 		case CitySave_TeachUnitClass: reader.Read(m_eTeachUnitClass); break;
 
-
 		case CitySave_CustomHouseSellThreshold: reader.Read(m_em_iCustomHouseSellThreshold); break;
 		case CitySave_CustomHouseNeverSell: reader.Read(m_em_bCustomHouseNeverSell); break;
 		case CitySave_OrderedStudents: reader.Read(m_em_iOrderedStudents); break;
