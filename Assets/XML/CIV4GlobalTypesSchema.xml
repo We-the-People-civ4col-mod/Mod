@@ -77,4 +77,8 @@
 	<ElementType name="FontSymbols" content="eltOnly">
 		<element type="FontSymbol" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="EthnicityType" content="textOnly"/>
+	<ElementType name="EthnicityTypes" content="eltOnly">
+		<element type="EthnicityType" maxOccurs="*"/>
+	</ElementType>
 </Schema>

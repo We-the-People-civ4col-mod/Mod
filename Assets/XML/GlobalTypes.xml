@@ -250,4 +250,11 @@
 		<FontSymbol>NEGATIVE_DOMESTIC_MARKET_EVENT_CHAR</FontSymbol>
 		<FontSymbol>OVERFLOW_CHAR</FontSymbol>
 	</FontSymbols>
+	<EthnicityTypes>
+		<EthnicityType>ETHNICITY_EUROPEAN</EthnicityType>
+		<EthnicityType>ETHNICITY_INDIO</EthnicityType>
+		<EthnicityType>ETHNICITY_AFRICAN</EthnicityType>
+		<EthnicityType>ETHNICITY_MESTIZZO</EthnicityType>
+		<EthnicityType>ETHNICITY_MULATTO</EthnicityType>
+	</EthnicityTypes>
 </Civ4Types>
