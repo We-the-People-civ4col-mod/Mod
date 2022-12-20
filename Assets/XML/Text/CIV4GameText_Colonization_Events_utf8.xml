@@ -866,12 +866,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_1</Tag>
-        <English>Of course we will protect that poor young girl! We are not afraid of a few hillbillies!</English>
+        <English>Of course we will protect that poor young girl! We're not afraid of a few hillbillies!</English>
         <German>Wir werden dem jungen Mädchen natürlich helfen! Wir fürchten uns nicht vor ein paar Hinterwäldlern!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_2</Tag>
-        <English>This is family business that we have no right to get involved with.</English>
+        <English>This is family business. We have no right to get involved.</English>
         <German>Wir sollten uns nicht in diese Familienangelegenheit einmischen.</German>
     </TEXT>
     <TEXT>
@@ -881,12 +881,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HERDER_IN_NEED</Tag>
-        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] pig pen and its owner are attacked by wolfes.</English>
+        <English>There's a rumour that a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] pigpen is being attacked by wolves.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Schweinestall und sein Besitzer werden von Wölfen angegriffen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HERDER_IN_NEED_1</Tag>
-        <English>A pig breeder has sent his young son to the city to call for help. Wolfes are attacking the pen and the breeder is desperately trying to protect the animals. We pleads us to send help.</English>
+        <English>A pig breeder has sent his young son to the city to beg for help. Wolves are attacking the pigpen and the farmer is desperately trying to protect the animals. He pleads for our help.</English>
         <German>Ein Schweinezüchter hat seinen kleinen Sohn in die Stadt geschickt um Hilfe zu holen. Wölfe greifen den Stall an und der Züchter versucht verzweifelt seine Tiere zu beschützen. Er bitte uns um Hilfe.</German>
     </TEXT>
     <TEXT>
