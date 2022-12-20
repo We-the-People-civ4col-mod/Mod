@@ -260,25 +260,10 @@ public:
 	void GetEnum(const char* szType, T& eEnum, const char* szTagName, bool bMandatory = true)
 	{
 		CvString szTextVal;
-		this->GetChildXmlValByName(szTextVal, szTagName);
-		if (szTextVal.length() > 0 && strcmp(szTextVal.c_str(), "NONE") != 0)
-		{
-			JITarrayTypes eType = getJITarrayType(eEnum);
-			int iLength = getArrayLength(eType);
-			for (int i = 0; i < iLength; ++i)
-			{
-				if (strcmp(szTextVal.c_str(), getArrayType(eType, i)) == 0)
-				{
-					// the type match
-					// assign the index
-					eEnum = static_cast<T>(i);
-					return;
-				}
-			}
-			FAssertMsg(false, CvString::format("%s: Tag %s has to contain something of type %s, but %s was found", szType, szTagName, getArrayName(eType), szTextVal.c_str()).c_str());
-		}
-		eEnum = static_cast<T>(-1);
-		FAssertMsg(!bMandatory, CvString::format("%s: Tag %s has to be present and contain something other than NONE", szType, szTagName).c_str());
+		GetChildXmlValByName(szTextVal, szTagName);
+		getIndexOfType(eEnum, szTextVal.c_str());
+		FAssertMsg(eEnum != (T)-1 || szTextVal.length() == 0 || strcmp(szTextVal.c_str(), "NONE") == 0, CvString::format("%s: Tag %s has to contain something of type %s, but %s was found", szType, szTagName, getArrayName(getJITarrayType(eEnum)), szTextVal.c_str()).c_str());
+		FAssertMsg(!bMandatory || eEnum != (T)-1, CvString::format("%s: Tag %s has to be present and contain something other than NONE", szType, szTagName).c_str());
 	}
 
 	//---------------------------------------PRIVATE MEMBER VARIABLES---------------------------------

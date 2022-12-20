@@ -10,11 +10,14 @@
 template <typename T>
 static T getIndexOfType(T& eIndex, const char* szType)
 {
-	for (eIndex = VARINFO<T>::start(); eIndex <= VARINFO<T>::end(); ++eIndex)
+	if (*szType != 0 && strcmp(szType, "NONE") != 0)
 	{
-		if (strcmp(getTypeStr(eIndex), szType) == 0)
+		for (eIndex = VARINFO<T>::start(); eIndex < VARINFO<T>::end(); ++eIndex)
 		{
-			return eIndex;
+			if (strcmp(getTypeStr(eIndex), szType) == 0)
+			{
+				return eIndex;
+			}
 		}
 	}
 	eIndex = (T)-1;
