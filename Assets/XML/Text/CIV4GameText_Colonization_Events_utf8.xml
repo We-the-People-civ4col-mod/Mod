@@ -836,7 +836,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HIGHWAYMAN_ATTACK</Tag>
-        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] stagecoach was attacked by highwaymen but the brave passengers defended it.</English>
+        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] stagecoach was attacked by highwaymen but brave passengers defended it.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Kutsche wurde von Straßenräubern angegriffen aber die mutigen Passagiere haben sie verteidigt.</German>
     </TEXT>
     <TEXT>
@@ -851,7 +851,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_HELP</Tag>
-        <English>Highwaymen attack the stagecoach. Some brave passengers defend it.</English>
+        <English>Highwaymen attack the stagecoach. Brave passengers defend it.</English>
         <German>Straßenräuber greifen die Kutsche an. Ein paar mutige Passagiere verteidigen sie.</German>
     </TEXT>
     <TEXT>
