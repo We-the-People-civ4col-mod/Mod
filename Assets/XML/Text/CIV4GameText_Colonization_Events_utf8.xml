@@ -891,17 +891,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HERDER_IN_NEED_1</Tag>
-        <English>We will send help as fast as possible! But he must hold on a bit longer!</English>
+        <English>We will send help as fast as possible! He must hold on just a little longer!</English>
         <German>Wir werden versuchen so schnell wie möglich Hilfe zu schicken! Aber er muss noch etwas durchhalten!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HERDER_IN_NEED_HELP</Tag>
-        <English>Wolfs attack the pen.</English>
+        <English>Wolves attack the pigpen.</English>
         <German>Wölfe greifen den Stall an.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FERRY_STATION_ROBBERS</Tag>
-        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ferry station is attacked by ferry robbers.</English>
+        <English>There's a rumour that the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ferry station is being attacked by robbers.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Fährstation wird von Fährräubern angegriffen.</German>
     </TEXT>
     <TEXT>
