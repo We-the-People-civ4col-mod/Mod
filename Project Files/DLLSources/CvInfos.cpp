@@ -2769,7 +2769,8 @@ m_bTreasureShip(false), // WTP, ray Treasure Ship
 m_bTroopShip(false), // WTP, ray Troop Ship
 m_bAlwaysHostile(false),
 m_bTreasure(false),
-m_eEthnicity(NO_ETHNICITY),
+m_eEthnicity(NO_ETHNICITY), // WTP, ray, Ethnically correct Population Growth - START
+m_eCitizenStatus(NO_CITIZEN_STATUS), // WTP, ray, Ethnically correct Population Growth - START
 // R&R, ray, Changes for Treasures, START
 m_bNoRevealMap(false),
 // R&R, ray, Changes for Treasures, END
@@ -3220,10 +3221,18 @@ bool CvUnitInfo::isTreasure() const
 {
 	return m_bTreasure;
 }
+
+// WTP, ray, Ethnically correct Population Growth - START
 EthnicityTypes CvUnitInfo::getEthnicity() const
 {
 	return m_eEthnicity;
 }
+
+CitizenStatusTypes CvUnitInfo::getCitizenStatus() const
+{
+	return m_eCitizenStatus;
+}
+// WTP, ray, Ethnically correct Population Growth - END
 
 // R&R, ray, Changes for Treasures, START
 bool CvUnitInfo::isNoRevealMap() const
@@ -4061,7 +4070,8 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bTroopShip,"bTroopShip",false); // WTP, ray Troop Ship
 	pXML->GetChildXmlValByName(&m_bAlwaysHostile,"bAlwaysHostile",false);
 	pXML->GetChildXmlValByName(&m_bTreasure,"bTreasure",false);
-	pXML->GetEnum(getType(), m_eEthnicity, "eEthnicity", false);
+	pXML->GetEnum(getType(), m_eEthnicity, "eEthnicity", false); // WTP, ray, Ethnically correct Population Growth - START
+	pXML->GetEnum(getType(), m_eCitizenStatus, "eCitizenStatus", false); // WTP, ray, Ethnically correct Population Growth - START
 	// R&R, ray, Changes for Treasures, START
 	pXML->GetChildXmlValByName(&m_bNoRevealMap, "bNoRevealMap", false);
 	// R&R, ray, Changes for Treasures, END

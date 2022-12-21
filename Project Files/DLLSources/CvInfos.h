@@ -776,7 +776,8 @@ public:
 	bool isTroopShip() const;// WTP, ray Troop Ship
 	bool isAlwaysHostile() const;
 	bool isTreasure() const;
-	EthnicityTypes getEthnicity() const;
+	EthnicityTypes getEthnicity() const; // WTP, ray, Ethnically correct Population Growth - START
+	CitizenStatusTypes getCitizenStatus() const; // WTP, ray, Ethnically correct Population Growth - START
 	// R&R, ray, Changes for Treasures, START
 	bool isNoRevealMap() const;
 	// R&R, ray, Changes for Treasures, END
@@ -965,7 +966,8 @@ protected:
 	bool m_bTroopShip; // WTP, ray Treasure Ship
 	bool m_bAlwaysHostile;
 	bool m_bTreasure;
-	EthnicityTypes m_eEthnicity;
+	EthnicityTypes m_eEthnicity; // WTP, ray, Ethnically correct Population Growth - START
+	CitizenStatusTypes m_eCitizenStatus; // WTP, ray, Ethnically correct Population Growth - START
 	// R&R, ray, Changes for Treasures, START
 	bool m_bNoRevealMap;
 	// R&R, ray, Changes for Treasures, END

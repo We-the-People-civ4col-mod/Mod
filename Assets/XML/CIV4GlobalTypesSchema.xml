@@ -81,4 +81,8 @@
 	<ElementType name="EthnicityTypes" content="eltOnly">
 		<element type="EthnicityType" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="CitizenStatusType" content="textOnly"/>
+	<ElementType name="CitizenStatusTypes" content="eltOnly">
+		<element type="CitizenStatusType" maxOccurs="*"/>
+	</ElementType>
 </Schema>

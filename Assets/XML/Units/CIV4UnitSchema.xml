@@ -101,6 +101,8 @@
 	<ElementType name="Domain" content="textOnly"/>
 	<ElementType name="DefaultUnitAI" content="textOnly"/>
 	<ElementType name="DefaultProfession" content="textOnly"/>
+	<ElementType name="eEthnicity" content="textOnly"/>
+	<ElementType name="eCitizenStatus" content="textOnly"/>
 	<ElementType name="Invisible" content="textOnly"/>
 	<ElementType name="SeeInvisible" content="textOnly"/>
 	<ElementType name="iNativeLearnTime" content="textOnly" dt:type="int"/>
@@ -441,6 +443,8 @@
 		<element type="Domain"/>
 		<element type="DefaultUnitAI"/>
 		<element type="DefaultProfession"/>
+		<element type="eEthnicity" minOccurs="0"/>
+		<element type="eCitizenStatus" minOccurs="0"/>
 		<element type="Invisible"/>
 		<element type="SeeInvisible"/>
 		<element type="Description"/>

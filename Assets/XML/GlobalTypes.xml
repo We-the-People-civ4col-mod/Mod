@@ -257,4 +257,10 @@
 		<EthnicityType>ETHNICITY_MESTIZZO</EthnicityType>
 		<EthnicityType>ETHNICITY_MULATTO</EthnicityType>
 	</EthnicityTypes>
+	<CitizenStatusTypes>
+		<CitizenStatusType>CITIZEN_STATUS_FREE</CitizenStatusType>
+		<CitizenStatusType>CITIZEN_STATUS_INDENTURED</CitizenStatusType>
+		<CitizenStatusType>CITIZEN_STATUS_ENSLAVED</CitizenStatusType>
+		<CitizenStatusType>CITIZEN_STATUS_ELITE</CitizenStatusType>
+	</CitizenStatusTypes>
 </Civ4Types>
