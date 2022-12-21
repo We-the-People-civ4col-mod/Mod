@@ -1071,27 +1071,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SILVER_MINE_ROBBERY</Tag>
-        <English>A rumour is spreading: A silver mine is regularly being robbed by buccanneers.</English>
+        <English>A rumour is spreading: A silver mine is regularly being robbed by buccaneers.</English>
         <German>Ein Gerücht macht die Runde: Eine Silbermine wird regelmäßig von Bukkannieren ausgeraubt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SILVER_MINE_ROBBERY_1</Tag>
-        <English>Mylord, we hear reports from the foreman of one of our silver mines that buccanneers regularly bribe some of the workers to let them steal some of the mined silver.</English>
+        <English>Mylord, there's a report from the foreman of one of our silver mines that buccaneers bribe workers there to let them steal some of the mined silver.</English>
         <German>Mylord, einer der Vorarbetier einer unserer Silberminen berichtet, dass Bukkanniere regelmäßig die Minenarbeiter bestechen, damit diese sie einen Teil des Silbers stehlen lassen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_1</Tag>
-        <English>This must be stopped immediately! Gather some men from the Militia and pay them gold guard the mine.</English>
+        <English>This must be stopped immediately! Gather some men from the militia and pay them gold to guard the mine.</English>
         <German>Das muss sofort aufhören! Versammelt einige Männer aus der Miliz und zahlt ihnen Gold um die Mine zu bewachen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_2</Tag>
-        <English>These criminals must pay for this! Search them and put an end to their lifes.</English>
+        <English>These criminals must pay for this! Search for them! Put an end to their miserable lives!</English>
         <German>Diese Kriminellen werden dafür bezahlen! Sucht sie und setzt ihrem Leben ein Ende.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_3</Tag>
-        <English>Let us solve this peacefully and with as little cost as possible. Offer the miners some gold so they will guard the silver themselves.</English>
+        <English>Let us solve this peacefully, with as little cost as possible. Offer the miners enough gold so they will guard the silver themselves.</English>
         <German>Lasst uns dies friedlich und mit so wenig Kosten wie möglich. Bietet den Minenarbeitern etwas Gold, damit sie das Silber selbst bewachen.</German>
     </TEXT>
     <TEXT>
@@ -1124,12 +1124,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BUCCANNERS_ATTACK_MINE_HELP</Tag>
-        <English>[ICON_BULLET]Our silver mine is attacked by Buccanneers!</English>
+        <English>[ICON_BULLET]Our silver mine is looted by buccaneers!</English>
         <German>[ICON_BULLET]Unseren Silbermine wird von Buccannieren angegriffen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MILITIA_DEFENDS_MINE_HELP</Tag>
-        <English>[ICON_BULLET]Our silver mine will be guarded by our Militia!</English>
+        <English>[ICON_BULLET]Our silver mine will be guarded by our militia!</English>
         <German>[ICON_BULLET]Unseren Silbermine wird von unserer Miliz bewacht!</German>
     </TEXT>
     <TEXT>
