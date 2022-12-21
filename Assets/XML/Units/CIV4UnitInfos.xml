@@ -14,6 +14,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COLONIST</Description>
@@ -582,6 +584,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_INDENTURED</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_INDENTURED_SERVANT</Description>
@@ -1335,6 +1339,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_MESTIZZO</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_INDENTURED</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_MESTIZZO</Description>
@@ -2094,6 +2100,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_MULATTO</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_INDENTURED</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_MULATTO</Description>
@@ -2853,6 +2861,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ENSLAVED</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CRIMINAL</Description>
@@ -3681,6 +3691,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_INDIO</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CONVERTED_NATIVE</Description>
@@ -4463,6 +4475,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_AFRICAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FREED_SLAVE</Description>
@@ -5250,6 +5264,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_INDIO</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ENSLAVED</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_NATIVE_SLAVE</Description>
@@ -5892,6 +5908,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_AFRICAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ENSLAVED</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_AFRICAN_SLAVE</Description>
@@ -6715,6 +6733,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_MINER</Description>
@@ -7315,6 +7335,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COAL_MINER</Description>
@@ -7899,6 +7921,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PROSPECTOR</Description>
@@ -8499,6 +8523,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_LUMBERJACK</Description>
@@ -9075,6 +9101,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_STONECUTTER</Description>
@@ -9659,6 +9687,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PEAT_CUTTER</Description>
@@ -10227,6 +10257,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_TOBACCO_PLANTER</Description>
@@ -10805,6 +10837,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_YERBA_PLANTER</Description>
@@ -11383,6 +11417,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HEMP_PLANTER</Description>
@@ -11959,6 +11995,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_LINEN_PLANTER</Description>
@@ -12535,6 +12573,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COTTON_PLANTER</Description>
@@ -13113,6 +13153,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_INDIGO_PLANTER</Description>
@@ -13691,6 +13733,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_LOGWOOD_COLLECTOR</Description>
@@ -14269,6 +14313,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COCHINEAL_COLLECTOR</Description>
@@ -14847,6 +14893,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SUGAR_PLANTER</Description>
@@ -15425,6 +15473,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COCA_COLLECTOR</Description>
@@ -16003,6 +16053,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COCOA_PLANTER</Description>
@@ -16581,6 +16633,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COFFEE_PLANTER</Description>
@@ -17159,6 +17213,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PEANUT_PLANTER</Description>
@@ -17737,6 +17793,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_RED_PEPPER_PLANTER</Description>
@@ -18315,6 +18373,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_VANILLA_COLLECTOR</Description>
@@ -18893,6 +18953,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR</Description>
@@ -19471,6 +19533,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR</Description>
@@ -20049,6 +20113,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FARMER</Description>
@@ -20641,6 +20707,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_RICE_FARMER</Description>
@@ -21217,6 +21285,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CASSAVA_PLANTER</Description>
@@ -21793,6 +21863,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GRAPES_PICKER</Description>
@@ -22369,6 +22441,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FRUITS_PICKER</Description>
@@ -22945,6 +23019,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_OLIVES_PLANTER</Description>
@@ -23521,6 +23597,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_RAPE_PLANTER</Description>
@@ -24097,6 +24175,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HUNTER</Description>
@@ -24673,6 +24753,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SEALS_HUNTER</Description>
@@ -25249,6 +25331,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_TRAPPER</Description>
@@ -25825,6 +25909,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FISHERMAN</Description>
@@ -26385,6 +26471,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PEARLS_HUNTER</Description>
@@ -26940,6 +27028,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BLACKSMITH</Description>
@@ -27544,6 +27634,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GUNSMITH</Description>
@@ -28148,6 +28240,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CHARCOAL_BURNER</Description>
@@ -28752,6 +28846,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FIREWORKER</Description>
@@ -29360,6 +29456,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FUR_TRADER</Description>
@@ -29964,6 +30062,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_TANNER</Description>
@@ -30568,6 +30668,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_LEATHER_TAYLOR</Description>
@@ -31172,6 +31274,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CLOTH_TAYLOR</Description>
@@ -31776,6 +31880,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CARPENTER</Description>
@@ -32372,6 +32478,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FURNITURE_MAKER</Description>
@@ -32972,6 +33080,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BREWER</Description>
@@ -33572,6 +33682,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_DISTILLER</Description>
@@ -34176,6 +34288,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_WINE_MAKER</Description>
@@ -34776,6 +34890,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_OIL_TRADER</Description>
@@ -35380,6 +35496,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_WEAVER</Description>
@@ -35984,6 +36102,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_DYER</Description>
@@ -36588,6 +36708,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROASTER</Description>
@@ -37187,6 +37309,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_MILK_MAID</Description>
@@ -37747,6 +37871,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BAKER</Description>
@@ -38338,6 +38464,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CHEESE_MAKER</Description>
@@ -38934,6 +39062,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_POTTER</Description>
@@ -39534,6 +39664,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SPICE_TRADER</Description>
@@ -40137,6 +40269,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CONFECTIONER</Description>
@@ -40741,6 +40875,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HOUSEHOLD_TRADER</Description>
@@ -41345,6 +41481,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_TOBACCONIST</Description>
@@ -41941,6 +42079,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_YERBA_TRADER</Description>
@@ -42537,6 +42677,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROPES_MAKER</Description>
@@ -43133,6 +43275,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SAILCLOTH_MAKER</Description>
@@ -43729,6 +43873,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_WHALE_OIL_COOKER</Description>
@@ -44341,6 +44487,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_RANCHER</Description>
@@ -44969,6 +45117,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BREEDER</Description>
@@ -45537,6 +45687,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HERDER</Description>
@@ -46113,6 +46265,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BUTCHER</Description>
@@ -46721,6 +46875,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_POULTRY_BUTCHER</Description>
@@ -47329,6 +47485,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_DEFENSIVE</DefaultUnitAI>
             <DefaultProfession>PROFESSION_TOWN_GUARD</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_VETERAN_TOWN_GUARD</Description>
@@ -47881,6 +48039,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
             <DefaultProfession>PROFESSION_ROYAL_HALBERDIER</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROYAL_HALBERDIER</Description>
@@ -48284,6 +48444,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_GENERAL</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GREAT_GENERAL</Description>
@@ -48495,6 +48657,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_GENERAL</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_INDIO</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GREAT_CHIEF</Description>
@@ -48650,6 +48814,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_GENERAL</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GREAT_ADMIRAL</Description>
@@ -48836,6 +49002,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_GENERAL</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BRAVE_LIEUTENANT</Description>
@@ -49018,6 +49186,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_GENERAL</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CAPABLE_CAPTAIN</Description>
@@ -49200,6 +49370,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HESSIAN</Description>
@@ -49420,6 +49592,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_DEFENSIVE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_MILITIA</Description>
@@ -49602,6 +49776,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CONTINENTAL_GUARD</Description>
@@ -49839,6 +50015,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_INDIO</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_NATIVE_MERC</Description>
@@ -50127,6 +50305,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_AFRICAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ENSLAVED</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_REVOLTING_SLAVE</Description>
@@ -50315,6 +50495,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_INDIO</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ENSLAVED</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_REVOLTING_NATIVE_SLAVE</Description>
@@ -50503,6 +50685,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ENSLAVED</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_REVOLTING_CRIMINAL</Description>
@@ -50642,6 +50826,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_INDIO</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HOSTILE_NATIVE</Description>
@@ -50830,6 +51016,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_RANGER</Description>
@@ -51126,6 +51314,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CONQUISTADOR</Description>
@@ -51356,6 +51546,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_MOUNTED_CONQUISTADOR</Description>
@@ -51616,6 +51808,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BUCCANNEER</Description>
@@ -51838,6 +52032,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SLAVE_HUNTER</Description>
@@ -52039,6 +52235,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SLAVE_MASTER</Description>
@@ -52240,6 +52438,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIAL_MILITIA</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_VETERAN_INFANTRY</Description>
@@ -52767,6 +52967,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>PROFESSION_LINE_INFANTRY</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_EUROPEAN_LINE_INFANTRY</Description>
@@ -53322,6 +53524,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>PROFESSION_DRAGOON</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_VETERAN_DRAGOON</Description>
@@ -53827,6 +54031,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>PROFESSION_HEAVY_CAVALRY</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_VETERAN_CAVALRY</Description>
@@ -54354,6 +54560,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_DEFENSIVE</DefaultUnitAI>
             <DefaultProfession>PROFESSION_LIGHT_ARTILLERY</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_LIGHT_ARTILLERY_VETERAN_EXPERT</Description>
@@ -54877,6 +55085,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>PROFESSION_HEAVY_ARTILLERY</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN_EXPERT</Description>
@@ -55400,6 +55610,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>PROFESSION_ROYAL_ARTILLERY</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROYAL_ARTILLERY_EXPERT</Description>
@@ -55934,6 +56146,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_MORTAR</Description>
@@ -56125,6 +56339,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
             <DefaultProfession>PROFESSION_ROYAL_LIGHT_INFANTRY</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROYAL_LIGHT_INFANTRY</Description>
@@ -56482,6 +56698,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
             <DefaultProfession>PROFESSION_ROYAL_LINE_INFANTRY</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROYAL_LINE_INFANTRY</Description>
@@ -56843,6 +57061,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
             <DefaultProfession>PROFESSION_ROYAL_DRAGOON</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROYAL_DRAGOON</Description>
@@ -57204,6 +57424,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
             <DefaultProfession>PROFESSION_ROYAL_CAVALRY</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROYAL_CAVALRY</Description>
@@ -57565,6 +57787,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_SETTLER</DefaultUnitAI>
             <DefaultProfession>PROFESSION_PIONEER</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PIONEER</Description>
@@ -58107,6 +58331,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_SCOUT</DefaultUnitAI>
             <DefaultProfession>PROFESSION_SCOUT</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SCOUT</Description>
@@ -58616,6 +58842,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_SETTLER</DefaultUnitAI>
             <DefaultProfession>PROFESSION_SETTLER</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_EXPERT_SETTLER</Description>
@@ -59197,6 +59425,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PREACHER</Description>
@@ -59767,6 +59997,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PRIEST</Description>
@@ -60337,6 +60569,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_RUSSIAN_PRIEST</Description>
@@ -60907,6 +61141,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_STATESMAN</Description>
@@ -61455,6 +61691,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_EMIGRANT</Description>
@@ -61978,6 +62216,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GOVERNOR</Description>
@@ -62603,6 +62843,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_DOCTOR</Description>
@@ -63190,6 +63432,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_JUDGE</Description>
@@ -63764,6 +64008,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ENTERTAINER</Description>
@@ -64334,6 +64580,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HARLOT</Description>
@@ -64904,6 +65152,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
             <DefaultProfession>PROFESSION_MISSIONARY</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY</Description>
@@ -65422,6 +65672,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
             <DefaultProfession>PROFESSION_MISSIONARY</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY_PROT</Description>
@@ -65940,6 +66192,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_MISSIONARY</DefaultUnitAI>
             <DefaultProfession>PROFESSION_MISSIONARY</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_RUSSIAN_MISSIONARY</Description>
@@ -66458,6 +66712,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FAILED_MISSIONARY</Description>
@@ -67126,6 +67382,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_TRADER</DefaultUnitAI>
             <DefaultProfession>PROFESSION_NATIVE_TRADER</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_EXPERT_TRADER</Description>
@@ -67684,6 +67942,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_NOBLE</Description>
@@ -68150,6 +68410,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_ELITE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BISHOP</Description>
@@ -68624,6 +68886,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_DEFENSIVE</DefaultUnitAI>
             <DefaultProfession>PROFESSION_BRAVE</DefaultProfession>
+            <eEthnicity>ETHNICITY_INDIO</eEthnicity>
+            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_NATIVE</Description>
@@ -68837,6 +69101,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES</Description>
@@ -68973,6 +69239,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_WAGON</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_OXCART</Description>
@@ -69134,6 +69402,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_WAGON</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_WAGON_TRAIN</Description>
@@ -69299,6 +69569,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_WAGON</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_TREK</Description>
@@ -69464,6 +69736,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_WAGON</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_STAGECOACH</Description>
@@ -69625,6 +69899,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_WAGON</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CARRIER</Description>
@@ -69790,6 +70066,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_WAGON</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_TRAIN</Description>
@@ -69955,6 +70233,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_COAST</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SMALL_COASTAL_SHIP</Description>
@@ -70140,6 +70420,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_COAST</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BIG_COASTAL_SHIP</Description>
@@ -70325,6 +70607,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CARAVEL</Description>
@@ -70531,6 +70815,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FLUYT</Description>
@@ -70735,6 +71021,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CARRACK</Description>
@@ -70941,6 +71229,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CARAVELA_REDONDA</Description>
@@ -71145,6 +71435,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_MERCHANTMAN</Description>
@@ -71349,6 +71641,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BRIGANTINE</Description>
@@ -71574,6 +71868,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SLAVE_BARQUE</Description>
@@ -71802,6 +72098,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GALLEON</Description>
@@ -72015,6 +72313,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROYAL_TROOP_GALLEON</Description>
@@ -72173,6 +72473,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_WEST_INDIAMAN</Description>
@@ -72385,6 +72687,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SLOOP</Description>
@@ -72558,6 +72862,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SCHOONER</Description>
@@ -72811,6 +73117,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_PIRATE_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PRIVATEER</Description>
@@ -73025,6 +73333,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_PIRATE_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PIRATE_FRIGATE</Description>
@@ -73186,6 +73496,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_PIRATE_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PIRATE_CUTTER</Description>
@@ -73329,6 +73641,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SMUGGLING_SHIP</Description>
@@ -73488,6 +73802,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CORVETTE</Description>
@@ -73688,6 +74004,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_NAVAL_BRIG</Description>
@@ -73884,6 +74202,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FRIGATE</Description>
@@ -74079,6 +74399,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROYAL_FRIGATE</Description>
@@ -74237,6 +74559,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SHIP_OF_THE_LINE</Description>
@@ -74432,6 +74756,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROYAL_SHIP_OF_THE_LINE</Description>
@@ -74590,6 +74916,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COLONIAL_MAN_O_WAR</Description>
@@ -74785,6 +75113,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROYAL_MAN_O_WAR</Description>
@@ -74943,6 +75273,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_WORKER_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_WHALING_BOAT</Description>
@@ -75148,6 +75480,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_WORKER_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FISHING_BOAT</Description>
@@ -75345,6 +75679,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FOOD</Description>
@@ -75475,6 +75811,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_LUMBER</Description>
@@ -75605,6 +75943,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HARDWOOD</Description>
@@ -75735,6 +76075,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_STONE</Description>
@@ -75865,6 +76207,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CLAY</Description>
@@ -75995,6 +76339,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ORE</Description>
@@ -76125,6 +76471,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COAL</Description>
@@ -76255,6 +76603,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CHAR_COAL</Description>
@@ -76385,6 +76735,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PEAT</Description>
@@ -76515,6 +76867,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SILVER</Description>
@@ -76645,6 +76999,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GOLD</Description>
@@ -76775,6 +77131,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GEMS</Description>
@@ -76905,6 +77263,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_RICE</Description>
@@ -77035,6 +77395,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CASSAVA</Description>
@@ -77165,6 +77527,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COCA_LEAVES</Description>
@@ -77295,6 +77659,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_MAPLE_SIRUP</Description>
@@ -77425,6 +77791,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_KAUTSCHUK</Description>
@@ -77555,6 +77923,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COCOA_FRUITS</Description>
@@ -77685,6 +78055,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COFFEE_BERRIES</Description>
@@ -77815,6 +78187,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PEANUTS</Description>
@@ -77945,6 +78319,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_MILK</Description>
@@ -78075,6 +78451,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_RAW_SALT</Description>
@@ -78205,6 +78583,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_RED_PEPPER</Description>
@@ -78335,6 +78715,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_VANILLA_PODS</Description>
@@ -78465,6 +78847,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_WOOL</Description>
@@ -78595,6 +78979,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COTTON</Description>
@@ -78725,6 +79111,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_INDIGO</Description>
@@ -78855,6 +79243,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_LOGWOOD</Description>
@@ -78985,6 +79375,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COCHINEAL</Description>
@@ -79115,6 +79507,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GOAT_HIDES</Description>
@@ -79245,6 +79639,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PIG_SKIN</Description>
@@ -79375,6 +79771,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HIDES</Description>
@@ -79505,6 +79903,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_DOWNS</Description>
@@ -79635,6 +80035,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_WILD_FEATHERS</Description>
@@ -79765,6 +80167,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FUR</Description>
@@ -79895,6 +80299,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PREMIUM_FUR</Description>
@@ -80025,6 +80431,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BARLEY</Description>
@@ -80155,6 +80563,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SUGAR</Description>
@@ -80285,6 +80695,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FRUITS</Description>
@@ -80415,6 +80827,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GRAPES</Description>
@@ -80545,6 +80959,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_OLIVES</Description>
@@ -80675,6 +81091,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_RAPE</Description>
@@ -80805,6 +81223,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_TOBACCO</Description>
@@ -80935,6 +81355,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_YERBA_LEAVES</Description>
@@ -81065,6 +81487,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HEMP</Description>
@@ -81195,6 +81619,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FLAX</Description>
@@ -81325,6 +81751,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_WHALE_BLUBBER</Description>
@@ -81455,6 +81883,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_VALUABLE_WOOD</Description>
@@ -81585,6 +82015,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COCOA</Description>
@@ -81715,6 +82147,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COFFEE</Description>
@@ -81845,6 +82279,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROASTED_PEANUTS</Description>
@@ -81975,6 +82411,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CHEESE</Description>
@@ -82105,6 +82543,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SALT</Description>
@@ -82235,6 +82675,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SPICES</Description>
@@ -82365,6 +82807,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_VANILLA</Description>
@@ -82495,6 +82939,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CHOCOLATE</Description>
@@ -82625,6 +83071,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_WOOL_CLOTH</Description>
@@ -82755,6 +83203,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CLOTH</Description>
@@ -82885,6 +83335,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COLOURED_CLOTH</Description>
@@ -83015,6 +83467,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FESTIVE_CLOTHES</Description>
@@ -83145,6 +83599,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH</Description>
@@ -83275,6 +83731,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_EVERYDAY_CLOTHES</Description>
@@ -83405,6 +83863,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PIG_LEATHER</Description>
@@ -83535,6 +83995,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_LEATHER</Description>
@@ -83665,6 +84127,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GOAT_HIDE_BOOTS</Description>
@@ -83795,6 +84259,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PADDED_LEATHER_COATS</Description>
@@ -83925,6 +84391,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COATS</Description>
@@ -84055,6 +84523,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PREMIUM_COATS</Description>
@@ -84185,6 +84655,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BEER</Description>
@@ -84315,6 +84787,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_RUM</Description>
@@ -84445,6 +84919,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HOOCH</Description>
@@ -84575,6 +85051,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_WINE</Description>
@@ -84705,6 +85183,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_OLIVE_OIL</Description>
@@ -84835,6 +85315,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_RAPE_OIL</Description>
@@ -84965,6 +85447,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CIGARS</Description>
@@ -85095,6 +85579,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_YERBA_TEA</Description>
@@ -85225,6 +85711,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROPE</Description>
@@ -85355,6 +85843,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SAILCLOTH</Description>
@@ -85485,6 +85975,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_WHALE_OIL</Description>
@@ -85615,6 +86107,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_POTTERY</Description>
@@ -85745,6 +86239,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FURNITURE</Description>
@@ -85875,6 +86371,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PADDED_FURNITURE</Description>
@@ -86005,6 +86503,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_TOOLS</Description>
@@ -86135,6 +86635,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BLADES</Description>
@@ -86265,6 +86767,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_MUSKETS</Description>
@@ -86395,6 +86899,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CANNONS</Description>
@@ -86525,6 +87031,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BLACK_POWDER</Description>
@@ -86655,6 +87163,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SHEEP</Description>
@@ -86785,6 +87295,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GOATS</Description>
@@ -86915,6 +87427,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_PIGS</Description>
@@ -87045,6 +87559,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CATTLE</Description>
@@ -87175,6 +87691,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CHICKEN</Description>
@@ -87305,6 +87823,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GEESE</Description>
@@ -87435,6 +87955,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HORSES</Description>
@@ -87565,6 +88087,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BAKERY_GOODS</Description>
@@ -87695,6 +88219,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_FIELD_WORKER_TOOLS</Description>
@@ -87825,6 +88351,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HOUSEHOLD_GOODS</Description>
@@ -87955,6 +88483,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_LUXURY_GOODS</Description>
@@ -88085,6 +88615,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_YIELD</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_TRADE_GOODS</Description>
@@ -88215,6 +88747,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_TREASURE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_TREASURE</Description>
@@ -88351,6 +88885,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_ANIMAL_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HUMPBACK_WHALE</Description>
@@ -88516,6 +89052,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_ANIMAL_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_KRAKEN</Description>
@@ -88681,6 +89219,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_ANIMAL_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ORCA</Description>
@@ -88846,6 +89386,8 @@
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_ANIMAL_SEA</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GREATWHITE</Description>
@@ -89011,6 +89553,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ALLIGATOR</Description>
@@ -89154,6 +89698,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_JAGUAR</Description>
@@ -89297,6 +89843,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_LYNX</Description>
@@ -89440,6 +89988,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COUGAR</Description>
@@ -89587,6 +90137,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_WOLF</Description>
@@ -89734,6 +90286,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GRIZZLY</Description>
@@ -89877,6 +90431,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BEAR_POLAR</Description>
@@ -90024,6 +90580,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_ANIMAL</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
+            <eEthnicity>NO_ETHNICITY</eEthnicity>
+            <eCitizenStatus>NO_CITIZEN_STATUS</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BEAR_BLACK</Description>
