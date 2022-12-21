@@ -836,7 +836,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HIGHWAYMAN_ATTACK</Tag>
-        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] stagecoach was attacked by highwaymen but the brave passengers defended it.</English>
+        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] stagecoach was attacked by highwaymen but brave passengers defended it.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Kutsche wurde von Straßenräubern angegriffen aber die mutigen Passagiere haben sie verteidigt.</German>
     </TEXT>
     <TEXT>
@@ -851,27 +851,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_HELP</Tag>
-        <English>Highwaymen attack the stagecoach. Some brave passengers defend it.</English>
+        <English>Highwaymen attack the stagecoach. Brave passengers defend it.</English>
         <German>Straßenräuber greifen die Kutsche an. Ein paar mutige Passagiere verteidigen sie.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MILKMAID_IN_NEED</Tag>
-        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] milkmaid is forced to marry her uncle. She asks the governor for help.</English>
+        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] milkmaid is being forced to marry her uncle. She asks the governor for help.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Milchmaid soll gezwungen werden ihren Onkel zu heiraten. Sie erbittet Hilfe vom Gouverneur.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MILKMAID_IN_NEED_1</Tag>
-        <English>After the death of her father a milkmaid is being forced by her uncle to marry her against her will so he can inherit the cattle farm. She has come to the city to plead for help and intervention by the law. But if we do, we will turn her uncle and the rest of this greedy family against us.</English>
+        <English>After the death of her father a milkmaid is being forced to marry her uncle against her will so he can inherit the cattle farm. She has come to the city to plead for help, hoping that the law will intervene. We can support her but, if we do, we will turn her uncle and the rest of this greedy family against us.</English>
         <German>Nach dem Tod ihres Vaters wird eine junge Milchmaid durch Ihren Onkel gezwungen ihn gegen ihren Willen zu heiraten. Sie ist in die Stadt gekommen und bittet um Hilfe und rechtliche Unterstützung. Wenn wir ihr helfen, werden wir jedoch ihren Onkel und den Rest dieser gierigen Familie gegen uns wenden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_1</Tag>
-        <English>Of course we will protect that poor young girl! We are not afraid of a few hillbillies!</English>
+        <English>Of course we will protect that poor young girl! We're not afraid of a few hillbillies!</English>
         <German>Wir werden dem jungen Mädchen natürlich helfen! Wir fürchten uns nicht vor ein paar Hinterwäldlern!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_2</Tag>
-        <English>This is family business that we have no right to get involved with.</English>
+        <English>This is family business. We have no right to get involved.</English>
         <German>Wir sollten uns nicht in diese Familienangelegenheit einmischen.</German>
     </TEXT>
     <TEXT>
@@ -881,32 +881,32 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HERDER_IN_NEED</Tag>
-        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] pig pen and its owner are attacked by wolfes.</English>
+        <English>There's a rumour that a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] pigpen is being attacked by wolves.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Schweinestall und sein Besitzer werden von Wölfen angegriffen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HERDER_IN_NEED_1</Tag>
-        <English>A pig breeder has sent his young son to the city to call for help. Wolfes are attacking the pen and the breeder is desperately trying to protect the animals. We pleads us to send help.</English>
+        <English>A pig breeder has sent his young son to the city to beg for help. Wolves are attacking the pigpen and the farmer is desperately trying to protect the animals. He pleads for our help.</English>
         <German>Ein Schweinezüchter hat seinen kleinen Sohn in die Stadt geschickt um Hilfe zu holen. Wölfe greifen den Stall an und der Züchter versucht verzweifelt seine Tiere zu beschützen. Er bitte uns um Hilfe.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HERDER_IN_NEED_1</Tag>
-        <English>We will send help as fast as possible! But he must hold on a bit longer!</English>
+        <English>We will send help as fast as possible! He must hold on just a little longer!</English>
         <German>Wir werden versuchen so schnell wie möglich Hilfe zu schicken! Aber er muss noch etwas durchhalten!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HERDER_IN_NEED_HELP</Tag>
-        <English>Wolfs attack the pen.</English>
+        <English>Wolves attack the pigpen.</English>
         <German>Wölfe greifen den Stall an.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FERRY_STATION_ROBBERS</Tag>
-        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ferry station is attacked by ferry robbers.</English>
+        <English>There's a rumour that the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ferry station is being attacked by robbers.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Fährstation wird von Fährräubern angegriffen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FERRY_STATION_ROBBERS_1</Tag>
-        <English>Mylord, a citizen has recognized a few troublesome looking men riding through the city to be wanted ferry robbers. They were riding in the direction of the local ferry station and they were heavily armed. If we ride now we may still catch them and prevent worse.</English>
+        <English>Milord, a citizen has recognized a few rough-looking men riding through the city. They're wanted for ferry robbery,  they're heavily armed and they're heading toward the local ferry station. If we ride now we just might have time to catch them and prevent another crime.</English>
         <German>Mylord, ein Ortsansässiger hat einge nach Ärger aussehende Männer, die durch die Stadt ritten, als gesuchte Fährräuber erkannt. Sie ritten in Richtung der örtlichen Fährstation und waren schwer bewaffnet. Wenn wir jetzt losreiten könnten wir sie noch einholen und schlimmeres verhindern.</German>
     </TEXT>
     <TEXT>
@@ -926,27 +926,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_AND_PLANATION_OWNER_DAUGHTER</Tag>
-        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] daughter of a plantation owner fell in love with a slave.</English>
+        <English>A rumour is spreading that the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] daughter of a plantation owner fell in love with a slave.</English>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Tocher eines Plantagenbesitzers hat sich in einen Sklaven verliebt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1</Tag>
-        <English>Mylord, this is a bad situation. The daugher of one of the richest planation owners in this region fell in love with a slave and helped him to escape after her father found out about the relationship and threatened to kill the slave. The slave now sits in the waiting room and pleads us to help. The plantation owner and father has gathered armed men and now tries to enter the building to lynch the poor slave.</English>
+        <English>Milord, we have a bad situation. The daughter of one of the richest plantation owners in this region fell in love with a slave. When her father found out about the relationship and tried to kill the slave, she helped her lover to escape.[NEWLINE]The slave now sits in our waiting room. He pleads for our help. Out that window you can see the plantation owner with his armed men trying to get in here to lynch this poor slave.</English>
         <German>Mylord, wir sind in einer schlimmen situation. Die Tochter eines der reichsten Plantagenbesitzer der Region hat sich in einen Sklaven verliebt und diesem zur Flucht verholfen, nachdem ihr Vater von der Beziehung erfahren hat und drohte den Sklaven zu töten. Der Sklave sitzt nun im Vorraum und bittet um Hilfe. Der Plantagenbesitzer und Vater hat jedoch bewaffnete Männer versammelt und versucht das Gebäude gewaltsam zu betreten um den Sklaven zu lynchen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1</Tag>
-        <English>We will not allow lynch justice in this city! The slave is under our protection!</English>
+        <English>We will not allow mob justice in this city! The slave is under our protection!</English>
         <German>Wir werden keine Lynchjustiz in dieser Stadt erlauben! Der Sklave steht unter unserem Schutz!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_2</Tag>
-        <English>Let us solve this peacefully! We will pay the plantage owner a very generous amount to buy the slave. This should hopefully calm him down again. The slave and the daugher shall never meet again.</English>
+        <English>Let us solve this peacefully! We will pay the plantation owner a good price for the slave. We can only hope this will calm him down. The slave and the daughter shall never meet again.</English>
         <German>Lasst uns dies friedlich regeln und dem Plantagenbesitzer eine so großzügige Summe zukommen um den Skalven freizukaufen, sodass er sich wieder beruhigt! Der Sklave und die Tochter sollen sich nie wieder treffen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_3</Tag>
-        <English>Hand out the slave to the father so he can take justice! This slave has gone way too far by laying his hands on that young girl and twisting her young mind.</English>
+        <English>Justice demands we hand over the slave to the father! No slave should lay hands on an innocent girl and twist her young mind.</English>
         <German>Händigt den Sklaven dem Vater aus, damit er Gerechtigkeit nehmen kann! Dieser Sklave ist deutlich zuweit gegangen als er seine Hände an das junge Mädchen legte und ihr den Kopf verdrehte.</German>
     </TEXT>
     <TEXT>
