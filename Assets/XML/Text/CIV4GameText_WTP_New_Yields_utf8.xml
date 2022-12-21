@@ -9,6 +9,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOATS</Tag>
         <English>Goats</English>
+        <French>Chèvres</French>
         <German>
             <Text>Ziegen</Text>
             <Gender>Female</Gender>
@@ -18,6 +19,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_GOATS</Tag>
         <English>Goats</English>
+        <French>Chèvres</French>
         <German>
             <Text>Ziegen</Text>
             <Gender>Female</Gender>
@@ -27,6 +29,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOATS</Tag>
         <English>Goats</English>
+        <French>Chèvres</French>
         <German>
             <Text>Ziegen</Text>
             <Gender>Female</Gender>
@@ -50,6 +53,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIGS</Tag>
         <English>Pigs</English>
+        <French>Porcs</French>
         <German>
             <Text>Schweine</Text>
             <Gender>Neuter</Gender>
@@ -59,6 +63,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIGS</Tag>
         <English>Pigs</English>
+        <French>Porcs</French>
         <German>
             <Text>Schweine</Text>
             <Gender>Neuter</Gender>
@@ -68,6 +73,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIGS</Tag>
         <English>Pigs</English>
+        <French>Porcs</French>
         <German>
             <Text>Schweine</Text>
             <Gender>Neuter</Gender>
@@ -91,6 +97,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHICKEN</Tag>
         <English>Chicken</English>
+        <French>Poules</French>
         <German>
             <Text>Hühner</Text>
             <Gender>Neuter</Gender>
@@ -100,6 +107,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHICKEN</Tag>
         <English>Chicken</English>
+        <French>Poules</French>
         <German>
             <Text>Hühner</Text>
             <Gender>Neuter</Gender>
@@ -109,6 +117,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHICKEN</Tag>
         <English>Chicken</English>
+        <French>Poules</French>
         <German>
             <Text>Hühner</Text>
             <Gender>Neuter</Gender>
@@ -132,6 +141,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_GEESE</Tag>
         <English>Domestic Geese</English>
+        <French>Oies</French>
         <German>
             <Text>Hausgänse</Text>
             <Gender>Female</Gender>
@@ -141,6 +151,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_GEESE</Tag>
         <English>Domestic Geese</English>
+        <French>Oies</French>
         <German>
             <Text>Hausgänse</Text>
             <Gender>Female</Gender>
@@ -150,6 +161,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_GEESE</Tag>
         <English>Domestic Geese</English>
+        <French>Oies</French>
         <German>
             <Text>Hausgänse</Text>
             <Gender>Female</Gender>
@@ -173,6 +185,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOAT_HIDES</Tag>
         <English>Goat Hides</English>
+        <French>Peaux de chèvres</French>
         <German>
             <Text>Ziegenfelle</Text>
             <Gender>Neuter</Gender>
@@ -182,6 +195,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_GOAT_HIDES</Tag>
         <English>Goat Hides</English>
+        <French>Peaux de chèvres</French>
         <German>
             <Text>Ziegenfelle</Text>
             <Gender>Neuter</Gender>
@@ -191,6 +205,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOAT_HIDES</Tag>
         <English>Goat Hides</English>
+        <French>Peaux de chèvres</French>
         <German>
             <Text>Ziegenfelle</Text>
             <Gender>Neuter</Gender>
@@ -214,6 +229,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_SKIN</Tag>
         <English>Pig Skins</English>
+        <French>Peaux de porcs</French>
         <German>
             <Text>Schweinehäute</Text>
             <Gender>Female</Gender>
@@ -223,6 +239,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIG_SKIN</Tag>
         <English>Pig Skins</English>
+        <French>Peaux de porcs</French>
         <German>
             <Text>Schweinehäute</Text>
             <Gender>Female</Gender>
@@ -232,6 +249,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIG_SKIN</Tag>
         <English>Pig Skins</English>
+        <French>Peaux de porcs</French>
         <German>
             <Text>Schweinehäute</Text>
             <Gender>Female</Gender>
@@ -255,6 +273,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_DOWNS</Tag>
         <English>Downs</English>
+        <French>Duvet</French>
         <German>
             <Text>Daunen</Text>
             <Gender>Female</Gender>
@@ -264,6 +283,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_DOWNS</Tag>
         <English>Downs</English>
+        <French>Duvet</French>
         <German>
             <Text>Daunen</Text>
             <Gender>Female</Gender>
@@ -273,6 +293,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_DOWNS</Tag>
         <English>Downs</English>
+        <French>Duvet</French>
         <German>
             <Text>Daunen</Text>
             <Gender>Female</Gender>
@@ -296,6 +317,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_WILD_FEATHERS</Tag>
         <English>Wild Bird Feathers</English>
+        <French>Plumes</French>
         <German>
             <Text>Wildvogelfedern</Text>
             <Gender>Female</Gender>
@@ -305,6 +327,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_WILD_FEATHERS</Tag>
         <English>Wildbird Feathers</English>
+        <French>Plumes</French>
         <German>
             <Text>Wildvogelfedern</Text>
             <Gender>Female</Gender>
@@ -314,6 +337,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_WILD_FEATHERS</Tag>
         <English>Wildbird Feathers</English>
+        <French>Plumes</French>
         <German>
             <Text>Wildvogelfedern</Text>
             <Gender>Female</Gender>
@@ -337,6 +361,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOAT_HIDE_BOOTS</Tag>
         <English>Goathide Boots</English>
+        <French>Bottes en peau de chèvre</French>
         <German>
             <Text>Ziegenlederstiefel</Text>
             <Gender>Male</Gender>
@@ -346,6 +371,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_GOAT_HIDE_BOOTS</Tag>
         <English>Goathide Boots</English>
+        <French>Bottes en peau de chèvre</French>
         <German>
             <Text>Ziegenlederstiefel</Text>
             <Gender>Male</Gender>
@@ -355,6 +381,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_GOAT_HIDE_BOOTS</Tag>
         <English>Goathide Boots</English>
+        <French>Bottes en peau de chèvre</French>
         <German>
             <Text>Ziegenlederstiefel</Text>
             <Gender>Male</Gender>
@@ -378,6 +405,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_LEATHER</Tag>
         <English>Pigleather Aprons</English>
+        <French>Tabliers en peau de porc</French>
         <German>
             <Text>Schweinelederschürzen</Text>
             <Gender>Male</Gender>
@@ -387,6 +415,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIG_LEATHER</Tag>
         <English>Pigleather Aprons</English>
+        <French>Tabliers en peau de porc</French>
         <German>
             <Text>Schweinelederschürzen</Text>
             <Gender>Male</Gender>
@@ -396,6 +425,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIG_LEATHER</Tag>
         <English>Pigleather Aprons</English>
+        <French>Tabliers en peau de porc</French>
         <German>
             <Text>Schweinelederschürzen</Text>
             <Gender>Male</Gender>
@@ -419,6 +449,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_FRUITS</Tag>
         <English>Fruits</English>
+        <French>Fruits</French>
         <German>
             <Text>Früchte</Text>
             <Gender>Female</Gender>
@@ -428,6 +459,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_FRUITS</Tag>
         <English>Fruits</English>
+        <French>Fruits</French>
         <German>
             <Text>Früchte</Text>
             <Gender>Female</Gender>
@@ -437,6 +469,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS</Tag>
         <English>Fruits</English>
+        <French>Fruits</French>
         <German>
             <Text>Früchte</Text>
             <Gender>Female</Gender>
@@ -460,6 +493,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_HOOCH</Tag>
         <English>Hooch</English>
+        <French>Schnaps</French>
         <German>
             <Text>Schnapps</Text>
             <Gender>Male</Gender>
@@ -469,6 +503,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_HOOCH</Tag>
         <English>Hooch</English>
+        <French>Schnaps</French>
         <German>
             <Text>Schnapps</Text>
             <Gender>Male</Gender>
@@ -478,6 +513,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOOCH</Tag>
         <English>Hooch</English>
+        <French>Schnaps</French>
         <German>
             <Text>Schnapps</Text>
             <Gender>Male</Gender>
@@ -501,6 +537,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_FLAX</Tag>
         <English>Flax</English>
+        <French>Lin</French>
         <German>
             <Text>Flachs</Text>
             <Gender>Male</Gender>
@@ -510,6 +547,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_FLAX</Tag>
         <English>Flax</English>
+        <French>Lin</French>
         <German>
             <Text>Flachs</Text>
             <Gender>Male</Gender>
@@ -519,6 +557,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_FLAX</Tag>
         <English>Flax</English>
+        <French>Lin</French>
         <German>
             <Text>Flachs</Text>
             <Gender>Male</Gender>
@@ -542,6 +581,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_PADDED_FURNITURE</Tag>
         <English>Padded Furniture</English>
+        <French>Meubles capitonnés</French>
         <German>
             <Text>Gepolsterte Möbel</Text>
             <Gender>Neuter</Gender>
@@ -551,6 +591,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PADDED_FURNITURE</Tag>
         <English>Padded Furniture</English>
+        <French>Meubles capitonnés</French>
         <German>
             <Text>Gepolsterte Möbel</Text>
             <Gender>Neuter</Gender>
@@ -560,6 +601,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_PADDED_FURNITURE</Tag>
         <English>Padded Furniture</English>
+        <French>Meubles capitonnés</French>
         <German>
             <Text>Gepolsterte Möbel</Text>
             <Gender>Neuter</Gender>
@@ -583,6 +625,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_HARDWOOD</Tag>
         <English>Hardwood</English>
+        <French>Bois dur</French>
         <German>
             <Text>Hartholz</Text>
             <Gender>Neuter</Gender>
@@ -592,6 +635,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_HARDWOOD</Tag>
         <English>Hardwood</English>
+        <French>Bois dur</French>
         <German>
             <Text>Hartholz</Text>
             <Gender>Neuter</Gender>
@@ -601,6 +645,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_HARDWOOD</Tag>
         <English>Hardwood</English>
+        <French>Bois dur</French>
         <German>
             <Text>Hartholz</Text>
             <Gender>Neuter</Gender>
@@ -624,6 +669,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_MAPLE_SIRUP</Tag>
         <English>Maple Sirup</English>
+        <French>Sirop d'érable</French>
         <German>
             <Text>Ahornsaft</Text>
             <Gender>Male</Gender>
@@ -633,6 +679,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_MAPLE_SIRUP</Tag>
         <English>Maple Sirup</English>
+        <French>Sirop d'érable</French>
         <German>
             <Text>Ahornsaft</Text>
             <Gender>Male</Gender>
@@ -642,6 +689,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP</Tag>
         <English>Maple Sirup</English>
+        <French>Sirop d'érable</French>
         <German>
             <Text>Ahornsaft</Text>
             <Gender>Male</Gender>
@@ -665,6 +713,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_YERBA_LEAVES</Tag>
         <English>Yerba Leaves</English>
+        <French>Feuilles de yerba maté</French>
         <German>
             <Text>Yerbablätter</Text>
             <Gender>Neuter</Gender>
@@ -674,6 +723,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_YERBA_LEAVES</Tag>
         <English>Yerba Leaves</English>
+        <French>Feuilles de yerba maté</French>
         <German>
             <Text>Yerbablätter</Text>
             <Gender>Neuter</Gender>
@@ -683,6 +733,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_LEAVES</Tag>
         <English>Yerba Leaves</English>
+        <French>Feuilles de yerba maté</French>
         <German>
             <Text>Yerbablätter</Text>
             <Gender>Neuter</Gender>
@@ -706,6 +757,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_LOGWOOD</Tag>
         <English>Logwood</English>
+        <French>Bois de Campêche</French>
         <German>
             <Text>Färbholz</Text>
             <Gender>Neuter</Gender>
@@ -715,6 +767,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_LOGWOOD</Tag>
         <English>Logwood</English>
+        <French>Bois de Campêche</French>
         <German>
             <Text>Färbholz</Text>
             <Gender>Neuter</Gender>
@@ -724,6 +777,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD</Tag>
         <English>Logwood</English>
+        <French>Bois de Campêche</French>
         <German>
             <Text>Färbholz</Text>
             <Gender>Neuter</Gender>
@@ -747,6 +801,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_YERBA_TEA</Tag>
         <English>Yerba Tea</English>
+        <French>Maté</French>
         <German>
             <Text>Yerbatee</Text>
             <Gender>Male</Gender>
@@ -756,6 +811,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_YERBA_TEA</Tag>
         <English>Yerba Tea</English>
+        <French>Maté</French>
         <German>
             <Text>Yerbatee</Text>
             <Gender>Male</Gender>
@@ -765,6 +821,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TEA</Tag>
         <English>Yerba Tea</English>
+        <French>Maté</French>
         <German>
             <Text>Yerbatee</Text>
             <Gender>Male</Gender>
@@ -788,6 +845,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_COLOURED_WOOL_CLOTH</Tag>
         <English>Coloured Wool Cloth</English>
+        <French>Laine teinte</French>
         <German>
             <Text>Gefärbter Wollstoff</Text>
             <Gender>Male</Gender>
@@ -797,6 +855,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_COLOURED_WOOL_CLOTH</Tag>
         <English>Coloured Wool Cloth</English>
+        <French>Laine teinte</French>
         <German>
             <Text>Gefärbter Wollstoff</Text>
             <Gender>Male</Gender>
@@ -806,6 +865,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_COLOURED_WOOL_CLOTH</Tag>
         <English>Coloured Wool Cloth</English>
+        <French>Laine teinte</French>
         <German>
             <Text>Gefärbter Wollstoff</Text>
             <Gender>Male</Gender>
@@ -829,6 +889,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_CLAY</Tag>
         <English>Clay</English>
+        <French>Argile</French>
         <German>
             <Text>Lehm</Text>
             <Gender>Male</Gender>
@@ -838,6 +899,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_CLAY</Tag>
         <English>Clay</English>
+        <French>Argile</French>
         <German>
             <Text>Lehm</Text>
             <Gender>Male</Gender>
@@ -847,6 +909,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CLAY</Tag>
         <English>Clay</English>
+        <French>Argile</French>
         <German>
             <Text>Lehm</Text>
             <Gender>Male</Gender>
@@ -870,6 +933,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_COAL</Tag>
         <English>Coal</English>
+        <French>Houille</French>
         <German>
             <Text>Kohle</Text>
             <Gender>Female</Gender>
@@ -879,6 +943,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COAL</Tag>
         <English>Coal</English>
+        <French>Houille</French>
         <German>
             <Text>Kohle</Text>
             <Gender>Female</Gender>
@@ -888,6 +953,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_COAL</Tag>
         <English>Coal</English>
+        <French>Houille</French>
         <German>
             <Text>Kohle</Text>
             <Gender>Female</Gender>
@@ -911,6 +977,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHAR_COAL</Tag>
         <English>Charcoal</English>
+        <French>Charbon de bois</French>
         <German>
             <Text>Holzkohle</Text>
             <Gender>Female</Gender>
@@ -920,6 +987,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHAR_COAL</Tag>
         <English>Charcoal</English>
+        <French>Charbon de bois</French>
         <German>
             <Text>Holzkohle</Text>
             <Gender>Female</Gender>
@@ -929,6 +997,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHAR_COAL</Tag>
         <English>Charcoal</English>
+        <French>Charbon de bois</French>
         <German>
             <Text>Holzkohle</Text>
             <Gender>Female</Gender>
@@ -952,6 +1021,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_BLACK_POWDER</Tag>
         <English>Blackpowder</English>
+        <French>Poudre à canon</French>
         <German>
             <Text>Schwarzpulver</Text>
             <Gender>Neuter</Gender>
@@ -961,6 +1031,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BLACK_POWDER</Tag>
         <English>Blackpowder</English>
+        <French>Poudre à canon</French>
         <German>
             <Text>Schwarzpulver</Text>
             <Gender>Neuter</Gender>
@@ -970,6 +1041,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_BLACK_POWDER</Tag>
         <English>Blackpowder</English>
+        <French>Poudre à canon</French>
         <German>
             <Text>Schwarzpulver</Text>
             <Gender>Neuter</Gender>
@@ -993,6 +1065,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_BAKERY_GOODS</Tag>
         <English>Bakery Products</English>
+        <French>Produits de boulangerie</French>
         <German>
             <Text>Backwaren</Text>
             <Gender>Female</Gender>
@@ -1002,6 +1075,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BAKERY_GOODS</Tag>
         <English>Bakery Products</English>
+        <French>Produits de boulangerie</French>
         <German>
             <Text>Backwaren</Text>
             <Gender>Female</Gender>
@@ -1011,6 +1085,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_BAKERY_GOODS</Tag>
         <English>Bakery Products</English>
+        <French>Produits de boulangerie</French>
         <German>
             <Text>Backwaren</Text>
             <Gender>Female</Gender>
@@ -1034,6 +1109,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_VANILLA</Tag>
         <English>Vanilla</English>
+        <French>Vanille</French>
         <German>
             <Text>Vanille</Text>
             <Gender>Female</Gender>
@@ -1043,6 +1119,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_VANILLA</Tag>
         <English>Vanilla</English>
+        <French>Vanille</French>
         <German>
             <Text>Vanille</Text>
             <Gender>Female</Gender>
@@ -1052,6 +1129,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA</Tag>
         <English>Vanilla</English>
+        <French>Vanille</French>
         <German>
             <Text>Vanille</Text>
             <Gender>Female</Gender>
@@ -1075,6 +1153,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_VANILLA_PODS</Tag>
         <English>Green Vanilla Pods</English>
+        <French>Gousses de vanille vertes</French>
         <German>
             <Text>Grüne Vanilleschote</Text>
             <Gender>Female</Gender>
@@ -1084,6 +1163,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_VANILLA_PODS</Tag>
         <English>Green Vanilla Pods</English>
+        <French>Gousses de vanille vertes</French>
         <German>
             <Text>Grüne Vanilleschote</Text>
             <Gender>Female</Gender>
@@ -1093,6 +1173,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_PODS</Tag>
         <English>Green Vanilla Pods</English>
+        <French>Gousses de vanille vertes</French>
         <German>
             <Text>Grüne Vanilleschote</Text>
             <Gender>Female</Gender>
@@ -1116,6 +1197,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_PEAT</Tag>
         <English>Peat</English>
+        <French>Tourbe</French>
         <German>
             <Text>Torf</Text>
             <Gender>Male</Gender>
@@ -1125,6 +1207,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PEAT</Tag>
         <English>Peat</English>
+        <French>Tourbe</French>
         <German>
             <Text>Torf</Text>
             <Gender>Male</Gender>
@@ -1134,6 +1217,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT</Tag>
         <English>Peat</English>
+        <French>Tourbe</French>
         <German>
             <Text>Torf</Text>
             <Gender>Male</Gender>
@@ -1157,6 +1241,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_PEANUTS</Tag>
         <English>Peanuts</English>
+        <French>Arachides</French>
         <German>
             <Text>Erdnüsse</Text>
             <Gender>Female</Gender>
@@ -1166,6 +1251,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PEANUTS</Tag>
         <English>Peanuts</English>
+        <French>Arachides</French>
         <German>
             <Text>Erdnüsse</Text>
             <Gender>Female</Gender>
@@ -1175,6 +1261,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUTS</Tag>
         <English>Peanuts</English>
+        <French>Arachides</French>
         <German>
             <Text>Erdnüsse</Text>
             <Gender>Female</Gender>
@@ -1198,6 +1285,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_ROASTED_PEANUTS</Tag>
         <English>Roasted Peanuts</English>
+        <French>Cacahuètes grillées</French>
         <German>
             <Text>Geröstete Erdnüsse</Text>
             <Gender>Female</Gender>
@@ -1207,6 +1295,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROASTED_PEANUTS</Tag>
         <English>Roasted Peanuts</English>
+        <French>Cacahuètes grillées</French>
         <German>
             <Text>Geröstete Erdnüsse</Text>
             <Gender>Female</Gender>
@@ -1216,6 +1305,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROASTED_PEANUTS</Tag>
         <English>Roasted Peanuts</English>
+        <French>Cacahuètes grillées</French>
         <German>
             <Text>Geröstete Erdnüsse</Text>
             <Gender>Female</Gender>
@@ -1239,6 +1329,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_OLIVES</Tag>
         <English>Olives</English>
+        <French>Olives</French>
         <German>
             <Text>Oliven</Text>
             <Gender>Female</Gender>
@@ -1248,6 +1339,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_OLIVES</Tag>
         <English>Olives</English>
+        <French>Olives</French>
         <German>
             <Text>Oliven</Text>
             <Gender>Female</Gender>
@@ -1257,6 +1349,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVES</Tag>
         <English>Olives</English>
+        <French>Olives</French>
         <German>
             <Text>Oliven</Text>
             <Gender>Female</Gender>
@@ -1280,6 +1373,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_RAPE</Tag>
         <English>Rapeseed</English>
+        <French>Colza</French>
         <German>
             <Text>Raps</Text>
             <Gender>Male</Gender>
@@ -1289,6 +1383,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_RAPE</Tag>
         <English>Rapeseed</English>
+        <French>Colza</French>
         <German>
             <Text>Raps</Text>
             <Gender>Male</Gender>
@@ -1298,6 +1393,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE</Tag>
         <English>Rapeseed</English>
+        <French>Colza</French>
         <German>
             <Text>Raps</Text>
             <Gender>Male</Gender>
@@ -1321,6 +1417,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_OLIVE_OIL</Tag>
         <English>Olive Oil</English>
+        <French>Huile d'olive</French>
         <German>
             <Text>Olivenöl</Text>
             <Gender>Neuter</Gender>
@@ -1330,6 +1427,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_OLIVE_OIL</Tag>
         <English>Olive Oil</English>
+        <French>Huile d'olive</French>
         <German>
             <Text>Olivenöl</Text>
             <Gender>Neuter</Gender>
@@ -1339,6 +1437,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVE_OIL</Tag>
         <English>Olive Oil</English>
+        <French>Huile d'olive</French>
         <German>
             <Text>Olivenöl</Text>
             <Gender>Neuter</Gender>
@@ -1362,6 +1461,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_RAPE_OIL</Tag>
         <English>Rape Oil</English>
+        <French>Huile de colza</French>
         <German>
             <Text>Rapsöl</Text>
             <Gender>Neuter</Gender>
@@ -1371,6 +1471,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_RAPE_OIL</Tag>
         <English>Rape Oil</English>
+        <French>Huile de colza</French>
         <German>
             <Text>Rapsöl</Text>
             <Gender>Neuter</Gender>
@@ -1380,6 +1481,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_OIL</Tag>
         <English>Rape Oil</English>
+        <French>Huile de colza</French>
         <German>
             <Text>Rapsöl</Text>
             <Gender>Neuter</Gender>
@@ -1403,6 +1505,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_HOUSEHOLD_GOODS</Tag>
         <English>Household Goods</English>
+        <French>Articles ménagers</French>
         <German>
             <Text>Haushaltswaren</Text>
             <Gender>Female</Gender>
@@ -1412,6 +1515,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_HOUSEHOLD_GOODS</Tag>
         <English>Household Goods</English>
+        <French>Articles ménagers</French>
         <German>
             <Text>Haushaltswaren</Text>
             <Gender>Female</Gender>
@@ -1421,6 +1525,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_GOODS</Tag>
         <English>Household Goods</English>
+        <French>Articles ménagers</French>
         <German>
             <Text>Haushaltswaren</Text>
             <Gender>Female</Gender>
@@ -1444,6 +1549,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_FIELD_WORKER_TOOLS</Tag>
         <English>Fieldworker Tools</English>
+        <French>Outils agricoles</French>
         <German>
             <Text>Feldarbeiterwerkzeuge</Text>
             <Gender>Neuter</Gender>
@@ -1453,6 +1559,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_FIELD_WORKER_TOOLS</Tag>
         <English>Fieldworker Tools</English>
+        <French>Outils agricoles</French>
         <German>
             <Text>Feldarbeiterwerkzeuge</Text>
             <Gender>Neuter</Gender>
@@ -1462,6 +1569,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_FIELD_WORKER_TOOLS</Tag>
         <English>Fieldworker Tools</English>
+        <French>Outils agricoles</French>
         <German>
             <Text>Feldarbeiterwerkzeuge</Text>
             <Gender>Neuter</Gender>
@@ -1485,6 +1593,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_RICE</Tag>
         <English>Rice</English>
+        <French>Riz</French>
         <German>
             <Text>Reis</Text>
             <Gender>Male</Gender>
@@ -1494,6 +1603,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_RICE</Tag>
         <English>Rice</English>
+        <French>Riz</French>
         <German>
             <Text>Reis</Text>
             <Gender>Male</Gender>
@@ -1503,6 +1613,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_RICE</Tag>
         <English>Rice</English>
+        <French>Riz</French>
         <German>
             <Text>Reis</Text>
             <Gender>Male</Gender>
@@ -1526,6 +1637,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_CASSAVA</Tag>
         <English>Cassava</English>
+        <French>Manioc</French>
         <German>
             <Text>Cassava</Text>
             <Gender>Male</Gender>
@@ -1535,6 +1647,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_CASSAVA</Tag>
         <English>Cassava</English>
+        <French>Manioc</French>
         <German>
             <Text>Cassava</Text>
             <Gender>Male</Gender>
@@ -1544,6 +1657,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA</Tag>
         <English>Cassava</English>
+        <French>Manioc</French>
         <German>
             <Text>Cassava</Text>
             <Gender>Male</Gender>
@@ -1567,6 +1681,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_COCHINEAL</Tag>
         <English>Cochineal</English>
+        <French>Cochenille</French>
         <German>
             <Text>Cochineal</Text>
             <Gender>Neuter</Gender>
@@ -1576,6 +1691,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_COCHINEAL</Tag>
         <English>Cochineal</English>
+        <French>Cochenille</French>
         <German>
             <Text>Cochineal</Text>
             <Gender>Neuter</Gender>
@@ -1585,6 +1701,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL</Tag>
         <English>Cochineal</English>
+        <French>Cochenille</French>
         <German>
             <Text>Cochineal</Text>
             <Gender>Neuter</Gender>
@@ -1608,6 +1725,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHOCOLATE</Tag>
         <English>Chocolate</English>
+        <French>Chocolat</French>
         <German>
             <Text>Schokolade</Text>
             <Gender>Female</Gender>
@@ -1617,6 +1735,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHOCOLATE</Tag>
         <English>Chocolate</English>
+        <French>Chocolat</French>
         <German>
             <Text>Schokolade</Text>
             <Gender>Female</Gender>
@@ -1626,6 +1745,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHOCOLATE</Tag>
         <English>Chocolate</English>
+        <French>Chocolat</French>
         <German>
             <Text>Schokolade</Text>
             <Gender>Female</Gender>
@@ -1649,6 +1769,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_PADDED_LEATHER_COATS</Tag>
         <English>Padded Leather Coats</English>
+        <French>Manteaux en cuir matelassés</French>
         <German>
             <Text>Geplosterte Ledermäntel</Text>
             <Gender>Male</Gender>
@@ -1658,6 +1779,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PADDED_LEATHER_COATS</Tag>
         <English>Padded Leather Coats</English>
+        <French>Manteaux en cuir matelassés</French>
         <German>
             <Text>Geplosterte Ledermäntel</Text>
             <Gender>Male</Gender>
@@ -1667,6 +1789,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_PADDED_LEATHER_COATS</Tag>
         <English>Padded Leather Coats</English>
+        <French>Manteaux en cuir matelassés</French>
         <German>
             <Text>Geplosterte Ledermäntel</Text>
             <Gender>Male</Gender>
@@ -1690,6 +1813,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_MILK</Tag>
         <English>Milk</English>
+        <French>Lait</French>
         <German>
             <Text>Milch</Text>
             <Gender>Female</Gender>
@@ -1699,6 +1823,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_MILK</Tag>
         <English>Milk</English>
+        <French>Lait</French>
         <German>
             <Text>Milch</Text>
             <Gender>Female</Gender>
@@ -1708,6 +1833,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_MILK</Tag>
         <English>Milk</English>
+        <French>Lait</French>
         <German>
             <Text>Milch</Text>
             <Gender>Female</Gender>
@@ -1731,6 +1857,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_KAUTSCHUK</Tag>
         <English>Kautschuk</English>
+        <French>Caoutchouc</French>
         <German>
             <Text>Kautschuk</Text>
             <Gender>Male</Gender>
@@ -1740,6 +1867,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_KAUTSCHUK</Tag>
         <English>Kautschuk</English>
+        <French>Caoutchouc</French>
         <German>
             <Text>Kautschuk</Text>
             <Gender>Male</Gender>
@@ -1749,6 +1877,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK</Tag>
         <English>Kautschuk</English>
+        <French>Caoutchouc</French>
         <German>
             <Text>Kautschuk</Text>
             <Gender>Male</Gender>
@@ -1772,6 +1901,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHEESE</Tag>
         <English>Cheese</English>
+        <French>Fromage</French>
         <German>
             <Text>Käse</Text>
             <Gender>Male</Gender>
@@ -1781,6 +1911,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHEESE</Tag>
         <English>Cheese</English>
+        <French>Fromage</French>
         <German>
             <Text>Käse</Text>
             <Gender>Male</Gender>
@@ -1790,6 +1921,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHEESE</Tag>
         <English>Cheese</English>
+        <French>Fromage</French>
         <German>
             <Text>Käse</Text>
             <Gender>Male</Gender>
@@ -1813,6 +1945,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_POTTERY</Tag>
         <English>Pottery</English>
+        <French>Poteries</French>
         <German>
             <Text>Töpferwaren</Text>
             <Gender>Female</Gender>
@@ -1822,6 +1955,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_POTTERY</Tag>
         <English>Pottery</English>
+        <French>Poteries</French>
         <German>
             <Text>Töpferwaren</Text>
             <Gender>Female</Gender>
@@ -1831,6 +1965,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_POTTERY</Tag>
         <English>Pottery</English>
+        <French>Poteries</French>
         <German>
             <Text>Töpferwaren</Text>
             <Gender>Female</Gender>
@@ -1854,6 +1989,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_EVERYDAY_CLOTHES</Tag>
         <English>Everyday Clothes</English>
+        <French>Vêtements ordinaires</French>
         <German>
             <Text>Alltagskleidung</Text>
             <Gender>Female</Gender>
@@ -1863,6 +1999,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_EVERYDAY_CLOTHES</Tag>
         <English>Everyday Clothes</English>
+        <French>Vêtements ordinaires</French>
         <German>
             <Text>Alltagskleidung</Text>
             <Gender>Female</Gender>
@@ -1872,6 +2009,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_EVERYDAY_CLOTHES</Tag>
         <English>Everyday Clothes</English>
+        <French>Vêtements ordinaires</French>
         <German>
             <Text>Alltagskleidung</Text>
             <Gender>Female</Gender>
@@ -1895,6 +2033,7 @@
     <TEXT>
         <Tag>TXT_KEY_YIELD_FESTIVE_CLOTHES</Tag>
         <English>Festive Clothes</English>
+        <French>Vêtements festifs</French>
         <German>
             <Text>Festliche Kleidung</Text>
             <Gender>Female</Gender>
@@ -1904,6 +2043,7 @@
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_FESTIVE_CLOTHES</Tag>
         <English>Festive Clothes</English>
+        <French>Vêtements festifs</French>
         <German>
             <Text>Festliche Kleidung</Text>
             <Gender>Female</Gender>
@@ -1913,6 +2053,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_FESTIVE_CLOTHES</Tag>
         <English>Festive Clothes</English>
+        <French>Vêtements festifs</French>
         <German>
             <Text>Festliche Kleidung</Text>
             <Gender>Female</Gender>
