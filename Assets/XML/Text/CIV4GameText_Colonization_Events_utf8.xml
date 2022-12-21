@@ -956,12 +956,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WHALE_ATTACK</Tag>
-        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] whaling ship is attacked by a whale seeking revenge.</English>
+        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] whaling ship is being attacked by a whale seeking revenge.</English>
         <German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Walfangschiff wird von eime Rache suchenden Wal angegriffen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WHALE_ATTACK_1</Tag>
-        <English>This is very strange. Since days this giant whale is following our ship. It almost seems like he is waiting for a chance to attack us when we are not paying attention. Wait! What is this? It seems like he is indeed trying to ram us backbord!</English>
+        <English>It's very strange. For several days a giant whale has been following our ship. It's like he's waiting to attack us when we're not paying attention. Wait! What is this? He's  trying to ram us amidships!</English>
         <German>Das ist in der Tat seltsam. Seit Tagen verfolgt unser Schiff ein riesiger Wal. Es scheint fast so als warte er nur auf eine Gelgenheit um uns anzugreifen, wenn wir nicht aufmerksam sind. Wartet! Was ist das? Der Walf versucht uns tatsächlich auf Backbord zu rammen.</German>
     </TEXT>
     <TEXT>
