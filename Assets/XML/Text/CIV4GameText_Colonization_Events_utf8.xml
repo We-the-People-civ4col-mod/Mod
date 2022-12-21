@@ -1037,27 +1037,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PREACHER_AND_HARLOT_2</Tag>
-        <English>We must preserve peace in this village and prevent this to happen again. Let them burn the harlot!</English>
+        <English>We must preserve peace in this village and make sure this doesn't happen again. Let them burn the harlot!</English>
         <German>Wir müssen den Frieden in der Stadt bewahren und verhindern, dass soetwas noch einmal passiert. Lasst sie die Hure verbrennen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PREACHER_AND_HARLOT_1_HELP</Tag>
-        <English>The citizens will revolt due to your decision to protect the harlot.</English>
+        <English>The citizens revolt due to your decision to protect the harlot.</English>
         <German>Die Bürger werden aufgrund eurer Entscheidung die Hure zu beschützen revoltieren.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PREACHER_AND_HARLOT_2_HELP</Tag>
-        <English>The poor from the lower disctrict will be outraged that you condemn the harlot and revolt.</English>
+        <English>The poor from the lower district are outraged that you condemn the harlot. They revolt.</English>
         <German>Die Armen aus dem Unterviertel werden darpber aufgebracht sein, dass ihr die Hure verurteilt und revoltieren.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_HUNTER_OFFERS_SERVICE</Tag>
-        <English>A rumour is spreading: Escaped slaves near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</English>
+        <English>A rumour is spreading: There are escaped slaves near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</English>
         <German>Ein Gerücht macht die Runde: Entflohene Sklaven in der Nähe von [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_HUNTER_OFFERS_SERVICE_1</Tag>
-        <English>Mylord, a slave hunter has heard that escaped slaves were sighted near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT]. He offers us his services.</English>
+        <English>Milord, a slave hunter has heard that escaped slaves were sighted near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT]. He offers us his services.</English>
         <German>Mylord, ein Sklavenjäger hat gehört, dass entflohene Sklaven in der Nähen von [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] gesichtet wurden. Er bietet uns seine Dienste an.</German>
     </TEXT>
     <TEXT>
