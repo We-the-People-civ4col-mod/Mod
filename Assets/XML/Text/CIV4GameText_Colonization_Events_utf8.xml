@@ -966,12 +966,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WHALE_ATTACK_1</Tag>
-        <English>All men to the harpoons! We are a whaling ship! We hunt whales not the other way around!</English>
+        <English>All men, grab your harpoons! We are a whaling ship! We hunt whales, not the other way around!</English>
         <German>Alle Mann an die Harpunen! Wir sind ein Walfangschiff! Wir jagen die Wale und nicht anders herum!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WHALE_ATTACK_HELP</Tag>
-        <English>A humpback whale will attack.</English>
+        <English>The humpback whale attacks.</English>
         <German>Ein Buckelwal greift an.</German>
     </TEXT>
     <TEXT>
@@ -981,7 +981,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CRIMINALS_BLACKMAIL_CITY_1</Tag>
-        <English>Mylord, some criminals have broken into our armory and stolen weapons. They claim that they are just empoverished citizens that cannot even afford to buy food anymore. They demand to be given food and a bit of money. They promise to then lay down their weapons. Otherwise they threaten to attack the citizens.</English>
+        <English>Milord, some criminals have broken into our armoury and stolen weapons. They claim that they're just impoverished citizens who can't even afford food. They demand to be given food and money, just a little. They promise to then lay down their weapons. Otherwise they threaten to attack the citizens.</English>
         <German>Mylord, einige Kriminelle sind in die Waffenkammer eingebrochen und haben sich bewaffnet. Sie behaupten lediglich verarmte Bürger zu sein, die sich kein Essen mehr leisten können. Sie verlangen von uns etwas Nahrung und Geld. Sie verspechen daraufhin die Waffen niederzulegen. Andernfalls drohen sie damit die Bürger der Stadt anzugreifen.</German>
     </TEXT>
     <TEXT>
