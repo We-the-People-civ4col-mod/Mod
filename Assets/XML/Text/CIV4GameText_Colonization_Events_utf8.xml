@@ -956,22 +956,22 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WHALE_ATTACK</Tag>
-        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] whaling ship is attacked by a whale seeking revenge.</English>
+        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] whaling ship is being attacked by a whale seeking revenge.</English>
         <German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Walfangschiff wird von eime Rache suchenden Wal angegriffen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WHALE_ATTACK_1</Tag>
-        <English>This is very strange. Since days this giant whale is following our ship. It almost seems like he is waiting for a chance to attack us when we are not paying attention. Wait! What is this? It seems like he is indeed trying to ram us backbord!</English>
+        <English>It's very strange. For several days a giant whale has been following our ship. It's like he's waiting to attack us when we're not paying attention. Wait! What is this? He's  trying to ram us amidships!</English>
         <German>Das ist in der Tat seltsam. Seit Tagen verfolgt unser Schiff ein riesiger Wal. Es scheint fast so als warte er nur auf eine Gelgenheit um uns anzugreifen, wenn wir nicht aufmerksam sind. Wartet! Was ist das? Der Walf versucht uns tatsächlich auf Backbord zu rammen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WHALE_ATTACK_1</Tag>
-        <English>All men to the harpoons! We are a whaling ship! We hunt whales not the other way around!</English>
+        <English>All men, grab your harpoons! We are a whaling ship! We hunt whales, not the other way around!</English>
         <German>Alle Mann an die Harpunen! Wir sind ein Walfangschiff! Wir jagen die Wale und nicht anders herum!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WHALE_ATTACK_HELP</Tag>
-        <English>A humpback whale will attack.</English>
+        <English>The humpback whale attacks.</English>
         <German>Ein Buckelwal greift an.</German>
     </TEXT>
     <TEXT>
@@ -981,17 +981,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CRIMINALS_BLACKMAIL_CITY_1</Tag>
-        <English>Mylord, some criminals have broken into our armory and stolen weapons. They claim that they are just empoverished citizens that cannot even afford to buy food anymore. They demand to be given food and a bit of money. They promise to then lay down their weapons. Otherwise they threaten to attack the citizens.</English>
+        <English>Milord, some criminals have broken into our armoury and stolen weapons. They claim that they're just impoverished citizens who can't even afford food. They demand to be given food and money, just a little. They promise to then lay down their weapons. Otherwise they threaten to attack the citizens.</English>
         <German>Mylord, einige Kriminelle sind in die Waffenkammer eingebrochen und haben sich bewaffnet. Sie behaupten lediglich verarmte Bürger zu sein, die sich kein Essen mehr leisten können. Sie verlangen von uns etwas Nahrung und Geld. Sie verspechen daraufhin die Waffen niederzulegen. Andernfalls drohen sie damit die Bürger der Stadt anzugreifen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_GIVE</Tag>
-        <English>Give them some food and gold. We will even pardon them if they promise to never seek violence again to solve such issues.</English>
+        <English>Give them some food and gold. We will even pardon them if they promise never again to use violence to solve such issues.</English>
         <German>Gebt ihnen etwas Essen und Gold. Zusätzlich begnadigen wir sie, wenn sie versprechen nächstes Mal keine Gewalt anzuwenden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_REFUSE</Tag>
-        <English>We will not let criminals blackmail us. The only thing they will get from us is their own death.</English>
+        <English>We will not let criminals blackmail us. The only thing they get from us is death.</English>
         <German>Wir lassen uns nicht von Kriminellen erpresssen. Das einzige was sie von uns bekommen werden ist ihr eigener Tod.</German>
     </TEXT>
     <TEXT>
@@ -1001,17 +1001,18 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1</Tag>
-        <English>Mylord, an indentured servant is begging for our help. He has stolen money from his employer and lost it all by gambling trying to win enough money to buy himself free. He now feels guilty and pleads us to lend him the money to put it back before his employer notices the theft. He promises to pay us back. If not it is most likely that he will run away to avoid being put into prison.</English>
+        <English>Milord, an indentured servant is begging for our help. He stole money from his employer and lost it all gambling. He says he was trying to win enough money to buy his freedom.[NEWLINE]Now he feels guilty and pleads for a loan so he can put the money back before his employer notices the theft. He promises to pay us back. Otherwise it's likely that he'll run away to avoid prison.</English>
+</English>
         <German>Mylord, ein Schuldknecht ersucht unsere Hilfe. Er hat Geld von seinem Arbeitgeber gestohlen und es beim Spielen verloren. Er hat versuchte genug Geld zu gewinnen um sich freizukaufen. Er fühlt sich nun schuldig und bittet uns ihm das Geld zu leihen, damit er es ersetzen kann, bevor sein Arbeitgeber den Diebstahl bemerkt. Er verspricht es uns wieder zurück zu zahlen. Falls nicht ist anzunehmen, dass er zu fliehen versucht.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1</Tag>
-        <English>The indentured servant must stand to his deeds! It is not upon us to solve the problems of pitty thiefs.</English>
+        <English>The indentured servant must take responsibility for his deeds! It is not up to us to solve the problems of petty thieves.</English>
         <German>Der Schuldknecht muss zu seinen Taten stehen! Wir sind nicht für die Probleme von gewöhnlichen Dieben verantwortlich.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_2</Tag>
-        <English>We will show mercy with this man and even give him enough money so he can buy himself free. He however owes us loyalty from now.</English>
+        <English>We will show this man mercy, even give him the money to buy his freedom, as long as he understands that from now on he owes us loyalty.</English>
         <German>Wir werden Mitleid mit diesem Mann haben und ihm sogar genug Geld geben um sich frei zukaufen. Ab nun schuldet er uns aber Loyalität.</German>
     </TEXT>
     <TEXT>
@@ -1021,42 +1022,42 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PREACHER_AND_HARLOT</Tag>
-        <English>A rumour is spreading: In [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] a priest was caught red handed with a harlot.</English>
+        <English>A rumour is spreading: In [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] a priest was caught red-handed with a harlot.</English>
         <German>Ein Gerücht macht die Runde: In [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] wurde ein Priester mit einer Hure erwischt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PREACHER_AND_HARLOT_1</Tag>
-        <English>Mylord, we have a very delicate matter. The local priest was caught red handed with a harlot from the lower district. He now claims that he was bewitched by her. The citizens from the upper disctric seem to believe him and want to burn her as a witch. But the poor from the lower district have gathered around her to protect her and insist that she is the actual victim. Whatever we will do, there will be unrest. How should we decide?</English>
+        <English>Milord, we have a very delicate matter. The local priest was caught red-handed with a harlot from the lower district. He now claims that he was bewitched by her. The citizens from the upper district believe him and want to burn her as a witch. The poor people from the lower district have gathered around her to protect her, insisting that she is the actual victim. Whatever we will do, there will be unrest. How should we decide?</English>
         <German>Mylord, wir sind in einer schwierigen Situation. Der örtliche Priester wurde auf frischer Tat mit einer Hure aus dem Unterviertel erwischt. Er behauptet nur er sei von dieser verhext worden. Die Bürger der Oberstadt scheinen ihm zu glauben und wollen die Hure als Hexe verbrennen. Aber die Armen aus der Unterstadt stellen sich schützend vor die Hure und behaupten sie sei das eigentliche Opfer. Was auch immer wir tun, es wird zu Unruhen kommen. Wie sollen wir uns entscheiden?</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PREACHER_AND_HARLOT_1</Tag>
-        <English>We will not let a woman get burned because a weak priest and superstition!</English>
+        <English>We will not let a woman be burned because of superstition and a weak priest!</English>
         <German>Wir werden nicht zulassen, dass eine Frau aufrgund eines schwachen Priesters und Aberglaube verbrannt wird!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PREACHER_AND_HARLOT_2</Tag>
-        <English>We must preserve peace in this village and prevent this to happen again. Let them burn the harlot!</English>
+        <English>We must preserve peace in this village and make sure this doesn't happen again. Let them burn the harlot!</English>
         <German>Wir müssen den Frieden in der Stadt bewahren und verhindern, dass soetwas noch einmal passiert. Lasst sie die Hure verbrennen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PREACHER_AND_HARLOT_1_HELP</Tag>
-        <English>The citizens will revolt due to your decision to protect the harlot.</English>
+        <English>The citizens revolt due to your decision to protect the harlot.</English>
         <German>Die Bürger werden aufgrund eurer Entscheidung die Hure zu beschützen revoltieren.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PREACHER_AND_HARLOT_2_HELP</Tag>
-        <English>The poor from the lower disctrict will be outraged that you condemn the harlot and revolt.</English>
+        <English>The poor from the lower district are outraged that you condemn the harlot. They revolt.</English>
         <German>Die Armen aus dem Unterviertel werden darpber aufgebracht sein, dass ihr die Hure verurteilt und revoltieren.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_HUNTER_OFFERS_SERVICE</Tag>
-        <English>A rumour is spreading: Escaped slaves near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</English>
+        <English>A rumour is spreading: There are escaped slaves near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</English>
         <German>Ein Gerücht macht die Runde: Entflohene Sklaven in der Nähe von [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_HUNTER_OFFERS_SERVICE_1</Tag>
-        <English>Mylord, a slave hunter has heard that escaped slaves were sighted near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT]. He offers us his services.</English>
+        <English>Milord, a slave hunter has heard that escaped slaves were sighted near [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT]. He offers us his services.</English>
         <German>Mylord, ein Sklavenjäger hat gehört, dass entflohene Sklaven in der Nähen von [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] gesichtet wurden. Er bietet uns seine Dienste an.</German>
     </TEXT>
     <TEXT>
