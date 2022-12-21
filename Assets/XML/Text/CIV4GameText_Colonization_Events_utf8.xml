@@ -986,12 +986,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_GIVE</Tag>
-        <English>Give them some food and gold. We will even pardon them if they promise to never seek violence again to solve such issues.</English>
+        <English>Give them some food and gold. We will even pardon them if they promise never again to use violence to solve such issues.</English>
         <German>Gebt ihnen etwas Essen und Gold. Zusätzlich begnadigen wir sie, wenn sie versprechen nächstes Mal keine Gewalt anzuwenden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_REFUSE</Tag>
-        <English>We will not let criminals blackmail us. The only thing they will get from us is their own death.</English>
+        <English>We will not let criminals blackmail us. The only thing they get from us is death.</English>
         <German>Wir lassen uns nicht von Kriminellen erpresssen. Das einzige was sie von uns bekommen werden ist ihr eigener Tod.</German>
     </TEXT>
     <TEXT>
