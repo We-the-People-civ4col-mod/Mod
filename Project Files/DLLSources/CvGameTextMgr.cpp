@@ -3486,13 +3486,13 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 	if (iLaw != 0)
 	{
 		szString.append(NEWLINE);
-		szString.append(gDLL->getText("TXT_KEY_TOTAL_CITY_LAW_BILLBOARD", iLaw, GC.getYieldInfo(YIELD_HAPPINESS).getChar()));
+		szString.append(gDLL->getText("TXT_KEY_TOTAL_CITY_LAW_BILLBOARD", iLaw, GC.getYieldInfo(YIELD_LAW).getChar()));
 	}
 	int iCrime = pCity->getCityCrime();
 	if (iCrime != 0)
 	{
 		szString.append(NEWLINE);
-		szString.append(gDLL->getText("TXT_KEY_TOTAL_CITY_CRIME_BILLBOARD", iCrime, GC.getYieldInfo(YIELD_UNHAPPINESS).getChar()));
+		szString.append(gDLL->getText("TXT_KEY_TOTAL_CITY_CRIME_BILLBOARD", iCrime, GC.getYieldInfo(YIELD_CRIME).getChar()));
 	}
 	// WTP, ray, Crime and Law - END
 

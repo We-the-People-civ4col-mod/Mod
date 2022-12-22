@@ -4737,7 +4737,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 					int iAmountToTrade = pUnit->getAmountForNativeTrade();
 
 					// WTP, ray trying to fix negative storage bug - START
-					FAssert(iAmountToTrade > 0, "Warning: iAmountToTrade in Native Trade is supposed to be larger 0");
+					FAssertMsg(iAmountToTrade > 0, "Warning: iAmountToTrade in Native Trade is supposed to be larger 0");
 					// WTP, ray trying to fix negative storage bug - END
 
 					int priceToPay = GC.getYieldInfo(yieldToTrade).getNativeSellPrice() * iAmountToTrade;
