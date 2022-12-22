@@ -50826,8 +50826,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
-            <eEthnicity>ETHNICITY_INDIO</eEthnicity>
-            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
+            <eEthnicity>NONE</eEthnicity>
+            <eCitizenStatus>NONE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HOSTILE_NATIVE</Description>
@@ -68886,8 +68886,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_DEFENSIVE</DefaultUnitAI>
             <DefaultProfession>PROFESSION_BRAVE</DefaultProfession>
-            <eEthnicity>ETHNICITY_INDIO</eEthnicity>
-            <eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
+            <eEthnicity>NONE</eEthnicity>
+            <eCitizenStatus>NONE</eCitizenStatus>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_NATIVE</Description>

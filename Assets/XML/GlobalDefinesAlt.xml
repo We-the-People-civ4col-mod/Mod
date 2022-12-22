@@ -1544,4 +1544,9 @@
 		<DefineName>FOUNDER_CITY_ART</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
+	<!-- Ethnically Correct Growth -->
+	<Define>
+		<DefineName>ENABLE_ETHICALLY_CORRECT_GROWTH</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
 </Civ4Defines>

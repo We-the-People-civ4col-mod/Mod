@@ -704,6 +704,61 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		}
 		// WTP, ray, new Barracks System - END
 
+		// WTP, ray, Ethnically correct Population Growth - START
+		if (GLOBAL_DEFINE_ENABLE_ETHICALLY_CORRECT_GROWTH)
+		{
+			EthnicityTypes eEthnicity = pUnit->getUnitInfo().getEthnicity();
+			if (eEthnicity == ETHNICITY_EUROPEAN)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_ETHNICITY_EUROPEAN"));
+			}
+			if (eEthnicity == ETHNICITY_INDIO)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_ETHNICITY_INDIO"));
+			}
+			if (eEthnicity == ETHNICITY_AFRICAN)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_ETHNICITY_AFRICAN"));
+			}
+			if (eEthnicity == ETHNICITY_MESTIZZO)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_ETHNICITY_MESTIZZO"));
+			}
+			if (eEthnicity == ETHNICITY_MULATTO)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_ETHNICITY_MULATTO"));
+			}
+
+			CitizenStatusTypes eCitizenStatus = pUnit->getUnitInfo().getCitizenStatus();
+			if (eCitizenStatus == CITIZEN_STATUS_FREE)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_CITIZEN_STATUS_FREE"));
+			}
+			if (eCitizenStatus == CITIZEN_STATUS_INDENTURED)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_CITIZEN_STATUS_INDENTURED"));
+			}
+			if (eCitizenStatus == CITIZEN_STATUS_ENSLAVED)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_CITIZEN_STATUS_ENSLAVED"));
+			}
+			if (eCitizenStatus == CITIZEN_STATUS_ELITE)
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_CITIZEN_STATUS_ELITE"));
+			}
+		}
+		// WTP, ray, Ethnically correct Population Growth - END
+
+
 		if (pUnit->fortifyModifier() != 0)
 		{
 			szString.append(NEWLINE);
@@ -5437,6 +5492,60 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED", kUnitInfo.getBarracksSpaceNeeded(), GC.getSymbolID(BARRACKS_CHAR)));
 	}
 	// WTP, ray, new Barracks System - END
+
+	// WTP, ray, Ethnically correct Population Growth - START
+	if (GLOBAL_DEFINE_ENABLE_ETHICALLY_CORRECT_GROWTH)
+	{
+		EthnicityTypes eEthnicity = kUnitInfo.getEthnicity();
+		if (eEthnicity == ETHNICITY_EUROPEAN)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_ETHNICITY_EUROPEAN"));
+		}
+		if (eEthnicity == ETHNICITY_INDIO)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_ETHNICITY_INDIO"));
+		}
+		if (eEthnicity == ETHNICITY_AFRICAN)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_ETHNICITY_AFRICAN"));
+		}
+		if (eEthnicity == ETHNICITY_MESTIZZO)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_ETHNICITY_MESTIZZO"));
+		}
+		if (eEthnicity == ETHNICITY_MULATTO)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_ETHNICITY_MULATTO"));
+		}
+
+		CitizenStatusTypes eCitizenStatus = kUnitInfo.getCitizenStatus();
+		if (eCitizenStatus == CITIZEN_STATUS_FREE)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_CITIZEN_STATUS_FREE"));
+		}
+		if (eCitizenStatus == CITIZEN_STATUS_INDENTURED)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_CITIZEN_STATUS_INDENTURED"));
+		}
+		if (eCitizenStatus == CITIZEN_STATUS_ENSLAVED)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_CITIZEN_STATUS_ENSLAVED"));
+		}
+		if (eCitizenStatus == CITIZEN_STATUS_ELITE)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_CITIZEN_STATUS_ELITE"));
+		}
+	}
+	// WTP, ray, Ethnically correct Population Growth - END
 
 	if (kUnitInfo.getRequiredTransportSize() > 1)
 	{
