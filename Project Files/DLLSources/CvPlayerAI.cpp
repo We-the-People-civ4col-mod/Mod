@@ -8601,10 +8601,16 @@ void CvPlayerAI::AI_nativeTrade(CvUnit* pUnit)
 			{
 				if (kOtherPlayer.getGold() >= priceToPay)
 				{
-					pOtherCity->changeYieldStored(eBestYield, iYieldAmount);
-					kOtherPlayer.changeGold(-priceToPay);
-					pHomeCity->changeYieldStored(eBestYield, -iYieldAmount);
-					GET_PLAYER(pHomeCity->getOwnerINLINE()).changeGold(priceToPay);
+					// WTP, ray trying to fix negative storage bug - START
+					// prevent that there is negative storage caused in the Native City
+					// although above it was actually already check by std::min ...
+					if (pHomeCity->getYieldStored(eBestYield) >= iYieldAmount)
+					{
+						pOtherCity->changeYieldStored(eBestYield, iYieldAmount);
+						kOtherPlayer.changeGold(-priceToPay);
+						pHomeCity->changeYieldStored(eBestYield, -iYieldAmount);
+						GET_PLAYER(pHomeCity->getOwnerINLINE()).changeGold(priceToPay);
+					}
 				}
 			}
 

@@ -4736,6 +4736,10 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 					YieldTypes yieldToTrade = pUnit->getYieldForNativeTrade();
 					int iAmountToTrade = pUnit->getAmountForNativeTrade();
 
+					// WTP, ray trying to fix negative storage bug - START
+					FAssert(iAmountToTrade > 0, "Warning: iAmountToTrade in Native Trade is supposed to be larger 0");
+					// WTP, ray trying to fix negative storage bug - END
+
 					int priceToPay = GC.getYieldInfo(yieldToTrade).getNativeSellPrice() * iAmountToTrade;
 					// we have chosen to accept
 					if (choice == 1)
@@ -4744,7 +4748,13 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 						{
 							// European pays gold amd receives goods
 							kPlayer.changeGold(-priceToPay);
-							pOtherCity->changeYieldStored(yieldToTrade, iAmountToTrade);
+
+							// WTP, ray trying to fix negative storage bug - START
+							if (iAmountToTrade > 0)
+							{
+								pOtherCity->changeYieldStored(yieldToTrade, iAmountToTrade);
+							}
+							 // WTP, ray trying to fix negative storage bug - END
 
 							// Native receives gold and looses goods
 							changeGold(priceToPay);
