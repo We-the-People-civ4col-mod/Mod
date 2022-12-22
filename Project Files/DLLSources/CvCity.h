@@ -375,6 +375,7 @@ public:
 	int calculateActualYieldConsumed(YieldTypes eYield) const;
 
 	// R&R, Androrc, Domestic Market
+	int getYieldBuyPriceUnmodified(YieldTypes eYield) const;
 	int getYieldBuyPrice(YieldTypes eYield) const;
 	void setYieldBuyPrice(YieldTypes eYield, int iPrice);
 	int getYieldDemand(YieldTypes eYield) const;

@@ -13339,7 +13339,14 @@ void CvCity::doExtraCityDefenseAttacks()
 // R&R, ray, Extra City Defense Attacks - END
 
 
-//Androrc Domestic Market
+// WTP, ray fixing Domestic Demand Price issue
+int CvCity::getYieldBuyPriceUnmodified(YieldTypes eYield) const
+{
+	FAssert(validEnumRange(eYield));
+	return m_em_iYieldBuyPrice.get(eYield);
+
+}
+
 int CvCity::getYieldBuyPrice(YieldTypes eYield) const
 {
 	FAssert(validEnumRange(eYield));
@@ -13359,7 +13366,7 @@ void CvCity::setYieldBuyPrice(YieldTypes eYield, int iPrice)
 	FAssert(validEnumRange(eYield));
 
 	iPrice = std::max(iPrice, 1);
-	if (iPrice != getYieldBuyPrice(eYield))
+	if (iPrice != getYieldBuyPriceUnmodified(eYield))
 	{
 		m_em_iYieldBuyPrice.set(eYield, iPrice);
 	}
@@ -13494,7 +13501,7 @@ void CvCity::doPrices()
 			break;
 		}
 
-		const int iPriceDiff = iTargetPrice - getYieldBuyPrice(eYield);
+		const int iPriceDiff = iTargetPrice - getYieldBuyPriceUnmodified(eYield);
 
 		int iMin = -iDefaultPoints;
 		int iMax = iDefaultPoints;
@@ -13513,11 +13520,11 @@ void CvCity::doPrices()
 
 		if (iResult >= iPointsToTriggerPriceChange)
 		{
-			setYieldBuyPrice(eYield, getYieldBuyPrice(eYield) + 1);
+			setYieldBuyPrice(eYield, getYieldBuyPriceUnmodified(eYield) + 1);
 		}
-		else if (iResult <= -iPointsToTriggerPriceChange && kYield.getMinimumBuyPrice() < getYieldBuyPrice(eYield))
+		else if (iResult <= -iPointsToTriggerPriceChange && kYield.getMinimumBuyPrice() < getYieldBuyPriceUnmodified(eYield))
 		{
-			setYieldBuyPrice(eYield, getYieldBuyPrice(eYield) - 1);
+			setYieldBuyPrice(eYield, getYieldBuyPriceUnmodified(eYield) - 1);
 		}
 	}
 }
