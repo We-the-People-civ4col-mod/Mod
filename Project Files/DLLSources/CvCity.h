@@ -614,6 +614,8 @@ public:
 	void setTeachUnitMultiplier(int iModifier);
 	UnitClassTypes bestTeachUnitClass();
 
+	UnitClassTypes bestGrowthUnitClass(); // WTP, ray, Ethnically correct Population Growth - START
+
 	int getEducationThresholdMultiplier() const;
 	void setEducationThresholdMultiplier(int iModifier);
 	int educationThreshold() const;
