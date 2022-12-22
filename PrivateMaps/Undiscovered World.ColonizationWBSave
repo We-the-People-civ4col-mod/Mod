@@ -106096,7 +106096,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=81,y=187
-	FeatureType=FEATURE_STONE_REEF, FeatureVariety=0
 	TerrainType=TERRAIN_LAKE
 	PlotType=3
 EndPlot
