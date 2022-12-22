@@ -11620,7 +11620,7 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 	int iRandValue = 0;
 
 	// random Ethnicity European
-	iRandValue = GC.getGameINLINE().getSorenRandNum(iEthnicityEuropeCount, "Ethicity European");
+	iRandValue = GC.getGameINLINE().getSorenRandNum(iEthnicityEuropeCount * 100, "Ethicity European");
 	if(iRandValue > iBestEthnicityRand)
 	{
 		iBestEthnicityRand = iRandValue;
@@ -11628,7 +11628,7 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 	}
 
 	// random Ethnicity Indio
-	iRandValue = GC.getGameINLINE().getSorenRandNum(iEthnicityIndioCount, "Ethicity Indio");
+	iRandValue = GC.getGameINLINE().getSorenRandNum(iEthnicityIndioCount * 100, "Ethicity Indio");
 	if(iRandValue > iBestEthnicityRand)
 	{
 		iBestEthnicityRand = iRandValue;
@@ -11636,7 +11636,7 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 	}
 
 	// random Ethnicity African
-	iRandValue = GC.getGameINLINE().getSorenRandNum(iEthnicityAfricanCount, "Ethicity African");
+	iRandValue = GC.getGameINLINE().getSorenRandNum(iEthnicityAfricanCount * 100, "Ethicity African");
 	if(iRandValue > iBestEthnicityRand)
 	{
 		iBestEthnicityRand = iRandValue;
@@ -11644,7 +11644,7 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 	}
 
 	// random Ethnicity Mestizzo
-	iRandValue = GC.getGameINLINE().getSorenRandNum(iEthnicityMestizzoCount, "Ethicity Mestizzo");
+	iRandValue = GC.getGameINLINE().getSorenRandNum(iEthnicityMestizzoCount * 100, "Ethicity Mestizzo");
 	if(iRandValue > iBestEthnicityRand)
 	{
 		iBestEthnicityRand = iRandValue;
@@ -11652,7 +11652,7 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 	}
 
 	// random Ethnicity Mulatto
-	iRandValue = GC.getGameINLINE().getSorenRandNum(iEthnicityMulattoCount, "Ethicity Mulatto");
+	iRandValue = GC.getGameINLINE().getSorenRandNum(iEthnicityMulattoCount * 100, "Ethicity Mulatto");
 	if(iRandValue > iBestEthnicityRand)
 	{
 		iBestEthnicityRand = iRandValue;
@@ -11663,7 +11663,7 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 	int iRandValue2 = 0;
 
 	// random CitizenStatus Free
-	iRandValue2 = GC.getGameINLINE().getSorenRandNum(iCitizenStatusFreeCount, "CitizenStatus Free");
+	iRandValue2 = GC.getGameINLINE().getSorenRandNum(iCitizenStatusFreeCount * 100, "CitizenStatus Free");
 	if(iRandValue2 > iBestCitizenStatusRand)
 	{
 		iBestCitizenStatusRand = iRandValue2;
@@ -11671,7 +11671,7 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 	}
 
 	// random CitizenStatus Indentured
-	iRandValue2 = GC.getGameINLINE().getSorenRandNum(iCitizenStatusIndenturedCount, "CitizenStatus Indentured");
+	iRandValue2 = GC.getGameINLINE().getSorenRandNum(iCitizenStatusIndenturedCount * 100, "CitizenStatus Indentured");
 	if(iRandValue2 > iBestCitizenStatusRand)
 	{
 		iBestCitizenStatusRand = iRandValue2;
@@ -11679,7 +11679,7 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 	}
 
 	// random CitizenStatus Enslaved
-	iRandValue2 = GC.getGameINLINE().getSorenRandNum(iCitizenStatusEnslavedCount, "CitizenStatus Enslaved");
+	iRandValue2 = GC.getGameINLINE().getSorenRandNum(iCitizenStatusEnslavedCount * 100, "CitizenStatus Enslaved");
 	if(iRandValue2 > iBestCitizenStatusRand)
 	{
 		iBestCitizenStatusRand = iRandValue2;
@@ -11687,7 +11687,7 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 	}
 
 	// random CitizenStatus Elite
-	iRandValue2 = GC.getGameINLINE().getSorenRandNum(iCitizenStatusEliteCount, "CitizenStatus Elite");
+	iRandValue2 = GC.getGameINLINE().getSorenRandNum(iCitizenStatusEliteCount * 100, "CitizenStatus Elite");
 	if(iRandValue2 > iBestCitizenStatusRand)
 	{
 		iBestCitizenStatusRand = iRandValue2;
