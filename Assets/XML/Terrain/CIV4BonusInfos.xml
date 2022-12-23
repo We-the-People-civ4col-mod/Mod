@@ -1719,10 +1719,6 @@
                     <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
         </BonusInfo>
         <BonusInfo>
@@ -2359,10 +2355,6 @@
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
@@ -3562,6 +3554,10 @@
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
@@ -6203,10 +6199,6 @@
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_WETLAND</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -6564,10 +6556,6 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_ICE_LAKE</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_WETLAND</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
@@ -7207,10 +7195,6 @@
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -7402,10 +7386,6 @@
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -7921,6 +7901,14 @@
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
@@ -7930,14 +7918,6 @@
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_GRASS</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
@@ -8177,23 +8157,15 @@
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bFeatureTerrain>1</bFeatureTerrain>
+                </FeatureTerrainBoolean>
+                <FeatureTerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
@@ -8735,15 +8707,15 @@
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
@@ -9413,6 +9385,10 @@
                     <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -9494,11 +9470,11 @@
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -9994,14 +9970,6 @@
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_COAST</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
@@ -10332,10 +10300,6 @@
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -10406,10 +10370,6 @@
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
@@ -10457,10 +10417,6 @@
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -10531,10 +10487,6 @@
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_PLAINS</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
@@ -10635,10 +10587,6 @@
             <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
-                <TerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
@@ -10722,10 +10670,6 @@
                 </FeatureBoolean>
             </FeatureBooleans>
             <FeatureTerrainBooleans>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
@@ -11562,10 +11506,6 @@
                     <TerrainType>TERRAIN_TAIGA</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -11592,10 +11532,6 @@
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_TAIGA</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
@@ -11700,10 +11636,6 @@
                     <TerrainType>TERRAIN_DESERT</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
-                <TerrainBoolean>
-                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
-                    <bTerrain>1</bTerrain>
-                </TerrainBoolean>
             </TerrainBooleans>
             <FeatureBooleans>
                 <FeatureBoolean>
@@ -11754,10 +11686,6 @@
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
                     <TerrainType>TERRAIN_DESERT</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_ROCK_STEPPES</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
                 <FeatureTerrainBoolean>
@@ -12269,7 +12197,7 @@
             <bCoastalLandOnly>0</bCoastalLandOnly>
             <TerrainBooleans>
                 <TerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bTerrain>1</bTerrain>
                 </TerrainBoolean>
             </TerrainBooleans>
@@ -12349,7 +12277,7 @@
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
@@ -12637,7 +12565,8 @@
                 <FeatureBoolean>
                     <FeatureType>FEATURE_THICKET</FeatureType>
                     <bFeature>1</bFeature>
-                </FeatureBoolean>                <FeatureBoolean>
+                </FeatureBoolean>
+                <FeatureBoolean>
                     <FeatureType>FEATURE_TAR_PIT</FeatureType>
                     <bFeature>0</bFeature>
                 </FeatureBoolean>
