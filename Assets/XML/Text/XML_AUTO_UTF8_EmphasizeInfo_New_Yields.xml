@@ -240,7 +240,7 @@
         <English>Deemphasize Rice</English>
         <German>Schwerpunkt Reis aufheben</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_CASSAVA</Tag>
         <English>Emphasize Cassava</English>
         <German>Schwerpunkt Cassava</German>
@@ -250,17 +250,17 @@
         <English>Deemphasize Cassava</English>
         <German>Schwerpunkt Cassava aufheben</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_MAPLE_SIRUP</Tag>
-        <English>Emphasize Maple Sirup</English>
+        <English>Emphasize Maple Syrup</English>
         <German>Schwerpunkt Ahornsaft</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_MAPLE_SIRUP</Tag>
-        <English>Deemphasize Maple Sirup</English>
+        <English>Deemphasize Maple Syrup</English>
         <German>Schwerpunkt Ahornsaft aufheben</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_KAUTSCHUK</Tag>
         <English>Emphasize Kautschuk</English>
         <German>Schwerpunkt Kautschuk</German>

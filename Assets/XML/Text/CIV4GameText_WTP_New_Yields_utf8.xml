@@ -665,10 +665,10 @@
         <Tag>TXT_KEY_UNIT_HARDWOOD_STRATEGY</Tag>
         <English>Can be left empty</English>
     </TEXT>
-	<!-- MAPLE_SIRUP -->
+    <!-- MAPLE_SIRUP -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_MAPLE_SIRUP</Tag>
-        <English>Maple Sirup</English>
+        <English>Maple Syrup</English>
         <French>Sirop d'érable</French>
         <German>
             <Text>Ahornsaft</Text>
@@ -676,9 +676,9 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MAPLE_SIRUP</Tag>
-        <English>Maple Sirup</English>
+        <English>Maple Syrup</English>
         <French>Sirop d'érable</French>
         <German>
             <Text>Ahornsaft</Text>
@@ -688,7 +688,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP</Tag>
-        <English>Maple Sirup</English>
+        <English>Maple Syrup</English>
         <French>Sirop d'érable</French>
         <German>
             <Text>Ahornsaft</Text>
