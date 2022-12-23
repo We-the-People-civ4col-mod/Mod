@@ -6899,36 +6899,7 @@
             <iFoodModifierForCity>10</iFoodModifierForCity>
             <iPillageGold>20</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>
-            <TerrainMakesValids>
-                <TerrainMakesValid>
-                    <TerrainType>TERRAIN_GRASS</TerrainType>
-                    <bMakesValid>1</bMakesValid>
-                </TerrainMakesValid>
-                <TerrainMakesValid>
-                    <TerrainType>TERRAIN_WETLAND</TerrainType>
-                    <bMakesValid>1</bMakesValid>
-                </TerrainMakesValid>
-                <TerrainMakesValid>
-                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
-                    <bMakesValid>1</bMakesValid>
-                </TerrainMakesValid>
-                <TerrainMakesValid>
-                    <TerrainType>TERRAIN_PLAINS</TerrainType>
-                    <bMakesValid>1</bMakesValid>
-                </TerrainMakesValid>
-                <TerrainMakesValid>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
-                    <bMakesValid>1</bMakesValid>
-                </TerrainMakesValid>
-                <TerrainMakesValid>
-                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
-                    <bMakesValid>1</bMakesValid>
-                </TerrainMakesValid>
-                <TerrainMakesValid>
-                    <TerrainType>TERRAIN_MARSH</TerrainType>
-                    <bMakesValid>1</bMakesValid>
-                </TerrainMakesValid>
-            </TerrainMakesValids>
+            <TerrainMakesValids/>
             <FeatureMakesValids/>
             <BonusTypeStructs/>
             <ImprovementPillage/>
