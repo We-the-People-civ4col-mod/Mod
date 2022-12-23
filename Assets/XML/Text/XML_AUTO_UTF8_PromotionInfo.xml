@@ -1787,6 +1787,21 @@
         <German>Sklavenmeister III</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LAW_KEEPER_1</Tag>
+        <English>Law Keeper I</English>
+        <German>Gesetzeshüter I</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LAW_KEEPER_2</Tag>
+        <English>Law Keeper II</English>
+        <German>Gesetzeshüter II</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LAW_KEEPER_3</Tag>
+        <English>Law Keeper III</English>
+        <German>Gesetzeshüter III</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROMOTION_BRAVE_LIEUTENANT</Tag>
         <English>Commandeered by Brave Lieutenant</English>
         <German>Befehligt durch Mutigen Leutnant</German>

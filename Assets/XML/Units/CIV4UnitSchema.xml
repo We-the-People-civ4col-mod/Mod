@@ -269,6 +269,7 @@
 	<ElementType name="iAnimalGoldChange" content="textOnly" dt:type="int"/>
 	<ElementType name="iSlaveRevoltReductionBonus" content="textOnly" dt:type="int"/>
 	<ElementType name="iSlaveWorkerProductionBonus" content="textOnly" dt:type="int"/>
+	<ElementType name="iAdditionalLawToCity" content="textOnly" dt:type="int"/>
 	<ElementType name="iUpgradeDiscount" content="textOnly" dt:type="int"/>
 	<ElementType name="iExperiencePercent" content="textOnly" dt:type="int"/>
 	<ElementType name="iTerrainAttack" content="textOnly" dt:type="int"/>
@@ -762,6 +763,7 @@
 		<element type="iAnimalGoldChange"/>
 		<element type="iSlaveRevoltReductionBonus" minOccurs="0"/>
 		<element type="iSlaveWorkerProductionBonus" minOccurs="0"/>
+		<element type="iAdditionalLawToCity" minOccurs="0"/>
 		<element type="iUpgradeDiscount"/>
 		<element type="iExperiencePercent"/>
 		<element type="TerrainAttacks"/>

@@ -252,6 +252,7 @@ public:
 	int getAnimalGoldChange() const; //WTP, ray, Animal Promotions increase gold from Animals
 	int getSlaveRevoltReductionBonus() const; //WTP, ray, Slave Hunter and Slave Master
 	int getSlaveWorkerProductionBonus() const; //WTP, ray, Slave Hunter and Slave Master
+	int getAdditionalLawToCity() const; // WTP, ray, Lawkeeper Promotion - START
 	int getUpgradeDiscount() const;
 	int getExperiencePercent() const;
 
@@ -313,6 +314,7 @@ protected:
 	int m_iAnimalGoldChange; //WTP, ray, Animal Promotions increase gold from Animals
 	int m_iSlaveRevoltReductionBonus; //WTP, ray, Slave Hunter and Slave Master
 	int m_iSlaveWorkerProductionBonus; //WTP, ray, Slave Hunter and Slave Master
+	int m_iAdditionalLawToCity; // WTP, ray, Lawkeeper Promotion - START
 	int m_iUpgradeDiscount;
 	int m_iExperiencePercent;
 	bool m_bHideFromPedia;

@@ -915,6 +915,7 @@ m_iPillageChange(0),
 m_iAnimalGoldChange(0), //WTP, ray, Animal Promotions increase gold from Animals
 m_iSlaveRevoltReductionBonus(0), //WTP, ray, Slave Hunter and Slave Master
 m_iSlaveWorkerProductionBonus(0), //WTP, ray, Slave Hunter and Slave Master
+m_iAdditionalLawToCity(0), // WTP, ray, Lawkeeper Promotion - START
 m_iUpgradeDiscount(0),
 m_iExperiencePercent(0),
 m_bHideFromPedia(false),
@@ -1096,6 +1097,14 @@ int CvPromotionInfo::getSlaveWorkerProductionBonus() const
 }
 //WTP, ray, Slave Hunter and Slave Master - END
 
+// WTP, ray, Lawkeeper Promotion - START
+int CvPromotionInfo::getAdditionalLawToCity() const
+{
+	return m_iAdditionalLawToCity;
+}
+// WTP, ray, Lawkeeper Promotion - END
+
+
 int CvPromotionInfo::getUpgradeDiscount() const
 {
 	return m_iUpgradeDiscount;
@@ -1246,6 +1255,7 @@ void CvPromotionInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iAnimalGoldChange); //WTP, ray, Animal Promotions increase gold from Animals
 	stream->Read(&m_iSlaveRevoltReductionBonus); //WTP, ray, Slave Hunter and Slave Master
 	stream->Read(&m_iSlaveWorkerProductionBonus); //WTP, ray, Slave Hunter and Slave Master
+	stream->Read(&m_iAdditionalLawToCity); // WTP, ray, Lawkeeper Promotion - START
 	stream->Read(&m_iUpgradeDiscount);
 	stream->Read(&m_iExperiencePercent);
 
@@ -1327,6 +1337,7 @@ void CvPromotionInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iAnimalGoldChange); //WTP, ray, Animal Promotions increase gold from Animals
 	stream->Write(m_iSlaveRevoltReductionBonus); //WTP, ray, Slave Hunter and Slave Master
 	stream->Write(m_iSlaveWorkerProductionBonus); //WTP, ray, Slave Hunter and Slave Master
+	stream->Write(m_iAdditionalLawToCity); // WTP, ray, Lawkeeper Promotion - START
 	stream->Write(m_iUpgradeDiscount);
 	stream->Write(m_iExperiencePercent);
 	stream->Write(m_bLeader);
@@ -1395,6 +1406,7 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iAnimalGoldChange, "iAnimalGoldChange"); //WTP, ray, Animal Promotions increase gold from Animals
 	pXML->GetChildXmlValByName(&m_iSlaveRevoltReductionBonus, "iSlaveRevoltReductionBonus"); //WTP, ray, Slave Hunter and Slave Master
 	pXML->GetChildXmlValByName(&m_iSlaveWorkerProductionBonus, "iSlaveWorkerProductionBonus"); //WTP, ray, Slave Hunter and Slave Master
+	pXML->GetChildXmlValByName(&m_iAdditionalLawToCity, "iAdditionalLawToCity"); // WTP, ray, Lawkeeper Promotion - START
 	pXML->GetChildXmlValByName(&m_iUpgradeDiscount, "iUpgradeDiscount");
 	pXML->GetChildXmlValByName(&m_iExperiencePercent, "iExperiencePercent");
 	pXML->SetVariableListTagPair(&m_aiTerrainAttackPercent, "TerrainAttacks", GC.getNumTerrainInfos(), 0);

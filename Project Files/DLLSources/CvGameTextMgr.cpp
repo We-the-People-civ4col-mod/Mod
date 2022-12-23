@@ -696,13 +696,22 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 			}
 
 			// of course we onyl display in case it is more than 0; 
-			if (iBarracksSpaceNeeded)
+			if (iBarracksSpaceNeeded > 0)
 			{
 				szString.append(NEWLINE);
 				szString.append(gDLL->getText("TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED", iBarracksSpaceNeeded, GC.getSymbolID(BARRACKS_CHAR)));
 			}
 		}
 		// WTP, ray, new Barracks System - END
+
+		// WTP, ray, Lawkeeper Promotion - START
+		int iAdditionalLawToCity = pUnit->getAdditionalLawToCityFromUnit();
+		if (iAdditionalLawToCity > 0)
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_UNIT_ADDITIONAL_LAW_TO_CITY", iAdditionalLawToCity, GC.getYieldInfo(YIELD_LAW).getChar()));
+		}
+		// WTP, ray, Lawkeeper Promotion - END
 
 		// WTP, ray, Ethnically correct Population Growth - START
 		if (GLOBAL_DEFINE_ENABLE_ETHICALLY_CORRECT_GROWTH)
@@ -5091,6 +5100,14 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_SLAVE_WORKER_PRODUCTION_BONUS_TEXT", kPromotion.getSlaveWorkerProductionBonus()));
 	}
 	//WTP, ray, Slave Hunter and Slave Master - END
+
+	// WTP, ray, Lawkeeper Promotion - START
+	if (kPromotion.getAdditionalLawToCity() != 0)
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_ADDITIONAL_LAW_TO_CITY_TEXT", kPromotion.getAdditionalLawToCity(),GC.getYieldInfo(YIELD_LAW).getChar()));
+	}
+	// WTP, ray, Lawkeeper Promotion - END
 
 	if (kPromotion.getUpgradeDiscount() != 0)
 	{

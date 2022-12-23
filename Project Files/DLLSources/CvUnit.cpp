@@ -11634,6 +11634,23 @@ void CvUnit::changeSlaveWorkerProductionBonus(int iChange)
 }
 //WTP, ray, Slave Hunter and Slave Master - END
 
+// WTP, ray, Lawkeeper Promotion - START
+int CvUnit::getAdditionalLawToCityFromUnit() const
+{
+	return m_iAdditionalLawToCityUnit;
+}
+
+void CvUnit::changeAdditionalLawToCityFromUnit(int iChange)
+{
+	if (iChange != 0)
+	{
+		m_iAdditionalLawToCityUnit += iChange;
+
+		setInfoBarDirty(true);
+	}
+}
+// WTP, ray, Lawkeeper Promotion - END
+
 
 int CvUnit::getUpgradeDiscount() const
 {
@@ -13337,6 +13354,7 @@ void CvUnit::processPromotion(PromotionTypes ePromotion, int iChange)
 	changeAnimalGoldChange(GC.getPromotionInfo(ePromotion).getAnimalGoldChange() * iChange); //WTP, ray, Animal Promotions increase gold from Animals
 	changeSlaveRevoltReductionBonus(GC.getPromotionInfo(ePromotion).getSlaveRevoltReductionBonus() * iChange); //WTP, ray, Slave Hunter and Slave Master
 	changeSlaveWorkerProductionBonus(GC.getPromotionInfo(ePromotion).getSlaveWorkerProductionBonus() * iChange); //WTP, ray, Slave Hunter and Slave Master
+	changeAdditionalLawToCityFromUnit(GC.getPromotionInfo(ePromotion).getAdditionalLawToCity() * iChange); // WTP, ray, Lawkeeper Promotion - START
 	changeUpgradeDiscount(GC.getPromotionInfo(ePromotion).getUpgradeDiscount() * iChange);
 	changeExperiencePercent(GC.getPromotionInfo(ePromotion).getExperiencePercent() * iChange);
 	changeCargoSpace(GC.getPromotionInfo(ePromotion).getCargoChange() * iChange);
@@ -13407,6 +13425,7 @@ void CvUnit::resetPromotions()
 	m_iAnimalGoldChange = 0; //WTP, ray, Animal Promotions increase gold from Animals
 	m_iSlaveRevoltReductionBonus = 0; //WTP, ray, Slave Hunter and Slave Master
 	m_iSlaveWorkerProductionBonus = 0; //WTP, ray, Slave Hunter and Slave Master
+	m_iAdditionalLawToCityUnit = 0; // WTP, ray, Lawkeeper Promotion - START
 
 	m_iUpgradeDiscount = 0;
 	m_iExperiencePercent = 0;

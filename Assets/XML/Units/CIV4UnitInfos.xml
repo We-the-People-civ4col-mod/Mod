@@ -47984,11 +47984,11 @@
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
                 <FreePromotion>
-                    <PromotionType>PROMOTION_MINUTEMAN1</PromotionType>
+                    <PromotionType>PROMOTION_LAW_KEEPER_1</PromotionType>
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
                 <FreePromotion>
-                    <PromotionType>PROMOTION_LEADERSHIP</PromotionType>
+                    <PromotionType>PROMOTION_LAW_KEEPER_2</PromotionType>
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>

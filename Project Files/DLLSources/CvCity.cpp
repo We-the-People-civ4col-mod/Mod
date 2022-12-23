@@ -11119,6 +11119,7 @@ int CvCity::getLawFromCityDefenders() const
 		if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack() && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 		{
 			iDefendersFound++;
+			iDefendersFound += pLoopUnit->getAdditionalLawToCityFromUnit(); // WTP, ray, Lawkeeper Promotion - START
 		}
 	}
 
