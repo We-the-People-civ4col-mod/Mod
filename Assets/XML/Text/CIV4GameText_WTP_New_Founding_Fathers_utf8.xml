@@ -361,4 +361,32 @@
         <English>Boost your trade with [COLOR_TECH_TEXT]John Winthrop the Younger[COLOR_REVERT]. This Founding Father gives you a [COLOR_BUILDING_TEXT]master charcoal burner[COLOR_REVERT] and [COLOR_BUILDING_TEXT]a master powder maker[COLOR_REVERT].</English>
         <German>TBD</German>
     </TEXT>
+    <!-- BENJAMIN_KISSAM -->
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_BENJAMIN_KISSAM</Tag>
+        <English>
+            <Text>Benjamin Kissam</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>Benjamin Kissam</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_BENJAMIN_KISSAM</Tag>
+        <English>TXT_KEY_FATHER_BENJAMIN_KISSAM</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_BENJAMIN_KISSAM_PEDIA</Tag>
+        <English>[H1]Benjamin Kissam[\H1][NEWLINE][BOLD]Lived : [\BOLD]1728 - 1782[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]Benjamin Kissam[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1728 - 1782[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_BENJAMIN_KISSAM_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>

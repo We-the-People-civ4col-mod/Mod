@@ -3168,6 +3168,32 @@
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,4,15</Button>
         </FatherInfo>
         <FatherInfo>
+            <Type>FATHER_BENJAMIN_KISSAM</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/Benjamin_Kissam.dds</Portrait>
+            <Description>TXT_KEY_FATHER_BENJAMIN_KISSAM</Description>
+            <Civilopedia>TXT_KEY_FATHER_BENJAMIN_KISSAM_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_BENJAMIN_KISSAM_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_JUDGE</UnitClass>
+                    <iFreeUnits>2</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>3200</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_BENJAMIN_KISSAM</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,7,15</Button>
+        </FatherInfo>
+        <FatherInfo>
             <Type>FATHER_LORD_BALTIMORE</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Baltimore.dds</Portrait>
             <Description>TXT_KEY_FATHER_LORD_BALTIMORE</Description>
@@ -3179,7 +3205,7 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>3200</iCost>
+                    <iCost>3500</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_LORD_BALTIMORE</Trait>
@@ -3209,7 +3235,7 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>3600</iCost>
+                    <iCost>3800</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_THOMAS_CHIPPENDALE</Trait>
@@ -3230,7 +3256,7 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>4000</iCost>
+                    <iCost>4200</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_JOHN_JAY</Trait>

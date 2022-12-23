@@ -8,20 +8,20 @@
     <!-- BREEDER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BREEDER</Tag>
-        <English>Expert Poultry Breeder</English>
+        <English>Expert Poultry Breeder:Expert Poultry Breeders</English>
         <German>
-            <Text>Erfahrener Geflügelzüchter</Text>
+            <Text>Erfahrener Geflügelzüchter:Erfahrene Geflügelzüchter</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BREEDER</Tag>
-        <English>Expert Poultry Breeder</English>
+        <English>Expert Poultry Breeder:Expert Poultry Breeders</English>
         <German>
-            <Text>Erfahrener Geflügelzüchter</Text>
+            <Text>Erfahrener Geflügelzüchter:Erfahrene Geflügelzüchter</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -37,20 +37,20 @@
     <!-- CASSAVA_PLANTER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CASSAVA_PLANTER</Tag>
-        <English>Expert Cassava Planter</English>
+        <English>Expert Cassava Planter:Expert Cassava Planters</English>
         <German>
-            <Text>Erfahrener Cassavapflanzer</Text>
+            <Text>Erfahrener Cassavapflanzer:Erfahrene Cassavapflanzer</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CASSAVA_PLANTER</Tag>
-        <English>Expert Cassava Planter</English>
+        <English>Expert Cassava Planter:Expert Cassava Planters</English>
         <German>
-            <Text>Erfahrener Cassavapflanzer</Text>
+            <Text>Erfahrener Cassavapflanzer:Erfahrene Cassavapflanzer</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -66,20 +66,20 @@
     <!-- COCHINEAL_COLLECTOR -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COCHINEAL_COLLECTOR</Tag>
-        <English>Expert Cochineal Collector</English>
+        <English>Expert Cochineal Collector:Expert Cochineal Collectors</English>
         <German>
-            <Text>Erfahrener Cochineal Sammler</Text>
+            <Text>Erfahrener Cochineal Sammler:Erfahrene Cochineal Sammler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR</Tag>
-        <English>Expert Cochineal Collector</English>
+        <English>Expert Cochineal Collector:Expert Cochineal Collectors</English>
         <German>
-            <Text>Erfahrener Cochineal Sammler</Text>
+            <Text>Erfahrener Cochineal Sammler:Erfahrene Cochineal Sammler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -95,20 +95,20 @@
     <!-- LINEN_PLANTER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LINEN_PLANTER</Tag>
-        <English>Expert Flax Planter</English>
+        <English>Expert Flax Planter:Expert Flax Planters</English>
         <German>
-            <Text>Erfahrener Flachspflanzer</Text>
+            <Text>Erfahrener Flachspflanzer:Erfahrene Flachspflanzer</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LINEN_PLANTER</Tag>
         <English>Expert Flax Planter</English>
         <German>
-            <Text>Erfahrener Flachspflanzer</Text>
+            <Text>Erfahrener Flachspflanzer:Erfahrene Flachspflanzer</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -124,20 +124,20 @@
     <!-- LOGWOOD_COLLECTOR -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LOGWOOD_COLLECTOR</Tag>
-        <English>Expert Logwood Collector</English>
+        <English>Expert Logwood Collector:Expert Logwood Collectors</English>
         <German>
-            <Text>Erfahrener Färberholzsammler</Text>
+            <Text>Erfahrener Färberholzsammler:Erfahrene Färberholzsammle</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR</Tag>
-        <English>Expert Logwood Collector</English>
+        <English>Expert Logwood Collector:Expert Logwood Collectors</English>
         <German>
-            <Text>Erfahrener Färberholzsammler</Text>
+            <Text>Erfahrener Färberholzsammler:Erfahrene Färberholzsammler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -153,20 +153,20 @@
     <!-- LOGWOOD_OLIVES_PLANTER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_OLIVES_PLANTER</Tag>
-        <English>Expert Olives Planter</English>
+        <English>Expert Olives Planter:Expert Olives Planters</English>
         <German>
-            <Text>Erfahrener Olivenpflanzer</Text>
+            <Text>Erfahrener Olivenpflanzer:Erfahrene Olivenpflanzer</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OLIVES_PLANTER</Tag>
-        <English>Expert Olives Planter</English>
+        <English>Expert Olives Planter:Expert Olives Planters</English>
         <German>
-            <Text>Erfahrener Olivenpflanzer</Text>
+            <Text>Erfahrener Olivenpflanzer:Erfahrener Olivenpflanzer</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -182,20 +182,20 @@
     <!-- PEANUT_PLANTER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PEANUT_PLANTER</Tag>
-        <English>Expert Peanut Planter</English>
+        <English>Expert Peanut Planter:Expert Peanut Planters</English>
         <German>
-            <Text>Erfahrener Erdnusspflanzer</Text>
+            <Text>Erfahrener Erdnusspflanzer:Erfahrene Erdnusspflanzer</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEANUT_PLANTER</Tag>
-        <English>Expert Peanut Planter</English>
+        <English>Expert Peanut Planter:Expert Peanut Planters</English>
         <German>
-            <Text>Erfahrener Erdnusspflanzer</Text>
+            <Text>Erfahrener Erdnusspflanzer:Erfahrene Erdnusspflanzer</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -211,20 +211,20 @@
     <!-- PEAT_CUTTER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PEAT_CUTTER</Tag>
-        <English>Expert Peat and Clay Cutter</English>
+        <English>Expert Peat and Clay Cutter:Expert Peat and Clay Cutters</English>
         <German>
-            <Text>Erfahrener Torfsammler</Text>
+            <Text>Erfahrener Torfsammler:Erfahrene Torfsammler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PEAT_CUTTER</Tag>
-        <English>Expert Peat and Clay Cutter</English>
+        <English>Expert Peat and Clay Cutter:Expert Peat and Clay Cutters</English>
         <German>
-            <Text>Erfahrener Torfsammler</Text>
+            <Text>Erfahrener Torfsammler:Erfahrene Torfsammler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -240,20 +240,20 @@
     <!-- RAPE_PLANTER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RAPE_PLANTER</Tag>
-        <English>Expert Rape Planter</English>
+        <English>Expert Rape Planter:Expert Rape Planters</English>
         <German>
-            <Text>Erfahrener Rapspflanzer</Text>
+            <Text>Erfahrener Rapspflanzer:Erfahrene Rapspflanzer</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RAPE_PLANTER</Tag>
-        <English>Expert Rape Planter</English>
+        <English>Expert Rape Planter:Expert Rape Planters</English>
         <German>
-            <Text>Erfahrener Rapspflanzer</Text>
+            <Text>Erfahrener Rapspflanzer:Erfahrener Rapspflanzer</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -269,20 +269,20 @@
     <!-- RICE_FARMER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RICE_FARMER</Tag>
-        <English>Expert Rice Farmer</English>
+        <English>Expert Rice Farmer:Expert Rice Farmers</English>
         <German>
-            <Text>Erfahrener Reisbauer</Text>
+            <Text>Erfahrener Reisbauer:Erfahrene Reisbauern</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_RICE_FARMER</Tag>
-        <English>Expert Rice Farmer</English>
+        <English>Expert Rice Farmer:Expert Rice Farmers</English>
         <German>
-            <Text>Erfahrener Reisbauer</Text>
+            <Text>Erfahrener Reisbauer:Erfahrene Reisbauern</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -298,20 +298,20 @@
     <!-- VANILLA_COLLECTOR -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_VANILLA_COLLECTOR</Tag>
-        <English>Expert Vanilla Collector</English>
+        <English>Expert Vanilla Collector:Expert Vanilla Collectors</English>
         <German>
-            <Text>Erfahrener Vanillesammler</Text>
+            <Text>Erfahrener Vanillesammler:Erfahrene Vanillesammler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR</Tag>
-        <English>Expert Vanilla Collector</English>
+        <English>Expert Vanilla Collector:Expert Vanilla Collectors</English>
         <German>
-            <Text>Erfahrener Vanillesammler</Text>
+            <Text>Erfahrener Vanillesammler:Erfahrene Vanillesammler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -327,20 +327,20 @@
     <!-- YERBA_PLANTER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_YERBA_PLANTER</Tag>
-        <English>Expert Yerba Planter</English>
+        <English>Expert Yerba Planter:Expert Yerba Planters</English>
         <German>
-            <Text>Erfahrener Yerbapflanzer</Text>
+            <Text>Erfahrener Yerbapflanzer:Erfahrene Yerbapflanzer</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_PLANTER</Tag>
-        <English>Expert Yerba Planter</English>
+        <English>Expert Yerba Planter:Expert Yerba Planters</English>
         <German>
-            <Text>Erfahrener Yerbapflanzer</Text>
+            <Text>Erfahrener Yerbapflanzer:Erfahrene Yerbapflanzer</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -356,20 +356,20 @@
     <!-- HERDER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HERDER</Tag>
-        <English>Expert Herder</English>
+        <English>Expert Herder:Expert Herders</English>
         <German>
-            <Text>Erfahrener Hirte</Text>
+            <Text>Erfahrener Hirte:Erfahrene Hirten</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HERDER</Tag>
-        <English>Expert Herder</English>
+        <English>Expert Herder:Expert Herder</English>
         <German>
-            <Text>Erfahrener Hirte</Text>
+            <Text>Erfahrener Hirte:Erfahrene Hirten</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -385,20 +385,20 @@
     <!-- MAPLE_SIRUP_COLLECTOR -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MAPLE_SIRUP_COLLECTOR</Tag>
-        <English>Expert Maple Tree Tapper</English>
+        <English>Expert Maple Tree Tapper:Expert Maple Tree Tappers</English>
         <German>
-            <Text>Erfahrener Ahornsaftsammler</Text>
+            <Text>Erfahrener Ahornsaftsammler:Erfahrene Ahornsaftsammler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR</Tag>
-        <English>Expert Maple Tree Tapper</English>
+        <English>Expert Maple Tree Tapper:Expert Maple Tree Tappers</English>
         <German>
-            <Text>Erfahrener Ahornsaftsammler</Text>
+            <Text>Erfahrener Ahornsaftsammler:Erfahrene Ahornsaftsammler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -414,20 +414,20 @@
     <!-- KAUTSCHUK_COLLECTOR -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_KAUTSCHUK_COLLECTOR</Tag>
-        <English>Expert Rubber Collector</English>
+        <English>Expert Rubber Collector:Expert Rubber Collectors</English>
         <German>
-            <Text>Erfahrener Kautschuksammler</Text>
+            <Text>Erfahrener Kautschuksammler:Erfahrene Kautschuksammler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR</Tag>
-        <English>Expert Rubber Collector</English>
+        <English>Expert Rubber Collector:Expert Rubber Collectors</English>
         <German>
-            <Text>Erfahrener Kautschuksammler</Text>
+            <Text>Erfahrener Kautschuksammler:Erfahrene Kautschuksammler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -443,20 +443,20 @@
     <!-- CONFECTIONER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CONFECTIONER</Tag>
-        <English>Master Confectioner</English>
+        <English>Master Confectioner:Master Confectioners</English>
         <German>
-            <Text>Meister Confiseur</Text>
+            <Text>Meister Confiseur:Meister Confiseure</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONFECTIONER</Tag>
-        <English>Master Confectioner</English>
+        <English>Master Confectioner:Master Confectioners</English>
         <German>
-            <Text>Meister Confiseur</Text>
+            <Text>Meister Confiseur:Meister Confiseure</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -472,20 +472,20 @@
     <!-- HOUSEHOLD_TRADER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HOUSEHOLD_TRADER</Tag>
-        <English>Master Household Goods Trader</English>
+        <English>Master Household Goods Trader:Master Household Goods Traders</English>
         <German>
-            <Text>Meister Haushaltswarenhändler</Text>
+            <Text>Meister Haushaltswarenhändler:Meister Haushaltswarenhändler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER</Tag>
-        <English>Master Household Goods Trader</English>
+        <English>Master Household Goods Trader:Master Household Goods Traders</English>
         <German>
-            <Text>Meister Haushaltswarenhändler</Text>
+            <Text>Meister Haushaltswarenhändler:Meister Haushaltswarenhändler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -501,20 +501,20 @@
     <!-- YERBA_TRADER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_YERBA_TRADER</Tag>
-        <English>Master Yerba Tea Trader</English>
+        <English>Master Yerba Tea Trader:Master Yerba Tea Traders</English>
         <German>
-            <Text>Meister Yerbateehändler</Text>
+            <Text>Meister Yerbateehändler:Meister Yerbateehändler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YERBA_TRADER</Tag>
-        <English>Master Yerba Tea Trader</English>
+        <English>Master Yerba Tea Trader:Master Yerba Tea Traders</English>
         <German>
-            <Text>Meister Yerbateehändler</Text>
+            <Text>Meister Yerbateehändler:Meister Yerbateehändler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -530,20 +530,20 @@
     <!-- OIL_TRADER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_OIL_TRADER</Tag>
-        <English>Master Cooking Oil Trader</English>
+        <English>Master Cooking Oil Trader:Master Cooking Oil Traders</English>
         <German>
-            <Text>Meister Kochölhändler</Text>
+            <Text>Meister Kochölhändler:Meister Kochölhändler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OIL_TRADER</Tag>
-        <English>Master Cooking Oil Trader</English>
+        <English>Master Cooking Oil Trader:Master Cooking Oil Trader</English>
         <German>
-            <Text>Meister Kochölhändler</Text>
+            <Text>Meister Kochölhändler:Meister Kochölhändler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -559,20 +559,20 @@
     <!-- FRUITS_PICKER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FRUITS_PICKER</Tag>
-        <English>Expert Fruit Picker</English>
+        <English>Expert Fruit Picker:Expert Fruit Picker</English>
         <German>
-            <Text>Erfahrener Früchtesammler</Text>
+            <Text>Erfahrener Früchtesammler:Erfahrener Früchtesammler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PICKER</Tag>
-        <English>Expert Fruit Picker</English>
+        <English>Expert Fruit Picker:Expert Fruit Picker</English>
         <German>
-            <Text>Erfahrener Früchtesammler</Text>
+            <Text>Erfahrener Früchtesammler:Erfahrener Früchtesammler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -588,20 +588,20 @@
     <!-- POULTRY_BUTCHER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_POULTRY_BUTCHER</Tag>
-        <English>Master Poultry Butcher</English>
+        <English>Master Poultry Butcher:Master Poultry Butchers</English>
         <German>
-            <Text>Meister Geflügelschlachter</Text>
+            <Text>Meister Geflügelschlachter:Meister Geflügelschlachter</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POULTRY_BUTCHER</Tag>
-        <English>Master Poultry Butcher</English>
+        <English>Master Poultry Butcher:Master Poultry Butchers</English>
         <German>
-            <Text>Meister Geflügelschlachter</Text>
+            <Text>Meister Geflügelschlachter:Meister Geflügelschlachter</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -617,20 +617,20 @@
     <!-- COAL_MINER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COAL_MINER</Tag>
-        <English>Expert Coal Miner</English>
+        <English>Expert Coal Miner:Expert Coal Miners</English>
         <German>
-            <Text>Erfahrener Kohlearbeiter</Text>
+            <Text>Erfahrener Kohlearbeiter:Erfahrene Kohlearbeiter</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COAL_MINER</Tag>
-        <English>Expert Coal Miner</English>
+        <English>Expert Coal Miner:Expert Coal Miner</English>
         <German>
-            <Text>Erfahrener Kohlearbeiter</Text>
+            <Text>Erfahrener Kohlearbeiter:Erfahrene Kohlearbeiter</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -646,20 +646,20 @@
     <!-- LEATHER_TAYLOR -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LEATHER_TAYLOR</Tag>
-        <English>Master Leather Clothier</English>
+        <English>Master Leather Clothier:Master Leather Clothiers</English>
         <German>
-            <Text>Meister Lederschneider</Text>
+            <Text>Meister Lederschneider:Meister Lederschneider</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LEATHER_TAYLOR</Tag>
-        <English>Master Leather Clothier</English>
+        <English>Master Leather Clothier:Master Leather Clothiers</English>
         <German>
-            <Text>Meister Lederschneider</Text>
+            <Text>Meister Lederschneider:Meister Lederschneider</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -675,20 +675,20 @@
     <!-- CLOTH_TAYLOR -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CLOTH_TAYLOR</Tag>
-        <English>Master Tailor</English>
+        <English>Master Tailor:Master Tailors</English>
         <German>
-            <Text>Erfahrener Kleiderschneider</Text>
+            <Text>Meister Kleiderschneider:Meister Kleiderschneider</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CLOTH_TAYLOR</Tag>
-        <English>Master Tailor</English>
+        <English>Master Tailor:Master Tailors</English>
         <German>
-            <Text>Meister Kleiderschneider</Text>
+            <Text>Meister Kleiderschneider:Meister Kleiderschneider</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -704,20 +704,20 @@
     <!-- ROASTER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROASTER</Tag>
-        <English>Master Roaster</English>
+        <English>Master Roaster:Master Roasters</English>
         <German>
-            <Text>Meister Röster</Text>
+            <Text>Meister Röster:Meister Röster</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROASTER</Tag>
-        <English>Master Roaster</English>
+        <English>Master Roaster:Master Roasters</English>
         <German>
-            <Text>Meister Röster</Text>
+            <Text>Meister Röster:Meister Röster</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -735,20 +735,20 @@
     <!-- POTTER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_POTTER</Tag>
-        <English>Master Potter</English>
+        <English>Master Potter:Master Potters</English>
         <German>
-            <Text>Meister Töpfer</Text>
+            <Text>Meister Töpfer:Meister Töpfer</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_POTTER</Tag>
-        <English>Master Potter</English>
+        <English>Master Potter:Master Potters</English>
         <German>
-            <Text>Meister Töpfer</Text>
+            <Text>Meister Töpfer:Meister Töpfer</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -764,20 +764,20 @@
     <!-- MILK_MAID -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MILK_MAID</Tag>
-        <English>Skilled Milkmaid</English>
+        <English>Skilled Milkmaid:Skilled Milkmaids</English>
         <German>
-            <Text>Fleißige Milchmaid</Text>
+            <Text>Fleißige Milchmaid:Fleißige Milchmaiden</Text>
             <Gender>Female</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MILK_MAID</Tag>
-        <English>Skilled Milkmaid</English>
+        <English>Skilled Milkmaid:Skilled Milkmaids</English>
         <German>
-            <Text>Fleißige Milchmaid</Text>
+            <Text>Fleißige Milchmaid:Fleißige Milchmaiden</Text>
             <Gender>Female</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -793,20 +793,20 @@
     <!-- CHEESE_MAKER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHEESE_MAKER</Tag>
-        <English>Master Cheese Maker</English>
+        <English>Master Cheese Maker:Master Cheese Makers</English>
         <German>
-            <Text>Meister Käsemacher</Text>
+            <Text>Meister Käsemacher:Meister Käsemacher</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHEESE_MAKER</Tag>
-        <English>Master Cheese Maker</English>
+        <English>Master Cheese Maker:Master Cheese Makers</English>
         <German>
-            <Text>Meister Käsemacher</Text>
+            <Text>Meister Käsemacher:Meister Käsemacher</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -822,20 +822,20 @@
     <!-- CHARCOAL_BURNER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHARCOAL_BURNER</Tag>
-        <English>Master Charcoal Burner</English>
+        <English>Master Charcoal Burner:Master Charcoal Burners</English>
         <German>
-            <Text>Meister Köhler</Text>
+            <Text>Meister Köhler:Meister Köhler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHARCOAL_BURNER</Tag>
-        <English>Master Charcoal Burner</English>
+        <English>Master Charcoal Burner:Master Charcoal Burners</English>
         <German>
-            <Text>Meister Köhler</Text>
+            <Text>Meister Köhler:Meister Köhler</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -851,20 +851,20 @@
     <!-- BAKER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BAKER</Tag>
-        <English>Master Baker</English>
+        <English>Master Baker:Master Bakers</English>
         <German>
-            <Text>Meister Bäcker</Text>
+            <Text>Meister Bäcker:Meister Bäcker</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BAKER</Tag>
-        <English>Master Baker</English>
+        <English>Master Baker:Master Bakers</English>
         <German>
-            <Text>Meister Bäcker</Text>
+            <Text>Meister Bäcker:Meister Bäcker</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -880,20 +880,20 @@
     <!-- FIREWORKER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FIREWORKER</Tag>
-        <English>Master Powder Maker</English>
+        <English>Master Powder Maker:Master Powder Makers</English>
         <German>
-            <Text>Meister Feuerwerker</Text>
+            <Text>Meister Feuerwerker:Meister Feuerwerker</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FIREWORKER</Tag>
-        <English>Master Powder Maker</English>
+        <English>Master Powder Maker:Master Powder Makers</English>
         <German>
-            <Text>Meister Feuerwerker</Text>
+            <Text>Meister Feuerwerker:Meister Feuerwerker</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -909,20 +909,20 @@
     <!-- MESTIZZO -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MESTIZZO</Tag>
-        <English>Mestizzo</English>
+        <English>Mestizo:Mestizos</English>
         <German>
-            <Text>Mestizo</Text>
+            <Text>Mestizo:Mestizos</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MESTIZZO</Tag>
-        <English>Mestizo</English>
+        <English>Mestizo:Mestizos</English>
         <German>
-            <Text>Mestizzo</Text>
+            <Text>Mestizo:Mestizos</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -938,20 +938,20 @@
     <!-- MULATTO -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MULATTO</Tag>
-        <English>Mulatto</English>
+        <English>Mulatto:Mulattos</English>
         <German>
-            <Text>Mulatto</Text>
+            <Text>Mulatto:Mulattos</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MULATTO</Tag>
-        <English>Mulatto</English>
+        <English>Mulatto:Mulattos</English>
         <German>
-            <Text>Mulatto</Text>
+            <Text>Mulatto:Mulattos</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -967,18 +967,18 @@
     <!-- CONSTRUCTION_SUPPLIES -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CONSTRUCTION_SUPPLIES</Tag>
-        <English>Construction Supplies</English>
+        <English>Construction Supplies:Construction Supplies</English>
         <German>
-            <Text>Baumaterial</Text>
+            <Text>Baumaterial:Baumaterialien</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES</Tag>
-        <English>Construction Supplies</English>
+        <English>Construction Supplies:Construction Supplies</English>
         <German>
-            <Text>Baumaterial</Text>
+            <Text>Baumaterial:Baumaterialien</Text>
             <Gender>Neuter</Gender>
             <Plural>0</Plural>
         </German>
@@ -996,18 +996,18 @@
     <!-- BRAVE_LIEUTENANT -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_BRAVE_LIEUTENANT</Tag>
-        <English>Brave Lieutenant</English>
+        <English>Brave Lieutenant:Brave Lieutenants</English>
         <German>
-            <Text>Mutiger Leutnant</Text>
+            <Text>Mutiger Leutnant:Mutige Leutnants</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT</Tag>
-        <English>Brave Lieutenant</English>
+        <English>Brave Lieutenant:Brave Lieutenants</English>
         <German>
-            <Text>Mutiger Leutnant</Text>
+            <Text>Mutiger Leutnant:Mutige Leutnants</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -1025,18 +1025,18 @@
     <!-- CAPABLE_CAPTAIN -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CAPABLE_CAPTAIN</Tag>
-        <English>Capable Captain</English>
+        <English>Capable Captain:Capable Captains</English>
         <German>
-            <Text>Fähiger Kapitän</Text>
+            <Text>Fähiger Kapitän:Fähige Kapitäne</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN</Tag>
-        <English>Capable Captain</English>
+        <English>Capable Captain:Capable Captains</English>
         <German>
-            <Text>Fähiger Kapitän</Text>
+            <Text>Fähiger Kapitän:Fähige Kapitäne</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -1054,20 +1054,20 @@
     <!-- ENTERTAINER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ENTERTAINER</Tag>
-        <English>Famous Actress</English>
+        <English>Famous Actress:Famous Actresses</English>
         <German>
-            <Text>Berühmte Schauspielerin</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Text>Berühmte Schauspielerin:Berühmte Schauspielerinnen</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ENTERTAINER</Tag>
-        <English>Famous Actress</English>
+        <English>Famous Actress:Famous Actresses</English>
         <German>
-            <Text>Berühmte Schauspielerin</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Text>Berühmte Schauspielerin:Berühmte Schauspielerinnen</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -1083,20 +1083,20 @@
     <!-- HARLOT -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HARLOT</Tag>
-        <English>Seductive Harlot</English>
+        <English>Seductive Harlot:Seductive Harlots</English>
         <German>
-            <Text>Verführerische Dirne</Text>
+            <Text>Verführerische Dirne:Verführerische Dirnen</Text>
             <Gender>Female</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HARLOT</Tag>
-        <English>Seductive Harlot</English>
+        <English>Seductive Harlot:Seductive Harlots</English>
         <German>
-            <Text>Verführerische Dirne</Text>
+            <Text>Verführerische Dirne:Verführerische Dirnen</Text>
             <Gender>Female</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
@@ -1112,20 +1112,20 @@
     <!-- JUDGE -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_JUDGE</Tag>
-        <English>Honored Judge</English>
+        <English>Honored Judge:Honored Judges</English>
         <German>
-            <Text>Ehrenwerter Richter</Text>
+            <Text>Ehrenwerter Richter:Ehrenwerte Richter</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_JUDGE</Tag>
-        <English>Honored Judge</English>
+        <English>Honored Judge:Honored Judges</English>
         <German>
-            <Text>Ehrenwerter Richter</Text>
+            <Text>Ehrenwerter Richter:Ehrenwerte Richter</Text>
             <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
