@@ -6776,6 +6776,8 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 
 	changeTraitCount(eTrait, iChange);
 
+	CivEffect()->applyCivEffect(kTrait.getCivEffect(), iChange);
+
 	changeLevelExperienceModifier(kTrait.getLevelExperienceModifier() * iChange);
 	changeGreatGeneralRateModifier(kTrait.getGreatGeneralRateModifier() * iChange);
 	changeDomesticGreatGeneralRateModifier(kTrait.getDomesticGreatGeneralRateModifier() * iChange);
