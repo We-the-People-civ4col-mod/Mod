@@ -12109,7 +12109,7 @@
             </FeatureBooleans>
             <FeatureTerrainBooleans>
                 <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_SHRUBLAND</TerrainType>
+                    <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
