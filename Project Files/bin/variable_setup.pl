@@ -272,6 +272,7 @@ sub structEnum
 	my $name = shift;
 	my $type = $var{$name}{type};
 	
+	$output .= "\tstatic const char* getName() { return \"" . $name . "\";}\n";
 	$output .= "\tstatic const VariableTypes TYPE = (int)" . $var{$name}{COMPILE} . " < 128 ? VARIABLE_TYPE_CHAR : VARIABLE_TYPE_SHORT;\n";
 	$output .= "\tstatic const VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING = (int)" . $var{$name}{LENGTH_KNOWN_WHILE_COMPILING} . " != MAX_SHORT ? VARIABLE_LENGTH_ALL_KNOWN : VARIABLE_LENGTH_FIRST_KNOWN;\n";
 	$output .= "\tstatic const $type FIRST = " . $var{$name}{START} . ";\n";

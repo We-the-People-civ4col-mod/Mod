@@ -82,6 +82,7 @@ foreach my $enum (@enums)
 	handleOperators($enum);
 	
 	$output .= "template <> struct VARINFO<" . $enum . ">\n{\n";
+	$output .= "\tstatic const char* getName() { return \"" . $enum . "\";}\n";
 	$output .= "\tstatic $enum start() { return " . getFirstName($upperName) . ";}\n";
 	$output .= "\tstatic $enum end() { return " . getMaxName($upperName) . ";}\n";
 	$output .= "};\n";
