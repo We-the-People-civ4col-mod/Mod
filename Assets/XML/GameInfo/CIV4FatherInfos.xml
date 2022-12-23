@@ -1346,6 +1346,40 @@
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,6,15</Button>
         </FatherInfo>
         <FatherInfo>
+            <Type>FATHER_JUAN_DE_PAREJA</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/Juan_De_Pareja.dds</Portrait>
+            <Description>TXT_KEY_FATHER_JUAN_DE_PAREJA</Description>
+            <Civilopedia>TXT_KEY_FATHER_JUAN_DE_PAREJA_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_JUAN_DE_PAREJA_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_TRADE</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_MESTIZZO</UnitClass>
+                    <iFreeUnits>2</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_MULATTO</UnitClass>
+                    <iFreeUnits>2</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_TRADE</FatherPointType>
+                    <iCost>6750</iCost>
+                </FatherPointCost>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>5250</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_JUAN_DE_PAREJA</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,8,15</Button>
+        </FatherInfo>
+        <FatherInfo>
             <Type>FATHER_ALEXANDER_HAMILTON</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Alexander_Hamilton.dds</Portrait>
             <Description>TXT_KEY_FATHER_ALEXANDER_HAMILTON</Description>
@@ -1357,11 +1391,11 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_TRADE</FatherPointType>
-                    <iCost>6750</iCost>
+                    <iCost>7000</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>5250</iCost>
+                    <iCost>5500</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_ALEXANDER_HAMILTON</Trait>
@@ -1387,11 +1421,11 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_TRADE</FatherPointType>
-                    <iCost>7000</iCost>
+                    <iCost>7250</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>5500</iCost>
+                    <iCost>5750</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_JOHN_AUGUST_SUTTER</Trait>

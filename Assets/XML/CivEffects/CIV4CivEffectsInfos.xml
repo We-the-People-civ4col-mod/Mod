@@ -140,7 +140,7 @@
 				</AllowRoute>
 			</AllowRoutes>
 		</TagGroupAllow>
-	</CivEffectInfo>	
+	</CivEffectInfo>
 	<CivEffectInfo>
 		<Type>CIV_EFFECT_TRAIT_SOPHISTICATED</Type>
 		<TagGroupGrowth>
@@ -169,6 +169,13 @@
 		<Type>CIV_EFFECT_TRAIT_TOLERANT</Type>
 		<TagGroupGrowth>
 			<iLearningByDoingModifier>20</iLearningByDoingModifier>
+		</TagGroupGrowth>
+	</CivEffectInfo>
+	<CivEffectInfo>
+		<Type>CIV_EFFECT_TRAIT_JUAN_DE_PAREJA</Type>
+		<TagGroupGrowth>
+			<iNumUnitsOnDockChange>1</iNumUnitsOnDockChange>
+			<iLearningByDoingModifier>10</iLearningByDoingModifier>
 		</TagGroupGrowth>
 	</CivEffectInfo>
 </Civ4CivEffectInfos>

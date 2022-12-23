@@ -10566,6 +10566,21 @@ void CvGameTextMgr::parseCivEffects(CvWStringBuffer &szHelpString, CivEffectType
 			szHelpString.append(gDLL->getText("TXT_KEY_FATHER_LEARNING_BY_DOING_MODIFIER", kEffect.getLearningByDoingModifier()));
 		}
 	}
+
+	// WTP, ray, Civ Effects, Units waiting on Dock change - START
+	if (!bDawnOfMan)
+	{
+		if (kEffect.getNumUnitsOnDockChange() != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			szHelpString.append(gDLL->getText("TXT_KEY_CIV_EFFECT_NUM_UNITS_WAITING_ON_DOCK", kEffect.getNumUnitsOnDockChange()));
+		}
+	}
+	// WTP, ray, Civ Effects, Units waiting on Dock change - END
 }
 // CivEffects - Nightinggale - end
 

@@ -1234,9 +1234,19 @@
         <German>[ICON_BULLET]%D1%% Zeit für Wachstum von Geländeverbesserungen</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_CIV_EFFECT_NUM_UNITS_WAITING_ON_DOCK</Tag>
+        <English>[ICON_BULLET][COLOR_CYAN]%D1 Emigrants[COLOR_REVERT] waiting on the Docks in Europe</English>
+        <German>[ICON_BULLET][COLOR_CYAN]%D1 Auswanderer[COLOR_REVERT] warten an den Docks in Europa</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_MODIFIER</Tag>
         <English>[ICON_BULLET]%D1%% chance colonists learn a specialization by hard work</English>
         <German>[ICON_BULLET]%D1%% Chance für Kolonisten durch harte Arbeit zum Spezialisten zu werden</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_FREE_MODIFIER</Tag>
+        <English>[ICON_BULLET]%D1%% chance for workers to become </English>
+        <German>[ICON_BULLET]%D1%% Chance für Unfreie durch harte Arbeit zum freien Kolonisten zu werden</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_FREE_MODIFIER</Tag>

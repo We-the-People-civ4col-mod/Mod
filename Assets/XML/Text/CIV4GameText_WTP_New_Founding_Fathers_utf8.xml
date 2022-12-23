@@ -389,4 +389,32 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+    <!-- JUAN_DE_PAREJA -->
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JUAN_DE_PAREJA</Tag>
+        <English>
+            <Text>Juan de Pareja</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </English>
+        <German>
+            <Text>Juan de Pareja</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_JUAN_DE_PAREJA</Tag>
+        <English>TXT_KEY_FATHER_JUAN_DE_PAREJA</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JUAN_DE_PAREJA_PEDIA</Tag>
+        <English>[H1]Juan de Pareja[\H1][NEWLINE][BOLD]Lived : [\BOLD]1606 - 1670[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <German>[H1]Juan de Pareja[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1606 - 1670[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_JUAN_DE_PAREJA_STRATEGY</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>
