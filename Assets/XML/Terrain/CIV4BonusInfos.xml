@@ -10972,10 +10972,6 @@
                     <TerrainType>TERRAIN_GRASS</TerrainType>
                     <bFeatureTerrain>1</bFeatureTerrain>
                 </FeatureTerrainBoolean>
-                <FeatureTerrainBoolean>
-                    <TerrainType>TERRAIN_WETLAND</TerrainType>
-                    <bFeatureTerrain>1</bFeatureTerrain>
-                </FeatureTerrainBoolean>
             </FeatureTerrainBooleans>
         </BonusInfo>
         <BonusInfo>
