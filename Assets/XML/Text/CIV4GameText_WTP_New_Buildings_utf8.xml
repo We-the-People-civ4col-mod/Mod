@@ -817,7 +817,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_VILLAGE_COURT</Tag>
-        <English>Village Courthous</English>
+        <English>Village Courthouse</English>
         <German>
             <Text>Dorfgerichtshaus</Text>
             <Gender>Neuter</Gender>
@@ -853,7 +853,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGE_COURT</Tag>
-        <English>Village Courthous</English>
+        <English>Village Courthouse</English>
         <German>
             <Text>Dorfgerichtshaus</Text>
             <Gender>Neuter</Gender>
