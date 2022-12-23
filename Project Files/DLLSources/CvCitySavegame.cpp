@@ -614,7 +614,7 @@ void CvCity::read(CvSavegameReader reader)
 
 		// make sure we won't read corrupted extreme domestic prices - Nightinggale
 		const CvYieldInfo& kInfo = GC.getInfo(eYield);
-		int iMaxPrice = kInfo.getBuyPriceHigh() + 10;
+		int iMaxPrice = (kInfo.getBuyPriceHigh() * 2) + 10;
 		if (getYieldBuyPrice(eYield) > iMaxPrice)
 		{
 			setYieldBuyPrice(eYield, iMaxPrice);
