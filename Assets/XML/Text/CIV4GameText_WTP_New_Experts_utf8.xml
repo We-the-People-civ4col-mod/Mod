@@ -365,7 +365,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HERDER</Tag>
-        <English>Expert Herder:Expert Herder</English>
+        <English>Expert Herder:Expert Herders</English>
         <German>
             <Text>Erfahrener Hirte:Erfahrene Hirten</Text>
             <Gender>Male</Gender>
@@ -539,7 +539,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_OIL_TRADER</Tag>
-        <English>Master Cooking Oil Trader:Master Cooking Oil Trader</English>
+        <English>Master Cooking Oil Trader:Master Cooking Oil Traders</English>
         <German>
             <Text>Meister Kochölhändler:Meister Kochölhändler</Text>
             <Gender>Male</Gender>
@@ -559,18 +559,18 @@
     <!-- FRUITS_PICKER -->
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_FRUITS_PICKER</Tag>
-        <English>Expert Fruit Picker:Expert Fruit Picker</English>
+        <English>Expert Fruit Picker:Expert Fruit Pickers</English>
         <German>
-            <Text>Erfahrener Früchtesammler:Erfahrener Früchtesammler</Text>
+            <Text>Erfahrener Früchtesammler:Erfahrene Früchtesammler</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS_PICKER</Tag>
-        <English>Expert Fruit Picker:Expert Fruit Picker</English>
+        <English>Expert Fruit Picker:Expert Fruit Pickers</English>
         <German>
-            <Text>Erfahrener Früchtesammler:Erfahrener Früchtesammler</Text>
+            <Text>Erfahrener Früchtesammler:Erfahrene Früchtesammler</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
