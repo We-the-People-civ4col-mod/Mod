@@ -1279,8 +1279,19 @@ void CvMap::updateWaterPlotTerrainTypes()
 				bool isSmallEnoughForLake = kRegion.getNumPlots() < 50;
 				if (isSmallEnoughForLake)
 				{
-					// Ice Lakes only in Lattitudes (North or South) above 75 degrees - else normal Lakes
-					bool bIsBetterIceLake = kRegion.getPlot(iPlot)->getLatitude() > 75;
+					// Ice Lakes if TERRAIN_SNOW is adjacent or another TERRAIN_ICE_LAKE
+					bool bIsBetterIceLake = false;
+					CvPlot* pAdjacentPlot;
+					for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+					{
+						pAdjacentPlot = plotDirection(kRegion.getPlot(iPlot)->getX_INLINE(), kRegion.getPlot(iPlot)->getY_INLINE(), ((DirectionTypes)iI));
+
+						if (pAdjacentPlot != NULL && (pAdjacentPlot->getTerrainType() == TERRAIN_SNOW || pAdjacentPlot->getTerrainType() == TERRAIN_ICE_LAKE))
+						{
+							bIsBetterIceLake = true;
+							break; // we can break if we found one
+						}
+					}
 
 					if (bIsBetterIceLake)
 					{
