@@ -10570,7 +10570,6 @@ void CvGameTextMgr::parseCivEffects(CvWStringBuffer &szHelpString, CivEffectType
 	// WTP, ray, Civ Effects, Units waiting on Dock change - START
 	if (!bDawnOfMan)
 	{
-		// we do not want to show the default value, even if I have to hardcode it now
 		if (kEffect.getNumUnitsOnDockChange() != 0)
 		{
 			szHelpString.append(NEWLINE);
