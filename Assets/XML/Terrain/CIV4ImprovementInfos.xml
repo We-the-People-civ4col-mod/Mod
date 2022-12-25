@@ -2821,7 +2821,7 @@
             <BonusTypeStructs>
                 <BonusTypeStruct>
                     <BonusType>BONUS_SALT</BonusType>
-                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <bBonusMakesValid>0</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
                     <YieldChanges>
                         <YieldIntegerPair>
