@@ -20938,9 +20938,11 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>800</iEuropeCost>
-            <iEuropeCostIncrease>100</iEuropeCostIncrease>
-            <iImmigrationWeight>100</iImmigrationWeight>
+            <iEuropeCost>-1</iEuropeCost>
+            <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iPortRoyalCost>1500</iPortRoyalCost>
+            <iPortRoyalCostIncrease>100</iPortRoyalCostIncrease>
+            <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
             <iMoves>1</iMoves>
@@ -21516,9 +21518,11 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>800</iEuropeCost>
-            <iEuropeCostIncrease>100</iEuropeCostIncrease>
-            <iImmigrationWeight>100</iImmigrationWeight>
+            <iEuropeCost>-1</iEuropeCost>
+            <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iPortRoyalCost>1500</iPortRoyalCost>
+            <iPortRoyalCostIncrease>100</iPortRoyalCostIncrease>
+            <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>
             <iMoves>1</iMoves>

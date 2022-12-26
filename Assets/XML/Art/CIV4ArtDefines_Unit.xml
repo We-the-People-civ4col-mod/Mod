@@ -301,8 +301,8 @@
             <Type>ART_DEF_UNIT_PROSPECTOR</Type>
             <Button>,Art/colonization_atlas_units.dds,7,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/prospector.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fScale>0.50</fScale>
+            <fInterfaceScale>0.86</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Prospector/Expert_Ore_Miner.nif</NIF>
             <KFM>Art/Units/Expert_Ore_Miner/Expert_Ore_Miner.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -454,7 +454,7 @@
             <Type>ART_DEF_UNIT_MASTER_FIREWORKER</Type>
             <Button>,Art/colonization_atlas_units_two.dds,2,2</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Fireworker.dds</FullLengthIcon>
-            <fScale>0.50</fScale>
+            <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Fireworker/Expert_Lumberjack.nif</NIF>
             <KFM>Art/Units/Settler/Master_Fireworker/Expert_Lumberjack.kfm</KFM>
@@ -559,7 +559,7 @@
             <Button>,Art/colonization_atlas_units.dds,8,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Yerba_Tea_Trader.dds</FullLengthIcon>
             <fScale>0.55</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fInterfaceScale>0.86</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Yerba_Tea_Trader/Indentured_Servant.nif</NIF>
             <KFM>Art/Units/Settler/Master_Yerba_Tea_Trader/Indentured_Servant.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -781,7 +781,7 @@
             <Type>ART_DEF_UNIT_RANCHER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Rancher.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Expert_Rancher/Expert_Rancher.nif</NIF>
             <KFM>Art/Units/Expert_Rancher/Expert_Rancher.kfm</KFM>
@@ -926,7 +926,7 @@
             <Button>,Art/colonization_atlas_units_two.dds,4,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/city_management/Master_Coffee_Trader.dds</FullLengthIcon>
             <fScale>0.50</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fInterfaceScale>0.86</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Coffee_Trader/Master_Tobacconist.nif</NIF>
             <KFM>Art/Units/Settler/Master_Coffee_Trader/Master_Tobacconist.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -978,8 +978,8 @@
             <Type>ART_DEF_UNIT_EMIGRANT</Type>
             <Button>,Art/colonization_atlas_units.dds,3,5</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/emigrant.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fScale>0.49</fScale>
+            <fInterfaceScale>0.87</fInterfaceScale>
             <NIF>Art/Units/Settler/european_emigrant/Elder_Statesman.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -1029,8 +1029,8 @@
             <Type>ART_DEF_UNIT_JUDGE</Type>
             <Button>,Art/colonization_atlas_units_two.dds,7,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/judge.dds</FullLengthIcon>
-            <fScale>0.50</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fScale>0.52</fScale>
+            <fInterfaceScale>0.84</fInterfaceScale>
             <NIF>Art/Units/settler/judge/judge.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -12743,7 +12743,7 @@
             <Button>,Art/colonization_atlas_units.dds,8,6</Button>
             <FullLengthIcon>Art/Interface/Screens/City_Management/Slave_Hunter.dds</FullLengthIcon>
             <fScale>0.55</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fInterfaceScale>0.86</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Slave_Hunter/Indentured_Servant.nif</NIF>
             <KFM>Art/Units/Special_Military/Slave_Hunter/Indentured_Servant.kfm</KFM>
             <fBattleDistance>0.5</fBattleDistance>
@@ -13050,8 +13050,8 @@
             <Type>ART_DEF_UNIT_VETERAN_TOWN_GUARD</Type>
             <Button>,Art/colonization_atlas_military.dds,3,9</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/town_guard_specialist.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fScale>0.57</fScale>
+            <fInterfaceScale>0.84</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Specialists/Town_Guard/Hardy_Pioneer_NT.nif</NIF>
             <KFM>Art/Units/Special_Military/Specialists/Town_Guard/Hardy_Pioneer_NT.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -13101,8 +13101,8 @@
             <Type>ART_DEF_UNIT_ROYAL_HALBERDIER</Type>
             <Button>,Art/colonization_atlas_military.dds,3,11</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/infantry_line_specialist.dds</FullLengthIcon>
-            <fScale>0.55</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fScale>0.57</fScale>
+            <fInterfaceScale>0.84</fInterfaceScale>
             <NIF>Art/Units/Special_Military/Specialists/Town_Guard_Royal/Hardy_Pioneer_NT.nif</NIF>
             <KFM>Art/Units/Special_Military/Specialists/Town_Guard/Hardy_Pioneer_NT.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -17195,8 +17195,8 @@
             <Type>ART_DEF_UNIT_CASSAVA_PLANTER</Type>
             <Button>,Art/colonization_atlas_units_two.dds,2,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Cassava_Planter.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fScale>0.50</fScale>
+            <fInterfaceScale>0.86</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Cassava_Planter/Expert_Tobacco_Planter.nif</NIF>
             <KFM>Art/Units/Expert_Tobacco_Planter/Expert_Tobacco_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -17471,7 +17471,7 @@
             <Type>ART_DEF_UNIT_HOUSEHOLD_TRADER</Type>
             <Button>,Art/colonization_atlas_units_two.dds,2,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Household_Goods_Trader.dds</FullLengthIcon>
-            <fScale>0.57</fScale>
+            <fScale>0.60</fScale>
             <fInterfaceScale>0.78</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Household_Goods_Trader/Indentured_Servant.nif</NIF>
             <KFM>Art/Units/Settler/Master_Household_Goods_Trader/Indentured_Servant.kfm</KFM>
@@ -17505,8 +17505,8 @@
             <Type>ART_DEF_UNIT_FRUITS_PICKER</Type>
             <Button>,Art/colonization_atlas_units_two.dds,8,3.dds</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Fruits_Collector.dds</FullLengthIcon>
-            <fScale>0.50</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fScale>0.55</fScale>
+            <fInterfaceScale>0.84</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Fruits_Collector/settler_male.nif</NIF>
             <KFM>Art/Units/Settler/Expert_Fruits_Collector/settler_male.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -17522,7 +17522,7 @@
             <Type>ART_DEF_UNIT_POULTRY_BUTCHER</Type>
             <Button>,Art/colonization_atlas_units_two.dds,1,1</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Master_Poultry_butcher.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Master_Poultry_butcher/butcher.nif</NIF>
             <KFM>Art/Units/Master_Gunsmith/Master_Gunsmith.kfm</KFM>
@@ -17539,7 +17539,7 @@
             <Type>ART_DEF_UNIT_COAL_MINER</Type>
             <Button>,Art/colonization_atlas_units_two.dds,6,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Expert_Coal_Miner.dds</FullLengthIcon>
-            <fScale>0.5</fScale>
+            <fScale>0.49</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Expert_Coal_Miner/Expert_Silver_Miner.nif</NIF>
             <KFM>Art/Units/Settler/Expert_Coal_Miner/Expert_Silver_Miner.kfm</KFM>
@@ -17644,7 +17644,7 @@
             <Button>,Art/colonization_atlas_units.dds,4,7</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Mestizzo.dds</FullLengthIcon>
             <fScale>0.50</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fInterfaceScale>0.86</fInterfaceScale>
             <NIF>Art/Units/Settler/Mestizzo/Expert_Cotton_Planter.nif</NIF>
             <KFM>Art/Units/Settler/Mestizzo/Expert_Cotton_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
@@ -17661,7 +17661,7 @@
             <Button>,Art/colonization_atlas_units.dds,3,7</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Mulatto.dds</FullLengthIcon>
             <fScale>0.50</fScale>
-            <fInterfaceScale>0.88</fInterfaceScale>
+            <fInterfaceScale>0.86</fInterfaceScale>
             <NIF>Art/Units/Settler/Mulatto/Expert_Cotton_Planter.nif</NIF>
             <KFM>Art/Units/Settler/Mulatto/Expert_Cotton_Planter.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
