@@ -39,8 +39,10 @@ my @enumsToNotUseEnumCounter =
 
 my $FILE         = getAutoDir() . "/AutoGlobalDefineEnum.h";
 my $FILE_CPP     = getAutoDir() . "/AutoGlobalDefineEnumCpp.h";
+my $FILE_CASE    = getAutoDir() . "/AutoGlobalDefineEnumCase.h";
 
 my $output         = "";
+my $output_case    = "";
 
 $output .= "#ifndef AUTO_XML_ENUM_GLOBAL\n";
 $output .= "#define AUTO_XML_ENUM_GLOBAL\n";
@@ -78,14 +80,34 @@ foreach my $enum (@enums)
 {
 	next if shouldSkipEnum($enum);
 	my $upperName = getEnumUpperCase($enum);
+	my $numTypes = getMaxName($upperName);
+	my $first = getFirstName($upperName);
+	my $jit = "JIT_ARRAY_" . $upperName;
+	
+	addgetIndexOfTypeCase($enum, $jit);
 	
 	handleOperators($enum);
 	
 	$output .= "template <> struct VARINFO<" . $enum . ">\n{\n";
+	$output .= "\tstatic const JITarrayTypes JIT = " . $jit . ";\n";
+	$output .= "\tstatic const $enum DEFAULT = static_cast<$enum>(-1);\n";
 	$output .= "\tstatic const char* getName() { return \"" . $enum . "\";}\n";
-	$output .= "\tstatic $enum start() { return " . getFirstName($upperName) . ";}\n";
-	$output .= "\tstatic $enum end() { return " . getMaxName($upperName) . ";}\n";
+	$output .= "\tstatic const VariableTypes TYPE = (int)" . $numTypes . " < 128 ? VARIABLE_TYPE_CHAR : VARIABLE_TYPE_SHORT;\n";
+	$output .= "\tstatic const VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING = VARIABLE_LENGTH_ALL_KNOWN;\n";
+	$output .= "\tstatic const $enum FIRST = " . $first . ";\n";
+	$output .= "\tstatic const $enum LAST = " . $numTypes . ";\n";
+	$output .= "\tstatic const $enum NUM_ELEMENTS = " . $numTypes . ";\n";
+	$output .= "\tstatic const $enum LENGTH = " . $numTypes . ";\n";
+	$output .= "\tstatic $enum start() { return " . $first . ";}\n";
+	$output .= "\tstatic $enum end() { return " . $numTypes . ";}\n";
+	$output .= "\tstatic $enum length() { return $numTypes;}\n";
+	$output .= "\tstatic bool isInRange($enum eIndex) { return eIndex >= FIRST && eIndex <= LAST;}\n";
+	$output .= "\ttemplate <int T> struct STATIC {\n";
+	$output .= "\t\tstatic const VariableStaticTypes VAL = T * ((int)TYPE == (int)VARIABLE_TYPE_CHAR ? 1 : 2) <= 4 ? VARIABLE_TYPE_STATIC : VARIABLE_TYPE_DYNAMIC;\n";
+	$output .= "\t};\n";
 	$output .= "};\n";
+	
+	handleInfoArray($enum, $jit);
 }
 
 $output .= "#endif\n";
@@ -123,6 +145,7 @@ foreach my $enum (@enums)
 }
 
 writeFile($FILE_CPP     , \$output        );
+writeFile($FILE_CASE    , \$output_case   );
 
 
 exit();
@@ -243,6 +266,16 @@ sub nextSibling
 	return $element;
 }
 
+sub removeType
+{
+	my $type = shift;
+	if (substr($type, -5) eq "Types")
+	{
+		$type = substr($type, 0, -5);
+	}
+	return $type;
+}
+
 sub getEnumUpperCase
 {
 	my $original = shift;
@@ -308,4 +341,101 @@ sub operatorAdd
 	$output .= "{\n";
 	$output .= "\treturn static_cast<$type>((int)A $operator (int)B);\n";
 	$output .= "};\n";
+}
+
+sub addgetIndexOfTypeCase
+{
+	my $type = shift;
+	my $jit  = shift;
+	
+	return if $jit eq "NO_JIT_ARRAY_TYPE";
+	
+	$output_case .= "\t\tcase $jit:\n";
+	$output_case .= "\t\t{\n";
+	$output_case .= "\t\t\t$type eTmp;\n";
+	$output_case .= "\t\t\treturn getIndexOfType(eTmp, szType);\n";
+	$output_case .= "\t\t}\n";
+}
+
+sub handleInfoArray
+{
+	my $type = shift;
+	my $jit  = shift;
+	
+	return if $jit eq "NO_JIT_ARRAY_TYPE";
+	
+	handleInfoArraySingle($type, 1);
+	handleInfoArraySingle($type, 2);
+	handleInfoArraySingle($type, 3);
+	handleInfoArraySingle($type, 4);
+
+}sub handleInfoArraySingle
+{
+	my $type = shift;
+	my $id = shift;
+	my $get = "get" . removeType($type);
+	my $index = $id - 1;
+	
+	$get = "getFontSymbol" if $get eq "getFontSymbols";
+	
+	$output .= "template<" . addtemplates("typename T", $id, 0) . ">\nclass InfoArray$id<" . addtemplates("typename T", $id, 1) . $type . ">\n\t: ";
+	$output .= "public InfoArray$index<" . addtemplates("T", $id, 0) . ">\n" unless $id == 1;
+	$output .= "protected InfoArrayBase\n\t, public boost::noncopyable\n" if $id == 1;
+	$output .= "{\n";
+	$output .= "\tfriend class CyInfoArray;\n";
+	$output .= "public:\n";
+	if ($id == 1)
+	{
+		$output .= "\tint getLength() const\n\t{\n\t\treturn InfoArrayBase::getLength();\n\t}\n";
+		$output .= "\t$type get(int iIndex) const\n";
+		$output .= "\t{\n";
+		$output .= "\t\treturn static_cast<$type>(getInternal(iIndex, $index));\n";
+		$output .= "\t}\n";
+	}
+	$output .= "\t$type get$index(int iIndex) const\n";
+	$output .= "\t{\n";
+	$output .= "\t\treturn static_cast<$type>(getInternal(iIndex, $index));\n";
+	$output .= "\t}\n";
+	$output .= "\t$type $get(int iIndex) const\n";
+	$output .= "\t{\n";
+	$output .= "\t\treturn static_cast<$type>(getInternal(iIndex, $index));\n";
+	$output .= "\t}\n";
+	$output .= "\tint getIndexOf($type eValue) const\n";
+	$output .= "\t{\n";
+	$output .= "\t\treturn _getIndexOf(eValue, $index);\n";
+	$output .= "\t}\n";
+	$output .= "protected:\n";
+	$output .= "friend class CvCity;\n" if $id == 1;
+	$output .= "friend class CvGlobals;\n" if $id == 1;
+	$output .= "friend class CivEffectInfo;\n" if $id == 1;
+	$output .= "friend class CvPlayerCivEffect;\n" if $id == 1;
+	$output .= "friend class CvInfoBase;\n" if $id == 1;
+	$output .= "\tInfoArray$id(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)\n";
+	$output .= "\t\t: InfoArray" . ($id - 1) . "<" . addtemplates("T", $id, 0) . ">(eType0, eType1, eType2, eType3) {}\n" unless $id == 1;
+	$output .= "\t\t: InfoArrayBase(eType0, eType1, eType2, eType3) {}\n" if $id == 1;
+	$output .= "};\n";
+}
+
+sub addtemplates
+{
+	my $str = shift;
+	my $id = shift;
+	my $append_comma = shift;
+	
+	my $return = "";
+	
+	my $i = 1;
+	
+	return $return if $i == $id;
+	$return .=  $str . "0";
+	$i = 2;
+	
+	while ($i < $id)
+	{
+		$return .=  ", " . $str . ($i - 1);
+		$i += 1;
+	}
+	
+	$return .= ", " if $append_comma;
+	return $return;
 }

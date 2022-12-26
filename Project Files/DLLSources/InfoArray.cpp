@@ -378,7 +378,7 @@ void InfoArrayBase::readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vect
 			if (eType < JIT_ARRAY_NO_TYPE || eType >= MAX_JIT_ARRAY_VALUE)
 			{
 				// read type and convert to int
-				iValue = getIndexForType(eType, szTextVal);
+				iValue = getIndexOfType(eType, szTextVal);
 				if (iValue < 0)
 				{
 					CvWString wideType(szType);
