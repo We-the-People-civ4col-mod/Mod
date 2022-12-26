@@ -63814,7 +63814,7 @@
                     <iRangedWaveSize>0</iRangedWaveSize>
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_DOCTOR</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_JUDGE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
                 <UnitMeshGroups>

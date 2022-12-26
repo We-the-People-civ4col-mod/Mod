@@ -959,11 +959,11 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_STATESMAN</Type>
-            <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,3</Button>
+            <Button>,Art/colonization_atlas_units_two.dds,6,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Elder_Statesman.dds</FullLengthIcon>
             <fScale>0.48</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Elder_Statesman/Elder_Statesman.nif</NIF>
+            <NIF>Art/Units/Settler/Elder_Statesman/Elder_Statesman.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
@@ -1015,6 +1015,23 @@
             <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/Settler/Governor/Elder_Statesman.nif</NIF>
+            <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_JUDGE</Type>
+            <Button>,Art/colonization_atlas_units.dds,3,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/judge.dds</FullLengthIcon>
+            <fScale>0.48</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Settler/judge/judge.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
