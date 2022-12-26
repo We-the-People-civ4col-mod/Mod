@@ -381,12 +381,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_BENJAMIN_KISSAM_PEDIA</Tag>
-        <English>[H1]Benjamin Kissam[\H1][NEWLINE][BOLD]Lived : [\BOLD]1728 - 1782[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]TBD</English>
+        <English>[H1]Benjamin Kissam[\H1][NEWLINE][BOLD]Lived : [\BOLD]1728 - 1782[PARAGRAPH:2:1][BOLD]Background :[\BOLD][NEWLINE][TAB]Benjamin Kissam was a prominent lawyer in New York City who trained prospective lawyers. One of his clerks was John Jay. Kissam's wife was Catherine Rutgers, whose family owned a large amount of land in New York, and his brother Daniel was a judge.[NEWLINE][TAB]Kissam represented the proprietors of the Kayoderosseras, a huge area of former Mohawk land. The Native nation felt the land patent granted to colonists in the early eighteenth century was unfair. Kissam acted for the proprietors in reaching a new settlement with the Mohawk in 1768.</English>
         <German>[H1]Benjamin Kissam[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1728 - 1782[PARAGRAPH:2:1][BOLD]Hintergrund :[\BOLD][NEWLINE][TAB]TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_BENJAMIN_KISSAM_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Boost your political status with [COLOR_TECH_TEXT]Benjamin Kissam[COLOR_REVERT]. This Founding Father gives you two [COLOR_BUILDING_TEXT]honoured judges[COLOR_REVERT] and increases gavel production by the tax rate.</English>
         <German>TBD</German>
     </TEXT>
     <!-- JUAN_DE_PAREJA -->
@@ -414,7 +414,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JUAN_DE_PAREJA_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Boost your trade with [COLOR_TECH_TEXT]Juan de Pareja[COLOR_REVERT]. This Founding Father adds two [COLOR_BUILDING_TEXT]mestizos[COLOR_REVERT] and two [COLOR_BUILDING_TEXT]mulattos[COLOR_REVERT], gives a 10% increase to learning by doing, and adds one emigrant to the dock in Europe.</English>
         <German>TBD</German>
     </TEXT>
 </Civ4GameText>
