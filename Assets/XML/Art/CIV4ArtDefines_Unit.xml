@@ -1027,11 +1027,11 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_JUDGE</Type>
-            <Button>,Art/colonization_atlas_units.dds,3,5</Button>
+            <Button>,Art/colonization_atlas_units_two.dds,7,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/judge.dds</FullLengthIcon>
-            <fScale>0.48</fScale>
+            <fScale>0.50</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
-            <NIF>Art/Units/Settler/judge/judge.nif</NIF>
+            <NIF>Art/Units/settler/judge/judge.nif</NIF>
             <KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
