@@ -1310,11 +1310,11 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 			pUnitNode != NULL; pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode))
 		{
 			CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			//FAssert(pLoopUnit->getDomainType() != DOMAIN_AIR);
-
-			int iMaxMoves = parent->m_iData1 > 0 ? parent->m_iData1 : pLoopUnit->maxMoves();
 			int iMoveCost = kToPlot.movementCost(pLoopUnit, &kFromPlot,
 				false); // advc.001i
+			//FAssert(pLoopUnit->getDomainType() != DOMAIN_AIR);
+#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+			int iMaxMoves = parent->m_iData1 > 0 ? parent->m_iData1 : pLoopUnit->maxMoves();
 			int iMovesLeft = std::max(0, (iMaxMoves - iMoveCost));
 
 			iWorstMovesLeft = std::min(iWorstMovesLeft, iMovesLeft);
@@ -1329,6 +1329,15 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 				iWorstMovesLeft = iMovesLeft;
 				iWorstMaxMoves = iMaxMoves;
 			}
+#else
+			int iCost = PATH_MOVEMENT_WEIGHT * iMoveCost;
+			iCost = (iCost * iExploreModifier) / 3;
+			//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
+			if (iCost > iWorstCost)
+			{
+				iWorstCost = iCost;
+			}
+#endif
 		}
 	}
 
