@@ -208,7 +208,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HARDWOOD_LUMBERJACK_STRATEGY</Tag>
-        <English>Jungle and forest tiles can yield [LINK=YIELD_HARDWOOD]hardwood[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]hardwood lumberjack[COLOR_REVERT] profession. Hardwood production can be increased by assigning an [LINK=UNIT_HARDWOOD_LUMBERJACK]expert hardwood lumberjack[\LINK] to the job.</English>
+        <English>Jungle and forest tiles can yield [LINK=YIELD_HARDWOOD]hardwood[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]hardwood lumberjack[COLOR_REVERT] profession. Hardwood production can be increased by assigning an [LINK=UNIT_LUMBERJACK]expert hardwood lumberjack[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -230,12 +230,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GOATHERD_PEDIA</Tag>
-        <English>Goats will eat vegetation that most other domesticated livestock decline, so they can subsist on very poor land.  Unprocessed goat milk has small, well-emulsified fat globules, which means the cream remains suspended in the milk instead of rising to the top, as in unprocessed cow milk. Goat milk does not need to be homogenized.</English>
+        <English>Goats will eat vegetation that most other domesticated livestock decline, so they can subsist on very poor land.  Unprocessed goat milk has small, well-emulsified fat globules, which means the cream remains suspended in the milk instead of rising to the top, as in unprocessed cow milk; therefore, it does not need to be homogenized.[NEWLINE]The number of animals that a goat farmer can sustain depends on the quality of the pasture. A poor man with poor land can still raise goats.[NEWLINE]Perhaps because of their adaptability, goats have become a symbol of evil. Witches are said to cavort with goats. Satan has goat horns.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GOATHERD_STRATEGY</Tag>
-        <English>The number of animals that a goat farmer can sustain depends on the quality of the pasture. A poor man with poor land can still raise goats.[NEWLINE]Perhaps because of their adaptability, goats have become a symbol of evil. Witches are said to cavort with goats. Satan has goat horns.</English>
+        <English>Plains tiles let you raise [LINK=YIELD_GOATS]goats[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]goatherd[COLOR_REVERT] profession. Goat herds can be increased by assigning an [LINK=UNIT_GOATHERD]expert goatherd[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -257,12 +257,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PIG_BREEDER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Historically a few pigs would be kept near the owner's residence, or in the same village or town. There are many ways of farming pigs: intensive commercial units, commercial free range enterprises, or simply letting them wander around. They can be tethered in a simple shelter or kept in a pen outside the owner's house.[NEWLINE]Pigs are raised for food and skins. They're valued for their ability to convert inedible food into meat and manure, and can be fed household food waste. On a large scale pigs are one way to dispose of municipal garbage.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PIG_BREEDER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you raise [LINK=YIELD_PIGS]pigs[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]pig breeder[COLOR_REVERT] profession. Pig production can be increased by assigning an [LINK=UNIT_PIG_BREEDER]expert pig breeder[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -284,12 +284,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHICKEN_BREEDER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Free-range poultry farming allows chickens to roam during the day, although they are usually confined in coops at night to protect them from predators. They're also kept indoors when the weather is bad.[NEWLINE]Hens begin laying eggs at 16–21 weeks of age, although production starts declining after 25 weeks of age. Since the egg economics no longer make sense, chickens are slaughtered after approximately 12 months of egg production.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHICKEN_BREEDER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you raise [LINK=YIELD_CHICKENS]chickens[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]chicken breeder[COLOR_REVERT] profession. Chicken production can be increased by assigning an [LINK=UNIT_CHICKEN_BREEDER]expert chicken breeder[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -311,12 +311,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GEESE_BREEDER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Geese are the fastest growers among domestic birds. They're hardy and disease free when given constant care. Geese can be brought up on green pasture, which lowers production cost substantially. [NEWLINE]Among waterfowl goose breeds are grouped into heavy, medium and light classes. Geese are bred for meat, foie gras and occasionally for speciality eggs. They are also charming and intelligent pets, useful guard dogs, and efficient lawn mowers.[NEWLINE]Each breeding goose needs 200 grams of grain and 100 grams of vegetables per day. To know when geese are mating, remove one female from the pen and see how the gander reacts. During breeding season geese, both the goose and ganders, will become aggressive toward people, dogs and cats.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GEESE_BREEDER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you raise [LINK=YIELD_GEESE]geese[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]goose breeder[COLOR_REVERT] profession. Goose production can be increased by assigning an [LINK=UNIT_GEESE_BREEDER]expert goose breeder[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
