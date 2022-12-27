@@ -122,12 +122,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BIRD_HUNTER_PEDIA</Tag>
-        <English>Fowling is hunting birds for meat, feathers or any other commercially valuable products. In the north, down feathers from eider duck can be collected for eiderdowns and quilted jackets without necessarily killing the birds.</English>
+        <English>Fowling is hunting birds for meat, feathers or any other commercially valuable products. In the north, down feathers from eider duck can be collected for eiderdowns and quilted jackets without necessarily killing the birds.[NEWLINE]From the 17th up to the late 19th century shotguns were loaded through the muzzle with black powder and lead shot, until percussion lock firearms and breech loading guns became popular. In Europe every landowner's estate needed a gamekeeper.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BIRD_HUNTER_STRATEGY</Tag>
-        <English>From the 17th on into the 19th century shotguns were loaded through the muzzle with black powder and lead shot. After that percussion lock firearms and breech loading guns became popular. In Europe every landowner's estate had gamekeepers.</English>
+        <English>Forest tiles can yield [LINK=YIELD_BIRDS]birds[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]bird hunter[COLOR_REVERT] profession. The birds in your game bag can be increased by assigning an [LINK=UNIT_BIRD_HUNTER]expert bird hunter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -149,12 +149,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SEA_BIRD_HUNTER_PEDIA</Tag>
-        <English>Wildfowling is the historic name for hunting waterfowl. Decoys and shotguns are the main tools needed. Hunters also use a variety of dogs, from pointers to retrievers.[NEWLINE]In the Western Isles of Scotland, hunters called gillies take seabirds from their nests on cliffs.</English>
+        <English>Wildfowling is the historic name for hunting waterfowl. Decoys and shotguns are the main tools needed. Hunters also use a variety of dogs, from pointers to retrievers.[NEWLINE]In the Western Isles of Scotland, hunters called gillies take seabirds from their nests on cliffs.[NEWLINE]The most efficient fowler is the punt gunner. He has a long, small-bore muzzle-loaded cannon, mounted centre-forward in a specially designed boat like a heavy wooden kayak. The fowler lies in the after half with paddle blades strapped to his forearms, getting close to a raft of ducks. After a single massive cannon blast, all that's needed is to gather up the harvest and get it to market.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SEA_BIRD_HUNTER_STRATEGY</Tag>
-        <English>The most efficient fowler is the punt gunner. He has a long, small-bore muzzle-loaded cannon, mounted centre-forward in a specially designed boat like a heavy wooden kayak. The fowler lies in the after half with paddle blades strapped to his forearms, getting close to a raft of ducks. After a single massive cannon blast, all that's needed is to gather up the harvest and get it to market.</English>
+        <English>Shoreline and water tiles can yield [LINK=YIELD_SEA_BIRDS]seabirds[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]sea bird hunter[COLOR_REVERT] profession. The birds in your game bag can be increased by assigning an [LINK=UNIT_SEA_BIRD_HUNTER]expert sea bird hunter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
