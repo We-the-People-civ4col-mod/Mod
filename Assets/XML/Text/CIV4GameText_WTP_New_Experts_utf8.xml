@@ -927,12 +927,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MESTIZZO_PEDIA</Tag>
-        <English>The mestizo is the child of a European and an Indigenous parent. Mestizo children are often rejected by both communities.</English>
+        <English>The mestizo is the child of a European and an Indigenous parent. Mestizo children are often rejected by both communities.[NEWLINE]Further north Metis means the same thing. Louis Riel, a Metis, is one of Canada's Fathers of Confederation, though he was hanged for treason before his contribution was recognized.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MESTIZZO_STRATEGY</Tag>
-        <English>Sometimes mestizos advance in spite of of the prejudice. Quanah Parker, a mestizo born to a European mother, leads the Comanches in raids on white settlements.</English>
+        <English>Sometimes mestizos advance in spite of of the prejudice. Quanah Parker, a mestizo born to a European mother, was known as the most terrifying Comanche leader in raids on white settlements.</English>
         <German>TBD</German>
     </TEXT>
     <!-- MULATTO -->
@@ -961,7 +961,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_MULATTO_STRATEGY</Tag>
-        <English>Mulattos add to the slave population but they also create cultural confusion. European women are not happy to see their husbands fathering Black babies.</English>
+        <English>Mulattos add to the slave population but they also create cultural confusion. European women are not happy to see their husbands fathering Black babies.[NEWLINE]Because slave life expectancy on sugar plantations is three years, or twenty-one for mulattos born into slavery, plantation owners develop a racial justification for the deaths of their children.</English>
         <German>TBD</German>
     </TEXT>
     <!-- CONSTRUCTION_SUPPLIES -->
