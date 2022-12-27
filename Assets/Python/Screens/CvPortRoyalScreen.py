@@ -940,8 +940,10 @@ class CvPortRoyalScreen:
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
 		pTransport = player.getUnit(iUnit)
 				
-		if self.EuropePlotList == []:
-			self.getPlotLists(pTransport)
+		# WTP, ray, this is a problem now if we have different rules for Ships sailing to the new world
+		# the Plot List needs to be regenerated every time, not just if it is empty
+		#if self.EuropePlotList == []:
+		self.getPlotLists(pTransport)
 				
 		self.createBox(self.DIALOG_X, self.DIALOG_Y, self.DIALOG_W, self.DIALOG_H, true)
 		

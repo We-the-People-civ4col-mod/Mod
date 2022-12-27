@@ -949,12 +949,14 @@ class CvEuropeScreen:
 		if self.bBookIntro or self.bBookOutro:
 			return 0
 		
-		screen = self.getScreen()		
+		screen = self.getScreen()
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
 		pTransport = player.getUnit(iUnit)
-				
-		if self.EuropePlotList == []:
-			self.getPlotLists(pTransport)
+		
+		# WTP, ray, this is a problem now if we have different rules for Ships sailing to the new world
+		# the Plot List needs to be regenerated every time, not just if it is empty
+		#if self.EuropePlotList == []:
+		self.getPlotLists(pTransport)
 				
 		self.createBox(self.DIALOG_X, self.DIALOG_Y, self.DIALOG_W, self.DIALOG_H, true)
 		
@@ -1173,33 +1175,33 @@ class CvEuropeScreen:
 		europePlotListSectorsEast_All = [[] for _ in range(6)] 
 		europePlotListSectorsWest_All = [[] for _ in range(6)]
 		mapWidth = CyMap().getGridWidth()
-		mapHeight = CyMap().getGridHeight()			
-		## R&R, vetiarvind, navigation sectors - END		
+		mapHeight = CyMap().getGridHeight()
+		## R&R, vetiarvind, navigation sectors - END
 		for i in range(CyMap().numPlots()):
 			pLoopPlot = CyMap().plotByIndex(i)
 			curX = pLoopPlot.getX()
 			curY = pLoopPlot.getY()
 			if CyMap().isPlot(curX, curY):
 				if pLoopPlot.isRevealed(player.getTeam(), false):
-					if pLoopPlot.isEurope():						
-		## R&R, vetiarvind, navigation sectors - START						
+					if pLoopPlot.isEurope():
+		## R&R, vetiarvind, navigation sectors - START
 						#if pLoopPlot.getX() >= CyMap().getGridWidth() / 2:
-						#	self.EuropePlotListEast.append(pLoopPlot)																					
+						#	self.EuropePlotListEast.append(pLoopPlot)
 						#else:
 						#	self.EuropePlotListWest.append(pLoopPlot)
 						isEuropeEdgePlot = False
 						if pLoopPlot.getX() >= mapWidth >> 1:
-							self.EuropePlotListEast.append(pLoopPlot)														
-							sectorList = self.EuropePlotListSectorsEast	
+							self.EuropePlotListEast.append(pLoopPlot)
+							sectorList = self.EuropePlotListSectorsEast
 							allPlotsInSector = europePlotListSectorsEast_All
-							if CyMap().isPlot(curX-1,curY):							
+							if CyMap().isPlot(curX-1,curY):
 								isEuropeEdgePlot = not CyMap().plotByIndex(CyMap().plotNum(curX-1,curY)).isEurope()
 						else:
 							self.EuropePlotListWest.append(pLoopPlot)
-							sectorList = self.EuropePlotListSectorsWest		
+							sectorList = self.EuropePlotListSectorsWest
 							allPlotsInSector = europePlotListSectorsWest_All
-							if CyMap().isPlot(curX+1,curY):							
-								isEuropeEdgePlot = not CyMap().plotByIndex(CyMap().plotNum(curX+1,curY)).isEurope()						
+							if CyMap().isPlot(curX+1,curY):
+								isEuropeEdgePlot = not CyMap().plotByIndex(CyMap().plotNum(curX+1,curY)).isEurope()
 												
 						if curY < (mapHeight / 6):
 							sectorIndex = 5
@@ -1214,9 +1216,9 @@ class CvEuropeScreen:
 						else:
 							sectorIndex = 0
 							
-						if not isEuropeEdgePlot:							
+						if not isEuropeEdgePlot:
 							allPlotsInSector[sectorIndex].append(pLoopPlot)
-						else:						
+						else:
 							sectorList[sectorIndex].append(pLoopPlot)
 		for i in range(6):
 			if not self.EuropePlotListSectorsEast[i]:
@@ -1224,7 +1226,7 @@ class CvEuropeScreen:
 			if not self.EuropePlotListSectorsWest[i]:
 				self.EuropePlotListSectorsWest[i].extend(europePlotListSectorsWest_All[i])
 		
-		## R&R, vetiarvind, navigation sectors - END		
+		## R&R, vetiarvind, navigation sectors - END
 		pCenterPlot = self.getCenterPlot()
 		
 		self.pPlotEast = self.getNextOceanPlot(pCenterPlot, self.EuropePlotListEast)
