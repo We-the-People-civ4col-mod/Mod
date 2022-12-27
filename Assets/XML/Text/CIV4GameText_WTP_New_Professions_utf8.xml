@@ -527,12 +527,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_VANILLA_COLLECTOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Vanilla is one of the two most popular flavours for sweet treats, the other being chocolate. It's used in candy, baking and liqueurs, all of which would be familiar to monks in colonial missions.[NEWLINE]Vanilla is a spice derived from orchids. There are three major species, all derived from the original Mexican plant. It can be pollinated by hand to produce the vanilla bean.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_VANILLA_COLLECTOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Jungle tiles let you gather [LINK=YIELD_VANILLA]vanilla[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] vanilla collector[COLOR_REVERT] profession. The vanilla harvest can be increased by assigning an [LINK=UNIT_VANILLA_COLLECTOR]expert vanilla collector[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -554,12 +554,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COCHINEAL_COLLECTOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The cochineal insects found on prickly pear cactus pads produce carminic acid, a predator-deterring chemical. When mixed with aluminum or calcium salts cochineal becomes carmine dye. Collectors gather the bugs by brushing them off the cactus pads.[NEWLINE]Bright red carmine dye, used in the Americas for colouring fabrics, became an important export good in the 16th century.[NEWLINE]Cochineal insects are found in the areas now known as Peru, Mexico, Chile and Argentina.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COCHINEAL_COLLECTOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Desert tiles let you gather [LINK=YIELD_COCHINEAL]cochineal[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] cochineal collector[COLOR_REVERT] profession. The cochineal harvest can be increased by assigning an [LINK=UNIT_COCHINEAL_COLLECTOR]expert cochineal collector[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -581,12 +581,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEANUT_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Peanuts are widely grown in the tropics and subtropics. Botanically they're a member of the bean family but in cooking they're used like a nut. Unlike most legumes peanut pods mature underground.[NEWLINE]Boiled peanuts are a popular snack in the areas where they're grown. They can be used to treat malnutrition and are especially important for feeding slave populations.[NEWLINE]Peanuts are usually roasted before being shipped.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEANUT_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you grow [LINK=YIELD_PEANUTS]peanuts[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] peanut planter[COLOR_REVERT] profession. The peanut harvest can be increased by assigning an [LINK=UNIT_PEANUT_PLANTER]expert peanut planter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -608,12 +608,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_KAUTSCHUK_COLLECTOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Rubber is harvested by making incisions in the bark of rubber trees. The latex is heated to create rubber that can be dried into waterproof sheets before further processing. Rubber has a large stretch ratio, high resilience and is also waterproof. It's classified as an elastomer.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_KAUTSCHUK_COLLECTOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Jungle tiles let you gather [LINK=YIELD_KAUTSCHUK]rubber[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] rubber collector[COLOR_REVERT] profession. Rubber production can be increased by assigning an [LINK=UNIT_KAUTSCHUK_COLLECTOR]expert rubber collector[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -635,12 +635,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MAPLE_SIRUP_COLLECTOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>In spring when sap starts to flow in the maple forests, tappers hammer spouts through the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. It can also be poured on snow to make maple sugar.[NEWLINE]Maple syrup comes from maple forests which grow in north temperate regions. It's a popular treat, contributing to happiness.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MAPLE_SIRUP_COLLECTOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Forest tiles let you gather [LINK=YIELD_MAPLE_SIRUP]maple syrup[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] maple syrup collector[COLOR_REVERT] profession. Maple syrup production can be increased by assigning an [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]expert maple syrup collector[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -662,12 +662,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEAT_CUTTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Peat is a peasant fuel, warming the poor and slaves at low or no cost. Peat is the world's most efficient carbon sink, storing 42% of all soil carbon, more than all other vegetation types, including the world's forests. It's not renewable.[NEWLINE]A swamp dries and very slowly turns into a peat bog, which offers cheap fuel where wood and coal aren't available. Peat cutters don't need much equipment to do their work, just a cutter and a hod to carry chunks of peat on their backs.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEAT_CUTTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Bog tiles let you gather [LINK=YIELD_PEAT]peat[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] peat cutter[COLOR_REVERT] profession. Peat production can be increased by assigning an [LINK=UNIT_PEAT_CUTTER]expert peat cutter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -689,12 +689,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CLAY_MINER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Clay develops plasticity when wet, due to a molecular film of water surrounding the clay particles, but becomes hard, brittle and non–plastic upon drying or firing. Shale, formed largely from clay, is the most common sedimentary rock.[NEWLINE]Clay is the oldest known ceramic material. Prehistoric humans used it for making pottery. Early pottery shards have been dated to 14,000 BC, and clay tablets are the first known writing medium.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CLAY_MINER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Mountain and hill tiles let you gather [LINK=YIELD_CLAY]clay[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] clay miner[COLOR_REVERT] profession. Clay production can be increased by assigning an [LINK=UNIT_MINER]expert clay miner[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -716,12 +716,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COAL_MINER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Coal is formed when dead plant matter decays into peat and is converted into coal by the heat and pressure of deep burial over millions of years. During colonial times coal is used for heating, not for industry. Coal mining causes premature death and illness, but it's a soft rock that doesn't need as many explosives as hard rock mining. It's a job where labourers use picks and shovels, and they don't get paid much.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COAL_MINER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Mountain and hill tiles let you gather [LINK=YIELD_COAL]coal[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] coal miner[COLOR_REVERT] profession. Coal production can be increased by assigning an [LINK=UNIT_MINER]expert coal miner[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
