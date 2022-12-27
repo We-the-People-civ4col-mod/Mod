@@ -338,12 +338,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FRUITS_PICKER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Because fruit varieties mature at different times throughout the season, fruit pickers are often migrant, moving among the orchards and farms as needed. In the tropics fruit grows year-round.[NEWLINE]Bananas are the world's most popular fruit. Apples are common in temperate zones, and some berries grow in the taiga or tundra.[NEWLINE]Having fresh fruit is one of the biggest factors moving a community from barely surviving into robust good health. Big orchards and industrial farms are restricted to tropical and temperate zones, but berries are an important vitamin source in cold climates.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FRUITS_PICKER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you grow [LINK=YIELD_FRUITS]fruit[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]fruit picker[COLOR_REVERT] profession. Fruit harvests can be increased by assigning an [LINK=UNIT_FRUITS_PICKER]expert fruit picker[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -365,12 +365,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RICE_FARMER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Rice has been grown for at least 7,000 years. It's unusual among grains in that almost all rice is eaten by humans, though bran left after milling is used as livestock feed. Most rice is grown on submerged land in the coastal plains, tidal deltas, and river basins of tropical, semitropical, and temperate regions.[NEWLINE]Growing rice takes 40 continuous days above 21 degrees (70 F). It's normally grown as an annual plant, although in tropical areas it can survive as a perennial, producing a crop for up to 30 years. When dried it offers high food value for the weight, so it's a favourite food for seasoned scouts.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RICE_FARMER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you grow [LINK=YIELD_RICE]rice[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]rice farmer[COLOR_REVERT] profession. The rice harvest can be increased by assigning an [LINK=UNIT_RICE_FARMER]expert rice farmer[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -392,12 +392,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CASSAVA_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Cassava is a prime carbohydrate source in the tropics, outranked only by rice and corn. It's classified as sweet or bitter. Bitter varieties contain more antinutrients.[NEWLINE]For example, improper preparation of cassava can leave enough residual cyanide to cause acute cyanide intoxication, and even death.[NEWLINE]The cassava root can be boiled. Tapioca, which is cassava starch, can be extracted and used for everything from desserts to an animal feed supplement. Cassava is particularly high in vitamin C.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CASSAVA_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Jungle tiles let you grow [LINK=YIELD_CASSAVA]cassava[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]cassava planter[COLOR_REVERT] profession. The cassava harvest can be increased by assigning an [LINK=UNIT_CASSAVA_PLANTER]expert cassava planter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -419,12 +419,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FLAX_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Flax is cultivated for food and fibre. Flax textiles are known as linen. The edible oil is high in omega-3 fatty acids, important for heart health.[NEWLINE]Soils most suitable for flax are alluvial or deep loams with a lot of organic matter. Flax is often found growing just above the waterline in cranberry bogs.[NEWLINE]Flax seeds produce a vegetable oil known as flax seed oil or linseed oil, which is one of the oldest commercial oils. It is an edible oil obtained by expeller pressing and sometimes followed by solvent extraction. Solvent-processed flax seed oil has been used for many centuries as a drying oil in painting and varnishing.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FLAX_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Shoreline tiles let you grow [LINK=YIELD_FLAX]flax[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]flax planter[COLOR_REVERT] profession. The flax harvest can be increased by assigning an [LINK=UNIT_FLAX_PLANTER]expert flax planter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -446,12 +446,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RAPE_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed.[NEWLINE]Rapeseed is a valuable oil crop. Once the oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry. It's a member of the cabbage family.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RAPE_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you grow [LINK=YIELD_RAPE]rapeseed[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]rapeseed planter[COLOR_REVERT] profession. The rapeseed harvest can be increased by assigning an [LINK=UNIT_RAPE_PLANTER]expert rapeseed planter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -473,12 +473,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_OLIVES_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Olive trees will have either table olives or olives for oil. Spanish colonists brought the olive to the New World in 1560, where its cultivation prospered in present-day Peru, Chile, and Argentina. In the 18th century Spanish missionaries planted olive trees in California. Because wild game is so lean, especially on the frontier cooking oils are important for good health.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Candlefish oil was so central to Native commerce that the trade routes were called grease trails.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_OLIVES_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you grow [LINK=YIELD_OLIVES]olives[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]olive planter[COLOR_REVERT] profession. The olive harvest can be increased by assigning an [LINK=UNIT_OLIVES_PLANTER]expert olive planter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -500,12 +500,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_YERBA_COLLECTOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The Guaraní and Tupí cultivated yerba mate prior to European colonization. After the Jesuits started using it, yerba mate became widespread in what's now Paraguay and throughout other Spanish colonies. Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba mate. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the yerba planter profession, the expert can get twice as many yerba leaves in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_YERBA_COLLECTOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Jungle tiles let you grow [LINK=YIELD_YERBA]yerba mate[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] yerba collector[COLOR_REVERT] profession. The yerba harvest can be increased by assigning an [LINK=UNIT_YERBA_COLLECTOR]expert yerba collector[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
