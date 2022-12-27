@@ -8316,6 +8316,7 @@ m_iHammersModifierForCity(0), // WTP, ray, Improvements give Bonus to their City
 m_iToolsModifierForCity(0), // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 m_iStorageModifierForCity(0), // WTP, ray, Improvements give Bonus to their City - PART 3 - START
 m_iPillageGold(0),
+m_iHealModifier(0),// WTP, ray, Plot Heal Modifier for Improvements - START
 m_iImprovementPillage(NO_IMPROVEMENT),
 m_iImprovementUpgrade(NO_IMPROVEMENT),
 // Super Forts begin *XML*
@@ -8433,6 +8434,14 @@ int CvImprovementInfo::getPillageGold() const
 {
 	return m_iPillageGold;
 }
+
+// WTP, ray, Plot Heal Modifier for Improvements - START
+int CvImprovementInfo::getHealModifier() const
+{
+	return m_iHealModifier;
+}
+// WTP, ray, Plot Heal Bonus for Improvements - END
+
 bool CvImprovementInfo::isOutsideBorders() const
 {
 	return m_bOutsideBorders;
@@ -8710,6 +8719,7 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iToolsModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	stream->Read(&m_iStorageModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 3 - START
 	stream->Read(&m_iPillageGold);
+	stream->Read(&m_iHealModifier); // WTP, ray, Plot Heal Modifier for Improvements - START
 	stream->Read(&m_iImprovementPillage);
 	stream->Read(&m_iImprovementUpgrade);
 	// Super Forts begin *XML*
@@ -8796,6 +8806,7 @@ void CvImprovementInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iToolsModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	stream->Write(m_iStorageModifierForCity); // WTP, ray, Improvements give Bonus to their City - PART 3 - START
 	stream->Write(m_iPillageGold);
+	stream->Write(m_iHealModifier); // WTP, ray, Plot Heal Modifier for Improvements - START
 	stream->Write(m_iImprovementPillage);
 	stream->Write(m_iImprovementUpgrade);
 	// Super Forts begin *XML*
@@ -8889,6 +8900,7 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iToolsModifierForCity, "iToolsModifierForCity"); // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	pXML->GetChildXmlValByName(&m_iStorageModifierForCity, "iStorageModifierForCity"); // WTP, ray, Improvements give Bonus to their City - PART 3 - START
 	pXML->GetChildXmlValByName(&m_iPillageGold, "iPillageGold");
+	pXML->GetChildXmlValByName(&m_iHealModifier, "iHealModifier"); // WTP, ray, Plot Heal Modifier for Improvements - START
 	pXML->GetChildXmlValByName(&m_bOutsideBorders, "bOutsideBorders");
 	// Super Forts begin *XML*
 	pXML->GetChildXmlValByName(&m_iCulture, "iCulture");

@@ -3061,6 +3061,15 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 				szString.append(gDLL->getText("TXT_KEY_PLOT_HELP_IMPROVEMENT_STORAGE", iStorageModifierForCity));
 			}
 			// WTP, ray, Improvements give Bonus to their City - PART 3 - END
+
+			// WTP, ray, Plot Heal Modifier for Improvements - START
+			if (GC.getImprovementInfo(eImprovement).getHealModifier() > 0)
+			{
+				int iHealModifier = GC.getImprovementInfo(eImprovement).getHealModifier();
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_IMPROVEMENT_HEAL_MODIFIER",iHealModifier));
+			}
+			// WTP, ray, Plot Heal Modifier for Improvements - END
 		}
 
 		// WTP, check Harbour System also for Plots with City - START
@@ -7530,6 +7539,15 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_LESS_GROWTH"));
 	}
 
+	// WTP, ray, Plot Heal Modifier for Improvements - START
+	if (info.getHealModifier() > 0)
+	{
+		szBuffer.append(NEWLINE);
+		int iHealModifier = info.getHealModifier();
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_HEAL_MODIFIER",iHealModifier));
+	}
+	// WTP, ray, Plot Heal Modifier for Improvements - END
+
 	// Super Forts begin *text* *bombard*
 	/* todo revert
 	if (info.isBombardable() && (info.getDefenseModifier() > 0))
@@ -7576,7 +7594,7 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 			int iPillage = info.getPillageGold();
 			iPillage *=iGrowthPercent;
 			iPillage /= 100;
-			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_PILLAGE_YIELDS",iPillage ));
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_PILLAGE_YIELDS",iPillage));
 		}
 	}
 }

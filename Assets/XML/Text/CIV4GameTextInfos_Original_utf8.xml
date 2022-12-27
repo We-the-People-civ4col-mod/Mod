@@ -10306,6 +10306,11 @@
         <Spanish>[ICON_BULLET]El saqueo reporta %d1_Num[ICON_GOLD] de media</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_HEAL_MODIFIER</Tag>
+        <English>[ICON_BULLET]Units on plot [COLOR_HIGHLIGHT_TEXT]heal %d1_Num%% faster[COLOR_REVERT]</English>
+        <German>[ICON_BULLET]Einheiten auf Feld [COLOR_HIGHLIGHT_TEXT]heilen %d1_Num%% schneller[COLOR_REVERT]</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_VICTORY_SCREEN_BUILDING</Tag>
         <English>Build %s1 %s2</English>
         <French>Construire : %s1 %s2</French>

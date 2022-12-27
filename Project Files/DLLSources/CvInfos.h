@@ -2391,6 +2391,7 @@ public:
 	int getToolsModifierForCity() const; // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	int getStorageModifierForCity() const; // WTP, ray, Improvements give Bonus to their City - PART 3 - START
 	int getPillageGold() const;
+	int getHealModifier() const;	// WTP, ray, Plot Heal Modifier for Improvements - START
 	int getImprovementPillage() const;
 	void setImprovementPillage(int i);
 	int getImprovementUpgrade() const;
@@ -2469,6 +2470,7 @@ protected:
 	int m_iToolsModifierForCity;  // WTP, ray, Improvements give Bonus to their City - PART 2 - START
 	int m_iStorageModifierForCity;  // WTP, ray, Improvements give Bonus to their City - PART 3 - START
 	int m_iPillageGold;
+	int m_iHealModifier; // WTP, ray, Plot Heal Modifier for Improvements - START
 	int m_iImprovementPillage;
 	int m_iImprovementUpgrade;
 	// Super Forts begin *XML*

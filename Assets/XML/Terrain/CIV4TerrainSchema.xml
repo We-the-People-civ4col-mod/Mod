@@ -435,6 +435,7 @@
 	<ElementType name="iToolsModifierForCity" content="textOnly" dt:type="int"/>
 	<ElementType name="iStorageModifierForCity" content="textOnly" dt:type="int"/>
 	<ElementType name="iPillageGold" content="textOnly" dt:type="int"/>
+	<ElementType name="iHealModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="bOutsideBorders" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iAdvancedStartCost" content="textOnly" dt:type="int"/>
 	<ElementType name="iAdvancedStartRemoveCost" content="textOnly" dt:type="int"/>
@@ -500,8 +501,9 @@
 		<element type="iFoodModifierForCity" minOccurs="0"/>
 		<element type="iHammersModifierForCity" minOccurs="0"/>
 		<element type="iToolsModifierForCity" minOccurs="0"/>
-		<element type="iStorageModifierForCity" minOccurs="0"/>		
+		<element type="iStorageModifierForCity" minOccurs="0"/>
 		<element type="iPillageGold"/>
+		<element type="iHealModifier" minOccurs="0"/>
 		<element type="bOutsideBorders"/>
 		<element type="TerrainMakesValids"/>
 		<element type="FeatureMakesValids"/>

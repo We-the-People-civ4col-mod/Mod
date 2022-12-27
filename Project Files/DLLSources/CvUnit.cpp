@@ -6553,6 +6553,17 @@ int CvUnit::healRate(const CvPlot* pPlot) const
 
 	int iTotalHeal = 0;
 
+	// WTP, ray, Plot Heal Modifier for Improvements - START
+	if (pPlot->getImprovementType() != NO_IMPROVEMENT)
+	{
+		ImprovementTypes eImprovement = pPlot->getImprovementType();
+		if (GC.getImprovementInfo(eImprovement).getHealModifier() > 0)
+		{
+			iTotalHeal += GC.getImprovementInfo(eImprovement).getHealModifier();
+		}
+	}
+	// WTP, ray, Plot Heal Modifier for Improvements - END
+
 	if (pPlot->isCity(true, getTeam()))
 	{
 		iTotalHeal += (GC.getDefineINT("CITY_HEAL_RATE") * (100 + (GET_TEAM(getTeam()).isFriendlyTerritory(pPlot->getTeam()) ? getExtraFriendlyHeal() : getExtraNeutralHeal()))) / 100;

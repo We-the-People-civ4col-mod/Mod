@@ -6146,6 +6146,7 @@
             <iUpgradeTime>50</iUpgradeTime>
             <iDefenseModifier>75</iDefenseModifier>
             <iPillageGold>50</iPillageGold>
+            <iHealModifier>10</iHealModifier>
             <bOutsideBorders>1</bOutsideBorders>
             <TerrainMakesValids>
                 <TerrainMakesValid>
@@ -6261,6 +6262,7 @@
             <iUpgradeTime>0</iUpgradeTime>
             <iDefenseModifier>100</iDefenseModifier>
             <iPillageGold>100</iPillageGold>
+            <iHealModifier>15</iHealModifier>
             <bOutsideBorders>1</bOutsideBorders>
             <TerrainMakesValids>
                 <TerrainMakesValid>
@@ -6376,6 +6378,7 @@
             <iUpgradeTime>50</iUpgradeTime>
             <iDefenseModifier>20</iDefenseModifier>
             <iPillageGold>50</iPillageGold>
+            <iHealModifier>10</iHealModifier>
             <bOutsideBorders>1</bOutsideBorders>
             <TerrainMakesValids>
                 <TerrainMakesValid>
@@ -6485,6 +6488,7 @@
             <iUpgradeTime>0</iUpgradeTime>
             <iDefenseModifier>30</iDefenseModifier>
             <iPillageGold>100</iPillageGold>
+            <iHealModifier>15</iHealModifier>
             <bOutsideBorders>1</bOutsideBorders>
             <TerrainMakesValids>
                 <TerrainMakesValid>
