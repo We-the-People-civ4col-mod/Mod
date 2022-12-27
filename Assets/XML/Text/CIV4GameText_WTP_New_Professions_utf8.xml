@@ -176,12 +176,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BLOODWOOD_CUTTER_PEDIA</Tag>
-        <English>Bloodwood is a versatile dye, used for both textiles and paper. It can also be used as a pH indicator, yellow-reddish under acidic conditions and purple when alkaline. The bark and leaves are also used in various medical applications.</English>
+        <English>Bloodwood is a versatile dye, used for both textiles and paper. It can also be used as a pH indicator, yellow-reddish under acidic conditions and purple when alkaline. The bark and leaves are also used in various medical applications.[NEWLINE]Bloodwood played an important role in the lives of 17th-century buccaneers during the Golden Age of Piracy. Bloodwood cutters often had their output seized by Spanish ships, so they joined pirate crews to raid the Spanish and get their wood back.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BLOODWOOD_CUTTER_STRATEGY</Tag>
-        <English>Bloodwood had an important role in the lives of 17th-century buccaneers in the Golden Age of Piracy. Bloodwood cutters often had their output seized by Spanish ships, so they joined pirate crews to raid the Spanish and get their wood back.</English>
+        <English>Jungle tiles can yield [LINK=YIELD_BLOODWOOD]bloodwood[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]bloodwood cutter[COLOR_REVERT] profession. Bloodwood production can be increased by assigning an [LINK=UNIT_BLOODWOOD_CUTTER]expert bloodwood cutter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -203,12 +203,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HARDWOOD_LUMBERJACK_PEDIA</Tag>
-        <English>Hardwood is found in broad-leaved temperate and tropical forests. Tropical hardwoods like mahogany are valued for furniture. Teak, while not native to the Americas, can be grown in the Caribbean and is important in ship-building.</English>
+        <English>Hardwood is found in broad-leaved temperate and tropical forests. Tropical hardwoods like mahogany are valued for furniture. Teak, while not native to the Americas, can be grown in the Caribbean and is important in shipbuilding.[NEWLINE]Hardwood is used for fuel, tools, construction, boat building, furniture making, musical instruments, flooring, cooking, barrels, and manufacture of charcoal. The density adds to durability, appearance, and performance. Solid hardwood joinery is expensive compared to softwood.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HARDWOOD_LUMBERJACK_STRATEGY</Tag>
-        <English>Hardwood is used for fuel, tools, construction, boat building, furniture making, musical instruments, flooring, cooking, barrels, and manufacture of charcoal. Solid hardwood joinery is expensive compared to softwood. The density adds to durability, appearance, and performance.</English>
+        <English>Jungle and forest tiles can yield [LINK=YIELD_HARDWOOD]hardwood[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]hardwood lumberjack[COLOR_REVERT] profession. Hardwood production can be increased by assigning an [LINK=UNIT_HARDWOOD_LUMBERJACK]expert hardwood lumberjack[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
