@@ -2753,9 +2753,10 @@ def applyCattleAndSheep1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
-	city.changeYieldStored(iYield, quantity)
-	city.changeYieldStored(iYield2, -quantity)
-	city.changeYieldStored(iYield3, -quantity)
+	if city.getYieldStored(iYield) >= -quantity :
+		city.changeYieldStored(iYield, quantity)
+		city.changeYieldStored(iYield2, -quantity)
+		city.changeYieldStored(iYield3, -quantity)
 
 def getHelpCattleAndSheep1(argsList):
 	eEvent = argsList[0]
@@ -2788,9 +2789,10 @@ def applyCattleAndSheep2(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
-	city.changeYieldStored(iYield, quantity)
-	city.changeYieldStored(iYield2, -quantity)
-	city.changeYieldStored(iYield3, -quantity)
+	if city.getYieldStored(iYield) >= -quantity :
+		city.changeYieldStored(iYield, quantity)
+		city.changeYieldStored(iYield2, -quantity)
+		city.changeYieldStored(iYield3, -quantity)
 
 def getHelpCattleAndSheep2(argsList):
 	eEvent = argsList[0]
