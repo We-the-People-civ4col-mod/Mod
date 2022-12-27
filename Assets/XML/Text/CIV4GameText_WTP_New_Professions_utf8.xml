@@ -208,7 +208,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HARDWOOD_LUMBERJACK_STRATEGY</Tag>
-        <English>Jungle and forest tiles can yield [LINK=YIELD_HARDWOOD]hardwood[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]hardwood lumberjack[COLOR_REVERT] profession. Hardwood production can be increased by assigning an [LINK=UNIT_HARDWOOD_LUMBERJACK]expert hardwood lumberjack[\LINK] to the job.</English>
+        <English>Jungle and forest tiles can yield [LINK=YIELD_HARDWOOD]hardwood[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]hardwood lumberjack[COLOR_REVERT] profession. Hardwood production can be increased by assigning an [LINK=UNIT_LUMBERJACK]expert hardwood lumberjack[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -230,12 +230,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GOATHERD_PEDIA</Tag>
-        <English>Goats will eat vegetation that most other domesticated livestock decline, so they can subsist on very poor land.  Unprocessed goat milk has small, well-emulsified fat globules, which means the cream remains suspended in the milk instead of rising to the top, as in unprocessed cow milk. Goat milk does not need to be homogenized.</English>
+        <English>Goats will eat vegetation that most other domesticated livestock decline, so they can subsist on very poor land.  Unprocessed goat milk has small, well-emulsified fat globules, which means the cream remains suspended in the milk instead of rising to the top, as in unprocessed cow milk; therefore, it does not need to be homogenized.[NEWLINE]The number of animals that a goat farmer can sustain depends on the quality of the pasture. A poor man with poor land can still raise goats.[NEWLINE]Perhaps because of their adaptability, goats have become a symbol of evil. Witches are said to cavort with goats. Satan has goat horns.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GOATHERD_STRATEGY</Tag>
-        <English>The number of animals that a goat farmer can sustain depends on the quality of the pasture. A poor man with poor land can still raise goats.[NEWLINE]Perhaps because of their adaptability, goats have become a symbol of evil. Witches are said to cavort with goats. Satan has goat horns.</English>
+        <English>Plains tiles let you raise [LINK=YIELD_GOATS]goats[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]goatherd[COLOR_REVERT] profession. Goat herds can be increased by assigning an [LINK=UNIT_GOATHERD]expert goatherd[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -257,12 +257,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PIG_BREEDER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Historically a few pigs would be kept near the owner's residence, or in the same village or town. There are many ways of farming pigs: intensive commercial units, commercial free range enterprises, or simply letting them wander around. They can be tethered in a simple shelter or kept in a pen outside the owner's house.[NEWLINE]Pigs are raised for food and skins. They're valued for their ability to convert inedible food into meat and manure, and can be fed household food waste. On a large scale pigs are one way to dispose of municipal garbage.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PIG_BREEDER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you raise [LINK=YIELD_PIGS]pigs[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]pig breeder[COLOR_REVERT] profession. Pig production can be increased by assigning an [LINK=UNIT_PIG_BREEDER]expert pig breeder[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -284,12 +284,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHICKEN_BREEDER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Free-range poultry farming allows chickens to roam during the day, although they are usually confined in coops at night to protect them from predators. They're also kept indoors when the weather is bad.[NEWLINE]Hens begin laying eggs at 16–21 weeks of age, although production starts declining after 25 weeks of age. Since the egg economics no longer make sense, chickens are slaughtered after approximately 12 months of egg production.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHICKEN_BREEDER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you raise [LINK=YIELD_CHICKENS]chickens[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]chicken breeder[COLOR_REVERT] profession. Chicken production can be increased by assigning an [LINK=UNIT_CHICKEN_BREEDER]expert chicken breeder[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -311,12 +311,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GEESE_BREEDER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Geese are the fastest growers among domestic birds. They're hardy and disease free when given constant care. Geese can be brought up on green pasture, which lowers production cost substantially. [NEWLINE]Among waterfowl goose breeds are grouped into heavy, medium and light classes. Geese are bred for meat, foie gras and occasionally for speciality eggs. They are also charming and intelligent pets, useful guard dogs, and efficient lawn mowers.[NEWLINE]Each breeding goose needs 200 grams of grain and 100 grams of vegetables per day. To know when geese are mating, remove one female from the pen and see how the gander reacts. During breeding season geese, both the goose and ganders, will become aggressive toward people, dogs and cats.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_GEESE_BREEDER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you raise [LINK=YIELD_GEESE]geese[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]goose breeder[COLOR_REVERT] profession. Goose production can be increased by assigning an [LINK=UNIT_GEESE_BREEDER]expert goose breeder[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -338,12 +338,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FRUITS_PICKER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Because fruit varieties mature at different times throughout the season, fruit pickers are often migrant, moving among the orchards and farms as needed. In the tropics fruit grows year-round.[NEWLINE]Bananas are the world's most popular fruit. Apples are common in temperate zones, and some berries grow in the taiga or tundra.[NEWLINE]Having fresh fruit is one of the biggest factors moving a community from barely surviving into robust good health. Big orchards and industrial farms are restricted to tropical and temperate zones, but berries are an important vitamin source in cold climates.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FRUITS_PICKER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you grow [LINK=YIELD_FRUITS]fruit[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]fruit picker[COLOR_REVERT] profession. Fruit harvests can be increased by assigning an [LINK=UNIT_FRUITS_PICKER]expert fruit picker[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -365,12 +365,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RICE_FARMER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Rice has been grown for at least 7,000 years. It's unusual among grains in that almost all rice is eaten by humans, though bran left after milling is used as livestock feed. Most rice is grown on submerged land in the coastal plains, tidal deltas, and river basins of tropical, semitropical, and temperate regions.[NEWLINE]Growing rice takes 40 continuous days above 21 degrees (70 F). It's normally grown as an annual plant, although in tropical areas it can survive as a perennial, producing a crop for up to 30 years. When dried it offers high food value for the weight, so it's a favourite food for seasoned scouts.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RICE_FARMER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you grow [LINK=YIELD_RICE]rice[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]rice farmer[COLOR_REVERT] profession. The rice harvest can be increased by assigning an [LINK=UNIT_RICE_FARMER]expert rice farmer[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -392,12 +392,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CASSAVA_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Cassava is a prime carbohydrate source in the tropics, outranked only by rice and corn. It's classified as sweet or bitter. Bitter varieties contain more antinutrients.[NEWLINE]For example, improper preparation of cassava can leave enough residual cyanide to cause acute cyanide intoxication, and even death.[NEWLINE]The cassava root can be boiled. Tapioca, which is cassava starch, can be extracted and used for everything from desserts to an animal feed supplement. Cassava is particularly high in vitamin C.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CASSAVA_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Jungle tiles let you grow [LINK=YIELD_CASSAVA]cassava[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]cassava planter[COLOR_REVERT] profession. The cassava harvest can be increased by assigning an [LINK=UNIT_CASSAVA_PLANTER]expert cassava planter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -419,12 +419,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FLAX_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Flax is cultivated for food and fibre. Flax textiles are known as linen. The edible oil is high in omega-3 fatty acids, important for heart health.[NEWLINE]Soils most suitable for flax are alluvial or deep loams with a lot of organic matter. Flax is often found growing just above the waterline in cranberry bogs.[NEWLINE]Flax seeds produce a vegetable oil known as flax seed oil or linseed oil, which is one of the oldest commercial oils. It is an edible oil obtained by expeller pressing and sometimes followed by solvent extraction. Solvent-processed flax seed oil has been used for many centuries as a drying oil in painting and varnishing.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FLAX_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Shoreline tiles let you grow [LINK=YIELD_FLAX]flax[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]flax planter[COLOR_REVERT] profession. The flax harvest can be increased by assigning an [LINK=UNIT_FLAX_PLANTER]expert flax planter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -446,12 +446,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RAPE_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed.[NEWLINE]Rapeseed is a valuable oil crop. Once the oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry. It's a member of the cabbage family.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RAPE_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you grow [LINK=YIELD_RAPE]rapeseed[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]rapeseed planter[COLOR_REVERT] profession. The rapeseed harvest can be increased by assigning an [LINK=UNIT_RAPE_PLANTER]expert rapeseed planter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -473,12 +473,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_OLIVES_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Olive trees will have either table olives or olives for oil. Spanish colonists brought the olive to the New World in 1560, where its cultivation prospered in present-day Peru, Chile, and Argentina. In the 18th century Spanish missionaries planted olive trees in California. Because wild game is so lean, especially on the frontier cooking oils are important for good health.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Candlefish oil was so central to Native commerce that the trade routes were called grease trails.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_OLIVES_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you grow [LINK=YIELD_OLIVES]olives[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]olive planter[COLOR_REVERT] profession. The olive harvest can be increased by assigning an [LINK=UNIT_OLIVES_PLANTER]expert olive planter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -500,12 +500,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_YERBA_COLLECTOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The Guaraní and Tupí cultivated yerba mate prior to European colonization. After the Jesuits started using it, yerba mate became widespread in what's now Paraguay and throughout other Spanish colonies. Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba mate. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the yerba planter profession, the expert can get twice as many yerba leaves in the same time as a regular colonist.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_YERBA_COLLECTOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Jungle tiles let you grow [LINK=YIELD_YERBA]yerba mate[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] yerba collector[COLOR_REVERT] profession. The yerba harvest can be increased by assigning an [LINK=UNIT_YERBA_COLLECTOR]expert yerba collector[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -527,12 +527,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_VANILLA_COLLECTOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Vanilla is one of the two most popular flavours for sweet treats, the other being chocolate. It's used in candy, baking and liqueurs, all of which would be familiar to monks in colonial missions.[NEWLINE]Vanilla is a spice derived from orchids. There are three major species, all derived from the original Mexican plant. It can be pollinated by hand to produce the vanilla bean.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_VANILLA_COLLECTOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Jungle tiles let you gather [LINK=YIELD_VANILLA]vanilla[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] vanilla collector[COLOR_REVERT] profession. The vanilla harvest can be increased by assigning an [LINK=UNIT_VANILLA_COLLECTOR]expert vanilla collector[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -554,12 +554,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COCHINEAL_COLLECTOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The cochineal insects found on prickly pear cactus pads produce carminic acid, a predator-deterring chemical. When mixed with aluminum or calcium salts cochineal becomes carmine dye. Collectors gather the bugs by brushing them off the cactus pads.[NEWLINE]Bright red carmine dye, used in the Americas for colouring fabrics, became an important export good in the 16th century.[NEWLINE]Cochineal insects are found in the areas now known as Peru, Mexico, Chile and Argentina.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COCHINEAL_COLLECTOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Desert tiles let you gather [LINK=YIELD_COCHINEAL]cochineal[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] cochineal collector[COLOR_REVERT] profession. The cochineal harvest can be increased by assigning an [LINK=UNIT_COCHINEAL_COLLECTOR]expert cochineal collector[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -581,12 +581,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEANUT_PLANTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Peanuts are widely grown in the tropics and subtropics. Botanically they're a member of the bean family but in cooking they're used like a nut. Unlike most legumes peanut pods mature underground.[NEWLINE]Boiled peanuts are a popular snack in the areas where they're grown. They can be used to treat malnutrition and are especially important for feeding slave populations.[NEWLINE]Peanuts are usually roasted before being shipped.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEANUT_PLANTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Plains tiles let you grow [LINK=YIELD_PEANUTS]peanuts[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] peanut planter[COLOR_REVERT] profession. The peanut harvest can be increased by assigning an [LINK=UNIT_PEANUT_PLANTER]expert peanut planter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -608,12 +608,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_KAUTSCHUK_COLLECTOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Rubber is harvested by making incisions in the bark of rubber trees. The latex is heated to create rubber that can be dried into waterproof sheets before further processing. Rubber has a large stretch ratio, high resilience and is also waterproof. It's classified as an elastomer.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_KAUTSCHUK_COLLECTOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Jungle tiles let you gather [LINK=YIELD_KAUTSCHUK]rubber[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] rubber collector[COLOR_REVERT] profession. Rubber production can be increased by assigning an [LINK=UNIT_KAUTSCHUK_COLLECTOR]expert rubber collector[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -635,12 +635,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MAPLE_SIRUP_COLLECTOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>In spring when sap starts to flow in the maple forests, tappers hammer spouts through the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. It can also be poured on snow to make maple sugar.[NEWLINE]Maple syrup comes from maple forests which grow in north temperate regions. It's a popular treat, contributing to happiness.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MAPLE_SIRUP_COLLECTOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Forest tiles let you gather [LINK=YIELD_MAPLE_SIRUP]maple syrup[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] maple syrup collector[COLOR_REVERT] profession. Maple syrup production can be increased by assigning an [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]expert maple syrup collector[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -662,12 +662,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEAT_CUTTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Peat is a peasant fuel, warming the poor and slaves at low or no cost. Peat is the world's most efficient carbon sink, storing 42% of all soil carbon, more than all other vegetation types, including the world's forests. It's not renewable.[NEWLINE]A swamp dries and very slowly turns into a peat bog, which offers cheap fuel where wood and coal aren't available. Peat cutters don't need much equipment to do their work, just a cutter and a hod to carry chunks of peat on their backs.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEAT_CUTTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Bog tiles let you gather [LINK=YIELD_PEAT]peat[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] peat cutter[COLOR_REVERT] profession. Peat production can be increased by assigning an [LINK=UNIT_PEAT_CUTTER]expert peat cutter[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -689,12 +689,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CLAY_MINER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Clay develops plasticity when wet, due to a molecular film of water surrounding the clay particles, but becomes hard, brittle and non–plastic upon drying or firing. Shale, formed largely from clay, is the most common sedimentary rock.[NEWLINE]Clay is the oldest known ceramic material. Prehistoric humans used it for making pottery. Early pottery shards have been dated to 14,000 BC, and clay tablets are the first known writing medium.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CLAY_MINER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Mountain and hill tiles let you gather [LINK=YIELD_CLAY]clay[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] clay miner[COLOR_REVERT] profession. Clay production can be increased by assigning an [LINK=UNIT_MINER]expert clay miner[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -716,12 +716,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COAL_MINER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Coal is formed when dead plant matter decays into peat and is converted into coal by the heat and pressure of deep burial over millions of years. During colonial times coal is used for heating, not for industry. Coal mining causes premature death and illness, but it's a soft rock that doesn't need as many explosives as hard rock mining. It's a job where labourers use picks and shovels, and they don't get paid much.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_COAL_MINER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>Mountain and hill tiles let you gather [LINK=YIELD_COAL]coal[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT] coal miner[COLOR_REVERT] profession. Coal production can be increased by assigning an [LINK=UNIT_MINER]expert coal miner[\LINK] to the job.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
