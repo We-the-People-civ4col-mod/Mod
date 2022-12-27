@@ -1762,7 +1762,9 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 	// K-Mod end
 	FAssert(pSelectionGroup->getNumUnits() > 0);
 
-	int iTurns = 1;
+	// new movement system has 0 indexed turns while the old system relies on 1 index
+	BOOST_STATIC_ASSERT(GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0 || GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1);
+	int iTurns = GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM;
 	int iMoves = MAX_INT;
 
 	if (data == ASNC_INITIALADD)
@@ -1791,13 +1793,15 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		// K-Mod. The original code would give incorrect results for groups where one unit had more moves but also had higher move cost.
 		// (eg. the most obvious example is when a group with 1-move units and 2-move units is moving on a railroad. - In this situation,
 		//  the original code would consistently underestimate the remaining moves at every step.)
+#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
 		bool bNewTurn = iStartMoves == 0;
 
 		if (bNewTurn)
 		{
-			iTurns++;
+			++iTurns;
 			iStartMoves = pSelectionGroup->maxMoves();
 		}
+#endif
 		CLLNode<IDInfo> const* pUnitNode = pSelectionGroup->headUnitNode();
 		int iMoveCost = kToPlot.movementCost(::getUnit(pUnitNode->m_data), &kFromPlot/*,
 			false*/); // advc.001i
@@ -1816,7 +1820,11 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		if (bUniformCost)
 		{
 			// the simple, normal case
+#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
 			iMoves = std::max(0, iStartMoves - iMoveCost);
+#else
+			iMoves = iStartMoves - iMoveCost;
+#endif
 		}
 		else
 		{
@@ -1845,13 +1853,21 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 						false*/); // advc.001i
 					FAssert(iUnitMoves > 0 || i == 1);
 				}
-
 				iUnitMoves = std::max(iUnitMoves, 0);
 				iMoves = std::min(iMoves, iUnitMoves);
 			}
 		}
 		// K-Mod end
 	}
+
+#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0
+	// add how many turns it takes before the unit can move again
+	while (iMoves <= 0)
+	{
+		++iTurns;
+		iMoves += pSelectionGroup->maxMoves();
+	}
+#endif
 
 	FAssertMsg(iMoves >= 0, "iMoves is expected to be non-negative (invalid Index)");
 

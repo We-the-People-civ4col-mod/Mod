@@ -1505,6 +1505,7 @@
 	<Define>
 		<DefineName>USE_CLASSIC_MOVEMENT_SYSTEM</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
+		<bAlwaysHardcoded>1</bAlwaysHardcoded>
 	</Define>
 	<Define>
 		<DefineName>TIMER_PRIVATEERS_DIPLO_EVENT</DefineName>
