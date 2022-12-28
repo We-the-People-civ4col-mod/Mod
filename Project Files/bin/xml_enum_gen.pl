@@ -271,7 +271,15 @@ sub handleGlobalDefineALT
 		
 		if ($hardcoded{$tag})
 		{
-			$output .= "const $vartype{$tag} $var = $value{$tag};\n";
+			if ($vartype{$tag} eq "int")
+			{
+				$output .= "#define $var $value{$tag}\n";
+			}
+			else
+			{
+				$output .= "const $vartype{$tag} $var = $value{$tag};\n";
+			}
+			
 			if ($vartype{$tag} eq "int")
 			{
 				$output_test .= "DisplayXMLhardcodingError($var == $value{$tag}, \"$tag\", true);\n";
