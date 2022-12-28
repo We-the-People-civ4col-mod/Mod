@@ -2311,7 +2311,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BAKERIES_DONE</Tag>
-        <English>Milord, you've built bakeries in five cities before any other colony could. New volunteers are ready to be recruited for the guard</English>
+        <English>Milord, you've built bakeries in five cities before any other colony could. New volunteers are ready to be recruited for the guard.</English>
         <German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Bäckereien errichten. Neue Freiwillge wollen sich der Wache anschließen.</German>
     </TEXT>
     <TEXT>
@@ -2328,6 +2328,36 @@
         <Tag>TXT_KEY_EVENT_FIVE_BAKERIES_DONE_1</Tag>
         <English>Ensure that these new volunteers get well trained. But give them a good meal first.</English>
         <German>Stellt sicher, dass die neuen Freiwilligen gut trainiert werden. Aber zuerst gebt ihnen eine anständige Mahlzeit.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BUTCHERS</Tag>
+        <English>Milord, some Hessian mercenaries are looking for a new contract. But they have made this strange condition that they will only work for the country with the best sausages. Maybe if we build butcheries in five of our cities we could convince them to come to us.</English>
+        <German>Milord, einige hessische Söldner suchen nach einem neuen Auftrag. Aber sie stellen die seltsame Bedingung dass sie nur für das Land mit den besten Würsten arbeiten wollen. Vielleicht können wir sie davon überzeugen zu uns zu kommen indem wir in fünf unserer Städte Metzgereien errichten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_FIVE_BUTCHERS_DONE</Tag>
+        <English>A colonial power is the first to have butchers in five cities.</English>
+        <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Metzgereien errichten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BUTCHERS_DONE</Tag>
+        <English>Milord, you've built butchers in five cities before any other colony could. That convinced the Hessian mercenaries to fight for us.</English>
+        <German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Metzgereien errichten. Das hat die hessischen Söldner überzeugt für uns zu kämpfen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAIL_FIVE_BUTCHERS</Tag>
+        <English>Milord, the governor of another colony has built butchers in five cities before you. You've missed the chance to hire the Hessian mercenaries.</English>
+        <German>Milord, der Gouverneur einer anderen Kolonie konnte vor euch in 5 Städten Metzgereien errichten. Dadurch habt Ihr die Chance auf die hessischen Söldner vertan.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FIVE_BUTCHERS</Tag>
+        <English>We shall show them hat our butchers make the best sausages in the World!</English>
+        <German>Wir werden beweisen, dass unsere Metzger die besten Würste der Welt machen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FIVE_BUTCHERS_DONE_1</Tag>
+        <English>Wonderful, let us celebrate a Hessian sausage festival.</English>
+        <German>Wundervoll, lasst uns ein hessisches Wurstfest feiern.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BURNING_CORN_CHAMBER</Tag>
