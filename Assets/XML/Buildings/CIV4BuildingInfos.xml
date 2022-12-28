@@ -1836,7 +1836,19 @@
             <YieldCosts>
                 <YieldCost>
                     <YieldType>YIELD_HAMMERS</YieldType>
-                    <iCost>100000</iCost>
+                    <iCost>500</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_TOOLS</YieldType>
+                    <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iCost>100</iCost>
+                </YieldCost>
+                <YieldCost>
+                    <YieldType>YIELD_CLAY</YieldType>
+                    <iCost>100</iCost>
                 </YieldCost>
             </YieldCosts>
             <iHurryCostModifier>0</iHurryCostModifier>
@@ -10774,6 +10786,10 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>2</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CULTURE</YieldType>
                     <iYieldChange>2</iYieldChange>
                 </YieldChange>
             </YieldChanges>
