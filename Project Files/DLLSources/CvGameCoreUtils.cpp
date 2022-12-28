@@ -1771,9 +1771,7 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 	// K-Mod end
 	FAssert(pSelectionGroup->getNumUnits() > 0);
 
-	// new movement system has 0 indexed turns while the old system relies on 1 index
-	BOOST_STATIC_ASSERT(GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0 || GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1);
-	int iTurns = GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM;
+	int iTurns = 1;
 	int iMoves = MAX_INT;
 
 	if (data == ASNC_INITIALADD)
