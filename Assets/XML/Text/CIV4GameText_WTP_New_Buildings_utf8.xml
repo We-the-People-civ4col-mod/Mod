@@ -927,4 +927,42 @@
         <English>TBD</English>
         <German>TBD</German>
     </TEXT>
+    <!-- JAIL -->
+    <TEXT>
+        <Tag>TXT_KEY_SPECIALBUILDING_JAIL</Tag>
+        <English>Jail</English>
+        <German>
+            <Text>Gefängnis</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDINGCLASS_JAIL</Tag>
+        <English>Jail</English>
+        <German>
+            <Text>Gefängnis</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_JAIL</Tag>
+        <English>Jail</English>
+        <German>
+            <Text>Gefängnis</Text>
+            <Gender>Neuter</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_GRAVEYARD_JAIL</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILDING_GRAVEYARD_JAIL</Tag>
+        <English>TBD</English>
+        <German>TBD</German>
+    </TEXT>
 </Civ4GameText>

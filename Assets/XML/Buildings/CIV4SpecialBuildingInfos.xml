@@ -384,5 +384,14 @@
             <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
             <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,7,1</NatureObject>
         </SpecialBuildingInfo>
+        <SpecialBuildingInfo>
+            <Type>SPECIALBUILDING_JAIL</Type>
+            <Description>TXT_KEY_SPECIALBUILDING_JAIL</Description>
+            <bValid>1</bValid>
+            <FontButtonIndex>42</FontButtonIndex>
+            <ProductionTraits/>
+            <Button>Art/Interface/Buttons/Buildings/BombShelters.dds</Button>
+            <NatureObject>,Art/Interface/Screens/City_Management/city_nature_altas.dds,2,1</NatureObject>
+        </SpecialBuildingInfo>
     </SpecialBuildingInfos>
 </Civ4SpecialBuildingInfos>

@@ -798,5 +798,11 @@
             <DefaultBuilding>BUILDING_BAKERY</DefaultBuilding>
             <VictoryThresholds/>
         </BuildingClassInfo>
+        <BuildingClassInfo>
+            <Type>BUILDINGCLASS_JAIL</Type>
+            <Description>TXT_KEY_BUILDINGCLASS_JAIL</Description>
+            <DefaultBuilding>BUILDING_JAIL</DefaultBuilding>
+            <VictoryThresholds/>
+        </BuildingClassInfo>
     </BuildingClassInfos>
 </Civ4BuildingClassInfos>
