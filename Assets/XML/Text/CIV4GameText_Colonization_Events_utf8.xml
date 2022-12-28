@@ -2292,12 +2292,42 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_GRAVEYARDS</Tag>
         <English>Of course we shall ensure that all our dead can rest peacefully in holy soil.</English>
-        <German>Selbstverständlich werden wir sicherstellen, dass alle unsere Toten friedvoll in heilger Erde ruhen können</German>
+        <German>Selbstverständlich werden wir sicherstellen, dass alle unsere Toten friedvoll in heilger Erde ruhen können.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_GRAVEYARDS_DONE_1</Tag>
         <English>Ensure that the priests are welcomed with a ceremony.</English>
         <German>Stellt sicher, dass die Priester mit Feierlichkeiten willkommen geheißen werden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BAKERIES</Tag>
+        <English>Milord, the commander of the town guard of our capitol suggests that we build five more bakeries in our cities to supply the guard with better rations. He promises that this would bring many new volunteers to the guard.</English>
+        <German>Milord, der Befehlshaber der Statdwache unserer Haupstadt schlägt vor, dass wir mehr Bäckereien in unseren Städten bauen um die Wache mit besseren Rationen zu versorgen. Er verspricht dass dies zu vielen neuen Freiwilligen für die Wache führne wird.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_FIVE_BAKERIES_DONE</Tag>
+        <English>A colonial power is the first to have bakeries in five cities.</English>
+        <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Bäckereien errichten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BAKERIES_DONE</Tag>
+        <English>Milord, you've built bakeries in five cities before any other colony could. New volunteers are ready to be recruited for the guard</English>
+        <German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Bäckereien errichten. Neue Freiwillge wollen sich der Wache anschließen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAIL_FIVE_BAKERIES</Tag>
+        <English>Milord, the governor of another colony has built bakeries in five cities before you. You've missed the chance to get new volunteers for the guard.</English>
+        <German>Milord, der Gouverneur einer anderen Kolonie konnte vor euch in 5 Städten Bäckereien errichten. Dadurch habt Ihr die Chance auf neue Freiwillige für die Wache vertan.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FIVE_BAKERIES</Tag>
+        <English>Of course we shall ensure that the brave men guarding our cities shall be well provisioned.</English>
+        <German>Selbstverständlich werden wir sicherstellen, dass die mutigen Männer, die unsere Städte bewachen gut versorgt sind.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FIVE_BAKERIES_DONE_1</Tag>
+        <English>Ensure that these new volunteers get well trained. But give them a good meal first.</English>
+        <German>Stellt sicher, dass die neuen Freiwilligen gut trainiert werden. Aber zuerst gebt ihnen eine anständige Mahlzeit.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BURNING_CORN_CHAMBER</Tag>
