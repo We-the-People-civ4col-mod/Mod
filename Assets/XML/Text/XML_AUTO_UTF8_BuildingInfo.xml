@@ -2206,9 +2206,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STATUE_GOVERNOR_STRATEGY</Tag>
-        <English>The [COLOR_BUILDING_TEXT]Statue of the Governor[COLOR_REVERT] gives all users playing "We The People" an open-ended sandbox, a building for the endgame which will likely never be completed. The [COLOR_BUILDING_TEXT]Statue of the Governor[COLOR_REVERT] serves no in-game purpose other than boosting the [LINK=CONCEPT_DOMESTIC_MARKET]Domestic Economy[\LINK] a little more.</English>
-        <French>La [COLOR_BUILDING_TEXT]Statue du Gouverneur[COLOR_REVERT], du fait de son coût totalement disproportionné en marteau, est un bâtiment quasiment impossible à construire. Son objectif est uniquement d'occuper la construction d'une ville pour permettre aux joueurs de mode bac à sable de continuer leur partie à l'infini.</French>
-        <German>Mit der [COLOR_BUILDING_TEXT]Statue des Gouverneurs[COLOR_REVERT] steht den Usern, die TAC als "Sandkastenspiel" nutzen, für die Endphase einer Partie ein Gebäude für eine zweckfreie Endlosproduktion zur Verfügung.</German>
+        <English>The [COLOR_BUILDING_TEXT]Statue of the Governor[COLOR_REVERT] is a symbol of appreciation of the citizens of teh colony for their governor. It generates additional [LINK=YIELD_HAPPINESS]happiness[\LINK] and [LINK=YIELD_CULTURE]culture[\LINK] in the city. Due to its high requirements it is usually build in endgame.</English>
+        <German>Die [COLOR_BUILDING_TEXT]Statue des Gouverneurs[COLOR_REVERT] ist ein Symbol der Wertschätung der Bürger der Kolonie für ihren Gouverneur. Sie erzeugt zusätzliche [LINK=YIELD_HAPPINESS]Zufriedenheit[\LINK] und [LINK=YIELD_CULTURE]Kultur[\LINK] in der Stadt. Aufgrund der hohen Voraussetzungen wird sie üblicherweise erst im späteren Spielverlauf gebaut.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STOCKADE</Tag>
