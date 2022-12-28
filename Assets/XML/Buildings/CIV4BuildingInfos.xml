@@ -12050,7 +12050,7 @@
             <Description>TXT_KEY_BUILDING_JAIL</Description>
             <Civilopedia>TXT_KEY_BUILDING_JAIL_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_BUILDING_JAIL_STRATEGY</Strategy>
-            <ArtDefineTag>ART_DEF_BUILDING_GRAVEYARD</ArtDefineTag>
+            <ArtDefineTag>ART_DEF_BUILDING_JAIL</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
             <FreeStartEra>NONE</FreeStartEra>

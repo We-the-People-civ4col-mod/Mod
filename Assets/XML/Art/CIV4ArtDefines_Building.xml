@@ -2763,12 +2763,12 @@
         </BuildingArtInfo>
        <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_JAIL</Type>
-            <LSystem>LSYSTEM_1x1</LSystem>
+            <LSystem>LSYSTEM_2x1</LSystem>
             <bAnimated>0</bAnimated>
             <CityTexture>,Art/Interface/Screens/City_Management/jail.dds</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>0.5</fScale>
-            <fInterfaceScale>0.5</fInterfaceScale>
+            <fScale>0.6</fScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
             <NIF>Art/Structures/Buildings/jail/jail.nif</NIF>
             <KFM/>
             <Button>,Art/colonization_atlas_buildings.dds,8,4</Button>
