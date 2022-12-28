@@ -1888,7 +1888,7 @@
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
-        	<iDomesticMarketModifier>250</iDomesticMarketModifier>
+            <iDomesticMarketModifier>0</iDomesticMarketModifier>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
             <DomainFreeExperiences/>
