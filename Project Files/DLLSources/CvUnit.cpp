@@ -8777,7 +8777,15 @@ bool CvUnit::isRivalTerritory() const
 
 bool CvUnit::canCoexistWithEnemyUnit(TeamTypes eTeam) const
 {
-	if (!m_pUnitInfo->isInvisible())
+	// WTP, ray, fixing strange behaviour of Buccanneers - START
+	bool bExceptionForHiddenNationalityInTransport = false;
+	if (m_pUnitInfo->isHiddenNationality() && getTransportUnit() != NULL)
+	{
+		bExceptionForHiddenNationalityInTransport = true;
+	}
+	// WTP, ray, fixing strange behaviour of Buccanneers - START
+
+	if (!m_pUnitInfo->isInvisible() && !bExceptionForHiddenNationalityInTransport)
 	{
 		if (getInvisibleType() == NO_INVISIBLE)
 		{
