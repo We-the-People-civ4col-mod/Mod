@@ -14149,8 +14149,6 @@ bool CvUnit::isAlwaysHostile(const CvPlot* pPlot) const
 
 bool CvUnit::verifyStackValid()
 {
-	// WTP, ray, fixing strange behaviour of Buccanneers - START
-	// potentially also here
 	if (plot()->isVisibleEnemyUnit(this))
 	{
 		return jumpToNearestValidPlot();
