@@ -2270,6 +2270,36 @@
         <German>Milord, Eure Kolonie konnte vor allen anderen in 5 Städten Märkte errichten. Die Händler aus unseren Städten fragen nun, welche Belohnung Ihr dafür wollt.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_GRAVEYARDS</Tag>
+        <English>Milord, the church requests that we build graveyards in at least five cities to bury dead citizens. We are promised that also priests will then be sent to hold funeral ceremonies.</English>
+        <German>Milord, die Kirche verlangt, dass wir in mindestens fünf Städten Friedhöfe bauen um tote Bürger zu begraben. Uns wurde versprochen, dass dann auch Priester für die Beerdigungen geschickt werden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_FIVE_GRAVEYARDS_DONE</Tag>
+        <English>A colonial power is the first to have graveyards in five cities.</English>
+        <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Friedhöfe errichten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_GRAVEYARDS_DONE</Tag>
+        <English>Milord, you've built graveyards in five cities before any other colony could. The church now sends the priests as promised.</English>
+        <German>Milord, Eure Kolonie konnte vor allen anderen in 5 Städten Friedhöfe errichten. Die Kirche schickt nun wie versprochen die Priester.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAIL_FIVE_GRAVEYARDS</Tag>
+        <English>Milord, the governor of another colony has built graveyards in five cities before you. You've missed the chance to get the reward from the church.</English>
+        <German>Milord, der Gouverneur einer anderen Kolonie konnte vor euch in 5 Städten Friedhöfe errichten. Dadurch habt Ihr die Chance auf eine Belohung durch die Kirche vertan.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FIVE_GRAVEYARDS</Tag>
+        <English>Of course we shall ensure that all our dead can rest peacefully in holy soil.</English>
+        <German>Selbstverständlich werden wir sicherstellen, dass alle unsere Toten friedvoll in heilger Erde ruhen können</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FIVE_GRAVEYARDS_DONE_1</Tag>
+        <English>Ensure that the priests are welcomed with a ceremony.</English>
+        <German>Stellt sicher, dass die Priester mit Feierlichkeiten willkommen geheißen werden.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BURNING_CORN_CHAMBER</Tag>
         <English>A corn chamber in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] caught fire.</English>
         <French>Un grenier à maïs à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a pris feu.</French>
