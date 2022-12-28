@@ -8783,7 +8783,7 @@ bool CvUnit::canCoexistWithEnemyUnit(TeamTypes eTeam) const
 	{
 		bExceptionForHiddenNationalityInTransport = true;
 	}
-	// WTP, ray, fixing strange behaviour of Buccanneers - START
+	// WTP, ray, fixing strange behaviour of Buccanneers - END
 
 	if (!m_pUnitInfo->isInvisible() && !bExceptionForHiddenNationalityInTransport)
 	{
@@ -10487,7 +10487,18 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 						{
 							if (NO_UNITCLASS == pLoopUnit->getUnitInfo().getUnitCaptureClassType() && pLoopUnit->canDefend(pNewPlot))
 							{
-								pLoopUnit->jumpToNearestValidPlot(); // can kill unit
+								// WTP, ray, fixing strange behaviour of Buccanneers - START
+								bool bExceptionForHiddenNationalityInTransport = false;
+								if (m_pUnitInfo->isHiddenNationality() && getTransportUnit() != NULL)
+								{
+									bExceptionForHiddenNationalityInTransport = true;
+								}
+								// WTP, ray, fixing strange behaviour of Buccanneers - END
+
+								if (!bExceptionForHiddenNationalityInTransport)
+								{
+									pLoopUnit->jumpToNearestValidPlot(); // can kill unit
+								}
 							}
 							else
 							{
@@ -14138,6 +14149,8 @@ bool CvUnit::isAlwaysHostile(const CvPlot* pPlot) const
 
 bool CvUnit::verifyStackValid()
 {
+	// WTP, ray, fixing strange behaviour of Buccanneers - START
+	// potentially also here
 	if (plot()->isVisibleEnemyUnit(this))
 	{
 		return jumpToNearestValidPlot();
