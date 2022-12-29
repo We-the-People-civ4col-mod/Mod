@@ -64,6 +64,10 @@
                     <YieldType>YIELD_GOATS</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
             </Yields>
             <RiverYieldIncreases>
                 <YieldIntegerPair>
@@ -259,6 +263,10 @@
                 </YieldIntegerPair>
                <YieldIntegerPair>
                     <YieldType>YIELD_CLAY</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
             </Yields>
@@ -458,6 +466,10 @@
                     <YieldType>YIELD_GOATS</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
             </Yields>
             <RiverYieldIncreases>
                 <YieldIntegerPair>
@@ -633,6 +645,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SHEEP</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
             </Yields>
@@ -826,6 +842,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_MAPLE_SIRUP</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
             </Yields>
@@ -1023,6 +1043,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_GOATS</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
             </Yields>
@@ -1395,6 +1419,10 @@
                     <YieldType>YIELD_GOATS</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
             </Yields>
             <RiverYieldIncreases>
                 <YieldIntegerPair>
@@ -1586,6 +1614,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SHEEP</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
             </Yields>
@@ -1783,6 +1815,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SHEEP</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
             </Yields>
@@ -1990,6 +2026,10 @@
                     <YieldType>YIELD_GOATS</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
             </Yields>
             <RiverYieldIncreases>
                 <YieldIntegerPair>
@@ -2165,6 +2205,10 @@
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_GOATS</YieldType>
+                    <iValue>-3</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_COCHINEAL</YieldType>
                     <iValue>-3</iValue>
                 </YieldIntegerPair>
             </Yields>
