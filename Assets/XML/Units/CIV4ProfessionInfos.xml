@@ -785,7 +785,7 @@
             </YieldsConsumed>
             <Button>Art/interface/buttons/New_Profession_Buttons/Cochineal_Collector.dds</Button>
             <bUseLbD>1</bUseLbD>
-            <ExpertUnit>UNITCLASS_INDIGO_PLANTER</ExpertUnit>
+            <ExpertUnit>UNITCLASS_COCHINEAL_COLLECTOR</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
@@ -1922,7 +1922,7 @@
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_SPICE_TRADER</ExpertUnit>
             <iLbDLearnLevel>2</iLbDLearnLevel>
-        </ProfessionInfo>	
+        </ProfessionInfo>
         <ProfessionInfo>
             <Type>PROFESSION_CONFECTIONER_CHOCOLATE</Type>
             <Description>TXT_KEY_PROFESSION_CONFECTIONER_CHOCOLATE</Description>
@@ -3455,7 +3455,7 @@
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_HOUSEHOLD_TRADER</ExpertUnit>
             <iLbDLearnLevel>3</iLbDLearnLevel>
-        </ProfessionInfo>        
+        </ProfessionInfo>
         <ProfessionInfo>
             <Type>PROFESSION_HOUSEHOLD_GOODS_TRADER</Type>
             <Description>TXT_KEY_PROFESSION_HOUSEHOLD_GOODS_TRADER</Description>
@@ -5823,7 +5823,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>7</iCombatChange>
-        	<iBombardRateChangeProfession>20</iBombardRateChangeProfession>
+            <iBombardRateChangeProfession>20</iBombardRateChangeProfession>
             <iBarracksSpaceNeededChange>2</iBarracksSpaceNeededChange>
             <iMovesChange>0</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
@@ -5878,7 +5878,7 @@
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>9</iCombatChange>
-        	<iBombardRateChangeProfession>30</iBombardRateChangeProfession>
+            <iBombardRateChangeProfession>30</iBombardRateChangeProfession>
             <iBarracksSpaceNeededChange>2</iBarracksSpaceNeededChange>
             <iMovesChange>0</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
