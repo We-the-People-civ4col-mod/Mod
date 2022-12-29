@@ -3126,7 +3126,8 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 		{
 			CvPlayerAI& kPlayer = GET_PLAYER(ePlotOwner);
 			// the owner of the Plot is not a Native
-			if (!kPlayer.isNative())
+			// unless of course the Animal belongs to the Plot owner itself
+			if (!kPlayer.isNative() && getOwnerINLINE() != ePlotOwner)
 			{
 				if (kPlot.isCityRadius())
 				{
