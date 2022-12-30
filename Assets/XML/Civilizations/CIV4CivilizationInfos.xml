@@ -6218,7 +6218,7 @@
                     <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
- 				<Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_BAKER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -6229,8 +6229,8 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_CHARCOAL_BURNER</UnitClassType>
                     <UnitType>NONE</UnitType>
-                </Unit>				
-				<Unit>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -6376,6 +6376,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -7543,6 +7547,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -8717,6 +8725,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -9896,6 +9908,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -11072,6 +11088,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -12239,6 +12259,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -13403,6 +13427,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -14565,6 +14593,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -15752,6 +15784,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -16929,6 +16965,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -18093,6 +18133,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -19282,6 +19326,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -20448,6 +20496,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -21618,6 +21670,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -22791,6 +22847,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -23959,6 +24019,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -25125,6 +25189,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -26304,6 +26372,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -27450,6 +27522,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -28629,6 +28705,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -29792,6 +29872,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -30949,6 +31033,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -32113,6 +32201,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -33264,6 +33356,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -34433,6 +34529,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -35596,6 +35696,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -36754,6 +36858,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -37915,6 +38023,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -39074,6 +39186,10 @@
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -40225,6 +40341,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -41493,6 +41613,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CONSTRUCTION_SUPPLIES</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
