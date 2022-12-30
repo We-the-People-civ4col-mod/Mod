@@ -6024,6 +6024,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -7165,6 +7185,26 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -8325,7 +8365,27 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
-			</Buildings>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+            </Buildings>
             <Units>
                 <Unit>
                     <UnitClassType>UNITCLASS_GREAT_GENERAL</UnitClassType>
@@ -9482,6 +9542,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -10634,6 +10714,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -11781,6 +11881,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -12925,6 +13045,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -14067,6 +14207,26 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -15238,6 +15398,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -16395,6 +16575,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -17539,6 +17739,26 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -18704,6 +18924,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -19850,6 +20090,26 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -21006,6 +21266,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -22157,6 +22437,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -23299,6 +23599,26 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -24447,6 +24767,26 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -25606,6 +25946,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -26736,6 +27096,26 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -27895,6 +28275,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -29038,6 +29438,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -30171,6 +30591,26 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -31315,6 +31755,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -32450,6 +32910,26 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -33595,6 +34075,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -34738,6 +35238,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -35876,6 +36396,26 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -37021,6 +37561,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -38160,6 +38720,26 @@
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
             </Buildings>
             <Units>
                 <Unit>
@@ -39291,6 +39871,26 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
@@ -40535,6 +41135,26 @@
                 </Building>
                 <Building>
                     <BuildingClassType>BUILDINGCLASS_BAKERY</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_VILLAGE_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_TOWN_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_CITY_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_SUPREME_COURT</BuildingClassType>
+                    <BuildingType>NONE</BuildingType>
+                </Building>
+                <Building>
+                    <BuildingClassType>BUILDINGCLASS_JAIL</BuildingClassType>
                     <BuildingType>NONE</BuildingType>
                 </Building>
             </Buildings>
