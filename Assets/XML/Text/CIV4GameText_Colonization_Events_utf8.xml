@@ -2360,6 +2360,36 @@
         <German>Wundervoll, lasst uns ein hessisches Wurstfest feiern.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MEDICAL_OFFICES</Tag>
+        <English>Milord, our ships that return from Europe bring bad news. There seem to have been outbreaks of the plague in major cities of several countries. Our citizens are thus worried and demand that we build hospitals in at least five cities to be prepared for the worst. They even offer to raise money to hire more doctors.</English>
+        <German>Milord, unsere Schiffe die aus Europa zurückkehren bringen schlechte Neuigkeiten. Es scheint als hätte es Ausbrüche der Pest in den den Großstädten mehrerer Länder gegeben. Unsere Bürger sind daher beunruhigt und verlangen dass wir Krankenhäuser in midetens fünf Städten bauen um auf das Schlimmste vorbereitet zu sein. Sie bieten sogar an Geld für die Anstellung von mehr Ärzten zu sammeln.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_FIVE_MEDICAL_OFFICES_DONE</Tag>
+        <English>A colonial power is the first to have hospitals in five cities.</English>
+        <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Krankenhäuser errichten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MEDICAL_OFFICES_DONE</Tag>
+        <English>Milord, you've built hospitals in five cities before any other colony could. As promised our citizens collected money to hire more doctors.</English>
+        <German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Krankenhäuser errichten. Wie versprochen haben unsere Bürger Geld gesammelt um mehr Ärzte einzustellen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAIL_FIVE_MEDICAL_OFFICES</Tag>
+        <English>Milord, the governor of another colony has built hospitals in five cities before you. You've missed the chance to convince your citizens to pay for more doctors.</English>
+        <German>Milord, der Gouverneur einer anderen Kolonie konnte vor euch in 5 Städten Krankenhäuser errichten. Dadurch habt Ihr die Chance vertan eure Bürger davon zu überzeugen für mehr Ärzte zu bezahlen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FIVE_MEDICAL_OFFICES</Tag>
+        <English>We will ensure the medical protection of our citizes.</English>
+        <German>Wir werden so gut wie möglich die medizinische Versorgung unserer Bürger sichern.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FIVE_MEDICAL_OFFICES_DONE_1</Tag>
+        <English>The doctors shall get all they need. Any first sign of the plague shall be reported immediately.</English>
+        <German>Die Ärzte sollen alles bekommen was sie brauche. Jedes noch so kleine Zeichen der Pest muss sofort berichtet werden.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BURNING_CORN_CHAMBER</Tag>
         <English>A corn chamber in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] caught fire.</English>
         <French>Un grenier à maïs à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a pris feu.</French>
