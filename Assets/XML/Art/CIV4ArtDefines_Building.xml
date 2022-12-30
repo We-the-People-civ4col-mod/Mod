@@ -2773,5 +2773,53 @@
             <KFM/>
             <Button>,Art/colonization_atlas_buildings.dds,8,4</Button>
         </BuildingArtInfo>
+        <BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_VILLAGE_COURTHOUSE</Type>
+            <LSystem>LSYSTEM_2x1</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/village_courthouse.dds</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>0.6</fScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
+            <NIF>Art/Structures/Buildings/Courthouse/village_courthouse.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_professions_bonus.dds,1,18</Button>
+        </BuildingArtInfo>
+		<BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_TOWN_COURTHOUSE</Type>
+            <LSystem>LSYSTEM_2x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/town_courthouse.dds</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>0.6</fScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
+            <NIF>Art/Structures/Buildings/Courthouse/town_courthouse.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_professions_bonus.dds,2,18</Button>
+        </BuildingArtInfo>
+		<BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_CITY_COURTHOUSE</Type>
+            <LSystem>LSYSTEM_3x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/city_courthouse.dds</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>0.6</fScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
+            <NIF>Art/Structures/Buildings/Courthouse/city_courthouse.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_professions_bonus.dds,3,18</Button>
+        </BuildingArtInfo>
+		<BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_SUPREME_COURT</Type>
+            <LSystem>LSYSTEM_3x2</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Interface/Screens/City_Management/supreme_court.dds</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>0.6</fScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
+            <NIF>Art/Structures/Buildings/Courthouse/supreme_court.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_professions_bonus.dds,4,18</Button>
+        </BuildingArtInfo>
     </BuildingArtInfos>
 </Civ4ArtDefines>
