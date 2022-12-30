@@ -11431,7 +11431,7 @@
             <Description>TXT_KEY_BUILDING_VILLAGE_COURT</Description>
             <Civilopedia>TXT_KEY_BUILDING_VILLAGE_COURT_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_BUILDING_VILLAGE_COURT_STRATEGY</Strategy>
-            <ArtDefineTag>ART_DEF_BUILDING_MEDICAL_OFFICE</ArtDefineTag>
+            <ArtDefineTag>ART_DEF_BUILDING_VILLAGE_COURTHOUSE</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
             <FreeStartEra>NONE</FreeStartEra>
@@ -11523,7 +11523,7 @@
             <Description>TXT_KEY_BUILDING_TOWN_COURT</Description>
             <Civilopedia>TXT_KEY_BUILDING_TOWN_COURT_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_BUILDING_TOWN_COURT_STRATEGY</Strategy>
-            <ArtDefineTag>ART_DEF_BUILDING_VIL_HOSPITAL</ArtDefineTag>
+            <ArtDefineTag>ART_DEF_BUILDING_TOWN_COURTHOUSE</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
             <FreeStartEra>NONE</FreeStartEra>
@@ -11631,7 +11631,7 @@
             <Description>TXT_KEY_BUILDING_CITY_COURT</Description>
             <Civilopedia>TXT_KEY_BUILDING_CITY_COURT_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_BUILDING_CITY_COURT_STRATEGY</Strategy>
-            <ArtDefineTag>ART_DEF_BUILDING_CITY_HOSPITAL</ArtDefineTag>
+            <ArtDefineTag>ART_DEF_BUILDING_CITY_COURTHOUSE</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
             <FreeStartEra>NONE</FreeStartEra>
@@ -11744,7 +11744,7 @@
             <Description>TXT_KEY_BUILDING_SUPREME_COURT</Description>
             <Civilopedia>TXT_KEY_BUILDING_SUPREME_COURT_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_BUILDING_SUPREME_COURT_STRATEGY</Strategy>
-            <ArtDefineTag>ART_DEF_BUILDING_PALACE</ArtDefineTag>
+            <ArtDefineTag>ART_DEF_BUILDING_SUPREME_COURT</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
             <FreeStartEra>NONE</FreeStartEra>
