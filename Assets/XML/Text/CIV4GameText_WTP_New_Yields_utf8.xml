@@ -1842,7 +1842,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_MILK_PEDIA</Tag>
-        <English>[TAB][H1]Milk[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Milk[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Milk[COLOR_REVERT] comes from cows, sheep or goats on [LINK=TERRAIN_HILL]hill[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist produce milk, assign her to the [LINK=PROFESSION_MILKMAID]milkmaid[\LINK] profession.[NEWLINE]Milk production is highest on plots bearing the [LINK=BONUS_CATTLE]cattle[\LINK], [LINK=BONUS_SHEEP]sheep[\LINK] or [LINK=BONUS_GOATS]goats[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on livestock-producing plots and employing [LINK=UNIT_MILKMAID]expert milkmaids[\LINK]. These experts can be hired in Europe.[NEWLINE]Milk is the raw material for making [LINK=YIELD_CHEESE]cheese[\LINK].[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Milk[COLOR_REVERT] as a business usually means the milk of cows, goats, or sheep. It's a good source of  protein and fat. When used to make [COLOR_HIGHLIGHT_TEXT]cheese[COLOR_REVERT], milk is acidified and the enzymes of either rennet or other bacterial enzymes are added to cause the casein to coagulate.</English>
         <German>[TAB][H1]Milch[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1886,7 +1886,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_KAUTSCHUK_PEDIA</Tag>
-        <English>[TAB][H1]Kautschuk[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Kautschuk[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rubber[COLOR_REVERT] can be collected in [LINK=TERRAIN_JUNGLE]jungle[\LINK] terrain. To make colonists produce rubber, assign them to the [LINK=PROFESSION_KAUTSCHUK_COLLECTOR]rubber collector[\LINK] profession.[NEWLINE]Rubber production is highest on plots bearing the [LINK=BONUS_KAUTSCHUK]rubber[\LINK] bonus, and can be increased by employing [LINK=UNIT_KAUTSCHUK_COLLECTOR]expert rubber collectors[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rubber[COLOR_REVERT] is harvested by making incisions in the bark of rubber trees. The latex is heated to create rubber that can be dried into waterproof sheets, along with other industrial products. Rubber has a large stretch ratio, high resilience and is also waterproof. It's classified as an elastomer.</English>
         <German>[TAB][H1]Kautschuk[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1930,7 +1930,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHEESE_PEDIA</Tag>
-        <English>[TAB][H1]Cheese[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Cheese[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Cheese[COLOR_REVERT] is made from [LINK=YIELD_MILK]milk[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_CHEESE_MAKER]cheesemaker[\LINK] profession in the [LINK=BUILDING_CHEESEMAKERS_HOUSE]cheesemaker's house[\LINK] or one of its upgrades. The output of cheese can be doubled by commissioning [LINK=UNIT_CHEESE_MAKER]master cheesemakers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Cheese is produced in a wide range of flavours and textures by coagulation of the milk protein casein. It's made of proteins and fat from milk, usually the milk of cows, goats, or sheep. During production, milk is acidified and the enzymes of either rennet or other bacterial enzymes are added to cause the casein to coagulate. The solid curds are then separated from the liquid whey and pressed into finished cheese.</English>
         <German>[TAB][H1]Käse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1974,7 +1974,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_POTTERY_PEDIA</Tag>
-        <English>[TAB][H1]Pottery[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Pottery[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pottery[COLOR_REVERT] is thrown from [LINK=YIELD_CLAY]clay[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_POTTER]potter[\LINK] profession in the [LINK=BUILDING_POTTERS_HOUSE]potter's house[\LINK] or one of its upgrades. The output of pottery can be doubled by commissioning a [LINK=UNIT_POTTER]master potter[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pottery is an ancient way to store grain. Pottery thwarts the rats, mice and insects that would otherwise devour the crop and leave everyone to starve. A few creative types fashion imaginative vessels with decorative patterns, some merely for display. The Puritans strongly object.</English>
         <German>[TAB][H1]Töpferwaren[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
