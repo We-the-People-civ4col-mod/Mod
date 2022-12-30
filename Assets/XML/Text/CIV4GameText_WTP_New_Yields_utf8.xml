@@ -1754,7 +1754,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHOCOLATE_PEDIA</Tag>
-        <English>[TAB][H1]Chocolate[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Chocolate[\H1][PARAGRAPH:2][BOLD[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Chocolate[COLOR_REVERT] is created from [LINK=YIELD_COCOA_BEANS]cocoa[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_CONFECTIONER]confectioner[\LINK] profession in the [LINK=BUILDING_CONFECTIONER_SHOP]confectioner's shop[\LINK] or one of its upgrades. The output of chocolate can be doubled by commissioning [LINK=UNIT_CONFECTIONER]master confectioners[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Having a chocolate shop means that the settlers and their children don't need to wait for the ship to come in from Europe to satisfy their sweet tooth. The local confectioner makes everybody happy, the dentist in particular.[NEWLINE]One trick to making good chocolate is grinding the sugar so fine that the candy has a smooth consistency.[NEWLINE]Some chocolatiers even set up tables where tea is served to accompany the treats. A very few offer coffee, at first considered scandalous, because the drink is so stimulating.</English>
         <German>[TAB][H1]Schokolade[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1798,7 +1798,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PADDED_LEATHER_COATS_PEDIA</Tag>
-        <English>[TAB][H1]Padded Leather Coats[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Padded Leather Coats[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Padded leather coats[COLOR_REVERT] are manufactured from [LINK=YIELD_HIDES]hides[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_PADDED_LEATHER_COAT]leather clothier[\LINK] profession in the [LINK=BUILDING_PADDED_LEATHER_COAT_MAKERS_HOUSE] padded leather coat house[\LINK] or one of its upgrades. The output of coats can be doubled by commissioning a [LINK=UNIT_PADDED_LEATHER_COAT_MAKER]master leather clothier[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Leather is good at keeping out the wind but when the temperature drops it still feels cold. Putting padding into leather coats keeps people warm when the snow flies. Sewing padding into leather doesn't just make the clothes more comfortable. By adding insulation it also improves health for those working outside, and can even save their lives.</English>
         <German>[TAB][H1]Geplosterte Ledermäntel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
