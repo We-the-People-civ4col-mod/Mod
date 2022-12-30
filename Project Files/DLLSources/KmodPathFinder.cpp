@@ -234,6 +234,7 @@ CvPlot* KmodPathFinder::GetPathEndTurnPlot() const
 
 	while (node && node->m_iData2 > 1)
 	{
+		if (node->m_pParent->m_iData2 = 1 && node->m_pParent->m_iData1 > 0) break; // this is the case if we are just 1 plot away from the destination, but will have negative movement points if we move to the destination this turn. We should then return the destination, not our current plot!
 		node = node->m_pParent;
 	}
 	FAssert(node);
