@@ -1243,7 +1243,7 @@ int CvPlayerAI::AI_estimatedColonistIncome(CvPlot* pPlot, CvUnit* pColonist)
 		for (int i = 0; i < NUM_YIELD_TYPES; i++)
 		{
 			//ignore food and yields not sold
-			if ((i != YIELD_FOOD) && (i != YIELD_LUMBER) && (i != YIELD_STONE) && (i != YIELD_HARDWOOD) && (i != YIELD_CLAY))
+			if ((i != YIELD_FOOD) && (i != YIELD_LUMBER) && (i != YIELD_STONE))
 			{
 				int natureYield = pPlot->calculateNatureYield((YieldTypes) i, getTeam(), false);
 				if (natureYield > bestOutput)
@@ -1291,7 +1291,7 @@ int CvPlayerAI::AI_estimatedColonistIncome(CvPlot* pPlot, CvUnit* pColonist)
 							{
 								int iValue = 0;
 								int yield = pPlot->calculatePotentialProfessionYieldAmount(loopProfession, pColonist, false);
-								if (eYield == YIELD_LUMBER || eYield == YIELD_STONE || eYield == YIELD_HARDWOOD || eYield == YIELD_CLAY)
+								if (eYield == YIELD_LUMBER || eYield == YIELD_STONE)
 								{
 									iValue += (yield * kPlayerEurope.getYieldSellPrice(eYield)) / 2;
 								}
@@ -1636,7 +1636,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 					for (int i = 0; i < NUM_YIELD_TYPES; i++)
 					{
 						//ignore food because checked and lumber and stone because City Center Plot
-						if ((i != YIELD_FOOD) && (i != YIELD_LUMBER) && (i != YIELD_STONE) && (i != YIELD_HARDWOOD) && (i != YIELD_CLAY))
+						if ((i != YIELD_FOOD) && (i != YIELD_LUMBER) && (i != YIELD_STONE))
 						{
 							int natureYield = pPlot->calculateNatureYield((YieldTypes) i, getTeam(), false);
 							if (natureYield > bestOutput)
@@ -1684,7 +1684,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 											{
 												iYieldValue *= 4;
 											}
-											if ((eYield == YIELD_STONE || eYield == YIELD_HARDWOOD || eYield == YIELD_CLAY) && getNumCities() > 4)
+											if ((eYield == YIELD_STONE) && getNumCities() > 4)
 											{
 												iYieldValue *= 2;
 											}
