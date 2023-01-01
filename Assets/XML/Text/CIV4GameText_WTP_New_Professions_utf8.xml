@@ -743,12 +743,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_YERBA_TRADER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba mate. Brewed cold, it is used to make terere.[NEWLINE]The Guarani and Tupi cultivated yerba mate prior to European colonization. After the Jesuits started using it, yerba mate became widespread in what's now Paraguay and throughout other Spanish colonies.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_YERBA_TRADER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Yerba traders[COLOR_REVERT] can work in the [LINK=BUILDING_YERBA_TRADERS_HOUSE]yerba trader's house[\LINK] or one of its upgrades to produce [LINK=YIELD_YERBA]yerba tea[\LINK] from [LINK=YIELD_YERBA]yerba[\LINK]. [LINK=UNIT_YERBA_MAKER]Master yerba traders[\LINK] excel at this craft, and can greatly boost your production of yerba mate.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -770,12 +770,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HOOCH_DISTILLER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Whisky was in the baggage of many Scottish immigrants who wanted something similar in their new home. Malted barley was the main ingredient in Europe but it was never as successful in the New World.[NEWLINE]Corn whiskey, later called bourbon, became the American standard. Commercial distilleries also began to make whiskey from wheat and rye starting in the late 18th century.[NEWLINE]During the Civil War excise taxes were introduced. That led to moonshine, high-proof liquor made illegally at night in the woods, especially in the American South.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HOOCH_DISTILLER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]YWhiskey distillers[COLOR_REVERT] can work in the [LINK=BUILDING_DISTILLERS_HOUSE]distiller's house[\LINK] or one of its upgrades to produce [LINK=YIELD_HOOCH]whiskey[\LINK] from [LINK=YIELD_CORN]corn[\LINK]. [LINK=UNIT_DISTILLER]Master whiskey distillers[\LINK] excel at this craft, and can greatly boost your production of whiskey.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -797,12 +797,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PADDED_FURNITURE_MAKER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Rugged wooden furniture is all well and good for settlers out on the frontier, but citizens who've earned a little comfort appreciate an easy chair and a big soft couch to sink into. They'll pay extra for that pleasure, which is why the upholsterer has chosen a good trade.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PADDED_FURNITURE_MAKER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Upholsterers[COLOR_REVERT] can work in the [LINK=BUILDING_FURNITURE_MAKERS_HOUSE]furniture maker's house[\LINK] or one of its upgrades to produce [LINK=YIELD_PADDED_FURNITURE]padded furniture[\LINK] from [LINK=YIELD_LEATHER]leather[\LINK]. [LINK=UNIT_FURNITURE_MAKER]Master upholsterers[\LINK] excel at this craft, and can greatly boost your production of padded furniture.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -820,12 +820,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_TANNER_PIG_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Pigskin is softer than cow leather and is preferred for detailed items such as gloves. Pigskin jackets are more supple than the heavier cow leather jacket, which however is more durable. Pig leather is easier to work, so garments typically have a finer finish.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_TANNER_PIG_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Pigskin tanners[COLOR_REVERT] can work in the [LINK=BUILDING_TANNERS_HOUSE]tanner's house[\LINK] or one of its upgrades to produce [LINK=YIELD_PIG_SKINS]pigskins[\LINK] from [LINK=YIELD_PIGS]pigs[\LINK]. [LINK=UNIT_TANNER_PIG]Master pigskin tanners[\LINK] excel at this craft, and can greatly boost your production of pigskin.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
