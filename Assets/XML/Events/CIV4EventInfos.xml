@@ -27540,7 +27540,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_SUGAR_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_SUGAR_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -27606,7 +27606,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_SUGAR_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_SUGAR_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -27672,7 +27672,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_SUGAR_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_SUGAR_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -27799,7 +27799,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_TOBACCO_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_TOBACCO_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -27865,7 +27865,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_TOBACCO_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_TOBACCO_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -27931,7 +27931,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_TOBACCO_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_TOBACCO_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -28058,7 +28058,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_LUMBER_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_LUMBER_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -28124,7 +28124,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_LUMBER_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_LUMBER_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -28251,7 +28251,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_ORE_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_ORE_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -28317,7 +28317,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_ORE_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_ORE_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -28444,7 +28444,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_STONE_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_STONE_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -28510,7 +28510,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_STONE_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_STONE_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -28637,7 +28637,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_HEMP_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_HEMP_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -28703,7 +28703,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_HEMP_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_HEMP_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -28830,7 +28830,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_SHEEP_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_SHEEP_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -28896,7 +28896,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_SHEEP_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_SHEEP_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -28962,7 +28962,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_SHEEP_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_SHEEP_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -29089,7 +29089,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_CATTLE_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_CATTLE_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -29155,7 +29155,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_CATTLE_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_CATTLE_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -29221,7 +29221,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_CATTLE_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_CATTLE_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -29348,7 +29348,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_HORSES_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_HORSES_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -29414,7 +29414,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_HORSES_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_HORSES_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -29480,7 +29480,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_HORSES_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_HORSES_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -29607,7 +29607,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -29673,7 +29673,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -29739,7 +29739,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -29866,7 +29866,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COCA_LEAVES_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COCA_LEAVES_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -29932,7 +29932,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COCA_LEAVES_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COCA_LEAVES_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -30059,7 +30059,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_FUR_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_FUR_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -30125,7 +30125,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_FUR_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_FUR_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -30191,7 +30191,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_FUR_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_FUR_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -30257,7 +30257,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_FUR_DONE_3</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_FUR_DONE_4</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -30384,7 +30384,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COFFEE_BERRIES_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COFFEE_BERRIES_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -30450,7 +30450,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COFFEE_BERRIES_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COFFEE_BERRIES_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -30516,7 +30516,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COFFEE_BERRIES_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COFFEE_BERRIES_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -30643,7 +30643,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_WOOL_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_WOOL_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -30709,7 +30709,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_WOOL_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_WOOL_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -30836,7 +30836,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COTTON_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COTTON_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -30902,7 +30902,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COTTON_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COTTON_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -30968,7 +30968,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COTTON_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COTTON_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -31095,7 +31095,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_INDIGO_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_INDIGO_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -31161,7 +31161,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_INDIGO_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_INDIGO_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -31227,7 +31227,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_INDIGO_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_INDIGO_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -31354,7 +31354,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_FOOD_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_FOOD_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -31420,7 +31420,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_FOOD_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_FOOD_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -31486,7 +31486,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_FOOD_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_FOOD_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -31613,7 +31613,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_HIDES_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_HIDES_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -31679,7 +31679,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_HIDES_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_HIDES_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -31806,7 +31806,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -31872,7 +31872,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -31938,7 +31938,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -32004,7 +32004,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE_3</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE_4</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -32131,7 +32131,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_RAW_SALT_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_RAW_SALT_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -32197,7 +32197,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_RAW_SALT_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_RAW_SALT_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -32263,7 +32263,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_RAW_SALT_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_RAW_SALT_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -32329,7 +32329,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_RAW_SALT_DONE_3</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_RAW_SALT_DONE_4</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -32456,7 +32456,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_RED_PEPPER_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_RED_PEPPER_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -32522,7 +32522,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_RED_PEPPER_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_RED_PEPPER_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -32588,7 +32588,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_RED_PEPPER_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_RED_PEPPER_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -32715,7 +32715,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_BARLEY_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_BARLEY_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -32781,7 +32781,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_BARLEY_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_BARLEY_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -32908,7 +32908,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_GRAPES_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_GRAPES_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -32974,7 +32974,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_GRAPES_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_GRAPES_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -33101,7 +33101,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_WHALE_BLUBBER_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_WHALE_BLUBBER_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -33167,7 +33167,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_WHALE_BLUBBER_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_WHALE_BLUBBER_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -33294,7 +33294,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_VALUABLE_WOOD_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_VALUABLE_WOOD_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -33360,7 +33360,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_VALUABLE_WOOD_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_VALUABLE_WOOD_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -33487,7 +33487,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -33553,7 +33553,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -33680,7 +33680,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_SAILCLOTH_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_SAILCLOTH_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -33746,7 +33746,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_SAILCLOTH_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_SAILCLOTH_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -33873,7 +33873,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_TOOLS_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_TOOLS_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -33939,7 +33939,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_TOOLS_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_TOOLS_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -34005,7 +34005,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_TOOLS_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_TOOLS_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -34132,7 +34132,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_BLADES_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_BLADES_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -34198,7 +34198,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_BLADES_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_BLADES_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -34264,7 +34264,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_BLADES_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_BLADES_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -34391,7 +34391,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_CANNONS_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_CANNONS_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -34457,7 +34457,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_CANNONS_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_CANNONS_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -34523,7 +34523,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_CANNONS_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_CANNONS_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -34650,7 +34650,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_MUSKETS_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_MUSKETS_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -34716,7 +34716,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_MUSKETS_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_MUSKETS_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -34782,7 +34782,7 @@
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_MUSKETS_DONE_2</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_MUSKETS_DONE_3</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -34909,7 +34909,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_ROPE_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_ROPE_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -34975,7 +34975,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_ROPE_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_ROPE_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -35102,7 +35102,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_SILVER_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_SILVER_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -35168,7 +35168,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_SILVER_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_SILVER_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -35295,7 +35295,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_GEMS_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_GEMS_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -35361,7 +35361,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_GEMS_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_GEMS_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -35488,7 +35488,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_CIGARS_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_CIGARS_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -35554,7 +35554,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_CIGARS_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_CIGARS_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -35681,7 +35681,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COFFEE_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COFFEE_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -35747,7 +35747,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COFFEE_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COFFEE_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -35874,7 +35874,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COCOA_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COCOA_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -35940,7 +35940,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COCOA_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COCOA_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -36067,7 +36067,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_GOLD_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_GOLD_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -36133,7 +36133,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_GOLD_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_GOLD_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -36260,7 +36260,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_WOOL_CLOTH_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_WOOL_CLOTH_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -36326,7 +36326,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_WOOL_CLOTH_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_WOOL_CLOTH_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -36453,7 +36453,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_CLOTH_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_CLOTH_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -36519,7 +36519,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_CLOTH_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_CLOTH_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -36646,7 +36646,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COLOURED_CLOTH_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COLOURED_CLOTH_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -36712,7 +36712,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COLOURED_CLOTH_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COLOURED_CLOTH_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -36839,7 +36839,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_LEATHER_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_LEATHER_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -36905,7 +36905,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_LEATHER_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_LEATHER_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -37032,7 +37032,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COATS_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COATS_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -37098,7 +37098,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_COATS_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_COATS_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -37225,7 +37225,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_PREMIUM_COATS_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_PREMIUM_COATS_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -37291,7 +37291,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_PREMIUM_COATS_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_PREMIUM_COATS_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -37418,7 +37418,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_SPICES_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_SPICES_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -37484,7 +37484,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_SPICES_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_SPICES_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -37611,7 +37611,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_FURNITURE_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_FURNITURE_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -37677,7 +37677,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_FURNITURE_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_FURNITURE_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -37804,7 +37804,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_WHALE_OIL_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_WHALE_OIL_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -37870,7 +37870,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_WHALE_OIL_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_WHALE_OIL_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -37997,7 +37997,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_WINE_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_WINE_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -38063,7 +38063,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_WINE_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_WINE_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -38190,7 +38190,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_SALT_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_SALT_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -38256,7 +38256,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_SALT_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_SALT_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -38383,7 +38383,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_BEER_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_BEER_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -38449,7 +38449,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_BEER_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_BEER_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -38576,7 +38576,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_LUXURY_GOODS_DONE</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_LUXURY_GOODS_DONE_1</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -38642,7 +38642,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_EUROPE_TRADE_QUEST_LUXURY_GOODS_DONE_1</Type>
+            <Type>EVENT_EUROPE_TRADE_QUEST_LUXURY_GOODS_DONE_2</Type>
             <Description>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -38708,12 +38708,12 @@
             <iGenericParameter4>-2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_BLADES_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BLADES_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -38769,8 +38769,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_BLADES_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -38819,7 +38819,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_BLADES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -38835,8 +38835,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_BLADES_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -38885,7 +38885,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_BLADES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -38901,8 +38901,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_DONE2</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE2_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_BLADES_DONE_3</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_3_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -38951,7 +38951,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_BLADES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -38963,12 +38963,12 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>1000</iGenericParameter1>
             <iGenericParameter2>YIELD_BLADES</iGenericParameter2>
-            <iGenericParameter3>-1</iGenericParameter3>
+            <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_DONE3</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE3_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_BLADES_DONE_4</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_4_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -39017,7 +39017,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_BLADES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -39029,12 +39029,12 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>1000</iGenericParameter1>
             <iGenericParameter2>YIELD_BLADES</iGenericParameter2>
-            <iGenericParameter3>-1</iGenericParameter3>
+            <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_DONE4</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE4_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_BLADES_DONE_5</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_5_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -39083,7 +39083,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_BLADES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_BLADES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -39099,12 +39099,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -39160,8 +39160,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -39210,7 +39210,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -39226,8 +39226,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -39276,7 +39276,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -39292,8 +39292,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_DONE2</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE2_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE_3</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_3_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -39342,7 +39342,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -39354,12 +39354,12 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>1000</iGenericParameter1>
             <iGenericParameter2>YIELD_SAILCLOTH</iGenericParameter2>
-            <iGenericParameter3>-1</iGenericParameter3>
+            <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_DONE3</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE3_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE_4</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_4_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -39408,7 +39408,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -39420,12 +39420,12 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>1000</iGenericParameter1>
             <iGenericParameter2>YIELD_SAILCLOTH</iGenericParameter2>
-            <iGenericParameter3>-1</iGenericParameter3>
+            <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_DONE4</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE4_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE_5</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_5_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -39474,7 +39474,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SAILCLOTH_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_SAILCLOTH_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -39490,12 +39490,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_CANNONS_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -39551,8 +39551,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -39601,7 +39601,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -39617,8 +39617,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -39667,7 +39667,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -39683,8 +39683,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_DONE2</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE2_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_DONE_3</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_3_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -39733,7 +39733,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -39745,12 +39745,12 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>1000</iGenericParameter1>
             <iGenericParameter2>YIELD_CANNONS</iGenericParameter2>
-            <iGenericParameter3>-1</iGenericParameter3>
+            <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_DONE3</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE3_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_DONE_4</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_4_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -39799,7 +39799,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -39811,12 +39811,12 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>1000</iGenericParameter1>
             <iGenericParameter2>YIELD_CANNONS</iGenericParameter2>
-            <iGenericParameter3>-1</iGenericParameter3>
+            <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_DONE4</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE4_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_DONE_5</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_5_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -39865,7 +39865,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CANNONS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_CANNONS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -39881,12 +39881,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_GUNS_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_GUNS_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -39942,8 +39942,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_GUNS_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -39992,7 +39992,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_GUNS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -40008,8 +40008,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_GUNS_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -40058,7 +40058,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_GUNS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -40074,8 +40074,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_DONE2</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE2_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_GUNS_DONE_3</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_3_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -40124,7 +40124,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_GUNS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -40136,12 +40136,12 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>1000</iGenericParameter1>
             <iGenericParameter2>YIELD_MUSKETS</iGenericParameter2>
-            <iGenericParameter3>-1</iGenericParameter3>
+            <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_DONE3</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE3_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_GUNS_DONE_4</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_4_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -40190,7 +40190,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_GUNS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -40202,12 +40202,12 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>1000</iGenericParameter1>
             <iGenericParameter2>YIELD_MUSKETS</iGenericParameter2>
-            <iGenericParameter3>-1</iGenericParameter3>
+            <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_DONE4</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE4_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_GUNS_DONE_5</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_5_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -40256,7 +40256,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GUNS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_GUNS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -40272,12 +40272,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_ROPES_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_ROPES_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -40333,8 +40333,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_ROPES_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -40383,7 +40383,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_ROPES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -40399,8 +40399,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_ROPES_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -40449,7 +40449,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_ROPES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -40465,8 +40465,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_DONE2</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE2_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_ROPES_DONE_3</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_3_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -40515,7 +40515,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_ROPES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -40527,12 +40527,12 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>1000</iGenericParameter1>
             <iGenericParameter2>YIELD_ROPE</iGenericParameter2>
-            <iGenericParameter3>-1</iGenericParameter3>
+            <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_DONE3</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE3_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_ROPES_DONE_4</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_4_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -40581,7 +40581,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_ROPES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -40593,12 +40593,12 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>1000</iGenericParameter1>
             <iGenericParameter2>YIELD_ROPE</iGenericParameter2>
-            <iGenericParameter3>-1</iGenericParameter3>
+            <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_DONE4</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE4_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_ROPES_DONE_5</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_5_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -40647,7 +40647,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_ROPES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_ROPES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -40663,12 +40663,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_CIGARS_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_CIGARS_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_CIGARS_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -40724,8 +40724,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_CIGARS_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -40774,7 +40774,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CIGARS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -40790,8 +40790,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_CIGARS_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -40840,7 +40840,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CIGARS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -40856,8 +40856,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_CIGARS_DONE5</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE5_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_DONE_6</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -40906,7 +40906,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_CIGARS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -40922,12 +40922,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SPICES_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SPICES_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_SPICES_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_SPICES_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -40983,8 +40983,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SPICES_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -41033,7 +41033,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SPICES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -41049,8 +41049,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SPICES_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -41099,7 +41099,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SPICES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -41115,8 +41115,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SPICES_DONE5</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE5_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_6</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -41165,7 +41165,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SPICES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -41181,12 +41181,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SILVER_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SILVER_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_SILVER_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_SILVER_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -41242,8 +41242,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SILVER_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -41292,7 +41292,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SILVER_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -41308,8 +41308,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SILVER_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -41358,7 +41358,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SILVER_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -41374,8 +41374,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SILVER_DONE5</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE5_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_6</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -41424,7 +41424,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SILVER_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -41440,12 +41440,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SALT_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SALT_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_SALT_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_SALT_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -41501,8 +41501,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SALT_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -41551,7 +41551,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SALT_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -41567,8 +41567,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SALT_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -41617,7 +41617,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SALT_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -41633,8 +41633,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_SALT_DONE5</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE5_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE_6</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -41683,7 +41683,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_SALT_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -41699,12 +41699,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_RUM_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_RUM_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_RUM_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_RUM_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -41760,8 +41760,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_RUM_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_RUM_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -41810,7 +41810,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_RUM_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -41826,8 +41826,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_RUM_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_RUM_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -41876,7 +41876,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_RUM_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -41892,8 +41892,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_RUM_DONE5</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE5_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_RUM_DONE_6</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -41942,7 +41942,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_RUM_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -41958,12 +41958,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_GOLD_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_GOLD_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_GOLD_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_GOLD_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -42019,8 +42019,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_GOLD_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_GOLD_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -42069,7 +42069,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GOLD_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_GOLD_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -42085,8 +42085,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_GOLD_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_GOLD_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -42135,7 +42135,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GOLD_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_GOLD_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -42151,8 +42151,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_GOLD_DONE5</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE5_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_GOLD_DONE_6</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -42201,7 +42201,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GOLD_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_GOLD_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -42217,12 +42217,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_GEMS_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_GEMS_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_GEMS_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_GEMS_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -42278,8 +42278,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_GEMS_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_GEMS_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -42328,7 +42328,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GEMS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_GEMS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -42344,8 +42344,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_GEMS_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_GEMS_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -42394,7 +42394,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GEMS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_GEMS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -42410,8 +42410,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_GEMS_DONE5</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE5_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_GEMS_DONE_6</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -42460,7 +42460,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_GEMS_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_GEMS_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -42476,12 +42476,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_FURNITURE_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_FURNITURE_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -42537,8 +42537,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_FURNITURE_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -42587,7 +42587,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_FURNITURE_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -42603,8 +42603,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_FURNITURE_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -42653,7 +42653,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_FURNITURE_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -42669,8 +42669,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_FURNITURE_DONE5</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE5_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_DONE_6</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -42719,7 +42719,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_FURNITURE_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -42735,12 +42735,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_COFFEE_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_COFFEE_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_COFFEE_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -42796,8 +42796,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_COFFEE_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -42846,7 +42846,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COFFEE_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -42862,8 +42862,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_COFFEE_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -42912,7 +42912,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COFFEE_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -42928,8 +42928,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_COFFEE_DONE5</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE5_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_DONE_6</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -42978,7 +42978,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COFFEE_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -42994,12 +42994,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_COCOA_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_COCOA_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_COCOA_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_COCOA_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -43055,8 +43055,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_COCOA_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_COCOA_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -43105,7 +43105,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCOA_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -43121,8 +43121,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_COCOA_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_COCOA_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -43171,7 +43171,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCOA_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -43187,8 +43187,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_COCOA_DONE5</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE5_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_COCOA_DONE_6</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -43237,7 +43237,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCOA_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -43253,12 +43253,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -43314,8 +43314,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -43364,7 +43364,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -43380,8 +43380,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -43430,7 +43430,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -43446,8 +43446,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_DONE5</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE5_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE_6</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -43496,7 +43496,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -43512,12 +43512,12 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_WINE_START</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_START</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_WINE_START</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
-            <QuestFailText>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_WINE_FAILED</QuestFailText>
+            <QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_WINE_FAILED</QuestFailText>
             <bQuest>1</bQuest>
             <bGlobal>0</bGlobal>
             <bTeam>0</bTeam>
@@ -43573,8 +43573,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_WINE_DONE</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_1</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -43623,7 +43623,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_WINE_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -43639,8 +43639,8 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_WINE_DONE1</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE1_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_2</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -43689,7 +43689,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_WINE_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -43705,8 +43705,8 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORT_ROYAL_TRADE_QUEST_WINE_DONE5</Type>
-            <Description>TXT_KEY_EVENT_PORT_ROYAL_TRADE_QUEST_DONE5_COLONIES</Description>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_5</Type>
+            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -43755,7 +43755,7 @@
             <EventTimes/>
             <ClearEvents>
                 <EventChance>
-                    <Event>EVENT_PORT_ROYAL_TRADE_QUEST_WINE_START</Event>
+                    <Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_START</Event>
                     <iEventChance>100</iEventChance>
                 </EventChance>
             </ClearEvents>
@@ -43832,7 +43832,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_FOOD_DONE</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_FOOD_DONE_1</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -43898,7 +43898,7 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_FOOD_DONE1</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_FOOD_DONE_2</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -43964,7 +43964,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_FOOD_DONE2</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_FOOD_DONE_3</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -44091,7 +44091,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_LUMBER_DONE</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_LUMBER_DONE_1</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -44157,7 +44157,7 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_LUMBER_DONE1</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_LUMBER_DONE_2</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -44223,7 +44223,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_LUMBER_DONE2</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_LUMBER_DONE_3</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -44350,7 +44350,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_STONE_DONE</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_STONE_DONE_1</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -44416,7 +44416,7 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_STONE_DONE1</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_STONE_DONE_2</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -44482,7 +44482,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_STONE_DONE2</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_STONE_DONE_3</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -44609,7 +44609,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_HORSES_DONE</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_HORSES_DONE_1</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -44675,7 +44675,7 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_HORSES_DONE1</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_HORSES_DONE_2</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -44741,7 +44741,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_HORSES_DONE2</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_HORSES_DONE_3</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -44868,7 +44868,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_ORE_DONE</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_ORE_DONE_1</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -44934,7 +44934,7 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_ORE_DONE1</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_ORE_DONE_2</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -45000,7 +45000,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_ORE_DONE2</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_ORE_DONE_3</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -45127,7 +45127,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_SILVER_DONE</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_SILVER_DONE_1</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -45193,7 +45193,7 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_SILVER_DONE1</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_SILVER_DONE_2</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -45259,7 +45259,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_SILVER_DONE2</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_SILVER_DONE_3</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -45386,7 +45386,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_CATTLE_DONE</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_CATTLE_DONE_1</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -45452,7 +45452,7 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_CATTLE_DONE1</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_CATTLE_DONE_2</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -45518,7 +45518,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_CATTLE_DONE2</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_CATTLE_DONE_3</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -45645,7 +45645,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_SHEEP_DONE</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_SHEEP_DONE_1</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -45711,7 +45711,7 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_SHEEP_DONE1</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_SHEEP_DONE_2</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -45777,7 +45777,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_SHEEP_DONE2</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_SHEEP_DONE_3</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -45904,7 +45904,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_TOOLS_DONE</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_TOOLS_DONE_1</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -45970,7 +45970,7 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_TOOLS_DONE1</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_TOOLS_DONE_2</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -46036,7 +46036,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_TOOLS_DONE2</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_TOOLS_DONE_3</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -46163,7 +46163,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_GUNS_DONE</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_GUNS_DONE_1</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -46229,7 +46229,7 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_GUNS_DONE1</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_GUNS_DONE_2</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -46295,7 +46295,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_GUNS_DONE2</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_GUNS_DONE_3</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -46422,7 +46422,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_CLOTH_DONE</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_CLOTH_DONE_1</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -46488,7 +46488,7 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_CLOTH_DONE1</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_CLOTH_DONE_2</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -46554,7 +46554,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_CLOTH_DONE2</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_CLOTH_DONE_3</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -46681,7 +46681,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_SALT_DONE</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_SALT_DONE_1</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -46747,7 +46747,7 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_SALT_DONE1</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_SALT_DONE_2</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -46813,7 +46813,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_SALT_DONE2</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_SALT_DONE_3</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -46940,7 +46940,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_SPICES_DONE</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_SPICES_DONE_1</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -47006,7 +47006,7 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_SPICES_DONE1</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_SPICES_DONE_2</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -47072,7 +47072,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_SPICES_DONE2</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_SPICES_DONE_3</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -47199,7 +47199,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE_1</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -47265,7 +47265,7 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE1</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE_2</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -47331,7 +47331,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE2</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE_3</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -47458,7 +47458,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_1</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -47524,7 +47524,7 @@
             <iGenericParameter4>2</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE1</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_2</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -47590,7 +47590,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE2</Type>
+            <Type>EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE_3</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
