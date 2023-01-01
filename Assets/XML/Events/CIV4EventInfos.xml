@@ -28109,7 +28109,7 @@
             <iAttitudeModifier>0</iAttitudeModifier>
             <iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
             <iPopulationChange>0</iPopulationChange>
-            <AdditionalEvents/> 
+            <AdditionalEvents/>
             <EventTimes/>
             <ClearEvents/>
             <PythonCallback/>

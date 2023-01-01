@@ -7731,7 +7731,7 @@
             <UnitsRequired>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
                 <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
-                <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>                
+                <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
             </UnitsRequired>
             <iNumUnits>5</iNumUnits>
@@ -8020,7 +8020,7 @@
                 <UnitClass>UNITCLASS_HESSIAN</UnitClass>
                 <UnitClass>UNITCLASS_RANGER</UnitClass>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
-                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>                
+                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
                 <UnitClass>UNITCLASS_MILITIA</UnitClass>
                 <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
@@ -8100,7 +8100,7 @@
                 <UnitClass>UNITCLASS_HESSIAN</UnitClass>
                 <UnitClass>UNITCLASS_RANGER</UnitClass>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
-                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>                
+                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
                 <UnitClass>UNITCLASS_MILITIA</UnitClass>
                 <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
@@ -8180,7 +8180,7 @@
                 <UnitClass>UNITCLASS_HESSIAN</UnitClass>
                 <UnitClass>UNITCLASS_RANGER</UnitClass>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
-                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>                
+                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
                 <UnitClass>UNITCLASS_MILITIA</UnitClass>
                 <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
@@ -8261,7 +8261,7 @@
                 <UnitClass>UNITCLASS_HESSIAN</UnitClass>
                 <UnitClass>UNITCLASS_RANGER</UnitClass>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
-                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>                
+                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
                 <UnitClass>UNITCLASS_MILITIA</UnitClass>
                 <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
@@ -13962,7 +13962,7 @@
             <iMinOurLandmass>0</iMinOurLandmass>
             <iMaxOurLandmass>-1</iMaxOurLandmass>
             <eMinDifficulty>NONE</eMinDifficulty>
-            <UnitsRequired> 
+            <UnitsRequired>
                 <UnitClass>UNITCLASS_OXCART</UnitClass>
                 <UnitClass>UNITCLASS_WAGON_TRAIN</UnitClass>
                 <UnitClass>UNITCLASS_TREK</UnitClass>
@@ -14040,7 +14040,7 @@
             <iMinOurLandmass>0</iMinOurLandmass>
             <iMaxOurLandmass>-1</iMaxOurLandmass>
             <eMinDifficulty>NONE</eMinDifficulty>
-            <UnitsRequired> 
+            <UnitsRequired>
                 <UnitClass>UNITCLASS_EXPERT_TRADER</UnitClass>
             </UnitsRequired>
             <iNumUnits>1</iNumUnits>
@@ -14115,7 +14115,7 @@
             <iMinOurLandmass>0</iMinOurLandmass>
             <iMaxOurLandmass>-1</iMaxOurLandmass>
             <eMinDifficulty>NONE</eMinDifficulty>
-            <UnitsRequired/> 
+            <UnitsRequired/>
             <iNumUnits>0</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
@@ -14189,7 +14189,7 @@
             <iMinOurLandmass>0</iMinOurLandmass>
             <iMaxOurLandmass>-1</iMaxOurLandmass>
             <eMinDifficulty>NONE</eMinDifficulty>
-            <UnitsRequired/> 
+            <UnitsRequired/>
             <iNumUnits>0</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
@@ -22359,8 +22359,8 @@
             <Events>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_2</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_6</Event>           
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_7</Event>           
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_6</Event>
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_7</Event>
             </Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_START</Event>
@@ -22498,8 +22498,8 @@
             <Events>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_2</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_6</Event>            
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_7</Event>            
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_6</Event>
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_7</Event>
             </Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_START</Event>
