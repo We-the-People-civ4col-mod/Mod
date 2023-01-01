@@ -7731,7 +7731,7 @@
             <UnitsRequired>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
                 <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
-				<UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>				
+                <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>                
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
             </UnitsRequired>
             <iNumUnits>5</iNumUnits>
@@ -8020,7 +8020,7 @@
                 <UnitClass>UNITCLASS_HESSIAN</UnitClass>
                 <UnitClass>UNITCLASS_RANGER</UnitClass>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
-                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>				
+                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>                
                 <UnitClass>UNITCLASS_MILITIA</UnitClass>
                 <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
@@ -8100,7 +8100,7 @@
                 <UnitClass>UNITCLASS_HESSIAN</UnitClass>
                 <UnitClass>UNITCLASS_RANGER</UnitClass>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
-                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>				
+                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>                
                 <UnitClass>UNITCLASS_MILITIA</UnitClass>
                 <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
@@ -8180,7 +8180,7 @@
                 <UnitClass>UNITCLASS_HESSIAN</UnitClass>
                 <UnitClass>UNITCLASS_RANGER</UnitClass>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
-                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>				
+                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>                
                 <UnitClass>UNITCLASS_MILITIA</UnitClass>
                 <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
@@ -8261,7 +8261,7 @@
                 <UnitClass>UNITCLASS_HESSIAN</UnitClass>
                 <UnitClass>UNITCLASS_RANGER</UnitClass>
                 <UnitClass>UNITCLASS_VETERAN</UnitClass>
-                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>				
+                <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>                
                 <UnitClass>UNITCLASS_MILITIA</UnitClass>
                 <UnitClass>UNITCLASS_LIGHT_ARTILLERY</UnitClass>
                 <UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
@@ -22359,9 +22359,9 @@
             <Events>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_2</Event>
-				<Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_6</Event>           
-				<Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_7</Event>           
-			</Events>
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_6</Event>           
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_7</Event>           
+            </Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_START</Event>
             </PrereqEvents>
@@ -22498,9 +22498,9 @@
             <Events>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_2</Event>
-				<Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_6</Event>            
-				<Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_7</Event>            
-			</Events>
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_6</Event>            
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_7</Event>            
+            </Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_START</Event>
             </PrereqEvents>
@@ -22637,9 +22637,9 @@
             <Events>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE_2</Event>
-				<Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE_6</Event>
-				<Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE_7</Event>
-			</Events>
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE_6</Event>
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE_7</Event>
+            </Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_START</Event>
             </PrereqEvents>
@@ -23747,9 +23747,9 @@
             <Events>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_2</Event>
-				<Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_6</Event>
-				<Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_7</Event>
-			</Events>
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_6</Event>
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_7</Event>
+            </Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_START</Event>
             </PrereqEvents>
