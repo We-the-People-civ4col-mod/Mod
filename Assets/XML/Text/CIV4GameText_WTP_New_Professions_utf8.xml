@@ -843,12 +843,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_POTTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Pottery is an ancient way to store grain. Early pottery shards have been dated to 14,000 BC.[NEWLINE]In the rainy insect-ridden New World pots hold enough grain to keep settlers alive through the winter until in the spring when they can finally plant their new crops.[NEWLINE]Clay for pottery develops plasticity when wet, due to a molecular film of water surrounding the clay particles, but becomes hard, brittle and non–plastic upon drying or firing.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_POTTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Potters[COLOR_REVERT] can work in the [LINK=BUILDING_POTTERS_HOUSE]potter's house[\LINK] or one of its upgrades to produce [LINK=YIELD_POTTERY]pottery[\LINK] from [LINK=YIELD_CLAY]clay[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] excel at this craft, and can greatly boost your production of pottery.</English>
         <German>TBD</German>
     </TEXT>    
     <TEXT>
@@ -866,12 +866,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FIELD_WORKER_TOOLS_TRADER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Field workers can be hard on their tools. Axes get dull, shovels bend and hammer heads fly off the handle. A good tool supplier will get the necessary equipment to where the workers need it.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FIELD_WORKER_TOOLS_TRADER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Fieldworker tools traders[COLOR_REVERT] can work in the [LINK=BUILDING_VILLAGE_MARKET]village market[\LINK] or one of its upgrades to sell [LINK=YIELD_FIELD_WORKER_TOOLS]fieldworker tools[\LINK]. [LINK=UNIT_FIELD_WORKER_TOOLS_TRADER]Master fieldworker tools traders[\LINK] excel at this craft, and can greatly boost your sales of fieldworker tools.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -889,12 +889,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HOUSEHOLD_GOODS_TRADER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The household goods trader operates a general store where food, clothing and household necessities are available for purchase.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HOUSEHOLD_GOODS_TRADER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Household goods traders[COLOR_REVERT] can work in the [LINK=BUILDING_VILLAGE_MARKET]village market[\LINK] or one of its upgrades to sell [LINK=YIELD_HOUSEHOLD_GOODS]household goods[\LINK]. [LINK=UNIT_HOUSEHOLD_GOODS_TRADER]Master household goods traders[\LINK] excel at this craft, and can greatly boost your sales of household goods.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
