@@ -3320,8 +3320,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Tag>
-        <English>For the glory and wealth of our colonies! Let the natives do the dirty work!</English>
-        <German>Für Ruhm und Reichtum unserer Kolonien! Lasst die Ureinwohner die schmutzige Arbeit erledigen!</German>
+        <English>For the glory and wealth of our colonies! The natives seem to have skillful hands!</English>
+        <German>Für Ruhm und Reichtum unserer Kolonien! Die Ureinwohner scheinen geschickte Hände zu haben!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7_COLONIES</Tag>
+        <English>For the glory and wealth of our colonies! Mestizzos? They can certainly also grip well!</English>
+        <German>Für Ruhm und Reichtum unserer Kolonien! Mestizzos? Die können bestimmt auch gut zupacken!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>

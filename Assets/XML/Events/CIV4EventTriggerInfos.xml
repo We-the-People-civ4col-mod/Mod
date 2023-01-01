@@ -21255,6 +21255,7 @@
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_DONE_2</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_DONE_6</Event>
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_DONE_7</Event>
             </Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_START</Event>
@@ -21393,6 +21394,7 @@
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_2</Event>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_6</Event>           
+				<Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_7</Event>           
 			</Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_START</Event>
@@ -21531,6 +21533,7 @@
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_2</Event>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_6</Event>            
+				<Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_7</Event>            
 			</Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_START</Event>
@@ -21669,6 +21672,7 @@
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE_2</Event>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE_6</Event>
+				<Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE_7</Event>
 			</Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_START</Event>
@@ -21807,6 +21811,7 @@
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_DONE_2</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_DONE_6</Event>
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_DONE_7</Event>
             </Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_START</Event>
@@ -21945,6 +21950,7 @@
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_GOLD_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_GOLD_DONE_2</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_GOLD_DONE_6</Event>
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_GOLD_DONE_7</Event>
             </Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_GOLD_START</Event>
@@ -22083,6 +22089,7 @@
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_GEMS_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_GEMS_DONE_2</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_GEMS_DONE_6</Event>
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_GEMS_DONE_7</Event>
             </Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_GEMS_START</Event>
@@ -22220,7 +22227,6 @@
             <Events>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_DONE_2</Event>
-                <Event>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_DONE_6</Event>
             </Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_START</Event>
@@ -22359,6 +22365,7 @@
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_DONE_2</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_DONE_6</Event>
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_DONE_7</Event>
             </Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_START</Event>
@@ -22497,6 +22504,7 @@
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_DONE_2</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_DONE_6</Event>
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_DONE_7</Event>
             </Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_START</Event>
@@ -22635,6 +22643,7 @@
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE_2</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE_6</Event>
+                <Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE_7</Event>
             </Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
@@ -22772,7 +22781,8 @@
             <Events>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_1</Event>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_2</Event>
-				<Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_5</Event>
+				<Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_6</Event>
+				<Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_7</Event>
 			</Events>
             <PrereqEvents>
                 <Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_START</Event>

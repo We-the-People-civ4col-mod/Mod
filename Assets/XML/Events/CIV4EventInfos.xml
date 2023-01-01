@@ -40922,6 +40922,72 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
+			<Type>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_DONE_7</Type>
+			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7_COLONIES</Description>
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
+			<QuestFailText></QuestFailText>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MESTIZZO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields></BuildingExtraYields>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields></PlotExtraYields>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
+			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_CIGARS</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+        <EventInfo>
             <Type>EVENT_PORTROYAL_TRADE_QUEST_SPICES_START</Type>
             <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
@@ -41180,6 +41246,72 @@
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
+        <EventInfo>
+			<Type>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_7</Type>
+			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7_COLONIES</Description>
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
+			<QuestFailText></QuestFailText>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MESTIZZO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields></BuildingExtraYields>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields></PlotExtraYields>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
+			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_SPICES</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
         <EventInfo>
             <Type>EVENT_PORTROYAL_TRADE_QUEST_SILVER_START</Type>
             <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
@@ -41440,6 +41572,72 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
+			<Type>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_7</Type>
+			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7_COLONIES</Description>
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
+			<QuestFailText></QuestFailText>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MESTIZZO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields></BuildingExtraYields>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields></PlotExtraYields>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
+			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_SILVER</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+        <EventInfo>
             <Type>EVENT_PORTROYAL_TRADE_QUEST_SALT_START</Type>
             <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
@@ -41698,6 +41896,72 @@
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
+        <EventInfo>
+			<Type>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE_7</Type>
+			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7_COLONIES</Description>
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
+			<QuestFailText></QuestFailText>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MESTIZZO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields></BuildingExtraYields>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields></PlotExtraYields>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
+			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_SALT</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
         <EventInfo>
             <Type>EVENT_PORTROYAL_TRADE_QUEST_RUM_START</Type>
             <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
@@ -41958,6 +42222,72 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
+			<Type>EVENT_PORTROYAL_TRADE_QUEST_RUM_DONE_7</Type>
+			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7_COLONIES</Description>
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
+			<QuestFailText></QuestFailText>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MESTIZZO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields></BuildingExtraYields>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields></PlotExtraYields>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
+			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_RUM</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+        <EventInfo>
             <Type>EVENT_PORTROYAL_TRADE_QUEST_GOLD_START</Type>
             <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
@@ -42216,6 +42546,72 @@
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
+        <EventInfo>
+			<Type>EVENT_PORTROYAL_TRADE_QUEST_GOLD_DONE_7</Type>
+			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7_COLONIES</Description>
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
+			<QuestFailText></QuestFailText>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MESTIZZO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields></BuildingExtraYields>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields></PlotExtraYields>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_PORTROYAL_TRADE_QUEST_GOLD_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
+			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_GOLD</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
         <EventInfo>
             <Type>EVENT_PORTROYAL_TRADE_QUEST_GEMS_START</Type>
             <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
@@ -42476,6 +42872,72 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
+			<Type>EVENT_PORTROYAL_TRADE_QUEST_GEMS_DONE_7</Type>
+			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7_COLONIES</Description>
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
+			<QuestFailText></QuestFailText>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+            <bTeam>0</bTeam>
+            <bPickCity>1</bPickCity>
+            <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+            <bDeclareWar>0</bDeclareWar>
+            <iGold>0</iGold>
+            <bGoldToPlayer>0</bGoldToPlayer>
+            <iRandomGold>0</iRandomGold>
+            <iCulture>0</iCulture>
+            <iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MESTIZZO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+            <bDisbandUnit>0</bDisbandUnit>
+            <iUnitExperience>0</iUnitExperience>
+            <iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
+            <BuildingClass>NONE</BuildingClass>
+            <iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields></BuildingExtraYields>
+            <iRevoltTurns>0</iRevoltTurns>
+            <iMinPillage>0</iMinPillage>
+            <iMaxPillage>0</iMaxPillage>
+            <iFood>0</iFood>
+            <iFoodPercent>0</iFoodPercent>
+            <FeatureType>NONE</FeatureType>
+            <iFeatureChange>0</iFeatureChange>
+            <ImprovementType>NONE</ImprovementType>
+            <iImprovementChange>0</iImprovementChange>
+            <RouteType>NONE</RouteType>
+            <iRouteChange>0</iRouteChange>
+            <BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields></PlotExtraYields>
+            <iOurAttitudeModifier>0</iOurAttitudeModifier>
+            <iAttitudeModifier>0</iAttitudeModifier>
+            <iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+            <iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_PORTROYAL_TRADE_QUEST_GEMS_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
+			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
+            <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+            <iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_GEMS</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+            <iGenericParameter4>0</iGenericParameter4>
+        </EventInfo>
+        <EventInfo>
             <Type>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_START</Type>
             <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
@@ -42666,72 +43128,6 @@
             <iGenericParameter1>1000</iGenericParameter1>
             <iGenericParameter2>YIELD_FURNITURE</iGenericParameter2>
             <iGenericParameter3>-1</iGenericParameter3>
-            <iGenericParameter4>0</iGenericParameter4>
-        </EventInfo>
-        <EventInfo>
-            <Type>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_DONE_6</Type>
-            <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Description>
-            <LocalInfoText/>
-            <WorldNewsTexts/>
-            <OtherPlayerPopup/>
-            <QuestFailText/>
-            <bQuest>0</bQuest>
-            <bGlobal>1</bGlobal>
-            <bTeam>0</bTeam>
-            <bPickCity>1</bPickCity>
-            <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
-            <bDeclareWar>0</bDeclareWar>
-            <iGold>0</iGold>
-            <bGoldToPlayer>0</bGoldToPlayer>
-            <iRandomGold>0</iRandomGold>
-            <iCulture>0</iCulture>
-            <iHealth>0</iHealth>
-            <UnitClass>UNITCLASS_NATIVE_SLAVE</UnitClass>
-            <iNumFreeUnits>12</iNumFreeUnits>
-            <bDisbandUnit>0</bDisbandUnit>
-            <iUnitExperience>0</iUnitExperience>
-            <iUnitImmobileTurns>0</iUnitImmobileTurns>
-            <UnitPromotion/>
-            <UnitName/>
-            <UnitCombatPromotions/>
-            <UnitClassPromotions/>
-            <BuildingClass>NONE</BuildingClass>
-            <iBuildingChange>0</iBuildingChange>
-            <BuildingExtraYields/>
-            <iRevoltTurns>0</iRevoltTurns>
-            <iMinPillage>0</iMinPillage>
-            <iMaxPillage>0</iMaxPillage>
-            <iFood>0</iFood>
-            <iFoodPercent>0</iFoodPercent>
-            <FeatureType>NONE</FeatureType>
-            <iFeatureChange>0</iFeatureChange>
-            <ImprovementType>NONE</ImprovementType>
-            <iImprovementChange>0</iImprovementChange>
-            <RouteType>NONE</RouteType>
-            <iRouteChange>0</iRouteChange>
-            <BonusRevealed>NONE</BonusRevealed>
-            <PlotExtraYields/>
-            <iOurAttitudeModifier>0</iOurAttitudeModifier>
-            <iAttitudeModifier>0</iAttitudeModifier>
-            <iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
-            <iPopulationChange>0</iPopulationChange>
-            <AdditionalEvents/>
-            <EventTimes/>
-            <ClearEvents>
-                <EventChance>
-                    <Event>EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_START</Event>
-                    <iEventChance>100</iEventChance>
-                </EventChance>
-            </ClearEvents>
-            <PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-            <PythonExpireCheck/>
-            <PythonCanDo/>
-            <PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
-            <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
-            <iAIValue>800</iAIValue>
-            <iGenericParameter1>1000</iGenericParameter1>
-            <iGenericParameter2>YIELD_FURNITURE</iGenericParameter2>
-            <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -42994,6 +43390,72 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
+			<Type>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_DONE_7</Type>
+			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7_COLONIES</Description>
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
+			<QuestFailText></QuestFailText>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MESTIZZO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields></BuildingExtraYields>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields></PlotExtraYields>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
+			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_COFFEE</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+        <EventInfo>
             <Type>EVENT_PORTROYAL_TRADE_QUEST_COCOA_START</Type>
             <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
@@ -43252,6 +43714,72 @@
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
+        <EventInfo>
+			<Type>EVENT_PORTROYAL_TRADE_QUEST_COCOA_DONE_7</Type>
+			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7_COLONIES</Description>
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
+			<QuestFailText></QuestFailText>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MESTIZZO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields></BuildingExtraYields>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields></PlotExtraYields>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
+			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_COCOA</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
         <EventInfo>
             <Type>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Type>
             <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
@@ -43512,6 +44040,72 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
+			<Type>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE_7</Type>
+			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7_COLONIES</Description>
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
+			<QuestFailText></QuestFailText>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MESTIZZO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields></BuildingExtraYields>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields></PlotExtraYields>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
+			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_COCA_LEAVES</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
+        <EventInfo>
             <Type>EVENT_PORTROYAL_TRADE_QUEST_WINE_START</Type>
             <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
             <LocalInfoText/>
@@ -43705,7 +44299,7 @@
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
-            <Type>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_5</Type>
+            <Type>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_6</Type>
             <Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6_COLONIES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
@@ -43770,6 +44364,72 @@
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
+		<EventInfo>
+			<Type>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_7</Type>
+			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7_COLONIES</Description>
+			<LocalInfoText></LocalInfoText>
+			<WorldNewsTexts></WorldNewsTexts>
+			<OtherPlayerPopup></OtherPlayerPopup>
+			<QuestFailText></QuestFailText>
+			<bQuest>0</bQuest>
+			<bGlobal>1</bGlobal>
+			<bTeam>0</bTeam>
+			<bPickCity>1</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bDeclareWar>0</bDeclareWar>
+			<iGold>0</iGold>
+			<bGoldToPlayer>0</bGoldToPlayer>
+			<iRandomGold>0</iRandomGold>
+			<iCulture>0</iCulture>
+			<iHealth>0</iHealth>
+			<UnitClass>UNITCLASS_MESTIZZO</UnitClass>
+			<iNumFreeUnits>4</iNumFreeUnits>
+			<bDisbandUnit>0</bDisbandUnit>
+			<iUnitExperience>0</iUnitExperience>
+			<iUnitImmobileTurns>0</iUnitImmobileTurns>
+			<UnitPromotion></UnitPromotion>
+			<UnitName></UnitName>
+			<UnitCombatPromotions></UnitCombatPromotions>
+			<UnitClassPromotions></UnitClassPromotions>
+			<BuildingClass>NONE</BuildingClass>
+			<iBuildingChange>0</iBuildingChange>
+			<BuildingExtraYields></BuildingExtraYields>
+			<iRevoltTurns>0</iRevoltTurns>
+			<iMinPillage>0</iMinPillage>
+			<iMaxPillage>0</iMaxPillage>
+			<iFood>0</iFood>
+			<iFoodPercent>0</iFoodPercent>
+			<FeatureType>NONE</FeatureType>
+			<iFeatureChange>0</iFeatureChange>
+			<ImprovementType>NONE</ImprovementType>
+			<iImprovementChange>0</iImprovementChange>
+			<RouteType>NONE</RouteType>
+			<iRouteChange>0</iRouteChange>
+			<BonusRevealed>NONE</BonusRevealed>
+			<PlotExtraYields></PlotExtraYields>
+			<iOurAttitudeModifier>0</iOurAttitudeModifier>
+			<iAttitudeModifier>0</iAttitudeModifier>
+			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
+			<iPopulationChange>0</iPopulationChange>
+			<AdditionalEvents></AdditionalEvents>
+			<EventTimes></EventTimes>
+			<ClearEvents>
+				<EventChance>
+					<Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_START</Event>
+					<iEventChance>100</iEventChance>
+				</EventChance>
+			</ClearEvents>
+			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
+			<PythonExpireCheck></PythonExpireCheck>
+			<PythonCanDo></PythonCanDo>
+			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
+			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
+			<iAIValue>800</iAIValue>
+			<iGenericParameter1>1000</iGenericParameter1>
+			<iGenericParameter2>YIELD_WINE</iGenericParameter2>
+			<iGenericParameter3>0</iGenericParameter3>
+			<iGenericParameter4>0</iGenericParameter4>
+		</EventInfo>
         <EventInfo>
             <Type>EVENT_AFRICA_TRADE_QUEST_FOOD_START</Type>
             <Description>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Description>

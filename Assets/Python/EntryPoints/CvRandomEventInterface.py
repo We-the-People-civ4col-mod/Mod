@@ -4771,9 +4771,9 @@ def getHelpQuestStartPortRoyalTradeYieldAndAmount(argsList):
 	szHelp = ""
 	if quantity > 0 :
 		if iYield != gc.getInfoTypeForString("YIELD_TRADE_GOODS") and iYield != gc.getInfoTypeForString("YIELD_LUXURY_GOODS"):
-			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PORT_ROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP", (quantity, gc.getYieldInfo(iYield).getChar()))
+			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PORTROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP", (quantity, gc.getYieldInfo(iYield).getChar()))
 		elif iYield == gc.getInfoTypeForString("YIELD_TRADE_GOODS") or iYield == gc.getInfoTypeForString("YIELD_LUXURY_GOODS"):
-			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PORT_ROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY", (quantity, gc.getYieldInfo(iYield).getChar()))
+			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PORTROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY", (quantity, gc.getYieldInfo(iYield).getChar()))
 	return szHelp
 
 # This is the Function for the Event Help Text for Price and Attitude
