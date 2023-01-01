@@ -3479,16 +3479,6 @@
         <German>Für Ruhm und Reichtum der Kolonien!</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
-        <English>Trade this quantity of goods with Africa [COLOR_FONT_GOLD]before any other nation [COLOR_REVERT]can :[NEWLINE]%D1_amount %F2_yield</English>
-        <German>Liefere die folgende Warenmenge nach Africa [COLOR_FONT_GOLD]bevor es eine andere Nation [COLOR_REVERT]tut :[NEWLINE]%D1_amount %F2_yield</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>
-        <English>Trade the following quantity of goods from Africa to the colonies [COLOR_FONT_GOLD]before any other nation [COLOR_REVERT]can :[NEWLINE]%D1_amount %F2_yield</English>
-        <German>Liefere die folgende Warenmenge aus Africa in die Kolonien [COLOR_FONT_GOLD]bevor es eine andere Nation [COLOR_REVERT]tut :[NEWLINE]%D1_amount %F2_yield</German>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_PRICE_AND_ATTITUDE_HELP</Tag>
         <English>The quality of our goods has impressed the peaple in Africa.[NEWLINE]His Majesty is delighted. Demand for colonial goods is rising.</English>
         <German>Die Menschen in Africa sind von der Qualität unsere Kolonialwaren begeistert.[NEWLINE]Seine Majestät ist hocherfreut. Die Nachfrage nach unseren Waren steigt.</German>
@@ -3499,13 +3489,8 @@
         <German>Wir werden der Aufforderung des Gouverneurs nachkommen!</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE</Tag>
-        <English>For the Glory and Wealth of our colonies!</English>
-        <German>Für Ruhm und Reichtum unserer Kolonien!</German>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1_COLONIES</Tag>
-        <English>The governor is not a rich man, but he can enforce higher sales prices!</English>
+        <English>The governor isn't a rich man, but he can enforce higher sales prices!</English>
         <German>Der Gouverneur ist kein reicher Mann, aber höhere Verkaufspreise kann er durchsetzten!</German>
     </TEXT>
     <TEXT>
@@ -3537,6 +3522,11 @@
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7_COLONIES</Tag>
         <English>For the glory and wealth of our colonies! Mestizzos? They can certainly also grip well!</English>
         <German>Für Ruhm und Reichtum unserer Kolonien! Mestizzos? Die können bestimmt auch gut zupacken!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_8_COLONIES</Tag>
+        <English>For the glory and wealth of our colonies! Finally we can now also transfer specialists from Port Royal!</English>
+        <German>Für Ruhm und Reichtum unserer Kolonien! Endlich können wir jetzt auch Spezialisten von Port Royal überführen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
@@ -5277,6 +5267,31 @@
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_WINE_DONE</Tag>
         <English>We have managed to become dominant in the Port Royal [COLOR_FONT_GOLD]wine[COLOR_REVERT] trade. The governor of Port Royal is happy and relaxed.</English>
         <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Wein[COLOR_REVERT] aus Port Royal zu werden. Der Gouverneur von Port Royal ist äusserst zufrieden.</German>
+    </TEXT>
+    <TEXT >
+        <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_START</Tag>
+        <English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from PortRoyal has begun.</English>
+        <German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Harthölzer[COLOR_REVERT] mit PortRoyal hat begonnen.</German>
+    </TEXT>
+    <TEXT >
+        <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE</Tag>
+        <English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from PortRoyal.</English>
+        <German>Uns ist es gelungen der dominante Marktführer für den Handel von [COLOR_FONT_GOLD]Harthölzern[COLOR_REVERT] mit PortRoyal zu werden.</German>
+    </TEXT>
+    <TEXT >
+        <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_START</Tag>
+        <English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from PortRoyal.</English>
+        <German>Die Bürger unserer Kolonien sind vom ersten Handel von [COLOR_FONT_GOLD]Harthölzern[COLOR_REVERT] mit PortRoyal begeistert.</German>
+    </TEXT>
+    <TEXT >
+        <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_FAILED</Tag>
+        <English>Another colonial power first succeeded in cornering the market in the colonies for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from PortRoyal.</English>
+        <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt für [COLOR_FONT_GOLD]Harthölzer[COLOR_REVERT] in PortRoyal zu beherrschen.</German>
+    </TEXT>
+    <TEXT >
+        <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE</Tag>
+        <English>We have managed to become the dominant leader in the trade of [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] from PortRoyal.</English>
+        <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Harthölzern[COLOR_REVERT] in PortRoyal zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Tag>
