@@ -1534,7 +1534,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HOUSEHOLD_GOODS_PEDIA</Tag>
-        <English>[TAB][H1]Household Goods[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Household Goods[\H1][PARAGRAPH:2][BOLD][TAB][H1]Household Goods[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Household goods[COLOR_REVERT] are purchased in the [LINK=BUILDING_VILLAGE_MARKET]village market[\LINK] or one of its upgrades.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]As a young man Benjamin Franklin calculated each household individually made 95% of everything needed. Money was only used for nails and to pay taxes. With population growth that certainly changed. Markets became an important part of every community.</English>
         <German>[TAB][H1]Haushaltswaren[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -1578,7 +1578,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FIELD_WORKER_TOOLS_PEDIA</Tag>
-        <English>[TAB][H1]Fieldworker Tools[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Fieldworker Tools[\H1][PARAGRAPH:2][BOLD][TAB][H1]Fieldworker Tools[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Fieldworker tools[COLOR_REVERT] are purchased in the [LINK=BUILDING_VILLAGE_MARKET]village market[\LINK] or one of its upgrades.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Field workers can be hard on their tools. Axes get dull, shovels bend and hammer heads fly off the handle. A good market will have a hardware section where workers can get what they need.</English>
         <German>[TAB][H1]Feldarbeiterwerkzeuge[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
