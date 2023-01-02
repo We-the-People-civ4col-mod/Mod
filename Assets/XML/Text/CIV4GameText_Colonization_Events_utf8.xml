@@ -2630,6 +2630,36 @@
         <German>Wundervoll, lasst es aus dem Hafen segeln und eine Salut feuern.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_TRADER_QUEST</Tag>
+        <English>Milord, our planation owners in the colonies are very please that we brought first slaves to the colonies. But they also demand that we enter the profitable slave trade business ourselves and not leave it to others. They suggest we acquire [COLOR_HIGHLIGHT_TEXT]two slave barques[COLOR_REVERT] before all other colonial powers. If we succeed to be the first they even promise to carry the costs to pay experienced [COLOR_HIGHLIGHT_TEXT]slave masters[COLOR_REVERT].</English>
+        <German>Milord, unsere Plantagenbesitzer sind sehr zufrieden damit, dass wir die ersten Sklaven in die Kolonien gebracht haben. Aber sie verlangen, dass wir selbst in das profitable Geschäft des Slavenhandels einsteigen anstatt es andere zu überlassen. Sie schlagen daher vor, dass wir [COLOR_HIGHLIGHT_TEXT]zwei Slavenschiffe[COLOR_REVERT] erwerben, noch bevor dies andere Nationenmächte tun. Wenn wir dies als erstes schaffen versprechen sie sogar die Kosten für die Bezahlung erfahrener [COLOR_HIGHLIGHT_TEXT]Sklavenmeister[COLOR_REVERT] zu übernehmen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_TRADER_QUEST_DONE_WORLD</Tag>
+        <English>A colonial power is the first to have acquired two slave barques.</English>
+        <German>Eine Kolonialmacht konnte vor allen anderen zwei Sklavenschiffe erwerben.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_SLAVE_TRADER_QUEST_DONE</Tag>
+        <English>Milord, you've acquired two slave barques before any other colony could. The planation owners kept their word and hires slave masters.</English>
+        <German>Milord, Eure Kolonie konnte vor allen anderen zwei Sklavenschiffe erwerben. Die Plantagenbesitzer haben ihr Wort gehalten und Sklavenmeister angeworben.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAIL_SLAVE_TRADER_QUEST</Tag>
+        <English>Milord, the governor of another colony has acquired two slave barques before you. You've missed the chance to let the planation owners pay for slave masters.</English>
+        <German>Milord, der Gouverneur einer anderen Kolonie konnte vor euch zwei Sklavenschiffe erwerben. Dadurch habt Ihr die Chance vertan eure Plantagenbesitzer die Kosten für Sklavenmeister übernehmen zu lassen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SLAVE_TRADER_QUEST</Tag>
+        <English>We shall acquire these slave barques and become the dominating power in that profitable business.</English>
+        <German>Wir werden die Sklavenschiffe erwerben und die beherrschende Macht in diesem profitablen Geschäft werden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SLAVE_TRADER_QUEST_DONE_1</Tag>
+        <English>Wonderful, tell the slave masters though that they shall be careful with our property.</English>
+        <German>Wundervoll, lasst den Sklavenmeistern aber ausrichten dass sie vorsichtig mit unserem Besitz sein sollen.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BURNING_CORN_CHAMBER</Tag>
         <English>A corn chamber in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] caught fire.</English>
         <French>Un grenier à maïs à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a pris feu.</French>

@@ -1313,10 +1313,10 @@
         <English>[COLOR_UNIT_TEXT]Slave hunters[COLOR_REVERT] are skilled in fighting and capturing runaway slaves including armed rebelling slaves. You can only acquire them by recruitment in Africa or through rare events.</English>
         <German>[COLOR_UNIT_TEXT]Sklavenjäger[COLOR_REVERT] sind darauf spezialisiert flüchtende Sklaven wieder einzufangen oder Sklavenrevolten niederzuschlagen. Sie können lediglich in Afrika rekrutiert werden oder durch seltene Ereignisse erhalten werden.</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_SLAVE_MASTER</Tag>
         <English>
-            <Text>Slave Master:Slave Master</Text>
+            <Text>Slave Master:Slave Masters</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
