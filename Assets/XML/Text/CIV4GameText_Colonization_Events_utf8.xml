@@ -2600,6 +2600,36 @@
         <German>Sehr gut, aber stellt sicher dass diese gebildeten Migranten auch etwas sinnvolles mit ihrer Zeit anfangen und nicht nur Zeitung lesen.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_SIX_WARSHIPS_QUEST</Tag>
+        <English>Milord, his Majesty and the court are delighted about the first warships we acquired. We have been promised that once we have a war fleet of at least [COLOR_HIGHLIGHT_TEXT]six ships the size of a frigate[COLOR_REVERT] or larger, his Majesty will entrust us one of his finest [COLOR_HIGHLIGHT_TEXT]royal man-o-wars[COLOR_REVERT] as flagship for our fleet.</English>
+        <German>Milord, Ihre Majestät und der Hof sind hocherfreut über die ersten Kriegsschiffe, die wir erworben haben. Unse wurde versprochen dass sobald wir eine Kriegsflotte von mindestens [COLOR_HIGHLIGHT_TEXT]sechs Schiffen der Größe einer Frigate[COLOR_REVERT] oder mehr haben, uns Ihre Majestät eine seiner feinsten [COLOR_HIGHLIGHT_TEXT]Königlichen Schlachtschiffe[COLOR_REVERT] als Flagschiff unserer Flotte überläßt.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_SIX_WARSHIPS_QUEST_DONE_WORLD</Tag>
+        <English>A colonial power is the first to have a war fleet of at least six ships the size of a frigate or larger.</English>
+        <German>Eine Kolonialmacht konnte vor allen anderen eine Kriegsfloote von sechs Schiffen der Größe einer Frigate oder mehr erreichen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_SIX_WARSHIPS_QUEST_DONE</Tag>
+        <English>Milord, you've acquired six warships the size of a frigte or larger before any other colony could. His Majesty now sends us the promised flagship.</English>
+        <German>Milord, Eure Kolonie konnte vor allen anderen sechs Kriegsschiffe der Größe einer Frigate oder mehr errichten. Ihre Majestät schickt uns das versprochene Flagschiff.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FAIL_SIX_WARSHIPS_QUEST</Tag>
+        <English>Milord, the governor of another colony has acquired six warships the size of a frigte or larger before you. You've missed the chance to acquire the flagship from his Majesty.</English>
+        <German>Milord, der Gouverneur einer anderen Kolonie konnte vor euch sechs Kriegsschiffe der Größe einer Frigate oder mehr errichten. Dadurch habt Ihr die Chance auf das Flagschiff Ihrer Majestät vertan.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SIX_WARSHIPS_QUEST</Tag>
+        <English>We shall build the strongest war fleet in the colonies worthy of such a glorious flagship!</English>
+        <German>Wir werden die stärkste Kriegsflotte in den Kolonien bauen, die eines solchen glorreichen Flagsschiffes wert ist!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SIX_WARSHIPS_QUEST_DONE_1</Tag>
+        <English>Wonderful, let it sail out of the harbour and fire a salute.</English>
+        <German>Wundervoll, lasst es aus dem Hafen segeln und eine Salut feuern.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BURNING_CORN_CHAMBER</Tag>
         <English>A corn chamber in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] caught fire.</English>
         <French>Un grenier à maïs à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a pris feu.</French>
