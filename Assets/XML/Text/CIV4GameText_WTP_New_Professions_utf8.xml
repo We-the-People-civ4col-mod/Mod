@@ -1020,12 +1020,12 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_GEESE_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Geese are the fastest growers among domestic birds. They're hardy and disease free when given constant care. Geese can be brought up on green pasture, which lowers production cost substantially.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_GEESE_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Goose butchers[COLOR_REVERT] can work in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FIELD_GOOSE_MEAT]goose meat[\LINK] and [LINK=YIELD_FIELD_DOWNS]goose down[\LINK] from [LINK=YIELD_GEESE]geese[\LINK]. [LINK=UNIT_BUTCHER]Master goose butchers[\LINK] excel at this craft. They dramatically boost your production of goose meat and down.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1101,7 +1101,7 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_GOATS_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Unprocessed goat milk has small, well-emulsified fat globules, which means the cream remains suspended in the milk instead of rising to the top, as in unprocessed cow milk; therefore, it does not need to be homogenized.[NEWLINE]The number of animals that a goat farmer can sustain depends on the quality of the pasture.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
