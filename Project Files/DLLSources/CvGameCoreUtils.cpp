@@ -2107,7 +2107,9 @@ int areaValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		return TRUE;
 	}
 
-	return ((GC.getMapINLINE().plotSoren(parent->m_iX, parent->m_iY)->isWater() == GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY)->isWater()) ? TRUE : FALSE);
+	const CvPlot* const pParentPlot = GC.getMapINLINE().plotSoren(parent->m_iX, parent->m_iY);
+	const CvPlot* const pNodePlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
+	return (pParentPlot->isWater() == pNodePlot->isWater() ? TRUE : FALSE);
 }
 
 int joinArea(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)

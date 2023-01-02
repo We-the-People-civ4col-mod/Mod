@@ -325,6 +325,7 @@ public:
 	void setOwner(PlayerTypes eNewValue, bool bCheckUnits);
 	PlotTypes getPlotType() const;
 	DllExport bool isWater() const;
+	bool hasLargeRiver() const;
 	bool isEurope() const;
 	bool isFlatlands() const;
 	DllExport bool isHills() const;

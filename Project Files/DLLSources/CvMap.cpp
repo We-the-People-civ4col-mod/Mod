@@ -26,6 +26,8 @@
 #include "CvInitCore.h"
 #include "CvInfos.h"
 #include "FProfiler.h"
+#include <queue>
+#include <hash_set>
 
 #include "CvDLLEngineIFaceBase.h"
 #include "CvDLLIniParserIFaceBase.h"
@@ -1360,31 +1362,108 @@ void CvMap::rebuild(int iGridW, int iGridH, int iTopLatitude, int iBottomLatitud
 // Protected Functions...
 //////////////////////////////////////////////////////////////////////////
 
+namespace 
+{
+//TODO: Use FOR_EACH_ENUM
+void visitPlot(CvPlot* pPlot, std::queue<CvPlot*>& plotQueue, stdext::hash_set<CvPlot*>& visited)
+{
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	{
+		CvPlot* pAdjacentPlot = plotDirection(pPlot->getX_INLINE(), pPlot->getY_INLINE(), ((DirectionTypes)iI));
+
+		if (pAdjacentPlot == NULL)
+			continue;
+		
+		if (visited.find(pAdjacentPlot) != visited.end())
+			continue;
+
+		if (pAdjacentPlot->isWater() && pAdjacentPlot->hasLargeRiver() || !pAdjacentPlot->isWater())
+		{ 
+			visited.insert(pAdjacentPlot);
+			plotQueue.push(pAdjacentPlot);
+		}
+	}
+}
+
+// Large rivers aware area assigner
+void calculateLandAreaBfs(CvPlot* pPlot, int iArea, stdext::hash_set<CvPlot*>& visited)
+{
+	// Stores the plot index
+	std::queue<CvPlot*> plotQueue;
+	
+	plotQueue.push(pPlot);
+	visited.insert(pPlot);
+
+	while (!plotQueue.empty())
+	{
+		CvPlot* pPlot = plotQueue.front();
+		plotQueue.pop();
+
+		// Land areas spread across large river without assigning the large river plot to the land area
+		if (pPlot->isWater() && pPlot->hasLargeRiver())
+		{ 
+			// Add all adjacent land plots to the queue but do not set the area of the large river plot
+			visitPlot(pPlot, plotQueue, visited);
+		}
+		else if (!pPlot->isWater())
+		{
+			// Add all adjacent land plots or large river to the queue and set the area for this land plot
+			pPlot->setArea(iArea);
+			visitPlot(pPlot, plotQueue, visited);
+		}
+	}
+	// Done with this area
+}
+} // end anon namespace
+
 void CvMap::calculateAreas()
 {
 	PROFILE_FUNC();
-	CvPlot* pLoopPlot;
-	CvArea* pArea;
-	int iArea;
-	int iI;
 
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
+	// The old logic is now only used for non-large river water plots
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
-		pLoopPlot = plotByIndexINLINE(iI);
+		CvPlot* pLoopPlot = plotByIndexINLINE(iI);
+
+		if (pLoopPlot->isWater())
+		{
+			gDLL->callUpdater();
+			FAssertMsg(pLoopPlot != NULL, "LoopPlot is not assigned a valid value");
+
+			if (pLoopPlot->getArea() == FFreeList::INVALID_INDEX)
+			{
+				CvArea* pArea = addArea();
+				pArea->init(pArea->getID(), pLoopPlot->isWater());
+				const int iArea = pArea->getID();
+				pLoopPlot->setArea(iArea);
+				gDLL->getFAStarIFace()->GeneratePath(&GC.getAreaFinder(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), -1, -1, pLoopPlot->isWater(), iArea);
+			}
+		}
+	}
+
+	// This section only considers land plots
+	stdext::hash_set<CvPlot*> visited;
+
+	for (int iI = 0; iI < numPlotsINLINE(); iI++)
+	{
+		CvPlot*  pLoopPlot = plotByIndexINLINE(iI);
+
+		if (pLoopPlot->isWater())
+			continue;
+
+		if (visited.find(pLoopPlot) != visited.end())
+			continue;
+
 		gDLL->callUpdater();
 		FAssertMsg(pLoopPlot != NULL, "LoopPlot is not assigned a valid value");
 
 		if (pLoopPlot->getArea() == FFreeList::INVALID_INDEX)
 		{
-			pArea = addArea();
+			CvArea*  pArea = addArea();
 			pArea->init(pArea->getID(), pLoopPlot->isWater());
-
-			iArea = pArea->getID();
-
-			pLoopPlot->setArea(iArea);
-
-			gDLL->getFAStarIFace()->GeneratePath(&GC.getAreaFinder(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), -1, -1, pLoopPlot->isWater(), iArea);
-		}
+			const int iArea = pArea->getID();
+			calculateLandAreaBfs(pLoopPlot, iArea, visited);
+		}		
 	}
 }
 

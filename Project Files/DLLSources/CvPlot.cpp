@@ -5536,6 +5536,12 @@ bool CvPlot::isWater() const
 	return (getPlotType() == PLOT_OCEAN);
 }
 
+// Implies water and large river terrain
+bool CvPlot::hasLargeRiver() const
+{
+	return (getTerrainType() == TERRAIN_LARGE_RIVERS);
+}
+
 bool CvPlot::isEurope() const
 {
 	return (getEurope() != NO_EUROPE);
@@ -5830,11 +5836,11 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 
 TerrainTypes CvPlot::getTerrainType() const
 {
-	return (TerrainTypes)m_eTerrainType;
+	return m_eTerrainType;
 }
 TerrainTypes CvPlot::getVariable(TerrainTypes) const
 {
-	return (TerrainTypes)m_eTerrainType;
+	return m_eTerrainType;
 }
 
 // autodetect lakes - start
