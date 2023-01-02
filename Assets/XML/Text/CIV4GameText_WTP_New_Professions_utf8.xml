@@ -912,12 +912,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEANUT_ROASTER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The peanut is a legume grown mainly for its edible seeds. It's widely grown in the tropics and subtropics. The peanut is valuable both as a grain legume and, due to its high oil content, as an oil crop. Cultivation was well-established in the Americas before the Spanish arrived.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PEANUT_ROASTER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Peanut roasters[COLOR_REVERT] can work in the [LINK=BUILDING_ROASTER_HOUSE]roaster's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FIELD_WORKER_TOOLS]roast peanuts[\LINK] from [LINK=YIELD_ORE]peanuts[\LINK]. [LINK=UNIT_POTTER]Master peanut roasters[\LINK] excel at this craft, and can greatly boost your production of roast peanuts.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -939,12 +939,12 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_GOATS_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The goat is one of the oldest domesticated animals. Archaeological evidence shows it domesticated in Iran 10,000 years ago. Goats are used for milk, meat, fur, and skins across much of the world. Unprocessed goat milk has small, well-emulsified fat globules, which means the cream remains suspended in the milk instead of rising to the top, as in unprocessed cow milk; therefore, it does not need to be homogenized.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_GOATS_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Goat butchers[COLOR_REVERT] can work in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FIELD_GOAT_MEAT]goat meat[\LINK] from [LINK=YIELD_GOATS]goats[\LINK]. [LINK=UNIT_BUTCHER]Master goat butchers[\LINK] excel at this craft, and can greatly boost your production of goat meat.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -966,12 +966,12 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_PIGS_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Hog farming means breeding domestic pigs, a branch of animal husbandry. Pigs are raised for food and skins.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_PIGS_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Pig butchers[COLOR_REVERT] can work in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FIELD_PIG_MEAT]pork[\LINK] and [LINK=YIELD_FIELD_PIG_LEATHER]pigskin[\LINK]from [LINK=YIELD_PIGS]pigs[\LINK]. [LINK=UNIT_BUTCHER]Master pig butchers[\LINK] excel at this craft, and can greatly boost your production of pig meat.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -993,12 +993,12 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_CHICKEN_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Free-range poultry farming allows chickens to roam during the day, although they are usually confined in coops at night to protect them from predators. They're also kept indoors when the weather is bad.[NEWLINE]Hens begin laying eggs at 16–21 weeks of age, although production starts declining after 25 weeks of age. Since eggs no longer make economic sense, chickens are slaughtered after 12 months of egg production.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BUTCHER_CHICKEN_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Chicken butchers[COLOR_REVERT] can work in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FIELD_CHICKEN_MEAT]chicken meat[\LINK] from [LINK=YIELD_CHICKENS]chickens[\LINK]. [LINK=UNIT_BUTCHER]Master chicken butchers[\LINK] excel at this craft, and can greatly boost your production of chicken meat.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
