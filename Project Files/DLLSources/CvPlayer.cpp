@@ -4418,6 +4418,35 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 					gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, ReinforcementUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), ReinforcementUnit->getX(), ReinforcementUnit->getY(), true, true);
 				}
 
+				// we need to find an alternative since the Player seems to have not gotten a proper city
+				// we just give the player more land Units in his Capitol but no Sea Units
+				else
+				{
+					int reinforcementAmountLandAdditional = reinforcementAmountLand + 1;
+					int reinforcementAmountArtilAdditional = reinforcementAmountArtil + 1;
+
+					int iLoopX;
+					CvCity* locationToAppearNoCoast = kPlayer.firstCity(&iLoopX);
+
+					// for safety because it is not sure the Player has a City
+					if (locationToAppearNoCoast != NULL)
+					{
+						for (int i=0;i<reinforcementAmountLandAdditional;i++)
+						{
+							ReinforcementUnit = kPlayer.initUnit(KingReinforcementTypeLand, GC.getUnitInfo(KingReinforcementTypeLand).getDefaultProfession(), locationToAppearNoCoast->getX_INLINE(), locationToAppearNoCoast->getY_INLINE(), NO_UNITAI);
+						}
+
+						for (int i=0;i<reinforcementAmountArtilAdditional;i++)
+						{
+							ReinforcementUnit = kPlayer.initUnit(KingReinforcementTypeArtil, GC.getUnitInfo(KingReinforcementTypeArtil).getDefaultProfession(), locationToAppearNoCoast->getX_INLINE(), locationToAppearNoCoast->getY_INLINE(), NO_UNITAI);
+						}
+					
+						//sending message
+						CvWString szBuffer = gDLL->getText("TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER");
+						gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, ReinforcementUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), ReinforcementUnit->getX(), ReinforcementUnit->getY(), true, true);
+					}
+				}
+
 				// WTP, ray, giving reinforcement to other Player as well - START
 				CvUnit* ReinforcementOtherPlayerUnit = NULL;
 				CvPlayer& otherPlayer = GET_PLAYER(enemyID);
@@ -4427,7 +4456,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				int iLoopOther;
 				for (pLoopOtherPlayerCity = otherPlayer.firstCity(&iLoopOther); pLoopOtherPlayerCity != NULL; pLoopOtherPlayerCity = otherPlayer.nextCity(&iLoopOther))
 				{
-					if (pLoopOtherPlayerCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()))
+					if (pLoopOtherPlayerCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && pLoopOtherPlayerCity->plot()->hasDeepWaterCoast())
 					{
 						locationOtherPlayerToAppear = pLoopOtherPlayerCity;
 						break;
@@ -4453,6 +4482,36 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 					//sending message
 					CvWString szBuffer = gDLL->getText("TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER");
 					gDLL->getInterfaceIFace()->addMessage(enemyID, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, ReinforcementOtherPlayerUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), ReinforcementOtherPlayerUnit->getX(), ReinforcementOtherPlayerUnit->getY(), true, true);
+				}
+
+				// we need to find an alternative since the other Player seems to have not gotten a proper city
+				// we just give the player more land Units in his Capitol but no Sea Units
+				else
+				{
+					int reinforcementAmountLandAdditionalOther = reinforcementAmountLand + 1;
+					int reinforcementAmountArtilAdditionalOther = reinforcementAmountArtil + 1;
+
+					int iLoopY;
+					CvCity* locationToAppearNoCoastOther = otherPlayer.firstCity(&iLoopY);
+
+					// for safety because it is not sure the other Player has a City
+					if (locationToAppearNoCoastOther != NULL)
+					{
+						for (int i=0;i<reinforcementAmountLandAdditionalOther;i++)
+						{
+							ReinforcementOtherPlayerUnit = otherPlayer.initUnit(KingReinforcementTypeLand, GC.getUnitInfo(KingReinforcementTypeLand).getDefaultProfession(), locationToAppearNoCoastOther->getX_INLINE(), locationToAppearNoCoastOther->getY_INLINE(), NO_UNITAI);
+						}
+
+						for (int i=0;i<reinforcementAmountArtilAdditionalOther;i++)
+						{
+							ReinforcementOtherPlayerUnit = otherPlayer.initUnit(KingReinforcementTypeArtil, GC.getUnitInfo(KingReinforcementTypeArtil).getDefaultProfession(), locationToAppearNoCoastOther->getX_INLINE(), locationToAppearNoCoastOther->getY_INLINE(), NO_UNITAI);
+						}
+
+						//sending message
+						CvWString szBuffer = gDLL->getText("TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER");
+						gDLL->getInterfaceIFace()->addMessage(enemyID, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, ReinforcementOtherPlayerUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), ReinforcementOtherPlayerUnit->getX(), ReinforcementOtherPlayerUnit->getY(), true, true);
+					}
+
 				}
 				// WTP, ray, giving reinforcement to other Player as well - END
 			}
