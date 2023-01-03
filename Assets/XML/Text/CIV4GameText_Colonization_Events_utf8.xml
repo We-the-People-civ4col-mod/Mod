@@ -2690,6 +2690,21 @@
         <German>Wundervoll, lasst den Sklavenmeistern aber ausrichten dass sie vorsichtig mit unserem Besitz sein sollen.</German>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_FOUR_TREASURES</Tag>
+        <English>Milord, his Majesty is very discontent that so many treasures are not being shipped in time to Europe. To solve we are offered to buy [COLOR_HIGHLIGHT_TEXT]galleon[COLOR_REVERT] for a discounted price.</English>
+        <German>Milord, Ihre Majestät ist sehr unzufrieden, dass so viele Schätze nicht rechtzeitig nach Europa verschifft werden. Um das Problem zu lösen bietet man uns eine [COLOR_HIGHLIGHT_TEXT]Galleone[COLOR_REVERT] zu einem vergünstigten Preis an.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FOUR_TREASURES_1</Tag>
+        <English>We have to deny this generous offer. But currently we need to save our money for other purposes.</English>
+        <German>Wir müssen dieses großzügige Angebot ablehnen, aber im Moment benötigen wir das Geld anderweitig.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_FOUR_TREASURES_2</Tag>
+        <English>That is an excellent offer! We happily buy the galleon for that price.</English>
+        <German>Das ist ein hervorragendes Angebot! Wir kaufen die Galleone gerne zu diesem Preis.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BURNING_CORN_CHAMBER</Tag>
         <English>A corn chamber in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] caught fire.</English>
         <French>Un grenier à maïs à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a pris feu.</French>
