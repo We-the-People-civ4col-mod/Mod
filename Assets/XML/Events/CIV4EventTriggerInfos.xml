@@ -24480,7 +24480,7 @@
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
 			<PythonCanDo/>
-			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_HARDWOOD_DONE_1</PythonCanDoCity>
+			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_HARDWOOD_DONE</PythonCanDoCity>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
 		</EventTriggerInfo>
