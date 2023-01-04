@@ -1008,6 +1008,17 @@
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
+            <Type>ART_DEF_BONUS_WHEAT</Type>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
+            <NIF>Art/Terrain/Resources/wheat_actual/wheat.nif</NIF>
+            <KFM/>
+            <Button>Art/Interface/Buttons/Wheat_Button.dds</Button>
+            <FontButtonIndex>107</FontButtonIndex>
+            <bShadowCastor>1</bShadowCastor>
+            <bRefractionCastor>0</bRefractionCastor>
+        </BonusArtInfo>
+        <BonusArtInfo>
             <Type>ART_DEF_BONUS_SALT</Type>
             <fScale>1.0</fScale>
             <fInterfaceScale>0.8</fInterfaceScale>
