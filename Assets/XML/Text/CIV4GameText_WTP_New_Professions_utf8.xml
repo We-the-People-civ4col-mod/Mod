@@ -775,7 +775,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_HOOCH_DISTILLER_STRATEGY</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]YWhiskey distillers[COLOR_REVERT] can work in the [LINK=BUILDING_DISTILLERS_HOUSE]distiller's house[\LINK] or one of its upgrades to produce [LINK=YIELD_HOOCH]whiskey[\LINK] from [LINK=YIELD_CORN]corn[\LINK]. [LINK=UNIT_DISTILLER]Master whiskey distillers[\LINK] excel at this craft, and can greatly boost your production of whiskey.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Whiskey distillers[COLOR_REVERT] can work in the [LINK=BUILDING_DISTILLERS_HOUSE]distiller's house[\LINK] or one of its upgrades to produce [LINK=YIELD_HOOCH]whiskey[\LINK] from [LINK=YIELD_CORN]corn[\LINK]. [LINK=UNIT_DISTILLER]Master whiskey distillers[\LINK] excel at this craft, and can greatly boost your production of whiskey.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1047,12 +1047,12 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_CATTLE_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Milkmaids work hard to deliver much-needed protein to settlers young and old. Anyone who thinks the work is easy hasn't been close enough to the business end of a cow.[NEWLINE]Milkmaids are also immune to smallpox, a rare advantage in colonial times.[NEWLINE]Milk as a business most often means the milk of cows. It's a good source of protein and fat. When used to make cheese, milk is acidified and the enzymes of either rennet or other bacteria are added to cause the casein to coagulate.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_CATTLE_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Milkmaids[COLOR_REVERT] can work in the [LINK=BUILDING_RANCHERS_HOUSE]rancher's house[\LINK] or one of its upgrades to produce dairy cow [LINK=YIELD_FIELD_MILK]milk[\LINK]. [LINK=UNIT_MILKMAID_CATTLE]Expert milkmaids[\LINK] excel at this craft. They dramatically boost your production of cow milk.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1074,12 +1074,12 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_SHEEP_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Sheep milk has more protein and fat, and larger casein particles than cow or goat milk. It's nutritious, and a source of distinctive cheeses.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_SHEEP_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Milkmaids[COLOR_REVERT] can work in the [LINK=BUILDING_RANCHERS_HOUSE]rancher's house[\LINK] or one of its upgrades to produce sheep [LINK=YIELD_FIELD_MILK]milk[\LINK]. [LINK=UNIT_MILKMAID_SHEEP]Expert milkmaids[\LINK] excel at this craft. They dramatically boost your production of sheep milk.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1106,7 +1106,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_MILKMAID_GOATS_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Milkmaids[COLOR_REVERT] can work in the [LINK=BUILDING_RANCHERS_HOUSE]rancher's house[\LINK] or one of its upgrades to produce goat[LINK=YIELD_FIELD_MILK]milk[\LINK]. [LINK=UNIT_MILKMAID_GOATS]Expert milkmaids[\LINK] excel at this craft. They dramatically boost your production of goat milk.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1128,12 +1128,12 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHEESE_MAKER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Cheese is produced in a wide range of flavours and textures by coagulation of the milk protein casein. It's made up of proteins and fat, usually from the milk of cows, goats, or sheep. During production, milk is acidified and the enzymes of either rennet or other bacterial enzymes are added to cause the casein to coagulate. The solid curds are then separated from the liquid whey and pressed into finished cheese.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHEESE_MAKER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Cheesemakers[COLOR_REVERT] can work in the [LINK=BUILDING_CHEESE_MAKERS_HOUSE]cheesemaker's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FIELD_CHEESE]cheese[\LINK] from [LINK=YIELD_FIELD_MILK]milk[\LINK]. [LINK=UNIT_BUTCHER]Master cheesemakers[\LINK] excel at this craft. They dramatically boost your production of cheese.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1155,12 +1155,12 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_RAPE_OIL_TRADER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>During the Middle Ages farmers used rapeseed in crop rotation to keep weeds down and improve the soil. Rapeseed oil was rarely eaten by humans. The old strains were horribly bitter and contained high levels of toxic erucic acid. For centuries the oil was used in animal feed.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_RAPE_OIL_TRADER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Rapeseed oil traders[COLOR_REVERT] can work in the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FIELD_RAPE_OIL]rapeseed oil[\LINK] . [LINK=UNIT_RAPE_OIL_TRADER]Master rapeseed oil traders[\LINK] excel at this craft. They dramatically boost your production of rapeseed oil.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1182,12 +1182,12 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_OLIVE_OIL_TRADER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Equipment that crushes olives for their oil can be adapted to work with rapeseed.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_OLIVE_OIL_TRADER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Olive oil traders[COLOR_REVERT] can work in the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FIELD_OLIVE_OIL]olive oil[\LINK] . [LINK=UNIT_OLIVE_OIL_TRADER]Master olive oil traders[\LINK] excel at this craft. They dramatically boost your production of olive oil.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1209,12 +1209,12 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_FESTIVE_CLOTHES_TAILOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The tailor creates the well-dressed man, stylish and ready to succeed at diplomacy, business and romance. The tailor's shop includes sub-trades. The cutter seldom sews the garment. Another chooses the perfect fabric. In a growing town with a fashionable tailor, everyone from the merchant to the blacksmith buys there to look their best.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FESTIVE_CLOTHES_TAILOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Formal wear tailors[COLOR_REVERT] can work in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FESTIVE_CLOTHES]clothing for festive events[\LINK] . [LINK=UNIT_CLOTH_TAILOR]Master formal wear tailors[\LINK] excel at this craft. They dramatically boost your production of stylish clothing for special occasions.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1236,12 +1236,12 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_EVERYDAY_CLOTHES_TAILOR_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The tailor has to know how to provide durable clothing at a good price. In a growing town the tailor must be efficient and also diplomatic, because everyone wants to feel that they look good.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_EVERYDAY_CLOTHES_TAILOR_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Workwear tailors[COLOR_REVERT] can work in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades to produce [LINK=YIELD_EVERYDAY_CLOTHES]clothing for everyday life[\LINK] . [LINK=UNIT_CLOTH_TAILOR]Master workwear tailors[\LINK] excel at this craft. They dramatically boost your production of practical clothing for day-to-day living.</English>
         <German>TBD</German>
     </TEXT>    
     <TEXT>
@@ -1263,12 +1263,12 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_CONFECTIONER_CHOCOLATE_PEDIA</Tag>
-        <English>TBD</English>
+        <English>A confectioner turns plantation sugar into a high-value product by flavouring it - perhaps with chocolate or vanilla. It's important to grind the sugar fine so that the candy has a smooth consistency.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CONFECTIONER_CHOCOLATE_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Chocolatiers[COLOR_REVERT] can work in the [LINK=BUILDING_CONFECTIONERS_HOUSE]confectioner's house[\LINK] or one of its upgrades to produce [LINK=YIELD_CHOCOLATE]a variety of chocolates[\LINK] . [LINK=UNIT_CONFECTIONER]Master chocolatiers[\LINK] excel at this craft. They dramatically boost your production of chocolates.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1290,12 +1290,12 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_CONFECTIONER_VANILLA_PEDIA</Tag>
-        <English>TBD</English>
+        <English>A confectioner turns plantation sugar into a high-value product by flavouring it - perhaps with chocolate or vanilla. It's important to grind the sugar fine so that the candy has a smooth consistency.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CONFECTIONER_VANILLA_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Confectioners[COLOR_REVERT] can work in the [LINK=BUILDING_CONFECTIONERS_HOUSE]confectioner's house[\LINK] or one of its upgrades to produce [LINK=YIELD_CHOCOLATE]vanilla treats[\LINK] . [LINK=UNIT_CONFECTIONER]Master chocolatiers[\LINK] excel at this craft. They dramatically boost your production of vanilla cakes and candies.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1317,12 +1317,12 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_COATS_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Sewing padding and a lining into leather doesn't just make the garment more comfortable. By adding insulation it also improves health for those working outside, and can even save their lives.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_COATS_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Leather tailors[COLOR_REVERT] can work in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades to produce [LINK=YIELD_PADDED_COATS]padded coats[\LINK]. [LINK=UNIT_LEATHER_TAILOR]Master leather tailors[\LINK] excel at this craft. They dramatically boost your production of coats with linings.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1344,12 +1344,12 @@
     </TEXT>
         <TEXT>
         <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_BOOTS_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Sewing a lining into boots is a big help in cold weather. Anyone working outside will be more comfortable, and that means they can work longer.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_BOOTS_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Leather tailors[COLOR_REVERT] can work in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades to produce [LINK=YIELD_PADDED_BOOTS]leather boots with linings[\LINK]. [LINK=UNIT_LEATHER_TAILOR]Master leather tailors[\LINK] excel at this craft. They dramatically boost your production of leather boots.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1371,12 +1371,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHARCOAL_BURNER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The charcoal burner watches the smoke exiting the kiln. If the smoke is thick and grey, the wood is still raw; thin, blue smoke indicates good carbonization. Charcoal comes from wood cooked in a kiln over six to eight days, sometimes longer. Charcoal burns at 1,100 degrees Celsius. The melting point of iron is 1,200 degrees.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CHARCOAL_BURNER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Charcoal burners[COLOR_REVERT] can produce [LINK=YIELD_CHARCOAL]charcoal[\LINK] on forest tiles. [LINK=UNIT_CHARCOAL_BURNER]Expert charcoal burners[\LINK] excel at this craft. They dramatically boost your production of charcoal.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1398,12 +1398,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FIREWORKER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Well away from other buildings the powder maker mixes gunpowder from sulphur, charcoal and saltpeter: ammunition for the soldiers' guns. In colonial times it's the only available explosive (dynamite will be invented in 1867) so it's also used for artillery, mining and road building.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FIREWORKER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Powder makers[COLOR_REVERT] can work in the [LINK=BUILDING_FIREWORKERS_HOUSE]powder magazine[\LINK] or one of its upgrades to produce [LINK=YIELD_GUNPOWDER]gunpowder[\LINK]. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] excel at this craft. They dramatically boost your production of gunpowder.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1425,12 +1425,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ENTERTAINER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Humans are social animals, Fame brings people together to be entertained, to see and be seen. A celebrity performance attracts the entire countryside. To have a resident famous actress improves any community's reputation. Leaving a trail of broken hearts behind her, her legend grows.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_ENTERTAINER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Entertainers[COLOR_REVERT] can work in the [LINK=BUILDING_TAVERN]tavern[\LINK] or one of its upgrades to produce [LINK=YIELD_HAPPINESS]happiness[\LINK] and [LINK=YIELD_CULTURE]culture[\LINK]. [LINK=UNIT_ENTERTAINER]Expert entertainers[\LINK] excel at this craft. Along with a little happiness they dramatically boost your production of culture.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1452,12 +1452,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PROSTITUTE_PEDIA</Tag>
-        <English>TBD</English>
+        <English>Church-going ladies may look down on an honest whore but harlots often have influence with the high and mighty, including those in the church. Prostitution is as diverse as society itself. The seductive harlot might have a lucrative career but it's short. Some who like the life go into management after their peak personal earning years.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_PROSTITUTE_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Prostitutes[COLOR_REVERT] can work in the [LINK=BUILDING_TAVERN]tavern[\LINK] or one of its upgrades to produce [LINK=YIELD_HAPPINESS]happiness[\LINK] and [LINK=YIELD_CULTURE]culture[\LINK]. [LINK=UNIT_PROSTITUTE]Expert prostitutes[\LINK] excel at this craft. Along with a little culture they dramatically boost your production of happiness.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1505,12 +1505,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BAKER_PEDIA</Tag>
-        <English>TBD</English>
+        <English>The baker starts work well before dawn so that households can have their daily bread. As the bakery grows, offering cookies and pastries, it becomes a social center. Some bakers even set up tables where tea is served to accompany the treats.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_BAKER_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Bakers[COLOR_REVERT] can work in the [LINK=BUILDING_BAKERS_HOUSE]baker's house[\LINK] or one of its upgrades to produce [LINK=YIELD_BAKERY_GOODS]bakery goods[\LINK]. [LINK=UNIT_DISTILLER]Master bakers[\LINK] excel at this craft, and can greatly boost your production of fresh baking.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
@@ -1532,12 +1532,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_JUDGE_PEDIA</Tag>
-        <English>TBD</English>
+        <English>A judge presides over court proceedings, hears all the witnesses and any other evidence presented by the barristers or solicitors of the case, assesses the credibility and arguments of the parties, and then issues a ruling in the case based on their interpretation of the law and their own personal judgment. A judge is expected to conduct the trial impartially in an open court.</English>
         <German>TBD</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_JUDGE_STRATEGY</Tag>
-        <English>TBD</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Judges[COLOR_REVERT] work in the [LINK=BUILDING_COURTHOUSE]courthouse[\LINK] or one of its upgrades to produce [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honourable judges[\LINK] excel at this craft. They dramatically boost your production of law.</English>
         <German>TBD</German>
     </TEXT>
 </Civ4GameText>
