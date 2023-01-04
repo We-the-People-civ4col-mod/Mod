@@ -40300,7 +40300,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -40691,7 +40691,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -41082,7 +41082,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -41473,7 +41473,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -41864,7 +41864,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -42255,7 +42255,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -42646,7 +42646,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -42971,7 +42971,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -43296,7 +43296,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -43621,7 +43621,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -44012,7 +44012,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -44337,7 +44337,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -44662,7 +44662,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -44855,7 +44855,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -45180,7 +45180,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -45571,7 +45571,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -45962,7 +45962,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -46287,7 +46287,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -46678,7 +46678,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -47003,7 +47003,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -47328,7 +47328,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -47653,7 +47653,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -47978,7 +47978,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -48369,7 +48369,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -48694,7 +48694,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -49019,7 +49019,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -49410,7 +49410,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -49801,7 +49801,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -50192,7 +50192,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -50583,7 +50583,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -50842,7 +50842,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -51101,7 +51101,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -51360,7 +51360,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -51619,7 +51619,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -51878,7 +51878,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -52137,7 +52137,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -52396,7 +52396,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -52655,7 +52655,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -52914,7 +52914,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -53173,7 +53173,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -53432,7 +53432,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -53691,7 +53691,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -53950,7 +53950,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
@@ -54209,7 +54209,7 @@
 			<iRandomGold>0</iRandomGold>
 			<iCulture>0</iCulture>
 			<iHealth>0</iHealth>
-			<iNumFreeUnits>NONE</iNumFreeUnits>
+			<UnitClass>NONE</UnitClass>
 			<iNumFreeUnits>0</iNumFreeUnits>
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
