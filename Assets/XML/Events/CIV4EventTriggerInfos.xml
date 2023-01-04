@@ -24370,27 +24370,27 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_START</Event>
 			</Events>
-			<PrereqEvents />
+			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -24406,10 +24406,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_HARDWOOD_START</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE</Type>
@@ -24437,23 +24437,23 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE_1</Event>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE_2</Event>
@@ -24479,10 +24479,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_HARDWOOD_DONE_1</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Type>
@@ -24510,27 +24510,27 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Event>
 			</Events>
-			<PrereqEvents />
+			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -24546,10 +24546,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_YERBA_TEA_START</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE</Type>
@@ -24577,23 +24577,23 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE_1</Event>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE_2</Event>
@@ -24619,10 +24619,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_YERBA_TEA_DONE</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FOOD_START</Type>
@@ -24650,27 +24650,27 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_FOOD_START</Event>
 			</Events>
-			<PrereqEvents />
+			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -24686,10 +24686,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_FOOD_START</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FOOD_DONE</Type>
@@ -24717,23 +24717,23 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_FOOD_DONE_1</Event>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_FOOD_DONE_2</Event>
@@ -24758,10 +24758,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_FOOD_DONE</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_STONE_START</Type>
@@ -24789,27 +24789,27 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_STONE_START</Event>
 			</Events>
-			<PrereqEvents />
+			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -24825,10 +24825,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_STONE_START</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_STONE_DONE</Type>
@@ -24856,23 +24856,23 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_STONE_DONE_1</Event>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_STONE_DONE_2</Event>
@@ -24897,10 +24897,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_STONE_DONE</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_START</Type>
@@ -24928,27 +24928,27 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_LUMBER_START</Event>
 			</Events>
-			<PrereqEvents />
+			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -24964,10 +24964,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_LUMBER_START</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_DONE</Type>
@@ -24995,23 +24995,23 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_LUMBER_DONE_1</Event>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_LUMBER_DONE_2</Event>
@@ -25036,10 +25036,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_LUMBER_DONE</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CLAY_START</Type>
@@ -25067,27 +25067,27 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_CLAY_START</Event>
 			</Events>
-			<PrereqEvents />
+			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -25103,10 +25103,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_CLAY_START</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CLAY_DONE</Type>
@@ -25134,23 +25134,23 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_CLAY_DONE_1</Event>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_CLAY_DONE_2</Event>
@@ -25175,10 +25175,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_CLAY_DONE</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Type>
@@ -25206,27 +25206,27 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Event>
 			</Events>
-			<PrereqEvents />
+			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -25242,10 +25242,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_BAKERY_GOODS_START</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE</Type>
@@ -25273,23 +25273,23 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE_1</Event>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE_2</Event>
@@ -25315,10 +25315,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_BAKERY_GOODS_DONE</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BEER_START</Type>
@@ -25346,27 +25346,27 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_BEER_START</Event>
 			</Events>
-			<PrereqEvents />
+			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -25382,10 +25382,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_BEER_START</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BEER_DONE</Type>
@@ -25413,23 +25413,23 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_BEER_DONE_1</Event>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_BEER_DONE_2</Event>
@@ -25454,10 +25454,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_BEER_DONE</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_START</Type>
@@ -25485,27 +25485,27 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_HOOCH_START</Event>
 			</Events>
-			<PrereqEvents />
+			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -25521,10 +25521,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_HOOCH_START</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_DONE</Type>
@@ -25552,23 +25552,23 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_HOOCH_DONE_1</Event>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_HOOCH_DONE_2</Event>
@@ -25593,10 +25593,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_HOOCH_DONE</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Type>
@@ -25624,27 +25624,27 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Event>
 			</Events>
-			<PrereqEvents />
+			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -25660,10 +25660,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_BLACK_POWDER_START</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE</Type>
@@ -25691,23 +25691,23 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE_1</Event>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE_2</Event>
@@ -25733,10 +25733,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_BLACK_POWDER_DONE</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RICE_START</Type>
@@ -25764,27 +25764,27 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired></UnitsRequired>
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired></BuildingsRequired>
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired></FeaturesRequired>
-			<TerrainsRequired></TerrainsRequired>
-			<ImprovementsRequired></ImprovementsRequired>
-			<RoutesRequired></RoutesRequired>
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_RICE_START</Event>
 			</Events>
-			<PrereqEvents></PrereqEvents>
+			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -25800,10 +25800,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo></PythonCanDo>
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_RICE_START</PythonCanDoCity>
-			<PythonCanDoUnit></PythonCanDoUnit>
-			<PythonCallback></PythonCallback>
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RICE_DONE</Type>
@@ -25831,23 +25831,23 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_RICE_DONE_1</Event>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_RICE_DONE_2</Event>
@@ -25873,10 +25873,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_RICE_DONE</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_START</Type>
@@ -25904,27 +25904,27 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired></UnitsRequired>
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired></BuildingsRequired>
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired></FeaturesRequired>
-			<TerrainsRequired></TerrainsRequired>
-			<ImprovementsRequired></ImprovementsRequired>
-			<RoutesRequired></RoutesRequired>
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_START</Event>
 			</Events>
-			<PrereqEvents></PrereqEvents>
+			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -25940,10 +25940,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo></PythonCanDo>
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_CASSAVA_START</PythonCanDoCity>
-			<PythonCanDoUnit></PythonCanDoUnit>
-			<PythonCallback></PythonCallback>
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_DONE</Type>
@@ -25971,23 +25971,23 @@
 			<iMinOurLandmass>0</iMinOurLandmass>
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
-			<UnitsRequired />
+			<UnitsRequired/>
 			<iNumUnits>0</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
-			<BuildingsRequired />
+			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
 			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired />
-			<TerrainsRequired />
-			<ImprovementsRequired />
-			<RoutesRequired />
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_DONE_1</Event>
 				<Event>EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_DONE_2</Event>
@@ -26013,10 +26013,10 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo />
+			<PythonCanDo/>
 			<PythonCanDoCity>canTriggerPortRoyalTradeQuest_CASSAVA_DONE</PythonCanDoCity>
-			<PythonCanDoUnit />
-			<PythonCallback />
+			<PythonCanDoUnit/>
+			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
 			<Type>EVENTTRIGGER_AFRICA_TRADE_QUEST_FOOD_START</Type>

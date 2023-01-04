@@ -42438,10 +42438,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -42458,13 +42458,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -42477,13 +42477,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_START</Event>
@@ -42491,8 +42491,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -42504,10 +42504,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_DONE_9</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_9</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -42524,13 +42524,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -42543,13 +42543,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_START</Event>
@@ -42557,8 +42557,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -42829,10 +42829,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_SPICES_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -42849,13 +42849,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -42868,13 +42868,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_SPICES_START</Event>
@@ -42882,8 +42882,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -43154,10 +43154,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_SILVER_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -43174,13 +43174,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -43193,13 +43193,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_SILVER_START</Event>
@@ -43207,8 +43207,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -43479,10 +43479,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_SALT_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -43499,13 +43499,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -43518,13 +43518,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_SALT_START</Event>
@@ -43532,8 +43532,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -43804,10 +43804,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_RUM_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -43824,13 +43824,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -43843,13 +43843,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_START</Event>
@@ -43857,8 +43857,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -43870,10 +43870,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_RUM_DONE_9</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_9</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -43890,13 +43890,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -43909,13 +43909,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_RUM_START</Event>
@@ -43923,8 +43923,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -44195,10 +44195,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_GOLD_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -44215,13 +44215,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -44234,13 +44234,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_GOLD_START</Event>
@@ -44248,8 +44248,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -44520,10 +44520,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_GEMS_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -44540,13 +44540,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -44559,13 +44559,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_GEMS_START</Event>
@@ -44573,8 +44573,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -45038,10 +45038,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -45058,13 +45058,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -45077,13 +45077,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_COFFEE_START</Event>
@@ -45091,8 +45091,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -45363,10 +45363,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_COCOA_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -45383,13 +45383,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -45402,13 +45402,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_START</Event>
@@ -45416,8 +45416,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -45429,10 +45429,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_COCOA_DONE_9</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_9</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -45449,13 +45449,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -45468,13 +45468,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_COCOA_START</Event>
@@ -45482,8 +45482,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -45754,10 +45754,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -45774,13 +45774,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -45793,13 +45793,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
@@ -45807,8 +45807,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -45820,10 +45820,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE_9</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_9</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -45840,13 +45840,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -45859,13 +45859,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
@@ -45873,8 +45873,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46145,10 +46145,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_WINE_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46165,13 +46165,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46184,13 +46184,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_WINE_START</Event>
@@ -46198,8 +46198,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46272,10 +46272,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46292,13 +46292,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46311,13 +46311,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_START</Event>
@@ -46325,8 +46325,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46338,10 +46338,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46358,13 +46358,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46377,13 +46377,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_START</Event>
@@ -46391,8 +46391,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46404,10 +46404,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE_3</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_3</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46424,13 +46424,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46443,13 +46443,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_START</Event>
@@ -46457,8 +46457,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46470,10 +46470,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE_4</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_4</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46490,13 +46490,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46509,13 +46509,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_START</Event>
@@ -46523,8 +46523,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46536,10 +46536,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE_8</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_8</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46556,13 +46556,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46575,13 +46575,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_START</Event>
@@ -46589,8 +46589,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46663,10 +46663,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_FOOD_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46683,13 +46683,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46702,13 +46702,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_FOOD_START</Event>
@@ -46716,8 +46716,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46729,10 +46729,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_FOOD_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46749,13 +46749,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46768,13 +46768,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_FOOD_START</Event>
@@ -46782,8 +46782,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46795,10 +46795,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_FOOD_DONE_6</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46815,13 +46815,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46834,13 +46834,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_FOOD_START</Event>
@@ -46848,8 +46848,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46861,10 +46861,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_FOOD_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -46881,13 +46881,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -46900,13 +46900,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_FOOD_START</Event>
@@ -46914,8 +46914,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -46988,10 +46988,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_STONE_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47008,13 +47008,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47027,13 +47027,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_STONE_START</Event>
@@ -47041,8 +47041,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47054,10 +47054,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_STONE_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47074,13 +47074,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47093,13 +47093,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_STONE_START</Event>
@@ -47107,8 +47107,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47120,10 +47120,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_STONE_DONE_6</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47140,13 +47140,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47159,13 +47159,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_STONE_START</Event>
@@ -47173,8 +47173,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47186,10 +47186,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_STONE_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47206,13 +47206,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47225,13 +47225,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_STONE_START</Event>
@@ -47239,8 +47239,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47313,10 +47313,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_LUMBER_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47333,13 +47333,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47352,13 +47352,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_LUMBER_START</Event>
@@ -47366,8 +47366,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47379,10 +47379,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_LUMBER_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47399,13 +47399,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47418,13 +47418,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_LUMBER_START</Event>
@@ -47432,8 +47432,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47445,10 +47445,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_LUMBER_DONE_6</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47465,13 +47465,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47484,13 +47484,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_LUMBER_START</Event>
@@ -47498,8 +47498,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47511,10 +47511,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_LUMBER_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47531,13 +47531,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47550,13 +47550,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_LUMBER_START</Event>
@@ -47564,8 +47564,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47638,10 +47638,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_CLAY_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47658,13 +47658,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47677,13 +47677,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_CLAY_START</Event>
@@ -47691,8 +47691,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47704,10 +47704,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_CLAY_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47724,13 +47724,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47743,13 +47743,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_CLAY_START</Event>
@@ -47757,8 +47757,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47770,10 +47770,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_CLAY_DONE_6</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47790,13 +47790,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47809,13 +47809,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_CLAY_START</Event>
@@ -47823,8 +47823,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47836,10 +47836,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_CLAY_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47856,13 +47856,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -47875,13 +47875,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_CLAY_START</Event>
@@ -47889,8 +47889,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -47963,10 +47963,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -47983,13 +47983,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48002,13 +48002,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Event>
@@ -48016,8 +48016,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48029,10 +48029,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -48049,13 +48049,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48068,13 +48068,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Event>
@@ -48082,8 +48082,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48095,10 +48095,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE_5</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_5</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -48115,13 +48115,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48134,13 +48134,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Event>
@@ -48148,8 +48148,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48161,10 +48161,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE_6</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -48181,13 +48181,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48200,13 +48200,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Event>
@@ -48214,8 +48214,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48227,10 +48227,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -48247,13 +48247,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48266,13 +48266,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Event>
@@ -48280,8 +48280,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48354,10 +48354,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BEER_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -48374,13 +48374,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48393,13 +48393,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_BEER_START</Event>
@@ -48407,8 +48407,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48420,10 +48420,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BEER_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -48440,13 +48440,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48459,13 +48459,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_BEER_START</Event>
@@ -48473,8 +48473,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48486,10 +48486,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BEER_DONE_6</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -48506,13 +48506,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48525,13 +48525,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_BEER_START</Event>
@@ -48539,8 +48539,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48552,10 +48552,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BEER_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -48572,13 +48572,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48591,13 +48591,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_BEER_START</Event>
@@ -48605,8 +48605,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48679,10 +48679,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_HOOCH_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -48699,13 +48699,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48718,13 +48718,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_HOOCH_START</Event>
@@ -48732,8 +48732,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48745,10 +48745,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_HOOCH_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -48765,13 +48765,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48784,13 +48784,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_HOOCH_START</Event>
@@ -48798,8 +48798,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48811,10 +48811,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_HOOCH_DONE_6</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -48831,13 +48831,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48850,13 +48850,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_HOOCH_START</Event>
@@ -48864,8 +48864,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48877,10 +48877,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_HOOCH_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -48897,13 +48897,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48916,13 +48916,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_HOOCH_START</Event>
@@ -48930,8 +48930,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -48943,9 +48943,9 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -48963,13 +48963,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -48982,17 +48982,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
-			<ClearEvents></ClearEvents>
-			<PythonCallback></PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartPortRoyalTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -49004,10 +49004,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -49024,13 +49024,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -49043,13 +49043,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
@@ -49057,8 +49057,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -49070,10 +49070,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -49090,13 +49090,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -49109,13 +49109,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
@@ -49123,8 +49123,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -49136,10 +49136,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE_3</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_3</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -49156,13 +49156,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -49175,13 +49175,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Event>
@@ -49189,8 +49189,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -49202,9 +49202,9 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_CIGARS_START</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_CIGARS_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -49222,13 +49222,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -49241,17 +49241,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
-			<ClearEvents></ClearEvents>
-			<PythonCallback></PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartPortRoyalTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -49324,10 +49324,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -49344,13 +49344,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -49363,13 +49363,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Event>
@@ -49377,8 +49377,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -49390,10 +49390,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -49410,13 +49410,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -49429,13 +49429,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Event>
@@ -49443,8 +49443,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -49456,10 +49456,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE_5</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_5</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -49476,13 +49476,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -49495,13 +49495,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Event>
@@ -49509,8 +49509,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -49522,10 +49522,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE_6</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -49542,13 +49542,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -49561,13 +49561,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Event>
@@ -49575,8 +49575,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -49588,10 +49588,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -49608,13 +49608,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -49627,13 +49627,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Event>
@@ -49641,8 +49641,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -49715,10 +49715,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -49735,13 +49735,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -49754,13 +49754,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Event>
@@ -49768,8 +49768,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -49781,10 +49781,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -49801,13 +49801,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -49820,13 +49820,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Event>
@@ -49834,8 +49834,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -49847,10 +49847,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE_6</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -49867,13 +49867,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -49886,13 +49886,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Event>
@@ -49900,8 +49900,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -49913,10 +49913,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -49933,13 +49933,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -49952,13 +49952,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Event>
@@ -49966,8 +49966,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -49979,10 +49979,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE_9</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_9</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -49999,13 +49999,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -50018,13 +50018,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Event>
@@ -50032,8 +50032,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -50045,9 +50045,9 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_RICE_START</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_RICE_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -50065,13 +50065,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -50084,17 +50084,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
-			<ClearEvents></ClearEvents>
-			<PythonCallback></PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartPortRoyalTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -50106,10 +50106,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_RICE_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -50126,13 +50126,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -50145,13 +50145,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_RICE_START</Event>
@@ -50159,8 +50159,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -50172,10 +50172,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_RICE_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -50192,13 +50192,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -50211,13 +50211,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_RICE_START</Event>
@@ -50225,8 +50225,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -50238,10 +50238,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_RICE_DONE_6</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -50258,13 +50258,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -50277,13 +50277,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_RICE_START</Event>
@@ -50291,8 +50291,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -50304,10 +50304,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_RICE_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -50324,13 +50324,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -50343,13 +50343,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_RICE_START</Event>
@@ -50357,8 +50357,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -50370,10 +50370,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_RICE_DONE_9</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_9</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -50390,13 +50390,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -50409,13 +50409,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_RICE_START</Event>
@@ -50423,8 +50423,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -50436,9 +50436,9 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_START</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
 			<QuestFailText>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_FAILED</QuestFailText>
 			<bQuest>1</bQuest>
 			<bGlobal>0</bGlobal>
@@ -50456,13 +50456,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -50475,17 +50475,17 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
-			<ClearEvents></ClearEvents>
-			<PythonCallback></PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<AdditionalEvents/>
+			<EventTimes/>
+			<ClearEvents/>
+			<PythonCallback/>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestStartPortRoyalTradeYieldAndAmount</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -50497,10 +50497,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_DONE_1</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -50517,13 +50517,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -50536,13 +50536,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_START</Event>
@@ -50550,8 +50550,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -50563,10 +50563,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_DONE_2</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -50583,13 +50583,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -50602,13 +50602,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_START</Event>
@@ -50616,8 +50616,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -50629,10 +50629,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_DONE_6</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -50649,13 +50649,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -50668,13 +50668,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_START</Event>
@@ -50682,8 +50682,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -50695,10 +50695,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_DONE_7</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -50715,13 +50715,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -50734,13 +50734,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_START</Event>
@@ -50748,8 +50748,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
@@ -50761,10 +50761,10 @@
 		<EventInfo>
 			<Type>EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_DONE_9</Type>
 			<Description>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_9</Description>
-			<LocalInfoText></LocalInfoText>
-			<WorldNewsTexts></WorldNewsTexts>
-			<OtherPlayerPopup></OtherPlayerPopup>
-			<QuestFailText></QuestFailText>
+			<LocalInfoText/>
+			<WorldNewsTexts/>
+			<OtherPlayerPopup/>
+			<QuestFailText/>
 			<bQuest>0</bQuest>
 			<bGlobal>1</bGlobal>
 			<bTeam>0</bTeam>
@@ -50781,13 +50781,13 @@
 			<bDisbandUnit>0</bDisbandUnit>
 			<iUnitExperience>0</iUnitExperience>
 			<iUnitImmobileTurns>0</iUnitImmobileTurns>
-			<UnitPromotion></UnitPromotion>
-			<UnitName></UnitName>
-			<UnitCombatPromotions></UnitCombatPromotions>
-			<UnitClassPromotions></UnitClassPromotions>
+			<UnitPromotion/>
+			<UnitName/>
+			<UnitCombatPromotions/>
+			<UnitClassPromotions/>
 			<BuildingClass>NONE</BuildingClass>
 			<iBuildingChange>0</iBuildingChange>
-			<BuildingExtraYields></BuildingExtraYields>
+			<BuildingExtraYields/>
 			<iRevoltTurns>0</iRevoltTurns>
 			<iMinPillage>0</iMinPillage>
 			<iMaxPillage>0</iMaxPillage>
@@ -50800,13 +50800,13 @@
 			<RouteType>NONE</RouteType>
 			<iRouteChange>0</iRouteChange>
 			<BonusRevealed>NONE</BonusRevealed>
-			<PlotExtraYields></PlotExtraYields>
+			<PlotExtraYields/>
 			<iOurAttitudeModifier>0</iOurAttitudeModifier>
 			<iAttitudeModifier>0</iAttitudeModifier>
 			<iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
 			<iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents></AdditionalEvents>
-			<EventTimes></EventTimes>
+			<AdditionalEvents/>
+			<EventTimes/>
 			<ClearEvents>
 				<EventChance>
 					<Event>EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_START</Event>
@@ -50814,8 +50814,8 @@
 				</EventChance>
 			</ClearEvents>
 			<PythonCallback>applyQuestDonePortRoyalTradePriceAndAttitude</PythonCallback>
-			<PythonExpireCheck></PythonExpireCheck>
-			<PythonCanDo></PythonCanDo>
+			<PythonExpireCheck/>
+			<PythonCanDo/>
 			<PythonHelp>getHelpQuestDonePortRoyalTradePriceAndAttitude</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>800</iAIValue>
