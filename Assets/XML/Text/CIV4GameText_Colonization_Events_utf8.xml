@@ -3584,21 +3584,6 @@
         <German>Die Bürger des Heimatlandes sind von der Qualität unsere Kolonialwaren begeistert.[NEWLINE]Seine Majestät ist hocherfreut. Die Nachfrage nach unseren Waren steigt.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Tag>
-        <English>We will fulfill the orders of his Majesty!</English>
-        <German>Wir werden den Befehl Seiner Majestät erfüllen!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Tag>
-        <English>For the glory and wealth of the motherland!</English>
-        <German>Für Ruhm und Reichtum des Heimatlandes!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Tag>
-        <English>For the glory and wealth of the colonies!</English>
-        <German>Für Ruhm und Reichtum der Kolonien!</German>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_PRICE_AND_ATTITUDE_HELP</Tag>
         <English>The quality of our goods has impressed the peaple in Africa.[NEWLINE]His Majesty is delighted. Demand for colonial goods is rising.</English>
         <German>Die Menschen in Africa sind von der Qualität unsere Kolonialwaren begeistert.[NEWLINE]Seine Majestät ist hocherfreut. Die Nachfrage nach unseren Waren steigt.</German>
@@ -5698,16 +5683,36 @@
         <English>We will fulfill the orders of his Majesty!</English>
         <German>Wir werden den Befehl Seiner Majestät erfüllen!</German>
     </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE</Tag>
-        <English>For the glory and wealth of the motherland!</English>
-        <German>Für Ruhm und Reichtum des Heimatlandes!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_COLONIES</Tag>
-        <English>For the glory and wealth of the colonies!</English>
-        <German>Für Ruhm und Reichtum der Kolonien!</German>
-    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Tag>
+		<English>For the Glory and Wealth of our colonies! Gold, higher sales prices and even more prestige with the king. It almost does not get any better!</English>
+		<German>Für Ruhm und Reichtum unserer Kolonien! Gold, höhere Verkaufspreise und auch noch mehr Ansehen beim König. Besser geht es fast nicht mehr!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Tag>
+		<English>For the Glory and Wealth of our colonies! The Afican natives are said to be very industrious!</English>
+		<German>Für Ruhm und Reichtum unserer Kolonien! Die afikanischen Eingeborenen sollen sehr fleißig sein!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Tag>
+		<English>For the Glory and Wealth of our colonies! Oha, mulattos! Let's see what they are good for...</English>
+		<German>Für Ruhm und Reichtum unserer Kolonien! Oha, Mulatten! Mal sehen für was die gut sind...</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Tag>
+		<English>For the Glory and Wealth of our colonies! Of course we need slave owners!</English>
+		<German>Für Ruhm und Reichtum unserer Kolonien! Natürlich brauchen wir Sklavenhalter!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Tag>
+		<English>For the Glory and Wealth of our colonies! Slave hunters might also be useful!</English>
+		<German>Für Ruhm und Reichtum unserer Kolonien! Sklavenjäger könnten auch nützlich sein!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_6</Tag>
+		<English>For the Glory and Wealth of our colonies! Capable field workers are always welcome!</English>
+		<German>Für Ruhm und Reichtum unserer Kolonien! Fähige Feldarbeiter sind immer willkommen!</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
         <English>Trade this quantity of goods with Africa [COLOR_FONT_GOLD]before any other nation [COLOR_REVERT]can :[NEWLINE]%D1_amount %F2_yield</English>

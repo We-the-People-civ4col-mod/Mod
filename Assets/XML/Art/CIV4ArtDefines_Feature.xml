@@ -246,6 +246,24 @@
             </FeatureVariety>
         </FeatureArtInfo>
         <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_WILD_FLOWERS</Type>
+            <bAnimated>0</bAnimated>
+            <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+            <fScale>0.9</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <Button>Art/Interface/Buttons/Flowers_Button.dds</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/flowers/wheat1.nif</ModelFile>
+                        <Connections/>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Interface/Buttons/Flowers_Button.dds</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
+        <FeatureArtInfo>
             <Type>ART_DEF_FEATURE_MEADOW</Type>
             <bAnimated>0</bAnimated>
             <TileArtType>TILE_ART_TYPE_NONE</TileArtType>

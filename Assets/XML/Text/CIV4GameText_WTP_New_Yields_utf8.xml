@@ -16,7 +16,7 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GOATS</Tag>
         <English>Goats</English>
         <French>Chèvres</French>
@@ -38,7 +38,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOATS_PEDIA</Tag>
-        <English>[TAB][H1]Goats[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Goats[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Goats[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist herd goats, assign him to the [LINK=PROFESSION_GOATHERD]goatherd[\LINK] profession.[NEWLINE]Goat production is highest on plots bearing the [LINK=BONUS_GOAT]goat[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on goat-producing plots and employing [LINK=UNIT_GOATHERD]expert goatherds[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Goats will eat vegetation that most other domesticated livestock decline, so they can subsist on very poor land. The number of animals that a goat farmer can sustain depends on the quality of the pasture. A poor man with poor land can still raise goats.[NEWLINE]Perhaps because of their adaptability, goats have become a symbol of evil. Witches are said to cavort with goats. Satan has goat horns.</English>
         <German>[TAB][H1]Ziegen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -48,7 +48,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_SHEEP_STRATEGY</Tag>
         <English>Can be left empty</English>
-    </TEXT>	
+    </TEXT>
 	<!-- PIGS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIGS</Tag>
@@ -82,7 +82,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIGS_PEDIA</Tag>
-        <English>[TAB][H1]Pigs[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Pigs[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist raise pigs, assign him to the [LINK=PROFESSION_PIG_FARMER]pig farmer[\LINK] profession.[NEWLINE]Pig production is highest on plots bearing the [LINK=BONUS_PIG]pig[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on pig-producing plots and employing [LINK=UNIT_GOATHERD]expert pig farmers[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Historically a few pigs would be kept near the owner's residence. They could be tethered in a simple shelter or kept in a pen outside the owner's house.[NEWLINE]Hog farming is when pigs are bred on a domestic or industrial scale. Pigs are raised for food and skins.[NEWLINE]They're valued for their ability to convert inedible food into meat and manure, and can be fed household food waste. On a large scale pigs are one way to dispose of municipal garbage.</English>
         <German>[TAB][H1]Schweine[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -126,7 +126,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHICKEN_PEDIA</Tag>
-        <English>[TAB][H1]Chicken[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Chicken[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Chickens[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist raise chickens, assign him to the [LINK=PROFESSION_CHICKEN_FARMER]chicken farmer[\LINK] profession.[NEWLINE]Chicken production is highest on plots bearing the [LINK=BONUS_CHICKEN]chicken[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on chicken-producing plots and employing [LINK=UNIT_CHICKEN_FARMER]expert chicken farmers[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Free-range poultry farming allows chickens to roam during the day, although they are usually confined in coops at night to protect them from predators. They're also kept indoors when the weather is bad.</English>
         <German>[TAB][H1]Hühner[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -170,7 +170,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GEESE_PEDIA</Tag>
-        <English>[TAB][H1]Domestic Geese[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Domestic Geese[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Geese[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist raise geese, assign him to the [LINK=PROFESSION_GOOSE_FARMER]goose farmer[\LINK] profession.[NEWLINE]Goose production is highest on plots bearing the [LINK=BONUS_GOOSE]goose[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on goose-producing plots and employing [LINK=UNIT_GOOSE_FARMER]expert goose farmers[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Geese are the fastest growers among domestic birds. They're hardy and disease free when given constant care. Geese can be brought up on green pasture, which lowers production cost substantially.</English>
         <German>[TAB][H1]Hausgänse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -214,7 +214,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOAT_HIDES_PEDIA</Tag>
-        <English>[TAB][H1]Goat Hides[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Goat Hides[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Goat hides[COLOR_REVERT] come from butchered  [LINK=YIELD_GOATS]goats[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_BUTCHER_GOATS]goat butcher[\LINK] profession in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades. The output of goat hides can be doubled by commissioning [LINK=UNIT_BUTCHER]master butchers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The goat is one of the oldest domesticated animals. There's archaeological evidence for goats in Iran 10,000 years ago. Goats are used for milk, meat, fur, and skins across much of the world.</English>
         <German>[TAB][H1]Ziegenfelle[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
